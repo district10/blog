@@ -1,0 +1,2 @@
+# blog
+Simplest Markdown blog
