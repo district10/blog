@@ -1,6 +1,6 @@
 % Pandoc User's Guide
 % John MacFarlane
-% 2015-06-15
+% 2006-10-17
 
 
 Pandoc User's Guide

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-make && qrsync conf.json
+make

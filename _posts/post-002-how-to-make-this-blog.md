@@ -1,6 +1,6 @@
 % 这是怎样一个博客生成器
 % Tang Zhixiong
-% 2015-06-15
+% 2015-11-06
 
 
 这个怎样一个博客生成器
@@ -678,6 +678,10 @@ x^2-3 & \text{if $-3 \le x \le 5$};\\
 [this]: https://www.zybuluo.com/gnat-xj/note/30681
 
 访问 [MathJax](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) 参考更多使用方法。
+
+如果你要手工给 HTML 添加 MathJax 功能，需要在页面中加入
+`<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>`{.html}
+
 
 我要来一个
 ----------

@@ -6,7 +6,6 @@
 Debian Configurations
 =====================
 
-
 `/etc/apti/sources.list`
 ------------------------
 
@@ -116,8 +115,10 @@ plugins=(git colored-man)
 
 ```bash
 # sudo aptitude install -t wheezy-backports emacs24-lucid # this work?
-# I didn't try. Lets compile from source (get it from USTC mirror site, `wget http://mirrors.ustc.edu.cn/gnu/emacs/emacs-24.3.tar.xz`)
-apt-get install libxaw7-dev libxpm-dev libpng12-dev libtiff5-dev libgif-dev libjpeg8-dev libgtk2.0-dev libncurses5-dev  
+# I didn't try. Lets compile from source (get it from USTC mirror site, 
+# `wget http://mirrors.ustc.edu.cn/gnu/emacs/emacs-24.3.tar.xz`)
+apt-get install libxaw7-dev libxpm-dev libpng12-dev libtiff5-dev \
+                libgif-dev libjpeg8-dev libgtk2.0-dev libncurses5-dev  
 cd emacs-24.3
 mkdir build && cd build
 ../configure
@@ -183,24 +184,30 @@ sudo make install
 sudo apt-get install flex bison build-essential gcc-multilib
 cd gcc-4.9.1 && ./contrib/download_prerequisites 
 mkdir build && cd build
-# ../configure --prefix=/opt/gcc_4_9 --program-suffix=-4.9 --enable-languages=c,c++ --enable-multilib --build=x86_64-linux-gnu --enable-checking=release 
-../configure --prefix=/home/gnat/bin/gcc --program-suffix=-4.9 --enable-languages=c,c++ --enable-multilib --build=x86_64-linux-gnu --enable-checking=release 
+# ../configure --prefix=/opt/gcc_4_9 --program-suffix=-4.9 \
+--enable-languages=c,c++ --enable-multilib \
+--build=x86_64-linux-gnu --enable-checking=release 
+../configure --prefix=/home/gnat/bin/gcc --program-suffix=-4.9 \
+--enable-languages=c,c++ --enable-multilib \
+--build=x86_64-linux-gnu --enable-checking=release 
 make -j # origin: make -j4, Modified by gnat 
 make install
 ```
 
-or to choose [an online compiler: coliru](http://coliru.stacked-crooked.com/)
+or to choose an online compiler: [coliru](http://coliru.stacked-crooked.com/)、
+[C++ Shell](http://cpp.sh/)。
 
 or [MinGW Distro (open box) for windows users](http://nuwen.net/mingw.html)
 
 QtCreator 建 C++ 工程（cmake），在 cmake 文件里加上
 
-```
+```cmake
 SET(CMAKE_CXX_FLAGS "-std=c++11") # Add c++11 functionality
 ```
 
 [C++ 的 man 文档](https://github.com/jeaye/stdman)，超赞！
-![`man std::string::c_str`](http://upload-images.jianshu.io/upload_images/29284-3e49d6b577894f60.gif)
+
+![`man std::string::c_str`{.bash}](http://upload-images.jianshu.io/upload_images/29284-3e49d6b577894f60.gif)
 
 ### [gPhoto2](http://www.yannock.be/computer/compiling-gphoto2-on-the-raspberry-pi)
 
@@ -222,6 +229,7 @@ wget http://sourceforge.net/projects/gphoto/files/gphoto/2.5.2/gphoto2-2.5.2.tar
 ### NPM
 
 The best: [快速搭建 Node.js 开发环境以及加速 npm](https://cnodejs.org/topic/5338c5db7cbade005b023c98)
+
 ```bash
 # GIT_DIR="Your Git Folder"
 cd $GIT_DIR
@@ -232,7 +240,8 @@ npm --registry=https://registry.npm.taobao.org install koa
 ```
 
 add to `.bashrc` (or `.zshrc`, etc)
-```
+
+```bash
 # nvm
 GIT_DIR=~/git/others
 export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/dist
@@ -240,12 +249,15 @@ source $GIT_DIR/nvm/nvm.sh
 ```
 
 Install cnpm
+
 ```bash
 sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
-then use `cnpm` instead of `npm`
+
+then use `cnpm`{.bash} instead of `npm`
 
 一些有用的东东：
+
 ```bash
 sudo cnpm install -g http-server # 可以在不同端口开数个服务器，不像 python -m SimpleHTTPServer 只能在 。8000 开一个端口服务
 sudo cnpm install -g csslint
@@ -261,12 +273,14 @@ gem sources -l # 看看是什么，把它去除
 gem sources --remove http://rubygems.org/
 gem sources -a https://ruby.taobao.org
 ```
+
 吐槽：
 
 * 这特么都不能错！！！
-* 还有区别！`http://rubygems.org` `http://rubygems.org/`
+* 还有区别！`http://rubygems.org` $\neq$ `http://rubygems.org/`
 
 try it, install [pry](http://pryrepl.org/)
+
 ```bash
 sudo gem install pry
 ```
@@ -275,9 +289,8 @@ sudo gem install pry
 
 ### [GDAL](http://gis.stackexchange.com/questions/21728/how-can-i-install-gdal-1-9-0-on-my-linux-ubuntu-server-10-04)
 
-http://download.osgeo.org/gdal
-
-```
+```bash
+# http://download.osgeo.org/gdal
 cd gdal-1.9.0
 ./configure --with-python
 make
@@ -287,19 +300,21 @@ sudo ldconfig ## update the shared library cache
 
 ### [CGAL](http://doc.cgal.org/latest/Manual/installation.html)
 
-`sudo apt-get install libcgal-dev`
+`sudo apt-get install libcgal-dev`{.bash}
+
 或者自己编译：
-```
+
+```bash
 # GMP
 sudo apt-get install libgmp3-dev
 # MPFR
 wget http://www.mpfr.org/mpfr-current/mpfr-3.1.2.tar.xz
-./configure && make -j
+./configure && make -j 4
 sudo make install
 # BOOST
 sudo apt-get install libboost-all-dev
 # CGAL
-cmake . && make -j
+cmake . && make -j 4
 sudo make install
 ```
 
@@ -355,23 +370,17 @@ Deps:
 * [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page)
 * [FLANN](http://www.cs.ubc.ca/research/flann/)
 
-
-## Refs
-
-* https://lug.ustc.edu.cn/wiki/mirrors/help/debian
-* http://www.2cto.com/Article/201304/200418.html
-* and many more.
-
-
-coffee-script
-
 ag 搜索源码的好工具
 
 ```bash
 apt-get install silversearcher-ag 
 ```
-比如，用 `ag` 搜索 three.js 中的 “fisheye”，基本是回车即显：
-![ag.png](http://upload-images.jianshu.io/upload_images/29284-f35d07a835d53bad.png)
+
+Windows 二进制：<http://gnat.qiniudn.com/ag.exe>
+
+比如，用 `ag`{.bash} 搜索 three.js 中的 “fisheye”，基本是回车即显：
+
+![ag - The Silver Searcher](http://upload-images.jianshu.io/upload_images/29284-f35d07a835d53bad.png)
 
 tmux & [tmuxinator](https://github.com/tmuxinator/tmuxinator)
 
@@ -381,7 +390,8 @@ sudo gem install tmuxinator
 ```
 
 [Wemux](https://github.com/zolrath/wemux)
-![wemux.png](http://upload-images.jianshu.io/upload_images/29284-e8032350ed4a7d86.png)
+
+![wemux](http://upload-images.jianshu.io/upload_images/29284-e8032350ed4a7d86.png)
 
 ```bash
 sudo git clone git://github.com/zolrath/wemux.git /usr/local/share/wemux
@@ -390,9 +400,10 @@ sudo cp /usr/local/share/wemux/wemux.conf.example /usr/local/etc/wemux.conf
 sudo vim /usr/local/etc/wemux.conf # host_list=(root gnat)，改成自己的 ID
 ```
 
+---
 
-### TODO
+Refs
 
-* [ ] 修改, space
-* [x] todo test, x
-* [o] todo test, o
+* <https://lug.ustc.edu.cn/wiki/mirrors/help/debian>
+* <http://www.2cto.com/Article/201304/200418.html>
+* and many more.

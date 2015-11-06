@@ -6,7 +6,7 @@ INDEX=index.txt
 NOTES=${DST}/notes.md
 
 echo deploying notes...
-rm ${NOTES}
+rm ${NOTES} 2>/dev/null
 
 for NOTE in ${SRC}/note-*.md;
 do
@@ -20,5 +20,5 @@ do
     echo -e "\n\n" >> ${NOTES}
 done
 
-rm ${INDEX}
+rm ${INDEX} 2>/dev/null
 echo deploying notes... done

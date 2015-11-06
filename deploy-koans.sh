@@ -6,7 +6,7 @@ INDEX=index.txt
 KOANS=${DST}/koans.md
 
 echo deploying koans...
-rm ${KOANS}
+rm ${KOANS} 2>/dev/null
 
 for KOAN in ${SRC}/koan-*.md;
 do
@@ -20,5 +20,5 @@ do
     echo -e "\n\n" >> ${KOANS}
 done
 
-rm ${INDEX}
+rm ${INDEX} 2>/dev/null
 echo deploying notes... done
