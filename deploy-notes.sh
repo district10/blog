@@ -12,7 +12,7 @@ for NOTE in ${SRC}/note-*.md;
 do
     echo ${NOTE} >> ${INDEX}
 done
-sort -n ${INDEX} < ${INDEX}
+sort -nr ${INDEX} < ${INDEX}
 
 for NOTE in `cat ${INDEX}`
 do

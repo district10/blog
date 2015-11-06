@@ -12,7 +12,7 @@ for KOAN in ${SRC}/koan-*.md;
 do
     echo ${KOAN} >> ${INDEX}
 done
-sort -n ${INDEX} < ${INDEX}
+sort -nr ${INDEX} < ${INDEX}
 
 for KOAN in `cat ${INDEX}`
 do
