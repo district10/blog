@@ -11,11 +11,10 @@ Windows 系统配置
 
 * node (npm) + cnpm
 * [Ext2 IFS For Windows: Download](http://www.fs-driver.org/download.html)
-* IntelliJ, acejmp, vim, [IDEA Intellij 小技巧和插件 - - ITeye 技术网站](http://kidneyball.iteye.com/blog/1814028)
+* IntelliJ, acejmp, vim
 * [Mongoose](http://cesanta.com/mongoose.shtml)
 * [Everything Search Engine](http://www.voidtools.com/)
 * [7-Zip 官方中文主页](http://sparanoid.com/lab/7z/)
-* [WebStorm === EMBRACE](http://www.pc360.net/?p=4645)
 * Pandoc
 * [Chocolatey Gallery](https://chocolatey.org/) 的安装，管理员身份运行：
 
@@ -98,7 +97,7 @@ Qt，CMake，Boost，OpenCV，etc。
 
 Refs
 
-* [改造你的windows开发环境 - 简书](http://www.jianshu.com/p/23df3e37bd9a?search_token=21e09da524c459887852a4122672f5c265e5ff2fd710ec435781d58a3fba5367)
+* [改造你的 windows 开发环境 - 简书](http://www.jianshu.com/p/23df3e37bd9a?search_token=21e09da524c459887852a4122672f5c265e5ff2fd710ec435781d58a3fba5367)
 * [配置豪华的 Windows 开发环境 - 简书](http://www.jianshu.com/p/aa19380828bd?search_token=b7371223ae13e36f283584429869e14cd04e598481430e36fcc9d710c7c4d773)
 * [PuTTY Download Page](http://www.putty.nl/download.html)
 * ruby: [Ruby for Windows](http://rubyinstaller.org/downloads/)
