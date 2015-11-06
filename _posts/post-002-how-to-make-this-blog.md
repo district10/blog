@@ -728,6 +728,10 @@ Linux 上安装 git 和 pandoc 都太容易，用 `sudo apt-get install git pand
 3. `_posts` 文件夹里写自己的博客，写好后到 Makefile 里加上
 
     ```makefile
+    HTML = \
+    $(POST_000N_OUT) \                                        # 这是你新加的
+    $(POST_0002_OUT) \
+
     # posts
     POST_000N_INS = $(PIDIR)/post-00N-your-post-title.md      # 这是你新加的
     POST_000N_OUT = $(PODIR)/post-00N-your-post-title.html    # 这是你新加的
@@ -787,7 +791,7 @@ Pandoc 的引用功能这里没有介绍。本博客支持用 bib 文件（可�
 
 ---
 
-**参考链接**
+Refs
 
 * [Pandoc Markdown Official Site](http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html)
 * [The pandoc-siteproc package](http://hackage.haskell.org/package/pandoc-citeproc)
