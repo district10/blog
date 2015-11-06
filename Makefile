@@ -9,8 +9,10 @@ PARTS = _parts
 # cmds
 PANDOC         = pandoc
 PANDOC_ARGS    = --toc --self-contained
+PANDOC_EXT     = -f markdown_github+ascii_identifiers
+PANDOC_EXTALL  = ignore_line_breaks
 PANDOC_PLAIN   = $(PANDOC) -S -s --ascii -c main.css -B $(PARTS)/header.html -A $(PARTS)/footer.html
-PANDOC_NORMAL  = $(PANDOC) -S -s --ascii --mathjax -c main.css -A $(PARTS)/footer.html --highlight-style pygments
+PANDOC_NORMAL  = $(PANDOC) -S -s --ascii --toc --mathjax -c main.css -A $(PARTS)/footer.html --highlight-style pygments
 PANDOC_WITHBIB = $(PANDOC_NORMAL) --bibliography
 
 # posts
@@ -30,6 +32,7 @@ STATICS = \
 $(PODIR)/main.css \
 $(PODIR)/about.html \
 $(PODIR)/404.html \
+$(PODIR)/gotop.png \
 
 HTML = \
 $(POST_0002_OUT) \
@@ -63,5 +66,9 @@ $(PODIR)/%.html: $(PIDIR)/%.md
 # cp static files
 $(PODIR)/%.css: $(SDIR)/%.css
 	cp $< $@
+$(PODIR)/%.html: $(SDIR)/%.md
+	$(PANDOC_NORMAL) $^ -o $@
 $(PODIR)/%.html: $(SDIR)/%.html
+	cp $< $@
+$(PODIR)/%.png: $(SDIR)/%.png
 	cp $< $@

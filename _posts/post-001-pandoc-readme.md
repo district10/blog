@@ -1,10 +1,14 @@
 % Pandoc User's Guide
 % John MacFarlane
 % 2015-06-15
-% Tags
 
-Pandoc Usooooooer's Guide
+
+Pandoc User's Guide
 ===================
+
+> 这是 [Pandoc 的官方文档](http://pandoc.org/README.html) 在本站的效果。
+> Pandoc 是本博客生成器的 Kernel。
+> Pandoc 支持的 Markdown 秒杀其它种种。
 
 Synopsis
 ========
