@@ -1,18 +1,10 @@
 # blog
 Simplest Markdown blog
 
+See [tangzx.qiniudn.com](http://tangzx.qiniudn.com/)
 
-# Acknowledgements
-0. CSS copied from various sources, and slightly modified by myself.
+## TODO
 
-
-
-[qrsync 命令行同步工具 | 七牛云存储](http://developer.qiniu.com/docs/v6/tools/qrsync.html)
-
-```plain
-{
-    "src":          "/home/your/sync_dir",
-    "dest":         "qiniu:access_key=<AccessKey>&secret_key=<SecretKey>&bucket=<Bucket>&key_prefix=<KeyPrefix>&threshold=<Threshold>",
-    "debug_level":  1
-}
-```
+* [ ] 优化 CSS
+* [ ] 把自己原来的文章慢慢都放到这个 blog 上
+* [ ] 安利！
