@@ -2,13 +2,14 @@
   &copy; 2015-2016 <a href="index.html" style="font-size: 24px">dvorak4tzx</a>     <a id="ghpage" href="index.html" style="font-size: 7px;">@GitHub</a>     <a id="ghraw" href="index.html" style="font-size: 7px;">@源码</a>
 </div>
 <script type="text/javascript">
-mdPath = "https://github.com/district10/blog/blob/master";
-rawPath = "https://raw.githubusercontent.com/district10/blog/master";
+mdPath = 'https://github.com/district10/blog/blob/master';
+rawPath = 'https://raw.githubusercontent.com/district10/blog/master';
+basePath = 'https://github.com/district10/blog';
 pathParts = document.location.toString().split('/');
 filename = pathParts[ pathParts.length - 1 ];
 basename = filename.split('.')[0];
 if ( 'index' === basename.substring(0, 5) ) {
-    mdPath   = 'https://github.com/district10/blog';
+    mdPath   = basePath;
     rawPath  = mdPath;
 } else if ( 'post-' === basename.substring(0, 5) ) {
     filename = ( '/_posts/' + basename + '.md' );

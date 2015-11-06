@@ -233,3 +233,8 @@ tr.head {
 #buckets div a {
     text-decoration: none;
 }
+
+.footnotes {
+    font-size: 70%;
+    line-height: 80%;
+}

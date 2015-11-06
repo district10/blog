@@ -9,11 +9,11 @@
 哪点与众不同？ {#special}
 -------------
 
-从前天（2015-11-14）开始，用了几乎完全脱产的一天来写这个博客工具[^nomeal]。
+从前天（2015-11-14 夜）开始，用了几乎完全脱产的一天来写这个博客工具[^nomeal]。
 
 [^nomeal]: 都懒得没吃午饭和晚饭
 
-现在（2015-11-16）效果很赞，超出了我的预期。所以推广一下。
+现在（2015-11-16 中午）效果很赞，超出了我的预期。所以推广一下我这 36 个小时的成果。
 
 本博客生成器用的是 Makefile、Bash 和 Pandoc，还有一点点 CSS 和 JavaScript，
 没有用其他工具和语言，不用担心自己的博客生成器更新、
@@ -21,9 +21,11 @@
 
 当然其它的博客工具通常都很酷炫，如果你要的是那种，可以用 [Hexo]、[Jekyll]。
 本博客生成器比他们简单得多，而且不是 responsive design，在手机上或许惨不忍睹[^css]。
-但好处是兼容性好、稳定、也不太难看。
+但好处是兼容性好、稳定、也不太难看。字体的选择和配色我也是拼了老命改了很久，不然怎么能像现在一样动人[^koanfont]。
 
-建议快速看一下博客的特性，到 [我要来一个](#我要来一个) 章节看如何在 Windows/Linux
+[^koanfont]: 看过《西文字体 1》和《西文字体 2》，但是你想用的字体网页里又不一定能显示，what a pity。
+
+建议快速看一下博客的特性，再到 [我要来一个](#我要来一个) 章节看如何在 Windows/Linux
 上安装使用，备份在 GitHub，托管到七牛云盘。
 
 [^hexoshit]: 就是因为 Hexo3 出来后我原来的博客死了，我才想到得自己弄这个初级而原始的工具。
@@ -41,19 +43,19 @@
 
 强调
 
-:    **加粗**、*斜体*、_下划 line_，或者***_一起 use_***
+:    **加粗**、*斜体*，或者***一起用***
 
      ~~2^^10^^ = 2014~~ ==> 2^^10^^ = 1024, H~2~O 和 $H_2O$ 都是生命之源[^water]
 
-     三种连字符：1 - 1，1 -- 8，1 --- one 
+     三种连字符：1 - 1，1 -- 8，1 --- one（en-dash，em-dash，和……）
 
      <span style="font-variant:small-caps;">Small caps</span>
      
      <kbd>c-x</kbd> 在 Emacs 里指的是 Control-X
 
-        **加粗**、*斜体*、_下划 line_，或者***_一起 use_***
+        **加粗**、*斜体*，或者***一起用***
         ~~2^^10^^ = 2014~~ ==> 2^^10^^ = 1024, H~2~O 是生命之源[^water]
-        三种连字符：1 - 1，1 -- 8，1 --- one 
+        三种连字符：1 - 1，1 -- 8，1 --- one（en-dash，em-dash，和……）
         <span style="font-variant:small-caps;">Small caps</span>
         <kbd>c-x</kbd> 在 Emacs 里指的是 Control-X
  
@@ -85,7 +87,9 @@
 	
 表格
 
-:   | Right | Left | Default | Center |
+: 这部分的 CSS 我还没有调好，只是勉强能用。
+
+    | Right | Left | Default | Center |
     |------:|:-----|---------|:------:|
     |   12  |  12  |    12   |    12  |
     |  123  |  123 |   123   |   123  |
@@ -160,9 +164,9 @@ Markdown 中使用 HTML
 
 页内引用
 
-:    点我 [回到“与众不同”小节](#special（这是定制的 tag）
+:    点我 [回到“与众不同”小节](#special)（这是定制的 tag）
 
-     点我 [回到“支持的特性”小节](#支持的特性)（这是自动生成的 tag），具体看[源码](#ghraw)。
+     点我 [回到“支持的特性”小节](#支持的特性)（这是自动生成的 tag），具体看 [源码](#ghraw)。
 
 列表自动编号
 
@@ -214,6 +218,8 @@ Numbered examples can be labeled and referred to elsewhere in the document:
 As (@逗你玩) illustrates, ...
 ```
 
+写出来就是：
+
 Term 1
 
 :   Definition 1
@@ -251,7 +257,7 @@ As (@逗你玩) illustrates, ...
 -------------------------------------------------------------
 
 Table: Here's the caption. It, too, may span
-multiple lines. {#table}
+multiple lines.
 
 ```plain
 -------------------------------------------------------------
@@ -267,12 +273,10 @@ multiple lines. {#table}
 -------------------------------------------------------------
 
 Table: Here's the caption. It, too, may span
-multiple lines. {#table}
+multiple lines.
 ```
 
-回到 [表格](#table)。
-
-**four kinds of titles**
+四种链接的方式：
 
 [one][my label 1], and [two][my label 2] and [three][my label 3] and [four][my label 4]
 
@@ -294,7 +298,9 @@ multiple lines. {#table}
 
 [my website][]  is good, even [my website] is good, even [this]. 
 
-Hashes
+Hash Tag[^hashtag]
+
+[^hashtag]: 其实在 weibo/twitter 上才叫 hash tag，这里或许应该叫 section ref link。
 
 * See [above]
 * See [table](#table)
@@ -308,7 +314,9 @@ Hashes
 ```plain
 [my website][]  is good, even [my website] is good, even [this]. 
 
-Hashes
+Hash Tag[^hashtag]
+
+[^hashtag]: 其实在 weibo/twitter 上才叫 hash tag，这里或许应该叫 section ref link。
 
 * See [above]
 * See [table](#table)
@@ -433,6 +441,8 @@ qsort (x:xs) = qsort (filter (< x) xs) ++ [x] ++
 
 ### 数学公式
 
+不管用了多少年的 M$ Word，总有一天写论文你要用 $\LaTeX$，那就从 MathJax 开始练习吧。
+
 一个矩阵
 
 $$
@@ -526,9 +536,6 @@ $$
          \underline{12}
 \end{array}
 $$
-
-
-访问 [MathJax](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) 参考更多使用方法。
 
 | Operators | LaTeX |
 | :-------: | :---: |
@@ -663,24 +670,27 @@ x^2-3 & \text{if $-3 \le x \le 5$};\\
 
 [this]: https://www.zybuluo.com/gnat-xj/note/30681
 
-### 我要来一个
+访问 [MathJax](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) 参考更多使用方法。
+
+我要来一个
+----------
 
 下面介绍如何
 
-(@) 在 Windows/Linux 上安装使用
-(@) 备份到 GitHub
-(@) 托管到七牛云盘。
+1. 在 Windows/Linux 上安装使用，
+2. 备份到 GitHub，
+3. 托管到七牛云盘。
 
-
-Windows 上需要安装 Git for Windows，可以参考我以前写的笔记：[github-guide/配置-Windows.md at master · whudoc/github-guide](https://github.com/whudoc/github-guide/blob/master/%E9%85%8D%E7%BD%AE-Windows.md)。
+首先（1），Windows 上需要安装 Git for Windows，可以参考我以前写的笔记：[github-guide/配置-Windows.md at master · whudoc/github-guide](https://github.com/whudoc/github-guide/blob/master/%E9%85%8D%E7%BD%AE-Windows.md)。
 还需要 Pandoc，[下载](http://gnat.qiniudn.com/pandoc-1.13.2-windows.msi) 后一步步点击就可以。
 
 Linux 上安装 git 和 pandoc 都太容易，用 `sudo apt-get install git pandoc`{.bash} 就可以。
 
 然后可以先下载 [我的博客](https://github.com/district10/blog/archive/master.zip)，
-解压后右键打开 Git Bash，输入 `make`{.bash} 完成编译，不出意外的话会有一个 `public` 文件夹生成。
-打开里面的 `index.html`，是不是和你现在正看的网页一模一样。
+解压后进入文件夹，右键打开 Git Bash，输入 `make`{.bash} 完成编译，不出意外的话会有一个 `public` 文件夹生成。
+打开里面的 `index.html`，是不是和你现在正看的网页一模一样？就这么简单。
 
+<small>
 本博客生成器的核心是调用 pandoc 来把用 markdown 写的博客生成 HTML 页面，
 如果想了解如何调用，你得仔细看看 [Makefile](https://github.com/district10/blog/blob/master/Makefile)[^makefile]。
 博客下的文件夹有
@@ -690,12 +700,81 @@ Linux 上安装 git 和 pandoc 都太容易，用 `sudo apt-get install git pand
 3. `_parts`：页面的 footer 和主页的 header。
 4. `_posts`：博客主体，一个 post 就是一篇博客。
 5. `_static`：CSS 和一些单独的页面。
+</small>
 
 [^makefile]: 几十行的 Makefile 我写了好久，好久。一边学一遍写。
 
-**Refs**
+其次（2），fork 我的 repo，修改如下几处：
+
+1. [`_parts/footer.html`](https://github.com/district10/blog/blob/master/_parts/footer.html) 里的主页名称和三个变量
+
+    ```javascript
+    mdPath = 'https://github.com/district10/blog/blob/master';
+    rawPath = 'https://raw.githubusercontent.com/district10/blog/master';
+    basePath = 'https://github.com/district10/blog';
+    ```
+2. [`_parts/header.html`](https://github.com/district10/blog/blob/master/_parts/header.html)，这是主页的 banner，我想你不愿意用我的。
+3. `_posts` 文件夹里写自己的博客，写好后到 Makefile 里加上
+
+    ```makefile
+    # posts
+    POST_000N_INS = $(PIDIR)/post-00N-your-post-title.md      # 这是你新加的
+    POST_000N_OUT = $(PODIR)/post-00N-your-post-title.html    # 这是你新加的
+    POST_0002_INS = $(PIDIR)/post-002-how-to-make-this-blog.md
+    POST_0002_OUT = $(PODIR)/post-002-how-to-make-this-blog.html
+    
+    # posts
+    $(POST_000N_OUT): $(POST_000N_INS)                        # 这是你新加的
+    	$(PANDOC_NORMAL) $^ -o $@
+    $(POST_0002_OUT): $(POST_0002_INS)
+    	$(PANDOC_NORMAL) $^ -o $@
+    ```
+4. 似乎没有其它了。    
+
+最后（3），上传到七牛。先到 [qrsync 命令行同步工具 | 七牛云存储](http://developer.qiniu.com/docs/v6/tools/qrsync.html)
+下载命令行同步工具，下载解压后放到系统变量 `%PATH%` 里。再找个安全的位置，新建一个文件 `conf.json`：
+
+    {
+        "src":          "publish 文件夹的绝对路径",
+        "dest":         "qiniu:access_key=<AccessKey>&secret_key=<SecretKey>&bucket=<Bucket>",
+        "debug_level":  1
+    }
+
+其中的 `<AccessKey`、`<SecretKey` 从七牛网上拿到，如下图：
+
+![从七牛获取 AK、SK](http://gnat.qiniudn.com/misc/qiniuconf.jpg)
+
+注意妥善保存不要泄露。
+
+`<Bucket>` 是你的“空间”名，记得弄个好记的名字：
+
+![我不保证你能自定义简短的 Bucket Name](http://gnat.qiniudn.com/misc/qiniubucket.jpg)
+
+然后打开 Git Bash 输入 `qsync conf.json`{.bash} 就可以把生成的博客传到七牛云盘，就可以访问了。
+
+![Qiniu Sync，快如闪电](http://gnat.qiniudn.com/misc/qiniusync.jpg)
+
+最后，<span style="font-variant:small-caps;">bon appetite</span>～
+
+致谢
+----
+
+感谢我喜欢的一些网站如
+[简书 - 交流故事，沟通想法](http://www.jianshu.com/)，
+[LOFTER（乐乎） - 每个人的理想国](http://www.lofter.com/)，
+我从上面扣了一些 CSS，
+感谢 [七牛云存储 - 移动时代的云存储服务商](http://www.qiniu.com/)，
+感谢 [Pandoc]，感谢 GNU Make 以及 Git，感谢 GitHub、MathJax。
+我们这个时代真是太牛逼了，开源社区有这么多好用的工具。
+
+[Pandoc]: http://pandoc.org/README.html
+
+---
+
+**参考链接**
 
 * [Pandoc Markdown Official Site](http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html)
 * [The pandoc-siteproc package](http://hackage.haskell.org/package/pandoc-citeproc)
 * [Art of Problem Solving - LaTeX: Symbols](http://www.artofproblemsolving.com/wiki/index.php/LaTeX:Symbols)
 * [Art of Problem Solving - LaTeX: Commands](http://www.artofproblemsolving.com/wiki/index.php/LaTeX:Commands)
+* 我以前的博客（已经下线）
