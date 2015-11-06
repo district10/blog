@@ -776,6 +776,11 @@ Linux 上安装 git 和 pandoc 都太容易，用 `sudo apt-get install git pand
 
 [Pandoc]: http://pandoc.org/README.html
 
+其它
+----
+
+Pandoc 的引用功能这里没有介绍。本博客支持用 bib 文件（可以从 Mendeley 导出）引用参考文献。
+
 ---
 
 **参考链接**
