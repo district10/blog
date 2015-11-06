@@ -16,6 +16,10 @@ PANDOC_NORMAL  = $(PANDOC) -S -s --ascii --toc --mathjax -c main.css -A $(PARTS)
 PANDOC_WITHBIB = $(PANDOC_NORMAL) --bibliography
 
 # posts
+POST_0019_INS = $(PIDIR)/post-0019-opencv-computer-vision-with-python.md
+POST_0019_OUT = $(PODIR)/post-0019-opencv-computer-vision-with-python.html
+POST_0018_INS = $(PIDIR)/post-0018-spatial-analysis.md
+POST_0018_OUT = $(PODIR)/post-0018-spatial-analysis.html
 POST_0017_INS = $(PIDIR)/post-0017-wikipedia-japan.md
 POST_0017_OUT = $(PODIR)/post-0017-wikipedia-japan.html
 POST_0016_INS = $(PIDIR)/post-0016-wikipedia-china.md
@@ -65,6 +69,8 @@ $(PODIR)/404.html \
 $(PODIR)/gotop.png \
 
 HTML = \
+$(POST_0019_OUT) \
+$(POST_0018_OUT) \
 $(POST_0017_OUT) \
 $(POST_0016_OUT) \
 $(POST_0015_OUT) \
@@ -99,6 +105,10 @@ $(POST_NOTES_O): $(POST_NOTES)
 	$(PANDOC_NORMAL) $^ -o $@
     
 # posts
+$(POST_0019_OUT): $(POST_0019_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0018_OUT): $(POST_0018_INS)
+	$(PANDOC_NORMAL) $^ -o $@
 $(POST_0017_OUT): $(POST_0017_INS)
 	$(PANDOC_NORMAL) $^ -o $@
 $(POST_0016_OUT): $(POST_0016_INS)

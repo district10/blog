@@ -384,6 +384,8 @@ Windows 二进制：<http://gnat.qiniudn.com/ag.exe>
 
 tmux & [tmuxinator](https://github.com/tmuxinator/tmuxinator)
 
+查看文件中的 <kbd>Tab</kbd>：`ag '\t'`{.bash}
+
 ```bash
 sudo apt-get install tmux
 sudo gem install tmuxinator
