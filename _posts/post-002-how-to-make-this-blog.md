@@ -9,6 +9,13 @@
 哪点与众不同？ {#special}
 -------------
 
+> Notice:
+>
+>> 这是前 36 个小时做的工作，用 Makefile 和 Shell 脚本弄了一个博客生成器。当然，最累最脏的活都是 Pandoc 干得，
+>> 我只是把它们协调在了一起。用万总的话说，这叫“专业的人干专业的事”，用 Unix 哲学这叫 “Do one thing，and do it well”。
+>> 代码和样例开源在 <a href="https://github.com/district10/blog/">GitHub</a>，欢迎试用、反馈、提交 Pull Request，
+>> 欢迎分享、传播和安利。
+
 从前天（2015-11-14 夜）开始，用了几乎完全脱产的一天来写这个博客工具[^nomeal]。
 
 [^nomeal]: 都懒得没吃午饭和晚饭
