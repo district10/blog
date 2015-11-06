@@ -129,10 +129,20 @@ caption {
 }
 
 #footer {
-    padding-top: 1em;
+    padding: 10px 10px 10px 10px;
     font-size: 70%;
     color: gray;
+    text-decoration: none;
     text-align: center;
+    position: fixed;
+    clear: both;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    left: 5%;
+    right: 5%;
+    bottom: 0px;
 }
 
 h1.title {
