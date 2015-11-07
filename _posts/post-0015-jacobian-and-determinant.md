@@ -62,3 +62,5 @@ Refs
 
 - [Jacobian matrix and determinant][jacobian-determint]
 - [All the Mathematics You Missed （数学拾遗）][math-book]
+
+<div class="ds-thread"></div>

@@ -4,7 +4,8 @@
 
 
 编程之道
-=======
+========
+<div class="ds-thread"></div>
 
 dvorak4tzx: 
 
@@ -118,3 +119,5 @@ Book Nine: Epilogue
 > Time for you to leave.
 
 <div style="text-align:center;color:blueviolet;font-size:24px;">The <b>Tao</b> of Programming is a <b>must</b> <br> for computerist who likes to laugh.</div>
+
+<div class="ds-thread"></div>

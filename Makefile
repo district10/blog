@@ -16,6 +16,12 @@ PANDOC_NORMAL  = $(PANDOC) -S -s --ascii --toc --mathjax -c main.css -A $(PARTS)
 PANDOC_WITHBIB = $(PANDOC_NORMAL) --bibliography
 
 # posts
+POST_0022_INS = $(PIDIR)/post-0022-learning-html.md
+POST_0022_OUT = $(PODIR)/post-0022-learning-html.html
+POST_0021_INS = $(PIDIR)/post-0021-wikileaks.md
+POST_0021_OUT = $(PODIR)/post-0021-wikileaks.html
+POST_0020_INS = $(PIDIR)/post-0020-kaoyan-english.md
+POST_0020_OUT = $(PODIR)/post-0020-kaoyan-english.html
 POST_0019_INS = $(PIDIR)/post-0019-opencv-computer-vision-with-python.md
 POST_0019_OUT = $(PODIR)/post-0019-opencv-computer-vision-with-python.html
 POST_0018_INS = $(PIDIR)/post-0018-spatial-analysis.md
@@ -69,6 +75,9 @@ $(PODIR)/404.html \
 $(PODIR)/gotop.png \
 
 HTML = \
+$(POST_0022_OUT) \
+$(POST_0021_OUT) \
+$(POST_0020_OUT) \
 $(POST_0019_OUT) \
 $(POST_0018_OUT) \
 $(POST_0017_OUT) \
@@ -90,7 +99,7 @@ $(POST_0002_OUT) \
 $(POST_0001_OUT) \
 
 # rules
-all: $(HTML) $(STATICS) deploy $(POST_KOANS_O) $(POST_NOTES_O) $(POST_INDEX_O)
+all: $(HTML) $(STATICS) $(POST_KOANS_O) $(POST_NOTES_O) $(POST_INDEX_O)
 clean:
 	rm -f $(PODIR)/*
 deploy:
@@ -103,8 +112,14 @@ $(POST_KOANS_O): $(POST_KOANS)
 	$(PANDOC_NORMAL) $^ -o $@
 $(POST_NOTES_O): $(POST_NOTES)
 	$(PANDOC_NORMAL) $^ -o $@
-    
+
 # posts
+$(POST_0022_OUT): $(POST_0022_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0021_OUT): $(POST_0021_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0020_OUT): $(POST_0020_INS)
+	$(PANDOC_NORMAL) $^ -o $@
 $(POST_0019_OUT): $(POST_0019_INS)
 	$(PANDOC_NORMAL) $^ -o $@
 $(POST_0018_OUT): $(POST_0018_INS)
@@ -148,12 +163,12 @@ $(POST_0001_OUT): $(POST_0001_INS)
 $(PODIR)/%.html: $(PIDIR)/%.md
 	./left_behinds $@ $<
 
-# cp static files
+# cp & trans static files
 $(PODIR)/%.css: $(SDIR)/%.css
-	cp $< $@
-$(PODIR)/%.html: $(SDIR)/%.md
-	$(PANDOC_NORMAL) $^ -o $@
-$(PODIR)/%.html: $(SDIR)/%.html
 	cp $< $@
 $(PODIR)/%.png: $(SDIR)/%.png
 	cp $< $@
+$(PODIR)/%.html: $(SDIR)/%.html
+	cp $< $@
+$(PODIR)/%.html: $(SDIR)/%.md
+	$(PANDOC_NORMAL) $^ -o $@

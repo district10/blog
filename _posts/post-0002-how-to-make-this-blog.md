@@ -61,7 +61,7 @@
      <kbd>c-x</kbd> 在 Emacs 里指的是 Control-X
 
         **加粗**、*斜体*，或者***一起用***
-        ~~2^^10^^ = 2014~~ ==> 2^^10^^ = 1024, H~2~O 是生命之源[^water]
+        ~~2^^10^^ = 2014~~ ==> 2^^10^^ = 1024, H~2~O 和 $H_2O$ 都是生命之源[^water]
         三种连字符：1 - 1，1 -- 8，1 --- one（en-dash，em-dash，和……）
         <span style="font-variant:small-caps;">Small caps</span>
         <kbd>c-x</kbd> 在 Emacs 里指的是 Control-X
@@ -403,6 +403,9 @@ public:
 会用 C 写函数：
 
 ```c
+// RAW_SPAN       = 3
+// RAW_TYPE       = float
+// RAW_PRINTF_STR = " %20.10lf "
 void raw2pts( FILE *ifp, FILE *ofp )
 {
     fseek( ifp, 0, SEEK_END );
@@ -412,11 +415,13 @@ void raw2pts( FILE *ifp, FILE *ofp )
 
     RAW_TYPE buf[RAW_SPAN];
 
-    int i = 0;
+    int i = 0, j = 0;
     for ( i = 0; i < len; ++i ) {
         fread( buf, sizeof( RAW_TYPE ), RAW_SPAN, ifp );
-        fprintf( ofp, "%20.10f %20.10f %20.10f\n",
-                 buf[0], buf[1], buf[2] );
+        for ( j = 0; j < RAW_SPAN; ++j ) {
+            fprintf( ofp, RAW_PRINTF_STR, buf[j] );
+        }
+        fprintf( ofp, "\n" );
     }
     
     fprintf( stdout, "--Parsed %d points.\n", len ); 
@@ -755,7 +760,7 @@ Linux 上安装 git 和 pandoc 都太容易，用 `sudo apt-get install git pand
         "debug_level":  1
     }
 
-其中的 `<AccessKey`、`<SecretKey` 从七牛网上拿到，如下图：
+其中的 `<AccessKey>`、`<SecretKey>` 从七牛网上拿到，如下图：
 
 ![从七牛获取 AK、SK](http://gnat.qiniudn.com/misc/qiniuconf.jpg)
 
@@ -798,3 +803,5 @@ Refs
 * [Art of Problem Solving - LaTeX: Symbols](http://www.artofproblemsolving.com/wiki/index.php/LaTeX:Symbols)
 * [Art of Problem Solving - LaTeX: Commands](http://www.artofproblemsolving.com/wiki/index.php/LaTeX:Commands)
 * 我以前的博客（已经下线）
+
+<div class="ds-thread"></div>

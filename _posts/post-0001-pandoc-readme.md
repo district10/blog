@@ -7,8 +7,10 @@ Pandoc User's Guide
 ===================
 
 > 这是 [Pandoc 的官方文档](http://pandoc.org/README.html) 在本站的效果。
-> Pandoc 是本博客生成器的 Kernel。
+> Pandoc 是本博客生成器的 Kernel[^pandoc]。
 > Pandoc 支持的 Markdown 秒杀其它种种。
+
+[^pandoc]: 没想到 Pandoc 有这么老的历史了
 
 Synopsis
 ========
@@ -3740,3 +3742,5 @@ Wikiwide, and
 Xavier Olive.
 
 [GPL]: http://www.gnu.org/copyleft/gpl.html "GNU General Public License"
+
+<div class="ds-thread"></div>

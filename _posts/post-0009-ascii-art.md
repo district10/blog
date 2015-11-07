@@ -130,9 +130,11 @@ B：
 ~~~
 
 [ascii-art]: http://en.wikipedia.org/wiki/ASCII_art
-[qiubite]: file:// "这个不是链接，我的亲"
-[alien]: file:// "不就是个外星人嘛，没见过外星人啊"
-[programmer]: file:// "程序员这个嘛。。。。额。。。别放弃治疗"
-[horse]: file:// "没草原哪儿来的马？！"
-[handsome-horse]: file:// "你有一双发现美的眼睛"
+[qiubite]: chrome:// "这个不是链接，我的亲"
+[alien]: chrome:// "不就是个外星人嘛，没见过外星人啊"
+[programmer]: chrome:// "程序员这个嘛。。。。额。。。别放弃治疗"
+[horse]: chrome:// "没草原哪儿来的马？！"
+[handsome-horse]: chrome:// "你有一双发现美的眼睛"
 [dont-be-shy]: file// "不要害羞！！！"
+
+<div class="ds-thread"></div>

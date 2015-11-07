@@ -424,3 +424,5 @@ Refs
 [freeasinfreedom]: http://book.douban.com/subject/1785874/
 
 [openbook]: http://oreilly.com/openbook/freedom/
+
+<div class="ds-thread"></div>

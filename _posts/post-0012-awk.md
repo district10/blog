@@ -139,3 +139,5 @@ Refs
 [awk_simple_tutorial]: http://coolshell.cn/articles/9070.html
 
 [awk_book]: http://book.douban.com/subject/1876898/
+
+<div class="ds-thread"></div>

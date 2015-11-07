@@ -8,7 +8,8 @@ body {
     padding-right: 1em;
     padding-left: 1em;
     padding-bottom: 80px;
-    max-width: 44em; 
+    max-width: 44em;
+    min-width: 30em;
     border-left: 1px solid black;
     border-right: 1px solid black;
     color: black;
@@ -131,7 +132,6 @@ caption {
     padding: 10px 10px 10px 10px;
     font-size: 70%;
     color: gray;
-    text-decoration: none;
     text-align: center;
     position: fixed;
     clear: both;
@@ -142,6 +142,11 @@ caption {
     left: 5%;
     right: 5%;
     bottom: 0px;
+    font-variant:small-caps;
+}
+
+#footer a {
+    text-decoration: none;
 }
 
 h1.title {
@@ -246,4 +251,7 @@ tr.head {
 .footnotes {
     font-size: 70%;
     line-height: 80%;
+}
+
+.ds-thread {
 }
