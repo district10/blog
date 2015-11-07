@@ -50,23 +50,22 @@
 
 强调
 
-:    **加粗**、*斜体*，或者***一起用***
+:   * **加粗**、*斜体*，或者***一起用***
+    * ~~2^^10^^ = 2014~~ ==> 2^^10^^ = 1024, H~2~O 和 $H_2O$ 都是生命之源[^water]
+    * 三种连字符：1 - 1，1 -- 8，1 --- one（en-dash，em-dash，和……）
+    * <span style="font-variant:small-caps;">Small caps</span>
+    
+    <kbd>c-x</kbd> 在 Emacs 里指的是 Control-X
 
-     ~~2^^10^^ = 2014~~ ==> 2^^10^^ = 1024, H~2~O 和 $H_2O$ 都是生命之源[^water]
-
-     三种连字符：1 - 1，1 -- 8，1 --- one（en-dash，em-dash，和……）
-
-     <span style="font-variant:small-caps;">Small caps</span>
-     
-     <kbd>c-x</kbd> 在 Emacs 里指的是 Control-X
-
-        **加粗**、*斜体*，或者***一起用***
-        ~~2^^10^^ = 2014~~ ==> 2^^10^^ = 1024, H~2~O 和 $H_2O$ 都是生命之源[^water]
-        三种连字符：1 - 1，1 -- 8，1 --- one（en-dash，em-dash，和……）
-        <span style="font-variant:small-caps;">Small caps</span>
-        <kbd>c-x</kbd> 在 Emacs 里指的是 Control-X
+    ```markdown
+    * **加粗**、*斜体*，或者***一起用***
+    * ~~2^^10^^ = 2014~~ ==> 2^^10^^ = 1024, H~2~O 和 $H_2O$ 都是生命之源[^water]
+    * 三种连字符：1 - 1，1 -- 8，1 --- one（en-dash，em-dash，和……）
+    * <span style="font-variant:small-caps;">Small caps</span>
+    * <kbd>c-x</kbd> 在 Emacs 里指的是 Control-X
  
-        [^water]: 看上去不一样，其实都是“水”。
+    [^water]: 看上去不一样，其实都是“水”。
+    ```
 
 [^water]: 看上去不一样，其实都是“水”。
 
@@ -199,7 +198,7 @@ Markdown 中使用 HTML
 
 上面列举特性用的都是“名词解释”这一特性，“名词解释”的基本写法是：
 
-```plain
+```markdown
 Term 1
 
 :   Definition 1
@@ -266,7 +265,7 @@ As (@逗你玩) illustrates, ...
 Table: Here's the caption. It, too, may span
 multiple lines.
 
-```plain
+```markdown
 -------------------------------------------------------------
  Centered   Default           Right Left
   Header    Aligned         Aligned Aligned
@@ -294,7 +293,7 @@ multiple lines.
 [my label 3]: http://fsf.org (The free software foundation)
 [my label 4]: /bar#special  'A title in single quotes'
 
-```plain
+```markdown
 [one][my label 1], and [two][my label 2] and [three][my label 3] and [four][my label 4]
 
 [my label 1]: /foo/bar.html  "My title, optional"
@@ -318,7 +317,7 @@ Hash Tag[^hashtag]
 [this]: /baz
 [above]: #good
 
-```plain
+```markdown
 [my website][]  is good, even [my website] is good, even [this]. 
 
 Hash Tag[^hashtag]
@@ -351,7 +350,7 @@ Hash Tag[^hashtag]
 
 [standalone-pic-big-one]: http://imglf0.ph.126.net/FkB_RjGf7iH0Im3jf_3lWQ==/6630541099630719693.png "本来想用 Gatsby 挥拳打 Tom 的图片"
 
-```plain
+```markdown
 段落内的图片，caption 不显示： ![inline-pic-without-showing-this-text]
 
 单独一段的图片，显示 caption：
@@ -754,11 +753,13 @@ Linux 上安装 git 和 pandoc 都太容易，用 `sudo apt-get install git pand
 最后（3），上传到七牛。先到 [qrsync 命令行同步工具 | 七牛云存储](http://developer.qiniu.com/docs/v6/tools/qrsync.html)
 下载命令行同步工具，下载解压后放到系统变量 `%PATH%` 里。再找个安全的位置，新建一个文件 `conf.json`：
 
-    {
-        "src":          "publish 文件夹的绝对路径",
-        "dest":         "qiniu:access_key=<AccessKey>&secret_key=<SecretKey>&bucket=<Bucket>",
-        "debug_level":  1
-    }
+```json
+{
+    "src":          "publish 文件夹的绝对路径",
+    "dest":         "qiniu:access_key=<AccessKey>&secret_key=<SecretKey>&bucket=<Bucket>",
+    "debug_level":  1
+}
+```
 
 其中的 `<AccessKey>`、`<SecretKey>` 从七牛网上拿到，如下图：
 
