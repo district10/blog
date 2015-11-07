@@ -136,5 +136,3 @@ B：
 [horse]: chrome:// "没草原哪儿来的马？！"
 [handsome-horse]: chrome:// "你有一双发现美的眼睛"
 [dont-be-shy]: file// "不要害羞！！！"
-
-<div class="ds-thread"></div>

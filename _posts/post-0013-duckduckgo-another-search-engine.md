@@ -212,5 +212,3 @@ Refs
 [duckduckhack-intro]: https://duck.co/duckduckhack/ddh-intro
 
 [duckduckgo-community]: https://duck.co/
-
-<div class="ds-thread"></div>

@@ -240,5 +240,3 @@ Refs
 [it-birds]: http://book.douban.com/subject/4006425/
 
 [blogs]: http://blog.csdn.net/qiaqia609/article/details/8067771
-
-<div class="ds-thread"></div>

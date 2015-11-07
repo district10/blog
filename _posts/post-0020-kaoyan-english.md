@@ -337,5 +337,3 @@ without forgetting to try to figure out a way to avoid such tragedy in the futur
    写的时候是觉得自己 Part A 和 Part B 写得差不多长，我还以为 Part B 不够丰满……得整改。
 2. 句式不够多变。
 3. 只敲了原文，寝室灯坏了，台灯借给基友了，就没有把修改内容附上。
-
-<div class="ds-thread"></div>

@@ -7,7 +7,7 @@ body {
     margin: auto;
     padding-right: 1em;
     padding-left: 1em;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
     max-width: 44em;
     min-width: 30em;
     border-left: 1px solid black;
@@ -260,4 +260,9 @@ tr.head {
 }
 
 .ds-thread {
+    padding-top: 50px;
+}
+
+#cc {
+    padding-top: 20px;
 }

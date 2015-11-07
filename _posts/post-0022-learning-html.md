@@ -1,13 +1,13 @@
-% 学习 HTML
+% Learning HTML
 % Tang Zhixiong
 % 2014-02-12
 
 
-学习 HTML
-=========
+Learning HTML
+=============
 
-[HTML Introduction][html-intro]
--------------------------------
+HTML Introduction
+-----------------
 
 What is HTML?
 
@@ -40,8 +40,6 @@ HTML Versions
 | XHTML | 2000|
 | HTML5 | 2012 |
 
-[html-intro]: http://www.w3schools.com/html/html_intro.asp
-
 `<!DOCTYPE>`{.html} Declaration
 
 :   * **helps the browser to display a web page correctly.**
@@ -63,10 +61,8 @@ HTML Versions
     
     * for more, see [**DOCTYPE Reference**][doctype-reference]
 
-[doctype-reference]: http://www.w3schools.com/tags/tag_doctype.asp
-
-[HTML Basic][html-basic]
-------------------------
+HTML Basic
+----------
 
 HTML Headings
 
@@ -141,8 +137,6 @@ Target Attribute
 :   * specifies where to open the linked document, in a new tab or window
     * `<a href="http://www.w3schools.com/" target="_blank">Visit W3Schools!</a>`{.html}
 
-[html-basic]: http://www.w3schools.com/html/html_basic.asp
-
 ### HTML `<head>`{.html}
 
 Head Section
@@ -190,7 +184,7 @@ Head Section
 
     * `<script>`{.html}: define a **client-side** script, such as a JavaScript
 
-### [HTML Styles - CSS][html-css]
+### HTML Styles - CSS
 
 CSS
 
@@ -229,9 +223,7 @@ CSS
             </head>
             ```
 
-[html-css]: http://www.w3schools.com/html/html_css.asp
-
-### [HTML Images][html-image]
+### HTML Images
 
 `<img>`{.html} tag is **empty** (contains attributes only, and no closing tag)
 
@@ -253,9 +245,7 @@ More Options
     </map>
     ```
 
-[html-image]: http://www.w3schools.com/html/html_images.asp
-
-### [HTML Table][html-table]
+### HTML Table
 
 Elements
 
@@ -299,7 +289,7 @@ Elements
 
         + Caption : `<caption>`{.html}
 
-## [HTML List][html-list]
+### HTML List
 
 Elements
 
@@ -327,11 +317,7 @@ Elements
         </dl>
         ```
 
-[html-table]: http://www.w3schools.com/html/html_tables.asp
-[html-list]: http://www.w3schools.com/html/html_lists.asp
-
-[HTML Blocks][html-blocks]
---------------------------
+### HTML Blocks
 
 `HTML Elements` 
 
@@ -345,10 +331,7 @@ Elements
     * `<div>`{.html}: defines a section in a document (block-level)
     * `<span>`{.html}: defines a section in a document (inline)
 
-[html-blocks]: http://www.w3schools.com/html/html_blocks.asp
-
-[HTML Layouts][html-layouts]
-----------------------------
+### HTML Layouts
 
 Using `<div>` elements
 
@@ -404,10 +387,7 @@ Using `<table>` elements
     </table>
     ```
 
-[html-layouts]: http://www.w3schools.com/html/html_layout.asp
-
-[HTML Forms and Input][html-forms-and-input]
---------------------------------------------
+### HTML Forms and Input
 
 `<form>`{.html}
 
@@ -456,9 +436,7 @@ Using `<table>` elements
         </textarea>
         ```
 
-[html-forms-and-input]: http://www.w3schools.com/html/html_forms.asp
-
-### [HTML Iframes][html-iframe]
+### HTML Iframes
 
 An iframe is used to **display a web page within a web page**, `i` stands for inline
 
@@ -468,9 +446,8 @@ An iframe is used to **display a web page within a web page**, `i` stands for in
 <p><a href="http://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
 ```
 
-[html-iframe]: http://www.w3schools.com/html/html_iframe.asp
-
-### [HTML Colors, Color Names][html-colors]
+HTML Colors, Color Names
+------------------------
 
 CSS colors
 
@@ -499,9 +476,8 @@ CSS colors
 
         + [List: Color Values](http://www.w3schools.com/html/html_colorvalues.asp)
 
-[html-colors]: http://www.w3schools.com/html/html_colors.asp
-
-### [HTML Scripts: JavaScript][html-js]
+HTML Scripts: JavaScript
+------------------------
 
 `<script>`{.html} tag
 
@@ -513,15 +489,14 @@ CSS colors
 
 A Taste of JavaScript
 
-```html
+```javascript
 document.write("<p>This is a paragraph</p>");
 <button type="button" onclick="myFunction()">Click Me!</button>
 document.getElementById("demo").style.color="#ff0000";
 ```
 
-[html-js]: http://www.w3schools.com/html/html_scripts.asp
-
-### [HTML Entities][html-entities]
+HTML Entities
+-------------
 
 Be replaced with **character entities**
 
@@ -539,9 +514,8 @@ Be replaced with **character entities**
     + `a&#770;`{.html}, a&#770;
     + `a&#771;`{.html}, a&#771;
 
-[html-entities]: http://www.w3schools.com/html/html_entities.asp
-
-### [HTML Symbols][html-symbols]
+HTML Symbols
+------------
 
 HTML symbols
 
@@ -573,7 +547,8 @@ HTML symbols
 [symbols-refs]: http://www.w3schools.com/charsets/ref_utf_symbols.asp
 [arrow-refs]: http://www.w3schools.com/charsets/ref_utf_arrows.asp
 
-### [HTML Encoding (Character Sets)][html-encoding]
+HTML Encoding (Character Sets)
+------------------------------
 
 What is Character Encoding?
 
@@ -589,9 +564,8 @@ What is Character Encoding?
         + `IOS-8859-1`,
         + `Unicode` is identical to ASCII for the values from 0 to 127.
 
-[html-encoding]: http://www.w3schools.com/html/html_charset.asp
-
-### [HTML Uniform Resource Locators][html-rc-locator]
+HTML Uniform Resource Locators
+------------------------------
 
 Syntax
 
@@ -613,10 +587,8 @@ Common URL Schemes
 
 [URL Encoding][url-encoding]
 
-[html-rc-locator]: http://www.w3schools.com/html/html_urlencode.asp
-[url-encoding]: http://www.w3schools.com/html/html_urlencode.asp
-
-### [HTML - XHTML][html-xhtml]
+HTML - XHTML
+------------
 
 What Is XHTML?
 
@@ -648,32 +620,41 @@ The Most Important Differences from HTML
     + **Attribute values must be quoted**, `<table width="100%">`{.html}
     + **Attribute minimization is forbidden**: `<input checked>`{.html} to `<input checked="checked">`{.html}
 
-[html-xhtml]: http://www.w3schools.com/html/html_xhtml.asp
+---
 
+Refs
 
+* [HTML Introduction][html-intro]
+* [HTML Basic][html-basic]
+* [HTML Styles - CSS][html-css]
+* [HTML Images][html-image]
+* [HTML Table][html-table]
+* [HTML List][html-list]
+* [HTML Blocks][html-blocks]
+* [HTML Layouts][html-layouts]
+* [HTML Forms and Input][html-forms-and-input]
+* [HTML Iframes][html-iframe]
+* [HTML Colors, Color Names][html-colors]
+* [HTML Scripts: JavaScript][html-js]
+* [HTML Symbols][html-symbols]
+* [HTML Entities][html-entities]
+* [HTML Uniform Resource Locators][html-rc-locator]
+* [HTML Encoding (Character Sets)][html-encoding]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="ds-thread"></div>
+[html-css]: http://www.w3schools.com/html/html_css.asp
+[html-image]: http://www.w3schools.com/html/html_images.asp
+[html-basic]: http://www.w3schools.com/html/html_basic.asp
+[doctype-reference]: http://www.w3schools.com/tags/tag_doctype.asp
+[html-intro]: http://www.w3schools.com/html/html_intro.asp
+[html-table]: http://www.w3schools.com/html/html_tables.asp
+[html-list]: http://www.w3schools.com/html/html_lists.asp
+[html-blocks]: http://www.w3schools.com/html/html_blocks.asp
+[html-layouts]: http://www.w3schools.com/html/html_layout.asp
+[html-forms-and-input]: http://www.w3schools.com/html/html_forms.asp
+[html-iframe]: http://www.w3schools.com/html/html_iframe.asp
+[html-colors]: http://www.w3schools.com/html/html_colors.asp
+[html-js]: http://www.w3schools.com/html/html_scripts.asp
+[html-entities]: http://www.w3schools.com/html/html_entities.asp
+[html-encoding]: http://www.w3schools.com/html/html_charset.asp
+[html-rc-locator]: http://www.w3schools.com/html/html_urlencode.asp
+[url-encoding]: http://www.w3schools.com/html/html_urlencode.asp

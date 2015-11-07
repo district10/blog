@@ -196,5 +196,3 @@ Koan
 [level2]: http://gnat-tang-shared-image.qiniudn.com/neo-dvpe-L2.svg
 
 [level3]: http://gnat-tang-shared-image.qiniudn.com/neo-L3.svg
-
-<div class="ds-thread"></div>

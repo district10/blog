@@ -398,5 +398,3 @@ Refs
 
 [opencv-with-python]: http://book.douban.com/subject/24669825/
 [joseph-howes-webpage]: http://nummist.com/opencv/
-
-<div class="ds-thread"></div>

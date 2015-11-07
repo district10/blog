@@ -3742,5 +3742,3 @@ Wikiwide, and
 Xavier Olive.
 
 [GPL]: http://www.gnu.org/copyleft/gpl.html "GNU General Public License"
-
-<div class="ds-thread"></div>

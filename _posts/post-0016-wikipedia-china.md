@@ -173,5 +173,3 @@ Refs
 - [China – Travel guide at Wikivoyage][china]
 
 [china]: https://en.wikivoyage.org/wiki/China
-
-<div class="ds-thread"></div>

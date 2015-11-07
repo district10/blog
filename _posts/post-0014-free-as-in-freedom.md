@@ -422,7 +422,4 @@ Refs
 - [Free as in Freedom (Openbook, 免费开放电子书)][openbook]
 
 [freeasinfreedom]: http://book.douban.com/subject/1785874/
-
 [openbook]: http://oreilly.com/openbook/freedom/
-
-<div class="ds-thread"></div>

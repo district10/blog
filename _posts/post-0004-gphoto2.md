@@ -229,5 +229,3 @@ Choice: 1 Memory card
 [summary.txt]: http://gnat.qiniudn.com/tmp/gphoto2/summary.txt
 
 [list-all-config.txt]: http://gnat.qiniudn.com/tmp/gphoto2/list-all-config.txt
-
-<div class="ds-thread"></div>

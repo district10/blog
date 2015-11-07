@@ -64,5 +64,3 @@ Despite using the name "WikiLeaks", the website has not used the "wiki" publicat
 Refs
 
 - [WikiLeaks - Wikipedia](https://en.wikipedia.org/wiki/Wikileaks)
-
-<div class="ds-thread"></div>

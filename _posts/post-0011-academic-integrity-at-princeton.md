@@ -94,5 +94,3 @@ Campus Resources
 Refs
 
 - [Academic Integrity at princeton(pdf)](http://media.wix.com/ugd/4267a0_39e3c005594e46e881737573eea206ae.pdf)
-
-<div class="ds-thread"></div>

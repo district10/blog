@@ -93,5 +93,3 @@ Refs
 - [Japan – Travel guide at Wikivoyage][japan]
 
 [japan]: https://en.wikivoyage.org/wiki/Japan
-
-<div class="ds-thread"></div>
