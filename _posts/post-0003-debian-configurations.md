@@ -135,7 +135,7 @@ make install # much easier than compiling gcc... see: emacs --version
 
 用 Chenbin 的配置（前端，C++，Evil-mode）：[redguardtoo/emacs.d](https://github.com/redguardtoo/emacs.d)
 
-```
+```bash
 wget https://github.com/redguardtoo/emacs.d/archive/master.zip
 unzip master.zip
 cd ~ && rm -Rf .emacs.d

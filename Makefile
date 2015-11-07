@@ -16,6 +16,8 @@ PANDOC_NORMAL  = $(PANDOC) -S -s --ascii --toc --mathjax -c main.css -A $(PARTS)
 PANDOC_WITHBIB = $(PANDOC_NORMAL) --bibliography
 
 # posts
+POST_0024_INS = $(PIDIR)/post-0024-linux-shell-scripting-cookbook.md
+POST_0024_OUT = $(PODIR)/post-0024-linux-shell-scripting-cookbook.html
 POST_0023_INS = $(PIDIR)/post-0023-learning-html5.md
 POST_0023_OUT = $(PODIR)/post-0023-learning-html5.html
 POST_0022_INS = $(PIDIR)/post-0022-learning-html.md
@@ -74,9 +76,10 @@ STATICS = \
 $(PODIR)/main.css \
 $(PODIR)/about.html \
 $(PODIR)/404.html \
-$(PODIR)/gotop.png \
+$(PODIR)/cc-80x15.png \
 
 HTML = \
+$(POST_0024_OUT) \
 $(POST_0023_OUT) \
 $(POST_0022_OUT) \
 $(POST_0021_OUT) \
@@ -117,6 +120,8 @@ $(POST_NOTES_O): $(POST_NOTES)
 	$(PANDOC_NORMAL) $^ -o $@
 
 # posts
+$(POST_0024_OUT): $(POST_0024_INS)
+	$(PANDOC_NORMAL) $^ -o $@
 $(POST_0023_OUT): $(POST_0023_INS)
 	$(PANDOC_NORMAL) $^ -o $@
 $(POST_0022_OUT): $(POST_0022_INS)
