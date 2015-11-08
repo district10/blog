@@ -1,5 +1,5 @@
 % 空间分析实习报告
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2014-05-04
 
 

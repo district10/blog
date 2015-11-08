@@ -16,6 +16,40 @@ PANDOC_NORMAL  = $(PANDOC) -S -s --ascii --toc --mathjax -c main.css -A $(PARTS)
 PANDOC_WITHBIB = $(PANDOC_NORMAL) --bibliography
 
 # posts
+POST_0042_INS = $(PIDIR)/post-0042-rules-and-logic.md
+POST_0042_OUT = $(PODIR)/post-0042-rules-and-logic.html
+POST_0041_INS = $(PIDIR)/post-0041-lists-read-at-random.md
+POST_0041_OUT = $(PODIR)/post-0041-lists-read-at-random.html
+POST_0040_INS = $(PIDIR)/post-0040-shell-is-kidding-me.md
+POST_0040_OUT = $(PODIR)/post-0040-shell-is-kidding-me.html
+POST_0039_INS = $(PIDIR)/post-0039-newton-method.md
+POST_0039_OUT = $(PODIR)/post-0039-newton-method.html
+POST_0038_INS = $(PIDIR)/post-0038-salute-to-big-fish.md
+POST_0038_OUT = $(PODIR)/post-0038-salute-to-big-fish.html
+POST_0037_INS = $(PIDIR)/post-0037-pangu.md
+POST_0037_OUT = $(PODIR)/post-0037-pangu.html
+POST_0036_INS = $(PIDIR)/post-0036-clipboard.md
+POST_0036_OUT = $(PODIR)/post-0036-clipboard.html
+POST_0035_INS = $(PIDIR)/post-0035-pkg-config.md
+POST_0035_OUT = $(PODIR)/post-0035-pkg-config.html
+POST_0034_INS = $(PIDIR)/post-0034-github-dmca.md
+POST_0034_OUT = $(PODIR)/post-0034-github-dmca.html
+POST_0033_INS = $(PIDIR)/post-0033-md2docx.md
+POST_0033_OUT = $(PODIR)/post-0033-md2docx.html
+POST_0032_INS = $(PIDIR)/post-0032-dvorak.md
+POST_0032_OUT = $(PODIR)/post-0032-dvorak.html
+POST_0031_INS = $(PIDIR)/post-0031-brain-hole.md
+POST_0031_OUT = $(PODIR)/post-0031-brain-hole.html
+POST_0030_INS = $(PIDIR)/post-0030-fucking-day.md
+POST_0030_OUT = $(PODIR)/post-0030-fucking-day.html
+POST_0029_INS = $(PIDIR)/post-0029-kl-transform.md
+POST_0029_OUT = $(PODIR)/post-0029-kl-transform.html
+POST_0028_INS = $(PIDIR)/post-0028-pinboard.md
+POST_0028_OUT = $(PODIR)/post-0028-pinboard.html
+POST_0027_INS = $(PIDIR)/post-0027-ai-will-kill-us.md
+POST_0027_OUT = $(PODIR)/post-0027-ai-will-kill-us.html
+POST_0026_INS = $(PIDIR)/post-0026-english-or-chinese.md
+POST_0026_OUT = $(PODIR)/post-0026-english-or-chinese.html
 POST_0025_INS = $(PIDIR)/post-0025-doc-bridge-texture.md
 POST_0025_OUT = $(PODIR)/post-0025-doc-bridge-texture.html
 POST_0024_INS = $(PIDIR)/post-0024-linux-shell-scripting-cookbook.md
@@ -82,6 +116,24 @@ $(PODIR)/404.html \
 $(PODIR)/cc-80x15.png \
 
 HTML = \
+$(POST_0042_OUT) \
+$(POST_0041_OUT) \
+$(POST_0040_OUT) \
+$(POST_0039_OUT) \
+$(POST_0038_OUT) \
+$(POST_0037_OUT) \
+$(POST_0036_OUT) \
+$(POST_0035_OUT) \
+$(POST_0034_OUT) \
+$(POST_0033_OUT) \
+$(POST_0033_OUT) \
+$(POST_0032_OUT) \
+$(POST_0031_OUT) \
+$(POST_0030_OUT) \
+$(POST_0029_OUT) \
+$(POST_0028_OUT) \
+$(POST_0027_OUT) \
+$(POST_0026_OUT) \
 $(POST_0025_OUT) \
 $(POST_0024_OUT) \
 $(POST_0023_OUT) \
@@ -124,6 +176,40 @@ $(POST_NOTES_O): $(POST_NOTES)
 	$(PANDOC_NORMAL) $^ -o $@
 
 # posts
+$(POST_0042_OUT): $(POST_0042_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0041_OUT): $(POST_0041_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0040_OUT): $(POST_0040_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0039_OUT): $(POST_0039_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0038_OUT): $(POST_0038_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0037_OUT): $(POST_0037_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0036_OUT): $(POST_0036_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0035_OUT): $(POST_0035_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0034_OUT): $(POST_0034_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0033_OUT): $(POST_0033_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0032_OUT): $(POST_0032_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0031_OUT): $(POST_0031_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0030_OUT): $(POST_0030_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0029_OUT): $(POST_0029_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0028_OUT): $(POST_0028_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0027_OUT): $(POST_0027_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0026_OUT): $(POST_0026_INS)
+	$(PANDOC_NORMAL) $^ -o $@
 $(POST_0025_OUT): $(POST_0025_INS)
 	$(PANDOC_NORMAL) $^ -o $@
 $(POST_0024_OUT): $(POST_0024_INS)

@@ -1,5 +1,5 @@
 % 维基上的中国
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2014-06-17
 
 

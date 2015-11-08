@@ -1,5 +1,5 @@
 % 普林斯顿大学学术道德 | Academic Integrity at Princeton
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2014-04-04
 
 

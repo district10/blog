@@ -1,5 +1,5 @@
 % 雅各比行列式和矩阵的秩
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2014-06-20
 
 

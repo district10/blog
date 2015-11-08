@@ -1,5 +1,5 @@
 % 维基上的日本
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2014-06-18
 
 

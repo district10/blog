@@ -1,5 +1,5 @@
 % gPhoto2
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2015-02-19
 
 

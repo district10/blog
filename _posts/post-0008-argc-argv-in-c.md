@@ -1,5 +1,5 @@
 % C 语言的 argc、argv 干嘛的？
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2015-10-25
 
 

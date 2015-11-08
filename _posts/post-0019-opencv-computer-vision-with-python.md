@@ -1,5 +1,5 @@
 % OpenCV Computer Vision with Python
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2014-02-23
 
 

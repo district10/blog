@@ -1,5 +1,5 @@
 % TITLE: DEMO PAGE
-% AUTHOR: Tang Zhixiong
+% AUTHOR: TANG ZhiXiong
 % DATE: 2015-02-05
 % TAGS: pandoc makefile
 

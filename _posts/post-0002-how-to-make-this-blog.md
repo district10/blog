@@ -1,5 +1,5 @@
 % 这是怎样一个博客生成器
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2015-11-06
 
 
@@ -95,16 +95,7 @@
     > I wish I could believe that. My name is John Connor,
     > they tried to murder me before I was born, 
     > when I was 13 they tried again. Machines from the future. 
-    > Terminators. All my life my mother told me
-    > the storm was coming, Judgment Day, the beginning of the war 
-    > between man and machines. Three billion lives would vanish 
-    > in an instant, and I would lead what was left of
-    > the human race to ultimate victory. It hasn't happened,
-    > no bombs fell, computers didn't take control, we stopped Judgment Day.
-    > I should feel safe, but I don't, so I live off the grid -
-    > no phone, no address, no one and nothing can find me. 
-    > I've erased all connections to the past, but as hard as I try 
-    > I can't erase my dreams, my nightmares. 
+    > Terminators...
 
 章节
 
@@ -134,7 +125,7 @@ Markdown 中使用 HTML
     </p>
 
     <div markdown="1" style="background-color:yellow;margin:10px;">
-    **注**：这些文字在一个 `<div markdown="1" style="background-color:yellow;margin:10px;">` 中用 Markdown 写成
+    **注**：这些文字在一个 `<div markdown="1" style="background-color:yellow;margin:10px;">`{.html} 中用 Markdown 写成
     
     可以 **加粗** 也可以 *斜体*
     
@@ -353,77 +344,18 @@ Hash Tag^[其实在 weibo/twitter 上才叫 hash tag，这里或许应该叫 sec
 
 ### 代码高亮
 
-行内高亮特别赞。我一般不会说我会 Shell 脚本 `echo -e "hello\nworld" | sort`{.bash}，
-还会写网页 `<h1 id="hello-pandoc">HTML code</h1>`{.html}。
+行内高亮特别赞。比如一点 Bash 脚本：`echo -e "hello\nworld" | sort`{.bash}，
+或者一点 HTML：`<h1 id="hello-pandoc">HTML code</h1>`{.html}。
 
-如果你觉得那不算代码，我还会用 C++ 写类：
-
-```cpp
-class Log
-{
-private:
-    static size_t    counter;
-
-public:
-    BCD::TypeID      type;
-    BCD::ActionID    action;
-    QString          message;
-    qint64           timestamp;
-
-public:
-    Log( BCD::TypeID tid, BCD::ActionID aid, QString msg="", qint64 ts=0 ) :
-        type( tid ),
-        action( aid ),
-        message( msg ),
-        timestamp( 0 == ts ? QDateTime::currentMSecsSinceEpoch() : ts )
-    { ++counter; }
-
-    Log &show( );
-};
-```
-
-会用 C 写函数：
+还有 C++
 
 ```c
-// RAW_SPAN       = 3
-// RAW_TYPE       = float
-// RAW_PRINTF_STR = " %20.10lf "
-void raw2pts( FILE *ifp, FILE *ofp )
-{
-    fseek( ifp, 0, SEEK_END );
-    size_t len = ftell( ifp );
-    len /= ( RAW_SPAN * sizeof( RAW_TYPE ) );
-    fseek( ifp, 0, SEEK_SET );
-
-    RAW_TYPE buf[RAW_SPAN];
-
-    int i = 0, j = 0;
-    for ( i = 0; i < len; ++i ) {
-        fread( buf, sizeof( RAW_TYPE ), RAW_SPAN, ifp );
-        for ( j = 0; j < RAW_SPAN; ++j ) {
-            fprintf( ofp, RAW_PRINTF_STR, buf[j] );
-        }
-        fprintf( ofp, "\n" );
-    }
-    
-    fprintf( stdout, "--Parsed %d points.\n", len ); 
-}
+fseek( ifp, 0, SEEK_END );
+size_t len = ftell( ifp );
+fprintf( stdout, "--Parsed %d points.\n", len ); 
 ```
 
-还会 CMake：
-
-```bash
-#!/bin/bash
-
-BUILD="../build"
-rm -Rf $BUILD
-mkdir $BUILD && cd $BUILD && \
-cmake.exe -G"Visual Studio 10 2010 Win64" ../ \
-&& echo 'done'
-|| rm -Rf $BUILD
-```
-
-Haskell 没学懂，但看懂是没问题：
+可以有行号：
 
 ~~~~ {#mycode .haskell .numberLines startFrom="100"}
 qsort []     = []
@@ -437,8 +369,6 @@ qsort (x:xs) = qsort (filter (< x) xs) ++ [x] ++
 
 不管用了多少年的 M$ Word，总有一天写论文你要用 $\LaTeX$，那就从 MathJax 开始练习吧。
 
-一个矩阵
-
 $$
         \begin{matrix}
         1 & x & x^2 \\
@@ -447,220 +377,11 @@ $$
         \end{matrix}
 $$
 
-一次运算
-
-$$
-\begin{align}
-\sqrt{37} & = \sqrt{\frac{73^2-1}{12^2}} \\
- & = \sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}} \\ 
- & = \sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}} \\
- & = \frac{73}{12}\sqrt{1 - \frac{1}{73^2}} \\ 
- & \approx \frac{73}{12}\left(1 - \frac{1}{2\cdot73^2}\right)
-\end{align}
-$$
-
-下面列举公式的种种
-
-$$\sum_{i=1}^n a_i=0$$
-
-$$\hat x \widehat{yz}$$
-
-$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
-
-$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
-
-$$ \left[
-    \begin{array}{cc|c}
-      1&2&3\\
-      4&5&6
-    \end{array}
-\right] $$
-
 $$   f(n) =
 \begin{cases}
 n/2,  & \text{if $n$ is even} \\
 3n+1, & \text{if $n$ is odd}
 \end{cases} $$
-
-$$ \begin{array}{c|lcr}
-n & \text{Left} & \text{Center} & \text{Right} \\
-\hline
-1 & 0.24 & 1 & 125 \\
-2 & -1 & 189 & -8 \\
-3 & -20 & 2000 & 1+10i
-\end{array} $$
-
-$$ \color{green}{green: }\color{red}{\frac{x}{y}} $$
-
-$$ \underset{j=1}{\overset{\infty}{\LARGE\mathrm K}}\frac{a_j}{b_j}=\cfrac{a_1}{b_1+\cfrac{a_2}{b_2+\cfrac{a_3}{b_3+\ddots}}} $$
-
-$$ f\left(
-   \left[ 
-     \frac{
-       1+\left\{x,y\right\}
-     }{
-       \left(
-          \frac{x}{y}+\frac{y}{x}
-       \right)
-       \left(u+1\right)
-     }+a
-   \right]^{3/2}
-\right) $$
-
-$\require{AMScd}$
-\begin{CD}
-    A @>a>> B\\
-    @V b V V\# @VV c V\\
-    C @>>d> D
-    \end{CD}
-
-   \begin{CD}
-    A @>>> B @>{\text{very long label}}>> C \\
-    @. @AAA @| \\
-    D @= E @<<< F
-    \end{CD}
-
-$$
-\require{enclose}
-\begin{array}{r}
-                    13  \\[-3pt]
-4 \enclose{longdiv}{52} \\[-3pt]
-         \underline{4}\phantom{2} \\[-3pt]
-                    12  \\[-3pt]
-         \underline{12}
-\end{array}
-$$
-
-| Operators | LaTeX |
-| :-------: | :---: |
-| $\pm\mp$ | `\pm\mp` |
-| $\times\div$ | `\times\div` |
-| $\cdot\ast$ | `\cdot\ast` |
-| $\star\dagger\diamond$ | `\star\dagger\diamond` |
-| $\vee\wedge$ | `\vee\wedge` |
-| $\oplus\ominus\otimes\circ$ | `\oplus\ominus\otimes\circ` |
-| $\setminus$ | `\setminus` |
-| $\wr$ | `\wr` |
-| $\sqrt{x}$ | `\sqrt{x}` |
-| $\le\ge\neq$ | `\le\ge\neq` |
-| $\sim\ll\gg\doteq\simeq$ | `\sim\ll\gg\doteq\simeq` |
-| $\subset\supset\approx\asymp\subseteq\supseteq$ | `\subset\supset\approx\asymp\subseteq\supseteq` |
-| $\in\ni$ | `\in\ni` |
-| $\smile$ | `\smile` |
-| $\propto$ | `\propto` |
-| $\dashv\vdash$ | `\dashv\vdash` |
-| $\mid\perp\parallel$ | `\mid\prep\parallel` |
-| $\nmid$ | `\nmid` |
-| $\ldots\vdots\cdots\ddots$ | `\ldots\vdots\cdots\ddots` |
-| $\hat{x}\check{x}\dot{x}\breve{x}\acute{x}$ | `\hat{x}\check{x}\dot{x}\breve{x}\acute{x}` |
-| $\ddot{x}\grave{x}\tilde{x}\mathring{x}\bar{x}\vec{x}$ | `\ddot{x}\grave{x}\tilde{x}\mathring{x}\bar{x}\vec{x}` |
-| $\vec{\jmath}\tilde{\jmath}$ | `\vec{\jmath}\tilde{\imath}` |
-| $\widehat{3+x}\widetilde{abc}$ | `\widehat{3+x}\widetilde{abc}` |
-| $\infty\triangle\angle$ | `\infty\triangle\angle` |
-| $\aleph\hbar\imath$ | `\aleph\hbar\imath` |
-| $\ell\wp$ | `\ell\wp` |
-| $\Re\Im$ | `\Re\Im` |
-| $\mho\prime$ | `\mho\prime` |
-| $\flat\natural\sharp\$ | `\flat\natural\sharp` |
-| $\surd\partial\top\bot\forall\neg$ | `\surd\partial\top\bot\forall\neg` |
-| $\S$ | `\S` |
-
-下面列举各种符号
-
-* `\frac`: $\frac{2}{x+2}$
-* `dfrac`: $\dfrac{2}{x+2}$
-* `cfrac`: $\cfrac{2}{1+\cfrac{2}{1+\cfrac{2}{1+\cfrac{2}{1}}}}$
-* `\sqrt`: $\sqrt{2}$
-* `\sqrt[n]{x}`: $\sqrt[n]{x}$
-* `\sum`: $\sum_{i=1}^{\infty}\frac{1}{i}$
-* `\prod`: $\prod_{n=1}^5\frac{n}{n-1}$
-* `\lim`: $\lim_{x\to\infty}\frac{1}{x}$
-* `\log`: $\log_n n^2$
-* `\bmod`: $9\equiv 3 \bmod{6}$
-* `\pmod`: $9\equiv 3 \pmod{6}$
-* `\mod`: $9\equiv 3 \mod{6}$
-* `\pod`: $9\equiv 3 \pod{6}$
-* `\binom`: $\binom{n-1}{r-1}$
-* `\dbinom`(in display mode): $\dbinom{9}{3}$
-* `\cos\sin\tan\sec\csc\cot`{.tex}: $\cos\sin\tan\sec\csc\cot$
-* `\arccos\arcsin\arctan`: $\arccos\arcsin\arctan$
-* `\cosh\sinh\tanh\coth`: $\cosh\sinh\tanh\coth$
-* `\cos^2 x +\sin^2 x = 1`: $\cos^2 x +\sin^2 x = 1$
-* `\cos 90^\circ = 0`: $\cos 90^\circ = 0$
-* `\frac`: $\frac{d}{dx}\left(x^2\right) = 2x$
-* `\int`, `\,dx`: $\int 2x\,dx = x^2+C$
-* `\partial`: $\frac{\partial^2U}{\partial x^2} + \frac{\partial^2U}{\partial y^2}$
-* `\oint`: $\frac{1}{4\pi}\oint_\Sigma\frac{1}{r}\frac{\partial U}{\partial n} ds$
-* `\overline`: $\overline{a+b\imath}$
-* `\underline`: $\underline{431}$
-* `\mathbb`: $\mathbb{R}\mathbb{Z}\mathbb{Q}$
-* `\mathbf`: $\mathbf{R}\mathbf{Z}\mathbf{Q}$
-* `\mathcal`: $\mathcal{R}\mathcal{Z}\mathcal{Q}$
-* `\mathfrak`: $\mathfrak{R}\mathfrak{Z}\mathfrak{Q}$
-
-更多矩阵对齐的例子：
-
-The characteristic polynomial $f(\lambda)$ of the $3 \times 3$ matrix $$
-\begin{pmatrix}
-a & b & c \\
-d & e & f \\
-g & h & i
-\end{pmatrix}
-$$ is given by the equation $$
-f(\lambda)
-= \begin{vmatrix}
-\lambda - a & -b & -c \\
--d & \lambda - e & -f \\
--g & -h & \lambda - i
-\end{vmatrix}.
-$$
-
-~~~ {.tex}
-The characteristic polynomial $f(\lambda)$ of the $3 \times 3$ matrix $$
-\begin{pmatrix}
-a & b & c \\
-d & e & f \\
-g & h & i
-\end{pmatrix}
-$$ is given by the equation $$
-f(\lambda)
-= \begin{vmatrix}
-\lambda - a & -b & -c \\
--d & \lambda - e & -f \\
--g & -h & \lambda - i
-\end{vmatrix}.
-$$
-~~~
-
-$$
-f(x) = \left\{ \begin{array}{ll}
-x+7 & \mbox{if $5< x$};\\
-x^2-3 & \mbox{if $-3 \le x \le 5$};\\
--x & \mbox{if $x < -3$}.\end{array} \right. 
-$$
-
-~~~ {.tex}
-f(x) = \left\{ \begin{array}{ll}
-x+7 & \mbox{if $5< x$};\\
-x^2-3 & \mbox{if $-3 \le x \le 5$};\\
--x & \mbox{if $x < -3$}.\end{array} \right. 
-~~~
-
-$$ 
-f(x) = \begin{cases}
-x+7 & \text{if $5< x$}; \\
-x^2-3 & \text{if $-3 \le x \le 5$};\\
--x & \text{if $x < -3$}.
-\end{cases}
-$$
-
-~~~ {.latex}
-f(x) = \begin{cases}
-x+7 & \text{if $5< x$}; \\
-x^2-3 & \text{if $-3 \le x \le 5$};\\
--x & \text{if $x < -3$}.
-\end{cases}
-~~~
 
 访问 [MathJax](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) 参考更多使用方法。
 
@@ -682,7 +403,7 @@ x^2-3 & \text{if $-3 \le x \le 5$};\\
 Linux 上安装 git 和 pandoc 都太容易，用 `sudo apt-get install git pandoc`{.bash} 就可以。
 
 然后可以先下载 [我的博客](https://github.com/district10/blog/archive/master.zip)，
-解压后进入文件夹，右键打开 Git Bash，输入 `make`{.bash} 完成编译，不出意外的话会有一个 `public` 文件夹生成。
+解压后进入文件夹，右键打开 Git Bash，输入 `make && make deploy && make`{.bash} 完成编译，不出意外的话会有一个 `public` 文件夹生成。
 打开里面的 `index.html`，是不是和你现在正看的网页一模一样？就这么简单。
 
 <small>

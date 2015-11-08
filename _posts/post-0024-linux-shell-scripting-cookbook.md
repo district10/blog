@@ -1,5 +1,5 @@
 % Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2014-02-02
 
 

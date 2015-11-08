@@ -1,5 +1,5 @@
 % Windows 系统配置
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2015-02-20
 
 

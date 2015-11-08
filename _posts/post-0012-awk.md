@@ -1,5 +1,5 @@
 % AWK 文字处理
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2014-04-07
 
 

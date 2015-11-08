@@ -1,5 +1,5 @@
 % DuckDuckGo：另一个搜索引擎
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2014-07-15
 
 

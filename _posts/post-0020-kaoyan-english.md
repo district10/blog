@@ -1,5 +1,5 @@
 % 考研英语习作
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2014-11-22
 
 

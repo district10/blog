@@ -1,5 +1,5 @@
 % The Tao of Programming
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2015-02-19
 
 

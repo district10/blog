@@ -1,5 +1,5 @@
 % 维基上的维基解密
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2014-06-15
 
 

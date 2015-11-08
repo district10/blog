@@ -1,5 +1,5 @@
 % 为什么 Emacs 用户爱德沃夏克
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2015-02-19
 
 

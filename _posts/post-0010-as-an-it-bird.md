@@ -1,5 +1,5 @@
 % 我是一只 IT 小小鸟
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2014-06-07
 
 

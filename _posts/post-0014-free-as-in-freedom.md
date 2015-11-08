@@ -1,5 +1,5 @@
 % 自由的由 | Free as in Freedom
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2014-03-15
 
 

@@ -1,5 +1,5 @@
 % Debian Configurations
-% Tang Zhixiong
+% TANG ZhiXiong
 % 2015-02-19
 
 
