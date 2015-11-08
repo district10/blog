@@ -37,7 +37,7 @@
 
 然后世界就美好了：
 
-![看上去舒服多了](http://gnat-tang-shared-image.qiniudn.com/pangu01.png)
+![看上去舒服多了](http://gnat-tang-shared-image.qiniudn.com/pangu02.png)
 
 ---
 
