@@ -16,6 +16,10 @@ PANDOC_NORMAL  = $(PANDOC) -S -s --ascii --toc --mathjax -c main.css -A $(PARTS)
 PANDOC_WITHBIB = $(PANDOC_NORMAL) --bibliography
 
 # posts
+POST_0044_INS = $(PIDIR)/post-0044-git-github-notes.md
+POST_0044_OUT = $(PODIR)/post-0044-git-github-notes.html
+POST_0043_INS = $(PIDIR)/post-0043-awesome-c.md
+POST_0043_OUT = $(PODIR)/post-0043-awesome-c.html
 POST_0042_INS = $(PIDIR)/post-0042-rules-and-logic.md
 POST_0042_OUT = $(PODIR)/post-0042-rules-and-logic.html
 POST_0041_INS = $(PIDIR)/post-0041-lists-read-at-random.md
@@ -116,6 +120,8 @@ $(PODIR)/404.html \
 $(PODIR)/cc-80x15.png \
 
 HTML = \
+$(POST_0044_OUT) \
+$(POST_0043_OUT) \
 $(POST_0042_OUT) \
 $(POST_0041_OUT) \
 $(POST_0040_OUT) \
@@ -176,6 +182,10 @@ $(POST_NOTES_O): $(POST_NOTES)
 	$(PANDOC_NORMAL) $^ -o $@
 
 # posts
+$(POST_0044_OUT): $(POST_0044_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0043_OUT): $(POST_0043_INS)
+	$(PANDOC_NORMAL) $^ -o $@
 $(POST_0042_OUT): $(POST_0042_INS)
 	$(PANDOC_NORMAL) $^ -o $@
 $(POST_0041_OUT): $(POST_0041_INS)
