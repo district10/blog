@@ -73,6 +73,7 @@ POST_NOTES_O  = $(PODIR)/notes.html
 
 # outs
 STATICS = \
+$(PODIR)/favicon.ico \
 $(PODIR)/main.css \
 $(PODIR)/about.html \
 $(PODIR)/404.html \
@@ -174,6 +175,8 @@ $(PODIR)/%.html: $(PIDIR)/%.md
 	./left_behinds $@ $<
 
 # cp & trans static files
+$(PODIR)/%.ico: $(SDIR)/%.ico
+	cp $< $@
 $(PODIR)/%.css: $(SDIR)/%.css
 	cp $< $@
 $(PODIR)/%.png: $(SDIR)/%.png
