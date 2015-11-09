@@ -19,7 +19,9 @@
 鼠标选中文字的剪切板
 --------------------
 
-在 Vim 里是 `*` 寄存器。这就是有道词典划词翻译的根本。
+在 Vim 里是 `*` 寄存器。这就是有道词典划词翻译的根本。[^vimonwindows]
+
+[^vimonwindows]: 最近发现 Vim 的两个剪切板在 Windows 是没有区别，`*` 和 `+` 都是 `*`。不知道是不是我没有配置好。
 
 其他
 ----
@@ -34,4 +36,20 @@
 alias clip="xclip -selection clipboard"
 ```
 
-Windows 系统在一点上超越了 Linux，那就是提供了一个 `clip`{.bash} 可以用 pipe 往 <kbd>Ctrl+C</kbd> 传数据。
+Windows 系统在一点上超越了 Linux，那就是提供了一个自带的 `clip`{.bash} 可以用 pipe 往 <kbd>Ctrl+C</kbd> 传数据。
+
+```plain
+CLIP
+
+描述:
+    将命令行工具的输出重定向到 Windows 剪贴板。这个文本输出可以被粘贴
+    到其他程序中。
+
+参数列表:
+    /?                  显示此帮助消息。
+
+示例:
+    DIR | CLIP          将一份当前目录列表的副本放入 Windows 剪贴板。
+
+    CLIP < README.TXT   将 readme.txt 的一份文本放入 Windows 剪贴板。
+```
