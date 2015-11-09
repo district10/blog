@@ -12,11 +12,11 @@
 建议先读这些
 
 * 什么是德沃夏克: [维基百科][wikipedia], [百度百科][baidu]
-* [说说qwerty、dvorak、colemak三种键盘布局][q_d_c]
+* [说说 qwerty、dvorak、colemak 三种键盘布局][q_d_c]
 * [Programmer Dvorak Keyboard Layout][dvp_intro]
-* About Neo: [Neo官方][neo_official], [Wikipedia: neo][neo_wiki]
-* [Steve Yegge：编程的肮脏小秘密 - 博客 - 伯乐在线](http://blog.jobbole.com/64959/)
-* [键盘史上的 12 个典范 - 开源中国社区](http://www.oschina.net/news/56704/keyboards)
+* About Neo: [Neo 官方][neo_official], [Wikipedia: neo][neo_wiki]
+* [Steve Yegge：编程的肮脏小秘密](http://blog.jobbole.com/64959/)
+* [键盘史上的 12 个典范](http://www.oschina.net/news/56704/keyboards)
 
 [wikipedia]: http://zh.wikipedia.org/wiki/%E5%BE%B7%E6%B2%83%E5%A4%8F%E5%85%8B%E9%8D%B5%E7%9B%A4
 [baidu]: http://baike.baidu.com/view/1410112.htm
@@ -53,8 +53,8 @@
 2. 手指不疼
 3. 纵小众，也是世界第二大键盘布局群体：
 
-    ![Qwerty-Dvorak.PNG](http://upload-images.jianshu.io/upload_images/29284-766f600367d574e1.PNG)
-
+    ![Qwerty-Dvorak.PNG](http://gnat.qiniudn.com/homework/qwerty-dvorak.png)
+    
 4. 键盘是自己用的，换了布局你打出来的也不是火星文
 5. Neo，不能更赞
 
