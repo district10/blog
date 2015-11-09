@@ -121,6 +121,7 @@ POST_NOTES_O  = $(PODIR)/notes.html
 STATICS = \
 $(PODIR)/favicon.ico \
 $(PODIR)/main.css \
+$(PODIR)/ime.js \
 $(PODIR)/about.html \
 $(PODIR)/404.html \
 $(PODIR)/cc-80x15.png \
@@ -294,6 +295,8 @@ $(PODIR)/%.html: $(PIDIR)/%.md
 $(PODIR)/%.ico: $(SDIR)/%.ico
 	cp $< $@
 $(PODIR)/%.css: $(SDIR)/%.css
+	cp $< $@
+$(PODIR)/%.js: $(SDIR)/%.js
 	cp $< $@
 $(PODIR)/%.png: $(SDIR)/%.png
 	cp $< $@
