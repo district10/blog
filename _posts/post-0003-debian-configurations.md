@@ -160,11 +160,15 @@ set expandtab ts=4 sw=4 ai
 
 强大的：<https://github.com/ma6174/vim>
 
-![ma6174-vim.png](http://upload-images.jianshu.io/upload_images/29284-17576a33d43ce6a0.png)
+![ma6174 vim](http://gnat.qiniudn.com/tmp/vim.png)
 
 ```bash
 wget -qO- https://raw.github.com/ma6174/vim/master/setup.sh | sh
 ```
+
+不过这个配置有点卡。或许这个更好：[amix/vimrc](https://github.com/amix/vimrc)
+
+不要忘了 `vim -u NONE`{.bash}
 
 ### GCC4.9 (for C++11)
 

@@ -11,3 +11,5 @@ About | 关于
 * @GitHub: [district10 (TANG ZhiXiong (dvorak4tzx))](https://github.com/district10)
 
 ![Octocat: Adventure Cat](http://gnat-tang-shared-image.qiniudn.com/octocat/adventure-cat.png)
+
+![Kimonotocat](http://gnat-tang-shared-image.qiniudn.com/octocat/kimonotocat.png)

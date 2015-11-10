@@ -225,6 +225,20 @@ tr.head {
     margin: auto;
     vertical-align: middle;
     text-align: center;
+    -webkit-transition: -webkit-transform 0.4s ease;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease;
+    -webkit-transition-delay: initial;
+    -moz-transition: -moz-transform 0.4s ease;
+    -o-transition: -o-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    -webkit-transform-style: preserve-3d;
+    -transform-style: preserve-3d;
+}
+
+.figure img:hover {
+    -webkit-transform: scale(1.05);
 }
 
 .figure .caption {
@@ -248,6 +262,11 @@ tr.head {
     background-color: #f0f0f0;
     box-shadow: 1px 1px silver;
     font-variant:small-caps;
+}
+
+#buckets div:hover {
+    background-color: white;
+    transition: all 0.5s ease-in-out;
 }
 
 #buckets div a {

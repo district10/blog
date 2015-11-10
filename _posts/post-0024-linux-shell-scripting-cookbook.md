@@ -216,6 +216,141 @@ Bash (`B`ourne `A`gain `Sh`ell)
 
         + see Formats[^datefrmt]
 
+    * Debugging the Script
+
+        ```bash
+        bash -x script.sh # specify when running script
+        # or the so-called "Shebang hack"
+        "#!/bin/bash -xv" # "-xv" ==> enable debugging 
+        ```
+
+    * Functions and Arguments
+
+        ```bash
+        fname() { echo -n Arg1: $1 " "; echo Arg2: $2; echo Args: $@; return 0;} && fname how are you
+        # $@ v.s. $*, we prefer the former
+        # $*(expands as "$1c$2c$3", where c is the first character of IFS)
+        ```
+
+        + The Recusive Funcs:
+
+            ```bash
+            F() { echo $1; sleep 1; F hello;} && F hello # better than the one on the book
+            ```
+
+        + Fork Bomb（不要在自己电脑上试！！）
+
+            ```bash
+            # Do not Try it Yourself !!!
+            :(){ :|:& };:  
+            # ":" is the function name, no params. in "{}", the first ":" calls itself, 
+            # and ":&" fork the process. by ";" the function is defined, and 
+            # the final ":" runs the function. You can check wikipedia for more information  
+            ```
+
+            > We can write a recursive function, which is basically a function that **calls itself**, 
+            > it **infinitely spawns processes** and ends up in a **denial-of-service** attack.
+
+        + Exporting Functions:  `export -f fname`{.bash}
+        + Reading the return status of last command: `cmd; echo $? # retrieve exit status`{.bash}
+        + Passing arguments to commands
+        + Reading the output of a sequence of commands in a variable
+
+            ```bash
+            # Filters: cmd1 | cmd2 | cmd3 e.g.
+            ls | grep "os" | cat -n > output.txt 
+            # Subshell Method: e.g. 
+            cmd_output=$(ls | cat -n)
+            # Back tick/ Back quotes:  e.g.
+            cmd_output=`ls | cat -n` # I like it a lot
+            ```
+
+        + More Subshell:
+            - Spawning a separate process with subshell: e.g.: `pwd; (cd /usr; ls); pwd`{.bash}
+            - Subshell quoting to preserve spacing and the newline character: `out=$(cat file.txt)`{.bash}
+
+    * Read
+
+        ```bash
+        # read -n num_of_chars variable
+        read -n 4 year
+        # nonecho mode for reading password
+        read -s password
+        read -p "enter your username: " username # read with a message/prompt
+        read -t seconds var # read with a timeout
+        # read with a specified delim char
+        read -d ',' var
+        ```
+
+    * Repeat func
+
+        ```bash
+        repeat() { while true; do $@ && return; done;}; # define it
+        # repeat doing what you want to do, till it's done. e.g.
+        repeat read forever
+        # revised edition
+        repeat() { while :; do $@ && return; done;}; && repeat read forever
+        repeat() { while :; do $@ && return; sleep 30; done;}; && repeat read forever
+        # why i need it? see below,
+        repeat wget -c www.sourceforge.com/somefile.tar.gz
+        ```
+
+    * File Separators and Iterators
+        + [IFS - Internal Field Iterator](http://en.wikipedia.org/wiki/Internal_field_separator)
+        + [CSV - Comma Separated Values](http://en.wikipedia.org/wiki/Comma_Separated_Values)
+        + example:
+
+            ```bash
+            data="how,are,you"
+            oldIFS=$IFS
+            IFS=,
+            for item in $data
+            do echo item: $item
+            done
+            IFS=$oldIFS
+            ```
+
+            ```bash
+            echo {a..z}; echo {1..420};
+            for((i=0; i<24; i++)){ echo $i;}
+            # while condition; do something; done;
+            # until condition; do somthing; done;
+            ```
+
+    * Comparisons and tests
+
+        ```bash
+        # if condition; then do_something; else if condition; then do_something; else do_something; fi;
+        # or
+        # [ condition ] && something
+        # [ condition ] || something
+        ```
+
+    * Conditions
+
+        + `-gt, -lt, -ge, -le`{.bash}: greater/less than/equal
+        + `-a, -o`{.bash}: and/or
+        + `-f, -d`{.bash}: file/dir
+        + `-x, -e`{.bash}: executable/exists
+        + `-c, -b`{.bash}: char/block devices
+        + `-w, -r`{.bash}: writeable/readable
+        + `-L`{.bash}: symlink
+        + Example:
+    
+            ```bash
+            if [ -e /bin/bash ]; then echo exists; else echo not exists; fi
+            if [ -e "/bin/bash" ]; then echo exists; else echo not exists; fi # ==> these two are the same
+            ```
+
+    * String comparason
+    
+        ```bash
+        [[ $str1 == $str2 ]], [[ $str1 = $str2 ]] # same thing
+        [[ $str1 != $str2 ]]
+        [[ $str1 < $str2 ]]; [[ $str1 >$str2 ]]
+        [[ -z $str ]]; [[ -n $str ]] # empty/non-empty
+        ```
+
 [^datefrmt]: date fomats
 
     | `date`{.bash} | format |
@@ -231,156 +366,8 @@ Bash (`B`ourne `A`gain `Sh`ell)
     | Nano Second | `%N` |
     | Epoch Unix Time in seconds | `%s` |
 
-
-13. **Debugging the Script**
-```
-bash -x script.sh # specify when running script
-# or the so-called "Shebang hack"
-"#!/bin/bash -xv" # "-xv" ==> enable debugging 
-```
-
-14. **Functions and Arguments**
-```
-fname() { echo -n Arg1: $1 " "; echo Arg2: $2; echo Args: $@; return 0;} && fname how are you
-# $@ v.s. $*, we prefer the former
-# $*(expands as "$1c$2c$3", where c is the first character of IFS)
-```
- - The Recusive Fucs:
-```
-F() { echo $1; sleep 1; F hello;} && F hello # better than the one on the book
-```
-   - **Fork Bomb**(不要在自己电脑上试！！！刚我完全没看懂，在自己电脑上试，结果回到了解放前！即上文的“你大爷。。”处，当初是在 [博客园](http://www.cnblogs.com/gnat-tang/p/3537673.html) 编辑，没累死）
-```
-# Don't Try it Yourself !!!
-:(){ :|:& };:  # ":" is the function name, no params. in "{}", the first ":" calls itself, and ":&" fork the process. by ";" the function is defined, and the final ":" runs the function. You can check wikipedia for more information  
-```
-On the book, the author says:
-> We can write a recursive function, which is basically a function that **calls itself**, It **infinitely spawns processes** and ends up in a **denial-of-service** attack.
- - Exporting Functions:  `export -f fname`
- - Reading the return status of last command:
-`cmd; echo $? # retrieve exit status`
- - Passing arguments to commands
- - Reading the output of a sequence of commands in a variable
-```
-# Filters: cmd1 | cmd2 | cmd3 e.g.
-ls | grep "os" | cat -n > output.txt 
-# Subshell Method: e.g. 
-cmd_output=$(ls | cat -n)
-# Back tick/ Back quotes:  e.g.
-cmd_output=`ls | cat -n` # I like it a lot
-```
- - More **Subshell**:
-    - Spawning a separate process with subshell: e.g.
-`
-pwd; (cd /usr; ls); pwd
-`
-   - Subshell quoting to preserve spacing and the newline character: 
-`
-out=$(cat file.txt)
-`
-
-15. **Read**
-```
-# read -n num_of_chars variable
-read -n 4 year
-# nonecho mode for reading password
-read -s password
-read -p "enter your username: " username # read with a message/prompt
-read -t seconds var # read with a timeout
-# read with a specified delim char
-read -d ',' var
-```
-
-16. **Repeat func**
-```
-repeat() { while true; do $@ && return; done;}; # define it
-# repeat doing what you want to do, till it's done. e.g.
-repeat read forever
-# revised edition
-repeat() { while :; do $@ && return; done;}; && repeat read forever
-repeat() { while :; do $@ && return; sleep 30; done;}; && repeat read forever
-# why i need it? see below,
-repeat wget -c www.sourceforge.com/somefile.tar.gz
-```
-
-17. **File Separators and Iterators**
- - [**IFS** - _Internal Field Iterator_](http://en.wikipedia.org/wiki/Internal_field_separator)
- - [**CSV** - _Comma Separated Values_](http://en.wikipedia.org/wiki/Comma_Separated_Values)
- - example:
-```
-data="how,are,you"
-oldIFS=$IFS
-IFS=,
-for item in $data
-do echo item: $item
-done
-IFS=$oldIFS
-```
-```
-echo {a..z}; echo {1..420};
-for((i=0; i<24; i++)){ echo $i;}
-# while condition; do something; done;
-# until condition; do somthing; done;
-```
-
-18. **Comparisons and tests**
-```
-# if condition; then do_something; else if condition; then do_something; else do_something; fi;
-# or
-# [ condition ] && something
-# [ condition ] || something
-```
-> **Conditions**:
- - `-gt, -lt, -ge, -le` # greater/less than/equal
- - `-a, -o` # and/or
- - `-f, -d` # file/dir
- - `-x, -e`  # executable/exists
- - `-c, -b` # char/block devices
- - `-w, -r` # writeable/readable
- - `-L` # symlink
->
-**Example**:
-```
-if [ -e /bin/bash ]; then echo exists; else echo not exists; fi
-if [ -e "/bin/bash" ]; then echo exists; else echo not exists; fi # ==> these two are the same
-```
-
- - String comparason
-```
-[[ $str1 == $str2 ]], [[ $str1 = $str2 ]] # same thing
-[[ $str1 != $str2 ]]
-[[ $str1 < $str2 ]]; [[ $str1 >$str2 ]]
-[[ -z $str ]]; [[ -n $str ]] # empty/non-empty
-```
-
-19. **Notice** ( from [**Gnat**](http://jianshu.io/users/faa44ac9e895) )
- - echo thing:
-```
-echo something }   # bad
-echo soemthing; } # good
-```
- - do stuff:
-```
-do;   # bad
-do :; # better
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---------------------------------------------------------------------------------
-
-#### Chap 2: Have a Good Command
+Chap 2: Have a Good Command
+---------------------------
 
 1. **Concatenating with Cat**
 ```
