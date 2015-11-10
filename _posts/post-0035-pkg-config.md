@@ -199,7 +199,7 @@ $ ./demo
 
 其中的 occ 是自己定义的一个脚本，就是一行 Shell 脚本：
 
-```shell
+```bash
 #!/bin/bash
 
 # Compile OpenCV Programs
