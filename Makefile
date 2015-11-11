@@ -127,6 +127,7 @@ POST_NOTES_O  = $(PODIR)/notes.html
 
 # outs
 STATICS = \
+$(PODIR)/robots.txt \
 $(PODIR)/favicon.ico \
 $(PODIR)/main.css \
 $(PODIR)/ime.js \
@@ -325,6 +326,8 @@ $(PODIR)/%.png: $(SDIR)/%.png
 $(PODIR)/%.html: $(SDIR)/%.html
 	cp $< $@
 $(PODIR)/%.txt: $(PIDIR)/%.md
+	cp $< $@
+$(PODIR)/%: $(SDIR)/%
 	cp $< $@
 $(PODIR)/%: $(PIDIR)/%
 	cp $< $@
