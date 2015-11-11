@@ -155,6 +155,10 @@ caption {
     text-decoration: none;
 }
 
+.footnotes ol li p {
+    line-height: 1.1;
+}
+
 h1.title {
     // visibility: hidden; 
     display: none;
@@ -243,6 +247,7 @@ tr.head {
 
 .figure .caption {
     min-width: 20%;
+    max-width: 70%;
     min-height: 22px;
     display: inline-block;
     padding: 10px;

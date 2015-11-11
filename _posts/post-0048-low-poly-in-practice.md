@@ -25,7 +25,7 @@ Low Poly 则大反其道，用较少的多边形抽象打造棱角分明、简�
 传统设计领域，Low Poly 图片由设计师利用 PhotoShop、Adobe Illustrator、Cinema4D 等
 专业软件手工制作，不仅费时费力，而且效率低下，不能实现在线处理，应用面窄。
 
-![Phil Klay - Breno Bitencourt 为 Esquire 杂志制作的 lowpoly 风格插画](https://d13yacurqjgara.cloudfront.net/users/2973/screenshots/2246022/pk_dribbble_1x.jpg)
+![Phil Klay - Breno Bitencourt 为 Esquire 杂志制作的 lowpoly 风格插画](http://gnat.qiniudn.com/homework/phil-clay.jpg)
 
 从理论上，Low Poly 其实是一种多边形三角分割方法（polygon triangulation）。
 
@@ -82,7 +82,7 @@ TRIGRAFF[^trigraff] 的 Delaunay 程度不够，张的 Delaunay 程度过了，
 张是还利用 Three.js 做了一个在线的视频 Low Poly 处理程序，
 效果也不错，地址：<http://zhangwenli.com/Polyvia/video.html>。
 
-![在线实时视频 Low Poly 处理 （画面太单一，所以我给阿萨姆奶茶打个广告……][video]
+![在线实时视频 Low Poly 处理 （画面太单一，所以我给阿萨姆奶茶打个广告……）][video]
 
 更多示例：
 

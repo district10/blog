@@ -16,6 +16,12 @@ PANDOC_NORMAL  = $(PANDOC) -S -s --ascii --toc --mathjax -c main.css -A $(PARTS)
 PANDOC_WITHBIB = $(PANDOC_NORMAL) --bibliography
 
 # posts
+POST_0051_INS = $(PIDIR)/post-0051-spatial-gis.bib $(PIDIR)/post-0051-spatial-gis.md
+POST_0051_OUT = $(PODIR)/post-0051-spatial-gis.html
+POST_0050_INS = $(PIDIR)/post-0050-gis-overall.bib $(PIDIR)/post-0050-gis-overall.md
+POST_0050_OUT = $(PODIR)/post-0050-gis-overall.html
+POST_0049_INS = $(PIDIR)/post-0049-imocap.md
+POST_0049_OUT = $(PODIR)/post-0049-imocap.html
 POST_0048_INS = $(PIDIR)/post-0048-low-poly-in-practice.md
 POST_0048_OUT = $(PODIR)/post-0048-low-poly-in-practice.html
 POST_0047_INS = $(PIDIR)/post-0047-more-about-vim.md
@@ -127,8 +133,13 @@ $(PODIR)/ime.js \
 $(PODIR)/about.html \
 $(PODIR)/404.html \
 $(PODIR)/cc-80x15.png \
+$(PODIR)/post-0050-gis-overall.bib \
+$(PODIR)/post-0050-gis-overall.md \
 
 HTML = \
+$(POST_0051_OUT) \
+$(POST_0050_OUT) \
+$(POST_0049_OUT) \
 $(POST_0048_OUT) \
 $(POST_0047_OUT) \
 $(POST_0046_OUT) \
@@ -195,6 +206,12 @@ $(POST_NOTES_O): $(POST_NOTES)
 	$(PANDOC_NORMAL) $^ -o $@
 
 # posts
+$(POST_0051_OUT): $(POST_0051_INS)
+	$(PANDOC_WITHBIB) $^ -o $@
+$(POST_0050_OUT): $(POST_0050_INS)
+	$(PANDOC_WITHBIB) $^ -o $@
+$(POST_0049_OUT): $(POST_0049_INS)
+	$(PANDOC_NORMAL) $^ -o $@
 $(POST_0048_OUT): $(POST_0048_INS)
 	$(PANDOC_NORMAL) $^ -o $@
 $(POST_0047_OUT): $(POST_0047_INS)
@@ -296,7 +313,7 @@ $(POST_0001_OUT): $(POST_0001_INS)
 $(PODIR)/%.html: $(PIDIR)/%.md
 	./left_behinds $@ $<
 
-# cp & trans static files
+# cp static files
 $(PODIR)/%.ico: $(SDIR)/%.ico
 	cp $< $@
 $(PODIR)/%.css: $(SDIR)/%.css
@@ -307,5 +324,11 @@ $(PODIR)/%.png: $(SDIR)/%.png
 	cp $< $@
 $(PODIR)/%.html: $(SDIR)/%.html
 	cp $< $@
+$(PODIR)/%.txt: $(PIDIR)/%.md
+	cp $< $@
+$(PODIR)/%: $(PIDIR)/%
+	cp $< $@
+
+# trans static files
 $(PODIR)/%.html: $(SDIR)/%.md
 	$(PANDOC_NORMAL) $^ -o $@
