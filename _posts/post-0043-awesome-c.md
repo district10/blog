@@ -7,6 +7,7 @@ Function Pointer Stack in C
 ===========================
 
 注：这些语法不属于规范的内容，只有用 GCC 才能编译。
+^[不过 Windows 上也有这个头文件和那些函数，在 `C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h` 里。]
 
 C is awesome -- function pointer stack
 
