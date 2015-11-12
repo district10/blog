@@ -210,3 +210,12 @@ Refs
 Refs
 
 * [天下绝技，唯一需要 default 而不是 default 的东西，所以你得记住！](http://dvorak4tzx.lofter.com/post/1d4021c8_84b3717)
+
+
+杂七杂八技能
+------------
+
+```plain
+:set tw=80
+gq
+```
