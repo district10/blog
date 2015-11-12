@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2015-02-19
 
-
 gPhoto2
 =======
 
@@ -227,5 +226,4 @@ Choice: 1 Memory card
 其他参数也是这样设置。
 
 [summary.txt]: http://gnat.qiniudn.com/tmp/gphoto2/summary.txt
-
 [list-all-config.txt]: http://gnat.qiniudn.com/tmp/gphoto2/list-all-config.txt

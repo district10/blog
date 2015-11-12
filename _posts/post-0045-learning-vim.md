@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2014-05-09
 
-
 Learning Vim | 学习 Vim 编辑器
 ==============================
 
@@ -382,4 +381,4 @@ Tricks not from This Book
 
 Refs
 
-* [Learning the vi Editor (豆瓣)](http://book.douban.com/subject/1794209/)
+#. [Learning the vi Editor (豆瓣)](http://book.douban.com/subject/1794209/)

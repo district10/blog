@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2014-06-15
 
-
 维基上的维基解密
 ================
 
@@ -63,4 +62,4 @@ Despite using the name "WikiLeaks", the website has not used the "wiki" publicat
 
 Refs
 
-- [WikiLeaks - Wikipedia](https://en.wikipedia.org/wiki/Wikileaks)
+#. [WikiLeaks - Wikipedia](https://en.wikipedia.org/wiki/Wikileaks)

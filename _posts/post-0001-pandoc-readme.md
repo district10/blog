@@ -2,7 +2,6 @@
 % John MacFarlane
 % 2006-10-17
 
-
 Pandoc User's Guide
 ===================
 
@@ -10,7 +9,7 @@ Pandoc User's Guide
 > Pandoc 是本博客生成器的 Kernel[^pandoc]。
 > Pandoc 支持的 Markdown 秒杀其它种种。
 
-[^pandoc]: 没想到 Pandoc 有这么老的历史了
+[^pandoc]: 没想到 Pandoc 有这么老的历史了。
 
 Synopsis
 ========

@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2014-07-15
 
-
 DuckDuckGo：另一个搜索引擎
 ==========================
 
@@ -25,7 +24,6 @@ DuckDuckGo 公司成立于美国宾夕法尼亚州（Pennsylvania）的 Paoli，
 DuckDuckGo 的命名源自儿童游戏 [Duck Duck Goose][duckduckgoose]（类似丢手绢）。
 
 [ddg-pic]: http://gnat-tang-shared-image.qiniudn.com/pictures/DuckDuckGo_Logo.svg
-
 [duckduckgoose]: https://en.wikipedia.org/wiki/Duck%2C_duck%2C_goose
 
 DuckDuckGo 的部分代码开源在 GitHub，使用 Perl 5 许可证。
@@ -200,15 +198,12 @@ The article concluded "Weinberg's non-ambitious goals make him a particularly od
 
 Refs
 
-- [DuckDuckGo - Wikipedia（英文原文）][ddg-wiki]
-- [DuckDuckGo - 官方介绍][ddg-about]
-- [DuckDuckGo Community][duckduckgo-community]
-- [DuckDuckHack][duckduckhack-intro]
+#. [DuckDuckGo - Wikipedia（英文原文）][ddg-wiki]
+#. [DuckDuckGo - 官方介绍][ddg-about]
+#. [DuckDuckGo Community][duckduckgo-community]
+#. [DuckDuckHack][duckduckhack-intro]
 
 [ddg-wiki]: https://en.wikipedia.org/wiki/DuckDuckGo
-
 [ddg-about]: https://duckduckgo.com/about?t=i&kl=cn-zh
-
 [duckduckhack-intro]: https://duck.co/duckduckhack/ddh-intro
-
 [duckduckgo-community]: https://duck.co/

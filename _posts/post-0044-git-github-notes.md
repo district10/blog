@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2014-08-10
 
-
 Windows 上配置 Git
 ==================
 

@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2015-02-19
 
-
 为什么 Emacs 用户爱德沃夏克
 ===========================
 
@@ -11,12 +10,12 @@
 
 建议先读这些
 
-* 什么是德沃夏克: [维基百科][wikipedia], [百度百科][baidu]
-* [说说 qwerty、dvorak、colemak 三种键盘布局][q_d_c]
-* [Programmer Dvorak Keyboard Layout][dvp_intro]
-* About Neo: [Neo 官方][neo_official], [Wikipedia: neo][neo_wiki]
-* [Steve Yegge：编程的肮脏小秘密](http://blog.jobbole.com/64959/)
-* [键盘史上的 12 个典范](http://www.oschina.net/news/56704/keyboards)
+#. 什么是德沃夏克: [维基百科][wikipedia], [百度百科][baidu]
+#. [说说 qwerty、dvorak、colemak 三种键盘布局][q_d_c]
+#. [Programmer Dvorak Keyboard Layout][dvp_intro]
+#. About Neo: [Neo 官方][neo_official], [Wikipedia: neo][neo_wiki]
+#. [Steve Yegge：编程的肮脏小秘密](http://blog.jobbole.com/64959/)
+#. [键盘史上的 12 个典范](http://www.oschina.net/news/56704/keyboards)
 
 [wikipedia]: http://zh.wikipedia.org/wiki/%E5%BE%B7%E6%B2%83%E5%A4%8F%E5%85%8B%E9%8D%B5%E7%9B%A4
 [baidu]: http://baike.baidu.com/view/1410112.htm
@@ -161,7 +160,8 @@
 [dvpe_win]: http://gnat-tang-shared-image.qiniudn.com/dvpe-v3.7z
 [dvpe_linux]: https://github.com/district10/extended-programmer-dvorak
 
-## 附
+附
+---
 
 1. 一开始不适应是正常的，请暂时忽略指法的不熟悉，体会其 rhythm 好在哪儿
 2. 刚看 [Sacha Chua][sacha] [**采访 Xah Lee**][sacha-xah]，Sacha 说：
@@ -170,8 +170,8 @@
     > "the third level of the neo layout, apparently is really good for programming. 
     > Eh, more layout, eh, and more code. Oh, back to Emacs"（20：10）
     
-3. **为了更好的输入中文，做了单字输入法：[gat][gat]。暂时只能在 Emacs 里使用。** `2014-04-27`
-4. [dvpe0.3][dvpe] 发布 (a.k.a. neo-extended dvpe)。 `2014-03-18` 
+3. 为了更好的输入中文，做了单字输入法：[gat][gat]。暂时只能在 Emacs 里使用。`2014-04-27`
+4. [dvpe0.3][dvpe] 发布 (a.k.a. neo-extended dvpe)。`2014-03-18` 
    也支持 qwerty 和 programmer dvorak 布局 (Level 3 一致)
 
     ![Level 1][level1]
@@ -190,9 +190,6 @@ Koan
 [sacha-xah]: http://v.youku.com/v_show/id_XNzA4MTYzNjQ0.html
 [dvpe]: https://github.com/district10/neo_keyboard_layout
 [gat]: https://github.com/district10/gat
-
 [level1]: http://gnat-tang-shared-image.qiniudn.com/neo-dvpe-L1.svg
-
 [level2]: http://gnat-tang-shared-image.qiniudn.com/neo-dvpe-L2.svg
-
 [level3]: http://gnat-tang-shared-image.qiniudn.com/neo-L3.svg

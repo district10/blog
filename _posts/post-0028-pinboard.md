@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2014-07-15
 
-
 Pinboard：奇葩的注册费
 ======================
 
@@ -12,7 +11,6 @@ Pinboard 是一个社会化的书签网站，由 Maciej Ceglowski 开发运营�
 专注于书签管理。其书签管理通过添加标记（Tags）实现，有点类似 Delicious 早期的书签服务。
 
 [pinboard-a]: http://gnat-tang-shared-image.qiniudn.com/pictures/pinboard-a.png
-
 
 Pinboard 历史
 -------------
@@ -103,10 +101,10 @@ P.P.S. 你注意到了官网右下角的 “Of course you should!” 了吗？�
 
 Refs
 
-* [Pinboard - Wikipedia（英文原文）][pinboard-wiki]
-* [Pinboard - Official][pinboard-official]
-* [“一人项目”如何存活？收费！ ][pay-for-you]
-* [“网络书签”服务Pinboard：注册费会随着使用人数的增加而增加][pay-for-you2]
+#. [Pinboard - Wikipedia（英文原文）][pinboard-wiki]
+#. [Pinboard - Official][pinboard-official]
+#. [“一人项目”如何存活？收费！ ][pay-for-you]
+#. [“网络书签”服务Pinboard：注册费会随着使用人数的增加而增加][pay-for-you2]
 
 [pinboard-wiki]: https://en.wikipedia.org/wiki/Pinboard_(website)
 [pinboard-official]: https://pinboard.in/

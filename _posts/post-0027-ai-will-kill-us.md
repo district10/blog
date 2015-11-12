@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2013-00-00
 
-
 人工智能是否会导致人类灭亡？（演讲稿）
 =====================================
 
@@ -47,6 +46,5 @@
 ---
 
 Refs
-----
 
-* 里面的视频：<http://gnat.qiniudn.com/tmp/robot.mp4>
+#. 里面的视频：<http://gnat.qiniudn.com/tmp/robot.mp4>

@@ -1,17 +1,16 @@
-% 自由的由 | Free as in Freedom
+% Free as in Freedom
 % TANG ZhiXiong
 % 2014-03-15
 
-
-自由的由 | Free as in Freedom
+Free as in Freedom
 =============================
 
 dvorak4tzx：
 
 > 2014 年我去浙江大学听了 Richard Stallman 的讲座。这是那之前看的一本书。
 
-[FOR WANT OF A PRINTER][for_want_of_a_printer]
-----------------------------------------------
+FOR WANT OF A PRINTER [link][for_want_of_a_printer]
+---------------------------------------------------
 
 If a program or software fix was good enough to solve your problems, 
 it was good enough to solve somebody else's problems. 
@@ -19,8 +18,8 @@ it was good enough to solve somebody else's problems.
 
 [for_want_of_a_printer]: http://oreilly.com/openbook/freedom/ch01.html
 
-[2001: A HACKER'S ODYSSEY][hacker_odyssey]
-------------------------------------------
+2001: A HACKER'S ODYSSEY [link][hacker_odyssey]
+-----------------------------------------------
 
 The **viral** GPL: spreads itself to every software program it touches.
 
@@ -32,8 +31,8 @@ The **viral** GPL: spreads itself to every software program it touches.
 
 [hacker_odyssey]: http://oreilly.com/openbook/freedom/ch02.html
 
-[A PORTRAIT OF THE HACKER AS A YOUNG MAN][hacker_as_a_young_man]
-----------------------------------------------------------------
+A PORTRAIT OF THE HACKER AS A YOUNG MAN [link][hacker_as_a_young_man]
+---------------------------------------------------------------------
 
 "It made him so angry." The anger eventually drove her son
 to **focus on math and science all the more**.
@@ -54,8 +53,8 @@ You haven't got rid of me yet._'"
 
 [hacker_as_a_young_man]: http://oreilly.com/openbook/freedom/ch03.html
 
-[IMPEACH GOD][impeach_god]
---------------------------
+IMPEACH GOD [link][impeach_god]
+-------------------------------
 
 "**I didn't like the counter culture much, I didn't like the music. 
 I didn't like the drugs.** I was scared of the drugs. I especially **didn't 
@@ -86,11 +85,10 @@ in the Harvard dining halls**, where on average only one meal a day included any
 > opposes the idea of passwords and security.
 
 [impeach_god]: http://oreilly.com/openbook/freedom/ch04.html
-
 [computer_lover]:  http://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Richard_Matthew_Stallman_working_on_his_Lemote_Machine.JPG/320px-Richard_Matthew_Stallman_working_on_his_Lemote_Machine.JPG
 
-[SMALL PUDDLE OF FREEDOM][small_puddle_of_freedom]
---------------------------------------------------
+SMALL PUDDLE OF FREEDOM [link][small_puddle_of_freedom]
+-------------------------------------------------------
 
 "**The Saint of Free Software**",
 
@@ -116,8 +114,8 @@ in free software during my last visit was profound."
 
 [small_puddle_of_freedom]: http://oreilly.com/openbook/freedom/ch05.html
 
-[THE EMACS COMMUNE][emacs_commune]
-----------------------------------
+THE EMACS COMMUNE [link][emacs_commune]
+---------------------------------------
 
 AI Lab: "It was a bit like **the garden of Eden**, it hadn't occurred to us to cooperate."
 
@@ -150,8 +148,8 @@ very intense, and that I never wanted to do it again in my life.**"
 
 [emacs_commune]: http://oreilly.com/openbook/freedom/ch06.html
 
-[A STARK MORAL CHOICE][moral_choice]
-------------------------------------
+A STARK MORAL CHOICE [link][moral_choice]
+-----------------------------------------
 
 An unusual message from rms:
 
@@ -270,10 +268,10 @@ according as they felt **hope** or **despair** over escaping the problems he ide
 [cassandra]: http://en.wikipedia.org/wiki/Cassandra
 [moral_choice]: http://oreilly.com/openbook/freedom/ch07.html
 
-[ST. IGNUCIUS][st_ignucius]
----------------------------
+ST. IGNUCIUS [link][st_ignucius]
+--------------------------------
 
-1. "Some people say to me, '**Why make such a fuss about getting credit for this system?** 
+"Some people say to me, '**Why make such a fuss about getting credit for this system?** 
 After all, the important thing is the job is done, not whether you get recognition for it.' 
 **Well, this would be wise advice if it were true. **But the job wasn't to **build an operating system**;
 the job is to spread freedom to the users of computers. And to do that we have to **make 
@@ -322,8 +320,8 @@ When nobody throws their hand up, Stallman signs off with a traditional exit lin
 [ads]: http://stallman.org/extra/personal.html
 [st_ignucius]: http://oreilly.com/openbook/freedom/ch08.html
 
-[THE GNU GENERAL PUBLIC LICENSE][gpl]
--------------------------------------
+THE GNU GENERAL PUBLIC LICENSE [link][gpl]
+------------------------------------------
 
 By the spring of 1985, Richard Stallman had produced the GNU Project's first useful 
 result - **a Lisp-based version of Emacs for Unix-like operating systems**. 
@@ -419,15 +417,12 @@ As far as Torvalds was concerned, he was simply the latest in a long line of kid
 "**I may not have seen the light,**" writes Torvalds, reflecting on Stallman's 1991 Polytechnic University speech and his subsequent decision to switch to the GPL. "**But I guess sometimes from his speech sunk in.**"
 
 [perse]: http://dict.youdao.com/search?le=eng&q=per%20se&keyfrom=dict.top
-
 [mnemonic]: http://dict.youdao.com/search?le=eng&q=mnemonics&keyfrom=dict.top
-
 [amalgamated]: http://dict.youdao.com/search?q=amalgamated&keyfrom=dict.typo&spc=amalgamated&le=eng
-
 [gpl]: http://oreilly.com/openbook/freedom/ch09.html
 
-[GNU/LINUX][gnu_linux]
-----------------------
+GNU/LINUX [link][gnu_linux]
+---------------------------
 
 For one thing, it underlined the lack of an ideological agenda on Torvalds' part. **Unlike the GNU developers, Torvalds hadn't built his kernel out of a desire to give his fellow hackers freedom; he'd built it to have something he himself could play with.** So what exactly was the combination system, and which philosophy would people associate it with? Was it **a manifestation of the free software philosophy** first articulated by Stallman in the GNU Manifesto? **Or was it simply an amalgamation of nifty software tools** that any users, similarly motivated, could assemble on his own home system?
 
@@ -448,17 +443,13 @@ Young(Robert Young, the former Linux Journal editor) wasn't the only software ex
 Most of them installed distributions came with nonfree software; with Torvalds as their ethical guide, they **saw no principled reason to reject it**. Still, **a precarious freedom** was available for those that appreciated it.
 
 [clout]: http://dictionary.reference.com/browse/clout?s=ts
-
 [catapulted]: http://dictionary.reference.com/browse/catapulted?s=t
-
 [belated]: http://dictionary.reference.com/browse/belated?s=t
-
 [intrigued]: http://dictionary.reference.com/browse/intrigued?s=t
-
 [gnu_linux]: http://oreilly.com/openbook/freedom/ch10.html
 
-[Open Source][open_source]
---------------------------
+Open Source [link][open_source]
+-------------------------------
 
 Over the past 15 years, free and low-cost software has become **ubiquitous**. This conference will bring together implementers of several different types of freely redistributable software and publishers of such software (on various media). There will be tutorials and refereed papers, as well as keynotes by Linus Torvalds and Richard Stallman.
 
@@ -481,15 +472,12 @@ Then again, as the recent debate over open source also shows, in instances when 
 Murdock, for one, finds that unbudgeable nature both refreshing and valuable. Stallman may no longer be the solitary leader of the free software movement, but he is still **the polestar of the free software community**. "You always know that he's going to be consistent in his views," Murdock says. "**Most people aren't like that. Whether you agree with him or not, you really have to respect that.**"
 
 [open_source]: http://oreilly.com/openbook/freedom/ch11.html
-
 [taboo]: http://dictionary.reference.com/browse/taboo?s=ts
-
 [shun]: http://dictionary.reference.com/browse/shun?s=t
-
 [traits]: http://dictionary.reference.com/browse/traits?s=t
 
-[A brief Journey Through Hacker Hell][journey]
-----------------------------------------------
+A brief Journey Through Hacker Hell [link][journey]
+---------------------------------------------------
 
 "It's as if he picked this route **with absolutely no thought on how to get there efficiently**," Stallman says.
 The word "efficiently" **hangs in the air like a bad odor**(fragrance). Few things irritate the hacker mind more than inefficiency. It was **the inefficiency of checking the Xerox laser printer** two or three times a day that triggered Stallman's initial inquiry into the printer source code. It was **the inefficiency of rewriting software tools** hijacked by commercial software vendors that led Stallman to battle Symbolics and to launch the GNU Project. If, as Jean Paul Sartre once [opined][opine], **hell is other people, hacker hell is duplicating other people's stupid mistakes, and it's no exaggeration to say that Stallman's entire life has been an attempt to save mankind from these fiery depths.**
@@ -497,15 +485,12 @@ The word "efficiently" **hangs in the air like a bad odor**(fragrance). Few thin
 Stallman accents the words "my way" by gripping the steering wheel and pulling himself towards it twice. The image of Stallman's [lurching][lurching] frame is **like that of a child throwing a temper [tantrum][tantrum]** in a car seat, an image further underlined by the tone of Stallman's voice. Halfway between **anger** and **anguish**, Stallman seems to be **on the verge of tears**.
 
 [journey]: http://oreilly.com/openbook/freedom/ch12.html
-
 [opine]: http://dictionary.reference.com/browse/opine?s=t
-
 [lurching]: http://dictionary.reference.com/browse/lurching?s=t
-
 [tantrum]: http://dictionary.reference.com/browse/tantrum?s=t
 
-[Continuing the Fight][continue_the_fight]
-------------------------------------------
+Continuing the Fight [link][continue_the_fight]
+-----------------------------------------------
 
 For Richard Stallman, **time may not heal all wounds, but it does provide a convenient ally**.
 
@@ -523,8 +508,8 @@ As for Stallman himself, he, too, sees mixed signals:
 
 [continue_the_fight]: http://oreilly.com/openbook/freedom/ch13.html
 
-[Epilogue: Crushing Loneliness][epilogue]
------------------------------------------
+Epilogue: Crushing Loneliness [link][epilogue]
+----------------------------------------------
 
 "I'd be willing to accept something like that," Stallman said. "**As long as it also permitted verbatim copying.**"
 
@@ -535,11 +520,10 @@ As for Stallman himself, he, too, sees mixed signals:
 While I'm sure not every reader feels the same level of affinity(agree) for Stallman-indeed, after reading this book, some might feel zero affinity-I'm sure most will agree. **Few individuals offer as singular a human portrait as Richard M. Stallman.** It is my sincere hope that, with this initial portrait complete and with the help of the GFDL, others will feel a similar urge to add their own perspective to that portrait.
 
 [epilogue]: http://oreilly.com/openbook/freedom/ch14.html
-
 [pleasure_card]: http://gnat-tang-shared-image.qiniudn.com/pictures/rms-gpl.png
 
-[Appendix A: Terminology][terminology]
---------------------------------------
+Appendix A: Terminology [link][terminology]
+-------------------------------------------
 
 `GNU/Linux`
 
@@ -549,23 +533,20 @@ the terms are completely interchangeable
 
 [terminology]: http://oreilly.com/openbook/freedom/appa.html
 
-[Appendix B: Hack, Hackers, and Hacking][hack_hackers_hacking]
---------------------------------------------------------------
+Appendix B: Hack, Hackers, and Hacking [link][hack_hackers_hacking]
+-------------------------------------------------------------------
 
 A classic example of this expanded hacking definition is the game **Spacewar**, the first interactive video game. Developed by MIT hackers in the early 1960s, Spacewar had all the traditional hacking definitions: it was [**goofy**][goofy] and **random**, serving little useful purpose other than providing a nightly distraction for the dozen or so hackers who delighted in playing it. From a software perspective, however, it was a monumental testament to innovation of programming skill. It was also completely free. **Because hackers had built it for fun**, they saw no reason to guard their creation, sharing it extensively with other programmers. By the end of the 1960s, Spacewar had become a favorite diversion for mainframe programmers around the world.
 
 "**In the culture of hacking, an elegant, simple creation is as highly valued as it is in pure science**," writes Boston Globe reporter Randolph Ryan in a 1993 article attached to the police car exhibit. "A Hack differs from the ordinary college [prank][prank] in that the event usually requires careful planning, engineering and finesse, and has an underlying wit and inventiveness," Ryan writes. "The unwritten rule holds that a hack should be good-natured, non-destructive and safe. In fact, **hackers sometimes assist in [dismantling][dismantling] their own handiwork.**"
 
 [hack_hackers_hacking]: http://oreilly.com/openbook/freedom/appb.html
-
 [goofy]: http://dictionary.reference.com/browse/goofy?s=t
-
 [prank]: http://dictionary.reference.com/browse/prank?s=t
-
 [dismantling]: http://dictionary.reference.com/browse/dismantling?s=t
 
-[Appendix C: GNU Free Documentation License (GFDL)][gfdl]
----------------------------------------------------------
+Appendix C: GNU Free Documentation License (GFDL) [link][gfdl]
+--------------------------------------------------------------
 
 The purpose of this License is to **make a manual, textbook, or other written document "free" in the sense of freedom**
 
@@ -579,8 +560,8 @@ We have designed this License in order to use it for manuals for free software, 
 
 Refs
 
-- [Free as in Freedom: Richard Stallman and the Free Software Revolution][freeasinfreedom]
-- [Free as in Freedom (Openbook, 免费开放电子书)][openbook]
+#. [Free as in Freedom: Richard Stallman and the Free Software Revolution][freeasinfreedom]
+#. [Free as in Freedom (Openbook, 免费开放电子书)][openbook]
 
 [freeasinfreedom]: http://book.douban.com/subject/1785874/
 [openbook]: http://oreilly.com/openbook/freedom/

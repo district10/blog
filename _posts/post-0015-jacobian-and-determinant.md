@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2014-06-20
 
-
 雅各比行列式和矩阵的秩
 ======================
 
@@ -31,7 +30,6 @@ P.S. 中文（数学）书，毁一生。
 - 废话，世界范围内牛逼的东西多，还是中国牛逼的东西多？还有，漂洋过海本身也是个筛选过程。（这也导致一些人觉得【外国就是好】之类的偏见）
 
 [math-book]: http://book.douban.com/subject/1797658/
-
 [det]: http://gnat-tang-shared-image.qiniudn.com/math/determinant.png
 
 P.P.S. 关于数学符号：
@@ -51,14 +49,12 @@ P.P.P.S. 偶然看到孟言的 [博文][mengyan-blog]：
 原来上文说的那本书中文版叫[《数学拾遗》][math-you-missed-zh]。初步扫完一遍，脑洞大开。
 
 [mengyan-blog]: http://blog.163.com/jmun_math/blog/static/26769008200941683851930/
-
 [math-you-missed-zh]: http://book.douban.com/subject/1256358/
-
 [jacobian-determint]: https://en.wikipedia.org/wiki/Jacobian_matrix
 
 ---
 
 Refs
 
-- [Jacobian matrix and determinant][jacobian-determint]
-- [All the Mathematics You Missed （数学拾遗）][math-book]
+#. [Jacobian matrix and determinant][jacobian-determint]
+#. [All the Mathematics You Missed （数学拾遗）][math-book]

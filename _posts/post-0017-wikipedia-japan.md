@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2014-06-18
 
-
 维基上的日本
 ============
 
@@ -90,6 +89,6 @@ Get closer to the hood than it looks like you need to, or else you might miss.)
 
 Refs
 
-- [Japan – Travel guide at Wikivoyage][japan]
+#. [Japan – Travel guide at Wikivoyage][japan]
 
 [japan]: https://en.wikivoyage.org/wiki/Japan

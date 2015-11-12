@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2014-03-28
 
-
 More About Vim | Vim 杂记
 =========================
 
@@ -205,17 +204,17 @@ Refs
 
 除此之外，Vim 很完美。
 
----
-
-Refs
-
-* [天下绝技，唯一需要 default 而不是 default 的东西，所以你得记住！](http://dvorak4tzx.lofter.com/post/1d4021c8_84b3717)
-
-
 杂七杂八技能
 ------------
 
 ```plain
-:set tw=80
-gq
+;; set text width
+;; ;    :set tw=80
+gq[motion]
 ```
+
+---
+
+Refs
+
+#. [天下绝技，唯一需要 default 而不是 default 的东西，所以你得记住！](http://dvorak4tzx.lofter.com/post/1d4021c8_84b3717)

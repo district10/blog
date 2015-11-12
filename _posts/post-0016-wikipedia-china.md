@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2014-06-17
 
-
 维基上的中国
 ============
 
@@ -170,6 +169,6 @@ Hotel
 
 Refs
 
-- [China – Travel guide at Wikivoyage][china]
+#. [China – Travel guide at Wikivoyage][china]
 
 [china]: https://en.wikivoyage.org/wiki/China

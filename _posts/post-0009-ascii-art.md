@@ -2,12 +2,13 @@
 % TANG ZhiXiong
 % 2014-02-08
 
-
 ASCII Art
 =========
 
-[What is ascii-art?][ascii-art]
--------------------------------
+What is ascii-art
+-----------------
+
+[ascii-art]
 
 > ASCII art is a **graphic design technique** that uses computers for presentation and 
 > consists of pictures pieced together from the 95 printable (from a total of 128) characters 
@@ -19,11 +20,12 @@ ASCII Art
 > (non-proportional fonts, as on a traditional typewriter) such as Courier for presentation.
 
 [Some Examples](http://www.chris.com/ascii/)
---------------------------------------------
 
 from <http://www.chris.com/ascii/>
 
-### [丘比特][qiubite]
+### 丘比特
+
+[qiubite]
 
 ~~~plain
                                (
@@ -45,7 +47,9 @@ O -'        .'''       .'                                     "8b d8"   Veilleux
           'o-'           (  )mikey(__)))                         "
 ~~~
 
-### [Alien][alien]
+### Alien
+
+[alien]
 
 ~~~plain
            \.   \.      __,-"-.__      ./   ./
@@ -67,7 +71,9 @@ O -'        .'''       .'                                     "8b d8"   Veilleux
                           ` | '
 ~~~
 
-### [Horse][horse]
+### Horse
+
+[horse]
 
 ~~~plain
                                                           ,   .

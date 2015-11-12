@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2014-09-03
 
-
 遵守规则还是符合逻辑？
 =====================
 
@@ -94,34 +93,33 @@
 改变不合逻辑的规则
 ------------------
 
-文法规则里还有一个有意思的地方，那就是
-
-规范认为
-
-```plain
-他说“你去死吧。”
-```
-
-是对的。而
-
-```plain
-他说“你去死吧”。
-```
-
-是错的。我记得这和早期字体的宽度有关，大概是前种方式在打字机上
+文法规则里还有一个有意思的地方，那就是规范认为 `他说“你去死吧。”` 是对的。而 `他说“你去死吧”。` 是错的。
+我记得这和早期字体的宽度（typesetting）有关，大概是前种方式在打字机上
 效果好点，后一种则很糟糕，这个规则一直遗留到现在，还传到了各个国家。哪怕我们
 用的中文标点完全跟这不着边。
 
-一些黑客则认为这很愚蠢，所以他们都不守规矩地用第二种，这也是所有
-Linux man page 等文档的标准。比如 vi 的文档里描述 `.` 的用法，你说他能把
-句子的 full stop 放到引用符里面吗？
+一些黑客则认为这很愚蠢[^hack-writing-style]，所以他们都不守规矩地用第二种，这也是
+所有 Linux man page 等文档的标准。
 
-按照文法的规范，是。按照逻辑和 clearity 的需求，否。
+我们应该选第一种方式吗？按照文法的规范，是。按照逻辑和 clearity 的需求，否。
 
 **改变规则里不合逻辑和自身需求的地方，是进步。**
+
+[^hack-writing-style]: 参考 Eric Raymond 的 [Hacker Dictionary: Hacker Writing Style](http://www.eps.mcgill.ca/jargon/html/Hacker-Writing-Style.html)：
+
+    > Consider, for example, a sentence in a vi tutorial that looks like this:
+    >
+    >> Then delete a line from the file by typing “dd”.
+    > 
+    > Standard usage would make this
+    >
+    >> Then delete a line from the file by typing “dd.”
+    >
+    > but that would be very bad — because the reader would be prone to type the string d-d-dot, 
+    > and it happens that in vi, dot repeats the last command accepted. The net result would be to delete two lines!
 
 ---
 
 Refs
 
-* [punctuation - Why does the multi-paragraph quotation rule exist? - English Language & Usage Stack Exchange](http://english.stackexchange.com/questions/96608/why-does-the-multi-paragraph-quotation-rule-exist)
+#. [punctuation - Why does the multi-paragraph quotation rule exist? - English Language & Usage Stack Exchange](http://english.stackexchange.com/questions/96608/why-does-the-multi-paragraph-quotation-rule-exist)

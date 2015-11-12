@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2014-02-23
 
-
 OpenCV Computer Vision with Python
 ==================================
 
@@ -392,9 +391,9 @@ Appendix B: Generating Haar Cascades for Custom Targets
 
 Refs
 
-- [OpenCV Computer Vision with Python][opencv-with-python]
-- [Joseph Howse(the author)'s webpage][joseph-howes-webpage]
-- [Lanczos resampling - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Lanczos_resampling)
+#. [OpenCV Computer Vision with Python][opencv-with-python]
+#. [Joseph Howse(the author)'s webpage][joseph-howes-webpage]
+#. [Lanczos resampling - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Lanczos_resampling)
 
 [opencv-with-python]: http://book.douban.com/subject/24669825/
 [joseph-howes-webpage]: http://nummist.com/opencv/

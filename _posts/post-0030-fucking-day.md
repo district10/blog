@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2013-00-00
 
-
 What a fucking day （记一篇 Essay）
 ==================================
 

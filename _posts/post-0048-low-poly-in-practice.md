@@ -2,11 +2,8 @@
 % TANG ZhiXiong
 % 2015-11-10
 
-
 设计领域新风潮：Low Poly 风格
 =============================
-
-`这是作业`
 
 背景材料
 --------
@@ -95,6 +92,7 @@ TRIGRAFF[^trigraff] 的 Delaunay 程度不够，张的 Delaunay 程度过了，
 [phases]: http://gnat.qiniudn.com/homework/phases.png
 [video]: http://gnat.qiniudn.com/homework/video.png
 [Boris Delaunay]: https://en.wikipedia.org/wiki/Boris_Delaunay
+[Artistic Low Poly rendering for images (Meng Gai, Guoping Wang) - Springer]: http://link.springer.com/article/10.1007/s00371-015-1082-2
 
 ---
 
@@ -105,5 +103,3 @@ Refs
 #. [“低面建模”设计美学-20140726早读课 | 互联网早读课](http://zaodula.com/archives/8578.html)
 #. [如何使用 JavaScript 生成 lowpoly 风格图像？ - 知乎](http://www.zhihu.com/question/29856775)
 #. [Dribbble - Phil Klay by Breno Bitencourt](https://dribbble.com/shots/2246022-Phil-Klay)
-
-[Artistic Low Poly rendering for images (Meng Gai, Guoping Wang) - Springer]: http://link.springer.com/article/10.1007/s00371-015-1082-2

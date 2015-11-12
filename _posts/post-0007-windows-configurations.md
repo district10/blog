@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2015-02-20
 
-
 Windows 系统配置
 ================
 
@@ -18,13 +17,13 @@ Windows 系统配置
 * Pandoc
 * [Chocolatey Gallery](https://chocolatey.org/) 的安装，管理员身份运行：
 
-    ```shell
+    ```bash
     @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
     ```
 
     再用它装各种软件：
 
-    ```shell
+    ```bash
     choco install git.install
     choco install flashplayerplugin
     choco install googlechrome
@@ -92,12 +91,3 @@ endfunction
 ------------
 
 Qt，CMake，Boost，OpenCV，etc。
-
----
-
-Refs
-
-* [改造你的 windows 开发环境 - 简书](http://www.jianshu.com/p/23df3e37bd9a?search_token=21e09da524c459887852a4122672f5c265e5ff2fd710ec435781d58a3fba5367)
-* [配置豪华的 Windows 开发环境 - 简书](http://www.jianshu.com/p/aa19380828bd?search_token=b7371223ae13e36f283584429869e14cd04e598481430e36fcc9d710c7c4d773)
-* [PuTTY Download Page](http://www.putty.nl/download.html)
-* ruby: [Ruby for Windows](http://rubyinstaller.org/downloads/)

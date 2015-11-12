@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2014-05-07
 
-
 The AWK Programming Language | AWK 编程语言
 ===========================================
 
@@ -278,4 +277,4 @@ epilog
 
 Refs
 
-* [The AWK Programming Language (豆瓣)](http://book.douban.com/subject/1876898/)
+#. [The AWK Programming Language (豆瓣)](http://book.douban.com/subject/1876898/)

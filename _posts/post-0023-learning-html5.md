@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2014-04-19
 
-
 Learning HTML5
 ==============
 
@@ -407,14 +406,14 @@ What is Application Cache?
 
 Refs
 
-* [W3C School][w3c-official]
-* [HTML5 Introduction](http://www.w3schools.com/html/html5_intro.asp)
-* [HTML5 New Elements](http://www.w3schools.com/html/html5_new_elements.asp)
-* [HTML5 Semantic Elements](http://www.w3schools.com/html/html5_semantic_elements.asp)
-* [HTML5 `<input>`{.html} Types](http://www.w3schools.com/html/html5_form_input_types.asp)
-* [HTML5 Form Elements](http://www.w3schools.com/html/html5_form_elements.asp)
-* [HTML5 `<Canvas>`{.html}](http://www.w3schools.com/html/html5_canvas.asp)
-* [Canvas Reference](http://www.w3schools.com/tags/ref_canvas.asp)
-* [HTML5 Inline SVG](http://www.w3schools.com/html/html5_svg.asp)
+#. [W3C School][w3c-official]
+#. [HTML5 Introduction](http://www.w3schools.com/html/html5_intro.asp)
+#. [HTML5 New Elements](http://www.w3schools.com/html/html5_new_elements.asp)
+#. [HTML5 Semantic Elements](http://www.w3schools.com/html/html5_semantic_elements.asp)
+#. [HTML5 `<input>`{.html} Types](http://www.w3schools.com/html/html5_form_input_types.asp)
+#. [HTML5 Form Elements](http://www.w3schools.com/html/html5_form_elements.asp)
+#. [HTML5 `<Canvas>`{.html}](http://www.w3schools.com/html/html5_canvas.asp)
+#. [Canvas Reference](http://www.w3schools.com/tags/ref_canvas.asp)
+#. [HTML5 Inline SVG](http://www.w3schools.com/html/html5_svg.asp)
 
 [w3c-official]: http://www.w3schools.com/html/default.asp

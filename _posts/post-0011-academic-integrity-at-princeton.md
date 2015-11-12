@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2014-04-04
 
-
 普林斯顿大学学术道德 | Academic Integrity at Princeton
 ======================================================
 
@@ -93,4 +92,4 @@ Campus Resources
 
 Refs
 
-- [Academic Integrity at princeton(pdf)](http://media.wix.com/ugd/4267a0_39e3c005594e46e881737573eea206ae.pdf)
+#. [Academic Integrity at princeton(pdf)](http://media.wix.com/ugd/4267a0_39e3c005594e46e881737573eea206ae.pdf)

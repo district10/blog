@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2014-04-07
 
-
 AWK 文字处理
 ============
 
@@ -120,21 +119,22 @@ seq 9 | sed 'H;g' | awk -v RS='' '{for(i=1;i<=NF;i++)printf("%dx%d=%d%s", i, NR,
 
 [gnu_awk_user_guide]: http://www.gnu.org/software/gawk/manual/gawk.html
 
+The AWK Programming Language
+----------------------------
+
 [The AWK Programming Language][douban_awk]
-------------------------------------------
 
 写了点读书笔记，[戳这里][awk-notes]
 
 [douban_awk]: http://book.douban.com/subject/1876898/
-
-[awk-notes]: https://github.com/district10/notes/blob/master/2014/The-Awk-Programming-Language.md
+[awk-notes]: post-0046-awk.html
 
 ---
 
 Refs
 
-- [AWK 简明教程][awk_simple_tutorial]
-- [The AWK Programming Language][awk_book] `9.5 !!!`
+#. [AWK 简明教程][awk_simple_tutorial]
+#. [The AWK Programming Language][awk_book] `9.5 !!!`
 
 [awk_simple_tutorial]: http://coolshell.cn/articles/9070.html
 [awk_book]: http://book.douban.com/subject/1876898/

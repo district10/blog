@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2015-01-00
 
-
 Function Pointer Stack in C
 ===========================
 

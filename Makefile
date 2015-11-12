@@ -9,7 +9,7 @@ PARTS = _parts
 # cmds
 PANDOC         = pandoc
 PANDOC_ARGS    = --toc --self-contained
-PANDOC_EXT     = -f markdown+table_captions+ignore_line_breaks
+PANDOC_EXT     = -f markdown+table_captions
 PANDOC_EXTALL  = ignore_line_breaks markdown_github+ascii_identifiers
 PANDOC_PLAIN   = $(PANDOC) -S -s --ascii -c main.css -B $(PARTS)/header.html -A $(PARTS)/footer.html
 PANDOC_NORMAL  = $(PANDOC) -S -s --ascii --toc --mathjax -c main.css -A $(PARTS)/footer.html --highlight-style pygments $(PANDOC_EXT)

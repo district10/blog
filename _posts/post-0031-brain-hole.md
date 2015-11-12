@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2013-00-00
 
-
 虚拟现实的实习报告（脑洞最大的一次实习报告）
 ===========================================
 
@@ -30,20 +29,20 @@
 
 其中的截图：
 
-* <http://gnat.qiniudn.com/blensor/1.png>
-* <http://gnat.qiniudn.com/blensor/2.png>
-* <http://gnat.qiniudn.com/blensor/200.png>
-* <http://gnat.qiniudn.com/blensor/640.png>
-* <http://gnat.qiniudn.com/blensor/CGAL_Boolean_ops.png>
-* <http://gnat.qiniudn.com/blensor/LIDAR.png>
-* <http://gnat.qiniudn.com/blensor/before.png>
-* <http://gnat.qiniudn.com/blensor/blensor.png>
-* <http://gnat.qiniudn.com/blensor/hello_whu_2012.png>
-* <http://gnat.qiniudn.com/blensor/hello_whu_2012_after.png>
-* <http://gnat.qiniudn.com/blensor/hello_whu_clouds_with_noise.png>
-* <http://gnat.qiniudn.com/blensor/hello_whu_clouds_without_noise.png>
-* <http://gnat.qiniudn.com/blensor/over_view.png>
-* <http://gnat.qiniudn.com/blensor/pcl_cloud_viewer.png>
-* <http://gnat.qiniudn.com/blensor/scannerTYpe.png>
-* <http://gnat.qiniudn.com/blensor/simulation.png>
-* <http://gnat.qiniudn.com/blensor/user_otho.png>
+#. <http://gnat.qiniudn.com/blensor/1.png>
+#. <http://gnat.qiniudn.com/blensor/2.png>
+#. <http://gnat.qiniudn.com/blensor/200.png>
+#. <http://gnat.qiniudn.com/blensor/640.png>
+#. <http://gnat.qiniudn.com/blensor/CGAL_Boolean_ops.png>
+#. <http://gnat.qiniudn.com/blensor/LIDAR.png>
+#. <http://gnat.qiniudn.com/blensor/before.png>
+#. <http://gnat.qiniudn.com/blensor/blensor.png>
+#. <http://gnat.qiniudn.com/blensor/hello_whu_2012.png>
+#. <http://gnat.qiniudn.com/blensor/hello_whu_2012_after.png>
+#. <http://gnat.qiniudn.com/blensor/hello_whu_clouds_with_noise.png>
+#. <http://gnat.qiniudn.com/blensor/hello_whu_clouds_without_noise.png>
+#. <http://gnat.qiniudn.com/blensor/over_view.png>
+#. <http://gnat.qiniudn.com/blensor/pcl_cloud_viewer.png>
+#. <http://gnat.qiniudn.com/blensor/scannerTYpe.png>
+#. <http://gnat.qiniudn.com/blensor/simulation.png>
+#. <http://gnat.qiniudn.com/blensor/user_otho.png>

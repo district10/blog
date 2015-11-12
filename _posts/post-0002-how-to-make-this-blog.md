@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2015-11-06
 
-
 这是怎样一个博客生成器
 ======================
 
@@ -499,8 +498,8 @@ Pandoc 的引用功能这里没有介绍。本博客支持用 bib 文件（可�
 
 Refs
 
-* [Pandoc Markdown Official Site](http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html)
-* [The pandoc-siteproc package](http://hackage.haskell.org/package/pandoc-citeproc)
-* [Art of Problem Solving - LaTeX: Symbols](http://www.artofproblemsolving.com/wiki/index.php/LaTeX:Symbols)
-* [Art of Problem Solving - LaTeX: Commands](http://www.artofproblemsolving.com/wiki/index.php/LaTeX:Commands)
-* 我以前的博客（已经下线）
+#. [Pandoc Markdown Official Site](http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html)
+#. [The pandoc-siteproc package](http://hackage.haskell.org/package/pandoc-citeproc)
+#. [Art of Problem Solving - LaTeX: Symbols](http://www.artofproblemsolving.com/wiki/index.php/LaTeX:Symbols)
+#. [Art of Problem Solving - LaTeX: Commands](http://www.artofproblemsolving.com/wiki/index.php/LaTeX:Commands)
+#. 我以前的博客（已经下线）

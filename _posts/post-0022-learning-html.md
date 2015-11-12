@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2014-02-12
 
-
 Learning HTML
 =============
 
@@ -624,22 +623,22 @@ The Most Important Differences from HTML
 
 Refs
 
-* [HTML Introduction][html-intro]
-* [HTML Basic][html-basic]
-* [HTML Styles - CSS][html-css]
-* [HTML Images][html-image]
-* [HTML Table][html-table]
-* [HTML List][html-list]
-* [HTML Blocks][html-blocks]
-* [HTML Layouts][html-layouts]
-* [HTML Forms and Input][html-forms-and-input]
-* [HTML Iframes][html-iframe]
-* [HTML Colors, Color Names][html-colors]
-* [HTML Scripts: JavaScript][html-js]
-* [HTML Symbols][html-symbols]
-* [HTML Entities][html-entities]
-* [HTML Uniform Resource Locators][html-rc-locator]
-* [HTML Encoding (Character Sets)][html-encoding]
+#. [HTML Introduction][html-intro]
+#. [HTML Basic][html-basic]
+#. [HTML Styles - CSS][html-css]
+#. [HTML Images][html-image]
+#. [HTML Table][html-table]
+#. [HTML List][html-list]
+#. [HTML Blocks][html-blocks]
+#. [HTML Layouts][html-layouts]
+#. [HTML Forms and Input][html-forms-and-input]
+#. [HTML Iframes][html-iframe]
+#. [HTML Colors, Color Names][html-colors]
+#. [HTML Scripts: JavaScript][html-js]
+#. [HTML Symbols][html-symbols]
+#. [HTML Entities][html-entities]
+#. [HTML Uniform Resource Locators][html-rc-locator]
+#. [HTML Encoding (Character Sets)][html-encoding]
 
 [html-css]: http://www.w3schools.com/html/html_css.asp
 [html-image]: http://www.w3schools.com/html/html_images.asp

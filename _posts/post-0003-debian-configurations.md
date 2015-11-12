@@ -2,7 +2,6 @@
 % TANG ZhiXiong
 % 2015-02-19
 
-
 Debian Configurations
 =====================
 
@@ -410,6 +409,6 @@ sudo vim /usr/local/etc/wemux.conf # host_list=(root gnat)，改成自己的 ID
 
 Refs
 
-* <https://lug.ustc.edu.cn/wiki/mirrors/help/debian>
-* <http://www.2cto.com/Article/201304/200418.html>
-* and many more.
+#. <https://lug.ustc.edu.cn/wiki/mirrors/help/debian>
+#. <http://www.2cto.com/Article/201304/200418.html>
+#. and many more.
