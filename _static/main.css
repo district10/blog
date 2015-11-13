@@ -179,13 +179,6 @@ div.slogan {
     font-variant:small-caps;
 }
 
-/*
-body:nth-child(2) > p { // tags
-    // visibility: hidden;
-    font-size: 1%;
-}
-*/
-
 blockquote {
     padding: 10px 15px;
     margin-bottom: 20px;
