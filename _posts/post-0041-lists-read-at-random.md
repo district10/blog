@@ -100,6 +100,18 @@ But I want to say:
 
 ![forge][forge-pic]
 
+我当然不是说的炼钢这个 forge，就跟中文的“打造”一样，它有培养的意思。
+
+[消失的爱人 (Gone Girl)](http://movie.douban.com/subject/21318488/) ^^（01:11:33）^^，Amy：
+
+> But I made him smarter. Sharper.
+>
+> I inspired him to rise to my level.
+>
+> I forged the man of my dreams.
+
+话说我想知道易卜生（Henrik Johan Ibsen）的“你最大的责任是把你这块材料铸造成器”是不是用的这个词，但是没有查到。
+
 [forge-google]: http://www.google.com.sg/search?q=forge&newwindow=1&source=lnms&tbm=isch&sa=X&ei=0cj0UsrUIomkige89oCwCA&ved=0CAgQ_AUoAg&biw=1364&bih=652
 [forge-pic]: http://gnat-tang-shared-image.qiniudn.com/2014/05/forge.jpg
 
