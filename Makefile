@@ -16,6 +16,9 @@ PANDOC_NORMAL  = $(PANDOC) -S -s --ascii --toc --mathjax -c main.css -A $(PARTS)
 PANDOC_WITHBIB = $(PANDOC_NORMAL) --bibliography
 
 # posts
+POST_0054_INS = $(PIDIR)/post-0054-get-things-done.md
+POST_0054_OUT = $(PODIR)/post-0054-get-things-done.html
+
 POST_0051_INS = $(PIDIR)/post-0051-spatial-gis.bib $(PIDIR)/post-0051-spatial-gis.md
 POST_0051_OUT = $(PODIR)/post-0051-spatial-gis.html
 POST_0050_INS = $(PIDIR)/post-0050-gis-overall.bib $(PIDIR)/post-0050-gis-overall.md
@@ -138,6 +141,7 @@ $(PODIR)/post-0050-gis-overall.bib \
 $(PODIR)/post-0050-gis-overall.md \
 
 HTML = \
+$(POST_0054_OUT) \
 $(POST_0051_OUT) \
 $(POST_0050_OUT) \
 $(POST_0049_OUT) \
@@ -207,6 +211,9 @@ $(POST_NOTES_O): $(POST_NOTES)
 	$(PANDOC_NORMAL) $^ -o $@
 
 # posts
+$(POST_0054_OUT): $(POST_0054_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+
 $(POST_0051_OUT): $(POST_0051_INS)
 	$(PANDOC_WITHBIB) $^ -o $@
 $(POST_0050_OUT): $(POST_0050_INS)

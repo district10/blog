@@ -348,18 +348,23 @@ Hash Tag^[其实在 weibo/twitter 上才叫 hash tag，这里或许应该叫 sec
 
 还有 C++
 
-```c
-fseek( ifp, 0, SEEK_END );
-size_t len = ftell( ifp );
-fprintf( stdout, "--Parsed %d points.\n", len ); 
+```c++
+void Twin::flipLeftRight()
+{
+    if ( !valid ) { return; }
+    oxo();
+    cv::flip( m[src()], m[dst()], 1 );
+    log += "-flipLeftRight";
+}
 ```
 
 可以有行号：
 
-~~~~ {#mycode .haskell .numberLines startFrom="100"}
-qsort []     = []
-qsort (x:xs) = qsort (filter (< x) xs) ++ [x] ++
-               qsort (filter (>= x) xs)
+~~~~ {#mycode .python .numberLines startFrom="100"}
+def widthHeightDividedBy(image, divisor):
+    """Return an image's dimensions, divided by a value."""
+    h, w = image.shape[:2]
+    return (w/divisor, h/divisor)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 看 [这段代码](#mycode) 高亮得多好啊！

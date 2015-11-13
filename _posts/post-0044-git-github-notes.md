@@ -288,3 +288,9 @@ git push
 [new-repo-guide]: https://github.com/whudoc/github-guide/blob/master/%E6%96%B0%E5%BB%BA-Repo.md
 [markdown]: http://jianshu.io/p/7bd23251da0a
 [ansi-utf8]:  http://whudoc.qiniudn.com/github-guide/img/ansi-utf8.png
+
+---
+
+Refs
+
+#. [whudoc/github-guide](https://github.com/whudoc/github-guide)

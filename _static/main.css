@@ -37,6 +37,7 @@ p {
 code {
     font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, STXihei, Heiti, sans-serif;
     color: #d14;
+    text-decoration: none;
 }
 
 p code {
@@ -120,7 +121,14 @@ h4 {
 h5, h6 {
     border-left: 1px dotted white;
     font-size: 70%;
-    background: #009f5d;
+}
+
+h5 {
+    background: #8cc540;
+}
+
+h6 {
+    background: #019fde;
 }
 
 caption {

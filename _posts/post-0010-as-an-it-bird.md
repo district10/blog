@@ -5,7 +5,7 @@
 我是一只 IT 小小鸟
 ==================
 
-![it-birds-pic](http://gnat-tang-shared-image.qiniudn.com/pictures/it-birds.png) 
+![我是一只 IT 小小鸟](http://gnat-tang-shared-image.qiniudn.com/pictures/it-birds.png) 
 
 读后感
 ------
@@ -22,7 +22,9 @@
 摘要
 ----
 
-### 蒋宇东 (1986) [blog][jiangyudong-blog]
+### 蒋宇东 (1986)
+
+[blog][jiangyudong-blog]
 
 * 学校的教育不合理，不要被牵着鼻子走。
 * 自学算法，逃课追求真正的知识。
@@ -31,7 +33,9 @@
 
 [jiangyudong-blog]: http://blog.csdn.net/NewNebuladream/
 
-### 居振梁 (1987) [blog][juzhenliang]
+### 居振梁 (1987)
+
+[blog][juzhenliang]
 
 * 与师为友，爱你所爱。
 * [大学新逃课族][class-avoider]。
@@ -73,7 +77,9 @@
 
 [road-not-walked-on]: http://www.douban.com/note/26422795/
 
-### 辜新星 (1983) [blog][guxinxing]
+### 辜新星 (1983)
+
+[blog][guxinxing]
 
 * 北大计算机系。
 * 坚持手敲代码。
@@ -83,7 +89,9 @@
 [guxinxing]: http://guxinxing.blogbus.com/
 [houjie]: http://jjhou.boolan.com/
 
-### 刘未鹏 (1984) [blog][liuweipeng]
+### 刘未鹏 (1984)
+
+[blog][liuweipeng]
 
 * 数学，C++。
 * 写作，写博客：C++ 的罗浮宫。
@@ -120,7 +128,9 @@
 * 2005: 论坛报名参加翻译 Ajax in Action。
 * 我们还有机会。
 
-### 庄表伟 (1976) [blog][zhuangbiaowei]
+### 庄表伟 (1976)
+
+[blog][zhuangbiaowei]
 
 * 10 岁，认准计算机。
 * [Thinking in Java][thinking-in-java]，[Java 与模式][java-model]，[重构][refactoring]。
@@ -177,7 +187,9 @@
 * 就是要做 DBA，终于如愿。
 * 阿里 DBA team。
 
-### [林健 (1985)][linjian]
+### 林健 (1985)
+
+[blog][linjian]
 
 * 电脑高手到学会思考。
 * 师傅领进门，修行靠个人。
@@ -187,7 +199,9 @@
 
 [linjian]: http://linjian.org/
 
-### 高昂 (1982) [blog][gaoang]
+### 高昂 (1982)
+
+[blog][gaoang]
 
 * 乐于动笔，喜欢记录。
 * 专业 GIS：搭建技术博客，总结思考。
@@ -199,7 +213,9 @@
 
 [gaoang]: http://www.gaoang.com/
 
-### 徐宥 (1984) [blog][yuyou]
+### 徐宥 (1984)
+
+[blog][yuyou]
 
 * 数理化。
 * 极端自负，极度自卑。
