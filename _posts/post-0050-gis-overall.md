@@ -5,7 +5,7 @@
 GIS 理论与技术 -- 作业 2：GIS 研究综述
 ======================================
 
-> 这篇文章展示了如何用 bib 文件插入引用文献：
+> 这篇文章展示了如何用 bib 文件插入参考文献：
 >
 > * md 文件见 [post-0050-gis-overall.md](post-0050-gis-overall.md)
 > * bib 文件见 [post-0050-gis-overall.bib](post-0050-gis-overall.bib)。
