@@ -138,6 +138,7 @@ $(PODIR)/main.css \
 $(PODIR)/ime.js \
 $(PODIR)/about.html \
 $(PODIR)/404.html \
+$(PODIR)/xiami.html \
 $(PODIR)/cc-80x15.png \
 $(PODIR)/post-0050-gis-overall.bib \
 $(PODIR)/post-0050-gis-overall.md \
