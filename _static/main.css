@@ -25,18 +25,14 @@ div#TOC {
     background: #eee;
     border: solid 1px #ccc;
     margin: 125px 0px 10px 15px;
-/*    
-    width: 240px;
-    background: #fff;
-    float: right;
-    padding: 20px -500px 20px 20px;
-    margin-bottom: 40px;
-    box-shadow: 0 1px 4px #ccc;
-    max-height: 866px;
-    position: fixed;
-    top: 20px;
-    left: 1219.5px;
-    overflow: auto;
+/*
+    position: relative;
+    top: 0;
+    max-width: 250px;
+    border: none;
+    -moz-box-shadow: 0 0px 0px #fff;
+    -webkit-box-shadow: 0 0px 0px #fff;
+    box-shadow: 0 0px 0px #fff;
 */
 }
 
