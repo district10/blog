@@ -8,7 +8,7 @@ PARTS = _parts
 
 # cmds
 PANDOC         = pandoc
-PANDOC_ARGS    = --toc --self-contained
+PANDOC_ARGS    = --toc --self-contained -t html5 
 PANDOC_EXT     = -f markdown+table_captions
 PANDOC_EXTALL  = ignore_line_breaks markdown_github+ascii_identifiers
 PANDOC_PLAIN   = $(PANDOC) -S -s --ascii -c main.css -B $(PARTS)/header.html -A $(PARTS)/footer.html
@@ -16,6 +16,9 @@ PANDOC_NORMAL  = $(PANDOC) -S -s --ascii --toc --mathjax -c main.css -A $(PARTS)
 PANDOC_WITHBIB = $(PANDOC_NORMAL) --bibliography
 
 # posts
+POST_0056_INS = $(PIDIR)/post-0056-lms-chunk.md
+POST_0056_OUT = $(PODIR)/post-0056-lms-chunk.html
+
 POST_0054_INS = $(PIDIR)/post-0054-get-things-done.md
 POST_0054_OUT = $(PODIR)/post-0054-get-things-done.html
 
@@ -144,6 +147,7 @@ $(PODIR)/post-0050-gis-overall.bib \
 $(PODIR)/post-0050-gis-overall.md \
 
 HTML = \
+$(POST_0056_OUT) \
 $(POST_0054_OUT) \
 $(POST_0052_OUT) \
 $(POST_0051_OUT) \
@@ -215,6 +219,9 @@ $(POST_NOTES_O): $(POST_NOTES)
 	$(PANDOC_NORMAL) $^ -o $@
 
 # posts
+$(POST_0056_OUT): $(POST_0056_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+
 $(POST_0054_OUT): $(POST_0054_INS)
 	$(PANDOC_NORMAL) $^ -o $@
 

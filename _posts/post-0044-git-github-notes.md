@@ -9,13 +9,15 @@ GitHub 是什么
 -------------
 
 * [GitHub 是怎样一个网站][github-baidu]：一个程序托管网站，一个社会化编程平台（Social Coding）
-* GitHub 使用 Git 版本控制，Git 作为一个版本控制工具有什么特点**：
+* GitHub 使用 Git 版本控制，Git 作为一个版本控制工具有什么特点：
     + Git 是目前世界上最先进的分布式版本控制系统（没有之一）。
  	+ 特点是高端大气上档次！（[廖雪峰语][liaoxuefeng-git]）
-* GitHub 对于程序员的意义**：
+* GitHub 对于程序员的意义：
     + 你要知道 GitHub 被中国的防火长城封锁过几次，在多人联名抗议下才解锁。李开复也发博声援：
-    + ![GitHub is blocked by GFW][github-blocked]
-* GitHub 的竞争对手**：
+
+    ![GitHub is blocked by GFW][github-blocked]
+
+* GitHub 的竞争对手：
     + 国外的 BitBucket，以及
     + 中国的 GitHub 克隆版 GitCafe
 * 现在请注册一个 GitHub 账户（必须的），有账户的请登录
@@ -27,22 +29,24 @@ GitHub 是什么
     + Modified（修改了）
 	+ Staged（提交了）
 	+ Committed（提交确认了）。
-* Git 命令分为三个部分：`git` + `命令` + `参数`等，不如：
+* Git 命令分为三个部分：`git`{.bash} + `命令` + `参数` 等，比如：
     + `git clone url`{.bash} 从 url（需要合法的 git repo 才行） 克隆一个副本到本地当前目录
-	+ `git commit -m "message"` 把修改提交并记录
+	+ `git commit -m "message"`{.bash} 把修改提交并记录
 * 一个通常的 Git 流程是：
     + `git clone git@github.com:district10/new-repo.git`{.bash}
 	    - 把一个云端 Repo 复制下来
-		- 复制别人的 Repo 用 HTTPS 协议，复制自己的 Repo 用 GIT 协议，直接在本地创建一个 Git Repo 则使用 `git init`
+		- 复制别人的 Repo 用 HTTPS 协议，复制自己的 Repo 用 GIT 协议，
+          直接在本地创建一个 Git Repo 则使用 `git init`{.bash}
 		- 一个 Git Repo 有一些文档来记录变化，他们是隐藏的。
     + `git add -A`{.bash}
 	    - 在每次修改后，修改的文档的状态就从 Clean（Committed） 变成 Modified
 		- 使用这个命令把所有内容提交，状态变成 Staged
-    + `git commit -m "提交记录"`
-	    - 把修改 commit，比如：”修正了一个拼写错误“（Fixed Typo），但这时候只是本地修改好了，云端（GitHub 端）没有同步。
+    + `git commit -m "提交记录"`{.bash}
+	    - 把修改 commit，比如：”修正了一个拼写错误“（Fixed Typo），
+        但这时候只是本地修改好了，云端（GitHub 端）没有同步。
     + `git push`
 	    - 把修改同步到云端，最简单地方式就是 `git push`{.bash}
-		- 多人合作的时候，每次先把本地修改 Commit，再 Push 到 云端。再把别人的修改 `git pull` 下来。
+		- 多人合作的时候，每次先把本地修改 Commit，再 Push 到 云端。再把别人的修改 `git pull`{.bash} 下来。
 
 ### 使用 GitHub 的前提以及一些常识
 
@@ -53,7 +57,8 @@ GitHub 是什么
     + GitHub 上的 README 文档很多都是用 Markdown 写成（以 `.md` 结尾的文件）
 	+ 学习 Markdown 可参考我的博客：[Markdown 简明教程][markdown]
 * 文档保存时编码请使用 【UTF-8 无 BOM 格式编码】而不是 Windows 默认的 【ANSI 格式编码】，在 Notepad++ 里如下设置：
-    + ![Notepad++ & UTF-8 encoding][ansi-utf8]
+
+    ![Notepad++ & UTF-8 encoding][ansi-utf8]
 
 GitHub 教程：Step by Step
 -------------------------
@@ -112,9 +117,9 @@ git config --global user.email "gnat_tang@yeah.net"
 
 【3】 克隆一个 Github Repository
 
-克隆（Clone）就是把代码复制到本地，到 GitHub 上找个 Repo，比如：https://github.com/alols/xcape
+克隆（Clone）就是把代码复制到本地，到 GitHub 上找个 Repo，比如：<https://github.com/alols/xcape>
 
-在 Git Bash 里输入 `git clone https://github.com/alols/xcape`，回车，就有：
+在 Git Bash 里输入 `git clone https://github.com/alols/xcape`{.bash}，回车，就有：
 
 ![git clone][git-clone-https]
 
@@ -127,7 +132,7 @@ git config --global user.email "gnat_tang@yeah.net"
 
 输入 `ssh-keygen.exe -t rsa -C "your-email"`{.bash} （换成你的邮箱），回车，有：
 
-![ssh-keygen][gen-ssh-a]
+![`ssh-keygen`{.bash}][gen-ssh-a]
 
 等待你输入目录，直接使用默认的，回车即可；
 
@@ -155,7 +160,7 @@ git config --global user.email "gnat_tang@yeah.net"
 
 Geek 的编辑器有 Emacs，Vim，但是推荐大家使用 Notepad++（尤其是在 Windows 上），这个编辑器简单好用。而且有便携版，解压即可使用。
 
-这里提供一个 Portable 版本下载：http://download.tuxfamily.org/notepadplus/6.6.8/npp.6.6.8.bin.7z
+这里提供一个 Portable 版本下载：<http://download.tuxfamily.org/notepadplus/6.6.8/npp.6.6.8.bin.7z>
 
 [git-scm]: http://www.git-scm.com/downloads
 [git-archive]: http://gnat.qiniudn.com/Git-1.9.5-preview20150319.exe
@@ -175,13 +180,13 @@ Geek 的编辑器有 Emacs，Vim，但是推荐大家使用 Notepad++（尤其�
 在 GitHub 上新建一个 Repo
 -------------------------
 
-### 【1】
+【1】
 
-首先去 GitHub 主页 https://github.com ，在右上角点击 New Repository
+首先去 GitHub 主页 <https://github.com> ，在右上角点击 `New Repository`
 
 ![new repository][new-repo-a]
 
-### 【2】
+【2】
 
 然后输入新 Repo 的名称，输入 Repo 说明，选择 Public（Private 要收费），
 勾选生成 `README` 文档，选择一个 `.gitignore` 文件（也可不选），
@@ -193,7 +198,7 @@ Geek 的编辑器有 Emacs，Vim，但是推荐大家使用 Notepad++（尤其�
 
 ![][new-repo-c]
 
-### 【3】
+【3】
 
 然后把这个 Repo 用 Git 克隆下来，先到如上图右下角，复制 SSH 链接：
 
@@ -207,23 +212,23 @@ git clone git@github.com:district10/new-repo.git
 
 如图：
 
-![][new-repo-d]
+![右键打开 Git Bash][new-repo-d]
 
-![][new-repo-e]
+![`git clone git@github.com:district10/new-repo.git`{.bash}][new-repo-e]
 
 克隆好后当前文件夹下就有了 `new-repo` 文件夹，如图：
 
 ![][new-repo-f]
 
-### 【4】
+【4】
 
 进入文件夹，用 Notepad++ 打开 `README.md` 文件：
 
-![][new-repo-g]
+![open README.md][new-repo-g]
 
 简单地修改，添加一行 “【这是新入的一行。来自 Notepad++】”：
 
-![][new-repo-h]
+![edit README.md][new-repo-h]
 
 然后在 `new-repo` 文件夹打开 Git Bash 提交修改并 Push 到 GitHub：
 
@@ -231,9 +236,9 @@ git clone git@github.com:district10/new-repo.git
 
 再到自己的 GitHub 上，查看，发现修改已经提交上去了：
 
-![][new-repo-j]
+![save & add && commit && push][new-repo-j]
 
-### 【完】
+【完】
 
 这就是在 GitHub 上新建一个 Repo 的过程。以后修改之后，再
 
@@ -263,6 +268,8 @@ git push
 ### 为什么要学习 Git
 
 * XDite 的博文：[有效提升大學生競爭力 -- 用 Git Pull Request 收作業][git-homework]
+* 合作（哪怕最开始是打打杂）：
+  [added an empty line before quotation by district10 · Pull Request #20 · sparanoid/chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines/pull/20)
 
 ### 文档撰写与 Coding 规范
 
@@ -288,6 +295,19 @@ git push
 [new-repo-guide]: https://github.com/whudoc/github-guide/blob/master/%E6%96%B0%E5%BB%BA-Repo.md
 [markdown]: http://jianshu.io/p/7bd23251da0a
 [ansi-utf8]:  http://whudoc.qiniudn.com/github-guide/img/ansi-utf8.png
+
+---
+
+一些笔记
+--------
+
+[如何在 GitHub 上 Contributing（贡献），一个简单流程：](https://github.com/arvida/emoji-cheat-sheet.com/#contributing)
+
+:   #. Fork it!
+    #. Create your feature branch: `git checkout -b my-new-feature`{.bash}
+    #. Commit your changes: `git commit -am 'Add some feature'`{.bash}
+    #. Push to the branch: `git push origin my-new-feature`{.bash}
+    #. Submit a pull request and enjoy! :D
 
 ---
 

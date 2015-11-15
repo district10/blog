@@ -25,6 +25,19 @@ div#TOC {
     background: #eee;
     border: solid 1px #ccc;
     margin: 125px 0px 10px 15px;
+/*    
+    width: 240px;
+    background: #fff;
+    float: right;
+    padding: 20px -500px 20px 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 1px 4px #ccc;
+    max-height: 866px;
+    position: fixed;
+    top: 20px;
+    left: 1219.5px;
+    overflow: auto;
+*/
 }
 
 p {
@@ -45,17 +58,24 @@ p code {
     white-space: nowrap;
     background-color: #f7f7f9;
     border: 1px solid #e1e1e8;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 
 kbd {
     padding-left: .25rem;
     padding-right: .25rem;
     font-family: sans-serif;
+/*
+    box-shadow: 1px 1px silver;
+    background-color: #f0f0f0;
     border: solid 1px #c2c2c2;
     border-radius: 4px;
-    background-color: #f0f0f0;
-    box-shadow: 1px 1px silver;
+*/
+    background: #eee;
+    border-width: 2px 4px 5px 3px;
+    border-style: solid;
+    border-color: #ccc #aaa #888 #bbb;
+
 }
 
 pre {
@@ -76,9 +96,9 @@ code.url {
     box-shadow: none;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a { 
+h1 a, h2 a, h3 a, h4 a, h5 a {
     text-decoration: none;
-    color: blue; 
+    color: blue;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -151,12 +171,21 @@ caption {
     clear: both;
     display: inline-block;
     text-align: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, .85);
     margin: auto;
-    left: 5%;
-    right: 5%;
+    left: 22%;
+    right: 22%;
     bottom: 0px;
     font-variant:small-caps;
+    
+    border-width: 1px 0px 0px 0px;
+    border-style: solid;
+    border-color: gray;
+}
+
+#footer:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transition: all 0.5s ease-in-out;
 }
 
 #footer a {
@@ -168,14 +197,14 @@ caption {
 }
 
 h1.title {
-    // visibility: hidden; 
+    // visibility: hidden;
     display: none;
 }
 
 h2.author {
     display: none;
 }
- 
+
 h3.date {
     display: none;
 }
@@ -188,13 +217,14 @@ div.slogan {
 }
 
 blockquote {
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    background-color: whitesmoke;
-    border-left: 4px solid #999999;
     word-break: break-word;
     font-weight: 100;
     line-height: 30px;
+    margin: 0 25px 25px;
+    padding: 15px 15px;
+    border-left: 10px solid #eee;
+    border-color: #D6DBDF;
+    background: none repeat scroll 0 0 rgba(102,128,153,.05);
 }
 
 table {
@@ -258,6 +288,11 @@ tr.head {
     color: #999999;
     font-style: italic;
     line-height: 1.7;
+}
+
+.figure .caption code {
+    border: none;
+    background-color: inherit;
 }
 
 #buckets div {

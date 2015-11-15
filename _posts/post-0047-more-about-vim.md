@@ -200,7 +200,7 @@ Refs
 
 不像 Emacs，Vim 几乎不需要配置就能很好地使用。但也有一个地方，确实需要配置：
 
-![](http://imglf1.ph.126.net/ALp0fEVKSSFbCDbuUiWJpg==/2550444763993350874.png)
+![](http://gnat.qiniudn.com/pics/vim-default.png)
 
 除此之外，Vim 很完美。
 
