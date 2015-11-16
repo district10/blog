@@ -16,6 +16,8 @@ PANDOC_NORMAL  = $(PANDOC) -S -s --ascii --toc --mathjax -c main.css -A $(PARTS)
 PANDOC_WITHBIB = $(PANDOC_NORMAL) --bibliography
 
 # posts
+POST_0058_INS = $(PIDIR)/post-0058-script-boy.md
+POST_0058_OUT = $(PODIR)/post-0058-script-boy.html
 POST_0056_INS = $(PIDIR)/post-0056-lms-chunk.md
 POST_0056_OUT = $(PODIR)/post-0056-lms-chunk.html
 
@@ -139,14 +141,19 @@ $(PODIR)/robots.txt \
 $(PODIR)/favicon.ico \
 $(PODIR)/main.css \
 $(PODIR)/ime.js \
+$(PODIR)/douban.html \
 $(PODIR)/about.html \
-$(PODIR)/404.html \
 $(PODIR)/xiami.html \
+$(PODIR)/404.html \
 $(PODIR)/cc-80x15.png \
 $(PODIR)/post-0050-gis-overall.bib \
 $(PODIR)/post-0050-gis-overall.md \
+$(PODIR)/hello.js \
+$(PODIR)/doubanBook.js \
+$(PODIR)/doubanMovie.js \
 
 HTML = \
+$(POST_0058_OUT) \
 $(POST_0056_OUT) \
 $(POST_0054_OUT) \
 $(POST_0052_OUT) \
@@ -219,6 +226,8 @@ $(POST_NOTES_O): $(POST_NOTES)
 	$(PANDOC_NORMAL) $^ -o $@
 
 # posts
+$(POST_0058_OUT): $(POST_0058_INS)
+	$(PANDOC_NORMAL) $^ -o $@
 $(POST_0056_OUT): $(POST_0056_INS)
 	$(PANDOC_NORMAL) $^ -o $@
 
@@ -340,6 +349,8 @@ $(PODIR)/%.ico: $(SDIR)/%.ico
 $(PODIR)/%.css: $(SDIR)/%.css
 	cp $< $@
 $(PODIR)/%.js: $(SDIR)/%.js
+	cp $< $@
+$(PODIR)/%.js: $(SDIR)/utils/%.js
 	cp $< $@
 $(PODIR)/%.png: $(SDIR)/%.png
 	cp $< $@

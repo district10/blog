@@ -43,6 +43,10 @@ p {
     margin-top: 20px;
 }
 
+h2 + p:first-letter {
+    font-size: 145%;
+}
+
 code {
     font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, STXihei, Heiti, sans-serif;
     color: #d14;
@@ -188,8 +192,17 @@ caption {
     text-decoration: none;
 }
 
+.footnoteRef {
+    color: violet;
+    text-decoration: none;
+}
+
 .footnotes ol li p {
     line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
 }
 
 h1.title {
@@ -248,14 +261,7 @@ tr.head {
     display: block;
 }
 
-.figure img {
-    display: block;
-    max-width: 95%;
-    width: auto\9;
-    height: auto;
-    margin: auto;
-    vertical-align: middle;
-    text-align: center;
+img {
     -webkit-transition: -webkit-transform 0.4s ease;
     -webkit-transition-property: -webkit-transform;
     -webkit-transition-duration: 0.4s;
@@ -264,12 +270,29 @@ tr.head {
     -moz-transition: -moz-transform 0.4s ease;
     -o-transition: -o-transform 0.4s ease;
     transition: transform 0.4s ease;
+    transition: all 0.5s ease-in-out;
     -webkit-transform-style: preserve-3d;
     -transform-style: preserve-3d;
+    z-index: 1;
+}
+
+.figure img {
+    display: block;
+    max-width: 95%;
+    width: auto\9;
+    height: auto;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .figure img:hover {
     -webkit-transform: scale(1.05);
+}
+
+p a img:hover {
+    -webkit-transform: scale(1.35);
+    border: 3px solid rgba(155, 155, 155, 0.5);
 }
 
 .figure .caption {
@@ -299,11 +322,11 @@ tr.head {
     background-color: #f0f0f0;
     box-shadow: 1px 1px silver;
     font-variant:small-caps;
+    transition: all 0.5s ease-in-out;
 }
 
 #buckets div:hover {
     background-color: white;
-    transition: all 0.5s ease-in-out;
 }
 
 #buckets div a {

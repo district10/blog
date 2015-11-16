@@ -5,18 +5,19 @@
 More About Vim | Vim 杂记
 =========================
 
-接触 Linux 后不得不面对的选择是 `Emacs 还是 Vim？`，
-那时我选了 Emacs，后来我皈依了 Vim。
+接触 Linux 后不得不面对的选择是 `Emacs 还是 Vim？`，那时我选了 Emacs。
+
+后来我皈依了 Vim。
 
 正如 Dvorak 从设计上完虐 QWERTY，Vim 从设计上也超越了 Emacs。[^vimacs]
 尤其一点，Vim 不占用 <kbd>Control</kbd>，所以一般不会和其他体系冲突，所以所以
 它能在 Visual Studio 里配合 Visual Studio、在 Qt Creator 里配合 Qt Creator，
-在浏览器里配合一般的文本编辑框[^ace]。
+在浏览器里配合一般的文本编辑框。[^ace]
 
 下面是几篇 Vim 文章。
 
 [^vimacs]: 当然，还谈不上完虐。
-[^ace]: 如果你不知道 ACE 编辑器，可以去查查。
+[^ace]: 如果你不知道 ACE 编辑器，可以去查查。它支持浏览器中使用 Vim 编辑模式。
 
 补补不够用的 Vim[^morevim]
 --------------------------
@@ -30,14 +31,14 @@ More About Vim | Vim 杂记
 一下就 2 了：没有 Emacs、Geany、或者 Gedit，只有 vi……
 又加上我用 [Neo-extended DVPE][dvpe] 键盘布局，居然没法删除字符！！！
 
-最后只能用 `echo`{.bash}，`>>`{.bash} 追加的方式给
+最后只能用 `echo`{.bash}、`>>`{.bash} 追加的方式给
 `sources.list` 添加了几个源。
 
 看来，只知道 Vim 的三个状态是不够的。
 
 [dvpe]: https://github.com/district10/neo_keyboard_layout
 
-那就多学一点，Here is a cheat sheet, [**vim-brain**][cheatsheet]
+那就多学一点，Here is a cheat sheet：[**vim-brain**][cheatsheet]
 
 * `ESC`
 * Navigation: `h`, `j`, `k`, `l`
@@ -46,7 +47,7 @@ More About Vim | Vim 杂记
 * `y`, `yy`: yank, yank line
 * `p`, `P`: paste after, paste before
 * `r`: replace current char
-* `u`, `Ctrl + r`: undo, redo
+* `u`, <kbd>Ctrl</kbd> + <kbd>r</kbd>: undo, redo
 * `~`, `g~iw`, `gUiw`, `guiw`: switch case
 
 Vim 补习完毕，目测三年之内够用了。(我这是在黑 vim 吗？）
@@ -63,7 +64,7 @@ Vim 拾遗
 * `ESC` (stop insert)
 * `:` (command)
 * `u` (undo)
-* `<c-r>` (undo undo)
+* `<c-r>` (redo)
 * `:wq`, `:q`, `:cq`, `q!`, `ZZ`, `ZQ` (quit)
 * `:e` (rewind)
 
@@ -78,10 +79,11 @@ Vim 拾遗
 * `x` (delete a char)
 * `p` (paste)
 
-### `W`, `B`
+### `W`, `B`, `E`
 
 * `w` (word, forword word)
 * `b` (word, backword word)
+* `e` (word, forword to end of word)
 
 ### `F`, `T`, `I`, `;`, `.`
 

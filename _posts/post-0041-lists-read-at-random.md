@@ -172,6 +172,8 @@ by John Resig. It is currently developed by a team of developers led by Dave
 Methvin. Used by **over 80% of the 10,000 most visited websites**, jQuery is
 the most popular JavaScript library in use today.
 
+（感觉自己弄这个博客的时候居然没用 jQuery，既牛逼，又错过了学习它的机会。）
+
 [jQuery]: http://en.wikipedia.org/wiki/Jquery
 
 ### AJAX
@@ -268,6 +270,8 @@ the late 1990s between Netscape Navigator and Microsoft Internet Explorer, as
 well as with that of JavaScript and JScript, the first scripting languages to
 be widely implemented in the layout engines of web browsers.
 
+（这个音发“道穆”，我以前老以为是“杜穆”……）
+
 [dom]: http://en.wikipedia.org/wiki/Document_Object_Model
 
 ### MIME -Multipurpose Internet Mail Extensions
@@ -357,6 +361,8 @@ I'll quit and move on to a place that can once again make me feel like piece of 
 
 This strategy has worked out really well for me during my career.
 
+（这个观点很有意思。）
+
 [always-be-the-worst-musician-in-a-band]: http://www.quora.com/Computer-Programmers/What-does-it-feel-like-to-be-an-average-programmer-among-very-talented-ones
 
 ### 功率放大器简称功放
@@ -389,6 +395,8 @@ when two characters are having a discussion and will usually follow an
 establishing shot which helps the audience place the characters in their
 setting. It is an example of a camera angle.
 
+（我就说我比小璇璇知识丰富多了～）
+
 [ots]: http://en.wikipedia.org/wiki/Over_the_shoulder_shot
 [ots-pic]: http://gnat-tang-shared-image.qiniudn.com/pictures/over-the-shoulder-shot.png
 
@@ -416,6 +424,8 @@ could also translate this (depending on context, select as many options as
 appropriate) by with the (exceptional/gracefully
 acknowledged/reciprocated/just-passing-by/I-just-so-love-this-guy/requested-by-the-management/i-lost-a-stupid-bet/this-is-my-brother-in-law)
 participation of to use a latin-derived word.  
+
+（这个在唱片里很多，*feat.* edition，常见的还有 "acoustic", live）
 
 [feat]: http://music.stackexchange.com/questions/2944/what-exactly-does-feat-means
 
@@ -449,6 +459,10 @@ landscapes that are otherwise settled and farmed.
 [versatile]
 
 :   多才多艺的；通用的，万能的；多面手的
+
+    这个单词在英文里很常用。
+    
+    偶然看到，双性恋（可“攻”可“受”那种）的人，也常被戏称为“versatile”。
 
 ### excerpt
 
@@ -609,6 +623,8 @@ conspiracy(共谋) theory. On a bad day, a meme is a virus.
 
     * John: I have mad chafing on my balls.
     * Frank: uh, TMI
+    
+    上面的例子太生动了，应该是我从 UrbanDictionary 上找的。
 
 see also [**Three Mile Island** accident, March 28, 1979][threemileisland]
 
@@ -639,6 +655,8 @@ avalanche.
 animistic
 
 :    adj. 精灵论的；万物有灵论的
+
+    总让我想到《万物有灵且有美》。
 
 [animistic]: http://dict.youdao.com/search?le=eng&q=animistic&keyfrom=dict.top
 
@@ -712,6 +730,8 @@ paper-and-pencil game for two players, X and O, who take turns marking the
 spaces in a 3×3 grid. The player who succeeds in placing three respective marks
 in a horizontal, vertical, or diagonal row wins the game.
 
+这游戏家喻户晓（除了中国），但实际上很无聊。明显是大人欺负小孩子的游戏。
+
 [tictactoe]: http://en.wikipedia.org/wiki/Tic-tac-toe
 [ttt_img]: http://upload.wikimedia.org/wikipedia/commons/a/ae/Tic_Tac_Toe.gif
 
@@ -737,6 +757,8 @@ Wacom(和冠): a Brand
 For nearly a century, Grigory Rasputin, spiritual advisor to Russia's last Tsar
 and Tsarina, has been unjustly maligned simply because history is written by
 the politically...
+
+长得有点个性。
 
 [Rasputin]: http://en.wikipedia.org/wiki/Grigori_Rasputin
 [rasputin_img]: http://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/G._Rasputin.JPG/220px-G._Rasputin.JPG
@@ -781,6 +803,8 @@ The term **[Wheel]** was adopted by Unix users in the 1980s, due to the movement
 
 :   A person **with a great deal of power or influence**, especially a high-ranking person in an organization, e.g. "She's a big wheel at IBM."
 
+鉴于 wheel（轮子） 还有这个意思，以后我们把“造轮子”当成“造神”的双关语。
+
 [Wheel]: http://en.wikipedia.org/wiki/Wheel_(Unix_term)
 [bigwheel]: http://en.wiktionary.org/wiki/big_wheel
 
@@ -795,6 +819,9 @@ personification. The word hymn derives from Greek ὕμνος (hymnos), which me
 "**a song of praise**". Collections of hymns are known as hymnals or hymn
 books.
 
+RMS 写的自由软件之歌（The Free Software Song）就是一首 Hymn，而
+RMS 则是 Saint in the Church of Emacs，ST. IGNUCIUS。
+
 [hymn]: http://en.wikipedia.org/wiki/Hymn
 [hymn-pic]: http://gnat-tang-shared-image.qiniudn.com/201404-hymn.png
 
@@ -808,6 +835,8 @@ food sources that may include **plants**, **animals**, **algae** and **fungi**.
 Omnivores often are **opportunistic, general feeders** which lack **carnivore**
 or **herbivore** specializations for acquiring or processing food, but which
 nevertheless consume both animal protein and vegetation.
+
+RMS 说自己是个什么都吃的人，用的就是 omnivore 这个词。
 
 [omnivore]: http://en.wikipedia.org/wiki/Omnivore
 
@@ -856,11 +885,19 @@ in theories of grammar. **
 (floatp 3.0)  ; returns t
 ```
 
+“谓词演算”的“谓词”就是这个 predicate。
+很多黑客喜欢用 "you-want-black-coffee-p" 这种蛋疼的句式来表一般疑问。
+另一面，很多中国人老想着用流畅的语法来表达自己，其实这中 hyphen seperated 形容词
+也很常用。很切可以说得很长。而且这种句子用英文说起来很有意思，比如：
+我是一个 天天吃-大盘鸡-从不厌烦 的人。
+
 [predicate]: http://en.wikipedia.org/wiki/Predicate_(grammar)
 
 ### IMO - In My Opinion
 
 [as I see it and in my opinion; in my view](http://idioms.thefreedictionary.com/In+My+Opinion)
+
+总觉得这个词，有卖萌嫌疑。
 
 ### SCM - Software configuration management
 
@@ -895,6 +932,8 @@ affects oneself.
 
 see also: [brower war][brower-war]
 
+Vim 是最棒的。Emacs 其次。其它不需要排名次。
+
 [editor-war]: http://en.wikipedia.org/wiki/Editor_war
 [brower-war]: http://en.wikipedia.org/wiki/Browser_war
 [rivalry]: http://dict.youdao.com/search?q=rivalry&keyfrom=dict.index "竞争"
@@ -902,14 +941,14 @@ see also: [brower war][brower-war]
 
 ### Shebang
 
-在计算机科学中，[Shebang][shebang]（也称为Hashbang）是一个由井号和叹号构成的
+在计算机科学中，[Shebang][shebang]（也称为 Hashbang）是一个由井号和叹号构成的
 字符串行（`#!`），其出现在文本文件的第一行的前两个字符。 在文件中存在 Shebang 的情况下，
-类Unix操作系统的程序载入器会分析Shebang后的内容，将这些内容作为解释器指令，
-并调用该指令，并将载有Shebang的文件路径作为该解释器的参数。
+类 Unix 操作系统的程序载入器会分析 Shebang 后的内容，将这些内容作为解释器指令，
+并调用该指令，并将载有 Shebang 的文件路径作为该解释器的参数。
 
 Shebang 的名字来自于 SHArp 和 bang，或 haSH bang 的缩写，指代 Shebang 中 `#!` 两个符号
 的典型 Unix 名称。 Unix 术语中，井号通常称为 sharp，hash 或 mesh；而叹号则常常称为bang。
-也有看法认为，shebang 名字中的 sh 来自于默认 shell Bourne shell 的名称，sh，因为常常使用shebang调用之。
+也有看法认为，shebang 名字中的 sh 来自于默认 shell Bourne shell 的名称，sh，因为常常使用 shebang 调用之。
 
 [shebang]: http://zh.wikipedia.org/wiki/Shebang
 
@@ -939,7 +978,7 @@ honor.
 [jr]: http://en.wikipedia.org/wiki/JR_(disambiguation)
 [esquire]: http://dict.youdao.com/search?le=eng&q=Esquire&keyfrom=dict.top "先生；绅士"
 
-### post nominal  letters
+### post nominal letters
 
 [Post-nominal letters][post-nominal-letters], also called **post-nominal
 [initials][initials]**, **post-nominal titles**, or
@@ -968,6 +1007,8 @@ experience as created or developed without or contrary to a regulation. When
 discussing a legal situation, de jure designates what the law says, while de
 facto designates action of what happens in practice. It is analogous and
 similar to the expressions "for all intents and purposes" or "in fact".
+
+这个词很常见。（是“实际中的主流”的意思？感觉和一个词弄混了。）
 
 [defacto]: http://en.wikipedia.org/wiki/De_facto 
 
@@ -1117,6 +1158,8 @@ his reflection and fell in love with it, not realizing it was merely an
 image**. Unable to leave the beauty of his reflection, Narcissus died.
 Narcissus is the origin of the term **narcissism, a fixation with oneself**.
 
+自恋得停不下来了。
+
 [narcissus]: http://en.wikipedia.org/wiki/Narcissus_(mythology)
 [narcissus-pic]: http://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Narcissus-Caravaggio_%281594-96%29_edited.jpg/220px-Narcissus-Caravaggio_%281594-96%29_edited.jpg
 
@@ -1176,8 +1219,8 @@ pictograph, the word emoji literally means "picture" (e) + "character" (moji).
 The characters are used much like ASCII emoticons or kaomoji, but a wider range
 is provided, and the icons are standardized and built into the handsets. 
 
-Although originally only available in Japan,** some emoji character sets have
-been incorporated into Unicode**, allowing them to be used elsewhere as well.
+Although originally only available in Japan, some emoji character sets have
+been incorporated into Unicode, allowing them to be used elsewhere as well.
 As a result, some phones such as the Windows Phone and the iPhone lines allow
 access to the symbols without requiring a Japanese carrier. Emoji have also
 started appearing in emailing services such as Gmail 
@@ -1188,11 +1231,13 @@ started appearing in emailing services such as Gmail
 ### 颜文字
 
 [颜文字][yanwenzi]（日语：颜文字）并不是指有颜色的文字，而是指用文字或各种线条、
-符号等组成的图画，它是**ASCII Art的一部分**。在电脑（以前是打字机）
+符号等组成的图画，它是 **[ASCII Art] 的一部分**。在电脑（以前是打字机）
 用标点符号及英文字弄一些十分简单的面部图案。
 
+[ASCII Art]: post-0009-ascii-art.html
+
 我们现在所说的「颜文字」，一般是指日式颜文字或日本颜文字。“美国人称「颜文字」为"emoticon"
-（emotion icon的简称）。特色是在电脑（以前是打字机）用标点符号及英文字弄一些十分简单的面部图案。
+（emotion icon 的简称）。特色是在电脑（以前是打字机）用标点符号及英文字弄一些十分简单的面部图案。
 最常用的是用 `:-)` 来表示笑容及以 `:-(` 代表不开心。用来代表大笑的 `XD` 也极之流行
 （这也是港人最常用的美式颜文字）。
 其它较常用的还有 `:-o`（吃惊）及 `:-p`（伸出舌头，即开玩笑）。因为迁就字式，都是向左倒的不完整表情。
@@ -1228,6 +1273,7 @@ END_TEXT
 Output: `ONE TWO THREE`
 
 ```bash
+# 这个不算，这是 here string
 $ tr a-z A-Z <<< 'one two three'
 ```
 
@@ -1292,8 +1338,8 @@ Commands, being attested as early as 1712
 [知乎][intrusive-thoughts]: 实际上有 intrusive thoughts 的人有很多，包括丘吉尔首相自己也有。
 他无法忍受住在楼上，因为他总是有「忍不住要从阳台跳下去」的想法。
 
-Intrusive thoughts are unwelcome involuntary thoughts, images, or unpleasant
-ideas that may become obsessions, are upsetting or distressing, and can be
+Intrusive thoughts are **unwelcome involuntary** thoughts, images, or unpleasant
+ideas that may become **obsessions**, are upsetting or distressing, and can be
 difficult to manage or eliminate. When they are associated with
 obsessive-compulsive disorder (OCD), depression, body dysmorphic disorder
 (BDD), and sometimes attention-deficit hyperactivity disorder (ADHD), the
@@ -1304,6 +1350,8 @@ eating disorders, or psychosis. Intrusive thoughts, urges, and images are of
 inappropriate things at inappropriate times, and they can be divided into three
 categories: "inappropriate aggressive thoughts, inappropriate sexual thoughts,
 or blasphemous religious thoughts".
+
+我也有个很 horrible 的 intrusive thoughts。
 
 [intrusive-thoughts]: http://www.zhihu.com/question/23848160#answer-5660473
 [intrusive-thoughts-wikipedia]: http://en.wikipedia.org/wiki/Intrusive_thoughts
@@ -1335,7 +1383,7 @@ especially among soldiers.
 如同表情符号失意体前屈（Orz），OGC 后续也延伸出许多变化形式。最常见的如：
 
 * `oec`：代表左撇子在自慰之意象。
-* `O3>C`，代表女性自慰（`3`为胸部、`>`为双手，也作`O8>C`、`OB>C`）。
+* `O3>C`，代表女性自慰（`3` 为胸部、`>` 为双手，也作 `O8>C`、`OB>C`）。
 
 [ogc]: http://zh.wikipedia.org/wiki/OGC_(%E7%AC%A6%E5%8F%B7)
 
@@ -1390,6 +1438,8 @@ Words List 05
 * OP: Opening 即片头曲
 * ED: Ending   即片尾曲
 * [虾米 - 精选动漫 ED 集][ed]
+
+Izumi Sakai 有很多著名的好听的 OP/ED。
 
 [op-ed]: http://bulo.hujiang.com/question/118366/
 [ed]: http://www.xiami.com/song/showcollect/id/13279724
