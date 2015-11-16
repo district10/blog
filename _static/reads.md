@@ -28,3 +28,4 @@
 #. [一个华为员工站在非洲看中国 - 刘植荣的日志 - 网易博客](http://liuzhirong.blog.163.com/blog/static/20038005520151010102041267/?touping)
 #. [Error LNK1123: failure during conversion to COFF: file invalid or corrupt - Fisnik Hasani](http://fisnikhasani.com/error-lnk1123-failure-during-conversion-to-coff-file-invalid-or-corrupt/)
 #. [Relative Memory Access speeds (Lesson 3)](http://www.overbyte.com.au/misc/Lesson3/CacheFun.html)
+#. [一起看片的人 (独立游戏大电影 影评)](http://movie.douban.com/review/5468266/)
