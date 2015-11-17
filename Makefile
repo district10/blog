@@ -5,6 +5,7 @@ PDIR  = _pages
 PIDIR = _posts
 KOANS = _koans
 NOTES = _notes
+READS = _reads
 PARTS = _parts
 
 # cmds
@@ -34,7 +35,6 @@ $(PODIR)/404.html \
 $(PODIR)/about.html \
 $(PODIR)/douban.html \
 $(PODIR)/links.html \
-$(PODIR)/reads.html \
 
 # miscs
 MISCS = \

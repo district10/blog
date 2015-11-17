@@ -6,6 +6,7 @@ tmp/
 _posts/index.md
 _posts/koans.md
 _posts/notes.md
+*.html
 conf.json
 q*.exe
 *.swp
