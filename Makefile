@@ -16,6 +16,13 @@ PANDOC_NORMAL  = $(PANDOC) -S -s --ascii --toc --mathjax -c main.css -A $(PARTS)
 PANDOC_WITHBIB = $(PANDOC_NORMAL) --bibliography
 
 # posts
+POST_0061_INS = $(PIDIR)/post-0061-liuhaiyang-example-code.md
+POST_0061_OUT = $(PODIR)/post-0061-liuhaiyang-example-code.html
+POST_0060_INS = $(PIDIR)/post-0060-coding-style.md
+POST_0060_OUT = $(PODIR)/post-0060-coding-style.html
+
+POST_0059_INS = $(PIDIR)/post-0059-exe-wrapper.md
+POST_0059_OUT = $(PODIR)/post-0059-exe-wrapper.html
 POST_0058_INS = $(PIDIR)/post-0058-script-boy.md
 POST_0058_OUT = $(PODIR)/post-0058-script-boy.html
 POST_0056_INS = $(PIDIR)/post-0056-lms-chunk.md
@@ -153,6 +160,9 @@ $(PODIR)/doubanBook.js \
 $(PODIR)/doubanMovie.js \
 
 HTML = \
+$(POST_0061_OUT) \
+$(POST_0060_OUT) \
+$(POST_0059_OUT) \
 $(POST_0058_OUT) \
 $(POST_0056_OUT) \
 $(POST_0054_OUT) \
@@ -226,6 +236,12 @@ $(POST_NOTES_O): $(POST_NOTES)
 	$(PANDOC_NORMAL) $^ -o $@
 
 # posts
+$(POST_0061_OUT): $(POST_0061_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0060_OUT): $(POST_0060_INS)
+	$(PANDOC_NORMAL) $^ -o $@
+$(POST_0059_OUT): $(POST_0059_INS)
+	$(PANDOC_NORMAL) $^ -o $@
 $(POST_0058_OUT): $(POST_0058_INS)
 	$(PANDOC_NORMAL) $^ -o $@
 $(POST_0056_OUT): $(POST_0056_INS)

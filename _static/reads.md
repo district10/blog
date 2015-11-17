@@ -1,3 +1,4 @@
+#. [Javascript 的前后端统一是个"笑话"吗? - 简书](http://www.jianshu.com/p/5f6637bf15fd)
 #. [巴黎恐袭将改变中东大国角力进程！ - 长微博](http://weibo.com/p/1001603909477744170185)
 #. [关于几个国家的“豆瓣”。](http://www.douban.com/note/347306233/)
 #. [新疆无传奇](http://www.douban.com/note/368694439/?start=0&post=ok#last)

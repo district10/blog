@@ -42,4 +42,9 @@
 
 代码你在 <http://tangzx.qiniudn.com/hello.js> 写好就行。
 
+豆瓣读书和豆瓣电影的两个脚本：
+
+#. <http://tangzx.qiniudn.com/doubanBook.js>
+#. <http://tangzx.qiniudn.com/doubanMovie.js>
+
 这个技能是从 Mendeley 的浏览器插件学得。
