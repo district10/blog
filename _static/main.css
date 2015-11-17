@@ -346,3 +346,7 @@ p a img:hover {
     padding-top: 20px;
     float: right;
 }
+
+.posts li {
+    line-height: 150%;
+}

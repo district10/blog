@@ -169,3 +169,4 @@ MISC
 #. [我的算法学习之路 - Lucida](http://zh.lucida.me/blog/on-learning-algorithms/)
 #. [内核恐慌 — IPN 出品](http://ipn.li/kernelpanic/)
 #. [Teahour.fm](http://teahour.fm/)
+#. [Microsoft Project Oxford Home](https://www.projectoxford.ai/)

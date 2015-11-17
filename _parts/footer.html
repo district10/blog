@@ -14,7 +14,7 @@ var duoshuoQuery = {short_name:"tangzx"};
 		ds.type = 'text/javascript';ds.async = true;
 		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
 		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
+		(document.getElementsByTagName('head')[0]
 		 || document.getElementsByTagName('body')[0]).appendChild(ds);
 	})();
 </script>
@@ -39,15 +39,15 @@ if ( 'index' === basename.substring(0, 5) ) {
     rawPath += filename;
 } else if ( 'koans' ===  basename.substring(0, 5) ) {
     filename = '/_koans';
-    mdPath  += filename; 
+    mdPath  += filename;
     rawPath  = mdPath;
 } else if ( 'notes' === basename.substring(0, 5) ) {
     filename = '/_notes';
-    mdPath  += filename; 
+    mdPath  += filename;
     rawPath  = mdPath;
 } else {
     filename = '/_static/' + basename + '.md';
-    mdPath  += filename; 
+    mdPath  += filename;
     rawPath += filename;
 }
 document.getElementById( 'ghraw'  ).href = rawPath;

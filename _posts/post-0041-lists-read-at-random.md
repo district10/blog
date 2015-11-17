@@ -425,7 +425,7 @@ appropriate) by with the (exceptional/gracefully
 acknowledged/reciprocated/just-passing-by/I-just-so-love-this-guy/requested-by-the-management/i-lost-a-stupid-bet/this-is-my-brother-in-law)
 participation of to use a latin-derived word.  
 
-（这个在唱片里很多，*feat.* edition，常见的还有 "acoustic", live）
+（这个在唱片里很多，*feat.* edition，常见的还有 "acoustic", live, remix）
 
 [feat]: http://music.stackexchange.com/questions/2944/what-exactly-does-feat-means
 

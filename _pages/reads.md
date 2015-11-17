@@ -1,3 +1,4 @@
+#. [Plain Text, Papers, Pandoc](http://kieranhealy.org/blog/archives/2014/01/23/plain-text/)
 #. [Javascript 的前后端统一是个"笑话"吗? - 简书](http://www.jianshu.com/p/5f6637bf15fd)
 #. [巴黎恐袭将改变中东大国角力进程！ - 长微博](http://weibo.com/p/1001603909477744170185)
 #. [关于几个国家的“豆瓣”。](http://www.douban.com/note/347306233/)
@@ -14,7 +15,7 @@
 #. [神级代码编辑器 Sublime Text 全程指南。值得收藏！](http://mp.weixin.qq.com/s?__biz=MjM5OTM0MzIwMQ==&mid=208901553&idx=1&sn=2502e5ddc31b6e5a3f9f163d17bbf932&scene=21#wechat_redirect)
 #. [ES6 In Depth Articles ★ Mozilla Hacks – the Web developer blog](https://hacks.mozilla.org/category/es6-in-depth/)
 #. [「外语杂谈」自学的基本姿势 - 聪明可爱也要好好读书 - 知乎专栏](http://zhuanlan.zhihu.com/phantasmagoria/20097238)
-#. [NB学校的NB课程的NB教材——CSAPP (评论: 深入理解计算机系统)](http://book.douban.com/review/3150951/)
+#. [NB学校的NB课程的NB教材——CSAPP (评论: 深入理解计算机系统)](http://book.douban.com/review/3150951/ )
 #. [正统系作品全列表](http://site.douban.com/139572/widget/notes/6481081/note/195176796/)
 #. [程序八卦：胡子决定编程语言运势 - babybandf的日志 - 网易博客](http://babybandf.blog.163.com/blog/static/619935320105181402989/)
 #. [向程序员推荐AutoHotkey - VC学习 teshorse 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/teshorse/article/details/5753938)

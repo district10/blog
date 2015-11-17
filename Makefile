@@ -1,6 +1,7 @@
 # dirs
 PODIR = publish
 SDIR  = _static
+PDIR  = _pages
 PIDIR = _posts
 KOANS = _koans
 NOTES = _notes
@@ -11,9 +12,34 @@ PANDOC         = pandoc
 PANDOC_ARGS    = --toc --self-contained -t html5 
 PANDOC_EXT     = -f markdown+table_captions
 PANDOC_EXTALL  = ignore_line_breaks markdown_github+ascii_identifiers
-PANDOC_PLAIN   = $(PANDOC) -S -s --ascii -c main.css -B $(PARTS)/header.html -A $(PARTS)/footer.html
-PANDOC_NORMAL  = $(PANDOC) -S -s --ascii --toc --mathjax -c main.css -A $(PARTS)/footer.html --highlight-style pygments $(PANDOC_EXT)
+PANDOC_INDEX   = $(PANDOC) -S -s --ascii -c main.css -A $(PARTS)/footer.html
+PANDOC_NORMAL  = $(PANDOC_INDEX) --toc --mathjax --highlight-style pygments $(PANDOC_EXT)
 PANDOC_WITHBIB = $(PANDOC_NORMAL) --bibliography
+
+# statics
+STATICS = \
+$(PODIR)/cc-80x15.png \
+$(PODIR)/favicon.ico \
+$(PODIR)/main.css \
+$(PODIR)/robots.txt \
+$(PODIR)/xiami.html \
+$(PODIR)/doubanBook.js \
+$(PODIR)/doubanMovie.js \
+$(PODIR)/hello.js \
+$(PODIR)/ime.js \
+
+# pages
+PAGES = \
+$(PODIR)/404.html \
+$(PODIR)/about.html \
+$(PODIR)/douban.html \
+$(PODIR)/links.html \
+$(PODIR)/reads.html \
+
+# miscs
+MISCS = \
+$(PODIR)/post-0050-gis-overall.bib \
+$(PODIR)/post-0050-gis-overall.md \
 
 # posts
 POST_0061_INS = $(PIDIR)/post-0061-liuhaiyang-example-code.md
@@ -142,23 +168,6 @@ POST_INDEX_O  = $(PODIR)/index.html
 POST_KOANS_O  = $(PODIR)/koans.html
 POST_NOTES_O  = $(PODIR)/notes.html
 
-# outs
-STATICS = \
-$(PODIR)/robots.txt \
-$(PODIR)/favicon.ico \
-$(PODIR)/main.css \
-$(PODIR)/ime.js \
-$(PODIR)/douban.html \
-$(PODIR)/about.html \
-$(PODIR)/xiami.html \
-$(PODIR)/404.html \
-$(PODIR)/cc-80x15.png \
-$(PODIR)/post-0050-gis-overall.bib \
-$(PODIR)/post-0050-gis-overall.md \
-$(PODIR)/hello.js \
-$(PODIR)/doubanBook.js \
-$(PODIR)/doubanMovie.js \
-
 HTML = \
 $(POST_0061_OUT) \
 $(POST_0060_OUT) \
@@ -221,15 +230,17 @@ $(POST_0002_OUT) \
 $(POST_0001_OUT) \
 
 # rules
-all: $(HTML) $(STATICS) $(POST_KOANS_O) $(POST_NOTES_O) $(POST_INDEX_O)
+all: $(HTML) $(STATICS) $(PAGES) $(MISCS) $(POST_KOANS_O) $(POST_NOTES_O) $(POST_INDEX_O)
+
 clean:
 	rm -f $(PODIR)/*
+
 deploy:
 	./deploy.sh
 
 # index & koans & notes
 $(POST_INDEX_O): $(POST_INDEX)
-	$(PANDOC_PLAIN) $^ -o $@
+	cat $(PARTS)/header.md $^ $(PARTS)/headez.md | $(PANDOC_INDEX) -o $@
 $(POST_KOANS_O): $(POST_KOANS)
 	$(PANDOC_NORMAL) $^ -o $@
 $(POST_NOTES_O): $(POST_NOTES)
@@ -237,6 +248,7 @@ $(POST_NOTES_O): $(POST_NOTES)
 
 # posts
 $(POST_0061_OUT): $(POST_0061_INS)
+#	cat $^ | $(PANDOC_NORMAL) -o $@
 	$(PANDOC_NORMAL) $^ -o $@
 $(POST_0060_OUT): $(POST_0060_INS)
 	$(PANDOC_NORMAL) $^ -o $@
@@ -355,30 +367,22 @@ $(POST_0002_OUT): $(POST_0002_INS)
 $(POST_0001_OUT): $(POST_0001_INS)
 	$(PANDOC_NORMAL) $^ -o $@
 
-# get back left behinds
-$(PODIR)/%.html: $(PIDIR)/%.md
-	./left_behinds $@ $<
+# pages
+$(PODIR)/%.html: $(PDIR)/%.md
+	$(PANDOC_NORMAL) $^ -o $@
 
 # cp static files
-$(PODIR)/%.ico: $(SDIR)/%.ico
-	cp $< $@
-$(PODIR)/%.css: $(SDIR)/%.css
-	cp $< $@
-$(PODIR)/%.js: $(SDIR)/%.js
-	cp $< $@
-$(PODIR)/%.js: $(SDIR)/utils/%.js
-	cp $< $@
-$(PODIR)/%.png: $(SDIR)/%.png
-	cp $< $@
-$(PODIR)/%.html: $(SDIR)/%.html
-	cp $< $@
-$(PODIR)/%.txt: $(PIDIR)/%.md
-	cp $< $@
 $(PODIR)/%: $(SDIR)/%
+	cp $< $@
+$(PODIR)/%: $(SDIR)/utils/%
+	cp $< $@
+
+# MISC: cp md src file
+$(PODIR)/%.txt: $(PIDIR)/%.md
 	cp $< $@
 $(PODIR)/%: $(PIDIR)/%
 	cp $< $@
 
-# trans static files
-$(PODIR)/%.html: $(SDIR)/%.md
-	$(PANDOC_NORMAL) $^ -o $@
+# get back left behinds
+$(PODIR)/%.html: $(PIDIR)/%.md
+	./left_behinds $@ $<
