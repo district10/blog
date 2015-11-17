@@ -39,9 +39,9 @@
 
 ![Léa Seydoux，《Blue, the Warmest Color》](http://gnat.qiniudn.com/pics/Léa_Seydoux.png)
 
-![Léa Seydoux，《Midnight in Paris》](http://gnat.qiniudn.com/pics/Léa_Seydoux3.png)
+![Léa Seydoux，《Midnight in Paris》[^paris]](http://gnat.qiniudn.com/pics/Léa_Seydoux3.png)
 
-> [现在不是 Paris in the rain，而是 Paris in Terror。感到很难过。](notes.html#french-terror-attacks)
+[^paris]: [现在不是 Paris in the rain，而是 Paris in Terror。感到很难过。](notes.html#french-terror-attacks)
 
 ![MIKA，《The Good Guys》](http://gnat.qiniudn.com/pics/MIKA.png)
 

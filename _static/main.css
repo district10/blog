@@ -1,6 +1,7 @@
 html {
     font-size: 150%;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Lucida, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, STXihei, Heiti, sans-serif;
+    // font-family: "Lucida Grande", "Lucida Sans Unicode", Lucida, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, STXihei, Heiti, sans-serif;
+    font-family: "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif; // from TypeIsBeautiful.com
 }
 
 body {
@@ -107,7 +108,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px 15px 20px 0px;
     padding: 0.5em;
     line-height: 180%;
-    font-family: Inpact, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    // font-family: Inpact, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-family: "TIBch", "Classic Grotesque W01", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", "Microsoft YaHei", SimSun, sans-serif; // from TypeIsBeautiful.com
 }
 
 h1 {
@@ -164,7 +166,6 @@ caption {
 
 #footer {
     padding: 10px 10px 10px 10px;
-    font-size: 70%;
     color: gray;
     text-align: center;
     position: fixed;
@@ -189,7 +190,15 @@ caption {
 }
 
 #footer a {
+    font-size: 200%;
     text-decoration: none;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+}
+
+#footer a:hover {
+    -webkit-transform: scaleX(1.1) scaleY(1.1);
+    -moz-transform: scaleX(1.1) scaleY(1.1);
 }
 
 .footnoteRef {
@@ -203,6 +212,14 @@ caption {
 
 a {
     text-decoration: none;
+    // -webkit-transform-origin: 0 0;
+    // -moz-transform-origin: 0 0;
+}
+
+a:hover {
+    // -webkit-transform: scaleX(1.1) scaleY(1.1);
+    // -moz-transform: scaleX(1.1) scaleY(1.1);
+    border-bottom: 3px dotted #9f9f9f;
 }
 
 h1.title {
@@ -305,8 +322,7 @@ p a img:hover {
     border-bottom: 1px solid #d9d9d9;
     font-size: 18px;
     color: #999999;
-    font-style: italic;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 .figure .caption code {
@@ -333,6 +349,10 @@ p a img:hover {
     text-decoration: none;
 }
 
+#buckets div a:visited {
+    text-decoration: none;
+}
+
 .footnotes {
     font-size: 70%;
     line-height: 80%;
@@ -348,5 +368,16 @@ p a img:hover {
 }
 
 .posts li {
-    line-height: 150%;
+    list-style: none;
+    line-height: 200%;
+    color: lightgray;
+    font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, STXihei, Heiti, sans-serif;
+}
+
+.posts li a {
+    margin-left: 20px;
+}
+
+dt {
+    font-size: 120%;
 }

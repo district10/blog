@@ -590,12 +590,18 @@ spreads from person to person within a culture." A meme acts as a unit for
 carrying cultural ideas, symbols, or practices that can be **transmitted from
 one mind to another** through writing, speech, gestures, rituals, or other
 imitable phenomena with a mimicked theme. Supporters of the concept regard
-memes as cultural analogues to genes in that they self-replicate, mutate, and
+memes as cultural analogues（类似物） to genes in that they self-replicate, mutate, and
 respond to selective pressures.
 
 The gene has its **cultural analog**, too: the meme. In cultural evolution, a
 meme is a replicator and propagator—an idea, a fashion, a chain letter, or a
 conspiracy(共谋) theory. On a bad day, a meme is a virus.
+
+（你不能说 meme 是流言蜚语，因为它是中性词。它更像是地方特色、风俗，roman's way of living。
+有道上的翻译是“文化基因”，很好。）
+
+注意不要和 mime 弄混，那是 mime（`maim`），这是 meme（`meem`，“两个我”）。
+mime 引申出去一个词叫 mimic。MIME 还代表互联网文本格式（比如 `text/javascript`）。
 
 [meme]: http://en.wikipedia.org/wiki/Meme
 
