@@ -1,4 +1,10 @@
 PODIR=publish
+KOANS=_koans
+NOTES=_notes
+PAGES=_pages
+POSTS=_posts
+READS=_reads
+STATICS=_statics
 
 all: koans reads notes pages posts statics
 
@@ -9,31 +15,30 @@ qiniu:
 	qrsync conf.json
 
 koans:
-	cd _koans && $(MAKE)
-
+	$(MAKE) -C $(KOANS)
 reads:
-	cd _reads && $(MAKE)
-
+	$(MAKE) -C $(READS)
 notes:
-	cd _notes && $(MAKE)
-    
+	$(MAKE) -C $(NOTES)
 pages:
-	cd _pages && $(MAKE)
-
+	$(MAKE) -C $(PAGES)
 posts:
-	cd _posts && $(MAKE)
-
+	$(MAKE) -C $(POSTS)
 statics:
-	cd _statics && $(MAKE)
+	$(MAKE) -C $(STATICS)
 
 cleanKoans:
-	rm -f $(PODIR)/koan*
-
+	$(MAKE) -C $(KOANS) clean
 cleanReads:
-	rm -f $(PODIR)/read*
-
+	$(MAKE) -C $(READS) clean
 cleanNotes:
-	rm -f $(PODIR)/note*
-        
+	$(MAKE) -C $(NOTES) clean
+cleanPages:
+	$(MAKE) -C $(PAGES) clean
+cleanPosts:
+	$(MAKE) -C $(POSTS) clean
+cleanStatics:
+	$(MAKE) -C $(STATICS) clean
+
 clean:
 	rm -f $(PODIR)/*
