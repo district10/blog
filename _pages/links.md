@@ -1,3 +1,11 @@
+% Links | 链签
+% TANG ZhiXiong
+% 2015-11-19
+
+Links | 链签
+============
+
+#. [Microsoft Academic Search](http://libra.msra.cn/)
 #. [Reddit: programming](https://www.reddit.com/r/programming/)
 #. [GitXiv — Collaborative Open Computer Science — Medium](https://medium.com/@samim/gitxiv-collaborative-open-computer-science-e5fea734cd45)
 #. [一个文科生学编程的书单](http://www.douban.com/note/380095094/)

@@ -10,3 +10,8 @@ clean:
 
 $(PODIR)/reads.html: _read_header.md $(READS) _read_footer.md
 	cat $^ | $(GEN) $@ &
+    
+read:
+	$(EDITOR) $(firstword $(READS))
+make:
+	$(EDITOR) Makefile

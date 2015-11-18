@@ -395,6 +395,9 @@ n/2,  & \text{if $n$ is even} \\
 我要来一个
 ----------
 
+因为我的博客生成器还在不断完善中，这部分先隐藏了。详见 [district10/blog](https://github.com/district10/blog/)。
+
+<!--
 下面介绍如何
 
 1. 在 Windows/Linux 上安装使用，
@@ -407,7 +410,7 @@ n/2,  & \text{if $n$ is even} \\
 Linux 上安装 git 和 pandoc 都太容易，用 `sudo apt-get install git pandoc`{.bash} 就可以。
 
 然后可以先下载 [我的博客](https://github.com/district10/blog/archive/master.zip)，
-解压后进入文件夹，右键打开 Git Bash，输入 `make && make deploy && make`{.bash} 完成编译，不出意外的话会有一个 `public` 文件夹生成。
+解压后进入文件夹，右键打开 Git Bash，输入 `make`{.bash} 完成编译，不出意外的话会有一个 `public` 文件夹生成。
 打开里面的 `index.html`，是不是和你现在正看的网页一模一样？就这么简单。
 
 <small>
@@ -482,6 +485,7 @@ Linux 上安装 git 和 pandoc 都太容易，用 `sudo apt-get install git pand
 ![Qiniu Sync，快如闪电](http://gnat.qiniudn.com/misc/qiniusync.jpg)
 
 最后，<span style="font-variant:small-caps;">bon appetite</span>～
+-->
 
 致谢
 ----

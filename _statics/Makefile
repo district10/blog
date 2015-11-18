@@ -5,6 +5,7 @@ STATICS = \
 $(PODIR)/cc-80x15.png \
 $(PODIR)/favicon.ico \
 $(PODIR)/main.css \
+$(PODIR)/main.js \
 $(PODIR)/robots.txt \
 $(PODIR)/doubanBook.js \
 $(PODIR)/doubanMovie.js \
@@ -28,3 +29,12 @@ $(PODIR)/%: utils/%
 	cp $< $@
 $(PODIR)/%.txt: %.md
 	cp $< $@
+
+css:
+	$(EDITOR) main.css
+
+js:
+	$(EDITOR) main.js
+
+make:
+	$(EDITOR) Makefile

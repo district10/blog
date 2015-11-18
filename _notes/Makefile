@@ -10,3 +10,8 @@ clean:
 
 $(PODIR)/notes.html: _note_header.md $(NOTES) _note_footer.md
 	cat $^ | $(GEN) $@ &
+    
+note:
+	$(EDITOR) $(firstword $(NOTES))
+make:
+	$(EDITOR) Makefile

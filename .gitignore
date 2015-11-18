@@ -4,8 +4,6 @@ tmp/
 *~
 *#
 _posts/index.md
-_posts/koans.md
-_posts/notes.md
 _reads/*.html
 tmp*
 conf.json

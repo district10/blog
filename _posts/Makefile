@@ -1,8 +1,14 @@
-PIDIR = .
-PODIR = ../publish
 GEN   = ../_gen.sh
 BIB   = ../_bib.sh
 IDX   = _index.sh
+PIDIR = .
+PODIR = ../publish
+IDXPG = $(PODIR)/index.html
+IDXMD = _index_header.md index.md _index_footer.md
+
+CURFILES = \
+post-0055-writing-guide-to-hackers.md \
+post-0057-code-on-windows.md \
 
 POST_0062 = $(PODIR)/post-0062-pretty-diff.html
 POST_0061 = $(PODIR)/post-0061-liuhaiyang-example-code.html
@@ -10,11 +16,11 @@ POST_0061 = $(PODIR)/post-0061-liuhaiyang-example-code.html
 POST_0060 = $(PODIR)/post-0060-coding-style.html
 POST_0059 = $(PODIR)/post-0059-exe-wrapper.html
 POST_0058 = $(PODIR)/post-0058-script-boy.html
-POST_0057 = # $(PODIR)/post-0057-code-on-windows.html
+# POST_0057 = $(PODIR)/post-0057-code-on-windows.html
 POST_0056 = $(PODIR)/post-0056-lms-chunk.html
-POST_0055 = # $(PODIR)/post-0055-writing-guide-to-hackers.html
+# POST_0055 = $(PODIR)/post-0055-writing-guide-to-hackers.html
 POST_0054 = $(PODIR)/post-0054-get-things-done.html
-POST_0053 = # $(PODIR)/post-0053-regexpr-in-practice.html
+# POST_0053 = $(PODIR)/post-0053-regexpr-in-practice.html
 POST_0052 = $(PODIR)/post-0052-men-and-women.html
 POST_0051 = $(PODIR)/post-0051-spatial-gis.html
 
@@ -74,7 +80,7 @@ POST_0002 = $(PODIR)/post-0002-how-to-make-this-blog.html
 POST_0001 = $(PODIR)/post-0001-pandoc-readme.html
 
 POSTS = \
-$(POST_0062) $(POST_0061) \
+$(POST_0070) $(POST_0069) $(POST_0068) $(POST_0067) $(POST_0066) $(POST_0065) $(POST_0064) $(POST_0063) $(POST_0062) $(POST_0061) \
 $(POST_0060) $(POST_0059) $(POST_0058) $(POST_0057) $(POST_0056) $(POST_0055) $(POST_0054) $(POST_0053) $(POST_0052) $(POST_0051) \
 $(POST_0050) $(POST_0049) $(POST_0048) $(POST_0047) $(POST_0046) $(POST_0045) $(POST_0044) $(POST_0043) $(POST_0042) $(POST_0041) \
 $(POST_0040) $(POST_0039) $(POST_0038) $(POST_0037) $(POST_0036) $(POST_0035) $(POST_0034) $(POST_0033) $(POST_0032) $(POST_0031) \
@@ -82,23 +88,29 @@ $(POST_0030) $(POST_0029) $(POST_0028) $(POST_0027) $(POST_0026) $(POST_0025) $(
 $(POST_0020) $(POST_0019) $(POST_0018) $(POST_0017) $(POST_0016) $(POST_0015) $(POST_0014) $(POST_0013) $(POST_0012) $(POST_0011) \
 $(POST_0010) $(POST_0009) $(POST_0008) $(POST_0007) $(POST_0006) $(POST_0005) $(POST_0004) $(POST_0003) $(POST_0002) $(POST_0001)
 
-all: $(POSTS) index.md $(PODIR)/index.html
+all: $(POSTS) $(IDXPG)
 
-$(PODIR)/index.html: _index_header.md index.md _index_footer.md
-	cat $^ | $(GEN) $@ && rm index.md &
+index: $(IDXPG)
+
+$(IDXPG): $(IDXMD)
+	cat $^ | $(GEN) $@ &
 
 index.md:
 	$(IDX)
 
 clean:
-	rm -f $(PODIR)/post* $(PODIR)/index.html
+	rm -f $(POSTS) $(IDXPG)
 
-# first those with bibs
 $(PODIR)/post-0051-spatial-gis.html: $(PIDIR)/post-0051-spatial-gis.md
 	$(BIB) $^ $@ &
 $(PODIR)/post-0050-gis-overall.html: $(PIDIR)/post-0050-gis-overall.md
 	$(BIB) $^ $@ &
 
-# then those without
 $(PODIR)/%.html: $(PIDIR)/%.md
 	cat $^ | $(GEN) $@ &
+
+p: post
+post:
+	$(EDITOR) $(firstword $(CURFILES))
+make:
+	$(EDITOR) Makefile

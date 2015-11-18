@@ -10,3 +10,8 @@ clean:
 
 $(PODIR)/koans.html: _koan_header.md $(KOANS) _koan_footer.md
 	cat $^ | $(GEN) $@ &
+
+koan:
+	$(EDITOR) $(firstword $(KOANS))
+make:
+	$(EDITOR) Makefile
