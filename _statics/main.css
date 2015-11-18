@@ -1,6 +1,5 @@
 html {
     font-size: 150%;
-    // font-family: "Lucida Grande", "Lucida Sans Unicode", Lucida, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, STXihei, Heiti, sans-serif;
     font-family: "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif; // from TypeIsBeautiful.com
 }
 
@@ -92,6 +91,13 @@ pre {
     display: block;
 }
 
+pre.diffed {
+    background-color: white;
+    border: 1px dotted #f8bd0b;
+    font-size: 90%;
+    font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, STXihei, Heiti, sans-serif;
+}
+
 code.url {
     background-color: inherit;
     box-shadow: none;
@@ -108,7 +114,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px 15px 20px 0px;
     padding: 0.5em;
     line-height: 180%;
-    // font-family: Inpact, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     font-family: "TIBch", "Classic Grotesque W01", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", "Microsoft YaHei", SimSun, sans-serif; // from TypeIsBeautiful.com
 }
 
@@ -178,7 +183,6 @@ caption {
     right: 22%;
     bottom: 0px;
     font-variant:small-caps;
-    
     border-width: 1px 0px 0px 0px;
     border-style: solid;
     border-color: gray;
@@ -192,18 +196,19 @@ caption {
 #footer a {
     font-size: 200%;
     text-decoration: none;
-    -webkit-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
 }
 
 #footer a:hover {
-    -webkit-transform: scaleX(1.1) scaleY(1.1);
-    -moz-transform: scaleX(1.1) scaleY(1.1);
 }
 
 .footnoteRef {
-    color: violet;
+    color: #ff8345;
     text-decoration: none;
+}
+
+.footnoteRef:hover {
+    color: #ff1244;
+    border: none;
 }
 
 .footnotes ol li p {
@@ -379,5 +384,5 @@ p a img:hover {
 }
 
 dt {
-    font-size: 120%;
+    font-size: 110%;
 }

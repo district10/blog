@@ -11,4 +11,4 @@ Dvorak 是一种不同于 QWERTY 的键盘布局，在程序员中广受欢迎�
 <div><a href="koans.html">Koans | 呓语</a></div>
 <div><a href="about.html">About | 关于</a></div></div><hr/>
 <div style="font-variant:small-caps;">Posts</div>
-<div class="posts">
+<div class="posts"><!-- 下面要有空行 | One Empty Line Reserved Below -->

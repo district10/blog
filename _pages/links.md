@@ -170,3 +170,10 @@ MISC
 #. [内核恐慌 — IPN 出品](http://ipn.li/kernelpanic/)
 #. [Teahour.fm](http://teahour.fm/)
 #. [Microsoft Project Oxford Home](https://www.projectoxford.ai/)
+
+一些值得玩味的网页
+------------------
+
+（从网页制作的角度）
+
+#. [Pretty Diff - The difference tool](http://prettydiff.com/)

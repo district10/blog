@@ -1,4 +1,0 @@
-% TITLE
-% DATE
-% TAGS
-content...

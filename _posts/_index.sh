@@ -1,11 +1,11 @@
 #!/bin/bash
 
-SRC=_posts
-DST=publish
+SRC=.
+DST=../publish
 TMP=tmp.txt
 INDEX=${SRC}/index.md
 
-echo deploying...
+echo generating index...
 rm ${INDEX} ${TMP} 2>/dev/null
 
 for POST in ${DST}/post-*.html;
@@ -18,4 +18,4 @@ done
 
 sort -nr ${TMP} > ${INDEX}
 rm ${TMP} 2>/dev/null
-echo deploying... done
+echo generating index... done
