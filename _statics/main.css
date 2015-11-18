@@ -390,3 +390,7 @@ dt {
 .tzxslogan {
     color: lightgray;
 }
+
+.reads ol li {
+    list-style: square;
+}

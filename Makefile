@@ -127,3 +127,11 @@ mkReads:
 ms: mkStatics
 mkStatics:
 	$(MAKE) -C $(STATICS) make
+
+c: css
+css:
+	$(MAKE) -C $(STATICS) css
+
+j: js
+js:
+	$(MAKE) -C $(STATICS) js
