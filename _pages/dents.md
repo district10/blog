@@ -18,3 +18,7 @@ Dents | 乱象
 <div><a href="xiami.html">Music | 乐音</a></div>
 <div><a href="links.html">Links | 链签</a></div>
 <div><a href="reads.html">Reads | 斋读</a></div></div><hr/>
+
+---
+
+多闭关修行，学习科学文化知识。

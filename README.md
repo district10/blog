@@ -12,4 +12,4 @@ See [tangzx.qiniudn.com](http://tangzx.qiniudn.com/)
 
 ## Editor
 
-![](http://gnat.qiniudn.com/dvorak4tzx/editor.jpg)
+![Current](http://gnat.qiniudn.com/dvorak4tzx/editor.jpg)

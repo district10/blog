@@ -251,7 +251,7 @@ blockquote {
     word-break: break-word;
     font-weight: 100;
     line-height: 30px;
-    margin: 0 25px 25px;
+    margin: 10px 25px 25px 10px;
     padding: 15px 15px;
     border-left: 10px solid #eee;
     border-color: #D6DBDF;
@@ -296,6 +296,7 @@ img {
     -webkit-transform-style: preserve-3d;
     -transform-style: preserve-3d;
     z-index: 1;
+    max-width: 95%;
 }
 
 .figure img {
@@ -392,6 +393,19 @@ dt {
     color: lightgray;
 }
 
-.reads ol li {
-    list-style: square;
+.reads > ol > li {
+    list-style: square; !important
+    white-space: nowrap;
+}
+
+.reads ol li dl dt a {
+    white-space: nowrap;
+}
+
+.reads > ol > li > a {
+    white-space: nowrap;
+}
+
+iframe {
+    border: none;
 }
