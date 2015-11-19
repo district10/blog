@@ -5,6 +5,12 @@
 Links | 链签
 ============
 
+#. [Google](http://www.google.com.sg)
+#. [DuckDuckGo](http://www.duckduckgo.com)
+#. [YouTube Downloader](http://o.hk.am/)
+#. [Library Genises](http://gen.lib.rus.ec/)
+#. [Book Finder](http://en.bookfi.org)
+#. [Tao Bao UED](http://ued.taobao.com/blog/about-us/)
 #. [Microsoft Academic Search](http://libra.msra.cn/)
 #. [Reddit: programming](https://www.reddit.com/r/programming/)
 #. [GitXiv — Collaborative Open Computer Science — Medium](https://medium.com/@samim/gitxiv-collaborative-open-computer-science-e5fea734cd45)

@@ -5,6 +5,7 @@ PAGES=_pages
 POSTS=_posts
 READS=_reads
 STATICS=_statics
+AG=_ag.sh
 
 all: koans reads notes pages posts statics
 
@@ -15,6 +16,10 @@ github:
 qn: qiniu
 qiniu:
 	qrsync conf.json
+
+s: ag
+ag:
+	$(AG) $(k)
 
 # make htmls
 kns: koans

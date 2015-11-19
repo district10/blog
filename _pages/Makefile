@@ -18,11 +18,15 @@ $(PODIR)/%.html: %.md
     
 about:
 	$(EDITOR) about.md
+
 dent:
 	$(EDITOR) dents.md
+
 link:
 	$(EDITOR) links.md
+
 douban:
 	$(EDITOR) douban.md
+
 make:
 	$(EDITOR) Makefile

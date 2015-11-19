@@ -921,6 +921,8 @@ generally understood to cover changes typically made by a system administrator;
 management of source code undergoing software development is considered
 separately (see revision control).
 
+记住，SVN、Git、Bazzar、Mercurial 这些都算 SCM。
+
 [scm]: http://en.wikipedia.org/wiki/Software_configuration_management
 [replicate]: http://dict.youdao.com/search?q=replicate&keyfrom=dict.index "重复；折转"
 

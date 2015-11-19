@@ -112,5 +112,7 @@ $(PODIR)/%.html: $(PIDIR)/%.md
 p: post
 post:
 	$(EDITOR) $(firstword $(CURFILES))
+
+m: make
 make:
 	$(EDITOR) Makefile

@@ -337,6 +337,7 @@ p a img:hover {
 
 #buckets div {
     display: inline-block;
+    margin: 5px;
     border: 1px solid #c2c2c2;
     border-radius: 4px;
     padding: 0.5em 1em 0.5em 1em;
@@ -387,7 +388,7 @@ dt {
     font-size: 110%;
 }
 
-.tzxslogan {
+#tzxslogan {
     color: lightgray;
 }
 
