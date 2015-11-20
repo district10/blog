@@ -5,9 +5,10 @@ PAGES=_pages
 POSTS=_posts
 READS=_reads
 STATICS=_statics
+LYRICS=_miscs/lyrics
 AG=_ag.sh
 
-all: koans reads notes pages posts statics
+all: koans reads notes pages posts statics lyrics
 
 gh: github
 github:
@@ -46,6 +47,10 @@ sts: statics
 statics:
 	$(MAKE) -C $(STATICS)
 
+lrc: lyrics
+lyrics:
+	$(MAKE) -C $(LYRICS)
+
 # clean
 ckns: cleanKoans
 cleanKoans:
@@ -70,6 +75,10 @@ cleanPosts:
 csts: cleanStatics
 cleanStatics:
 	$(MAKE) -C $(STATICS) clean
+
+clrc: cleanLyrics
+cleanLyrics:
+	$(MAKE) -C $(LYRICS) clean
 
 rm: clean
 clean:
@@ -104,6 +113,7 @@ d: dent
 dent:
 	$(MAKE) -C $(PAGES) dent
 
+
 # make make
 m: make
 make:
@@ -132,6 +142,10 @@ mkReads:
 ms: mkStatics
 mkStatics:
 	$(MAKE) -C $(STATICS) make
+
+ml: mkLyrics
+mkLyrics:
+	$(MAKE) -C $(LYRICS) make
 
 c: css
 css:

@@ -411,3 +411,17 @@ dt {
 iframe {
     border: none;
 }
+
+
+iframe.lyrics {
+    border: none;
+    overflow: hidden;
+}
+
+.lyrics ol li {
+    list-style: square; !important
+}
+
+.lyrics ol li dl dd {
+    margin-left: 0px;
+}
