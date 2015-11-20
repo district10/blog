@@ -18,20 +18,21 @@ body {
 }
 
 div#TOC {
+    font-size: 10pt;
+    background: #eee;
     position: fixed;
-    float: right;
-    clear: right;
     top: 5%;
     right: 2%;
     max-height: 90%;
     width: auto;
     height: auto;
     overflow: auto;
-    font-size: 10pt;
-    padding: 0px 30px 0px 0px;
-    background: #eee;
     border: solid 1px #ccc;
     margin: none;
+    padding: none;
+    box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
 }
 
 p {

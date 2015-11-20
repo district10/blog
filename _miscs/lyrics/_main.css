@@ -1,4 +1,4 @@
-* {
+﻿* {
     font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, STXihei, Heiti, sans-serif;
 }
 
@@ -69,7 +69,6 @@ div:hover {
 
 .accordian {
     position: absolute;
-    // width: 1020px; 
     height: 460px;
     left: 15px;
     top: 10px;
@@ -80,7 +79,6 @@ div:hover {
 }
 
 .accordian ul {
-    // width: 2000px;
 }
 
 .accordian li {
@@ -96,6 +94,8 @@ html, body {
 }
 
 p {
+    display: inline;
+    border: none;
     padding: none;
-    margin: none;
+    margin: 10px;
 }
