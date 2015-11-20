@@ -30,16 +30,22 @@ div:hover {
 .accordian ul li:hover div { overflow-y: auto; }
 
 .dictated {
-    box-shadow: 0 0 25px 10px rgba(  0, 124, 220, 0.5);
-    -webkit-box-shadow: 0 0 25px 10px rgba(  0, 124, 220, 0.5);
-    -moz-box-shadow: 0 0 25px 10px rgba(  0, 124, 220, 0.5);
+    box-shadow: 0 0 25px 10px rgba(136, 125, 221, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(136, 125, 221, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(136, 125, 221, 0.5);
     color: #887ddd;
 }
 
 .diffed {
-    box-shadow: 0 0 25px 10px rgba(136, 125, 221, 0.5);
-    -webkit-box-shadow: 0 0 25px 10px rgba(136, 125, 221, 0.5);
-    -moz-box-shadow: 0 0 25px 10px rgba(136, 125, 221, 0.5);
+    // 橙色 #ff8345
+    box-shadow: 0 0 25px 10px rgba(255, 018, 068, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(255, 018, 068, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(255, 018, 068, 0.5);
+/* 灰色 #d1d2d4
+    box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
+*/
     color: black;
 }
 
