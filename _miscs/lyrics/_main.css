@@ -6,7 +6,7 @@ ul li div {
     text-align: center;
     display: block;
     border: 1px dotted lightgray;
-    padding: 5px;
+    padding: none;
 }
 
 div {
@@ -93,4 +93,9 @@ div:hover {
 html, body {
     width: 1050px;
     height: 480px;
+}
+
+p {
+    padding: none;
+    margin: none;
 }
