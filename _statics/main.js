@@ -1,6 +1,6 @@
+var duoshuoQuery = {short_name:"tangzx"};
 // 多说
 function duoshuo() {
-    var duoshuoQuery = {short_name:"tangzx"};
     var ds = document.createElement('script');
     ds.type = 'text/javascript';ds.async = true;
     ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';

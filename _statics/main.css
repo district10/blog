@@ -18,24 +18,20 @@ body {
 }
 
 div#TOC {
+    position: fixed;
     float: right;
     clear: right;
-    // width: 0;
-    // display: block;
+    top: 5%;
+    right: 2%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+    overflow: auto;
     font-size: 10pt;
     padding: 0px 30px 0px 0px;
     background: #eee;
     border: solid 1px #ccc;
-    margin: 125px 0px 10px 15px;
-/*
-    position: relative;
-    top: 0;
-    max-width: 250px;
-    border: none;
-    -moz-box-shadow: 0 0px 0px #fff;
-    -webkit-box-shadow: 0 0px 0px #fff;
-    box-shadow: 0 0px 0px #fff;
-*/
+    margin: none;
 }
 
 p {
