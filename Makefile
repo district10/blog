@@ -113,6 +113,9 @@ d: dent
 dent:
 	$(MAKE) -C $(PAGES) dent
 
+t: typing
+typing:
+	$(MAKE) -C $(PAGES) typing
 
 # make make
 m: make
