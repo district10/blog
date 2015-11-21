@@ -56,3 +56,17 @@ function dvorak4tzx( pathParts ) {
 }
 
 dvorak4tzx( pathStringList );
+
+
+// other stuff
+// document.getElementsByClassName('ts');
+
+function prettyUnixTime( ts ) {
+    var date = new Date(ts * 1000);
+    var hours = date.getHours();
+    var minutes = "0" + date.getMinutes();
+    var seconds = "0" + date.getSeconds();
+    var sts = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2); // 2015 年 03 月 23 日 03 时 36 分 52 秒，周三
+    var lts = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2); // 03:23, Jan 03, Sat
+    return { ts: ts, sts: formattedTime, lts: lts };
+}

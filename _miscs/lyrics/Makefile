@@ -4,6 +4,7 @@ PODIR = ../../publish
 INDIR = ./
 LRCIDX = $(PODIR)/lyrics.html
 LYRICS = \
+$(PODIR)/lyrics-00003.html \
 $(PODIR)/lyrics-00002.html \
 $(PODIR)/lyrics-00001.html \
 
