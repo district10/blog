@@ -191,3 +191,9 @@ MISC
 （从网页制作的角度）
 
 #. [Pretty Diff - The difference tool](http://prettydiff.com/)
+
+---
+
+#. [English as a Second Language Podcast](http://www.eslpod.com/website/index.php)
+#. &#x2610; [百度在线输入法](http://shurufa.baidu.com/online.html)
+#. [当然我在扯淡](http://www.yinwang.org/)

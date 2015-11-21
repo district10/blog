@@ -589,3 +589,324 @@ Dock
 #### 提交变动
 
 （后台审核后判断是否把编辑后的状态设为默认。）
+
+
+---
+
+代码部分
+--------
+
+#. 模型组织：`osg::Switch`{.cpp}（是一种 Group 相比 Group 能快速地 hidden/show）
+#. 模型操作：`osg::MatrixTransform`{.cpp}（translate/rotate/scale）
+#. &#x2717; OSG 中的菜单（用 Qt 的那一套）
+#. &#x2713; 动画（关键帧、骨骼、颜色渐变）
+    * 颜色渐变的示例代码可做动态贴纹理
+#. &#x2610; 键盘、鼠标、Pick（Handler）
+#. &#x2610; 操作器（Camera Manipulator）
+    * 用 OSG 默认的几个
+    * 自己再继承一个（实现位置的切换）
+        + note: 主要是 `getMatrix()`{.cpp}（位置姿态）、`getInverseMatrix()`{.cpp}、`handle()`{.cpp}（键鼠）
+        
+杂七杂八的 Note：
+
+```cpp
+// 设置 node 名字
+node.setName( std::string );
+
+// TODO: 从 config 中判断是否纹理需要重新贴
+// （新建一个静态类，专门用来配置三维模型，配置放在静态的 `getInstance()`{.cpp} 里）
+bool applied;
+std::string textureImgUrl;
+node.setUpdateCallback( cb );
+if ( !applied ) {
+    apply();
+    applied = true;
+}
+
+// more snippets
+osg::Matrix osg::Matrixd::rotate( dx, osg::X_AXIS, 
+                                  dy, .....Y.....,
+                                  dz, .....Z..... );
+* osg::GUIEventHandlerAdapter
+    + KEYDOWN（键盘）
+    + PUSH（单击）
+    + DRAG（从代码上看更像是 MOVE）
+    
+// osg 里的矩阵运算用的是左乘
+current pose = rot * trans
+
+// osg, rot(0,0,0) 其实是朝向 (0,0,-1)（面对着 xy 平面）
+
+// 参数里用的是弧度，有弧度角度转化的函数
+osg::PI
+
+
+
+
+
+
+```
+
+
+```cmake
+
+# include them all
+include( ${QT_USE_FILE} )
+include_directories( ${OPENCV_INCLUDE_DIR} )
+include_directories( ${Boost_INCLUDE_DIR} )
+include_directories( ${OSG_INCLUDE_DIR} )
+
+# link them all
+link_directories( ${Boost_LIBRARY_DIR} )
+link_directories( "D:/boost_1_58_0/stage/lib" )
+link_directories( ${OSG_LIBRARY_DIR_DEBUG} )
+link_directories( ${OSG_LIBRARY_DIR_RELEASE} )
+
+target_link_libraries( ${PROJECT_NAME} ${QT_LIBRARIES} ${OPENGL_LIBRARY} ${GLUT_LIBRARIES} ${OpenCV_LIBS} ${OpenSceneGraph_LIBS_Debug} ${OpenSceneGraph_LIBS_Release} Utils SignCutter )
+```
+
+
+```cpp
+// viewer
+const std::string name="Main";
+bool windowDecoration = false;
+if ( MONO_VIWER == vt )
+{
+    viewNum=1;
+    QWidget* widget = addViewWidget( createGraphicsWindow(0,0,200,200,name,windowDecoration), VIEW_PERSPECTIVE, true ); // set as main
+    QGridLayout* grid = new QGridLayout;
+    grid->addWidget( widget);
+    setLayout( grid );
+}
+else if ( FOUR_VIEWERS == vt )
+{
+    //views=std::vector<osg::ref_ptr<osgViewer::View> >(4);
+    viewNum=4;
+    QWidget* widget1 = addViewWidget( createGraphicsWindow(0,0,100,100,name,windowDecoration), VIEW_PERSPECTIVE, true ); // set as main
+    QWidget* widget2 = addViewWidget( createGraphicsWindow(0,0,100,100,name,windowDecoration), VIEW_TOP );
+    QWidget* widget3 = addViewWidget( createGraphicsWindow(0,0,100,100,name,windowDecoration), VIEW_LEFT );
+    QWidget* widget4 = addViewWidget( createGraphicsWindow(0,0,100,100,name,windowDecoration), VIEW_FRONT );
+
+    QGridLayout* grid = new QGridLayout;
+    grid->addWidget( widget1, 0, 0 );
+    grid->addWidget( widget2, 0, 1 );
+    grid->addWidget( widget3, 1, 0 );
+    grid->addWidget( widget4, 1, 1 );
+    setLayout( grid );
+} else if ( SEVEN_VIEWERS == vt ) {
+    viewNum=6;
+    QWidget* widget1 = addViewWidget( createGraphicsWindow(0,0,100,100,name,windowDecoration), VIEW_FRONT );
+    QWidget* widget2 = addViewWidget( createGraphicsWindow(0,0,100,100,name,windowDecoration), VIEW_TOP );
+    QWidget* widget3 = addViewWidget( createGraphicsWindow(0,0,200,200,name,windowDecoration), VIEW_PERSPECTIVE, true ); // set as main
+    QWidget* widget4 = addViewWidget( createGraphicsWindow(0,0,100,100,name,windowDecoration), VIEW_LEFT );
+    QWidget* widget5 = addViewWidget( createGraphicsWindow(0,0,100,100,name,windowDecoration), VIEW_LEFT );
+    QWidget* widget6 = addViewWidget( createGraphicsWindow(0,0,100, 50,name,windowDecoration), VIEW_FRONT );
+    QWidget* widget7 = addViewWidget( createGraphicsWindow(0,0,100, 50,name,windowDecoration), VIEW_TOP );
+    QGridLayout* grid = new QGridLayout;
+    grid->addWidget( widget1, 0, 0, 1, 2 );
+    grid->addWidget( widget2, 1, 0, 1, 2 );
+    grid->addWidget( widget3, 0, 2, 2, 4 );
+    grid->addWidget( widget4, 2, 0, 1, 2 );
+    grid->addWidget( widget5, 2, 2, 1, 2 );
+    grid->addWidget( widget6, 2, 4, 1, 1 );
+    grid->addWidget( widget7, 2, 5, 1, 1 );
+    setLayout( grid );
+} else {
+    settingViewer();
+}
+
+connect( &_timer, SIGNAL(timeout()), this, SLOT(update()) );
+_timer.start( 10 );
+
+this->setGeometry( 100, 100, 800, 600 );
+this->show();
+
+// 一个直接添加，一个加点 Scribe 特效
+osg::ref_ptr<osg::Node> cow = osgDB::readNodeFile( filename );
+osg::ref_ptr<osgFX::Scribe> sc = new osgFX::Scribe;
+sc->addChild( cow.get() );
+group.addChild( cow.get() );
+group.addChild( sc.get() );
+
+camera->setViewMatrixAsLookAt( eyePoint, center, upDirection );
+```
+
+
+class ccCustomQTreeView (CloudCompare\qCC\db_tree\ccDBRoot.h)
+
+
+
+
+---
+
+Koan
+----
+
+话说 CloudCompare 的程序写的很赞，连 CMakeLists.txt 都很考究，
+包括但不限于空格、大小写、注释。[^cccmake]
+
+[^cccmake]: 那些 CMake 语句（说的不是变量）用大写的，都是逗逼。
+
+    ```cmake
+    cmake_minimum_required(VERSION 2.8)
+    
+    project( CloudCompare )
+    
+    set( VERSION_MAJOR 2 )
+    set( VERSION_MINOR 7 )
+    set( VERSION_PATCH 0 )
+    
+    include_directories( ${GLEW_LIB_SOURCE_DIR}/include )
+    include_directories( ${CC_FBO_LIB_SOURCE_DIR}/include )
+    include_directories( ${CC_CORE_LIB_SOURCE_DIR}/include )
+    include_directories( ${QCC_DB_LIB_SOURCE_DIR} )
+    if( MSVC )
+    include_directories( ${QCC_DB_LIB_SOURCE_DIR}/msvc )
+    endif()
+    include_directories( ${QCC_IO_LIB_SOURCE_DIR} )
+    include_directories( ${QCC_GL_LIB_SOURCE_DIR} )
+    include_directories( ${EXTERNAL_LIBS_INCLUDE_DIR} )
+    include_directories( ${CloudComparePlugins_SOURCE_DIR} )
+    include_directories( ${CMAKE_CURRENT_SOURCE_DIR} )
+    include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/db_tree )
+    include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/ui_templates )
+    include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/../libs/qxt )
+    include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/../libs/qcustomplot )
+    include_directories( ${CMAKE_CURRENT_BINARY_DIR} )
+    
+    # QCustomPlot
+    set( QCUSTOMPLOT_HEADERS ../libs/qcustomplot/qcustomplot.h )
+    set( QCUSTOMPLOT_SOURCES ../libs/qcustomplot/qcustomplot.cpp )
+    
+    file( GLOB header_list *.h db_tree/*.h ${QXT_HEADERS} ${QCUSTOMPLOT_HEADERS} )
+    file( GLOB source_list *.cpp db_tree/*.cpp ${QXT_SOURCES} ${QCUSTOMPLOT_SOURCES} )
+    
+    # 3DX support (3dConnexion devices)
+    if ( ${OPTION_SUPPORT_3DCONNEXION_DEVICES} )
+        file( GLOB 3DX_header_list devices/3dConnexion/*.h )
+        file( GLOB 3DX_source_list devices/3dConnexion/*.cpp )
+        list( APPEND header_list ${3DX_header_list} )
+        list( APPEND source_list ${3DX_source_list} )
+    endif()	
+    
+    file( GLOB ui_list ui_templates/*.ui )
+    file( GLOB qrc_list *.qrc )
+    #file( GLOB rc_list *.rc )
+    file( GLOB txt_list TODO.txt bin_other/history.txt )
+    
+    if ( USE_QT5 )
+        qt5_wrap_ui( generated_ui_list ${ui_list} )
+        qt5_add_resources( generated_qrc_list ${qrc_list} )
+    else()
+        # find Qt mocable files
+        find_mocable_files( mocable_list ${header_list} )
+        qt4_wrap_cpp( moc_list ${mocable_list} )
+        qt4_wrap_ui( generated_ui_list ${ui_list} )
+        qt4_add_resources( generated_qrc_list ${qrc_list} )
+    endif()
+    
+    # App icon with MSVC
+    if( MSVC )
+        set( rc_list images/icon/cc_icon.rc )
+    endif()
+    
+    if( MSVC )
+        #to get rid of the (system) console
+        add_executable( ${PROJECT_NAME} WIN32 ${header_list} ${source_list} ${moc_list} ${generated_ui_list} ${generated_qrc_list} ${rc_list} ${resource_list} ${txt_list} )
+    elseif( APPLE )
+        add_executable( ${PROJECT_NAME} MACOSX_BUNDLE ${header_list} ${source_list} ${moc_list} ${generated_ui_list} ${generated_qrc_list} ${resource_list} ${txt_list} )
+    else()
+        add_executable( ${PROJECT_NAME} ${header_list} ${source_list} ${moc_list} ${generated_ui_list} ${generated_qrc_list} ${rc_list} ${resource_list} ${txt_list} )
+    endif()
+    
+    target_link_libraries( ${PROJECT_NAME} GLEW_LIB )
+    target_link_libraries( ${PROJECT_NAME} CC_FBO_LIB )
+    target_link_libraries( ${PROJECT_NAME} CC_CORE_LIB )
+    target_link_libraries( ${PROJECT_NAME} QCC_DB_LIB )
+    target_link_libraries( ${PROJECT_NAME} QCC_IO_LIB )
+    target_link_libraries( ${PROJECT_NAME} QCC_GL_LIB )
+    target_link_libraries( ${PROJECT_NAME} ${EXTERNAL_LIBS_LIBRARIES} )
+    
+    if ( USE_QT5 )
+        if (WIN32)
+            target_link_libraries( ${PROJECT_NAME} Qt5::WinMain )
+        endif()
+        qt5_use_modules(${PROJECT_NAME} Core Gui Widgets OpenGL PrintSupport)
+    endif()
+    
+    # contrib. libraries support
+    target_link_contrib( ${PROJECT_NAME} ${CLOUDCOMPARE_DEST_FOLDER} )
+    
+    # 3dConnexion devices support
+    target_link_3DXWARE( ${PROJECT_NAME} )
+    
+    # Default preprocessors
+    set_default_cc_preproc( ${PROJECT_NAME} )
+    
+    # Add custom preprocessor definitions
+    set_property( TARGET ${PROJECT_NAME} APPEND PROPERTY COMPILE_DEFINITIONS USE_GLEW GLEW_STATIC )
+    if( WIN32 )
+        set_property( TARGET ${PROJECT_NAME} APPEND PROPERTY COMPILE_DEFINITIONS CC_USE_AS_DLL QCC_DB_USE_AS_DLL QCC_IO_USE_AS_DLL )
+        if (MSVC)
+            SET_TARGET_PROPERTIES(${PROJECT_NAME} PROPERTIES LINK_FLAGS " /MANIFEST:NO")
+        endif()
+    endif()
+    
+    #set_property( TARGET ${PROJECT_NAME} APPEND PROPERTY COMPILE_DEFINITIONS_RELEASE XXX) #nothing right now
+    #set_property( TARGET ${PROJECT_NAME} APPEND PROPERTY COMPILE_DEFINITIONS_DEBUG XXX) #nothing right now
+    
+    # App icon with Code::Blocks/MinGW
+    if( WIN32 )
+        if( MINGW )
+            add_custom_command( TARGET ${PROJECT_NAME} PRE_BUILD COMMAND windres -i ${CMAKE_CURRENT_SOURCE_DIR}/images/icon/cc_icon.rc --input-format=rc -o ${CMAKE_CURRENT_BINARY_DIR}/cc_icon.res -O coff )
+        endif()
+    endif()
+    
+    # install program
+    install_ext( TARGETS ${PROJECT_NAME} ${CLOUDCOMPARE_DEST_FOLDER} )
+    
+    # Auxiliary files
+    set( auxFiles bin_other/history.txt bin_other/license.txt bin_other/global_shift_list_template.txt )
+    
+    if( WIN32 )
+        # Export Qt dlls
+        install_Qt_Dlls( ${CLOUDCOMPARE_DEST_FOLDER} )
+        install_Qt_ImageFormats( ${CLOUDCOMPARE_DEST_FOLDER} )
+        install_Qt5_plugins( ${CLOUDCOMPARE_DEST_FOLDER} )
+    
+        # Additional auxiliary file(s)
+        list( APPEND auxFiles bin_other/start.bat )
+    endif()
+    
+    # Install auxiliary files
+    foreach( filename ${auxFiles} )
+        install_ext( FILES ${filename} ${CLOUDCOMPARE_DEST_FOLDER} )
+    endforeach()
+    
+    # in order to ensure that everything else is installed first, put the Mac bundling in its own subdirectory
+    if( APPLE )
+    set_property( TARGET ${PROJECT_NAME} PROPERTY MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_SOURCE_DIR}/Mac/CloudCompare.plist )
+    
+    set( MACOSX_BUNDLE_ICON_FILE cc_icon.icns ) 
+    set( MACOSX_BUNDLE_SHORT_VERSION_STRING "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}" )
+    set( MACOSX_BUNDLE_LONG_VERSION_STRING "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}" )
+    set( MACOSX_BUNDLE_BUNDLE_VERSION "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}" )
+    
+    add_subdirectory( Mac )
+    endif()
+    
+    # Export common shader files to all install destinations
+    if( APPLE )
+    install( FILES ${CC_FBO_LIB_SOURCE_DIR}/bilateral/bilateral.frag DESTINATION ${CLOUDCOMPARE_MAC_BASE_DIR}/Contents/Shaders )
+    install( FILES ${CC_FBO_LIB_SOURCE_DIR}/bilateral/bilateral.vert DESTINATION ${CLOUDCOMPARE_MAC_BASE_DIR}/Contents/Shaders )
+    install( FILES ${CMAKE_CURRENT_SOURCE_DIR}/shaders/ColorRamp/color_ramp.frag DESTINATION ${CLOUDCOMPARE_MAC_BASE_DIR}/Contents/Shaders/ColorRamp )
+    #install( FILES ${CMAKE_CURRENT_SOURCE_DIR}/shaders/Rendering/rendering.frag DESTINATION ${CLOUDCOMPARE_MAC_BASE_DIR}/Contents/Shaders/Rendering )
+    #install( FILES ${CMAKE_CURRENT_SOURCE_DIR}/shaders/Rendering/rendering.vert DESTINATION ${CLOUDCOMPARE_MAC_BASE_DIR}/Contents/Shaders/Rendering )
+    else()
+    install_ext( FILES ${CC_FBO_LIB_SOURCE_DIR}/bilateral/bilateral.frag ${CLOUDCOMPARE_DEST_FOLDER} /shaders )
+    install_ext( FILES ${CC_FBO_LIB_SOURCE_DIR}/bilateral/bilateral.vert ${CLOUDCOMPARE_DEST_FOLDER} /shaders )
+    install_ext( FILES ${CMAKE_CURRENT_SOURCE_DIR}/shaders/ColorRamp/color_ramp.frag ${CLOUDCOMPARE_DEST_FOLDER} /shaders/ColorRamp )
+    #install_ext( FILES ${CMAKE_CURRENT_SOURCE_DIR}/shaders/Rendering/rendering.frag ${CLOUDCOMPARE_DEST_FOLDER} /shaders/Rendering )
+    #install_ext( FILES ${CMAKE_CURRENT_SOURCE_DIR}/shaders/Rendering/rendering.vert ${CLOUDCOMPARE_DEST_FOLDER} /shaders/Rendering )
+    endif()
+    ```
