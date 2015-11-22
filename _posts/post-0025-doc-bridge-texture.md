@@ -910,3 +910,227 @@ Koan
     #install_ext( FILES ${CMAKE_CURRENT_SOURCE_DIR}/shaders/Rendering/rendering.vert ${CLOUDCOMPARE_DEST_FOLDER} /shaders/Rendering )
     endif()
     ```
+
+    
+配置的读取，
+
+理论上应该支持
+
+#. [JSON](http://json.org/)（用 [open-source-parsers/jsoncpp](https://github.com/open-source-parsers/jsoncpp)）
+#. YAML（用 OpenCV）
+#. XML（用 Qt ）
+
+OpenCV, YAML
+
+```cpp
+cv::FileStorage fs( filename.yaml, FileStorage::{READ,WRITE} );
+
+// read
+int frameCount = (int)fs2["frameCount"];
+fs2["frameCount"] >> frameCount;
+
+// write
+fs << "key" << value; // object.pair
+fs << "[:" << "item1" << item1 << "item2" << item2 << "]"; // object.array
+fs << "{:" /* key-value pairs */ << "}" ; object
+```
+
+output:
+
+```yaml
+%YAML:1.0
+width: 30.
+length: 60.
+beamnum: 4
+```
+
+src/qCC/db_tree/ccDBRoot.h -> CloudCompare/ccDBRoot.h
+src/qCC/ui_templates/mainWindow.ui -> CloudCompare/mainWindow.ui
+
+
+mainWindow.ui:
+
+```xml
+<customwidget>
+ <class>ccCustomQTreeView</class>
+ <extends>QTreeView</extends>
+ <header location="global">ccDBRoot.h</header>
+</customwidget>
+```
+
+通过在 QtDesigner 里面对 UI 进行类型提升（设置提升后的 ClassName，基类 BaseClass，以及头文件名 Header.h）
+
+Qt 中响应右键？这部分要看参考 CloudCompare 源码：`src/qCC/db_tree/ccDBRoot.h`
+
+```cpp
+// 新建 action
+m_addEmptyGroup = new QAction( "Add empty group", this );
+
+// 连接  action
+connect( m_addEmptyGroup, SIGNAL(triggered()),
+         this, SLOT(addEmptyGroup()) );
+
+// 添加到菜单
+QMenu menu;
+menu.addAction( m_addEmptyGroup );
+menu.addSeparator( );
+
+// 右键响应其实是弹出 ContextMenu，先打开功能，再连接
+widget->setContextMenuPolicy( Qt::CustomContextMenu );
+connect( m_dbTreeWidget, SIGNAL(customContextMenuRequested(const QPoint&)),
+         this, SLOT(showContextMenu(const QPoint&)) );
+
+// 再去实现：通过点击的位置，判断需要弹出什么样子右键菜单；一翻逻辑后显示 menu
+void ccDBRoot::showContextMenu(const QPoint& menuPos)
+QModelIndex index = m_dbTreeWidget->indexAt(menuPos);
+if ( index.isValid() ) { /* process */ }
+menu.exec(m_dbTreeWidget->mapToGlobal(menuPos));
+```
+
+上面的 menu 没有 parent，它的显示位置要把 menuPos 转化到全局的坐标小，所以用到了
+`QPoint QWidget::mapToGlobal(const QPoint & pos) const`{.cpp}
+
+关于 contextMenuPolicy : Qt::ContextMenuPolicy
+
+> The default value of this property is `Qt::DefaultContextMenu`{.cpp},
+> which means the `contextMenuEvent()`{.cpp} handler is called. 
+> Other values are `Qt::NoContextMenu`{.cpp}, `Qt::PreventContextMenu`{.cpp}, 
+> `Qt::ActionsContextMenu`{.cpp}, and `Qt::CustomContextMenu`{.cpp}. 
+> **With `Qt::CustomContextMenu`{.cpp}, the signal customContextMenuRequested() is emitted.**
+
+图片列表
+
+```cpp
+model->setHorizontalHeaderLabels(
+    QStringList()<< tr("") << tr("Images") << tr("Path") );
+
+icon = new QIcon( ":/images/folder.png" );
+item = new QStandardItem( *icon, QString("Images") );
+```
+
+ToolButton 的设置
+
+```cpp
+int btnSz = 24;
+QString colorName = "red";
+QColor colorRed = QColor( 255, 0, 0, 255 );
+QPixmap colorPix( btnSz, btnSz );
+colorPix.fill( colorRed );
+
+QAction *colorAction = new QAction( colorName, this );
+colorAction->setData( colorRed );
+colorAction->setIcon( colorPix );
+connect( colorAction, SIGNAL(triggered()), 
+         this, SLOT(changeColorToRed()) );
+
+QToolButton *colorBtn = new QToolButton;
+colorBtn->setFixedSize( QSize( btnSz, btzSz ) );
+colorBtn->setAutoRaise( true );
+colorBtn->setDefaultAction( colorAction );
+colorBtn->setToolTip( "set color to red." );
+
+buttonsLayout->addWidget( colorBtn, 1, 3 );
+```
+
+<span id="nice"></span>`<span id="nice"></span>`
+
+go [nice](#nice)
+
+~~~~ {.cpp}
+QString::number( integer, base );
+QString::number( decimal, flag, precise );
+~~~~
+
+显示缩略图的方法
+
+```cpp
+// method 1 (from StackOverflow)
+QStandardItemModel *model = new QStandardItemModel;
+QImage image(":/cat/lovers/own/myCat.jpg");
+QStandardItem *item = new QStandardItem();
+item->setData(QVariant(QPixmap::fromImage(image)), Qt::DecorationRole);
+model->setItem(0, 0, item);
+ui->tableView->setModel(model);
+
+// method 2(tried out)
+QStandardItem *item = 
+    new QStandardItem( QIcon(QPixmap(filename).scaledToHeight(40)), Utils::basename( filename ) );
+model->appendRow( item ); // 会缩放至行高
+```
+
+
+有个很有意思的文档：[c++ - Show image in a column of QTableView from QSqlTableModel - Stack Overflow](http://stackoverflow.com/questions/24201822/show-image-in-a-column-of-qtableview-from-qsqltablemodel)
+
+To do this, the concept is simple: provide QTableView with 【QVariant of
+QPixmap】 as QTableView render them according to `Qt::DecorationRole`{.cpp}.
+
+You may subclass `QSqlTableModel` and reimplement the virtual function
+`QVariant data(const QModelIndex & index, int role = Qt::DisplayRole)`{.cpp}
+and make the image column return the QPixmap as QVariant, with the decoration
+role. So do something like this:
+
+```cpp
+QVariant CustomSqlTableModel::data(const QModelIndex &idx, int role = Qt::DisplayRole) const
+{
+    if (idx.column() == imageColumn) {
+        QString imgFile = QSqlTableModel::data(idx, Qt::DisplayRole); // get path string
+
+        if (role == Qt::DisplayRole) 
+            return QString(); // return the path string for display role
+
+        QImage image(imgFile);
+        /* some modification to the image, maybe */
+
+        QPixmap pixmap(imgFile);
+        if (role == Qt::DecorationRole)
+            return pixmap;   // return QPixmap for decoration role
+
+        if (role == Qt::SizeHintRole)
+            return pixmap.size(); // in case need the image size
+
+    }
+    return QSqlTableModel::data( idx, role ); // use original data() outside the imageColumn
+}
+```
+
+Besides, you can also try subclassing QStyledItemDelegate and reimplement
+`paint()`{.cpp} function to customize your own delegate, but that will require a more
+complicated work. An example using delegate can be found [here](http://www.qtcentre.org/threads/18633-Images-QTableview-Delegates).
+You can paint whatever you want with delegate, even a button.
+
+
+// m_pivotVisibilityPopupButton 可以弹出三个子菜单
+		//pivot center pop-up menu
+		{
+			m_pivotVisibilityPopupButton = new QToolButton();
+			QMenu* menu = new QMenu(m_pivotVisibilityPopupButton);
+			menu->addAction(actionSetPivotAlwaysOn);
+			menu->addAction(actionSetPivotRotationOnly);
+			menu->addAction(actionSetPivotOff);
+
+			m_pivotVisibilityPopupButton->setMenu(menu);
+			m_pivotVisibilityPopupButton->setPopupMode(QToolButton::InstantPopup);
+			m_pivotVisibilityPopupButton->setToolTip("Set pivot visibility");
+			m_pivotVisibilityPopupButton->setStatusTip(m_pivotVisibilityPopupButton->toolTip());
+			toolBarView->insertWidget(actionZoomAndCenter,m_pivotVisibilityPopupButton);
+			m_pivotVisibilityPopupButton->setEnabled(false);
+		}
+
+
+
+
+
+杂七杂八的笔记 {#here}
+--------------
+
+go [here](#here)
+
+#. CloudCompare 源码里的 signal/slot 用了引用，但由于 Qt 的 signal/slot 机制的问题（需要 signature normalization），
+这样的代码运行（还不是编译期间变慢！）起来会更慢。^[参见我以前的笔记：[直觉上我也觉得用 & 不对](http://dvorak4tzx.lofter.com/post/1d4021c8_7e2c8cf)。]
+
+---
+
+Refs
+
+#. [Opencv YAML和XML格式文件操作详解 - YhL_Leo的博客 - 博客频道 - CSDN.NET](http://blog.csdn.net/yhl_leo/article/details/47660943)
+#. [QWidget::setContextMenuPolicy](http://doc.qt.io/qt-4.8/qwidget.html#contextMenuPolicy-prop)

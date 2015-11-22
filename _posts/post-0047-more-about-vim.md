@@ -213,6 +213,9 @@ Refs
 ;; set text width
 ;; ;    :set tw=80
 gq[motion]
+
+;; captitorize current word
+m`b~``
 ```
 
 ---

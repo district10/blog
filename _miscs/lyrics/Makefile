@@ -4,6 +4,7 @@ PODIR = ../../publish
 INDIR = ./
 LRCIDX = $(PODIR)/lyrics.html
 LYRICS = \
+$(PODIR)/lyrics-00004.html \
 $(PODIR)/lyrics-00003.html \
 $(PODIR)/lyrics-00002.html \
 $(PODIR)/lyrics-00001.html \
@@ -19,6 +20,9 @@ $(PODIR)/%.html: $(INDIR)/%-a.md $(INDIR)/%-b.md $(INDIR)/%-c.md
 
 $(LRCIDX): $(LYRICS)
 	$(IDX) $^
+
+s: song
+song: make
 
 m: make
 make:

@@ -17,26 +17,6 @@ body {
     line-height: 140%;
 }
 
-div#TOC {
-    font-size: 10pt;
-    white-space: nowrap;
-    background: #eee;
-    position: fixed;
-    top: 5%;
-    right: 2%;
-    max-height: 90%;
-    // max-width: ;
-    min-width: 200px; 
-    width: auto;
-    height: auto;
-    overflow: auto;
-    border: solid 1px #ccc;
-    margin-right: 20px;
-    padding: none;
-    box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
-    -webkit-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
-    -moz-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
-}
 
 p {
     padding-top: 5px;
@@ -256,7 +236,7 @@ div.slogan {
 blockquote {
     word-break: break-word;
     font-weight: 100;
-    line-height: 30px;
+    line-height: 50px;
     margin: 10px 25px 25px 10px;
     padding: 15px 15px;
     border-left: 10px solid #eee;
@@ -425,4 +405,25 @@ iframe.lyrics {
 
 .lyrics ol li dl dd {
     margin-left: 0px;
+}
+
+div#TOC {
+    font-size: 10pt;
+    white-space: nowrap;
+    background: #eee;
+    position: fixed;
+    top: 5%;
+    right: 2%;
+    max-height: 90%;
+    // max-width: ;
+    min-width: 200px; 
+    width: auto;
+    height: auto;
+    overflow: auto;
+    border: solid 1px #ccc;
+    margin-right: 20px;
+    padding: 10px;
+    box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
 }

@@ -7,6 +7,7 @@ IDXPG = $(PODIR)/index.html
 IDXMD = _index_header.md index.md _index_footer.md
 
 CURFILES = \
+post-0025-doc-bridge-texture.md \
 post-0055-writing-guide-to-hackers.md \
 post-0057-code-on-windows.md \
 

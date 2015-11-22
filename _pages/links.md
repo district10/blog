@@ -197,3 +197,4 @@ MISC
 #. [English as a Second Language Podcast](http://www.eslpod.com/website/index.php)
 #. &#x2610; [百度在线输入法](http://shurufa.baidu.com/online.html)
 #. [当然我在扯淡](http://www.yinwang.org/)
+#. [维基百科，自由的百科全书（镜像站！）](http://wiki.yooooo.us/d2lraS9XaWtpcGVkaWE6JUU5JUE2JTk2JUU5JUExJUI1)

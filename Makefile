@@ -18,7 +18,6 @@ qn: qiniu
 qiniu:
 	qrsync conf.json
 
-s: ag
 ag:
 	$(AG) $(k)
 
@@ -112,6 +111,10 @@ link:
 d: dent
 dent:
 	$(MAKE) -C $(PAGES) dent
+
+s: song
+song:
+	$(MAKE) -C $(LYRICS) song
 
 t: typing
 typing:
