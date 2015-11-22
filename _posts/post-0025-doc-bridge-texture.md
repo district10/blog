@@ -1099,22 +1099,31 @@ complicated work. An example using delegate can be found [here](http://www.qtcen
 You can paint whatever you want with delegate, even a button.
 
 
+```cpp
 // m_pivotVisibilityPopupButton 可以弹出三个子菜单
-		//pivot center pop-up menu
-		{
-			m_pivotVisibilityPopupButton = new QToolButton();
-			QMenu* menu = new QMenu(m_pivotVisibilityPopupButton);
-			menu->addAction(actionSetPivotAlwaysOn);
-			menu->addAction(actionSetPivotRotationOnly);
-			menu->addAction(actionSetPivotOff);
+//pivot center pop-up menu
+{
+    m_pivotVisibilityPopupButton = new QToolButton();
+    QMenu* menu = new QMenu(m_pivotVisibilityPopupButton);
+    menu->addAction(actionSetPivotAlwaysOn);
+    menu->addAction(actionSetPivotRotationOnly);
+    menu->addAction(actionSetPivotOff);
 
-			m_pivotVisibilityPopupButton->setMenu(menu);
-			m_pivotVisibilityPopupButton->setPopupMode(QToolButton::InstantPopup);
-			m_pivotVisibilityPopupButton->setToolTip("Set pivot visibility");
-			m_pivotVisibilityPopupButton->setStatusTip(m_pivotVisibilityPopupButton->toolTip());
-			toolBarView->insertWidget(actionZoomAndCenter,m_pivotVisibilityPopupButton);
-			m_pivotVisibilityPopupButton->setEnabled(false);
-		}
+    m_pivotVisibilityPopupButton->setMenu(menu);
+    m_pivotVisibilityPopupButton->setPopupMode(QToolButton::InstantPopup);
+    m_pivotVisibilityPopupButton->setToolTip("Set pivot visibility");
+    m_pivotVisibilityPopupButton->setStatusTip(m_pivotVisibilityPopupButton->toolTip());
+    toolBarView->insertWidget(actionZoomAndCenter,m_pivotVisibilityPopupButton);
+    m_pivotVisibilityPopupButton->setEnabled(false); // 默认点不了
+}
+```
+
+
+
+
+
+
+
 
 
 
