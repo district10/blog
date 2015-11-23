@@ -46,7 +46,7 @@ p code {
 kbd {
     padding-left: .25rem;
     padding-right: .25rem;
-    font-family: sans-serif;
+    font-family: Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, STXihei, Heiti, sans-serif;
 /*
     box-shadow: 1px 1px silver;
     background-color: #f0f0f0;
