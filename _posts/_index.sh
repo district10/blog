@@ -1,21 +1,20 @@
 #!/bin/bash
 
 SRC=.
-DST=../publish
-TMP=tmp.txt
-INDEX=${SRC}/index.md
+DST=$1
 
-echo generating index...
-rm ${INDEX} ${TMP} 2>/dev/null
+shift
 
-for POST in ${DST}/post-*.html;
-do
-    LINK=`basename ${POST}`
-    FILE=`head -q -n5 ${SRC}/${LINK%.*}.md | tail -n1`
-    DATE=`head -q -n3 ${SRC}/${LINK%.*}.md | tail -n1` && DATE=${DATE:2:10}
-    echo "* ${DATE} [${FILE}](${LINK})" >> ${TMP}
-done
-
-sort -nr ${TMP} > ${INDEX}
-rm ${TMP} 2>/dev/null
-echo generating index... done
+( \
+cat ${SRC}/_index_header.md; \
+    ( for POST in $*; \
+    do \
+        LINK=`basename ${POST}`; \
+        FILE=`head -q -n5 ${SRC}/${LINK%.*}.md | tail -n1`; \
+        DATE=`head -q -n3 ${SRC}/${LINK%.*}.md | tail -n1` && DATE=${DATE:2:10}; \
+        echo -e "\n* ${DATE} [${FILE}](${LINK})"; \
+    done; \
+    ) | sed '/^$/d' | sort -nr; \
+cat ${SRC}/_index_footer.md; \
+) | \
+pandoc -S -s --ascii -c main.css -A ../_parts/footer.html --toc --mathjax --highlight-style pygments -f markdown+table_captions -o ${DST}

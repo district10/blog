@@ -45,9 +45,6 @@ posts:
 index:
 	rm $(POSTS)/index.md
 
-posts:
-	$(MAKE) -C $(POSTS)
-
 sts: statics
 statics:
 	$(MAKE) -C $(STATICS)
