@@ -137,7 +137,7 @@ mpg: mkPages
 mkPages:
 	$(MAKE) -C $(PAGES) make
 
-mpo: mkPosts
+mpt: mkPosts
 mkPosts:
 	$(MAKE) -C $(POSTS) make
 

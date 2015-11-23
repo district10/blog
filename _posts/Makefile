@@ -4,13 +4,24 @@ IDX   = _index.sh
 PIDIR = .
 PODIR = ../publish
 IDXPG = $(PODIR)/index.html
-IDXMD = _index_header.md index.md _index_footer.md
 
 CURFILES = \
+post-0069-gis-spatial-analysis-application-modeling.md \
+post-0068-cxx-gui-programming-with-qt4.md \
 post-0025-doc-bridge-texture.md \
 post-0055-writing-guide-to-hackers.md \
 post-0057-code-on-windows.md \
 
+
+# :r!ls post* | tail -n 5 | sort -nr
+
+POST_0069 = $(PODIR)/post-0069-gis-spatial-analysis-application-modeling.html
+# POST_0068 = $(PODIR)/post-0068-cxx-gui-programming-with-qt4.html
+# POST_0067 = $(PODIR)/post-0067-learn-c-in-project.md
+# POST_0066 = $(PODIR)/post-0066-about-encoding.html
+# POST_0065 = $(PODIR)/post-0065-get-things-done.html
+# POST_0064 = $(PODIR)/post-0064-rm-pitfall.html
+# POST_0063 = $(PODIR)/post-0063-stackoverflow.html
 POST_0062 = $(PODIR)/post-0062-pretty-diff.html
 POST_0061 = $(PODIR)/post-0061-liuhaiyang-example-code.html
 
@@ -88,6 +99,8 @@ $(POST_0040) $(POST_0039) $(POST_0038) $(POST_0037) $(POST_0036) $(POST_0035) $(
 $(POST_0030) $(POST_0029) $(POST_0028) $(POST_0027) $(POST_0026) $(POST_0025) $(POST_0024) $(POST_0023) $(POST_0022) $(POST_0021) \
 $(POST_0020) $(POST_0019) $(POST_0018) $(POST_0017) $(POST_0016) $(POST_0015) $(POST_0014) $(POST_0013) $(POST_0012) $(POST_0011) \
 $(POST_0010) $(POST_0009) $(POST_0008) $(POST_0007) $(POST_0006) $(POST_0005) $(POST_0004) $(POST_0003) $(POST_0002) $(POST_0001)
+
+IDXMD = _index_header.md index.md _index_footer.md
 
 all: $(POSTS) $(IDXPG)
 

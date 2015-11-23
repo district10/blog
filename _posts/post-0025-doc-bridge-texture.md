@@ -33,8 +33,6 @@ TODO
     * OpenGL 相关操作，四个视图以及各自视图下的操作并实现视角的切换
     * 二维纹理的交互操作
     * 模型 treeView
-    
----
 
 需求分析说明书
 --------------
@@ -1117,17 +1115,6 @@ You can paint whatever you want with delegate, even a button.
     m_pivotVisibilityPopupButton->setEnabled(false); // 默认点不了
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 杂七杂八的笔记 {#here}
 --------------
