@@ -223,3 +223,4 @@ Refs
 #. [Skewness - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Skewness)
 #. [Histogram - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Histogram)
 #. [1.3.3.26.11. Scatter Plot Matrix](http://www.itl.nist.gov/div898/handbook/eda/section3/scatplma.htm)
+#. [Matrix of scatter plots by group - MATLAB gplotmatrix - MathWorks 中国](http://cn.mathworks.com/help/stats/gplotmatrix.html)
