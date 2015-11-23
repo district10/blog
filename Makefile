@@ -43,7 +43,7 @@ posts:
 	$(MAKE) -C $(POSTS)
 
 index:
-	rm $(POSTS)/index.md
+	$(MAKE) -C $(POSTS) index
 
 sts: statics
 statics:

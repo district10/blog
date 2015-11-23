@@ -14,7 +14,7 @@ GIS 空间分析与应用建模
 #. 栅格数据空间分析
 #. 三维数据空间分析
 
-可参考 [GIS 理论与技术 – 作业 2：GIS 研究综述#空间分析](http://tangzx.qiniudn.com/post-0050-gis-overall.html#空间分析)，这里不赘述。
+可参考 [GIS 理论与技术 – 作业 2：GIS 研究综述 #空间分析](http://tangzx.qiniudn.com/post-0050-gis-overall.html#空间分析)，这里不赘述。
 
 空间数据统计分析
 ----------------
