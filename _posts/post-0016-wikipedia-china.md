@@ -163,7 +163,7 @@ Hotel
 * JinJiang Inns. (锦江之星)
 * Home Inns (如家快捷酒店)
 * Motel 168. (莫泰168)
-* Green Tree Inns (格林豪泰酒店) （格林豪泰酒店不是Green Hotel 么……）
+* Green Tree Inns (格林豪泰酒店) （格林豪泰酒店不是 Green Hotel 么……）
 
 ---
 

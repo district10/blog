@@ -6,8 +6,8 @@ PODIR = ../publish
 IDXPG = $(PODIR)/index.html
 
 CURFILES = \
-post-0069-gis-spatial-analysis-application-modeling.md \
 post-0068-cxx-gui-programming-with-qt4.md \
+post-0069-gis-spatial-analysis-application-modeling.md \
 post-0025-doc-bridge-texture.md \
 post-0055-writing-guide-to-hackers.md \
 post-0057-code-on-windows.md \
@@ -16,7 +16,7 @@ post-0057-code-on-windows.md \
 # :r!ls post* | tail -n 5 | sort -nr
 
 POST_0069 = $(PODIR)/post-0069-gis-spatial-analysis-application-modeling.html
-# POST_0068 = $(PODIR)/post-0068-cxx-gui-programming-with-qt4.html
+POST_0068 = $(PODIR)/post-0068-cxx-gui-programming-with-qt4.html
 # POST_0067 = $(PODIR)/post-0067-learn-c-in-project.md
 # POST_0066 = $(PODIR)/post-0066-about-encoding.html
 # POST_0065 = $(PODIR)/post-0065-get-things-done.html

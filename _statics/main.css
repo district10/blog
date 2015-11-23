@@ -413,7 +413,7 @@ div#TOC {
     background: #eee;
     position: fixed;
     top: 5%;
-    right: 2%;
+    right: 1%;
     max-height: 90%;
     // max-width: ;
     min-width: 200px; 
@@ -421,7 +421,7 @@ div#TOC {
     height: auto;
     overflow: auto;
     border: solid 1px #ccc;
-    margin-right: 20px;
+    margin-right: 0px;
     padding: 10px;
     box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
     -webkit-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);

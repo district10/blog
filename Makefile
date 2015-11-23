@@ -42,6 +42,12 @@ pts: posts
 posts:
 	$(MAKE) -C $(POSTS)
 
+index:
+	rm $(POSTS)/index.md
+
+posts:
+	$(MAKE) -C $(POSTS)
+
 sts: statics
 statics:
 	$(MAKE) -C $(STATICS)
