@@ -9,7 +9,7 @@
 --------
 
 设计行业，流行趋势瞬息万变。继拟物化、扁平化、长阴影之后，
-Low Poly（“低面设计”，也叫“多边形设计”）又火速掀起了最新设计风潮。
+Low Poly（[`'pɒlɪ]`，“低面设计”，也叫“多边形设计”）又火速掀起了最新设计风潮。
 
 在设计领域，多边形的复杂程度确定了最终效果的细腻程度，为了
 让设计产品的外观看起来更加圆润、细腻、自然，
@@ -103,3 +103,58 @@ Refs
 #. [“低面建模”设计美学-20140726早读课 | 互联网早读课](http://zaodula.com/archives/8578.html)
 #. [如何使用 JavaScript 生成 lowpoly 风格图像？ - 知乎](http://www.zhihu.com/question/29856775)
 #. [Dribbble - Phil Klay by Breno Bitencourt](https://dribbble.com/shots/2246022-Phil-Klay)
+
+
+![][micky]
+
+Fig. 4 a Original image, b the edge feature, c the simplified polygons
+and the constrained points
+
+
+[micky]: micky.png
+
+
+
+### Constrained edge feature
+
+ original Douglas–Peucker algorithm will
+oversimplifythestraightedgestofewendpoints.Sowemod-
+ified it and add the edge length constrain: if an edge is longer
+than a minimum length, we slice it into two segments from
+its midpoint. We choose the minimum length same as the
+sampling interval $L_i$:
+
+$L_i = \eta (L_w+L_h)$
+
+where L w and L h are the image width and height, respec-
+tively. η controls the sampling density. In our experiments,
+wesetη = 0.02.Thepointsintheresultpolygonsaremarked
+as constrained points (see Fig. 4c), while the polygonal seg-
+ments between them are constrained edges. Their positions
+willnotbemovedduringthelatteroptimizationsteps.More-
+over, the four corner points are set to constrained points as
+well.
+
+These simple but critical strategies guarantee the final
+image with clear feature edges and good visual effects.
+
+### Sampling based on saliency
+
+The number of the sample points follows:
+
+$$ N_s = \lambda (N - N_c )$$
+$$ N_b = (1 - \lambda )(N - N_c ) $$
+
+where N isthetotalnumberofsampling. $N_c$ denotes the 
+constrained point numbers in the previous step. $N_s$ is the number
+of sample points in the salientregion,while N b isintheback-
+ground region. λ controls the different density. When λ = 1,
+there will not be sampling points in the background. When
+λ = 0.5, the effect equals no saliency detection. In our prac-
+tice, we choose λ = 0.7 as an empirical value to get desired
+result. The total sampling number N can be given by the user
+input. We also provide a default value computed by this:
+
+$$N = \lfloor{\frac{L_w}{L_i}}\rfloor \times \lfloor\frac{L_h}{L_i}\rfloor$$
+
+

@@ -1116,10 +1116,8 @@ You can paint whatever you want with delegate, even a button.
 }
 ```
 
-杂七杂八的笔记 {#here}
+杂七杂八的笔记
 --------------
-
-go [here](#here)
 
 #. CloudCompare 源码里的 signal/slot 用了引用，但由于 Qt 的 signal/slot 机制的问题（需要 signature normalization），
 这样的代码运行（还不是编译期间变慢！）起来会更慢。^[参见我以前的笔记：[直觉上我也觉得用 & 不对](http://dvorak4tzx.lofter.com/post/1d4021c8_7e2c8cf)。]

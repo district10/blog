@@ -70,3 +70,30 @@ function prettyUnixTime( ts ) {
     var lts = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2); // 03:23, Jan 03, Sat
     return { ts: ts, sts: formattedTime, lts: lts };
 }
+
+
+function prependSharpToHdrs( hdrs ) {
+    for (var i = 0; i < hdrs.length; ++i ) {
+        var sharp = document.createElement('a');
+        sharp.href = '#' + hdrs[i].id;
+        sharp.className = 'hdrRef';
+        sharp.innerText = '#';
+        hdrs[i].appendChild(sharp);
+    }
+}
+
+function prependSharp() {
+    h1s = document.getElementsByTagName('h1');
+    h2s = document.getElementsByTagName('h2');
+    h3s = document.getElementsByTagName('h3');
+    h4s = document.getElementsByTagName('h4');
+    prependSharpToHdrs( h1s );
+    prependSharpToHdrs( h2s );
+    prependSharpToHdrs( h3s );
+    prependSharpToHdrs( h4s );
+}
+
+prependSharp();
+
+
+

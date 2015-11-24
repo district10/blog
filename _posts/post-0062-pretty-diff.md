@@ -165,7 +165,7 @@ When you don't want me to move（这行不变）
 
 ![基本上是个合格的纠错小助手](http://gnat.qiniudn.com/dictation.png)
 
-又稍微改了下 CSS，[line-through red text, so deletion will be more intuitive · district10/aha@0f2e017](https://github.com/district10/aha/commit/0f2e01732a978b94812067e9f00a06f3f8488cb1)，现在的效果：
+又稍微改了下 CSS，[district10/aha@0f2e017](https://github.com/district10/aha/commit/0f2e01732a978b94812067e9f00a06f3f8488cb1#diff-b195e3edfccd2066f031dd3d65cfea88L295)，现在的效果：
 
 ![](http://gnat.qiniudn.com/diffed/diff-new-css-2.png)
 

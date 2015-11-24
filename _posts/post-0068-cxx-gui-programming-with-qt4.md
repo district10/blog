@@ -1050,7 +1050,7 @@ int main(int argc, char *argv[])
 }
 ```
 
-### 4. Implementing Application Functionality
+### 4. Implementing App Functionality
 
 #### The Central Widget
 
@@ -1319,23 +1319,775 @@ QVariant Cell::evalFactor(const QString &str, int &pos) const
 
 ### 5. Creating Custom Widgets
 
+#### Customizing Qt Widgets
+
 ![][hex-spin-widget]
 
-#### Customizing Qt Widgets
+```cpp
+QSpinBox::setRange(0, 255);
+QRegExpValidator *validator = new QRegExpValidator(QRegExp("[0-9A-Fa-f]{1,8}"), this);
+
+// called by QSpinBox when the user types a value into the editor part of the
+// spin box and presses Enter
+int HexSpinBox::valueFromText(const QString &text) const
+{
+    return text.toInt( NULL, 16);
+}
+
+// QSpinBox calls it to update the editor part of the spin box when the user
+// presses the spin box's up or down arrows.
+QString HexSpinBox::textFromValue(int value) const
+{
+    return QString::number(value, 16).toUpper(); // lowercase
+}
+
+// called by QSpinBox to see if the text entered so far is valid. There are three
+// possible results: Invalid (the text doesn't match the regular expression),
+// Intermediate (the text is a plausible part of a valid value), and Acceptable
+// (the text is valid). The eQRegExpValidator has a suitable validate() function,
+// so we simply return the result of calling it. In theory, we should return
+// Invalid or Intermediate for evalues that lie outside the spin box's range, but
+// QSpinBox is smart enough to detect that condition without any help.
+// QValidator::State HexSpinBox::validate(QString &text, int &pos) const
+{
+    return validator->validate(text, pos);
+}
+```
+
+We have now finished the hexadecimal spin box. Customizing other Qt widgets
+follows the same pattern: Pick a suitable Qt widget, subclass it, and
+reimplement some virtual functions to change its behavior. If all we want to do
+is to customize an existing widget's look and feel, we can apply a style sheet
+or implement a custom style instead of subclassing the widget, as explained in
+Chapter 19.
+
 #### Subclassing QWidget
+
+```cpp
+class IconEditor : public QWidget
+{
+    Q_OBJECT
+    Q_PROPERTY(QColor penColor READ penColor WRITE setPenColor)
+    Q_PROPERTY(QImage iconImage READ iconImage WRITE setIconImage)
+    Q_PROPERTY(int zoomFactor READ zoomFactor WRITE setZoomFactor)
+    ...
+```
+
+The IconEditor class uses the Q_PROPERTY() macro to declare three custom properties: penColor,
+iconImage, and zoomFactor. Each property has a data type, a "read" function, and an optional "write"
+function. For example, the penColor property is of type QColor and can be read and written using the
+penColor() and setPenColor() functions.
+
+```cpp
+protected:
+    void mousePressEvent(QMouseEvent *event);
+    void mouseMoveEvent(QMouseEvent *event);
+    void paintEvent(QPaintEvent *event);
+```
+
+```cpp
+IconEditor::IconEditor(QWidget *parent)
+    : QWidget(parent)
+{
+    // the widget's content doesn't change when the widget is resized and that the
+    // content stays rooted to the widget's top-left corner
+    setAttribute(Qt::WA_StaticContents);
+
+
+    /*
+        By calling setSizePolicy() in the constructor with QSizePolicy::Minimum as
+        horizontal and vertical policies, we tell any layout manager that is
+        responsible for this widget that the widget's size hint is really its minimum
+        size. In other words, the widget can be stretched if required, but it should
+        never shrink below the size hint. 
+    */
+    setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
+
+    curColor = Qt::black;
+    zoom = 8;
+
+    image = QImage(16, 16, QImage::Format_ARGB32);
+    image.fill(qRgba(0, 0, 0, 0));
+}
+
+//                r   g  b   a
+QRgb red = qRgba(255, 0, 0, 255);
+QRgb red = 0xFFFF0000; // typedef of unsigned int   
+```
+
+```cpp
+// IconEditor.h
+public:
+    QSize sizeHint() const;
+
+// IconEditor.cpp
+QSize IconEditor::sizeHint() const
+{
+    QSize size = zoom * image.size();
+    if (zoom >= 3)
+        size += QSize(1, 1);
+    return size;
+}
+```
+
+```cpp
+void IconEditor::setIconImage(const QImage &newImage)
+{
+    if (newImage != image) {
+
+        image = newImage.convertToFormat(QImage::Format_ARGB32);
+
+        // call QWidget::update() to schedule a repainting of the widget
+        // using the new image
+        update();
+
+        // call QWidget::updateGeometry() to tell any layout that contains the
+        // widget that the widget's size hint has changed. The layout will then
+        // automatically adapt to the new size hint.
+        updateGeometry();
+    }
+}
+```
+
+force a paint event by calling QWidget::update() or QWidget::repaint(). The
+difference between these two functions is that repaint() forces an immediate
+repaint, whereas update() simply schedules a paint event for when Qt next
+processes events. (Both functions do nothing if the widget isn't visible
+on-screen.) 
+
+```cpp
+void IconEditor::paintEvent(QPaintEvent *event)
+{
+    QPainter painter(this);
+
+    // If the zoom factor is 3 or more, we draw the horizontal and vertical
+    // lines that form the grid using the QPainter::drawLine() function.
+    if (zoom >= 3) {
+
+        // set new color
+        painter.setPen(palette().foreground().color());
+        for (int i = 0; i <= image.width(); ++i)
+            // x1, x2, y1, y2, topLeft <= (0,0), x <= width, y <= height
+            painter.drawLine(zoom * i, 0,
+                             zoom * i, zoom * image.height());
+        for (int j = 0; j <= image.height(); ++j)
+            painter.drawLine(0, zoom * j,
+                             zoom * image.width(), zoom * j);
+    }
+
+    for (int i = 0; i < image.width(); ++i) {
+        for (int j = 0; j < image.height(); ++j) {
+            QRect rect = pixelRect(i, j);
+            if (!event->region().intersect(rect).isEmpty()) {
+                QColor color = QColor::fromRgba(image.pixel(i, j));
+                if (color.alpha() < 255)
+                    painter.fillRect(rect, Qt::white);
+                painter.fillRect(rect, color);
+            }
+        }
+    }
+}
+```
+
+
+A widget's palette consists of three color groups: active, inactive, and
+disabled. Which color group should be used depends on the widget's current
+state:
+
+#.  The Active group is used for widgets in the currently active window.
+#. The Inactive group is used for widgets in the other windows.
+#. The Disabled group is used for disabled widgets in any window.
+
+get an appropriate brush or color for drawing, the correct approach is to use
+the current palette, obtained from QWidget::palette(), and the required role,
+for example, QPalette::foreground().
+
+The pixelRect() function returns a QRect suitable for QPainter::fillRect(). The
+i and j parameters are pixel coordinates in the QImage—not in the widget. If
+the zoom factor is 1, the two coordinate systems coincide exactly.
+
+```cpp
+QRect IconEditor::pixelRect(int i, int j) const
+{
+    if (zoom >= 3) {
+        return QRect(zoom * i + 1, zoom * j + 1, zoom - 1, zoom - 1);
+    } else {
+        return QRect(zoom * i, zoom * j, zoom, zoom); // tl_x, tl_y, w, h
+    }
+}
+```
+
+```cpp
+void IconEditor::mousePressEvent(QMouseEvent *event)
+{
+    if (event->button() == Qt::LeftButton) {
+        setImagePixel(event->pos(), true);
+    } else if (event->button() == Qt::RightButton) {
+        setImagePixel(event->pos(), false);
+    }
+}
+```
+
+mouseMoveEvent() handles "mouse move" events. By default, these events are
+generated only when the user is holding down a button. It is possible to change
+this behavior by calling QWidget::setMouseTracking(), but we don't need to do
+so for this example.
+
+```cpp
+void IconEditor::setImagePixel(const QPoint &pos, bool opaque)
+{
+    // widget coordinates ==> image coordinates
+    int i = pos.x() / zoom;
+    int j = pos.y() / zoom;
+
+    // check whether the point is within the correct range
+    if (image.rect().contains(i, j)) {
+        if (opaque) {
+            image.setPixel(i, j, penColor().rgba());
+        } else {
+            image.setPixel(i, j, qRgba(0, 0, 0, 0));
+        }
+
+        update(pixelRect(i, j));
+    }
+}
+```
+
 #### Integrating Custom Widgets with Qt Designer
+we must subclass QDesignerCustomWidgetInterface and reimplement some virtual
+functions. We will assume that the plugin source code is located in a directory
+called iconeditorplugin and that the IconEditor source code is located in a
+parallel directory called iconeditor.  
+
+```cpp
+#include <QDesignerCustomWidgetInterface>
+
+class IconEditorPlugin : public QObject,
+                         public QDesignerCustomWidgetInterface
+{
+    Q_OBJECT
+    Q_INTERFACES(QDesignerCustomWidgetInterface)
+
+public:
+    IconEditorPlugin(QObject *parent = 0);
+
+    // the name of the widget provided by the plugin
+    QString name() const { return "IconEditor"; }
+
+    // the name of the header file for the specified widget encapsulated by the
+    // plugin
+    QString includeFile() const { return "iconeditor.h"; }
+
+    // the name of the widget box group to which this custom widget should
+    // belong. If the name isn't already in use, Qt Designer will create a new
+    // group for the widget
+    QString group() const;
+
+    // the icon to use to represent the custom widget in Qt Designer's widget
+    // box
+    QIcon icon() const;
+
+    QString toolTip() const;
+    QString whatsThis() const;
+
+    // true if the widget can contain other widgets; otherwise, it returns
+    // false
+    bool isContainer() const;
+
+    // Qt Designer calls the createWidget() function to create an instance of a
+    // widget class with the given parent
+    QWidget *createWidget(QWidget *parent);
+};
+
+// .cpp
+Q_EXPORT_PLUGIN2(iconeditorplugin, IconEditorPlugin)
+```
+
+`.pro`
+
+```
+TEMPLATE      = lib
+CONFIG       += designer plugin release
+HEADERS       = ../iconeditor/iconeditor.h \
+                iconeditorplugin.h
+SOURCES       = ../iconeditor/iconeditor.cpp \
+                iconeditorplugin.cpp
+RESOURCES     = iconeditorplugin.qrc
+DESTDIR       = $$[QT_INSTALL_PLUGINS]/designer
+```
+
+
+
+
 #### Double Buffering
+
+Qt provides the QRubberBand class for drawing
+rubber bands, but here we draw it ourselves to have finer control over the look, and to demonstrate double
+buffering.
+
+
+```cpp
+#include <QMap>
+#include <QPixmap>
+#include <QVector>
+#include <QWidget>
+
+class QToolButton;
+class PlotSettings;
+
+class Plotter : public QWidget
+{
+    Q_OBJECT
+
+public:
+    Plotter(QWidget *parent = 0);
+
+    void setPlotSettings(const PlotSettings &settings);
+    void setCurveData(int id, const QVector<QPointF> &data);
+    void clearCurve(int id);
+    QSize minimumSizeHint() const;
+    QSize sizeHint() const;
+
+public slots:
+    void zoomIn();
+    void zoomOut();
+
+// In the protected section of the class, we declare
+// all the QWidget event handlers that we want to reimplement
+protected:
+    void paintEvent(QPaintEvent *event);
+    void resizeEvent(QResizeEvent *event);
+    void mousePressEvent(QMouseEvent *event);
+    void mouseMoveEvent(QMouseEvent *event);
+    void mouseReleaseEvent(QMouseEvent *event);
+    void keyPressEvent(QKeyEvent *event);
+    void wheelEvent(QWheelEvent *event);
+
+private:
+    void updateRubberBandRegion();
+    void refreshPixmap();
+    void drawGrid(QPainter *painter);
+    void drawCurves(QPainter *painter);
+
+    enum { Margin = 50 };
+
+    QToolButton *zoomInButton;
+    QToolButton *zoomOutButton;
+    // store a curve's points as a QVector<QPointF>
+    QMap<int, QVector<QPointF> > curveMap;
+    QVector<PlotSettings> zoomStack;
+    int curZoom;
+    bool rubberBandIsShown;
+    QRect rubberBandRect;
+
+    // QPixmap. This variable holds a copy of the whole widget's rendering,
+    // identical to what is shown on-screen. The plot is always drawn onto this
+    // off-screen pixmap first; then the pixmap is copied onto the widget.
+    QPixmap pixmap;
+};
+
+
+// specifies the range of the x- and y-axes and the number of ticks for these axes
+class PlotSettings
+{
+public:
+    PlotSettings();
+
+    void scroll(int dx, int dy);
+    void adjust();
+    double spanX() const { return maxX - minX; }
+    double spanY() const { return maxY - minY; }
+
+    double minX;
+    double maxX;
+    double minY;
+    double maxY;
+    int numXTicks;
+    int numYTicks;
+
+private:
+    static void adjustAxis(double &min, double &max, int &numTicks);
+};
+```
+
+```cpp
+Plotter::Plotter(QWidget *parent)
+    : QWidget(parent)
+{
+    // tells QWidget to use the "dark" component of the palette as the color
+    // for erasing the widget, instead of the "window" component
+    // This gives Qt a default color that it can use to fill any newly revealed
+    // pixels when the widget is resized to a larger size, before paintEvent()
+    // even has the chance to paint the new pixels. We also need to call
+    // setAutoFillBackground(true) to enable this mechanism. (By default, child
+    // widgets inherit the background from their parent widget.)
+    setBackgroundRole(QPalette::Dark);
+    setAutoFillBackground(true);
+
+    // default: QSizePolicy::Preferred in both directions
+    setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+
+    // accept focus by clicking or by pressing Tab. When the Plotter has focus,
+    // it will receive events for key presses.
+    setFocusPolicy(Qt::StrongFocus);
+    rubberBandIsShown = false;
+
+    zoomInButton = new QToolButton(this);
+    zoomInButton->setIcon(QIcon(":/images/zoomin.png"));
+    zoomInButton->adjustSize();
+    connect(zoomInButton, SIGNAL(clicked()), this, SLOT(zoomIn()));
+
+    zoomOutButton = new QToolButton(this);
+    zoomOutButton->setIcon(QIcon(":/images/zoomout.png"));
+    zoomOutButton->adjustSize();
+    connect(zoomOutButton, SIGNAL(clicked()), this, SLOT(zoomOut()));
+
+    setPlotSettings(PlotSettings());
+}
+
+void Plotter::zoomOut()
+{
+    if (curZoom > 0) {
+        --curZoom;
+        zoomOutButton->setEnabled(curZoom > 0);
+        zoomInButton->setEnabled(true);
+        zoomInButton->show();
+        refreshPixmap();
+    }
+}
+
+void Plotter::setCurveData(int id, const QVector<QPointF> &data)
+{
+    curveMap[id] = data;
+    refreshPixmap();
+}
+
+void Plotter::clearCurve(int id);
+
+void Plotter::paintEvent(QPaintEvent * /* event */)
+{
+    QStylePainter painter(this);
+    painter.drawPixmap(0, 0, pixmap);
+
+    if (rubberBandIsShown) {
+        painter.setPen(palette().light().color());
+        // QRect::normalized() ensures that the rubber band rectangle has
+        // positive width and height. And adjusted() reduces the size of the
+        // rectangle by one pixel to allow for its own 1-pixel-wide outline
+        painter.drawRect(rubberBandRect.normalized()
+                                       .adjusted(0, 0, -1, -1));
+    }
+
+    if (hasFocus()) {
+        QStyleOptionFocusRect option;
+        option.initFrom(this);
+        option.backgroundColor = palette().dark().color();
+        painter.drawPrimitive(QStyle::PE_FrameFocusRect, option);
+    }
+}
+
+void Plotter::resizeEvent(QResizeEvent * /* event */)
+{
+    // reimplement resizeEvent() to place the Zoom In and Zoom Out buttons at
+    // the top right of the Plotter widget, side by side, separated by a
+    // 5-pixel gap and with a 5-pixel offset from the top and right edges of
+    // the parent widget
+    int x = width() - (zoomInButton->width()
+                       + zoomOutButton->width() + 10);
+    zoomInButton->move(x, 5);
+    zoomOutButton->move(x + zoomInButton->width() + 5, 5);
+    refreshPixmap();
+}
+
+void Plotter::mousePressEvent(QMouseEvent *event)
+{
+    QRect rect(Margin, Margin,
+               width() - 2 * Margin, height() - 2 * Margin);
+
+    if (event->button() == Qt::LeftButton) {
+        if (rect.contains(event->pos())) {
+            rubberBandIsShown = true;
+            rubberBandRect.setTopLeft(event->pos());
+            rubberBandRect.setBottomRight(event->pos());
+            updateRubberBandRegion();
+            // QWidget::setCursor() sets the cursor shape to use when the mouse
+            // hovers over a particular widget. If no cursor is set for a
+            // widget, the parent widget's cursor is used. The default for
+            // top-level widgets is an arrow cursor.
+            setCursor(Qt::CrossCursor);
+
+            // QApplication::setOverrideCursor() with Qt::WaitCursor to change
+            // the application's cursor to the standard wait cursor.
+        }
+    }
+}
+
+// consists of four calls to update() that schedule a paint event for the four
+// small rectangular areas that are covered by the rubber band (two vertical
+// and two horizontal lines).
+void Plotter::updateRubberBandRegion()
+{
+    QRect rect = rubberBandRect.normalized();
+    update(rect.left(), rect.top(), rect.width(), 1);
+    update(rect.left(), rect.top(), 1, rect.height());
+    update(rect.left(), rect.bottom(), rect.width(), 1);
+    update(rect.right(), rect.top(), 1, rect.height());
+}
+
+void Plotter::mouseMoveEvent(QMouseEvent *event)
+{
+    if (rubberBandIsShown) {
+        // erases the rubber band 
+        updateRubberBandRegion();
+        rubberBandRect.setBottomRight(event->pos());
+        // redraws it at the new coordinates
+        updateRubberBandRegion();
+    }
+}
+
+void Plotter::mouseReleaseEvent(QMouseEvent *event)
+{
+    if ((event->button() == Qt::LeftButton) && rubberBandIsShown) {
+        rubberBandIsShown = false;
+        // erase the rubber band 
+        updateRubberBandRegion();
+        // restore the standard arrow cursor
+        unsetCursor();
+
+        // If the rubber band is at least 4 x 4, we perform the zoom. 
+        // If the rubber band is smaller than that, it's likely that the user
+        // clicked the widget by mistake or to give it focus, so we do nothing
+        QRect rect = rubberBandRect.normalized();
+        if (rect.width() < 4 || rect.height() < 4)
+            return;
+        rect.translate(-Margin, -Margin);
+
+        PlotSettings prevSettings = zoomStack[curZoom];
+        PlotSettings settings;
+        double dx = prevSettings.spanX() / (width() - 2 * Margin);
+        double dy = prevSettings.spanY() / (height() - 2 * Margin);
+        settings.minX = prevSettings.minX + dx * rect.left();
+        settings.maxX = prevSettings.minX + dx * rect.right();
+        settings.minY = prevSettings.maxY - dy * rect.bottom();
+        settings.maxY = prevSettings.maxY - dy * rect.top();
+        settings.adjust();
+
+        zoomStack.resize(curZoom + 1);
+        zoomStack.append(settings);
+        zoomIn();
+    }
+}
+
+void Plotter::keyPressEvent(QKeyEvent *event)
+{
+    switch (event->key()) {
+    case Qt::Key_Plus:
+        zoomIn();
+        break;
+    case Qt::Key_Minus:
+        zoomOut();
+        break;
+    case Qt::Key_Left:
+        zoomStack[curZoom].scroll(-1, 0);
+        refreshPixmap();
+        break;
+    case Qt::Key_Right:
+        zoomStack[curZoom].scroll(+1, 0);
+        refreshPixmap();
+        break;
+    case Qt::Key_Down:
+        zoomStack[curZoom].scroll(0, -1);
+        refreshPixmap();
+        break;
+    case Qt::Key_Up:
+        zoomStack[curZoom].scroll(0, +1);
+        refreshPixmap();
+        break;
+    default:
+        QWidget::keyPressEvent(event);
+    }
+}
+```
+
+```cpp
+void Plotter::keyPressEvent(QKeyEvent *event)
+{
+    // For simplicity, we ignore the Shift, Ctrl, and Alt modifier keys, which
+    // are available through QKeyEvent::modifiers().
+    switch (event->key()) {
+    case Qt::Key_Plus:
+        zoomIn();
+        break;
+    case Qt::Key_Minus:
+        zoomOut();
+        break;
+    case Qt::Key_Left:
+        zoomStack[curZoom].scroll(-1, 0);
+        refreshPixmap();
+        break;
+    case Qt::Key_Right:
+        zoomStack[curZoom].scroll(+1, 0);
+        refreshPixmap();
+        break;
+    case Qt::Key_Down:
+        zoomStack[curZoom].scroll(0, -1);
+        refreshPixmap();
+        break;
+    case Qt::Key_Up:
+        zoomStack[curZoom].scroll(0, +1);
+        refreshPixmap();
+        break;
+    default:
+        QWidget::keyPressEvent(event);
+    }
+}
+
+void Plotter::wheelEvent(QWheelEvent *event)
+{
+    int numDegrees = event->delta() / 8;
+    int numTicks = numDegrees / 15;
+
+    // Most mice provide only a vertical wheel, but some also have a horizontal
+    // wheel. Qt supports both kinds of wheel
+    if (event->orientation() == Qt::Horizontal) {
+        zoomStack[curZoom].scroll(numTicks, 0);
+    } else {
+        zoomStack[curZoom].scroll(0, numTicks);
+    }
+
+    // When we use QScrollArea (covered in Chapter 6) to provide scroll bars,
+    // QScrollArea handles the mouse wheel events automatically, so we don't
+    // need to reimplement wheelEvent() ourselves.
+
+    refreshPixmap();
+}
+
+
+void Plotter::refreshPixmap()
+{
+    pixmap = QPixmap(size());
+    pixmap.fill(this, 0, 0);
+
+    QPainter painter(&pixmap);
+    painter.initFrom(this);
+    drawGrid(&painter);
+    drawCurves(&painter);
+    update();
+}
+
+// The drawGrid() function draws the grid behind the curves and the axes. The
+// area on which we draw the grid is specified by rect. If the widget isn't
+// large enough to accommodate the graph, we return immediately.
+void Plotter::drawGrid(QPainter *painter)
+{
+    QRect rect(Margin, Margin,
+               width() - 2 * Margin, height() - 2 * Margin);
+    if (!rect.isValid())
+        return;
+
+    PlotSettings settings = zoomStack[curZoom];
+    QPen quiteDark = palette().dark().color().light();
+    QPen light = palette().light().color();
+
+    for (int i = 0; i <= settings.numXTicks; ++i) {
+        int x = rect.left() + (i * (rect.width() - 1)
+                                 / settings.numXTicks);
+        double label = settings.minX + (i * settings.spanX()
+                                          / settings.numXTicks);
+        painter->setPen(quiteDark);
+        painter->drawLine(x, rect.top(), x, rect.bottom());
+        painter->setPen(light);
+        painter->drawLine(x, rect.bottom(), x, rect.bottom() + 5);
+        // painter->drawText(x, y, width, height, alignment, text);
+        // a more adaptable alternative would involve calculating the text's
+        // bounding rectangle using QFontMetrics
+        painter->drawText(x - 50, rect.bottom() + 5, 100, 20,
+                          Qt::AlignHCenter | Qt::AlignTop,
+                          QString::number(label));
+    }
+    for (int j = 0; j <= settings.numYTicks; ++j) {
+        int y = rect.bottom() - (j * (rect.height() - 1)
+                                   / settings.numYTicks);
+        double label = settings.minY + (j * settings.spanY()
+                                          / settings.numYTicks);
+        painter->setPen(quiteDark);
+        painter->drawLine(rect.left(), y, rect.right(), y);
+        painter->setPen(light);
+        painter->drawLine(rect.left() - 5, y, rect.left(), y);
+        painter->drawText(rect.left() - Margin, y - 10, Margin - 5, 20,
+                          Qt::AlignRight | Qt::AlignVCenter,
+                          QString::number(label));
+    }
+    painter->drawRect(rect.adjusted(0, 0, -1, -1));
+}
+
+void Plotter::drawCurves(QPainter *painter)
+{
+    static const QColor colorForIds[6] = {
+        Qt::red, Qt::green, Qt::blue, Qt::cyan, Qt::magenta, Qt::yellow
+    };
+    PlotSettings settings = zoomStack[curZoom];
+    QRect rect(Margin, Margin,
+               width() - 2 * Margin, height() - 2 * Margin);
+    if (!rect.isValid())
+        return;
+
+    // set the QPainter's clip region to the rectangle that contains the curves
+    // (excluding the margins and the frame around the graph)
+    painter->setClipRect(rect.adjusted(+1, +1, -1, -1));
+
+    QMapIterator<int, QVector<QPointF> > i(curveMap);
+    while (i.hasNext()) {
+        i.next();
+
+        int id = i.key();
+        QVector<QPointF> data = i.value();
+        QPolygonF polyline(data.count());
+
+        for (int j = 0; j < data.count(); ++j) {
+            double dx = data[j].x() - settings.minX;
+            double dy = data[j].y() - settings.minY;
+            double x = rect.left() + (dx * (rect.width() - 1)
+                                         / settings.spanX());
+            double y = rect.bottom() - (dy * (rect.height() - 1)
+                                           / settings.spanY());
+            polyline[j] = QPointF(x, y);
+        }
+
+        // set the pen color for the curve
+        painter->setPen(colorForIds[uint(id) % 6]);
+        // draw a line that goes through all the curve's points
+        painter->drawPolyline(polyline);
+    }
+}
+
+```
 
 Part II: Intermediate Qt
 ------------------------
 
 ### 6. Layout Management
-    Laying Out Widgets on a Form
-    Stacked Layouts
-    Splitters
-    Scrolling Areas
-    Dock Windows and Toolbars
-    Multiple Document Interface
+
+#### Laying Out Widgets on a Form
+
+```cpp
+FindFileDialog::FindFileDialog(QWidget *parent)
+    : QDialog(parent)
+{
+    ...
+    setMinimumSize(265, 190);
+    resize(365, 240);
+}
+```
+
+
+
+
+#### Stacked Layouts
+#### Splitters
+#### Scrolling Areas
+#### Dock Windows and Toolbars
+#### Multiple Document Interface
 
 ### 7. Event Processing
 

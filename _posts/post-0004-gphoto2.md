@@ -13,7 +13,7 @@ Linux 下命令行环境为一种 shell，通常默认为 Bash（borne-again she
 ### Tab 补全
 
 命令不需要全部手敲，按 `Tab` 键命令可自动补全。
-如：<kbd>ec<TAB></kbd>（这里的 <kbd><TAB></kbd> 指的是键盘上的 `Tab` 键），
+如：<kbd>ec&lt;TAB&gt;</kbd>（这里的 <kbd>&lt;TAB&gt;</kbd> 指的是键盘上的 `Tab` 键），
 Bash 会自动补全为 `echo`{.bash}，接着敲空格，再 `hello Bash`，
 即整个语句是 `echo hello Bash`{.bash}，输出为 `hello Bash`{.plain}。
 

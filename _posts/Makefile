@@ -8,6 +8,7 @@ IDXMD = _index_header.md _index_footer.md
 
 CURFILES = \
 post-0068-cxx-gui-programming-with-qt4.md \
+post-0048-low-poly-in-practice.md \
 post-0069-gis-spatial-analysis-application-modeling.md \
 post-0025-doc-bridge-texture.md \
 post-0055-writing-guide-to-hackers.md \
