@@ -2078,22 +2078,471 @@ FindFileDialog::FindFileDialog(QWidget *parent)
     setMinimumSize(265, 190);
     resize(365, 240);
 }
+
+void FindFileDialog::resizeEvent(QResizeEvent * /* event */)
+{
+    int extraWidth = width() - minimumWidth();
+    int extraHeight = height() - minimumHeight();
+    ...
+}
+
+QGridLayout *leftLayout = new QGridLayout;
+leftLayout->addWidget(namedLabel, 0, 0);
+leftLayout->addWidget(namedLineEdit, 0, 1);
+leftLayout->addWidget(lookInLabel, 1, 0);
+leftLayout->addWidget(lookInLineEdit, 1, 1);
+leftLayout->addWidget(subfoldersCheckBox, 2, 0, 1, 2); // span two columns
+leftLayout->addWidget(tableWidget, 3, 0, 1, 2);
+leftLayout->addWidget(messageLabel, 4, 0, 1, 2);
+
+QVBoxLayout *rightLayout = new QVBoxLayout;
+rightLayout->addWidget(findButton);
+rightLayout->addWidget(stopButton);
+rightLayout->addWidget(closeButton);
+// Stretch. In Qt Designer, we can achieve the same effect by inserting a spacer
+rightLayout->addStretch(); 
+rightLayout->addWidget(helpButton);
+
+QHBoxLayout *mainLayout = new QHBoxLayout;
+mainLayout->addLayout(leftLayout);
+mainLayout->addLayout(rightLayout);
+setLayout(mainLayout);
+```
+
+QLayout::setContentsMargins() and QLayout::setSpacing()
+gridlayout->addWidget(widget, row, column, rowSpan, columnSpan);
+
+QSizePolicy, sizeHint(), minimumSizeHint()
+
+#. Fixed
+#. Minimum
+#. Maximum
+#. Prefered
+#. Expanding
+
+![][size-policy]
+
+In addition to the size policy's horizontal and vertical components, the QSizePolicy class stores a horizontal
+and a vertical stretch factor. 
+
+#### Stacked Layouts
+
+For convenience, Qt also includes QStackedWidget, which provides a QWidget
+with a built-in QStackedLayout.
+
+setCurrentIndex(), 
+The page number for a child widget is available using indexOf()
+
+![][stacked-widgets]
+
+#. QListWidget and a QStackedWidget to the form.
+#. Connect the list widget's currentRowChanged(int) signal to the stacked widget's setCurrentIndex(int) slot.
+#. list widget's currentRow property to 0.
+
+For cases where the number of pages is small and likely to remain small, a simpler alternative to using a
+QStackedWidget and QListWidget is to use a QTabWidget.
+
+#### Splitters
+
+![][splitter]
+
+```cpp
+#include <QtGui>
+
+int main(int argc, char *argv[])
+{
+    QApplication app(argc, argv);
+
+    QTextEdit *editor1 = new QTextEdit;
+    QTextEdit *editor2 = new QTextEdit;
+    QTextEdit *editor3 = new QTextEdit;
+
+    QSplitter splitter(Qt::Horizontal);
+    splitter.addWidget(editor1);
+    splitter.addWidget(editor2);
+    splitter.addWidget(editor3);
+
+    editor1->setPlainText("...");
+    editor2->setPlainText("...");
+    editor3->setPlainText("...");
+
+    splitter.setWindowTitle(QObject::tr("Splitter"));
+    splitter.show();
+
+    return app.exec();
+}
+```
+
+```cpp
+mainSplitter = new QSplitter(Qt::Horizontal);
+mainSplitter->addWidget(foldersTreeWidget);
+mainSplitter->addWidget(rightSplitter);
+mainSplitter->setStretchFactor(1, 1); // factor!
+setCentralWidget(mainSplitter);
+
+// write settings
+void MailClient::writeSettings()
+{
+    QSettings settings("Software Inc.", "Mail Client");
+
+    settings.beginGroup("mainWindow");
+    settings.setValue("geometry", saveGeometry());
+    settings.setValue("mainSplitter", mainSplitter->saveState());
+    settings.setValue("rightSplitter", rightSplitter->saveState());
+    settings.endGroup();
+}
+
+// readSettings
+void MailClient::readSettings()
+{
+    QSettings settings("Software Inc.", "Mail Client");
+
+    settings.beginGroup("mainWindow");
+    restoreGeometry(settings.value("geometry").toByteArray());
+    mainSplitter->restoreState(
+            settings.value("mainSplitter").toByteArray());
+    rightSplitter->restoreState(
+            settings.value("rightSplitter").toByteArray());
+    settings.endGroup();
+}
+```
+
+#### Scrolling Areas
+
+```cpp
+IconEditor *iconEditor = new IconEditor;
+iconEditor->setIconImage(QImage(":/images/mouse.png"));
+
+QScrollArea scrollArea;
+scrollArea.setWidget(iconEditor);
+scrollArea.viewport()->setBackgroundRole(QPalette::Dark);
+scrollArea.viewport()->setAutoFillBackground(true);
+scrollArea.setWindowTitle(QObject::tr("Icon Editor"));
+scrollArea.show();
+```
+
+By calling setWidgetResizable(true), we can tell QScrollArea to
+automatically resize the widget to take advantage of any extra space beyond its size hint.
+
+![][scroll-area]
+
+```cpp
+scrollArea.setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+scrollArea.setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+```
+
+#### Dock Windows and Toolbars
+
+```cpp
+QDockWidget::setFeatures();
+```
+
+![][dockarea]
+
+The corners indicated with dotted lines can belong to either of their two adjoining dock areas. For example, we
+could make the top-left corner belong to the left dock area by calling
+QMainWindow::setCorner(Qt::TopLeftCorner,  Qt::LeftDockWidgetArea).
+
+
+DockArea
+
+```cpp
+QDockWidget *shapesDockWidget = new QDockWidget(tr("Shapes"));
+shapesDockWidget->setObjectName("shapesDockWidget");
+shapesDockWidget->setWidget(treeWidget);
+// setAllowedAreas() call specifies constraints on which dock areas can accept
+// the dock window
+shapesDockWidget->setAllowedAreas(Qt::LeftDockWidgetArea
+                                     | Qt::RightDockWidgetArea);
+addDockWidget(Qt::RightDockWidgetArea, shapesDockWidget);
+```
+
+Normally we do not bother to give widgets object names, but when we create dock windows and
+toolbars, doing so is necessary if we want to use QMainWindow::saveState() and
+QMainWindow::restoreState() to save and restore the dock window and toolbar geometries and states.
+
+ToolBar
+
+```cpp
+QToolBar *fontToolBar = new QToolBar(tr("Font"));
+
+fontToolBar->setObjectName("fontToolBar");
+fontToolBar->addWidget(familyComboBox);
+fontToolBar->addWidget(sizeSpinBox);
+fontToolBar->addAction(boldAction);
+fontToolBar->addAction(italicAction);
+fontToolBar->addAction(underlineAction);
+
+fontToolBar->setAllowedAreas(Qt::TopToolBarArea
+                                | Qt::BottomToolBarArea);
+addToolBar(fontToolBar);
+```
+
+QMainWindow's saveState() and restoreState()
+
+settings.setValue("geometry", saveGeometry());
+settings.setValue("state", saveState());
+
+restoreGeometry(settings.value("geometry").toByteArray());
+restoreState(settings.value("state").toByteArray());
+
+
+Finally, QMainWindow provides a context menu that lists all the dock windows and toolbars. This menu is shown
+in Figure 6.15. The user can close and restore dock windows and hide and restore toolbars using this menu.?? where?
+
+#### Multiple Document Interface
+
+QMdiArea
+
+![][mdi]
+
+```cpp
+MainWindow::MainWindow()
+{
+    mdiArea = new QMdiArea;
+    setCentralWidget(mdiArea);
+    connect(mdiArea, SIGNAL(subWindowActivated(QMdiSubWindow*)),
+            this, SLOT(updateActions()));
+
+    createActions();
+    createMenus();
+    createToolBars();
+    createStatusBar();
+
+    setWindowIcon(QPixmap(":/images/icon.png"));
+    setWindowTitle(tr("MDI Editor"));
+    // Such timers time out as soon as the event loop is idle. In practice,
+    // this means that the constructor will finish, and then after the main
+    // window has been shown, loadFiles() will be called
+    QTimer::singleShot(0, this, SLOT(loadFiles()));
+}
+```
+
+```cpp
+void MainWindow::loadFiles()
+{
+    QStringList args = QApplication::arguments();
+    args.removeFirst();
+    if (!args.isEmpty()) {
+        foreach (QString arg, args)
+            openFile(arg);
+        mdiArea->cascadeSubWindows();
+    } else {
+        newFile();
+    }
+    mdiArea->activateNextSubWindow();
+}
+```
+
+Qt-specific command-line options, such as -style and -font, are automatically
+removed from the argument list by the QApplication constructor. So, if we write
+mdieditor -style motif readme.txt on the command line,
+QApplication::arguments() returns a QStringList containing two items
+("mdieditor" and "readme.txt"), and the MDI Editor application starts up with
+the document readme.txt.  
+
+```cpp
+void MainWindow::newFile()
+{
+    Editor *editor = new Editor;
+    editor->newFile();
+    addEditor(editor);
+}
+```
+
+```cpp
+void createActions();
+void createMenus();
+void createToolBars();
+void createStatusBar();
+```
+
+```cpp
+void MainWindow::cut()
+{
+    if (activeEditor())
+        activeEditor()->cut();
+}
+```
+
+```cpp
+QSize Editor::sizeHint() const
+{
+    return QSize(72 * fontMetrics().width('x'),
+                 25 * fontMetrics().lineSpacing());
+}
+```
+
+```cpp
+void Editor::newFile()
+{
+    static int documentNumber = 1;
+
+    curFile = tr("document%1.txt").arg(documentNumber);
+    setWindowTitle(curFile + "[*]");
+    action->setText(curFile);
+    isUntitled = true;
+    ++documentNumber;
+}
 ```
 
 
+QRC
 
+```xml
+<RCC>
+<qresource>
+    <file>images/copy.png</file>
+    <file>images/cut.png</file>
+    <file>images/document.png</file>
+    <file>images/icon.png</file>
+    <file>images/new.png</file>
+    <file>images/open.png</file>
+    <file>images/paste.png</file>
+    <file>images/save.png</file>
+</qresource>
+</RCC>
+```
 
-#### Stacked Layouts
-#### Splitters
-#### Scrolling Areas
-#### Dock Windows and Toolbars
-#### Multiple Document Interface
+```cpp
+QGridLayout *mainLayout = new QGridLayout;
+mainLayout->setColumnStretch(0, 1);
+mainLayout->setColumnStretch(1, 3);
+mainLayout->addWidget(listWidget, 0, 0);
+mainLayout->addLayout(stackedLayout, 0, 1);
+mainLayout->addWidget(buttonBox, 1, 0, 1, 2);
+setLayout(mainLayout);
+```
 
 ### 7. Event Processing
 
-    Reimplementing Event Handlers
-    Installing Event Filters
-    Staying Responsive during Intensive Processing
+#### Reimplementing Event Handlers
+
+QEvent::type() returns QEvent::MouseButtonPress
+
+Events are notified to objects through their event() function, inherited from QObject. The event()
+implementation in QWidget forwards the most common types of events to specific event handlers, such as
+mousePressEvent(), keyPressEvent(), and paintEvent().
+
+```cpp
+void CodeEditor::keyPressEvent(QKeyEvent *event)
+{
+    switch (event->key()) {
+    case Qt::Key_Home:
+        if (event->modifiers() & Qt::ControlModifier) {
+            goToBeginningOfDocument();
+        } else {
+            goToBeginningOfLine();
+        }
+        break;
+    case Qt::Key_End:
+        ...
+    default:
+        QWidget::keyPressEvent(event);
+    }
+}
+```
+
+The Tab and Backtab (Shift+Tab) keys are special cases. QWidget::event()
+handles them before it calls keyPressEvent(), with the semantic of passing the
+focus to the next or previous widget in the focus chain.  This behavior is
+usually what we want, but in a CodeEditor widget, we might prefer to make Tab
+indent a line.  The event() reimplementation would then look like this:
+
+```cpp
+bool CodeEditor::event(QEvent *event)
+{
+    if (event->type() == QEvent::KeyPress) {
+        QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);
+        if (keyEvent->key() == Qt::Key_Tab) {
+            insertAtCurrentPosition('\t');
+            return true;
+        }
+    }
+    return QWidget::event(event);
+}
+```
+
+QAction::setShortcutContext() or
+QShortcut::setContext()
+
+```cpp
+// ticker.h
+#include <QWidget>
+
+class Ticker : public QWidget
+{
+    Q_OBJECT
+    Q_PROPERTY(QString text READ text WRITE setText)
+
+public:
+    Ticker(QWidget *parent = 0);
+
+    void setText(const QString &newText);
+    QString text() const { return myText; }
+    QSize sizeHint() const;
+
+protected:
+    void paintEvent(QPaintEvent *event);
+
+    void timerEvent(QTimerEvent *event);
+    void showEvent(QShowEvent *event);
+    void hideEvent(QHideEvent *event);
+
+private:
+    QString myText;
+    int offset;
+    int myTimerId;
+};
+
+// ticker.cpp
+void Ticker::setText(const QString &newText)
+{
+    myText = newText;
+    update();               // repaint
+    updateGeometry();       // sizeHint()
+}
+
+QSize Ticker::sizeHint() const
+{
+    // QWidget::fontMetrics() returns a QFontMetrics object that can be queried
+    // to obtain information relating to the widget's font.
+    return fontMetrics().size(0, text()); // 
+}
+
+void Ticker::paintEvent(QPaintEvent * /* event */)
+{
+    QPainter painter(this);
+
+    // QWidget::fontMetrics() returns a QFontMetrics object that can be queried
+    // to obtain information relating to the widget's font.
+    int textWidth = fontMetrics().width(text());
+    if (textWidth < 1)
+        return;
+    int x = -offset;
+    while (x < width()) {
+        painter.drawText(x, 0, textWidth, height(), // 这是 QWidget::height()
+                         Qt::AlignLeft | Qt::AlignVCenter, text());
+        x += textWidth;
+    }
+}
+
+void Ticker::showEvent(QShowEvent * /* event */)
+{
+    // The call to QObject::startTimer() returns an ID number, which we can use
+    // later to identify the timer. QObject supports multiple independent
+    // timers, each with its own time interval.
+    myTimerId = startTimer(30);
+}
+```
+
+
+#### Installing Event Filters
+
+
+
+
+#### Staying Responsive during Intensive Processing
 
 ### 8. 2D Graphics
     Painting with QPainter
@@ -2103,7 +2552,7 @@ FindFileDialog::FindFileDialog(QWidget *parent)
     Printing
 
 ### 9. Drag and Drop
-    Enabling Drag and Drop
+   Enabling Drag and Drop
     Supporting Custom Drag Types
     Clipboard Handling
 
@@ -2243,3 +2692,7 @@ Introduction to C++ for Java and C# Programmers
 ![][dialog]
 ![][multi-document]
 ![][table-widget]
+![][size-policy]
+![][stacked-widgets]
+![][splitter]
+![][mdi]

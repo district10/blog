@@ -26,4 +26,8 @@ About | 关于
 
 ![Kimonotocat](http://gnat-tang-shared-image.qiniudn.com/octocat/kimonotocat.png)
 
-注：很多摘抄并没有用引用符，计划 tag 功能弄好了再把文章标记一下作为申明。
+注：
+
+#. 很多摘抄并没有用引用符，计划 tag 功能弄好了再把文章标记一下作为申明。
+#. 还没有在豆瓣、微博、简书推广这个博客生成器，而且搜索引擎现在不爬七牛 CDN（robots 成功了但是爬虫都不来！），人太少了。
+#. Anyway，CSS 和功能还要慢慢打磨，我自己先用着吧～

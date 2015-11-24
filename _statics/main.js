@@ -72,28 +72,28 @@ function prettyUnixTime( ts ) {
 }
 
 
-function prependSharpToHdrs( hdrs ) {
-    for (var i = 0; i < hdrs.length; ++i ) {
-        var sharp = document.createElement('a');
+function appendSharpToHdrs( hdrs ) {
+    for ( var i = 0; i < hdrs.length; ++i ) {
+        var sharp = document.createElement( 'a' );
         sharp.href = '#' + hdrs[i].id;
         sharp.className = 'hdrRef';
         sharp.innerText = '#';
-        hdrs[i].appendChild(sharp);
+        hdrs[i].appendChild( sharp );
     }
 }
 
-function prependSharp() {
-    h1s = document.getElementsByTagName('h1');
-    h2s = document.getElementsByTagName('h2');
-    h3s = document.getElementsByTagName('h3');
-    h4s = document.getElementsByTagName('h4');
-    prependSharpToHdrs( h1s );
-    prependSharpToHdrs( h2s );
-    prependSharpToHdrs( h3s );
-    prependSharpToHdrs( h4s );
+function appendSharp() {
+    h1s = document.getElementsByTagName( 'h1' );
+    h2s = document.getElementsByTagName( 'h2' );
+    h3s = document.getElementsByTagName( 'h3' );
+    h4s = document.getElementsByTagName( 'h4' );
+    appendSharpToHdrs( h1s );
+    appendSharpToHdrs( h2s );
+    appendSharpToHdrs( h3s );
+    appendSharpToHdrs( h4s );
 }
 
-prependSharp();
+appendSharp();
 
 
 
