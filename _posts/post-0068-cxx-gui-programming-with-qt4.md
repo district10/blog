@@ -2777,7 +2777,7 @@ Qt::NoBrush). In modern applications, gradient fills are a popular alternative t
 Gradients rely on color interpolation to obtain smooth transitions between two or more colors. They are
 frequently used to produce 3D effects; for example, the Plastique and Cleanlooks styles use gradients to
 render QPushButtons.
-Qt supports three types of gradients: linear, conical, and radial. The Oven Timer example in the next section
+Qt supports three types of gradients: linear, conical `['kɑnɪkl]` (圆锥形的), and radial. The Oven Timer example in the next section
 combines all three types of gradients in a single widget to make it look like the real thing.
 
 ![QPainter's gradient brushes][gradient]
@@ -2857,8 +2857,529 @@ QPainter by (+0.5, +0.5).
 
 ![`QPainter::drawRect(2.5, 2.5, 6, 5)`{.cpp} with antialiasing][drawrect-3]
 
+Now that we understand the default coordinate system, we can take a closer look at how it can be changed
+using QPainter's viewport, window, and world transform. (In this context, the term "window" does not refer to
+a window in the sense of a top-level widget, and the "viewport" has nothing to do with QScrollArea's
+viewport.)
+
+The window–viewport mechanism is useful to make the drawing code independent of the size or resolution of
+the paint device. For example, if we want the logical coordinates to extend from (-50, -50) to (+50, +50), with
+(0, 0) in the middle, we can set the window as follows:
+
+`painter.setWindow(-50, -50, 100, 100);`{.cpp}, x0, y0, width, height
+
+![][win-port]
+
+Now comes the world transform. The world transform is a transformation matrix that is applied in addition to
+the window–viewport conversion. It allows us to translate, scale, rotate, or shear the items we are drawing.
+For example, if we wanted to draw text at a 45° angle, we would use this code:
+
+```cpp
+QTransform transform;
+transform.rotate(+45.0);
+painter.setWorldTransform(transform);
+painter.drawText(pos, tr("Sales"));
+```
+
+The logical coordinates we pass to drawText() are converted by the world transform, then mapped to physical
+coordinates using the window–viewport settings.
+If we specify multiple transformations, they are applied in the order in which they are given. For example, if we
+want to use the point (50, 50) as the rotation's pivot point, we can do so by translating the window by (+50,
++50), performing the rotation, and then translating the window back to its original position:
+
+```cpp
+QTransform transform;
+transform.translate(+50.0, +50.0);
+transform.rotate(+45.0);
+transform.translate(-50.0, -50.0);
+painter.setWorldTransform(transform);
+painter.drawText(pos, tr("Sales"));
+```
+
+A simpler way to specify transformations is to use QPainter's translate(), scale(), rotate(), and shear()
+
+```cpp
+convenience functions:
+painter.translate(-50.0, -50.0);
+painter.rotate(+45.0);
+painter.translate(+50.0, +50.0);
+painter.drawText(pos, tr("Sales"));
+```
+
+If we want to use the same transformations repeatedly, it is more efficient to store them in a QTransform
+object and set the world transform on the painter whenever the transformations are needed.
+
+```cpp
+// oventimer.h
+#include <QDateTime>
+#include <QWidget>
+
+class QTimer;
+
+class OvenTimer : public QWidget
+{
+    Q_OBJECT
+
+public:
+    OvenTimer(QWidget *parent = 0);
+
+    void setDuration(int secs);
+    int duration() const;
+    void draw(QPainter *painter);
+
+signals:
+    void timeout();
+
+protected:
+    void paintEvent(QPaintEvent *event);
+    void mousePressEvent(QMouseEvent *event);
+
+private:
+    QDateTime finishTime;
+    QTimer *updateTimer;
+    QTimer *finishTimer;
+};
+```
+
+```cpp
+// oventimer.cpp
+#include <QtGui>
+#include <cmath>
+
+#ifndef M_PI
+#define M_PI 3.14159265359
+#endif
+
+#include "oventimer.h"
+
+const double DegreesPerMinute = 7.0;
+const double DegreesPerSecond = DegreesPerMinute / 60;
+const int MaxMinutes = 45;
+const int MaxSeconds = MaxMinutes * 60;
+const int UpdateInterval = 5;
+
+OvenTimer::OvenTimer(QWidget *parent)
+    : QWidget(parent)
+{
+    finishTime = QDateTime::currentDateTime();
+
+    //  refresh the appearance of the widget every five seconds
+    updateTimer = new QTimer(this);
+    connect(updateTimer, SIGNAL(timeout()), this, SLOT(update()));
+
+    // finishTimer emits the widget's timeout() signal when the oven timer
+    // reaches 0. The finishTimer needs to time out only once, so we call
+    // setSingleShot(true)
+    finishTimer = new QTimer(this);
+    finishTimer->setSingleShot(true);
+    connect(finishTimer, SIGNAL(timeout()), this, SIGNAL(timeout()));
+    // an optimization to stop updating the widget when the timer is inactive
+    connect(finishTimer, SIGNAL(timeout()), updateTimer, SLOT(stop()));
+
+    QFont font;
+    font.setPointSize(8);
+    setFont(font);
+}
+
+void OvenTimer::setDuration(int secs)
+{
+    secs = qBound(0, secs, MaxSeconds);
+
+    finishTime = QDateTime::currentDateTime().addSecs(secs);
+
+    if (secs > 0) {
+        updateTimer->start(UpdateInterval * 1000);
+        finishTimer->start(secs * 1000);
+    } else {
+        updateTimer->stop();
+        finishTimer->stop();
+    }
+    update();
+}
+
+int OvenTimer::duration() const
+{
+    int secs = QDateTime::currentDateTime().secsTo(finishTime);
+    if (secs < 0)
+        secs = 0;
+    return secs;
+}
+
+void OvenTimer::mousePressEvent(QMouseEvent *event)
+{
+    QPointF point = event->pos() - rect().center();
+    double theta = std::atan2(-point.x(), -point.y()) * 180.0 / M_PI;
+    setDuration(duration() + int(theta / DegreesPerSecond));
+    update();
+}
+
+void OvenTimer::paintEvent(QPaintEvent * /* event */)
+{
+    QPainter painter(this);
+    painter.setRenderHint(QPainter::Antialiasing, true);
+
+    int side = qMin(width(), height());
+
+    // 最大内接正方形
+    // Sets the painter's viewport rectangle to be the rectangle beginning at
+    // (x, y) with the given width and height.
+    painter.setViewport((width() - side) / 2, (height() - side) / 2,
+                        side, side);
+
+    // [0:100, 0:100] --> [-50:50, -50:50]
+    // The window rectangle is part of the view transformation. The window
+    // specifies the logical coordinate system. Its sister, the viewport(),
+    // specifies the device coordinate system.
+    painter.setWindow(-50, -50, 100, 100);
+
+    draw(&painter);
+}
+
+void OvenTimer::draw(QPainter *painter)
+{
+    // The triangle is specified by three hard-coded coordinates
+    static const int triangle[3][2] = {
+        { -2, -49 }, { +2, -49 }, { 0, -47 }
+    };
+    QPen thickPen(palette().foreground(), 1.5);
+    QPen thinPen(palette().foreground(), 0.5);
+    QColor niceBlue(150, 150, 200);
+
+    // triangle zero marker
+    painter->setPen(thinPen);
+    painter->setBrush(palette().foreground());
+    painter->drawPolygon(QPolygon(3, &triangle[0][0]));
+
+    QConicalGradient coneGradient(0, 0, -90.0);
+    coneGradient.setColorAt(0.0, Qt::darkGray);
+    coneGradient.setColorAt(0.2, niceBlue);
+    coneGradient.setColorAt(0.5, Qt::white);
+    coneGradient.setColorAt(1.0, Qt::darkGray);
+
+    painter->setBrush(coneGradient);
+    painter->drawEllipse(-46, -46, 92, 92);
+
+    // halo effect
+    QRadialGradient haloGradient(0, 0, 20, 0, 0);
+    haloGradient.setColorAt(0.0, Qt::lightGray);
+    haloGradient.setColorAt(0.8, Qt::darkGray);
+    haloGradient.setColorAt(0.9, Qt::white);
+    haloGradient.setColorAt(1.0, Qt::black);
+
+    // NoPen is a pen!
+    painter->setPen(Qt::NoPen);
+    painter->setBrush(haloGradient);
+    painter->drawEllipse(-20, -20, 40, 40);
+
+    QLinearGradient knobGradient(-7, -25, 7, -25);
+    knobGradient.setColorAt(0.0, Qt::black);
+    knobGradient.setColorAt(0.2, niceBlue);
+    knobGradient.setColorAt(0.3, Qt::lightGray);
+    knobGradient.setColorAt(0.8, Qt::white);
+    knobGradient.setColorAt(1.0, Qt::black);
+
+    // rotate the painter's coordinate system 
+    painter->rotate(duration() * DegreesPerSecond);
+    painter->setBrush(knobGradient);
+    painter->setPen(thinPen);
+    painter->drawRoundRect(-7, -25, 14, 50, 99, 49);
+
+    for (int i = 0; i <= MaxMinutes; ++i) {
+        if (i % 5 == 0) {
+            painter->setPen(thickPen);
+            painter->drawLine(0, -41, 0, -44);
+            painter->drawText(-15, -41, 30, 30,
+                              Qt::AlignHCenter | Qt::AlignTop,
+                              QString::number(i));
+        } else {
+            painter->setPen(thinPen);
+            painter->drawLine(0, -42, 0, -44);
+        }
+        painter->rotate(-DegreesPerMinute);
+    }
+}
+
+```
+ 
+The code in the for loop suffers from a minor flaw, which would quickly become apparent if we performed
+more iterations. Each time we call rotate(), we effectively multiply the current world transform with a rotation
+transform, producing a new world transform. The rounding errors associated with floating-point arithmetic
+gradually accumulate, resulting in an increasingly inaccurate world transform. Here's one way to rewrite the
+code to avoid this issue, using save() and restore() to save and reload the original transform for each iteration
+
+```cpp
+painter->setPen(thinPen);
+painter->setBrush(knobGradient);
+for (int i = 0; i <= MaxMinutes; ++i) {
+    painter->save();
+    painter->rotate(-i * DegreesPerMinute);
+    if (i % 5 == 0) {
+        painter->setPen(thickPen);
+        painter->drawLine(0, -41, 0, -44);
+        painter->drawText(-15, -41, 30, 30,
+        Qtk:AlignHCenter | Qt::AlignTop,
+        QString::number(i));
+    } else {
+        painter->setPen(thinPen);
+        painter->drawLine(0, -42, 0, -44);
+    }
+    painter->restore();
+}
+```
+
+![Oventimer][oventimer]
+
 #### High-Quality Rendering with QImage
+
+When accuracy is more important than efficiency, we can draw to a QImage and copy the result onto the
+screen. This always uses Qt's own internal paint engine, giving identical results on all platforms. The only
+restriction is that the QImage on which we paint must be created with an argument of either
+QImage::Format_RGB32 or QImage::Format_ARGB32_Premultiplied.
+
+The premultiplied ARGB32 format is almost identical to the conventional ARGB32 format (0xAARRGGBB), the
+difference being that the red, green, and blue channels are "premultiplied" with the alpha channel. This means
+that the RGB values, which normally range from 0x00 to 0xFF, are scaled from 0x00 to the alpha value. For
+example, a 50%-transparent blue color is represented as 0x7F0000FF in ARGB32 format, but 0x7F00007F in
+premultiplied ARGB32 format, and similarly a 75%-transparent dark green of 0x3F008000 in ARGB32 format
+would be 0x3F002000 in premultiplied ARGB32 format.
+
+Let's suppose we want to use antialiasing for drawing a widget, and we want to obtain good results even on
+X11 systems with no X Render extension. The original paintEvent() handler, which relies on X Render for the
+antialiasing, might look like this:
+
+void MyWidget::paintEvent(QPaintEvent *event)
+{
+    QImage image(size(), QImage::Format_ARGB32_Premultiplied);
+    // draw on the image
+    QPainter imagePainter(&image);
+    // initializes the painter's pen, background, and font based on the widget
+    imagePainter.initFrom(this);
+    imagePainter.setRenderHint(QPainter::Antialiasing, true);
+    imagePainter.eraseRect(rect());
+    draw(&imagePainter);
+    imagePainter.end();
+    QPainter widgetPainter(this);
+    widgetPainter.drawImage(0, 0, image);
+}
+
+One particularly powerful feature of Qt's graphics engine is its support for composition modes. These specify
+how a source and a destination pixel are merged together when drawing. This applies to all painting
+operations, including pen, brush, gradient, and image drawing.
+The default composition mode is QImage::CompositionMode_SourceOver, meaning that the source pixel (the
+pixel we are drawing) is blended on top of the destination pixel (the existing pixel) in such a way that the alpha
+component of the source defines its translucency. Figure 8.13 shows the result of drawing a semi-transparent
+butterfly (the "source" image) on top of a checker pattern (the "destination" image) with the different modes.
+
+![][composite]
+
+QPainter::setCompositionMode()
+
+```cpp
+QImage resultImage = checkerPatternImage;
+QPainter painter(&resultImage);
+painter.setCompositionMode(QPainter::CompositionMode_Xor);
+painter.drawImage(0, 0, butterflyImage);
+```
+
+One issue to be aware of is that the QImage::CompositionMode_Xor operation also applies to the alpha
+channel. This means that if we XOR the color white (0xFFFFFFFF) with itself, we obtain a transparent color
+(0x00000000), not black (0xFF000000).
+
 #### Item-Based Rendering with Graphics View
+
+Drawing using QPainter is ideal for custom widgets and for drawing one or just a few items. For graphics in
+which we need to handle anything from a handful up to tens of thousands of items, and we want the user to be
+able to click, drag, and select items, Qt's graphics view classes provide the solution we need.
+
+![][multiview]
+
+The graphics view architecture consists of a scene, represented by the QGraphicsScene class, and items in the
+scene, represented by QGraphicsItem subclasses. The scene (along with its item) is made visible to users by
+showing them in a view, represented by the QGraphicsView class. The same scene can be shown in more than
+one view—for example, to show different parts of a large scene, or to show the scene under different
+transformations. This is illustrated schematically in Figure 8.14.
+
+Several predefined QGraphicsItem subclasses are provided, including QGraphicsLineItem,
+QGraphicsPixmapItem, QGraphicsSimpleTextItem (for styled plain text), and QGraphicsTextItem (for rich
+text); see Figure 8.15. We can also create our own custom QGraphicsItem subclasses, as we will see later in
+this section.
+
+![][graphicsitem]
+
+A QGraphicsScene holds a collection of graphics items. A scene has three layers: a background layer, an item
+layer, and a foreground layer. The background and foreground are normally specified by QBrushes, but it is
+possible to reimplement drawBackground() or drawForeground() for complete control. If we want to use a
+pixmap as a background, we could simply create a texture QBrush based on that pixmap. The foreground
+brush could be set to a semi-transparent white to give a faded effect, or to be a cross pattern to provide a grid
+overlay.
+
+The scene can tell us which items have collided, which are selected, and which are at a particular point or in a
+particular region. A scene's graphics items are either top-level (the scene is their parent) or children (their
+parent is another item). Any transformations applied to an item are automatically applied to its children.
+The graphics view architecture provides two ways of grouping items. One is to simply make an item a child of
+another item. Another way is to use a QGraphicsItemGroup. Adding an item to a group does not cause it to be
+transformed in any way; these groups are convenient for handling multiple items as though they were a single
+item.
+A QGraphicsView is a widget that presents a scene, providing scroll bars if necessary and capable of applying
+transformations that affect how the scene is rendered. This is useful to support zooming and rotating as aids
+for viewing the scene.
+By default, QGraphicsView renders using Qt's built-in 2D paint engine, but it can be changed to use an
+OpenGL widget with a single setViewport() call after it has been constructed. It is also easy to print a scene,
+or parts of a scene, as we will discuss in the next section where we see several techniques for printing using
+Qt.
+
+The architecture uses three different coordinate systems—viewport coordinates, scene coordinates, and item
+coordinates—with functions for mapping from one coordinate system to another. Viewport coordinates are
+coordinates inside the QGraphicsView's viewport. Scene coordinates are logical coordinates that are used for
+positioning top-level items on the scene. Item coordinates are specific to each item and are centered about an
+item-local (0, 0) point; these remain unchanged when we move the item on the scene. In practice, we usually
+
+only care about the scene coordinates (for positioning top-level items) and item coordinates (for positioning
+child items and for drawing items). Drawing each item in terms of its own local coordinate system means that
+we do not have to worry about where an item is in the scene or what transformations have been applied to it.
+The graphics view classes are straightforward to use and offer a great deal of functionality. To introduce some
+of what can be done with them, we will review two examples. The first example is a simple diagram editor,
+which will show how to create items and how to handle user interaction. The second example is an annotated
+map program that shows how to handle large numbers of graphics objects and how to render them efficiently
+at different zoom levels.
+The Diagram application shown in Figure 8.16 allows users to create nodes and links. Nodes are graphics items
+that show plain text inside a rounded rectangle, whereas links are lines that connect pairs of nodes. Nodes that
+are selected are shown with a dashed outline drawn with a thicker pen than usual. We will begin by looking at
+links, since they are the simplest, then nodes, and then we will see how they are used in context.
+
+```cpp
+#include <QGraphicsLineItem>
+
+class Node;
+
+// The Link class is derived from QGraphicsLineItem, which represents a line in
+// a QGraphicsScene.
+class Link : public QGraphicsLineItem
+{
+public:
+    Link(Node *fromNode, Node *toNode);
+    ~Link();
+
+    Node *fromNode() const;
+    Node *toNode() const;
+
+    void setColor(const QColor &color);
+    QColor color() const;
+
+    void trackNodes();
+
+private:
+    Node *myFromNode;
+    Node *myToNode;
+};
+```
+
+QGraphicsItem is not a
+QObject subclass, but if we wanted to add signals and slots to Link, there is nothing to stop us from using
+multiple inheritance with QObject.
+
+```cpp
+Link::Link(Node *fromNode, Node *toNode)
+{
+    myFromNode = fromNode;
+    myToNode = toNode;
+
+    myFromNode->addLink(this);
+    myToNode->addLink(this);
+
+    setFlags(QGraphicsItem::ItemIsSelectable);
+
+    // Every graphics item has an (x, y) position, and a z value that specifies
+    // how far forward or back it is in the scene. Since we are going to draw
+    // our lines from the center of one node to the center of another node, we
+    // give the line a negative z value so that it will always be drawn
+    // underneath the nodes it connects. As a result, links will appear as
+    // lines between the nearest edges of the nodes they connect.
+    setZValue(-1);
+
+    setColor(Qt::darkRed);
+    trackNodes();
+}
+
+void Link::setColor(const QColor &color)
+{
+    // The setPen() function is inherited from QGraphicsLineItem.
+    setPen(QPen(color, 1.0));
+}
+
+QColor Link::color() const
+{
+    return pen().color();
+}
+
+void Link::trackNodes()
+{
+    // QGraphicsItem::pos() function returns the position of its graphics item
+    // relative to the scene (for top- level items) or to the parent item (for
+    // child items)
+    setLine(QLineF(myFromNode->pos(), myToNode->pos()));
+}
+```
+
+For the Node class, we will handle all the graphics ourselves. Another difference between nodes and links is
+that nodes are more interactive. We will begin by reviewing the Node declaration, breaking it into a few pieces
+since it is quite long.
+
+```cpp
+#include <QApplication>
+#include <QColor>
+#include <QGraphicsItem>
+#include <QSet>
+
+class Link;
+
+class Node : public QGraphicsItem
+{
+    // Q_DECLARE_TR_FUNCTIONS() macro is used to add a tr() function to this
+    // class, even though it is not a QObject subclass. This is simply a
+    // convenience that allows us to use tr() rather than the static
+    // QObject::tr() or QCoreApplication::translate().
+    Q_DECLARE_TR_FUNCTIONS(Node)
+
+public:
+    Node();
+    ~Node();
+
+    void setText(const QString &text);
+    QString text() const;
+    void setTextColor(const QColor &color);
+    QColor textColor() const;
+    void setOutlineColor(const QColor &color);
+    QColor outlineColor() const;
+    void setBackgroundColor(const QColor &color);
+    QColor backgroundColor() const;
+
+    void addLink(Link *link);
+    void removeLink(Link *link);
+
+    QRectF boundingRect() const;
+    QPainterPath shape() const;
+    void paint(QPainter *painter,
+               const QStyleOptionGraphicsItem *option, QWidget *widget);
+
+protected:
+    void mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event);
+    QVariant itemChange(GraphicsItemChange change,
+                        const QVariant &value);
+
+private:
+    QRectF outlineRect() const;
+    int roundness(double size) const;
+
+    QSet<Link *> myLinks;
+    QString myText;
+    QColor myTextColor;
+    QColor myBackgroundColor;
+    QColor myOutlineColor;
+};
+
+```
+
 #### Printing
 
 ### 9. Drag and Drop
@@ -3043,3 +3564,8 @@ Refs
 [drawrect-1]: http://gnat.qiniudn.com/qt/drawrect-1.png
 [drawrect-2]: http://gnat.qiniudn.com/qt/drawrect-2.png
 [drawrect-3]: http://gnat.qiniudn.com/qt/drawrect-3.png
+[win-port]: http://gnat.qiniudn.com/qt/win-port.png
+[oventimer]: http://gnat.qiniudn.com/qt/oventimer.png
+[composite]
+[multiview]
+[graphicsitem]
