@@ -66,8 +66,8 @@ Mode:
                  In this mode qmake interprets files as files to
                  be built,
                  defaults to *.c; *.ui; *.y; *.l; *.ts; *.xlf; *.qrc; *.h; *.hpp; *.hh; *.hxx; *.cpp; *.cc; *.cxx
-                 Note: The created .pro file probably will 
-                 need to be edited. For example add the QT variable to 
+                 Note: The created .pro file probably will
+                 need to be edited. For example add the QT variable to
                  specify what modules are required.
   -makefile      Put qmake into makefile generation mode (default)
                  In this mode qmake interprets files as project files to
@@ -275,7 +275,7 @@ programmers to obtain "meta-information" about QObject subclasses at run-time,
 including the list of signals and slots supported by the object and its class
 name. The mechanism also supports properties (used extensively by Qt Designer)
 and text translation (for internationalization), and it lays the foundation for
-the QtScript module.  
+the QtScript module.
 
 Standard C++ doesn't provide support for the dynamic meta-information needed by
 Qt's meta-object system. Qt solves this problem by providing a separate tool,
@@ -316,7 +316,7 @@ input. Qt provides three built-in validator classes: `QIntValidator`,
 regular expression "[A-Za-z][1-9][0-9]{0,2}", which means: Allow one uppercase
 or lowercase letter, followed by one digit in the range 1 to 9, followed by
 zero, one, or two digits each in the range 0 to 9. (For an introduction to
-regular expressions, see the QRegExp class documentation.) 
+regular expressions, see the QRegExp class documentation.)
 
 By passing this to the `QRegExpValidator`{.cpp} constructor, we make it a child of the
 GoToCellDialog object. By doing so, we don't have to worry about deleting the
@@ -393,7 +393,7 @@ be built in many different ways.
 #. A `QTabWidget`{.cpp} can be used in its own right. It provides a tab bar that
    controls a built-in `QStackedWidget`{.cpp}.
 #. A `QListWidget`{.cpp} and a `QStackedWidget`{.cpp} can be used together, with the
-   `QListWidget`{.cpp}'s current item determining which page the `QStackedWidget`{.cpp} shows, 
+   `QListWidget`{.cpp}'s current item determining which page the `QStackedWidget`{.cpp} shows,
    by connecting the `QListWidget::currentRowChanged()`{.cpp} signal to the
    `QStackedWidget::setCurrentIndex()`{.cpp} slot.
 #. A `QTreeWidget`{.cpp} can be used with a `QStackedWidget`{.cpp} in a similar
@@ -593,7 +593,7 @@ they are synchronized at startup.
 ```cpp
 void MainWindow::createMenus()
 {
-    // QMainWindow::menuBar() function returns a pointer to a QMenuBar. 
+    // QMainWindow::menuBar() function returns a pointer to a QMenuBar.
     // The menu bar is created the first time menuBar() is called.
     fileMenu = menuBar()->addMenu(tr("&File"));
     fileMenu->addAction(newAction);
@@ -713,7 +713,7 @@ bool MainWindow::okToContinue()
 ![QMessageBox Styles][qmessagebox-style]
 
 ```cpp
-QString fileName = 
+QString fileName =
     QFileDialog::getOpenFileName(this,
                                  tr("Open Spreadsheet"), ".",
                                  tr("Spreadsheet files (*.sp)"));
@@ -732,7 +732,7 @@ bool MainWindow::save()
 }
 ```
 
-Syntax: 
+Syntax:
 
 #. `QMessageBox::warning(parent, title, message, buttons)`{.cpp}
 #. `QFileDialog::getOpenFileName(parent, title, filter)`{.cpp}
@@ -810,7 +810,7 @@ that type. Unlike the Standard C++ `dynamic_cast<T>()`{.cpp}, Qt's
 `qobject_cast<T>()`{.cpp} works correctly across dynamic library boundaries. In
 our example, we use `qobject_cast<T>()`{.cpp} to cast a `QObject`{.cpp} pointer
 to a `QAction`{.cpp} pointer. If the cast is successful (it should be), we call
-`loadFile()`{.cpp} with the full file name that we extract from the action's data.  
+`loadFile()`{.cpp} with the full file name that we extract from the action's data.
 
 ```cpp
 // connect(recentFileActions[i], SIGNAL(triggered()),
@@ -860,7 +860,7 @@ Several scenarios are possible:
 
 A dialog is modeless if it's invoked using `show()` (unless we call
 `setModal()` beforehand to make it modal); it is modal if it's invoked using
-`exec()`.  
+`exec()`.
 
 ```cpp
 void MainWindow::goToCell()
@@ -872,8 +872,8 @@ void MainWindow::goToCell()
                                     str[0].unicode() - 'A'); // 五体投地
     }
 
-    // or 
-    GoToCellDialog *dlg = new GoToCellDialog(this); 
+    // or
+    GoToCellDialog *dlg = new GoToCellDialog(this);
     ...
     delete dlg;
 }
@@ -1078,7 +1078,7 @@ achieved by subclassing an item class and adding a void pointer member
 variable. For more challenging data handling requirements, such as large data
 sets, complex data items, database integration, and multiple data views, Qt
 provides a set of model/view classes that separate the data from their visual
-representation.  
+representation.
 
 ```cpp
 void Spreadsheet::setFormula(int row, int column,
@@ -1168,12 +1168,12 @@ also on a `QBuffer`{.cpp}, a `QProcess`{.cpp}, a `QTcpSocket`{.cpp}, a
 `QTextStream`{.cpp} class that can be used instead of `QDataStream`{.cpp} for
 reading and writing text files. Chapter 12 explains these classes in depth, and
 also describes various approaches to handling different `QDataStream`{.cpp}
-versions.  
+versions.
 
 The system clipboard is available in Qt through the
 `QApplication::clipboard()`{.cpp} static function. By calling
 `QClipboard::setText()`{.cpp}, we make the text available on the clipboard,
-both to this application and to other applications that support plain text. 
+both to this application and to other applications that support plain text.
 
 ```cpp
 void Spreadsheet::cut()
@@ -1380,7 +1380,7 @@ IconEditor::IconEditor(QWidget *parent)
         horizontal and vertical policies, we tell any layout manager that is
         responsible for this widget that the widget's size hint is really its minimum
         size. In other words, the widget can be stretched if required, but it should
-        never shrink below the size hint. 
+        never shrink below the size hint.
     */
     setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
 
@@ -1393,7 +1393,7 @@ IconEditor::IconEditor(QWidget *parent)
 
 //                r   g  b   a
 QRgb red = qRgba(255, 0, 0, 255);
-QRgb red = 0xFFFF0000; // typedef of unsigned int   
+QRgb red = 0xFFFF0000; // typedef of unsigned int
 ```
 
 ```cpp
@@ -1434,7 +1434,7 @@ force a paint event by calling QWidget::update() or QWidget::repaint(). The
 difference between these two functions is that repaint() forces an immediate
 repaint, whereas update() simply schedules a paint event for when Qt next
 processes events. (Both functions do nothing if the widget isn't visible
-on-screen.) 
+on-screen.)
 
 ```cpp
 void IconEditor::paintEvent(QPaintEvent *event)
@@ -1538,7 +1538,7 @@ void IconEditor::setImagePixel(const QPoint &pos, bool opaque)
 we must subclass QDesignerCustomWidgetInterface and reimplement some virtual
 functions. We will assume that the plugin source code is located in a directory
 called iconeditorplugin and that the IconEditor source code is located in a
-parallel directory called iconeditor.  
+parallel directory called iconeditor.
 
 ```cpp
 #include <QDesignerCustomWidgetInterface>
@@ -1819,7 +1819,7 @@ void Plotter::updateRubberBandRegion()
 void Plotter::mouseMoveEvent(QMouseEvent *event)
 {
     if (rubberBandIsShown) {
-        // erases the rubber band 
+        // erases the rubber band
         updateRubberBandRegion();
         rubberBandRect.setBottomRight(event->pos());
         // redraws it at the new coordinates
@@ -1831,12 +1831,12 @@ void Plotter::mouseReleaseEvent(QMouseEvent *event)
 {
     if ((event->button() == Qt::LeftButton) && rubberBandIsShown) {
         rubberBandIsShown = false;
-        // erase the rubber band 
+        // erase the rubber band
         updateRubberBandRegion();
         // restore the standard arrow cursor
         unsetCursor();
 
-        // If the rubber band is at least 4 x 4, we perform the zoom. 
+        // If the rubber band is at least 4 x 4, we perform the zoom.
         // If the rubber band is smaller than that, it's likely that the user
         // clicked the widget by mistake or to give it focus, so we do nothing
         QRect rect = rubberBandRect.normalized();
@@ -2090,7 +2090,7 @@ rightLayout->addWidget(closeButton);
 // Stretch. Adds a stretchable space (a QSpacerItem) with zero minimum size and
 // stretch factor stretch to the end of this box layout. In Qt Designer, we can
 // achieve the same effect by inserting a spacer
-rightLayout->addStretch(); 
+rightLayout->addStretch();
 rightLayout->addWidget(helpButton);
 
 QHBoxLayout *mainLayout = new QHBoxLayout;
@@ -2101,7 +2101,7 @@ setLayout(mainLayout);
 
 ![][size-policy]
 
-#. `QLayout::setContentsMargins()`{.cpp} 
+#. `QLayout::setContentsMargins()`{.cpp}
 #. `QLayout::setSpacing()`{.cpp}
 #. `gridlayout->addWidget(widget, row, column, rowSpan, columnSpan)`{.cpp}
 #. `QSizePolicy`{.cpp}, `sizeHint()`{.cpp}, `minimumSizeHint()`{.cpp}
@@ -2112,7 +2112,7 @@ setLayout(mainLayout);
     #. Expanding
 
 In addition to the size policy's horizontal and vertical components, the
-`QSizePolicy`{.cpp} class stores a horizontal and a vertical stretch factor. 
+`QSizePolicy`{.cpp} class stores a horizontal and a vertical stretch factor.
 
 #### Stacked Layouts
 
@@ -2333,7 +2333,7 @@ automatically removed from the argument list by the `QApplication`{.cpp}
 constructor. So, if we write `mdieditor -style motif readme.txt`{.bash} on the
 command line, `QApplication::arguments()`{.cpp} returns a `QStringList`{.cpp}
 containing two items ("mdieditor" and "readme.txt"), and the MDI Editor
-application starts up with the document readme.txt.  
+application starts up with the document readme.txt.
 
 ```cpp
 void MainWindow::newFile()
@@ -2353,7 +2353,7 @@ void MainWindow::cut()
     if (activeEditor())
         activeEditor()->cut();
 }
- 
+
 QSize Editor::sizeHint() const
 {
     return QSize(72 * fontMetrics().width('x'),
@@ -2476,7 +2476,7 @@ QSize Ticker::sizeHint() const
 {
     // QWidget::fontMetrics() returns a QFontMetrics object that can be queried
     // to obtain information relating to the widget's font.
-    return fontMetrics().size(0, text()); // 
+    return fontMetrics().size(0, text()); //
 }
 
 void Ticker::paintEvent(QPaintEvent * /* event */)
@@ -2639,7 +2639,7 @@ bool Spreadsheet::writeFile(const QString &fileName)
     // We don't call show() on the QProgressDialog because progress dialogs do
     // that for themselves. If the operation turns out to be short, presumably
     // because the file to save is small or because the machine is fast,
-    // QProgressDialog will detect this and will not show itself at all.  
+    // QProgressDialog will detect this and will not show itself at all.
 
     for (int row = 0; row < RowCount; ++row) {
         progress.setValue(row);
@@ -2940,7 +2940,7 @@ Part III: Advanced Qt
 #### Subclassing QStyle
 
 ### 20. 3D Graphics
-    
+
 #### Drawing Using OpenGL
 #### Combining OpenGL and QPainter
 #### Doing Overlays Using Framebuffer Objects
