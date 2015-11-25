@@ -3345,6 +3345,7 @@ public:
     Node();
     ~Node();
 
+    // getters and setters for the private members
     void setText(const QString &text);
     QString text() const;
     void setTextColor(const QColor &color);
@@ -3357,12 +3358,18 @@ public:
     void addLink(Link *link);
     void removeLink(Link *link);
 
+    // When we create QGraphicsItem subclasses that we want to draw manually,
+    // we normally reimplement boundingRect() and paint(). If we don't
+    // reimplement shape(), the base class implementation will fall back on the
+    // boundingRect(). In this case, we have reimplemented shape() to return a
+    // more accurate shape that takes into account the node's rounded corners.
     QRectF boundingRect() const;
     QPainterPath shape() const;
     void paint(QPainter *painter,
                const QStyleOptionGraphicsItem *option, QWidget *widget);
 
 protected:
+    // let the user change the text by double-clicking the node
     void mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event);
     QVariant itemChange(GraphicsItemChange change,
                         const QVariant &value);
@@ -3371,6 +3378,8 @@ private:
     QRectF outlineRect() const;
     int roundness(double size) const;
 
+    // Just as a Link keeps track of the nodes it connects, a Node keeps track
+    // of its links
     QSet<Link *> myLinks;
     QString myText;
     QColor myTextColor;
@@ -3379,6 +3388,111 @@ private:
 };
 
 ```
+
+```cpp
+Node::Node()
+{
+    ...
+
+    setFlags(ItemIsMovable | ItemIsSelectable);
+    // The z value will default to 0, and we leave the node's position in the
+    // scene to be set by the caller
+}
+
+Node::~Node()
+{
+    // We iterate over (a copy of) the set of links rather than use
+    // qDeleteAll() to avoid side effects, since the set of links is indirectly
+    // accessed by the Link destructor
+    foreach (Link *link, myLinks)
+        delete link;
+}
+
+void Node::setText(const QString &text)
+{
+    // in cases such as this where the item's bounding rectangle might change
+    // (because the new text might be shorter or longer than the current text),
+    // we must call prepareGeometryChange() immediately before doing anything
+    // that will affect the item's bounding rectangle
+    prepareGeometryChange();
+    myText = text;
+    // schedule a repaint
+    update();
+}
+
+void Node::setText(const QString &text)
+{
+    // We don't need to call prepareGeometryChange(), because the size of the
+    // item is not affected by a color change.
+    prepareGeometryChange();
+    myText = text;
+    update();
+}
+
+void Node::addLink(Link *link)
+{
+    myLinks.insert(link);
+}
+
+void Node::removeLink(Link *link)
+{
+    myLinks.remove(link);
+}
+
+QRectF Node::outlineRect() const
+{
+    const int Padding = 8;
+    QFontMetricsF metrics = qApp->font();
+    QRectF rect = metrics.boundingRect(myText);
+    rect.adjust(-Padding, -Padding, +Padding, +Padding);
+    // translate the rectangle so that its center is at (0, 0)
+    rect.translate(-rect.center());
+    return rect;
+}
+
+// The shape() function is called by QGraphicsView for fine-grained collision
+// detection. Often, we can omit it and leave the item to calculate the shape
+// itself based on the bounding rectangle. Here we reimplement it to return a
+// QPainterPath that represents a rounded rectangle. As a consequence, clicking
+// the corner areas that fall outside the rounded rectangle but inside the
+// bounding rectangle won't select the item.
+QRectF Node::boundingRect() const
+{
+    // since the rectangle we return from this function must allow for at least
+    // half the width of the pen if an outline is going to be drawn.
+    const int Margin = 1;
+    return outlineRect().adjusted(-Margin, -Margin, +Margin, +Margin);
+}
+
+QPainterPath Node::shape() const
+{
+    QRectF rect = outlineRect();
+
+    QPainterPath path;
+    path.addRoundRect(rect, roundness(rect.width()),
+                      roundness(rect.height()));
+    return path;
+}
+```
+
+`void QRectF::adjust(qreal dx1, qreal dy1, qreal dx2, qreal dy2)`{.cpp}
+
+:   Adds dx1, dy1, dx2 and dy2 respectively to the existing coordinates of the rectangle.
+
+`QRectF QRectF::adjusted(qreal dx1, qreal dy1, qreal dx2, qreal dy2) const`{.cpp}
+
+:   Returns a new rectangle with dx1, dy1, dx2 and dy2 added respectively to the existing coordinates of this rectangle.
+
+aoei aoei great two three nice
+aoei aoei one two three
+aoei aoei one two three
+aoei aoei one two three
+
+`QObject`{.cpp}, QObject
+:   `viwbi`ea`{.cpp}`
+QObject::tr(), QObject::tr()
+show(), show()
+
 
 #### Printing
 
@@ -3533,6 +3647,7 @@ Refs
 #. [QBoxLayout Class | Qt 4.8](http://doc.qt.io/qt-4.8/qboxlayout.html#addStretch)
 #. [QObject Class | Qt 4.8](http://doc.qt.io/qt-4.8/qobject.html)
 #. [QPen Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpen.html#QPen-4)
+#. [QRectF Class | Qt 4.8](http://doc.qt.io/qt-4.8/qrectf.html#adjust)
 
 [set-layout-png]: http://gnat.qiniudn.com/qt/setlayout.png
 [shape-chaning-dlg]: http://gnat.qiniudn.com/qt/dlg.png

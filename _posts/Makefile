@@ -16,6 +16,7 @@ post-0057-code-on-windows.md \
 
 # :r!ls post* | tail -n 5 | sort -nr
 
+POST_0070 = $(PODIR)/post-0070-some-vim-rules.html
 POST_0069 = $(PODIR)/post-0069-gis-spatial-analysis-application-modeling.html
 POST_0068 = $(PODIR)/post-0068-cxx-gui-programming-with-qt4.html
 # POST_0067 = $(PODIR)/post-0067-learn-c-in-project.md
