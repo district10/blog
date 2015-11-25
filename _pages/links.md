@@ -199,3 +199,5 @@ MISC
 #. [当然我在扯淡](http://www.yinwang.org/)
 #. [维基百科，自由的百科全书（镜像站！）](http://wiki.yooooo.us/d2lraS9XaWtpcGVkaWE6JUU5JUE2JTk2JUU5JUExJUI1)
 #. [Welcome to the USGS - U.S. Geological Survey](http://www.usgs.gov/)
+#. [IEEE Xplore Digital Library](http://ieeexplore.ieee.org/Xplore/home.jsp?reload=true)
+#. [Useful Links](http://sse.tongji.edu.cn/linzhang/UsefulLinks/links.htm)

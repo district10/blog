@@ -5,6 +5,10 @@
 C++ GUI Qt4 编程
 ================
 
+<!--
+-->
+<div style="float:right;">[![](http://img3.douban.com/mpic/s5934624.jpg)](http://book.douban.com/subject/3173123/)</div>
+
 本书 example 源码是可以免费下到的：[C++ GUI Programming with Qt4, 2nd Edition | InformIT](http://www.informit.com/store/c-plus-plus-gui-programming-with-qt4-9780132354165)
 
 Part I: Basic Qt
@@ -299,10 +303,10 @@ QRegExp regExp("[A-Za-z][1-9][0-9]{0,2}");
 lineEdit->setValidator(new QRegExpValidator(regExp, this));
 ```
 
-The qmake tool is smart enough to detect the user interface file
-gotocelldialog.ui and to generate the appropriate makefile rules to invoke uic,
+The `qmake`{.bash} tool is smart enough to detect the user interface file
+`gotocelldialog.ui` and to generate the appropriate makefile rules to invoke uic,
 Qt's user interface compiler. The uic tool converts gotocelldialog.ui into C++
-and puts the result in ui_gotocelldialog.h.
+and puts the result in `ui_gotocelldialog.h`{.cpp}.
 
 In the constructor, we call `setupUi()` to initialize the form.
 
@@ -314,18 +318,18 @@ or lowercase letter, followed by one digit in the range 1 to 9, followed by
 zero, one, or two digits each in the range 0 to 9. (For an introduction to
 regular expressions, see the QRegExp class documentation.) 
 
-By passing this to the QRegExpValidator constructor, we make it a child of the
+By passing this to the `QRegExpValidator`{.cpp} constructor, we make it a child of the
 GoToCellDialog object. By doing so, we don't have to worry about deleting the
-`QRegExpValidator` later; it will be deleted automatically when its parent is
+`QRegExpValidator`{.cpp} later; it will be deleted automatically when its parent is
 deleted.
 
-Qt's parent-child mechanism is implemented in `QObject`{.cpp}. When we create an object
+**Qt's parent-child mechanism** is implemented in `QObject`{.cpp}. When we create an object
 (a widget, validator, or any other kind) with a parent, the parent adds the
 object to the list of its children. When the parent is deleted, it walks
 through its list of children and deletes each child. The children themselves
 then delete all of their children, and so on **recursively until none remain**. The
-parent–child mechanism greatly simplifies memory management, reducing the risk
-of memory leaks. **The only objects we must call delete on are the objects we
+parent–child mechanism **greatly simplifies memory management**, **reducing the risk
+of memory leaks**. **The only objects we must call delete on are the objects we
 create with new and that have no parent.** And if we delete a child object before
 its parent, Qt will automatically remove that object from the parent's list of
 children.  For widgets, the parent has an additional meaning: *Child widgets are
@@ -335,7 +339,7 @@ the constructor, we connect the OK button to `QDialog`{.cpp}'s `accept()` slot a
 Cancel button to the `reject()` slot. Both slots close the dialog, but `accept()`
 sets the dialog's result value to `QDialog::Accepted`{.cpp} (which equals 1), and
 `reject()` sets the result to `QDialog::Rejected`{.cpp} (which equals 0).  When we use
-this dialog, we can use the result to see if the user clicked OK and act
+this dialog, we can use the result to see if the user clicked <kbd>OK</kbd> and act
 accordingly.
 
 ```cpp
@@ -389,7 +393,7 @@ be built in many different ways.
 #. A `QTabWidget`{.cpp} can be used in its own right. It provides a tab bar that
    controls a built-in `QStackedWidget`{.cpp}.
 #. A `QListWidget`{.cpp} and a `QStackedWidget`{.cpp} can be used together, with the
-   `QListWidget`{.cpp}'s current item determining which page the `QStackedWidget`{.cpp}` shows, 
+   `QListWidget`{.cpp}'s current item determining which page the `QStackedWidget`{.cpp} shows, 
    by connecting the `QListWidget::currentRowChanged()`{.cpp} signal to the
    `QStackedWidget::setCurrentIndex()`{.cpp} slot.
 #. A `QTreeWidget`{.cpp} can be used with a `QStackedWidget`{.cpp} in a similar
@@ -423,7 +427,7 @@ if (primaryColumnCombo) {
 #### Built-in Widget and Dialog Classes
 
 #. Single-page container widgets
-    i. `QPushButon`{.cpp}
+    i. `QPushButton`{.cpp}
     #. `QToolButton`{.cpp}
     #. `QCheckBox`{.cpp}
     #. `QRadioButton`{.cpp}
@@ -461,41 +465,7 @@ if (primaryColumnCombo) {
     #. `QMessageBox`{.cpp}
     #. `QErrorMessage`{.cpp}
 #. Color and font dialogs
-    i. `QColorDialog`{.cpp}
-    #. `QFontDialog`{.cpp}
-#. File and print dialogs
-    i. `QPageSetupDialog`{.cpp}
-    #. `QFileDialog`{.cpp}
-    #. `QPrintDialog`{.cpp}
-#. QWizard dialog
-
-### 3. Creating Main Windows
-
-![Qt Mainwindow][mainwindow]
-
-#### Subclassing QMainWindow
-
-```cpp
-class MainWindow : public QMainWindow
-{
-    Q_OBJECT
-
-public:
-    MainWindow();
-
-protected:
-    void closeEvent(QCloseEvent *event);
-
-private slots:
-    void newFile();
-    void open();
-    bool save();
-    bool saveAs();
-    void find();
-    void goToCell();
-    void sort();
-    void about();
-    void openRecentFile();
+    i. `QColorDialog`{.cG;
     void updateStatusBar();
     void spreadsheetModified();
     ...
@@ -1062,7 +1032,7 @@ int main(int argc, char *argv[])
 }
 ```
 
-### 4. Implementing App Functionality
+### 4. Implementing Application Functionality
 
 #### The Central Widget
 
@@ -1632,9 +1602,9 @@ DESTDIR       = $$[QT_INSTALL_PLUGINS]/designer
 
 #### Double Buffering
 
-Qt provides the QRubberBand class for drawing
-rubber bands, but here we draw it ourselves to have finer control over the look, and to demonstrate double
-buffering.
+Qt provides the `QRubberBand`{.cpp} class for drawing rubber bands, but here we
+draw it ourselves to have finer control over the look, and to demonstrate
+double buffering.
 
 
 ```cpp
@@ -1698,7 +1668,8 @@ private:
 };
 
 
-// specifies the range of the x- and y-axes and the number of ticks for these axes
+// specifies the range of the x- and y-axes and the number of ticks for these
+// axes
 class PlotSettings
 {
 public:
@@ -1918,9 +1889,7 @@ void Plotter::keyPressEvent(QKeyEvent *event)
         QWidget::keyPressEvent(event);
     }
 }
-```
 
-```cpp
 void Plotter::keyPressEvent(QKeyEvent *event)
 {
     // For simplicity, we ignore the Shift, Ctrl, and Alt modifier keys, which
@@ -1973,13 +1942,18 @@ void Plotter::wheelEvent(QWheelEvent *event)
     refreshPixmap();
 }
 
-
 void Plotter::refreshPixmap()
 {
     pixmap = QPixmap(size());
+    // Fills the pixmap with the widget's background color or pixmap. The given
+    // point, (x, y), defines an offset in widget coordinates to which the
+    // pixmap's top-left pixel will be mapped to.
     pixmap.fill(this, 0, 0);
 
     QPainter painter(&pixmap);
+    // Initializes the painters pen, background and font to the same as the
+    // given widget. This function is called automatically when the painter is
+    // opened on a QWidget
     painter.initFrom(this);
     drawGrid(&painter);
     drawCurves(&painter);
@@ -2069,6 +2043,9 @@ void Plotter::drawCurves(QPainter *painter)
         painter->setPen(colorForIds[uint(id) % 6]);
         // draw a line that goes through all the curve's points
         painter->drawPolyline(polyline);
+
+        // QPolygonF polygon;
+        // polygon << QPointF(10.4, 20.5) << QPointF(20.2, 30.2);
     }
 }
 
@@ -2110,7 +2087,9 @@ QVBoxLayout *rightLayout = new QVBoxLayout;
 rightLayout->addWidget(findButton);
 rightLayout->addWidget(stopButton);
 rightLayout->addWidget(closeButton);
-// Stretch. In Qt Designer, we can achieve the same effect by inserting a spacer
+// Stretch. Adds a stretchable space (a QSpacerItem) with zero minimum size and
+// stretch factor stretch to the end of this box layout. In Qt Designer, we can
+// achieve the same effect by inserting a spacer
 rightLayout->addStretch(); 
 rightLayout->addWidget(helpButton);
 
@@ -2120,42 +2099,39 @@ mainLayout->addLayout(rightLayout);
 setLayout(mainLayout);
 ```
 
-QLayout::setContentsMargins() and QLayout::setSpacing()
-gridlayout->addWidget(widget, row, column, rowSpan, columnSpan);
-
-QSizePolicy, sizeHint(), minimumSizeHint()
-
-#. Fixed
-#. Minimum
-#. Maximum
-#. Prefered
-#. Expanding
-
 ![][size-policy]
 
-In addition to the size policy's horizontal and vertical components, the QSizePolicy class stores a horizontal
-and a vertical stretch factor. 
+#. `QLayout::setContentsMargins()`{.cpp} 
+#. `QLayout::setSpacing()`{.cpp}
+#. `gridlayout->addWidget(widget, row, column, rowSpan, columnSpan)`{.cpp}
+#. `QSizePolicy`{.cpp}, `sizeHint()`{.cpp}, `minimumSizeHint()`{.cpp}
+    i. Fixed
+    #. Minimum
+    #. Maximum
+    #. Prefered
+    #. Expanding
+
+In addition to the size policy's horizontal and vertical components, the
+`QSizePolicy`{.cpp} class stores a horizontal and a vertical stretch factor. 
 
 #### Stacked Layouts
 
-For convenience, Qt also includes QStackedWidget, which provides a QWidget
-with a built-in QStackedLayout.
+For convenience, Qt also includes `QStackedWidget`{.cpp}, which provides a `QWidget`{.cpp} with a built-in `QStackedLayout`{.cpp}.
 
-setCurrentIndex(), 
-The page number for a child widget is available using indexOf()
 
 ![][stacked-widgets]
 
-#. QListWidget and a QStackedWidget to the form.
-#. Connect the list widget's currentRowChanged(int) signal to the stacked widget's setCurrentIndex(int) slot.
-#. list widget's currentRow property to 0.
+#. `setCurrentIndex()`{.cpp}, the page number for a child widget is available using `indexOf()`{.cpp}
+#. add a `QListWidget`{.cpp} and a `QStackedWidget`{.cpp} to the form.
+#. Connect the list widget's `currentRowChanged(int)` signal to the stacked widget's `setCurrentIndex(int)`{.cpp} slot.
+#. list widget's `currentRow` property to 0.
 
 For cases where the number of pages is small and likely to remain small, a simpler alternative to using a
-QStackedWidget and QListWidget is to use a QTabWidget.
+`QStackedWidget`{.cpp} and `QListWidget`{.cpp} is to use a `QTabWidget`{.cpp}.
 
 #### Splitters
 
-![][splitter]
+![splitter][splitter]
 
 ```cpp
 #include <QtGui>
@@ -2197,9 +2173,11 @@ void MailClient::writeSettings()
     QSettings settings("Software Inc.", "Mail Client");
 
     settings.beginGroup("mainWindow");
-    settings.setValue("geometry", saveGeometry());
-    settings.setValue("mainSplitter", mainSplitter->saveState());
-    settings.setValue("rightSplitter", rightSplitter->saveState());
+    {
+        settings.setValue("geometry", saveGeometry());
+        settings.setValue("mainSplitter", mainSplitter->saveState());
+        settings.setValue("rightSplitter", rightSplitter->saveState());
+    }
     settings.endGroup();
 }
 
@@ -2209,11 +2187,13 @@ void MailClient::readSettings()
     QSettings settings("Software Inc.", "Mail Client");
 
     settings.beginGroup("mainWindow");
-    restoreGeometry(settings.value("geometry").toByteArray());
-    mainSplitter->restoreState(
-            settings.value("mainSplitter").toByteArray());
-    rightSplitter->restoreState(
-            settings.value("rightSplitter").toByteArray());
+    {
+        restoreGeometry(settings.value("geometry").toByteArray());
+        mainSplitter->restoreState(
+                settings.value("mainSplitter").toByteArray());
+        rightSplitter->restoreState(
+                settings.value("rightSplitter").toByteArray());
+    }
     settings.endGroup();
 }
 ```
@@ -2232,8 +2212,9 @@ scrollArea.setWindowTitle(QObject::tr("Icon Editor"));
 scrollArea.show();
 ```
 
-By calling setWidgetResizable(true), we can tell QScrollArea to
-automatically resize the widget to take advantage of any extra space beyond its size hint.
+By calling `setWidgetResizable(true)`, we can tell `QScrollArea`{.cpp} to
+automatically resize the widget to take advantage of any extra space beyond its
+size hint.
 
 ![][scroll-area]
 
@@ -2250,10 +2231,9 @@ QDockWidget::setFeatures();
 
 ![][dockarea]
 
-The corners indicated with dotted lines can belong to either of their two adjoining dock areas. For example, we
-could make the top-left corner belong to the left dock area by calling
-QMainWindow::setCorner(Qt::TopLeftCorner,  Qt::LeftDockWidgetArea).
-
+The corners indicated with dotted lines can belong to either of their two
+adjoining dock areas. For example, we could make the top-left corner belong to
+the left dock area by calling `QMainWindow::setCorner(Qt::TopLeftCorner, Qt::LeftDockWidgetArea)`{.cpp}.
 
 DockArea
 
@@ -2268,9 +2248,10 @@ shapesDockWidget->setAllowedAreas(Qt::LeftDockWidgetArea
 addDockWidget(Qt::RightDockWidgetArea, shapesDockWidget);
 ```
 
-Normally we do not bother to give widgets object names, but when we create dock windows and
-toolbars, doing so is necessary if we want to use QMainWindow::saveState() and
-QMainWindow::restoreState() to save and restore the dock window and toolbar geometries and states.
+Normally we do not bother to give widgets object names, but when we create dock
+windows and toolbars, doing so is necessary if we want to use
+`QMainWindow::saveState()`{.cpp} and `QMainWindow::restoreState()`{.cpp} to
+save and restore the dock window and toolbar geometries and states.
 
 ToolBar
 
@@ -2289,17 +2270,19 @@ fontToolBar->setAllowedAreas(Qt::TopToolBarArea
 addToolBar(fontToolBar);
 ```
 
-QMainWindow's saveState() and restoreState()
+`QMainWindow`{.cpp}'s `saveState()` and `restoreState()`:
 
-settings.setValue("geometry", saveGeometry());
-settings.setValue("state", saveState());
+:   ```cpp
+    settings.setValue("geometry", saveGeometry());
+    settings.setValue("state", saveState());
 
-restoreGeometry(settings.value("geometry").toByteArray());
-restoreState(settings.value("state").toByteArray());
+    restoreGeometry(settings.value("geometry").toByteArray());
+    restoreState(settings.value("state").toByteArray());
+    ```
 
-
-Finally, QMainWindow provides a context menu that lists all the dock windows and toolbars. This menu is shown
-in Figure 6.15. The user can close and restore dock windows and hide and restore toolbars using this menu.?? where?
+Finally, `QMainWindow`{.cpp} provides a context menu that lists all the dock
+windows and toolbars.. The user can close and restore dock windows and hide and
+restore toolbars using this menu.?? where?
 
 #### Multiple Document Interface
 
@@ -2345,12 +2328,12 @@ void MainWindow::loadFiles()
 }
 ```
 
-Qt-specific command-line options, such as -style and -font, are automatically
-removed from the argument list by the QApplication constructor. So, if we write
-mdieditor -style motif readme.txt on the command line,
-QApplication::arguments() returns a QStringList containing two items
-("mdieditor" and "readme.txt"), and the MDI Editor application starts up with
-the document readme.txt.  
+**Qt-specific command-line options**, such as `-style` and `-font`, are
+automatically removed from the argument list by the `QApplication`{.cpp}
+constructor. So, if we write `mdieditor -style motif readme.txt`{.bash} on the
+command line, `QApplication::arguments()`{.cpp} returns a `QStringList`{.cpp}
+containing two items ("mdieditor" and "readme.txt"), and the MDI Editor
+application starts up with the document readme.txt.  
 
 ```cpp
 void MainWindow::newFile()
@@ -2359,32 +2342,24 @@ void MainWindow::newFile()
     editor->newFile();
     addEditor(editor);
 }
-```
 
-```cpp
 void createActions();
 void createMenus();
 void createToolBars();
 void createStatusBar();
-```
 
-```cpp
 void MainWindow::cut()
 {
     if (activeEditor())
         activeEditor()->cut();
 }
-```
-
-```cpp
+ 
 QSize Editor::sizeHint() const
 {
     return QSize(72 * fontMetrics().width('x'),
                  25 * fontMetrics().lineSpacing());
 }
-```
 
-```cpp
 void Editor::newFile()
 {
     static int documentNumber = 1;
@@ -2395,24 +2370,6 @@ void Editor::newFile()
     isUntitled = true;
     ++documentNumber;
 }
-```
-
-
-QRC
-
-```xml
-<RCC>
-<qresource>
-    <file>images/copy.png</file>
-    <file>images/cut.png</file>
-    <file>images/document.png</file>
-    <file>images/icon.png</file>
-    <file>images/new.png</file>
-    <file>images/open.png</file>
-    <file>images/paste.png</file>
-    <file>images/save.png</file>
-</qresource>
-</RCC>
 ```
 
 ```cpp
@@ -2429,11 +2386,12 @@ setLayout(mainLayout);
 
 #### Reimplementing Event Handlers
 
-QEvent::type() returns QEvent::MouseButtonPress
+`QEvent::type()`{.cpp} returns `QEvent::MouseButtonPress`{.cpp}
 
-Events are notified to objects through their event() function, inherited from QObject. The event()
-implementation in QWidget forwards the most common types of events to specific event handlers, such as
-mousePressEvent(), keyPressEvent(), and paintEvent().
+Events are notified to objects through their `event()` function, inherited from
+`QObject`{.cpp}. The `event()` implementation in `QWidget`{.cpp} forwards the
+most common types of events to specific event handlers, such as
+`mousePressEvent()`{.cpp}, `keyPressEvent()`{.cpp}, and `paintEvent()`{.cpp}.
 
 ```cpp
 void CodeEditor::keyPressEvent(QKeyEvent *event)
@@ -2454,11 +2412,12 @@ void CodeEditor::keyPressEvent(QKeyEvent *event)
 }
 ```
 
-The Tab and Backtab (Shift+Tab) keys are special cases. QWidget::event()
-handles them before it calls keyPressEvent(), with the semantic of passing the
-focus to the next or previous widget in the focus chain.  This behavior is
-usually what we want, but in a CodeEditor widget, we might prefer to make Tab
-indent a line.  The event() reimplementation would then look like this:
+The <kbd>Tab</kbd> and <kbd>Backtab</kbd> (<kbd>Shift</kbd>+<kbd>Tab</kbd>)
+keys are special cases. `QWidget::event()`{.cpp} handles them before it calls
+`keyPressEvent()`{.cpp}, with the semantic of passing the focus to the next or
+previous widget in the focus chain.  This behavior is usually what we want, but
+in a CodeEditor widget, we might prefer to make Tab indent a line.  The `event()`
+reimplementation would then look like this:
 
 ```cpp
 bool CodeEditor::event(QEvent *event)
@@ -2474,8 +2433,7 @@ bool CodeEditor::event(QEvent *event)
 }
 ```
 
-QAction::setShortcutContext() or
-QShortcut::setContext()
+`QAction::setShortcutContext()`{.cpp} or `QShortcut::setContext()`{.cpp}
 
 ```cpp
 // ticker.h
@@ -2571,9 +2529,16 @@ void Ticker::hideEvent(QHideEvent * /* event */)
 
 #### Installing Event Filters
 
-```cpp
-firstNameEdit->installEventFilter(this);
+`void QObject::installEventFilter(QObject * filterObj)`{.cpp}
 
+:   Installs an event filter filterObj on this object. For example:
+
+    ```cpp
+    monitoredObj->installEventFilter(filterObj);
+    firstNameEdit->installEventFilter(this);
+    ```
+
+```cpp
 bool CustomerInfoDialog::eventFilter(QObject *target, QEvent *event)
 {
     if (target == firstNameEdit || target == lastNameEdit
@@ -2594,141 +2559,459 @@ bool CustomerInfoDialog::eventFilter(QObject *target, QEvent *event)
 }
 ```
 
+Qt offers five levels at which events can be processed and filtered:
 
+:   #. We can reimplement a specific event handler, `mousePressEvent()`, `keyPressEvent()`, `paintEvent()`
+    #. We can reimplement `QObject::event()`{.cpp}
+    #. We can install an event filter on a single `QObject`{.cpp}.
+    #. We can install an event filter on the `QApplication`{.cpp} object.
+        i. Once an event filter has been registered for `qApp` (**the unique `QApplication`{.cpp} object**)
+        #. mostly useful for debugging
+    #. We can subclass `QApplication`{.cpp} and reimplement `notify()`
+        i. Qt calls `QApplication::notify()`{.cpp} to **send out an event**.
+        #. Event filters are generally more useful, because there can be any number of concurrent event filters, but only one `notify()` function.
+
+Many event types, including mouse and key events, can be **propagated** (`['prɑpə'get]`). If the
+event has not been handled on the way to its target object or by the target
+object itself, the whole event processing process is repeated, but this time
+with the target object's parent as the new target. This continues, going from
+parent to parent, **until either the event is handled or the top-level object is
+reached**.
+
+![This figure shows how a key press event is propagated from child to parent in a dialog. When the user presses
+    a key, the event is first sent to the widget that has focus, in this case the bottom-right `QCheckBox`{.cpp}. If the
+    `QCheckBox`{.cpp} doesn't handle the event, Qt sends it to the `QGroupBox`{.cpp}, and finally to the `QDialog`{.cpp} object.](http://gnat.qiniudn.com/qt/event.png)
 
 #### Staying Responsive during Intensive Processing
 
+When we call `QApplication::exec()`{.cpp}, we start Qt's **event loop**. Qt
+issues a few events on startup to show and paint the widgets. After that, the
+event loop is running, constantly checking to see whether any events have
+occurred and dispatching these events to QObjects in the application.
+
+**Long-running operations**
+
+:   If we spend too much time processing a particular event, the user interface will become unresponsive.
+
+    #. One solution is to use multiple threads.
+    #. A simpler solution is to make frequent calls to
+        `QApplication::processEvents()`{.cpp} in the file saving code. This function tells Qt
+        to process any pending events, and then returns control to the caller. In fact,
+        `QApplication::exec()`{.cpp} is little more than a while loop around a `processEvents()`
+        function call.
+
+```cpp
+bool Spreadsheet::writeFile(const QString &fileName)
+{
+    QFile file(fileName);
+    ...
+    QApplication::setOverrideCursor(Qt::WaitCursor);
+    for (int row = 0; row < RowCount; ++row) {
+        for (int column = 0; column < ColumnCount; ++column) {
+            QString str = formula(row, column);
+            if (!str.isEmpty())
+                out << quint16(row) << quint16(column) << str;
+        }
+        // keep the user interface responsive using processEvents()
+        qApp->processEvents();
+    }
+    QApplication::restoreOverrideCursor();
+    return true;
+}
+```
+
+One danger with this approach is that the user might close the main window
+while the application is still saving, or even click File|Save a second time,
+resulting in undefined behavior. The easiest solution to this problem is to
+replace `qApp->processEvents();`{.cpp} with
+`qApp->processEvents(QEventLoop::ExcludeUserInputEvents);`{.cpp}
+telling Qt to ignore mouse and key events.
+
+```cpp
+bool Spreadsheet::writeFile(const QString &fileName)
+{
+    QFile file(fileName);
+    ...
+    QProgressDialog progress(this);
+    progress.setLabelText(tr("Saving %1").arg(fileName));
+    progress.setRange(0, RowCount);
+    progress.setModal(true);
+    // We don't call show() on the QProgressDialog because progress dialogs do
+    // that for themselves. If the operation turns out to be short, presumably
+    // because the file to save is small or because the machine is fast,
+    // QProgressDialog will detect this and will not show itself at all.  
+
+    for (int row = 0; row < RowCount; ++row) {
+        progress.setValue(row);
+        qApp->processEvents();
+        if (progress.wasCanceled()) {
+            file.remove();
+            return false;
+        }
+        for (int column = 0; column < ColumnCount; ++column) {
+            QString str = formula(row, column);
+            if (!str.isEmpty())
+                out << quint16(row) << quint16(column) << str;
+        }
+    }
+    return true;
+}
+```
+
+In addition to multithreading and using `QProgressDialog`{.cpp}, there is a completely
+different way of dealing with long-running operations: Instead of performing
+the processing when the user requests, we can **defer (推迟) the processing until the
+application is idle**. This can work if the processing can be safely interrupted
+and resumed, since we cannot predict how long the application will be idle.
+
+In Qt, this approach can be implemented by using a **0-millisecond timer**. These timers time out whenever
+there are no pending events.
+
+```cpp
+void Spreadsheet::timerEvent(QTimerEvent *event)
+{
+    if (event->timerId() == myTimerId) {
+        while (step < MaxStep && !qApp->hasPendingEvents()) {
+            performStep(step);
+            ++step;
+        }
+    } else {
+        QTableWidget::timerEvent(event);
+    }
+}
+```
+
 ### 8. 2D Graphics
-    Painting with QPainter
-    Coordinate System Transformations
-    High-Quality Rendering with QImage
-    Item-Based Rendering with Graphics View
-    Printing
+
+Qt's 2D graphics engine is based on the QPainter class. QPainter can draw geometric shapes (points, lines,
+rectangles, ellipses, arcs, chords, pie segments, polygons, and Bézier curves), as well as pixmaps, images,
+and text. Furthermore, QPainter supports advanced features such as antialiasing (for text and shape edges),
+alpha blending, gradient filling, and vector paths. QPainter also supports linear transformations, such as
+translation, rotation, shearing, and scaling.
+
+QPainter can be used to draw on a "paint device", such as a QWidget, a QPixmap, a QImage, or a
+QSvgGenerator. QPainter can also be used in conjunction with QPrinter for printing and for generating PDF
+documents. This means that we can often use the same code to display data on-screen and to produce printed
+reports.
+
+By reimplementing QWidget::paintEvent(), we can create custom widgets and exercise complete control
+over their appearance, as we saw in Chapter 5. For customizing the look and feel of predefined Qt widgets, we
+can also specify a style sheet or create a QStyle subclass; we cover both of these approaches in Chapter 19.
+
+A common requirement is the need to display large numbers of lightweight arbitrarily shaped items that the
+user can interact with on a 2D canvas. Qt 4.2 introduced a completely new "graphics view" architecture
+centered on the QGraphicsView, QGraphicsScene, and QGraphicsItem classes. This architecture offers a
+high-level interface for doing item-based graphics, and supports standard user actions on items, including
+moving, selecting, and grouping. The items themselves are drawn using QPainter as usual and can be
+transformed individually. We cover this architecture later in the chapter.
+
+An alternative to QPainter is to use OpenGL commands. OpenGL is a standard library for drawing 3D graphics.
+In Chapter 20, we will see how to use the QtOpenGL module, which makes it easy to integrate OpenGL code
+into Qt applications.
+
+
+#### Painting with QPainter
+
+```cpp
+// create a QPainter and pass a pointer to the device
+void MyWidget::paintEvent(QPaintEvent *event)
+{
+    QPainter painter(this);
+    ...
+}
+```
+
+The way the drawing is performed is influenced by QPainter's settings. Some of these are adopted from the
+device, whereas others are initialized to default values. The three main painter settings are the pen, the brush,
+and the font.
+
+![QPainter][qpainter]
+
+![Caption Style & Join Style][capjoin]
+
+![Line Style][line]
+
+![Brush Style][brush]
+
+These settings can be modified at any time by calling setPen(), setBrush(), and setFont() with a QPen, QBrush, or QFont object.
+
+![An ellipse & a pie segment & a Bézier curve][draw3]
+
+```cpp
+// drawEllipse
+QPainter painter(this);
+painter.setRenderHint(QPainter::Antialiasing, true);
+painter.setPen(QPen(Qt::black, 12, Qt::DashDotLine, Qt::RoundCap));
+painter.setBrush(QBrush(Qt::green, Qt::SolidPattern));
+painter.drawEllipse(80, 80, 400, 240);
+```
+
+```cpp
+// drawPie
+QPainter painter(this);
+painter.setRenderHint(QPainter::Antialiasing, true);
+painter.setPen(QPen(Qt::black, 15, Qt::SolidLine, Qt::RoundCap, Qt::MiterJoin));
+painter.setBrush(QBrush(Qt::blue,  Qt::DiagCrossPattern));
+painter.drawPie(80, 80, 400, 240, 60 * 16, 270 * 16);
+```
+
+```cpp
+// cubic Bézier curve
+QPainter painter(this);
+painter.setRenderHint(QPainter::Antialiasing, true);
+QPainterPath path;
+path.moveTo(80, 320);
+path.cubicTo(200, 80, 320, 80, 480, 320);
+painter.setPen(QPen(Qt::black, 8));
+painter.drawPath(path);
+```
+
+The QPainterPath class can specify arbitrary vector shapes by connecting basic graphical elements together:
+straight lines, ellipses, polygons, arcs, Bézier curves, and other painter paths. Painter paths are the ultimate
+drawing primitive in the sense that any shape or combination of shapes can be expressed as a painter path.
+A path specifies an outline, and the area described by the outline can be filled using a brush. In the example in
+Figure 8.5 (c), we didn't set a brush, so only the outline is drawn.
+
+These three examples use built-in brush patterns (Qt::SolidPattern, Qt::DiagCrossPattern, and
+Qt::NoBrush). In modern applications, gradient fills are a popular alternative to monochrome fill patterns.
+Gradients rely on color interpolation to obtain smooth transitions between two or more colors. They are
+frequently used to produce 3D effects; for example, the Plastique and Cleanlooks styles use gradients to
+render QPushButtons.
+Qt supports three types of gradients: linear, conical, and radial. The Oven Timer example in the next section
+combines all three types of gradients in a single widget to make it look like the real thing.
+
+![QPainter's gradient brushes][gradient]
+
+#. Linear gradients are defined by two control points and by a series of "color
+    stops" on the line that connects these two points. For example, the linear
+    gradient in Figure 8.6 is created using the following
+
+    code:
+
+    ```cpp
+    QLinearGradient gradient(50, 100, 300, 350);
+    gradient.setColorAt(0.0, Qt::white);
+    gradient.setColorAt(0.2, Qt::green);
+    gradient.setColorAt(1.0, Qt::black);
+    ```
+
+#. Radial gradients are defined by a center point($x_c, $y_c$), a radius $r$, and a focal point($x_f$, $y_f$), in addition to
+the color stops. The center point and the radius specify a circle. The colors spread outward from the focal
+point, which can be the center point or any other point inside the circle.
+
+#. Conical gradients are defined by a center point (x c , y c ) and an angle a. The colors spread around the
+center point like the sweep of a watch's seconds hand.
+
+We specify three colors at three different positions between the two control points. Positions are specified
+as floating-point values between 0 and 1, where 0 corresponds to the first control point and 1 to the
+second control point. Colors between the specified stops are linearly interpolated.
+
+
+`QPen::QPen(const QBrush & brush, qreal width, Qt::PenStyle style = Qt::SolidLine, Qt::PenCapStyle cap = Qt::SquareCap, Qt::PenJoinStyle join = Qt::BevelJoin)`{.cpp}
+
+
+So far, we have mentioned QPainter's pen, brush, and font settings. In addition to these, QPainter has other
+settings that influence the way shapes and text are drawn:
+
+The background brush is used to fill the background of geometric shapes (underneath the brush pattern),
+text, or bitmaps when the background mode is Qt::OpaqueMode (the default is Qt::TransparentMode).
+
+The brush origin is the starting point for brush patterns, normally the top-left corner of the widget.
+
+The clip region is the area of the device that can be painted. Painting outside the clip region has no
+effect.
+
+The viewport, window, and world transform determine how logical QPainter coordinates map to physical
+paint device coordinates. By default, these are set up so that the logical and physical coordinate systems
+coincide. We cover coordinate systems in the next section.
+
+The composition mode specifies how the newly drawn pixels should interact with the pixels already
+present on the paint device. The default is "source over", where drawn pixels are alpha-blended on top of
+existing pixels. This is supported only on certain devices and is covered later in this chapter.
+
+At any time, we can save the current state of a painter on an internal stack by calling save() and restore it
+later on by calling restore().
+
+#### Coordinate System Transformations
+
+With QPainter's default coordinate system, the point (0, 0) is located at the top-left corner of the paint device,
+x-coordinates increase rightward, and y-coordinates increase downward. Each pixel occupies an area of size 1
+x 1 in the default coordinate system.
+
+Conceptually, the center of a pixel lies on "half-pixel" coordinates. For example, the top-left pixel of a widget
+covers the area between points (0, 0) and (1, 1), and its center is located at (0.5, 0.5). If we tell QPainter to
+draw a pixel at, say, (100, 100), it will approximate the result by shifting the coordinate by +0.5 in both
+directions, resulting in the pixel centered at (100.5, 100.5) being drawn.
+
+This distinction may seem rather academic at first, but it has important consequences in practice. First, the
+shifting by +0.5 occurs only if antialiasing is disabled (the default); if antialiasing is enabled and we try to draw
+a pixel at (100, 100) in black, QPainter will actually color the four pixels (99.5, 99.5), (99.5, 100.5), (100.5,
+99.5), and (100.5, 100.5) light gray, to give the impression of a pixel lying exactly at the meeting point of the
+four pixels. If this effect is undesirable, we can avoid it by specifying half-pixel coordinates or by translating the
+QPainter by (+0.5, +0.5).
+
+
+![`QPainter::drawRect(2, 2, 6, 5)`{.cpp} with no antialiasing][drawrect-1]
+
+![`QPainter::drawRect(2, 2, 6, 5)`{.cpp} with antialiasing][drawrect-2]
+
+![`QPainter::drawRect(2.5, 2.5, 6, 5)`{.cpp} with antialiasing][drawrect-3]
+
+#### High-Quality Rendering with QImage
+#### Item-Based Rendering with Graphics View
+#### Printing
 
 ### 9. Drag and Drop
-   Enabling Drag and Drop
-    Supporting Custom Drag Types
-    Clipboard Handling
+
+#### Enabling Drag and Drop
+#### Supporting Custom Drag Types
+#### Clipboard Handling
 
 ### 10. Item View Classes
-    Using the Item View Convenience Classes
-    Using Predefined Models
-    Implementing Custom Models
-    Implementing Custom Delegates
+
+#### Using the Item View Convenience Classes
+#### Using Predefined Models
+#### Implementing Custom Models
+#### Implementing Custom Delegates
 
 ### 11. Container Classes
-    Sequential Containers
-    Associative Containers
-    Generic Algorithms
-    Strings, Byte Arrays, and Variants
+
+#### Sequential Containers
+#### Associative Containers
+#### Generic Algorithms
+#### Strings, Byte Arrays, and Variants
 
 ### 12. Input/Output
-    Reading and Writing Binary Data
-    Reading and Writing Text
-    Traversing Directories
-    Embedding Resources
-    Inter-Process Communication
+
+#### Reading and Writing Binary Data
+#### Reading and Writing Text
+#### Traversing Directories
+#### Embedding Resources
+#### Inter-Process Communication
 
 ### 13. Databases
-    Connecting and Querying
-    Viewing Tables
-    Editing Records Using Forms
-    Presenting Data in Tabular Forms
+
+#### Connecting and Querying
+#### Viewing Tables
+#### Editing Records Using Forms
+#### Presenting Data in Tabular Forms
 
 ### 14. Multithreading
-    Creating Threads
-    Synchronizing Threads
-    Communicating with the Main Thread
-    Using Qt's Classes in Secondary Threads
+
+#### Creating Threads
+#### Synchronizing Threads
+#### Communicating with the Main Thread
+#### Using Qt's Classes in Secondary Threads
 
 ### 15. Networking
-    Writing FTP Clients
-    Writing HTTP Clients
-    Writing TCP Client–Server Applications
-    Sending and Receiving UDP Datagrams
+
+#### Writing FTP Clients
+#### Writing HTTP Clients
+#### Writing TCP Client–Server Applications
+#### Sending and Receiving UDP Datagrams
 
 ### 16. XML
-    Reading XML with QXmlStreamReader
-    Reading XML with DOM
-    Reading XML with SAX
-    Writing XML
+
+#### Reading XML with QXmlStreamReader
+#### Reading XML with DOM
+#### Reading XML with SAX
+#### Writing XML
 
 ### 17. Providing Online Help
-    Tooltips, Status Tips, and "What's This?" Help
-    Using a Web Browser to Provide Online Help
-    Using QTextBrowser as a Simple Help Engine
-    Using Qt Assistant for Powerful Online Help
+
+#### Tooltips, Status Tips, and "What's This?" Help
+#### Using a Web Browser to Provide Online Help
+#### Using QTextBrowser as a Simple Help Engine
+#### Using Qt Assistant for Powerful Online Help
 
 Part III: Advanced Qt
 ---------------------
 
 ### 18. Internationalization
-    Working with Unicode
-    Making Applications Translation-Aware
-    Dynamic Language Switching
-    Translating Applications
+
+#### Working with Unicode
+#### Making Applications Translation-Aware
+#### Dynamic Language Switching
+#### Translating Applications
 
 ### 19. Look and Feel Customization
 
-    Using Qt Style Sheets
-    Subclassing QStyle
+#### Using Qt Style Sheets
+#### Subclassing QStyle
+
 ### 20. 3D Graphics
     
-    Drawing Using OpenGL
-    Combining OpenGL and QPainter
-    Doing Overlays Using Framebuffer Objects
+#### Drawing Using OpenGL
+#### Combining OpenGL and QPainter
+#### Doing Overlays Using Framebuffer Objects
 
 ### 21. Creating Plugins
-    Extending Qt with Plugins
-    Making Applications Plugin-Aware
-    Writing Application Plugins
+
+#### Extending Qt with Plugins
+#### Making Applications Plugin-Aware
+#### Writing Application Plugins
 
 ### 22. Application Scripting
-    Overview of the ECMAScript Language
-    Extending Qt Applications with Scripts
-    Implementing GUI Extensions Using Scripts
-    Automating Tasks through Scripting
+
+#### Overview of the ECMAScript Language
+#### Extending Qt Applications with Scripts
+#### Implementing GUI Extensions Using Scripts
+#### Automating Tasks through Scripting
 
 ### 23. Platform-Specific Features
-    Interfacing with Native APIs
-    Using ActiveX on Windows
-    Handling X11 Session Management
+
+#### Interfacing with Native APIs
+#### Using ActiveX on Windows
+#### Handling X11 Session Management
 
 ### 24. Embedded Programming
-    Getting Started with Qt/Embedded Linux
-    Customizing Qt/Embedded Linux
-    Integrating Qt Applications with Qtopia
-    Using Qtopia APIs
+
+#### Getting Started with Qt/Embedded Linux
+#### Customizing Qt/Embedded Linux
+#### Integrating Qt Applications with Qtopia
+#### Using Qtopia APIs
 
 Part IV: Appendixes
 -------------------
 
 ### Appendix A
 
-Obtaining and Installing Qt
-    A Note on Licensing
-    Installing Qt/Windows
-    Installing Qt/Mac
-    Installing Qt/X11
+#### Obtaining and Installing Qt
+#### A Note on Licensing
+#### Installing Qt/Windows
+#### Installing Qt/Mac
+#### Installing Qt/X11
+
 ### Appendix B
 
-Building Qt Applications
-    Using qmake
-    Using Third-Party Build Tools
+#### Building Qt Applications
+#### Using qmake
+#### Using Third-Party Build Tools
 
 ### Appendix C
 
-Introduction to Qt Jambi
-    Getting Started with Qt Jambi
-    Using Qt Jambi in the Eclipse IDE
-    Integrating C++ Components with Qt Jambi
+#### Introduction to Qt Jambi
+#### Getting Started with Qt Jambi
+#### Using Qt Jambi in the Eclipse IDE
+#### Integrating C++ Components with Qt Jambi
 
 ### Appendix D
 
-Introduction to C++ for Java and C# Programmers
-    Getting Started with C++
-    Main Language Differences
-    The Standard C++ Library
+#### Introduction to C++ for Java and C# Programmers
+#### Getting Started with C++
+#### Main Language Differences
+#### The Standard C++ Library
+
+---
+
+Refs
+
+#. [QPixmap Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpixmap.html)
+#. [QPainter Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpainter.html)
+#. [QPolygonF Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpolygonf.html)
+#. [QBoxLayout Class | Qt 4.8](http://doc.qt.io/qt-4.8/qboxlayout.html#addStretch)
+#. [QObject Class | Qt 4.8](http://doc.qt.io/qt-4.8/qobject.html)
+#. [QPen Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpen.html#QPen-4)
 
 [set-layout-png]: http://gnat.qiniudn.com/qt/setlayout.png
 [shape-chaning-dlg]: http://gnat.qiniudn.com/qt/dlg.png
@@ -2738,6 +3021,7 @@ Introduction to C++ for Java and C# Programmers
 [mainwindow]: http://gnat.qiniudn.com/qt/mainwindow.png
 [menu]: http://gnat.qiniudn.com/qt/menu.png
 [context-menu]: http://gnat.qiniudn.com/qt/context-menu.png
+[scroll-area]: http://gnat.qiniudn.com/qt/scroll-area.png
 [toolbar]: http://gnat.qiniudn.com/qt/toolbar.png
 [status-bar]: http://gnat.qiniudn.com/qt/status-bar.png
 [qmessagebox-style]: http://gnat.qiniudn.com/qt/qmessagebox-style.png
@@ -2747,5 +3031,15 @@ Introduction to C++ for Java and C# Programmers
 [size-policy]: http://gnat.qiniudn.com/qt/size-policy.png
 [stacked-widgets]: http://gnat.qiniudn.com/qt/stacked-widgets.png
 [splitter]: http://gnat.qiniudn.com/qt/splitter.png
-[mdi]: http://gnat.qiniudn.com/qt/mdi.png
+[mdi]: http://gnat.qiniudn.com/qt/mdi2.png
 [hex-spin-widget]: http://gnat.qiniudn.com/qt/hex-spin-widget.png
+[dockarea]: http://gnat.qiniudn.com/qt/dockarea.png
+[qpainter]: http://gnat.qiniudn.com/qt/QPainter.png
+[capjoin]: http://gnat.qiniudn.com/qt/capjoin.png
+[line]: http://gnat.qiniudn.com/qt/line.png
+[brush]: http://gnat.qiniudn.com/qt/brush.png
+[draw3]: http://gnat.qiniudn.com/qt/draw3.png
+[gradient]: http://gnat.qiniudn.com/qt/gradient.png
+[drawrect-1]: http://gnat.qiniudn.com/qt/drawrect-1.png
+[drawrect-2]: http://gnat.qiniudn.com/qt/drawrect-2.png
+[drawrect-3]: http://gnat.qiniudn.com/qt/drawrect-3.png
