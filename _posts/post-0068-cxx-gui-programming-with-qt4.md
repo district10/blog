@@ -3486,13 +3486,9 @@ QPainterPath Node::shape() const
 aoei aoei great two three nice
 aoei aoei one two three
 aoei aoei one two three
-aoei aoei one two three
+`aoei`{.cpp} aoei one two three
 
-`QObject`{.cpp}, QObject
-:   `viwbi`ea`{.cpp}`
-QObject::tr(), QObject::tr()
-show(), show()
-
+viwbi`ea`{.cpp}
 
 #### Printing
 
