@@ -3872,12 +3872,9 @@ void DiagramWindow::updateActions()
 }
 ```
 
-
-
-
-
-A city block has a kind, a color, and a shape. Since the city blocks are not selectable, we have not bothered to
-reimplement the shape() function like we did for the Node class in the previous example.
+A city block has a kind, a color, and a shape. Since the city blocks are not
+selectable, we have not bothered to reimplement the `shape()`{.cpp} function
+like we did for the Node class in the previous example.
 
 ```cpp
 class CityBlock : public QGraphicsItem
@@ -3916,6 +3913,8 @@ CityBlock::CityBlock(Kind kind)
         shape.addRect(boundingRect());
     } else if (kind == SmallBuilding) {
         QRectF block(-7.5, -7.5, 15, 15);
+        // Moves the rectangle, leaving the bottom-left corner at the given
+        // position. The rectangle's size is unchanged.
         block.moveBottomLeft(QPointF((std::rand() % 6) - 3,
                                      (std::rand() % 6) - 3));
         shape.addRect(block);
@@ -3994,15 +3993,19 @@ void CityBlock::paint(QPainter *painter,
         // the shape to give a subtle lighting effect.
         QLinearGradient gradient(QPoint(-20, -20), QPoint(+20, +20));
         int coeff = 105 + int(std::log(option->levelOfDetail - 4.0));
+        // Setting factor to 150 returns a color that is 50% brighter
         gradient.setColorAt(0.0, color.lighter(coeff));
         gradient.setColorAt(1.0, color.darker(coeff));
+        // If the factor is greater than 100, this functions returns a darker
+        // color. Setting factor to 300 returns a color that has one-third the
+        // brightness. 
         painter->fillPath(shape, gradient);
     }
 }
 ```
 
-The levelOfDetail member of the QStyleOptionGraphicsItem class stores a floating-point value that tells
-us what the zoom factor is.
+The `levelOfDetail`{.cpp} member of the `QStyleOptionGraphicsItem`{.cpp} class
+stores a floating-point value that tells us what the zoom factor is.
 
 ```cpp
 class Annotation : public QGraphicsItem
@@ -4142,19 +4145,24 @@ void CityView::wheelEvent(QWheelEvent *event)
 }
 ```
 
-That completes our two graphics view examples. Qt's graphics view architecture is very rich, so bear in mind
-that it has a lot more to offer than we have had the space to cover. There is support for drag and drop, and
-graphics items can have tooltips and custom cursors. Animation effects can be achieved in a number of
-ways—for example, by associating QGraphicsItemAnimations with the items that we want to animate and
-performing the animation using a QTimeLine. It is also possible to achieve animation by creating custom
-graphics item subclasses that are derived from QObject (through multiple inheritance) and that reimplement
-QObject::timerEvent()
+That completes our two graphics view examples. Qt's graphics view architecture
+is very rich, so **bear in mind that it has a lot more to offer than we have
+had the space to cover**. There is support for drag and drop, and graphics
+items can have tooltips and custom cursors. Animation effects can be achieved
+in a number of ways, for example, by associating
+`QGraphicsItemAnimations`{.cpp} with the items that we want to animate and
+performing the animation using a `QTimeLine`{.cpp}. It is also possible to
+achieve animation by creating custom graphics item subclasses that are derived
+from `QObject`{.cpp} (through multiple inheritance) and that reimplement
+`QObject::timerEvent()`{.cpp}.
 
 #### Printing
 
+* &#x2610; TODO
+
 ### 9. Drag and Drop
 
-QMimeData, a class that can provide data in several formats.
+`QMimeData`{.cpp}, a class that can provide data in several formats.
 
 ```cpp
 protected:
@@ -4186,7 +4194,7 @@ void MainWindow::dragEnterEvent(QDragEnterEvent *event)
     // identifiers (URIs), which can be file names, URLs (such as HTTP or FTP
     // paths), or other global resource identifiers.
     if (event->mimeData()->hasFormat("text/uri-list"))
-    event->acceptProposedAction();
+        event->acceptProposedAction();
 }
 
 void MainWindow::dropEvent(QDropEvent *event)
@@ -4285,25 +4293,26 @@ void ProjectListWidget::dropEvent(QDropEvent *event)
 }
 ```
 
-Drag and drop is a powerful mechanism for transferring data between applications. But in some cases, it's
-possible to implement drag and drop without using Qt's drag and drop facilities. If all we want to do is to move
-data within one widget in one application, we can often simply reimplement mousePressEvent() and
-mouseReleaseEvent().
+Drag and drop is a powerful mechanism for transferring data between
+applications. But in some cases, it's possible to implement drag and drop
+without using Qt's drag and drop facilities. If all we want to do is to move
+data within one widget in one application, we can often simply reimplement
+`mousePressEvent()`{.cpp} and `mouseReleaseEvent()`{.cpp}.
 
 ```cpp
 void MyTableWidget::performDrag()
 {
-QString plainText = selectionAsPlainText();
-if (plainText.isEmpty())
-    return;
-QMimeData *mimeData = new QMimeData;
-mimeData->setText(plainText);
-mimeData->setHtml(toHtml(plainText));
-mimeData->setData("text/csv", toCsv(plainText).toUtf8());
-QDrag *drag = new QDrag(this);
-drag->setMimeData(mimeData);
-if (drag->exec(Qt::CopyAction | Qt::MoveAction) == Qt::MoveAction)
-    deleteSelection();
+    QString plainText = selectionAsPlainText();
+    if (plainText.isEmpty())
+        return;
+    QMimeData *mimeData = new QMimeData;
+    mimeData->setText(plainText);
+    mimeData->setHtml(toHtml(plainText));
+    mimeData->setData("text/csv", toCsv(plainText).toUtf8());
+    QDrag *drag = new QDrag(this);
+    drag->setMimeData(mimeData);
+    if (drag->exec(Qt::CopyAction | Qt::MoveAction) == Qt::MoveAction)
+        deleteSelection();
 }
 ```
 
@@ -4334,46 +4343,46 @@ QString MyTableWidget::toCsv(const QString &plainText)
 
 #### Supporting Custom Drag Types
 
-If we want to drag plain text, HTML text, images, URLs, or colors, we can use QMimeData
+If we want to drag plain text, HTML text, images, URLs, or colors, we can use `QMimeData`{.cpp}
 without formality. But if we want to drag custom data, we must choose among the following alternatives:
 
-#. We can provide arbitrary data as a QByteArray using QMimeData::setData() and extract it later using QMimeData::data().
-#. We can subclass QMimeData and reimplement formats() and retrieveData() to handle our custom data types.
-#. For drag and drop operations within a single application, we can subclass QMimeData and store the data using any data structure we want.
+#. We can provide arbitrary data as a `QByteArray`{.cpp} using
+   `QMimeData::setData()`{.cpp} and extract it later using
+   `QMimeData::data()`{.cpp}.
+#. We can subclass `QMimeData`{.cpp} and reimplement `formats()`{.cpp} and
+   `retrieveData()`{.cpp} to handle our custom data types.
+#. For drag and drop operations within a single application, we can subclass
+   `QMimeData`{.cpp} and store the data using any data structure we want.
 
 #### Clipboard Handling
 
-QApplication::clipboard()
+`QApplication::clipboard()`{.cpp}
 
-setText()
-setImage()
-setPixmap()
+:   #. `setText()`{.cpp}, `text()`{.cpp}
+    #. `setImage()`{.cpp}, `image()`{.cpp}
+    #. `setPixmap()`{.cpp}, `pixmap()`{.cpp}
 
-text()
-image()
-pixmap()
-
-```cpp
-QClipboard *clipboard = QApplication::clipboard();
-if (clipboard->supportsSelection()) {
-    QString text = clipboard->text(QClipboard::Selection);
-}
-```
+    ```cpp
+    QClipboard *clipboard = QApplication::clipboard();
+    if (clipboard->supportsSelection()) {
+        QString text = clipboard->text(QClipboard::Selection);
+    }
+    ```
 
 If we want to be notified whenever the clipboard's contents change, we can
-connect the QClipboard::dataChanged() signal to a custom slot.
+connect the `QClipboard::dataChanged()`{.cpp} signal to a custom slot.
 
 ### 10. Item View Classes
 
-![][multiple-views]
-![][symbol-picker]
-![][coord-setter]
-![][settings-viewer]
+![Multiple Views][multiple-views]
 
+![Symol Picker][symbol-picker]
+
+![Coordinate Setter][coord-setter]
+
+![Settings Viewer][settings-viewer]
 
 #### Using the Item View Convenience Classes
-
-`FlowChartSymbolPicker`{.cpp}
 
 ```cpp
 class FlowChartSymbolPicker : public QDialog
@@ -4404,6 +4413,7 @@ FlowChartSymbolPicker::FlowChartSymbolPicker(
     id = -1;
 
     listWidget = new QListWidget;
+    // icon size
     listWidget->setIconSize(QSize(60, 60));
 
     QMapIterator<int, QString> i(symbolMap);
@@ -4418,6 +4428,7 @@ FlowChartSymbolPicker::FlowChartSymbolPicker(
     buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok
                                      | QDialogButtonBox::Cancel);
 
+    // plug-in slots
     connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));
     connect(buttonBox, SIGNAL(rejected()), this, SLOT(reject()));
 
@@ -4451,11 +4462,58 @@ QIcon FlowChartSymbolPicker::iconForSymbol(const QString &symbolName)
 }
 ```
 
-By default, QListWidget is read-only. If we wanted the user to edit the items, we could set the view's edit
-triggers using QAbstractItemView::setEditTriggers(); for example, a setting of
-QAbstractItemView::AnyKeyPressed means that the user can begin editing an item just by starting to type.
-Alternatively, we could provide an Edit button (and perhaps Add and Delete buttons) and use signal–slot
-connections so that we can handle the editing operations programmatically.
+`enum Qt::ItemDataRole`{.cpp}
+
+:   The **general purpose roles** (and the associated types) are:
+
+    Constant | Value | Description
+    -------- | ----- | -----------
+    `Qt::DisplayRole`{.cpp} | 0 | The key data to be rendered in the form of text. (`QString`{.cpp})
+    `Qt::DecorationRole`{.cpp} | 1 | The data to be rendered as a decoration in the form of an icon. (`QColor`{.cpp}, `QIcon`{.cpp} or `QPixmap`{.cpp})
+    `Qt::EditRole`{.cpp} | 2 | The data in a form suitable for editing in an editor. (`QString`{.cpp})
+    `Qt::ToolTipRole`{.cpp} | 3 | The data displayed in the item's tooltip. (`QString`{.cpp})
+    `Qt::StatusTipRole`{.cpp} | 4 | The data displayed in the status bar. (`QString`{.cpp})
+    `Qt::WhatsThisRole`{.cpp} | 5 | The data displayed for the item in "What's This?" mode. (`QString`{.cpp})
+    `Qt::SizeHintRole`{.cpp} | 13 | The size hint for the item that will be supplied to views. (`QSize`{.cpp})
+
+    Roles describing **appearance and meta data** (with associated types):
+
+    Constant | Value | Description
+    -------- | ----- | -----------
+    `Qt::FontRole`{.cpp} | 6 | The font used for items rendered with the default delegate. (`QFont`{.cpp})
+    `Qt::TextAlignmentRole`{.cpp} | 7 | The alignment of the text for items rendered with the default delegate. (`Qt::AlignmentFlag`{.cpp})
+`Qt::BackgroundRole`{.cpp} | 8 | The background brush used for items rendered with the default delegate. (`QBrush`{.cpp})
+    `Qt::BackgroundColorRole`{.cpp} | 8 | This role is obsolete. Use BackgroundRole instead.
+`Qt::ForegroundRole`{.cpp} | 9 | The foreground brush (text color, typically) used for items rendered with the default delegate. (`QBrush`{.cpp})
+    `Qt::TextColorRole`{.cpp} | 9 | This role is obsolete. Use ForegroundRole instead.
+`Qt::CheckStateRole`{.cpp} | 10 | This role is used to obtain the checked state of an item. (`Qt::CheckState`{.cpp})
+    `Qt::InitialSortOrderRole`{.cpp} | 14 | This role is used to obtain the initial sort order of a header view section. (`Qt::SortOrder`{.cpp}). This role was introduced in Qt 4.8.
+
+    **Accessibility roles** (with associated types):
+
+    Constant | Value | Description
+    -------- | ----- | -----------
+    `Qt::AccessibleTextRole`{.cpp} | 11 | The text to be used by accessibility extensions and plugins, such as screen readers. (`QString`{.cpp})
+    `Qt::AccessibleDescriptionRole`{.cpp} | 12 | A description of the item for accessibility purposes. (`QString`{.cpp})
+
+    **User roles**:
+
+    Constant | Value | Description
+    -------- | ----- | -----------
+    `Qt::UserRole`{.cpp} | 32 | The first role that can be used for application-specific purposes.
+
+    For user roles, it is up to the developer to decide which types to use and ensure that components use the correct types when accessing and setting data.
+
+    也就是说自己的数据可以往这儿存！
+
+By default, `QListWidget`{.cpp} is read-only. If we wanted the user to edit the
+items, we could set the view's edit triggers using
+`QAbstractItemView::setEditTriggers()`{.cpp}; for example, a setting of
+`QAbstractItemView::AnyKeyPressed`{.cpp} means that the user can begin editing
+an item just by starting to type.  Alternatively, we could provide an Edit
+button (and perhaps Add and Delete buttons) and use signal–slot connections so
+that we can handle the editing operations programmatically.
+
 
 ```cpp
 tableWidget = new QTableWidget(0, 2);
@@ -4488,6 +4546,11 @@ treeWidget = new QTreeWidget;
 treeWidget->setColumnCount(2);
 treeWidget->setHeaderLabels(
         QStringList() << tr("Key") << tr("Value"));
+// enum	ResizeMode { Interactive, Fixed, Stretch, ResizeToContents, Custom }
+// void QHeaderView::setResizeMode(int logicalIndex, ResizeMode mode)
+// This setting will be ignored for the last section if the stretchLastSection
+// property is set to true. This is the default for the horizontal headers
+// provided by QTreeView.
 treeWidget->header()->setResizeMode(0, QHeaderView::Stretch);
 treeWidget->header()->setResizeMode(1, QHeaderView::Stretch);
 ```
@@ -4495,7 +4558,7 @@ treeWidget->header()->setResizeMode(1, QHeaderView::Stretch);
 #### Using Predefined Models
 
 Model | Details
-:---: | :-----:
+:---- | :------
 `QStringListModel`{.cpp} | Stores a list of strings
 `QStandardItemModel`{.cpp} | Stores arbitrary hierarchical data
 `QDirModel`{.cpp} | Encapsulates the local file system
@@ -4515,6 +4578,36 @@ void TeamLeadersDialog::insert()
     listView->edit(index);
 }
 ```
+
+`QAbstractItemModel::insertRows()`{.cpp}
+
+:   Note: The base class implementation of this function does nothing and
+    returns false.
+
+    ```cpp
+    bool QAbstractItemModel::insertRows(int row, 
+                                        int count, 
+                                        const QModelIndex & parent = QModelIndex())
+    ```
+
+    On models that support this, inserts count rows into the model before the
+    given row. Items in the new row will be children of the item represented by
+    the parent model index.
+
+    If row is 0, the rows are prepended to any existing rows in the parent.
+
+    If row is `rowCount()`{.cpp}, the rows are appended to any existing rows in the
+    parent.
+
+    If parent has no children, a single column with count rows is inserted.
+
+    Returns true if the rows were successfully inserted; otherwise returns
+    false.
+
+    If you implement your own model, you can reimplement this function if you
+    want to support insertions. Alternatively, you can provide your own API for
+    altering the data. In either case, you will need to call `beginInsertRows()`{.cpp}
+    and `endInsertRows()`{.cpp} to notify other components that the model has changed.
 
 ```cpp
 void TeamLeadersDialog::del()
@@ -4640,7 +4733,13 @@ mainLayout->addWidget(syntaxComboBox, 2, 1);
 setLayout(mainLayout);
 ```
 
-`void QComboBox::addItem(const QString & text, const QVariant & userData = QVariant())`{.cpp}
+`QComboBox::addItem()`{.cpp}
+
+:   ```cpp
+    void QComboBox::addItem(const QString & text, const QVariant & userData = QVariant())
+    void QComboBox::addItem(const QIcon & icon, const QString & text, const QVariant & userData = QVariant())
+    void QComboBox::addItems(const QStringList & texts)
+    ```
 
 ```cpp
 void ColorNamesDialog::reapplyFilter()
@@ -4655,7 +4754,12 @@ void ColorNamesDialog::reapplyFilter()
 
 #### Implementing Custom Models
 
-![][custom-model]
+![Custom model][custom-model]
+
+* `QObject`{.cpp}
+    + `QAbstractItemModel`{.cpp}
+        - `QAbstractListModel`{.cpp}
+        - `QAbstractTableModel`{.cpp}
 
 ```cpp
 QMap<QString, double> currencyMap;
@@ -4698,13 +4802,6 @@ private:
     QMap<QString, double> currencyMap;
 };
 ```
-
-
-* `QObject`{.cpp}
-    + `QAbstractItemModel`{.cpp}
-        - `QAbstractListModel`{.cpp}
-        - `QAbstractTableModel`{.cpp}
-
 
 ```cpp
 // The parent parameter has no meaning for a table model; it is there because
@@ -4754,7 +4851,8 @@ QVariant CurrencyModel::data(const QModelIndex &index, int role) const
                          const QChar & fillChar = QLatin1Char( ' ' )) const
     ```
 
-    * A positive fieldWidth produces right-aligned text. A negative fieldWidth produces left-aligned text.
+    * A positive fieldWidth produces **right-aligned** text. A negative
+      fieldWidth produces **left-aligned** text.
     *   ```cpp
         QString i;           // current file's number
         QString total;       // number of files to process
@@ -4769,8 +4867,10 @@ QVariant CurrencyModel::data(const QModelIndex &index, int role) const
                          const QString & a2) const
     ```
 
-    * This function overloads arg().
-    * This is the same as str.arg(a1).arg(a2), except that the strings a1 and a2 are replaced in one pass. This can make a difference if a1 contains e.g. %1:
+    * This function overloads `arg()`{.cpp}.
+    * This is the same as `str.arg(a1).arg(a2)`{.cpp}, except that the strings
+      a1 and a2 are replaced in one pass. This can make a difference if a1
+      contains e.g. `%1`:
 
         ```cpp
         QString str;
@@ -4803,10 +4903,10 @@ QVariant CurrencyModel::data(const QModelIndex &index, int role) const
                           const QChar & fillChar = QLatin1Char( ' ' )) const
     ```
 
-    * The '%' can be followed by an 'L', in which case the sequence is replaced
-      with a localized representation of a. The conversion uses the default locale,
-      set by QLocale::setDefault(). If no default locale was specified, the "C"
-      locale is used. The 'L' flag is ignored if base is not 10.  
+    * The `%` can be followed by an `L`, in which case the sequence is replaced
+      with a localized representation of `a`. The conversion uses the default locale,
+      set by `QLocale::setDefault()`{.cpp}. If no default locale was specified, the `C`
+      locale is used. The `L` flag is ignored if base is not 10.  
 
         ```cpp
         QString str;
@@ -4828,7 +4928,7 @@ QVariant CurrencyModel::data(const QModelIndex &index, int role) const
                          const QChar & fillChar = QLatin1Char( ' ' )) const
     ```
 
-    * This function overloads arg().
+    * This function overloads `arg()`{.cpp}.
 
     ```cpp
     QString QString::arg(double a, 
@@ -4861,11 +4961,6 @@ QVariant CurrencyModel::data(const QModelIndex &index, int role) const
     QString message =  hello % el % world % QChar('!');
     ```
 
-```cpp
-void QComboBox::addItem(const QString & text, const QVariant & userData = QVariant())
-void QComboBox::addItem(const QIcon & icon, const QString & text, const QVariant & userData = QVariant())
-void QComboBox::addItems(const QStringList & texts)
-```
 
 ```cpp
 // The headerData() function is called by the view to populate its horizontal
@@ -4912,16 +5007,20 @@ int CityModel::offsetOf(int row, int column) const
 #### Implementing Custom Delegates
 
 If we want to have finer control over the rendering of items, we can often
-achieve what we want simply by using a custom model: In our data() reimplementation, we can handle the
-Qt::FontRole, Qt::TextAlignmentRole, Qt::TextColorRole, and Qt::BackgroundColorRole, and these
-are used by the default delegate. For example, in the Cities and Currencies examples shown earlier, we
-handled the Qt::TextAlignmentRole to get right-aligned numbers.
+achieve what we want simply by using a custom model: In our `data()`{.cpp}
+reimplementation, we can handle the `Qt::FontRole`{.cpp},
+`Qt::TextAlignmentRole`{.cpp}, `Qt::TextColorRole`{.cpp}, and
+`Qt::BackgroundColorRole`{.cpp}, and these are used by the default delegate.
+For example, in the Cities and Currencies examples shown earlier, we handled
+the `Qt::TextAlignmentRole`{.cpp} to get right-aligned numbers.
 
-If we want even greater control, we can create our own delegate class and set it on the views that we want to
-make use of it. The Track Editor dialog shown in Figure 10.15 makes use of a custom delegate. It shows the
-titles of music tracks and their durations. The data held by the model will be simply QStrings (titles) and ints
-(seconds), but the durations will be separated into minutes and seconds and will be editable using a
-QTimeEdit.
+If we want even greater control, we can create our own delegate class and set
+it on the views that we want to make use of it. The Track Editor dialog shown
+in Figure 10.15 makes use of a custom delegate. It shows the titles of music
+tracks and their durations. The data held by the model will be simply
+`QStrings`{.cpp} (titles) and ints (seconds), but the durations will be
+separated into minutes and seconds and will be editable using a
+`QTimeEdit`{.cpp}.
 
 ```cpp
 #include <QItemDelegate>
@@ -5011,7 +5110,6 @@ void TrackDelegate::paint(QPainter *painter,
 ```
 
 ```cpp
-
 QWidget *TrackDelegate::createEditor(QWidget *parent,
         const QStyleOptionViewItem &option,
         const QModelIndex &index) const
@@ -5185,17 +5283,21 @@ Part IV: Appendixes
 
 Refs
 
-#. [QPixmap Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpixmap.html)
-#. [QPainter Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpainter.html)
-#. [QPolygonF Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpolygonf.html)
+#. [QAbstractItemModel Class | Qt 4.8](http://doc.qt.io/qt-4.8/qabstractitemmodel.html)
 #. [QBoxLayout Class | Qt 4.8](http://doc.qt.io/qt-4.8/qboxlayout.html#addStretch)
+#. [QHeaderView Class | Qt 4.8](http://doc.qt.io/qt-4.8/qheaderview.html)
 #. [QObject Class | Qt 4.8](http://doc.qt.io/qt-4.8/qobject.html)
-#. [QPen Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpen.html#QPen-4)
-#. [QRectF Class | Qt 4.8](http://doc.qt.io/qt-4.8/qrectf.html#adjust)
+#. [QPainter Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpainter.html)
 #. [QPainterPath Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpainterpath.html#addRoundedRect)
+#. [QPen Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpen.html#QPen-4)
+#. [QPixmap Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpixmap.html)
+#. [QPolygonF Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpolygonf.html)
+#. [QRectF Class | Qt 4.8](http://doc.qt.io/qt-4.8/qrectf.html#adjust)
 #. [QStringList Class | Qt 4.8](http://doc.qt.io/qt-4.8/qstringlist.html)
-#. [Qt Namespace | Qt 4.8](http://doc.qt.io/qt-4.8/qt.html)
+#. [QTreeWidget Class | Qt 4.8](http://doc.qt.io/qt-4.8/qtreewidget.html)
+#. [QVariant Class | Qt 4.8](http://doc.qt.io/qt-4.8/qvariant.html)
 #. [Qt Namespace | Qt 4.8](http://doc.qt.io/qt-4.8/qt.html#mightBeRichText)
+#. [Qt Namespace | Qt 4.8](http://doc.qt.io/qt-4.8/qt.html)
 
 [set-layout-png]: http://gnat.qiniudn.com/qt/setlayout.png
 [shape-chaning-dlg]: http://gnat.qiniudn.com/qt/dlg.png
@@ -5232,8 +5334,8 @@ Refs
 [composite]: http://gnat.qiniudn.com/qt/composite.png
 [multiview]: http://gnat.qiniudn.com/qt/multiview.png
 [graphicsitem]: http://gnat.qiniudn.com/qt/graphicsitem.png
-[multiple-views]
-![][symbol-picker]
-![][coord-setter]
-![][settings-viewer]
-![][custom-model]
+[multiple-views]: http://gnat.qiniudn.com/qt/multiple-views.png
+[symbol-picker]: http://gnat.qiniudn.com/qt/symbol-picker.png
+[coord-setter]: http://gnat.qiniudn.com/qt/coord-setter.png
+[settings-viewer]: http://gnat.qiniudn.com/qt/settings-viewer.png
+[custom-model]: http://gnat.qiniudn.com/qt/custom-model.png
