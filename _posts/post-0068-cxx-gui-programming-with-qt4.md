@@ -5153,18 +5153,1000 @@ void TrackDelegate::setModelData(QWidget *editor,
 
 ### 11. Container Classes
 
+Implicit sharing, or "copy on write", is an optimization that makes it possible to pass entire
+containers as values without any significant performance cost. The Qt containers also feature easy-to-use
+iterator classes inspired by Java, they can be streamed using QDataStream, and they usually result in less code
+in the executable than the corresponding STL containers. Finally, on some hardware platforms supported by
+Qt/Embedded Linux, the Qt containers are the only ones available.
+
+Qt offers both sequential containers such as QVector<T>, QLinkedList<T>, and QList<T>, and associative
+containers such as QMap<K, T> and QHash<K, T>. Conceptually, the sequential containers store items one
+after another, whereas the associative containers store key–value pairs.
+
+Qt also provides generic algorithms that perform operations on arbitrary containers. For example, the qSort()
+algorithm sorts a sequential container, and qBinaryFind() performs a binary search on a sorted sequential
+container. These algorithms are similar to those offered by the STL.
+
+In this chapter, we will also look at QString, QByteArray, and QVariant, since they have a lot in common
+with containers. QString is a 16-bit Unicode string used throughout Qt's API. QByteArray is an array of 8-bit
+chars useful for storing raw binary data. QVariant is a type that can store most C++ and Qt value types.
+
 #### Sequential Containers
+
+`QVector<T>`{.cpp}
+
+:   an array-like data structure that stores its items at adjacent positions in
+    memory.
+
+    ```cpp
+    {
+        // set
+        QVector<double> vect(3);
+        vect[0] = 1.0;
+        vect[1] = 0.540302;
+        vect[2] = -0.416147;
+    }
+
+    {
+        // append
+        QVector<double> vect;
+        vect.append(1.0);
+        vect.append(0.540302);
+        vect.append(-0.416147);
+
+        // or use the << operator
+        vect << 1.0 << 0.540302 << -0.416147;
+    }
+    ```
+
+`QLinkedList<T>`{.cpp}
+
+:   Inserting items at the beginning or in the middle of a QVector<T>, or
+    removing items from these positions, can be inefficient for large vectors. For
+    this reason, Qt also offers QLinkedList<T>, a data structure that stores its
+    items at non-adjacent locations in memory.
+
+    ```cpp
+    QLinkedList<QString> list;
+    list.append("Clash");
+    list.append("Ramones");
+
+    QLinkedList<QString>::iterator i = list.find("Ramones");
+    list.insert(i, "Tote Hosen");
+    ```
+
+`QList<T>`{.cpp}
+
+:   The QList<T> sequential container is an "array-list" that combines the most
+    important benefits of QVector<T> and QLinkedList<T> in a single class. It
+    supports random access, and its interface is index-based like QVector's.
+    Inserting or removing an item at either end of a QList<T> is very fast, and
+    inserting in the middle is fast for lists with up to about one thousand items.
+    Unless we want to perform insertions in the middle of huge lists or need the
+    list's items to occupy consecutive addresses in memory, QList<T> is usually the
+    most appropriate general-purpose container class to use.
+
+    The QStringList class is a subclass of QList<QString> that is widely used
+    in Qt's API.
+
+QStack<T> and QQueue<T> are two more examples of convenience subclasses.
+
+For all the container classes seen so far, the value type T can be a basic type like int or double, a pointer
+type, or a class that has a default constructor (a constructor that takes no arguments), a copy constructor, and
+an assignment operator. Classes that qualify include QByteArray, QDateTime, QRegExp, QString, and
+QVariant. Qt classes that are derived from QObject do not qualify, because they lack a copy constructor and
+an assignment operator. This is no problem in practice, since we can simply store pointers to QObject types
+rather than the objects themselves.
+
+Java-style iterators and STL-style iterators. The Java-style iterators are
+easier to use, whereas the STL-style iterators can be combined with Qt's and
+STL's generic algorithms and are more powerful.
+
+QVectorIterator<T>,
+QLinkedListIterator<T>, and QListIterator<T>. The corresponding read-write iterators have Mutable in
+their name (e.g., QMutableVectorIterator<T>)
+
+```cpp
+QList<double> list;
+...
+QListIterator<double> i(list);
+while (i.hasNext()) {
+    int val = i.next();
+    if (val < 0.0)
+        i.setValue(-val);
+}
+
+QListIterator<double> i(list);
+i.toBack();
+while (i.hasPrevious()) {
+    //  remove() function always operates on the last item that was jumped
+    //  over. It also works when iterating backward
+    if (i.previous() < 0.0)
+        i.remove();
+}
+
+// It is also possible to insert an item at the current iterator position by
+// calling insert(). The iterator is then advanced to point between the new
+// item and the following item.
+```
+
+In addition to the Java-style iterators, every sequential container class C<T> has two STL-style iterator types:
+C<T>::iterator and C<T>::const_iterator. The difference between the two is that const_iterator doesn't
+let us modify the data.
+
+```cpp
+QList<double>::iterator i = list.begin();
+while (i != list.end()) {
+    *i = qAbs(*i);
+    ++i;
+}
+```
+
+A few Qt functions return a container. If we want to iterate over the return value of a function using an STL-
+style iterator, we must take a copy of the container and iterate over the copy. For example, the following code
+is the correct way to iterate over the QList<int> returned by QSplitter::sizes():
+
+```cpp
+QList<int> list = splitter->sizes();
+QList<int>::const_iterator i = list.begin();
+while (i != list.end()) {
+    do_something(*i);
+    ++i;
+}
+```
+
+The following code is wrong:
+
+```cpp
+// WRONG
+QList<int>::const_iterator i = splitter->sizes().begin();
+while (i != splitter->sizes().end()) {
+    do_something(*i);
+    ++i;
+}
+```
+
+This is because QSplitter::sizes() returns a new QList<int> by value every time it is called. If we don't
+store the return value, C++ automatically destroys it before we have even started iterating, leaving us with a
+dangling iterator. To make matters worse, each time the loop is run, QSplitter::sizes() must generate a
+new copy of the list because of the splitter->sizes().end() call. In summary: When using STL-style
+iterators, always iterate on a copy of a container returned by value.
+
+With read-only Java-style iterators, we don't need to take a copy. The iterator takes a copy for us behind the
+scenes, ensuring that we always iterate over the data that the function first returned. For example:
+
+```cpp
+QListIterator<int> i(splitter->sizes());
+while (i.hasNext()) {
+    do_something(i.next());
+}
+```
+
+The beauty of implicit sharing is that it is an optimization that we don't need to think about; it simply works,
+without requiring any programmer intervention. At the same time, implicit sharing encourages a clean
+programming style where objects are returned by value. Consider the following function:
+
+```cpp
+QVector<double> sineTable()
+{
+    QVector<double> vect(360);
+    for (int i = 0; i < 360; ++i)
+    vect[i] = std::sin(i / (2 * M_PI));
+    return vect;
+}
+```
+
+The call to the function looks like this:
+QVector<double> table = sineTable();
+STL, in comparison, encourages us to pass the vector as a non-const reference to ** avoid the copy that takes
+place when the function's return value is stored in a variable**:
+
+```cpp
+void sineTable(std::vector<double> &vect)
+{
+    vect.resize(360);
+    for (int i = 0; i < 360; ++i)
+    vect[i] = std::sin(i / (2 * M_PI));
+}
+```
+
+The call then becomes more tedious to write and less clear to read:
+
+std::vector<double> table;
+
+Qt uses implicit sharing for all of its containers and for many other classes, including QByteArray, QBrush,
+QFont, QImage, QPixmap, and QString. This makes these classes very efficient to pass by value, both as
+function parameters and as return values.
+
+Implicit sharing is a guarantee from Qt that the data won't be copied if we don't modify it. To get the best out
+of implicit sharing, we can adopt a couple of new programming habits. One habit is to use the at() function
+rather than the [] operator for read-only access on a (non-const) vector or list. Since Qt's containers cannot
+tell whether [] appears on the left side of an assignment or not, it assumes the worst and forces a deep copy
+to occur—whereas at() isn't allowed on the left side of an assignment.
+
+A similar issue arises when we iterate over a container with STL-style iterators. Whenever we call begin() or
+end() on a non-const container, Qt forces a deep copy to occur if the data is shared. To prevent this
+inefficiency, the solution is to use const_iterator, constBegin(), and constEnd() whenever possible.
+
+Data sharing is often disregarded as an option in multithreaded programs, because of race
+conditions in the reference counting. With Qt, this is not an issue. Internally, the container
+classes use assembly language instructions to perform atomic reference counting. This
+technology is available to Qt users through the QSharedData and QSharedDataPointer classes.
+
+```cpp
+QLinkedList<Movie> list;
+Movie movie;
+...
+foreach (movie, list) {
+    if (movie.title() == "Citizen Kane") {
+        std::cout << "Found Citizen Kane" << std::endl;
+        break;
+    }
+}
+```
+
 #### Associative Containers
+
+```cpp
+{
+    // insert a pair
+    QMap<QString, int> map;
+    map.insert("eins", 1);
+    map.insert("sieben", 7);
+    map.insert("dreiundzwanzig", 23);
+
+    // assign a value to a given key
+    map["eins"] = 1;
+    map["sieben"] = 7;
+    map["dreiundzwanzig"] = 23;
+}
+```
+
+
+```cpp
+// If [] is used to retrieve a value for a non-existent key in a non-const map,
+// a new item will be created with the given key and an empty value. To avoid
+// accidentally creating empty values, we can use the value() function to
+// retrieve items instead of []: 
+int val = map.value("dreiundzwanzig");
+
+// specify a default value
+int seconds = map.value("delay", 30);
+``
+
+QMap<K, T> has a couple of convenience functions, keys() and values(), that are especially useful when
+dealing with small data sets. They return QLists of a map's keys and values.
+
+Maps are normally single-valued: If a new value is assigned to an existing key, the old value is replaced by the
+new value, ensuring that no two items share the same key. It is possible to have multiple key–value pairs with
+the same key by using the insertMulti() function or the QMultiMap<K, T> convenience subclass. QMap<K,
+T> has a values(const K &) overload that returns a QList of all the values for a given key. For example:
+
+```cpp
+QMultiMap<int, QString> multiMap;
+multiMap.insert(1, "one");
+multiMap.insert(1, "eins");
+multiMap.insert(1, "uno");
+QList<QString> vals = multiMap.values(1);
+```
+
+A QHash<K, T> is a data structure that stores key–value pairs in a hash table. Its interface is almost identical
+to that of QMap<K, T>, but it has different requirements for the K template type and usually provides much
+faster lookups than QMap<K, T> can achieve. Another difference is that QHash<K, T> is unordered.
+
+In addition to the standard requirements on any value type stored in a container, the K type of a QHash<K, T>
+needs to provide an operator==() and be supported by a global qHash() function that returns a hash value
+for a key. Qt already provides qHash() functions for integer types, pointer types, QChar, QString, and
+QByteArray.
+
+fine-tune performance by calling reserve() to specify the
+number of items expected to be stored in the hash and squeeze() to shrink the hash table based on the
+current number of items. A common idiom is to call reserve() with the maximum number of items we expect,
+then insert the data, and finally call squeeze() to minimize memory usage if there were fewer items than
+expected.
+
+Besides QHash<K, T>, Qt also provides a QCache<K, T> class that can be used to cache objects associated
+with a key, and a QSet<K> container that only stores keys. Internally, both rely on QHash<K, T> and both have
+the same requirements for the K type as QHash<K, T>.
+
+The easiest way to iterate through all the key–value pairs stored in an associative container is to use a Java-
+style iterator. Because the iterators must give access to both a key and a value, the Java-style iterators for
+associative containers work slightly differently from their sequential counterparts. The main difference is that
+the next() and previous() functions return an object that represents a key–value pair, rather than simply a
+value. The key and value components are accessible from this object as key() and value(). For example:
+
+```cpp
+QMap<QString, int> map;
+...
+int sum = 0;
+QMapIterator<QString, int> i(map);
+while (i.hasNext())
+sum += i.next().value();
+```
+
+```cpp
+QMapIterator<QString, int> i(map);
+while (i.hasNext()) {
+    i.next();
+    if (i.value() > largestValue) {
+        largestKey = i.key();
+        largestValue = i.value();
+    }
+}
+
+// QMutableMapIterator<K, T> i(container);
+i.setValue(-t); // value of this key reversed
+```
+
+STL-style iterators also provide key() and value() functions. With the non-const iterator types, value()
+returns a non-const reference, allowing us to change the value as we iterate. Note that although these
+iterators are called "STL-style", they deviate significantly from the std::map<K, T> iterators, which are based
+on std::pair<K, T>.
+
+The foreach loop also works on associative containers, but only on the value component of the key–value
+pairs. If we need both the key and the value components of the items, we can call the keys() and
+values(const K &) functions in nested foreach loops as follows:
+
+```cpp
+QMultiMap<QString, int> map;
+...
+foreach (QString key, map.keys()) {
+    foreach (int value, map.values(key)) {
+        do_something(key, value);
+    }
+}
+```
+
 #### Generic Algorithms
+
+The <QtAlgorithms> header declares a set of global template functions that implement basic algorithms on
+containers. Most of these functions operate on STL-style iterators.
+
+The STL <algorithm> header provides a more complete set of generic algorithms. These algorithms can be
+used on Qt containers as well as STL containers. 
+
+qFind
+
+```cpp
+QStringList list;
+list << "Emma" << "Karl" << "James" << "Mariette";
+QStringList::iterator i = qFind(list.begin(), list.end(), "Karl");
+QStringList::iterator j = qFind(list.begin(), list.end(), "Petra");
+```
+
+qBinaryFind
+
+The qBinaryFind() algorithm performs a search just like qFind(), except that it assumes that the items are
+sorted in ascending order and uses fast binary searching rather than qFind()'s linear searching.
+
+```cpp
+```
+
+The qFill() algorithm populates a container with a particular value:
+
+```cpp
+QLinkedList<int> list(10);
+qFill(list.begin(), list.end(), 1009);
+
+QVector<int> vect(10);
+qFill(vect.begin(), vect.begin() + 5, 1009);
+qFill(vect.end() - 5, vect.end(), 2013);
+```
+
+The qCopy() algorithm copies values from one container to another:
+
+```cpp
+QVector<int> vect(list.count());
+qCopy(list.begin(), list.end(), vect.begin());
+
+// should not don't overlap
+qCopy(list.begin(), list.begin() + 2, list.end() - 2);
+```
+
+```cpp
+qSort(list.begin(), list.end(), qGreater<int>());
+```
+
+```cpp
+bool insensitiveLessThan(const QString &str1, const QString &str2)
+{
+    return str1.toLower() < str2.toLower();
+}
+
+// The call to qSort() then becomes QStringList list;
+...
+qSort(list.begin(), list.end(), insensitiveLessThan);
+```
+
+The qStableSort() algorithm is similar to qSort(), except it guarantees that
+items that compare equal appear in the same order after the sort as before.
+This is useful if the sort criterion takes into account only parts of the value
+and the results are visible to the user. 
+
+```cpp
+qDeleteAll(list);
+list.clear();
+```
+
+```cpp
+// The qSwap() algorithm exchanges the value of two variables. For example:
+int x1 = line.x1();
+int x2 = line.x2();
+if (x1 > x2)
+    qSwap(x1, x2);
+```
+
+`<QtGlobal>`{.cpp}
+
+: `qAbs()`{.cpp}
+
 #### Strings, Byte Arrays, and Variants
+
+When using QString, we don't need to worry about such arcane details as allocating enough memory or
+ensuring that the data is '\0'-terminated. Conceptually, QStrings can be thought of as a vector of QChars. A
+QString can embed '\0' characters. The length() function returns the size of the entire string, including
+embedded '\0' characters.
+
+```cpp
+bool ok;
+double d = str.toDouble(&ok);
+```
+
+```cpp
+The conversion from const char * strings to QString is automatic in most cases, for example:
+str += " (1870)";
+mid(int start, int len);
+mid(int start);
+
+// left, right n char
+left(int n);
+right(int n);
+
+QString str = "the middle bit";
+int i = str.indexOf("middle");
+
+startWith(), endWith()
+toUpper() or toLower()
+
+QString str = "a cloudy day";
+str.replace(2, 6, "sunny");
+
+str.remove(2, 6);
+str.insert(2, "sunny");
+str.replace("&", "&amp;");
+
+QString str = " BOB \t THE \nDOG \n";
+qDebug() << str.trimmed();
+qDebug() << str.simplified();
+
+QString str = "polluter pays principle";
+QStringList words = str.split(" ");
+words.sort();
+str = words.join("\n");
+
+isEmpty() or by checking whether length() is 0.
+```
+
+The conversion from const char * strings to QString is automatic in most cases, for example:
+str += " (1870)";
+
+To explicitly convert a const char * to a
+QString, simply use a QString cast, or call fromAscii() or fromLatin1(). (See Chapter 18 for an
+explanation of handling literal strings in other encodings.)
+To convert a QString to a const char *, use toAscii() or toLatin1(). These functions return a
+QByteArray, which can be converted into a const char * using QByteArray::data() or
+QByteArray::constData(). For example:
+
+```cpp
+printf("User: %s\n", str.toAscii().data());
+
+printf("User: %s\n", qPrintable(str)); // toAscii().constData();
+```
+
+Qt provides a much cleaner way of handling variables that can hold different types:
+QVariant.
+
+The QVariant class can hold values of many Qt types, including QBrush, QColor, QCursor, QDateTime, QFont,
+QKeySequence, QPalette, QPen, QPixmap, QPoint, QRect, QRegion, QSize, and QString, as well as basic
+C++ numeric types such as double and int. The QVariant class can also hold containers: QMap<QString,
+QVariant>, QStringList, and QList<QVariant>.
+
+```cpp
+QMap<QString, QVariant> pearMap;
+pearMap["Standard"] = 1.95;
+pearMap["Organic"] = 2.25;
+
+QMap<QString, QVariant> fruitMap;
+fruitMap["Orange"] = 2.10;
+fruitMap["Pineapple"] = 3.85;
+fruitMap["Pear"] = pearMap;
+```
+
+For convenience, QByteArray automatically ensures that the "one past the last" byte is always '\0', making it
+easy to pass a QByteArray to a function taking a const char *. QByteArray also supports embedded '\0'
+characters, allowing us to use it to store arbitrary binary data.
+
+QVariant is used by Qt's meta-object system and is therefore part of the QtCore module. Nonetheless, when
+we link against the QtGui module, QVariant can store GUI-related types such as QColor, QFont, QIcon,
+QImage, and QPixmap:
+
+```cpp
+QIcon icon("open.png");
+QVariant variant = icon;
+
+// retrieve
+QIcon icon = variant.value<QIcon>();
+```
+
+QVariant can also be used to store custom data types, assuming they provide a default constructor and a
+copy constructor. For this to work, we must first register the type using the Q_DECLARE_METATYPE() macro,
+typically in a header file below the class definition:
+Q_DECLARE_METATYPE(BusinessCard)
+
+```cpp
+BusinessCard businessCard;
+QVariant variant = QVariant::fromValue(businessCard);
+...
+if (variant.canConvert<BusinessCard>()) {
+    BusinessCard card = variant.value<BusinessCard>();
+    ...
+}
+
+// qRegisterMetaTypeStreamOperators<BusinessCard>("BusinessCard");
+```
+
+This chapter focused on the Qt containers, as well as on QString, QByteArray, and QVariant. In addition to
+these classes, Qt also provides a few other containers. One is QPair<T1, T2>, which simply stores two values
+and is similar to std::pair<T1, T2>. Another is QBitArray, which we will use in the first section of Chapter
+21. Finally, there is QVarLengthArray<T, Prealloc>, a low-level alternative to QVector<T>. Because it
+preallocates memory on the stack and isn't implicitly shared, its overhead is less than that of QVector<T>,
+making it more appropriate for tight loops.
+
 
 ### 12. Input/Output
 
+Qt provides
+excellent support for I/O through QIODevice, a powerful abstraction that encapsulates "devices" capable of
+reading and writing blocks of bytes. Qt includes the following QIODevice subclasses:
+
+ClassName | ClassDescription
+--------- | ----------------
+`QFile`{.cpp} | Accesses files in the local file system and in embedded resources
+`QTemporaryFile`{.cpp} | Creates and accesses temporary files in the local file system
+`QBuffer`{.cpp} | Reads data from or writes data to a QByteArray
+`QProcess`{.cpp} | Runs external programs and handles inter-process communication
+`QTcpSocket`{.cpp} | Transfers a stream of data over the network using TCP
+`QUdpSocket`{.cpp} | Sends or receives UDP datagrams over the network
+`QSslSocket`{.cpp} | Transfers an encrypted data stream over the network using SSL/TLS
+
 #### Reading and Writing Binary Data
+
+```cpp
+// write
+QImage image("philip.png");
+QMap<QString, QColor> map;
+map.insert("red", Qt::red);
+map.insert("green", Qt::green);
+map.insert("blue", Qt::blue);
+QFile file("facts.dat");
+if (!file.open(QIODevice::WriteOnly)) {
+    // file.errorString()
+    std::cerr << "Cannot open file for writing: "
+              << qPrintable(file.errorString()) << std::endl;
+    return;
+}
+// QDataStream standardizes on big-endian by default; this can be changed by
+// calling setByteOrder()
+QDataStream out(&file);
+out.setVersion(QDataStream::Qt_4_3);
+out << quint32(0x12345678) << image << map;
+
+// read
+QFile file("facts.dat");
+if (!file.open(QIODevice::ReadOnly)) {
+    std::cerr << "Cannot open file for reading: "
+              << qPrintable(file.errorString()) << std::endl;
+    return;
+}
+QDataStream in(&file);
+in.setVersion(QDataStream::Qt_4_3);
+in >> n >> image >> map;
+
+// QDataStream can also be used to read and write raw bytes, without any byte
+// count header, using readRawBytes() and writeRawBytes()
+```
+
+The stream has a status() value that can be
+QDataStream::Ok, QDataStream::ReadPastEnd, or QDataStream::ReadCorruptData. Once an error has
+occurred, the >> operator always reads zero or empty values. This means that we can often simply read an
+entire file without worrying about potential errors and check the status() value at the end to see if what we
+read was valid.
+
+```cpp
+// header file
+QDataStream &operator<<(QDataStream &out, const Painting &painting);
+QDataStream &operator>>(QDataStream &in, Painting &painting);
+
+// source file
+QDataStream &operator<<(QDataStream &out, const Painting &painting)
+{
+    out << painting.title() << painting.artist()
+        << quint32(painting.year());
+    return out;
+}
+
+QDataStream &operator>>(QDataStream &in, Painting &painting)
+{
+    QString title;
+    QString artist;
+    quint32 year;
+    in >> title >> artist >> year;
+    painting = Painting(title, artist, year);
+    return in;
+}
+
+QList<Painting> paintings;
+in >> paintings;
+```
+
+If the QDataStream is being used purely to read and
+write basic C++ data types, we don't even need to call setVersion().
+
+
+```cpp
+The first approach is to embed the QDataStream version number in the file:
+QDataStream out(&file);
+out << quint32(MagicNumber) << quint16(out.version());
+
+quint32 magic;
+quint16 streamVersion;
+QDataStream in(&file);
+in >> magic >> streamVersion;
+if (magic != MagicNumber) {
+    std::cerr << "File is not recognized by this application"
+              << std::endl;
+} else if (streamVersion > in.version()) {
+    std::cerr << "File is from a more recent version of the "
+              << "application" << std::endl;
+    return false;
+}
+
+in.setVersion(streamVersion);
+```
+
+In summary, there are three policies for handling QDataStream versions: 
+
+#. hard-coding the version number,
+#. explicitly writing and reading the version number, and 
+#. using different hard-coded version numbers depending on the application's version. 
+
+Any of these policies can be used to ensure that data written by an old version of
+an application can be read by a new version, even if the new version links against a more recent version of Qt.
+Once we have chosen a policy for handling QDataStream versions, reading and writing binary data using Qt is
+both simple and reliable.
+
+```cpp
+bool copyFile(const QString &source, const QString &dest)
+{
+QFile sourceFile(source);
+if (!sourceFile.open(QIODevice::ReadOnly))
+    return false;
+QFile destFile(dest);
+if (!destFile.open(QIODevice::WriteOnly))
+    return false;
+destFile.write(sourceFile.readAll());
+return sourceFile.error() == QFile::NoError
+       && destFile.error() == QFile::NoError;
+}
+```
+
+peek(), seek(), ungetChar(),
+
 #### Reading and Writing Text
+
+```cpp
+QFile file("sf-book.txt");
+if (!file.open(QIODevice::WriteOnly)) {
+    std::cerr << "Cannot open file for writing: "
+              << qPrintable(file.errorString()) << std::endl;
+    return;
+}
+QTextStream out(&file);
+out << "Thomas M. Disch: " << 334 << endl;
+```
+
+QTextStream::readAll()
+stream.setCodec("UTF-8");
+
+showbase, uppercasedigits, and hex options before it outputs
+the integer 12345678, producing the text "0xBC614E":
+
+Options can also be set using member functions:
+
+```cpp
+out.setNumberFlags(QTextStream::ShowBase
+                    | QTextStream::UppercaseDigits);
+out.setIntegerBase(16);
+out << 12345678;
+```
+
+```cpp
+QTextStream in("0x50 0x20");
+int firstNumber, secondNumber;
+
+in >> firstNumber;             // firstNumber == 80
+in >> dec >> secondNumber;     // secondNumber == 0
+
+char ch;
+in >> ch;                      // ch == 'x'
+```
+
+```cpp
+QTextStream stream(stdin);
+QString line;
+do {
+    // read chunk: readLine() or readAll()
+    line = stream.readLine();
+} while (!line.isNull());
+```
+
+```cpp
+QTextStream in("0x50 0x20");
+int firstNumber, secondNumber;
+
+in >> firstNumber;             // firstNumber == 80
+in >> dec >> secondNumber;     // secondNumber == 0
+
+char ch;
+in >> ch;                      // ch == 'x'
+```
+
+```cpp
+int main(int argc, char *argv[])
+{
+    // read numeric arguments (123, 0x20, 4.5...)
+    for (int i = 1; i < argc; ++i) {
+        int number;
+        QTextStream in(argv[i]);
+        in >> number;
+        ...
+    }
+}
+```
+
+```cpp
+QTextStream out(&file);
+out.setCodec("UTF-8");
+```
+
+```cpp
+QString s;
+QTextStream out(&s);
+out.setFieldWidth(10);
+out.setFieldAlignment(QTextStream::AlignCenter);
+out.setPadChar('-');
+out << "Qt" << "rocks!";
+// ----Qt------rocks!--
+```
+
+```cpp
+stream << '\n' << flush;
+```
+
+
+```cpp
+QTextStream in(&file);
+while (!in.atEnd()) {
+    QString line = in.readLine();
+    QStringList fields = line.split(' ');
+    if (fields.size() >= 3) {
+        // T QLinkedList::takeFirst(), Removes the first item in the list and
+        // returns it
+        int row = fields.takeFirst().toInt();
+        int column = fields.takeFirst().toInt();
+        setFormula(row, column, fields.join(' '));
+    }
+}
+```
+
+```cpp
+void tidyFile(QIODevice *inDevice, QIODevice *outDevice)
+{
+    QTextStream in(inDevice);
+    QTextStream out(outDevice);
+
+    const int TabSize = 8;
+    int endlCount = 0;
+    int spaceCount = 0;
+    int column = 0;
+    QChar ch;
+
+    while (!in.atEnd()) {
+        in >> ch;
+
+        if (ch == '\n') {
+            ++endlCount;
+            spaceCount = 0;
+            column = 0;
+        } else if (ch == '\t') {
+            int size = TabSize - (column % TabSize);
+            spaceCount += size;
+            column += size;
+        } else if (ch == ' ') {
+            ++spaceCount;
+            ++column;
+        } else {
+            while (endlCount > 0) {
+                out << endl;
+                --endlCount;
+                column = 0;
+            }
+            while (spaceCount > 0) {
+                out << ' ';
+                --spaceCount;
+                ++column;
+            }
+            out << ch;
+            ++column;
+        }
+    }
+    out << endl;
+}
+```
+
+```cpp
+QFile inFile;
+QFile outFile;
+
+inFile.open(stdin, QFile::ReadOnly);
+outFile.open(stdout, QFile::WriteOnly);
+
+tidyFile(&inFile, &outFile);
+```
+
 #### Traversing Directories
+
+```cpp
+#include <QtGui>
+#include <iostream>
+
+qlonglong imageSpace(const QString &path)
+{
+    // QDir::homePath()
+    QDir dir(path);
+    qlonglong size = 0;
+
+    QStringList filters;
+    foreach (QByteArray format, QImageReader::supportedImageFormats())
+        filters += "*." + format;
+
+    // QDir treats '/' as a directory separator on all platforms, in addition
+    // to recognizing '\' on Windows
+    foreach (QString file, dir.entryList(filters, QDir::Files))
+        size += QFileInfo(dir, file).size();
+
+    foreach (QString subDir, dir.entryList(QDir::Dirs
+                                           | QDir::NoDotAndDotDot))
+        size += imageSpace(path + QDir::separator() + subDir);
+
+    return size;
+}
+
+int main(int argc, char *argv[])
+{
+    QCoreApplication app(argc, argv);
+    QStringList args = QCoreApplication::arguments();
+
+    QString path = QDir::currentPath();
+    if (args.count() > 1)
+        path = args[1];
+
+    std::cout << "Space used by images in " << qPrintable(path)
+              << " and its subdirectories is "
+              << (imageSpace(path) / 1024) << " KB" << std::endl;
+
+    return 0;
+}
+```
+
+QDir::toNativeSeparators()
+
+And the QFileSystemWatcher class can notify
+us when a change occurs to a directory or to a file, by emitting directoryChanged() and fileChanged()
+signals.
+
 #### Embedding Resources
+
+`.pro`
+
+```
+RESOURCES = myresourcefile.qrc
+```
+
+`.qrc`
+
+```xml
+<RCC>
+<qresource>
+<file>datafiles/phone-codes.dat</file>
+</qresource>
+</RCC>
+```
+
 #### Inter-Process Communication
+
+The QProcess class allows us to run external programs and to interact with them. The class works
+asynchronously, doing its work in the background so that the user interface remains responsive. QProcess
+emits signals to notify us when the external process has data or has finished.
+
+```cpp
+#include <QDialog>
+#include <QProcess>
+
+#include "ui_convertdialog.h"
+
+class ConvertDialog : public QDialog, private Ui::ConvertDialog
+{
+    Q_OBJECT
+
+public:
+    ConvertDialog(QWidget *parent = 0);
+
+private slots:
+    void on_browseButton_clicked();
+    void convertImage();
+    void updateOutputTextEdit();
+    void processFinished(int exitCode, QProcess::ExitStatus exitStatus);
+    void processError(QProcess::ProcessError error);
+
+private:
+    QProcess process;
+    QString targetFile;
+};
+
+// cpp
+connect(&process, SIGNAL(readyReadStandardError()),
+        this, SLOT(updateOutputTextEdit()));
+connect(&process, SIGNAL(finished(int, QProcess::ExitStatus)),
+        this, SLOT(processFinished(int, QProcess::ExitStatus)));
+connect(&process, SIGNAL(error(QProcess::ProcessError)),
+        this, SLOT(processError(QProcess::ProcessError)));
+
+fileName = QDir::toNativeSeparators(fileName);
+
+void ConvertDialog::convertImage()
+{
+    QString sourceFile = sourceFileEdit->text();
+    targetFile = QFileInfo(sourceFile).path() + QDir::separator()
+                 + QFileInfo(sourceFile).baseName() + "."
+                 + targetFormatComboBox->currentText().toLower();
+    buttonBox->button(QDialogButtonBox::Ok)->setEnabled(false);
+    outputTextEdit->clear();
+
+    QStringList args;
+    if (enhanceCheckBox->isChecked())
+        args << "-enhance";
+    if (monochromeCheckBox->isChecked())
+        args << "-monochrome";
+    args << sourceFile << targetFile;
+
+    process.start("convert", args);
+}
+
+void ConvertDialog::processFinished(int exitCode,
+                                    QProcess::ExitStatus exitStatus)
+{
+    if (exitStatus == QProcess::CrashExit) {
+        outputTextEdit->append(tr("Conversion program crashed"));
+    } else if (exitCode != 0) {
+        outputTextEdit->append(tr("Conversion failed"));
+    } else {
+        outputTextEdit->append(tr("File %1 created").arg(targetFile));
+    }
+    buttonBox->button(QDialogButtonBox::Ok)->setEnabled(true);
+}
+```
+
 
 ### 13. Databases
 
@@ -5298,6 +6280,7 @@ Refs
 #. [QVariant Class | Qt 4.8](http://doc.qt.io/qt-4.8/qvariant.html)
 #. [Qt Namespace | Qt 4.8](http://doc.qt.io/qt-4.8/qt.html#mightBeRichText)
 #. [Qt Namespace | Qt 4.8](http://doc.qt.io/qt-4.8/qt.html)
+#. [QTextStream Class | Qt 4.8](http://doc.qt.io/qt-4.8/qtextstream.html#QTextStream)
 
 [set-layout-png]: http://gnat.qiniudn.com/qt/setlayout.png
 [shape-chaning-dlg]: http://gnat.qiniudn.com/qt/dlg.png

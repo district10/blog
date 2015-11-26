@@ -405,6 +405,8 @@ sudo cp /usr/local/share/wemux/wemux.conf.example /usr/local/etc/wemux.conf
 sudo vim /usr/local/etc/wemux.conf # host_list=(root gnat)，改成自己的 ID
 ```
 
+![](http://gnat-tang-shared-image.qiniudn.com/file_colored_zsh.png)
+
 ---
 
 Refs

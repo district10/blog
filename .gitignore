@@ -10,4 +10,6 @@ conf.json
 q*.exe
 *.swp
 *.7z
+*.zip
+*.rar
 tmp.sh
