@@ -7,6 +7,15 @@ Vim Rules
 
 Vim rules. Rules, a verb. Vim rules. Rules, a noun.
 
+Cmds
+----
+
+delete trailing whitespace
+
+`:%s/\s\+$//`
+
+
+
 每天必用的 Vim 宏
 -----------------
 
@@ -14,14 +23,16 @@ Vim rules. Rules, a verb. Vim rules. Rules, a noun.
 
 QObject &rarr; `QObject`{.cpp}
 :   ```
-    viwbi`ea`{.cpp}
+    viwbi`ea`{.cpp}k
     ```
 
-QObject::tr() &rarr; `QObject::tr()`{.cpp}
+tr() &rarr; `tr()`{.cpp}, QObject::tr() &rarr; `QObject::tr()`{.cpp},
 
 :   ```
-    viWBi`f)a`{.cpp}
+    viWBi`f)a`{.cpp}k
     ```
+
+Qt::SolidPattern, `Qt::SolidPattern`{.cpp}
 
 每天必守 Vim 家规
 -----------------
@@ -29,7 +40,12 @@ QObject::tr() &rarr; `QObject::tr()`{.cpp}
 寄存器
 
 #. `a`, `b`: temp register
-#. `c`: like QObject &rarr; `QObject`{.cpp}
+#. `c`: class: QObject &rarr; `QObject`{.cpp}
+#. `g`: namespace: Qt::Red &rarr; `Qt::Red`{.cpp}
+#. `f`: function: QObject::tr() &rarr; `QObject::tr()`{.cpp}
 #. `r`: refs
 #. `n`: now
-#. 
+#. `m`:
+#. `v`:
+#. `w`:
+#. `t`: tilde: word &rarr; `word`

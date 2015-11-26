@@ -6,6 +6,12 @@ C++ GUI Qt4 编程
 ================
 
 <!--
+class:
+viwbi`ea`{.cpp}k
+function:
+viWBi`f)a`{.cpp}k
+glob:
+f:bi`f:eea`{.cpp}k
 -->
 <div style="float:right;">[![](http://img3.douban.com/mpic/s5934624.jpg)](http://book.douban.com/subject/3173123/)</div>
 
@@ -2683,34 +2689,43 @@ void Spreadsheet::timerEvent(QTimerEvent *event)
 
 ### 8. 2D Graphics
 
-Qt's 2D graphics engine is based on the QPainter class. QPainter can draw geometric shapes (points, lines,
-rectangles, ellipses, arcs, chords, pie segments, polygons, and Bézier curves), as well as pixmaps, images,
-and text. Furthermore, QPainter supports advanced features such as antialiasing (for text and shape edges),
-alpha blending, gradient filling, and vector paths. QPainter also supports linear transformations, such as
-translation, rotation, shearing, and scaling.
+Qt's 2D graphics engine is based on the `QPainter`{.cpp} class.
+`QPainter`{.cpp} can draw geometric shapes (points, lines, rectangles,
+ellipses, arcs, chords, pie segments, polygons, and Bézier curves), as well as
+pixmaps, images, and text. Furthermore, `QPainter`{.cpp} supports advanced
+features such as antialiasing (for text and shape edges), alpha blending,
+gradient filling, and vector paths. `QPainter`{.cpp} also supports linear
+transformations, such as translation, rotation, shearing, and scaling.
 
-QPainter can be used to draw on a "paint device", such as a QWidget, a QPixmap, a QImage, or a
-QSvgGenerator. QPainter can also be used in conjunction with QPrinter for printing and for generating PDF
-documents. This means that we can often use the same code to display data on-screen and to produce printed
+`QPainter`{.cpp} can be used to draw on a "paint device", such as a
+`QWidget`{.cpp}, a `QPixmap`{.cpp}, a `QImage`{.cpp}, or a
+`QSvgGenerator`{.cpp}. `QPainter`{.cpp} can also be used in conjunction with
+`QPrinter`{.cpp} for printing and for generating PDF documents. This means that
+we can often use the same code to display data on-screen and to produce printed
 reports.
 
-By reimplementing QWidget::paintEvent(), we can create custom widgets and exercise complete control
-over their appearance, as we saw in Chapter 5. For customizing the look and feel of predefined Qt widgets, we
-can also specify a style sheet or create a QStyle subclass; we cover both of these approaches in Chapter 19.
+By reimplementing `QWidget::paintEvent()`{.cpp}, we can create custom widgets
+and exercise complete control over their appearance, as we saw in Chapter 5.
+For customizing the look and feel of predefined Qt widgets, we can also specify
+a style sheet or create a `QStyle`{.cpp} subclass; we cover both of these
+approaches in Chapter 19.
 
-A common requirement is the need to display large numbers of lightweight arbitrarily shaped items that the
-user can interact with on a 2D canvas. Qt 4.2 introduced a completely new "graphics view" architecture
-centered on the QGraphicsView, QGraphicsScene, and QGraphicsItem classes. This architecture offers a
-high-level interface for doing item-based graphics, and supports standard user actions on items, including
-moving, selecting, and grouping. The items themselves are drawn using QPainter as usual and can be
-transformed individually. We cover this architecture later in the chapter.
+A common requirement is the need to display large numbers of lightweight
+arbitrarily shaped items that the user can interact with on a 2D canvas. Qt 4.2
+introduced a completely new "graphics view" architecture centered on the
+`QGraphicsView`{.cpp}, `QGraphicsScene`{.cpp}, and `QGraphicsItem`{.cpp}
+classes. This architecture offers a high-level interface for doing item-based
+graphics, and supports standard user actions on items, including moving,
+selecting, and grouping. The items themselves are drawn using `QPainter`{.cpp}
+as usual and can be transformed individually. We cover this architecture later
+in the chapter.
 
-An alternative to QPainter is to use OpenGL commands. OpenGL is a standard library for drawing 3D graphics.
-In Chapter 20, we will see how to use the QtOpenGL module, which makes it easy to integrate OpenGL code
+An alternative to `QPainter`{.cpp} is to use OpenGL commands. OpenGL is a
+standard library for drawing 3D graphics.  In Chapter 20, we will see how to
+use the `QtOpenGL`{.cpp} module, which makes it easy to integrate OpenGL code
 into Qt applications.
 
-
-#### Painting with QPainter
+#### Painting with `QPainter`{.cpp}
 
 ```cpp
 // create a QPainter and pass a pointer to the device
@@ -2721,9 +2736,10 @@ void MyWidget::paintEvent(QPaintEvent *event)
 }
 ```
 
-The way the drawing is performed is influenced by QPainter's settings. Some of these are adopted from the
-device, whereas others are initialized to default values. The three main painter settings are the pen, the brush,
-and the font.
+The way the drawing is performed is influenced by `QPainter`{.cpp}'s settings.
+Some of these are adopted from the device, whereas others are initialized to
+default values. The three main painter settings are the pen, the brush, and the
+font.
 
 ![QPainter][qpainter]
 
@@ -2733,7 +2749,9 @@ and the font.
 
 ![Brush Style][brush]
 
-These settings can be modified at any time by calling setPen(), setBrush(), and setFont() with a QPen, QBrush, or QFont object.
+These settings can be modified at any time by calling `setPen()`{.cpp},
+`setBrush()`{.cpp}, and `setFont()`{.cpp} with a `QPen`{.cpp}, `QBrush`{.cpp},
+or `QFont`{.cpp} object.
 
 ![An ellipse & a pie segment & a Bézier curve][draw3]
 
@@ -2761,24 +2779,32 @@ QPainter painter(this);
 painter.setRenderHint(QPainter::Antialiasing, true);
 QPainterPath path;
 path.moveTo(80, 320);
+// two control points: c1X, c1Y, c2X, c2Y
+// endPoint: endPointX, endPointY
+// void QPainterPath::cubicTo(const QPointF & c1, /* qreal c1X, qreal c1Y, */
+//                            const QPointF & c2, /* qreal c2X, qreal c2Y, */
+//                            const QPointF & endPoint)
 path.cubicTo(200, 80, 320, 80, 480, 320);
 painter.setPen(QPen(Qt::black, 8));
 painter.drawPath(path);
 ```
 
-The QPainterPath class can specify arbitrary vector shapes by connecting basic graphical elements together:
+The `QPainterPath`{.cpp} class can specify arbitrary vector shapes by connecting basic graphical elements together:
 straight lines, ellipses, polygons, arcs, Bézier curves, and other painter paths. Painter paths are the ultimate
 drawing primitive in the sense that any shape or combination of shapes can be expressed as a painter path.
 A path specifies an outline, and the area described by the outline can be filled using a brush. In the example in
 Figure 8.5 (c), we didn't set a brush, so only the outline is drawn.
 
-These three examples use built-in brush patterns (Qt::SolidPattern, Qt::DiagCrossPattern, and
-Qt::NoBrush). In modern applications, gradient fills are a popular alternative to monochrome fill patterns.
-Gradients rely on color interpolation to obtain smooth transitions between two or more colors. They are
-frequently used to produce 3D effects; for example, the Plastique and Cleanlooks styles use gradients to
-render QPushButtons.
-Qt supports three types of gradients: linear, conical `['kɑnɪkl]` (圆锥形的), and radial. The Oven Timer example in the next section
-combines all three types of gradients in a single widget to make it look like the real thing.
+These three examples use built-in brush patterns (`Qt::SolidPattern`{.cpp},
+`Qt::DiagCrossPattern`{.cpp}, and `Qt::NoBrush`{.cpp}). In modern applications,
+gradient fills are a popular alternative to monochrome fill patterns.
+Gradients rely on color interpolation to obtain smooth transitions between two
+or more colors. They are frequently used to produce 3D effects; for example,
+the Plastique and Cleanlooks styles use gradients to render
+`QPushButtons`{.cpp}. Qt supports three types of gradients: linear, conical
+`['kɑnɪkl]` (圆锥形的), and radial. The Oven Timer example in the next section
+combines all three types of gradients in a single widget to make it look like
+the real thing.
 
 ![QPainter's gradient brushes][gradient]
 
@@ -2795,61 +2821,75 @@ combines all three types of gradients in a single widget to make it look like th
     gradient.setColorAt(1.0, Qt::black);
     ```
 
-#. Radial gradients are defined by a center point($x_c, $y_c$), a radius $r$, and a focal point($x_f$, $y_f$), in addition to
-the color stops. The center point and the radius specify a circle. The colors spread outward from the focal
-point, which can be the center point or any other point inside the circle.
+#. Radial gradients are defined by a center point(x~c~, y~c~), a radius r, and
+   a focal point(x~f~, y~f~), in addition to the color stops. The center point and
+   the radius specify a circle. The colors spread outward from the focal point,
+   which can be the center point or any other point inside the circle.
 
-#. Conical gradients are defined by a center point (x c , y c ) and an angle a. The colors spread around the
-center point like the sweep of a watch's seconds hand.
+#. Conical gradients are defined by a center point (x~c~, y~c~) and an angle a.
+   The colors spread around the center point like the sweep of a watch's seconds
+   hand.
 
-We specify three colors at three different positions between the two control points. Positions are specified
-as floating-point values between 0 and 1, where 0 corresponds to the first control point and 1 to the
-second control point. Colors between the specified stops are linearly interpolated.
+We specify three colors at three different positions between the two control
+points. Positions are specified as floating-point values between 0 and 1, where
+0 corresponds to the first control point and 1 to the second control point.
+Colors between the specified stops are linearly interpolated.
 
+```cpp
+QPen::QPen(const QBrush & brush, 
+           qreal width, 
+           Qt::PenStyle style = Qt::SolidLine, 
+           Qt::PenCapStyle cap = Qt::SquareCap, 
+           Qt::PenJoinStyle join = Qt::BevelJoin)
+```
 
-`QPen::QPen(const QBrush & brush, qreal width, Qt::PenStyle style = Qt::SolidLine, Qt::PenCapStyle cap = Qt::SquareCap, Qt::PenJoinStyle join = Qt::BevelJoin)`{.cpp}
+So far, we have mentioned `QPainter`{.cpp}'s pen, brush, and font settings. In
+addition to these, `QPainter`{.cpp} has other settings that influence the way
+shapes and text are drawn:
 
+#. The background brush is used to fill the background of geometric shapes
+   (underneath the brush pattern), text, or bitmaps when the background mode is
+   `Qt::OpaqueMode`{.cpp} (the default is `Qt::TransparentMode`{.cpp}).
+#. The brush origin is the starting point for brush patterns, normally the
+   top-left corner of the widget.
+#. The clip region is the area of the device that can be painted. Painting outside
+   the clip region has no effect.
+#. The viewport, window, and world transform determine how logical `QPainter`{.cpp}
+   coordinates map to physical paint device coordinates. By default, these are set
+   up so that the logical and physical coordinate systems coincide. We cover
+   coordinate systems in the next section.
 
-So far, we have mentioned QPainter's pen, brush, and font settings. In addition to these, QPainter has other
-settings that influence the way shapes and text are drawn:
+The composition mode specifies how the newly drawn pixels should interact with
+the pixels already present on the paint device. The default is "source over",
+where drawn pixels are alpha-blended on top of existing pixels. This is
+supported only on certain devices and is covered later in this chapter.
 
-The background brush is used to fill the background of geometric shapes (underneath the brush pattern),
-text, or bitmaps when the background mode is Qt::OpaqueMode (the default is Qt::TransparentMode).
-
-The brush origin is the starting point for brush patterns, normally the top-left corner of the widget.
-
-The clip region is the area of the device that can be painted. Painting outside the clip region has no
-effect.
-
-The viewport, window, and world transform determine how logical QPainter coordinates map to physical
-paint device coordinates. By default, these are set up so that the logical and physical coordinate systems
-coincide. We cover coordinate systems in the next section.
-
-The composition mode specifies how the newly drawn pixels should interact with the pixels already
-present on the paint device. The default is "source over", where drawn pixels are alpha-blended on top of
-existing pixels. This is supported only on certain devices and is covered later in this chapter.
-
-At any time, we can save the current state of a painter on an internal stack by calling save() and restore it
-later on by calling restore().
+At any time, we can save the current state of a painter on an internal stack by
+calling `save()`{.cpp} and restore it later on by calling `restore()`{.cpp}.
 
 #### Coordinate System Transformations
 
-With QPainter's default coordinate system, the point (0, 0) is located at the top-left corner of the paint device,
-x-coordinates increase rightward, and y-coordinates increase downward. Each pixel occupies an area of size 1
-x 1 in the default coordinate system.
+With `QPainter`{.cpp}'s default coordinate system, the point (0, 0) is located
+at the top-left corner of the paint device, x-coordinates increase rightward,
+and y-coordinates increase downward. Each pixel occupies an area of size 1 &times; 1
+in the default coordinate system.
 
-Conceptually, the center of a pixel lies on "half-pixel" coordinates. For example, the top-left pixel of a widget
-covers the area between points (0, 0) and (1, 1), and its center is located at (0.5, 0.5). If we tell QPainter to
-draw a pixel at, say, (100, 100), it will approximate the result by shifting the coordinate by +0.5 in both
-directions, resulting in the pixel centered at (100.5, 100.5) being drawn.
+Conceptually, the center of a pixel lies on **"half-pixel" coordinates**. For
+example, the top-left pixel of a widget covers the area between points (0, 0)
+and (1, 1), and its center is located at (0.5, 0.5). If we tell
+`QPainter`{.cpp} to draw a pixel at, say, (100, 100), it will approximate the
+result by shifting the coordinate by +0.5 in both directions, resulting in the
+pixel centered at (100.5, 100.5) being drawn.
 
-This distinction may seem rather academic at first, but it has important consequences in practice. First, the
-shifting by +0.5 occurs only if antialiasing is disabled (the default); if antialiasing is enabled and we try to draw
-a pixel at (100, 100) in black, QPainter will actually color the four pixels (99.5, 99.5), (99.5, 100.5), (100.5,
-99.5), and (100.5, 100.5) light gray, to give the impression of a pixel lying exactly at the meeting point of the
-four pixels. If this effect is undesirable, we can avoid it by specifying half-pixel coordinates or by translating the
-QPainter by (+0.5, +0.5).
-
+This distinction may seem rather academic at first, but it has important
+consequences in practice. First, the shifting by +0.5 occurs only if
+antialiasing is disabled (the default); if antialiasing is enabled and we try
+to draw a pixel at (100, 100) in black, `QPainter`{.cpp} will actually color
+the four pixels (99.5, 99.5), (99.5, 100.5), (100.5, 99.5), and (100.5, 100.5)
+light gray, to give the impression of a pixel lying exactly at the meeting
+point of the four pixels. If this effect is undesirable, we can avoid it by
+specifying half-pixel coordinates or by translating the `QPainter`{.cpp} by
+(+0.5, +0.5).
 
 ![`QPainter::drawRect(2, 2, 6, 5)`{.cpp} with no antialiasing][drawrect-1]
 
@@ -2857,22 +2897,25 @@ QPainter by (+0.5, +0.5).
 
 ![`QPainter::drawRect(2.5, 2.5, 6, 5)`{.cpp} with antialiasing][drawrect-3]
 
-Now that we understand the default coordinate system, we can take a closer look at how it can be changed
-using QPainter's viewport, window, and world transform. (In this context, the term "window" does not refer to
-a window in the sense of a top-level widget, and the "viewport" has nothing to do with QScrollArea's
-viewport.)
+Now that we understand the default coordinate system, we can take a closer look
+at how it can be changed using `QPainter`{.cpp}'s viewport, window, and world
+transform. (In this context, the term "window" does not refer to a window in
+the sense of a top-level widget, and the "viewport" has nothing to do with
+`QScrollArea`{.cpp}'s viewport.)
 
-The window–viewport mechanism is useful to make the drawing code independent of the size or resolution of
-the paint device. For example, if we want the logical coordinates to extend from (-50, -50) to (+50, +50), with
-(0, 0) in the middle, we can set the window as follows:
+The window–viewport mechanism is useful to make the drawing code independent of
+the size or resolution of the paint device. For example, if we want the logical
+coordinates to extend from (-50, -50) to (+50, +50), with (0, 0) in the middle,
+we can set the window as follows:
 
 `painter.setWindow(-50, -50, 100, 100);`{.cpp}, x0, y0, width, height
 
 ![][win-port]
 
-Now comes the world transform. The world transform is a transformation matrix that is applied in addition to
-the window–viewport conversion. It allows us to translate, scale, rotate, or shear the items we are drawing.
-For example, if we wanted to draw text at a 45° angle, we would use this code:
+Now comes the world transform. The world transform is a transformation matrix
+that is applied in addition to the window–viewport conversion. It allows us to
+translate, scale, rotate, or shear the items we are drawing.  For example, if
+we wanted to draw text at a 45° angle, we would use this code:
 
 ```cpp
 QTransform transform;
@@ -2881,11 +2924,13 @@ painter.setWorldTransform(transform);
 painter.drawText(pos, tr("Sales"));
 ```
 
-The logical coordinates we pass to drawText() are converted by the world transform, then mapped to physical
-coordinates using the window–viewport settings.
-If we specify multiple transformations, they are applied in the order in which they are given. For example, if we
-want to use the point (50, 50) as the rotation's pivot point, we can do so by translating the window by (+50,
-+50), performing the rotation, and then translating the window back to its original position:
+The logical coordinates we pass to `drawText()`{.cpp} are converted by the
+world transform, then mapped to physical coordinates using the window–viewport
+settings.  If we specify multiple transformations, they are applied in the
+order in which they are given. For example, if we want to use the point (50,
+50) as the rotation's pivot point, we can do so by translating the window by
+(+50, +50), performing the rotation, and then translating the window back to
+its original position:
 
 ```cpp
 QTransform transform;
@@ -2896,7 +2941,8 @@ painter.setWorldTransform(transform);
 painter.drawText(pos, tr("Sales"));
 ```
 
-A simpler way to specify transformations is to use QPainter's translate(), scale(), rotate(), and shear()
+A simpler way to specify transformations is to use `QPainter`{.cpp}'s
+`translate()`{.cpp}, `scale()`{.cpp}, `rotate()`{.cpp}, and `shear()`{.cpp}
 
 ```cpp
 convenience functions:
@@ -2906,8 +2952,9 @@ painter.translate(+50.0, +50.0);
 painter.drawText(pos, tr("Sales"));
 ```
 
-If we want to use the same transformations repeatedly, it is more efficient to store them in a QTransform
-object and set the world transform on the painter whenever the transformations are needed.
+If we want to use the same transformations repeatedly, it is more efficient to
+store them in a `QTransform`{.cpp} object and set the world transform on the
+painter whenever the transformations are needed.
 
 ```cpp
 // oventimer.h
@@ -3101,15 +3148,16 @@ void OvenTimer::draw(QPainter *painter)
 
 ```
  
-The code in the for loop suffers from a minor flaw, which would quickly become apparent if we performed
-more iterations. Each time we call rotate(), we effectively multiply the current world transform with a rotation
-transform, producing a new world transform. The rounding errors associated with floating-point arithmetic
-gradually accumulate, resulting in an increasingly inaccurate world transform. Here's one way to rewrite the
-code to avoid this issue, using save() and restore() to save and reload the original transform for each iteration
+The code in the for loop suffers from a minor flaw, which would quickly become
+apparent if we performed more iterations. Each time we call `rotate()`{.cpp},
+we effectively multiply the current world transform with a rotation transform,
+producing a new world transform. The rounding errors associated with
+floating-point arithmetic gradually accumulate, resulting in an increasingly
+inaccurate world transform. Here's one way to rewrite the code to avoid this
+issue, using `save()`{.cpp} and `restore()`{.cpp} to save and reload the
+original transform for each iteration
 
 ```cpp
-painter->setPen(thinPen);
-painter->setBrush(knobGradient);
 for (int i = 0; i <= MaxMinutes; ++i) {
     painter->save();
     painter->rotate(-i * DegreesPerMinute);
@@ -3131,22 +3179,28 @@ for (int i = 0; i <= MaxMinutes; ++i) {
 
 #### High-Quality Rendering with QImage
 
-When accuracy is more important than efficiency, we can draw to a QImage and copy the result onto the
-screen. This always uses Qt's own internal paint engine, giving identical results on all platforms. The only
-restriction is that the QImage on which we paint must be created with an argument of either
-QImage::Format_RGB32 or QImage::Format_ARGB32_Premultiplied.
+When accuracy is more important than efficiency, we can draw to a
+`QImage`{.cpp} and copy the result onto the screen. This always uses Qt's own
+internal paint engine, giving identical results on all platforms. The only
+restriction is that the `QImage`{.cpp} on which we paint must be created with
+an argument of either `QImage::Format_RGB32`{.cpp} or
+`QImage::Format_ARGB32_Premultiplied`{.cpp}.
 
-The premultiplied ARGB32 format is almost identical to the conventional ARGB32 format (0xAARRGGBB), the
-difference being that the red, green, and blue channels are "premultiplied" with the alpha channel. This means
-that the RGB values, which normally range from 0x00 to 0xFF, are scaled from 0x00 to the alpha value. For
-example, a 50%-transparent blue color is represented as 0x7F0000FF in ARGB32 format, but 0x7F00007F in
-premultiplied ARGB32 format, and similarly a 75%-transparent dark green of 0x3F008000 in ARGB32 format
-would be 0x3F002000 in premultiplied ARGB32 format.
+The premultiplied `ARGB32` format is almost identical to the conventional
+`ARGB32` format (0xAARRGGBB), the difference being that the red, green, and
+blue channels are **"premultiplied"** with the alpha channel. This means that
+the RGB values, which normally range from 0x00 to 0xFF, are scaled **from 0x00 to
+the alpha value**. For example, a 50%-transparent blue color is represented as
+0x7F0000FF in ARGB32 format, but 0x7F00007F in premultiplied ARGB32 format, and
+similarly a 75%-transparent dark green of 0x3F008000 in ARGB32 format would be
+0x3F002000 in premultiplied ARGB32 format.
 
-Let's suppose we want to use antialiasing for drawing a widget, and we want to obtain good results even on
-X11 systems with no X Render extension. The original paintEvent() handler, which relies on X Render for the
+Let's suppose we want to use antialiasing for drawing a widget, and we want to
+obtain good results even on X11 systems with no X Render extension. The
+original `paintEvent()`{.cpp} handler, which relies on X Render for the
 antialiasing, might look like this:
 
+```cpp
 void MyWidget::paintEvent(QPaintEvent *event)
 {
     QImage image(size(), QImage::Format_ARGB32_Premultiplied);
@@ -3157,22 +3211,28 @@ void MyWidget::paintEvent(QPaintEvent *event)
     imagePainter.setRenderHint(QPainter::Antialiasing, true);
     imagePainter.eraseRect(rect());
     draw(&imagePainter);
+    // Ends painting. Any resources used while painting are released. You don't
+    // normally need to call this since it is called by the destructor.
     imagePainter.end();
     QPainter widgetPainter(this);
     widgetPainter.drawImage(0, 0, image);
 }
+```
 
-One particularly powerful feature of Qt's graphics engine is its support for composition modes. These specify
-how a source and a destination pixel are merged together when drawing. This applies to all painting
-operations, including pen, brush, gradient, and image drawing.
-The default composition mode is QImage::CompositionMode_SourceOver, meaning that the source pixel (the
-pixel we are drawing) is blended on top of the destination pixel (the existing pixel) in such a way that the alpha
-component of the source defines its translucency. Figure 8.13 shows the result of drawing a semi-transparent
-butterfly (the "source" image) on top of a checker pattern (the "destination" image) with the different modes.
+One particularly powerful feature of Qt's graphics engine is its support for
+composition modes. These specify how a source and a destination pixel are
+merged together when drawing. This applies to all painting operations,
+including pen, brush, gradient, and image drawing. The default composition mode
+is `QImage::CompositionMode_SourceOver`{.cpp}, meaning that the source pixel
+(the pixel we are drawing) is blended on top of the destination pixel (the
+existing pixel) in such a way that the alpha component of the source defines
+its translucency. Figure 8.13 shows the result of drawing a semi-transparent
+butterfly (the "source" image) on top of a checker pattern (the "destination"
+image) with the different modes.
 
 ![][composite]
 
-QPainter::setCompositionMode()
+`QPainter::setCompositionMode()`{.cpp}
 
 ```cpp
 QImage resultImage = checkerPatternImage;
@@ -3181,71 +3241,89 @@ painter.setCompositionMode(QPainter::CompositionMode_Xor);
 painter.drawImage(0, 0, butterflyImage);
 ```
 
-One issue to be aware of is that the QImage::CompositionMode_Xor operation also applies to the alpha
-channel. This means that if we XOR the color white (0xFFFFFFFF) with itself, we obtain a transparent color
+One issue to be aware of is that the `QImage::CompositionMode_Xor`{.cpp}
+operation also applies to the alpha channel. This means that if we XOR the
+color white (0xFFFFFFFF) with itself, we obtain a transparent color
 (0x00000000), not black (0xFF000000).
 
 #### Item-Based Rendering with Graphics View
 
-Drawing using QPainter is ideal for custom widgets and for drawing one or just a few items. For graphics in
-which we need to handle anything from a handful up to tens of thousands of items, and we want the user to be
-able to click, drag, and select items, Qt's graphics view classes provide the solution we need.
+Drawing using `QPainter`{.cpp} is ideal for custom widgets and for drawing one
+or just a few items. For graphics in which we need to handle anything from a
+handful up to tens of thousands of items, and we want the user to be able to
+click, drag, and select items, Qt's graphics view classes provide the solution
+we need.
 
 ![][multiview]
 
-The graphics view architecture consists of a scene, represented by the QGraphicsScene class, and items in the
-scene, represented by QGraphicsItem subclasses. The scene (along with its item) is made visible to users by
-showing them in a view, represented by the QGraphicsView class. The same scene can be shown in more than
-one view—for example, to show different parts of a large scene, or to show the scene under different
+The graphics view architecture consists of a scene, represented by the
+`QGraphicsScene`{.cpp} class, and items in the scene, represented by
+`QGraphicsItem`{.cpp} subclasses. The scene (along with its item) is made
+visible to users by showing them in a view, represented by the `QGraphicsView`{.cpp}
+class. The same scene can be shown in more than one view—for example, to show
+different parts of a large scene, or to show the scene under different
 transformations. This is illustrated schematically in Figure 8.14.
 
-Several predefined QGraphicsItem subclasses are provided, including QGraphicsLineItem,
-QGraphicsPixmapItem, QGraphicsSimpleTextItem (for styled plain text), and QGraphicsTextItem (for rich
-text); see Figure 8.15. We can also create our own custom QGraphicsItem subclasses, as we will see later in
-this section.
+Several predefined `QGraphicsItem`{.cpp} subclasses are provided, including
+`QGraphicsLineItem`{.cpp}, `QGraphicsPixmapItem`{.cpp},
+`QGraphicsSimpleTextItem`{.cpp} (for styled plain text), and
+`QGraphicsTextItem`{.cpp} (for rich text); see Figure 8.15. We can also create
+our own custom `QGraphicsItem`{.cpp} subclasses, as we will see later in this
+section.
 
 ![][graphicsitem]
 
-A QGraphicsScene holds a collection of graphics items. A scene has three layers: a background layer, an item
-layer, and a foreground layer. The background and foreground are normally specified by QBrushes, but it is
-possible to reimplement drawBackground() or drawForeground() for complete control. If we want to use a
-pixmap as a background, we could simply create a texture QBrush based on that pixmap. The foreground
-brush could be set to a semi-transparent white to give a faded effect, or to be a cross pattern to provide a grid
-overlay.
+A `QGraphicsScene`{.cpp} holds a collection of graphics items. A scene has
+three layers: **a background layer**, **an item layer**, and **a foreground
+layer**. The background and foreground are normally specified by
+`QBrushes`{.cpp}, but it is possible to reimplement `drawBackground()`{.cpp} or
+`drawForeground()`{.cpp} for complete control. If we want to use a pixmap as a
+background, we could simply create a texture `QBrush`{.cpp} based on that
+pixmap. The foreground brush could be set to a semi-transparent white to give a
+faded effect, or to be a cross pattern to provide a grid overlay.
 
-The scene can tell us which items have collided, which are selected, and which are at a particular point or in a
-particular region. A scene's graphics items are either top-level (the scene is their parent) or children (their
-parent is another item). Any transformations applied to an item are automatically applied to its children.
-The graphics view architecture provides two ways of grouping items. One is to simply make an item a child of
-another item. Another way is to use a QGraphicsItemGroup. Adding an item to a group does not cause it to be
-transformed in any way; these groups are convenient for handling multiple items as though they were a single
-item.
-A QGraphicsView is a widget that presents a scene, providing scroll bars if necessary and capable of applying
-transformations that affect how the scene is rendered. This is useful to support zooming and rotating as aids
-for viewing the scene.
-By default, QGraphicsView renders using Qt's built-in 2D paint engine, but it can be changed to use an
-OpenGL widget with a single setViewport() call after it has been constructed. It is also easy to print a scene,
-or parts of a scene, as we will discuss in the next section where we see several techniques for printing using
-Qt.
+The scene can tell us which items have collided, which are selected, and which
+are at a particular point or in a particular region. A scene's graphics items
+are either top-level (the scene is their parent) or children (their parent is
+another item). Any transformations applied to an item are automatically applied
+to its children.  The graphics view architecture provides two ways of grouping
+items. One is to simply make an item a child of another item. Another way is to
+use a `QGraphicsItemGroup`{.cpp}. Adding an item to a group does not cause it
+to be transformed in any way; these groups are convenient for handling multiple
+items as though they were a single item.  A `QGraphicsView`{.cpp} is a widget
+that presents a scene, providing scroll bars if necessary and capable of
+applying transformations that affect how the scene is rendered. This is useful
+to support zooming and rotating as aids for viewing the scene.  By default,
+`QGraphicsView`{.cpp} renders using Qt's built-in 2D paint engine, but it can
+be changed to use an OpenGL widget with a single `setViewport()`{.cpp} call
+after it has been constructed. It is also easy to print a scene, or parts of a
+scene, as we will discuss in the next section where we see several techniques
+for printing using Qt.
 
-The architecture uses three different coordinate systems—viewport coordinates, scene coordinates, and item
-coordinates—with functions for mapping from one coordinate system to another. Viewport coordinates are
-coordinates inside the QGraphicsView's viewport. Scene coordinates are logical coordinates that are used for
-positioning top-level items on the scene. Item coordinates are specific to each item and are centered about an
-item-local (0, 0) point; these remain unchanged when we move the item on the scene. In practice, we usually
-
-only care about the scene coordinates (for positioning top-level items) and item coordinates (for positioning
-child items and for drawing items). Drawing each item in terms of its own local coordinate system means that
-we do not have to worry about where an item is in the scene or what transformations have been applied to it.
-The graphics view classes are straightforward to use and offer a great deal of functionality. To introduce some
-of what can be done with them, we will review two examples. The first example is a simple diagram editor,
-which will show how to create items and how to handle user interaction. The second example is an annotated
-map program that shows how to handle large numbers of graphics objects and how to render them efficiently
-at different zoom levels.
-The Diagram application shown in Figure 8.16 allows users to create nodes and links. Nodes are graphics items
-that show plain text inside a rounded rectangle, whereas links are lines that connect pairs of nodes. Nodes that
-are selected are shown with a dashed outline drawn with a thicker pen than usual. We will begin by looking at
-links, since they are the simplest, then nodes, and then we will see how they are used in context.
+The architecture uses three different coordinate systems: 1) **viewport
+coordinates**; 2) **scene coordinates**, and 3) **item coordinates** — with
+functions for mapping from one coordinate system to another. Viewport
+coordinates are coordinates inside the `QGraphicsView`{.cpp}'s viewport. Scene
+coordinates are logical coordinates that are used for positioning top-level
+items on the scene. Item coordinates are specific to each item and are centered
+about an item-local (0, 0) point; these remain unchanged when we move the item
+on the scene. In practice, we usually only care about the scene coordinates
+(for positioning top-level items) and item coordinates (for positioning child
+items and for drawing items). Drawing each item in terms of its own local
+coordinate system means that we do not have to worry about where an item is in
+the scene or what transformations have been applied to it.  The graphics view
+classes are straightforward to use and offer a great deal of functionality. To
+introduce some of what can be done with them, we will review two examples. The
+first example is a simple diagram editor, which will show how to create items
+and how to handle user interaction. The second example is an annotated map
+program that shows how to handle large numbers of graphics objects and how to
+render them efficiently at different zoom levels.  The Diagram application
+shown in Figure 8.16 allows users to create nodes and links. Nodes are graphics
+items that show plain text inside a rounded rectangle, whereas links are lines
+that connect pairs of nodes. Nodes that are selected are shown with a dashed
+outline drawn with a thicker pen than usual. We will begin by looking at links,
+since they are the simplest, then nodes, and then we will see how they are used
+in context.
 
 ```cpp
 #include <QGraphicsLineItem>
@@ -3274,9 +3352,9 @@ private:
 };
 ```
 
-QGraphicsItem is not a
-QObject subclass, but if we wanted to add signals and slots to Link, there is nothing to stop us from using
-multiple inheritance with QObject.
+`QGraphicsItem`{.cpp} is not a `QObject`{.cpp} subclass, but if we wanted to
+add signals and slots to Link, there is nothing to stop us from using multiple
+inheritance with `QObject`{.cpp}.
 
 ```cpp
 Link::Link(Node *fromNode, Node *toNode)
@@ -3321,9 +3399,10 @@ void Link::trackNodes()
 }
 ```
 
-For the Node class, we will handle all the graphics ourselves. Another difference between nodes and links is
-that nodes are more interactive. We will begin by reviewing the Node declaration, breaking it into a few pieces
-since it is quite long.
+For the Node class, we will handle all the graphics ourselves. Another
+difference between nodes and links is that nodes are more interactive. We will
+begin by reviewing the Node declaration, breaking it into a few pieces since it
+is quite long.
 
 ```cpp
 #include <QApplication>
@@ -3469,6 +3548,7 @@ QPainterPath Node::shape() const
     QRectF rect = outlineRect();
 
     QPainterPath path;
+    // void addRoundRect(const QRectF &rect, int xRnd, int yRnd);
     path.addRoundRect(rect, roundness(rect.width()),
                       roundness(rect.height()));
     return path;
@@ -3481,29 +3561,1497 @@ QPainterPath Node::shape() const
 
 `QRectF QRectF::adjusted(qreal dx1, qreal dy1, qreal dx2, qreal dy2) const`{.cpp}
 
-:   Returns a new rectangle with dx1, dy1, dx2 and dy2 added respectively to the existing coordinates of this rectangle.
+:   Returns a new rectangle with dx1, dy1, dx2 and dy2 added respectively to
+    the existing coordinates of this rectangle.
 
-aoei aoei great two three nice
-aoei aoei one two three
-aoei aoei one two three
-`aoei`{.cpp} aoei one two three
+![](http://doc.qt.io/qt-4.8/images/qpainterpath-addtext.png)
 
-viwbi`ea`{.cpp}
+```cpp
+QLinearGradient myGradient;
+QPen myPen;
+QFont myFont;
+QPointF baseline(x, y);
+
+QPainterPath myPath;
+myPath.addText(baseline, myFont, tr("Qt"));
+
+QPainter painter(this);
+painter.setBrush(myGradient);
+painter.setPen(myPen);
+painter.drawPath(myPath);
+```
+
+```cpp
+void Node::paint(QPainter *painter,
+                 const QStyleOptionGraphicsItem *option,
+                 QWidget * /* widget */)
+{
+    QPen pen(myOutlineColor);
+    // The option parameter of type QStyleOptionGraphicsItem is an unusual
+    // class for Qt because it provides several public member variables. These
+    // include the current layout direction, font metrics, palette, rectangle,
+    // state (selected, "has focus", and many others), the transformation
+    // matrix, and the level of detail. Here we have checked the state member
+    // to see whether the node is selected.
+    if (option->state & QStyle::State_Selected) {
+        pen.setStyle(Qt::DotLine);
+        pen.setWidth(2);
+    }
+    // default: solid 1-pixel line
+    painter->setPen(pen);
+    painter->setBrush(myBackgroundColor);
+
+    QRectF rect = outlineRect();
+    painter->drawRoundRect(rect, roundness(rect.width()),
+                           roundness(rect.height()));
+
+    painter->setPen(myTextColor);
+    painter->drawText(rect, Qt::AlignCenter, myText);
+}
+
+QVariant Node::itemChange(GraphicsItemChange change,
+                          const QVariant &value)
+{
+    if (change == ItemPositionHasChanged) {
+        foreach (Link *link, myLinks)
+            link->trackNodes();
+    }
+    return QGraphicsItem::itemChange(change, value);
+}
+
+void Node::mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event)
+{
+    QString text = QInputDialog::getText(event->widget(), // event->widget()
+                           tr("Edit Text"), tr("Enter new text:"),
+                           QLineEdit::Normal, myText);
+    if (!text.isEmpty())
+        setText(text);
+}
+
+int Node::roundness(double size) const
+{
+    // returns appropriate rounding factors to ensure that the node's corners
+    // are quarter- circles with diameter 12. The rounding factors must be in
+    // the range 0 (square) to 99 (fully rounded).
+    const int Diameter = 12;
+    return 100 * Diameter / int(size);
+}
+```
+
+```cpp
+class DiagramWindow : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    DiagramWindow();
+
+private slots:
+    void addNode();
+    void addLink();
+    void del(); // void cut(); void copy(); void paste();
+    void bringToFront();
+    void sendToBack();
+    void properties();
+    void updateActions();
+
+private:
+    typedef QPair<Node *, Node *> NodePair;
+
+    void createActions();
+    void createMenus();
+    void createToolBars();
+    void setZValue(int z);
+    void setupNode(Node *node);
+    Node *selectedNode() const;
+    Link *selectedLink() const;
+    NodePair selectedNodePair() const;
+
+    QMenu *fileMenu;
+    QMenu *editMenu;
+    QToolBar *editToolBar; // QAction *exitAction; QAction *addNodeAction; 
+    QAction *addLinkAction; // QAction *deleteAction; 
+    QAction *copyAction; // QAction *pasteAction; QAction *cutAction;
+    QAction *bringToFrontAction;
+    QAction *sendToBackAction;
+    QAction *propertiesAction;
+
+    QGraphicsScene *scene;
+    QGraphicsView *view;
+
+    int minZ;
+    int maxZ;
+    int seqNumber;
+};
+
+DiagramWindow::DiagramWindow()
+{
+    scene = new QGraphicsScene(0, 0, 600, 500);
+
+    // create a graphics view to visualize the scene.
+    view = new QGraphicsView;
+    view->setScene(scene);
+    // means that the user can also select items by dragging a rubber band over
+    // them
+    view->setDragMode(QGraphicsView::RubberBandDrag);
+    view->setRenderHints(QPainter::Antialiasing
+                         | QPainter::TextAntialiasing);
+    view->setContextMenuPolicy(Qt::ActionsContextMenu);
+    setCentralWidget(view);
+
+    minZ = 0;
+    maxZ = 0;
+    seqNumber = 0;
+
+    createActions();
+    createMenus();
+    createToolBars();
+
+    connect(scene, SIGNAL(selectionChanged()),
+            this, SLOT(updateActions()));
+
+    setWindowTitle(tr("Diagram"));
+    updateActions();
+}
+
+void DiagramWindow::addNode()
+{
+    Node *node = new Node;
+    node->setText(tr("Node %1").arg(seqNumber + 1));
+    setupNode(node);
+}
+
+void DiagramWindow::setupNode(Node *node)
+{
+    node->setPos(QPoint(80 + (100 * (seqNumber % 5)),
+                        80 + (50 * ((seqNumber / 5) % 7))));
+    scene->addItem(node);
+    ++seqNumber;
+
+    scene->clearSelection();
+    node->setSelected(true);
+    bringToFront();
+}
+
+void DiagramWindow::bringToFront()
+{
+    ++maxZ;
+    setZValue(maxZ);
+}
+
+void DiagramWindow::sendToBack()
+{
+    --minZ;
+    setZValue(minZ);
+}
+
+Node *DiagramWindow::selectedNode() const
+{
+    QList<QGraphicsItem *> items = scene->selectedItems();
+    if (items.count() == 1) {
+        return dynamic_cast<Node *>(items.first());
+    } else {
+        return 0;
+    }
+}
+
+
+void DiagramWindow::addLink()
+{
+    NodePair nodes = selectedNodePair();
+    if (nodes == NodePair())
+        return;
+
+    Link *link = new Link(nodes.first, nodes.second);
+    scene->addItem(link);
+}
+
+DiagramWindow::NodePair DiagramWindow::selectedNodePair() const
+{
+    QList<QGraphicsItem *> items = scene->selectedItems();
+    if (items.count() == 2) {
+        Node *first = dynamic_cast<Node *>(items.first());
+        Node *second = dynamic_cast<Node *>(items.last());
+        if (first && second)
+            return NodePair(first, second);
+    }
+    return NodePair();
+}
+
+void DiagramWindow::del()
+{
+    QList<QGraphicsItem *> items = scene->selectedItems();
+    QMutableListIterator<QGraphicsItem *> i(items);
+    while (i.hasNext()) {
+        Link *link = dynamic_cast<Link *>(i.next());
+        if (link) {
+            delete link;
+            i.remove();
+        }
+    }
+
+    qDeleteAll(items);
+}
+
+void DiagramWindow::properties()
+{
+    Node *node = selectedNode();
+    Link *link = selectedLink();
+
+    if (node) {
+        PropertiesDialog dialog(node, this);
+        dialog.exec();
+    } else if (link) {
+        QColor color = QColorDialog::getColor(link->color(), this);
+        if (color.isValid())
+            link->setColor(color);
+    }
+}
+
+void DiagramWindow::cut()
+{
+    Node *node = selectedNode();
+    if (!node)
+        return;
+
+    copy();
+    delete node;
+}
+
+void DiagramWindow::copy()
+{
+    Node *node = selectedNode();
+    if (!node)
+        return;
+
+    QString str = QString("Node %1 %2 %3 %4")
+                  .arg(node->textColor().name()) // #008000
+                  .arg(node->outlineColor().name())
+                  .arg(node->backgroundColor().name())
+                  .arg(node->text());
+    QApplication::clipboard()->setText(str);
+}
+
+void DiagramWindow::paste()
+{
+    QString str = QApplication::clipboard()->text();
+    QStringList parts = str.split(" ");
+
+    if (parts.count() >= 5 && parts.first() == "Node") {
+        Node *node = new Node;
+        // qlist.h: QList<T> mid(int pos, int length = -1) const;
+        node->setText(QStringList(parts.mid(4)).join(" "));
+        node->setTextColor(QColor(parts[1]));
+        node->setOutlineColor(QColor(parts[2]));
+        node->setBackgroundColor(QColor(parts[3]));
+        setupNode(node);
+    }
+}
+
+void DiagramWindow::updateActions()
+{
+    bool hasSelection = !scene->selectedItems().isEmpty();
+    bool isNode = (selectedNode() != 0);
+    bool isNodePair = (selectedNodePair() != NodePair());
+
+    cutAction->setEnabled(isNode);
+    copyAction->setEnabled(isNode);
+    addLinkAction->setEnabled(isNodePair);
+    deleteAction->setEnabled(hasSelection);
+    bringToFrontAction->setEnabled(isNode);
+    sendToBackAction->setEnabled(isNode);
+    propertiesAction->setEnabled(isNode);
+
+    foreach (QAction *action, view->actions())
+        view->removeAction(action);
+
+    foreach (QAction *action, editMenu->actions()) {
+        if (action->isEnabled())
+            view->addAction(action);
+    }
+}
+```
+
+
+
+
+
+A city block has a kind, a color, and a shape. Since the city blocks are not selectable, we have not bothered to
+reimplement the shape() function like we did for the Node class in the previous example.
+
+```cpp
+class CityBlock : public QGraphicsItem
+{
+public:
+    enum Kind { Park, SmallBuilding, Hospital, Hall, Building, Tower,
+                LShapedBlock, LShapedBlockPlusSmallBlock, TwoBlocks,
+                BlockPlusTwoSmallBlocks };
+
+    CityBlock(Kind kind);
+
+    QRectF boundingRect() const;
+    void paint(QPainter *painter,
+               const QStyleOptionGraphicsItem *option, QWidget *widget);
+
+private:
+    Kind kind;
+    QColor color;
+    QPainterPath shape;
+};
+```
+
+```cpp
+CityBlock::CityBlock(Kind kind)
+{
+    this->kind = kind;
+
+    int green = 96 + (std::rand() % 64);
+    int red = 16 + green + (std::rand() % 64);
+    int blue = 16 + (std::rand() % green);
+    color = QColor(red, green, blue);
+
+    if (kind == Park) {
+        color = QColor(192 + (std::rand() % 32), 255,
+                       192 + (std::rand() % 16));
+        shape.addRect(boundingRect());
+    } else if (kind == SmallBuilding) {
+        QRectF block(-7.5, -7.5, 15, 15);
+        block.moveBottomLeft(QPointF((std::rand() % 6) - 3,
+                                     (std::rand() % 6) - 3));
+        shape.addRect(block);
+    } else if (kind == Hospital) {
+        int a = (std::rand() % 6) + 10;
+        int b = (std::rand() % 6) + 10;
+        QPolygonF block;
+        block << QPointF(-5, -a) << QPointF(-5, -5) << QPointF(-10, -5)
+              << QPointF(-10, 5) << QPointF(-5, 5)  << QPointF(-5, 10)
+              << QPointF(5, 10)  << QPointF(5, 5)   << QPointF(b, 5)
+              << QPointF(b, -5)  << QPointF(5, -5)  << QPointF(5, -a);
+        shape.addPolygon(block);
+    } else if (kind == Hall) {
+        int padding1 = (std::rand() % 8) + 2;
+        int padding2 = (std::rand() % 8) + 2;
+        shape.addEllipse(boundingRect().adjusted(+padding1, +padding1,
+                                                 -padding2, -padding2));
+    } else if (kind == Building) {
+        shape.addRect(boundingRect());
+    } else if (kind == Tower) {
+        int padding1 = (std::rand() % 8) + 2;
+        int padding2 = (std::rand() % 8) + 2;
+        shape.addRect(boundingRect().adjusted(+padding1, +padding1,
+                                              -padding2, -padding2));
+    } else if (kind == LShapedBlock
+               || kind == LShapedBlockPlusSmallBlock) {
+        int a = (std::rand() % 6) + 10;
+        int b = (std::rand() % 6) + 10;
+        int s = qMin(a, b) / 2;
+        QPolygonF block;
+        block << QPointF(-a, -a) << QPointF(-a, +a) << QPointF(-s, +a)
+              << QPointF(-s, -s) << QPointF(+b, -s) << QPointF(+b, -a);
+        shape.addPolygon(block);
+        if (kind == LShapedBlockPlusSmallBlock) {
+            int inset = (std::rand() % 4) + 4;
+            shape.addRect(QRectF(-s + inset, -s + inset, a, b));
+        }
+    } else if (kind == TwoBlocks) {
+        int w1 = (std::rand() % 10) + 8;
+        int h1 = (std::rand() % 28) + 8;
+        int w2 = (std::rand() % 10) + 8;
+        int h2 = (std::rand() % 24) + 8;
+        shape.addRect(QRectF(-16, -16, w1, h1));
+        shape.addRect(QRectF(-16 + w1 + 4, -16 + (std::rand() % 4),
+                             w2, h2));
+    } else if (kind == BlockPlusTwoSmallBlocks) {
+        int w1 = (std::rand() % 10) + 8;
+        int h1 = (std::rand() % 28) + 8;
+        int w2 = (std::rand() % 10) + 8;
+        int h2 = (std::rand() % 10) + 8;
+        int w3 = (std::rand() % 6) + 8;
+        int h3 = (std::rand() % 6) + 8;
+        int y = (std::rand() % 4) - 16;
+        shape.addRect(QRectF(-16, -16, w1, h1));
+        shape.addRect(QRectF(-16 + w1 + 4, y, w2, h2));
+        shape.addRect(QRectF(-16 + w1 + 4,
+                             y + h2 + 4 + (std::rand() % 4), w3, h3));
+    }
+}
+
+QRectF CityBlock::boundingRect() const
+{
+    return QRectF(-20, -20, 40, 40);
+}
+
+void CityBlock::paint(QPainter *painter,
+                      const QStyleOptionGraphicsItem *option,
+                      QWidget * /* widget */)
+{
+    if (option->levelOfDetail < 4.0) {
+        // If the zoom factor is less than 4.0, we use a solid color to fill
+        // the shape
+        painter->fillPath(shape, color);
+    } else {
+        // If the zoom factor is 4.0 or more, we use a QLinearGradient to fill
+        // the shape to give a subtle lighting effect.
+        QLinearGradient gradient(QPoint(-20, -20), QPoint(+20, +20));
+        int coeff = 105 + int(std::log(option->levelOfDetail - 4.0));
+        gradient.setColorAt(0.0, color.lighter(coeff));
+        gradient.setColorAt(1.0, color.darker(coeff));
+        painter->fillPath(shape, gradient);
+    }
+}
+```
+
+The levelOfDetail member of the QStyleOptionGraphicsItem class stores a floating-point value that tells
+us what the zoom factor is.
+
+```cpp
+class Annotation : public QGraphicsItem
+{
+public:
+    Annotation(const QString &text, bool major = false);
+
+    void setText(const QString &text);
+    QString text() const;
+
+    QRectF boundingRect() const;
+    void paint(QPainter *painter,
+               const QStyleOptionGraphicsItem *option, QWidget *widget);
+
+private:
+    QFont font;
+    QString str;
+    bool major;
+    double threshold;
+    int y;
+};
+```
+
+```cpp
+Annotation::Annotation(const QString &text, bool major)
+{
+    font = qApp->font();
+    font.setBold(true);
+
+    // A part
+    if (major) {
+        font.setPointSize(font.pointSize() + 2);
+        font.setStretch(QFont::SemiExpanded);
+    }
+
+    // B part
+    if (major) {
+        threshold = 0.01 * (40 + (std::rand() % 40));
+    } else {
+        threshold = 0.01 * (100 + (std::rand() % 100));
+    }
+
+    str = text;
+    this->major = major;
+    y = 20 - (std::rand() % 40);
+
+    // on top
+    setZValue(1000);
+
+    // ensure that the annotation does not change size no matter how much the
+    // scene is zoomed
+    setFlag(ItemIgnoresTransformations, true);
+}
+```
+
+```cpp
+void Annotation::setText(const QString &text)
+{
+    prepareGeometryChange();
+    str = text;
+    update();
+}
+
+// We get the font metrics for the annotation's font, and use them to calculate
+// the text's bounding rectangle. We then move the rectangle's center point to
+// the annotation's y offset, and make the rectangle slightly wider. The extra
+// pixels on the left and right sides of the bounding rectangle will give the
+// text some margin from the edges.
+QRectF Annotation::boundingRect() const
+{
+    QFontMetricsF metrics(font);
+    QRectF rect = metrics.boundingRect(str);
+    // Moves the rectangle, leaving the center point at the given position. The
+    // rectangle's size is unchanged.
+    rect.moveCenter(QPointF(0, y));
+    rect.adjust(-4, 0, +4, 0);
+    return rect;
+}
+```
+
+```cpp
+void Annotation::paint(QPainter *painter,
+                       const QStyleOptionGraphicsItem *option,
+                       QWidget * /* widget */)
+{
+    if (option->levelOfDetail <= threshold)
+        return;
+
+    painter->setFont(font);
+
+    QRectF rect = boundingRect();
+
+    // start by painting a semi-transparent white rectangle; this helps the
+    // text stand out when drawn on top of a dark block
+    int alpha = int(30 * std::log(option->levelOfDetail));
+    if (alpha >= 32)
+        painter->fillRect(rect, QColor(255, 255, 255, qMin(alpha, 63)));
+
+    // We draw the text twice, once in white and once in blue. The white text
+    // is offset by one pixel horizontally and vertically to create a shadow
+    // effect that makes the text easier to read
+    painter->setPen(Qt::white);
+    painter->drawText(rect.translated(+1, +1), str,
+                      QTextOption(Qt::AlignCenter));
+    painter->setPen(Qt::blue);
+    painter->drawText(rect, str, QTextOption(Qt::AlignCenter));
+}
+```
+
+```cpp
+class CityView : public QGraphicsView
+{
+    Q_OBJECT
+
+public:
+    CityView(QWidget *parent = 0);
+
+protected:
+    void wheelEvent(QWheelEvent *event);
+};
+
+CityView::CityView(QWidget *parent)
+    : QGraphicsView(parent)
+{
+    // Setting the drag mode is all that is required to support scrolling by
+    // dragging.
+    setDragMode(ScrollHandDrag);
+}
+
+void CityView::wheelEvent(QWheelEvent *event)
+{
+    // calculate an appropriate scaling factor and call QGraphicsView::scale()
+    double numDegrees = -event->delta() / 8.0;
+    double numSteps = numDegrees / 15.0;
+    double factor = std::pow(1.125, numSteps);
+    scale(factor, factor);
+}
+```
+
+That completes our two graphics view examples. Qt's graphics view architecture is very rich, so bear in mind
+that it has a lot more to offer than we have had the space to cover. There is support for drag and drop, and
+graphics items can have tooltips and custom cursors. Animation effects can be achieved in a number of
+ways—for example, by associating QGraphicsItemAnimations with the items that we want to animate and
+performing the animation using a QTimeLine. It is also possible to achieve animation by creating custom
+graphics item subclasses that are derived from QObject (through multiple inheritance) and that reimplement
+QObject::timerEvent()
 
 #### Printing
 
 ### 9. Drag and Drop
 
+QMimeData, a class that can provide data in several formats.
+
+```cpp
+protected:
+    void dragEnterEvent(QDragEnterEvent *event);
+    void dropEvent(QDropEvent *event);
+```
+
+```cpp
+MainWindow::MainWindow()
+{
+    textEdit = new QTextEdit;
+    setCentralWidget(textEdit);
+    // In the constructor, we create a QTextEdit and set it as the central
+    // widget. By default, QTextEdit accepts textual drags from other
+    // applications, and if the user drops a file onto it, it will insert the
+    // file name into the text. Since drop events are propagated from child to
+    // parent, by disabling dropping on the QTextEdit and enabling it on the
+    // main window, we get the drop events for the whole window in MainWindow.
+    textEdit->setAcceptDrops(false);
+    setAcceptDrops(true);
+    setWindowTitle(tr("Text Editor"));
+}
+```
+
+```cpp
+void MainWindow::dragEnterEvent(QDragEnterEvent *event)
+{
+    // The MIME type text/uri-list is used to store a list of uniform resource
+    // identifiers (URIs), which can be file names, URLs (such as HTTP or FTP
+    // paths), or other global resource identifiers.
+    if (event->mimeData()->hasFormat("text/uri-list"))
+    event->acceptProposedAction();
+}
+
+void MainWindow::dropEvent(QDropEvent *event)
+{
+    QList<QUrl> urls = event->mimeData()->urls();
+    if (urls.isEmpty())
+        return;
+    QString fileName = urls.first().toLocalFile();
+    if (fileName.isEmpty())
+        return;
+    if (readFile(fileName))
+        setWindowTitle(tr("%1 - %2").arg(fileName)
+                                    .arg(tr("Drag File")));
+}        
+```
+
 #### Enabling Drag and Drop
+
+```cpp
+void ProjectListWidget::mousePressEvent(QMouseEvent *event)
+{
+    if (event->button() == Qt::LeftButton)
+        startPos = event->pos();
+    QListWidget::mousePressEvent(event);
+}
+
+void ProjectListWidget::mouseMoveEvent(QMouseEvent *event)
+{
+    if (event->buttons() & Qt::LeftButton) {
+        // If the distance is greater than or equal to QApplication's
+        // recommended drag start distance (normally four pixels), we call the
+        // private function performDrag() to start dragging. This avoids
+        // initiating a drag just because the user's hand shakes.
+        int distance = (event->pos() - startPos).manhattanLength();
+        if (distance >= QApplication::startDragDistance()) // 4 px normally
+            performDrag();
+    }
+    QListWidget::mouseMoveEvent(event);
+}
+
+void ProjectListWidget::performDrag()
+{
+    QListWidgetItem *item = currentItem();
+    if (item) {
+        QMimeData *mimeData = new QMimeData;
+        mimeData->setText(item->text());
+
+        QDrag *drag = new QDrag(this);
+        drag->setMimeData(mimeData);
+        drag->setPixmap(QPixmap(":/images/person.png"));
+        // The QDrag::exec() call starts the dragging operation and blocks
+        // until the user drops or cancels the drag.
+        if (drag->exec(Qt::MoveAction) == Qt::MoveAction)
+            delete item;
+    }
+}
+```
+
+```cpp
+void ProjectListWidget::dragEnterEvent(QDragEnterEvent *event)
+{
+    // QDragEnterEvent::source() returns a pointer to the widget that initiated
+    // the drag if that widget is part of the same application; otherwise, it
+    // returns a null pointer.
+    ProjectListWidget *source =
+            qobject_cast<ProjectListWidget *>(event->source());
+    if (source && source != this) {
+        event->setDropAction(Qt::MoveAction);
+        event->accept();
+    }
+}
+```
+
+```cpp
+void ProjectListWidget::dragMoveEvent(QDragMoveEvent *event)
+{
+    ProjectListWidget *source =
+            qobject_cast<ProjectListWidget *>(event->source());
+    if (source && source != this) {
+        event->setDropAction(Qt::MoveAction);
+        event->accept();
+    }
+}
+
+void ProjectListWidget::dropEvent(QDropEvent *event)
+{
+    ProjectListWidget *source =
+            qobject_cast<ProjectListWidget *>(event->source());
+    if (source && source != this) {
+        // retrieve the dragged text using QMimeData::text()
+        // drag->setMimeData(mimeData);
+        addItem(event->mimeData()->text());
+        event->setDropAction(Qt::MoveAction);
+        event->accept();
+    }
+}
+```
+
+Drag and drop is a powerful mechanism for transferring data between applications. But in some cases, it's
+possible to implement drag and drop without using Qt's drag and drop facilities. If all we want to do is to move
+data within one widget in one application, we can often simply reimplement mousePressEvent() and
+mouseReleaseEvent().
+
+```cpp
+void MyTableWidget::performDrag()
+{
+QString plainText = selectionAsPlainText();
+if (plainText.isEmpty())
+    return;
+QMimeData *mimeData = new QMimeData;
+mimeData->setText(plainText);
+mimeData->setHtml(toHtml(plainText));
+mimeData->setData("text/csv", toCsv(plainText).toUtf8());
+QDrag *drag = new QDrag(this);
+drag->setMimeData(mimeData);
+if (drag->exec(Qt::CopyAction | Qt::MoveAction) == Qt::MoveAction)
+    deleteSelection();
+}
+```
+
+```cpp
+QString MyTableWidget::toCsv(const QString &plainText)
+{
+    QString result = plainText;
+    result.replace("\\", "\\\\");
+    result.replace("\"", "\\\"");
+    result.replace("\t", "\", \"");
+    result.replace("\n", "\"\n\"");
+    result.prepend("\"");
+    result.append("\"");
+    return result;
+}
+```
+
+`QString Qt::escape(const QString & plain)`{.cpp}
+
+:   Converts the plain text string plain to a HTML string with HTML
+    metacharacters `<`, `>`, `&`, and `"` replaced by HTML entities.
+
+    ```cpp
+    QString plain = "#include <QtCore>"
+    QString html = Qt::escape(plain);
+    // html == "#include &lt;QtCore&gt;"
+    ```
+
 #### Supporting Custom Drag Types
+
+If we want to drag plain text, HTML text, images, URLs, or colors, we can use QMimeData
+without formality. But if we want to drag custom data, we must choose among the following alternatives:
+
+#. We can provide arbitrary data as a QByteArray using QMimeData::setData() and extract it later using QMimeData::data().
+#. We can subclass QMimeData and reimplement formats() and retrieveData() to handle our custom data types.
+#. For drag and drop operations within a single application, we can subclass QMimeData and store the data using any data structure we want.
+
 #### Clipboard Handling
+
+QApplication::clipboard()
+
+setText()
+setImage()
+setPixmap()
+
+text()
+image()
+pixmap()
+
+```cpp
+QClipboard *clipboard = QApplication::clipboard();
+if (clipboard->supportsSelection()) {
+    QString text = clipboard->text(QClipboard::Selection);
+}
+```
+
+If we want to be notified whenever the clipboard's contents change, we can
+connect the QClipboard::dataChanged() signal to a custom slot.
 
 ### 10. Item View Classes
 
+![][multiple-views]
+![][symbol-picker]
+![][coord-setter]
+![][settings-viewer]
+
+
 #### Using the Item View Convenience Classes
+
+`FlowChartSymbolPicker`{.cpp}
+
+```cpp
+class FlowChartSymbolPicker : public QDialog
+{
+    Q_OBJECT
+
+public:
+    FlowChartSymbolPicker(const QMap<int, QString> &symbolMap,
+                          QWidget *parent = 0);
+
+    int selectedId() const { return id; }
+    // The done() function is reimplemented from QDialog. It is called when the
+    // user clicks OK or Cancel
+    void done(int result);
+
+private:
+    QIcon iconForSymbol(const QString &symbolName);
+
+    QListWidget *listWidget;
+    QDialogButtonBox *buttonBox;
+    int id;
+};
+
+FlowChartSymbolPicker::FlowChartSymbolPicker(
+        const QMap<int, QString> &symbolMap, QWidget *parent)
+    : QDialog(parent)
+{
+    id = -1;
+
+    listWidget = new QListWidget;
+    listWidget->setIconSize(QSize(60, 60));
+
+    QMapIterator<int, QString> i(symbolMap);
+    while (i.hasNext()) {
+        i.next();
+        QListWidgetItem *item = new QListWidgetItem(i.value(),
+                                                    listWidget);
+        item->setIcon(iconForSymbol(i.value()));
+        item->setData(Qt::UserRole, i.key());
+    }
+
+    buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok
+                                     | QDialogButtonBox::Cancel);
+
+    connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));
+    connect(buttonBox, SIGNAL(rejected()), this, SLOT(reject()));
+
+    QVBoxLayout *mainLayout = new QVBoxLayout;
+    mainLayout->addWidget(listWidget);
+    mainLayout->addWidget(buttonBox);
+    setLayout(mainLayout);
+
+    setWindowTitle(tr("Flowchart Symbol Picker"));
+}
+
+void FlowChartSymbolPicker::done(int result)
+{
+    id = -1;
+    if (result == QDialog::Accepted) {
+        QListWidgetItem *item = listWidget->currentItem();
+        if (item)
+            // If we were interested in the item's text, we could retrieve it
+            // by calling item->data(Qt::DisplayRole).toString() or, more
+            // conveniently, item->text()
+            id = item->data(Qt::UserRole).toInt();
+    }
+    QDialog::done(result);
+}
+
+QIcon FlowChartSymbolPicker::iconForSymbol(const QString &symbolName)
+{
+    QString fileName = ":/images/" + symbolName.toLower();
+    fileName.replace(' ', '-');
+    return QIcon(fileName);
+}
+```
+
+By default, QListWidget is read-only. If we wanted the user to edit the items, we could set the view's edit
+triggers using QAbstractItemView::setEditTriggers(); for example, a setting of
+QAbstractItemView::AnyKeyPressed means that the user can begin editing an item just by starting to type.
+Alternatively, we could provide an Edit button (and perhaps Add and Delete buttons) and use signal–slot
+connections so that we can handle the editing operations programmatically.
+
+```cpp
+tableWidget = new QTableWidget(0, 2);
+tableWidget->setHorizontalHeaderLabels(
+        QStringList() << tr("X") << tr("Y"));
+
+for (int row = 0; row < coordinates->count(); ++row) {
+    QPointF point = coordinates->at(row);
+    addRow();
+    tableWidget->item(row, 0)->setText(QString::number(point.x()));
+    tableWidget->item(row, 1)->setText(QString::number(point.y()));
+}
+
+void SettingsViewer::readSettings()
+{
+    QSettings settings(organization, application);
+
+    treeWidget->clear();
+    addChildSettings(settings, 0, "");
+
+    treeWidget->sortByColumn(0);
+    treeWidget->setFocus();
+    setWindowTitle(tr("Settings Viewer - %1 by %2")
+                   .arg(application).arg(organization));
+}
+```
+
+```cpp
+treeWidget = new QTreeWidget;
+treeWidget->setColumnCount(2);
+treeWidget->setHeaderLabels(
+        QStringList() << tr("Key") << tr("Value"));
+treeWidget->header()->setResizeMode(0, QHeaderView::Stretch);
+treeWidget->header()->setResizeMode(1, QHeaderView::Stretch);
+```
+
 #### Using Predefined Models
+
+Model | Details
+:---: | :-----:
+`QStringListModel`{.cpp} | Stores a list of strings
+`QStandardItemModel`{.cpp} | Stores arbitrary hierarchical data
+`QDirModel`{.cpp} | Encapsulates the local file system
+`QSqlQueryModel`{.cpp} | Encapsulates an SQL result set
+`QSqlTableModel`{.cpp} | Encapsulates an SQL table
+`QSqlRelationalTableModel`{.cpp} | Encapsulates an SQL table with foreign keys
+`QSortFilterProxyModel`{.cpp} | Sorts and/or filters another model
+
+```cpp
+void TeamLeadersDialog::insert()
+{
+    int row = listView->currentIndex().row();
+    model->insertRows(row, 1);
+
+    QModelIndex index = model->index(row);
+    listView->setCurrentIndex(index);
+    listView->edit(index);
+}
+```
+
+```cpp
+void TeamLeadersDialog::del()
+{
+    model->removeRows(listView->currentIndex().row(), 1);
+}
+```
+
+```cpp
+DirectoryViewer::DirectoryViewer(QWidget *parent)
+    : QDialog(parent)
+{
+    model = new QDirModel;
+    model->setReadOnly(false);
+    model->setSorting(QDir::DirsFirst | QDir::IgnoreCase | QDir::Name);
+
+    treeView = new QTreeView;
+    treeView->setModel(model);
+    treeView->header()->setStretchLastSection(true);
+    treeView->header()->setSortIndicator(0, Qt::AscendingOrder);
+    treeView->header()->setSortIndicatorShown(true);
+    treeView->header()->setClickable(true);
+
+    QModelIndex index = model->index(QDir::currentPath());
+    treeView->expand(index);
+    treeView->scrollTo(index);
+    treeView->resizeColumnToContents(0);
+
+    ...
+}
+```
+
+```cpp
+buttonBox = new QDialogButtonBox(Qt::Horizontal);
+QPushButton *mkdirButton = buttonBox->addButton(
+        tr("&Create Directory..."), QDialogButtonBox::ActionRole);
+QPushButton *removeButton = buttonBox->addButton(tr("&Remove"),
+        QDialogButtonBox::ActionRole);
+buttonBox->addButton(tr("&Quit"), QDialogButtonBox::AcceptRole);
+
+connect(mkdirButton, SIGNAL(clicked()), this, SLOT(createDirectory()));
+connect(removeButton, SIGNAL(clicked()), this, SLOT(remove()));
+connect(buttonBox, SIGNAL(accepted()), this, SLOT(accept()));
+```
+
+```cpp
+void DirectoryViewer::createDirectory()
+{
+    QModelIndex index = treeView->currentIndex();
+    if (!index.isValid())
+        return;
+
+    QString dirName = QInputDialog::getText(this,
+                              tr("Create Directory"),
+                              tr("Directory name"));
+    if (!dirName.isEmpty()) {
+        // The QDirModel::mkdir() function takes the parent directory's index
+        // and the name of the new directory, and returns the model index of
+        // the directory it created. If the operation fails, it returns an
+        // invalid model index.
+        if (!model->mkdir(index, dirName).isValid())
+            QMessageBox::information(this, tr("Create Directory"),
+                    tr("Failed to create the directory"));
+    }
+}
+```
+
+```cpp
+void DirectoryViewer::remove()
+{
+    QModelIndex index = treeView->currentIndex();
+    if (!index.isValid())
+        return;
+
+    bool ok;
+    // We could use QDir to accomplish this, but QDirModel offers convenience
+    // functions that work on QModelIndexes.
+    if (model->fileInfo(index).isDir()) {
+        ok = model->rmdir(index);
+    } else {
+        ok = model->remove(index);
+    }
+    if (!ok)
+        QMessageBox::information(this, tr("Remove"),
+                tr("Failed to remove %1").arg(model->fileName(index)));
+}
+```
+
+```cpp
+sourceModel = new QStringListModel(this);
+sourceModel->setStringList(QColor::colorNames());
+
+proxyModel = new QSortFilterProxyModel(this);
+proxyModel->setSourceModel(sourceModel);
+proxyModel->setFilterKeyColumn(0);
+
+listView = new QListView;
+listView->setModel(proxyModel);
+listView->setEditTriggers(QAbstractItemView::NoEditTriggers);
+
+filterLabel = new QLabel(tr("&Filter:"));
+filterLineEdit = new QLineEdit;
+filterLabel->setBuddy(filterLineEdit);
+
+syntaxLabel = new QLabel(tr("&Pattern syntax:"));
+syntaxComboBox = new QComboBox;
+syntaxComboBox->addItem(tr("Regular expression"), QRegExp::RegExp);
+syntaxComboBox->addItem(tr("Wildcard"), QRegExp::Wildcard);
+syntaxComboBox->addItem(tr("Fixed string"), QRegExp::FixedString);
+syntaxLabel->setBuddy(syntaxComboBox);
+
+connect(filterLineEdit, SIGNAL(textChanged(const QString &)),
+        this, SLOT(reapplyFilter()));
+connect(syntaxComboBox, SIGNAL(currentIndexChanged(int)),
+        this, SLOT(reapplyFilter()));
+
+QGridLayout *mainLayout = new QGridLayout;
+mainLayout->addWidget(listView, 0, 0, 1, 2);
+mainLayout->addWidget(filterLabel, 1, 0);
+mainLayout->addWidget(filterLineEdit, 1, 1);
+mainLayout->addWidget(syntaxLabel, 2, 0);
+mainLayout->addWidget(syntaxComboBox, 2, 1);
+setLayout(mainLayout);
+```
+
+`void QComboBox::addItem(const QString & text, const QVariant & userData = QVariant())`{.cpp}
+
+```cpp
+void ColorNamesDialog::reapplyFilter()
+{
+    QRegExp::PatternSyntax syntax =
+            QRegExp::PatternSyntax(syntaxComboBox->itemData(
+                    syntaxComboBox->currentIndex()).toInt());
+    QRegExp regExp(filterLineEdit->text(), Qt::CaseInsensitive, syntax);
+    proxyModel->setFilterRegExp(regExp);
+}
+```
+
 #### Implementing Custom Models
+
+![][custom-model]
+
+```cpp
+QMap<QString, double> currencyMap;
+currencyMap.insert("AUD", 1.3259);
+currencyMap.insert("CHF", 1.2970);
+...
+currencyMap.insert("SGD", 1.6901);
+currencyMap.insert("USD", 1.0000);
+CurrencyModel currencyModel;
+currencyModel.setCurrencyMap(currencyMap);
+QTableView tableView;
+tableView.setModel(&currencyModel);
+tableView.setAlternatingRowColors(true);
+```
+
+```cpp
+#include <QAbstractTableModel>
+#include <QMap>
+
+// We have chosen to subclass QAbstractTableModel for our model since that most
+// closely matches our data source.
+class CurrencyModel : public QAbstractTableModel
+{
+public:
+    CurrencyModel(QObject *parent = 0);
+
+    // For a read-only table model, we must reimplement three functions:
+    // rowCount(), columnCount(), and data().  In this case, we have also
+    // reimplemented headerData(), and we provide a function to initialize the
+    // data (setCurrencyMap()).
+    void setCurrencyMap(const QMap<QString, double> &map);
+    int rowCount(const QModelIndex &parent) const;
+    int columnCount(const QModelIndex &parent) const;
+    QVariant data(const QModelIndex &index, int role) const;
+    QVariant headerData(int section, Qt::Orientation orientation,
+                        int role) const;
+
+private:
+    QString currencyAt(int offset) const;
+    QMap<QString, double> currencyMap;
+};
+```
+
+
+* `QObject`{.cpp}
+    + `QAbstractItemModel`{.cpp}
+        - `QAbstractListModel`{.cpp}
+        - `QAbstractTableModel`{.cpp}
+
+
+```cpp
+// The parent parameter has no meaning for a table model; it is there because
+// rowCount() and columnCount() are inherited from the more generic
+// QAbstractItemModel base class, which supports hierarchies.
+int CurrencyModel::rowCount(const QModelIndex & /* parent */) const
+{
+    return currencyMap.count();
+}
+
+int CurrencyModel::columnCount(const QModelIndex & /* parent */) const
+{
+    return currencyMap.count();
+}
+```
+
+```cpp
+QVariant CurrencyModel::data(const QModelIndex &index, int role) const
+{
+    if (!index.isValid())
+        return QVariant();
+
+    // Qt::TextAlignmentRole, we return an alignment suitable for numbers
+    if (role == Qt::TextAlignmentRole) {
+        return int(Qt::AlignRight | Qt::AlignVCenter);
+    } else if (role == Qt::DisplayRole) {
+        QString rowCurrency = currencyAt(index.row());
+        QString columnCurrency = currencyAt(index.column());
+
+        if (currencyMap.value(rowCurrency) == 0.0)
+            return "####";
+
+        double amount = currencyMap.value(columnCurrency)
+                        / currencyMap.value(rowCurrency);
+
+        return QString("%1").arg(amount, 0, 'f', 4);
+    }
+    return QVariant();
+}
+```
+
+`QString::arg()`{.cpp}
+
+:   ```cpp
+    QString QString::arg(const QString & a, 
+                         int fieldWidth = 0, 
+                         const QChar & fillChar = QLatin1Char( ' ' )) const
+    ```
+
+    * A positive fieldWidth produces right-aligned text. A negative fieldWidth produces left-aligned text.
+    *   ```cpp
+        QString i;           // current file's number
+        QString total;       // number of files to process
+        QString fileName;    // current file's name
+
+        QString status = QString("Processing file %1 of %2: %3")
+                        .arg(i).arg(total).arg(fileName);
+        ```
+
+    ```cpp
+    QString QString::arg(const QString & a1, 
+                         const QString & a2) const
+    ```
+
+    * This function overloads arg().
+    * This is the same as str.arg(a1).arg(a2), except that the strings a1 and a2 are replaced in one pass. This can make a difference if a1 contains e.g. %1:
+
+        ```cpp
+        QString str;
+        str = "%1 %2";
+
+        str.arg("%1f", "Hello");        // returns "%1f Hello"
+        str.arg("%1f").arg("Hello");    // returns "Hellof %2"
+        ```
+
+    * similars
+    
+        ```cpp
+        QString QString::arg(const QString & a1, 
+                             const QString & a2, 
+                             const QString & a3) const
+        QString QString::arg(const QString & a1, 
+                             const QString & a2, 
+                             const QString & a3, 
+                             const QString & a4) const
+        a1..a5
+        a1..a6
+        ...
+        a1..a9
+        ```
+
+    ```cpp
+    QString QString::arg({[u]short,[u]int,[u]long,q[u]longlong} a, 
+                          int fieldWidth = 0, 
+                          int base = 10,
+                          const QChar & fillChar = QLatin1Char( ' ' )) const
+    ```
+
+    * The '%' can be followed by an 'L', in which case the sequence is replaced
+      with a localized representation of a. The conversion uses the default locale,
+      set by QLocale::setDefault(). If no default locale was specified, the "C"
+      locale is used. The 'L' flag is ignored if base is not 10.  
+
+        ```cpp
+        QString str;
+        str = QString("Decimal 63 is %1 in hexadecimal")
+                .arg(63, 0, 16);
+        // str == "Decimal 63 is 3f in hexadecimal"
+
+        QLocale::setDefault(QLocale(QLocale::English, QLocale::UnitedStates));
+        str = QString("%1 %L2 %L3")
+                .arg(12345)
+                .arg(12345)
+                .arg(12345, 0, 16);
+        // str == "12345 12,345 3039"
+        ```
+
+    ```cpp
+    QString QString::arg({QChar,char} a, 
+                         int fieldWidth = 0, 
+                         const QChar & fillChar = QLatin1Char( ' ' )) const
+    ```
+
+    * This function overloads arg().
+
+    ```cpp
+    QString QString::arg(double a, 
+                         int fieldWidth = 0, 
+                         char format = 'g', 
+                         int precision = -1, 
+                         const QChar & fillChar = QLatin1Char( ' ' )) const
+    ```
+
+    Format | Meaning
+    :----: | :-----:
+    e | format as [-]9.9e[+|-]999
+    E | format as [-]9.9E[+|-]999
+    f | format as [-]9.9
+    g | use e or f format, whichever is the most concise
+    G | use E or f format, whichever is the most concise
+
+    ```cpp
+    double d = 12.34;
+    QString str = QString("delta: %1").arg(d, 0, 'E', 3);
+    // str == "delta: 1.234E+01"
+    ```
+
+    ```cpp
+    #include <QStringBuilder>
+
+    QString hello("hello");
+    QStringRef el(&hello, 2, 3);
+    QLatin1String world("world");
+    QString message =  hello % el % world % QChar('!');
+    ```
+
+```cpp
+void QComboBox::addItem(const QString & text, const QVariant & userData = QVariant())
+void QComboBox::addItem(const QIcon & icon, const QString & text, const QVariant & userData = QVariant())
+void QComboBox::addItems(const QStringList & texts)
+```
+
+```cpp
+// The headerData() function is called by the view to populate its horizontal
+// and vertical headers. The section parameter is the row or column number
+// (depending on the orientation). Since the rows and columns have the same
+// currency codes, we do not care about the orientation and simply return the
+// code of the currency for the given section number.
+QVariant CurrencyModel::headerData(int section,
+                                   Qt::Orientation /* orientation */,
+                                   int role) const
+{
+    if (role != Qt::DisplayRole)
+        return QVariant();
+    return currencyAt(section);
+}
+```
+
+```cpp
+void CurrencyModel::setCurrencyMap(const QMap<QString, double> &map)
+{
+    currencyMap = map;
+    // tells any views that are using the model that all their data is invalid;
+    // this forces them to request fresh data for the items that are visible
+    reset();
+}
+```
+
+```cpp
+QString CurrencyModel::currencyAt(int offset) const
+{
+    return (currencyMap.begin() + offset).key();
+}
+```
+
+```cpp
+int CityModel::offsetOf(int row, int column) const
+{
+    if (row < column)
+        qSwap(row, column);
+    return (row * (row - 1) / 2) + column;
+}
+```
+
 #### Implementing Custom Delegates
+
+If we want to have finer control over the rendering of items, we can often
+achieve what we want simply by using a custom model: In our data() reimplementation, we can handle the
+Qt::FontRole, Qt::TextAlignmentRole, Qt::TextColorRole, and Qt::BackgroundColorRole, and these
+are used by the default delegate. For example, in the Cities and Currencies examples shown earlier, we
+handled the Qt::TextAlignmentRole to get right-aligned numbers.
+
+If we want even greater control, we can create our own delegate class and set it on the views that we want to
+make use of it. The Track Editor dialog shown in Figure 10.15 makes use of a custom delegate. It shows the
+titles of music tracks and their durations. The data held by the model will be simply QStrings (titles) and ints
+(seconds), but the durations will be separated into minutes and seconds and will be editable using a
+QTimeEdit.
+
+```cpp
+#include <QItemDelegate>
+
+class TrackDelegate : public QItemDelegate
+{
+    Q_OBJECT
+
+public:
+    TrackDelegate(int durationColumn, QObject *parent = 0);
+
+    void paint(QPainter *painter, const QStyleOptionViewItem &option,
+               const QModelIndex &index) const;
+    QWidget *createEditor(QWidget *parent,
+                          const QStyleOptionViewItem &option,
+                          const QModelIndex &index) const;
+    void setEditorData(QWidget *editor, const QModelIndex &index) const;
+    void setModelData(QWidget *editor, QAbstractItemModel *model,
+                      const QModelIndex &index) const;
+
+private slots:
+    void commitAndCloseEditor();
+
+private:
+    int durationColumn;
+};
+
+// 
+class QDialogButtonBox;
+class QTableWidget;
+
+class Track
+{
+public:
+    Track(const QString &title = "", int duration = 0);
+
+    QString title;
+    int duration;
+};
+
+class TrackEditor : public QDialog
+{
+    Q_OBJECT
+
+public:
+    TrackEditor(QList<Track> *tracks, QWidget *parent = 0);
+
+    void done(int result);
+
+private slots:
+    void addTrack();
+
+private:
+    QTableWidget *tableWidget;
+    QDialogButtonBox *buttonBox;
+    QList<Track> *tracks;
+};
+```
+
+```cpp
+tableWidget = new QTableWidget(tracks->count(), 2);
+tableWidget->setItemDelegate(new TrackDelegate(1));
+tableWidget->setHorizontalHeaderLabels(
+QStringList() << tr("Track") << tr("Duration"));
+```
+
+```cpp
+void TrackDelegate::paint(QPainter *painter,
+                          const QStyleOptionViewItem &option,
+                          const QModelIndex &index) const
+{
+    if (index.column() == durationColumn) {
+        int secs = index.model()->data(index, Qt::DisplayRole).toInt();
+        QString text = QString("%1:%2")
+                       .arg(secs / 60, 2, 10, QChar('0'))
+                       .arg(secs % 60, 2, 10, QChar('0'));
+
+        QStyleOptionViewItem myOption = option;
+        myOption.displayAlignment = Qt::AlignRight | Qt::AlignVCenter;
+
+        drawDisplay(painter, myOption, myOption.rect, text);
+        drawFocus(painter, myOption, myOption.rect);
+    } else{
+        QItemDelegate::paint(painter, option, index);
+    }
+}
+```
+
+```cpp
+
+QWidget *TrackDelegate::createEditor(QWidget *parent,
+        const QStyleOptionViewItem &option,
+        const QModelIndex &index) const
+{
+    if (index.column() == durationColumn) {
+        QTimeEdit *timeEdit = new QTimeEdit(parent);
+        timeEdit->setDisplayFormat("mm:ss");
+        connect(timeEdit, SIGNAL(editingFinished()),
+                this, SLOT(commitAndCloseEditor()));
+        return timeEdit;
+    } else {
+        return QItemDelegate::createEditor(parent, option, index);
+    }
+}
+```
+
+```cpp
+void TrackDelegate::commitAndCloseEditor()
+{
+    QTimeEdit *editor = qobject_cast<QTimeEdit *>(sender());
+    emit commitData(editor);
+    emit closeEditor(editor);
+}
+```
+
+```cpp
+void TrackDelegate::setModelData(QWidget *editor,
+                                 QAbstractItemModel *model,
+                                 const QModelIndex &index) const
+{
+    if (index.column() == durationColumn) {
+        QTimeEdit *timeEdit = qobject_cast<QTimeEdit *>(editor);
+        QTime time = timeEdit->time();
+        int secs = (time.minute() * 60) + time.second();
+        model->setData(index, secs);
+    } else {
+        QItemDelegate::setModelData(editor, model, index);
+    }
+}
+```
 
 ### 11. Container Classes
 
@@ -3644,6 +5192,10 @@ Refs
 #. [QObject Class | Qt 4.8](http://doc.qt.io/qt-4.8/qobject.html)
 #. [QPen Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpen.html#QPen-4)
 #. [QRectF Class | Qt 4.8](http://doc.qt.io/qt-4.8/qrectf.html#adjust)
+#. [QPainterPath Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpainterpath.html#addRoundedRect)
+#. [QStringList Class | Qt 4.8](http://doc.qt.io/qt-4.8/qstringlist.html)
+#. [Qt Namespace | Qt 4.8](http://doc.qt.io/qt-4.8/qt.html)
+#. [Qt Namespace | Qt 4.8](http://doc.qt.io/qt-4.8/qt.html#mightBeRichText)
 
 [set-layout-png]: http://gnat.qiniudn.com/qt/setlayout.png
 [shape-chaning-dlg]: http://gnat.qiniudn.com/qt/dlg.png
@@ -3675,8 +5227,13 @@ Refs
 [drawrect-1]: http://gnat.qiniudn.com/qt/drawrect-1.png
 [drawrect-2]: http://gnat.qiniudn.com/qt/drawrect-2.png
 [drawrect-3]: http://gnat.qiniudn.com/qt/drawrect-3.png
-[win-port]: http://gnat.qiniudn.com/qt/win-port.png
+[win-port]: http://gnat.qiniudn.com/qt/winport.png
 [oventimer]: http://gnat.qiniudn.com/qt/oventimer.png
-[composite]
-[multiview]
-[graphicsitem]
+[composite]: http://gnat.qiniudn.com/qt/composite.png
+[multiview]: http://gnat.qiniudn.com/qt/multiview.png
+[graphicsitem]: http://gnat.qiniudn.com/qt/graphicsitem.png
+[multiple-views]
+![][symbol-picker]
+![][coord-setter]
+![][settings-viewer]
+![][custom-model]
