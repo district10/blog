@@ -6104,7 +6104,8 @@ private:
     QString targetFile;
 };
 
-// cpp
+// The Browse button's clicked() signal is automatically connected to the
+// on_browseButton_clicked() slot by setupUi()
 connect(&process, SIGNAL(readyReadStandardError()),
         this, SLOT(updateOutputTextEdit()));
 connect(&process, SIGNAL(finished(int, QProcess::ExitStatus)),
@@ -6130,6 +6131,7 @@ void ConvertDialog::convertImage()
         args << "-monochrome";
     args << sourceFile << targetFile;
 
+    // Async: QProcess:start( cmd, args(stringList) );
     process.start("convert", args);
 }
 
@@ -6143,12 +6145,38 @@ void ConvertDialog::processFinished(int exitCode,
     } else {
         outputTextEdit->append(tr("File %1 created").arg(targetFile));
     }
+    // button of buttonBox
     buttonBox->button(QDialogButtonBox::Ok)->setEnabled(true);
+}
+
+// Whenever the external process writes to cerr, the updateOutputTextEdit()
+// slot is called. We read the error text and add it to the QTextEdit's
+// existing text.
+void ConvertDialog::updateOutputTextEdit()
+{
+    QByteArray newData = process.readAllStandardError();
+    QString text = outputTextEdit->toPlainText()
+                   + QString::fromLocal8Bit(newData);
+    outputTextEdit->setPlainText(text);
 }
 ```
 
+QTemporaryFile::open() since it conveniently defaults to opening in read-write mode.
+The QProcess::execute() static function runs an external process and blocks until the process has finished.
+
+In this section, we used QProcess to give us access to preexisting functionality. Using applications that already
+exist can save development time and can insulate us from the details of issues that are of marginal interest to
+our main application's purpose. Another way to access preexisting functionality is to link against a library that
+provides it. But where no suitable library exists, wrapping a console application using QProcess can work well.
+Another use of QProcess is to launch other GUI applications. However, if our aim is communication between
+applications rather than simply running one from another, we might be better off having them communicate
+directly, using Qt's networking classes or the ActiveQt extension on Windows. And if we want to launch the
+user's preferred web browser or email client, we can simply call QDesktopServices::openUrl().
+
 
 ### 13. Databases
+
+* &#x2610; TODO
 
 #### Connecting and Querying
 #### Viewing Tables
@@ -6171,6 +6199,8 @@ void ConvertDialog::processFinished(int exitCode,
 
 ### 16. XML
 
+[DO!!!]
+
 #### Reading XML with QXmlStreamReader
 #### Reading XML with DOM
 #### Reading XML with SAX
@@ -6181,6 +6211,9 @@ void ConvertDialog::processFinished(int exitCode,
 #### Tooltips, Status Tips, and "What's This?" Help
 #### Using a Web Browser to Provide Online Help
 #### Using QTextBrowser as a Simple Help Engine
+
+[DO!!!]
+
 #### Using Qt Assistant for Powerful Online Help
 
 Part III: Advanced Qt
@@ -6242,6 +6275,8 @@ Part IV: Appendixes
 #### Installing Qt/X11
 
 ### Appendix B
+
+[DO!!!]
 
 #### Building Qt Applications
 #### Using qmake
