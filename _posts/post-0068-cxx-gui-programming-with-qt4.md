@@ -12,6 +12,10 @@ function:
 viWBi`f)a`{.cpp}k
 glob:
 f:bi`f:eea`{.cpp}k
+`tilde`:
+i`ea`k
+l: `aoeu<T>`{.cpp}
+i`Ea`{.cpp}k
 -->
 <div style="float:right;">[![](http://img3.douban.com/mpic/s5934624.jpg)](http://book.douban.com/subject/3173123/)</div>
 
@@ -277,15 +281,15 @@ QWidget::setTabOrder()
 The mechanism is called the **meta-object** system, and it provides two key
 services: `signal-slots` and `introspection`. The introspection functionality
 is necessary for implementing signals and slots, and allows application
-programmers to obtain "meta-information" about QObject subclasses at run-time,
+programmers to obtain "meta-information" about `QObject`{.cpp} subclasses at run-time,
 including the list of signals and slots supported by the object and its class
 name. The mechanism also supports properties (used extensively by Qt Designer)
 and text translation (for internationalization), and it lays the foundation for
-the QtScript module.
+the `QtScript`{.cpp} module.
 
 Standard C++ doesn't provide support for the dynamic meta-information needed by
 Qt's meta-object system. Qt solves this problem by providing a separate tool,
-moc, that parses `Q_OBJECT` class definitions and makes the information available
+`moc`{.bash}, that parses `Q_OBJECT` class definitions and makes the information available
 through C++ functions. Since `moc` implements all its functionality using pure
 C++, Qt's meta-object system works with any C++ compiler.
 
@@ -360,7 +364,7 @@ connect(buttonBox, SIGNAL(rejected()), this, SLOT(reject()));
 void GoToCellDialog::on_lineEdit_textChanged()
 {
     buttonBox->button(QDialogButtonBox::Ok)->setEnabled(
-    lineEdit->hasAcceptableInput());
+        lineEdit->hasAcceptableInput());
 }
 ```
 
@@ -372,7 +376,7 @@ We will create the widget with its extended appearance in Qt Designer, and hide
 the secondary and tertiary keys at run-time as needed. The widget looks
 complicated, but it's fairly easy to do in Qt Designer. The trick is to do the
 primary key part first, then duplicate it twice to obtain the secondary and
-tertiary keys
+tertiary keys.
 
 #### Shape-Changing Dialogs
 
@@ -407,9 +411,9 @@ be built in many different ways.
 
 #### Dynamic Dialogs
 
-Dynamic dialogs are dialogs that are created from Qt Designer .ui files at
-run-time. Instead of converting the .ui file to C++ code using uic, we can load
-the file at run-time using the QUiLoader class:
+Dynamic dialogs are dialogs that are created from Qt Designer `.ui` files at
+run-time. Instead of converting the `.ui` file to C++ code using `uic`{.bash}, we can load
+the file at run-time using the `QUiLoader`{.cpp} class:
 
 ```cpp
 QUiLoader uiLoader;
@@ -429,6 +433,17 @@ if (primaryColumnCombo) {
     ...
 }
 ```
+
+`T QObject::findChild(const QString & name = QString()) const`{.cpp}
+
+:   Returns the child of this object that can be cast into type `T` and that is
+    called name, or 0 if there is no such object. Omitting the name argument causes
+    all object names to be matched. The search is **performed recursively**.
+
+    If there is more than one child matching the search, the most direct
+    ancestor is returned. If there are several direct ancestors, it is
+    undefined which one will be returned. In that case, `findChildren()`{.cpp} should
+    be used.
 
 #### Built-in Widget and Dialog Classes
 
@@ -471,9 +486,21 @@ if (primaryColumnCombo) {
     #. `QMessageBox`{.cpp}
     #. `QErrorMessage`{.cpp}
 #. Color and font dialogs
-    i. `QColorDialog`{.cG;
-    void updateStatusBar();
-    void spreadsheetModified();
+    i. `QColorDialog`{.cpp};
+
+```cpp
+class MainWindow : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    MainWindow();
+
+protected:
+    void closeEvent(QCloseEvent *event);
+
+private slots:
+    void open();
     ...
 
 private:
@@ -590,7 +617,7 @@ void MainWindow::createActions()
 }
 ```
 
-Show Grid is a checkable action. Checkable actions are rendered with a
+Show Grid is a **checkable action**. Checkable actions are rendered with a
 check-mark in the menu and implemented as toggle buttons in the toolbar. When
 the action is turned on, the Spreadsheet component displays a grid. We
 initialize the action with the default for the Spreadsheet component so that
@@ -607,6 +634,7 @@ void MainWindow::createMenus()
     fileMenu->addAction(saveAction);
     fileMenu->addAction(saveAsAction);
     separatorAction = fileMenu->addSeparator();
+    // for: separatorAction->setVisible(!recentFiles.isEmpty());
     for (int i = 0; i < MaxRecentFiles; ++i)
         fileMenu->addAction(recentFileActions[i]);
     fileMenu->addSeparator();
@@ -803,6 +831,71 @@ while (i.hasNext()) {
 }
 ```
 
+`QFileInfo`{.cpp}
+
+:   The `QFileInfo`{.cpp} class provides system-independent file information.
+
+    The file that the `QFileInfo`{.cpp} works on is set in the constructor or
+    later with `setFile()`{.cpp}. Use `exists()`{.cpp} to see if the file
+    exists and `size()`{.cpp} to get its size.
+
+    If you want to switch off a `QFileInfo`{.cpp}'s caching and force it to
+    access the file system every time you request information from it call
+    `setCaching(false)`{.cpp}.
+
+    ```cpp
+    QDir        absoluteDir() const
+    QString     absoluteFilePath() const
+    QString     absolutePath() const
+    QString     baseName() const
+    QString     fileName() const
+    QString     completeSuffix() const
+    QDir        dir() const
+
+    bool        exists() const
+    QDateTime   created() const
+
+    bool        isAbsolute() const
+    bool        isBundle() const
+    bool        isDir() const
+    bool        isExecutable() const
+    bool        isFile() const
+    bool        isHidden() const
+    bool        isReadable() const
+    bool        isRelative() const
+    bool        isRoot() const
+    bool        isSymLink() const
+    bool        isWritable() const
+    QDateTime   lastModified() const
+    QDateTime   lastRead() const
+    ```
+
+    In contrast to `canonicalPath()`{.cpp} symbolic links or redundant "." or
+    ".." elements are not necessarily removed.
+
+    ```cpp
+    QFileInfo fi("c:/temp/foo");
+    // => fi.absoluteFilePath() => "C:/temp/foo"
+
+    QFileInfo fi("/tmp/archive.tar.gz");
+    QString base = fi.baseName();
+    // base = "archive"
+
+    QFileInfo fi("/tmp/archive.tar.gz");
+    QString ext = fi.completeSuffix();
+    // ext = "tar.gz"
+
+    // For each of the following, dir() returns a QDir for "~/examples/191697".
+    QFileInfo fileInfo1("~/examples/191697/.");
+    QFileInfo fileInfo2("~/examples/191697/..");
+    QFileInfo fileInfo3("~/examples/191697/main.cpp");
+
+    // For each of the following, dir() returns a QDir for ".".
+    QFileInfo fileInfo4(".");
+    QFileInfo fileInfo5(".."); // be careful!
+    QFileInfo fileInfo6("main.cpp");
+    ```
+
 Every action can have an associated "data" item of type `QVariant`{.cpp}. The
 `QVariant`{.cpp} type can hold values of many C++ and Qt types; we cover it in
 Chapter 11. Here, we store the full name of the file in the action's "data"
@@ -813,7 +906,7 @@ The `qobject_cast<T>()`{.cpp} function performs a dynamic cast based on the
 meta-information generated by moc, Qt's meta-object compiler. It returns a
 pointer of the requested QObject subclass, or 0 if the object cannot be cast to
 that type. Unlike the Standard C++ `dynamic_cast<T>()`{.cpp}, Qt's
-`qobject_cast<T>()`{.cpp} works correctly across dynamic library boundaries. In
+`qobject_cast<T>()`{.cpp} **works correctly across dynamic library boundaries**. In
 our example, we use `qobject_cast<T>()`{.cpp} to cast a `QObject`{.cpp} pointer
 to a `QAction`{.cpp} pointer. If the cast is successful (it should be), we call
 `loadFile()`{.cpp} with the full file name that we extract from the action's data.
@@ -821,7 +914,6 @@ to a `QAction`{.cpp} pointer. If the cast is successful (it should be), we call
 ```cpp
 // connect(recentFileActions[i], SIGNAL(triggered()),
 //         this, SLOT(openRecentFile()))
-
 void MainWindow::openRecentFile()
 {
     if (okToContinue()) {
@@ -842,6 +934,7 @@ void MainWindow::find()
 {
     if (!findDialog) {
         findDialog = new FindDialog(this);
+        // default params in slot
         connect(findDialog, SIGNAL(findNext(const QString &,
                                             Qt::CaseSensitivity)),
                 spreadsheet, SLOT(findNext(const QString &,
@@ -879,9 +972,10 @@ void MainWindow::goToCell()
     }
 
     // or
-    GoToCellDialog *dlg = new GoToCellDialog(this);
-    ...
-    delete dlg;
+    //
+    // :   GoToCellDialog *dlg = new GoToCellDialog(this);
+    //     ...
+    //     delete dlg;
 }
 ```
 
@@ -918,8 +1012,8 @@ void MainWindow::about()
 }
 ```
 
-So far, we have used several convenience static functions from both QMessageBox
-and QFileDialog. These functions create a dialog, initialize it, and call
+So far, we have used several convenience static functions from both `QMessageBox`{.cpp}
+and `QFileDialog`{.cpp}. These functions create a dialog, initialize it, and call
 `exec()` on it. It is also possible, although less convenient, to create a
 `QMessageBox`{.cpp} or a `QFileDialog`{.cpp} widget like any other widget and explicitly call
 `exec()`, or even `show()`, on it.
@@ -927,10 +1021,17 @@ and QFileDialog. These functions create a dialog, initialize it, and call
 #### Storing Settings
 
 ```cpp
+QSettings::QSettings(const QString & organization, 
+                     const QString & application = QString(), 
+                     QObject * parent = 0)
+```
+
+```cpp
 void MainWindow::writeSettings()
 {
     QSettings settings("Software Inc.", "Spreadsheet");
 
+    // void QSettings::setValue(const QString & key, const QVariant & value)
     settings.setValue("geometry", saveGeometry());
     settings.setValue("recentFiles", recentFiles);
     settings.setValue("showGrid", showGridAction->isChecked());
@@ -946,6 +1047,8 @@ void MainWindow::readSettings()
     recentFiles = settings.value("recentFiles").toStringList();
     updateRecentFileActions();
 
+    // QVariant QSettings::value(const QString & key, 
+    //                           const QVariant & defaultValue = QVariant())
     bool showGrid = settings.value("showGrid", true).toBool();
     showGridAction->setChecked(showGrid);
 
@@ -960,8 +1063,8 @@ it stores the data in text files; on Mac OS X, it uses the Core Foundation
 Preferences API.
 
 `QSettings`{.cpp} stores settings as key–value pairs. The key is similar to a
-file system path. Subkeys can be specified using a path-like syntax (e.g.,
-`findDialog/matchCase`) or using `beginGroup()` and `endGroup()`:
+file system path. Subkeys can be specified **using a path-like syntax** (e.g.,
+`findDialog/matchCase`) or **using `beginGroup()` and `endGroup()`**:
 
 ```cpp
 settings.beginGroup("findDialog");
@@ -971,6 +1074,19 @@ settings.beginGroup("findDialog");
 }
 settings.endGroup()
 ```
+
+`qApp`{.cpp}
+
+:   A global pointer referring to the unique application object. It is
+    equivalent to the pointer returned by the
+    `QCoreApplication::instance()`{.cpp} function except that, in GUI
+    applications, it is a pointer to a `QApplication`{.cpp} instance.
+
+    Only one application object can be created.
+
+    The `QApplication`{.cpp} object is accessible through the
+    `instance()`{.cpp} function that returns a pointer equivalent to the global
+    `qApp`{.cpp} pointer.
 
 #### Multiple Documents
 
@@ -1029,6 +1145,7 @@ int main(int argc, char *argv[])
                         topRight, Qt::white);
     establishConnections();
 
+    // equivalent to setVisible(true)
     mainWin.show();
 
     splash->finish(&mainWin);
@@ -1077,13 +1194,13 @@ items can also hold data (`QVariants`{.cpp}), including registered custom
 types, and by subclassing the item class we can provide additional
 functionality.
 
-Older toolkits provide a void pointer in their item classes to store custom
-data. In Qt, the more natural approach is to use `setData()` with a
+Older toolkits provide a void pointer in their item classes to **store custom
+data**. In Qt, the more natural approach is to use `setData()` with a
 `QVariant`{.cpp}, but if a void pointer is required, it can be trivially
 achieved by subclassing an item class and adding a void pointer member
 variable. For more challenging data handling requirements, such as large data
 sets, complex data items, database integration, and multiple data views, Qt
-provides a set of model/view classes that separate the data from their visual
+provides **a set of model/view classes** that separate the data from their visual
 representation.
 
 ```cpp
@@ -1098,6 +1215,10 @@ void Spreadsheet::setFormula(int row, int column,
     c->setFormula(formula);
 }
 ```
+
+`enum Qt::CursorShape`{.cpp}
+
+:   <http://doc.qt.io/qt-4.8/qt.html#CursorShape-enum>
 
 #### Loading and Saving
 
@@ -1118,6 +1239,13 @@ bool Spreadsheet::writeFile(const QString &fileName)
 
     out << quint32(MagicNumber);
 
+    // Application cursors are stored on an internal stack. setOverrideCursor()
+    // pushes the cursor onto the stack, and restoreOverrideCursor() pops the
+    // active cursor off the stack. changeOverrideCursor() changes the curently
+    // active application override cursor.
+
+    // Every setOverrideCursor() must eventually be followed by a corresponding
+    // restoreOverrideCursor(), otherwise the stack will never be emptied.
     QApplication::setOverrideCursor(Qt::WaitCursor);
     for (int row = 0; row < RowCount; ++row) {
         for (int column = 0; column < ColumnCount; ++column) {
@@ -1126,7 +1254,13 @@ bool Spreadsheet::writeFile(const QString &fileName)
                 out << quint16(row) << quint16(column) << str;
         }
     }
+
+    // Undoes the last setOverrideCursor().
     QApplication::restoreOverrideCursor();
+    // If setOverrideCursor() has been called twice, calling
+    // restoreOverrideCursor() will activate the first cursor set. Calling this
+    // function a second time restores the original widgets' cursors.
+
     return true;
 }
 
@@ -1312,7 +1446,8 @@ QVariant Cell::evalFactor(const QString &str, int &pos) const
 
 ```cpp
 QSpinBox::setRange(0, 255);
-QRegExpValidator *validator = new QRegExpValidator(QRegExp("[0-9A-Fa-f]{1,8}"), this);
+QRegExpValidator *validator = 
+        new QRegExpValidator(QRegExp("[0-9A-Fa-f]{1,8}"), this);
 
 // called by QSpinBox when the user types a value into the editor part of the
 // spin box and presses Enter
@@ -1328,22 +1463,23 @@ QString HexSpinBox::textFromValue(int value) const
     return QString::number(value, 16).toUpper(); // lowercase
 }
 
-// called by QSpinBox to see if the text entered so far is valid. There are three
-// possible results: Invalid (the text doesn't match the regular expression),
-// Intermediate (the text is a plausible part of a valid value), and Acceptable
-// (the text is valid). The eQRegExpValidator has a suitable validate() function,
-// so we simply return the result of calling it. In theory, we should return
-// Invalid or Intermediate for evalues that lie outside the spin box's range, but
-// QSpinBox is smart enough to detect that condition without any help.
-// QValidator::State HexSpinBox::validate(QString &text, int &pos) const
+// called by QSpinBox to see if the text entered so far is valid. There are
+// three possible results: Invalid (the text doesn't match the regular
+// expression), Intermediate (the text is a plausible part of a valid value),
+// and Acceptable (the text is valid). The eQRegExpValidator has a suitable
+// validate() function, so we simply return the result of calling it. In
+// theory, we should return Invalid or Intermediate for evalues that lie
+// outside the spin box's range, but QSpinBox is smart enough to detect that
+// condition without any help.  
+QValidator::State HexSpinBox::validate(QString &text, int &pos) const
 {
     return validator->validate(text, pos);
 }
 ```
 
 We have now finished the hexadecimal spin box. Customizing other Qt widgets
-follows the same pattern: Pick a suitable Qt widget, subclass it, and
-reimplement some virtual functions to change its behavior. If all we want to do
+follows the same pattern: 1) Pick a suitable Qt widget, 2) subclass it, and
+3) reimplement some virtual functions to change its behavior. If all we want to do
 is to customize an existing widget's look and feel, we can apply a style sheet
 or implement a custom style instead of subclassing the widget, as explained in
 Chapter 19.
@@ -1360,10 +1496,109 @@ class IconEditor : public QWidget
     ...
 ```
 
-The IconEditor class uses the Q_PROPERTY() macro to declare three custom properties: penColor,
-iconImage, and zoomFactor. Each property has a data type, a "read" function, and an optional "write"
-function. For example, the penColor property is of type QColor and can be read and written using the
-penColor() and setPenColor() functions.
+The IconEditor class uses the `Q_PROPERTY()`{.cpp} macro to declare three
+custom properties: penColor, iconImage, and zoomFactor. Each property has a
+data type, a "read" function, and an optional "write" function. For example,
+the penColor property is of type `QColor`{.cpp} and can be read and written
+using the `penColor()`{.cpp} and `setPenColor()`{.cpp} functions.
+
+`Q_PROPERTY`{.cpp}
+
+:   Qt provides a sophisticated property system similar to the ones supplied by
+    some compiler vendors. However, as a compiler- and platform-independent
+    library, Qt does not rely on non-standard compiler features like `__property` or
+    `[property]`. The Qt solution works with any standard C++ compiler on every
+    platform Qt supports. It is based on the Meta-Object System that also provides
+    inter-object communication via signals and slots.
+
+    ```cpp
+    Q_PROPERTY(type name
+               READ getFunction
+               [WRITE setFunction]
+               [RESET resetFunction]
+               [NOTIFY notifySignal]
+               [REVISION int]
+               [DESIGNABLE bool]
+               [SCRIPTABLE bool]
+               [STORED bool]
+               [USER bool]
+               [CONSTANT]
+               [FINAL])
+    ```
+
+    Here are some typical examples of property declarations taken from class
+    `QWidget`{.cpp}.
+
+    ```cpp
+    Q_PROPERTY(bool focus READ hasFocus)
+    Q_PROPERTY(bool enabled READ isEnabled WRITE setEnabled)
+    Q_PROPERTY(QCursor cursor READ cursor WRITE setCursor RESET unsetCursor)
+    ```
+
+    A property behaves like a class data member, but it has additional features
+    accessible through the Meta-Object System:
+
+    #. A READ accessor function is required, e.g. `QWidget::focus`{.cpp} is a read-only
+       property with READ function, `QWidget::hasFocus()`{.cpp}.
+    #. A WRITE accessor function is optional. It must return void and must take
+       exactly one argument, either of the property's type or a pointer or reference
+       to that type.
+    #. A NOTIFY signal is optional. If defined, it should specify one existing
+       signal in that class that is emitted whenever the value of the property
+       changes.
+    #. Most properties are DESIGNABLE (default true)
+    #. Most properties are STORED (default true), but e.g., `QWidget::minimumWidth()`{.cpp}
+       has STORED false, because its value is just taken from the width component of
+       property `QWidget::minimumSize()`{.cpp}, which is a `QSize`{.cpp}.
+    #. The USER attribute indicates whether the property is designated as the
+       user-facing or user-editable property for the class. Normally, there is only
+       one USER property per class (default false). e.g., QAbstractButton::checked is
+       the user editable property for (checkable) buttons. Note that QItemDelegate
+       gets and sets a widget's USER property.
+    #. The presence of the FINAL attribute indicates that the property will not be overridden by a derived class.
+
+    an example:
+
+    ```cpp
+    class MyClass : public QObject
+    {
+        Q_OBJECT
+        Q_PROPERTY(Priority priority READ priority WRITE setPriority NOTIFY priorityChanged)
+        Q_ENUMS(Priority)
+
+    public:
+        MyClass(QObject *parent = 0);
+        ~MyClass();
+
+        enum Priority { High, Low, VeryHigh, VeryLow };
+
+        void setPriority(Priority priority)
+        {
+            m_priority = priority;
+            emit priorityChanged(priority);
+        }
+        Priority priority() const
+        { return m_priority; }
+
+    signals:
+        void priorityChanged(Priority);
+
+    private:
+        Priority m_priority;
+    };
+    ```
+
+    ```cpp
+    MyClass *myinstance = new MyClass;
+    QObject *object = myinstance;
+
+    myinstance->setPriority(MyClass::VeryHigh);
+    object->setProperty("priority", "VeryHigh");
+    ```
+
+    `Q_CLASSINFO("Version", "3.0.0")`{.cpp}
+
+回到 IconEditor：
 
 ```cpp
 protected:
@@ -1376,18 +1611,16 @@ protected:
 IconEditor::IconEditor(QWidget *parent)
     : QWidget(parent)
 {
-    // the widget's content doesn't change when the widget is resized and that the
-    // content stays rooted to the widget's top-left corner
+    // the widget's content doesn't change when the widget is resized and that
+    // the content stays rooted to the widget's top-left corner
     setAttribute(Qt::WA_StaticContents);
 
 
-    /*
-        By calling setSizePolicy() in the constructor with QSizePolicy::Minimum as
-        horizontal and vertical policies, we tell any layout manager that is
-        responsible for this widget that the widget's size hint is really its minimum
-        size. In other words, the widget can be stretched if required, but it should
-        never shrink below the size hint.
-    */
+    // By calling setSizePolicy() in the constructor with QSizePolicy::Minimum
+    // as horizontal and vertical policies, we tell any layout manager that is
+    // responsible for this widget that the widget's size hint is really its
+    // minimum size. In other words, the widget can be stretched if required,
+    // but it should never shrink below the size hint.
     setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
 
     curColor = Qt::black;
@@ -1436,11 +1669,11 @@ void IconEditor::setIconImage(const QImage &newImage)
 }
 ```
 
-force a paint event by calling QWidget::update() or QWidget::repaint(). The
-difference between these two functions is that repaint() forces an immediate
-repaint, whereas update() simply schedules a paint event for when Qt next
-processes events. (Both functions do nothing if the widget isn't visible
-on-screen.)
+force a paint event by calling `QWidget::update()`{.cpp} or
+`QWidget::repaint()`{.cpp}. The difference between these two functions is that
+`repaint()`{.cpp} forces an immediate repaint, whereas `update()`{.cpp} simply
+schedules a paint event for when Qt next processes events. <small>(Both functions do
+nothing if the widget isn't visible on-screen.)</small>
 
 ```cpp
 void IconEditor::paintEvent(QPaintEvent *event)
@@ -1465,6 +1698,7 @@ void IconEditor::paintEvent(QPaintEvent *event)
     for (int i = 0; i < image.width(); ++i) {
         for (int j = 0; j < image.height(); ++j) {
             QRect rect = pixelRect(i, j);
+            // QRegion: region of event, QRegion intersect(QRect/QRegion)
             if (!event->region().intersect(rect).isEmpty()) {
                 QColor color = QColor::fromRgba(image.pixel(i, j));
                 if (color.alpha() < 255)
@@ -1476,22 +1710,22 @@ void IconEditor::paintEvent(QPaintEvent *event)
 }
 ```
 
+A widget's **palette** consists of three color groups: `active`, `inactive`,
+and `disabled`. Which color group should be used depends on the widget's
+current state:
 
-A widget's palette consists of three color groups: active, inactive, and
-disabled. Which color group should be used depends on the widget's current
-state:
+#. The Active group is used for **widgets in the currently active window**.
+#. The Inactive group is used for **widgets in the other windows**.
+#. The Disabled group is used for **disabled widgets in any window**.
 
-#.  The Active group is used for widgets in the currently active window.
-#. The Inactive group is used for widgets in the other windows.
-#. The Disabled group is used for disabled widgets in any window.
+Get an appropriate brush or color for drawing, the correct approach is to use
+the current **palette**, obtained from `QWidget::palette()`{.cpp}, and the required **role**,
+for example, `QPalette::foreground()`{.cpp}.
 
-get an appropriate brush or color for drawing, the correct approach is to use
-the current palette, obtained from QWidget::palette(), and the required role,
-for example, QPalette::foreground().
-
-The pixelRect() function returns a QRect suitable for QPainter::fillRect(). The
-i and j parameters are pixel coordinates in the QImage—not in the widget. If
-the zoom factor is 1, the two coordinate systems coincide exactly.
+The `pixelRect()`{.cpp} function returns a `QRect`{.cpp} suitable for
+`QPainter::fillRect()`{.cpp}. The `i` and `j` parameters are pixel coordinates
+in the QImage — not in the widget. If the zoom factor is 1, the two coordinate
+systems coincide exactly.
 
 ```cpp
 QRect IconEditor::pixelRect(int i, int j) const
@@ -1508,6 +1742,7 @@ QRect IconEditor::pixelRect(int i, int j) const
 void IconEditor::mousePressEvent(QMouseEvent *event)
 {
     if (event->button() == Qt::LeftButton) {
+        // const QPoint & QMouseEvent::pos() const
         setImagePixel(event->pos(), true);
     } else if (event->button() == Qt::RightButton) {
         setImagePixel(event->pos(), false);
@@ -1515,10 +1750,10 @@ void IconEditor::mousePressEvent(QMouseEvent *event)
 }
 ```
 
-mouseMoveEvent() handles "mouse move" events. By default, these events are
+`mouseMoveEvent()`{.cpp} handles "mouse move" events. By default, these events are
 generated only when the user is holding down a button. It is possible to change
-this behavior by calling QWidget::setMouseTracking(), but we don't need to do
-so for this example.
+this behavior by calling **`QWidget::setMouseTracking()`{.cpp}**, but we don't need to do
+so for this example. （这个可用于三维显示（占用鼠标））
 
 ```cpp
 void IconEditor::setImagePixel(const QPoint &pos, bool opaque)
@@ -1535,16 +1770,18 @@ void IconEditor::setImagePixel(const QPoint &pos, bool opaque)
             image.setPixel(i, j, qRgba(0, 0, 0, 0));
         }
 
+        // update only this rectangle
         update(pixelRect(i, j));
     }
 }
 ```
 
 #### Integrating Custom Widgets with Qt Designer
-we must subclass QDesignerCustomWidgetInterface and reimplement some virtual
-functions. We will assume that the plugin source code is located in a directory
-called iconeditorplugin and that the IconEditor source code is located in a
-parallel directory called iconeditor.
+
+We must subclass `QDesignerCustomWidgetInterface`{.cpp} and reimplement some
+virtual functions. We will assume that the plugin source code is located in a
+directory called iconeditorplugin and that the `IconEditor`{.cpp} source code
+is located in a parallel directory called iconeditor.
 
 ```cpp
 #include <QDesignerCustomWidgetInterface>
@@ -1574,11 +1811,17 @@ public:
     // box
     QIcon icon() const;
 
-    QString toolTip() const;
+    // QString QDesignerCustomWidgetInterface::whatsThis() const
+    // Returns a description of the widget that can be used by Qt Designer in
+    // "What's This?" help for the widget.
     QString whatsThis() const;
 
-    // true if the widget can contain other widgets; otherwise, it returns
-    // false
+    // Returns a short description of the widget that can be used by Qt
+    // Designer in a tool tip.
+    QString toolTip() const;
+
+    // true if the widget can contain other widgets; 
+    // otherwise, it returns false
     bool isContainer() const;
 
     // Qt Designer calls the createWidget() function to create an instance of a
@@ -1611,7 +1854,6 @@ DESTDIR       = $$[QT_INSTALL_PLUGINS]/designer
 Qt provides the `QRubberBand`{.cpp} class for drawing rubber bands, but here we
 draw it ourselves to have finer control over the look, and to demonstrate
 double buffering.
-
 
 ```cpp
 #include <QMap>
@@ -1786,7 +2028,46 @@ void Plotter::resizeEvent(QResizeEvent * /* event */)
     zoomOutButton->move(x + zoomInButton->width() + 5, 5);
     refreshPixmap();
 }
+```
 
+`QRubberBand`{.cpp}
+
+:   The QRubberBand class provides a rectangle or line that can indicate a selection or a boundary.
+
+    You can create a `QRubberBand`{.cpp} whenever you need to render a rubber
+    band around a given area (or to represent a single line), then call
+    `setGeometry()`{.cpp}, `move()`{.cpp} or `resize()`{.cpp} to position and
+    size it. A common pattern is to do this in conjunction with mouse events.
+    For example:
+
+    ```cpp
+    void Widget::mousePressEvent(QMouseEvent *event)
+    {
+        origin = event->pos();
+        if (!rubberBand)
+            rubberBand = new QRubberBand(QRubberBand::Rectangle, this);
+        rubberBand->setGeometry(QRect(origin, QSize()));
+        rubberBand->show();
+    }
+
+    void Widget::mouseMoveEvent(QMouseEvent *event)
+    {
+        rubberBand->setGeometry(QRect(origin, event->pos()).normalized());
+    }
+
+    void Widget::mouseReleaseEvent(QMouseEvent *event)
+    {
+        rubberBand->hide();
+        // determine selection, for example using QRect::intersects()
+        // and QRect::contains().
+    }
+    ```
+
+    `enum QRubberBand::Shape { Line, Rectangle };`{.cpp} specifies what shape a
+    `QRubberBand`{.cpp} should have. This is a drawing hint that is passed down
+    to the style system, and can be interpreted by each `QStyle`{.cpp}.
+
+```cpp
 void Plotter::mousePressEvent(QMouseEvent *event)
 {
     QRect rect(Margin, Margin,
@@ -1798,6 +2079,7 @@ void Plotter::mousePressEvent(QMouseEvent *event)
             rubberBandRect.setTopLeft(event->pos());
             rubberBandRect.setBottomRight(event->pos());
             updateRubberBandRegion();
+
             // QWidget::setCursor() sets the cursor shape to use when the mouse
             // hovers over a particular widget. If no cursor is set for a
             // widget, the parent widget's cursor is used. The default for
@@ -1944,7 +2226,6 @@ void Plotter::wheelEvent(QWheelEvent *event)
     // When we use QScrollArea (covered in Chapter 6) to provide scroll bars,
     // QScrollArea handles the mouse wheel events automatically, so we don't
     // need to reimplement wheelEvent() ourselves.
-
     refreshPixmap();
 }
 
@@ -2118,12 +2399,11 @@ setLayout(mainLayout);
     #. Expanding
 
 In addition to the size policy's horizontal and vertical components, the
-`QSizePolicy`{.cpp} class stores a horizontal and a vertical stretch factor.
+`QSizePolicy`{.cpp} class stores **a horizontal and a vertical stretch factor**.
 
 #### Stacked Layouts
 
 For convenience, Qt also includes `QStackedWidget`{.cpp}, which provides a `QWidget`{.cpp} with a built-in `QStackedLayout`{.cpp}.
-
 
 ![][stacked-widgets]
 
@@ -2170,7 +2450,8 @@ int main(int argc, char *argv[])
 mainSplitter = new QSplitter(Qt::Horizontal);
 mainSplitter->addWidget(foldersTreeWidget);
 mainSplitter->addWidget(rightSplitter);
-mainSplitter->setStretchFactor(1, 1); // factor!
+// (idx, stretch): idx: int QSplitter::indexOf(QWidget * widget)
+mainSplitter->setStretchFactor(1, 1);
 setCentralWidget(mainSplitter);
 
 // write settings
@@ -2204,6 +2485,25 @@ void MailClient::readSettings()
 }
 ```
 
+`void QSplitter::setStretchFactor(int index, int stretch)`{.cpp}
+
+:   Updates the size policy of the widget at position index to have a stretch
+    factor of stretch.
+
+    stretch is not the effective stretch factor; the effective stretch factor
+    is calculated by taking the initial size of the widget and multiplying it
+    with stretch.
+
+    This function is provided for convenience. It is equivalent to
+
+    ```cpp
+    QWidget *widget = splitter->widget(index);
+    QSizePolicy policy = widget->sizePolicy();
+    policy.setHorizontalStretch(stretch);
+    policy.setVerticalStretch(stretch);
+    widget->setSizePolicy(policy);
+    ```
+
 #### Scrolling Areas
 
 ```cpp
@@ -2225,8 +2525,9 @@ size hint.
 ![][scroll-area]
 
 ```cpp
+// default of `enum Qt::ScrollBarPolicy`: Qt::ScrollBarAsNeeded
 scrollArea.setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
-scrollArea.setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+scrollArea.setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 ```
 
 #### Dock Windows and Toolbars
@@ -2237,11 +2538,9 @@ QDockWidget::setFeatures();
 
 ![][dockarea]
 
-The corners indicated with dotted lines can belong to either of their two
-adjoining dock areas. For example, we could make the top-left corner belong to
+The corners indicated with dotted lines **can belong to either of their two
+adjoining dock areas**. For example, we could make the top-left corner belong to
 the left dock area by calling `QMainWindow::setCorner(Qt::TopLeftCorner, Qt::LeftDockWidgetArea)`{.cpp}.
-
-DockArea
 
 ```cpp
 QDockWidget *shapesDockWidget = new QDockWidget(tr("Shapes"));
@@ -2259,8 +2558,6 @@ windows and toolbars, doing so is necessary if we want to use
 `QMainWindow::saveState()`{.cpp} and `QMainWindow::restoreState()`{.cpp} to
 save and restore the dock window and toolbar geometries and states.
 
-ToolBar
-
 ```cpp
 QToolBar *fontToolBar = new QToolBar(tr("Font"));
 
@@ -2276,6 +2573,16 @@ fontToolBar->setAllowedAreas(Qt::TopToolBarArea
 addToolBar(fontToolBar);
 ```
 
+`QMainWindow::addToolBar`{.cpp}
+
+:   Adds a/the toolbar (into the specified area) in this main window.
+
+    ```cpp
+    void        addToolBar(Qt::ToolBarArea area, QToolBar * toolbar)
+    void        addToolBar(QToolBar * toolbar)
+    QToolBar  * addToolBar(const QString & title)
+    ```
+
 `QMainWindow`{.cpp}'s `saveState()` and `restoreState()`:
 
 :   ```cpp
@@ -2287,8 +2594,8 @@ addToolBar(fontToolBar);
     ```
 
 Finally, `QMainWindow`{.cpp} provides a context menu that lists all the dock
-windows and toolbars.. The user can close and restore dock windows and hide and
-restore toolbars using this menu.?? where?
+windows and toolbars. The user can close and restore dock windows and hide and
+restore toolbars using this menu: `QMenu * QMainWindow::createPopupMenu()`{.cpp}
 
 #### Multiple Document Interface
 
@@ -2404,6 +2711,7 @@ void CodeEditor::keyPressEvent(QKeyEvent *event)
 {
     switch (event->key()) {
     case Qt::Key_Home:
+        // has ControlModifier turned on
         if (event->modifiers() & Qt::ControlModifier) {
             goToBeginningOfDocument();
         } else {
@@ -2422,8 +2730,8 @@ The <kbd>Tab</kbd> and <kbd>Backtab</kbd> (<kbd>Shift</kbd>+<kbd>Tab</kbd>)
 keys are special cases. `QWidget::event()`{.cpp} handles them before it calls
 `keyPressEvent()`{.cpp}, with the semantic of passing the focus to the next or
 previous widget in the focus chain.  This behavior is usually what we want, but
-in a CodeEditor widget, we might prefer to make Tab indent a line.  The `event()`
-reimplementation would then look like this:
+in a `CodeEditor`{.cpp} widget, we might prefer to make Tab indent a line.  The
+`event()` reimplementation would then look like this:
 
 ```cpp
 bool CodeEditor::event(QEvent *event)
@@ -2482,7 +2790,8 @@ QSize Ticker::sizeHint() const
 {
     // QWidget::fontMetrics() returns a QFontMetrics object that can be queried
     // to obtain information relating to the widget's font.
-    return fontMetrics().size(0, text()); //
+    return fontMetrics().size(0, text());
+    // QFontMetricsF metrics = qApp->font();
 }
 
 void Ticker::paintEvent(QPaintEvent * /* event */)
@@ -2557,25 +2866,27 @@ bool CustomerInfoDialog::eventFilter(QObject *target, QEvent *event)
                 // returned false, Qt would send the event to its intended
                 // target, resulting in a spurious space being inserted into
                 // the QLineEdit
-                return true;
+                return true; // event handled
             }
         }
     }
+    // fall through
     return QDialog::eventFilter(target, event);
 }
 ```
 
 Qt offers five levels at which events can be processed and filtered:
 
-:   #. We can reimplement a specific event handler, `mousePressEvent()`, `keyPressEvent()`, `paintEvent()`
-    #. We can reimplement `QObject::event()`{.cpp}
-    #. We can install an event filter on a single `QObject`{.cpp}.
-    #. We can install an event filter on the `QApplication`{.cpp} object.
+:   #. We can **reimplement a specific event handler**, `mousePressEvent()`, `keyPressEvent()`, `paintEvent()`
+    #. We can **reimplement** `QObject::event()`{.cpp}
+    #. We can **install an event filter on a single `QObject`{.cpp}**.
+    #. We can **install an event filter on the `QApplication`{.cpp} object**.
         i. Once an event filter has been registered for `qApp` (**the unique `QApplication`{.cpp} object**)
         #. mostly useful for debugging
-    #. We can subclass `QApplication`{.cpp} and reimplement `notify()`
+    #. We can **subclass `QApplication`{.cpp} and reimplement `notify()`**.
         i. Qt calls `QApplication::notify()`{.cpp} to **send out an event**.
-        #. Event filters are generally more useful, because there can be any number of concurrent event filters, but only one `notify()` function.
+        #. Event filters are generally more useful, because there can be any
+           number of concurrent event filters, but only one `notify()` function.
 
 Many event types, including mouse and key events, can be **propagated** (`['prɑpə'get]`). If the
 event has not been handled on the way to its target object or by the target
@@ -2584,27 +2895,29 @@ with the target object's parent as the new target. This continues, going from
 parent to parent, **until either the event is handled or the top-level object is
 reached**.
 
-![This figure shows how a key press event is propagated from child to parent in a dialog. When the user presses
-    a key, the event is first sent to the widget that has focus, in this case the bottom-right `QCheckBox`{.cpp}. If the
-    `QCheckBox`{.cpp} doesn't handle the event, Qt sends it to the `QGroupBox`{.cpp}, and finally to the `QDialog`{.cpp} object.](http://gnat.qiniudn.com/qt/event.png)
+![This figure shows how a key press event is propagated from child to parent in
+  a dialog. When the user presses a key, the event is first sent to the widget
+  that has focus, in this case the bottom-right `QCheckBox`{.cpp}. If the
+  `QCheckBox`{.cpp} doesn't handle the event, Qt sends it to the
+  `QGroupBox`{.cpp}, and finally to the `QDialog`{.cpp} object.](http://gnat.qiniudn.com/qt/event.png)
 
 #### Staying Responsive during Intensive Processing
 
 When we call `QApplication::exec()`{.cpp}, we start Qt's **event loop**. Qt
 issues a few events on startup to show and paint the widgets. After that, the
 event loop is running, constantly checking to see whether any events have
-occurred and dispatching these events to QObjects in the application.
+occurred and dispatching these events to `QObjects`{.cpp} in the application.
 
 **Long-running operations**
 
 :   If we spend too much time processing a particular event, the user interface will become unresponsive.
 
     #. One solution is to use multiple threads.
-    #. A simpler solution is to make frequent calls to
-        `QApplication::processEvents()`{.cpp} in the file saving code. This function tells Qt
-        to process any pending events, and then returns control to the caller. In fact,
-        `QApplication::exec()`{.cpp} is little more than a while loop around a `processEvents()`
-        function call.
+    #. A simpler solution is to **make frequent calls to
+       `QApplication::processEvents()`{.cpp}** in the file saving code. This function **tells Qt
+       to process any pending events, and then returns control to the caller**. In fact,
+       `QApplication::exec()`{.cpp} is little more than a while loop around a `processEvents()`
+       function call. （这么黑 `QApplication::exec()`{.cpp} 好吗……）
 
 ```cpp
 bool Spreadsheet::writeFile(const QString &fileName)
@@ -2627,11 +2940,11 @@ bool Spreadsheet::writeFile(const QString &fileName)
 ```
 
 One danger with this approach is that the user might close the main window
-while the application is still saving, or even click File|Save a second time,
-resulting in undefined behavior. The easiest solution to this problem is to
-replace `qApp->processEvents();`{.cpp} with
-`qApp->processEvents(QEventLoop::ExcludeUserInputEvents);`{.cpp}
-telling Qt to ignore mouse and key events.
+while the application is still saving, or even click <kbd>File|Save</kbd> a
+second time, resulting in undefined behavior. The easiest solution to this
+problem is to replace `qApp->processEvents();`{.cpp} with
+`qApp->processEvents(QEventLoop::ExcludeUserInputEvents);`{.cpp} telling Qt to
+ignore mouse and key events.
 
 ```cpp
 bool Spreadsheet::writeFile(const QString &fileName)
@@ -2670,8 +2983,8 @@ the processing when the user requests, we can **defer (推迟) the processing un
 application is idle**. This can work if the processing can be safely interrupted
 and resumed, since we cannot predict how long the application will be idle.
 
-In Qt, this approach can be implemented by using a **0-millisecond timer**. These timers time out whenever
-there are no pending events.
+In Qt, this approach can be implemented by using a **0-millisecond timer**.
+These timers time out whenever there are no pending events.
 
 ```cpp
 void Spreadsheet::timerEvent(QTimerEvent *event)
@@ -2690,12 +3003,12 @@ void Spreadsheet::timerEvent(QTimerEvent *event)
 ### 8. 2D Graphics
 
 Qt's 2D graphics engine is based on the `QPainter`{.cpp} class.
-`QPainter`{.cpp} can draw geometric shapes (points, lines, rectangles,
+`QPainter`{.cpp} can **draw geometric shapes** (points, lines, rectangles,
 ellipses, arcs, chords, pie segments, polygons, and Bézier curves), as well as
-pixmaps, images, and text. Furthermore, `QPainter`{.cpp} supports advanced
-features such as antialiasing (for text and shape edges), alpha blending,
-gradient filling, and vector paths. `QPainter`{.cpp} also supports linear
-transformations, such as translation, rotation, shearing, and scaling.
+pixmaps, images, and text. Furthermore, `QPainter`{.cpp} supports **advanced
+features** such as antialiasing (for text and shape edges), alpha blending,
+gradient filling, and vector paths. `QPainter`{.cpp} also supports **linear
+transformations**, such as translation, rotation, shearing, and scaling.
 
 `QPainter`{.cpp} can be used to draw on a "paint device", such as a
 `QWidget`{.cpp}, a `QPixmap`{.cpp}, a `QImage`{.cpp}, or a
@@ -2725,7 +3038,7 @@ standard library for drawing 3D graphics.  In Chapter 20, we will see how to
 use the `QtOpenGL`{.cpp} module, which makes it easy to integrate OpenGL code
 into Qt applications.
 
-#### Painting with `QPainter`{.cpp}
+#### Painting with QPainter
 
 ```cpp
 // create a QPainter and pass a pointer to the device
@@ -2796,11 +3109,11 @@ A path specifies an outline, and the area described by the outline can be filled
 Figure 8.5 (c), we didn't set a brush, so only the outline is drawn.
 
 These three examples use built-in brush patterns (`Qt::SolidPattern`{.cpp},
-`Qt::DiagCrossPattern`{.cpp}, and `Qt::NoBrush`{.cpp}). In modern applications,
-gradient fills are a popular alternative to monochrome fill patterns.
-Gradients rely on color interpolation to obtain smooth transitions between two
+`Qt::DiagCrossPattern`{.cpp}, and `Qt::NoBrush`{.cpp}). **In modern applications,
+gradient fills are a popular alternative to monochrome fill patterns.**
+Gradients rely on **color interpolation** to obtain smooth transitions between two
 or more colors. They are frequently used to produce 3D effects; for example,
-the Plastique and Cleanlooks styles use gradients to render
+the `Plastique` and `Cleanlooks` styles use gradients to render
 `QPushButtons`{.cpp}. Qt supports three types of gradients: linear, conical
 `['kɑnɪkl]` (圆锥形的), and radial. The Oven Timer example in the next section
 combines all three types of gradients in a single widget to make it look like
@@ -2808,8 +3121,8 @@ the real thing.
 
 ![QPainter's gradient brushes][gradient]
 
-#. Linear gradients are defined by two control points and by a series of "color
-    stops" on the line that connects these two points. For example, the linear
+#. **Linear gradients** are defined by two control points and by a series of "**color
+    stops**" on the line that connects these two points. For example, the linear
     gradient in Figure 8.6 is created using the following
 
     code:
@@ -2821,12 +3134,12 @@ the real thing.
     gradient.setColorAt(1.0, Qt::black);
     ```
 
-#. Radial gradients are defined by a center point(x~c~, y~c~), a radius r, and
+#. **Radial gradients** are defined by a center point(x~c~, y~c~), a radius r, and
    a focal point(x~f~, y~f~), in addition to the color stops. The center point and
    the radius specify a circle. The colors spread outward from the focal point,
    which can be the center point or any other point inside the circle.
 
-#. Conical gradients are defined by a center point (x~c~, y~c~) and an angle a.
+#. **Conical gradients** are defined by a center point (x~c~, y~c~) and an angle a.
    The colors spread around the center point like the sweep of a watch's seconds
    hand.
 
@@ -2847,14 +3160,14 @@ So far, we have mentioned `QPainter`{.cpp}'s pen, brush, and font settings. In
 addition to these, `QPainter`{.cpp} has other settings that influence the way
 shapes and text are drawn:
 
-#. The background brush is used to fill the background of geometric shapes
+#. The **background brush** is used to fill the background of geometric shapes
    (underneath the brush pattern), text, or bitmaps when the background mode is
    `Qt::OpaqueMode`{.cpp} (the default is `Qt::TransparentMode`{.cpp}).
-#. The brush origin is the starting point for brush patterns, normally the
+#. The **brush origin** is the starting point for brush patterns, normally the
    top-left corner of the widget.
-#. The clip region is the area of the device that can be painted. Painting outside
+#. The **clip region** is the area of the device that can be painted. Painting outside
    the clip region has no effect.
-#. The viewport, window, and world transform determine how logical `QPainter`{.cpp}
+#. The **viewport**, **window**, and **world transform** determine how logical `QPainter`{.cpp}
    coordinates map to physical paint device coordinates. By default, these are set
    up so that the logical and physical coordinate systems coincide. We cover
    coordinate systems in the next section.
@@ -2899,16 +3212,14 @@ specifying half-pixel coordinates or by translating the `QPainter`{.cpp} by
 
 Now that we understand the default coordinate system, we can take a closer look
 at how it can be changed using `QPainter`{.cpp}'s viewport, window, and world
-transform. (In this context, the term "window" does not refer to a window in
+transform. <small>(In this context, the term "window" does not refer to a window in
 the sense of a top-level widget, and the "viewport" has nothing to do with
-`QScrollArea`{.cpp}'s viewport.)
+`QScrollArea`{.cpp}'s viewport.)</small>
 
 The window–viewport mechanism is useful to make the drawing code independent of
 the size or resolution of the paint device. For example, if we want the logical
 coordinates to extend from (-50, -50) to (+50, +50), with (0, 0) in the middle,
-we can set the window as follows:
-
-`painter.setWindow(-50, -50, 100, 100);`{.cpp}, x0, y0, width, height
+we can set the window as follows: `painter.setWindow(-50, -50, 100, 100);`{.cpp}.
 
 ![][win-port]
 
@@ -2942,19 +3253,13 @@ painter.drawText(pos, tr("Sales"));
 ```
 
 A simpler way to specify transformations is to use `QPainter`{.cpp}'s
-`translate()`{.cpp}, `scale()`{.cpp}, `rotate()`{.cpp}, and `shear()`{.cpp}
-
-```cpp
-convenience functions:
-painter.translate(-50.0, -50.0);
-painter.rotate(+45.0);
-painter.translate(+50.0, +50.0);
-painter.drawText(pos, tr("Sales"));
-```
+`translate()`{.cpp}, `scale()`{.cpp}, `rotate()`{.cpp}, and `shear()`{.cpp}.
 
 If we want to use the same transformations repeatedly, it is more efficient to
 store them in a `QTransform`{.cpp} object and set the world transform on the
 painter whenever the transformations are needed.
+
+![Oventimer][oventimer]
 
 ```cpp
 // oventimer.h
@@ -3153,9 +3458,11 @@ apparent if we performed more iterations. Each time we call `rotate()`{.cpp},
 we effectively multiply the current world transform with a rotation transform,
 producing a new world transform. The rounding errors associated with
 floating-point arithmetic gradually accumulate, resulting in an increasingly
-inaccurate world transform. Here's one way to rewrite the code to avoid this
+inaccurate world transform. 
+
+Here's one way to rewrite the code to avoid this
 issue, using `save()`{.cpp} and `restore()`{.cpp} to save and reload the
-original transform for each iteration
+original transform for each iteration:
 
 ```cpp
 for (int i = 0; i <= MaxMinutes; ++i) {
@@ -3175,25 +3482,24 @@ for (int i = 0; i <= MaxMinutes; ++i) {
 }
 ```
 
-![Oventimer][oventimer]
-
 #### High-Quality Rendering with QImage
 
 When accuracy is more important than efficiency, we can draw to a
-`QImage`{.cpp} and copy the result onto the screen. This always uses Qt's own
-internal paint engine, giving identical results on all platforms. The only
-restriction is that the `QImage`{.cpp} on which we paint must be created with
+`QImage`{.cpp} and copy the result onto the screen. This always uses **Qt's own
+internal paint engine**, giving identical results on all platforms. **The only
+restriction** is that the `QImage`{.cpp} on which we paint must be created with
 an argument of either `QImage::Format_RGB32`{.cpp} or
 `QImage::Format_ARGB32_Premultiplied`{.cpp}.
 
 The premultiplied `ARGB32` format is almost identical to the conventional
-`ARGB32` format (0xAARRGGBB), the difference being that the red, green, and
+`ARGB32` format (`0xAARRGGBB`), the difference being that the red, green, and
 blue channels are **"premultiplied"** with the alpha channel. This means that
-the RGB values, which normally range from 0x00 to 0xFF, are scaled **from 0x00 to
-the alpha value**. For example, a 50%-transparent blue color is represented as
-0x7F0000FF in ARGB32 format, but 0x7F00007F in premultiplied ARGB32 format, and
-similarly a 75%-transparent dark green of 0x3F008000 in ARGB32 format would be
-0x3F002000 in premultiplied ARGB32 format.
+the RGB values, which normally range from `0x00` to `0xFF`, are scaled **from
+`0x00` to `the alpha value`**. For example, a 50%-transparent blue color is
+represented as `0x7F0000FF` in `ARGB32` format, but `0x7F00007F` in
+premultiplied `ARGB32` format, and similarly a 75%-transparent dark green of
+`0x3F008000` in `ARGB32` format would be `0x3F002000` in premultiplied `ARGB32`
+format.
 
 Let's suppose we want to use antialiasing for drawing a widget, and we want to
 obtain good results even on X11 systems with no X Render extension. The
@@ -3220,46 +3526,46 @@ void MyWidget::paintEvent(QPaintEvent *event)
 ```
 
 One particularly powerful feature of Qt's graphics engine is its support for
-composition modes. These specify how a source and a destination pixel are
+**composition modes**. These specify how a source and a destination pixel are
 merged together when drawing. This applies to all painting operations,
 including pen, brush, gradient, and image drawing. The default composition mode
 is `QImage::CompositionMode_SourceOver`{.cpp}, meaning that the source pixel
 (the pixel we are drawing) is blended on top of the destination pixel (the
 existing pixel) in such a way that the alpha component of the source defines
-its translucency. Figure 8.13 shows the result of drawing a semi-transparent
-butterfly (the "source" image) on top of a checker pattern (the "destination"
-image) with the different modes.
+its translucency（`[træns'ljʊsənsi]`  半透明）. Figure 8.13 shows the result of
+drawing a semi-transparent butterfly (the "source" image) on top of a checker
+pattern (the "destination" image) with the different modes.
 
 ![][composite]
 
 `QPainter::setCompositionMode()`{.cpp}
 
-```cpp
-QImage resultImage = checkerPatternImage;
-QPainter painter(&resultImage);
-painter.setCompositionMode(QPainter::CompositionMode_Xor);
-painter.drawImage(0, 0, butterflyImage);
-```
+:   ```cpp
+    QImage resultImage = checkerPatternImage;
+    QPainter painter(&resultImage);
+    painter.setCompositionMode(QPainter::CompositionMode_Xor);
+    painter.drawImage(0, 0, butterflyImage);
+    ```
 
 One issue to be aware of is that the `QImage::CompositionMode_Xor`{.cpp}
 operation also applies to the alpha channel. This means that if we XOR the
-color white (0xFFFFFFFF) with itself, we obtain a transparent color
-(0x00000000), not black (0xFF000000).
+color white (`0xFFFFFFFF`) with itself, we obtain a transparent color
+(`0x00000000`), not black (`0xFF000000`).
 
 #### Item-Based Rendering with Graphics View
 
 Drawing using `QPainter`{.cpp} is ideal for custom widgets and for drawing one
-or just a few items. For graphics in which we need to handle anything from a
-handful up to tens of thousands of items, and we want the user to be able to
-click, drag, and select items, Qt's graphics view classes provide the solution
+or just a few items. For graphics in which we need to **handle anything from a
+handful up to tens of thousands of items**, and we want the user to **be able to
+click, drag, and select items**, Qt's graphics view classes provide the solution
 we need.
 
 ![][multiview]
 
-The graphics view architecture consists of a scene, represented by the
-`QGraphicsScene`{.cpp} class, and items in the scene, represented by
-`QGraphicsItem`{.cpp} subclasses. The scene (along with its item) is made
-visible to users by showing them in a view, represented by the `QGraphicsView`{.cpp}
+The graphics view architecture consists of **a scene**, represented by the
+`QGraphicsScene`{.cpp} class, and **items in the scene**, represented by
+`QGraphicsItem`{.cpp} subclasses. **The scene (along with its item) is made
+visible to users by showing them in a view**, represented by the `QGraphicsView`{.cpp}
 class. The same scene can be shown in more than one view—for example, to show
 different parts of a large scene, or to show the scene under different
 transformations. This is illustrated schematically in Figure 8.14.
@@ -3282,8 +3588,8 @@ background, we could simply create a texture `QBrush`{.cpp} based on that
 pixmap. The foreground brush could be set to a semi-transparent white to give a
 faded effect, or to be a cross pattern to provide a grid overlay.
 
-The scene can tell us which items have collided, which are selected, and which
-are at a particular point or in a particular region. A scene's graphics items
+**The scene can tell us which items have collided, which are selected, and which
+are at a particular point or in a particular region.** A scene's graphics items
 are either top-level (the scene is their parent) or children (their parent is
 another item). Any transformations applied to an item are automatically applied
 to its children.  The graphics view architecture provides two ways of grouping
@@ -3399,7 +3705,7 @@ void Link::trackNodes()
 }
 ```
 
-For the Node class, we will handle all the graphics ourselves. Another
+For the `Node` class, we will handle all the graphics ourselves. Another
 difference between nodes and links is that nodes are more interactive. We will
 begin by reviewing the Node declaration, breaking it into a few pieces since it
 is quite long.
@@ -3529,12 +3835,6 @@ QRectF Node::outlineRect() const
     return rect;
 }
 
-// The shape() function is called by QGraphicsView for fine-grained collision
-// detection. Often, we can omit it and leave the item to calculate the shape
-// itself based on the bounding rectangle. Here we reimplement it to return a
-// QPainterPath that represents a rounded rectangle. As a consequence, clicking
-// the corner areas that fall outside the rounded rectangle but inside the
-// bounding rectangle won't select the item.
 QRectF Node::boundingRect() const
 {
     // since the rectangle we return from this function must allow for at least
@@ -3543,6 +3843,12 @@ QRectF Node::boundingRect() const
     return outlineRect().adjusted(-Margin, -Margin, +Margin, +Margin);
 }
 
+// The shape() function is called by QGraphicsView for fine-grained collision
+// detection. Often, we can omit it and leave the item to calculate the shape
+// itself based on the bounding rectangle. Here we reimplement it to return a
+// QPainterPath that represents a rounded rectangle. As a consequence, clicking
+// the corner areas that fall outside the rounded rectangle but inside the
+// bounding rectangle won't select the item.
 QPainterPath Node::shape() const
 {
     QRectF rect = outlineRect();
@@ -3637,6 +3943,34 @@ int Node::roundness(double size) const
     return 100 * Diameter / int(size);
 }
 ```
+`QGraphicsItem::itemChange`{.cpp}
+
+:   This virtual function is called by QGraphicsItem to notify custom items that
+    some part of the item's state changes. By reimplementing this function, your
+    can react to a change, and in some cases, (depending on change,) adjustments
+    can be made.
+
+    ```cpp
+    // QVariant QGraphicsItem::itemChange(GraphicsItemChange change, 
+    //                                    const QVariant & value)
+
+    ```cpp
+    QVariant Component::itemChange(GraphicsItemChange change, const QVariant &value)
+    {
+        if (change == ItemPositionChange && scene()) {
+            // value is the new position.
+            QPointF newPos = value.toPointF();
+            QRectF rect = scene()->sceneRect();
+            if (!rect.contains(newPos)) {
+                // Keep the item inside the scene rect.
+                newPos.setX(qMin(rect.right(), qMax(newPos.x(), rect.left())));
+                newPos.setY(qMin(rect.bottom(), qMax(newPos.y(), rect.top())));
+                return newPos;
+            }
+        }
+        return QGraphicsItem::itemChange(change, value);
+    }
+    ```
 
 ```cpp
 class DiagramWindow : public QMainWindow
@@ -3837,6 +4171,7 @@ void DiagramWindow::paste()
     QString str = QApplication::clipboard()->text();
     QStringList parts = str.split(" ");
 
+    // !!! hack
     if (parts.count() >= 5 && parts.first() == "Node") {
         Node *node = new Node;
         // qlist.h: QList<T> mid(int pos, int length = -1) const;
@@ -3862,6 +4197,7 @@ void DiagramWindow::updateActions()
     sendToBackAction->setEnabled(isNode);
     propertiesAction->setEnabled(isNode);
 
+    // get/remove/add action(s) of this view (QGraphicsView)
     foreach (QAction *action, view->actions())
         view->removeAction(action);
 
@@ -4187,6 +4523,8 @@ MainWindow::MainWindow()
 }
 ```
 
+#### Enabling Drag and Drop
+
 ```cpp
 void MainWindow::dragEnterEvent(QDragEnterEvent *event)
 {
@@ -4210,8 +4548,6 @@ void MainWindow::dropEvent(QDropEvent *event)
                                     .arg(tr("Drag File")));
 }        
 ```
-
-#### Enabling Drag and Drop
 
 ```cpp
 void ProjectListWidget::mousePressEvent(QMouseEvent *event)
@@ -4365,12 +4701,18 @@ without formality. But if we want to drag custom data, we must choose among the 
     ```cpp
     QClipboard *clipboard = QApplication::clipboard();
     if (clipboard->supportsSelection()) {
+        // enum QClipboard::Mode { Clipboard, Selection, FindBuffer };
         QString text = clipboard->text(QClipboard::Selection);
     }
     ```
+    
+    `enum QClipboard::Mode`{.cpp}
+      ~ `Clipboard`: <kbd>Control+C</kbd>, <kbd>Control+V</kbd>
+      ~ `Selection`: mouse selection, register `*` in Vim
 
 If we want to be notified whenever the clipboard's contents change, we can
-connect the `QClipboard::dataChanged()`{.cpp} signal to a custom slot.
+connect the `QClipboard::dataChanged()`{.cpp} signal to a custom slot. 
+Also, `void QClipboard::changed(QClipboard::Mode mode)`{.cpp}.
 
 ### 10. Item View Classes
 
@@ -4467,7 +4809,7 @@ QIcon FlowChartSymbolPicker::iconForSymbol(const QString &symbolName)
 :   The **general purpose roles** (and the associated types) are:
 
     Constant | Value | Description
-    -------- | ----- | -----------
+    -------- | :---: | -----------
     `Qt::DisplayRole`{.cpp} | 0 | The key data to be rendered in the form of text. (`QString`{.cpp})
     `Qt::DecorationRole`{.cpp} | 1 | The data to be rendered as a decoration in the form of an icon. (`QColor`{.cpp}, `QIcon`{.cpp} or `QPixmap`{.cpp})
     `Qt::EditRole`{.cpp} | 2 | The data in a form suitable for editing in an editor. (`QString`{.cpp})
@@ -4479,7 +4821,7 @@ QIcon FlowChartSymbolPicker::iconForSymbol(const QString &symbolName)
     Roles describing **appearance and meta data** (with associated types):
 
     Constant | Value | Description
-    -------- | ----- | -----------
+    -------- | :---: | -----------
     `Qt::FontRole`{.cpp} | 6 | The font used for items rendered with the default delegate. (`QFont`{.cpp})
     `Qt::TextAlignmentRole`{.cpp} | 7 | The alignment of the text for items rendered with the default delegate. (`Qt::AlignmentFlag`{.cpp})
 `Qt::BackgroundRole`{.cpp} | 8 | The background brush used for items rendered with the default delegate. (`QBrush`{.cpp})
@@ -4492,14 +4834,14 @@ QIcon FlowChartSymbolPicker::iconForSymbol(const QString &symbolName)
     **Accessibility roles** (with associated types):
 
     Constant | Value | Description
-    -------- | ----- | -----------
+    -------- | :---: | -----------
     `Qt::AccessibleTextRole`{.cpp} | 11 | The text to be used by accessibility extensions and plugins, such as screen readers. (`QString`{.cpp})
     `Qt::AccessibleDescriptionRole`{.cpp} | 12 | A description of the item for accessibility purposes. (`QString`{.cpp})
 
     **User roles**:
 
     Constant | Value | Description
-    -------- | ----- | -----------
+    -------- | :---: | -----------
     `Qt::UserRole`{.cpp} | 32 | The first role that can be used for application-specific purposes.
 
     For user roles, it is up to the developer to decide which types to use and ensure that components use the correct types when accessing and setting data.
@@ -4510,7 +4852,7 @@ By default, `QListWidget`{.cpp} is read-only. If we wanted the user to edit the
 items, we could set the view's edit triggers using
 `QAbstractItemView::setEditTriggers()`{.cpp}; for example, a setting of
 `QAbstractItemView::AnyKeyPressed`{.cpp} means that the user can begin editing
-an item just by starting to type.  Alternatively, we could provide an Edit
+an item just by starting to type.  Alternatively, we could provide an <kbd>Edit</kbd>
 button (and perhaps Add and Delete buttons) and use signal–slot connections so
 that we can handle the editing operations programmatically.
 
@@ -4546,7 +4888,7 @@ treeWidget = new QTreeWidget;
 treeWidget->setColumnCount(2);
 treeWidget->setHeaderLabels(
         QStringList() << tr("Key") << tr("Value"));
-// enum	ResizeMode { Interactive, Fixed, Stretch, ResizeToContents, Custom }
+// enum ResizeMode { Interactive, Fixed, Stretch, ResizeToContents, Custom }
 // void QHeaderView::setResizeMode(int logicalIndex, ResizeMode mode)
 // This setting will be ignored for the last section if the stretchLastSection
 // property is set to true. This is the default for the horizontal headers
@@ -4587,7 +4929,8 @@ void TeamLeadersDialog::insert()
     ```cpp
     bool QAbstractItemModel::insertRows(int row, 
                                         int count, 
-                                        const QModelIndex & parent = QModelIndex())
+                                        const QModelIndex & parent
+                                                = QModelIndex())
     ```
 
     On models that support this, inserts count rows into the model before the
@@ -4880,7 +5223,7 @@ QVariant CurrencyModel::data(const QModelIndex &index, int role) const
         str.arg("%1f").arg("Hello");    // returns "Hellof %2"
         ```
 
-    * similars
+    * similarities
     
         ```cpp
         QString QString::arg(const QString & a1, 
@@ -5048,10 +5391,6 @@ private:
     int durationColumn;
 };
 
-// 
-class QDialogButtonBox;
-class QTableWidget;
-
 class Track
 {
 public:
@@ -5088,20 +5427,26 @@ QStringList() << tr("Track") << tr("Duration"));
 ```
 
 ```cpp
+// hack!
 void TrackDelegate::paint(QPainter *painter,
                           const QStyleOptionViewItem &option,
                           const QModelIndex &index) const
 {
     if (index.column() == durationColumn) {
+        // index -> model -> row -> data
         int secs = index.model()->data(index, Qt::DisplayRole).toInt();
         QString text = QString("%1:%2")
                        .arg(secs / 60, 2, 10, QChar('0'))
                        .arg(secs % 60, 2, 10, QChar('0'));
 
+        // copy the current style options and overwrite the default alignment 
         QStyleOptionViewItem myOption = option;
         myOption.displayAlignment = Qt::AlignRight | Qt::AlignVCenter;
 
+        // QItemDelegate::drawDisplay() to draw the text
         drawDisplay(painter, myOption, myOption.rect, text);
+        // draw a focus rectangle if the item has focus and will do nothing
+        // otherwise
         drawFocus(painter, myOption, myOption.rect);
     } else{
         QItemDelegate::paint(painter, option, index);
@@ -5130,6 +5475,8 @@ QWidget *TrackDelegate::createEditor(QWidget *parent,
 void TrackDelegate::commitAndCloseEditor()
 {
     QTimeEdit *editor = qobject_cast<QTimeEdit *>(sender());
+    // This signal must be emitted when the editor widget has completed editing
+    // the data, and wants to write it back into the model.
     emit commitData(editor);
     emit closeEditor(editor);
 }
@@ -5153,34 +5500,41 @@ void TrackDelegate::setModelData(QWidget *editor,
 
 ### 11. Container Classes
 
-Implicit sharing, or "copy on write", is an optimization that makes it possible to pass entire
-containers as values without any significant performance cost. The Qt containers also feature easy-to-use
-iterator classes inspired by Java, they can be streamed using QDataStream, and they usually result in less code
-in the executable than the corresponding STL containers. Finally, on some hardware platforms supported by
-Qt/Embedded Linux, the Qt containers are the only ones available.
+**Implicit sharing**, or "copy on write", is an optimization that makes it
+possible to pass entire containers as values without any significant
+performance cost. The Qt containers also feature easy-to-use iterator classes
+inspired by Java, they can be streamed using `QDataStream`{.cpp}, and they usually
+result in less code in the executable than the corresponding STL containers.
+Finally, on some hardware platforms supported by Qt/Embedded Linux, the Qt
+containers are the only ones available.
 
-Qt offers both sequential containers such as QVector<T>, QLinkedList<T>, and QList<T>, and associative
-containers such as QMap<K, T> and QHash<K, T>. Conceptually, the sequential containers store items one
-after another, whereas the associative containers store key–value pairs.
+Qt offers both **sequential containers** such as `QVector<T>`{.cpp},
+`QLinkedList<T>`{.cpp}, and `QList<T>`{.cpp}, and **associative containers** such
+as `QMap<K, T>`{.cpp} and `QHash<K, T>`{.cpp}.  Conceptually, the sequential
+containers store items one after another, whereas the associative containers
+store key–value pairs.
 
-Qt also provides generic algorithms that perform operations on arbitrary containers. For example, the qSort()
-algorithm sorts a sequential container, and qBinaryFind() performs a binary search on a sorted sequential
-container. These algorithms are similar to those offered by the STL.
+Qt also provides **generic algorithms** that perform operations on arbitrary
+containers. For example, the `qSort()`{.cpp} algorithm sorts a sequential
+container, and `qBinaryFind()`{.cpp} performs a binary search on a sorted
+sequential container. These algorithms are similar to those offered by the STL.
 
-In this chapter, we will also look at QString, QByteArray, and QVariant, since they have a lot in common
-with containers. QString is a 16-bit Unicode string used throughout Qt's API. QByteArray is an array of 8-bit
-chars useful for storing raw binary data. QVariant is a type that can store most C++ and Qt value types.
+In this chapter, we will also look at `QString`{.cpp}, `QByteArray`{.cpp}, and
+`QVariant`{.cpp}, since they have a lot in common with containers.
+`QString`{.cpp} is a 16-bit Unicode string used throughout Qt's API.
+`QByteArray`{.cpp} is an array of 8-bit chars useful for storing raw binary
+data. `QVariant`{.cpp} is a type that can store most C++ and Qt value types.
 
 #### Sequential Containers
 
 `QVector<T>`{.cpp}
 
-:   an array-like data structure that stores its items at adjacent positions in
+:   An array-like data structure that stores its items at adjacent positions in
     memory.
 
     ```cpp
     {
-        // set
+        // set value to a key
         QVector<double> vect(3);
         vect[0] = 1.0;
         vect[1] = 0.540302;
@@ -5188,7 +5542,7 @@ chars useful for storing raw binary data. QVariant is a type that can store most
     }
 
     {
-        // append
+        // append a pair
         QVector<double> vect;
         vect.append(1.0);
         vect.append(0.540302);
@@ -5201,10 +5555,10 @@ chars useful for storing raw binary data. QVariant is a type that can store most
 
 `QLinkedList<T>`{.cpp}
 
-:   Inserting items at the beginning or in the middle of a QVector<T>, or
-    removing items from these positions, can be inefficient for large vectors. For
-    this reason, Qt also offers QLinkedList<T>, a data structure that stores its
-    items at non-adjacent locations in memory.
+:   Inserting items at the beginning or in the middle of a `QVector<T>,`{.cpp}
+    or removing items from these positions, can be inefficient for large vectors.
+    For this reason, Qt also offers `QLinkedList<T>,`{.cpp} a data structure that
+    stores its items at non-adjacent locations in memory.
 
     ```cpp
     QLinkedList<QString> list;
@@ -5217,46 +5571,52 @@ chars useful for storing raw binary data. QVariant is a type that can store most
 
 `QList<T>`{.cpp}
 
-:   The QList<T> sequential container is an "array-list" that combines the most
-    important benefits of QVector<T> and QLinkedList<T> in a single class. It
-    supports random access, and its interface is index-based like QVector's.
-    Inserting or removing an item at either end of a QList<T> is very fast, and
-    inserting in the middle is fast for lists with up to about one thousand items.
-    Unless we want to perform insertions in the middle of huge lists or need the
-    list's items to occupy consecutive addresses in memory, QList<T> is usually the
-    most appropriate general-purpose container class to use.
+:   The `QList<T>`{.cpp} sequential container is an "array-list" that combines
+    the most important benefits of `QVector<T>`{.cpp} and `QLinkedList<T>`{.cpp} in
+    a single class. It supports random access, and its interface is index-based
+    like QVector's.  Inserting or removing an item at either end of a
+    `QList<T>`{.cpp} is very fast, and inserting in the middle is fast for lists
+    with up to about one thousand items.  Unless we want to perform insertions in
+    the middle of huge lists or need the list's items to occupy consecutive
+    addresses in memory, `QList<T>`{.cpp} is usually the most appropriate
+    general-purpose container class to use.
 
-    The QStringList class is a subclass of QList<QString> that is widely used
-    in Qt's API.
+    The `QStringList`{.cpp} class is a subclass of `QList<QString>`{.cpp} that
+    is widely used in Qt's API.
 
-QStack<T> and QQueue<T> are two more examples of convenience subclasses.
+`QStack<T>`{.cpp} and `QQueue<T>`{.cpp} are two more examples of convenience subclasses.
 
-For all the container classes seen so far, the value type T can be a basic type like int or double, a pointer
-type, or a class that has a default constructor (a constructor that takes no arguments), a copy constructor, and
-an assignment operator. Classes that qualify include QByteArray, QDateTime, QRegExp, QString, and
-QVariant. Qt classes that are derived from QObject do not qualify, because they lack a copy constructor and
-an assignment operator. This is no problem in practice, since we can simply store pointers to QObject types
-rather than the objects themselves.
+For all the container classes seen so far, the value type `T` can be a basic
+type like int or double, a pointer type, or a class that has a default
+constructor (a constructor that takes no arguments), a copy constructor, and an
+assignment operator. Classes that qualify include `QByteArray`{.cpp},
+`QDateTime`{.cpp}, `QRegExp`{.cpp}, `QString`{.cpp}, and `QVariant`{.cpp}. Qt
+classes that are derived from `QObject`{.cpp} do not qualify, because they lack
+a copy constructor and an assignment operator. This is no problem in practice,
+since we can simply store pointers to `QObject`{.cpp} types rather than the
+objects themselves.
 
-Java-style iterators and STL-style iterators. The Java-style iterators are
-easier to use, whereas the STL-style iterators can be combined with Qt's and
-STL's generic algorithms and are more powerful.
+**The Java-style iterators** are easier to use, whereas the **STL-style
+iterators** can be combined with Qt's and STL's generic algorithms and are more
+powerful.
 
-QVectorIterator<T>,
-QLinkedListIterator<T>, and QListIterator<T>. The corresponding read-write iterators have Mutable in
-their name (e.g., QMutableVectorIterator<T>)
+![Java-style iterators](http://doc.qt.io/qt-4.8/images/javaiterators1.png)
+
+`QVectorIterator<T>,`{.cpp} `QLinkedListIterator<T>,`{.cpp} and
+`QListIterator<T>.`{.cpp} The corresponding read-write iterators have `Mutable`
+in their name (e.g., `QMutableVectorIterator<T>)`{.cpp}).
 
 ```cpp
 QList<double> list;
 ...
-QListIterator<double> i(list);
+QMutableListIterator<double> i(list);
 while (i.hasNext()) {
     int val = i.next();
     if (val < 0.0)
         i.setValue(-val);
 }
 
-QListIterator<double> i(list);
+QMutableListIterator<double> i(list);
 i.toBack();
 while (i.hasPrevious()) {
     //  remove() function always operates on the last item that was jumped
@@ -5270,9 +5630,10 @@ while (i.hasPrevious()) {
 // item and the following item.
 ```
 
-In addition to the Java-style iterators, every sequential container class C<T> has two STL-style iterator types:
-C<T>::iterator and C<T>::const_iterator. The difference between the two is that const_iterator doesn't
-let us modify the data.
+In addition to the Java-style iterators, every sequential container class
+`C<T>`{.cpp} has two STL-style iterator types: `C<T>::iterator`{.cpp} and
+`C<T>::const_iterator.`{.cpp} The difference between the two is that
+`const_iterator`{.cpp} doesn't let us modify the data.
 
 ```cpp
 QList<double>::iterator i = list.begin();
@@ -5282,9 +5643,11 @@ while (i != list.end()) {
 }
 ```
 
-A few Qt functions return a container. If we want to iterate over the return value of a function using an STL-
-style iterator, we must take a copy of the container and iterate over the copy. For example, the following code
-is the correct way to iterate over the QList<int> returned by QSplitter::sizes():
+A few Qt functions return a container. If we want to iterate over the return
+value of a function using an STL-style iterator, we must take a copy of the
+container and iterate over the copy. For example, the following code is the
+correct way to iterate over the `QList<int>`{.cpp} returned by
+`QSplitter::sizes():`{.cpp}
 
 ```cpp
 QList<int> list = splitter->sizes();
@@ -5306,14 +5669,18 @@ while (i != splitter->sizes().end()) {
 }
 ```
 
-This is because QSplitter::sizes() returns a new QList<int> by value every time it is called. If we don't
-store the return value, C++ automatically destroys it before we have even started iterating, leaving us with a
-dangling iterator. To make matters worse, each time the loop is run, QSplitter::sizes() must generate a
-new copy of the list because of the splitter->sizes().end() call. In summary: When using STL-style
-iterators, always iterate on a copy of a container returned by value.
+This is because `QSplitter::sizes()`{.cpp} returns a new `QList<int>`{.cpp} by
+value every time it is called. **If we don't store the return value, C++
+automatically destroys it before we have even started iterating, leaving us
+with a dangling `['dæŋglɪŋ]` iterator.** To make matters worse, each time the
+loop is run, `QSplitter::sizes()`{.cpp} must generate a new copy of the list
+because of the `splitter->sizes().end()`{.cpp} call. In summary: **When using
+STL-style iterators, always iterate on a copy of a container returned by
+value.**
 
-With read-only Java-style iterators, we don't need to take a copy. The iterator takes a copy for us behind the
-scenes, ensuring that we always iterate over the data that the function first returned. For example:
+With read-only Java-style iterators, we don't need to take a copy. The iterator
+takes a copy for us behind the scenes, ensuring that we always iterate over the
+data that the function first returned. For example:
 
 ```cpp
 QListIterator<int> i(splitter->sizes());
@@ -5321,6 +5688,19 @@ while (i.hasNext()) {
     do_something(i.next());
 }
 ```
+
+`QList<int> QSplitter::sizes() const`{.cpp}
+
+:   Returns a list of the size parameters of all the widgets in this splitter.
+
+    If the splitter's orientation is horizontal, the list contains the widgets
+    width in pixels, from left to right; if the orientation is vertical, the
+    list contains the widgets height in pixels, from top to bottom.
+
+    Giving the values to another splitter's `setSizes()`{.cpp} function will
+    produce a splitter with the same layout as this one.
+
+    Note that invisible widgets have a size of 0.
 
 The beauty of implicit sharing is that it is an optimization that we don't need to think about; it simply works,
 without requiring any programmer intervention. At the same time, implicit sharing encourages a clean
@@ -5336,10 +5716,10 @@ QVector<double> sineTable()
 }
 ```
 
-The call to the function looks like this:
-QVector<double> table = sineTable();
-STL, in comparison, encourages us to pass the vector as a non-const reference to ** avoid the copy that takes
-place when the function's return value is stored in a variable**:
+The call to the function looks like this: `QVector<double> table =
+sineTable();`{.cpp}.  STL, in comparison, encourages us to pass the vector as a
+non-const reference to **avoid the copy that takes place when the function's
+return value is stored in a variable**:
 
 ```cpp
 void sineTable(std::vector<double> &vect)
@@ -5350,28 +5730,32 @@ void sineTable(std::vector<double> &vect)
 }
 ```
 
-The call then becomes more tedious to write and less clear to read:
+The call then becomes more tedious to write and less clear to read: `std::vector<double> table;`{.cpp}
 
-std::vector<double> table;
+Qt uses implicit sharing for all of its containers and for many other classes,
+including `QByteArray`{.cpp}, `QBrush`{.cpp}, `QFont`{.cpp}, `QImage`{.cpp},
+`QPixmap`{.cpp}, and `QString`{.cpp}. This makes these classes very efficient
+to pass by value, both as function parameters and as return values.
 
-Qt uses implicit sharing for all of its containers and for many other classes, including QByteArray, QBrush,
-QFont, QImage, QPixmap, and QString. This makes these classes very efficient to pass by value, both as
-function parameters and as return values.
+Implicit sharing is a guarantee from Qt that the data won't be copied if we
+don't modify it. To get the best out of implicit sharing, we can adopt a couple
+of new programming habits. One habit is to use the `at()`{.cpp} function rather
+than the `[] operator` for read-only access on a (non-const) vector or list.
+Since Qt's containers cannot tell whether `[]` appears on the left side of an
+assignment or not, it assumes the worst and forces a deep copy to occur,
+whereas `at()`{.cpp} isn't allowed on the left side of an assignment.
 
-Implicit sharing is a guarantee from Qt that the data won't be copied if we don't modify it. To get the best out
-of implicit sharing, we can adopt a couple of new programming habits. One habit is to use the at() function
-rather than the [] operator for read-only access on a (non-const) vector or list. Since Qt's containers cannot
-tell whether [] appears on the left side of an assignment or not, it assumes the worst and forces a deep copy
-to occur—whereas at() isn't allowed on the left side of an assignment.
+A similar issue arises when we iterate over a container with STL-style
+iterators. Whenever we call `begin()`{.cpp} or `end()`{.cpp} on a non-const
+container, Qt forces a deep copy to occur if the data is shared. To prevent
+this inefficiency, the solution is to use `const_iterator`{.cpp},
+`constBegin()`{.cpp}, and `constEnd()`{.cpp} whenever possible.
 
-A similar issue arises when we iterate over a container with STL-style iterators. Whenever we call begin() or
-end() on a non-const container, Qt forces a deep copy to occur if the data is shared. To prevent this
-inefficiency, the solution is to use const_iterator, constBegin(), and constEnd() whenever possible.
-
-Data sharing is often disregarded as an option in multithreaded programs, because of race
-conditions in the reference counting. With Qt, this is not an issue. Internally, the container
-classes use assembly language instructions to perform atomic reference counting. This
-technology is available to Qt users through the QSharedData and QSharedDataPointer classes.
+Data sharing is often disregarded as an option in multithreaded programs,
+because of race conditions in the reference counting. With Qt, this is not an
+issue. Internally, the container classes use assembly language instructions to
+perform atomic reference counting. This technology is available to Qt users
+through the `QSharedData`{.cpp} and `QSharedDataPointer`{.cpp} classes.
 
 ```cpp
 QLinkedList<Movie> list;
@@ -5402,25 +5786,28 @@ foreach (movie, list) {
 }
 ```
 
-
 ```cpp
 // If [] is used to retrieve a value for a non-existent key in a non-const map,
 // a new item will be created with the given key and an empty value. To avoid
 // accidentally creating empty values, we can use the value() function to
 // retrieve items instead of []: 
-int val = map.value("dreiundzwanzig");
+int val = map["dreiundzwanzig"];        // bad
+int val = map.value("dreiundzwanzig");  // better
 
 // specify a default value
-int seconds = map.value("delay", 30);
-``
+int seconds = map.value("delay", 30);   // best
+```
 
-QMap<K, T> has a couple of convenience functions, keys() and values(), that are especially useful when
-dealing with small data sets. They return QLists of a map's keys and values.
+`QMap<K, T>`{.cpp} has a couple of convenience functions, `keys()`{.cpp} and
+`values()`{.cpp}, that are especially useful when dealing with small data sets.
+They return `QLists`{.cpp} of a map's keys and values.
 
-Maps are normally single-valued: If a new value is assigned to an existing key, the old value is replaced by the
-new value, ensuring that no two items share the same key. It is possible to have multiple key–value pairs with
-the same key by using the insertMulti() function or the QMultiMap<K, T> convenience subclass. QMap<K,
-T> has a values(const K &) overload that returns a QList of all the values for a given key. For example:
+Maps are normally single-valued: If a new value is assigned to an existing key,
+the old value is replaced by the new value, ensuring that no two items share
+the same key. It is possible to have multiple key–value pairs with the same key
+by using the `insertMulti()`{.cpp} function or the `QMultiMap<K, T>`{.cpp}
+convenience subclass. `QMap<K, T>`{.cpp} has a `values(const K &)`{.cpp} overload that
+returns a `QList`{.cpp} of all the values for a given key. For example:
 
 ```cpp
 QMultiMap<int, QString> multiMap;
@@ -5430,30 +5817,39 @@ multiMap.insert(1, "uno");
 QList<QString> vals = multiMap.values(1);
 ```
 
-A QHash<K, T> is a data structure that stores key–value pairs in a hash table. Its interface is almost identical
-to that of QMap<K, T>, but it has different requirements for the K template type and usually provides much
-faster lookups than QMap<K, T> can achieve. Another difference is that QHash<K, T> is unordered.
+A `QHash<K, T>`{.cpp} is a data structure that stores key–value pairs in a hash
+table. Its interface is almost identical to that of `QMap<K, T>`{.cpp}, but it
+has different requirements for the `K` template type and usually provides much
+faster lookups than `QMap<K, T>`{.cpp} can achieve. Another difference is that
+`QHash<K, T>`{.cpp} is unordered.
 
-In addition to the standard requirements on any value type stored in a container, the K type of a QHash<K, T>
-needs to provide an operator==() and be supported by a global qHash() function that returns a hash value
-for a key. Qt already provides qHash() functions for integer types, pointer types, QChar, QString, and
-QByteArray.
+In addition to the standard requirements on any value type stored in a
+container, the `K` type of a `QHash<K, T>`{.cpp} needs to provide an
+`operator==()`{.cpp} and be supported by a global `qHash()`{.cpp} function that
+returns a hash value for a key. Qt already provides `qHash()`{.cpp} functions
+for integer types, pointer types, `QChar`{.cpp}, `QString`{.cpp}, and
+`QByteArray`{.cpp}.
 
-fine-tune performance by calling reserve() to specify the
-number of items expected to be stored in the hash and squeeze() to shrink the hash table based on the
-current number of items. A common idiom is to call reserve() with the maximum number of items we expect,
-then insert the data, and finally call squeeze() to minimize memory usage if there were fewer items than
-expected.
+Fine-tune performance by calling `reserve()`{.cpp} to specify the number of
+items expected to be stored in the hash and `squeeze()`{.cpp} to shrink the
+hash table based on the current number of items. A common idiom is to call
+`reserve()`{.cpp} with the maximum number of items we expect, then insert the
+data, and finally call `squeeze()`{.cpp} to minimize memory usage if there were
+fewer items than expected.
 
-Besides QHash<K, T>, Qt also provides a QCache<K, T> class that can be used to cache objects associated
-with a key, and a QSet<K> container that only stores keys. Internally, both rely on QHash<K, T> and both have
-the same requirements for the K type as QHash<K, T>.
+Besides `QHash<K, T>`{.cpp}, Qt also provides a `QCache<K, T>`{.cpp} class that
+can be used to cache objects associated with a key, and a `QSet<K>`{.cpp}
+container that only stores keys. Internally, both rely on `QHash<K, T>`{.cpp}
+and both have the same requirements for the `K` type as `QHash<K, T>`{.cpp}.
 
-The easiest way to iterate through all the key–value pairs stored in an associative container is to use a Java-
-style iterator. Because the iterators must give access to both a key and a value, the Java-style iterators for
-associative containers work slightly differently from their sequential counterparts. The main difference is that
-the next() and previous() functions return an object that represents a key–value pair, rather than simply a
-value. The key and value components are accessible from this object as key() and value(). For example:
+The easiest way to iterate through all the key–value pairs stored in an
+associative container is to use a Java- style iterator. Because the iterators
+must give access to both a key and a value, the Java-style iterators for
+associative containers work slightly differently from their sequential
+counterparts. The main difference is that the `next()`{.cpp} and
+`previous()`{.cpp} functions return an object that represents a key–value pair,
+rather than simply a value. The key and value components are accessible from
+this object as `key()`{.cpp} and `value()`{.cpp}. For example:
 
 ```cpp
 QMap<QString, int> map;
@@ -5478,14 +5874,16 @@ while (i.hasNext()) {
 i.setValue(-t); // value of this key reversed
 ```
 
-STL-style iterators also provide key() and value() functions. With the non-const iterator types, value()
-returns a non-const reference, allowing us to change the value as we iterate. Note that although these
-iterators are called "STL-style", they deviate significantly from the std::map<K, T> iterators, which are based
-on std::pair<K, T>.
+STL-style iterators also provide `key()`{.cpp} and `value()`{.cpp} functions.
+With the non-const iterator types, `value()`{.cpp} returns a non-const
+reference, allowing us to change the value as we iterate. Note that although
+these iterators are called "STL-style", they deviate significantly from the
+`std::map<K, T>`{.cpp} iterators, which are based on `std::pair<K, T>`{.cpp}.
 
-The foreach loop also works on associative containers, but only on the value component of the key–value
-pairs. If we need both the key and the value components of the items, we can call the keys() and
-values(const K &) functions in nested foreach loops as follows:
+The foreach loop also works on associative containers, but only on the value
+component of the key–value pairs. If we need both the key and the value
+components of the items, we can call the `keys()`{.cpp} and `values(const K
+&)`{.cpp} functions in nested foreach loops as follows:
 
 ```cpp
 QMultiMap<QString, int> map;
@@ -5499,69 +5897,75 @@ foreach (QString key, map.keys()) {
 
 #### Generic Algorithms
 
-The <QtAlgorithms> header declares a set of global template functions that implement basic algorithms on
-containers. Most of these functions operate on STL-style iterators.
+The `<QtAlgorithms>` header declares a set of global template functions that
+implement basic algorithms on containers. Most of these functions operate on
+STL-style iterators.
 
-The STL <algorithm> header provides a more complete set of generic algorithms. These algorithms can be
-used on Qt containers as well as STL containers. 
+The STL `<algorithm>` header provides a more complete set of generic
+algorithms. These algorithms can be used on Qt containers as well as STL
+containers. 
 
-qFind
+`qFind`{.cpp}
 
-```cpp
-QStringList list;
-list << "Emma" << "Karl" << "James" << "Mariette";
-QStringList::iterator i = qFind(list.begin(), list.end(), "Karl");
-QStringList::iterator j = qFind(list.begin(), list.end(), "Petra");
-```
+:   ```cpp
+    QStringList list;
+    list << "Emma" << "Karl" << "James" << "Mariette";
+    QStringList::iterator i = qFind(list.begin(), list.end(), "Karl");
+    QStringList::iterator j = qFind(list.begin(), list.end(), "Petra");
+    ```
 
-qBinaryFind
+`qBinaryFind`{.cpp}
 
-The qBinaryFind() algorithm performs a search just like qFind(), except that it assumes that the items are
-sorted in ascending order and uses fast binary searching rather than qFind()'s linear searching.
+:   The `qBinaryFind()`{.cpp} algorithm performs a search just like `qFind()`{.cpp}, except
+    that it assumes that the items are sorted in ascending order and uses fast
+    binary searching rather than `qFind()`{.cpp}'s linear searching.
 
-```cpp
-```
+`qFill`{.cpp}
 
-The qFill() algorithm populates a container with a particular value:
+:   The `qFill()`{.cpp} algorithm populates a container with a particular value:
 
-```cpp
-QLinkedList<int> list(10);
-qFill(list.begin(), list.end(), 1009);
+    ```cpp
+    QLinkedList<int> list(10);
+    qFill(list.begin(), list.end(), 1009);
 
-QVector<int> vect(10);
-qFill(vect.begin(), vect.begin() + 5, 1009);
-qFill(vect.end() - 5, vect.end(), 2013);
-```
+    QVector<int> vect(10);
+    qFill(vect.begin(), vect.begin() + 5, 1009);
+    qFill(vect.end() - 5, vect.end(), 2013);
+    ```
 
-The qCopy() algorithm copies values from one container to another:
+`qCopy`{.cpp}
 
-```cpp
-QVector<int> vect(list.count());
-qCopy(list.begin(), list.end(), vect.begin());
+:   The qCopy() algorithm copies values from one container to another:
 
-// should not don't overlap
-qCopy(list.begin(), list.begin() + 2, list.end() - 2);
-```
+    ```cpp
+    QVector<int> vect(list.count());
+    qCopy(list.begin(), list.end(), vect.begin());
 
-```cpp
-qSort(list.begin(), list.end(), qGreater<int>());
-```
+    // should not don't overlap
+    qCopy(list.begin(), list.begin() + 2, list.end() - 2);
+    ```
 
-```cpp
-bool insensitiveLessThan(const QString &str1, const QString &str2)
-{
-    return str1.toLower() < str2.toLower();
-}
+`qSort`{.cpp}
 
-// The call to qSort() then becomes QStringList list;
-...
-qSort(list.begin(), list.end(), insensitiveLessThan);
-```
+:   ```cpp
+    qSort(list.begin(), list.end(), qGreater<int>());
+    ```
 
-The qStableSort() algorithm is similar to qSort(), except it guarantees that
-items that compare equal appear in the same order after the sort as before.
-This is useful if the sort criterion takes into account only parts of the value
-and the results are visible to the user. 
+    ```cpp
+    bool insensitiveLessThan(const QString &str1, const QString &str2)
+    {
+        return str1.toLower() < str2.toLower();
+    }
+
+    // The call to qSort() then becomes QStringList list;
+    ...
+    qSort(list.begin(), list.end(), insensitiveLessThan);
+    ```
+
+    The qStableSort() algorithm is similar to qSort(), except it guarantees
+    that items that compare equal appear in the same order after the sort as
+    before.  This is useful if the sort criterion takes into account only parts
+    of the value and the results are visible to the user. 
 
 ```cpp
 qDeleteAll(list);
@@ -5582,10 +5986,11 @@ if (x1 > x2)
 
 #### Strings, Byte Arrays, and Variants
 
-When using QString, we don't need to worry about such arcane details as allocating enough memory or
-ensuring that the data is '\0'-terminated. Conceptually, QStrings can be thought of as a vector of QChars. A
-QString can embed '\0' characters. The length() function returns the size of the entire string, including
-embedded '\0' characters.
+When using QString, we don't need to worry about such arcane details as
+allocating enough memory or ensuring that the data is `'\0'-terminated`.
+Conceptually, `QStrings`{.cpp} can be thought of as a vector of `QChars`{.cpp}.
+A `QString`{.cpp} can embed `'\0'` characters. The `length()`{.cpp} function
+returns the size of the entire string, including embedded `'\0'` characters.
 
 ```cpp
 bool ok;
@@ -5593,7 +5998,8 @@ double d = str.toDouble(&ok);
 ```
 
 ```cpp
-The conversion from const char * strings to QString is automatic in most cases, for example:
+// The conversion from const char * strings to QString is automatic in most
+// cases, for example:
 str += " (1870)";
 mid(int start, int len);
 mid(int start);
@@ -5627,29 +6033,31 @@ str = words.join("\n");
 isEmpty() or by checking whether length() is 0.
 ```
 
-The conversion from const char * strings to QString is automatic in most cases, for example:
-str += " (1870)";
+The conversion from `const char *` strings to `QString`{.cpp} is automatic in
+most cases, for example: `str += " (1870)";`{.cpp}
 
-To explicitly convert a const char * to a
-QString, simply use a QString cast, or call fromAscii() or fromLatin1(). (See Chapter 18 for an
-explanation of handling literal strings in other encodings.)
-To convert a QString to a const char *, use toAscii() or toLatin1(). These functions return a
-QByteArray, which can be converted into a const char * using QByteArray::data() or
-QByteArray::constData(). For example:
+To explicitly convert a `const char *` to a `QString`{.cpp}, simply use a
+`QString`{.cpp} cast, or call `fromAscii()`{.cpp} or `fromLatin1()`{.cpp}. (See
+Chapter 18 for an explanation of handling literal strings in other encodings.)
+To convert a QString to a const char *, use `toAscii()`{.cpp} or
+`toLatin1()`{.cpp}. These functions return a `QByteArray`{.cpp}, which can be
+converted into a `const char *` using `QByteArray::data()`{.cpp} or
+`QByteArray::constData()`{.cpp}. For example:
 
 ```cpp
 printf("User: %s\n", str.toAscii().data());
-
 printf("User: %s\n", qPrintable(str)); // toAscii().constData();
 ```
 
-Qt provides a much cleaner way of handling variables that can hold different types:
-QVariant.
+Qt provides a much cleaner way of handling variables that can hold different types: `QVariant`{.cpp}.
 
-The QVariant class can hold values of many Qt types, including QBrush, QColor, QCursor, QDateTime, QFont,
-QKeySequence, QPalette, QPen, QPixmap, QPoint, QRect, QRegion, QSize, and QString, as well as basic
-C++ numeric types such as double and int. The QVariant class can also hold containers: QMap<QString,
-QVariant>, QStringList, and QList<QVariant>.
+The `QVariant`{.cpp} class can hold values of many Qt types, including
+`QBrush`{.cpp}, `QColor`{.cpp}, `QCursor`{.cpp}, `QDateTime`{.cpp},
+`QFont`{.cpp}, `QKeySequence`{.cpp}, `QPalette`{.cpp}, `QPen`{.cpp},
+`QPixmap`{.cpp}, `QPoint`{.cpp}, `QRect`{.cpp}, `QRegion`{.cpp}, `QSize`{.cpp},
+and `QString`{.cpp}, as well as basic C++ numeric types such as double and int.
+The `QVariant`{.cpp} class can also hold containers: `QMap<QString, QVariant>`{.cpp}, 
+`QStringList`{.cpp}, and `QList<QVariant>`{.cpp}.
 
 ```cpp
 QMap<QString, QVariant> pearMap;
@@ -5662,13 +6070,15 @@ fruitMap["Pineapple"] = 3.85;
 fruitMap["Pear"] = pearMap;
 ```
 
-For convenience, QByteArray automatically ensures that the "one past the last" byte is always '\0', making it
-easy to pass a QByteArray to a function taking a const char *. QByteArray also supports embedded '\0'
-characters, allowing us to use it to store arbitrary binary data.
+For convenience, `QByteArray`{.cpp} automatically ensures that the "one past
+the last" byte is always `'\0'`, making it easy to pass a `QByteArray`{.cpp} to
+a function taking a `const char *`. `QByteArray`{.cpp} also supports embedded
+`'\0'` characters, allowing us to use it to store arbitrary binary data.
 
-QVariant is used by Qt's meta-object system and is therefore part of the QtCore module. Nonetheless, when
-we link against the QtGui module, QVariant can store GUI-related types such as QColor, QFont, QIcon,
-QImage, and QPixmap:
+`QVariant`{.cpp} is used by Qt's meta-object system and is therefore part of
+the QtCore module. Nonetheless, when we link against the QtGui module,
+`QVariant`{.cpp} can store GUI-related types such as `QColor`{.cpp},
+`QFont`{.cpp}, `QIcon`{.cpp}, `QImage`{.cpp}, and `QPixmap`{.cpp}:
 
 ```cpp
 QIcon icon("open.png");
@@ -5678,10 +6088,9 @@ QVariant variant = icon;
 QIcon icon = variant.value<QIcon>();
 ```
 
-QVariant can also be used to store custom data types, assuming they provide a default constructor and a
-copy constructor. For this to work, we must first register the type using the Q_DECLARE_METATYPE() macro,
-typically in a header file below the class definition:
-Q_DECLARE_METATYPE(BusinessCard)
+`QVariant`{.cpp} can also be used to store custom data types, **assuming they provide a default constructor and a
+copy constructor**. For this to work, we must first register the type using the `Q_DECLARE_METATYPE()`{.cpp} macro,
+typically in a header file below the class definition: `Q_DECLARE_METATYPE(BusinessCard)`{.cpp}
 
 ```cpp
 BusinessCard businessCard;
@@ -5695,19 +6104,21 @@ if (variant.canConvert<BusinessCard>()) {
 // qRegisterMetaTypeStreamOperators<BusinessCard>("BusinessCard");
 ```
 
-This chapter focused on the Qt containers, as well as on QString, QByteArray, and QVariant. In addition to
-these classes, Qt also provides a few other containers. One is QPair<T1, T2>, which simply stores two values
-and is similar to std::pair<T1, T2>. Another is QBitArray, which we will use in the first section of Chapter
-21. Finally, there is QVarLengthArray<T, Prealloc>, a low-level alternative to QVector<T>. Because it
-preallocates memory on the stack and isn't implicitly shared, its overhead is less than that of QVector<T>,
-making it more appropriate for tight loops.
-
+This chapter focused on the Qt containers, as well as on `QString`{.cpp},
+`QByteArray`{.cpp}, and `QVariant`{.cpp}. In addition to these classes, Qt also
+provides a few other containers. One is `QPair<T1, T2>`{.cpp}, which simply
+stores two values and is similar to `std::pair<T1, T2>`{.cpp}. Another is
+`QBitArray`{.cpp}, which we will use in the first section of Chapter 21.
+Finally, there is `QVarLengthArray<T, Prealloc>`{.cpp}, a low-level alternative
+to `QVector<T>`{.cpp}. Because it preallocates memory on the stack and isn't
+implicitly shared, its overhead is less than that of `QVector<T>,`{.cpp} making
+it more appropriate for tight loops.
 
 ### 12. Input/Output
 
-Qt provides
-excellent support for I/O through QIODevice, a powerful abstraction that encapsulates "devices" capable of
-reading and writing blocks of bytes. Qt includes the following QIODevice subclasses:
+Qt provides excellent support for I/O through `QIODevice`{.cpp}, a powerful
+abstraction that encapsulates "devices" capable of reading and writing blocks
+of bytes. Qt includes the following `QIODevice`{.cpp} subclasses:
 
 ClassName | ClassDescription
 --------- | ----------------
@@ -5756,11 +6167,12 @@ in >> n >> image >> map;
 // count header, using readRawBytes() and writeRawBytes()
 ```
 
-The stream has a status() value that can be
-QDataStream::Ok, QDataStream::ReadPastEnd, or QDataStream::ReadCorruptData. Once an error has
-occurred, the >> operator always reads zero or empty values. This means that we can often simply read an
-entire file without worrying about potential errors and check the status() value at the end to see if what we
-read was valid.
+The stream has a `status()`{.cpp} value that can be `QDataStream::Ok`{.cpp},
+`QDataStream::ReadPastEnd`{.cpp}, or `QDataStream::ReadCorruptData`{.cpp}. Once
+an error has occurred, the `>>` operator always reads zero or empty values.
+This means that we can often simply read an entire file without worrying about
+potential errors and check the `status()`{.cpp} value at the end to see if what
+we read was valid.
 
 ```cpp
 // header file
@@ -5789,9 +6201,8 @@ QList<Painting> paintings;
 in >> paintings;
 ```
 
-If the QDataStream is being used purely to read and
-write basic C++ data types, we don't even need to call setVersion().
-
+If the `QDataStream`{.cpp} is being used purely to read and write basic C++
+data types, we don't even need to call `setVersion`{.cpp}().
 
 ```cpp
 The first approach is to embed the QDataStream version number in the file:
@@ -5814,16 +6225,17 @@ if (magic != MagicNumber) {
 in.setVersion(streamVersion);
 ```
 
-In summary, there are three policies for handling QDataStream versions: 
+In summary, there are three policies for handling `QDataStream`{.cpp} versions: 
 
 #. hard-coding the version number,
 #. explicitly writing and reading the version number, and 
 #. using different hard-coded version numbers depending on the application's version. 
 
-Any of these policies can be used to ensure that data written by an old version of
-an application can be read by a new version, even if the new version links against a more recent version of Qt.
-Once we have chosen a policy for handling QDataStream versions, reading and writing binary data using Qt is
-both simple and reliable.
+Any of these policies can be used to ensure that data written by an old version
+of an application can be read by a new version, even if the new version links
+against a more recent version of Qt.  Once we have chosen a policy for handling
+`QDataStream`{.cpp} versions, reading and writing binary data using Qt is both simple
+and reliable.
 
 ```cpp
 bool copyFile(const QString &source, const QString &dest)
@@ -5840,7 +6252,7 @@ return sourceFile.error() == QFile::NoError
 }
 ```
 
-peek(), seek(), ungetChar(),
+`peek()`{.cpp}, `seek()`{.cpp}, `ungetChar()`{.cpp}.
 
 #### Reading and Writing Text
 
@@ -5855,15 +6267,14 @@ QTextStream out(&file);
 out << "Thomas M. Disch: " << 334 << endl;
 ```
 
-QTextStream::readAll()
-stream.setCodec("UTF-8");
+`QTextStream::readAll()`{.cpp}, `stream.setCodec("UTF-8");`{.cpp}
 
-showbase, uppercasedigits, and hex options before it outputs
+`showbase`{.cpp}, `uppercasedigits`{.cpp}, and `hex`{.cpp} options before it outputs
 the integer 12345678, producing the text "0xBC614E":
 
-Options can also be set using member functions:
 
 ```cpp
+// Options can also be set using member functions
 out.setNumberFlags(QTextStream::ShowBase
                     | QTextStream::UppercaseDigits);
 out.setIntegerBase(16);
@@ -5932,7 +6343,6 @@ out << "Qt" << "rocks!";
 ```cpp
 stream << '\n' << flush;
 ```
-
 
 ```cpp
 QTextStream in(&file);
@@ -6049,11 +6459,11 @@ int main(int argc, char *argv[])
 }
 ```
 
-QDir::toNativeSeparators()
+`QDir::toNativeSeparators()`{.cpp}
 
-And the QFileSystemWatcher class can notify
-us when a change occurs to a directory or to a file, by emitting directoryChanged() and fileChanged()
-signals.
+And the `QFileSystemWatcher`{.cpp} class can notify us when a change occurs to
+a directory or to a file, by emitting `directoryChanged()`{.cpp} and
+`fileChanged()`{.cpp} signals.
 
 #### Embedding Resources
 
@@ -6075,9 +6485,10 @@ RESOURCES = myresourcefile.qrc
 
 #### Inter-Process Communication
 
-The QProcess class allows us to run external programs and to interact with them. The class works
-asynchronously, doing its work in the background so that the user interface remains responsive. QProcess
-emits signals to notify us when the external process has data or has finished.
+The `QProcess`{.cpp} class allows us to run external programs and to interact
+with them. The class works asynchronously, doing its work in the background so
+that the user interface remains responsive. `QProcess`{.cpp} emits signals to
+notify us when the external process has data or has finished.
 
 ```cpp
 #include <QDialog>
@@ -6161,18 +6572,23 @@ void ConvertDialog::updateOutputTextEdit()
 }
 ```
 
-QTemporaryFile::open() since it conveniently defaults to opening in read-write mode.
-The QProcess::execute() static function runs an external process and blocks until the process has finished.
+`QTemporaryFile::open()`{.cpp}, since it conveniently defaults to opening in
+read-write mode, there is no need to specify filename and mode.  The
+`QProcess::execute()`{.cpp} static function runs an external process and blocks
+until the process has finished.
 
-In this section, we used QProcess to give us access to preexisting functionality. Using applications that already
-exist can save development time and can insulate us from the details of issues that are of marginal interest to
-our main application's purpose. Another way to access preexisting functionality is to link against a library that
-provides it. But where no suitable library exists, wrapping a console application using QProcess can work well.
-Another use of QProcess is to launch other GUI applications. However, if our aim is communication between
-applications rather than simply running one from another, we might be better off having them communicate
-directly, using Qt's networking classes or the ActiveQt extension on Windows. And if we want to launch the
-user's preferred web browser or email client, we can simply call QDesktopServices::openUrl().
-
+In this section, we used `QProcess`{.cpp} to give us access to preexisting
+functionality. Using applications that already exist can save development time
+and can insulate us from the details of issues that are of marginal interest to
+our main application's purpose. Another way to access preexisting functionality
+is to link against a library that provides it. But where no suitable library
+exists, wrapping a console application using `QProcess`{.cpp} can work well.
+Another use of QProcess is to launch other GUI applications. However, if our
+aim is communication between applications rather than simply running one from
+another, we might be better off having them communicate directly, using Qt's
+networking classes or the ActiveQt extension on Windows. And if we want to
+launch the user's preferred web browser or email client, we can simply call
+`QDesktopServices::openUrl()`{.cpp}.
 
 ### 13. Databases
 
@@ -6209,12 +6625,101 @@ user's preferred web browser or email client, we can simply call QDesktopService
 ### 17. Providing Online Help
 
 #### Tooltips, Status Tips, and "What's This?" Help
+
+A tooltip is a small piece of text that appears when the mouse hovers over a
+widget for a certain period of time. Tooltips are presented with black text on
+a yellow background. Their primary use is to provide textual descriptions of
+toolbar buttons.
+
+We can add tooltips to arbitrary widgets in code using
+`QWidget::setToolTip()`{.cpp}. For example: `findButton->setToolTip(tr("Find next"));`{.cpp}.
+
+If we don't explicitly set a tooltip, `QAction`{.cpp} will automatically use
+the action text.  A status tip is also a short piece of descriptive text,
+usually a little longer than a tooltip. When the mouse hovers over a toolbar
+button or a menu option, a status tip appears in the status bar. Call
+`setStatusTip()`{.cpp} to add a status tip to an action or to a widget:
+`newAction->setStatusTip(tr("Create a new document"));`{.cpp}.
+
+To enter "What's This?" mode, the user can either click the <kbd>?</kbd> button
+in the dialog's title bar (on Windows and KDE) or press <kbd>Shift+F1<kbd>.
+
+```cpp
+dialog->setWhatsThis(tr("<img  src=\":/images/icon.png\">"
+        "&nbsp;The meaning of the Source field depends "
+        "on the Type field:"
+        "<ul>"
+        "<li><b>Books</b> have a Publisher"
+        "<li><b>Articles</b> have a Journal name with "
+        "volume and issue number"
+        "<li><b>Theses</b> have an Institution name "
+        "and a Department name"
+        "</ul>"));
+```
+
 #### Using a Web Browser to Provide Online Help
+
+The application's main window will typically have a `help()`{.cpp} slot that is
+called when the user presses F1 or clicks the <kbd>Help|Help</kbd> menu option.
+
+```cpp
+void MainWindow::help()
+{
+    QUrl url(directoryOf("doc").absoluteFilePath("index.html"));
+    url.setScheme("file");
+    QDesktopServices::openUrl(url); // launch the user's web browser
+}
+
+QDir MainWindow::directoryOf(const QString &subdir)
+{
+    QDir dir(QApplication::applicationDirPath());
+#if defined(Q_OS_WIN)
+    if (dir.dirName().toLower() == "debug"
+        || dir.dirName().toLower() == "release")
+        dir.cdUp();
+#elif defined(Q_OS_MAC)
+    if (dir.dirName() == "MacOS") {
+        dir.cdUp();
+        dir.cdUp();
+        dir.cdUp();
+    }
+#endif
+    dir.cd(subdir);
+    return dir;
+}
+
+void EntryDialog::help()
+{
+    QUrl url(directoryOf("doc").absoluteFilePath("forms.html"));
+    url.setScheme("file");                  // scheme: file://path/to/html
+    url.setFragment("editing");             // #editing
+    QDesktopServices::openUrl(url);
+}
+```
+
 #### Using QTextBrowser as a Simple Help Engine
 
-[DO!!!]
+We set the `Qt::WA_GroupLeader`{.cpp} attribute because we want to pop up
+HelpBrowser windows from modal dialogs in addition to the main window. Modal
+dialogs normally prevent the user from interacting with any other window in the
+application. However, after requesting help, the user must obviously be allowed
+to interact with both the modal dialog and the help browser. Setting the
+`Qt::WA_GroupLeader`{.cpp} attribute makes this interaction possible.
+
+```cpp
+void HelpBrowser::updateWindowTitle()
+{
+    setWindowTitle(tr("Help: %1").arg(textBrowser->documentTitle()));
+}
+```
 
 #### Using Qt Assistant for Powerful Online Help
+
+```cpp
+if (!assistant)
+    assistant = new QAssistantClient("");
+    assistant->showPage(path);
+```
 
 Part III: Advanced Qt
 ---------------------
@@ -6222,14 +6727,294 @@ Part III: Advanced Qt
 ### 18. Internationalization
 
 #### Working with Unicode
+
+`QTextCodec::setCodecForTr(QTextCodec::codecForName("utf8"));`{.cpp}
+
+:   This must be done before the first call to `tr()`{.cpp}. Typically, we
+    would do this in `main()`{.cpp}, immediately after the `QCoreApplication`{.cpp}
+    or `QApplication`{.cpp} object is created.
+
+    Alternatively, they can tell Qt to use a specific codec when converting
+    between `const char *` and QString by calling
+    `QTextCodec::setCodecForCStrings()`{.cpp}, e.g.,
+    `QTextCodec::setCodecForCStrings(QTextCodec::codecForName("utf8"));`{.cpp}.
+
 #### Making Applications Translation-Aware
+
+A `tr()`{.cpp} call has the following general syntax: 
+`Context::tr(sourceText, comment)`{.cpp}
+
+The most general way of translating a string in Qt is to use the
+`QCoreApplication::translate()`{.cpp} function, which accepts up to three
+arguments: the context, the source text, and the optional comment. For example,
+here's another way to translate "Hello Qt!":
+`QCoreApplication::translate("Global Stuff", "Hello Qt!")`{.cpp} This time, we
+put the text in the "Global Stuff" context.
+
+See `statusBar()->showMessage(tr("Host " + hostName + " found"));`{.cpp}. Here,
+the string we pass to `tr()`{.cpp} varies depending on the value of hostName,
+so we can't reasonably expect `tr()`{.cpp} to translate it correctly.  The
+solution is to use `QString::arg()`{.cpp}: `statusBar()->showMessage(tr("Host
+%1 found").arg(hostName));`{.cpp}.
+
+Although it is generally inadvisable to call `tr()`{.cpp} on a variable, it can be made to work. We must use the
+`QT_TR_NOOP()`{.cpp} macro to mark the string literals for translation before we assign them to a variable. This is
+mostly useful for static arrays of strings. For example:
+
+```cpp
+void OrderForm::init()
+{
+static const char * const flowers[] = {
+    QT_TR_NOOP("Medium Stem Pink Roses"),
+    QT_TR_NOOP("One Dozen Boxed Roses"),
+    QT_TR_NOOP("Calypso Orchid"),
+    QT_TR_NOOP("Dried Red Rose Bouquet"),
+    QT_TR_NOOP("Mixed Peonies Bouquet"),
+    0
+};
+
+for (int i = 0; flowers[i]; ++i)
+    comboBox->addItem(tr(flowers[i]));
+}
+```
+
+Here is also a `QT_TRANSLATE_NOOP()`{.cpp} macro that works like
+`QT_TR_NOOP()`{.cpp} but also takes a context. This macro is useful when
+initializing variables outside of a class:
+
+```cpp
+static const char * const flowers[] = {
+    QT_TRANSLATE_NOOP("OrderForm", "Medium Stem Pink Roses"),
+    QT_TRANSLATE_NOOP("OrderForm", "One Dozen Boxed Roses"),
+    QT_TRANSLATE_NOOP("OrderForm", "Calypso Orchid"),
+    QT_TRANSLATE_NOOP("OrderForm", "Dried Red Rose Bouquet"),
+    QT_TRANSLATE_NOOP("OrderForm", "Mixed Peonies Bouquet"),
+    0
+};
+```
+
+Telling Qt to forbid implicit conversions from `const char *` to QString, we do
+this by defining the `QT_NO_CAST_FROM_ASCII`{.cpp} preprocessor symbol before
+including any Qt header. The easiest way to ensure that this symbol is set is
+to add the following line to the application's `.pro` file:
+
+```
+DEFINES += QT_NO_CAST_FROM_ASCII
+```
+
 #### Dynamic Language Switching
+
+```cpp
+int main(int argc, char *argv[])
+{
+    QApplication app(argc, argv);
+    ...
+    QTranslator appTranslator;
+    appTranslator.load("myapp_" + QLocale::system().name(), qmPath);
+    app.installTranslator(&appTranslator);
+    ...
+    return app.exec();
+}
+```
+
+`QString::localeAwareCompare()`{.cpp} compares two strings in a
+locale-dependent manner. It is useful for sorting user-visible items. The
+`toString()`{.cpp} function provided by `QDate`{.cpp}, `QTime`{.cpp}, and
+`QDateTime`{.cpp} returns a string in a local format when called with
+`Qt::LocalDate`{.cpp} as its argument.  By default, the `QDateEdit`{.cpp} and
+`QDateTimeEdit`{.cpp} widgets present dates in the local format.
+
+```cpp
+qApp->installTranslator(&appTranslator);
+qApp->installTranslator(&qtTranslator);
+```
+
+```cpp
+void MainWindow::createLanguageMenu()
+{
+    languageMenu = new QMenu(this);
+    languageActionGroup = new QActionGroup(this);
+    connect(languageActionGroup, SIGNAL(triggered(QAction *)),
+    this, SLOT(switchLanguage(QAction *)));
+    QDir qmDir = directoryOf("translations");
+    QStringList fileNames =
+    qmDir.entryList(QStringList("callcenter_*.qm"));
+    for (int i = 0; i < fileNames.size(); ++i) {
+        QString locale = fileNames[i];
+        locale.remove(0, locale.indexOf('_') + 1);
+        locale.chop(3);
+        QTranslator translator;
+        translator.load(fileNames[i], qmDir.absolutePath());
+        QString language = translator.translate("MainWindow", "English");
+        QAction *action = new QAction(tr("&%1 %2")
+                .arg(i + 1).arg(language), this);
+        action->setCheckable(true);
+        action->setData(locale);
+        languageMenu->addAction(action);
+        languageActionGroup->addAction(action);
+        if (language == "English")
+            action->setChecked(true);
+    }
+}
+
+void MainWindow::switchLanguage(QAction *action)
+{
+    QString locale = action->data().toString();
+    QString qmPath = directoryOf("translations").absolutePath();
+    appTranslator.load("callcenter_" + locale, qmPath);
+    qtTranslator.load("qt_" + locale, qmPath);
+    retranslateUi();
+}
+
+void JournalView::changeEvent(QEvent *event)
+{
+    if (event->type() == QEvent::LanguageChange)
+        retranslateUi();
+    QTableWidget::changeEvent(event);
+}
+```
+
 #### Translating Applications
+
+Translating a Qt application that contains `tr()`{.cpp} calls is a three-step process:
+
+1. Run `lupdate`{.bash} to extract all the user-visible strings from the application's source code. (developers)
+2. Translate the application using Qt Linguist. (translators)
+3. Run `lrelease`{.bash} to generate binary `.qm` files that the application can load using QTranslator. (developers)
+
+```
+TRANSLATIONS = spreadsheet_zh.ts
+```
+
+```bash
+$ lupdate -verbose spreadsheet.pro
+// outcame ts files
+
+$ lrelease -verbose spreadsheet.pro
+// outcame qm files
+```
 
 ### 19. Look and Feel Customization
 
 #### Using Qt Style Sheets
+
+#. cmd: `qtprogram.exe -stylesheet file.qss`{.bash}
+#. Qt Designer's style sheet editor
+#. embedding a QTextEdit inside our application during development
+
+```cpp
+qApp->setStyleSheet("QLineEdit { background-color: yellow; }");
+```
+
+```css
+QCheckBox, QComboBox, QLineEdit, QListView, QRadioButton, QSpinBox {
+    color: #050505;
+    background-color: yellow;
+}
+```
+
+`QColor::setNamedColor()`{.cpp}
+
+Instead of a uniform color, we can also specify a palette entry or a gradient:
+
+```cpp
+QLineEdit {
+    color: palette(Base);
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 white, stop: 0.4 gray, stop: 1 green);
+    background-image: url(:/images/yellow-bg.png);
+    background-position: top right;
+    background-repeat: repeat-y;
+}
+
+QPushButton[text="OK"] {
+    color: green;
+}
+QPushButton[text="Cancel"] {
+    color: red;
+}
+
+QFrame#frame > QPushButton[x="0"][y="0"]#okButton {
+    ...
+}
+```
+
+#. `qlineargradient()`,
+#. `qradialgradient()`, and 
+#. `qconicalgradient()`
+
+```css
+*[mandatoryField="true"] {
+    background-color: yellow;
+}
+```
+
+```cpp
+nameLineEdit->setProperty("mandatoryField", true);
+genderComboBox->setProperty("mandatoryField", true);
+ageSpinBox->setProperty("mandatoryField", true);
+```
+
+```css
+QCheckBox::indicator, QRadioButton::indicator {
+    width: 20px;
+    height: 20px;
+}
+
+QCheckBox, QRadioButton {
+    spacing: 8px;
+}
+
+QCheckBox:checked:hover {
+    color: white;
+}
+```
+
+A `border.png` border image with cuts at 4, 8, 12, and 16 pixels from the top,
+right, bottom, and left edges would be specified as `border-image: url(border.png) 4 8 12 16;`{.css}.
+
+To make some room for the push button's text, we specify a vertical padding of
+`-16` pixels.
+
+```css
+QComboBox:editable,
+QLineEdit,
+QListView {
+    color: rgb(127, 0, 63);
+    background-color: rgb(255, 255, 241);
+    selection-color: white; 
+    selection-background-color: rgb(191, 31, 127);
+    border: 2px groove gray;
+    border-radius: 10px;
+    padding: 2px 4px;
+}
+```
+
 #### Subclassing QStyle
+
+The `QStyle`{.cpp} API consists of functions for drawing graphical elements
+`(drawPrimitive()`{.cpp}, `drawControl()`{.cpp}, `drawComplexControl()`{.cpp},
+etc.) and for querying the style `(pixelMetrics()`{.cpp}, `styleHint()`{.cpp},
+`hitTest()`{.cpp}, etc.).  The `QStyle`{.cpp} member functions typically take a
+`QStyleOption`{.cpp} object that holds both general information about the
+widget to be drawn (such as its palette) and widget-specific information (e.g.,
+the text of a button). The functions also take an optional pointer to a
+`QWidget`{.cpp}, to cater to situations when the `QStyleOption`{.cpp} doesn't
+provide all the necessary information.
+
+The `QStyleOption::initFrom()`{.cpp} function initializes the fundamental
+member variables that represent a widget, such as rect, state (enabled,
+focused, etc.), and palette. Member variables specific to
+`QStyleOptionButton`{.cpp} must be initialized manually. In the
+`MyPushButton`{.cpp} example, we initialize features and text and let icon and
+iconSize take their default values.
+
+The `QWidget::style()`{.cpp} function returns the appropriate style for drawing
+the widget. The style is normally set for the entire application using
+`QApplication::setStyle()`{.cpp}, but it is also possible to override it for
+individual widgets using `QWidget::setStyle()`{.cpp}.
+
+The `drawControl()`{.cpp} function is reimplemented by the various
+`QStyle`{.cpp} subclasses to draw `QPushButton`{.cpp} and other simple widgets.
 
 ### 20. 3D Graphics
 
@@ -6276,8 +7061,6 @@ Part IV: Appendixes
 
 ### Appendix B
 
-[DO!!!]
-
 #### Building Qt Applications
 #### Using qmake
 #### Using Third-Party Build Tools
@@ -6301,8 +7084,11 @@ Part IV: Appendixes
 Refs
 
 #. [QAbstractItemModel Class | Qt 4.8](http://doc.qt.io/qt-4.8/qabstractitemmodel.html)
+#. [QApplication Class | Qt 4.8](http://doc.qt.io/qt-4.8/qapplication.html)
 #. [QBoxLayout Class | Qt 4.8](http://doc.qt.io/qt-4.8/qboxlayout.html#addStretch)
+#. [QFileInfo Class | Qt 4.8](http://doc.qt.io/qt-4.8/qfileinfo.html)
 #. [QHeaderView Class | Qt 4.8](http://doc.qt.io/qt-4.8/qheaderview.html)
+#. [QKeySequence Class | Qt 4.8](http://doc.qt.io/qt-4.8/qkeysequence.html)
 #. [QObject Class | Qt 4.8](http://doc.qt.io/qt-4.8/qobject.html)
 #. [QPainter Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpainter.html)
 #. [QPainterPath Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpainterpath.html#addRoundedRect)
@@ -6310,12 +7096,17 @@ Refs
 #. [QPixmap Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpixmap.html)
 #. [QPolygonF Class | Qt 4.8](http://doc.qt.io/qt-4.8/qpolygonf.html)
 #. [QRectF Class | Qt 4.8](http://doc.qt.io/qt-4.8/qrectf.html#adjust)
+#. [QSettings Class | Qt 4.8](http://doc.qt.io/qt-4.8/qsettings.html)
+#. [QSplitter Class | Qt 4.8](http://doc.qt.io/qt-4.8/qsplitter.html)
 #. [QStringList Class | Qt 4.8](http://doc.qt.io/qt-4.8/qstringlist.html)
+#. [QTextCodec Class | Qt 4.8](http://doc.qt.io/qt-4.8/qtextcodec.html)
+#. [QTextStream Class | Qt 4.8](http://doc.qt.io/qt-4.8/qtextstream.html#QTextStream)
 #. [QTreeWidget Class | Qt 4.8](http://doc.qt.io/qt-4.8/qtreewidget.html)
 #. [QVariant Class | Qt 4.8](http://doc.qt.io/qt-4.8/qvariant.html)
 #. [Qt Namespace | Qt 4.8](http://doc.qt.io/qt-4.8/qt.html#mightBeRichText)
 #. [Qt Namespace | Qt 4.8](http://doc.qt.io/qt-4.8/qt.html)
-#. [QTextStream Class | Qt 4.8](http://doc.qt.io/qt-4.8/qtextstream.html#QTextStream)
+#. [Qt Style Sheets | Qt 4.8](http://doc.qt.io/qt-4.8/stylesheet.html)
+#. [The Style Sheet Syntax | Qt 4.8](http://doc.qt.io/qt-4.8/stylesheet-syntax.html)
 
 [set-layout-png]: http://gnat.qiniudn.com/qt/setlayout.png
 [shape-chaning-dlg]: http://gnat.qiniudn.com/qt/dlg.png
@@ -6351,7 +7142,7 @@ Refs
 [oventimer]: http://gnat.qiniudn.com/qt/oventimer.png
 [composite]: http://gnat.qiniudn.com/qt/composite.png
 [multiview]: http://gnat.qiniudn.com/qt/multiview.png
-[graphicsitem]: http://gnat.qiniudn.com/qt/graphicsitem.png
+kgraphicsitem]: http://gnat.qiniudn.com/qt/graphicsitem.png
 [multiple-views]: http://gnat.qiniudn.com/qt/multiple-views.png
 [symbol-picker]: http://gnat.qiniudn.com/qt/symbol-picker.png
 [coord-setter]: http://gnat.qiniudn.com/qt/coord-setter.png

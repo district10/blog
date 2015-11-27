@@ -309,6 +309,10 @@ git push
     #. Push to the branch: `git push origin my-new-feature`{.bash}
     #. Submit a pull request and enjoy! :D
 
+一个更加详细的流程：
+
+:   [webogram/CONTRIBUTING.md at master · zhukov/webogram](https://github.com/zhukov/webogram/blob/master/CONTRIBUTING.md)
+
 ---
 
 Refs
