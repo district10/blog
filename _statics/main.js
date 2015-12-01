@@ -14,7 +14,7 @@ function zhanzhang() {
     document.write(unescape("%3Cspan id='cnzz_stat_icon_1256728037'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1256728037%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
 }
 
-mdPath = 'https://github.com/district10/blog/blob/master';
+mdPath = 'https://github.com/district10/blog/commits/master';
 rawPath = 'https://raw.githubusercontent.com/district10/blog/master';
 basePath = 'https://github.com/district10/blog';
 pathStringList = document.location.toString().split('/');
