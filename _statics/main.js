@@ -23,8 +23,8 @@ function dvorak4tzx( pathParts ) {
     if ( pathParts[0].split(':')[0] === 'file' ) {
         console.log( 'local. no need for duoshuo & zhanzhang.' );
     } else {
-        zhanzhang();
-        duoshuo();
+        // zhanzhang();
+        // duoshuo();
     }
 
     filename = pathParts[ pathParts.length - 1 ];
@@ -57,10 +57,6 @@ function dvorak4tzx( pathParts ) {
 
 dvorak4tzx( pathStringList );
 
-
-// other stuff
-// document.getElementsByClassName('ts');
-
 function prettyUnixTime( ts ) {
     var date = new Date(ts * 1000);
     var hours = date.getHours();
@@ -70,7 +66,6 @@ function prettyUnixTime( ts ) {
     var lts = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2); // 03:23, Jan 03, Sat
     return { ts: ts, sts: formattedTime, lts: lts };
 }
-
 
 function appendSharpToHdrs( hdrs ) {
     for ( var i = 0; i < hdrs.length; ++i ) {
@@ -94,6 +89,3 @@ function appendSharp() {
 }
 
 appendSharp();
-
-
-

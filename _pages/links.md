@@ -201,3 +201,6 @@ MISC
 #. [Welcome to the USGS - U.S. Geological Survey](http://www.usgs.gov/)
 #. [IEEE Xplore Digital Library](http://ieeexplore.ieee.org/Xplore/home.jsp?reload=true)
 #. [Useful Links](http://sse.tongji.edu.cn/linzhang/UsefulLinks/links.htm)
+#. [Easyicon - Search 500,000+ (PNG,ICO,ICNS) free icons, desktop icons, icons Download.](http://www.easyicon.net/)
+#. [Alll Cheat Sheets in One Page](http://www.cheat-sheets.org/)
+#. [博客文章索引 - ☆Ronny丶 - 博客园](http://www.cnblogs.com/ronny/p/index.html)

@@ -54,6 +54,137 @@ Low Poly 与 Delaunay Triangulation 的不同在于，它不要求避免极瘦�
 从视觉上，Low Poly 的处理“有粗有精”、层次分明，极具美感，而 Delaunay Triangulation 则
 “浑然一体”，没有侧重，或许在地形保持上更胜一筹，但用于设计领域则美感不足。
 
+算法分析
+--------
+
+参考： [Artistic Low Poly rendering for images (Meng Gai, Guoping Wang) - Springer]
+
+<!--
+<The Visual Computer>
+which may produce high PSNR
+-->
+
+### 策略
+
+#. The artists usually use relative regular triangles rather than extremely degenerated ones.
+#. The arrangement of the mesh vertices implies the structure of the objects.
+#. Non-uniform subdivision. The background is often abstracted into larger triangles than the front salient object.
+#. Color disturbance. The artists choose various colors in the flat area to make the image stereoscopic.
+
+### 效果
+
+#. automatic （可以手动修改，但自动的效果已经很好）
+#. By constraining the edge features and the technique of color picking, our result image has a clear visual effect without zigzag artifacts.
+#. We propose a feature flow field to guide the iteration of the Voronoi diagram. The arrangement of vertices after optimization well reflects the structure of the object.
+#. A non-uniform sampling strategy based on salient region detection to make the front object and the background have different refinement density.
+#. Our method is very fast. It only costs several seconds even on images of million pixels.
+
+### 相关工作
+
+#. **NPR (Non-photorealistic rendering)**, but not low-poly rendering
+#. not directly. but relative
+    i. **Image compression**
+    #. **Image vectorization**
+    #. **Image tessellation**
+        * Some Voronoi-based methods also give results like the Low Poly style, but
+          they have subtle difference. Besides using polygons as primary elements
+          rather than triangles, the polygons in the Voronoi tessellation do not
+          adapt to the shapes and details as well as the Low Poly style, so that the
+          objects in their result images are relatively more confusing.
+        * do not use PSNR value to evaluate the result.
+
+### 算法流程
+
+![](http://gnat.qiniudn.com/pics/low-poly.png)
+
+#. Constrained edge feature 
+    i. `Edge Ddrawing method` + `Canny edge detector` &rarr; produce high-quality edge segments (clean, well-localized and one-pixel wide)
+    #. a `polygon approximation algorithm` (classical Douglas-Peucker algorithm) &rarr; simplify the edges and leave the key points only 
+    #. If an edge is longer than a minimum length, we slice it into two segments from its midpoint. We choose the minimum length same as the sampling interval $L_i$:
+
+    $L_i = \eta (L_w+L_h)$
+
+    where
+
+      ~ $L_w$: image width,
+      ~ $L_h$ image height
+      ~ $\eta$: controls the sampling density, 0.2 in our case
+
+    ![(a) Original image, (b) the edge feature, (c) the simplified polygons and the constrained points][micky]
+
+    <!--      
+    These simple but critical strategies guarantee the final
+    image with clear feature edges and good visual effects.
+    -->
+
+#. Sampling based on saliency
+
+    use different sample densities between the saliency region and the background:
+    
+    $$
+    \begin{cases}
+    N_s &=& \lambda (N - N_c ) \\
+    N_b &=& (1 - \lambda )(N - N_c )
+    \end{cases}$$
+
+    where
+
+      ~ $N$: total number of sampling, $N = \lfloor{\frac{L_w}{L_i}}\rfloor \times \lfloor\frac{L_h}{L_i}\rfloor$
+      ~ $N_c$: constrained point numbers in the previous step
+      ~ $\lambda$: we choose 0.7 as an empirical value
+
+    ![bs-a] ![bs-b]
+
+    ![bs-c] ![bs-d]
+
+    (a) Input image. 
+    (b) Saliency map. 
+    (c) Result with $\lambda$ = 0.2. 
+    (d) Result with $\lambda$ = 0.8.
+
+#. Feature flow field
+
+    i. Vertices placement of the mesh follow the local shape structure of the object &rarr; a feature flow field to guide the optimization of the vertices positions.
+    #. steps
+
+        * compute a distance map $\operatorname{D}(x)$
+
+        ![The distance map and the feature flow map. (a) Input image, (b) the distance map, (c) the feature flow map][distance-map]
+
+        * use the Jump Flooding method to solve this distance transform problem
+        *. &neq; image-stippling problem, for density. instead CVT (centroidal Voronoi tessellation)
+
+        $$F(x) = \begin{cases}
+        \frac{255}{m} \operatorname{D}(x) \operatorname{mod}(m), \text{if} \frac{\operatorname{D}(x)}{m} \operatorname{mod}(2) = 0 \\
+        \frac{255}{m}(1 - \operatorname{D}(x) \operatorname{mod}(m)), \text{else}
+        \end{cases}$$
+
+        where 
+          ~ $m$: controls the width of the lanes interval in the feature flow map. $m = \frac{L_i}{2}$ in our experiments
+
+#. Vertex optimization
+
+    i. CVT approximates a Poisson-disk point distribution that the seeds can cover the space fairly
+
+    #. The centroid c of a Voronoi cell is computed as follows:
+
+        $$c = \frac{\sum_i w_i x_i}{\sum_i w_i}$$
+
+        where
+          ~ $x_i$: denotes the pixels in the cell 
+          ~ $w_i$ the associated weight
+
+       ![](http://gnat.qiniudn.com/lowpoly/center.png)
+
+#. Constrained triangulation
+#. Color post-processing
+
+    ![][color-picking]
+
+### 效果展示
+
+![][low-poly]
+
 案例分析
 --------
 
@@ -79,6 +210,7 @@ TRIGRAFF[^trigraff] 的 Delaunay 程度不够，张的 Delaunay 程度过了，
 张是还利用 Three.js 做了一个在线的视频 Low Poly 处理程序，
 效果也不错，地址：<http://zhangwenli.com/Polyvia/video.html>。
 
+<!--
 ![在线实时视频 Low Poly 处理 （画面太单一，所以我给阿萨姆奶茶打个广告……）][video]
 
 更多示例：
@@ -86,6 +218,7 @@ TRIGRAFF[^trigraff] 的 Delaunay 程度不够，张的 Delaunay 程度过了，
 ![汉堡 - Polyvia](http://gnat.qiniudn.com/homework/zhihu-shit-3.png)
 
 ![煎蛋 - Polyvia](http://gnat.qiniudn.com/homework/zhihu-shit-4.png)
+-->
 
 [qq-login]: http://gnat.qiniudn.com/homework/qq-lowpoly.png
 [compare]: http://gnat.qiniudn.com/homework/compare.png
@@ -93,6 +226,14 @@ TRIGRAFF[^trigraff] 的 Delaunay 程度不够，张的 Delaunay 程度过了，
 [video]: http://gnat.qiniudn.com/homework/video.png
 [Boris Delaunay]: https://en.wikipedia.org/wiki/Boris_Delaunay
 [Artistic Low Poly rendering for images (Meng Gai, Guoping Wang) - Springer]: http://link.springer.com/article/10.1007/s00371-015-1082-2
+[bs-a]: http://gnat.qiniudn.com/lowpoly/bs-a.png
+[bs-b]: http://gnat.qiniudn.com/lowpoly/bs-b.png
+[bs-c]: http://gnat.qiniudn.com/lowpoly/bs-c.png
+[bs-d]: http://gnat.qiniudn.com/lowpoly/bs-d.png
+[color-picking]: http://gnat.qiniudn.com/lowpoly/color-picking.png
+[distance-map]: http://gnat.qiniudn.com/lowpoly/distance-map.png
+[low-poly]: http://gnat.qiniudn.com/lowpoly/low-poly.png
+[micky]: http://gnat.qiniudn.com/lowpoly/micky.png
 
 ---
 
@@ -103,58 +244,3 @@ Refs
 #. [“低面建模”设计美学-20140726早读课 | 互联网早读课](http://zaodula.com/archives/8578.html)
 #. [如何使用 JavaScript 生成 lowpoly 风格图像？ - 知乎](http://www.zhihu.com/question/29856775)
 #. [Dribbble - Phil Klay by Breno Bitencourt](https://dribbble.com/shots/2246022-Phil-Klay)
-
-
-![][micky]
-
-Fig. 4 a Original image, b the edge feature, c the simplified polygons
-and the constrained points
-
-
-[micky]: micky.png
-
-
-
-### Constrained edge feature
-
- original Douglas–Peucker algorithm will
-oversimplifythestraightedgestofewendpoints.Sowemod-
-ified it and add the edge length constrain: if an edge is longer
-than a minimum length, we slice it into two segments from
-its midpoint. We choose the minimum length same as the
-sampling interval $L_i$:
-
-$L_i = \eta (L_w+L_h)$
-
-where L w and L h are the image width and height, respec-
-tively. η controls the sampling density. In our experiments,
-wesetη = 0.02.Thepointsintheresultpolygonsaremarked
-as constrained points (see Fig. 4c), while the polygonal seg-
-ments between them are constrained edges. Their positions
-willnotbemovedduringthelatteroptimizationsteps.More-
-over, the four corner points are set to constrained points as
-well.
-
-These simple but critical strategies guarantee the final
-image with clear feature edges and good visual effects.
-
-### Sampling based on saliency
-
-The number of the sample points follows:
-
-$$ N_s = \lambda (N - N_c )$$
-$$ N_b = (1 - \lambda )(N - N_c ) $$
-
-where N isthetotalnumberofsampling. $N_c$ denotes the 
-constrained point numbers in the previous step. $N_s$ is the number
-of sample points in the salientregion,while N b isintheback-
-ground region. λ controls the different density. When λ = 1,
-there will not be sampling points in the background. When
-λ = 0.5, the effect equals no saliency detection. In our prac-
-tice, we choose λ = 0.7 as an empirical value to get desired
-result. The total sampling number N can be given by the user
-input. We also provide a default value computed by this:
-
-$$N = \lfloor{\frac{L_w}{L_i}}\rfloor \times \lfloor\frac{L_h}{L_i}\rfloor$$
-
-

@@ -7,6 +7,7 @@ IDXPG = $(PODIR)/index.html
 IDXMD = _index_header.md _index_footer.md
 
 CURFILES = \
+post-0072-cvann-mlp.md \
 post-0068-cxx-gui-programming-with-qt4.md \
 post-0048-low-poly-in-practice.md \
 post-0069-gis-spatial-analysis-application-modeling.md \
@@ -16,6 +17,8 @@ post-0057-code-on-windows.md \
 
 # :r!ls post* | tail -n 5 | sort -nr
 
+POST_0072 = $(PODIR)/post-0072-cvann-mlp.html
+POST_0071 = $(PODIR)/post-0071-selected-qt-code.html
 POST_0070 = $(PODIR)/post-0070-some-vim-rules.html
 POST_0069 = $(PODIR)/post-0069-gis-spatial-analysis-application-modeling.html
 POST_0068 = $(PODIR)/post-0068-cxx-gui-programming-with-qt4.html
@@ -94,6 +97,7 @@ POST_0002 = $(PODIR)/post-0002-how-to-make-this-blog.html
 POST_0001 = $(PODIR)/post-0001-pandoc-readme.html
 
 POSTS = \
+$(POST_0080) $(POST_0079) $(POST_0078) $(POST_0077) $(POST_0076) $(POST_0075) $(POST_0074) $(POST_0073) $(POST_0072) $(POST_0071) \
 $(POST_0070) $(POST_0069) $(POST_0068) $(POST_0067) $(POST_0066) $(POST_0065) $(POST_0064) $(POST_0063) $(POST_0062) $(POST_0061) \
 $(POST_0060) $(POST_0059) $(POST_0058) $(POST_0057) $(POST_0056) $(POST_0055) $(POST_0054) $(POST_0053) $(POST_0052) $(POST_0051) \
 $(POST_0050) $(POST_0049) $(POST_0048) $(POST_0047) $(POST_0046) $(POST_0045) $(POST_0044) $(POST_0043) $(POST_0042) $(POST_0041) \
@@ -101,7 +105,6 @@ $(POST_0040) $(POST_0039) $(POST_0038) $(POST_0037) $(POST_0036) $(POST_0035) $(
 $(POST_0030) $(POST_0029) $(POST_0028) $(POST_0027) $(POST_0026) $(POST_0025) $(POST_0024) $(POST_0023) $(POST_0022) $(POST_0021) \
 $(POST_0020) $(POST_0019) $(POST_0018) $(POST_0017) $(POST_0016) $(POST_0015) $(POST_0014) $(POST_0013) $(POST_0012) $(POST_0011) \
 $(POST_0010) $(POST_0009) $(POST_0008) $(POST_0007) $(POST_0006) $(POST_0005) $(POST_0004) $(POST_0003) $(POST_0002) $(POST_0001)
-
 
 # all: $(POSTS) $(IDXPG)
 all: $(POSTS)
