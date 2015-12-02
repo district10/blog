@@ -535,15 +535,17 @@ Refs
 
 #. [Artificial neural network - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Artificial_neural_network)
 #. [Backpropagation - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Backpropagation)
+#. [Backpropagation](http://galaxy.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html) &hearts;
+#. [Class: OpenCV::CvANNMLPTrainParams — Documentation by YARD 0.8.7.4](http://ropencv.aduda.eu/doc/OpenCV/CvANNMLPTrainParams.html)
+#. [Learning and neural networks - Wikiversity](https://en.wikiversity.org/wiki/Learning_and_Neural_Networks)
 #. [Multilayer perceptron - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Multilayer_perceptron)
+#. [Neural Networks — OpenCV 2.4.12.0 documentation](http://docs.opencv.org/2.4/modules/ml/doc/neural_networks.html)
+#. [OpenCV进阶之路：神经网络识别车牌字符 - ☆Ronny丶 - 博客园](http://www.cnblogs.com/ronny/p/opencv_road_more_01.html)
 #. [Sigmoid function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Sigmoid_function)
 #. [【模式识别】OpenCV中使用神经网络 CvANN_MLP - 小魏的修行路 - 博客频道 - CSDN.NET](http://blog.csdn.net/xiaowei_cqu/article/details/9027617)
 #. [【模式识别】反向传播神经网络 BPNN - 小魏的修行路 - 博客频道 - CSDN.NET](http://blog.csdn.net/xiaowei_cqu/article/details/9023247)
-#. [Neural Networks — OpenCV 2.4.12.0 documentation](http://docs.opencv.org/2.4/modules/ml/doc/neural_networks.html)
-#. [Class: OpenCV::CvANNMLPTrainParams — Documentation by YARD 0.8.7.4](http://ropencv.aduda.eu/doc/OpenCV/CvANNMLPTrainParams.html)
-#. [Backpropagation](http://galaxy.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html) &hearts;
-#. [Learning and neural networks - Wikiversity](https://en.wikiversity.org/wiki/Learning_and_Neural_Networks)
-#. [OpenCV进阶之路：神经网络识别车牌字符 - ☆Ronny丶 - 博客园](http://www.cnblogs.com/ronny/p/opencv_road_more_01.html)
+#. [感知器与梯度下降 - ☆Ronny丶 - 博客园](http://www.cnblogs.com/ronny/p/ann_01.html)
+#. [神经网络：多层网络与C++实现 - ☆Ronny丶 - 博客园](http://www.cnblogs.com/ronny/p/ann_02.html)
 
 Read more
 

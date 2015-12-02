@@ -7172,6 +7172,22 @@ Part IV: Appendixes
 
 ---
 
+Extra Useful Notes
+------------------
+
+```cpp
+// flow
+Flow flow () const
+void setFlow ( Flow flow )
+// QListView::LeftToRight, QListView::TopToBottom
+
+// wrapping
+bool isWrapping () const
+void setWrapping ( bool enable )
+```
+
+
+
 Refs
 
 #. [QAbstractItemModel Class | Qt 4.8](http://doc.qt.io/qt-4.8/qabstractitemmodel.html)
