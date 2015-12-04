@@ -1,6 +1,6 @@
 GEN   = ../_gen.sh
 BIB   = ../_bib.sh
-IDX   = _index.sh
+IDX   = ./_index.sh
 PIDIR = .
 PODIR = ../publish
 IDXPG = $(PODIR)/index.html
