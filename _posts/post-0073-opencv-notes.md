@@ -230,3 +230,20 @@ epipole,
 
 benzhengjuzhen,
 jichujuzhen
+
+no free lunch theorem,
+
+train set size,
+
+
+cross-validation,
+bootstrapping,
+ROC
+
+mahalanobis distance,
+
+adaboost,
+
+MLP,
+
+
