@@ -529,6 +529,93 @@ int main()
 }
 ```
 
+3. 获取样本
+-----------
+
+从武汉市街头拍到的各种路牌照片中提取正负样本，用的是我们组写的 Sign Cutter 程序，
+这个程序用到了 OpenCV 和 Qt4 库，界面如下
+
+![Sign Cutter][signcutterui]
+
+利用它可以很快速地导入源影像，并进行切片处理。【保存切片】操作会把框选区域
+保存成一个切片图，作为我们人工选取的正样本。同时，正样本需要转化到 24 &times; 24 的 RGB 图像，
+为保证图片不失真，还要将之存储为 BMP 格式。
+
+![正样本为人工选取的路牌][cutbmp]
+
+因为正样本的数量有限，需要通过平移、旋转、镜像（镜像后再平移旋转）等方式从一张正样本产生多张类似正样本。
+在 SignCutter 中通过点击【生成正样本】实现。
+
+![posnegclick]
+
+负样本则是从图中非正样本区域，随机选取中心点和旋转角度，选取而来。
+正负样本选取比例我们设置为 1:7。通过点击【生成负样本】来快速地生成一系列负样本。
+结果就是，一张源图片，一个人工框选区域，生成了 87 张正样本，602 张负样本。
+最终我们生成了 8 组共 25,230 张正样本，69,894 张负样本，用于训练和检测。[^scdownload]
+
+[^scdownload]: 下载 8 组正负样本：
+
+    * [1.7z](http://gnat.qiniudn.com/sczip/1.7z) 8.9M
+    * [2.7z](http://gnat.qiniudn.com/sczip/2.7z)  10M
+    * [3.7z](http://gnat.qiniudn.com/sczip/3.7z)  13M
+    * [4.7z](http://gnat.qiniudn.com/sczip/4.7z)  24M
+    * [5.7z](http://gnat.qiniudn.com/sczip/5.7z)  13M
+    * [6.7z](http://gnat.qiniudn.com/sczip/6.7z)  10M
+    * [7.7z](http://gnat.qiniudn.com/sczip/7.7z) 8.5M
+    * [8.7z](http://gnat.qiniudn.com/sczip/8.7z) 3.1M
+
+![正样本 87 张 & 负样本 602 张][posneg]
+
+为了保证得到的正样本足够好，我们不是在切片上进行这些操作，而是在源影像上，这就避免了
+旋转平移后图片中存在空白。这通过一个 SignLogger 模块实现，它记录了
+切片的源图片、归一化了的中心点、归一化了的宽度和高度。
+
+![通过点击【查看切片记录】查看切片信息][cuttedoutinfo]
+
+![这就是刚才那张路牌切片的 log 信息][posinfo]
+
+整个正样本和负样本如图，红框内为切片区域，绿色矩形为正样本框（较密集），蓝色为负样本框（分散在源影像中非正样本区域）。
+
+![signcutdemo]
+
+从文件名也能看出每个切片的信息，这里是正负样本文件名的
+Sample^[完整版可以在 <http://gnat.qiniudn.com/sc/info-all.txt> 下载。]
+
+```tree
+原图片 team7 (148).jpg 产生的正负样本
+
+.
+├── pos                            （正样本 87 张）
+│   ├── 0041-team7 (148)-___.bmp                 原切片
+│   ├── 0041-team7 (148)-___-r030.bmp            原切片旋转 30 度
+│   ├──..............................
+│   ├── 0041-team7 (148)-___-r330.bmp
+│   ├── 0041-team7 (148)-L-R.bmp                 左右镜像
+│   ├── 0041-team7 (148)-L-R-r030.bmp            左右镜像后，旋转 30 度
+│   ├── 0041-team7 (148)-L-R-r060.bmp
+│   ├── 0041-team7 (148)-L-R-r090.bmp
+│   ├── .............................
+│   ├── 0041-team7 (148)-L-R-r330.bmp
+│   ├── 0041-team7 (148)-shift-sx000-sy003.bmp   平移左右 0%，上下 3%
+│   ├── .............................
+│   ├── 0041-team7 (148)-shift-sx-10-sy-10.bmp
+│   ├── 0041-team7 (148)-U-D.bmp                 上下镜像
+│   ├── .............................
+│   └── 0041-team7 (148)-U-D-r330.bmp
+├── neg                            （负样本 602 张）
+│   ├── 0041-team7 (148)-rand-cx0057-cy1450-r305.bmp 随机中心点、旋转角度
+│   ├── ............................................
+│   └── 0041-team7 (148)-rand-cx2393-cy2979-r299.bmp
+└── team7 (148)-demo.jpg           （展示了正负样本切片位置）
+
+2 directories, 696 files
+```
+
+4. 试验结果分析
+---------------
+
+NN 算法参数设置的实验。
+
 ---
 
 Refs
@@ -551,3 +638,11 @@ Read more
 
 #. [Back-propagation Neural Net - CodeProject](http://www.codeproject.com/Articles/13582/Back-propagation-Neural-Net)
 #. [Test Run - Neural Network Back-Propagation for Programmers](https://msdn.microsoft.com/en-us/magazine/jj658979.aspx)
+
+[cutbmp]: http://gnat.qiniudn.com/signcutter/cut.jpg
+[posneg]: http://gnat.qiniudn.com/signcutter/pos_neg.jpg
+[posinfo]: http://gnat.qiniudn.com/signcutter/pos_info.jpg
+[signcutdemo]: http://gnat.qiniudn.com/signcutter/sign_cut_demo.jpg
+[cuttedoutinfo]: http://gnat.qiniudn.com/signcutter/cutted_out_info.jpg
+[posnegclick]: http://gnat.qiniudn.com/signcutter/pos_neg_click.jpg
+[signcutterui]: http://gnat.qiniudn.com/signcutter/signcutter_ui.jpg

@@ -7,6 +7,8 @@ Vim Rules
 
 Vim rules. Rules, a verb. Vim rules. Rules, a noun.
 
+![](http://gnat.qiniudn.com/vim.svg)
+
 Cmds
 ----
 

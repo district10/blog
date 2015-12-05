@@ -377,3 +377,7 @@ Tricks not from This Book
 Refs
 
 #. [Learning the vi Editor (豆瓣)](http://book.douban.com/subject/1794209/)
+
+Read more
+
+#. [Vi Lovers Home Page](http://thomer.com/vi/vi.html)

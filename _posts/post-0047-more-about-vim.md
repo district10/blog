@@ -212,6 +212,7 @@ Refs
 ```plain
 ;; set text width
 ;; ;    :set tw=80
+;; ;    :set fo+=m ; 中文自动重排
 gq[motion]
 
 ;; captitorize current word

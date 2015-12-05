@@ -204,3 +204,5 @@ MISC
 #. [Easyicon - Search 500,000+ (PNG,ICO,ICNS) free icons, desktop icons, icons Download.](http://www.easyicon.net/)
 #. [Alll Cheat Sheets in One Page](http://www.cheat-sheets.org/)
 #. [博客文章索引 - ☆Ronny丶 - 博客园](http://www.cnblogs.com/ronny/p/index.html)
+#. [BeeBEEP (Secure Lan Messenger)](http://beebeep.sourceforge.net/)
+#. [Shark Machine Learning Library](http://image.diku.dk/shark/)

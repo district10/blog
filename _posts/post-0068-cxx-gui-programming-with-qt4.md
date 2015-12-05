@@ -7186,8 +7186,6 @@ bool isWrapping () const
 void setWrapping ( bool enable )
 ```
 
-
-
 Refs
 
 #. [QAbstractItemModel Class | Qt 4.8](http://doc.qt.io/qt-4.8/qabstractitemmodel.html)
