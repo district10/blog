@@ -406,6 +406,8 @@ iframe.lyrics {
 }
 
 div#TOC {
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
     font-size: 10pt;
     white-space: nowrap;
     background: #eee;
@@ -425,6 +427,10 @@ div#TOC {
     box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
     -webkit-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
     -moz-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
+}
+
+div#TOC:hover {
+    visibility: visible;
 }
 
 .hdrRef {
