@@ -246,4 +246,14 @@ adaboost,
 
 MLP,
 
+#. feature maps
+#. subsampling
+
+Convolutional Neural Networks  (LeCun et al. 1989)
+
+Image Lab
+
+32 -> 28? -> kernel[3x3]
+
+
 
