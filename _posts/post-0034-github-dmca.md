@@ -26,7 +26,7 @@ GitHub 的 DMCA 干嘛的？
 我大概是怕自己忘了，就放在了自己够得找的地方……我承认这是严重失误。
 
 这点我确实错了。现在 GitHub 上的博客已经看不到了，我删除了原来的 repo，新建了一个一样的，
-然后暂时把 <http://dvorak.com> redirict 到了 <http://dvorak4tzx.lofter.com/tag/movie>。
+然后暂时把 <http://dvorak4tzx.com> redirict 到了 <http://dvorak4tzx.lofter.com/tag/movie>。
 
 **感觉被 JetBrains 和 GitHub 深深鄙视了……**
 
