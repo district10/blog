@@ -8,8 +8,9 @@ body {
     padding-right: 1em;
     padding-left: 1em;
     padding-bottom: 120px;
-    max-width: 44em;
-    min-width: 30em;
+    // max-width: 44em;
+    // min-width: 30em;
+    width: 44em;
     border-left: 1px solid black;
     border-right: 1px solid black;
     color: black;
@@ -164,8 +165,11 @@ caption {
     text-align: center;
     background-color: rgba(255, 255, 255, .85);
     margin: auto;
-    left: 22%;
-    right: 22%;
+    // left: 22%;
+    // right: 22%;
+    // max-width: 44em;
+    // min-width: 30em;
+    width: 44em;
     bottom: 0px;
     font-variant:small-caps;
     border-width: 1px 0px 0px 0px;
