@@ -206,3 +206,4 @@ MISC
 #. [博客文章索引 - ☆Ronny丶 - 博客园](http://www.cnblogs.com/ronny/p/index.html)
 #. [BeeBEEP (Secure Lan Messenger)](http://beebeep.sourceforge.net/)
 #. [Shark Machine Learning Library](http://image.diku.dk/shark/)
+#. [Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen)
