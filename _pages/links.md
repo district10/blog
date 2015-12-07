@@ -154,7 +154,7 @@ Movies
 #. [豆瓣豆列 - 世界那么大，我想去看看](http://www.douban.com/doulist/38842269/)
 #. [豆瓣豆列 - 会画画就是这么任性](http://www.douban.com/doulist/36796029/)
 #. [豆瓣豆列 - 推荐书籍: IT技术](http://www.douban.com/doulist/1361509/)
-#. [豆瓣豆列 - 互联网科技纪录片](http://www.douban.com/doulist/11172842/)
+. [豆瓣豆列 - 互联网科技纪录片](http://www.douban.com/doulist/11172842/)
 #. [豆瓣豆列 - 程序员的电影](http://www.douban.com/doulist/3255951/)
 #. [豆瓣豆列 - 与IT有关的电影](http://www.douban.com/doulist/441220/)
 #. [豆瓣豆列 - 送羡辙一本书，让她写出更棒的作品！](http://www.douban.com/doulist/17651217/)
@@ -207,3 +207,4 @@ MISC
 #. [BeeBEEP (Secure Lan Messenger)](http://beebeep.sourceforge.net/)
 #. [Shark Machine Learning Library](http://image.diku.dk/shark/)
 #. [Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen)
+#. [Tzeng Yuxio](http://tzengyuxio.me/) （一看就是处女座）

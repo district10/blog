@@ -38,28 +38,44 @@ GitHub 的 DMCA 干嘛的？
 谁授权你的啊？！赶紧都删掉！下面是原文引用，
 
 > Because:
-
-> * you and github.com users owning repositories / gists mentioned above are **not the owners of the trademarks of these products** and
-> * you and github.com users owning repositories / gists mentioned above do **not have any agreement with our company** which would entitle you or them to redistribute our products, license keys or license keys generators for our products,
-
-> we consider the occurrence of license keys and license keys generators to our products on the website github.com to be **infringement of our proprietary rights**.
-
+>
+> * you and github.com users owning repositories / gists mentioned above are
+> **not the owners of the trademarks of these products** and * you and
+> github.com users owning repositories / gists mentioned above do **not have
+> any agreement with our company** which would entitle you or them to
+> redistribute our products, license keys or license keys generators for our
+> products,
+>
+> we consider the occurrence of license keys and license keys generators to our
+> products on the website github.com to be **infringement of our proprietary
+> rights**.
+>
 > That´s why we demand that you:
-
+>
 > * immediately **cease all use of our trademarks** by the links specified above,
-> * immediately **remove all license keys, source code of license keys generators and any other references to our products** from the website github.com, by the links specified above,
-> * **forbear from all further unauthorised use of our trademarks** and from all further making accessible of license keys to our products, as well as source code of license keys generating software.
-
+> * immediately **remove all license keys, source code of license keys generators and 
+>   any other references to our products** from the website github.com, by the links specified above,
+> * **forbear from all further unauthorised use of our trademarks** and from all further
+>   making accessible of license keys to our products, as well as source code of license keys generating software.
+>
 > I have read and understand GitHub's Guide to Filing a DMCA Notice.
-
-> I have a good faith belief that use of the copyrighted materials described above on the infringing web pages is not authorized by the copyright owner, or its agent, or the law.
-
-> I swear, under penalty of perjury, that the information in this notification is accurate and that I am the copyright owner, or am authorized to act on behalf of the owner, of an exclusive right that is allegedly infringed.
-
-> You can contact JetBrains s.r.o. on any matters via email [sales@jetbrains.com](mailto:sales@jetbrains.com). The address is Kavčí Hory Office Park, Na hřebenech II 1718/10, Praha 4 - Nusle - 147 00, Czech Republic. Phone: +420 2 4172 2501. Fax: +420 2 4172 2540. The contact person is [private].
-
+>
+> I have a good faith belief that use of the copyrighted materials described
+> above on the infringing web pages is not authorized by the copyright owner,
+> or its agent, or the law.
+>
+> I swear, under penalty of perjury, that the information in this notification
+> is accurate and that I am the copyright owner, or am authorized to act on
+> behalf of the owner, of an exclusive right that is allegedly infringed.
+> 
+> You can contact JetBrains s.r.o. on any matters via
+> email [sales@jetbrains.com](mailto:sales@jetbrains.com). The address is Kavčí
+> Hory Office Park, Na hřebenech II 1718/10, Praha 4 - Nusle - 147 00, Czech
+> Republic. Phone: +420 2 4172 2501. Fax: +420 2 4172 2540. The contact person
+> is [private].
+>
 > This DMCA claim has been prepared and filed by [private].
-
+>
 > Thank you!
 
 ---
