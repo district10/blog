@@ -8,6 +8,7 @@ Dvorak 是一种不同于 QWERTY 的键盘布局，在程序员中广受欢迎�
 比如 Steve Yegge、Sacha Chua、李杀。我也用 dvorak，所以这个网站叫 dvorak4tzx。</p>
 <div id="buckets">
 <div><a href="notes.html">Notes | 笔记</a></div>
+<div><a href="reads.html">Reads | 斋读</a></div>
 <div><a href="koans.html">Koans | 呓语</a></div>
 <div><a href="dents.html">Dents | 乱象</a></div>
 <div><a href="about.html">About | 关于</a></div></div><hr/>

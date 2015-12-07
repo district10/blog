@@ -22,9 +22,13 @@ About | 关于
     
     （2）刘未鹏，[[BetterExplained]为什么你应该（从现在开始就）写博客](http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/)
 
+<!--
+
 ![Octocat: Adventure Cat](http://gnat-tang-shared-image.qiniudn.com/octocat/adventure-cat.png)
 
 ![Kimonotocat](http://gnat-tang-shared-image.qiniudn.com/octocat/kimonotocat.png)
+
+-->
 
 注：
 

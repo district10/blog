@@ -13,3 +13,4 @@ q*.exe
 *.zip
 *.rar
 tmp.sh
+*.vim
