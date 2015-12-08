@@ -1,0 +1,16 @@
+publish/
+private/
+tmp/
+*~
+*#
+_posts/index.md
+_reads/*.html
+tmp*
+conf.json
+q*.exe
+*.swp
+*.7z
+*.zip
+*.rar
+tmp.sh
+*.vim
