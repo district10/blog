@@ -8,6 +8,7 @@ IDXMD = _index_header.md _index_footer.md
 
 CURFILES = \
 post-0068-cxx-gui-programming-with-qt4.md \
+post-0074-qt-design-patterns.md \
 post-0073-opencv-notes.md \
 post-0072-cvann-mlp.md \
 post-0048-low-poly-in-practice.md \
@@ -18,6 +19,7 @@ post-0057-code-on-windows.md \
 
 # :r!ls post* | tail -n 5 | sort -nr
 
+POST_0074 = $(PODIR)/post-0074-qt-design-patterns.html
 POST_0073 = $(PODIR)/post-0073-opencv-notes.html
 POST_0072 = $(PODIR)/post-0072-cvann-mlp.html
 POST_0071 = $(PODIR)/post-0071-selected-qt-code.html

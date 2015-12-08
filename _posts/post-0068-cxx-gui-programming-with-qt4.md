@@ -130,8 +130,10 @@ Options:
 
 ```bash
 $ mkdir build && cd build
-$ qmake -spec win32-msvc2020 -r -tp vc
+$ qmake -spec win32-msvc2010 -r -tp vc
 ```
+
+可以在 `qt-everywhere-opensource-src-4.8.6\mkspecs` 文件夹下看到所有 spects。
 
 （这样编译的项目虽然 工程在外面（out of source），但 build 出来的东西，居然在源码的文件夹啊。差评！）
 

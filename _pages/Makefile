@@ -5,6 +5,7 @@ $(PODIR)/404.html \
 $(PODIR)/about.html \
 $(PODIR)/dents.html \
 $(PODIR)/douban.html \
+$(PODIR)/douban-of-ann.html \
 $(PODIR)/links.html \
 $(PODIR)/typing.html \
 $(PODIR)/xiami.html \
