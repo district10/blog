@@ -1033,7 +1033,6 @@ void MainWindow::openRecentFile()
 
 ![][dialog]
 
-
 ```cpp
 void MainWindow::find()
 {
@@ -7199,6 +7198,16 @@ void setFlow ( Flow flow )
 bool isWrapping () const
 void setWrapping ( bool enable )
 ```
+
+Constant | Value | Description
+-------- | ----- | -----------
+Qt::DisplayRole | 0 | The key data to be rendered in the form of text. (QString)
+Qt::DecorationRole | 1 | The data to be rendered as a decoration in the form of an icon. (QColor, QIcon or QPixmap)
+Qt::EditRole | 2 | The data in a form suitable for editing in an editor. (QString)
+Qt::ToolTipRole | 3 | The data displayed in the item's tooltip. (QString)
+Qt::StatusTipRole | 4 | The data displayed in the status bar. (QString)
+Qt::WhatsThisRole | 5 | The data displayed for the item in "What's This?" mode. (QString)
+Qt::SizeHintRole | 13 | The size hint for the item that will be supplied to views. (QSize)
 
 Refs
 
