@@ -19,7 +19,7 @@ Pinboard 发布于 2009 年 7 月，当时向每个用户一次性收取 3 美�
 有意思的是，Pinboard 的注册费会随着用户量增长而增长，以此来减缓网站用户增长的速度。
 这样，Ceglowski 才有足够的资金持续开发，也避免了过多“废话师”（Spammers）的加入。
 几个月后，Ceglowsik 提供一个把标记的书签内容本地储存的服务，收费 25 美元 / 年，
-之后 Pinborad 就成了他的全职工作，用户量也达到了 1200 多。
+之后 Pinboard 就成了他的全职工作，用户量也达到了 1200 多。
 
 Pinboard 的用户量持续稳速增长。直到 2010 年 12 月，雅虎的信息泄露预示着 Delicious （05 年被雅虎收购）可能会走向灭亡，
 很多人因此加入 Pinboard，以至于当月月底 Pinboard 的用户达到了 一万六千。
@@ -57,7 +57,7 @@ Ceglowsik 维护了一个 Pinboard 博客，分享 Pinboard 新特性，网站�
 为 6 个初创公司提供 37 美元资金和宣传，以此鼓励科技公司创业。
 次年一月他奖励了获胜者（通过 Pay-Pal）。
 
-在一次 Conferences 上，他谈及自己运营 Pinborad，听取 fandom 社区一点点
+在一次 Conferences 上，他谈及自己运营 Pinboard，听取 fandom 社区一点点
 完善 Pinboard 这个过程中的经验：花时间在工作上，而不是指望突然的成功，
 这样你的公司才会死的慢一点。（"failing really, really slowly". Working on a project for a long time instead of looking for immediate success）
 
