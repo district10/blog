@@ -5,10 +5,6 @@
 什么是投影？
 ===========
 
-<!--
-:%s/\s\+$//
--->
-
 今天矩阵论讲的是广义逆，也就是伪逆。一想到伪逆我就觉得我们院的教材特别垃圾，
 测量平差的最最最简单的最小二乘就是用伪逆来表达，那本教材对此却一点不提及。
 与此相关，今天我想扯的是投影。
@@ -39,16 +35,51 @@ $$Ax =
 \begin{bmatrix} 12 \\ 24\end{bmatrix} =
 \begin{bmatrix} 17 \\ 39\end{bmatrix}$$
 
-但通常 A 都不长这样（长这样怎么平差？……）
+但通常 A 都不长这样。[^tmp-koan]
 
-通常 A 的形状都像是竖起来的长方形（如“|”），这就需要用投影的方式求一个 $x$ 的最佳估计值 $\hat x$。这个 $\hat x$ 就是在
-A 的列空间（Column Space）里的一个向量，满足 $A\hat x$ 和 $b$ 的距离最近。注意注意，这里有两个线性空间了，
-一个是 A 的列空间（里面有 $\hat x$），我们把它记作 Col(A)，
-一个是 A 的行空间（里面有 $b$），我们把它记作 Row(A)。
+[^tmp-koan]: 长这样怎么平差？……
+    
+    多说点废话，刚才看到 Cramer's rule（克拉默法则）的 [维基页面](https://en.wikipedia.org/wiki/Cramer%27s_rule)，里面居然有个 Geometric interpretation，特别赞：
+    
+    Consider the linear system
 
-投影就是把 Row(A) 中的 $b$ 对应的 Col(A) 中的 $\hat x$ 找到。如果 A 可逆，Row(A) 和 Col(A) 是 isomorphism（同态），
-那 $\hat x$^[当然，这里其实是真值 $x$ 而不是估计值 $\hat x$。（`h`at &rarr; `h`ypothesis）] 的值就是 $A^{-1}b$，直接求解。
-如果不可逆，就需要找到最小误差 $e = b - p$（这里 $p$ 是 Row(A) 中 $b$ 在 Col(A) 中投影）情况下的投影。
+    $$\left\{\begin{matrix}a_1x+b_1y&={\color{red}c_1}\\ a_2x + b_2y&= {\color{red}c_2}\end{matrix}\right.$$
+
+    which in matrix format is
+
+    $$\begin{bmatrix} a_1 & b_1 \\ a_2 & b_2 \end{bmatrix}\begin{bmatrix} x \\ y \end{bmatrix}=\begin{bmatrix} {\color{red}c_1} \\ {\color{red}c_2} \end{bmatrix}.$$
+
+    Assume $a1b2 − b1a2$ nonzero. Then, with help of determinants $x$ and $y$ can be found with Cramer's rule as
+
+    $$\begin{align}
+    x &= \frac{\begin{vmatrix} {\color{red}{c_1}} & b_1 \\ {\color{red}{c_2}} & b_2 \end{vmatrix}}{\begin{vmatrix} a_1 & b_1 \\ a_2 & b_2 \end{vmatrix}} = { {\color{red}c_1}b_2 - b_1{\color{red}c_2} \over a_1b_2 - b_1a_2} \\ 
+    y &= \frac{\begin{vmatrix} a_1 & {\color{red}{c_1}} \\ a_2 & {\color{red}{c_2}} \end{vmatrix}}{\begin{vmatrix} a_1 & b_1 \\ a_2 & b_2 \end{vmatrix}}  = { a_1{\color{red}c_2} - {\color{red}c_1}a_2 \over a_1b_2 - b_1a_2}
+    \end{align}$$
+    
+    几何图解如下（这就是上面所说的“拼”）：
+    
+    ![](http://gnat.qiniudn.com/pics/cramer.jpg)
+    
+    其中
+    
+    #. （b）和（c）的面积（这里都说的阴影部分）一样
+    #. （b）的面积比上（a）的面积为 $x_1$
+    
+    所以（c）的面积比上（a）面积的也是 $x_1$。再结合
+    “The determinant of the matrix A is the signed volume of the image of the unit cube.”（见另一篇：[雅各比行列式和矩阵的秩](post-0015-jacobian-and-determinant.html)），就有
+    
+    $$x_1 = \frac{\operatorname{Area}(Shadow_3)}{\operatorname{Area}(Shadow_1)} = \frac{\begin{vmatrix} b_1 & a_{12} \\ b_2 & a_{22} \end{vmatrix}}{\begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix}}$$
+    
+    &nbsp;
+
+通常 `A` 的形状都像是竖起来的长方形（如“|”），这就需要用投影的方式求一个 $x$ 的最佳估计值 $\hat x$。这个 $\hat x$ 就是在
+`A` 的行空间（Row Space）里的一个向量，满足 $A\hat x$ 和 $b$ 的距离最近。注意注意，这里有两个线性空间了，
+一个是 `A` 的行空间，我们把它记作 `Row(A)`，里面有 $\hat x$；
+一个是 `A` 的列空间，我们把它记作 `Col(A)`，里面可能有 $b$。
+说“可能”，是因为 `Ax = b` 不一定有唯一解。没有唯一解的时候，$b$ 在一个和 `Col(A)` 同样维度的线性空间 `A'` 中，此时 `A` 是 `A'` 的子空间。
+
+投影就是在空间 `Col(A)` 中找到空间 `A'` 中的 $b$ 对应的 $A\hat x$ 的过程。如果 `A` 可逆，`Row(A)` 和 `Col(A)` 是 isomorphism（同态），它们同时和 `A'` 也同态。直接求解，$\hat x$^[当然，这里其实是真值 $x$ 而不是估计值 $\hat x$。（`h`at &rarr; `h`ypothesis）] 的值就是 $A^{-1}b$。
+如果不可逆，就需要找到最小误差 $e = b - p$（这里 $p$ 是 $b$ 在 `Col(A)` 中投影，也就是 $\hat x$）情况下的投影。
 平差的任务就是找到这个投影，使得这个 error 值最小。
 
 先从简单的二维空间的两个向量开始，如下图，向量 $\vec b$ 在向量 $\vec a$ 上的投影为向量 $\vec p$，误差为 $\vec e$。
@@ -73,7 +104,8 @@ $$
 #. $P^2 = P$
 #. $P^T = P$
 
-下面这张图很重要，能给你很大的 intuitiion，其中 $\vec b$ 在 Row(A) 中，投影到了 Row(A) 为 $\vec p$，误差为 $\vec e$，
+下面这张图很重要，能给你很大的 intuition。
+假定 $A^{m\times n}$ 是数域 $F$ 上 m &times; n 维矩阵。$\vec b$ 在线性空间 $F^n$ 中，投影到了 `Row(A)` 为 $\vec p$，误差为 $\vec e$，
 其中误差存在于 A 的 nullspace 中，平差的时候只要把这个 e 的各个分量平均分配给 nullspace 的各个维度即可，也就是最小二乘。
 
 ![](http://gnat.qiniudn.com/pics/projection2.png)
