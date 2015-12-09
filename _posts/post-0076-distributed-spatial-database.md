@@ -222,6 +222,10 @@ transmit rapidly between the service nodes. Obviously, this
 mechanism is a key consideration during the construction of
 the distributed space database.
 
+
+
+
+
 研究现状
 ---------
 
@@ -239,3 +243,6 @@ the distributed space database.
 ![spatial-data-partitioning](spatial-data-partitioning.png)
 [all-eggs-in-one-busket]: all-eggs-in-one-busket.jpg
 [dirty]: dirty.png
+
+
+

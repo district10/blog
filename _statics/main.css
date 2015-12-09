@@ -201,11 +201,11 @@ caption {
 }
 
 .footnotes ol li p {
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .footnotes ol li span {
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 a {
@@ -355,6 +355,9 @@ p a img:hover {
     line-height: 80%;
 }
 
+.footnotes ol li ol li {
+    line-height: 100%;
+}
 .ds-thread {
     padding-top: 50px;
 }
