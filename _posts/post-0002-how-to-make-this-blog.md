@@ -318,10 +318,8 @@ Hash Tag^[其实在 weibo/twitter 上才叫 hash tag，这里或许应该叫 sec
 ![][standalone-pic-big-one]
 
 [inline-pic-without-showing-this-text]: http://gnat-tang-shared-image.qiniudn.com/emoji/11.gif
-
-[standalone-pic-small-one]: http://imglf.nosdn.127.net/img/cXkrRlR2ZnlJNE93Sm1va0R1RlRhMXloSEd2Y1hWM0NGSWplSExnQnNTSERpbDVRUTdxL2lnPT0.jpg
-
-[standalone-pic-big-one]: http://imglf0.ph.126.net/FkB_RjGf7iH0Im3jf_3lWQ==/6630541099630719693.png "本来想用 Gatsby 挥拳打 Tom 的图片"
+[standalone-pic-small-one]: http://gnat.qiniudn.com/dexter.jpg
+[standalone-pic-big-one]: http://gnat.qiniudn.com/jodie-foster-math.png "本来想用 Gatsby 挥拳打 Tom 的图片"
 
 ```markdown
 段落内的图片，caption 不显示： ![inline-pic-without-showing-this-text]
@@ -335,10 +333,8 @@ Hash Tag^[其实在 weibo/twitter 上才叫 hash tag，这里或许应该叫 sec
 ![][standalone-pic-big-one]
 
 [inline-pic-without-showing-this-text]: http://gnat-tang-shared-image.qiniudn.com/emoji/11.gif
-
-[standalone-pic-small-one]: http://imglf.nosdn.127.net/img/cXkrRlR2ZnlJNE93Sm1va0R1RlRhMXloSEd2Y1hWM0NGSWplSExnQnNTSERpbDVRUTdxL2lnPT0.jpg
-
-[standalone-pic-big-one]: http://imglf0.ph.126.net/FkB_RjGf7iH0Im3jf_3lWQ==/6630541099630719693.png "本来想用 Gatsby 挥拳打 Tom 的图片"
+[standalone-pic-small-one]: http://gnat.qiniudn.com/dexter.jpg
+[standalone-pic-big-one]: http://gnat.qiniudn.com/jodie-foster-math.png "本来想用 Gatsby 挥拳打 Tom 的图片"
 ```
 
 ### 代码高亮

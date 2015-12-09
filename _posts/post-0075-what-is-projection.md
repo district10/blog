@@ -110,7 +110,7 @@ $\vec a$ 上的 $\vec p$ 即是我们要的。下面还有一幅图，里面的 
 #. $P^T = P$
 
 下面这张图很重要，能给你很大的 intuition。
-假定 $A^{m\times n}$ 是数域 $F$ 上 m &times; n 维矩阵。$\vec b$ 在线性空间 $F^n$ 中，投影到了 Row(A) 为 $\vec p$，误差为 $\vec e$，
+假定 $A^{m\times n}$ 是数域 $F$ 上 m &times; n 维矩阵。$\vec b$ 在线性空间 $F^n$ 中，投影到了 Col(A) 为 $\vec p$，误差为 $\vec e$，
 其中误差存在于 A 的 nullspace 中，平差的时候只要把这个 e 的各个分量平均分配给 nullspace 的各个维度即可，也就是最小二乘。
 
 ![](http://gnat.qiniudn.com/pics/projection2.png)

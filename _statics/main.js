@@ -23,8 +23,8 @@ function dvorak4tzx( pathParts ) {
     if ( pathParts[0].split(':')[0] === 'file' ) {
         console.log( 'local. no need for duoshuo & zhanzhang.' );
     } else {
-        // zhanzhang();
-        // duoshuo();
+        zhanzhang();
+        duoshuo();
     }
 
     filename = pathParts[ pathParts.length - 1 ];
