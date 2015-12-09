@@ -1,3 +1,0 @@
-# Gists
-
-personal gists

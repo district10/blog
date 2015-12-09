@@ -1,0 +1,3 @@
+[submodule "gists"]
+	path = gists
+	url = git@github.com:district10/gists.git
