@@ -18,13 +18,16 @@ body {
     line-height: 140%;
 }
 
+::selection {
+    background: #fae3df;
+}
 
 p {
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 10px;
     margin-top: 20px;
-    // text-indent: 2em;
+    // text-indent: 2em; // terrible!
 }
 
 h2 + p:first-letter {
@@ -198,6 +201,14 @@ caption {
 .footnoteRef:hover {
     color: #ff1244;
     border: none;
+}
+
+.footnotes:before {
+}
+
+.footnotes > hr {
+//    height: 15px;
+//    background: #fff url(hr.gif) no-repeat scroll center;
 }
 
 .footnotes ol li p {
