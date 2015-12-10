@@ -1,3 +1,6 @@
 [submodule "gists"]
 	path = gists
 	url = git@github.com:district10/gists.git
+[submodule "blagee"]
+	path = blagee
+	url = git@git.coding.net:dvorak4tzx/blagee.git
