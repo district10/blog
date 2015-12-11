@@ -1,4 +1,5 @@
 GEN   = ../_gen.sh
+NOW   = ../_now.sh
 PODIR = ../publish
 NOTES = \
 note-00001.md \
@@ -11,7 +12,9 @@ clean:
 $(PODIR)/notes.html: _note_header.md $(NOTES) _note_footer.md
 	cat $^ | $(GEN) $@ &
     
-note:
+note: n
+	$(NOW)
+n:
 	$(EDITOR) $(firstword $(NOTES))
 make:
 	$(EDITOR) Makefile

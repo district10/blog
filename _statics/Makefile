@@ -1,16 +1,31 @@
 TRANS = ./_trans.sh
 PIDIR = ../_posts
 PODIR = ../publish
-STATICS = \
-$(PODIR)/cc-80x15.png \
-$(PODIR)/favicon.ico \
-$(PODIR)/main.css \
-$(PODIR)/main.js \
-$(PODIR)/robots.txt \
+UTILS = \
+$(PODIR)/clike.js \
+$(PODIR)/codemirror.js \
+$(PODIR)/dialog.js \
 $(PODIR)/doubanBook.js \
 $(PODIR)/doubanMovie.js \
 $(PODIR)/hello.js \
 $(PODIR)/ime.js \
+$(PODIR)/matchbrackets.js \
+$(PODIR)/searchcursor.js \
+$(PODIR)/vim.js \
+$(PODIR)/codemirror.css \
+$(PODIR)/dialog.css \
+$(PODIR)/midnight.css \
+$(PODIR)/solarized.css \
+
+STATICS = \
+$(UTILS) \
+$(PODIR)/cc-80x15.png \
+$(PODIR)/external.gif \
+$(PODIR)/favicon.ico \
+$(PODIR)/hr.gif \
+$(PODIR)/main.css \
+$(PODIR)/main.js \
+$(PODIR)/robots.txt \
 
 MISCS = \
 $(PODIR)/post-0050-gis-overall.bib \

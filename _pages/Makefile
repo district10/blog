@@ -3,10 +3,12 @@ PODIR = ../publish
 PAGES = \
 $(PODIR)/404.html \
 $(PODIR)/about.html \
+$(PODIR)/days.html \
 $(PODIR)/dents.html \
 $(PODIR)/douban.html \
 $(PODIR)/douban-of-ann.html \
 $(PODIR)/links.html \
+$(PODIR)/quotes.html \
 $(PODIR)/typing.html \
 $(PODIR)/xiami.html \
 
@@ -22,9 +24,16 @@ a: about
 about:
 	$(EDITOR) about.md
 
+day:
+	$(EDITOR) days.md
+
 dt: dent
 dent:
 	$(EDITOR) dents.md
+
+q: quote
+quote:
+	$(EDITOR) quotes.md
 
 l: link
 link:

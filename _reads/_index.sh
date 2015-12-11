@@ -16,4 +16,4 @@ cat ${SRC}/_index_header.md; \
     ) | sed '/^$/d' | sort -nr; \
 cat ${SRC}/_index_footer.md; \
 ) | \
-pandoc -S -s --ascii -c main.css -A ../_parts/footer.html --toc --mathjax --highlight-style pygments -f markdown+table_captions -o ${DST}
+pandoc -S -s --ascii -c main.css -A ../_parts/footer.html --toc -f markdown+table_captions -o ${DST}

@@ -107,9 +107,16 @@ a: about
 about:
 	$(MAKE) -C $(PAGES) about
 
+q: quote
+quote:
+	$(MAKE) -C $(PAGES) quote
+
 l: link
 link:
 	$(MAKE) -C $(PAGES) link
+
+day:
+	$(MAKE) -C $(PAGES) day
     
 d: dent
 dent:

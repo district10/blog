@@ -19,6 +19,7 @@ post-0057-code-on-windows.md \
 
 # :r!ls post* | tail -n 5 | sort -nr
 
+POST_0076 = $(PODIR)/post-0076-distributed-spatial-database.html
 POST_0075 = $(PODIR)/post-0075-what-is-projection.html
 POST_0074 = $(PODIR)/post-0074-qt-design-patterns.html
 POST_0073 = $(PODIR)/post-0073-opencv-notes.html
@@ -111,8 +112,29 @@ $(POST_0030) $(POST_0029) $(POST_0028) $(POST_0027) $(POST_0026) $(POST_0025) $(
 $(POST_0020) $(POST_0019) $(POST_0018) $(POST_0017) $(POST_0016) $(POST_0015) $(POST_0014) $(POST_0013) $(POST_0012) $(POST_0011) \
 $(POST_0010) $(POST_0009) $(POST_0008) $(POST_0007) $(POST_0006) $(POST_0005) $(POST_0004) $(POST_0003) $(POST_0002) $(POST_0001)
 
+
+SOME_POSTS = \
+$(POST_0049) \
+$(POST_0047) \
+$(POST_0046) \
+$(POST_0042) \
+$(POST_0035) \
+$(POST_0029) \
+$(POST_0028) \
+$(POST_0023) \
+$(POST_0024) \
+$(POST_0022) \
+$(POST_0014) \
+$(POST_0013) \
+$(POST_0010) \
+$(POST_0004) \
+$(POST_0001) \
+
+PDFS = $(patsubst %.html, %.pdf, $(SOME_POSTS))
+
 # all: $(POSTS) $(IDXPG)
 all: $(POSTS)
+
 
 index: $(IDXPG)
 $(IDXPG): $(IDXMD)
@@ -127,8 +149,12 @@ $(PODIR)/post-0051-spatial-gis.html: $(PIDIR)/post-0051-spatial-gis.md
 $(PODIR)/post-0050-gis-overall.html: $(PIDIR)/post-0050-gis-overall.md
 	$(BIB) $^ $@ &
 
+pdf: $(PDFS)
 $(PODIR)/%.html: $(PIDIR)/%.md
 	cat $^ | $(GEN) $@ &
+
+$(PODIR)/%.pdf: $(PIDIR)/%.md
+	pandoc --latex-engine=xelatex -V mainfont="Microsoft YaHei" -f markdown --template=_pm-template $^ -o $@ &
 
 p: post
 post:

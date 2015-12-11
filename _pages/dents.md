@@ -16,6 +16,11 @@ Dents | 乱象
 <div id="buckets">
 
 <div><a href="douban.html">Bovie | 书影</a></div>
+<!--
+<div><a href="xiami.html">Music | 乐音</a></div>
+-->
+<div><a href="quotes.html">Quotes | 言论</a></div>
+<div><a href="days.html">Days | 匆匆</a></div>
 <div><a href="xiami.html">Music | 乐音</a></div>
 <div><a href="links.html">Links | 链签</a></div>
 <div><a href="lyrics.html">Lyrics | 听写</a></div>

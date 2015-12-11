@@ -153,7 +153,8 @@
 
 1. **For windows Users**
     - I made one by [Windows Keyboard Layout Creator 1.4][kl_creator], 
-    - Download my keyboard layout installer here: [**dvpe0.3 for windows (installation guide inside)**][dvpe_win], 
+    - Download my keyboard layout installer here: [**dvpe0.3 for windows (installation guide inside)**][dvpe_win]。
+    - 最近用 AHK 脚本重写了一个，效果出奇地好：<https://github.com/district10/neo_keyboard_layout/blob/master/neo4win/neo.ahk>
 - [**For Linux Users**][dvpe_linux]
 
 [kl_creator]: http://www.microsoft.com/en-sg/download/details.aspx?id=22339

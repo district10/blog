@@ -23,7 +23,7 @@ More About Vim | Vim 杂记
 --------------------------
 
 [^morevim]: 本文最初的本意是要黑 Vim。罪过罪过，感谢 Vim 拯救我的小拇指。
-            Vim 是个伟大的编辑器，我不该黑它。
+   Vim 是个伟大的编辑器，我不该黑它。
 
 有些东西是逃不掉的，比如在 Linux 上就要用 Vim。
 
@@ -98,7 +98,7 @@ Vim 拾遗
 ### `G`, `|`, `0`, `^`, `$`, `H`, `M`, `L`, `(`, `)`, `{`, `}`, `[[`, `]]`
 
 * `G` (last(or *n*th) line)
-* `|` (column) 
+* `|` (column)
 * `0` (line begin)
 * `^` (char begin)
 * `$` (line end)
@@ -175,10 +175,10 @@ My Emacs will come back soon with Evil-mode INSIDE~
 
 在 Refs 的链接里，naught101 说：
 
->  This is totally key. I haven't noticed until now that 
-> registers are the same as macro buffers. This means you 
-> can just **store all your macros in text, yank them, and run them**. 
-> Pretty cool, and a little bit weird. Very Vim. 
+>  This is totally key. I haven't noticed until now that
+> registers are the same as macro buffers. This means you
+> can just **store all your macros in text, yank them, and run them**.
+> Pretty cool, and a little bit weird. Very Vim.
 
 ### 4. 从 `+` 到 `*`
 

@@ -2,8 +2,8 @@ GEN   = ../_gen.sh
 PODIR = ../publish
 INDEX = ./_index.sh
 READS = \
-read-00001.md \
 read-00002.md \
+read-00001.md \
 
 READS_HTML = \
 $(PODIR)/read-00002.html \

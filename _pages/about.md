@@ -5,7 +5,9 @@
 About | 关于
 ============
 
-这是 TANG ZhiXiong 的博客，博客源码在 [district10/blog](https://github.com/district10/blog)。
+这是 TANG ZhiXiong 的博客。全部博客内容托管在 GitHub，用 Markdown 写，用 Makefile 管理，用 Pandoc 和 Bash 脚本转化成 HTML，同步到七牛。简单粗糙，但美观实用。
+
+博客源码在 [district10/blog](https://github.com/district10/blog)。
 
 * @Lofter: [dvorak4tzx](http://dvorak4tzx.lofter.com/)
 * @GitHub: [district10 (TANG ZhiXiong (dvorak4tzx))](https://github.com/district10)
@@ -24,9 +26,9 @@ About | 关于
 
 学好数学、英语、计算机。
 
-![Mathematics is the only truly universal language.](http://gnat.qiniudn.com/jodie-foster-math.png)
-
 <!--
+
+![Mathematics is the only truly universal language.](http://gnat.qiniudn.com/jodie-foster-math.png)
 
 ![Octocat: Adventure Cat](http://gnat-tang-shared-image.qiniudn.com/octocat/adventure-cat.png)
 
@@ -37,6 +39,8 @@ About | 关于
 注：
 
 #. 很多摘抄并没有用引用符，计划 tag 功能弄好了再把文章标记一下作为申明。
-#. 还没有在豆瓣、微博、简书推广这个博客生成器，而且搜索引擎现在不爬七牛 CDN（robots 成功了但是爬虫都不来！），人太少了。
 #. Anyway，CSS 和功能还要慢慢打磨，我自己先用着吧～
+<!--
+#. 还没有在豆瓣、微博、简书推广这个博客生成器，而且搜索引擎现在不爬七牛 CDN（robots 成功了但是爬虫都不来！），人太少了。
 #. 多说和站长工具实在太拖慢速度了！抛弃！
+-->

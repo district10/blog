@@ -116,6 +116,10 @@ h1 {
     text-align: center;
 }
 
+h1:before {
+    // content: '\f05c';
+}
+
 h2 {
     border-left: 8px dotted white;
     font-size: 130%;
@@ -221,10 +225,25 @@ caption {
 
 a {
     text-decoration: none;
+    // external
+    // padding-right: 13px;
+    // background: url('external.gif') no-repeat right 1px;
 }
 
 a:hover {
     border-bottom: 3px dotted #9f9f9f;
+}
+
+a.external {
+}
+
+h1:before h2:before h3:before {
+    padding-right: 0.3em;
+    margin-left: -2em;
+    content: "///";
+    color: #9ddcff;
+    border: 1px solid red;
+    display: block;
 }
 
 h1.title {

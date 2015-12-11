@@ -210,3 +210,4 @@ MISC
 #. [Tzeng Yuxio](http://tzengyuxio.me/) （一看就是处女座）
 #. [Kai Sun](http://www.kaisun.org/)
 #. [About.com](http://www.about.com/)
+#. [依云's Blog](http://lilydjwg.is-programmer.com/)

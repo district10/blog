@@ -4,8 +4,13 @@
 
 <div class="slogan">Welcome to dvorak4tzx's Blog.</div>
 <p id="tzxslogan">
-Dvorak 是一种不同于 QWERTY 的键盘布局，在程序员中广受欢迎，尤其是那些 Emacs 用户，
+Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序员中广受欢迎，尤其是那些 Emacs[^emacs] 用户，
 比如 Steve Yegge、Sacha Chua、李杀。我也用 dvorak，所以这个网站叫 dvorak4tzx。</p>
+
+[^dvorak]: [Dvorak Simplified Keyboard - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard)
+[^qwerty]: [QWERTY - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/QWERTY)
+[^emacs]: [Emacs - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Emacs)。
+
 <div id="buckets">
 <div><a href="notes.html">Notes | 笔记</a></div>
 <div><a href="reads.html">Reads | 斋读</a></div>
