@@ -89,84 +89,84 @@ clean:
 # write
 k: koan
 koan:
-	$(MAKE) -C $(KOANS) koan
+	$(MAKE) -C $(KOANS) koan &
 
 n: note
 note:
-	$(MAKE) -C $(NOTES) note
+	$(MAKE) -C $(NOTES) note &
 
 p: post
 post:
-	$(MAKE) -C $(POSTS) post
+	$(MAKE) -C $(POSTS) post &
 
 r: read
 read:
-	$(MAKE) -C $(READS) read
+	$(MAKE) -C $(READS) read &
     
 a: about
 about:
-	$(MAKE) -C $(PAGES) about
+	$(MAKE) -C $(PAGES) about &
 
 q: quote
 quote:
-	$(MAKE) -C $(PAGES) quote
+	$(MAKE) -C $(PAGES) quote &
 
 l: link
 link:
-	$(MAKE) -C $(PAGES) link
+	$(MAKE) -C $(PAGES) link &
 
 day:
-	$(MAKE) -C $(PAGES) day
+	$(MAKE) -C $(PAGES) day &
     
 d: dent
 dent:
-	$(MAKE) -C $(PAGES) dent
+	$(MAKE) -C $(PAGES) dent &
 
 s: song
 song:
-	$(MAKE) -C $(LYRICS) song
+	$(MAKE) -C $(LYRICS) song &
 
 t: typing
 typing:
-	$(MAKE) -C $(PAGES) typing
+	$(MAKE) -C $(PAGES) typing &
 
 # make make
 m: make
 make:
-	$(EDITOR) Makefile
+	$(EDITOR) Makefile &
 
 mk: mkKoans
 mkKoans:
-	$(MAKE) -C $(KOANS) make
+	$(MAKE) -C $(KOANS) make &
 
 mn: mkNotes
 mkNotes:
-	$(MAKE) -C $(NOTES) make
+	$(MAKE) -C $(NOTES) make &
 
 mpg: mkPages
 mkPages:
-	$(MAKE) -C $(PAGES) make
+	$(MAKE) -C $(PAGES) make &
 
 mpt: mkPosts
 mkPosts:
-	$(MAKE) -C $(POSTS) make
+	$(MAKE) -C $(POSTS) make &
 
 mr: mkReads
 mkReads:
-	$(MAKE) -C $(READS) make
+	$(MAKE) -C $(READS) make &
 
 ms: mkStatics
 mkStatics:
-	$(MAKE) -C $(STATICS) make
+	$(MAKE) -C $(STATICS) make &
 
 ml: mkLyrics
 mkLyrics:
-	$(MAKE) -C $(LYRICS) make
+	$(MAKE) -C $(LYRICS) make &
 
 c: css
 css:
-	$(MAKE) -C $(STATICS) css
+	$(MAKE) -C $(STATICS) css &
 
 j: js
 js:
-	$(MAKE) -C $(STATICS) js
+	$(MAKE) -C $(STATICS) js &

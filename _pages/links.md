@@ -211,3 +211,18 @@ MISC
 #. [Kai Sun](http://www.kaisun.org/)
 #. [About.com](http://www.about.com/)
 #. [依云's Blog](http://lilydjwg.is-programmer.com/)
+#. [Lu Wang's Page](http://coolwanglu.github.io/)
+
+#. [Browse Art - DeviantArt](http://www.deviantart.com/browse/all/)
+#. [ProcessOn](https://www.processon.com/network)
+
+#. [Semantic Scholar](https://www.semanticscholar.org/)
+#. [Corpus of Contemporary American English (COCA)](http://corpus.byu.edu/coca/)
+#. [Acronymify! - Automatically generate fun acronyms for your project](http://acronymify.com/)
+#. [Jijitang](http://www.jijitang.com/)
+#. [Home | Thomson Reuters](http://thomsonreuters.com/en.html)
+#. [武汉大学学术搜索](http://www.duxiu.com/)
+#. [Research Articles Corpus - basic search](http://rcpce.engl.polyu.edu.hk/RACorpus/default.htm)
+
+#. [负暄琐话 - 博客频道 - CSDN.NET](http://blog.csdn.net/g9yuayon)
+#. [Fabrice Bellard's Home Page](http://bellard.org/)

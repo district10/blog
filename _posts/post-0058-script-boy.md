@@ -11,7 +11,11 @@
 我把自己在豆瓣上想看/看过/在看的书和电影都导出了，用的是自己
 写的两个 JavaScript 脚本。
 
-<div id="buckets"><div>[豆瓣读书](javascript:document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','http://tangzx.qiniudn.com/doubanBook.js');)</div><div>[豆瓣电影](javascript:document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','http://tangzx.qiniudn.com/doubanMovie.js'))</div></div>
+<div id="buckets">
+<div>[豆瓣读书](javascript:document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','http://tangzx.qiniudn.com/doubanBook.js');)</div>
+<div>[豆瓣电影](javascript:document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','http://tangzx.qiniudn.com/doubanMovie.js'))</div>
+<div class="tzx">[TZX SHOW](javascript:document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','http://tangzx.qiniudn.com/tzxshow.js'))</div>
+</div>
 
 把上面两个按钮拖到自己的书签栏，在【豆瓣电影】和【豆瓣读书】的电影/书籍页面点击按钮，
 页面下方就会输出当前页面的电影/书籍的 Markdown 格式的列表。

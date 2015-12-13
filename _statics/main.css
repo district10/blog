@@ -18,10 +18,6 @@ body {
     line-height: 140%;
 }
 
-::selection {
-    background: #fae3df;
-}
-
 p {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -269,7 +265,8 @@ div.slogan {
 blockquote {
     word-break: break-word;
     font-weight: 100;
-    line-height: 50px;
+    // line-height: 50px;
+    line-height: 1.4;
     margin: 10px 25px 25px 10px;
     padding: 15px 15px;
     border-left: 10px solid #eee;
@@ -486,4 +483,15 @@ div#TOC:hover {
 
 .hdrRef:hover {
     color: rgba(255, 0, 0,1.0);
+}
+
+::selection {
+    background: #fae3df;
+}
+
+.tzx {
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    visibility: hidden;
 }

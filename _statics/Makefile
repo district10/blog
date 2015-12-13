@@ -16,6 +16,7 @@ $(PODIR)/codemirror.css \
 $(PODIR)/dialog.css \
 $(PODIR)/midnight.css \
 $(PODIR)/solarized.css \
+$(PODIR)/tzxshow.js \
 
 STATICS = \
 $(UTILS) \
