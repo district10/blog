@@ -24,6 +24,7 @@ $(PODIR)/reads.html: $(READS_HTML)
 index: $(READS_HTML)
 	$(INDEX) $(PODIR)/reads.html $(READS_HTML)
 
+r: read
 read:
 	$(EDITOR) $(firstword $(READS))
 

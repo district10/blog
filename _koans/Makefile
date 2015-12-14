@@ -12,10 +12,12 @@ clean:
 $(PODIR)/koans.html: _koan_header.md $(KOANS) _koan_footer.md
 	cat $^ | $(GEN) $@ &
 
-koan: k
-	$(NOW)
-k:
+k: koan
+koan: now
 	$(EDITOR) $(firstword $(KOANS))
+
+now:
+	$(NOW)
 
 m: make
 make:

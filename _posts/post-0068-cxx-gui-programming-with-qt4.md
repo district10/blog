@@ -20,7 +20,7 @@ p: `nice`{.cpp}
 f`a{.cpp}k
 -->
 
-<div style="float:right;">[![](http://img3.douban.com/mpic/s5934624.jpg)](http://book.douban.com/subject/3173123/)</div>
+<img src="http://img3.douban.com/mpic/s5934624.jpg" align="right">
 
 本书 example 源码是可以免费下到的：[C++ GUI Programming with Qt4, 2nd Edition | InformIT](http://www.informit.com/store/c-plus-plus-gui-programming-with-qt4-9780132354165)
 
