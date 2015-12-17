@@ -42,8 +42,13 @@ pts: posts
 posts:
 	$(MAKE) -C $(POSTS)
 
+i: index
 index:
 	$(MAKE) -C $(POSTS) index
+
+f: footer
+footer:
+	$(EDITOR) _parts/footer.html
 
 sts: statics
 statics:

@@ -226,3 +226,6 @@ MISC
 
 #. [负暄琐话 - 博客频道 - CSDN.NET](http://blog.csdn.net/g9yuayon)
 #. [Fabrice Bellard's Home Page](http://bellard.org/)
+
+#. [Recent - metacpan.org](https://metacpan.org/recent)
+#. [Ratings and Reviews for CPAN - cpanratings](http://cpanratings.perl.org/)

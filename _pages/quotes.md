@@ -15,3 +15,8 @@ Quotes | 言论
 ### Albert Einstein
 
 #. Try not to become a man of success, but rather try to become a man of value.
+
+### TANG ZHiXiong
+
+#. 为什么我们喜欢 Izumi Sakai？因为她的歌欢快、积极、向上。（你以为我喜欢负能量吗？）
+#. 听英文歌比听中文歌好，因为有节奏。听日文歌比听英文歌好，因为有节奏还听不懂；

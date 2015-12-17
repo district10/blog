@@ -19,6 +19,7 @@ post-0057-code-on-windows.md \
 
 # :r!ls post* | tail -n 5 | sort -nr
 
+POST_0077 = $(PODIR)/post-0077-wavelet-transform.html
 POST_0076 = $(PODIR)/post-0076-real-hacker.html
 POST_0075 = $(PODIR)/post-0075-what-is-projection.html
 POST_0074 = $(PODIR)/post-0074-qt-design-patterns.html

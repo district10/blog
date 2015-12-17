@@ -69,7 +69,7 @@ int main( void )
 $ g++ hello.cpp -o hello -lm
 ```
 
-[^lm]: 其实 C 语言需要，C++ 不需要。
+[^lm]: 其实 C 语言需要，C++ 不需要，或者说 C++ 编译器不需要。
 
 如果手工一个一个加动态链接库，那我就建议你还是用 CMake……搬出神器 `pkg-config`{.bash} 来帮你添加这些蛋疼的 `-l`{.bash}、`-L`{.bash} 选项！！
 
