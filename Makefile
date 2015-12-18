@@ -46,6 +46,15 @@ i: index
 index:
 	$(MAKE) -C $(POSTS) index
 
+EDITS = \
+_koans/koan-00001.md \
+_notes/note-00001.md \
+_reads/read-00002.md \
+_posts \
+
+it:
+	$(EDITOR) -p $(EDITS) &
+
 f: footer
 footer:
 	$(EDITOR) _parts/footer.html

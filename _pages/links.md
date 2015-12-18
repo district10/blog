@@ -229,3 +229,12 @@ MISC
 
 #. [Recent - metacpan.org](https://metacpan.org/recent)
 #. [Ratings and Reviews for CPAN - cpanratings](http://cpanratings.perl.org/)
+
+#. [Project Tuva: Enhanced Video Player Home - Microsoft Research](http://research.microsoft.com/apps/tools/tuva/index.html#data=2%7C%7C%7C)
+#. [Wangjianshuo's Blog | Events (in Shanghai) that affect my life (and others')](http://wangjianshuo.com/)
+#. [Gu Lu's Blog](http://www.gulu-dev.com/archive)
+#. [Reborn - Again And Again](http://xiaolai.li/)
+
+#. [List of colors](http://www.colorhexa.com/color-names)
+#. [推荐博客 - 博客园](http://www.cnblogs.com/expert/)
+#. [Milo Yip - 博客园](http://www.cnblogs.com/miloyip/)

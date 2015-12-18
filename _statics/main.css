@@ -492,6 +492,15 @@ div#TOC:hover {
 .tzx {
     position: fixed;
     top: 1%;
-    left: 1%;
+    right: 1%;
+    visibility: hidden;
+}
+
+.paste, .hide {
+    padding: 1em;
+    border: 1px dashed helitrope; // hide
+}
+
+.hide {
     visibility: hidden;
 }

@@ -256,4 +256,6 @@ Image Lab
 32 -> 28? -> kernel[3x3]
 
 
-
+<div class="hide">
+can you see me?
+</div>

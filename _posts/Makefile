@@ -7,8 +7,9 @@ IDXPG = $(PODIR)/index.html
 IDXMD = _index_header.md _index_footer.md
 
 CURFILES = \
-post-0068-cxx-gui-programming-with-qt4.md \
+post-0078-learning-perl.md \
 post-0073-opencv-notes.md \
+post-0068-cxx-gui-programming-with-qt4.md \
 post-0074-qt-design-patterns.md \
 post-0072-cvann-mlp.md \
 post-0048-low-poly-in-practice.md \
@@ -19,6 +20,9 @@ post-0057-code-on-windows.md \
 
 # :r!ls post* | tail -n 5 | sort -nr
 
+POST_0080 = $(PODIR)/post-0080-apprenticeship.html
+POST_0079 = $(PODIR)/post-0079-lingoes-dict.html
+POST_0078 = $(PODIR)/post-0078-learning-perl.html
 POST_0077 = $(PODIR)/post-0077-wavelet-transform.html
 POST_0076 = $(PODIR)/post-0076-real-hacker.html
 POST_0075 = $(PODIR)/post-0075-what-is-projection.html
@@ -104,6 +108,7 @@ POST_0002 = $(PODIR)/post-0002-how-to-make-this-blog.html
 POST_0001 = $(PODIR)/post-0001-pandoc-readme.html
 
 POSTS = \
+$(POST_0090) $(POST_0089) $(POST_0088) $(POST_0087) $(POST_0086) $(POST_0085) $(POST_0084) $(POST_0083) $(POST_0082) $(POST_0081) \
 $(POST_0080) $(POST_0079) $(POST_0078) $(POST_0077) $(POST_0076) $(POST_0075) $(POST_0074) $(POST_0073) $(POST_0072) $(POST_0071) \
 $(POST_0070) $(POST_0069) $(POST_0068) $(POST_0067) $(POST_0066) $(POST_0065) $(POST_0064) $(POST_0063) $(POST_0062) $(POST_0061) \
 $(POST_0060) $(POST_0059) $(POST_0058) $(POST_0057) $(POST_0056) $(POST_0055) $(POST_0054) $(POST_0053) $(POST_0052) $(POST_0051) \
@@ -112,7 +117,6 @@ $(POST_0040) $(POST_0039) $(POST_0038) $(POST_0037) $(POST_0036) $(POST_0035) $(
 $(POST_0030) $(POST_0029) $(POST_0028) $(POST_0027) $(POST_0026) $(POST_0025) $(POST_0024) $(POST_0023) $(POST_0022) $(POST_0021) \
 $(POST_0020) $(POST_0019) $(POST_0018) $(POST_0017) $(POST_0016) $(POST_0015) $(POST_0014) $(POST_0013) $(POST_0012) $(POST_0011) \
 $(POST_0010) $(POST_0009) $(POST_0008) $(POST_0007) $(POST_0006) $(POST_0005) $(POST_0004) $(POST_0003) $(POST_0002) $(POST_0001)
-
 
 SOME_POSTS = \
 $(POST_0049) \
