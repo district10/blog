@@ -219,6 +219,9 @@ gq[motion]
 m`b~``
 ```
 
+Control + R &rarr; `reg`(`*`, `=`, etc)
+
+
 ---
 
 Refs

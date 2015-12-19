@@ -1122,6 +1122,86 @@ You can paint whatever you want with delegate, even a button.
 #. CloudCompare 源码里的 signal/slot 用了引用，但由于 Qt 的 signal/slot 机制的问题（需要 signature normalization），
 这样的代码运行（还不是编译期间变慢！）起来会更慢。^[参见我以前的笔记：[直觉上我也觉得用 & 不对](http://dvorak4tzx.lofter.com/post/1d4021c8_7e2c8cf)。]
 
+```
+#include "rapidjson/writer.h"
+#include "rapidjson/stringbuffer.h"
+#include <iostream>
+
+using namespace rapidjson;
+using namespace std;
+
+int main() {
+    StringBuffer s;
+    Writer<StringBuffer> writer(s);
+    
+    writer.StartObject();
+    writer.String("hello");
+    writer.String("world");
+    writer.String("t");
+    writer.Bool(true);
+    writer.String("f");
+    writer.Bool(false);
+    writer.String("n");
+    writer.Null();
+    writer.String("i");
+    writer.Uint(123);
+    writer.String("pi");
+    writer.Double(3.1416);
+    writer.String("a");
+    writer.StartArray();
+    for (unsigned i = 0; i < 4; i++)
+        writer.Uint(i);
+    writer.EndArray();
+    writer.EndObject();
+
+    cout << s.GetString() << endl;
+
+    return 0;
+}
+```
+
+
+```cpp
+#include "rapidjson/reader.h"
+#include <iostream>
+
+using namespace rapidjson;
+using namespace std;
+
+struct MyHandler {
+    bool Null() { cout << "Null()" << endl; return true; }
+    bool Bool(bool b) { cout << "Bool(" << boolalpha << b << ")" << endl; return true; }
+    bool Int(int i) { cout << "Int(" << i << ")" << endl; return true; }
+    bool Uint(unsigned u) { cout << "Uint(" << u << ")" << endl; return true; }
+    bool Int64(int64_t i) { cout << "Int64(" << i << ")" << endl; return true; }
+    bool Uint64(uint64_t u) { cout << "Uint64(" << u << ")" << endl; return true; }
+    bool Double(double d) { cout << "Double(" << d << ")" << endl; return true; }
+    bool String(const char* str, SizeType length, bool copy) { 
+        cout << "String(" << str << ", " << length << ", " << boolalpha << copy << ")" << endl;
+        return true;
+    }
+    bool StartObject() { cout << "StartObject()" << endl; return true; }
+    bool Key(const char* str, SizeType length, bool copy) {
+        cout << "Key(" << str << ", " << length << ", " << boolalpha << copy << ")" << endl;
+        return true;
+    }
+    bool EndObject(SizeType memberCount) { cout << "EndObject(" << memberCount << ")" << endl; return true; }
+    bool StartArray() { cout << "StartArray()" << endl; return true; }
+    bool EndArray(SizeType elementCount) { cout << "EndArray(" << elementCount << ")" << endl; return true; }
+};
+
+int main() {
+    const char json[] = " { \"hello\" : \"world\", \"t\" : true , \"f\" : false, \"n\": null, \"i\":123, \"pi\": 3.1416, \"a\":[1, 2, 3, 4] } ";
+
+    MyHandler handler;
+    Reader reader;
+    StringStream ss(json);
+    reader.Parse(ss, handler);
+
+    return 0;
+}
+```
+
 ---
 
 Refs
