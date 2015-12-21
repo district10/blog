@@ -20,7 +20,7 @@ Quotes | 言论
 
 #. 为什么我们喜欢 Izumi Sakai？因为她的歌欢快、积极、向上。（你以为我喜欢负能量吗？）
 #. 听英文歌比听中文歌好，因为有节奏。听日文歌比听英文歌好，因为有节奏还听不懂；
-#. 选择“花”衣服和“花”的编辑器配色都是为了“好看”，但这两个“好看”不是一回事。^[有感于 [Mars的相册-杂七杂八](http://www.douban.com/photos/photo/1024885043/)。]
+#. 选择“花”裙子和“花”的编辑器配色都是为了“好看”，但这两个“好看”不是一回事。^[有感于 [Mars的相册-杂七杂八](http://www.douban.com/photos/photo/1024885043/)。]
 
 ### Alan Perlis
 
@@ -37,4 +37,4 @@ Quotes | 言论
 ### Notch
 
 #. Just pirate it. If you still like it when you can afford it in the future,
-    but it then. Also don't forget to feel bad. ;)
+    buy it then. Also don't forget to feel bad. ;)

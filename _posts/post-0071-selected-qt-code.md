@@ -828,9 +828,14 @@ void Mouse::advance(int step)
 //! [11]
 ```
 
-
+```cpp
 QHashIterator<QString, int> i(hash);
 while (i.hasNext()) {
     i.next();
     cout << i.key() << ": " << i.value() << endl;
 }
+```
+
+```cpp
+painter->setBrush(dragOver ? color.light(130) : color);
+```
