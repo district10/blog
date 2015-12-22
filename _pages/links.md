@@ -238,3 +238,5 @@ MISC
 #. [List of colors](http://www.colorhexa.com/color-names)
 #. [推荐博客 - 博客园](http://www.cnblogs.com/expert/)
 #. [Milo Yip - 博客园](http://www.cnblogs.com/miloyip/)
+
+#. [JSONiq - The JSON Query Language](http://jsoniq.org/)

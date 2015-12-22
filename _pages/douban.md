@@ -844,3 +844,14 @@ Bovie | 书影
 [![](http://img3.douban.com/view/movie_poster_cover/ipst/public/p475600770.jpg)](http://movie.douban.com/subject/1292401/ "真爱至上 / Love Actually / 爱是您，爱是我(台) / 真的恋爱了(港)")
 [![](http://img4.douban.com/view/movie_poster_cover/ipst/public/p2248627938.jpg)](http://movie.douban.com/subject/21335171/ "三体 / The Three-Body Problem: I")
 [![](http://img3.douban.com/view/movie_poster_cover/ipst/public/p1759336811.jpg)](http://movie.douban.com/subject/1296359/ "我恨你的十件事 / 10 Things I Hate About You / 对面的恶女看过来 / 恋爱新世纪 ")
+
+
+
+---
+
+Read:
+
+#. [影响力 (豆瓣)](http://book.douban.com/subject/1786387/)
+
+To read:
+

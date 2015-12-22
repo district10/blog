@@ -136,6 +136,10 @@ d: dent
 dent:
 	$(MAKE) -C $(PAGES) dent &
 
+db: douban
+douban:
+	$(MAKE) -C $(PAGES) douban &
+
 s: song
 song:
 	$(MAKE) -C $(LYRICS) song &
