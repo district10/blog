@@ -34,7 +34,22 @@ Quotes | 言论
     得太简单了。他们通常不知道问题的所在就提出自己的观点，对错分明，不考虑灰色
     地带，逻辑推理一塌糊涂。
 
-### Notch
+### MISC
 
+#. Programs should be written for people to read, and only incidentally for
+    machines to execute. (--SICP)
 #. Just pirate it. If you still like it when you can afford it in the future,
-    buy it then. Also don't forget to feel bad. ;)
+    buy it then. Also don't forget to feel bad. ;) (--Notch)
+#. I personally don't like invisible formatting tags and I find that WYSIWYG is more like WYCSYCG in practice. (--Coding Horror)
+#. 我中学时很傻 --- 虽然现在也不聪明，但起码知道自己傻了。(--[老王子@豆瓣](http://www.douban.com/people/juedaijiagongzi/))
+#.  15岁觉得游泳难，放弃游泳，到18岁遇到一个你喜欢的人约你去游泳，你只好说“我
+    不会耶”。18岁觉得英文难，放弃英文，28岁出现一个很棒但要会英文的工作，你只好
+    说“我不会耶”。人生前期越嫌麻烦，越懒得学，后来就越可能错过让你动心的人和事
+    ，错过新风景。（--蔡康永）
+
+### Bing
+
+#. Life takes on meaning when you become motivated, set goals and charge after
+    them in an unstoppable manner. -- Les Brown
+#. Everything negative – pressure, challenges – is all an opportunity for me to
+    rise. — Kobe Bryant

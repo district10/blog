@@ -50,19 +50,19 @@ New Features
         + `<header>`{.html}
         + `<nav>`{.html}
         + `<section>`{.html}
-    * New form controls, like `calendar`, `date`, `time`, `email`, `url`, `search`
+    * New form controls, like `calendar`{.html}, `date`{.html}, `time`{.html}, `email`{.html}, `url`{.html}, `search`{.html}
 
 HTML5 New Elements
 ------------------
 
 Why new elements?
 
-:   * Today, several elements in HTML 4.01 are **obsolete**, never used, or not used the way they were intended. 
+:   * Today, several elements in HTML 4.01 are **obsolete**, never used, or not used the way they were intended.
       All those elements are **removed or re-written** in HTML5.
-    * new elements for **drawing graphics**, **displaying media content**, 
-      for better **page structure** and better **form handling**, 
-      and several **new APIs for drag and drop**, 
-      for finding your geological location, 
+    * new elements for **drawing graphics**, **displaying media content**,
+      for better **page structure** and better **form handling**,
+      and several **new APIs for drag and drop**,
+      for finding your geological location,
       for **storing local data**, **and more**.
 
 The New `<canvas>`{.html} Element
@@ -169,7 +169,7 @@ HTML5 Form Elements
         <option value="Opera">
         <option value="Safari">
     </datalist>
-    ``` 
+    ```
 
 `<keygen>`{.html}
 
@@ -181,7 +181,7 @@ HTML5 Form Elements
     </form>
     ```
 
-`<output>{.html}
+`<output>`{.html}
 
 :   ```html
     <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
@@ -191,10 +191,16 @@ HTML5 Form Elements
     </form>
     ```
 
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+        <input type="range"  id="a" value="50">100 +
+        <input type="number" id="b" value="50">=
+        <output name="x" for="a b"></output>
+    </form>
+
 HTML5 Form Attributes
 
 :   * New attributes for `<form>`{.html}: `autocomplete`, `novalidate`
-    * New attributes for `<input>`{.html}: 
+    * New attributes for `<input>`{.html}:
       `autocomplete`{.css} `autofocus`{.css} `form `{.css} `formaction `{.css} `formenctype `{.css}
       `formmethod `{.css} `formnovalidate `{.css} `formtarget `{.css} `height`{.css} `width`{.css}
       `list`{.css} `min`{.css} `max`{.css} `multiple`{.css} `pattern (regexp)`{.css} `placeholder`{.css}
@@ -240,7 +246,7 @@ HTML5 Inline SVG
 
     * SVG is a language for describing 2D graphics in XML.
     * Canvas draws 2D graphics, on the fly (with a JavaScript).
-    * SVG is XML based, which means that every element is available within the SVG DOM. 
+    * SVG is XML based, which means that every element is available within the SVG DOM.
       You can attach JavaScript event handlers for an element.
 
     Comparison of Canvas and SVG
@@ -250,12 +256,21 @@ HTML5 Inline SVG
 HTML5 Video
 
 :   ```html
-    <video width="320" height="240" controls>
-        <source src="movie.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
+    <video width="512" height="288" controls>
+        <source src="game-of-throne.mp4" type="video/mp4">
+        <source src="fallback.ogg" type="video/ogg">
         Your browser does not support the video tag.
     </video>
     ```
+
+    <!--
+    <source src="http://whudoc.qiniudn.com/game-of-throne.mp4" type="video/mp4">
+    -->
+
+    <video width="512" height="288" controls>
+    <source src="game-of-throne.mov" type="video/mov">
+    Your browser does not support the video tag.
+    </video>
 
     Video Formats and Browser Support: MP4, WebM, and Ogg
 
@@ -277,6 +292,10 @@ HTML5 Audio
         Your browser does not support the audio element.
     </audio>
     ```
+
+    <audio controls>
+    <source src="crab.wav" type="audio/ogg">
+    </audio>
 
     Audio Formats and Browser Support: MP3, Wav, and Ogg
 
@@ -304,8 +323,8 @@ HTML5 Geolocation
     }
 
     function showPosition(position) {
-        x.innerHTML = "Latitude: "  + position.coords.latitude + 
-                  "<br>Longitude: " + position.coords.longitude; 
+        x.innerHTML = "Latitude: "  + position.coords.latitude +
+                  "<br>Longitude: " + position.coords.longitude;
     }
     </script>
     ```
@@ -329,14 +348,14 @@ HTML5 Geolocation
 
 HTML5 Drag and Drop
 
-:   Make an Element Draggable(default): `<img draggable="true">`{.html}, 
+:   Make an Element Draggable(default): `<img draggable="true">`{.html},
     see [example](http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_draganddrop)
 
 HTML5 Web Storage
 
 :   With HTML5, web pages can store data locally within the user's browser.
-    Earlier, this was done with `cookies`. However, Web Storage is **more secure and faster**. 
-    The data is not included with every server request, but used ONLY when asked for. 
+    Earlier, this was done with `cookies`. However, Web Storage is **more secure and faster**.
+    The data is not included with every server request, but used ONLY when asked for.
     It is also possible to store large amounts of data, without affecting the website's performance.
 
     * The data is stored in `name/value` pairs, and a web page can only access data stored by itself.
@@ -350,12 +369,12 @@ HTML5 Web Storage
             // Store
             localStorage.setItem( "lastname", "Smith" );
             // Retrieve
-            document.getElementById( "result" ).innerHTML = 
+            document.getElementById( "result" ).innerHTML =
                 localStorage.getItem( "lastname" );
             // Store
             localStorage.lastname = "Smith";
             // Retrieve
-            document.getElementById( "result" ).innerHTML = 
+            document.getElementById( "result" ).innerHTML =
                 localStorage.lastname;
             localStorage.removeItem( "lastname" );
             ```
@@ -366,9 +385,9 @@ HTML5 Web Storage
 
 What is Application Cache?
 
-:   HTML5 introduces `application cache`, which means that a web application is cached, 
-    and accessible without an internet connection. 
-    
+:   HTML5 introduces `application cache`, which means that a web application is cached,
+    and accessible without an internet connection.
+
     3 advantages: `Offline browsing`, `Speed`, `Reduced server load`
 
     HTML5 Cache Manifest Example
@@ -389,17 +408,17 @@ What is Application Cache?
     Updating the Cache
 
     HTML5 Web Workers
-      ~ When executing scripts in an HTML page, 
+      ~ When executing scripts in an HTML page,
         the page becomes unresponsive until the script is finished.
-      ~ A web worker is a JavaScript that runs in the background, 
-        independently of other scripts, without affecting the performance of the page. 
-        You can continue to do whatever you want: clicking, selecting things, etc., 
+      ~ A web worker is a JavaScript that runs in the background,
+        independently of other scripts, without affecting the performance of the page.
+        You can continue to do whatever you want: clicking, selecting things, etc.,
         while the web worker runs in the background.
 
     [HTML5 Server-Sent Events](http://www.w3schools.com/html/html5_serversentevents.asp)
       ~ Server-Sent Events - One Way Messaging
       ~ A server-sent event is when a web page automatically gets updates from a server.
-      ~ This was also possible before, but the web page would have to ask if any updates were available. 
+      ~ This was also possible before, but the web page would have to ask if any updates were available.
         With server-sent events, the updates come automatically.
 
 ---

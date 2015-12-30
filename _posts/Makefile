@@ -1,9 +1,11 @@
 GEN   = ../_gen.sh
 BIB   = ../_bib.sh
 IDX   = ./_index.sh
+IDX2  = ./_index2.sh
 PIDIR = .
 PODIR = ../publish
 IDXPG = $(PODIR)/index.html
+IDXPG2= $(PODIR)/index2.html
 IDXMD = _index_header.md _index_footer.md
 
 CURFILES = \
@@ -20,16 +22,18 @@ post-0057-code-on-windows.md \
 
 # :r!ls post* | tail -n 5 | sort -nr
 
-POST_0080 = $(PODIR)/post-0080-apprenticeship.html
+POST_0081 = $(PODIR)/post-0081-learning-jquery.html
+# POST_0080 = $(PODIR)/post-0080-apprenticeship.html
 POST_0079 = $(PODIR)/post-0079-lingoes-dict.html
-POST_0078 = $(PODIR)/post-0078-learning-perl.html
+# POST_0078 = $(PODIR)/post-0078-learning-perl.html
 POST_0077 = $(PODIR)/post-0077-wavelet-transform.html
 POST_0076 = $(PODIR)/post-0076-real-hacker.html
 POST_0075 = $(PODIR)/post-0075-what-is-projection.html
-POST_0074 = $(PODIR)/post-0074-qt-design-patterns.html
-POST_0073 = $(PODIR)/post-0073-opencv-notes.html
+# POST_0074 = $(PODIR)/post-0074-qt-design-patterns.html
+# POST_0073 = $(PODIR)/post-0073-opencv-notes.html
 POST_0072 = $(PODIR)/post-0072-cvann-mlp.html
-POST_0071 = $(PODIR)/post-0071-selected-qt-code.html
+# POST_0071 = $(PODIR)/post-0071-selected-qt-code.html
+
 POST_0070 = $(PODIR)/post-0070-some-vim-rules.html
 POST_0069 = $(PODIR)/post-0069-gis-spatial-analysis-application-modeling.html
 POST_0068 = $(PODIR)/post-0068-cxx-gui-programming-with-qt4.html
@@ -145,6 +149,10 @@ index: $(IDXPG)
 $(IDXPG): $(IDXMD)
 $(IDXPG): $(POSTS)
 	$(IDX) $@ $(POSTS)
+
+index2: $(IDXPG2)
+$(IDXPG2):
+	$(IDX2) $@
 
 clean:
 	rm -f $(POSTS) $(IDXPG)

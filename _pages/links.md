@@ -240,3 +240,18 @@ MISC
 #. [Milo Yip - 博客园](http://www.cnblogs.com/miloyip/)
 
 #. [JSONiq - The JSON Query Language](http://jsoniq.org/)
+#. [黄正华的教学信息页面](http://aff.whu.edu.cn/huangzh/)
+#. [九章算法 - 帮助更多中国人找到好工作，硅谷顶尖IT企业工程师实时在线授课为你传授面试技巧](http://www.jiuzhang.com/?source=soulmachine)
+#. [soulmachine](http://www.soulmachine.me/)
+#. [欢迎访问武汉大学校园信息门户](http://my.whu.edu.cn/)
+#. [ASCIIFlow Infinity](http://asciiflow.com/)
+#. [果壳任意门 - 发现你最爱的网站](http://gate.guokr.com/)
+#. [Glgoo 学术搜索](http://scholar.glgoo.org/)
+#. [reddit: the front page of the internet](https://www.reddit.com/)
+#. [MathOverflow](http://mathoverflow.net/)
+#. [读立写生](http://cnfeat.com/)
+
+#. [YhL_Leo的博客 - 博客频道 - CSDN.NET](http://blog.csdn.net/yhl_leo)
+#. [Jinge's Blog](http://www.tujinge.com/)
+
+#. [Dependency Walker (depends.exe) Home Page](http://www.dependencywalker.com/)

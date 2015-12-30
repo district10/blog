@@ -50,14 +50,14 @@ HTML Versions
         <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
         "http://www.w3.org/TR/html4/loose.dtd">
         ```
-            
+
     * XHTML 1.0
 
         ```html
         <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
         ```
-    
+
     * for more, see [**DOCTYPE Reference**][doctype-reference]
 
 HTML Basic
@@ -71,7 +71,7 @@ HTML Paragraphs
 
 :   `<p>`{.html} and `</p>`{.html}
 
-HTML Links
+HTML Links (anchor)
 
 :   `<a href="http://www.w3schools.com">This is a link</a>`{.html}
 
@@ -90,16 +90,16 @@ HTML Elements
     * **Notice**
         + Don't Forget the End Tag
         + Empty HTML Elements: `<br>`{.html} (line break) is an empty element **without a closing tag**
-    * HTML Tip: Use **Lowercase** Tags, though it's not case sensitive
+    * HTML Tip: Use **Lowercase** Tags, though it's ** not case sensitive**
 
 HTML Attributes
 
-:   * specified in the start tag
+:   * **specified in the start tag**
     * come in **`name/value` pairs**
     * notice: Always `Quote` Attribute Values, `Double style quotes`: most common, `single style quotes`: also allowed.
     * [HTML Tag Reference](http://www.w3schools.com/tags/default.asp)
     * `<hr>`{.html}: horizontal line
-    * `<!-- This is a comment -->`{.html} : HTML Comments, will not be rendered, 
+    * `<!-- This is a comment -->`{.html} : HTML Comments, will not be rendered,
     * `<!--...-->`{.html} $\leftarrow$ `Ann Lau` style
 
 Text Formatting
@@ -108,26 +108,26 @@ Text Formatting
         + `<b>`{.html}: **bold**, or similarly `<strong>`{.html}
         + `<i>`{.html}: *italic*, or similarly `<em>`{.html}
         + `<sub>`{.html}, `<sup>`{.html}: ~subscripted~ / ^^superscripted^^
-        + `<ins>`{.html}: inserted text
+        + `<ins>`{.html}: <ins>inserted text</ins>
         + `<mark>`{.html}, `<del>`{.html}
     * Computer Output Tags
         + `<code>`{.html}: Defines computer code text
         + `<kbd>`{.html}: keyboard
         + `<samp>`{.html}: sample computer code
         + `<var>`{.html}: variable
-        + `<pre>`{.html}: preformatted text
+        + `<pre>`{.html}: **preformatted text** &hearts;
     * Citations, Quotations, and Definition Tags
         + `<abbr>`{.html}: abbreviation or acronym
         + `<address>`{.html}: contact information for the author/owner of a document
-        + `<bdo>`{.html}: text direction
+        + `<bdo>`{.html}: HTML bidirectional override element. <bdo dir="rtl">(text direction)</bdo>
         + `<blockquote>`{.html} : a section that is quoted from another source
         + `<q>`{.html}: inline (short) quotation
-        + `<site>`{.html}: defines the title of a work
+        + `<cite>`{.html}: defines the title of a work
         + `<dfn>`{.html}: defines a definition term
 
-HTML Links 
+HTML Links
 
-:   * `#href`{.html} to id
+:   * **`#href`{.html} &rarr; id**
     * `<a id="tips">Useful Tips Section</a>`{.html}
     * `<a href="#tips">Visit the Useful Tips Section</a>`{.html}
 
@@ -141,9 +141,9 @@ Target Attribute
 Head Section
 
 :   defines information about the document
-    
+
     The following tags can be added to the head section:
-    `<title>`{.html}, `<style>`{.html}, `<meta>`{.html}, 
+    `<title>`{.html}, `<style>`{.html}, `<meta>`{.html},
     `<link>`{.html}, `<script>`{.html}, `<noscript>`{.html}, and `<base>`{.html}.
 
     * `<base>`{.html}: specifies the base URL/target for all relative URLs in a page
@@ -163,7 +163,7 @@ Head Section
         </head>
         ```
 
-    * `<style>`{.html}: define style information, 
+    * `<style>`{.html}: define style information,
       specify how HTML elements render
 
         ```html
@@ -200,7 +200,7 @@ CSS
         + Font, Color and Size: `style="font-family:arial;color:red;font-size:20px;"`{.html}
         + Text Alignment: `style="text-align:center;"`{.html}
     * Internal Style Sheet
-        + used if **one single document has a unique style** defined 
+        + used if **one single document has a unique style** defined
           in the `<head>`{.html} section, by using the `<style>`{.html} tag
 
             ```html
@@ -214,8 +214,8 @@ CSS
 
     * External Style Sheet
         + ideal when the style is **applied to many pages**
-        + `<link>`{.html} tag goes inside the `<head>`{.html} section
-         
+        + `<link>`{.html} tag goes inside the `<head>`{.html} section (样式与页面是连接关系)
+
             ```html
             <head>
                 <link rel="stylesheet" type="text/css" href="mystyle.css">
@@ -267,7 +267,7 @@ Elements
         </tr>
         </table>
         ```
-        
+
         ```html
         <style>
             table, th, td {
@@ -275,11 +275,11 @@ Elements
             }
         </style>
         ```
-        
+
     * Options
         + Border Attribute: `<table border="1" style="width:300px">`{.html}
         + Text Alignment
-        
+
             ```css
             th {
                 text-align:left;
@@ -293,11 +293,11 @@ Elements
 Elements
 
 :   + `<ol>`{.html}: ordered list
-    + `<ul>`{.html}: unordered list
+    + `<ul>`{.html}: **unordered** list
     + `<dl>`{.html}: description list
     + `<li>`{.html}: list item
-    + `<dt>`{.html}: description term (term/name in a description list)
-    + `<dd>`{.html}: description description
+    + `<dt>`{.html}: **description term** (term/name in a description list)
+    + `<dd>`{.html}: **description description**
 
         ```html
         <ul>
@@ -318,12 +318,12 @@ Elements
 
 ### HTML Blocks
 
-`HTML Elements` 
+`HTML Elements`
 
 :   * `block level elements` or `inline elements`
     * block level elements
         + start and end with a new line when displayed
-        + `<h1>`{.html} `<p>`{.html} `<ul>`{.html} `<table>`{.html} `<div>`{.html}`{.html}
+        + `<h1>`{.html} `<p>`{.html} `<ul>`{.html} `<table>`{.html} `<div>`{.html}
     * inline elments
         + displayed without starting a new line
         + `<b>`{.html} `<td>`{.html} `<a>`{.html} `<img>`{.html} `<span>`{.html}
@@ -332,7 +332,7 @@ Elements
 
 ### HTML Layouts
 
-Using `<div>` elements
+Using `<div>`{.html} elements (a shortening of division)
 
 :   ```html
     <div id="container" style="width:500px">
@@ -361,7 +361,7 @@ Using `<div>` elements
 
 ![div](http://gnat-tang-shared-image.qiniudn.com/blog-Screenshot%20from%202014-02-11%2022:20:36.png)
 
-Using `<table>` elements
+Using `<table>`{.html} elements
 
 :   ```html
     <table width="500" border="0">
@@ -405,7 +405,8 @@ Using `<table>` elements
         + A submit button is used to send form data to a server.
         + The data is sent to the page specified in the form's action attribute.
         + The file defined in the action attribute usually does something with the received input
-        + example: ![submit button](http://gnat-tang-shared-image.qiniudn.com/blog-Screenshot%20from%202014-02-11%2023:11:04.png)
+        + example: <form name="input" action="html_form_action.asp" method="get"> Username: <input type="text" name="user"> <input type="submit" value="Submit"> </form>
+            <!-- ![submit button](http://gnat-tang-shared-image.qiniudn.com/blog-Screenshot%20from%202014-02-11%2023:11:04.png) -->
 
             ```html
             <form name="input" action="html_form_action.asp" method="get">
@@ -414,7 +415,7 @@ Using `<table>` elements
             </form>
             ```
 
-    * special input form element: **drop-down list**
+    * special input form element: **drop-down list**: <form action=""> <select name="cars"> <option value="volvo">Volvo</option> <option value="saab">Saab</option> <option value="fiat" selected>Fiat</option> <option value="audi">Audi</option> </select> </form>
 
         ```html
         <form action="">
@@ -427,7 +428,7 @@ Using `<table>` elements
         </form>
         ```
 
-    * special input form element: **textarea**
+    * special input form element: **textarea**: <textarea rows="10" cols="30"> The cat was playing in the garden.  </textarea>
 
         ```html
         <textarea rows="10" cols="30">
@@ -440,10 +441,10 @@ Using `<table>` elements
 An iframe is used to **display a web page within a web page**, `i` stands for inline
 
 ```html
-<iframe src="demo_iframe.htm" width="200" height="200"></iframe>
-<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
-<p><a href="http://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+<iframe src="http://bl.ocks.org/mbostock/raw/4060366/" width="1000" height="560"></iframe>
 ```
+
+<iframe src="http://bl.ocks.org/mbostock/raw/4060366/" width="1000" height="560"></iframe>
 
 HTML Colors, Color Names
 ------------------------
@@ -482,7 +483,7 @@ HTML Scripts: JavaScript
 
 :   define a client-side script, such as a JavaScript, e.g. `<script> document.write("Hello World!") </script>`{.html}
 
-`<noscript>`
+`<noscript>`{.html}
 
 :   provide an alternate content, `<script>...</script><noscript>Sorry, Your Browser Doesn't Support It</noscript>`{.html}
 
@@ -509,9 +510,10 @@ Be replaced with **character entities**
 * `&nbsp;`{.html}, non breaking space
 * acute, grave, diacritical marks
     + `a&#768;`{.html}, a&#768;
-    + `a&#769;`{.html}, a&#769; 
+    + `a&#769;`{.html}, a&#769;
     + `a&#770;`{.html}, a&#770;
     + `a&#771;`{.html}, a&#771;
+* `&#2610; &#2611;`, &#2610; &#2611;
 
 HTML Symbols
 ------------
@@ -535,7 +537,7 @@ HTML symbols
       `ζ` &zeta; `&zeta;`{.html}, `←` &larr; `&larr;`{.html}, `→` &rarr; `&rarr;`{.html},
       `↑` &uarr; `&uarr;`{.html}, `↓` &darr; `&darr;`{.html}, `♣` &clubs; `&clubs;`{.html},
       `♥` &hearts; `&hearts;`{.html}, `♦` &diams; `&diams;`{.html}, `©` &copy; `&copy;`{.html},
-      `®` &reg; `&reg;`{.html}, `™` &trade; `&trade;`{.html}, 
+      `®` &reg; `&reg;`{.html}, `™` &trade; `&trade;`{.html},
     * Full Refs:
         + [Full Arrows Reference][arrow-refs]
         + [Full Currency Reference][currency-refs]
@@ -551,7 +553,7 @@ HTML Encoding (Character Sets)
 
 What is Character Encoding?
 
-:   * **ASCII** was the first `character encoding standard` (character set): **127**
+:   * **[ASCII](http://dvorak4tzx.lofter.com/post/1d4021c8_95a94e0)** was the first `character encoding standard` (character set): **127**
     * **ANSI (Windows-1252)**, default char set for windows: **256**
     * **ISO-8859-1**, an extension for ASCII, default to HTML4: **256**
     * **Unicode (UTF-8)**, default for HTML5, `covers (almost) all the characters and symbols in the world.`
@@ -639,6 +641,7 @@ Refs
 #. [HTML Entities][html-entities]
 #. [HTML Uniform Resource Locators][html-rc-locator]
 #. [HTML Encoding (Character Sets)][html-encoding]
+#. [`<bdo>` - HTML (HyperText Markup Language) | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo)
 
 [html-css]: http://www.w3schools.com/html/html_css.asp
 [html-image]: http://www.w3schools.com/html/html_images.asp

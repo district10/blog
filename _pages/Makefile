@@ -6,7 +6,7 @@ $(PODIR)/about.html \
 $(PODIR)/days.html \
 $(PODIR)/dents.html \
 $(PODIR)/douban.html \
-$(PODIR)/douban-of-ann.html \
+$(PODIR)/fun.html \
 $(PODIR)/links.html \
 $(PODIR)/quotes.html \
 $(PODIR)/typing.html \
@@ -42,6 +42,10 @@ link:
 db: douban
 douban:
 	$(EDITOR) douban.md
+
+f: fun
+fun:
+	$(EDITOR) fun.md
 
 t: typing
 typing:

@@ -16,6 +16,9 @@ function dvorak4tzx( pathParts ) {
     if ( isLocal ) {
         console.log( 'local. no need for duoshuo & zhanzhang.' );
         show();
+        if ( document.location.toString().endsWith("index.html") ) {
+            document.location = "index2.html"
+        }
     } else {
         // zhanzhang();
         // duoshuo();
@@ -126,3 +129,11 @@ if ( ( isLocal && shallHavePrivilege  )
         }
     });
 }
+
+if ( isLocal && qs['more'] === 'false' ) {
+    if ( document.location.toString().endsWith("index2.html") ) {
+        document.location = "index.html"
+    }
+}
+
+
