@@ -22,6 +22,7 @@ Quotes | 言论
 #. 听英文歌比听中文歌好，因为有节奏。听日文歌比听英文歌好，因为有节奏还听不懂；
 #. 选择“花”裙子和“花”的编辑器配色都是为了“好看”，但这两个“好看”不是一回事。^[有感于 [Mars的相册-杂七杂八](http://www.douban.com/photos/photo/1024885043/)。]
 #. 处女座的洁癖更多是精神上的，你不懂。
+#. 无趣归根结底是读书少、见识少，唉。果然还是我读书多，见识广，眼界宽，动手能力强。
 
 ### Alan Perlis
 
@@ -43,10 +44,11 @@ Quotes | 言论
     buy it then. Also don't forget to feel bad. ;) (--Notch)
 #. I personally don't like invisible formatting tags and I find that WYSIWYG is more like WYCSYCG in practice. (--Coding Horror)
 #. 我中学时很傻 --- 虽然现在也不聪明，但起码知道自己傻了。(--[老王子@豆瓣](http://www.douban.com/people/juedaijiagongzi/))
-#.  15岁觉得游泳难，放弃游泳，到18岁遇到一个你喜欢的人约你去游泳，你只好说“我
+#. 15岁觉得游泳难，放弃游泳，到18岁遇到一个你喜欢的人约你去游泳，你只好说“我
     不会耶”。18岁觉得英文难，放弃英文，28岁出现一个很棒但要会英文的工作，你只好
     说“我不会耶”。人生前期越嫌麻烦，越懒得学，后来就越可能错过让你动心的人和事
     ，错过新风景。（--蔡康永）
+#. 这个心态要放好啊。清华集中了中国最牛逼的一群人。如果在这些人中，还是我最牛逼，那中国就没救了。 ---[张弛@知乎](https://www.zhihu.com/people/zhang-chi-11)
 
 ### Bing
 

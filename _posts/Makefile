@@ -22,6 +22,7 @@ post-0057-code-on-windows.md \
 
 # :r!ls post* | tail -n 5 | sort -nr
 
+POST_0082 = $(PODIR)/post-0082-whu-mooc-academic-integrity.html
 POST_0081 = $(PODIR)/post-0081-learning-jquery.html
 # POST_0080 = $(PODIR)/post-0080-apprenticeship.html
 POST_0079 = $(PODIR)/post-0079-lingoes-dict.html

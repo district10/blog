@@ -40,7 +40,7 @@ Happy \TeX ing!
 
 ### src/1-1-02.tex
 
-```latex
+```tex
 \documentclass[UTF8]{ctexart}
 \begin{document}
 \section{文字}
