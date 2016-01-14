@@ -55,7 +55,7 @@ _koans/koan-00002.md \
 _notes/note-00002.md \
 _reads/read-00002.md \
 _notes/note-00001.md \
-_koans/koan-00001.md \
+_koans/koan-00002.md \
 _reads/read-00001.md \
 _posts \
 

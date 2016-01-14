@@ -28,6 +28,10 @@ Quotes | 言论
 
 #. Lisp programmers know the value of everything but the cost of nothing.^[FYI, SICP 的序是 Alan Perlis 写的。]
 
+### 鲁迅
+
+#. 绝望之为虚妄，正与希望相同
+
 ### 张五常
 
 #. 学习要从假设大师是对入手。（《吾意独怜才》）
@@ -39,16 +43,20 @@ Quotes | 言论
 ### MISC
 
 #. Programs should be written for people to read, and only incidentally for
-    machines to execute. (--SICP)
+    machines to execute. -- SICP
 #. Just pirate it. If you still like it when you can afford it in the future,
-    buy it then. Also don't forget to feel bad. ;) (--Notch)
-#. I personally don't like invisible formatting tags and I find that WYSIWYG is more like WYCSYCG in practice. (--Coding Horror)
-#. 我中学时很傻 --- 虽然现在也不聪明，但起码知道自己傻了。(--[老王子@豆瓣](http://www.douban.com/people/juedaijiagongzi/))
+    buy it then. Also don't forget to feel bad. ;) -- Notch
+#. I personally don't like invisible formatting tags and I find that WYSIWYG is more like WYCSYCG in practice. -- Coding Horror
+#. 我中学时很傻 --- 虽然现在也不聪明，但起码知道自己傻了。(-- [老王子@豆瓣](http://www.douban.com/people/juedaijiagongzi/))
 #. 15岁觉得游泳难，放弃游泳，到18岁遇到一个你喜欢的人约你去游泳，你只好说“我
     不会耶”。18岁觉得英文难，放弃英文，28岁出现一个很棒但要会英文的工作，你只好
     说“我不会耶”。人生前期越嫌麻烦，越懒得学，后来就越可能错过让你动心的人和事
-    ，错过新风景。（--蔡康永）
-#. 这个心态要放好啊。清华集中了中国最牛逼的一群人。如果在这些人中，还是我最牛逼，那中国就没救了。 ---[张弛@知乎](https://www.zhihu.com/people/zhang-chi-11)
+    ，错过新风景。-- 蔡康永
+#. 这个心态要放好啊。清华集中了中国最牛逼的一群人。如果在这些人中，还是我最牛逼，那中国就没救了。 -- [张弛@知乎](https://www.zhihu.com/people/zhang-chi-11)
+#. 在我自己 30 年的学术生涯中，我注意到很多垃圾论文的一个共同特点，就是在保持结
+    果合理的情况下，把问题复杂化，让评委或老师没有时间或耐心细看求解的过程，只
+    好让其过关。这种在争论中把问题复杂化来闪避失败的方法，英文里就叫：If you
+    can’t convince, try to confuse. -- 李小文院士
 
 ### Bing
 

@@ -253,5 +253,9 @@ MISC
 
 #. [YhL_Leo的博客 - 博客频道 - CSDN.NET](http://blog.csdn.net/yhl_leo)
 #. [Jinge's Blog](http://www.tujinge.com/)
+#. [武汉大学慕课研究生学术道德与学术规范作业答案](https://www.zybuluo.com/yhl/note/267200)
 
 #. [Dependency Walker (depends.exe) Home Page](http://www.dependencywalker.com/)
+#. [科学网—lix - 李小文](http://blog.sciencenet.cn/home.php?mod=space&uid=2984)
+#. [Typeof.net](http://typeof.net/index.html)
+#. [laike9m's blog](https://laike9m.com/blog/archive/)
