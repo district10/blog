@@ -52,10 +52,10 @@ index2:
 
 EDITS = \
 _koans/koan-00002.md \
+_koans/koan-00001.md \
 _notes/note-00002.md \
-_reads/read-00002.md \
 _notes/note-00001.md \
-_koans/koan-00002.md \
+_reads/read-00002.md \
 _reads/read-00001.md \
 _posts \
 
@@ -127,6 +127,14 @@ read:
 a: about
 about:
 	$(MAKE) -C $(PAGES) about &
+
+pm: poem
+poem:
+	$(MAKE) -C $(PAGES) poem &
+
+xm: xiami
+xiami:
+	$(MAKE) -C $(PAGES) xiami &
 
 q: quote
 quote:

@@ -11,6 +11,7 @@ Quotes | 言论
 
 #. 我们的生活不可能那么日常
 #. 1 个 trick 胜过 3 个 bound
+#. 素以养绚
 
 ### Albert Einstein
 
@@ -23,6 +24,7 @@ Quotes | 言论
 #. 选择“花”裙子和“花”的编辑器配色都是为了“好看”，但这两个“好看”不是一回事。^[有感于 [Mars的相册-杂七杂八](http://www.douban.com/photos/photo/1024885043/)。]
 #. 处女座的洁癖更多是精神上的，你不懂。
 #. 无趣归根结底是读书少、见识少，唉。果然还是我读书多，见识广，眼界宽，动手能力强。
+#. 看到不想看到的东西，是一种无奈，是一种历史包袱。（我说的是自己余光中的 chatter。）
 
 ### Alan Perlis
 
@@ -64,3 +66,10 @@ Quotes | 言论
     them in an unstoppable manner. -- Les Brown
 #. Everything negative – pressure, challenges – is all an opportunity for me to
     rise. — Kobe Bryant
+
+### 古文
+
+#. 庭有枇杷树，吾妻死之年所手植也，今已亭亭如盖矣。（归有光，《项脊轩志》）
+#. 君问归期未有期，巴山夜雨涨秋池。 何当共剪西窗烛，却话巴山夜雨时。（李商隐，《夜雨寄北》）
+#. 夜来幽梦忽还乡。小轩窗，正梳妆。相顾无言，惟有泪千行。
+#. 悲欢离合总无情，一任阶前，点滴到天明。

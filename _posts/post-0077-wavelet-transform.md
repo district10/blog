@@ -7,7 +7,6 @@
 
 > 这是课程作业（[PDF 版本](http://whudoc.qiniudn.com/tzx-paperwork-wavelet.pdf)，[$\LaTeX$ 源码](http://whudoc.qiniudn.com/paperwork-wavelet.7z)）
 
-
 ## 历史的小波
 
 小波分析（wavelet analysis）或小波转换（wavelet transform）是指用有限长或快速衰
@@ -41,7 +40,7 @@ $f$ 是实数函数，而 ${\hat {f}}$ 则是复数函数，用一个复数来�
 
 :   傅立叶变换将可积函数 f: $\mathbb {R} \rightarrow \mathbb {C}$ 表示成复指数函数的积分或级数形式：
 
-    $${\hat {f}}(\xi )=\int _{-\infty }^{\infty }f(x)\ e^{-2\pi ix\xi }\,dx$$，$\xi$ 为任意实数。 
+    $${\hat {f}}(\xi )=\int _{-\infty }^{\infty }f(x)\ e^{-2\pi ix\xi }\,dx$$，$\xi$ 为任意实数。
 
 ![](http://gnat.qiniudn.com/fourier1.jpg)
 
@@ -166,7 +165,7 @@ Ingrid Daubechies）建立了紧支撑正交小波（compact support orthogonal 
 
 变换（Transformation） | 公式（Representation） | 输入（Input）
 傅立叶变换 & $f(\xi )=\int _{-\infty }^{\infty }f(x)e^{-2\pi ix\xi }\,dx$ & $\xi$: frequency
-小波变换 & $X(a,b)={\frac {1}{\sqrt {a}}}\int _{-\infty }^{\infty }{\overline {\Psi \left({\frac {t-b}{a}}\right)}}x(t)\,dt$ & 
+小波变换 & $X(a,b)={\frac {1}{\sqrt {a}}}\int _{-\infty }^{\infty }{\overline {\Psi \left({\frac {t-b}{a}}\right)}}x(t)\,dt$ &
 
 从公式可以看出，不同于傅立叶变换，变量只有频率 $ξ$，
 小波变换有两个变量：尺度（scaling）$a$ 和平移量（时间偏移）$b$。尺度 $a$ 控制小波
@@ -205,7 +204,7 @@ $$\psi(t) = \begin{cases}1 \quad & 0 \leq t < 1/2,\\ -1 & 1/2 \leq t < 1,\\0 &\m
 
 且对应的尺度函数（scaling function）可表示为：
 
-$$\phi(t) = \begin{cases}1 \quad & 0 \leq t < 1,\\0 &\mbox{otherwise.}\end{cases}$$ 
+$$\phi(t) = \begin{cases}1 \quad & 0 \leq t < 1,\\0 &\mbox{otherwise.}\end{cases}$$
 
 其滤波器（filter）$h[n]$ 被定义为
 
@@ -223,16 +222,16 @@ $$h[n] = : \begin{cases}\frac{1}{\sqrt{2}}&\mbox{if n = 0,1}\\0 &\mbox{otherwise
 
 ##### 性质
 
-哈尔小波具有如下的特性： 
+哈尔小波具有如下的特性：
 
 #. 任一函数都可由 $\phi(t), \phi(2t),\phi(4t),\dots,\phi(2^k t),\dots$ 及它们的位移函数组成；
 #. 一函数都可由常函数，$\psi(t),\psi(2t),\psi(4t),\dots,\psi(2^k t),\dots$ 及它们的位移函数组成；
 #. 正交性（Orthogonal）
-    
+
     即满足：
 
     $$\int_{-\infty}^{\infty}2^m\psi(2^{m_1}t-n_1)\psi(2^mt-n)\, dt=\delta(m,m_1)\delta(n,n_1)$$
-    
+
     其中 $\delta(i,j) = \begin{cases}1&i = j,\\0&\mbox{i≠j.}\end{cases}$。
 
 #. 不同宽度的（不同 $m$）的 wavelet/scaling functions 之间会有一个关系
@@ -254,7 +253,7 @@ $$h[n] = : \begin{cases}\frac{1}{\sqrt{2}}&\mbox{if n = 0,1}\\0 &\mbox{otherwise
 
 $$X_w(a,b)=\frac{1}{\sqrt{|(b)|}} \int_{-\infty}^{\infty} x(t)\psi(\frac{t-a}{b})\, dt$$
 
-$\psi(t)$ 为小波母函数（Mother Wavelet），一个在时间领域和频率领域都有连续性质的函数， 
+$\psi(t)$ 为小波母函数（Mother Wavelet），一个在时间领域和频率领域都有连续性质的函数，
 $a$ 为平移位置而 $b$ 为缩放因子。小波母函数的用途在于提供一个可以产生子波（Daughter Wavelet）的根源函数，
 而子波是小波母函数平移过或缩放过（或两者都有）的版本。如果要将已知且存在的讯号 $x(t)$ 恢复原来的形式，
 我们可以用反转连续小波转换（Inverse Continuous Wavelet Transform）

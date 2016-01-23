@@ -27,7 +27,7 @@ Windows 系统配置
     choco install git.install
     choco install flashplayerplugin
     choco install googlechrome
-    choco install atom 
+    choco install atom
     ```
 
 Vim 配置
@@ -91,3 +91,6 @@ endfunction
 ------------
 
 Qt，CMake，Boost，OpenCV，etc。
+
+
+[Pinta: Painting Made Simple!](http://pinta-project.com/)
