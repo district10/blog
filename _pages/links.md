@@ -275,3 +275,5 @@ MISC
 #. [Jacky Liu's Blog](http://bluegene8210.is-programmer.com/)
 #. [Timothy Guan‑tin Chien](http://timdream.org/#works)
 #. [A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
+#. [NARKOZ/hacker-scripts](https://github.com/NARKOZ/hacker-scripts)
+#. [CVPR 2015 Accepted Papers](http://cs.stanford.edu/people/karpathy/cvpr2015papers/)
