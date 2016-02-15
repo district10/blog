@@ -42,7 +42,7 @@ For example, there is a demo file `demo.md` with content:
 
 ## Case 2: Only Western Characters
 
-The quick brown fox, 
+The quick brown fox,
 jumps over the lazy dog. The quick brown fox
 jumps over the lazy dog.
 
@@ -109,7 +109,7 @@ Pandoc 作者 [jgm (John MacFarlane)](https://github.com/jgm) 的回复：
 
 > Better not "affect line-internal spaces".
 >
-> Spaces are not ever used between two Chinese characters. 
+> Spaces are not ever used between two Chinese characters.
 >
 > Of course there would be someone in some cases to use "注 意 ！ ！ " (A T T E
 > N T I O N ! ! !), but that's not normal. And I recommend they use fullwidth
@@ -174,6 +174,27 @@ softBreakFilter xs = xs
 ```
 
 我现在是五体投地！
+
+P.S. Emacs Org-mode 导出 HTML 的时候也有这个问题，Coldnew 给出了修正代码：
+
+```lisp
+(defadvice org-html-paragraph (before org-html-paragraph-advice
+                                      (paragraph contents info) activate)
+  "Join consecutive Chinese lines into a single long line without
+unwanted space when exporting org-mode to html."
+  (let* ((origin-contents (ad-get-arg 1))
+         (fix-regexp "[[:multibyte:]]")
+         (fixed-contents
+          (replace-regexp-in-string
+           (concat
+            "\\(" fix-regexp "\\) *\n *\\(" fix-regexp "\\)") "\\1\\2" origin-contents)))
+
+    (ad-set-arg 1 fixed-contents)))
+```
+
+见：[去除 org-mode 輸出 HTML 時產生多餘的空格 | coldnew's blog](http://coldnew.github.io/blog/2013/12-17_03349/)。
+
+P.P.S. Coldnew 还是 pangu-spacing 的作者。大赞我处女座。
 
 <!--
 
