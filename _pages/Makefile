@@ -8,6 +8,7 @@ $(PODIR)/dents.html \
 $(PODIR)/douban.html \
 $(PODIR)/fun.html \
 $(PODIR)/links.html \
+$(PODIR)/orgit.html \
 $(PODIR)/poems.html \
 $(PODIR)/quotes.html \
 $(PODIR)/typing.html \
@@ -47,6 +48,10 @@ quote:
 l: link
 link:
 	$(EDITOR) links.md
+
+o: org
+org:
+	$(EDITOR) orgit.md
 
 db: douban
 douban:

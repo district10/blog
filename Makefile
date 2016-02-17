@@ -144,6 +144,10 @@ l: link
 link:
 	$(MAKE) -C $(PAGES) link &
 
+o: org
+org:
+	$(MAKE) -C $(PAGES) org &
+
 day:
 	$(MAKE) -C $(PAGES) day &
     
