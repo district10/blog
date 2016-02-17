@@ -293,3 +293,16 @@ MISC
 #. [emacs - how to org mode image absolute path of export html? - Stack Overflow](http://stackoverflow.com/questions/14684263/how-to-org-mode-image-absolute-path-of-export-html)
 #. http://blog.csdn.net/g9yuayon/
 #. [Lucida](http://lucida.me/)
+
+我把 AsciiFlow 挪过来了，可以在
+
+* <http://whudoc.qiniudn.com/asciiart.html>
+* <http://whudoc.qiniudn.com/asciiflow>
+
+使用。或者下载离线 <http://whudoc.qiniudn.com/asciiflow.7z>
+
+TODO: 给它加一套键盘快捷键。
+
+#. [Graph::Easy - Manual - Overview](http://bloodgate.com/perl/graph/manual/overview.html)
+#. [ProcessOn - Create diagrams online in real-time!](https://www.processon.com/tour)
+#. [GEGeek Tech Toolkit](http://www.gegeek.com/documents/85BB69B2F05486B9332CEA18B8D6E4BE690ADA38.html)
