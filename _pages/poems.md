@@ -327,3 +327,10 @@ Poems | 诗
     为了心中的美好
     不妥协直到变老
     ```
+
+
+<style type="text/css">
+    body {
+        background: #d1d2d4;
+    }
+</style>

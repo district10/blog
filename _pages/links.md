@@ -306,3 +306,6 @@ TODO: 给它加一套键盘快捷键。
 #. [Graph::Easy - Manual - Overview](http://bloodgate.com/perl/graph/manual/overview.html)
 #. [ProcessOn - Create diagrams online in real-time!](https://www.processon.com/tour)
 #. [GEGeek Tech Toolkit](http://www.gegeek.com/documents/85BB69B2F05486B9332CEA18B8D6E4BE690ADA38.html)
+#. [QQ群关系可视化查询 每一个被GFW的网站都是一个伟大的网站](https://qqgroup.insight-labs.org/)
+#. [Pro Git读书笔记 - Kelvin的胡言乱语](http://kelvinh.github.io/wiki/progit/)
+#. [favicon.ico Generator](http://www.favicon.cc/)

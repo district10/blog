@@ -46,9 +46,17 @@ i: index
 index:
 	$(MAKE) -C $(POSTS) index
 
+ri: removeindex
+removeindex:
+	rm -f $(PODIR)/index.html
+
 i2: index2
 index2:
 	$(MAKE) -C $(POSTS) index2
+
+ri2: removeindex2
+removeindex2:
+	rm -f $(PODIR)/index2.html
 
 EDITS = \
 _koans/koan-00002.md \
