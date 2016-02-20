@@ -5,7 +5,7 @@
 我是一只 IT 小小鸟
 ==================
 
-![我是一只 IT 小小鸟](http://gnat-tang-shared-image.qiniudn.com/pictures/it-birds.png) 
+![我是一只 IT 小小鸟](http://gnat-tang-shared-image.qiniudn.com/pictures/it-birds.png)
 
 读后感
 ------
@@ -40,7 +40,7 @@
 * 与师为友，爱你所爱。
 * [大学新逃课族][class-avoider]。
 * 从 QQ 群到 TPL 讨论组。
-* 不要关注太多无关紧要的东西。
+* **不要关注太多无关紧要的东西。**
 
 [juzhenliang]: http://www.zhihu.com/people/wargrey
 [class-avoider]: http://www.people.com.cn/GB/jiaoyu/1054/2236492.html
@@ -83,7 +83,7 @@
 
 * 北大计算机系。
 * 坚持手敲代码。
-* 我和[侯捷][houjie]老师的忘年交。
+* 我和 [侯捷][houjie] 老师的忘年交。
 * 面试故事。
 
 [guxinxing]: http://guxinxing.blogbus.com/
@@ -215,15 +215,15 @@
 
 ### 徐宥 (1984)
 
-[blog][yuyou]
+[blog][xuyou]
 
 * 数理化。
-* 极端自负，极度自卑。
+* **极端自负，极度自卑。**
 * 大一大二：手敲 Thinking in Java, [The TexBook][the-texbook]。
 * 大三大四：A Byte of Python, The Awk Book, 组合数学引论，离散数学。
 * 强烈推荐 Thinking in Java, The TexBook，理论与实践结合的精品书。
 * 疯狂读书计划（读完 TP312 书架）迷茫中准备 GRE。
-* 匆匆读 TAOCP, [编程珠玑][programming-pearls]，但还是受益颇丰。
+* 匆匆读 TAOCP，[编程珠玑][programming-pearls]，但还是受益颇丰。
 * 考研：政治（不用复习，文字游戏），数学很好 136。
 * 面试
     + 微软面试：题目怎么这么熟悉。
@@ -235,7 +235,7 @@
     + $\LaTeX$ 熟练程度。
 * 兔子洞，奇遇记。功底是和大一大二的手敲，大三的苦读分不开的。
 
-[yuyou]: http://blog.youxu.info/
+[xuyou]: http://blog.youxu.info/
 [the-texbook]: http://book.douban.com/subject/1418351/
 [programming-pearls]: http://book.douban.com/subject/1484451/
 

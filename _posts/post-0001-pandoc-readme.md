@@ -1001,7 +1001,7 @@ customize the `default.opendocument` template.  For `pdf` output,
 customize the `default.latex` template.
 
 Templates contain *variables*, which allow for the inclusion of
-arbitrary information at any point in the file. Variables may be set 
+arbitrary information at any point in the file. Variables may be set
 within the document using [YAML metadata blocks][Extension: `yaml_metadata_block`].
 They may also be set at the
 command line using the `-V/--variable` option: variables set in this
@@ -2699,7 +2699,6 @@ not just LaTeX:
 In LaTeX output, the `\newcommand` definition will simply be passed
 unchanged to the output.
 
-
 Links
 -----
 
@@ -2838,7 +2837,7 @@ If you just want a regular inline image, just make sure it is not
 the only thing in the paragraph. One way to do this is to insert a
 nonbreaking space after the image:
 
-    ![This image won't be a figure](/url/of/image.png)\ 
+    ![This image won't be a figure](/url/of/image.png)\
 
 
 Footnotes
