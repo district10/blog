@@ -310,3 +310,4 @@ TODO: 给它加一套键盘快捷键。
 #. [Pro Git读书笔记 - Kelvin的胡言乱语](http://kelvinh.github.io/wiki/progit/)
 #. [favicon.ico Generator](http://www.favicon.cc/)
 #. [IPN](http://ipn.li/)
+#. [nil](http://blog.qinjian.me/)
