@@ -311,3 +311,4 @@ TODO: 给它加一套键盘快捷键。
 #. [favicon.ico Generator](http://www.favicon.cc/)
 #. [IPN](http://ipn.li/)
 #. [nil](http://blog.qinjian.me/)
+#. [子龙山人](http://zilongshanren.com/)
