@@ -259,3 +259,4 @@ MISC
 #. [科学网—lix - 李小文](http://blog.sciencenet.cn/home.php?mod=space&uid=2984)
 #. [Typeof.net](http://typeof.net/index.html)
 #. [laike9m's blog](https://laike9m.com/blog/archive/)
+#.  http://www.fffffun.com/subscribe
