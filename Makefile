@@ -11,6 +11,11 @@ IDXPG=$(PODIR)/index.html
 IDXPG2=$(PODIR)/index2.html
 
 all: koans reads notes pages posts statics lyrics $(IDXPG) $(IDXPG2)
+koans reads notes pages posts statics lyrics $(IDXPG) $(IDXPG2): $(PODIR) EXE
+$(PODIR):
+	mkdir -p $(PODIR)
+EXE:
+		chmod +x */*.sh
 
 gh: github
 github:
