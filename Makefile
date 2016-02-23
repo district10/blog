@@ -7,8 +7,10 @@ READS=_reads
 STATICS=_statics
 LYRICS=_miscs/lyrics
 AG=_ag.sh
+IDXPG=$(PODIR)/index.html
+IDXPG2=$(PODIR)/index2.html
 
-all: koans reads notes pages posts statics lyrics
+all: koans reads notes pages posts statics lyrics $(IDXPG) $(IDXPG2)
 
 gh: github
 github:
@@ -42,6 +44,7 @@ pts: posts
 posts:
 	$(MAKE) -C $(POSTS)
 
+$(IDXPG): i
 i: index
 index:
 	$(MAKE) -C $(POSTS) index
@@ -50,6 +53,7 @@ ri: removeindex
 removeindex:
 	rm -f $(PODIR)/index.html
 
+$(IDXPG2): i2
 i2: index2
 index2:
 	$(MAKE) -C $(POSTS) index2
