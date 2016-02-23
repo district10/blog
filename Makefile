@@ -15,7 +15,8 @@ koans reads notes pages posts statics lyrics $(IDXPG) $(IDXPG2): $(PODIR) EXE
 $(PODIR):
 	mkdir -p $(PODIR)
 EXE:
-		chmod +x */*.sh
+	chmod +x */*.sh
+	# TODO: AHA
 
 gh: github
 github:
