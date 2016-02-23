@@ -128,6 +128,10 @@ p: post
 post:
 	$(MAKE) -C $(POSTS) post &
 
+hdr: header
+header:
+	$(MAKE) -C $(POSTS) header &
+
 r: read
 read:
 	$(MAKE) -C $(READS) read &

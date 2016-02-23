@@ -3,8 +3,8 @@ NOW   = ../_now.sh
 INDEX = ./_index.sh
 PODIR = ../publish
 NOTES = \
-note-00001.md \
 note-00002.md \
+note-00001.md \
 
 NOTES_HTML = \
 $(PODIR)/note-00003.html \
@@ -23,7 +23,7 @@ $(PODIR)/notes.html: $(NOTES_HTML)
 	$(INDEX) $@ $(NOTES_HTML)
     
 n: note
-note: now
+note:
 	$(EDITOR) $(firstword $(NOTES))
 
 now:

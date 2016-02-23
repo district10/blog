@@ -12,16 +12,13 @@ Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序�
 [^emacs]: [Emacs - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Emacs)。
 
 <div id="buckets">
-
 <div><a href="koans.html">Koans | 呓语</a></div>
 <div><a href="orgit.html">Orgit | 唐凤</a></div>
 <div><a href="about.html">About | 关于</a></div>
 <div class="tzx">
 <div><a href="notes.html">Notes | 笔记</a></div><br>
 <div><a href="reads.html">Reads | 斋读</a></div><br>
-<div><a href="dents.html">Dents | 乱象</a></div>
-</div>
+<div><a href="dents.html">Dents | 乱象</a></div></div></div><hr />
 
-</div><hr />
 <div style="font-variant:small-caps;">Posts</div>
-<div class="posts"><!-- 下面要有空行 | One Empty Line Reserved Below -->
+<div class="posts"><!--...-->

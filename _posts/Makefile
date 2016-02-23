@@ -176,6 +176,10 @@ p: post
 post:
 	$(EDITOR) $(firstword $(CURFILES))
 
+hdr: header
+header:
+	$(EDITOR) $(firstword $(IDXMD))
+
 m: make
 make:
 	$(EDITOR) Makefile
