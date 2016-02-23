@@ -260,3 +260,58 @@ MISC
 #. [Typeof.net](http://typeof.net/index.html)
 #. [laike9m's blog](https://laike9m.com/blog/archive/)
 #.  http://www.fffffun.com/subscribe
+#. [Mp3tag - Download](http://www.mp3tag.de/en/download.html)
+#. [科学网—施一公的博客 - 施一公](http://blog.sciencenet.cn/home.php?mod=space&uid=46212)
+#. [我国在校研究生的学术贡献有多大？](http://mp.weixin.qq.com/s?__biz=MzA3NTU5NzMwNw==&mid=211741323&idx=5&sn=3adfa48bf8a1eeda284c361c85621009#rd)
+#. [最高法院法官告诉你，诉讼文书这样写才规范](http://mp.weixin.qq.com/s?__biz=MzA4NDYwNTE4Mg==&mid=207798324&idx=5&sn=7f70171babef70007e44c79679e139b8&scene=2&from=timeline&isappinstalled=0#rd)
+#. [科研诚信的中国式难题](http://mp.weixin.qq.com/s?__biz=MzA3OTgzMzUzOA==&mid=209250210&idx=1&sn=4248f3d2ffed9b5ba57fc9f861135cc9&scene=2&from=timeline&isappinstalled=0#rd)
+#. [Woboq Code Browser](http://code.woboq.org/)
+#. [LaTeXStudio](http://www.latexstudio.net/)
+#. [nothingisreal.com](http://en.nothingisreal.com/wiki/Tristan_Miller)
+#. [ZType – Typing Game - Type to Shoot](http://zty.pe/)
+#. [My Page on Github](http://baohaojun.github.io/blog/2011/12/23/index.html)
+#. [辛未羊的博客](http://panqiincs.github.io/)
+#. [统计之都 (Capital of Statistics) | 中国统计学门户网站，免费统计学服务平台 | 做正直的统计学网站](http://cos.name/)
+#. [Weavi](https://weavi.com/92079/Z2oSFk5UfDsuUKLfNVOl-g)
+#. [Jacky Liu's Blog](http://bluegene8210.is-programmer.com/)
+#. [Timothy Guan‑tin Chien](http://timdream.org/#works)
+#. [A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
+#. [NARKOZ/hacker-scripts](https://github.com/NARKOZ/hacker-scripts)
+#. [CVPR 2015 Accepted Papers](http://cs.stanford.edu/people/karpathy/cvpr2015papers/)
+#. [Blog Archive - Emacs Redux](http://emacsredux.com/blog/archives/)
+#. [Table of Contents](http://tuhdo.github.io/index.html)
+#. [OpenJudge - 百练 - 首页](http://www.bailian.openjudge.cn/)
+#. [Useful Emacs Commands](http://irreal.org/emacs-reminders.html)
+#. [kieranhealy.org](http://kieranhealy.org/)
+#. [号码归属地查询_服务与支持_中国移动通信](http://www.10086.cn/support/selfservice/ownership/)
+#. [What the .emacs.d!?](http://whattheemacsd.com/)
+#. [visual-regexp](https://github.com/benma/visual-regexp.el)
+#. [coldnew's blog](http://coldnew.github.io/)
+#. [ゆっくりでいいさ](http://blog.watashi.ws/)
+#. [Org-mode Emacs 下的瑞士軍刀](http://coldnew.github.io/COSCUP2013_org-mode/slide.html#1)
+#. [Org Mode - Organize Your Life In Plain Text!](http://doc.norang.ca/org-mode.html)
+#. [Publishing Org-mode files to HTML](http://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html)
+#. [emacs - how to org mode image absolute path of export html? - Stack Overflow](http://stackoverflow.com/questions/14684263/how-to-org-mode-image-absolute-path-of-export-html)
+#. http://blog.csdn.net/g9yuayon/
+#. [Lucida](http://lucida.me/)
+
+我把 AsciiFlow 挪过来了，可以在
+
+* <http://whudoc.qiniudn.com/asciiart.html>
+* <http://whudoc.qiniudn.com/asciiflow>
+
+使用。或者下载离线 <http://whudoc.qiniudn.com/asciiflow.7z>
+
+TODO: 给它加一套键盘快捷键。
+
+#. [Graph::Easy - Manual - Overview](http://bloodgate.com/perl/graph/manual/overview.html)
+#. [ProcessOn - Create diagrams online in real-time!](https://www.processon.com/tour)
+#. [GEGeek Tech Toolkit](http://www.gegeek.com/documents/85BB69B2F05486B9332CEA18B8D6E4BE690ADA38.html)
+#. [QQ群关系可视化查询 每一个被GFW的网站都是一个伟大的网站](https://qqgroup.insight-labs.org/)
+#. [Pro Git读书笔记 - Kelvin的胡言乱语](http://kelvinh.github.io/wiki/progit/)
+#. [favicon.ico Generator](http://www.favicon.cc/)
+#. [IPN](http://ipn.li/)
+#. [nil](http://blog.qinjian.me/)
+#. [子龙山人](http://zilongshanren.com/)
+#. [Jacob Kaplan-Moss](https://jacobian.org/)
+#. [真 OO无双 - 博客园](http://www.cnblogs.com/oomusou/)

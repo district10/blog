@@ -114,10 +114,10 @@ plugins=(git colored-man)
 
 ```bash
 # sudo aptitude install -t wheezy-backports emacs24-lucid # this work?
-# I didn't try. Lets compile from source (get it from USTC mirror site, 
+# I didn't try. Lets compile from source (get it from USTC mirror site,
 # `wget http://mirrors.ustc.edu.cn/gnu/emacs/emacs-24.3.tar.xz`)
 apt-get install libxaw7-dev libxpm-dev libpng12-dev libtiff5-dev \
-                libgif-dev libjpeg8-dev libgtk2.0-dev libncurses5-dev  
+                libgif-dev libjpeg8-dev libgtk2.0-dev libncurses5-dev
 cd emacs-24.3
 mkdir build && cd build
 ../configure
@@ -148,7 +148,7 @@ emacs -nw --batch -l ~/.emacs.d/init.el -f package-refresh-contents
 * xcape
 * [Banner](http://www.cyberciti.biz/faq/create-large-colorful-text-banner-on-screen/)
 
-### Vim 
+### Vim
 
 简单的
 
@@ -185,15 +185,15 @@ sudo make install
 
 ```bash
 sudo apt-get install flex bison build-essential gcc-multilib
-cd gcc-4.9.1 && ./contrib/download_prerequisites 
+cd gcc-4.9.1 && ./contrib/download_prerequisites
 mkdir build && cd build
 # ../configure --prefix=/opt/gcc_4_9 --program-suffix=-4.9 \
 --enable-languages=c,c++ --enable-multilib \
---build=x86_64-linux-gnu --enable-checking=release 
+--build=x86_64-linux-gnu --enable-checking=release
 ../configure --prefix=/home/gnat/bin/gcc --program-suffix=-4.9 \
 --enable-languages=c,c++ --enable-multilib \
---build=x86_64-linux-gnu --enable-checking=release 
-make -j # origin: make -j4, Modified by gnat 
+--build=x86_64-linux-gnu --enable-checking=release
+make -j # origin: make -j4, Modified by gnat
 make install
 ```
 
@@ -210,7 +210,7 @@ SET(CMAKE_CXX_FLAGS "-std=c++11") # Add c++11 functionality
 
 [C++ 的 man 文档](https://github.com/jeaye/stdman)，超赞！
 
-![`man std::string::c_str`{.bash}](http://upload-images.jianshu.io/upload_images/29284-3e49d6b577894f60.gif)
+![`man std::string::c_str`{.bash}](http://whudoc.qiniudn.com/stdman.gif)
 
 ### [gPhoto2](http://www.yannock.be/computer/compiling-gphoto2-on-the-raspberry-pi)
 
@@ -376,7 +376,7 @@ Deps:
 ag 搜索源码的好工具
 
 ```bash
-apt-get install silversearcher-ag 
+apt-get install silversearcher-ag
 ```
 
 Windows 二进制：<http://gnat.qiniudn.com/ag.exe>
@@ -396,7 +396,7 @@ sudo gem install tmuxinator
 
 [Wemux](https://github.com/zolrath/wemux)
 
-![wemux](http://upload-images.jianshu.io/upload_images/29284-e8032350ed4a7d86.png)
+![wemux](http://whudoc.qiniudn.com/wemux.png)
 
 ```bash
 sudo git clone git://github.com/zolrath/wemux.git /usr/local/share/wemux

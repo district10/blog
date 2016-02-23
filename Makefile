@@ -7,8 +7,16 @@ READS=_reads
 STATICS=_statics
 LYRICS=_miscs/lyrics
 AG=_ag.sh
+IDXPG=$(PODIR)/index.html
+IDXPG2=$(PODIR)/index2.html
 
-all: koans reads notes pages posts statics lyrics
+all: koans reads notes pages posts statics lyrics $(IDXPG) $(IDXPG2)
+koans reads notes pages posts statics lyrics $(IDXPG) $(IDXPG2): $(PODIR) EXE
+$(PODIR):
+	mkdir -p $(PODIR)
+EXE:
+	chmod +x */*.sh
+	# TODO: AHA
 
 gh: github
 github:
@@ -16,7 +24,7 @@ github:
 
 qn: qiniu
 qiniu:
-	qrsync conf.json
+	qrsync ~/conf/blog.json
 
 ag:
 	$(AG) $(k)
@@ -42,20 +50,30 @@ pts: posts
 posts:
 	$(MAKE) -C $(POSTS)
 
+$(IDXPG): i
 i: index
 index:
 	$(MAKE) -C $(POSTS) index
 
+ri: removeindex
+removeindex:
+	rm -f $(PODIR)/index.html
+
+$(IDXPG2): i2
 i2: index2
 index2:
 	$(MAKE) -C $(POSTS) index2
 
+ri2: removeindex2
+removeindex2:
+	rm -f $(PODIR)/index2.html
+
 EDITS = \
 _koans/koan-00002.md \
+_koans/koan-00001.md \
 _notes/note-00002.md \
-_reads/read-00002.md \
 _notes/note-00001.md \
-_koans/koan-00002.md \
+_reads/read-00002.md \
 _reads/read-00001.md \
 _posts \
 
@@ -120,6 +138,10 @@ p: post
 post:
 	$(MAKE) -C $(POSTS) post &
 
+hdr: header
+header:
+	$(MAKE) -C $(POSTS) header &
+
 r: read
 read:
 	$(MAKE) -C $(READS) read &
@@ -128,6 +150,14 @@ a: about
 about:
 	$(MAKE) -C $(PAGES) about &
 
+pm: poem
+poem:
+	$(MAKE) -C $(PAGES) poem &
+
+xm: xiami
+xiami:
+	$(MAKE) -C $(PAGES) xiami &
+
 q: quote
 quote:
 	$(MAKE) -C $(PAGES) quote &
@@ -135,6 +165,10 @@ quote:
 l: link
 link:
 	$(MAKE) -C $(PAGES) link &
+
+o: org
+org:
+	$(MAKE) -C $(PAGES) org &
 
 day:
 	$(MAKE) -C $(PAGES) day &
