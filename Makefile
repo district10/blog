@@ -24,7 +24,7 @@ github:
 
 qn: qiniu
 qiniu:
-	qrsync conf.json
+	qrsync ~/conf/blog.json
 
 ag:
 	$(AG) $(k)
