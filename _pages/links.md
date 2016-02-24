@@ -315,3 +315,4 @@ TODO: 给它加一套键盘快捷键。
 #. [子龙山人](http://zilongshanren.com/)
 #. [Jacob Kaplan-Moss](https://jacobian.org/)
 #. [真 OO无双 - 博客园](http://www.cnblogs.com/oomusou/)
+#. [Getting started - asciinema](https://asciinema.org/docs)

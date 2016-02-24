@@ -21,6 +21,14 @@ EXE:
 gh: github
 github:
 	git add -A && git commit -m "lazy commit" && git push
+status:
+	git status
+diff:
+	git diff
+push:
+	git push
+pull:
+	git pull
 
 qn: qiniu
 qiniu:
