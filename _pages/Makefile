@@ -20,7 +20,7 @@ clean:
 	rm -f $(PAGES)
 
 $(PODIR)/%.html: %.md
-	cat $^ | $(GEN) $@ &
+	cat $^ | $(GEN) $@
     
 a: about
 about:

@@ -78,7 +78,7 @@ _reads/read-00001.md \
 _posts \
 
 it:
-	$(EDITOR) -p $(EDITS) &
+	$(EDITOR) -p $(EDITS)
 
 f: footer
 footer:
@@ -128,107 +128,107 @@ clean:
 # write
 k: koan
 koan:
-	$(MAKE) -C $(KOANS) koan &
+	$(MAKE) -C $(KOANS) koan
 
 n: note
 note:
-	$(MAKE) -C $(NOTES) note &
+	$(MAKE) -C $(NOTES) note
 
 p: post
 post:
-	$(MAKE) -C $(POSTS) post &
+	$(MAKE) -C $(POSTS) post
 
 hdr: header
 header:
-	$(MAKE) -C $(POSTS) header &
+	$(MAKE) -C $(POSTS) header
 
 r: read
 read:
-	$(MAKE) -C $(READS) read &
+	$(MAKE) -C $(READS) read
     
 a: about
 about:
-	$(MAKE) -C $(PAGES) about &
+	$(MAKE) -C $(PAGES) about
 
 pm: poem
 poem:
-	$(MAKE) -C $(PAGES) poem &
+	$(MAKE) -C $(PAGES) poem
 
 xm: xiami
 xiami:
-	$(MAKE) -C $(PAGES) xiami &
+	$(MAKE) -C $(PAGES) xiami
 
 q: quote
 quote:
-	$(MAKE) -C $(PAGES) quote &
+	$(MAKE) -C $(PAGES) quote
 
 l: link
 link:
-	$(MAKE) -C $(PAGES) link &
+	$(MAKE) -C $(PAGES) link
 
 o: org
 org:
-	$(MAKE) -C $(PAGES) org &
+	$(MAKE) -C $(PAGES) org
 
 day:
-	$(MAKE) -C $(PAGES) day &
+	$(MAKE) -C $(PAGES) day
     
 d: dent
 dent:
-	$(MAKE) -C $(PAGES) dent &
+	$(MAKE) -C $(PAGES) dent
 
 db: douban
 douban:
-	$(MAKE) -C $(PAGES) douban &
+	$(MAKE) -C $(PAGES) douban
 
 fun:
-	$(MAKE) -C $(PAGES) fun &
+	$(MAKE) -C $(PAGES) fun
 
 s: song
 song:
-	$(MAKE) -C $(LYRICS) song &
+	$(MAKE) -C $(LYRICS) song
 
 t: typing
 typing:
-	$(MAKE) -C $(PAGES) typing &
+	$(MAKE) -C $(PAGES) typing
 
 # make make
 m: make
 make:
-	$(EDITOR) Makefile &
+	$(EDITOR) Makefile
 
 mk: mkKoans
 mkKoans:
-	$(MAKE) -C $(KOANS) make &
+	$(MAKE) -C $(KOANS) make
 
 mn: mkNotes
 mkNotes:
-	$(MAKE) -C $(NOTES) make &
+	$(MAKE) -C $(NOTES) make
 
 mpg: mkPages
 mkPages:
-	$(MAKE) -C $(PAGES) make &
+	$(MAKE) -C $(PAGES) make
 
 mpt: mkPosts
 mkPosts:
-	$(MAKE) -C $(POSTS) make &
+	$(MAKE) -C $(POSTS) make
 
 mr: mkReads
 mkReads:
-	$(MAKE) -C $(READS) make &
+	$(MAKE) -C $(READS) make
 
 ms: mkStatics
 mkStatics:
-	$(MAKE) -C $(STATICS) make &
+	$(MAKE) -C $(STATICS) make
 
 ml: mkLyrics
 mkLyrics:
-	$(MAKE) -C $(LYRICS) make &
+	$(MAKE) -C $(LYRICS) make
 
 c: css
 css:
-	$(MAKE) -C $(STATICS) css &
+	$(MAKE) -C $(STATICS) css
 
 j: js
 js:
-	$(MAKE) -C $(STATICS) js &
+	$(MAKE) -C $(STATICS) js
