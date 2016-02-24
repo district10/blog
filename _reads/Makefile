@@ -16,7 +16,7 @@ clean:
 	rm $(PODIR)/read-*.html
 
 $(PODIR)/%.html: _read_header.md %.md _read_footer.md
-	cat $^ | $(GEN) $@ &
+	cat $^ | $(GEN) $@
 
 $(PODIR)/reads.html: $(READS_HTML)
 	$(INDEX) $@ $(READS_HTML)

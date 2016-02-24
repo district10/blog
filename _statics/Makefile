@@ -20,6 +20,8 @@ $(PODIR)/tzxshow.js \
 
 STATICS = \
 $(UTILS) \
+$(PODIR)/asciinema-player.css \
+$(PODIR)/asciinema-player.js \
 $(PODIR)/cc-80x15.png \
 $(PODIR)/external.gif \
 $(PODIR)/favicon.ico \
@@ -45,6 +47,10 @@ $(PODIR)/%: utils/%
 	cp $< $@
 $(PODIR)/%.txt: %.md
 	cp $< $@
+
+m: make
+make:
+	$(EDITOR) Makefile
 
 css:
 	$(EDITOR) main.css
