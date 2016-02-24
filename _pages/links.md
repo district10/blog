@@ -259,6 +259,7 @@ MISC
 #. [科学网—lix - 李小文](http://blog.sciencenet.cn/home.php?mod=space&uid=2984)
 #. [Typeof.net](http://typeof.net/index.html)
 #. [laike9m's blog](https://laike9m.com/blog/archive/)
+#.  http://www.fffffun.com/subscribe
 #. [Mp3tag - Download](http://www.mp3tag.de/en/download.html)
 #. [科学网—施一公的博客 - 施一公](http://blog.sciencenet.cn/home.php?mod=space&uid=46212)
 #. [我国在校研究生的学术贡献有多大？](http://mp.weixin.qq.com/s?__biz=MzA3NTU5NzMwNw==&mid=211741323&idx=5&sn=3adfa48bf8a1eeda284c361c85621009#rd)

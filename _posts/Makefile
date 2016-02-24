@@ -132,8 +132,7 @@ $(POST_0014) $(POST_0013) $(POST_0010) $(POST_0004) $(POST_0001)
 PDFS = $(patsubst %.html, %.pdf, $(SOME_POSTS))
 
 # all: $(POSTS) $(IDXPG)
-all: $(POSTS)
-
+all: $(POSTS) index index2
 
 index: $(IDXPG)
 $(IDXPG): $(IDXMD)
@@ -141,7 +140,7 @@ $(IDXPG): $(POSTS)
 	$(IDX) $@ $(POSTS)
 
 index2: $(IDXPG2)
-$(IDXPG2):
+$(IDXPG2): $(IDXMD)
 	$(IDX2) $@
 
 clean:
