@@ -9,6 +9,7 @@ IDXPG2= $(PODIR)/index2.html
 IDXMD = _index_header.md _index_footer.md
 
 CURFILES = \
+post-0085-cvrs-presentation.md \
 post-0078-learning-perl.md \
 post-0073-opencv-notes.md \
 post-0068-cxx-gui-programming-with-qt4.md \
@@ -137,8 +138,8 @@ all: $(POSTS) index index2
 
 index: $(IDXPG)
 $(IDXPG): $(IDXMD)
-$(IDXPG): $(POSTS)
 	$(IDX) $@ $(POSTS)
+# $(IDXPG): $(POSTS)
 
 index2: $(IDXPG2)
 $(IDXPG2): $(IDXMD)

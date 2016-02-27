@@ -31,8 +31,8 @@ pull:
 	git pull
 
 qn: qiniu
-qiniu:
-	qrsync ~/conf/blog.json
+qiniu: 
+	qrsync conf.json
 
 ag:
 	$(AG) $(k)

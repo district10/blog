@@ -316,3 +316,6 @@ TODO: 给它加一套键盘快捷键。
 #. [Jacob Kaplan-Moss](https://jacobian.org/)
 #. [真 OO无双 - 博客园](http://www.cnblogs.com/oomusou/)
 #. [Getting started - asciinema](https://asciinema.org/docs)
+#. [VT100.net: A parser for DEC’s ANSI-compatible video terminals](http://vt100.net/emu/dec_ansi_parser)
+#. [Projects - Val Markovic](https://val.markovic.io/projects)
+#. [Home - Val Markovic](https://val.markovic.io/)
