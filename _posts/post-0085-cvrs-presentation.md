@@ -24,7 +24,15 @@ Presentation
 ### RegExP - `R`AMP
 
 1. everything
+
+
 2. ag
+
+
+* [ggreer/the_silver_searcher: A code-searching tool similar to ack, but faster.](https://github.com/ggreer/the_silver_searcher)
+
+`ag 'gpu::cornerHarris\(.*src.*\)'`{.bash}
+
 3. notepad++
 
 Why You Need It.
@@ -38,6 +46,11 @@ pic 1, pic 2
 2. Async in C++: STL, Boost, folly
 
 3. Async for What?
+
+
+
+* [facebook/folly: An open-source C++ library developed and used at Facebook.](https://github.com/facebook/folly)
+
 
 drastic change.
 
@@ -147,6 +160,7 @@ cout << "Result: " << f.get() << endl;
 double f( double input ) {
     return input * M_PI; // M_PI = 3.14...
 }
+```
 
 ```cpp
 #include <folly/futures/Future.h>
@@ -221,8 +235,88 @@ done
 
 ### no distraction
 
+```cpp
+freopen( "log-stdout.txt", "w", stdout );
+freopen( "log-stderr.txt", "w", stderr );
+```
+
+```bash
+$ ls -l        >   stdout.txt
+$ grep da *   2>   stderr.txt
+$ ag da *     &>   stdout-n-stderr.txt
+
+$ your-binary.exe &> log.txt
+```
+
+```bash
+$ your-binary.exe | tee log.txt | less -F
+```
+
+```cpp
+// double.c
+#include <stdio.h>
+
+int main( void )
+{
+    float f;
+    scanf( "%f", &f );
+    printf( "%f\n", 2.0f * f );
+    return 0;
+}
+```
+
+```bash
+$ gcc double.c -o double
+$ double
+23<RET>
+46.000000
+$ echo 23 | double
+46.000000
+$ echo 23 | triple
+69.000000
+$ echo 23 | double | triple
+138.000000
+```
+
+
+```bash
+#!/bin/bash
+
+for i in *.raw;
+do
+    o=${i%.*}.txt
+    echo "$i => $o"
+    ../raw2pts $i $o
+    rm $i
+done
+```
+
+```makefile
+input   = input
+output  = output
+pts	    = $(patsubst $(input)/%.raw, $(output)/%.txt, $(wildcard $(input)/*.raw))
+allpts  = $(output)/all.txt
+
+all: raw2pts $(pts) $(allpts)
+
+$(allpts): $(pts)
+	cat $^ > $@
+
+$(pts): $(output)
+$(output):
+	mkdir -p $@
+
+$(pts): raw2pts
+raw2pts:
+	gcc raw2pts.c -o $@
+
+$(output)/%.txt: $(input)/%.raw
+	raw2pts $< $@
+```
+
 # Refs
 
 #. [Futures for C++11 at Facebook - June 19, 2015](https://code.facebook.com/posts/1661982097368498)
 #. [Everything Searching Options](http://www.voidtools.com/support/everything/searching/)
 #. [BASH Programming - Introduction HOW-TO: All about redirection](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-3.html)
+#. [Flow (psychology) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Flow_(psychology))
