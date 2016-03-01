@@ -8,10 +8,12 @@ Game of Throne
 <style>
 html {
     background-image: url(http://whudoc.qiniudn.com/got-series-bg-blur.jpg);
-    background-color: rgba( 0, 0, 0, 0.5 );
+    background-color: rgba( 255, 255, 255, 0.5 );
+    background-position: top-center;
+    background-attachment: fixed;
 }
 body {
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.6) 60%);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%);
 }
 body {
     color: white;
