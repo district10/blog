@@ -43,7 +43,8 @@ Links | 链签
 #. [Tetris](https://jake-eaton.com/tetris/)
 #. [花瓣采集工具-花瓣](http://huaban.com/about/goodies/)
 #. [1001 Fonts · Free Fonts Baby!](http://www.1001fonts.com/)
-#. [The Bézier Game](http://bezier.method.ac/)
+#. [The Bézier Game](http://bezier.method.ac/) %bezier
+#. [Welcome to Method of Action](http://method.ac/) %bezier %kern %color
 #. [cppreference.com](http://en.cppreference.com/w/)
 #. [百度云 网盘-_insomnia_的分享](http://pan.baidu.com/share/home?uk=2919707929#category/type=0)
 #. [共享我收藏的Coursera、Udacity等课程【百度云】（...](http://www.douban.com/group/topic/44748285/)
@@ -319,3 +320,5 @@ TODO: 给它加一套键盘快捷键。
 #. [VT100.net: A parser for DEC’s ANSI-compatible video terminals](http://vt100.net/emu/dec_ansi_parser)
 #. [Projects - Val Markovic](https://val.markovic.io/projects)
 #. [Home - Val Markovic](https://val.markovic.io/)
+#. [SVG-edit](https://svg-edit.github.io/svgedit/releases/svg-edit-2.8.1/svg-editor.html)
+#. [hub · the command-line wrapper for git](https://hub.github.com/)

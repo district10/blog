@@ -693,7 +693,7 @@ QWidgetAction *TextureEditor::createEditModeToolButton()
 
 actionEditMode =
         createEditModeToolButton();
-        
+
 menuEdit->addAction( actionEditMode );
 ```
 
@@ -809,35 +809,35 @@ Syntax:
 #. `QMessageBox::warning(parent, title, message, buttons)`{.cpp}
 
     ```cpp
-    void           about(QWidget * parent, 
-                         const QString & title, 
+    void           about(QWidget * parent,
+                         const QString & title,
                          const QString & text)
 
-    void           aboutQt(QWidget * parent, 
+    void           aboutQt(QWidget * parent,
                            const QString & title = QString())
 
-    StandardButton critical(QWidget * parent, 
-                            const QString & title, 
-                            const QString & text, 
-                            StandardButtons buttons = Ok, 
+    StandardButton critical(QWidget * parent,
+                            const QString & title,
+                            const QString & text,
+                            StandardButtons buttons = Ok,
                             StandardButton defaultButton = NoButton)
 
-    StandardButton information(QWidget * parent, 
-                               const QString & title, 
-                               const QString & text, 
-                               StandardButtons buttons = Ok, 
+    StandardButton information(QWidget * parent,
+                               const QString & title,
+                               const QString & text,
+                               StandardButtons buttons = Ok,
                                StandardButton defaultButton = NoButton)
 
-    StandardButton question(QWidget * parent, 
-                            const QString & title, 
-                            const QString & text, 
-                            StandardButtons buttons = Ok, 
+    StandardButton question(QWidget * parent,
+                            const QString & title,
+                            const QString & text,
+                            StandardButtons buttons = Ok,
                             StandardButton defaultButton = NoButton)
 
-    StandardButton warning(QWidget * parent, 
-                           const QString & title, 
-                           const QString & text, 
-                           StandardButtons buttons = Ok, 
+    StandardButton warning(QWidget * parent,
+                           const QString & title,
+                           const QString & text,
+                           StandardButtons buttons = Ok,
                            StandardButton defaultButton = NoButton)
     ```
 
@@ -853,9 +853,9 @@ Syntax:
     dialog.setNameFilters(filters);
     dialog.exec();
 
-    QStringList QFileDialog::getOpenFileNames ( QWidget * parent = 0, 
-                                                const QString & caption = QString(), 
-                                                const QString & dir = QString(), 
+    QStringList QFileDialog::getOpenFileNames ( QWidget * parent = 0,
+                                                const QString & caption = QString(),
+                                                const QString & dir = QString(),
                                                 const QString & filter = QString(),
                                                 QString * selectedFilter = 0,
                                                 Options options = 0 ); [static]
@@ -1127,8 +1127,8 @@ and `QFileDialog`{.cpp}. These functions create a dialog, initialize it, and cal
 #### Storing Settings
 
 ```cpp
-QSettings::QSettings(const QString & organization, 
-                     const QString & application = QString(), 
+QSettings::QSettings(const QString & organization,
+                     const QString & application = QString(),
                      QObject * parent = 0)
 ```
 
@@ -1153,7 +1153,7 @@ void MainWindow::readSettings()
     recentFiles = settings.value("recentFiles").toStringList();
     updateRecentFileActions();
 
-    // QVariant QSettings::value(const QString & key, 
+    // QVariant QSettings::value(const QString & key,
     //                           const QVariant & defaultValue = QVariant())
     bool showGrid = settings.value("showGrid", true).toBool();
     showGridAction->setChecked(showGrid);
@@ -1552,7 +1552,7 @@ QVariant Cell::evalFactor(const QString &str, int &pos) const
 
 ```cpp
 QSpinBox::setRange(0, 255);
-QRegExpValidator *validator = 
+QRegExpValidator *validator =
         new QRegExpValidator(QRegExp("[0-9A-Fa-f]{1,8}"), this);
 
 // called by QSpinBox when the user types a value into the editor part of the
@@ -1576,7 +1576,7 @@ QString HexSpinBox::textFromValue(int value) const
 // validate() function, so we simply return the result of calling it. In
 // theory, we should return Invalid or Intermediate for evalues that lie
 // outside the spin box's range, but QSpinBox is smart enough to detect that
-// condition without any help.  
+// condition without any help.
 QValidator::State HexSpinBox::validate(QString &text, int &pos) const
 {
     return validator->validate(text, pos);
@@ -1926,7 +1926,7 @@ public:
     // Designer in a tool tip.
     QString toolTip() const;
 
-    // true if the widget can contain other widgets; 
+    // true if the widget can contain other widgets;
     // otherwise, it returns false
     bool isContainer() const;
 
@@ -3255,10 +3255,10 @@ points. Positions are specified as floating-point values between 0 and 1, where
 Colors between the specified stops are linearly interpolated.
 
 ```cpp
-QPen::QPen(const QBrush & brush, 
-           qreal width, 
-           Qt::PenStyle style = Qt::SolidLine, 
-           Qt::PenCapStyle cap = Qt::SquareCap, 
+QPen::QPen(const QBrush & brush,
+           qreal width,
+           Qt::PenStyle style = Qt::SolidLine,
+           Qt::PenCapStyle cap = Qt::SquareCap,
            Qt::PenJoinStyle join = Qt::BevelJoin)
 ```
 
@@ -3536,7 +3536,7 @@ void OvenTimer::draw(QPainter *painter)
     knobGradient.setColorAt(0.8, Qt::white);
     knobGradient.setColorAt(1.0, Qt::black);
 
-    // rotate the painter's coordinate system 
+    // rotate the painter's coordinate system
     painter->rotate(duration() * DegreesPerSecond);
     painter->setBrush(knobGradient);
     painter->setPen(thinPen);
@@ -3558,13 +3558,13 @@ void OvenTimer::draw(QPainter *painter)
 }
 
 ```
- 
+
 The code in the for loop suffers from a minor flaw, which would quickly become
 apparent if we performed more iterations. Each time we call `rotate()`{.cpp},
 we effectively multiply the current world transform with a rotation transform,
 producing a new world transform. The rounding errors associated with
 floating-point arithmetic gradually accumulate, resulting in an increasingly
-inaccurate world transform. 
+inaccurate world transform.
 
 Here's one way to rewrite the code to avoid this
 issue, using `save()`{.cpp} and `restore()`{.cpp} to save and reload the
@@ -4057,7 +4057,7 @@ int Node::roundness(double size) const
     can be made.
 
     ```cpp
-    // QVariant QGraphicsItem::itemChange(GraphicsItemChange change, 
+    // QVariant QGraphicsItem::itemChange(GraphicsItemChange change,
     //                                    const QVariant & value)
 
     ```cpp
@@ -4109,8 +4109,8 @@ private:
 
     QMenu *fileMenu;
     QMenu *editMenu;
-    QToolBar *editToolBar; // QAction *exitAction; QAction *addNodeAction; 
-    QAction *addLinkAction; // QAction *deleteAction; 
+    QToolBar *editToolBar; // QAction *exitAction; QAction *addNodeAction;
+    QAction *addLinkAction; // QAction *deleteAction;
     QAction *copyAction; // QAction *pasteAction; QAction *cutAction;
     QAction *bringToFrontAction;
     QAction *sendToBackAction;
@@ -4440,7 +4440,7 @@ void CityBlock::paint(QPainter *painter,
         gradient.setColorAt(1.0, color.darker(coeff));
         // If the factor is greater than 100, this functions returns a darker
         // color. Setting factor to 300 returns a color that has one-third the
-        // brightness. 
+        // brightness.
         painter->fillPath(shape, gradient);
     }
 }
@@ -4652,7 +4652,7 @@ void MainWindow::dropEvent(QDropEvent *event)
     if (readFile(fileName))
         setWindowTitle(tr("%1 - %2").arg(fileName)
                                     .arg(tr("Drag File")));
-}        
+}
 ```
 
 ```cpp
@@ -4811,13 +4811,13 @@ without formality. But if we want to drag custom data, we must choose among the 
         QString text = clipboard->text(QClipboard::Selection);
     }
     ```
-    
+
     `enum QClipboard::Mode`{.cpp}
       ~ `Clipboard`: <kbd>Control+C</kbd>, <kbd>Control+V</kbd>
       ~ `Selection`: mouse selection, register `*` in Vim
 
 If we want to be notified whenever the clipboard's contents change, we can
-connect the `QClipboard::dataChanged()`{.cpp} signal to a custom slot. 
+connect the `QClipboard::dataChanged()`{.cpp} signal to a custom slot.
 Also, `void QClipboard::changed(QClipboard::Mode mode)`{.cpp}.
 
 ### 10. Item View Classes
@@ -5033,8 +5033,8 @@ void TeamLeadersDialog::insert()
     returns false.
 
     ```cpp
-    bool QAbstractItemModel::insertRows(int row, 
-                                        int count, 
+    bool QAbstractItemModel::insertRows(int row,
+                                        int count,
                                         const QModelIndex & parent
                                                 = QModelIndex())
     ```
@@ -5295,8 +5295,8 @@ QVariant CurrencyModel::data(const QModelIndex &index, int role) const
 `QString::arg()`{.cpp}
 
 :   ```cpp
-    QString QString::arg(const QString & a, 
-                         int fieldWidth = 0, 
+    QString QString::arg(const QString & a,
+                         int fieldWidth = 0,
                          const QChar & fillChar = QLatin1Char( ' ' )) const
     ```
 
@@ -5312,7 +5312,7 @@ QVariant CurrencyModel::data(const QModelIndex &index, int role) const
         ```
 
     ```cpp
-    QString QString::arg(const QString & a1, 
+    QString QString::arg(const QString & a1,
                          const QString & a2) const
     ```
 
@@ -5330,14 +5330,14 @@ QVariant CurrencyModel::data(const QModelIndex &index, int role) const
         ```
 
     * similarities
-    
+
         ```cpp
-        QString QString::arg(const QString & a1, 
-                             const QString & a2, 
+        QString QString::arg(const QString & a1,
+                             const QString & a2,
                              const QString & a3) const
-        QString QString::arg(const QString & a1, 
-                             const QString & a2, 
-                             const QString & a3, 
+        QString QString::arg(const QString & a1,
+                             const QString & a2,
+                             const QString & a3,
                              const QString & a4) const
         a1..a5
         a1..a6
@@ -5346,8 +5346,8 @@ QVariant CurrencyModel::data(const QModelIndex &index, int role) const
         ```
 
     ```cpp
-    QString QString::arg({[u]short,[u]int,[u]long,q[u]longlong} a, 
-                          int fieldWidth = 0, 
+    QString QString::arg({[u]short,[u]int,[u]long,q[u]longlong} a,
+                          int fieldWidth = 0,
                           int base = 10,
                           const QChar & fillChar = QLatin1Char( ' ' )) const
     ```
@@ -5355,7 +5355,7 @@ QVariant CurrencyModel::data(const QModelIndex &index, int role) const
     * The `%` can be followed by an `L`, in which case the sequence is replaced
       with a localized representation of `a`. The conversion uses the default locale,
       set by `QLocale::setDefault()`{.cpp}. If no default locale was specified, the `C`
-      locale is used. The `L` flag is ignored if base is not 10.  
+      locale is used. The `L` flag is ignored if base is not 10.
 
         ```cpp
         QString str;
@@ -5372,18 +5372,18 @@ QVariant CurrencyModel::data(const QModelIndex &index, int role) const
         ```
 
     ```cpp
-    QString QString::arg({QChar,char} a, 
-                         int fieldWidth = 0, 
+    QString QString::arg({QChar,char} a,
+                         int fieldWidth = 0,
                          const QChar & fillChar = QLatin1Char( ' ' )) const
     ```
 
     * This function overloads `arg()`{.cpp}.
 
     ```cpp
-    QString QString::arg(double a, 
-                         int fieldWidth = 0, 
-                         char format = 'g', 
-                         int precision = -1, 
+    QString QString::arg(double a,
+                         int fieldWidth = 0,
+                         char format = 'g',
+                         int precision = -1,
                          const QChar & fillChar = QLatin1Char( ' ' )) const
     ```
 
@@ -5545,7 +5545,7 @@ void TrackDelegate::paint(QPainter *painter,
                        .arg(secs / 60, 2, 10, QChar('0'))
                        .arg(secs % 60, 2, 10, QChar('0'));
 
-        // copy the current style options and overwrite the default alignment 
+        // copy the current style options and overwrite the default alignment
         QStyleOptionViewItem myOption = option;
         myOption.displayAlignment = Qt::AlignRight | Qt::AlignVCenter;
 
@@ -5896,7 +5896,7 @@ foreach (movie, list) {
 // If [] is used to retrieve a value for a non-existent key in a non-const map,
 // a new item will be created with the given key and an empty value. To avoid
 // accidentally creating empty values, we can use the value() function to
-// retrieve items instead of []: 
+// retrieve items instead of []:
 int val = map["dreiundzwanzig"];        // bad
 int val = map.value("dreiundzwanzig");  // better
 
@@ -6009,7 +6009,7 @@ STL-style iterators.
 
 The STL `<algorithm>` header provides a more complete set of generic
 algorithms. These algorithms can be used on Qt containers as well as STL
-containers. 
+containers.
 
 `qFind`{.cpp}
 
@@ -6071,7 +6071,7 @@ containers.
     The qStableSort() algorithm is similar to qSort(), except it guarantees
     that items that compare equal appear in the same order after the sort as
     before.  This is useful if the sort criterion takes into account only parts
-    of the value and the results are visible to the user. 
+    of the value and the results are visible to the user.
 
 ```cpp
 qDeleteAll(list);
@@ -6162,7 +6162,7 @@ The `QVariant`{.cpp} class can hold values of many Qt types, including
 `QFont`{.cpp}, `QKeySequence`{.cpp}, `QPalette`{.cpp}, `QPen`{.cpp},
 `QPixmap`{.cpp}, `QPoint`{.cpp}, `QRect`{.cpp}, `QRegion`{.cpp}, `QSize`{.cpp},
 and `QString`{.cpp}, as well as basic C++ numeric types such as double and int.
-The `QVariant`{.cpp} class can also hold containers: `QMap<QString, QVariant>`{.cpp}, 
+The `QVariant`{.cpp} class can also hold containers: `QMap<QString, QVariant>`{.cpp},
 `QStringList`{.cpp}, and `QList<QVariant>`{.cpp}.
 
 ```cpp
@@ -6331,11 +6331,11 @@ if (magic != MagicNumber) {
 in.setVersion(streamVersion);
 ```
 
-In summary, there are three policies for handling `QDataStream`{.cpp} versions: 
+In summary, there are three policies for handling `QDataStream`{.cpp} versions:
 
 #. hard-coding the version number,
-#. explicitly writing and reading the version number, and 
-#. using different hard-coded version numbers depending on the application's version. 
+#. explicitly writing and reading the version number, and
+#. using different hard-coded version numbers depending on the application's version.
 
 Any of these policies can be used to ensure that data written by an old version
 of an application can be read by a new version, even if the new version links
@@ -6847,7 +6847,7 @@ Part III: Advanced Qt
 
 #### Making Applications Translation-Aware
 
-A `tr()`{.cpp} call has the following general syntax: 
+A `tr()`{.cpp} call has the following general syntax:
 `Context::tr(sourceText, comment)`{.cpp}
 
 The most general way of translating a string in Qt is to use the
@@ -7087,7 +7087,7 @@ QLineEdit,
 QListView {
     color: rgb(127, 0, 63);
     background-color: rgb(255, 255, 241);
-    selection-color: white; 
+    selection-color: white;
     selection-background-color: rgb(191, 31, 127);
     border: 2px groove gray;
     border-radius: 10px;

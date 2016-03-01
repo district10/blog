@@ -5,12 +5,17 @@
 About | 关于
 ============
 
-这是 TANG ZhiXiong 的博客。全部博客内容托管在 GitHub，用 Markdown 写，用 Makefile 管理，用 Pandoc 和 Bash 脚本转化成 HTML，同步到七牛。简单粗糙，但美观实用。
+我的个人主页：<http://tangzhixiong.com>。
 
+这是 TANG ZhiXiong 的博客。全部博客内容托管在 GitHub，用 Markdown 写，用 Makefile 管理，用 Pandoc 和 Bash 脚本转化成 HTML，同步到七牛。简单粗糙，但美观实用。
 后来有了 Emacs 和 org-mode 部分，在 [orgit](orgit/)。
 
-- Markdown + Vim + command line
-- org-mode + Emacs (batteries included)
+布局上的原则是：永远不弄成响应式。尺度固定。
+
+这个博客基本上分离在两条流水线：
+
+- Markdown + Vim + Command line，这边用起来比较简单；
+- org-mode + Emacs (batteries included)，这边功能强大，可以加密一些私人的东西。而且 org-mode 支持文学化编程（或者说程序化文档）。
 
 博客源码在
 

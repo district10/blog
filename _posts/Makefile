@@ -9,6 +9,7 @@ IDXPG2= $(PODIR)/index2.html
 IDXMD = _index_header.md _index_footer.md
 
 CURFILES = \
+post-0086-game-of-throne-series.md \
 post-0085-cvrs-presentation.md \
 post-0078-learning-perl.md \
 post-0073-opencv-notes.md \
@@ -23,6 +24,7 @@ post-0057-code-on-windows.md \
 
 # :r!ls post* | tail -n 5 | sort -nr
 
+POST_0086 = $(PODIR)/post-0086-game-of-throne-series.html
 POST_0085 = $(PODIR)/post-0085-cvrs-presentation.html
 POST_0084 = $(PODIR)/post-0084-complex-network-notes.html
 #POST_0083 = $(PODIR)/post-0082-whu-mooc-academic-integrity.html

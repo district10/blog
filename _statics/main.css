@@ -221,9 +221,6 @@ caption {
 
 a {
     text-decoration: none;
-    // external
-    // padding-right: 13px;
-    // background: url('external.gif') no-repeat right 1px;
 }
 
 a:hover {
@@ -231,6 +228,8 @@ a:hover {
 }
 
 a.external {
+    padding-right: 13px;
+    background: url('external.gif') no-repeat right 1px;
 }
 
 h1:before h2:before h3:before {
@@ -392,6 +391,28 @@ p a img:hover {
 #cc {
     padding-top: 20px;
     float: right;
+}
+
+#tzxhomepage {
+    position: fixed;
+    clear: none;
+    right: 0px;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+#tzxhomepage > img:nth-child(1) {
+    opacity: 0.05;
+}
+
+#tzxhomepage > img:nth-child(1):hover {
+    opacity: 1.0;
+}
+
+#tzxhomepage:hover {
+    background-color: rgba(255, 255, 255, 1.0);
+    transition: all 1s ease-in-out;
+    display: ;
 }
 
 .posts li {
