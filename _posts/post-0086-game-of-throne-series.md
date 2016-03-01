@@ -46,6 +46,8 @@ img {
 
 Plan: EP.4 -> EP.5 -> EP.6 -> EP.1 -> EP.2 -> EP.3 -> EP.7
 
+TODO: 自己写这里的介绍文字。
+
 ---
 
 **Arya Stark** <img src="http://whudoc.qiniudn.com/Arya,_Ned_and_Syrio_1x03.jpg?imageView2/2/w/150" align="right">
