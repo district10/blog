@@ -129,6 +129,10 @@ Search:<br>
         padding-left: 2em;
         font-size: 60%;
     }
+    tzx-suggestion-tagline {
+        padding-left: 2em;
+        font-size: 60%;
+    }
 </style>
 
 <script src="auto-complete.js"></script>
@@ -170,6 +174,10 @@ new autoComplete({
              +  ' href="' + link_prefix + item.url + '">'
              +              link_prefix + item.url.replace(re, "<b>$1</b>")
              +  '</a>'
+             +  '<br/>'
+             +  '<div class="tzx-suggestion-tagline">'
+             +      item.query.join(' & ').replace(re, "<b>$1</b>")
+             +  '</div>'
              +  '</div>';
         return dom;
     },
