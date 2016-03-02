@@ -1,13 +1,10 @@
-GEN   = ../_gen.sh
+GEN   = ../_bin/_gen.sh
 PODIR = ../publish
-INDEX = ./_index.sh
-READS = \
-read-00002.md \
-read-00001.md \
+INDEX = ../_bin/reads_index.sh
 
-READS_HTML = \
-$(PODIR)/read-00002.html \
-$(PODIR)/read-00001.html \
+MDS = $(wildcard read*.md)
+READS_HTML = $(addprefix $(PODIR)/, $(MDS:%.md=%.html))
+READS = $(MDS)
 
 all: $(PODIR)/reads.html $(READS_HTML)
 

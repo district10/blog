@@ -1,15 +1,11 @@
-GEN   = ../_gen.sh
-NOW   = ../_now.sh
-INDEX = ./_index.sh
+GEN   = ../_bin/_gen.sh
+NOW   = ../_bin/_now.sh
+INDEX = ../_bin/notes_index.sh
 PODIR = ../publish
-NOTES = \
-note-00002.md \
-note-00001.md \
 
-NOTES_HTML = \
-$(PODIR)/note-00003.html \
-$(PODIR)/note-00002.html \
-$(PODIR)/note-00001.html \
+MDS = $(wildcard note*.md)
+NOTES_HTML = $(addprefix $(PODIR)/, $(MDS:%.md=%.html))
+NOTES = $(MDS)
 
 all: $(PODIR)/notes.html $(NOTES_HTML)
 

@@ -320,3 +320,91 @@ $(output)/%.txt: $(input)/%.raw
 #. [Everything Searching Options](http://www.voidtools.com/support/everything/searching/)
 #. [BASH Programming - Introduction HOW-TO: All about redirection](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-3.html)
 #. [Flow (psychology) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Flow_(psychology))
+
+<style>
+.tzx-tab-menu > dl > dt {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 2px 15px 5px;
+    border: 1px solid #000;
+    list-style: none;
+    display: inline;
+    background-color: #ffc;
+    cursor: point;
+}
+
+.tzx-tab-menu > dl > dd {
+//     display: none;
+}
+
+.tzx-display-none {
+    display: none;
+}
+
+</style>
+
+<div id="tabdemo">
+* 项目列表一anoedi anastoei
+* 项目列表二
+
+<li class="selected">项目列表三</li>
+
+* 项目列表四
+</ul>
+</div>
+
+<div class="tzx-tab-menu">
+good
+
+:   nice too see you
+
+
+nice
+
+:   ```cpp
+    int count( struct TreeNode *root )
+    {
+        if ( !root ) { return 0; }
+        return 1+count(root->right)+count(root->left);
+    }
+
+    void traverse( struct TreeNode *root, int *data, int *cursor )
+    {
+        if ( !root ) { return; }
+        traverse( root->left, data, cursor );
+        data[(*cursor)++] = root->val;
+        traverse( root->right, data, cursor );
+    }
+
+    int* inorderTraversal(struct TreeNode* root, int* returnSize) {
+        *returnSize = count( root );
+        int *data = malloc( sizeof(int)*(*returnSize) );
+        int cursor = 0;
+        traverse( root, data, &cursor );
+        return data;
+    }
+    ```
+</div>
+
+
+<script>
+function hideMenu( m )
+{
+    for ( var i = 1; i < m.children[0].children.length; i += 2 ) {
+        //    dl         dd
+        m.children[0].children[i].className = 'tzx-display-none';
+    }
+}
+
+// init
+var tms = document.getElementsByClassName('tzx-tab-menu')
+for ( var i = 0; i < tms.length; ++i ) {
+    hideMenu( tms[i] );
+    // tms[i].children[0].children[1].className = '';
+    tms[i].children[0].children[0].onClick = function( e ) {
+        console.log( 'hit' );
+        hideMenu( e.target.parentElement.parentElement );
+        e.target.nextElementSibling.className = '';
+    }
+}
+</script>

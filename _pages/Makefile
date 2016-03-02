@@ -1,18 +1,7 @@
-GEN   = ../_gen.sh
+GEN   = ../_bin/_gen.sh
 PODIR = ../publish
-PAGES = \
-$(PODIR)/404.html \
-$(PODIR)/about.html \
-$(PODIR)/days.html \
-$(PODIR)/dents.html \
-$(PODIR)/douban.html \
-$(PODIR)/fun.html \
-$(PODIR)/links.html \
-$(PODIR)/orgit.html \
-$(PODIR)/poems.html \
-$(PODIR)/quotes.html \
-$(PODIR)/typing.html \
-$(PODIR)/xiami.html \
+MDS   = $(wildcard *.md)
+PAGES = $(addprefix $(PODIR)/, $(MDS:%.md=%.html))
 
 all: $(PAGES)
 
@@ -22,6 +11,10 @@ clean:
 $(PODIR)/%.html: %.md
 	cat $^ | $(GEN) $@
     
+4: 404
+404:
+	$(EDITOR) 404.md
+
 a: about
 about:
 	$(EDITOR) about.md

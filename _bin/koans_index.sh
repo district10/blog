@@ -7,13 +7,13 @@ shift
 
 ( \
 cat ${SRC}/_index_header.md; \
-    ( for READ in $*; \
+    ( for KOAN in $*; \
     do \
-        LINK=`basename ${READ}`; \
+        LINK=`basename ${KOAN}`; \
         FILE=`head -n1 ${SRC}/${LINK%.*}.md`; \
         echo -e "\n* [${FILE}](${LINK})"; \
     done; \
     ) | sed '/^$/d' | sort -nr; \
 cat ${SRC}/_index_footer.md; \
 ) | \
-pandoc -S -s --ascii -c main.css -A ../_parts/footer.html --toc -f markdown+table_captions -o ${DST}
+pandoc -S -s --ascii -c main.css -A ../footer.html --toc -f markdown+table_captions -o ${DST}

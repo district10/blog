@@ -9,6 +9,8 @@ LYRICS=_miscs/lyrics
 AG=_ag.sh
 IDXPG=$(PODIR)/index.html
 IDXPG2=$(PODIR)/index2.html
+GENIDX=_bin/posts_index.sh
+GENIDX2=_bin/posts_index2.sh
 
 all: koans reads notes pages posts statics lyrics $(IDXPG) $(IDXPG2)
 koans reads notes pages posts statics lyrics $(IDXPG) $(IDXPG2): $(PODIR) EXE
@@ -61,16 +63,15 @@ posts:
 $(IDXPG): i
 i: index
 index:
-	$(MAKE) -C $(POSTS) index
+	$(GENIDX) $(IDXPG)
 
 ri: removeindex
 removeindex:
 	rm -f $(PODIR)/index.html
 
 $(IDXPG2): i2
-i2: index2
-index2:
-	$(MAKE) -C $(POSTS) index2
+i2:
+	$(GENIDX2) $(IDXPG2)
 
 ri2: removeindex2
 removeindex2:
@@ -92,9 +93,10 @@ f: footer
 footer:
 	$(EDITOR) _parts/footer.html
 
-sts: statics
 statics:
-	$(MAKE) -C $(STATICS)
+	rsync $(STATICS)/utils/*		$(PODIR)/
+	rsync $(STATICS)/imgs/*		$(PODIR)/
+	rsync $(STATICS)/*		$(PODIR)/
 
 lrc: lyrics
 lyrics:
@@ -120,10 +122,6 @@ cleanPages:
 cpts: cleanPosts    
 cleanPosts:
 	$(MAKE) -C $(POSTS) clean
-
-csts: cleanStatics
-cleanStatics:
-	$(MAKE) -C $(STATICS) clean
 
 clrc: cleanLyrics
 cleanLyrics:
@@ -225,18 +223,6 @@ mr: mkReads
 mkReads:
 	$(MAKE) -C $(READS) make
 
-ms: mkStatics
-mkStatics:
-	$(MAKE) -C $(STATICS) make
-
 ml: mkLyrics
 mkLyrics:
 	$(MAKE) -C $(LYRICS) make
-
-c: css
-css:
-	$(MAKE) -C $(STATICS) css
-
-j: js
-js:
-	$(MAKE) -C $(STATICS) js

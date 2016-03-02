@@ -13,7 +13,7 @@ for i in $*; do \
     echo -e "\n"; \
 done; \
 cat _lyrics_footer.md; \
-cat ../../_parts/footer.html; \
+cat ../../footer.html; \
 ) | \
 pandoc \
 -S -s --ascii -f markdown -c main.css \

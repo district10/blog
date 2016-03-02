@@ -1,14 +1,11 @@
-GEN   = ../_gen.sh
-NOW   = ../_now.sh
-INDEX = ./_index.sh
+GEN   = ../_bin/_gen.sh
+NOW   = ../_bin/_now.sh
+INDEX = ../_bin/koans_index.sh
 PODIR = ../publish
-KOANS_HTML = \
-$(PODIR)/koan-00002.html \
-$(PODIR)/koan-00001.html \
 
-KOANS = \
-koan-00002.md \
-koan-00001.md \
+MDS = $(wildcard koan*.md)
+KOANS_HTML = $(addprefix $(PODIR)/, $(MDS:%.md=%.html))
+KOANS = $(MDS)
 
 all: $(PODIR)/koans.html $(KOANS_HTML)
 

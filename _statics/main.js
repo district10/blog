@@ -87,7 +87,6 @@ function appendSharp() {
 
 appendSharp();
 
-
 // from: http://stackoverflow.com/questions/2907482/how-to-get-the-query-string-by-javascript
 function getQueryStrings() { 
     var assoc  = {};

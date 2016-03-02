@@ -45,7 +45,7 @@ b) 调用完 `memset_16alignmed` 后释放内存。
 
 
 
-#### A: 
+#### A:
 
 
 原来的答案：
@@ -224,12 +224,6 @@ Location: United Kingdom
 
 ---
 
-#### [01. Difference between ¡°git add -A¡± and ¡°g add .¡±][quention-01]
-
-
-[quention-01]: http://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add/572660#572660
-
-
 The command git add [--all|-A] appears to be identical to git add .. Is this correct? If not, how do they differ?
 
 
@@ -297,27 +291,3 @@ Summary:
 git add -A stages All
 git add . stages new and modified, without deleted
 git add -u stages modified and deleted, without new
-
-
-## The Star
-
-Name: Blot Clock
-Location: Singapore
-Age: 22
-
-
-## Q & A
-
-
----
-
-[01. ][quention-01]
-
-[quention-01]: http://stackoverflow.com/questions/18701670/can-i-use-non-existing-css-classes/18701712#18701712
-
-
-
-
-
-
-
