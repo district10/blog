@@ -322,3 +322,6 @@ TODO: 给它加一套键盘快捷键。
 #. [Home - Val Markovic](https://val.markovic.io/)
 #. [SVG-edit](https://svg-edit.github.io/svgedit/releases/svg-edit-2.8.1/svg-editor.html)
 #. [hub · the command-line wrapper for git](https://hub.github.com/)
+#. [Slim Wallets | Minimalist Wallets | Thread Wallets](https://www.threadwallets.com/)
+#. [online text editor - collabedit](http://collabedit.com/)
+#. [Team | Urban Collective Intelligence](http://urbancolab.com/?q=team)

@@ -4,8 +4,9 @@ PIDIR = .
 PODIR = ../publish
 
 CURFILES = \
-post-0086-game-of-throne-series.md \
+post-0087-leetcode.md \
 post-0085-cvrs-presentation.md \
+post-0086-game-of-throne-series.md \
 
 SOME_POSTS = \
 $(POST_0049) $(POST_0047) $(POST_0046) $(POST_0042) $(POST_0035) $(POST_0029) $(POST_0028) $(POST_0023) $(POST_0024) $(POST_0022) \

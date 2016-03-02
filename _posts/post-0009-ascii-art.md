@@ -10,13 +10,13 @@ What is ascii-art
 
 [ascii-art]
 
-> ASCII art is a **graphic design technique** that uses computers for presentation and 
-> consists of pictures pieced together from the 95 printable (from a total of 128) characters 
-> defined by the ASCII Standard from 1963 and ASCII compliant character sets 
-> with proprietary extended characters (beyond the 128 characters of standard 7-bit ASCII). 
-> The term is also loosely used to refer to **text based visual art in general**. 
-> ASCII art can be created with any text editor, and is often used with free-form languages. 
-> Most examples of ASCII art require a **fixed-width font** 
+> ASCII art is a **graphic design technique** that uses computers for presentation and
+> consists of pictures pieced together from the 95 printable (from a total of 128) characters
+> defined by the ASCII Standard from 1963 and ASCII compliant character sets
+> with proprietary extended characters (beyond the 128 characters of standard 7-bit ASCII).
+> The term is also loosely used to refer to **text based visual art in general**.
+> ASCII art can be created with any text editor, and is often used with free-form languages.
+> Most examples of ASCII art require a **fixed-width font**
 > (non-proportional fonts, as on a traditional typewriter) such as Courier for presentation.
 
 [Some Examples](http://www.chris.com/ascii/)
@@ -24,8 +24,6 @@ What is ascii-art
 from <http://www.chris.com/ascii/>
 
 ### 丘比特
-
-[qiubite]
 
 ~~~plain
                                (
@@ -49,8 +47,6 @@ O -'        .'''       .'                                     "8b d8"   Veilleux
 
 ### Alien
 
-[alien]
-
 ~~~plain
            \.   \.      __,-"-.__      ./   ./
        \.   \`.  \`.-'"" _,="=._ ""`-.'/  .'/   ./
@@ -73,7 +69,7 @@ O -'        .'''       .'                                     "8b d8"   Veilleux
 
 ### Horse
 
-[horse]
+horse
 
 ~~~plain
                                                           ,   .
@@ -116,11 +112,11 @@ O -'        .'''       .'                                     "8b d8"   Veilleux
 
 A：
 
-> [- 同样是马，我怎么就这么 帅？！][handsome-horse]
+> - 同样是马，我怎么就这么 帅？！
 
 B：
 
-> [- 汗。。。][dont-be-shy]
+> - 汗。。。
 
 ~~~plain
            .  ,
@@ -136,9 +132,3 @@ B：
 ~~~
 
 [ascii-art]: http://en.wikipedia.org/wiki/ASCII_art
-[qiubite]: chrome:// "这个不是链接，我的亲"
-[alien]: chrome:// "不就是个外星人嘛，没见过外星人啊"
-[programmer]: chrome:// "程序员这个嘛。。。。额。。。别放弃治疗"
-[horse]: chrome:// "没草原哪儿来的马？！"
-[handsome-horse]: chrome:// "你有一双发现美的眼睛"
-[dont-be-shy]: file// "不要害羞！！！"

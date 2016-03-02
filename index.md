@@ -5,11 +5,12 @@
 <div class="slogan">Welcome to dvorak4tzx's Blog.</div>
 <p id="tzxslogan">
 Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序员中广受欢迎，尤其是那些 Emacs[^emacs] 用户，
-比如 Steve Yegge、Sacha Chua、李杀。我也用 dvorak，所以这个网站叫 dvorak4tzx。</p>
+比如 Steve Yegge、Sacha Chua、李杀。我也用 dvorak，所以这个网站叫 dvorak4tzx。[^info]</p>
 
 [^dvorak]: [Dvorak Simplified Keyboard - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard)
 [^qwerty]: [QWERTY - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/QWERTY)
 [^emacs]: [Emacs - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Emacs)。
+[^info]: 这是 <http://tangzhixiong.com> 的一部分。
 
 <div id="buckets">
 <div><a href="koans.html">Koans | 呓语</a></div>
@@ -133,6 +134,11 @@ Search:<br>
 <script src="auto-complete.js"></script>
 <script src="blog-query.js"></script>
 <script>
+var link_prefix = tzx_link_prefix;
+if ( window.location.toString().startsWith('file') ) {
+    link_prefix = window.location.toString().split('/index.html')[0];
+}
+
 new autoComplete({
     selector: 'input[name="tzxsearchbox"]',
     minChars: 1,
@@ -161,8 +167,8 @@ new autoComplete({
              +    item.title.replace(re, "<b>$1</b>")
              +  '<br/>'
              +  '<a class="tzx-suggestion-link" target="_blank"'
-             +  ' href="' + tzx_link_prefix + item.url + '">'
-             +              tzx_link_prefix + item.url.replace(re, "<b>$1</b>")
+             +  ' href="' + link_prefix + item.url + '">'
+             +              link_prefix + item.url.replace(re, "<b>$1</b>")
              +  '</a>'
              +  '</div>';
         return dom;

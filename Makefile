@@ -12,13 +12,12 @@ IDXPG2=$(PODIR)/index2.html
 GENIDX=_bin/posts_index.sh
 GENIDX2=_bin/posts_index2.sh
 
-all: koans reads notes pages posts statics lyrics $(IDXPG) $(IDXPG2)
-koans reads notes pages posts statics lyrics $(IDXPG) $(IDXPG2): $(PODIR) EXE
+all: koans reads notes pages posts statics lyrics
+koans reads notes pages posts statics lyrics: $(PODIR) EXE
 $(PODIR):
 	mkdir -p $(PODIR)
 EXE:
 	chmod +x */*.sh
-	# TODO: AHA
 
 gh: github
 github:
@@ -36,10 +35,6 @@ qn: qiniu
 qiniu: 
 	qrsync conf.json
 
-ag:
-	$(AG) $(k)
-
-# make htmls
 kns: koans
 koans:
 	$(MAKE) -C $(KOANS)
@@ -60,7 +55,6 @@ pts: posts
 posts:
 	$(MAKE) -C $(POSTS)
 
-$(IDXPG): i
 i: index
 index:
 	$(GENIDX) $(IDXPG)
@@ -69,13 +63,12 @@ ri: removeindex
 removeindex:
 	rm -f $(PODIR)/index.html
 
-$(IDXPG2): i2
 i2:
 	$(GENIDX2) $(IDXPG2)
 
 ri2: removeindex2
 removeindex2:
-	rm -f $(PODIR)/index2.html
+	rm -f $(IDXPG2)
 
 EDITS = \
 _koans/koan-00002.md \

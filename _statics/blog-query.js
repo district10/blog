@@ -438,5 +438,10 @@ var tzx_links = [
         url: '/post-0086-game-of-throne-series.html',
         title: "Game of Throne",
         query: ['game-of-throne', 'got', 'tv', 'movie']
+    },
+    {
+        url: '/post-0087-leetcode.html',
+        title: "Leet Code",
+        query: ['leet-code', 'code', 'programming', 'algorithms']
     }
 ];

@@ -18,7 +18,7 @@
 </div>
 
 把上面两个按钮拖到自己的书签栏，在【豆瓣电影】和【豆瓣读书】的电影/书籍页面点击按钮，
-页面下方就会输出当前页面的电影/书籍的 Markdown 格式的列表。
+页面下方就会输出当前页面的电影/书籍的 Markdown 格式的列表。（后来豆瓣全站用了 https，于是这些脚本不能如愿运行了。）
 
 比如：
 
@@ -56,8 +56,6 @@
 Shell 脚本
 ----------
 
-<!--
-
 ```bash
 # /bin/bash
 
@@ -91,78 +89,10 @@ ln -s /home/gnat/git/mine/ring/scripts/compile_opencv_c++0x.sh opencv11
 echo done
 ```
 
-#/bis/bash
-
-
-# GitHub
-# ------
-
-### Mine
-
-git=(
-neo_keybord_layout
-gat
-read
-slides
-Calibre-nongui
-notes
-wuhan-pubbike-project
-hexo-blog
-brain
-gnat
-pandoc-templates
-new-repo
-center
-Sounds-of-Street-View-Framework
-tucao
-dotfiles
-sample-codes
-homework
-codes
-district10.github.io
-Pattern_Classification
-extended-programmer-dvorak
-misc
-codecombat
-TranslateProject
-)
-
-for g in ${git[*]};
-do
-    echo 
-
-
-### forked
-
-HUST-Undergraduage-Thesis
-Jsource
-renren-relationship
-Hyperlapse.js
-algorithms
-writings
-xcape
-sunpinyin
-scikit-learn
-ergoemacs-mode
-chrome-app-samples
-Keyboard-Heatmap
-hexo
-d3
-gitbook
-javascript
-knitr-examples
-InterImmBook
-mastering-emacs-in-one-year-guide
-CodeMirror
-iqq
-javascript-astar
-StreetView
-
-
 doc
 
 :   ```bash
-    # /bin/bash
+    #/bin/bash
 
     cd $HOME/docs &&  python -m "SimpleHTTPServer"
     ```
@@ -170,7 +100,7 @@ doc
 doc_index
 
 :   ```bash
-    # /bin/bash
+    #/bin/bash
 
     DOCDIR="$HOME/docs"
     OUTMD="$DOCDIR/index.md"
@@ -199,7 +129,7 @@ doc_index
 feed
 
 :   ```bash
-    # /bin/bash
+    #/bin/bash
 
     OUTDIR="$HOME/git/mine/ring/scripts"
     SRCDIR="$HOME/bin2"
@@ -222,7 +152,7 @@ feed
 i
 
 :   ```bash
-    # /bin/zsh
+    #/bin/zsh
 
     vim + $HOME/git/mine/me/001.md # 打开文件末尾
     ```
@@ -242,10 +172,10 @@ note
     echo NOTE: ${NOTE}
 
 
-    echo -n "                              " >> ${NOTE} 
+    echo -n "                              " >> ${NOTE}
     echo ${TIME} >> ${NOTE}
-    echo $1 >> ${NOTE} 
-    cat ${NOTE} 
+    echo $1 >> ${NOTE}
+    cat ${NOTE}
     ```
 
 opencv
@@ -293,121 +223,117 @@ opencv11
 
 zshrc
 
-:
-```plain
-# source $HOME/git/nvm/nvm.sh
+:   ```plain
+    # source $HOME/git/nvm/nvm.sh
 
-ZSH_THEME="robbyrussell"
+    ZSH_THEME="robbyrussell"
 
-plugins=(\
-git autojump colored-man \
-)
+    plugins=(\
+    git autojump colored-man \
+    )
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/gnat/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
+    export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/gnat/bin"
+    # export MANPATH="/usr/local/man:$MANPATH"
 
-source $ZSH/oh-my-zsh.sh
+    source $ZSH/oh-my-zsh.sh
 
-# copied from https://github.com/mooz/percol
-function ppgrep() {
-    if [[ $1 == "" ]]; then
-        PERCOL=percol
-    else
-        PERCOL="percol --query $1"
-    fi
-    ps aux | eval $PERCOL | awk '{ print $2 }'
-}
-
-function ppkill() {
-    if [[ $1 =~ "^-" ]]; then
-        QUERY=""            # options only
-    else
-        QUERY=$1            # with a query
-        [[ $# > 0 ]] && shift
-    fi
-    ppgrep $QUERY | xargs kill $*
-}
-
-function exists { which $1 &> /dev/null }
-
-if exists percol; then
-    function percol_select_history() {
-        local tac
-        exists gtac && tac="gtac" || { exists tac && tac="tac" || { tac="tail -r" } }
-        BUFFER=$(fc -l -n 1 | eval $tac | percol --query "$LBUFFER")
-        CURSOR=$#BUFFER         # move cursor
-        zle -R -c               # refresh
+    # copied from https://github.com/mooz/percol
+    function ppgrep() {
+        if [[ $1 == "" ]]; then
+            PERCOL=percol
+        else
+            PERCOL="percol --query $1"
+        fi
+        ps aux | eval $PERCOL | awk '{ print $2 }'
     }
 
-    zle -N percol_select_history
-    bindkey '^R' percol_select_history
-fi
+    function ppkill() {
+        if [[ $1 =~ "^-" ]]; then
+            QUERY=""            # options only
+        else
+            QUERY=$1            # with a query
+            [[ $# > 0 ]] && shift
+        fi
+        ppgrep $QUERY | xargs kill $*
+    }
 
+    function exists { which $1 &> /dev/null }
 
-function gall() {
-    if [[ $1 == "" ]]; then
-        CMT_MSG="Lazy Commit"
-    else
-        CMT_MSG=$1
+    if exists percol; then
+        function percol_select_history() {
+            local tac
+            exists gtac && tac="gtac" || { exists tac && tac="tac" || { tac="tail -r" } }
+            BUFFER=$(fc -l -n 1 | eval $tac | percol --query "$LBUFFER")
+            CURSOR=$#BUFFER         # move cursor
+            zle -R -c               # refresh
+        }
+
+        zle -N percol_select_history
+        bindkey '^R' percol_select_history
     fi
-    git add -A ; git commit -m $CMT_MSG ; git push
-}
 
 
-# editors
-alias emacs="emacs -nw"
-alias es="emacs --daemon"
-alias ec="emacsclient -nw"
-alias vi="vim -u NONE"
-alias gvim="/usr/bin/vim.gnome -u NONE"
-alias e="vim -u NONE"
-
-# commands
-alias percol="percol --match-method regex"
-alias say="cowsay -f $(ls /usr/share/cowsay/cows | shuf -n 1 | cut -d. -f1) $(whatis $(ls /bin) 2>/dev/null | shuf -n 1)"
-alias neo="(cd /home/tzx/git/neo_keyboard_layout/neo2015/ && ./neo.sh)"
-alias ring="(cd /home/gnat/git/ring && gall)"
-alias now="date +[%H:%M:%S@%Y-%m-%d]"
-alias paste="xsel -ob"
-alias clip="xclip -selection c"
-
-# GTD
-NOTE="/home/gnat/git/note/2015-04.md"
-READ="/home/gnat/git/read/2015.md"
-TODO="/home/gnat/git/todo/2015.md"
-INDEX="/home/gnat/git/index/README.md"
-SITES="/home/gnat/git/index/md/sites.md"
-alias n="echo >> ${NOTE}"
-alias N="vi ${NOTE}"
-alias note="(cd $(dirname ${NOTE}) && gall)"
-alias r="echo >> ${READ} '* ![][o]'" 
-alias R="vi ${READ}" 
-alias read="(cd $(dirname ${READ}) && gall)"
-alias t="echo >> ${TODO} '* ![][y]'" 
-alias T="vi ${TODO}" 
-alias todo="(cd $(dirname ${TODO}) && gall)"
-alias I="vi ${INDEX}" 
-alias S="vi ${SITES}" 
-
-alias clj="java -cp ~/tmp/clojure/clojure-1.6.0/clojure-1.6.0.jar"
-alias clooj="java -jar ~/tmp/clojure/clooj/target/clooj-0.5-standalone.jar"
-
-# nvm
-source /opt/ros/indigo/setup.zsh
-export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/dist
-
-# grunt
-# eval "$(grunt --completion=zsh)"
-
-# alias url="curl -i http://git.io -F \url=$1\""
-
-export TERM=xterm-256color
-export PATH="$HOME/.linuxbrew/bin:$PATH"
-export LD_LIBRARY_PATH="$HOME/.linuxbrew/lib:$LD_LIBRARY_PATH"
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-```
+    function gall() {
+        if [[ $1 == "" ]]; then
+            CMT_MSG="Lazy Commit"
+        else
+            CMT_MSG=$1
+        fi
+        git add -A ; git commit -m $CMT_MSG ; git push
+    }
 
 
--->
+    # editors
+    alias emacs="emacs -nw"
+    alias es="emacs --daemon"
+    alias ec="emacsclient -nw"
+    alias vi="vim -u NONE"
+    alias gvim="/usr/bin/vim.gnome -u NONE"
+    alias e="vim -u NONE"
+
+    # commands
+    alias percol="percol --match-method regex"
+    alias say="cowsay -f $(ls /usr/share/cowsay/cows | shuf -n 1 | cut -d. -f1) $(whatis $(ls /bin) 2>/dev/null | shuf -n 1)"
+    alias neo="(cd /home/tzx/git/neo_keyboard_layout/neo2015/ && ./neo.sh)"
+    alias ring="(cd /home/gnat/git/ring && gall)"
+    alias now="date +[%H:%M:%S@%Y-%m-%d]"
+    alias paste="xsel -ob"
+    alias clip="xclip -selection c"
+
+    # GTD
+    NOTE="/home/gnat/git/note/2015-04.md"
+    READ="/home/gnat/git/read/2015.md"
+    TODO="/home/gnat/git/todo/2015.md"
+    INDEX="/home/gnat/git/index/README.md"
+    SITES="/home/gnat/git/index/md/sites.md"
+    alias n="echo >> ${NOTE}"
+    alias N="vi ${NOTE}"
+    alias note="(cd $(dirname ${NOTE}) && gall)"
+    alias r="echo >> ${READ} '* ![][o]'"
+    alias R="vi ${READ}"
+    alias read="(cd $(dirname ${READ}) && gall)"
+    alias t="echo >> ${TODO} '* ![][y]'"
+    alias T="vi ${TODO}"
+    alias todo="(cd $(dirname ${TODO}) && gall)"
+    alias I="vi ${INDEX}"
+    alias S="vi ${SITES}"
+
+    alias clj="java -cp ~/tmp/clojure/clojure-1.6.0/clojure-1.6.0.jar"
+    alias clooj="java -jar ~/tmp/clojure/clooj/target/clooj-0.5-standalone.jar"
+
+    # nvm
+    source /opt/ros/indigo/setup.zsh
+    export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/dist
+
+    # grunt
+    # eval "$(grunt --completion=zsh)"
+
+    # alias url="curl -i http://git.io -F \url=$1\""
+
+    export TERM=xterm-256color
+    export PATH="$HOME/.linuxbrew/bin:$PATH"
+    export LD_LIBRARY_PATH="$HOME/.linuxbrew/lib:$LD_LIBRARY_PATH"
+
+    ### Added by the Heroku Toolbelt
+    export PATH="/usr/local/heroku/bin:$PATH"
+    ```

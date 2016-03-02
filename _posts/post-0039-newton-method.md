@@ -89,6 +89,9 @@ if we type these definitions to te interpreter, we can use sqrt just as we can u
 3.00009155...
 ```
 
+翻到了以前刷机看的文档：
+
+![](http://whudoc.qiniudn.com/casio-82-es.jpg)
 
 ---
 
