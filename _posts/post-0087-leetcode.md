@@ -311,16 +311,407 @@ bool isBalanced(struct TreeNode* root) {
 </div>
 
 <div class="tzx-tabs">
-* [](#)
-* [](#)
+* [Maximum Depth of Binary Tree (Easy)](#line314)
+* [Maximum Depth of Binary Tree (C)](#line315)
 
-<div id="">
+<div id="line314">
+[Maximum Depth of Binary Tree | LeetCode OJ](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+
+:   Given a binary tree, find its maximum depth.
+
+    The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 </div>
 
-~~~ {# .c}
+~~~ {#line315 .c}
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+int depth( struct TreeNode* tree ) {
+    if ( !tree ) {
+        return 0;
+    }
+    if ( !(tree->left) && !(tree->right) ) {
+        return 1;
+    }
+    if ( tree->left && !(tree->right) ) {
+        return depth( tree->left ) + 1;
+    }
+    if ( tree->right && !(tree->left) ) {
+        return depth( tree->right ) + 1;
+    }
+
+    int dl = depth( tree->left );
+    int dr = depth( tree->right );
+    return 1 + (dl < dr ? dr : dl);
+}
+
+int maxDepth(struct TreeNode* root) {
+    return depth( root );
+}
 ~~~
 </div>
 
+<div class="tzx-tabs">
+* [Minimum Depth of Binary Tree (Easy)](#line360)
+* [Minimum Depth of Binary Tree (C)](#line361)
+
+<div id="line360">
+[Minimum Depth of Binary Tree | LeetCode OJ](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
+
+:   Given a binary tree, find its minimum depth.
+
+    The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
+</div>
+
+~~~ {#line361 .c}
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+
+int minDepth(struct TreeNode* root) {
+    if ( !root ) {
+        return 0;
+    }
+    if ( !(root->left) && !(root->right) ) {
+        return 1;
+    }
+    if ( !(root->left) && (root->right) ) {
+        return 1 + minDepth(root->right);
+    }
+    if ( !(root->right) && (root->left) ) {
+        return 1 + minDepth(root->left);
+    }
+
+    int dl = minDepth( root->left );
+    int dr = minDepth( root->right );
+    return 1 + (dl < dr ? dl : dr);
+}
+~~~
+</div>
+
+<div class="tzx-tabs">
+* [Bulb Switch (Median)](#line403)
+* [Bulb Switch (C)](#line404)
+
+<div id="line403">
+[Bulb Switcher | LeetCode OJ](https://leetcode.com/problems/bulb-switcher/)
+
+:   There are n bulbs that are initially off. You first turn on all the bulbs. Then, you turn off every second bulb. On the third round, you toggle every third bulb (turning on if it's off or turning off if it's on). For the ith round, you toggle every i bulb. For the nth round, you only toggle the last bulb. Find how many bulbs are on after n rounds.
+
+    Example
+
+    :   Given `n = 3`.
+
+    At first, the three bulbs are [off, off, off].
+    After first round, the three bulbs are [on, on, on].
+    After second round, the three bulbs are [on, off, on].
+    After third round, the three bulbs are [on, off, off]. 
+
+    So you should return 1, because there is only one bulb is on.
+</div>
+
+~~~ {#line404 .c}
+// how to?
+int hit( int n )
+{
+    int cnt = 1;
+    for( int i = 2; i < n; ++i ) {
+        if ( n%i==0 ) { ++cnt; }
+    }
+    return cnt;
+}
+
+int bulbSwitch(int n) {
+    if ( n == 0 || n == 1 ) { return n; }
+    int cnt = n;
+    for( int i = 2; i <=n ; ++i ) {
+        if ( hit(i)%2!=0 ) {
+            cnt -= n/i;
+        } else {
+            cnt += n/i;
+        }
+    }
+    return cnt;
+}
+~~~
+</div>
+
+<div class="tzx-tabs">
+* [Implement Queue using Stacks (Easy)](#line450)
+* [Implement Queue using Stacks (C)](#line451)
+
+<div id="line450">
+[Implement Queue using Stacks | LeetCode OJ](https://leetcode.com/problems/implement-queue-using-stacks/)
+
+:   Implement the following operations of a queue using stacks.
+
+    * push(x) -- Push element x to the back of queue.
+    * pop() -- Removes the element from in front of queue.
+    * peek() -- Get the front element.
+    * empty() -- Return whether the queue is empty.
+
+    Notes:
+
+    * You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
+    * Depending on your language, stack may not be supported natively. You may simulate a stack by using a list or deque (double-ended queue), as long as you use only standard operations of a stack.
+    * You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
+</div>
+
+~~~ {#line451 .c}
+typedef struct {
+    int *data;
+    int front;
+    int back;
+    // [ -- :front: --data-- :back: --]
+} Queue;
+
+/* Create a queue */
+void queueCreate(Queue *queue, int maxSize) {
+    queue->data = (int *)malloc( sizeof(int)*maxSize );
+    queue->front = 0;
+    queue->back = -1;
+}
+
+/* Push element x to the back of queue */
+void queuePush(Queue *queue, int element) {
+    queue->data[++(queue->back)] = element;
+}
+
+/* Removes the element from front of queue */
+void queuePop(Queue *queue) {
+    ++(queue->front);
+}
+
+/* Get the front element */
+int queuePeek(Queue *queue) {
+    return queue->data[queue->front];
+}
+
+/* Return whether the queue is empty */
+bool queueEmpty(Queue *queue) {
+    return queue->front > queue->back;
+}
+
+/* Destroy the queue */
+void queueDestroy(Queue *queue) {
+    free( queue->data );
+    queue->front = 0;
+    queue->back = -1;
+}
+~~~
+</div>
+
+<div class="tzx-tabs">
+* [Implement Stack using Queues (Easy)](#line516)
+* [Implement Stack using Queues (C)](#line517)
+
+<div id="line516">
+[Implement Stack using Queues | LeetCode OJ](https://leetcode.com/problems/implement-stack-using-queues/)
+
+:   Implement the following operations of a stack using queues.
+
+    * push(x) -- Push element x onto stack.
+    * pop() -- Removes the element on top of the stack.
+    * top() -- Get the top element.
+    * empty() -- Return whether the stack is empty.
+
+    Notes:
+
+    * You must use only standard operations of a queue -- which means only push to back, peek/pop from front, size, and is empty operations are valid.
+    * Depending on your language, queue may not be supported natively. You may simulate a queue by using a list or deque (double-ended queue), as long as you use only standard operations of a queue.
+    * You may assume that all operations are valid (for example, no pop or top operations will be called on an empty stack).
+</div>
+
+~~~ {#line517 .c}
+typedef struct {
+    int *data;
+    int cursor;
+} Stack;
+
+/* Create a stack */
+void stackCreate(Stack *stack, int maxSize) {
+    stack->data = (int *)malloc( sizeof(int)*maxSize );
+    stack->cursor = -1;
+}
+
+/* Push element x onto stack */
+void stackPush(Stack *stack, int element) {
+    stack->data[++(stack->cursor)] = element;
+}
+
+/* Removes the element on top of the stack */
+void stackPop(Stack *stack) {
+    --(stack->cursor);
+}
+
+/* Get the top element */
+int stackTop(Stack *stack) {
+    return stack->data[stack->cursor];
+}
+
+/* Return whether the stack is empty */
+bool stackEmpty(Stack *stack) {
+    return stack->cursor < 0;
+}
+
+/* Destroy the stack */
+void stackDestroy(Stack *stack) {
+    free( stack->data );
+    stack->cursor = -1;
+}
+~~~
+</div>
+
+<div class="tzx-tabs">
+* [Binary Search Tree Iterator (Median)](#line576)
+* [Binary Search Tree Iterator (C)](#line577)
+
+<div id="line576">
+[Binary Search Tree Iterator | LeetCode OJ](https://leetcode.com/problems/binary-search-tree-iterator/)
+
+:   Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.
+
+    Calling next() will return the next smallest number in the BST.
+
+    Note: next() and hasNext() should run in average O(1) time and uses O(h) memory, where h is the height of the tree. 
+</div>
+
+~~~ {#line577 .c}
+/**
+ * Definition for binary tree
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+
+struct BSTIterator {
+    struct TreeNode *root;
+    int count;
+    int cursor;
+    int *data;
+}; 
+
+int count( struct TreeNode *root )
+{
+    if ( !root ) { return 0; }
+    if ( !(root->left) ) { return 1+count(root->right); }
+    if ( !(root->right) ) { return 1+count(root->left); }
+    return 1 + count(root->left) + count(root->right);
+}
+
+void traverse( struct TreeNode *root, struct BSTIterator *iter )
+{
+    if( !root ) { return; }
+    traverse( root->left, iter );
+    iter->data[(iter->cursor)++] = root->val;
+    traverse( root->right, iter );
+}
+
+struct BSTIterator *bstIteratorCreate(struct TreeNode *root) {
+    struct BSTIterator *iter = malloc( sizeof(struct BSTIterator) );
+    iter->root = root;
+    iter->count = count(root);
+    iter->data = (int *)malloc( sizeof(int)*iter->count );
+    iter->cursor = 0;
+    traverse( root, iter );
+    iter->cursor = 0;
+    return iter;
+}
+
+/** @return whether we have a next smallest number */
+bool bstIteratorHasNext(struct BSTIterator *iter) {
+    return iter->cursor < iter->count;
+}
+
+/** @return the next smallest number */
+int bstIteratorNext(struct BSTIterator *iter) {
+    return iter->data[(iter->cursor)++];
+}
+
+/** Deallocates memory previously allocated for the iterator */
+void bstIteratorFree(struct BSTIterator *iter) {
+    free( iter->data );
+}
+
+/**
+ * Your BSTIterator will be called like this:
+ * struct BSTIterator *i = bstIteratorCreate(root);
+ * while (bstIteratorHasNext(i)) printf("%d\n", bstIteratorNext(i));
+ * bstIteratorFree(i);
+ */
+~~~
+</div>
+
+<div class="tzx-tabs">
+* [Binary Tree Inorder Traversal (Median)](#line658)
+* [Binary Tree Inorder Traversal (C)](#line659)
+
+<div id="line658">
+[Binary Tree Inorder Traversal | LeetCode OJ](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+
+:   Given a binary tree, return the inorder traversal of its nodes' values.
+
+    For example:
+    Given binary tree {1,#,2,3},
+
+            1
+            \
+             2
+            /
+            3
+
+    return [1,3,2]. 
+</div>
+
+~~~ {#line659 .c}
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+/**
+ * Return an array of size *returnSize.
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+
+int count( struct TreeNode *root )
+{
+    if ( !root ) { return 0; }
+    return 1+count(root->right)+count(root->left);
+}
+
+void traverse( struct TreeNode *root, int *data, int *cursor )
+{
+    if ( !root ) { return; }
+    traverse( root->left, data, cursor );
+    data[(*cursor)++] = root->val;
+    traverse( root->right, data, cursor );
+}
+
+int* inorderTraversal(struct TreeNode* root, int* returnSize) {
+    *returnSize = count( root );
+    int *data = malloc( sizeof(int)*(*returnSize) );
+    int cursor = 0;
+    traverse( root, data, &cursor );
+    return data;
+}
+~~~
+</div>
 
 <!--
 <div class="tzx-tabs">
