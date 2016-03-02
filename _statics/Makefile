@@ -20,6 +20,7 @@ $(PODIR)/tzxshow.js \
 
 STATICS = \
 $(UTILS) \
+$(PODIR)/blog-query.js \
 $(PODIR)/tangzhixiong.svg \
 $(PODIR)/asciinema-player.css \
 $(PODIR)/asciinema-player.js \
