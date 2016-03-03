@@ -27,7 +27,7 @@ C#, JavaScript, Ruby, Bash, MySQL.
 </div>
 
 <div id="tab12">
-What does [1,null,2,3] mean in binary tree representation?
+What does `[1,null,2,3]` mean in binary tree representation?
 
 :   The input `[1,null,2,3]` represents the serialized format of a binary tree
     using level order traversal, where null signifies a path terminator where
@@ -202,12 +202,13 @@ bool isSelfCrossing(int* x, int xSize) {
     Do not allocate extra space for another array, you must do this in place
     with constant memory.
 
-    For example,
-    Given input array `nums = [1,1,2]`,
+    For example
 
-    Your function should return `length = 2`, with the first two elements of nums
-    being `1` and `2` respectively. It doesn't matter what you leave beyond the new
-    length.
+    :   Given input array `nums = [1,1,2]`,
+
+        Your function should return `length = 2`, with the first two elements
+        of nums being `1` and `2` respectively. It doesn't matter what you
+        leave beyond the new length.
 </div>
 
 ~~~ {#dup-a1 .c}
@@ -245,12 +246,8 @@ bool isPowerOfThree(int n) {
     if ( n <= 0 ) {
         return false;
     }
-    int i = (log2( n )/log2(3));
-    if ( (int)pow(3, i) == n ) {
-        return true;
-    } else {
-        return false;
-    }
+    int p = log2( n ) / log2( 3 );
+    return (int)pow(3, p) == n;
 }
 ~~~
 </div>
@@ -319,7 +316,8 @@ bool isBalanced(struct TreeNode* root) {
 
 :   Given a binary tree, find its maximum depth.
 
-    The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+    The maximum depth is the number of nodes along the longest path from the
+    root node down to the farthest leaf node.
 </div>
 
 ~~~ {#line315 .c}
@@ -365,7 +363,8 @@ int maxDepth(struct TreeNode* root) {
 
 :   Given a binary tree, find its minimum depth.
 
-    The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
+    The minimum depth is the number of nodes along the shortest path from the
+    root node down to the nearest leaf node.
 </div>
 
 ~~~ {#line361 .c}
@@ -406,18 +405,22 @@ int minDepth(struct TreeNode* root) {
 <div id="line403">
 [Bulb Switcher | LeetCode OJ](https://leetcode.com/problems/bulb-switcher/)
 
-:   There are n bulbs that are initially off. You first turn on all the bulbs. Then, you turn off every second bulb. On the third round, you toggle every third bulb (turning on if it's off or turning off if it's on). For the ith round, you toggle every i bulb. For the nth round, you only toggle the last bulb. Find how many bulbs are on after n rounds.
+:   There are `n` bulbs that are initially off. You first turn on all the bulbs.
+    Then, you turn off every second bulb. On the third round, you toggle every
+    third bulb (turning on if it's off or turning off if it's on). For the `i`th
+    round, you toggle every `i` bulb. For the nth round, you only toggle the last
+    bulb. Find how many bulbs are on after `n` rounds.
 
     Example
 
     :   Given `n = 3`.
 
-    At first, the three bulbs are [off, off, off].
-    After first round, the three bulbs are [on, on, on].
-    After second round, the three bulbs are [on, off, on].
-    After third round, the three bulbs are [on, off, off]. 
+        * At first, the three bulbs are `[off, off, off]`.
+        * After first round, the three bulbs are `[on, on, on]`.
+        * After second round, the three bulbs are `[on, off, on]`.
+        * After third round, the three bulbs are `[on, off, off]`.
 
-    So you should return 1, because there is only one bulb is on.
+        So you should return `1`, because there is only one bulb is on.
 </div>
 
 ~~~ {#line404 .c}
@@ -455,16 +458,19 @@ int bulbSwitch(int n) {
 
 :   Implement the following operations of a queue using stacks.
 
-    * push(x) -- Push element x to the back of queue.
-    * pop() -- Removes the element from in front of queue.
-    * peek() -- Get the front element.
-    * empty() -- Return whether the queue is empty.
+    * `push(x)` -- Push element `x` to the back of queue.
+    * `pop()` -- Removes the element from in front of queue.
+    * `peek()` -- Get the front element.
+    * `empty()` -- Return whether the queue is empty.
 
-    Notes:
-
-    * You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
-    * Depending on your language, stack may not be supported natively. You may simulate a stack by using a list or deque (double-ended queue), as long as you use only standard operations of a stack.
-    * You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
+    Notes
+      ~ You must use only standard operations of a stack -- which means only
+        push to top, peek/pop from top, size, and is empty operations are valid.
+      ~ Depending on your language, stack may not be supported natively. You
+        may simulate a stack by using a list or deque (double-ended queue), as
+        long as you use only standard operations of a stack.
+      ~ You may assume that all operations are valid (for example, no pop or
+        peek operations will be called on an empty queue).
 </div>
 
 ~~~ {#line451 .c}
@@ -520,16 +526,20 @@ void queueDestroy(Queue *queue) {
 
 :   Implement the following operations of a stack using queues.
 
-    * push(x) -- Push element x onto stack.
-    * pop() -- Removes the element on top of the stack.
-    * top() -- Get the top element.
-    * empty() -- Return whether the stack is empty.
+    * `push(x)` -- Push element `x` onto stack.
+    * `pop()` -- Removes the element on top of the stack.
+    * `top()` -- Get the top element.
+    * `empty()` -- Return whether the stack is empty.
 
-    Notes:
-
-    * You must use only standard operations of a queue -- which means only push to back, peek/pop from front, size, and is empty operations are valid.
-    * Depending on your language, queue may not be supported natively. You may simulate a queue by using a list or deque (double-ended queue), as long as you use only standard operations of a queue.
-    * You may assume that all operations are valid (for example, no pop or top operations will be called on an empty stack).
+    Notes
+      ~ You must use only standard operations of a queue -- which means only
+        push to back, peek/pop from front, size, and is empty operations are
+        valid.
+      ~ Depending on your language, queue may not be supported natively. You
+        may simulate a queue by using a list or deque (double-ended queue), as
+        long as you use only standard operations of a queue.
+      ~ You may assume that all operations are valid (for example, no pop or
+        top operations will be called on an empty stack).
 </div>
 
 ~~~ {#line517 .c}
@@ -579,11 +589,14 @@ void stackDestroy(Stack *stack) {
 <div id="line576">
 [Binary Search Tree Iterator | LeetCode OJ](https://leetcode.com/problems/binary-search-tree-iterator/)
 
-:   Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.
+:   Implement an iterator over a binary search tree (BST). Your iterator will
+    be initialized with the root node of a BST.
 
-    Calling next() will return the next smallest number in the BST.
+    Calling `next()` will return the next smallest number in the BST.
 
-    Note: next() and hasNext() should run in average O(1) time and uses O(h) memory, where h is the height of the tree. 
+    Note
+      ~ `next()` and `hasNext()` should run in average `O(1)` time and uses
+        `O(h)` memory, where `h` is the height of the tree.
 </div>
 
 ~~~ {#line577 .c}
@@ -663,16 +676,17 @@ void bstIteratorFree(struct BSTIterator *iter) {
 
 :   Given a binary tree, return the inorder traversal of its nodes' values.
 
-    For example:
-    Given binary tree {1,#,2,3},
+    For example
 
-            1
+    :   Given binary tree `{1,#,2,3}`,
+
+           1
             \
              2
             /
             3
 
-    return [1,3,2]. 
+    return `[1,3,2]`.
 </div>
 
 ~~~ {#line659 .c}
