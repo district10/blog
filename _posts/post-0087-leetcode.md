@@ -219,6 +219,84 @@ bool isSelfCrossing( int *x, int xSize ) {
 ~~~
 
 ~~~ {#line129 .c}
+/*          =   a l l    c a s e s   =
+
+    case 1     case 2: expanding   case 3: collapsing
+                    (global)           (local)
+                 (not crossing)   (may not crossing)
+
+   <------+     +------------+      +---------+
+          |     |            |      |         |
+          |     |  +-----+   |      |  +---+  |
+          |     |  |     |   |      |  |   |  :
+          #     |  |     #   |      |  v   |  :
+                |  |         |      |      |  
+                |  +---------+      +------+  
+                |
+                +--------->
+
+    case 4: failed expanding                
+     
+     +----+
+     |    |
+     |  <----[2]----^     [2]: second failure
+     |    #         |
+     |             [1]    [1]: first  failure
+     |              |
+     +--------------+
+
+    case 5: failed expanding & then collapsing
+
+     +----+
+     |    |
+     |    |  +------+
+     |    #  | [C]  |     [C]: may be perfectly collapsed
+     |       +--->  |
+     |              |
+     +--------------+
+
+    case 6: failed expanding                
+
+        +---+
+        |   |
+        |   |
+        |   #
+        |
+      <---[2]----+        [2]: second failure
+        |        |
+        |       [1]       [1]: first  failure
+        |        |
+        +--------+
+
+    case 7: failed expanding & then collapsing
+
+        +------+
+        |      |
+        |      #
+        |
+        |  +-----------+
+        |  |  +-----+  |
+        |  |  +-->  | [1] [1]: failure
+        |  |        |  |
+        |  +--------+  |
+        +--------------+
+
+   *notice: case 3 = case 6 + case 7
+
+    case 8: docking!
+
+        +-------+
+        |       |
+        |       +
+        |
+        |       ^
+        |       |
+        +-------+
+
+#: starting point 
+*/
+
+// case 3
 bool isPerfectCollapsing( int cur, int len, int *data )
 {
     while ( cur < len ) {
@@ -231,7 +309,9 @@ bool isPerfectCollapsing( int cur, int len, int *data )
 
 bool isPerfect( int *data, int len )
 {
+    // case 1
     if ( len <= 2 ) { return true; }
+    // case 8
     if ( len >= 5 &&
          data[3]==data[1] &&
          data[2]<=data[0]+data[4] )
@@ -244,81 +324,28 @@ bool isPerfect( int *data, int len )
         ++cur;
     }
     if ( cur == len || cur == len-1 ) {
-        // perfect expanding
+        // case 2: perfect expanding
         return true;
     }
 
     // collapsed!
     if ( cur == 2 || cur == 3 ) {
+        // case 3
         return isPerfectCollapsing( ++cur, len, data );
     }
 
-    if ( data[cur]+data[cur-4] >= data[cur-2] ) {
+    if ( data[cur]+data[cur-4] >= data[cur-2] ) {                    // case 4/5
         if ( ++cur < len ) {
-            if ( data[cur]+data[cur-4] >= data[cur-2] ) {
+            if ( data[cur]+data[cur-4] >= data[cur-2] ) {            // case 4
                 return false;
-            } else { return isPerfectCollapsing(++cur, len, data); }
+            } else { return isPerfectCollapsing(++cur, len, data); } // case 5
         } else { return true; }
-    } else { return isPerfectCollapsing(++cur, len, data); }
+    } else { return isPerfectCollapsing(++cur, len, data); }         // case 6/7
 }
 
 bool isSelfCrossing( int *x, int xSize ) {
     return !isPerfect( x, xSize );
 }
-/*
-    case 1     case 2: expanding   case 3: collaping
-                    (global)           (local)
-   <------+     +------------+      +---------+
-          |     |            |      |         |
-          |     |  +-----+   |      |  +---+  |
-          |     |  |     |   |      |  |   |  |
-          X     |  |     X   |      |  v   |  X
-                |  |         |      |      |
-                |  +---------+      +------+
-                |
-                +--------->
-
-+----+
-|    |
-|  <----[2]----^     [2]: second failure
-|    +         |
-|             [1]    [1]: first  failure
-|              |
-+--------------+
-
-+----+
-|    |
-|    |  +------+
-|    +  | [C]  |     [C]: may be perfectly collapsing
-|       +--->  |
-|              |
-+--------------+
-
-    +--------+
-    |        |
-    |        |
-    |        +
-    |
-<------[2]-------+   [2]: second failure
-    |            |
-    |           [1]  [1]: first  failure
-    |            |
-    +------------+
-
-+--------------+
-|              |
-|              |
-|              +
-|
-|   +-------------------+
-|   |   |------------+  |
-|   |   +--^         |  |
-|   |                |  |
-|   +----------------+  |
-+-----------------------+
-
-
-*/
 ~~~
 </div>
 
