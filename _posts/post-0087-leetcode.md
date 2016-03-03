@@ -6,11 +6,17 @@ Leet Code
 =========
 
 <link rel="stylesheet" href="jquery-ui.css">
+<link rel="stylesheet" href="font-awesome.min.css">
 <style>
 .tzx-tabs ul li a:hover {
     border-bottom: none;
 }
+pre {
+    font-size: 80%;
+}
 </style>
+
+<i class="icon-camera-retro"></i> icon-camera-retro
 
 <div class="tzx-tabs">
 * [Leet Code Intro](#tab11)
@@ -120,6 +126,7 @@ int singleNumber(int* nums, int numsSize) {
 <div class="tzx-tabs">
 * [Self Crossing (Median)](#tab1q3)
 * [Self Crossing (C)](#tab1a3)
+* [Self Crossing (Better C)](#line129)
 
 <div id="tab1q3">
 [Self Crossing | LeetCode OJ](https://leetcode.com/problems/self-crossing/)
@@ -167,25 +174,151 @@ int singleNumber(int* nums, int numsSize) {
 </div>
 
 ~~~ {#tab1a3 .c}
-// how to?
-bool process4(int* x)
+bool isPerfectCollapsing( int cur, int len, int *data )
 {
-    // 4, or more
-    if ( x[3]==x[1]&&x[2]==x[0] ) {
-        return true;
+    while ( cur < len ) {
+        if ( data[cur] < data[cur-2] ) {
+            ++cur;
+        } else { return false; }
     }
-    bool expandV = x[2] > x[0];
-    bool expandH = x[3] > x[1];
-    if ( (expandV&&!expandH)
-      || (!expandV&&expandH)) {
-        return true;
-    }
-    return false;
+    return true;
 }
 
-bool isSelfCrossing(int* x, int xSize) {
-
+bool isPerfect( int *data, int len )
+{
+    if ( len <= 2 ) { return true; }
+    if ( len >= 5 && data[3]==data[1] && data[0]+data[4]>=data[2] ) {
+        return false;
+    }
+    int cur = 2;
+    while ( cur < len ) {
+        // perfect expanding
+        if ( data[cur] > data[cur-2] ) {
+            ++cur;
+        } else {
+            if ( cur == 2 || cur == 3 ) {
+                return isPerfectCollapsing( ++cur, len, data );
+            } else {
+                if ( data[cur]+data[cur-4] >= data[cur-2] ) {
+                    ++cur;
+                    if ( cur < len ) {
+                        if ( data[cur]+data[cur-4] >= data[cur-2] ) {
+                            return false;
+                        } else { return isPerfectCollapsing(++cur, len, data); }
+                    } else { return true; }
+                } else { return isPerfectCollapsing(++cur, len, data); }
+            }
+        }
+    }
+    return true; // perfect expanding
 }
+
+bool isSelfCrossing( int *x, int xSize ) {
+    return !isPerfect( x, xSize );
+}
+~~~
+
+~~~ {#line129 .c}
+bool isPerfectCollapsing( int cur, int len, int *data )
+{
+    while ( cur < len ) {
+        if ( data[cur] < data[cur-2] ) {
+            ++cur;
+        } else { return false; }
+    }
+    return true;
+}
+
+bool isPerfect( int *data, int len )
+{
+    if ( len <= 2 ) { return true; }
+    if ( len >= 5 &&
+         data[3]==data[1] &&
+         data[2]<=data[0]+data[4] )
+    {
+        return false;
+    }
+
+    int cur = 2;
+    while ( cur < len && data[cur] > data[cur-2] ) {
+        ++cur;
+    }
+    if ( cur == len || cur == len-1 ) {
+        // perfect expanding
+        return true;
+    }
+
+    // collapsed!
+    if ( cur == 2 || cur == 3 ) {
+        return isPerfectCollapsing( ++cur, len, data );
+    }
+
+    if ( data[cur]+data[cur-4] >= data[cur-2] ) {
+        if ( ++cur < len ) {
+            if ( data[cur]+data[cur-4] >= data[cur-2] ) {
+                return false;
+            } else { return isPerfectCollapsing(++cur, len, data); }
+        } else { return true; }
+    } else { return isPerfectCollapsing(++cur, len, data); }
+}
+
+bool isSelfCrossing( int *x, int xSize ) {
+    return !isPerfect( x, xSize );
+}
+/*
+    case 1     case 2: expanding   case 3: collaping
+                    (global)           (local)
+   <------+     +------------+      +---------+
+          |     |            |      |         |
+          |     |  +-----+   |      |  +---+  |
+          |     |  |     |   |      |  |   |  |
+          X     |  |     X   |      |  v   |  X
+                |  |         |      |      |
+                |  +---------+      +------+
+                |
+                +--------->
+
++----+
+|    |
+|  <----[2]----^     [2]: second failure
+|    +         |
+|             [1]    [1]: first  failure
+|              |
++--------------+
+
++----+
+|    |
+|    |  +------+
+|    +  | [C]  |     [C]: may be perfectly collapsing
+|       +--->  |
+|              |
++--------------+
+
+    +--------+
+    |        |
+    |        |
+    |        +
+    |
+<------[2]-------+   [2]: second failure
+    |            |
+    |           [1]  [1]: first  failure
+    |            |
+    +------------+
+
++--------------+
+|              |
+|              |
+|              +
+|
+|   +-------------------+
+|   |   |------------+  |
+|   |   +--^         |  |
+|   |                |  |
+|   +----------------+  |
++-----------------------+
+
+
+*/
 ~~~
 </div>
 
@@ -680,13 +813,13 @@ void bstIteratorFree(struct BSTIterator *iter) {
 
     :   Given binary tree `{1,#,2,3}`,
 
-           1
-            \
-             2
-            /
-            3
+               1
+                \
+                 2
+                /
+               3
 
-    return `[1,3,2]`.
+        return `[1,3,2]`.
 </div>
 
 ~~~ {#line659 .c}

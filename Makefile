@@ -88,6 +88,7 @@ footer:
 
 statics:
 	rsync $(STATICS)/utils/*		$(PODIR)/
+	rsync $(STATICS)/font-awesome/* $(PODIR)/
 	rsync $(STATICS)/imgs/*		$(PODIR)/
 	rsync $(STATICS)/*		$(PODIR)/
 
@@ -148,6 +149,9 @@ read:
 a: about
 about:
 	$(MAKE) -C $(PAGES) about
+
+bq:
+	$(EDITOR) $(STATICS)/blog-query.js
 
 pm: poem
 poem:

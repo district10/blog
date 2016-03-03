@@ -443,5 +443,10 @@ var tzx_links = [
         url: '/post-0087-leetcode.html',
         title: "Leet Code",
         query: ['leet-code', 'code', 'programming', 'algorithms']
-    }
+    },
+    {
+        url: '/post-0088-font-awesome.html',
+        title: "Font Awesome",
+        query: ['font-awesome', 'font', 'web', 'guide']
+    },
 ];

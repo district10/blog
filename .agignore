@@ -1,2 +1,6 @@
 publish/
+.git/
+gists/
+blagee/
+_miscs/
 _statics/utils/
