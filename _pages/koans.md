@@ -5,6 +5,13 @@
 Koans | 呓语
 ============
 
+<style>
+code.tzx-timestamp {
+    color: white;
+}
+</style>
+
+
 <div class="koans"><!-- 下面要有空行 | One Empty Line Reserved Below -->
 
 
@@ -1859,3 +1866,35 @@ Albert Einstein:
 > 不带换行符的文件的 md5sum）。我的主要联系方式是 Email。
 
 这个……有点叼。我要好好学习以后破解 md5……
+
+<script>
+function prettyUnixTime( tsstr ) {
+    console.log( tsstr );
+    var ts = new Number( tsstr );
+    var date = new Date( ts * 1000);
+    var year = date.getFullYear();
+    var month = "1" + date.getMonth();
+    var day = "1" + date.getDay();
+    var hours = date.getHours();
+    var minutes = "0" + date.getMinutes();
+    var seconds = "0" + date.getSeconds();
+    var sts = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2); // short timestamp: 01:23:45
+    var lts = year + '/' + month + '/' + day + ', ' + sts; // long timestamp: 2016/03/04, 01:23:45
+    return { ts: ts, sts: sts, lts: lts };
+}
+
+</script>
+
+<script src="moment.min.js"></script>
+<script>
+var tss = document.getElementsByClassName('tzx-timestamp');
+for( var i = 0; i < tss.length; ++i ) {
+    var ts = new Number( tss[i].innerHTML )
+    var text = moment(ts).format("HH:mm:ss");
+    var tooltip = moment(ts).format("YYYY-MM-DD HH:mm:ss");
+    tss[i].innerHTML = text;
+    tss[i].setAttribute( 'title', tooltip );
+}
+
+
+</script>

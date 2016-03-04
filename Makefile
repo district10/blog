@@ -18,7 +18,7 @@ EXE:
 
 gh: github
 github:
-	git add -A && git commit -m "`date +'%H:%M:%S @ %b%d, %Y'`" && git push
+	git add -A && git commit -m "`date +'%H:%M:%S @ %b %d, %Y'`" && git push
 status:
 	git status
 diff:
