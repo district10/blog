@@ -32,17 +32,17 @@ code.tzx-timestamp {
 
 发在 QQ 空间里好像有点秀逗，所以删掉了，发在这里把。
 
-##. brands &rarr; brans，也有点像 brains；
-##. chores &rarr; chors；
-##. dark &rarr; duck；
-##. evening &rarr; evilly；
-##. law &rarr; naul；
-##. line &rarr; nan；
-##. look-alike 念成了 looka-like；
-##. observe &rarr; ehbze-ve；
-##. realize 念成了 real lize；
-##. sip &rarr; sick；
-##. “lull the boy to open the door”，`to` 不是介词；
+#. brands &rarr; brans，也有点像 brains；
+#. chores &rarr; chors；
+#. dark &rarr; duck；
+#. evening &rarr; evilly；
+#. law &rarr; naul；
+#. line &rarr; nan；
+#. look-alike 念成了 looka-like；
+#. observe &rarr; ehbze-ve；
+#. realize 念成了 real lize；
+#. sip &rarr; sick；
+#. “lull the boy to open the door”，`to` 不是介词；
 
 ## `1456557956`{.tzx-timestamp} const 2 volatile
 
@@ -287,15 +287,15 @@ Aborting
 
 ## `1454243499`{.tzx-timestamp} 假期白话
 
-##. 我一直以为读音是“shuli”……原来就是“shushu”。
-##. 我真是想不通了。Bash 里面为什么把 Emacs 的快捷键全拿过去了……连 `M-- M-u` 都能用……
-##.  Using evil (simulating vim-like behaviour), I use this trick: :r!xsel or :r!xsel -b what reads output of command specified after exclamation mark. On MacOS you would probably use pbaste. – Jan Vlcinsky
+#. 我一直以为读音是“shuli”……原来就是“shushu”。
+#. 我真是想不通了。Bash 里面为什么把 Emacs 的快捷键全拿过去了……连 `M-- M-u` 都能用……
+#.  Using evil (simulating vim-like behaviour), I use this trick: :r!xsel or :r!xsel -b what reads output of command specified after exclamation mark. On MacOS you would probably use pbaste. – Jan Vlcinsky
 
 一看就是 Vim 也了解得不够的人……
 
 http://stackoverflow.com/questions/9985316/how-to-paste-to-emacs-from-clipboard
 
-##. You may not like this ad, but it supports the developer and keeps this site free.
+#. You may not like this ad, but it supports the developer and keeps this site free.
 
 ## `1453270095`{.tzx-timestamp} 如何截屏
 
@@ -450,7 +450,7 @@ So it will be.
 
 Refs
 
-##. [几个版本的比较--读后感 (评论: 毛泽东传)](http://book.douban.com/review/4562952/)
+#. [几个版本的比较--读后感 (评论: 毛泽东传)](http://book.douban.com/review/4562952/)
 
 ## `1451283139`{.tzx-timestamp} 售价远高于成本
 
@@ -530,11 +530,11 @@ void doSomething( status_t *currentStatus ) {
 
 但我怎么能认输呢，鸡蛋碰石头也得上。这里：
 
-##. [研究生处 - 2016年全国大学生英语竞赛（NECCS）](http://www.shnu.edu.cn/Default.aspx?tabid=11957&ctl=Details&mid=25572&ItemID=172443)
-##. [关于组织研究生参加2016年全国大学生英语竞赛的通知-培养-武汉大学研究生院](http://www.gs.whu.edu.cn/index.php/index-view-aid-7829.html)
-##. [-启航！——2016年全国大学生英语竞赛报名工作全面展开](http://www.tefl-china.net/Article/ShowArticle.asp?ArticleID=1965)
-##. [-2015年全国大学生英语竞赛样题](http://www.tefl-china.net/Article/ShowArticle.asp?ArticleID=1911)
-##. [《全国大学生英语竞赛A类（研究生）历年真题精解与标准模拟考场 （第2版）》(赵晓敏...)【简介_书评_在线阅读】 - 当当图书](http://product.dangdang.com/23630422.html)
+#. [研究生处 - 2016年全国大学生英语竞赛（NECCS）](http://www.shnu.edu.cn/Default.aspx?tabid=11957&ctl=Details&mid=25572&ItemID=172443)
+#. [关于组织研究生参加2016年全国大学生英语竞赛的通知-培养-武汉大学研究生院](http://www.gs.whu.edu.cn/index.php/index-view-aid-7829.html)
+#. [-启航！——2016年全国大学生英语竞赛报名工作全面展开](http://www.tefl-china.net/Article/ShowArticle.asp?ArticleID=1965)
+#. [-2015年全国大学生英语竞赛样题](http://www.tefl-china.net/Article/ShowArticle.asp?ArticleID=1911)
+#. [《全国大学生英语竞赛A类（研究生）历年真题精解与标准模拟考场 （第2版）》(赵晓敏...)【简介_书评_在线阅读】 - 当当图书](http://product.dangdang.com/23630422.html)
 
 25 块钱我有，害怕什么呢。
 
@@ -685,12 +685,12 @@ Windows 的 Explorer 的 `Control` 加滚轮居然是改变视图模式，然而
 
 ## `1450503402`{.tzx-timestamp} 国内技术社区
 
-##. CSDN 广告最多，做得最烂，人多又杂。
-##. 博客园，比 CSDN 好点，广告少点。
-##. 开源中国，广告略有品位，比前两者好，它的 [技术翻译](http://www.oschina.net/translate) 很有意思
-##. V2EX，很少上，不评价。
-##. SegmentFault，很不错。
-##. Coding.net，GitCafe，Git@OSC 这个不算社区。
+#. CSDN 广告最多，做得最烂，人多又杂。
+#. 博客园，比 CSDN 好点，广告少点。
+#. 开源中国，广告略有品位，比前两者好，它的 [技术翻译](http://www.oschina.net/translate) 很有意思
+#. V2EX，很少上，不评价。
+#. SegmentFault，很不错。
+#. Coding.net，GitCafe，Git@OSC 这个不算社区。
 
 ## `1450430826`{.tzx-timestamp} C++ 真是比 C 语言庞大太多
 
@@ -899,17 +899,17 @@ By the way，jgm 大神也用 Emacs（包括 Evil-mode）：
      ghc solarized-theme helm cmake-mode lua-mode))
 ```
 
-##. `ex`{.bash}, short for EXtended, is a line editor for Unix systems
+#. `ex`{.bash}, short for EXtended, is a line editor for Unix systems
     originally written by Bill Joy in 1976, beginning with an earlier program
     written by Charles Haley.
-##. The original code for `vi`{.bash} was written by Bill Joy in 1976, as the
+#. The original code for `vi`{.bash} was written by Bill Joy in 1976, as the
     visual mode for a line editor called `ex`{.bash} that Joy had written with Chuck Haley.
 
 Refs
 
-##. [vi - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Vi)
-##. [ex (text editor) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Ex_%28text_editor%29)
-##. [Emacs - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Emacs)
+#. [vi - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Vi)
+#. [ex (text editor) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Ex_%28text_editor%29)
+#. [Emacs - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Emacs)
 
 ## `1449914013`{.tzx-timestamp} Greedy Search
 
@@ -1473,18 +1473,18 @@ C:\Program Files (x86)\Git
 
 这个文件夹下也有很多有意思的东西：`c:\windows\system32`，比如：
 
-##. `taskmgr.exe`，任务管理器
-##. `winver.exe`，显示系统版本
-##. `tasklist.exe`，`taskkill.exe`
-##. `xcopy.exe`
+#. `taskmgr.exe`，任务管理器
+#. `winver.exe`，显示系统版本
+#. `tasklist.exe`，`taskkill.exe`
+#. `xcopy.exe`
 
 `C:\Windows` 下面则有：
 
-##. `write.exe`，写字板
-##. `notepad.exe`
-##. `regedit.exe`
-##. `explorer.exe`
-##. `winhlp32.exe`
+#. `write.exe`，写字板
+#. `notepad.exe`
+#. `regedit.exe`
+#. `explorer.exe`
+#. `winhlp32.exe`
 
 我自己攒的小工具则有 `C:\dev\cmdtools`（大部分来自 Nuwen 的 MinGW 打包）：
 
@@ -1566,15 +1566,15 @@ systeminfo
 
 这个 MinGW Distro 特别赞：
 
-##. My MinGW distribution ("distro") is x64-native and
+#. My MinGW distribution ("distro") is x64-native and
     currently contains GCC 5.2.0 and Boost 1.59.0.
-##. GCC defaults to `C++03`, so you must compile with `-std=c++14` for C++14.
+#. GCC defaults to `C++03`, so you must compile with `-std=c++14` for C++14.
 
 作者的网页上有句：
 
-##. This is my personal website. I work for Microsoft, but I don't speak for them.
-##. So high, so low, so many things to know
-##. <nuwen.net> is my personal website; I pronounce it "noo-when". It's a
+#. This is my personal website. I work for Microsoft, but I don't speak for them.
+#. So high, so low, so many things to know
+#. <nuwen.net> is my personal website; I pronounce it "noo-when". It's a
     reference to Pham Nuwen, a character in A Deepness In The Sky by Vernor Vinge.
 
 ## `1449546253`{.tzx-timestamp} 一个想法
@@ -1584,13 +1584,13 @@ systeminfo
 
 如果这一切都在线处理：
 
-##. 给它一个源码目录，它先 directory listing（七牛不支持这个）
-##. 根据 listing 的 index，点击后加载相应文件（URL 不变，只是加载文件并高亮而已）
+#. 给它一个源码目录，它先 directory listing（七牛不支持这个）
+#. 根据 listing 的 index，点击后加载相应文件（URL 不变，只是加载文件并高亮而已）
 
 如果这一切离线处理：
 
-##. 也就是说所有的代码高亮都放到后台，把一个目录里的源码都转化为 HTML 再直接上传七牛
-##. 可以参考 Doxygen。
+#. 也就是说所有的代码高亮都放到后台，把一个目录里的源码都转化为 HTML 再直接上传七牛
+#. 可以参考 Doxygen。
 
 我更倾向于用离线，因为可以不写 JavaScript……而且一次处理完可以打包好存起来。
 
@@ -1614,7 +1614,7 @@ systeminfo
 
 Refs
 
-##. [The Last Line of The Great Gatsby: "So We Beat On..."](http://bookriot.com/2012/07/26/the-last-line-of-the-great-gatsby-so-we-beat-on/)
+#. [The Last Line of The Great Gatsby: "So We Beat On..."](http://bookriot.com/2012/07/26/the-last-line-of-the-great-gatsby-so-we-beat-on/)
 
 ## `1449217326`{.tzx-timestamp} 眼屎好吃吗？
 
@@ -1637,9 +1637,9 @@ TJG 说，那你吃你的眼屎啊～
 
 我们做的是学术，以数据为中心，处理流程相对简单（我是说过程 in/out 清晰而不是一团线条，多入多出），而不是
 
-##. 以为别人提供合理的 API 接口为编码目的
-##. 向用户隐藏/掩盖细节
-##. 应用驱动、事务驱动
+#. 以为别人提供合理的 API 接口为编码目的
+#. 向用户隐藏/掩盖细节
+#. 应用驱动、事务驱动
 
 生产过程中往往需要和上、下的人打交道，隐藏自己这一层的细节很必要。^[曾看过一本书，说这叫“信息屏蔽”。]而学术需要更加直观透明。
 这就是学术和生产的区别。
@@ -1733,11 +1733,11 @@ Albert Einstein:
 很久前写的要做的事：
 
 
-##. ![y] read some tmux
-##. ![y] 学习使用 gitbook
-##. ![y]<!--...--> [github/gitignore](https://github.com/github/gitignore)
-##. ![y] 程序员自身修养
-##. ![y] Learn Org-Mode
+#. ![y] read some tmux
+#. ![y] 学习使用 gitbook
+#. ![y]<!--...--> [github/gitignore](https://github.com/github/gitignore)
+#. ![y] 程序员自身修养
+#. ![y] Learn Org-Mode
 
 ## `1447765652`{.tzx-timestamp} 教宗也当然是反对吃饭玩手机的人
 
@@ -1785,9 +1785,9 @@ Albert Einstein:
 
 总是深得我心。至于那：
 
-##. 倔强但蛮不讲理的 &rarr; 去死
-##. 理性而逆来顺受的 &rarr; 再见
-##. 蛮不讲理又欺软怕硬的 &rarr; 滚远点
+#. 倔强但蛮不讲理的 &rarr; 去死
+#. 理性而逆来顺受的 &rarr; 再见
+#. 蛮不讲理又欺软怕硬的 &rarr; 滚远点
 
 ## `1447405412`{.tzx-timestamp} 每到冬天
 
@@ -1867,34 +1867,15 @@ Albert Einstein:
 
 这个……有点叼。我要好好学习以后破解 md5……
 
-<script>
-function prettyUnixTime( tsstr ) {
-    console.log( tsstr );
-    var ts = new Number( tsstr );
-    var date = new Date( ts * 1000);
-    var year = date.getFullYear();
-    var month = "1" + date.getMonth();
-    var day = "1" + date.getDay();
-    var hours = date.getHours();
-    var minutes = "0" + date.getMinutes();
-    var seconds = "0" + date.getSeconds();
-    var sts = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2); // short timestamp: 01:23:45
-    var lts = year + '/' + month + '/' + day + ', ' + sts; // long timestamp: 2016/03/04, 01:23:45
-    return { ts: ts, sts: sts, lts: lts };
-}
-
-</script>
-
 <script src="moment.min.js"></script>
 <script>
 var tss = document.getElementsByClassName('tzx-timestamp');
 for( var i = 0; i < tss.length; ++i ) {
-    var ts = new Number( tss[i].innerHTML )
-    var text = moment(ts).format("HH:mm:ss");
-    var tooltip = moment(ts).format("YYYY-MM-DD HH:mm:ss");
-    tss[i].innerHTML = text;
+    var ts = new Number( tss[i].innerHTML );
+    var day = moment(ts);
+    var text = day.format("HH:mm:ss");
+    var tooltip = day.format("YYYY-MM-DD HH:mm:ss");
+    tss[i].innerHTML = day.format(); // text;
     tss[i].setAttribute( 'title', tooltip );
 }
-
-
 </script>
