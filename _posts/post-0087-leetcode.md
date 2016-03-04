@@ -230,13 +230,13 @@ bool isSelfCrossing( int *x, int xSize ) {
           |     |  +-----+   |      |  +---+  |
           |     |  |     |   |      |  |   |  :
           #     |  |     #   |      |  v   |  :
-                |  |         |      |      |  
-                |  +---------+      +------+  
+                |  |         |      |      |
+                |  +---------+      +------+
                 |
                 +--------->
 
-    case 4: failed expanding                
-     
+    case 4: failed expanding
+
      +----+
      |    |
      |  <----[2]----^     [2]: second failure
@@ -255,7 +255,7 @@ bool isSelfCrossing( int *x, int xSize ) {
      |              |
      +--------------+
 
-    case 6: failed expanding                
+    case 6: failed expanding
 
         +---+
         |   |
@@ -293,7 +293,7 @@ bool isSelfCrossing( int *x, int xSize ) {
         |       |
         +-------+
 
-#: starting point 
+#: starting point
 */
 
 // case 3
@@ -887,6 +887,63 @@ int* inorderTraversal(struct TreeNode* root, int* returnSize) {
 ~~~
 </div>
 
+<div class="tzx-tabs">
+* [Segments](#line891)
+* [Segments (C)](#line892)
+
+<div id="line891">
+[OpenJudge - 4114:Segments](http://bailian.openjudge.cn/practice/4114/)
+
+:   总时间限制:
+      ~ 1000ms
+    内存限制:
+      ~ 65536kB
+    描述
+      ~ Given n segments in the two dimensional space, write a program, which
+        determines if there exists a line such that after projecting these
+        segments on it, all projected segments have at least one point in
+        common.
+    输入
+      ~ Input begins with a number T showing the number of test cases and then,
+        T test cases follow. Each test case begins with a line containing a
+        positive integer n ≤ 100 showing the number of segments. After that, n
+        lines containing four real numbers x1 y1 x2 y2 follow, in which (x1,
+        y1) and (x2, y2) are the coordinates of the two endpoints for one of
+        the segments.
+    输出
+      ~ For each test case, your program must output "Yes!", if a line with
+        desired property exists and must output "No!" otherwise. You must
+        assume that two floating point numbers a and b are equal if |a - b| <
+        10-8.
+    样例输入
+      ~ ```plain
+        3
+        2
+        1.0 2.0 3.0 4.0
+        4.0 5.0 6.0 7.0
+        3
+        0.0 0.0 0.0 1.0
+        0.0 1.0 0.0 2.0
+        1.0 1.0 2.0 1.0
+        3
+        0.0 0.0 0.0 1.0
+        0.0 2.0 0.0 3.0
+        1.0 1.0 2.0 1.0
+        ```
+    样例输出
+      ~ ```plain
+        Yes!
+        Yes!
+        No!
+        ```
+    来源
+      ~ Amirkabir University of Technology Local Contest 2006
+</div>
+
+~~~ {#line892 .c}
+// todo
+~~~
+
 <!--
 <div class="tzx-tabs">
 * [](#)
@@ -907,3 +964,7 @@ $(function() {
     $( ".tzx-tabs" ).tabs();
 });
 </script>
+
+<!--
+[OpenJudge - G:I Love this Game!](http://www.bailian.openjudge.cn/2015finalexam/G/)
+-->

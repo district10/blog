@@ -9,7 +9,7 @@ clean:
 	rm -f $(PAGES)
 
 $(PODIR)/%.html: %.md
-	cat $^ | $(GEN) $@
+	cat $^ | pandoc -S -s --ascii -c main.css -A ../footer.html --toc --highlight-style pygments -f markdown -o $@
     
 4: 404
 404:

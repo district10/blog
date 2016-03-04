@@ -5,323 +5,155 @@
 Links | 链签
 ============
 
-#. [Google](http://www.google.com.sg)
-#. [DuckDuckGo](http://www.duckduckgo.com)
-#. [YouTube Downloader](http://o.hk.am/)
-#. [Library Genises](http://gen.lib.rus.ec/)
-#. [Book Finder](http://en.bookfi.org)
-#. [Tao Bao UED](http://ued.taobao.com/blog/about-us/)
-#. [Microsoft Academic Search](http://libra.msra.cn/)
-#. [Reddit: programming](https://www.reddit.com/r/programming/)
-#. [GitXiv — Collaborative Open Computer Science — Medium](https://medium.com/@samim/gitxiv-collaborative-open-computer-science-e5fea734cd45)
-#. [一个文科生学编程的书单](http://www.douban.com/note/380095094/)
-#. [Linux/ - Linux Cross Reference - Free Electrons](http://lxr.free-electrons.com/)
-#. [Top arXiv papers](https://scirate.com/)
-#. [WebHome < FST < TWiki](http://www.openfst.org/twiki/bin/view/FST/WebHome)
-#. [Dmitrijs Milajevs](http://www.eecs.qmul.ac.uk/~dm303/pages/reading-list.html)
-#. [RegExr: Learn, Build, & Test RegEx](http://regexr.com/)
-#. [Directory of Open Access Journals](https://doaj.org/)
-#. [arXiv.org e-Print archive](http://arxiv.org/)
-#. [干货 | 大师教你写 paper](http://www.douban.com/url/1038327/)
-#. [查看字符编码（UTF-8）](http://www.mytju.com/classcode/tools/encode_utf8.asp)
-#. [Coding | 代码托管，项目管理，WebIDE，演示部署，开启云端开发模式，让开发更简单](https://coding.net/)
-#. [datahub](http://datahub.top/)
-#. [Stack Overflow](http://stackoverflow.com/)
-#. [GitHub](https://github.com/)
-#. [Free reference manager and PDF organizer | Mendeley](https://www.mendeley.com/)
-#. [https://zenodo.org](https://zenodo.org/)
-#. [Import citations into your library using the Mendeley Web Importer | Mendeley](https://www.mendeley.com/import/)
-#. [橙子：怎样用 Mac 和 iPhone 高效学习？](http://daily.zhihu.com/story/6762361)
-#. [The Pragmatic Bookshelf](https://pragprog.com/)
-#. [快读啦](https://kuaidula.com/)
-#. [ISSUU - Digital Publishing Platform for Magazines, Catalogs, and more](http://issuu.com/)
-#. [Compile and Execute Programs Online| Online IDE](http://www.compileonline.com/)
-#. [Learn X in Y Minutes](http://learnxinyminutes.com/)
-#. [VisuAlgo - visualising data structures and algorithms through animation](http://visualgo.net/)
-#. [【分享】来自于考拉小巫的各种给力文章大集合](http://www.douban.com/group/topic/15299075/)
-#. [洗脑三部曲（一） (评论: 暗时间)](http://book.douban.com/review/5012104/)
-#. [Tetris](https://jake-eaton.com/tetris/)
-#. [花瓣采集工具-花瓣](http://huaban.com/about/goodies/)
 #. [1001 Fonts · Free Fonts Baby!](http://www.1001fonts.com/)
-#. [The Bézier Game](http://bezier.method.ac/) %bezier
-#. [Welcome to Method of Action](http://method.ac/) %bezier %kern %color
-#. [cppreference.com](http://en.cppreference.com/w/)
-#. [百度云 网盘-_insomnia_的分享](http://pan.baidu.com/share/home?uk=2919707929#category/type=0)
-#. [共享我收藏的Coursera、Udacity等课程【百度云】（...](http://www.douban.com/group/topic/44748285/)
-#. [Coursera课程批量下载（保持资源原目录结构） | MOOC学院 果壳网旗下慕课学习社区](http://mooc.guokr.com/post/560/)
-#. [Visual Studio Code and Unity](https://code.visualstudio.com/Docs/runtimes/unity)
-#. [Kaggle: The Home of Data Science](https://www.kaggle.com/)
-#. [最高效的休息方式](http://www.douban.com/note/514216150/)
-#. [漫谈数据挖掘从入门到进阶](http://www.douban.com/note/283530204/)
-#. [八卦高德纳 (评论: 计算机程序设计艺术（第1卷）)](http://book.douban.com/review/5384627/)
-#. [LeetCode | Online Portal for IT Interview](http://articles.leetcode.com/)
-#. [Jiumo E-Book Search 鸠摩搜书 - 电子书搜索引擎](http://www.jiumodiary.com/)
-#. [比尔华纳博士《我们因何而恐惧： 一个一千四百年的秘密》-纪录片视频-爱奇艺](http://www.iqiyi.com/w_19rrylp8kl.html)
-
-Blogs
------
-
-#. [Fabrice Bellard's Home Page](http://bellard.org/)
-#. [云风的 BLOG](http://blog.codingnow.com/)
-#. [归档 | Yukang's Page](http://www.cyukang.com/archive.html)
-#. [崔添翼 § 翼若垂天之云 › Journey seeking Truth, Love, and Strength.](http://cuitianyi.com/)
-#. [开放的智力 - 知乎专栏](http://zhuanlan.zhihu.com/intelligence)
-#. [菜菜博士 - 博士在网络的家](http://microcai.org/)
-#. [码农场-自然语言处理、机器学习算法](http://www.hankcs.com/)
-#. [Lessons on development of 64-bit C/C++ applications](http://www.viva64.com/en/l/)
 #. [30.Machine L&Data Mining - 结构之法 算法之道 - 博客频道 - CSDN.NET](http://blog.csdn.net/v_july_v/article/category/1061301)
-#. [首页 » 张鑫旭-鑫空间-鑫生活](http://www.zhangxinxu.com/)
-#. [About me | Yuxin's Blog](http://ppwwyyxx.com/about-me/)
+#. [A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
+#. [ASCIIFlow Infinity](http://asciiflow.com/) ^[[ASCIIFlow Infinity (my backup)](http://whudoc.qiniudn.com/asciiflow/index.html)]
+#. [Acronymify! - Automatically generate fun acronyms for your project](http://acronymify.com/) %project-name
+#. [Alll Cheat Sheets in One Page](http://www.cheat-sheets.org/)
+#. [BeeBEEP (Secure Lan Messenger)](http://beebeep.sourceforge.net/)
+#. [Emacs Redux](http://emacsredux.com/blog/archives/) `emacs` `prelude`
+#. [Blog – Yanran's Attic](http://yanran.li/)
+#. [Browse Art - DeviantArt](http://www.deviantart.com/browse/all/)
+#. [CVPR 2015 Accepted Papers](http://cs.stanford.edu/people/karpathy/cvpr2015papers/)
+#. [Compile and Execute Programs Online| Online IDE](http://www.compileonline.com/)
+#. [Corpus of Contemporary American English (COCA)](http://corpus.byu.edu/coca/)
+#. [Dependency Walker (depends.exe) Home Page](http://www.dependencywalker.com/)
+#. [Dmitrijs Milajevs Reading List](http://www.eecs.qmul.ac.uk/~dm303/pages/reading-list.html) `scientific` `reading list`
+#. [DuckDuckGo](http://www.duckduckgo.com) `search engine`
+#. [Easyicon - Search 500,000+ (PNG,ICO,ICNS) free icons, desktop icons, icons Download.](http://www.easyicon.net/) `icon`
+#. [Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen) `osg`
+#. [English as a Second Language Podcast](http://www.eslpod.com/website/index.php)
+#. [Fabrice Bellard's Home Page](http://bellard.org/) `hacker`
+#. [Getting started - asciinema](https://asciinema.org/docs) `ascii art` `video` `screencast`
+#. [GitXiv — Collaborative Open Computer Science — Medium](https://medium.com/@samim/gitxiv-collaborative-open-computer-science-e5fea734cd45) `scientific` `paper` `arxiv`
+#. [Glgoo 学术搜索](http://scholar.glgoo.org/) `search engine` `gfw`
+#. [Google](http://www.google.com.sg) `search engine`
+#. [Graph::Easy - Manual - Overview](http://bloodgate.com/perl/graph/manual/overview.html)
+#. [Gu Lu's Blog](http://www.gulu-dev.com/archive) `blog` `vim` `python` `vim plugin`
+#. [HKMDB（香港影库）](http://hkmdb.com/db/index.php) `movie`
+#. [HaHack](http://hahack.com/) `blog`
+#. [Home - Val Markovic](https://val.markovic.io/) `blog`
+#. [Home - 阳志平的网志](http://www.yangzhiping.com/) `blog`
+#. [IEEE Xplore Digital Library](http://ieeexplore.ieee.org/Xplore/home.jsp?reload=true) `papers` `scientific`
+#. [IPN (Intelligent Podcast Network)](http://ipn.li/) `podcast`
+#. [JSONiq - The JSON Query Language](http://jsoniq.org/) `programming`
+#. [Jacky Liu's Blog](http://bluegene8210.is-programmer.com/)
+#. [Jacob Kaplan-Moss](https://jacobian.org/)
+#. [Jijitang](http://www.jijitang.com/)
+#. [Just Facts](https://dangfan.me/en/) `blog`
+#. [Kaggle: The Home of Data Science](https://www.kaggle.com/) `programming` `compete`
+#. [Kai Sun (Yixin, gomoku)](http://www.kaisun.org/) `ai` `blog`
+#. [LaTeXStudio](http://www.latexstudio.net/) `thesis` `templates` `latex`
+#. [Learn X in Y Minutes](http://learnxinyminutes.com/) `programming`
+#. [Library Genises](http://gen.lib.rus.ec/) `books`
+#. [Linux/ - Linux Cross Reference - Free Electrons](http://lxr.free-electrons.com/) `linux source code` `lxr cross referencer`
+#. [List of colors](http://www.colorhexa.com/color-names) `ui` `ux`
+#. [Lu Wang's Page | vim.js](http://coolwanglu.github.io/) `blog`
+#. [Lucida | 算法学习之路](http://lucida.me/) `blog` `algorithms`
+#. [MathOverflow](http://mathoverflow.net/) `math`
+#. [Microsoft Academic Search](http://libra.msra.cn/) `search engine`
+#. [Microsoft Project Oxford Home](https://www.projectoxford.ai/) `microsoft`
+#. [Milo Yip - 博客园](http://www.cnblogs.com/miloyip/) `blog`
+#. [包昊军的博客 | baohaojun](http://baohaojun.github.io/blog/2011/12/23/index.html) `blog`
+#. [OpenJudge - 百练 - 首页](http://www.bailian.openjudge.cn/) `leetcode` `oj`
+#. [Pretty Diff - The difference tool](http://prettydiff.com/)
+#. [Pro Git读书笔记 - Kelvin的胡言乱语](http://kelvinh.github.io/wiki/progit/)
+#. [ProcessOn - Create diagrams online in real-time!](https://www.processon.com/tour)
+#. [ProcessOn](https://www.processon.com/network)
+#. [Project Tuva: Enhanced Video Player Home - Microsoft Research](http://research.microsoft.com/apps/tools/tuva/index.html#data=2%7C%7C%7C)
+#. [Publishing Org-mode files to HTML](http://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html)
+#. [QQ群关系可视化查询 每一个被GFW的网站都是一个伟大的网站](https://qqgroup.insight-labs.org/)
+#. [Ratings and Reviews for CPAN - cpanratings](http://cpanratings.perl.org/)
+#. [Reading List « Deep Learning](http://deeplearning.net/reading-list/)
+#. [Reborn - Again And Again](http://xiaolai.li/)
+#. [Recent - metacpan.org](https://metacpan.org/recent)
+#. [Reddit: programming](https://www.reddit.com/r/programming/) `sns`
+#. [RegExr: Learn, Build, & Test RegEx](http://regexr.com/)
+#. [Research Articles Corpus - basic search](http://rcpce.engl.polyu.edu.hk/RACorpus/default.htm)
+#. [Rotten Tomatoes（美国“烂番茄”）](http://www.rottentomatoes.com/)
+#. [SVG-edit](https://svg-edit.github.io/svgedit/releases/svg-edit-2.8.1/svg-editor.html)
+#. [Semantic Scholar](https://www.semanticscholar.org/)
+#. [Shark Machine Learning Library](http://image.diku.dk/shark/)
+#. [Slim Wallets | Minimalist Wallets | Thread Wallets](https://www.threadwallets.com/)
+#. [Table of Contents](http://tuhdo.github.io/index.html)
+#. [Tao Bao UED](http://ued.taobao.com/blog/about-us/) `ui` `ue`
+#. [Teahour.fm](http://teahour.fm/)
+#. [Team | Urban Collective Intelligence](http://urbancolab.com/?q=team)
+#. [Tetris](https://jake-eaton.com/tetris/)
+#. [The Bézier Game](http://bezier.method.ac/) %bezier
+#. [Timothy Guan‑tin Chien](http://timdream.org/#works)
+#. [Top arXiv papers](https://scirate.com/) `arxiv`
+#. [Typeof.net](http://typeof.net/index.html)
+#. [Tzeng Yuxio](http://tzengyuxio.me/) （一看就是处女座）
+#. [Useful Emacs Commands](http://irreal.org/emacs-reminders.html)
+#. [Useful Links](http://sse.tongji.edu.cn/linzhang/UsefulLinks/links.htm)
+#. [VT100.net: A parser for DEC’s ANSI-compatible video terminals](http://vt100.net/emu/dec_ansi_parser)
+#. [VisuAlgo - visualising data structures and algorithms through animation](http://visualgo.net/)
+#. [Wangjianshuo's Blog | Events (in Shanghai) that affect my life (and others')](http://wangjianshuo.com/)
+#. [Weavi](https://weavi.com/92079/Z2oSFk5UfDsuUKLfNVOl-g)
+#. [Welcome to Method of Action](http://method.ac/) %bezier %kern %color
+#. [Welcome to the USGS - U.S. Geological Survey](http://www.usgs.gov/)
+#. [What the .emacs.d!?](http://whattheemacsd.com/)
+#. [Woboq Code Browser](http://code.woboq.org/)
 #. [Yangzhe1990's Blog | Just another WordPress.com weblog](https://yangzhe1990.wordpress.com/)
-#. [Just Facts](https://dangfan.me/en/)
-#. [大鹏志](http://dapengde.com/)
+#. [YouTube Downloader](http://o.hk.am/) `youtube`
+#. [ZType – Typing Game - Type to Shoot](http://zty.pe/)
+#. [arXiv.org e-Print archive](http://arxiv.org/) `arxiv`
+#. [coldnew's blog](http://coldnew.github.io/)
+#. [cppreference.com](http://en.cppreference.com/w/)
+#. [datahub](http://datahub.top/) `python` `site`
+#. [emacs - how to org mode image absolute path of export html? - Stack Overflow](http://stackoverflow.com/questions/14684263/how-to-org-mode-image-absolute-path-of-export-html)
+#. [favicon.ico Generator](http://www.favicon.cc/)
+#. [hub · the command-line wrapper for git](https://hub.github.com/)
+#. [kieranhealy.org](http://kieranhealy.org/)
+#. [laike9m's blog](https://laike9m.com/blog/archive/)
+#. [nil](http://blog.qinjian.me/)
+#. [nothingisreal.com](http://en.nothingisreal.com/wiki/Tristan_Miller)
+#. [online text editor - collabedit](http://collabedit.com/)
+#. [reddit: the front page of the internet](https://www.reddit.com/)
 #. [sacha chua :: living an awesome life - learn - share - scale](http://sachachua.com/blog/)
+#. [soulmachine](http://www.soulmachine.me/)
+#. [visual-regexp](https://github.com/benma/visual-regexp.el)
+#. [ゆっくりでいいさ](http://blog.watashi.ws/)
+#. [一个文科生学编程的书单](http://www.douban.com/note/380095094/) `books`
+#. [九章算法 - 帮助更多中国人找到好工作，硅谷顶尖IT企业工程师实时在线授课为你传授面试技巧](http://www.jiuzhang.com/?source=soulmachine)
+#. [云风的 BLOG](http://blog.codingnow.com/)
+#. [依云's Blog](http://lilydjwg.is-programmer.com/)
+#. [内核恐慌 — IPN 出品](http://ipn.li/kernelpanic/)
+#. [博客文章索引 - ☆Ronny丶 - 博客园](http://www.cnblogs.com/ronny/p/index.html)
+#. [号码归属地查询_服务与支持_中国移动通信](http://www.10086.cn/support/selfservice/ownership/)
+#. [大鹏志](http://dapengde.com/)
+#. [子龙山人](http://zilongshanren.com/)
+#. [学习的乐趣](http://www.fffffun.com/blog/)
+#. [崔添翼 § 翼若垂天之云 › Journey seeking Truth, Love, and Strength.](http://cuitianyi.com/)
+#. [干货 | 大师教你写 paper](http://www.douban.com/url/1038327/)
+#. [开放的智力 - 知乎专栏](http://zhuanlan.zhihu.com/intelligence)
+#. [归档 | Yukang's Page](http://www.cyukang.com/archive.html)
+#. [当然我在扯淡](http://www.yinwang.org/)
+#. [快读啦](https://kuaidula.com/) `fast reading`
+#. [我国在校研究生的学术贡献有多大？](http://mp.weixin.qq.com/s?__biz=MzA3NTU5NzMwNw==&mid=211741323&idx=5&sn=3adfa48bf8a1eeda284c361c85621009#rd)
+#. [推荐博客 - 博客园](http://www.cnblogs.com/expert/)
+#. [最高法院法官告诉你，诉讼文书这样写才规范](http://mp.weixin.qq.com/s?__biz=MzA4NDYwNTE4Mg==&mid=207798324&idx=5&sn=7f70171babef70007e44c79679e139b8&scene=2&from=timeline&isappinstalled=0#rd)
+#. [果壳任意门 - 发现你最爱的网站](http://gate.guokr.com/)
+#. [查看字符编码（UTF-8）](http://www.mytju.com/classcode/tools/encode_utf8.asp)
+#. [欢迎访问武汉大学校园信息门户](http://my.whu.edu.cn/)
+#. [武汉大学学术搜索](http://www.duxiu.com/)
+#. [百度云 网盘-_insomnia_的分享](http://pan.baidu.com/share/home?uk=2919707929#category/type=0)
+#. [百度在线输入法](http://shurufa.baidu.com/online.html)
+#. [真 OO无双 - 博客园](http://www.cnblogs.com/oomusou/)
+#. [码农场-自然语言处理、机器学习算法](http://www.hankcs.com/)
+#. [科学网—lix - 李小文](http://blog.sciencenet.cn/home.php?mod=space&uid=2984)
+#. [科学网—施一公的博客 - 施一公](http://blog.sciencenet.cn/home.php?mod=space&uid=46212)
+#. [科研诚信的中国式难题](http://mp.weixin.qq.com/s?__biz=MzA3OTgzMzUzOA==&mid=209250210&idx=1&sn=4248f3d2ffed9b5ba57fc9f861135cc9&scene=2&from=timeline&isappinstalled=0#rd)
+#. [统计之都 (Capital of Statistics) | 中国统计学门户网站，免费统计学服务平台 | 做正直的统计学网站](http://cos.name/)
+#. [维基百科，自由的百科全书（镜像站！）](http://wiki.yooooo.us/d2lraS9XaWtpcGVkaWE6JUU5JUE2JTk2JUU5JUExJUI1)
+#. [菜菜博士 - 博士在网络的家](http://microcai.org/)
+#. [读立写生](http://cnfeat.com/)
+#. [豆瓣](http://www.douban.com/)
+#. [负暄琐话 - 博客频道 - CSDN.NET](http://blog.csdn.net/g9yuayon)
+#. [辛未羊的博客](http://panqiincs.github.io/)
 #. [远东轶事 - 知乎专栏](http://zhuanlan.zhihu.com/yuandong)
 #. [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
-#. [Blog – Yanran's Attic](http://yanran.li/)
-#. [Home - 阳志平的网志](http://www.yangzhiping.com/)
-#. [HaHack](http://hahack.com/)
-#. [Reading List « Deep Learning](http://deeplearning.net/reading-list/)
-
-适合精听的电影
---------------
-
-#. [了不起的盖茨比 (豆瓣)](http://movie.douban.com/subject/3364223/)
-#. [她 (豆瓣)](http://movie.douban.com/subject/6722879/)
-#. [消失的爱人 (豆瓣)](http://movie.douban.com/subject/21318488/)
-#. [戏梦巴黎 (豆瓣)](http://movie.douban.com/subject/1291856/)
-#. [大鱼 (豆瓣)](http://movie.douban.com/subject/1291545/)
-#. [诺丁山 (豆瓣)](http://movie.douban.com/subject/1298038/)
-#. [玛丽和马克思 (豆瓣)](http://movie.douban.com/subject/3072124/)
-#. [工业光魔：创造不可能 (豆瓣)](http://movie.douban.com/subject/5151820/)
-#. [发条橙 (豆瓣)](http://movie.douban.com/subject/1292233/)
-#. [血钻 (豆瓣)](http://movie.douban.com/subject/1428175/)
-#. [猫鼠游戏 (豆瓣)](http://movie.douban.com/subject/1305487/)
-#. [互联网之子 (豆瓣)](http://movie.douban.com/subject/25785114/)
-#. [独立游戏大电影 (豆瓣)](http://movie.douban.com/subject/7015793/)
-#. [超时空接触 (豆瓣)](http://movie.douban.com/subject/1295647/)
-#. [死在西部的一百万种方式 (豆瓣)](http://movie.douban.com/subject/21334420/)
-
-Movies
-------
-
-#. [豆瓣](http://www.douban.com/)
-#. [Rotten Tomatoes（美国“烂番茄”）](http://www.rottentomatoes.com/)
-#. [HKMDB（香港影库）](http://hkmdb.com/db/index.php)
-
-豆瓣
-----
-
-#. [豆瓣小组 - 电影解刨师的小站](http://site.douban.com/190248/)
-#. [豆瓣小组 - Bamboo Garden 的小站](http://site.douban.com/183573/)
-#. [豆瓣小组 - 安娜学语言的小站](http://site.douban.com/153057/)
-#. [豆瓣小组 - 蕾雅·赛杜 Léa Seydoux的小站](http://site.douban.com/198460/)
-#. [豆瓣小组 - Steam（非官方）的小站](http://site.douban.com/248518/)
-#. [豆瓣小组 - 果壳网的小站的小站](http://site.douban.com/guokr/)
-#. [豆瓣小组 - 透析英语——只读经典的小站](http://site.douban.com/195168/)
-#. [豆瓣小组 - 万能青年旅店的小站 （豆瓣音乐人）](http://site.douban.com/omnipotent/)
-#. [豆瓣小组 - Leonard Cohen的小站](http://site.douban.com/137869/)
-#. [豆瓣小组 - 艾小柯的小站](http://site.douban.com/109265/)
-#. [豆瓣小组 - 简书的小站](http://site.douban.com/181032/)
-#. [豆瓣小组 - 王力宏 Wang Leehom的小站 （豆瓣音乐人）](http://site.douban.com/leehomwang/)
-#. [豆瓣小组 - 伊犁の风的小站](http://site.douban.com/169159/)
-#. [豆瓣小组 - 石涛讲故事的小站](http://site.douban.com/221233/)
-#. [豆瓣小组 - 英语有声读物和广播剧的小站](http://site.douban.com/196116/)
-#. [豆瓣小组 - God-Mode的小站](http://site.douban.com/196781/)
-#. [豆瓣小组 - Peppy Papers的小站](http://site.douban.com/204776/)
-#. [豆瓣小组 - Emacs的小站](http://site.douban.com/203941/)
-#. [豆瓣小组 - 奶爸的英语教室的小站](http://site.douban.com/195274/)
-#. [豆瓣小组 - 纪念张国荣的小站](http://site.douban.com/leslie/)
-#. [豆瓣豆列 - Favorite Softwares and websites](http://www.douban.com/doulist/1831726/)
-#. [豆瓣豆列 - 拖斯拉De拖延症治疗中心](http://www.douban.com/doulist/29625562/)
-#. [豆瓣豆列 - GEB的文献目录【更新中】](http://www.douban.com/doulist/39544944/)
-#. [豆瓣豆列 - mac毒](http://www.douban.com/doulist/41876721/)
-#. [豆瓣豆列 - Relationships](http://www.douban.com/doulist/41842325/)
-#. [豆瓣豆列 - 英美日法瑞还有什么剧好看？](http://www.douban.com/doulist/1660055/)
-#. [豆瓣豆列 - 开智正典：科学洗脑百本经典导读](http://www.douban.com/doulist/41691053/)
-#. [豆瓣豆列 - 开始写作吧](http://www.douban.com/doulist/1269878/)
-#. [豆瓣豆列 - English Learning](http://www.douban.com/doulist/12147886/)
-#. [豆瓣豆列 - 有趣的事实](http://www.douban.com/doulist/39556634/)
-#. [豆瓣豆列 - 糕糕读论文](http://www.douban.com/doulist/38747815/)
-#. [豆瓣豆列 - 1个 trick 胜过 3个 bound](http://www.douban.com/doulist/39669050/)
-#. [豆瓣豆列 - Python资料集合](http://www.douban.com/doulist/37660601/)
-#. [豆瓣豆列 - 摄影测量学与计算机视觉](http://www.douban.com/doulist/1525698/)
-#. [豆瓣豆列 - 励志的和不太励志的师生片](http://www.douban.com/doulist/1555175/)
-#. [豆瓣豆列 - 基因技术](http://www.douban.com/doulist/37669307/)
-#. [豆瓣豆列 - 开智社群讲座相关文章](http://www.douban.com/doulist/38039230/)
-#. [豆瓣豆列 - 开智社群群友推荐电影](http://www.douban.com/doulist/38039245/)
-#. [豆瓣豆列 - 开智作者群书单](http://www.douban.com/doulist/14090587/)
-#. [豆瓣豆列 - 为了女神看电影](http://www.douban.com/doulist/38616390/)
-#. [豆瓣豆列 - 世界那么大，我想去看看](http://www.douban.com/doulist/38842269/)
-#. [豆瓣豆列 - 会画画就是这么任性](http://www.douban.com/doulist/36796029/)
-#. [豆瓣豆列 - 推荐书籍: IT技术](http://www.douban.com/doulist/1361509/)
-. [豆瓣豆列 - 互联网科技纪录片](http://www.douban.com/doulist/11172842/)
-#. [豆瓣豆列 - 程序员的电影](http://www.douban.com/doulist/3255951/)
-#. [豆瓣豆列 - 与IT有关的电影](http://www.douban.com/doulist/441220/)
-#. [豆瓣豆列 - 送羡辙一本书，让她写出更棒的作品！](http://www.douban.com/doulist/17651217/)
-#. [豆瓣豆列 - 走近新疆](http://www.douban.com/doulist/14892458/)
-#. [豆瓣豆列 - 性欲比食欲更重要](http://www.douban.com/doulist/1651016/)
-#. [豆瓣豆列 - 他们是高智商玩家](http://www.douban.com/doulist/65439/)
-#. [豆瓣豆列 - 剧情扣人、故事性强、不闷的好电影](http://www.douban.com/doulist/2443408/)
-#. [豆瓣豆列 - 『只读经典』育儿即育己](http://www.douban.com/doulist/1327794/)
-#. [豆瓣豆列 - 进化论&心理学](http://www.douban.com/doulist/2971961/)
-#. [豆瓣豆列 - 『只读经典』机器学习与人工智能书籍资源导引](http://www.douban.com/doulist/176513/)
-#. [豆瓣豆列 - 『只读经典』思维改变生活（原“心理学改变生活”）](http://www.douban.com/doulist/46003/)
-#. [豆瓣豆列 - Online Edu and Tutoring](http://www.douban.com/doulist/1880538/)
-#. [豆瓣豆列 - 全世界程序员都说好的图书](http://www.douban.com/doulist/1244005/)
-#. [豆瓣豆列 - 2011 Summer Review of Mathematics](http://www.douban.com/doulist/1199112/)
-#. [豆瓣豆列 - 『只读经典』判断与决策](http://www.douban.com/doulist/197706/)
-#. [豆瓣豆列 - 重口味](http://www.douban.com/doulist/187667/)
-#. [豆瓣豆列 - Kogorou推荐的基础数学名著](http://www.douban.com/doulist/31641/)
-
-MISC
-----
-
-#. [深入理解学习Git工作流（git-workflow-tutorial） - SegmentFault](http://segmentfault.com/a/1190000002918123)
-#. [www.computervisionblog.com/2015/06/deep-down-rabbit-hole-cvpr-2015-and.html](http://www.computervisionblog.com/2015/06/deep-down-rabbit-hole-cvpr-2015-and.html)
-#. [18-645: How to Write Fast Code](http://users.ece.cmu.edu/~pueschel/teaching/18-645-CMU-spring08/course.html)
-#. [Futures for C++11 at Facebook](https://code.facebook.com/posts/1661982097368498)
-#. [我的算法学习之路 - Lucida](http://zh.lucida.me/blog/on-learning-algorithms/)
-#. [内核恐慌 — IPN 出品](http://ipn.li/kernelpanic/)
-#. [Teahour.fm](http://teahour.fm/)
-#. [Microsoft Project Oxford Home](https://www.projectoxford.ai/)
-
-一些值得玩味的网页
-------------------
-
-（从网页制作的角度）
-
-#. [Pretty Diff - The difference tool](http://prettydiff.com/)
-
----
-
-#. [English as a Second Language Podcast](http://www.eslpod.com/website/index.php)
-#. &#x2610; [百度在线输入法](http://shurufa.baidu.com/online.html)
-#. [当然我在扯淡](http://www.yinwang.org/)
-#. [维基百科，自由的百科全书（镜像站！）](http://wiki.yooooo.us/d2lraS9XaWtpcGVkaWE6JUU5JUE2JTk2JUU5JUExJUI1)
-#. [Welcome to the USGS - U.S. Geological Survey](http://www.usgs.gov/)
-#. [IEEE Xplore Digital Library](http://ieeexplore.ieee.org/Xplore/home.jsp?reload=true)
-#. [Useful Links](http://sse.tongji.edu.cn/linzhang/UsefulLinks/links.htm)
-#. [Easyicon - Search 500,000+ (PNG,ICO,ICNS) free icons, desktop icons, icons Download.](http://www.easyicon.net/)
-#. [Alll Cheat Sheets in One Page](http://www.cheat-sheets.org/)
-#. [博客文章索引 - ☆Ronny丶 - 博客园](http://www.cnblogs.com/ronny/p/index.html)
-#. [BeeBEEP (Secure Lan Messenger)](http://beebeep.sourceforge.net/)
-#. [Shark Machine Learning Library](http://image.diku.dk/shark/)
-#. [Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen)
-#. [Tzeng Yuxio](http://tzengyuxio.me/) （一看就是处女座）
-#. [Kai Sun](http://www.kaisun.org/)
-#. [About.com](http://www.about.com/)
-#. [依云's Blog](http://lilydjwg.is-programmer.com/)
-#. [Lu Wang's Page](http://coolwanglu.github.io/)
-
-#. [Browse Art - DeviantArt](http://www.deviantart.com/browse/all/)
-#. [ProcessOn](https://www.processon.com/network)
-
-#. [Semantic Scholar](https://www.semanticscholar.org/)
-#. [Corpus of Contemporary American English (COCA)](http://corpus.byu.edu/coca/)
-#. [Acronymify! - Automatically generate fun acronyms for your project](http://acronymify.com/)
-#. [Jijitang](http://www.jijitang.com/)
-#. [Home | Thomson Reuters](http://thomsonreuters.com/en.html)
-#. [武汉大学学术搜索](http://www.duxiu.com/)
-#. [Research Articles Corpus - basic search](http://rcpce.engl.polyu.edu.hk/RACorpus/default.htm)
-
-#. [负暄琐话 - 博客频道 - CSDN.NET](http://blog.csdn.net/g9yuayon)
-#. [Fabrice Bellard's Home Page](http://bellard.org/)
-
-#. [Recent - metacpan.org](https://metacpan.org/recent)
-#. [Ratings and Reviews for CPAN - cpanratings](http://cpanratings.perl.org/)
-
-#. [Project Tuva: Enhanced Video Player Home - Microsoft Research](http://research.microsoft.com/apps/tools/tuva/index.html#data=2%7C%7C%7C)
-#. [Wangjianshuo's Blog | Events (in Shanghai) that affect my life (and others')](http://wangjianshuo.com/)
-#. [Gu Lu's Blog](http://www.gulu-dev.com/archive)
-#. [Reborn - Again And Again](http://xiaolai.li/)
-
-#. [List of colors](http://www.colorhexa.com/color-names)
-#. [推荐博客 - 博客园](http://www.cnblogs.com/expert/)
-#. [Milo Yip - 博客园](http://www.cnblogs.com/miloyip/)
-
-#. [JSONiq - The JSON Query Language](http://jsoniq.org/)
+#. [首页 » 张鑫旭-鑫空间-鑫生活](http://www.zhangxinxu.com/)
 #. [黄正华的教学信息页面](http://aff.whu.edu.cn/huangzh/)
-#. [九章算法 - 帮助更多中国人找到好工作，硅谷顶尖IT企业工程师实时在线授课为你传授面试技巧](http://www.jiuzhang.com/?source=soulmachine)
-#. [soulmachine](http://www.soulmachine.me/)
-#. [欢迎访问武汉大学校园信息门户](http://my.whu.edu.cn/)
-#. [ASCIIFlow Infinity](http://asciiflow.com/)
-#. [果壳任意门 - 发现你最爱的网站](http://gate.guokr.com/)
-#. [Glgoo 学术搜索](http://scholar.glgoo.org/)
-#. [reddit: the front page of the internet](https://www.reddit.com/)
-#. [MathOverflow](http://mathoverflow.net/)
-#. [读立写生](http://cnfeat.com/)
-
-#. [YhL_Leo的博客 - 博客频道 - CSDN.NET](http://blog.csdn.net/yhl_leo)
-#. [Jinge's Blog](http://www.tujinge.com/)
-#. [武汉大学慕课研究生学术道德与学术规范作业答案](https://www.zybuluo.com/yhl/note/267200)
-
-#. [Dependency Walker (depends.exe) Home Page](http://www.dependencywalker.com/)
-#. [科学网—lix - 李小文](http://blog.sciencenet.cn/home.php?mod=space&uid=2984)
-#. [Typeof.net](http://typeof.net/index.html)
-#. [laike9m's blog](https://laike9m.com/blog/archive/)
-#.  http://www.fffffun.com/subscribe
-#. [Mp3tag - Download](http://www.mp3tag.de/en/download.html)
-#. [科学网—施一公的博客 - 施一公](http://blog.sciencenet.cn/home.php?mod=space&uid=46212)
-#. [我国在校研究生的学术贡献有多大？](http://mp.weixin.qq.com/s?__biz=MzA3NTU5NzMwNw==&mid=211741323&idx=5&sn=3adfa48bf8a1eeda284c361c85621009#rd)
-#. [最高法院法官告诉你，诉讼文书这样写才规范](http://mp.weixin.qq.com/s?__biz=MzA4NDYwNTE4Mg==&mid=207798324&idx=5&sn=7f70171babef70007e44c79679e139b8&scene=2&from=timeline&isappinstalled=0#rd)
-#. [科研诚信的中国式难题](http://mp.weixin.qq.com/s?__biz=MzA3OTgzMzUzOA==&mid=209250210&idx=1&sn=4248f3d2ffed9b5ba57fc9f861135cc9&scene=2&from=timeline&isappinstalled=0#rd)
-#. [Woboq Code Browser](http://code.woboq.org/)
-#. [LaTeXStudio](http://www.latexstudio.net/)
-#. [nothingisreal.com](http://en.nothingisreal.com/wiki/Tristan_Miller)
-#. [ZType – Typing Game - Type to Shoot](http://zty.pe/)
-#. [My Page on Github](http://baohaojun.github.io/blog/2011/12/23/index.html)
-#. [辛未羊的博客](http://panqiincs.github.io/)
-#. [统计之都 (Capital of Statistics) | 中国统计学门户网站，免费统计学服务平台 | 做正直的统计学网站](http://cos.name/)
-#. [Weavi](https://weavi.com/92079/Z2oSFk5UfDsuUKLfNVOl-g)
-#. [Jacky Liu's Blog](http://bluegene8210.is-programmer.com/)
-#. [Timothy Guan‑tin Chien](http://timdream.org/#works)
-#. [A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
-#. [NARKOZ/hacker-scripts](https://github.com/NARKOZ/hacker-scripts)
-#. [CVPR 2015 Accepted Papers](http://cs.stanford.edu/people/karpathy/cvpr2015papers/)
-#. [Blog Archive - Emacs Redux](http://emacsredux.com/blog/archives/)
-#. [Table of Contents](http://tuhdo.github.io/index.html)
-#. [OpenJudge - 百练 - 首页](http://www.bailian.openjudge.cn/)
-#. [Useful Emacs Commands](http://irreal.org/emacs-reminders.html)
-#. [kieranhealy.org](http://kieranhealy.org/)
-#. [号码归属地查询_服务与支持_中国移动通信](http://www.10086.cn/support/selfservice/ownership/)
-#. [What the .emacs.d!?](http://whattheemacsd.com/)
-#. [visual-regexp](https://github.com/benma/visual-regexp.el)
-#. [coldnew's blog](http://coldnew.github.io/)
-#. [ゆっくりでいいさ](http://blog.watashi.ws/)
-#. [Org-mode Emacs 下的瑞士軍刀](http://coldnew.github.io/COSCUP2013_org-mode/slide.html#1)
-#. [Org Mode - Organize Your Life In Plain Text!](http://doc.norang.ca/org-mode.html)
-#. [Publishing Org-mode files to HTML](http://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html)
-#. [emacs - how to org mode image absolute path of export html? - Stack Overflow](http://stackoverflow.com/questions/14684263/how-to-org-mode-image-absolute-path-of-export-html)
-#. http://blog.csdn.net/g9yuayon/
-#. [Lucida](http://lucida.me/)
-
-我把 AsciiFlow 挪过来了，可以在
-
-* <http://whudoc.qiniudn.com/asciiart.html>
-* <http://whudoc.qiniudn.com/asciiflow>
-
-使用。或者下载离线 <http://whudoc.qiniudn.com/asciiflow.7z>
-
-TODO: 给它加一套键盘快捷键。
-
-#. [Graph::Easy - Manual - Overview](http://bloodgate.com/perl/graph/manual/overview.html)
-#. [ProcessOn - Create diagrams online in real-time!](https://www.processon.com/tour)
-#. [GEGeek Tech Toolkit](http://www.gegeek.com/documents/85BB69B2F05486B9332CEA18B8D6E4BE690ADA38.html)
-#. [QQ群关系可视化查询 每一个被GFW的网站都是一个伟大的网站](https://qqgroup.insight-labs.org/)
-#. [Pro Git读书笔记 - Kelvin的胡言乱语](http://kelvinh.github.io/wiki/progit/)
-#. [favicon.ico Generator](http://www.favicon.cc/)
-#. [IPN](http://ipn.li/)
-#. [nil](http://blog.qinjian.me/)
-#. [子龙山人](http://zilongshanren.com/)
-#. [Jacob Kaplan-Moss](https://jacobian.org/)
-#. [真 OO无双 - 博客园](http://www.cnblogs.com/oomusou/)
-#. [Getting started - asciinema](https://asciinema.org/docs)
-#. [VT100.net: A parser for DEC’s ANSI-compatible video terminals](http://vt100.net/emu/dec_ansi_parser)
-#. [Projects - Val Markovic](https://val.markovic.io/projects)
-#. [Home - Val Markovic](https://val.markovic.io/)
-#. [SVG-edit](https://svg-edit.github.io/svgedit/releases/svg-edit-2.8.1/svg-editor.html)
-#. [hub · the command-line wrapper for git](https://hub.github.com/)
-#. [Slim Wallets | Minimalist Wallets | Thread Wallets](https://www.threadwallets.com/)
-#. [online text editor - collabedit](http://collabedit.com/)
-#. [Team | Urban Collective Intelligence](http://urbancolab.com/?q=team)

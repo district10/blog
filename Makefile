@@ -1,9 +1,6 @@
 PODIR=publish
-KOANS=_koans
-NOTES=_notes
 PAGES=_pages
 POSTS=_posts
-READS=_reads
 STATICS=_statics
 LYRICS=_miscs/lyrics
 AG=_ag.sh
@@ -12,8 +9,8 @@ IDXPG2=$(PODIR)/index2.html
 GENIDX=_bin/posts_index.sh
 GENIDX2=_bin/posts_index2.sh
 
-all: koans reads notes pages posts statics lyrics
-koans reads notes pages posts statics lyrics: $(PODIR) EXE
+all: pages posts statics lyrics $(IDXPG)
+pages posts statics lyrics: $(PODIR) EXE
 $(PODIR):
 	mkdir -p $(PODIR)
 EXE:
@@ -35,29 +32,18 @@ qn: qiniu
 qiniu: 
 	qrsync conf.json
 
-kns: koans
-koans:
-	$(MAKE) -C $(KOANS)
-
-rds: reads
-reads:
-	$(MAKE) -C $(READS)
-
-nts: notes    
-notes:
-	$(MAKE) -C $(NOTES)
+pts: posts
+posts:
+	$(MAKE) -C $(POSTS)
 
 pgs: pages
 pages:
 	$(MAKE) -C $(PAGES)
 
-pts: posts
-posts:
-	$(MAKE) -C $(POSTS)
-
 i: index
-index:
-	$(GENIDX) $(IDXPG)
+index: $(IDXPG)
+$(IDXPG):
+	$(GENIDX) $@
 
 ri: removeindex
 removeindex:
@@ -71,13 +57,9 @@ removeindex2:
 	rm -f $(IDXPG2)
 
 EDITS = \
-_koans/koan-00002.md \
-_koans/koan-00001.md \
-_notes/note-00002.md \
-_notes/note-00001.md \
-_reads/read-00002.md \
-_reads/read-00001.md \
-_posts \
+		_pages/notes.md \
+		_pages/reads.md \
+		_pages/koans.md \
 
 it:
 	$(EDITOR) -p $(EDITS)
@@ -94,18 +76,6 @@ lyrics:
 	$(MAKE) -C $(LYRICS)
 
 # clean
-ckns: cleanKoans
-cleanKoans:
-	$(MAKE) -C $(KOANS) clean
-
-crds: cleanReads
-cleanReads:
-	$(MAKE) -C $(READS) clean
-
-cnts: cleanNotes
-cleanNotes:
-	$(MAKE) -C $(NOTES) clean
-
 cpgs: cleanPages
 cleanPages:
 	$(MAKE) -C $(PAGES) clean
@@ -125,33 +95,32 @@ clean:
 # write
 k: koan
 koan:
-	$(MAKE) -C $(KOANS) koan
+	$(EDITOR) _pages/koans.md
 
 n: note
 note:
-	$(MAKE) -C $(NOTES) note
+	$(EDITOR) _pages/notes.md
+
+r: read
+read:
+	$(EDITOR) _pages/reads.md
 
 p: post
 post:
 	$(MAKE) -C $(POSTS) post
 
-hdr: header
-header:
-	$(MAKE) -C $(POSTS) header
-
-r: read
-read:
-	$(MAKE) -C $(READS) read
-    
 a: about
 about:
 	$(MAKE) -C $(PAGES) about
 
-bq:
+bq: blogquery
+blogquery:
 	$(EDITOR) $(STATICS)/blog-query.js
-c:
+c: css
+css:
 	$(EDITOR) $(STATICS)/main.css
-j:
+j: js
+js:
 	$(EDITOR) $(STATICS)/main.js
 
 pm: poem
@@ -196,30 +165,13 @@ t: typing
 typing:
 	$(MAKE) -C $(PAGES) typing
 
-# make make
 m: make
 make:
 	$(EDITOR) Makefile
 
-mk: mkKoans
-mkKoans:
-	$(MAKE) -C $(KOANS) make
-
-mn: mkNotes
-mkNotes:
-	$(MAKE) -C $(NOTES) make
-
-mpg: mkPages
-mkPages:
-	$(MAKE) -C $(PAGES) make
-
 mpt: mkPosts
 mkPosts:
 	$(MAKE) -C $(POSTS) make
-
-mr: mkReads
-mkReads:
-	$(MAKE) -C $(READS) make
 
 ml: mkLyrics
 mkLyrics:
