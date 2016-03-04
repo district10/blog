@@ -5,6 +5,302 @@
 Notes | 笔记
 ============
 
+
+#. &#x2610;
+
+
+```css
+article hr::after {
+    letter-spacing: 0.5em;
+    content: "✼ ✼ ✼";
+    position: relative;
+    top: -0.4em;
+}
+
+article hr {
+    text-align: center;
+    color: #CCC;
+}
+```
+
+二零一五年六月五日，我把知乎上的「有哪些比较实用又有逼格的 App？」這一問題中的別字「逼」改成了正字「屄」。
+
+二零一五年十一月六日，我收到知乎管理員私信：
+
+    你的帐号因为对问题有哪些比较实用又有逼格的 App？恶意编辑已被禁言，禁言的帐号将在 1 天后恢复正常使用。查看详情
+
+把「逼格」改爲「屄格」不是「惡意編輯」。把屄格這樣一個氣質低俗的詞柔化、諱飾成「逼格」，造成「其實沒有那麼難聽」的假象，繼續鼓勵人們使用，纔是真正的大惡。因此禁言，誠爲黑白顛倒。做出這一決策的知乎管理員應該爲此感到羞恥。
+
+
+
+
+# 去掉 QDockWidget 的标题栏
+
+```cpp
+QWidget* titleBar = mPropertyWindow->titleBarWidget();
+mPropertyWindow->setTitleBarWidget( new QWidget() );
+delete titleBar;
+```
+
+QPixmap 与 HBITMAP、HICON 互转
+
+#. `QPixmap::toWinHICON();`{.cpp}
+#. `QPixmap::toWinHBITMAP();`{.cpp}
+#. `QPixmap::fromWinHICON();`{.cpp}
+#. `QPixmap::fromWinHBITMAP();`{.cpp}
+
+Qt 编译后移植到其他地方后，qt 寻找库的路径可能出现错误，这时：
+
+在 Qt 的 `bin` 目录下自己建一个 `qt.conf`
+
+```plain
+[Paths]
+Prefix=C:/dev/qt-4.8.6
+``
+
+```cpp
+void glFrustum( GLdouble left,
+                GLdouble right,
+                GLdouble bottom,
+                GLdouble top,
+                GLdouble nearVal,
+                GLdouble farVal );
+```
+
+`glFrustum` describes a perspective matrix that produces a perspective
+projection.  The current matrix (see `glMatrixMode`) is multiplied by this matrix
+and the result replaces the current matrix, as if glMultMatrix were called with
+the following matrix as its argument:
+
+$$\begin{bmatrix}
+\frac{2nearVal}{right - left} & 0 & A & 0 \\
+0 & \frac{2nearVal}{top - bottom} & B & 0 \\
+0 & 0 & C & 0 \\
+0 & 0 & -1 & 0
+\end{bmatrix}$$
+
+$A = \frac{right + left}{right - left}$
+$B = \frac{top + bottom}{top - bottom}$
+$C = -\frac{farVal + nearVal}{farVal - nearVal}$
+$D = -\frac{2farVal \times nearVal}{farVal - nearVal}$
+
+Typically, the matrix mode is `GL_PROJECTION`, and $(left, bottom, -nearVal)$ and $(right, top, -nearVal)$ specify the points on the near clipping plane that are mapped to the lower left and upper right corners of the window, assuming that the eye is located at (0, 0, 0).  - farVal specifies the location of the far clipping plane.  Both nearVal and farVal must be positive.
+
+Depth buffer precision is affected by the values specified for nearVal and farVal.  The greater the ratio of farVal to nearVal is, the less effective the depth buffer will be at distinguishing between surfaces that are near each other.  If r = farVal nearVal roughly log 2 ⁡r bits of depth buffer precision are lost.  Because r approaches infinity as nearVal approaches 0, nearVal must never be set to 0.
+
+![A view frustum](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/ViewFrustum.svg/330px-ViewFrustum.svg.png)
+
+VPN
+:   the view-plane normal – a normal to the view plane.
+
+VUV
+:   the view-up vector – the vector on the view plane that indicates the upward direction.
+
+VRP
+:   the viewing reference point – a point located on the view plane, and the origin of the VRC.
+
+PRP
+:   the projection reference point – the point where the image is projected from, for parallel projection, the PRP is at infinity.
+
+VRC
+:   the viewing-reference coordinate system.
+
+The geometry is defined by a field of view angle (in the 'y' direction), as well as an aspect ratio. Further, a set of z-planes define the near and far bounds of the frustum.
+
+```cpp
+// osg::Camera
+/** Get the orthographic settings of the orthographic projection matrix.
+ * Returns false if matrix is not an orthographic matrix, where parameter
+ * values are undefined.*/
+bool getProjectionMatrixAsOrtho(double& left, double& right,
+                                double& bottom, double& top,
+                                double& zNear, double& zFar) const;
+
+/** Get the frustum setting of a perspective projection matrix.
+  * Returns false if matrix is not a perspective matrix, where parameter values
+  * are undefined.*/
+bool getProjectionMatrixAsFrustum(double& left, double& right,
+                                  double& bottom, double& top,
+                                  double& zNear, double& zFar) const;
+
+/** Get the frustum setting of a symmetric perspective projection matrix.
+  * Returns false if matrix is not a perspective matrix, where parameter values
+  * are undefined.  Note, if matrix is not a symmetric perspective matrix then
+  * the shear will be lost.  Asymmetric matrices occur when stereo, power
+  * walls, caves and reality center display are used.  In these configurations
+  * one should use the 'getProjectionMatrixAsFrustum' method instead.*/
+bool getProjectionMatrixAsPerspective(double& fovy,double& aspectRatio,
+                                      double& zNear, double& zFar) const;
+```
+
+经过透视投影 （正射投影也一样）变换， 能够把点 从 观察空间（相机坐标系）转换到
+齐次裁剪空间坐标系（又叫规则观察体(Canonical View Volume)中）。这个转化后的空间
+体 不仅独立于 把三维场景转换为二维屏幕空间的投影类型（透视、正射），也独立于屏
+幕的分辨率(Resolution) 以及长宽比(Aspect Ratio).。
+
+![](http://img.blog.csdn.net/20150514145737857?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemh1eWluZ3FpbmdmZW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Pyramid_of_vision.svg/900px-Pyramid_of_vision.svg.png)
+
+齐次裁剪空间坐标系（范围  -1<=x <=1,-1<=y<=1,-1<=z <=1, )是左手坐标系，为什么？ 其实也很好理解，如上图 ， A和B点经过投影变换后其x坐标是一样的（不再是投影平截体中的那种相对关系）， 而近裁剪面上的点的z坐标经过投影变换后变为-1 ， 而远裁剪面上的z坐标为1 ，所以齐次裁剪空间坐标系的z轴的正方向正好和相机坐标系中的z轴正方向是相反的。
+
+经过透视投影后，每个顶点的x和y坐标还要除以其z坐标，这个除法是产生透视收缩的方法
+
+osgUtil::PolytopeIntersector // 具体不同算法实现类
+osgUtil::IntersectionVisitor //用来遍历节点树的每个节点
+osg::Node * mNode;  //  你要做相交测试的根节点
+
+osg::ref_ptr<osgUtil::PolytopeIntersector> intersector = new osgUtil::PolytopeIntersector(osgUtil::Intersector::WINDOW, xMin, yMin, xMax, yMax);
+intersector->setIntersectionLimit(osgUtil::Intersector::LIMIT_ONE_PER_DRAWABLE);
+osgUtil::IntersectionVisitor iv( intersector.get() );
+
+mRootNode->accept(iv);
+
+
+总结：
+
+1. 在osg::ref_ptr<osg::Node>node = new osg::Node;  其中node 为osg::ref_ptr的对象，而不是指针。
+
+2. OSG 中新创建的场景对象建议使用ref_ptr 进行内存分配和管理
+
+3. 对于不使用ref_ptr 的对象，引用计数值变得没有意义，并且它无法自动从场景中卸载。
+
+4. 新建对象作为函数结果返回时，应该返回release()。并尽快引入到别的场景中，否则发生内存泄露
+
+5. 只有osg::ref_ptr 类 来管理 osg对象的引用计数，其他脱离了（和osg::ref_ptr对象无关的操作）osg::ref_ptr 管理的操作如：赋值等将不会对引用计数产生影响
+
+
+
+inline void setNodeMask(NodeMask nm) { _nodeMask = nm; }
+
+
+```cpp
+ osg::ref_ptr <osg::MatrixTransform> mat=new osg::MatrixTransform();
+osg::Matrix m = osg::Matrix::scale(1.0f,1.0f,1.0f)*osg ::Matrix::translate(osg::Vec3(0,0,10.0f));
+mat->setMatrix(m);
+mat->addChild(node1.get());
+
+osg::ref_ptr<osg::AnimationPathCallback> apcb = new osg::AnimationPathCallback;
+apcb->setAnimationPath( createAnimationPath(50.0f, 6.0f) );
+mat->setUpdateCallback( apcb.get() );
+```
+
+```cpp
+//创建一个光照
+osg::ref_ptr<osg::Node>createLight(osg::ref_ptr<osg::Node>model)
+{
+    osg::ComputeBoundsVisitor cbbv;
+    model->accept(cbbv);
+
+    osg::BoundingBox bb=cbbv.getBoundingBox();
+
+
+    osg::ref_ptr<osg::Light>lt=new osg::Light;
+    lt->setLightNum(0);
+
+    //设置环境光的颜色
+    lt->setAmbient(osg::Vec4(1.0f,1.0f,1.0f,1.0f));
+
+    osg::ref_ptr<osg::LightSource>ls=new osg::LightSource();
+
+    ls->setLight(lt.get());
+
+    return ls.get();
+}
+```
+
+```cpp
+int main()
+{
+    osg::ref_ptr<osgViewer::Viewer> viewer = new osgViewer::Viewer();
+    viewer->addEventHandler(new osgViewer::WindowSizeHandler);
+    //创建一个组节点
+    osg::ref_ptr<osg::Group> root = new osg::Group();
+
+    //创建一个阴影节点，并标识接收对象和投影对象
+    osg::ref_ptr<osgShadow::ShadowedScene> shadowedScene = new osgShadow::ShadowedScene();
+    shadowedScene->setReceivesShadowTraversalMask(ReceivesShadowTraversalMask);
+    shadowedScene->setCastsShadowTraversalMask(CastsShadowTraversalMask);
+
+    //创建阴影纹理，使用的是shadowTexture技法
+    osg::ref_ptr<osgShadow::ShadowTexture> st = new osgShadow::ShadowTexture;
+    osg::ref_ptr<osgShadow::ParallelSplitShadowMap> pss = new osgShadow::ParallelSplitShadowMap;
+    //osg::ref_ptr<osgShadow::ShadowVolume> sv = new osgShadow::ShadowVolume;
+    osg::ref_ptr<osgShadow::MinimalShadowMap> ms = new osgShadow::MinimalShadowMap;
+    osg::ref_ptr<osgShadow::StandardShadowMap> ss = new osgShadow::StandardShadowMap;
+    osg::ref_ptr<osgShadow::SoftShadowMap> softS = new osgShadow::SoftShadowMap;
+    osg::ref_ptr<osgShadow::ViewDependentShadowTechnique> vds = new osgShadow::ViewDependentShadowTechnique;
+    //关联阴影纹理
+    shadowedScene->setShadowTechnique(softS);
+
+    //创建一个根节点，并将场景数据、模型赋予节点
+    osg::ref_ptr<osg::Node> node =createModel();
+
+
+
+    //添加场景数据并添加光源
+    shadowedScene->addChild(createLight(node.get()));
+    shadowedScene->addChild(node.get());
+
+
+    root->addChild(shadowedScene.get());
+
+    //优化场景数据
+    osgUtil::Optimizer optimizer ;
+    optimizer.optimize(root.get()) ;
+
+    viewer->setSceneData(root.get());
+    viewer->realize();
+    viewer->run();
+
+    return 0 ;
+}
+```
+
+其实简而言之  就是 glOrtho 设置相片的大小，glViewport指定相框大小。如果glOrtho指定的相片小了，那么放到同等大小的相框上就相当于放大了。
+
+而如果glOrtho指定的相片大了，放到同等大小的相框上  相当于缩小了场景。
+
+
+在OpenGL中有两个比较重要的投影变换函数，glViewport和glOrtho。
+
+glOrtho是创建一个正交平行的视景体。 一般用于物体不会因为离屏幕的远近而产生大小的变换的情况。比如，常用的工程中的制图等。需要比较精确的显示。 而作为它的对立情况, glFrustum则产生一个透视投影。这是一种模拟真是生活中，人们视野观测物体的真实情况。例如：观察两条平行的火车到，在过了很远之后，这两条铁轨是会相交于一处的。还有，离眼睛近的物体看起来大一些，远的物体看起来小一些。
+
+glOrtho(left, right, bottom, top, near, far)， left表示视景体左面的坐标，right表示右面的坐标，bottom表示下面的，top表示上面的。这个函数简单理解起来，就是一个物体摆在那里，你怎么去截取他。这里，我们先抛开glViewport函数不看。先单独理解glOrtho的功能。 假设有一个球体，半径为1，圆心在(0, 0, 0)，那么，我们设定glOrtho(-1.5, 1.5, -1.5, 1.5, -10, 10);就表示用一个宽高都是3的框框把这个球体整个都装了进来。  如果设定glOrtho(0.0, 1.5, -1.5, 1.5, -10, 10);就表示用一个宽是1.5， 高是3的框框把整个球体的右面装进来;如果设定glOrtho(0.0, 1.5, 0.0, 1.5, -10, 10)；就表示用一个宽和高都是1.5的框框把球体的右上角装了进来。上述三种情况可以见图：
+
+```cpp
+if(root->getChild(i)->getName().compare("Hello") == 0)
+{
+    osg::Node * tmp = root->getChild(i);
+    root->removeChild(tmp);
+    *node = tmp;//在这里tmp 已经析构，因为 只有root引用了hello节点，而在root 节点removechild后 tmp的引用计数为0，此时将析构
+}
+```
+
+Refs
+
+#. [OpenGL 透视投影 齐次裁剪空间 深度缓存 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/45721643)
+#. [Qt 小技巧 记录 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/44019915)
+#. [glFrustum](https://www.opengl.org/sdk/docs/man2/xhtml/glFrustum.xml)
+#. [OSG 中 相交测试 模块 工作流程及原理 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/37923417)
+#. [OSG 智能指针陷阱 总结 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/25311989)
+
+
+Read more
+
+#. [OSG 自定义数据类型 关键帧动画 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/12651017)
+#. [OSG 一个简单的着色器例子 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/8656913)
+#. [osg 路径 动画 效果 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/8248157)
+#. [osg 漫游器 代码框架 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/8249501)
+
+
+
+
+
+
+
+
+
+
 ```lisp
 (defun smart-open-line ()
   "Insert an empty line after the current line.

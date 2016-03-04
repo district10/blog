@@ -8,14 +8,12 @@ Koans | 呓语
 <div class="koans"><!-- 下面要有空行 | One Empty Line Reserved Below -->
 
 
-1456885511: jQuery is Bad?
---------------------------
+## `1456885511`{.tzx-timestamp} jQuery is Bad?
 
 一直避免用 jQuery，因为它很大（30KB），但好像如果不用，自己写各种东西都特别麻烦！
 要死。我还是用 jQuery 把！
 
-1456570785: Plan of Faking an Accent
-------------------------------------
+## `1456570785`{.tzx-timestamp} Plan of Faking an Accent
 
 - Frensh: [How to Fake a Convincing French Accent: 9 Steps](http://www.wikihow.com/Fake-a-Convincing-French-Accent)
 - Indian
@@ -23,31 +21,28 @@ Koans | 呓语
     + [Indian English - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Indian_English)
 
 
-1456567586: 补上昨天在 QQ 空间里没有发的 Errata
------------------------------------------------
+## `1456567586`{.tzx-timestamp} 补上昨天在 QQ 空间里没有发的 Errata
 
 发在 QQ 空间里好像有点秀逗，所以删掉了，发在这里把。
 
-#. brands &rarr; brans，也有点像 brains；
-#. chores &rarr; chors；
-#. dark &rarr; duck；
-#. evening &rarr; evilly；
-#. law &rarr; naul；
-#. line &rarr; nan；
-#. look-alike 念成了 looka-like；
-#. observe &rarr; ehbze-ve；
-#. realize 念成了 real lize；
-#. sip &rarr; sick；
-#. “lull the boy to open the door”，`to` 不是介词；
+##. brands &rarr; brans，也有点像 brains；
+##. chores &rarr; chors；
+##. dark &rarr; duck；
+##. evening &rarr; evilly；
+##. law &rarr; naul；
+##. line &rarr; nan；
+##. look-alike 念成了 looka-like；
+##. observe &rarr; ehbze-ve；
+##. realize 念成了 real lize；
+##. sip &rarr; sick；
+##. “lull the boy to open the door”，`to` 不是介词；
 
-1456557956: const 2 volatile
-----------------------------
+## `1456557956`{.tzx-timestamp} const 2 volatile
 
 除了这个错误的 cast，还有不知名的问题存在。现在是可以编译 release，
 但是 debug 不可以……What the fuck，why？！
 
-1456147029: 悲惨世界还真是牛逼
-------------------------------
+## `1456147029`{.tzx-timestamp} 悲惨世界还真是牛逼
 
 简直天籁之音。
 
@@ -66,30 +61,26 @@ Quotes: from [一个完人——致沙威 (悲惨世界 影评)](http://movie.do
     > 亲由于是私生子而遭人歧视，而其不负责任的祖父很有可能是犹太人，历史学家认
     > 为希特勒的极端反犹思想很可能也是来源于其对自己身世的厌恶。
 
-1456125277: Vim 也凌乱
-----------------------
+## `1456125277`{.tzx-timestamp} Vim 也凌乱
 
 通常而言，Vim 没有什么可凌乱的。因为它不像 Emacs 那样需要过多的定制。
 但是 Qt Creator 里的 FakeVim 不能用 `Control+V`，VS 里的 VsVim 可以……
 （和 Win 上的 gVim 一样，Visual Mode 用 `Control+q`）。好凌乱。
 
-1456065846: 粉丝的情怀
-----------------------
+## `1456065846`{.tzx-timestamp} 粉丝的情怀
 
 不可估量。我是说 Izumi Sakai 出了新专辑：ZARD Forever Best~25th Anniversary~
 
 大家都要买买卖。
 
-1456023789: 后来问了老师
-------------------------
+## `1456023789`{.tzx-timestamp} 后来问了老师
 
 ……一眼就发现了问题……
 
 在 VS 里，Project 的属性 `Active(Debug)` 下面不能同时有 debug 和 release！！
 链接错了 lib 文件，还是能编译通过，但是不能运行！！
 
-1455991475: 已经不能快乐地编程了
---------------------------------
+## `1455991475`{.tzx-timestamp} 已经不能快乐地编程了
 
 来学校后不知怎地程序就编译不过，然后我找啊找。
 终于（在几天后）找到了编译失败的原因。
@@ -132,8 +123,7 @@ set(CMAKE_DEBUG_POSTFIX "d")
 
 我觉得是我电脑（很有可能是 VS）出问题了，怎么会这么扯。浪费我的感情。
 
-1455989545: 大家都蠢
---------------------
+## `1455989545`{.tzx-timestamp} 大家都蠢
 
 接上一条。
 
@@ -147,8 +137,7 @@ set(CMAKE_DEBUG_POSTFIX "d")
 
 话说我还犯了几次类似 [c++ - CMake cannot determine linker language for target - Stack Overflow](http://stackoverflow.com/questions/16655705/cmake-cannot-determine-linker-language-for-target) 的错误，真是无可救药。
 
-1455986511: 你知道我在这耗了多久？
----------------------------------
+## `1455986511`{.tzx-timestamp} 你知道我在这耗了多久？
 
 ```cpp
 osgUtil::LineSegmentIntersector::Intersections::iterator hiter;
@@ -189,21 +178,18 @@ for ( hiter = intersections.begin(); hiter != intersections.end(); ++hiter ) {
 2. CMakeLists 里不加依赖，这是不可原谅的错误。
 3. 居然以前没有发现在头文件里 `class <class-name>` 的 pitfall：代码没有真正加进来。可以会在链接时期出问题。
 
-1455907067: 暴力？
------------------
+## `1455907067`{.tzx-timestamp} 暴力？
 
 > 如果你能破解 md5sum 的话， 我会感到很荣幸和你聊聊：ff8fb48d51329ad82a306fa309b97e3a（将 QQ 号写入文件、 不带换行符的文件的 md5sum）。
 
 关键是 QQ 号就那么几种啊……10^9 一个个试。不过……好想量有点大唉……
 
-1455906520: 在学校的蛋疼生活
-----------------------------
+## `1455906520`{.tzx-timestamp} 在学校的蛋疼生活
 
 一天只吃一顿饭，一次吃饱管一天。现在放个屁都是黄焖鸡的味道。
 Shit。
 
-1455900836: 今日大凶，不宜编程
-------------------------------
+## `1455900836`{.tzx-timestamp} 今日大凶，不宜编程
 
 `osgDB::readImageFile` 有问题，不明原因的 link 错误：
 
@@ -221,16 +207,14 @@ Shit。
 
 shit。
 
-1455741001: 爱死 GitHub 了！
----------------------------
+## `1455741001`{.tzx-timestamp} 爱死 GitHub 了！
 
 `Copy as Markdown` 很赞，但我想要 org-mode 格式的链接，
 GitHub 上有了：[kuanyui/copy-as-org-mode: Copy Link, Image and Table in Page as Org-mode Format!](https://github.com/kuanyui/copy-as-org-mode)
 
 不要太赞。
 
-1455730598: 启动 Emacs
-----------------------
+## `1455730598`{.tzx-timestamp} 启动 Emacs
 
 简直要用半个小时！！！emacs server 也太慢了！害得我现在不敢关闭虚拟机。
 
@@ -257,14 +241,12 @@ Please, commit your changes or stash them before you can switch branches.
 Aborting
 ```
 
-1454919178: 人生何处不相逢
---------------------------
+## `1454919178`{.tzx-timestamp} 人生何处不相逢
 
 看到一个很厉害的人，然后发现……他是 pangu-spacing 的作者。
 额……额……额……他是个处女座，忍不了这些非处女座的恶习。所以写了 pangu-spacing。
 
-1454914559: 变态的塔塔酱
-------------------------
+## `1454914559`{.tzx-timestamp} 变态的塔塔酱
 
 这是在简书看到最早人之一，不过……我忘了他那时候的网名……这篇 [随笔：DOC VS ORG - 简书](http://www.jianshu.com/p/360352dd05f2)
 我很早前就看过，不过再看一遍，还是被他打败了：
@@ -286,8 +268,7 @@ Aborting
 > 就如开头所说，当你用一样东西的时候，你不是用这项东西的技术，而是用这项东西带
 > 来的整体体验——甚至可以说是整个生态给你带来的体验。
 
-1454770092: 手机是个大傻逼
---------------------------
+## `1454770092`{.tzx-timestamp} 手机是个大傻逼
 
 + 动不动就要更新；屁新东西都没有，又要重新下载整个安装包；
 + 动不动弹出来权限不足的提醒；敢干嘛干嘛，要你妈的权限；
@@ -297,21 +278,19 @@ Aborting
 > 好烦啊。我妈让我帮她下电视剧。蛋疼的手机，一会提醒我软件要更新，一会儿提醒我
 > 权限不够，退出的时候还弹出窗口让我再点一次才能退出！而且特别傻逼的是，一个播放器。
 
-1454243499: 假期白话
---------------------
+## `1454243499`{.tzx-timestamp} 假期白话
 
-#. 我一直以为读音是“shuli”……原来就是“shushu”。
-#. 我真是想不通了。Bash 里面为什么把 Emacs 的快捷键全拿过去了……连 `M-- M-u` 都能用……
-#.  Using evil (simulating vim-like behaviour), I use this trick: :r!xsel or :r!xsel -b what reads output of command specified after exclamation mark. On MacOS you would probably use pbaste. – Jan Vlcinsky
+##. 我一直以为读音是“shuli”……原来就是“shushu”。
+##. 我真是想不通了。Bash 里面为什么把 Emacs 的快捷键全拿过去了……连 `M-- M-u` 都能用……
+##.  Using evil (simulating vim-like behaviour), I use this trick: :r!xsel or :r!xsel -b what reads output of command specified after exclamation mark. On MacOS you would probably use pbaste. – Jan Vlcinsky
 
 一看就是 Vim 也了解得不够的人……
 
 http://stackoverflow.com/questions/9985316/how-to-paste-to-emacs-from-clipboard
 
-#. You may not like this ad, but it supports the developer and keeps this site free.
+##. You may not like this ad, but it supports the developer and keeps this site free.
 
-1453270095: 如何截屏
---------------------
+## `1453270095`{.tzx-timestamp} 如何截屏
 
 发现还是 QQ 的截屏好用（虽然分辨率会降低），只要自己弄个群往里面传图片就可以了。
 等所有的图片都截好。就打开历史，复制全部，再粘贴到 Word 里，保存。再改后缀为 zip，
@@ -319,8 +298,7 @@ http://stackoverflow.com/questions/9985316/how-to-paste-to-emacs-from-clipboard
 
 传到 Lofter，备份完毕！
 
-1453175655: 玻璃心
-------------------
+## `1453175655`{.tzx-timestamp} 玻璃心
 
 See <https://www.zhihu.com/question/39523371/answer/82085727>
 
@@ -343,8 +321,7 @@ See <https://www.zhihu.com/question/39523371/answer/82085727>
 
 乖戾而强壮的人，总是可怕的。尤其他那个玻璃心。
 
-1453173203: 蟹煲饭，呵呵，蟹煲饭
---------------------------------
+## `1453173203`{.tzx-timestamp} 蟹煲饭，呵呵，蟹煲饭
 
 似乎最近所有的女人都想去吃蟹煲饭，呵呵，呵呵呵。和师姐约饭这件事，让我特别不爽。
 全文引用【饱醉豚】的一篇文章《生活方式》：
@@ -405,14 +382,13 @@ See <https://www.zhihu.com/question/39523371/answer/82085727>
 > 的地步，也没偏执到与你们作对。世界很大，有那么多角落，很多东西是可以完全漠视
 > 的，无论它多么主流。
 
-1452942694: 中文网站无中文
---------------------------
+## `1452942694`{.tzx-timestamp} 中文网站无中文
 
 完全不知道为什么……你们定位是国外用户？也没感觉到啊。那为毛主界面上一个中文都没有！
 作为一个说过“中文毁三代”，“我才不会用中文玷污自己的代码”的男人，我都无法理解了。
 
-1452685079: 我不相信他
-----------------------
+<!--
+## 1452685079: 我不相信他
 
 昨天很伤心，昨天很愚蠢。但我确实不喜欢这个男人。
 但每个人都有权利做出自己的选择，我不应该干预。
@@ -427,9 +403,9 @@ See <https://www.zhihu.com/question/39523371/answer/82085727>
 > 祝她幸福，祝我快乐。
 
 So it will be.
+-->
 
-1452000669: 毛主席当然不是非黑即白
-----------------------------------
+## `1452000669`{.tzx-timestamp} 毛主席当然不是非黑即白
 
 > 毛之所以有群众基础，
 >
@@ -467,10 +443,9 @@ So it will be.
 
 Refs
 
-#. [几个版本的比较--读后感 (评论: 毛泽东传)](http://book.douban.com/review/4562952/)
+##. [几个版本的比较--读后感 (评论: 毛泽东传)](http://book.douban.com/review/4562952/)
 
-1451283139: 售价远高于成本
---------------------------
+## `1451283139`{.tzx-timestamp} 售价远高于成本
 
 我已经不止一次看到“iPhone 的售价远高于成本”的说法，呵呵哒。
 说这话的人大概这把材料价格算上了。这么算价格的人估计不去餐馆吃饭，也不会做饭，
@@ -480,8 +455,7 @@ iPhone 的价值当然不能用原材料算。在它的设计、制造、运输�
 每个人都给它注入了更多的价值，不能忽视。
 尤其是那些程序员，难道他们的工作成果就是几十 MB 的字符？
 
-1451203756: 字“好看”却难认
---------------------------
+## `1451203756`{.tzx-timestamp} 字“好看”却难认
 
 其实我觉得不好看。比如这个：[冷知识 - 热门问答 - 知乎@Gnat采集到Mark(83图)_花瓣](http://huaban.com/pins/567722582/)
 
@@ -502,15 +476,13 @@ iPhone 的价值当然不能用原材料算。在它的设计、制造、运输�
 在这点上，Chrome 是愚蠢的，还在用 20 世纪的标准 12px 字号，Firefox 是明智的，目测字体至少有 16px。
 而我通常都要 24px 以上。
 
-1451128287: 不用你客套！
------------------------
+## `1451128287`{.tzx-timestamp} 不用你客套！
 
 我说的是听讲座的时候，在提问环节总有人要先起来感谢一下演讲者，
 然后“欢迎”来中国/武大/遥感院交流。
 我内心独白大概是：What the fuck！……Are you joking？Or you are jerking me off？……
 
-1451117920: 程序员的思维
-------------------------
+## `1451117920`{.tzx-timestamp} 程序员的思维
 
 程序员的思维里有一个很有意思的事情，就是喜欢**先**把 exception 说出来，这很适用于编程，比如：
 
@@ -531,49 +503,43 @@ void doSomething( status_t *currentStatus ) {
 
 是的，这种思维不适合和人交流。
 
-1451047461: 剪指甲
-------------------
+## `1451047461`{.tzx-timestamp} 剪指甲
 
 当然不能在公共场合，难道不知道剪掉的指甲会乱飞？不知道剪指甲的声音很刺耳？
 然而我在哪儿都能听到剪指甲。我不愿意去想象某片指甲飞到了谁的面包上，
 我只知道这可恶的声音乱了我的心智。
 
-1451047180: 阿飞
-----------------
+## `1451047180`{.tzx-timestamp} 阿飞
 
 《阿飞正传》里，阿飞去找自己的亲妈，亲妈不愿意见他，于是他走了，头也不回。
 独白大概是说，因为她不愿意见他，那他也不绝不能让她看到自己。
 
 这是一种互相的遗憾。
 
-1451032030: 又是英语竞赛
-------------------------
+## `1451032030`{.tzx-timestamp} 又是英语竞赛
 
 本科的时候，每次我都信誓旦旦地说这次不要被 ZYX 同学虐，结果每次都别虐。失败我是
 的常态，更别提她六级比我四级高……
 
 但我怎么能认输呢，鸡蛋碰石头也得上。这里：
 
-#. [研究生处 - 2016年全国大学生英语竞赛（NECCS）](http://www.shnu.edu.cn/Default.aspx?tabid=11957&ctl=Details&mid=25572&ItemID=172443)
-#. [关于组织研究生参加2016年全国大学生英语竞赛的通知-培养-武汉大学研究生院](http://www.gs.whu.edu.cn/index.php/index-view-aid-7829.html)
-#. [-启航！——2016年全国大学生英语竞赛报名工作全面展开](http://www.tefl-china.net/Article/ShowArticle.asp?ArticleID=1965)
-#. [-2015年全国大学生英语竞赛样题](http://www.tefl-china.net/Article/ShowArticle.asp?ArticleID=1911)
-#. [《全国大学生英语竞赛A类（研究生）历年真题精解与标准模拟考场 （第2版）》(赵晓敏...)【简介_书评_在线阅读】 - 当当图书](http://product.dangdang.com/23630422.html)
+##. [研究生处 - 2016年全国大学生英语竞赛（NECCS）](http://www.shnu.edu.cn/Default.aspx?tabid=11957&ctl=Details&mid=25572&ItemID=172443)
+##. [关于组织研究生参加2016年全国大学生英语竞赛的通知-培养-武汉大学研究生院](http://www.gs.whu.edu.cn/index.php/index-view-aid-7829.html)
+##. [-启航！——2016年全国大学生英语竞赛报名工作全面展开](http://www.tefl-china.net/Article/ShowArticle.asp?ArticleID=1965)
+##. [-2015年全国大学生英语竞赛样题](http://www.tefl-china.net/Article/ShowArticle.asp?ArticleID=1911)
+##. [《全国大学生英语竞赛A类（研究生）历年真题精解与标准模拟考场 （第2版）》(赵晓敏...)【简介_书评_在线阅读】 - 当当图书](http://product.dangdang.com/23630422.html)
 
 25 块钱我有，害怕什么呢。
 
-1451015437: 书看完了再买新的！
------------------------------
+## `1451015437`{.tzx-timestamp} 书看完了再买新的！
 
 我想买《代码大全2》，淘宝上有英文版的。但我至少要先把《Programming Perls》和《Algorithms》看完再说吧！
 
-1450951484: 复仇者联盟
-----------------------
+## `1450951484`{.tzx-timestamp} 复仇者联盟
 
 终于想起来里面那个会迷惑人的女人在哪儿见过了，就是冰火里面的女巫啊！声音很赞。
 
-1450836121: 《权利的游戏》里最好看的女人
-----------------------------------------
+## `1450836121`{.tzx-timestamp} 《权利的游戏》里最好看的女人
 
 很多人喜欢“龙母” Daenerys Targaryen（Emilia Clarke），但我觉得她并不好看[^eastface]。她还在《终结者 5》饰演了 Sarah Connor，同样，我也不喜欢。
 Game of Throne 里面我喜欢的是 Rose Leslie 饰演的 Ygritte（老拼不对，这次我要记住！），如下图：
@@ -584,8 +550,7 @@ Game of Throne 里面我喜欢的是 Rose Leslie 饰演的 Ygritte（老拼不�
 
 当然，Shae 也很漂亮。
 
-1450786936: 又来卖弄学问！
--------------------------
+## `1450786936`{.tzx-timestamp} 又来卖弄学问！
 
 这次吐槽的是自己。当我看到有人什么都在后面加个“er”表示什么什么人的时候，
 我就情不自禁得觉得：好二。很多情况下能不能加“er”，该不该加“er”得看这个单词
@@ -605,8 +570,7 @@ Game of Throne 里面我喜欢的是 Rose Leslie 饰演的 Ygritte（老拼不�
 前几天跟 JG 说的外国人不会拼 banana 也有问题，其实那是一个小女孩的
 “I know how to spell banana, but I don't know when to stop.”。我真是记忆力捉急！
 
-1450695983: Windows 真是太弱了
-------------------------------
+## `1450695983`{.tzx-timestamp} Windows 真是太弱了
 
 试了很久 Qt 的 QProcess 都不行。最后在 Ubuntu 上，
 都可以！Windows 上真心不知道路径要 `/` 还是 `\\` 还是 `\`，一个个试，
@@ -615,10 +579,10 @@ Game of Throne 里面我喜欢的是 Rose Leslie 饰演的 Ygritte（老拼不�
 By the way，Qt 真心好用。刚才的测试：
 
 ```cpp
-#include <QProcess>
-#include <QDebug>
-#include <QStringList>
-#include <cstdio>
+##include <QProcess>
+##include <QDebug>
+##include <QStringList>
+##include <cstdio>
 
 int main( void )
 {
@@ -671,8 +635,7 @@ ag:  "        process.start( "ag", QStringList() << "moe~" << "." );
 
 BeeBEEP 不错。可以在 Win 和 Linux 下面简单地聊天（复制文字）。
 
-1450585786: Sakai 女神
-----------------------
+## `1450585786`{.tzx-timestamp} Sakai 女神
 
 的歌总是那么让人精神振奋。可是我发现自己在音悦台下的演唱会音频
 好捉急，一点都不好听，一定是谁在背后黑 Sakai。那是 04 年的演唱会，
@@ -680,13 +643,11 @@ Sakai 唯一一次演唱会，那时候她都老了。
 
 特别喜欢这个：あの微笑みを忘れないで，活力四射。
 
-1450537571: CSDN 的广告
------------------------
+## `1450537571`{.tzx-timestamp} CSDN 的广告
 
 特别垃圾。刚才还弹出来一个“如何致富”，然后配图是一个卖地瓜……
 
-1450516728: Small Powerful Tool
--------------------------------
+## `1450516728`{.tzx-timestamp} Small Powerful Tool
 
 Notepad++ is a free (as in "free speech" and also as in "free beer") source code editor and Notepad replacement that supports several languages. Running in the MS Windows environment, its use is governed by GPL License.
 
@@ -694,8 +655,7 @@ Notepad++ is a free (as in "free speech" and also as in "free beer") source code
 
 还开源 free beer，[notepad-plus-plus/notepad-plus-plus](https://github.com/notepad-plus-plus/notepad-plus-plus)
 
-1450509617: Windows Sucks
--------------------------
+## `1450509617`{.tzx-timestamp} Windows Sucks
 
 想不通了怎么会这么卡！老师给的笔记本配置好到爆（除了网卡和硬盘），居然动不动就 freeze。
 现在不得不把外观调到最差，才显得流畅一些。比较让人不舒服的是，除了那些有广告的恶心软件，
@@ -716,18 +676,16 @@ Windows 另一个傻逼之处是如果更新了，开机还要配置很久，从
 
 Windows 的 Explorer 的 `Control` 加滚轮居然是改变视图模式，然而我就是想改变字体大小，而已。
 
-1450503402: 国内技术社区
-------------------------
+## `1450503402`{.tzx-timestamp} 国内技术社区
 
-#. CSDN 广告最多，做得最烂，人多又杂。
-#. 博客园，比 CSDN 好点，广告少点。
-#. 开源中国，广告略有品位，比前两者好，它的 [技术翻译](http://www.oschina.net/translate) 很有意思
-#. V2EX，很少上，不评价。
-#. SegmentFault，很不错。
-#. Coding.net，GitCafe，Git@OSC 这个不算社区。
+##. CSDN 广告最多，做得最烂，人多又杂。
+##. 博客园，比 CSDN 好点，广告少点。
+##. 开源中国，广告略有品位，比前两者好，它的 [技术翻译](http://www.oschina.net/translate) 很有意思
+##. V2EX，很少上，不评价。
+##. SegmentFault，很不错。
+##. Coding.net，GitCafe，Git@OSC 这个不算社区。
 
-1450430826: C++ 真是比 C 语言庞大太多
--------------------------------------
+## `1450430826`{.tzx-timestamp} C++ 真是比 C 语言庞大太多
 
 比如 OSG 里常用的这段代码，I have no fucking idea 这东西什么意思。
 是 `ref_ptr` 模板类重载了 `->` 操作符？这迷惑性太大。
@@ -762,8 +720,7 @@ getline( &line, &len, fp );
 
 第一次看上觉得“怪”，慢慢就明白了这简洁设计的良苦用心。C++ 把程序员眼里看到的确定性一手毁了。
 
-1450429339: Stupid Visual Studio
---------------------------------
+## `1450429339`{.tzx-timestamp} Stupid Visual Studio
 
 很多时候我更倾向于用 Qt Creator。因为它很贴心地有一个“切换头文件/源文件（F4）”的功能，
 而 VS 居然只能“Go To Header File”，我怎么回来？每次都要找到文件列表，或者踩着一个函数“Go To Definition（F12）”。
@@ -772,16 +729,14 @@ getline( &line, &len, fp );
 
 但，我已经被 VS 蠢哭。
 
-1450421135: CMake 的 Cache 太扯淡
----------------------------------
+## `1450421135`{.tzx-timestamp} CMake 的 Cache 太扯淡
 
 我已经不是第一次被它坑了。出了问题一定**第一时间**先试试重新完全 CMake 一下看问题还在不在。
 
 比 CMake 愚蠢的是我自己，居然找了一个库，想弄个静态库 lib 文件，再把头文件引入。然而它只有头文件，
 所有的实现都在这些头文件里，只有头文件还怎么生成静态库啊！
 
-1450410830: 为什么不给 BUF 多分配一个字符作为截止？
---------------------------------------------------
+## `1450410830`{.tzx-timestamp} 为什么不给 BUF 多分配一个字符作为截止？
 
 因为这是彪悍的 C/C++，你有责任知道自己在干什么。
 而且，因为你分配的 buffer 不一定用来放字符串，不一定用到
@@ -790,8 +745,7 @@ getline( &line, &len, fp );
     - 你保证不越界？
     - 我保证！
 
-1450408403: 指针符号放在哪儿？
------------------------------
+## `1450408403`{.tzx-timestamp} 指针符号放在哪儿？
 
 有些人喜欢用 `int *i`{.cpp}，有些人喜欢用 `int* i`{.cpp}，我倾向于第一种。
 
@@ -824,8 +778,7 @@ getInt() {
 }
 ```
 
-1450405601: 制作灵格斯词典
---------------------------
+## `1450405601`{.tzx-timestamp} 制作灵格斯词典
 
 [这个页面](http://www.lingoes.cn/zh/dictionary/dict_format.php) 说明了 Lingoes 词典的格式，
 感觉这东西可以用来做成一个个人 wiki。
@@ -846,23 +799,20 @@ n. 好; 慷慨的行为; 好事<br/>adj. 好的, 上等的, 优良的
 
 这个格式很简单很简单，甚至简单的脚本都能把它和 Pandoc 互通格式。
 
-1450360685: E-Typewriter
-------------------------
+## `1450360685`{.tzx-timestamp} E-Typewriter
 
 我想有一个打字机，有基本的机械键盘（60%），
 还有一个比较长的屏幕（因为键盘本来就挺长），但高度可能只需要
 40 行高。这样的小电脑，可以运行一个超级轻量级的 Linux，
 配置了 Vim，可以用过来打字。可以联网同步数据（GitHub、Dropbox 之类）。
 
-1450357527: Password Fatigue
-----------------------------
+## `1450357527`{.tzx-timestamp} Password Fatigue
 
 我觉得我得给自己设计一套密码本，取代原来的中文缩写。
 用一张图片做背景，把乱码放上去，每个人都能看到这张图，
 但就我知道那个账户的密码是在哪些纹理处的密码拼接而来。
 
-1450320066: Emacs with Evil-mode on Windows
--------------------------------------------
+## `1450320066`{.tzx-timestamp} Emacs with Evil-mode on Windows
 
 首先下载 [Evil-mode](https://bitbucket.org/lyro/evil/wiki/Home)，或者用我的备份：<http://whudoc.qiniudn.com/evil.7z>
 
@@ -896,8 +846,7 @@ n. 好; 慷慨的行为; 好事<br/>adj. 好的, 上等的, 优良的
 
     其中的 `junction`{.bash} 是 Win 下的 `ln -s`。你可以从微软官网上下载到。
 
-1450267233: Perl for Vimer
---------------------------
+## `1450267233`{.tzx-timestamp} Perl for Vimer
 
 Perl 这门语言简直和 Vim 一个娘胎出来的！正则表达式几乎一模一样。
 如果你用 Vim，却不学习 Perl，then You dont know what you missed。
@@ -918,8 +867,7 @@ s/\(^\s*\)\|\(\s*$\)//g
 
 当然，两者都可以指定 delimiter，简直 identical。
 
-1449975628: What is Vim? Why Vim?
----------------------------------
+## `1449975628`{.tzx-timestamp} What is Vim? Why Vim?
 
 Vim 是一个用正则表达式把自己武装到牙齿的高效编辑器，其设计理念决定了它
 能够存活几十年并在程序员的世界里广受欢迎。Vi 是银光闪闪的 Bill Joys 写的，
@@ -944,20 +892,19 @@ By the way，jgm 大神也用 Emacs（包括 Evil-mode）：
      ghc solarized-theme helm cmake-mode lua-mode))
 ```
 
-#. `ex`{.bash}, short for EXtended, is a line editor for Unix systems
+##. `ex`{.bash}, short for EXtended, is a line editor for Unix systems
     originally written by Bill Joy in 1976, beginning with an earlier program
     written by Charles Haley.
-#. The original code for `vi`{.bash} was written by Bill Joy in 1976, as the
+##. The original code for `vi`{.bash} was written by Bill Joy in 1976, as the
     visual mode for a line editor called `ex`{.bash} that Joy had written with Chuck Haley.
 
 Refs
 
-#. [vi - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Vi)
-#. [ex (text editor) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Ex_%28text_editor%29)
-#. [Emacs - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Emacs)
+##. [vi - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Vi)
+##. [ex (text editor) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Ex_%28text_editor%29)
+##. [Emacs - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Emacs)
 
-1449914013: Greedy Search
--------------------------
+## `1449914013`{.tzx-timestamp} Greedy Search
 
 几乎所有的搜索工具都不能让我满意，无论是 grep、ag、Everything、Google、Bing、百
 度，它们忽略了一个很明显的需求：如果找不到，就放宽条件帮我找一个！No matter what。
@@ -977,8 +924,7 @@ fallback。但在其它搜索情形，提示“我没有找到”并不是好主
 就会提示你的这个操作不是给 novince 用户用的，你确定要打开这个高级功能？然后你
 就可以选啊。How considerate。
 
-1449810918: Pandoc 之罪
------------------------
+## `1449810918`{.tzx-timestamp} Pandoc 之罪
 
 Pandoc 属于神器之中的神器，从名字就可以看出来，`pan` + `doc`，有种一统江湖
 的感觉对吧，听上去像 Pandora 一样美对吧。
@@ -1028,19 +974,19 @@ a mess (e.g. several pairs of words turned into one).
 For example, there is a demo file `demo.md` with content:
 
 ```plain
-## Case 1: only East Asian Characters
+### Case 1: only East Asian Characters
 
 我能吞下玻璃，
 而不伤身体。我能吞下玻璃
 而不伤身体。
 
-## Case 2: Only Western Characters
+### Case 2: Only Western Characters
 
 The quick brown fox,
 jumps over the lazy dog. The quick brown fox
 jumps over the lazy dog.
 
-## Case 3: Blended
+### Case 3: Blended
 
 我能吞下玻璃而不伤身体，
 the quick brown fox jumps over the lazy dog.
@@ -1124,8 +1070,7 @@ Pandoc 作者 [jgm (John MacFarlane)](https://github.com/jgm) 的回复：
 
 </small></div>
 
-1449807394: Atom 编辑器之罪
----------------------------
+## `1449807394`{.tzx-timestamp} Atom 编辑器之罪
 
 Atom 是 GitHub 开发的号称 21 世纪的编辑器。但是，插件（我只是要个 Vim-mode 而已）我装不了，因为装插件要联网。
 感谢 GFW，让我们回到了让人怀念二十世纪。
@@ -1135,8 +1080,7 @@ Atom 是 GitHub 开发的号称 21 世纪的编辑器。但是，插件（我只
 
 结论是，编辑器还是用 Vim 省心。
 
-1449754750: 文档这么丑！
------------------------
+## `1449754750`{.tzx-timestamp} 文档这么丑！
 
 CMake 的文档是 "Created using Sphinx 1.3a0."，字体那么小，完全糊在一起，根本看不清。我觉得这个 Sphinx 弄出来的文档都特别恶心，Python 社区似乎特别偏爱这个破工具。OpenCV 的文档也用这工具写的，醉了醉了醉了！
 
@@ -1144,8 +1088,7 @@ CMake 社区的示例代码也很少，而且给的例子都让人无语。明�
 
 外，我见到的网站的搜索工具，一个比一个烂，根本不能用，本地随便一个八十年代的 grep 效果都比你好。特别慢，等你终于等到结果，显示的是“没有结果”，是不是特让人无语。
 
-1449546008: Windows 系统小工具
-------------------------------
+## `1449546008`{.tzx-timestamp} Windows 系统小工具
 
 好用的都在这个文件夹：`C:\Windows\SysWOW64`，比如 `where`{.bash}（相当于 Linux 的 `whereis`），`clip`{.bash}（相当于 `xclip -selection clipboard -o`。
 
@@ -1204,9 +1147,9 @@ xargs.exe           yacc
 ```
 
 ```plain
-# UTF-8 to Unicode
-# This file is a dummy.
-# The conversion is done algorithmicly, not by a table look-up.
+## UTF-8 to Unicode
+## This file is a dummy.
+## The conversion is done algorithmicly, not by a table look-up.
 ```
 
 Git Bash 文件夹下很有意思：
@@ -1523,18 +1466,18 @@ C:\Program Files (x86)\Git
 
 这个文件夹下也有很多有意思的东西：`c:\windows\system32`，比如：
 
-#. `taskmgr.exe`，任务管理器
-#. `winver.exe`，显示系统版本
-#. `tasklist.exe`，`taskkill.exe`
-#. `xcopy.exe`
+##. `taskmgr.exe`，任务管理器
+##. `winver.exe`，显示系统版本
+##. `tasklist.exe`，`taskkill.exe`
+##. `xcopy.exe`
 
 `C:\Windows` 下面则有：
 
-#. `write.exe`，写字板
-#. `notepad.exe`
-#. `regedit.exe`
-#. `explorer.exe`
-#. `winhlp32.exe`
+##. `write.exe`，写字板
+##. `notepad.exe`
+##. `regedit.exe`
+##. `explorer.exe`
+##. `winhlp32.exe`
 
 我自己攒的小工具则有 `C:\dev\cmdtools`（大部分来自 Nuwen 的 MinGW 打包）：
 
@@ -1616,44 +1559,41 @@ systeminfo
 
 这个 MinGW Distro 特别赞：
 
-#. My MinGW distribution ("distro") is x64-native and
+##. My MinGW distribution ("distro") is x64-native and
     currently contains GCC 5.2.0 and Boost 1.59.0.
-#. GCC defaults to `C++03`, so you must compile with `-std=c++14` for C++14.
+##. GCC defaults to `C++03`, so you must compile with `-std=c++14` for C++14.
 
 作者的网页上有句：
 
-#. This is my personal website. I work for Microsoft, but I don't speak for them.
-#. So high, so low, so many things to know
-#. <nuwen.net> is my personal website; I pronounce it "noo-when". It's a
+##. This is my personal website. I work for Microsoft, but I don't speak for them.
+##. So high, so low, so many things to know
+##. <nuwen.net> is my personal website; I pronounce it "noo-when". It's a
     reference to Pham Nuwen, a character in A Deepness In The Sky by Vernor Vinge.
 
-1449546253: 一个想法
---------------------
+## `1449546253`{.tzx-timestamp} 一个想法
 
 一个工具，应该使用 JavaScript 写，可以漫游一个源码目录。
 提供一个 index，源码高亮显示出来。
 
 如果这一切都在线处理：
 
-#. 给它一个源码目录，它先 directory listing（七牛不支持这个）
-#. 根据 listing 的 index，点击后加载相应文件（URL 不变，只是加载文件并高亮而已）
+##. 给它一个源码目录，它先 directory listing（七牛不支持这个）
+##. 根据 listing 的 index，点击后加载相应文件（URL 不变，只是加载文件并高亮而已）
 
 如果这一切离线处理：
 
-#. 也就是说所有的代码高亮都放到后台，把一个目录里的源码都转化为 HTML 再直接上传七牛
-#. 可以参考 Doxygen。
+##. 也就是说所有的代码高亮都放到后台，把一个目录里的源码都转化为 HTML 再直接上传七牛
+##. 可以参考 Doxygen。
 
 我更倾向于用离线，因为可以不写 JavaScript……而且一次处理完可以打包好存起来。
 
 外，把自己的离线文档（压缩包）也上传一部分。
 
-1449480622: 我们新疆干就是容易得鼻炎
--------------------------------------
+## `1449480622`{.tzx-timestamp} 我们新疆干就是容易得鼻炎
 
 然而到了上海，我也听到了“我们上海潮，就是容易得鼻炎”的说法。
 
-1449296854: So we beat on
--------------------------
+## `1449296854`{.tzx-timestamp} So we beat on
 
 <!--So we beat on, boats against the current, borne back ceaselessly into the past.-->
 
@@ -1667,10 +1607,9 @@ systeminfo
 
 Refs
 
-#. [The Last Line of The Great Gatsby: "So We Beat On..."](http://bookriot.com/2012/07/26/the-last-line-of-the-great-gatsby-so-we-beat-on/)
+##. [The Last Line of The Great Gatsby: "So We Beat On..."](http://bookriot.com/2012/07/26/the-last-line-of-the-great-gatsby-so-we-beat-on/)
 
-1449217326: 眼屎好吃吗？
------------------------
+## `1449217326`{.tzx-timestamp} 眼屎好吃吗？
 
 我一直觉得，眼睛肯定比口腔更脆弱，所以能往眼睛里滴的，一定也能往嘴里塞。
 所以滴眼液什么当然可以喝。是不是很有道理？
@@ -1679,13 +1618,11 @@ TJG 说，那你吃你的眼屎啊～
 
 ……shit…………
 
-1449115137: 别再压缩 JPEG 图片了！！！
--------------------------------------
+## `1449115137`{.tzx-timestamp} 别再压缩 JPEG 图片了！！！
 
 这东西压缩不了多少，但是压缩和解压很费时间！整个打包不要压缩，不要压缩，不要压缩！
 
-1448440357: 学术和生产
-----------------------
+## `1448440357`{.tzx-timestamp} 学术和生产
 
 突然想到老师要求的 CVRS 编码规范里 private 变量要放在类最开始（而不是像别的编码规范一样放在最后）。
 
@@ -1693,22 +1630,20 @@ TJG 说，那你吃你的眼屎啊～
 
 我们做的是学术，以数据为中心，处理流程相对简单（我是说过程 in/out 清晰而不是一团线条，多入多出），而不是
 
-#. 以为别人提供合理的 API 接口为编码目的
-#. 向用户隐藏/掩盖细节
-#. 应用驱动、事务驱动
+##. 以为别人提供合理的 API 接口为编码目的
+##. 向用户隐藏/掩盖细节
+##. 应用驱动、事务驱动
 
 生产过程中往往需要和上、下的人打交道，隐藏自己这一层的细节很必要。^[曾看过一本书，说这叫“信息屏蔽”。]而学术需要更加直观透明。
 这就是学术和生产的区别。
 
-1448436328: Don't forget to feel bad
-------------------------------------
+## `1448436328`{.tzx-timestamp} Don't forget to feel bad
 
 ![](http://gnat.qiniudn.com/qk-does-not-feel-bad.jpg)
 
 等我力所能及的时候我会给我 pirate 的每本书、每个软件的作者、出版社都捐助（补偿）一笔钱。感谢他们。
 
-1448420781: 该死
-----------------
+## `1448420781`{.tzx-timestamp} 该死
 
 [George Santayana](https://en.wikipedia.org/wiki/George_Santayana):
 
@@ -1716,8 +1651,7 @@ TJG 说，那你吃你的眼屎啊～
 
 不理解 Vim、Pandoc 的人也 doomed to be ignorant 益发愈加地 ignorant。
 
-1448253493: Please Don't Use Safari
------------------------------------
+## `1448253493`{.tzx-timestamp} Please Don't Use Safari
 
 ![Mike Bostock](http://gnat.qiniudn.com/mbostock.jpg?imageView2/2/w/200)
 
@@ -1732,8 +1666,7 @@ D3.js 的作者 [Mike Bostock](https://github.com/mbostock "真大神，看他�
 > A Safari extension is no longer supported because Apple requires a $99 per
 > year fee to obtain a developer certificate. **Please don’t use Safari.**
 
-1448196130: Inconsistent X is terrible!
----------------------------------------
+## `1448196130`{.tzx-timestamp} Inconsistent X is terrible!
 
 No matter what x is!
 
@@ -1745,8 +1678,7 @@ Even Visual Studio knows:
     > Line ending:
     >     Unix (LF)
 
-1448183579: Wait a long wait
-----------------------------
+## `1448183579`{.tzx-timestamp} Wait a long wait
 
 国王的演讲里 King George VI 说：
 
@@ -1754,13 +1686,12 @@ Even Visual Studio knows:
 
 感觉我的程序也让人 wait rather a long wait 了……而且还看不到转机。
 
-1448052566: 错误是什么时候引入的？
----------------------------------
+## `1448052566`{.tzx-timestamp} 错误是什么时候引入的？
 
 我不知道，但是我一个星期程序都跑不起来……各种调 CMake 结果发现是我改了变量名……
 
 ```cmake
-# OSG
+## OSG
 find_package( OpenSceneGraph REQUIRED osgDB osgUtil osgViewer osgGA osgText osgFX osgQt )
 set( OpenSceneGraph_LIBS_Release ${OSG_LIBRARY} ${OPENTHREADS_LIBRARY} ${OSGDB_LIBRARY} ${OSGGA_LIBRARY}  ${OSGTEXT_LIBRARY} ${OSGUTIL_LIBRARY} ${OSGVIEWER_LIBRARY} ${OSGFX_LIBRARY} ${OSGQT_LIBRARY} )
 set( OpenSceneGraph_LIBS_Debug ${OSG_LIBRARY_DEBUG}  ${OPENTHREADS_LIBRARY_DEBUG} ${OSGDB_LIBRARY_DEBUG} ${OSGGA_LIBRARY_DEBUG} ${OSGTEXT_LIBRARY_DEBUG} ${OSGUTIL_LIBRARY_DEBUG} ${OSGVIEWER_LIBRARY_DEBUG} ${OSGFX_LIBRARY_DEBUG} ${OSGQT_LIBRARY_DEBUG} )
@@ -1771,8 +1702,7 @@ set( OpenSceneGraph_LIBS_Debug ${OSG_LIBRARY_DEBUG}  ${OPENTHREADS_LIBRARY_DEBUG
 
 上次的情况是 `rm -f $(PODIR)/*`{.bash}，因为 `PODIR` 没有设定，这个指令把我“家”都清空了。
 
-1448044500: A Man of Value
---------------------------
+## `1448044500`{.tzx-timestamp} A Man of Value
 
 Albert Einstein:
 
@@ -1784,8 +1714,7 @@ Albert Einstein:
 这句话太让人感动。
 
 
-1447900492: 做不完的事情总是做不完
-----------------------------------
+## `1447900492`{.tzx-timestamp} 做不完的事情总是做不完
 
 ![r] ![y] ![g] ![x]
 
@@ -1797,21 +1726,19 @@ Albert Einstein:
 很久前写的要做的事：
 
 
-#. ![y] read some tmux
-#. ![y] 学习使用 gitbook
-#. ![y]<!--...--> [github/gitignore](https://github.com/github/gitignore)
-#. ![y] 程序员自身修养
-#. ![y] Learn Org-Mode
+##. ![y] read some tmux
+##. ![y] 学习使用 gitbook
+##. ![y]<!--...--> [github/gitignore](https://github.com/github/gitignore)
+##. ![y] 程序员自身修养
+##. ![y] Learn Org-Mode
 
-1447765652: 教宗也当然是反对吃饭玩手机的人
-------------------------------------------
+## `1447765652`{.tzx-timestamp} 教宗也当然是反对吃饭玩手机的人
 
 ![](http://o.aolcdn.com/hss/storage/midas/4214e245badd4faa7a36d7abc2c0fffd/202980253/imrs_thumbnail.jpg)
 
 > 当孩子只顾在用餐时用电脑或手机，并不聆听旁人说话的话，那不算是家庭，而是一个受豢（huàn）养者。
 
-1447765371: 如果我是“QQ 群”的产品经理
--------------------------------------
+## `1447765371`{.tzx-timestamp} 如果我是“QQ 群”的产品经理
 
 [云风的 BLOG: 闲扯几句移动社交软件](http://blog.codingnow.com/2015/11/chat_app.html)
 
@@ -1827,15 +1754,13 @@ Albert Einstein:
 
     这个想法很棒。
 
-1447502019: Fork on GitHub
---------------------------
+## `1447502019`{.tzx-timestamp} Fork on GitHub
 
 `#made-my-day#`
 
 ![fork on GitHub](http://gnat.qiniudn.com/pics/github-babaric-fork.png)
 
-1447520394: 哪里才是重点？
--------------------------
+## `1447520394`{.tzx-timestamp} 哪里才是重点？
 
 [威尔特·张伯伦_百度百科](http://baike.baidu.com/link?url=0r3zg8KYZhZ9kYM7WCaZ4XymrUCrBWSunooBrI3hYgRGot2aB286vheAMFQ3ZXFI)：
 
@@ -1849,44 +1774,37 @@ Albert Einstein:
 
 ![用 AHK 脚本配置了键盘布局，然后 keybr 可以用了，于是一试……我知道我还需要练习](http://gnat.qiniudn.com/pics/144752051.png)
 
-1447489151: 那些倔强又理性的人
-------------------------------
+## `1447489151`{.tzx-timestamp} 那些倔强又理性的人
 
 总是深得我心。至于那：
 
-#. 倔强但蛮不讲理的 &rarr; 去死
-#. 理性而逆来顺受的 &rarr; 再见
-#. 蛮不讲理又欺软怕硬的 &rarr; 滚远点
+##. 倔强但蛮不讲理的 &rarr; 去死
+##. 理性而逆来顺受的 &rarr; 再见
+##. 蛮不讲理又欺软怕硬的 &rarr; 滚远点
 
-1447405412: 每到冬天
---------------------
+## `1447405412`{.tzx-timestamp} 每到冬天
 
 就不得不忍受和其他人待在一个封闭的、酷热的房子里。热成狗。
 
 `1450326446`{.ts}: 热死了！！！
 
-1447292125: How Could I FAIL You?
----------------------------------
+## `1447292125`{.tzx-timestamp} How Could I FAIL You?
 
 不能的，不能的。既不应该，也不可能。
 
-1447284952: JavaScript 程序员
------------------------------
+## `1447284952`{.tzx-timestamp} JavaScript 程序员
 
 喜欢用两个空格缩进而不是四个。像我这样的像素眼处女座，都一眼看不出缩进层次。What bloody shit。
 
-1447267769: 面试和恋爱的关系
-----------------------------
+## `1447267769`{.tzx-timestamp} 面试和恋爱的关系
 
 如果你最想去的是 A，一定不要先面 A。先面 B、C、D，etc，最后再去面 A。这好象是什么人生哲理。
 
-1447227862: 作息不正常
-----------------------
+## `1447227862`{.tzx-timestamp} 作息不正常
 
 从早上八点一觉睡到了下午两点半，洗个澡然后就三点，讲座是去不了了。What a pity。
 
-1447186728: 老师待我如初恋
---------------------------
+## `1447186728`{.tzx-timestamp} 老师待我如初恋
 
 > 初定周四早上8-9点讨论你的进展，整理成文档和PPT汇报最新进展
 
@@ -1894,15 +1812,13 @@ Albert Einstein:
 
 如果我眼睛大点早看到我就不来熬夜了。说多了都是泪，只怪自己水平次效率低。Shit。
 
-1447151147: 牵狗的人
---------------------
+## `1447151147`{.tzx-timestamp} 牵狗的人
 
 大声地呵斥他的狗：“吐出来，吐出来！”
 
 我猜他的狗是吃了屎……
 
-1447090204: 不择手段地攒人气
-----------------------------
+## `1447090204`{.tzx-timestamp} 不择手段地攒人气
 
 > The documentation for 0.4.1 is under development. If you discover any issues or
 > typos in the documentation, or if you feel like practicing your technical writing,
@@ -1910,8 +1826,7 @@ Albert Einstein:
 
 真是不择手段啊……我也想练练，不怕被我搞残吗？
 
-1447063539: 一定要 GET 写网页和脚本的技能！
-------------------------------------------
+## `1447063539`{.tzx-timestamp} 一定要 GET 写网页和脚本的技能！
 
 太有用太有用，而我却不怎么会。
 
@@ -1929,10 +1844,11 @@ Albert Einstein:
 [hangual]: http://ndb.io/
 [Voronoi Tessellation](http://bl.ocks.org/mbostock/4060366):
 
-<iframe src="http://bl.ocks.org/mbostock/raw/4060366/" width="1000" height="560"></iframe>
+<iframe
+  data-src="http://bl.ocks.org/mbostock/raw/4060366/"
+  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="1000" height="560"></iframe>
 
-1447044804: 请问你的 QQ 是？
----------------------------
+## `1447044804`{.tzx-timestamp} 请问你的 QQ 是？
 [留言 | 谢益辉](http://yihui.name/cn/guestbook/)：
 
 > 请问你的 QQ 是？

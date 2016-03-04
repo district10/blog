@@ -34,19 +34,11 @@ function dvorak4tzx( pathParts ) {
         filename = ( '/_posts/' + basename + '.md' );
         mdPath  += filename;
         rawPath += filename;
-    } else if ( 'koans' ===  basename.substring(0, 5) ) {
-        filename = '/_koans';
-        mdPath  += filename;
-        rawPath  = mdPath;
-    } else if ( 'notes' === basename.substring(0, 5) ) {
-        filename = '/_notes';
-        mdPath  += filename;
-        rawPath  = mdPath;
     } else {
-        filename = '/_static/' + basename + '.md';
+        filename = '/_pages/' + basename + '.md';
         mdPath  += filename;
         rawPath += filename;
-    }
+    } 
 
     document.getElementById( 'ghraw'  ).href = rawPath;
     document.getElementById( 'ghpage' ).href = mdPath;
@@ -61,7 +53,7 @@ function prettyUnixTime( ts ) {
     var seconds = "0" + date.getSeconds();
     var sts = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2); // 2015 年 03 月 23 日 03 时 36 分 52 秒，周三
     var lts = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2); // 03:23, Jan 03, Sat
-    return { ts: ts, sts: formattedTime, lts: lts };
+    return { ts: ts, sts: sts, lts: lts };
 }
 
 function appendSharpToHdrs( hdrs ) {

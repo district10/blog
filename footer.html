@@ -7,6 +7,15 @@
 <a title="修改历史" id="ghpage" target="_blank" href="index.html" style="font-size: 7px;">@GitHub</a>
 <a title="文档源码" id="ghraw"  target="_blank" href="index.html" style="font-size: 7px;">@Src</a>
 </div>
+<script src="lazyload.min.js"></script>
+<script>
+var imgs = document.getElementsByTagName('img');
+for ( var i = 0; i < imgs.length; ++i ) {
+    imgs[i].setAttribute('data-src', imgs[i].src );
+    imgs[i].setAttribute('src', "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==");
+    imgs[i].setAttribute('onload', "lzld(this)");
+}
+</script>
 <script type="text/javascript" src="main.js"></script>
 
 <div id="disqus_thread"></div>
