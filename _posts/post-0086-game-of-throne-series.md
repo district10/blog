@@ -14,12 +14,12 @@ html {
 }
 body {
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%);
-}
-body {
+    tet-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
     color: white;
 }
 h1 {
     background-color: rgba(255,255,255,0.2);
+    font-variant: small-caps;
 }
 img {
     border: solid 1px #CCC;

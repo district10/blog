@@ -87,10 +87,7 @@ footer:
 	$(EDITOR) _parts/footer.html
 
 statics:
-	rsync $(STATICS)/utils/*		$(PODIR)/
-	rsync $(STATICS)/font-awesome/* $(PODIR)/
-	rsync $(STATICS)/imgs/*		$(PODIR)/
-	rsync $(STATICS)/*		$(PODIR)/
+	$(MAKE) -C $(STATICS)
 
 lrc: lyrics
 lyrics:
@@ -152,6 +149,10 @@ about:
 
 bq:
 	$(EDITOR) $(STATICS)/blog-query.js
+c:
+	$(EDITOR) $(STATICS)/main.css
+j:
+	$(EDITOR) $(STATICS)/main.js
 
 pm: poem
 poem:
