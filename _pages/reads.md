@@ -83,26 +83,33 @@ V/\n#. ?kbzf
         ```
 
         When you run:
+
+        ```shell
         test-command admin password foo bar
+        ```
+
         the above batch file will run:
 
+        ```shell
         fake-command /u admin /p password foo bar
+        ```
 
-        Edit: Actually, %* means "all", so one would actually need to use shift to do the above:
+        Edit: Actually, `%*` means "all", so one would actually need to use shift to do the above:
 
+        ```shell
         echo off
         set arg1=%1
         set arg2=%2
         shift
         shift
         fake-command /u %arg1% /p %arg2% %*
+        ```
 #. &#x2610; [启动或停止 Web 服务器 (IIS 8)](https://technet.microsoft.com/zh-cn/library/jj635851.aspx)
 :   ?
     :   用 nodejs 开 80 端口的 http 服务器，需要先关闭 IIS：`net stop WAS`
 
-        `C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
-
-        blog.sh
+        add `blog.sh` to
+        `C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`:
 
         ```shell
         #!/bin/bash
@@ -138,8 +145,8 @@ V/\n#. ?kbzf
         -f test.pdf
         ```
 #. &#x2610; [SVG Pocket Guide](http://svgpocketguide.com/book/)
-#. &#x2610; [在 org-mode 中使用 Graphviz 畫關係圖 | coldnew's blog](http://coldnew.github.io/blog/2013/07-13_07e15/)
-#. &#x2610; [org-mode, “文学编程” , 自动化报告](http://dayigu.github.io/OrgModeAndLiterateProgramming.html)
+#. &#x2611; [在 org-mode 中使用 Graphviz 畫關係圖 | coldnew's blog](http://coldnew.github.io/blog/2013/07-13_07e15/)
+#. &#x2611; [org-mode, “文学编程” , 自动化报告](http://dayigu.github.io/OrgModeAndLiterateProgramming.html)
 #. &#x2610; [GitHub does dotfiles - dotfiles.github.io](https://dotfiles.github.io/)
 #. &#x2610; [Read Lisp, Tweak Emacs: How to read Emacs Lisp so that you can customize Emacs](http://emacslife.com/how-to-read-emacs-lisp.html#orgheadline1)
 #. &#x2610; [The Linux desktop experience is killing Linux on the desktop - (think)](http://batsov.com/articles/2011/06/11/linux-desktop-experience-killing-linux-on-the-desktop/)
@@ -153,19 +160,19 @@ V/\n#. ?kbzf
 #. &#x2610; [马基雅维利主义\_百度百科](http://baike.baidu.com/view/1201238.htm)
 #. &#x2610; [唱灌篮高手主题曲的人现在怎么样了？ - 知乎](https://www.zhihu.com/question/22512533)
 :   ?
-    :   「マイフレンド」我的朋友 乐队ZARD，主唱坂井泉水。泉水姐姐声音甜润且相貌
-        极美，以她为中心的ZARD也成为日本最成功的乐队之一，十几年里作品张张大卖
-        ，总销量近4000万张，诞生名曲无数。可惜天妒红颜，2007年癌症扩散到肺部，
+    :   「マイフレンド」我的朋友乐队 ZARD，主唱坂井泉水。泉水姐姐声音甜润且相貌
+        极美，以她为中心的 ZARD 也成为日本最成功的乐队之一，十几年里作品张张大卖
+        ，总销量近 4000 万张，诞生名曲无数。可惜天妒红颜，2007 年癌症扩散到肺部，
         入院治疗时又发生意外事故，不幸去世，无数歌迷心中永远的痛。九十年代开始
         的这十几年是日本流行音乐最辉煌的时期，连动画片的音乐都是相当拿得出手，
         往往有大牌音乐人精心制作。现在的日本动画画面虽然越来越清晰和符合现在的
         审美，音乐性上想要全面超越那个时期的动画基本上是不可能了。
 #. &#x2610; [日本有哪些好的歌手？ - 知乎](https://www.zhihu.com/question/22782650)
 :   ?
-    :   5. ZARD听到就让人泪目的摇滚乐团无需多言。这首《君に逢いたくなったら》是
-        1997年的单曲，每次听到都会十分感动。ZARD的曲子里充满着从骨子里发出的不
+    :   5. ZARD 听到就让人泪目的摇滚乐团无需多言。这首《君に逢いたくなったら》是
+        1997 年的单曲，每次听到都会十分感动。ZARD 的曲子里充满着从骨子里发出的不
         羁和向上，就是那种流着眼泪微笑的感觉。其他脍炙人口的曲子包括 《揺れる想
-        い》 和《负けないで》。作为tie柯南的乐团之一，当然还有大热的 《运命のル
+        い》 和《负けないで》。作为 tie 柯南的乐团之一，当然还有大热的 《运命のル
         ーレット廻して》。
 #. &#x2610; [科学网—我是河南人 - 施一公的博文](http://blog.sciencenet.cn/home.php?mod=space&uid=46212&do=blog&id=284162)
 #. &#x2610; [埃瓦里斯特·伽罗瓦\_百度百科](http://baike.baidu.com/link?url=RYtI1uUwSNSdH-8aadFGVjY6TEivoTIcIhGXY-rHHMQLkt02C23vKXJE5xYgRxwOIC3CKyby0hjSkL_WmNQy45roMynw1pOXa7k7kbl5Rlr2wyGb4l42qV74hnvKY80he7MvG-So-Aq3p-eH9H1MIa)
