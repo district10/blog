@@ -10,7 +10,7 @@ GENIDX=_bin/posts_index.sh
 GENIDX2=_bin/posts_index2.sh
 
 all: pages posts statics lyrics $(IDXPG)
-pages posts statics lyrics: $(PODIR) EXE
+pages posts statics lyrics: $(PODIR) EXE footer.html
 $(PODIR):
 	mkdir -p $(PODIR)
 EXE:
