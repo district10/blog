@@ -107,8 +107,10 @@ Use a few of the new styles together ... lots of new possibilities.
 
 <div class="shake-crazy shake-freeze">`<div class="shake-crazy shake-freeze"></div>`{.html}</div>
 
-![](http://whudoc.qiniudn.com/Arya,_Ned_and_Syrio_1x03.jpg)
-![](http://imglf1.nosdn.127.net/img/cXkrRlR2ZnlJNE9raGNPN1paQW9WVlRpdWxkYzdrV0NQeURHc1Jsa3lvcHZkNExvWHZYeTJRPT0.jpg)
-![](http://imglf1.ph.126.net/cwIybKL52HS4xNothaJ51Q==/6630858858491804302.png)
-![](http://imglf0.ph.126.net/kETApM6JtGP8cKBfoYa0rA==/6630746708305772145.png)
-![](http://imglf2.ph.126.net/wawOa-zm9j44GJSMdKS3dw==/6630616965933693962.png)
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<script>
+$(function() {
+    $( ".tzx-tabs" ).tabs();
+});
+</script>

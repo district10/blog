@@ -24,37 +24,15 @@ Presentation
 ### RegExP - `R`AMP
 
 1. everything
-
-
-2. ag
-
-
-* [ggreer/the_silver_searcher: A code-searching tool similar to ack, but faster.](https://github.com/ggreer/the_silver_searcher)
-
-`ag 'gpu::cornerHarris\(.*src.*\)'`{.bash}
-
+2. ag: `ag 'gpu::cornerHarris\(.*src.*\)'`{.bash}
 3. notepad++
-
-Why You Need It.
 
 ### Async & Make (Part I) - R`A`MP
 
 1. Async in Javascript Community: Node.js
-
-pic 1, pic 2
-
 2. Async in C++: STL, Boost, folly
-
 3. Async for What?
-
-
-
-* [facebook/folly: An open-source C++ library developed and used at Facebook.](https://github.com/facebook/folly)
-
-
-drastic change.
-
-seq?
+4. [facebook/folly: An open-source C++ library developed and used at Facebook.](https://github.com/facebook/folly)
 
 ### Pipe - RAM`P`
 
@@ -187,10 +165,7 @@ void foo(int x) {
     cout << "Promise fulfilled" << endl;
 ```
 
-
-
-[district10/raw2pts: Raw file 2 point cloud file](https://github.com/district10/raw2pts)
-
+Case Study: [district10/raw2pts: Raw file 2 point cloud file](https://github.com/district10/raw2pts)
 
 ```plain
 Compile
@@ -211,7 +186,6 @@ Utils
 Windows 系统上需要安装 git bash。
 ```
 
-
 ```bash
 #!/bin/bash
 
@@ -224,10 +198,11 @@ do
 done
 ```
 
+```plain
 > stdout.txt
 2> stderr.txt
 &> stdout-stderr.txt
-
+```
 
 ## = R A M P = for what?
 
@@ -278,7 +253,6 @@ $ echo 23 | double | triple
 138.000000
 ```
 
-
 ```bash
 #!/bin/bash
 
@@ -314,96 +288,53 @@ $(output)/%.txt: $(input)/%.raw
 	raw2pts $< $@
 ```
 
-# Refs
+## Slides
+
+![](http://whudoc.qiniudn.com/ramp/幻灯片1.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片2.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片3.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片4.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片5.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片6.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片7.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片8.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片9.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片10.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片11.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片12.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片13.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片14.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片15.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片16.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片17.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片18.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片19.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片20.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片20.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片21.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片22.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片23.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片24.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片25.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片26.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片27.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片28.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片29.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片30.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片30.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片31.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片32.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片33.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片34.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片35.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片36.JPG)
+![](http://whudoc.qiniudn.com/ramp/幻灯片37.JPG)
+
+---
+
+Refs
 
 #. [Futures for C++11 at Facebook - June 19, 2015](https://code.facebook.com/posts/1661982097368498)
 #. [Everything Searching Options](http://www.voidtools.com/support/everything/searching/)
 #. [BASH Programming - Introduction HOW-TO: All about redirection](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-3.html)
 #. [Flow (psychology) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Flow_(psychology))
-
-<style>
-.tzx-tab-menu > dl > dt {
-    margin-left: 0;
-    margin-bottom: 0;
-    padding: 2px 15px 5px;
-    border: 1px solid #000;
-    list-style: none;
-    display: inline;
-    background-color: #ffc;
-    cursor: point;
-}
-
-.tzx-tab-menu > dl > dd {
-//     display: none;
-}
-
-.tzx-display-none {
-    display: none;
-}
-
-</style>
-
-<div id="tabdemo">
-* 项目列表一anoedi anastoei
-* 项目列表二
-
-<li class="selected">项目列表三</li>
-
-* 项目列表四
-</ul>
-</div>
-
-<div class="tzx-tab-menu">
-good
-
-:   nice too see you
-
-
-nice
-
-:   ```cpp
-    int count( struct TreeNode *root )
-    {
-        if ( !root ) { return 0; }
-        return 1+count(root->right)+count(root->left);
-    }
-
-    void traverse( struct TreeNode *root, int *data, int *cursor )
-    {
-        if ( !root ) { return; }
-        traverse( root->left, data, cursor );
-        data[(*cursor)++] = root->val;
-        traverse( root->right, data, cursor );
-    }
-
-    int* inorderTraversal(struct TreeNode* root, int* returnSize) {
-        *returnSize = count( root );
-        int *data = malloc( sizeof(int)*(*returnSize) );
-        int cursor = 0;
-        traverse( root, data, &cursor );
-        return data;
-    }
-    ```
-</div>
-
-<script>
-function hideMenu( m )
-{
-    for ( var i = 1; i < m.children[0].children.length; i += 2 ) {
-        //    dl         dd
-        m.children[0].children[i].className = 'tzx-display-none';
-    }
-}
-
-// init
-var tms = document.getElementsByClassName('tzx-tab-menu')
-for ( var i = 0; i < tms.length; ++i ) {
-    hideMenu( tms[i] );
-    // tms[i].children[0].children[1].className = '';
-    tms[i].children[0].children[0].onClick = function( e ) {
-        console.log( 'hit' );
-        hideMenu( e.target.parentElement.parentElement );
-        e.target.nextElementSibling.className = '';
-    }
-}
-</script>

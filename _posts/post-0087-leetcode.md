@@ -943,6 +943,9 @@ int* inorderTraversal(struct TreeNode* root, int* returnSize) {
 ~~~ {#line892 .c}
 // todo
 ~~~
+</div>
+
+---
 
 <!--
 <div class="tzx-tabs">
@@ -956,6 +959,8 @@ int* inorderTraversal(struct TreeNode* root, int* returnSize) {
 ~~~
 </div>
 -->
+
+---
 
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="jquery-ui.min.js"></script>

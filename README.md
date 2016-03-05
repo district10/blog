@@ -29,10 +29,33 @@ For Linux
 4. makefile
 5. shell
 
+## Usage
+
+just `make`
+
 ## Workflow
 
-0. `/usr/local/bin/watch -i 300ms -q make`
+0. `/usr/local/bin/watch -i 300ms -q make` (not work on windows)
 1. write md file & save
 2. browser auto refresh
 3. that's it
 
+## Utils
+
+Compress images
+
+```bash
+#!/bin/bash
+
+lossy() {
+convert -strip \
+    -interlace Plane \
+    -gaussian-blur 0.05 \
+    -filter Lanczos -quality 85% \
+    $1 $2
+}
+
+for i in *.JPG; do
+    lossy $i ${i/.JPG/.lossy.jpg}
+done
+```

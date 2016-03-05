@@ -160,3 +160,49 @@ Refs
 #. [Theon Greyjoy - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Theon_Greyjoy)
 #. [Tyrion Lannister - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Tyrion_Lannister)
 #. [Ygritte - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Ygritte)
+
+---
+
+The Dothraki are a race of nomadic horse-mounted warriors in Essos, the
+continent to the east of Westeros across the Narrow Sea. They inhabit the vast
+central plains of Essos, known as the Dothraki sea. They are said to be born,
+fight, and die in the saddle.
+
+Essos is an immense landmass located to the east of Westeros, extending into
+the far east of the known world. The Free Cities are located on its
+north-western shores, with the Dothraki sea located deep in the continental
+interior and the cities of Slaver's Bay on the south coast. The continent
+extends far to the east, around the Jade Sea, to the distant and fabled lands
+of Asshai and the Shadow. Essos climate is temperate in the northern and
+western portions, and subtropical in the southern & eastern portions. Rainfall
+generally decreases as one moves eastward in Essos.
+
+The extreme eastern end of the continent has not been fully mapped. Westeros's
+landmass is much longer from north to south, extending from the deserts of
+Dorne to the polar regions north of the Wall, but east-to-west travel is much
+shorter. In contrast, the greater bulk of Essos runs along an east-west
+latitude, while its northern and southern extremes are a shorter distance. On
+the western shore of Essos, the furthest point north at Braavos is at the same
+latitude as the Vale of Arryn, and the furthest point south near Tyrosh is at
+the same latitude as Dorne, separated only by the island chain known as the
+Stepstones. Pentos, located roughly between these two extremes, is at the same
+latitude as King's Landing.
+
+Westeros is a continent located in the far west of the known world. It is
+separated from the continent of Essos by a strip of water known as the Narrow
+Sea. Most of the action in Game of Thrones takes place in Westeros.
+
+Westeros is a continent located in the far west of the known world. It is
+separated from the continent of Essos by a strip of water known as the Narrow
+Sea. Most of the action in Game of Thrones takes place in Westeros.
+
+Author of the series George R.R. Martin has stated that the continent of
+Westeros is roughly the same size as the real-life continent of South America.
+
+Almost the entire continent, barring only the lands in the furthest north
+beyond the Wall, is ruled by a single political entity known as the Seven
+Kingdoms, which holds fealty to the King of the Andals and the First Men, who
+sits on the Iron Throne in the city of King's Landing. The terms "Seven
+Kingdoms" and "Westeros" are normally used interchangeably.
+
+People or things from Westeros are referred to as "Westerosi".
