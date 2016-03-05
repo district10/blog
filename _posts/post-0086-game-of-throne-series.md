@@ -160,6 +160,11 @@ Refs
 #. [Theon Greyjoy - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Theon_Greyjoy)
 #. [Tyrion Lannister - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Tyrion_Lannister)
 #. [Ygritte - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Ygritte)
+#. [Game of Thrones Interactive Map: Are You Ready for Clash of Kings?](http://www.gameofthronesmap.org/)
+
+#. [Dothraki - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Dothraki)
+#. [Narrow Sea - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Narrow_Sea)
+#. [Westeros - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Westeros)
 
 ---
 
@@ -206,3 +211,24 @@ sits on the Iron Throne in the city of King's Landing. The terms "Seven
 Kingdoms" and "Westeros" are normally used interchangeably.
 
 People or things from Westeros are referred to as "Westerosi".
+
+You want me to serve the woman who murdered my King,
+who butchered my men, who crippled my son?
+
+I want you to serve the realm!
+Tell the Queen you will confes your vile treason,
+tell your son to lay down his sword and
+proclaim Joffrey as the true heir.
+
+
+
+
+
+You think my life is some precious thing to me?
+That I would trade my honor for a few more years of... of what?
+
+You grew up with actors.
+You learned their craft and you learned it well.
+
+But I grew up with soldiers, I learned how to die a long time ago.
+

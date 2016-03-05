@@ -42,7 +42,7 @@ pages:
 
 i: index
 index: $(IDXPG)
-$(IDXPG):
+$(IDXPG): index.md
 	$(GENIDX) $@
 
 ri: removeindex
@@ -95,6 +95,7 @@ clean:
 # write
 k: koan
 koan:
+	date +%s | clip
 	$(EDITOR) _pages/koans.md
 
 n: note

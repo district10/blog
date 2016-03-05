@@ -13,6 +13,15 @@ V/\n#. ?kbzf
 <div class="reads">
 
 #. &#x2610;
+#. &#x2610; [VIM: index](http://man.lupaworld.com/content/manage/vi/doc/)
+#. &#x2610; [shell - How to run a series of vim commands from command prompt - Stack Overflow](http://stackoverflow.com/questions/23235112/how-to-run-a-series-of-vim-commands-from-command-prompt)
+
+```bash
+for %a in (A,B,C,D) do vim -c ":g/^\s*$/d" -c "<another command>" %a.txt
+```
+
+`:help bufdo`
+
 #. &#x2610; [Vim Regular Expressions 101](http://www.vimregex.com/)
 #. &#x2610; [Search patterns - Vim Tips Wiki - Wikia](http://vim.wikia.com/wiki/Search_patterns)
 #. &#x2610; [Org Mode - Organize Your Life In Plain Text!](http://doc.norang.ca/org-mode.html)

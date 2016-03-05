@@ -21,15 +21,11 @@ Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序�
 <div><a href="reads.html">Reads | 斋读</a></div><br>
 <div><a href="dents.html">Dents | 乱象</a></div></div></div><hr />
 
-<br/>
-<div id="searchContainer">
+<br/><div id="searchContainer">
 Search:<br>
 <input id="tzxsearchbox" type="text" name="tzxsearchbox" placeholder="type keywords in url/title/tag, e.g. 'post', 'got'." style="width:100%;max-width:600px;outline:0">
-</div>
-<div id="links">
-<br>
-</div>
-<hr>
+</div><br/>
+<div id="links"></div><hr>
 
 <div style="font-variant:small-caps;">Posts</div>
 <div class="posts"><!--...-->
@@ -110,7 +106,8 @@ Search:<br>
 <link rel="stylesheet" href="auto-complete.css">
 <style>
     #searchContainer {
-        margin: 20px;
+        margin: 10px;
+        display: block;
     }
     #tzxsearchbox {
         float: left;
@@ -125,13 +122,22 @@ Search:<br>
         border: solid 1px #d9d9d9;
         border-top: solid 1px #c0c0c0;
     }
+    .autocomplete-suggestion {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
     .tzx-suggestion-link {
+        padding-top: 0.5em;
         padding-left: 2em;
         font-size: 60%;
     }
-    tzx-suggestion-tagline {
+    .tzx-suggestion-tagline {
         padding-left: 2em;
         font-size: 60%;
+        font-variant: small-caps;
+        font-family: Monaco, Menlo, Consolas, "Courier New", Monospace,
+                     "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun,
+                     STXihei, Heiti, sans-serif;
     }
 </style>
 
@@ -141,6 +147,14 @@ Search:<br>
 var link_prefix = tzx_link_prefix;
 if ( window.location.toString().startsWith('file') ) {
     link_prefix = window.location.toString().split('/index.html')[0];
+}
+
+function prependChild( p, c ) {
+    if( p.hasChildNodes() ){
+        p.insertBefore( c, p.firstChild );
+    } else {
+        p.appendChild( p );
+    }
 }
 
 new autoComplete({
@@ -170,11 +184,11 @@ new autoComplete({
              +  ' link-query="' + search+ '">'
              +    item.title.replace(re, "<b>$1</b>")
              +  '<br/>'
-             +  '<a class="tzx-suggestion-link" target="_blank"'
+             +  '<div class="tzx-suggestion-link">'
+             +  '<a target="_blank"'
              +  ' href="' + link_prefix + item.url + '">'
              +              link_prefix + item.url.replace(re, "<b>$1</b>")
-             +  '</a>'
-             +  '<br/>'
+             +  '</a></div>'
              +  '<div class="tzx-suggestion-tagline">'
              +      item.query.join(' & ').replace(re, "<b>$1</b>")
              +  '</div>'
@@ -182,7 +196,7 @@ new autoComplete({
         return dom;
     },
     onSelect: function(e, term, item) {
-        document.getElementById('links').appendChild( item );
+        prependChild( document.getElementById('links'), item );
         document.getElementById('tzxsearchbox').value = '';
     }
 });

@@ -11,9 +11,17 @@ code.tzx-timestamp {
 }
 </style>
 
-
 <div class="koans"><!-- 下面要有空行 | One Empty Line Reserved Below -->
 
+## `1457153290`{.tzx-timestamp} Colm Wilkinson
+
+在看电影版的 Les Miserable，听到主角 Bishop 的声音就觉得特别熟，一看脸就觉得像
+10 周年音乐会版的 Jean Valjean。一查，他叫 [Colm Wilkinson](https://en.wikipedia.org/wiki/Colm_Wilkinson)：
+
+> In 1995, Wilkinson played Jean Valjean in the 10th Anniversary Concert of Les
+> Misérables at the Royal Albert Hall.
+
+唱得真心好到爆。
 
 ## `1456885511`{.tzx-timestamp} jQuery is Bad?
 
@@ -53,7 +61,7 @@ code.tzx-timestamp {
 
 简直天籁之音。
 
-沙威死那段好带感。
+沙威（Javert）死那段好带感。
 
 Quotes: from [一个完人——致沙威 (悲惨世界 影评)](http://movie.douban.com/review/4614648/)
 
