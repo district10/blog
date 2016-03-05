@@ -14,7 +14,7 @@ pages posts statics lyrics: $(PODIR) EXE
 $(PODIR):
 	mkdir -p $(PODIR)
 EXE:
-	chmod +x */*.sh
+	chmod +x _bin/*.sh
 
 gh: github
 github:

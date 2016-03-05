@@ -151,27 +151,131 @@ lover of Jon Snow.
 
 ---
 
-Refs
+## EP.4
 
-#. [Arya Stark - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Arya_Stark)
-#. [Daenerys Targaryen - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Daenerys_Targaryen)
-#. [Joffrey Baratheon - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Joffrey_Baratheon)
-#. [Eddard Stark - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Ned)
-#. [Theon Greyjoy - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Theon_Greyjoy)
-#. [Tyrion Lannister - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Tyrion_Lannister)
-#. [Ygritte - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Ygritte)
-#. [Game of Thrones Interactive Map: Are You Ready for Clash of Kings?](http://www.gameofthronesmap.org/)
+Game of Thrones is an American fantasy drama tv series adapted from George
+Martin's A Song of Ice and Fire. This tv show is so much a fantasy and so great
+that it attracted a big audience. I seldom watch any tv series but I do favor
+this one and I've watched 4 seasons of it and willing to share some of my
+opinions on it. The focus today is Eddard Stark, popularly known as Ned, is a
+major character in the first season. But before that, I'll introduce the
+backgrounds and settings of this story.
 
-#. [Dothraki - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Dothraki)
-#. [Narrow Sea - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Narrow_Sea)
-#. [Westeros - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Westeros)
+This is the world map for game of throne. As you can see, the world is
+separated to two parts by the narrow sea. The west is called Westeros, while
+the right part is called Essos. Westeros and essos are the known world, while
+the land beyond castle black, is unknown. Westeros is ruled by a single
+political entity known as the Seven Kingdoms, which holds fealty `['fiːəltɪ]`
+to the King of the Andals and the First Men, who sits on the Iron Throne in the
+city of King's Landing. Here is the king's landing, where the king lives. And
+in the north, Winterfell, is where Ned Stark is from. As for Essos, there lived
+some kind of horse people, I mean, the Dothraki. And Daenerys Targaryen gets
+her power there. The story of Ned mainly happended in Winterfell and King's
+landing.
+
+And there are houses of Game of Throne. House Stark, Ned Stark. House
+Lannister, she is the Queen. And House Baratheon, the King is here. House
+Targaryen. She is gatherring power and on her way to the Westeros.
+
+Now is time for Ned Stark. I'll share three scenes from Season 1 about Ned
+Stark, and analyze the quality or characteristics of Ned Stark, tell you guys
+why I like this character. And after that, I'll compare him to three other
+characters to illustrate why he is destined to fail and die.
+
+Scene one, in the frontier of Winterfell, close to Castle Black, the northest
+part of Westeros. Ned Stark sentenced a man to die. This man is a guardsman in
+the night's watch and a deserter. His comrades were killed by white walkers
+(the walking dead). Ned did his duty and executed the man. I think Ned in his
+heart is a merciful man and believes what the man's words ("He is talking
+madness").  But as the lord of Winterfell. Law is law. He has no choice but to
+commit his duty. Furthermore, he asked his son (here, this boy) to watch the
+execution. He wants his son to be a calm and straight man as he is.
+
+Scene two, it's the small council of the king. And this time, they are arguing
+about how to deal with Daenerys Targaryen, who is pregnant now. And may cross
+the narrow sea, come back to claim her lands and power. Robert, the king,
+insists sending a man to assassinating the girl, but Ned Stark disagree. King
+Robert is kind of pissed off, saying towards the other four: you are my
+council, counsel! So the other four people start telling Ned why they should
+kill Daenerys at this time.
+
+First is the Master of Whisperers, Varys, sometimes called "the Spider", says
+the country must sometimes do vile, terrible, unfair, injustice things for the
+good of the realm. Then Grand Maester Pycelle, the old man over there, says if
+she leads a Dothraki army coming for us, more people will die. For us,
+assassinating Daenerys is not just wiser, but also kinder. This can save more
+people from dying in the possible war in the future. Lord Renly, Master of
+Laws, says "we should have them both killed years ago!" Last, Master of Laws,
+Petyr Baelish, known as the little finger, thinks it's not a big thing. Just
+get it over with and be done with it. Why not just kill this girl?
+
+No matter how, King Robert insist assassinating Daenerys. And Ned disagrees.
+Finally, Ned quited his job as the Hand of the King, and went away.
+
+Ned Stark is an honorable man, too good for this kind of vile thing. His
+discipline makes too straight to bend.
+
+Scene three. In the dungeon. Ned is arrested for treason, which of course is a
+made-up sentence. He has a conversation with Varys, the Spider. Varys wants Ned
+to confess his treason and kneel to the Queen. Ned? No! You want me to serve
+the woman who murdered my King, who butchered my men, who crippled my son? Ned
+will never proclaim Joffrey as the true heir. Here you can see the conficts.
+Ned is too straight as a man, who will not yield to anything. Varys is more
+flexible and claims to serve the realm. Ned never take his life as some
+precious thing, and would not trade his honor for a few more years life.  If
+you've seen some Spartacus-like films or something like that, you'll understand
+what these warriors, fighters, Gladiators treasure is glorious.
+
+Then Ned continus, You grew up with actors. You learned their craft and you
+learned it well.
+
+But I grew up with soldiers, I learned how to die a long time ago. And in the
+end, Ned died.
+
+I really like this man and personality. But in my opinion, his death is not
+glorious or honorable at all. He died in a tragedy, died a terrible way. I
+would compare this straight man to three other characters. First is Clyde
+Shelton from The Law Abiding Citizen, second is David Gale from The Life of
+David Gale, third is Javert from the famous Les Miserable. Like Ned, they are
+all straight man. But they have different disteny.
+
+Law Abiding Citizen tells a story of revenge. Two criminals broken into Clyde
+Shelton's house, killed his daughter, raped his wife, in front of him. Because
+the lawyer made a deal with the criminal, the criminals did not receive the
+deserved punishments. So Clyde, used to be a law abiding citizen, decided to
+punish the two criminals in his own way. And beyond that, he wants to destroy
+the justice system. Finally he killed a series of people in the justice system.
+Comparing to Clyde, Ned Stark did not fight back, or maybe it's just he has no
+chance or possibility to do that.
+
+The Life of David Gale. Gale is a professor and advocate to abanden the death
+penalty. But He and his coworkers can't persuade the mayer. So he faked a
+murderer so he would mistakenly be sentenced to death. After his death, his
+coworkers revealed the story. In this way, he claimed his political appeal.
+Comparing to David Gale, Ned Stark is not smart enough to play this kind of
+trick to gather supports from other people.
+
+(The dream cast in concert.)
+
+Les Miserable, original by Victor Hugo, has a character called Javert, who is a
+straight man too, when he realize that Jean Valjean is not real bad person. He
+was confused, struggling for a "WHY".  Finally, He jumped the river. Comparing
+the Jevart, Ned's death is not noble, he was executed (decapitated) in public,
+for treason.  What a hilarious and pathetic death.
+
+But don't get me wrong, I really like this character, like this straight man. I
+just feel bad when he did nothing when approaching death. No fight, no glory.
+Not honorable.
 
 ---
+
+## Notes
 
 The Dothraki are a race of nomadic horse-mounted warriors in Essos, the
 continent to the east of Westeros across the Narrow Sea. They inhabit the vast
 central plains of Essos, known as the Dothraki sea. They are said to be born,
 fight, and die in the saddle.
+
 
 Essos is an immense landmass located to the east of Westeros, extending into
 the far east of the known world. The Free Cities are located on its
@@ -220,10 +324,6 @@ Tell the Queen you will confes your vile treason,
 tell your son to lay down his sword and
 proclaim Joffrey as the true heir.
 
-
-
-
-
 You think my life is some precious thing to me?
 That I would trade my honor for a few more years of... of what?
 
@@ -232,3 +332,42 @@ You learned their craft and you learned it well.
 
 But I grew up with soldiers, I learned how to die a long time ago.
 
+Petyr Baelish, popularly called Littlefinger,
+Varys, sometimes called the Spider
+Pycelle is the King's Grand Maester and a member of the small council, but also
+serves as a spy for Cersei Lannister.
+
+* Hand of the King: Ned Stark.
+* Master of Whisperers: Varys, known as "the Spider".
+* Grand Maester: Pycelle.
+* Master of Coin: Lord Petyr Baelish, known as "Littlefinger".
+* Master of Laws: Lord Renly Baratheon, Lord of Storm's End.
+* Master of Coin: Lord Petyr Baelish, known as "Littlefinger".
+* Master of Ships: Lord Stannis Baratheon, Lord of Dragonstone.
+
+---
+
+Refs
+
+#. [Arya Stark - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Arya_Stark)
+#. [Category:Characters - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Category:Characters)
+#. [Daenerys Targaryen - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Daenerys_Targaryen)
+#. [Dothraki - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Dothraki)
+#. [Eddard Stark - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Ned)
+#. [Game of Thrones Interactive Map: Are You Ready for Clash of Kings?](http://www.gameofthronesmap.org/)
+#. [House Lannister - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/House_Lannister)
+#. [House Martell - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/House_Martell)
+#. [Javert - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Javert)
+#. [Jean Valjean - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Jean_Valjean)
+#. [Joffrey Baratheon - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Joffrey_Baratheon)
+#. [Law Abiding Citizen - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Law_Abiding_Citizen)
+#. [Les Misérables: The Dream Cast in Concert - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Les_Mis%C3%A9rables:_The_Dream_Cast_in_Concert)
+#. [Narrow Sea - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Narrow_Sea)
+#. [Petyr Baelish - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Petyr_Baelish)
+#. [Small Council - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Small_council)
+#. [The Life of David Gale - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/The_Life_of_David_Gale)
+#. [Theon Greyjoy - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Theon_Greyjoy)
+#. [Tyrion Lannister - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Tyrion_Lannister)
+#. [Varys - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Varys)
+#. [Westeros - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Westeros)
+#. [Ygritte - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Ygritte)

@@ -13,13 +13,15 @@ $(PODIR)/lyrics-00003.html \
 $(PODIR)/lyrics-00002.html \
 $(PODIR)/lyrics-00001.html \
 
-all: aha $(LYRICS) $(LRCIDX)
+all: aha.exe $(LYRICS) $(LRCIDX)
+
+$(LYRICS): aha.exe
+$(LRCIDX): aha.exe
+aha.exe: aha.c
+	gcc $^ -std=c99 -o $@
 
 clean:
 	rm -f $(LYRICS) $(LRCIDX)
-
-aha: aha.c
-	gcc $^ -std=c99 -o $@
 
 $(LYRICS): $(INDIR)/_a.md $(INDIR)/_b.md $(INDIR)/_c.md $(INDIR)/_d.md $(INDIR)/_main.css
 $(PODIR)/%.html: $(INDIR)/%-a.md $(INDIR)/%-b.md $(INDIR)/%-c.md
