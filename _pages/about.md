@@ -19,13 +19,13 @@ About | 关于
 
 博客源码在
 
-- [district10/blog](https://github.com/district10/blog)。
-- [district10/orgit](https://github.com/district10/orgit)。
+- [district10/blog](https://github.com/district10/blog)
+- [district10/orgit](https://github.com/district10/orgit)
 
 联系我
 
-- @Lofter: [dvorak4tzx](http://dvorak4tzx.lofter.com/)
 - @GitHub: [district10 (TANG ZhiXiong (dvorak4tzx))](https://github.com/district10)
+- @Lofter: [dvorak4tzx](http://dvorak4tzx.lofter.com/)
 
 ---
 
@@ -41,13 +41,10 @@ About | 关于
 
     （2）刘未鹏，[[BetterExplained]为什么你应该（从现在开始就）写博客](http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/)
 
-
 <!--
 
 ![Mathematics is the only truly universal language.](http://gnat.qiniudn.com/jodie-foster-math.png)
-
 ![Octocat: Adventure Cat](http://gnat-tang-shared-image.qiniudn.com/octocat/adventure-cat.png)
-
 ![Kimonotocat](http://gnat-tang-shared-image.qiniudn.com/octocat/kimonotocat.png)
 
 -->

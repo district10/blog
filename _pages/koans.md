@@ -16,7 +16,7 @@ code.tzx-timestamp {
 ## `1457153290`{.tzx-timestamp} Colm Wilkinson
 
 在看电影版的 Les Miserable，听到主角 Bishop 的声音就觉得特别熟，一看脸就觉得像
-10 周年音乐会版的 Jean Valjean。一查，他叫 [Colm Wilkinson](https://en.wikipedia.org/wiki/Colm_Wilkinson)：
+10 周年音乐会版的 Jean Valjean。一查还果然是。他叫 [Colm Wilkinson](https://en.wikipedia.org/wiki/Colm_Wilkinson)：
 
 > In 1995, Wilkinson played Jean Valjean in the 10th Anniversary Concert of Les
 > Misérables at the Royal Albert Hall.
@@ -1857,11 +1857,13 @@ Albert Einstein:
 </script>
 
 [hangual]: http://ndb.io/
-[Voronoi Tessellation](http://bl.ocks.org/mbostock/4060366):
 
-<iframe
-  data-src="http://bl.ocks.org/mbostock/raw/4060366/"
-  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="1000" height="560"></iframe>
+[Voronoi Tessellation](http://bl.ocks.org/mbostock/4060366)
+
+<!--
+FireFox: Blocked by Content Security Policy.
+<iframe src="http://bl.ocks.org/mbostock/raw/4060366/" width="1000" height="560"></iframe>
+-->
 
 ## `1447044804`{.tzx-timestamp} 请问你的 QQ 是？
 [留言 | 谢益辉](http://yihui.name/cn/guestbook/)：

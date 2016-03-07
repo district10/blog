@@ -31,6 +31,8 @@ pre {
 
 <!-- *************************************************************************** -->
 
+`<meta HTTP-EQUIV="REFRESH" content="0; url=http://district10.github.io/">`{.html}
+
 fatality `[fə'tæləti]`: n. 死亡；宿命；致命性；不幸；灾祸
 
 ```css
