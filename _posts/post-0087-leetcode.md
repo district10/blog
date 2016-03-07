@@ -16,8 +16,6 @@ pre {
 }
 </style>
 
-<i class="icon-camera-retro"></i> icon-camera-retro
-
 <div class="tzx-tabs">
 * [Leet Code Intro](#tab11)
 * [F.A.Q.](#tab12)

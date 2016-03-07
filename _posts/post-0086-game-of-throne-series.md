@@ -153,43 +153,40 @@ lover of Jon Snow.
 
 ## EP.4
 
-Game of Thrones is an American fantasy drama tv series adapted from George
-Martin's A Song of Ice and Fire. This tv show is so much a fantasy and so great
-that it attracted a big audience. I seldom watch any tv series but I do favor
-this one and I've watched 4 seasons of it and willing to share some of my
-opinions on it. The focus today is Eddard Stark, popularly known as Ned, is a
-major character in the first season. But before that, I'll introduce the
-backgrounds and settings of this story.
+Game of Thrones is an American tv series adapted from George Martin's A Song of
+Ice and Fire. This tv show is so much a fantasy and so great that it attracted
+a big audience.  I've watched 4 seasons of it, and really like it and willing
+to share some of my opinions on it. The focus today is Eddard Stark, popularly
+known as Ned, is a major character in the first season. But before that, I'll
+introduce the backgrounds and settings of this story.
 
 This is the world map for game of throne. As you can see, the world is
 separated to two parts by the narrow sea. The west is called Westeros, while
 the right part is called Essos. Westeros and essos are the known world, while
 the land beyond castle black, is unknown. Westeros is ruled by a single
-political entity known as the Seven Kingdoms, which holds fealty `['fiːəltɪ]`
-to the King of the Andals and the First Men, who sits on the Iron Throne in the
-city of King's Landing. Here is the king's landing, where the king lives. And
-in the north, Winterfell, is where Ned Stark is from. As for Essos, there lived
-some kind of horse people, I mean, the Dothraki. And Daenerys Targaryen gets
-her power there. The story of Ned mainly happended in Winterfell and King's
-landing.
+political entity known as the Seven Kingdoms. Ands here is the king's landing,
+where the king lives. And in the north, Winterfell, is where Ned Stark is from.
+As for Essos, there lived some kind of horse people, I mean, the Dothraki. And
+Daenerys Targaryen gets her power there. The story of Ned mainly happended in
+Winterfell and King's landing.
 
-And there are houses of Game of Throne. House Stark, Ned Stark. House
-Lannister, she is the Queen. And House Baratheon, the King is here. House
-Targaryen. She is gatherring power and on her way to the Westeros.
+And these, are houses of Game of Throne. House Stark, Ned Stark. House
+Lannister, she is the Queen. And House Baratheon, the King. House Targaryen.
+You should know that the Mad King is a targaryen.
 
 Now is time for Ned Stark. I'll share three scenes from Season 1 about Ned
-Stark, and analyze the quality or characteristics of Ned Stark, tell you guys
-why I like this character. And after that, I'll compare him to three other
-characters to illustrate why he is destined to fail and die.
+Stark, and analyze the characteristics of Ned Stark, tell you guys why I like
+this character. And after that, I'll compare him to three other characters to
+illustrate why he is destined to fail and die.
 
 Scene one, in the frontier of Winterfell, close to Castle Black, the northest
-part of Westeros. Ned Stark sentenced a man to die. This man is a guardsman in
-the night's watch and a deserter. His comrades were killed by white walkers
+part of Westeros. Ned Stark sentenced the man to die. This man is a guardsman
+in the night's watch and a deserter. His comrades were killed by white walkers
 (the walking dead). Ned did his duty and executed the man. I think Ned in his
-heart is a merciful man and believes what the man's words ("He is talking
-madness").  But as the lord of Winterfell. Law is law. He has no choice but to
-commit his duty. Furthermore, he asked his son (here, this boy) to watch the
-execution. He wants his son to be a calm and straight man as he is.
+heart is a merciful man, but as the lord of Winterfell, law is law. He has no
+choice but to commit his duty. Furthermore, he asked his son (here, this boy)
+to watch the execution. He wants his son to be a calm and straight man as he
+is.
 
 Scene two, it's the small council of the king. And this time, they are arguing
 about how to deal with Daenerys Targaryen, who is pregnant now. And may cross
@@ -201,52 +198,63 @@ kill Daenerys at this time.
 
 First is the Master of Whisperers, Varys, sometimes called "the Spider", says
 the country must sometimes do vile, terrible, unfair, injustice things for the
-good of the realm. Then Grand Maester Pycelle, the old man over there, says if
-she leads a Dothraki army coming for us, more people will die. For us,
-assassinating Daenerys is not just wiser, but also kinder. This can save more
-people from dying in the possible war in the future. Lord Renly, Master of
-Laws, says "we should have them both killed years ago!" Last, Master of Laws,
-Petyr Baelish, known as the little finger, thinks it's not a big thing. Just
-get it over with and be done with it. Why not just kill this girl?
+good of the realm.
 
-No matter how, King Robert insist assassinating Daenerys. And Ned disagrees.
-Finally, Ned quited his job as the Hand of the King, and went away.
+Then Grand Maester Pycelle, the old man over there, says if she leads a
+Dothraki army coming for us, more people will die. For us, assassinating
+Daenerys is not just wiser, but also kinder. This can save more people from
+dying in the possible war in the future.
 
-Ned Stark is an honorable man, too good for this kind of vile thing. His
-discipline makes too straight to bend.
+Lord Renly, Master of Laws, says "we should have them both killed years ago!"
+
+Last, Master of Laws, Petyr Baelish, known as the little finger, thinks it's
+not a big thing. Just get it over with and be done with it. Why not just kill
+this girl?
+
+No matter how, Ned resuses take any part in. Finally, he quited his job as the
+Hand of the King, and went away.
+
+He is an honorable man, too good for this kind of vile thing. His discipline
+makes him too straight to bend.
 
 Scene three. In the dungeon. Ned is arrested for treason, which of course is a
 made-up sentence. He has a conversation with Varys, the Spider. Varys wants Ned
-to confess his treason and kneel to the Queen. Ned? No! You want me to serve
-the woman who murdered my King, who butchered my men, who crippled my son? Ned
-will never proclaim Joffrey as the true heir. Here you can see the conficts.
-Ned is too straight as a man, who will not yield to anything. Varys is more
-flexible and claims to serve the realm. Ned never take his life as some
-precious thing, and would not trade his honor for a few more years life.  If
-you've seen some Spartacus-like films or something like that, you'll understand
-what these warriors, fighters, Gladiators treasure is glorious.
+to confess his treason and kneel to the Queen. Ned? No!
 
-Then Ned continus, You grew up with actors. You learned their craft and you
-learned it well.
+> You want me to serve the woman who murdered my King, who butchered my men,
+> who crippled my son?
 
-But I grew up with soldiers, I learned how to die a long time ago. And in the
-end, Ned died.
+And he will never proclaim Joffrey as the true heir. Here you can see the
+conficts.  Ned is too straight as a man, who will not yield to anything. Varys
+is more flexible and claims to serve the realm.
 
-I really like this man and personality. But in my opinion, his death is not
+Ned never take his life as some precious thing, and would not trade his honor
+for a few more years life. If you've seen some Spartacus-like films, you'll
+understand what these warriors, fighters, Gladiators treasure is -- glorious.
+
+Then Ned continus,
+
+> You grew up with actors. You learned their craft and you learned it well.
+>
+> But I grew up with soldiers, I learned how to die a long time ago.
+
+And finally he died.
+
+I really like this man and his personality. But in my opinion, his death is not
 glorious or honorable at all. He died in a tragedy, died a terrible way. I
 would compare this straight man to three other characters. First is Clyde
 Shelton from The Law Abiding Citizen, second is David Gale from The Life of
 David Gale, third is Javert from the famous Les Miserable. Like Ned, they are
-all straight man. But they have different disteny.
+all straight and disciplined man. But they have different endings.
 
 Law Abiding Citizen tells a story of revenge. Two criminals broken into Clyde
 Shelton's house, killed his daughter, raped his wife, in front of him. Because
-the lawyer made a deal with the criminal, the criminals did not receive the
+the lawyer made a deal with the criminals, the criminals did not receive the
 deserved punishments. So Clyde, used to be a law abiding citizen, decided to
 punish the two criminals in his own way. And beyond that, he wants to destroy
-the justice system. Finally he killed a series of people in the justice system.
-Comparing to Clyde, Ned Stark did not fight back, or maybe it's just he has no
-chance or possibility to do that.
+the justice system. Finally he killed a series of people in the justice system
+and failed, and died.  Comparing to Clyde Shelton, Ned Stark did not fight
+back. Or maybe it's just he has no chance or possibility to do that.
 
 The Life of David Gale. Gale is a professor and advocate to abanden the death
 penalty. But He and his coworkers can't persuade the mayer. So he faked a
@@ -257,15 +265,16 @@ trick to gather supports from other people.
 
 (The dream cast in concert.)
 
-Les Miserable, original by Victor Hugo, has a character called Javert, who is a
-straight man too, when he realize that Jean Valjean is not real bad person. He
-was confused, struggling for a "WHY".  Finally, He jumped the river. Comparing
-the Jevart, Ned's death is not noble, he was executed (decapitated) in public,
-for treason.  What a hilarious and pathetic death.
+Les Miserable, originally by Victor Hugo, is a famous musical. It has a
+character called Javert, who is a straight man too, when he realize that Jean
+Valjean is not real bad person. He was confused, struggling for a "WHY".
+Finally, He jumped the river. Comparing the Jevart, Ned's death is not noble,
+he was executed (decapitated) in public, for treason.  What a hilarious and
+pathetic death.
 
-But don't get me wrong, I really like this character, like this straight man. I
-just feel bad when he did nothing when approaching death. No fight, no glory.
-Not honorable.
+But don't get me wrong, I really like this character, like this straight man,
+like his discipline. I just feel bad when he did nothing when approaching
+death. No fight, no glory.  And not honorable.
 
 ---
 

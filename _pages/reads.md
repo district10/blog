@@ -13,15 +13,57 @@ V/\n#. ?kbzf
 <div class="reads">
 
 #. &#x2610;
+#. &#x2610; [DARPA 开始研发新一代的垂直起降飞机](http://cn.engadget.com/2016/03/04/darpa-unveils-its-next-vtol-aircraft-concept/?ncid=rss_truncated)
+:   ?
+    :   天网的背景音乐……
+#. &#x2610; [Dwarf Fortress - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dwarf_Fortress)
+#. &#x2610; [Stabyourself.net - Mari0](http://stabyourself.net/mari0/#download)
+#. &#x2610; [Roguelike - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Roguelike)
+#. &#x2610; [Metal Slug - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Metal_Slug)
+:   ?
+    :   ![](https://en.wikipedia.org/wiki/Metal_Slug#/media/File:Metal_Slug_%28cover%29.jpg)
+
+        Super Vehicle-001: Metal Slug (メタルスラッグ Metaru Suraggu), more
+        commonly known as simply Metal Slug, is a **run and gun video game**
+        developed and originally released by Nazca Corporation and later
+        published by SNK. It was originally released in 1996 for the Neo Geo
+        MVS arcade platform. The game is widely known for its sense of humor,
+        fluid hand-drawn animation, and fast paced two-player action. It is the
+        first title in the Metal Slug series. It has been ported to the Neo Geo
+        AES, Neo Geo CD, Sega Saturn, PlayStation, Virtual Console, PlayStation
+        Network, iOS, Android and Neo Geo X, and to the Wii, PlayStation
+        Portable and PlayStation 2 (as part of the Metal Slug Anthology).
+#. &#x2610; [Action game - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Action_game)
+#. &#x2610; [Shoot 'em up - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Shoot_%27em_up#Run_and_gun)
+#. &#x2610; [NetHackWiki, the NetHack wiki](https://nethackwiki.com/wiki/Main_Page)
+#. &#x2610; [Metal Slug X (Neo Geo) - The Cutting Room Floor](https://tcrf.net/Metal_Slug_X_(Neo_Geo)#Debug_Mode)
+#. &#x2610; [IBM Research | | Ponder this](https://www.research.ibm.com/haifa/ponderthis/index.shtml)
+#. &#x2610; [Archive — IPSC](http://ipsc.ksp.sk/archive)
+#. &#x2610; [alt.org - Public NetHack Server](https://alt.org/nethack/)
+#. &#x2610; [twitter/typeahead.js: typeahead.js is a fast and fully-featured autocomplete library](https://github.com/twitter/typeahead.js)
+:   ?
+    :   用来替换掉 autocomplete
+#. &#x2610; [崔添翼 § 翼若垂天之云 › 谁能看出这是个文科生？——关于matrix67](http://cuitianyi.com/blog/%e8%b0%81%e8%83%bd%e7%9c%8b%e5%87%ba%e8%bf%99%e6%98%af%e4%b8%aa%e6%96%87%e7%a7%91%e7%94%9f%ef%bc%9f%e2%80%94%e2%80%94%e5%85%b3%e4%ba%8ematrix67/)
+#. &#x2610; [把梦想“码”进现实 ——访计算机学院2013届校友崔添翼-学院动态-浙江大学计算机科学与技术学院中文站](http://www.cs.zju.edu.cn/chinese/redir.php?catalog_id=101754&object_id=133940)
+#. &#x2610; [值得推荐的C/C++框架和库 - Lippi-浮生志](http://coolshell.info/blog/2014/12/c-open-project.html)
+#. &#x2610; [Qt 学习之路 2 | DevBean's World - Part 2](http://www.devbean.net/category/qt-study-road-2/page/2/)
+#. &#x2610; [解读 Rob Pike 编写的正则表达式程序 - 开源中国社区](http://www.oschina.net/translate/regular-expression-matcher-code-by-rob-pike?cmp)
+#. &#x2610; [Tutorials - perldoc.perl.org](http://perldoc.perl.org/index-tutorials.html)
+#. &#x2610; [perlreftut - perldoc.perl.org](http://perldoc.perl.org/perlreftut.html)
+#. &#x2610; [你所读的计算机科学方向，有哪些不错的讲义（Notes）？ - 书籍推荐 - 知乎](http://www.zhihu.com/question/38300204)
+#. &#x2610; [6.858 / Fall 2014 / Schedule](http://css.csail.mit.edu/6.858/2014/schedule.html)
+#. &#x2610; [CSCI-UA.0202: Operating Systems (Undergrad)](http://www.cs.nyu.edu/~mwalfish/classes/15sp/index.html)
+#. &#x2610; [cirosantilli/cpp-cheat](https://github.com/cirosantilli/cpp-cheat)
+#. &#x2610; [cirosantilli/linux-cheat](https://github.com/cirosantilli/linux-cheat)
+#. &#x2610; [java - Why is processing a sorted array faster than an unsorted array? - Stack Overflow](http://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-an-unsorted-array)
 #. &#x2610; [VIM: index](http://man.lupaworld.com/content/manage/vi/doc/)
 #. &#x2610; [shell - How to run a series of vim commands from command prompt - Stack Overflow](http://stackoverflow.com/questions/23235112/how-to-run-a-series-of-vim-commands-from-command-prompt)
+:   ?
+    :   ```bash
+        for %a in (A,B,C,D) do vim -c ":g/^\s*$/d" -c "<another command>" %a.txt
+        ```
 
-```bash
-for %a in (A,B,C,D) do vim -c ":g/^\s*$/d" -c "<another command>" %a.txt
-```
-
-`:help bufdo`
-
+        `:help bufdo`
 #. &#x2610; [Vim Regular Expressions 101](http://www.vimregex.com/)
 #. &#x2610; [Search patterns - Vim Tips Wiki - Wikia](http://vim.wikia.com/wiki/Search_patterns)
 #. &#x2610; [Org Mode - Organize Your Life In Plain Text!](http://doc.norang.ca/org-mode.html)
@@ -213,7 +255,9 @@ for %a in (A,B,C,D) do vim -c ":g/^\s*$/d" -c "<another command>" %a.txt
         动潜意识学习一类的商品也都是骗人的。即使我们主动去锻炼一种能力，该项能
         力也未必能够得到提升。
 #. &#x2610; [Choosing an HTTP Status Code — Stop Making It Hard | Racksburg](http://racksburg.com/choosing-an-http-status-code/)
-#. &#x2610; [聪明书签](http://fatduck.org/smartbookmark.html)
+#. &#x2611; [聪明书签](http://fatduck.org/smartbookmark.html)
+:   ?
+    :   ![](http://fatduck.org/images/smartbookmark2.jpg)
 #. &#x2610; [Casio F-91W: The strangely ubiquitous watch - BBC News](http://www.bbc.com/news/magazine-13194733)
 #. &#x2610; [如果他玩微博，秒杀一切段子手 - 简书](http://www.jianshu.com/p/12abee0e372e#)
 :   ?
@@ -2616,8 +2660,10 @@ set ignorecase
         ```
 
         `*.o` &rarr; `.a`: `ar rcs my_library.a file1.o file2.o`{.bash}
-          ~ `r` says insert the given object files in to the archive (replacing any older versions of the same thing)
-          ~ `c` says create the archive if it isn't already there (normally this happens anyway, but this option suppresses the warning).
+          ~ `r` says insert the given object files in to the archive
+            (**replacing** any older versions of the same thing)
+          ~ `c` says create the archive if it isn't already there (normally
+            this happens anyway, but this option suppresses the warning).
           ~ `s` says to write an object-file index into the archive.
 
         ```bash
@@ -2653,8 +2699,8 @@ set ignorecase
         #. [Linux Tutorial - Static, Shared Dynamic and Loadable Linux Libraries](http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html)
         #. [Shared Libraries](http://www.tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html)
 
-#. &#x2610; [Duff's device - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Duff%27s_device)
-#. &#x2610; [无插件Vim编程技巧 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/11312.html)
+#. &#x2611; [Duff's device - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Duff%27s_device)
+#. &#x2611; [无插件Vim编程技巧 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/11312.html)
 :   should know
     :   ```plain
         :E
@@ -2726,13 +2772,15 @@ set ignorecase
 
         #. [Vim的分屏功能 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/1679.html)
 
-
 #. &#x2611; [橡皮鸭程序调试法 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/1719.html)
 :   小浣熊方法、Feynman 方法
     :   #. 为什么这个方法要叫做橡皮鸭呢？因为橡皮鸭子是西方人在泡澡时最喜欢玩的一个小玩具
         #. **Once a problem is described in sufficient detail, its solution is obvious.**
 
 #. &#x2610; ~~[非常不错的编程技术教程 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/240.html)~~
+:   ?
+    :   most of them are out of dated and not have valid access.
+
 #. &#x2611; [c++ - Adding Q_OBJECT macro gives "unresolved external error" in QThread inherited class - Stack Overflow](http://stackoverflow.com/questions/20380017/adding-q-object-macro-gives-unresolved-external-error-in-qthread-inherited-cla)
 :   第一种！半天折腾，然后自动就好了……shit……
     :   In this case this error may accrue only if moc tool didn't create meta data for this class. This can happen in two cases:

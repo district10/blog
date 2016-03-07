@@ -5,7 +5,33 @@
 Notes | 笔记
 ============
 
-#. &#x2610;
+<link rel="stylesheet" href="jquery-ui.css">
+<link rel="stylesheet" href="font-awesome.min.css">
+<style>
+.tzx-tabs ul li a:hover {
+    border-bottom: none;
+}
+pre {
+    font-size: 80%;
+}
+</style>
+
+<!--
+<div class="tzx-tabs">
+* [](#)
+* [](#)
+
+<div id="">
+</div>
+
+~~~ {# .c}
+~~~
+</div>
+-->
+
+<!-- *************************************************************************** -->
+
+fatality `[fə'tæləti]`: n. 死亡；宿命；致命性；不幸；灾祸
 
 ```css
 article hr::after {
@@ -21,24 +47,23 @@ article hr {
 }
 ```
 
-二零一五年六月五日，我把知乎上的「有哪些比较实用又有逼格的 App？」這一問題中的別字「逼」改成了正字「屄」。
+markdown blog: `<a id="id"></a>`, then use `url#id`
 
-二零一五年十一月六日，我收到知乎管理員私信：
+把「逼格」改爲「屄格」不是「惡意編輯」。把屄格這樣一個氣質低俗的詞柔化、諱飾成
+「逼格」，造成「其實沒有那麼難聽」的假象，繼續鼓勵人們使用，纔是真正的大惡。因
+此禁言，誠爲黑白顛倒。做出這一決策的知乎管理員應該爲此感到羞恥。
 
-    你的帐号因为对问题有哪些比较实用又有逼格的 App？恶意编辑已被禁言，禁言的帐号将在 1 天后恢复正常使用。查看详情
+---
 
-把「逼格」改爲「屄格」不是「惡意編輯」。把屄格這樣一個氣質低俗的詞柔化、諱飾成「逼格」，造成「其實沒有那麼難聽」的假象，繼續鼓勵人們使用，纔是真正的大惡。因此禁言，誠爲黑白顛倒。做出這一決策的知乎管理員應該爲此感到羞恥。
-
-
-
-
-# 去掉 QDockWidget 的标题栏
+去掉 QDockWidget 的标题栏
 
 ```cpp
 QWidget* titleBar = mPropertyWindow->titleBarWidget();
 mPropertyWindow->setTitleBarWidget( new QWidget() );
 delete titleBar;
 ```
+
+---
 
 QPixmap 与 HBITMAP、HICON 互转
 
@@ -82,9 +107,18 @@ $B = \frac{top + bottom}{top - bottom}$
 $C = -\frac{farVal + nearVal}{farVal - nearVal}$
 $D = -\frac{2farVal \times nearVal}{farVal - nearVal}$
 
-Typically, the matrix mode is `GL_PROJECTION`, and $(left, bottom, -nearVal)$ and $(right, top, -nearVal)$ specify the points on the near clipping plane that are mapped to the lower left and upper right corners of the window, assuming that the eye is located at (0, 0, 0).  - farVal specifies the location of the far clipping plane.  Both nearVal and farVal must be positive.
+Typically, the matrix mode is `GL_PROJECTION`, and $(left, bottom, -nearVal)$
+and $(right, top, -nearVal)$ specify the points on the near clipping plane that
+are mapped to the lower left and upper right corners of the window, assuming
+that the eye is located at (0, 0, 0).  - farVal specifies the location of the
+far clipping plane.  Both nearVal and farVal must be positive.
 
-Depth buffer precision is affected by the values specified for nearVal and farVal.  The greater the ratio of farVal to nearVal is, the less effective the depth buffer will be at distinguishing between surfaces that are near each other.  If r = farVal nearVal roughly log 2 ⁡r bits of depth buffer precision are lost.  Because r approaches infinity as nearVal approaches 0, nearVal must never be set to 0.
+Depth buffer precision is affected by the values specified for nearVal and
+farVal.  The greater the ratio of farVal to nearVal is, the less effective the
+depth buffer will be at distinguishing between surfaces that are near each
+other.  If r = farVal nearVal roughly log 2 ⁡r bits of depth buffer precision
+are lost.  Because r approaches infinity as nearVal approaches 0, nearVal must
+never be set to 0.
 
 ![A view frustum](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/ViewFrustum.svg/330px-ViewFrustum.svg.png)
 
@@ -143,6 +177,7 @@ bool getProjectionMatrixAsPerspective(double& fovy,double& aspectRatio,
 
 经过透视投影后，每个顶点的x和y坐标还要除以其z坐标，这个除法是产生透视收缩的方法
 
+```cpp
 osgUtil::PolytopeIntersector // 具体不同算法实现类
 osgUtil::IntersectionVisitor //用来遍历节点树的每个节点
 osg::Node * mNode;  //  你要做相交测试的根节点
@@ -152,24 +187,17 @@ intersector->setIntersectionLimit(osgUtil::Intersector::LIMIT_ONE_PER_DRAWABLE);
 osgUtil::IntersectionVisitor iv( intersector.get() );
 
 mRootNode->accept(iv);
-
+```
 
 总结：
 
-1. 在osg::ref_ptr<osg::Node>node = new osg::Node;  其中node 为osg::ref_ptr的对象，而不是指针。
+1. 在 `osg::ref_ptr<osg::Node>node = new osg::Node;` 其中 node 为 `osg::ref_ptr` 的对象，而不是指针。
+2. OSG 中新创建的场景对象建议使用 `ref_ptr` 进行内存分配和管理
+3. 对于不使用 `ref_ptr` 的对象，引用计数值变得没有意义，并且它无法自动从场景中卸载。
+4. 新建对象作为函数结果返回时，应该返回 `release()`。并尽快引入到别的场景中，否则发生内存泄露
+5. 只有 `osg::ref_ptr` 类来管理 osg 对象的引用计数，其他脱离了（和osg::ref_ptr对象无关的操作）osg::ref_ptr 管理的操作如：赋值等将不会对引用计数产生影响
 
-2. OSG 中新创建的场景对象建议使用ref_ptr 进行内存分配和管理
-
-3. 对于不使用ref_ptr 的对象，引用计数值变得没有意义，并且它无法自动从场景中卸载。
-
-4. 新建对象作为函数结果返回时，应该返回release()。并尽快引入到别的场景中，否则发生内存泄露
-
-5. 只有osg::ref_ptr 类 来管理 osg对象的引用计数，其他脱离了（和osg::ref_ptr对象无关的操作）osg::ref_ptr 管理的操作如：赋值等将不会对引用计数产生影响
-
-
-
-inline void setNodeMask(NodeMask nm) { _nodeMask = nm; }
-
+`inline void setNodeMask(NodeMask nm) { _nodeMask = nm; }`{.cpp}
 
 ```cpp
  osg::ref_ptr <osg::MatrixTransform> mat=new osg::MatrixTransform();
@@ -233,8 +261,6 @@ int main()
     //创建一个根节点，并将场景数据、模型赋予节点
     osg::ref_ptr<osg::Node> node =createModel();
 
-
-
     //添加场景数据并添加光源
     shadowedScene->addChild(createLight(node.get()));
     shadowedScene->addChild(node.get());
@@ -254,16 +280,27 @@ int main()
 }
 ```
 
-其实简而言之  就是 glOrtho 设置相片的大小，glViewport指定相框大小。如果glOrtho指定的相片小了，那么放到同等大小的相框上就相当于放大了。
+其实简而言之  就是 `glOrtho` 设置相片的大小，`glViewport` 指定相框大小。如果 `glOrtho`
+指定的相片小了，那么放到同等大小的相框上就相当于放大了。
 
-而如果glOrtho指定的相片大了，放到同等大小的相框上  相当于缩小了场景。
+而如果 `glOrtho` 指定的相片大了，放到同等大小的相框上相当于缩小了场景。
 
+在 `OpenGL` 中有两个比较重要的投影变换函数，`glViewport` 和 `glOrtho`。
 
-在OpenGL中有两个比较重要的投影变换函数，glViewport和glOrtho。
+`glOrtho` 是创建一个正交平行的视景体。 一般用于物体不会因为离屏幕的远近而产生大小
+的变换的情况。比如，常用的工程中的制图等。需要比较精确的显示。 而作为它的对立情
+况, `glFrustum` 则产生一个透视投影。这是一种模拟真是生活中，人们视野观测物体的真实
+情况。例如：观察两条平行的火车到，在过了很远之后，这两条铁轨是会相交于一处的。
+还有，离眼睛近的物体看起来大一些，远的物体看起来小一些。
 
-glOrtho是创建一个正交平行的视景体。 一般用于物体不会因为离屏幕的远近而产生大小的变换的情况。比如，常用的工程中的制图等。需要比较精确的显示。 而作为它的对立情况, glFrustum则产生一个透视投影。这是一种模拟真是生活中，人们视野观测物体的真实情况。例如：观察两条平行的火车到，在过了很远之后，这两条铁轨是会相交于一处的。还有，离眼睛近的物体看起来大一些，远的物体看起来小一些。
-
-glOrtho(left, right, bottom, top, near, far)， left表示视景体左面的坐标，right表示右面的坐标，bottom表示下面的，top表示上面的。这个函数简单理解起来，就是一个物体摆在那里，你怎么去截取他。这里，我们先抛开glViewport函数不看。先单独理解glOrtho的功能。 假设有一个球体，半径为1，圆心在(0, 0, 0)，那么，我们设定glOrtho(-1.5, 1.5, -1.5, 1.5, -10, 10);就表示用一个宽高都是3的框框把这个球体整个都装了进来。  如果设定glOrtho(0.0, 1.5, -1.5, 1.5, -10, 10);就表示用一个宽是1.5， 高是3的框框把整个球体的右面装进来;如果设定glOrtho(0.0, 1.5, 0.0, 1.5, -10, 10)；就表示用一个宽和高都是1.5的框框把球体的右上角装了进来。上述三种情况可以见图：
+`glOrtho(left, right, bottom, top, near, far)`， left 表示视景体左面的坐标，right
+表示右面的坐标，bottom 表示下面的，top 表示上面的。这个函数简单理解起来，就是一个
+物体摆在那里，你怎么去截取他。这里，我们先抛开 glViewport 函数不看。先单独理解
+glOrtho 的功能。 假设有一个球体，半径为 1，圆心在 (0, 0, 0)，那么，我们设定
+`glOrtho(-1.5, 1.5, -1.5, 1.5, -10, 10);` 就表示用一个宽高都是 3 的框框把这个球体整
+个都装了进来。  如果设定 `glOrtho(0.0, 1.5, -1.5, 1.5, -10, 10);` 就表示用一个宽是
+1.5， 高是 3 的框框把整个球体的右面装进来;如果设定 `glOrtho(0.0, 1.5, 0.0, 1.5,
+-10, 10);` 就表示用一个宽和高都是1.5的框框把球体的右上角装了进来。
 
 ```cpp
 if(root->getChild(i)->getName().compare("Hello") == 0)
@@ -282,7 +319,6 @@ Refs
 #. [OSG 中 相交测试 模块 工作流程及原理 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/37923417)
 #. [OSG 智能指针陷阱 总结 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/25311989)
 
-
 Read more
 
 #. [OSG 自定义数据类型 关键帧动画 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/12651017)
@@ -290,14 +326,7 @@ Read more
 #. [osg 路径 动画 效果 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/8248157)
 #. [osg 漫游器 代码框架 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/8249501)
 
-
-
-
-
-
-
-
-
+---
 
 ```lisp
 (defun smart-open-line ()
@@ -378,7 +407,6 @@ With a prefix ARG always prompt for command to use."
     (indent-region (region-beginning) (region-end))))
 ```
 
-
 ```elisp
 (electric-indent-mode +1)
 ```
@@ -392,7 +420,6 @@ With a prefix ARG always prompt for command to use."
 (global-set-key (kbd "C-c t") 'visit-term-buffer)
 (global-set-key [(control shift up)]  'move-line-up)
 (global-set-key [(control shift down)]  'move-line-down)
-
 ```
 
 ```elisp
@@ -477,53 +504,51 @@ Doesn't mess with special buffers."
 #. [Highlight matching parentheses - Emacs Redux](http://emacsredux.com/blog/2013/04/01/highlight-matching-parentheses/)
 #. [Highlight current line - Emacs Redux](http://emacsredux.com/blog/2013/04/02/highlight-current-line/)
 
+---
 
+`sudo update-alternatives –config x-terminal-emulator`{.bash}
+`scrot # caputre screenshot`{.bash}
 
-sudo update-alternatives –config x-terminal-emulator
-scrot # caputre screenshot
+i3
 
-X-f: fullscreen
+:   ```plain
+    X-f: fullscreen
+    arrow keys: get focus
+    e, s, w
+    X-e: toggle
+    X-s: stacked
+    X-w: tabbed, X-left, X-right
+    shift r: restart i3 inplace
+    ```
 
-arrow keys: get focus
-
-e, s, w
-
-X-e: toggle
-X-s: stacked
-X-w: tabbed, X-left, X-right
-
-shift r: restart i3 inplace
-
+```
 %s/重车,运营/运营,重车/g
-
 %s/,超速报警//g
 %s/,登录//g
 g/,设备工作正常/d
 g!/ACC/d
+```
 
-删除中文字符
-:%s/\v[^\x00-\xff]+//g
-
- 4
-down vote
-
+删除中文字符: `:%s/\v[^\x00-\xff]+//g`
 
 You could use more expressive version of substitution you employed when assigning OBJECTS
 
-OBJECTS=$(SOURCES:%.cpp=obj/%.o)
+`OBJECTS=$(SOURCES:%.cpp=obj/%.o)`{.makefile}
 
 or use a standard text transformation function
 
-OBJECTS=$(addprefix obj/,$(SOURCES:.cpp=.o))
+`OBJECTS=$(addprefix obj/,$(SOURCES:.cpp=.o))`{.makefile}
 
+<div class="tzx-tabs">
+* [refs](#line14550)
+* [codes](#line14551)
 
+<div id="line14550">
+* [dynamic_cast Operator](https://msdn.microsoft.com/en-us/library/cby9kycs.aspx)
+* [Casting](https://msdn.microsoft.com/en-us/library/x9wzb5es.aspx)
+</div>
 
-[dynamic_cast Operator](https://msdn.microsoft.com/en-us/library/cby9kycs.aspx)
-
-[Casting](https://msdn.microsoft.com/en-us/library/x9wzb5es.aspx)
-
-
-```cpp
+~~~ {#line14551 .c}
 // static_cast_Operator.cpp
 // compile with: /LD
 class B {};
@@ -550,7 +575,6 @@ void f(B* pb) {
    D* pd1 = dynamic_cast<D*>(pb);
    D* pd2 = static_cast<D*>(pb);
 }
-
 
 // static_cast_Operator_3.cpp
 // compile with: /LD /GR
@@ -607,19 +631,18 @@ void f() {
    D* pd = dynamic_cast<D*>(pb);   // ok: pb actually points to a D
    D* pd2 = dynamic_cast<D*>(pb2);   // pb2 points to a B not a D
 }
+~~~
+</div>
 
+* The emoji repository has a `CNAME` file with the domain `emoji.muan.co`. It
+  is owned by muan, whose User Pages repository has a `CNAME` file with the
+  domain `muan.co`.
+* The Project Pages site at `muan.github.io/emoji` redirects to `muan.co/emoji`
+  and is also available at `emoji.muan.co`.
 
-```
+a **type qualifier** is not allowed on a static member function.
 
-
-
-The emoji repository has a CNAME file with the domain emoji.muan.co. It is owned by muan, whose User Pages repository has a CNAME file with the domain muan.co.
-
-    The Project Pages site at muan.github.io/emoji redirects to muan.co/emoji and is also available at emoji.muan.co.
-
-
-a type qualifier is not allowed on a static member function.
-
+```plain
 文件夹 PATH 列表
 卷序列号为 00000200 BC08:BFBA
 D:.
@@ -687,11 +710,10 @@ D:.
 └─tryouts
     └─StackedBoxes
         └─images
+```
 
-'The enjoyment of one's tools is an essential ingredient of successful work.' -- Donald E. Knuth
-
-[崔添翼 § 翼若垂天之云 › 谁能看出这是个文科生？——关于matrix67](http://cuitianyi.com/blog/%e8%b0%81%e8%83%bd%e7%9c%8b%e5%87%ba%e8%bf%99%e6%98%af%e4%b8%aa%e6%96%87%e7%a7%91%e7%94%9f%ef%bc%9f%e2%80%94%e2%80%94%e5%85%b3%e4%ba%8ematrix67/)
-[把梦想“码”进现实 ——访计算机学院2013届校友崔添翼-学院动态-浙江大学计算机科学与技术学院中文站](http://www.cs.zju.edu.cn/chinese/redir.php?catalog_id=101754&object_id=133940)
+> 'The enjoyment of one's tools is an essential ingredient of successful work.'
+> -- Donald E. Knuth
 
 Better Emacs shortcut for Neo users:
 
@@ -704,12 +726,13 @@ Better Emacs shortcut for Neo users:
 | previous word | X-s(ESC) X-d(Backspace) |
 | go to previous word | X-s(ESC) b |
 
-Just in case this sounds annoying, the major advantage is that you can always get back a previous state. In most editors, undoing several changes and then accidentally typing a character would leave you 'stranded' with no way to redo what you had undone. Emacs makes this trivial. – phils
+Just in case this sounds annoying, the major advantage is that you can always
+get back a previous state. In most editors, undoing several changes and then
+accidentally typing a character would leave you 'stranded' with no way to redo
+what you had undone. Emacs makes this trivial. – phils
 
-
-update.
-
-/ə/和/ʌ/这两个发音，在语言学上有区别，在发音中没区别，再说一遍，麻痹没区别！！！！！！！！！！！！！
+`/ə/` 和 `/ʌ/` 这两个发音，在语言学上有区别，在发音中没区别，再说一遍，麻痹没区
+别！！！！！！！！！！！！！
 
 朙（míng）月拼音
 
@@ -743,107 +766,176 @@ you flinched!
 - [莲枝专栏–来作笔记吧。 | LaTeX工作室](http://www.latexstudio.net/archives/4898)
 - [乌普萨拉大学的科技海报主题模板 | LaTeX工作室](http://www.latexstudio.net/archives/3012)
 
+真爱其实叫牺牲—献给永远的鼬 (by zak)
 
-### 真爱其实叫牺牲—献给永远的鼬
+:   ```plain
+    修罗之道是什么,它通往何方?在火影忍者中,有如此一人,他便在此道上踏歌而行.在他
+    之后,留下了无尽之血与泪水；在他前方,只有看不见尽头的黑暗；而他红中泛黑的双
+    瞳中,映射出了太多的死亡与破灭。
 
- 修罗之道是什么,它通往何方?在火影忍者中,有如此一人,他便在此道上踏歌而行.在他之后,留下了无尽之血与泪水；在他前方,只有看不见尽头的黑暗；而他红中泛黑的双瞳中,映射出了太多的死亡与破灭。
+    未来没有救赎,只有灭亡,抱此觉悟,宇智波鼬------即使在宇智波这个原本就自悲剧中
+    诞生的家族之中也是最具悲剧色彩的男人, 背负了太多诅咒与怨恨, 在名为终结的黑
+    色的华尔兹舞曲中艰难而孤傲的独舞.
 
-　　未来没有救赎,只有灭亡,抱此觉悟,宇智波鼬------即使在宇智波这个原本就自悲剧中诞生的家族之中也是最具悲剧色彩的男人, 背负了太多诅咒与怨恨, 在名为终结的黑色的华尔兹舞曲中艰难而孤傲的独舞.
+    其实,他只是一位兄长，他只想保护自己的弟弟，就算被自己的弟弟憎恨也无所谓，就
+    算被弟弟杀掉也无所谓。“我愚蠢的弟弟啊，如果你想杀我的话，就憎我恨我吧，不断
+    地逃，不断地逃只是为了活着而活着，然后，等你哪一天得到了和我相同的眼睛，就
+    来到我面前吧。”他只想让弟弟活下去，便只得噙着泪水这样冷酷的说道，在乱世之中
+    ，这是唯一可以让弟弟强大起来的办法—给予他杀死自己的目标，让他把仇恨全部发泄
+    到自己的身上。
 
-      其实,他只是一位兄长，他只想保护自己的弟弟，就算被自己的弟弟憎恨也无所谓，就算被弟弟杀掉也无所谓。“我愚蠢的弟弟啊，如果你想杀我的话，就憎我恨我吧，不断地逃，不断地逃只是为了活着而活着，然后，等你哪一天得到了和我相同的眼睛，就来到我面前吧。”他只想让弟弟活下去，便只得噙着泪水这样冷酷的说道，在乱世之中，这是唯一可以让弟弟强大起来的办法—给予他杀死自己的目标，让他把仇恨全部发泄到自己的身上。
+    其实,他只是一名忍者，忍者本来就是活在黑暗中的，鼬更把这一忍道贯彻的淋漓尽致
+    。自我牺牲是忍者的本分，这便是鼬的信念。他所渴望的，是村子的兴盛，是整个忍
+    者世界的和平，也许我们看来这个词过于恶俗，但鼬却义无反顾的为之奋斗。他亲手
+    为自己的一族落下了帷幕，是为了避免更惨痛的战争，所谓战争…就一定伴随着双方的
+    死亡伤病和痛苦… 但鼬宁愿独自吞下着苦果，他这么做了。在那个月圆之夜，他亲自
+    动手将自己的族人全部抹杀，唯独他的弟弟，他下不了手。然后，为了不让弟弟仇恨
+    自己的村子，他说了那样的话，他宁愿一个人背负弟弟所有的仇恨。
 
-     其实,他只是一名忍者，忍者本来就是活在黑暗中的，鼬更把这一忍道贯彻的淋漓尽致。自我牺牲是忍者的本分，这便是鼬的信念。他所渴望的，是村子的兴盛，是整个忍者世界的和平，也许我们看来这个词过于恶俗，但鼬却义无反顾的为之奋斗。他亲手为自己的一族落下了帷幕，是为了避免更惨痛的战争，所谓战争…就一定伴随着双方的死亡伤病和痛苦… 但鼬宁愿独自吞下着苦果，他这么做了。在那个月圆之夜，他亲自动手将自己的族人全部抹杀，唯独他的弟弟，他下不了手。然后，为了不让弟弟仇恨自己的村子，他说了那样的话，他宁愿一个人背负弟弟所有的仇恨。
+    鼬，这个顶级的幻术高手，给自己的弟弟制造了一个最大的幻术，单纯的佐助，自以
+    为自己的写轮眼能看穿一切幻术，但是，他的眼睛，没能看破鼬的任何真相，鼬所制
+    造的幻象，他一个都没能看穿。“人都是依靠自己的知识和认识又被其束缚的活着的，
+    还将其称之为现实，但知识和认识是暧昧不清的东西，那个现实，也许只是镜花水月
+    而已，人都是活在自己的意识世界里，你不这样认为吗？”面对鼬的质问，这个愚蠢的
+    弟弟依然浑然没有觉察到，自己的哥哥是如何的爱自己，被仇恨吞噬的佐助，只想尽
+    早杀掉自己的大哥，报仇雪恨。终于，在这一天，他成功了。
 
-      鼬，这个顶级的幻术高手，给自己的弟弟制造了一个最大的幻术，单纯的佐助，自以为自己的写轮眼能看穿一切幻术，但是，他的眼睛，没能看破鼬的任何真相，鼬所制造的幻象，他一个都没能看穿。“人都是依靠自己的知识和认识又被其束缚的活着的，还将其称之为现实，但知识和认识是暧昧不清的东西，那个现实，也许只是镜花水月而已，人都是活在自己的意识世界里，你不这样认为吗？”面对鼬的质问，这个愚蠢的弟弟依然浑然没有觉察到，自己的哥哥是如何的爱自己，被仇恨吞噬的佐助，只想尽早杀掉自己的大哥，报仇雪恨。终于，在这一天，他成功了。
+    鼬是故意让佐助杀掉自己的，他只想让自己的弟弟活下去，便只能牺牲自己。为了保
+    护自己的村子，他也只能牺牲自己，作为一介罪犯，一个叛徒，而悲惨地死去。他时
+    刻不忘自己的弟弟，自己的村子，甚至整个忍者世界，为了成全大义，只有牺牲自己
+    。
 
-     鼬是故意让佐助杀掉自己的，他只想让自己的弟弟活下去，便只能牺牲自己。为了保护自己的村子，他也只能牺牲自己，作为一介罪犯，一个叛徒，而悲惨地死去。他时刻不忘自己的弟弟，自己的村子，甚至整个忍者世界，为了成全大义，只有牺牲自己。
+    是鼬告诉了我们，自我牺牲才是真爱，这个冷酷的男人一生都没有哭过，只是在灭族
+    的那一天晚上，面对自己的弟弟，落下了悲痛的泪水，没有人知道，这幅冰冷的外表
+    下，是一颗温暖的心，充满爱的心。
 
-    是鼬告诉了我们，自我牺牲才是真爱，这个冷酷的男人一生都没有哭过，只是在灭族的那一天晚上，面对自己的弟弟，落下了悲痛的泪水，没有人知道，这幅冰冷的外表下，是一颗温暖的心，充满爱的心。
+    他死后，没有认为他立碑立传，甚至在许多人看来是大快人心，只有老天为之动容，
+    那淅淅沥沥的雨，或许就是天在哭泣吧！只有他曾经的敌人，斑，给了他最恰当的评
+    价。他对佐助说道：“鼬他，杀害上司，杀害朋友，杀害恋人，杀害父亲，杀害母亲，
+    唯独没有对自己的弟弟动手。心中流淌着血一般的泪水，将自己的全部感情抹杀的男
+    人，却无法对你下手，知道为什么吗·········因为在他心中，你的性命比村子的安危
+    更重要！”
 
-    他死后，没有认为他立碑立传，甚至在许多人看来是大快人心，只有老天为之动容，那淅淅沥沥的雨，或许就是天在哭泣吧！只有他曾经的敌人，斑，给了他最恰当的评价。他对佐助说道：“鼬他，杀害上司，杀害朋友，杀害恋人，杀害父亲，杀害母亲，唯独没有对自己的弟弟动手。心中流淌着血一般的泪水，将自己的全部感情抹杀的男人，却无法对你下手，知道为什么吗·········因为在他心中，你的性命比村子的安危更重要！”
+    “宁愿舍弃名誉而污名缠身，宁愿放弃爱而选择背负仇恨，但即便如此，鼬还是含着笑
+    离开了人世。”
 
-    “宁愿舍弃名誉而污名缠身，宁愿放弃爱而选择背负仇恨，但即便如此，鼬还是含着笑离开了人世。”
+    鼬笑着离开了，了无牵挂的离开了，只留下了唯一的遗言—
 
-     鼬笑着离开了，了无牵挂的离开了，只留下了唯一的遗言—
+    “原谅我，
 
-     “原谅我，
+    佐助，
 
-      佐助，
+    这是
 
-      这是
+    最后一次了
+    ```
 
-      最后一次了``````"
+是命运么，教我如何相信——写给鸣人和佐助 (by zak)
 
-### 是命运么，教我如何相信——写给鸣人和佐助
+:   ```plain
+    一个伴随了我们十年之久的故事，一种在爱与恨中挣扎却无比坚毅的成长，一段用努
+    力和汗水去赢得认可的历程。火影的故事就这样铺陈开来，伴随着我们流逝的青春，
+    刻下磨不灭的印记。
 
-一个伴随了我们十年之久的故事，一种在爱与恨中挣扎却无比坚毅的成长，一段用努力和汗水去赢得认可的历程。火影的故事就这样铺陈开来，伴随着我们流逝的青春，刻下磨不灭的印记。
+                                                                       ——题记
+    两个人，两个完全不同的人。
 
-                                                                                                                 ——题记
+    鸣人，是那样的炽烈，像骄阳一般，温暖着每一个人，影响着每一个人。冲天的金黄
+    的头发，纯粹的蓝色眼眸，带着不变的自信，踏上梦想之路，一步一步跌跌撞撞的走
+    来。阳光下，他静静站立，脸上的笑容，满载着难以言明的自信，灿烂的荡漾开来，
+    将所有的失落，所有的泪水统统抛下。谁能想到，他曾经地多么的寂寞。小小的心灵
+    又怎能承受得住那么都不屑的眼神，明明是想证明自己的，又为什么总是失败？树下
+    的秋千上，他默默的坐着，低垂的头掩饰不住的伤心，与周围同学们毕业的欣喜构成
+    鲜明的对比。与生俱来的自信与乐观又怎甘心如此弱小的活下去，所以他想当火影，
+    为此奋勇前进。他是天生的逐梦者，会为梦想披荆斩棘。
 
-          两个人，两个完全不同的人。
+    而佐助，相对于鸣人而言，就是一块寒冰，冷得让人难以靠近。苍白的脸上看不到任
+    何表情，黑色的眼睛像一潭深不见底的水，你永远也猜不清他在想什么。很多时候，
+    他只是静静的站着，静静的坐着，却让人感到那么的寂寞。他曾经也是个爱笑的孩子
+    啊，谁能想到只是一瞬之间，所有的一切就消失殆尽。快乐的时光再也追不回，曾经
+    的幸福再也找不到，于是憎恨便滋生开，像是罂粟花，绚丽却有毒。他是真正的复仇
+    者，仇恨是他不能释怀的心结，力量才是他真正追求的东西。
 
-          鸣人，是那样的炽烈，像骄阳一般，温暖着每一个人，影响着每一个人。冲天的金黄的头发，纯粹的蓝色眼眸，带着不变的自信，踏上梦想之路，一步一步跌跌撞撞的走来。阳光下，他静静站立，脸上的笑容，满载着难以言明的自信，灿烂的荡漾开来，将所有的失落，所有的泪水统统抛下。谁能想到，他曾经地多么的寂寞。小小的心灵又怎能承受得住那么都不屑的眼神，明明是想证明自己的，又为什么总是失败？树下的秋千上，他默默的坐着，低垂的头掩饰不住的伤心，与周围同学们毕业的欣喜构成鲜明的对比。与生俱来的自信与乐观又怎甘心如此弱小的活下去，所以他想当火影，为此奋勇前进。他是天生的逐梦者，会为梦想披荆斩棘。
+    时间真是个奇怪的东西，默默的流逝，却像可以海浪般席卷一切。
 
-        而佐助，相对于鸣人而言，就是一块寒冰，冷得让人难以靠近。苍白的脸上看不到任何表情，黑色的眼睛像一潭深不见底的水，你永远也猜不清他在想什么。很多时候，他只是静静的站着，静静的坐着，却让人感到那么的寂寞。他曾经也是个爱笑的孩子啊，谁能想到只是一瞬之间，所有的一切就消失殆尽。快乐的时光再也追不回，曾经的幸福再也找不到，于是憎恨便滋生开，像是罂粟花，绚丽却有毒。他是真正的复仇者，仇恨是他不能释怀的心结，力量才是他真正追求的东西。
+    佐助的离开，是鸣人心中的痛。他无数次去追寻，却又无能为力。或许鸣人和佐助的
+    那一战，是两人生命线猛烈的撞击，火花四溅，编织出拭不去的羁绊。
 
-       时间真是个奇怪的东西，默默的流逝，却像可以海浪般席卷一切。
+    时光流逝，将羁绊编织成命运。
 
-      佐助的离开，是鸣人心中的痛。他无数次去追寻，却又无能为力。或许鸣人和佐助的那一战，是两人生命线猛烈的撞击，火花四溅，编织出拭不去的羁绊。
+    佐助杀了大蛇丸，得到了想要的力量，鸣人在自来也死后成为了预言之子；佐助杀了
+    鼬，本以为复了仇，却发现原来一切都只是个阴谋，是个错误；鸣人拯救了村子，成
+    为了英雄，团藏的阴谋却恰巧袭来。成长的路注定不平坦。佐助要向木叶报仇，而鸣
+    人想借机会拯救佐助。两个人已经站到了对立的面上，下次相遇，会是难以挽回的命
+    运吗？
 
-     时光流逝，将羁绊编织成命运。
+    “曾经六道真人宣扬忍宗，将世界引导向和平 ，理想为完成之时，他的大限即将来临
+    。六道仙人见忍宗的力量和意志托付给两个孩子。哥哥具有仙人之“眼”，于是传授给
+    他查克拉的力量和精神力。弟弟天生具有仙人之“肉体“，所以传授给他生命力和身体
+    能量。因为领悟到和平必须要有爱……仙人在弥留之际，不得不决定继任者……但是就是
+    那个决定导致了永恒持续的憎恨诅咒……仙人觉得比起追求力量的哥哥……追求爱的弟弟
+    才是最合适的继任者。作为长男认为自己理所应当继任的 哥哥无法认同仙人的选择……
+    因为憎恨他向弟弟宣战。时间流逝，血缘逐渐疏远，两兄弟的子孙依旧持续战争。哥
+    哥的子孙被称为宇智波，弟弟的子孙被称为千手……我宇智波斑和初代火影千手柱间之
+    间的战斗，也是命运。”(选自火影漫画462集斑所说的话）
 
-     佐助杀了大蛇丸，得到了想要的力量，鸣人在自来也死后成为了预言之子；佐助杀了鼬，本以为复了仇，却发现原来一切都只是个阴谋，是个错误；鸣人拯救了村子，成为了英雄，团藏的阴谋却恰巧袭来。成长的路注定不平坦。佐助要向木叶报仇，而鸣人想借机会拯救佐助。两个人已经站到了对立的面上，下次相遇，会是难以挽回的命运吗？
+    鸣人继承了火的意志，而佐助是宇智波一族的后代。
 
-     “曾经六道真人宣扬忍宗，将世界引导向和平 ，理想为完成之时，他的大限即将来临。六道仙人见忍宗的力量和意志托付给两个孩子。哥哥具有仙人之“眼”，于是传授给他查克拉的力量和精神力。弟弟天生具有仙人之“肉体“，所以传授给他生命力和身体能量。因为领悟到和平必须要有爱……仙人在弥留之际，不得不决定继任者……但是就是那个决定导致了永恒持续的憎恨诅咒……仙人觉得比起追求力量的哥哥……追求爱的弟弟才是最合适的继任者。作为长男认为自己理所应当继任的 哥哥无法认同仙人的选择……因为憎恨他向弟弟宣战。时间流逝，血缘逐渐疏远，两兄弟的子孙依旧持续战争。哥哥的子孙被称为宇智波，弟弟的子孙被称为千手……我宇智波斑和初代火影千手柱间之间的战斗，也是命运。”(选自火影漫画462集斑所说的话）
+    这是宿命吗？
 
-       鸣人继承了火的意志，而佐助是宇智波一族的后代。
+    “千手和宇智波，火的意志和憎恨，鸣人和佐助。你们两个将成为命运选中的另一对兄
+    弟”。”(选自火影漫画462集斑所说的话）
 
-     这是宿命吗？
+    真是宿命吗？
 
-    “千手和宇智波，火的意志和憎恨，鸣人和佐助。你们两个将成为命运选中的另一对兄弟”。”(选自火影漫画462集斑所说的话）
+    我不是个相信宿命的人，更不相信宿命可以决定一切。
 
-      真是宿命吗？
+    还记得当鸣人还被大家歧视时，他努力的要得到大家的认可，他成功了；当鸣人还是
+    个吊车尾时，他努力要变强，他成功了；中忍考试时，他对战信命的宁次，他胜利了
+    。因此他一次一次对命运反抗，正是因为这种反抗，他才走到了今天。难道这一切都
+    只不过是宿命的安排？教我如何相信，如何相信宿命可以强大到让人无法反抗?难道鸣
+    人的执着，鸣人的坚持，佐助的偏执，佐助的憎恨，都不过是上天安排的一场游戏？
+    我不相信！绝不！
 
-      我不是个相信宿命的人，更不相信宿命可以决定一切。
+    宿命么，这么虚无缥缈的东西，不体会过又怎能知道，不反抗又怎么知道不可以？
 
-     还记得当鸣人还被大家歧视时，他努力的要得到大家的认可，他成功了；当鸣人还是个吊车尾时，他努力要变强，他成功了；中忍考试时，他对战信命的宁次，他胜利了。因此他一次一次对命运反抗，正是因为这种反抗，他才走到了今天。难道这一切都只不过是宿命的安排？教我如何相信，如何相信宿命可以强大到让人无法反抗?难道鸣人的执着，鸣人的坚持，佐助的偏执，佐助的憎恨，都不过是上天安排的一场游戏？我不相信！绝不！
+    我不知道最后的结局会怎样。但我相信，就算是宿命，鸣人和佐助也会是破除宿命的
+    人。
 
-     宿命么，这么虚无缥缈的东西，不体会过又怎能知道，不反抗又怎么知道不可以？
-
-     我不知道最后的结局会怎样。但我相信，就算是宿命，鸣人和佐助也会是破除宿命的人。
-
-     所以，请期待下去吧。静静地，期待吧…………
-
-
+    所以，请期待下去吧。静静地，期待吧…………
+    ```
 
 ---
 
+> 废话训练一年，受益持续一生。
 
-废话训练一年，受益持续一生。
-
-埃尔德什十分独持。除了衣食住行这些生活基本要知的事之外，他对很多问题也毫不关心，年青时甚至被人误以为是同性恋者，但其实他无论对异性或是同性都没有兴趣。事实上，他是一个博学的人，对历史了如指掌，但长大后只专注数学，任何其他事情也不管。
-
-[QQ推广](http://shang.qq.com/v3/index.html)
+埃尔德什十分独持。除了衣食住行这些生活基本要知的事之外，他对很多问题也毫不关心
+，年青时甚至被人误以为是同性恋者，但其实他无论对异性或是同性都没有兴趣。事实上
+，他是一个博学的人，对历史了如指掌，但长大后只专注数学，任何其他事情也不管。
 
 Otaku Culture
+
+---
 
 P.L.A.是中国人民解放军（People's Liberation Army)的英文简称。中国人民解放军是中国军事力量的主要组成部分，是巩固人民民主专政的坚强柱石、保卫社会主义祖国的钢铁长城和建设社会主义的重要力量。中国人民解放军现役总兵力为200万人（截至2015年底）
 
 军区管辖范围:
 
-1.北京军区： 北京、河北、内蒙古、山西 俄罗斯、蒙古
-2.沈阳军区： 辽宁、吉林、黑龙江 俄罗斯、朝鲜
-3.济南军区： 山东、河南 黄海对面
-4.南京军区： 江苏、安徽、上海、浙江、江西、福建黄海、东海对面
-5.兰州军区： 甘肃、青海、陕西、宁夏、新疆 蒙古
-6.成都军区： 四川、重庆、贵州、云南、西藏印度、越南、缅甸
-7.广州军区： 广东、广西、海南、湖南、湖北越南、南海对面
+1. 北京军区： 北京、河北、内蒙古、山西 俄罗斯、蒙古
+2. 沈阳军区： 辽宁、吉林、黑龙江 俄罗斯、朝鲜
+3. 济南军区： 山东、河南 黄海对面
+4. 南京军区： 江苏、安徽、上海、浙江、江西、福建黄海、东海对面
+5. 兰州军区： 甘肃、青海、陕西、宁夏、新疆 蒙古
+6. 成都军区： 四川、重庆、贵州、云南、西藏印度、越南、缅甸
+7. 广州军区： 广东、广西、海南、湖南、湖北越南、南海对面
+
+---
 
 ttf 字体安装：`.ttf` 文件放到 `%WINDIR/Fonts` 文件夹即可。
 
 僭越(jiàn yuè)，指超越本份，古时指地位低下的冒用在上的名义或器物等等， 尤指用皇家专用的。
 
-尕，读作gǎ。中国汉字，一般是方言中小的意思，例如：～娃（含亲爱之意）。～李。
+尕，读作 gǎ。中国汉字，一般是方言中小的意思，例如：～娃（含亲爱之意）。～李。
 
 [Modifier key - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Modifier_key#Dual-role_keys)
 
@@ -851,11 +943,18 @@ Dual-role keys
 
 It is possible to use (with some utility software) one same key both as a normal key and as a modifier.
 
-For example, you can use the space bar both as a normal Space bar and as a Shift. Intuitively, it'll be a Space when you want a whitespace, and a Shift when you want it to act as a shift. I.e. when you simply press and release it, it is the usual space, but when you press other keys, say X, Y and Z, while holding down the space, then they will be treated as ⇧ Shift plus X, Y and Z.
+For example, you can use the space bar both as a normal Space bar and as a
+Shift. Intuitively, it'll be a Space when you want a whitespace, and a Shift
+when you want it to act as a shift. I.e. when you simply press and release it,
+it is the usual space, but when you press other keys, say X, Y and Z, while
+holding down the space, then they will be treated as ⇧ Shift plus X, Y and Z.
 
-The above example is known as "SandS", standing for "Space and Shift" in Japan.[1] But any number of any combinations are possible.[2]
+The above example is known as "SandS", standing for **"Space and Shift"** in
+Japan. But any number of any combinations are possible.
 
-To press shift+space in the previous example, you need in addition to a space/shift dual role key, one of (a) another space/shift key, (b) a usual shift, or (c) a usual space key.
+To press <kbd>shift+space</kbd> in the previous example, you need in addition to a
+space/shift dual role key, one of (a) another space/shift key, (b) a usual
+shift, or (c) a usual space key.
 
 #. 动机与信心原则
 #. 时间分配原则
@@ -863,108 +962,59 @@ To press shift+space in the previous example, you need in addition to a space/sh
 #. 复习原则（艾宾浩斯）
 #. 复习点的确定（5 分钟超短期，30 分钟短期，12 小时周期，1 天，2 天，4 天，7 天，15 天）
 
-1, 2, 3 &rarr; 2, 3, 1
-早上新单词，中午、晚上复习。
-Use the words three times and it's yours.
-周期结束，也要复习。
-光看不够，还要主动回想（遮住尽力想出来），电话卡都“磨光”了！
-如果放弃，前面的单词就白费了！
-2.5 小时，2 个 List，300 个单词。
-先记住，再慢慢掌握。坚持就是胜利。从一个胜利走向另一个胜利。
-
-GRE 需要 CET4、CET6、TOEFL、GRE（登泰山而小天下）
-GMAT 需要 CET4、CET6、TOEFL、GMAT
-TOEFL 需要 CET4、CET6、TOEFL
-
-即便把 GRE 背了十遍，还是有很多不认识的单词。
-即使已经超长发挥背了 100 个，但是不要停下来，再来 30 个还能记住，这样就能突破极限。“原来自己也可以。”
-
-枯坐良久，甚觉无聊，还是背单词把。
-
+* 1, 2, 3 &rarr; 2, 3, 1
+* 早上新单词，中午、晚上复习。
+* Use the words three times and it's yours.
+* 周期结束，也要复习。
+* 光看不够，还要主动回想（遮住尽力想出来），电话卡都“磨光”了！
+* 如果放弃，前面的单词就白费了！
+* 2.5 小时，2 个 List，300 个单词。
+* 先记住，再慢慢掌握。坚持就是胜利。从一个胜利走向另一个胜利。
+* GRE 需要 CET4、CET6、TOEFL、GRE（登泰山而小天下）
+* GMAT 需要 CET4、CET6、TOEFL、GMAT
+* TOEFL 需要 CET4、CET6、TOEFL
+* 即便把 GRE 背了十遍，还是有很多不认识的单词。即使已经超长发挥背了 100 个，但是
+* 不要停下来，再来 30 个还能记住，这样就能突破极限。“原来自己也可以。”
+* 枯坐良久，甚觉无聊，还是背单词把。
 
 maverick `['mævrɪk]`
 
-
-
-
 Elon (`eelon` not `eyelon`) Musk
 
-海里
-    Nautical mile，最短的海里是在赤道，1海里=1843米。
-最长的海里是在南北两极上，1海里=1862米。
+---
 
-节（Knot）以前是船员测船速的，每走1海里，船员就在放下的绳子上打一个节，以后就用节做船速的单位。
+海航单位
 
-链（Chain）十分之一海里。
+  * 海里，Nautical mile，最短的海里是在赤道，1海里=1843米。最长的海里是在南北两极上，1海里=1862米。
+  * 节（Knot）以前是船员测船速的，每走1海里，船员就在放下的绳子上打一个节，以后就用节做船速的单位。
+  * 链（Chain）十分之一海里。
 
-```cmd
+---
+
+```shell
 shutdown -s -t 1800
 shutdown -a
 ```
 
-我们不是为了取悦你们才出家的。
+> 我们不是为了取悦你们才出家的。
 
-WIN+D
+<kbd>WIN+D</kbd>
 
 like tears in rain.
 
-Wikipedia English - Free Encyclopedia
-
- Ditto
-Ditto may mean of several things:
-
-ditto marks like " or do. are used to mean "repeat the above info here"
-likewise, "ditto" means "I agree" (I repeat your sentiment), or "use the same answer from the last question" (as in "what do I do with item one?", "throw it away"... "what about this other item?", "ditto")
-Ditto machine, also known as a spirit duplicator
-Ditto drive, a tape drive from Iomega
-Ditto (movie), the name of a Buster Keaton short subject
-Ditto, the name of a Pokémon character
-a parrot in the comic strip Dotty and Ditto (a spinoff of Archie Comics)
-a dog in the comic strip Ditto & Chance
-Ditto (film), a 2000 South Korean film.
-
- See more at Wikipedia.org...
-© This article uses material from Wikipedia and is licensed under the GNU Free Documentation License
-  传播公益品牌，支持慈善事业   为什么？好老师都在用批改网！
-柯林斯高阶英语词典
-
- ditto
 ditto
-In informal English, you can use ditto to represent a word or phrase that you have just used in order to avoid repeating it. In written lists, ditto can be represented by ditto marks - the symbol * - underneath the word that you want to repeat.
+
+In informal English, you can use ditto to represent a word or phrase that you
+have just used in order to avoid repeating it. In written lists, ditto can be
+represented by ditto marks - the symbol * - underneath the word that you want
+to repeat.
+
 Lister's dead. Ditto three Miami drug dealers and a lady.
 
+ditto `['dɪtəʊ]`
 
-韦氏大学词典
-
- 1dit·to 1    n.
-Pronunciation:     'di-(ˌ)tō
-Function:           noun
-Inflected Form:    plural dittos
-Etymology:          Italian ditto, detto, past participle of dire to say, from Latin dicere ― more at DICTION
-Date:               circa 1639
-
-1 : a thing mentioned previously or above ― used to avoid repeating a word ― often symbolized by inverted commas or apostrophes
-2 : a ditto mark 2ditto 2    n.
-Function:           adjective
-Date:               1776
-
-: having the same characteristics : SIMILAR 3ditto 3    n.
-Function:           adverb
-Date:               1706
-
-: as before or aforesaid : in the same manner 4ditto 4    n.
-Function:           transitive verb
-Date:               1725
-
-1 : to repeat the action or statement of
-2 [from Ditto, a trademark] : to copy (as printed matter) on a duplicator
-© 2005 Merriam-Webster, Incorporated
-简明英语词典
-
- ditto  ['dɪtəʊ]
-n.  a mark used to indicate the word above it should be repeated
-v.  repeat an action or statement
- 全文翻译     Web 搜索
+  * n.  a mark used to indicate the word above it should be repeated
+  * v.  repeat an action or statement
 
 Crotch
 
@@ -974,104 +1024,154 @@ Crotch
     body between the legs where they join the torso. It is the area containing
     the genitals. As such, it is considered one of the intimate parts.
 
-
 l: el，但实际上很多人读成 lel。
-
 
 They have no idea what's going to happen.
 
-pop the cherry】意为take one's virginity, 也叫deflower, defile, trim the buff, crack the pitcher, pluck the rose, pick the lock, cut the cake, enter the Valhalla, land the Martian probe on Venus 当年The Runaways《Cherry Bomb》的cherry暗示的就是这个
+**pop the cherry** 意为 take one's virginity, 也叫 deflower, defile, trim the
+buff, crack the pitcher, pluck the rose, pick the lock, cut the cake, enter the
+Valhalla, land the Martian probe on Venus 当年 The Runaways《Cherry Bomb》的
+cherry 暗示的就是这个。
 
 [Fleshlight - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Fleshlight)
 
+叫 `cowlick`，头发旋 http://t.cn/R4h6fmX //@治愈系爱人：我还喜欢睡醒呆毛 说法是
+牛舔的那个 谷大 咋说来着的 RT @谷大白话:#每日一词# 【`Poseidon's Kiss`】波赛冬之
+吻：“上大号时马桶里噗通噗通溅起的打湿屁屁的水花”的文艺说法。其化解之道的文艺说
+法叫【`Poseidon's Pillow`】波赛冬之枕：用几层厕纸垫到马桶水面防止溅起水花。
 
-叫cowlick，头发旋 http://t.cn/R4h6fmX //@治愈系爱人：我还喜欢睡醒呆毛 说法是牛舔的那个 谷大 咋说来着的 RT @谷大白话:#每日一词# 【Poseidon's Kiss】波赛冬之吻：“上大号时马桶里噗通噗通溅起的打湿屁屁的水花”的文艺说法。其化解之道的文艺说法叫【Poseidon's Pillow】波赛冬之枕：用几层厕纸垫到马桶水面防止溅起水花。
+【PMS】n. 经前综合征 Pre-menstrual syndrome 的缩写
 
-【PMS】n. 经前综合征Pre-menstrual syndrome的缩写
+**【flirtationship】n. more than a friendship, less than a relationship: 暧昧。**
 
-【flirtationship】n. more than a friendship, less than a relationship: 暧昧。
+`cosmophobia` n. 宇宙恐惧症。指对于宇宙以及自己在宇宙中真实地位的可怕恐惧。形容
+词是 `cosmophobic`。
 
-cosmophobia n. 宇宙恐惧症。指对于宇宙以及自己在宇宙中真实地位的可怕恐惧。形容词是cosmophobic
-
-在形容人个子矮的时候，short可能不够委婉，一般说petite。在形容人胖的时候，fat明显不够委婉，可以说plus size。在形容肤色时，长得白和黑不是white和black（慎用！），而是pale/fair（形容白），tan/dark形容黑
-
-[值得推荐的C/C++框架和库 - Lippi-浮生志](http://coolshell.info/blog/2014/12/c-open-project.html)
-
-[Qt 学习之路 2 | DevBean's World - Part 2](http://www.devbean.net/category/qt-study-road-2/page/2/)
-
+在形容人个子矮的时候，short 可能不够委婉，一般说 `petite`。在形容人胖的时候，
+fat 明显不够委婉，可以说 plus size。在形容肤色时，长得白和黑不是 white 和 black
+（慎用！），而是 pale/fair（形容白），tan/dark 形容黑。
 
 There is NO CLOUD, just other people's computers.
 
-To install one of these versions, unpack it and run the following **from the top-level source directory** using the Terminal: `pip install .`
+To install one of these versions, unpack it and run the following **from the
+top-level source directory** using the Terminal: `pip install .`
 
-[解读 Rob Pike 编写的正则表达式程序 - 开源中国社区](http://www.oschina.net/translate/regular-expression-matcher-code-by-rob-pike?cmp)
+And they asked him, "How could you possibly do this?" And he answered, "When I
+learned to program, you were lucky if you got five minutes with the machine a
+day. If you wanted to get the program going, it just had to be written right.
+**So people just learned to program like it was carving stone. You sort of have
+to sidle up to it. That's how I learned to program.**
 
-And they asked him, "How could you possibly do this?" And he answered, "When I learned to program, you were lucky if you got five minutes with the machine a day. If you wanted to get the program going, it just had to be written right. So people just learned to program like it was carving stone. You sort of have to sidle up to it. That's how I learned to program.
+23' 23\': `23' 23\'`, smart & dumb
 
-good's 23' 23\'
+【**Dinosaur Erotica**】恐龙色情文学。以恐龙为主题的十八禁色情小说。基本上就是恐龙
+抓走美女，然后嘿嘿嘿的故事。该系列书名也极为直白坦诚：如《美人被霸王龙抓走了》
+《美人被翼龙抓走了》《美人在恐龙博物馆被抓走了》 《美人和迅猛龙嘿嘿嘿》 等
 
-【Dinosaur Erotica】恐龙色情文学。以恐龙为主题的十八禁色情小说。基本上就是恐龙抓走美女，然后嘿嘿嘿的故事。该系列书名也极为直白坦诚：如《美人被霸王龙抓走了》《美人被翼龙抓走了》《美人在恐龙博物馆被抓走了》 《美人和迅猛龙嘿嘿嘿》 等
+---
 
+[Image Engine](http://image-engine.com/film/)
 
-# [Image Engine](http://image-engine.com/film/)
+```plain
+AMERICAN SNIPER
 
-## AMERICAN SNIPER
+TEENAGE MUTANT NINJA TURTLES
 
-## TEENAGE MUTANT NINJA TURTLES
+ELYSIUM
 
-## ELYSIUM
+LONE SURVIVOR
 
-## LONE SURVIVOR
-<iframe src="https://player.vimeo.com/video/90177922" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+:   <iframe
+        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-src="https://player.vimeo.com/video/90177922"
+        width="500" height="281" frameborder="0"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-## R.I.P.D.
-<iframe src="https://player.vimeo.com/video/90173618" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+R.I.P.D.
 
-## ZERO DARK THIRTY
-<iframe src="https://player.vimeo.com/video/91452356" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+:   <iframe
+        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-src="https://player.vimeo.com/video/90173618"
+        width="500" height="281" frameborder="0"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-## WHITE HOUSE DOWN
-<iframe src="https://player.vimeo.com/video/91453702" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+ZERO DARK THIRTY
 
-## SAFE HOUSE
-<iframe src="https://player.vimeo.com/video/92181438" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+:   <iframe
+        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-src="https://player.vimeo.com/video/91452356"
+        width="500" height="281" frameborder="0"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-## THE THING
-<iframe src="https://player.vimeo.com/video/92187878" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+WHITE HOUSE DOWN
 
-## IMMORTALS
-<iframe src="https://player.vimeo.com/video/95316985" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+:   <iframe
+        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-src="https://player.vimeo.com/video/91453702"
+        width="500" height="281" frameborder="0"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-## DISTRICT 9
-<iframe src="https://player.vimeo.com/video/95324453" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+SAFE HOUSE
 
+:   <iframe
+        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-src="https://player.vimeo.com/video/92181438"
+        width="500" height="281" frameborder="0"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+THE THING
+
+:   <iframe
+        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-src="https://player.vimeo.com/video/92187878"
+        width="500" height="281" frameborder="0"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+IMMORTALS
+
+:   <iframe
+        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-src="https://player.vimeo.com/video/95316985"
+        width="500" height="281" frameborder="0"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+DISTRICT 9
+
+:   <iframe
+        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        data-src="https://player.vimeo.com/video/95324453"
+        width="500" height="281" frameborder="0"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+```
+
+---
+
+```bash
 #!/bin/bash
 convert img.jpg -crop 100x100  +repage  +adjoin  l0-%d.jpg
+```
 
-`are you kidding me`{.hover}
+`are you kidding me`{.tzx-hover}
 
-~~~{.hover}
+~~~{.tzx-hover}
 hover
 ~~~
 
-
-
 [tzx show]
-
 
 [tzx show]: javascript:document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','http://tangzx.qiniudn.com/tzxshow.js')
 
-this is good for a chunckle!
+> **this is good for a chunckle!**
 
-
-1455890249
-
+---
 
 [hosts](file:///C:/Windows/System32/drivers/etc/hosts)
 
 - good: ip url
 - bad: url1 url2
 - bad: ip:port url
+
+---
 
 [A python script to speed up the rendering process of Hexo 3.](https://gist.github.com/wzpan/7db9b0888f06a8d6ff8c)
 
@@ -1120,7 +1220,6 @@ def process_dir(path):
         if os.path.isfile(file) and ext in TARGET_TYPE:
             process_file(file)
 
-
 def main():
     if len(sys.argv) < 2:
         print "Arguments should be at least 2."
@@ -1149,35 +1248,48 @@ if __name__ == '__main__':
     main()
 ```
 
+---
 
+**Three Virtues**
 
-Three Virtues
+According to Larry Wall, the original author of the Perl programming
+language, there are three great virtues of a programmer; Laziness,
+Impatience and Hubris:
 
-According to Larry Wall(1), the original author of the Perl programming language, there are three great virtues of a programmer; Laziness, Impatience and Hubris
+  * **Laziness**: The quality that makes you go to great effort to reduce
+    overall energy expenditure. It makes you write labor-saving programs
+    that other people will find useful and document what you wrote so you
+    don't have to answer so many questions about it.
+  * **Impatience**: The anger you feel when the computer is being lazy. This
+    makes you write programs that don't just react to your needs, but
+    actually anticipate them. Or at least pretend to.
+  * **Hubris**: The quality that makes you write (and maintain) programs that
+    other people won't want to say bad things about.
 
-    Laziness: The quality that makes you go to great effort to reduce overall energy expenditure. It makes you write labor-saving programs that other people will find useful and document what you wrote so you don't have to answer so many questions about it.
-    Impatience: The anger you feel when the computer is being lazy. This makes you write programs that don't just react to your needs, but actually anticipate them. Or at least pretend to.
-    Hubris: The quality that makes you write (and maintain) programs that other people won't want to say bad things about.
-
-
-
+---
 
 大小写方式（下划线只是为了突出分割处）
 
-- Something_And_Somethingelse
-- SOMETHING_and_SOMETHINGELSE
+- `Something_And_Somethingelse`
+- `SOMETHING_and_SOMETHINGELSE`
 
 根据《个人所得税》法，80,000 以上的工资要支付 45% 的税（工资）。
 
-
 当一个人不打算再骂一个人，扭头就走的时候，情分就尽了。
 
-为什么整部《水浒》里，最有影响力的老虎要被武松打死呢？因为这事儿拼的不是武力。李逵杀虎，靠的是武力。所以李逵打死的老虎都不算老虎，和虾蟹没有太大区别。正因为不算老虎，才能一下杀四个。武松杀老虎，只能有一次，只能有一个。而且，必须赤手空拳。景阳冈上的老虎，象征自然的神威，象征流俗都不得不畏惧的法则，要对抗这种老虎，唯有最纯粹的人才可以。
+为什么整部《水浒》里，最有影响力的老虎要被武松打死呢？因为这事儿拼的不是武力。
+李逵杀虎，靠的是武力。所以李逵打死的老虎都不算老虎，和虾蟹没有太大区别。正因为
+不算老虎，才能一下杀四个。武松杀老虎，只能有一次，只能有一个。而且，必须赤手空
+拳。景阳冈上的老虎，象征自然的神威，象征流俗都不得不畏惧的法则，要对抗这种老虎
+，唯有最纯粹的人才可以。
 
-因为你会觉得，真正用心去做这件事情是不值的，是很白痴的。你有聪明才智，如果你珍惜它，就把它用到该用的地方，而不是被别人肆意地鄙弃。
+因为你会觉得，真正用心去做这件事情是不值的，是很白痴的。你有聪明才智，如果你珍
+惜它，就把它用到该用的地方，而不是被别人肆意地鄙弃。
 
-我喜欢实打实的东西。要考试，那么就拼智商，拼记忆力，拼逻辑能力，甚至拼写字快——总得有一个标尺。但你知道，很多课程是没有的。你考得好与坏跟你从这门课里学到了什么没有丝毫联系。那还考个——用四川话说，考个锤子啊。既然考试，那就一鞭一条痕，一掴一掌血。
-
+我喜欢实打实的东西。要考试，那么就拼智商，拼记忆力，拼逻辑能力，甚至拼写字快——
+总得有一个标尺。但你知道，很多课程是没有的。你考得好与坏跟你从这门课里学到了什
+么没有丝毫联系。那还考个——用四川话说，考个锤子啊。既然考试，那就一鞭一条痕，一
+掴一掌血。
 
 ```html
 <link rel="icon" href="*.png">
@@ -1187,21 +1299,12 @@ According to Larry Wall(1), the original author of the Perl programming language
 for i in *.pkg ; do mv "$i" "${i/-[0-9.]*.pkg/.pkg}" ; done
 ```
 
-
 ```bash
 #!/usr/bin/env bash
 
 REMOTE="git@github.com:blaenk/blaenk.github.io.git"
 SITE="generated/deploy/out"
 DEPLOY="deploy/"
-
-info() {
-  printf "  \033[00;32m+\033[0m $1\n"
-}
-
-success() {
-  printf "  \033[00;32m+\033[0m $1\n"
-}
 
 fail() {
   printf "  \033[0;31m-\033[0m $1\n"
@@ -1286,142 +1389,144 @@ case "$1" in
   esac
 ```
 
-http://tools.ietf.org/pdf/usage.shtml
-
-http://www.rfcreader.com/
-http://ietfreport.isoc.org/rfc/PDF/
-
-
 [Good Old & Dirty printf() Debugging in a Non-console C/C++ Application or DLL - CodeProject](http://www.codeproject.com/Tips/227809/Good-old-dirty-printf-debugging-in-a-non-console-C)
 
 http://www.cnblogs.com/xianqingzh/archive/2011/07/08/2101510.html
 
 [《Debug Hacks》和调试技巧 | MaskRay](http://maskray.me/blog/2013-07-25-debug-hacks)
 
-freopen
+:   `freopen`{.c}
 
-like piping
+    ```c
+    // like piping
+    freopen(in_path, "r", stdin);
+    freopen(out_path, "w", stdout);
+    freopen(err_path, "w", stderr);
 
-freopen(in_path, "r", stdin);
-freopen(out_path, "w", stdout);
-freopen(err_path, "w", stderr);
+    // remember to close them:
+    fclose(stdin);
+    fclose(stdout);
+    fclose(stderr);
+    ```
 
-remember to close them:
+    Debugging PRINT
 
-fclose(stdin);
-fclose(stdout);
-fclose(stderr);
+    ```cpp
+    #ifdef _DEBUG
+    # define Debug(fmtstr, ...) printf(fmtstr, ##__VA_ARGS__)
+    #else
+    # define Debug(fmtstr, ...)
+    #endif
+    ```
 
-Debugging PRINT
+    这是 `__VAR_ARGS__`，就连 Windows 也支持。。。
 
-#ifdef _DEBUG
-# define Debug(fmtstr, ...) printf(fmtstr, ##__VA_ARGS__)
-#else
-# define Debug(fmtstr, ...)
-#endif
+    还可参考：C is awesome -- function pointer stack
 
-这是 __VAR_ARGS__，就连 Windows 也支持。。。
+    VARS
 
-还可参考：C is awesome -- function pointer stack
+    ANSI C 标准中有几个标准预定义宏（也是常用的）：
 
-VARS
+    #. `__LINE__`：在源代码中插入当前源代码行号；
+    #. `__FILE__`：在源文件中插入当前源文件名；
+    #. `__DATE__`：在源文件中插入当前的编译日期
+    #. `__TIME__`：在源文件中插入当前编译时间；
+    #. `__STDC__`：当要求程序严格遵循ANSI C标准时该标识被赋值为1；
+    #. `__cplusplus`：当编写C++程序时该标识符被定义。
 
-ANSI C 标准中有几个标准预定义宏（也是常用的）：
+    `#define KEYWORD` 还是 `#define KEY VALUE`？
 
-    __LINE__：在源代码中插入当前源代码行号；
-    __FILE__：在源文件中插入当前源文件名；
-    __DATE__：在源文件中插入当前的编译日期
-    __TIME__：在源文件中插入当前编译时间；
-    __STDC__：当要求程序严格遵循ANSI C标准时该标识被赋值为1；
-    __cplusplus：当编写C++程序时该标识符被定义。
+    有人喜欢这样：
 
-#define KEYWORD 还是 #define KEY VALUE？
+    ```cpp
+    #define DEBUG       //此时#ifdef DEBUG为真
+    //#define DEBUG 0  //此时为假
+    int main()
+    {
+       #ifdef DEBUG
+          printf("Debugging\n");
+       #else
+          printf("Not debugging\n");
+       #endif
+       printf("Running\n");
+       return 0;
+    }
+    ```
 
-有人喜欢这样：
+    不过我更喜欢这样：
 
-#define DEBUG       //此时#ifdef DEBUG为真
-//#define DEBUG 0  //此时为假
-int main()
-{
-   #ifdef DEBUG
-      printf("Debugging\n");
-   #else
-      printf("Not debugging\n");
-   #endif
-   printf("Running\n");
-   return 0;
-}
+    ```cpp
+    #define BEDUG (true)
+    if (debug) {
+        // todo
+    }
+    ```
 
-不过我更喜欢这样：
+    当然前者编出的程序性能会好一点。
 
-#define BEDUG (true)
-if (debug) {
-    // todo
-}
+    return 的妙用
 
-当然前者编出的程序性能会好一点。
+    :   这个主要用于 test，比如：
 
-return 的妙用
+        ```cpp
+        // define some testing vars here
 
-这个主要用于 test，比如：
+        // this is test6 (current testing part)
 
-// define some testing vars here
+        return;
+        // this is test5
 
-// this is test6 (current testing part)
+        return;
+        // this is test4
 
-return;
-// this is test5
+        ...
 
-return;
-// this is test4
+        return;
+        // test0
+        ```
 
-...
+        好处是不用总去注释，坏处是编出来的程序会大一点，还可能忘了把 return 去掉，
+        导致提前退出而不自知。
 
-return;
-// test0
+    Windows 编译宏：[Predefined Macros (C/C++)](https://msdn.microsoft.com/en-us/library/b0084kay%28v=vs.80%29.aspx)
 
-好处是不用总去注释，坏处是编出来的程序会大一点，还可能忘了把 return 去掉，导致提前退出而不自知。
+    :   这个好，可以用：
 
-Windows 编译宏
+        ```cpp
+        _WIN64
+        ```
 
-    Predefined Macros (C/C++): https://msdn.microsoft.com/en-us/library/b0084kay%28v=vs.80%29.aspx
+    C
 
+    :   这个我比较熟悉，如果你能看懂下面这些就够了：
 
+        ```plain
+        // printf
+        %i %d %lld %20d %020d %-20d %+20d
+        %f %lf %5.2lf
+        %s %-s %20s
+        %*d %*s
+        // scanf
+        %*d %*s %lf
+        ```
 
-这个好，可以用：
+        不举例子了
 
-_WIN64
+        就像 C++ 中的 StringStream
 
+        ```cpp
+        QString result;
+        QTextStream(&result) << "pi = " << 3.14;
+        // result == "pi = 3.14"
+        ```
 
-
-
-C
-
-这个我比较熟悉，如果你能看懂下面这些就够了：
-
-// printf
-%i %d %lld %20d %020d %-20d %+20d
-%f %lf %5.2lf
-%s %-s %20s
-%*d %*s
-// scanf
-%*d %*s %lf
-
-不举例子了
-
-就像 C++ 中的 StringStream
-
-QString result;
-QTextStream(&result) << "pi = " << 3.14;
-// result == "pi = 3.14"
-
-
+---
 
 [Roman numerals - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Roman_numerals)
 
 
 Symbol | Value
- --- | ---
+--- | ---
 I | 1
 V | 5
 X | 10
@@ -1430,68 +1535,72 @@ C | 100
 D | 500
 M | 1,000
 
-
 bible（ai） 和 babel（e） 这两个单词的发音好像啊……
 
 specifics 和 specifies 的区别在哪里？
 
 indefinite v.s. infinite
 
-
-paranoid | ['pærənɔɪd] | 偏执狂患者
-:---: | :---: | :---:
-hypocrite | ['hɪpə'krɪt] | 伪君子；伪善者
 chillax | [tʃɪˈlæks] | 淡定
-mandate | ['mændet] | 委托管理
+:---: | :---: | :---:
+craftsmanship | ['kræftsmənʃɪp] | 技艺
+czar |  [zɑː] | 沙皇
 designated | ['dɛzɪg,netɪd] | 特指的
+etymology | [,ɛtɪ'mɑlədʒi] | 语源学
+hypocrite | ['hɪpə'krɪt] | 伪君子；伪善者
+loathing | ['loðɪŋ] | 嫌恶
+mandate | ['mændet] | 委托管理
+paranoid | ['pærənɔɪd] | 偏执狂患者
+predecessor | ['prɛdəsɛsɚ] | 前辈
+revulsion | [rɪ'vʌlʃən] | 强烈反感
+silhouette | [,sɪlu'ɛt] | 轮廓，剪影
 specific |  [spɪ'sɪfɪk] | 特定的
 specify |  ['spɛsɪfaɪ] | 详细说明
-verbatim |  [vɝ'betɪm] | 逐字地
-silhouette | [,sɪlu'ɛt] | 轮廓，剪影
-czar |  [zɑː] | 沙皇
-survivalism | [sə'vaɪv(ə)lɪz(ə)m] | 生存第一主义
-revulsion | [rɪ'vʌlʃən] | 强烈反感
-loathing | ['loðɪŋ] | 嫌恶
 sublime | [sə'blaɪm] | 崇高
-etymology | [,ɛtɪ'mɑlədʒi] | 语源学
-xenophobia | [,zɛnə'fobɪə] | 对外国人的畏惧和憎恨
-predecessor | ['prɛdəsɛsɚ] | 前辈
 successor | [sək'sɛsɚ] | 继承者
-craftsmanship | ['kræftsmənʃɪp] | 技艺
+survivalism | [sə'vaɪv(ə)lɪz(ə)m] | 生存第一主义
+verbatim |  [vɝ'betɪm] | 逐字地
+xenophobia | [,zɛnə'fobɪə] | 对外国人的畏惧和憎恨
 
+---
 
+lossy
 
+:   `convert -strip -interlace Plane -gaussian-blur 0.05 -filter Lanczos -quality 85% in.jpg out.jpg`{.bash}
 
-convert -strip -interlace Plane -gaussian-blur 0.05 -filter Lanczos -quality 85% in.jpg out.jpg
+It's good to be familiar with other editors like Vi so that you can be
+productive even if that's all you have, and then learn how to make the most of
+Emacs so that you can reap the benefits over the decades.
 
-. It's good to be familiar with other editors like Vi so that you can be productive even if that's all you have, and then learn how to make the most of Emacs so that you can reap the benefits over the decades.
+Fear, uncertainty, and doubt (often shortened to `FUD`) is a disinformation
+strategy used in sales, marketing, public relations, politics and propaganda.
+FUD is generally a strategy to influence perception by disseminating negative
+and dubious or false information and a manifestation of the appeal to fear.
 
-Fear, uncertainty, and doubt (often shortened to FUD) is a disinformation strategy used in sales, marketing, public relations, politics and propaganda. FUD is generally a strategy to influence perception by disseminating negative and dubious or false information and a manifestation of the appeal to fear.
-
-A.D. （公元）: Anno Domini
-a.m. （上午）: ante meridiem
-CV （简历）: curriculum vitae
-e.g. （例如）: exempli gratia
-etc. （等等…）: et cetera
-et al. （等人）： et alii
-i.e. （即是）: id est
-p.m. （下午）: post meridiem
-Ph.D. （博士）: Philosophiæ Doctor
-P.S. （附言）: post scriptum
-R.I.P. （息止安所）: requiescat in pace
+* A.D. （公元）: Anno Domini
+* a.m. （上午）: ante meridiem
+* CV （简历）: curriculum vitae
+* e.g. （例如）: exempli gratia
+* etc. （等等…）: et cetera
+* et al. （等人）： et alii
+* i.e. （即是）: id est
+* p.m. （下午）: post meridiem
+* Ph.D. （博士）: Philosophiæ Doctor
+* P.S. （附言）: post scriptum
+* R.I.P. （息止安所）: requiescat in pace
 
 1001=7*11*13
 
-[Code Rush - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Code_Rush)
-[Code Rush, the Mozilla Documentary from 2000 - Waxy.org](http://waxy.org/2008/06/code_rush/)
-[Code Rush (TV Movie 2000) - IMDb](http://www.imdb.com/title/tt0499004/)
-
+#. [Code Rush - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Code_Rush)
+#. [Code Rush, the Mozilla Documentary from 2000 - Waxy.org](http://waxy.org/2008/06/code_rush/)
+#. [Code Rush (TV Movie 2000) - IMDb](http://www.imdb.com/title/tt0499004/)
 #. [Tara Hernandez | LinkedIn](https://www.linkedin.com/in/tara-hernandez-755b263)
 #. [Stuart Parmenter | LinkedIn](https://www.linkedin.com/in/stuartparmenter)
 #. [Jamie Zawinski - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Jamie_Zawinski)
 
+---
 
-sentiment.
+sentiment 多愁善感
 
 you are but words.
 
@@ -1507,19 +1616,19 @@ $ texdoc sinutx # texdoc <package-name>
 ```
 
 There is NO DIRECT SOFTWARE  to Hack Facebook , Google , Yahoo or any other big
-website. All the softwares that claim to do so are scam.
+website. All the softwares that claim to do so are scam（`[skæm]`，欺骗）.
 
 ![ASCII Table](http://whudoc.qiniudn.com/ascii.png)
 
+---
 
-1450927450: 维基百科的音标
---------------------------
+维基百科的音标
 
 照理说我不需要额外整理音标的内容，因为我很仔细地看过《赖世雄美语音标》，音标基本都会。
 但不幸地是我不知道音标标的是哪一种（美语、英语？），所以还是整理一下维基的音标，这样
 以后会更清楚上面查到的东西的读音。
 
-### Constants
+Constants
 
 IPA | Examples
 --- | --------
@@ -1549,7 +1658,7 @@ IPA | Examples
 `z` | zoo, has
 `ʒ` | equation, pleasure, vision, beige
 
-### Marginal consonants
+Marginal consonants
 
 IPA | Examples
 --- | --------
@@ -1586,7 +1695,7 @@ IPA | Full vowels | IPA | ... followed by R
 `ʌ` | STRUT, bud, dull, gun | `ɜːr` | NURSE, word, girl, fern, furry
 --- | --- | `ʌr` | hurry, nourish (in the UK)
 
-### Reduced Vowels
+Reduced Vowels
 
 IPA | Reduced vowels | IPA | Reduced Vowels
 --- | -------------- | --- | -----------------
@@ -1596,7 +1705,7 @@ IPA | Reduced vowels | IPA | Reduced Vowels
 `i` | HAPPY, serious (either `/ɪ/` or `/i/`) | `əl` | bottle (either `[əl]` or `[l̩]`)
 `ən` | button (either `[ən]` or `[n̩]`) | `əm` | rhythm (either `[əm]` or `[m̩]`)
 
-### Stress & Syllabification
+Stress & Syllabification
 
 * intonation `/ˌɪntɵˈneɪʃən/`
 * Mikey `/ˈmaɪki/`, Myki `/ˈmaɪ.kiː/`
@@ -1605,10 +1714,11 @@ Refs
 
 #. [Help:IPA for English - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Help:IPA_for_English)
 
-1450755075: 《影响力》
----------------------
+---
 
-## 1. Weapons of Influence: Perceptual Contrast | 对比原理
+《影响力》
+
+1. Weapons of Influence: Perceptual Contrast | 对比原理
 
 > Everything should be made as simple as possible, but not simpler.
 >
@@ -1652,7 +1762,7 @@ it, and he laughed. They were what he called “setup” properties.
 
 Sharon may be failing chemistry, but she gets an “A” in psychology.
 
-## 2. Reciprocation: The Old Give and Take...and Take | 互惠原理
+2. Reciprocation: The Old Give and Take...and Take | 互惠原理
 
 > Pay every debt, as if God wrote the bill.
 >
@@ -1688,7 +1798,6 @@ The Rule Can Trigger Unfair Exchanges
 
 The Old Give and Take...**and Take...**
 
-
 RECIPROCAL CONCESSIONS | 相互退让
 
 At first glance, our fortunes
@@ -1717,9 +1826,7 @@ Refs
 #. [我在苏州被和尚骗了, 那和尚一定熟读《影响力》 | 马牛不是人](http://www.manio.org/cn/influence-i-was-treated-by-mock/)
 #. [【豆总摘】大纲和重点──看完不用看书了 (评论: 影响力)](http://book.douban.com/review/5046071/)
 
-%TODO%: 读李敖
-
-jujitsu  `[dʒuː'dʒɪtsuː]`
+jujitsu `[dʒuː'dʒɪtsuː]` 柔术
 
 :   n.  a method of self-defense without weapons that was developed in China
     and Japan; holds and blows are supplemented by clever use of the attacker's
@@ -1739,12 +1846,12 @@ buffer[readLength] = '\0';
 fclose(fp);
 ```
 
-In situ……是一个拉丁文片语，字面上的意思是指「现场」、「在位置」。在许多不同语境
+`In situ` 是一个拉丁文片语，字面上的意思是指「现场」、「在位置」。在许多不同语境
 中，它描述一个事件发生的位置，意指「本地」、「现场」、「在处所」、「就位」。 …… （在计
-算机科学中）一个算法若称为原位算法，或在位算法，是指执行该算法所需的额外内存空间是O(1)
+算机科学中）一个算法若称为原位算法，或在位算法，是指执行该算法所需的额外内存空间是 `O(1)`
 的，换句话说，无论输入大小都只需要常数空间。例如，堆排序是一个原位排序算法。
 
-在 C++11 中这称为转移赋值操作（move assignment operator）。由于RapidJSON 支持 C++03，它在赋值
+在 C++11 中这称为转移赋值操作（move assignment operator）。由于 RapidJSON 支持 C++03，它在赋值
 操作采用转移语意，其它修改形函数如 `AddMember()`，`PushBack()` 也采用转移语意。
 
 XDM 即**“X Display Manager”**，由它来启动 X Window 服务器，并管理图形客户端程序的
@@ -1803,9 +1910,14 @@ QRectF Robot::boundingRect() const
 the head and limbs. It is also refered to as the trunk. The torso includes the
 chest, back, and abdomen.
 
+---
+
 若我们不确定一个成员是否存在，便需要在调用 `operator[](const char*)` 前先调用
 `HasMember()`。然而，这会导致两次查找。更好的做法是调用 `FindMember()`，它能同
 时检查成员是否存在并返回它的 `Value`：
+
+……我居然忘了这一点……
+
 
 ```cpp
 Value::ConstMemberIterator itr = document.FindMember("hello");
@@ -1813,6 +1925,8 @@ if (itr != document.MemberEnd()) {
     printf("%s %s\n", itr->value.GetString());
 }
 ```
+
+---
 
 VA 番茄助手的 rename 居然不检查名称的正确性，你可以把 `type` 更名为 `ty pe`，这
 也太蠢。唯一可能的好处是你可以用这个功能更名为 `const type`，但这么做必然出很多
@@ -1839,6 +1953,8 @@ QList<UrObject *> ojebcts;
 See
 
 #. [Object Model | Qt Core 5.5](http://doc.qt.io/qt-5/object.html#identity-vs-value)
+
+---
 
 ```cpp
 const char *paths[] = {
@@ -1874,8 +1990,7 @@ Windows 下的 Git Bash 不能直接输入文件名打开文件，提示 Cannot 
 :   可以用 Firefox 浏览器，在 F12 下面，对着图片右键，可以“Copy Image Data-URL”
     ，就复制到了 Base64 编码的图片。
 
-1450496760: Numbers
--------------------
+---
 
 一些数字：
 
@@ -1985,7 +2100,8 @@ $ vim -p files*.txt
 #. `earlier 10s`, 10 secs ago
 
 #. 可能我是一个天生就爱折腾， 爱完美的男人（虽然我不是处女座）
-#. 妈妈对你外表修饰和穿衣搭配的指点，包含了她浓浓的爱，当着她的面一定要虚心地全盘接受。在离开她的视线后，继续该穿啥穿啥。
+#. 妈妈对你外表修饰和穿衣搭配的指点，包含了她浓浓的爱，当着她的面一定要虚心地全
+   盘接受。在离开她的视线后，继续该穿啥穿啥。
 
 idiomatic `[,ɪdɪə'mætɪk]` (惯用的；符合语言习惯的；通顺的)
 
@@ -2004,13 +2120,7 @@ foreach (1..10) {
 }
 ```
 
-Learn Perl
-
-#. [Tutorials - perldoc.perl.org](http://perldoc.perl.org/index-tutorials.html)
-#. [perlreftut - perldoc.perl.org](http://perldoc.perl.org/perlreftut.html)
-
-3333333333: MISC (TMP)
-----------------------
+---
 
 在欧美国家，一些大红的明星因某一专辑，或者某一行为，成绩大不如前（单曲、专辑销售
 量惨淡，演唱会无人买单、惹人讨厌等等）都可以称为“flop”。
@@ -2039,7 +2149,7 @@ do
 done
 ```
 
-~~上面的脚本很巧妙，我从来没想过可以用正则表达式。~~
+~~上面的脚本很巧妙，我从来没想过可以用正则表达式。~~那不是正则。
 
 VimFx
 
@@ -2062,9 +2172,7 @@ VimFx
     s, sa           ; stop loading
     ```
 
-Firefox 浏览器的优点：
-
-#. 默认的字体大点。
+Firefox 浏览器的优点：默认的字体大点。
 
 `c-d`, bookmark
 `c-h`, history
@@ -2137,24 +2245,24 @@ Jumplist `:h jumplist`, `:h CTRL-O` (older), `:h CTRL-I`, `:h ju[mp]`
 ]} function end
 ```
 
-#. <http://ww2.sinaimg.cn/large/6aa09e8fjw1ey30zhd9v0j20go11atcj.jpg>
-#. <http://ww2.sinaimg.cn/bmiddle/6aa09e8fjw1ey2qlvrw54j217f1kkah6.jpg>
-#. [Word of the Year](http://ww1.sinaimg.cn/large/6aa09e8fjw1ey43zr5ge1j20yi0s678c.jpg)
-#. [Why the 'Cry of Joy' Emoji?](http://ww1.sinaimg.cn/large/6aa09e8fjw1ey43zsq9tgj20yi2lq7ma.jpg)
+![](http://ww2.sinaimg.cn/large/6aa09e8fjw1ey30zhd9v0j20go11atcj.jpg)
+![](http://ww2.sinaimg.cn/bmiddle/6aa09e8fjw1ey2qlvrw54j217f1kkah6.jpg)
+![Word of the Year](http://ww1.sinaimg.cn/large/6aa09e8fjw1ey43zr5ge1j20yi0s678c.jpg)
+![Why the 'Cry of Joy' Emoji?](http://ww1.sinaimg.cn/large/6aa09e8fjw1ey43zsq9tgj20yi2lq7ma.jpg)
 
 Emoji or Emojis（个人倾向于用这个）
 
 谷大白话:
 
-作为 fetish，cuckold 的嗜好是让老婆跟其他男性嘿嘿嘿并以此为乐。
-而被老公出轨背叛的女性叫 cuckquean。 RT @谷大白话:#每日一词#
-【戴绿帽子】cuckold。来自 cuckoo 杜鹃，因雌性常到别的鸟窝下蛋，
-所以有了红杏出墙的含义。cuckold 可以是名词，指被戴绿帽子的男子。
-也可以做动词，指给人戴绿帽子。形容词是 cuckolded。
-还有种说法是 wearing the horns。
+作为 `fetish`，`cuckold` 的嗜好是让老婆跟其他男性嘿嘿嘿并以此为乐。
+而被老公出轨背叛的女性叫 `cuckquean`。
+【戴绿帽子】`cuckold`。来自 cuckoo 杜鹃，因雌性常到别的鸟窝下蛋，
+所以有了红杏出墙的含义。`cuckold` 可以是名词，指被戴绿帽子的男子。
+也可以做动词，指给人戴绿帽子。形容词是 `cuckolded`。
+还有种说法是 `wearing the horns`。
 所以可以用手指在头上比划出角，表示辱骂对方是被戴绿帽子的乌龟。
 
-Call me John Snow, I know nothing.
+> Call me John Snow, I know nothing.
 
 ![谷大白话: 美国某网站的调查显示：
     61% 的人在淋浴中尿尿，41% 在泳池尿过尿。
@@ -2163,6 +2271,15 @@ Call me John Snow, I know nothing.
     37% 擦屁股后会看一眼厕纸。45% 表示上厕所前会把厕纸铺在马桶圈上，
     36% 用脚踩冲水按钮，35% 上厕所时不会坐在马桶圈上。](http://ww1.sinaimg.cn/large/6aa09e8fjw1ey3rjcbr4yj210k11awod.jpg)
 
+<div class="tzx-tabs">
+* [oooo](#line602182)
+* [codes](#line602183)
+
+<div id="line602182">
+nothing here.
+</div>
+
+<div id="line602183">
 ```cpp
 int i;
 for(i = 0; i < argc; ++i)
@@ -2697,6 +2814,8 @@ int main(int argc, char *argv[])
 	return 0;
 }
 ```
+</div>
+</div>
 
 #. <kbd>Control+f/b</kbd>, move one screen down/up.
 #. The Viola/Jones Face Detector
@@ -2728,8 +2847,6 @@ the eyes.
 region
 – Value:  darker / brighter
 
-
-
 Integral Image Representation (check back-up slide)
 
 Using the integral image
@@ -2747,6 +2864,8 @@ discriminating features
 3. Real-timeliness: must focus on potentially
 positive image areas (that contain faces)
 
+---
+
 AdaBoost
 
 :   #. stands for “Adaptive” boost
@@ -2754,11 +2873,14 @@ AdaBoost
     #. linear combination of weighted simple
     #. “weak” classifiers
 
+---
+
 ![parental advisory](http://img.xiami.net/images/album/img82/28482/4126011392865064_2.jpg)
 
 #. &#x2611; [User Ciro Santilli 六四事件 法轮功 包卓轩 - Stack Overflow](http://stackoverflow.com/users/895245/ciro-santilli-%e5%85%ad%e5%9b%9b%e4%ba%8b%e4%bb%b6-%e6%b3%95%e8%bd%ae%e5%8a%9f-%e5%8c%85%e5%8d%93%e8%bd%a9)
 #. &#x2611; [User Yu Hao - Stack Overflow](http://stackoverflow.com/users/1009479/yu-hao)
 
+---
 
 `OBJ = 		$(SRC:.c=.o)`{.makefile}
 
@@ -2766,7 +2888,7 @@ palette `['pælət]`
 
 back off from '`\0`'
 
-gilarus，快乐的基因, nomados，流浪的基因
+`gilarus`，快乐的基因, `nomados`，流浪的基因
 
 #. &#x2610; (hex: `&#x2610;` / dec: `&#9744`;): ballot box (empty, that's how it's supposed to be)
 #. &#x2611; (hex: `&#x2611;` / dec: `&#9745`;): ballot box with check
@@ -2781,22 +2903,9 @@ Checking out web fonts for tick symbols? Here's a ready to use s
 #. &#x2611; [Unicode Character 0x2713 - "✓" from Unicode Map](http://www.unicodemap.org/details/0x2713/index.html)
 #. &#x2611; [Tick symbol in HTML/XHTML - Stack Overflow](http://stackoverflow.com/questions/658044/tick-symbol-in-html-xhtml)
 
-1449986090: Good CS Notes
--------------------------
+---
 
-#. &#x2610; [你所读的计算机科学方向，有哪些不错的讲义（Notes）？ - 书籍推荐 - 知乎](http://www.zhihu.com/question/38300204)
-#. &#x2610; [6.858 / Fall 2014 / Schedule](http://css.csail.mit.edu/6.858/2014/schedule.html)
-#. &#x2610; [CSCI-UA.0202: Operating Systems (Undergrad)](http://www.cs.nyu.edu/~mwalfish/classes/15sp/index.html)
-
-1449826581: Read!!
-------------------
-
-#. &#x2610; [cirosantilli/cpp-cheat](https://github.com/cirosantilli/cpp-cheat)
-#. &#x2610; [cirosantilli/linux-cheat](https://github.com/cirosantilli/linux-cheat)
-
-
-1449216222: Bézier Curve
-------------------------
+Bézier Curve
 
 Try online: [The Bézier Game](http://bezier.method.ac/)
 
@@ -2808,8 +2917,9 @@ Refs
 #. &#x2611; [Bézier curve - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/B%C3%A9zier_curve)
 #. &#x2611; [Bézier Curve -- from Wolfram MathWorld](http://mathworld.wolfram.com/BezierCurve.html)
 
-1449214645: Fonts
------------------
+---
+
+Fonts
 
 Computer Font
 
@@ -2889,8 +2999,9 @@ Refs
 #. &#x2611; [Web Open Font Format - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Web_Open_Font_Format)
 #. &#x2611; [TrueType - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/TrueType)
 
-1447936648: 设置 Git 的 Upstream
---------------------------------
+---
+
+设置 Git 的 Upstream
 
 ```bash
 # 看看当前的 upstream
@@ -2932,8 +3043,9 @@ Refs
 #. &#x2611; [Changing a remote's URL - User Documentation](https://help.github.com/articles/changing-a-remote-s-url/)
 #. &#x2611; [git命令之git remote的用法 - wangjia55的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/wangjia55/article/details/8802490)
 
-1447923065: 以前存的 Emojis
----------------------------
+---
+
+以前存的 Emojis
 
 |            |      01     |      02     |      03     |      04     |      05     |      06     |      07     |      08     |      09     |      10     |
 | :---------:| :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: |
@@ -3090,8 +3202,9 @@ Refs
 [004]: http://gnat-tang-shared-image.qiniudn.com/emoj/yellow-plain.png
 [005]: http://gnat-tang-shared-image.qiniudn.com/pic/gnat-favicon.ico
 
-1447650064: Craigslist
-----------------------
+---
+
+Craigslist
 
 被 GFW 墙了。其实不怎么样，天朝这样的网站多了去。（不过还是要吐槽这蛋疼的 GFW。）
 
@@ -3100,8 +3213,9 @@ Refs
 #. &#x2611; [Craigslist - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Craigslist)
 #. &#x2611; [Craigslist_百度百科](http://baike.baidu.com/view/703783.htm)
 
-1447597757: Vim Macro
----------------------
+---
+
+Vim Macro
 
 就跟其它所有编辑器一样，宏很好用。
 
@@ -3114,8 +3228,9 @@ Refs
 
 #. &#x2610; [replay a vim macro until end of buffer - Stack Overflow](http://stackoverflow.com/questions/1291962/replay-a-vim-macro-until-end-of-buffer)
 
-1447597000: NetBIOS Names
--------------------------
+---
+
+NetBIOS Names
 
 Character | ASCII Code  |  Hex Code
 --------- | ----------- | -----------
@@ -3136,8 +3251,9 @@ Refs
 
 #. &#x2611; [Microsoft Support](https://support.microsoft.com/en-us/kb/194203)
 
-1447595203: HTML Entity
------------------------
+---
+
+HTML Entity
 
 在 [Learning HTML](post-0022-learning-html.html#html-entities) 里有部分笔记。
 但感觉不够，有时候我都开始用 LaTeX 来标记，但那也太蠢了……
@@ -3227,9 +3343,7 @@ Refs
 * &loz; `&loz;`{.html} lozenge, `['lɑzɪndʒ]`, 菱形
 * &hearts; `&hearts;`{.html}
 
-<!--
 ![WWII "ruptured duck" Honorable Discharge Emblem lozenge](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ruptured_Duck_patch.JPG/220px-Ruptured_Duck_patch.JPG)
--->
 
 Refs
 
@@ -3238,8 +3352,7 @@ Refs
 #. &#x2611; [List of XML and HTML character entity references - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references)
 #. &#x2611; [List of emoticons - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_emoticons)
 
-1447590832: 赋值表达式
-----------------------
+---
 
 Assignment Expression
 
@@ -3299,12 +3412,11 @@ Read more
 #. &#x2610; [Memory part 5: What programmers can do [LWN.net]](https://lwn.net/Articles/255364/)
 #. &#x2611; [Yoda 表示法错在哪里](http://www.yinwang.org/blog-cn/2013/04/14/yoda-notation/)
 
-1447577960: To Read
--------------------
+---
 
 有些是以前读过的，但觉得应再读一遍。
 
-&#x2610; [Citation signal - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Citation_signal)
+[Citation signal - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Citation_signal)
 
 :   A Legal **citation signal** or **introductory signal** is a set of brief abbreviated phrases or
     words used to clarify the authority or significance of a legal citation as it relates to a proposition.
@@ -3347,11 +3459,11 @@ Read more
     #. [The Elements of Style (豆瓣)](http://book.douban.com/subject/1433835/)
     #. [Style (豆瓣)](http://book.douban.com/subject/4107521/)
 
-&#x2610; [Pitfalls of C](http://www.math.pku.edu.cn/teachers/qiuzy/c/reading/pitfall.htm)
+[Pitfalls of C](http://www.math.pku.edu.cn/teachers/qiuzy/c/reading/pitfall.htm)
 
 :   这书居然在网上直接放着（其实考研复试那段时间我看完了，有时间再看一下，note some）
 
-&#x2610; [裘宗燕主页 :: Main Page of Qiu Zongyan](http://www.math.pku.edu.cn/teachers/qiuzy/)
+[裘宗燕主页 :: Main Page of Qiu Zongyan](http://www.math.pku.edu.cn/teachers/qiuzy/)
 
 :   从 C Traps and Pitfalls 看到这里。这老师很著名。
 
@@ -3372,7 +3484,7 @@ Read more
     #. 2009年秋季课程：程序设计技术与方法
 
 
-&#x2610; [Requirements for Chinese Text Layout 中文排版需求](http://www.w3.org/TR/clreq/)
+[Requirements for Chinese Text Layout 中文排版需求](http://www.w3.org/TR/clreq/)
 
 :   [w3c/clreq](https://github.com/w3c/clreq)
 
@@ -3389,12 +3501,11 @@ Read more
     但西文出現在行頭或行尾時，則毋須加入空白。（最好中英文就之间加个空格，see [中文排版指北]）
     或可使用西文詞間空格（U+0020 SPACE [ ]，其寬度隨不同字體有所變化）。
 
-&#x2610; [Caliphate - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Caliph)
+[Caliphate - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Caliph)
 
 :   哈里发，`key-lif, kal-if`
 
-1447562957: Je suis Charlie
----------------------------
+---
 
 "Je suis Charlie" (French pronunciation: `​[ʒə sɥi ʃaʁli]`, French for "**I am Charlie**") is
 a slogan and a logo created by French art director Joachim Roncin and adopted
@@ -3408,8 +3519,7 @@ Refs
 
 #. [Je suis Charlie - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Je_suis_Charlie)
 
-1447560321: Marked
-------------------
+---
 
 Markded
 
@@ -3456,15 +3566,16 @@ Strapdown
 
     ## Chapter 1
 
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-    et dolore magna aliqua.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.
 
     ## Chapter 2
 
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-    culpa qui officia deserunt mollit anim id est laborum.
+    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+    anim id est laborum.
     </xmp>
 
     <script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
@@ -3476,8 +3587,7 @@ Refs
 #. [chjj/marked](https://github.com/chjj/marked)
 #. [Strapdown.js - Instant and elegant Markdown documents](http://strapdownjs.com/)
 
-1447555692: Get Emoji
----------------------
+---
 
 那什么 [Emoji cheat sheet for GitHub, Basecamp and other services](http://www.emoji-cheat-sheet.com/)，
 不比这个好：[Emoji searcher](http://emoji.muan.co/)
@@ -3490,8 +3600,9 @@ Refs
 
 #. [notwaldorf/emoji-translate](https://github.com/notwaldorf/emoji-translate)
 
-1447490203: BALLOT BOX
-----------------------
+---
+
+Ballot Box
 
 Unicode Block (Miscellaneous Symbols)
 
@@ -3510,22 +3621,25 @@ Refs
 #. [Unicode Character 'BALLOT BOX' (U+2610)](http://www.fileformat.info/info/unicode/char/2610/index.htm)
 #. [Unicode Character 'BALLOT BOX WITH CHECK' (U+2611)](http://www.fileformat.info/info/unicode/char/2611/index.htm)
 
-1447469470: French Terror Attacks
----------------------------------
+---
 
 French terror attacks: Victim obituaries^[obituaries `oh-bich-oo-er-ee` n. 讣告；讣闻（obituary的复数形式）]
 
-Twelve people died when a bloody attack was launched on the office of France's satirical magazine Charlie Hebdo. The following day a policewoman was murdered by Amedy Coulibaly, who held up a Jewish supermarket the next day, killing four people. Here are brief profiles of all 17 victims.
+Twelve people died when a bloody attack was launched on the office of France's
+satirical magazine Charlie Hebdo. The following day a policewoman was murdered
+by Amedy Coulibaly, who held up a Jewish supermarket the next day, killing four
+people. Here are brief profiles of all 17 victims.
 
-```
-![19 Sep 2012 issue: An Orthodox Jew pushes an old Muslim in a wheelchair, both shouting “You mustn’t make fun!”](http://ichef-1.bbci.co.uk/news/624/media/images/80116000/jpg/_80116101_charliemuslimandjew464.jpg)
-```
+![19 Sep 2012 issue: An Orthodox Jew pushes an old Muslim in a wheelchair, both
+    shouting “You mustn’t make fun!”](http://ichef-1.bbci.co.uk/news/624/media/images/80116000/jpg/_80116101_charliemuslimandjew464.jpg)
 
 死的很多 cartoonist 和 editor，以及一两个 economist，
 
-警察里有 Ahmed Merabet，是个 muslim，"He was a Muslim - a fact picked up by bloggers seeking to defend the community against "terrorist" slurs."
+警察里有 Ahmed Merabet，是个 muslim，"He was a Muslim - a fact picked up by
+bloggers seeking to defend the community against "terrorist" slurs."
 
-Witnesses have been describing the dramatic events in France, where two sieges came to a violent end.
+Witnesses have been describing the dramatic events in France, where two sieges
+came to a violent end.
 
 Hostage's mother:
 
@@ -3534,14 +3648,14 @@ Hostage's mother:
 
 Golda, shopper
 
-> "There is a big Jewish community in the area - this area is actually in the middle of three Jewish communities.
-> "Do I feel threatened? Yes. For the Jewish community, once again we are being attacked."
+> "There is a big Jewish community in the area - this area is actually in the
+> middle of three Jewish communities.  "Do I feel threatened? Yes. For the
+> Jewish community, once again we are being attacked."
 
-```
-![Video footage showed two gunmen firing assault weapons at police in the street outside the office](http://ichef.bbci.co.uk/news/624/media/images/80124000/jpg/_80124628_025311653-1.jpg)
+![Video footage showed two gunmen firing assault weapons at police in the
+    street outside the office](http://ichef.bbci.co.uk/news/624/media/images/80124000/jpg/_80124628_025311653-1.jpg)
 
 ![France has been left reeling from the brutal attack](http://ichef.bbci.co.uk/news/624/media/images/80124000/jpg/_80124630_025308133-1.jpg)
-```
 
 'Rivers of blood'
 
@@ -3550,7 +3664,6 @@ Golda, shopper
     These guys were serious.... At first I thought it was special forces
     chasing drug traffickers or something."
 
-```
 ![Vigil（~~戒严~~祈福） held in Sète, France](http://ichef.bbci.co.uk/live-experience/cps/704/mcs/media/images/80126000/jpg/_80126207_joeytranchinasetevigil.jpg)
 
 ![Police officers stand guard outside a flat in Reims as investigators search inside.](http://ichef.bbci.co.uk/live-experience/cps/704/mcs/media/images/80126000/jpg/_80126297_025315148-1.jpg)
@@ -3562,9 +3675,8 @@ Golda, shopper
 ![Barbaric](http://ichef.bbci.co.uk/live-experience/cps/512/mcs/media/images/80125000/png/_80125156_mirror.png)
 
 ![Victims lay on the pavement in a Paris restaurant Nov. 13, 2015.](http://gnat.qiniudn.com/paris-in-terror/paris-in-terror.png)
-```
 
-法国人唱着国歌撤离球场。What a feel，a hard one。
+法国人唱着国歌撤离球场。
 
 Ernest Hemingway (*For Whom the Bell Tolls*):
 
@@ -3579,15 +3691,13 @@ Refs
 #. [Paris attacks: Suspects' profiles - BBC News](http://www.bbc.com/news/world-europe-30722038)
 #. [Paris attacks: Dozens killed in series of terror attacks across French capital - CBS News](http://www.cbsnews.com/news/paris-explosion-stadium-shootout-restaurant/)
 
-1447425369: 翻转屏幕
---------------------
+---
 
 <kbd>Control</kbd> + <kbd>Alt</kbd> + <kbd>Up</kbd>/<kbd>Down</kbd>/<kbd>Left</kbd>/<kbd>Right</kbd>
 
 不知道的话，突然碰到可能会有点不知所措。
 
-1447248588: 把爬虫放进来
-------------------------
+---
 
 为了把爬虫放进来[^qiniu-robots-default]，参考 [The Web Robots Pages](http://www.robotstxt.org/robotstxt.html) 写了一个 robots.txt，里面只有两行：
 
@@ -3599,3 +3709,13 @@ Disallow:
 加了后去百度的 [Robots_站长工具_robots文件检测及生成](http://zhanzhang.baidu.com/robots) 看看生效没。
 
 [^qiniu-robots-default]: 七牛默认在每个 bucket 加了一个 robots 文件，禁止所有爬虫的爬取。
+
+<!--...-->
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<script>
+$(function() {
+    $( ".tzx-tabs" ).tabs();
+});
+</script>

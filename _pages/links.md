@@ -157,3 +157,9 @@ Links | 链签
 #. [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
 #. [首页 » 张鑫旭-鑫空间-鑫生活](http://www.zhangxinxu.com/)
 #. [黄正华的教学信息页面](http://aff.whu.edu.cn/huangzh/)
+
+
+http://tools.ietf.org/pdf/usage.shtml
+http://www.rfcreader.com/
+http://ietfreport.isoc.org/rfc/PDF/
+
