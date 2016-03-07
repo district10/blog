@@ -14,7 +14,7 @@ or <http://blog.tangzhixiong.com>
 
 ## Warning
 
-Only Personal Usage。文档不全，谨慎 fork。
+文档不全，谨慎 fork。
 
 ## Configure Editor
 
@@ -29,11 +29,14 @@ For Linux
 
 ## Deps
 
-1. ansi color converter
-2. git
-3. watch
-4. makefile
-5. shell
+* git
+* make (Makefile)
+* shell (Bash)
+* pandoc
+
+Optionals
+
+* tj/watch
 
 ## Usage
 
@@ -41,14 +44,23 @@ just `make`
 
 ## Workflow
 
+workflow 1
+
 0. `/usr/local/bin/watch -i 300ms -q make` (not work on windows)
 1. write md file & save
 2. browser auto refresh
 3. that's it
 
+workflow 2
+
+* edit file
+* `make`
+* `make qn`（同步到七牛云）
+* `make gh`（同步到 GitHub）
+
 ## Utils
 
-Compress images
+compress images
 
 ```bash
 #!/bin/bash
