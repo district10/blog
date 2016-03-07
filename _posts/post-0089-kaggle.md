@@ -37,7 +37,14 @@ The confidence to go forward and compete for some serious `$$$$$$`.
 </div>
 
 <div id="p26line24">
-* [Frequently Asked Questions - Titanic: Machine Learning from Disaster | Kaggle](https://www.kaggle.com/c/titanic/details/frequently-asked-questions)
+[Frequently Asked Questions - Titanic: Machine Learning from Disaster | Kaggle](https://www.kaggle.com/c/titanic/details/frequently-asked-questions)
+:   nil
+
+[Further Reading / Watching - Titanic: Machine Learning from Disaster | Kaggle](https://www.kaggle.com/c/titanic/details/further-reading-watching)
+:   readings
+
+    #. [Getting Started with Pandas – Predicting SAT Scores for New York City Schools | no free hunch](http://blog.kaggle.com/2013/01/17/getting-started-with-pandas-predicting-sat-scores-for-new-york-city-schools/)
+
 </div>
 
 <div id="p60line34">
