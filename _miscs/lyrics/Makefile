@@ -27,8 +27,9 @@ $(LYRICS): $(INDIR)/_a.md $(INDIR)/_b.md $(INDIR)/_c.md $(INDIR)/_d.md $(INDIR)/
 $(PODIR)/%.html: $(INDIR)/%-a.md $(INDIR)/%-b.md $(INDIR)/%-c.md
 	$(GEN) $@
 
+index: $(LRCIDX)
 $(LRCIDX): $(LYRICS)
-	$(IDX) $^
+	$(IDX) $(LYRICS)
 
 s: song
 song: make
