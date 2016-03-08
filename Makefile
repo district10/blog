@@ -60,6 +60,7 @@ EDITS = \
 		_pages/notes.md \
 		_pages/reads.md \
 		_pages/koans.md \
+		_posts/ \
 
 it:
 	$(EDITOR) -p $(EDITS)

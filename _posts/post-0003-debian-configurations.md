@@ -383,7 +383,7 @@ Windows 二进制：<http://gnat.qiniudn.com/ag.exe>
 
 比如，用 `ag`{.bash} 搜索 three.js 中的 “fisheye”，基本是回车即显：
 
-![ag - The Silver Searcher](http://upload-images.jianshu.io/upload_images/29284-f35d07a835d53bad.png)
+![ag - The Silver Searcher](http://whudoc.qiniudn.com/ag-fisheye.png)
 
 tmux & [tmuxinator](https://github.com/tmuxinator/tmuxinator)
 
