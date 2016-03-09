@@ -154,7 +154,7 @@ etc
     `[bt::Kernel]`（服务器核心）。
 
     各模块的主要工作：
-    
+
     #. 【认证模块】| `[bt::Auth]`
         i. 登录验证
         #. 权限控制
@@ -358,23 +358,23 @@ i. 减轻了客户端的安装压力
 
 :   `[bt::Kernel]` 应能处理多并发访问，有用足够的 IO 带宽，
     对每个用户的响应时间小于一定阈值（比如：resThresh = 300ms）。
-    
+
     `[bt::Database]` 支持查询优化。……
-    
+
     `[bt::Auth]` 应能满足用户第三方登录需求，满足用户通过邮箱、手机重置密码的需求，
     认证响应时间小于一定阈值（比如 authThresh = 400ms）。
-    
+
     `[bt::Logger]` 及时将所有信息记录下来。
-    
+
 客户端处理能力要求
 
 :   `[bt::Client]` 应能保存一些离线数据，在偶然断网情况下也能浏览。
 
     `[bt::Agent]` 应能把本地账户信息（由 `[bt::SessionLogger]` 收集）提交到中心服务器。
-    
+
     `[bt::BridgeEditor]` 和 `[bt::TextureEditor]` 应能充分利用计算机 GPU 能力，减少卡顿，
     并不应影响主界面消息循环线程。在三维浏览、编辑模块卡死时能重置这个模块。
-    
+
     `[bt::SessionLogger]` 应能记录用户的浏览操作，保存在当前账户中。
 
 系统稳定性指标
@@ -390,7 +390,7 @@ i. 减轻了客户端的安装压力
     #. 另一方面，数据库要定期差异备份和完全备份
     #. 可以考虑选用第三方 CDN 云存储服务
       （避免自己考虑数据的安全性和并发访问能力）
-    
+
 ### 系统测试需求
 
 #### 测试指标
@@ -604,7 +604,7 @@ Dock
     * 用 OSG 默认的几个
     * 自己再继承一个（实现位置的切换）
         + note: 主要是 `getMatrix()`{.cpp}（位置姿态）、`getInverseMatrix()`{.cpp}、`handle()`{.cpp}（键鼠）
-        
+
 杂七杂八的 Note：
 
 ```cpp
@@ -622,14 +622,14 @@ if ( !applied ) {
 }
 
 // more snippets
-osg::Matrix osg::Matrixd::rotate( dx, osg::X_AXIS, 
+osg::Matrix osg::Matrixd::rotate( dx, osg::X_AXIS,
                                   dy, .....Y.....,
                                   dz, .....Z..... );
 * osg::GUIEventHandlerAdapter
     + KEYDOWN（键盘）
     + PUSH（单击）
     + DRAG（从代码上看更像是 MOVE）
-    
+
 // osg 里的矩阵运算用的是左乘
 current pose = rot * trans
 
@@ -747,13 +747,13 @@ Koan
 
     ```cmake
     cmake_minimum_required(VERSION 2.8)
-    
+
     project( CloudCompare )
-    
+
     set( VERSION_MAJOR 2 )
     set( VERSION_MINOR 7 )
     set( VERSION_PATCH 0 )
-    
+
     include_directories( ${GLEW_LIB_SOURCE_DIR}/include )
     include_directories( ${CC_FBO_LIB_SOURCE_DIR}/include )
     include_directories( ${CC_CORE_LIB_SOURCE_DIR}/include )
@@ -771,27 +771,27 @@ Koan
     include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/../libs/qxt )
     include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/../libs/qcustomplot )
     include_directories( ${CMAKE_CURRENT_BINARY_DIR} )
-    
+
     # QCustomPlot
     set( QCUSTOMPLOT_HEADERS ../libs/qcustomplot/qcustomplot.h )
     set( QCUSTOMPLOT_SOURCES ../libs/qcustomplot/qcustomplot.cpp )
-    
+
     file( GLOB header_list *.h db_tree/*.h ${QXT_HEADERS} ${QCUSTOMPLOT_HEADERS} )
     file( GLOB source_list *.cpp db_tree/*.cpp ${QXT_SOURCES} ${QCUSTOMPLOT_SOURCES} )
-    
+
     # 3DX support (3dConnexion devices)
     if ( ${OPTION_SUPPORT_3DCONNEXION_DEVICES} )
         file( GLOB 3DX_header_list devices/3dConnexion/*.h )
         file( GLOB 3DX_source_list devices/3dConnexion/*.cpp )
         list( APPEND header_list ${3DX_header_list} )
         list( APPEND source_list ${3DX_source_list} )
-    endif()	
-    
+    endif()
+
     file( GLOB ui_list ui_templates/*.ui )
     file( GLOB qrc_list *.qrc )
     #file( GLOB rc_list *.rc )
     file( GLOB txt_list TODO.txt bin_other/history.txt )
-    
+
     if ( USE_QT5 )
         qt5_wrap_ui( generated_ui_list ${ui_list} )
         qt5_add_resources( generated_qrc_list ${qrc_list} )
@@ -802,12 +802,12 @@ Koan
         qt4_wrap_ui( generated_ui_list ${ui_list} )
         qt4_add_resources( generated_qrc_list ${qrc_list} )
     endif()
-    
+
     # App icon with MSVC
     if( MSVC )
         set( rc_list images/icon/cc_icon.rc )
     endif()
-    
+
     if( MSVC )
         #to get rid of the (system) console
         add_executable( ${PROJECT_NAME} WIN32 ${header_list} ${source_list} ${moc_list} ${generated_ui_list} ${generated_qrc_list} ${rc_list} ${resource_list} ${txt_list} )
@@ -816,7 +816,7 @@ Koan
     else()
         add_executable( ${PROJECT_NAME} ${header_list} ${source_list} ${moc_list} ${generated_ui_list} ${generated_qrc_list} ${rc_list} ${resource_list} ${txt_list} )
     endif()
-    
+
     target_link_libraries( ${PROJECT_NAME} GLEW_LIB )
     target_link_libraries( ${PROJECT_NAME} CC_FBO_LIB )
     target_link_libraries( ${PROJECT_NAME} CC_CORE_LIB )
@@ -824,23 +824,23 @@ Koan
     target_link_libraries( ${PROJECT_NAME} QCC_IO_LIB )
     target_link_libraries( ${PROJECT_NAME} QCC_GL_LIB )
     target_link_libraries( ${PROJECT_NAME} ${EXTERNAL_LIBS_LIBRARIES} )
-    
+
     if ( USE_QT5 )
         if (WIN32)
             target_link_libraries( ${PROJECT_NAME} Qt5::WinMain )
         endif()
         qt5_use_modules(${PROJECT_NAME} Core Gui Widgets OpenGL PrintSupport)
     endif()
-    
+
     # contrib. libraries support
     target_link_contrib( ${PROJECT_NAME} ${CLOUDCOMPARE_DEST_FOLDER} )
-    
+
     # 3dConnexion devices support
     target_link_3DXWARE( ${PROJECT_NAME} )
-    
+
     # Default preprocessors
     set_default_cc_preproc( ${PROJECT_NAME} )
-    
+
     # Add custom preprocessor definitions
     set_property( TARGET ${PROJECT_NAME} APPEND PROPERTY COMPILE_DEFINITIONS USE_GLEW GLEW_STATIC )
     if( WIN32 )
@@ -849,50 +849,50 @@ Koan
             SET_TARGET_PROPERTIES(${PROJECT_NAME} PROPERTIES LINK_FLAGS " /MANIFEST:NO")
         endif()
     endif()
-    
+
     #set_property( TARGET ${PROJECT_NAME} APPEND PROPERTY COMPILE_DEFINITIONS_RELEASE XXX) #nothing right now
     #set_property( TARGET ${PROJECT_NAME} APPEND PROPERTY COMPILE_DEFINITIONS_DEBUG XXX) #nothing right now
-    
+
     # App icon with Code::Blocks/MinGW
     if( WIN32 )
         if( MINGW )
             add_custom_command( TARGET ${PROJECT_NAME} PRE_BUILD COMMAND windres -i ${CMAKE_CURRENT_SOURCE_DIR}/images/icon/cc_icon.rc --input-format=rc -o ${CMAKE_CURRENT_BINARY_DIR}/cc_icon.res -O coff )
         endif()
     endif()
-    
+
     # install program
     install_ext( TARGETS ${PROJECT_NAME} ${CLOUDCOMPARE_DEST_FOLDER} )
-    
+
     # Auxiliary files
     set( auxFiles bin_other/history.txt bin_other/license.txt bin_other/global_shift_list_template.txt )
-    
+
     if( WIN32 )
         # Export Qt dlls
         install_Qt_Dlls( ${CLOUDCOMPARE_DEST_FOLDER} )
         install_Qt_ImageFormats( ${CLOUDCOMPARE_DEST_FOLDER} )
         install_Qt5_plugins( ${CLOUDCOMPARE_DEST_FOLDER} )
-    
+
         # Additional auxiliary file(s)
         list( APPEND auxFiles bin_other/start.bat )
     endif()
-    
+
     # Install auxiliary files
     foreach( filename ${auxFiles} )
         install_ext( FILES ${filename} ${CLOUDCOMPARE_DEST_FOLDER} )
     endforeach()
-    
+
     # in order to ensure that everything else is installed first, put the Mac bundling in its own subdirectory
     if( APPLE )
     set_property( TARGET ${PROJECT_NAME} PROPERTY MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_SOURCE_DIR}/Mac/CloudCompare.plist )
-    
-    set( MACOSX_BUNDLE_ICON_FILE cc_icon.icns ) 
+
+    set( MACOSX_BUNDLE_ICON_FILE cc_icon.icns )
     set( MACOSX_BUNDLE_SHORT_VERSION_STRING "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}" )
     set( MACOSX_BUNDLE_LONG_VERSION_STRING "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}" )
     set( MACOSX_BUNDLE_BUNDLE_VERSION "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}" )
-    
+
     add_subdirectory( Mac )
     endif()
-    
+
     # Export common shader files to all install destinations
     if( APPLE )
     install( FILES ${CC_FBO_LIB_SOURCE_DIR}/bilateral/bilateral.frag DESTINATION ${CLOUDCOMPARE_MAC_BASE_DIR}/Contents/Shaders )
@@ -909,7 +909,7 @@ Koan
     endif()
     ```
 
-    
+
 配置的读取，
 
 理论上应该支持
@@ -991,9 +991,9 @@ menu.exec(m_dbTreeWidget->mapToGlobal(menuPos));
 关于 contextMenuPolicy : Qt::ContextMenuPolicy
 
 > The default value of this property is `Qt::DefaultContextMenu`{.cpp},
-> which means the `contextMenuEvent()`{.cpp} handler is called. 
-> Other values are `Qt::NoContextMenu`{.cpp}, `Qt::PreventContextMenu`{.cpp}, 
-> `Qt::ActionsContextMenu`{.cpp}, and `Qt::CustomContextMenu`{.cpp}. 
+> which means the `contextMenuEvent()`{.cpp} handler is called.
+> Other values are `Qt::NoContextMenu`{.cpp}, `Qt::PreventContextMenu`{.cpp},
+> `Qt::ActionsContextMenu`{.cpp}, and `Qt::CustomContextMenu`{.cpp}.
 > **With `Qt::CustomContextMenu`{.cpp}, the signal customContextMenuRequested() is emitted.**
 
 图片列表
@@ -1018,7 +1018,7 @@ colorPix.fill( colorRed );
 QAction *colorAction = new QAction( colorName, this );
 colorAction->setData( colorRed );
 colorAction->setIcon( colorPix );
-connect( colorAction, SIGNAL(triggered()), 
+connect( colorAction, SIGNAL(triggered()),
          this, SLOT(changeColorToRed()) );
 
 QToolButton *colorBtn = new QToolButton;
@@ -1051,7 +1051,7 @@ model->setItem(0, 0, item);
 ui->tableView->setModel(model);
 
 // method 2(tried out)
-QStandardItem *item = 
+QStandardItem *item =
     new QStandardItem( QIcon(QPixmap(filename).scaledToHeight(40)), Utils::basename( filename ) );
 model->appendRow( item ); // 会缩放至行高
 ```
@@ -1073,7 +1073,7 @@ QVariant CustomSqlTableModel::data(const QModelIndex &idx, int role = Qt::Displa
     if (idx.column() == imageColumn) {
         QString imgFile = QSqlTableModel::data(idx, Qt::DisplayRole); // get path string
 
-        if (role == Qt::DisplayRole) 
+        if (role == Qt::DisplayRole)
             return QString(); // return the path string for display role
 
         QImage image(imgFile);
@@ -1133,7 +1133,7 @@ using namespace std;
 int main() {
     StringBuffer s;
     Writer<StringBuffer> writer(s);
-    
+
     writer.StartObject();
     writer.String("hello");
     writer.String("world");
@@ -1176,7 +1176,7 @@ struct MyHandler {
     bool Int64(int64_t i) { cout << "Int64(" << i << ")" << endl; return true; }
     bool Uint64(uint64_t u) { cout << "Uint64(" << u << ")" << endl; return true; }
     bool Double(double d) { cout << "Double(" << d << ")" << endl; return true; }
-    bool String(const char* str, SizeType length, bool copy) { 
+    bool String(const char* str, SizeType length, bool copy) {
         cout << "String(" << str << ", " << length << ", " << boolalpha << copy << ")" << endl;
         return true;
     }

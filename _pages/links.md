@@ -163,3 +163,4 @@ Links | 链签
 #. [黄正华的教学信息页面](http://aff.whu.edu.cn/huangzh/)
 
 #. [THINKING MEGANE](http://blog.monochromegane.com/)
+#. [Krzysztof Kowalczyk](http://blog.kowalczyk.info/) `SumatraPDF`

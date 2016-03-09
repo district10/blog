@@ -66,7 +66,9 @@ Ceglowsik 维护了一个 Pinboard 博客，分享 Pinboard 新特性，网站�
 附: [得到 Ceglowski 的 37 美元，他们怎么花？][how-to-spend]
 -----------------------------------------------------------
 
+<div class="tzx-fright">
 ![][ceglowski-pic]
+</div>
 
 Ceglowski 现在已是硅谷的著名风投，上文提到的 37 美元被称为是 **coveted prize**（别看钱少）。
 那获奖的六个团队准备怎么花呢？

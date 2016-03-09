@@ -44,8 +44,6 @@
 
 ![MIKA，《The Good Guys》](http://gnat.qiniudn.com/pics/MIKA.png)
 
-![花裙子姑娘](http://gnat.qiniudn.com/pics/Nobody.png)
-
 ![Sacha Chua，Emacs Chat 博主，程序员](http://gnat.qiniudn.com/pics/Sacha_Chua.png)
 
 ![Tony Leung Chiu Wai，眼睛最好看的梁朝伟](http://gnat.qiniudn.com/pics/Tony_Leung_Chiu_Wai.png)

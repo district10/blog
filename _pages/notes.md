@@ -31,12 +31,53 @@ pre {
 
 <!--...-->
 
+
+---
+
+* If ... Else ... Paradigm
+
+* [Cognitive Bias](http://en.wikipedia.org/wiki/List_of_cognitive_biases)
+* [The 12 Cognitive Bias that Prevent you from Being Rational](http://io9.com/5974468/the-most-common-cognitive-biases-that-prevent-you-from-being-rational)
+* [心智工具箱（4）：执行意图 | 阳志平的日志](http://www.douban.com/note/256480522/)
+
+---
+
+
+* [Language Tags in HTML and XML | W3C](http://www.w3.org/International/articles/language-tags/)
+
+
+vim
+
+- `:b <TAB>`, list buffers.
+- `:b PATTERN<TAB>`, list buffers.
+- `:set readonly`
+- `:set nomodifable`
+- `:setlocal textwidth=70`
+- `:ls`, or `:buffers`, `:files`, `:b 5`
+- `:bdelete`
+- `:help ctrl-w`
+- `:ball`, open all buffers in current window
+- `ctrl-w o`, leave only one window
+- `:help 'switchbuf'`
+- `:rew[ind]`, `:E`, `:e .`
+- `ctrl-o`, older position
+- in dir listing:
+    + `o`, `v`: open, open vertically
+    + `t`: tab open
+    + `p`: preview window
+- `ctrl-o`, `ctrl-i`, back and forth
+- ` `` `, last position, ` `. `, last edit, read more `:help jumplist`
+- `:Sex .`
+
 [我不是为她出发，却为她到达。](http://bbs.nju.edu.cn/bbstcon?board=Girls&file=M.1457382613.A)
 
-:   绝大部分20左右的小伙子，心里想的都是付出、责任。他们可能没那么多花招，但是
+:   `ZAK 同学喜欢`{.tzx-tag}
+
+    ```tzx-bigquote
+    绝大部分 20 左右的小伙子，心里想的都是付出、责任。他们可能没那么多花招，但是
     愿意做一切喜欢的女孩希望的事情。
 
-    20左右的小姑娘，心里只想着享受，每天纠结于霸道总裁还是知性暖男，韩国偶吧还
+    20 左右的小姑娘，心里只想着享受，每天纠结于霸道总裁还是知性暖男，韩国偶吧还
     是欧美猛男。总说再不疯狂就老了，总想着轰轰烈烈的恋爱。
 
     这时的小伙子想的都是奋斗、闯荡，他们会为自己不如其他小伙子而羞愧，渴望着有
@@ -61,6 +102,23 @@ pre {
     她不美丽，却愿意对我笑。
 
     我不是为她出发，却为她到达。
+    ```
+
+    两条有意思的回复：
+      ~ 公主不是夜总会里的么，600 一个，包夜 1000 多。
+      ~ ```tzx-bigquote
+        20 岁左右的姑娘遇到一个穷小伙。
+        她觉得自己喜欢一个人，养他都行。
+        然后姑娘读博去了。
+        小伙子回家乡了工作了。
+        小伙子很快结婚了。
+        姑娘成了大龄单身女博士。
+        同龄的男博士们都去找 20 的小姑娘了。
+        并不是所有 20 岁的小姑娘都在寻欢作乐，有的搞学习，做实验去了。
+        然后就浪费了青春，成了被人嫌弃的女博士。
+        为什么你一开始目光都在小公主身上，到最后才发现小村姑呢。
+        其实小村姑很多，长得不好看，在这个看脸的社会，你根本看不到。
+        ```
 
 [scientific-python-lectures](http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb)
 
@@ -268,7 +326,7 @@ Python2 & Python3 on Windows: `python3.bat`
 
 附 [In My Secret Life][in-my-secret-life] 的 [歌词][in-my-secret-life-lyrics]：
 
-:   plain
+:   ```tzx-bigquote
     I saw you this morning.
     You were moving so fast.
     Can't seem to loosen my grip
@@ -421,7 +479,6 @@ Eye exercise for speed reading:
 :   ![](http://upload.wikimedia.org/wikipedia/commons/3/3c/Eye-exercise-for-speed-reading_thumb.gif)
 
 Refs & See also
-
 :   * [Visual acuity - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Visual_acuity)
     * [Fixation (visual) - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Fixation_(visual))
     * [Subvocalization - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Subvocalization)
@@ -430,6 +487,8 @@ Refs & See also
     * [Tony Buzan - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Tony_Buzan)
     * [Saccade - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Saccade)
     * [Speed reading - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Speed_reading)
+
+---
 
 - **Close your eyes.** Do this sitting up to prevent you from falling asleep.
 
@@ -512,16 +571,91 @@ Refs & See also
 
 ---
 
-* [Pierre de Fermat](http://en.wikipedia.org/wiki/Pierre_de_Fermat)
-* [Johannes Kepler](http://en.wikipedia.org/wiki/Johannes_Kepler)
-* [Sir George Stokes, 1st Baronet](http://en.wikipedia.org/wiki/Sir_George_Stokes,_1st_Baronet)
-* [Richard Dedekind](http://en.wikipedia.org/wiki/Richard_Dedekind)
+[Pierre de Fermat](http://en.wikipedia.org/wiki/Pierre_de_Fermat)
 
-![dedekind-portrait](http://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Dedekind.jpeg/180px-Dedekind.jpeg)
+:   <div class="tzx-fright">
+    ![Pierre de Fermat](https://upload.wikimedia.org/wikipedia/commons/f/f3/Pierre_de_Fermat.jpg)
+    </div>
+
+    Pierre de Fermat (French: `[pjɛːʁ dəfɛʁma]`; 17 August 1601 – 12 January 1665)
+    was a French lawyer at the Parlement of Toulouse, France, and a
+    mathematician who is given credit for early developments that led to
+    infinitesimal calculus, including his technique of adequality. In
+    particular, he is recognized for his discovery of an original method of
+    finding the greatest and the smallest ordinates of curved lines, which is
+    analogous to that of the differential calculus, then unknown, and his
+    research into number theory. He made notable contributions to analytic
+    geometry, probability, and optics. He is best known for Fermat's Last
+    Theorem, which he described in a note at the margin of a copy of
+    Diophantus' Arithmetica.
+
+[Johannes Kepler](http://en.wikipedia.org/wiki/Johannes_Kepler)
+
+:   <div class="tzx-fright">
+    ![A 1610 portrait of Johannes Kepler by an unknown artist](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Johannes_Kepler_1610.jpg/330px-Johannes_Kepler_1610.jpg)
+    </div>
+
+    Johannes Kepler (German: `[ˈkɛplɐ]`; December 27, 1571 – November 15, 1630)
+    was a German mathematician, astronomer, and astrologer. A key figure in the
+    17th century scientific revolution, he is best known for his laws of
+    planetary motion, based on his works Astronomia nova, Harmonices Mundi, and
+    Epitome of Copernican Astronomy. These works also provided one of the
+    foundations for Isaac Newton's theory of universal gravitation.
+
+    During his career, Kepler was a mathematics teacher at a seminary school in
+    Graz, Austria, where he became an associate of Prince Hans Ulrich von
+    Eggenberg. Later he became an assistant to astronomer Tycho Brahe, and
+    eventually the imperial mathematician to Emperor Rudolf II and his two
+    successors Matthias and Ferdinand II. He was also a mathematics teacher in
+    Linz, Austria, and an adviser to General Wallenstein. Additionally, he did
+    fundamental work in the field of optics, invented an improved version of
+    the refracting telescope (the Keplerian Telescope), and mentioned the
+    telescopic discoveries of his contemporary Galileo Galilei.
+
+    Kepler lived in an era when there was no clear distinction between
+    astronomy and astrology, but there was a strong division between astronomy
+    (a branch of mathematics within the liberal arts) and physics (a branch of
+    natural philosophy). Kepler also incorporated religious arguments and
+    reasoning into his work, motivated by the religious conviction and belief
+    that God had created the world according to an intelligible plan that is
+    accessible through the natural light of reason. Kepler described his new
+    astronomy as "celestial physics", as "an excursion into Aristotle's
+    Metaphysics", transforming the ancient tradition of physical cosmology by
+    treating astronomy as part of a universal mathematical physics.
+
+[Richard Dedekind](http://en.wikipedia.org/wiki/Richard_Dedekind)
+
+:   <div class="tzx-fright">
+    ![Richard Dedekind](http://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Dedekind.jpeg/180px-Dedekind.jpeg)
+    </div>
+
+    Julius Wilhelm Richard Dedekind (6 October 1831 – 12 February 1916) was a
+    German mathematician who made important contributions to abstract algebra
+    (particularly ring theory), algebraic number theory and the definition of
+    the real numbers.
+
+[Sir George Stokes, 1st Baronet](http://en.wikipedia.org/wiki/Sir_George_Stokes,_1st_Baronet)
+
+:   <div class="tzx-fright">
+    ![](https://upload.wikimedia.org/wikipedia/commons/a/ad/Ggstokes.jpg)
+    </div>
+
+    Sir George Gabriel Stokes, 1st Baronet, PRS (`/stoʊks/`; 13 August 1819 –
+    1 February 1903), was a mathematician, physicist, politician and theologian.
+    Born in Ireland, Stokes spent all of his career at University of Cambridge,
+    where he served as the Lucasian Professor of Mathematics from 1849 until
+    his death in 1903. Stokes made seminal contributions to fluid dynamics
+    (including the Navier–Stokes equations), optics, and mathematical physics
+    (including the first version of what is now known as Stokes' theorem). He
+    was secretary, then president, of the Royal Society.
 
 [René Descartes](http://en.wikipedia.org/wiki/Ren%C3%A9_Descartes)
 
-:   René Descartes (`/ˈdeɪˌkɑrt/`, French: `[ʁəne dekaʁt]`, 31 March 1596 – 11
+:   <div class="tzx-fright">
+    ![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg/360px-Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg)
+    </div>
+
+    René Descartes (`/ˈdeɪˌkɑrt/`, French: `[ʁəne dekaʁt]`, 31 March 1596 – 11
     February 1650) was a French philosopher, mathematician and writer who spent
     most of his life in the Dutch Republic. He has **been dubbed the father of
     modern philosophy**, and much subsequent Western philosophy is a response
@@ -1071,79 +1205,316 @@ Refs & See also
 
 ---
 
-<div class="tzx-fright">
-![Leonhard Euler](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Leonhard_Euler_2.jpg/220px-Leonhard_Euler_2.jpg)
-</div>
+[Leonhard Euler](https://en.wikipedia.org/wiki/Leonhard_Euler)
 
-[Leonhard Euler] (`/ˈɔɪlər/ oy-lər`;) (15 April 1707 – 18 September 1783) was a
-pioneering **Swiss mathematician and physicist**. He made important discoveries
-in fields as diverse as infinitesimal calculus and graph theory. He also
-introduced much of the modern mathematical terminology and notation,
-particularly for mathematical analysis, such as the notion of a mathematical
-function. He is also renowned for his work in mechanics, fluid dynamics,
-optics, astronomy, and music theory.
+:   <div class="tzx-fright">
+    ![Leonhard Euler](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Leonhard_Euler_2.jpg/220px-Leonhard_Euler_2.jpg)
+    </div>
 
-无穷小量积分、图论，现代的数学命名和标记
+    Leonhard Euler (`/ˈɔɪlər/ oy-lər`;) (15 April 1707 – 18 September 1783) was
+    a pioneering **Swiss mathematician and physicist**. He made important
+    discoveries in fields as diverse as infinitesimal calculus and graph
+    theory. He also introduced much of the modern mathematical terminology and
+    notation, particularly for mathematical analysis, such as the notion of a
+    mathematical function. He is also renowned for his work in mechanics, fluid
+    dynamics, optics, astronomy, and music theory.
 
-Euler is considered to be the **pre-eminent mathematician of the 18th century**
-and one of the greatest mathematicians to have ever lived. He is also one of
-the most prolific mathematicians; his collected works fill 60–80 [quarto（四开
-）] volumes. He spent most of his adult life in St. Petersburg, Russia, and in
-Berlin, Prussia.
+    无穷小量积分、图论，现代的数学命名和标记
 
-A statement attributed to Pierre-Simon Laplace expresses Euler's influence on
-mathematics: "*Read Euler, read Euler, he is the master of us all.*"
+    Euler is considered to be the **pre-eminent mathematician of the 18th
+    century** and one of the greatest mathematicians to have ever lived. He is
+    also one of the most prolific mathematicians; his collected works fill 60–
+    80 [quarto（四开）](http://en.wikipedia.org/wiki/Quarto) volumes. He spent
+    most of his adult life in St.  Petersburg, Russia, and in Berlin, Prussia.
 
-[Leonhard Euler]: https://en.wikipedia.org/wiki/Leonhard_Euler
-[quarto（四开）]: http://en.wikipedia.org/wiki/Quarto
+    A statement attributed to Pierre-Simon Laplace expresses Euler's influence
+    on mathematics: "*Read Euler, read Euler, he is the master of us all.*"
 
----
+[Karl Weierstrass](http://en.wikipedia.org/wiki/Karl_Weierstrass)
 
-* [Language Tags in HTML and XML | W3C](http://www.w3.org/International/articles/language-tags/)
+:   <div class="tzx-fright">
+    ![Karl Weierstrass](http://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Karl_Weierstrass.jpg/220px-Karl_Weierstrass.jpg)
+    </div>
 
----
+    Karl Theodor Wilhelm Weierstrass (German: `Weierstraß`; 31 October 1815 –
+    19 February 1897) was a German mathematician often cited as the "father of
+    modern analysis". Despite leaving university without a degree, he studied
+    mathematics and trained as a teacher, eventually teaching mathematics,
+    physics, botany and gymnastics.
 
-<div class="tzx-fleft">
-![Karl Weierstrass](http://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Karl_Weierstrass.jpg/220px-Karl_Weierstrass.jpg)
-</div>
+    Weierstrass formalized the definition of the continuity of a function, and
+    used it and the concept of uniform convergence to prove the Bolzano–
+    Weierstrass theorem and Heine–Borel theorem.
 
-* [Karl Weierstrass](http://en.wikipedia.org/wiki/Karl_Weierstrass)
 
-![Joseph-Louis Lagrange](http://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Lagrange_portrait.jpg/200px-Lagrange_portrait.jpg)
+[Joseph-Louis Lagrange](http://en.wikipedia.org/wiki/Joseph-Louis_Lagrange)
 
-* [Joseph-Louis Lagrange](http://en.wikipedia.org/wiki/Joseph-Louis_Lagrange)
+:   <div class="tzx-fright">
+    ![Joseph-Louis Lagrange](http://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Lagrange_portrait.jpg/200px-Lagrange_portrait.jpg)
+    </div>
 
-* [James Stirling]
+    Joseph-Louis Lagrange (`/ləˈɡrɑːndʒ/` or /ləˈɡreɪndʒ/; French: `[laˈgrɑ̃ʒ]`),
+    born Giuseppe Lodovico Lagrangia or Giuseppe Ludovico De la Grange
+    Tournier (also reported as Giuseppe Luigi Lagrange or Lagrangia) (25
+    January 1736 – 10 April 1813), was an Italian Enlightenment Era
+    mathematician and astronomer. He made significant contributions to the
+    fields of analysis, number theory, and both classical and celestial
+    mechanics.
+
+    In 1766, on the recommendation of Euler and d'Alembert, Lagrange succeeded
+    Euler as the director of mathematics at the Prussian Academy of Sciences in
+    Berlin, Prussia, where he stayed for over twenty years, producing volumes
+    of work and winning several prizes of the French Academy of Sciences.
+    Lagrange's treatise on analytical mechanics (Mécanique analytique, 4. ed.,
+    2 vols. Paris: Gauthier-Villars et fils, 1888–89), written in Berlin and
+    first published in 1788, offered the most comprehensive treatment of
+    classical mechanics since Newton and formed a basis for the development of
+    mathematical physics in the nineteenth century.
+
+    In 1787, at age 51, he moved from Berlin to Paris and became a member of
+    the French Academy. He remained in France until the end of his life. He was
+    significantly involved in the decimalisation in Revolutionary France,
+    became the first professor of analysis at the École Polytechnique upon its
+    opening in 1794, founding member of the Bureau des Longitudes and Senator
+    in 1799.
+
+[James Stirling]
+
+:   <div class="tzx-fright">
+    ![Stirling's grave in Greyfriars Kirkyard, Edinburgh, general view. It is the small plate between the two large tablets.](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Grave_of_James_Stirling_%281692-1770%29%2C_general_view.jpg/330px-Grave_of_James_Stirling_%281692-1770%29%2C_general_view.jpg)
+    </div>
+
+    James Stirling (May 1692 Garden, Stirlingshire – 5 December 1770 Edinburgh)
+    was a Scottish mathematician. The Stirling numbers, Stirling permutations,
+    and Stirling's approximation are named after him. He also proved the
+    correctness of Isaac Newton's classification of cubics.
+
+    Stirling was the third son of Archibald Stirling of Garden, Stirling of
+    Keir (Lord Garden, a lord of session). At 18 years of age he went to
+    Balliol College, Oxford, where, chiefly through the influence of the Earl
+    of Mar, he was nominated (1711) one of Bishop Warner's exhibitioners (or
+    Snell exhibitioner) at Balliol. In 1715 he was expelled on account of his
+    correspondence with members of the Keir and Garden families, who were noted
+    Jacobites, and had been accessory to the "Gathering of the Brig o' Turk" in
+    1708.
 
 [James Stirling]: http://en.wikipedia.org/wiki/James_Stirling_(mathematician)
 
-* [Joseph Fourier](http://en.wikipedia.org/wiki/Joseph_Fourier)
+[Joseph Fourier](http://en.wikipedia.org/wiki/Joseph_Fourier)
 
-![Henri Poincaré](http://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Henri_Poincar%C3%A9-2.jpg/230px-Henri_Poincar%C3%A9-2.jpg)
+:   <div class="tzx-fright">
+    ![Jean-Baptiste Joseph Fourier](https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Fourier2.jpg/375px-Fourier2.jpg)
+    </div>
 
-* [Henri Poincaré](http://en.wikipedia.org/wiki/Henri_Poincar%C3%A9)
+    Jean-Baptiste Joseph Fourier (`/ˈfʊəriˌeɪ, -iər/`; French: `[fuʁje]`; 21
+    March 1768 – 16 May 1830) was a French mathematician and physicist born in
+    Auxerre and best known for initiating the investigation of Fourier series
+    and their applications to problems of heat transfer and vibrations. The
+    Fourier transform and Fourier's law are also named in his honour. Fourier
+    is also generally credited with the discovery of the greenhouse effect.
 
-![Issac Newton](http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/GodfreyKneller-IsaacNewton-1689.jpg/220px-GodfreyKneller-IsaacNewton-1689.jpg)
+    There were three important contributions in this work, one purely
+    mathematical, two essentially physical. In mathematics, Fourier claimed
+    that any function of a variable, whether continuous or discontinuous, can
+    be expanded in a series of sines of multiples of the variable. Though this
+    result is not correct without additional conditions, Fourier's observation
+    that some discontinuous functions are the sum of infinite series was a
+    breakthrough. The question of determining when a Fourier series converges
+    has been fundamental for centuries.  Joseph-Louis Lagrange had given
+    particular cases of this (false) theorem, and had implied that the method
+    was general, but he had not pursued the subject.  Peter Gustav Lejeune
+    Dirichlet was the first to give a satisfactory demonstration of it with
+    some restrictive conditions. This work provides the foundation for what is
+    today known as the Fourier transform.
 
-* [Issac Newton](http://en.wikipedia.org/wiki/Isaac_Newton)
+    One important physical contribution in the book was the concept of
+    dimensional homogeneity in equations; i.e. an equation can be formally
+    correct only if the dimensions match on either side of the equality;
+    Fourier made important contributions to dimensional analysis. The other
+    physical contribution was Fourier's proposal of his partial differential
+    equation for conductive diffusion of heat. This equation is now taught to
+    every student of mathematical physics.
 
-![Henri Lebesgue](http://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Lebesgue_2.jpeg/225px-Lebesgue_2.jpeg)
+[Henri Poincaré](http://en.wikipedia.org/wiki/Henri_Poincar%C3%A9)
 
-* [Henri Lebesgue](http://en.wikipedia.org/wiki/Henri_Lebesgue)
+:   <div class="tzx-fright">
+    ![Henri Poincaré](http://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Henri_Poincar%C3%A9-2.jpg/230px-Henri_Poincar%C3%A9-2.jpg)
+    </div>
 
----
+    Jules Henri Poincaré (French: `[ʒyl ɑ̃ʁi pwɛ̃kaʁe]`; 29 April 1854 – 17 July
+    1912) was a French mathematician, theoretical physicist, engineer, and a
+    philosopher of science. He is often described as a polymath, and in
+    mathematics as The Last Universalist by Eric Temple Bell, since he excelled
+    in all fields of the discipline as it existed during his lifetime.
 
-* If ... Else ... Paradigm
+    As a mathematician and physicist, he made many original fundamental
+    contributions to pure and applied mathematics, mathematical physics, and
+    celestial mechanics. He was responsible for formulating the Poincaré
+    conjecture, which was one of the most famous unsolved problems in
+    mathematics until it was solved in 2002–2003. In his research on the
+    three-body problem, Poincaré became the first person to discover a chaotic
+    deterministic system which laid the foundations of modern chaos theory. He
+    is also considered to be one of the founders of the field of topology.
 
-* [Cognitive Bias](http://en.wikipedia.org/wiki/List_of_cognitive_biases)
-* [The 12 Cognitive Bias that Prevent you from Being Rational](http://io9.com/5974468/the-most-common-cognitive-biases-that-prevent-you-from-being-rational)
-* [心智工具箱（4）：执行意图 | 阳志平的日志](http://www.douban.com/note/256480522/)
+    Poincaré made clear the importance of paying attention to the invariance of
+    laws of physics under different transformations, and was the first to
+    present the Lorentz transformations in their modern symmetrical form.
+    Poincaré discovered the remaining relativistic velocity transformations and
+    recorded them in a letter to Dutch physicist Hendrik Lorentz (1853–1928) in
+    1905. Thus he obtained perfect invariance of all of Maxwell's equations, an
+    important step in the formulation of the theory of special relativity.
 
----
+    The Poincaré group used in physics and mathematics was named after him.
 
-* [Guillaume de l'Hôpital](http://en.wikipedia.org/wiki/Guillaume_de_l%27H%C3%B4pital)
+[Issac Newton](http://en.wikipedia.org/wiki/Isaac_Newton)
 
-![Guillaume de l'Hôpital](http://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Guillaume_de_l%27H%C3%B4pital.jpg/220px-Guillaume_de_l%27H%C3%B4pital.jpg)
+:   <div class="tzx-fright">
+    ![Issac Newton](http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/GodfreyKneller-IsaacNewton-1689.jpg/220px-GodfreyKneller-IsaacNewton-1689.jpg)
+    </div>
+
+    Sir Isaac Newton Kt, PRS (`/ˈnjuːtən/`; 25 December 1642 – 20 March
+    1726/27) was an English physicist and mathematician (described in his own
+    day as a "natural philosopher") who is widely recognised as one of the most
+    influential scientists of all time and a key figure in the scientific
+    revolution. His book Philosophiæ Naturalis Principia Mathematica
+    ("Mathematical Principles of Natural Philosophy"), first published in 1687,
+    laid the foundations for classical mechanics. Newton made seminal
+    contributions to optics, and he shares credit with Gottfried Leibniz for
+    the development of calculus.
+
+    Newton's Principia formulated the laws of motion and universal gravitation,
+    which dominated scientists' view of the physical universe for the next
+    three centuries. By deriving Kepler's laws of planetary motion from his
+    mathematical description of gravity, and then using the same principles to
+    account for the trajectories of comets, the tides, the precession of the
+    equinoxes, and other phenomena, Newton removed the last doubts about the
+    validity of the heliocentric model of the Solar System. This work also
+    demonstrated that the motion of objects on Earth and of celestial bodies
+    could be described by the same principles. His prediction that Earth should
+    be shaped as an oblate spheroid was later vindicated by the measurements of
+    Maupertuis, La Condamine, and others, which helped convince most
+    Continental European scientists of the superiority of Newtonian mechanics
+    over the earlier system of Descartes.
+
+    Newton built the first practical reflecting telescope and developed a
+    theory of colour based on the observation that a prism decomposes white
+    light into the many colours of the visible spectrum. He formulated an
+    empirical law of cooling, studied the speed of sound, and introduced the
+    notion of a Newtonian fluid. In addition to his work on calculus, as a
+    mathematician Newton contributed to the study of power series, generalised
+    the binomial theorem to non-integer exponents, developed a method for
+    approximating the roots of a function, and classified most of the cubic
+    plane curves.
+
+    Newton was a fellow of Trinity College and the second Lucasian Professor of
+    Mathematics at the University of Cambridge. He was a devout but unorthodox
+    Christian and, unusually for a member of the Cambridge faculty of the day,
+    he refused to take holy orders in the Church of England, perhaps because he
+    privately rejected the doctrine of the Trinity. Beyond his work on the
+    mathematical sciences, Newton dedicated much of his time to the study of
+    biblical chronology and alchemy, but most of his work in those areas
+    remained unpublished until long after his death. In his later life, Newton
+    became president of the Royal Society. Newton served the British government
+    as Warden and Master of the Royal Mint.
+
+[Henri Lebesgue](http://en.wikipedia.org/wiki/Henri_Lebesgue)
+
+:   <div class="tzx-fright">
+    ![Henri Lebesgue](http://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Lebesgue_2.jpeg/225px-Lebesgue_2.jpeg)
+    </div>
+
+    Henri Léon Lebesgue (French: `[ɑ̃ʁi leɔ̃ ləbɛɡ]`; June 28, 1875 –
+    July 26, 1941) was a French mathematician most famous for his theory of
+    integration, which was a generalization of the 17th century concept of
+    integration—summing the area between an axis and the curve of a function
+    defined for that axis. His theory was published originally in his
+    dissertation Intégrale, longueur, aire ("Integral, length, area") at the
+    University of Nancy during 1902.
+
+    <div class="tzx-fright">
+    ![Approximation of the Riemann integral by rectangular areas.](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Riemann.gif/330px-Riemann.gif)
+    </div>
+
+    Lebesgue invented a new method of integration to solve this problem.
+    Instead of using the areas of rectangles, which put the focus on the domain
+    of the function, Lebesgue looked at the codomain of the function for his
+    fundamental unit of area. Lebesgue's idea was to first define measure, for
+    both sets and functions on those sets. He then proceeded to build the
+    integral for what he called simple functions; measurable functions that
+    take only finitely many values. Then he defined it for more complicated
+    functions as the least upper bound of all the integrals of simple functions
+    smaller than the function in question.
+
+    Lebesgue integration has the property that every function defined over a
+    bounded interval with a Riemann integral also has a Lebesgue integral, and
+    for those functions the two integrals agree. Furthermore, every bounded
+    function on a closed bounded interval has a Lebesgue integral and there are
+    many functions with a Lebesgue integral that have no Riemann integral.
+
+    <div class="tzx-fleft">
+    ![Method of Lebesgue's integration.](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Integral_of_positive_function.svg/330px-Integral_of_positive_function.svg.png)
+    </div>
+
+    As part of the development of Lebesgue integration, Lebesgue invented the
+    concept of measure, which extends the idea of length from intervals to a
+    very large class of sets, called measurable sets (so, more precisely,
+    simple functions are functions that take a finite number of values, and
+    each value is taken on a measurable set). Lebesgue's technique for turning
+    a measure into an integral generalises easily to many other situations,
+    leading to the modern field of measure theory.
+
+    The Lebesgue integral is deficient in one respect. The Riemann integral
+    generalises to the improper Riemann integral to measure functions whose
+    domain of definition is not a closed interval. The Lebesgue integral
+    integrates many of these functions (always reproducing the same answer when
+    it did), but not all of them. For functions on the real line, the Henstock
+    integral is an even more general notion of integral (based on Riemann's
+    theory rather than Lebesgue's) that subsumes both Lebesgue integration and
+    improper Riemann integration. However, the Henstock integral depends on
+    specific ordering features of the real line and so does not generalise to
+    allow integration in more general spaces (say, manifolds), while the
+    Lebesgue integral extends to such spaces quite naturally.
+
+[Guillaume de l'Hôpital](http://en.wikipedia.org/wiki/Guillaume_de_l%27H%C3%B4pital)
+
+:   <div class="tzx-fright">
+    ![Guillaume de l'Hôpital](http://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Guillaume_de_l%27H%C3%B4pital.jpg/220px-Guillaume_de_l%27H%C3%B4pital.jpg)
+    </div>
+
+    Guillaume François Antoine, Marquis de l'Hôpital (French: `[ɡijom fʁɑ̃swa ɑ̃
+    twan maʁki də lopital]`; 1661 – 2 February 1704) was a French
+    mathematician. His name is firmly associated with l'Hôpital's rule for
+    calculating limits involving indeterminate forms 0/0 and ∞/∞. Although the
+    rule did not originate with l'Hôpital, it appeared in print for the first
+    time in his treatise on the infinitesimal calculus, entitled Analyse des
+    Infiniment Petits pour l'Intelligence des Lignes Courbes. This book was a
+    first systematic exposition of differential calculus. Several editions and
+    translations to other languages were published and it became a model for
+    subsequent treatments of calculus.
+
+    L'Hôpital was born into a military family. His father was Anne-Alexandre de
+    l'Hôpital, a Lieutenant-General of the King's army, Comte de Sainte-Mesme
+    and the first squire of Gaston, Duke of Orléans. His mother was Elisabeth
+    Gobelin, a daughter of Claude Gobelin, Intendant in the King's Army and
+    Councilor of the State.
+
+    L'Hôpital abandoned a military career due to poor eyesight and pursued his
+    interest in mathematics, which was apparent since his childhood. For a
+    while, he was a member of Nicolas Malebranche's circle in Paris and it was
+    there that in 1691 he met young Johann Bernoulli, who was visiting France
+    and agreed to supplement his Paris talks on infinitesimal calculus with
+    private lectures to l'Hôpital at his estate at Oucques. In 1693, l'Hôpital
+    was elected to the French academy of sciences and even served twice as its
+    vice-president. Among his accomplishments were the determination of the arc
+    length of the logarithmic graph, one of the solutions to the
+    brachistochrone problem, and the discovery of a turning point singularity
+    on the involute of a plane curve near an inflection point.
+
+    L'Hôpital exchanged ideas with Pierre Varignon and corresponded with
+    Gottfried Leibniz, Christiaan Huygens, and Jacob and Johann Bernoulli. His
+    Traité analytique des sections coniques et de leur usage pour la résolution
+    des équations dans les problêmes tant déterminés qu'indéterminés ("Analytic
+    treatise on conic sections") was published posthumously in Paris in 1707.
 
 * [Gottfried Willhelm Leibniz](http://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz)
 ![leibniz-portrait]
@@ -1432,139 +1803,161 @@ Knuth (Ka-NOOTH)
 ---
 
 
-### The Hacker's Code
+The Hacker's Code
 
-> "A hacker of the Old Code."
+:   > "A hacker of the Old Code."
 
-* Hackers come and go, but a great hack is forever.
-* Public goods belong to the public.
-* Software hoarding is evil.
-  Software does the greatest good given to the greatest number.
-* Don't be evil.
-* Sourceless software sucks.
-* People have rights.
-  Organizations live on sufferance(容许).
-* Governments are organizations.
-* If it is wrong when citizens do it,
-  it is wrong when governments do it.
-* Information wants to be free.
-  Information *deserves* to be free.
-* Being legal doesn't make it right.
-* Being illegal doesn't make it wrong.
-* Subverting tyranny is the highest duty.
-* Trust your technolust!
+    - Hackers come and go, but a great hack is forever.
+    - Public goods belong to the public.
+    - Software hoarding is evil.
+      Software does the greatest good given to the greatest number.
+    - Don't be evil.
+    - Sourceless software sucks.
+    - People have rights.
+      Organizations live on sufferance(容许).
+    - Governments are organizations.
+    - If it is wrong when citizens do it,
+      it is wrong when governments do it.
+    - Information wants to be free.
+      Information *deserves* to be free.
+    - Being legal doesn't make it right.
+    - Being illegal doesn't make it wrong.
+    - Subverting tyranny is the highest duty.
+    - Trust your technolust!
 
+The Hacker's Code of Ethics
 
-### The Hacker's Code of Ethics
+:   Levy (1984) suggests that there is a "code of ethics" for hacking which,
+    though not pasted on the walls, is in the air:
 
-Levy (1984) suggests that there is a "code of ethics" for hacking which, though not pasted on the walls, is in the air:
+    - Access to Computers - and anything which might teach you something about the way the world works - should be unlimited and total. Always yield to the Hands-On Imperative!
+    - All information should be free.
+    - Mistrust Authority - Promote Decentralization.
+    - Hackers should be judged by their hacking, not bogus criteria such as degrees, age, race, or position.
+    - You can create art and beauty on a computer.
+    - Computers can change your life for the better.
 
-* Access to Computers - and anything which might teach you something about the way the world works - should be unlimited and total. Always yield to the Hands-On Imperative!
-* All information should be free.
-* Mistrust Authority - Promote Decentralization.
-* Hackers should be judged by their hacking, not bogus criteria such as degrees, age, race, or position.
-* You can create art and beauty on a computer.
-* Computers can change your life for the better.
+*DRAFT* The Hacker's Code *DRAFT*
 
+:   Preamble: We, the people of the electronic universe, in order to establish
+    a society of knowledge and skills, do hereby proclaim the following.
 
-### *DRAFT* The Hacker's Code *DRAFT*
+    - Hackers are diverse, from all cultures and backgrounds. Every hacker is
+      unique, yet we all share some characteristics. While not every hacker
+      follows this Code, many believe it is a fair description of our shared
+      traditions, goals and values.
+    - Hackers share and are willing to teach their knowledge
+    - Hackers are skilled. Many are self-taught, or learn by interacting with
+      other hackers.
+    - Hackers seek knowledge. This knowledge may come from unauthorized or
+      unusual sources, and is often hidden.
+    - Hackers are tinkerers. They like to understand how things work, and want
+      to make their own improvements or modifications.
+    - Hackers often disagree with authority, including parents, employers,
+      social customs and laws. They often seek to circumvent authority they
+      disagree with.
+    - Hackers disagree with each other. Different hackers have different
+      values, and come from all backgrounds. This means that what one hacker is
+      opposed to might be embraced by another.
+    - Hackers are persistent, and are willing to devote hours, days and years
+      to pursuing their individual passions.
+    - This Code is not to prescribe how hackers act. Instead, it is to help us
+      to recognize our own diversity and identify.
+    - Every hacker must make his or her own decisions about what is right or
+      wrong, and some might do things they believe are illegal, amoral or
+      anti-social to achieve higher goals.
+    - Hackers' motivations are their own, and there is no reason for all
+      hackers to agree.
+    - Hackers have a shared identify, however, and many shared interests.
+    - By reading this Code, hackers can recognize themselves and each other,
+      and understand better the group they are a part of. This will be
+      beneficial to all hackers.
 
-Preamble: We, the people of the electronic universe, in order to establish a society of knowledge and skills, do hereby proclaim the following.
+<style>
+#hacker-code {
+    padding-left: 4em;
+}
+</style>
 
-* Hackers are diverse, from all cultures and backgrounds. Every hacker is unique, yet we all share some characteristics. While not every hacker follows this Code, many believe it is a fair description of our shared traditions, goals and values.
-* Hackers share and are willing to teach their knowledge
-* Hackers are skilled. Many are self-taught, or learn by interacting with other hackers.
-* Hackers seek knowledge. This knowledge may come from unauthorized or unusual sources, and is often hidden.
-* Hackers are tinkerers. They like to understand how things work, and want to make their own improvements or modifications.
-* Hackers often disagree with authority, including parents, employers, social customs and laws. They often seek to circumvent authority they disagree with.
-* Hackers disagree with each other. Different hackers have different values, and come from all backgrounds. This means that what one hacker is opposed to might be embraced by another.
-* Hackers are persistent, and are willing to devote hours, days and years to pursuing their individual passions.
-* This Code is not to prescribe how hackers act. Instead, it is to help us to recognize our own diversity and identify.
-* Every hacker must make his or her own decisions about what is right or wrong, and some might do things they believe are illegal, amoral or anti-social to achieve higher goals.
-* Hackers' motivations are their own, and there is no reason for all hackers to agree.
-* Hackers have a shared identify, however, and many shared interests.
-* By reading this Code, hackers can recognize themselves and each other, and understand better the group they are a part of. This will be beneficial to all hackers.
+The Conscience of a Hacker
 
+:   ~~~ {.tzx-poem #hacker-code}
+                                   ==Phrack Inc.==
 
-### The Conscience of a Hacker
+                        Volume One, Issue 7, Phile 3 of 10
 
-```tzx-poem
-                               ==Phrack Inc.==
+    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    The following was written shortly after my arrest...
 
-                    Volume One, Issue 7, Phile 3 of 10
+                           \/\The Conscience of a Hacker/\/
 
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-The following was written shortly after my arrest...
+                                          by
 
-                       \/\The Conscience of a Hacker/\/
+                                   +++The Mentor+++
 
-                                      by
+                              Written on January 8, 1986
+    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-                               +++The Mentor+++
+            Another one got caught today, it's all over the papers.  "Teenager
+    Arrested in Computer Crime Scandal", "Hacker Arrested after Bank Tampering"...
+            Damn kids.  They're all alike.
 
-                          Written on January 8, 1986
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+            But did you, in your three-piece psychology and 1950's technobrain,
+    ever take a look behind the eyes of the hacker?  Did you ever wonder what
+    made him tick, what forces shaped him, what may have molded him?
+            I am a hacker, enter my world...
+            Mine is a world that begins with school... I'm smarter than most of
+    the other kids, this crap they teach us bores me...
+            Damn underachiever.  They're all alike.
 
-        Another one got caught today, it's all over the papers.  "Teenager
-Arrested in Computer Crime Scandal", "Hacker Arrested after Bank Tampering"...
-        Damn kids.  They're all alike.
+            I'm in junior high or high school.  I've listened to teachers explain
+    for the fifteenth time how to reduce a fraction.  I understand it.  "No, Ms.
+    Smith, I didn't show my work.  I did it in my head..."
+            Damn kid.  Probably copied it.  They're all alike.
 
-        But did you, in your three-piece psychology and 1950's technobrain,
-ever take a look behind the eyes of the hacker?  Did you ever wonder what
-made him tick, what forces shaped him, what may have molded him?
-        I am a hacker, enter my world...
-        Mine is a world that begins with school... I'm smarter than most of
-the other kids, this crap they teach us bores me...
-        Damn underachiever.  They're all alike.
+            I made a discovery today.  I found a computer.  Wait a second, this is
+    cool.  It does what I want it to.  If it makes a mistake, it's because I
+    screwed it up.  Not because it doesn't like me...
+                    Or feels threatened by me...
+                    Or thinks I'm a smart ass...
+                    Or doesn't like teaching and shouldn't be here...
+            Damn kid.  All he does is play games.  They're all alike.
 
-        I'm in junior high or high school.  I've listened to teachers explain
-for the fifteenth time how to reduce a fraction.  I understand it.  "No, Ms.
-Smith, I didn't show my work.  I did it in my head..."
-        Damn kid.  Probably copied it.  They're all alike.
+            And then it happened... a door opened to a world... rushing through
+    the phone line like heroin through an addict's veins, an electronic pulse is
+    sent out, a refuge from the day-to-day incompetencies is sought... a board is
+    found.
+            "This is it... this is where I belong..."
+            I know everyone here... even if I've never met them, never talked to
+    them, may never hear from them again... I know you all...
+            Damn kid.  Tying up the phone line again.  They're all alike...
 
-        I made a discovery today.  I found a computer.  Wait a second, this is
-cool.  It does what I want it to.  If it makes a mistake, it's because I
-screwed it up.  Not because it doesn't like me...
-                Or feels threatened by me...
-                Or thinks I'm a smart ass...
-                Or doesn't like teaching and shouldn't be here...
-        Damn kid.  All he does is play games.  They're all alike.
+            You bet your ass we're all alike... we've been spoon-fed baby food at
+    school when we hungered for steak... the bits of meat that you did let slip
+    through were pre-chewed and tasteless.  We've been dominated by sadists, or
+    ignored by the apathetic.  The few that had something to teach found us will-
+    ing pupils, but those few are like drops of water in the desert.
 
-        And then it happened... a door opened to a world... rushing through
-the phone line like heroin through an addict's veins, an electronic pulse is
-sent out, a refuge from the day-to-day incompetencies is sought... a board is
-found.
-        "This is it... this is where I belong..."
-        I know everyone here... even if I've never met them, never talked to
-them, may never hear from them again... I know you all...
-        Damn kid.  Tying up the phone line again.  They're all alike...
+            This is our world now... the world of the electron and the switch, the
+    beauty of the baud.  We make use of a service already existing without paying
+    for what could be dirt-cheap if it wasn't run by profiteering gluttons, and
+    you call us criminals.  We explore... and you call us criminals.  We seek
+    after knowledge... and you call us criminals.  We exist without skin color,
+    without nationality, without religious bias... and you call us criminals.
+    You build atomic bombs, you wage wars, you murder, cheat, and lie to us
+    and try to make us believe it's for our own good, yet we're the criminals.
 
-        You bet your ass we're all alike... we've been spoon-fed baby food at
-school when we hungered for steak... the bits of meat that you did let slip
-through were pre-chewed and tasteless.  We've been dominated by sadists, or
-ignored by the apathetic.  The few that had something to teach found us will-
-ing pupils, but those few are like drops of water in the desert.
+            Yes, I am a criminal.  My crime is that of curiosity.  My crime is
+    that of judging people by what they say and think, not what they look like.
+    My crime is that of outsmarting you, something that you will never forgive me
+    for.
 
-        This is our world now... the world of the electron and the switch, the
-beauty of the baud.  We make use of a service already existing without paying
-for what could be dirt-cheap if it wasn't run by profiteering gluttons, and
-you call us criminals.  We explore... and you call us criminals.  We seek
-after knowledge... and you call us criminals.  We exist without skin color,
-without nationality, without religious bias... and you call us criminals.
-You build atomic bombs, you wage wars, you murder, cheat, and lie to us
-and try to make us believe it's for our own good, yet we're the criminals.
+            I am a hacker, and this is my manifesto.  You may stop this individual,
+    but you can't stop us all... after all, we're all alike.
 
-        Yes, I am a criminal.  My crime is that of curiosity.  My crime is
-that of judging people by what they say and think, not what they look like.
-My crime is that of outsmarting you, something that you will never forgive me
-for.
-
-        I am a hacker, and this is my manifesto.  You may stop this individual,
-but you can't stop us all... after all, we're all alike.
-
-                               +++The Mentor+++
-_______________________________________________________________________________
-```
+                                   +++The Mentor+++
+    _______________________________________________________________________________
+    ~~~
 
 Refs
 
@@ -1594,39 +1987,22 @@ Refs
 			* Preferred 更好的
 			* 思维与语序
 
-
-**复习时**
-
-选真题
-
-第一次做题时，能操作吗？
-
-理性 --> 感性（考前两三周）
-
-快速定位
-
-**需要改的惯性**
-
-1. 思维
-    * 逻辑
-
-选项的有效信息
-
-原文的有效信息
-
+* 选真题
+* 第一次做题时，能操作吗？
+* 理性 --> 感性（考前两三周）
+* 快速定位
+* 选项的有效信息
+* 原文的有效信息
 
 [管卫东]: http://baike.baidu.com/view/1209052.htm
 
-
 ---
-
 
 * 公理，定理
 * 函数，幂函数，指数函数（和对数函数），三角函数==> e^x
 * Group，Field，Ring
 
-
-### 数学符号
+数学符号
 
 * a, b, c, d, e, f, g, h
 * i, j, k
@@ -4103,7 +4479,9 @@ other.  If r = farVal nearVal roughly log 2 ⁡r bits of depth buffer precision
 are lost.  Because r approaches infinity as nearVal approaches 0, nearVal must
 never be set to 0.
 
+<div class="tzx-fright">
 ![A view frustum](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/ViewFrustum.svg/330px-ViewFrustum.svg.png)
+</div>
 
 VPN
 :   the view-plane normal – a normal to the view plane.
@@ -4820,7 +5198,8 @@ you flinched!
     力和汗水去赢得认可的历程。火影的故事就这样铺陈开来，伴随着我们流逝的青春，
     刻下磨不灭的印记。
 
-                                                                       ——题记
+                                                           ——题记
+
     两个人，两个完全不同的人。
 
     鸣人，是那样的炽烈，像骄阳一般，温暖着每一个人，影响着每一个人。冲天的金黄
@@ -7326,7 +7705,10 @@ HTML Entity
 * &loz; `&loz;`{.html} lozenge, `['lɑzɪndʒ]`, 菱形
 * &hearts; `&hearts;`{.html}
 
-![WWII "ruptured duck" Honorable Discharge Emblem lozenge](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ruptured_Duck_patch.JPG/220px-Ruptured_Duck_patch.JPG)
+<div class="tzx-fright">
+![WWII "ruptured duck" Honorable Discharge Emblem
+    lozenge](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ruptured_Duck_patch.JPG/220px-Ruptured_Duck_patch.JPG)
+</div>
 
 Refs
 

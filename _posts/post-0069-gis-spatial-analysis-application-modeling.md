@@ -32,7 +32,7 @@ GIS 属性数据的一般统计分析
       ~ 空间数据分析的第一步，通过描述性分析，提取有价值的空间信息，便于后续的空间分析和处理。
 
     相关概念
-    
+
     #. 频数
     #. 频率
     #. 频率分布图
@@ -41,7 +41,7 @@ GIS 属性数据的一般统计分析
     数据集中趋势分析
 
     ![数据的集中趋势](https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Comparison_mean_median_mode.svg/300px-Comparison_mean_median_mode.svg.png)
-    
+
     #. 平均值
         * 算数：$\frac{1}{n}\sum_{i=1}^{n} a_i.$
         * 加权：$\int_{-\infty}^{\infty} xf(x)\,dx$
@@ -54,7 +54,7 @@ GIS 属性数据的一般统计分析
     #. 众数
 
     数据的离散程度分析
-    
+
     #. 方差
         * mean square error: $$\operatorname{MSE}(\overline{X})=\operatorname{E}((\overline{X}-\mu)^2)=\left(\frac{\sigma}{\sqrt{n}}\right)^2= \frac{\sigma^2}{n}$$
           where $\sigma^2$ is the population variance.
@@ -65,9 +65,9 @@ GIS 属性数据的一般统计分析
         * mean absolute deviation: $\frac{1}{n}\sum_{i=1}^n |x_i-m(X)|.$
     #. 离差平方和
     #. 变差系数
-    
+
     数据的分布
-    
+
     #. 偏度（skewness）
         * skewness is a measure of the asymmetry of the probability distribution of a real-valued random variable about its mean. The skewness value can be positive or negative, or even undefined.
         * The skewness is also sometimes denoted $\operatorname{Skew}[X]$.
@@ -83,7 +83,7 @@ GIS 属性数据的一般统计分析
     #. 峰度（Peakness/Kurtosis `[kɝ'tosɪs]`）：$\beta=\frac{V_4}{\sigma^4}=\frac{\frac{\sum(X_\bar{X})^4f}{\sum f}}{\sigma^4}$
 
     图形表达数据
-    
+
     #. 柱状图
     #. 扇形图
     #. 直方图
@@ -94,7 +94,9 @@ GIS 属性数据的一般统计分析
 
 探索性空间数据分析 (Exploratory Spatial Data Analysis, ESDA)
 
+<div class="tzx-fright">
 ![John Tukey](https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/John_Tukey.jpg/220px-John_Tukey.jpg)
+</div>
 
 统计学是数据分析的主要工具，大量的统计分析方法以数据总体满足正态假设为依据，并在此基础上建立模型和推演。
 然而，实践中大量的数据不能满足正态假设，并且基于均值、方差等的模型在实际数据分析中缺乏稳健性，于是导致很多统计分析方法不能满足海量数据分析的
@@ -113,7 +115,7 @@ EDA 技术的核心：
 :   可视化的探索数据分析。
 
     常用的图形方法有
-    
+
     * 直方图(histogram)
 
         + ![ordinary histogram & cummulative histogram](https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Cumulative_vs_normal_histogram.svg/350px-Cumulative_vs_normal_histogram.svg.png)
@@ -126,7 +128,7 @@ EDA 技术的核心：
          6 | 3 4 6 8 8
          7 | 2 2 5 6
          8 | 1 4 8
-         9 | 
+         9 |
         10 | 6
         key: 6|3=63
         leaf unit: 1.0
@@ -166,7 +168,7 @@ EDA 技术的核心：
           plot matrix will have k rows and k columns and the ith row and ~j~th
           column of this matrix is a plot of X~i~ versus X~j~.
         + Matlab 的 `plotmatrix` 函数
-            - `plotmatrix(X,Y)`{.python} creates a matrix of subaxes containing scatter plots of the columns of X against the columns of Y. 
+            - `plotmatrix(X,Y)`{.python} creates a matrix of subaxes containing scatter plots of the columns of X against the columns of Y.
               If X is p-by-n and Y is p-by-m, then plotmatrix produces an n-by-m matrix of subaxes.
             - ![](http://cn.mathworks.com/help/releases/R2015b/examples/graphics/CreateScatterPlotMatrixwithTwoMatrixInputsExample_01.png)
     * 平行坐标图(parallel coordinate plot)
@@ -197,12 +199,8 @@ read more
 
 空间分析应用建模
 ----------------
-]
 
-
-
-
-
+---
 
 Refs
 

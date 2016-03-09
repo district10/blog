@@ -39,9 +39,11 @@ Transformation Service specifications.
 
 ### Compose key
 
-[compose-key]
-
+<div class="tzx-fright">
 ![compose keys][compose-key-pic]
+</div>
+
+[compose-key]
 
 当时我在 Debian 上试了一些：
 
@@ -87,18 +89,22 @@ But I want to say:
 
 ### BSoD - Blue Screen of Death
 
-[Blue Screen of Death][bsod] 指的是微软 Windows 操作系统在无法从一个系统错误中恢复过来时所显示的屏幕图像。
-
+<div class="tzx-fright">
 ![蓝屏（blue screen of death）][bsod-pic]
+</div>
+
+[Blue Screen of Death][bsod] 指的是微软 Windows 操作系统在无法从一个系统错误中恢复过来时所显示的屏幕图像。
 
 [bsod]: http://zh.wikipedia.org/wiki/%E8%93%9D%E5%B1%8F%E6%AD%BB%E6%9C%BA
 [bsod-pic]: http://gnat-tang-shared-image.qiniudn.com/pictures/blue-screen-of-death.JPG
 
 ### Forge
 
-[forge-google]
-
+<div class="tzx-fleft">
 ![forge][forge-pic]
+</div>
+
+[forge-google]
 
 我当然不是说的炼钢这个 forge，就跟中文的“打造”一样，它有培养的意思。
 
@@ -110,10 +116,11 @@ But I want to say:
 >
 > I forged the man of my dreams.
 
-话说我想知道易卜生（Henrik Johan Ibsen）的“你最大的责任是把你这块材料铸造成器”是不是用的这个词，但是没有查到。
+话说我想知道易卜生（Henrik Johan Ibsen）的“你最大的责任是把你这块材料铸造成器”
+是不是用的这个词，但是没有查到。
 
 [forge-google]: http://www.google.com.sg/search?q=forge&newwindow=1&source=lnms&tbm=isch&sa=X&ei=0cj0UsrUIomkige89oCwCA&ved=0CAgQ_AUoAg&biw=1364&bih=652
-[forge-pic]: http://gnat-tang-shared-image.qiniudn.com/2014/05/forge.jpg
+[forge-pic]: http://gnat-tang-shared-image.qiniudn.com/2014/05/forge.jpg?imageView2/2/w/150
 
 ### Artifact (software development)
 
@@ -191,9 +198,11 @@ AJAJ), and the requests do not need to be asynchronous.
 
 ### JSON
 
-[json]
-
+<div class="tzx-fright">
 ![JSON][json-pic]
+</div>
+
+[json]
 
 JSON (`/ˈdʒeɪsɒn/` jay-soun, `/ˈdʒeɪsən/` jay-son), or **JavaScript Object
 Notation**, is an open standard format that uses human-readable text to
@@ -215,7 +224,7 @@ data is readily available in a large variety of programming languages.
 :   ![deprecated][deprecated-pic]
 
 [deprecated]: http://dict.youdao.com/search?q=Deprecated&keyfrom=dict.index
-[deprecated-pic]: http://gnat-tang-shared-image.qiniudn.com/blog-deprecated.png
+[deprecated-pic]: http://gnat-tang-shared-image.qiniudn.com/blog-deprecated.png?imageView2/2/h/100
 
 ### conjunction
 
@@ -224,7 +233,7 @@ data is readily available in a large variety of programming languages.
 :   ![conjunction][conjunction-pic]
 
 [conjunction]: http://dict.youdao.com/search?le=eng&q=conjunction&keyfrom=dict.top
-[conjunction-pic]: http://gnat-tang-shared-image.qiniudn.com/blog-conjunction.jpg
+[conjunction-pic]: http://gnat-tang-shared-image.qiniudn.com/blog-conjunction.jpg?imageView2/2/h/100
 
 ### hexadecimal
 
@@ -282,11 +291,11 @@ be widely implemented in the layout engines of web browsers.
 * Non-text attachments
 * Message bodies with multiple parts
 * Header information in non-ASCII character sets
-* Although MIME was designed mainly for SMTP protocol, its use today has grown beyond 
-  describing the content of email and now often includes describe content type in general, 
+* Although MIME was designed mainly for SMTP protocol, its use today has grown beyond
+  describing the content of email and now often includes describe content type in general,
   including for the web (see Internet media type) and as a storage for rich content in some commercial products
-* The content types defined by MIME standards are also of importance outside of email, 
-  such as in communication protocols like HTTP for the World Wide Web. HTTP requires that 
+* The content types defined by MIME standards are also of importance outside of email,
+  such as in communication protocols like HTTP for the World Wide Web. HTTP requires that
   data be transmitted in the context of email-like messages, although the data most often is not actually email.
 
 [mime]: http://en.wikipedia.org/wiki/MIME
@@ -356,7 +365,7 @@ I feel like a piece of shit programmer almost every day.
 I didn't at my last workplace.
 So I left and started at Spotify.
 
-When the time comes when I no longer feel like a piece of shit programmer here, 
+When the time comes when I no longer feel like a piece of shit programmer here,
 I'll quit and move on to a place that can once again make me feel like piece of shit.
 
 This strategy has worked out really well for me during my career.
@@ -384,36 +393,40 @@ driving loudspeakers and is the final stage in a typical audio playback chain.
 
 ### OTS - Over-The-Shoulder Shot
 
+<div class="tzx-fright">
 ![over the shoulder shot][ots-pic]
+</div>
 
 In film or video, an [over the shoulder shot][ots] (also over shoulder, OS,
 OTS, or third-person shot) is a shot of someone or something taken from the
 perspective or camera angle from the shoulder of another person. The back of
 the shoulder and head of this person is used to frame the image of whatever (or
-whomever) the camera is pointing toward. This type of shot is very common
-when two characters are having a discussion and will usually follow an
-establishing shot which helps the audience place the characters in their
-setting. It is an example of a camera angle.
+whomever) the camera is pointing toward. This type of shot is very common when
+two characters are having a discussion and will usually follow an establishing
+shot which helps the audience place the characters in their setting. It is an
+example of a camera angle.
 
 （我就说我比小璇璇知识丰富多了～）
 
 [ots]: http://en.wikipedia.org/wiki/Over_the_shoulder_shot
-[ots-pic]: http://gnat-tang-shared-image.qiniudn.com/pictures/over-the-shoulder-shot.png
+[ots-pic]: http://gnat-tang-shared-image.qiniudn.com/pictures/over-the-shoulder-shot.png?imageView2/2/h/400
 
 ### Cranberry
 
+<div class="tzx-fright">
+![cranberry][cranberry-pic]
+</div>
+
 [cranberry]
 
-![cranberry][cranberry-pic]
-
-Cranberries are a group of **evergreen** dwarf shrubs or trailing vines in the
-subgenus Oxycoccus of the genus Vaccinium. In some methods of classification,
-Oxycoccus( 酸果蔓属) is regarded as a genus in its own right. They can be
-found in acidic bogs(沼泽) throughout the cooler regions of the northern
-hemisphere.
+:   Cranberries are a group of **evergreen** dwarf shrubs or trailing vines in
+    the subgenus Oxycoccus of the genus Vaccinium. In some methods of
+    classification, Oxycoccus( 酸果蔓属) is regarded as a genus in its own
+    right. They can be found in acidic bogs(沼泽) throughout the cooler regions
+    of the northern hemisphere.
 
 [cranberry]: http://en.wikipedia.org/wiki/Cranberry
-[cranberry-pic]: http://gnat-tang-shared-image.qiniudn.com/pictures/cranberry.jpg
+[cranberry-pic]: http://gnat-tang-shared-image.qiniudn.com/pictures/cranberry.jpg?imageView2/2/h/180
 
 ### feat.
 
@@ -423,7 +436,7 @@ It is not restricted to music. It was used on film and show billboards. You
 could also translate this (depending on context, select as many options as
 appropriate) by with the (exceptional/gracefully
 acknowledged/reciprocated/just-passing-by/I-just-so-love-this-guy/requested-by-the-management/i-lost-a-stupid-bet/this-is-my-brother-in-law)
-participation of to use a latin-derived word.  
+participation of to use a latin-derived word.
 
 （这个在唱片里很多，*feat.* edition，常见的还有 "acoustic", live, remix）
 
@@ -431,7 +444,9 @@ participation of to use a latin-derived word.
 
 ### Bog
 
+<div class="tzx-fright">
 ![bog][bog-pic]
+</div>
 
 A [bog] is a mire that accumulates peat, a deposit of dead plant material—often
 mosses, and in a majority of cases, sphagnum moss. It is one of the four main
@@ -461,12 +476,12 @@ landscapes that are otherwise settled and farmed.
 :   多才多艺的；通用的，万能的；多面手的
 
     这个单词在英文里很常用。
-    
+
     偶然看到，双性恋（可“攻”可“受”那种）的人，也常被戏称为“versatile”。
 
 ### excerpt
 
-[excerpt] 
+[excerpt]
 
 :   n. 摘录，引用
 
@@ -629,7 +644,7 @@ mime 引申出去一个词叫 mimic。MIME 还代表互联网文本格式（比�
 
     * John: I have mad chafing on my balls.
     * Frank: uh, TMI
-    
+
     上面的例子太生动了，应该是我从 UrbanDictionary 上找的。
 
 see also [**Three Mile Island** accident, March 28, 1979][threemileisland]
@@ -639,7 +654,9 @@ see also [**Three Mile Island** accident, March 28, 1979][threemileisland]
 
 ### plasma
 
+<div class="tzx-fright">
 ![plasma][plasma_img]
+</div>
 
 [Plasma][plasma] (from Greek πλάσμα, "anything formed") is **one of the four
 fundamental states of matter** (the others being **solid**, **liquid**, and
@@ -784,7 +801,9 @@ importance of being part of a group and helping for the common good.**"
 
 ### Cassandra
 
+<div class="tzx-fright">
 ![Cassandra][cassandra-pic]
+</div>
 
 **In Greek mythology**, [Cassandra] (Greek Κασσάνδρα, also Κασάνδρα; ), also
 known as **Alexandra** or **Kassandra**, was the **daughter of King Priam and
@@ -816,7 +835,9 @@ The term **[Wheel]** was adopted by Unix users in the 1980s, due to the movement
 
 ### Hymn
 
+<div class="tzx-fright">
 ![Hymn][hymn-pic]
+</div>
 
 A [hymn] `/him/` is **a type of song**, usually **religious**, specifically
 written **for the purpose of praise, adoration or prayer**, and typically
@@ -851,7 +872,9 @@ Words List 03
 
 ### Red tape
 
-![red tape][redtape-img] 
+<div class="tzx-fright">
+![red tape][redtape-img]
+</div>
 
 [Red tape][redtape] is **an idiom** that refers to excessive regulation or
 rigid conformity to formal rules that is considered redundant or bureaucratic
@@ -1018,7 +1041,7 @@ similar to the expressions "for all intents and purposes" or "in fact".
 
 这个词很常见。（是“实际中的主流”的意思？感觉和一个词弄混了。）
 
-[defacto]: http://en.wikipedia.org/wiki/De_facto 
+[defacto]: http://en.wikipedia.org/wiki/De_facto
 
 ### Quotation mark glyphs
 
@@ -1155,7 +1178,9 @@ quality**][timeless]".
 
 ### Narcissus
 
+<div class="tzx-fright">
 ![Narcissus][narcissus-pic]
+</div>
 
 In Greek mythology, [Narcissus][narcissus] (`/nɑrˈsɪsəs/`; Greek: Νάρκισσος,
 Narkissos) was a hunter from the territory of Thespiae in Boeotia who was
@@ -1201,7 +1226,7 @@ Narcissus is the origin of the term **narcissism, a fixation with oneself**.
 
 * 其一，黑长直是指黑色长直发。
 * 其二，黑长直是指黑丝、长直腿。
-* 其三，黑长直是指黑丝、长腿、直发。  
+* 其三，黑长直是指黑丝、长腿、直发。
 
 [hei-chang-zhi]: http://baike.baidu.com/view/3698561.htm
 
@@ -1225,13 +1250,13 @@ Narcissus is the origin of the term **narcissism, a fixation with oneself**.
 and webpages, whose use is spreading outside Japan. Originally meaning
 pictograph, the word emoji literally means "picture" (e) + "character" (moji).
 The characters are used much like ASCII emoticons or kaomoji, but a wider range
-is provided, and the icons are standardized and built into the handsets. 
+is provided, and the icons are standardized and built into the handsets.
 
 Although originally only available in Japan, some emoji character sets have
 been incorporated into Unicode, allowing them to be used elsewhere as well.
 As a result, some phones such as the Windows Phone and the iPhone lines allow
 access to the symbols without requiring a Japanese carrier. Emoji have also
-started appearing in emailing services such as Gmail 
+started appearing in emailing services such as Gmail
 
 [emoji]: http://en.wikipedia.org/wiki/Emoji
 [ideograms]: http://dict.youdao.com/search?q=ideograms&keyfrom=dict.plugin "n. 意符；表意文字；表彰符号"
@@ -1270,7 +1295,7 @@ multiline strings**.
 
 The most common syntax for here documents, originating in Unix shells, is <<
 followed by a delimiting identifier, followed, starting on the next line, by
-the text to be quoted, and then closed by the same identifier on its own line. 
+the text to be quoted, and then closed by the same identifier on its own line.
 
 ```bash
 $ tr a-z A-Z << END_TEXT
@@ -1291,7 +1316,7 @@ Output: `ONE TWO THREE`
 $ tr a-z A-Z <<< 'one
 two three'
 ```
-Output: 
+Output:
 
 ```plain
 ONE
@@ -1514,6 +1539,10 @@ BNF's syntax itself may be represented with a BNF like the following:
 
 ### Extended Backus–Naur Form
 
+<div class="tzx-fright">
+![BNF notations][bnf-notations]
+</div>
+
 [EBNF][extended-backus-naur-form] is a code that expresses the grammar of a
 formal language. An EBNF consists of **terminal** symbols and **non-terminal**
 production rules which are the restrictions governing how terminal symbols can
@@ -1532,8 +1561,6 @@ twelve thousand two hundred one = twelve, two hundred one ;
 natural number                  = digit excluding zero, { digit } ;
 integer                         = "0" | [ "-" ], natural number ;
 ```
-
-![BNF notations][bnf-notations]
 
 more examples
 
@@ -1869,7 +1896,7 @@ MOD 通常對應可以修改的電子遊戲，因此以電腦遊戲為主。必�
 
 [per-se]
 
-:   through itself, also "by itself" or "in itself". 
+:   through itself, also "by itself" or "in itself".
 
     Without referring to anything else, intrinsically, taken without
     qualifications etc. A common example is negligence per se. See also malum in se.
@@ -1900,7 +1927,7 @@ induces a depth of understanding that listening to lectures cannot give.
 
 [eg & ie]
 
-**exempli gratia (e.g.)**, usually shortened in English to "for example" (see citation signal). 
+**exempli gratia (e.g.)**, usually shortened in English to "for example" (see citation signal).
 Often confused with **id est (i.e.)**.
 
 > Exempli gratia (e.g.) and id est (i.e.) are commonly confused and misused in
@@ -1917,9 +1944,9 @@ Often confused with **id est (i.e.)**.
 
 ### Abuse of notation
 
-In mathematics, [abuse of notation][abuse-of-notation] occurs when an author uses a mathematical notation 
-in a way that is not formally correct but that seems likely to simplify the exposition or 
-suggest the correct intuition (while being unlikely to introduce errors or cause confusion). 
+In mathematics, [abuse of notation][abuse-of-notation] occurs when an author uses a mathematical notation
+in a way that is not formally correct but that seems likely to simplify the exposition or
+suggest the correct intuition (while being unlikely to introduce errors or cause confusion).
 Abuse of notation should be contrasted with misuse of notation, which should be avoided.
 
 A related concept is abuse of language or abuse of terminology, when not
@@ -1943,7 +1970,9 @@ Words List 06
 
 ### CC 协议
 
+<div class="tzx-fright">
 ![creative commons][cc-pic]
+</div>
 
 [**Creative Commons**][ccl]，简称 [CC][cc] 协议，中国大陆正式名称为**知识共享**，
 台湾正式名称为**创用CC**。是一个非营利组织，也是一种创作的授权方式。
@@ -1983,7 +2012,7 @@ See [Creative Commons License][ccl] for more.
 [sa]: https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Cc-sa.svg/40px-Cc-sa.svg.png
 [nc]: https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Cc-nc.svg/40px-Cc-nc.svg.png
 [nd]: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Cc-nd.svg/40px-Cc-nd.svg.png
-[cc-pic]: http://gnat-tang-shared-image.qiniudn.com/pic/cc_guidant_les_contributeurs.jpg
+[cc-pic]: http://gnat-tang-shared-image.qiniudn.com/pic/cc_guidant_les_contributeurs.jpg?imageView2/2/h/120
 [cc-table]: http://gnat-tang-shared-image.qiniudn.com/pic/creative-commons.png
 
 ### 愤青，五毛，公知
@@ -2013,15 +2042,18 @@ See [Creative Commons License][ccl] for more.
 
 ### Trinitron
 
+<div class="tzx-fright">
+![Tranitron][trinitron-pic]
+</div>
+
 [trinitron]
 
-![Tranitron][trinitron-pic]
-
-[特丽珑][trinitron-zh]（台湾译作特丽霓虹，香港有时译作新力单枪）是索尼公司为电视机和显示器的
-阴极射线管注册的商标。特丽珑阴极显像管又称单枪三束管，为水平方面凸起而垂直方面笔直的柱面显像管。
-其画面比起同时代的普通显示器颜色更加鲜艳锐利。索尼公司在很长时间内拥有这种设计的专利权，
-专利权过期后，其他的一些公司将自己生产的的这种荫栅显像管以珑结尾的名字命名。
-其他公司已经可以使用特丽珑的管设计而无须缴纳专利费。
+[特丽珑][trinitron-zh]（台湾译作特丽霓虹，香港有时译作新力单枪）是索尼公司为电
+视机和显示器的阴极射线管注册的商标。特丽珑阴极显像管又称单枪三束管，为水平方面
+凸起而垂直方面笔直的柱面显像管。其画面比起同时代的普通显示器颜色更加鲜艳锐利。
+索尼公司在很长时间内拥有这种设计的专利权，专利权过期后，其他的一些公司将自己生
+产的的这种荫栅显像管以珑结尾的名字命名。其他公司已经可以使用特丽珑的管设计而无
+须缴纳专利费。
 
 在一段时间内，采用特丽珑阴极显像管的显示器也被苹果电脑、戴尔、迪吉多
 公司（Digital Equipment Corporation）、升阳公司（Sun Microsystems）公司和
@@ -2041,8 +2073,8 @@ premium for Trinitron devices into the 1990s.
 
 ### LOL
 
-It's original definition was "[Laughing out loud][lol]" (also written occasionally 
-as "**Lots of Laughs**"), used as a brief acronym to denote great amusement in chat conversations. 
+It's original definition was "[Laughing out loud][lol]" (also written occasionally
+as "**Lots of Laughs**"), used as a brief acronym to denote great amusement in chat conversations.
 
 Now, it is overused to the point where nobody laughs out loud when they say it.
 In fact, they probably don't even give a shit about what you just wrote. More
@@ -2050,25 +2082,25 @@ accurately, the acronym "lol" should be redefined as "**Lack of laughter**."
 （变成了讽刺，感觉有点像 “呵呵”）
 
 Depending on the chatter, its definition may vary. The list of its meanings
-includes, but is not limited to: 
+includes, but is not limited to:
 
 1) "I have nothing worthwhile to contribute to this conversation."
-2) "I'm too lazy to read what you just wrote so I'm typing something useless in hopes 
-   that you'll think I'm still paying attention." 
-3) "Your statement lacks even the vaguest trace of humor but I'll pretend I'm amused." 
-4) "This is a pointless acronym I'm sticking in my sentence just because it's become 
-   so engraved into my mind that when chatting, I MUST use the meaningless sentence-filler 'lol.'" 
+2) "I'm too lazy to read what you just wrote so I'm typing something useless in hopes
+   that you'll think I'm still paying attention."
+3) "Your statement lacks even the vaguest trace of humor but I'll pretend I'm amused."
+4) "This is a pointless acronym I'm sticking in my sentence just because it's become
+   so engraved into my mind that when chatting, I MUST use the meaningless sentence-filler 'lol.'"
 
 （完全就是 “呵呵”。。。）
 
 * See: lmao, lmfao, rofl, lawl, heh, haha, lolol, and 120 for similarities.
-* Statement: Sorry if I'm not too cheery, my best friend just died yesterday. 
-* Worthless Reply: lol 
-* Statement: The golden ratio is truely an intersting aspect of not only mathematics, but art as well. 
-* Worthless Reply: lol 
-* Statement: ... And then he says, "Your mom goes to college!" 
-* Worthless Reply: lol 
-* Statement: Hey, are you doing anything tonight? You could come over to my house and play some Unreal Tournie... 
+* Statement: Sorry if I'm not too cheery, my best friend just died yesterday.
+* Worthless Reply: lol
+* Statement: The golden ratio is truely an intersting aspect of not only mathematics, but art as well.
+* Worthless Reply: lol
+* Statement: ... And then he says, "Your mom goes to college!"
+* Worthless Reply: lol
+* Statement: Hey, are you doing anything tonight? You could come over to my house and play some Unreal Tournie...
 * Worthless Reply: lol, ok
 
 [lol]: http://www.urbandictionary.com/define.php?term=Lol&defid=1406597
@@ -2161,20 +2193,23 @@ Men List 01
 
 ### Yoshitomo Nara
 
+<div class="tzx-fright">
+![slash with a knife][slash-with-a-knife]
+</div>
+
 [Yoshitomo Nara][yoshitomo-nara] (奈良美智 Nara Yoshitomo, born 5 December 1959
 in Hirosaki, Japan) is a **Japanese artist**. He lives and works in Tokyo,
 though his artwork has been exhibited worldwide. Nara has had nearly 40 solo
 exhibitions since 1984. He is represented in New York City by Pace Gallery, in
 Los Angeles by Blum & Poe and in London by Stephen Friedman Gallery.
 
-![slash with a knife][slash-with-a-knife]
-
-奈良美智早期的作品以插画性质为多，在 1980 年代后期即发展出以儿童头像为主的角色风格；
-奈良美智对于有着大眼睛和大头的儿童形象相当着迷，他的特色在于塑造各种带有情感的眼神，
-其中最具代表性之一为斜视的眼神（有人说是代表愤怒、有人则说是代表了邪恶）。
-此外，奈良美智的作品几乎不含有透视的背景，而只突显人物。在1990年代后期，他也开始创作立体作品，
-主要是将画作中的孩童或小狗等，作成大型的立体雕塑，或采用不同媒材拼组的方式构成，
-如近年在纽约市展出的“流泪的狗”就是以大量胶布为基本材料所组成。
+奈良美智早期的作品以插画性质为多，在 1980 年代后期即发展出以儿童头像为主的角色
+风格；奈良美智对于有着大眼睛和大头的儿童形象相当着迷，他的特色在于塑造各种带有
+情感的眼神，其中最具代表性之一为斜视的眼神（有人说是代表愤怒、有人则说是代表了
+邪恶）。此外，奈良美智的作品几乎不含有透视的背景，而只突显人物。在1990年代后期
+，他也开始创作立体作品，主要是将画作中的孩童或小狗等，作成大型的立体雕塑，或采
+用不同媒材拼组的方式构成，如近年在纽约市展出的“流泪的狗”就是以大量胶布为基本材
+料所组成。
 
 今日他的作品已被许多博物馆收藏，如纽约现代艺术博物馆和洛杉矶当代艺术博物馆等。
 
@@ -2183,24 +2218,28 @@ Los Angeles by Blum & Poe and in London by Stephen Friedman Gallery.
 
 ### Kenichi Ohmae
 
+<div class="tzx-fright">
 ![Kenichi Ohmae][kenichi-ohmae-pic]
+</div>
 
-[大前研一][kenichi-ohmae] Kenichi Ohmae（日语：大前 研一／おおまえ けんいち，1943年2月21日－），
-**日本著名管理学家、经济评论家**。出生于福冈县北九州市若松区，是非营利法人一新塾(前身为平成维新の会)的创立者，
-Ohmae & Associates 公司的 CEO。Business Breakthrough公司 CEO 兼校长。
-他是现时世界上有关商业及企业策略的其中一位领导者，以其发展的 3C 模型（或称作战略三角）而知名，
-被誉为“**策略先生**”。
+[大前研一][kenichi-ohmae] Kenichi Ohmae（日语：大前 研一／おおまえ けんいち，
+1943年2月21日－），**日本著名管理学家、经济评论家**。出生于福冈县北九州市若松区
+，是非营利法人一新塾(前身为平成维新の会)的创立者，Ohmae & Associates 公司的 CEO
+。Business Breakthrough公司 CEO 兼校长。他是现时世界上有关商业及企业策略的其中
+一位领导者，以其发展的 3C 模型（或称作战略三角）而知名，被誉为“**策略先生**”。
 
-主要的学术成就有以下几个：**全球化**、**M型社会**、**3C模型**（战略三角）、
-**最少世代 (Generation of Minimum)**、**维他命十国**
-（VITAMIN，指越南、印尼、泰国、土耳其、墨西哥、伊朗、伊拉克、尼日利亚、阿根廷和南非这十个新型经济体的开头字母）。
+主要的学术成就有以下几个：**全球化**、**M型社会**、**3C模型**（战略三角）、**最
+少世代 (Generation of Minimum)**、**维他命十国**（VITAMIN，指越南、印尼、泰国、
+土耳其、墨西哥、伊朗、伊拉克、尼日利亚、阿根廷和南非这十个新型经济体的开头字母）。
 
 [kenichi-ohmae]: http://zh.wikipedia.org/wiki/%E5%A4%A7%E5%89%8D%E7%A0%94%E4%B8%80
 [kenichi-ohmae-pic]: http://gnat-tang-shared-image.qiniudn.com/pictures/Kenichi-Ohmae.jpg
 
 ### Yoko Ono
 
+<div class="tzx-fright">
 ![Yoko Ono][yoko-ono-pic]
+</div>
 
 [Yoko Ono][yoko] (オノ・ヨーコ **小野 洋子 Ono Yōko**), born February 18, 1933,
 is a Japanese artist, singer-songwriter, and peace activist. She is the second
@@ -2225,7 +2264,9 @@ McCartney received as much attention as her billboards and music releases,
 
 ### Grace Hopper
 
+<div class="tzx-fright">
 ![Grace Hopper][grace-hopper-pic]
+</div>
 
 [Grace Murray Hopper][grace-hopper] (December 9, 1906 – January 1, 1992) was an
 **American computer scientist** and **[United States Navy rear
@@ -2262,7 +2303,9 @@ Country Music Hall of Fame** in 2001.
 
 ### Elvis Presley
 
+<div class="tzx-fright">
 ![Elvis Presley][elvis-presley-pic]
+</div>
 
 [Elvis Aaron Presley][elvis-presley] (January 8, 1935 – August 16, 1977) was an
 **American singer, musician, and actor**. Regarded as one of the most
@@ -2288,7 +2331,9 @@ halls of fame**.
 
 ### Bob Dylan
 
+<div class="tzx-fright">
 ![Bob Dylan][bob-dylan-pic]
+</div>
 
 [Bob Dylan][bob-dylan] (`/ˈdɪlən/`; born Robert Allen Zimmerman, May 24, 1941)
 is an **American musician, singer-songwriter, artist, and writer**. He has been
@@ -2311,7 +2356,9 @@ Men List 03
 
 ### Bill Joy
 
+<div class="tzx-fright">
 ![[Bill Joy][bill-joy] ([威廉·纳尔逊·乔伊][bill-joy-baidu])][bill-joy-pic]
+</div>
 
 William Nelson Joy (born November 8, 1954) is **an American computer
 scientist**. Joy co-founded Sun Microsystems in 1982 along with Vinod Khosla,
@@ -2338,7 +2385,9 @@ keywords: SUN, UNIX, TCP/IP, Berkeley, vi, csh,
 
 ### John D. Carmack
 
+<div class="tzx-fright">
 ![[John Carmack][john-d-carmack] ([約翰·卡馬克][john-d-carmack-baidu])][john-d-carmack-pic]
+</div>
 
 John D. Carmack (born August 20, 1970) is an American **game programmer** and
 the **co-founder of Id Software**. Carmack was the lead programmer of the Id
@@ -2358,7 +2407,9 @@ CTO at Oculus VR.
 
 ### David Neil "Dave" Cutler, Sr
 
+<div class="tzx-fright">
 ![[Dave Cutler][dave-cutler] ([大卫·卡特勒][dave-cutler-baidu])][dave-cutler-pic]
+</div>
 
 他是一位传奇程序员，是 VMS 和 Windows NT 的首席设计师，被人们称为“操作系统天神”。
 
@@ -2376,9 +2427,10 @@ keywords: Windows NT, VMS, DEC, MS, Windows Azure, X Box
 
 ### Donald Knuth
 
+<div class="tzx-fright">
 ![[Donald Knuth][donald-knuth] ([唐纳德·克努特][donald-knuth-baidu])][donald-knuth-pic]
+</div>
 
-![Hopper & Knuth][hopper-knuth-pic]
 
 Donald Ervin Knuth (`/kəˈnuːθ/` `kə-nooth`; born January 10, 1938) is an
 American **computer scientist**, **mathematician**, and **Professor
@@ -2390,6 +2442,10 @@ analysis of algorithms**. In addition to fundamental contributions in several
 branches of theoretical computer science, Knuth is the creator of the **TeX**
 computer typesetting system, the related METAFONT font definition language and
 rendering system, and the Computer Modern family of typefaces.
+
+<div class="tzx-fleft">
+![Hopper & Knuth][hopper-knuth-pic]
+</div>
 
 As a writer and scholar, Knuth created the WEB and CWEB computer programming
 systems designed to encourage and facilitate literate programming, and designed
@@ -2423,7 +2479,9 @@ In 2006, Knuth was diagnosed with **prostate(前列腺) cancer**
 
 ### Ken Thompson
 
+<div class="tzx-fright">
 ![[Ken thompson][ken-thompson] ([肯·汤普森][ken-thompson-baidu])][ken-thompson-pic]
+</div>
 
 **Kenneth Thompson** (born February 4, 1943), commonly referred to as ken in
 hacker circles, is an American **pioneer of computer science**. Having worked
@@ -2459,7 +2517,9 @@ tablebases and the chess machine Belle.
 
 ### Rob Pike
 
+<div class="tzx-fright">
 ![[Rob Pike][rob-pike] ([罗布·派克][rob-pike-baidu])][rob-pike-pic]
+</div>
 
 Robert Pike (born 1956) is a **Canadian software engineer** and **author**. He
 is best known for his work at **Bell Labs**, where he was a member of the Unix
@@ -2488,7 +2548,9 @@ involved in the creation of the programming languages Go and Sawzall.
 
 ### Dennis M. Richie
 
+<div class="tzx-fright">
 ![[Dennis M. Richie][dennis-m-ritchie] ([丹尼斯·里奇][dennis-m-ritchie-baidu])][dennis-m-ritchie-pic]
+</div>
 
 **Dennis MacAlistair Ritchie** (September 9, 1941 – c. October 12, 2011) was an
 American computer scientist. He created the **C programming language** and,
@@ -2516,7 +2578,9 @@ and could look in a computer, you'd see his work everywhere inside."
 
 ### Edsger W. Dijkstra
 
+<div class="tzx-fright">
 ![[Edsger Wybe Dijkstra][edsger-wybe-dijkstra] ([艾兹格·迪科斯彻][edsger-wybe-dijkstra-baidu])][edsger-wybe-dijkstra-pic]
+</div>
 
 Edsger Wybe Dijkstra (Dutch pronunciation: `[ˈɛtsxər ˈʋibə ˈdɛikstra]` ( listen);
 11 May 1930 – 6 August 2002) was **a Dutch computer scientist.** He received
@@ -2549,7 +2613,9 @@ them with EWD, his initials, as a prefix.
 
 ### Anders Hejlsberg
 
+<div class="tzx-fright">
 ![[Anders Hejlsberg][anders-hejlsberg] ([安德斯·海尔斯伯格][anders-hejlsberg-baidu])][anders-hejlsberg-pic]
+</div>
 
 Anders Hejlsberg (born December 1960) is a **prominent Danish software
 engineer** who co-designed several popular and commercially successful
@@ -2588,12 +2654,12 @@ Language agnostic
 [28个Unix/Linux的命令行神器 | 酷 壳][coolshell-gods-tools]
 
 * bash, vim, ssh
-* 熟悉 bash 的作业管理，如： `&`, `Ctrl-Z`, `Ctrl-C`, `jobs`{.bash}, 
+* 熟悉 bash 的作业管理，如： `&`, `Ctrl-Z`, `Ctrl-C`, `jobs`{.bash},
   `fg`{.bash}, `bg`{.bash}, `kill`{.bash}, 等等。`SIGQUIT`, `SIGINT`
 * filesystem, network basics, regexpr, fid, stream, pipe
-* `curl`{.bash}, `wget`{.bash}, `cut`{.bash}, `paste`{.bash}, `join`{.bash}, 
+* `curl`{.bash}, `wget`{.bash}, `cut`{.bash}, `paste`{.bash}, `join`{.bash},
   `sort`{.bash}, `uniq`{.bash}, `awk`{.bash}, `sed`{.bash}, `split`{.bash}
-* wireshark, dmesg, ldd  
+* wireshark, dmesg, ldd
 * `dstat`{.bash}
 * `tmux`{.bash}
 
@@ -2663,7 +2729,7 @@ Try [IRC][irc]
 
 [EMACS: The Extensible, Customizable Display Editor][emacs-design]
 
-RMS 的论文（未读） 
+RMS 的论文（未读）
 
 [emacs-design]: http://www.gnu.org/software/emacs/emacs-paper.html
 
@@ -2701,7 +2767,7 @@ Yeev 在那时已经深谙社交了，他咬紧牙关，不在打任何东西。
 1. 你们着什么急？ (21 天系列之类）
 2. 也不是 10 年， 是 10000 小时
 3. 你想当程序员么？
-    * 沉醉于编程，编程是为了兴趣  
+    * 沉醉于编程，编程是为了兴趣
     * 在实践中学习
     * 同其他程序员交流，多阅读其他人写的程序
     * 读一个计算机科学专业, if you really want
@@ -2763,7 +2829,7 @@ Yeev 在那时已经深谙社交了，他咬紧牙关，不在打任何东西。
 6. 你最喜欢的和编程无关的一本书是什么？
     * **1984** by George Orwell. (David Heinemeier Hansson)
     * **Guns, Germs & Steel** by Jared Diamond (James Goslin)
- 
+
 [9-super-coders]: http://coolshell.cn/articles/8275.html
 
 随便翻翻 02
@@ -2962,9 +3028,9 @@ regard.**
 这是我从来没想过也没经历过的。... 这件事给我的印象太深刻了，平时大家总说“潜力”，
 但似乎都关注的是工作和学习的潜力，却没有想过**阅读也是有潜力的**。
 
-关于阅读，还有一本我印象深刻的书，叫做[《怎样阅读一本书》][how-to-read-a-book]。... 
+关于阅读，还有一本我印象深刻的书，叫做[《怎样阅读一本书》][how-to-read-a-book]。...
 让我真正深刻意识到，**阅读原来是讲方法的**，比如什么书应该精读，什么书应该略读，
-一本书的哪些部分应该精读，哪些部分应该略读…… 
+一本书的哪些部分应该精读，哪些部分应该略读……
 
 **只有速度而没有质量，再快都没有意义**。
 
@@ -2996,8 +3062,8 @@ regard.**
 我必须承认，在现成的答案面前，再花时间设想解法确实有点“耽误功夫”，而且自己的解法往往不能跟现成答案对比，
 有时候甚至差很多。这当然让人难为情，但是**持续的比较、思考所带来的收获，远比“拿现成的来用”的收获要大。**
 
-以前，有则寓言我印象很深。一个人问智者：“怎样才能获得幸福？” 智者答：“做正确的事情。” 
-那个人接着问：“怎样才能做正确的事情呢？”，智者答：“通过做错误的事情。” 
+以前，有则寓言我印象很深。一个人问智者：“怎样才能获得幸福？” 智者答：“做正确的事情。”
+那个人接着问：“怎样才能做正确的事情呢？”，智者答：“通过做错误的事情。”
 
 [no-comp-no-gain]: http://www.luanxiang.org/blog/archives/1742.html
 
@@ -3065,11 +3131,11 @@ regard.**
     + x should be not more than five, `x <= 5`;
     + x should be no more than five, `x = 5`;
     + 最近的例子来自这句话
-    
-    > But as with any web-based system, atom-based solutions trade latency for scalability, 
+
+    > But as with any web-based system, atom-based solutions trade latency for scalability,
     > making atom often inappropriate for very low-latency notifications。
-    
-    这句话之所以难翻译，问题似乎在于，除去句子的主干，之前有一个But as…， 
+
+    这句话之所以难翻译，问题似乎在于，除去句子的主干，之前有一个But as…，
     之后又有一个making…。然而我最后发现，对这个句子有疑问的程序员其实根本
     没搞懂 [**trade…for…**][trade-for] 的用法（翻译为“基于atom的解决方案需要权衡延迟性和扩展性”），
     如果明白它是“牺牲xx换取xx”之后，整个句子就相当好理解，也非常容易翻译了：
@@ -3172,7 +3238,7 @@ There are good study references, leave for later reading, make note here
     #. 专注学习(Concentrated Learning)
 
 But we should always keep in mind: **from Internet, we can get the newest
-staff; but from good books, we can get things systemly, and in a short time.** 
+staff; but from good books, we can get things systemly, and in a short time.**
 
 Dont waste too much time, surfing (constant searching but no answer) the internet.
 
@@ -3205,7 +3271,7 @@ Dont waste too much time, surfing (constant searching but no answer) the interne
 [carlos-jackie]: http://gnat-tang-shared-image.qiniudn.com/pictures/jackie-chan.png
 [other-face-effect]: http://baike.baidu.com/view/8966554.htm?fr=aladdin
 [25-celebrities]: http://list25.com/25-celebrities-who-share-an-uncanny-resemblance/
-[lady-furong]: http://baike.baidu.com/view/3800.htm 
+[lady-furong]: http://baike.baidu.com/view/3800.htm
 
 Math List 01
 ------------
@@ -3257,7 +3323,7 @@ Here are other specific names for variables.
 
 Other notational usages. Some of the most common usages: (大赞!!!)
 
-```plain 
+```plain
 a, b, c, and d (sometimes extended to e and f) often represent parameters or coefficients.
 a0, a1, a2, ... play a similar role, when otherwise too many different letters would be needed.
 ai or ui is often used to denote the i-th term of a sequence or the i-th coefficient of a series.
@@ -3338,9 +3404,11 @@ Computerized notation
 
 ### Bijection
 
-[Bijection][bijection]
-
+<div class="tzx-fright">
 ![bijection][bijection-pic]
+</div>
+
+[Bijection][bijection]
 
 In mathematics, a bijection (or bijective function or **one-to-one
 correspondence**) is a function between the elements of two sets, where every
@@ -3384,9 +3452,11 @@ and projective map.
 
 ### Parallelepiped
 
-[Parallelepiped][parallelepiped]
-
+<div class="tzx-fright">
 ![parallel piped][parallelepiped-pic]
+</div>
+
+[Parallelepiped][parallelepiped]
 
 In geometry, a parallelepiped is a three-dimensional figure formed by six
 **parallelograms** (the term rhomboid is also sometimes used with this
@@ -3535,7 +3605,7 @@ Further abstraction of Galois theory is achieved by the theory of Galois connect
 再看一下，其实 X/Y 表示的是线性空间 X 里面的向量投影到线性空间 Y 后相等（或者说 Congruent）。
 比如二维平面 x-y，用 （x，y）表示。（x，0）表示所有 y 为 0 的向量集合，显然也是一个线性空间。
 则 （x，y）/（x，0）这个 Quotient Space 里的（2, 2） 和（2, 8）一样（因为投影把 y 方向的信息忽略了）。
- 
+
 In linear algebra, the quotient of a vector space V by a subspace N is a vector
 space obtained by "collapsing" N to zero. The space obtained is called a
 quotient space and is denoted V/N (read V mod N or V by N).
@@ -3970,7 +4040,7 @@ Kurtosis Excess Kurtosis
 
 A distribution with negative excess kurtosis is called platykurtic, or
 platykurtotic. "Platy-" means "broad". In terms of shape, a platykurtic
-distribution has a lower, wider peak around the mean and thinner tails. 
+distribution has a lower, wider peak around the mean and thinner tails.
 
 ### MISC
 
@@ -4127,7 +4197,7 @@ The complex analogue of an orthogonal matrix is a unitary matrix.
     * PascalCase
     * CAPS_SNAKE_CASE
     * Snake_Pascal_Case
-    * Param Block: 
+    * Param Block:
 
 Block
 
@@ -4274,7 +4344,7 @@ Japanese Pop singer, song writer, and member of the group Zard**.
 
 [izumi-sakai]: http://en.wikipedia.org/wiki/Izumi_Sakai
 [izumi-sakai-baidu]: http://baike.baidu.com/view/192420.htm
-[izumi-sakai-pic]: http://gnat-tang-shared-image.qiniudn.com/pictures/izumi-sakai.png 
+[izumi-sakai-pic]: http://gnat-tang-shared-image.qiniudn.com/pictures/izumi-sakai.png
 [izumi-sakai-douban]: http://music.douban.com/musician/103766/
 [izumi-sakai-xiami]: http://www.xiami.com/search?pos=1&key=%E5%9D%82%E4%BA%95%E6%B3%89%E6%B0%B4
 [my-friend]: http://www.xiami.com/song/3686309?spm=a1z1s.3521865.23309997.12.iRY1P2
@@ -4307,7 +4377,7 @@ is certified as a Million record, selling 1,087,160 copies.
 ![Marit Larsen][marit-larsen-pic]
 
 Marit Larsen，原 M2M 女子组合的成员。在 2002 年 4 月解散后，Marion 在 2005 年出了其首张专辑 Here I Am，
-Marit 则在 2006 年出了其首张单飞专辑 Under The Surface，08 年推出了第二张专辑 The Chase。 
+Marit 则在 2006 年出了其首张单飞专辑 Under The Surface，08 年推出了第二张专辑 The Chase。
 
 Marit Elisabeth Larsen (born 1 July 1983) is a **Norwegian singer and
 songwriter**. She began playing violins at age of 5, and played it until the
@@ -4435,10 +4505,10 @@ made most clear in Stranger Music: Selected Poems and Songs, published in 1993,
 which gathered more than 200 of Cohen's poems … several novel excerpts, and
 almost 60 song lyrics … While it may seem to some that Leonard Cohen departed
 from the literary in pursuit of the musical, his fans continue to embrace him
-as a Renaissance man who straddles the elusive artistic borderlines." 
+as a Renaissance man who straddles the elusive artistic borderlines."
 
 Cohen will release his 13th studio album, Popular Problems, on Columbia Records
-a day after his 80th birthday on September 22, 2014. 
+a day after his 80th birthday on September 22, 2014.
 
 [leonard-cohen-pic]: http://gnat-tang-shared-image.qiniudn.com/pic/leonard-cohen-2.png
 [leonard-cohen]: https://en.wikipedia.org/wiki/Leonard_cohen
@@ -4520,7 +4590,7 @@ keywords: Linux, Git
 
 ![[Bill Gates][bill-gates] ([比尔·盖茨][bill-gates-baidu])][bill-gates-pic]
 
-keywords: Windows, BASIC 
+keywords: Windows, BASIC
 
 [bill-gates]: http://en.wikipedia.org/wiki/Bill_gates
 [bill-gates-baidu]: http://baike.baidu.com/subview/2075/11117599.htm?fromtitle=%E6%AF%94%E5%B0%94%E7%9B%96%E8%8C%A8&fromid=145939&type=syn
@@ -4541,7 +4611,7 @@ keywords: Windows, BASIC
 [kevin-mitnick]: http://en.wikipedia.org/wiki/Kevin_Mitnick
 [kevin-mitnick-baidu]: http://baike.baidu.com/view/165032.htm?from_id=3299528&type=syn&fromtitle=Kevin+Mitnick&fr=aladdin
 [kevin-mitnick-pic]: http://gnat-tang-shared-image.qiniudn.com/pictures/kevin-mitnick.png
- 
+
 ### Tsutomu Shimomura
 
 ![[Tsutomu Shimomura][tsutomu-shimomura]][tsutomu-shimomura-pic]
@@ -4577,7 +4647,7 @@ keywords: Windows, BASIC
 Men List: 05 (数学家特别版 01)
 ------------------------------
 
-* [List Of Mathematicians][list-of-mathematicians] 
+* [List Of Mathematicians][list-of-mathematicians]
 
 [list-of-mathematicians]: https://en.wikipedia.org/wiki/List_of_mathematicians
 

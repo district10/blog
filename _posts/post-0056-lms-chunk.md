@@ -5,9 +5,11 @@
 LMS 数据量
 ==========
 
-LMS 是 SICK（德国西克） 公司生产的 Laser Measurement Sensor（激光测距仪）。
-
+<div class="tzx-fright" style="padding:1em;">
 ![LMS1xx][lmspic]
+</div>
+
+LMS 是 SICK（德国西克） 公司生产的 Laser Measurement Sensor（激光测距仪）。
 
 通过一根网线可以读取 LMS 采集的数据。[^lmsexe]
 数据内容我以前统计过，这里贴一贴。

@@ -52,8 +52,10 @@ Bash (`B`ourne `A`gain `Sh`ell)
     * Colored output
 
         ```plain
-        Text: reset = 0, black = 30, red = 31, green = 32, yellow = 33, blue = 34, magenta = 35, cyan = 36, and white = 37
-        Back: reset = 0, black = 40, red = 41, green = 42, yellow = 43, blue = 44, magenta = 45, cyan = 46, and white = 47
+        Text: reset  =  0, black = 30, red     = 31, green = 32,
+              yellow = 33, blue  = 34, magenta = 35, cyan  = 36, and white = 37
+        Back: reset  =  0, black = 40, red     = 41, green = 42,
+              yellow = 43, blue  = 44, magenta = 45, cyan  = 46, and white = 47
         ```
 
         ```bash
@@ -61,12 +63,12 @@ Bash (`B`ourne `A`gain `Sh`ell)
         ```
 
     * Variables and Environment Variables
-                                                                     
+
         + `$environ`{.bash}
 
             ```bash
             PID=`pidof geany`
-            cat /proc/$PID/environ | tr '\0' '\n' 
+            cat /proc/$PID/environ | tr '\0' '\n'
             echo $PATH | tr ':' '\n'
             ```
 
@@ -94,7 +96,7 @@ Bash (`B`ourne `A`gain `Sh`ell)
         let sum=a+b      && echo $sum
 
         # $[], $(())
-        sum=$[  a + b  ] && echo $sum 
+        sum=$[  a + b  ] && echo $sum
         sum=$[  a + 10 ] && echo $sum
         sum=$(( a + b )) && echo $sum
 
@@ -166,7 +168,7 @@ Bash (`B`ourne `A`gain `Sh`ell)
         tput setb/setf NUM     # set background/font color, NUM: 0~7 (I think its better than "/e[1;32")
         tput setb 2 setf 7 && echo "green background && white text"  # you should "setb" first then "setf"
         tput bold, tput smul, tput rmul  # bold, set underline, remove underline
-        tput ed # I dont understand this... 
+        tput ed # I dont understand this...
         ```
 
         ```bash
@@ -220,13 +222,17 @@ Bash (`B`ourne `A`gain `Sh`ell)
         ```bash
         bash -x script.sh # specify when running script
         # or the so-called "Shebang hack"
-        "#!/bin/bash -xv" # "-xv" ==> enable debugging 
+        "#!/bin/bash -xv" # "-xv" ==> enable debugging
         ```
 
     * Functions and Arguments
 
         ```bash
-        fname() { echo -n Arg1: $1 " "; echo Arg2: $2; echo Args: $@; return 0;} && fname how are you
+        fname() { \
+            echo -n Arg1: $1 " "; \
+            echo Arg2: $2; echo Args: $@; \
+            return 0; \
+        } && fname how are you
         # $@ v.s. $*, we prefer the former
         # $*(expands as "$1c$2c$3", where c is the first character of IFS)
         ```
@@ -234,31 +240,34 @@ Bash (`B`ourne `A`gain `Sh`ell)
         + The Recusive Funcs:
 
             ```bash
-            F() { echo $1; sleep 1; F hello;} && F hello # better than the one on the book
+            F() { echo $1; sleep 1; F hello;} && F hello
             ```
 
         + Fork Bomb（不要在自己电脑上试！！）
 
             ```bash
             # Do not Try it Yourself !!!
-            :(){ :|:& };:  
-            # ":" is the function name, no params. in "{}", the first ":" calls itself, 
-            # and ":&" fork the process. by ";" the function is defined, and 
-            # the final ":" runs the function. You can check wikipedia for more information  
+            :(){ :|:& };:
+            # ":" is the function name, no params. in "{}", the first ":" calls
+            # itself, and ":&" fork the process. by ";" the function is defined,
+            # and the final ":" runs the function. You can check wikipedia for
+            # more information
             ```
 
-            > We can write a recursive function, which is basically a function that **calls itself**, 
-            > it **infinitely spawns processes** and ends up in a **denial-of-service** attack.
+            > We can write a recursive function, which is basically a function
+            > that **calls itself**, it **infinitely spawns processes** and
+            > ends up in a **denial-of-service** attack.
 
         + Exporting Functions:  `export -f fname`{.bash}
-        + Reading the return status of last command: `cmd; echo $? # retrieve exit status`{.bash}
+        + Reading the return status of last command:
+          `cmd; echo $? # retrieve exit status`{.bash}
         + Passing arguments to commands
         + Reading the output of a sequence of commands in a variable
 
             ```bash
             # Filters: cmd1 | cmd2 | cmd3 e.g.
-            ls | grep "os" | cat -n > output.txt 
-            # Subshell Method: e.g. 
+            ls | grep "os" | cat -n > output.txt
+            # Subshell Method: e.g.
             cmd_output=$(ls | cat -n)
             # Back tick/ Back quotes:  e.g.
             cmd_output=`ls | cat -n` # I like it a lot
@@ -288,8 +297,10 @@ Bash (`B`ourne `A`gain `Sh`ell)
         # repeat doing what you want to do, till it's done. e.g.
         repeat read forever
         # revised edition
-        repeat() { while :; do $@ && return; done;}; && repeat read forever
-        repeat() { while :; do $@ && return; sleep 30; done;}; && repeat read forever
+        repeat() { while :; do $@ && return; done;}; && \
+        repeat read forever
+        repeat() { while :; do $@ && return; sleep 30; done;}; && \
+        repeat read forever
         # why i need it? see below,
         repeat wget -c www.sourceforge.com/somefile.tar.gz
         ```
@@ -319,7 +330,13 @@ Bash (`B`ourne `A`gain `Sh`ell)
     * Comparisons and tests
 
         ```bash
-        # if condition; then do_something; else if condition; then do_something; else do_something; fi;
+        # if condition;
+        # then do_something;
+        # else if condition;
+        # then do_something;
+        # else do_something;
+        # fi;
+
         # or
         # [ condition ] && something
         # [ condition ] || something
@@ -335,14 +352,14 @@ Bash (`B`ourne `A`gain `Sh`ell)
         + `-w, -r`{.bash}: writeable/readable
         + `-L`{.bash}: symlink
         + Example:
-    
+
             ```bash
             if [ -e /bin/bash ]; then echo exists; else echo not exists; fi
-            if [ -e "/bin/bash" ]; then echo exists; else echo not exists; fi # ==> these two are the same
+            if [ -e "/bin/bash" ]; then echo exists; else echo not exists; fi
             ```
 
     * String comparason
-    
+
         ```bash
         [[ $str1 == $str2 ]], [[ $str1 = $str2 ]] # same thing
         [[ $str1 != $str2 ]]
@@ -378,7 +395,7 @@ Concatenating with Cat
     cat -s file.txt
     # more options:
     #     -T(Display Tab as ^T);
-    #     -n(line numbers); 
+    #     -n(line numbers);
     #     -b(line numbers, exculding blank lines)
     ```
 
@@ -388,9 +405,9 @@ Recording and Playing back of terminal session
     # start recording
     script -t 2> timing.log -a output.session
     # do whatever you want here
-    pwd; echo "hello, scripting recording"; dir -al; 
+    pwd; echo "hello, scripting recording"; dir -al;
     # exit recording
-    exit 
+    exit
     # yesterday once more!
     scriptreplay timing.log output.session
     ```
@@ -412,18 +429,8 @@ Finding files and file listing
         find $path -path "*/gnat/*"
         find $path -regex ".*\(\.py\|\.sh\)"
         # or ignore case when applying regexpr, "-iregex"
-        # do not try hard to memorize it, check it when you use them  
+        # do not try hard to memorize it, check it when you use them
         find $path ! -name "*.txt" # excluding
-        # more options:
-        #    -maxdepth 4, -mindepth 2
-        #    -type f/l/d/c/b/s/p (Regulay file, Symlink, Dir, CharDev, BlockDev, Socket, Pipe)
-        #    -atime / -ctime / -mtime (access, metadata change, modify), -7 / 7 /+7(less than, exactly, more than 7 days)
-        #    -amin / -cmin / -mmin (like -atime..., but the time metric is in Minutes)
-        #    -newer $another_file
-        #    -size 2k / +2k / -2k. 'k' can also be  'b, c, w, k, M, G' # Blocks, Bytes, Words, KiloBytes, MegaBytes, GigaBytes
-        #    -delete, delete the selected(out-sorted)
-        #    -perm 644, permissions
-        #    -exec cat {} \; > all_c_files.txt
         ```
 
 Playing with Xargs
@@ -444,27 +451,44 @@ Playing with Xargs
 
         ```bash
         # -d $X option, specify delim, now $X is the delim
-        cat args.txt | xargs -n 2 ./process_args.sh # each time pass 2 args to "process_args.sh"
-        cat args.txt | xargs -I {} ./process_args.sh -p {} -l # precise replacement
-        find $some_filters -print   | xargs     rm -f # bad
-        find $some_filters -print0 | xargs -0 rm -f # better, for -0 specify the delim is '\0'
-        # LOC(Lines of Code)
+
+        # each time pass 2 args to "process_args.sh"
+        cat args.txt | xargs -n 2 ./process_args.sh
+
+        # precise replacement
+        cat args.txt | xargs -I {} ./process_args.sh -p {} -l
+
+        # bad
+        find $some_filters -print   | xargs     rm -f
+        # better, for -0 specify the delim is '\0'
+        find $some_filters -print0  | xargs -0 rm -f
+
+        # LOC (Lines of Code)
         find $path -type f -name "*.c" -print0 | xargs -0 wc -l
-        cat files.txt | ( while read arg; do cat $arg; done ) # like "cat files.txt | xargs -I {} cat {}"
+        cat files.txt | ( while read arg; do cat $arg; done )
+        # like "cat files.txt | xargs -I {} cat {}"
         ```
 
 Translating with tr
 
 :   `tr [option] set1 set2`{.bash}
-    
-    mapping from set1 to set2 (with specified options), notice the len(set1) && len(set2) issue
+
+    mapping from set1 to set2 (with specified options), notice the len(set1) &&
+    len(set2) issue
 
     ```bash
-    echo "WHO IS THIS" | tr 'A-Z' 'a-z' # other valid sets: 'a-fg-z', 'a-n0-9', 'aA'... 
+    echo "WHO IS THIS" | tr 'A-Z' 'a-z' # other valid sets: 'a-fg-z', 'a-n0-9', 'aA'...
+
     tr '0-9' '987654321' # encription
     tr '987654321' '0-9' # decryption
-    tr 'a-zA-Z' 'n-za-mN-ZA-M' # the famous ROT13 Encryption. symmetric, use it the second time to decrypt
-    tr -d '[set1]' # Deleting chars
+
+    # the famous ROT13 Encryption.
+    # symmetric, use it the second time to decrypt
+    tr 'a-zA-Z' 'n-za-mN-ZA-M'
+
+    # Deleting chars
+    tr -d '[set1]'
+
     # more options:
     #      Complementing character set: -c
     #      Squeezing Characters with tr: tr -s ' '
@@ -500,7 +524,8 @@ Checksum and Verification
     * Checksum for Directories
 
         ```bash
-        md5deep / sha1deep -rl dir # -r(recursive), -l(use relative path)
+        # -r(recursive), -l(use relative path)
+        md5deep / sha1deep -rl dir
         ```
 
 Crptographic tools and Hashes
@@ -508,14 +533,19 @@ Crptographic tools and Hashes
 Sorting Unique and Duplicates
 
 :   ```bash
-    sort files -o output.txt # or `sort files > output.txt`
+    # or `sort files > output.txt`
+    sort files -o output.txt
+
     # more options:
     #    -n: numeric sort, -M: sort Months, -r: Reverse
     #    -m: merge two sorted file: `sort -m sorted1.txt sorted2.txt`
     #    -k NUM: sort by colomun NUM(1..INF)
     sort file1.txt file2.txt | unique
     # `unique` options:
-    #   -u(dups will not print out), -c(count), -d(only dups), -s, -w(#pass, #compare)
+    #   -u(dups will not print out),
+    #   -c(count),
+    #   -d(only dups),
+    #   -s, -w(#pass, #compare)
     ```
 
 Temporary file naming and random numbers
@@ -523,32 +553,51 @@ Temporary file naming and random numbers
 :   ```bash
     filename=`mktemp`
     dirname=`mktemp -d`
-    mktemp -u # generate a name but not create it now
-    mktemp test.XXX # with file name prefixed with "test" and suffixed with randomly generated 3 chars
+
+    # generate a name but not create it now
+    mktemp -u
+
+    # with file name prefixed with "test" and
+    # suffixed with randomly generated 3 chars
+    mktemp test.XXX
     ```
 
 Spliting files and data
 
 :   ```bash
-    split -b 10k data.file -d -a 4 # -d: numeric suffix, -a 4: 4 suffix)
     # split [args] [prefix], e.g.
-    split -b 10k data.file -d -a 2 part # ==> part01, part02, ...
-    split -l 10 Python.txt # split to several text files each with 10 lines of text
+    # -d: numeric suffix, -a 4: 4 suffix)
+    split -b 10k data.file -d -a 4
+
+    # ==> part01, part02, ...
+    split -b 10k data.file -d -a 2 part
+
+    # split to several text files each with 10 lines of text
+    split -l 10 Python.txt
+
     # csplit - split a file into sections determined by context lines, e.g.
-    csplit server.log /SERVER/ -n 2 -s {*} -f server -b "%2d.log" 
+    csplit server.log /SERVER/ -n 2 -s {*} -f server -b "%2d.log"
+
     # Slicing filenames based on extension
-    file="sample.jpg"; name=${file%.*}; echo $name  # ==> "sample" (% is nongreedy, %% is greedy)
-    file="sample.jpg"; name=${file#*.}; echo $name # ==> "jpg" (from left, ##: greedy)
+    file="sample.jpg"; name=${file%.*}; echo $name
+    # ==> "sample" (% is nongreedy, %% is greedy)
+
+    file="sample.jpg"; name=${file#*.}; echo $name
+    # ==> "jpg" (from left, ##: greedy)
     ```
 
 Renaming and Moving files in Bulk
 
 :   ```bash
     mv $before $after
-    rename *.jpg *.JPG # rename all jpg files to JPG files
+
+    # rename all jpg files to JPG files
+    rename *.jpg *.JPG
+
     # <space> to "_"
-    rename 's/ /_/g' *  # Rename all the file in `pwd`
-    # Upper to Lower: 
+    rename 's/ /_/g'
+
+    # Upper to Lower:
     rename 'y/A-Z/a-z/' *
     # Lower to Upper:
     rename 'y/a-z/A-Z/' *
@@ -562,11 +611,12 @@ Spell Checking and dictionary manipulation
 
 dvorak4tzx found something
 
-:   * In a word-processing app like geany, the line num is not the real one
-    * Because of the **offset-by-1**, for an empty file has 1 line but actually there is nothing
+:   - In a word-processing app like geany, the line num is not the real one
+    - Because of the **offset-by-1**, for an empty file has 1 line but actually
+      there is nothing
 
 Automating interactive Input
-			
+
 Making commands quicker by running parallel processes
 
 Chap 3: File in, File out
@@ -574,7 +624,8 @@ Chap 3: File in, File out
 
 Generating files of any size
 
-:   `dd if=/dev/zero of=./junk.data count=50 bs=1M`{.bash}, `M` can alse be `c`, `w`, `b`, `k`, `M`, `G`
+:   - `dd if=/dev/zero of=./junk.data count=50 bs=1M`{.bash}
+    - `M` can alse be `c`, `w`, `b`, `k`, `M`, `G`
 
 The Intersection and set difference (A-B) on text files
 
@@ -583,14 +634,25 @@ The Intersection and set difference (A-B) on text files
 
     ```bash
     # in place sort
-    sort A.txt -o A.txt # sort A.txt and output to A.txt
-    comm A.txt B.txt # 1st col: from A, 2nd col: from B, 3rd col: A and B
-    comm A.txt B.txt -1 -2 # no 1st, 2nd col
-    comm A.txt B.txt -3 # no 3rd col
+
+    # sort A.txt and output to A.txt
+    sort A.txt -o A.txt
+
+    # 1st col: from A, 2nd col: from B, 3rd col: A and B
+    comm A.txt B.txt
+
+    # no 1st, 2nd col
+    comm A.txt B.txt -1 -2
+
+    # no 3rd col
+    comm A.txt B.txt -3
+
     # produce a unified output, `^` is the start of the line marker
     comm A.txt B.txt -3 | sed 's/^\t//'
+
     # Set difference for A.txt:
     comm A.txt B.txt -2 -3
+
     # Set difference for B.txt:
     comm A.txt B.txt -1 -3
     ```
@@ -599,14 +661,17 @@ Finding and deleting duplicate files
 
 :   ```bash
     # create some duplicated files
-    echo "hello" > test ; cp test test_copy1 ; cp test test_copy2;
+    echo "hello" > test ;
+    cp test test_copy1 ;
+    cp test test_copy2;
     echo "next" > other;
     ```
 
     ```bash
     #!/bin/bash
     # Filename: remove_duplicates.sh
-    # Description: Find and remove duplicate files and keep one sample of each file.
+    # Description: Find and remove duplicate files and
+    #              keep one sample of each file.
     ls -lS --time-style=long-iso | \
     awk 'BEGIN {
         getline; getline;
@@ -625,15 +690,23 @@ Finding and deleting duplicate files
         }' | \
     sort -u > duplicate_files
 
-    cat duplicate_files | xargs -I {} md5sum {} | sort | uniq -w 32 | awk '{ print "^"$2"$" }' | sort -u > duplicate_sample
+    cat duplicate_files | \
+    xargs -I {} md5sum {} | \
+    sort | uniq -w 32 | \
+    awk '{ print "^"$2"$" }' | \
+    sort -u > duplicate_sample
+
     echo Removing..
-    comm duplicate_files duplicate_sample -2 -3 | tee /dev/stderr | xargs rm
+    comm duplicate_files duplicate_sample -2 -3 | \
+    tee /dev/stderr | xargs rm
+
     echo Removed duplicates files successfully.
     ```
 
 Working with file permissions, ownership, and sticky bit
 
-:   File permissions and ownership are one of the **distinguishing features** of the Unix/Linux filesystems such as **extfs** (extended FS).
+:   File permissions and ownership are one of the **distinguishing features**
+    of the Unix/Linux filesystems such as **extfs** (extended FS).
 
     formats:
       ~ ```bash
@@ -641,11 +714,24 @@ Working with file permissions, ownership, and sticky bit
         -r, -w, -x
         # special permissions
         # file, x -> S, Permission S (S)
-        user:  setuid # The setuid permission enables an executable file to be executed effectively as its owner, even when the executable is run by another user.
-        group: setgid # This enables the item to run an executable file with an effective group as the owner group. 
-        others:  NULL # Others have the same read, write, and execute permissions as the user and group. But it does not have permission S (such as setuid or setgid).
+        user:  setuid
+        # The setuid permission enables an executable file to be executed
+        # effectively as its owner, even when the executable is run by another
+        # user.
+
+        group: setgid
+        # This enables the item to run an executable file with an effective
+        # group as the owner group.
+
+        others:  NULL
+        # Others have the same read, write, and execute permissions as the user
+        # and group. But it does not have permission S (such as setuid or
+        # setgid).
+
         # directories, Sticky Bit (t, T)
-        # only the user who created the directory can delete the files in the directory, even if the group and others have write permissions. 
+        # only the user who created the directory can delete the files in the
+        # directory, even if the group and others have write permissions.
+
         # ------rwt , ------rwT
         cd /tmp; dir -al # to have a look
         ```
@@ -667,7 +753,8 @@ Working with file permissions, ownership, and sticky bit
         chmod +s executable_file
         ```
 
-    `setuid`{.bash} is restricted such that setuid would not work for scripts, but only for Linux **ELF** binaries
+    `setuid`{.bash} is restricted such that setuid would not work for scripts,
+    but only for Linux **ELF** binaries
 
 Making files Immutable
 
@@ -680,7 +767,8 @@ Making files Immutable
     ```
 
     ```bash
-    # /etc/resolv.conf, stores a list of DNS servers, by default is set to your ISP's DNS Server
+    # /etc/resolv.conf, stores a list of DNS servers, by default is set to your
+    # ISP's DNS Server
     chattr +i file # make immutable
     chattr -i file # make not immutable
     ```
@@ -752,8 +840,10 @@ Enumeration file types statics
     On WHY?
 
     `<(find $path -type f -print)`{.bash} is equivalent to a filename,
-    the first `<`{.bash}` is for input redirection and the second `<`{.bash} is for converting the subprocess output to a filename.
-    In Bash 3.x and higher we have a new operator `<<<`{.bash} that lets us use a string output as an input file. So we can do this:
+    the first `<`{.bash}` is for input redirection and the second `<`{.bash} is
+    for converting the subprocess output to a filename.
+    In Bash 3.x and higher we have a new operator `<<<`{.bash} that lets us use
+    a string output as an input file. So we can do this:
     `` done <<< "`find $path -type f -print`" ``{.bash}
 
 Using loopback files
@@ -763,16 +853,23 @@ Using loopback files
         ```bash
         # create a block file
         dd if=/dev/zero of=loopbackfile.img bs=1M count=20
+
         # format it to an ext4 filesystem
         mkfs.ext4 loopbackfile.img
+
         # check what is it
         file loopbackfile.img
+
         # mount it
         mkdir /mnt/loopback
         mount -o loop loopbackfile.img /mnt/loopback
-        # or mount it this way: `losetup /dev/loop1 loopbackfile.img; mount /dev/loop1 /mnt/loopback`
+
+        # or mount it this way:
+        # `losetup /dev/loop1 loopbackfile.img; mount /dev/loop1 /mnt/loopback`
+
         # umount it, syntax: mount <mount_point>
         umount /mnt/loopback
+
         # or unmount it this way: `umount /dev/loop1`
         ```
 
@@ -781,11 +878,13 @@ Using loopback files
     ```bash
     losetup /dev/loop1 loopbackfile.img
     fdisk /dev/loop1
-    losetup -o 32256 /dev/loop2 loopbackfile.img 
-    # Here, 
+    losetup -o 32256 /dev/loop2 loopbackfile.img
+
+    # Here,
     #    /dev/loop2 will represent the first partition,
-    #    -o is the offset flag, 32256 bytes are for a DOS partition scheme. 
-    #    The first partition starts after an offset of 32256 bytes from the start of the hard disk.
+    #    -o is the offset flag, 32256 bytes are for a DOS partition scheme.
+    #    The first partition starts after an offset of 32256 bytes from the
+    #    start of the hard disk.
     ```
 
 * Quicker way to mount loopback disk images with partitions
@@ -793,13 +892,18 @@ Using loopback files
     ```bash
     # this part have not tested myself
     kpartx -v -a diskimage.img
+
     # output:
     # "add map loop0p1 (252:0): 0 114688 linear /dev/loop0 8192"
     # "add map loop0p2 (252:1): 0 15628288 linear /dev/loop0 122880"
-    # This creates mappings from the partitions in the disk image to devices in /dev/mapper which you can then mount. 
+
+    # This creates mappings from the partitions in the disk image to devices in
+    # /dev/mapper which you can then mount.
     mount /dev/mapper/loop0p1 /mnt/disk1 # mount it
+
     # do something and then unmount it
     unmount /mnt/disk1
+
     # remove the mappings by
     kpartx -d diskimage.img
     ```
@@ -809,24 +913,33 @@ Using loopback files
         ```bash
         mkdir /mnt/iso
         mount -o loop linux.iso /mnt/iso
+
         # Flush changing immediately with sync
         sync
+
         # Creating ISO files and hybrid ISO
         cat /dev/cdrom > image.iso # simply cat
         dd if=/dev/cdrom of=image.iso # better choice
         mkisofs -V "Label" -o image.iso source_dir/
+
         # `mkisofs` util has been replaced by `genisoimage` util, see
         #    genisoimage -V "books" -o books.iso pdfs/ # and it works
         ```
 
     * Hybrid ISO that boots off a flash drive or hard disk
         + What is Hybrid ISO?
-          ~ Usually, bootable ISO files cannot be transferred or written to a USB storage device and booted the OS from the USB key. 
-            But, special type of ISO files called hybrid ISOs can be flashed and they are capable of booting from such devices.
+          ~ Usually, bootable ISO files cannot be transferred or written to a
+            USB storage device and booted the OS from the USB key.  But,
+            special type of ISO files called hybrid ISOs can be flashed and
+            they are capable of booting from such devices.
 
         ```bash
-        isohybrid image.iso # generate a hybrid iso
-        dd if=image.iso of=/dev/usb0 # write the iso file to usb device # this "cat image.iso >> /dev/usb0" works too, but I do not recommand
+        # generate a hybrid iso
+        isohybrid image.iso
+
+        # write the iso file to usb device # this "cat image.iso >> /dev/usb0"
+        # works too, but I do not recommand
+        dd if=image.iso of=/dev/usb0
         ```
 
     * More about ISO
@@ -845,7 +958,9 @@ Finding the difference between files, patching
     diff version1.txt version2.txt
     diff -u version1.txt version2.txt
     diff -u version1.txt version2.txt > version.patch
-    patch -p1 version1.txt < version.patch # version1.txt is no difference with version2.txt now
+
+    # version1.txt is no difference with version2.txt now
+    patch -p1 version1.txt < version.patch
     ```
 
 Using head and tail for printing the last or first 10 lines
@@ -856,12 +971,19 @@ Using head and tail for printing the last or first 10 lines
     head -n 4 file # 4 lines
     head -n -4 flie # print all lines except the last 4 lines
     seq 11 | head -n -4
+
     # tail is  like head, except
     tail -n +4 file # syntax: tail -n +M, print all except first (M-1) lines
+
     # -f --follow option
-    tail -f /var/log/message # useful for reading log file
-    dmesg | tail -f # this can read  last lines of log file, but can't keep tracking on
-    # Suppose we are reading a growing file, and a process Foo is appending data to the file, the -f tail should be executed until the process Foo dies.
+    tail -f /var/log/message
+
+    # this can read  last lines of log file, but can't keep tracking on
+    dmesg | tail -f
+
+    # Suppose we are reading a growing file, and a process Foo is appending
+    # data to the file, the -f tail should be executed until the process Foo
+    # dies.
     tail -f file --pid $(pidof geany) # $(pidof geany) or $(pgrep geany)
     ```
 
@@ -926,15 +1048,15 @@ Using regular expressions
         ------- | -------
         `^`     | the start of the line marker
         `$`     | the end of the line marker
-        `.`     | matches any one character 
+        `.`     | matches any one character
         `?`     | This means that the preceding item must match one or zero times
         `+`     | This means that the preceding item must match one or more times
-        `*`     | This means that the preceding item must match zero or more times 
+        `*`     | This means that the preceding item must match zero or more times
         `[ ]`   | matches any one of the characters enclosed  in `[chars]`
         `[^]`   | except those that are enclosed in `[^chars]`
         `[a-z]` | This matches any character within the range specified in `[]`
         `( )`   | This treats the terms enclosed as one entity, e.g. `(how)?`
-        `{n}`   | This means that the preceding item must match n times. 
+        `{n}`   | This means that the preceding item must match n times.
         `{n, }` | at least n times
         `{n,m}` | n to m times
         `|`     | This specifies the alternation—one of the items on either of side of `|` should match
@@ -945,7 +1067,9 @@ Using regular expressions
 
         ```bash
         # ip address:
-        [0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3} # {1, 3} for 1 to 3 digits
+        [0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}
+        # {1, 3} for 1 to 3 digits
+
         [[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}
         ```
 
@@ -955,16 +1079,22 @@ Using regular expressions
         # grep pattern filename(s)
         grep -E "[a-z]+" file # or
         egrep "[a-z]+" file
+
         # format output
         echo this is a line. | egrep -o "[a-z]+\." # or
         echo this is a line. | grep -oE "[a-z]+\."
+
         # -v: excluding, -c: count matching lines, -n: with line number
         # -i: ignore case, -e: multiple patterns, e.g.
         grep -e "text" -e "the" . -R -n
+
         # regpack.txt contains regexprs
         cat file.txt | grep -f regpack.txt
-        echo -e "1 2 3 4\nhello\n5 6789" | egrep -o "[0-9]" # ==> 9 lines of [1..9]
+        echo -e "1 2 3 4\nhello\n5 6789" | egrep -o "[0-9]"
+        # ==> 9 lines of [1..9]
+
         grep "text" . -R -n # recursively search many files
+
         # --include *.{c,cpp}: grep c cpp files
         # --exclude-dir: exclude dirs
         # --exclude-from FILE
@@ -974,11 +1104,18 @@ Using regular expressions
 
         ```bash
         # Syntax: cut -f FIELD_LIST filename
-        echo -e "No Name Mark Percent\n1 Sarath 45 90\n2 Alex 49 98\n3 Anu 45 99" > student_data.txt
+        echo -e \
+            "No Name Mark Percent\n1 Sarath 45 90\n2 Alex 49 98\n3 Anu 45 99" \
+        > student_data.txt
+
         cut -f1 student_data.txt
         cut -f1, 2 student_data.txt
         cut -f2,3 -d';' student_data.txt
-        echo -e "abcdefghijklmnopqrstuvwxyz\nabcdefghijklmnopqrstuvwxyz\nabcdefghijklmnopqrstuvwxyz\nabcdefghijklmnopqrstuvwxy" > rangefields.txt
+        echo -e \
+            "abcdefghijklmnopqrstuvwxyz\nabcdefghijklmnopqrstuvwxyz\n\
+            abcdefghijklmnopqrstuvwxyz\nabcdefghijklmnopqrstuvwxy" \
+        > rangefields.txt
+
         cut -c1-5 range_fields.txt # --characters
         cut range_fields.txt -c1-3,6-9 --output-delimiter ","
         ```
@@ -990,7 +1127,7 @@ Using regular expressions
         # -i: in place
         sed 's/this/THIS/' file # replace the first occurrence
         sed 's/this/THIS/g' file # for every occurence
-        sed 's/this/THIS/20g' file # form 20 occurence onwards, 1-based index 
+        sed 's/this/THIS/20g' file # form 20 occurence onwards, 1-based index
         echo thisthisthisthis | sed 's/this/THIS/2g' # ==> thisTHISTHISTHIS
         # we can use other delims
         sed 's:text:replace:g' # escape delim: "\:"
@@ -1010,13 +1147,30 @@ Using regular expressions
     * `awk`{.bash}: pattern scanning and processing language. (Better See my other post: [awk-tutorial])
 
         ```bash
-        # Syntax: awk 'BEGIN{ print "start" } pattern { commands } END{ print "end" }
-        echo -e "line1\nline2" | awk 'BEGIN{ print "START" } { print } END{ print "END" } '
-        echo | awk '{ var1="v1"; var2="v2"; var3="v3"; print var1,var2,var3 ; }' # "v1 v2 v3"
-        echo | awk '{ var1="v1"; var2="v2"; var3="v3"; print var1 var2 var3 ; }' # "v1v2v3"
-        echo | awk '{ var1="v1"; var2="v2"; var3="v3"; print var1 "-" var2 "-" var3 ; }' # "v1-v2-v3"
-        # print options: "NR": record number(line num), "NF": num of fields(delimed by <space>)
-        echo -e "line1 f2 f3\nline2 f4 f5\nline3 f6 f7" | awk '{print "Line no:"NR",No of fields:"NF, "$0="$0, "$1="$1,"$2="$2,"$3="$3 }'
+        # Syntax:
+        # awk 'BEGIN{ print "start" } pattern { commands } END{ print "end" }
+        echo -e "line1\nline2" | \
+        awk \
+        'BEGIN{ print "START" } { print } END{ print "END" } '
+
+        # "v1 v2 v3"
+        echo | awk \
+        '{ var1="v1"; var2="v2"; var3="v3"; print var1,var2,var3 ; }'
+
+        # "v1v2v3"
+        echo | awk \
+        '{ var1="v1"; var2="v2"; var3="v3"; print var1 var2 var3 ; }'
+
+        # "v1-v2-v3"
+        echo | awk \
+        '{ var1="v1"; var2="v2"; var3="v3"; print var1 "-" var2 "-" var3 ; }'
+
+        # print options: "NR": record number(line num), "NF": num of
+        # fields(delimed by <space>)
+        echo -e "line1 f2 f3\nline2 f4 f5\nline3 f6 f7" | \
+        awk \
+        '{print "Line no:"NR",No of fields:"NF, "$0="$0, "$1="$1,"$2="$2,"$3="$3 }'
+
         awk '{ print $3,$2 }' file
         ```
 

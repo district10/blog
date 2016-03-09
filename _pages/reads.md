@@ -13,6 +13,33 @@ V/\n#. ?kbzf
 <div class="reads">
 
 #. &#x2610;
+#. &#x2610; [vim - How do I open the directory of the current open file? - Super User](http://superuser.com/questions/31677/how-do-i-open-the-directory-of-the-current-open-file)
+:   ?
+    :   - `:Sex .`
+        - This is good but the command is so hard to remember.
+
+#. &#x2611; [How to switch to the directory listing from file view in vim? - Unix & Linux Stack Exchange](http://unix.stackexchange.com/questions/52179/how-to-switch-to-the-directory-listing-from-file-view-in-vim)
+#. &#x2610; [Things I Wish I Learned In Engineering School](http://blog.kowalczyk.info/articles/engineering-school.html)
+#. &#x2610; [Things I Wish I Learned In Engineering School](http://blog.kowalczyk.info/articles/engineering-school.html)
+#. &#x2610; [【新智元—世纪对决】AlphaGo 惊天逆转李世石 ，关键棋局解析](http://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=402888309&idx=1&sn=fe4a7f99fde22f5f4c8bc056045a55d6&scene=23&srcid=0309shravqZGaVQnxy1edb98#rd)
+#. &#x2610; [Go (game) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Go_(game))
+
+Go (traditional Chinese: 圍棋; simplified Chinese: 围棋; pinyin: About this
+sound wéiqí; Japanese: 囲碁; rōmaji: igo; literally: "encircling game") is an
+abstract board game for two players, in which the aim is to surround more
+territory than the opponent.
+
+The game originated in ancient China more than 2,500 years ago, and is one of
+the oldest board games played today. It was considered one of the four
+essential arts of a cultured Chinese scholar in antiquity. The earliest written
+reference to the game is generally recognized as the historical annal Zuo Zhuan
+
+There is much strategy involved in the game, and the number of possible games
+is vast (10761 compared, for example, to the estimated 10120 possible in
+chess), displaying its complexity despite relatively simple rules.
+
+    #. &#x2610; [The Chinese Rules of Go](https://www.cs.cmu.edu/~wjh/go/rules/Chinese.html)
+
 #. &#x2610; [javascript - Copy to clipboard without Flash - Stack Overflow](http://stackoverflow.com/questions/6355300/copy-to-clipboard-without-flash)
 #. &#x2610;
 * [Filesystem | Wikipedia](http://en.wikipedia.org/wiki/File_system)

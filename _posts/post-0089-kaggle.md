@@ -91,6 +91,7 @@ Tutorials
 #. <http://nbviewer.jupyter.org/github/agconti/kaggle-titanic/blob/master/Titanic.ipynb>
 #. <http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb>
 #. <http://nbviewer.jupyter.org/github/agconti/BlueBook/blob/master/BlueBook.ipynb>
+#. <https://github.com/wehrley/wehrley.github.io/blob/master/SOUPTONUTS.md>
 
 <!--
 <div class="tzx-tabs">

@@ -9,7 +9,9 @@ DuckDuckGo：另一个搜索引擎
 >
 > 由我意译自 DuckDuckGo 英文维基页面。
 
+<div class="tzx-fleft" style="padding:2em;">
 ![DuckDuckGo][ddg-pic]
+</div>
 
 DuckDuckGo 是一个互联网搜索引擎，它强调保护搜索者的隐私，
 且能避免 Filter Bubble 的影响（在不同国家不同地区搜索结果不同）。
@@ -86,7 +88,7 @@ Google 和 Bing 由于受商业模式的制约，很多事不能做，但 DuckDu
 （Backers at Union Square Ventures Say Google is Vulnerable）。
 
 2013 年 9 月 26 日，新发布的 GNOME 默认浏览器 Web 3.10 版本默认使用
-DuckDuckGo 搜索引擎，而不是 Google。 
+DuckDuckGo 搜索引擎，而不是 Google。
 
 2014 年 6 月 2 日，苹果 WWDC 大会上，库克宣布 iOS 8 和 OS X Yosemite
 （译注：怎么看都像是日本词汇）的搜索引擎提供了 DuckDuckGo 选项。
@@ -114,7 +116,7 @@ Wolfram Alpha，Bing，DuckDuckBot（自家爬虫）等等。
 
 ![Zero-Click Info][zero-click-graybox]
 
-[zero-click-graybox]: http://gnat-tang-shared-image.qiniudn.com/pictures/duckduckgo-graybox.png
+[zero-click-graybox]: http://gnat-tang-shared-image.qiniudn.com/pictures/duckduckgo-graybox.png?imageView2/2/w/800
 
 在定位上，DuckDuckGo 强调不侵害用户隐私，即不储存 IP 地址，不记录用户信息，
 必要时才使用 Cookies。Weinberg 强调，“DuckDuckGo 默认不收集和分享个人信息。

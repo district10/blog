@@ -427,8 +427,10 @@ p a img:hover {
 }
 
 dt {
-    font-size: 110%;
+    font-size: 130%;
 	padding-top: 1.5em;
+    padding-bottom: 0.8em;
+    font-variant: small-caps;
 }
 
 #tzxslogan {
@@ -550,4 +552,16 @@ pre.tzx-bigquote code {
 .tzx-fleft {
     float: left;
 	padding-right: 1em;
+}
+
+.tzx-tag {
+  float: right;
+  clear: both;
+  margin: 0.2em;
+  margin-right: -200px;
+}
+
+.tzx-bigquote > code {
+    margin: 0 auto;
+    color: red;
 }
