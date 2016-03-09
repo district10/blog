@@ -31,7 +31,6 @@ pre {
 
 <!--...-->
 
-
 ---
 
 * If ... Else ... Paradigm
@@ -8076,7 +8075,6 @@ Disallow:
 [^qiniu-robots-default]: 七牛默认在每个 bucket 加了一个 robots 文件，禁止所有爬虫的爬取。
 
 <!--...-->
-
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="jquery-ui.min.js"></script>
 <script>
