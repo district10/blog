@@ -78,3 +78,8 @@ for i in *.JPG; do
     lossy $i ${i/.JPG/.lossy.jpg}
 done
 ```
+
+searching
+
+* ag
+* pt (better, can search chinese, and easier to get the binary)

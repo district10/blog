@@ -526,3 +526,28 @@ div#TOC:hover {
 .hide {
     visibility: hidden;
 }
+
+pre.tzx-poem code {
+	color: black;
+	// font-variant: small-caps;
+}
+
+pre.tzx-bigquote {
+	padding-left: 6em;
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+
+pre.tzx-bigquote code {
+	color: black;
+}
+
+.tzx-fright {
+    float: right;
+	padding-left: 1em;
+}
+
+.tzx-fleft {
+    float: left;
+	padding-right: 1em;
+}

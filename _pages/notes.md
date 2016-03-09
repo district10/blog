@@ -156,8 +156,8 @@ pd.read_clipboard()
 
 ---
 
-> You can think of the meaning of the words column and feature as
-> interchangeable for this notebook.
+> You can **think of the meaning of the words column and feature as
+> interchangeable** for this notebook.
 
 ---
 
@@ -246,74 +246,73 @@ def plural(noun):
 
 [Python正则表达式指南 - AstralWind - 博客园](http://www.cnblogs.com/huxi/archive/2010/07/04/1771073.html)
 
-:   与大多数编程语言相同，正则表达式里使用"\"作为转义字符，这就可能造成反斜杠困
-    扰。假如你需要匹配文本中的字符"\"，那么使用编程语言表示的正则表达式里将需要
-    4个反斜杠"\\\\"：前两个和后两个分别用于在编程语言里转义成反斜杠，转换成两个
-    反斜杠后再在正则表达式里转义成一个反斜杠。Python里的原生字符串很好地解决了
-    这个问题，这个例子中的正则表达式可以使用r"\\"表示。同样，匹配一个数字的
-    "\\d"可以写成r"\d"。有了原生字符串，你再也不用担心是不是漏写了反斜杠，写出
-    来的表达式也更直观。
+:   与大多数编程语言相同，正则表达式里使用 `\` 作为转义字符，这就可能造成反斜杠
+    困扰。假如你需要匹配文本中的字符 `\`，那么使用编程语言表示的正则表达式里将
+    需要4个反斜杠 `\\\\`：前两个和后两个分别用于在编程语言里转义成反斜杠，转换
+    成两个反斜杠后再在正则表达式里转义成一个反斜杠。Python 里的原生字符串很好地
+    解决了这个问题，这个例子中的正则表达式可以使用 `r"\\"` 表示。同样，匹配一个
+    数字的`"\\d"` 可以写成 `r"\d"`。有了原生字符串，你再也不用担心是不是漏写了
+    反斜杠，写出来的表达式也更直观。
 
 ---
 
-`pip install --upgrade pip`{.bash}
-`pip install jupyter`{.bash}
+* `pip install --upgrade pip`{.bash}
+* `pip install jupyter`{.bash}
 
-Python2 & Python3 on Windows
-
-`python3.bat`
+Python2 & Python3 on Windows: `python3.bat`
 :   ```bash
     @ echo off
     C:\Python34\python.exe %*
     ```
 ---
 
-附 In My Secret Life 的[歌词][in-my-secret-life-lyrics]
-~~~
-I saw you this morning.
-You were moving so fast.
-Can't seem to loosen my grip
-On the past.
-And I miss you so much.
-There's no one in sight.
-And we're still making love
-In My Secret Life.
+附 [In My Secret Life][in-my-secret-life] 的 [歌词][in-my-secret-life-lyrics]：
 
-I smile when I'm angry.
-I cheat and I lie.
-I do what I have to do
-To get by.
-But I know what is wrong,
-And I know what is right.
-And I'd die for the truth
-In My Secret Life.
+:   plain
+    I saw you this morning.
+    You were moving so fast.
+    Can't seem to loosen my grip
+    On the past.
+    And I miss you so much.
+    There's no one in sight.
+    And we're still making love
+    In My Secret Life.
 
-Hold on, hold on, my brother.
-My sister, hold on tight.
-I finally got my orders.
-I'll be marching through the morning,
-Marching through the night,
-Moving cross the borders
-Of My Secret Life.
+    I smile when I'm angry.
+    I cheat and I lie.
+    I do what I have to do
+    To get by.
+    But I know what is wrong,
+    And I know what is right.
+    And I'd die for the truth
+    In My Secret Life.
 
-Looked through the paper.
-Makes you want to cry.
-Nobody cares if the people
-Live or die.
-And the dealer wants you thinking
-That it's either black or white.
-Thank G-d it's not that simple
-In My Secret Life.
+    Hold on, hold on, my brother.
+    My sister, hold on tight.
+    I finally got my orders.
+    I'll be marching through the morning,
+    Marching through the night,
+    Moving cross the borders
+    Of My Secret Life.
 
-I bite my lip.
-I buy what I'm told:
-From the latest hit,
-To the wisdom of old.
-But I'm always alone.
-And my heart is like ice.
-And it's crowded and cold
-In My Secret Life.
-~~~
+    Looked through the paper.
+    Makes you want to cry.
+    Nobody cares if the people
+    Live or die.
+    And the dealer wants you thinking
+    That it's either black or white.
+    Thank G-d it's not that simple
+    In My Secret Life.
+
+    I bite my lip.
+    I buy what I'm told:
+    From the latest hit,
+    To the wisdom of old.
+    But I'm always alone.
+    And my heart is like ice.
+    And it's crowded and cold
+    In My Secret Life.
+    ```
 
 [in-my-secret-life]: http://www.xiami.com/song/1014582?spm=a1z1s.3521865.23309997.2.NsmCfy
 [in-my-secret-life-lyrics]: http://www.lyrics.com/in-my-secret-life-lyrics-leonard-cohen.html
@@ -322,7 +321,9 @@ In My Secret Life.
 
 * [William Thomson, 1st Baron Kelvin](http://en.wikipedia.org/wiki/William_Thomson,_1st_Baron_Kelvin)
 
+<!--
 http://dict.youdao.com/search?q=
+-->
 
 | Words | Pronunciation | Meaning | Notes |
 | :---: | :-----------: | :-----: | :---: |
@@ -395,419 +396,345 @@ pipe dreams
 
 ---
 
-
 * [True Table](http://en.wikipedia.org/wiki/Truth_table)
 
-0	(F F F F)(p, q)	⊥	false, Opq	Contradiction
-1	(F F F T)(p, q)	NOR	p ↓ q, Xpq	Logical NOR
-2	(F F T F)(p, q)	\nleftarrow	p \nleftarrow q, Mpq	Converse nonimplication
-3	(F F T T)(p, q)	¬p, ~p	¬p, Np, Fpq	Negation
-4	(F T F F)(p, q)	\nrightarrow	p \nrightarrow q, Lpq	Material nonimplication
-5	(F T F T)(p, q)	¬q, ~q	¬q, Nq, Gpq	Negation
-6	(F T T F)(p, q)	XOR	p ⊕ q, Jpq	Exclusive disjunction
-7	(F T T T)(p, q)	NAND	p ↑ q, Dpq	Logical NAND
-8	(T F F F)(p, q)	AND	p ∧ q, Kpq	Logical conjunction
-9	(T F F T)(p, q)	XNOR	p If and only if q, Epq	Logical biconditional
-10	(T F T F)(p, q)	q	q, Hpq	Projection function
-11	(T F T T)(p, q)	p \rightarrow q	if p then q, Cpq	Material implication
-12	(T T F F)(p, q)	p	p, Ipq	Projection function
-13	(T T F T)(p, q)	p \leftarrow q	p if q, Bpq	Converse implication
-14	(T T T F)(p, q)	OR	p ∨ q, Apq	Logical disjunction
-15	(T T T T)(p, q)	⊤	true, Vpq	Tautology
-
-
+    0	(F F F F)(p, q)	⊥	false, Opq	Contradiction
+    1	(F F F T)(p, q)	NOR	p ↓ q, Xpq	Logical NOR
+    2	(F F T F)(p, q)	\nleftarrow	p \nleftarrow q, Mpq	Converse nonimplication
+    3	(F F T T)(p, q)	¬p, ~p	¬p, Np, Fpq	Negation
+    4	(F T F F)(p, q)	\nrightarrow	p \nrightarrow q, Lpq	Material nonimplication
+    5	(F T F T)(p, q)	¬q, ~q	¬q, Nq, Gpq	Negation
+    6	(F T T F)(p, q)	XOR	p ⊕ q, Jpq	Exclusive disjunction
+    7	(F T T T)(p, q)	NAND	p ↑ q, Dpq	Logical NAND
+    8	(T F F F)(p, q)	AND	p ∧ q, Kpq	Logical conjunction
+    9	(T F F T)(p, q)	XNOR	p If and only if q, Epq	Logical biconditional
+    10	(T F T F)(p, q)	q	q, Hpq	Projection function
+    11	(T F T T)(p, q)	p \rightarrow q	if p then q, Cpq	Material implication
+    12	(T T F F)(p, q)	p	p, Ipq	Projection function
+    13	(T T F T)(p, q)	p \leftarrow q	p if q, Bpq	Converse implication
+    14	(T T T F)(p, q)	OR	p ∨ q, Apq	Logical disjunction
+    15	(T T T T)(p, q)	⊤	true, Vpq	Tautology
 
 ---
-
 
 Eye exercise for speed reading:
+:   ![](http://upload.wikimedia.org/wikipedia/commons/3/3c/Eye-exercise-for-speed-reading_thumb.gif)
 
-[![](http://upload.wikimedia.org/wikipedia/commons/3/3c/Eye-exercise-for-speed-reading_thumb.gif)](http://en.wikipedia.org/wiki/File:Eye-exercise-for-speed-reading_thumb.gif)
+Refs & See also
 
-
-
----
-
-**See also**
-
-* [Visual acuity - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Visual_acuity)
-* [Fixation (visual) - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Fixation_(visual))
-* [Subvocalization - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Subvocalization)
-* [Study skills - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Study_skills)
-* [SQ3R - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/SQ3R)
-* [Tony Buzan - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Tony_Buzan)
-* [Saccade - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Saccade)
-
-
-**Refs**
-
-* [Speed reading - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Speed_reading)
-
-
----
-
+:   * [Visual acuity - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Visual_acuity)
+    * [Fixation (visual) - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Fixation_(visual))
+    * [Subvocalization - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Subvocalization)
+    * [Study skills - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Study_skills)
+    * [SQ3R - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/SQ3R)
+    * [Tony Buzan - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Tony_Buzan)
+    * [Saccade - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Saccade)
+    * [Speed reading - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Speed_reading)
 
 - **Close your eyes.** Do this sitting up to prevent you from falling asleep.
 
-![][01]
+![][eye-01]
 
 - **Relax your body.** This can help relax your eyes.
 
-![][02]
+![][eye-02]
 
 - **Rub your eyes.** Rub your eyes very gently, as if almost tickling them.
 
-![][03]
+![][eye-03]
 
-- **Relax your face.** move your jaw side to side. Make sure you are not pressing your eyebrows together. Relax your cheeks and forehead.
+- **Relax your face.** move your jaw side to side. Make sure you are not
+  pressing your eyebrows together. Relax your cheeks and forehead.
 
-![][04]
+![][eye-04]
 
 - **Try To keep your eyes closed during this process.**
 
-![][05]
+![][eye-05]
 
-- **Gently open your eyes when you are done.** try to barely open them and focus on your eyelids. Follow them up and as you look at your eyelids your eyes will open up.
+- **Gently open your eyes when you are done.** try to barely open them and
+  focus on your eyelids. Follow them up and as you look at your eyelids your
+  eyes will open up.
 
-![][06]
+![][eye-06]
 
 - **Wash eyes with cold water frequently.**
 
-![][07]
+![][eye-07]
 
-- **Try "pushing" your nose down, this will pull your eyes down with the rest of the face**
+- **Try "pushing" your nose down, this will pull your eyes down with the rest
+  of the face**
 
-![][08]
-
+![][eye-08]
 
 [how-to-relax-your-eyes]: http://www.wikihow.com/Relax-Your-Eyes
-[01]: http://gnat-tang-shared-image.qiniudn.com/pictures/670px-Relax-Your-Eyes-Step-1.jpg
-[02]: http://gnat-tang-shared-image.qiniudn.com/pictures/670px-Relax-Your-Eyes-Step-2.jpg
-[03]: http://gnat-tang-shared-image.qiniudn.com/pictures/670px-Relax-Your-Eyes-Step-3.jpg
-[04]: http://gnat-tang-shared-image.qiniudn.com/pictures/670px-Relax-Your-Eyes-Step-4.jpg
-[05]: http://gnat-tang-shared-image.qiniudn.com/pictures/670px-Relax-Your-Eyes-Step-5.jpg
-[06]: http://gnat-tang-shared-image.qiniudn.com/pictures/670px-Relax-Your-Eyes-Step-6.jpg
-[07]: http://gnat-tang-shared-image.qiniudn.com/pictures/670px-Relax-Your-Eyes-Step-7.jpg
-[08]: http://gnat-tang-shared-image.qiniudn.com/pictures/670px-Relax-Your-Eyes-Step-8.jpg
-
-
-[UrbanDictionary][ud] 是一个用户定义的单词本网站。etc
-
-# Words I like:
-
-### [Roza](http://www.urbandictionary.com/define.php?term=Roza&defid=7301080)
-
-Roza means simply beautiful.
-A girl who has beautiful hair,
-gorgeous,big eyes n a smile
-that could brighten the ocean.
-
-She looks gorgeous even in the
-morning or without any makeup on.
-Everytime you look at her,
-she stuns you with her looks
-n by the way she looks at you.
-
-She is like a rose, closed in the
-beginning but if you give her time
-n nurture her, she will blossom
-into a mesmerizing beauty, who u feel
-blessed to have by your side.
-
-She is smart n amazing just
-the way she is.The girl of your
-dreams,she is wanted n appreciated
-by everyone.She is all you could wish for.
-Guy 1: she is so pretty !!!
-Guy 2: yeah that she is..cuz she is
-Roza ...guys usually drool over her
-but she is not just like any other
-pretty girl ...she is different yet
-amazing .
-
-Guy 1: yeah, thats cuz she is Roza i guess
-Just as beautiful as her name :)
-
-
-
-### [Vagina](http://www.urbandictionary.com/define.php?term=vagina&defid=3998266)
-
-a tasty treat
-
-my vagina smells like sugarcane but taste like flowers
-
-
-
-
-
+[eye-01]: http://gnat-tang-shared-image.qiniudn.com/pictures/670px-Relax-Your-Eyes-Step-1.jpg
+[eye-02]: http://gnat-tang-shared-image.qiniudn.com/pictures/670px-Relax-Your-Eyes-Step-2.jpg
+[eye-03]: http://gnat-tang-shared-image.qiniudn.com/pictures/670px-Relax-Your-Eyes-Step-3.jpg
+[eye-04]: http://gnat-tang-shared-image.qiniudn.com/pictures/670px-Relax-Your-Eyes-Step-4.jpg
+[eye-05]: http://gnat-tang-shared-image.qiniudn.com/pictures/670px-Relax-Your-Eyes-Step-5.jpg
+[eye-06]: http://gnat-tang-shared-image.qiniudn.com/pictures/670px-Relax-Your-Eyes-Step-6.jpg
+[eye-07]: http://gnat-tang-shared-image.qiniudn.com/pictures/670px-Relax-Your-Eyes-Step-7.jpg
+[eye-08]: http://gnat-tang-shared-image.qiniudn.com/pictures/670px-Relax-Your-Eyes-Step-8.jpg
 
 ---
 
-**See also**
+**[UrbanDictionary][ud]** 是一个用户定义的单词本网站。
 
-*
+[Roza](http://www.urbandictionary.com/define.php?term=Roza&defid=7301080)
+:   Roza means simply beautiful. A girl who has beautiful hair, gorgeous, big
+    eyes and a smile that could brighten the ocean.
 
+    She looks gorgeous even in the morning or without any makeup on.  Everytime
+    you look at her, she stuns you with her looks n by the way she looks at
+    you.
 
-**Refs**
+    She is like a rose, closed in the beginning but if you give her time n
+    nurture her, she will blossom into a mesmerizing beauty, who u feel blessed
+    to have by your side.
 
-*
+    She is smart n amazing just the way she is. The girl of your dreams, she is
+    wanted n appreciated by everyone. She is all you could wish for.
 
+      - Guy 1: she is so pretty !!!
+      - Guy 2: yeah that she is..cuz she is Roza ...guys usually drool over her
+        but she is not just like any other pretty girl ...she is different yet
+        amazing.
+      - Guy 1: yeah, thats cuz she is Roza i guess Just as beautiful as her
+        name :)
+
+[Vagina](http://www.urbandictionary.com/define.php?term=vagina&defid=3998266)
+:   a tasty treat
+
+    my vagina smells like sugarcane but taste like flowers
 
 [ud]: http://www.urbandictionary.com/
 
+---
 
 * [Pierre de Fermat](http://en.wikipedia.org/wiki/Pierre_de_Fermat)
 * [Johannes Kepler](http://en.wikipedia.org/wiki/Johannes_Kepler)
 * [Sir George Stokes, 1st Baronet](http://en.wikipedia.org/wiki/Sir_George_Stokes,_1st_Baronet)
-* [René Descartes](http://en.wikipedia.org/wiki/Ren%C3%A9_Descartes)
 * [Richard Dedekind](http://en.wikipedia.org/wiki/Richard_Dedekind)
 
-![dedekind-portrait]
-[dedekind-portrait]: http://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Dedekind.jpeg/180px-Dedekind.jpeg
+![dedekind-portrait](http://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Dedekind.jpeg/180px-Dedekind.jpeg)
 
+[René Descartes](http://en.wikipedia.org/wiki/Ren%C3%A9_Descartes)
 
-René Descartes (/ˈdeɪˌkɑrt/;[5] French: [ʁəne dekaʁt]; Latinized: Renatus
-Cartesius; adjectival form: "Cartesian";[6] 31 March 1596 – 11 February 1650)
-was a French philosopher, mathematician and writer who spent most of his life
-in the Dutch Republic. He has been dubbed the father of modern philosophy, and
-much subsequent Western philosophy is a response to his writings,[7][8] which
-are studied closely to this day. In particular, his Meditations on First
-Philosophy continues to be a standard text at most university philosophy
-departments. Descartes' influence in mathematics is equally apparent; the
-Cartesian coordinate system — allowing reference to a point in space as a set
-of numbers, and allowing algebraic equations to be expressed as geometric
-shapes in a two-dimensional coordinate system (and conversely, shapes to be
-described as equations) — was named after him. He is credited as the father of
-analytical geometry, the bridge between algebra and geometry, crucial to the
-discovery of infinitesimal calculus and analysis. Descartes was also one of the
-key figures in the scientific revolution and has been described as an example
-of genius. He refused to accept the authority of previous philosophers and also
-refused to accept the obviousness of his own senses.
-
----
-
-### English
-
-* **AFI's 100 Years... 100 Movie Quotes** (AFI: American Film Institute)
-
-1. "Frankly, my dear, I don't give a damn." *Gone with the Wind*
-* "I'm going to make him an offer he can't refuse."	*The Godfather*
-* "You don't understand! I coulda had class. I coulda been a contender. I could've been somebody, instead of a bum, which is what I am." *On the Waterfront*
-* "Toto, I've got a feeling we're not in Kansas anymore." *The Wizard of Oz*
-* "Here's looking at you, kid."	*Casablanca*
-* "Go ahead, make my day." *Sudden Impact*
-* "All right, Mr. DeMille, I'm ready for my close-up." * Sunset Boulevard*
-* "Fasten your seatbelts. It's going to be a bumpy night." *All About Eve*
-* "You talkin' to me?" *Texi Driver*
-* "What we've got here is failure to communicate" *Cool Hand Luke*
-* "I love the smell of napalm in the morning." * Apocalypse Now*
-* "Love means never having to say you're sorry." *Love Story*
-* "The stuff that dreams are made of." *The Maltese Falcon*
-* "E.T. phone home." *E.T. the Extra-Terrestrial*
-* "They call me Mister Tibbs!" *In the Heat of the Night*
-* "Rosebud." *Citizen Kane*
-* "Made it, Ma! Top of the world!" *White Heat*
-* "I'm as mad as hell, and I'm not going to take this anymore!" *Network*
-* "Louis, I think this is the beginning of a beautiful friendship."	 *Casablanca*
-* "A census taker once tried to test me. I ate his liver with some fava beans and a nice Chianti." *The Silence of the Lambs*
-* "Bond. James Bond." *Dr. No*
-* "There's no place like home." *Sunset Boulevard*
-* "I am big! It's the pictures that got small." *Sunset Boulevard*
-* "Show me the money!" *Jerry Maguire*
-* "Why don't you come up sometime and see me?" *She Done Him Wrong*
-* "I'm walking here! I'm walking here!" *Midnight Cowboy*
-* "Play it, Sam. Play 'As Time Goes By.'" *Casablanca*
-* "You can't handle the truth!" *A Few Good Men*
-* "I want to be alone." *Grand Hotel*
-* "After all, tomorrow is another day!" *Gone with the Wind*
-* "Round up the usual suspects." *Casablanca*
-* "I'll have what she's having." *When Harry Met Sally...*
-* "You know how to whistle, don't you, Steve? You just put your lips together and blow." *To Have and Have Not*
-* "You're gonna need a bigger boat." *Jaws*
-* "Badges? We ain't got no badges! We don't need no badges! I don't have to show you any stinking badges!" *The Treasure of the Sierra Madre*
-* "I'll be back." *The Terminator*
-* "Today, I consider myself the luckiest man on the face of the Earth." *The Pride of Yankees*
-* "If you build it, he will come." *Field of Dreams*
-* "Mama always said life was like a box of chocolates. You never know what you're gonna get." *Forrest Gump*
-* "We rob banks." *Bonnie and Clyde*
-* "Plastics." *The Graduate*
-* "We'll always have Paris." *Casablanca*
-* "I see dead people." *The Sixth Sense*
-* "Stella! Hey, Stella!" *A Streetcar Named Desire*
-* "Oh, Jerry, don't let's ask for the moon. We have the stars." *Now, Voyager*
-* "Shane. Shane. Come back!" *Shane*
-* "Well, nobody's perfect." *Some Like It Hot*
-* "It's alive! It's alive!" *Frankenstein*
-* "Houston, we have a problem." *Apollo 13*
-* "You've got to ask yourself one question: 'Do I feel lucky?' Well, do ya, punk?" *Dirty Harry*
-* "You had me at 'hello.'" *Jerry Maguire*
-* "One morning I shot an elephant in my pajamas. How he got in my pajamas, I don't know." *Animal Crackers*
-* "There's no crying in baseball!" *A League of Their Own*
-* "La-dee-da, la-dee-da." *Annie Hall*
-* "A boy's best friend is his mother." *Psycho*
-* "Greed, for lack of a better word, is good." *Wall Street*
-* "Keep your friends close, but your enemies closer." *The Godfather Part II*
-* "As God is my witness, I'll never be hungry again." *Gone with the Wind*
-* "Well, here's another nice mess you've gotten me into!" *Sons of the Desert*
-* "Say 'hello' to my little friend!" *Scarface*
-* "What a dump." *Beyond the Forest*
-* "Mrs. Robinson, you're trying to seduce me. Aren't you?" *The Graduate*
-* "Gentlemen, you can't fight in here! This is the War Room!" *Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb*
-* "Elementary, my dear Watson." *The Adventures of Sherlock Holmes*
-* "Get your stinking paws off me, you damned dirty ape." *Planet of the Apes*
-* "Of all the gin joints in all the towns in all the world, she walks into mine." *Casablanca*
-* "Here's Johnny!" *The Shining*
-* "They're here!" *Poltergeist*
-* "Is it safe?" *Marathon Man*
-* "Wait a minute, wait a minute. You ain't heard nothin' yet!" *The Jazz Singer*
-* "No wire hangers, ever!" *Mommie Dearest*
-* "Mother of mercy, is this the end of Rico?" *Little Caesar*
-* "Forget it, Jake, it's Chinatown." *Chinatown*
-* "I have always depended on the kindness of strangers." *A Streetcar Named Desire*
-* "Hasta la vista, baby." *Terminator 2: Judgment Day*
-* "Soylent Green is people!" *Soylent Green*
-* "Open the pod bay doors please, HAL." *2001: A Space Odyssey*
-* Striker: "Surely you can't be serious." Rumack: "I am serious...and don't call me Shirley." *Airplane!*
-* "Yo, Adrian!" *Rocky*
-* "Hello, gorgeous." *Funny Girl*
-* "Toga! Toga!" *National Lampoon's Animal House*
-* "Listen to them. Children of the night. What music they make." *Dracula*
-* "Oh, no, it wasn't the airplanes. It was Beauty killed the Beast." *King Kong*
-* "My precious." *The Lord of the Rings: The Two Towers*
-* "Attica! Attica!" *Dog Day Afternoon*
-* "Sawyer, you're going out a youngster, but you've got to come back a star!" *42nd Street*
-* "Listen to me, mister. You're my knight in shining armor. Don't you forget it. You're going to get back on that horse, and I'm going to be right behind you, holding on tight, and away we're gonna go, go, go!" *On Golden Pond*
-* "Tell 'em to go out there with all they got and win just one for the Gipper."	*Knute Rockne, All American*
-* "A martini. Shaken, not stirred." *Godfather*
-* "Who's on first?" *The Naughty Nineties*
-* "Cinderella story. Outta nowhere. A former greenskeeper, now, about to become the Masters champion. It looks like a mirac...It's in the hole! It's in the hole! It's in the hole!" *Caddyshack*
-* "Life is a banquet, and most poor suckers are starving to death!" *Auntie Mame*
-* "I feel the need—the need for speed!" *Top Gun*
-* "Carpe diem. Seize the day, boys. Make your lives extraordinary." *Dead Poets Society*
-* "Snap out of it!" *Moonstruck*
-* "My mother thanks you. My father thanks you. My sister thanks you. And I thank you." *Yankee Doodle Dandy*
-* "Nobody puts Baby in a corner." *Dirty Dancing*
-* "I'll get you, my pretty, and your little dog too!" *The Wizard Oz*
-* "I'm the king of the world!" *Titanic*
-
-
-
-### 中文
-
-1. “曾经有一份真诚的爱情摆在我的面前，我没有珍惜，等到失去的时候才追悔莫及，人世间最痛苦的事情莫过于此。如果上天能够给我一个重新来过的机会，我会对那个女孩子说三个字：‘我爱你’。如果非要给这份爱加上一个期限，我希望是，一万年。” **大话西游**
-* 你可以说我是跑龙套的，但是你不可以说我是“臭跑龙套”的！ *喜剧之王*
-* 所以说做妖就像做人一样，要有仁慈的心，有了仁慈的心，就不再妖，是人妖。*大话西游*
-* 不是我喜欢打架，是有很多人喜欢被我打！ *鹿鼎记*
-* "你那忧郁的眼神,唏嘘的胡渣子,神呼奇迹的刀法,还有那杯晶莹透亮的马蒂尼,都掩饰不住你的出众,但是再怎么出众也要把过夜费付了吧" *零零柒*
-* “准确的说，我是一个演员。”
-* 你可以叫我“跑龙套的”，但不可以前面不要加"死”字！！！！ *喜剧之王*
-* 实在令人太失望。听到你的声音，我还以为你是一个很有感性，很有电影幻想的人。看你这一身造型，就知道你太没有内涵了 *92家有喜事*
-* 喂!你介不介意把裤子拉高一点,让我看看你的腿? *少林足球*
-* 大不了我发个毒誓，如果以后我再赌钱的话，就让天下最丑的女人夜夜轮奸，直到体无完肤，摇摇欲坠为止，这样可以了吧 ！ *唐伯虎点秋香*
-* 阿飞正传*：我听别人说这世界上有一种鸟是没有脚的，它只能一直飞呀飞呀，飞累了就在风里面睡觉，这种鸟一辈子只能下地一次，那边一次就是它死亡的时候。
-* 英雄本色*：有信心不一定会成功，没信心一定不会成功。
-* 笑傲江湖之东方不败*：有人就有恩怨，有恩怨就有江湖。人就是江湖，你怎么退出？
-* *开往春天的地铁*：我一直怀疑27岁是否还会有一见钟情的倾心。我不知道该说什么，我只是突然在那一刻很想念她。
-* *情人*：我以经老了，在人来人往的大厅，有一位老人他向我走来，他说我认识你，那时的你还很年轻，美丽，你的身边有许许多多的追求者，不过跟那时相比，我更喜欢现在你这经历了沧桑的容颜？
-* *春光乍泄*：一直以为我跟他不一样，原来寂寞的时候，所有的人都一样。
-* *春光乍泻*：每个成功男人的背后，都有一个女人。每个不成功男人的背后，都有两个。
-* *好想好想谈恋爱*：承诺是男人给女人的定心丸。吃了安心，虽然这定心丸的药性有待考证，但女人都希望吃了再说。
-* “如果，我多一张船票，你会不会跟我一起走？” *花样年华*
-* 往往都是事情改变人，人却改变不了事情。 *无间道*
-* 我最讨厌你们这些打劫的了，一点技术含量都没有！！！！ *天下无贼*
-* 给我一个机会，我想做好人！ *无间道*
-* 做人如果没有梦想，那跟咸鱼有什么区别？ *少林足球*
+:   René Descartes (`/ˈdeɪˌkɑrt/`, French: `[ʁəne dekaʁt]`, 31 March 1596 – 11
+    February 1650) was a French philosopher, mathematician and writer who spent
+    most of his life in the Dutch Republic. He has **been dubbed the father of
+    modern philosophy**, and much subsequent Western philosophy is a response
+    to his writings, which are studied closely to this day. In particular, his
+    Meditations on First Philosophy continues to be a standard text at most
+    university philosophy departments. Descartes' **influence in mathematics is
+    equally apparent**; the Cartesian coordinate system — allowing reference to
+    a point in space as a set of numbers, and allowing algebraic equations to
+    be expressed as geometric shapes in a two-dimensional coordinate system
+    (and conversely, shapes to be described as equations) — was named after
+    him. He is credited as **the father of analytical geometry**, the bridge
+    between algebra and geometry, crucial to the discovery of infinitesimal
+    calculus and analysis.  Descartes was also one of the key figures in the
+    scientific revolution and has been described as an example of genius. He
+    refused to accept the authority of previous philosophers and also refused
+    to accept the obviousness of his own senses.
 
 ---
 
-**Refs**
+**AFI's 100 Years... 100 Movie Quotes** (AFI: American Film Institute)
 
-* [AFI 100 Year ... 100 Movie Quotes](http://en.wikipedia.org/wiki/AFI%27s_100_Years...100_Movie_Quotes)
-* [](http://www.lz13.cn/jingdiantaici/7987.html)
-* [](http://blog.sina.com.cn/s/blog_701c7e240100nmwj.html)
-* [](http://www.china.com.cn/info/zhuanti/zxc08/2008-01/24/content_9582793.htm)
+:   #. "Frankly, my dear, I don't give a damn." *Gone with the Wind*
+    #. "I'm going to make him an offer he can't refuse." *The Godfather*
+    #. "You don't understand! I coulda had class. I coulda been a contender. I could've been somebody, instead of a bum, which is what I am." *On the Waterfront*
+    #. "Toto, I've got a feeling we're not in Kansas anymore." *The Wizard of Oz*
+    #. "Here's looking at you, kid." *Casablanca*
+    #. "Go ahead, make my day." *Sudden Impact*
+    #. "All right, Mr. DeMille, I'm ready for my close-up." * Sunset Boulevard*
+    #. "Fasten your seatbelts. It's going to be a bumpy night." *All About Eve*
+    #. "You talkin' to me?" *Texi Driver*
+    #. "What we've got here is failure to communicate" *Cool Hand Luke*
+    #. "I love the smell of napalm in the morning." * Apocalypse Now*
+    #. "Love means never having to say you're sorry." *Love Story*
+    #. "The stuff that dreams are made of." *The Maltese Falcon*
+    #. "E.T. phone home." *E.T. the Extra-Terrestrial*
+    #. "They call me Mister Tibbs!" *In the Heat of the Night*
+    #. "Rosebud." *Citizen Kane*
+    #. "Made it, Ma! Top of the world!" *White Heat*
+    #. "I'm as mad as hell, and I'm not going to take this anymore!" *Network*
+    #. "Louis, I think this is the beginning of a beautiful friendship."  *Casablanca*
+    #. "A census taker once tried to test me. I ate his liver with some fava beans and a nice Chianti." *The Silence of the Lambs*
+    #. "Bond. James Bond." *Dr. No*
+    #. "There's no place like home." *Sunset Boulevard*
+    #. "I am big! It's the pictures that got small." *Sunset Boulevard*
+    #. "Show me the money!" *Jerry Maguire*
+    #. "Why don't you come up sometime and see me?" *She Done Him Wrong*
+    #. "I'm walking here! I'm walking here!" *Midnight Cowboy*
+    #. "Play it, Sam. Play 'As Time Goes By.'" *Casablanca*
+    #. "You can't handle the truth!" *A Few Good Men*
+    #. "I want to be alone." *Grand Hotel*
+    #. "After all, tomorrow is another day!" *Gone with the Wind*
+    #. "Round up the usual suspects." *Casablanca*
+    #. "I'll have what she's having." *When Harry Met Sally...*
+    #. "You know how to whistle, don't you, Steve? You just put your lips together and blow." *To Have and Have Not*
+    #. "You're gonna need a bigger boat." *Jaws*
+    #. "Badges? We ain't got no badges! We don't need no badges! I don't have to show you any stinking badges!" *The Treasure of the Sierra Madre*
+    #. "I'll be back." *The Terminator*
+    #. "Today, I consider myself the luckiest man on the face of the Earth." *The Pride of Yankees*
+    #. "If you build it, he will come." *Field of Dreams*
+    #. "Mama always said life was like a box of chocolates. You never know what you're gonna get." *Forrest Gump*
+    #. "We rob banks." *Bonnie and Clyde*
+    #. "Plastics." *The Graduate*
+    #. "We'll always have Paris." *Casablanca*
+    #. "I see dead people." *The Sixth Sense*
+    #. "Stella! Hey, Stella!" *A Streetcar Named Desire*
+    #. "Oh, Jerry, don't let's ask for the moon. We have the stars." *Now, Voyager*
+    #. "Shane. Shane. Come back!" *Shane*
+    #. "Well, nobody's perfect." *Some Like It Hot*
+    #. "It's alive! It's alive!" *Frankenstein*
+    #. "Houston, we have a problem." *Apollo 13*
+    #. "You've got to ask yourself one question: 'Do I feel lucky?' Well, do ya, punk?" *Dirty Harry*
+    #. "You had me at 'hello.'" *Jerry Maguire*
+    #. "One morning I shot an elephant in my pajamas. How he got in my pajamas, I don't know." *Animal Crackers*
+    #. "There's no crying in baseball!" *A League of Their Own*
+    #. "La-dee-da, la-dee-da." *Annie Hall*
+    #. "A boy's best friend is his mother." *Psycho*
+    #. "Greed, for lack of a better word, is good." *Wall Street*
+    #. "Keep your friends close, but your enemies closer." *The Godfather Part II*
+    #. "As God is my witness, I'll never be hungry again." *Gone with the Wind*
+    #. "Well, here's another nice mess you've gotten me into!" *Sons of the Desert*
+    #. "Say 'hello' to my little friend!" *Scarface*
+    #. "What a dump." *Beyond the Forest*
+    #. "Mrs. Robinson, you're trying to seduce me. Aren't you?" *The Graduate*
+    #. "Gentlemen, you can't fight in here! This is the War Room!" *Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb*
+    #. "Elementary, my dear Watson." *The Adventures of Sherlock Holmes*
+    #. "Get your stinking paws off me, you damned dirty ape." *Planet of the Apes*
+    #. "Of all the gin joints in all the towns in all the world, she walks into mine." *Casablanca*
+    #. "Here's Johnny!" *The Shining*
+    #. "They're here!" *Poltergeist*
+    #. "Is it safe?" *Marathon Man*
+    #. "Wait a minute, wait a minute. You ain't heard nothin' yet!" *The Jazz Singer*
+    #. "No wire hangers, ever!" *Mommie Dearest*
+    #. "Mother of mercy, is this the end of Rico?" *Little Caesar*
+    #. "Forget it, Jake, it's Chinatown." *Chinatown*
+    #. "I have always depended on the kindness of strangers." *A Streetcar Named Desire*
+    #. "Hasta la vista, baby." *Terminator 2: Judgment Day*
+    #. "Soylent Green is people!" *Soylent Green*
+    #. "Open the pod bay doors please, HAL." *2001: A Space Odyssey*
+    #. Striker: "Surely you can't be serious." Rumack: "I am serious...and don't call me Shirley." *Airplane!*
+    #. "Yo, Adrian!" *Rocky*
+    #. "Hello, gorgeous." *Funny Girl*
+    #. "Toga! Toga!" *National Lampoon's Animal House*
+    #. "Listen to them. Children of the night. What music they make." *Dracula*
+    #. "Oh, no, it wasn't the airplanes. It was Beauty killed the Beast." *King Kong*
+    #. "My precious." *The Lord of the Rings: The Two Towers*
+    #. "Attica! Attica!" *Dog Day Afternoon*
+    #. "Sawyer, you're going out a youngster, but you've got to come back a star!" *42nd Street*
+    #. "Listen to me, mister. You're my knight in shining armor. Don't you forget it. You're going to get back on that horse, and I'm going to be right behind you, holding on tight, and away we're gonna go, go, go!" *On Golden Pond*
+    #. "Tell 'em to go out there with all they got and win just one for the Gipper." *Knute Rockne, All American*
+    #. "A martini. Shaken, not stirred." *Godfather*
+    #. "Who's on first?" *The Naughty Nineties*
+    #. "Cinderella story. Outta nowhere. A former greenskeeper, now, about to become the Masters champion. It looks like a mirac...It's in the hole! It's in the hole! It's in the hole!" *Caddyshack*
+    #. "Life is a banquet, and most poor suckers are starving to death!" *Auntie Mame*
+    #. "I feel the need—the need for speed!" *Top Gun*
+    #. "Carpe diem. Seize the day, boys. Make your lives extraordinary." *Dead Poets Society*
+    #. "Snap out of it!" *Moonstruck*
+    #. "My mother thanks you. My father thanks you. My sister thanks you. And I thank you." *Yankee Doodle Dandy*
+    #. "Nobody puts Baby in a corner." *Dirty Dancing*
+    #. "I'll get you, my pretty, and your little dog too!" *The Wizard Oz*
+    #. "I'm the king of the world!" *Titanic*
 
+More quotes
+
+:   #. “曾经有一份真诚的爱情摆在我的面前，我没有珍惜，等到失去的时候才追悔莫及，人世间最痛苦的事情莫过于此。如果上天能够给我一个重新来过的机会，我会对那个女孩子说三个字：‘我爱你’。如果非要给这份爱加上一个期限，我希望是，一万年。” **大话西游**
+    #. 你可以说我是跑龙套的，但是你不可以说我是“臭跑龙套”的！ *喜剧之王*
+    #. 所以说做妖就像做人一样，要有仁慈的心，有了仁慈的心，就不再妖，是人妖。*大话西游*
+    #. 不是我喜欢打架，是有很多人喜欢被我打！ *鹿鼎记*
+    #. "你那忧郁的眼神,唏嘘的胡渣子,神呼奇迹的刀法,还有那杯晶莹透亮的马蒂尼,都掩饰不住你的出众,但是再怎么出众也要把过夜费付了吧" *零零柒*
+    #. “准确的说，我是一个演员。”
+    #. 你可以叫我“跑龙套的”，但不可以前面不要加"死”字！！！！ *喜剧之王*
+    #. 实在令人太失望。听到你的声音，我还以为你是一个很有感性，很有电影幻想的人。看你这一身造型，就知道你太没有内涵了 *92家有喜事*
+    #. 喂!你介不介意把裤子拉高一点,让我看看你的腿? *少林足球*
+    #. 大不了我发个毒誓，如果以后我再赌钱的话，就让天下最丑的女人夜夜轮奸，直到体无完肤，摇摇欲坠为止，这样可以了吧 ！ *唐伯虎点秋香*
+    #. 阿飞正传*：我听别人说这世界上有一种鸟是没有脚的，它只能一直飞呀飞呀，飞累了就在风里面睡觉，这种鸟一辈子只能下地一次，那边一次就是它死亡的时候。
+    #. 英雄本色*：有信心不一定会成功，没信心一定不会成功。
+    #. 笑傲江湖之东方不败*：有人就有恩怨，有恩怨就有江湖。人就是江湖，你怎么退出？
+    #. *开往春天的地铁*：我一直怀疑27岁是否还会有一见钟情的倾心。我不知道该说什么，我只是突然在那一刻很想念她。
+    #. *情人*：我以经老了，在人来人往的大厅，有一位老人他向我走来，他说我认识你，那时的你还很年轻，美丽，你的身边有许许多多的追求者，不过跟那时相比，我更喜欢现在你这经历了沧桑的容颜？
+    #. *春光乍泄*：一直以为我跟他不一样，原来寂寞的时候，所有的人都一样。
+    #. *春光乍泻*：每个成功男人的背后，都有一个女人。每个不成功男人的背后，都有两个。
+    #. *好想好想谈恋爱*：承诺是男人给女人的定心丸。吃了安心，虽然这定心丸的药性有待考证，但女人都希望吃了再说。
+    #. “如果，我多一张船票，你会不会跟我一起走？” *花样年华*
+    #. 往往都是事情改变人，人却改变不了事情。 *无间道*
+    #. 我最讨厌你们这些打劫的了，一点技术含量都没有！！！！ *天下无贼*
+    #. 给我一个机会，我想做好人！ *无间道*
+    #. 做人如果没有梦想，那跟咸鱼有什么区别？ *少林足球*
+
+Refs
+
+:   * [AFI 100 Year ... 100 Movie Quotes](http://en.wikipedia.org/wiki/AFI%27s_100_Years...100_Movie_Quotes)
+    * <http://www.lz13.cn/jingdiantaici/7987.html>
+    * <http://blog.sina.com.cn/s/blog_701c7e240100nmwj.html>
+    * <http://www.china.com.cn/info/zhuanti/zxc08/2008-01/24/content_9582793.htm>
 
 ---
 
+What is MathJax?
 
-### What is MathJax?
+:   * Open-source JS display engine
+    * Modular, load components only when necessary
+    * Rich API
 
-* Open-source JS display engine
-* Modular, load components only when necessary
-* Rich API
+Getting Started
 
+:   * Using the MathJax Content Delivery Network (CDN)
+    * Add these to your src code (.html or .md)
 
-### Getting Started
-
-* Using the MathJax Content Delivery Network (CDN)
-* Add these to your src code (.html or .md)
-
-	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    ```html
+    <script type="text/javascript"
+             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    ```
 
 * MathJax hosted on GitHub: [mathjax | MathJax](https://github.com/mathjax/MathJax/)
 * TeX and LaTeX input
     * display: `$$...$$` or `\[...\]`
-	* inline: `\(...\)` (default) or `$...$`
+    * inline: `\(...\)` (default) or `$...$`
 * MathML, etc.
 
+Installing and Testing MathJax
 
-### Installing and Testing MathJax
+Loading and Configuring MathJax
 
-For later reading
-
-
-### Loading and Configuring MathJax
-
-For later reading
-
-
-### Common Configurations
+Common Configurations
 
 Use `default.js` or use this request:
 
-    <script type="text/javascript" src="path-to-MathJax/MathJax.js?config=default"></script>
+`<script type="text/javascript" src="path-to-MathJax/MathJax.js?config=default"></script>`{.html}
 
+Using MathJax in popular web platforms
 
-### Using MathJax in popular web platforms
-
-For later reading
-
-
-### MathJax TeX and LaTeX Support
+MathJax TeX and LaTeX Support
 
 Note that the TeX input processor implements only the **math-mode** macros of TeX and LaTeX, not the **text-mode** macros.
 
-In Markdown, the back-tick (`) is used to mark **verbatim text**
+In Markdown, the back-tick (` ` `) is used to mark **verbatim text**
 
 And sometime you may double backslashs to escape
 
-	\\begin{array}{cc}
-      a & b \\\\
-      c & c
-    \\end{array}
+```latex
+\\begin{array}{cc}
+  a & b \\\\
+  c & c
+\\end{array}
+```
 
-You can use the `\def`, `\newcommand`, `\renewcommand`, `\newenvironment`, `\renewenvironment`, and `\let` commands to **create your own macros and environments**.
+You can use the `\def`, `\newcommand`, `\renewcommand`, `\newenvironment`,
+`\renewenvironment`, and `\let` commands to **create your own macros and
+environments**.
 
+Some Examples I Tried
 
-
-### Some Examples I Tried
-
-First, new a .md file, see `try-mathjax.md`, and add these lines:
-
-~~~
-Try MathJax
-===========
-
-<title>About Pandoc Markdown</title>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-~~~
-
-**Define Macros**
-
-on the page
-
-~~~
+```plain
 We'll define our own macros and use them, $$
    \def\RR{\bf R}
    \def\bold#1{\bf #1}
@@ -815,12 +742,12 @@ We'll define our own macros and use them, $$
 And do that again: \(\bold{``bold\ face"}\)
 And do that again: $$\bold{``bold\ face"}$$
 And do that again: $$\bold{``bold  face"}$$
-~~~
+```
 
 And you could create a file in `MathJax/config/local` called `local.js`
 that contains your macro definitions:
 
-~~~
+```javascript
 MathJax.Hub.Config({
   TeX: {
     Macros: {
@@ -831,75 +758,25 @@ MathJax.Hub.Config({
 });
 
 MathJax.Ajax.loadComplete("[MathJax]/config/local/local.js");
-~~~
+```
 
-and then load it along with your main configuration file on the script that loads MathJax.js:
+and then load it along with your main configuration file on the script that
+loads MathJax.js:
 
-    <script src="/MathJax/MathJax.js?config=TeX-AMS_HTML,local/local.js"></script>
+`<script src="/MathJax/MathJax.js?config=TeX-AMS_HTML,local/local.js"></script>`{.html}
 
+Automatic Equation Numbering
 
-**Automatic Equation Numbering**
+:   ```html
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: { equationNumbers: { autoNumber: "AMS" } }
+    });
+    </script>
+    ```
 
-~~~
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-</script>
-
-$E=mc^2$
-
-Numbered Eqns:
-
-$$
-   \begin{equation}
-   E = mc^2
-   \end{equation}$$
-
-Not Numbered Eqns:
-
-$$
-\begin{equation*}
-   e^{\pi i} + 1 = 0
-\end{equation*}$$
-~~~
-
-~~~
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  TeX: {
-    Macros: {
-      RR: "{\\bf R}",
-      bold: ["{\\bf #1}",1]
-    }
-  }
-});
-</script>
-
-Displayed: $$\RR$$ and $$\bold{bold}$$
-
-Inline: \(\RR\) and $\bold{bold}$
-~~~
-
-
-~~~
-* Use `\(...\)`: \(x^y=z\) (now work, both cases)
-* Use `\[...\]`: \[x^y=z\] (not work, both cases)
-* Use `$...$`: $x^y=z$ (without `--mathjax`, works; with `--mathjax`, works better)
-~~~
-
-
-http://alexgorbatchev.com/SyntaxHighlighter/
-
-
-
-
----
-
-**Refs**
-
-* [MathJax Document](http://docs.mathjax.org/en/latest/mathjax.html)
-
+Refs
+:   * [MathJax Document](http://docs.mathjax.org/en/latest/mathjax.html)
 
 ---
 
@@ -915,7 +792,7 @@ http://alexgorbatchev.com/SyntaxHighlighter/
 * **No.** – number.
 * **NTS** – need to show.
 * **pf** – proof.
-* **QED** – "Quod erat demonstrandum", a Latin phrase used at the end of a definitive proof. [-> Pronunciation](http://zh.forvo.com/word/quod_erat_demonstrandum/)
+* **QED** – "Quod erat demonstrandum", a Latin phrase used at the end of a definitive proof. [how to pronunce?](http://zh.forvo.com/word/quod_erat_demonstrandum/)
 * **QEF** – "quod erat faciendum", a Latin phrase sometimes used at the end of a construction.
 * **Soln** – solution.
 * **st** – such that or so that.
@@ -936,8 +813,6 @@ http://alexgorbatchev.com/SyntaxHighlighter/
 * **TFAE** – the following are equivalent.
 * **Thm** – theorem.
 * **undef** - a function or expression is undefined
-
-
 * **sup** – supremum of a set. (Also written lub.)
 * **lub** – least upper bound. (Also written sup.)
 * **gcd** – greatest common divisor of two numbers. (Also written as hcf.)
@@ -949,37 +824,27 @@ http://alexgorbatchev.com/SyntaxHighlighter/
 * **max** – maximum of a set.
 * **min** – minimum of a set.
 * **mod** – modulo.
-
 * **curl** – curl of a vector field. (Also written as rot.)
 * **rot** – rotor of a vector field. (Also written as curl.)
 * **deg** – degree of a polynomial. (Also written as ∂.)
 * **div** – divergence of a vector field.
 * **del** – del, a differential operator. (Also written as [\nabla][nabla]（倒三角）).)
-
-
 * **dom** – domain of a function. (Or, more generally, a relation.)
 * **cod** – codomain. (Also written as codom.)
 * **codom** – codomain. (Also written as cod.)
 * **dkl** – decalitre（ 公斗；十升）`deca + litre（就是我们常用的 1L 矿泉水）`
-
-* **DNE - a solution for an expression does not exist, or is undefined. Generally used with limits and integrals. **D**efine **N**one **E**quation *or* **D**oes **N**ot **E**xist
-
+* **DNE** - a solution for an expression does not exist, or is undefined. Generally used with limits and integrals. **D**efine **N**one **E**quation *or* **D**oes **N**ot **E**xist
 * **Ei** – exponential integral function.
-
 * **exp** – exponential function. (exp x is also written as ex.)
 * **lg** – common logarithm (log10) or binary logarithm (log2).
 * **ln** – natural logarithm, loge.
 * **log** – logarithm. (If without a subscript, this may mean either log10 or loge.)
 * **logh** – natural logarithm, loge.
-
 * **ext** – exterior.
-
-
 * **FOL** – first-order logic.
 * **HOL** – higher-order logic.
 * **NOR** – not-or in logic.
 * **XOR** - exclusive or in logic.
-
 * **mx** – matrix.
 * **det** – determinant of a matrix or linear transformation.
 * **dim** – dimension of a vector space.
@@ -989,7 +854,6 @@ http://alexgorbatchev.com/SyntaxHighlighter/
 * **Spec** – spectrum of a ring.
 * **Tr** – trace, either the field trace, or the trace of a matrix or linear transformation.
 * **adj** – adjugate of a matrix.
-
 * **cdf** – cumulative distribution function.
 * **cov** – covariance of a pair of random variables.
 * **iid - independent and identically distributed random variables.
@@ -998,24 +862,17 @@ http://alexgorbatchev.com/SyntaxHighlighter/
 * **Pr** – probability of an event.
 * **RV** – Random Variable. (or as R.V.)
 * **var** – variance of a random variable.
-
-
 * **int** – interior.
 * **Li** – offset logarithmic integral function.
 * **li** – logarithmic integral function or linearly independent.
 * **NAND** – not-and in logic, *see* [*Sheffer stroke*](http://en.wikipedia.org/wiki/Sheffer_stroke)
 * **ord** – ordinal number of a well-ordered set.
-
 * **ran** – range of a function.
 * **supp** – support of a function.
-
 * **sgn** – signum function.
-
 * **rng** – non-unital ring.
 * **RTP** – required to prove.
 * **seg** – initial segment of.
-
-
 * **cos** – cosine function.
 * **cosec** – cosecant function. (Also written as csc.)
 * **cosech** – hyperbolic cosecant function. (Also written as csch.)
@@ -1049,12 +906,6 @@ http://alexgorbatchev.com/SyntaxHighlighter/
 * **Ci - cosine integral function.
 * **tan** – tangent function.
 * **tanh** – hyperbolic tangent function.
-
-
-
-
-
-
 * **Ai** – [Airy function.](http://en.wikipedia.org/wiki/Airy_function)
 * **Bi** – Airy function of the second kind.
 * **Cl** – topological closure.
@@ -1067,8 +918,6 @@ http://alexgorbatchev.com/SyntaxHighlighter/
 * **Hom** – Hom functor.
 * **LST** – language of set theory.
 * **Tor** – Tor functor.
-
-
 * **AC** – Axiom of Choice.
 * **AL - Action limit.
 * **Alt** – alternating group (Alt(n) is also written as An.)
@@ -1090,46 +939,27 @@ http://alexgorbatchev.com/SyntaxHighlighter/
 * **Aut** – automorphism group.
 * **Card** – cardinality(基数) of a set. (Card(X) is also written #X, ♯X or |X|.)
 
-
-
-
-
-
-
-
----
-
-**See also**
-
-* https://en.wikipedia.org/wiki/List_of_mathematical_jargon
-
-
-**Refs**
-
-* https://en.wikipedia.org/wiki/List_of_mathematical_abbreviations
-
-
-
-
-
 [nabla]: http://en.wikipedia.org/wiki/Nabla_symbol
 
+Refs & See also
+:   * <https://en.wikipedia.org/wiki/List_of_mathematical_jargon>
+    * <https://en.wikipedia.org/wiki/List_of_mathematical_abbreviations>
 
 ---
 
-### Intro
+M3U
 
-M3U is a computer file format that contains multimedia playlists.
-It originally was designed for audio files, such as MP3,
-but various software now uses it to play video file lists.
-M3U's can also point a media player to an online streaming audio source.
-Numerous media players and software applications supports the M3U file format.
+:   M3U is a computer file format that contains multimedia playlists.  It
+    originally was designed for audio files, such as MP3, but various software
+    now uses it to play video file lists.  M3U's can also point a media player
+    to an online streaming audio source.  Numerous media players and software
+    applications supports the M3U file format.
 
+    Samples
 
-### M3U Samples
+      * Example 1
 
-Example 1
-
+        ```plain
         #EXTM3U
 
         #EXTINF:123, Sample artist - Sample title
@@ -1137,27 +967,24 @@ Example 1
 
         #EXTINF:321,Example Artist - Example title
         C:\Documents and Settings\I\My Music\Greatest Hits\Example.ogg
+        ```
+      * Example 2
 
-
-Example 2
-
+        ```plain
         C:\Music
+        ```
 
+      * Example 3
 
-Example 3
-
+        ```plain
         #EXTM3U
 
         #EXTINF:123, Sample artist - Sample title
+        ```
 
+      * Example 4
 
-Example.mp3
-
-        #EXTINF:321,Example Artist - Example title
-        Greatest Hits\Example.ogg
-
-Example 4
-
+        ```plain
         Alternative\Band - Song.mp3
         Classical\Other Band - New Song.mp3
         Stuff.mp3
@@ -1165,9 +992,11 @@ Example 4
         ..\Other Music\Bar.mp3
         http://emp.cx:8000/Listen.pls
         http://www.example.com/~user/Mine.mp3
+        ```
 
-Example 5
+      * Example 5
 
+        ```plain
         #EXTM3U
         #EXTINF:233,Everclear - So Much For The Afterglow
         Alternative\everclear_SMFTA.mp3
@@ -1179,126 +1008,130 @@ Example 5
         http://www.site.com/~user/gump.mp3
         #EXTINF:-1,My Cool Stream
         http://www.site.com:8000/listen.pls
+        ```
 
-* `#EXTM3U` At the VERY top of the Extended M3U file is this header, which signifies this is an extended M3U file. "#EXTM3U" must be all capital letters.
-* `#EXTINF:233,Everclear - So Much For The Afterglow`
-    * This is the line that tends to confuse people. Let's break it up into parts
-    * `#EXTINF`: This signifies this is an Extended Information field. It ends with a colorn.
-    * `233`: This is the time of the file in seconds followed by a comma. (233 seconds = 3:53). On the last entry there is a negative one, this is usually seen on streams, it tells the program to ignore the time entry.
-    * `Everclear - So Much For The Afterglow`: Title to display. This is usually the title read from the file name or ID3 tags. This also can be the name of a stream. No characters follow the title.
-    * `Alternative\everclear_SMFTA.mp3`: File location as described above with basic playlists.
+    `#EXTM3U` At the VERY top of the Extended M3U file is this header, which
+    signifies this is an extended M3U file. `#EXTM3U` must be all capital
+    letters.
 
+    `#EXTINF:233,Everclear - So Much For The Afterglow`
+      ~ This is the line that tends to confuse people. Let's break it up into parts
+      ~ `#EXTINF`: This signifies this is an Extended Information field. It ends with a colorn.
+      ~ `233`: This is the time of the file in seconds followed by a comma.
+        (233 seconds = 3:53). On the last entry there is a negative one, this
+        is usually seen on streams, it tells the program to ignore the time
+        entry.
+      ~ `Everclear - So Much For The Afterglow`: Title to display. This is
+        usually the title read from the file name or ID3 tags. This also can be
+        the name of a stream. No characters follow the title.
+      ~ `Alternative\everclear_SMFTA.mp3`: File location as described above
+        with basic playlists.
 
-### M3U8
+M3U8
 
-M3U8 is a Unicode UTF-8 version of M3U files for support of Unicode/"international" characters/text. M3U8 follows the same principles as explained above.
+:   M3U8 is a Unicode UTF-8 version of M3U files for support of
+    Unicode/"international" characters/text. M3U8 follows the same principles as
+    explained above.
 
-Example
+    Example
 
-        #EXTM3U
+    ```plain
+    #EXTM3U
 
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1217000,RESOLUTION=1280x720
-        2013girlwithipad-1200k.m3u8
+    #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1217000,RESOLUTION=1280x720
+    2013girlwithipad-1200k.m3u8
 
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=824000,RESOLUTION=896x504
-        2013girlwithipad-800k.m3u8
+    #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=824000,RESOLUTION=896x504
+    2013girlwithipad-800k.m3u8
 
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=629000,RESOLUTION=640x360
-        2013girlwithipad-600k.m3u8
+    #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=629000,RESOLUTION=640x360
+    2013girlwithipad-600k.m3u8
 
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=430000,RESOLUTION=512x288
-        2013girlwithipad-400k.m3u8
+    #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=430000,RESOLUTION=512x288
+    2013girlwithipad-400k.m3u8
 
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=216000,RESOLUTION=400x300
-        2013girlwithipad-200k.m3u8
+    #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=216000,RESOLUTION=400x300
+    2013girlwithipad-200k.m3u8
 
-        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=121000,RESOLUTION=400x300
-        2013girlwithipad-110k.m3u8
-
-
----
-
-**See also**
-
-* [draft-pantos-http-live-streaming-08 - HTTP Live Streaming](http://tools.ietf.org/html/draft-pantos-http-live-streaming-08)
-
-
-**Refs**
-
-* [M3U - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/M3U)
-* [M3U Play List Specification - The Schworak Site](http://schworak.com/blog/e39/m3u-play-list-specification/)
-* [M3U and PLS Specification - Winamp Forums](http://forums.winamp.com/showthread.php?threadid=65772)
-* [What is an .M3U8 file? m3u8 template - GravityLab](http://www.gravlab.com/2013/07/05/what-is-an-m3u8-file/)
-* [PLS (file format) - Wikipedia, the free encyclopedia][PLS]
-
+    #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=121000,RESOLUTION=400x300
+    2013girlwithipad-110k.m3u8
+    ```
 
 [PLS]: http://en.wikipedia.org/wiki/PLS_(file_format)
 [M3U]: https://gist.github.com/district10/a982f999a7e853d3ca1b
 
+Refs & See also
 
+:   * [M3U - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/M3U)
+    * [M3U Play List Specification - The Schworak Site](http://schworak.com/blog/e39/m3u-play-list-specification/)
+    * [M3U and PLS Specification - Winamp Forums](http://forums.winamp.com/showthread.php?threadid=65772)
+    * [What is an .M3U8 file? m3u8 template - GravityLab](http://www.gravlab.com/2013/07/05/what-is-an-m3u8-file/)
+    * [PLS (file format) - Wikipedia, the free encyclopedia][PLS]
+    * [draft-pantos-http-live-streaming-08 - HTTP Live Streaming](http://tools.ietf.org/html/draft-pantos-http-live-streaming-08)
 
 ---
 
-[![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Leonhard_Euler_2.jpg/220px-Leonhard_Euler_2.jpg)](https://en.wikipedia.org/wiki/File:Leonhard_Euler_2.jpg)
+<div class="tzx-fright">
+![Leonhard Euler](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Leonhard_Euler_2.jpg/220px-Leonhard_Euler_2.jpg)
+</div>
 
-Leonhard Euler (/ˈɔɪlər/ oy-lər;) (15 April 1707 – 18 September 1783) was a pioneering **Swiss mathematician and physicist**. He made important discoveries in fields as diverse as infinitesimal calculus and graph theory. He also introduced much of the modern mathematical terminology and notation, particularly for mathematical analysis, such as the notion of a mathematical function. He is also renowned for his work in mechanics, fluid dynamics, optics, astronomy, and music theory.
+[Leonhard Euler] (`/ˈɔɪlər/ oy-lər`;) (15 April 1707 – 18 September 1783) was a
+pioneering **Swiss mathematician and physicist**. He made important discoveries
+in fields as diverse as infinitesimal calculus and graph theory. He also
+introduced much of the modern mathematical terminology and notation,
+particularly for mathematical analysis, such as the notion of a mathematical
+function. He is also renowned for his work in mechanics, fluid dynamics,
+optics, astronomy, and music theory.
 
 无穷小量积分、图论，现代的数学命名和标记
 
-Euler is considered to be the **pre-eminent mathematician of the 18th century** and one of the greatest mathematicians to have ever lived. He is also one of the most prolific mathematicians; his collected works fill 60–80 [quarto（四开）] volumes. He spent most of his adult life in St. Petersburg, Russia, and in Berlin, Prussia.
+Euler is considered to be the **pre-eminent mathematician of the 18th century**
+and one of the greatest mathematicians to have ever lived. He is also one of
+the most prolific mathematicians; his collected works fill 60–80 [quarto（四开
+）] volumes. He spent most of his adult life in St. Petersburg, Russia, and in
+Berlin, Prussia.
 
-A statement attributed to Pierre-Simon Laplace expresses Euler's influence on mathematics:"*Read Euler, read Euler, he is the master of us all.*"
+A statement attributed to Pierre-Simon Laplace expresses Euler's influence on
+mathematics: "*Read Euler, read Euler, he is the master of us all.*"
 
-
-
-
-
+[Leonhard Euler]: https://en.wikipedia.org/wiki/Leonhard_Euler
+[quarto（四开）]: http://en.wikipedia.org/wiki/Quarto
 
 ---
 
-**Refs**
-
-* [Leonhard Euler - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Leonhard_Euler)
-
-
-
-[quarto（四开）]: http://en.wikipedia.org/wiki/Quarto
-
-
-
 * [Language Tags in HTML and XML | W3C](http://www.w3.org/International/articles/language-tags/)
 
+---
+
+<div class="tzx-fleft">
+![Karl Weierstrass](http://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Karl_Weierstrass.jpg/220px-Karl_Weierstrass.jpg)
+</div>
 
 * [Karl Weierstrass](http://en.wikipedia.org/wiki/Karl_Weierstrass)
-![weierstrass-portrait]
-[weierstrass-portrait]: http://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Karl_Weierstrass.jpg/220px-Karl_Weierstrass.jpg
 
+![Joseph-Louis Lagrange](http://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Lagrange_portrait.jpg/200px-Lagrange_portrait.jpg)
 
 * [Joseph-Louis Lagrange](http://en.wikipedia.org/wiki/Joseph-Louis_Lagrange)
-![lagrange-portrait]
 
-[lagrange-portrait]: http://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Lagrange_portrait.jpg/200px-Lagrange_portrait.jpg
+* [James Stirling]
 
-
-* [James Stirling][james-stiring]
-[james-stiring]: http://en.wikipedia.org/wiki/James_Stirling_(mathematician)
+[James Stirling]: http://en.wikipedia.org/wiki/James_Stirling_(mathematician)
 
 * [Joseph Fourier](http://en.wikipedia.org/wiki/Joseph_Fourier)
 
+![Henri Poincaré](http://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Henri_Poincar%C3%A9-2.jpg/230px-Henri_Poincar%C3%A9-2.jpg)
+
 * [Henri Poincaré](http://en.wikipedia.org/wiki/Henri_Poincar%C3%A9)
-![poincare-portrait]
-[poincare-portrait]: http://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Henri_Poincar%C3%A9-2.jpg/230px-Henri_Poincar%C3%A9-2.jpg
+
+![Issac Newton](http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/GodfreyKneller-IsaacNewton-1689.jpg/220px-GodfreyKneller-IsaacNewton-1689.jpg)
 
 * [Issac Newton](http://en.wikipedia.org/wiki/Isaac_Newton)
-![newton-portrait]
 
-[newton-portrait]: http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/GodfreyKneller-IsaacNewton-1689.jpg/220px-GodfreyKneller-IsaacNewton-1689.jpg
+![Henri Lebesgue](http://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Lebesgue_2.jpeg/225px-Lebesgue_2.jpeg)
 
 * [Henri Lebesgue](http://en.wikipedia.org/wiki/Henri_Lebesgue)
-![lebesgue-portrait]
-[lebesgue-portrait]: http://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Lebesgue_2.jpeg/225px-Lebesgue_2.jpeg
 
-
+---
 
 * If ... Else ... Paradigm
 
@@ -1306,12 +1139,11 @@ A statement attributed to Pierre-Simon Laplace expresses Euler's influence on ma
 * [The 12 Cognitive Bias that Prevent you from Being Rational](http://io9.com/5974468/the-most-common-cognitive-biases-that-prevent-you-from-being-rational)
 * [心智工具箱（4）：执行意图 | 阳志平的日志](http://www.douban.com/note/256480522/)
 
-
+---
 
 * [Guillaume de l'Hôpital](http://en.wikipedia.org/wiki/Guillaume_de_l%27H%C3%B4pital)
-![hopital-portrait]
 
-[hopital-portrait]: http://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Guillaume_de_l%27H%C3%B4pital.jpg/220px-Guillaume_de_l%27H%C3%B4pital.jpg
+![Guillaume de l'Hôpital](http://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Guillaume_de_l%27H%C3%B4pital.jpg/220px-Guillaume_de_l%27H%C3%B4pital.jpg)
 
 * [Gottfried Willhelm Leibniz](http://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz)
 ![leibniz-portrait]
@@ -1656,7 +1488,7 @@ Preamble: We, the people of the electronic universe, in order to establish a soc
 
 ### The Conscience of a Hacker
 
-~~~
+```tzx-poem
                                ==Phrack Inc.==
 
                     Volume One, Issue 7, Phile 3 of 10
@@ -1732,25 +1564,18 @@ but you can't stop us all... after all, we're all alike.
 
                                +++The Mentor+++
 _______________________________________________________________________________
-~~~
+```
 
+Refs
 
-
----
-
-**Refs**
-
-* [黑客的价值观 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/2439.html)
-* [The Hacker's Code](http://muq.org/~cynbe/hackers-code.html)
-* [The Hacker's Code of Ethics](http://courses.cs.vt.edu/cs3604/lib/WorldCodes/Hackers.Code.html)
-* [The Hacker's Code: Related](http://www.petascale.org/code/code.html)
-* [The Conscience of a Hacker](http://www.phrack.org/archives/issues/7/3.txt)
-* [Hacker Manifesto - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Hacker_Manifesto)
-
-
+:   * [黑客的价值观 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/2439.html)
+    * [The Hacker's Code](http://muq.org/~cynbe/hackers-code.html)
+    * [The Hacker's Code of Ethics](http://courses.cs.vt.edu/cs3604/lib/WorldCodes/Hackers.Code.html)
+    * [The Hacker's Code: Related](http://www.petascale.org/code/code.html)
+    * [The Conscience of a Hacker](http://www.phrack.org/archives/issues/7/3.txt)
+    * [Hacker Manifesto - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Hacker_Manifesto)
 
 ---
-
 
 1. 管卫东？
 2. 心态
@@ -1814,108 +1639,220 @@ _______________________________________________________________________________
 
 ---
 
+```tzx-bigquote
 大哥大嫂过年好，大哥大嫂过年好，大哥大嫂过年好
 
 抱歉用姜文的鬼子来了开个恶趣味的玩笑
 
-本小站是成人英语学习研究基地，站长呢，没啥本事，在一家所谓外企工作，大学时候参加过 CCTV 杯，对英文教学试验特别感兴趣，因为工作关系大姨妈经常犯，所以就在线做些感兴趣的事情减减压
+本小站是成人英语学习研究基地，站长呢，没啥本事，在一家所谓外企工作，大学时候参
+加过 CCTV 杯，对英文教学试验特别感兴趣，因为工作关系大姨妈经常犯，所以就在线做
+些感兴趣的事情减减压
 
-本小站目标：以最科学高效的语言学理论和最牛叉有趣的学习材料作支撑，加上你自己的一点小坚持——每天 1-2 小时，依个人基础不同，1-2 年后人人都可习得英文，美剧电影随便看，口语流利自然说，原版教材小说随便读
+本小站目标：以最科学高效的语言学理论和最牛叉有趣的学习材料作支撑，加上你自己的
+一点小坚持——每天 1-2 小时，依个人基础不同，1-2 年后人人都可习得英文，美剧电影随
+便看，口语流利自然说，原版教材小说随便读
 
 很有趣是么？很不幸，先自问下一天 1-2 时，一年时间不动摇你能做到么？哈哈哈
 
 在进入正文之前，先做个自测
 
-1，在此前有没有照着录音一句话一句话暂停反复模仿的经历，如果有，请问每天一小时，最长坚持过多久，有没有超过三周？
-2，在此前有没有坚持做听写的经历，如果有，每天一小时，请问有没有坚持超过两周？
-3，你觉得自己看到不认识的单词的音标能做到比较标准的读出来么？
-4，估算下自己听英语的输入量大概有多少个小时，是否曾经每天坚持听 1-2 个小时的英文（随便什么，新闻，有声书之类，但中文字幕或中英字幕的美剧不算）
-5，请问你丢弃英文，从未接触，低于三年么？
-6，请问你高考英语及格了么？
-7，请问过去时，现在时，完成时，虚拟语气，副词性从句，名词性从句，形容词性从句这些基本语法概念有么？不要求精通，但是请问你知道么？
-8，请问你能听懂多快速度的英文？VOA 慢速那种？还是 VOA 慢速已经可以听懂但是常速仍然力不从心的？或者你根本就不知道 VOA 是什么，而且从来就没有过听英文的习惯？
+1，在此前有没有照着录音一句话一句话暂停反复模仿的经历，如果有，请问每天一小时，
+最长坚持过多久，有没有超过三周？2，在此前有没有坚持做听写的经历，如果有，每天一
+小时，请问有没有坚持超过两周？3，你觉得自己看到不认识的单词的音标能做到比较标准
+的读出来么？4，估算下自己听英语的输入量大概有多少个小时，是否曾经每天坚持听 1-2
+个小时的英文（随便什么，新闻，有声书之类，但中文字幕或中英字幕的美剧不算）5，请
+问你丢弃英文，从未接触，低于三年么？6，请问你高考英语及格了么？7，请问过去时，
+现在时，完成时，虚拟语气，副词性从句，名词性从句，形容词性从句这些基本语法概念
+有么？不要求精通，但是请问你知道么？8，请问你能听懂多快速度的英文？VOA 慢速那种
+？还是 VOA 慢速已经可以听懂但是常速仍然力不从心的？或者你根本就不知道 VOA 是什
+么，而且从来就没有过听英文的习惯？
 
-如果以上问题，你给出的否定答案超过 3 个问题，那么下面正文并不适合你，你看完也不会有任何直接收获，请点开右边零基础那个房间，寻求赖世雄老师的帮助，每天一课，一年后学完全套教材，英文自然大成！
+如果以上问题，你给出的否定答案超过 3 个问题，那么下面正文并不适合你，你看完也不
+会有任何直接收获，请点开右边零基础那个房间，寻求赖世雄老师的帮助，每天一课，一
+年后学完全套教材，英文自然大成！
 
 好，正文！
 
-由于**直接决定英文水平的其实就是听力，没错，这是一切英文能力基础中的基础**，我相信二语教学中从听力入手的假说—婴幼儿接触语言，无一不是从声音入手，然后认字，学阅读和写作的，so，我在教程初期决定：所有级别的划定，统统只以听力材料的难度来划分，所以大声哭诉不知道自己英文级别的人，把我推荐的材料听下，觉得能听懂 70% 的，说明你就适合这个级别，如果全都能听懂但是英文仍然很烂的（我暂时先不计较你是不是在撒谎和跟我瞎操蛋），那么提高写要求，看自己能复述出多少，复述率 70% 左右的，甭管你听懂 100% 还是 120%，都只当作符合这个水平
+由于**直接决定英文水平的其实就是听力，没错，这是一切英文能力基础中的基础**，我
+相信二语教学中从听力入手的假说—婴幼儿接触语言，无一不是从声音入手，然后认字，学
+阅读和写作的，so，我在教程初期决定：所有级别的划定，统统只以听力材料的难度来划
+分，所以大声哭诉不知道自己英文级别的人，把我推荐的材料听下，觉得能听懂 70% 的，
+说明你就适合这个级别，如果全都能听懂但是英文仍然很烂的（我暂时先不计较你是不是
+在撒谎和跟我瞎操蛋），那么提高写要求，看自己能复述出多少，复述率 70% 左右的，甭
+管你听懂 100% 还是 120%，都只当作符合这个水平
 
-最后废话句，虽然对本教程对号入座全部学完（不一定要从初始级别开始），应付任何考试都无问题，但是它本质上不针对考试，我只是在做英文习得的试验而已，再有人发帖发邮，说自己四六级 / 考研 / 口译 / 托福等垃圾考试要到了，所以进组要好好努力，或者求各种考试办法（比如托福雅思口语），我送你几个字：滚你妈逼的！
+最后废话句，虽然对本教程对号入座全部学完（不一定要从初始级别开始），应付任何考
+试都无问题，但是它本质上不针对考试，我只是在做英文习得的试验而已，再有人发帖发
+邮，说自己四六级 / 考研 / 口译 / 托福等垃圾考试要到了，所以进组要好好努力，或者
+求各种考试办法（比如托福雅思口语），我送你几个字：滚你妈逼的！
 
-如果你说自己要晋升，或者要去外企，或者赚大钱，或者要移民出国做假洋鬼子，或者装逼说要看懂各类原版书做文艺青年，或者志向高洁说要使用英文多读专业书，学好本专业高精尖技术，出国留学做科学家报效祖国，那么小组对各位无任欢迎！赚到钱了也请记得请我吃饭
+如果你说自己要晋升，或者要去外企，或者赚大钱，或者要移民出国做假洋鬼子，或者装
+逼说要看懂各类原版书做文艺青年，或者志向高洁说要使用英文多读专业书，学好本专业
+高精尖技术，出国留学做科学家报效祖国，那么小组对各位无任欢迎！赚到钱了也请记得
+请我吃饭
 
 OK，先简单扫盲下
 
-国外的 ESL 教学早就已经上升到心理学和脑神经学的高度了，各类语言学实验室开的兴旺，成果大批量产出，无数语言学家前赴后继殚精竭虑穷极一生，只为了追求拿最高效和最科学的教学手段方法，跟国内某机构或某名师拍脑袋想出来的办法（背熟新概念，背熟 2W 单词之类的言论）截然不同（庆父不死鲁难不已啊），其中的开宗立派的祖师爷，惹无数屌丝嫉妒，无数伪君子打压，国内无数英语系砖家叫兽故意掩盖伪装，被国人一只挡在门外的顶尖儿人物，就是南加州大学的 Dr Krashen！
+国外的 ESL 教学早就已经上升到心理学和脑神经学的高度了，各类语言学实验室开的兴旺
+，成果大批量产出，无数语言学家前赴后继殚精竭虑穷极一生，只为了追求拿最高效和最
+科学的教学手段方法，跟国内某机构或某名师拍脑袋想出来的办法（背熟新概念，背熟 2W
+单词之类的言论）截然不同（庆父不死鲁难不已啊），其中的开宗立派的祖师爷，惹无数
+屌丝嫉妒，无数伪君子打压，国内无数英语系砖家叫兽故意掩盖伪装，被国人一只挡在门
+外的顶尖儿人物，就是南加州大学的 Dr Krashen！
 
-技插：南加州的语言学专家怎么这么多，祖师爷是那的，我一外教是那毕业的，下文中要提到的 Jeff 也是哪的，真是风水宝地出人才啊
+技插：南加州的语言学专家怎么这么多，祖师爷是那的，我一外教是那毕业的，下文中要
+提到的 Jeff 也是哪的，真是风水宝地出人才啊
 
-Dr Krashen 提出了几条著名的外语习得假说，根据我们今天的网络丰富资源，我们完全可以按照这几条假说来全面最大化的优化自己的学习，简单介绍下
+Dr Krashen 提出了几条著名的外语习得假说，根据我们今天的网络丰富资源，我们完全可
+以按照这几条假说来全面最大化的优化自己的学习，简单介绍下
 
-1，输入 input 假说：绝大部分人的英文不好并不是因为他们 practice 的不够多，而是因为 input 不够，换言之没事喜欢瞎找老外搭讪无疑是个蠢办法，至于那种认为去国外了英文自然就会好，或者美国卖菜的英文都比我们好的多人的人都是傻逼，当然，这只是条假说，目前并无法证据其为完全真理，所以只能假定这些人是傻逼
-2，i+1 理论：也叫做可理解性输入假说，在你认同输入假说的基础上，进行输入练习时，要遵守 i+1 的原则，i 即你现在的水平，1 即稍微高一点点的水平，这点被很多人熟悉，但是大家容易忽略的就是，在学习了一段时间后，水平提高了，以前的 i+1 其实已经是你现在 i 水准了，这个时候一定要 push 自己，去主动开拓，寻求进一步的提升，主动给自己的学习难度升级，这个是很少有人会做的
+1，输入 input 假说：绝大部分人的英文不好并不是因为他们 practice 的不够多，而是
+因为 input 不够，换言之没事喜欢瞎找老外搭讪无疑是个蠢办法，至于那种认为去国外了
+英文自然就会好，或者美国卖菜的英文都比我们好的多人的人都是傻逼，当然，这只是条
+假说，目前并无法证据其为完全真理，所以只能假定这些人是傻逼2，i+1 理论：也叫做可
+理解性输入假说，在你认同输入假说的基础上，进行输入练习时，要遵守 i+1 的原则，i
+即你现在的水平，1 即稍微高一点点的水平，这点被很多人熟悉，但是大家容易忽略的就
+是，在学习了一段时间后，水平提高了，以前的 i+1 其实已经是你现在 i 水准了，这个
+时候一定要 push 自己，去主动开拓，寻求进一步的提升，主动给自己的学习难度升级，
+这个是很少有人会做的
 
-这条可理解性输入假说是最重要，也是最核心的 ESL 教学理论，跟其它语言学派不同，这个还靠谱点，事实上，有一种自然学习学派的观点，起码我是绝对不赞同的：一开始就应该拿常速英文来练习，好像刚出生的小孩一样，静心打坐聆听，就算听不懂也听下去，总有一天会顿悟，突然打通耳朵。就好像打通了任督二脉一样，你的英文的小宇宙就可以爆发，因为没有特别多的人试验过这种自然学习法，而且我相信绝大部分人不会有胆量拿自己的时间来试验这种办法，所以老老实实思索自己的级别，找一些略难的材料好好学一学，学好了，再升个级别，这样有阶段性的上升和提高，收获的是扎扎实实的进步和提高
-3，Narrow input 假说，意思就是，输入的材料在一定时间内相对要狭窄些，但是这条假说却是小组里无一人会愿意遵守的，比如今晚还有人问我入门级别的语法相关，求推荐简单的原版书（入门语法想读原版书，这个太高级了些）。我的观点很明确，既然确定了自己的级别，那么就在一定时间内，只接触这个级别的材料，起码在学完前，尽量不要接触其它材料，分散注意力。不要订出那种手捧赖世雄，脚填 Cloze，眼读原版书之类的天才计划，就算你订了，按照小组的时间设定，我很怀疑你每天都有那么多时间能每个方面都 cover 到，订这种不切实际的计划没什么意思，更何况，一天数课的赖世雄老师已经占了你很大时间，再去读原版书既不靠谱，也不实际，我也很怀疑，作为一个需要赖世雄老师帮忙的小白，能看得懂 Peter Pan 么？
+这条可理解性输入假说是最重要，也是最核心的 ESL 教学理论，跟其它语言学派不同，这
+个还靠谱点，事实上，有一种自然学习学派的观点，起码我是绝对不赞同的：一开始就应
+该拿常速英文来练习，好像刚出生的小孩一样，静心打坐聆听，就算听不懂也听下去，总
+有一天会顿悟，突然打通耳朵。就好像打通了任督二脉一样，你的英文的小宇宙就可以爆
+发，因为没有特别多的人试验过这种自然学习法，而且我相信绝大部分人不会有胆量拿自
+己的时间来试验这种办法，所以老老实实思索自己的级别，找一些略难的材料好好学一学
+，学好了，再升个级别，这样有阶段性的上升和提高，收获的是扎扎实实的进步和提高3，
+Narrow input 假说，意思就是，输入的材料在一定时间内相对要狭窄些，但是这条假说却
+是小组里无一人会愿意遵守的，比如今晚还有人问我入门级别的语法相关，求推荐简单的
+原版书（入门语法想读原版书，这个太高级了些）。我的观点很明确，既然确定了自己的
+级别，那么就在一定时间内，只接触这个级别的材料，起码在学完前，尽量不要接触其它
+材料，分散注意力。不要订出那种手捧赖世雄，脚填 Cloze，眼读原版书之类的天才计划
+，就算你订了，按照小组的时间设定，我很怀疑你每天都有那么多时间能每个方面都
+cover 到，订这种不切实际的计划没什么意思，更何况，一天数课的赖世雄老师已经占了
+你很大时间，再去读原版书既不靠谱，也不实际，我也很怀疑，作为一个需要赖世雄老师
+帮忙的小白，能看得懂 Peter Pan 么？
 
 4，情绪机制 学习的材料和环境应该是有趣的，轻松自如的，才能实现效果的最大化
 
-以上，是我个人比较赞同的 Krashen 的理论，具体的，可自己谷歌，或参照我之前写的帖子：为什么一定要听 ESLPOD 和 Egnlishpod
+以上，是我个人比较赞同的 Krashen 的理论，具体的，可自己谷歌，或参照我之前写的帖
+子：为什么一定要听 ESLPOD 和 Egnlishpod
 
-So，根据这几条假说，我估摸着把国内目前已经有了一些基础的学习者分成三个级别，这个级别划分很简单，就是按照 1，听力能力；2，词汇能力来划分的 3，语法能力来划分
+So，根据这几条假说，我估摸着把国内目前已经有了一些基础的学习者分成三个级别，这
+个级别划分很简单，就是按照 1，听力能力；2，词汇能力来划分的 3，语法能力来划分
 
-中级：能够听懂慢速英语，但是对慢速英语都要求认真听仔细听，还不能随心所欲的人，词汇量在 3-4K 左右
+中级：能够听懂慢速英语，但是对慢速英语都要求认真听仔细听，还不能随心所欲的人，
+词汇量在 3-4K 左右
 
-高级：轻松看懂无字幕美剧，原版专业书籍流畅读，词汇量 1W 以上，主动词汇超过 3K，各种英文从句和主句的造句方法都熟练使用，流畅阅读时代和经济学人等国际性报刊无障碍，与人交流或写作时，可以准确的使用单词和句式来表达自己的思想，语言文字不会地道，但一定会准确，清楚，易懂，口语表达会有自己个人口音，但比较流利
+高级：轻松看懂无字幕美剧，原版专业书籍流畅读，词汇量 1W 以上，主动词汇超过 3K，
+各种英文从句和主句的造句方法都熟练使用，流畅阅读时代和经济学人等国际性报刊无障
+碍，与人交流或写作时，可以准确的使用单词和句式来表达自己的思想，语言文字不会地
+道，但一定会准确，清楚，易懂，口语表达会有自己个人口音，但比较流利
 
-我相信 stuck 在中级水平的人多——毕竟这个级别努努力就上来了，但达到高级水平的人却少，且中级水平的人想达到高级，只觉得路漫漫其修远兮，道阻且长啊，穷此生未必能达到，不知道如何规划学习时长，监控学习效果
+我相信 stuck 在中级水平的人多——毕竟这个级别努努力就上来了，但达到高级水平的人却
+少，且中级水平的人想达到高级，只觉得路漫漫其修远兮，道阻且长啊，穷此生未必能达
+到，不知道如何规划学习时长，监控学习效果
 
-所以中级和高级之间肯定有个阶层，在这个阶层修炼的如鱼得水之后，闯下一关的高级就属于跳一跳，肯定摸得着的那种了
+所以中级和高级之间肯定有个阶层，在这个阶层修炼的如鱼得水之后，闯下一关的高级就
+属于跳一跳，肯定摸得着的那种了
 
-中高级：词汇在 4K—6K 左右，好一点背单词勤快的大概能达到 7K-8K，可以很轻松的听懂 VOA 慢速，但是在听常速英文的时候觉得困难重重，听懂率可能在 60%-70% 左右，看原版书觉得处处掣肘到处有生词不认识，在说和写方面，可以较为流畅的写，也可以表达，但是离轻松自如，并且写出来就知道对错的程度自己觉得很远，且困难重重，看不到什么提高的希望
+中高级：词汇在 4K—6K 左右，好一点背单词勤快的大概能达到 7K-8K，可以很轻松的听懂
+VOA 慢速，但是在听常速英文的时候觉得困难重重，听懂率可能在 60%-70% 左右，看原版
+书觉得处处掣肘到处有生词不认识，在说和写方面，可以较为流畅的写，也可以表达，但
+是离轻松自如，并且写出来就知道对错的程度自己觉得很远，且困难重重，看不到什么提
+高的希望
 
-国内普遍学习者的水平（通过最上面自测的学习者），大抵可以分成这三个级别——废话一句，平时没有输入习惯也就是听和读的习惯的人，自然是无法知道自己级别的，如果你看到这里还是不清楚自己级别，我只能 give up on you 了，请立刻 X 了此页转零基础帖
+国内普遍学习者的水平（通过最上面自测的学习者），大抵可以分成这三个级别——废话一
+句，平时没有输入习惯也就是听和读的习惯的人，自然是无法知道自己级别的，如果你看
+到这里还是不清楚自己级别，我只能 give up on you 了，请立刻 X 了此页转零基础帖
 
 这种学习的巨大断层是国内基础教育和江湖派培训双重疏忽导致
 
-国内基础教育就是大家熟悉的 语法 - 翻译 - 背诵法，尤其是对词汇的背诵，懂语法背词汇多的人基本上都能通过考试——但这样对确实英文的输入并无多少增长，考试自然也检测不了什么水平——连听力题都是靠连蒙带猜，选择题和阅读题也多是靠所谓语感，这样一路蒙 + 猜过了四六八级，只能说明你运气好——发音，because 肯定发成 becaurse,famous 也是 famours，r 音到处飞，w 和 h 这两个字母一读就错；语法，各种名词性从句和形容词性从句以及副词性从句的构成规则一片糊涂，浑浑噩噩，简化从句更是掌握的一塌糊涂，更不知道怎么写好各种复合句了；阅读，因为从句知识一片糊涂，稍微长一点的句子满目抓瞎，压根不知道什么意思，连一开始的句子都读不懂，之后更不可能加快阅读速度了，自豪的做阅读题的高正确率无非是在大量做题之后依靠题目本身的简化句子连蒙带猜而已，基本的行文逻辑思维全无，更别提欣赏英美文学文字的艺术美感了。连这三项最简单的部分大家都做的极差，那么我们也不用和口语和写作表达了吧。。。辞不达意还在其次，对英文的 instant reflection 完全没有
+国内基础教育就是大家熟悉的 语法 - 翻译 - 背诵法，尤其是对词汇的背诵，懂语法背词
+汇多的人基本上都能通过考试——但这样对确实英文的输入并无多少增长，考试自然也检测
+不了什么水平——连听力题都是靠连蒙带猜，选择题和阅读题也多是靠所谓语感，这样一路
+蒙 + 猜过了四六八级，只能说明你运气好——发音，because 肯定发成 becaurse,famous
+也是 famours，r 音到处飞，w 和 h 这两个字母一读就错；语法，各种名词性从句和形容
+词性从句以及副词性从句的构成规则一片糊涂，浑浑噩噩，简化从句更是掌握的一塌糊涂
+，更不知道怎么写好各种复合句了；阅读，因为从句知识一片糊涂，稍微长一点的句子满
+目抓瞎，压根不知道什么意思，连一开始的句子都读不懂，之后更不可能加快阅读速度了
+，自豪的做阅读题的高正确率无非是在大量做题之后依靠题目本身的简化句子连蒙带猜而
+已，基本的行文逻辑思维全无，更别提欣赏英美文学文字的艺术美感了。连这三项最简单
+的部分大家都做的极差，那么我们也不用和口语和写作表达了吧。。。辞不达意还在其次
+，对英文的 instant reflection 完全没有
 
 （请问诸君感到膝盖中满箭木有？）
 
-有些专家说国人对语法掌握很好，大家一说到学英文也常说自己的词汇好，书面英文好，阅读没问题，知识口语烂了些
+有些专家说国人对语法掌握很好，大家一说到学英文也常说自己的词汇好，书面英文好，
+阅读没问题，知识口语烂了些
 
-但很不幸，在我看来，大部分人的英文，包括高分学习者都是狗屁不通，语法更烂——基本的造句知识大部分人掌握的都很差，选择题都是靠 语感 ，和专家所说完全相反——用屁股想也知道了，如果大家的语法真的想你们所说的那么好，不会有那么多人抱怨英文难了，语法乃是英文根本中的根本，只要通了，以后不会很难
+但很不幸，在我看来，大部分人的英文，包括高分学习者都是狗屁不通，语法更烂——基本
+的造句知识大部分人掌握的都很差，选择题都是靠 语感 ，和专家所说完全相反——用屁股
+想也知道了，如果大家的语法真的想你们所说的那么好，不会有那么多人抱怨英文难了，
+语法乃是英文根本中的根本，只要通了，以后不会很难
 
-所以基础教育全面崩溃，一片苍凉，虽然自称 语法 - 翻译法，但是连语法教授这一最基本的教学任务全部失败——大部分狗屁老师自己语法都未通。一言蔽之，失败！
+所以基础教育全面崩溃，一片苍凉，虽然自称 语法 - 翻译法，但是连语法教授这一最基
+本的教学任务全部失败——大部分狗屁老师自己语法都未通。一言蔽之，失败！
 
-而真正个人学习的时候，网络时代来临前资料缺乏有限，我们当时多是用广播收听 VOA 和 BBC，钟道隆老师的理论出来了之后总算是有了很好的学习方法，当时各种英文学习杂志本质上和这些广播没有什么不同，学习效果固然不错，但是在学习上有着一个巨大的断层。VOA specail 每分钟只有 80 个词，词汇量在 3K 左右，常用的只有 1.5K，而 VOA 常速每分钟至少有 140 个词，词汇量高达 9K。从 80 个词到 140 个词的听力速度可以说是个彻底飞跃，词汇量也有个巨大鸿沟，英文学习的难度巨大分层——明显完全违背了 Dr Krashen 的 i+1 理论，所以很多人听 VOA 慢速听的开头一切良好，但是很多因为适应不了常速而放弃——这种时候就不是毅力和坚持的问题了，个人认为纯粹是方法和材料选择的问题了。。。
+而真正个人学习的时候，网络时代来临前资料缺乏有限，我们当时多是用广播收听 VOA 和
+BBC，钟道隆老师的理论出来了之后总算是有了很好的学习方法，当时各种英文学习杂志本
+质上和这些广播没有什么不同，学习效果固然不错，但是在学习上有着一个巨大的断层。
+VOA specail 每分钟只有 80 个词，词汇量在 3K 左右，常用的只有 1.5K，而 VOA 常速
+每分钟至少有 140 个词，词汇量高达 9K。从 80 个词到 140 个词的听力速度可以说是个
+彻底飞跃，词汇量也有个巨大鸿沟，英文学习的难度巨大分层——明显完全违背了 Dr
+Krashen 的 i+1 理论，所以很多人听 VOA 慢速听的开头一切良好，但是很多因为适应不
+了常速而放弃——这种时候就不是毅力和坚持的问题了，个人认为纯粹是方法和材料选择的
+问题了。。。
 
-所以你看，学习是件痛苦的事情，尤其是你过了四六级一看美剧一读原版书还是满眼抓瞎的时候，哈哈哈（我们这里还没有讲复杂的英文造句呢）
+所以你看，学习是件痛苦的事情，尤其是你过了四六级一看美剧一读原版书还是满眼抓瞎
+的时候，哈哈哈（我们这里还没有讲复杂的英文造句呢）
 
-纵观整个学习流派，没有任何一家提出过一个很好的系统的流程，让你从初级学到高级，尤其是在难度极大的中高级阶段的学习——大量泛听输入和连读弱读的讲解造句方法之类过渡阶段必须学习的东西也完全没人提及过——甚至连这个概念都从未有人提起过
+纵观整个学习流派，没有任何一家提出过一个很好的系统的流程，让你从初级学到高级，
+尤其是在难度极大的中高级阶段的学习——大量泛听输入和连读弱读的讲解造句方法之类过
+渡阶段必须学习的东西也完全没人提及过——甚至连这个概念都从未有人提起过
 
-是因为众多人的英文永远 stuck 在初级所以没人有中高级学习的体验吗？是侥幸顺利过渡完毕的高级学习者不屑来教人怎么过渡吗？但国内机构集体选择眼盲耳盲这一事实不能让人觉得不吊诡
+是因为众多人的英文永远 stuck 在初级所以没人有中高级学习的体验吗？是侥幸顺利过渡
+完毕的高级学习者不屑来教人怎么过渡吗？但国内机构集体选择眼盲耳盲这一事实不能让
+人觉得不吊诡
 
-如果没有人愿意或者不屑，那么让我来！我愿意来讲授自己当年好不容易突破的艰难困苦！我愿意来分享突破的最高效办法！我愿意撕下各种名师传奇的假面具！让我来踢爆国内各类跳梁小丑！
+如果没有人愿意或者不屑，那么让我来！我愿意来讲授自己当年好不容易突破的艰难困苦
+！我愿意来分享突破的最高效办法！我愿意撕下各种名师传奇的假面具！让我来踢爆国内
+各类跳梁小丑！
 
-就好像洛杉矶的把妹界，众人都是无脑而跟风的，看到一种办法有效就纷纷效仿，讲故事有用就到处给妹子讲故事，幽默有用就到处到酒吧给妹子讲笑话——结果发现有的办法有用，有的办法只能被妹子扇耳光，为什么呢？没有任何一个人有好对策，一直到一位奇才——迷男的出现
+就好像洛杉矶的把妹界，众人都是无脑而跟风的，看到一种办法有效就纷纷效仿，讲故事
+有用就到处给妹子讲故事，幽默有用就到处到酒吧给妹子讲笑话——结果发现有的办法有用
+，有的办法只能被妹子扇耳光，为什么呢？没有任何一个人有好对策，一直到一位奇才——
+迷男的出现
 
-迷男彻底扫清了把妹学上的流俗，肃清了那种一招鲜吃遍天的荒谬状况，革命性的指出，跟妹子交往是分成不同阶段的，搭讪认识是一个，约会是一个，约人家到你家里玩是一个，最后成功上垒把妹得手又是一个（好比英文的高级水平），每个阶段，都必须用不同的方法才能最和妹子的心思，尤其还要思考和认清自己和妹子的关系所处阶段，结合了当代女性心理学与 NLP 理论，大量实践，总结经验，开班授课，成功案例众多，随后出版书籍，众拙男花 25 人民币加上一颗不要脸的心反复练习，此生便可永远左拥右抱，常有温香软玉漂亮妹子在怀，社会从此稳定，造福于民，伟大！
+迷男彻底扫清了把妹学上的流俗，肃清了那种一招鲜吃遍天的荒谬状况，革命性的指出，
+跟妹子交往是分成不同阶段的，搭讪认识是一个，约会是一个，约人家到你家里玩是一个
+，最后成功上垒把妹得手又是一个（好比英文的高级水平），每个阶段，都必须用不同的
+方法才能最和妹子的心思，尤其还要思考和认清自己和妹子的关系所处阶段，结合了当代
+女性心理学与 NLP 理论，大量实践，总结经验，开班授课，成功案例众多，随后出版书籍
+，众拙男花 25 人民币加上一颗不要脸的心反复练习，此生便可永远左拥右抱，常有温香
+软玉漂亮妹子在怀，社会从此稳定，造福于民，伟大！
 
-你们可以想象下 威尔斯密斯在 Hitch 全民情圣中的角色，虽然迷男大师跟这种角色有很大不同，你们有空自己去优酷看看他的教程便知道了
+你们可以想象下 威尔斯密斯在 Hitch 全民情圣中的角色，虽然迷男大师跟这种角色有很
+大不同，你们有空自己去优酷看看他的教程便知道了
 
-奶爸不才，但我自愿做英文学习界的迷男，设定系统，指出不同阶段的不同战略，教你认清自己，并仔细思考，时刻监控，你们身边的英文高手很多，一说学英文，每个人的方法可能都不同，什么跟读模仿，看美剧，听 BBC，看原版书，背词典也好，背课文也好，大家就会觉得每个人学习方法不同，要靠自己去琢磨，要找适合自己的，殊不知，这种所谓最适合自己的，往往背后的意思就是 固步自封，真正的原因还是一个，不同阶段要做的事情是不一样的，看自己的水平选择相应的材料。这样大家都能学好英文，以后去英语角，男生可以靠一口流利英语泡到心仪女生，搞死洋垃圾和死老外，女生可以傍上老美改变国籍，从此一生不愁
+奶爸不才，但我自愿做英文学习界的迷男，设定系统，指出不同阶段的不同战略，教你认
+清自己，并仔细思考，时刻监控，你们身边的英文高手很多，一说学英文，每个人的方法
+可能都不同，什么跟读模仿，看美剧，听 BBC，看原版书，背词典也好，背课文也好，大
+家就会觉得每个人学习方法不同，要靠自己去琢磨，要找适合自己的，殊不知，这种所谓
+最适合自己的，往往背后的意思就是 固步自封，真正的原因还是一个，不同阶段要做的事
+情是不一样的，看自己的水平选择相应的材料。这样大家都能学好英文，以后去英语角，
+男生可以靠一口流利英语泡到心仪女生，搞死洋垃圾和死老外，女生可以傍上老美改变国
+籍，从此一生不愁
 
-而且随着网络时代的到来和数码技术的进步，过渡阶段的问题已经完美解决了，想知道？请在中级和中高阶段的帖子好好阅读吧!
+而且随着网络时代的到来和数码技术的进步，过渡阶段的问题已经完美解决了，想知道？
+请在中级和中高阶段的帖子好好阅读吧!
+```
 
 ---
-
 
 * 状态和变化
 * 衡量 =》 坐标系，表示系统，形式系统
 * 抽象的方式，研究状态和变化，以期推测
-
 
 ---
 
@@ -1923,97 +1860,91 @@ So，根据这几条假说，我估摸着把国内目前已经有了一些基础
 [*The First Course in Abstract Algebra with Applications*][douban-abstract-algebra]：
 
 > Giving the etymology of mathematical terms is rarely done. Let me explain,
-> with an analogy, why I have included derivations of many terms. There are many
-> variations of standard poker games and, in my poker group, the dealer announces
-> the game of his choice by naming it. Now some names are better than others.
-> For example, "Little Red" is a game in which one's smallest red card is wild; this
-> is a good name because it reminds the players of its distinctive feature. On the
-> other hand, "Aggravation" is not such a good name, for thought it is, indeed,
-> suggestive, the name does not distinguish this particular game from several others.
-> Most terms in mathematics have been well chosen; there are more red names than
-> aggravating ones. An example of a good name is *even* permutation, for a permutation
-> is even if it is a product of an even number of transpositions. Another
-> example of a good term is the *parallelogram law* describing vector addition. But
-> many good names, clear when they were chosen, are now obscure because their
-> roots are either in another language or in another discipline. The trigonometric
-> terms *tangent* and *secant* are good names for those knowing some Latin, but
-> they are obscure otherwise.
-> The term *mathematics* is obscure only because most of us do not know that it comes
-> from the classical Greek word meaning "to learn". The term *corollary* is doubly
-> obscure; it comes from the Latin word meaning "flower", but why should some
-> theorems be called flowers? A plausible explanation is that it was common, in
-> ancient Rome, to give flowers as gifts, and so a corollary is a gift bequeathed by
-> a theorem. The term *theorem* comes from the Greek word meaning "to watch"
-> or "to contemplate" (*theatre* has the same root); it was used by Euclid with its
-> present meaning. The term *lemma* comes from the Greek word meaning "taken"
-> or "received"; it is a statement that is taken for granted (for it has already been
-> proved) in the course of proving a theorem. **I believe that etymology of terms
-> is worthwhile (and interesting!), for it often aids understanding by removing
-> unnecessary obscurity.**
+> with an analogy, why I have included derivations of many terms.
+>
+> There are many variations of standard poker games and, in my poker group, the
+> dealer announces the game of his choice by naming it. Now some names are
+> better than others.  For example, "Little Red" is a game in which one's
+> smallest red card is wild; this is a good name because it reminds the players
+> of its distinctive feature. On the other hand, "Aggravation" is not such a
+> good name, for thought it is, indeed, suggestive, the name does not
+> distinguish this particular game from several others.
+>
+> Most terms in mathematics have been well chosen; there are more red names
+> than aggravating ones. An example of a good name is *even* permutation, for a
+> permutation is even if it is a product of an even number of transpositions.
+> Another example of a good term is the *parallelogram law* describing vector
+> addition. But many good names, clear when they were chosen, are now obscure
+> because their roots are either in another language or in another discipline.
+> The trigonometric terms *tangent* and *secant* are good names for those
+> knowing some Latin, but they are obscure otherwise.
+>
+> The term *mathematics* is obscure only because most of us do not know that it
+> comes from the classical Greek word meaning "to learn". The term *corollary*
+> is doubly obscure; it comes from the Latin word meaning "flower", but why
+> should some theorems be called flowers? A plausible explanation is that it
+> was common, in ancient Rome, to give flowers as gifts, and so a corollary is
+> a gift bequeathed by a theorem. The term *theorem* comes from the Greek word
+> meaning "to watch" or "to contemplate" (*theatre* has the same root); it was
+> used by Euclid with its present meaning. The term *lemma* comes from the
+> Greek word meaning "taken" or "received"; it is a statement that is taken for
+> granted (for it has already been proved) in the course of proving a theorem.
+> **I believe that etymology of terms is worthwhile (and interesting!), for it
+> often aids understanding by removing unnecessary obscurity.**
 
+[douban-abstract-algebra]: https://book.douban.com/subject/2853503/
 
-注：下表中大量 etymology 也源自此书
+Etymology of Mathematical Terms
 
+:   大量 etymology 源自此书
 
+    | 英文 | 中文 | 溯源 |
+    | :---: | :---: | :---: |
+    | Mathematics | 数学 | From Greek, "to learn" |
+    | Corollary | ？ | From Latin, "flower", 花当时是一种礼物。类似现在文中常用的 Bonus |
+    | Theorem | 定理 | From Greek, "to watch", "to contemplate" |
+    | Z, Q, R, C | ? | *Zahl*(*German*) meanning "number"; Rational Numbers; Real Numbers; Complex Numbers. |
+    | Lemma | ? | From Greek, "taken", "received", a.k.a. taken for granted |
+    | Induction | 归纳法，演绎法 | From Latin, "to lead", came to mean "prevailing to do something" or "influencing" |
+    | Factor | ? | From Latin, "to make", or "to contribute" |
+    | Binomial | ? | *bi*(*Latin*, "two") + *nomen*(*Latin*, "name", "term"); trinomial, monomial |
+    | Polynomial | ? | *poly*(*Greek*, many) + *namen*(*Latin*, "name", "term") |
+    | Cyclotomic | ? | From Greek, "circle splitting" |
+    | Algorithm | ? | 来自一个印度数学家 Khwarizmi |
+    | Googol | ? | 10^100 |
+    | Leap Year | ? | 闰年的 2 月比平年的多一天，因为在 Roman calender 里三月一号才是一年的第一天 |
+    | Calendar | ? | From Greek, "to call", evolved into the Latin for the first day of a month(when accounts were due) |
+    | Signum | ? | From Latin, "mark", or "token", now we use "sign" |
+    | Matrix | ? | Derived from the word meaning "mother", means "womb" in Latin. More generally, it means something that contains the essence of a thing. |
+    | Translation | ? | From Latin, "to transfer". Language to language, point(of thoughts) to point. |
+    | Dihedron | ? | *di*(*Latin*, "two") + *hedron*(*Greek*, "two dimensional side") |
+    | Stochastic | ? | From Greek, "to guess" |
+    | Homomorphism | ? | *homo*(*Greek*, "same") + *morphism*(*Greek*, "shape" or "form") |
+    | Isomorphism | ? | *iso*(*Greek*, "equal") + *morphism*(*Greek*, "shape" or "form") |
+    | Kernel | ? | From German, "grain" or "seed". Indicating an important ingredient of a homomorphism |
+    | quaternion | ? | ? |
+    | Group, , Ring | ? | First used by E. H. Moore in 1893 |
+    | Field | ? | *K<o">rper*(*German*), a "realm", a "body" of things, or "collections of things" |
+    | Ring | ? | *Corps*(*French*), a "realm", a "body" of things, or "collections of things" |
+    | Domain | ? | Abbrev. of *integral domain* of the German word *Integret<a">tsbereich; A collection of things |
+    | Quadratic | ? | From Latin, "four". Four-sided figures(Like a square, with area *x^2*). Linear, quadratic, cubic. |
+    | Vector | ? | From Latin, "to carry", vectors in euclidean space carry the data of length and direction. |
+    | Scalar | ? | From scale, which is from the Latin word meaning "ladder", 因为梯子的横均匀（可以作为度量） |
+    | Orthogonal | ? | *ortho*(*Greek*, "right") + *gon*(*Greek*, "angle"); Right angled or perpendicular |
+    | Echelon | ? | "Wings"; A matrix in echelon form（矩阵的梯形形式） |
+    | Eigenvalue | ? | From *Eigenwert*(*German*). *Wert* means *value*, *Eigen* is *characteristic* or *proper* |
+    | Automorphism | ? | *auto*(*Greek*, "self") + *morphism*("shape" or "form"). |
+    | Variety | ? | Arose as a translation by E. Beltami(inspired by Gauss) of the German term *Mannigfaltigkeit* used by Riemann; nowdays, this term is usually tranlated as *manifold* |
+    | Sine | ? | 参考 [Sine 的故事](url here) |
+    | Root | ? | 参考 [Root 的故事](url here) |
+    | Tangent | ? | The Latin word *tangere* means "to touch"; a tangent is a line which touches the circle in only one point |
+    | Secant | ? | The Latin word *secare* means "to cut"; a secant is a line that cuts a circle |
+    | Modulo | ? | From Latin, "measure" |
 
-### Etymology of Mathematical Terms
-
-| 英文 | 中文 | 溯源 |
-| :---: | :---: | :---: |
-| Mathematics | 数学 | From Greek, "to learn" |
-| Corollary | ？ | From Latin, "flower", 花当时是一种礼物。类似现在文中常用的 Bonus |
-| Theorem | 定理 | From Greek, "to watch", "to contemplate" |
-| Z, Q, R, C | ? | *Zahl*(*German*) meanning "number"; Rational Numbers; Real Numbers; Complex Numbers. |
-| Lemma | ? | From Greek, "taken", "received", a.k.a. taken for granted |
-| Induction | 归纳法，演绎法 | From Latin, "to lead", came to mean "prevailing to do something" or "influencing" |
-| Factor | ? | From Latin, "to make", or "to contribute" |
-| Binomial | ? | *bi*(*Latin*, "two") + *nomen*(*Latin*, "name", "term"); trinomial, monomial |
-| Polynomial | ? | *poly*(*Greek*, many) + *namen*(*Latin*, "name", "term") |
-| Cyclotomic | ? | From Greek, "circle splitting" |
-| Algorithm | ? | 来自一个印度数学家 Khwarizmi |
-| Googol | ? | 10^100 |
-| Leap Year | ? | 闰年的 2 月比平年的多一天，因为在 Roman calender 里三月一号才是一年的第一天 |
-| Calendar | ? | From Greek, "to call", evolved into the Latin for the first day of a month(when accounts were due) |
-| Signum | ? | From Latin, "mark", or "token", now we use "sign" |
-| Matrix | ? | Derived from the word meaning "mother", means "womb" in Latin. More generally, it means something that contains the essence of a thing. |
-| Translation | ? | From Latin, "to transfer". Language to language, point(of thoughts) to point. |
-| Dihedron | ? | *di*(*Latin*, "two") + *hedron*(*Greek*, "two dimensional side") |
-| Stochastic | ? | From Greek, "to guess" |
-| Homomorphism | ? | *homo*(*Greek*, "same") + *morphism*(*Greek*, "shape" or "form") |
-| Isomorphism | ? | *iso*(*Greek*, "equal") + *morphism*(*Greek*, "shape" or "form") |
-| Kernel | ? | From German, "grain" or "seed". Indicating an important ingredient of a homomorphism |
-| quaternion | ? | ? |
-| Group, , Ring | ? | First used by E. H. Moore in 1893 |
-| Field | ? | *K<o">rper*(*German*), a "realm", a "body" of things, or "collections of things" |
-| Ring | ? | *Corps*(*French*), a "realm", a "body" of things, or "collections of things" |
-| Domain | ? | Abbrev. of *integral domain* of the German word *Integret<a">tsbereich; A collection of things |
-| Quadratic | ? | From Latin, "four". Four-sided figures(Like a square, with area *x^2*). Linear, quadratic, cubic. |
-| Vector | ? | From Latin, "to carry", vectors in euclidean space carry the data of length and direction. |
-| Scalar | ? | From scale, which is from the Latin word meaning "ladder", 因为梯子的横均匀（可以作为度量） |
-| Orthogonal | ? | *ortho*(*Greek*, "right") + *gon*(*Greek*, "angle"); Right angled or perpendicular |
-| Echelon | ? | "Wings"; A matrix in echelon form（矩阵的梯形形式） |
-| Eigenvalue | ? | From *Eigenwert*(*German*). *Wert* means *value*, *Eigen* is *characteristic* or *proper* |
-| Automorphism | ? | *auto*(*Greek*, "self") + *morphism*("shape" or "form"). |
-| Variety | ? | Arose as a translation by E. Beltami(inspired by Gauss) of the German term *Mannigfaltigkeit* used by Riemann; nowdays, this term is usually tranlated as *manifold* |
-| Sine | ? | 参考 [Sine 的故事](url here) |
-| Root | ? | 参考 [Root 的故事](url here) |
-| Tangent | ? | The Latin word *tangere* means "to touch"; a tangent is a line which touches the circle in only one point |
-| Secant | ? | The Latin word *secare* means "to cut"; a secant is a line that cuts a circle |
-| Modulo | ? | From Latin, "measure" |
-
-
-
-
-**Refs**
-
-* The First Course in Abstract Algebra with Applications: url to douban
-
-
-[douban-abstract-algebra]:
-
+Refs
+:   * The First Course in Abstract Algebra with Applications: url to douban
 
 ---
-
 
 | Letter | Letter Name | Pronunciation |
 | :---: | :---: | :---: |
@@ -2049,9 +1980,7 @@ So，根据这几条假说，我估摸着把国内目前已经有了一些基础
 | - - | zee | /ˈziː/ |
 | - - | izzard | /ˈɪzərd/ |
 
-
-
-### Greek Alphabet
+Greek Alphabet
 
 | Letter | Name | In LaTeX | Transliteration | Pronunciation |
 | :---: | :---: | :----: | :--------------: | :--------------: |
@@ -2081,8 +2010,7 @@ So，根据这几条假说，我估摸着把国内目前已经有了一些基础
 | Ψ ψ | [psi][psi] | \Psi \psi | ps | [SIGH, PSIGH, PSEE][p-psi] |
 | Ω ω | [omega][omega] | \Omega \omega | ō | [oh-MEG-uh, oh-MEE-guh, oh-MAY-guh][p-omega] |
 
-
-### Latin Alphabet, etc
+Latin Alphabet, etc
 
 Archaic(古体的) Latin alphabet
 
@@ -2110,615 +2038,570 @@ Aleph: `/ˈɑːlɛf/`
 看的英文数学书越多，越发感觉英文教材的“好处”，符号都是不言自明，不用特别的提示就能明白要表达的意思。
 先上一份整理自 Wikipedia 的“说明书”。
 
-
-### Αα (alpha)
-
-α represents:
-
-* the first angle in a triangle, opposite the side A
-* one root of a quadratic equation, where β represents the other
-* the ratio of collector current to emitter current in a bipolar junction transistor (BJT) in electronics
-* the statistical significance of a result
-* the false positive rate in statistics ("Type I" error)
-* the reciprocal of the sacrifice ratio
-* the fine structure constant in physics
-* the angle of attack of an aircraft
-* an alpha particle (He2+)
-* angular acceleration in physics
-* the linear thermal expansion coefficient
-* the thermal diffusivity
-* the alpha carbon is the first carbon after the carbon that attaches to a functional group in organic chemistry
-* the α-carbon is the backbone carbon next to the carbonyl carbon in amino acids
-* right ascension in astrometry
-* The brightest star in a constellation.
-* Iron Ferrite and numerous phases within materials science.
-* the return in excess of the compensation for the risk borne in investment
-* the α-conversion in lambda calculus
-
-
-### Ββ (beta)
-
-Β represents the beta function
-
-β represents:
-
-* the thermodynamic beta, equal to (kBT)−1, where kB is Boltzmann's constant and T is the absolute temperature.
-* the second angle in a triangle, opposite the side B
-* one root of a quadratic equation, where α represents the other
-* the ratio of collector current to base current in a bipolar junction transistor (BJT) in electronics (current gain)
-* the false negative rate in statistics ("Type II" error)
-* the beta coefficient, the non-diversifiable risk, of an asset in mathematical finance
-* the sideslip angle of an airplane
-* the first-order effects of variations in Coriolis force with latitude in planetary dynamics
-* a beta particle (e-)
-* sound intensity
-* velocity divided by the speed of light in special relativity
-* the beta brain wave in brain or cognitive sciences
-* ecliptic latitude in astrometry
-* The ratio of plasma pressure to magnetic pressure in plasma physics
-* β-reduction in lambda calculus
-
-
-### Γγ (gamma)
-
-Γ represents:
-
-* the reflection coefficient of a transmission or telecommunication line.
-* the confinement factor of an optical mode in a waveguide
-* the gamma function, a generalization of the factorial
-* the upper incomplete gamma function
-* the modular group, the group of fractional linear transformations
-* the gamma distribution, a continuous probability distribution defined using the gamma function
-* second-order sensitivity to price in mathematical finance
-* the Christoffel symbols of the second kind
-* the neighbourhood of a vertex in a graph
-* the stack alphabet in the formal definition of a pushdown automaton
-
-γ represents:
-
-* the partial safety factors applied to loads and materials in structural engineering
-* the specific weight of substances
-* the lower incomplete gamma function
-* the third angle in a triangle, opposite the side C
-* the Euler–Mascheroni constant in mathematics
-* gamma rays and the photon
-* the heat capacity ratio in thermodynamics
-* the Lorentz factor in special relativity
-* the damping constant (kg/s)
-
-
-### Δδ (delta)
-
-Δ represents:
-
-* a finite difference
-* a difference operator
-* a symmetric difference
-* the Laplace operator
-* the angle that subtends the arc of a circular curve in surveying
-* the determinant of an inverse matrix[1]
-* the maximum degree of any vertex in a given graph
-* the difference or change in a given variable, e.g. ∆v means a difference or change in velocity
-* sensitivity to price in mathematical finance
-* distance to Earth, measured in astronomical units
-* heat in a chemical formula
-* the discriminant in the quadratic formula which determines the nature of the roots
-* the degrees of freedom in a non-pooled statistical hypothesis test of two population means
-
-δ represents:
-
-* percent error
-* a variation in the calculus of variations
-* the Kronecker delta function
-* the Feigenbaum constant
-* the force of interest in mathematical finance
-* the Dirac delta function
-* the receptor which enkephalins have the highest affinity for in pharmacology [2]
-* the Skorokhod integral in Malliavin calculus, a subfield of stochastic analysis
-* the minimum degree of any vertex in a given graph
-* a partial charge. δ− represents a negative partial charge, and δ+ represents a positive partial charge chemistry (See also: Solvation)
-* the Chemical shift of an atomic nucleus
-* declination in astrometry
-* the Turner function in computational material science
-* depreciation in macroeconomics
-* noncentrality measure in statistics[3]
-
-
-### Εε (epsilon)
-
-ε represents:
-
-* a small positive quantity; see limit
-* a random error in regression analysis
-* the absolute value of an error [4]
-* in set theory, the limit ordinal of the sequence \omega,\omega^{\omega},\omega^{\omega^{\omega}},\dots
-* in computer science, the empty string
-* the Levi-Civita symbol
-* in electromagnetics, dielectric permittivity
-* emissivity
-* strain in continuum mechanics
-* permittivity
-* the Earth's axial tilt in astrometry
-* elasticity in economics
-* expected value in probability theory and statistics
-* electromotive force
-* in chemistry, the molar extinction coefficient of a chromophore.
-* set membership symbol ∈ is based on ε
-
-
-### Ϝϝ (digamma)
-
-Ϝ is sometimes used to represent the digamma function, though the Latin letter F (which is nearly identical) is usually substituted.
-
-
-### Ζζ (zeta)
-
-ζ represents:
-
-* the Riemann zeta function and other zeta functions in mathematics
-* the coefficient of viscous friction in polymer dynamics
-* the damping ratio
-* relative vertical vorticity in fluid dynamics
-
-
-### Ηη (eta)
-
-Η represents:
-
-* the Eta function of Ludwig Boltzmann's H-theorem ("Eta" theorem), in statistical mechanics
-
-η represents:
-
-* the intrinsic impedance of medium (usually free space)
-* the partial regression coefficient in statistics
-* elasticities in economics
-* the absolute vertical vorticity (relative vertical vorticity + Coriolis effect) in fluid dynamics
-* an index of refraction
-* a type of meson
-* viscosity
-* efficiency (statistics)
-* efficiency (physics and engineering)
-* the Minkowski metric tensor in relativity
-* noise in communication system models
-
-
-### Θθ (theta)
-
-Θ represents:
-
-* an asymptotically tight bound related to big O notation.
-* sensitivity to the passage of time in mathematical finance
-* Θ (set theory), a certain ordinal number
-
-θ represents:
-
-* a plane angle in geometry
-* the angle to the x axis in the xy-plane in spherical or cylindrical coordinates (mathematics)
-* the angle to the z axis in spherical coordinates (physics)
-* potential temperature in thermodynamics
-* the mean time between failure in reliability engineering
-* soil water contents in soil science
-* Debye temperature
-* In mathematical statistics, represents an unknown parameter
-* theta functions
-* sometimes also ϑ ("script theta"), cursive form of theta, often used in handwriting
-* the first Chebyshev function in number theory
-
-
-### Ιι (iota)
-
-ι represents:
-
-* the index generator function in APL (in the form ⍳)
-* the orbital inclination with respect to the line of sight, used when describing gravitational wave sources.
-
-
-### Κκ (kappa)
-
-Κ represents:
-
-* the Kappa number
-* κ represents:
-* the Von Kármán constant
-* the kappa curve
-* the condition number of a matrix in numerical analysis
-* the connectivity of a graph in graph theory
-* curvature
-* dielectric constant (\varepsilon / \varepsilon_0)
-* thermal conductivity (usually a lowercase Latin k)
-* thermal diffusivity
-* a spring constant (usually a lowercase Latin k)
-* the heat capacity ratio in thermodynamics (usually γ)
-* the receptor which dynorphins have the highest affinity for in pharmacology[2]
-
-
-### Λ λ (lambda)
-
-Λ represents:
-
-* the von Mangoldt function in number theory
-* the set of logical axioms in the axiomatic method of logical deduction in first-order logic
-* the cosmological constant
-* a type of baryon
-* a diagonal matrix of eigenvalues in linear algebra
-* the permeance of a material in electromagnetism
-
-λ represents:
-
-* one wavelength of electromagnetic radiation
-* the decay constant in radioactivity
-* function expressions in the lambda calculus
-* a general eigenvalue in linear algebra
-* the expected number of occurrences in a Poisson distribution in probability
-* the arrival rate in queueing theory
-* the average lifetime or rate parameter in an exponential distribution (commonly used across statistics, physics, and engineering)
-* the failure rate in reliability engineering
-* the mean or average value (probability and statistics)
-* the latent heat of fusion
-* the lagrange multiplier in the mathematical optimization method, known as the shadow price in economics
-* the Lebesgue measure denotes the volume or measure of a Lebesgue measurable set
-* longitude in geodesy
-* linear density
-* ecliptic longitude in astrometry
-* the Liouville function in number theory
-* the Carmichael function in number theory
-* a unit of measure of volume equal to one microlitre (1 μL) or one cubic millimetre (1 mm³)
-* the empty string in formal grammar
-
-
-### Μμ (mu)
-
-μ represents:
-
-* the Möbius function in number theory
-* the ring representation of a representation module
-* the population mean or expected value in probability and statistics
-* a measure in measure theory
-* micro-, an SI prefix denoting 10−6 (one millionth)
-* the coefficient of friction in physics
-* the service rate in queueing theory
-* the dynamic viscosity in physics
-* magnetic permeability in electromagnetics
-* a muon
-* reduced mass
-* chemical potential in condensed matter physics
-* the ion mobility in plasma physics
-
-
-### Νν (nu)
-
-ν represents:
-
-* frequency in physics in hertz (Hz)
-* Degrees of freedom in statistics
-* Poisson's ratio in material science
-* a neutrino
-* kinematic viscosity of liquids
-* stoichiometric coefficient in chemistry
-* dimension of nullspace in mathematics
-
-
-### Ξ ξ (xi)
-
-Ξ represents:
-
-* the original Riemann Xi function, i.e. Riemann's lower case ξ, as denoted by Edmund Landau and currently
-* the grand canonical ensemble found in statistical mechanics
-* a type of baryon
-* ξ represents:
-* the original Riemann Xi function
-* the modified definition of Riemann xi function, as denoted by Edmund Landau and currently
-* a random variable
-* the extent of a chemical reaction
-* coherence length
-* the damping ratio
-* universal set
-* Οο (omicron)[edit]
-
-Ο represents:
-
-* big O notation (may be represented by an uppercase Latin O)
-* o represents:
-* small o notation (may be represented by a lowercase Latin o)
-
-
-### Π π (pi)
-
-Π represents:
-
-* the product operator in mathematics
-* a plane
-* osmotic pressure
-* π represents:
-* Archimedes' constant, the ratio of a circle's circumference to its diameter
-* the prime-counting function
-* profit in microeconomics and game theory
-* inflation in macroeconomics, expressed as a constant with respect to time
-* the state distribution of a Markov chain
-* a type of covalent bond in chemistry (pi bond)
-* a pion (pi meson) in particle physics
-* in statistics, the population proportion of success
-* in electronics, a special type of small signal model is referred to as a hybrid-pi model
-* in relational algebra for databases, represents project
-
-ϖ (a graphic variant, see pomega) represents:
-
-* angular frequency of a wave, in fluid dynamics (angular frequency is usually represented by \omega but this may be confused with vorticity in a fluid dynamics context)
-* longitude of pericenter, in celestial mechanics[5]
-* comoving distance, in cosmology[6]
-
-
-### Ρρ (rho)
-
-Ρ represents:
-
-* one of the Gegenbauer functions in analytic number theory.
-
-ρ represents:
-
-* one of the Gegenbauer functions in analytic number theory.
-* the Dickman-de Bruijn function
-* the radius in a polar, cylindrical, or spherical coordinate system
-* the correlation coefficient in statistics
-* the sensitivity to interest rate in mathematical finance
-* density (mass or charge per unit volume)
-* resistivity
-* the shape and reshape operators in APL (in the form ⍴)
-* the utilization in queueing theory
-* the rank of a matrix
-
-
-
-### Σσ (sigma)
-
-Σ represents:
-
-* the summation operator
-* the covariance matrix
-* the set of terminal symbols in a formal grammar
-
-σ represents:
-
-* Stefan–Boltzmann constant in blackbody radiation
-* the divisor function in number theory
-* the real part of the complex variable s = σ + i t in analytic number theory
-* the sign of a permutation in the theory of finite groups
-* the population standard deviation, a measure of spread in probability and statistics
-* a type of covalent bond in chemistry (sigma bond)
-* the selection operator in relational algebra
-* stress in mechanics
-* electrical conductivity
-* area density
-* nuclear cross section
-* uncertainty
-* utilization in operations management
-* surface charge density for microparticles
-
-
-###  Ττ (tau)
-
-τ (lower-case) represents:
-
-* an interval of time
-* a mean lifetime
-* torque, the rotational force in mechanics
-* the elementary tau lepton in particle physics
-* the lifetime of a spontaneous emission process
-* the time constant of any device, such as an RC circuit
-* proper time in relativity
-* Kendall tau rank correlation coefficient, a measure of rank correlation in statistics
-* the golden ratio 1.618... (although φ (phi) is more common)
-* Ramanujan's tau function in number theory
-* in astronomy, a measure of opacity, or how much sunlight cannot penetrate the atmosphere
-* the intertwining operator in representation theory
-* the tau in biochemistry, a protein associated to microtubules
-* Shear stress in continuum mechanics
-* the number of divisors of highly composite numbers (sequence A000005 in OEIS)
-* the prefix of many stars, via the Bayer stellar designation system
-* an internal system step in transition systems
-* a type variable in type theories, such as the simply typed lambda calculus
-* path tortuosity in reservoir engineering
-* in Topology, a given topology
-* a proposed name [7] for the mathematical constant of the ratio of a circle's circumference to its radius, with value 2π (6.283...).
-
-
-### Υυ (upsilon)
-
-Υ represents:
-
-* an elementary particle
-* υ represents:
-* frequency in physics textbooks
-
-
-### Φφ (phi)
-
-Φ represents:
-
-* the work function in physics; the energy required by a photon to remove an electron from the surface of a metal
-* magnetic flux
-* the cumulative distribution function of the normal distribution in statistics
-* phenyl functional group
-* the reciprocal of the golden ratio (represented by φ, below), also represented as 1/φ
-* the value of the integration of information in a system (based on Integrated Information Theory)
-* note: a symbol for the empty set, \varnothing, resembles Φ but is not Φ
-
-φ represents:
-
-* the golden ratio 1.618... in mathematics, art, and architecture
-* Euler's totient function in number theory
-* a holomorphic map on an analytic space
-* the argument of a complex number in mathematics
-* the value of a plane angle in physics and mathematics
-* the angle to the z axis in spherical coordinates (mathematics)
-* the angle to the x axis in the xy-plane in spherical or cylindrical coordinates (physics)
-* latitude in geodesy
-* a scalar field
-* radiant flux
-* electric potential
-* the probability density function of the normal distribution in statistics
-* a feature of a syntactic node giving that node characteristics such as gender, number and person in syntax
-* the diameter of a vessel (engineering)
-
-
-### Χχ (chi)[edit]
-
-χ represents:
-
-* the chi distribution in statistics (χ^2 is the more frequently encountered chi-squared distribution)
-* the chromatic number of a graph in graph theory
-* the Euler characteristic in algebraic topology
-* electronegativity in the periodic table
-* the Rabi frequency
-* the spinor of a fundamental particle
-* the Fourier transform of a linear response function
-* a character in mathematics; especially a Dirichlet character in number theory
-* the Sigma vectors in the unscented transform used in the unscented Kalman filter
-* sometimes the mole fraction
-* a characteristic or indicator function in mathematics
-
-
-### Ψψ (psi)
-
-Ψ represents:
-
-* water potential
-* a quaternary combinator in combinatory logic
-
-ψ represents:
-
-* the wave function in the Schrödinger equation of quantum mechanics
-* the stream function in fluid dynamics
-* yaw angle in vehicle dynamics
-* the angle between the x-axis and the tangent to the curve in the intrinsic coordinates system
-* the reciprocal Fibonacci constant
-* the second Chebyshev function in number theory
-* the polygamma function in mathematics
-
-
-### Ω ω (omega)
-
-Ω represents:
-
-* the Omega constant
-* an asymptotic lower bound related to big O notation
-* in probability theory and statistical mechanics, the set of possible distinct system states
-* the SI unit measure of electrical resistance, the ohm
-* the rotation rate of an object, particularly a planet, in dynamics
-* a solid angle
-* a baryon
-* the arithmetic function counting a number's prime factors
-* the right ascension of the ascending node in celestial mechanics
-* the density parameter in cosmology
-
-ω represents:
-
-* the first infinite ordinal
-* the differentiability class (i.e. C^\omega) for functions that are infinitely differentiable because they are complex analytic
-* the set of natural numbers in set theory (although \mathbb{N} or N is more common in other areas of mathematics)
-* an asymptotically dominant quantity related to big O notation
-* in probability theory, a possible outcome of an experiment
-* angular velocity / radian frequency
-* a complex cube root of unity — the other is ω² — (used to describe various ways of calculating the discrete Fourier transform)
-* vertical velocity in pressure-based coordinate systems (commonly used in atmospheric dynamics)
-* a meson
-* the arithmetic function counting a number's distinct prime factors
-* a differential form (esp. on an analytic space)
-* the argument of periapsis in celestial mechanics
-* the symbol ϖ, a graphic variant of π, is sometimes construed as omega with a bar over it; see π
-
-
-
-
-
-
-再有，我自己看书的过程中的摘抄：
-
-### 1.
-
-> a permutation alpha = tau_1*tau_2*...*tau_n; tau <==> transposition
-
-**Tau == Transposition**
-
-2.
-
-** *m*: move, *u*, *d*, *l*, *r*, for up, down, left, right, respectively **
-
-> Each simple move takes `#`(一个棋子) up, down, left, or right.
-> Thus the total number *m* of moves is *u*+*d*+*l*+*r*.
-
-
-3.
-
-** *G*: Group, *e*: element **
-
-> A group is a set *G* equipped with an operation `*` and
-> a special element *e* <belong-to> *G*, called the identity, such that...
-
-
-4.
-
-** delta(uppercase)= ad - bc = det(A) **
-
-5.
-
-** S: the **S**ymmetry Group, the **S**ub set**
-
-
-6.
-
-> The symmetry group <Sigma>(<Omega>) of a figure <Omega> in the plane is
-> the set of all isometries <phi> of the plane with <phi>(<Omega>) = <Omega>.
-> The elements of <sigma>(<omega>) are called symmetries of <Omega>. p 140
-
-注意 <sigma>(**S**igma) 和 **S**ymmetry.
-
-7.
-
-> The group <Sigma>(<pi>_4) is called the dihedral group with 8 elements,
-> and it is denoted by D_8.
-
-8.
-
-> The symmetryi gorup <Sigma>(<pi>_n) of a regular polygon <pi_n> with center at O
-> and vertices v_0, v_1, ..., v_{n-1} is called the dihedral group D_{2n}.
-
-
-
-
----
-
-**See also**
-
-* https://en.wikipedia.org/wiki/Notation_in_probability_and_statistics
-* https://en.wikipedia.org/wiki/Latin_letters_used_in_mathematics
-* https://en.wikipedia.org/wiki/List_of_logic_symbols
-
-
-**Refs**
-
-* https://en.wikipedia.org/wiki/Greek_letters_used_in_mathematics,_science,_and_engineering
-* https://en.wikipedia.org/wiki/Mathematical_notation
-
----
-
-**See also**
-
-* [数学-英文vs.中文](数学-英文vs.中文.md)
-
-**Refs**
-
-* https://en.wikipedia.org/wiki/Greek_alphabet
-* https://en.wikipedia.org/wiki/Latin_alphabet
-* http://www.greekgrammar.org
-* http://www.skyandtelescope.com/astronomy-resources/stargazing-basics/the-greek-alphabet/
-
-**Key words**
-
-alpha, beta, gamma, ..., omega, greek alphabet, latin alphabet
-
-
-
+Αα (alpha)
+
+:   α represents:
+
+      - the first angle in a triangle, opposite the side A
+      - one root of a quadratic equation, where β represents the other
+      - the ratio of collector current to emitter current in a bipolar junction
+        transistor (BJT) in electronics
+      - the statistical significance of a result
+      - the false positive rate in statistics ("Type I" error)
+      - the reciprocal of the sacrifice ratio
+      - the fine structure constant in physics
+      - the angle of attack of an aircraft
+      - an alpha particle (He2+)
+      - angular acceleration in physics
+      - the linear thermal expansion coefficient
+      - the thermal diffusivity
+      - the alpha carbon is the first carbon after the carbon that attaches to
+        a functional group in organic chemistry
+      - the α-carbon is the backbone carbon next to the carbonyl carbon in
+        amino acids
+      - right ascension in astrometry
+      - The brightest star in a constellation.
+      - Iron Ferrite and numerous phases within materials science.
+      - the return in excess of the compensation for the risk borne in
+        investment
+      - the α-conversion in lambda calculus
+
+Ββ (beta)
+
+:   Β represents the beta function
+
+    β represents:
+
+      - the thermodynamic beta, equal to (kBT)−1, where kB is Boltzmann's
+        constant and T is the absolute temperature.
+      - the second angle in a triangle, opposite the side B
+      - one root of a quadratic equation, where α represents the other
+      - the ratio of collector current to base current in a bipolar junction
+        transistor (BJT) in electronics (current gain)
+      - the false negative rate in statistics ("Type II" error)
+      - the beta coefficient, the non-diversifiable risk, of an asset in
+        mathematical finance
+      - the sideslip angle of an airplane
+      - the first-order effects of variations in Coriolis force with latitude
+        in planetary dynamics
+      - a beta particle (e-)
+      - sound intensity
+      - velocity divided by the speed of light in special relativity
+      - the beta brain wave in brain or cognitive sciences
+      - ecliptic latitude in astrometry
+      - The ratio of plasma pressure to magnetic pressure in plasma physics
+      - β-reduction in lambda calculus
+
+Γγ (gamma)
+
+:   Γ represents:
+
+      - the reflection coefficient of a transmission or telecommunication line.
+      - the confinement factor of an optical mode in a waveguide
+      - the gamma function, a generalization of the factorial
+      - the upper incomplete gamma function
+      - the modular group, the group of fractional linear transformations
+      - the gamma distribution, a continuous probability distribution defined
+        using the gamma function
+      - second-order sensitivity to price in mathematical finance
+      - the Christoffel symbols of the second kind
+      - the neighbourhood of a vertex in a graph
+      - the stack alphabet in the formal definition of a pushdown automaton
+
+    γ represents:
+
+      - the partial safety factors applied to loads and materials in structural
+        engineering
+      - the specific weight of substances
+      - the lower incomplete gamma function
+      - the third angle in a triangle, opposite the side C
+      - the Euler–Mascheroni constant in mathematics
+      - gamma rays and the photon
+      - the heat capacity ratio in thermodynamics
+      - the Lorentz factor in special relativity
+      - the damping constant (kg/s)
+
+Δδ (delta)
+
+:   Δ represents:
+
+      - a finite difference
+      - a difference operator
+      - a symmetric difference
+      - the Laplace operator
+      - the angle that subtends the arc of a circular curve in surveying
+      - the determinant of an inverse matrix[1]
+      - the maximum degree of any vertex in a given graph
+      - the difference or change in a given variable, e.g. ∆v means a
+        difference or change in velocity
+      - sensitivity to price in mathematical finance
+      - distance to Earth, measured in astronomical units
+      - heat in a chemical formula
+      - the discriminant in the quadratic formula which determines the nature
+        of the roots
+      - the degrees of freedom in a non-pooled statistical hypothesis test of
+        two population means
+
+    δ represents:
+
+      - percent error
+      - a variation in the calculus of variations
+      - the Kronecker delta function
+      - the Feigenbaum constant
+      - the force of interest in mathematical finance
+      - the Dirac delta function
+      - the receptor which enkephalins have the highest affinity for in
+        pharmacology [2]
+      - the Skorokhod integral in Malliavin calculus, a subfield of stochastic
+        analysis
+      - the minimum degree of any vertex in a given graph
+      - a partial charge. δ− represents a negative partial charge, and δ+
+        represents a positive partial charge chemistry (See also: Solvation)
+      - the Chemical shift of an atomic nucleus
+      - declination in astrometry
+      - the Turner function in computational material science
+      - depreciation in macroeconomics
+      - noncentrality measure in statistics[3]
+
+Εε (epsilon)
+
+:   ε represents:
+
+      - a small positive quantity; see limit
+      - a random error in regression analysis
+      - the absolute value of an error [4]
+      - in set theory, the limit ordinal of the sequence
+        \omega,\omega^{\omega},\omega^{\omega^{\omega}},\dots
+      - in computer science, the empty string
+      - the Levi-Civita symbol
+      - in electromagnetics, dielectric permittivity
+      - emissivity
+      - strain in continuum mechanics
+      - permittivity
+      - the Earth's axial tilt in astrometry
+      - elasticity in economics
+      - expected value in probability theory and statistics
+      - electromotive force
+      - in chemistry, the molar extinction coefficient of a chromophore.
+      - set membership symbol ∈ is based on ε
+
+Ϝϝ (digamma)
+
+:   Ϝ is sometimes used to represent the digamma function, though the Latin
+letter F (which is nearly identical) is usually substituted.
+
+Ζζ (zeta)
+
+:   ζ represents:
+
+      - the Riemann zeta function and other zeta functions in mathematics
+      - the coefficient of viscous friction in polymer dynamics
+      - the damping ratio
+      - relative vertical vorticity in fluid dynamics
+
+Ηη (eta)
+
+:   Η represents:
+
+      - the Eta function of Ludwig Boltzmann's H-theorem ("Eta" theorem), in
+        statistical mechanics
+
+    η represents:
+
+      - the intrinsic impedance of medium (usually free space)
+      - the partial regression coefficient in statistics
+      - elasticities in economics
+      - the absolute vertical vorticity (relative vertical vorticity + Coriolis
+        effect) in fluid dynamics
+      - an index of refraction
+      - a type of meson
+      - viscosity
+      - efficiency (statistics)
+      - efficiency (physics and engineering)
+      - the Minkowski metric tensor in relativity
+      - noise in communication system models
+
+Θθ (theta)
+
+:   Θ represents:
+
+      - an asymptotically tight bound related to big O notation.
+      - sensitivity to the passage of time in mathematical finance
+      - Θ (set theory), a certain ordinal number
+
+    θ represents:
+
+      - a plane angle in geometry
+      - the angle to the x axis in the xy-plane in spherical or cylindrical
+        coordinates (mathematics)
+      - the angle to the z axis in spherical coordinates (physics)
+      - potential temperature in thermodynamics
+      - the mean time between failure in reliability engineering
+      - soil water contents in soil science
+      - Debye temperature
+      - In mathematical statistics, represents an unknown parameter
+      - theta functions
+      - sometimes also ϑ ("script theta"), cursive form of theta, often used in
+        handwriting
+      - the first Chebyshev function in number theory
+
+Ιι (iota)
+
+:   ι represents:
+
+      - the index generator function in APL (in the form ⍳)
+      - the orbital inclination with respect to the line of sight, used when
+        describing gravitational wave sources.
+
+Κκ (kappa)
+
+:   Κ represents:
+
+      - the Kappa number
+      - κ represents:
+      - the Von Kármán constant
+      - the kappa curve
+      - the condition number of a matrix in numerical analysis
+      - the connectivity of a graph in graph theory
+      - curvature
+      - dielectric constant (\varepsilon / \varepsilon_0)
+      - thermal conductivity (usually a lowercase Latin k)
+      - thermal diffusivity
+      - a spring constant (usually a lowercase Latin k)
+      - the heat capacity ratio in thermodynamics (usually γ)
+      - the receptor which dynorphins have the highest affinity for in
+        pharmacology[2]
+
+Λ λ (lambda)
+
+:   Λ represents:
+
+      - the von Mangoldt function in number theory
+      - the set of logical axioms in the axiomatic method of logical deduction
+        in first-order logic
+      - the cosmological constant
+      - a type of baryon
+      - a diagonal matrix of eigenvalues in linear algebra
+      - the permeance of a material in electromagnetism
+
+    λ represents:
+
+      - one wavelength of electromagnetic radiation
+      - the decay constant in radioactivity
+      - function expressions in the lambda calculus
+      - a general eigenvalue in linear algebra
+      - the expected number of occurrences in a Poisson distribution in
+        probability
+      - the arrival rate in queueing theory
+      - the average lifetime or rate parameter in an exponential distribution
+        (commonly used across statistics, physics, and engineering)
+      - the failure rate in reliability engineering
+      - the mean or average value (probability and statistics)
+      - the latent heat of fusion
+      - the lagrange multiplier in the mathematical optimization method, known
+        as the shadow price in economics
+      - the Lebesgue measure denotes the volume or measure of a Lebesgue
+        measurable set
+      - longitude in geodesy
+      - linear density
+      - ecliptic longitude in astrometry
+      - the Liouville function in number theory
+      - the Carmichael function in number theory
+      - a unit of measure of volume equal to one microlitre (1 μL) or one cubic
+        millimetre (1 mm³)
+      - the empty string in formal grammar
+
+Μμ (mu)
+
+:   μ represents:
+
+      - the Möbius function in number theory
+      - the ring representation of a representation module
+      - the population mean or expected value in probability and statistics
+      - a measure in measure theory
+      - micro-, an SI prefix denoting 10−6 (one millionth)
+      - the coefficient of friction in physics
+      - the service rate in queueing theory
+      - the dynamic viscosity in physics
+      - magnetic permeability in electromagnetics
+      - a muon
+      - reduced mass
+      - chemical potential in condensed matter physics
+      - the ion mobility in plasma physics
+
+Νν (nu)
+
+:   ν represents:
+
+      - frequency in physics in hertz (Hz)
+      - Degrees of freedom in statistics
+      - Poisson's ratio in material science
+      - a neutrino
+      - kinematic viscosity of liquids
+      - stoichiometric coefficient in chemistry
+      - dimension of nullspace in mathematics
+
+Ξ ξ (xi)
+
+:   Ξ represents:
+
+      - the original Riemann Xi function, i.e. Riemann's lower case ξ, as
+        denoted by Edmund Landau and currently
+      - the grand canonical ensemble found in statistical mechanics
+      - a type of baryon
+      - ξ represents:
+      - the original Riemann Xi function
+      - the modified definition of Riemann xi function, as denoted by Edmund
+        Landau and currently
+      - a random variable
+      - the extent of a chemical reaction
+      - coherence length
+      - the damping ratio
+      - universal set
+      - Οο (omicron)[edit]
+
+    Ο represents:
+
+      - big O notation (may be represented by an uppercase Latin O)
+      - o represents:
+      - small o notation (may be represented by a lowercase Latin o)
+
+Π π (pi)
+
+:   Π represents:
+
+      - the product operator in mathematics
+      - a plane
+      - osmotic pressure
+      - π represents:
+      - Archimedes' constant, the ratio of a circle's circumference to its
+        diameter
+      - the prime-counting function
+      - profit in microeconomics and game theory
+      - inflation in macroeconomics, expressed as a constant with respect to
+        time
+      - the state distribution of a Markov chain
+      - a type of covalent bond in chemistry (pi bond)
+      - a pion (pi meson) in particle physics
+      - in statistics, the population proportion of success
+      - in electronics, a special type of small signal model is referred to as
+        a hybrid-pi model
+      - in relational algebra for databases, represents project
+
+    ϖ (a graphic variant, see pomega) represents:
+
+      - angular frequency of a wave, in fluid dynamics (angular frequency is
+        usually represented by \omega but this may be confused with vorticity
+        in a fluid dynamics context)
+      - longitude of pericenter, in celestial mechanics[5]
+      - comoving distance, in cosmology[6]
+
+Ρρ (rho)
+
+:   Ρ represents:
+
+      - one of the Gegenbauer functions in analytic number theory.
+
+    ρ represents:
+
+      - one of the Gegenbauer functions in analytic number theory.
+      - the Dickman-de Bruijn function
+      - the radius in a polar, cylindrical, or spherical coordinate system
+      - the correlation coefficient in statistics
+      - the sensitivity to interest rate in mathematical finance
+      - density (mass or charge per unit volume)
+      - resistivity
+      - the shape and reshape operators in APL (in the form ⍴)
+      - the utilization in queueing theory
+      - the rank of a matrix
+
+Σσ (sigma)
+
+:   Σ represents:
+
+      - the summation operator
+      - the covariance matrix
+      - the set of terminal symbols in a formal grammar
+
+    σ represents:
+
+      - Stefan–Boltzmann constant in blackbody radiation
+      - the divisor function in number theory
+      - the real part of the complex variable s = σ + i t in analytic number
+        theory
+      - the sign of a permutation in the theory of finite groups
+      - the population standard deviation, a measure of spread in probability
+        and statistics
+      - a type of covalent bond in chemistry (sigma bond)
+      - the selection operator in relational algebra
+      - stress in mechanics
+      - electrical conductivity
+      - area density
+      - nuclear cross section
+      - uncertainty
+      - utilization in operations management
+      - surface charge density for microparticles
+
+Ττ (tau)
+
+:   τ (lower-case) represents:
+
+      - an interval of time
+      - a mean lifetime
+      - torque, the rotational force in mechanics
+      - the elementary tau lepton in particle physics
+      - the lifetime of a spontaneous emission process
+      - the time constant of any device, such as an RC circuit
+      - proper time in relativity
+      - Kendall tau rank correlation coefficient, a measure of rank correlation
+        in statistics
+      - the golden ratio 1.618... (although φ (phi) is more common)
+      - Ramanujan's tau function in number theory
+      - in astronomy, a measure of opacity, or how much sunlight cannot
+        penetrate the atmosphere
+      - the intertwining operator in representation theory
+      - the tau in biochemistry, a protein associated to microtubules
+      - Shear stress in continuum mechanics
+      - the number of divisors of highly composite numbers (sequence A000005 in
+        OEIS)
+      - the prefix of many stars, via the Bayer stellar designation system
+      - an internal system step in transition systems
+      - a type variable in type theories, such as the simply typed lambda
+        calculus
+      - path tortuosity in reservoir engineering
+      - in Topology, a given topology
+      - a proposed name [7] for the mathematical constant of the ratio of a
+        circle's circumference to its radius, with value 2π (6.283...).
+
+Υυ (upsilon)
+
+:   Υ represents:
+
+      - an elementary particle
+      - υ represents:
+      - frequency in physics textbooks
+
+Φφ (phi)
+
+:   Φ represents:
+
+      - the work function in physics; the energy required by a photon to remove
+        an electron from the surface of a metal
+      - magnetic flux
+      - the cumulative distribution function of the normal distribution in
+        statistics
+      - phenyl functional group
+      - the reciprocal of the golden ratio (represented by φ, below), also
+        represented as 1/φ
+      - the value of the integration of information in a system (based on
+        Integrated Information Theory)
+      - note: a symbol for the empty set, \varnothing, resembles Φ but is not Φ
+
+    φ represents:
+
+      - the golden ratio 1.618... in mathematics, art, and architecture
+      - Euler's totient function in number theory
+      - a holomorphic map on an analytic space
+      - the argument of a complex number in mathematics
+      - the value of a plane angle in physics and mathematics
+      - the angle to the z axis in spherical coordinates (mathematics)
+      - the angle to the x axis in the xy-plane in spherical or cylindrical
+        coordinates (physics)
+      - latitude in geodesy
+      - a scalar field
+      - radiant flux
+      - electric potential
+      - the probability density function of the normal distribution in
+        statistics
+      - a feature of a syntactic node giving that node characteristics such as
+        gender, number and person in syntax
+      - the diameter of a vessel (engineering)
+
+Χχ (chi)
+
+:   χ represents:
+
+      - the chi distribution in statistics (χ^2 is the more frequently
+        encountered chi-squared distribution)
+      - the chromatic number of a graph in graph theory
+      - the Euler characteristic in algebraic topology
+      - electronegativity in the periodic table
+      - the Rabi frequency
+      - the spinor of a fundamental particle
+      - the Fourier transform of a linear response function
+      - a character in mathematics; especially a Dirichlet character in number
+        theory
+      - the Sigma vectors in the unscented transform used in the unscented
+        Kalman filter
+      - sometimes the mole fraction
+      - a characteristic or indicator function in mathematics
+
+Ψψ (psi)
+
+:   Ψ represents:
+
+      - water potential
+      - a quaternary combinator in combinatory logic
+
+    ψ represents:
+
+      - the wave function in the Schrödinger equation of quantum mechanics
+      - the stream function in fluid dynamics
+      - yaw angle in vehicle dynamics
+      - the angle between the x-axis and the tangent to the curve in the
+        intrinsic coordinates system
+      - the reciprocal Fibonacci constant
+      - the second Chebyshev function in number theory
+      - the polygamma function in mathematics
+
+Ω ω (omega)
+
+:   Ω represents:
+
+      - the Omega constant
+      - an asymptotic lower bound related to big O notation
+      - in probability theory and statistical mechanics, the set of possible
+        distinct system states
+      - the SI unit measure of electrical resistance, the ohm
+      - the rotation rate of an object, particularly a planet, in dynamics
+      - a solid angle
+      - a baryon
+      - the arithmetic function counting a number's prime factors
+      - the right ascension of the ascending node in celestial mechanics
+      - the density parameter in cosmology
+
+    ω represents:
+
+      - the first infinite ordinal
+      - the differentiability class (i.e. C^\omega) for functions that are
+        infinitely differentiable because they are complex analytic
+      - the set of natural numbers in set theory (although \mathbb{N} or N is
+        more common in other areas of mathematics)
+      - an asymptotically dominant quantity related to big O notation
+      - in probability theory, a possible outcome of an experiment
+      - angular velocity / radian frequency
+      - a complex cube root of unity — the other is ω² — (used to describe
+        various ways of calculating the discrete Fourier transform)
+      - vertical velocity in pressure-based coordinate systems (commonly used
+        in atmospheric dynamics)
+      - a meson
+      - the arithmetic function counting a number's distinct prime factors
+      - a differential form (esp. on an analytic space)
+      - the argument of periapsis in celestial mechanics
+      - the symbol ϖ, a graphic variant of π, is sometimes construed as omega
+        with a bar over it; see π
+
+Refs & See also
+
+:   * <https://en.wikipedia.org/wiki/Greek_alphabet>
+    * <https://en.wikipedia.org/wiki/Latin_alphabet>
+    * <http://www.greekgrammar.org>
+    * <http://www.skyandtelescope.com/astronomy-resources/stargazing-basics/the-greek-alphabet/>
+    * <https://en.wikipedia.org/wiki/Greek_letters_used_in_mathematics,_science,_and_engineering>
+    * <https://en.wikipedia.org/wiki/Mathematical_notation>
+    * <https://en.wikipedia.org/wiki/Notation_in_probability_and_statistics>
+    * <https://en.wikipedia.org/wiki/Latin_letters_used_in_mathematics>
+    * <https://en.wikipedia.org/wiki/List_of_logic_symbols>
 
 [alpha]: http://en.wikipedia.org/wiki/Alpha
 [beta]: http://en.wikipedia.org/wiki/Beta
@@ -2746,7 +2629,6 @@ alpha, beta, gamma, ..., omega, greek alphabet, latin alphabet
 [psi]: http://en.wikipedia.org/wiki/Psi_(letter)
 [omega]: http://en.wikipedia.org/wiki/Omega
 [stigma]: http://en.wikipedia.org/wiki/Stigma_(letter)
-
 [p-alpha]: http://gnat.qiniudn.com/%40%2Faudio%2Fgreek-alphabet%2Fgreek_alpha.mp3
 [p-beta]: http://gnat.qiniudn.com/%40%2Faudio%2Fgreek-alphabet%2Fgreek_beta.mp3
 [p-gamma]: http://gnat.qiniudn.com/%40%2Faudio%2Fgreek-alphabet%2Fgreek_gamma.mp3
@@ -2776,9 +2658,7 @@ alpha, beta, gamma, ..., omega, greek alphabet, latin alphabet
 ---
 
 * 政无安，九月常常杀一万
-* [Euler's Formula][eulers-formula]: `#Loop - #Edge + #Node = 0`
-[eulers-formula]: https://en.wikipedia.org/wiki/Euler_characteristic#Planar_graphs
-
+* [Euler's Formula](https://en.wikipedia.org/wiki/Euler_characteristic#Planar_graphs): `#Loop - #Edge + #Node = 0`
 
 矩阵的 Rank 是其基底（Group）的不变量，决定了
 能存储的信息量。如果 Rank = 0，意思是不能存储信息。
@@ -2791,113 +2671,108 @@ Det 是 Grand Metric 下的不变量。
 
 向量则是在 Base 下的衡量。如果向量为 0，即 “我知道我不知道”。
 
-
 群，是 Metric 的基础。
 
 ---
 
-# [4ker/SharedPainter](https://github.com/4ker/SharedPainter)
+[4ker/SharedPainter](https://github.com/4ker/SharedPainter)
 
-Goods
------
+:   Goods
 
-#. CSS 专门放到一个文件里
-#. namespace & class static functions
-#. `QFontComboBox`
-#. try... catch...
-#. `const_cast` & meta programming
-#. `QFrame` (Container Widget), `QTextEditor`
-#. UI 组件化
-#. pure virtual class
-#. `hover{Enter, leave}Event`
+    #. CSS 专门放到一个文件里
+    #. namespace & class static functions
+    #. `QFontComboBox`
+    #. try... catch...
+    #. `const_cast` & meta programming
+    #. `QFrame` (Container Widget), `QTextEditor`
+    #. UI 组件化
+    #. pure virtual class
+    #. `hover{Enter, leave}Event`
 
-Bads
-----
+    Bads
 
-#. too much license
-#. not work on my computer
-#. code is messy
-#. violate 80 char rule
+    #. too much license
+    #. not work on my computer
+    #. code is messy
+    #. violate 80 char rule
 
-Snippets
---------
+    Snippets
 
-```cpp
-clr_ = QColorDialog::getColor( clr_, this, tr("Pen Color"));
+    ```cpp
+    clr_ = QColorDialog::getColor( clr_, this, tr("Pen Color"));
 
-if( !clr_.isValid() )
-    return;
-
-
-class CS
-{
-#if defined(WIN32)
-private:
-	CRITICAL_SECTION m_lock;
-public:
-	CS() { ::InitializeCriticalSectionAndSpinCount( &m_lock, 4000 ); }
-	~CS() { ::DeleteCriticalSection( &m_lock ); }
-	void Lock() { ::EnterCriticalSection( &m_lock ); }
-	void Unlock() { ::LeaveCriticalSection( &m_lock ); }
-    ...
-};
-
-struct SPaintData
-{
-	double posX;
-	double posY;
-	double scale;
-	bool posSetFlag;
-	int itemId;
-	std::string owner;
-};
-
-void hoverEnterEvent( QGraphicsSceneHoverEvent * event )
-{
-    if( scene_->isFreePenMode() )
+    if( !clr_.isValid() )
         return;
 
-    scene_->setCursor( Qt::OpenHandCursor );
-}
+    class CS
+    {
+    #if defined(WIN32)
+    private:
+        CRITICAL_SECTION m_lock;
+    public:
+        CS() { ::InitializeCriticalSectionAndSpinCount( &m_lock, 4000 ); }
+        ~CS() { ::DeleteCriticalSection( &m_lock ); }
+        void Lock() { ::EnterCriticalSection( &m_lock ); }
+        void Unlock() { ::LeaveCriticalSection( &m_lock ); }
+        ...
+    };
+
+    struct SPaintData
+    {
+        double posX;
+        double posY;
+        double scale;
+        bool posSetFlag;
+        int itemId;
+        std::string owner;
+    };
+
+    void hoverEnterEvent( QGraphicsSceneHoverEvent * event )
+    {
+        if( scene_->isFreePenMode() )
+            return;
+
+        scene_->setCursor( Qt::OpenHandCursor );
+    }
 
 
-drawingItem->setFlags( QGraphicsItem::ItemIsMovable
-                     | QGraphicsItem::ItemIsFocusable
-                     | QGraphicsItem::ItemIsSelectable
-                     | QGraphicsItem::ItemSendsGeometryChanges );
-addItem( drawingItem );
+    drawingItem->setFlags( QGraphicsItem::ItemIsMovable
+                         | QGraphicsItem::ItemIsFocusable
+                         | QGraphicsItem::ItemIsSelectable
+                         | QGraphicsItem::ItemSendsGeometryChanges );
+    addItem( drawingItem );
 
-QString tooltip = eventTarget_->onICanvasViewEvent_GetToolTipText( this, item );
-if( tooltip.isEmpty() == false )
-    drawingItem->setToolTip( tooltip );
+    QString tooltip = eventTarget_->onICanvasViewEvent_GetToolTipText( this, item );
+    if( tooltip.isEmpty() == false )
+        drawingItem->setToolTip( tooltip );
 
+    QAbstractGraphicsShapeItem* i =
+        reinterpret_cast<QAbstractGraphicsShapeItem *>(lastAddItem_->drawingObject());
+    if( ! i )
+        return;
 
+    // setting style..
+    QPainterPath path = createCoveringBorderPath( lastItemBorderType_, i );
+    if ( path.isEmpty() )
+        return;
 
-QAbstractGraphicsShapeItem* i = reinterpret_cast<QAbstractGraphicsShapeItem *>(lastAddItem_->drawingObject());
-if( ! i )
-    return;
+    clearLastItemBorderRect();
 
-// setting style..
-QPainterPath path = createCoveringBorderPath( lastItemBorderType_, i );
-if ( path.isEmpty() )
-    return;
+    QAbstractGraphicsShapeItem* lastBorderItem = addPath( path );
+    lastBorderItem->setPen(
+            QPen( Util::getComplementaryColor(backgroundColor_, penColor() ), 2) );
+    lastBorderItem->setZValue( currentZValue() );
+    lastCoverGraphicsItem_ = lastBorderItem;
 
-clearLastItemBorderRect();
+    void CSharedPainterScene::clearBackgroundImage( void )
+    {
+        backgroundImageItem_ = boost::shared_ptr<CBackgroundImageItem>();
+        backgroundPixmap_ = QPixmap();
+        resetBackground( sceneRect() );
+    }
+    ```
 
-QAbstractGraphicsShapeItem* lastBorderItem = addPath( path );
-lastBorderItem->setPen( QPen( Util::getComplementaryColor(backgroundColor_, penColor() ), 2) );
-lastBorderItem->setZValue( currentZValue() );
-lastCoverGraphicsItem_ = lastBorderItem;
-
-
-void CSharedPainterScene::clearBackgroundImage( void )
-{
-    backgroundImageItem_ = boost::shared_ptr<CBackgroundImageItem>();
-    backgroundPixmap_ = QPixmap();
-    resetBackground( sceneRect() );
-}
-```
-
+---
 
 * [Blaise Pascal](http://en.wikipedia.org/wiki/Blaise_Pascal)
 
@@ -2956,7 +2831,6 @@ A \quad is a space equal to the current font size. So, if you are using an 11pt 
 感悟：
 
 - 结论很有意思，证明过程更有意思。记住结论往往不能记忆深刻，了解了证明的过程，记住一两个要点，就能把整条线拎清楚。
-
 
 ---
 
@@ -3309,60 +3183,61 @@ Unix 的目的不是为了学习而是为了使用。”为了达到使用 Unix 
 
 Helpful aliases for common git tasks
 
-- `g` - `git`
-- `gst` - `git status`
-- `gl` - `git pull`
-- `gup` - `git pull --rebase`
-- `gp` - `git push`
-- `gd` - `git diff`
-- `gdc` - `git diff --cached`
-- `gdv` - `git diff -w "$@" | view -`
-- `gc` - `git commit -v`
-- `gcR` - `git commit -v --amend`
-- `gca` - `git commit -v -a`
-- `gcaR` - `git commit -v -a --amend`
-- `gcmsg` - `git commit -m`
-- `gco` - `git checkout`
-- `gcm` - `git checkout master`
-- `gr` - `git remote`
-- `grv` - `git remote -v`
-- `grmv` - `git remote rename`
-- `grrm` - `git remote remove`
-- `gsetr` - `git remote set-url`
-- `grup` - `git remote update`
-- `grbi` - `git rebase -i`
-- `grbc` - `git rebase --continue`
-- `grba` - `git rebase --abort`
-- `gb` - `git branch`
-- `gba` - `git branch -a`
-- `gcount` - `git shortlog -sn`
-- `gcl` - `git config --list`
-- `gcp` - `git cherry-pick`
-- `glg` - `git log --stat --max-count=10`
-- `glgg` - `git log --graph --max-count=10`
-- `glgga` - `git log --graph --decorate --all`
-- `glo` - `git log --oneline --decorate --color`
-- `glog` - `git log --oneline --decorate --color --graph`
-- `gss` - `git status -s`
-- `ga` - `git add`
-- `gm` - `git merge`
-- `grh` - `git reset HEAD`
-- `grhh` - `git reset HEAD --hard`
-- `gclean` - `git reset --hard && git clean -dfx`
-- `gwc` - `git whatchanged -p --abbrev-commit --pretty=medium`
-- `gsts` - `git stash show --text`
-- `gsta` - `git stash`
-- `gstp` - `git stash pop`
-- `gstd` - `git stash drop`
-- `ggpull` - `git pull origin $(current_branch)`
-- `ggpur` - `git pull --rebase origin $(current_branch)`
-- `ggpush` - `git push origin $(current_branch)`
-- `ggpnp` - `git pull origin $(current_branch) && git push origin $(current_branch)`
-- `glp` - `_git_log_prettily`
+- `g` - `git`{.bash}
+- `gst` - `git status`{.bash}
+- `gl` - `git pull`{.bash}
+- `gup` - `git pull --rebase`{.bash}
+- `gp` - `git push`{.bash}
+- `gd` - `git diff`{.bash}
+- `gdc` - `git diff --cached`{.bash}
+- `gdv` - `git diff -w "$@" | view -`{.bash}
+- `gc` - `git commit -v`{.bash}
+- `gcR` - `git commit -v --amend`{.bash}
+- `gca` - `git commit -v -a`{.bash}
+- `gcaR` - `git commit -v -a --amend`{.bash}
+- `gcmsg` - `git commit -m`{.bash}
+- `gco` - `git checkout`{.bash}
+- `gcm` - `git checkout master`{.bash}
+- `gr` - `git remote`{.bash}
+- `grv` - `git remote -v`{.bash}
+- `grmv` - `git remote rename`{.bash}
+- `grrm` - `git remote remove`{.bash}
+- `gsetr` - `git remote set-url`{.bash}
+- `grup` - `git remote update`{.bash}
+- `grbi` - `git rebase -i`{.bash}
+- `grbc` - `git rebase --continue`{.bash}
+- `grba` - `git rebase --abort`{.bash}
+- `gb` - `git branch`{.bash}
+- `gba` - `git branch -a`{.bash}
+- `gcount` - `git shortlog -sn`{.bash}
+- `gcl` - `git config --list`{.bash}
+- `gcp` - `git cherry-pick`{.bash}
+- `glg` - `git log --stat --max-count=10`{.bash}
+- `glgg` - `git log --graph --max-count=10`{.bash}
+- `glgga` - `git log --graph --decorate --all`{.bash}
+- `glo` - `git log --oneline --decorate --color`{.bash}
+- `glog` - `git log --oneline --decorate --color --graph`{.bash}
+- `gss` - `git status -s`{.bash}
+- `ga` - `git add`{.bash}
+- `gm` - `git merge`{.bash}
+- `grh` - `git reset HEAD`{.bash}
+- `grhh` - `git reset HEAD --hard`{.bash}
+- `gclean` - `git reset --hard && git clean -dfx`{.bash}
+- `gwc` - `git whatchanged -p --abbrev-commit --pretty=medium`{.bash}
+- `gsts` - `git stash show --text`{.bash}
+- `gsta` - `git stash`{.bash}
+- `gstp` - `git stash pop`{.bash}
+- `gstd` - `git stash drop`{.bash}
+- `ggpull` - `git pull origin $(current_branch)`{.bash}
+- `ggpur` - `git pull --rebase origin $(current_branch)`{.bash}
+- `ggpush` - `git push origin $(current_branch)`{.bash}
+- `ggpnp` - `git pull origin $(current_branch) && git push origin $(current_branch)`{.bash}
+- `glp` - `git log prettily`{.bash}
 
-* `extract`{.bash} 'x' alias - swiss knife for archive extracting
+---
 
-* what the fuck barbecue = WTFBBQ
+- what the fuck barbecue = WTFBBQ
+- `extract`{.bash} 'x' alias - swiss knife for archive extracting
 
 ---
 
@@ -4874,9 +4749,9 @@ you flinched!
 - [莲枝专栏–来作笔记吧。 | LaTeX工作室](http://www.latexstudio.net/archives/4898)
 - [乌普萨拉大学的科技海报主题模板 | LaTeX工作室](http://www.latexstudio.net/archives/3012)
 
-真爱其实叫牺牲—献给永远的鼬 (by zak)
+真爱其实叫牺牲 -- 给永远的鼬 (by zak)
 
-:   ```plain
+:   ```tzx-bigquote
     修罗之道是什么,它通往何方?在火影忍者中,有如此一人,他便在此道上踏歌而行.在他
     之后,留下了无尽之血与泪水；在他前方,只有看不见尽头的黑暗；而他红中泛黑的双
     瞳中,映射出了太多的死亡与破灭。
@@ -4938,9 +4813,9 @@ you flinched!
     最后一次了
     ```
 
-是命运么，教我如何相信——写给鸣人和佐助 (by zak)
+是命运么，教我如何相信 -- 写给鸣人和佐助 (by zak)
 
-:   ```plain
+:   ```tzx-bigquote
     一个伴随了我们十年之久的故事，一种在爱与恨中挣扎却无比坚毅的成长，一段用努
     力和汗水去赢得认可的历程。火影的故事就这样铺陈开来，伴随着我们流逝的青春，
     刻下磨不灭的印记。
@@ -5360,19 +5235,19 @@ if __name__ == '__main__':
 
 **Three Virtues**
 
-According to Larry Wall, the original author of the Perl programming
-language, there are three great virtues of a programmer; Laziness,
-Impatience and Hubris:
+:   According to Larry Wall, the original author of the Perl programming
+    language, there are three great virtues of a programmer; Laziness,
+    Impatience and Hubris:
 
-  * **Laziness**: The quality that makes you go to great effort to reduce
-    overall energy expenditure. It makes you write labor-saving programs
-    that other people will find useful and document what you wrote so you
-    don't have to answer so many questions about it.
-  * **Impatience**: The anger you feel when the computer is being lazy. This
-    makes you write programs that don't just react to your needs, but
-    actually anticipate them. Or at least pretend to.
-  * **Hubris**: The quality that makes you write (and maintain) programs that
-    other people won't want to say bad things about.
+      - **Laziness**: The quality that makes you go to great effort to reduce
+        overall energy expenditure. It makes you write labor-saving programs
+        that other people will find useful and document what you wrote so you
+        don't have to answer so many questions about it.
+      - **Impatience**: The anger you feel when the computer is being lazy.
+        This makes you write programs that don't just react to your needs, but
+        actually anticipate them. Or at least pretend to.
+      - **Hubris**: The quality that makes you write (and maintain) programs
+        that other people won't want to say bad things about.
 
 ---
 
