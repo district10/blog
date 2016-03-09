@@ -10,9 +10,94 @@ var tzx_link_prefix = 'http://tangzx.qiniudn.com';
 // format: [{url: ..., title: ..., query: ...}, ...]
 var tzx_links = [
     {
-        url: '/post-0001-pandoc-readme.html',
-        title: "Pandoc User's Guide",
-        query: ['pandoc', 'doc', 'guide']
+        url: '/404.html',
+        title: "404 Page",
+        query: ['page', 'tag']
+    },
+    {
+        url: '/about.html',
+        title: "About | 关于",
+        query: ['page', 'tag']
+    },
+    {
+        url: '/days.html',
+        title: "Day In and Day Out | 我们的生活不可能那么日常",
+        query: ['page', 'tag', 'gtd', 'diary']
+    },
+    {
+        url: '/dents.html',
+        title: "Dents | 乱象",
+        query: ['page', 'tag']
+    },
+    {
+        url: '/douban.html',
+        title: "Bovie | 书影",
+        query: ['page', 'tag', 'book', 'movie', 'douban']
+    },
+    {
+        url: '/friends.html',
+        title: "Friends | 友链",
+        query: ['page', 'tag', 'friends']
+    },
+    {
+        url: '/fun.html',
+        title: "Fun | 逗我呢？",
+        query: ['page', 'tag', 'fun', 'funny']
+    },
+    {
+        url: '/koans.html',
+        title: "Koans | 呓语",
+        query: ['page', 'tag']
+    },
+    {
+        url: '/links.html',
+        title: "Links | 链签",
+        query: ['page', 'tag', 'bookmark']
+    },
+    {
+        url: '/notes.html',
+        title: "Reads | 斋读",
+        query: ['page', 'tag']
+    },
+    {
+        url: '/notes.html',
+        title: "Notes | 笔记",
+        query: ['page', 'tag', 'note']
+    },
+    {
+        url: '/notice.html',
+        title: "Notice | 公告",
+        query: ['page', 'tag', 'notice']
+    },
+    {
+        url: '/orgit.html',
+        title: "Orgit | 唐凤",
+        query: ['page', 'tag', 'org-mode', 'emacs']
+    },
+    {
+        url: '/poems.html',
+        title: "Poems | 诗",
+        query: ['page', 'tag', 'poem']
+    },
+    {
+        url: '/quotes.html',
+        title: "Quotes | 言论",
+        query: ['page', 'tag', 'quote']
+    },
+    {
+        url: '/reads.html',
+        title: "Reads | 斋读",
+        query: ['page', 'tag']
+    },
+    {
+        url: '/typing.html',
+        title: "Typing | 打字",
+        query: ['page', 'tag', 'typing']
+    },
+    {
+        url: '/xiami.html',
+        title: "Music | 乐音",
+        query: ['page', 'tag', 'music', 'xiami']
     },
     {
         url: '/post-0002-how-to-make-this-blog.html',
@@ -445,8 +530,8 @@ var tzx_links = [
         query: ['leet-code', 'code', 'programming', 'algorithms']
     },
     {
-        url: '/post-0088-font-awesome.html',
-        title: "Font Awesome",
-        query: ['font-awesome', 'font', 'web', 'guide']
+        url: '/post-0089-kaggle.html',
+        title: "Kaggle",
+        query: ['kaggle', 'competition', 'data-science', 'data-mining']
     },
 ];

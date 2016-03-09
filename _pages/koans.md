@@ -13,6 +13,10 @@ code.tzx-timestamp {
 
 <div class="koans"><!-- 下面要有空行 | One Empty Line Reserved Below -->
 
+## `1457442269`{.tzx-timestamp} 搞定时间戳！
+
+咋那么难！（2016/03/08, 21:05）
+
 ## `1457153290`{.tzx-timestamp} Colm Wilkinson
 
 在看电影版的 Les Miserable，听到主角 Bishop 的声音就觉得特别熟，一看脸就觉得像
@@ -338,7 +342,9 @@ See <https://www.zhihu.com/question/39523371/answer/82085727>
 
 ## `1453173203`{.tzx-timestamp} 蟹煲饭，呵呵，蟹煲饭
 
+<!--
 似乎最近所有的女人都想去吃蟹煲饭，呵呵，呵呵呵。和师姐约饭这件事，让我特别不爽。
+-->
 全文引用【饱醉豚】的一篇文章《生活方式》：
 
 > 我厌恶所有需要排队等候的餐厅。无论那餐厅名声如何显赫，无论他们的菜肴多么精美
@@ -399,8 +405,10 @@ See <https://www.zhihu.com/question/39523371/answer/82085727>
 
 ## `1452942694`{.tzx-timestamp} 中文网站无中文
 
-完全不知道为什么……你们定位是国外用户？也没感觉到啊。那为毛主界面上一个中文都没有！
-作为一个说过“中文毁三代”，“我才不会用中文玷污自己的代码”的男人，我都无法理解了。
+~~完全不知道为什么……你们定位是国外用户？也没感觉到啊。那为毛主界面上一个中文都没有！
+作为一个说过“中文毁三代”，“我才不会用中文玷污自己的代码”的男人，我都无法理解了。~~
+
+是我自己电脑设置的问题。
 
 <!--
 ## 1452685079: 我不相信他
@@ -474,7 +482,7 @@ iPhone 的价值当然不能用原材料算。在它的设计、制造、运输�
 
 其实我觉得不好看。比如这个：[冷知识 - 热门问答 - 知乎@Gnat采集到Mark(83图)_花瓣](http://huaban.com/pins/567722582/)
 
-![](http://img.hb.aicdn.com/776714f39358fc6512d0cc21ea57c77e983b2bc26b1a-5Fucnj_fw658)
+![](http://whudoc.qiniudn.com/shit-scripting.jpg)
 
 真是丑死了！外，为什么小写字母要被人发明出来？全用大写不好吗？
 就是因为小写字母有高低起伏，更够让人更快地辨识，这个蛋疼的手写体，
@@ -531,6 +539,17 @@ void doSomething( status_t *currentStatus ) {
 
 这是一种互相的遗憾。
 
+找了一下：
+
+> 我终于来到亲生母亲的家了，但是她不肯见我，佣人说她已经不住这里了。当我离开这
+> 房子的时候，我知道身后有一双眼睛盯着我，但我是一定不会回头的。我只不过想见见
+> 她，看看她的样子，既然她不给我机会，我也一定不会给她机会。
+
+> By the time when I left this house, I knew that there was someone behind
+> starring at me. Though I wouldn't come back anymore, I just want to see her
+> for once, To look at her face. Since she doesn't give me a chance, I won't
+> give her such a chance.
+
 ## `1451032030`{.tzx-timestamp} 又是英语竞赛
 
 本科的时候，每次我都信誓旦旦地说这次不要被 ZYX 同学虐，结果每次都别虐。失败我是
@@ -559,7 +578,7 @@ void doSomething( status_t *currentStatus ) {
 很多人喜欢“龙母” Daenerys Targaryen（Emilia Clarke），但我觉得她并不好看[^eastface]。她还在《终结者 5》饰演了 Sarah Connor，同样，我也不喜欢。
 Game of Throne 里面我喜欢的是 Rose Leslie 饰演的 Ygritte（老拼不对，这次我要记住！），如下图：
 
-[^eastface]: 如果喜欢东西方混合的美，就去看 Rosamund Pike，然而，同样我并不觉得她有那么美。
+[^eastface]: 如果喜欢东西方混合的美，就去看 [Rosamund Pike](http://www.imdb.com/name/nm0683253/?ref_=tt_cl_t2)，然而，同样我并不觉得她有那么美。
 
 ![](http://whudoc.qiniudn.com/ygritte.jpg)
 
@@ -1861,7 +1880,7 @@ Albert Einstein:
 [Voronoi Tessellation](http://bl.ocks.org/mbostock/4060366)
 
 <!--
-FireFox: Blocked by Content Security Policy.
+Firefox: Blocked by Content Security Policy.
 <iframe src="http://bl.ocks.org/mbostock/raw/4060366/" width="1000" height="560"></iframe>
 -->
 
@@ -1881,11 +1900,14 @@ FireFox: Blocked by Content Security Policy.
 <script>
 var tss = document.getElementsByClassName('tzx-timestamp');
 for( var i = 0; i < tss.length; ++i ) {
-    var ts = new Number( tss[i].innerHTML );
-    var day = moment(ts);
-    var text = day.format("HH:mm:ss");
-    var tooltip = day.format("YYYY-MM-DD HH:mm:ss");
-    tss[i].innerHTML = day.format(); // text;
+    var _tss = tss[i].innerHTML;
+    var ts = new Number( _tss );
+    var dt = moment(ts*1000);
+    var time = dt.format("YYYY/MM/DD HH:mm");
+    // var gdt = dt.format(); // global date time
+    var pdt = dt.format("YYYY-MM-DD HH:mm:ss"); // pretty date time
+    var tooltip = _tss + ': ' + pdt;
+    tss[i].innerHTML = time;
     tss[i].setAttribute( 'title', tooltip );
 }
 </script>

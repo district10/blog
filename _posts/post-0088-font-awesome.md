@@ -107,6 +107,11 @@ Use a few of the new styles together ... lots of new possibilities.
 
 <div class="shake-crazy shake-freeze">`<div class="shake-crazy shake-freeze"></div>`{.html}</div>
 
+
+<button class='fa fa-plus icon-plus btn btn-xs btn-default'></button>
+
+---
+
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="jquery-ui.min.js"></script>
 <script>

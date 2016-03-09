@@ -11,6 +11,7 @@ or <http://blog.tangzhixiong.com>
 * [ ] 优化 CSS
 * [ ] 把自己原来的文章慢慢都放到这个 blog 上
 * [ ] 安利！
+* [ ] [zenorocha/clipboard.js: Modern copy to clipboard. No Flash. Just 2kb](https://github.com/zenorocha/clipboard.js/)
 
 ## Warning
 

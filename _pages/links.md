@@ -12,7 +12,6 @@ Links | 链签
 #. [Acronymify! - Automatically generate fun acronyms for your project](http://acronymify.com/) %project-name
 #. [Alll Cheat Sheets in One Page](http://www.cheat-sheets.org/)
 #. [BeeBEEP (Secure Lan Messenger)](http://beebeep.sourceforge.net/)
-#. [Emacs Redux](http://emacsredux.com/blog/archives/) `emacs` `prelude`
 #. [Blog – Yanran's Attic](http://yanran.li/)
 #. [Browse Art - DeviantArt](http://www.deviantart.com/browse/all/)
 #. [CVPR 2015 Accepted Papers](http://cs.stanford.edu/people/karpathy/cvpr2015papers/)
@@ -22,6 +21,7 @@ Links | 链签
 #. [Dmitrijs Milajevs Reading List](http://www.eecs.qmul.ac.uk/~dm303/pages/reading-list.html) `scientific` `reading list`
 #. [DuckDuckGo](http://www.duckduckgo.com) `search engine`
 #. [Easyicon - Search 500,000+ (PNG,ICO,ICNS) free icons, desktop icons, icons Download.](http://www.easyicon.net/) `icon`
+#. [Emacs Redux](http://emacsredux.com/blog/archives/) `emacs` `prelude`
 #. [Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen) `osg`
 #. [English as a Second Language Podcast](http://www.eslpod.com/website/index.php)
 #. [Fabrice Bellard's Home Page](http://bellard.org/) `hacker`
@@ -37,6 +37,7 @@ Links | 链签
 #. [Home - 阳志平的网志](http://www.yangzhiping.com/) `blog`
 #. [IEEE Xplore Digital Library](http://ieeexplore.ieee.org/Xplore/home.jsp?reload=true) `papers` `scientific`
 #. [IPN (Intelligent Podcast Network)](http://ipn.li/) `podcast`
+#. [Index of /rfc/PDF](http://ietfreport.isoc.org/rfc/PDF/)
 #. [JSONiq - The JSON Query Language](http://jsoniq.org/) `programming`
 #. [Jacky Liu's Blog](http://bluegene8210.is-programmer.com/)
 #. [Jacob Kaplan-Moss](https://jacobian.org/)
@@ -55,8 +56,8 @@ Links | 链签
 #. [Microsoft Academic Search](http://libra.msra.cn/) `search engine`
 #. [Microsoft Project Oxford Home](https://www.projectoxford.ai/) `microsoft`
 #. [Milo Yip - 博客园](http://www.cnblogs.com/miloyip/) `blog`
-#. [包昊军的博客 | baohaojun](http://baohaojun.github.io/blog/2011/12/23/index.html) `blog`
 #. [OpenJudge - 百练 - 首页](http://www.bailian.openjudge.cn/) `leetcode` `oj`
+#. [PDF conversion of IETF documents](http://tools.ietf.org/pdf/usage.shtml)
 #. [Pretty Diff - The difference tool](http://prettydiff.com/)
 #. [Pro Git读书笔记 - Kelvin的胡言乱语](http://kelvinh.github.io/wiki/progit/)
 #. [ProcessOn - Create diagrams online in real-time!](https://www.processon.com/tour)
@@ -64,6 +65,7 @@ Links | 链签
 #. [Project Tuva: Enhanced Video Player Home - Microsoft Research](http://research.microsoft.com/apps/tools/tuva/index.html#data=2%7C%7C%7C)
 #. [Publishing Org-mode files to HTML](http://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html)
 #. [QQ群关系可视化查询 每一个被GFW的网站都是一个伟大的网站](https://qqgroup.insight-labs.org/)
+#. [RFC Reader - An online reader for IETF RFCs](http://www.rfcreader.com/)
 #. [Ratings and Reviews for CPAN - cpanratings](http://cpanratings.perl.org/)
 #. [Reading List « Deep Learning](http://deeplearning.net/reading-list/)
 #. [Reborn - Again And Again](http://xiaolai.li/)
@@ -76,6 +78,7 @@ Links | 链签
 #. [Semantic Scholar](https://www.semanticscholar.org/)
 #. [Shark Machine Learning Library](http://image.diku.dk/shark/)
 #. [Slim Wallets | Minimalist Wallets | Thread Wallets](https://www.threadwallets.com/)
+#. [Speaker Deck - Share Presentations without the Mess](https://speakerdeck.com/)
 #. [Table of Contents](http://tuhdo.github.io/index.html)
 #. [Tao Bao UED](http://ued.taobao.com/blog/about-us/) `ui` `ue`
 #. [Teahour.fm](http://teahour.fm/)
@@ -121,6 +124,7 @@ Links | 链签
 #. [云风的 BLOG](http://blog.codingnow.com/)
 #. [依云's Blog](http://lilydjwg.is-programmer.com/)
 #. [内核恐慌 — IPN 出品](http://ipn.li/kernelpanic/)
+#. [包昊军的博客 | baohaojun](http://baohaojun.github.io/blog/2011/12/23/index.html) `blog`
 #. [博客文章索引 - ☆Ronny丶 - 博客园](http://www.cnblogs.com/ronny/p/index.html)
 #. [号码归属地查询_服务与支持_中国移动通信](http://www.10086.cn/support/selfservice/ownership/)
 #. [大鹏志](http://dapengde.com/)
@@ -157,9 +161,3 @@ Links | 链签
 #. [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
 #. [首页 » 张鑫旭-鑫空间-鑫生活](http://www.zhangxinxu.com/)
 #. [黄正华的教学信息页面](http://aff.whu.edu.cn/huangzh/)
-
-
-http://tools.ietf.org/pdf/usage.shtml
-http://www.rfcreader.com/
-http://ietfreport.isoc.org/rfc/PDF/
-

@@ -46,7 +46,7 @@ img {
 * EP.6 Tyrion: I have a Family
 * EP.7 Ygritte: You Know Nothing, Jon Snow
 
-Plan: EP.4 (&#x2611) -> EP.5 (&#x2610)-> EP.6 (&#x2610)-> EP.1 (&#x2610)-> EP.2 (&#x2610)-> EP.3 (&#x2610)-> EP.7 (&#x2610)
+Plan: EP.4 (&#x2611;) -> EP.5 (&#x2610;)-> EP.6 (&#x2610;)-> EP.1 (&#x2610;)-> EP.2 (&#x2610;)-> EP.3 (&#x2610;)-> EP.7 (&#x2610;)
 
 TODO: 自己写这里的介绍文字。
 

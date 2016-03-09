@@ -27,7 +27,7 @@ function dvorak4tzx( pathParts ) {
     filename = pathParts[ pathParts.length - 1 ];
     basename = filename.split('.')[0];
 
-    if ( 'index' === basename.substring(0, 5) || document.location.endsWith('.com') ) {
+    if ( 'index' === basename.substring(0, 5) || document.location.toString().endsWith('.com') ) {
         mdPath   = basePath;
         rawPath  = mdPath;
     } else if ( 'post-' === basename.substring(0, 5) ) {

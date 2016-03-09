@@ -17,19 +17,22 @@ pre {
 </style>
 
 <div class="tzx-tabs">
-* [Leet Code Intro](#tab11)
+* [Kaggle Intro](#p0line20)
 * [Prizes](#p31line21)
 * [Evaluation](#p60line34)
 * [Competition Rules](#p31line42)
-* [Other Useful Information](#p26line24)
+* [Other Useful Info](#p26line24)
 
-<div id="tab11">
-LeetCode OJ is a platform for preparing technical coding interviews. Pick from
-an expanding library of more than 190 questions, code and submit your solution
-to see if you have solved it correctly. It is that easy!
+<div id="p0line20">
+Kaggle is the world's largest community of data scientists. They compete with
+each other to solve complex data science problems, and the top competitors are
+invited to work on the most interesting and sensitive business problems from
+some of the world’s biggest companies through Masters competitions.
 
-Our platform currently supports a total of 9 languages: C, C++, Java, Python,
-C#, JavaScript, Ruby, Bash, MySQL.
+Kaggle provides cutting-edge data science results to companies of all sizes. We
+have a proven track-record of solving real-world problems across a diverse
+array of industries including life sciences, financial services, energy,
+information technology, and retail.
 </div>
 
 <div id="p31line21">
@@ -68,7 +71,8 @@ leaderboard.
 
 <div id="p31line42">
 * One account per participant: no private sharing outside teams
-* Privately sharing code or data outside of teams is not permitted. It's okay to share code if made available to all participants on the forums.
+* Privately sharing code or data outside of teams is not permitted. It's okay
+  to share code if made available to all participants on the forums.
 * Team Mergers: yeah, we can merge teams
 * Team Limits: nil
 * Submission Limits@ 10 entries/day, up to 5 final sumbissions for judging
@@ -82,6 +86,12 @@ leaderboard.
 
 ---
 
+Tutorials
+
+#. <http://nbviewer.jupyter.org/github/agconti/kaggle-titanic/blob/master/Titanic.ipynb>
+#. <http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb>
+#. <http://nbviewer.jupyter.org/github/agconti/BlueBook/blob/master/BlueBook.ipynb>
+
 <!--
 <div class="tzx-tabs">
 * [](#)
@@ -94,6 +104,53 @@ leaderboard.
 ~~~
 </div>
 -->
+
+Notes
+-----
+
+Let $(x1, x2, …, xn)$ be an independent and identically distributed sample
+drawn from some distribution with an unknown density $ƒ$. We are interested in
+estimating the shape of this function $ƒ$. Its kernel density estimator is
+
+$$\hat{f}_h(x) = \frac{1}{n}\sum_{i=1}^n K_h (x - x_i) = \frac{1}{nh} \sum_{i=1}^n K\Big(\frac{x-x_i}{h}\Big), $$
+
+![Kernel density estimation of 100 normally distributed random numbers using
+    different smoothing bandwidths.](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Kernel_density.svg/375px-Kernel_density.svg.png)
+
+where $K(•)$ is the kernel — a non-negative function that integrates to one and
+has mean zero — and h > 0 is a smoothing parameter called the bandwidth. A
+kernel with subscript h is called the scaled kernel and defined as $Kh(x) = 1/h K(x/h)$.
+Intuitively one wants to choose h as small as the data allow, however
+there is always a trade-off between the bias of the estimator and its variance;
+more on the choice of bandwidth below.
+
+![Comparison of the histogram (left) and kernel density estimate (right)
+    constructed using the same data. The 6 individual kernels are the red
+    dashed curves, the kernel density estimate the blue curves. The data points
+    are the rug plot on the horizontal axis.](https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Comparison_of_1D_histogram_and_KDE.png/750px-Comparison_of_1D_histogram_and_KDE.png)
+
+TODO
+----
+
+#. [hrojas / Learn Pandas — Bitbucket](https://bitbucket.org/hrojas/learn-pandas)
+#. [Learn Pandas 01](http://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/01%20-%20Lesson.ipynb)
+#. [Learn Pandas 02](http://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/02%20-%20Lesson.ipynb)
+#. [Learn Pandas 03](http://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/03%20-%20Lesson.ipynb)
+#. [Learn Pandas 04](http://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/04%20-%20Lesson.ipynb)
+#. [Learn Pandas 05](http://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/05%20-%20Lesson.ipynb)
+#. [Learn Pandas 06](http://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/06%20-%20Lesson.ipynb)
+#. [Learn Pandas 07](http://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/07%20-%20Lesson.ipynb)
+#. [Learn Pandas 08](http://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/08%20-%20Lesson.ipynb)
+#. [Learn Pandas 09](http://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/09%20-%20Lesson.ipynb)
+#. [Learn Pandas 10](http://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/10%20-%20Lesson.ipynb)
+#. [Learn Pandas 11](http://nbviewer.jupyter.org/urls/bitbucket.org/hrojas/learn-pandas/raw/master/lessons/11%20-%20Lesson.ipynb)
+#. [Pandas Bootcamp](https://pandasbootcamp.herokuapp.com/)
+
+---
+
+Refs
+
+#. [Kernel density estimation - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Kernel_density_estimation)
 
 ---
 
