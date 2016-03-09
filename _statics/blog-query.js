@@ -530,6 +530,11 @@ var tzx_links = [
         query: ['leet-code', 'code', 'programming', 'algorithms']
     },
     {
+        url: '/post-0088-font-awesome.html',
+        title: "Font Awesome",
+        query: ['awesome', 'font', 'ui-ux']
+    },
+    {
         url: '/post-0089-kaggle.html',
         title: "Kaggle",
         query: ['kaggle', 'competition', 'data-science', 'data-mining']
