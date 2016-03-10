@@ -3,18 +3,13 @@ PAGES=_pages
 POSTS=_posts
 STATICS=_statics
 LYRICS=_miscs/lyrics
-AG=_ag.sh
 IDXPG=$(PODIR)/index.html
-IDXPG2=$(PODIR)/index2.html
-GENIDX=_bin/posts_index.sh
-GENIDX2=_bin/posts_index2.sh
+SITEMAP=$(PODIR)/sitemap.html
 
 all: pages posts statics lyrics $(IDXPG)
-pages posts statics lyrics: $(PODIR) EXE footer.html
+pages posts statics lyrics: $(PODIR) footer.html
 $(PODIR):
 	mkdir -p $(PODIR)
-EXE:
-	chmod +x _bin/*.sh
 
 gh: github
 github:
@@ -43,18 +38,21 @@ pages:
 i: index
 index: $(IDXPG)
 $(IDXPG): index.md
-	$(GENIDX) $@
+	pandoc -S -s --ascii -c main.css -A footer.html \
+		-f markdown $^ -o $@
 
-ri: removeindex
-removeindex:
-	rm -f $(PODIR)/index.html
+rmi: rmindex
+rmindex:
+	rm -f $(IDXPG)
 
-i2:
-	$(GENIDX2) $(IDXPG2)
+sm: sitemap
+sitemap: $(SITEMAP)
+$(SITEMAP): 
+	sh sitemap.sh $@
 
-ri2: removeindex2
-removeindex2:
-	rm -f $(IDXPG2)
+rmsm: rmsitemap
+rmsitemap:
+	rm -f $(SITEMAP)
 
 EDITS = \
 		_pages/notes.md \
@@ -81,7 +79,7 @@ cpgs: cleanPages
 cleanPages:
 	$(MAKE) -C $(PAGES) clean
 
-cpts: cleanPosts    
+cpts: cleanPosts
 cleanPosts:
 	$(MAKE) -C $(POSTS) clean
 
@@ -89,14 +87,15 @@ clrc: cleanLyrics
 cleanLyrics:
 	$(MAKE) -C $(LYRICS) clean
 
-rm: clean
+rm: clall
+clall: clean
 clean:
 	rm -f $(PODIR)/*
 
 # write
 k: koan
 koan:
-	date +%s | clip
+	$(date +%s | clip)
 	$(EDITOR) _pages/koans.md
 
 n: note
@@ -118,9 +117,11 @@ about:
 bq: blogquery
 blogquery:
 	$(EDITOR) $(STATICS)/blog-query.js
+
 c: css
 css:
 	$(EDITOR) $(STATICS)/main.css
+
 j: js
 js:
 	$(EDITOR) $(STATICS)/main.js
