@@ -12,6 +12,12 @@ V/\n#. ?kbzf
 
 <div class="reads">
 
+- [The Perltidy Home Page](http://perltidy.sourceforge.net/)
+- [C-C++ Beautifier HOW-TO](http://www.faqs.org/docs/Linux-HOWTO/C-C++Beautifier-HOWTO.html)
+- [ClangFormat — Clang 3.9 documentation](http://clang.llvm.org/docs/ClangFormat.html)
+[Artistic Style - Index](http://astyle.sourceforge.net/)
+[Chiel92/vim-autoformat: Provide easy code formatting in Vim by integrating existing code formatters.](https://github.com/Chiel92/vim-autoformat)
+
 #. &#x2610; [jquery - Auto-size dynamic text to fill fixed size container - Stack Overflow](http://stackoverflow.com/questions/687998/auto-size-dynamic-text-to-fill-fixed-size-container)
 #. &#x2610; [Reference Counted Objects in OSG and Producer](http://www.andesengineering.com/OSG_ProducerArticles/RefPointers/RefPointers.html)
 #. &#x2610; [qt+osg+vs2008中(msvcr90.dll) 处最可能的异常: 0xC0000005的问题解决 - xhcumt的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/xhcumt/article/details/4779040)
