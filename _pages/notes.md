@@ -31,6 +31,62 @@ pre {
 
 <!--...-->
 
+- `%s/pattern//gn`, count of matches
+- `%s/pattern//n`, count of lines with matches
+- `%s///n`, count of current word
+- `:10,50s/pattern//gn`, line 10 to line 50
+- `:s/\[\d\{,3\}\]//g`, delete `[1]`-like ref links in wikipedia
+
+---
+
+Some DSA keys are not considered secure anymore by OpenSSH 7. Adding
+"PubkeyAcceptedKeyTypes ssh-dss" to `~/.ssh/config` helps.
+
+---
+
+```cpp
+    bool operator == (const ref_ptr& rp) const { return (_ptr==rp._ptr); }
+    bool operator == (const T* ptr) const { return (_ptr==ptr); }
+    friend bool operator == (const T* ptr, const ref_ptr& rp) { return (ptr==rp._ptr); }
+
+    bool operator != (const ref_ptr& rp) const { return (_ptr!=rp._ptr); }
+    bool operator != (const T* ptr) const { return (_ptr!=ptr); }
+    friend bool operator != (const T* ptr, const ref_ptr& rp) { return (ptr!=rp._ptr); }
+
+    bool operator < (const ref_ptr& rp) const { return (_ptr<rp._ptr); }
+
+// follows is an implmentation of the "safe bool idiom", details can be found at:
+//   http://en.wikibooks.org/wiki/More_C%2B%2B_Idioms/Safe_bool
+//   http://lists.boost.org/Archives/boost/2003/09/52856.php
+
+private:
+    typedef T* ref_ptr::*unspecified_bool_type;
+
+public:
+    // safe bool conversion
+    operator unspecified_bool_type() const { return valid()? &ref_ptr::_ptr : 0; }
+#endif
+
+    T& operator*() const { return *_ptr; }
+    T* operator->() const { return _ptr; }
+    T* get() const { return _ptr; }
+
+    bool operator!() const   { return _ptr==0; } // not required
+    bool valid() const       { return _ptr!=0; }
+
+    /** release the pointer from ownership by this ref_ptr<>, decrementing the
+     * objects refencedCount() via unref_nodelete() to prevent the Object
+     * object from being deleted even if the reference count goes to zero.  Use
+     * when using a local ref_ptr<> to an Object that you want to return from a
+     * function/method via a C pointer, whilst preventing the normal ref_ptr<>
+     * destructor from cleaning up the object. When using release() you are
+     * implicitly expecting other code to take over management of the object,
+     * otherwise a memory leak will result. */
+    T* release() { T* tmp=_ptr; if (_ptr) _ptr->unref_nodelete(); _ptr=0; return tmp; }
+
+    void swap(ref_ptr& rp) { T* tmp=_ptr; _ptr=rp._ptr; rp._ptr=tmp; }
+```
+
 ---
 
 * If ... Else ... Paradigm
@@ -170,7 +226,8 @@ vim
     axes[2].set_xlim([2, 5])
 
     ax.set_xticks([1, 2, 3, 4, 5])
-    ax.set_xticklabels([r'$\alpha$', r'$\beta$', r'$\gamma$', r'$\delta$', r'$\epsilon$'], fontsize=18)
+    ax.set_xticklabels([r'$\alpha$', r'$\beta$', r'$\gamma$', r'$\delta$', r'$\epsilon$'],
+                       fontsize=18)
 
     # scientific notation
     fig, ax = plt.subplots(1, 1)
@@ -376,7 +433,6 @@ Python2 & Python3 on Windows: `python3.bat`
 
 ---
 
-* [William Thomson, 1st Baron Kelvin](http://en.wikipedia.org/wiki/William_Thomson,_1st_Baron_Kelvin)
 
 <!--
 http://dict.youdao.com/search?q=
@@ -576,16 +632,16 @@ Refs & See also
     ![Pierre de Fermat](https://upload.wikimedia.org/wikipedia/commons/f/f3/Pierre_de_Fermat.jpg)
     </div>
 
-    Pierre de Fermat (French: `[pjɛːʁ dəfɛʁma]`; 17 August 1601 – 12 January 1665)
-    was a French lawyer at the Parlement of Toulouse, France, and a
+    Pierre de Fermat (French: `[pjɛːʁ dəfɛʁma]`; 17 August 1601 – 12 January
+    1665) was **a French lawyer** at the Parlement of Toulouse, France, and **a
     mathematician who is given credit for early developments that led to
-    infinitesimal calculus, including his technique of adequality. In
+    infinitesimal calculus, including his technique of adequality**. In
     particular, he is recognized for his discovery of an original method of
     finding the greatest and the smallest ordinates of curved lines, which is
     analogous to that of the differential calculus, then unknown, and his
     research into number theory. He made notable contributions to analytic
-    geometry, probability, and optics. He is best known for Fermat's Last
-    Theorem, which he described in a note at the margin of a copy of
+    geometry, probability, and optics. He is best known for **Fermat's Last
+    Theorem**, which he described in a note at the margin of a copy of
     Diophantus' Arithmetica.
 
 [Johannes Kepler](http://en.wikipedia.org/wiki/Johannes_Kepler)
@@ -595,21 +651,21 @@ Refs & See also
     </div>
 
     Johannes Kepler (German: `[ˈkɛplɐ]`; December 27, 1571 – November 15, 1630)
-    was a German mathematician, astronomer, and astrologer. A key figure in the
-    17th century scientific revolution, he is best known for his laws of
+    was **a German mathematician, astronomer, and astrologer**. A key figure in
+    the 17th century scientific revolution, he is best known for his laws of
     planetary motion, based on his works Astronomia nova, Harmonices Mundi, and
     Epitome of Copernican Astronomy. These works also provided one of the
     foundations for Isaac Newton's theory of universal gravitation.
 
-    During his career, Kepler was a mathematics teacher at a seminary school in
-    Graz, Austria, where he became an associate of Prince Hans Ulrich von
-    Eggenberg. Later he became an assistant to astronomer Tycho Brahe, and
-    eventually the imperial mathematician to Emperor Rudolf II and his two
-    successors Matthias and Ferdinand II. He was also a mathematics teacher in
-    Linz, Austria, and an adviser to General Wallenstein. Additionally, he did
-    fundamental work in the field of optics, invented an improved version of
-    the refracting telescope (the Keplerian Telescope), and mentioned the
-    telescopic discoveries of his contemporary Galileo Galilei.
+    During his career, Kepler was **a mathematics teacher at a seminary
+    school** in Graz, Austria, where he became an associate of Prince Hans
+    Ulrich von Eggenberg. Later he became an assistant to astronomer Tycho
+    Brahe, and eventually the imperial mathematician to Emperor Rudolf II and
+    his two successors Matthias and Ferdinand II. He was also a mathematics
+    teacher in Linz, Austria, and an adviser to General Wallenstein.
+    Additionally, he did fundamental work in the field of optics, invented an
+    improved version of the refracting telescope (the Keplerian Telescope), and
+    mentioned the telescopic discoveries of his contemporary Galileo Galilei.
 
     Kepler lived in an era when there was no clear distinction between
     astronomy and astrology, but there was a strong division between astronomy
@@ -625,13 +681,26 @@ Refs & See also
 [Richard Dedekind](http://en.wikipedia.org/wiki/Richard_Dedekind)
 
 :   <div class="tzx-fright">
-    ![Richard Dedekind](http://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Dedekind.jpeg/180px-Dedekind.jpeg)
+    ![East German stamp from 1981,
+        commemorating Richard Dedekind.](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Stamps_of_Germany_%28DDR%29_1981%2C_MiNr_2605.jpg/330px-Stamps_of_Germany_%28DDR%29_1981%2C_MiNr_2605.jpg)
     </div>
 
     Julius Wilhelm Richard Dedekind (6 October 1831 – 12 February 1916) was a
     German mathematician who made important contributions to abstract algebra
     (particularly ring theory), algebraic number theory and the definition of
     the real numbers.
+
+    Dedekind's theorem states that if there existed a one-to-one correspondence
+    between two sets, then Dedekind said that the two sets were "similar". He
+    invoked similarity to give the first precise definition of an infinite set:
+    a set is infinite when it is "similar to a proper part of itself," in
+    modern terminology, is equinumerous to one of its proper subsets. Thus the
+    set N of natural numbers can be shown to be similar to the subset of N
+    whose members are the squares of every member of N, (N →N2):
+
+        N    1  2  3  4  5  6  7  8  9  10 ...
+                 ↓
+        N2   1  4  9  16 25 36 49 64 81 100 ...
 
 [Sir George Stokes, 1st Baronet](http://en.wikipedia.org/wiki/Sir_George_Stokes,_1st_Baronet)
 
@@ -672,13 +741,41 @@ Refs & See also
     refused to accept the authority of previous philosophers and also refused
     to accept the obviousness of his own senses.
 
+[William Thomson, 1st Baron Kelvin](http://en.wikipedia.org/wiki/William_Thomson,_1st_Baron_Kelvin) `@`{#lord-kelvin .tzx-anchor}
+
+:   <div class="tzx-fright">
+    ![Lord Kelvin by Hubert von Herkomer](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Hubert_von_Herkomer03.jpg/330px-Hubert_von_Herkomer03.jpg)
+    </div>
+
+    William Thomson, 1st Baron Kelvin (/ˈkɛlvɪn/; 26 June 1824 – 17 December
+    1907) was an **Irish mathematical physicist and engineer** who was born in
+    Belfast in 1824. At the University of Glasgow he did important work in the
+    mathematical analysis of electricity and formulation of the first and
+    second laws of thermodynamics, and did much to unify the emerging
+    discipline of physics in its modern form. He worked closely with
+    mathematics professor Hugh Blackburn in his work. He also had a career as
+    an electric telegraph engineer and inventor, which **propelled him into the
+    public eye and ensured his wealth, fame and honour**. For his work on the
+    transatlantic telegraph project he was knighted by Queen Victoria, becoming
+    Sir William Thomson. He had extensive maritime interests and was most noted
+    for his work on the mariner's compass, which had previously been limited in
+    reliability.
+
+    **Absolute temperatures are stated in units of kelvin in his honour.**
+    While the existence of a lower limit to temperature (absolute zero) was
+    known prior to his work, Lord Kelvin is widely known for determining its
+    correct value as approximately −273.15 degree Celsius or −459.67 degree
+    Fahrenheit.
+
 ---
 
 **AFI's 100 Years... 100 Movie Quotes** (AFI: American Film Institute)
 
 :   #. "Frankly, my dear, I don't give a damn." *Gone with the Wind*
     #. "I'm going to make him an offer he can't refuse." *The Godfather*
-    #. "You don't understand! I coulda had class. I coulda been a contender. I could've been somebody, instead of a bum, which is what I am." *On the Waterfront*
+    #. "You don't understand! I coulda had class. I coulda been a contender. I
+       could've been somebody, instead of a bum, which is what I am." *On the
+       Waterfront*
     #. "Toto, I've got a feeling we're not in Kansas anymore." *The Wizard of Oz*
     #. "Here's looking at you, kid." *Casablanca*
     #. "Go ahead, make my day." *Sudden Impact*
@@ -695,7 +792,8 @@ Refs & See also
     #. "Made it, Ma! Top of the world!" *White Heat*
     #. "I'm as mad as hell, and I'm not going to take this anymore!" *Network*
     #. "Louis, I think this is the beginning of a beautiful friendship."  *Casablanca*
-    #. "A census taker once tried to test me. I ate his liver with some fava beans and a nice Chianti." *The Silence of the Lambs*
+    #. "A census taker once tried to test me. I ate his liver with some fava
+        beans and a nice Chianti." *The Silence of the Lambs*
     #. "Bond. James Bond." *Dr. No*
     #. "There's no place like home." *Sunset Boulevard*
     #. "I am big! It's the pictures that got small." *Sunset Boulevard*
@@ -708,13 +806,17 @@ Refs & See also
     #. "After all, tomorrow is another day!" *Gone with the Wind*
     #. "Round up the usual suspects." *Casablanca*
     #. "I'll have what she's having." *When Harry Met Sally...*
-    #. "You know how to whistle, don't you, Steve? You just put your lips together and blow." *To Have and Have Not*
+    #. "You know how to whistle, don't you, Steve? You just put your lips
+        together and blow." *To Have and Have Not*
     #. "You're gonna need a bigger boat." *Jaws*
-    #. "Badges? We ain't got no badges! We don't need no badges! I don't have to show you any stinking badges!" *The Treasure of the Sierra Madre*
+    #. "Badges? We ain't got no badges! We don't need no badges! I don't have
+        to show you any stinking badges!" *The Treasure of the Sierra Madre*
     #. "I'll be back." *The Terminator*
-    #. "Today, I consider myself the luckiest man on the face of the Earth." *The Pride of Yankees*
+    #. "Today, I consider myself the luckiest man on the face of the Earth."
+        *The Pride of Yankees*
     #. "If you build it, he will come." *Field of Dreams*
-    #. "Mama always said life was like a box of chocolates. You never know what you're gonna get." *Forrest Gump*
+    #. "Mama always said life was like a box of chocolates. You never know what
+        you're gonna get." *Forrest Gump*
     #. "We rob banks." *Bonnie and Clyde*
     #. "Plastics." *The Graduate*
     #. "We'll always have Paris." *Casablanca*
@@ -727,7 +829,8 @@ Refs & See also
     #. "Houston, we have a problem." *Apollo 13*
     #. "You've got to ask yourself one question: 'Do I feel lucky?' Well, do ya, punk?" *Dirty Harry*
     #. "You had me at 'hello.'" *Jerry Maguire*
-    #. "One morning I shot an elephant in my pajamas. How he got in my pajamas, I don't know." *Animal Crackers*
+    #. "One morning I shot an elephant in my pajamas. How he got in my pajamas,
+        I don't know." *Animal Crackers*
     #. "There's no crying in baseball!" *A League of Their Own*
     #. "La-dee-da, la-dee-da." *Annie Hall*
     #. "A boy's best friend is his mother." *Psycho*
@@ -738,7 +841,8 @@ Refs & See also
     #. "Say 'hello' to my little friend!" *Scarface*
     #. "What a dump." *Beyond the Forest*
     #. "Mrs. Robinson, you're trying to seduce me. Aren't you?" *The Graduate*
-    #. "Gentlemen, you can't fight in here! This is the War Room!" *Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb*
+    #. "Gentlemen, you can't fight in here! This is the War Room!" *Dr.
+        Strangelove or: How I Learned to Stop Worrying and Love the Bomb*
     #. "Elementary, my dear Watson." *The Adventures of Sherlock Holmes*
     #. "Get your stinking paws off me, you damned dirty ape." *Planet of the Apes*
     #. "Of all the gin joints in all the towns in all the world, she walks into mine." *Casablanca*
@@ -762,40 +866,58 @@ Refs & See also
     #. "My precious." *The Lord of the Rings: The Two Towers*
     #. "Attica! Attica!" *Dog Day Afternoon*
     #. "Sawyer, you're going out a youngster, but you've got to come back a star!" *42nd Street*
-    #. "Listen to me, mister. You're my knight in shining armor. Don't you forget it. You're going to get back on that horse, and I'm going to be right behind you, holding on tight, and away we're gonna go, go, go!" *On Golden Pond*
+    #. "Listen to me, mister. You're my knight in shining armor. Don't you
+        forget it. You're going to get back on that horse, and I'm going to be
+        right behind you, holding on tight, and away we're gonna go, go, go!"
+        *On Golden Pond*
     #. "Tell 'em to go out there with all they got and win just one for the Gipper." *Knute Rockne, All American*
     #. "A martini. Shaken, not stirred." *Godfather*
     #. "Who's on first?" *The Naughty Nineties*
-    #. "Cinderella story. Outta nowhere. A former greenskeeper, now, about to become the Masters champion. It looks like a mirac...It's in the hole! It's in the hole! It's in the hole!" *Caddyshack*
+    #. "Cinderella story. Outta nowhere. A former greenskeeper, now, about to
+        become the Masters champion. It looks like a mirac...It's in the hole!
+        It's in the hole! It's in the hole!" *Caddyshack*
     #. "Life is a banquet, and most poor suckers are starving to death!" *Auntie Mame*
     #. "I feel the need—the need for speed!" *Top Gun*
     #. "Carpe diem. Seize the day, boys. Make your lives extraordinary." *Dead Poets Society*
     #. "Snap out of it!" *Moonstruck*
-    #. "My mother thanks you. My father thanks you. My sister thanks you. And I thank you." *Yankee Doodle Dandy*
+    #. "My mother thanks you. My father thanks you. My sister thanks you. And I
+        thank you." *Yankee Doodle Dandy*
     #. "Nobody puts Baby in a corner." *Dirty Dancing*
     #. "I'll get you, my pretty, and your little dog too!" *The Wizard Oz*
     #. "I'm the king of the world!" *Titanic*
 
 More quotes
 
-:   #. “曾经有一份真诚的爱情摆在我的面前，我没有珍惜，等到失去的时候才追悔莫及，人世间最痛苦的事情莫过于此。如果上天能够给我一个重新来过的机会，我会对那个女孩子说三个字：‘我爱你’。如果非要给这份爱加上一个期限，我希望是，一万年。” **大话西游**
+:   #. “曾经有一份真诚的爱情摆在我的面前，我没有珍惜，等到失去的时候才追悔莫及
+        ，人世间最痛苦的事情莫过于此。如果上天能够给我一个重新来过的机会，我会
+        对那个女孩子说三个字：‘我爱你’。如果非要给这份爱加上一个期限，我希望是
+        ，一万年。” **大话西游**
     #. 你可以说我是跑龙套的，但是你不可以说我是“臭跑龙套”的！ *喜剧之王*
-    #. 所以说做妖就像做人一样，要有仁慈的心，有了仁慈的心，就不再妖，是人妖。*大话西游*
+    #. 所以说做妖就像做人一样，要有仁慈的心，有了仁慈的心，就不再妖，是人妖。*
+        大话西游*
     #. 不是我喜欢打架，是有很多人喜欢被我打！ *鹿鼎记*
-    #. "你那忧郁的眼神,唏嘘的胡渣子,神呼奇迹的刀法,还有那杯晶莹透亮的马蒂尼,都掩饰不住你的出众,但是再怎么出众也要把过夜费付了吧" *零零柒*
+    #. "你那忧郁的眼神,唏嘘的胡渣子,神呼奇迹的刀法,还有那杯晶莹透亮的马蒂尼,都
+        掩饰不住你的出众,但是再怎么出众也要把过夜费付了吧" *零零柒*
     #. “准确的说，我是一个演员。”
     #. 你可以叫我“跑龙套的”，但不可以前面不要加"死”字！！！！ *喜剧之王*
-    #. 实在令人太失望。听到你的声音，我还以为你是一个很有感性，很有电影幻想的人。看你这一身造型，就知道你太没有内涵了 *92家有喜事*
+    #. 实在令人太失望。听到你的声音，我还以为你是一个很有感性，很有电影幻想的人
+        。看你这一身造型，就知道你太没有内涵了 *92家有喜事*
     #. 喂!你介不介意把裤子拉高一点,让我看看你的腿? *少林足球*
-    #. 大不了我发个毒誓，如果以后我再赌钱的话，就让天下最丑的女人夜夜轮奸，直到体无完肤，摇摇欲坠为止，这样可以了吧 ！ *唐伯虎点秋香*
-    #. 阿飞正传*：我听别人说这世界上有一种鸟是没有脚的，它只能一直飞呀飞呀，飞累了就在风里面睡觉，这种鸟一辈子只能下地一次，那边一次就是它死亡的时候。
+    #. 大不了我发个毒誓，如果以后我再赌钱的话，就让天下最丑的女人夜夜轮奸，直到
+        体无完肤，摇摇欲坠为止，这样可以了吧 ！ *唐伯虎点秋香*
+    #. 阿飞正传*：我听别人说这世界上有一种鸟是没有脚的，它只能一直飞呀飞呀，飞
+        累了就在风里面睡觉，这种鸟一辈子只能下地一次，那边一次就是它死亡的时候。
     #. 英雄本色*：有信心不一定会成功，没信心一定不会成功。
     #. 笑傲江湖之东方不败*：有人就有恩怨，有恩怨就有江湖。人就是江湖，你怎么退出？
-    #. *开往春天的地铁*：我一直怀疑27岁是否还会有一见钟情的倾心。我不知道该说什么，我只是突然在那一刻很想念她。
-    #. *情人*：我以经老了，在人来人往的大厅，有一位老人他向我走来，他说我认识你，那时的你还很年轻，美丽，你的身边有许许多多的追求者，不过跟那时相比，我更喜欢现在你这经历了沧桑的容颜？
+    #. *开往春天的地铁*：我一直怀疑27岁是否还会有一见钟情的倾心。我不知道该说什
+        么，我只是突然在那一刻很想念她。
+    #. *情人*：我以经老了，在人来人往的大厅，有一位老人他向我走来，他说我认识你
+        ，那时的你还很年轻，美丽，你的身边有许许多多的追求者，不过跟那时相比，
+        我更喜欢现在你这经历了沧桑的容颜？
     #. *春光乍泄*：一直以为我跟他不一样，原来寂寞的时候，所有的人都一样。
     #. *春光乍泻*：每个成功男人的背后，都有一个女人。每个不成功男人的背后，都有两个。
-    #. *好想好想谈恋爱*：承诺是男人给女人的定心丸。吃了安心，虽然这定心丸的药性有待考证，但女人都希望吃了再说。
+    #. *好想好想谈恋爱*：承诺是男人给女人的定心丸。吃了安心，虽然这定心丸的药性
+        有待考证，但女人都希望吃了再说。
     #. “如果，我多一张船票，你会不会跟我一起走？” *花样年华*
     #. 往往都是事情改变人，人却改变不了事情。 *无间道*
     #. 我最讨厌你们这些打劫的了，一点技术含量都没有！！！！ *天下无贼*
@@ -913,164 +1035,175 @@ Refs
 
 ---
 
-* **a.e.** – almost everywhere
-* **An.** - alternate
-* **a.s.** – almost surely
-* **char** – characteristic
-* **Eqn** – equation.
-* **cis - cos + i sin function.
-* **lim** – limit of a sequence, or of a function.
-* **lim inf** – limit inferior.
-* **lim sup** – limit superior.
-* **No.** – number.
-* **NTS** – need to show.
-* **pf** – proof.
-* **QED** – "Quod erat demonstrandum", a Latin phrase used at the end of a definitive proof. [how to pronunce?](http://zh.forvo.com/word/quod_erat_demonstrandum/)
-* **QEF** – "quod erat faciendum", a Latin phrase sometimes used at the end of a construction.
-* **Soln** – solution.
-* **st** – such that or so that.
-* **STP** – it is sufficient to prove.
-* **resp** – respectively.
-* **LHS** – left-hand side of an equation.
-* **RHS** – right-hand side of an equation.
-* **iff** – if and only if.
-* **W^5** – which was what we wanted. Synonym of Q.E.D.
-* **walog** – without any loss of generality.
-* **wlog** – without loss of generality.
-* **wff** – well-formed formula.
-* **whp - with high probability.
-* **WMA - we may assume.
-* **wrt** – with respect to or with regard to.
-* **WTP** – want to prove.
-* **WTS** – want to show.
-* **TFAE** – the following are equivalent.
-* **Thm** – theorem.
-* **undef** - a function or expression is undefined
-* **sup** – supremum of a set. (Also written lub.)
-* **lub** – least upper bound. (Also written sup.)
-* **gcd** – greatest common divisor of two numbers. (Also written as hcf.)
-* **lcm** – lowest common multiple of two numbers.
-* **glb** – greatest lower bound. (Also written as inf.)
-* **inf** – infimum of a set. (Also written as glb.)
-* **grad** – gradient of a scalar field.
-* **hcf** – highest common factor of two numbers. (Also written as gcd.)
-* **max** – maximum of a set.
-* **min** – minimum of a set.
-* **mod** – modulo.
-* **curl** – curl of a vector field. (Also written as rot.)
-* **rot** – rotor of a vector field. (Also written as curl.)
-* **deg** – degree of a polynomial. (Also written as ∂.)
-* **div** – divergence of a vector field.
-* **del** – del, a differential operator. (Also written as [\nabla][nabla]（倒三角）).)
-* **dom** – domain of a function. (Or, more generally, a relation.)
-* **cod** – codomain. (Also written as codom.)
-* **codom** – codomain. (Also written as cod.)
-* **dkl** – decalitre（ 公斗；十升）`deca + litre（就是我们常用的 1L 矿泉水）`
-* **DNE** - a solution for an expression does not exist, or is undefined. Generally used with limits and integrals. **D**efine **N**one **E**quation *or* **D**oes **N**ot **E**xist
-* **Ei** – exponential integral function.
-* **exp** – exponential function. (exp x is also written as ex.)
-* **lg** – common logarithm (log10) or binary logarithm (log2).
-* **ln** – natural logarithm, loge.
-* **log** – logarithm. (If without a subscript, this may mean either log10 or loge.)
-* **logh** – natural logarithm, loge.
-* **ext** – exterior.
-* **FOL** – first-order logic.
-* **HOL** – higher-order logic.
-* **NOR** – not-or in logic.
-* **XOR** - exclusive or in logic.
-* **mx** – matrix.
-* **det** – determinant of a matrix or linear transformation.
-* **dim** – dimension of a vector space.
-* **Ker** – kernel.
-* **Rk** – rank.
-* **Sp** – linear span of a set of vectors. (Also written with angle brackets.)
-* **Spec** – spectrum of a ring.
-* **Tr** – trace, either the field trace, or the trace of a matrix or linear transformation.
-* **adj** – adjugate of a matrix.
-* **cdf** – cumulative distribution function.
-* **cov** – covariance of a pair of random variables.
-* **iid - independent and identically distributed random variables.
-* **pdf** – probability density function.
-* **pmf** – probability mass function.
-* **Pr** – probability of an event.
-* **RV** – Random Variable. (or as R.V.)
-* **var** – variance of a random variable.
-* **int** – interior.
-* **Li** – offset logarithmic integral function.
-* **li** – logarithmic integral function or linearly independent.
-* **NAND** – not-and in logic, *see* [*Sheffer stroke*](http://en.wikipedia.org/wiki/Sheffer_stroke)
-* **ord** – ordinal number of a well-ordered set.
-* **ran** – range of a function.
-* **supp** – support of a function.
-* **sgn** – signum function.
-* **rng** – non-unital ring.
-* **RTP** – required to prove.
-* **seg** – initial segment of.
-* **cos** – cosine function.
-* **cosec** – cosecant function. (Also written as csc.)
-* **cosech** – hyperbolic cosecant function. (Also written as csch.)
-* **cosh** – hyperbolic cosine function.
-* **cot** – cotangent function.
-* **coth** – hyperbolic cotangent function.
-* **arccos** – inverse cosine function.
-* **arccosec** – inverse cosecant function. (Also written as arccsc.)
-* **arccot** – inverse cotangent function.
-* **arccsc** – inverse cosecant function. (Also written as arccosec.)
-* **arcosech** – inverse hyperbolic cosecant function. (Also written as arcsch.)
-* **arcosh** – inverse hyperbolic cosine function.
-* **arcoth** – inverse hyperbolic cotangent function.
-* **arcsch** – inverse hyperbolic cosecant function. (Also written as arcosech.)
-* **arcsec** – inverse secant function.
-* **arcsin** – inverse sine function.
-* **arctan** – inverse tangent function.
-* **arsech** – inverse hyperbolic secant function.
-* **arsinh** – inverse hyperbolic sine function.
-* **artanh** – inverse hyperbolic tangent function.
-* **csc** – cosecant function. (Also written as cosec.)
-* **csch** – hyperbolic cosecant function. (Also written as cosech.)
-* **sec** – secant function.
-* **sech** – hyperbolic secant function.
-* **Shi - hyperbolic sine integral function.
-* **Chi - hyperbolic cosine (ch*x*) integral function. `ch+i`
-* **Si - sine integral function.
-* **sin** – sine function.
-* **sinc** – sinc function.
-* **sinh** – hyperbolic sine function.
-* **Ci - cosine integral function.
-* **tan** – tangent function.
-* **tanh** – hyperbolic tangent function.
-* **Ai** – [Airy function.](http://en.wikipedia.org/wiki/Airy_function)
-* **Bi** – Airy function of the second kind.
-* **Cl** – topological closure.
-* **End** – categories of endomorphisms.
-* **erf** – [error function](http://en.wikipedia.org/wiki/Error_function)
-* **erfc** – complementary error function.
-* **Ext** – Ext functor.
-* **Frob** – Frobenius endomorphism.
-* **Gal** – Galois group. (Also written as Γ.)
-* **Hom** – Hom functor.
-* **LST** – language of set theory.
-* **Tor** – Tor functor.
-* **AC** – Axiom of Choice.
-* **AL - Action limit.
-* **Alt** – alternating group (Alt(n) is also written as An.)
-* **GF - Galois field.
-* **SL** – special linear group.
-* **GL** – general linear group.
-* **lerp** – linear interpolation.
-* **PGL** – projective general linear group.
-* **PSL** – projective special linear group.
-* **Sym** – symmetric group (Sym(n) is also written as Sn.)
-* **ZF** – Zermelo–Fraenkel axioms of set theory.
-* **ZFC** – Zermelo–Fraenkel axioms (with the Axiom of Choice) of set theory.
-* **WO** – well-ordered set.
-* **arg** – argument of a complex number.
-* **arg max** – argument of the maximum.
-* **arg min** – argument of the minimum.
-* **Re** – real part of a complex number.[2] (Also written \Re.)
-* **Im** – either image of a function or imaginary part of a complex number.
-* **Aut** – automorphism group.
-* **Card** – cardinality(基数) of a set. (Card(X) is also written #X, ♯X or |X|.)
+- **AC** – Axiom of Choice.
+- **AL - Action limit.
+- **Ai** – [Airy function.](http://en.wikipedia.org/wiki/Airy_function)
+- **Alt** – alternating group (Alt(n) is also written as An.)
+- **An.** - alternate
+- **Aut** – automorphism group.
+- **Bi** – Airy function of the second kind.
+- **Card** – cardinality(基数) of a set. (Card(X) is also written #X, ♯X or
+  |X|.)
+- **Chi - hyperbolic cosine (ch*x*) integral function. `ch+i`
+- **Ci - cosine integral function.
+- **Cl** – topological closure.
+- **DNE** - a solution for an expression does not exist, or is undefined.
+  Generally used with limits and integrals. **D**efine **N**one **E**quation
+  *or* **D**oes **N**ot **E**xist
+- **Ei** – exponential integral function.
+- **End** – categories of endomorphisms.
+- **Eqn** – equation.
+- **Ext** – Ext functor.
+- **FOL** – first-order logic.
+- **Frob** – Frobenius endomorphism.
+- **GF** - Galois field.
+- **GL** – general linear group.
+- **Gal** – Galois group. (Also written as Γ.)
+- **HOL** – higher-order logic.
+- **Hom** – Hom functor.
+- **Im** – either image of a function or imaginary part of a complex number.
+- **Ker** – kernel.
+- **LHS** – left-hand side of an equation.
+- **LST** – language of set theory.
+- **Li** – offset logarithmic integral function.
+- **NAND** – not-and in logic, *see* [*Sheffer stroke*](http://en.wikipedia.org/wiki/Sheffer_stroke)
+- **NOR** – not-or in logic.
+- **NTS** – need to show.
+- **No.** – number.
+- **PGL** – projective general linear group.
+- **PSL** – projective special linear group.
+- **Pr** – probability of an event.
+- **QED** – "Quod erat demonstrandum", a Latin phrase used at the end of a
+  definitive proof. [how to
+  pronunce?](http://zh.forvo.com/word/quod_erat_demonstrandum/)
+- **QEF** – "quod erat faciendum", a Latin phrase sometimes used at the end of
+  a construction.
+- **RHS** – right-hand side of an equation.
+- **RTP** – required to prove.
+- **RV** – Random Variable. (or as R.V.)
+- **Re** – real part of a complex number.[2] (Also written \Re.)
+- **Rk** – rank.
+- **SL** – special linear group.
+- **STP** – it is sufficient to prove.
+- **Shi - hyperbolic sine integral function.
+- **Si - sine integral function.
+- **Soln** – solution.
+- **Sp** – linear span of a set of vectors. (Also written with angle brackets.)
+- **Spec** – spectrum of a ring.
+- **Sym** – symmetric group (Sym(n) is also written as Sn.)
+- **TFAE** – the following are equivalent.
+- **Thm** – theorem.
+- **Tor** – Tor functor.
+- **Tr** – trace, either the field trace, or the trace of a matrix or linear
+  transformation.
+- **WMA - we may assume.
+- **WO** – well-ordered set.
+- **WTP** – want to prove.
+- **WTS** – want to show.
+- **W^5** – which was what we wanted. Synonym of Q.E.D.
+- **XOR** - exclusive or in logic.
+- **ZF** – Zermelo–Fraenkel axioms of set theory.
+- **ZFC** – Zermelo–Fraenkel axioms (with the Axiom of Choice) of set theory.
+- **a.e.** – almost everywhere
+- **a.s.** – almost surely
+- **adj** – adjugate of a matrix.
+- **arccos** – inverse cosine function.
+- **arccosec** – inverse cosecant function. (Also written as arccsc.)
+- **arccot** – inverse cotangent function.
+- **arccsc** – inverse cosecant function. (Also written as arccosec.)
+- **arcosech** – inverse hyperbolic cosecant function. (Also written as
+  arcsch.)
+- **arcosh** – inverse hyperbolic cosine function.
+- **arcoth** – inverse hyperbolic cotangent function.
+- **arcsch** – inverse hyperbolic cosecant function. (Also written as
+  arcosech.)
+- **arcsec** – inverse secant function.
+- **arcsin** – inverse sine function.
+- **arctan** – inverse tangent function.
+- **arg max** – argument of the maximum.
+- **arg min** – argument of the minimum.
+- **arg** – argument of a complex number.
+- **arsech** – inverse hyperbolic secant function.
+- **arsinh** – inverse hyperbolic sine function.
+- **artanh** – inverse hyperbolic tangent function.
+- **cdf** – cumulative distribution function.
+- **char** – characteristic
+- **cis - cos + i sin function.
+- **cod** – codomain. (Also written as codom.)
+- **codom** – codomain. (Also written as cod.)
+- **cos** – cosine function.
+- **cosec** – cosecant function. (Also written as csc.)
+- **cosech** – hyperbolic cosecant function. (Also written as csch.)
+- **cosh** – hyperbolic cosine function.
+- **cot** – cotangent function.
+- **coth** – hyperbolic cotangent function.
+- **cov** – covariance of a pair of random variables.
+- **csc** – cosecant function. (Also written as cosec.)
+- **csch** – hyperbolic cosecant function. (Also written as cosech.)
+- **curl** – curl of a vector field. (Also written as rot.)
+- **deg** – degree of a polynomial. (Also written as ∂.)
+- **del** – del, a differential operator. (Also written as [\nabla][nabla]（倒
+  三角）).)
+- **det** – determinant of a matrix or linear transformation.
+- **dim** – dimension of a vector space.
+- **div** – divergence of a vector field.
+- **dkl** – decalitre（ 公斗；十升）`deca + litre（就是我们常用的 1L 矿泉水）`
+- **dom** – domain of a function. (Or, more generally, a relation.)
+- **erf** – [error function](http://en.wikipedia.org/wiki/Error_function)
+- **erfc** – complementary error function.
+- **exp** – exponential function. (exp x is also written as ex.)
+- **ext** – exterior.
+- **gcd** – greatest common divisor of two numbers. (Also written as hcf.)
+- **glb** – greatest lower bound. (Also written as inf.)
+- **grad** – gradient of a scalar field.
+- **hcf** – highest common factor of two numbers. (Also written as gcd.)
+- **iff** – if and only if.
+- **iid - independent and identically distributed random variables.
+- **inf** – infimum of a set. (Also written as glb.)
+- **int** – interior.
+- **lcm** – lowest common multiple of two numbers.
+- **lerp** – linear interpolation.
+- **lg** – common logarithm (log10) or binary logarithm (log2).
+- **li** – logarithmic integral function or linearly independent.
+- **lim inf** – limit inferior.
+- **lim sup** – limit superior.
+- **lim** – limit of a sequence, or of a function.
+- **ln** – natural logarithm, loge.
+- **log** – logarithm. (If without a subscript, this may mean either log10 or
+  loge.)
+- **logh** – natural logarithm, loge.
+- **lub** – least upper bound. (Also written sup.)
+- **max** – maximum of a set.
+- **min** – minimum of a set.
+- **mod** – modulo.
+- **mx** – matrix.
+- **ord** – ordinal number of a well-ordered set.
+- **pdf** – probability density function.
+- **pf** – proof.
+- **pmf** – probability mass function.
+- **ran** – range of a function.
+- **resp** – respectively.
+- **rng** – non-unital ring.
+- **rot** – rotor of a vector field. (Also written as curl.)
+- **sec** – secant function.
+- **sech** – hyperbolic secant function.
+- **seg** – initial segment of.
+- **sgn** – signum function.
+- **sin** – sine function.
+- **sinc** – sinc function.
+- **sinh** – hyperbolic sine function.
+- **st** – such that or so that.
+- **sup** – supremum of a set. (Also written lub.)
+- **supp** – support of a function.
+- **tan** – tangent function.
+- **tanh** – hyperbolic tangent function.
+- **undef** - a function or expression is undefined
+- **var** – variance of a random variable.
+- **walog** – without any loss of generality.
+- **wff** – well-formed formula.
+- **whp - with high probability.
+- **wlog** – without loss of generality.
+- **wrt** – with respect to or with regard to.
 
 [nabla]: http://en.wikipedia.org/wiki/Nabla_symbol
 
@@ -1092,7 +1225,7 @@ M3U
 
       * Example 1
 
-        ```plain
+        ```tzx-plain
         #EXTM3U
 
         #EXTINF:123, Sample artist - Sample title
@@ -1103,13 +1236,13 @@ M3U
         ```
       * Example 2
 
-        ```plain
+        ```tzx-plain
         C:\Music
         ```
 
       * Example 3
 
-        ```plain
+        ```tzx-plain
         #EXTM3U
 
         #EXTINF:123, Sample artist - Sample title
@@ -1117,7 +1250,7 @@ M3U
 
       * Example 4
 
-        ```plain
+        ```tzx-plain
         Alternative\Band - Song.mp3
         Classical\Other Band - New Song.mp3
         Stuff.mp3
@@ -1129,7 +1262,7 @@ M3U
 
       * Example 5
 
-        ```plain
+        ```tzx-plain
         #EXTM3U
         #EXTINF:233,Everclear - So Much For The Afterglow
         Alternative\everclear_SMFTA.mp3
@@ -1149,7 +1282,8 @@ M3U
 
     `#EXTINF:233,Everclear - So Much For The Afterglow`
       ~ This is the line that tends to confuse people. Let's break it up into parts
-      ~ `#EXTINF`: This signifies this is an Extended Information field. It ends with a colorn.
+      ~ `#EXTINF`: This signifies this is an Extended Information field. It
+        ends with a colorn.
       ~ `233`: This is the time of the file in seconds followed by a comma.
         (233 seconds = 3:53). On the last entry there is a negative one, this
         is usually seen on streams, it tells the program to ignore the time
@@ -1168,7 +1302,7 @@ M3U8
 
     Example
 
-    ```plain
+    ```tzx-plain
     #EXTM3U
 
     #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1217000,RESOLUTION=1280x720
@@ -1280,7 +1414,8 @@ Refs & See also
 [James Stirling]
 
 :   <div class="tzx-fright">
-    ![Stirling's grave in Greyfriars Kirkyard, Edinburgh, general view. It is the small plate between the two large tablets.](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Grave_of_James_Stirling_%281692-1770%29%2C_general_view.jpg/330px-Grave_of_James_Stirling_%281692-1770%29%2C_general_view.jpg)
+    ![Stirling's grave in Greyfriars Kirkyard, Edinburgh, general view. It is
+        the small plate between the two large tablets.](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Grave_of_James_Stirling_%281692-1770%29%2C_general_view.jpg/330px-Grave_of_James_Stirling_%281692-1770%29%2C_general_view.jpg)
     </div>
 
     James Stirling (May 1692 Garden, Stirlingshire – 5 December 1770 Edinburgh)
@@ -1430,7 +1565,7 @@ Refs & See also
     dissertation Intégrale, longueur, aire ("Integral, length, area") at the
     University of Nancy during 1902.
 
-    <div class="tzx-fright">
+    <div class="tzx-fleft">
     ![Approximation of the Riemann integral by rectangular areas.](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Riemann.gif/330px-Riemann.gif)
     </div>
 
@@ -1450,7 +1585,7 @@ Refs & See also
     function on a closed bounded interval has a Lebesgue integral and there are
     many functions with a Lebesgue integral that have no Riemann integral.
 
-    <div class="tzx-fleft">
+    <div class="tzx-fright">
     ![Method of Lebesgue's integration.](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Integral_of_positive_function.svg/330px-Integral_of_positive_function.svg.png)
     </div>
 
@@ -1515,38 +1650,217 @@ Refs & See also
     des équations dans les problêmes tant déterminés qu'indéterminés ("Analytic
     treatise on conic sections") was published posthumously in Paris in 1707.
 
-* [Gottfried Willhelm Leibniz](http://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz)
-![leibniz-portrait]
+[Gottfried Willhelm Leibniz](http://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz)
 
-[leibniz-portrait]: http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Gottfried_Wilhelm_von_Leibniz.jpg/220px-Gottfried_Wilhelm_von_Leibniz.jpg
+:   <div class="tzx-fright">
+    ![leibniz-portrait](http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Gottfried_Wilhelm_von_Leibniz.jpg/220px-Gottfried_Wilhelm_von_Leibniz.jpg)
+    </div>
 
+    Gottfried Wilhelm (von) Leibniz (`/ˈlaɪbnɪts/`; German: `[ˈɡɔtfʁiːt ˈvɪlhɛ
+    lm fɔn ˈlaɪbnɪts]` or `[ˈlaɪpnɪts]`; French: Godefroi Guillaume Leibnitz;
+    July 1, 1646 – November 14, 1716) was **a German polymath and philosopher
+    who occupies a prominent place in the history of mathematics and the
+    history of philosophy. Scholars including Bertrand Russell believe Leibniz
+    developed calculus independently of Isaac Newton, and Leibniz's notation
+    has been widely used ever since it was published. It was only in the 20th
+    century that his Law of Continuity and Transcendental Law of Homogeneity
+    found mathematical implementation (by means of non-standard analysis). He
+    became one of the most prolific inventors in the field of mechanical
+    calculators.  While working on adding automatic multiplication and division
+    to Pascal's calculator, he was the first to describe a pinwheel calculator
+    in 1685 and invented the Leibniz wheel, used in the arithmometer, the first
+    mass-produced mechanical calculator. He also refined the binary number
+    system, which is the foundation of virtually all digital computers.
 
-* [Giuseppe Peano](http://en.wikipedia.org/wiki/Giuseppe_Peano)
-![peano-portrait]
+    In philosophy, Leibniz is most noted for his **optimism**, i.e. his
+    conclusion that our Universe is, in a restricted sense, the best possible
+    one that God could have created, an idea that was often lampooned by others
+    such as Voltaire. Leibniz, along with René Descartes and Baruch Spinoza,
+    was one of the three great 17th-century advocates of rationalism. The work
+    of Leibniz anticipated modern logic and analytic philosophy, but his
+    philosophy also looks back to the scholastic tradition, in which
+    conclusions are produced by applying reason of first principles or prior
+    definitions rather than to empirical evidence.
 
-[peano-portrait]: http://en.wikipedia.org/wiki/Giuseppe_Peano
+    Leibniz made major contributions to physics and technology, and anticipated
+    notions that surfaced much later in philosophy, probability theory,
+    biology, medicine, geology, psychology, linguistics, and computer science.
+    He wrote works on philosophy, politics, law, ethics, theology, history, and
+    philology. Leibniz's contributions to this vast array of subjects were
+    scattered in various learned journals, in tens of thousands of letters, and
+    in unpublished manuscripts. He wrote in several languages, but primarily in
+    Latin, French, and German. There is no complete gathering of the writings
+    of Leibniz.
 
+[Giuseppe Peano](http://en.wikipedia.org/wiki/Giuseppe_Peano)
 
-* [George Green](http://en.wikipedia.org/wiki/George_Green)
-![green-portrait]
+:   <div class="tzx-fright">
+    ![Giuseppe Peano](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Giuseppe_Peano.jpg/330px-Giuseppe_Peano.jpg)
+    </div>
 
-[green-portrait]: http://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/GreenEssay.png/220px-GreenEssay.png
+    Giuseppe Peano (Italian: `[dʒuˈzɛppe peˈaːno]`; 27 August 1858 – 20 April
+    1932) was **an Italian mathematician**. The author of over 200 books and
+    papers, he was a founder of mathematical logic and set theory, to which he
+    contributed much notation. The standard axiomatization of the natural
+    numbers is named the Peano axioms in his honor. As part of this effort, he
+    made key contributions to the modern rigorous and systematic treatment of
+    the method of mathematical induction. He spent most of his career teaching
+    mathematics at the University of Turin.
 
+    After his mother died in 1910, Peano divided his time between teaching,
+    working on texts aimed for secondary schooling including a dictionary of
+    mathematics, and developing and promoting his and other auxiliary
+    languages, becoming a revered member of the international auxiliary
+    language movement. He used his membership of the Accademia dei Lincei to
+    present papers written by friends and colleagues who were not members (the
+    Accademia recorded and published all presented papers given in sessions).
 
-* [Gamma Function](http://en.wikipedia.org/wiki/Gamma_function)
-![](http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Factorial_Interpolation.svg/250px-Factorial_Interpolation.svg.png)
+    During the years 1913–1918, Peano published several papers that dealt with
+    the remainder term for various numerical quadrature formulas, and
+    introduced the Peano kernel.
 
-![](http://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Jahnke_gamma_function.png/300px-Jahnke_gamma_function.png)
+    In 1925 Peano switched Chairs unofficially from Infinitesimal Calculus to
+    Complementary Mathematics, a field which better suited his current style of
+    mathematics. This move became official in 1931. Giuseppe Peano continued
+    teaching at Turin University until the day before he died, when he suffered
+    a fatal heart attack.
 
-* [Georg Cantor](http://en.wikipedia.org/wiki/Georg_Cantor)
-![cantor-portrait]
+[George Green](http://en.wikipedia.org/wiki/George_Green)
 
-[cantor-portrait]: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Georg_Cantor2.jpg/225px-Georg_Cantor2.jpg
+:   <div class="tzx-fright">
+    ![The title page to Green's original essay on what is now known as
+        Green's theorem.](http://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/GreenEssay.png/220px-GreenEssay.png)
+    </div>
 
+    George Green (14 July 1793 – 31 May 1841) was a British mathematical
+    physicist who wrote An Essay on the Application of Mathematical Analysis to
+    the Theories of Electricity and Magnetism (Green, 1828). The essay
+    introduced several important concepts, among them a theorem similar to the
+    modern Green's theorem, the idea of potential functions as currently used
+    in physics, and the concept of what are now called Green's functions. Green
+    was the first person to create a mathematical theory of electricity and
+    magnetism and his theory formed the foundation for the work of other
+    scientists such as James Clerk Maxwell, William Thomson, and others. His
+    work on potential theory ran parallel to that of Carl Friedrich Gauss.
 
+    Green's life story is remarkable in that he was almost entirely
+    self-taught. He received only about one year of formal schooling as a
+    child, between the ages of 8 and 9.
+
+    In his final years at Cambridge, Green became rather ill, and in 1840 he
+    returned to Sneinton, only to die a year later. There are rumours that at
+    Cambridge, Green had "succumbed to alcohol", and some of his earlier
+    supporters, such as Sir Edward Bromhead, tried to distance themselves from
+    him.
+
+    Green's work was not well known in the mathematical community during his
+    lifetime. Besides Green himself, the first mathematician to quote his 1828
+    work was the Briton Robert Murphy (1806–1843) in his 1833 work. In 1845,
+    four years after Green's death, Green's work was rediscovered by the young
+    William Thomson (then aged 21), later known as [Lord Kelvin](#lord-kelvin), who popularised
+    it for future mathematicians. According to the book "George Green" by D.M.
+    Cannell, William Thomson noticed Murphy's citation of Green's 1828 essay
+    but found it difficult to locate Green's 1828 work; he finally got some
+    copies of Green's 1828 work from William Hopkins in 1845.
+
+[Gamma Function](http://en.wikipedia.org/wiki/Gamma_function)
+
+:   <div class="tzx-fleft">
+    ![](http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Factorial_Interpolation.svg/250px-Factorial_Interpolation.svg.png)
+    </div>
+
+    <div class="tzx-fright">
+    ![](http://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Jahnke_gamma_function.png/300px-Jahnke_gamma_function.png)
+    </div>
+
+    In mathematics, the gamma function (represented by the capital Greek letter
+    Γ) is an extension of the factorial function, with its argument shifted
+    down by 1, to real and complex numbers. That is, if n is a positive
+    integer:
+
+    $$\Gamma(n) = (n-1)!.$$
+
+    The gamma function is defined for all complex numbers except the
+    non-positive integers. For complex numbers with a positive real part, it is
+    defined via a convergent improper integral:
+
+    $$\Gamma(t) = \int_0^\infty x^{t-1} e^{-x}\,dx.$$
+
+    This integral function is extended by analytic continuation to all complex
+    numbers except the non-positive integers (where the function has simple
+    poles), yielding the meromorphic function we call the gamma function. In
+    fact the gamma function corresponds to the Mellin transform of the negative
+    exponential function:
+
+    <!--
+    no mathjax support in reads.html (supporting mathjax in this page will slow page rendering)
+    $$\Gamma(t) = { \mathcal M e^{-x} }(t).$$
+
+    use codecogs instead
+    ![](http://latex.codecogs.com/gif.latex?%5CGamma%28t%29%20%3D%20%5C%7B%20%5Cmathcal%20M%20e%5E%7B-x%7D%20%5C%7D%28t%29.)
+
+    or use wikipedia equation image url
+    ![](https://upload.wikimedia.org/math/c/a/5/ca5a7eb3de47e2cc3c06348778780ee8.png)
+
+    eh... sames they are all the same... BTW, Codecogs is open source.
+    -->
+
+    ![](https://upload.wikimedia.org/math/c/a/5/ca5a7eb3de47e2cc3c06348778780ee8.png)
+
+    The gamma function is a component in various probability-distribution
+    functions, and as such it is applicable in the fields of probability and
+    statistics, as well as combinatorics.
+
+[Georg Cantor](http://en.wikipedia.org/wiki/Georg_Cantor)
+
+:   <div class="tzx-fleft">
+    ![Georg Cantor](http://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Georg_Cantor2.jpg/225px-Georg_Cantor2.jpg)
+    </div>
+
+    Georg Ferdinand Ludwig Philipp Cantor (`/ˈkæntɔːr/` KAN-tor; German: `[ˈɡeɔ
+    ʁkˈfɛʁdinant ˈluːtvɪç ˈfɪlɪp ˈkantɔʁ]`; March 3 [O.S. February 19] 1845 –
+    January 6, 1918) was a German mathematician. He invented set theory, which
+    has become a fundamental theory in mathematics. Cantor established the
+    importance of one-to-one correspondence between the members of two sets,
+    defined infinite and well-ordered sets, and proved that the real numbers
+    are more numerous than the natural numbers. In fact, Cantor's method of
+    proof of this theorem implies the existence of an "infinity of infinities".
+    He defined the cardinal and ordinal numbers and their arithmetic. Cantor's
+    work is of great philosophical interest, a fact of which he was well aware.
+
+    Cantor's theory of transfinite numbers was originally regarded as so
+    counter-intuitive – even shocking – that it encountered resistance from
+    mathematical contemporaries such as Leopold Kronecker and Henri Poincaré
+    and later from Hermann Weyl and L. E. J. Brouwer, while Ludwig Wittgenstein
+    raised philosophical objections. Cantor, a devout Lutheran, believed the
+    theory had been communicated to him by God. Some Christian theologians
+    (particularly neo-Scholastics) saw Cantor's work as a challenge to the
+    uniqueness of the absolute infinity in the nature of God – on one occasion
+    equating the theory of transfinite numbers with pantheism – a proposition
+    that Cantor vigorously rejected.
+
+    The objections to Cantor's work were occasionally fierce: Henri Poincaré
+    referred to his ideas as a "grave disease" infecting the discipline of
+    mathematics, and Leopold Kronecker's public opposition and personal attacks
+    included describing Cantor as a "scientific charlatan", a "renegade" and a
+    "corrupter of youth." Kronecker objected to Cantor's proofs that the
+    algebraic numbers are countable, and that the transcendental numbers are
+    uncountable, results now included in a standard mathematics curriculum.
+    Writing decades after Cantor's death, Wittgenstein lamented that
+    mathematics is "ridden through and through with the pernicious idioms of
+    set theory," which he dismissed as "utter nonsense" that is "laughable" and
+    "wrong". Cantor's recurring bouts of depression from 1884 to the end of his
+    life have been blamed on the hostile attitude of many of his
+    contemporaries, though some have explained these episodes as probable
+    manifestations of a bipolar disorder.
+
+    The harsh criticism has been matched by later accolades. In 1904, the Royal
+    Society awarded Cantor its Sylvester Medal, the highest honor it can confer
+    for work in mathematics. David Hilbert defended it from its critics by
+    declaring: "No one shall expel us from the Paradise that Cantor has
+    created."
 
 ---
-
 
 Αα	Alpha	Νν	Nu
 Ββ	Beta	Ξξ	Xi
@@ -1561,7 +1875,6 @@ Refs & See also
 Λλ	Lambda	Ψψ	Psi
 Μμ	Mu		Ωω	Omega
 
-
 * [Brook Taylor](http://en.wikipedia.org/wiki/Brook_Taylor)
 ![][taylor-portrait]
 
@@ -1574,21 +1887,38 @@ Refs & See also
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/KnuthAtOpenContentAlliance.jpg/192px-KnuthAtOpenContentAlliance.jpg)
 
-Donald Ervin Knuth (/kəˈnuːθ/ kə-nooth; born January 10, 1938) is an American computer scientist, mathematician, and Professor Emeritus at Stanford University.
+Donald Ervin Knuth (/kəˈnuːθ/ kə-nooth; born January 10, 1938) is an American
+computer scientist, mathematician, and Professor Emeritus at Stanford
+University.
 
 美国程序员、数学家、Stanford 大学教授
 
-He is the author of the multi-volume work The Art of Computer Programming. Knuth has been called the "father" of the analysis of algorithms. He contributed to the development of the rigorous analysis of the computational complexity of algorithms and systematized formal mathematical techniques for it. In the process he also popularized the [asymptotic notation]. In addition to fundamental contributions in several branches of theoretical computer science, Knuth is the creator of the TeX computer typesetting system, the related METAFONT font definition language and rendering system, and the Computer Modern family of typefaces.
+He is the author of the multi-volume work The Art of Computer Programming.
+Knuth has been called the "father" of the analysis of algorithms. He
+contributed to the development of the rigorous analysis of the computational
+complexity of algorithms and systematized formal mathematical techniques for
+it. In the process he also popularized the [asymptotic notation]. In addition
+to fundamental contributions in several branches of theoretical computer
+science, Knuth is the creator of the TeX computer typesetting system, the
+related METAFONT font definition language and rendering system, and the
+Computer Modern family of typefaces.
 
 TAOCP（计算机程序艺术）的作者；算法分析之父；TeX、METAFONT 作者；
 
-As a writer and scholar, Knuth created the WEB and CWEB computer programming systems designed to encourage and facilitate **literate programming**, and designed the MIX/MMIX instruction set architectures. As a member of the academic and scientific community, Knuth is strongly opposed to the policy of granting software patents. He has expressed his disagreement directly to both the United States Patent and Trademark Office and European Patent Organization.
+As a writer and scholar, Knuth created the WEB and CWEB computer programming
+systems designed to encourage and facilitate **literate programming**, and
+designed the MIX/MMIX instruction set architectures. As a member of the
+academic and scientific community, Knuth is strongly opposed to the policy of
+granting software patents. He has expressed his disagreement directly to both
+the United States Patent and Trademark Office and European Patent Organization.
 
 文学性编程；反对软件专利；
 
 **Early life**
 
-winning a contest when he was in eighth grade by finding over 4,500 words that could be formed from the letters in "Ziegler's Giant Bar"; the judges had only about 2,500 words on their master list.
+winning a contest when he was in eighth grade by finding over 4,500 words that
+could be formed from the letters in "Ziegler's Giant Bar"; the judges had only
+about 2,500 words on their master list.
 
 **Education**
 
@@ -1637,7 +1967,6 @@ Stanford University School of Engineering Hero Award, 2011[33]
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Donald_Knuth_in_front_of_statue_St._Mesrop_Mashtots_%28inventor_of_the_Armenian%2C_Georgian_and_Caucasian_Albanian_alphabets_in_the_4th_century%29%2C_Matenadaran%2C_Yerevan%2C_Armenia%2C_June_2006%2C_LA.jpg/195px-thumbnail.jpg)
 
-
 ### Homepage
 
 ![](http://www-cs-faculty.stanford.edu/~uno/don.gif)
@@ -1646,7 +1975,9 @@ Stanford University School of Engineering Hero Award, 2011[33]
 
 [关于退休](http://www-cs-faculty.stanford.edu/~uno/retd.html)
 
-> I retired early because I realized that I would need about 20 years of full-time work to complete The Art of Computer Programming (TAOCP), which I have always viewed as the most important project of my life.
+> I retired early because I realized that I would need about 20 years of
+> full-time work to complete The Art of Computer Programming (TAOCP), which I
+> have always viewed as the most important project of my life.
 
 [邮件](http://www-cs-faculty.stanford.edu/~uno/email.html)
 
@@ -1676,36 +2007,28 @@ Knuth (Ka-NOOTH)
 
 **[Curriculum Vitæ](http://www-cs-faculty.stanford.edu/~uno/vita.html)**
 
-> I may not be able to read your message until many months have gone by, because I'm working intensively on The Art of Computer Programming. However, I promise to reply in due time.
+> I may not be able to read your message until many months have gone by,
+> because I'm working intensively on The Art of Computer Programming. However,
+> I promise to reply in due time.
 
 [Programs to Read](http://www-cs-faculty.stanford.edu/~uno/programs.html)
 
 
 [![](http://gnat.qiniudn.com/pic/Donald-E.-Knuth.png)](http://www-cs-faculty.stanford.edu/~uno/dek-14May10-1.jpeg)
 
-
-
-
-### 段子等
+段子等
 
 * [科学网—图灵奖史上最年轻获奖者高德纳：把一件平常事做到人间极致](http://news.sciencenet.cn/htmlnews/2010/3/229434.shtm)
 * [八卦高德纳 (评论: 计算机程序设计艺术（第 1 卷）)](http://book.douban.com/review/5384627/)
 * [科学松鼠会 » 近看图灵碗 (8. 我就是上帝) (上)](http://songshuhui.net/archives/33469)
 * [科学松鼠会 » 近看图灵碗 (8. 我就是上帝) (下)](http://songshuhui.net/archives/34291)
 
-
----
-
-**Refs**
-
 * [Donald E. Knuth | Wikipedia](http://en.wikipedia.org/wiki/Donald_Knuth)
-
 
 * [Galileo Galilei](http://en.wikipedia.org/wiki/Galileo_Galilei)
 ![galilei-portrait]
 
 [galilei-portrait]: http://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Justus_Sustermans_-_Portrait_of_Galileo_Galilei%2C_1636.jpg/220px-Justus_Sustermans_-_Portrait_of_Galileo_Galilei%2C_1636.jpg
-
 
 [asymptotic notation]: http://mathworld.wolfram.com/AsymptoticNotation.html
 [finder's fee]: http://en.wikipedia.org/wiki/Finder%27s_fee
@@ -1723,39 +2046,31 @@ Knuth (Ka-NOOTH)
 * Cons，C 是左手 Shift，右手 c，o 是左手，有点不适应（开始阶段）
 * 缩写词比如，dbl（double）都是右手的活儿了
 
-
-
 ---
 
-
-### Function
+Function
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Function_machine2.svg/220px-Function_machine2.svg.png)
 
 
-### Affine Function
+Affine Function
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Gerade.svg/220px-Gerade.svg.png)
 
 
-### Quadric Function
+Quadric Function
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Polynomialdeg2.svg/220px-Polynomialdeg2.svg.png)
 
-
-### Continuous Function
+Continuous Function
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Uniform_continuity_animation.gif/220px-Uniform_continuity_animation.gif)
 
-
-### Trignometric Function
+Trignometric Function
 
 ![](http://gnat-tang-shared-image.qiniudn.com/pic/sin.png)
 ![](http://gnat-tang-shared-image.qiniudn.com/pic/cos.png)
 ![](http://gnat-tang-shared-image.qiniudn.com/pic/tan.png)
-
-
-
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Trigonometry_triangle.svg/288px-Trigonometry_triangle.svg.png)
 
@@ -1767,40 +2082,28 @@ Knuth (Ka-NOOTH)
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sawtooth_Fourier_Animation.gif/280px-Sawtooth_Fourier_Animation.gif)
 
-### Exponential
-
+Exponential
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Root_graphs.svg/450px-Root_graphs.svg.png)
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/ExpIPi.gif/300px-ExpIPi.gif)
 
----
+Refs
 
-**Refs**
-
-* [Function | Wikipedia][function]
-* [Affine Transformation](http://en.wikipedia.org/wiki/Affine_transformation)
-* [Quadric Function](http://en.wikipedia.org/wiki/Quadratic_function)
-* [Continuous Function](http://en.wikipedia.org/wiki/Continuous_function)
-* [Trignometric Function](http://en.wikipedia.org/wiki/Trigonometric_functions)
-* [Hyperbolic Function](http://en.wikipedia.org/wiki/Hyperbolic_function)
-* [幂函数](http://zh.wikipedia.org/wiki/%E5%B9%82%E5%87%BD%E6%95%B0)
-* [Exponential](http://en.wikipedia.org/wiki/Exponentiation#rational-exponents)
-
-
-
+:   * [Function | Wikipedia][function]
+    * [Affine Transformation](http://en.wikipedia.org/wiki/Affine_transformation)
+    * [Quadric Function](http://en.wikipedia.org/wiki/Quadratic_function)
+    * [Continuous Function](http://en.wikipedia.org/wiki/Continuous_function)
+    * [Trignometric Function](http://en.wikipedia.org/wiki/Trigonometric_functions)
+    * [Hyperbolic Function](http://en.wikipedia.org/wiki/Hyperbolic_function)
+    * [幂函数](http://zh.wikipedia.org/wiki/%E5%B9%82%E5%87%BD%E6%95%B0)
+    * [Exponential](http://en.wikipedia.org/wiki/Exponentiation#rational-exponents)
 
 [function]: http://en.wikipedia.org/wiki/Function_(mathematics)
 
-
----
-
-
 "**Even Homer nods**"，太过分了。。。
 
-
 ---
-
 
 The Hacker's Code
 
@@ -1829,10 +2132,13 @@ The Hacker's Code of Ethics
 :   Levy (1984) suggests that there is a "code of ethics" for hacking which,
     though not pasted on the walls, is in the air:
 
-    - Access to Computers - and anything which might teach you something about the way the world works - should be unlimited and total. Always yield to the Hands-On Imperative!
+    - Access to Computers - and anything which might teach you something about
+      the way the world works - should be unlimited and total. Always yield to
+      the Hands-On Imperative!
     - All information should be free.
     - Mistrust Authority - Promote Decentralization.
-    - Hackers should be judged by their hacking, not bogus criteria such as degrees, age, race, or position.
+    - Hackers should be judged by their hacking, not bogus criteria such as
+      degrees, age, race, or position.
     - You can create art and beauty on a computer.
     - Computers can change your life for the better.
 
@@ -3146,7 +3452,6 @@ Det 是 Grand Metric 下的不变量。
         resetBackground( sceneRect() );
     }
     ```
-
 ---
 
 * [Blaise Pascal](http://en.wikipedia.org/wiki/Blaise_Pascal)
@@ -3558,56 +3863,56 @@ Unix 的目的不是为了学习而是为了使用。”为了达到使用 Unix 
 
 Helpful aliases for common git tasks
 
-- `g` - `git`{.bash}
-- `gst` - `git status`{.bash}
-- `gl` - `git pull`{.bash}
-- `gup` - `git pull --rebase`{.bash}
-- `gp` - `git push`{.bash}
-- `gd` - `git diff`{.bash}
-- `gdc` - `git diff --cached`{.bash}
-- `gdv` - `git diff -w "$@" | view -`{.bash}
-- `gc` - `git commit -v`{.bash}
-- `gcR` - `git commit -v --amend`{.bash}
-- `gca` - `git commit -v -a`{.bash}
-- `gcaR` - `git commit -v -a --amend`{.bash}
-- `gcmsg` - `git commit -m`{.bash}
-- `gco` - `git checkout`{.bash}
-- `gcm` - `git checkout master`{.bash}
-- `gr` - `git remote`{.bash}
-- `grv` - `git remote -v`{.bash}
-- `grmv` - `git remote rename`{.bash}
-- `grrm` - `git remote remove`{.bash}
-- `gsetr` - `git remote set-url`{.bash}
-- `grup` - `git remote update`{.bash}
-- `grbi` - `git rebase -i`{.bash}
-- `grbc` - `git rebase --continue`{.bash}
-- `grba` - `git rebase --abort`{.bash}
-- `gb` - `git branch`{.bash}
-- `gba` - `git branch -a`{.bash}
-- `gcount` - `git shortlog -sn`{.bash}
-- `gcl` - `git config --list`{.bash}
-- `gcp` - `git cherry-pick`{.bash}
-- `glg` - `git log --stat --max-count=10`{.bash}
-- `glgg` - `git log --graph --max-count=10`{.bash}
-- `glgga` - `git log --graph --decorate --all`{.bash}
-- `glo` - `git log --oneline --decorate --color`{.bash}
-- `glog` - `git log --oneline --decorate --color --graph`{.bash}
-- `gss` - `git status -s`{.bash}
-- `ga` - `git add`{.bash}
-- `gm` - `git merge`{.bash}
-- `grh` - `git reset HEAD`{.bash}
-- `grhh` - `git reset HEAD --hard`{.bash}
-- `gclean` - `git reset --hard && git clean -dfx`{.bash}
-- `gwc` - `git whatchanged -p --abbrev-commit --pretty=medium`{.bash}
-- `gsts` - `git stash show --text`{.bash}
-- `gsta` - `git stash`{.bash}
-- `gstp` - `git stash pop`{.bash}
-- `gstd` - `git stash drop`{.bash}
-- `ggpull` - `git pull origin $(current_branch)`{.bash}
-- `ggpur` - `git pull --rebase origin $(current_branch)`{.bash}
-- `ggpush` - `git push origin $(current_branch)`{.bash}
-- `ggpnp` - `git pull origin $(current_branch) && git push origin $(current_branch)`{.bash}
-- `glp` - `git log prettily`{.bash}
+- `g`{.bash} &rarr; `git`
+- `gst`{.bash} &rarr; `git status`
+- `gl`{.bash} &rarr; `git pull`
+- `gup`{.bash} &rarr; `git pull --rebase`
+- `gp`{.bash} &rarr; `git push`
+- `gd`{.bash} &rarr; `git diff`
+- `gdc`{.bash} &rarr; `git diff --cached`
+- `gdv`{.bash} &rarr; `git diff -w "$@" | view -`
+- `gc`{.bash} &rarr; `git commit -v`
+- `gcR`{.bash} &rarr; `git commit -v --amend`
+- `gca`{.bash} &rarr; `git commit -v -a`
+- `gcaR`{.bash} &rarr; `git commit -v -a --amend`
+- `gcmsg`{.bash} &rarr; `git commit -m`
+- `gco`{.bash} &rarr; `git checkout`
+- `gcm`{.bash} &rarr; `git checkout master`
+- `gr`{.bash} &rarr; `git remote`
+- `grv`{.bash} &rarr; `git remote -v`
+- `grmv`{.bash} &rarr; `git remote rename`
+- `grrm`{.bash} &rarr; `git remote remove`
+- `gsetr`{.bash} &rarr; `git remote set-url`
+- `grup`{.bash} &rarr; `git remote update`
+- `grbi`{.bash} &rarr; `git rebase -i`
+- `grbc`{.bash} &rarr; `git rebase --continue`
+- `grba`{.bash} &rarr; `git rebase --abort`
+- `gb`{.bash} &rarr; `git branch`
+- `gba`{.bash} &rarr; `git branch -a`
+- `gcount`{.bash} &rarr; `git shortlog -sn`
+- `gcl`{.bash} &rarr; `git config --list`
+- `gcp`{.bash} &rarr; `git cherry-pick`
+- `glg`{.bash} &rarr; `git log --stat --max-count=10`
+- `glgg`{.bash} &rarr; `git log --graph --max-count=10`
+- `glgga`{.bash} &rarr; `git log --graph --decorate --all`
+- `glo`{.bash} &rarr; `git log --oneline --decorate --color`
+- `glog`{.bash} &rarr; `git log --oneline --decorate --color --graph`
+- `gss`{.bash} &rarr; `git status -s`
+- `ga`{.bash} &rarr; `git add`
+- `gm`{.bash} &rarr; `git merge`
+- `grh`{.bash} &rarr; `git reset HEAD`
+- `grhh`{.bash} &rarr; `git reset HEAD --hard`
+- `gclean`{.bash} &rarr; `git reset --hard && git clean -dfx`
+- `gwc`{.bash} &rarr; `git whatchanged -p --abbrev-commit --pretty=medium`
+- `gsts`{.bash} &rarr; `git stash show --text`
+- `gsta`{.bash} &rarr; `git stash`
+- `gstp`{.bash} &rarr; `git stash pop`
+- `gstd`{.bash} &rarr; `git stash drop`
+- `ggpull`{.bash} &rarr; `git pull origin $(current_branch)`
+- `ggpur`{.bash} &rarr; `git pull --rebase origin $(current_branch)`
+- `ggpush`{.bash} &rarr; `git push origin $(current_branch)`
+- `ggpnp`{.bash} &rarr; `git pull origin $(current_branch) && git push origin $(current_branch)`
+- `glp`{.bash} &rarr; `git log prettily`
 
 ---
 
@@ -4387,7 +4692,8 @@ var c = new Array(3); // length = 3, not enumerable
 
 [base64 encoding]: https://www.base64encode.org/
 
-`<meta HTTP-EQUIV="REFRESH" content="0; url=http://district10.github.io/">`{.html}
+HTTP Redirection
+:   `<meta HTTP-EQUIV="REFRESH" content="0; url=http://district10.github.io/">`{.html}
 
 fatality `[fə'tæləti]`: n. 死亡；宿命；致命性；不幸；灾祸
 
@@ -4478,7 +4784,7 @@ other.  If r = farVal nearVal roughly log 2 ⁡r bits of depth buffer precision
 are lost.  Because r approaches infinity as nearVal approaches 0, nearVal must
 never be set to 0.
 
-<div class="tzx-fright">
+<div class="tzx-fright" style="padding:em;">
 ![A view frustum](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/ViewFrustum.svg/330px-ViewFrustum.svg.png)
 </div>
 

@@ -5,9 +5,11 @@
 什么是投影？
 ===========
 
+<!--
 今天矩阵论讲的是广义逆，也就是伪逆。一想到伪逆我就觉得我们院的教材特别垃圾，
 测量平差的最最最简单的最小二乘就是用伪逆来表达，那本教材对此却一点不提及。
 与此相关，今天我想扯的是投影。
+-->
 
 投影是什么？简单地说是从一个线性空间中一个点（向量）映射到另一个线性空间的一个点。
 最简单的例子是把 O~xy~ 平面上的点 (x, y) 投影到 x 轴变为 (x, 0)。
@@ -26,9 +28,9 @@
 如果 A 形如躺着的长方形（如“---”），列数特别多，那么很有可能 x 有很多组解。因为 x 就是对 A 的列向量进行组合拼造一个 b，如果
 A 的列向量很多，当然更容易拼出来。这个拼，就是
 
-$$Ax = 
+$$Ax =
 \begin{bmatrix}  1 & 2 \\ 3 & 4 \end{bmatrix}
-\begin{bmatrix} 5 \\ 6 \end{bmatrix} = 
+\begin{bmatrix} 5 \\ 6 \end{bmatrix} =
 \begin{bmatrix} 1 \\ 3\end{bmatrix} \times 5 +
 \begin{bmatrix} 2 \\ 4\end{bmatrix} \times 6 =
 \begin{bmatrix} 5 \\ 15\end{bmatrix} +
@@ -38,9 +40,9 @@ $$Ax =
 但通常 A 都不长这样。[^tmp-koan]
 
 [^tmp-koan]: 长这样怎么平差？……
-    
+
     多说点废话，刚才看到 Cramer's rule（克拉默法则）的 [维基页面](https://en.wikipedia.org/wiki/Cramer%27s_rule)，里面居然有个 Geometric interpretation，特别赞：
-    
+
     Consider the linear system
 
     $$\left\{\begin{matrix}a_1x+b_1y&={\color{red}c_1}\\ a_2x + b_2y&= {\color{red}c_2}\end{matrix}\right.$$
@@ -52,24 +54,24 @@ $$Ax =
     Assume $a1b2 − b1a2$ nonzero. Then, with help of determinants $x$ and $y$ can be found with Cramer's rule as
 
     $$\begin{align}
-    x &= \frac{\begin{vmatrix} {\color{red}{c_1}} & b_1 \\ {\color{red}{c_2}} & b_2 \end{vmatrix}}{\begin{vmatrix} a_1 & b_1 \\ a_2 & b_2 \end{vmatrix}} = { {\color{red}c_1}b_2 - b_1{\color{red}c_2} \over a_1b_2 - b_1a_2} \\ 
+    x &= \frac{\begin{vmatrix} {\color{red}{c_1}} & b_1 \\ {\color{red}{c_2}} & b_2 \end{vmatrix}}{\begin{vmatrix} a_1 & b_1 \\ a_2 & b_2 \end{vmatrix}} = { {\color{red}c_1}b_2 - b_1{\color{red}c_2} \over a_1b_2 - b_1a_2} \\
     y &= \frac{\begin{vmatrix} a_1 & {\color{red}{c_1}} \\ a_2 & {\color{red}{c_2}} \end{vmatrix}}{\begin{vmatrix} a_1 & b_1 \\ a_2 & b_2 \end{vmatrix}}  = { a_1{\color{red}c_2} - {\color{red}c_1}a_2 \over a_1b_2 - b_1a_2}
     \end{align}$$
-    
+
     几何图解如下（这就是上面所说的“拼”）：
-    
+
     ![](http://gnat.qiniudn.com/pics/cramer.jpg)
-    
+
     其中
-    
+
     #. （b）和（c）的面积（这里都说的阴影部分）一样
     #. （b）的面积比上（a）的面积为 $x_1$
-    
+
     所以（c）的面积比上（a）面积的也是 $x_1$。再结合
     “The determinant of the matrix A is the signed volume of the image of the unit cube.”（见另一篇：[雅各比行列式和矩阵的秩](post-0015-jacobian-and-determinant.html)），就有
-    
+
     $$x_1 = \frac{\operatorname{Area}(Shadow_3)}{\operatorname{Area}(Shadow_1)} = \frac{\begin{vmatrix} b_1 & a_{12} \\ b_2 & a_{22} \end{vmatrix}}{\begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix}}$$
-    
+
     &nbsp;
 
 通常 A 的形状都像是竖起来的长方形（如“|”），这就需要用投影的方式求一个 $x$ 的最佳估计值 $\hat x$。这个 $\hat x$ 就是在

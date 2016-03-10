@@ -13,6 +13,30 @@ AWK 文字处理
 入门：AWK 简明教程
 ------------------
 
+Data: `netstat.txt`
+
+:   ```tzx-plain
+    Proto Recv-Q Send-Q Local-Address          Foreign-Address             State
+    tcp        0      0 0.0.0.0:3306           0.0.0.0:*                   LISTEN
+    tcp        0      0 0.0.0.0:80             0.0.0.0:*                   LISTEN
+    tcp        0      0 127.0.0.1:9000         0.0.0.0:*                   LISTEN
+    tcp        0      0 coolshell.cn:80        124.205.5.146:18245         TIME_WAIT
+    tcp        0      0 coolshell.cn:80        61.140.101.185:37538        FIN_WAIT2
+    tcp        0      0 coolshell.cn:80        110.194.134.189:1032        ESTABLISHED
+    tcp        0      0 coolshell.cn:80        123.169.124.111:49809       ESTABLISHED
+    tcp        0      0 coolshell.cn:80        116.234.127.77:11502        FIN_WAIT2
+    tcp        0      0 coolshell.cn:80        123.169.124.111:49829       ESTABLISHED
+    tcp        0      0 coolshell.cn:80        183.60.215.36:36970         TIME_WAIT
+    tcp        0   4166 coolshell.cn:80        61.148.242.38:30901         ESTABLISHED
+    tcp        0      1 coolshell.cn:80        124.152.181.209:26825       FIN_WAIT1
+    tcp        0      0 coolshell.cn:80        110.194.134.189:4796        ESTABLISHED
+    tcp        0      0 coolshell.cn:80        183.60.212.163:51082        TIME_WAIT
+    tcp        0      1 coolshell.cn:80        208.115.113.92:50601        LAST_ACK
+    tcp        0      0 coolshell.cn:80        123.169.124.111:49840       ESTABLISHED
+    tcp        0      0 coolshell.cn:80        117.136.20.85:50025         FIN_WAIT2
+    tcp        0      0 :::22                  :::*                        LISTEN
+    ```
+
 Some Code Examples:
 
 ```bash

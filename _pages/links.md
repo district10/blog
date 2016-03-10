@@ -164,3 +164,4 @@ Links | 链签
 
 #. [THINKING MEGANE](http://blog.monochromegane.com/)
 #. [Krzysztof Kowalczyk](http://blog.kowalczyk.info/) `SumatraPDF`
+#. [Online LaTeX Equation Editor - create, integrate and download](http://www.codecogs.com/latex/eqneditor.php)

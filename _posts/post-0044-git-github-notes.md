@@ -19,7 +19,7 @@ GitHub 是什么
 
 * GitHub 的竞争对手：
     + 国外的 BitBucket，以及
-    + 中国的 GitHub 克隆版 GitCafe
+    + 中国的 GitHub 克隆版 GitCafe（已经合并到了 <Coding.net>）
 * 现在请注册一个 GitHub 账户（必须的），有账户的请登录
 
 ### Git 常用流程
@@ -50,13 +50,14 @@ GitHub 是什么
 
 ### 使用 GitHub 的前提以及一些常识
 
-* 联网的电脑
-* 网页登入（在网页上也可以很方便的查看别人代码，克隆别人的 Repo）
-* 控制台 SSH 连接（用 SSH 登入方便地同步代码，版本控制）
-* 最好学习一下 Markdown 的使用
+- 联网的电脑
+- 网页登入（在网页上也可以很方便的查看别人代码，克隆别人的 Repo）
+- 控制台 SSH 连接（用 SSH 登入方便地同步代码，版本控制）
+- 最好学习一下 Markdown 的使用
     + GitHub 上的 README 文档很多都是用 Markdown 写成（以 `.md` 结尾的文件）
 	+ 学习 Markdown 可参考我的博客：[Markdown 简明教程][markdown]
-* 文档保存时编码请使用 【UTF-8 无 BOM 格式编码】而不是 Windows 默认的 【ANSI 格式编码】，在 Notepad++ 里如下设置：
+- 文档保存时编码请使用 【UTF-8 无 BOM 格式编码】而不是 Windows 默认的 【ANSI 格
+  式编码】，在 Notepad++ 里如下设置：
 
     ![Notepad++ & UTF-8 encoding][ansi-utf8]
 
@@ -70,7 +71,7 @@ Windows 的话……
 ### 下载 Git for Windows
 
 Git 需要安装使用，到 [Git Scm][git-scm] 下载 Windows 版本：Git for Windows。
-因下载需要翻墙，这里提供一个备份：[Git-1.9.5][git-archive]。
+因下载需要翻墙，这里提供一个备份：[Git-2.7.2][git-archive]。
 
 ### 安装 Git for Windows
 
@@ -100,7 +101,8 @@ Git 需要安装使用，到 [Git Scm][git-scm] 下载 Windows 版本：Git for 
 
 【1】 打开 Git Bash
 
-在某一文件夹下右键单击打开 Git Bash，这是一个命令行环境，就像 Windows 下的 CMD，PowerShell 或者 Linux 下的 Bash，Zsh
+在某一文件夹下右键单击打开 Git Bash，这是一个命令行环境，就像 Windows 下的 CMD，
+PowerShell 或者 Linux 下的 Bash，Zsh
 
 【2】 Hello Git Bash
 
@@ -109,19 +111,19 @@ Git 需要安装使用，到 [Git Scm][git-scm] 下载 Windows 版本：Git for 
 ![hello world][git-hello]
 
 顺便把自己的用户名和邮箱配置一下：（把用户名和邮箱改成自己 GitHub 账号对应的用户名邮箱）
- 
+
 ```bash
-git config --global user.name "district10"
-git config --global user.email "gnat_tang@yeah.net"
+git config --global user.name "TANG ZhiXiong"
+git config --global user.email "dvorak4tzx@gmail.com"
 ```
 
-【3】 克隆一个 Github Repository
+【3】 克隆一个 GitHub Repository
 
 克隆（Clone）就是把代码复制到本地，到 GitHub 上找个 Repo，比如：<https://github.com/alols/xcape>
 
 在 Git Bash 里输入 `git clone https://github.com/alols/xcape`{.bash}，回车，就有：
 
-![git clone][git-clone-https]
+![`git clone`{.bash}][git-clone-https]
 
 【4】 配置 SSH
 
@@ -144,7 +146,7 @@ git config --global user.email "gnat_tang@yeah.net"
 
 ![][gen-ssh-c]
 
-到 Github 里设置 SSH，如下：
+到 GitHub 里设置 SSH，如下：
 
 【Step 1】
 
@@ -158,12 +160,14 @@ git config --global user.email "gnat_tang@yeah.net"
 
 ### 编辑器选择
 
-Geek 的编辑器有 Emacs，Vim，但是推荐大家使用 Notepad++（尤其是在 Windows 上），这个编辑器简单好用。而且有便携版，解压即可使用。
+Geek 的编辑器有 Emacs，Vim，但是推荐大家使用 Notepad++（尤其是在 Windows 上），
+这个编辑器简单好用。而且有便携版，解压即可使用。
 
-这里提供一个 Portable 版本下载：<http://download.tuxfamily.org/notepadplus/6.6.8/npp.6.6.8.bin.7z>
+这里提供一个 Portable 版本下载：
+<http://download.tuxfamily.org/notepadplus/6.6.8/npp.6.6.8.bin.7z>
 
 [git-scm]: http://www.git-scm.com/downloads
-[git-archive]: http://gnat.qiniudn.com/Git-1.9.5-preview20150319.exe
+[git-archive]: http://whudoc.qiniudn.com/Git-2.7.2-64-bit.exe
 [git-for-windows]: http://whudoc.qiniudn.com/github-guide/img/git-for-windows.png
 [git-setup-a]: http://whudoc.qiniudn.com/github-guide/img/git-setup-components.png
 [git-setup-b]: http://whudoc.qiniudn.com/github-guide/img/git-setup-gitbash.png
@@ -188,9 +192,9 @@ Geek 的编辑器有 Emacs，Vim，但是推荐大家使用 Notepad++（尤其�
 
 【2】
 
-然后输入新 Repo 的名称，输入 Repo 说明，选择 Public（Private 要收费），
-勾选生成 `README` 文档，选择一个 `.gitignore` 文件（也可不选），
-选择一个协议，这里我选了 `GPL v3`，整个如下：
+然后输入新 Repo 的名称，输入 Repo 说明，选择 Public（Private 要收费），勾选生成
+`README` 文档，选择一个 `.gitignore` 文件（也可不选），选择一个协议，这里我选了
+`GPL v3`，整个如下：
 
 ![][new-repo-b]
 
@@ -248,7 +252,8 @@ git commit -m "Msg"
 git push
 ```
 
-即可把代码同步到 GitHub。Git 在编写代码时可以很好的控制版本，深入的学习，可以参考 [最好的 Git 进阶材料][progit-learn-more]
+即可把代码同步到 GitHub。Git 在编写代码时可以很好的控制版本，深入的学习，可以参
+考 [最好的 Git 进阶材料][progit-learn-more]。
 
 [new-repo-a]: http://whudoc.qiniudn.com/github-guide/img/new-repo-a.png
 [new-repo-b]: http://whudoc.qiniudn.com/github-guide/img/new-repo-b.png
@@ -267,9 +272,9 @@ git push
 
 ### 为什么要学习 Git
 
-* XDite 的博文：[有效提升大學生競爭力 -- 用 Git Pull Request 收作業][git-homework]
-* 合作（哪怕最开始是打打杂）：
-  [added an empty line before quotation by district10 · Pull Request #20 · sparanoid/chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines/pull/20)
+- XDite 的博文：[有效提升大學生競爭力 -- 用 Git Pull Request 收作業][git-homework]
+- 合作（哪怕最开始是打打杂）：[added an empty line before quotation by
+  district10 · Pull Request #20 · sparanoid/chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines/pull/20)
 
 ### 文档撰写与 Coding 规范
 
@@ -311,7 +316,8 @@ git push
 
 一个更加详细的流程：
 
-:   [webogram/CONTRIBUTING.md at master · zhukov/webogram](https://github.com/zhukov/webogram/blob/master/CONTRIBUTING.md)
+:   [webogram/CONTRIBUTING.md at master ·
+    zhukov/webogram](https://github.com/zhukov/webogram/blob/master/CONTRIBUTING.md)
 
 ---
 

@@ -242,7 +242,6 @@ h1:before h2:before h3:before {
 }
 
 h1.title {
-    // visibility: hidden;
     display: none;
 }
 
@@ -444,7 +443,7 @@ dt {
 // div.reads > ol > li,
 // div.reads > ol > li > a,
 // div.reads > ol > li > dl > dt,
-div.reads > ol > li > dl > dt > a {
+div.reads > ol > li > dl > dt:nth-child(1) > a:nth-child(1) {
     white-space: nowrap; !important
 }
 
@@ -529,6 +528,10 @@ div#TOC:hover {
     visibility: hidden;
 }
 
+pre.tzx-plain code {
+	color: black;
+}
+
 pre.tzx-poem code {
 	color: black;
 	// font-variant: small-caps;
@@ -546,12 +549,15 @@ pre.tzx-bigquote code {
 
 .tzx-fright {
     float: right;
-	padding-left: 1em;
 }
 
 .tzx-fleft {
     float: left;
-	padding-right: 1em;
+}
+
+.tzx-fright, .tzx-fleft {
+    clear: both;
+	padding-left: 1em;
 }
 
 .tzx-tag {
@@ -559,9 +565,14 @@ pre.tzx-bigquote code {
   clear: both;
   margin: 0.2em;
   margin-right: -200px;
+  color: black;
 }
 
 .tzx-bigquote > code {
     margin: 0 auto;
     color: red;
+}
+
+.tzx-anchor {
+    visibility: hidden;
 }

@@ -12,6 +12,7 @@ or <http://blog.tangzhixiong.com>
 * [ ] 把自己原来的文章慢慢都放到这个 blog 上
 * [ ] 安利！
 * [ ] [zenorocha/clipboard.js: Modern copy to clipboard. No Flash. Just 2kb](https://github.com/zenorocha/clipboard.js/)
+* [ ] [chunksnbits/jquery-quickfit: A quick and dirty approach to fitting text into its surrounding container.](https://github.com/chunksnbits/jquery-quickfit)
 
 ## Warning
 

@@ -12,7 +12,54 @@ V/\n#. ?kbzf
 
 <div class="reads">
 
-#. &#x2610;
+#. &#x2610; [jquery - Auto-size dynamic text to fill fixed size container - Stack Overflow](http://stackoverflow.com/questions/687998/auto-size-dynamic-text-to-fill-fixed-size-container)
+#. &#x2610; [Reference Counted Objects in OSG and Producer](http://www.andesengineering.com/OSG_ProducerArticles/RefPointers/RefPointers.html)
+#. &#x2610; [qt+osg+vs2008中(msvcr90.dll) 处最可能的异常: 0xC0000005的问题解决 - xhcumt的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/xhcumt/article/details/4779040)
+
+同样在官方论坛上找到答案:是Project属性配置引起的, Project Properties->Configuration Properties->C/C++->Code Generation->Runtime Library, 把Multi-threaded Debug DLL (/MDd)改为Multi-threaded DLL (/MD), 而/MDd是Debug的默认选项. 不过文中提到的有关”_DEBUG”改为”NDEBUG”倒不必.
+
+
+#. &#x2610; [File and Disk Utilities: Sysinternals Center](https://technet.microsoft.com/en-us/sysinternals/bb545046)
+#. &#x2610; [Windows Sysinternals: Documentation, downloads and additional resources](https://technet.microsoft.com/en-us/sysinternals)
+#. &#x2610; [Learn how to use Microsoft Windows 7 | Easier faster computing](http://vlaurie.com/windows-7-tips/)
+#. &#x2610; [How to Copy and Paste in the Windows Command Prompt | Gizmo's Freeware](http://www.techsupportalert.com/content/how-copy-and-paste-windows-command-prompt.htm)
+
+- CMD, click the icon, in config, turn on quick edit mode.
+- CMD, Alt-Space, E(dit), P(aste)
+
+A few links for peoples frequently using the command prompt or a shell:
+
+* ConEmu http://code.google.com/p/conemu-maximus5/
+A console emulator with tabs, it works fine with everything listed below. (It allows line/block selection for copying.)
+
+* CygWin http://cygwin.com/
+This is a HUGE collection of gnu/linux tools for windows, from bash to zsh, perl, gcc, mc... If you're a linux guy, you'll feel at home with this.
+
+* TCC/LE http://jpsoft.com/
+It's 4DOS, an enhanced cmd.exe, a must have. (Like NDOS)
+
+* FAR Manager http://farmanager.com/
+Norton commander clone.
+
+* SysInternals Suite http://sysinternals.com/
+Various command-line and gui tools: process, junctions, etc.
+
+* NirCMD http://www.nirsoft.net/utils/nircmd.html
+Small utility that allows you to do some useful windows tasks.
+
+* CLink https://code.google.com/p/clink/
+Better completion for cmd.exe
+
+I hope someone might find this helpful.
+
+
+#. &#x2610; [愤怒的小怪兽 - 廖雪峰的官方网站](http://www.liaoxuefeng.com/article/001430724785251f1f92d9d5f524530b5c5b8c0f42f1b1b000)
+#. &#x2610; [Clojure 驱动的 Web 开发](http://www.ibm.com/developerworks/cn/java/j-io-ClojureWeb/)
+#. &#x2610; [Moment.js 中文网](http://momentjs.cn/)
+#. &#x2610; [moment/momentjs.com: The website for momentjs](https://github.com/moment/momentjs.com)
+
+效果很好。
+
 #. &#x2610; [vim - How do I open the directory of the current open file? - Super User](http://superuser.com/questions/31677/how-do-i-open-the-directory-of-the-current-open-file)
 :   ?
     :   - `:Sex .`
