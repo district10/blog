@@ -31,6 +31,199 @@ pre {
 
 <!--...-->
 
+```c
+size_t strlen( const char *s )
+{
+    const char *c;
+    for(){}
+    return c-s;
+}
+char *strcpp( char *to, const char *from  )
+{
+    char *p = to;
+    while( ... ) {}
+    retunr to;
+}
+
+void strstr( const char *haystack, const char *needle )
+{
+ 
+}
+int atoi( const char *str )
+{
+int len;
+stip preceding white chars;
+parse sign, +, -, or no sign
+c = '0'-'9' ? 
+overflow?
+*10 + *c-'0'
+return num * sign;
+}
+
+substring searching
+  kmp
+
+    char *text, char *pattern;
+  int n, m;
+  n,m,0?
+  init _prefix ( pattern, next )
+  free (next)
+  loop: text[i]=pattern[j]? ++i else j = next(?)
+
+  tests: char *text, char *pattern, int i = kmp(), i>0?printf;
+
+  Boyer-Moore algo,
+    推 荐 网 上 的 几 篇 比 较 好 的 博 客,“字 符 串 匹 配 的 Boyer-Moore 算 法”
+    http://www.ruanyifeng.com/blog/2013/05/boyer-moore_string_search_algorithm.html,图文并茂,非常通俗
+    易懂,作者是阮一峰; Boyer-Moore algorithm, http://www-igm.univ-mlv.fr/ lecroq/string/node14.html。
+
+    rabin-karp.
+
+
+    regexp?
+
+typedef int stack_elem_t;
+typedef struct {
+    int size;
+    int capicity;
+    stack_elem_t *elems;
+} stack_t;
+
+stack_t *stack_create( const int capacity ) {
+    malloc stack_t;
+    malloc elements;
+    assign;
+    return s;
+}
+
+void destroy( stack_t *s){
+    free(s->elems);
+    free(s);
+}
+
+bool empty(s);
+int size(s);
+void push(s, elem){
+    full?
+    expand size;
+    push;
+    s->elems[s->size++] = x; // pa: ++size or size++, which is better
+}
+int top(){} // pa: size++ -> size-1
+void pop(){
+    --size;
+    }
+
+
+hanoi tower, recursive.
+n==1? just move x->z;
+
+hanoi(n, from, bridge, to);
+
+convert base, void (int n, int d)
+while(n!=0)
+r=n%d; push(r);
+n=n/d;
+如果可以预估栈的最大空间,则用数组来模拟栈,这时常用的一个技巧。
+* 这里,栈的最大长度是多少?假设 CPU 是 64 位,最大的整数则是 2^64,由于
+* 数制最小为 2,在这个进制下,数的位数最长,这就是栈的最大长度,最长为 64。
+
+10->d, hader,
+d->10, easy! char->num, n=n*d+num;
+
+queue.
+
+typedef struct {
+    int front;
+    int rear;
+    int capacity;
+    queue_elem_t *elems;
+} queue_t;
+
+create(int capacity);
+malloc(queue);
+malloc(queue->elems);
+return queue;
+
+destroy(queue *q);
+free(q->elems);
+free(q);
+
+empty?: rear==front;
+size: (rear-front+capacity)%capacity
+
+push(q, elem x){
+    full?: (rear+1)%capacity==front
+    realloc, reassign: front<rear? easy : two parts;
+    free(origin-elems);
+    elems=new mems;
+
+
+       void *memcpy(void *dest, const void *src, size_t n);
+
+
+rear = (read+1)%capacity;
+
+binary tree:
+
+typedef struct {
+    binary_tree_node_t *left;
+    binary_tree_node_t *right;
+    tree_node_elem_t elem;
+} binary_tree_node_t;
+
+
+pre_order_r( const *root, int (*visit)(const *tree)) {
+    if (!root) return;
+    visit( root );
+    pre_order_r( root->left, visit );
+    pre_order_r( root->right, visit );
+}
+
+in_order_r( const *root, int (*visit)(const *tree)) {
+    if (!root) return;
+    in_order_r( root->left, visit );
+    visit( root );
+    in_order_r( root->right, visit );
+}
+
+post_order_r( const *root, int (*visit)(const *tree)) {
+    if (!root) return;
+    post_order_r( root->left, visit );
+    post_order_r( root->right, visit );
+    visit( root );
+}
+
+
+// no recursive version
+pre_order( *tree, int (*visit)(*tree) ) {
+
+}
+```
+
+By pressing $mod+Enter, a new terminal will be opened. It will fill the whole space available on your screen.
+
+Therefore, $mod+j is left, $mod+k is down, $mod+l is up and $mod+; is right. So, to switch between the terminals, use $mod+k or $mod+l. Of course, you can also use the arrow keys.
+
+To split a window vertically, press $mod+v before you create the new window. To split it horizontally, press $mod+h.
+
+To switch modes, press $mod+e for splith/splitv (it toggles), $mod+s for stacking and $mod+w for tabbed.
+
+To display a window in fullscreen mode or to go out of fullscreen mode again, press $mod+f.
+
+If an application does not provide a mechanism for closing (most applications provide a menu, the escape key or a shortcut like Control+w to close), you can press $mod+Shift+q to kill a window. For applications which support the WM_DELETE protocol, this will correctly close the application (saving any modifications or doing other cleanup). If the application doesn’t support the WM_DELETE protocol your X server will kill the window and the behaviour depends on the application.
+
+$mod+num, goto workspace,
+$mod+shift+num, move window to workspace.
+
+To restart i3 in place (and thus get into a clean state if there is a bug, or to upgrade to a newer version of i3) you can use $mod+Shift+r.
+
+To cleanly exit i3 without killing your X server, you can use $mod+Shift+e. By default, a dialog will ask you to confirm if you really want to quit.
+
+You can toggle floating mode for a window by pressing $mod+Shift+Space. By dragging the window’s titlebar with your mouse you can move the window around. By grabbing the borders and moving them you can resize the window. You can also do that by using the [floating_modifier]. Another way to resize floating windows using the mouse is to right-click on the titlebar and drag.
+
+---
+
 - `:%s/^\(.*\)(/\L\1/`, cmake, lowercase commands
 
 
@@ -134,6 +327,15 @@ public:
 
 ---
 
+
+mnemonic
+英 [nɪ'mɒnɪk] 美 [nɪ'mɑnɪk]
+
+    adj. 记忆的；助记的；记忆术的
+
+ Four core pillars: Mnemonic, Discoverable, Consistent and "Crowd-Configured". 
+
+---
 
 * [Language Tags in HTML and XML | W3C](http://www.w3.org/International/articles/language-tags/)
 

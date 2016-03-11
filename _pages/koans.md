@@ -13,6 +13,17 @@ code.tzx-timestamp {
 
 <div class="koans"><!-- 下面要有空行 | One Empty Line Reserved Below -->
 
+## `1457701284`{.tzx-timestamp} Dafuq
+
+The first Continental Congress was held in ____________ in September 1774.
+
+A. Chicago
+B. Boston
+C. New York
+D. Philadelphia
+
+... what the fuck...
+
 ## `1457620226`{.tzx-timestamp} 强迫症患者
 
 每次拿到别人的代码我都要花点时间改成自己能看的状态。大家写代码的时候也太不注意
