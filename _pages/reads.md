@@ -12,6 +12,12 @@ V/\n#. ?kbzf
 
 <div class="reads">
 
+#. &#x2610;
+#. &#x2610; [c++ - Linking different libraries for Debug and Release builds in Cmake on windows? - Stack Overflow](http://stackoverflow.com/questions/2209929/linking-different-libraries-for-debug-and-release-builds-in-cmake-on-windows)
+
+You should not test CMAKE_BUILD_TYPE in the CMake file, it is ignored by multi configuration generators (like VS). If you run cmake with CMAKE_BUILD_TYPE=Debug but Release in VS the code in if(CMAKE_BUILD_TYPE MATCHES Release) is simply ineffective.
+
+#. &#x2610; [OSG+VS2010+win7环境搭建 - 缑城浪子 - 博客园](http://www.cnblogs.com/eaglezhao/archive/2011/07/12/eaglezhao.html)
 #. &#x2610; [jquery - Auto-size dynamic text to fill fixed size container - Stack Overflow](http://stackoverflow.com/questions/687998/auto-size-dynamic-text-to-fill-fixed-size-container)
 #. &#x2610; [Reference Counted Objects in OSG and Producer](http://www.andesengineering.com/OSG_ProducerArticles/RefPointers/RefPointers.html)
 #. &#x2610; [qt+osg+vs2008中(msvcr90.dll) 处最可能的异常: 0xC0000005的问题解决 - xhcumt的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/xhcumt/article/details/4779040)

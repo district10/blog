@@ -13,6 +13,20 @@ code.tzx-timestamp {
 
 <div class="koans"><!-- 下面要有空行 | One Empty Line Reserved Below -->
 
+## `1457620226`{.tzx-timestamp} 强迫症患者
+
+每次拿到别人的代码我都要花点时间改成自己能看的状态。大家写代码的时候也太不注意
+了！格式根本不 consistant。我弄了一些 vim 脚本（键盘宏）来处理基本的，但是感觉
+这样效率不高。我应该准备一套 vim 的宏放到寄存器，还准备一些 perl 脚本转本来批处
+理。
+
+这个一定要 GET 起来！Scratch your own itchy。
+
+## `1457617233`{.tzx-timestamp} 虾米猜
+
+简直是瞎猜！推荐的歌我几乎都不喜欢。pinjinjian 唱得跟屎一样。
+七緒香。
+
 ## `1457442269`{.tzx-timestamp} 搞定时间戳！
 
 咋那么难！（2016/03/08, 21:05）

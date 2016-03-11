@@ -31,6 +31,43 @@ pre {
 
 <!--...-->
 
+- `:%s/^\(.*\)(/\L\1/`, cmake, lowercase commands
+
+
+*/character-classes*
+
+| ...    | ...     | ...     | ...                                           |
+| :---:  | :---:   | :---:   | :---:                                         |
+|  `/\i` |  `\i`   |   `\i`  |   identifier character (see 'isident' option) |
+|  `/\I` |  `\I`   |   `\I`  |   like "\i", but excluding digits |
+|  `/\k` |  `\k`   |   `\k`  |   keyword character (see 'iskeyword' option) |
+|  `/\K` |  `\K`   |   `\K`  |   like "\k", but excluding digits |
+|  `/\f` |  `\f`   |   `\f`  |   file name character (see 'isfname' option) |
+|  `/\F` |  `\F`   |   `\F`  |   like "\f", but excluding digits |
+|  `/\p` |  `\p`   |   `\p`  |   printable character (see 'isprint' option) |
+|  `/\P` |  `\P`   |   `\P`  |   like "\p", but excluding digits |
+|  `/\s` |  `\s`   |   `\s`  |   whitespace character: <Space> and <Tab> |
+|  `/\S` |  `\S`   |   `\S`  |   non-whitespace character; opposite of \s |
+|  `/\d` |  `\d`   |   `\d`  |   digit:              `[0-9]` |
+|  `/\D` |  `\D`   |   `\D`  |   non-digit:          `[^0-9]` |
+|  `/\x` |  `\x`   |   `\x`  |   hex digit:          `[0-9A-Fa-f]` |
+|  `/\X` |  `\X`   |   `\X`  |   non-hex digit:          `[^0-9A-Fa-f]` |
+|  `/\o` |  `\o`   |   `\o`  |   octal digit:            `[0-7]` |
+|  `/\O` |  `\O`   |   `\O`  |   non-octal digit:        `[^0-7]` |
+|  `/\w` |  `\w`   |   `\w`  |   word character:         `[0-9A-Za-z_]` |
+|  `/\W` |  `\W`   |   `\W`  |   non-word character:     `[^0-9A-Za-z_]` |
+|  `/\h` |  `\h`   |   `\h`  |   head of word character:     `[A-Za-z_]` |
+|  `/\H` |  `\H`   |   `\H`  |   non-head of word character: `[^A-Za-z_]` |
+|  `/\a` |  `\a`   |   `\a`  |   alphabetic character:       `[A-Za-z]` |
+|  `/\A` |  `\A`   |   `\A`  |   non-alphabetic character:   `[^A-Za-z]` |
+|  `/\l` |  `\l`   |   `\l`  |   lowercase character:        `[a-z]` |
+|  `/\L` |  `\L`   |   `\L`  |   non-lowercase character:    `[^a-z]` |
+|  `/\u` |  `\u`   |   `\u`  |   uppercase character:        `[A-Z]` |
+|  `/\U` |  `\U`   |   `\U`  |   non-uppercase character     `[^A-Z]` |
+|  `/\_` |  `\_x`  |   `\_x` |   where x is any of the characters above: character |
+
+see more at `:h regexp`
+
 - `%s/pattern//gn`, count of matches
 - `%s/pattern//n`, count of lines with matches
 - `%s///n`, count of current word
