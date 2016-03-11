@@ -1,4 +1,3 @@
-GEN   = ../_bin/_gen.sh
 PODIR = ../publish
 MDS   = $(wildcard *.md)
 PAGES = $(addprefix $(PODIR)/, $(MDS:%.md=%.html))
@@ -9,7 +8,7 @@ clean:
 	rm -f $(PAGES)
 
 $(PODIR)/%.html: %.md
-	cat $^ | pandoc -S -s --ascii -c main.css -A ../footer.html --toc --highlight-style pygments -f markdown -o $@
+	pandoc -S -s --ascii -c main.css -A ../footer.html --toc --highlight-style pygments -f markdown $^ -o $@
     
 4: 404
 404:

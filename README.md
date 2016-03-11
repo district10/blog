@@ -18,7 +18,7 @@ or <http://blog.tangzhixiong.com>
 
 文档不全，谨慎 fork。
 
-## Configure Editor
+## Editor Configuration
 
 For Windows
 
