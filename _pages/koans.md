@@ -27,9 +27,11 @@ code.tzx-timestamp {
 简直是瞎猜！推荐的歌我几乎都不喜欢。pinjinjian 唱得跟屎一样。
 七緒香。
 
+<!--
 ## `1457442269`{.tzx-timestamp} 搞定时间戳！
 
 咋那么难！（2016/03/08, 21:05）
+-->
 
 ## `1457153290`{.tzx-timestamp} Colm Wilkinson
 
@@ -168,10 +170,13 @@ set(CMAKE_DEBUG_POSTFIX "d")
 1. 我没有改那个模块的源码；
 2. 我没有改工程的 CMakeLists；
 
-话说我还犯了几次类似 [c++ - CMake cannot determine linker language for target - Stack Overflow](http://stackoverflow.com/questions/16655705/cmake-cannot-determine-linker-language-for-target) 的错误，真是无可救药。
+话说我还犯了几次类似 [c++ - CMake cannot determine linker language for target -
+Stack Overflow](http://stackoverflow.com/questions/16655705/cmake-cannot-determine-linker-language-for-target)
+的错误，真是无可救药。
 
 ## `1455986511`{.tzx-timestamp} 你知道我在这耗了多久？
 
+<div style="font-size:80%">
 ```cpp
 osgUtil::LineSegmentIntersector::Intersections::iterator hiter;
 for ( hiter = intersections.begin(); hiter != intersections.end(); ++hiter ) {
@@ -195,6 +200,7 @@ for ( hiter = intersections.begin(); hiter != intersections.end(); ++hiter ) {
     }
 }
 ```
+</div>
 
 当然，计算机是不会逗你的。肯定是自己弄错了。
 
@@ -207,15 +213,20 @@ for ( hiter = intersections.begin(); hiter != intersections.end(); ++hiter ) {
 好，反思一下。我蠢在哪？
 
 1. 头文件里用的是声明：`class <class-name>`，源文件里才引入 `<class-name>` 的定义。
-    这导致了我的函数可以有，返回值却不可以有。
+   这导致了我的函数可以有，返回值却不可以有。
 2. CMakeLists 里不加依赖，这是不可原谅的错误。
-3. 居然以前没有发现在头文件里 `class <class-name>` 的 pitfall：代码没有真正加进来。可以会在链接时期出问题。
+3. 居然以前没有发现在头文件里 `class <class-name>` 的 pitfall：代码没有真正加进
+   来。可以会在链接时期出问题。
 
+<!--
 ## `1455907067`{.tzx-timestamp} 暴力？
 
-> 如果你能破解 md5sum 的话， 我会感到很荣幸和你聊聊：ff8fb48d51329ad82a306fa309b97e3a（将 QQ 号写入文件、 不带换行符的文件的 md5sum）。
+> 如果你能破解 md5sum 的话， 我会感到很荣幸和你聊聊：
+> `ff8fb48d51329ad82a306fa309b97e3a`（将 QQ 号写入文件、 不带换行符的文件的
+> md5sum）。
 
 关键是 QQ 号就那么几种啊……10^9 一个个试。不过……好想量有点大唉……
+-->
 
 ## `1455906520`{.tzx-timestamp} 在学校的蛋疼生活
 
@@ -242,8 +253,9 @@ shit。
 
 ## `1455741001`{.tzx-timestamp} 爱死 GitHub 了！
 
-`Copy as Markdown` 很赞，但我想要 org-mode 格式的链接，
-GitHub 上有了：[kuanyui/copy-as-org-mode: Copy Link, Image and Table in Page as Org-mode Format!](https://github.com/kuanyui/copy-as-org-mode)
+`Copy as Markdown` 很赞，但我想要 org-mode 格式的链接，GitHub 上有了：
+[kuanyui/copy-as-org-mode: Copy Link, Image and Table in Page as
+Org-mode Format!](https://github.com/kuanyui/copy-as-org-mode)
 
 不要太赞。
 
@@ -281,7 +293,8 @@ Aborting
 
 ## `1454914559`{.tzx-timestamp} 变态的塔塔酱
 
-这是在简书看到最早人之一，不过……我忘了他那时候的网名……这篇 [随笔：DOC VS ORG - 简书](http://www.jianshu.com/p/360352dd05f2)
+这是在简书看到最早人之一，不过……我忘了他那时候的网名……^[想起来了，那时候他叫 LostAbaddon。]
+这篇 [随笔：DOC VS ORG - 简书](http://www.jianshu.com/p/360352dd05f2)
 我很早前就看过，不过再看一遍，还是被他打败了：
 
 > Emacs为ORG带来了极大的便利，因为Emacs可以自定义各种快捷键，而这就使得ORG的编
@@ -315,7 +328,9 @@ Aborting
 
 #. 我一直以为读音是“shuli”……原来就是“shushu”。
 #. 我真是想不通了。Bash 里面为什么把 Emacs 的快捷键全拿过去了……连 `M-- M-u` 都能用……
-#.  Using evil (simulating vim-like behaviour), I use this trick: :r!xsel or :r!xsel -b what reads output of command specified after exclamation mark. On MacOS you would probably use pbaste. – Jan Vlcinsky
+#. Using evil (simulating vim-like behaviour), I use this trick: :r!xsel or
+   :r!xsel -b what reads output of command specified after exclamation mark. On
+   MacOS you would probably use pbaste. – Jan Vlcinsky
 
 一看就是 Vim 也了解得不够的人……
 
@@ -459,14 +474,14 @@ So it will be.
 外，我一直觉得一个高明的坏蛋比一个无能的佛祖更有益于人类的整体发展。
 无疑毛爷爷很高明，而且不混蛋。
 
-不知道多少人一提起毛爷爷，就想到文革，就想到饥荒饿死人，就想到长春的屠城。
-然而，文革并非毛爷爷所愿（江青倒是真让我觉得女人的可怕），毛最后几年时光
-都是憔悴、无力、寂寥地，你指望他有年轻时跟打劫的土匪拼了的毅力决心和体力吗？
-饥荒？我想每个人都有打肿脸充胖子的时候，比如小时候妈妈让你穿衣服你不穿，冻成狗
-你也只能在心里骂骂娘，跟你妈依旧只能嘴上硬说“不冷”。这种打肿脸充胖子在建国初期
-也有积极意义，那时候全世界都不看好我们。毛爷爷能带我们一起要饭去？
-至于屠城，即便是真的。那也无奈，懂得统筹的人这时都不得不适时割舍。
-只要不是变态，每个人都会难受。但寒冷若是不可避免的，请扛住。
+不知道多少人一提起毛爷爷，就想到文革，就想到饥荒饿死人，就想到长春的屠城。然而
+，文革并非毛爷爷所愿（江青倒是真让我觉得女人的可怕），毛最后几年时光都是憔悴、
+无力、寂寥地，你指望他有年轻时跟打劫的土匪拼了的毅力决心和体力吗？饥荒？我想每
+个人都有打肿脸充胖子的时候，比如小时候妈妈让你穿衣服你不穿，冻成狗你也只能在心
+里骂骂娘，跟你妈依旧只能嘴上硬说“不冷”。这种打肿脸充胖子在建国初期也有积极意义
+，那时候全世界都不看好我们。毛爷爷能带我们一起要饭去？至于屠城，即便是真的。那
+也无奈，懂得统筹的人这时都不得不适时割舍。只要不是变态，每个人都会难受。但寒冷
+若是不可避免的，请扛住。
 
 总之，毛爷爷是个个性十足有毅力，坚韧不拔不畏缩的人。
 
@@ -589,12 +604,14 @@ void doSomething( status_t *currentStatus ) {
 
 ## `1450836121`{.tzx-timestamp} 《权利的游戏》里最好看的女人
 
-很多人喜欢“龙母” Daenerys Targaryen（Emilia Clarke），但我觉得她并不好看[^eastface]。她还在《终结者 5》饰演了 Sarah Connor，同样，我也不喜欢。
-Game of Throne 里面我喜欢的是 Rose Leslie 饰演的 Ygritte（老拼不对，这次我要记住！），如下图：
-
-[^eastface]: 如果喜欢东西方混合的美，就去看 [Rosamund Pike](http://www.imdb.com/name/nm0683253/?ref_=tt_cl_t2)，然而，同样我并不觉得她有那么美。
+很多人喜欢“龙母” Daenerys Targaryen（Emilia Clarke），但我觉得她并不好看
+[^eastface]。她还在《终结者 5》饰演了 Sarah Connor，同样，我也不喜欢。Game of
+Throne 里面我喜欢的是 Rose Leslie 饰演的 Ygritte（老拼不对，这次我要记住！），
+如下图：
 
 ![](http://whudoc.qiniudn.com/ygritte.jpg)
+
+[^eastface]: 如果喜欢东西方混合的美，就去看 [Rosamund Pike](http://www.imdb.com/name/nm0683253/?ref_=tt_cl_t2)，然而，同样我并不觉得她有那么美。
 
 当然，Shae 也很漂亮。
 
@@ -697,7 +714,9 @@ Sakai 唯一一次演唱会，那时候她都老了。
 
 ## `1450516728`{.tzx-timestamp} Small Powerful Tool
 
-Notepad++ is a free (as in "free speech" and also as in "free beer") source code editor and Notepad replacement that supports several languages. Running in the MS Windows environment, its use is governed by GPL License.
+Notepad++ is a free (as in "free speech" and also as in "free beer") source
+code editor and Notepad replacement that supports several languages. Running in
+the MS Windows environment, its use is governed by GPL License.
 
 简单强大的典型：Notepad++，而且不自说自话打扰你。
 
@@ -705,24 +724,26 @@ Notepad++ is a free (as in "free speech" and also as in "free beer") source code
 
 ## `1450509617`{.tzx-timestamp} Windows Sucks
 
-想不通了怎么会这么卡！老师给的笔记本配置好到爆（除了网卡和硬盘），居然动不动就 freeze。
-现在不得不把外观调到最差，才显得流畅一些。比较让人不舒服的是，除了那些有广告的恶心软件，
-大多数软件也都特别无耻地有事没事更新，关都关不掉，比如：Firefox 整天催着我 update，VS 整天
-提醒我有新的 Extension 可以更新。还有 OneNote，整天启动，但我真心不想用你了！
+想不通了怎么会这么卡！老师给的笔记本配置好到爆（除了网卡和硬盘），居然动不动就
+freeze。现在不得不把外观调到最差，才显得流畅一些。比较让人不舒服的是，除了那些
+有广告的恶心软件，大多数软件也都特别无耻地有事没事更新，关都关不掉，比如：
+Firefox 整天催着我 update，VS 整天提醒我有新的 Extension 可以更新。还有 OneNote
+，整天启动，但我真心不想用你了！
 
 网卡让人无语到根本不想上网。在长沙的时候，谢师傅的电脑能上网，我和大侠的就是不
 行。只能说这电脑是中看不中用。
 
-就跟所有的手机让我不满意一样，我对所有的电脑也不满意，尤其是字体大小这一点。
-你们就不能默认大一点的字体？Windows 上我总是设置成全系统 125%，现在我要改成 150%。
-这一点上 Mac OS X 和各种 Linux distros 一样蠢，都喜欢把字体设置为 12px 以及以下。
-然后现在分辨率早不是原来 800x600，设置成 18px 都不过分。
+就跟所有的手机让我不满意一样，我对所有的电脑也不满意，尤其是字体大小这一点。你
+们就不能默认大一点的字体？Windows 上我总是设置成全系统 125%，现在我要改成 150%
+。这一点上 Mac OS X 和各种 Linux distros 一样蠢，都喜欢把字体设置为 12px 以及以
+下。然后现在分辨率早不是原来 800x600，设置成 18px 都不过分。
 
-Windows 另一个傻逼之处是如果更新了，开机还要配置很久，从来不考虑用户开机的时候很忙，
-不想干等着你龟速地更新。关机也一样。最起码提供一个“我现在安装了更新，但我这次关机/开机/重启
-不希望它做任何耗时的改变”这个选项吧。
+Windows 另一个傻逼之处是如果更新了，开机还要配置很久，从来不考虑用户开机的时候
+很忙，不想干等着你龟速地更新。关机也一样。最起码提供一个“我现在安装了更新，但我
+这次关机/开机/重启不希望它做任何耗时的改变”这个选项吧。
 
-Windows 的 Explorer 的 `Control` 加滚轮居然是改变视图模式，然而我就是想改变字体大小，而已。
+Windows 的 Explorer 的 `Control` 加滚轮居然是改变视图模式，然而我就是想改变字体
+大小，而已。
 
 ## `1450503402`{.tzx-timestamp} 国内技术社区
 
@@ -773,7 +794,9 @@ getline( &line, &len, fp );
 很多时候我更倾向于用 Qt Creator。因为它很贴心地有一个“切换头文件/源文件（F4）”的功能，
 而 VS 居然只能“Go To Header File”，我怎么回来？每次都要找到文件列表，或者踩着一个函数“Go To Definition（F12）”。
 
-去网上查了，有人弄了宏实现：[Visual Studio Macro to switch between CPP and H files | Alteridem [al′tər ī′dem′]](http://www.alteridem.net/2008/02/26/visual-studio-macro-to-switch-between-cpp-and-h-files/)。
+去网上查了，有人弄了宏实现：[Visual Studio Macro to switch between CPP and H
+files | Alteridem `[al′tər ī′dem′]`](http://www.alteridem.net/2008/02/26/visual-studio-macro-to-switch-between-cpp-and-h-files/)
+。
 
 但，我已经被 VS 蠢哭。
 
@@ -862,11 +885,13 @@ n. 好; 慷慨的行为; 好事<br/>adj. 好的, 上等的, 优良的
 
 ## `1450320066`{.tzx-timestamp} Emacs with Evil-mode on Windows
 
-首先下载 [Evil-mode](https://bitbucket.org/lyro/evil/wiki/Home)，或者用我的备份：<http://whudoc.qiniudn.com/evil.7z>
+首先下载 [Evil-mode](https://bitbucket.org/lyro/evil/wiki/Home)，或者用我的
+备份：<http://whudoc.qiniudn.com/evil.7z>
 
-然后打开 Emacs（我的备份：<http://whudoc.qiniudn.com/emacs.7z>），随便修改一下配置，然后保存配置（`Options -- Save Options`），下面会出现你的配置地址，通常是
-当前用户的 Roaming 文件夹（如：`C:\Users\Administrator\AppData\Roaming`），文件夹下
-有一个 `.emacs` 文件和一个 `.emacs.d` 文件夹。
+然后打开 Emacs（我的备份：<http://whudoc.qiniudn.com/emacs.7z>），随便修改一下
+配置，然后保存配置（`Options -- Save Options`），下面会出现你的配置地址，通常是
+当前用户的 Roaming 文件夹（如：`C:\Users\Administrator\AppData\Roaming`），文件
+夹下有一个 `.emacs` 文件和一个 `.emacs.d` 文件夹。
 
 把解压后的 evil 文件夹放到 `.emacs.d` 文件夹，再修改 `.emacs` 文件，添加如下几行：
 
@@ -994,7 +1019,9 @@ Extension: `ignore_line_breaks`
 
 话说 Vim 也没这么智能，但需要在这里为什么产品还没出来？
 
-By the way，为此我专门跑到 Pandoc 的 GitHub 上提交了一个 Issue，说不定他们能很快添加这个功能呢～See [Text Layout Requirements When Encountered East Asian Languages · Issue #2586 · jgm/pandoc](https://github.com/jgm/pandoc/issues/2586).
+By the way，为此我专门跑到 Pandoc 的 GitHub 上提交了一个 Issue，说不定他们能很
+快添加这个功能呢～See [Text Layout Requirements When Encountered East Asian Languages · Issue #2586 ·
+jgm/pandoc](https://github.com/jgm/pandoc/issues/2586).
 
 <div style="border: 1px dashed violet; padding: 1em;"><small>
 
@@ -1056,7 +1083,8 @@ pandoc -f markdown -s -S demo.md -o demo-ext-off.html
 pandoc -f markdown+ignore_line_breaks -s -S demo.md -o demo-ext-on.html
 ```
 
-Without extension: (red marks point out pitfalls, I highlighted spaces in browser simply with Control+F)
+Without extension: (red marks point out pitfalls, I highlighted spaces in
+browser simply with Control+F)
 
 ![](http://gnat.qiniudn.com/github/a.png)
 
@@ -1120,29 +1148,36 @@ Pandoc 作者 [jgm (John MacFarlane)](https://github.com/jgm) 的回复：
 
 ## `1449807394`{.tzx-timestamp} Atom 编辑器之罪
 
-Atom 是 GitHub 开发的号称 21 世纪的编辑器。但是，插件（我只是要个 Vim-mode 而已）我装不了，因为装插件要联网。
-感谢 GFW，让我们回到了让人怀念二十世纪。
+Atom 是 GitHub 开发的号称 21 世纪的编辑器。但是，插件（我只是要个 Vim-mode 而已）
+我装不了，因为装插件要联网。感谢 GFW，让我们回到了让人怀念二十世纪。
 
-外，装了 Atom 提示安装 .Net 4.5，装完之后我的 VS 2010 挂了。找了很久才发现是 VS 2010 需要的是 .Net 4.0，不能是 4.5。
-然后又是一番折腾。
+外，装了 Atom 提示安装 .Net 4.5，装完之后我的 VS 2010 挂了。找了很久才发现是 VS
+2010 需要的是 .Net 4.0，不能是 4.5。然后又是一番折腾。
 
 结论是，编辑器还是用 Vim 省心。
 
 ## `1449754750`{.tzx-timestamp} 文档这么丑！
 
-CMake 的文档是 "Created using Sphinx 1.3a0."，字体那么小，完全糊在一起，根本看不清。我觉得这个 Sphinx 弄出来的文档都特别恶心，Python 社区似乎特别偏爱这个破工具。OpenCV 的文档也用这工具写的，醉了醉了醉了！
+CMake 的文档是 "Created using Sphinx 1.3a0."，字体那么小，完全糊在一起，根本看
+不清。我觉得这个 Sphinx 弄出来的文档都特别恶心，Python 社区似乎特别偏爱这个破工
+具。OpenCV 的文档也用这工具写的，醉了醉了醉了！
 
-CMake 社区的示例代码也很少，而且给的例子都让人无语。明明你代码不会很多很长，为什么缩进不弄 4 个空格而是 2 个？太抠了。
+CMake 社区的示例代码也很少，而且给的例子都让人无语。明明你代码不会很多很长，为
+什么缩进不弄 4 个空格而是 2 个？太抠了。
 
-外，我见到的网站的搜索工具，一个比一个烂，根本不能用，本地随便一个八十年代的 grep 效果都比你好。特别慢，等你终于等到结果，显示的是“没有结果”，是不是特让人无语。
+外，我见到的网站的搜索工具，一个比一个烂，根本不能用，本地随便一个八十年代的
+grep 效果都比你好。特别慢，等你终于等到结果，显示的是“没有结果”，是不是特让人无
+语。
 
 ## `1449546008`{.tzx-timestamp} Windows 系统小工具
 
-好用的都在这个文件夹：`C:\Windows\SysWOW64`，比如 `where`{.bash}（相当于 Linux 的 `whereis`），`clip`{.bash}（相当于 `xclip -selection clipboard -o`。
+好用的都在这个文件夹：`C:\Windows\SysWOW64`，比如 `where`{.bash}（相当于 Linux
+的 `whereis`），`clip`{.bash}（相当于 `xclip -selection clipboard -o`。
 
 最常用的是 `date +%s | clip`。
 
-Windows 上的 `tree.com`{.bash} 和 *nix 下的 `tree`{.bash} 也类似，不过用的时候要 `tree /F`{.bash} 才能把文件也打印。见 help（`help tree`{.bash}）：
+Windows 上的 `tree.com`{.bash} 和 *nix 下的 `tree`{.bash} 也类似，不过用的时候
+要 `tree /F`{.bash} 才能把文件也打印。见 help（`help tree`{.bash}）：
 
 ```plain
 以图形显示驱动器或路径的文件夹结构。
@@ -1153,13 +1188,14 @@ TREE [drive:][path] [/F] [/A]
    /A   使用 ASCII 字符，而不使用扩展字符。
 ```
 
-Windows 下还有一个命令叫 `convert`{.bash}，它和 ImageMagick 的 `convert`{.bash} 冲突，可以考虑把后者重命名。
+Windows 下还有一个命令叫 `convert`{.bash}，它和 ImageMagick 的 `convert`{.bash}
+冲突，可以考虑把后者重命名。
 
 （我突然明白了为什么加系统变量的时候要把新的路径加在前面……）
 
-安装了 Git Bash 后系统就有很多 Linux utils，记得把它加到 `%PATH%`：
-`C:\Program Files (x86)\Git\bin`，Git Bash 的好处是可以随处在当前目录打开
-Bash。**CMD 可以通过按住 <kbd>Shift</kbd> 再右键，“在此处打开命令窗口”。**
+安装了 Git Bash 后系统就有很多 Linux utils，记得把它加到 `%PATH%`：`C:\Program
+Files (x86)\Git\bin`，Git Bash 的好处是可以随处在当前目录打开Bash。**CMD 可以通
+过按住 <kbd>Shift</kbd> 再右键，“在此处打开命令窗口”。**
 
 CMD 清屏不是 `clear` 不是 `clr` 而是 `cls`。
 
@@ -1647,11 +1683,22 @@ systeminfo
 
 ![](http://bookriotcom.c.presscdn.com/wp-content/uploads/2012/07/so-we-beat-on-300x253.jpeg)
 
-> "The last line of The Great Gatsby only makes sense if you’re over 30, or better yet, even older than that." Yet Fitzgerald was 25 years old when he began writing the book and 27 when The Great Gatsby was published. Fitzgerald was dead before he was 45.
+> "The last line of The Great Gatsby only makes sense if you’re over 30, or
+> better yet, even older than that." Yet Fitzgerald was 25 years old when he
+> began writing the book and 27 when The Great Gatsby was published. Fitzgerald
+> was dead before he was 45.
 
-> I am 69, and really, I am not sure I understand this line in any way other than just what it means to me personally, which is that our present experience and who we are now instantly becomes our past experience and who we were then because we are constantly creating a past as we move into the future. And that past cannot be undone (as in "The Road not Taken" by Frost) or done over, as Gatsby attempted. We struggle on, trying to make a future, but what we have at the end of each day--and at the end of our lives--is the past which we have created.
+> I am 69, and really, I am not sure I understand this line in any way other
+> than just what it means to me personally, which is that our present
+> experience and who we are now instantly becomes our past experience and who
+> we were then because we are constantly creating a past as we move into the
+> future. And that past cannot be undone (as in "The Road not Taken" by Frost)
+> or done over, as Gatsby attempted. We struggle on, trying to make a future,
+> but what we have at the end of each day--and at the end of our lives--is the
+> past which we have created.
 
-感觉让 Tim Roth 演 Fitzgerald 特别合适。By the way，Fitzgerald 很郭敬明啊……（简直是污蔑哈哈但我确实这么想）。
+感觉让 Tim Roth 演 Fitzgerald 特别合适。By the way，Fitzgerald 很郭敬明啊……（简
+直是污蔑哈哈但我确实这么想）。
 
 Refs
 
@@ -1659,8 +1706,8 @@ Refs
 
 ## `1449217326`{.tzx-timestamp} 眼屎好吃吗？
 
-我一直觉得，眼睛肯定比口腔更脆弱，所以能往眼睛里滴的，一定也能往嘴里塞。
-所以滴眼液什么当然可以喝。是不是很有道理？
+我一直觉得，眼睛肯定比口腔更脆弱，所以能往眼睛里滴的，一定也能往嘴里塞。所以滴
+眼液什么当然可以喝。是不是很有道理？
 
 TJG 说，那你吃你的眼屎啊～
 
@@ -1676,20 +1723,22 @@ TJG 说，那你吃你的眼屎啊～
 
 很有道理。
 
-我们做的是学术，以数据为中心，处理流程相对简单（我是说过程 in/out 清晰而不是一团线条，多入多出），而不是
+我们做的是学术，以数据为中心，处理流程相对简单（我是说过程 in/out 清晰而不是一
+团线条，多入多出），而不是
 
 #. 以为别人提供合理的 API 接口为编码目的
 #. 向用户隐藏/掩盖细节
 #. 应用驱动、事务驱动
 
-生产过程中往往需要和上、下的人打交道，隐藏自己这一层的细节很必要。^[曾看过一本书，说这叫“信息屏蔽”。]而学术需要更加直观透明。
-这就是学术和生产的区别。
+生产过程中往往需要和上、下的人打交道，隐藏自己这一层的细节很必要。^[曾看过一本
+书，说这叫“信息屏蔽”。]而学术需要更加直观透明。这就是学术和生产的区别。
 
 ## `1448436328`{.tzx-timestamp} Don't forget to feel bad
 
 ![](http://gnat.qiniudn.com/qk-does-not-feel-bad.jpg)
 
-等我力所能及的时候我会给我 pirate 的每本书、每个软件的作者、出版社都捐助（补偿）一笔钱。感谢他们。
+等我力所能及的时候我会给我 pirate 的每本书、每个软件的作者、出版社都捐助（补偿）
+一笔钱。感谢他们。
 
 ## `1448420781`{.tzx-timestamp} 该死
 
@@ -1703,7 +1752,8 @@ TJG 说，那你吃你的眼屎啊～
 
 ![Mike Bostock](http://gnat.qiniudn.com/mbostock.jpg?imageView2/2/w/200)
 
-D3.js 的作者 [Mike Bostock](https://github.com/mbostock "真大神，看他的 Contributions，看他的博客（全用的 Gist 搭出来。）"):
+D3.js 的作者 [Mike Bostock](https://github.com/mbostock "真大神，看他的
+Contributions，看他的博客（全用的 Gist 搭出来。）"):
 
 > To install the Chrome extension, visit the Chrome Web Store and click Add to
 > Chrome.
@@ -1745,10 +1795,12 @@ set( OpenSceneGraph_LIBS_Release ${OSG_LIBRARY} ${OPENTHREADS_LIBRARY} ${OSGDB_L
 set( OpenSceneGraph_LIBS_Debug ${OSG_LIBRARY_DEBUG}  ${OPENTHREADS_LIBRARY_DEBUG} ${OSGDB_LIBRARY_DEBUG} ${OSGGA_LIBRARY_DEBUG} ${OSGTEXT_LIBRARY_DEBUG} ${OSGUTIL_LIBRARY_DEBUG} ${OSGVIEWER_LIBRARY_DEBUG} ${OSGFX_LIBRARY_DEBUG} ${OSGQT_LIBRARY_DEBUG} )
 ```
 
-我把这两个 set 的变量名改得简短了……然后它就找不到。话说上次也是类似的情况导致我 $HOME 路径下面文件被删了好几个。
-就是因为 Make 和 CMake 把没有的变量默认为空，也不提醒一下！
+我把这两个 set 的变量名改得简短了……然后它就找不到。话说上次也是类似的情况导致我
+$HOME 路径下面文件被删了好几个。就是因为 Make 和 CMake 把没有的变量默认为空，也
+不提醒一下！
 
-上次的情况是 `rm -f $(PODIR)/*`{.bash}，因为 `PODIR` 没有设定，这个指令把我“家”都清空了。
+上次的情况是 `rm -f $(PODIR)/*`{.bash}，因为 `PODIR` 没有设定，这个指令把我“家”
+都清空了。
 
 ## `1448044500`{.tzx-timestamp} A Man of Value
 
@@ -1761,7 +1813,6 @@ Albert Einstein:
 
 这句话太让人感动。
 
-
 ## `1447900492`{.tzx-timestamp} 做不完的事情总是做不完
 
 ![r] ![y] ![g] ![x]
@@ -1773,7 +1824,6 @@ Albert Einstein:
 
 很久前写的要做的事：
 
-
 #. ![y] read some tmux
 #. ![y] 学习使用 gitbook
 #. ![y]<!--...--> [github/gitignore](https://github.com/github/gitignore)
@@ -1784,21 +1834,25 @@ Albert Einstein:
 
 ![](http://o.aolcdn.com/hss/storage/midas/4214e245badd4faa7a36d7abc2c0fffd/202980253/imrs_thumbnail.jpg)
 
-> 当孩子只顾在用餐时用电脑或手机，并不聆听旁人说话的话，那不算是家庭，而是一个受豢（huàn）养者。
+> 当孩子只顾在用餐时用电脑或手机，并不聆听旁人说话的话，那不算是家庭，而是一个
+> 受豢（huàn）养者。
 
 ## `1447765371`{.tzx-timestamp} 如果我是“QQ 群”的产品经理
 
 [云风的 BLOG: 闲扯几句移动社交软件](http://blog.codingnow.com/2015/11/chat_app.html)
 
-:   > 关于 qq 群，我一直觉得是信息骚扰超过了它的实用价值。就是一群人聚在一起扯淡嘛，这个当然需要。
-    > 但是我们是不是应该关注一下更本质的东西。怎么对系统分类，并协助用户过滤。
+:   > 关于 qq 群，我一直觉得是信息骚扰超过了它的实用价值。就是一群人聚在一起扯
+    > 淡嘛，这个当然需要。但是我们是不是应该关注一下更本质的东西。怎么对系统分
+    > 类，并协助用户过滤。
 
-    确实，我一直觉得 QQ 群应当提供拉黑和关注功能（观众用户、关注关键词）、对发言评分并筛选掉一些低价值发言。
-    还应该有发言标记功能（比如一个通知，一个备忘），还应该有惩罚（一个人多次标记名不副实他的标记就会失去效力）。
-    暂时就说这么多。
+    确实，我一直觉得 QQ 群应当提供拉黑和关注功能（观众用户、关注关键词）、对发
+    言评分并筛选掉一些低价值发言。还应该有发言标记功能（比如一个通知，一个备忘
+    ），还应该有惩罚（一个人多次标记名不副实他的标记就会失去效力）。暂时就说这
+    么多。
 
-    > 说到底，就是以话题为核心的一个网状结构。我们从任何一个扯淡聚集区，通过里面的线索跳跃到新的线索上，
-    > 每个线索中都有一群人。关系近的线索，人群结构也比较接近，但没有明确的发起人和组织人。也没有固定的群组。
+    > 说到底，就是以话题为核心的一个网状结构。我们从任何一个扯淡聚集区，通过里
+    > 面的线索跳跃到新的线索上，每个线索中都有一群人。关系近的线索，人群结构也
+    > 比较接近，但没有明确的发起人和组织人。也没有固定的群组。
 
     这个想法很棒。
 
@@ -1812,11 +1866,13 @@ Albert Einstein:
 
 [威尔特·张伯伦_百度百科](http://baike.baidu.com/link?url=0r3zg8KYZhZ9kYM7WCaZ4XymrUCrBWSunooBrI3hYgRGot2aB286vheAMFQ3ZXFI)：
 
-> 张伯伦在自传《俯瞰》中用专门的一章讲述他的艳遇，他声称从 15 岁开始，他平均每天就和 1.2 个女人睡过觉。
-> “人们也许认为我的品位不高，但信不信由你，几乎每个与我约会的女人，在普通男人眼里都会是一见钟情式的偶像。”
-> 张伯伦的很多好友都认为他具有一种诱人的魅力，他曾经在10天里和23个女人睡过觉。张伯伦尤其喜欢《生动的颜色》的一个片段：
-> 一个女人和她的女儿列出了一份还很长很长的名单上，都是那些同张伯伦睡过觉的女人的名字，
-> 而这对母女坦然地承认她们的名字也都在名单上。在后期张伯伦允许别人评价他的篮球弱点，却不容别人质疑他的性能力。
+> 张伯伦在自传《俯瞰》中用专门的一章讲述他的艳遇，他声称从 15 岁开始，他平均每
+> 天就和 1.2 个女人睡过觉。“人们也许认为我的品位不高，但信不信由你，几乎每个与
+> 我约会的女人，在普通男人眼里都会是一见钟情式的偶像。”张伯伦的很多好友都认为他
+> 具有一种诱人的魅力，他曾经在10天里和23个女人睡过觉。张伯伦尤其喜欢《生动的颜
+> 色》的一个片段：一个女人和她的女儿列出了一份还很长很长的名单上，都是那些同张
+> 伯伦睡过觉的女人的名字，而这对母女坦然地承认她们的名字也都在名单上。在后期张
+> 伯伦允许别人评价他的篮球弱点，却不容别人质疑他的性能力。
 
 同理，我允许别人说我编程慢，却不容别人质疑我的打字速度。
 
@@ -1842,11 +1898,13 @@ Albert Einstein:
 
 ## `1447284952`{.tzx-timestamp} JavaScript 程序员
 
-喜欢用两个空格缩进而不是四个。像我这样的像素眼处女座，都一眼看不出缩进层次。What bloody shit。
+喜欢用两个空格缩进而不是四个。像我这样的像素眼处女座，都一眼看不出缩进层次。
+What bloody shit。
 
 ## `1447267769`{.tzx-timestamp} 面试和恋爱的关系
 
-如果你最想去的是 A，一定不要先面 A。先面 B、C、D，etc，最后再去面 A。这好象是什么人生哲理。
+如果你最想去的是 A，一定不要先面 A。先面 B、C、D，etc，最后再去面 A。这好象是什
+么人生哲理。
 
 ## `1447227862`{.tzx-timestamp} 作息不正常
 
@@ -1880,7 +1938,9 @@ Albert Einstein:
 
 [Nik David Bamert 的 Hangul 输入法][hangual]：
 
-<textarea id="krinput" style="width: 100%; height: 80px; margin: 0; padding: 0;" placeholder="你可以试试在这个文本框里输点东西，出来的是 Hangul（韩语）……这是一个牛逼哄哄的 Hangul 输入法。"></textarea>
+<textarea id="krinput"
+          style="width: 100%; height: 80px; margin: 0; padding: 0;"
+          placeholder="你可以试试在这个文本框里输点东西，出来的是 Hangul（韩语）……这是一个牛逼哄哄的 Hangul 输入法。"></textarea>
 
 <script type="text/javascript" src="ime.js"> </script>
 <script type="text/javascript">
@@ -1890,7 +1950,6 @@ Albert Einstein:
 </script>
 
 [hangual]: http://ndb.io/
-
 [Voronoi Tessellation](http://bl.ocks.org/mbostock/4060366)
 
 <!--
@@ -1899,13 +1958,14 @@ Firefox: Blocked by Content Security Policy.
 -->
 
 ## `1447044804`{.tzx-timestamp} 请问你的 QQ 是？
+
 [留言 | 谢益辉](http://yihui.name/cn/guestbook/)：
 
 > 请问你的 QQ 是？
 >
-> 抱歉，我很少用  QQ，因为即时聊天会打乱时间的完整性，我希望能有整块的时间集中做事情，
-> 而不是盯着几个聊天窗口打着零碎的句子。如果你能破解 `md5sum` 的话，
-> 我会感到很荣幸和你聊聊：`ff8fb48d51329ad82a306fa309b97e3a`（将 QQ 号写入文件、
+> 抱歉，我很少用  QQ，因为即时聊天会打乱时间的完整性，我希望能有整块的时间集中
+> 做事情，而不是盯着几个聊天窗口打着零碎的句子。如果你能破解 `md5sum` 的话，我
+> 会感到很荣幸和你聊聊：`ff8fb48d51329ad82a306fa309b97e3a`（将 QQ 号写入文件、
 > 不带换行符的文件的 md5sum）。我的主要联系方式是 Email。
 
 这个……有点叼。我要好好学习以后破解 md5……

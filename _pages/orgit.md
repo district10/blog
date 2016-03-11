@@ -9,6 +9,8 @@ Orgit | 唐凤
 >
 > 至于“唐凤”，我只是觉得他人长得好看。
 
-[这里用 Org-mode 写而不是 Markdown。](orgit/)
+[这里用 Org-mode 写而不是 Markdown。](http://tangzx.qiniudn.com/orgit/)
 
+<!--
 你可以参考：[Simple Org-mode Blog](http://tangzx.qiniudn.com/org/)，[源码](https://github.com/district10/sob)。
+-->

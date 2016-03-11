@@ -90,7 +90,7 @@ cleanLyrics:
 rm: clall
 clall: clean
 clean:
-	rm -f $(PODIR)/*
+	rm -rf $(PODIR)/*
 
 # write
 k: koan

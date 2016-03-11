@@ -13,6 +13,7 @@ V/\n#. ?kbzf
 <div class="reads">
 
 #. &#x2610;
+#. &#x2610; [SICP终于看完了，有一些经验想分享出来 - 学习资料 - CoCode](http://cocode.cc/t/sicp/3397)
 #. &#x2610; [c++ - Linking different libraries for Debug and Release builds in Cmake on windows? - Stack Overflow](http://stackoverflow.com/questions/2209929/linking-different-libraries-for-debug-and-release-builds-in-cmake-on-windows)
 
 You should not test CMAKE_BUILD_TYPE in the CMake file, it is ignored by multi configuration generators (like VS). If you run cmake with CMAKE_BUILD_TYPE=Debug but Release in VS the code in if(CMAKE_BUILD_TYPE MATCHES Release) is simply ineffective.
