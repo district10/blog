@@ -13,6 +13,21 @@ code.tzx-timestamp {
 
 <div class="koans"><!-- 下面要有空行 | One Empty Line Reserved Below -->
 
+## `1457712897`{.tzx-timestamp} Big Git Repo
+
+```tzx-plain
+2.5M	./_statics
+12K	./private
+4.0K	./blagee
+1.8M	./_posts
+12M	./.git
+816K	./_pages
+7.6M	./publish
+4.0K	./gists
+3.4M	./_miscs
+28M	.
+```
+
 ## `1457701284`{.tzx-timestamp} Dafuq
 
 The first Continental Congress was held in ____________ in September 1774.
