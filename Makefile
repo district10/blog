@@ -3,10 +3,11 @@ PAGES=_pages
 POSTS=_posts
 STATICS=_statics
 LYRICS=_miscs/lyrics
+DOCS=_miscs/docs
 IDXPG=$(PODIR)/index.html
 SITEMAP=$(PODIR)/sitemap.html
 
-all: pages posts statics lyrics $(IDXPG)
+all: pages posts statics lyrics docs $(IDXPG)
 pages posts statics lyrics: $(PODIR) footer.html
 $(PODIR):
 	mkdir -p $(PODIR)
@@ -73,6 +74,9 @@ statics:
 lrc: lyrics
 lyrics:
 	$(MAKE) -C $(LYRICS)
+
+docs: 
+	$(MAKE) -C $(DOCS)
 
 # clean
 cpgs: cleanPages

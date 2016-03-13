@@ -31,33 +31,266 @@ pre {
 
 <!--...-->
 
-```c
-size_t strlen( const char *s )
+# fullname := "/home/user/file.txt"
+filename=$(basename "$fullfile")     # file.txt
+extension="${filename##*.}"          # txt
+filename="${filename%.*}"            # file
+
+```bash
+PDF=$1
+IMG=${PDF%.*}
+
+convert              \
+    -verbose         \
+    -density 150     \
+    -trim            \
+    $PDF             \
+    -quality 100     \
+    -sharpen 0x1.0   \
+    ${IMG}.jpg
+```
+
+A.pdf -> A-{0,1}.jpg
+
+
+convert raw image:
+
+```bash
+#!/bin/bash
+
+echo start time: `date`
+
+for i in *.raw;
+do
+    # convert -size 5120x3840 -depth 8 gray:$i jpg/`basename $i .raw`.jpg & # &fork then process
+    convert -size 5120x3840 -depth 8 gray:$i jpg/`basename $i .raw`.jpg
+    mv $i raw/
+done
+
+echo end time: `date`
+```
+
+```bash
+!/bin/bash
+
+for i in rotate shear roll hue \
+saturation brightness gamma spiff \
+dull grayscale quantize despeckle \
+reduceNoise addNoise sharpen blur \
+threshold edgedetect spread shade \
+raise segment solarize swirl implode \
+wave oilpaint charcoal jpeg;
+do
+    convert main.jpg -preview ${i} -gravity south -box "#00000020" -pointsize 36 -fill "#887ddd" -draw "text 0,0 '${i}'" out.${i}.jpg
+done
+
+montage out.*.jpg -tile 1x$(ls out.*.jpg | wc -l) -geometry 766x936 out.main.jpg
+```
+
+```bash
+➜  trygridfs git:(master) ✗ curl -X POST -F file=@./package.json localhost:8090/gridfs
+{"method":"POST","url":"/gridfs","header":{"user-agent":"curl/7.35.0","host":"localhost:8090","accept":"*/*","content-length":"1022","expect":"100-continue","content-type":"multipart/form-data; boundary=------------------------72fd612aa595d9d6"}}%
+➜  trygridfs git:(master) ✗ curl -X POST -d @./package.json localhost:8090/gridfs
+{"method":"POST","url":"/gridfs","header":{"user-agent":"curl/7.35.0","host":"localhost:8090","accept":"*/*","content-length":"783","content-type":"application/x-www-form-urlencoded"}}%
+
+➜  trygridfs git:(master) ✗
+
+➜  example git:(master) ✗ curl -X POST -F file=@./package.json -F file=@./upload.js localhost:8000/upload
+```
+
+```bash
+var fs = require('fs');
+var gm = require('gm');
+
+// resize and remove EXIF profile data
+gm('img/600x300.jpg')
+.resize(240, 240)
+.noProfile()
+.write('resized.png', function (err) {
+  if (!err) { console.log('done'); }
+});
+
+```
+
+
+awk, word frequency counter
+```bash
+# wordfreq.awk --- print list of word frequencies
+
 {
-    const char *c;
-    for(){}
-    return c-s;
+    $0 = tolower($0)    # remove case distinctions
+    # remove punctuation
+    gsub(/[^[:alnum:][:blank:]]/, " ", $0)
+    for (i = 1; i <= NF; i++)
+        freq[$i]++
 }
-char *strcpp( char *to, const char *from  )
+
+END {
+    for (word in freq)
+        printf "%s\t%d\n", word, freq[word]
+}
+```
+
+use
+
+```bash
+#!/bin/bash
+
+FILE=$1
+
+sed -e 's/\([A-Z]\)/ \L\1/g' $FILE | \
+gawk -f wcf.awk | sort -k 2nr
+```
+
+
+read
+
+```bash
+#/bin/bash
+
+ADDTO="2015.md"
+DATE=`date +%Y-%m-%d`
+
+
+echo adding $1
+echo \* \[ \] \[$DATE\] $1 >> $ADDTO
+echo ===================================
+echo Please read, and read with pleasure.
+
+git add -A && git commit -m `date +%s` && git pull && git push
+```
+
+```bash
+Calibre-nongui
+
+A Calibre-like Ebook Manager
+Just Simple
+
+```
+
+reputedly
+[rɪˈpjuːtɪdli]
+
+    adv. 据说，一般认为；根据风评
+
+
+[district10/trycmake: Try some CMake](https://github.com/district10/trycmake)
+[district10/tryopenmp: Try some OpenMP](https://github.com/district10/tryopenmp)
+[district10/tryqt: Try some Qt](https://github.com/district10/tryqt)
+
+
+---
+
+
+; 一、组合键
+;             ::WinMinimize, A ; 最小化活动窗口。
+;             n::Run, Notepad.exe  ; 打开记事本。
+;             & k::MsgBox 您在按住 a 时按下了 k 键。
+;             ?::Send, a ; 发送模拟按键 a。
+
+
+; $Space::Send, Space ;
+; $a::Send, a ; 发送模拟按键 a，$ 表示使用钩子创建这个热键，这样避免了循环激发。
+
+
+; 二、序列键
+
+::btw::by the way ; 输入 btw 后替换为 by the way。需要个终止符
+:*:r@::rhong@somewhere.com ; 输入 r@ 后自动替换为邮件地址。不需要个终止符
+
+; 组合键 a & k:: ，可以表示为：{a down}{k down}{k up}{a up}
+; 序列键 ::ak:: ，可以表示为：{a down}{a up}{k down}{k up}
+
+; WheelUp::Send {Volume_Up}     ; 向上转动（远离您的方向）鼠标滚轮增加音量。
+; WheelDown::Send {Volume_Down} ; 向下转动鼠标滚轮减小音量。
+
+#n::Run Notepad
+
+^!c::Run calc.exe
+
+^!w::
+RunWait Notepad
+MsgBox The user has finished (Notepad has been closed).
+return
+
+^!s::
+Send Sincerely,{Enter}John Smith
+Send ^c!{tab}pasted:^v
+return
+
+^!t::
+MsgBox
+MsgBox, 4, , Would you like to continue?
+IfMsgBox, No
+    MsgBox %clipboard%
+    return
+; 否则, 用户选择了是.
+MsgBox You pressed YES.
+return
+
+$F1::
+while GetKeyState("F1", "P")  ; 当 F1 键实际被按住时.
 {
+    Click
+}
+return
+
+
+::btw::
+   MsgBox You typed "btw".
+Return
+
+dire prediction
+devour sth
+
+
+---
+
+```c
+size_t strlen( const char *str )
+{
+    const char *s;
+    for( s=str; *s; ++s ) { }
+    return s-str;
+}
+char *strcpy( char *to, const char *from  )
+{
+    assert( to && from && "should be both valid." );
     char *p = to;
-    while( ... ) {}
+    int i = 0;
+    while( (*p++=*from++) != 0 ) { }
     retunr to;
 }
 
 void strstr( const char *haystack, const char *needle )
 {
- 
+
 }
+
 int atoi( const char *str )
 {
-int len;
-stip preceding white chars;
-parse sign, +, -, or no sign
-c = '0'-'9' ? 
-overflow?
-*10 + *c-'0'
-return num * sign;
+    int len = strlen( str );
+    int sign = 1;
+
+    const char *p = str;
+    while ( *p == ' ' ) {
+        ++p;
+    }
+
+    if ( *p == '+' ) { sign = +1; ++p; }
+    if ( *p == '-' ) { sign = -1; ++p; }
+    int i = 0;
+    while( '0' <= *p && *p <= '9' ) {
+        int d = *p - '0';
+        i = i * 10 + d;
+    }
+
+    stip preceding white chars;
+    parse sign, +, -, or no sign
+        c = '0'-'9' ?
+        overflow?
+        *10 + *c-'0'
+        return num * sign;
 }
 
 substring searching
@@ -333,7 +566,7 @@ mnemonic
 
     adj. 记忆的；助记的；记忆术的
 
- Four core pillars: Mnemonic, Discoverable, Consistent and "Crowd-Configured". 
+ Four core pillars: Mnemonic, Discoverable, Consistent and "Crowd-Configured".
 
 ---
 
