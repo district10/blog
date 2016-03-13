@@ -13,6 +13,13 @@ V/\n#. ?kbzf
 <div class="reads">
 
 #. &#x2610;
+#. &#x2610;
+[Cpp-Primer/ch01 at master · Mooophy/Cpp-Primer](https://github.com/Mooophy/Cpp-Primer/tree/master/ch01)
+[FlatBuffers: Benchmarks](http://google.github.io/flatbuffers/flatbuffers_benchmarks.html)
+
+[ocornut/imgui: Bloat-free Immediate Mode Graphical User interface for C++ with minimal dependencies](https://github.com/ocornut/imgui)
+
+#. &#x2610; [zealdocs/zeal: Offline documentation browser inspired by Dash](https://github.com/zealdocs/zeal)
 #. &#x2610; [字符串匹配的KMP算法 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html)
 #. &#x2610; [SICP终于看完了，有一些经验想分享出来 - 学习资料 - CoCode](http://cocode.cc/t/sicp/3397)
 #. &#x2610; [c++ - Linking different libraries for Debug and Release builds in Cmake on windows? - Stack Overflow](http://stackoverflow.com/questions/2209929/linking-different-libraries-for-debug-and-release-builds-in-cmake-on-windows)

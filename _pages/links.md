@@ -166,3 +166,4 @@ Links | 链签
 #. [Krzysztof Kowalczyk](http://blog.kowalczyk.info/) `SumatraPDF`
 #. [Online LaTeX Equation Editor - create, integrate and download](http://www.codecogs.com/latex/eqneditor.php)
 #. [Brian Grinstead](http://www.briangrinstead.com/blog/)
+#. [Zeal](https://zealdocs.org/)
