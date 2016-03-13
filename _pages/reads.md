@@ -14,6 +14,17 @@ V/\n#. ?kbzf
 
 #. &#x2610;
 #. &#x2610;
+
+- [Cpp-Primer/ch01 at master · Mooophy/Cpp-Primer](https://github.com/Mooophy/Cpp-Primer/tree/master/ch01)
+- [Facebook](https://github.com/facebook)
+- [CppCoreGuidelines/CppCoreGuidelines.md at master · isocpp/CppCoreGuidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)
+- [Crosswalk - build world class hybrid apps](https://crosswalk-project.org/)
+- [Problem loading page](http://mapnik.org/)
+- [AGWA/git-crypt: Transparent file encryption in git](https://github.com/AGWA/git-crypt)
+- [glsltuto/shaders at master · ssloy/glsltuto](https://github.com/ssloy/glsltuto/tree/master/shaders)
+- [FlatBuffers: Using the schema compiler](http://google.github.io/flatbuffers/flatbuffers_guide_using_schema_compiler.html)
+- [dvidelabs/flatcc: FlatBuffers Compiler and Library in C for C](https://github.com/dvidelabs/flatcc)
+- [Mooophy (Yue Wang)](https://github.com/Mooophy)
 [Cpp-Primer/ch01 at master · Mooophy/Cpp-Primer](https://github.com/Mooophy/Cpp-Primer/tree/master/ch01)
 [FlatBuffers: Benchmarks](http://google.github.io/flatbuffers/flatbuffers_benchmarks.html)
 
