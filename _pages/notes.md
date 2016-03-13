@@ -14,6 +14,11 @@ Notes | 笔记
 pre {
     font-size: 80%;
 }
+pre.tzx-bigquote {
+	padding-left: 6em;
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
 </style>
 
 <!--
