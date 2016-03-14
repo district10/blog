@@ -27,7 +27,6 @@ perldoc
 
 Programming Perl
 
-
 ```perl
 #!/usr/bin/perl
 print "Hello, world!\n";
@@ -54,6 +53,8 @@ foreach (@lines) {
 ```
 
 ## Scalar Data
+
+Larry: `$calar` & `@rray`.
 
 ```perl
 1.25
@@ -330,12 +331,9 @@ Interpolating Arrays into Strings
 
 ```perl
 @rocks = qw{ flintstone slate rubble };
-print "quartz @rocks limestone\n"; # prints five rocks separated by spaces
+print "quartz @rocks limestone\n";
+# prints "quartz flintstone slate rubble limestone"
 ```
-
-
-
-
 
 ## Subroutines
 
@@ -373,3 +371,10 @@ print "quartz @rocks limestone\n"; # prints five rocks separated by spaces
 ## C. A Unicode Primer
 
 
+---
+
+codes
+
+```perl
+chomp(@lines = <STDIN>)
+```
