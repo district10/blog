@@ -7540,26 +7540,27 @@ specifics 和 specifies 的区别在哪里？
 
 indefinite v.s. infinite
 
-chillax | [tʃɪˈlæks] | 淡定
+单词 | 音标 | 解释
 :---: | :---: | :---:
-craftsmanship | ['kræftsmənʃɪp] | 技艺
-czar |  [zɑː] | 沙皇
-designated | ['dɛzɪg,netɪd] | 特指的
-etymology | [,ɛtɪ'mɑlədʒi] | 语源学
-hypocrite | ['hɪpə'krɪt] | 伪君子；伪善者
-loathing | ['loðɪŋ] | 嫌恶
-mandate | ['mændet] | 委托管理
-paranoid | ['pærənɔɪd] | 偏执狂患者
-predecessor | ['prɛdəsɛsɚ] | 前辈
-revulsion | [rɪ'vʌlʃən] | 强烈反感
-silhouette | [,sɪlu'ɛt] | 轮廓，剪影
-specific |  [spɪ'sɪfɪk] | 特定的
-specify |  ['spɛsɪfaɪ] | 详细说明
-sublime | [sə'blaɪm] | 崇高
-successor | [sək'sɛsɚ] | 继承者
-survivalism | [sə'vaɪv(ə)lɪz(ə)m] | 生存第一主义
-verbatim |  [vɝ'betɪm] | 逐字地
-xenophobia | [,zɛnə'fobɪə] | 对外国人的畏惧和憎恨
+chillax | `[tʃɪˈlæks]` | 淡定
+craftsmanship | `['kræftsmənʃɪp]` | 技艺
+czar |  `[zɑː]` | 沙皇
+designated | `['dɛzɪg,netɪd]` | 特指的
+etymology | `[,ɛtɪ'mɑlədʒi]` | 语源学
+hypocrite | `['hɪpə'krɪt]` | 伪君子；伪善者
+loathing | `['loðɪŋ]` | 嫌恶
+mandate | `['mændet]` | 委托管理
+paranoid | `['pærənɔɪd]` | 偏执狂患者
+predecessor | `['prɛdəsɛsɚ]` | 前辈
+revulsion | `[rɪ'vʌlʃən]` | 强烈反感
+silhouette | `[,sɪlu'ɛt]` | 轮廓，剪影
+specific |  `[spɪ'sɪfɪk]` | 特定的
+specify |  `['spɛsɪfaɪ]` | 详细说明
+sublime | `[sə'blaɪm]` | 崇高
+successor | `[sək'sɛsɚ]` | 继承者
+survivalism | `[sə'vaɪv(ə)lɪz(ə)m]` | 生存第一主义
+verbatim |  `[vɝ'betɪm]` | 逐字地
+xenophobia | `[,zɛnə'fobɪə]` | 对外国人的畏惧和憎恨
 
 ---
 

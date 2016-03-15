@@ -17,7 +17,7 @@ function dvorak4tzx( pathParts ) {
         console.log( 'local. no need for duoshuo & zhanzhang.' );
         show();
         if ( document.location.toString().endsWith("index.html") ) {
-            document.location = "index2.html"
+            // document.location = "sitemap.html"
         }
     } else {
         // zhanzhang();

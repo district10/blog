@@ -47,7 +47,8 @@ $(PODIR)/%.html: $(PIDIR)/%.md
 pdf: $(addprefix $(PODIR)/, $(PDFS))
 $(PODIR)/%.pdf: $(PIDIR)/%.md
 	pandoc $(PANDOC_OPTIONS) \
-		--latex-engine=xelatex -V mainfont="Microsoft YaHei" \
+		--latex-engine=xelatex \
+		-V mainfont="Microsoft YaHei" \
 		--template=_pm-template \
 		$< \
 		-o $@
