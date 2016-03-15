@@ -1,6 +1,11 @@
 PODIR = ../publish
 MDS   = $(wildcard *.md)
 PAGES = $(addprefix $(PODIR)/, $(MDS:%.md=%.html))
+PANDOC_OPTIONS = -S -s --ascii \
+	-c main.css \
+	-A ../footer.html \
+	--highlight-style pygments \
+	-f markdown+east_asian_line_breaks
 
 all: $(PAGES)
 
@@ -8,9 +13,10 @@ clean:
 	rm -f $(PAGES)
 
 $(PODIR)/%.html: %.md
-	pandoc -S -s --ascii -c main.css -A ../footer.html \
-		--toc --highlight-style pygments \
-		-f markdown $^ \
+	pandoc \
+		$(PANDOC_OPTIONS) \
+		--toc \
+		$^ \
 		-o $@
     
 4: 404

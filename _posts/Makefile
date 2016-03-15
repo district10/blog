@@ -1,5 +1,10 @@
 PIDIR = .
 PODIR = ../publish
+PANDOC_OPTIONS = -S -s --ascii \
+	-c main.css \
+	-A ../footer.html \
+	--highlight-style pygments \
+	-f markdown+east_asian_line_breaks
 
 CURFILES = \
 post-0086-game-of-throne-series.md \
@@ -21,29 +26,30 @@ clean:
 	rm -f $(POSTS)
 
 $(PODIR)/post-0051-spatial-gis.html: $(PIDIR)/post-0051-spatial-gis.md
-	pandoc -S -s --ascii -c main.css -A ../footer.html --toc --mathjax \
+	pandoc $(PANDOC_OPTIONS) \
+		--toc --mathjax \
 		--bibliography $(patsubst %.md, %.bib, $^) \
-		--highlight-style pygments \
-		-f markdown $< \
+		$< \
 		-o $@
 $(PODIR)/post-0050-gis-overall.html: $(PIDIR)/post-0050-gis-overall.md
-	pandoc -S -s --ascii -c main.css -A ../footer.html --toc --mathjax \
+	pandoc $(PANDOC_OPTIONS) \
+		--toc --mathjax \
 		--bibliography $(patsubst %.md, %.bib, $^) \
-		--highlight-style pygments \
-		-f markdown $< \
+		$< \
 		-o $@
 
 $(PODIR)/%.html: $(PIDIR)/%.md
-	pandoc -S -s --ascii -c main.css -A ../footer.html --toc --mathjax \
-		--highlight-style pygments \
-		-f markdown $< \
+	pandoc $(PANDOC_OPTIONS) \
+		--toc --mathjax \
+		$< \
 		-o $@
 
 pdf: $(addprefix $(PODIR)/, $(PDFS))
 $(PODIR)/%.pdf: $(PIDIR)/%.md
-	pandoc --latex-engine=xelatex -V mainfont="Microsoft YaHei" \
+	pandoc $(PANDOC_OPTIONS) \
+		--latex-engine=xelatex -V mainfont="Microsoft YaHei" \
 		--template=_pm-template \
-		-f markdown $< \
+		$< \
 		-o $@
 
 p: post
