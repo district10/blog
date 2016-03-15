@@ -945,6 +945,57 @@ int* inorderTraversal(struct TreeNode* root, int* returnSize) {
 
 ---
 
+<div class="tzx-tabs">
+* [Roman to Integer (Easy)](#)
+* [](#)
+
+<div id="p95line952">
+Given a roman numeral, convert it to an integer.
+
+Input is guaranteed to be within the range from 1 to 3999.
+</div>
+
+~~~ {#p99line948 .c}
+bool falling( const char *cur, const char *next )
+{
+    return char2int(cur) >= char2int(next);
+}
+
+int char2int( const char *c )
+{
+    switch ( *c ) {
+        case 'I': return 1;
+        case 'V': return 5;
+        case 'X': return 10;
+        case 'L': return 50;
+        case 'C': return 100;
+        case 'D': return 500;
+        case 'M': return 1000;
+        default: return 0;
+    }
+}
+
+int romanToInt(char* s) {
+    if ( !*s ) { return 0; }
+
+    int result = 0;
+    while( *s ) {
+        if ( *(s+1) ) {
+            if ( falling(s, s+1) ) {
+                result += char2int(s);
+            } else {
+                result -= char2int(s);
+            }
+            ++s;
+        } else {
+            result += char2int(s);
+            return result;
+        }
+    }
+}
+```
+</div>
+
 <!--
 <div class="tzx-tabs">
 * [](#)

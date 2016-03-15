@@ -36,10 +36,404 @@ pre.tzx-bigquote {
 
 <!--...-->
 
+---
+
+Configs 32-bit x86
+
+:   Deps
+
+      - visual studio 2010
+      - qt4.x
+      - boost
+      - liblas
+
+    ENV Variables
+
+      - `LIBLAS_ROOT` ==> `D:\Liblas (bin, include, lib)`
+      - `BOOST_INCLUDEDIR` ==> include
+      - `BOOST_LIBDIR` ==> lib
+
+    You then need to set the following two environment variables to point
+    respectively to the path of the libraries and the headers
+
+      - `BOOST_LIBRARYDIR=C:\dev\libboost_1_54_0\lib32-msvc-10.0`
+      - `BOOST_INCLUDEDIR=C:\dev\libboost_1_54_0`
+
+    You also need to add in your `PATH` environment variable, the path to the
+    Boost dll's:
+
+      - `C:\dev\libboost_1_54_0\lib32-msvc-10.0`
+
+    With other versions of Tom installers, the path to libraries may end with
+    lib32 instead of lib32-msvc-10.0.
+
+    I selected `C:\Qt\4.8.2` so `QTDIR` is set to `C:\Qt\4.8.2`
+
+    I add `C:\Qt\4.8.2\bin` to my `PATH`
+
+    `C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin`
+    :   `cvtres.exe` ==> `cvtres1.exe`
+
+PDB what for? For Debugging.
+
+How to in Visual Studio
+
+  - `Tools->Options->Debugging->Symbols`
+  - and select checkbox "Microsoft Symbol Servers"
+
+Load PDB, `F5` ==> `Control + F5`
+
+link err, failure to convert to COFF
+Incremental Linking: `Yes` ==> `No`
+
+SVN
+
+:   ```bash
+    # 1
+    svn update
+    svn status
+    svn diff
+    svn commit -m 'commit message'
+
+    # 2
+    svn merge ?
+    svn revert ?
+    svn resolve ?
+    # 3
+    svn log
+    ```
+
+VS Extensions
+
+:   - VsVim
+    - tssts
+
+OpenGL: <http://www.opengl.org/resources/libraries/glut/glutdlls37beta.zip>
+
+:   - glut.h ==> `C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include\gl`
+    - glut.lib glut32.lib ==> `C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib`
+    - glut.dll glut32.dll ==> `C:\Windows\System32`
+
+Refs
+
+:   #. <http://stackoverflow.com/questions/12954821/cannot-find-or-open-the-pdb-file-in-visual-studio-c-2010/12954908#12954908>
+    #. <http://fisnikhasani.com/error-lnk1123-failure-during-conversion-to-coff-file-invalid-or-corrupt/>
+    #. <http://blog.csdn.net/wlanye/article/details/7561559>
+
+---
+
+CMakeLists.txt Snippets
+
+```cmake
+set_target_properties( ${PROJECT_NAME} PROPERTIES VS_KEYWORD Qt4VSv1.0 )
+
+set( CMAKE_COLOR_MAKEFILE ON )
+set_property( GLOBAL PROPERTY USE_FOLDERS ON )
+
+# Set the include directories
+include_directories( ${CMAKE_SOURCE_DIR} )
+include_directories( ${CMAKE_SOURCE_DIR}/src )
+include_directories( ${CMAKE_CURRENT_BINARY_DIR} )
+
+link_directories( ${CMAKE_BINARY_DIR} )
+
+# Setup output directories
+set( LIBRARY_OUTPUT_PATH
+	${PROJECT_BINARY_DIR}/bin
+	CACHE
+	PATH
+	"Single directory for all libraries" )
+
+set( EXECUTABLE_OUTPUT_PATH
+	${PROJECT_BINARY_DIR}/bin
+	CACHE
+	PATH
+	"Single directory for all executables" )
+
+add_definitions( -DUNICODE )
+add_definitions( -D_CRT_SECURE_NO_WARNINGS )
+add_definitions( -Wall )
+
+# large address aware option setting
+if( ${MINGW} )
+	set( LARGEADDRESSAWARE "--large-address-aware" )
+else(${MINGW})
+	if( WIN32 )
+		set( LARGEADDRESSAWARE "/LARGEADDRESSAWARE" )
+	else( WIN32 )
+		set( LARGEADDRESSAWARE " " )
+	endif( WIN32 )
+endif( ${MINGW} )
+
+# this command finds Qt4 libraries and sets all required variables
+# note that it's Qt4, not QT4 or qt4
+find_package( Qt4 REQUIRED )
+
+set( QT_USE_QTMAIN TRUE )
+set( QT_USE_QTOPENGL TRUE )
+set( QT_USE_QTXML TRUE )
+
+# (QT_USE_FILE is a variable defined by FIND_PACKAGE( Qt4 ) that contains a
+# path to CMake script)
+include( ${QT_USE_FILE} )
+
+set( RSCS img.qrc )
+
+qt4_wrap_cpp( MOC_SRCS ${HDRS_FILES} )
+qt4_add_resources( RSC_SRCS ${RSCS} )
+qt4_wrap_ui( UI_HDRS ${UI_FILES} )
+
+set( FILES_TO_TRANSLATE ${FILES_TO_TRANSLATE}
+     ${SRCS_FILES} ${UI_FILES} ${HDRS_FILES} PARENT_SCOPE )
+
+source_group( "UI Files" FILES ${UI_FILES} )
+source_group( "Generated Files" FILES ${MOC_SRCS} ${UI_HDRS} ${RSC_SRCS} )
+source_group( "Class Diagrams" FILES ${CD_FILES} )
+source_group( "Resources" FILES ${RSCS} )
+
+add_executable( ${PROJECT_NAME}
+    ${SRCS_FILES} ${UI_FILES} ${HDRS_FILES}
+    ${MOC_SRCS} ${UI_HDRS} ${RSC_SRCS} ${CD_FILES} )
+set_source_files_properties( ${CD_FILES} PROPERTIES HEADER_FILE_ONLY TRUE )
+target_link_libraries( ${PROJECT_NAME}
+    ${QT_LIBRARIES} ${OPENGL_LIBRARY} ${GLUT_LIBRARIES} ${OpenCV_LIBS} )
+set_target_properties( ${PROJECT_NAME} PROPERTIES
+                       LINK_FLAGS ${LARGEADDRESSAWARE} )
+set_target_properties( ${PROJECT_NAME} PROPERTIES
+                       VS_KEYWORD Qt4VSv1.0 )
+
+add_executable( example WIN32
+                main.cpp mainwindow.cpp ${example_MOCS} ) # WIN32 needed
+
+install( TARGETS ${PROJECT_NAME} DESTINATION bin )
+
+# this command finds OpenCV libraries and sets all required variables
+find_package( OpenCV REQUIRED )
+include_directories( ${OPENCV_INCLUDE_DIR} )
+include_directories( ${CMAKE_BINARY_DIR} )
+
+find_package( OpenGL REQUIRED )
+file( GLOB_RECURSE HDRS_FILES *.h *.hpp )
+file( GLOB_RECURSE SRCS_FILES *.cpp )
+file( GLOB_RECURSE UI_FILES *.ui )
+file( GLOB CD_FILES *.cd )
+
+add_subdirectory( src )
+
+set (CMAKE_BUILD_TYPE Release) # cmake -DCMAKE_BUILD_TYPE=Debug .
+```
+
+---
+
+* `uic`{.bash} ==> mainwindow.ui --> mainwindow.h
+* `moc`{.bash} ==> mainwindow.h  --> mainwindow.cpp
+* `g++`{.bash} ==>
+
+```bash
+uic mainwindow.ui  -o  ui_mainwindow.h
+moc mainwindow.h   -o moc_mainwindow.cpp  ==> Q_OBJECT
+rcc main.qrc       -o qrc_main.cpp
+g++ main.cpp mainwindow.cpp  moc_mainwindow.cpp \
+-IC:\Qt\4.8.4\include \
+-LC:\Qt\4.8.4\lib \
+-lQtCore4 \
+-lQtGui4 \
+-o main
+```
+
+---
+
+```cmake
+# IF-ELSE-ENDIF
+if (exp)
+...
+else (exp)
+...
+endif (exp)
+
+# FOREACH
+foreach (list)
+...
+endforeach (list)
+
+# WHILE
+while (cond)
+...
+endwhile (cond)
+```
+
+---
+
+Headers & Libs
+
+:   - headers ==> **`include_directories`** --> PATH & LD_LIBRARY_PATH
+    - libraries ==> **`find_library`**(good) or **`link_directories`**(bad)
+    - include: `*.h` ==> `-I` in gcc
+    - link dir: `{*.so/*.dll/*.lib/*.dylib/...}` ==> `-L` in gcc
+    - link file: `*.so/*.dll/*.lib/*.dylib/...` ==> `-l` in gcc
+
+Use `FindXXXX.cmake` & set `${CMAKE_MODULE_PATH}` to
+
+```cmake
+find_package( Qt4 REQUIRED ) # think of it as an #include
+```
+
+Or create your own finders
+```cmake
+get_filename_component( ... )
+
+# lib files
+find_library( ... ) # CMAKE_LIBRARY_PATH
+
+# header files
+find_file( ... )    # CMAKE_INCLUDE_PATH
+
+# MISC
+find_program( ... )
+try_compile( ... )
+try_run( ... )
+```
+
+PkgConfig
+
+:   - `UsePkgConfig.cmake`
+    - `FindPkgConfig.cmake`
+
+---
+
+Qt with CMake
+
+```cmake
+project( pfrac )
+find_package( QT4 REQUIRED )
+include( ${QT_USE_FILE} )
+SET( pfrac_SRCS main.cpp client.h client.cpp )
+SET( pfrac_MOC_HEADERS client.h )
+qt4_add_resoURCES( pfrac_SRCS
+     ${PROJECT_SOURCE_DIR}/pfrac.qrc )
+qt4_wrap_cpp( pfrac_MOC_SRCS
+     ${pfrac_MOC_HEADERS} )
+add_executable( pfrac ${pfrac_SRCS} ${pfrac_MOC_SRCS} )
+target_link_libraries( pfrac ${QT_LIBRARIES} )
+```
+
+Congfigure file
+
+```cmake
+set( VALUE 23 )
+configure_file( conf.h.in conf.h )
+check_include_file( unistd.h HAVE_UNISTD )
+```
+
+`conf.h.in`:
+
+:   ```cmake
+    #cmakedefine VAL
+    #define KEY @VALUE@
+    ```
+
+`conf.h`:
+
+:   ```c
+    #define VAL
+    #define KEY 23
+    ```
+
+`*.h`:
+
+:   ```c
+    #ifdef VAL
+        int keys[KEY];
+    #endif
+
+    #include "conf.h"
+    #ifdef HAVE_UNISTD
+        // ...
+    #else
+        // ...
+    #endif
+    ```
+
+MISC
+
+```cmake
+# MESSAGE
+message( [SEND_ERROR | STATUS | FATAL_ERROR] "message to display" ... )
+
+# LINK
+target_link_libraries( wakeup RELEASE ${SRC} )
+target_link_libraries( wakeupd DEBUG ${SRC} )
+
+# INSTALL
+install( TARGETS ... RUNTIME DESTINATION bin LIBRARY DESTINATION lib )
+
+# MACRO (text substitution)
+macro (INSERT_INTO_MAP _KEY _VALUE)
+  set ("MyMap_${_KEY}" "${_VALUE}")
+endmacro (INSERT_INTO_MAP)
+
+set( MyKey "foo" )
+set( MyValue "bar" )
+insert_into_map( "${MyKey}" "${MyValue}" )
+
+# FUNCTION
+...
+
+# EXECUTE_PROCESS
+execute_process( )
+
+# TARGET
+add_custom_targets
+
+# CACHE
+set( num 23 CACHE ) # use cached 'num' if possible, and save to it
+set( num 23 CACHE FORCE ) # force overwrite Cache.
+
+# POLICY (for Back/Forward?compatibility)
+...
+
+# Properties
+cmake_minimum_required( ... )
+option( ... )
+get_cmake_property( ... )
+get_target_property( ... )
+set_target_property( ... )
+set_source_files_properties( ... )
+
+# Useful Varibles
+cmake_binary_dir( build  dir )    CMAKE_CURRENT_BINARY_DIR
+cmake_source_dir( source dir )    CMAKE_CURRENT_SOURCE_DIR
+
+PROJECT_BINARY_DIR   EXECUTABLE_OUTPUT_PATH
+PROJECT_SOURCE_DIR   LIBRARY_OUTPUT_PATH
+
+$ENV{name}
+```
+
+---
+
+MISC
+
+#. `*.ilk` => **incremental linker file**
+#. `LD_LIBRARY_PATH` ==> **Link Dynamically Lib Path**
+
+- CPack (for installer packaging)
+- CTest & CDash (for code testing & testing result displaying)
+
+---
+
+- [realforce-to-hhkb2-pro/AutoHotkey.ahk at master ·
+  guillaume-nargeot/realforce-to-hhkb2-pro](https://github.com/guillaume-nargeot/realforce-to-hhkb2-pro/blob/master/AutoHotkey.ahk)
+- [AutoHotKeyの設定](https://gist.github.com/kawaken/7652588)
+
+---
+
+```bash
 # fullname := "/home/user/file.txt"
 filename=$(basename "$fullfile")     # file.txt
 extension="${filename##*.}"          # txt
 filename="${filename%.*}"            # file
+```
 
 ```bash
 PDF=$1
@@ -56,7 +450,6 @@ convert              \
 ```
 
 A.pdf -> A-{0,1}.jpg
-
 
 convert raw image:
 
@@ -78,15 +471,13 @@ echo end time: `date`
 ```bash
 !/bin/bash
 
-for i in rotate shear roll hue \
-saturation brightness gamma spiff \
-dull grayscale quantize despeckle \
-reduceNoise addNoise sharpen blur \
-threshold edgedetect spread shade \
-raise segment solarize swirl implode \
-wave oilpaint charcoal jpeg;
+for i in rotate shear roll hue saturation brightness gamma spiff dull \
+         grayscale quantize despeckle reduceNoise addNoise sharpen blur \
+         threshold edgedetect spread shade raise segment solarize swirl \
+         implode wave oilpaint charcoal jpeg;
 do
-    convert main.jpg -preview ${i} -gravity south -box "#00000020" -pointsize 36 -fill "#887ddd" -draw "text 0,0 '${i}'" out.${i}.jpg
+    convert main.jpg -preview ${i} -gravity south -box "#00000020" \
+        -pointsize 36 -fill "#887ddd" -draw "text 0,0 '${i}'" out.${i}.jpg
 done
 
 montage out.*.jpg -tile 1x$(ls out.*.jpg | wc -l) -geometry 766x936 out.main.jpg
@@ -94,13 +485,35 @@ montage out.*.jpg -tile 1x$(ls out.*.jpg | wc -l) -geometry 766x936 out.main.jpg
 
 ```bash
 ➜  trygridfs git:(master) ✗ curl -X POST -F file=@./package.json localhost:8090/gridfs
-{"method":"POST","url":"/gridfs","header":{"user-agent":"curl/7.35.0","host":"localhost:8090","accept":"*/*","content-length":"1022","expect":"100-continue","content-type":"multipart/form-data; boundary=------------------------72fd612aa595d9d6"}}%
+{
+  "method": "POST",
+  "url": "/gridfs",
+  "header": {
+    "user-agent": "curl/7.35.0",
+    "host": "localhost:8090",
+    "accept": "*/*",
+    "content-length": "1022",
+    "expect": "100-continue",
+    "content-type": "multipart/form-data; boundary=------------------------72fd612aa595d9d6"
+  }
+}
+
 ➜  trygridfs git:(master) ✗ curl -X POST -d @./package.json localhost:8090/gridfs
-{"method":"POST","url":"/gridfs","header":{"user-agent":"curl/7.35.0","host":"localhost:8090","accept":"*/*","content-length":"783","content-type":"application/x-www-form-urlencoded"}}%
+{
+  "method": "POST",
+  "url": "/gridfs",
+  "header": {
+    "user-agent": "curl/7.35.0",
+    "host": "localhost:8090",
+    "accept": "*/*",
+    "content-length": "783",
+    "content-type": "application/x-www-form-urlencoded"
+  }
+}
 
-➜  trygridfs git:(master) ✗
-
-➜  example git:(master) ✗ curl -X POST -F file=@./package.json -F file=@./upload.js localhost:8000/upload
+➜  example git:(master) ✗ curl -X POST \
+    -F file=@./package.json \
+    -F file=@./upload.js localhost:8000/upload
 ```
 
 ```bash
@@ -117,8 +530,8 @@ gm('img/600x300.jpg')
 
 ```
 
-
 awk, word frequency counter
+
 ```bash
 # wordfreq.awk --- print list of word frequencies
 
@@ -147,7 +560,6 @@ sed -e 's/\([A-Z]\)/ \L\1/g' $FILE | \
 gawk -f wcf.awk | sort -k 2nr
 ```
 
-
 read
 
 ```bash
@@ -155,7 +567,6 @@ read
 
 ADDTO="2015.md"
 DATE=`date +%Y-%m-%d`
-
 
 echo adding $1
 echo \* \[ \] \[$DATE\] $1 >> $ADDTO
@@ -173,20 +584,15 @@ Just Simple
 
 ```
 
-reputedly
-[rɪˈpjuːtɪdli]
+reputedly `[rɪˈpjuːtɪdli]` adv. 据说，一般认为；根据风评
 
-    adv. 据说，一般认为；根据风评
-
-
-[district10/trycmake: Try some CMake](https://github.com/district10/trycmake)
-[district10/tryopenmp: Try some OpenMP](https://github.com/district10/tryopenmp)
-[district10/tryqt: Try some Qt](https://github.com/district10/tryqt)
-
+- [district10/trycmake: Try some CMake](https://github.com/district10/trycmake)
+- [district10/tryopenmp: Try some OpenMP](https://github.com/district10/tryopenmp)
+- [district10/tryqt: Try some Qt](https://github.com/district10/tryqt)
 
 ---
 
-
+```tzx-plain
 ; 一、组合键
 ;             ::WinMinimize, A ; 最小化活动窗口。
 ;             n::Run, Notepad.exe  ; 打开记事本。
@@ -244,10 +650,10 @@ return
 ::btw::
    MsgBox You typed "btw".
 Return
+```
 
-dire prediction
-devour sth
-
+- dire prediction, adj. 可怕的；悲惨的；极端的
+- devour sth, 毁灭
 
 ---
 
@@ -258,13 +664,14 @@ size_t strlen( const char *str )
     for( s=str; *s; ++s ) { }
     return s-str;
 }
+
 char *strcpy( char *to, const char *from  )
 {
     assert( to && from && "should be both valid." );
     char *p = to;
     int i = 0;
     while( (*p++=*from++) != 0 ) { }
-    retunr to;
+    return to;
 }
 
 void strstr( const char *haystack, const char *needle )
@@ -310,14 +717,7 @@ substring searching
 
   tests: char *text, char *pattern, int i = kmp(), i>0?printf;
 
-  Boyer-Moore algo,
-    推 荐 网 上 的 几 篇 比 较 好 的 博 客,“字 符 串 匹 配 的 Boyer-Moore 算 法”
-    http://www.ruanyifeng.com/blog/2013/05/boyer-moore_string_search_algorithm.html,图文并茂,非常通俗
-    易懂,作者是阮一峰; Boyer-Moore algorithm, http://www-igm.univ-mlv.fr/ lecroq/string/node14.html。
-
     rabin-karp.
-
-
     regexp?
 
 typedef int stack_elem_t;
@@ -347,24 +747,26 @@ void push(s, elem){
     push;
     s->elems[s->size++] = x; // pa: ++size or size++, which is better
 }
-int top(){} // pa: size++ -> size-1
-void pop(){
-    --size;
-    }
 
+int top() { } // pa: size++ -> size-1
+void pop()
+{
+    --size;
+}
 
 hanoi tower, recursive.
 n==1? just move x->z;
-
 hanoi(n, from, bridge, to);
 
 convert base, void (int n, int d)
 while(n!=0)
 r=n%d; push(r);
 n=n/d;
+
 如果可以预估栈的最大空间,则用数组来模拟栈,这时常用的一个技巧。
-* 这里,栈的最大长度是多少?假设 CPU 是 64 位,最大的整数则是 2^64,由于
-* 数制最小为 2,在这个进制下,数的位数最长,这就是栈的最大长度,最长为 64。
+
+  - 这里,栈的最大长度是多少?假设 CPU 是 64 位,最大的整数则是 2^64,由于
+  - 数制最小为 2,在这个进制下,数的位数最长,这就是栈的最大长度,最长为 64。
 
 10->d, hader,
 d->10, easy! char->num, n=n*d+num;
@@ -395,10 +797,7 @@ push(q, elem x){
     realloc, reassign: front<rear? easy : two parts;
     free(origin-elems);
     elems=new mems;
-
-
-       void *memcpy(void *dest, const void *src, size_t n);
-
+   void *memcpy(void *dest, const void *src, size_t n);
 
 rear = (read+1)%capacity;
 
@@ -409,7 +808,6 @@ typedef struct {
     binary_tree_node_t *right;
     tree_node_elem_t elem;
 } binary_tree_node_t;
-
 
 pre_order_r( const *root, int (*visit)(const *tree)) {
     if (!root) return;
@@ -432,51 +830,74 @@ post_order_r( const *root, int (*visit)(const *tree)) {
     visit( root );
 }
 
-
 // no recursive version
 pre_order( *tree, int (*visit)(*tree) ) {
 
 }
 ```
 
-By pressing $mod+Enter, a new terminal will be opened. It will fill the whole space available on your screen.
-
-Therefore, $mod+j is left, $mod+k is down, $mod+l is up and $mod+; is right. So, to switch between the terminals, use $mod+k or $mod+l. Of course, you can also use the arrow keys.
-
-To split a window vertically, press $mod+v before you create the new window. To split it horizontally, press $mod+h.
-
-To switch modes, press $mod+e for splith/splitv (it toggles), $mod+s for stacking and $mod+w for tabbed.
-
-To display a window in fullscreen mode or to go out of fullscreen mode again, press $mod+f.
-
-If an application does not provide a mechanism for closing (most applications provide a menu, the escape key or a shortcut like Control+w to close), you can press $mod+Shift+q to kill a window. For applications which support the WM_DELETE protocol, this will correctly close the application (saving any modifications or doing other cleanup). If the application doesn’t support the WM_DELETE protocol your X server will kill the window and the behaviour depends on the application.
-
-$mod+num, goto workspace,
-$mod+shift+num, move window to workspace.
-
-To restart i3 in place (and thus get into a clean state if there is a bug, or to upgrade to a newer version of i3) you can use $mod+Shift+r.
-
-To cleanly exit i3 without killing your X server, you can use $mod+Shift+e. By default, a dialog will ask you to confirm if you really want to quit.
-
-You can toggle floating mode for a window by pressing $mod+Shift+Space. By dragging the window’s titlebar with your mouse you can move the window around. By grabbing the borders and moving them you can resize the window. You can also do that by using the [floating_modifier]. Another way to resize floating windows using the mouse is to right-click on the titlebar and drag.
+这部分全部移到了 [district10/algo: 重复造轮子。](https://github.com/district10/algo)。
 
 ---
 
-- `:%s/^\(.*\)(/\L\1/`, cmake, lowercase commands
+i3 window manager
 
+:   By pressing `$mod+Enter`, a new terminal will be opened. It will fill the
+    whole space available on your screen.
+
+    Therefore, `$mod+j` is left, `$mod+k` is down, `$mod+l` is up and `$mod+;`
+    is right. So, to switch between the terminals, use `$mod+k` or `$mod+l.` Of
+    course, you can also use the arrow keys.
+
+    To split a window vertically, press `$mod+v` before you create the new
+    window. To split it horizontally, press `$mod+h`.
+
+    To switch modes, press `$mod+e` for splith/splitv (it toggles), `$mod+s`
+    for stacking and `$mod+w` for tabbed.
+
+    To display a window in fullscreen mode or to go out of fullscreen mode
+    again, press `$mod+f`.
+
+    If an application does not provide a mechanism for closing (most
+    applications provide a menu, the escape key or a shortcut like
+    <kbd>Control+w</kbd> to close), you can press $mod+Shift+q to kill a
+    window. For applications which support the WM_DELETE protocol, this will
+    correctly close the application (saving any modifications or doing other
+    cleanup). If the application doesn’t support the WM_DELETE protocol your X
+    server will kill the window and the behaviour depends on the application.
+
+    `$mod+num,` goto workspace,
+
+    `$mod+shift+num,` move window to workspace.
+
+    To restart i3 in place (and thus get into a clean state if there is a bug,
+    or to upgrade to a newer version of i3) you can use $mod+Shift+r.
+
+    To cleanly exit i3 without killing your X server, you can use
+    `$mod+Shift+e`.  By default, a dialog will ask you to confirm if you really
+    want to quit.
+
+    You can toggle floating mode for a window by pressing `$mod+Shift+Space`.
+    By dragging the window’s titlebar with your mouse you can move the window
+    around.  By grabbing the borders and moving them you can resize the window.
+    You can also do that by using the `[floating_modifier]`. Another way to
+    resize floating windows using the mouse is to right-click on the titlebar
+    and drag.
+
+---
 
 */character-classes*
 
 | ...    | ...     | ...     | ...                                           |
 | :---:  | :---:   | :---:   | :---:                                         |
 |  `/\i` |  `\i`   |   `\i`  |   identifier character (see 'isident' option) |
-|  `/\I` |  `\I`   |   `\I`  |   like "\i", but excluding digits |
+|  `/\I` |  `\I`   |   `\I`  |   like `\i`, but excluding digits |
 |  `/\k` |  `\k`   |   `\k`  |   keyword character (see 'iskeyword' option) |
-|  `/\K` |  `\K`   |   `\K`  |   like "\k", but excluding digits |
+|  `/\K` |  `\K`   |   `\K`  |   like `\k`, but excluding digits |
 |  `/\f` |  `\f`   |   `\f`  |   file name character (see 'isfname' option) |
-|  `/\F` |  `\F`   |   `\F`  |   like "\f", but excluding digits |
+|  `/\F` |  `\F`   |   `\F`  |   like `\f`, but excluding digits |
 |  `/\p` |  `\p`   |   `\p`  |   printable character (see 'isprint' option) |
-|  `/\P` |  `\P`   |   `\P`  |   like "\p", but excluding digits |
+|  `/\P` |  `\P`   |   `\P`  |   like `\p`, but excluding digits |
 |  `/\s` |  `\s`   |   `\s`  |   whitespace character: <Space> and <Tab> |
 |  `/\S` |  `\S`   |   `\S`  |   non-whitespace character; opposite of \s |
 |  `/\d` |  `\d`   |   `\d`  |   digit:              `[0-9]` |
@@ -504,6 +925,7 @@ see more at `:h regexp`
 - `%s///n`, count of current word
 - `:10,50s/pattern//gn`, line 10 to line 50
 - `:s/\[\d\{,3\}\]//g`, delete `[1]`-like ref links in wikipedia
+- `:%s/^\(.*\)(/\L\1/`, cmake, lowercase commands
 
 ---
 
@@ -560,6 +982,107 @@ public:
 * If ... Else ... Paradigm
 
 * [Cognitive Bias](http://en.wikipedia.org/wiki/List_of_cognitive_biases)
+
+Name  | Description
+----- | -----------
+Ambiguity effect  | The tendency to avoid options for which missing information makes the probability seem "unknown".
+Anchoring or focalism  | The tendency to rely too heavily, or "anchor", on one trait or piece of information when making decisions (usually the first piece of information that we acquire on that subject)
+Anthropomorphism  | The tendency to characterize animals, objects, and abstract concepts as possessing human-like traits, emotions, and intentions.
+Attentional bias  | The tendency of our perception to be affected by our recurring thoughts.
+Automation bias  | The tendency to excessively depend on automated systems which can lead to erroneous automated information overriding correct decisions.
+Availability heuristic  | The tendency to overestimate the likelihood of events with greater "availability" in memory, which can be influenced by how recent the memories are or how unusual or emotionally charged they may be.
+Availability cascade  | A self-reinforcing process in which a collective belief gains more and more plausibility through its increasing repetition in public discourse (or "repeat something long enough and it will become true").
+Backfire effect  | When people react to disconfirming evidence by strengthening their beliefs.
+Bandwagon effect  | The tendency to do (or believe) things because many other people do (or believe) the same. Related to groupthink and herd behavior.
+Base rate fallacy or Base rate neglect  | The tendency to ignore base rate information (generic, general information) and focus on specific information (information only pertaining to a certain case).
+Belief bias  | An effect where someone's evaluation of the logical strength of an argument is biased by the believability of the conclusion.
+Bias blind spot  | The tendency to see oneself as less biased than other people, or to be able to identify more cognitive biases in others than in oneself.
+Cheerleader effect  | The tendency for people to appear more attractive in a group than in isolation.
+Choice-supportive bias  | The tendency to remember one's choices as better than they actually were.
+Clustering illusion  | The tendency to overestimate the importance of small runs, streaks, or clusters in large samples of random data (that is, seeing phantom patterns).
+Confirmation bias  | The tendency to search for, interpret, focus on and remember information in a way that confirms one's preconceptions.
+Congruence bias  | The tendency to test hypotheses exclusively through direct testing, instead of testing possible alternative hypotheses.
+Conjunction fallacy  | The tendency to assume that specific conditions are more probable than general ones.
+Conservatism (Bayesian)  | The tendency to revise one's belief insufficiently when presented with new evidence.
+Contrast effect  | The enhancement or reduction of a certain perception's stimuli when compared with a recently observed, contrasting object.
+Curse of knowledge  | When better-informed people find it extremely difficult to think about problems from the perspective of lesser-informed people.
+Declinism  | The belief that a society or institution is tending towards decline. Particularly, it is the predisposition to view the past favourably and future negatively.
+Decoy effect  | Preferences for either option A or B changes in favor of option B when option C is presented, which is similar to option B but in no way better.
+Denomination effect  | The tendency to spend more money when it is denominated in small amounts (e.g., coins) rather than large amounts (e.g., bills).
+Disposition effect  | The tendency to sell an asset that has accumulated in value and resist selling an asset that has declined in value.
+Distinction bias  | The tendency to view two options as more dissimilar when evaluating them simultaneously than when evaluating them separately.
+Dunning-Kruger effect  | The tendency for unskilled individuals to overestimate their own ability and the tendency for experts to underestimate their own ability.
+Duration neglect  | The neglect of the duration of an episode in determining its value
+Empathy gap  | The tendency to underestimate the influence or strength of feelings, in either oneself or others.
+Endowment effect  | The tendency for people to demand much more to give up an object than they would be willing to pay to acquire it.
+Essentialism  | Categorizing people and things according to their essential nature, in spite of variations.[dubious – discuss]
+Exaggerated expectation  | Based on the estimates, real-world evidence turns out to be less extreme than our expectations (conditionally inverse of the conservatism bias).[unreliable source?]
+Experimenter's or expectation bias  | The tendency for experimenters to believe, certify, and publish data that agree with their expectations for the outcome of an experiment, and to disbelieve, discard, or downgrade the corresponding weightings for data that appear to conflict with those expectations.
+Focusing effect  | The tendency to place too much importance on one aspect of an event.
+Forer effect or Barnum effect  | The observation that individuals will give high accuracy ratings to descriptions of their personality that supposedly are tailored specifically for them, but are in fact vague and general enough to apply to a wide range of people. This effect can provide a partial explanation for the widespread acceptance of some beliefs and practices, such as astrology, fortune telling, graphology, and some types of personality tests.
+Framing effect  | Drawing different conclusions from the same information, depending on how that information is presented
+Frequency illusion  | The illusion in which a word, a name, or other thing that has recently come to one's attention suddenly seems to appear with improbable frequency shortly afterwards (not to be confused with the recency illusion or selection bias). Colloquially, this illusion is known as the Baader-Meinhof Phenomenon.
+Functional fixedness  | Limits a person to using an object only in the way it is traditionally used.
+Gambler's fallacy  | The tendency to think that future probabilities are altered by past events, when in reality they are unchanged. The fallacy arises from an erroneous conceptualization of the law of large numbers. For example, "I've flipped heads with this coin five times consecutively, so the chance of tails coming out on the sixth flip is much greater than heads."
+Hard–easy effect  | Based on a specific level of task difficulty, the confidence in judgments is too conservative and not extreme enough
+Hindsight bias  | Sometimes called the "I-knew-it-all-along" effect, the tendency to see past events as being predictable at the time those events happened.
+Hot-hand fallacy  | The "hot-hand fallacy" (also known as the "hot hand phenomenon" or "hot hand") is the fallacious belief that a person who has experienced success with a random event has a greater chance of further success in additional attempts.
+Hyperbolic discounting  | Discounting is the tendency for people to have a stronger preference for more immediate payoffs relative to later payoffs. Hyperbolic discounting leads to choices that are inconsistent over time – people make choices today that their future selves would prefer not to have made, despite using the same reasoning. Also known as current moment bias, present-bias, and related to Dynamic inconsistency.
+Identifiable victim effect  | The tendency to respond more strongly to a single identified person at risk than to a large group of people at risk.
+Illusion of control  | The tendency to overestimate one's degree of influence over other external events.
+Illusion of validity  | Belief that furtherly acquired information generates additional relevant data for predictions, even when it evidently does not.
+Illusory correlation  | Inaccurately perceiving a relationship between two unrelated events.
+Impact bias  | The tendency to overestimate the length or the intensity of the impact of future feeling states.
+Information bias  | The tendency to seek information even when it cannot affect action.
+Insensitivity to sample size  | The tendency to under-expect variation in small samples.
+Irrational escalation  | The phenomenon where people justify increased investment in a decision, based on the cumulative prior investment, despite new evidence suggesting that the decision was probably wrong. Also known as the sunk cost fallacy.
+Less-is-better effect  | The tendency to prefer a smaller set to a larger set judged separately, but not jointly.
+Loss aversion  | The disutility of giving up an object is greater than the utility associated with acquiring it. (see also Sunk cost effects and endowment effect).
+Mere exposure effect  | The tendency to express undue liking for things merely because of familiarity with them.
+Money illusion  | The tendency to concentrate on the nominal value (face value) of money rather than its value in terms of purchasing power.
+Moral credential effect  | The tendency of a track record of non-prejudice to increase subsequent prejudice.
+Negativity effect  | The tendency of people, when evaluating the causes of the behaviors of a person they dislike, to attribute their positive behaviors to the environment and their negative behaviors to the person's inherent nature.
+Negativity bias  | Psychological phenomenon by which humans have a greater recall of unpleasant memories compared with positive memories.
+Neglect of probability  | The tendency to completely disregard probability when making a decision under uncertainty.
+Normalcy bias  | The refusal to plan for, or react to, a disaster which has never happened before.
+Not invented here  | Aversion to contact with or use of products, research, standards, or knowledge developed outside a group. Related to IKEA effect.
+Observer-expectancy effect  | When a researcher expects a given result and therefore unconsciously manipulates an experiment or misinterprets data in order to find it (see also subject-expectancy effect).
+Omission bias  | The tendency to judge harmful actions as worse, or less moral, than equally harmful omissions (inactions).
+Optimism bias  | The tendency to be over-optimistic, overestimating favorable and pleasing outcomes (see also wishful thinking, valence effect, positive outcome bias).
+Ostrich effect  | Ignoring an obvious (negative) situation.
+Outcome bias  | The tendency to judge a decision by its eventual outcome instead of based on the quality of the decision at the time it was made.
+Overconfidence effect  | Excessive confidence in one's own answers to questions. For example, for certain types of questions, answers that people rate as "99% certain" turn out to be wrong 40% of the time.
+Pareidolia  | A vague and random stimulus (often an image or sound) is perceived as significant, e.g., seeing images of animals or faces in clouds, the man in the moon, and hearing non-existent hidden messages on records played in reverse.
+Pessimism bias  | The tendency for some people, especially those suffering from depression, to overestimate the likelihood of negative things happening to them.
+Planning fallacy  | The tendency to underestimate task-completion times.
+Post-purchase rationalization  | The tendency to persuade oneself through rational argument that a purchase was good value.
+Pro-innovation bias  | The tendency to have an excessive optimism towards an invention or innovation's usefulness throughout society, while often failing to identify its limitations and weaknesses.
+Pseudocertainty effect  | The tendency to make risk-averse choices if the expected outcome is positive, but make risk-seeking choices to avoid negative outcomes.
+Reactance  | The urge to do the opposite of what someone wants you to do out of a need to resist a perceived attempt to constrain your freedom of choice (see also Reverse psychology).
+Reactive devaluation  | Devaluing proposals only because they purportedly originated with an adversary.
+Recency illusion  | The illusion that a word or language usage is a recent innovation when it is in fact long-established (see also frequency illusion).
+Regressive bias  | A certain state of mind wherein high values and high likelihoods are overestimated while low values and low likelihoods are underestimated.[unreliable source?]
+Restraint bias  | The tendency to overestimate one's ability to show restraint in the face of temptation.
+Rhyme as reason effect  | Rhyming statements are perceived as more truthful. A famous example being used in the O.J Simpson trial with the defense's use of the phrase "If the gloves don't fit, then you must acquit."
+Risk compensation / Peltzman effect  | The tendency to take greater risks when perceived safety increases.
+Selective perception  | The tendency for expectations to affect perception.
+Semmelweis reflex  | The tendency to reject new evidence that contradicts a paradigm.
+Social comparison bias  | The tendency, when making hiring decisions, to favour potential candidates who don't compete with one's own particular strengths.
+Social desirability bias  | The tendency to over-report socially desirable characteristics or behaviours in oneself and under-report socially undesirable characteristics or behaviours.
+Status quo bias  | The tendency to like things to stay relatively the same (see also loss aversion, endowment effect, and system justification).
+Stereotyping  | Expecting a member of a group to have certain characteristics without having actual information about that individual.
+Subadditivity effect  | The tendency to judge probability of the whole to be less than the probabilities of the parts.
+Subjective validation  | Perception that something is true if a subject's belief demands it to be true. Also assigns perceived connections between coincidences.
+Survivorship bias  | Concentrating on the people or things that "survived" some process and inadvertently overlooking those that didn't because of their lack of visibility.
+Time-saving bias  | Underestimations of the time that could be saved (or lost) when increasing (or decreasing) from a relatively low speed and overestimations of the time that could be saved (or lost) when increasing (or decreasing) from a relatively high speed.
+Third-person effect  | Belief that that mass communicated media messages have a greater effect on others than on themselves.
+Triviality / Parkinson's Law of  | The tendency to give disproportionate weight to trivial issues. Also known as bikeshedding, this bias explains why an organization may avoid specialized or complex subjects, such as the design of a nuclear reactor, and instead focus on something easy to grasp or rewarding to the average participant, such as the design of an adjacent bike shed.
+Unit bias  | The tendency to want to finish a given unit of a task or an item. Strong effects on the consumption of food in particular.
+Weber–Fechner law  | Difficulty in comparing small differences in large quantities.
+Well travelled road effect  | Underestimation of the duration taken to traverse oft-traveled routes and overestimation of the duration taken to traverse less familiar routes.
+Zero-risk bias  | Preference for reducing a small risk to zero over a greater reduction in a larger risk.
+Zero-sum heuristic  | Intuitively judging a situation to be zero-sum (i.e., that gains and losses are correlated). Derives from the zero-sum game in game theory, where wins and losses sum to zero. The frequency with which this bias occurs may be related to the social dominance orientation personality factor
+
 * [The 12 Cognitive Bias that Prevent you from Being Rational](http://io9.com/5974468/the-most-common-cognitive-biases-that-prevent-you-from-being-rational)
 * [心智工具箱（4）：执行意图 | 阳志平的日志](http://www.douban.com/note/256480522/)
 

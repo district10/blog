@@ -14,6 +14,8 @@ V/\n#. ?kbzf
 
 #. &#x2610;
 #. &#x2610;
+#. &#x2610; [IntroPy - Woodpecker Wiki for CPUG](http://wiki.woodpecker.org.cn/moin/IntroPy)
+#. &#x2610; [top10-Py-idioms-wish-learned-earlier | #是也乎# | ZoomQuiet.io](http://blog.zoomquiet.io/top10-Py-idioms-wish-learned-earlier.html)
 
 - [Cpp-Primer/ch01 at master · Mooophy/Cpp-Primer](https://github.com/Mooophy/Cpp-Primer/tree/master/ch01)
 - [Facebook](https://github.com/facebook)

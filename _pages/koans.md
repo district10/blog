@@ -13,6 +13,17 @@ code.tzx-timestamp {
 
 <div class="koans"><!-- 下面要有空行 | One Empty Line Reserved Below -->
 
+## `1457919802`{.tzx-timestamp} 原来这是我提的……
+
+我喜欢的 [中文文案排版指北
+](https://github.com/sparanoid/chinese-copywriting-guidelines) 里有句：`例外：
+「豆瓣FM」等產品名詞，按照官方所定義的格式書寫。`，唉，我正想说这个来着啊！
+
+然后发现这特么是我提得 issue 啊……：[关于中英文混排（特殊情况） · Issue #6 ·
+sparanoid/chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines/issues/6)
+
+我还真是热心观众一枚。
+
 ## `1457712897`{.tzx-timestamp} Big Git Repo
 
 ```tzx-plain

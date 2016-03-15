@@ -7,7 +7,7 @@ Vim Rules
 
 Vim rules. Rules, a verb. Vim rules. Rules, a noun.
 
-![](http://gnat.qiniudn.com/vim.svg)
+[vim graphical cheat sheet](http://gnat.qiniudn.com/vim.svg)
 
 Cmds
 ----
@@ -16,7 +16,15 @@ delete trailing whitespace
 
 `:%s/\s\+$//`
 
+pangu-spacing（在中英文之间加上空格）
 
+```plain
+silent! '<,'>s/\([\u4e00-\u9fa5\u3040-\u30FF]\)\([a-zA-Z0-9@&=\[\$\%\^\-\+(\/\\]\)/\1 \2/g
+silent! '<,'>s/\([a-zA-Z0-9!&;=\]\,\.\:\?\$\%\^\-\+\)\/\\]\)\([\u4e00-\u9fa5\u3040-\u30FF]\)/\1 \2/g
+```
+
+把上面的两行拷贝到某一个寄存器如 `p`（选中上面上行，然后执行 `:"py`），然后选定
+文本，执行 `:@p`。
 
 每天必用的 Vim 宏
 -----------------
@@ -51,3 +59,9 @@ Qt::SolidPattern, `Qt::SolidPattern`{.cpp}
 #. `v`:
 #. `w`:
 #. `t`: tilde: word &rarr; `word`
+
+---
+
+Refs
+
+#. [pangu.vim/pangu.vim at master · hotoo/pangu.vim](https://github.com/hotoo/pangu.vim/blob/master/plugin/pangu.vim)
