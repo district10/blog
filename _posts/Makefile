@@ -25,31 +25,35 @@ $(POSTS): ../footer.html
 clean:
 	rm -f $(POSTS)
 
-$(PODIR)/post-0051-spatial-gis.html: $(PIDIR)/post-0051-spatial-gis.md
-	pandoc $(PANDOC_OPTIONS) \
+$(PODIR)/post-0050-gis-overall.html: $(PIDIR)/post-0050-gis-overall.md
+	pandoc \
 		--toc --mathjax \
-		--bibliography $(patsubst %.md, %.bib, $^) \
+		--bibliography $(patsubst %.md, %.bib, $<) \
+		$(PANDOC_OPTIONS) \
 		$< \
 		-o $@
-$(PODIR)/post-0050-gis-overall.html: $(PIDIR)/post-0050-gis-overall.md
-	pandoc $(PANDOC_OPTIONS) \
+$(PODIR)/post-0051-spatial-gis.html: $(PIDIR)/post-0051-spatial-gis.md
+	pandoc \
 		--toc --mathjax \
-		--bibliography $(patsubst %.md, %.bib, $^) \
+		--bibliography $(patsubst %.md, %.bib, $<) \
+		$(PANDOC_OPTIONS) \
 		$< \
 		-o $@
 
 $(PODIR)/%.html: $(PIDIR)/%.md
-	pandoc $(PANDOC_OPTIONS) \
+	pandoc \
 		--toc --mathjax \
+		$(PANDOC_OPTIONS) \
 		$< \
 		-o $@
 
 pdf: $(addprefix $(PODIR)/, $(PDFS))
 $(PODIR)/%.pdf: $(PIDIR)/%.md
-	pandoc $(PANDOC_OPTIONS) \
+	pandoc \
 		--latex-engine=xelatex \
 		-V mainfont="Microsoft YaHei" \
 		--template=_pm-template \
+		$(PANDOC_OPTIONS) \
 		$< \
 		-o $@
 
