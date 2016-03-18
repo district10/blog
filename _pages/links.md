@@ -167,3 +167,4 @@ Links | 链签
 #. [Online LaTeX Equation Editor - create, integrate and download](http://www.codecogs.com/latex/eqneditor.php)
 #. [Brian Grinstead](http://www.briangrinstead.com/blog/)
 #. [Zeal](https://zealdocs.org/)
+#. [≡⊥≡森羅卍象](https://www.douban.com/people/wensiyu/) %电影资源

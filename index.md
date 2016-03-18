@@ -105,6 +105,11 @@ Search:<br>
 * 2006-10-17 [Pandoc User's Guide](post-0001-pandoc-readme.html)
 </div>
 
+---
+
+作为一个处女座，我的文字排版是考究的。^[笔记部分因为后期才集中整理，可能存在不规范的情况。]
+希望每个人都能花点时间看看 [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)。
+
 <link rel="stylesheet" href="auto-complete.css">
 <style>
     #searchContainer {

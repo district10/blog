@@ -13,6 +13,13 @@ code.tzx-timestamp {
 
 <div class="koans"><!-- 下面要有空行 | One Empty Line Reserved Below -->
 
+## `1458279976`{.tzx-timestamp} 恶性循环
+
+浏览器的恶性循环是用得人少，挣不到钱。然后只能用广告。
+于是一打开浏览器就看到京东，37 游戏，淘宝的书签。
+这样只能让我放弃这个浏览器了。这次我说的是原本挺喜欢的
+Opera 浏览器。中文版的火狐也有这个问题。
+
 ## `1458196052`{.tzx-timestamp} 豆瓣FM 就是比虾米电台靠谱
 
 即便豆瓣被指说不重视移动端，但它的 APP 也更赏心悦目。
@@ -29,6 +36,8 @@ code.tzx-timestamp {
 再加上一点 CSS。就 okay 拉。
 
 一定要搞起来。
+
+<coding.net> 的 CodeInsight 就不错：[CodeInsight](https://coding.net/help/doc/codeinsight/getting-started.html)。
 
 repo 文档里的链接可能还要 fix，是不是用 perl 更好？
 

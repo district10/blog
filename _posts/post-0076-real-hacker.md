@@ -175,8 +175,9 @@ softBreakFilter xs = xs
 
 我现在是五体投地！
 
-P.S. Emacs Org-mode 导出 HTML 的时候也有这个问题，Coldnew 给出了修正代码：
+P.S. Emacs Org-mode 导出 HTML 的时候也有这个问题，Coldnew 给出了修正代码：[^pangu-spacing]
 
+<div style="font-size:80%">
 ```lisp
 (defadvice org-html-paragraph (before org-html-paragraph-advice
                                       (paragraph contents info) activate)
@@ -191,10 +192,14 @@ unwanted space when exporting org-mode to html."
 
     (ad-set-arg 1 fixed-contents)))
 ```
+</div>
 
 见：[去除 org-mode 輸出 HTML 時產生多餘的空格 | coldnew's blog](http://coldnew.github.io/blog/2013/12-17_03349/)。
 
-P.P.S. Coldnew 还是 pangu-spacing 的作者。大赞我处女座。
+[^pangu-spacing]: Coldnew 还是 pangu-spacing 的作者。
+    大赞我处女座。
+
+    ![pangu-spacing 效果](http://whudoc.qiniudn.com/pangu-spacing.gif)
 
 <!--
 

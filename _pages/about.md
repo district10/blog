@@ -5,7 +5,9 @@
 About | 关于
 ============
 
-我的个人主页：[![](tangzhixiong.svg)](http://tangzhixiong.com)。
+我是处女座。
+
+个人主页：[![](tangzhixiong.svg)](http://tangzhixiong.com)。
 
 这是 TANG ZhiXiong 的博客。全部博客内容托管在 GitHub，用 Markdown 写，用
 Makefile 管理，用 Pandoc 和 Bash 脚本转化成 HTML，同步到七牛。简单粗糙，但美观

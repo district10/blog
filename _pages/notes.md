@@ -36,6 +36,8 @@ pre.tzx-bigquote {
 
 <!--...-->
 
+> 动态语言一时爽，代码重构火葬场。
+
 ---
 
 Configs 32-bit x86

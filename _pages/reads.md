@@ -13,7 +13,11 @@ V/\n#. ?kbzf
 <div class="reads">
 
 #. &#x2610;
-#. &#x2610;
+#. &#x2610; [Coding 演示平台](http://docs.coding.io/)
+
+从某种程度上说，coding.net 比 github.com 厚道得多。
+
+#. &#x2610; [细说 CSS margin - Coding 博客](https://blog.coding.net/blog/css-margin)
 #. &#x2610; [Jekyll迁移到Hexo建立个人博客 | Lippi-浮生志](http://www.ezlippi.com/blog/2016/02/jekyll-to-hexo.html)
 
 > 个人博客以前由jekyll搭建，主要问题是目录、Rss、sitemap无法自动生成，根据DRY的
