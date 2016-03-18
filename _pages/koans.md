@@ -13,6 +13,19 @@ code.tzx-timestamp {
 
 <div class="koans"><!-- 下面要有空行 | One Empty Line Reserved Below -->
 
+## `1458298773`{.tzx-timestamp} 豆瓣FM 推荐的老歌
+
+真的好老……最近在听豆瓣FM（我重新注册了一个帐号，用弱密码，专门用来听歌），
+推荐的歌给人一种上个世纪的感觉。有
+
+- Dont't Push Me
+- Don't Stop the Music
+- 艾薇儿的各种歌
+
+TODO，听到就更新到这里。
+
+不过确实挺好听的。
+
 ## `1458279976`{.tzx-timestamp} 恶性循环
 
 浏览器的恶性循环是用得人少，挣不到钱。然后只能用广告。
@@ -38,6 +51,19 @@ Opera 浏览器。中文版的火狐也有这个问题。
 一定要搞起来。
 
 <coding.net> 的 CodeInsight 就不错：[CodeInsight](https://coding.net/help/doc/codeinsight/getting-started.html)。
+
+Refs
+
+:   #. [ack2/squash at dev · petdance/ack2](https://github.com/petdance/ack2/blob/dev/squash)
+    #. [Perl-Tidy-20160302 - indent and reformat perl scripts - metacpan.org](https://metacpan.org/release/Perl-Tidy)
+    #. [ack2/squash at dev · petdance/ack2](https://github.com/petdance/ack2/blob/dev/squash)
+    #. [ack2/DEVELOPERS.md at dev · petdance/ack2](https://github.com/petdance/ack2/blob/dev/DEVELOPERS.md)
+    #. [ack2/DESIGN.md at dev · petdance/ack2](https://github.com/petdance/ack2/blob/dev/DESIGN.md)
+    #. [lib/File/Slurp.pm - metacpan.org](https://metacpan.org/source/URI/File-Slurp-9999.19/lib/File/Slurp.pm)
+    #. [File-Find-Rule-0.34 - Alternative interface to File::Find - metacpan.org](https://metacpan.org/release/File-Find-Rule)
+    #. [examples/try_me.pl - metacpan.org](https://metacpan.org/source/GARU/Data-Printer-0.38/examples/try_me.pl)
+    #. [README.md - metacpan.org](https://metacpan.org/source/LASTMAC/HTML-MyHTML-0.25/README.md)
+    #. [Browse ROBIN/PadWalker-2.2/ - metacpan.org](https://metacpan.org/source/ROBIN/PadWalker-2.2)
 
 repo 文档里的链接可能还要 fix，是不是用 perl 更好？
 

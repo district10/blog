@@ -87,7 +87,7 @@ Single-Quoted String Literals
     use utf8;
 
     'barney'
-    ''                          # the null string (no characters)
+    ''                           # the null string (no characters)
     '⅚∞☃☠'                      # Some "wide" Unicode characters
     'Don\'t let an apostrophe end this string prematurely!'
     'the last character is a backslash: \\'
@@ -104,31 +104,32 @@ Double-Quoted String Literals
     "hello world\n"            # hello world, and a newline
     "The last character of this string is a quote mark: \""
     "coke\tsprite"             # coke, a tab, and sprite
-    "\x{2668}"                 # Unicode HOT SPRINGS (♨, 温泉) character code point
+
+    # character code point
+    "\x{2668}"                 # Unicode HOT SPRINGS (♨, 温泉)
     ```
 
-Construct | Meaning
---------- | -------
-`\n` | Newline
-`\r` | Return
-`\t` | Tab
-`\f` | Formfeed
-`\b` | Backspace
-`\a` | Bell
-`\e` | Escape (ASCII escape character)
-`\007` | Any octal ASCII value (here,  007 = bell)
-`\x7f` | Any hex ASCII value (here,  7f = delete)
-`\x{2744}` | Any hex Unicode code point (here,  U+2744 = snowflake)
-`\cC` | A “control” character (here, Ctrl-C)
-`\\` | Backslash
-`\"` | Double quote
-`\l` | Lowercase next letter
-`\L` | Lowercase all following letters until  \E
-`\u` | Uppercase next letter
-`\U` | Uppercase all following letters until  \E
-`\Q` | Quote nonword characters by adding a backslash until  \E
-`\E` | End  \L ,  \U , or  \Q
-
+| Construct | Meaning |
+| :---: | :---- |
+| `\n` | Newline |
+| `\r` | Return |
+| `\t` | Tab |
+| `\f` | Formfeed |
+| `\b` | Backspace |
+| `\a` | Bell |
+| `\e` | Escape (ASCII escape character) |
+| `\007` | Any octal ASCII value (here,  007 = bell) |
+| `\x7f` | Any hex ASCII value (here,  7f = delete) |
+| `\x{2744}` | Any hex Unicode code point (here,  U+2744 = snowflake) |
+| `\cC` | A “control” character (here, Ctrl-C) |
+| `\\` | Backslash |
+| `\"` | Double quote |
+| `\l` | Lowercase next letter |
+| `\L` | Lowercase all following letters until `\E` |
+| `\u` | Uppercase next letter |
+| `\U` | Uppercase all following letters until `\E` |
+| `\Q` | Quote nonword characters by adding a backslash until `\E` |
+| `\E` | End `\L`, `\U` , or  `\Q` |
 
 String Concatenation
 
@@ -155,7 +156,7 @@ warnings & diagnostics
     ```
 
     or in command line:
-      ~ `perl -w my_program`{.perl}, shebang: `#!/usr/bin/perl -w`{.perl}
+      ~ `perl -w my_program`{.bash}, shebang: `#!/usr/bin/perl -w`{.bash}
 
     ```perl
     #!/usr/bin/perl
@@ -163,7 +164,7 @@ warnings & diagnostics
     use diagnostics;
     ```
 
-    module: `perl -Mdiagnostics ./my_program`{.perl}
+    module: `perl -Mdiagnostics ./my_program`{.bash}
 
     ```perl
     $résumé
@@ -223,37 +224,37 @@ warnings & diagnostics
 list and arrays
 
 :   ```perl
-    $blank = $fred[ 142_857 ];          # unused array element gives undef
-    $blanc = $mel;                      # unused scalar $mel also gives undef
+    $blank = $fred[ 142_857 ];        # unused array element gives undef
+    $blanc = $mel;                    # unused scalar $mel also gives undef
 
     $rocks[0] = 'bedrock';
     $rocks[1] = 'slate';
     $rocks[2] = 'lava';
     $rocks[3] = 'crushed rock';
-    $rocks[99] = 'schist';              # now there are 95 undef elements
+    $rocks[99] = 'schist';            # now there are 95 undef elements
 
-    $end = $#rocks;                     # 99, which is the last element's index
-    $number_of_rocks = $end + 1;        # okay, but you'll see a better way later
-    $rocks[ $#rocks ] = 'hard rock';    # the last rock
+    $end = $#rocks;                   # 99, which is the last element's index
+    $number_of_rocks = $end + 1;      # okay, but you'll see a better way later
+    $rocks[ $#rocks ] = 'hard rock';  # the last rock
 
-    $rocks[ –1 ] = 'hard rock';         # easier way to do that last example
-    $dead_rock = $rocks[–100];          # gets 'bedrock'
-    $rocks[ –200 ] = 'crystal';         # fatal error!
+    $rocks[ –1 ] = 'hard rock';       # easier way to do that last example
+    $dead_rock = $rocks[–100];        # gets 'bedrock'
+    $rocks[ –200 ] = 'crystal';       # fatal error!
 
-    (1, 2, 3)                           # list of three values 1, 2, and 3
-    (1, 2, 3,)                          # the same, okay to add extra ','
-    ("fred", 4.5)                       # two values, "fred" and 4.5
-    ( )                                 # empty list - zero elements
-    (1..100)                            # list of 100 integers
+    (1, 2, 3)                         # list of three values 1, 2, and 3
+    (1, 2, 3,)                        # the same, okay to add extra ','
+    ("fred", 4.5)                     # two values, "fred" and 4.5
+    ( )                               # empty list - zero elements
+    (1..100)                          # list of 100 integers
 
-    (1..5)                              # same as (1, 2, 3, 4, 5)
-    (1.7..5.7)                          # same thing; both values are truncated
+    (1..5)                            # same as (1, 2, 3, 4, 5)
+    (1.7..5.7)                        # same thing; both values are truncated
 
-    (5..1)                              # empty list; .. only counts "uphill"
+    (5..1)                            # empty list; .. only counts "uphill"
 
-    (0, 2..6, 10, 12)                   # same as (0, 2, 3, 4, 5, 6, 10, 12)
+    (0, 2..6, 10, 12)                 # same as (0, 2, 3, 4, 5, 6, 10, 12)
     ($m..$n)
-    (0..$#rocks)                        # indices
+    (0..$#rocks)                      # indices
     ```
 
 the qw Shortcut
@@ -289,7 +290,9 @@ list (array)
 
     ($fred, $barney) = qw< flintstone rubble slate granite >;  # ignore
     ($wilma, $dino) = qw[flintstone];                          # undef
+    ``
 
+    ```perl
     ($rocks[0], $rocks[1]) = qw/talc mica/;
 
     @rocks = qw/ bedrock slate lava /;
@@ -298,7 +301,9 @@ list (array)
     @stuff = (@giant, undef, @giant);           # a list with 200,001 elements
     $dino = "granite";
     @quarry = (@rocks, "crushed rock", @tiny, $dino);
+    ```
 
+    ```perl
     @array = 5..9;
     $fred = pop(@array);    # $fred gets 9, @array now has (5, 6, 7, 8)
     $barney = pop @array;   # $barney gets 8, @array now has (5, 6, 7)
@@ -309,7 +314,9 @@ list (array)
     push @array, 1..10;     # @array now has those 10 new elements
     @others = qw/ 9 0 2 1 0 /;
     push @array, @others;   # @array now has those five new elements (19 total)
+    ```
 
+    ```perl
     @array = qw# dino fred barney #;
     $m = shift(@array);     # $m gets "dino", @array now has ("fred", "barney")
     $n = shift @array;      # $n gets "fred", @array now has ("barney")
@@ -319,7 +326,9 @@ list (array)
     unshift @array, 4;      # @array now has (4, 5)
     @others = 1..3;
     unshift @array, @others; # @array now has (1, 2, 3, 4, 5)
+    ```
 
+    ```perl
     @array = qw( pebbles dino fred barney betty );
     @removed = splice @array, 2; # remove everything after fred
                                  # @removed is qw(fred barney betty)
@@ -459,6 +468,7 @@ Using List-Producing Expressions in Scalar Context
     ```
 
 Here are some other expressions you've seen, and the contexts they provide.
+
 First, some that provide scalar context to something:
 
 :   ```perl
@@ -509,10 +519,10 @@ Forcing Scalar Context
 `<STDIN>` in List Context
 
 :   ```perl
-    @lines = <STDIN>; # Read all the lines
-    chomp(@lines); # discard all the newline characters
+    @lines = <STDIN>;           # Read all the lines
+    chomp(@lines);              # discard all the newline characters
 
-    chomp(@lines = <STDIN>); # Read the lines, not the newlines
+    chomp(@lines = <STDIN>);    # Read the lines, not the newlines
     ```
 
 ## Subroutines
@@ -547,9 +557,9 @@ Return Values
     ```perl
     $fred = 3;
     $barney = 4;
-    $wilma = &sum_of_fred_and_barney; # $wilma gets 7
+    $wilma = &sum_of_fred_and_barney;       # $wilma gets 7
     print "\$wilma is $wilma.\n";
-    $betty = 3 * &sum_of_fred_and_barney; # $betty gets 21
+    $betty = 3 * &sum_of_fred_and_barney;   # $betty gets 21
     print "\$betty is $betty.\n";
     ```
 
@@ -569,15 +579,16 @@ Arguments
         }
     }
 
-    # but how about `&max(1,3,2)`?
     ```
+
+    But how about `&max(1,3,2)`{.perl}?
 
 Private Variables in Subroutines
 
 :   ```perl
     sub max {
-        my($m, $n); # new, private variables for this block
-        ($m, $n) = @_; # give names to the parameters
+        my($m, $n);             # new, private variables for this block
+        ($m, $n) = @_;          # give names to the parameters
         if ($m > $n) { $m } else { $n }
     }
     ```
@@ -600,9 +611,9 @@ A Better &max Routine
 
 :   ```perl
     sub max {
-        my($max_so_far) = shift @_; # the first one is the largest yet seen
-        foreach (@_) { # look at the remaining arguments
-            if ($_ > $max_so_far) { # could this one be bigger yet?
+        my($max_so_far) = shift @_;   # the first one is the largest yet seen
+        foreach (@_) {                # look at the remaining arguments
+            if ($_ > $max_so_far) {   # could this one be bigger yet?
                 $max_so_far = $_;
             }
         }
@@ -610,11 +621,10 @@ A Better &max Routine
     }
     ```
 
-Empty Parameter Lists
-
-:   ```perl
-    $maximum = &max(@numbers); # undef
-    ```
+    Empty Parameter Lists
+      ~ ```perl
+        $maximum = &max(@numbers); # undef
+        ```
 
 Notes on Lexical (my) Variables
 
@@ -628,12 +638,12 @@ Notes on Lexical (my) Variables
 Note also that the  my operator doesn’t change the context of an assignment:
 
 :   ```perl
-    my($num) = @_; # list context, same as ($num) = @_;
-    my $num = @_; # scalar context, same as $num = @_;
+    my($num) = @_;      # list context, same as ($num) = @_;
+    my $num  = @_;      # scalar context, same as $num = @_;
     ```
 
     ```perl
-    my $fred, $barney; # WRONG! Fails to declare $barney
+    my $fred, $barney;  # WRONG! Fails to declare $barney
     my($fred, $barney); # declares both
     ```
 
@@ -646,11 +656,11 @@ Note also that the  my operator doesn’t change the context of an assignment:
 The use strict Pragma
 
 :   ```perl
-    use strict; # Enforce some good programming rules
+    use strict;                          # Enforce some good programming rules
 
-    # Starting with Perl 5.12, you implicitly use this pragma when you declare a
-    # minimum Perl version:
-    use 5.012; # loads strict for you
+    # Starting with Perl 5.12, you implicitly use this pragma when you declare
+    # a minimum Perl version:
+    use 5.012;                           # loads strict for you
     ```
 
 The return Operator
@@ -660,9 +670,9 @@ The return Operator
     my $result = &which_element_is("dino", @names);
     sub which_element_is {
         my($what, @array) = @_;
-        foreach (0..$#array) { # indices of @array's elements
+        foreach (0..$#array) {          # indices of @array's elements
             if ($what eq $array[$_]) {
-                return $_; # return early once found
+                return $_;              # return early once found
             }
         }
         –1; # element not found (return is optional here)
@@ -677,6 +687,8 @@ Omitting the Ampersand
     }
     &chomp; # That ampersand is not optional!
     ```
+
+    默认调用原生的。
 
 Non-Scalar Return Values
 
@@ -696,7 +708,7 @@ Persistent, Private Variable
 
 :   ```perl
     sub marine {
-        state $n = 0; # private, persistent variable $n
+        state $n = 0;           # private, persistent variable $n
         $n += 1;
         print "Hello, sailor number $n!\n";
     }
@@ -723,11 +735,14 @@ Persistent, Private Variable
 Input from Standard Input
 
 :   ```perl
-    $line = <STDIN>; # read the next line
-    chomp($line); # and chomp it
+    $line = <STDIN>;            # read the next line
+    chomp($line);               # and chomp it
 
-    chomp($line = <STDIN>); # same thing, more idiomatically
+    chomp($line = <STDIN>);     # same thing, more *idiomatically*
     ```
+
+    **idiomatically** 这个词，可以理解为“地道”，编程这东西，大家都用的，几乎就
+    是最好的。
 
     ```perl
     # much typing
@@ -750,7 +765,7 @@ Input from the Diamond Operator
 
 :   The diamond operator is actually a special kind of line-input operator. But
     instead of getting the input from the keyboard, it comes from the user’s
-    choice of input: †
+    choice of input:
 
     ```perl
     while (defined($line = <>)) {
@@ -777,13 +792,13 @@ The Invocation Arguments
 Output to Standard Output
 
 :   ```perl
-    print @array; # print a list of items
-    print "@array"; # print a string (containing an interpolated array)
+    print @array;    # print a list of items
+    print "@array";  # print a string (containing an interpolated array)
     ```
 
     ```perl
-    print (2+3)*4; # Oops!
-    ( print(2+3) ) * 4; # Oops!
+    print (2+3)*4;          # Oops!
+    ( print(2+3) ) * 4;     # Oops!
     ```
 
 Formatted Output with printf
@@ -1015,14 +1030,18 @@ Hash Element Access
     foreach my $person (qw< barney fred >) {
         print "I've heard of $person $family_name{$person}.\n";
     }
+    ```
 
+    ```perl
     $foo = 'bar';
     print $family_name{ $foo . 'ney' }; # prints 'rubble'
 
-    $family_name{'wilma'} = 'flintstone'; # adds a new key (and value)
-    $family_name{'betty'} .= $family_name{'barney'}; # creates the element if needed
+    # adds a new key (and value)
+    $family_name{'wilma'} = 'flintstone';
+    # creates the element if needed
+    $family_name{'betty'} .= $family_name{'barney'};
 
-    $granite = $family_name{'larry'}; # No larry here: undef
+    $granite = $family_name{'larry'}; # undef
     ```
 
 The Hash As a Whole
@@ -1061,9 +1080,9 @@ The Big Arrow
 
     $score{'fred'} # or $score{fred}
 
-    # But beware; if there’s anything inside the curly braces besides a bareword,
-    # Perl will interpret it as an expression.  For instance, if there is a  . ,
-    # Perl interprets it as a string concatenation:
+    # But beware; if there’s anything inside the curly braces besides a
+    # bareword, Perl will interpret it as an expression.  For instance, if
+    # there is a  . , Perl interprets it as a string concatenation:
     $hash{ bar.foo } = 1; # that's the key 'foobar'
     ```
 
@@ -1112,7 +1131,7 @@ Typical Use of a Hash
     }
     ```
 
-The %ENV hash
+The `%ENV` hash
 
 :   ```perl
     print "PATH is $ENV{PATH}\n";
@@ -1292,8 +1311,8 @@ Choosing a Character Interpretation
     # perhaps characters like Œ from Latin-9
 
 
-    # A single  /a modifier affects the character class shortcuts, but if you have
-    # two  /a , it also tells Perl to use ASCII-only case-folding
+    # A single  /a modifier affects the character class shortcuts, but if you
+    # have two  /a , it also tells Perl to use ASCII-only case-folding
     /k/aai # only matches the ASCII K or k, not Kelvin sign
     /k/aia # the /a's don't need to be next to each other
     /ss/aai # only matches ASCII ss, SS, sS, Ss, not ß
@@ -1302,17 +1321,18 @@ Choosing a Character Interpretation
 
     <http://unicode.org/Public/UNIDATA/CaseFolding.txt>
 
-In this case, you might get different results depending on how Perl treats the string in
-$_ and the string in match operator. If your source code is in UTF-8 but your input is
-Latin-9, what happens? In Latin-9, the character Œ has ordinal value 0xBC and its
-lowercase partner œ has 0xBD. In Unicode, Œ is code point U+0152 and œ is code
-point U+0153. In Unicode, U+0OBC is  ¼ and doesn’t have a lowercase version. If your
-input in  $_ is 0xBD and Perl treats that regular expression as UTF-8, you won’t get the
+In this case, you might get different results depending on how Perl treats the
+string in `$_` and the string in match operator. If your source code is in
+UTF-8 but your input is Latin-9, what happens? In Latin-9, the character Œ has
+ordinal value `0xBC` and its lowercase partner `œ` has `0xBD`. In Unicode, `Œ`
+is code point `U+0152` and `œ` is code point `U+0153`. In Unicode, `U+0OBC` is
+`¼` and doesn't have a lowercase version. If your input in  `$_` is `0xBD` and
+Perl treats that regular expression as UTF-8, you won't...
 
 ```perl
 $_ = <STDIN>;
-my $OE = chr( 0xBC ); # get exactly what we intend
-if (/$OE/i) { # case-insensitive??? Maybe not.
+my $OE = chr( 0xBC );       # get exactly what we intend
+if (/$OE/i) {               # case-insensitive??? Maybe not.
     print "Found $OE\n";
 }
 ```
