@@ -435,19 +435,41 @@ extension="${filename##*.}"          # txt
 filename="${filename%.*}"            # file
 ```
 
-```bash
-PDF=$1
-IMG=${PDF%.*}
 
-convert              \
-    -verbose         \
-    -density 150     \
-    -trim            \
-    $PDF             \
-    -quality 100     \
-    -sharpen 0x1.0   \
-    ${IMG}.jpg
-```
+pdf2img `@`{.tzx-anchor #pdf2img}
+
+:   ```bash
+    PDF=$1
+    IMG=${PDF%.*}
+
+    convert              \
+        -verbose         \
+        -density 150     \
+        -trim            \
+        $PDF             \
+        -quality 100     \
+        -sharpen 0x1.0   \
+        ${IMG}.jpg
+    ```
+
+    see also:
+
+    ```bash
+    # ppt -> pdf
+    libreoffice --headless --invisible --convert-to pdf *.ppt
+
+    # file -> pdf
+    unoconv -f pdf file
+
+    # crop pdf
+    pdfcrop file.pdf cropped.pdf
+    ```
+
+
+    Refs
+      ~ [Note: 批量转换PPT（bash) - gnat - 博客园](http://www.cnblogs.com/gnat-tang/p/3536745.html)
+      ~ [Note: pdfcrop - gnat - 博客园](http://www.cnblogs.com/gnat-tang/p/3536750.html)
+      ~ [Filter Options - Apache OpenOffice Wiki](https://wiki.openoffice.org/wiki/Documentation/DevGuide/Spreadsheets/Filter_Options)
 
 A.pdf -> A-{0,1}.jpg
 
@@ -1458,7 +1480,7 @@ vim
 
 [我不是为她出发，却为她到达。](http://bbs.nju.edu.cn/bbstcon?board=Girls&file=M.1457382613.A)
 
-:   `ZAK 同学喜欢`{.tzx-tag}
+:   <!-- `ZAK 同学喜欢`{.tzx-tag} -->
 
     ```tzx-bigquote
     绝大部分 20 左右的小伙子，心里想的都是付出、责任。他们可能没那么多花招，但是
@@ -2296,7 +2318,11 @@ Common Configurations
 
 Use `default.js` or use this request:
 
-`<script type="text/javascript" src="path-to-MathJax/MathJax.js?config=default"></script>`{.html}
+```html
+<script type="text/javascript"
+         src="path-to-MathJax/MathJax.js?config=default">
+</script>
+```
 
 Using MathJax in popular web platforms
 
@@ -6019,8 +6045,8 @@ var c = new Array(3); // length = 3, not enumerable
 
 [数据处理 API 参考手册#md2html](http://developer.qiniu.com/code/v6/api/dora-api/index.html#md2html)
 
-:   * `http://whudoc.qiniudn.com/keybr.md?md2html/0/css/aHR0cDovL3Rhbmd6eC5xaW5pdWRuLmNvbS9tYWluLmNzcw==`
-    * `http://tangzx.qiniudn.com/main.css` --[base64 encoding]--> `aHR0cDovL3Rhbmd6eC5xaW5pdWRuLmNvbS9tYWluLmNzcw==`
+:   * <http://whudoc.qiniudn.com/keybr.md?md2html/0/css/aHR0cDovL3Rhbmd6eC5xaW5pdWRuLmNvbS9tYWluLmNzcw==>
+    * <http://tangzx.qiniudn.com/main.css> --[base64 encoding]--> `aHR0cDovL3Rhbmd6eC5xaW5pdWRuLmNvbS9tYWluLmNzcw==`
 
 [base64 encoding]: https://www.base64encode.org/
 
@@ -7566,7 +7592,15 @@ xenophobia | `[,zɛnə'fobɪə]` | 对外国人的畏惧和憎恨
 
 lossy
 
-:   `convert -strip -interlace Plane -gaussian-blur 0.05 -filter Lanczos -quality 85% in.jpg out.jpg`{.bash}
+:   ```bash
+    convert \
+        -strip \
+        -interlace Plane \
+        -gaussian-blur 0.05 \
+        -filter Lanczos \
+        -quality 85% \
+        in.jpg out.jpg
+```
 
 It's good to be familiar with other editors like Vi so that you can be
 productive even if that's all you have, and then learn how to make the most of
@@ -8184,7 +8218,9 @@ Firefox 浏览器的优点：默认的字体大点。
 <img src="extension/skin/icon128.png" alt="" align="right">
 ```
 
+<div class="tzx-fright">
 ![](http://www.imagemagick.org/Usage/img_diagrams/glyph_metrics.gif)
+</div>
 
 ```cpp
 int main(int argc, char **argv)

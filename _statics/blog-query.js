@@ -55,16 +55,6 @@ var tzx_links = [
         query: ['page', 'tag', 'bookmark']
     },
     {
-        url: '/notes.html',
-        title: "Reads | 斋读",
-        query: ['page', 'tag']
-    },
-    {
-        url: '/notes.html',
-        title: "Notes | 笔记",
-        query: ['page', 'tag', 'note']
-    },
-    {
         url: '/notice.html',
         title: "Notice | 公告",
         query: ['page', 'tag', 'notice']
@@ -87,7 +77,12 @@ var tzx_links = [
     {
         url: '/reads.html',
         title: "Reads | 斋读",
-        query: ['page', 'tag']
+        query: ['page', 'tag', 'read']
+    },
+    {
+        url: '/notes.html',
+        title: "Notes | 笔记",
+        query: ['page', 'tag', 'note']
     },
     {
         url: '/typing.html',
@@ -538,5 +533,10 @@ var tzx_links = [
         url: '/post-0089-kaggle.html',
         title: "Kaggle",
         query: ['kaggle', 'competition', 'data-science', 'data-mining']
+    },
+    {
+        url: '/post-0090-prerequisites.html',
+        title: "背景知识的重要性",
+        query: ['background', 'prerequisites', 'common-sense']
     },
 ];

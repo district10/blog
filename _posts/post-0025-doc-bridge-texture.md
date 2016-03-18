@@ -22,7 +22,7 @@
 
 参考 [CVRS 编码规范](http://cvrs.whu.edu.cn/docs/CVRS-CodingStyleGuide.html)。[^permlink]
 
-[^permlink]: 如无法访问，可查看备份：[CVRS 编码规范 -- 备份](http://tangzx.qiniudn.com/post-0060-coding-style.html)。
+[^permlink]: 文档本由我撰写。可查看我的备份/最新：[CVRS 编码规范 -- 备份](http://tangzx.qiniudn.com/post-0060-coding-style.html)。
 
 TODO
 ----

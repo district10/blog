@@ -14,6 +14,14 @@ V/\n#. ?kbzf
 
 #. &#x2610;
 #. &#x2610;
+#. &#x2610; [Jekyll迁移到Hexo建立个人博客 | Lippi-浮生志](http://www.ezlippi.com/blog/2016/02/jekyll-to-hexo.html)
+
+> 个人博客以前由jekyll搭建，主要问题是目录、Rss、sitemap无法自动生成，根据DRY的
+> 原则在网上找了下答案，最终发现了用Hexo来搭建博客的方法，配置完之后一劳永逸，
+> 目录、Rss和sitemap都是自动生成，解决了我之前的困惑。
+
+TODO: 去看它的 rss 怎么生成的。
+
 #. &#x2610; [IntroPy - Woodpecker Wiki for CPUG](http://wiki.woodpecker.org.cn/moin/IntroPy)
 #. &#x2610; [top10-Py-idioms-wish-learned-earlier | #是也乎# | ZoomQuiet.io](http://blog.zoomquiet.io/top10-Py-idioms-wish-learned-earlier.html)
 

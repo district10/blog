@@ -13,6 +13,35 @@ code.tzx-timestamp {
 
 <div class="koans"><!-- 下面要有空行 | One Empty Line Reserved Below -->
 
+## `1458196052`{.tzx-timestamp} 豆瓣FM 就是比虾米电台靠谱
+
+即便豆瓣被指说不重视移动端，但它的 APP 也更赏心悦目。
+推荐的歌曲也更深得我心。
+
+倒不是说豆瓣的推荐技术好点，而是……感觉虾米在拿我做实验，提高自己的推荐效果……
+但我喜欢好听的。而不是帮你筛选！
+
+## `1458187263`{.tzx-timestamp} 好痒好痒
+
+感觉自己需要一个把 GitHub 上一整个 repo，转化成一个单页 HMTL 的工具。这样
+就能快乐地在 pad 上看代码了。计划用 C++，把所有的 directory listing 出来，
+索引好，然后生成一个 markdown 文件，然后用 pandoc 转换（当然也可以用 marked），
+再加上一点 CSS。就 okay 拉。
+
+一定要搞起来。
+
+repo 文档里的链接可能还要 fix，是不是用 perl 更好？
+
+## `1458118399`{.tzx-timestamp} Dash 真是业界良心
+
+入手一个 iPad mini2，随手买了一个 Dash（因为 Zeal 只有 Windows 和 Linux 版本）
+，感觉真是太赞了！
+
+链接：[Dash API Docs on the App Store](https://itunes.apple.com/us/app/dash-api-docs/id935284832?ls=1&mt=8)
+
+每次都到网站去搜文档太累了。自己赞的 html 格式的文档搜索起来也比较麻烦。还是这
+东西好。
+
 ## `1457919802`{.tzx-timestamp} 原来这是我提的……
 
 我喜欢的 [中文文案排版指北
@@ -62,7 +91,7 @@ D. Philadelphia
 ## `1457617233`{.tzx-timestamp} 虾米猜
 
 简直是瞎猜！推荐的歌我几乎都不喜欢。pinjinjian 唱得跟屎一样。
-七緒香。
+七緒香更是不能听。
 
 <!--
 ## `1457442269`{.tzx-timestamp} 搞定时间戳！
