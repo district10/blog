@@ -48,6 +48,8 @@ img {
 
 Plan: EP.4 (&#x2611;) -> EP.5 (&#x2610;)-> EP.6 (&#x2610;)-> EP.1 (&#x2610;)-> EP.2 (&#x2610;)-> EP.3 (&#x2610;)-> EP.7 (&#x2610;)
 
+虽然计划弄，但不可能霸占课堂 presentation 啊……于是只弄了第一期。见 [EP.4](#ep-4)
+
 TODO: 自己写这里的介绍文字。
 
 ---
@@ -151,7 +153,9 @@ lover of Jon Snow.
 
 ---
 
-EP.4
+EP.4 `@`{.tzx-anchor #ep-4}
+
+<small>这是讲稿，课上漏了一点，但基本一致。这是我之前的录音：<http://www.ximalaya.com/39833779/album/3827746></small>
 
 Game of Thrones is an American tv series adapted from George Martin's A Song of
 Ice and Fire. This tv show is so much a fantasy and so great that it attracted

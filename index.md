@@ -36,6 +36,7 @@ Search:<br>
 * 2016-01-07 [WHU MOOC Academic Integrity](post-0082-whu-mooc-academic-integrity.html)
 * 2015-12-18 [软件开发者路线图](post-0080-apprenticeship.html)
 * 2015-12-17 [Lingoes 网络词典](post-0079-lingoes-dict.html)
+* 2015-12-17 [Learning Perl](post-0078-learning-perl.html)
 * 2015-12-14 [小波变换在图像处理分析中的应用](post-0077-wavelet-transform.html)
 * 2015-12-13 [膜拜大神](post-0076-real-hacker.html)
 * 2015-12-08 [什么是投影？](post-0075-what-is-projection.html)

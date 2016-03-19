@@ -13,6 +13,9 @@ V/\n#. ?kbzf
 <div class="reads">
 
 #. &#x2610;
+#. &#x2610; [500 Lines or Less](http://aosabook.org/en/500L/)
+#. &#x2610; [aosabook/500lines: 500 Lines or Less](https://github.com/aosabook/500lines)
+#. &#x2610; [The Architecture of Open Source Applications](http://www.aosabook.org/en/index.html)
 #. &#x2610; [Coding 演示平台](http://docs.coding.io/)
 
 从某种程度上说，coding.net 比 github.com 厚道得多。
@@ -299,7 +302,6 @@ chess), displaying its complexity despite relatively simple rules.
         these policies.
 #. &#x2610; [Search patterns - Vim Tips Wiki - Wikia](http://vim.wikia.com/wiki/Search_patterns)
 #. &#x2610; [CSS: em, px, pt, cm, in…](https://www.w3.org/Style/Examples/007/units)
-#. &#x2610; [aosabook/500lines: 500 Lines or Less](https://github.com/aosabook/500lines)
 #. &#x2610; [北美求职记_QAMichaelPeng_新浪博客](http://blog.sina.com.cn/s/blog_6740daa70101771h.html)
 #. &#x2610; [为什么 Microsoft 不与“FLAG”并称呢？](http://www.zhihu.com/question/31979481)
 :   flag microsoft
@@ -463,7 +465,6 @@ chess), displaying its complexity despite relatively simple rules.
 #. &#x2610; [图灵奖得主：思考比编码重要 - 微软亚洲研究院](http://www.msra.cn/zh-cn/connections/stories/leslie-visit-pku-20151203.aspx)
 #. &#x2610; [rswier/c4](https://github.com/rswier/c4)
 #. &#x2610; [sigslot - C++ Signal/Slot Library](http://sigslot.sourceforge.net/)
-#. &#x2610; [aosabook/500lines](https://github.com/aosabook/500lines)
 #. &#x2610; [一个Sqrt函数引发的血案 | 帝都码农](http://diducoder.com/sotry-about-sqrt.html)
 #. &#x2610; [《了不起的盖茨比》：绿光 - 读立写生](http://cnfeat.com/blog/2014/03/05/green-light/)
 :   ?

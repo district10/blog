@@ -20,6 +20,7 @@ code.tzx-timestamp {
 
 - Dont't Push Me
 - Don't Stop the Music
+- Firework
 - 艾薇儿的各种歌
 
 TODO，听到就更新到这里。
