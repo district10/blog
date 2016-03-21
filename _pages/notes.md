@@ -36,6 +36,20 @@ pre.tzx-bigquote {
 
 <!--...-->
 
+持续集成（ Continuous Integration）或者CI，是一个已经在软件开发中已经流行好一阵子的东西了，但是最近逐渐在运维界中获得了越来越多的拥趸。CI提出来是为了解决多个开发者在同一个代码库开发的时候造成的集成问题。基本上，两个开发者在同一样的代码上进行开发就会产生冲突，并且只有在之后很久才会发现这些冲突。 
+
+
+The complete build lifecycle, including three optional deployment steps and after checking out the git repository and changing to the repository directory, is:
+
+    before_install
+    install
+    before_script
+    script
+    after_success or after_failure
+    OPTIONAL before_deploy
+    OPTIONAL deploy
+    OPTIONAL after_deploy
+    after_script
 > 动态语言一时爽，代码重构火葬场。
 
 ---
