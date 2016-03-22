@@ -5,6 +5,44 @@
 Learning Perl
 =============
 
+<!--
+按照笔者自己的经历，从对Perl一无所知到可以上手干活，可以从小骆驼书——Learning
+Perl (豆瓣)开始。快速浏览加实践下书上代码，两天就可以读个大概。
+
+不过小骆驼书只覆盖了Perl Programming最基础的一部分知识，当你需要用Perl做面对对
+象或者大型程序编程时，有必要去读一下神兽书——Intermediate Perl (豆瓣)。
+
+这两本书应该能应付大部分的Perl Programming的需求，建议题主接下来应该去做大量的
+实践。在实践过程中，有两个网站是肯定要经常打交道的。这两个网站，一个是The CPAN
+Search Site，一个是Perl programming documentation。
+
+前者就不介绍了，相信学Perl的童鞋都熟悉的。后者除了做为一个Perl内建函数的Ref网站
+，还有大量介绍语言特性和细节的文章，非常值得一读，比如：
+
+    Language reference
+    Pragmas - http://perldoc.perl.org
+    Utilities - http://perldoc.perl.org
+    Internals and C language interface
+
+以上链接中的内容，如果题主都能理解并且实践过，我相信可以算得上是一个Perl专家了。
+
+笔者建议实践过一段时间后，回头再重新细看小骆驼、神兽书，会有不同的体悟。那时若
+有兴趣，还可以把下面这些书加入你的Read List:
+
+    Advanced Perl Programming (豆瓣)
+    Mastering Perl (豆瓣)
+    Perl Best Practices (豆瓣)
+
+作者：蔡腾纬
+链接：https://www.zhihu.com/question/19647485/answer/16093948
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+-->
+
+<div class="tzx-fright">
+[![](https://img1.doubanio.com/mpic/s6569264.jpg)](https://book.douban.com/subject/6560927/)
+</div>
+
 ## Introduction
 
 Perl is sometimes called the "Practical Extraction and Report Language",
@@ -635,7 +673,7 @@ Notes on Lexical (my) Variables
     }
     ```
 
-Note also that the  my operator doesn’t change the context of an assignment:
+Note also that the  my operator doesn't change the context of an assignment:
 
 :   ```perl
     my($num) = @_;      # list context, same as ($num) = @_;
@@ -765,7 +803,7 @@ Input from Standard Input
 Input from the Diamond Operator
 
 :   The diamond operator is actually a special kind of line-input operator. But
-    instead of getting the input from the keyboard, it comes from the user’s
+    instead of getting the input from the keyboard, it comes from the user's
     choice of input:
 
     ```perl
@@ -1083,7 +1121,7 @@ The Big Arrow
 
     $score{'fred'} # or $score{fred}
 
-    # But beware; if there’s anything inside the curly braces besides a
+    # But beware; if there's anything inside the curly braces besides a
     # bareword, Perl will interpret it as an expression.  For instance, if
     # there is a  . , Perl interprets it as a string concatenation:
     $hash{ bar.foo } = 1; # that's the key 'foobar'
@@ -2144,7 +2182,7 @@ File Test Operators
 `-k`{.perl}      File or directory has the sticky bit set
 
 `-t`{.perl}      The filehandle is a TTY (as reported by the  isatty() system
-                 function; filenames can’t be tested by this test)
+                 function; filenames can't be tested by this test)
 
 `-T`{.perl}      File looks like a “text” file
 
@@ -2663,39 +2701,40 @@ Smart Match Precedence
 
 :   <http://perldoc.perl.org/perlsyn.html>
 
-    Smart match operations for pairs of operands
+    See smart match operations for pairs of operands.[^smart-match-ops]
 
-    | Example | Type of match |
-    | :---: | :---: |
-    | `%a ~~ %b | hash keys identical |
-    | `%a ~~ @b` or `@a ~~ %b` | at least one key in `%a` is in `@b` |
-    | `%a ~~ /Fred/` or `/Fred/ ~~ %b` | at least one key matches pattern |
-    | `'Fred' ~~ %a` | exists `$a{Fred}` |
-    | `@a ~~ @b | arrays are the same |
-    | `@a ~~ /Fred/` | at least one element in `@a` matches pattern |
-    | `$name ~~ undef` | `$name` is not defined |
-    | `$name ~~ /Fred/` | pattern match |
-    | `123 ~~ '123.0' | numeric equality with "numish" string |
-    | `'Fred' ~~ 'Fred' | string equality |
-    | `123 ~~ 456` | numeric equality |
+    [^smart-match-ops]: Smart match operations for pairs of operands
 
-```perl
-use 5.010001;
-say "match number ~~ string" if 4 ~~ '4abc';
-say "match string ~~ number" if '4abc' ~~ 4;
+        | Example | Type of match |
+        | :---: | :---: |
+        | `%a ~~ %b` | hash keys identical |
+        | `%a ~~ @b` or `@a ~~ %b` | at least one key in `%a` is in `@b` |
+        | `%a ~~ /Fred/` or `/Fred/ ~~ %b` | at least one key matches pattern |
+        | `'Fred' ~~ %a` | exists `$a{Fred}` |
+        | `@a ~~ @b` | arrays are the same |
+        | `@a ~~ /Fred/` | at least one element in `@a` matches pattern |
+        | `$name ~~ undef` | `$name` is not defined |
+        | `$name ~~ /Fred/` | pattern match |
+        | `123 ~~ '123.0'` | numeric equality with "numish" string |
+        | `'Fred' ~~ 'Fred'` | string equality |
+        | `123 ~~ 456` | numeric equality |
 
-You only get output for one of the smart matches:
+    ```perl
+    use 5.010001;
+    say "match number ~~ string" if 4 ~~ '4abc';
+    say "match string ~~ number" if '4abc' ~~ 4;
+    ```
 
-match string ~~ number
-The first one is a string comparison even though it has a number on the lefthand side.
-The only entry in the precedence table with a Num on the lefthand side expects a
-“numish” operand on the righthand side. The  4abc doesn’t look numish enough for
-Perl, so the smart match ends up at the final level where it has “Any” and “Any”. The
-operation there is a string comparison.
-The second one is a numeric comparison. It has “Any” on the lefthand side and “Num”
-on the righthand side. That’s a couple of levels above the comparison the first one
-triggered.
-```
+    You only get output for one of the smart matches:
+      ~ `match string ~~ number`{.perl}
+      ~ The first one is a string comparison even though it has a number on the
+        lefthand side.  The only entry in the precedence table with a Num on
+        the lefthand side expects a "numish" operand on the righthand side. The
+        `4abc` doesn't look numish enough for Perl, so the smart match ends up at
+        the final level where it has "Any" and "Any". The operation there is a
+        string comparison.  The second one is a numeric comparison. It has "Any"
+        on the lefthand side and "Num" on the righthand side. That's a couple
+        of levels above the comparison the first one triggered.
 
 The `given` Statement
 
@@ -2713,7 +2752,7 @@ The `given` Statement
     }
     ```
 
-    In Perl parlance (说法，语调), `given` is a **topicalizer** because it
+    In Perl parlance (`['pɑrləns]`, 说法, 语调), `given` is a **topicalizer** because it
     makes its argument the topic, the fancy new name for `$_` in Perl 6.
 
     ```perl
@@ -2744,11 +2783,11 @@ Dumb Matching
     ```perl
     use 5.010001;
     given ( $ARGV[0] ) {
-        when ( 'Fred' ) { #smart
+        when ( 'Fred' ) {                           #smart
             say 'Name is Fred'; continue }
-        when ( $_ =~ /\AFred/ ) { #dumb
+        when ( $_ =~ /\AFred/ ) {                   #dumb
             say 'Name starts with Fred'; continue }
-        when ( /fred/i ) { #smart
+        when ( /fred/i ) {                          #smart
             say 'Name has fred in it'; }
         default { say "I don't see a Fred" }
     }
@@ -2759,11 +2798,12 @@ Dumb Matching
     conditions you saw in previous chapters:
 
     ```perl
+    # ???
     use 5.010001;
     given( $ARGV[0] ) {
-        when( ! $boolean ) { #dumb
+        when( ! $boolean ) {                        #dumb
             say 'Name has fred in it' }
-        when( ! /fred/i ) { #dumb
+        when( ! /fred/i ) {                         #dumb
             say 'Does not match Fred' }
     }
     ```
@@ -2794,7 +2834,7 @@ Using `when` with Many Items
 
 ## Processing Management
 
-And like everything else in Perl, There’s More Than One Way To Do It, with lots
+And like everything else in Perl, There's More Than One Way To Do It, with lots
 of overlap, variations, and special features.
 
 The system Function
@@ -2846,8 +2886,8 @@ The Environment Variables
 
 The `exec` Function
 
-:   The system function creates a child process, which then scurries off to
-    perform the requested action while Perl naps. The exec function causes the
+:   The `system` function creates a child process, which then scurries (`['skɝi]`, 急跑) off to
+    perform the requested action while Perl naps (打盹儿). The `exec` function causes the
     Perl process itself to perform the requested action. Think of it as more
     like a "goto" than a subroutine call.
 
@@ -2895,11 +2935,11 @@ Using Backquotes to Capture Output
 
     As with the other generalized quotes, you mainly use this when the stuff
     inside the quotes is also the default delimiter. If you wanted to have a
-    literal backquote in your command, you can use the  qx() mechanism to avoid
-    the hassle of escaping the offending character. There’s another benefit to
+    literal backquote in your command, you can use the `qx()` mechanism to **avoid
+    the hassle of escaping the offending character**. There's another benefit to
     the generalized quoting, too. If you use the single quote as the delimiter,
-    the quoting does not interpolate anything. If you want to use the shell’s
-    process ID variable `$$` instead of Perl’s, you use `qx''` to avoid the
+    the quoting does not interpolate anything. If you want to use the shell's
+    process ID variable `$$` instead of Perl's, you use `qx''` to avoid the
     interpolation: `my $output = qx'echo $$';`{.perl}.
 
     Avoid using backquotes in a place where the value isn't being captured.
@@ -2934,8 +2974,8 @@ Using Backquotes in a List Context
 External Processes with `IPC::System::Simple`
 
 :   There's really not that much to say about this module because it is truly
-    simple. You can use it to replace the built-in system with its own more
-    robust version:
+    simple. You can use it to replace the built-in system with its own ** more
+    robust** version:
 
     ```perl
     use IPC::System::Simple qw(system);
@@ -2944,7 +2984,7 @@ External Processes with `IPC::System::Simple`
     system 'tar', 'cvf', $tarfile, @dirs;
     ```
 
-    It also provides a systemx that never uses the shell, so you should never
+    It also provides a `systemx` that never uses the shell, so you should never
     have the problem of unintended shell actions:
     `systemx 'tar', 'cvf', $tarfile, @dirs;`{.perl}.
 
@@ -3033,14 +3073,14 @@ Slices
     ```perl
     my $mtime = (stat $some_file)[9];
 
-    my $mtime = stat($some_file)[9]; # Syntax error!
+    my $mtime =  stat($some_file)[9]; # Syntax error!
     ```
 
     ```perl
-    my $card_num = (split /:/)[1];
-    my $count = (split /:/)[5];
-    my($card_num, $count) = (split /:/)[1, 5];
-    my($first, $last) = (sort @names)[0, –1];
+    my $card_num             = (split /:/)[1];
+    my $count                = (split /:/)[5];
+    my($card_num, $count)    = (split /:/)[1, 5];
+    my($first, $last)        = (sort @names)[0, –1];
     ```
 
 Array Slice
@@ -3050,7 +3090,7 @@ Array Slice
     </div>
 
     That previous example could be made even simpler. When slicing elements
-    from an array (as opposed to a list), the parentheses aren’t needed. So we
+    from an array (as opposed to a list), the parentheses aren't needed. So we
     could have done the slice like this:
 
     ```perl
@@ -3064,8 +3104,8 @@ Hash Slice
     </div>
 
     ```perl
-    my @names = qw{ zero one two three four five six seven eight nine };
-    print "Bedrock @names[ 9, 0, 2, 1, 0 ]\n";
+    my @names = qw{ zero one two three};
+    print "Bedrock @names[ 2, 1, 0 ]\n";
     ```
 
     ```perl
@@ -3236,21 +3276,21 @@ Fancier List Utilities
 
 ## A. Exercise Answers
 
-## B. Beyond the Llama
+## B. Beyond the Llama (`['lɑmə]`, 美洲驼)
 
 We don't expect many readers to read every word of this appendix, but we hope
-you'll at least skim the headings so that you'll be prepared to fight back when
-someone tells you, "You just can’t use Perl for project X because Perl can’t do
-Y."
+you'll at least **skim the headings so that you'll be prepared to fight back**
+when someone tells you, "You just can't use Perl for project X because Perl
+can't do Y."
 
-The most important thing to keep in mind (so that we’re not repeating it in
-every paragraph) is that the most important part of what we’re not covering
-here is covered in Intermediate Perl, also known as “the Alpaca.”
+The most important thing to keep in mind (so that we're not repeating it in
+every paragraph) is that the most important part of what we're not covering
+here is covered in Intermediate Perl, also known as "the Alpaca" (`[æl'pækə]`, 羊驼).
 
-After the Alpaca, you’ll be ready to move on to Mastering Perl, also know as “
-the Vicunas.” It covers the everyday tasks that you’ll want to do while
+After the Alpaca, you'll be ready to move on to Mastering Perl, also know as
+"the Vicunas" (`[vi'kju:nə]`, 骆马) It covers the everyday tasks that you'll want to do while
 programming Perl, such as benchmarking and profiling, program configuration,
-and logging. It also goes through the work you’ll need to do to deal with code
+and logging. It also goes through the work you'll need to do to deal with code
 written by other people and how to integrate that into your own applications.
 
 - [perltoc](http://perldoc.perl.org/perl.html)
@@ -3270,8 +3310,9 @@ Other Operators and Functions
 Transliteration with `tr///`
 
 Here Documents
-Here documents are a useful form of multiline string quoting; see the perldata docu-
-mentation.
+
+:   Here documents are a useful form of multiline string quoting; see the
+    perldata documentation.
 
 Mathematics
 
@@ -3318,7 +3359,7 @@ Command-Line Options in Your Programs
 
 Embedded Documentation
 
-Perl’s own documentation is written in pod (plain-old documentation) format. You can
+Perl's own documentation is written in pod (plain-old documentation) format. You can
 embed this documentation in your own programs, and it can then be translated to text,
 HTML, or many other formats as needed. See the perlpod documentation. The Alpaca
 book covers this, too.
@@ -3331,7 +3372,7 @@ tion. The  open built-in is so feature-full that it gets its own documentation p
 Threads and Forking
 
 Perl now has support for threads. Although this is experimental (as of this writing), it
-can be a useful tool for some applications. Using  fork (where it’s available) is better
+can be a useful tool for some applications. Using  fork (where it's available) is better
 supported; see the perlfork and perlthrtut documentation.
 
 Thank you, Larry!
@@ -3344,7 +3385,7 @@ The Unicode Character Set (UCS) is an abstract mapping of characters to code poi
 You use the  NFKD subroutine (Normalization
 Form Kompatibility Decomposition).
 
-Since we don’t actually read each letter in a word and instead recognize it as
+Since we don't actually read each letter in a word and instead recognize it as
 a whole, the ligature is a slight improvement in our pattern recognition. So,
 typographers combine the two graphemes.
 
@@ -3425,9 +3466,59 @@ Further Reading
 
 There are several parts of the Perl documentation that will help you with the
 Perl parts, including the perlunicode, perlunifaq, perluniintro, perluniprops,
-perlunitut documentation. Don’t forget to check the documentation for any of
+perlunitut documentation. Don't forget to check the documentation for any of
 the Unicode modules that you use.
 
 Symbols
 
 有意思。
+
+---
+
+Notes
+
+```perl
+$hash->{key}
+$list->[0]
+$obj->method()
+
+# 之外，还有一个神奇的功能来实现autobox,也就是所谓的·一切皆对象·
+my $len = sub { length(shift) };
+"hello"->$len();
+
+$x = "I like dogs.";
+$y = $x =~ s/dogs/cats/r;
+print "$x $y\n"; # prints "I like dogs. I like cats."
+
+# here doc
+my $str = <<__;
+some string here
+bla blah
+__
+
+while(<$fh>)
+{
+    next if 1..100; # skip 1 ~ 100 line
+    ...
+}
+
+(1,2,3) x 3 # (1,2,3,1,2,3,1,2,3)
+
+# goto
+LABEL:
+for ( @list_A) {
+    for ( @list_B ) {
+       ...;
+       next LABEL;
+    }
+}
+
+my $x = 1;
+my $y = 2;
+print "$x + $y = @{[ $x + $y ]}"
+```
+
+Ideas
+
+  - autovivification
+  - heredoc

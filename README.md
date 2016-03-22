@@ -34,7 +34,7 @@ For Linux
 * git
 * make (Makefile)
 * shell (Bash)
-* pandoc
+* pandoc (>= 1.16)
 
 Optionals
 

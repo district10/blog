@@ -13,6 +13,13 @@ code.tzx-timestamp {
 
 <div class="koans"><!-- 下面要有空行 | One Empty Line Reserved Below -->
 
+
+## `1458563023`{.tzx-timestamp} GitHub 上的博客自动同步到自己的七牛
+
+其实很简单。刚才我就弄好了。参见：[district10/hacking-travis: 原谅我 hack 用得随意……](https://github.com/district10/hacking-travis)。
+
+以后我可以不自己搭建 `pandoc` 的编译环境了。
+
 ## `1458298773`{.tzx-timestamp} 豆瓣FM 推荐的老歌
 
 真的好老……最近在听豆瓣FM（我重新注册了一个帐号，用弱密码，专门用来听歌），

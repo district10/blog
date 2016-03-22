@@ -36,6 +36,136 @@ pre.tzx-bigquote {
 
 <!--...-->
 
+sudo dpkg -i DEB_PACKAGE # install
+sudo dpkg -r DEB_PACKAGE # remove
+
+
+DPKG commands
+
+There are two actions, they are dpkg-query and dpkg-deb.
+Install a package
+
+# sudo dpkg -i {package_name}
+# sudo dpkg -i skype-ubuntu-precise_4.2.0.11-1_i386.deb
+
+Remove a package
+
+# sudo dpkg -r {package_name}
+# sudo dpkg -r vlc
+
+Remove a package and its configuration files
+
+# sudo dpkg -P {package_name}
+# sudo dpkg -P vlc
+
+List all installed packages.
+
+You can pipe the command to less (a pager) so you can more easily scroll the content:
+
+# dpkg -l | less
+
+Check if the package is installed or not
+
+# dpkg -l {package_name}
+# dpkg -l vlc
+
+Check if the package is installed or not, and if it is, launch it:
+
+# dpkg -l | vlc
+
+See whether a package is installed or not
+
+And this will show the location where the package will be installed. Here -S (capital S) to search whether the package was installed or not.
+
+# sudo dpkg -S {package_name}
+# sudo dpkg -S skype
+
+Install a *.deb package from a specified location
+
+Here -R is recursive. (Recursively handle all regular files matching the pattern *.deb found at specified directories and all of its subdirectories).
+
+# sudo dpkg -R --install {package_location}
+# sudo dpkg -R --install /home/sysadmin/soft
+
+Show package details
+
+Here -p (lowercase p) will show the package info:
+
+# dpkg -p {package_name}
+# dpkg -p apache2
+
+View the content of a package
+
+Use -c (lowercase c) to show the content:
+
+# sudo dpkg -c {package_name}
+# sudo dpkg -c skype-ubuntu-precise_4.2.0.11-1_i386.deb
+
+Extract the *.deb package file
+
+Use -x (lowercase x) to extract:
+
+# dpkg -x {package_name} {location_were_to_extract}
+# dpkg -x libqt4-phonon_4.6.3-4+squeeze1_i386.deb /home/sysadmin/
+
+Extract and display the filenames contained in a package
+
+Use -X (uppercase X) to display the content with extraction.
+
+# dpkg -X {package_name} {location_were_to_extract}
+# dpkg -X libqt4-phonon_4.6.3-4+squeeze1_i386.deb /home/sysadmin/
+
+Display information about a package
+
+Here -I stands for information:
+
+# dpkg -I {package_name}
+# dpkg -I libqt4-phonon_4.6.3-4+squeeze1_i386.deb
+
+Reconfigure an already installed package
+
+dpkg-reconfigure reconfigures packages after they already have been installed. Pass it the name(s) of a package or packages to reconfigure. It will ask configuration questions, much like when the package was first installed.
+
+# dpkg-reconfigure postfix
+
+This will reconfigure postfix the same way as when you installed it for the first time.
+
+Need to know more about dpkg commands? Have a look at the manual page:
+
+# man dpkg
+
+If you use an RPM-based distro, you may be able to install this deb using alien, or try
+
+ar p $DEB data.tar.gz | sudo tar xvz --strip-components 2 -C /usr/local
+
+where $DEB is the path to the downloaded deb.
+
+
+  - sed -i "s/AccessKey/$QAK/g" qiniu_sync
+  - sed -i "s/SecretKey/$QSK/g" qiniu_sync
+
+zootopia2-0.jpg
+zootopia2-1.jpg
+zootopia2-2.jpg
+zootopia2-3.jpg
+zootopia2-4.jpg
+zootopia2-5.jpg
+zootopia2-6.jpg
+zootopia2-7.jpg
+zootopia2-8.jpg
+zootopia2-9.jpg
+zootopia2-10.jpg
+zootopia2-11.jpg
+zootopia2-12.jpg
+zootopia2-13.jpg
+zootopia2-14.jpg
+zootopia2-15.jpg
+zootopia2-16.jpg
+zootopia2-17.jpg
+zootopia2-18.jpg
+zootopia2-19.jpg
+
+
 > 动态语言一时爽，代码重构火葬场。
 
 ---

@@ -169,3 +169,4 @@ Links | 链签
 #. [Zeal](https://zealdocs.org/)
 #. [≡⊥≡森羅卍象](https://www.douban.com/people/wensiyu/) %电影资源
 #. [快搜 — 搜索快人一步 - 百度](http://so.chongbuluo.com/)
+#. [all-archives - Quality Matters](http://blog.yuanbin.me/all-archives/)

@@ -13,6 +13,7 @@ V/\n#. ?kbzf
 <div class="reads">
 
 #. &#x2610;
+#. &#x2610; [Preface | Data Structure and Algorithm notes](http://algorithm.yuanbin.me/zh-hans/index.html#)
 #. &#x2610; [500 Lines or Less](http://aosabook.org/en/500L/)
 #. &#x2610; [aosabook/500lines: 500 Lines or Less](https://github.com/aosabook/500lines)
 #. &#x2610; [The Architecture of Open Source Applications](http://www.aosabook.org/en/index.html)
