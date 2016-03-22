@@ -7,6 +7,9 @@ Notes | 笔记
 
 <!--...-->
 
+
+ 7xr1kp.com1.z0.glb.clouddn.com 
+
 ```bash
 sudo apt-get install ruby-dev
 ```
