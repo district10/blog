@@ -7,10 +7,7 @@ PANDOC_OPTIONS = -S -s --ascii \
 	--highlight-style pygments \
 	-f markdown+east_asian_line_breaks
 
-all: 
-
-filter: 
-	perl filter.pl
+all: html
 
 html: $(HTML)
 %.html: %.md
