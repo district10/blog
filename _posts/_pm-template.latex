@@ -34,7 +34,7 @@ $endif$
 \else % if luatex or xelatex
   \usepackage{fontspec} 	% 允許設定字體
   \usepackage{xeCJK} 		% 分開設置中英文字型
-  \setCJKmainfont{Microsoft YaHei} 	% 設定中文字型
+  \setCJKmainfont{WenQuanYi Zen Hei} 	% 設定中文字型
   \setmainfont{Georgia} 	% 設定英文字型
   \setromanfont{Georgia} 	% 字型
   \setmonofont{Courier New}
