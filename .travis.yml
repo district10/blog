@@ -1,0 +1,23 @@
+sudo: required
+
+before_install:
+    - Min=$(date +%M)
+    - if [$(($Min % 10)) -gt 5]; then echo 'Will not build at this time'; exit; else echo 'Building...'; fi
+
+install:
+  - cd ~
+  - wget https://github.com/jgm/pandoc/releases/download/1.17/pandoc-1.17-1-amd64.deb
+  - sudo dpkg -i pandoc*.deb
+
+script:
+  - wget http://devtools.qiniu.com/qiniu-devtools-linux_amd64-current.tar.gz
+  - tar xfz qiniu-devtools-linux_amd64-current.tar.gz
+  - sudo cp qrsync /bin
+  - git clone https://github.com/district10/aha.git
+  - cd aha && make && sudo make install && cd ~
+  - git clone https://github.com/district10/blog.git
+  - cd blog && mkdir -p publish
+  - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
+  - make -j2
+  - (uname -a; du -h publish) > publish/log.html
+  - make qiniu

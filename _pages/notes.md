@@ -36,10 +36,12 @@ pre.tzx-bigquote {
 
 <!--...-->
 
+```bash
 sudo dpkg -i DEB_PACKAGE # install
 sudo dpkg -r DEB_PACKAGE # remove
+```
 
-
+```markdown
 DPKG commands
 
 There are two actions, they are dpkg-query and dpkg-deb.
@@ -133,6 +135,7 @@ This will reconfigure postfix the same way as when you installed it for the firs
 Need to know more about dpkg commands? Have a look at the manual page:
 
 # man dpkg
+```
 
 If you use an RPM-based distro, you may be able to install this deb using alien, or try
 
@@ -140,31 +143,22 @@ ar p $DEB data.tar.gz | sudo tar xvz --strip-components 2 -C /usr/local
 
 where $DEB is the path to the downloaded deb.
 
-
   - sed -i "s/AccessKey/$QAK/g" qiniu_sync
   - sed -i "s/SecretKey/$QSK/g" qiniu_sync
 
-zootopia2-0.jpg
-zootopia2-1.jpg
-zootopia2-2.jpg
-zootopia2-3.jpg
-zootopia2-4.jpg
-zootopia2-5.jpg
-zootopia2-6.jpg
-zootopia2-7.jpg
-zootopia2-8.jpg
-zootopia2-9.jpg
-zootopia2-10.jpg
-zootopia2-11.jpg
-zootopia2-12.jpg
-zootopia2-13.jpg
-zootopia2-14.jpg
-zootopia2-15.jpg
-zootopia2-16.jpg
-zootopia2-17.jpg
-zootopia2-18.jpg
-zootopia2-19.jpg
+持续集成（ Continuous Integration）或者CI，是一个已经在软件开发中已经流行好一阵子的东西了，但是最近逐渐在运维界中获得了越来越多的拥趸。CI提出来是为了解决多个开发者在同一个代码库开发的时候造成的集成问题。基本上，两个开发者在同一样的代码上进行开发就会产生冲突，并且只有在之后很久才会发现这些冲突。
 
+The complete build lifecycle, including three optional deployment steps and after checking out the git repository and changing to the repository directory, is:
+
+    before_install
+    install
+    before_script
+    script
+    after_success or after_failure
+    OPTIONAL before_deploy
+    OPTIONAL deploy
+    OPTIONAL after_deploy
+    after_script
 
 > 动态语言一时爽，代码重构火葬场。
 
