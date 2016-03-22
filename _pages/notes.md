@@ -5,34 +5,7 @@
 Notes | 笔记
 ============
 
-<link rel="stylesheet" href="jquery-ui.css">
-<link rel="stylesheet" href="font-awesome.min.css">
-<style>
-.tzx-tabs ul li a:hover {
-    border-bottom: none;
-}
-pre {
-    font-size: 80%;
-}
-pre.tzx-bigquote {
-	padding-left: 6em;
-	padding-top: 4em;
-	padding-bottom: 4em;
-}
-</style>
-
-<!--
-<div class="tzx-tabs">
-* [](#)
-* [](#)
-
-<div id="">
-</div>
-
-~~~ {# .c}
-~~~
-</div>
--->
+<!--...-->
 
 ```bash
 sudo apt-get install ruby-dev
@@ -41,7 +14,6 @@ sudo apt-get install ruby-dev
 ProTip™: You can pre-fill the filename field using just the URL.
 Typing ?filename=yournewfile.txt at the end of the URL will pre-fill the filename field with the name yournewfile.txt.
 
-<!--...-->
 [舌尖上的忘词&背单词的秘诀](http://mp.weixin.qq.com/s?__biz=MjM5NTExMTk5MA==&mid=409398412&idx=1&sn=a592c82fd0a57b15559832c983033ca8&scene=0#wechat_redirect)
 
 :   TOT State (tip of the tongue)
@@ -9899,6 +9871,21 @@ Disallow:
 [^qiniu-robots-default]: 七牛默认在每个 bucket 加了一个 robots 文件，禁止所有爬虫的爬取。
 
 <!--...-->
+<link rel="stylesheet" href="jquery-ui.css">
+<link rel="stylesheet" href="font-awesome.min.css">
+<style>
+.tzx-tabs ul li a:hover {
+    border-bottom: none;
+}
+pre {
+    font-size: 80%;
+}
+pre.tzx-bigquote {
+	padding-left: 6em;
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+</style>
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="jquery-ui.min.js"></script>
 <script>
@@ -9906,3 +9893,16 @@ $(function() {
     $( ".tzx-tabs" ).tabs();
 });
 </script>
+
+<!--
+<div class="tzx-tabs">
+* [](#)
+* [](#)
+
+<div id="">
+</div>
+
+~~~ {# .c}
+~~~
+</div>
+-->
