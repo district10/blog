@@ -32,6 +32,9 @@ pts: posts
 posts:
 	$(MAKE) -C $(POSTS)
 
+pdf:
+	$(MAKE) -C $(POSTS) pdf
+
 pgs: pages
 pages:
 	$(MAKE) -C $(PAGES)

@@ -11,12 +11,9 @@ post-0086-game-of-throne-series.md \
 post-0087-leetcode.md \
 post-0085-cvrs-presentation.md \
 
-MDPDFS = \
-	post-0087-leetcode.md \
-
-PDFS  = $(patsubst %.md, %.pdf, $(MDPDFS))
 MDS   = $(wildcard *.md)
 POSTS = $(addprefix $(PODIR)/, $(MDS:%.md=%.html))
+PDFS = $(addprefix $(PODIR)/, $(MDS:%.md=%.pdf))
 
 all: $(POSTS)
 
@@ -47,13 +44,13 @@ $(PODIR)/%.html: $(PIDIR)/%.md
 		$< \
 		-o $@
 
-pdf: $(addprefix $(PODIR)/, $(PDFS))
+pdf: $(PDFS)
 $(PODIR)/%.pdf: $(PIDIR)/%.md
 	pandoc \
 		--latex-engine=xelatex \
-		-V mainfont="Microsoft YaHei" \
 		--template=_pm-template \
-		$(PANDOC_OPTIONS) \
+		--highlight-style pygments \
+		-f markdown+east_asian_line_breaks \
 		$< \
 		-o $@
 

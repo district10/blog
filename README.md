@@ -1,10 +1,11 @@
 # blog
 
-Simplest Markdown blog
+[![Build Status](https://travis-ci.org/district10/blog.svg?branch=master)](https://travis-ci.org/district10/blog)
 
-See <http://tangzx.qiniudn.com>
+Simplest Markdown blog，利用 travis 自动生成 html 和 pdf，并同步到七牛。
 
-or <http://blog.tangzhixiong.com>
+  - See <http://tangzx.qiniudn.com>
+  - or <http://blog.tangzhixiong.com>
 
 ## TODO
 
