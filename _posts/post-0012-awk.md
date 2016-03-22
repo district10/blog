@@ -7,15 +7,17 @@ AWK 文字处理
 
 > Notice:
 >
->> 感觉 *The AWK Programming Language* 讲得更清晰，虽然是进阶，但让我再来一遍，我就不看陈皓的简明教程了。
->> 本书不愧 9.5 的评分，入门就看看原书 [第一章（我的笔记）][awk-notes]，进阶就继续看后几章。）
+>> 感觉 *The AWK Programming Language* 讲得更清晰，虽然是进阶，但让我再来一遍，
+>> 我就不看陈皓的简明教程了。本书不愧 9.5 的评分，入门就看看原书 [第一章（我的
+>> 笔记）][awk-notes]，进阶就继续看后几章。）
 
 入门：AWK 简明教程
 ------------------
 
 Data: `netstat.txt`
 
-:   ```tzx-plain
+:   <small>
+    ```tzx-plain
     Proto Recv-Q Send-Q Local-Address          Foreign-Address             State
     tcp        0      0 0.0.0.0:3306           0.0.0.0:*                   LISTEN
     tcp        0      0 0.0.0.0:80             0.0.0.0:*                   LISTEN
@@ -36,6 +38,7 @@ Data: `netstat.txt`
     tcp        0      0 coolshell.cn:80        117.136.20.85:50025         FIN_WAIT2
     tcp        0      0 :::22                  :::*                        LISTEN
     ```
+    </small>
 
 Some Code Examples:
 

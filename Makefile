@@ -74,86 +74,57 @@ qiniu:
 
 # edits
 EDITS = \
-		_pages/notes.md \
-		_pages/reads.md \
-		_pages/koans.md \
-		_posts/ \
-
+		$(DIR_PAGES)/notes.md \
+		$(DIR_PAGES)/reads.md \
+		$(DIR_PAGES)/koans.md \
+		$(DIR_POSTS)
 it:
 	$(EDITOR) -p $(EDITS)
-
-
 f: footer
 footer:
-	$(EDITOR) _parts/footer.html
-
-
-
-# write
+	$(EDITOR) footer.html
 k: koan
 koan:
 	$(date +%s | clip)
-	$(EDITOR) _pages/koans.md
-
+	$(EDITOR) $(DIR_PAGES)/koans.md
 n: note
 note:
-	$(EDITOR) _pages/notes.md
-
+	$(EDITOR) $(DIR_PAGES)/notes.md
 r: read
 read:
-	$(EDITOR) _pages/reads.md
-
-p: post
-post:
-	$(MAKE) -C $(POSTS) post
-
+	$(EDITOR) $(DIR_PAGES)/reads.md
 a: about
 about:
-	$(MAKE) -C $(PAGES) about
-
+	$(EDITOR) $(DIR_PAGES)/about.md
 bq: blogquery
 blogquery:
 	$(EDITOR) $(DIR_STATICS)/blog-query.js
-
 c: css
 css:
 	$(EDITOR) $(DIR_STATICS)/main.css
-
 j: js
 js:
 	$(EDITOR) $(DIR_STATICS)/main.js
-
 pm: poem
 poem:
-	$(MAKE) -C $(PAGES) poem
-
+	$(EDITOR) $(DIR_PAGES)/poems.md
 xm: xiami
 xiami:
-	$(MAKE) -C $(PAGES) xiami
-
+	$(EDITOR) $(DIR_PAGES)/xiami.md
 q: quote
 quote:
-	$(MAKE) -C $(PAGES) quote
-
+	$(EDITOR) $(DIR_PAGES)/quotes.md
 l: link
 link:
-	$(MAKE) -C $(PAGES) link
-
-o: org
-org:
-	$(MAKE) -C $(PAGES) org
-
+	$(EDITOR) $(DIR_PAGES)/links.md
 day:
-	$(MAKE) -C $(PAGES) day
-    
+	$(EDITOR) $(DIR_PAGES)/days.md
 d: dent
 dent:
-	$(MAKE) -C $(PAGES) dent
-
+	$(EDITOR) $(DIR_PAGES)/dents.md
 db: douban
 douban:
-	$(MAKE) -C $(PAGES) douban
-
+	$(EDITOR) $(DIR_PAGES)/douban.md
 fun:
 	$(MAKE) -C $(PAGES) fun
 
