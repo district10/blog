@@ -5,17 +5,12 @@
 About | 关于
 ============
 
-我是处女座。
+处女座，INTP。个人主页：[![](tangzhixiong.svg)](http://tangzhixiong.com)。
 
-个人主页：[![](tangzhixiong.svg)](http://tangzhixiong.com)。
+博客源码托管在 GitHub，用 Markdown 写，用 Makefile 管理，用 travis 自动帮我把
+Markdown 转成 HTML 并同步到七牛上。
 
-这是 TANG ZhiXiong 的博客。全部博客内容托管在 GitHub，用 Markdown 写，用
-Makefile 管理，用 Pandoc 和 Bash 脚本转化成 HTML，同步到七牛。简单粗糙，但美观
-实用。后来有了 Emacs 和 org-mode 部分，在 [orgit](orgit/)。
-
-布局上的原则是：永远不弄成响应式。尺度固定。
-
-这个博客基本上分离在两条流水线：
+本博基本上分离在两条流水线：
 
 - Markdown + Vim + Command line，这边用起来比较简单；
 - org-mode + Emacs (batteries included)，这边功能强大，可以加密一些私人的东西。
@@ -48,20 +43,13 @@ Makefile 管理，用 Pandoc 和 Bash 脚本转化成 HTML，同步到七牛。�
     （2）刘未鹏，[[BetterExplained]为什么你应该（从现在开始就）写博客](http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/)
 
 <!--
-
 ![Mathematics is the only truly universal language.](http://gnat.qiniudn.com/jodie-foster-math.png)
 ![Octocat: Adventure Cat](http://gnat-tang-shared-image.qiniudn.com/octocat/adventure-cat.png)
 ![Kimonotocat](http://gnat-tang-shared-image.qiniudn.com/octocat/kimonotocat.png)
-
--->
-
 学好数学、英语、计算机。
+-->
 
 注：
 
 #. 很多摘抄并没有用引用符，计划 tag 功能弄好了再把文章标记一下作为申明。
 #. Anyway，CSS 和功能还要慢慢打磨，我自己先用着吧～
-
-<!--
-#. 多说和站长工具实在太拖慢速度了！抛弃！
--->

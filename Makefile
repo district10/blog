@@ -78,10 +78,10 @@ qiniu:
 
 # edits
 EDITS = \
-		$(DIR_PAGES)/notes.md \
-		$(DIR_PAGES)/reads.md \
-		$(DIR_PAGES)/koans.md \
-		$(DIR_POSTS)
+	$(DIR_PAGES)/notes.md \
+	$(DIR_PAGES)/reads.md \
+	$(DIR_PAGES)/koans.md \
+	$(DIR_POSTS)
 it:
 	$(EDITOR) -p $(EDITS)
 f: footer

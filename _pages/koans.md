@@ -13,6 +13,13 @@ code.tzx-timestamp {
 
 <div class="koans"><!-- 下面要有空行 | One Empty Line Reserved Below -->
 
+## `1458632598`{.tzx-timestamp} 去中心化不适合人类的大脑
+
+至少不适合我的大脑。如果不把所有东西都放到一个地方，我就真是什么都找不到！
+现在把自己的笔记等等全都放到 [district10/blog](http://github.com/district10/blog)，
+感觉各种方便。自己找不到的东西，先自己搜搜，搜到了再加到这里就可以了。
+而且现在都不用自己装 `pandoc`{.bash} 了，github 和 travis 会自动帮我转文档。
+赞赞赞！
 
 ## `1458563023`{.tzx-timestamp} GitHub 上的博客自动同步到自己的七牛
 
@@ -21,7 +28,8 @@ code.tzx-timestamp {
 以后我可以不自己搭建 `pandoc` 的编译环境了。
 
 好了！现在是自己随便在哪儿写，只有同步到 GitHub 就会触发 travis 帮我编译，而且只处理我修改了的 markdown 文件~
-mz## `1458298773`{.tzx-timestamp} 豆瓣FM 推荐的老歌
+
+## `1458298773`{.tzx-timestamp} 豆瓣FM 推荐的老歌
 
 真的好老……最近在听豆瓣FM（我重新注册了一个帐号，用弱密码，专门用来听歌），
 推荐的歌给人一种上个世纪的感觉。有

@@ -13,6 +13,26 @@ V/\n#. ?kbzf
 <div class="reads">
 
 #. &#x2610;
+#. &#x2610; [git - Download a single folder or directory from a GitHub repo - Stack Overflow](http://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo)
+
+ 282
+down vote
+
+
+This is a pretty old question, but I figured this out today and I thought I'd leave this here for anyone else who has the same problem.
+
+As all the previous answers have already noted, you are not allowed to download a single folder using Git. However, you ARE allowed to do this with subversion. This won't work on a regular git repo obviously, but if you're using GitHub you can actually check out using svn.
+
+For example:
+
+svn checkout https://github.com/foobar/Test/trunk/foo
+
+trunk corresponds to master branch. You can use svn ls to see available tags and branches before downloading if you wish. If you want a folder in a branch other than master then replace trunk with branches/branchname.
+
+As of this writing, you can find the subversion URL for any repo on GitHub by clicking on "Subversion" at the bottom of the right sidebar. See GitHub's post on subversion partial checkouts for more info.
+
+
+
 works?
 #. &#x2610; [Preface | Data Structure and Algorithm notes](http://algorithm.yuanbin.me/zh-hans/index.html#)
 #. &#x2610; [500 Lines or Less](http://aosabook.org/en/500L/)

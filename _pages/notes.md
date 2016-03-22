@@ -34,6 +34,13 @@ pre.tzx-bigquote {
 </div>
 -->
 
+```bash
+sudo apt-get install ruby-dev
+```
+
+ProTip™: You can pre-fill the filename field using just the URL.
+Typing ?filename=yournewfile.txt at the end of the URL will pre-fill the filename field with the name yournewfile.txt.
+
 <!--...-->
 [舌尖上的忘词&背单词的秘诀](http://mp.weixin.qq.com/s?__biz=MjM5NTExMTk5MA==&mid=409398412&idx=1&sn=a592c82fd0a57b15559832c983033ca8&scene=0#wechat_redirect)
 

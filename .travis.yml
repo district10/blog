@@ -16,9 +16,9 @@ script:
   - git clone https://github.com/district10/blog.git
   - cd blog && mkdir -p publish
   - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
-  - make items move
+  - make # items move
   - cd publish
-  - perl filter.pl
+  - # perl filter.pl
   - make
   - cd ..
   - (uname -a; echo '<br>'; du -h publish; echo '<br>'; date) > publish/log.html
