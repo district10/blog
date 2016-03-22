@@ -1,17 +1,61 @@
-PODIR=publish
-PAGES=_pages
-POSTS=_posts
-STATICS=_statics
-LYRICS=_miscs/lyrics
-DOCS=_miscs/docs
-IDXPG=$(PODIR)/index.html
-SITEMAP=$(PODIR)/sitemap.html
+DIR_PUBLISH=publish
+DIR_PAGES=_pages
+DIR_POSTS=_posts
+DIR_DOCS=_miscs/docs
+DIR_LYRICS=_miscs/lyrics
+DIR_STATICS=_statics
 
-all: pages posts statics lyrics docs $(IDXPG)
-pages posts statics lyrics: $(PODIR) footer.html
-$(PODIR):
-	mkdir -p $(PODIR)
+MD_POSTS = $(wildcard $(DIR_POSTS)/*.md)
+PG_POSTS = $(addprefix $(DIR_PUBLISH)/, $(MD_POSTS:$(DIR_POSTS)/%=%))
+MD_PAGES = $(wildcard $(DIR_PAGES)/*.md)
+PG_PAGES = $(addprefix $(DIR_PUBLISH)/, $(MD_PAGES:$(DIR_PAGES)/%=%))
+MD_DOCS = $(wildcard $(DIR_DOCS)/*.md)
+PG_DOCS = $(addprefix $(DIR_PUBLISH)/, $(MD_DOCS:$(DIR_DOCS)/%=%))
 
+ITEMS = \
+	$(DIR_PUBLISH)/Makefile \
+	$(DIR_PUBLISH)/filter.pl \
+	$(DIR_PUBLISH)/footer.html \
+	$(DIR_PUBLISH)/index.md \
+
+all: items move statics lyrics html
+
+# copy & make
+items: $(ITEMS)
+$(DIR_PUBLISH)/footer.html: footer.html
+	mkdir -p $(DIR_PUBLISH)
+	cp $< $@
+$(DIR_PUBLISH)/Makefile: publish.mk
+	cp $< $@
+$(DIR_PUBLISH)/filter.pl: filter.pl
+	cp $< $@
+
+move: $(PG_POSTS) $(PG_PAGES)
+$(DIR_PUBLISH)/%.md: index.md
+	cp $< $@
+$(DIR_PUBLISH)/%.md: $(DIR_PAGES)/%.md
+	cp $< $@
+$(DIR_PUBLISH)/%.md: $(DIR_POSTS)/%.md
+	cp $< $@
+$(DIR_PUBLISH)/%.md: $(DIR_DOCS)/%.md
+	cp $< $@
+
+statics:
+	$(MAKE) -C $(DIR_STATICS)
+
+lrc: lyrics
+lyrics:
+	$(MAKE) -C $(DIR_LYRICS)
+
+# publish html
+html:
+	make -C $(DIR_PUBLISH) html
+
+# clean
+clean:
+	rm -rf $(DIR_PUBLISH)/*
+
+# update
 gh: github
 github:
 	git add -A && git commit -m "`date` - `uname`" && git push
@@ -28,38 +72,7 @@ qn: qiniu
 qiniu: 
 	qrsync conf.json
 
-pts: posts
-posts:
-	$(MAKE) -C $(POSTS)
-
-pdf:
-	$(MAKE) -C $(POSTS) pdf
-docx:
-	$(MAKE) -C $(POSTS) docx
-
-pgs: pages
-pages:
-	$(MAKE) -C $(PAGES)
-
-i: index
-index: $(IDXPG)
-$(IDXPG): index.md
-	pandoc -S -s --ascii -c main.css -A footer.html \
-		-f markdown $^ -o $@
-
-rmi: rmindex
-rmindex:
-	rm -f $(IDXPG)
-
-sm: sitemap
-sitemap: $(SITEMAP)
-$(SITEMAP): 
-	sh sitemap.sh $@
-
-rmsm: rmsitemap
-rmsitemap:
-	rm -f $(SITEMAP)
-
+# edits
 EDITS = \
 		_pages/notes.md \
 		_pages/reads.md \
@@ -69,37 +82,12 @@ EDITS = \
 it:
 	$(EDITOR) -p $(EDITS)
 
+
 f: footer
 footer:
 	$(EDITOR) _parts/footer.html
 
-statics:
-	$(MAKE) -C $(STATICS)
 
-lrc: lyrics
-lyrics:
-	$(MAKE) -C $(LYRICS)
-
-docs: 
-	$(MAKE) -C $(DOCS)
-
-# clean
-cpgs: cleanPages
-cleanPages:
-	$(MAKE) -C $(PAGES) clean
-
-cpts: cleanPosts
-cleanPosts:
-	$(MAKE) -C $(POSTS) clean
-
-clrc: cleanLyrics
-cleanLyrics:
-	$(MAKE) -C $(LYRICS) clean
-
-rm: clall
-clall: clean
-clean:
-	rm -rf $(PODIR)/*
 
 # write
 k: koan
@@ -125,15 +113,15 @@ about:
 
 bq: blogquery
 blogquery:
-	$(EDITOR) $(STATICS)/blog-query.js
+	$(EDITOR) $(DIR_STATICS)/blog-query.js
 
 c: css
 css:
-	$(EDITOR) $(STATICS)/main.css
+	$(EDITOR) $(DIR_STATICS)/main.css
 
 j: js
 js:
-	$(EDITOR) $(STATICS)/main.js
+	$(EDITOR) $(DIR_STATICS)/main.js
 
 pm: poem
 poem:
@@ -171,7 +159,7 @@ fun:
 
 s: song
 song:
-	$(MAKE) -C $(LYRICS) song
+	$(MAKE) -C $(DIR_LYRICS) song
 
 t: typing
 typing:
@@ -180,11 +168,3 @@ typing:
 m: make
 make:
 	$(EDITOR) Makefile
-
-mpt: mkPosts
-mkPosts:
-	$(MAKE) -C $(POSTS) make
-
-ml: mkLyrics
-mkLyrics:
-	$(MAKE) -C $(LYRICS) make
