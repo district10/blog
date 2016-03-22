@@ -1,9 +1,10 @@
 sudo: required
 
 before_install:
-    - Min=$(date +%M)
-    - if [$(($Min % 2)) -gt 0]; then echo 'Will not build at this time'; exit; else echo 'Building...'; fi
-    - sudo apt-get install texlive-full
+  - Min=$(date +%M)
+  - if [$(($Min % 2)) -gt 0]; then echo 'Will not build at this time'; exit; else echo 'Building...'; fi
+  - sudo apt-get install texlive
+  - sudo apt-get install ttf-wqy-zenhei
 
 install:
   - cd ~
