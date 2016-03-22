@@ -85,3 +85,10 @@ searching
 
 * ag
 * pt (better, can search chinese, and easier to get the binary)
+
+Notes
+
+```yml
+  - sudo apt-get install texlive-full
+  - sudo apt-get install ttf-wqy-zenhei
+```
