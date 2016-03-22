@@ -3,7 +3,7 @@ sudo: required
 before_install:
   - Min=$(date +%M)
   - if [$(($Min % 2)) -gt 0]; then echo 'Will not build at this time'; exit; else echo 'Building...'; fi
-  - sudo apt-get install texlive
+  - sudo apt-get install texlive-full
   - sudo apt-get install ttf-wqy-zenhei
 
 install:
@@ -22,5 +22,6 @@ script:
   - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
   - make -j2
   - make pdf
+  - make docx
   - (uname -a; du -h publish) > publish/log.html
   - make qiniu

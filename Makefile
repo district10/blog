@@ -34,6 +34,8 @@ posts:
 
 pdf:
 	$(MAKE) -C $(POSTS) pdf
+docx:
+	$(MAKE) -C $(POSTS) docx
 
 pgs: pages
 pages:

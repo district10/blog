@@ -14,6 +14,7 @@ post-0085-cvrs-presentation.md \
 MDS   = $(wildcard *.md)
 POSTS = $(addprefix $(PODIR)/, $(MDS:%.md=%.html))
 PDFS = $(addprefix $(PODIR)/, $(MDS:%.md=%.pdf))
+DOCS = $(addprefix $(PODIR)/, $(MDS:%.md=%.docx))
 
 all: $(POSTS)
 
@@ -49,6 +50,14 @@ $(PODIR)/%.pdf: $(PIDIR)/%.md
 	pandoc \
 		--latex-engine=xelatex \
 		--template=_pm-template \
+		--highlight-style pygments \
+		-f markdown+east_asian_line_breaks \
+		$< \
+		-o $@
+
+docx: $(DOCS)
+$(PODIR)/%.docx: $(PIDIR)/%.md
+	pandoc \
 		--highlight-style pygments \
 		-f markdown+east_asian_line_breaks \
 		$< \
