@@ -12,6 +12,10 @@ Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序�
 [^emacs]: [Emacs - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Emacs)。
 [^info]: 这是 <http://tangzhixiong.com> 的一部分。
 
+<div class="tzx-fright">
+[![Build Status](https://travis-ci.org/district10/blog.svg?branch=master)](https://travis-ci.org/district10/blog)
+</div>
+
 <div id="buckets">
 <div><a href="koans.html">Koans | 呓语</a></div>
 <div><a href="orgit.html">Orgit | 唐凤</a></div>

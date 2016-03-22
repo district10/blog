@@ -2,7 +2,7 @@ sudo: required
 
 before_install:
     - Min=$(date +%M)
-    - if [$(($Min % 10)) -gt 5]; then echo 'Will not build at this time'; exit; else echo 'Building...'; fi
+    - if [$(($Min % 2)) -gt 0]; then echo 'Will not build at this time'; exit; else echo 'Building...'; fi
 
 install:
   - cd ~
