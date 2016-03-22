@@ -282,13 +282,12 @@ death. No fight, no glory.  And not honorable.
 
 ---
 
-## Notes
+**Notes**
 
 The Dothraki are a race of nomadic horse-mounted warriors in Essos, the
 continent to the east of Westeros across the Narrow Sea. They inhabit the vast
 central plains of Essos, known as the Dothraki sea. They are said to be born,
 fight, and die in the saddle.
-
 
 Essos is an immense landmass located to the east of Westeros, extending into
 the far east of the known world. The Free Cities are located on its
