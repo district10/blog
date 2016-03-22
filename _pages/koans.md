@@ -13,6 +13,14 @@ code.tzx-timestamp {
 
 <div class="koans"><!-- 下面要有空行 | One Empty Line Reserved Below -->
 
+## `1458655653`{.tzx-timestamp} 环！
+
+弄 travis，希望它能修改我的 repo，所以设置了 GitHub Token，然后用
+travis 的命令行工具（一个 gem）加密，然后加到 `.travis` 里，然后发现……
+travis 进入了死循环。因为一个 build 会产生下一个 build……于是停不下来了！
+
+我现在是焦头烂额。尤其对网速很不满。
+
 ## `1458632598`{.tzx-timestamp} 去中心化不适合人类的大脑
 
 至少不适合我的大脑。如果不把所有东西都放到一个地方，我就真是什么都找不到！
