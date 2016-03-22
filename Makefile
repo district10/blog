@@ -7,6 +7,8 @@ DIR_STATICS=_statics
 
 MD_POSTS = $(wildcard $(DIR_POSTS)/*.md)
 PG_POSTS = $(addprefix $(DIR_PUBLISH)/, $(MD_POSTS:$(DIR_POSTS)/%=%))
+MD_BIBS = $(wildcard $(DIR_POSTS)/*.bib)
+PG_BIBS = $(addprefix $(DIR_PUBLISH)/, $(MD_BIBS:$(DIR_POSTS)/%=%))
 MD_PAGES = $(wildcard $(DIR_PAGES)/*.md)
 PG_PAGES = $(addprefix $(DIR_PUBLISH)/, $(MD_PAGES:$(DIR_PAGES)/%=%))
 MD_DOCS = $(wildcard $(DIR_DOCS)/*.md)
@@ -30,12 +32,14 @@ $(DIR_PUBLISH)/Makefile: publish.mk
 $(DIR_PUBLISH)/filter.pl: filter.pl
 	cp $< $@
 
-move: $(PG_POSTS) $(PG_PAGES)
-$(DIR_PUBLISH)/%.md: index.md
-	cp $< $@
-$(DIR_PUBLISH)/%.md: $(DIR_PAGES)/%.md
+move: $(PG_POSTS) $(PG_BIBS) $(PG_PAGES)
+$(DIR_PUBLISH)/index.md: index.md
 	cp $< $@
 $(DIR_PUBLISH)/%.md: $(DIR_POSTS)/%.md
+	cp $< $@
+$(DIR_PUBLISH)/%.bib: $(DIR_POSTS)/%.bib
+	cp $< $@
+$(DIR_PUBLISH)/%.md: $(DIR_PAGES)/%.md
 	cp $< $@
 $(DIR_PUBLISH)/%.md: $(DIR_DOCS)/%.md
 	cp $< $@

@@ -10,9 +10,25 @@ PANDOC_OPTIONS = -S -s --ascii \
 all: html
 
 html: $(HTML)
+
+post-0051-spatial-gis.html: post-0051-spatial-gis.md
+	pandoc \
+		$(PANDOC_OPTIONS) \
+		--toc --mathjax \
+		--bibliography $(patsubst %.md, %.bib, $^) \
+		$< \
+		-o $@
+post-0050-gis-overall.html: post-0050-gis-overall.md
+	pandoc \
+		$(PANDOC_OPTIONS) \
+		--toc --mathjax \
+		--bibliography $(patsubst %.md, %.bib, $^) \
+		$< \
+		-o $@
+
 %.html: %.md
 	pandoc \
 		$(PANDOC_OPTIONS) \
 		--toc \
-		$^ \
+		$< \
 		-o $@
