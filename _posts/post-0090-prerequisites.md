@@ -48,3 +48,45 @@ Dicaprio 笑笑，“额……那老子还看过你的电影罗？”但是字�
 
 “干嘛绕这么大一个圈子，像我这么冰雪聪明的人都没有 GET 到你的意思……你说 Rambo 干
 嘛……”，老师如是说。
+
+---
+
+我们的剧本和演出都相当的叼，这里是我们的剧本：
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-0.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-1.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-2.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-3.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-4.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-5.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-6.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-7.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-8.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-9.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-10.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-11.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-12.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-13.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-14.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-15.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-16.jpg)
+
+![](http://whudoc.qiniudn.com/2016/zootopia2-notes-17.jpg)
+
+Slides: <http://whudoc.qiniudn.com/2016/zootopia2-slides.pdf>

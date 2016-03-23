@@ -1,13 +1,21 @@
 sudo: required
 before_install:
-  - openssl aes-256-cbc -K $encrypted_0f64f26238f6_key -iv $encrypted_0f64f26238f6_iv -in id_rsa.enc -out ~/shared/git/id_rsa -d
-  - git config user.email "dvorak4tzx@qq.com"
-  - git config user.name "TANG ZhiXiong"
+  - echo 'before install' && pwd && ls
+  - mkdir -p ~/.ssh
+  - openssl aes-256-cbc -K $encrypted_0f64f26238f6_key -iv $encrypted_0f64f26238f6_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d
+  - chmod 600 ~/.ssh/id_rsa
+  - eval "$(ssh-agent -s)"
+  - ssh-add ~/.ssh/id_rsa
+  - cp ssh_config ~/.ssh/config
+  - git config --global user.email "dvorak4tzx@qq.com"
+  - git config --global user.name "TANG ZhiXiong"
 install:
+  - echo 'install' && pwd && ls
   - cd ~
   - wget https://github.com/jgm/pandoc/releases/download/1.17/pandoc-1.17-1-amd64.deb
   - sudo dpkg -i pandoc*.deb
 script:
+  - echo 'script' && pwd && ls
   - wget http://devtools.qiniu.com/qiniu-devtools-linux_amd64-current.tar.gz
   - tar xfz qiniu-devtools-linux_amd64-current.tar.gz
   - sudo cp qrsync /bin
@@ -15,19 +23,18 @@ script:
   - cd aha && make && sudo make install && cd ~
   - git clone https://github.com/district10/blog.git
   - cd blog && mkdir -p publish
-  - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" >
-    conf.json
+  - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
   - make items move
   - cd publish
   - perl filter.pl
-  - ls -a
   - make
   - wget http://tangzx.qiniudn.com/log.html
   - cd ..
   - "(uname -a; echo '<br>'; du -h publish; echo '<br>'; date) >> publish/log.html"
   - make qiniu
-
 after_success:
+  - echo 'after success' && pwd && ls
+  - pwd && ls
   - cd ~/blog && rm -rf publish
   - make
   - cd ~
