@@ -3,12 +3,12 @@
 exit unless `whoami` =~ /travis/;
 
 my @mods = `git diff-tree --no-commit-id --name-only -r HEAD`;
-push @mods, 'footer.html';
-push @mods, 'filter.pl';
-push @mods, 'Makefile';
+push @mods, "footer.html\n";
+push @mods, "filter.pl\n";
+push @mods, "Makefile\n";
 
 my $hits = join '', @mods;
-print "files modified: [\n", $hits, "]\n";
+print "files to protect [\n", $hits, "]\n";
 
 my @all_pubs = <*>;
 foreach (@all_pubs) {
