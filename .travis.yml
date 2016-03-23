@@ -10,32 +10,23 @@ before_install:
   - git config --global user.email "dvorak4tzx@qq.com"
   - git config --global user.name "TANG ZhiXiong"
 install:
-  - echo 'install' && pwd && ls
   - cd ~
   - wget https://github.com/jgm/pandoc/releases/download/1.17/pandoc-1.17-1-amd64.deb
   - sudo dpkg -i pandoc*.deb
-script:
-  - echo 'script' && pwd && ls
   - wget http://devtools.qiniu.com/qiniu-devtools-linux_amd64-current.tar.gz
   - tar xfz qiniu-devtools-linux_amd64-current.tar.gz
   - sudo cp qrsync /bin
   - git clone https://github.com/district10/aha.git
-  - cd aha && make && sudo make install && cd ~
-  - git clone https://github.com/district10/blog.git
-  - cd blog && mkdir -p publish
+  - cd aha && make && sudo make install
+script:
+  - cd ~/build/district10/blog && mkdir -p publish
   - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
   - make items move
-  - cd publish
-  - perl filter.pl
-  - make
-  - wget http://tangzx.qiniudn.com/log.html
-  - cd ..
+  - cd publish; perl filter.pl; make; wget http://tangzx.qiniudn.com/log.html; cd ..
   - "(uname -a; echo '<br>'; du -h publish; echo '<br>'; date) >> publish/log.html"
   - make qiniu
 after_success:
-  - echo 'after success' && pwd && ls
-  - pwd && ls
-  - cd ~/blog && rm -rf publish
+  - cd ~/build/district10/blog && rm -rf publish
   - make
   - cd ~
   - git clone git@git.coding.net:dvoark4tzx/dvorak4tzx.git
@@ -43,7 +34,7 @@ after_success:
   - git checkout coding-pages
   - rm -f .git/index
   - git clean -df
-  - cp ~/blog/publish/* ./
+  - cp ~/build/district10/blog/publish/* ./
   - git add -A
   - git commit -m "lazy me @ `date`"
   - git push origin coding-pages --force
