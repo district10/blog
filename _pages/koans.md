@@ -9,7 +9,7 @@ Koans | 呓语
 
 ## `1458738269`{.tzx-timestamp} travis 死了？
 
-为什么不理我的 push？
+为什么不理我的 push？补：偶尔这样，我原谅你了！
 
 ## `1458698895`{.tzx-timestamp} travis 你不要吓我
 

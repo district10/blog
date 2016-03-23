@@ -20,12 +20,13 @@ ITEMS = \
 	$(DIR_PUBLISH)/footer.html \
 	$(DIR_PUBLISH)/index.md \
 
-all: items move statics lyrics html
+all: $(DIR_PUBLISH) items move statics lyrics html
+
+$(DIR_PUBLISH):
+	mkdir -p $(DIR_PUBLISH)
 
 # copy & make
 items: $(ITEMS)
-$(ITEMS):
-	mkdir -p $(DIR_PUBLISH)
 $(DIR_PUBLISH)/footer.html: footer.html
 	cp $< $@
 $(DIR_PUBLISH)/Makefile: publish.mk
