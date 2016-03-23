@@ -24,8 +24,9 @@ all: items move statics lyrics html
 
 # copy & make
 items: $(ITEMS)
-$(DIR_PUBLISH)/footer.html: footer.html
+$(ITEMS):
 	mkdir -p $(DIR_PUBLISH)
+$(DIR_PUBLISH)/footer.html: footer.html
 	cp $< $@
 $(DIR_PUBLISH)/Makefile: publish.mk
 	cp $< $@

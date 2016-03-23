@@ -29,7 +29,7 @@ after_success:
   - cd ~/build/district10/blog && rm -rf publish
   - make
   - cd ~
-  - git clone git@git.coding.net:dvoark4tzx/dvorak4tzx.git
+  - git clone git@git.coding.net:dvorak4tzx/dvorak4tzx.git
   - cd dvorak4tzx
   - git checkout coding-pages
   - rm -f .git/index
