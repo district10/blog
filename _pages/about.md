@@ -7,8 +7,11 @@ About | 关于
 
 处女座，INTP。个人主页：[![](tangzhixiong.svg)](http://tangzhixiong.com)。
 
-博客源码托管在 GitHub，用 Markdown 写，用 Makefile 管理，用 travis 自动帮我把
-Markdown 转成 HTML 并同步到 [七牛](https://portal.qiniu.com/signup?code=3ld4krtl7yzbm) 上。
+博客源码托管在 GitHub，用 Markdown 写，用 Makefile 管理，用 travis
+
+  - 帮我把源码同步到 [Coding: dvorak4tzx/dvorak4tzx.git master 分支](https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git)；
+  - 帮我把网站同步到 [Coding: dvorak4tzx/dvorak4tzx.git coding-pages 分支](http://dvorak4tzx.coding.me/)；
+  - 帮我把生成的网页同步到 [七牛云存储](https://portal.qiniu.com/signup?code=3ld4krtl7yzbm)。
 
 本博基本上分离在两条流水线：
 

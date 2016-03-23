@@ -27,6 +27,8 @@ script:
   - make qiniu
 after_success:
   - cd ~/build/district10/blog && rm -rf publish
+  - git remote add coding git@git.coding.net:dvorak4tzx/dvorak4tzx.git
+  - git push -u coding HEAD:master --force
   - make
   - cd ~
   - git clone git@git.coding.net:dvorak4tzx/dvorak4tzx.git
