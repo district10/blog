@@ -1,7 +1,8 @@
 sudo: required
 before_install:
-  - openssl aes-256-cbc -K $encrypted_0f64f26238f6_key -iv $encrypted_0f64f26238f6_iv
-  -in id_rsa.enc -out ~/shared/git/id_rsa -d
+  - openssl aes-256-cbc -K $encrypted_0f64f26238f6_key -iv $encrypted_0f64f26238f6_iv -in id_rsa.enc -out ~/shared/git/id_rsa -d
+  - git config user.email "dvorak4tzx@qq.com"
+  - git config user.name "TANG ZhiXiong"
 install:
   - cd ~
   - wget https://github.com/jgm/pandoc/releases/download/1.17/pandoc-1.17-1-amd64.deb
@@ -31,7 +32,7 @@ after_success:
   - make
   - cd ~
   - git clone git@git.coding.net:dvoark4tzx/dvorak4tzx.git
-  - cd dvoark4tzx
+  - cd dvorak4tzx
   - git checkout coding-pages
   - rm -f .git/index
   - git clean -df
