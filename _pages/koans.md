@@ -7,6 +7,10 @@ Koans | 呓语
 
 <div class="koans">
 
+## `1458738269`{.tzx-timestamp} travis 死了？
+
+为什么不理我的 push？
+
 ## `1458698895`{.tzx-timestamp} travis 你不要吓我
 
 昨天在 GitHub 上 grant 了 `travis.com`，唉？！我不是 grant 过吗？！
