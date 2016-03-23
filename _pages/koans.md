@@ -5,13 +5,13 @@
 Koans | 呓语
 ============
 
-<style>
-code.tzx-timestamp {
-    color: white;
-}
-</style>
+<div class="koans">
 
-<div class="koans"><!-- 下面要有空行 | One Empty Line Reserved Below -->
+## `1458698895`{.tzx-timestamp} travis 你不要吓我
+
+昨天在 GitHub 上 grant 了 `travis.com`，唉？！我不是 grant 过吗？！
+吓我一跳，还以为是钓鱼网站。早上发现原来 <travis.org> 是那个很 popular 的，
+<travis.com> 也是他们一家的，可适用于 private repo。
 
 ## `1458655653`{.tzx-timestamp} 环！
 
@@ -2096,6 +2096,15 @@ Firefox: Blocked by Content Security Policy.
 
 这个……有点叼。我要好好学习以后破解 md5……
 
+</div>
+
+---
+
+<style>
+code.tzx-timestamp {
+    color: white;
+}
+</style>
 <script src="moment.min.js"></script>
 <script>
 var tss = document.getElementsByClassName('tzx-timestamp');

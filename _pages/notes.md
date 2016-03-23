@@ -7,8 +7,120 @@ Notes | 笔记
 
 <!--...-->
 
+浏览器里得 Vim，用 `C-[` 替代 `ESC`。
 
- 7xr1kp.com1.z0.glb.clouddn.com 
+---
+
+How I Blog
+
+  - I better write this down or I'll never remember it
+  - I read something
+  - I had a spontaneous epiphany (is there any other kind?)
+
+epiphany `[ɪ'pɪfəni]`
+
+    对事物真谛的顿悟；主显节（每年一月六日纪念耶稣显灵的节日）；显现（特指神的显现）
+
+[`appveyor.yml`{.tzx-filename}](https://github.com/district10/rapidjson/blob/master/appveyor.yml)
+
+:   ```yml
+    version: 1.0.2.{build}
+
+    configuration:
+    - Debug
+    - Release
+
+    environment:
+      matrix:
+      - VS_VERSION: 11
+        VS_PLATFORM: win32
+      - VS_VERSION: 11
+        VS_PLATFORM: x64
+      - VS_VERSION: 12
+        VS_PLATFORM: win32
+      - VS_VERSION: 12
+        VS_PLATFORM: x64
+
+    before_build:
+    - git submodule update --init --recursive
+    - cmake -H. -BBuild/VS -G "Visual Studio %VS_VERSION%" -DCMAKE_GENERATOR_PLATFORM=%VS_PLATFORM% -DBUILD_SHARED_LIBS=true -Wno-dev
+
+    build:
+      project: Build\VS\RapidJSON.sln
+      parallel: true
+      verbosity: minimal
+
+    test_script:
+    - cd Build\VS && if %CONFIGURATION%==Debug (ctest --verbose -E perftest --build-config %CONFIGURATION%) else (ctest --verbose --build-config %CONFIGURATION%)
+    ```
+
+```bash
+# for gcc with C++11 support
+sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+sudo apt-get -qq update
+sudo apt-get -qq install gcc-4.9 g++-4.9
+
+# install GTest and GMock
+- sudo apt-get -qq install libgtest-dev
+- "cd /usr/src/gtest && sudo cmake . && sudo cmake --build . && sudo mv libg* /usr/local/lib/ ; cd -"
+- sudo apt-get -qq install google-mock
+- "cd /usr/src/gmock && sudo cmake . && sudo cmake --build . && sudo mv libg* /usr/local/lib/ ; cd -"
+
+- sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 90
+- sudo update-alternatives --install /usr/bin/gcov gcov /usr/bin/gcov-4.9 90
+```
+
+```cmake
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0") # debug, no optimisation
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --coverage") # enabling coverage
+```
+
+Either by using the supplied helper function.
+
+if (COVERALLS)
+    include(Coveralls)
+    coveralls_turn_on_coverage()
+endif()
+
+or you can add it yourself:
+
+if (COVERALLS)
+    include(Coveralls)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0 -fprofile-arcs -ftest-coverage")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -O0 -fprofile-arcs -ftest-coverage")
+endif()
+
+Replace CMAKE_CXX_FLAGS  by  CMAKE_C_FLAGS  for a C project.
+
+Nothing more is needed. From the GNU GCC man:
+
+--coverage
+
+This option is used to compile and link code instrumented for coverage
+analysis. The option is a synonym for -fprofile-arcs -ftest-coverage (when
+compiling) and -lgcov (when linking).
+
+---
+
+[rapidjson/travis-doxygen.sh at master · district10/rapidjson](https://github.com/district10/rapidjson/blob/master/travis-doxygen.sh)
+
+```bash
+gh_pages_prepare()
+{
+	cd "${TRAVIS_BUILD_DIR}/build/doc";
+	[ ! -d "html" ] || \
+		abort "Doxygen target directory already exists."
+	git --version
+	git clone -b gh-pages "${GITHUB_CLONE}" html
+	cd html
+	# setup git config (with defaults)
+	git config user.name "${GIT_NAME-travis}"
+	git config user.email "${GIT_EMAIL-"travis@localhost"}"
+	# clean working dir
+	rm -f .git/index
+	git clean -df
+}
+```
 
 ```bash
 sudo apt-get install ruby-dev

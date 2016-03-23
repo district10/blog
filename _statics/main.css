@@ -8,8 +8,6 @@ body {
     padding-right: 1em;
     padding-left: 1em;
     padding-bottom: 120px;
-    // max-width: 44em;
-    // min-width: 30em;
     width: 44em;
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -23,7 +21,6 @@ p {
     padding-bottom: 5px;
     margin-bottom: 10px;
     margin-top: 20px;
-    // text-indent: 2em; // terrible!
 }
 
 h2 + p:first-letter {
@@ -50,17 +47,10 @@ kbd {
     margin-left: .15rem;
     margin-right: .15rem;
     font-family: Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, STXihei, Heiti, sans-serif;
-/*
-    box-shadow: 1px 1px silver;
-    background-color: #f0f0f0;
-    border: solid 1px #c2c2c2;
-    border-radius: 4px;
-*/
     background: #eee;
     border-width: 2px 4px 5px 3px;
     border-style: solid;
     border-color: #ccc #aaa #888 #bbb;
-
 }
 
 pre {
@@ -99,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px 15px 20px 0px;
     padding: 0.5em;
     line-height: 180%;
-    font-family: "TIBch", "Classic Grotesque W01", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", "Microsoft YaHei", SimSun, sans-serif; // from TypeIsBeautiful.com
+    font-family: "TIBch", "Classic Grotesque W01", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", "Microsoft YaHei", SimSun, sans-serif;
 }
 
 h1 {
@@ -168,10 +158,6 @@ caption {
     text-align: center;
     background-color: rgba(255, 255, 255, .85);
     margin: auto;
-    // left: 22%;
-    // right: 22%;
-    // max-width: 44em;
-    // min-width: 30em;
     width: 44em;
     bottom: 0px;
     font-variant:small-caps;
@@ -207,8 +193,6 @@ caption {
 }
 
 .footnotes > hr {
-//    height: 15px;
-//    background: #fff url(hr.gif) no-repeat scroll center;
 }
 
 .footnotes ol li p {
@@ -263,7 +247,6 @@ div.slogan {
 blockquote {
     word-break: break-word;
     font-weight: 100;
-    // line-height: 50px;
     line-height: 1.4;
     margin: 10px 25px 25px 10px;
     padding: 15px 15px;
@@ -509,7 +492,12 @@ div#TOC:hover {
 }
 
 ::selection {
-    background: #fae3df;
+    color: white;
+    background: black;
+}
+::-moz-selection {
+    color: white;
+    background: black;
 }
 
 .tzx {
@@ -569,4 +557,46 @@ pre.tzx-bigquote code {
 
 .tzx-anchor {
     visibility: hidden;
+}
+
+// 850 is best for this site
+@media only screen and (max-device-width:200px){
+   /* ...the dafuq... */
+    body {
+        zoom: 0.1;
+        -moz-transform: scale(0.1);
+        -moz-transform-origin: 0 0;
+    }
+}
+@media only screen and (max-device-width:480px){
+   /* styles for mobile browsers smaller than 480px; (iPhone) */
+    body {
+        zoom: 0.25;
+        -moz-transform: scale(0.25);
+        -moz-transform-origin: 0 0;
+    }
+}
+@media only screen and (device-width:768px){
+   /* default iPad screens */
+    body {
+        zoom: 0.9;
+        -moz-transform: scale(0.9);
+        -moz-transform-origin: 0 0;
+    }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+    body {
+        zoom: 1.2;
+        -moz-transform: scale(1.2);
+        -moz-transform-origin: 0 0;
+    }
+}
+@media only screen and (min-width:1440px){
+    /* styles for browsers larger than 1440px; */
+    body {
+        zoom: 1.5;
+        -moz-transform: scale(1.5);
+        -moz-transform-origin: 0 0;
+    }
 }
