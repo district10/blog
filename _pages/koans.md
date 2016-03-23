@@ -7,6 +7,14 @@ Koans | 呓语
 
 <div class="koans">
 
+## `1458744557`{.tzx-timestamp} 还是火狐赞！
+
+<http://whudoc.qiniudn.com/2016/tab_kit_2nd_edition-0.12.3-fx.xpi>
+
+![使用前](http://whudoc.qiniudn.com/2016/tab-before.png)
+
+![使用后](http://whudoc.qiniudn.com/2016/tab-after.png)
+
 ## `1458738269`{.tzx-timestamp} travis 死了？
 
 为什么不理我的 push？补：偶尔这样，我原谅你了！

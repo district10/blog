@@ -4,9 +4,11 @@
 
 - See <http://tangzx.qiniudn.com>
 - or <http://blog.tangzhixiong.com>
+- or <http://dvorak4tzx.coding.me/>
 
-Simplest Markdown blog，利用 travis 自动生成 html，并同步到七牛。
-妈妈再也不用担心我的电脑没有装 pandoc 了~
+博客用 Markdown 写，用 travis 自动帮我把源码同步到 coding，
+并把网页放到 [coding pages](https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git)
+和 [七牛云盘](https://portal.qiniu.com/signup?code=3ld4krtl7yzbm)。
 
 吐槽：
 
