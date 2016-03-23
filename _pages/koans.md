@@ -11,7 +11,7 @@ Koans | 呓语
 
 昨天在 GitHub 上 grant 了 `travis.com`，唉？！我不是 grant 过吗？！
 吓我一跳，还以为是钓鱼网站。早上发现原来 <travis.org> 是那个很 popular 的，
-<travis.com> 也是他们一家的，可适用于 private repo。
+<travis.com> 也是他们一家的，可适用于 private repo`。`
 
 ## `1458655653`{.tzx-timestamp} 环！
 

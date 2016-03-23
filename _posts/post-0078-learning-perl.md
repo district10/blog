@@ -3522,3 +3522,41 @@ Ideas
 
   - autovivification
   - heredoc
+
+---
+
+basename
+
+:   `$0` is typically the name of your program, so how about this?
+
+    ```perl
+    use Cwd 'abs_path';
+    print abs_path($0);
+    ```
+
+    Small comment, on activestate perl on windows $0 typically contains
+    backslashes and abs_path returned forward slashes, so a quick "tr /\//\\/;"
+    was needed to fix it.
+
+    ```perl
+    use File::Basename;
+    my $dirname = dirname(__FILE__);
+    ```
+
+rm, cp, mv
+
+:   ```perl
+    # rm
+    unlink $file;
+    unlink @files;
+
+    # mv
+    rename $old_name, $new_name;
+
+    use File::Copy qw(move);
+    move $old_name, $new_name;
+
+    # cp
+    use File::Copy qw(copy);
+    copy $old_file, $new_file;
+    ```

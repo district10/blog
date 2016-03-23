@@ -95,6 +95,11 @@ var tzx_links = [
         query: ['page', 'tag', 'music', 'xiami']
     },
     {
+        url: '/post-0001-pandoc-readme.html',
+        title: "Pandoc's User Guide",
+        query: ['pandoc', 'doc']
+    },
+    {
         url: '/post-0002-how-to-make-this-blog.html',
         title: "这是怎样一个博客生成器",
         query: ['blog', 'doc', 'pandoc']

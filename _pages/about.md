@@ -8,7 +8,7 @@ About | 关于
 处女座，INTP。个人主页：[![](tangzhixiong.svg)](http://tangzhixiong.com)。
 
 博客源码托管在 GitHub，用 Markdown 写，用 Makefile 管理，用 travis 自动帮我把
-Markdown 转成 HTML 并同步到七牛上。
+Markdown 转成 HTML 并同步到 [七牛](https://portal.qiniu.com/signup?code=3ld4krtl7yzbm) 上。
 
 本博基本上分离在两条流水线：
 

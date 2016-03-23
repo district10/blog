@@ -12,6 +12,13 @@ V/\n#. ?kbzf
 
 <div class="reads">
 
+[Free OpenSceneGraph Binary Downloads | AlphaPixel](http://openscenegraph.alphapixel.com/osg/downloads/free-openscenegraph-binary-downloads)
+
+osg binary.
+
+[How to remove, copy or rename a file with Perl](http://perlmaven.com/how-to-remove-copy-or-rename-a-file-with-perl)
+[How do I get the full path to a Perl script that is executing? - Stack Overflow](http://stackoverflow.com/questions/84932/how-do-i-get-the-full-path-to-a-perl-script-that-is-executing)
+
 [css - @Media min-width & max-width - Stack Overflow](http://stackoverflow.com/questions/13550541/media-min-width-max-width)
 
 [miloyip/itoa-benchmark: C++ integer-to-string conversion benchmark](https://github.com/miloyip/itoa-benchmark)

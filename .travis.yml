@@ -22,6 +22,7 @@ script:
   - perl filter.pl  # filter out unchanged
   - ls -a
   - make
+  - wget http://tangzx.qiniudn.com/log.html
   - cd ..
-  - (uname -a; echo '<br>'; du -h publish; echo '<br>'; date) > publish/log.html
+  - (uname -a; echo '<br>'; du -h publish; echo '<br>'; date) >> publish/log.html
   - make qiniu
