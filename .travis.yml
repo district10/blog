@@ -20,7 +20,7 @@ script:
   - make items move # build changes
   - cd publish
   - perl filter.pl  # filter out unchanged
-  - ls
+  - ls -a
   - make
   - cd ..
   - (uname -a; echo '<br>'; du -h publish; echo '<br>'; date) > publish/log.html

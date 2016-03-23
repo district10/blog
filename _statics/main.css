@@ -559,7 +559,7 @@ pre.tzx-bigquote code {
     visibility: hidden;
 }
 
-// 850px is best for this site
+// 850px? is best for this site
 @media only screen and (max-device-width:200px){
    /* ...what the dafuq... */
     body {
