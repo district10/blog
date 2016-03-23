@@ -1,12 +1,11 @@
 sudo: required
-
 before_install:
-
+  - openssl aes-256-cbc -K $encrypted_0f64f26238f6_key -iv $encrypted_0f64f26238f6_iv
+  -in id_rsa.enc -out ~/shared/git/id_rsa -d
 install:
   - cd ~
   - wget https://github.com/jgm/pandoc/releases/download/1.17/pandoc-1.17-1-amd64.deb
   - sudo dpkg -i pandoc*.deb
-
 script:
   - wget http://devtools.qiniu.com/qiniu-devtools-linux_amd64-current.tar.gz
   - tar xfz qiniu-devtools-linux_amd64-current.tar.gz
@@ -15,14 +14,28 @@ script:
   - cd aha && make && sudo make install && cd ~
   - git clone https://github.com/district10/blog.git
   - cd blog && mkdir -p publish
-  - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
-  - # make          # fully build
-  - make items move # build changes
+  - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" >
+    conf.json
+  - make items move
   - cd publish
-  - perl filter.pl  # filter out unchanged
+  - perl filter.pl
   - ls -a
   - make
   - wget http://tangzx.qiniudn.com/log.html
   - cd ..
-  - (uname -a; echo '<br>'; du -h publish; echo '<br>'; date) >> publish/log.html
+  - "(uname -a; echo '<br>'; du -h publish; echo '<br>'; date) >> publish/log.html"
   - make qiniu
+
+after_success:
+  - cd ~/blog && rm -rf publish
+  - make
+  - cd ~
+  - git clone git@git.coding.net:dvoark4tzx/dvorak4tzx.git
+  - cd dvoark4tzx
+  - git checkout coding-pages
+  - rm -f .git/index
+  - git clean -df
+  - cp ~/blog/publish/* ./
+  - git add -A
+  - git commit -m "lazy me @ `date`"
+  - git push origin coding-pages --force

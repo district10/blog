@@ -7,6 +7,9 @@ Notes | 笔记
 
 <!--...-->
 
+[展示 GitHub Pages 怎么用 by district10](http://tangzhixiong.com/gh-pages-demo/)
+[Hacking Travis](http://whudoc.qiniudn.com/travis/)
+
 [osg 学习之十六：osgconv工具(android支持的纹理格式) - xuhaiyan8825的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/xuhaiyan8825/article/details/7999767)
 
 osgconv是一种非常有用的的工具来读取标准的3D格式，如OpenFlight,3DS,Alias Wavefront
