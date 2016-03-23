@@ -19,7 +19,6 @@ script:
   - # make          # fully build
   - make items move # build changes
   - cd publish
-  - ls
   - perl filter.pl  # filter out unchanged
   - ls
   - make

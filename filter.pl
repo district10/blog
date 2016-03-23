@@ -1,11 +1,21 @@
 #!/usr/bin/env perl
 
+use strict;
+use File::Copy qw(copy);
+
 exit unless `whoami` =~ /travis/;
 
 my @mods = `git diff-tree --no-commit-id --name-only -r HEAD`;
-push @mods, "footer.html\n";
-push @mods, "filter.pl\n";
-push @mods, "Makefile\n";
+foreach (@mods) {
+    next if $_ =~ /filter.pl/;
+    chomp;
+    my $src= '../' . $_;
+    $_ =~ s:.*/::;
+    copy $src, $_;
+}
+push @mods, "footer.html";
+push @mods, "filter.pl";
+push @mods, "Makefile";
 
 my $hits = join "\t", @mods;
 print "files to protect [\n\t", $hits, "]\n";
