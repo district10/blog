@@ -559,9 +559,9 @@ pre.tzx-bigquote code {
     visibility: hidden;
 }
 
-// 850 is best for this site
+// 850px is best for this site
 @media only screen and (max-device-width:200px){
-   /* ...the dafuq... */
+   /* ...what the dafuq... */
     body {
         zoom: 0.1;
         -moz-transform: scale(0.1);
