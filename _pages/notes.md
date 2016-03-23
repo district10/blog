@@ -11,7 +11,7 @@ Notes | 笔记
 - [Hacking Travis](http://whudoc.qiniudn.com/travis/)
 - [osg 学习之十六：osgconv工具(android支持的纹理格式) - xuhaiyan8825的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/xuhaiyan8825/article/details/7999767)
 
-osgconv是一种非常有用的的工具来读取标准的3D格式，如OpenFlight,3DS,Alias Wavefront
+osgconv 是一种非常有用的的工具来读取标准的3D格式，如OpenFlight,3DS,Alias Wavefront
 (OBJ) etc，并且可以将它们转换为一种OSG所支持的格式，如OSG中的ASCII格式的.osg，二进制格式的.ive。
 在程序运行的默认情况下，优化导入的场景图，将形成的这样结果：场景图读取的数据量将会更少且速度会更
 快。尤其值得指出的是，.ive格式的的文件，快速装载数据的能力使它非常适合数据页和大型的数据库。

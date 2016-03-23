@@ -22,13 +22,13 @@ script:
   - cd ~/build/district10/blog && mkdir -p publish
   - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
   - make items move
-  - cd publish; perl filter.pl; make; wget http://tangzx.qiniudn.com/log.html; cd ..
-  - "(uname -a; echo '<br>'; du -h publish; echo '<br>'; date) >> publish/log.html"
+  - cd publish; perl filter.pl; make; cd ..
   - make qiniu
 after_success:
-  - cd ~/build/district10/blog && rm -rf publish
-  - git remote add coding git@git.coding.net:dvorak4tzx/dvorak4tzx.git
-  - git push -u coding HEAD:master --force
+  - cd ~/build/district10/blog; rm -Rf .git; rm -Rf publish
+  - git init; git add -A; git commit -m "pushing to coding, lazy me @ `date`"
+  - git remote add origin git@git.coding.net:dvorak4tzx/dvorak4tzx.git
+  - git push -u origin HEAD:master --force
   - make
   - cd ~
   - git clone git@git.coding.net:dvorak4tzx/dvorak4tzx.git
