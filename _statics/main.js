@@ -2,7 +2,8 @@ var pathStringList = document.location.toString().split('/');
 var isLocal = 'file' === pathStringList[0].split(':')[0];
 
 var mdPath = 'https://github.com/district10/blog/commits/master';
-var rawPath = 'https://raw.githubusercontent.com/district10/blog/master';
+// var rawPath = 'https://raw.githubusercontent.com/district10/blog/master'; // github
+var rawPath = 'https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/master'; // coding
 var basePath = 'https://github.com/district10/blog';
 
 function show() {
@@ -14,14 +15,12 @@ function show() {
 
 function dvorak4tzx( pathParts ) {
     if ( isLocal ) {
-        console.log( 'local. no need for duoshuo & zhanzhang.' );
+        // console.log( 'local. no need for duoshuo & zhanzhang.' );
         show();
         if ( document.location.toString().endsWith("index.html") ) {
             // document.location = "sitemap.html"
         }
     } else {
-        // zhanzhang();
-        // duoshuo();
     }
 
     filename = pathParts[ pathParts.length - 1 ];
@@ -29,7 +28,7 @@ function dvorak4tzx( pathParts ) {
 
     if ( 'index' === basename.substring(0, 5) || document.location.toString().endsWith('.com') ) {
         mdPath   = basePath;
-        rawPath  = mdPath;
+        rawPath  = basePath;
     } else if ( 'post-' === basename.substring(0, 5) ) {
         filename = ( '/_posts/' + basename + '.md' );
         mdPath  += filename;

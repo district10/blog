@@ -7,6 +7,106 @@ Notes | 笔记
 
 <!--...-->
 
+[Web crawler using perl - Stack Overflow](http://stackoverflow.com/questions/15696375/web-crawler-using-perl)
+
+:   ```perl
+    #!/usr/bin/env perl
+
+    use strict;
+    use warnings;
+
+    use Mojo::UserAgent;
+    use Mojo::URL;
+
+    ##open file to store links
+    open my $log, '>', 'extracted_links.txt' or die $!;
+
+    ##starting URL
+    my $base = Mojo::URL->new('http://stackoverflow.com/');
+    my @urls = $base;
+
+    my $ua = Mojo::UserAgent->new;
+    my %visited;
+    my $url_count = 0;
+
+    while (@urls) {
+      my $url = shift @urls;
+      next if exists $visited{$url};
+
+      print "$url\n";
+      print $log "$url\n";
+
+      $visited{$url} = 1;
+      $url_count++;
+
+      # find all <a> tags and act on each
+      $ua->get($url)->res->dom('a')->each(sub{
+        my $url = Mojo::URL->new($_->{href});
+        if ( $url->is_abs ) {
+          return unless $url->host eq $base->host;
+        }
+        push @urls, $url;
+      });
+
+      last if $url_count == 100;
+
+      sleep 1;
+    }
+    ```
+
+[失败的总和----读《黄河青山：黄仁宇回忆录》 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2012/05/ray_huang_s_memoir.html#comment-355234)
+
+:   如果你看到了历史的长期合理性，那么当你经历了种种失败，年老时回望自己人生，
+    才能平静地接受命运，体会其中的必然，然后静静地等待隧道的尽头开始展现一丝曙
+    光，证明那些企图逆转命运的举动，并非无谓和徒劳，一切自有内在的因果。这大概
+    就是《黄河青山》的写作目的吧。
+
+    ```python
+    print nice
+    ```
+
+[How to Create a Search Engine Friendly Website (thesitewizard.com)](http://www.thesitewizard.com/sitepromotion/search-engine-friendly.shtml)
+
+:   - https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/master/_pages/notes.md
+    - https://raw.githubusercontent.com/district10/blog/master/_pages/notes.md
+
+[list-style-type - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type)
+
+:   - one (square)
+    - two
+        + two1 (circle)
+            * two1a (disc)
+                - two1a一 (decimal-leading-zero)
+                    + what (georgian)
+                    + the fuck
+                - two1a二
+            * two1b
+        + two2
+
+---
+
+> This is my personal website. I work for Microsoft, but I don't speak for them.
+
+I always used to eat whatever I felt like, whenever I felt like. (想吃就吃？)
+
+> 与其看什么 Linux 入门书，不如好好看 5 遍 CSAPP
+
+---
+
+[Patellar reflex - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Patellar_reflex)
+
+:   <div class="tzx-fright">
+    ![Schematic representation of patellar tendon reflex (knee jerk)
+        pathway](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Patellar_tendon_reflex_arc.png/330px-Patellar_tendon_reflex_arc.png)
+    </div>
+
+    This is not a knee-jerk action (膝跳反射). I love open source and believe
+    that open source community will eventually create a truly free alternative
+    for NPM.
+
+    The patellar reflex or knee-jerk is a deep tendon reflex and is a myotatic
+    reflex.
+
 [mszep/pandoc_resume: The Markdown Resume](https://github.com/mszep/pandoc_resume)
 
 [aaronwolen/pandoc-letter: A simple letter template for Pandoc](https://github.com/aaronwolen/pandoc-letter)
@@ -616,21 +716,25 @@ endif()
 
 or you can add it yourself:
 
+```cmake
 if (COVERALLS)
     include(Coveralls)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0 -fprofile-arcs -ftest-coverage")
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -O0 -fprofile-arcs -ftest-coverage")
 endif()
+```
 
-Replace CMAKE_CXX_FLAGS  by  CMAKE_C_FLAGS  for a C project.
+Replace `CMAKE_CXX_FLAGS`{.cmake} by  `CMAKE_C_FLAGS`{.cmake} for a C project.
 
 Nothing more is needed. From the GNU GCC man:
 
+```tzx-bigquote
 --coverage
 
 This option is used to compile and link code instrumented for coverage
 analysis. The option is a synonym for -fprofile-arcs -ftest-coverage (when
 compiling) and -lgcov (when linking).
+```
 
 ---
 
@@ -675,8 +779,6 @@ Typing ?filename=yournewfile.txt at the end of the URL will pre-fill the filenam
     Refs
 
     #. [舌尖上的忘词&背单词的秘诀](http://mp.weixin.qq.com/s?__biz=MjM5NTExMTk5MA==&mid=409398412&idx=1&sn=a592c82fd0a57b15559832c983033ca8&scene=0#wechat_redirect)
-
-
 
 ```bash
 sudo dpkg -i DEB_PACKAGE # install
@@ -10159,6 +10261,10 @@ Refs
 #. &#x2611; [List of XML and HTML character entity references - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references)
 #. &#x2611; [List of emoticons - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_emoticons)
 
+See also
+
+:   - [Arrow symbol - Sets - Unicode® character table](http://unicode-table.com/en/sets/arrows-symbols/)
+
 ---
 
 Assignment Expression
@@ -10514,6 +10620,12 @@ Disallow:
 ```
 
 加了后去百度的 [Robots_站长工具_robots文件检测及生成](http://zhanzhang.baidu.com/robots) 看看生效没。
+
+提交链接，spider：
+
+  - [Google](https://www.google.com/webmasters/tools/submit-url?continue=/addurl)
+  - [百度](http://zhanzhang.baidu.com/linksubmit/url)
+  - [360 搜索](http://info.so.360.cn/site_submit.html)
 
 [^qiniu-robots-default]: 七牛默认在每个 bucket 加了一个 robots 文件，禁止所有爬虫的爬取。
 

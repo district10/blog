@@ -65,4 +65,34 @@ small.small.small.pre.code:     140 chars
 
 TODO:
     - perl: bib->md
+
+notes.md
+
+    [title1](url1)
+
+    :   note11
+
+        note12
+
+    [title2](url2)
+
+    [title3](url3)
+
+    ---
+
+    misc notes
+
+    ---
+
+    [title4](url4)
+
+reads.md
+
+    not needed.
+
+
+reads.html
+
+    * [title](url) tags
+
 -->

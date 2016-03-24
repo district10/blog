@@ -87,12 +87,14 @@ EDITS = \
 	$(DIR_POSTS)
 it:
 	$(EDITOR) -p $(EDITS)
+i: index
+index:
+	$(EDITOR) index.md
 f: footer
 footer:
 	$(EDITOR) footer.html
 k: koan
 koan:
-	$(date +%s | clip)
 	$(EDITOR) $(DIR_PAGES)/koans.md
 n: note
 note:

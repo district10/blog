@@ -60,6 +60,7 @@ gphoto2 \
 
 大致的流程：
 
+<small>
 ```bash
 # deps
 sudo apt-get install \
@@ -74,6 +75,7 @@ wget http://sourceforge.net/projects/gphoto/files/libgphoto/2.5.2/libgphoto2-2.5
 wget http://sourceforge.net/projects/gphoto/files/gphoto/2.5.2/gphoto2-2.5.2.tar.gz
 # unzip, ./configure, make, make install
 ```
+</small>
 
 ### 几个脚本
 
@@ -133,9 +135,9 @@ gphoto2 \
 gphoto2 --get-all-thumbnails
 ```
 
-![thumb_DSC_2221.jpg]
-
-[thumb_DSC_2221.jpg]: http://gnat.qiniudn.com/misc/thumb1.jpg
+<div class="tzx-fright">
+![thumb_DSC_2221.jpg](http://gnat.qiniudn.com/misc/thumb1.jpg)
+</div>
 
 自动分类存到文件夹
 
@@ -170,6 +172,7 @@ repeat capture # 持续拍照
 
 部分 [summary.txt]：
 
+<small>
 ```plain
 Camera summary:
 Manufacturer: Nikon Corporation
@@ -184,8 +187,9 @@ Display Formats: Undefined Type, Association/Directory, Script, DPOF, Apple Quic
 
 Device Capabilities:
 	File Download, File Deletion, File Upload
-	Generic Image Capture, No Open Capture, Nikon Capture 1, Nikon Capture 2, Nikon Capture 3 
+	Generic Image Capture, No Open Capture, Nikon Capture 1, Nikon Capture 2, Nikon Capture 3
 ```
+</small>
 
 [`list-all-config`{.bash}][list-all-config.txt](  <= 点击查看全部内容)
 

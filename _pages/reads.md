@@ -9,6 +9,8 @@ Reads | 斋读
 
 <!--...-->
 
+[An Algorithmic Approach to Network Location Problems. I: The p-Centers : SIAM Journal on Applied Mathematics: Vol. 37, No. 3 (Society for Industrial and Applied Mathematics)](http://epubs.siam.org/doi/abs/10.1137/0137040)
+[Facility location problem - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Facility_location_problem)
 [Core fonts for the Web - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Core_fonts_for_the_Web)
 
 [dwtkns/gdal-cheat-sheet: Cheat sheet for GDAL/OGR command-line tools](https://github.com/dwtkns/gdal-cheat-sheet)

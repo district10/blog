@@ -112,8 +112,10 @@ Search:<br>
 
 ---
 
+<small style="color:lightgray;">
 作为一个处女座，我的文字排版是考究的。^[笔记部分因为后期才集中整理，可能存在不规范的情况。]
 希望每个人都能花点时间看看 [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)。
+</small>
 
 <link rel="stylesheet" href="auto-complete.css">
 <style>
