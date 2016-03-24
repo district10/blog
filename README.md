@@ -2,9 +2,15 @@
 
 [![Build Status](https://travis-ci.org/district10/blog.svg?branch=master)](https://travis-ci.org/district10/blog)
 
-- See <http://tangzx.qiniudn.com>
-- or <http://blog.tangzhixiong.com>
-- or <http://dvorak4tzx.coding.me/>
+- See <http://tangzx.qiniudn.com>（托管在「七牛 CDN」）or <http://blog.tangzhixiong.com>（仅重定向）
+- or <http://dvorak4tzx.coding.me/>（托管在「Coding Pages」）
+
+下载
+
+- 源码
+      + Coding, master: <https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/archive/master>
+      + GitHub, master: <https://github.com/district10/blog/archive/master.zip>
+- 网页：<https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/archive/coding-pages>（国内访问更快）
 
 博客用 Markdown 写，用 travis 自动帮我把源码同步到 coding，
 并把网页放到 [coding pages](https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git)
@@ -20,11 +26,13 @@
 
 ## TODO
 
-* [ ] 优化 CSS
-* [ ] 把自己原来的文章慢慢都放到这个 blog 上
-* [ ] ~~安利！~~
-* [ ] [zenorocha/clipboard.js: Modern copy to clipboard. No Flash. Just 2kb](https://github.com/zenorocha/clipboard.js/)
-* [ ] [chunksnbits/jquery-quickfit: A quick and dirty approach to fitting text into its surrounding container.](https://github.com/chunksnbits/jquery-quickfit)
+- [ ] 优化 CSS
+- [ ] 把自己原来的文章慢慢都放到这个 blog 上
+- [ ] ~~安利！~~
+- [ ] [zenorocha/clipboard.js: Modern copy to clipboard. No Flash. Just
+      2kb](https://github.com/zenorocha/clipboard.js/)
+- [ ] [chunksnbits/jquery-quickfit: A quick and dirty approach to fitting text
+      into its surrounding container.](https://github.com/chunksnbits/jquery-quickfit)
 
 ## Warning
 

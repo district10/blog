@@ -7,6 +7,154 @@ Notes | 笔记
 
 <!--...-->
 
+[mszep/pandoc_resume: The Markdown Resume](https://github.com/mszep/pandoc_resume)
+
+[aaronwolen/pandoc-letter: A simple letter template for Pandoc](https://github.com/aaronwolen/pandoc-letter)
+
+pandoc template
+
+`pandoc -D latex > template.latex`{.bash}
+
+```tzx-plain
+# 说明：这里的排版和实际使用的时候不一样，请体会一下：
+
+
+  实际使用的格式              这里的说明格式
+------------------          -------------------
+    $if(date)$                  $if(date)
+    $date$                          $date$
+                                $endif$
+    $endif$
+
+两者间的不同，以及各自的好处。
+
+$if(author)$
+    $for(author)$$author$$sep$$endfor$
+$endif$
+
+$if(date)$                      # 可以在 Markdown 开头定义
+    $date$
+$endif$
+
+比如这是一个 Markdown 文本：
+
+        +-----------------------+
+        |                       |
+        |  ---                  |
+        |  author: tzx          |
+        |  date: 2016-03-24     |
+        |  ...                  |
+        |                       |
+        |  that's the metadata  |
+        |  header section       |
+        |  in *yaml* format     |
+        |                       |
+        +-----------------------+
+
+---
+header-includes:
+    - \usepackage{fancyhdr}
+    - \pagestyle{fancy}
+    - \fancyhead[CO,CE]{This is fancy}
+    - \fancyfoot[CO,CE]{So is this}
+    - \fancyfoot[LE,RO]{\thepage}
+
+abstract: This is a pandoc test . . .
+shiting: is 诗婷？
+...
+
+pandoc -H main.css \            # 会把 css 源码直接插入。
+    demo.md -o \
+    demo.html                   # -H FILE, --include-in-header=FILE
+
+$for(include-before)$           # -B before.txt, 文本插入, before body
+    $include-before$
+$endfor$
+
+$for(include-after)$            # -A after.txt, 文本插入, after body
+    $include-after$
+$endfor$
+
+# --self-contained 十分牛逼, 但是不能和 --mathjax 一起用. (毕竟 MathJax 太大)
+# --number-offset=NUMBER[,NUMBER,…]
+# --id-prefix=STRING, 话说我一直用 "tzx-"
+
+$if(number-sections)$           # --number-sections, 添加 1, 2, 2.3, etc
+$else$
+    \setuphead[chapter, section, subsection, subsubsection][number=no]
+$endif$
+
+$if(toc)$
+    \setupcombinedlist[content][list={$placelist$}]
+$endif$
+
+$for(header-includes)$
+    $header-includes$
+$endfor$
+
+$if(KEY)$                       # -V KEY[=VAL], --variable=KEY[:VAL]
+$endif$
+```
+
+```bash
+pandoc --standalone --template style_chmduquesne.tex \
+    --from markdown --to context \
+    -V papersize=A4 \
+    -o resume.tex resume.md;
+```
+
+---
+
+dddt
+
+:   demo.md
+      ~ ```markdown
+        Programming Languages
+
+        :   one
+
+            one1
+              ~ one1.1
+              ~ one1.2
+
+            one2
+
+        :   two
+
+        :   three
+
+        :   four
+        ```
+
+    `pandoc demo.md`{.bash}
+      ~ ```html
+        <dl>
+        <dt>Programming Languages</dt>
+        <dd><p>one</p>
+        <dl>
+        <dt>one1</dt>
+        <dd>one1.1
+        </dd>
+        <dd>one1.2
+        </dd>
+        </dl>
+        <p>one2</p>
+        </dd>
+        <dd><p>two</p>
+        </dd>
+        <dd><p>three</p>
+        </dd>
+        <dd><p>four</p>
+        </dd>
+        </dl>
+        ```
+
+```bash
+```
+
+
+---
+
 GitHub Search: `https://github.com/search?utf8=%E2%9C%93&q=.vimrc`
 
 However, despite many trials and extensive googling, I still can't figure out how to tell pandoc to use the provided template (provided as .cls file) to render the document correctly.

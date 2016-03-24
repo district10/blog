@@ -54,6 +54,7 @@ lyrics:
 	$(MAKE) -C $(DIR_LYRICS)
 
 # publish html
+html: $(DIR_PUBLISH)/Makefile
 html:
 	make -C $(DIR_PUBLISH) html
 

@@ -28,9 +28,11 @@ elementum neque eget dolor egestas fringilla.
 
 昨晚回去之前 push 了一下，到寝室发现 travis 编译失败了……早上过来一看：
 
+<small><small><small>
 ```tzx-plain
 The command "wget http://devtools.qiniu.com/qiniu-devtools-linux_amd64-current.tar.gz" failed and exited with 8 during .
 ```
+</small></small></small>
 
 What the f**k...
 

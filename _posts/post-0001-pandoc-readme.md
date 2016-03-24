@@ -2,8 +2,14 @@
 % John MacFarlane
 % 2006-10-17
 
+---
+header-includes:
+  - <style>* {color: red;}</style>
+...
+
 Pandoc User's Guide
 ===================
+
 
 > 这是 [Pandoc 的官方文档](http://pandoc.org/README.html) 在本站的效果。
 > Pandoc 是本博客生成器的 Kernel[^pandoc]。

@@ -500,6 +500,14 @@ div#TOC:hover {
     background: black;
 }
 
+h1::selection {
+    color: red;
+}
+h1::-moz-selection {
+    color: red;
+}
+
+
 .tzx {
     position: fixed;
     top: 1%;
@@ -557,6 +565,10 @@ pre.tzx-bigquote code {
 
 .tzx-anchor {
     visibility: hidden;
+}
+
+li {
+    list-style-type: square;
 }
 
 // 850px? is best for this site

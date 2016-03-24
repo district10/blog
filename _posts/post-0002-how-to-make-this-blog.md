@@ -5,8 +5,7 @@
 这是怎样一个博客生成器
 ======================
 
-哪点与众不同？ {#special}
--------------
+## 哪点与众不同？ {#special}
 
 本博客生成器用的是 Makefile、Bash 和 Pandoc，还有一点点 CSS 和 JavaScript，
 没有用其他工具和语言，不用担心自己的博客生成器更新、
@@ -26,8 +25,7 @@
 [Hexo]: https://hexo.io/zh-cn/index.html "快速、简洁且高效的博客框架"
 [Jekyll]: http://jekyllcn.com/ "Jekyll • 简单静态博客网站生成器"
 
-支持的特性
-----------
+## 支持的特性
 
 ### 增强的 Mardown
 
@@ -41,13 +39,13 @@
 
     ```markdown
     强调
-    
+
     :   * **加粗**、*斜体*，或者***一起用***
         * ~~2^^10^^ = 2014~~ ==> 2^^10^^ = 1024, H~2~O 和 $H_2O$ 都是生命之源[^water]
         * 三种连字符：1 - 1，1 -- 8，1 --- one（hyphen, en-dash，em-dash）
         * <span style="font-variant:small-caps;">Small caps</span>
         * <kbd>c-x</kbd> 在 Emacs 里指的是 Control-X
-    
+
     [^water]: 看上去不一样，其实都是“水”。
     ```
 
@@ -74,7 +72,7 @@
     3. three
         1. three-one
     	2. three-two
-	
+
 表格
 
 :   这部分的 CSS 我还没有调好，只是勉强能用。
@@ -89,11 +87,11 @@
 
 :   下面这段来自[*Terminator 2（终结者）*](http://www.imdb.com/character/ch0000933/quotes)
 
-    > The future has not been written. 
-    > There is no fate but what we make for ourselves. 
+    > The future has not been written.
+    > There is no fate but what we make for ourselves.
     > I wish I could believe that. My name is John Connor,
-    > they tried to murder me before I was born, 
-    > when I was 13 they tried again. Machines from the future. 
+    > they tried to murder me before I was born,
+    > when I was 13 they tried again. Machines from the future.
     > Terminators...
 
 章节
@@ -125,21 +123,21 @@ Markdown 中使用 HTML
 
     <div markdown="1" style="background-color:yellow;margin:10px;">
     **注**：这些文字在一个 `<div markdown="1" style="background-color:yellow;margin:10px;">`{.html} 中用 Markdown 写成
-    
+
     可以 **加粗** 也可以 *斜体*
-    
+
     甚至可以使用 Pandoc Markdown 的上下标（以及列表）：
-    
+
     * ~~2^^10^^ = 2014~~
     * 2^^10^^ = 1024
     * H~2~O 是生命之源
-    
+
     | Key | Value | Notes |
     | :------: | -------: | -------: |
     | Foo | *fool* | 第一列居中 |
     | **Bar** | barbaric | 第二列右对齐 |
-    | Cup | cap cup c u ***dummy*** | 第三列左对齐 | 
-    
+    | Cup | cap cup c u ***dummy*** | 第三列左对齐 |
+
     </div>
     </div>
 
@@ -153,17 +151,17 @@ Markdown 中使用 HTML
 
 :   #. one
     #. two
-     
+
      9)  Ninth
     10)  Tenth
     11)  Eleventh
            i. subone
           ii. subtwo
          iii. subthree
-         
+
         #. one
         #. two
-        
+
          9)  Ninth
         10)  Tenth
         11)  Eleventh
@@ -277,7 +275,7 @@ multiple lines.
 [my label 4]: /bar#special  'A title in single quotes'
 ```
 
-[my website][]  is good, even [my website] is good, even [this]. 
+[my website][]  is good, even [my website] is good, even [this].
 
 Hash Tag[^hashtag]
 
@@ -293,7 +291,7 @@ Hash Tag[^hashtag]
 [above]: #good
 
 ```markdown
-[my website][]  is good, even [my website] is good, even [this]. 
+[my website][]  is good, even [my website] is good, even [this].
 
 Hash Tag^[其实在 weibo/twitter 上才叫 hash tag，这里或许应该叫 section ref link。]
 
@@ -321,6 +319,7 @@ Hash Tag^[其实在 weibo/twitter 上才叫 hash tag，这里或许应该叫 sec
 [standalone-pic-small-one]: http://gnat.qiniudn.com/dexter.jpg
 [standalone-pic-big-one]: http://gnat.qiniudn.com/jodie-foster-math.png "本来想用 Gatsby 挥拳打 Tom 的图片"
 
+<small><small>
 ```markdown
 段落内的图片，caption 不显示： ![inline-pic-without-showing-this-text]
 
@@ -336,6 +335,7 @@ Hash Tag^[其实在 weibo/twitter 上才叫 hash tag，这里或许应该叫 sec
 [standalone-pic-small-one]: http://gnat.qiniudn.com/dexter.jpg
 [standalone-pic-big-one]: http://gnat.qiniudn.com/jodie-foster-math.png "本来想用 Gatsby 挥拳打 Tom 的图片"
 ```
+</small></small>
 
 ### 代码高亮
 
@@ -386,10 +386,16 @@ n/2,  & \text{if $n$ is even} \\
 访问 [MathJax](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) 参考更多使用方法。
 
 如果你要手工给 HTML 添加 MathJax 功能，需要在页面中加入
-`<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>`{.html}
 
-我要来一个
-----------
+<small>
+```html
+<script type="text/javascript"
+         src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+```
+</small>
+
+## 我要来一个
 
 因为我的博客生成器还在不断完善中，这部分先隐藏了。详见 [district10/blog](https://github.com/district10/blog/)。
 
@@ -445,7 +451,7 @@ Linux 上安装 git 和 pandoc 都太容易，用 `sudo apt-get install git pand
     POST_000N_OUT = $(PODIR)/post-00N-your-post-title.html    # 这是你新加的
     POST_0002_INS = $(PIDIR)/post-002-how-to-make-this-blog.md
     POST_0002_OUT = $(PODIR)/post-002-how-to-make-this-blog.html
-    
+
     # posts
     $(POST_000N_OUT): $(POST_000N_INS)                        # 这是你新加的
     	$(PANDOC_NORMAL) $^ -o $@
@@ -453,11 +459,12 @@ Linux 上安装 git 和 pandoc 都太容易，用 `sudo apt-get install git pand
     	$(PANDOC_NORMAL) $^ -o $@
     ```
 
-4. 似乎没有其它了。    
+4. 似乎没有其它了。
 
 最后（3），上传到七牛。先到 [qrsync 命令行同步工具 | 七牛云存储](http://developer.qiniu.com/docs/v6/tools/qrsync.html)
 下载命令行同步工具，下载解压后放到系统变量 `%PATH%` 里。再找个安全的位置，新建一个文件 `conf.json`：
 
+<small>
 ```json
 {
     "src":          "publish 文件夹的绝对路径",
@@ -465,6 +472,7 @@ Linux 上安装 git 和 pandoc 都太容易，用 `sudo apt-get install git pand
     "debug_level":  1
 }
 ```
+</small>
 
 其中的 `<AccessKey>`、`<SecretKey>` 从七牛网上拿到，如下图：
 
@@ -486,16 +494,13 @@ Linux 上安装 git 和 pandoc 都太容易，用 `sudo apt-get install git pand
 致谢
 ----
 
-感谢我喜欢的一些网站如
-[简书 - 交流故事，沟通想法](http://www.jianshu.com/)，
-[LOFTER（乐乎） - 每个人的理想国](http://www.lofter.com/)，
-我从上面扣了一些 CSS，
-感谢 [七牛云存储 - 移动时代的云存储服务商](http://www.qiniu.com/)，
-感谢 [Pandoc](http://pandoc.org/README.html)，感谢 GNU Make 以及 Git，感谢 GitHub、MathJax。
-我们这个时代真是太牛逼了，开源社区有这么多好用的工具。
+感谢我喜欢的一些网站如 [简书 - 交流故事，沟通想法](http://www.jianshu.com/)，
+[LOFTER（乐乎） - 每个人的理想国](http://www.lofter.com/)，我从上面扣了一些 CSS，
+感谢 [七牛云存储 - 移动时代的云存储服务商](http://www.qiniu.com/)，感谢
+[Pandoc](http://pandoc.org/README.html)，感谢 GNU Make 以及 Git，感谢 GitHub、
+MathJax。我们这个时代真是太牛逼了，开源社区有这么多好用的工具。
 
-其它
-----
+## 其它
 
 Pandoc 的引用功能这里没有介绍。本博客支持用 bib 文件（可以从 Mendeley 导出）引用参考文献。
 

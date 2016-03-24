@@ -26,6 +26,19 @@ post-0050-gis-overall.html: post-0050-gis-overall.md
 		$< \
 		-o $@
 
+reads.html: reads.md
+	pandoc \
+		$(PANDOC_OPTIONS) \
+		--toc \
+		$< \
+		-o $@
+notes.html: notes.md
+	pandoc \
+		$(PANDOC_OPTIONS) \
+		--toc \
+		$< \
+		-o $@
+
 %.html: %.md
 	pandoc \
 		$(PANDOC_OPTIONS) \
