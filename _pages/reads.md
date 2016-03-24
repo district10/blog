@@ -5,12 +5,34 @@
 Reads | 斋读
 ============
 
-<!--
-fold item
-V/\n#. ?kbzf
--->
-
 <div class="reads">
+
+<!--...-->
+
+[dwtkns/gdal-cheat-sheet: Cheat sheet for GDAL/OGR command-line tools](https://github.com/dwtkns/gdal-cheat-sheet)
+
+[pandoc-templates/default.html at master · kjhealy/pandoc-templates](https://github.com/kjhealy/pandoc-templates/blob/master/templates/default.html)
+
+
+[gpp | Random Determinism](https://randomdeterminism.wordpress.com/tag/gpp/)
+[Extension to pandoc's markdown similar to Gitbook, using a "Web template system" · Issue #2676 · jgm/pandoc](https://github.com/jgm/pandoc/issues/2676)
+
+jgm 大神说这个文件替换自己处理就好，加到 pandoc 里的话需要处理太多麻烦事。
+
+* [Viewing Your Model in Google Earth | SketchUp Knowledge Base](http://help.sketchup.com/en/article/3000149)
+* [Viewing Your Model in Google Earth | SketchUp Knowledge Base](http://help.sketchup.com/en/article/3000149)
+* [Search · osg google earth](https://github.com/search?utf8=%E2%9C%93&q=osg+google+earth&type=Repositories&ref=searchresults)
+* [djw8605 (Derek Weitzel)](https://github.com/djw8605)
+* [Intro to Importing Data into Google Earth](http://serc.carleton.edu/eyesinthesky2/week10/intro_importing_data.html)
+* [Downloading, Installing, and Authorizing SketchUp 2016 | SketchUp Knowledge Base](http://help.sketchup.com/en/setting-up)
+* [| SketchUp](http://www.sketchup.com/download/all)
+* [Blender to Google Earth Workshop](http://download.blender.org/documentation/bc2006/TempleOfKukulcan.pdf)
+* [OpenSceneGraph Max Exporter download | SourceForge.net](https://sourceforge.net/projects/osgmaxexp/?source=typ_redirect)
+* [Spatial References — osgEarth 2.4 documentation](http://docs.osgearth.org/en/latest/user/spatialreference.html?highlight=kml)
+* [Terrain Tools & Software - Commercial](http://vterrain.org/Packages/Com/)
+* [blender model to .osg .ive - 必应](http://www.bing.com/search?q=blender+model+to+.osg+.ive&go=Submit&qs=n&form=QBLH&pq=blender+model+to+.osg+.ive&sc=0-0&sp=-1&sk=&cvid=BEFE6863348F4CA1A1BAE7B52162F681)
+* [How to use Blender with OSG/VTP](http://vterrain.org/Doc/Blender/)
+* [Builds - district10/blog - Travis CI](https://travis-ci.org/district10/blog/builds)
 
 [qboxrsctl 命令行辅助工具 | 七牛云存储](http://docs.qiniu.com/tools/v6/qboxrsctl.html)
 [Free OpenSceneGraph Binary Downloads | AlphaPixel](http://openscenegraph.alphapixel.com/osg/downloads/free-openscenegraph-binary-downloads)
@@ -3026,3 +3048,8 @@ set ignorecase
     :   #. &#x2610; [equalsraf/vim-qt](https://github.com/equalsraf/vim-qt)
 
 </div>
+
+<!--
+fold item
+V/\n#. ?kbzf
+-->

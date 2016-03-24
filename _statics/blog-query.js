@@ -544,4 +544,9 @@ var tzx_links = [
         title: "背景知识的重要性",
         query: ['background', 'prerequisites', 'common-sense']
     },
+    {
+        url: '/post-0091-gis-misc.html',
+        title: "GIS 理论与技术 - 作业 1, 6, 7",
+        query: ['gis', 'homework']
+    },
 ];

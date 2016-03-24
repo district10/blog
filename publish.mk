@@ -29,6 +29,6 @@ post-0050-gis-overall.html: post-0050-gis-overall.md
 %.html: %.md
 	pandoc \
 		$(PANDOC_OPTIONS) \
-		--toc \
+		--toc --mathjax \
 		$< \
 		-o $@

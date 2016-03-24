@@ -27,16 +27,16 @@ $(DIR_PUBLISH):
 
 # copy & make
 items: $(ITEMS)
-$(DIR_PUBLISH)/footer.html: footer.html
-	cp $< $@
 $(DIR_PUBLISH)/Makefile: publish.mk
 	cp $< $@
 $(DIR_PUBLISH)/filter.pl: filter.pl
 	cp $< $@
-
-move: $(PG_POSTS) $(PG_BIBS) $(PG_PAGES)
+$(DIR_PUBLISH)/footer.html: footer.html
+	cp $< $@
 $(DIR_PUBLISH)/index.md: index.md
 	cp $< $@
+
+move: $(PG_POSTS) $(PG_BIBS) $(PG_PAGES)
 $(DIR_PUBLISH)/%.md: $(DIR_POSTS)/%.md
 	cp $< $@
 $(DIR_PUBLISH)/%.bib: $(DIR_POSTS)/%.bib
