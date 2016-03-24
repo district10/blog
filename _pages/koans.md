@@ -7,6 +7,16 @@ Koans | 呓语
 
 <div class="koans">
 
+## `1458780839`{.tzx-timestamp} 居然是七牛！
+
+昨晚回去之前 push 了一下，到寝室发现 travis 编译失败了……早上过来一看：
+
+```tzx-plain
+The command "wget http://devtools.qiniu.com/qiniu-devtools-linux_amd64-current.tar.gz" failed and exited with 8 during .
+```
+
+What the f**k...
+
 ## `1458744557`{.tzx-timestamp} 还是火狐赞！
 
 <http://whudoc.qiniudn.com/2016/tab_kit_2nd_edition-0.12.3-fx.xpi>

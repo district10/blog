@@ -141,6 +141,9 @@ song:
 t: typing
 typing:
 	$(MAKE) -C $(PAGES) typing
+	
+time:
+	date +%s | clip
 
 m: make
 make:
