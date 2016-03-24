@@ -10,6 +10,7 @@ Notes | 笔记
 [mszep/pandoc_resume: The Markdown Resume](https://github.com/mszep/pandoc_resume)
 
 [aaronwolen/pandoc-letter: A simple letter template for Pandoc](https://github.com/aaronwolen/pandoc-letter)
+[pandoc-templates/md2pdf at master · claes/pandoc-templates](https://github.com/claes/pandoc-templates/blob/master/md2pdf)
 
 pandoc template
 
