@@ -21,8 +21,10 @@ install:
 script:
   - cd ~/build/district10/blog; mkdir -p publish
   - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
-  - make items move
-  - cd publish && perl filter.pl && make && cd ..
+  - make items
+  - make move
+  - pwd
+  - cd publish && pwd && perl filter.pl && make && cd ..
   - make qiniu
 after_success:
   - cd ~/build/district10/blog; rm -Rf .git; rm -Rf publish

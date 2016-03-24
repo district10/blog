@@ -6,10 +6,13 @@ Friends | 友链
 ==============
 
 - Jinge
-  + GitHub: [JingeTu](https://github.com/jingetu)
-  + [Jinge's Blog](http://www.tujinge.com/)
+    + GitHub: [jingetu](https://github.com/jingetu)
+    + [Jinge's Blog](http://www.tujinge.com/)
 - YhL_Leo
-  + GitHub: [yhlleo](https://github.com/yhlleo)
-  + [YhL_Leo的博客 - 博客频道 - CSDN.NET](http://blog.csdn.net/yhl_leo)
+    + GitHub: [yhlleo](https://github.com/yhlleo)
+    + [YhL_Leo的博客 - 博客频道 - CSDN.NET](http://blog.csdn.net/yhl_leo)
+- Ann Lau
+    + GitHub : [xuanxuanlau](https://github.com/xuanxuanlau)
 - panqi
-  + [辛未羊的博客](http://panqiincs.github.io/)
+    + [panqiincs](http://github.com/panqiincs)
+    + [辛未羊的博客](http://panqiincs.github.io/)

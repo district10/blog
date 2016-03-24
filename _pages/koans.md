@@ -7,6 +7,23 @@ Koans | 呓语
 
 <div class="koans">
 
+## `1458787895`{.tzx-timestamp} 字体测试
+
+为毛这些米国人喜欢用法语的那个：
+
+```tzx-plain
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis dolor
+vitae tristique eleifend. Quisque non ipsum sit amet velit malesuada
+consectetur. Praesent vel facilisis leo. Sed facilisis varius orci, ut aliquam
+lorem malesuada in. Morbi nec purus at nisi fringilla varius non ut dui.
+Pellentesque bibendum sapien velit. Nulla purus justo, congue eget enim a,
+elementum sollicitudin eros. Cras porta augue ligula, vel adipiscing odio
+ullamcorper eu. In tincidunt nisi sit amet tincidunt tincidunt. Maecenas
+elementum neque eget dolor egestas fringilla.
+```
+
+在我学会法语之前可能是不会理解的。
+
 ## `1458780839`{.tzx-timestamp} 居然是七牛！
 
 昨晚回去之前 push 了一下，到寝室发现 travis 编译失败了……早上过来一看：
@@ -17,6 +34,7 @@ The command "wget http://devtools.qiniu.com/qiniu-devtools-linux_amd64-current.t
 
 What the f**k...
 
+<!--
 ## `1458744557`{.tzx-timestamp} 还是火狐赞！
 
 <http://whudoc.qiniudn.com/2016/tab_kit_2nd_edition-0.12.3-fx.xpi>
@@ -24,6 +42,7 @@ What the f**k...
 ![使用前](http://whudoc.qiniudn.com/2016/tab-before.png)
 
 ![使用后](http://whudoc.qiniudn.com/2016/tab-after.png)
+-->
 
 ## `1458738269`{.tzx-timestamp} travis 死了？
 

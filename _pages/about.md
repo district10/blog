@@ -56,3 +56,10 @@ About | 关于
 
 #. 很多摘抄并没有用引用符，计划 tag 功能弄好了再把文章标记一下作为申明。
 #. Anyway，CSS 和功能还要慢慢打磨，我自己先用着吧～
+
+<!-- Notes
+pre.code:                        80 chars
+small.pre.code:                 100 chars
+small.small.pre.code:           120 chars
+small.small.small.pre.code:     140 chars
+-->
