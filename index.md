@@ -213,8 +213,3 @@ new autoComplete({
     }
 });
 </script>
-
-<!--
-TODO:
-    - perl: bib->md
--->

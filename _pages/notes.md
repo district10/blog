@@ -7,7 +7,7 @@ Notes | 笔记
 
 <!--...-->
 
-`https://github.com/search?utf8=%E2%9C%93&q=.vimrc`
+GitHub Search: `https://github.com/search?utf8=%E2%9C%93&q=.vimrc`
 
 However, despite many trials and extensive googling, I still can't figure out how to tell pandoc to use the provided template (provided as .cls file) to render the document correctly.
 

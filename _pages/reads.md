@@ -10,10 +10,7 @@ Reads | 斋读
 <!--...-->
 
 [dwtkns/gdal-cheat-sheet: Cheat sheet for GDAL/OGR command-line tools](https://github.com/dwtkns/gdal-cheat-sheet)
-
 [pandoc-templates/default.html at master · kjhealy/pandoc-templates](https://github.com/kjhealy/pandoc-templates/blob/master/templates/default.html)
-
-
 [gpp | Random Determinism](https://randomdeterminism.wordpress.com/tag/gpp/)
 [Extension to pandoc's markdown similar to Gitbook, using a "Web template system" · Issue #2676 · jgm/pandoc](https://github.com/jgm/pandoc/issues/2676)
 

@@ -23,14 +23,12 @@ script:
   - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
   - make items
   - make move
-  - pwd
-  - cd publish && pwd && perl filter.pl && make && cd ..
+  - cd publish && perl filter.pl && make && cd ..
   - make qiniu
 after_success:
-  - cd ~/build/district10/blog; rm -Rf .git; rm -Rf publish
-  - git init; git add -A; git commit -m "pushing to coding:master, lazy me @ `date`"
-  - git remote add origin git@git.coding.net:dvorak4tzx/dvorak4tzx.git
-  - git push -u origin HEAD:master --force
+  - cd ~/build/district10/blog; rm -Rf publish
+  - git remote add coding git@git.coding.net:dvorak4tzx/dvorak4tzx.git
+  - git push -u coding HEAD:master --force
   - rm -Rf .git
   - make
   - cd publish
