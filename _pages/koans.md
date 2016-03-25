@@ -7,6 +7,17 @@ Koans | 呓语
 
 <div class="koans">
 
+## `1458898446`{.tzx-timestamp} Perl 的 `.gitignore`
+
+GitHub 上默认提供的 perl 项目的 ignore 文件居然默认 ignore 掉 Makefile……
+昨天回寝室 pull 代码就感觉哪里不对，但我没有发现……于是又加了一个 Makefile。
+
+早上过来，又 pull，又感觉哪里有点不对……但我还是没有发现……于是我就又手写了一个……
+中午吃饭完 push 了到 GitHub 上一看，没！有！Makefile！这才到 `.gitignore` 文件下
+看了一下，原来 `/Makefile` 之类的好几个，都默认 ignore！
+
+Dafuq.
+
 ## `1458787895`{.tzx-timestamp} 字体测试
 
 为毛这些米国人喜欢用法语的那个：
@@ -2143,23 +2154,26 @@ Firefox: Blocked by Content Security Policy.
 
 ---
 
-<style>
-code.tzx-timestamp {
-    color: white;
-}
-</style>
-<script src="moment.min.js"></script>
+<style> code.tzx-timestamp { color: white; } </style>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<script type="text/javascript" src="moment.min.js"></script>
 <script>
-var tss = document.getElementsByClassName('tzx-timestamp');
-for( var i = 0; i < tss.length; ++i ) {
-    var _tss = tss[i].innerHTML;
-    var ts = new Number( _tss );
-    var dt = moment(ts*1000);
-    var time = dt.format("YYYY/MM/DD HH:mm");
-    // var gdt = dt.format(); // global date time
-    var pdt = dt.format("YYYY-MM-DD HH:mm:ss"); // pretty date time
-    var tooltip = _tss + ': ' + pdt;
-    tss[i].innerHTML = time;
-    tss[i].setAttribute( 'title', tooltip );
-}
+$(function() {
+    // $( ".tzx-tabs" ).tabs();
+
+    // reformat timestamp
+    var tss = document.getElementsByClassName('tzx-timestamp');
+    for ( var i = 0; i < tss.length; ++i ) {
+        var _tss = tss[i].innerHTML;
+        var ts = new Number( _tss );
+        var dt = moment(ts*1000);
+        var time = dt.format("YYYY/MM/DD HH:mm");
+        // var gdt = dt.format(); // global date time
+        var pdt = dt.format("YYYY-MM-DD HH:mm:ss"); // pretty date time
+        var tooltip = _tss + ': ' + pdt;
+        tss[i].innerHTML = time;
+        tss[i].setAttribute( 'title', tooltip );
+    }
+});
 </script>

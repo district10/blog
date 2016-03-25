@@ -38,7 +38,8 @@ $(DIR_PUBLISH)/index.md: index.md
 
 move: $(PG_POSTS) $(PG_BIBS) $(PG_PAGES)
 $(DIR_PUBLISH)/%.md: $(DIR_POSTS)/%.md
-	cp $< $@
+	perl cp.pl $< publish/_readinglist.txt publish/_tags.txt > $@ 
+	# cp $< $@ 
 $(DIR_PUBLISH)/%.bib: $(DIR_POSTS)/%.bib
 	cp $< $@
 $(DIR_PUBLISH)/%.md: $(DIR_PAGES)/%.md
@@ -82,7 +83,6 @@ qiniu:
 # edits
 EDITS = \
 	$(DIR_PAGES)/notes.md \
-	$(DIR_PAGES)/reads.md \
 	$(DIR_PAGES)/koans.md \
 	$(DIR_POSTS)
 it:
@@ -99,9 +99,6 @@ koan:
 n: note
 note:
 	$(EDITOR) $(DIR_PAGES)/notes.md
-r: read
-read:
-	$(EDITOR) $(DIR_PAGES)/reads.md
 a: about
 about:
 	$(EDITOR) $(DIR_PAGES)/about.md

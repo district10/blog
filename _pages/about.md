@@ -28,7 +28,7 @@ About | 关于
   - 很多摘抄并没有用引用符，计划 tag 功能弄好了再把文章标记一下作为申明。
   - Anyway，CSS 和功能还要慢慢打磨，我自己先用着吧～
   - 网站托管在「七牛云存储」，但在 coding.net 上也有备份。前者可能访问更快，
-    后者更新比较及时。
+    后者更新比较及时。具体见：<https://github.com/district10/blog#intro>。
 
 ---
 
@@ -98,4 +98,13 @@ reads.html
       into its surrounding container.](https://github.com/chunksnbits/jquery-quickfit)
 - [ ] [Sitemap提交工具_站长资讯_百度站长平台](http://zhanzhang.baidu.com/wiki/44), sitemap.txt, sitemap.xml
 - [ ] [Controlling Crawling and Indexing  |  Webmasters  |  Google Developers](https://developers.google.com/webmasters/control-crawl-index/)
+
+% Reads | 斋读
+% TANG ZhiXiong
+% 2015-12-07
+
+Reads | 斋读
+============
+__
+
 -->
