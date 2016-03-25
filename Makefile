@@ -4,7 +4,6 @@ DIR_POSTS=_posts
 DIR_DOCS=_miscs/docs
 DIR_LYRICS=_miscs/lyrics
 DIR_STATICS=_statics
-DIR_TEMP=/tmp/TZX1d8cd98f00b204e
 
 MD_POSTS = $(wildcard $(DIR_POSTS)/*.md)
 PG_POSTS = $(addprefix $(DIR_PUBLISH)/, $(MD_POSTS:$(DIR_POSTS)/%=%))
@@ -39,9 +38,6 @@ $(DIR_PUBLISH)/index.md: index.md
 	cp $< $@
 
 move: $(PG_POSTS) $(PG_BIBS) $(PG_PAGES)
-$(PG_POSTS) $(PG_PAGES): $(DIR_TEMP)
-$(DIR_TMEP):
-	mkdir -p $@
 $(DIR_PUBLISH)/%.md: $(DIR_POSTS)/%.md
 	perl cp.pl $< \
 		$(DIR_PUBLISH)/$(<:$(DIR_POSTS)/%.md=%.readinglist) \
