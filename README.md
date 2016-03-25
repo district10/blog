@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/district10/blog.svg?branch=master)](https://travis-ci.org/district10/blog)
 
-**intro**
+## intro
 
 `zh`: 博客源码托管在 GitHub，用 Markdown 写，用 Makefile 管理，用 travis
 
@@ -12,13 +12,13 @@
 
 `en`: github -----> markdown ---pandoc---> html ---travis----> coding.net/qiniu.com
 
-**visit the site**
+## visit the site
 
   - <http://tangzx.qiniudn.com> (hosted on「七牛 CDN | Qiniu CDN」) or
     <http://blog.tangzhixiong.com> (仅重定向 | redirection only)
   - or <http://dvorak4tzx.coding.me/> (hosted on「Coding Pages」)
 
-**get a copy**
+## get a copy
 
   - Markdown
       + Coding, master branch:
@@ -28,7 +28,7 @@
   - html zip archive:
     <https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/archive/coding-pages>
 
-**「吐槽 | Koans」:**
+##「吐槽 | Koans」
 
   - travis 的虚拟机下载国内的七牛云，速度居然有 40M/s！速度平均 20M/s+ 的样子。
   - 但是如果装一个 texlive-full，下载 2G 多的文件，还是有点捉急……
@@ -36,12 +36,12 @@
   - 一个是我提供这样的连接，自己的七牛流量就要爆！二是，太不节能。
   - 为了节能我现在已经把编译 md-> html 优化到只处理修改了的：见 [`filter.pl`](filter.pl)。
 
-**Warning**
+## Warning
 
   - 文档不全，谨慎 fork。
   - 等一切都 set 了，再写文档再安利
 
-**Editor Configuration**
+## Editor Configuration
 
   - For Windows
       + add gvim path to `%PATH%`
@@ -49,7 +49,7 @@
   - For Linux
       - set `$EDITOR` to `vim`
 
-**Deps**
+## Deps
 
   - compile locally
       + git
@@ -61,11 +61,11 @@
   - via travis
       + no deps
 
-**Usage**
+## Usage
 
   - just `make`
 
-**Workflow**
+## Workflow
 
   - edit file
   - `make`
