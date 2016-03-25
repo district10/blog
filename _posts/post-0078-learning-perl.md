@@ -1319,7 +1319,7 @@ Match Modifiers
         print "In that case, I recommend that you go bowling.\n";
     }
 
-    # Matching Any Character: `/s`: * -> [\d\D]
+    # Matching Any Character: `/s`: * -> [\d\D], s: super star
     $_ = "I saw Barney\ndown at the bowling alley\nwith Fred\nlast night.\n";
     if (/Barney.*Fred/s) {
         print "That string mentions Fred after Barney!\n";

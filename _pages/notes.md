@@ -7,6 +7,8 @@ Notes | 笔记
 
 <!--...-->
 
+ag ignore!! gitignore!
+
 [Web crawler using perl - Stack Overflow](http://stackoverflow.com/questions/15696375/web-crawler-using-perl)
 
 :   ```perl
