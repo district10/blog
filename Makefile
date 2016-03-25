@@ -20,8 +20,9 @@ ITEMS = \
 	$(DIR_PUBLISH)/footer.html \
 	$(DIR_PUBLISH)/index.md \
 
-all: $(DIR_PUBLISH) items move statics lyrics html
+all: items move statics lyrics html
 
+item move statics lyrics html: $(DIR_PUBLISH)
 $(DIR_PUBLISH):
 	mkdir -p $(DIR_PUBLISH)
 
@@ -61,7 +62,7 @@ html:
 
 # clean
 clean:
-	rm -rf $(DIR_PUBLISH)/*
+	rm -rf $(DIR_PUBLISH)/
 
 # update
 gh: github

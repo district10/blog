@@ -6,6 +6,17 @@ Notes | 笔记
 ============
 
 <!--...-->
+[makefile - Create directories using make file - Stack Overflow](http://stackoverflow.com/questions/1950926/create-directories-using-make-file)
+
+If you're targeting a usual or "patterned" file, just use make's internal variable $(@D), that means "the directory the current target resides in" (cmp. with $@ for the target). For example,
+
+$(OUT_O_DIR)/%.o: %.cpp
+        @mkdir -p $(@D)
+        @$(CC) -c $< -o $@
+
+title: $(OBJS)
+
+
 
 [Digest::MD5 - Perl interface to the MD5 Algorithm - metacpan.org](https://metacpan.org/pod/Digest::MD5)
 

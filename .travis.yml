@@ -19,11 +19,12 @@ install:
   - git clone https://github.com/district10/aha.git
   - cd aha && make && sudo make install
 script:
-  - cd ~/build/district10/blog; mkdir -p publish
+  - cd ~/build/district10/blog;
   - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
   - make items
   - make move
-  - cd publish && ls && perl filter.pl && make && cd ..
+  - cd publish; perl filter.pl; make;
+  - cd ~/build/district10/blog;
   - make qiniu; rm conf.json;
 after_success:
   - cd ~/build/district10/blog; rm -Rf .git; rm -Rf publish; mkdir -p publish
