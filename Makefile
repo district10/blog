@@ -4,6 +4,7 @@ DIR_POSTS=_posts
 DIR_DOCS=_miscs/docs
 DIR_LYRICS=_miscs/lyrics
 DIR_STATICS=_statics
+DIR_TEMP=/tmp/TZX1d8cd98f00b204e
 
 MD_POSTS = $(wildcard $(DIR_POSTS)/*.md)
 PG_POSTS = $(addprefix $(DIR_PUBLISH)/, $(MD_POSTS:$(DIR_POSTS)/%=%))
@@ -38,15 +39,26 @@ $(DIR_PUBLISH)/index.md: index.md
 	cp $< $@
 
 move: $(PG_POSTS) $(PG_BIBS) $(PG_PAGES)
+$(PG_POSTS) $(PG_PAGES): $(DIR_TEMP)
+$(DIR_TMEP):
+	mkdir -p $@
 $(DIR_PUBLISH)/%.md: $(DIR_POSTS)/%.md
-	perl cp.pl $< publish/_readinglist.txt publish/_tags.txt > $@ 
-	# cp $< $@ 
+	perl cp.pl $< \
+		$(DIR_PUBLISH)/$(<:$(DIR_POSTS)/%.md=%.readinglist) \
+		$(DIR_PUBLISH)/$(<:$(DIR_POSTS)/%.md=%.tags) > \
+		$@
 $(DIR_PUBLISH)/%.bib: $(DIR_POSTS)/%.bib
 	cp $< $@
 $(DIR_PUBLISH)/%.md: $(DIR_PAGES)/%.md
-	cp $< $@
+	perl cp.pl $< \
+		$(DIR_PUBLISH)/$(<:$(DIR_PAGES)/%.md=%.readinglist) \
+		$(DIR_PUBLISH)/$(<:$(DIR_PAGES)/%.md=%.tags) > \
+		$@
 $(DIR_PUBLISH)/%.md: $(DIR_DOCS)/%.md
-	cp $< $@
+	perl cp.pl $< \
+		$(DIR_PUBLISH)/$(<:$(DIR_DOCS)/%.md=%.readinglist) \
+		$(DIR_PUBLISH)/$(<:$(DIR_DOCS)/%.md=%.tags) > \
+		$@
 
 statics:
 	$(MAKE) -C $(DIR_STATICS)
@@ -134,17 +146,15 @@ douban:
 	$(EDITOR) $(DIR_PAGES)/douban.md
 fun:
 	$(MAKE) -C $(PAGES) fun
-
 s: song
 song:
 	$(MAKE) -C $(DIR_LYRICS) song
-
 t: typing
 typing:
 	$(MAKE) -C $(PAGES) typing
 	
 time:
-	date +%s | clip
+	date +%s | clip 2>/dev/null || date +%s | xclip -selection clipboard
 
 m: make
 make:
