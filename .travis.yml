@@ -23,7 +23,9 @@ script:
   - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
   - make items
   - make move
-  - cd publish; perl filter.pl; make;
+  - cd publish; pwd;
+  - pwd && perl filter.pl; 
+  - pwd && make;
   - cd ~/build/district10/blog;
   - make qiniu; rm conf.json;
 after_success:
