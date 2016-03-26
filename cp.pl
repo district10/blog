@@ -24,7 +24,7 @@ open TAGS, '>', $ARGV[2]; # output tags
 my $filename = $ARGV[0];
 $filename =~ s:.*[/\\]::;
 $filename =~ s:.md$:.html:;
-my $filenamehash = &md5id($filename);
+my $filenamehash = ""; # &md5id($filename);
 my $curAnchor;
 my $level = 0;
 my $codeId = 0;
@@ -95,8 +95,7 @@ while (<IMD>) {
     }
 
     # one reading material
-    if (/^\[.*?\]\((.*)\)(.*)$/) {
-        $line =~ s/($2)//;
+    if (/^\[.*?\]\((.*)\).*$/) {
         $line =~ s/\r?\n?$//;
         my $mdurl = $line;
         $mdurl =~ s/^\s+|\s+$//g;
@@ -109,11 +108,14 @@ while (<IMD>) {
     }
 
     # assume $level = 0;
-    if (/^:?\s*(```)(.*)$/) {
+    if ( /^:?\s*(```)(.*)$/ ||
+         /^\s*~ (```)(.*)$/ )
+    {
         ++$level;
-        $line =~ s/${1}.*\r?\n?$/~~~/;
-        my @options = ();
         my $lang = ${2} // "";
+        $line =~ s/${1}.*\r?\n?$/~~~/;
+        $lang =~ s/\r?\n?$//;
+        my @options = ();
         if ($lang) { $lang = '.' . $lang; }
         my $id = '#auto-listing-' . ++$codeId;
         push @options, $lang;
@@ -143,7 +145,7 @@ while (<IMD>) {
         next;
     }
 
-    if (/^\s*(<small>\s*)+\s*$/) {
+    if (/^:?\s*(<small>\s*)+\s*$/) {
         $line =~ s/\r?\n?$//;
         print $line . "\n";
         print "\n";

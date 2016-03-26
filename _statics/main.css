@@ -220,7 +220,7 @@ a.external:after {
 
 a[href^="http://"]:not([href*="mydomain.com"]):before{ }
 
-a { padding-right: 0.1em; }
+// a { padding-right: 0.1em; }
 a:after { color: lightgray; font-size: 60%; }
 
 a[href*="wikipedia.org"]:after          { content: "「維」"; }

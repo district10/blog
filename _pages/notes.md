@@ -8,45 +8,36 @@ Notes | 笔记
 <!--...-->
 [makefile - Create directories using make file - Stack Overflow](http://stackoverflow.com/questions/1950926/create-directories-using-make-file)
 
-If you're targeting a usual or "patterned" file, just use make's internal variable $(@D), that means "the directory the current target resides in" (cmp. with $@ for the target). For example,
+:   If you're targeting a usual or "patterned" file, just use make's internal
+    variable `$(@D)`, that means "the directory the current target resides in"
+    (*cmp.* with `$@` for the target). For example,
 
-$(OUT_O_DIR)/%.o: %.cpp
-        @mkdir -p $(@D)
-        @$(CC) -c $< -o $@
+    ```makefile
+    $(OUT_O_DIR)/%.o: %.cpp
+            @mkdir -p $(@D)
+            @$(CC) -c $< -o $@
 
-title: $(OBJS)
+    title: $(OBJS)
+    ```
 
-<#>(@nice @good @great)
+    <#>(@makefile @target @deps)
 
 [Digest::MD5 - Perl interface to the MD5 Algorithm - metacpan.org](https://metacpan.org/pod/Digest::MD5)
 
-
-[readed 1](https://raw.githubusercontent.com/district10/blog/master/_pages/notes.md) `@`{.tzx-anchor #23667c0819736b64cf53517850b952c1}
-
-:   shit
-
-[readed 1](https://raw.githubusercontent.com/district10/blog/master/_pages/notes.md) `@`{.tzx-anchor #b952c1}
-
-:   good
-
-[readed 1](https://raw.githubusercontent.com/district10/blog/master/_pages/notes.md) `@`{.tzx-anchor #b952oooooooooooooooooooooooooooooooooooooooooooooooooc1}
-
-:   that's my note.
-
-    note continues.
+---
 
 - `git@github.com:user/repo.git`
 - `git@github.com:user/repo.wiki.git`
 - `https://github.com/user/repo`
 - `https://github.com/user/repo/wiki`
 
----
-
 我的两个域名都在 [DNSPod 控制台](https://www.dnspod.cn/console/dns) 管理。QQ 登录即可。
 
----
+`ag`{.bash} 会默认 ignore 掉 `.gitignore` 的内容。
 
-ag ignore!! gitignore!
+<#>(@git @ag @ignore)
+
+---
 
 [Web crawler using perl - Stack Overflow](http://stackoverflow.com/questions/15696375/web-crawler-using-perl)
 
@@ -102,10 +93,6 @@ ag ignore!! gitignore!
     光，证明那些企图逆转命运的举动，并非无谓和徒劳，一切自有内在的因果。这大概
     就是《黄河青山》的写作目的吧。
 
-    ```python
-    print nice
-    ```
-
 [How to Create a Search Engine Friendly Website (thesitewizard.com)](http://www.thesitewizard.com/sitepromotion/search-engine-friendly.shtml)
 
 :   - https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/master/_pages/notes.md
@@ -124,15 +111,13 @@ ag ignore!! gitignore!
             * two1b
         + two2
 
-    <#>(@nice @good @great)
+    <#>(@css @list-style-type)
 
 ---
 
-> This is my personal website. I work for Microsoft, but I don't speak for them.
-
-I always used to eat whatever I felt like, whenever I felt like. (想吃就吃？)
-
-> 与其看什么 Linux 入门书，不如好好看 5 遍 CSAPP
+- This is my personal website. I work for Microsoft, but I don't speak for them.
+- I always used to eat whatever I felt like, whenever I felt like. (想吃就吃？)
+- 与其看什么 Linux 入门书，不如好好看 5 遍 CSAPP
 
 ---
 
@@ -153,99 +138,100 @@ I always used to eat whatever I felt like, whenever I felt like. (想吃就吃�
 [mszep/pandoc_resume: The Markdown Resume](https://github.com/mszep/pandoc_resume)
 
 [aaronwolen/pandoc-letter: A simple letter template for Pandoc](https://github.com/aaronwolen/pandoc-letter)
+
 [pandoc-templates/md2pdf at master · claes/pandoc-templates](https://github.com/claes/pandoc-templates/blob/master/md2pdf)
 
-pandoc template
+:   pandoc template
 
-`pandoc -D latex > template.latex`{.bash}
+    `pandoc -D latex > template.latex`{.bash}
 
-```tzx-plain
-# 说明：这里的排版和实际使用的时候不一样，请体会一下：
+    ```tzx-plain
+    # 说明：这里的排版和实际使用的时候不一样，请体会一下：
 
 
-  实际使用的格式              这里的说明格式
-------------------          -------------------
-    $if(date)$                  $if(date)
-    $date$                          $date$
-                                $endif$
+      实际使用的格式              这里的说明格式
+    ------------------          -------------------
+        $if(date)$                  $if(date)
+        $date$                          $date$
+                                    $endif$
+        $endif$
+
+    两者间的不同，以及各自的好处。
+
+    $if(author)$
+        $for(author)$$author$$sep$$endfor$
     $endif$
 
-两者间的不同，以及各自的好处。
+    $if(date)$                      # 可以在 Markdown 开头定义
+        $date$
+    $endif$
 
-$if(author)$
-    $for(author)$$author$$sep$$endfor$
-$endif$
+    比如这是一个 Markdown 文本：
 
-$if(date)$                      # 可以在 Markdown 开头定义
-    $date$
-$endif$
+            +-----------------------+
+            |                       |
+            |  ---                  |
+            |  author: tzx          |
+            |  date: 2016-03-24     |
+            |  ...                  |
+            |                       |
+            |  that's the metadata  |
+            |  header section       |
+            |  in *yaml* format     |
+            |                       |
+            +-----------------------+
 
-比如这是一个 Markdown 文本：
+    ---
+    header-includes:
+        - \usepackage{fancyhdr}
+        - \pagestyle{fancy}
+        - \fancyhead[CO,CE]{This is fancy}
+        - \fancyfoot[CO,CE]{So is this}
+        - \fancyfoot[LE,RO]{\thepage}
 
-        +-----------------------+
-        |                       |
-        |  ---                  |
-        |  author: tzx          |
-        |  date: 2016-03-24     |
-        |  ...                  |
-        |                       |
-        |  that's the metadata  |
-        |  header section       |
-        |  in *yaml* format     |
-        |                       |
-        +-----------------------+
+    abstract: This is a pandoc test . . .
+    shiting: is 诗婷？
+    ...
 
----
-header-includes:
-    - \usepackage{fancyhdr}
-    - \pagestyle{fancy}
-    - \fancyhead[CO,CE]{This is fancy}
-    - \fancyfoot[CO,CE]{So is this}
-    - \fancyfoot[LE,RO]{\thepage}
+    pandoc -H main.css \            # 会把 css 源码直接插入。
+        demo.md -o \
+        demo.html                   # -H FILE, --include-in-header=FILE
 
-abstract: This is a pandoc test . . .
-shiting: is 诗婷？
-...
+    $for(include-before)$           # -B before.txt, 文本插入, before body
+        $include-before$
+    $endfor$
 
-pandoc -H main.css \            # 会把 css 源码直接插入。
-    demo.md -o \
-    demo.html                   # -H FILE, --include-in-header=FILE
+    $for(include-after)$            # -A after.txt, 文本插入, after body
+        $include-after$
+    $endfor$
 
-$for(include-before)$           # -B before.txt, 文本插入, before body
-    $include-before$
-$endfor$
+    # --self-contained 十分牛逼, 但是不能和 --mathjax 一起用. (毕竟 MathJax 太大)
+    # --number-offset=NUMBER[,NUMBER,…]
+    # --id-prefix=STRING, 话说我一直用 "tzx-"
 
-$for(include-after)$            # -A after.txt, 文本插入, after body
-    $include-after$
-$endfor$
+    $if(number-sections)$           # --number-sections, 添加 1, 2, 2.3, etc
+    $else$
+        \setuphead[chapter, section, subsection, subsubsection][number=no]
+    $endif$
 
-# --self-contained 十分牛逼, 但是不能和 --mathjax 一起用. (毕竟 MathJax 太大)
-# --number-offset=NUMBER[,NUMBER,…]
-# --id-prefix=STRING, 话说我一直用 "tzx-"
+    $if(toc)$
+        \setupcombinedlist[content][list={$placelist$}]
+    $endif$
 
-$if(number-sections)$           # --number-sections, 添加 1, 2, 2.3, etc
-$else$
-    \setuphead[chapter, section, subsection, subsubsection][number=no]
-$endif$
+    $for(header-includes)$
+        $header-includes$
+    $endfor$
 
-$if(toc)$
-    \setupcombinedlist[content][list={$placelist$}]
-$endif$
+    $if(KEY)$                       # -V KEY[=VAL], --variable=KEY[:VAL]
+    $endif$
+    ```
 
-$for(header-includes)$
-    $header-includes$
-$endfor$
-
-$if(KEY)$                       # -V KEY[=VAL], --variable=KEY[:VAL]
-$endif$
-```
-
-```bash
-pandoc --standalone --template style_chmduquesne.tex \
-    --from markdown --to context \
-    -V papersize=A4 \
-    -o resume.tex resume.md;
-```
+    ```bash
+    pandoc --standalone --template style_chmduquesne.tex \
+        --from markdown --to context \
+        -V papersize=A4 \
+        -o resume.tex resume.md;
+    ```
 
 ---
 
@@ -292,397 +278,396 @@ dddt
         </dd>
         </dl>
         ```
-
-```bash
-```
-
+    <#>(@dd @dt @html)
 
 ---
 
-GitHub Search: `https://github.com/search?utf8=%E2%9C%93&q=.vimrc`
-
-However, despite many trials and extensive googling, I still can't figure out how to tell pandoc to use the provided template (provided as .cls file) to render the document correctly.
+- GitHub Search: `https://github.com/search?utf8=%E2%9C%93&q=.vimrc`
+- However, despite many trials and extensive googling, I still can't figure out
+  how to tell pandoc to use the provided template (provided as `.cls` file) to
+  render the document correctly.
 
 ---
 
 [Simple Pandoc latex.template with comments](https://gist.github.com/bosmacs/1052004)
 
-```latex
-%!TEX TS-program = xelatex
-\documentclass[12pt]{scrartcl}
-
-% The declaration of the document class:
-
-% The second line here, i.e.
-% \documentclass[12pt]{scrartcl}
-% is a standard LaTeX document class declaration:
-% we say what kind of document we are making in curly brackets,
-% and specify any options in square brackets.
-
-% (The previous line is a pseudo-comment, declaring that we will
-% use the special XeTeX machinery for its more extensive font list
-% and its use of unicode;
-% in general, LaTeX 'comments' like this one
-%  begin with % and end with a linebreak.)
-
-% Note that there we have nothing in the nature of a template;
-% it's just a standard bit of LaTeX pandoc will copy unaltered into the
-% LaTeX file it is writing.  But suppose you wrote something
-% more akin to the corresponding line in Pandoc's default
-% latex.template file, say:
+:   <small>
+    ```latex
+    %!TEX TS-program = xelatex
+    \documentclass[12pt]{scrartcl}
+
+    % The declaration of the document class:
+
+    % The second line here, i.e.
+    % \documentclass[12pt]{scrartcl}
+    % is a standard LaTeX document class declaration:
+    % we say what kind of document we are making in curly brackets,
+    % and specify any options in square brackets.
+
+    % (The previous line is a pseudo-comment, declaring that we will
+    % use the special XeTeX machinery for its more extensive font list
+    % and its use of unicode;
+    % in general, LaTeX 'comments' like this one
+    %  begin with % and end with a linebreak.)
+
+    % Note that there we have nothing in the nature of a template;
+    % it's just a standard bit of LaTeX pandoc will copy unaltered into the
+    % LaTeX file it is writing.  But suppose you wrote something
+    % more akin to the corresponding line in Pandoc's default
+    % latex.template file, say:
 
-% \documentclass$if(fontsize)$[$fontsize$]$endif${scrartcl}
-
-% then you would have invented a 'variable', fontsize,
-% and could write things like
-
-% `markdown2pdf my.txt --xetex --variable=fontsize:12pt -o my.pdf` or
-% `pandoc -r markdown -w html my.txt -s --xetex --variable=fontsize:24pt -o my.tex`.
+    % \documentclass$if(fontsize)$[$fontsize$]$endif${scrartcl}
+
+    % then you would have invented a 'variable', fontsize,
+    % and could write things like
+
+    % `markdown2pdf my.txt --xetex --variable=fontsize:12pt -o my.pdf` or
+    % `pandoc -r markdown -w html my.txt -s --xetex --variable=fontsize:24pt -o my.tex`.
 
-% If we specified --variable-fontsize:12, then template substitution
-% would yield a LaTeX document beginning
-% \documentclass[12pt]{scrarcl}
-% which is just what we said anyway.
-% But we could also specify a different fontsize.
+    % If we specified --variable-fontsize:12, then template substitution
+    % would yield a LaTeX document beginning
+    % \documentclass[12pt]{scrarcl}
+    % which is just what we said anyway.
+    % But we could also specify a different fontsize.
 
-% I don't use this `--variable=....`functionality myself;
-% I have a couple of basic templates I call with
-% `--template=whatever.template` which I can also
-% easily inspect to adjust things like font size as I please.
+    % I don't use this `--variable=....`functionality myself;
+    % I have a couple of basic templates I call with
+    % `--template=whatever.template` which I can also
+    % easily inspect to adjust things like font size as I please.
 
-% While we are discussing the declaration of the document class...
-% here's an alternative command for two column landscape,
-% not bad for some purposes. (If you strike the word 'landscape'
-% you will have two narrow newspaperlike
-% columns; scientists like that, because irrationality must
-% show itself somewhere):
-%\documentclass[12pt,twocolumn,landscape]{scrartcl}
-% Columns are too close together in LaTeX so we add this
-% `columnsep` command:
-%\setlength{\columnsep}{.5in}
+    % While we are discussing the declaration of the document class...
+    % here's an alternative command for two column landscape,
+    % not bad for some purposes. (If you strike the word 'landscape'
+    % you will have two narrow newspaperlike
+    % columns; scientists like that, because irrationality must
+    % show itself somewhere):
+    %\documentclass[12pt,twocolumn,landscape]{scrartcl}
+    % Columns are too close together in LaTeX so we add this
+    % `columnsep` command:
+    %\setlength{\columnsep}{.5in}
 
 
-% I use the special 'komascript' article class "scrartcl"
-% reasons I can't entirely remember; I'm not sure it's that great.
-% One reason is the unimportant one that, like many classes,
-% it allows very big fonts which are convenient for booklet printing
-% in the idiotic American way by shrinking letterpaper pages.
+    % I use the special 'komascript' article class "scrartcl"
+    % reasons I can't entirely remember; I'm not sure it's that great.
+    % One reason is the unimportant one that, like many classes,
+    % it allows very big fonts which are convenient for booklet printing
+    % in the idiotic American way by shrinking letterpaper pages.
 
-% the standard minimal LaTeX 'article' class declaration would be something like:
+    % the standard minimal LaTeX 'article' class declaration would be something like:
 
-% \documentclass[12pt]{article}
+    % \documentclass[12pt]{article}
 
-% or for big type:
+    % or for big type:
 
-% \documentclass[24pt]{extarticle}
+    % \documentclass[24pt]{extarticle}
 
-% but these restrict you to old-fashioned LaTeX materials.
-% Note that Kieran Healy uses the swank 'Memoir' class,
-% \documentclass[11pt,article,oneside]{memoir}
-% which might be worth a look.
+    % but these restrict you to old-fashioned LaTeX materials.
+    % Note that Kieran Healy uses the swank 'Memoir' class,
+    % \documentclass[11pt,article,oneside]{memoir}
+    % which might be worth a look.
 
-% Enough about the document class.
+    % Enough about the document class.
 
-% -- We are in swanky unicode, XeTeX land, and must now import these packages:
-\usepackage{fontspec,xltxtra,xunicode}
-% fontspec means we can specify pretty much any font.
-% Because we are using XeTeX material,
-% this template needs to be called with the `--xetex` flag.
-
+    % -- We are in swanky unicode, XeTeX land, and must now import these packages:
+    \usepackage{fontspec,xltxtra,xunicode}
+    % fontspec means we can specify pretty much any font.
+    % Because we are using XeTeX material,
+    % this template needs to be called with the `--xetex` flag.
+
 
-% Symbols:
-% Pandoc imports the extensive `amsmath` collection of symbols
-% for typesetting ordinary math.
-\usepackage{amsmath}
-% if you use exotic symbols you need to import specific packages, eg. for
-% electrical engineering diagrams, musical notation, exotic currency symbols,
-% the unspeakable rites of freemasonry etc.
-
-
-% `babel`:
-% The `babel` package, among other things, lets you determine what
-% language you are using in a given stretch of text, so that typesetting
-% will go well. Here we specify that mostly, we are speaking English:
-\usepackage[english]{babel}
-
-
-% Margins, etc:
-% the `geometry` package makes for convenient adjusting of margins, which is what
-% you asked about.  Of course it can do much more, even make coffee for you:
-\usepackage{geometry}
-\geometry{verbose,letterpaper,tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=3cm}
-% so if you just keep a copy of this template in the directory you are working in, you
-% can adjust the margins by going into this file and messing with the margins.
-% the syntax is very unforgiving, but permits 3cm and 2.5in and some other things.
-
-
-% Font:
-% Here I set my main font, which is an Apple Corporation Exclusive, golly.
-
-% \setmainfont{Hoefler Text}
-% \setromanfont[Mapping=tex-text,Contextuals={NoWordInitial,NoWordFinal,NoLineInitial,NoLineFinal},Ligatures={NoCommon}]{Hoefler Text}
-
-% Hoefler Text is okay, but note the long discussion of 'contextuals' which is necessary to cools off
-% some of its show-offy properties. (You can make your essay look like the
-% Declaration of Independence by specifying e.g. Ligatures={Rare} )
-% If you have a copy you might try it; as it is
-% I will comment it out and supply something more certain to be around:
-
-\setmainfont{Times Roman}
-
-% Properly one should specify a sanserif font and a monospace font
-% see e.g. the example of Kieran Healy:
-% \setromanfont[Mapping=tex-text,Numbers=OldStyle]{Minion Pro}
-% \setsansfont[Mapping=tex-text]{Minion Pro}
-% \setmonofont[Mapping=tex-text,Scale=0.8]{Pragmata}
+    % Symbols:
+    % Pandoc imports the extensive `amsmath` collection of symbols
+    % for typesetting ordinary math.
+    \usepackage{amsmath}
+    % if you use exotic symbols you need to import specific packages, eg. for
+    % electrical engineering diagrams, musical notation, exotic currency symbols,
+    % the unspeakable rites of freemasonry etc.
+
+
+    % `babel`:
+    % The `babel` package, among other things, lets you determine what
+    % language you are using in a given stretch of text, so that typesetting
+    % will go well. Here we specify that mostly, we are speaking English:
+    \usepackage[english]{babel}
+
+
+    % Margins, etc:
+    % the `geometry` package makes for convenient adjusting of margins, which is what
+    % you asked about.  Of course it can do much more, even make coffee for you:
+    \usepackage{geometry}
+    \geometry{verbose,letterpaper,tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=3cm}
+    % so if you just keep a copy of this template in the directory you are working in, you
+    % can adjust the margins by going into this file and messing with the margins.
+    % the syntax is very unforgiving, but permits 3cm and 2.5in and some other things.
+
+
+    % Font:
+    % Here I set my main font, which is an Apple Corporation Exclusive, golly.
+
+    % \setmainfont{Hoefler Text}
+    % \setromanfont[Mapping=tex-text,Contextuals={NoWordInitial,NoWordFinal,NoLineInitial,NoLineFinal},Ligatures={NoCommon}]{Hoefler Text}
+
+    % Hoefler Text is okay, but note the long discussion of 'contextuals' which is necessary to cools off
+    % some of its show-offy properties. (You can make your essay look like the
+    % Declaration of Independence by specifying e.g. Ligatures={Rare} )
+    % If you have a copy you might try it; as it is
+    % I will comment it out and supply something more certain to be around:
+
+    \setmainfont{Times Roman}
+
+    % Properly one should specify a sanserif font and a monospace font
+    % see e.g. the example of Kieran Healy:
+    % \setromanfont[Mapping=tex-text,Numbers=OldStyle]{Minion Pro}
+    % \setsansfont[Mapping=tex-text]{Minion Pro}
+    % \setmonofont[Mapping=tex-text,Scale=0.8]{Pragmata}
+
+    % But I hate sanserif fonts, and anyway there are defaults.
+
+
+
+    % Heading styles:
+    % These commands keep the koma system from making stupid sans serif section headings
+    \setkomafont{title}{\rmfamily\mdseries\upshape\normalsize}
+    \setkomafont{sectioning}{\rmfamily\mdseries\upshape\normalsize}
+    \setkomafont{descriptionlabel}{\rmfamily\mdseries\upshape\normalsize}
+
 
-% But I hate sanserif fonts, and anyway there are defaults.
-
-
-
-% Heading styles:
-% These commands keep the koma system from making stupid sans serif section headings
-\setkomafont{title}{\rmfamily\mdseries\upshape\normalsize}
-\setkomafont{sectioning}{\rmfamily\mdseries\upshape\normalsize}
-\setkomafont{descriptionlabel}{\rmfamily\mdseries\upshape\normalsize}
-
-
-
-% I'm puzzled why I have this foonote speciality,
-% I wonder if it's part of my problem I've been having, but wont look
-% into it now.
-\usepackage[flushmargin]{footmisc}
-% \usepackage[hang,flushmargin]{footmisc}
-
-
-% So much for my personal template.
-
-
-% Everything that follows is copied from the pandoc default template:
-% I will interpolate a few comments, the comments that are in
-% the default template will be marked % --
-
-% Paragraph format:
-% Pandoc prefers unindented paragraphs in the European style:
-\setlength{\parindent}{0pt}
-%  ... with paragraph breaks marked by a slight lengthening of
-% the space between paragraphs:
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-
-% Page format:
-\pagestyle{plain}
-% The default `plain` pagestyle just numbers the pages,
-% whereas
-% \pagestyle{empty}
-% would give you no numbering.
-% After one-million man-years of macro-composition,
-% there are also fancy pagestyles with much wilder options
-% for headers and footers, of course.
-
-% Footnotes
-% if you have code in your footnotes, the million macro march
-% kind of bumps into itself.
-% Pandoc, having just rendered your text into LaTeX,
-% knows whether the 'variable' `verbatim-in-note` is True, and
-% If it is, it asks for a  LaTeX package that solves the dilemma:
-$if(verbatim-in-note)$
-\usepackage{fancyvrb}
-$endif$
-
-% Lists formatting:
-% note sure what 'fancy enums' are; something to do with lists,
-% as the further comment suggests:
-$if(fancy-enums)$
-% -- Redefine labelwidth for lists; otherwise, the enumerate package will cause
-% -- markers to extend beyond the left margin.
-\makeatletter\AtBeginDocument{%
-  \renewcommand{\@listi}
-    {\setlength{\labelwidth}{4em}}
-}\makeatother
-\usepackage{enumerate}
-$endif$
-
-
-% Table formatting:
-% What if you make a table? -- Pandoc knows, of course, and
-% then declares that its  variable `table` is True and
-% imports a table package suitable to its pleasantly simple tables.
-% Needless to say infinitely   complicated tables are possible in
-% LaTeX with suitable packages. We are spared the temptation:
-
-$if(tables)$
-\usepackage{array}
-
-% Continuing on the topic of tables ... (we havent reached `endif`).
-% The commented out line below is in the default pandoc  latex.template.
-% Some unpleasantness with table formatting must be corrected.
-
-% -- This is needed because raggedright in table elements redefines \\:
-\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
-\let\PBS=\PreserveBackslash
-
-$endif$
-
-
-% Subscripts:
-% Pandoc remembers whether you used subscripts, assigning True to
-% its `subscript` variable
-% It then needs to adopt a default with an incantation like this:
-$if(subscript)$
-\newcommand{\textsubscr}[1]{\ensuremath{_{\scriptsize\textrm{#1}}}}
-$endif$
-
-
-% Web-style links:
-
-% markdown inclines us to use links, since our texts can be made into html.
-% Why not have clickable blue links even in
-% learned, scientific, religious, juridical, poetical and other suchlike texts?
-% Never mind that they have been proven to destroy the nervous system!
-
-% First, what about the fact that links like http://example.com are
-% technically code and thus must not be broken across lines?
-% [breaklinks=true] to the rescue!
-
-% Nowadays LaTeX can handle all of this with another half million macros:
-
-\usepackage[breaklinks=true]{hyperref}
-\hypersetup{colorlinks,%
-citecolor=blue,%
-filecolor=blue,%
-linkcolor=blue,%
-urlcolor=blue}
-$if(url)$
-\usepackage{url}
-$endif$
-
-
-
-% Images.
-% In ye olde LaTeX one could only import a limited range of image
-% types, e.g. the forgotten .eps files.  Or else one simply drew the image with suitable
-% commands and drawing packages.  Today we want to import .jpg files we make with
-% our smart phones or whatever:
-
-$if(graphics)$
-\usepackage{graphicx}
-% -- We will generate all images so they have a width \maxwidth. This means
-% -- that they will get their normal width if they fit onto the page, but
-% -- are scaled down if they would overflow the margins.
-\makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
-\else\Gin@nat@width\fi}
-\makeatother
-\let\Oldincludegraphics\includegraphics
-\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
-$endif$
-
-
-
-% Section numbering.
-% Here again is a variable you can specify on the commandline
-% `markdown2pdf my.txt --number-sections --xetex --template=/wherever/this/is -o my.pdf`
-$if(numbersections)$
-$else$
-\setcounter{secnumdepth}{0}
-$endif$
-
-% Footnotes:
-% Wait, didn't we already discuss the crisis of code in footnotes?
-% Evidently the order of unfolding of macros required that
-% we import a package to deal with them earlier
-% and issue a command it defines now. (Or maybe that's not the reason;
-% very often the order does matter as the insane system of macro expansion
-% must take place by stages.)
-$if(verbatim-in-note)$
-\VerbatimFootnotes % -- allows verbatim text in footnotes
-$endif$
-
-% Other stuff you specify on the command line:
-% You can include stuff for the header from a file specified on the command line;
-% I've never done this, but that stuff will go here:
-$for(header-includes)$
-$header-includes$
-$endfor$
-
-% Title, authors, date.
-% If you specified title authors and date at the start of
-% your pandoc-markdown file, pandoc knows the 'values' of the
-% variables: title authors date and fills them in.
-
-$if(title)$
-\title{$title$}
-$endif$
-\author{$for(author)$$author$$sep$\\$endfor$}
-$if(date)$
-\date{$date$}
-$endif$
-
-% At last:
-% The document itself!:
-
-% After filling in all these blanks above, or erasing them
-% where they are not needed, Pandoc has finished writing the
-% famous LaTeX *preamble* for your document.
-% Now comes the all-important command \begin{document}
-% which as you can see, will be paired with an \end{document} at the end.
-% Pandoc knows whether you have a title, and has already
-% specified what it is; if so, it demands that the title be rendered.
-% Pandoc knows whether you want a table of contents, you
-% specify this on the command line.
-% Then, after fiddling with alignments, there comes the real
-% business: pandoc slaps its rendering of your text in the place of
-% the variable `body`
-% It then concludes the document it has been writing.
-
-\begin{document}
-
-
-$if(title)$
-\maketitle
-$endif$
-
-$if(toc)$
-\tableofcontents
-
-$endif$
-
-
-$if(alignment)$
-\begin{$alignment$}
-$endif$
-
-$body$
-
-%$if(alignment)$
-\end{$alignment$}
-$endif$
-
-
-\end{document}
-```
-
-That little nugget (`['nʌɡɪt]`, 天然金块，矿块；珍闻，珍品) of information just
-saved my day.
-
+
+    % I'm puzzled why I have this foonote speciality,
+    % I wonder if it's part of my problem I've been having, but wont look
+    % into it now.
+    \usepackage[flushmargin]{footmisc}
+    % \usepackage[hang,flushmargin]{footmisc}
+
+
+    % So much for my personal template.
+
+
+    % Everything that follows is copied from the pandoc default template:
+    % I will interpolate a few comments, the comments that are in
+    % the default template will be marked % --
+
+    % Paragraph format:
+    % Pandoc prefers unindented paragraphs in the European style:
+    \setlength{\parindent}{0pt}
+    %  ... with paragraph breaks marked by a slight lengthening of
+    % the space between paragraphs:
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}
+
+    % Page format:
+    \pagestyle{plain}
+    % The default `plain` pagestyle just numbers the pages,
+    % whereas
+    % \pagestyle{empty}
+    % would give you no numbering.
+    % After one-million man-years of macro-composition,
+    % there are also fancy pagestyles with much wilder options
+    % for headers and footers, of course.
+
+    % Footnotes
+    % if you have code in your footnotes, the million macro march
+    % kind of bumps into itself.
+    % Pandoc, having just rendered your text into LaTeX,
+    % knows whether the 'variable' `verbatim-in-note` is True, and
+    % If it is, it asks for a  LaTeX package that solves the dilemma:
+    $if(verbatim-in-note)$
+    \usepackage{fancyvrb}
+    $endif$
+
+    % Lists formatting:
+    % note sure what 'fancy enums' are; something to do with lists,
+    % as the further comment suggests:
+    $if(fancy-enums)$
+    % -- Redefine labelwidth for lists; otherwise, the enumerate package will cause
+    % -- markers to extend beyond the left margin.
+    \makeatletter\AtBeginDocument{%
+      \renewcommand{\@listi}
+        {\setlength{\labelwidth}{4em}}
+    }\makeatother
+    \usepackage{enumerate}
+    $endif$
+
+
+    % Table formatting:
+    % What if you make a table? -- Pandoc knows, of course, and
+    % then declares that its  variable `table` is True and
+    % imports a table package suitable to its pleasantly simple tables.
+    % Needless to say infinitely   complicated tables are possible in
+    % LaTeX with suitable packages. We are spared the temptation:
+
+    $if(tables)$
+    \usepackage{array}
+
+    % Continuing on the topic of tables ... (we havent reached `endif`).
+    % The commented out line below is in the default pandoc  latex.template.
+    % Some unpleasantness with table formatting must be corrected.
+
+    % -- This is needed because raggedright in table elements redefines \\:
+    \newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+    \let\PBS=\PreserveBackslash
+
+    $endif$
+
+
+    % Subscripts:
+    % Pandoc remembers whether you used subscripts, assigning True to
+    % its `subscript` variable
+    % It then needs to adopt a default with an incantation like this:
+    $if(subscript)$
+    \newcommand{\textsubscr}[1]{\ensuremath{_{\scriptsize\textrm{#1}}}}
+    $endif$
+
+
+    % Web-style links:
+
+    % markdown inclines us to use links, since our texts can be made into html.
+    % Why not have clickable blue links even in
+    % learned, scientific, religious, juridical, poetical and other suchlike texts?
+    % Never mind that they have been proven to destroy the nervous system!
+
+    % First, what about the fact that links like http://example.com are
+    % technically code and thus must not be broken across lines?
+    % [breaklinks=true] to the rescue!
+
+    % Nowadays LaTeX can handle all of this with another half million macros:
+
+    \usepackage[breaklinks=true]{hyperref}
+    \hypersetup{colorlinks,%
+    citecolor=blue,%
+    filecolor=blue,%
+    linkcolor=blue,%
+    urlcolor=blue}
+    $if(url)$
+    \usepackage{url}
+    $endif$
+
+
+
+    % Images.
+    % In ye olde LaTeX one could only import a limited range of image
+    % types, e.g. the forgotten .eps files.  Or else one simply drew the image with suitable
+    % commands and drawing packages.  Today we want to import .jpg files we make with
+    % our smart phones or whatever:
+
+    $if(graphics)$
+    \usepackage{graphicx}
+    % -- We will generate all images so they have a width \maxwidth. This means
+    % -- that they will get their normal width if they fit onto the page, but
+    % -- are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
+    $endif$
+
+
+
+    % Section numbering.
+    % Here again is a variable you can specify on the commandline
+    % `markdown2pdf my.txt --number-sections --xetex --template=/wherever/this/is -o my.pdf`
+    $if(numbersections)$
+    $else$
+    \setcounter{secnumdepth}{0}
+    $endif$
+
+    % Footnotes:
+    % Wait, didn't we already discuss the crisis of code in footnotes?
+    % Evidently the order of unfolding of macros required that
+    % we import a package to deal with them earlier
+    % and issue a command it defines now. (Or maybe that's not the reason;
+    % very often the order does matter as the insane system of macro expansion
+    % must take place by stages.)
+    $if(verbatim-in-note)$
+    \VerbatimFootnotes % -- allows verbatim text in footnotes
+    $endif$
+
+    % Other stuff you specify on the command line:
+    % You can include stuff for the header from a file specified on the command line;
+    % I've never done this, but that stuff will go here:
+    $for(header-includes)$
+    $header-includes$
+    $endfor$
+
+    % Title, authors, date.
+    % If you specified title authors and date at the start of
+    % your pandoc-markdown file, pandoc knows the 'values' of the
+    % variables: title authors date and fills them in.
+
+    $if(title)$
+    \title{$title$}
+    $endif$
+    \author{$for(author)$$author$$sep$\\$endfor$}
+    $if(date)$
+    \date{$date$}
+    $endif$
+
+    % At last:
+    % The document itself!:
+
+    % After filling in all these blanks above, or erasing them
+    % where they are not needed, Pandoc has finished writing the
+    % famous LaTeX *preamble* for your document.
+    % Now comes the all-important command \begin{document}
+    % which as you can see, will be paired with an \end{document} at the end.
+    % Pandoc knows whether you have a title, and has already
+    % specified what it is; if so, it demands that the title be rendered.
+    % Pandoc knows whether you want a table of contents, you
+    % specify this on the command line.
+    % Then, after fiddling with alignments, there comes the real
+    % business: pandoc slaps its rendering of your text in the place of
+    % the variable `body`
+    % It then concludes the document it has been writing.
+
+    \begin{document}
+
+
+    $if(title)$
+    \maketitle
+    $endif$
+
+    $if(toc)$
+    \tableofcontents
+
+    $endif$
+
+
+    $if(alignment)$
+    \begin{$alignment$}
+    $endif$
+
+    $body$
+
+    %$if(alignment)$
+    \end{$alignment$}
+    $endif$
+
+
+    \end{document}
+    ```
+    </small>
+
+---
+
+- That little nugget (`['nʌɡɪt]`, 天然金块，矿块；珍闻，珍品) of information
+  just saved my day.
 - [展示 GitHub Pages 怎么用 by district10](http://tangzhixiong.com/gh-pages-demo/)
 - [Hacking Travis](http://whudoc.qiniudn.com/travis/)
 - [osg 学习之十六：osgconv工具(android支持的纹理格式) - xuhaiyan8825的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/xuhaiyan8825/article/details/7999767)
+- `osgconv` 是一种非常有用的的工具来读取标准的3D格式，如OpenFlight,3DS,Alias
+  Wavefront (OBJ) etc，并且可以将它们转换为一种OSG所支持的格式，如OSG中的ASCII
+  格式的.osg，二进制格式的.ive。在程序运行的默认情况下，优化导入的场景图，将形
+  成的这样结果：场景图读取的数据量将会更少且速度会更快。尤其值得指出的是，.ive
+  格式的的文件，快速装载数据的能力使它非常适合数据页和大型的数据库。
 
-osgconv 是一种非常有用的的工具来读取标准的3D格式，如OpenFlight,3DS,Alias Wavefront
-(OBJ) etc，并且可以将它们转换为一种OSG所支持的格式，如OSG中的ASCII格式的.osg，二进制格式的.ive。
-在程序运行的默认情况下，优化导入的场景图，将形成的这样结果：场景图读取的数据量将会更少且速度会更
-快。尤其值得指出的是，.ive格式的的文件，快速装载数据的能力使它非常适合数据页和大型的数据库。
+    ```bash
+    osgconv cow.obj cow.ive
+    osgconv --compressed cow.obj cow.ive
+    ```
 
-```bash
-osgconv cow.obj cow.ive
-osgconv --compressed cow.obj cow.ive
-```
-
-
-`wget in_link -O out_filename`{.bash}
-
-浏览器里得 Vim，用 `C-[` 替代 `ESC`。
+- `wget in_link -O out_filename`{.bash}
+- 浏览器里得 Vim，用 `C-[` 替代 `ESC`。
 
 ---
 
@@ -693,12 +678,14 @@ How I Blog
   - I had a spontaneous epiphany (is there any other kind?)
 
 epiphany `[ɪ'pɪfəni]`
+:   对事物真谛的顿悟；主显节（每年一月六日纪念耶稣显灵的节日）；显现（特指神的显现）
 
-    对事物真谛的顿悟；主显节（每年一月六日纪念耶稣显灵的节日）；显现（特指神的显现）
+---
 
 [`appveyor.yml`{.tzx-filename}](https://github.com/district10/rapidjson/blob/master/appveyor.yml)
 
-:   ```yml
+:   <small><small><small><small>
+    ```yml
     version: 1.0.2.{build}
 
     configuration:
@@ -728,85 +715,91 @@ epiphany `[ɪ'pɪfəni]`
     test_script:
     - cd Build\VS && if %CONFIGURATION%==Debug (ctest --verbose -E perftest --build-config %CONFIGURATION%) else (ctest --verbose --build-config %CONFIGURATION%)
     ```
+    </small></small></small></small>
 
-```bash
-# for gcc with C++11 support
-sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
-sudo apt-get -qq update
-sudo apt-get -qq install gcc-4.9 g++-4.9
+    <small><small>
+    ```yml
+    # for gcc with C++11 support
+    - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+    - sudo apt-get -qq update
+    - sudo apt-get -qq install gcc-4.9 g++-4.9
 
-# install GTest and GMock
-- sudo apt-get -qq install libgtest-dev
-- "cd /usr/src/gtest && sudo cmake . && sudo cmake --build . && sudo mv libg* /usr/local/lib/ ; cd -"
-- sudo apt-get -qq install google-mock
-- "cd /usr/src/gmock && sudo cmake . && sudo cmake --build . && sudo mv libg* /usr/local/lib/ ; cd -"
+    # install GTest and GMock
+    - sudo apt-get -qq install libgtest-dev
+    - "cd /usr/src/gtest && sudo cmake . && sudo cmake --build . && sudo mv libg* /usr/local/lib/ ; cd -"
+    - sudo apt-get -qq install google-mock
+    - "cd /usr/src/gmock && sudo cmake . && sudo cmake --build . && sudo mv libg* /usr/local/lib/ ; cd -"
 
-- sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 90
-- sudo update-alternatives --install /usr/bin/gcov gcov /usr/bin/gcov-4.9 90
-```
+    - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 90
+    - sudo update-alternatives --install /usr/bin/gcov gcov /usr/bin/gcov-4.9 90
+    ```
+    </small></small>
 
-```cmake
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0") # debug, no optimisation
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --coverage") # enabling coverage
-```
+    ```cmake
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0") # debug, no optimisation
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --coverage") # enabling coverage
+    ```
 
-Either by using the supplied helper function.
+    Either by using the supplied helper function.
 
-if (COVERALLS)
-    include(Coveralls)
-    coveralls_turn_on_coverage()
-endif()
+    ```cmake
+    if (COVERALLS)
+        include(Coveralls)
+        coveralls_turn_on_coverage()
+    endif()
+    ```
 
-or you can add it yourself:
+    or you can add it yourself:
 
-```cmake
-if (COVERALLS)
-    include(Coveralls)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0 -fprofile-arcs -ftest-coverage")
-    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -O0 -fprofile-arcs -ftest-coverage")
-endif()
-```
+    ```cmake
+    if (COVERALLS)
+        include(Coveralls)
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0 -fprofile-arcs -ftest-coverage")
+        set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -O0 -fprofile-arcs -ftest-coverage")
+    endif()
+    ```
 
-Replace `CMAKE_CXX_FLAGS`{.cmake} by  `CMAKE_C_FLAGS`{.cmake} for a C project.
+    Replace `CMAKE_CXX_FLAGS`{.cmake} by  `CMAKE_C_FLAGS`{.cmake} for a C project.
 
-Nothing more is needed. From the GNU GCC man:
+    Nothing more is needed. From the GNU GCC man:
 
-```tzx-bigquote
---coverage
+    ```tzx-bigquote
+    --coverage
 
-This option is used to compile and link code instrumented for coverage
-analysis. The option is a synonym for -fprofile-arcs -ftest-coverage (when
-compiling) and -lgcov (when linking).
-```
+    This option is used to compile and link code instrumented for coverage
+    analysis. The option is a synonym for -fprofile-arcs -ftest-coverage (when
+    compiling) and -lgcov (when linking).
+    ```
 
 ---
 
 [rapidjson/travis-doxygen.sh at master · district10/rapidjson](https://github.com/district10/rapidjson/blob/master/travis-doxygen.sh)
 
-```bash
-gh_pages_prepare()
-{
-	cd "${TRAVIS_BUILD_DIR}/build/doc";
-	[ ! -d "html" ] || \
-		abort "Doxygen target directory already exists."
-	git --version
-	git clone -b gh-pages "${GITHUB_CLONE}" html
-	cd html
-	# setup git config (with defaults)
-	git config user.name "${GIT_NAME-travis}"
-	git config user.email "${GIT_EMAIL-"travis@localhost"}"
-	# clean working dir
-	rm -f .git/index
-	git clean -df
-}
-```
+:   ```bash
+    gh_pages_prepare()
+    {
+        cd "${TRAVIS_BUILD_DIR}/build/doc";
+        [ ! -d "html" ] || \
+            abort "Doxygen target directory already exists."
+        git --version
+        git clone -b gh-pages "${GITHUB_CLONE}" html
+        cd html
+        # setup git config (with defaults)
+        git config user.name "${GIT_NAME-travis}"
+        git config user.email "${GIT_EMAIL-"travis@localhost"}"
+        # clean working dir
+        rm -f .git/index
+        git clean -df
+    }
+    ```
 
-```bash
-sudo apt-get install ruby-dev
-```
+    ```bash
+    sudo apt-get install ruby-dev
+    ```
 
-ProTip™: You can pre-fill the filename field using just the URL.
-Typing ?filename=yournewfile.txt at the end of the URL will pre-fill the filename field with the name yournewfile.txt.
+    ProTip™: You can pre-fill the filename field using just the URL. Typing
+    `?filename=yournewfile.txt` at the end of the URL will pre-fill the filename
+    field with the name `yournewfile.txt`.
 
 [舌尖上的忘词&背单词的秘诀](http://mp.weixin.qq.com/s?__biz=MjM5NTExMTk5MA==&mid=409398412&idx=1&sn=a592c82fd0a57b15559832c983033ca8&scene=0#wechat_redirect)
 
@@ -822,6 +815,8 @@ Typing ?filename=yournewfile.txt at the end of the URL will pre-fill the filenam
     Refs
 
     #. [舌尖上的忘词&背单词的秘诀](http://mp.weixin.qq.com/s?__biz=MjM5NTExMTk5MA==&mid=409398412&idx=1&sn=a592c82fd0a57b15559832c983033ca8&scene=0#wechat_redirect)
+
+---
 
 ```bash
 sudo dpkg -i DEB_PACKAGE # install
@@ -926,26 +921,33 @@ Need to know more about dpkg commands? Have a look at the manual page:
 
 If you use an RPM-based distro, you may be able to install this deb using alien, or try
 
-ar p $DEB data.tar.gz | sudo tar xvz --strip-components 2 -C /usr/local
+`ar p $DEB data.tar.gz | sudo tar xvz --strip-components 2 -C /usr/local`{.bash}
 
-where $DEB is the path to the downloaded deb.
+where `$DEB` is the path to the downloaded deb.
 
-  - sed -i "s/AccessKey/$QAK/g" qiniu_sync
-  - sed -i "s/SecretKey/$QSK/g" qiniu_sync
+  - `sed -i "s/AccessKey/$QAK/g" qiniu_sync`{.bash}
+  - `sed -i "s/SecretKey/$QSK/g" qiniu_sync`{.bash}
 
-持续集成（ Continuous Integration）或者CI，是一个已经在软件开发中已经流行好一阵子的东西了，但是最近逐渐在运维界中获得了越来越多的拥趸。CI提出来是为了解决多个开发者在同一个代码库开发的时候造成的集成问题。基本上，两个开发者在同一样的代码上进行开发就会产生冲突，并且只有在之后很久才会发现这些冲突。
+持续集成（ Continuous Integration）或者CI，是一个已经在软件开发中已经流行好一阵
+子的东西了，但是最近逐渐在运维界中获得了越来越多的拥趸。CI提出来是为了解决多个
+开发者在同一个代码库开发的时候造成的集成问题。基本上，两个开发者在同一样的代码
+上进行开发就会产生冲突，并且只有在之后很久才会发现这些冲突。
 
-The complete build lifecycle, including three optional deployment steps and after checking out the git repository and changing to the repository directory, is:
+The complete build lifecycle, including three optional deployment steps and
+after checking out the git repository and changing to the repository directory,
+is:
 
-    before_install
-    install
-    before_script
-    script
-    after_success or after_failure
-    OPTIONAL before_deploy
-    OPTIONAL deploy
-    OPTIONAL after_deploy
-    after_script
+  - before_install
+  - install
+  - before_script
+  - script
+  - after_success or after_failure
+  - OPTIONAL before_deploy
+  - OPTIONAL deploy
+  - OPTIONAL after_deploy
+  - after_script
+
+---
 
 > 动态语言一时爽，代码重构火葬场。
 
@@ -1037,122 +1039,123 @@ Refs
 
 CMakeLists.txt Snippets
 
-```cmake
-set_target_properties( ${PROJECT_NAME} PROPERTIES VS_KEYWORD Qt4VSv1.0 )
+:   ```cmake
+    set_target_properties( ${PROJECT_NAME} PROPERTIES VS_KEYWORD Qt4VSv1.0 )
 
-set( CMAKE_COLOR_MAKEFILE ON )
-set_property( GLOBAL PROPERTY USE_FOLDERS ON )
+    set( CMAKE_COLOR_MAKEFILE ON )
+    set_property( GLOBAL PROPERTY USE_FOLDERS ON )
 
-# Set the include directories
-include_directories( ${CMAKE_SOURCE_DIR} )
-include_directories( ${CMAKE_SOURCE_DIR}/src )
-include_directories( ${CMAKE_CURRENT_BINARY_DIR} )
+    # Set the include directories
+    include_directories( ${CMAKE_SOURCE_DIR} )
+    include_directories( ${CMAKE_SOURCE_DIR}/src )
+    include_directories( ${CMAKE_CURRENT_BINARY_DIR} )
 
-link_directories( ${CMAKE_BINARY_DIR} )
+    link_directories( ${CMAKE_BINARY_DIR} )
 
-# Setup output directories
-set( LIBRARY_OUTPUT_PATH
-	${PROJECT_BINARY_DIR}/bin
-	CACHE
-	PATH
-	"Single directory for all libraries" )
+    # Setup output directories
+    set( LIBRARY_OUTPUT_PATH
+        ${PROJECT_BINARY_DIR}/bin
+        CACHE
+        PATH
+        "Single directory for all libraries" )
 
-set( EXECUTABLE_OUTPUT_PATH
-	${PROJECT_BINARY_DIR}/bin
-	CACHE
-	PATH
-	"Single directory for all executables" )
+    set( EXECUTABLE_OUTPUT_PATH
+        ${PROJECT_BINARY_DIR}/bin
+        CACHE
+        PATH
+        "Single directory for all executables" )
 
-add_definitions( -DUNICODE )
-add_definitions( -D_CRT_SECURE_NO_WARNINGS )
-add_definitions( -Wall )
+    add_definitions( -DUNICODE )
+    add_definitions( -D_CRT_SECURE_NO_WARNINGS )
+    add_definitions( -Wall )
 
-# large address aware option setting
-if( ${MINGW} )
-	set( LARGEADDRESSAWARE "--large-address-aware" )
-else(${MINGW})
-	if( WIN32 )
-		set( LARGEADDRESSAWARE "/LARGEADDRESSAWARE" )
-	else( WIN32 )
-		set( LARGEADDRESSAWARE " " )
-	endif( WIN32 )
-endif( ${MINGW} )
+    # large address aware option setting
+    if( ${MINGW} )
+        set( LARGEADDRESSAWARE "--large-address-aware" )
+    else(${MINGW})
+        if( WIN32 )
+            set( LARGEADDRESSAWARE "/LARGEADDRESSAWARE" )
+        else( WIN32 )
+            set( LARGEADDRESSAWARE " " )
+        endif( WIN32 )
+    endif( ${MINGW} )
 
-# this command finds Qt4 libraries and sets all required variables
-# note that it's Qt4, not QT4 or qt4
-find_package( Qt4 REQUIRED )
+    # this command finds Qt4 libraries and sets all required variables
+    # note that it's Qt4, not QT4 or qt4
+    find_package( Qt4 REQUIRED )
 
-set( QT_USE_QTMAIN TRUE )
-set( QT_USE_QTOPENGL TRUE )
-set( QT_USE_QTXML TRUE )
+    set( QT_USE_QTMAIN TRUE )
+    set( QT_USE_QTOPENGL TRUE )
+    set( QT_USE_QTXML TRUE )
 
-# (QT_USE_FILE is a variable defined by FIND_PACKAGE( Qt4 ) that contains a
-# path to CMake script)
-include( ${QT_USE_FILE} )
+    # (QT_USE_FILE is a variable defined by FIND_PACKAGE( Qt4 ) that contains a
+    # path to CMake script)
+    include( ${QT_USE_FILE} )
 
-set( RSCS img.qrc )
+    set( RSCS img.qrc )
 
-qt4_wrap_cpp( MOC_SRCS ${HDRS_FILES} )
-qt4_add_resources( RSC_SRCS ${RSCS} )
-qt4_wrap_ui( UI_HDRS ${UI_FILES} )
+    qt4_wrap_cpp( MOC_SRCS ${HDRS_FILES} )
+    qt4_add_resources( RSC_SRCS ${RSCS} )
+    qt4_wrap_ui( UI_HDRS ${UI_FILES} )
 
-set( FILES_TO_TRANSLATE ${FILES_TO_TRANSLATE}
-     ${SRCS_FILES} ${UI_FILES} ${HDRS_FILES} PARENT_SCOPE )
+    set( FILES_TO_TRANSLATE ${FILES_TO_TRANSLATE}
+         ${SRCS_FILES} ${UI_FILES} ${HDRS_FILES} PARENT_SCOPE )
 
-source_group( "UI Files" FILES ${UI_FILES} )
-source_group( "Generated Files" FILES ${MOC_SRCS} ${UI_HDRS} ${RSC_SRCS} )
-source_group( "Class Diagrams" FILES ${CD_FILES} )
-source_group( "Resources" FILES ${RSCS} )
+    source_group( "UI Files" FILES ${UI_FILES} )
+    source_group( "Generated Files" FILES ${MOC_SRCS} ${UI_HDRS} ${RSC_SRCS} )
+    source_group( "Class Diagrams" FILES ${CD_FILES} )
+    source_group( "Resources" FILES ${RSCS} )
 
-add_executable( ${PROJECT_NAME}
-    ${SRCS_FILES} ${UI_FILES} ${HDRS_FILES}
-    ${MOC_SRCS} ${UI_HDRS} ${RSC_SRCS} ${CD_FILES} )
-set_source_files_properties( ${CD_FILES} PROPERTIES HEADER_FILE_ONLY TRUE )
-target_link_libraries( ${PROJECT_NAME}
-    ${QT_LIBRARIES} ${OPENGL_LIBRARY} ${GLUT_LIBRARIES} ${OpenCV_LIBS} )
-set_target_properties( ${PROJECT_NAME} PROPERTIES
-                       LINK_FLAGS ${LARGEADDRESSAWARE} )
-set_target_properties( ${PROJECT_NAME} PROPERTIES
-                       VS_KEYWORD Qt4VSv1.0 )
+    add_executable( ${PROJECT_NAME}
+        ${SRCS_FILES} ${UI_FILES} ${HDRS_FILES}
+        ${MOC_SRCS} ${UI_HDRS} ${RSC_SRCS} ${CD_FILES} )
+    set_source_files_properties( ${CD_FILES} PROPERTIES HEADER_FILE_ONLY TRUE )
+    target_link_libraries( ${PROJECT_NAME}
+        ${QT_LIBRARIES} ${OPENGL_LIBRARY} ${GLUT_LIBRARIES} ${OpenCV_LIBS} )
+    set_target_properties( ${PROJECT_NAME} PROPERTIES
+                           LINK_FLAGS ${LARGEADDRESSAWARE} )
+    set_target_properties( ${PROJECT_NAME} PROPERTIES
+                           VS_KEYWORD Qt4VSv1.0 )
 
-add_executable( example WIN32
-                main.cpp mainwindow.cpp ${example_MOCS} ) # WIN32 needed
+    add_executable( example WIN32
+                    main.cpp mainwindow.cpp ${example_MOCS} ) # WIN32 needed
 
-install( TARGETS ${PROJECT_NAME} DESTINATION bin )
+    install( TARGETS ${PROJECT_NAME} DESTINATION bin )
 
-# this command finds OpenCV libraries and sets all required variables
-find_package( OpenCV REQUIRED )
-include_directories( ${OPENCV_INCLUDE_DIR} )
-include_directories( ${CMAKE_BINARY_DIR} )
+    # this command finds OpenCV libraries and sets all required variables
+    find_package( OpenCV REQUIRED )
+    include_directories( ${OPENCV_INCLUDE_DIR} )
+    include_directories( ${CMAKE_BINARY_DIR} )
 
-find_package( OpenGL REQUIRED )
-file( GLOB_RECURSE HDRS_FILES *.h *.hpp )
-file( GLOB_RECURSE SRCS_FILES *.cpp )
-file( GLOB_RECURSE UI_FILES *.ui )
-file( GLOB CD_FILES *.cd )
+    find_package( OpenGL REQUIRED )
+    file( GLOB_RECURSE HDRS_FILES *.h *.hpp )
+    file( GLOB_RECURSE SRCS_FILES *.cpp )
+    file( GLOB_RECURSE UI_FILES *.ui )
+    file( GLOB CD_FILES *.cd )
 
-add_subdirectory( src )
+    add_subdirectory( src )
 
-set (CMAKE_BUILD_TYPE Release) # cmake -DCMAKE_BUILD_TYPE=Debug .
-```
+    set (CMAKE_BUILD_TYPE Release) # cmake -DCMAKE_BUILD_TYPE=Debug .
+    ```
 
 ---
 
-* `uic`{.bash} ==> mainwindow.ui --> mainwindow.h
-* `moc`{.bash} ==> mainwindow.h  --> mainwindow.cpp
-* `g++`{.bash} ==>
+- `uic`{.bash} ==> mainwindow.ui --> mainwindow.h
+- `moc`{.bash} ==> mainwindow.h  --> mainwindow.cpp
+- `g++`{.bash} ==>
+- some bash
 
-```bash
-uic mainwindow.ui  -o  ui_mainwindow.h
-moc mainwindow.h   -o moc_mainwindow.cpp  ==> Q_OBJECT
-rcc main.qrc       -o qrc_main.cpp
-g++ main.cpp mainwindow.cpp  moc_mainwindow.cpp \
--IC:\Qt\4.8.4\include \
--LC:\Qt\4.8.4\lib \
--lQtCore4 \
--lQtGui4 \
--o main
-```
+    ```bash
+    uic mainwindow.ui  -o  ui_mainwindow.h
+    moc mainwindow.h   -o moc_mainwindow.cpp  ==> Q_OBJECT
+    rcc main.qrc       -o qrc_main.cpp
+    g++ main.cpp mainwindow.cpp  moc_mainwindow.cpp \
+    -IC:\Qt\4.8.4\include \
+    -LC:\Qt\4.8.4\lib \
+    -lQtCore4 \
+    -lQtGui4 \
+    -o main
+    ```
 
 ---
 
@@ -1192,6 +1195,7 @@ find_package( Qt4 REQUIRED ) # think of it as an #include
 ```
 
 Or create your own finders
+
 ```cmake
 get_filename_component( ... )
 

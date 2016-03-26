@@ -20,6 +20,21 @@ var tzx_links = [
         query: ['page', 'tag']
     },
     {
+        url: '/ring.html',
+        title: "One Ring, to Rule Them All",
+        query: ['ring', 'extras']
+    },
+    {
+        url: '/tags.html',
+        title: "All Tags",
+        query: ['tags', 'extras']
+    },
+    {
+        url: '/reads.html',
+        title: "Reads | 斋读",
+        query: ['tag', 'read', 'extras']
+    },
+    {
         url: '/days.html',
         title: "Day In and Day Out | 我们的生活不可能那么日常",
         query: ['page', 'tag', 'gtd', 'diary']
@@ -73,11 +88,6 @@ var tzx_links = [
         url: '/quotes.html',
         title: "Quotes | 言论",
         query: ['page', 'tag', 'quote']
-    },
-    {
-        url: '/reads.html',
-        title: "Reads | 斋读",
-        query: ['page', 'tag', 'read']
     },
     {
         url: '/notes.html',

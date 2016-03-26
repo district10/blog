@@ -79,7 +79,7 @@ clean:
 # update
 gh: github
 github:
-	git add -A && git commit -m "`date` - `uname`" && git push
+	git add -A && git commit -m "`date` - `uname`$CMTMSG" && git push
 status:
 	git status
 diff:
