@@ -29,7 +29,7 @@ h2 + p:first-letter {
 }
 
 code {
-    font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, STXihei, Heiti, sans-serif;
+    font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, SimSun, sans-serif;
     color: #d14;
     text-decoration: none;
 }
@@ -47,7 +47,7 @@ kbd {
     padding-right: .25rem;
     margin-left: .15rem;
     margin-right: .15rem;
-    font-family: Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, STXihei, Heiti, sans-serif;
+    font-family: Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, SimSun, sans-serif;
     background: #eee;
     border-width: 2px 4px 5px 3px;
     border-style: solid;
@@ -71,7 +71,7 @@ pre.diffed {
     background-color: white;
     border: 1px dotted #f8bd0b;
     font-size: 90%;
-    font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, STXihei, Heiti, sans-serif;
+    font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, SimSun, sans-serif;
 }
 
 code.url {
@@ -423,7 +423,7 @@ p a img:hover {
     list-style: none;
     line-height: 200%;
     color: lightgray;
-    font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, STXihei, Heiti, sans-serif;
+    font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, SimSun, sans-serif;
 }
 
 .posts li a {

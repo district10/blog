@@ -5993,7 +5993,7 @@ fetch = +refs/heads/*:refs/remotes/origin/*
 * `git config --global core.editor emacs`{.bash}
 * `git config --global merge.tool vimdiff`{.bash}
 
-```bash
+```tzx-plain
 :smile: :smiley: :relaxed: :relieved: :smirk: :flushed: :worried: :worried: :sweat_smile:
 :pensive: :frowning: :disappointed: :cry: :joy: :scream: :sleepy: :yum: :mask:
 :dizzy_face: :neutral_face: :heart: :+1: :-1: :pill:
@@ -6023,18 +6023,18 @@ awk BEGIN{c="BEGIN{c=%c%s%c;printf(c,34,c,34);}";printf(c,34,c,34);}
 
 How many Computer Languages are there?
 
-```plain
-late 1940s
-    first electronic computers & LLLs
-1950s
-    first HLLs for computers
-1969
-    about 120 HLLs, about 15 in widespread use
-1977
-    about 80 HLLs in active (non-trivial) use
-Today
-    more than 2000 HLLs
-```
+:   ```tzx-plain
+    late 1940s
+        first electronic computers & LLLs
+    1950s
+        first HLLs for computers
+    1969
+        about 120 HLLs, about 15 in widespread use
+    1977
+        about 80 HLLs in active (non-trivial) use
+    Today
+        more than 2000 HLLs
+    ```
 
 Scripting Paradigm
 
@@ -6054,47 +6054,50 @@ or maintainability)
 
 Google Search
 
-* inurl:text
-* intitle:text allintitle:text
-* filetype:pdf
-* site:pan.baidu.com
-* weather:wuhan
-* see more and...
+:   ```tzx-bigquote
+    inurl:text
+    intitle:text allintitle:text
+    filetype:pdf
+    site:pan.baidu.com
+    weather:wuhan
+    see more and...
+    ```
 
 ---
 
-* CGI（公共网关接口，Common Gateway Interface） — 在 Web 服务器上，用来在脚本和
+- CGI（公共网关接口，Common Gateway Interface） — 在 Web 服务器上，用来在脚本和
   ／或应用程序之间传输数据，然后将该数据返回给 Web 页面或浏览器。CGI 脚本经常是
   使用 Perl 语言创建的，它能够生成动态 Web 内容（包括电子商业购物篮、讨论组、调
   查表单以及实时新闻等）。
-* CHS（柱面／磁头／扇区，Cylinder/Head/Sector） — FDISK 在分区期间所需的磁盘信息。
-* CLU（命令行实用程序，Command Line Utility） — 从命令行会话或 shell 运行的程序
+- CHS（柱面／磁头／扇区，Cylinder/Head/Sector） — FDISK 在分区期间所需的磁盘信
+  息。
+- CLU（命令行实用程序，Command Line Utility） — 从命令行会话或 shell 运行的程序
   ，如 Tar 或 Mkdir。
-* LILO（Linux 装载程序，LInux LOader） — 一种流行的分区引导管理器实用程序，能够
+- LILO（Linux 装载程序，LInux LOader） — 一种流行的分区引导管理器实用程序，能够
   引导到 Linux 以外的操作系统。它并不特定于文件系统。
-* MIME（多用途因特网邮件交换，Multipurpose Internet Mail Exchange） — 允许文本
+- MIME（多用途因特网邮件交换，Multipurpose Internet Mail Exchange） — 允许文本
   电子邮件消息包含非文本（例如图形、视频或音频）数据的通信协议。
-* PAM（可插入的认证模块，Pluggable Authentication Modules） — 用于系统安全性的
+- PAM（可插入的认证模块，Pluggable Authentication Modules） — 用于系统安全性的
   可替换的用户认证模块，它允许在不知道将使用何种认证方案的情况下进行编程。这允
   许将来用其它模块来替换某个模块，却无需重写软件。
-* RCS（修订控制系统，Revision Control System） — 一组程序，它们控制组环境下文件
+- RCS（修订控制系统，Revision Control System） — 一组程序，它们控制组环境下文件
   的共享访问并跟踪文本文件的变化。常用于维护源代码模块的编码工作。
-* RFS（远程文件共享，Remote File Sharing） — 一个程序，它让用户访问其它计算机上
+- RFS（远程文件共享，Remote File Sharing） — 一个程序，它让用户访问其它计算机上
   的文件，就好象文件在用户的系统上一样。
-* RPM（RPM 软件包管理器，RPM Package Manager） — 一种用于因特网下载包的打包及安
-  装工具，它包含在某些 Linux 分发版中。它生成具有 .RPM 扩展名的文件。与 Dpkg 类似。
-* `ag --pager less <qry> [<filename>]`{.bash}
-* 假脱机（Spool）（外围设备联机并发操作，Simultaneous Peripheral Operation
+- RPM（RPM 软件包管理器，RPM Package Manager） — 一种用于因特网下载包的打包及安
+  装工具，它包含在某些 Linux 分发版中。它生成具有 .RPM 扩展名的文件。与 Dpkg 类
+  似。
+- `ag --pager less <qry> [<filename>]`{.bash}
+- 假脱机（Spool）（外围设备联机并发操作，Simultaneous Peripheral Operation
   On-Line） — 将数据发送给一个程序，该程序将该数据信息放入队列以备将来使用（例
   如，打印假脱机程序）。
-* 隐写术（Steganography）— 将一段信息隐藏在另一段信息中的做法。一个示例是在数字
-  化照片中放置不可见的数字水印。
-* Tux— 虚构的 Linux 企鹅吉祥物的名字。
-* 工作目录（Working Directory）— 当前目录或用户当前工作时所在的目录的另一名称。
-
-* `"kyy` *vs.* `"Kyy`
-* `"kp` === `"Kp`
-* `:reg`
+- 隐写术（Steganography, `[,stegə'nɔgrəfi]` n. 速记式加密）— 将一段信息隐藏在另
+  一段信息中的做法。一个示例是在数字化照片中放置不可见的数字水印。
+- Tux— 虚构的 Linux 企鹅吉祥物的名字。
+- 工作目录（Working Directory）— 当前目录或用户当前工作时所在的目录的另一名称。
+- `"kyy` *vs.* `"Kyy`
+- `"kp` === `"Kp`
+- `:reg`
 
 > Yank the text you want to copy with `y[motion]` - this text is saved in `"`
 > and `0` registers. Delete the text you want to replace with `d[motion]` - this
@@ -6518,7 +6521,7 @@ split extension: os.path.splitext(str)[1]==".py"
 ```
 
 我们把变量从内存中变成可存储或传输的过程称之为序列化，在 Python 中叫
-**pickling**，在其他语言中也被称之为 **serialization**，**marshalling**，
+**pickling**，在其他语言中也被称之为 **serialization**，**marshalling**(集结待发的)，
 **flattening** 等等，都是一个意思。
 
 ```python
@@ -6659,7 +6662,7 @@ imap(), *vs.* map()
 ifilter()
 ```
 
-XML虽然比 JSON 复杂，在Web中应用也不如以前多了，不过仍有很多地方在用，所以，有
+XML 虽然比 JSON 复杂，在 Web 中应用也不如以前多了，不过仍有很多地方在用，所以，有
 必要了解如何操作 XML。
 
 ```python
@@ -6702,7 +6705,7 @@ reading or writing, the `-` operand should be used to mean only standard input
 (or standard output when it is clear from context that an output file is being
 specified) or a file named `-`.
 
-"options" (or, historically, "flags")
+**"options" (or, historically, "flags")**
 
 When a utility has only a few permissible options, they are sometimes shown
 individually, as in the example. Utilities with many flags generally show all
@@ -6792,14 +6795,16 @@ user=> (if (@vistors "tu") (str "true") (str "false"))
 "false"
 ```
 
-Here we've got your project's README, a src/ directory containing the code, a
-test/ directory, and a project.clj file which describes your project to
-Leiningen. The src/my_stuff/core.clj file corresponds to the my-stuff.core
+Here we've got your project's `README`, a `src/` directory containing the code, a
+`test/` directory, and a `project.clj` file which describes your project to
+Leiningen. The `src/my_stuff/core.clj` file corresponds to the `my-stuff.core`
 namespace.
 
-* :dependencies [[org.clojure/clojure "1.5.1"]]
-* list in a list, [[],[],[],[]] like this
-* [[<group-id>/<artifact-id> version-number]]
+```tzx-plain
+:dependencies [[org.clojure/clojure "1.5.1"]]
+list in a list, [[],[],[],[]] like this
+[[<group-id>/<artifact-id> version-number]]
+```
 
 ```clojure
 >> lein run one
@@ -6923,6 +6928,25 @@ b64Encode('你好') // "5L2g5aW9"
 b64Decode('5L2g5aW9') // "你好"
 ```
 
+```bash
+$ echo '你好' | base64
+5L2g5aW9
+
+$ echo '5L2g5aW9Cg==' | base64 -d
+你好
+
+$ echo '5L2g5aW9Cg' | base64 -d
+你好
+base64: invalid input
+
+# 还要注意换行
+$ echo 'good' | base64
+Z29vZAo=
+$ echo -n 'good' | base64
+Z29vZA==
+
+```
+
 object
 
 ```javascript
@@ -6986,7 +7010,7 @@ article hr {
 }
 ```
 
-markdown blog: `<a id="id"></a>`, then use `url#id`
+markdown blog: `<a id="id"></a>`, then use `url#id`, or in tzx-blog, use `｀＠｀｛.ｔｚｘ－ａｎｃｈｏｒ ＃ｉｄ｝`
 
 把「逼格」改爲「屄格」不是「惡意編輯」。把屄格這樣一個氣質低俗的詞柔化、諱飾成
 「逼格」，造成「其實沒有那麼難聽」的假象，繼續鼓勵人們使用，纔是真正的大惡。因
@@ -7059,7 +7083,7 @@ other.  If r = farVal nearVal roughly log 2 ⁡r bits of depth buffer precision
 are lost.  Because r approaches infinity as nearVal approaches 0, nearVal must
 never be set to 0.
 
-<div class="tzx-fright" style="padding:em;">
+<div class="tzx-fright">
 ![A view frustum](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/ViewFrustum.svg/330px-ViewFrustum.svg.png)
 </div>
 
@@ -7067,18 +7091,23 @@ VPN
 :   the view-plane normal – a normal to the view plane.
 
 VUV
-:   the view-up vector – the vector on the view plane that indicates the upward direction.
+:   the view-up vector – the vector on the view plane that indicates the upward
+    direction.
 
 VRP
-:   the viewing reference point – a point located on the view plane, and the origin of the VRC.
+:   the viewing reference point – a point located on the view plane, and the
+    origin of the VRC.
 
 PRP
-:   the projection reference point – the point where the image is projected from, for parallel projection, the PRP is at infinity.
+:   the projection reference point – the point where the image is projected
+    from, for parallel projection, the PRP is at infinity.
 
 VRC
 :   the viewing-reference coordinate system.
 
-The geometry is defined by a field of view angle (in the 'y' direction), as well as an aspect ratio. Further, a set of z-planes define the near and far bounds of the frustum.
+The geometry is defined by a field of view angle (in the 'y' direction), as
+well as an aspect ratio. Further, a set of z-planes define the near and far
+bounds of the frustum.
 
 ```cpp
 // osg::Camera
@@ -7118,31 +7147,39 @@ bool getProjectionMatrixAsPerspective(double& fovy,double& aspectRatio,
 
 经过透视投影后，每个顶点的x和y坐标还要除以其z坐标，这个除法是产生透视收缩的方法
 
+<small>
 ```cpp
 osgUtil::PolytopeIntersector // 具体不同算法实现类
 osgUtil::IntersectionVisitor //用来遍历节点树的每个节点
 osg::Node * mNode;  //  你要做相交测试的根节点
 
-osg::ref_ptr<osgUtil::PolytopeIntersector> intersector = new osgUtil::PolytopeIntersector(osgUtil::Intersector::WINDOW, xMin, yMin, xMax, yMax);
+osg::ref_ptr<osgUtil::PolytopeIntersector> intersector =
+        new osgUtil::PolytopeIntersector(osgUtil::Intersector::WINDOW, xMin, yMin, xMax, yMax);
 intersector->setIntersectionLimit(osgUtil::Intersector::LIMIT_ONE_PER_DRAWABLE);
 osgUtil::IntersectionVisitor iv( intersector.get() );
 
 mRootNode->accept(iv);
 ```
+</small>
 
 总结：
 
-1. 在 `osg::ref_ptr<osg::Node>node = new osg::Node;` 其中 node 为 `osg::ref_ptr` 的对象，而不是指针。
-2. OSG 中新创建的场景对象建议使用 `ref_ptr` 进行内存分配和管理
-3. 对于不使用 `ref_ptr` 的对象，引用计数值变得没有意义，并且它无法自动从场景中卸载。
-4. 新建对象作为函数结果返回时，应该返回 `release()`。并尽快引入到别的场景中，否则发生内存泄露
-5. 只有 `osg::ref_ptr` 类来管理 osg 对象的引用计数，其他脱离了（和osg::ref_ptr对象无关的操作）osg::ref_ptr 管理的操作如：赋值等将不会对引用计数产生影响
+- 在 `osg::ref_ptr<osg::Node>node = new osg::Node;` 其中 node 为 `osg::ref_ptr`
+  的对象，而不是指针。
+- OSG 中新创建的场景对象建议使用 `ref_ptr` 进行内存分配和管理
+- 对于不使用 `ref_ptr` 的对象，引用计数值变得没有意义，并且它无法自动从场景中卸
+  载。
+- 新建对象作为函数结果返回时，应该返回 `release()`。并尽快引入到别的场景中，否
+  则发生内存泄露
+- 只有 `osg::ref_ptr` 类来管理 osg 对象的引用计数，其他脱离了（和osg::ref_ptr对
+  象无关的操作）osg::ref_ptr 管理的操作如：赋值等将不会对引用计数产生影响
 
 `inline void setNodeMask(NodeMask nm) { _nodeMask = nm; }`{.cpp}
 
 ```cpp
- osg::ref_ptr <osg::MatrixTransform> mat=new osg::MatrixTransform();
-osg::Matrix m = osg::Matrix::scale(1.0f,1.0f,1.0f)*osg ::Matrix::translate(osg::Vec3(0,0,10.0f));
+osg::ref_ptr <osg::MatrixTransform> mat=new osg::MatrixTransform();
+osg::Matrix m = osg::Matrix::scale(1.0f,1.0f,1.0f)
+              * osg ::Matrix::translate(osg::Vec3(0,0,10.0f));
 mat->setMatrix(m);
 mat->addChild(node1.get());
 
@@ -7175,6 +7212,7 @@ osg::ref_ptr<osg::Node>createLight(osg::ref_ptr<osg::Node>model)
 }
 ```
 
+<small><small>
 ```cpp
 int main()
 {
@@ -7220,6 +7258,7 @@ int main()
     return 0 ;
 }
 ```
+</small></small>
 
 其实简而言之  就是 `glOrtho` 设置相片的大小，`glViewport` 指定相框大小。如果 `glOrtho`
 指定的相片小了，那么放到同等大小的相框上就相当于放大了。
@@ -7244,28 +7283,29 @@ glOrtho 的功能。 假设有一个球体，半径为 1，圆心在 (0, 0, 0)�
 -10, 10);` 就表示用一个宽和高都是1.5的框框把球体的右上角装了进来。
 
 ```cpp
-if(root->getChild(i)->getName().compare("Hello") == 0)
-{
+if(root->getChild(i)->getName().compare("Hello") == 0) {
     osg::Node * tmp = root->getChild(i);
     root->removeChild(tmp);
-    *node = tmp;//在这里tmp 已经析构，因为 只有root引用了hello节点，而在root 节点removechild后 tmp的引用计数为0，此时将析构
+    *node = tmp;
+    // 在这里tmp 已经析构，因为 只有root引用了hello节点，而在root 节点
+    // removechild后 tmp的引用计数为0，此时将析构
 }
 ```
 
 Refs
 
-#. [OpenGL 透视投影 齐次裁剪空间 深度缓存 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/45721643)
-#. [Qt 小技巧 记录 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/44019915)
-#. [glFrustum](https://www.opengl.org/sdk/docs/man2/xhtml/glFrustum.xml)
-#. [OSG 中 相交测试 模块 工作流程及原理 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/37923417)
-#. [OSG 智能指针陷阱 总结 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/25311989)
+  - [OpenGL 透视投影 齐次裁剪空间 深度缓存 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/45721643)
+  - [Qt 小技巧 记录 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/44019915)
+  - [glFrustum](https://www.opengl.org/sdk/docs/man2/xhtml/glFrustum.xml)
+  - [OSG 中 相交测试 模块 工作流程及原理 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/37923417)
+  - [OSG 智能指针陷阱 总结 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/25311989)
 
 Read more
 
-#. [OSG 自定义数据类型 关键帧动画 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/12651017)
-#. [OSG 一个简单的着色器例子 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/8656913)
-#. [osg 路径 动画 效果 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/8248157)
-#. [osg 漫游器 代码框架 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/8249501)
+  - [OSG 自定义数据类型 关键帧动画 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/12651017)
+  - [OSG 一个简单的着色器例子 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/8656913)
+  - [osg 路径 动画 效果 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/8248157)
+  - [osg 漫游器 代码框架 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/8249501)
 
 ---
 
@@ -7398,12 +7438,14 @@ With a prefix ARG always prompt for command to use."
 (show-paren-mode +1)
 ```
 
+```elisp
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
 (global-set-key (kbd "C-c k") 'kill-other-buffers)
 (global-set-key (kbd "C-x O") (lambda ()
                                 (interactive)
                                 (other-window -1)))
+```
 
 ```elisp
 (defun kill-other-buffers ()
@@ -7429,21 +7471,35 @@ Doesn't mess with special buffers."
    #'kill-buffer))
 ```
 
-#. [Repeat last command - Emacs Redux](http://emacsredux.com/blog/2013/03/26/repeat-last-command/)
-#. [Copy filename to the clipboard - Emacs Redux](http://emacsredux.com/blog/2013/03/27/copy-filename-to-the-clipboard/)
-#. [Open file in external program - Emacs Redux](http://emacsredux.com/blog/2013/03/27/open-file-in-external-program/)
-#. [Indent region or buffer - Emacs Redux](http://emacsredux.com/blog/2013/03/27/indent-region-or-buffer/)
-#. [Indent defun - Emacs Redux](http://emacsredux.com/blog/2013/03/28/indent-defun/)
-#. [Google - Emacs Redux](http://emacsredux.com/blog/2013/03/28/google/)
-#. [Network utilities - Emacs Redux](http://emacsredux.com/blog/2013/03/28/network-utilities/)
-#. [Automatic(electric) indentation - Emacs Redux](http://emacsredux.com/blog/2013/03/29/automatic-electric-indentation/)
-#. [Automatic(electric) character pairing - Emacs Redux](http://emacsredux.com/blog/2013/03/29/automatic-electric-character-pairing/)
-#. [Terminal at your fingertips - Emacs Redux](http://emacsredux.com/blog/2013/03/29/terminal-at-your-fingertips/)
-#. [Kill other buffers - Emacs Redux](http://emacsredux.com/blog/2013/03/30/kill-other-buffers/)
-#. [Go back to previous window - Emacs Redux](http://emacsredux.com/blog/2013/03/30/go-back-to-previous-window/)
-#. [Playing with Font Sizes - Emacs Redux](http://emacsredux.com/blog/2013/04/01/playing-with-font-sizes/)
-#. [Highlight matching parentheses - Emacs Redux](http://emacsredux.com/blog/2013/04/01/highlight-matching-parentheses/)
-#. [Highlight current line - Emacs Redux](http://emacsredux.com/blog/2013/04/02/highlight-current-line/)
+[Repeat last command - Emacs Redux](http://emacsredux.com/blog/2013/03/26/repeat-last-command/)
+
+[Copy filename to the clipboard - Emacs Redux](http://emacsredux.com/blog/2013/03/27/copy-filename-to-the-clipboard/)
+
+[Open file in external program - Emacs Redux](http://emacsredux.com/blog/2013/03/27/open-file-in-external-program/)
+
+[Indent region or buffer - Emacs Redux](http://emacsredux.com/blog/2013/03/27/indent-region-or-buffer/)
+
+[Indent defun - Emacs Redux](http://emacsredux.com/blog/2013/03/28/indent-defun/)
+
+[Google - Emacs Redux](http://emacsredux.com/blog/2013/03/28/google/)
+
+[Network utilities - Emacs Redux](http://emacsredux.com/blog/2013/03/28/network-utilities/)
+
+[Automatic(electric) indentation - Emacs Redux](http://emacsredux.com/blog/2013/03/29/automatic-electric-indentation/)
+
+[Automatic(electric) character pairing - Emacs Redux](http://emacsredux.com/blog/2013/03/29/automatic-electric-character-pairing/)
+
+[Terminal at your fingertips - Emacs Redux](http://emacsredux.com/blog/2013/03/29/terminal-at-your-fingertips/)
+
+[Kill other buffers - Emacs Redux](http://emacsredux.com/blog/2013/03/30/kill-other-buffers/)
+
+[Go back to previous window - Emacs Redux](http://emacsredux.com/blog/2013/03/30/go-back-to-previous-window/)
+
+[Playing with Font Sizes - Emacs Redux](http://emacsredux.com/blog/2013/04/01/playing-with-font-sizes/)
+
+[Highlight matching parentheses - Emacs Redux](http://emacsredux.com/blog/2013/04/01/highlight-matching-parentheses/)
+
+[Highlight current line - Emacs Redux](http://emacsredux.com/blog/2013/04/02/highlight-current-line/)
 
 ---
 
@@ -7452,7 +7508,7 @@ Doesn't mess with special buffers."
 
 i3
 
-:   ```plain
+:   ```tzx-plain
     X-f: fullscreen
     arrow keys: get focus
     e, s, w
@@ -7462,7 +7518,9 @@ i3
     shift r: restart i3 inplace
     ```
 
-```
+---
+
+```vimrc
 %s/重车,运营/运营,重车/g
 %s/,超速报警//g
 %s/,登录//g
@@ -7472,12 +7530,12 @@ g!/ACC/d
 
 删除中文字符: `:%s/\v[^\x00-\xff]+//g`
 
-You could use more expressive version of substitution you employed when assigning OBJECTS
+<#>(@vim @chinese)
 
-`OBJECTS=$(SOURCES:%.cpp=obj/%.o)`{.makefile}
+You could use **more expressive version of substitution** you employed when
+assigning OBJECTS: `OBJECTS=$(SOURCES:%.cpp=obj/%.o)`{.makefile}
 
-or use a standard text transformation function
-
+or use a **standard text transformation** function:
 `OBJECTS=$(addprefix obj/,$(SOURCES:.cpp=.o))`{.makefile}
 
 <div class="tzx-tabs">
@@ -7581,9 +7639,9 @@ void f() {
 * The Project Pages site at `muan.github.io/emoji` redirects to `muan.co/emoji`
   and is also available at `emoji.muan.co`.
 
-a **type qualifier** is not allowed on a static member function.
+a **`type qualifier`{.tzx-tag}** is not allowed on a static member function.
 
-```plain
+```tzx-plain
 文件夹 PATH 列表
 卷序列号为 00000200 BC08:BFBA
 D:.
@@ -7677,35 +7735,58 @@ what you had undone. Emacs makes this trivial. – phils
 
 朙（míng）月拼音
 
-[gat json](http://whudoc.qiniudn.com/gat.json)
-[tag json](http://whudoc.qiniudn.com/tag.json)
+- [gat json](http://whudoc.qiniudn.com/gat.json)
+- [tag json](http://whudoc.qiniudn.com/tag.json)
 
-you flinched!
+you flinched! (畏惧)
 
-- [豆瓣](http://www.douban.com/)
-- [Complex Network Notes](file:///D:/tzx/git/blog/publish/post-0084-complex-network-notes.html)
-- [Complex network - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Complex_network)
-- [小波变换在图像处理分析中的应用](file:///D:/tzx/git/blog/publish/post-0077-wavelet-transform.html)
-- [复杂网络 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlQTQlOEQlRTYlOUQlODIlRTclQkQlOTElRTclQkIlOUM=)
-- [学术海报 | LaTeX工作室](http://www.latexstudio.net/archives/category/tex-slides/latex-poster)
-- [一个清新典雅的beamer主题样式 | LaTeX工作室](http://www.latexstudio.net/archives/4948)
-- [用LaTeX重现1875年的广告样式 | LaTeX工作室](http://www.latexstudio.net/archives/4935)
-- [伯尔尼高等专业学院的beamer主题样式 | LaTeX工作室](http://www.latexstudio.net/archives/4931)
-- [一个清爽的beamer主题样式 | LaTeX工作室](http://www.latexstudio.net/archives/4894)
-- [一个所见即所得的科学公式编辑软件–GNU TeXmacs | LaTeX工作室](http://www.latexstudio.net/archives/4876)
-- [黄正华老师的课件beamer分享 | LaTeX工作室](http://www.latexstudio.net/archives/4853)
-- [LaTeX技巧826:TeXLive的安装与使用-黄正华 | LaTeX工作室](http://www.latexstudio.net/archives/4816)
-- [实现TeX的算法：回首编程技术的过去三十年 | LaTeX工作室](http://www.latexstudio.net/archives/4759)
-- [LaTeX排版The AWK Programming Language中译本 | LaTeX工作室](http://www.latexstudio.net/archives/4736)
-- [一个电子书LaTeX模板分享 | LaTeX工作室](http://www.latexstudio.net/archives/4665)
-- [LaTeX排版精致的数学笔记 | LaTeX工作室](http://www.latexstudio.net/archives/4625)
-- [中国科学技术大学研究生官网为LaTeX模板正名 | LaTeX工作室](http://www.latexstudio.net/archives/4542)
-- [中国科学技术大学学位与研究生教育 - 学位授予——文档下载](http://gradschool.ustc.edu.cn/ylb/material/xw/wdxz.html)
-- [一个用户的LaTeX笔记 | LaTeX工作室](http://www.latexstudio.net/archives/4429)
-- [Tikz绘制Android的短信息聊天界面 | LaTeX工作室](http://www.latexstudio.net/archives/4384)
-- [2015 GNOME年会beamer主题模板 | LaTeX工作室](http://www.latexstudio.net/archives/4347)
-- [莲枝专栏–来作笔记吧。 | LaTeX工作室](http://www.latexstudio.net/archives/4898)
-- [乌普萨拉大学的科技海报主题模板 | LaTeX工作室](http://www.latexstudio.net/archives/3012)
+[豆瓣](http://www.douban.com/)
+
+[Complex Network Notes](file:///D:/tzx/git/blog/publish/post-0084-complex-network-notes.html)
+
+[Complex network - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Complex_network)
+
+[小波变换在图像处理分析中的应用](file:///D:/tzx/git/blog/publish/post-0077-wavelet-transform.html)
+
+[复杂网络 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlQTQlOEQlRTYlOUQlODIlRTclQkQlOTElRTclQkIlOUM=)
+
+[学术海报 | LaTeX工作室](http://www.latexstudio.net/archives/category/tex-slides/latex-poster)
+
+[一个清新典雅的beamer主题样式 | LaTeX工作室](http://www.latexstudio.net/archives/4948)
+
+[用LaTeX重现1875年的广告样式 | LaTeX工作室](http://www.latexstudio.net/archives/4935)
+
+[伯尔尼高等专业学院的beamer主题样式 | LaTeX工作室](http://www.latexstudio.net/archives/4931)
+
+[一个清爽的beamer主题样式 | LaTeX工作室](http://www.latexstudio.net/archives/4894)
+
+[一个所见即所得的科学公式编辑软件–GNU TeXmacs | LaTeX工作室](http://www.latexstudio.net/archives/4876)
+
+[黄正华老师的课件beamer分享 | LaTeX工作室](http://www.latexstudio.net/archives/4853)
+
+[LaTeX技巧826:TeXLive的安装与使用-黄正华 | LaTeX工作室](http://www.latexstudio.net/archives/4816)
+
+[实现TeX的算法：回首编程技术的过去三十年 | LaTeX工作室](http://www.latexstudio.net/archives/4759)
+
+[LaTeX排版The AWK Programming Language中译本 | LaTeX工作室](http://www.latexstudio.net/archives/4736)
+
+[一个电子书LaTeX模板分享 | LaTeX工作室](http://www.latexstudio.net/archives/4665)
+
+[LaTeX排版精致的数学笔记 | LaTeX工作室](http://www.latexstudio.net/archives/4625)
+
+[中国科学技术大学研究生官网为LaTeX模板正名 | LaTeX工作室](http://www.latexstudio.net/archives/4542)
+
+[中国科学技术大学学位与研究生教育 - 学位授予——文档下载](http://gradschool.ustc.edu.cn/ylb/material/xw/wdxz.html)
+
+[一个用户的LaTeX笔记 | LaTeX工作室](http://www.latexstudio.net/archives/4429)
+
+[Tikz绘制Android的短信息聊天界面 | LaTeX工作室](http://www.latexstudio.net/archives/4384)
+
+[2015 GNOME年会beamer主题模板 | LaTeX工作室](http://www.latexstudio.net/archives/4347)
+
+[莲枝专栏–来作笔记吧。 | LaTeX工作室](http://www.latexstudio.net/archives/4898)
+
+[乌普萨拉大学的科技海报主题模板 | LaTeX工作室](http://www.latexstudio.net/archives/3012)
 
 真爱其实叫牺牲 -- 给永远的鼬 (by zak)
 
@@ -7855,7 +7936,7 @@ you flinched!
 ，年青时甚至被人误以为是同性恋者，但其实他无论对异性或是同性都没有兴趣。事实上
 ，他是一个博学的人，对历史了如指掌，但长大后只专注数学，任何其他事情也不管。
 
-Otaku Culture
+**`Otaku`{.tzx-tag} Culture**
 
 ---
 
@@ -12408,152 +12489,153 @@ chess), displaying its complexity despite relatively simple rules.
         #. &#x2611; [让Vim(gvim)支持C++STL库的自动补全 | Vimer的程序世界](http://www.vimer.cn/2010/01/%e8%ae%a9vimgvim%e6%94%af%e6%8c%81%e8%a1%a5%e5%85%a8cstl%e5%ba%93.html)
         #. &#x2611; [Vim Commands Cheat Sheet](http://bullium.com/support/vim.html)
 
-#. &#x2611; [Differential (mechanical device) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Differential_(mechanical_device))
-:   牛逼到爆！
-    :   A differential is a particular type of simple planetary gear train that
-        has the property that the angular velocity of its carrier is the
-        average of the angular velocities of its sun and annular gears.
+[Differential (mechanical device) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Differential_(mechanical_device))
 
-        ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Sprocket35b.jpg/170px-Sprocket35b.jpg)
+:   A differential is a particular type of simple planetary gear train that
+    has the property that the angular velocity of its carrier is the
+    average of the angular velocities of its sun and annular gears.
 
-        ![Hypoid gear pair that connects an automotive drive shaft to a differential.](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Sprocket35b.jpg/170px-Sprocket35b.jpg)
+    ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Sprocket35b.jpg/170px-Sprocket35b.jpg)
 
-        ![Input torque is applied to the ring gear (blue), which turns the
-          entire carrier (blue). The carrier is connected to both sun gears
-          (red and yellow) only through the planet gear (green). Torque is
-          transmitted to the sun gears through the planet gear. The planet
-          gear revolves around the axis of the carrier, driving the sun
-          gears. If the resistance at both wheels is equal, the planet gear
-          revolves without spinning about its own axis, and both wheels
-          turn at the same rate.](https://upload.wikimedia.org/wikipedia/commons/6/61/Differential_free.png)
+    ![Hypoid gear pair that connects an automotive drive shaft to a differential.](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Sprocket35b.jpg/170px-Sprocket35b.jpg)
 
-        See also
+    ![Input torque is applied to the ring gear (blue), which turns the
+      entire carrier (blue). The carrier is connected to both sun gears
+      (red and yellow) only through the planet gear (green). Torque is
+      transmitted to the sun gears through the planet gear. The planet
+      gear revolves around the axis of the carrier, driving the sun
+      gears. If the resistance at both wheels is equal, the planet gear
+      revolves without spinning about its own axis, and both wheels
+      turn at the same rate.](https://upload.wikimedia.org/wikipedia/commons/6/61/Differential_free.png)
 
-        #. &#x2611; [差速器是怎样工作的(Around the Corner (1937))](http://v.youku.com/v_show/id_XNDkwMTg0MDI0.html)
+    See also
 
-#. &#x2610; [Learn Vimscript the Hard Way](http://learnvimscriptthehardway.stevelosh.com/)
-#. &#x2610; [Best of VIM Tips, gVIM's Key Features zzapper](http://www.rayninfo.co.uk/vimtips.html)
-#. &#x2611; [visual studio 2010 - CMake configuring fails. "cl.exe is not able to compile a simple test program" - Stack Overflow](http://stackoverflow.com/questions/14590947/cmake-configuring-fails-cl-exe-is-not-able-to-compile-a-simple-test-program)
-:   good.
-    :   **Downgrade .NET to 4.0**
+      - [差速器是怎样工作的(Around the Corner (1937))](http://v.youku.com/v_show/id_XNDkwMTg0MDI0.html)
 
-        See also
+[Learn Vimscript the Hard Way](http://learnvimscriptthehardway.stevelosh.com/)
 
-        #. &#x2611; [cmake错误：C编译器不能简单的编译一个测试程序 - 开源中国社区](http://www.oschina.net/question/1378817_128323)
-        #. &#x2611; [dcmtk - CMake: "cl.exe not able to compile a simple test program" - Stack Overflow](http://stackoverflow.com/questions/22392976/cmake-cl-exe-not-able-to-compile-a-simple-test-program)
+[Best of VIM Tips, gVIM's Key Features zzapper](http://www.rayninfo.co.uk/vimtips.html)
 
-#. &#x2611; [turing_machine/buildall.sh at master · gigix/turing_machine](https://github.com/gigix/turing_machine/blob/master/clojure/buildall.sh)
-:   cool.
-    :   `pushd`{.bash} & `popd`{.bash}
+[visual studio 2010 - CMake configuring fails. "cl.exe is not able to compile a simple test program" - Stack Overflow](http://stackoverflow.com/questions/14590947/cmake-configuring-fails-cl-exe-is-not-able-to-compile-a-simple-test-program)
 
-        ```bash
-        ROOT_DIR=$(dirname $0)
+:   **Downgrade .NET to 4.0**
 
-        pushd $ROOT_DIR/domain && \
-        ./build.sh &&
-        popd && \
-        \
-        pushd $ROOT_DIR/web && \
-        ./build.sh
-        ```
+    See also
 
-#. &#x2610; [Content Folding | CSS-Tricks](https://css-tricks.com/content-folding/)
-#. &#x2611; [Styling `<hr>`{.html} with CSS](http://www.sovavsiti.cz/css/hr.html)
-:   ?
-    :   contents?
+    - [cmake错误：C编译器不能简单的编译一个测试程序 - 开源中国社区](http://www.oschina.net/question/1378817_128323)
+    - [dcmtk - CMake: "cl.exe not able to compile a simple test program" - Stack Overflow](http://stackoverflow.com/questions/22392976/cmake-cl-exe-not-able-to-compile-a-simple-test-program)
 
-        ```html
-        <div class="hr"><hr /></div>
-        ```
+[turing_machine/buildall.sh at master · gigix/turing_machine](https://github.com/gigix/turing_machine/blob/master/clojure/buildall.sh)
 
-        ```css
-        div.hr {
-            height: 15px;
-            background: #fff url(hr1.gif) no-repeat scroll center;
-        }
+:   `pushd`{.bash} & `popd`{.bash}
 
-        div.hr hr {
-            display: none;
-        }
-        ```
+    ```bash
+    ROOT_DIR=$(dirname $0)
 
-#. &#x2610; [刘未鹏 | MIND HACKS | 所有文章](file:///E:/blogs/MindHacks/mindhacks.cn/archives/index.html)
-#. &#x2611; [Frequently Used Commands of git - 羡辙杂俎](http://zhangwenli.com/blog/notes/note/2014/10/09/git/)
-:  good;
-    :   ```bash
-        # add tracked files only
-        $ git add -u
+    pushd $ROOT_DIR/domain && \
+    ./build.sh &&
+    popd && \
+    \
+    pushd $ROOT_DIR/web && \
+    ./build.sh
+    ```
 
-        # git checkout
-        $ git fetch
-        $ get checkout <branch_name>
+[Content Folding | CSS-Tricks](https://css-tricks.com/content-folding/)
 
-        # discard unstaged changes
-        $ git clean -df
-        $ git checkout -- .
+[Styling `<hr>`{.html} with CSS](http://www.sovavsiti.cz/css/hr.html)
 
-        # change author after commit
-        $ git commit --amend --author="TANg ZhiXiong <dvorak4tzx@qq.com>"
+:   ```html
+    <div class="hr"><hr /></div>
+    ```
 
-        # https -> ssh
-        $ git config --remote.origin.url git@github.com:<user>/proj.git
+    ```css
+    div.hr {
+        height: 15px;
+        background: #fff url(hr1.gif) no-repeat scroll center;
+    }
 
-        # colorful ui
-        $ git config --global color.ui auto
+    div.hr hr {
+        display: none;
+    }
+    ```
 
-        # alias
-        $ git config --global alias.ck checkout
+[刘未鹏 | MIND HACKS | 所有文章](file:///E:/blogs/MindHacks/mindhacks.cn/archives/index.html)
 
-        # view changes after commit
-        $ git log # to get the last two commit hases
-        $ git diff <old-commit-hash> <new-commit-hash>
+[Frequently Used Commands of git - 羡辙杂俎](http://zhangwenli.com/blog/notes/note/2014/10/09/git/)
 
-        # view remote commit log
-        $ git log origin/master
+:   ```bash
+    # add tracked files only
+    $ git add -u
 
-        # delete a remote branch
-        $ git push origin --delete <branch_name>
+    # git checkout
+    $ git fetch
+    $ get checkout <branch_name>
 
-        # push to a new remote branch
-        $ git push origin <local_branch_name>:<remote_branch_name>
+    # discard unstaged changes
+    $ git clean -df
+    $ git checkout -- .
 
-        # view files of last commit
-        $ git show REVISION:<path/to/file>
-        $ git show REVISION:<path/to/file> <file_name> # redirect it to a file
+    # change author after commit
+    $ git commit --amend --author="TANg ZhiXiong <dvorak4tzx@qq.com>"
 
-        # git update, ignore tracked local file
-        $ git update-index --assume-unchanged <file>
-        # undo it
-        $ git update-index --no-assume-unchanged <file>
-        ```
+    # https -> ssh
+    $ git config --remote.origin.url git@github.com:<user>/proj.git
 
-        You can use git show:
+    # colorful ui
+    $ git config --global color.ui auto
 
-        `$ git show REVISION:path/to/file`{.bash}
+    # alias
+    $ git config --global alias.ck checkout
 
-        For example, to show the 4th last commit of the file `src/main.c`, use:
+    # view changes after commit
+    $ git log # to get the last two commit hases
+    $ git diff <old-commit-hash> <new-commit-hash>
 
-        `$ git show HEAD~4:src/main.c`{.bash}
+    # view remote commit log
+    $ git log origin/master
 
-        Note that the path is from the root of the repository unless it starts
-        with `./` or `../` to indicate a relative path. For more information, check
-        out the man page for [`git-show`{.bash}](http://schacon.github.com/git/git-show.html).
+    # delete a remote branch
+    $ git push origin --delete <branch_name>
 
-        Doing this by date looks like this:
+    # push to a new remote branch
+    $ git push origin <local_branch_name>:<remote_branch_name>
 
-        `$ git show HEAD@{2013-02-25}:./fileInCurrentDirectory.txt`{.bash}
+    # view files of last commit
+    $ git show REVISION:<path/to/file>
+    $ git show REVISION:<path/to/file> <file_name> # redirect it to a file
 
-        Note that `HEAD@{2013-02-25}` means "where HEAD was on 2013-02-25" in
-        this repository (using the
-        [`reflog`{.bash}](http://git-scm.com/docs/git-reflog)), not "the last
-        commit before 2013-02-25 in this branch in history".
+    # git update, ignore tracked local file
+    $ git update-index --assume-unchanged <file>
+    # undo it
+    $ git update-index --no-assume-unchanged <file>
+    ```
 
-        Refs
+    You can use git show:
 
-        #. &#x2611; [Is there a quick git command to see an old version of a file? - Stack Overflow](http://stackoverflow.com/questions/338436/is-there-a-quick-git-command-to-see-an-old-version-of-a-file)
+    `$ git show REVISION:path/to/file`{.bash}
 
-#. &#x2611; [[BetterExplained]为什么你应该（从现在开始就）写博客](http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/)
-:   good.
+    For example, to show the 4th last commit of the file `src/main.c`, use:
+
+    `$ git show HEAD~4:src/main.c`{.bash}
+
+    Note that the path is from the root of the repository unless it starts
+    with `./` or `../` to indicate a relative path. For more information, check
+    out the man page for [`git-show`{.bash}](http://schacon.github.com/git/git-show.html).
+
+    Doing this by date looks like this:
+
+    `$ git show HEAD@{2013-02-25}:./fileInCurrentDirectory.txt`{.bash}
+
+    Note that `HEAD@{2013-02-25}` means "where HEAD was on 2013-02-25" in
+    this repository (using the
+    [`reflog`{.bash}](http://git-scm.com/docs/git-reflog)), not "the last
+    commit before 2013-02-25 in this branch in history".
+
+    Refs
+
+    #. &#x2611; [Is there a quick git command to see an old version of a file? - Stack Overflow](http://stackoverflow.com/questions/338436/is-there-a-quick-git-command-to-see-an-old-version-of-a-file)
+
+[为什么你应该（从现在开始就）写博客](http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/)
     :   如果你选择经常总结自己的知识体系，并说出来给你的读者听，你就会发现你自
         己创造了这样的机会。如果我们平时不反思，**我们觉得很多事情都是当然的**，
         但结果如果要你一开口说给别人听，常常会发现事情就开始变得不那么明显了，
@@ -12575,828 +12657,852 @@ chess), displaying its complexity despite relatively simple rules.
         不妨换一下位置，这么来告诉自己：如果你看到别人博客来上这么一段，你会有
         兴趣看吗？
 
-#. &#x2610; [mastering-emacs-in-one-year-guide/guide-zh.org at master · redguardtoo/mastering-emacs-in-one-year-guide](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org)
-#. &#x2611; [钗黛双收：若你也同Vim难割舍，却又看Emacs情切切 | Emacs中文网](http://emacser.com/vimvsemacs.htm)
-:   humorous
-    :   #. 由于两位佳人的理念差别之大，加上各自阵营之间的鸿沟之深，使得先贤先哲
-            基本上都会在这两个阵营里面挑一个来站队。
-        #. 选择 Vim 或 Emacs 已经不仅取决于我们在编辑文本时的好恶，而已经上升到
-            干活的人怎么挑工具，过日子的人怎么选老婆这种哲学高度的问题。
-        #. 当装机圣手们的情商智商普遍被挑战了以后，大致是迅速分化为两派——啃骨头
-            派和换骨头派。啃派如我，继续捏着脚适应 Vim 的小鞋；换派不用说也能猜
-            到，自然是鞋也不要就转身踏入了 Emacs 阵营——在那边起码知道怎么打字。
-        #. 玩电脑的都是懒人，懒人有个癖好叫“Don’t repeat yourself”，如果谁弄出
-            一套比较高效的键盘操作方式，能让我学一次以后就不用再学了，那就暂时
-            去tnnd 的门派。
-        #. 电影《社交网络 The Social Network》里面有这样一个镜头，在扎克伯格同
-            学悲愤不已，要把女生头像和畜生猪狗一起打分时，他来了句“有必要重启
-            Emacs，修改代码”。这个杜撰的场景告诉我们，IT 巨星再怎么胸怀壮志，始
-            于足下的不过是手指另一端连着的编辑器。当 geek 们叫嚣要在世界上留下
-            一个痕迹（make a dent in the universe）的时候，手里常常拎着一把折凳，
-            折凳背面写着——Emacs。
-        #. 博士期间，我主要用的工具是 Matlab 和 Visual Studio，这两个工具自带的
-            编辑器**与 Vim 相比都是小白，属于要严重影响心情和智商的那一种**。
-        #. 可是作为 Vim 的死忠，对于手掌几乎不挪窝的向往，那是消失不掉的。
+[mastering-emacs-in-one-year-guide/guide-zh.org at master · redguardtoo/mastering-emacs-in-one-year-guide](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org)
 
-#. &#x2611; [[201501204] 早上好，我的公主！](http://www.douban.com/note/527349294/)
-#. &#x2610; [Github is Your New Resume – code.dblock.org | tech blog](http://code.dblock.org/2011/07/14/github-is-your-new-resume.html)
-#. &#x2611; [给我看你的博客 | 透明思考](http://gigix.thoughtworkers.org/2011/6/8/show-me-your-blog/)
-:   good.
-    :   所以涅，应聘的童鞋们，最好把你的博客一起告诉我们。看到一个精彩的博客，
-        简历神马的都是浮云～
+[钗黛双收：若你也同Vim难割舍，却又看Emacs情切切 | Emacs中文网](http://emacser.com/vimvsemacs.htm)
 
-#. &#x2611; [怎样花两年时间去面试一个人](http://mindhacks.cn/2011/11/04/how-to-interview-a-person-for-two-years/)
-:  &nbsp;
-    :   正是这样的不容易，才有不少公司走内部培养的办法，这里的逻辑是：一上来就
-        招到靠谱的人太难了，但找一块靠谱的璞玉然后雕琢雕琢相对就简单很多。这倒
-        是个办法，但这样做的人难免就陷入了纠结：培养好了，人跑了怎么办。这也不
-        能怪招聘的公司，的确是人之常情。其实解决的办法也很简单，培养的时候进行
-        适当引导，让员工发挥自己的主动学习能力，这样不但人得到更多成长，公司也
-        不会觉得投入太多患得患失。所谓师傅领进门修行在个人。
+:   - 由于两位佳人的理念差别之大，加上各自阵营之间的鸿沟之深，使得先贤先哲基本
+      上都会在这两个阵营里面挑一个来站队。
+    - 选择 Vim 或 Emacs 已经不仅取决于我们在编辑文本时的好恶，而已经上升到干活
+      的人怎么挑工具，过日子的人怎么选老婆这种哲学高度的问题。
+    - 当装机圣手们的情商智商普遍被挑战了以后，大致是迅速分化为两派——啃骨头派和
+      换骨头派。啃派如我，继续捏着脚适应 Vim 的小鞋；换派不用说也能猜到，自然是
+      鞋也不要就转身踏入了 Emacs 阵营——在那边起码知道怎么打字。
+    - 玩电脑的都是懒人，懒人有个癖好叫“Don’t repeat yourself”，如果谁弄出一套比
+      较高效的键盘操作方式，能让我学一次以后就不用再学了，那就暂时去tnnd 的门派。
+    - 电影《社交网络 The Social Network》里面有这样一个镜头，在扎克伯格同学悲愤
+      不已，要把女生头像和畜生猪狗一起打分时，他来了句“有必要重启Emacs，修改代
+      码”。这个杜撰的场景告诉我们，IT 巨星再怎么胸怀壮志，始于足下的不过是手指
+      另一端连着的编辑器。当 geek 们叫嚣要在世界上留下一个痕迹（make a dent in
+      the universe）的时候，手里常常拎着一把折凳，折凳背面写着——Emacs。
+    - 博士期间，我主要用的工具是 Matlab 和 Visual Studio，这两个工具自带的编辑
+      器**与 Vim 相比都是小白，属于要严重影响心情和智商的那一种**。
+    - 可是作为 Vim 的死忠，对于手掌几乎不挪窝的向往，那是消失不掉的。
 
-        而学习能力简直算是这个行业最重要的能力没有之一了。
+[早上好，我的公主！](http://www.douban.com/note/527349294/)
 
-        所以，简而言之，如果把人才培养/招聘这件事情本身类比做一个项目，那么这整
-        个项目迄今为止就是一个巨大的失败。
+[Github is Your New Resume – code.dblock.org | tech blog](http://code.dblock.org/2011/07/14/github-is-your-new-resume.html)
 
-        越来越多的 IT 公司在招聘的时候要求应聘者给出 GitHub 账号。甚至已经有人
-        为 GitHub 写了根据 GitHub 上的历史自动生成简历的工具。
+[给我看你的博客 | 透明思考](http://gigix.thoughtworkers.org/2011/6/8/show-me-your-blog/)
 
-        正如邹欣老师所说，你的工作就是最好的面试。
+:   所以涅，应聘的童鞋们，最好把你的博客一起告诉我们。看到一个精彩的博客，
+    简历神马的都是浮云～
 
-        书单 + GitHub，就相当于一个两年左右的面试。
+[怎样花两年时间去面试一个人](http://mindhacks.cn/2011/11/04/how-to-interview-a-person-for-two-years/)
 
-        《编程之美》为什么常居畅销榜？因为它透露了雇主眼中的需求，明确、清晰的
-        需求，可以实现，并且知道怎么去实现的需求。
+:   正是这样的不容易，才有不少公司走内部培养的办法，这里的逻辑是：一上来就
+    招到靠谱的人太难了，但找一块靠谱的璞玉然后雕琢雕琢相对就简单很多。这倒
+    是个办法，但这样做的人难免就陷入了纠结：培养好了，人跑了怎么办。这也不
+    能怪招聘的公司，的确是人之常情。其实解决的办法也很简单，培养的时候进行
+    适当引导，让员工发挥自己的主动学习能力，这样不但人得到更多成长，公司也
+    不会觉得投入太多患得患失。所谓师傅领进门修行在个人。
 
-        那么，学校/老师在这个事情当中的位置呢？说实话我不知道。没有哪个行业像
-        IT 行业这样特殊：没有什么东西不能够（应该）在互联网上学到的。自组织的力
-        量完全大过传统的教育方式。
+    而学习能力简直算是这个行业最重要的能力没有之一了。
 
-        刚才我就收到一位同学邀请我上知乎回答一个问题“找工作的首要原则是什么？”，
-        当然，这个问题的答案是：“弄清雇主的需求到底是什么”。
+    所以，简而言之，如果把人才培养/招聘这件事情本身类比做一个项目，那么这整
+    个项目迄今为止就是一个巨大的失败。
 
-        列一下我所认为的，你面试微软前必须要读的十本书：
+    越来越多的 IT 公司在招聘的时候要求应聘者给出 GitHub 账号。甚至已经有人
+    为 GitHub 写了根据 GitHub 上的历史自动生成简历的工具。
 
-        #. Code: The Hidden Language of Computer Hardware and Software （《编码的奥秘》）
-        #. &hearts; Computer System: A Programmer’s Perspective （《深入理解计算机系统》） / Windows via C/C++ （《Windows核心编程》 / 《程序员的自我修养》
-        #. Code Complete 2（《代码大全》）/ The Pragmatic Programmer （《程序员修炼之道》，我也把这本书称为《代码小全》）
-        #. &hearts; Programming Pearls （《编程珠玑》） / Algorithms / Algorithm Design / 《编程之美》
-        #. &hearts; The C Programming Language
-        #. The C++ Programming Language / Programming: Principles and Practice Using C++ / Accelerated C++
-        #. &hearts; The Structure and Interpretation of Computer Programs （《计算机程序的构造和解释》）
-        #. Clean Code / Implementation Patterns
-        #. &hearts; Design Patterns （《设计模式》） / Agile Software Development, Principles, Patterns, and Practices
-        #. Refactoring （《重构》）
+    正如邹欣老师所说，你的工作就是最好的面试。
 
-        云风：
+    书单 + GitHub，就相当于一个两年左右的面试。
 
-        #. C++ 编程思想
-        #. Effective C++
-        #. 深度探索 C++ 对象模型
-        #. C++ 语言的设计和演化
-        #. C 专家编程
-        #. C 陷阱与缺陷
-        #. C 语言接口与实现
-        #. Lua 程序设计
-        #. Linkers and Loaders
-        #. COM 本质论
-        #. Windows 核心编程
-        #. 深入解析 Windows 操作系统
-        #. 程序员修炼之道
-        #. 代码大全
-        #. UNIX 编程艺术
-        #. 设计模式
-        #. 代码优化：有效使用内存
-        #. 深入理解计算机系统
-        #. 深入理解 LINUX 内核
-        #. TCP/IP 详解
+    《编程之美》为什么常居畅销榜？因为它透露了雇主眼中的需求，明确、清晰的
+    需求，可以实现，并且知道怎么去实现的需求。
 
-        张峥（微软亚洲研究院副院长）：
+    那么，学校/老师在这个事情当中的位置呢？说实话我不知道。没有哪个行业像
+    IT 行业这样特殊：没有什么东西不能够（应该）在互联网上学到的。自组织的力
+    量完全大过传统的教育方式。
 
-        #. Algorithms (by Sanjoy Dasgupta, Christos Papadimitriou and Umesh Vazirani)
-        #. Data Structure and Algorithms
-        #. The C Programming Language
-        #. The Design of the UNIX Operating System
-        #. Compilers （龙书）
-        #. Computer Architecture: A Quantitative Approach
-        #. Flow
-        #. Outliers (why hard work and luck are both important)
+    刚才我就收到一位同学邀请我上知乎回答一个问题“找工作的首要原则是什么？”，
+    当然，这个问题的答案是：“弄清雇主的需求到底是什么”。
 
-        邹欣（MSRA 创新工程中心首席研发经理）：
+    列一下我所认为的，你面试微软前必须要读的十本书：
 
-        #. The Myths of Innovation
-        #. The Innovator’s Dilemma
-        #. The Innovator’s Solution
-        #. Crossing the Chasm
-        #. Inside Intuit
-        #. 盛田昭夫
-        #. 杰克·韦尔奇自传
-        #. 梦断代码
-        #. Innovation
-        #. 浪潮之巅
+    #. Code: The Hidden Language of Computer Hardware and Software （《编码的奥秘》）
+    #. &hearts; Computer System: A Programmer’s Perspective （《深入理解计算机系统》） / Windows via C/C++ （《Windows核心编程》 / 《程序员的自我修养》
+    #. Code Complete 2（《代码大全》）/ The Pragmatic Programmer （《程序员修炼之道》，我也把这本书称为《代码小全》）
+    #. &hearts; Programming Pearls （《编程珠玑》） / Algorithms / Algorithm Design / 《编程之美》
+    #. &hearts; The C Programming Language
+    #. The C++ Programming Language / Programming: Principles and Practice Using C++ / Accelerated C++
+    #. &hearts; The Structure and Interpretation of Computer Programs （《计算机程序的构造和解释》）
+    #. Clean Code / Implementation Patterns
+    #. &hearts; Design Patterns （《设计模式》） / Agile Software Development, Principles, Patterns, and Practices
+    #. Refactoring （《重构》）
 
-#. &#x2611; [创业公司应该如何招人？ - 创业公司 - 知乎](http://www.zhihu.com/question/19551593)
-:   great.
-    :   我用过的大家可能没有用的方法：
+    云风：
 
-        #. 上 twitter，看 XXX 的 follower，一个一个看，看他们的 twitter，博客，
-            Google Reader 分享，想办法搞到邮件，联系，半夜电话骚扰。
-        #. **上豆瓣，前端后端挑几本重量级的书，去找想看，看过，正在看这本书的人，一个一
-            个看，看他们的活动，博客，Google Reader 分享，想办法搞到邮件，联系，
-            半夜电话骚扰。**
-        #. 找同事，问他们都看什么技术博客，想办法搞到邮件，
-            联系，半夜电话骚扰。
+    #. C++ 编程思想
+    #. Effective C++
+    #. 深度探索 C++ 对象模型
+    #. C++ 语言的设计和演化
+    #. C 专家编程
+    #. C 陷阱与缺陷
+    #. C 语言接口与实现
+    #. Lua 程序设计
+    #. Linkers and Loaders
+    #. COM 本质论
+    #. Windows 核心编程
+    #. 深入解析 Windows 操作系统
+    #. 程序员修炼之道
+    #. 代码大全
+    #. UNIX 编程艺术
+    #. 设计模式
+    #. 代码优化：有效使用内存
+    #. 深入理解计算机系统
+    #. 深入理解 LINUX 内核
+    #. TCP/IP 详解
 
-        作为一个小公司，加入我们是有风险的，小公司倒闭的几率比大公司大多了，只
-        不过大多不上报纸而已。
+    张峥（微软亚洲研究院副院长）：
 
-#. &#x2610; [6.1. GitHub:Gist — GotGitHub](http://www.worldhello.net/gotgithub/06-side-projects/gist.html)
-#. &#x2611; [解决VS2010自带的C/C++编译器CL找不到mspdb100.dll的问题 - dudu - 博客园](http://www.cnblogs.com/dudu/archive/2011/05/21/2053104.html)
-:   &nbsp;
-    :   `C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE` &rarr; `%PATH%`
-        `C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Tools\vsvars32.bat`:
+    #. Algorithms (by Sanjoy Dasgupta, Christos Papadimitriou and Umesh Vazirani)
+    #. Data Structure and Algorithms
+    #. The C Programming Language
+    #. The Design of the UNIX Operating System
+    #. Compilers （龙书）
+    #. Computer Architecture: A Quantitative Approach
+    #. Flow
+    #. Outliers (why hard work and luck are both important)
 
-        ```plain
-        @echo Setting environment for using Microsoft Visual Studio 2010 x86 tools.
+    邹欣（MSRA 创新工程中心首席研发经理）：
 
-        @call :GetVSCommonToolsDir
-        @if "%VS100COMNTOOLS%"=="" goto error_no_VS100COMNTOOLSDIR
+    #. The Myths of Innovation
+    #. The Innovator’s Dilemma
+    #. The Innovator’s Solution
+    #. Crossing the Chasm
+    #. Inside Intuit
+    #. 盛田昭夫
+    #. 杰克·韦尔奇自传
+    #. 梦断代码
+    #. Innovation
+    #. 浪潮之巅
 
-        @call "%VS100COMNTOOLS%VCVarsQueryRegistry.bat" 32bit No64bit
+[创业公司应该如何招人？ - 创业公司 - 知乎](http://www.zhihu.com/question/19551593)
 
-        @if "%VSINSTALLDIR%"=="" goto error_no_VSINSTALLDIR
-        @if "%FrameworkDir32%"=="" goto error_no_FrameworkDIR32
-        @if "%FrameworkVersion32%"=="" goto error_no_FrameworkVer32
-        @if "%Framework35Version%"=="" goto error_no_Framework35Version
+:   - 上 twitter，看 XXX 的 follower，一个一个看，看他们的 twitter，博客，
+      Google Reader 分享，想办法搞到邮件，联系，半夜电话骚扰。
+    - **上豆瓣，前端后端挑几本重量级的书，去找想看，看过，正在看这本书的人，一
+      个一个看，看他们的活动，博客，Google Reader 分享，想办法搞到邮件，联系，
+      半夜电话骚扰。**
+    - 找同事，问他们都看什么技术博客，想办法搞到邮件，联系，半夜电话骚扰。
 
-        @set FrameworkDir=%FrameworkDir32%
-        @set FrameworkVersion=%FrameworkVersion32%
+    作为一个小公司，加入我们是有风险的，小公司倒闭的几率比大公司大多了，只
+    不过大多不上报纸而已。
 
-        @if not "%WindowsSdkDir%" == "" (
-            @set "PATH=%WindowsSdkDir%bin\NETFX 4.0 Tools;%WindowsSdkDir%bin;%PATH%"
-            @set "INCLUDE=%WindowsSdkDir%include;%INCLUDE%"
-            @set "LIB=%WindowsSdkDir%lib;%LIB%"
+[6.1. GitHub:Gist — GotGitHub](http://www.worldhello.net/gotgithub/06-side-projects/gist.html)
+
+[解决VS2010自带的C/C++编译器CL找不到mspdb100.dll的问题 - dudu - 博客园](http://www.cnblogs.com/dudu/archive/2011/05/21/2053104.html)
+
+:   `C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE` &rarr; `%PATH%`
+    `C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Tools\vsvars32.bat`:
+
+    <small><small>
+    ```plain
+    @echo Setting environment for using Microsoft Visual Studio 2010 x86 tools.
+
+    @call :GetVSCommonToolsDir
+    @if "%VS100COMNTOOLS%"=="" goto error_no_VS100COMNTOOLSDIR
+
+    @call "%VS100COMNTOOLS%VCVarsQueryRegistry.bat" 32bit No64bit
+
+    @if "%VSINSTALLDIR%"=="" goto error_no_VSINSTALLDIR
+    @if "%FrameworkDir32%"=="" goto error_no_FrameworkDIR32
+    @if "%FrameworkVersion32%"=="" goto error_no_FrameworkVer32
+    @if "%Framework35Version%"=="" goto error_no_Framework35Version
+
+    @set FrameworkDir=%FrameworkDir32%
+    @set FrameworkVersion=%FrameworkVersion32%
+
+    @if not "%WindowsSdkDir%" == "" (
+        @set "PATH=%WindowsSdkDir%bin\NETFX 4.0 Tools;%WindowsSdkDir%bin;%PATH%"
+        @set "INCLUDE=%WindowsSdkDir%include;%INCLUDE%"
+        @set "LIB=%WindowsSdkDir%lib;%LIB%"
+    )
+
+    @rem
+    @rem Root of Visual Studio IDE installed files.
+    @rem
+    @set DevEnvDir=%VSINSTALLDIR%Common7\IDE\
+
+    @rem PATH
+    @rem ----
+    @if exist "%VSINSTALLDIR%Team Tools\Performance Tools" (
+        @set "PATH=%VSINSTALLDIR%Team Tools\Performance Tools;%PATH%"
+    )
+    @if exist "%ProgramFiles%\HTML Help Workshop" set PATH=%ProgramFiles%\HTML Help Workshop;%PATH%
+    @if exist "%ProgramFiles(x86)%\HTML Help Workshop" set PATH=%ProgramFiles(x86)%\HTML Help Workshop;%PATH%
+    @if exist "%VCINSTALLDIR%VCPackages" set PATH=%VCINSTALLDIR%VCPackages;%PATH%
+    @set PATH=%FrameworkDir%%Framework35Version%;%PATH%
+    @set PATH=%FrameworkDir%%FrameworkVersion%;%PATH%
+    @set PATH=%VSINSTALLDIR%Common7\Tools;%PATH%
+    @if exist "%VCINSTALLDIR%BIN" set PATH=%VCINSTALLDIR%BIN;%PATH%
+    @set PATH=%DevEnvDir%;%PATH%
+
+    @if exist "%VSINSTALLDIR%VSTSDB\Deploy" (
+        @set "PATH=%VSINSTALLDIR%VSTSDB\Deploy;%PATH%"
+    )
+
+    @if not "%FSHARPINSTALLDIR%" == "" (
+        @set "PATH=%FSHARPINSTALLDIR%;%PATH%"
+    )
+
+    @rem INCLUDE
+    @rem -------
+    @if exist "%VCINSTALLDIR%ATLMFC\INCLUDE" set INCLUDE=%VCINSTALLDIR%ATLMFC\INCLUDE;%INCLUDE%
+    @if exist "%VCINSTALLDIR%INCLUDE" set INCLUDE=%VCINSTALLDIR%INCLUDE;%INCLUDE%
+
+    @rem LIB
+    @rem ---
+    @if exist "%VCINSTALLDIR%ATLMFC\LIB" set LIB=%VCINSTALLDIR%ATLMFC\LIB;%LIB%
+    @if exist "%VCINSTALLDIR%LIB" set LIB=%VCINSTALLDIR%LIB;%LIB%
+
+    @rem LIBPATH
+    @rem -------
+    @if exist "%VCINSTALLDIR%ATLMFC\LIB" set LIBPATH=%VCINSTALLDIR%ATLMFC\LIB;%LIBPATH%
+    @if exist "%VCINSTALLDIR%LIB" set LIBPATH=%VCINSTALLDIR%LIB;%LIBPATH%
+    @set LIBPATH=%FrameworkDir%%Framework35Version%;%LIBPATH%
+    @set LIBPATH=%FrameworkDir%%FrameworkVersion%;%LIBPATH%
+
+    @goto end
+
+    @REM -----------------------------------------------------------------------
+    :GetVSCommonToolsDir
+    @set VS100COMNTOOLS=
+    @call :GetVSCommonToolsDirHelper32 HKLM > nul 2>&1
+    @if errorlevel 1 call :GetVSCommonToolsDirHelper32 HKCU > nul 2>&1
+    @if errorlevel 1 call :GetVSCommonToolsDirHelper64  HKLM > nul 2>&1
+    @if errorlevel 1 call :GetVSCommonToolsDirHelper64  HKCU > nul 2>&1
+    @exit /B 0
+
+    :GetVSCommonToolsDirHelper32
+    @for /F "tokens=1,2*" %%i in ('reg query "%1\SOFTWARE\Microsoft\VisualStudio\SxS\VS7" /v "10.0"') DO (
+        @if "%%i"=="10.0" (
+            @SET "VS100COMNTOOLS=%%k"
         )
+    )
+    @if "%VS100COMNTOOLS%"=="" exit /B 1
+    @SET "VS100COMNTOOLS=%VS100COMNTOOLS%Common7\Tools\"
+    @exit /B 0
 
-        @rem
-        @rem Root of Visual Studio IDE installed files.
-        @rem
-        @set DevEnvDir=%VSINSTALLDIR%Common7\IDE\
-
-        @rem PATH
-        @rem ----
-        @if exist "%VSINSTALLDIR%Team Tools\Performance Tools" (
-            @set "PATH=%VSINSTALLDIR%Team Tools\Performance Tools;%PATH%"
+    :GetVSCommonToolsDirHelper64
+    @for /F "tokens=1,2*" %%i in ('reg query "%1\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\SxS\VS7" /v "10.0"') DO (
+        @if "%%i"=="10.0" (
+            @SET "VS100COMNTOOLS=%%k"
         )
-        @if exist "%ProgramFiles%\HTML Help Workshop" set PATH=%ProgramFiles%\HTML Help Workshop;%PATH%
-        @if exist "%ProgramFiles(x86)%\HTML Help Workshop" set PATH=%ProgramFiles(x86)%\HTML Help Workshop;%PATH%
-        @if exist "%VCINSTALLDIR%VCPackages" set PATH=%VCINSTALLDIR%VCPackages;%PATH%
-        @set PATH=%FrameworkDir%%Framework35Version%;%PATH%
-        @set PATH=%FrameworkDir%%FrameworkVersion%;%PATH%
-        @set PATH=%VSINSTALLDIR%Common7\Tools;%PATH%
-        @if exist "%VCINSTALLDIR%BIN" set PATH=%VCINSTALLDIR%BIN;%PATH%
-        @set PATH=%DevEnvDir%;%PATH%
+    )
+    @if "%VS100COMNTOOLS%"=="" exit /B 1
+    @SET "VS100COMNTOOLS=%VS100COMNTOOLS%Common7\Tools\"
+    @exit /B 0
 
-        @if exist "%VSINSTALLDIR%VSTSDB\Deploy" (
-            @set "PATH=%VSINSTALLDIR%VSTSDB\Deploy;%PATH%"
-        )
+    @REM -----------------------------------------------------------------------
+    :error_no_VS100COMNTOOLSDIR
+    @echo ERROR: Cannot determine the location of the VS Common Tools folder.
+    @goto end
 
-        @if not "%FSHARPINSTALLDIR%" == "" (
-            @set "PATH=%FSHARPINSTALLDIR%;%PATH%"
-        )
+    :error_no_VSINSTALLDIR
+    @echo ERROR: Cannot determine the location of the VS installation.
+    @goto end
 
-        @rem INCLUDE
-        @rem -------
-        @if exist "%VCINSTALLDIR%ATLMFC\INCLUDE" set INCLUDE=%VCINSTALLDIR%ATLMFC\INCLUDE;%INCLUDE%
-        @if exist "%VCINSTALLDIR%INCLUDE" set INCLUDE=%VCINSTALLDIR%INCLUDE;%INCLUDE%
+    :error_no_FrameworkDIR32
+    @echo ERROR: Cannot determine the location of the .NET Framework 32bit installation.
+    @goto end
 
-        @rem LIB
-        @rem ---
-        @if exist "%VCINSTALLDIR%ATLMFC\LIB" set LIB=%VCINSTALLDIR%ATLMFC\LIB;%LIB%
-        @if exist "%VCINSTALLDIR%LIB" set LIB=%VCINSTALLDIR%LIB;%LIB%
+    :error_no_FrameworkVer32
+    @echo ERROR: Cannot determine the version of the .NET Framework 32bit installation.
+    @goto end
 
-        @rem LIBPATH
-        @rem -------
-        @if exist "%VCINSTALLDIR%ATLMFC\LIB" set LIBPATH=%VCINSTALLDIR%ATLMFC\LIB;%LIBPATH%
-        @if exist "%VCINSTALLDIR%LIB" set LIBPATH=%VCINSTALLDIR%LIB;%LIBPATH%
-        @set LIBPATH=%FrameworkDir%%Framework35Version%;%LIBPATH%
-        @set LIBPATH=%FrameworkDir%%FrameworkVersion%;%LIBPATH%
+    :error_no_Framework35Version
+    @echo ERROR: Cannot determine the .NET Framework 3.5 version.
+    @goto end
 
-        @goto end
+    :end
+    ```
+    </small></small>
 
-        @REM -----------------------------------------------------------------------
-        :GetVSCommonToolsDir
-        @set VS100COMNTOOLS=
-        @call :GetVSCommonToolsDirHelper32 HKLM > nul 2>&1
-        @if errorlevel 1 call :GetVSCommonToolsDirHelper32 HKCU > nul 2>&1
-        @if errorlevel 1 call :GetVSCommonToolsDirHelper64  HKLM > nul 2>&1
-        @if errorlevel 1 call :GetVSCommonToolsDirHelper64  HKCU > nul 2>&1
-        @exit /B 0
+[热爱正当年，青葱已做汤。](http://www.douban.com/note/518991649/)
 
-        :GetVSCommonToolsDirHelper32
-        @for /F "tokens=1,2*" %%i in ('reg query "%1\SOFTWARE\Microsoft\VisualStudio\SxS\VS7" /v "10.0"') DO (
-            @if "%%i"=="10.0" (
-                @SET "VS100COMNTOOLS=%%k"
-            )
-        )
-        @if "%VS100COMNTOOLS%"=="" exit /B 1
-        @SET "VS100COMNTOOLS=%VS100COMNTOOLS%Common7\Tools\"
-        @exit /B 0
+:   那个妞是隔壁班的，短发很俏皮，笑容很俏皮，打扮也很俏皮。
 
-        :GetVSCommonToolsDirHelper64
-        @for /F "tokens=1,2*" %%i in ('reg query "%1\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\SxS\VS7" /v "10.0"') DO (
-            @if "%%i"=="10.0" (
-                @SET "VS100COMNTOOLS=%%k"
-            )
-        )
-        @if "%VS100COMNTOOLS%"=="" exit /B 1
-        @SET "VS100COMNTOOLS=%VS100COMNTOOLS%Common7\Tools\"
-        @exit /B 0
+    那年的夏天我坐在靠走廊的位置，每次趴在桌子上发呆的时候，都能看见她从走廊经
+    过。
 
-        @REM -----------------------------------------------------------------------
-        :error_no_VS100COMNTOOLSDIR
-        @echo ERROR: Cannot determine the location of the VS Common Tools folder.
-        @goto end
+    她从没看过我一眼，但我总感觉她走路带着一阵风，有香气的、活泼的、俏皮的风。
 
-        :error_no_VSINSTALLDIR
-        @echo ERROR: Cannot determine the location of the VS installation.
-        @goto end
+    我把这个唯一的秘密告诉了阿洲，阿洲说胸好小，皮肤又黑，你喜欢她什么？
 
-        :error_no_FrameworkDIR32
-        @echo ERROR: Cannot determine the location of the .NET Framework 32bit installation.
-        @goto end
+    那时我还是个孩子，**我说你不懂，这是爱情**。
 
-        :error_no_FrameworkVer32
-        @echo ERROR: Cannot determine the version of the .NET Framework 32bit installation.
-        @goto end
+    很奇怪，我一个那么自卑的人，居然会写情书。在这封人生中唯一的一封情书的结尾
+    ，我写到：被人喜欢总算是一件好事情，请你不要害怕。奇怪，为什么那个时候我就
+    知道被陌生人喜欢是一件值得害怕的事？
 
-        :error_no_Framework35Version
-        @echo ERROR: Cannot determine the .NET Framework 3.5 version.
-        @goto end
+    那个妞叫什么名字我也不知道，因为性格内向，因为表白被拒，我也不敢去打听任何
+    与她有关的信息。我也没有和她说过任何话，她可能都不知道我是哪个。可是因为她
+    ，**那时的我看起来像是一个诗人**。
 
-        :end
-        ```
+    初恋是什么？是初次对人动心，还是初次和人恋爱呢？我不知道，我只能自我安慰说
+    ：这可能就是最完美的暗恋吧。
 
-#. &#x2611; [热爱正当年，青葱已做汤。](http://www.douban.com/note/518991649/)
-:   great.
-    :   那个妞是隔壁班的，短发很俏皮，笑容很俏皮，打扮也很俏皮。
+[cmderdev/cmder](https://github.com/cmderdev/cmder)
 
-        那年的夏天我坐在靠走廊的位置，每次趴在桌子上发呆的时候，都能看见她从走廊经过。
+:   The main advantage of Cmder is portability. It is designed to be
+    **totally self-contained with no external dependencies**, which makes
+    it great for USB Sticks or Dropbox - **you can carry your console,
+    aliases and binaries (like wget, curl and git) with you anywhere!**
 
-        她从没看过我一眼，但我总感觉她走路带着一阵风，有香气的、活泼的、俏皮的风。
+[就喜欢这种嘿嘿嘿的短片 - 简书](http://www.jianshu.com/p/15052aaaeaab)
 
-        我把这个唯一的秘密告诉了阿洲，阿洲说胸好小，皮肤又黑，你喜欢她什么？
+:   ![](http://gnat.qiniudn.com/pics/tesla.gif)
 
-        那时我还是个孩子，**我说你不懂，这是爱情**。
+[SkyPixel](https://www.skypixel.com/videos/2015-m4v)
 
-        很奇怪，我一个那么自卑的人，居然会写情书。
-        在这封人生中唯一的一封情书的结尾，我写到：被人喜欢总算是一件好事情，请你不要害怕。
-        奇怪，为什么那个时候我就知道被陌生人喜欢是一件值得害怕的事？
-
-        那个妞叫什么名字我也不知道，因为性格内向，因为表白被拒，我也不敢去打听任何与她有关的信息。
-        我也没有和她说过任何话，她可能都不知道我是哪个。
-        可是因为她，**那时的我看起来像是一个诗人**。
-
-        初恋是什么？是初次对人动心，还是初次和人恋爱呢？
-        我不知道，我只能自我安慰说：这可能就是最完美的暗恋吧。
-
-#. &#x2610; [cmderdev/cmder](https://github.com/cmderdev/cmder)
-:   seems great.
-    :   The main advantage of Cmder is portability. It is designed to be
-        **totally self-contained with no external dependencies**, which makes
-        it great for USB Sticks or Dropbox - **you can carry your console,
-        aliases and binaries (like wget, curl and git) with you anywhere!**
-
-#. &#x2611; [就喜欢这种嘿嘿嘿的短片 - 简书](http://www.jianshu.com/p/15052aaaeaab)
-:   funny.
-    :   ![](http://gnat.qiniudn.com/pics/tesla.gif)
-
-#. &#x2611; [SkyPixel](https://www.skypixel.com/videos/2015-m4v)
 :   美国果然牛逼！
 
-#. &#x2611; [真实世界的我](http://www.aiexp.info/%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%9A%84%E6%88%91.html)
-:   good.
-    :   如果问我为什么要做研究工作，我会回答**因为它有趣**，然而如果你追问为什
-        么它有趣，这问题就不是那么容易回答了。我觉得我把前面几段文字拍出来，或
-        许可以作为一个答案，因为我觉得那些有类似经历的人或许会产生共鸣。这种研
-        究工作的有趣之处，就同牛顿说的那样：“像是一个在海边玩耍的小孩，不时发现
-        比寻常更为光滑的一块卵石或比寻常更为美丽的一片贝壳”，当你发现了你过去没
-        有发现的东西、前人未发现的东西，当你成为世界上第一个做成某个未知事物的
-        人的时候，这真的是一件很有意思的事情，不是吗？研究工作是**真实世界里的
-        游戏**。研究工作，多数时候，过程中会遇到各种波折，游戏的世界里，同样会
-        遇到各种困难，但让你觉得玩游戏“爽”的原因，是你可以通过努力，战胜这些困
-        难，获得一些成就，从而获得一些成就感，研究工作是一样的道理。
+[真实世界的我](http://www.aiexp.info/%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%9A%84%E6%88%91.html)
 
-        “**良师益友**”四个字用于评价俞凯老师是十分贴切的，他是一位可以和学生并
-        肩奋战到凌晨的老师，他是一位可以真诚且无私地为你付出的时间和心血的朋友。
-        俞凯老师不仅在学术上给予贴心的指导，更在无时无刻地在生活中的一言一行
-        里潜移默化地指导着学生做人与做事。每学期的 Kick Off Meeting，俞凯老师都
-        会用王蒙的《青春万岁》序诗来勉励我们：
+:   如果问我为什么要做研究工作，我会回答**因为它有趣**，然而如果你追问为什
+    么它有趣，这问题就不是那么容易回答了。我觉得我把前面几段文字拍出来，或
+    许可以作为一个答案，因为我觉得那些有类似经历的人或许会产生共鸣。这种研
+    究工作的有趣之处，就同牛顿说的那样：“像是一个在海边玩耍的小孩，不时发现
+    比寻常更为光滑的一块卵石或比寻常更为美丽的一片贝壳”，当你发现了你过去没
+    有发现的东西、前人未发现的东西，当你成为世界上第一个做成某个未知事物的
+    人的时候，这真的是一件很有意思的事情，不是吗？研究工作是**真实世界里的
+    游戏**。研究工作，多数时候，过程中会遇到各种波折，游戏的世界里，同样会
+    遇到各种困难，但让你觉得玩游戏“爽”的原因，是你可以通过努力，战胜这些困
+    难，获得一些成就，从而获得一些成就感，研究工作是一样的道理。
 
-            所有的日子，所有的日子都来吧，
-            让我编织你们，用青春的金线，
-            和幸福的璎珞，编织你们。
+    “**良师益友**”四个字用于评价俞凯老师是十分贴切的，他是一位可以和学生并
+    肩奋战到凌晨的老师，他是一位可以真诚且无私地为你付出的时间和心血的朋友。
+    俞凯老师不仅在学术上给予贴心的指导，更在无时无刻地在生活中的一言一行
+    里潜移默化地指导着学生做人与做事。每学期的 Kick Off Meeting，俞凯老师都
+    会用王蒙的《青春万岁》序诗来勉励我们：
 
-            有那小船上的歌笑，月下校园的欢舞，
-            细雨蒙蒙里踏青，初雪的早晨行军，
-            还有热烈的争论，跃动的、温暖的心……
+    ```tzx-bigquote
+    所有的日子，所有的日子都来吧，
+    让我编织你们，用青春的金线，
+    和幸福的璎珞，编织你们。
 
-            是转眼过去了的日子，也是充满遐想的日子，
-            纷纷的心愿迷离，像春天的雨，
-            我们有时间，有力量，有燃烧的信念，
-            我们渴望生活，渴望在天上飞。
+    有那小船上的歌笑，月下校园的欢舞，
+    细雨蒙蒙里踏青，初雪的早晨行军，
+    还有热烈的争论，跃动的、温暖的心……
 
-            是单纯的日子，也是多变的日子，
-            浩大的世界，样样叫我们好奇，
-            从来都兴高采烈，从来不淡漠，
-            眼泪，欢笑，深思，全是第一次。
+    是转眼过去了的日子，也是充满遐想的日子，
+    纷纷的心愿迷离，像春天的雨，
+    我们有时间，有力量，有燃烧的信念，
+    我们渴望生活，渴望在天上飞。
 
-            所有的日子都去吧，都去吧，
-            在生活中我快乐地向前，
-            多沉重的担子，我不会发软，
-            多严峻的战斗，我不会丢脸；
-            有一天，擦完了枪，擦完了机器，擦完了汗，
-            我想念你们，招呼你们，
-            并且怀着骄傲，注视你们！
+    是单纯的日子，也是多变的日子，
+    浩大的世界，样样叫我们好奇，
+    从来都兴高采烈，从来不淡漠，
+    眼泪，欢笑，深思，全是第一次。
 
-        每次他朗读这首诗，他都会动情。他常常向学生分享他的故事，他的激情，他的
-        态度，他的勤奋，感染着我，给予我源源不断的正能量。
+    所有的日子都去吧，都去吧，
+    在生活中我快乐地向前，
+    多沉重的担子，我不会发软，
+    多严峻的战斗，我不会丢脸；
+    有一天，擦完了枪，擦完了机器，擦完了汗，
+    我想念你们，招呼你们，
+    并且怀着骄傲，注视你们！
+    ```
 
-#. &#x2611; [e，一个常数的传奇 | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/55381/)
-:   都牛逼。
-    :   数学史上曾经有一个著名问题，称之为悬链线问题：一根柔软不可伸长的链子，
-        两头固定在空间中的两个定点上（这两个点不一定要等高），链子形成的曲线是
-        怎样一条曲线呢？这个问题和最速降线问题提出的时间很接近，而且参与者也大
-        多相同。早在文艺复兴时代它就已经被达芬奇研究过，可惜并没有得到答案。伽
-        利略猜想答案是抛物线，这也和很多人最初的感觉是一致的，**可惜后来被惠更斯
-        在 17 岁的时候证明是错的**。
+    每次他朗读这首诗，他都会动情。他常常向学生分享他的故事，他的激情，他的
+    态度，他的勤奋，感染着我，给予我源源不断的正能量。
+
+[e，一个常数的传奇 | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/55381/)
+
+:   数学史上曾经有一个著名问题，称之为悬链线问题：一根柔软不可伸长的链子，
+    两头固定在空间中的两个定点上（这两个点不一定要等高），链子形成的曲线是
+    怎样一条曲线呢？这个问题和最速降线问题提出的时间很接近，而且参与者也大
+    多相同。早在文艺复兴时代它就已经被达芬奇研究过，可惜并没有得到答案。伽
+    利略猜想答案是抛物线，这也和很多人最初的感觉是一致的，**可惜后来被惠更斯
+    在 17 岁的时候证明是错的**。
 
 #. &#x2611; [Conway's Game of Life - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 #. &#x2611; [Light Table](http://lighttable.com/)
 :   Clojure 社区的编辑器，大概是除了 Emacs 你想玩 Clojure 的唯一选择吧。
-    :   Every bit of Light Table's code is available to the community because
-        **none of us are as smart as all of us**.
+:   Every bit of Light Table's code is available to the community because
+    **none of us are as smart as all of us**.
 
 #. &#x2611; [Cramer悖论：线性代数的萌芽 | Matrix67: The Aha Moments](http://www.matrix67.com/blog/archives/3803)
 :   发现从信息的角度理解线性代数更给我更多 intuition。
-    :   9 个点不见得能唯一地确定出三次曲线的方程，因为不是每个点的位置都能给我们带来足够的信息。
+:   9 个点不见得能唯一地确定出三次曲线的方程，因为不是每个点的位置都能给我们带来足够的信息。
 
-        此时大家或许能体会到， Euler 提出的这些遗留问题太具启发性了，当时的数学
-        研究者们看到之后必然是浑身血液沸腾。包括 Cramer 在内的数学家们沿着
-        Euler 的思路继续想下去，一个强大的数学新工具——线性代数——逐渐开始成型。
-        没错，这个 Cramer 正是后来提出线性代数一大基本定理——Cramer 法则——的那
-        个人。
+    此时大家或许能体会到， Euler 提出的这些遗留问题太具启发性了，当时的数学
+    研究者们看到之后必然是浑身血液沸腾。包括 Cramer 在内的数学家们沿着
+    Euler 的思路继续想下去，一个强大的数学新工具——线性代数——逐渐开始成型。
+    没错，这个 Cramer 正是后来提出线性代数一大基本定理——Cramer 法则——的那
+    个人。
 
 #. &#x2611; [随记：我们需要怎样的数学教育？ | Matrix67: The Aha Moments](http://www.matrix67.com/blog/archives/4294)
 :   good.
-    :   #. 总有一天，数学教育会拔高到第三层：返朴归真，数学真正牛 B 的还是它本
-            身。你会发现，那些伟大的数学思想，那些全新的数学理论，最初研究的动
-            机并不是要急于解释我们身边的某某诡异现象，而是它**本身的美妙**。
-        #. 其实，如果把“少 2 个”理解成“多 -2 个”，问题是一模一样的，之前的公式
-            同样适用。负数这一新思想立即把三种情况统一在了一起，它们的本质变得
-            一模一样了。（话说三角函数更是把以前需要讨论象限的问题给统一了，你
-            只要在第一象限考虑就行，反正其他象限直接适用于这样得出的结论。）
-        #. 对于我来说，最能吸引我学习一个数学课题的，莫过于**一系列非平凡的结论以
-            及它的精彩证明了**。
+:   #. 总有一天，数学教育会拔高到第三层：返朴归真，数学真正牛 B 的还是它本
+        身。你会发现，那些伟大的数学思想，那些全新的数学理论，最初研究的动
+        机并不是要急于解释我们身边的某某诡异现象，而是它**本身的美妙**。
+    #. 其实，如果把“少 2 个”理解成“多 -2 个”，问题是一模一样的，之前的公式
+        同样适用。负数这一新思想立即把三种情况统一在了一起，它们的本质变得
+        一模一样了。（话说三角函数更是把以前需要讨论象限的问题给统一了，你
+        只要在第一象限考虑就行，反正其他象限直接适用于这样得出的结论。）
+    #. 对于我来说，最能吸引我学习一个数学课题的，莫过于**一系列非平凡的结论以
+        及它的精彩证明了**。
 
-#. &#x2611; [10大英语套话 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2008/12/top_10_irritating_english_phrases.html)
-:  good.
-    :   #. Sure we missed our best player but at the end of the day, John, we
-           just didn't play well enough to win the game.（我们最好的选手不能上场，但是
-           最终来说，还是因为我们发挥得不好，所以无法赢得比赛。）
-        #. I am looking for a fairly unique piece of technology.（我在寻找一种
-           独特的技术。）
-        #. I personally don't like her.（我不喜欢她。）
-        #. What's your favorite song right at this moment in time?（此刻你最喜
-           欢的歌是什么？）
-        #. With all due respect, I think there are some facts you have not
-           considered.（恕我直言，我想你忽略了一些事实。）
-        #. It is absolutely impossible.（绝对不可能。）
-        #. For Publishing, It's a Nightmare Before Christmas.（对于出版业来说，
-           圣诞节前发生的事情就像一场噩梦。）
-        #. This game shouldn't of got cancelled!（这场比赛本来不应该取消的。）
-        #. 24/7 support is a critical part of our offer.（一周7天，每天24小时的
-           售后服务，是我们承诺的关键部分。）
-        #. We're talking basic common sense here - it isn't rocket science.（我
-           们在这里说的是常识，又不是高深莫测的东西。）
+[10大英语套话 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2008/12/top_10_irritating_english_phrases.html)
 
-#. &#x2610; [公共场所英文译写规范 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2011/01/guidelines_for_english_translations_in_public_places.html)
-#. &#x2610; [Behavioral Profiling: The password you can't change.](https://paul.reviews/behavioral-profiling-the-password-you-cant-change/)
-#. &#x2611; [密码疲劳 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/08/password-fatigue.html)
-:   shit.
-    :   心理学有一个名词，叫做"密码疲劳"（password fatigue），指某些用户一遇到输入密码的场合，就感到厌倦和疲劳。
+:   - Sure we missed our best player but at the end of the day, John, we just
+      didn't play well enough to win the game.（我们最好的选手不能上场，但是最
+      终来说，还是因为我们发挥得不好，所以无法赢得比赛。）
+    - I am looking for a fairly unique piece of technology.（我在寻找一种独特的
+      技术。）
+    - I personally don't like her.（我不喜欢她。）
+    - What's your favorite song right at this moment in time?（此刻你最喜欢的歌
+      是什么？）
+    - With all due respect, I think there are some facts you have not
+      considered.（恕我直言，我想你忽略了一些事实。）
+    - It is absolutely impossible.（绝对不可能。）
+    - For Publishing, It's a Nightmare Before Christmas.（对于出版业来说，圣诞
+      节前发生的事情就像一场噩梦。）
+    - This game shouldn't of got cancelled!（这场比赛本来不应该取消的。）
+    - 24/7 support is a critical part of our offer.（一周7天，每天24小时的售后
+      服务，是我们承诺的关键部分。）
+    - We're talking basic common sense here - it isn't rocket science.（我们在
+      这里说的是常识，又不是高深莫测的东西。）
 
-        下面是"密码疲劳"的一些典型发作场合。
+[公共场所英文译写规范 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2011/01/guidelines_for_english_translations_in_public_places.html)
 
-        #. 要求创建一个新的密码；
-        #. 创建的密码太简单，不符合网站要求，要求重新创建；
-        #. 创建密码的时候，要求输入两次；
-        #. 明明已经登陆，但是进入重要功能时，要求再输一遍密码；
-        #. 创建密码的时候，不显示或者显示占位符，根本看不清自己输入的是什么。
+[Behavioral Profiling: The password you can't change.](https://paul.reviews/behavioral-profiling-the-password-you-cant-change/)
 
-#. &#x2610; [Git 使用规范流程 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/08/git-use-process.html)
-:   not yet.
-    :   ![](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015080501.png)
+[密码疲劳 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/08/password-fatigue.html)
 
-        ```bash
-        # update
-        $ git checkout master
-        $ git pull
+:   心理学有一个名词，叫做"密码疲劳"（password fatigue），指某些用户一遇到输入
+    密码的场合，就感到厌倦和疲劳。
 
-        # create dev branch
-        $ git checkout -b myfeature
+    下面是"密码疲劳"的一些典型发作场合：
 
-        # after edition
-        $ git add --all
-        $ git status
-        $ git commit --verbose
-        $ :'
-            Present-tense summary under 50 characters
+      - 要求创建一个新的密码；
+      - 创建的密码太简单，不符合网站要求，要求重新创建；
+      - 创建密码的时候，要求输入两次；
+      - 明明已经登陆，但是进入重要功能时，要求再输一遍密码；
+      - 创建密码的时候，不显示或者显示占位符，根本看不清自己输入的是什么。
 
-            * More information about commit (under 72 characters).
-            * More information about commit (under 72 characters).
+[Git 使用规范流程 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/08/git-use-process.html)
 
-            http://project.management-system.com/ticket/123
+:   ![](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015080501.png)
 
-            （第一行是不超过50个字的提要，然后空一行，罗列出改动原因、主要变动、
-            以及需要注意的问题。最后，提供对应的网址（比如 Bug ticket）。）
-        '
+    ```bash
+    # update
+    $ git checkout master
+    $ git pull
 
-        # update
-        $ git fetch origin
-        $ git rebase origin/master
+    # create dev branch
+    $ git checkout -b myfeature
 
-        # 合并 commit
-        $ git rebase -i origin/master
+    # after edition
+    $ git add --all
+    $ git status
+    $ git commit --verbose
+    $ :'
+        Present-tense summary under 50 characters
 
-        # Pony Foo 提出另外一种合并 commit 的简便方法，就是先撤销过去 5 个
-        # commit，然后再建一个新的。
-        $ git reset HEAD~5
-        $ git add .
-        $ git commit -am "Here's the bug fix that closes #28"
-        $ git push --force
+        * More information about commit (under 72 characters).
+        * More information about commit (under 72 characters).
 
-        # 因为 rebase 以后，分支历史改变了，跟远程分支不一定兼容，有可能要强行推送
-        $ git push --force origin myfeature
-        ```
+        http://project.management-system.com/ticket/123
 
-#. &#x2610; [经验:我是怎么找电子书的 - 简书](http://www.jianshu.com/p/fe97eb12f12f)
-#. &#x2611; [说说“融入美国社会”这件事 - 简书](http://www.jianshu.com/p/927c06c04dcc)
-:   great.
-    :   #. 美国同学都很友善，而且都挺话痨的，可是，我**真的有必要为了找到共同话题
-            而硬着头皮去看那些根本不感兴趣的超级碗比赛么?**
-        #. 后来我才意识到，我根本没有什么“融入美国社会”的问题，因为按很多人的标
-            准来看，**我连中国人的社会都没融入过**。（其实我觉得很多圈子没必要去融入……）
-        #. 而与此同时，我越来越觉得，身边**很多人的闲聊都相当无聊无趣**，哪怕有些人
-            已经够得上“高级知识分子”的资格了。
-        #. 高中时读到王小波说的一句话：无趣的人生不值得过。我大概就是那会儿中了
-            毒，开始觉得无趣的“天”不值得聊。
-        #. 还有一次，一位中国同学问起“纯正的美国口音”，老师有点哭笑不得地说：
-            **“你觉得波士顿口音和纽约口音哪一个更 American?”**
-        #. 说白了，对美国人说，尤其是大城市的居民，再古怪的名字他们都见过，说话
-            的口音再独特他们也见怪不怪。没人指望一个外国人会有一个英文名、会说“
-            美国口音”的英语。
-        #. “Diversity”是一个在美国经常听到的词，这里面不光有反对种族歧视的意思，
-            还有另一层意思，那就是：文化多样性就是这个社会的常态，而不是新来的
-            文化在“融入主流文化”之前的过渡状态。无论是出于意识形态或是别的什么
-            原因，你大可以吐槽美国宣扬的价值观是虚伪的，但美国社会多元文化并存
-            的事实却是客观存在、毋庸置疑的。
-        #. 但如果你总觉得除了经济因素，在文化层面上还有那么一个抽象的、“高大上”
-            的“美国社会”存在，并且需要刻意改变自己而去“融入”它，那其实反映的还
-            是内心深处一种毫无必要的自卑心态。
+        （第一行是不超过50个字的提要，然后空一行，罗列出改动原因、主要变动、
+        以及需要注意的问题。最后，提供对应的网址（比如 Bug ticket）。）
+    '
 
-#. &#x2611; [获取学术论文的方法 - 简书](http://www.jianshu.com/p/7e507d7be11d)
-:   good.
-    :   [Directory of Open Access Journals](https://doaj.org/)
+    # update
+    $ git fetch origin
+    $ git rebase origin/master
 
-        大学里的图书馆，一般都会雇佣有**图书情报学**专业的毕业生管理资源，并向
-        学生和教职员工开课传授获取科学文献的方法。目前仍在大学的各位学生朋友，
-        请一定好好利用这个资源，毕竟你是交了学费的。
+    # 合并 commit
+    $ git rebase -i origin/master
 
-        在学术界，或者学术出版界，经过了同行评审的文章草稿的电子版文档被称为后印本（**postprint**）。
-        因为后印本同最终发表的版本的差异非常小，通常只是一些小的修改和排版
-        上的变化，出版社一开始是很反对后印本的流通的。然而，随着越来越对的作者开始这样
-        做，众多的学术期刊们也已经开始默认将后印本放到网上去的行为。[PubMed Central](http://www.ncbi.nlm.nih.gov/pmc/)
-        是目前最为知名的后印本寄存服务。很多期刊的协议中指明，后印本必须在文章正式发表
-        后半年甚至一年以后才能放到网上。因此，后印本服务在时间上有其滞后的缺点。如果你
-        想找不是太近期的文章，去 PubMed Central 上去试试运气是个好办法。
+    # Pony Foo 提出另外一种合并 commit 的简便方法，就是先撤销过去 5 个
+    # commit，然后再建一个新的。
+    $ git reset HEAD~5
+    $ git add .
+    $ git commit -am "Here's the bug fix that closes #28"
+    $ git push --force
 
-        直接联系论文作者
+    # 因为 rebase 以后，分支历史改变了，跟远程分支不一定兼容，有可能要强行推送
+    $ git push --force origin myfeature
+    ```
 
-        作为在传统的学术期刊发表文章的代价，文章作者们通常会签一份版权转移协议，将
-        文章的版权授予学术期刊。在法律上来讲，在版权转移协议签署生效之后，文章的获
-        取与使用必须通过期刊的允许与授权，否则就是侵权行为。
+[经验:我是怎么找电子书的 - 简书](http://www.jianshu.com/p/fe97eb12f12f)
 
-#. &#x2611; [这样的季节呀，你失落不 - 简书](http://www.jianshu.com/p/00cda101ce25)
-:   nice.
-    :   我的裤脚线缝开裂。问老头补一下要多少钱，说要3块。我希望他要价高一点，3 块钱
-        让我觉得自己是个周扒皮在剥削劳动人民。可是又不好意思主动多给他钱，毕竟人家
-        不是要饭的。
+[说说“融入美国社会”这件事 - 简书](http://www.jianshu.com/p/927c06c04dcc)
 
-        电动车是劳动人民的谋生工具，上海深圳都一样。
+:   - 美国同学都很友善，而且都挺话痨的，可是，我**真的有必要为了找到共同话题而
+      硬着头皮去看那些根本不感兴趣的超级碗比赛么?**
+    - 后来我才意识到，我根本没有什么“融入美国社会”的问题，因为按很多人的标准来
+      看，**我连中国人的社会都没融入过**。（其实我觉得很多圈子没必要去融入……）
+    - 而与此同时，我越来越觉得，身边**很多人的闲聊都相当无聊无趣**，哪怕有些人
+      已经够得上“高级知识分子”的资格了。
+    - 高中时读到王小波说的一句话：无趣的人生不值得过。我大概就是那会儿中了毒，
+      开始觉得无趣的“天”不值得聊。
+    - 还有一次，一位中国同学问起“纯正的美国口音”，老师有点哭笑不得地说：**“你觉
+      得波士顿口音和纽约口音哪一个更 American?”**
+    - 说白了，对美国人说，尤其是大城市的居民，再古怪的名字他们都见过，说话的口
+      音再独特他们也见怪不怪。没人指望一个外国人会有一个英文名、会说“美国口音”
+      的英语。
+    - “Diversity”是一个在美国经常听到的词，这里面不光有反对种族歧视的意思，还有
+      另一层意思，那就是：文化多样性就是这个社会的常态，而不是新来的文化在“融入
+      主流文化”之前的过渡状态。无论是出于意识形态或是别的什么原因，你大可以吐槽
+      美国宣扬的价值观是虚伪的，但美国社会多元文化并存的事实却是客观存在、毋庸
+      置疑的。
+    - 但如果你总觉得除了经济因素，在文化层面上还有那么一个抽象的、“高大上”的“美
+      国社会”存在，并且需要刻意改变自己而去“融入”它，那其实反映的还是内心深处一
+      种毫无必要的自卑心态。
 
-#. &#x2611; [该死 - 简书](http://www.jianshu.com/p/8cc3ad287cb7)
-:   nice.
-    :   楼这样的事儿，更适合那些觉得自己有冤屈，以至于要在热闹地带当着很多人的面毅
-        然跳下，以自己的死表明自己的清白，或者控诉这社会的黑暗。然而你们炒股破产的
-        赌徒，你们有什么冤屈呢，你们不就是赌输了钱么，怎么如此滥用跳楼这样的事儿。
+[获取学术论文的方法 - 简书](http://www.jianshu.com/p/7e507d7be11d)
 
-        但是你抢了人家的眼球啊，这世界上最珍贵的资源就是眼球资源。**人的注意力是有限
-        的，你跳楼抢夺了眼球资源，世界上就有冤屈不被人重视。**
+:   [Directory of Open Access Journals](https://doaj.org/)
 
-#. &#x2611; [为什么你们不可以叫彭阿姨国母（好文求打赏） - 简书](http://www.jianshu.com/p/a7d54716e002)
-#. &#x2611; [为什么要唱反调：饱醉豚TEDxMoonLake—我的点播单—在线播放—优酷网，视频高清在线观看](http://v.youku.com/v_show/id_XNzEyNTMyOTMy_type_99.html?f=420001719)
-:   个人很喜欢饱醉豚，不是说他多么“对”。而是他能带来不一样的思考。话说我和他价值观还是比较类似，像那篇《生活方式》。
+    大学里的图书馆，一般都会雇佣有**图书情报学**专业的毕业生管理资源，并向学生
+    和教职员工开课传授获取科学文献的方法。目前仍在大学的各位学生朋友，请一定好
+    好利用这个资源，毕竟你是交了学费的。
 
-#. &#x2611; [怎么评价饱醉豚？ - Twitter - 知乎](http://www.zhihu.com/question/22640256)
-:   ?
-    :   饱醉豚《民主杀害韩寒，民主强奸徐静蕾》（全文附后）获得不少叫好声，并不
-        令人奇怪。该文体现的是2千多年前的“民主观”，即“多数人的暴政”。苏格拉底即
-        死于这样的“民主暴政”。对民主如此浅薄的认识，至今仍有市场，可见大陆愚昧
-        到了何等地步，自由民主的教育有多么匮乏！
+    在学术界，或者学术出版界，经过了同行评审的文章草稿的电子版文档被称为后印本
+    （**postprint**）。因为后印本同最终发表的版本的差异非常小，通常只是一些小的
+    修改和排版上的变化，出版社一开始是很反对后印本的流通的。然而，随着越来越对
+    的作者开始这样做，众多的学术期刊们也已经开始默认将后印本放到网上去的行为。
+    [PubMed Central](http://www.ncbi.nlm.nih.gov/pmc/)是目前最为知名的后印本寄
+    存服务。很多期刊的协议中指明，后印本必须在文章正式发表后半年甚至一年以后才
+    能放到网上。因此，后印本服务在时间上有其滞后的缺点。如果你想找不是太近期的
+    文章，去 PubMed Central 上去试试运气是个好办法。
 
-        附：民主杀害韩寒，民主强奸徐静蕾
+    直接联系论文作者
 
-        作者：饱醉豚
+    作为在传统的学术期刊发表文章的代价，文章作者们通常会签一份版权转移协议，将
+    文章的版权授予学术期刊。在法律上来讲，在版权转移协议签署生效之后，文章的获
+    取与使用必须通过期刊的允许与授权，否则就是侵权行为。
 
-        一个小国家，叫赵庄民主共和国，总共有 6 个人。一个是偶像明星大帅哥韩寒，
-        有财产 1000 万，另一个是大美人大富婆徐静蕾，有财产 9000 万。其余 4 个人
-        是阿 Q，王胡，小 D、孔乙己，都是穷鬼。
+[这样的季节呀，你失落不 - 简书](http://www.jianshu.com/p/00cda101ce25)
 
-        这个国家实行民主竞选制。竞选人韩寒说：如果我当总统，给你们言论自由，出
-        版自由，杜绝暴力拆迁，取缔任何不人道不公正的行为。
+:   我的裤脚线缝开裂。问老头补一下要多少钱，说要 3 块。我希望他要价高一点，3 块
+    钱让我觉得自己是个周扒皮在剥削劳动人民。可是又不好意思主动多给他钱，毕竟人
+    家不是要饭的。
 
-        竞选人徐静蕾说：如果我当总统，把我的财产拿出十分之一，也就是 900 万，当社
-        会福利。
+    电动车是劳动人民的谋生工具，上海深圳都一样。
 
-        竞选人阿 Q 的竞选纲领是：我要当了总统，会允许大家把韩寒杀掉，再瓜分韩寒
-        和徐静蕾的财产，但是总统只拿其中的 1000 万，剩下 9000 万你们平分，每人
-        3000 万。另外允许大家随时强奸徐静蕾。
+[该死 - 简书](http://www.jianshu.com/p/8cc3ad287cb7)
 
-        选民们经过计算，开始投票。韩寒 1 票，徐静蕾 1 票，都是自己投自己。阿 Q
-        得了 4票，当选为赵庄民主共和国总统。
+:   楼这样的事儿，更适合那些觉得自己有冤屈，以至于要在热闹地带当着很多人的面毅
+    然跳下，以自己的死表明自己的清白，或者控诉这社会的黑暗。然而你们炒股破产的
+    赌徒，你们有什么冤屈呢，你们不就是赌输了钱么，怎么如此滥用跳楼这样的事儿。
 
-        于是，大家合力杀了韩寒，瓜分了徐静蕾的财产，有性欲的时候就强奸徐静蕾。
+    但是你抢了人家的眼球啊，这世界上最珍贵的资源就是眼球资源。**人的注意力是有限
+    的，你跳楼抢夺了眼球资源，世界上就有冤屈不被人重视。**
 
-#. &#x2611; [微博用户『饱醉豚在简书』是谁？ - X 是谁 - 知乎](http://www.zhihu.com/question/27293582)
-:   mark.
-    :   饱醉豚是推特反民斗的一面旗帜，他从年轻时的 89 一代，走向今天被众民斗“五毛”
-        的转变，恰是对民斗圈日益堕落的讽刺。如今的民yun圈正如饱醉豚所言：「你们
-        似乎对策略博弈一点兴趣都没有。不知道在一个不惩罚欺诈和背叛的圈子里会得
-        到什么样的流行策略。然后导致另一些非欺诈的正常人根本不愿意跟你们一起混。
-        而你们自己也完全没有彼此的信赖。囚徒困境中的一群欺诈者，最后剩下一群
-        有病的，有仇的，有目地的。恭喜」。飽醉豚不是五毛，饱醉豚是曾经的 89 一
-        代，他是为捍卫自己的道德，而走向与那些占据了道德优势，却将优势玩残的民
-        斗骗子截然不同的两条路。这条路不好走，但走过来的都是枭雄。
+[为什么你们不可以叫彭阿姨国母（好文求打赏） - 简书](http://www.jianshu.com/p/a7d54716e002)
 
-#. &#x2611; [饱醉豚是干什么的？为什么懂得那么多？ - 网络红人 - 知乎](http://www.zhihu.com/question/27517209)
-:   ?
-    :   贴上一段他曾经在Twitter里的Bio：中文网上第一健笔，中文网上第一贱逼，推
-        特疯狗，推特中文圈最牛逼的狗屎，高级职业五毛，五毛教父，豚儒教教主，民
-        主祛魅师，摸摸党精神领袖，中华人渣共和国总统，撑哥，饱醉待屠的装逼犯，
-        流氓无敌，极品傻逼，吸毒名士，名士面具下的邪教魔头，中国的齐泽克、霍梅
-        尼，淫贱粪豚，阉人，杂种，民族云鬼，正邪委员、五毛战神专治各种民主。
+[为什么要唱反调：饱醉豚TEDxMoonLake—我的点播单—在线播放—优酷网，视频高清在线观看](http://v.youku.com/v_show/id_XNzEyNTMyOTMy_type_99.html?f=420001719)
 
-#. &#x2611; &hearts; [饱醉豚语录2015年7月4日 - 简书](http://www.jianshu.com/p/6dd6206a71e2)
-:   ?
-    :   #. 那些自称找虐的驴友，大多到四姑娘山要找马夫挑夫的，去雅鲁藏布江大峡谷要找
-            藏人给他们当挑夫的，到更高的山就要找夏尔巴人给他们当挑夫。然后他们
-            拍一些美奂绝伦的照片，自称去了某某地方。
-        #. 你不能因为黄炎培、丁玲、郭沫若之类的知识分子没能在毛泽东面前保持气节
-            而认为这是毛的罪恶。恰恰相反，毛泽东让装逼知识分子脱光裤子献媚，正
-            是给知识分子袪魅。这是毛为人性研究的贡献。
-        #. 建议爱狗爱猫的都亲自阉割以表示这确实是对动物的爱。
-        #. 这中国大地上到处是一些觉得这也不能吃那也不能吃的恐慌者。他们觉得中国
-            的食物满含毒素，他们觉得中国的水、空气都充满恐怖。他们觉得中国到处
-            是拐卖的孩子。他们觉得这社会对不起他，所以他们自己作恶的时候就可以
-            毫无愧疚。
+:   个人很喜欢饱醉豚，不是说他多么“对”。而是他能带来不一样的思考。话说我和他价
+    值观还是比较类似，像那篇《生活方式》。
 
-#. &#x2611; &hearts; [生活方式 - 简书](http://www.jianshu.com/p/9ab34dd5a1ed)
-:   ?
-    :   #. 一旦你进入上海这样的城市，你就觉得当代的都市基本上都是为高度商品化的
-            时髦女人而设置的。男人的风味一点都感受不到。或者男人的生活方式已经
-            比女人还精致了。
-        #. 或许有一些文艺人，他们去咖啡厅，去酒吧，去田子坊，去看话剧。而这些在
-            我看来已经不是文艺，而是难以容忍的恶俗。
-        #. 我没有股票户头，觉得一个人打理自己的股票、时刻盯着股市，那是把自己的
-            闲暇给糟蹋了。我永远不会有热情去看股市的。
+[怎么评价饱醉豚？ - Twitter - 知乎](http://www.zhihu.com/question/22640256)
 
-#. &#x2611; [git——How to create an empty stand alone branch in GIT](http://maijunjin.github.io/git/2014/02/18/git%E2%80%94%E2%80%94how-to-create-an-empty-stand-alone-branch-in-git.html)
+:   饱醉豚《民主杀害韩寒，民主强奸徐静蕾》（全文附后）获得不少叫好声，并不
+    令人奇怪。该文体现的是2千多年前的“民主观”，即“多数人的暴政”。苏格拉底即
+    死于这样的“民主暴政”。对民主如此浅薄的认识，至今仍有市场，可见大陆愚昧
+    到了何等地步，自由民主的教育有多么匮乏！
+
+    附：
+
+    ```tzx-bigquote
+    民主杀害韩寒，民主强奸徐静蕾
+
+    作者：饱醉豚
+
+    一个小国家，叫赵庄民主共和国，总共有 6 个人。一个是偶像明星大帅哥韩寒，
+    有财产 1000 万，另一个是大美人大富婆徐静蕾，有财产 9000 万。其余 4 个人
+    是阿 Q，王胡，小 D、孔乙己，都是穷鬼。
+
+    这个国家实行民主竞选制。竞选人韩寒说：如果我当总统，给你们言论自由，出
+    版自由，杜绝暴力拆迁，取缔任何不人道不公正的行为。
+
+    竞选人徐静蕾说：如果我当总统，把我的财产拿出十分之一，也就是 900 万，当社
+    会福利。
+
+    竞选人阿 Q 的竞选纲领是：我要当了总统，会允许大家把韩寒杀掉，再瓜分韩寒
+    和徐静蕾的财产，但是总统只拿其中的 1000 万，剩下 9000 万你们平分，每人
+    3000 万。另外允许大家随时强奸徐静蕾。
+
+    选民们经过计算，开始投票。韩寒 1 票，徐静蕾 1 票，都是自己投自己。阿 Q
+    得了 4票，当选为赵庄民主共和国总统。
+
+    于是，大家合力杀了韩寒，瓜分了徐静蕾的财产，有性欲的时候就强奸徐静蕾。
+    ```
+
+[微博用户『饱醉豚在简书』是谁？ - X 是谁 - 知乎](http://www.zhihu.com/question/27293582)
+
+:   饱醉豚是推特反民斗的一面旗帜，他从年轻时的 89 一代，走向今天被众民斗“五毛”
+    的转变，恰是对民斗圈日益堕落的讽刺。如今的民 yun 圈正如饱醉豚所言：「你们
+    似乎对策略博弈一点兴趣都没有。不知道在一个不惩罚欺诈和背叛的圈子里会得
+    到什么样的流行策略。然后导致另一些非欺诈的正常人根本不愿意跟你们一起混。
+    而你们自己也完全没有彼此的信赖。囚徒困境中的一群欺诈者，最后剩下一群
+    有病的，有仇的，有目地的。恭喜」。飽醉豚不是五毛，饱醉豚是曾经的 89 一
+    代，他是为捍卫自己的道德，而走向与那些占据了道德优势，却将优势玩残的民
+    斗骗子截然不同的两条路。这条路不好走，但走过来的都是枭雄。
+
+[饱醉豚是干什么的？为什么懂得那么多？ - 网络红人 - 知乎](http://www.zhihu.com/question/27517209)
+
+:   贴上一段他曾经在 Twitter 里的 Bio：中文网上第一健笔，中文网上第一贱逼，推特
+    疯狗，推特中文圈最牛逼的狗屎，高级职业五毛，五毛教父，豚儒教教主，民主祛魅
+    师，摸摸党精神领袖，中华人渣共和国总统，撑哥，饱醉待屠的装逼犯，流氓无敌，
+    极品傻逼，吸毒名士，名士面具下的邪教魔头，中国的齐泽克、霍梅尼，淫贱粪豚，
+    阉人，杂种，民族云鬼，正邪委员、五毛战神专治各种民主。
+
+[饱醉豚语录2015年7月4日 - 简书](http://www.jianshu.com/p/6dd6206a71e2)
+
+:   - 那些自称找虐的驴友，大多到四姑娘山要找马夫挑夫的，去雅鲁藏布江大峡谷要找
+      藏人给他们当挑夫的，到更高的山就要找夏尔巴人给他们当挑夫。然后他们拍一些
+      美奂绝伦的照片，自称去了某某地方。
+    - 你不能因为黄炎培、丁玲、郭沫若之类的知识分子没能在毛泽东面前保持气节而认
+      为这是毛的罪恶。恰恰相反，毛泽东让装逼知识分子脱光裤子献媚，正是给知识分
+      子袪魅。这是毛为人性研究的贡献。
+    - 建议爱狗爱猫的都亲自阉割以表示这确实是对动物的爱。
+    - 这中国大地上到处是一些觉得这也不能吃那也不能吃的恐慌者。他们觉得中国的食
+      物满含毒素，他们觉得中国的水、空气都充满恐怖。他们觉得中国到处是拐卖的孩
+      子。他们觉得这社会对不起他，所以他们自己作恶的时候就可以毫无愧疚。
+
+[生活方式 - 简书](http://www.jianshu.com/p/9ab34dd5a1ed) &hearts;
+
+:   - 一旦你进入上海这样的城市，你就觉得当代的都市基本上都是为高度商品化的时髦
+      女人而设置的。男人的风味一点都感受不到。或者男人的生活方式已经比女人还精
+      致了。
+    - 或许有一些文艺人，他们去咖啡厅，去酒吧，去田子坊，去看话剧。而这些在我看
+      来已经不是文艺，而是难以容忍的恶俗。
+    - 我没有股票户头，觉得一个人打理自己的股票、时刻盯着股市，那是把自己的闲暇
+      给糟蹋了。我永远不会有热情去看股市的。
+
+[git——How to create an empty stand alone branch in GIT](http://maijunjin.github.io/git/2014/02/18/git%E2%80%94%E2%80%94how-to-create-an-empty-stand-alone-branch-in-git.html)
+
 :   useful, checkout an orphan branch
-    :   ```bash
-        $ git checkout --orphan gh-pages
-        $ git rm -rf . # remove these not staged files
-        $ echo "orphan branch" > index.html
-        $ git add index.html
-        $ git commit -m "all we have is the newly added index.html"
-        $ git log
-        $ git checkout master
-        $ git push origin gh-pages
-        ```
 
-#. &#x2611; [www.moolenaar.net/habits_paper.txt](http://www.moolenaar.net/habits_paper.txt)
+    ```bash
+    $ git checkout --orphan gh-pages
+    $ git rm -rf . # remove these not staged files
+    $ echo "orphan branch" > index.html
+    $ git add index.html
+    $ git commit -m "all we have is the newly added index.html"
+    $ git log
+    $ git checkout master
+    $ git push origin gh-pages
+    ```
+
+[www.moolenaar.net/habits_paper.txt](http://www.moolenaar.net/habits_paper.txt)
+
 :   救救乌干达的可怜孩子，额……
-    :   Bram Moolenaar is the **main author of Vim**.  He writes the core Vim
-        functionality and selects what code submitted by many others is included. He
-        graduated at the technical university of Delft as a computer technician. **Now
-        he mainly works on software, but still knows how to handle a soldering iron.**
-        He is founder and treasurer of ICCF Holland, which helps orphans in Uganda.  He
-        does free-lance work as a systems architect, but actually spends most time
-        working on Vim.
 
-#. &#x2611; [抱歉，我沒有英文名字 - Tzeng Yuxio](http://tzengyuxio.me/blog/2012/06/04/why-have-the-english-name/)
+    Bram Moolenaar is the **main author of Vim**.  He writes the core Vim
+    functionality and selects what code submitted by many others is included. He
+    graduated at the technical university of Delft as a computer technician. **Now
+    he mainly works on software, but still knows how to handle a soldering iron.**
+    He is founder and treasurer of ICCF Holland, which helps orphans in Uganda.  He
+    does free-lance work as a systems architect, but actually spends most time
+    working on Vim.
+
+[抱歉，我沒有英文名字 - Tzeng Yuxio](http://tzengyuxio.me/blog/2012/06/04/why-have-the-english-name/)
+
 :   深得我心。
-    :   記得有次報名一個國外活動時，我把我的姓名英譯寫給朋友，請他幫我填在網路
-        表單上。由於姓名的欄位只有一個格子，於是朋友按照英文前名後姓的習慣，幫我填
-        入「Yuxio Tzeng」，我當時大叫不行，堅持一定要「Tzeng Yuxio」，不過也可能是
-        急了，沒有好好對朋友解釋。後來想想，其實要解釋的話很簡單：
 
-        **Michael Jackson 的中文譯名是「麥可·傑克森」還是「傑克森·麥可」？**
+    記得有次報名一個國外活動時，我把我的姓名英譯寫給朋友，請他幫我填在網路
+    表單上。由於姓名的欄位只有一個格子，於是朋友按照英文前名後姓的習慣，幫我填
+    入「Yuxio Tzeng」，我當時大叫不行，堅持一定要「Tzeng Yuxio」，不過也可能是
+    急了，沒有好好對朋友解釋。後來想想，其實要解釋的話很簡單：
 
-        答案很明顯。我們並沒有因為把人名翻成中文，而順便也改變姓與名的順序，變
-        成「 傑克森·麥可 」。注意到其中的盲點了嗎？
+    **Michael Jackson 的中文譯名是「麥可·傑克森」還是「傑克森·麥可」？**
 
-        想想看，早期的翻譯小說中，英美人名都是翻成郝思嘉（Scarlett O’Hara）、白
-        瑞德（Rhett Butler），看著多少也覺得彆扭。然而現在的小說已經不這麼翻了，
-        都按原名順序的方式音譯。既然如此，那麼為什麼你的中文名字翻成英文還要
-        名姓顛倒呢？
+    答案很明顯。我們並沒有因為把人名翻成中文，而順便也改變姓與名的順序，變
+    成「 傑克森·麥可 」。注意到其中的盲點了嗎？
 
-        請多珍惜自己的名字。
+    想想看，早期的翻譯小說中，英美人名都是翻成郝思嘉（Scarlett O’Hara）、白
+    瑞德（Rhett Butler），看著多少也覺得彆扭。然而現在的小說已經不這麼翻了，
+    都按原名順序的方式音譯。既然如此，那麼為什麼你的中文名字翻成英文還要
+    名姓顛倒呢？
 
-#. &#x2611; [BOM (Byte Order Mark) 與 UTF-8 - Tzeng Yuxio](http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8/)
+    請多珍惜自己的名字。
+
+[BOM (Byte Order Mark) 與 UTF-8 - Tzeng Yuxio](http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8/)
+
 :   BOM 的解释终于看懂了。
-    :   Byte Order Mark 在 UTF-16 Big Endian 是 “FE FF”，Little Endian 是 “FF FE”。
-        其中Mac 系統主要是 Big Endian, PC 系統則是使用 Little Endian。
 
-        UTF-8 由於本身特性，不管 Big Endian 或 Little Endian，其 BOM 一律為 “EF BB
-        BF”。
+    Byte Order Mark 在 UTF-16 Big Endian 是 “FE FF”，Little Endian 是 “FF FE”。
+    其中Mac 系統主要是 Big Endian, PC 系統則是使用 Little Endian。
 
-        不過個人建議，文字文件要儲存的話，盡量以 UTF-8 格式存。而以 UTF-8 儲存的文
-        件，盡量不要放 BOM 進去。為什麼呢？因為 UTF-8 的一個特色就是能與 ASCII 系統
-        相容，如果文件中沒有包含非拉丁字元的話；要是放了 BOM 進去，就**破壞了這相容性**。
+    UTF-8 由於本身特性，不管 Big Endian 或 Little Endian，其 BOM 一律為 “EF BB
+    BF”。
 
-        ```plain
-        :set bomb?
-        :set bomb
-        :set nobomb
-        ```
+    不過個人建議，文字文件要儲存的話，盡量以 UTF-8 格式存。而以 UTF-8 儲存的文
+    件，盡量不要放 BOM 進去。為什麼呢？因為 UTF-8 的一個特色就是能與 ASCII 系統
+    相容，如果文件中沒有包含非拉丁字元的話；要是放了 BOM 進去，就**破壞了這相容性**。
 
-#. &#x2611; [Lip dub - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Lip_dub)
+    ```plain
+    :set bomb?
+    :set bomb
+    :set nobomb
+    ```
+
+[Lip dub - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Lip_dub)
+
 :   有点双簧。实际上很多电影都是事后录音吧。
-    :   A lip dub is a type of video that combines **lip synching**（对口型，
-        synchronization，`['siŋkiŋ]`） and **audio dubbing**
-        to make a music video. It is made by filming individuals or a group
-        of people lip synching while listening to a song or any recorded audio then
-        dubbing over it in post editing with the original audio of the song. There
-        is often some form of mobile audio device used such as an MP3 player. Often
-        they look like simple music videos, although many involve a lot of
-        preparation and production. Lip dubs are done in a single unedited shot
-        that often travel through different rooms and situations within a building.
-        **They have become popular with the advent of mass participatory video
-        content sites like YouTube.**
 
-#. &#x2611; [豆瓣blog » Blog Archive » 豆瓣见鬼了!](http://blog.douban.com/douban/2005/10/26/42/)
+    A lip dub is a type of video that combines **lip synching**（对口型，
+    synchronization，`['siŋkiŋ]`） and **audio dubbing**
+    to make a music video. It is made by filming individuals or a group
+    of people lip synching while listening to a song or any recorded audio then
+    dubbing over it in post editing with the original audio of the song. There
+    is often some form of mobile audio device used such as an MP3 player. Often
+    they look like simple music videos, although many involve a lot of
+    preparation and production. Lip dubs are done in a single unedited shot
+    that often travel through different rooms and situations within a building.
+    **They have become popular with the advent of mass participatory video
+    content sites like YouTube.**
+
+[豆瓣blog » Blog Archive » 豆瓣见鬼了!](http://blog.douban.com/douban/2005/10/26/42/)
+
 :   阿北。
-    :   还有整体的功能、UI 设计和几十处细节。熟悉豆瓣的人可以自己去对比，评判。
-        我们自己看得最清楚，因为豆瓣每一个像素的摆放，每一个“的”字放还是不放，
-        都是许多根熬白的头发换来的。
 
-        英语有句话，“模仿是最真诚的赞赏”。说的是模仿，不是抄袭。所以，不受此礼。
+    还有整体的功能、UI 设计和几十处细节。熟悉豆瓣的人可以自己去对比，评判。
+    我们自己看得最清楚，因为豆瓣每一个像素的摆放，每一个“的”字放还是不放，
+    都是许多根熬白的头发换来的。
 
-        从法律角度来说，书的介绍（来自扉页等）、属性资料和封面图像的版权属于出
-        版商或者作者。在流通的领域内，普遍是默许使用，因为对版权所有者有利。所
-        以默认(de facto)的版权形式是在“公共范围” (public domain)。豆瓣到今天为
-        止没有和任何出版商在这方面有过任何争议。
+    英语有句话，“模仿是最真诚的赞赏”。说的是模仿，不是抄袭。所以，不受此礼。
 
-        我对大众点评网已经没有怨言，也祝他们能把中文 webUI发展的更好。但是我一定
-        要问别人一个问题：**这年头抄别人的可以沉默，被抄的倒需要出来为自己辩护，
-        这到底是他妈的怎么回事?!**
+    从法律角度来说，书的介绍（来自扉页等）、属性资料和封面图像的版权属于出
+    版商或者作者。在流通的领域内，普遍是默许使用，因为对版权所有者有利。所
+    以默认(de facto)的版权形式是在“公共范围” (public domain)。豆瓣到今天为
+    止没有和任何出版商在这方面有过任何争议。
 
-#. &#x2611; [我的貼標籤規範 - Tzeng Yuxio](http://tzengyuxio.me/blog/2012/04/21/my-tagging-guideline/)
-:   useful.
-    :   為了避免上述問題，雖然目前每個網站的標籤機制如同多頭馬車各行其道，制定一個
-        自己個人使用的標籤習慣（或規範）倒是可行的一個作法。這個問題相信困擾的不只是我，
-        上網找了一下，有兩篇值得參考的文章，第一個是 Calvin C. Yu 所寫的 Taggin
-        Guidelines （在投影片中的第 13 頁），主要原則如下：
+    我对大众点评网已经没有怨言，也祝他们能把中文 webUI发展的更好。但是我一定
+    要问别人一个问题：**这年头抄别人的可以沉默，被抄的倒需要出来为自己辩护，
+    这到底是他妈的怎么回事?!**
 
-        #. 簡練
-        #. 小寫
-        #. 單數
+[我的貼標籤規範 - Tzeng Yuxio](http://tzengyuxio.me/blog/2012/04/21/my-tagging-guideline/)
 
-        另一個參考是由 Hutch Carpenter 所提出的，他認為標籤機制應該有個標準，而這個
-        標準就是複數詞組，逗號分隔 (**Multi Word, Comma Seperated**)。
+:   為了避免上述問題，雖然目前每個網站的標籤機制如同多頭馬車各行其道，制定一個
+    自己個人使用的標籤習慣（或規範）倒是可行的一個作法。這個問題相信困擾的不只是我，
+    上網找了一下，有兩篇值得參考的文章，第一個是 Calvin C. Yu 所寫的 Taggin
+    Guidelines （在投影片中的第 13 頁），主要原則如下：
 
-        #. 簡便性
-            i. 盡量簡單。
-            #. 方便輸入。所以標籤時會以英文為主，例如用 browser 而不用 瀏覽器。自己容易想起。通常第一個想到的字詞就是了。
-            #. 使用容易理解的詞。
-        #. 一致性
-            i. 一個概念一個詞。所以 動畫, アニメ, Anime, 動画 就只剩下用一個 anime。
-            #. 小寫。同樣是為了方便輸入。
-            #. 用單數，用名詞。當然，這免不了會遇到例外情況，主要還是要依照使用情境判斷。
-            #. 人名的標記盡可能從主人。例如使用 菅野よう子 而非 菅野洋子, 韩寒 而非
-               韓寒。除非該人名的原始拼寫方式我不熟悉，例如我總是想不起來戈巴契夫怎麼
-               拼，那就直接用戈巴契夫吧。同樣是以自己方便為最高原則。
-            #. 除非是自己口語常用的縮寫，不然不使用縮寫作標記。nds win7 xbox360
-               都很好理解，可是用 resp req 來做為 response request 標籤的替代，
-               就太過頭了。現在連寫程式都不鼓勵這種縮寫了。
-        #. 格式
-            i. 省略單字間空白。也就是說用 macosx 而非 mac os x。不過英文人名是
-               例外；日常用字如 smartphone 我們容易斷字，相對的人名如果省略空白
-               有時候就不容易逆推。其他如果空白省略會造成歧異的話，也應該保留空
-               白於關鍵字中。
-            #. 以逗號區隔關鍵字。正確來說應該是以「逗號加空白」區隔關鍵字。
+    #. 簡練
+    #. 小寫
+    #. 單數
 
-        以連接號 ("-") 或底線 ("_") 作連接，通常是以連接號，因為不用按 shift, 比較
-        好輸入。例如 "github-pages" 或 "octopress-plugins"
+    另一個參考是由 Hutch Carpenter 所提出的，他認為標籤機制應該有個標準，而這個
+    標準就是複數詞組，逗號分隔 (**Multi Word, Comma Seperated**)。
 
-        不過從另一個角度講，我會**避免使用太過 detail 的標籤**，例如上面的
-        "octopress-plugins", 我可能就只放 "octopress" 跟 "plugin" 兩個標籤就好了。
-        太多的標籤也不好維護或回想。
+    #. 簡便性
+        i. 盡量簡單。
+        #. 方便輸入。所以標籤時會以英文為主，例如用 browser 而不用 瀏覽器。自己容易想起。通常第一個想到的字詞就是了。
+        #. 使用容易理解的詞。
+    #. 一致性
+        i. 一個概念一個詞。所以 動畫, アニメ, Anime, 動画 就只剩下用一個 anime。
+        #. 小寫。同樣是為了方便輸入。
+        #. 用單數，用名詞。當然，這免不了會遇到例外情況，主要還是要依照使用情境判斷。
+        #. 人名的標記盡可能從主人。例如使用 菅野よう子 而非 菅野洋子, 韩寒 而非
+           韓寒。除非該人名的原始拼寫方式我不熟悉，例如我總是想不起來戈巴契夫怎麼
+           拼，那就直接用戈巴契夫吧。同樣是以自己方便為最高原則。
+        #. 除非是自己口語常用的縮寫，不然不使用縮寫作標記。nds win7 xbox360
+           都很好理解，可是用 resp req 來做為 response request 標籤的替代，
+           就太過頭了。現在連寫程式都不鼓勵這種縮寫了。
+    #. 格式
+        i. 省略單字間空白。也就是說用 macosx 而非 mac os x。不過英文人名是
+           例外；日常用字如 smartphone 我們容易斷字，相對的人名如果省略空白
+           有時候就不容易逆推。其他如果空白省略會造成歧異的話，也應該保留空
+           白於關鍵字中。
+        #. 以逗號區隔關鍵字。正確來說應該是以「逗號加空白」區隔關鍵字。
 
-#. &#x2611; [為什麼台北有中國路名？兼談「馬路」一詞由來 - Tzeng Yuxio](http://tzengyuxio.me/blog/2012/09/02/roads-named-after-other-place/)
-:   interesting.
-    :   說穿了，不只南京路，其實上海許多以中國地名命名的道路，幾乎都是「洋人的玩意」。
-        怎麼說？在十九世紀清末時期，上海的英國租界與美國租界合併為「上海公共租界」，租
-        界合併，街道名稱得統一一下，可是英美兩邊的人馬都堅持自己原有的名字，最後英國領
-        事乾脆訂了個**「上海馬路命名備忘錄」**，全部規定以中國地名命名，省得吵架。「備忘錄」
-        中明訂，南北道路以省份命名，東西道路以城市命名，因而成了今日上海市道路的模樣。
+    以連接號 ("-") 或底線 ("_") 作連接，通常是以連接號，因為不用按 shift, 比較
+    好輸入。例如 "github-pages" 或 "octopress-plugins"
 
-        而我們今天所講的「馬路」，並不是因為古代的道路是馬在上面跑而稱作「馬路」。「馬路」
-        一詞是近代才出現，有一說就是源自於前面所提到的上海南京路的原始稱呼。因為上
-        海南京路原本是作為**跑馬場**用，因此被俗稱為「**大馬路**」，後來「馬路」一詞逐漸被沿用
-        為泛指一般道路。
+    不過從另一個角度講，我會**避免使用太過 detail 的標籤**，例如上面的
+    "octopress-plugins", 我可能就只放 "octopress" 跟 "plugin" 兩個標籤就好了。
+    太多的標籤也不好維護或回想。
 
-        還有另外一說，則是指近代的築路方法是由十八世紀的蘇格蘭工程師**約翰 &middot; 馬卡丹 (John McAdam)**
-        所設計，馬卡丹以碎石鋪路，路中為高、兩側略低，以便於排水，也方便車輛馬
-        匹通行。這種新設計的道路傳入中國後被稱為「**馬卡丹路**」，俗稱「馬路」。
+[為什麼台北有中國路名？兼談「馬路」一詞由來 - Tzeng Yuxio](http://tzengyuxio.me/blog/2012/09/02/roads-named-after-other-place/)
 
+:   说穿了，不只南京路，其实上海许多以中国地名命名的道路，几乎都是「洋人的玩意」。
+    怎麼说？在十九世纪清末时期，上海的英国租界与美国租界合併為「上海公共租界」，租
+    界合併，街道名称得统一一下，可是英美两边的人马都坚持自己原有的名字，最后英国领
+    事乾脆订了个**「上海马路命名备忘录」**，全部规定以中国地名命名，省得吵架。「备忘录」
+    中明订，**南北道路以省份命名，东西道路以城市命名**，因而成了今日上海市道路的模样。
 
+    而我们今天所讲的「马路」，并不是因為古代的道路是马在上面跑而称作「马路」。「马路」
+    一词是近代才出现，有一说就是源自於前面所提到的上海南京路的原始称呼。因為上
+    海南京路原本是作為**跑马场**用，因此被俗称為「**大马路**」，后来「马路」一词逐渐被沿用
+    為泛指一般道路。
 
+    还有另外一说，则是指近代的筑路方法是由十八世纪的苏格兰工程师**约翰 &middot; 马卡丹 (John McAdam)**
+    所设计，马卡丹以碎石铺路，路中為高、两侧略低，以便於排水，也方便车辆马
+    匹通行。这种新设计的道路传入中国后被称為「**马卡丹路**」，俗称「马路」。
 
-#. &#x2610; [HTML XHTML Entities](http://elizabethcastro.com/html/extras/entities.html)
-#. &#x2611; [Everything FAQ](http://www.voidtools.com/faq/)
-:   目录里的 ag。
-    :   Does "Everything" **hog my system resources**?
+[HTML XHTML Entities](http://elizabethcastro.com/html/extras/entities.html)
 
-        :   No, "Everything" uses very little system resources.
-            A fresh install of Windows 8 (about 70,000 files) will use about 6 MB of
-            ram and less than 3 MB of disk space.  1,000,000 files will use about 50 MB
-            of ram and 15 MB of disk space.
+[Everything FAQ](http://www.voidtools.com/faq/)
 
-        Does Everything search file contents?
+:   Does "Everything" **hog my system resources**?
 
-        :   No, "Everything" does **not search file contents, only file and folder names**.
+    :   No, "Everything" uses very little system resources.
+        A fresh install of Windows 8 (about 70,000 files) will use about 6 MB of
+        ram and less than 3 MB of disk space.  1,000,000 files will use about 50 MB
+        of ram and 15 MB of disk space.
 
-        Everything is like `tree | ag`{.bash}
+    Does Everything search file contents?
 
-        Read more
+    :   No, "Everything" does **not search file contents, only file and folder names**.
 
-        #. [Searching](http://www.voidtools.com/support/everything/searching/)
+    Everything is like `tree | ag`{.bash}
 
-#. &#x2610; [universal-ctags/ctags](https://github.com/universal-ctags/ctags)
-#. &#x2611; [pages.tzengyuxio.me/articles/how-to-be-more-productive.html](http://pages.tzengyuxio.me/articles/how-to-be-more-productive.html)
-:   Life is weird.
-    :   首先，你必須讓不同品質下的時間都能得到充分運用。其次，你必須盡可能地讓你的
-        時間處於高品質狀態。
+    Read more
 
-        一旦你有了這份清單，剩下的難題就是要記得去檢視它。
+    #. [Searching](http://www.voidtools.com/support/everything/searching/)
 
-        針對那些需要全神貫注的任務，你應該**避免被中斷**。最簡單的方法是躲到沒有人能找
-        得到你的地方。
+[universal-ctags/ctags](https://github.com/universal-ctags/ctags)
 
-        然而有時候光是這麼簡單的事我還是會搞砸。我懶得出去覓食，所以我經常會工作到
-        飢腸轆轆，然後又餓又累反倒更加沒有力氣能去找吃的。
+[pages.tzengyuxio.me/articles/how-to-be-more-productive.html](http://pages.tzengyuxio.me/articles/how-to-be-more-productive.html)
 
-        **擁有愉快的朋友們則有莫大的幫助**。例如，我發現我在和 Paul Graham 或 Dan
-        Connolly 聊完天後總是覺得幹勁十足－－他們活力四射。
+:   首先，你必须让不同品质下的时间都能得到充分运用。其次，你必须尽可能地让你的
+    时间处于高品质状态。
 
-        **何謂拖延？從旁觀者的角度來看，你只是在做著「有趣」（像是玩遊戲或看新聞）的
-        事情，而不是你真正該作的事情（這也通常導致旁人把你貼上懶惰的標籤）。但真正
-        的問題是：你的腦袋裡到底是怎麼回事？**
+    一旦你有了这份清单，剩下的难题就是要记得去检视它。
 
-        如果你對自己說，「我真的該去做Ｘ了，這是現在最重要的事情。」突然間，與Ｘ相
-        關的所有工作便會成為你最不想去做的事。**但只要最重要的事情變成了Ｙ，明明是同
-        一件事的Ｘ就會變得簡單許多。**
+    针对那些需要全神贯注的任务，你应该**避免被中断**。最简单的方法是躲到没有人
+    能找得到你的地方。
 
-        常言道：困難的工作並不令人愉快。但事實上，困難的工作或許是我做過的事裡最能
-        讓人樂在其中的。當你嘗試著解決一個棘手的問題時，你不僅不會感到精疲力盡，甚
-        至會在完成之後讓你覺得全力以赴真是一件美妙的事。
+    然而有时候光是这么简单的事我还是会搞砸。我懒得出去觅食，所以我经常会工作到
+    飢肠辘辘，然后又饿又累反倒更加没有力气能去找吃的。
 
-#. &#x2611; [Deleting a buffer without closing the window - Vim Tips Wiki - Wikia](http://vim.wikia.com/wiki/Deleting_a_buffer_without_closing_the_window)
-:   vim, good.
-    :   `:bd`
+    **拥有愉快的朋友们则有莫大的帮助**。例如，我发现我在和 Paul Graham 或 Dan
+    Connolly 聊完天后总是觉得干劲十足－－他们活力四射。
 
-#. &#x2610; [文章分类 - 陈汝丹](http://chenrudan.github.io/page/category.html)
-:
+    **何谓拖延？从旁观者的角度来看，你只是在做著「有趣」（像是玩游戏或看新闻）
+    的事情，而不是你真正该作的事情（这也通常导致旁人把你贴上懒惰的标签）。但真
+    正的问题是：你的脑袋裡到底是怎么回事？**
 
-```
-set ignorecase
+    如果你对自己说，「我真的该去做Ｘ了，这是现在最重要的事情。」突然间，与Ｘ相
+    关的所有工作便会成为你最不想去做的事。**但只要最重要的事情变成了Ｙ，明明是
+    同一件事的Ｘ就会变得简单许多。**
 
+    常言道：困难的工作并不令人愉快。但事实上，困难的工作或许是我做过的事裡最能
+    让人乐在其中的。当你尝试著解决一个棘手的问题时，你不仅不会感到精疲力尽，甚
+    至会在完成之后让你觉得全力以赴真是一件美妙的事。
 
-#. &#x2610; [Caffe、TensorFlow、MXnet三个开源库对比 - 陈汝丹](http://chenrudan.github.io/blog/2015/11/18/comparethreeopenlib.html#0-tsina-1-2654-397232819ff9a47a7b7e80a40613cfe1)
-#. &#x2611; [How do you create a remote Git branch? - Stack Overflow](http://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch)
+[Deleting a buffer without closing the window - Vim Tips Wiki - Wikia](http://vim.wikia.com/wiki/Deleting_a_buffer_without_closing_the_window)
+
+:   `:bd`
+
+[文章分类 - 陈汝丹](http://chenrudan.github.io/page/category.html)
+
+[Caffe、TensorFlow、MXnet三个开源库对比 - 陈汝丹](http://chenrudan.github.io/blog/2015/11/18/comparethreeopenlib.html#0-tsina-1-2654-397232819ff9a47a7b7e80a40613cfe1)
+
+[How do you create a remote Git branch? - Stack Overflow](http://stackoverflow.com/questions/1519006/how-do-you-create-a-remote-git-branch)
+
 :   ```bash
     $ git checkout -b gh-pages
     $ echo hello > index.html
@@ -13405,315 +13511,333 @@ set ignorecase
     $ git checkout master
     ```
 
-#. &#x2611; [Vim 实用技术，第 1 部分: 实用技巧](http://www.ibm.com/developerworks/cn/linux/l-tip-vim1/index.html)
-:   Pretty GOOD!
+[Vim 实用技术，第 1 部分: 实用技巧](http://www.ibm.com/developerworks/cn/linux/l-tip-vim1/index.html)
 
-    :   ```plain
-        ;;;;encoding=utf-8
-        termencoding
-        fileencoding
-        fileencodings=ucs-bom,utf-8,chinese; unicode bom?, utf-8 without bom,
-        chinese( win:gb2312 -> linux:euc-cn ) ambiwidth=double; double char width
-        ```
+:   ```plain
+    ;;;;encoding=utf-8
+    termencoding
+    fileencoding
+    fileencodings=ucs-bom,utf-8,chinese; unicode bom?, utf-8 without bom,
+    chinese( win:gb2312 -> linux:euc-cn ) ambiwidth=double; double char width
+    ```
 
-        ```plain
-        set encoding=utf-8
-        set fileencoding=chinese
-        set fileencodings=ucs-bom,utf-8,chinese
-        set ambiwidth=double
-        ```
+    ```plain
+    set encoding=utf-8
+    set fileencoding=chinese
+    set fileencodings=ucs-bom,utf-8,chinese
+    set ambiwidth=double
+    ```
 
-        vim to edit non utf-8 file when settings are configured to utf-8:
-        `:e ++enc=ucs-bom`, see `:help ++enc` for more.
+    vim to edit non utf-8 file when settings are configured to utf-8:
+    `:e ++enc=ucs-bom`, see `:help ++enc` for more.
 
-        <kbd>Control+R</kbd><kbd>=</kbd>23*234
+    <kbd>Control+R</kbd><kbd>=</kbd>23*234
 
-        #. `uxterm -cjk`{.bash}
-        #. `set mouse=a`, turn on mouse clicking
-        #. tabstop (ts), shiftwidth (sw), expandtab, noexpandtab
-        #. autoindent
-        #. cindent
-        #. cinoptions, `:help cinoptions-values`
+    #. `uxterm -cjk`{.bash}
+    #. `set mouse=a`, turn on mouse clicking
+    #. tabstop (ts), shiftwidth (sw), expandtab, noexpandtab
+    #. autoindent
+    #. cindent
+    #. cinoptions, `:help cinoptions-values`
 
-        `cinoptions=>4,n-2,{2,^-2,:2,=2,g0,h2,p5,t0,+2,(0,u0,w1,m1 shiftwidth=2 tabstop=8`：
-        标准的 GNU 编码风格的设置，对 Vim 缺省的 C 缩进风格作了很多
-        微调，比如，if 语句下的“{”、“}”要在“if”后缩进两格，但函数定义部分“{”、“
-        }”仍和函数名一行对齐。开源软件经常使用该种缩进风格。
+    `cinoptions=>4,n-2,{2,^-2,:2,=2,g0,h2,p5,t0,+2,(0,u0,w1,m1 shiftwidth=2 tabstop=8`：
+    标准的 GNU 编码风格的设置，对 Vim 缺省的 C 缩进风格作了很多
+    微调，比如，if 语句下的“{”、“}”要在“if”后缩进两格，但函数定义部分“{”、“
+    }”仍和函数名一行对齐。开源软件经常使用该种缩进风格。
 
-        **modeline**
+    **modeline**
 
-        Vim 是我用过的第一个支持在文件中记录代码风格设定的编辑器。这个特性在
-        Vim 中叫做**模式行**，实际上，它所做的是在打开文件时根据文件中的 Vim 指令设
-        定相关的 Vim 选项。下面就是一个嵌在 C 源代码中的模式行：
+    Vim 是我用过的第一个支持在文件中记录代码风格设定的编辑器。这个特性在
+    Vim 中叫做**模式行**，实际上，它所做的是在打开文件时根据文件中的 Vim 指令设
+    定相关的 Vim 选项。下面就是一个嵌在 C 源代码中的模式行：
 
-        ```cpp
-        /* vim: set tabstop=4 shiftwidth=4 expandtab: */
-        ```
+    ```cpp
+    /* vim: set tabstop=4 shiftwidth=4 expandtab: */
+    ```
 
-        `nohlsearch`: no highlight search
+    `nohlsearch`: no highlight search
 
-        去掉所有的行尾空格：`%s/\s\+$//`。`%` 表示在整个文件范围内进行替换，
-        `\s` 表示空白字符（空格和制表符），`\+` 对前面的字符匹配一次或多次（越多越好
-        ），`$` 匹配行尾（使用 `\$` 表示单纯的 `$` 字符）；被替换的内容为空；由于一
-        行最多只需替换一次，不需要特殊标志。这个还是比较简单的。
+    去掉所有的行尾空格：`%s/\s\+$//`。`%` 表示在整个文件范围内进行替换，
+    `\s` 表示空白字符（空格和制表符），`\+` 对前面的字符匹配一次或多次（越多越好
+    ），`$` 匹配行尾（使用 `\$` 表示单纯的 `$` 字符）；被替换的内容为空；由于一
+    行最多只需替换一次，不需要特殊标志。这个还是比较简单的。
 
-        去掉所有的空白行：`:%s/\(\s*\n\)\+/\r/`。
-        `*` 代表对前面的字符（此处为`\s`）匹配零次或多次（越多越好；使用 `\*` 表示单纯的 `*` 字符），`\(` 和 `\)` 对表
-        达式进行分组，使其被视作一个不可分割的整体。因此，这个表达式的完整意义
-        是，把连续的换行符（包含换行符前面可能有的连续空白字符）替换成为一个单
-        个的换行符。唯一很特殊的地方是，在模式中使用的是 `\n`，而被替换的内容中
-        却不能使用 `\n`，而只能使用 `\r`。原因是历史造成的，详情如果有兴趣的话可
-        以查看 `:help NL-used-for-Nul`。
+    去掉所有的空白行：`:%s/\(\s*\n\)\+/\r/`。
+    `*` 代表对前面的字符（此处为`\s`）匹配零次或多次（越多越好；使用 `\*` 表示单纯的 `*` 字符），`\(` 和 `\)` 对表
+    达式进行分组，使其被视作一个不可分割的整体。因此，这个表达式的完整意义
+    是，把连续的换行符（包含换行符前面可能有的连续空白字符）替换成为一个单
+    个的换行符。唯一很特殊的地方是，在模式中使用的是 `\n`，而被替换的内容中
+    却不能使用 `\n`，而只能使用 `\r`。原因是历史造成的，详情如果有兴趣的话可
+    以查看 `:help NL-used-for-Nul`。
 
-        去掉所有的 `//` 注释：`:%s!\s*//.*!!`。首先可以注意到，这儿分隔符改用了
-        `!`，原因是在模式或字符串部分使用了 `/` 字符，不换用其他分隔符的话就得在
-        每次使用 `/` 字符本身时写成 `\/`，上面的命令得写成 `:%s/\s*\/\/.*//`，可读
-        性较低。命令本身倒是相当简单，用过正则表达
-        式的人估计都知道“.”匹配表示除换行符之外的任何字符吧。
+    去掉所有的 `//` 注释：`:%s!\s*//.*!!`。首先可以注意到，这儿分隔符改用了
+    `!`，原因是在模式或字符串部分使用了 `/` 字符，不换用其他分隔符的话就得在
+    每次使用 `/` 字符本身时写成 `\/`，上面的命令得写成 `:%s/\s*\/\/.*//`，可读
+    性较低。命令本身倒是相当简单，用过正则表达
+    式的人估计都知道“.”匹配表示除换行符之外的任何字符吧。
 
-        去掉所有的 `/* */` 注释：`:%s!\s*/\*\_.\{-}\*/\s*!!g`。这个略有点复杂了
-        ，用到了几个不太常用的 Vim 正则表达式特性。`\_.` 匹配包含换行在内的所有
-        字符；`\{-}` 表示前一个字符可出现零次或多次，但在整个正则表达式可以匹配
-        成功的前提下，匹配的字符数越少越好；标志 `g` 表示一行里可以匹配和替换多次
-        。替换的结果是个空格的目的是保证像 `int /* space not necessary around comments */ main()`
-        这样的表达式在替换之后仍然是合法的。希望上面的这些简
-        单的例子能够引起你使用 Vim 的正则表达式高效完成任务的兴趣。进一步的信息
-        可参考 `:help regexp`。
+能 讓
 
-        #. m：在多字节字符处可以折行，对中文特别有效（否则只在空白字符处折行）；
-        #. M：在拼接两行时（重新格式化，或者是手工使用“J”命令），如果前一行的结尾或
-        后一行的开头是多字节字符，则不插入空格，非常适合中文上面提到的注释.
-        件），然后把结果贴回到邮件编辑窗口中进行发送。`set formatoptions+=mM`.
+    去掉所有的 `/* */` 注释：`:%s!\s*/\*\_.\{-}\*/\s*!!g`。这个略有点复杂了
+    ，用到了几个不太常用的 Vim 正则表达式特性。`\_.` 匹配包含换行在内的所有
+    字符；`\{-}` 表示前一个字符可出现零次或多次，但在整个正则表达式可以匹配
+    成功的前提下，匹配的字符数越少越好；标志 `g` 表示一行里可以匹配和替换多次
+    。替换的结果是个空格的目的是保证像 `int /* space not necessary around comments */ main()`
+    这样的表达式在替换之后仍然是合法的。希望上面的这些简
+    单的例子能够引起你使用 Vim 的正则表达式高效完成任务的兴趣。进一步的信息
+    可参考 `:help regexp`。
 
-        `gf`, `ga`, ` `. `
+    #. m：在多字节字符处可以折行，对中文特别有效（否则只在空白字符处折行）；
+    #. M：在拼接两行时（重新格式化，或者是手工使用“J”命令），如果前一行的结尾或
+    后一行的开头是多字节字符，则不插入空格，非常适合中文上面提到的注释.
+    件），然后把结果贴回到邮件编辑窗口中进行发送。`set formatoptions+=mM`.
 
-        use `.` instead of macros!
+    `gf`, `ga`, ` `. `
 
-#. &#x2611; [程序员的编辑器——VIM(转) - ma6174 - 博客园](http://www.cnblogs.com/ma6174/articles/2384210.html)
+    use `.` instead of macros!
+
+[程序员的编辑器——VIM(转) - ma6174 - 博客园](http://www.cnblogs.com/ma6174/articles/2384210.html)
+
 :   我说这个人怎么这么熟，原来之前用过他的 Vim 配置……
-    :   这些例子也许初看起来有点吓人，可是在很多时候 VIM 这些强大的命令能省不少力，VIM
-        不愧是为“编辑”这个功能费尽心思。
 
-        VIM 的帮助是超链接形式的，它使用的就是 tags，所以可以跟 ctags 功能
-        一样按 <kbd>Ctrl+]</kbd> 跳转到链接所指处，按 <kbd>Ctrl+t</kbd> 返回。
+    这些例子也许初看起来有点吓人，可是在很多时候 VIM 这些强大的命令能省不少力，VIM
+    不愧是为“编辑”这个功能费尽心思。
 
-        help              | detailed
-        ----------------- | --------
-        `:help`           | 打开帮助首页，这个首页分类非常清楚
-        `:help cmd`       | 查找normal mode命令，比如 `:help dd`
-        `:help i_cmd`     | 查找insert mode命令，比如 `:help i_Ctrl-y`
-        `:help :cmd`      | 查找command-line命令，比如 `:help :s`
-        `:help 'option`   | 查找选项，比如 `:help 'tabstop`
+    VIM 的帮助是超链接形式的，它使用的就是 tags，所以可以跟 ctags 功能
+    一样按 <kbd>Ctrl+]</kbd> 跳转到链接所指处，按 <kbd>Ctrl+t</kbd> 返回。
 
-        VIM中有九类寄存器, cool!
+    help              | detailed
+    ----------------- | --------
+    `:help`           | 打开帮助首页，这个首页分类非常清楚
+    `:help cmd`       | 查找normal mode命令，比如 `:help dd`
+    `:help i_cmd`     | 查找insert mode命令，比如 `:help i_Ctrl-y`
+    `:help :cmd`      | 查找command-line命令，比如 `:help :s`
+    `:help 'option`   | 查找选项，比如 `:help 'tabstop`
 
-        `:ab hw Hello world`
+    VIM中有九类寄存器, cool!
 
-        `:s//` 和 `:g//`，`:!g//`
+    `:ab hw Hello world`
 
-        这两个命名加上正则表达式，常常能完成非常复杂的编辑任务，可以毫不夸张地说是 VIM
-        的两柄瑞士军刀。`:s` 是替换操作，`:g` 是查找匹配模式的行，`:!g` 是查找不匹配模式的行。
+    `:s//` 和 `:g//`，`:!g//`
 
-        > ...Can you imagine how many keystrokes could have been saved, if I
-        > only had known the `*` command in time? - Juergen Salk, 1/19/2001
+    这两个命名加上正则表达式，常常能完成非常复杂的编辑任务，可以毫不夸张地说是 VIM
+    的两柄瑞士军刀。`:s` 是替换操作，`:g` 是查找匹配模式的行，`:!g` 是查找不匹配模式的行。
 
-        Read more
+    > ...Can you imagine how many keystrokes could have been saved, if I
+    > only had known the `*` command in time? - Juergen Salk, 1/19/2001
 
-        #. [tips : vim online](http://www.vim.org/tips/index.php)
-        #. [Vim Tips Wiki - Wikia](http://vim.wikia.com/wiki/Vim_Tips_Wiki)
+    Read more
 
-#. &#x2611; [vi/vim tutorial for Dvorak](http://boredzo.org/vi_tutorial/)
-:   [vi for dvorak users](http://boredzo.org/vi_tutorial/vi_tutorial-QWERTY-Color.pdf)
+    #. [tips : vim online](http://www.vim.org/tips/index.php)
+    #. [Vim Tips Wiki - Wikia](http://vim.wikia.com/wiki/Vim_Tips_Wiki)
 
-#. &#x2611; [Why, oh WHY, do those #?@! nutheads use vi?](http://www.viemu.com/a-why-vi-vim.html)
-:   cool
-    :   Heck, most vi users were not even born when vi was written!
+[vi/vim tutorial for Dvorak](http://boredzo.org/vi_tutorial/)
 
-        Vim is available for free for almost any platform out there, and there are
-        plug-ins to get the functionality inside all major IDEs. Let's try to break
-        a few misconceptions, and see some real examples of why it's the killerest.
+:    [vi for dvorak users](http://boredzo.org/vi_tutorial/vi_tutorial-QWERTY-Color.pdf)
 
-        #. modal editing #. it's not all about regular expressions ??  #. you gotta
-        be nuts and/or a genius to use it
-            * manipulating delimited（界限）blocks: `di>`
-        #. hjkl to move around?  #. since you are thinking 90% of the time, and
-        editing 10%, the productivity gain might be there, but it's useless anyway
-            * Comfortable editing helps you stay in "the zone", the state of
-            * concentration that gets you the maximum productivity. As you master a
-            * powerful tool such as an editor, it just disappears from your
-            * conscious, and you are free to concentrate in the problem, and your
-            * editing happens unconsciously.
-        #. it's just sticking to a disappearing past
+[Why, oh WHY, do those #?@! nutheads use vi?](http://www.viemu.com/a-why-vi-vim.html)
 
-        Do whatever you want. Don't learn it if you feel it's too much effort just
-        for nothing. Learn emacs instead. Or stay in your IDE using a lousy editor.
-        Whatever. But in any case, don't ever claim again that those 'vi guys are
-        nutheads' - I hope that I have succeeded in showing you why they (we) stick
-        to it, and you should at least be able to understand its power, even if you
-        prefer to stay away from it.
+:   Heck, most vi users were not even born when vi was written!
 
-        Read more
+    Vim is available for free for almost any platform out there, and there are
+    plug-ins to get the functionality inside all major IDEs. Let's try to break
+    a few misconceptions, and see some real examples of why it's the killerest.
 
-        #. [ViEmu: vi-vim editor emulation for Visual Studio, Xcode, Word, Outlook
-        and SQL Server](http://www.viemu.com/)
+    - modal editing
+    - it's not all about regular expressions ??
+    - you gotta be nuts and/or a genius to use it
+    - manipulating delimited（界限）blocks: `di>`
+    - hjkl to move around?
+    - since you are thinking 90% of the time, and editing 10%, the productivity
+      gain might be there, but it's useless anyway
+    - Comfortable editing helps you stay in "the zone", the state of
+    - concentration that gets you the maximum productivity. As you master a
+    - powerful tool such as an editor, it just disappears from your
+    - conscious, and you are free to concentrate in the problem, and your
+    - editing happens unconsciously.
+    - it's just sticking to a disappearing past
 
-#. &#x2610; [CTEX: LaTeX 文档](http://www.ctex.org/OnlineDocuments)
-#. &#x2611; [VICE 面会｜EAGLES OF DEATH METAL乐队讲述巴黎恐怖袭击—在线播放—优酷网，视频高清在线观看](http://v.youku.com/v_show/id_XMTQwMjEyODE4MA==.html?from=s1.8-1-1.1)
-#. &#x2611; [GCC and Make - A Tutorial on how to compile, link and build C/C++ applications](http://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html)
-#. &#x2611; [Creating a shared and static library with the gnu compiler [gcc]](http://www.adp-gmbh.ch/cpp/gcc/create_lib.html)
-:   last one not work
-    :   ```bash
-        # create static lib
-        $ gcc -c calc_mean.c -o calc_mean.o
-        $ ar rcs libmean.a calc_mean.o
+    Do whatever you want. Don't learn it if you feel it's too much effort just
+    for nothing. Learn emacs instead. Or stay in your IDE using a lousy editor.
+    Whatever. But in any case, don't ever claim again that those 'vi guys are
+    nutheads' - I hope that I have succeeded in showing you why they (we) stick
+    to it, and you should at least be able to understand its power, even if you
+    prefer to stay away from it.
 
-        # create dynamic lib
-        $ gcc -c -fPIC calc_mean.c -o calc_mean.o # position independant code, -fpic
-        $ gcc -shared -Wl,-soname,libmean.so -o libmean.so calc_mean.o
-        # gcc -shared -Wl,-soname,libmean.so.1 -o libmean.so.1.0.1 calc_mean.o
+    Read more
 
-        # link static
-        $ gcc -static main.c -L. -lmean -o statically_linked
+      - [ViEmu: vi-vim editor emulation for Visual Studio, Xcode, Word, Outlook and SQL Server](http://www.viemu.com/)
 
-        # link dynamic
-        $ gcc main.c -o dynamically_linked -L. -lmean
-        # gcc main.c -o dynamically_linked -L. -l:libmean.so.1.0.1
+[CTEX: LaTeX 文档](http://www.ctex.org/OnlineDocuments)
 
-        # execute dynamically linked exe
-        $ LD_LIBRARY_PATH=. ./dynamically_linked
-        ```
+[VICE 面会｜EAGLES OF DEATH METAL乐队讲述巴黎恐怖袭击—在线播放—优酷网，视频高清在线观看](http://v.youku.com/v_show/id_XMTQwMjEyODE4MA==.html?from=s1.8-1-1.1)
 
-        `*.o` &rarr; `.a`: `ar rcs my_library.a file1.o file2.o`{.bash}
-          ~ `r` says insert the given object files in to the archive
-            (**replacing** any older versions of the same thing)
-          ~ `c` says create the archive if it isn't already there (normally
-            this happens anyway, but this option suppresses the warning).
-          ~ `s` says to write an object-file index into the archive.
+[GCC and Make - A Tutorial on how to compile, link and build C/C++ applications](http://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html)
 
-        ```bash
-        $ gcc -Wall -I/include-files -L/libraries prog.c -lctest -o prog
-        ```
+[Creating a shared and static library with the gnu compiler [gcc]](http://www.adp-gmbh.ch/cpp/gcc/create_lib.html)
 
-        #. `gcc`{.bash} - GNU C compiler
-        #. `ld`{.bash} - The GNU Linker
-        #. `ldd`{.bash} - List dependencies
-        #. `ldconfig`{.bash} - configure dynamic linker run time bindings (update cache /etc/ld.so.cache)
+:   ```bash
+    # create static lib
+    $ gcc -c calc_mean.c -o calc_mean.o
+    $ ar rcs libmean.a calc_mean.o
 
-        Filesystem Placement (`/etc/ld.so.conf`)
+    # create dynamic lib
+    $ gcc -c -fPIC calc_mean.c -o calc_mean.o # position independant code, -fpic
+    $ gcc -shared -Wl,-soname,libmean.so -o libmean.so calc_mean.o
+    # gcc -shared -Wl,-soname,libmean.so.1 -o libmean.so.1.0.1 calc_mean.o
 
-        #. `/lib`
-        #. `/usr/lib`
-        #. `/usr/local/lib`
+    # link static
+    $ gcc -static main.c -L. -lmean -o statically_linked
 
-        Environment Variables
+    # link dynamic
+    $ gcc main.c -o dynamically_linked -L. -lmean
+    # gcc main.c -o dynamically_linked -L. -l:libmean.so.1.0.1
 
-        #. `LD_LIBRARY_PATH`
-        #. `LD_DEBUG`
+    # execute dynamically linked exe
+    $ LD_LIBRARY_PATH=. ./dynamically_linked
+    ```
 
-        Installing and Using a Shared Library
+    `*.o` &rarr; `.a`: `ar rcs my_library.a file1.o file2.o`{.bash}
+      ~ `r` says insert the given object files in to the archive
+        (**replacing** any older versions of the same thing)
+      ~ `c` says create the archive if it isn't already there (normally
+        this happens anyway, but this option suppresses the warning).
+      ~ `s` says to write an object-file index into the archive.
 
-        #. simply copy the library into one of the standard directories (e.g., `/usr/lib`) and run `ldconfig`{.bash}
-        #. `ldconfig -n directory_with_shared_libraries`{.bash}
-        #. `LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH my_program`{.bash}
+    ```bash
+    $ gcc -Wall -I/include-files -L/libraries prog.c -lctest -o prog
+    ```
 
-        refs
+    - `gcc`{.bash} - GNU C compiler
+    - `ld`{.bash} - The GNU Linker
+    - `ldd`{.bash} - List dependencies
+    - `ldconfig`{.bash} - configure dynamic linker run time bindings (update
+      cache /etc/ld.so.cache)
 
-        #. [linker - Linking a shared library using gcc - Stack Overflow](http://stackoverflow.com/questions/726014/linking-a-shared-library-using-gcc)
-        #. [c - How do I compile a static library - Stack Overflow](http://stackoverflow.com/questions/11344547/how-do-i-compile-a-static-library)
-        #. [Linux Tutorial - Static, Shared Dynamic and Loadable Linux Libraries](http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html)
-        #. [Shared Libraries](http://www.tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html)
+    Filesystem Placement (`/etc/ld.so.conf`)
 
-#. &#x2611; [Duff's device - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Duff%27s_device)
-#. &#x2611; [无插件Vim编程技巧 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/11312.html)
+      - `/lib`
+      - `/usr/lib`
+      - `/usr/local/lib`
+
+    Environment Variables
+
+      - `LD_LIBRARY_PATH`
+      - `LD_DEBUG`
+
+    Installing and Using a Shared Library
+
+      - simply copy the library into one of the standard directories (e.g.,
+        `/usr/lib`) and run `ldconfig`{.bash}
+      - `ldconfig -n directory_with_shared_libraries`{.bash}
+      - `LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH my_program`{.bash}
+
+    refs
+
+      - [linker - Linking a shared library using gcc - Stack Overflow](http://stackoverflow.com/questions/726014/linking-a-shared-library-using-gcc)
+      - [c - How do I compile a static library - Stack Overflow](http://stackoverflow.com/questions/11344547/how-do-i-compile-a-static-library)
+      - [Linux Tutorial - Static, Shared Dynamic and Loadable Linux Libraries](http://www.yolinux.com/TUTORIALS/LibraryArchives-StaticAndDynamic.html)
+      - [Shared Libraries](http://www.tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html)
+
+[Duff's device - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Duff%27s_device)
+
+[无插件Vim编程技巧 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/11312.html)
+
 :   should know
-    :   ```plain
-        :E
-            -, up dir
-            D, delete
-            R, rename
-            s, sort
-            x, run
 
-        :cd
-        :pwd
+    ```plain
+    :E
+        -, up dir
+        D, delete
+        R, rename
+        s, sort
+        x, run
 
-        ;; buffers
+    :cd
+    :pwd
 
-        :ls                             ls buffers
-        :buffer 4                       4th buffer
-        :bn                             next buffer
-        :bl :blast                      last buffer
-        :bf :bfirst                     first buffer
-        :bdelete :bd                    delete buffer
+    ;; buffers
 
-        ;; windows
+    :ls                             ls buffers
+    :buffer 4                       4th buffer
+    :bn                             next buffer
+    :bl :blast                      last buffer
+    :bf :bfirst                     first buffer
+    :bdelete :bd                    delete buffer
 
-        :He                             explore (down)
-        :He!                            explore (up)
-        :Ve                             explore (left)
-        :Ve!                            explore (right)
-        :Te                             explore tab
-            gt                              next tab, control+PgDn
-            gT                              previous tab, control+PgUp
-            5gT                             5th tab, idx: 1..n
-            :tabm 5, :tabmove 5             5th tab, idx: 0..n-1
-            :tabs                           show tabs
-            :tabclose 2
-            :bufdo tab split                all bufs turn to tabs
+    ;; windows
 
-        ;; scroll
+    :He                             explore (down)
+    :He!                            explore (up)
+    :Ve                             explore (left)
+    :Ve!                            explore (right)
+    :Te                             explore tab
+        gt                              next tab, control+PgDn
+        gT                              previous tab, control+PgUp
+        5gT                             5th tab, idx: 1..n
+        :tabm 5, :tabmove 5             5th tab, idx: 0..n-1
+        :tabs                           show tabs
+        :tabclose 2
+        :bufdo tab split                all bufs turn to tabs
 
-        :set scb                        sync scroll
-        :set scb!                       not sync scroll
+    ;; scroll
 
-        :qa
-        :wqa
-        ```
+    :set scb                        sync scroll
+    :set scb!                       not sync scroll
 
-        ```bash
-        # open in tabs
-        $ vim -p *.cpp
+    :qa
+    :wqa
+    ```
 
-        # open in splits (vertical, horiz)
-        $ vim -On file1 file2 ...
-        $ vim -on file1 file2 ...
+    ```bash
+    # open in tabs
+    $ vim -p *.cpp
 
-        # load session, (save session: :mksession session.vim)
-        $ vim -S session.vim
-        ```
+    # open in splits (vertical, horiz)
+    $ vim -On file1 file2 ...
+    $ vim -on file1 file2 ...
 
-        flag | ?
-        ---- | ----------
-        `–` | （非活动的缓冲区）
-        `a` | （当前被激活缓冲区） %a, current buffer
-        `h` | （隐藏的缓冲区）
-        `%` | （当前的缓冲区）
-        `#` | （交换缓冲区）
-        `=` | （只读缓冲区）
-        `+` | （已经更改的缓冲区）
+    # load session, (save session: :mksession session.vim)
+    $ vim -S session.vim
+    ```
 
-        Read more
+    flag | ?
+    ---- | ----------
+    `–` | （非活动的缓冲区）
+    `a` | （当前被激活缓冲区） %a, current buffer
+    `h` | （隐藏的缓冲区）
+    `%` | （当前的缓冲区）
+    `#` | （交换缓冲区）
+    `=` | （只读缓冲区）
+    `+` | （已经更改的缓冲区）
 
-        #. [Vim的分屏功能 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/1679.html)
+    Read more
 
-#. &#x2611; [橡皮鸭程序调试法 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/1719.html)
+      - [Vim 的分屏功能 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/1679.html)
+
+[橡皮鸭程序调试法 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/1719.html)
+
 :   小浣熊方法、Feynman 方法
-    :   #. 为什么这个方法要叫做橡皮鸭呢？因为橡皮鸭子是西方人在泡澡时最喜欢玩的一个小玩具
-        #. **Once a problem is described in sufficient detail, its solution is obvious.**
 
-#. &#x2610; ~~[非常不错的编程技术教程 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/240.html)~~
-:   ?
-    :   most of them are out of dated and not have valid access.
+      - 为什么这个方法要叫做橡皮鸭呢？因为橡皮鸭子是西方人在泡澡时最喜欢玩的一
+        个小玩具
+      - **Once a problem is described in sufficient detail, its solution is
+        obvious.**
 
-#. &#x2611; [c++ - Adding Q_OBJECT macro gives "unresolved external error" in QThread inherited class - Stack Overflow](http://stackoverflow.com/questions/20380017/adding-q-object-macro-gives-unresolved-external-error-in-qthread-inherited-cla)
+[c++ - Adding Q_OBJECT macro gives "unresolved external error" in QThread inherited class - Stack Overflow](http://stackoverflow.com/questions/20380017/adding-q-object-macro-gives-unresolved-external-error-in-qthread-inherited-cla)
+
 :   第一种！半天折腾，然后自动就好了……shit……
-    :   In this case this error may accrue only if moc tool didn't create meta data for this class. This can happen in two cases:
-        #. **file dependencies are broken** so you have to run `qmake`{.bash} and/or clean project (`make clean`{.bash}).
-        #. `moc`{.bash} tool is not instructed to generate those data, for example you are missing entry in pro file: `HEADERS += tcustomthread.h`
 
-#. &#x2611; [Is there any chance that vim will be rewritten in c++ with gtk/qt like other fast modern editors? - Quora](https://www.quora.com/Is-there-any-chance-that-vim-will-be-rewritten-in-c++-with-gtk-qt-like-other-fast-modern-editors)
-:   see
-    :   #. &#x2610; [equalsraf/vim-qt](https://github.com/equalsraf/vim-qt)
+    In this case this error may accrue only if moc tool didn't create meta data for this class. This can happen in two cases:
+
+      - **file dependencies are broken** so you have to run `qmake`{.bash}
+        and/or clean project (`make clean`{.bash}).
+      - `moc`{.bash} tool is not instructed to generate those data, for example
+        you are missing entry in pro file: `HEADERS += tcustomthread.h`
+
+[Is there any chance that vim will be rewritten in c++ with gtk/qt like other fast modern editors? - Quora](https://www.quora.com/Is-there-any-chance-that-vim-will-be-rewritten-in-c++-with-gtk-qt-like-other-fast-modern-editors)
+
+:   see [equalsraf/vim-qt](https://github.com/equalsraf/vim-qt)
 
 ---
 

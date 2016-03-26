@@ -71,3 +71,22 @@
   - `make`
   - `make qn`「同步到七牛云 | sync to qiniu」
   - `make gh`「同步到 GitHub | push to github」 --> 「travis 代为编译 | trigger building on trivis」
+
+## TODO
+
+  - script to tranlate `vimrc` to `perl` code highlight, etc.
+
+---
+
+## Customized Markdown
+
+```
+    - tags, indexes
+    - anchoring via                                         `@`{.tzx-anchor #id}
+    - tagging/anchoring via                                 `tag`{.tzx-tag}
+    - tagging/anchoring via                                 <#>(@tag1 @tag2), <#id>(@tag1 @tag2)
+    - including other file via                              <#>(%filename option1=value1)
+    - checking
+        + 首字母是中文标点
+        + 但行长度过长
+```

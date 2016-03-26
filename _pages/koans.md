@@ -7,6 +7,25 @@ Koans | 呓语
 
 <div class="koans">
 
+## `1458995382`{.tzx-timestamp} pandoc 对中文的支持
+
+~~之前去提了一个 [issue](https://github.com/jgm/pandoc/issues/2586)，不过刚发现只能正确处理
+简体中文，繁体的不行……~~
+
+是我自己昨天的改残了 Makefile，感觉写得还挺 hack 的，在自己电脑上测试可以。但是在 Windows 就是不行……：
+
+```makefile
++EAST_ASIAN_LINE_BREAKS=$(echo '' | pandoc -f markdown+east_asian_line_breaks 2&>/dev/null && echo -n '+east_asian_line_breaks' || echo -n '')
+PANDOC_OPTIONS = -S -s --ascii \
+	-c main.css \
+	-A footer.html \
+	--highlight-style pygments \
+	-f markdown$(+EAST_ASIAN_LINE_BREAKS)
+```
+
+昨天晚上真的可以？还是我的幻觉？一定是幻觉因为昨天晚上 travis 编译也是没有通过
+的……：[Build #47 - district10/blog - Travis CI](https://travis-ci.org/district10/blog/builds/118537331)。
+
 ## `1458898446`{.tzx-timestamp} Perl 的 `.gitignore`
 
 GitHub 上默认提供的 perl 项目的 ignore 文件居然默认 ignore 掉 Makefile……

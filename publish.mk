@@ -1,9 +1,8 @@
-+EAST_ASIAN_LINE_BREAKS=$(echo '' | pandoc -f markdown+east_asian_line_breaks 2&>/dev/null && echo -n '+east_asian_line_breaks' || echo -n '')
 PANDOC_OPTIONS = -S -s --ascii \
 	-c main.css \
 	-A footer.html \
 	--highlight-style pygments \
-	-f markdown$(+EAST_ASIAN_LINE_BREAKS)
+	-f markdown+east_asian_line_breaks
 
 MD   = $(wildcard *.md)
 HTML = $(MD:%.md=%.html)

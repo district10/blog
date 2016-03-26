@@ -31,6 +31,9 @@ About | 关于
   - Anyway，CSS 和功能还要慢慢打磨，我自己先用着吧～
   - 网站托管在「七牛云存储」，但在 coding.net 上也有备份。前者可能访问更快，
     后者更新比较及时。具体见：<https://github.com/district10/blog#intro>。
+  - 如果你觉得离线看起来更方便，可以到
+    <https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/archive/coding-pages> 下
+    载一个打包。但不包括图片，以后可能会写一个脚本打包一个含图片的。
   - 所有浏览器都有一个 bug，即点击 `#this-page-ref-link` 链接的时候，如果跳转到
     了页尾，可能链接不能置顶。处女座不能容忍其中的愚蠢。所以每个页面最后加了一张大图片。
 
