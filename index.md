@@ -160,7 +160,7 @@ Search:<br>
 <script>
 var link_prefix = tzx_link_prefix;
 if ( window.location.toString().startsWith('file') ) {
-    link_prefix = window.location.toString().split('/index.html')[0];
+    // link_prefix = window.location.toString().split('/index.html')[0];
 }
 
 function prependChild( p, c ) {

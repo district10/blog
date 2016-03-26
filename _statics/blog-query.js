@@ -6,7 +6,7 @@ var tzx_goto = {
 }
 
 // query and go
-var tzx_link_prefix = 'http://tangzx.qiniudn.com';
+var tzx_link_prefix = '.';
 // format: [{url: ..., title: ..., query: ...}, ...]
 var tzx_links = [
     {

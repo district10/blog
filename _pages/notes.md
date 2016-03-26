@@ -7,6 +7,9 @@ Notes | 笔记
 
 <!--...-->
 
+The best way to see the point of vim is to start a casual project at home,
+unplug your mouse and tape over your arrow keys.
+
 Here's an example of a busted (蛋疼了的) build: ...
 
 [Display Disqus On Click Event](http://www.paulund.co.uk/ajax-disqus-comment-system)
