@@ -5,6 +5,8 @@
 About | 关于
 ============
 
+<!-- 主站是 qiniu，coding 是镜像！-->
+
 处女座，INTP。个人主页：[![](tangzhixiong.svg)](http://tangzhixiong.com)。
 
 本博基本上分离在两条流水线：
@@ -29,6 +31,8 @@ About | 关于
   - Anyway，CSS 和功能还要慢慢打磨，我自己先用着吧～
   - 网站托管在「七牛云存储」，但在 coding.net 上也有备份。前者可能访问更快，
     后者更新比较及时。具体见：<https://github.com/district10/blog#intro>。
+  - 所有浏览器都有一个 bug，即点击 `#this-page-ref-link` 链接的时候，如果跳转到
+    了页尾，可能链接不能置顶。处女座不能容忍其中的愚蠢。所以每个页面最后加了一张大图片。
 
 ---
 
@@ -108,3 +112,11 @@ Reads | 斋读
 __
 
 -->
+
+<a id="cc" rel="license"
+           href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh">
+<img title="知识共享许可协议" style="border-width: 0px; vertical-align: middle; display: inline; "
+    src="cc-80x15.png"
+    original="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
+    height="20px;">
+</a>

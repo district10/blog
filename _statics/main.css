@@ -1,4 +1,5 @@
 html {
+    // rgba(155, 155, 155, 0.5);
     font-size: 150%;
     font-family: TIBch, "Classic Grotesque W01", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
@@ -86,7 +87,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a {
 h1, h2, h3, h4, h5, h6 {
     color: white;
     font-weight: bold;
-    margin: 10px 15px 20px 0px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 15px;
+    margin-bottom: 5px;
     padding: 0.5em;
     line-height: 180%;
     font-family: "TIBch", "Classic Grotesque W01", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", "Microsoft YaHei", SimSun, sans-serif;
@@ -100,10 +104,6 @@ h1 {
     margin: 30px 0px 50px 0px;
     border: none;
     text-align: center;
-}
-
-h1:before {
-    // content: '\f05c';
 }
 
 h2 {
@@ -129,13 +129,8 @@ h5, h6 {
     font-size: 70%;
 }
 
-h5 {
-    background: #8cc540;
-}
-
-h6 {
-    background: #019fde;
-}
+h5 { background: #8cc540; }
+h6 { background: #019fde; }
 
 caption {
     caption-side: top;
@@ -195,6 +190,9 @@ caption {
 .footnotes > hr {
 }
 
+.footnotes:after {
+}
+
 .footnotes ol li p {
     line-height: 1.6;
 }
@@ -212,30 +210,57 @@ a:hover {
 }
 
 a.external {
-    padding-right: 13px;
-    background: url('external.gif') no-repeat right 1px;
+    padding-right: 1em;
 }
 
-h1:before h2:before h3:before {
-    padding-right: 0.3em;
-    margin-left: -2em;
-    content: "///";
-    color: #9ddcff;
-    border: 1px solid red;
-    display: block;
+a.external:after {
+    content: "❏"; // "❖"(winlogo) // "❀"(flower), "☯"(yinyang), "❏"(empty square);
+    padding-left: 0.5em;
 }
 
-h1.title {
-    display: none;
+a[href^="http://"]:not([href*="mydomain.com"]):before{ }
+
+a { padding-right: 0.1em; }
+a:after { color: lightgray; font-size: 60%; }
+
+a[href*="wikipedia.org"]:after          { content: "「維」"; }
+a[href*="github.com"]:after             { content: "「基」"; }
+a[href*="douban.com"]:after             { content: "「豆」"; }
+a[href^="mailto:"]:after                { content: "「邮」"; }
+a[href*="tangzhixiong.com"]:after,
+a[href*="dvorak4tzx.com"]:after         { content: "「我」"; }
+a[href$=".pdf"]:after                   { content: "「档」"; }
+a[href*="zhihu.com:"]:after             { content: "「知」"; }
+
+h1, h2, h3, h4, h5, h6 { padding-left: 1.0em; padding-right: 0.4em; }
+
+h1:before, h1:after, 
+h2:before, h2:after,  
+h3:before, h3:after,
+h4:before, h4:after,
+h5:before, h5:after,
+h6:before, h6:after  {
+    // rgba(157, 220, 255, 0.8); // #9ddcff; 
+    color: #9ddcff; 
 }
 
-h2.author {
-    display: none;
-}
+h1:before { content: "/     "; }
+h2:before { content: "//    "; }
+h3:before { content: "///   "; }
+h4:before { content: "////  "; }
+h5:before { content: "///// "; }
+h6:before { content: "//////"; }
 
-h3.date {
-    display: none;
-}
+h1:after  { content: "     /"; }
+h2:after  { content: "    //"; }
+h3:after  { content: "   ///"; }
+h4:after  { content: "  ////"; }
+h5:after  { content: " /////"; }
+h6:after  { content: "//////"; }
+
+h1.title { display: none; }
+h2.author { display: none; }
+h3.date { display: none; }
 
 div.slogan {
     margin-top:  50px;
@@ -366,9 +391,6 @@ p a img:hover {
 .footnotes ol li ol li {
     line-height: 100%;
 }
-.ds-thread {
-    padding-top: 50px;
-}
 
 #cc {
     padding-top: 20px;
@@ -457,7 +479,6 @@ div#TOC {
     top: 5%;
     right: 1%;
     max-height: 90%;
-    // max-width: ;
     min-width: 200px; 
     width: auto;
     height: auto;
@@ -500,13 +521,8 @@ div#TOC:hover {
     background: black;
 }
 
-h1::selection {
-    color: red;
-}
-h1::-moz-selection {
-    color: red;
-}
-
+h1::selection { color: orange; }
+h1::-moz-selection { color: orange; }
 
 .tzx {
     position: fixed;
@@ -530,7 +546,6 @@ pre.tzx-plain code {
 
 pre.tzx-poem code {
 	color: black;
-	// font-variant: small-caps;
 }
 
 pre.tzx-bigquote code {
@@ -628,17 +643,8 @@ p:before {
 
 body {
     padding-bottom: 60%;
-}
-
-#tzx-end {
-    background-image:url("data:image/svg+xml;utf8,
-  <svg xmlns='http://www.w3.org/2000/svg' version='1.1'
-       height='50px' width='120px'>
-    <text x='0' y='15' fill='red' font-size='20'>I love SVG!</text>
-  </svg>");
-    position: fixed;
-    bottom: 50px;
-    width: 100%;
-    height: 500px;
-    border: 1px solid red;
+    background-image: url(tzx.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-color: rgba( 255, 255, 255, 0.05 );
 }

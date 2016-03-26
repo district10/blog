@@ -56,6 +56,10 @@ $(DIR_PUBLISH)/%.md: $(DIR_DOCS)/%.md
 		$(DIR_PUBLISH)/$(<:$(DIR_DOCS)/%.md=%.tags) > \
 		$@
 
+extras: items
+extras: 
+	$(MAKE) -C $(DIR_PUBLISH) extras
+
 statics:
 	$(MAKE) -C $(DIR_STATICS)
 

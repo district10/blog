@@ -95,19 +95,21 @@ while (<IMD>) {
     }
 
     # one reading material
-    if (/^\[.*?\]\((.*)\).*$/) {
+    if (/^\[.*?\]\((.*)\)(.*)$/) {
+        $line =~ s/($2)//;
         $line =~ s/\r?\n?$//;
         my $mdurl = $line;
         $mdurl =~ s/^\s+|\s+$//g;
         my $hex = &md5id($mdurl);
-        print $line, ' `@`{.tzx-anchor #' . $hex . '}' . "\n";
-        print RDL '- ', $line, ' [☯](' . $filename . '#' . $hex . ")\n";
         $curAnchor = $hex;
+        print $line, ' `@`{.tzx-anchor #' . $hex . '}' . "\n";
+        next if $line =~ /\[.*?!.*?\[.*?\]\(.*?\)\]/;
+        print RDL '- [☯](' . $filename . '#' . $hex . ") ", $line, "\n";
         next;
     }
 
     # assume $level = 0;
-    if (/^\s*(```)(.*)$/) {
+    if (/^:?\s*(```)(.*)$/) {
         ++$level;
         $line =~ s/${1}.*\r?\n?$/~~~/;
         my @options = ();
@@ -123,7 +125,7 @@ while (<IMD>) {
         next;
     }
 
-    if (/^\s*(~~~~*)(.*)$/) {
+    if (/^:?\s*(~~~~*)(.*)$/) {
         ++$level;
         my $options = ${2} // "";
         $line =~ s/${1}.*\r?\n?$/~~~/;
