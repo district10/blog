@@ -13,7 +13,6 @@ READINGLISTS = $(wildcard *.readinglist)
 
 EXTRA_PAGES = ring.html tags.html reads.html
 
-
 all: html
 html: $(HTML)
 
@@ -55,6 +54,10 @@ notes.html: notes.md
 		$< \
 		-o $@
 
+# filtering
+filter:
+	perl filter.pl
+
 # extra ones
 extras: $(EXTRA_PAGES)
 %.html: %.txt
@@ -72,4 +75,4 @@ reads.txt: $(READINGLISTS)
 	cat $^ > $@
 
 m:
-	$(EDITOR) Makefile
+	$(EDITOR) Makefile	

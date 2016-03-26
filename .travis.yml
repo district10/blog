@@ -23,10 +23,8 @@ script:
   - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
   - make items
   - make move
-  - cd publish; pwd;
-  - pwd && perl filter.pl; 
-  - pwd && make;
-  - cd ~/build/district10/blog;
+  - make extras
+  - make filter
   - make qiniu; rm conf.json;
 after_success:
   - cd ~/build/district10/blog; rm -Rf .git; rm -Rf publish; mkdir -p publish

@@ -16,6 +16,9 @@ foreach (@mods) {
 push @mods, "footer.html";
 push @mods, "filter.pl";
 push @mods, "Makefile";
+push @mods, "ring.html";
+push @mods, "tags.html";
+push @mods, "reads.html";
 
 my $hits = join "\t", @mods;
 print "files to protect [\n\t", $hits, "]\n";
