@@ -24,7 +24,7 @@ script:
   - make items
   - make move
   - make extras
-  - make filter
+  - # make filter
   - make qiniu; rm conf.json;
 after_success:
   - cd ~/build/district10/blog; rm -Rf .git; rm -Rf publish; mkdir -p publish

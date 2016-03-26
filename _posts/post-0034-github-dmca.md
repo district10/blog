@@ -10,10 +10,12 @@ GitHub 的 DMCA 干嘛的？
 
 都记录在 <https://github.com/github/dmca/blame/master/2015-09-22-jetbrains.md#L93-L94>：
 
-```plain
+<small><small>
+```tzx-plain
 * https://github.com/tangzhixiong/tangzhixiong.github.io/blob/master/2015/02/20/windows-configuration/index.html
 * https://github.com/tangzhixiong/tangzhixiong.github.io/blob/master/index.html
 ```
+</small></small>
 
 我的一篇关于 Windows 配置的文章里，居然放了 JetBrains IntelliJ 的激活码一枚……所以……都是我的错。
 
@@ -53,7 +55,7 @@ GitHub 的 DMCA 干嘛的？
 > That´s why we demand that you:
 >
 > * immediately **cease all use of our trademarks** by the links specified above,
-> * immediately **remove all license keys, source code of license keys generators and 
+> * immediately **remove all license keys, source code of license keys generators and
 >   any other references to our products** from the website github.com, by the links specified above,
 > * **forbear from all further unauthorised use of our trademarks** and from all further
 >   making accessible of license keys to our products, as well as source code of license keys generating software.
@@ -67,7 +69,7 @@ GitHub 的 DMCA 干嘛的？
 > I swear, under penalty of perjury, that the information in this notification
 > is accurate and that I am the copyright owner, or am authorized to act on
 > behalf of the owner, of an exclusive right that is allegedly infringed.
-> 
+>
 > You can contact JetBrains s.r.o. on any matters via
 > email [sales@jetbrains.com](mailto:sales@jetbrains.com). The address is Kavčí
 > Hory Office Park, Na hřebenech II 1718/10, Praha 4 - Nusle - 147 00, Czech

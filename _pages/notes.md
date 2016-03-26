@@ -6,6 +6,41 @@ Notes | 笔记
 ============
 
 <!--...-->
+
+Here's an example of a busted (蛋疼了的) build: ...
+
+[Display Disqus On Click Event](http://www.paulund.co.uk/ajax-disqus-comment-system)
+
+:   ```html
+    <div id="comments" class="comments-area">
+        <div class="showDisqus">Show Comments</div>
+
+            <div id="disqus_thread"></div>
+    </div>
+    ```
+
+    <small>
+    ```javascript
+    $j=jQuery.noConflict();
+
+    $j(document).ready(function() {
+        $j('.showDisqus').on('click', function(){   // click event of the show comments button
+            var disqus_shortname = 'enter_your_disqus_user_name';  // Enter your disqus user name
+
+                    // ajax request to load the disqus javascript
+            $j.ajax({
+                 type: "GET",
+                 url: "http://" + disqus_shortname + ".disqus.com/embed.js",
+                 dataType: "script",
+                 cache: true
+             });
+
+                $j(this).fadeOut();  // remove the show comments button
+        });
+    });
+    ```
+    </small>
+
 [makefile - Create directories using make file - Stack Overflow](http://stackoverflow.com/questions/1950926/create-directories-using-make-file)
 
 :   If you're targeting a usual or "patterned" file, just use make's internal

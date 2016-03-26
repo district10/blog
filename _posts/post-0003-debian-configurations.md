@@ -85,9 +85,9 @@ curl -L http://install.ohmyz.sh | sh
 
 `.zshrc`
 
-:   ````bash
+:   ```bash
     plugins=(git colored-man)
-    ````
+    ```
 
 ### Emacs 24
 
