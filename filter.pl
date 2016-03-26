@@ -1,6 +1,7 @@
 #!/usr/bin/env perl
 
 use strict;
+use 5.010;
 use File::Copy qw(copy);
 
 exit unless `whoami` =~ /travis/;

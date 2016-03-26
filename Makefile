@@ -22,7 +22,8 @@ ITEMS = \
 
 all: items move statics lyrics html
 
-items move statics lyrics html: $(DIR_PUBLISH)
+items move statics lyrics html extras: $(DIR_PUBLISH)
+extras: items move statics lyrics html
 $(DIR_PUBLISH):
 	mkdir -p $(DIR_PUBLISH)
 
