@@ -7,6 +7,14 @@ Koans | 呓语
 
 <div class="koans">
 
+## `1459071915`{.tzx-timestamp} 程序员的标记法真是赞赞的
+
+我的 TODO 里写了这么一个：
+
+:   including other file via: `<#>(%filename option1=value1)` => `format: dl{[dd, dt[ ,->dt]]}`
+
+你能理解我说的啥意思吗？
+
 ## `1459056262`{.tzx-timestamp} TDD 真是太牛逼了
 
 TDD 的世界观就跟概率论的世界观很

@@ -7,6 +7,252 @@ Notes | 笔记
 
 <!--...-->
 
+I'm agnostic.
+
+[javascript - 'innerText' works in IE, but not in Firefox - Stack Overflow](http://stackoverflow.com/questions/1359469/innertext-works-in-ie-but-not-in-firefox)
+
+:   我以为是浏览器显示的问题，今天一看自己的源码，原来是 Chrome 的 JS 运行出来是有的，Firefox 没有。
+
+    `elem.textContent || elem.innerText`，前者是 IE 原有，不是标准，后者才是。不过貌似火狐也要提供支持了。
+
+    > `innerText` is the "old Internet Explorer" way of doing it.
+
+    refs and see alos
+
+      - [W3C DOM Compatibility - HTML](http://quirksmode.org/dom/html/#t07)
+      - [Javascript with Firefox innerText issue - Stack Overflow](http://stackoverflow.com/questions/7461598/javascript-with-firefox-innertext-issue)
+      - [javascript - Why is .innerText not working in Firefox? - Stack Overflow](http://stackoverflow.com/questions/22990812/why-is-innertext-not-working-in-firefox)
+      - [Plain Text vs innerText vs textContent by Mike Wilcox » Club✩AJAX](http://clubajax.org/plain-text-vs-innertext-vs-textcontent/)
+
+---
+
+Don't get me wrong, except the government, China is my favorite country in the world ;-)
+
+In early development.
+
+[Markdown Style Guide](http://www.cirosantilli.com/markdown-style-guide/)
+
+:   Use `.md`.
+
+    Rationale (`[,ræʃə'næl]`, 原理的阐述): why not .mkd or .markdown?
+
+      - shorter
+      - more popular
+      - does not have important conflicts
+
+    `file-name.md`
+
+    Rationale: multiple empty lines occupy more vertical screen space, and do not
+    significantly improve readability.
+
+    句子后面用一个句点 `.`。
+
+    Use code blocks or inline code for:
+
+      - executables. E.g.: `gcc` is the best compiler available.
+        Differentiate between tool and the name of related projects. E.g.: `gcc` vs GCC.
+      - file paths
+      - version numbers
+      - capitalized explanation of abbreviations: xinetd stands for `eXtended Internet daemon`.
+      - other terms related to computers that you don’t want to add to your dictionary
+
+    Don't mark as code:
+
+      - names of projects. E.g.: GCC
+      - names of libraries. E.g.: libc, glibc
+
+    When in doubt, prefer the same abbreviation as used on Wikipedia.
+
+    Don't add a trailing colon `:` to headers.
+      ~ Rationale: every header is an introduction to what is about to come
+        next, which is exactly the function of the colon.
+
+    Don't add a trailing period `.` to headers.
+      ~ Rationale: every header consists of a single short sentence, so there
+        is not need to add a sentence separator to it.
+
+    Bad: item is longer than one line:
+      ~ ```markdown
+        - item that
+          is wrapped
+
+        - item 2
+        ```
+
+    Good:
+      ~ ```markdown
+        -   item that
+            is wrapped
+
+        -   item 2
+        ```
+
+    -   item that
+        is wrapped
+
+    -   item 2
+
+    ```makefile
+    Bad, multiple lines:
+
+    -   item that
+        is wrapped
+    -   item 2
+    -   item 3
+
+    Good:
+
+    -   item that
+        is wrapped
+
+    -   item 2
+
+    -   item 3
+
+    Good:
+
+    -   item 1
+
+        - item 11
+        - item 12
+        - item 13
+
+    -   item 2
+
+    -   item 3
+
+    Idem:
+
+    - go to the market
+    - then buy some fruit
+    - finally eat the fruit
+
+    Good, not terminated by period but by other punctuation.
+
+    - go to the marked
+    - then buy fruit?
+    - of course!
+
+    Bad, multiple sentences:
+
+    - go to the market
+    - then buy some fruit. Bad for wallet
+    - finally eat the fruit. Good for tummy
+
+    Good:
+
+    - go to the market
+    - then buy some fruit. Bad for wallet.
+    - finally eat the fruit. Good for tummy.
+
+    Good:
+
+    Use this code to blow up your PC:
+
+        sudo rm -rf /
+
+    Bad, no colon
+
+    Use this code to blow up your PC
+
+        sudo rm -rf /
+    ```
+
+    Don't use horizontal rules except to indicate the End of a header.
+
+    Rationale:
+
+      - headers are better section separators since they say what a section is about.
+      - horizontal rules don’t have a generally accepted semantic meaning. This guide gives them one.
+
+    Separate consecutive elements: `<!--...-->`
+
+    ```tzx-plain
+    - list 1
+    - list 1
+
+    <!-- -->
+
+    - list 2
+    - list 2
+
+        code 1
+        code 1
+
+    <!-- -->
+
+        code 2
+        code 2
+
+    > blockquote 1
+    > blockquote 1
+
+    <!-- -->
+
+    > blockquote 2
+    > blockquote 2
+    ```
+
+    Rationale:
+      ~ while omitting `[]` works on most major implementations, it is not
+        specified in the documentation not implemented in the original markdown.
+
+    不要直接用邮箱……用图片，混入一点字符，不然你的邮箱整天都是垃圾邮件了。
+      ~ "performs a bit of randomized decimal and hex entity-encoding to help
+        obscure your address from address-harvesting spambots".
+
+---
+
+[git replacing LF with CRLF - Stack Overflow](http://stackoverflow.com/questions/1967370/git-replacing-lf-with-crlf/20653073#20653073)
+
+:   Unix-style, `lf`, win-style, `crlf`: `git config core.autocrlf true`{.bash}
+
+    `unix2dos filename`, `unix2dos -D filename`
+
+    Yet another way to show how autocrlf works
+
+    ```tzx-bigquote
+    1) true:             x -> LF -> CRLF
+    2) input:            x -> LF -> LF
+    3) false:            x -> x -> x
+    ```
+
+    where x is either CRLF (windows-style) or LF (unix-style) and arrows stand for
+
+    `file to commit -> repository -> checked out file`
+
+    ```tzx-bigquote
+                     | Resulting conversion when       | Resulting conversion when
+                     | committing files with various   | checking out FROM repo -
+                     | EOLs INTO repo and              | with mixed files in it and
+                     |  core.autocrlf value:           | core.autocrlf value:
+    --------------------------------------------------------------------------------
+    File             | true       | input      | false | true       | input | false
+    --------------------------------------------------------------------------------
+    Windows-CRLF     | CRLF -> LF | CRLF -> LF | as-is | as-is      | as-is | as-is
+    Unix -LF         | as-is      | as-is      | as-is | LF -> CRLF | as-is | as-is
+    Mac  -CR         | as-is      | as-is      | as-is | as-is      | as-is | as-is
+    Mixed-CRLF+LF    | as-is      | as-is      | as-is | as-is      | as-is | as-is
+    Mixed-CRLF+LF+CR | as-is      | as-is      | as-is | as-is      | as-is | as-is
+    ```
+
+    refs
+
+      - [Git 1.6.4 beta on Windows (msysgit) - Unix or DOS line termination - Stack Overflow](http://stackoverflow.com/questions/1249932/git-1-6-4-beta-on-windows-msysgit-unix-or-dos-line-termination/1250133#1250133)
+
+
+[How do I commit case-sensitive only filename changes in Git? - Stack Overflow](http://stackoverflow.com/questions/17683458/how-do-i-commit-case-sensitive-only-filename-changes-in-git/17688308#17688308)
+
+:   `git config core.ignorecase false`{.bash}
+
+    Case-insensitive file-systems
+
+      ~ The two most popular operating systems that have case-insensitive file
+        systems that I know of are
+
+          - Windows
+          - OS X
+
 [`make gh CMTMSG='我看这可以。okay? really?'`{.bash}](https://github.com/district10/blog/commit/0bbb5ce82c9044947d10d211892396f7d6a8ba92)
 
 [gnu make - Makefile variable assignment - Stack Overflow](http://stackoverflow.com/questions/448910/makefile-variable-assignment)
@@ -188,52 +434,54 @@ Notes | 笔记
     perl_end
     ```
 
-    ```makefile
-    # define a perl subroutine
-    sub f_file_contents {
-      my ($filename) = @_;		# Name the arguments.
-      my $file_contents;
-      open FILE, $filename || die "$!\n";
-      my $line;
-      while (defined($line = <FILE>)) {  # Read another line.
-        $file_contents .= $line;
-      }
-      close FILE;
+    还可以在 Makefile 里面用 perl 脚本：
 
-      return $file_contents;
-    }
+    :   ```makefile
+        # define a perl subroutine
+        sub f_file_contents {
+          my ($filename) = @_;		# Name the arguments.
+          my $file_contents;
+          open FILE, $filename || die "$!\n";
+          my $line;
+          while (defined($line = <FILE>)) {  # Read another line.
+            $file_contents .= $line;
+          }
+          close FILE;
 
-    # call it
-    X = $(file_contents filename)
-    ```
+          return $file_contents;
+        }
+
+        # call it
+        X = $(file_contents filename)
+        ```
 
     `ifeq`, `ifneq`
 
-    ```makefile
-    ifeq ($(STR1),$(STR2))
-        makefile lines if true
-    else
-        makefile lines if false
-    endif
+    :   ```makefile
+        ifeq ($(STR1),$(STR2))
+            makefile lines if true
+        else
+            makefile lines if false
+        endif
 
-    # e.g.
-    ifeq ($(BUILD_TYPE), debug)
-        CFLAGS := -g
-    else
-        CFLAGS := -O2
-    endif
-    ```
+        # e.g.
+        ifeq ($(BUILD_TYPE), debug)
+            CFLAGS := -g
+        else
+            CFLAGS := -O2
+        endif
+        ```
 
     `ifdef`, `ifndef`
 
-    ```makefile
-    ifndef CFLAGS
-        CFLAGS := -g
-    endif
+    :   ```makefile
+        ifndef CFLAGS
+            CFLAGS := -g
+        endif
 
-    # more elegant way
-    CFLAGS ?= -g
-    ```
+        # more elegant way
+        CFLAGS ?= -g
+        ```
 
 [text-transform - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
 
@@ -267,10 +515,10 @@ Notes | 笔记
     text-combine-upright: all;
 
     /* Digits values */
-    /* fits 2 consecutive digits horizontally inside vertical text */
-    text-combine-upright: digits;
-    /* fits up to 4 consecutive digits horizontally inside vertical text */
+    /* fits up to 4 consecutive digits horizontally */
     text-combine-upright: digits 4;
+    /* default: 2 digits */
+    text-combine-upright: digits;
 
     /* Global values */
     text-combine-upright: inherit;
@@ -280,22 +528,28 @@ Notes | 笔记
 
     <p style="writing-mode: vertical-lr; text-combine-upright: digits 2;">平成20年4月16日に</p>
 
+    我的火狐上数字没有并列并竖起来。Chrome 上整个横起来的，数字倒是并列了。可想兼容性有多差。
+
     refs
 
       - [font-variant - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant)
       - [writing-mode - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode)
 
+---
 
 如果你们实验室设置好 ip，网关就能上网的话，就简单多了：
-ifconfig eth0 192.168.1.234 netmask 255.255.255.0
-route add default gw 192.168.1.2
-# echo nameserver 4.4.4.4  >> /etc/resolv.conf
-# 或者在 /etc/networking/interfaces 修改 DHCP 文件后运行 dhclient eth0
+
+:   ```bash
+    ifconfig eth0 192.168.1.234 netmask 255.255.255.0
+    route add default gw 192.168.1.2
+    # echo nameserver 4.4.4.4  >> /etc/resolv.conf
+    # 或者在 /etc/networking/interfaces 修改 DHCP 文件后运行 dhclient eth0
+    ```
 
 The best way to see the point of vim is to start a casual project at home,
-unplug your mouse and tape over your arrow keys.
+**unplug your mouse and tape over your arrow keys**.
 
-Here's an example of a busted (蛋疼了的) build: ...
+Here's an example of a busted (破产, 开除, 崩溃, 蛋疼了的) build: ...
 
 [Display Disqus On Click Event](http://www.paulund.co.uk/ajax-disqus-comment-system)
 
@@ -349,16 +603,21 @@ Here's an example of a busted (蛋疼了的) build: ...
 
 ---
 
-- `git@github.com:user/repo.git`
-- `git@github.com:user/repo.wiki.git`
-- `https://github.com/user/repo`
-- `https://github.com/user/repo/wiki`
+GitHub Urls
+
+  - `git@github.com:user/repo.git`
+  - `git@github.com:user/repo.wiki.git`
+  - `https://github.com/user/repo`
+  - `https://github.com/user/repo/wiki`
 
 我的两个域名都在 [DNSPod 控制台](https://www.dnspod.cn/console/dns) 管理。QQ 登录即可。
 
 `ag`{.bash} 会默认 ignore 掉 `.gitignore` 的内容。
 
 <#>(@git @ag @ignore)
+
+- https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/master/_pages/notes.md
+- https://raw.githubusercontent.com/district10/blog/master/_pages/notes.md
 
 ---
 
@@ -418,15 +677,29 @@ Here's an example of a busted (蛋疼了的) build: ...
 
 [How to Create a Search Engine Friendly Website (thesitewizard.com)](http://www.thesitewizard.com/sitepromotion/search-engine-friendly.shtml)
 
-:   - https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/master/_pages/notes.md
-    - https://raw.githubusercontent.com/district10/blog/master/_pages/notes.md
+:   - Add Text to Your Images, Flash and Videos, `alt=...`
+    - Validate Your HTML Code
+    - Create Relevant Title Tags
+    - Use Straight HTML Navigation Links on Your Website
+    - Eliminate Apparent Content Duplication
+        + Specifying a Canonical Web Address (URL)
+        + robots.txt
+    - Remove Hidden Text (避免被 Google 误会)
+
+    - Keywords and Post Titles in the Permalink or Link Structure
+    - Post Titles in the TITLE Tag
+
+    refs & see also
+
+      - [How to Make Your WordPress Blog Search-Engine-Friendly (thesitewizard.com)](http://www.thesitewizard.com/sitepromotion/search-engine-friendly-wordpress-blog.shtml)
+      - [How to Create a Search Engine Friendly Website (thesitewizard.com)](http://www.thesitewizard.com/sitepromotion/search-engine-friendly.shtml)
 
 [list-style-type - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type)
 
-:   - one (square)
+:   - one (disc)
     - two
         + two1 (circle)
-            * two1a (disc)
+            * two1a (square)
                 - two1a一 (decimal-leading-zero)
                     + what (georgian)
                     + the fuck
@@ -10904,7 +11177,7 @@ Markded
     > quoted
     </div>
 
-    <script src="lib/marked.js"></script>
+    <script src="http://tangzx.qiniudn.com/marked.js"></script>
     <script>
     tzxMarkeds = document.getElementsByClassName('tzxMarked');
     for ( var i = 0; i < tzxMarkeds.length; ++i ) {
@@ -10942,7 +11215,7 @@ Strapdown
     anim id est laborum.
     </xmp>
 
-    <script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+    <script src="http://tangzx.qiniudn.com/strapdown.js"></script>
     </html>
     ```
 

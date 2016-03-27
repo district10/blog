@@ -85,7 +85,7 @@
     - anchoring via                                         `@`{.tzx-anchor #id}
     - tagging/anchoring via                                 `tag`{.tzx-tag}
     - tagging/anchoring via                                 <#>(@tag1 @tag2), <#id>(@tag1 @tag2)
-    - including other file via                              <#>(%filename option1=value1)
+    - including other file via                              <#>(%filename option1=value1) => format: dl{[dd, dt[ ,->dt]]}
     - checking
         + 首字母是中文标点
         + 但行长度过长

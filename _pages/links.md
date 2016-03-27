@@ -173,3 +173,4 @@ Links | 链签
 #. [腾讯华佗诊断分析系统](http://ping.huatuo.qq.com/)
 #. [在线繁体字转换工具](http://www.aies.cn/)
 #. [繁体字转换器_简体字转换繁体字](http://www.diyifanwen.com/tool/fantizi/)
+#. [Mike Long's Blog | The meek shall inherit the earth](https://meekrosoft.wordpress.com/)

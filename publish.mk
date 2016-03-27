@@ -45,6 +45,12 @@ notes.html: notes.md
 		--toc \
 		$< \
 		-o $@
+koans.html: koans.md
+	pandoc \
+		$(PANDOC_OPTIONS) \
+		--toc \
+		$< \
+		-o $@
 
 # normal ones
 %.html: %.md

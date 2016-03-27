@@ -22,9 +22,8 @@ install:
 script:
   - cd ~/build/district10/blog;
   - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
-  - make items
-  - make move
-  - make extras
+  - make
+  - # make items make move extras
   - # make filter
   - make qiniu; rm conf.json;
 after_success:

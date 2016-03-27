@@ -52,7 +52,8 @@ function appendSharpToHdrs( hdrs ) {
         var sharp = document.createElement( 'a' );
         sharp.href = '#' + hdrs[i].id;
         sharp.className = 'hdrRef';
-        sharp.innerText = '#';
+        // sharp.innerText = '#';
+        sharp.textContent = '#';
         hdrs[i].appendChild( sharp );
     }
 }
