@@ -42,6 +42,18 @@ p code {
     border-radius: 3px;
 }
 
+a  > code,
+h1 > code,
+h2 > code,
+h3 > code,
+h4 > code,
+h5 > code,
+h6 > code {
+    border: 1px solid #9ddcff; 
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
 kbd {
     padding-left: .25rem;
     padding-right: .25rem;
@@ -244,14 +256,14 @@ h6:before, h6:after  {
     color: #9ddcff; 
 }
 
-h1:before { content: "/     "; }
+h1:before { content: "「     "; }
 h2:before { content: "//    "; }
 h3:before { content: "///   "; }
 h4:before { content: "////  "; }
 h5:before { content: "///// "; }
 h6:before { content: "//////"; }
 
-h1:after  { content: "     /"; }
+h1:after  { content: "     」"; }
 h2:after  { content: "    //"; }
 h3:after  { content: "   ///"; }
 h4:after  { content: "  ////"; }
@@ -528,13 +540,6 @@ div#TOC:hover {
 h1::selection { color: orange; }
 h1::-moz-selection { color: orange; }
 
-.tzx {
-    position: fixed;
-    top: 1%;
-    right: 1%;
-    visibility: hidden;
-}
-
 .paste, .hide {
     padding: 1em;
     border: 1px dashed helitrope; // hide
@@ -570,11 +575,13 @@ pre.tzx-bigquote code {
 }
 
 .tzx-tag {
-  float: right;
-  clear: both;
-  margin: 0.2em;
-  margin-right: -200px;
-  color: black;
+    /*
+    float: right;
+    clear: both;
+    margin: 0.2em;
+    margin-right: -200px;
+    color: black;
+    */
 }
 
 .tzx-bigquote > code {

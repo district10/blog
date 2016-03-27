@@ -1,3 +1,4 @@
+language: c
 sudo: required
 before_install:
   - echo 'before install' && pwd && ls

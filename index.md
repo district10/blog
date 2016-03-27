@@ -20,10 +20,7 @@ Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序�
 <div><a href="koans.html">Koans | 呓语</a></div>
 <div><a href="orgit.html">Orgit | 唐凤</a></div>
 <div><a href="notes.html">Notes | 笔记</a></div>
-<div><a href="about.html">About | 关于</a></div>
-<div class="tzx">
-<div><a href="reads.html">Reads | 斋读</a></div><br>
-<div><a href="dents.html">Dents | 乱象</a></div></div></div><hr />
+<div><a href="about.html">About | 关于</a></div><hr /></div>
 
 <br/><div id="searchContainer">
 Search:<br>
@@ -119,40 +116,40 @@ Search:<br>
 
 <link rel="stylesheet" href="auto-complete.css">
 <style>
-    #searchContainer {
-        margin: 10px;
-        display: block;
-    }
-    #tzxsearchbox {
-        float: left;
-        width: 100%;
-        height: 27px;
-        line-height: 27px;
-        text-indent: 10px;
-        font-family: arial, sans-serif;
-        font-size: 1em;
-        color: #333;
-        background: #fff;
-        border: solid 1px #d9d9d9;
-        border-top: solid 1px #c0c0c0;
-    }
-    .autocomplete-suggestion {
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-    }
-    .tzx-suggestion-link {
-        padding-top: 0.5em;
-        padding-left: 2em;
-        font-size: 60%;
-    }
-    .tzx-suggestion-tagline {
-        padding-left: 2em;
-        font-size: 60%;
-        font-variant: small-caps;
-        font-family: Monaco, Menlo, Consolas, "Courier New", Monospace,
-                     "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun,
-                     STXihei, Heiti, sans-serif;
-    }
+#searchContainer {
+    margin: 10px;
+    display: block;
+}
+#tzxsearchbox {
+    float: left;
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    text-indent: 10px;
+    font-family: arial, sans-serif;
+    font-size: 1em;
+    color: #333;
+    background: #fff;
+    border: solid 1px #d9d9d9;
+    border-top: solid 1px #c0c0c0;
+}
+.autocomplete-suggestion {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.tzx-suggestion-link {
+    padding-top: 0.5em;
+    padding-left: 2em;
+    font-size: 60%;
+}
+.tzx-suggestion-tagline {
+    padding-left: 2em;
+    font-size: 60%;
+    font-variant: small-caps;
+    font-family: Monaco, Menlo, Consolas, "Courier New", Monospace,
+                 "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun,
+                 STXihei, Heiti, sans-serif;
+}
 </style>
 
 <script src="auto-complete.js"></script>
@@ -214,4 +211,6 @@ new autoComplete({
         document.getElementById('tzxsearchbox').value = '';
     }
 });
+</script>
+<script>
 </script>

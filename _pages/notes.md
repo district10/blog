@@ -7,6 +7,8 @@ Notes | 笔记
 
 <!--...-->
 
+[`make gh CMTMSG='我看这可以。okay? really?'`{.bash}](https://github.com/district10/blog/commit/0bbb5ce82c9044947d10d211892396f7d6a8ba92)
+
 [gnu make - Makefile variable assignment - Stack Overflow](http://stackoverflow.com/questions/448910/makefile-variable-assignment)
 
 :   Lazy Set: `VARIABLE = value`
@@ -102,10 +104,35 @@ Notes | 笔记
         + `$(patsubst pattern,replacement,text)`
             * `$(patsubst %.c,%.o,x.c.c bar.c)`
             * `$(var:pattern=replacement)`
+        + `$(strip string)`
+        + `$(filter pattern...,text)`
+          ~ ```makefile
+            sources := foo.c bar.c baz.s ugh.h
+            foo: $(sources)
+            cc $(filter %.c %.s,$(sources)) -o foo
+            ```
+        + `$(filter-out pattern...,text)`
+        + `$(sort list)`
+        + `dir`, `notdir`
+          ~ ```makefile
+            $(dir src/foo.c hacks)      # src/ ./
+            $(notdir src/foo.c hacks)   # foo.c hacks
+            ```
+        + `basename`
+        + `addsuffix`, `addprefix`
+        + `$(word n,text)`, *n*th word of text, `$(word 2, foo bar baz) # returns `bar'`{.makefile}
+        + `$(words text)`, `#words`, the last word of text is `$(word $(words text),text)`
+        + `$(firstword names...)`
+        + `$(wildcard pattern)`
+    - `foreach`
+      ~ ```makefile
+         dirs := a b c d
+         files := $(foreach dir,$(dirs),$(wildcard $(dir)/*))
+        ```
 
-[^implicit-rules]: see
+[^implicit-rules]:
 
-    ```tzx-plain
+    ```tzx-bigquote
     AR
         Archive-maintaining program; default `ar'.
     AS
@@ -210,7 +237,11 @@ Notes | 笔记
 
 [text-transform - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
 
-:   ```css
+:   <div class="tzx-fright">
+    ![](https://mdn.mozillademos.org/files/12201/writing-mode-actual-result.png)
+    </div>
+
+    ```css
     /* Keyword values */
     text-transform: capitalize;
     text-transform: uppercase;
@@ -247,17 +278,7 @@ Notes | 笔记
     text-combine-upright: unset;
     ```
 
-    <div class="tzx-fright">
-    ![](https://mdn.mozillademos.org/files/12201/writing-mode-actual-result.png)
-    </div>
-
-    <p class="exampleText">平成20年4月16日に</p>
-    <style>
-    .exampleText {
-        writing-mode: vertical-lr;
-        text-combine-upright: digits 2;
-    }
-    </style>
+    <p style="writing-mode: vertical-lr; text-combine-upright: digits 2;">平成20年4月16日に</p>
 
     refs
 
@@ -7941,7 +7962,7 @@ void f() {
 * The Project Pages site at `muan.github.io/emoji` redirects to `muan.co/emoji`
   and is also available at `emoji.muan.co`.
 
-a **`type qualifier`{.tzx-tag}** is not allowed on a static member function.
+a **`type qualifier`** is not allowed on a static member function.
 
 ```tzx-plain
 文件夹 PATH 列表
@@ -8238,7 +8259,7 @@ you flinched! (畏惧)
 ，年青时甚至被人误以为是同性恋者，但其实他无论对异性或是同性都没有兴趣。事实上
 ，他是一个博学的人，对历史了如指掌，但长大后只专注数学，任何其他事情也不管。
 
-**`Otaku`{.tzx-tag} Culture**
+**`Otaku` Culture**
 
 ---
 
@@ -11421,8 +11442,16 @@ chess), displaying its complexity despite relatively simple rules.
         在一般大牛的技术人员或者牛逼毕业生，都是只看股票不看薪水的；薪水就是个
         零花钱，买买车付付房租还行，根本没法发财。所以一般只看裸薪是多少（而没
         有股票意识）的人，都是没见过世面，也没体会过资本市场的造富速度的人。
-#. &#x2610; [git status - list last modified date - Stack Overflow](http://stackoverflow.com/questions/14141344/git-status-list-last-modified-date)
-:   `git status -s | while read mode file; do echo $mode $(date --reference=$file +"%Y-%m-%d %H:%M:%S") $file; done`{.bash}
+
+[git status - list last modified date - Stack Overflow](http://stackoverflow.com/questions/14141344/git-status-list-last-modified-date)
+
+:   ```bash
+    git status -s | \
+    while read mode file; do \
+        echo $mode $(date --reference=$file +"%Y-%m-%d %H:%M:%S") $file; \
+    done
+    ```
+
 #. &#x2610; [CSS image hover effects , Image hover effects , hover Opacity , hover Overlay and Hover change picture](http://www.corelangs.com/css/box/hover.html)
 #. &#x2610; [W3School在线测试工具 V2](http://www.w3school.com.cn/tiy/t.asp?f=css3_border-image_button)
 #. &#x2610; [横山宏---科幻军事之父](http://site.douban.com/106758/widget/notes/174077/note/148694802/)
@@ -11447,7 +11476,6 @@ chess), displaying its complexity despite relatively simple rules.
         ```
 
         the above batch file will run:
-
         ```shell
         fake-command /u admin /p password foo bar
         ```
@@ -11467,7 +11495,9 @@ chess), displaying its complexity despite relatively simple rules.
     :   用 nodejs 开 80 端口的 http 服务器，需要先关闭 IIS：`net stop WAS`（实际上用 `net pause WAS` 更好）
 
         add `blog.sh` to
+        <small>
         `C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`:
+        </small>
 
         ```shell
         #!/bin/bash
@@ -12376,36 +12406,40 @@ chess), displaying its complexity despite relatively simple rules.
 
         #. &#x2611; [Ego depletion - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Ego_depletion)
 
-#. &#x2611; [JavaScript: How to Change CSS](http://xahlee.info/js/css_change.html)
-:  ?
-    :   ```html
-        <p>
-        <span id="id13959">Color Me</span>
-        <button id="b1">RED</button>
-        <button id="b2">BLUE</button>
-        </p>
-        ```
+[JavaScript: How to Change CSS](http://xahlee.info/js/css_change.html)
 
-        ```javascript
-        var xx = document.getElementById( "id13959" );
-        var button1 = document.getElementById( "b1" );
-        var button2 = document.getElementById( "b2" );
+:   ```html
+    <p>
+    <span id="id13959">Color Me</span>
+    <button id="b1">RED</button>
+    <button id="b2">BLUE</button>
+    </p>
+    ```
 
-        button1.addEventListener( "click", function (){
-            xx.style.color="red";
-        }, false );
-        button2.addEventListener( "click", function (){
-            xx.style.color="blue";
-        }, false );
-        ```
+    ```javascript
+    var xx = document.getElementById( "id13959" );
+    var button1 = document.getElementById( "b1" );
+    var button2 = document.getElementById( "b2" );
 
-        | CSS Syntax | JavaScript DOM Syntax |
-        | ---------- | --------------------- |
-        | `padding:1em`{.css} | `ele.style.padding="1em"`{.javascript} |
-        | `border:solid thin red`{.css} | `ele.style.border="solid thin red"`{.javascript} |
-        | `font-family:"DejaVu Sans",sans-serif`{.css} | `ele.style.fontFamily='"DejaVu Sans",sans-serif'`{.javascript} |
+    button1.addEventListener( "click", function (){
+        xx.style.color="red";
+    }, false );
+    button2.addEventListener( "click", function (){
+        xx.style.color="blue";
+    }, false );
+    ```
 
-        CSS's pseudo selectors (`a:visited`{.css}, `a:link`{.css}, `div.nav:before`{.css}, `div.nav:first-child`{.css}) cannot be scripted.
+    <div style="font-size:80%">
+
+    | CSS Syntax | JavaScript DOM Syntax |
+    | ---------- | --------------------- |
+    | `padding:1em`{.css} | `ele.style.padding="1em"`{.javascript} |
+    | `border:solid thin red`{.css} | `ele.style.border="solid thin red"`{.javascript} |
+    | `font-family:"DejaVu Sans",sans-serif`{.css} | `ele.style.fontFamily='"DejaVu Sans",sans-serif'`{.javascript} |
+
+    </div>
+
+    CSS's pseudo selectors (`a:visited`{.css}, `a:link`{.css}, `div.nav:before`{.css}, `div.nav:first-child`{.css}) cannot be scripted.
 
 #. &#x2611; [计算的威力，智慧的传奇](http://history.programmer.com.cn/1903/)
 #. &#x2611; [云计算技术背后的那些天才程序员：FFmpeg的作者法布里斯·贝拉 - 博客 - 伯乐在线](http://blog.jobbole.com/69582/)
@@ -12424,7 +12458,11 @@ chess), displaying its complexity despite relatively simple rules.
 
         you don't need knowledge on how to compile and install `pdf2htmlEX`{.bash}.
 
-        `docker run -ti --rm -v ~/pdf:/pdf bwits/pdf2htmlex pdf2htmlEX --zoom 1.3 test.pdf`{.bash}
+        ```bash
+        docker run -ti --rm \
+            -v ~/pdf:/pdf bwits/pdf2htmlex pdf2htmlEX \
+            --zoom 1.3 test.pdf
+        ```
 
 #. &#x2610; [NW.js & Electron Compared - TangibleJS](http://tangiblejs.com/posts/nw-js-electron-compared)
 #. &#x2611; [What are all the Jeff Dean facts? - Quora](https://www.quora.com/What-are-all-the-Jeff-Dean-facts)
@@ -14141,9 +14179,7 @@ chess), displaying its complexity despite relatively simple rules.
 
 :   see [equalsraf/vim-qt](https://github.com/equalsraf/vim-qt)
 
----
-
-<!--...-->
+<!--...--><!--上面不要加 ---（hr）-->
 <link rel="stylesheet" href="jquery-ui.css">
 <link rel="stylesheet" href="font-awesome.min.css">
 <style>

@@ -106,7 +106,8 @@ Git 我也不熟，又去查文档，看到
 
 这个指令出来的结果在命令行下是彩色，其实用的是 "ANSI" 颜色表示法，输出的文本为（文件里的 ESC 字符被替换为 ＥＳＣ）：
 
-```plain
+<small><small><small><small>
+```tzx-plain
 ＥＳＣ[1mdiff --git a/_a.txt b/_b.txtＥＳＣ[m
 ＥＳＣ[1mindex 0cb3b2a..d540f3f 100644ＥＳＣ[m
 ＥＳＣ[1m--- a/_a.txtＥＳＣ[m
@@ -118,6 +119,7 @@ WhatＥＳＣ[31mdoＥＳＣ[m you mean?（删除单词）
 When you don't want me to move（这行不变）ＥＳＣ[m
 ＥＳＣ[32mBut you tell me to go（这行新添加）ＥＳＣ[m
 ```
+</small></small></small></small>
 
 在 [Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook](post-0024-linux-shell-scripting-cookbook.html) 这篇笔记了也讲到过。^[虽然那时没说这是 ANSI 颜色表示法。]
 
@@ -135,7 +137,9 @@ When you don't want me to move（这行不变）ＥＳＣ[m
 <span style="font-weight:bold;">--- a/_a.txt</span>
 <span style="font-weight:bold;">+++ b/_b.txt</span>
 <span style="color:teal;">@@ -1,5 +1,5 @@</span>
-<span style="color:red;">What do you mean?（这行被删除）</span>When you nod your <span style="color:red;">head yes（单词改变）</span><span style="color:green;">haydes（单词改变）</span>
+<span style="color:red;">What do you mean?（这行被删除）</span>When you nod
+your <span style="color:red;">head yes（单词改变）</span><span
+style="color:green;">haydes（单词改变）</span>
 But you wanna say <span style="color:green;">me</span> no（单词添加）
 What<span style="color:red;">do</span> you mean?（删除单词）
 When you don't want me to move（这行不变）
