@@ -155,7 +155,7 @@ caption {
     margin: auto;
     width: 44em;
     bottom: 0px;
-    font-variant:small-caps;
+    font-variant: small-caps;
     border-width: 1px 0px 0px 0px;
     border-style: solid;
     border-color: gray;
@@ -266,7 +266,7 @@ div.slogan {
     margin-top:  50px;
     margin-bottom:  50px;
     font-size: 200%;
-    font-variant:small-caps;
+    font-variant: small-caps;
 }
 
 blockquote {
@@ -367,7 +367,7 @@ p a img:hover {
     padding: 0.5em 1em 0.5em 1em;
     background-color: #f0f0f0;
     box-shadow: 1px 1px silver;
-    font-variant:small-caps;
+    font-variant: small-caps;
     transition: all 0.5s ease-in-out;
 }
 
@@ -432,9 +432,13 @@ p a img:hover {
 
 dt {
     font-size: 130%;
-	padding-top: 1.5em;
-    padding-bottom: 0.8em;
-    font-variant: small-caps;
+	padding-top: 1.2em;
+    padding-bottom: 0.6em;
+}
+
+dt:first-letter { 
+    font-size: 145%; 
+    text-transform: uppercase;
 }
 
 #tzxslogan {
@@ -588,16 +592,7 @@ ul > li > ul > li > ul > li                      { list-style-type: disc; }
 ul > li > ul > li > ul > li > ul >li             { list-style-type: decimal-leading-zero; }
 ul > li > ul > li > ul > li > ul >li > ul > li   { list-style-type: georgian; }
 
-/*    
-p {
-    padding-left: 2em;
-}    
-
-p:before {
-    content: "❏"; // "❖"(winlogo) // "❀"(flower), "☯"(yinyang), "❏"(empty square);
-    padding-right: 0.5em;
-}
-*/
+// "❖"(winlogo) // "❀"(flower), "☯"(yinyang), "❏"(empty square);
 
 // 850px? is best for this site
 @media only screen and (max-device-width:200px){

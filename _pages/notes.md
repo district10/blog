@@ -7,6 +7,270 @@ Notes | 笔记
 
 <!--...-->
 
+[gnu make - Makefile variable assignment - Stack Overflow](http://stackoverflow.com/questions/448910/makefile-variable-assignment)
+
+:   Lazy Set: `VARIABLE = value`
+      ~ Normal setting of a variable - values within it are recursively
+        expanded when the variable is used, not when it's declared
+    Immediate Set: `VARIABLE := value`
+      ~ Setting of a variable with simple expansion of the values inside -
+        values within it are expanded at declaration time.
+    Set If Absent: `VARIABLE ?= value`
+      ~ Setting of a variable only if it doesn't have a value
+    Append: `VARIABLE += value`
+      ~ Appending the supplied value to the existing value (or setting to that
+        value if the variable didn't exist)
+
+    *Simply expanded variables* are defined by lines using `:=` (gnumake) or `::=` (posix)
+
+    ```makefile
+    # 换行会变成空格，最后的的换行会被 trim 掉。
+    hash != printf '\043'
+    file_list != find . -name '*.c'
+
+    # 或者用 simply expanded variable
+    hash := $(shell printf '\043')
+    var := $(shell find . -name "*.c")
+    ```
+
+    ```makefile
+    define two-lines =
+    echo foo
+    echo $(bar)
+    endef
+
+    # or
+    two-lines = echo foo; echo $(bar)
+    ```
+
+    More specific variables taking precedence over the more generic ones:
+
+    :   ```makefile
+        %.o: %.c
+                $(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@
+
+        lib/%.o: CFLAGS := -fPIC -g
+        %.o: CFLAGS := -g           # 即使在后面，但是更 generic，所以不覆盖
+
+        all: foo.o lib/bar.o
+        ```
+
+    refs
+
+      - [GNU make](http://www.gnu.org/software/make/manual/make.html#Setting)
+
+    <!--
+    koans
+
+      - 看完上面一个页面，makefile 就出师了啊！还不快去看！
+    -->
+
+[learnping-cmake](http://www.elpauer.org/stuff/learning_cmake.pdf)
+
+:   好像看过好多遍……
+
+[Starter Examples — Cmake Support for KUSP Software v0.9.1 documentation](http://www.ittc.ku.edu/kurt/kusp_docs/cmake/simple_cmake_example.html)
+
+:   - `target_link_libraries( project m )`{.cmake}
+    - `gcc -lm`{.bash}
+
+[GNU make - Using Implicit Rules](http://www.chemie.fu-berlin.de/chemnet/use/info/make/make_10.html)
+
+:   - Using Implicit Rules
+        + e.g. `.c` -> `.o`, more:
+        + Catalogue of Implicit Rules
+            * C: `.c` -> `.o`, $(CC) -c $(CPPFLAGS) $(CFLAGS)`
+            * C++: `.cc`, `.C`, `.cpp` -> `.o`, `$(CXX) -c $(CPPFLAGS) $(CXXFLAGS)`
+            * RCS, Any file `n' is extracted if necessary from an RCS file named either `n,v' or `RCS/n,v'.
+        + Variables Used by Implicit Rules[^implicit-rules]
+        + Chains of Implicit Rules
+        + Defining and Redefining Pattern Rules
+            * Introduction to Pattern Rules
+                - `%.o: %.c`
+                - `% :: RCS/%,v` (built-in)
+                - `%.tab.c %.tab.h: %.y` (two targets)
+            * Automatic Variables
+                -  `$<`, `$^`, `$@`
+                - `$(@D)`
+            * Canceling Implicit Rules
+        + Defining Last-Resort Default Rules
+    - Functions for Transforming Text
+        + `$(function arguments)` or `${function arguments}`
+        + `$(subst from,to,text)`
+            * `bar:= $(subst $(space),$(comma),$(foo))`
+            * `$(subst ee,EE,feet on the street)`: "fEEt on the strEEt"
+        + `$(patsubst pattern,replacement,text)`
+            * `$(patsubst %.c,%.o,x.c.c bar.c)`
+            * `$(var:pattern=replacement)`
+
+[^implicit-rules]: see
+
+    ```tzx-plain
+    AR
+        Archive-maintaining program; default `ar'.
+    AS
+        Program for doing assembly; default `as'.
+    CC
+        Program for compiling C programs; default `cc'.
+    CXX
+        Program for compiling C++ programs; default `g++'.
+    CO
+        Program for extracting a file from RCS; default `co'.
+    CPP
+        Program for running the C preprocessor, with results to standard output; default `$(CC) -E'.
+    FC
+        Program for compiling or preprocessing Fortran and Ratfor programs; default `f77'.
+    GET
+        Program for extracting a file from SCCS; default `get'.
+    LEX
+        Program to use to turn Lex grammars into C programs or Ratfor programs; default `lex'.
+    PC
+        Program for compiling Pascal programs; default `pc'.
+    YACC
+        Program to use to turn Yacc grammars into C programs; default `yacc'.
+    YACCR
+        Program to use to turn Yacc grammars into Ratfor programs; default `yacc -r'.
+    MAKEINFO
+        Program to convert a Texinfo source file into an Info file; default `makeinfo'.
+    TEX
+        Program to make TeX DVI files from TeX source; default `tex'.
+    TEXI2DVI
+        Program to make TeX DVI files from Texinfo source; default `texi2dvi'.
+    WEAVE
+        Program to translate Web into TeX; default `weave'.
+    CWEAVE
+        Program to translate C Web into TeX; default `cweave'.
+    TANGLE
+        Program to translate Web into Pascal; default `tangle'.
+    CTANGLE
+        Program to translate C Web into C; default `ctangle'.
+    RM
+        Command to remove a file; default `rm -f'.
+    ```
+
+[Various statements in a makefile](http://makepp.sourceforge.net/1.19/makepp_statements.html)
+
+:   `include standard_definitions.mk`{.makefile} 会像 git 找自己的 repo 根目录一样层层往下找。
+
+    `load_makefile /some/directory/somewhere/Makefile`{.makefile}
+
+    ```makefile
+    OBJDIR := $(ARCH)               # Where we put .o files.
+    perl_begin
+    -d $OBJDIR or mkdir $OBJDIR;    # Make sure the directory exists.
+    perl_end
+    ```
+
+    ```makefile
+    # define a perl subroutine
+    sub f_file_contents {
+      my ($filename) = @_;		# Name the arguments.
+      my $file_contents;
+      open FILE, $filename || die "$!\n";
+      my $line;
+      while (defined($line = <FILE>)) {  # Read another line.
+        $file_contents .= $line;
+      }
+      close FILE;
+
+      return $file_contents;
+    }
+
+    # call it
+    X = $(file_contents filename)
+    ```
+
+    `ifeq`, `ifneq`
+
+    ```makefile
+    ifeq ($(STR1),$(STR2))
+        makefile lines if true
+    else
+        makefile lines if false
+    endif
+
+    # e.g.
+    ifeq ($(BUILD_TYPE), debug)
+        CFLAGS := -g
+    else
+        CFLAGS := -O2
+    endif
+    ```
+
+    `ifdef`, `ifndef`
+
+    ```makefile
+    ifndef CFLAGS
+        CFLAGS := -g
+    endif
+
+    # more elegant way
+    CFLAGS ?= -g
+    ```
+
+[text-transform - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
+
+:   ```css
+    /* Keyword values */
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: none;
+    text-transform: full-width;
+
+    /* Global values */
+    text-transform: inherit;
+    text-transform: initial;
+    text-transform: unset;
+
+    font-variant: small-caps;
+    font-variant: common-ligatures small-caps;
+
+    /* Global values */
+    font-variant: inherit;
+    font-variant: initial;
+    font-variant: unset;
+
+    /* Keyword values */
+    text-combine-upright: none;
+    text-combine-upright: all;
+
+    /* Digits values */
+    /* fits 2 consecutive digits horizontally inside vertical text */
+    text-combine-upright: digits;
+    /* fits up to 4 consecutive digits horizontally inside vertical text */
+    text-combine-upright: digits 4;
+
+    /* Global values */
+    text-combine-upright: inherit;
+    text-combine-upright: initial;
+    text-combine-upright: unset;
+    ```
+
+    <div class="tzx-fright">
+    ![](https://mdn.mozillademos.org/files/12201/writing-mode-actual-result.png)
+    </div>
+
+    <p class="exampleText">平成20年4月16日に</p>
+    <style>
+    .exampleText {
+        writing-mode: vertical-lr;
+        text-combine-upright: digits 2;
+    }
+    </style>
+
+    refs
+
+      - [font-variant - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant)
+      - [writing-mode - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode)
+
+
+如果你们实验室设置好 ip，网关就能上网的话，就简单多了：
+ifconfig eth0 192.168.1.234 netmask 255.255.255.0
+route add default gw 192.168.1.2
+# echo nameserver 4.4.4.4  >> /etc/resolv.conf
+# 或者在 /etc/networking/interfaces 修改 DHCP 文件后运行 dhclient eth0
+
 The best way to see the point of vim is to start a casual project at home,
 unplug your mouse and tape over your arrow keys.
 

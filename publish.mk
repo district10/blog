@@ -11,6 +11,7 @@ TAGS = $(wildcard *.tags)
 READINGLISTS = $(wildcard *.readinglist)
 
 EXTRA_PAGES = ring.html tags.html reads.html
+NO_MATHJAX_PAGES = $(EXTRA_PAGES) notes.html index.html
 
 all: html
 html: $(HTML)

@@ -51,7 +51,7 @@ About | 关于
     > * 2、将知识组织成树形结构；
     > * 3、将知识记录在社交媒体或内部群组讨论而非私人笔记。  @阳志平1949
 
-    （2）刘未鹏，[[BetterExplained]为什么你应该（从现在开始就）写博客](http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/)
+    （2）刘未鹏，[为什么你应该（从现在开始就）写博客](http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/)
 
 <!-- Notes
 ![Mathematics is the only truly universal language.](http://gnat.qiniudn.com/jodie-foster-math.png)
