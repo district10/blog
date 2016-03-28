@@ -2,6 +2,27 @@
 
 [![Build Status](https://travis-ci.org/district10/blog.svg?branch=master)](https://travis-ci.org/district10/blog)
 
+## new start
+
+「Koan | 吐槽」
+
+发现自己在重复造轮子，而且造得不好！Pandoc 有 `--filter` 和 `--file-scope` 的概
+念，正好对应我的 `filter.pl` 和 `merger.pl`，我……只能说英雄所见略同了…… 这些
+Perl 脚本还能用，但计划以后用 Pandoc 的 filter。
+
+「Refs | 参考文档」
+
+  - [Pandoc - Scripting with pandoc](http://pandoc.org/scripting.html)
+  - [Pandoc::Filter - process Pandoc abstract syntax tree - metacpan.org](https://metacpan.org/pod/Pandoc::Filter)
+  - [jgm/pandocfilters: A python module for writing pandoc filters, with a collection of examples](https://github.com/jgm/pandocfilters)
+
+「New Plan | 新的计划」
+
+  - 不再用 Perl 的正则表达式转换 Markdown，而是用 Perl 或者 Haskell 直接修改 Pandoc 的 AST；
+  - CSS 也不再大的调整，有了图片的延迟加载，差不多就够用了。
+
+---
+
 ## intro
 
 `zh`: 博客源码托管在 GitHub，用 Markdown 写，用 Makefile 管理，用 travis

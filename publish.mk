@@ -1,7 +1,6 @@
 PANDOC_OPTIONS = -S -s --ascii \
 	--toc \
 	-c main.css \
-	-A footer.html \
 	--highlight-style pygments \
 	--template template.html \
 	-f markdown+pandoc_title_block+east_asian_line_breaks \

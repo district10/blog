@@ -12,6 +12,35 @@ Notes | 笔记
 
 <!--...-->
 
+`--file-scope`
+
+[Pandoc - Scripting with pandoc](http://pandoc.org/scripting.html)
+
+:   ```tzx-bigquote
+    % cat test.txt
+    ### my header
+
+    text with *italics*
+    % pandoc -t native test.txt
+    Pandoc (Meta {unMeta = fromList []})
+    [Header 3 ("my-header",[],[]) [Str "My",Space,Str "header"]
+    , Para [Str "text",Space,Str "with",Space,Emph [Str "italics"]] ]
+    ```
+
+    A Pandoc document consists of a Meta block (containing metadata like title,
+    authors, and date) and a list of Block elements. In this case, we have two
+    Blocks, a Header and a Para. Each has as its content a list of Inline
+    elements. For more details on the pandoc AST, see the haddock documentation
+    for Text.Pandoc.Definition.
+
+    Here’s a short Haskell script that reads markdown, changes level 2+ headers
+    to regular paragraphs, and writes the result as markdown. If you save it as
+    behead.hs, you can run it using runhaskell behead.hs. It will act like a
+    unix pipe, reading from stdin and writing to stdout. Or, if you want, you
+    can compile it, using ghc --make behead, then run the resulting executable
+    behead.
+
+
 `// var jq = jQuery.noConflict();`
 
 ```javascript

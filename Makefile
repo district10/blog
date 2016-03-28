@@ -17,7 +17,6 @@ PG_DOCS = $(addprefix $(DIR_PUBLISH)/, $(MD_DOCS:$(DIR_DOCS)/%=%))
 ITEMS = \
 	$(DIR_PUBLISH)/Makefile \
 	$(DIR_PUBLISH)/filter.pl \
-	$(DIR_PUBLISH)/footer.html \
 	$(DIR_PUBLISH)/index.md \
 	$(DIR_PUBLISH)/template.html \
 	$(DIR_PUBLISH)/metadata.yaml \
@@ -105,9 +104,6 @@ it:
 i: index
 index:
 	$(EDITOR) index.md
-f: footer
-footer:
-	$(EDITOR) footer.html
 k: koan
 koan:
 	$(EDITOR) $(DIR_PAGES)/koans.md
