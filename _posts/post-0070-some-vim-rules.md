@@ -24,10 +24,12 @@ delete trailing whitespace
 
 pangu-spacing（在中英文之间加上空格）
 
+<small><small>
 ```plain
 silent! '<,'>s/\([\u4e00-\u9fa5\u3040-\u30FF]\)\([a-zA-Z0-9@&=\[\$\%\^\-\+(\/\\]\)/\1 \2/g
 silent! '<,'>s/\([a-zA-Z0-9!&;=\]\,\.\:\?\$\%\^\-\+\)\/\\]\)\([\u4e00-\u9fa5\u3040-\u30FF]\)/\1 \2/g
 ```
+</small></small>
 
 把上面的两行拷贝到某一个寄存器如 `p`（选中上面上行，然后执行 `:"py`），然后选定
 文本，执行 `:@p`。

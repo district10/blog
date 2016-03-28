@@ -12,6 +12,347 @@ Notes | 笔记
 
 <!--...-->
 
+- VS
+    + controls
+        * solution configurations
+        * solution platforms
+    + extensions
+
+[substack/browserify-handbook: how to build modular applications with browserify](https://github.com/substack/browserify-handbook)
+
+:   `npm install -g browserify-handbook`{.bash}
+
+    -   `npm install uniq`
+
+    -   nums.js
+
+        ```javascript
+        var uniq = require('uniq');
+        var nums = [ 5, 2, 1, 3, 2, 5, 4, 2, 0, 1 ];
+        console.log(uniq(nums));
+        ```
+
+    -   `browserify nums.js > main.js`
+
+        ```javascript
+        (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof
+        require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return
+        i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw
+        f.code="MODULE_NOT_FOUND",f}var
+        l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var
+        n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var
+        i=typeof require=="function"&&require;for(var
+        o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+        "use strict"
+
+        function unique_pred(list, compare) {
+          var ptr = 1
+            , len = list.length
+            , a=list[0], b=list[0]
+          for(var i=1; i<len; ++i) {
+            b = a
+            a = list[i]
+            if(compare(a, b)) {
+              if(i === ptr) {
+                ptr++
+                continue
+              }
+              list[ptr++] = a
+            }
+          }
+          list.length = ptr
+          return list
+        }
+
+        function unique_eq(list) {
+          var ptr = 1
+            , len = list.length
+            , a=list[0], b = list[0]
+          for(var i=1; i<len; ++i, b=a) {
+            b = a
+            a = list[i]
+            if(a !== b) {
+              if(i === ptr) {
+                ptr++
+                continue
+              }
+              list[ptr++] = a
+            }
+          }
+          list.length = ptr
+          return list
+        }
+
+        function unique(list, compare, sorted) {
+          if(list.length === 0) {
+            return list
+          }
+          if(compare) {
+            if(!sorted) {
+              list.sort(compare)
+            }
+            return unique_pred(list, compare)
+          }
+          if(!sorted) {
+            list.sort()
+          }
+          return unique_eq(list)
+        }
+
+        module.exports = unique
+
+        },{}],2:[function(require,module,exports){
+        var uniq = require('uniq');
+        var nums = [ 5, 2, 1, 3, 2, 5, 4, 2, 0, 1 ];
+        console.log(uniq(nums));
+
+        },{"uniq":1}]},{},[2]);
+        ```
+
+    <https://github.com/substack/browserify-handbook#exports>
+
+    <small>
+    ```javascript
+    // num
+    module.exports = 555
+
+    // list
+    var numbers = [];
+    for (var i = 0; i < 100; i++) numbers.push(i);
+    module.exports = numbers;
+
+    // module.exports vs exports: both an empty object
+    exports.beep = function (n) { return n * 1000 } | module.exports.beep = function (n) { return n * 1000 }
+    exports.boop = 555                              | module.exports.boop = 555
+
+    # but
+    // this doesn't work
+    exports = function (n) { return n * 1000 }
+    // instead
+    module.exports = function (n) { return n * 1000 }
+    ```
+    </small>
+
+    If you're still confused, try to understand how modules work in the background:
+
+    ```javascript
+    var module = {
+      exports: {}
+    };
+
+    // If you require a module, it's basically wrapped in a function
+    (function(module, exports) {
+      exports = function (n) { return n * 1000 };
+    }(module, module.exports))
+
+    console.log(module.exports); // it's still an empty object :(
+    ```
+
+    `foo.foo` is a bit superfluous (`[sʊ'pɝflʊəs]`, 多余的, 不必要的).
+    use this clean version of exports:
+
+    ```javascript
+    // foo.js
+    module.exports = function (n) { return n * 111 }
+    // main.js
+    var foo = require('./foo.js');
+    console.log(foo(5));
+    ```
+
+    Bonus: if you put your script tag right before the </body>, you can use all
+    of the dom elements on the page without waiting for a dom onready event.
+
+    原来如此！！！
+
+    - how browserify works
+    - how node_modules works
+        + 如果相对路径，那就用相对路径，否则
+        + 先搜当前 js 文件所在目录下的 `node_modules` 目录
+        + 再搜上一层
+        + 再搜家目录
+
+    node also has a mechanism for searching an array of paths, but this
+    mechanism is deprecated and you should be using `node_modules/` unless you
+    have a very good reason not to.
+
+    why concatenate
+
+      - loads much faster
+      - 但不能不容易找到 bug 来源，original files
+
+    AMD
+
+    ```javascript
+    define(['jquery'] , function ($) {
+        return function () {};
+    });
+    ```
+
+    原理：<https://github.com/jrburke/requirejs/blob/master/require.js#L17>
+
+    exorcist (`['ɛksɔrsɪst]` n. 驱魔的人；召魂者)
+
+      ~ The downside of inlining all the source files into the inline source map is
+        that the bundle is twice as large. This is fine for debugging locally
+        but not practical for shipping source maps to production. However, you
+        can use exorcist to pull the inline source map out into a separate
+        bundle.map.js file: `browserify main.js --debug | exorcist bundle.js.map > bundle.js`{.bash}
+
+    auto-recompile & other tools
+
+      - [watchify](https://npmjs.org/package/watchify)
+      - beefy (smaller)
+      - wzrd (much smaller)
+      - [browserify & gulp, a guide for getting started](http://viget.com/extend/gulp-browserify-starter-faq)
+
+    builtins
+
+      - In order to make more npm modules originally written for node work in
+        the browser, browserify provides many browser-specific implementations
+        of node core libraries:
+
+          + assert
+          + buffer
+          + console
+          + constants
+          + crypto
+          + domain
+          + events
+          + http
+          + https
+          + os
+          + path
+          + punycode
+          + querystring
+          + stream
+          + string_decoder
+          + timers
+          + tty
+          + url
+          + util
+          + vm
+          + zlib
+
+     - Buffer
+     - process
+     - `global` (alias for the `window` object)
+        + `__filename`
+        + `__dirname`
+
+    `browserify main.js | node`{.bash}
+
+    transforms
+
+      - coffeeify (`npm install cofeeify`): `browserify -t coffeeify main.coffee > bundle.js`
+
+    Here are some useful heuristics for **finding good modules** on npm that work in the browser:
+
+      - I can install it with npm
+      - code snippet on the readme using require() - from a quick glance I
+        should see how to integrate the library into what I'm presently working
+        on has a very clear, narrow idea about scope and purpose
+      - knows when to delegate to other libraries - doesn't try to do too many
+        things itself
+      - written or maintained by authors whose opinions about software scope,
+        modularity, and interfaces I generally agree with (often a faster
+        shortcut than reading the code/docs very closely)
+      - inspecting which modules depend on the library I'm evaluating - this is
+        baked into the package page for modules published to npm
+      - Other metrics like number of stars on github, project activity, or a
+        slick (华而不实的) landing page, are not as reliable.
+
+    Packages that are grab-bags of features waste a ton of time policing
+    boundaries about which new features belong and don't belong. There is no
+    clear natural boundary of the problem domain in this kind of package about
+    what the scope is, it's all somebody's smug opinion.
+
+    Node, npm, and browserify are not that. They are avowedly ala-carte,
+    participatory, and would rather celebrate disagreement and the dizzying
+    proliferation of new ideas and approaches than try to clamp down in the
+    name of conformity, standards, or "best practices".
+
+    testing in node and the browser
+
+      ~ Testing modular code is very easy! One of the biggest benefits of
+        modularity is that your interfaces become much easier to instantiate in
+        isolation and so it's easy to make automated tests.
+
+    Tape
+
+    :   Tape was specifically designed from the start to work well in both node
+        and browserify. Suppose we have an index.js with an async interface:
+
+        ```javascript
+        module.exports = function (x, cb) {
+            setTimeout(function () {
+                cb(x * 100);
+            }, 1000);
+        };
+        ```
+
+        ```javascript
+        var test = require('tape');
+        var hundreder = require('../');
+
+        test('beep', function (t) {
+            t.plan(1);
+
+            hundreder(5, function (n) {
+                t.equal(n, 500, '5*100 === 500');
+            });
+        });
+        ```
+
+---
+
+Excuse the ads! We need some help to keep our site up.
+
+```javascript
+// good
+var numbers = [];
+for (var i = 0; i < 100; i++) numbers.push(i);
+
+module.exports = numbers;
+```
+
+```markup
+MyWebsite/
+  |--css/
+  |  |--materialize.css <-- compiled from scss/materialize.scss
+  |
+  |--font/
+  |  |--material-design-icons/
+  |  |--roboto/
+  |
+  |--js/
+  |  |--materialize.js
+  |
+  |--scss/
+  |  |--materialize.scss
+  |  |--components/
+  |
+  |--index.html
+```
+
+夺取话语权只有一条路径，就是超出别人的预期；
+
+- wikipedia
+- stackoverflow
+- github (gh)
+- google
+- 豆瓣
+- 知乎
+
+Now
+
+- jquery
+
+Later
+
+- jquery
+- fontawesome
+- more pandoc filters (ditta, gant, process chart, etc)
+
 `--file-scope`
 
 [Pandoc - Scripting with pandoc](http://pandoc.org/scripting.html)
@@ -43,6 +384,7 @@ Notes | 笔记
 
 `// var jq = jQuery.noConflict();`
 
+<small><small><small>
 ```javascript
 $( "li" ).each(function( index ) {
   console.log( index + ": " + $( this ).text() );
@@ -57,6 +399,7 @@ $(document).ready(function(){
     var pathStringList = document.location.toString().split('/');
 });
 ```
+</small></small></small>
 
 [Attribute selectors - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
 

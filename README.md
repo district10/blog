@@ -20,6 +20,7 @@ Perl 脚本还能用，但计划以后用 Pandoc 的 filter。
 
   - 不再用 Perl 的正则表达式转换 Markdown，而是用 Perl 或者 Haskell 直接修改 Pandoc 的 AST；
   - CSS 也不再大的调整，有了图片的延迟加载，差不多就够用了。
+  - [Dogfalo/materialize: Materialize, a CSS Framework based on Material Design](https://github.com/Dogfalo/materialize)
 
 ---
 

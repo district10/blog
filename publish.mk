@@ -17,7 +17,7 @@ NO_MATHJAX_PAGES = $(EXTRA_PAGES) notes.html index.html
 
 all: html
 html: $(HTML)
-$(HTML): template.html metadata.yaml
+# $(HTML): template.html metadata.yaml
 
 # posts with bibs
 post-0051-spatial-gis.html: post-0051-spatial-gis.bib

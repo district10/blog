@@ -41,6 +41,7 @@ FME 也不会用，这个号称能处理几百种格式的转化工具，
 
 是我自己昨天的改残了 Makefile，感觉写得还挺 hack 的，在自己电脑上测试可以。但是在 Windows 就是不行……：
 
+<small><small><small><small>
 ```makefile
 +EAST_ASIAN_LINE_BREAKS=$(echo '' | pandoc -f markdown+east_asian_line_breaks 2&>/dev/null && echo -n '+east_asian_line_breaks' || echo -n '')
 PANDOC_OPTIONS = -S -s --ascii \
@@ -49,6 +50,7 @@ PANDOC_OPTIONS = -S -s --ascii \
 	--highlight-style pygments \
 	-f markdown$(+EAST_ASIAN_LINE_BREAKS)
 ```
+</small></small></small></small>
 
 昨天晚上真的可以？还是我的幻觉？一定是幻觉因为昨天晚上 travis 编译也是没有通过
 的……：[Build #47 - district10/blog - Travis CI](https://travis-ci.org/district10/blog/builds/118537331)。
@@ -837,7 +839,74 @@ Throne 里面我喜欢的是 Rose Leslie 饰演的 Ygritte（老拼不对，这�
 
 ![](http://whudoc.qiniudn.com/ygritte.jpg)
 
+神奇的是，很多人特别喜欢她，很多人特别讨厌她[^ygritte-db]，有点像大家对 SICP 的感觉一样……[^sicp]：
+
+```tzx-bigquote
+    Its the Best! Its the Worst! Why the split?, May 8, 2000
+    --------------------------------------------------------
+
+                                             By Peter Norvig
+
+This review is from: Structure and Interpretation of Computer Programs - 2nd
+Edition (MIT Electrical Engineering and Computer Science) (Hardcover) I think
+its fascinating that there is such a split between those who love and hate this
+book. For most books, the review is a bell-shaped curve of star ratings; this
+one has a peak at 1, a peak at 5, and very little in between. How could this
+be? I think it is because SICP is a very personal message that works only if
+the reader is at heart a computer scientist (or willing to become one). So I
+agree that the book's odds of success are better if you read it after having
+some experience.
+
+To use an analogy, if SICP were about automobiles, it would be for the person
+who wants to know how cars work, how they are built, and how one might design
+fuel-efficient, safe, reliable vehicles for the 21st century. The people who
+hate SICP are the ones who just want to know how to drive their car on the
+highway, just like everyone else.
+
+Those who hate SICP think it doesn't deliver enough tips and tricks for the
+amount of time it takes to read. But if you're like me, you're not looking for
+one more trick, rather you're looking for a way of synthesizing what you
+already know, and building a rich framework onto which you can add new learning
+over a career. That's what SICP has done for me. I read a draft version of the
+book around 1982, when I was in grad school, and it changed the way I think
+about my profession. If you're a thoughtful computer scientist (or want to be
+one), it will change your life too.
+
+Some of the reviewers complain that SICP doesn't teach the basics of OO design,
+and so on. In a sense they are right. The book doesn't directly tell you how to
+design and write an object-oriented program using the subset of object-oriented
+principles that show up in the syntax of Java or C++. Rather, the book tells
+you what those principles are, how they came to be selected as worthwhile, how
+they can be implemented from the ground up, and how a different combination of
+principles might be more appropriate for some particular problems. This
+approach requires you to understand the range of possibilities, and to think
+about trade-offs as you go through the design process. Programming is a craft
+that is subject to frequent failure: many projects are started and abandoned
+because the designers do not have the flexibility, experience and understanding
+to come up with a suitable design and implementation. SICP gives you an
+approach that will succeed, but it is an approach based on principles and
+wisdom, not on a checklist. If you don't understand the principles, or if you
+are the kind of person who wants to be given a cookbook of what to do rather
+than to think creatively, or if you only want to work on problems that are
+pretty much like the problem you worked on last time, then this approach will
+not work for you. There are other approaches that will be more reproducible for
+a limited range of simple problems, but there is no better way than SICP to
+learn how to address the truly hard problems.
+
+Donald Knuth says he wrote his books for "the one person in 50 who has this
+strange way of thinking that makes a programmer". I think the most amazing
+thing about SICP is that there are so FEW people who hate it: if Knuth were
+right, then only 1 out of 50 people would be giving this 5 stars, instead of
+about 25 out of 50. Now, a big part of the explanation is that the audience is
+self-selected, and is not a representative sample. But I think part of it is
+because Sussman and Abelson have succeeded grandly in communicating "this
+strange way of thinking" to (some but not all) people who otherwise would never
+get there.
+```
+
 [^eastface]: 如果喜欢东西方混合的美，就去看 [Rosamund Pike](http://www.imdb.com/name/nm0683253/?ref_=tt_cl_t2)，然而，同样我并不觉得她有那么美。
+[^ygritte-db]: 见 [权力的游戏 第三季 剧照](https://movie.douban.com/photos/photo/1853305015/)。
+[^sicp]: See [Amazon.com: Peter Norvig's review of Structure and Interpretation of Computer P...](http://www.amazon.com/review/R403HR4VL71K8).
 
 当然，Shae 也很漂亮。
 

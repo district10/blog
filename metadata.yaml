@@ -4,7 +4,8 @@ tzx-cssfile:
 tzx-jsfile:    
     - jquery.min.js
     - jquery-ui.min.js
-    - jquery.lazyload.min.js
+#    - jquery.lazyload.min.js
+    - lazyload.min.js
     - main.js
 
 # tzx-before-after:
@@ -15,12 +16,19 @@ tzx-before-after: |
     <div id="disqus_thread"></div>
     </div>
     <script>
-    $("img").lazyload();
+    $("img").each(function(index){
+        var src = $(this).attr('src');
+        $(this).attr({
+            src: "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",
+            'data-src': src,
+            onload: "lzld(this)"
+        });
+    });
     $(document).ready(function(){
         var pathStringList = document.location.toString().split('/');
         var isLocal = 'file' === pathStringList[0].split(':')[0];
         var mdPath = 'https://github.com/district10/blog/commits/master';
-        var rawPath = 'https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/master'; // coding // 'https://raw.githubusercontent.com/district10/blog/master'; // github
+        var rawPath = 'https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/master';
         var basePath = 'https://github.com/district10/blog';
 
         function show() {
@@ -28,7 +36,7 @@ tzx-before-after: |
             if ( hides.length !== 0 ) {
                 hides[0].style.visibility = 'visible';
             }
-        }
+        };
 
         function dvorak4tzx( pathParts ) {
             filename = pathParts[ pathParts.length - 1 ];
@@ -50,7 +58,7 @@ tzx-before-after: |
 
             $('#ghraw').href = rawPath;
             $('#ghpage').href = mdPath;
-        }
+        };
 
         dvorak4tzx( pathStringList );
 
@@ -63,7 +71,7 @@ tzx-before-after: |
                 sharp.textContent = '#';
                 hdrs[i].appendChild( sharp );
             }
-        }
+        };
 
         function appendSharp() {
             h1s = document.getElementsByTagName( 'h1' );
@@ -74,9 +82,8 @@ tzx-before-after: |
             appendSharpToHdrs( h2s );
             appendSharpToHdrs( h3s );
             appendSharpToHdrs( h4s );
-        }
+        };
 
-        // from: http://stackoverflow.com/questions/2907482/how-to-get-the-query-string-by-javascript
         function getQueryStrings() { 
             var assoc  = {};
             var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
@@ -103,7 +110,7 @@ tzx-before-after: |
                 hides[i].style.visibility = 'visible';
                 cb( hides[i] );
             }
-        }
+        };
 
         if ( ( isLocal && shallHavePrivilege  ) || shallShow ) {
             hideNoMore( function( h ) {
@@ -115,13 +122,13 @@ tzx-before-after: |
                     }
                 }
             });
-        }
+        };
 
         if ( isLocal && qs['more'] === 'false' ) {
             if ( document.location.toString().endsWith("index2.html") ) {
                 document.location = "index.html"
             }
-        }
+        };
 
         appendSharp();
     });
@@ -148,4 +155,6 @@ tzx-footer: |
     <a title="修改历史" id="ghpage" target="_blank" href="http://github.com/district10/blog" style="font-size: 7px;">@GitHub</a>
     <a title="文档源码" id="ghraw"  target="_blank" href="http://github.com/district10/blog" style="font-size: 7px;">@Src</a>
     </div>
+notes: |    
+    $("img").lazyload();
 ...

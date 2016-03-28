@@ -276,11 +276,13 @@ for i in *.png;
 do
     image=`basename ${i} .png`
     echo Input: ${i}
-    convert ${i} -gravity Center -crop ${X}x${Y}%${dX}${dY} ${i} && echo "Croping done"
-    convert ${i} -resize %50 ${i} && echo "Resizing done"
+    convert ${i} -gravity Center \
+            -crop ${X}x${Y}%${dX}${dY} ${i} \
+      && echo "Croping done"
+    convert ${i} -resize %50 ${i} \
+      && echo "Resizing done"
 done
 
-echo ===============
 echo all done
 ```
 
