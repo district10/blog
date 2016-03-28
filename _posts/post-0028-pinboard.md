@@ -1,6 +1,15 @@
-% Pinboard：奇葩的注册费
-% TANG ZhiXiong
-% 2014-07-15
+---
+title: Pinboard：奇葩的注册费
+date: 2014-07-15
+keywords:
+    - pinboard
+    - product
+    - business model
+tags:
+    - product
+    - translation
+    - business model
+...
 
 Pinboard：奇葩的注册费
 ======================

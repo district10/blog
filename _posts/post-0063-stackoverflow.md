@@ -1,6 +1,11 @@
-% Stack Overflow
-% TANG ZhiXiong
-% 2015-11-19
+---
+title: StackOverFlow
+date: 2015-11-19
+key-words:
+tags:
+    - doc
+    - stackoverflow
+...
 
 StackOverflow
 =============
@@ -43,10 +48,7 @@ b) 调用完 `memset_16alignmed` 后释放内存。
 }
 ```
 
-
-
 #### A:
-
 
 原来的答案：
 
@@ -199,16 +201,8 @@ I'm not aware of anything that Perl can do that Python can't, nor vice versa. Th
 
 (Note that the 'overviews' of Perl and Python, in particular, are woefully incomplete; whole books could be written on the topic.)
 
-
-
-
-
-
-
 [quention-01]: http://stackoverflow.com/questions/227897/solve-the-memory-alignment-in-c-interview-question-that-stumped-me/227900#227900
 [quention-02]: http://stackoverflow.com/questions/366980/what-are-the-differences-between-perl-python-awk-and-sed/367014#367014
-
-
 
 ## The Star
 
@@ -218,15 +212,11 @@ Location: United Kingdom
 
 [charles-bailey]: http://stackoverflow.com/users/19563/charles-bailey
 
-
-
 ## Q & A
 
 ---
 
 The command git add [--all|-A] appears to be identical to git add .. Is this correct? If not, how do they differ?
-
-
 
 ---
 

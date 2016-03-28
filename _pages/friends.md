@@ -1,6 +1,11 @@
-% Friends | 友链
-% TANG ZhiXiong
-% 2016-03-04
+---
+title: Friends | 友链
+date: 2016-03-04
+keywords:
+    - friends
+tags:
+    - friends
+...
 
 Friends | 友链
 ==============

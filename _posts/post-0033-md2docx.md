@@ -1,6 +1,13 @@
-% Pandoc 转成 Word
-% TANG ZhiXiong
-% 2015-10-23
+---
+title: Pandoc 转成 Word
+date: 2015-10-23
+keywords:
+    - pandoc
+    - ms word
+tags:
+    - ms word
+    - pandoc
+...
 
 Pandoc 转成 Word
 ================

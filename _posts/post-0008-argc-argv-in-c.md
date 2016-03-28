@@ -1,6 +1,11 @@
-% C 语言的 argc、argv 干嘛的？
-% TANG ZhiXiong
-% 2015-10-25
+---
+title: C 语言的 argc、argv 干嘛的？
+date: 2015-10-25
+keywords:
+    - c
+tags:
+    - c
+...
 
 C 语言的 argc、argv 干嘛的？
 ===========================

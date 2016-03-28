@@ -1,6 +1,11 @@
-% Day In and Day Out | 我们的生活不可能那么日常
-% TANG ZhiXiong
-% 2015-11-23
+---
+title: Day In and Day Out | 我们的生活不可能那么日常
+date: 2015-11-23
+keywords:
+    - make my day
+tags:
+    - daily
+...
 
 我们的生活不可能那么日常
 ========================

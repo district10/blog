@@ -1,6 +1,10 @@
-% 封装说明
-% TANG ZhiXiong
-% 2015-08-11
+---
+title: 封装说明
+date: 2015-08-11
+key-words:
+tags:
+    - doc
+...
 
 封装说明
 ========

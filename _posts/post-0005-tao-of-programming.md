@@ -1,11 +1,19 @@
-% The Tao of Programming
-% TANG ZhiXiong
-% 2015-02-19
+---
+title: The Tao of Programming
+date: 2015-02-19
+keywords:
+    - tao
+    - programming
+tags:
+    - tao
+    - programming
+    - philosophy
+...
 
 编程之道
 ========
 
-dvorak4tzx: 
+dvorak4tzx:
 
 > 技术，商业，社区，生态，文化，需求；道。
 
@@ -40,7 +48,7 @@ Turing:
 
 * They come and go without knowing limitations.
 * They are alive within the Tao.
-* He has gone beyond the need for testing; each of his programs are perfect withn themselves, serene and elegant, their purpose self-evident. 
+* He has gone beyond the need for testing; each of his programs are perfect withn themselves, serene and elegant, their purpose self-evident.
     + Truly, he has entered the mystery of Tao.
 
 Book Three Design
@@ -55,7 +63,7 @@ A master programmer to a novice programmer:
 
 > What is appropriate for the master is not appropriate for the novice. You must understand Tao before transcending structure.
 
-* When designing an operating system, the programmer seeks the simplest harmony between machine and ideas. This is why an operating system is easier to design." 
+* When designing an operating system, the programmer seeks the simplest harmony between machine and ideas. This is why an operating system is easier to design."
 * "That is all good and well," he said, "but which is easier to debug?"
 * 5 programmers, 10 programmers, 100 programmers...
 
@@ -74,7 +82,7 @@ Book Four: Coding
 Book Five: Maintenance
 ----------------------
 
-> Though a program be but three lines long, someday it will have to be maintained. 
+> Though a program be but three lines long, someday it will have to be maintained.
 
 * A well-used door needs no oil on its hinges.
 * A swift-flowing stream does not grow stagnant.
@@ -85,7 +93,7 @@ Book Five: Maintenance
 Book Six: Management
 --------------------
 
-> Let the programmers be many and the managers few — then all will be productive. 
+> Let the programmers be many and the managers few — then all will be productive.
 
 * Why are the programmers resigning one by one?
 * Because they are burnt out.
@@ -97,7 +105,7 @@ Book Seven: Corporate Wisdom
 
 > You can demonstrate a program for an executive, but you can't make him computer literate.
 
-The novice programmer stares in wonder at the bird, for he understands it not. The average programmer dreads the coming of the bird, for he fears its message. The master programmer continues to work at his terminal, for he does not know that the bird has come and gone. 
+The novice programmer stares in wonder at the bird, for he understands it not. The average programmer dreads the coming of the bird, for he fears its message. The master programmer continues to work at his terminal, for he does not know that the bird has come and gone.
 
 
 Book Eight: Hardware and Software

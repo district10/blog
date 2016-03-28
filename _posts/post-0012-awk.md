@@ -1,6 +1,12 @@
-% AWK 文字处理
-% TANG ZhiXiong
-% 2014-04-07
+---
+title: AWK 文字处理
+date: 2014-04-07
+keywords:
+    - reading
+tags:
+    - awk
+    - reading
+...
 
 AWK 文字处理
 ============

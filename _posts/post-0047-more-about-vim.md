@@ -1,6 +1,10 @@
-% More About Vim | Vim 杂记
-% TANG ZhiXiong
-% 2014-03-28
+---
+title: More About Vim | Vim 杂记
+date: 2014-03-28
+key-words:
+tags:
+    - vim
+...
 
 More About Vim | Vim 杂记
 =========================

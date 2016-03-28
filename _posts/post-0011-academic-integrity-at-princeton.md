@@ -1,6 +1,12 @@
-% Academic Integrity at Princeton | 普林斯顿大学学术道德
-% TANG ZhiXiong
-% 2014-04-04
+---
+title: Academic Integrity at Princeton | 普林斯顿大学学术道德
+date: 2014-04-04
+keywords:
+    - mooc
+tags:
+    - academic integrity
+    - mooc
+...
 
 Academic Integrity at Princeton | 普林斯顿大学学术道德
 ======================================================
@@ -9,14 +15,14 @@ Introduction
 ------------
 
 - All Princeton students pledge to adhere to **Honor Code**
-- This booklet provides information about Princeton’s **academic regulations** and how you can **safeguard the integrity of your original weeork** 
+- This booklet provides information about Princeton’s **academic regulations** and how you can **safeguard the integrity of your original weeork**
 - **Plagiarism, Rights, Rules, Responsibilities**
 
 The University as an Intellectual Community
 -------------------------------------------
 
 - We are here to **learn** from each other and **teach** each other. All of us benefit from **free exchange of ideas, theories, solutions and interpretations**. We test our thoughts & ideas, we profit by analyzing and evaluating the ideas of our classmates, friends, advisers, and teachers.
-- **Trust** is the central **ethic** of such an intellectual community, in several respects. 
+- **Trust** is the central **ethic** of such an intellectual community, in several respects.
 - As we at the University strive to build on their work, all of us (from freshman to full professor) are **obligated** by the ethic of intellectual honesty to **credit that work to its originator**.
 
 The Challenge of Original Work

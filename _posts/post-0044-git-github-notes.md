@@ -1,6 +1,12 @@
-% Git、GitHub 和 Windows
-% TANG ZhiXiong
-% 2014-08-10
+---
+title: Git、GitHub 和 Windows
+date: 2014-08-10
+key-words:
+tags:
+    - git
+    - github
+    - windows
+...
 
 Windows 上配置 Git
 ==================

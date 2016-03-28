@@ -19,6 +19,8 @@ ITEMS = \
 	$(DIR_PUBLISH)/filter.pl \
 	$(DIR_PUBLISH)/footer.html \
 	$(DIR_PUBLISH)/index.md \
+	$(DIR_PUBLISH)/template.html \
+	$(DIR_PUBLISH)/metadata.yaml \
 
 all: items move statics lyrics html
 
@@ -31,11 +33,7 @@ $(DIR_PUBLISH):
 items: $(ITEMS)
 $(DIR_PUBLISH)/Makefile: publish.mk
 	cp $< $@
-$(DIR_PUBLISH)/filter.pl: filter.pl
-	cp $< $@
-$(DIR_PUBLISH)/footer.html: footer.html
-	cp $< $@
-$(DIR_PUBLISH)/index.md: index.md
+$(DIR_PUBLISH)/%: %
 	cp $< $@
 
 move: $(PG_POSTS) $(PG_BIBS) $(PG_PAGES)

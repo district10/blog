@@ -1,6 +1,11 @@
-% 随便翻翻 & Men Lists & Words Lists
-% TANG ZhiXiong
-% 2014-00-00
+---
+title: 随便翻翻 & Men Lists & Words Lists
+date: 2014-00-00
+key-words:
+tags:
+    - note
+    - reading
+...
 
 随便翻翻 & Men Lists & Words Lists
 ==================================

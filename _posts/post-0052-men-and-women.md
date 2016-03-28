@@ -1,6 +1,11 @@
-% 城会玩之微软 Emotion Recognition
-% TANG ZhiXiong
-% 2015-11-13
+---
+title: 城会玩之微软 Emotion Recognition
+date: 2015-11-13
+key-words:
+tags:
+    - ms
+    - app
+...
 
 城会玩之微软 Emotion Recognition
 ================================

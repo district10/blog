@@ -1,6 +1,12 @@
-% Lingoes 网络词典
-% TANG ZhiXiong
-% 2015-12-17
+---
+title: Lingoes 网络词典
+date: 2015-12-17
+key-words:
+tags:
+    - lingoes
+    - app
+    - windows
+...
 
 Lingoes 网络词典
 ================

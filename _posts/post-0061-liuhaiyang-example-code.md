@@ -1,6 +1,11 @@
-% LaTeX 入门（刘海洋） --- 配套 TeX 源码
-% TANG ZhiXiong
-% 2015-08-06
+---
+title: LaTeX 入门（刘海洋） --- 配套 TeX 源码
+date: 2015-08-06
+key-words:
+tags:
+    - reading
+    - latex
+...
 
 LaTeX 入门（刘海洋） --- 配套 TeX 源码
 ======================================

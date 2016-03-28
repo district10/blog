@@ -1,6 +1,11 @@
-% The AWK Programming Language | AWK 编程语言
-% TANG ZhiXiong
-% 2014-05-07
+---
+title: The AWK Programming Language | AWK 编程语言
+date: 2014-05-07
+key-words:
+tags:
+    - awk
+    - reading
+...
 
 The AWK Programming Language | AWK 编程语言
 ===========================================
@@ -21,11 +26,11 @@ The Structure Of AWK Program
 
 ### Simple Output
 
-What AWK Can? 
+What AWK Can?
 
 :   Printing Fields, Selecting Input, And Transforming Data
 
-    * Printing Every Line 
+    * Printing Every Line
         + `{ print }`{.awk}
         + `{ print $0 }`{.awk}
     * Printing Certain Fields
@@ -36,10 +41,10 @@ What AWK Can?
         + `{ print NF, $1, $NF }`{.awk}: print number of fields and first and last fields of each input line
     * `NR`, the Number of Lines Read so far
         + `{ print NR, $1 }`{.awk}
-    * Putting Text in the output 
+    * Putting Text in the output
         + `{ print "Total cost of the lunch is ", $1, $2 * $3 }`{.awk}
 
-### Fancier Output 
+### Fancier Output
 
 `printf ("format",  value1, value2, ...)`{.bash}
 
@@ -76,7 +81,7 @@ Sorting
 
 ### Computing with AWK
 
-Counting 
+Counting
 
 :   ```awk
     { counter = counter + 1 }
@@ -111,7 +116,7 @@ Counting Lines, Words
             { nc = nc + length($0) + 1
               nw = nw + NF }
         END { print NR "lines", nw, "words", nc, "chars" }
-    ```  
+    ```
 
 ### Control-flow statements
 
@@ -121,7 +126,7 @@ Counting Lines, Words
 
 ### Arrays
 
-Print Input In Reverse Order By Line 
+Print Input In Reverse Order By Line
 
 :   ```awk
     { line[NR] = $0 }
@@ -130,16 +135,16 @@ Print Input In Reverse Order By Line
           print line[i]
           i = i - 1
           }
-    }	
+    }
     ```
 
-### A Handful Of Useful "One-Liners"  
+### A Handful Of Useful "One-Liners"
 
 * `END { print NR }`{.awk}: print Line Num
 * `NR == 10 { print }`{.awk}: print specific line
-* `{ print $NF }`{.awk}: print last field  
+* `{ print $NF }`{.awk}: print last field
 * `{ field = $NF } END { print field }`{.awk}: last field of last line
-* `{ nf = nf + NF } END { print "there are ", nf, " fields in this file" }`{.awk} 
+* `{ nf = nf + NF } END { print "there are ", nf, " fields in this file" }`{.awk}
 * Lines that contain "apple"
 
     ```awk
@@ -196,20 +201,20 @@ England	94    56    Europe
 
 program format: one line or multi lines breaks with "\"
 
-* patterns 
+* patterns
     + `{ statements }`{awk}
     + `BEGIN { statements }`{.awk}
     + `END { statements }`{.awk}
     + `expression { statements }`{.awk}
     + `/ regular expression / { statements }`{.awk}
-    + `pattern1, pattern2 { statements }`{.awk} 
+    + `pattern1, pattern2 { statements }`{.awk}
 * Actions
     + `print`{.awk}, `printf()`{.awk}
-    + `if`{.awk}, `if else`{.awk}, `for`{.awk}, `do while`{.awk}, 
+    + `if`{.awk}, `if else`{.awk}, `for`{.awk}, `do while`{.awk},
       `break`{.awk}, `continue`{.awk}, `next`{.awk}, `exit`{.awk}
 * variables
     + built-in variables: `$0`{.awk}, `$1`{.awk}, ..., `$NF`{.awk}
-    + field variables: `FS`{.awk}, `OFS`{.awk} (output field separator), `ORS`{.awk} (output record separator)   
+    + field variables: `FS`{.awk}, `OFS`{.awk} (output field separator), `ORS`{.awk} (output record separator)
 * string as  regular expression
 
     ```awk
@@ -224,7 +229,7 @@ program format: one line or multi lines breaks with "\"
 * `{ print > $1 }`{.awk}
 *
 * `BEGIN { FS = "[{\n\t}]:;" }`{.awk}
-* `BEGIN { FS = "[ ]" }`{.awk}: a single blank  
+* `BEGIN { FS = "[ ]" }`{.awk}: a single blank
 * `awk -F';:[\t]\n' '{ print }' file-in.txt`{.bash}
 * `RS`{.awk} (record separator)
 * The getline function
@@ -241,14 +246,14 @@ DATA PROCESSING
 histgram:
 
 ```awk
-    { data[int($1/10)]++ } 
-END { for (i=0; i<10; i++) 
+    { data[int($1/10)]++ }
+END { for (i=0; i<10; i++)
           printf("%s", rep(data[i], "*"))
-} 
+}
 
-function rep(n, s, t) 
+function rep(n, s, t)
 {
-    while (n-- > 0) 
+    while (n-- > 0)
        {
 	t = t s
        }
@@ -258,7 +263,7 @@ function rep(n, s, t)
 
 convert mmddyy to yymmdd: `{ $1 = substr($1,5,2) substr($1,1,2) substr($1,3,2) print $1 }`{.awk}
 
-reports and databases 
+reports and databases
 ---------------------
 
 processing words
@@ -268,7 +273,7 @@ little languages
 ----------------
 
 experiments with algorithms
---------------------------- 
+---------------------------
 
 epilog
 ------

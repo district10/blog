@@ -1,9 +1,19 @@
-% Free as in Freedom
-% TANG ZhiXiong
-% 2014-03-15
+---
+title: Free as in Freedom
+date: 2014-03-15
+keywords:
+    - freedom
+    - richard stallman
+    - hacker
+tags:
+    - freedom
+    - richard stallman
+    - hacker
+    - reading
+...
 
 Free as in Freedom
-=============================
+==================
 
 dvorak4tzx：
 

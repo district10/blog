@@ -1,6 +1,15 @@
-% OpenCV Computer Vision with Python
-% TANG ZhiXiong
-% 2014-02-23
+---
+title: OpenCV Computer Vision with Python
+date: 2014-02-23
+keywords:
+    - computer vision
+    - python
+    - readings
+tags:
+    - computer vision
+    - python
+    - readings
+...
 
 OpenCV Computer Vision with Python
 ==================================
@@ -71,7 +80,7 @@ while success: # Loop until there are no more frames
 
 # 这段代码我失败了……
 ```
-     
+
 ```python
 cv2.cv.CV_FOURCC('T','H','E','O'): Ogg-Vorbis, *.ogv
 cv2.cv.CV_FOURCC('F','L','V','1'): Flash video, *.flv
@@ -163,7 +172,7 @@ Channel mixing – seeing in Technicolor
 
 channel mixing
 
-:    **remapping** colors to **simulate** some other, 
+:    **remapping** colors to **simulate** some other,
      smaller color space inside RGB or BGR
 
 Color Spaces
@@ -175,7 +184,7 @@ Color Spaces
 Simulating RC color space
 
 ```python
-# Pseudocode: 
+# Pseudocode:
 #     dst.b = dst.g = 0.5 * (src.b + src.g)
 #     dst.r = src.r
 # Python OpenCV Code:
@@ -187,9 +196,9 @@ cv2.merge((b, b, r), dst)
 Simulating `RGV` color space
 
 ```python
-# Pseudocode: 
-#     dst.b = min(src.b, src.g, src.r), 
-#     dst.g = src.g, 
+# Pseudocode:
+#     dst.b = min(src.b, src.g, src.r),
+#     dst.g = src.g,
 #     dst.r = src.r
 # Python code:
 b, g, r = cv2.split(src)
@@ -201,9 +210,9 @@ cv2.merge((b, g, r), dst)
 Simulating `CMV` color space
 
 ```python
-# Pseudocode: 
-#     dst.b = max(src.b, src.g, src.r), 
-#     dst.g = src.g, 
+# Pseudocode:
+#     dst.b = max(src.b, src.g, src.r),
+#     dst.g = src.g,
 #     dst.r = src.r
 ```
 
@@ -215,7 +224,7 @@ Curves – bending color space
          dst.g = funcG(src.g)
          dst.b = funcB(src.b)
 
-cubic spline interpolation, or 
+cubic spline interpolation, or
 
 * linear
 * nearest
@@ -305,8 +314,8 @@ Conceptualizing Haar cascades
 
 cascade
 
-:    Two images that differ only in scale should be capable of yielding similar features, 
-     albeit for different window sizes. Thus, it is useful to generate features for multiple window sizes. 
+:    Two images that differ only in scale should be capable of yielding similar features,
+     albeit for different window sizes. Thus, it is useful to generate features for multiple window sizes.
      Such **a collection of features** is called a cascade.
 
      **a Haar cascade is scale-invariant** or, in other words, robust to changes in scale
@@ -338,7 +347,7 @@ def outlineRect(image, rect, color):
     x, y, w, h = rect
     cv2.rectangle(image, (x, y), (x+w, y+h), color)
 ```
-     
+
 ```python
 cv2.INTER_NEAREST
 cv2.INTER_LINEAR # bilinear interpolation (the default)

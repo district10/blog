@@ -1,6 +1,10 @@
-% Learn C in Programming
-% TANG ZhiXiong
-% 2015-11-19
+---
+title: Learn C in Programming
+date: 2015-11-19
+key-words:
+tags:
+    - c
+...
 
 Learn C in Programming
 ======================

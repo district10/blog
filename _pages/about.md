@@ -1,6 +1,16 @@
-% About | 关于
-% TANG ZhiXiong
-% 2015-11-06
+---
+title: About | 关于
+date: 2015-11-06
+keywords:
+    - about
+    - district10
+    - dvorak4tzx
+tags:
+    - about
+...
+
+---
+...
 
 About | 关于
 ============

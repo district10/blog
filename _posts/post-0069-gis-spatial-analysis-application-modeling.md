@@ -1,6 +1,12 @@
-% GIS Spatial Analysis and Application Modeling | GIS 空间分析与应用建模
-% TANG ZhiXiong
-% 2015-11-23
+---
+title: GIS Spatial Analysis and Application Modeling | GIS 空间分析与应用建模
+date: 2015-11-23
+key-words:
+tags:
+    - gis
+    - spatial analysis
+    - homework
+...
 
 GIS 空间分析与应用建模
 ======================

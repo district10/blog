@@ -1,11 +1,116 @@
-% Notes | 笔记
-% TANG ZHiXiong
-% 2015-11-18
+---
+title: Notes | 笔记
+date: 2015-11-18
+keywords:
+    - notes
+tags:
+    - notes
+...
 
 Notes | 笔记
 ============
 
 <!--...-->
+
+`// var jq = jQuery.noConflict();`
+
+```javascript
+$( "li" ).each(function( index ) {
+  console.log( index + ": " + $( this ).text() );
+});
+
+$(document).ready(function(){
+    $('img').each(function(index){
+        $(this).attr('data-src', $(this).src);
+        $(this).attr(     'src', "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==");
+        $(this).attr(  'onload', "lzld(this)");
+    });
+    var pathStringList = document.location.toString().split('/');
+});
+```
+
+[Attribute selectors - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
+
+:   ```css
+    #id_value { style properties }
+    [id=id_value] { style properties }
+
+    // has attr
+    [attr]
+
+    // has matching attr
+    [attr=value]
+
+    // class="a b c" class~="b"
+    [attr~=value]
+
+    /* Any span in Chinese is red, matches
+       simplified (zh-CN) or traditional (zh-TW) */
+    span[lang|="zh"] {color: red;}
+
+    // prefix
+    [attr^=value]
+
+    // suffix
+    [attr$=value]
+
+    // contains
+    [attr*=value]
+
+    // ignore case
+    [attr operator value i]
+    ```
+
+    `background-color:`{.css} <span style="background-color: DodgerBlue;">DogerBlue</span>;
+
+    Refs
+
+      - [ID selectors - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors)
+      - [Attribute selectors - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
+
+[cursor - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor?redirectlocale=en-US&redirectslug=CSS%2Fcursor)
+
+:   cursor
+      ~ auto // default // none
+      ~ pointer
+      ~ cell
+      ~ crosshair
+      ~ zoom-in / -webkit-zoom-in
+      ~ url(hyper.cur), auto
+
+[quotes - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/quotes)
+
+:   ```css
+    /* Keyword value */
+    quotes: none;
+
+    /* <string> values */
+    quotes: "«" "»";           /* Set open-quote and close-quote to the French quotation marks */
+    quotes: "«" "»" "‹" "›";   /* Set two levels of quotation marks */
+
+    /* Global values */
+    quotes: inherit;
+    quotes: initial;
+    quotes: unset;
+
+    q { quotes: '"' '"' "'" "'" }
+    q:before { content: open-quote }
+    q:after  { content: close-quote }
+    ```
+
+[javascript - window.onload vs $(document).ready() - Stack Overflow](http://stackoverflow.com/questions/3698200/window-onload-vs-document-ready)
+
+:   The ready event occurs after the HTML document has been loaded, while the onload event occurs later, when all content (e.g. images) also has been loaded.
+
+    The onload event is a standard event in the DOM, while the ready event is
+    specific to jQuery. The purpose of the ready event is that it should occur
+    as early as possible after the document has loaded, so that code that adds
+    functionality to the elements in the page doesn't have to wait for all
+    content to load.
+
+    I didn't think that it was releveant to the question, and I still don't.
+
+---
 
 I'm agnostic.
 
@@ -403,173 +508,7 @@ In early development.
         Program to use to turn Yacc grammars into C programs; default `yacc'.
     YACCR
         Program to use to turn Yacc grammars into Ratfor programs; default `yacc -r'.
-    MAKEINFO
-        Program to convert a Texinfo source file into an Info file; default `makeinfo'.
-    TEX
-        Program to make TeX DVI files from TeX source; default `tex'.
-    TEXI2DVI
-        Program to make TeX DVI files from Texinfo source; default `texi2dvi'.
-    WEAVE
-        Program to translate Web into TeX; default `weave'.
-    CWEAVE
-        Program to translate C Web into TeX; default `cweave'.
-    TANGLE
-        Program to translate Web into Pascal; default `tangle'.
-    CTANGLE
-        Program to translate C Web into C; default `ctangle'.
-    RM
-        Command to remove a file; default `rm -f'.
-    ```
-
-[Various statements in a makefile](http://makepp.sourceforge.net/1.19/makepp_statements.html)
-
-:   `include standard_definitions.mk`{.makefile} 会像 git 找自己的 repo 根目录一样层层往下找。
-
-    `load_makefile /some/directory/somewhere/Makefile`{.makefile}
-
-    ```makefile
-    OBJDIR := $(ARCH)               # Where we put .o files.
-    perl_begin
-    -d $OBJDIR or mkdir $OBJDIR;    # Make sure the directory exists.
-    perl_end
-    ```
-
-    还可以在 Makefile 里面用 perl 脚本：
-
-    :   ```makefile
-        # define a perl subroutine
-        sub f_file_contents {
-          my ($filename) = @_;		# Name the arguments.
-          my $file_contents;
-          open FILE, $filename || die "$!\n";
-          my $line;
-          while (defined($line = <FILE>)) {  # Read another line.
-            $file_contents .= $line;
-          }
-          close FILE;
-
-          return $file_contents;
-        }
-
-        # call it
-        X = $(file_contents filename)
-        ```
-
-    `ifeq`, `ifneq`
-
-    :   ```makefile
-        ifeq ($(STR1),$(STR2))
-            makefile lines if true
-        else
-            makefile lines if false
-        endif
-
-        # e.g.
-        ifeq ($(BUILD_TYPE), debug)
-            CFLAGS := -g
-        else
-            CFLAGS := -O2
-        endif
-        ```
-
-    `ifdef`, `ifndef`
-
-    :   ```makefile
-        ifndef CFLAGS
-            CFLAGS := -g
-        endif
-
-        # more elegant way
-        CFLAGS ?= -g
-        ```
-
-[text-transform - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
-
-:   <div class="tzx-fright">
-    ![](https://mdn.mozillademos.org/files/12201/writing-mode-actual-result.png)
-    </div>
-
-    ```css
-    /* Keyword values */
-    text-transform: capitalize;
-    text-transform: uppercase;
-    text-transform: lowercase;
-    text-transform: none;
-    text-transform: full-width;
-
-    /* Global values */
-    text-transform: inherit;
-    text-transform: initial;
-    text-transform: unset;
-
-    font-variant: small-caps;
-    font-variant: common-ligatures small-caps;
-
-    /* Global values */
-    font-variant: inherit;
-    font-variant: initial;
-    font-variant: unset;
-
-    /* Keyword values */
-    text-combine-upright: none;
-    text-combine-upright: all;
-
-    /* Digits values */
-    /* fits up to 4 consecutive digits horizontally */
-    text-combine-upright: digits 4;
-    /* default: 2 digits */
-    text-combine-upright: digits;
-
-    /* Global values */
-    text-combine-upright: inherit;
-    text-combine-upright: initial;
-    text-combine-upright: unset;
-    ```
-
-    <p style="writing-mode: vertical-lr; text-combine-upright: digits 2;">平成20年4月16日に</p>
-
-    我的火狐上数字没有并列并竖起来。Chrome 上整个横起来的，数字倒是并列了。可想兼容性有多差。
-
-    refs
-
-      - [font-variant - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant)
-      - [writing-mode - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode)
-
----
-
-如果你们实验室设置好 ip，网关就能上网的话，就简单多了：
-
-:   ```bash
-    ifconfig eth0 192.168.1.234 netmask 255.255.255.0
-    route add default gw 192.168.1.2
-    # echo nameserver 4.4.4.4  >> /etc/resolv.conf
-    # 或者在 /etc/networking/interfaces 修改 DHCP 文件后运行 dhclient eth0
-    ```
-
-The best way to see the point of vim is to start a casual project at home,
-**unplug your mouse and tape over your arrow keys**.
-
-Here's an example of a busted (破产, 开除, 崩溃, 蛋疼了的) build: ...
-
-[Display Disqus On Click Event](http://www.paulund.co.uk/ajax-disqus-comment-system)
-
-:   ```html
-    <div id="comments" class="comments-area">
-        <div class="showDisqus">Show Comments</div>
-
-            <div id="disqus_thread"></div>
-    </div>
-    ```
-
-    <small>
-    ```javascript
-    $j=jQuery.noConflict();
-
-    $j(document).ready(function() {
-        $j('.showDisqus').on('click', function(){   // click event of the show comments button
-            var disqus_shortname = 'enter_your_disqus_user_name';  // Enter your disqus user name
-
-                    // ajax request to load the disqus javascript
+    MAKEINFOmzthe disqus javascript
             $j.ajax({
                  type: "GET",
                  url: "http://" + disqus_shortname + ".disqus.com/embed.js",

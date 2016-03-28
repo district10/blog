@@ -1,6 +1,13 @@
-% 维基上的维基解密
-% TANG ZhiXiong
-% 2014-06-15
+---
+title: 维基上的维基解密
+date: 2014-06-15
+keywords:
+    - wikipedia
+    - translation
+tags:
+    - wikipedia
+    - translation
+...
 
 维基上的维基解密
 ================
@@ -31,8 +38,8 @@ Hrafnsson 和 Assange，Ingi Ragnar Ingason，Gavin MacFadyen 还都是 Sunshine
 [iraq-war-logs]: https://en.wikipedia.org/wiki/Iraq_War_Logs
 [799]: https://en.wikipedia.org/wiki/Guantanamo_Bay_files_leak
 
-In November 2010, WikiLeaks collaborated with major global media organisations to 
-release U.S. State department diplomatic "cables" in redacted format. 
+In November 2010, WikiLeaks collaborated with major global media organisations to
+release U.S. State department diplomatic "cables" in redacted format.
 在 2010 年 10 月，WikiLeaks 联合主流媒体组织发布了改编材料（in Redacted Format），
 揭露了 [美国外交电报事件（U.S. State Department Diplomatic “Cables”，又称 Cablegate）][cablegate]。
 2011 年 9 月 1 日，所有 WikiLeaks 关于此事件的文档加密后可通过磁力下载（BitTorrent），

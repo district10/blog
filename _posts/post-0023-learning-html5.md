@@ -1,6 +1,12 @@
-% Learning HTML5
-% TANG ZhiXiong
-% 2014-04-19
+---
+title: Learning HTML5
+date: 2014-04-19
+keywords:
+tags:
+    - html5
+    - docs
+    - readings
+...
 
 Learning HTML5
 ==============

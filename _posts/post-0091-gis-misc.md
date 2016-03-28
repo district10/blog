@@ -1,6 +1,12 @@
-% GIS 理论与技术 - 作业 1, 6, 7
-% TANG ZhiXiong
-% 2016-03-24
+---
+title: GIS 理论与技术 - 作业 1, 6, 7
+date: 2016-03-24
+keywords:
+    - gis
+tags:
+    - gis
+    - homework
+...
 
 GIS 理论与技术 - 作业 1, 6, 7
 =============================

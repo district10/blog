@@ -1,6 +1,13 @@
-% DuckDuckGo：另一个搜索引擎
-% TANG ZhiXiong
-% 2014-07-15
+---
+title: DuckDuckGo：另一个搜索引擎
+date: 2014-07-15
+keywords:
+    - duckduckgo
+tags:
+    - duckduckgo
+    - wikipedia
+    - translation
+...
 
 DuckDuckGo：另一个搜索引擎
 ==========================

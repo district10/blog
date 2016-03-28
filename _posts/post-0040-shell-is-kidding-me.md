@@ -1,6 +1,10 @@
-% 让 Shell 喊你回家吃饭
-% TANG ZhiXiong
-% 2015-02-13
+---
+title: 让 Shell 喊你回家吃饭
+date: 2015-02-13
+key-words:
+tags:
+    - shell
+...
 
 让 Shell 喊你回家吃饭
 ====================

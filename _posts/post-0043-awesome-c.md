@@ -1,6 +1,11 @@
-% Function Pointer Stack in C
-% TANG ZhiXiong
-% 2015-01-00
+---
+title: Function Pointer Stack in C
+date: 2015-01-00
+key-words:
+tags:
+    - c
+    - pointer
+...
 
 Function Pointer Stack in C
 ===========================
@@ -156,4 +161,3 @@ d = 23
                     data:  103 (Added 3)
 d = 103
 ```
-

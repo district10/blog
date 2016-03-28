@@ -1,6 +1,14 @@
-% KL Transform （记一次作业）
-% TANG ZhiXiong
-% 2014-02-22
+---
+title: KL Transform （记一次作业）
+date: 2014-02-22
+keywords:
+    - pca
+    - kl transform
+tags:
+    - pca
+    - kl transform
+    - math
+...
 
 KL Transform （记一次作业）
 ==========================
@@ -15,13 +23,13 @@ KL Transform （记一次作业）
 /* Pattern Classification homework
  *
  * Algorithm: Karhunen-Loeve Transform
- * 
+ *
  * Notice: You need Eigen library, and a compiler with support of c++0x
- * 
- * Compile it use something like this: 
+ *
+ * Compile it use something like this:
  *    g++ -std=c++0x -I/YOUR/EIGEN/LIB/PATH kl_transform.cpp -o kl_transform
  *    (at least g++ version 4.7)
- * 
+ *
  * Author: Tang Zhixiong
  * Contact me at:  gnat_tang@yeah.net
  */
@@ -53,7 +61,7 @@ int main()
   MatrixXf St =
     (data * data.transpose()) / data.cols()
     + m * m.transpose();
-  
+
   int num_shrink = 0;
   cout << "num_shrink:(in this demo, 1 is fine) ";
   cin >> num_shrink;
@@ -116,7 +124,7 @@ MatrixXf kl_transform(const MatrixXf& square,int num_shrink = 1)
 	    && "We cant solve problem with imagery part not 0");
     projection[ eigen_values[i].real() ] =  eigen_vectors.col(i);
   }
- 
+
   auto my_end = projection.begin();
   while ( num_shrink != 0 ) {
     ++my_end;
@@ -133,7 +141,7 @@ MatrixXf kl_transform(const MatrixXf& square,int num_shrink = 1)
     ++i;
   }
 
-  return output;  
+  return output;
 }
 ```
 

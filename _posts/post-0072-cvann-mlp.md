@@ -1,6 +1,10 @@
-% OpenCV::CvANN_MLP
-% TANG ZhiXiong
-% 2015-11-30
+---
+title: OpenCV::CvANN_MLP
+date: 2015-11-30
+key-words:
+tags:
+    - algorithm
+...
 
 OpenCV::CvANN_MLP
 =================
@@ -300,7 +304,7 @@ CvANN_MLP
 
 `CvANN_MLP::create`{.cpp}
 
-:   Constructs MLP with the specified topology.  
+:   Constructs MLP with the specified topology.
 
     Unlike many other models in ML that are constructed and trained at once, in the
     MLP model these steps are separated. First, a network with the specified
@@ -311,14 +315,14 @@ CvANN_MLP
     training data.
 
     ```cpp
-    void CvANN_MLP::create( const Mat& layerSizes, 
-                            int activateFunc=CvANN_MLP::SIGMOID_SYM, 
-                            double fparam1=0, 
+    void CvANN_MLP::create( const Mat& layerSizes,
+                            int activateFunc=CvANN_MLP::SIGMOID_SYM,
+                            double fparam1=0,
                             double fparam2=0 );
 
-    void CvANN_MLP::create( const CvMat* layerSizes, 
-                            int activateFunc=CvANN_MLP::SIGMOID_SYM, 
-                            double fparam1=0, 
+    void CvANN_MLP::create( const CvMat* layerSizes,
+                            int activateFunc=CvANN_MLP::SIGMOID_SYM,
+                            double fparam1=0,
                             double fparam2=0 );
     ```
 
@@ -339,18 +343,18 @@ CvANN_MLP
 :   Trains/updates MLP.
 
     ```cpp
-    int CvANN_MLP::train( const Mat& inputs, 
-                          const Mat& outputs, 
-                          const Mat& sampleWeights, 
-                          const Mat& sampleIdx=Mat(), 
-                          CvANN_MLP_TrainParams params=CvANN_MLP_TrainParams(), 
+    int CvANN_MLP::train( const Mat& inputs,
+                          const Mat& outputs,
+                          const Mat& sampleWeights,
+                          const Mat& sampleIdx=Mat(),
+                          CvANN_MLP_TrainParams params=CvANN_MLP_TrainParams(),
                           int flags=0 );
 
-    int CvANN_MLP::train( const CvMat* inputs, 
-                          const CvMat* outputs, 
-                          const CvMat* sampleWeights, 
-                          const CvMat* sampleIdx=0, 
-                          CvANN_MLP_TrainParams params=CvANN_MLP_TrainParams(), 
+    int CvANN_MLP::train( const CvMat* inputs,
+                          const CvMat* outputs,
+                          const CvMat* sampleWeights,
+                          const CvMat* sampleIdx=0,
+                          CvANN_MLP_TrainParams params=CvANN_MLP_TrainParams(),
                           int flags=0 );
     ```
 
@@ -381,10 +385,10 @@ CvANN_MLP
 :   Predicts responses for input samples.
 
     ```cpp
-    float CvANN_MLP::predict( const Mat& inputs, 
+    float CvANN_MLP::predict( const Mat& inputs,
                               Mat& outputs) const;
 
-    float CvANN_MLP::predict( const CvMat* inputs, 
+    float CvANN_MLP::predict( const CvMat* inputs,
                               CvMat* outputs) const;
     ```
 
@@ -418,7 +422,7 @@ int main()
 
     //  CvANN_MLP_TrainParams::CvANN_MLP_TrainParams()
     //  {
-    //      term_crit = cvTermCriteria( 
+    //      term_crit = cvTermCriteria(
     //              CV_TERMCRIT_ITER + CV_TERMCRIT_EPS, 1000, 0.01 );
     //      train_method = RPROP;
     //      bp_dw_scale = bp_moment_scale = 0.1;
@@ -455,9 +459,9 @@ int main()
     // Update-values upper limit \Delta_{max}. It must be >1.
     // params.rp_dw_max = 50.;
 
-    // void CvANN_MLP::create(const Mat& layerSizes, 
-    //                        int activateFunc=CvANN_MLP::SIGMOID_SYM, 
-    //                        double fparam1=0, 
+    // void CvANN_MLP::create(const Mat& layerSizes,
+    //                        int activateFunc=CvANN_MLP::SIGMOID_SYM,
+    //                        double fparam1=0,
     //                        double fparam2=0 )
     // * layerSizes – #neurons in each layer including the input/output layers
     // * activateFunc – activation function for each neuron

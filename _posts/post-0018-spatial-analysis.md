@@ -1,6 +1,17 @@
-% 空间分析实习报告
-% TANG ZhiXiong
-% 2014-05-04
+---
+title: 空间分析实习报告
+date: 2014-05-04
+keywords:
+    - gis
+    - spatial gis
+    - spatial analysis
+    - arcgis
+tags:
+    - gis
+    - spatial gis
+    - spatial analysis
+    - arcgis
+...
 
 空间分析实习报告
 ================

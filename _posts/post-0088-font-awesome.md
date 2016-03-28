@@ -1,12 +1,20 @@
-% Font Awesome
-% TANG ZhiXiong
-% 2016-03-03
+---
+title: Font Awesome
+date: 2016-03-03
+foo:
+    - bar3
+    - bar4
+keywords:
+    - font-awesome
+    - csshake
+cssfile:
+#    - csshake.min.css
+    - font-awesome.min.css
+# after-before: |
+...
 
 Font Awesome
 ============
-
-<link rel="stylesheet" href="font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="csshake.min.css">
 
 <p><i class="icon-camera-retro icon-large"></i> icon-camera-retro</p>
 <p><i class="icon-camera-retro icon-2x"></i> icon-camera-retro</p>
@@ -107,16 +115,8 @@ Use a few of the new styles together ... lots of new possibilities.
 
 <div class="shake-crazy shake-freeze">`<div class="shake-crazy shake-freeze"></div>`{.html}</div>
 
-<button class='fa fa-plus icon-plus btn btn-xs btn-default'></button>
+<button class='fa fa-plus icon-plus btn btn-xs btn-default' id="disqus"></button>
 
+<!--
 <iframe id="embed_dom" name="embed_dom" frameborder="0" style="border:1px solid #000;display:block;width:430px; height:320px;" src="https://www.processon.com/embed/56ea518ae4b064f66b7e3e4b"></iframe>
-
----
-
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="jquery-ui.min.js"></script>
-<script>
-$(function() {
-    $( ".tzx-tabs" ).tabs();
-});
-</script>
+-->

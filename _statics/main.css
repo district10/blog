@@ -156,7 +156,8 @@ caption {
 }
 
 #footer {
-    padding: 10px 10px 10px 10px;
+    // padding: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
     color: gray;
     text-align: center;
     position: fixed;
@@ -184,6 +185,10 @@ caption {
 }
 
 #footer a:hover {
+}
+
+#footer > p:nth-child(1) {
+  line-height: 0;
 }
 
 .footnoteRef {
@@ -540,12 +545,12 @@ div#TOC:hover {
 h1::selection { color: orange; }
 h1::-moz-selection { color: orange; }
 
-.paste, .hide {
+.tzx-paste, .tzx-hide {
     padding: 1em;
     border: 1px dashed helitrope; // hide
 }
 
-.hide {
+.tzx-hide {
     visibility: hidden;
 }
 
@@ -649,4 +654,24 @@ body {
     background-repeat: no-repeat;
     background-position: bottom center;
     background-color: rgba( 255, 255, 255, 0.05 );
+}
+
+#showDisqus {
+    font-size: 60%; 
+    cursor: pointer;
+}
+
+.footnotes [id^=fn]:target {
+    border-right: 5px solid lightgray;
+    border-top:   1px solid lightgray;
+    border-bottom:1px solid lightgray;
+    background-color: rgba(0,127,255,0.02);
+}
+.footnotes [id^=fn]:hover {
+    background-color: rgba(0,127,255,0.05);
+}
+
+.tzx-tags-group {
+    // visibility: hidden;
+    display: none;
 }

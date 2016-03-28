@@ -1,6 +1,12 @@
-% Vim Rules
-% TANG ZhiXiong
-% 2015-11-23
+---
+title: Vim Rules
+date: 2015-11-23
+key-words:
+tags:
+    - vim
+    - rule
+    - util
+...
 
 Vim Rules
 =========

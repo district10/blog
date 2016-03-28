@@ -1,6 +1,15 @@
-% 维基上的日本
-% TANG ZhiXiong
-% 2014-06-18
+---
+title: 维基上的日本
+date: 2014-06-18
+keywords:
+    - wikipedia
+    - japan
+    - translation
+tags:
+    - wikipedia
+    - japan
+    - translation
+...
 
 维基上的日本
 ============

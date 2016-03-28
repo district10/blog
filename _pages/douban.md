@@ -1,6 +1,12 @@
-% Bovie | 书影
-% TANG ZhiXiong
-% 2015-11-19
+---
+title: Bovie | 书影
+date: 2015-11-19
+keywords:
+    - douban
+tags:
+    - douban
+    - readings
+...
 
 Bovie | 书影
 ============

@@ -1,6 +1,12 @@
-% WHU MOOC Academic Integrity
-% TANG ZhiXiong
-% 2016-01-07
+---
+title: WHU MOOC Academic Integrity
+date: 2016-01-07
+key-words:
+    - mooc
+    - academic integrity
+tags:
+    - academic integrity
+...
 
 WHU MOOC Academic Integrity
 ===========================

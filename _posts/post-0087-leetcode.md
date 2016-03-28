@@ -1,20 +1,27 @@
-% Leet Code
-% TANG ZhiXiong
-% 2016-03-02
+---
+title: Leet Code
+date: 2016-03-02
+key-words:
+    - leetcode
+tags:
+    - leetcode
+    - programming
+cssfile:
+after-before: |
+    <style>
+    .tzx-tabs ul li a:hover {
+        border-bottom: none;
+    }
+    pre {
+        font-size: 80%;
+    }
+    </style>
+jsfile:
+before-after:
+...
 
 Leet Code
 =========
-
-<link rel="stylesheet" href="jquery-ui.css">
-<link rel="stylesheet" href="font-awesome.min.css">
-<style>
-.tzx-tabs ul li a:hover {
-    border-bottom: none;
-}
-pre {
-    font-size: 80%;
-}
-</style>
 
 <div class="tzx-tabs">
 * [Leet Code Intro](#tab11)
@@ -1007,18 +1014,6 @@ int romanToInt(char* s) {
 ~~~ {# .c}
 ~~~
 </div>
--->
 
----
-
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="jquery-ui.min.js"></script>
-<script>
-$(function() {
-    $( ".tzx-tabs" ).tabs();
-});
-</script>
-
-<!--
 [OpenJudge - G:I Love this Game!](http://www.bailian.openjudge.cn/2015finalexam/G/)
 -->

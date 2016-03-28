@@ -1,6 +1,11 @@
-% Notice | 公告
-% TANG ZhiXiong
-% 2016-03-02
+---
+title: Notice | 公告
+date: 2016-03-02
+keywords:
+    - notice
+tags:
+    - notice
+...
 
 Notice | 公告
 =============

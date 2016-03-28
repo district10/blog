@@ -1,6 +1,13 @@
-% 为什么 Emacs 用户爱德沃夏克
-% TANG ZhiXiong
-% 2015-02-19
+---
+title: 为什么 Emacs 用户爱德沃夏克
+date: 2015-02-19
+keywords:
+    - emacs
+    - dvorak
+tags:
+    - emacs
+    - dvorak
+...
 
 为什么 Emacs 用户爱德沃夏克
 ===========================
@@ -36,7 +43,7 @@
    认为 Dvorak 有更快的打字速度纯粹是一种神话，没有任何证据可以表明，
    Dvorak 键盘显著地快于 QWERTY 键盘。
 3. 估计某个程序员发现用 dvorak 布局很爽，就将之变得更加极限。
-   于是出来这么一个 [Programmer Dvorak Keyboard Layout][dvp_kaufmann], 
+   于是出来这么一个 [Programmer Dvorak Keyboard Layout][dvp_kaufmann],
    它包括dvorak 键盘的所有缺点, 但优化了程序中常用符号如
    <kbd>$</kbd><kbd>;</kbd><kbd>(</kbd><kbd>)</kbd><kbd>{</kbd><kbd>}</kbd><kbd>[</kbd><kbd>]</kbd><kbd>=</kbd> 等，
    用来 coding 巨爽。
@@ -53,7 +60,7 @@
 3. 纵小众，也是世界第二大键盘布局群体：
 
     ![Qwerty-Dvorak.PNG](http://gnat.qiniudn.com/homework/qwerty-dvorak.png)
-    
+
 4. 键盘是自己用的，换了布局你打出来的也不是火星文
 5. Neo，不能更赞
 
@@ -128,7 +135,7 @@
 #### Python
 
 ![Python - qwerty](http://gnat-tang-archive.qiniudn.com/ea.python_qwerty.png)
- 
+
 ![Python - dvp](http://gnat-tang-archive.qiniudn.com/eb.python_dvp.png)
 
 ![Python - dvpe](http://gnat-tang-shared-image.qiniudn.com/dvpe0.2_python.png)
@@ -138,7 +145,7 @@
     - dvpe 效果比 dvp 稍好。
 
 [pa7]: https://github.com/pa7/Keyboard-Heatmap
-[myheatmap]: https://github.com/district10/Keyboard-Heatmap 
+[myheatmap]: https://github.com/district10/Keyboard-Heatmap
 [heatmap_down]: https://github.com/district10/Keyboard-Heatmap/archive/master.zip
 [illus]: http://gnat-tang-archive.qiniudn.com/tool.png
 [doc_gnu]: http://www.gnu.org/software/octave/doc/interpreter/
@@ -146,13 +153,13 @@
 [doc_wood]: http://www.gutenberg.org/cache/epub/12299/pg12299.txt
 [doc_giada]: http://www.giadamusic.com/download
 [qiniu_giada]: http://gnat-tang-shared-image.qiniudn.com/giada_whole.txt
-[geo_python]: http://jianshu.io/p/a710e7656ddb 
+[geo_python]: http://jianshu.io/p/a710e7656ddb
 [qiniu_geo]: http://gnat-tang-archive.qiniudn.com/geoprocessing_with_python_whole.txt
 
 ### How To Get It?
 
 1. **For windows Users**
-    - I made one by [Windows Keyboard Layout Creator 1.4][kl_creator], 
+    - I made one by [Windows Keyboard Layout Creator 1.4][kl_creator],
     - Download my keyboard layout installer here: [**dvpe0.3 for windows (installation guide inside)**][dvpe_win]。
     - 最近用 AHK 脚本重写了一个，效果出奇地好：<https://github.com/district10/neo_keyboard_layout/blob/master/neo4win/neo.ahk>
 - [**For Linux Users**][dvpe_linux]
@@ -168,23 +175,23 @@
 2. 刚看 [Sacha Chua][sacha] [**采访 Xah Lee**][sacha-xah]，Sacha 说：
 
     > "it's funny that how the keyboard influences how we work" , "dvorak" blah blah blah,
-    > "the third level of the neo layout, apparently is really good for programming. 
+    > "the third level of the neo layout, apparently is really good for programming.
     > Eh, more layout, eh, and more code. Oh, back to Emacs"（20：10）
-    
+
 3. 为了更好的输入中文，做了单字输入法：[gat][gat]。暂时只能在 Emacs 里使用。`2014-04-27`
-4. [dvpe0.3][dvpe] 发布 (a.k.a. neo-extended dvpe)。`2014-03-18` 
+4. [dvpe0.3][dvpe] 发布 (a.k.a. neo-extended dvpe)。`2014-03-18`
    也支持 qwerty 和 programmer dvorak 布局 (Level 3 一致)
 
     ![Level 1][level1]
-    
+
     ![Level 2][level2]
-    
+
     ![Level 3][level3]
 
 Koan
 ----
 
-> Steve Yegge，Sacha Chua 和 Lee Xah（李杀）都是 dvorak 粉丝啊。   
+> Steve Yegge，Sacha Chua 和 Lee Xah（李杀）都是 dvorak 粉丝啊。
 
 [outofdate]: http://gnat-tang-shared-image.qiniudn.com/dvpe0.2.jpg
 [sacha]: http://sachachua.com

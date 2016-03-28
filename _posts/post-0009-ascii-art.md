@@ -1,6 +1,11 @@
-% ASCII Art
-% TANG ZhiXiong
-% 2014-02-08
+---
+title: ASCII Art
+date: 2014-02-08
+keywords:
+    - ascii art
+tags:
+    - ascii art
+...
 
 ASCII Art
 =========

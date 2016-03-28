@@ -1,20 +1,26 @@
-% Kaggle
-% TANG ZhiXiong
-% 2016-03-07
+---
+title: Kaggle
+date: 2016-03-07
+key-words:
+    - key
+tags:
+    - tag
+cssfile:
+    - font-awesome.min.css
+after-before: |
+    <style>
+    .tzx-tabs ul li a:hover {
+        border-bottom: none;
+    }
+    pre {
+        font-size: 80%;
+    }
+    </style>
+before-after:
+...
 
 Kaggle
 ======
-
-<link rel="stylesheet" href="jquery-ui.css">
-<link rel="stylesheet" href="font-awesome.min.css">
-<style>
-.tzx-tabs ul li a:hover {
-    border-bottom: none;
-}
-pre {
-    font-size: 80%;
-}
-</style>
 
 <div class="tzx-tabs">
 * [Kaggle Intro](#p0line20)
@@ -155,10 +161,3 @@ Refs
 
 ---
 
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="jquery-ui.min.js"></script>
-<script>
-$(function() {
-    $( ".tzx-tabs" ).tabs();
-});
-</script>

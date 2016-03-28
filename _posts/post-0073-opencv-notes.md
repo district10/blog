@@ -1,6 +1,12 @@
-% OpenCV Notes
-% TANG ZhiXiong
-% 2015-12-05
+---
+title: OpenCV Notes
+date: 2015-12-05
+key-words:
+tags:
+    - opencv
+    - note
+    - code
+...
 
 OpenCV Notes
 ============
@@ -143,7 +149,7 @@ mean-shift,
 
 delaunay, voronoi tesselation,
 
-Lucas-Kanade, 
+Lucas-Kanade,
 cvCalcOpticalFlowPyrLK()
 
 

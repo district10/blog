@@ -1,6 +1,13 @@
-% 软件开发者路线图
-% TANG ZhiXiong
-% 2015-12-18
+---
+title: 软件开发者路线图
+date: 2015-12-18
+key-words:
+    - prenticeship
+tags:
+    - prenticeship
+    - programming
+    - philosophy
+...
 
 软件开发者路线图
 ================

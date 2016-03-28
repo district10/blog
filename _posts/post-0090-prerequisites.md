@@ -1,6 +1,13 @@
-% 背景知识的重要性
-% TANG ZhiXiong
-% 2016-03-18
+---
+title: 背景知识的重要性
+date: 2016-03-18
+key-words:
+tags:
+    - commen sense
+    - prerequisite
+    - movie
+    - presentation
+...
 
 背景知识的重要性
 ================

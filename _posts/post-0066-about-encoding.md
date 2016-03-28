@@ -1,6 +1,11 @@
-% All About Encoding
-% TANG ZhiXiong
-% 2015-11-19
+---
+title: All About Encoding
+date: 2015-11-19
+keywords:
+tags:
+    - encoding
+    - utf-8
+...
 
 All About Encoding
 ==================
@@ -9,12 +14,12 @@ All About Encoding
 
 一定要看这幅图：
 
-![](https://upload.wikimedia.org/wikipedia/commons/e/e0/ASCII_Code_Chart-Quick_ref_card.png)
+![from wikipedia](http://whudoc.qiniudn.com/ascii.png)
 
 这简直诠释了 ASCII 的哲学。
 
 ```plain
-Dec Hex    Dec Hex    Dec Hex  Dec Hex  Dec Hex  Dec Hex   Dec Hex   Dec Hex  
+Dec Hex    Dec Hex    Dec Hex  Dec Hex  Dec Hex  Dec Hex   Dec Hex   Dec Hex
   0 00 NUL  16 10 DLE  32 20    48 30 0  64 40 @  80 50 P   96 60 `  112 70 p
   1 01 SOH  17 11 DC1  33 21 !  49 31 1  65 41 A  81 51 Q   97 61 a  113 71 q
   2 02 STX  18 12 DC2  34 22 "  50 32 2  66 42 B  82 52 R   98 62 b  114 72 r
@@ -33,19 +38,12 @@ Dec Hex    Dec Hex    Dec Hex  Dec Hex  Dec Hex  Dec Hex   Dec Hex   Dec Hex
  15 0F SI   31 1F US   47 2F /  63 3F ?  79 4F O  95 5F _  111 6F o  127 7F DEL
 ```
 
-
 ```plain
 high  low bits
 bits  0000 0001 0010 0011 0100 0101 0110 0111 1000 1001
  010        !    "    #    $    %    &    '    (    )
  011   0    1    2    3    4    5    6    7    8    9
 ```
-
-
-
-
-
-
 
 文件不多，用 Notepad++ 就可以。但如果……（總之命令行的好處就在這裏，人工畢竟太累。）
 
@@ -83,8 +81,7 @@ $ vim file3.txt
 :set fileencoding=utf-8
 
 # file format: unix, mac, dos
-:set ff=unix 
+:set ff=unix
 ```
 
-### 
 ![](http://imglf2.ph.126.net/DZGTG_n9WiDBU6fZ0u2d7w==/6631199707095070424.png)

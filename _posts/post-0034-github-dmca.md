@@ -1,6 +1,11 @@
-% GitHub 的 DMCA 干嘛的？
-% TANG ZhiXiong
-% 2015-09-29
+---
+title: GitHub 的 DMCA 干嘛的？
+date: 2015-09-29
+keywords:
+tags:
+    - github
+    - dmca
+...
 
 GitHub 的 DMCA 干嘛的？
 ======================

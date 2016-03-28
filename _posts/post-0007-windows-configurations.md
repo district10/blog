@@ -1,6 +1,13 @@
-% Windows 系统配置
-% TANG ZhiXiong
-% 2015-02-20
+---
+title: Windows 系统配置
+date: 2015-02-20
+keywords:
+    - windows
+    - configuration
+tags:
+    - windows
+    - configuration
+...
 
 Windows 系统配置
 ================

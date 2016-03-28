@@ -1,6 +1,10 @@
-% LMS 数据量
-% TANG ZhiXiong
-% 2015-09-01
+---
+title: LMS 数据量
+date: 2015-09-01
+key-words:
+tags:
+    - doc
+...
 
 LMS 数据量
 ==========

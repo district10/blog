@@ -1,19 +1,27 @@
-% Presentation
-% TANG ZhiXiong
-% 2016-02-24
+---
+title: Presentation
+date: 2016-02-24
+key-words:
+    - cvrs
+tags:
+    - cvrs
+    - presentation
+cssfile:
+    - asciinema-player.css
+jsfile:
+    - asciinema-player.js
+before-after: |
+    <script>
+        asciinema_player.core.CreatePlayer('player-container', 'demo.json');
+    </script>
+...
 
 Presentation
 ============
 
-<link rel="stylesheet" type="text/css" href="asciinema-player.css" />
-<script src="asciinema-player.js"></script>
-
 [asciinema - Record and share your terminal sessions, the right way](https://asciinema.org/)
 
 <div id="player-container"></div>
-<script>
-  asciinema_player.core.CreatePlayer('player-container', 'demo.json');
-</script>
 
 ## = R A M P =
 
@@ -83,6 +91,7 @@ d3.selectAll("circle").transition()
 $ cat file.txt | tr -d ',\n' | wc -c
 ```
 
+<small>
 ```cpp
 // TextureNotation::TN_Curve curve;
 curve.setAnchor(a)
@@ -113,6 +122,7 @@ class TextureNotation {
    // ...
 }
 ```
+</small>
 
 ```cpp
 Future<double> f =
@@ -291,43 +301,81 @@ $(output)/%.txt: $(input)/%.raw
 ## Slides
 
 ![](http://whudoc.qiniudn.com/ramp/幻灯片1.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片2.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片3.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片4.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片5.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片6.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片7.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片8.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片9.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片10.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片11.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片12.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片13.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片14.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片15.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片16.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片17.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片18.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片19.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片20.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片20.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片21.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片22.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片23.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片24.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片25.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片26.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片27.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片28.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片29.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片30.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片30.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片31.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片32.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片33.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片34.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片35.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片36.JPG)
+
 ![](http://whudoc.qiniudn.com/ramp/幻灯片37.JPG)
 
 ---

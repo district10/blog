@@ -1,8 +1,11 @@
 PANDOC_OPTIONS = -S -s --ascii \
+	--toc \
 	-c main.css \
 	-A footer.html \
 	--highlight-style pygments \
-	-f markdown+east_asian_line_breaks
+	--template template.html \
+	-f markdown+pandoc_title_block+east_asian_line_breaks \
+	metadata.yaml \
 
 MD   = $(wildcard *.md)
 HTML = $(MD:%.md=%.html)
@@ -15,6 +18,7 @@ NO_MATHJAX_PAGES = $(EXTRA_PAGES) notes.html index.html
 
 all: html
 html: $(HTML)
+$(HTML): template.html metadata.yaml
 
 # posts with bibs
 post-0051-spatial-gis.html: post-0051-spatial-gis.bib
@@ -23,7 +27,7 @@ post-0051-spatial-gis.bib:
 post-0051-spatial-gis.html: post-0051-spatial-gis.md
 	pandoc \
 		$(PANDOC_OPTIONS) \
-		--toc --mathjax \
+		--mathjax \
 		--bibliography $(patsubst %.md, %.bib, $<) \
 		$< \
 		-o $@
@@ -33,8 +37,15 @@ post-0050-gis-overall.bib:
 post-0050-gis-overall.html: post-0050-gis-overall.md
 	pandoc \
 		$(PANDOC_OPTIONS) \
-		--toc --mathjax \
+		--mathjax \
 		--bibliography $(patsubst %.md, %.bib, $<) \
+		$< \
+		-o $@
+
+# fontawsome as test
+post-0088-font-awesome.html: post-0088-font-awesome.md
+	pandoc \
+		$(PANDOC_OPTIONS) \
 		$< \
 		-o $@
 
@@ -42,7 +53,6 @@ post-0050-gis-overall.html: post-0050-gis-overall.md
 notes.html: notes.md
 	pandoc \
 		$(PANDOC_OPTIONS) \
-		--toc \
 		$< \
 		-o $@
 koans.html: koans.md

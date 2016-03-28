@@ -1,6 +1,12 @@
-% 遵守规则还是符合逻辑？
-% TANG ZhiXiong
-% 2014-09-03
+---
+title: 遵守规则还是符合逻辑？
+date: 2014-09-03
+key-words:
+tags:
+    - rule
+    - hack
+    - type setting
+...
 
 遵守规则还是符合逻辑？
 =====================
@@ -14,23 +20,23 @@
 ### Q
 
 > The answer to this question clearly explains the standard rule that
-> when you have multiple quoted paragraphs, 
-> **each** new paragraph starts with an opening quotation mark, 
+> when you have multiple quoted paragraphs,
+> **each** new paragraph starts with an opening quotation mark,
 > **but only the final** quoted paragraph has a closing quotation mark at its end.
-> 
+>
 > This [Wikipedia article on Quotation Marks](http://en.wikipedia.org/wiki/Quotation_mark) agrees:
-> 
+>
 >> Quotation marks are used for multiple-paragraph quotations
 >> in some cases, especially in narratives.
->> The convention in English is to give opening quotation marks 
->> to the first and each subsequent paragraph, 
->> using closing quotation marks only for the final paragraph of the quotation 
-> 
-> However, neither explains **why** this is the standard practice. 
-> What good does it do? 
-> What is it trying to avoid? 
-> What harm would occur if it were ignored and 
-> people put both opening and closing quotation marks 
+>> The convention in English is to give opening quotation marks
+>> to the first and each subsequent paragraph,
+>> using closing quotation marks only for the final paragraph of the quotation
+>
+> However, neither explains **why** this is the standard practice.
+> What good does it do?
+> What is it trying to avoid?
+> What harm would occur if it were ignored and
+> people put both opening and closing quotation marks
 > on each adjacent quoted paragraph?
 
 简单地中文解释：
@@ -112,12 +118,12 @@
     > Consider, for example, a sentence in a vi tutorial that looks like this:
     >
     >> Then delete a line from the file by typing “dd”.
-    > 
+    >
     > Standard usage would make this
     >
     >> Then delete a line from the file by typing “dd.”
     >
-    > but that would be very bad — because the reader would be prone to type the string d-d-dot, 
+    > but that would be very bad — because the reader would be prone to type the string d-d-dot,
     > and it happens that in vi, dot repeats the last command accepted. The net result would be to delete two lines!
 
 ---

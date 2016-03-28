@@ -1,6 +1,13 @@
-% 一些脚本（豆瓣，etc）
-% TANG ZhiXiong
-% 2015-11-16
+---
+title: 一些脚本（豆瓣，etc）
+date: 2015-11-16
+key-words:
+tags:
+    - douban
+    - script
+    - shell
+    - js
+...
 
 一些脚本（豆瓣，etc）
 ==================

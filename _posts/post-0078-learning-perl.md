@@ -1,6 +1,12 @@
-% Learning Perl
-% TANG ZhiXiong
-% 2015-12-17
+---
+title: Learning Perl
+date: 2015-12-17
+key-words:
+tags:
+    - perl
+    - code
+    - reading
+...
 
 Learning Perl
 =============

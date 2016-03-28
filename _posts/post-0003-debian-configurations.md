@@ -1,6 +1,11 @@
-% Debian Configurations
-% TANG ZhiXiong
-% 2015-02-19
+---
+title: Debian Configurations
+date: 2015-02-19
+keywords:
+    - debian
+tags:
+    - debian
+...
 
 Debian Configurations
 =====================

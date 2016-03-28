@@ -1,21 +1,17 @@
-% Pandoc User's Guide
-% John MacFarlane
-% 2006-10-17
-
 ---
-header-includes:
-  - <style>* {color: red;}</style>
+title: Pandoc User's Guide
+author: John MacFarlane
+date: 2006-10-17
+keywords:
+    - pandoc
+tags:
+    - pandoc
 ...
 
 Pandoc User's Guide
 ===================
 
-
 > 这是 [Pandoc 的官方文档](http://pandoc.org/README.html) 在本站的效果。
-> Pandoc 是本博客生成器的 Kernel[^pandoc]。
-> Pandoc 支持的 Markdown 秒杀其它种种。
-
-[^pandoc]: 没想到 Pandoc 有这么老的历史了。
 
 Synopsis
 ========

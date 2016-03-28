@@ -1,6 +1,13 @@
-% gPhoto2
-% TANG ZhiXiong
-% 2015-02-19
+---
+title: gPhoto2
+date: 2015-02-19
+keywords:
+    - gphoto2
+    - linux
+tags:
+    - gphoto2
+    - linux
+...
 
 gPhoto2
 =======

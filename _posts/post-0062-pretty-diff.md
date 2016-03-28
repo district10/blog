@@ -1,6 +1,11 @@
-% Pretty Diff | 听歌学英语
-% TANG ZhiXiong
-% 2015-11-18
+---
+title: Pretty Diff | 听歌学英语
+date: 2015-11-18
+key-words:
+tags:
+    - diff
+    - util
+...
 
 Pretty Diff | 听歌学英语
 ========================

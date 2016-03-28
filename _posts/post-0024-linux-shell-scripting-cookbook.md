@@ -1,6 +1,15 @@
-% Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook
-% TANG ZhiXiong
-% 2014-02-02
+---
+title: Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook
+date: 2014-02-02
+keywords:
+    - linux
+    - bash
+    - shell
+tags:
+    - linux
+    - bash
+    - shell
+...
 
 Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook
 =====================================================

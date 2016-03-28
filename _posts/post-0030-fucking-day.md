@@ -1,6 +1,11 @@
-% What a fucking day （记一篇 Essay）
-% TANG ZhiXiong
-% 2013-00-00
+---
+title: What a fucking day （记一篇 Essay）
+date: 2013-00-00
+keywords:
+    - koan
+tags:
+    - koan
+...
 
 What a fucking day （记一篇 Essay）
 ==================================

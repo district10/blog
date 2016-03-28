@@ -1,6 +1,12 @@
-% 膜拜大神
-% TANG ZhiXiong
-% 2015-12-13
+---
+title: 膜拜大神
+date: 2015-12-13
+key-words:
+tags:
+    - hacker
+    - pandoc
+    - type setting
+...
 
 膜拜大神
 ========
@@ -8,7 +14,7 @@
 用 Pandoc 的时候感到其一个地方不爽，于是去 Pandoc 的 GitHub 上提了一个 Issue：
 [Text Layout Requirements When Encountered East Asian Languages · Issue #2586 · jgm/pandoc](https://github.com/jgm/pandoc/issues/2586)
 
-<div class="paste"><small>
+<div class="tzx-paste"><small>
 
 > 更好地混排东亚文字和西文 | Text Layout Requirements When Encountered East Asian Languages
 
@@ -202,7 +208,5 @@ unwanted space when exporting org-mode to html."
     ![pangu-spacing 效果](http://whudoc.qiniudn.com/pangu-spacing.gif)
 
 <!--
-
 我要好好学习科学文化知识，像 jgm 一样精通数学和计算机。
-
 -->

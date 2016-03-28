@@ -1,6 +1,15 @@
-% 你就编译一个 cpp，用 CMake 还不如用 pkg-config 呢
-% TANG ZhiXiong
-% 2015-10-02
+---
+title: 你就编译一个 cpp，用 CMake 还不如用 pkg-config 呢
+date: 2015-10-02
+keywords:
+    - pkg-config
+    - c
+    - cpp
+tags:
+    - pkg-config
+    - c
+    - cpp
+...
 
 你就编译一个 cpp，用 CMake 还不如用 pkg-config 呢
 =================================================

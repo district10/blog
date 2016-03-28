@@ -1,8 +1,15 @@
-% Welcome to dvorak4tzx's Blog.
-% TANG ZhiXiong
-% 2015-11-17
+---
+title: Welcome to dvorak4tzx's Blog
+date: 2015-11-17
+keywords:
+    - dvorak4tzx
+    - TANG ZhiXiong
+tags:
+    - main page
+    - nice
+...
 
-<div class="slogan">Welcome to dvorak4tzx's Blog.</div>
+<div class="slogan">Welcome to dvorak4tzx's Blog</div>
 <p id="tzxslogan">
 Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序员中广受欢迎，尤其是那些 Emacs[^emacs] 用户，
 比如 Steve Yegge、Sacha Chua、李杀。我也用 dvorak，所以这个网站叫 dvorak4tzx。[^info]</p>
@@ -211,6 +218,4 @@ new autoComplete({
         document.getElementById('tzxsearchbox').value = '';
     }
 });
-</script>
-<script>
 </script>

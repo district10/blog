@@ -1,6 +1,13 @@
-% Introduction to Design Patterns in C++ with Qt
-% TANG ZhiXiong
-% 2015-12-08
+---
+title: Introduction to Design Patterns in C++ with Qt
+date: 2015-12-08
+key-words:
+tags:
+    - cpp
+    - qt
+    - design pattern
+    - code
+...
 
 Introduction to Design Patterns in C++ with Qt
 ==============================================
@@ -17,7 +24,7 @@ Free download available from [Introduction to Design Patterns in C++ with Qt, 2n
 
 ```cpp
 QVariant ObjectBrowserModel::headerData( const int section,
-                                         const Qt::Orientation orient, 
+                                         const Qt::Orientation orient,
                                          const int role) const
 {
     if ( orient != Qt::Horizontal || role != Qt::DisplayRole )

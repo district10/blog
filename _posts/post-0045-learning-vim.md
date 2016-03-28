@@ -1,6 +1,10 @@
-% Learning Vim | 学习 Vim 编辑器
-% TANG ZhiXiong
-% 2014-05-09
+---
+title: Learning Vim | 学习 Vim 编辑器
+date: 2014-05-09
+key-words:
+tags:
+    - vim
+...
 
 Learning Vim | 学习 Vim 编辑器
 ==============================
@@ -119,9 +123,9 @@ Chapter 2, Simple Editing
         you would edit a printed copy,                   as you read through a file, much as
         screen editors are very popular.                 you would edit a printed copy.
         ```
-        
+
     * `P`, `p`, `.`
-    
+
         ```plain
         With a screen editor you can                     With a screen editor you can
         scroll the page.                                 scroll the page.
@@ -130,9 +134,9 @@ Chapter 2, Simple Editing
                                                          With a screen editor you can
                                                          delete lines.
         ```
-    
+
     * `J`
-    
+
         ```
         With a                                           With a screen editor you can scroll the page, move the cursor
         screen editor
@@ -177,7 +181,7 @@ Chapter 3, Moving Around in a Hurry
     * `20G`, move to Line #20
     * ` `` `, move back (old position)
     * `''`, move back, but at the beginning of line
-    
+
         ```plain
         With a screen editor you can scroll the
         page, move1 move2 move4 move5 move6 move7 the cursor, dlete lines, insert

@@ -1,6 +1,13 @@
-% Learning jQuery
-% TANG ZhiXiong
-% 2015-12-25
+---
+title: Learning jQuery
+date: 2015-12-25
+key-words:
+    - jQuery
+tags:
+    - jquery
+    - front end
+    - js
+...
 
 Learning jQuery
 ================

@@ -1,6 +1,11 @@
-% 想起了 CASIO-82ES 调牛顿解方程
-% TANG ZhiXiong
-% 2014-04-15
+---
+title: 想起了 CASIO-82ES 调牛顿解方程
+date: 2014-04-15
+key-words:
+tags:
+    - casio
+    - hack
+...
 
 想起了 CASIO-82ES 调牛顿解方程
 ==============================

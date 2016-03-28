@@ -1,6 +1,11 @@
-% 100 Things Every Designer Needs to Know About People
-% TANG ZhiXiong
-% 2016-01-11
+---
+title: 100 Things Every Designer Needs to Know About People
+date: 2016-01-11
+key-words:
+    - design
+tags:
+    - design
+...
 
 100 Things Every Designer Needs to Know About People
 ====================================================
@@ -229,7 +234,7 @@ more likely to have problems with color vision than women.
     less of the reason, some color-blind individuals can see camouflage better than those
     who have full-color vision.
 
-takeaways 
+takeaways
 
 Check your images and Web sites with www.vischeck.com or colorfilter.wickline.org to
 see how they will look to someone who is color-blind.
@@ -473,7 +478,7 @@ When children under age five are shown items or pictures and then asked what the
 remember, they actually make fewer errors of inclusion than adults because their sche-
 mata are not as well formed.
 
-takeaways 
+takeaways
 
 Eliminate memory load whenever possible. Many user interface design guidelines and
 interface features have evolved over the years to mitigate issues with human memory.
@@ -490,7 +495,7 @@ information than recall it from memory.
     + You can’t remember much before the age of three.
     + You can remember things that you see (visual memory) better than words.
 
-- People sleep and dream so we will remember   
+- People sleep and dream so we will remember
 - Why rhymes are easier to remember
 
 takeaways
@@ -530,7 +535,7 @@ Where R is memory retention, S is the relative strength of memory, and t is time
 The formula results in a graph that looks like Figure 25.1. It’s called the Forgetting Curve,
 
 
-takeaways 
+takeaways
 
 People are always going to forget.
 What people forget is not a conscious decision.

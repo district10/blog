@@ -1,6 +1,12 @@
-% 我是一只 IT 小小鸟
-% TANG ZhiXiong
-% 2014-06-07
+---
+title: 我是一只 IT 小小鸟
+date: 2014-06-07
+keywords:
+    - key
+tags:
+    - reading
+    - phylosophy
+...
 
 我是一只 IT 小小鸟
 ==================

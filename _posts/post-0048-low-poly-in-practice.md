@@ -1,6 +1,11 @@
-% 设计领域新风潮：Low Poly 风格
-% TANG ZhiXiong
-% 2015-11-10
+---
+title: 设计领域新风潮：Low Poly 风格
+date: 2015-11-10
+key-words:
+tags:
+    - paper
+    - design
+...
 
 设计领域新风潮：Low Poly 风格
 =============================
@@ -97,9 +102,9 @@ which may produce high PSNR
 
 ![](http://gnat.qiniudn.com/pics/low-poly.png)
 
-#. Constrained edge feature 
+#. Constrained edge feature
     i. `Edge Ddrawing method` + `Canny edge detector` &rarr; produce high-quality edge segments (clean, well-localized and one-pixel wide)
-    #. a `polygon approximation algorithm` (classical Douglas-Peucker algorithm) &rarr; simplify the edges and leave the key points only 
+    #. a `polygon approximation algorithm` (classical Douglas-Peucker algorithm) &rarr; simplify the edges and leave the key points only
     #. If an edge is longer than a minimum length, we slice it into two segments from its midpoint. We choose the minimum length same as the sampling interval $L_i$:
 
     $L_i = \eta (L_w+L_h)$
@@ -112,7 +117,7 @@ which may produce high PSNR
 
     ![(a) Original image, (b) the edge feature, (c) the simplified polygons and the constrained points][micky]
 
-    <!--      
+    <!--
     These simple but critical strategies guarantee the final
     image with clear feature edges and good visual effects.
     -->
@@ -120,7 +125,7 @@ which may produce high PSNR
 #. Sampling based on saliency
 
     use different sample densities between the saliency region and the background:
-    
+
     $$
     \begin{cases}
     N_s &=& \lambda (N - N_c ) \\
@@ -137,9 +142,9 @@ which may produce high PSNR
 
     ![bs-c] ![bs-d]
 
-    (a) Input image. 
-    (b) Saliency map. 
-    (c) Result with $\lambda$ = 0.2. 
+    (a) Input image.
+    (b) Saliency map.
+    (c) Result with $\lambda$ = 0.2.
     (d) Result with $\lambda$ = 0.8.
 
 #. Feature flow field
@@ -159,7 +164,7 @@ which may produce high PSNR
         \frac{255}{m}(1 - \operatorname{D}(x) \operatorname{mod}(m)), \text{else}
         \end{cases}$$
 
-        where 
+        where
           ~ $m$: controls the width of the lanes interval in the feature flow map. $m = \frac{L_i}{2}$ in our experiments
 
 #. Vertex optimization
@@ -171,7 +176,7 @@ which may produce high PSNR
         $$c = \frac{\sum_i w_i x_i}{\sum_i w_i}$$
 
         where
-          ~ $x_i$: denotes the pixels in the cell 
+          ~ $x_i$: denotes the pixels in the cell
           ~ $w_i$ the associated weight
 
        ![](http://gnat.qiniudn.com/lowpoly/center.png)

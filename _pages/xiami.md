@@ -1,6 +1,11 @@
-% Music | 乐音
-% TANG ZhiXiong
-% 2015-11-19
+---
+title: Music | 乐音
+date: 2015-11-19
+keywords:
+    - music
+tags:
+    - music
+...
 
 Music | 乐音
 ============

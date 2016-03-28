@@ -1,6 +1,10 @@
-% Get Things Done
-% TANG ZhiXiong
-% 2015-11-19
+---
+title: Get Things Done
+date: 2015-11-19
+key-words:
+tags:
+    - gtd
+...
 
 Get Things Done
 ===============

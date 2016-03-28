@@ -1,6 +1,13 @@
-% Learning HTML
-% TANG ZhiXiong
-% 2014-02-12
+---
+title: Learning HTML
+date: 2014-02-12
+keywords:
+    - html
+tags:
+    - html
+    - docs
+    - readings
+...
 
 Learning HTML
 =============

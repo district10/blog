@@ -1,6 +1,11 @@
-% Typing | 打字
-% TANG ZhiXiong
-% 2015-11-21
+---
+title: Typing | 打字
+date: 2015-11-21
+keywords:
+    - typing
+tags:
+    - typing
+...
 
 Typing | 打字
 =============

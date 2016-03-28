@@ -1,6 +1,13 @@
-% 什么是投影？
-% TANG ZhiXiong
-% 2015-12-08
+---
+title: 什么是投影？
+date: 2015-12-08
+key-words:
+tags:
+    - math
+    - linear algebra
+    - projection
+    - koan
+...
 
 什么是投影？
 ===========

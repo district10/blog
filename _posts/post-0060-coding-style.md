@@ -1,6 +1,12 @@
-% CVRS C++ Coding Style Guidelines
-% TANG ZhiXiong
-% 2015-08-06
+---
+title: CVRS C++ Coding Style Guidelines
+date: 2015-08-06
+key-words:
+tags:
+    - doc
+    - cpp
+    - coding style
+...
 
 CVRS C++ Coding Style Guidelines
 ================================
@@ -182,14 +188,14 @@ private:                                                   // <-- 先 private
 public:
     int getX( ) { return x; }                              // <-- 极其简单的函数，可以放在一行
     int getY( ) { return y; }
-    
+
     //! setting coordinate                                 // <-- 函数说明（这个函数，就不该放在一行）
     void setPoint( int a, int b )
     {
         x = a;
         y = b;
     }
-    
+
     //! calc distance from this point to another
     double distanceTo( Point &pt );                        // <-- 长的函数都放在 cpp 文件
 };

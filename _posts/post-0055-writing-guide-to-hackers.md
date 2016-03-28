@@ -1,6 +1,10 @@
-% 码字规范
-% TANG ZhiXiong
-% 2015-11-14
+---
+title: 码字规范
+date: 2015-11-14
+key-words:
+tags:
+    - rule
+...
 
 码字规范
 ========
@@ -99,7 +103,7 @@ Follow the master, follow the Tao, follow the Zen.
 
 在 Yihui 的 [博客][path-joke] 上看到：
 
-> Never use spaces (or other odd characters) in directory or file names. 
+> Never use spaces (or other odd characters) in directory or file names.
 > They make your teeth and hair fall out, start nuclear wars, and stop the trains running on time.
 > Stick to A-Z, a-z, 0-9, ".", "-", and "_" for best results.
 

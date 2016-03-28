@@ -1,6 +1,11 @@
-% Quotes | 言论
-% TANG ZhiXiong
-% 2015-12-10
+---
+title: Quotes | 言论
+date: 2015-12-10
+keywords:
+    - quotes
+tags:
+    - quotes
+...
 
 Quotes | 言论
 =============

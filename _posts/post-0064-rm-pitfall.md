@@ -1,6 +1,11 @@
-% 一个空格引发的惨剧（remix）
-% TANG ZhiXiong
-% 2015-11-19
+---
+title: 一个空格引发的惨剧（remix）
+date: 2015-11-19
+key-words:
+tags:
+    - remix
+    - linux
+...
 
 一个空格引发的惨剧（remix）
 ==========================
@@ -14,9 +19,9 @@
     让这个项目一下子成了全世界最瞩目的项目，这个 bug 的 fix 如下:
 
     ```
-    @@ -348,7 +348,7 @@ case "$DISTRO" in     
-    -  rm -rf /usr /lib/nvidia-current/xorg/xorg     
-    +  rm -rf /usr/lib/nvidia-current/xorg/xorg     
+    @@ -348,7 +348,7 @@ case "$DISTRO" in
+    -  rm -rf /usr /lib/nvidia-current/xorg/xorg
+    +  rm -rf /usr/lib/nvidia-current/xorg/xorg
     ```
 
     看明白了吗？空格。这个空格会导致什么样的问题呢？

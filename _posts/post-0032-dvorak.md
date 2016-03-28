@@ -1,6 +1,12 @@
-% Dvorak 键盘布局（演讲稿）
-% TANG ZhiXiong
-% 2013-00-00
+---
+title: Dvorak 键盘布局（演讲稿）
+date: 2013-00-00
+keywords:
+    - keyboard layout
+    - virtual reality
+tags:
+    - virtual reality
+...
 
 Dvorak 键盘布局（演讲稿）
 ========================

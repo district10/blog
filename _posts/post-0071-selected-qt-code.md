@@ -1,6 +1,11 @@
-% Selected Qt Code
-% TANG ZhiXiong
-% 2015-11-28
+---
+title: Selected Qt Code
+date: 2015-11-28
+key-words:
+tags:
+    - qt
+    - code
+...
 
 Selected Qt Code
 ================
@@ -390,13 +395,13 @@ void DragWidget::dragMoveEvent(QDragMoveEvent *event)
     m_animation->setEasingCurve(QEasingCurve::InOutSine);
     m_animation->setStartValue(0);
     m_animation->setEndValue(1);
-     
+
      // QGraphicsPixmapItem class provides a pixmap item that you can add to a QGraphicsScene. More...
     QGraphicsPixmapItem *bg = m_scene.addPixmap(QPixmap(":/background.jpg"));
     bg->setParentItem(parent);
     bg->setZValue(-1);
 
-    
+
     QGraphicsRectItem *block = m_scene.addRect(50, 300, sceneTextWidth, fh + 3);
 
        QGraphicsTextItem *text = m_scene.addText(sceneText, font);
@@ -619,7 +624,7 @@ setMouseTracking(true);
 // tracking is disabled (the default), the widget only receives mouse move
 // events when at least one mouse button is pressed while the mouse is being
 // moved. If mouse tracking is enabled, the widget receives mouse move events
-// even if no buttons are pressed.  
+// even if no buttons are pressed.
 // QWidget::event() is the main event handler and receives all the widget's
 // events. Normally, we recommend reimplementing one of the specialized event
 // handlers instead of this function. But here we want to catch the
@@ -666,7 +671,7 @@ QToolButton *SortingBox::createToolButton(const QString &toolTip,
     connect(button, SIGNAL(clicked()), this, member);
 
     return button;
-}                                     
+}
 
 void SortingBox::moveItemTo(const QPoint &pos)
 {
@@ -787,7 +792,7 @@ void Mouse::advance(int step)
     foreach (QGraphicsItem *item, dangerMice) {
         if (item == this)
             continue;
-        
+
         QLineF lineToMouse(QPointF(0, 0), mapFromItem(item, 0, 0));
         qreal angleToMouse = ::acos(lineToMouse.dx() / lineToMouse.length());
         if (lineToMouse.dy() < 0)
