@@ -1,15 +1,15 @@
-$(document).ready(function(){
+$( ".tzx-tabs" ).tabs();
 
-    $( ".tzx-tabs" ).tabs();
-
-    $("img").each(function(index){
-        var src = $(this).attr('src');
-        $(this).attr({
-            src: "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",
-            'data-src': src,
-            onload: "lzld(this)"
-        });
+$("img").each(function(index){
+    var src = $(this).attr('src');
+    $(this).attr({
+        src: "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",
+        'data-src': src,
+        onload: "lzld(this)"
     });
+});
+
+$(document).ready(function(){
 
     $('#showDisqus').on('click', function(){
         console.log('loading disqus...');

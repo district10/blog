@@ -31,7 +31,7 @@ Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序�
 
 <br/><div id="searchContainer">
 Search:<br>
-<input id="tzxsearchbox" type="text" name="tzxsearchbox" placeholder="type keywords in url/title/tag, e.g. 'post', 'vim', 'got'." style="width:100%;max-width:600px;outline:0">
+<input id="tzxsearchbox" type="text" name="tzxsearchbox" placeholder="type keywords in url/title/tag, e.g. 'vim', 'got', 'post'." style="width:100%;max-width:600px;outline:0">
 </div><br/>
 <div id="links"></div><hr>
 

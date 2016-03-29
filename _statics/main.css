@@ -675,3 +675,13 @@ body {
     // visibility: hidden;
     display: none;
 }
+
+#showDisqus { 
+    border-radius: 1em; 
+    padding: 1em;
+}
+#showDisqus:hover {
+    box-shadow:         0 0 25px 10px rgba(155, 155, 155, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(155, 155, 155, 0.5);
+    -moz-box-shadow:    0 0 25px 10px rgba(155, 155, 155, 0.5);
+}
