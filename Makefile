@@ -105,8 +105,10 @@ it:
 i: index
 index:
 	$(EDITOR) index.md
-k: koan
+koan: time
 koan:
+	$(EDITOR) $(DIR_PAGES)/koans.md
+k:
 	$(EDITOR) $(DIR_PAGES)/koans.md
 n: note
 note:

@@ -7,7 +7,7 @@ tags:
     - notes
 after-before: |
     <style>
-    p::before {
+    p#dummy::before {
       content: attr(data-foo) " ";
     }
     </style>
@@ -16,6 +16,25 @@ after-before: |
 Notes | 笔记
 ============
 
+`lsusb`{.bash}
+
+---
+
+[Child and Sibling Selectors | CSS-Tricks](https://css-tricks.com/child-and-sibling-selectors/)
+
+:   ```javascript
+    // method 1
+    $("p:has(img)")
+
+    // method 2
+    jQuery.parse.push(/^\s*(<)(\s*)(.*)$/);
+    jQuery.expr["<"] = jQuery.expr[":"].has;
+    jQuery('p < img')
+    ```
+
+    ref and see also
+
+      - [Selectors Level 3](https://www.w3.org/TR/css3-selectors/#selectors)
 [Open Link in a New Window | CSS-Tricks](https://css-tricks.com/snippets/html/open-link-in-a-new-window/)
 
 :   html
@@ -44,7 +63,8 @@ Notes | 笔记
     $('a:external').addClass('external');
 
     // technique 3
-    $('a:not([href^="http://your-website.com"]):not([href^="#"]):not([href^="/"])').addClass('external');
+    $('a:not([href^="http://your-website.com"]):not([href^="#"]):not([href^="/"])')
+      .addClass('external');
 
     // technique 4
     $('a').each(function() {
@@ -63,8 +83,15 @@ Notes | 笔记
     "every link that specifies target="_new" looks for and finds that window by
     name, and opens in it.
 
-    `<p data-foo="hello">world</p>`
-      ~ <p data-foo="hello">world</p>
+    ```css
+    p#dummy::before {
+      content: attr(data-foo) " ";
+    }
+    ```
+
+
+    `<p id="dummy" data-foo="hello">world</p>`
+      ~ <p id="dummy" data-foo="hello">world</p>
 
     refs
 
@@ -75,6 +102,7 @@ Notes | 笔记
 
 ---
 
+<div class="tzx-shy">
 本来想看一下 CMake 生成的 Makefile 学习一下 Makefile 的使用。结果……完全一头雾水。
 然后去看了一下 CMake 用来测试编译器的 C 和 C++ 代码，好牛逼！这里选两段秀秀：
 
@@ -122,6 +150,8 @@ Notes | 笔记
         }
         #endif
         ```
+
+</div>
 
 ---
 

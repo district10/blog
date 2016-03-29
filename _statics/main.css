@@ -1,15 +1,14 @@
 html {
-    // rgba(155, 155, 155, 0.5);
     font-size: 150%;
     font-family: TIBch, "Classic Grotesque W01", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 
 body {
+    width: 44em;
     margin: auto;
     padding-right: 1em;
     padding-left: 1em;
     padding-bottom: 120px;
-    width: 44em;
     border-left: 1px solid black;
     border-right: 1px solid black;
     color: black;
@@ -684,4 +683,10 @@ body {
     box-shadow:         0 0 25px 10px rgba(155, 155, 155, 0.5);
     -webkit-box-shadow: 0 0 25px 10px rgba(155, 155, 155, 0.5);
     -moz-box-shadow:    0 0 25px 10px rgba(155, 155, 155, 0.5);
+}
+
+.tzx-shy dd { display: none; }
+.tzx-shy dl { cursor: crosshair; }
+.tzx-shy dl:hover dd {
+  display: block;
 }

@@ -162,12 +162,12 @@ Search:<br>
 <script src="auto-complete.js"></script>
 <script src="blog-query.js"></script>
 <script>
-var link_prefix = tzx_link_prefix;
-if ( window.location.toString().startsWith('file') ) {
+;var link_prefix = tzx_link_prefix;
+;if ( window.location.toString().startsWith('file') ) {
     // link_prefix = window.location.toString().split('/index.html')[0];
 }
 
-function prependChild( p, c ) {
+;function prependChild( p, c ) {
     if( p.hasChildNodes() ){
         p.insertBefore( c, p.firstChild );
     } else {
@@ -175,7 +175,7 @@ function prependChild( p, c ) {
     }
 }
 
-new autoComplete({
+;new autoComplete({
     selector: 'input[name="tzxsearchbox"]',
     minChars: 1,
     source: function(term, suggest){

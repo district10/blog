@@ -5,12 +5,44 @@ keywords:
     - koans
 tags:
     - koans
+jsfile:
+    - moment.min.js
+after-before: |
+    <style>
+    code.tzx-timestamp { color: white; }
+    </style>
+before-after: |
+    <script>
+    $('.tzx-timestamp').each(function(index){
+        var _tss = $(this).innerHTML;
+        var ts = new Number( _tss );
+        var dt = moment(ts*1000);
+        var time = dt.format("YYYY/MM/DD HH:mm");
+        var pdt = dt.format("YYYY-MM-DD HH:mm:ss");
+        var tooltip = _tss + ': ' + pdt;
+        $(this).innerHTML = time;
+        $(this).attr( 'title', tooltip );
+        console.log($(this).innerHTML);
+    });
+    </script>
 ...
 
 Koans | 呓语
 ============
 
 <div class="koans">
+
+## `1459244417`{.tzx-timestamp} 关于 travis-ci 的 build
+
+刚才看到自己的 travis-ci 的一个 build 有一个多小时了！！！吓我一跳。后来发现原来是
+网掉了，网页上那个是本地的计时器显示的时间。实际上五分钟就编译好了。
+
+那个 spinner 其实也只是一个 spinner，而已。
+
+## `1459241516`{.tzx-timestamp} 发现 iPad 的一个 bug
+
+当你锁住 orientation 的时候，有些程序就不能通过向上滑出来关闭（貌似这些程序本身只能适应一种方向）。
+更好的方式应该是：不管程序是只能 landscape 还是只能 portrait，iOS 都能关闭他们。
 
 ## `1459071915`{.tzx-timestamp} 程序员的标记法真是赞赞的
 
@@ -2266,29 +2298,3 @@ Firefox: Blocked by Content Security Policy.
 这个……有点叼。我要好好学习以后破解 md5……
 
 </div>
-
----
-
-<style> code.tzx-timestamp { color: white; } </style>
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="jquery-ui.min.js"></script>
-<script type="text/javascript" src="moment.min.js"></script>
-<script>
-$(function() {
-    // $( ".tzx-tabs" ).tabs();
-
-    // reformat timestamp
-    var tss = document.getElementsByClassName('tzx-timestamp');
-    for ( var i = 0; i < tss.length; ++i ) {
-        var _tss = tss[i].innerHTML;
-        var ts = new Number( _tss );
-        var dt = moment(ts*1000);
-        var time = dt.format("YYYY/MM/DD HH:mm");
-        // var gdt = dt.format(); // global date time
-        var pdt = dt.format("YYYY-MM-DD HH:mm:ss"); // pretty date time
-        var tooltip = _tss + ': ' + pdt;
-        tss[i].innerHTML = time;
-        tss[i].setAttribute( 'title', tooltip );
-    }
-});
-</script>
