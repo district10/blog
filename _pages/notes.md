@@ -18,6 +18,10 @@ Notes | 笔记
 
 `lsusb`{.bash}
 
+[zenorocha/clipboard.js: Modern copy to clipboard. No Flash. Just 2kb](https://github.com/zenorocha/clipboard.js/)
+[chunksnbits/jquery-quickfit: A quick and dirty approach to fitting text into its surrounding container.](https://github.com/chunksnbits/jquery-quickfit)
+[Controlling Crawling and Indexing  |  Webmasters  |  Google Developers](https://developers.google.com/webmasters/control-crawl-index/)
+
 ---
 
 [Child and Sibling Selectors | CSS-Tricks](https://css-tricks.com/child-and-sibling-selectors/)

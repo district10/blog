@@ -30,7 +30,7 @@ from <http://www.chris.com/ascii/>
 
 ### 丘比特
 
-~~~tzx-plain
+```tzx-plain
                                (
                       .-'''-..' \                      _____           _____
             _______ .'       -   \                 ,ad8PPPP88b,     ,d88PPPP8ba,
@@ -48,11 +48,11 @@ from <http://www.chris.com/ascii/>
 O -'        .'''       .'                                     "8b d8"   Veilleux
           .'   .-'''''`      (__)))                            `888'
           'o-'           (  )mikey(__)))                         "
-~~~
+```
 
 ### Alien
 
-~~~tzx-plain
+```tzx-plain
                                \.   \.      __,-"-.__      ./   ./
                            \.   \`.  \`.-'"" _,="=._ ""`-.'/  .'/   ./
                             \`.  \_`-''      _,="=._      ``-'_/  .'/
@@ -70,13 +70,13 @@ O -'        .'''       .'                                     "8b d8"   Veilleux
                          /'               ` | | | | | '               `\
                                             ` | | | '
                                               ` | '
-~~~
+```
 
 ### Horse
 
 horse
 
-~~~tzx-plain
+```tzx-plain
                                                           ,   .
                                                       ___/J-._
                                                     -"   L    ~
@@ -113,7 +113,7 @@ horse
        d"`)8O'              -,, "-._                                   \ "-,
       ''-'`"                   ""-,_, "",                               L__ '-,
                                     "-j  \                                 L   \
-~~~
+```
 
 A：
 
@@ -123,7 +123,7 @@ B：
 
 > - 汗。。。
 
-~~~tzx-plain
+```tzx-plain
                                    .  ,
                                    |\/|
                                    bd "n.
@@ -134,6 +134,6 @@ B：
                                         H l     H |`'    -Row
                                         H [     H [
                                    ____//,]____//,]___
-~~~
+```
 
 [ascii-art]: http://en.wikipedia.org/wiki/ASCII_art

@@ -109,16 +109,6 @@ reads.html
 
     * [title](url) tags
 
-- [ ] 优化 CSS
-- [ ] 把自己原来的文章慢慢都放到这个 blog 上
-- [ ] ~~安利！~~
-- [ ] [zenorocha/clipboard.js: Modern copy to clipboard. No Flash. Just
-      2kb](https://github.com/zenorocha/clipboard.js/)
-- [ ] [chunksnbits/jquery-quickfit: A quick and dirty approach to fitting text
-      into its surrounding container.](https://github.com/chunksnbits/jquery-quickfit)
-- [ ] [Sitemap提交工具_站长资讯_百度站长平台](http://zhanzhang.baidu.com/wiki/44), sitemap.txt, sitemap.xml
-- [ ] [Controlling Crawling and Indexing  |  Webmasters  |  Google Developers](https://developers.google.com/webmasters/control-crawl-index/)
-
 % Reads | 斋读
 % TANG ZhiXiong
 % 2015-12-07
