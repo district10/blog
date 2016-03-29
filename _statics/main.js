@@ -28,13 +28,6 @@ $(document).ready(function(){
     var rawPath = 'https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/master';
     var basePath = 'https://github.com/district10/blog';
 
-    function show() {
-        var hides = document.getElementsByClassName('tzx');
-        if ( hides.length !== 0 ) {
-            hides[0].style.visibility = 'visible';
-        }
-    };
-
     function dvorak4tzx( pathParts ) {
         filename = pathParts[ pathParts.length - 1 ];
         basename = filename.split('.')[0];
@@ -53,47 +46,28 @@ $(document).ready(function(){
             rawPath += filename;
         } 
 
-        $('#ghraw').href = rawPath;
-        $('#ghpage').href = mdPath;
+        $('#ghraw').attr('href', rawPath);
+        $('#ghpage').attr('href', mdPath);
     };
 
     dvorak4tzx( pathStringList );
 
-    function appendSharpToHdrs( hdrs ) {
-        for ( var i = 0; i < hdrs.length; ++i ) {
-            var sharp = document.createElement( 'a' );
-            sharp.href = '#' + hdrs[i].id;
-            sharp.className = 'hdrRef';
-            // sharp.innerText = '#';
-            sharp.textContent = '#';
-            hdrs[i].appendChild( sharp );
-        }
-    };
-
-    function appendSharp() {
-        h1s = document.getElementsByTagName( 'h1' );
-        h2s = document.getElementsByTagName( 'h2' );
-        h3s = document.getElementsByTagName( 'h3' );
-        h4s = document.getElementsByTagName( 'h4' );
-        appendSharpToHdrs( h1s );
-        appendSharpToHdrs( h2s );
-        appendSharpToHdrs( h3s );
-        appendSharpToHdrs( h4s );
-    };
+    jQuery('h1,h2,h3,h4').each(function(index){
+        jQuery('<a>#</a>')
+          .addClass('hdrRef')
+          .attr('href', '#'+$(this).attr('id'))
+          .appendTo($(this));
+    });
 
     function getQueryStrings() { 
         var assoc  = {};
         var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
         var queryString = location.search.substring(1); 
         var keyValues = queryString.split('&'); 
-
         for(var i in keyValues) { 
             var key = keyValues[i].split('=');
-            if (key.length > 1) {
-                assoc[decode(key[0])] = decode(key[1]);
-            }
+            if (key.length > 1) { assoc[decode(key[0])] = decode(key[1]); }
         } 
-
         return assoc; 
     } 
 
@@ -127,5 +101,5 @@ $(document).ready(function(){
         }
     };
 
-    appendSharp();
+    // appendSharp();
 });

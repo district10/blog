@@ -11,6 +11,11 @@ cssfile:
 #    - csshake.min.css
     - font-awesome.min.css
 # after-before: |
+nav:
+    prev: |
+        [prev](prev.html)
+    next: |
+        [next](next.html)
 ...
 
 Font Awesome
@@ -142,3 +147,5 @@ shy
 
 :   very shy
 </div>
+
+ooo

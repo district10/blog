@@ -16,6 +16,348 @@ after-before: |
 Notes | 笔记
 ============
 
+[Space, Place and GIS – ButMan World](http://butman.club/notes/cyber/space-place-and-gis/)
+
+:   Determining latitude and longitude is a measurement problem, and like all
+    measurements these will contain a degree of uncertainty.
+
+    Neogeography (literally “new geography”) is the use of geographical
+    techniques and tools for personal and community activities or by a
+    non-expert group of users. Application domains of neogeography are
+    typically not formal or analytical.
+
+[Big Data, Human Dynamics and Space – Time GIS – ButMan World](http://butman.club/notes/cyber/big-data-human-dynamics-and-space-time-gis/)
+
+:   Moving bundle：感觉更多地强调事物的流动性，相比 Stationary~ 不同的是，
+    Moving~ 里的个体的更新更为迅速，多数情况下也是自发的。
+
+    Where is google？在不同国家的 google 搜索引擎上检索同一个关键字，得到的结果
+    是不尽相同的。随即引出在 virtual space 里的 object 无法用传统 GIS 的
+    reference system 进行描述和度量，传统 GIS 需要新的血液。
+
+[花生的别样人生 - 简书](http://www.jianshu.com/p/55dc2e0d192e)
+
+[RSS与三不主义](http://www.yinwang.org/blog-cn/2014/09/17/rss)
+
+:   可是有了 RSS 就不一样了，因为它转换了被动与主动的关系。本来读者是“主动”来看
+    我的博客，我是“被动”的，是不需要负责的。然而一旦有了 RSS，每一次发布却感觉
+    好像是我“主动”在推给他们看，是我很想让他们看一样，是要负责的。某些人取消关
+    注别人的微博时，口气总是好像觉得自己关注一个人，是给了他很大的面子一样，所
+    以他们用取消关注来表示他们的“惩罚”。这些人显然把自己看得太高贵了。
+
+[bocker/bocker at master · p8952/bocker](https://github.com/p8952/bocker)
+
+:   I can make no guarantees that it won't trash your system.
+
+    （代码整理过，只为更“好”地查看。）
+
+    ```bash
+    #!/usr/bin/env bash
+    set -o errexit -o nounset -o pipefail; shopt -s nullglob
+    btrfs_path='/var/bocker' && cgroups='cpu,cpuacct,memory';
+    [[ $# -gt 0 ]] && while [ "${1:0:2}" == '--' ]; do
+        OPTION=${1:2};
+        [[ $OPTION =~ = ]] && declare "BOCKER_${OPTION/=*/}=${OPTION/*=/}"
+                           || declare "BOCKER_${OPTION}=x";
+        shift;
+    done
+
+    function bocker_check() {
+        btrfs subvolume list "$btrfs_path" | grep -qw "$1" && echo 0 || echo 1
+    }
+
+    #HELP Create an image from a directory:\nBOCKER init <directory>
+    function bocker_init() {
+        uuid="img_$(shuf -i 42002-42254 -n 1)"
+        if [[ -d "$1" ]]; then
+            [[ "$(bocker_check "$uuid")" == 0 ]] && bocker_run "$@"
+            btrfs subvolume create "$btrfs_path/$uuid" > /dev/null
+            cp -rf --reflink=auto "$1"/* "$btrfs_path/$uuid" > /dev/null
+            [[ ! -f "$btrfs_path/$uuid"/img.source ]] \
+                    && echo "$1" > "$btrfs_path/$uuid"/img.source
+            echo "Created: $uuid"
+        else
+            echo "No directory named '$1' exists"
+        fi
+    }
+
+    #HELP Pull an image from Docker Hub:\nBOCKER pull <name> <tag>
+    function bocker_pull() {
+        token="$(\
+                    curl -sL -o /dev/null -D- \
+                        -H 'X-Docker-Token: true' \
+                        "https://index.docker.io/v1/repositories/$1/images" \
+                | tr -d '\r' \
+                | awk -F ': *' '$1 == "X-Docker-Token" { print $2 }'        )"
+        registry='https://registry-1.docker.io/v1'
+        id="$(\
+                    curl -sL -H "Authorization: Token $token" \
+                        "$registry/repositories/$1/tags/$2" \
+                    | sed 's/"//g'                              )"
+        [[ "${#id}" -ne 64 ]] && echo "No image named '$1:$2' exists" && exit 1
+        ancestry="$(\
+                        curl -sL -H "Authorization: Token $token" \
+                            "$registry/images/$id/ancestry"         )"
+        IFS=',' && ancestry=(${ancestry//[\[\] \"]/}) && IFS=' \n\t';
+        tmp_uuid="$(uuidgen)" && mkdir /tmp/"$tmp_uuid"
+        for id in "${ancestry[@]}"; do
+            curl -#L -H "Authorization: Token $token" \
+                    "$registry/images/$id/layer" \
+                    -o /tmp/"$tmp_uuid"/layer.tar
+            tar xf /tmp/"$tmp_uuid"/layer.tar \
+                    -C /tmp/"$tmp_uuid" && rm /tmp/"$tmp_uuid"/layer.tar
+        done
+        echo "$1:$2" > /tmp/"$tmp_uuid"/img.source
+        bocker_init /tmp/"$tmp_uuid" && rm -rf /tmp/"$tmp_uuid"
+    }
+
+    #HELP Delete an image or container:\nBOCKER rm <image_id or container_id>
+    function bocker_rm() {
+        [[ "$(bocker_check "$1")" == 1 ]] && \
+        echo "No container named '$1' exists" && \
+        exit 1
+        btrfs subvolume delete "$btrfs_path/$1" \
+                > /dev/null
+        cgdelete -g "$cgroups:/$1" &> /dev/null || true
+        echo "Removed: $1"
+    }
+
+    function bocker_images() { #HELP List images:\nBOCKER images
+        echo -e "IMAGE_ID\t\tSOURCE"
+        for img in "$btrfs_path"/img_*; do
+            img=$(basename "$img")
+            echo -e "$img\t\t$(cat "$btrfs_path/$img/img.source")"
+        done
+    }
+
+    function bocker_ps() { #HELP List containers:\nBOCKER ps
+        echo -e "CONTAINER_ID\t\tCOMMAND"
+        for ps in "$btrfs_path"/ps_*; do
+            ps=$(basename "$ps")
+            echo -e "$ps\t\t$(cat "$btrfs_path/$ps/$ps.cmd")"
+        done
+    }
+
+    function bocker_run() { #HELP Create a container:\nBOCKER run <image_id> <command>
+        uuid="ps_$(shuf -i 42002-42254 -n 1)"
+        [[ "$(bocker_check "$1")" == 1 ]] && echo "No image named '$1' exists" && exit 1
+        [[ "$(bocker_check "$uuid")" == 0 ]] && echo "UUID conflict, retrying..." && bocker_run "$@" && return
+        cmd="${@:2}" && ip="$(echo "${uuid: -3}" | sed 's/0//g')" && mac="${uuid: -3:1}:${uuid: -2}"
+        ip link add dev veth0_"$uuid" type veth peer name veth1_"$uuid"
+        ip link set dev veth0_"$uuid" up
+        ip link set veth0_"$uuid" master bridge0
+        ip netns add netns_"$uuid"
+        ip link set veth1_"$uuid" netns netns_"$uuid"
+        ip netns exec netns_"$uuid" ip link set dev lo up
+        ip netns exec netns_"$uuid" ip link set veth1_"$uuid" address 02:42:ac:11:00"$mac"
+        ip netns exec netns_"$uuid" ip addr add 10.0.0."$ip"/24 dev veth1_"$uuid"
+        ip netns exec netns_"$uuid" ip link set dev veth1_"$uuid" up
+        ip netns exec netns_"$uuid" ip route add default via 10.0.0.1
+        btrfs subvolume snapshot "$btrfs_path/$1" "$btrfs_path/$uuid" > /dev/null
+        echo 'nameserver 8.8.8.8' > "$btrfs_path/$uuid"/etc/resolv.conf
+        echo "$cmd" > "$btrfs_path/$uuid/$uuid.cmd"
+        cgcreate -g "$cgroups:/$uuid"
+        : "${BOCKER_CPU_SHARE:=512}" && cgset -r cpu.shares="$BOCKER_CPU_SHARE" "$uuid"
+        : "${BOCKER_MEM_LIMIT:=512}" && cgset -r memory.limit_in_bytes="$((BOCKER_MEM_LIMIT * 1000000))" "$uuid"
+        cgexec -g "$cgroups:$uuid" \
+            ip netns exec netns_"$uuid" \
+            unshare -fmuip --mount-proc \
+            chroot "$btrfs_path/$uuid" \
+            /bin/sh -c "/bin/mount -t proc proc /proc && $cmd" \
+            2>&1 | tee "$btrfs_path/$uuid/$uuid.log" || true
+        ip link del dev veth0_"$uuid"
+        ip netns del netns_"$uuid"
+    }
+
+    function bocker_exec() { #HELP Execute a command in a running container:\nBOCKER exec <container_id> <command>
+        [[ "$(bocker_check "$1")" == 1 ]] && echo "No container named '$1' exists" && exit 1
+        cid="$(ps o ppid,pid | grep "^$(ps o pid,cmd | grep -E "^\ *[0-9]+ unshare.*$1" | awk '{print $1}')" | awk '{print $2}')"
+        [[ ! "$cid" =~ ^\ *[0-9]+$ ]] && echo "Container '$1' exists but is not running" && exit 1
+        nsenter -t "$cid" -m -u -i -n -p chroot "$btrfs_path/$1" "${@:2}"
+    }
+
+    function bocker_logs() { #HELP View logs from a container:\nBOCKER logs <container_id>
+        [[ "$(bocker_check "$1")" == 1 ]] && echo "No container named '$1' exists" && exit 1
+        cat "$btrfs_path/$1/$1.log"
+    }
+
+    function bocker_commit() { #HELP Commit a container to an image:\nBOCKER commit <container_id> <image_id>
+        [[ "$(bocker_check "$1")" == 1 ]] && echo "No container named '$1' exists" && exit 1
+        [[ "$(bocker_check "$2")" == 1 ]] && echo "No image named '$2' exists" && exit 1
+        bocker_rm "$2" && btrfs subvolume snapshot "$btrfs_path/$1" "$btrfs_path/$2" > /dev/null
+        echo "Created: $2"
+    }
+
+    function bocker_help() { #HELP Display this message:\nBOCKER help
+        sed -n "s/^.*#HELP\\s//p;" < "$1" | sed "s/\\\\n/\n\t/g;s/$/\n/;s!BOCKER!${1/!/\\!}!g"
+    }
+
+    [[ -z "${1-}" ]] && bocker_help "$0"
+    case $1 in
+        pull|init|rm|images|ps|run|exec|logs|commit) bocker_"$1" "${@:2}" ;;
+        *) bocker_help "$0" ;;
+    esac
+    ```
+
+[Kata (programming) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Kata_(programming))
+
+:   A code kata is an exercise in programming which helps a programmer hone
+    their skills through practice and repetition. The term was probably first
+    coined by Dave Thomas, co-author of the book The Pragmatic Programmer,[1]
+    in a bow to the Japanese concept of kata in the martial arts. As of October
+    2011, Dave Thomas (*The Pragmatic Programmer* 的作者之一) has published 21
+    different katas.
+
+    You need to try it as many times as it takes, and be comfortable making
+    mistakes. You need to look for feedback each time so you can work to
+    improve.
+
+    Our suggestions for doing the kata are:
+
+      -  find a place and time where you won’t be interrupted
+      -  focus on the essential elements of the kata
+      -  remember to look for feedback for every major decision
+      -  if it helps, keep a journal of your progress
+      -  have discussion groups with other developers, but try to have completed the kata first
+
+    There are no right or wrong answers in these kata: the benefit comes from
+    the process, not from the result.
+
+    Materials
+
+      - [Train with Programming Challenges/Kata | Codewars](http://www.codewars.com/)
+      - [cyber-dojo.org](http://cyber-dojo.org)<!--91D2BA-->
+      - [Home | Codewars](http://www.codewars.com/dashboard)<!--use github oauth2-->
+
+    [Kata01: Supermarket Pricing - CodeKata](http://codekata.com/kata/kata01-supermarket-pricing/)
+
+    :   有几点很有意思：
+
+          - 单位不同如何处理？
+          - 买一送一如何处理？
+          - 钱有分数吗？还是用小数？
+          - 什么时候忽略零头？（rounding）
+          - 价钱（price）和费用（cost）用一个东西来表示？
+
+        好像确实有很多东西值得考虑，适合洗澡的时候想。
+
+        I suggest that it might take a couple of weeks worth of showers to
+        exhaust the main alternatives.
+
+        Goals
+          ~ 1. The goal of this kata is to practice **a looser style of experimental modelling**.
+          ~ 2. Look for as many **different ways** of handling the issues as possible.
+          ~ 3. Consider the various **tradeoffs** of each.
+          ~ 4. What techniques are **best** for exploring these models?
+          ~ 5. For recording them? How can you **validate** a model is reasonable?
+
+    [Kata02: Karate Chop - CodeKata](http://codekata.com/kata/kata02-karate-chop/)
+
+    :   A binary chop (sometimes called the more prosaic (`[prə'zeɪk]`, 乏味的)
+        **binary search**) finds the position of value in a sorted array of values.
+
+[TCP连接的建立和终止过程 - 辛未羊的博客](http://panqiincs.github.io/blog/2015/10/17/establishment-and-termination-of-tcp-connection/)
+
+:   Richard Stevens 先生在 [UNP2e (UNIX 网络编程 卷 1：套接字联网 API)](http://book.douban.com/subject/4859464/) 的前言中写道：
+
+    > I have found when teaching network programming that about 80% of all
+    > network programming problems have nothing to do with network programming,
+    > per se. That is, the problems are not with the API functions such as
+    > accept and select, but the problems arise from **a lack of understanding of
+    > the underlying network protocols**. For example, I have found that once a
+    > student understands TCP's **three-way handshake and four-packet connection termination**,
+    > many network programming problems are immediately understood.
+
+    下面是我的 remix。
+
+    **TCP 的三路握手**
+
+    肯定是客户端先表白。
+
+    1. 客户端对服务器：我要和你发展关系。
+    2. 服务器对客户端：你可以和我发展关系。
+    3. 客户端对服务器：在一起~
+
+    于是三次握手后，他们在一起了（连接建立了）。
+
+    ![](http://www.tcpipguide.com/free/diagrams/tcpopen3way.png)
+
+    **TCP 的四次挥手**
+
+    可以是客户端说分手，也可以是客户端。这里以客户端作为负心汉。
+
+    1. 客户端对服务器：恋爱谈完了，我们分手把。
+    2. 服务器对客户端：可以的。（如果还有财务纠纷那就先还钱，不让分手的。）
+    3. 服务器对客户端：那就分。
+    4. 客户端对服务器：恩。
+
+    ![](http://www.tcpipguide.com/free/diagrams/tcpclose.png)
+
+---
+
+at this point in the history.
+
+Generals in the Editor War may note that Emacs users are 35.2% likely to also
+hack on Vim, while Vim users are only 17.3% likely to hack on Emacs, so there's
+that.
+
+The Google Chrome Extension is available on the Chrome Web Store and if, for
+any reason, you want to download directly, it's also available here
+
+There actually is a target on the root Makefile called chrome but it won't
+work, because the private key is, well... private.
+
+But you can still build the front end and load the unpacked extensions. Here is how:
+
+  - Run $ cd front && make chrome ( or make chrome.watch if you want to watch for changes)
+  - Then go to chrome:extension
+  - click on Load unpacked extension... (make sure Developer mode is checked on the top right of the page)
+  - Select GithubPulse/chrome_extension
+  - Done!
+
+[git log - View the change history of a file using Git versioning - Stack Overflow](http://stackoverflow.com/questions/278192/view-the-change-history-of-a-file-using-git-versioning)
+
+:   ```bash
+    git log -- [filename]
+    gitk [filename]
+    ```
+
+    Was he looking for a command line tool? "right click -> show history"
+    certainly doesn't imply it.
+
+---
+
+[javascript - Creating a div element in jQuery - Stack Overflow](http://stackoverflow.com/questions/867916/creating-a-div-element-in-jquery)
+
+:   ```javascript
+    $("#foo").append("<div>hello world</div>")
+
+    jQuery('<div/>', {
+        id: 'foo',
+        href: 'http://google.com',
+        title: 'Become a Googler',
+        rel: 'external',
+        text: 'Go to Google!'
+    }).appendTo('#mySelector');
+
+    d = document.createElement('div');
+    $(d).addClass(classname)
+        .html(text)
+        .appendTo($("#myDiv")) //main div
+    .click(function () {
+        $(this).remove();
+    })
+        .hide()
+        .slideToggle(300)
+        .delay(2500)
+        .slideToggle(300)
+        .queue(function () {
+        $(this).remove();
+    });
+    ```
+
+---
+
 `lsusb`{.bash}
 
 [zenorocha/clipboard.js: Modern copy to clipboard. No Flash. Just 2kb](https://github.com/zenorocha/clipboard.js/)

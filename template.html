@@ -73,6 +73,18 @@ $for(tags)$
 <li><a class="tzx-tag" href="tags.html/#$tags$">$tags$</a></li>
 $endfor$
 </ul>
+
+$endif$
+$if(nav)$
+<div><ul class="tzx-nav">
+$if(nav.prev)$
+    <li class="tzx-nav-prev">$nav.prev$</li>
+$endif$
+$if(nav.next)$
+    <li class="tzx-nav-next">$nav.next$</li>
+$endif$
+</ul></div>
+
 $endif$
 $for(tzx-jsfile)$
 <script type="text/javascript" src="$tzx-jsfile$"></script>

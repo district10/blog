@@ -14,15 +14,14 @@ after-before: |
 before-after: |
     <script>
     $('.tzx-timestamp').each(function(index){
-        var _tss = $(this).innerHTML;
+        var _tss = $(this).textContent;
         var ts = new Number( _tss );
         var dt = moment(ts*1000);
         var time = dt.format("YYYY/MM/DD HH:mm");
         var pdt = dt.format("YYYY-MM-DD HH:mm:ss");
         var tooltip = _tss + ': ' + pdt;
-        $(this).innerHTML = time;
+        $(this).textContent = time;
         $(this).attr( 'title', tooltip );
-        console.log($(this).innerHTML);
     });
     </script>
 ...
@@ -532,19 +531,21 @@ Org-mode Format!](https://github.com/kuanyui/copy-as-org-mode)
 
 不过启动后，就特别牛逼特别赞了。尤其是刚才用的 `org-sort-entries` 按照字母排序不要太赞！
 
-1455603432: Git 你也坑我？！
+## `1455603432`{.tzx-timestamp}: Git 你也坑我？！
 
 `git checkout --orphan <new-branch-name>`{.bash} 会把当前的工作直接清空……
 等你 checkout 回来就发现自己到了知识的荒原。居然不提醒！！！
 
 如果是 checkout，确实提醒了：
 
+<small>
 ```plain
 error: Your local changes to the following files would be overwritten by checkout:
 	README.md
 Please, commit your changes or stash them before you can switch branches.
 Aborting
 ```
+</small>
 
 ## `1454919178`{.tzx-timestamp} 人生何处不相逢
 
@@ -773,7 +774,7 @@ iPhone 的价值当然不能用原材料算。在它的设计、制造、运输�
 
 ![](http://whudoc.qiniudn.com/shit-scripting.jpg)
 
-真是丑死了！外，为什么小写字母要被人发明出来？全用大写不好吗？
+真是丑死了！外，为什么小写字母要被人发明出来？全用大写不好吗？（最开始，是只有大写字母的）
 就是因为小写字母有高低起伏，更够让人更快地辨识，这个蛋疼的手写体，
 把 p 上面加了那么丑一个“脑袋”。
 
@@ -908,16 +909,16 @@ Some of the reviewers complain that SICP doesn't teach the basics of OO design,
 and so on. In a sense they are right. The book doesn't directly tell you how to
 design and write an object-oriented program using the subset of object-oriented
 principles that show up in the syntax of Java or C++. Rather, the book tells
-you what those principles are, how they came to be selected as worthwhile, how
+you what those *principles* are, how they came to be selected as worthwhile, how
 they can be implemented from the ground up, and how a different combination of
 principles might be more appropriate for some particular problems. This
 approach requires you to understand the range of possibilities, and to think
-about trade-offs as you go through the design process. Programming is a craft
+about trade-offs as you go through the design process. *Programming is a craft*
 that is subject to frequent failure: many projects are started and abandoned
 because the designers do not have the flexibility, experience and understanding
 to come up with a suitable design and implementation. SICP gives you an
-approach that will succeed, but it is an approach based on principles and
-wisdom, not on a checklist. If you don't understand the principles, or if you
+approach that will succeed, but it is an approach based on *principles* and
+*wisdom*, not on a checklist. If you don't understand the principles, or if you
 are the kind of person who wants to be given a cookbook of what to do rather
 than to think creatively, or if you only want to work on problems that are
 pretty much like the problem you worked on last time, then this approach will
@@ -2117,9 +2118,9 @@ Even Visual Studio knows:
 
 ```cmake
 ## OSG
-find_package( OpenSceneGraph REQUIRED osgDB osgUtil osgViewer osgGA osgText osgFX osgQt )
-set( OpenSceneGraph_LIBS_Release ${OSG_LIBRARY} ${OPENTHREADS_LIBRARY} ${OSGDB_LIBRARY} ${OSGGA_LIBRARY}  ${OSGTEXT_LIBRARY} ${OSGUTIL_LIBRARY} ${OSGVIEWER_LIBRARY} ${OSGFX_LIBRARY} ${OSGQT_LIBRARY} )
-set( OpenSceneGraph_LIBS_Debug ${OSG_LIBRARY_DEBUG}  ${OPENTHREADS_LIBRARY_DEBUG} ${OSGDB_LIBRARY_DEBUG} ${OSGGA_LIBRARY_DEBUG} ${OSGTEXT_LIBRARY_DEBUG} ${OSGUTIL_LIBRARY_DEBUG} ${OSGVIEWER_LIBRARY_DEBUG} ${OSGFX_LIBRARY_DEBUG} ${OSGQT_LIBRARY_DEBUG} )
+find_package( OpenSceneGraph REQUIRED ... )
+set( OpenSceneGraph_LIBS_Release ${OSG_LIBRARY} ... )
+set( OpenSceneGraph_LIBS_Debug ${OSG_LIBRARY_DEBUG}  ... )
 ```
 
 我把这两个 set 的变量名改得简短了……然后它就找不到。话说上次也是类似的情况导致我
@@ -2128,6 +2129,9 @@ $HOME 路径下面文件被删了好几个。就是因为 Make 和 CMake 把没�
 
 上次的情况是 `rm -f $(PODIR)/*`{.bash}，因为 `PODIR` 没有设定，这个指令把我“家”
 都清空了。
+
+突然醒悟 C 语言里面的 `#define`{.c} 要求格式不能变，是多么合理的一个要求。
+JavaScript 里面的 `exports = function(){}` 也是不可以的。原因和 `define` 的类似。
 
 ## `1448044500`{.tzx-timestamp} A Man of Value
 
@@ -2193,17 +2197,20 @@ Albert Einstein:
 
 [威尔特·张伯伦_百度百科](http://baike.baidu.com/link?url=0r3zg8KYZhZ9kYM7WCaZ4XymrUCrBWSunooBrI3hYgRGot2aB286vheAMFQ3ZXFI)：
 
-> 张伯伦在自传《俯瞰》中用专门的一章讲述他的艳遇，他声称从 15 岁开始，他平均每
-> 天就和 1.2 个女人睡过觉。“人们也许认为我的品位不高，但信不信由你，几乎每个与
-> 我约会的女人，在普通男人眼里都会是一见钟情式的偶像。”张伯伦的很多好友都认为他
-> 具有一种诱人的魅力，他曾经在10天里和23个女人睡过觉。张伯伦尤其喜欢《生动的颜
-> 色》的一个片段：一个女人和她的女儿列出了一份还很长很长的名单上，都是那些同张
-> 伯伦睡过觉的女人的名字，而这对母女坦然地承认她们的名字也都在名单上。在后期张
-> 伯伦允许别人评价他的篮球弱点，却不容别人质疑他的性能力。
+:   有点……叼……
 
-同理，我允许别人说我编程慢，却不容别人质疑我的打字速度。
+    > 张伯伦 (Wilt Chamberlain) 在自传《俯瞰》中用专门的一章讲述他的艳遇，他声
+    > 称从 15 岁开始，他平均每天就和 1.2 个女人睡过觉。“人们也许认为我的品位不
+    > 高，但信不信由你，几乎每个与我约会的女人，在普通男人眼里都会是一见钟情式
+    > 的偶像。”张伯伦的很多好友都认为他具有一种诱人的魅力，他曾经在10天里和23个
+    > 女人睡过觉。张伯伦尤其喜欢《生动的颜色》的一个片段：一个女人和她的女儿列
+    > 出了一份还很长很长的名单上，都是那些同张伯伦睡过觉的女人的名字，而这对母
+    > 女坦然地承认她们的名字也都在名单上。在后期张伯伦允许别人评价他的篮球弱点，
+    > 却不容别人质疑他的性能力。
 
-![用 AHK 脚本配置了键盘布局，然后 keybr 可以用了，于是一试……我知道我还需要练习](http://gnat.qiniudn.com/pics/144752051.png)
+    同理，我允许别人说我编程慢，却不容别人质疑我的打字速度。
+
+    ![用 AHK 脚本配置了键盘布局，然后 keybr 可以用了，于是一试……我知道我还需要练习](http://gnat.qiniudn.com/pics/144752051.png)
 
 ## `1447489151`{.tzx-timestamp} 那些倔强又理性的人
 

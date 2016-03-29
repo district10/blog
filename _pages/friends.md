@@ -20,5 +20,5 @@ Friends | 友链
     + GitHub : [xuanxuanlau](https://github.com/xuanxuanlau)
     + [ButMan World – This world tonight is mine.](http://butman.club/)
 - panqi
-    + [panqiincs](http://github.com/panqiincs)
+    + GitHub: [panqiincs](http://github.com/panqiincs)
     + [辛未羊的博客](http://panqiincs.github.io/)

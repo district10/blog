@@ -1,3 +1,5 @@
+// best color: #9ddcff; 
+
 html {
     font-size: 150%;
     font-family: TIBch, "Classic Grotesque W01", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
@@ -171,6 +173,7 @@ caption {
     border-width: 1px 0px 0px 0px;
     border-style: solid;
     border-color: gray;
+    z-index: 10;
 }
 
 #footer:hover {
@@ -322,17 +325,35 @@ tr.head {
 }
 
 img {
-    -webkit-transition: -webkit-transform 0.4s ease;
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 0.4s;
-    -webkit-transition-timing-function: ease;
-    -webkit-transition-delay: initial;
-    -moz-transition: -moz-transform 0.4s ease;
-    -o-transition: -o-transform 0.4s ease;
     transition: transform 0.4s ease;
     transition: all 0.5s ease-in-out;
+
+    -webkit-transition: -webkit-transform 0.4s ease;
+    -moz-transition: -moz-transform 0.4s ease;
+    -o-transition: -o-transform 0.4s ease;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+
+    -webkit-transition-delay: initial;
+    -moz-transition-delay: initial;
+    -o-transition-delay: initial;
+
     -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+
     -transform-style: preserve-3d;
+
     z-index: 1;
     max-width: 95%;
 }
@@ -349,6 +370,7 @@ img {
 
 .figure img:hover {
     -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
 }
 
 p a img:hover {
@@ -507,9 +529,11 @@ div#TOC {
     border: solid 1px #ccc;
     margin-right: 0px;
     padding: 10px;
+
     box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
     -webkit-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
     -moz-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
+    -o-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
 }
 
 div#TOC:hover {
@@ -533,16 +557,16 @@ div#TOC:hover {
 }
 
 ::selection {
-    color: white;
+    color: #9ddcff;
     background: black;
 }
 ::-moz-selection {
-    color: white;
+    color: #9ddcff;
     background: black;
 }
 
-h1::selection { color: orange; }
-h1::-moz-selection { color: orange; }
+h1::selection { color: #9ddcff; }
+h1::-moz-selection { color: #9ddcff; }
 
 .tzx-paste, .tzx-hide {
     padding: 1em;
@@ -634,16 +658,27 @@ ul > li > ul > li > ul > li > ul >li > ul > li   { list-style-type: georgian; }
   /* For landscape layouts only */
     body {
         zoom: 1.2;
+
+        -webkit-transform: scale(1.2);
         -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+
+        -webkit-transform-origin: 0 0;
         -moz-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
     }
 }
 @media only screen and (min-width:1440px){
     /* styles for browsers larger than 1440px; */
     body {
         zoom: 1.5;
+        -webkit-transform: scale(1.5);
         -moz-transform: scale(1.5);
+        -o-transform: scale(1.5);
+
+        -webkit-transform-origin: 0 0;
         -moz-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
     }
 }
 
@@ -683,10 +718,47 @@ body {
     box-shadow:         0 0 25px 10px rgba(155, 155, 155, 0.5);
     -webkit-box-shadow: 0 0 25px 10px rgba(155, 155, 155, 0.5);
     -moz-box-shadow:    0 0 25px 10px rgba(155, 155, 155, 0.5);
+    -o-box-shadow:      0 0 25px 10px rgba(155, 155, 155, 0.5);
 }
 
 .tzx-shy dd { display: none; }
 .tzx-shy dl { cursor: crosshair; }
 .tzx-shy dl:hover dd {
-  display: block;
+    display: block;
+}
+
+.tzx-nav {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.tzx-nav li.tzx-nav-prev, .tzx-nav li.tzx-nav-next {
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+    width: 25%;
+    border: 1px dashed green;
+}
+
+.tzx-nav {
+  width: 60%
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.tzx-nav li.tzx-nav-prev {
+  width: 40%;
+  float: left;
+  margin-left: 5em;
+}
+
+.tzx-nav li.tzx-nav-prev:before {
+  content: "<";
+}
+
+.tzx-nav li.tzx-nav-next {
+  float: right;
+  margin-right: 5em;
 }
