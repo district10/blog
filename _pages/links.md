@@ -180,3 +180,4 @@ Links | 链签
 #. [繁体字转换器_简体字转换繁体字](http://www.diyifanwen.com/tool/fantizi/)
 #. [Mike Long's Blog | The meek shall inherit the earth](https://meekrosoft.wordpress.com/)
 #. [CodeKata](http://codekata.com/)
+#. [Migrate - Discussions - Disqus](https://dvorak4tzx.disqus.com/admin/discussions/migrate/)
