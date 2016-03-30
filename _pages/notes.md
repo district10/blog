@@ -16,6 +16,62 @@ after-before: |
 Notes | 笔记
 ============
 
+```yml
+language: c
+sudo: required
+before_install:
+  - echo 'before install' && pwd && ls
+  - mkdir -p ~/.ssh
+  - openssl aes-256-cbc -K $encrypted_0f64f26238f6_key -iv $encrypted_0f64f26238f6_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d
+  - chmod 600 ~/.ssh/id_rsa
+  - eval "$(ssh-agent -s)"
+  - ssh-add ~/.ssh/id_rsa
+  - cp ssh_config ~/.ssh/config
+  - git config --global user.email "dvorak4tzx@qq.com"
+  - git config --global user.name "TANG ZhiXiong"
+install:
+  - cd ~
+  - wget https://github.com/jgm/pandoc/releases/download/1.17/pandoc-1.17-1-amd64.deb
+  - sudo dpkg -i pandoc*.deb
+  - wget http://devtools.qiniu.com/qiniu-devtools-linux_amd64-current.tar.gz
+  - tar xfz qiniu-devtools-linux_amd64-current.tar.gz
+  - sudo cp qrsync /bin
+  - git clone https://github.com/district10/aha.git
+  - cd aha && make && sudo make install
+script:
+  - cd ~/build/district10/blog;
+  - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
+  - make
+  - # make items make move extras
+  - # make filter
+  - make qiniu; rm conf.json;
+after_success:
+  - cd ~/build/district10/blog; rm -Rf .git; rm -Rf publish; mkdir -p publish
+  - git init; git add -A; git commit -m "pushing to coding:master, lazy me @ `date`"
+  - git remote add origin git@git.coding.net:dvorak4tzx/dvorak4tzx.git
+  - git push -u origin HEAD:master --force
+  - rm -Rf .git
+  - make && make extras
+  - cd publish
+  - git init; git add -A; git commit -m "pushing to coding:coding-pages, lazy me @ `date`"
+  - git remote add origin git@git.coding.net:dvorak4tzx/dvorak4tzx.git
+  - git push -u origin HEAD:coding-pages --force
+```
+
+```css
+::selection {
+    color: #9ddcff;
+    background: black;
+}
+::-moz-selection {
+    color: #9ddcff;
+    background: black;
+}
+
+h1::selection { color: #9ddcff; }
+h1::-moz-selection { color: #9ddcff; }
+```
+
 [Space, Place and GIS – ButMan World](http://butman.club/notes/cyber/space-place-and-gis/)
 
 :   Determining latitude and longitude is a measurement problem, and like all
@@ -138,27 +194,43 @@ Notes | 笔记
         done
     }
 
-    function bocker_run() { #HELP Create a container:\nBOCKER run <image_id> <command>
+    #HELP Create a container:\nBOCKER run <image_id> <command>
+    function bocker_run() {
         uuid="ps_$(shuf -i 42002-42254 -n 1)"
-        [[ "$(bocker_check "$1")" == 1 ]] && echo "No image named '$1' exists" && exit 1
-        [[ "$(bocker_check "$uuid")" == 0 ]] && echo "UUID conflict, retrying..." && bocker_run "$@" && return
-        cmd="${@:2}" && ip="$(echo "${uuid: -3}" | sed 's/0//g')" && mac="${uuid: -3:1}:${uuid: -2}"
+        [[ "$(bocker_check "$1")" == 1 ]] \
+                && echo "No image named '$1' exists" && exit 1
+        [[ "$(bocker_check "$uuid")" == 0 ]] \
+                && echo "UUID conflict, retrying..." && bocker_run "$@" \
+                && return
+        cmd="${@:2}" \
+                && ip="$(echo "${uuid: -3}" | sed 's/0//g')" \
+                && mac="${uuid: -3:1}:${uuid: -2}"
         ip link add dev veth0_"$uuid" type veth peer name veth1_"$uuid"
         ip link set dev veth0_"$uuid" up
         ip link set veth0_"$uuid" master bridge0
         ip netns add netns_"$uuid"
         ip link set veth1_"$uuid" netns netns_"$uuid"
-        ip netns exec netns_"$uuid" ip link set dev lo up
-        ip netns exec netns_"$uuid" ip link set veth1_"$uuid" address 02:42:ac:11:00"$mac"
-        ip netns exec netns_"$uuid" ip addr add 10.0.0."$ip"/24 dev veth1_"$uuid"
-        ip netns exec netns_"$uuid" ip link set dev veth1_"$uuid" up
-        ip netns exec netns_"$uuid" ip route add default via 10.0.0.1
-        btrfs subvolume snapshot "$btrfs_path/$1" "$btrfs_path/$uuid" > /dev/null
+        ip netns exec netns_"$uuid" \
+                    ip link set dev lo up
+        ip netns exec netns_"$uuid" \
+                    ip link set veth1_"$uuid" address 02:42:ac:11:00"$mac"
+        ip netns exec netns_"$uuid" \
+                    ip addr add 10.0.0."$ip"/24 dev veth1_"$uuid"
+        ip netns exec netns_"$uuid" \
+                    ip link set dev veth1_"$uuid" up
+        ip netns exec netns_"$uuid" \
+                    ip route add default via 10.0.0.1
+        btrfs subvolume snapshot \
+                "$btrfs_path/$1" "$btrfs_path/$uuid" > /dev/null
         echo 'nameserver 8.8.8.8' > "$btrfs_path/$uuid"/etc/resolv.conf
         echo "$cmd" > "$btrfs_path/$uuid/$uuid.cmd"
         cgcreate -g "$cgroups:/$uuid"
-        : "${BOCKER_CPU_SHARE:=512}" && cgset -r cpu.shares="$BOCKER_CPU_SHARE" "$uuid"
-        : "${BOCKER_MEM_LIMIT:=512}" && cgset -r memory.limit_in_bytes="$((BOCKER_MEM_LIMIT * 1000000))" "$uuid"
+        : "${BOCKER_CPU_SHARE:=512}" \
+        && cgset \
+            -r cpu.shares="$BOCKER_CPU_SHARE" "$uuid"
+        : "${BOCKER_MEM_LIMIT:=512}" \
+        && cgset \
+            -r memory.limit_in_bytes="$((BOCKER_MEM_LIMIT * 1000000))" "$uuid"
         cgexec -g "$cgroups:$uuid" \
             ip netns exec netns_"$uuid" \
             unshare -fmuip --mount-proc \
@@ -169,27 +241,47 @@ Notes | 笔记
         ip netns del netns_"$uuid"
     }
 
-    function bocker_exec() { #HELP Execute a command in a running container:\nBOCKER exec <container_id> <command>
-        [[ "$(bocker_check "$1")" == 1 ]] && echo "No container named '$1' exists" && exit 1
-        cid="$(ps o ppid,pid | grep "^$(ps o pid,cmd | grep -E "^\ *[0-9]+ unshare.*$1" | awk '{print $1}')" | awk '{print $2}')"
-        [[ ! "$cid" =~ ^\ *[0-9]+$ ]] && echo "Container '$1' exists but is not running" && exit 1
+    #HELP Execute a command in a running container:
+    #       BOCKER exec <container_id> <command>
+    function bocker_exec() {
+        [[ "$(bocker_check "$1")" == 1 ]] \
+                && echo "No container named '$1' exists" && exit 1
+        cid="$(\
+                    ps o ppid,pid | \
+                    grep "^$(ps o pid,cmd | \
+                    grep -E "^\ *[0-9]+ unshare.*$1" | \
+                    awk '{print $1}')" | \
+                    awk '{print $2}' \
+               )"
+        [[ ! "$cid" =~ ^\ *[0-9]+$ ]] \
+                && echo "Container '$1' exists but is not running" && exit 1
         nsenter -t "$cid" -m -u -i -n -p chroot "$btrfs_path/$1" "${@:2}"
     }
 
-    function bocker_logs() { #HELP View logs from a container:\nBOCKER logs <container_id>
-        [[ "$(bocker_check "$1")" == 1 ]] && echo "No container named '$1' exists" && exit 1
+    #HELP View logs from a container:\nBOCKER logs <container_id>
+    function bocker_logs() {
+        [[ "$(bocker_check "$1")" == 1 ]] \
+                && echo "No container named '$1' exists" && exit 1
         cat "$btrfs_path/$1/$1.log"
     }
 
-    function bocker_commit() { #HELP Commit a container to an image:\nBOCKER commit <container_id> <image_id>
-        [[ "$(bocker_check "$1")" == 1 ]] && echo "No container named '$1' exists" && exit 1
-        [[ "$(bocker_check "$2")" == 1 ]] && echo "No image named '$2' exists" && exit 1
-        bocker_rm "$2" && btrfs subvolume snapshot "$btrfs_path/$1" "$btrfs_path/$2" > /dev/null
+    #HELP Commit a container to an image:
+    #   BOCKER commit <container_id> <image_id>
+    function bocker_commit() {
+        [[ "$(bocker_check "$1")" == 1 ]] \
+                && echo "No container named '$1' exists" && exit 1
+        [[ "$(bocker_check "$2")" == 1 ]] \
+                && echo "No image named '$2' exists" && exit 1
+        bocker_rm "$2" \
+                && btrfs subvolume snapshot "$btrfs_path/$1" "$btrfs_path/$2" \
+                > /dev/null
         echo "Created: $2"
     }
 
-    function bocker_help() { #HELP Display this message:\nBOCKER help
-        sed -n "s/^.*#HELP\\s//p;" < "$1" | sed "s/\\\\n/\n\t/g;s/$/\n/;s!BOCKER!${1/!/\\!}!g"
+    #HELP Display this message:\nBOCKER help
+    function bocker_help() {
+        sed -n "s/^.*#HELP\\s//p;" < "$1" | \
+        sed "s/\\\\n/\n\t/g;s/$/\n/;s!BOCKER!${1/!/\\!}!g"
     }
 
     [[ -z "${1-}" ]] && bocker_help "$0"
@@ -412,10 +504,10 @@ But you can still build the front end and load the unpacked extensions. Here is 
     $('a:not([href^="http://your-website.com"]):not([href^="#"]):not([href^="/"])')
       .addClass('external');
 
-    // technique 4
+    // technique 4, i use this i my site
     $('a').each(function() {
        var a = new RegExp('/' + window.location.host + '/');
-       if (!a.test(this.href)) {
+       if (!window.location.host || !a.test(this.href)) {
            // This is an external link
            $(this).click(function(event) {
                event.preventDefault();

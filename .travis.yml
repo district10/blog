@@ -23,6 +23,7 @@ script:
   - cd ~/build/district10/blog;
   - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
   - make
+  - make extras
   - # make items make move extras
   - # make filter
   - make qiniu; rm conf.json;
@@ -31,10 +32,3 @@ after_success:
   - git init; git add -A; git commit -m "pushing to coding:master, lazy me @ `date`"
   - git remote add origin git@git.coding.net:dvorak4tzx/dvorak4tzx.git
   - git push -u origin HEAD:master --force
-  - rm -Rf .git
-  - make
-  - make extras
-  - cd publish
-  - git init; git add -A; git commit -m "pushing to coding:coding-pages, lazy me @ `date`"
-  - git remote add origin git@git.coding.net:dvorak4tzx/dvorak4tzx.git
-  - git push -u origin HEAD:coding-pages --force

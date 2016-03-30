@@ -556,18 +556,6 @@ div#TOC:hover {
     color: rgba(255, 0, 0,1.0);
 }
 
-::selection {
-    color: #9ddcff;
-    background: black;
-}
-::-moz-selection {
-    color: #9ddcff;
-    background: black;
-}
-
-h1::selection { color: #9ddcff; }
-h1::-moz-selection { color: #9ddcff; }
-
 .tzx-paste, .tzx-hide {
     padding: 1em;
     border: 1px dashed helitrope; // hide

@@ -1,5 +1,20 @@
 $( ".tzx-tabs" ).tabs();
 
+/*
+$('a').each(function() {
+   var a = new RegExp('/' + window.location.host + '/');
+   var b = !window.location.host && !this.href.startsWith('http');
+   if (!a.test(this.href) || b) {
+       // This is an external link or file, or localhost
+       $(this).click(function(event) {
+           event.preventDefault();
+           event.stopPropagation();
+           window.open(this.href, '_blank');
+       });
+   }
+});
+*/
+
 $("img").each(function(index){
     var src = $(this).attr('src');
     $(this).attr({
