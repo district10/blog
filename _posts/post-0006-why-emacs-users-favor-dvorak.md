@@ -178,6 +178,8 @@ tags:
     > "the third level of the neo layout, apparently is really good for programming.
     > Eh, more layout, eh, and more code. Oh, back to Emacs"（20：10）
 
+    ![](http://whudoc.qiniudn.com/2016/29284-caa7365f38529250.png)
+
 3. 为了更好的输入中文，做了单字输入法：[gat][gat]。暂时只能在 Emacs 里使用。`2014-04-27`
 4. [dvpe0.3][dvpe] 发布 (a.k.a. neo-extended dvpe)。`2014-03-18`
    也支持 qwerty 和 programmer dvorak 布局 (Level 3 一致)

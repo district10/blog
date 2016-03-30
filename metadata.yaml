@@ -1,5 +1,6 @@
 ---
 tzx-cssfile:
+    - jquery-ui.css
     - main.css
 tzx-jsfile:    
     - jquery.min.js

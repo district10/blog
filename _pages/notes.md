@@ -10,25 +10,322 @@ after-before: |
     p#dummy::before {
       content: attr(data-foo) " ";
     }
+    #hacker-code {
+        padding-left: 4em;
+    }
     </style>
+cssfile:
+    - font-awesome.min.css
 ...
 
 Notes | 笔记
 ============
 
+[SVG <path>](http://www.w3school.com.cn/svg/svg_path.asp)
+
+    M = moveto
+    L = lineto
+    H = horizontal lineto
+    V = vertical lineto
+    C = curveto
+    S = smooth curveto
+    Q = quadratic Belzier curve
+    T = smooth quadratic Belzier curveto
+    A = elliptical Arc
+    Z = closepath
+
+
+Calibre 不知道为什么书都没了，需要点击 `Calibre Library` 然后 `恢复数据库` 进行恢复。
+
+![Showdown.js](http://showdownjs.github.io/demo/#/Welcome%20to%20Dvorak4tzx's%20Blog%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D)
+
+[Les Misérables Co-occurrence](https://bost.ocks.org/mike/miserables/)
+
+[如何成为一名数据科学家？](https://www.zhihu.com/question/21592677#answer-31441560)
+
+[050a125b8009c45a1ed0c362cd341dbe - bl.ocks.org](http://bl.ocks.org/district10/050a125b8009c45a1ed0c362cd341dbe)
+
+More precisely, the username regular expression is /^[a-z0-9][a-z0-9]*$/i; it should be more lenient.
+
+['linɪənt]
+    adj. 宽大的；仁慈的
+
+感觉上。……
+
+
+[About Blocks - bl.ocks.org](http://bl.ocks.org/-/about)
+
+- `.block`
+    + license - a supported [SPDX](http://bl.ocks.org/licenses.txt) license code
+        * apache-2.0
+        * bsd-2-clause
+        * bsd-3-clause
+        * **cc-by-4.0**
+        * cc-by-nc-4.0
+        * cc-by-nc-nd-4.0
+        * cc-by-nc-sa-4.0
+        * cc-by-nd-4.0
+        * **cc-by-sa-4.0**
+        * cddl-1.0
+        * epl-1.0
+        * **gpl-2.0**
+        * gpl-3.0
+        * lgpl-2.1
+        * lgpl-3.0
+        * **mit**
+        * mpl-2.0
+        * none
+    + height - the iframe height in pixels; defaults to 500
+    + scrolling - yes if the iframe should scroll; defaults to no
+    + border - no if the iframe should not have a border; defaults to yes
+- `230×120`, thumbnail.png. (960×500 preview.png or preview.jpg)
+
+Protovis
+A JavaScript library for visualization; superseded by D3.
+
+For Example
+
+---
+
+[Poisson-Disc Sampling](https://www.jasondavies.com/poisson-disc/)
+
+D3 is Data ↦ Elements
+
+Show Reels
+
+ CSS Selectors
+
+```tzx-bigquote
+Single selector:
+#foo        // <any id="foo"> </any>
+foo         // <foo> </foo>
+.foo        // <any class="foo"> </any>
+[foo=bar]   // <any foo="bar"> </any>
+foo bar     // <foo><bar> </bar></foo>
+
+Multiple selectors:
+foo.bar     // <foo class="bar"> </foo>
+foo#bar     // <foo id="bar"> </foo>
+```
+
+[数学之美系列二十三：输入一个汉字需要敲多少个键_真小人_新浪博客](http://blog.sina.com.cn/s/blog_4fe312f90100bx5y.html~type=v5_one&label=rela_prevarticle)
+
+:   数学之美我早就看过。但是这段我确实不能恭维。
+
+    以后再说为什么。
+
+    知乎上也有人说这段：
+
+    > ……但是为了证明自己的方法比别人的快，大家继续走偏，单纯追求击键次数少，最
+    > 直接的方法就是对词组进行编码，但这样一来，使用者就无法记住了，只有这些输
+    > 入法的表演者能记住。这已经不是技术的比赛，而是市场的竞争。最后，王永民的
+    > 五笔输入法暂时胜出，但并不是他的编码方法更合理，而是他比其他发明者（大多
+    > 数是书呆子）更会做市场而已。现在，即使五笔输入法也已经没有多少市场了，这
+    > 一批发没人可以说是全军覆没。
+
+    > 这一代输入法的问题在于减少了每个汉字击键的次数，而忽视了找到每个键的时间
+    > 。要求非专业使用者背下这些输入方法里所有汉字的编码是不现实的，这比背 6
+    > 000 个 GRE 单词还难。因此，他们在使用这些输入法是都要按照规则临时 “拆字”
+    > ，即找到一个字的编码组合，这个时间不仅长，而且在脱稿打字时严重中断思维。
+    > 本书一开头就强调语言和文字作为通信的编码手段，一个重要目的是帮助思维和记
+    > 忆。如果一个输入法中断了人们的思维过程，就和人的自然行为不符合。认知科学
+    > 已经证明，人一心无二用。过去在研究语音识别时做过很多用户测试，发现使用各
+    > 种复杂编码输入法的人在脱稿打字时，速度只有他在看稿打字时的一半到四分之一
+    > 。因此，虽然每个字平均敲键次数少，但是敲键盘的速度也慢了很多，总的来看并
+    > 不快。因此，广大中国计算机用户对这一类输入法的认可度极低，这是自然选择的
+    > 结果。
+
+    李笑来当年写的那个为什么要学五笔，才是真言。
+
+    refs and see also
+
+      - [neuxxm的五笔教程](https://www.douban.com/note/218182753/)
+
+---
+
+![](https://pic3.zhimg.com/7ee5eaaed0d45158cf025675e017536e_r.jpg)
+
+---
+
+[What Makes Software Good? — Medium](https://medium.com/@mbostock/what-makes-software-good-943557f8a488)
+
+I don’t want you to learn D3 for the sake of D3. I want you to learn how to explore data and communicate insights effectively.
+
+Good software is approachable.
+  ~ It can be understood completely in independent, easy pieces. You don’t need
+    to understand everything before you can understand anything.
+
+Good software is consistent.
+  ~ It lets you take what you’ve learned about one part and extrapolate it to
+    the rest. It doesn’t self-contradict. It is parsimonious, avoiding
+    superfluous elements.
+
+Good software explains itself.
+  ~ It has affordances for learning and discovery. It is role-expressive and
+    minimizes hidden magic.
+
+Good software teaches.
+  ~ It doesn’t just automate an existing task, but provides insight or imparts
+    knowledge, such as a best practice or a new perspective on a problem.
+
+Good software is for humans.
+  ~ It is cognizant of people and the reality in which they live. It does not
+    expect elaborate and arbitrary rules to be memorized. It anticipates the
+    need for learning and debugging.
+
+[UW Interactive Data Lab](http://idl.cs.washington.edu/)
+
+
+[Visualizing Algorithms](https://bost.ocks.org/mike/algorithms/)
+
+```javascript
+// DON’T DO THIS!
+function shuffle(array) {
+  return array.sort(function(a, b) {
+    return Math.random() - .5; // ಠ_ಠ
+  });
+}
+```
+
+Thank you for reading!
+
+---
+
+- 我对有才华的人特别没办法。
+- 因为这些优点都是可以表演出来的。
+
+[知乎周刊・完全不像处女座（总第 045 期） - 知乎用户 | 豆瓣阅读](https://read.douban.com/ebook/5054304/)
+
+:   所谓巴纳姆效应，就是说那些模棱两可，放到谁身上都准确的话。19 人
+
+    占星学是研究星体运行轨迹和特质与人类世界或个人经历的共变关系的一种学问。这
+    里的重点是共变关系，不是因果关系。15 人
+
+    人生是什么呢？就是一部分可知，而一部分不可知的一个混合体。10 人
+
+    什么样的人会信星座呢？就是在生活中遇到了问题的人：沟通的问题、关系的问题、
+    不确定感的问题、自我怀疑的问题、没有话题可聊的问题、过去未解决的问题、将来
+    没发生的问题……而星座，就是他们用来解决问题的一种工具。5 人
+
+    时间和耐心都已变成奢侈品，我们只能靠星座了解彼此。5 人
+
+    信佛也有不同的信法，就好比看别人走钢丝，有人的「信」，是站在安全的位置，口
+    中说着「我相信他不会掉下去的」。而另一些人的「信」，则是敢于让走钢丝的的人
+    背着他走，说「我相信你不会让我掉下去的」。4 人
+
+    大部分「受骗」的人，往往是心甘情愿地让自己「受骗」。4 人
+
+    黑处女座绝对不是黑处女座本身，而是去黑「具备处女座性格的这类人」。4 人
+
+    你那么美好，你应该爱这个世界。4 人
+
+    我们都是理科生，但不妨碍我们每天聊这种伪科学话题傻呵呵地开心。
+
+---
+
+纵然不是胡编，但基本也和“今天阴间多云，部分地区会有阳光，时有阵风阵雨”一样，总是能准的。
+
+---
+
+[哲学家--王浩_刘湘_博联社](http://home.blshe.com/blog.php?uid=15395&id=30002)
+
+:   跟小璇璇同学聊天的时候说到了王浩。为了确保没说错，过后我又查了一下。
+    话说我是在《上学记》里知道的这个人。
+
+    王浩是中国有史以来唯一对哲学做过深刻贡献的学者。尽管在数学、计算机、逻辑都
+    做过开拓性工作，但他内心把自己当哲学家，这极像哥德尔。
+
+    王浩在联大的老师有金岳霖、沈有鼎、王宪钧。金是哲学票友，但比同辈的胡适、冯
+    友兰更在行。沈有鼎在哈佛学过逻辑，老师有怀特海（罗素的老师）、谢佛（逻辑学
+    家），还有蒯因（王浩后来的导师），但他读完硕士就到欧洲找胡塞尔和海德格尔去
+    了。王宪钧是哥德尔唯一的中国学生。牛人的圈子真是不大啊。
+
+    在联大，金岳霖开逻辑学入门课，课上基本就是师徒俩对练，金经常讲着讲着就
+    问王浩：“哎，你小子说说咋回事啊？” 王宪钧讲数理逻辑，沈有鼎讲维特根斯坦《逻
+    辑哲学论》。有一次金岳霖想看哥德尔不完全性定理的论文，沈有鼎当众告诉他：你
+    数学不行，看不懂的。金挺识时务，说不看就不看呗。
+
+    王浩1948年哈佛博士毕业，然后拿了三年哈佛的Junior Fellow，比较高级的博士后。
+    他是第一个拿这个Fellowship的中国人。那一年哈佛一共给了四个Junior Fellow，其
+    中还有一位物理系的，叫托马斯·库恩，对，就是那个提出“科学革命”和“范式”的库恩
+    。库恩这三年全干哲学了。但王浩看不起库恩，说库恩干的不是哲学，是科学史。
+
+    他证明了图灵机都可转为一组王氏砖（Wang tile）。
+
+    王浩是机器定理证明的奠基人。他在 1958 年夏天写的程序在 IBM-704 上, 只用九分钟就
+    证明了罗素《数学原理》中一阶逻辑的全部定理。
+
+    王浩在后一本著作《超越分析哲学》中改变了方法，通过评论先哲来阐述自己的思想
+    。在该书中，王浩评论了罗素、维特根斯坦、卡尔纳普和蒯因，可算现代哲学的学术
+    史。他评论逻辑：大部分物理学家赞同基础物理在物理学的核心地位，却很少有数学
+    家对逻辑持相同的看法。王浩的这种通过第三方来兜售自己哲学的方法在Reflections
+    on Kurt Godel中表现得更突出。康宏逵先生将此书译为《哥德尔》，Reflections其
+    实是王浩的哲学方法。他1979后在国内只讲数理逻辑，绝口不提辩证法。他的讲义后
+    来编成《数理逻辑通俗讲话》，金岳霖题写书名，这书其实并不通俗。
+
+    他、汉妮和何兆武同去德国海德堡时，何告诉王浩山里有条当年黑格尔散步的“哲学家
+    小道”（Philosophers' Walk），何和汉妮休息，王浩自己走了一趟，何问王感觉如何
+    ，王说：from nothing to nothing（从无到无）。 ^[这句话就是从《上学记》看到的。]
+
+    refs and see also
+
+      - [王浩 (数学家) - 维基百科，自由的百科全书](https://zh.wikipedia.org/zh-cn/%E7%8E%8B%E6%B5%A9_(%E6%95%B0%E5%AD%A6%E5%AE%B6))
+      - [上学记 (豆瓣)](http://book.douban.com/subject/1859140/)
+      - [Wang tile - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Wang_tile)
+      - [纪念王浩先生](https://www.douban.com/group/topic/5005555/)
+
+[dashed/pandoc-seed-project: Seed git repo for pandoc based projects. Just clone and pandoc.](https://github.com/dashed/pandoc-seed-project)
+
+---
+
+[语言简洁的好处 - 简书](http://www.jianshu.com/p/8b1dc305a26d)
+
+:   举个例子，[偷书贼](http://movie.douban.com/subject/21348876/) 里严厉的老师
+    让小女主人公自我介绍：
+
+    > “Chalk，Name，Board（粉笔，名字，黑板）”。
+
+    真是太简洁了~ 如果换成是“用粉笔把你的名字写在黑板上”，那就完全没有味道了。
+
+[把 ANSI 編碼轉化爲 UTF-8 - 简书](http://www.jianshu.com/p/22c2f5af5a21)
+
+:   ```bash
+    # 檢測
+    $ file -i *
+    file1: text/plain; charset=utf-8
+    file2: text/plain; charset=iso-8859-1
+    file3: text/plain; charset=gbk
+
+    # 轉化
+    $ iconv -f gbk -t utf-8 file3 > file3-utf8.txt # or '-f GBK'
+
+    # 列出支持的編碼
+    iconv -l               # list all supported encodings
+    ```
+
+    ```
+    $ vim file3.txt
+    # convert to utf-8 in place
+    :w ++enc=utf-8
+    # write to another file
+    :w ++enc=utf-8 file3-utf8.txt
+
+    :set encoding=utf-8
+    :set fileencoding=utf-8
+    :set fileformat=unix ; ff
+    ```
+
+    refs and see also
+
+      - [file encoding, -dvorak4tzx](http://dvorak4tzx.lofter.com/post/1d4021c8_861c876)
+
+---
+
+<small>
 ```yml
 language: c
 sudo: required
 before_install:
-  - echo 'before install' && pwd && ls
-  - mkdir -p ~/.ssh
-  - openssl aes-256-cbc -K $encrypted_0f64f26238f6_key -iv $encrypted_0f64f26238f6_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d
-  - chmod 600 ~/.ssh/id_rsa
-  - eval "$(ssh-agent -s)"
-  - ssh-add ~/.ssh/id_rsa
-  - cp ssh_config ~/.ssh/config
-  - git config --global user.email "dvorak4tzx@qq.com"
-  - git config --global user.name "TANG ZhiXiong"
 install:
   - cd ~
   - wget https://github.com/jgm/pandoc/releases/download/1.17/pandoc-1.17-1-amd64.deb
@@ -57,6 +354,7 @@ after_success:
   - git remote add origin git@git.coding.net:dvorak4tzx/dvorak4tzx.git
   - git push -u origin HEAD:coding-pages --force
 ```
+</small>
 
 ```css
 ::selection {
@@ -72,6 +370,8 @@ h1::selection { color: #9ddcff; }
 h1::-moz-selection { color: #9ddcff; }
 ```
 
+---
+
 [Space, Place and GIS – ButMan World](http://butman.club/notes/cyber/space-place-and-gis/)
 
 :   Determining latitude and longitude is a measurement problem, and like all
@@ -84,14 +384,19 @@ h1::-moz-selection { color: #9ddcff; }
 
 [Big Data, Human Dynamics and Space – Time GIS – ButMan World](http://butman.club/notes/cyber/big-data-human-dynamics-and-space-time-gis/)
 
-:   Moving bundle：感觉更多地强调事物的流动性，相比 Stationary~ 不同的是，
-    Moving~ 里的个体的更新更为迅速，多数情况下也是自发的。
+:   Moving bundle：感觉更多地强调事物的流动性，相比 Stationary bundle 不同的是，
+    Moving bundle 里的个体的更新更为迅速，多数情况下也是自发的。
 
     Where is google？在不同国家的 google 搜索引擎上检索同一个关键字，得到的结果
     是不尽相同的。随即引出在 virtual space 里的 object 无法用传统 GIS 的
     reference system 进行描述和度量，传统 GIS 需要新的血液。
 
 [花生的别样人生 - 简书](http://www.jianshu.com/p/55dc2e0d192e)
+
+[AlphaGo与人工智能](http://www.yinwang.org/blog-cn/2016/03/09/alpha-go)
+
+:   本来玩个游戏而已，恁要吹成是“历史性的人机大战”，说得好像是机器挑战了人类的
+    智能，伤了人类的自尊似的。
 
 [RSS与三不主义](http://www.yinwang.org/blog-cn/2014/09/17/rss)
 
@@ -100,6 +405,14 @@ h1::-moz-selection { color: #9ddcff; }
     好像是我“主动”在推给他们看，是我很想让他们看一样，是要负责的。某些人取消关
     注别人的微博时，口气总是好像觉得自己关注一个人，是给了他很大的面子一样，所
     以他们用取消关注来表示他们的“惩罚”。这些人显然把自己看得太高贵了。
+
+    机器的“学习能力”，并没有比石头高出很多，因为机器学习说白了，只不过是通过大
+    量的数据，统计拟合出某些函数的参数。
+
+    著名的认知科学家 Douglas Hofstadter（《GEB》的作者），早就指出 AI 领域的那些热
+    门话题，比如电脑下棋，跟真正意义上的人类智能，几乎完全不搭边。绝大部分人其
+    实不明白思考和智能到底是什么。大部分所谓AI专家，对人脑的工作原理所知甚少，
+    甚至完全不关心。
 
 [bocker/bocker at master · p8952/bocker](https://github.com/p8952/bocker)
 
@@ -1109,6 +1422,7 @@ single quote 	222
       exports: {}
     };
 
+    // 下面的括号必须，eval a function
     // If you require a module, it's basically wrapped in a function
     (function(module, exports) {
       exports = function (n) { return n * 1000 };
@@ -1128,8 +1442,9 @@ single quote 	222
     console.log(foo(5));
     ```
 
-    Bonus: if you put your script tag right before the </body>, you can use all
-    of the dom elements on the page without waiting for a dom onready event.
+    Bonus: if you put your script tag right before the `</body>`, you can use
+    all of the dom elements on the page without waiting for a dom onready
+    event.
 
     原来如此！！！
 
@@ -3229,7 +3544,6 @@ extension="${filename##*.}"          # txt
 filename="${filename%.*}"            # file
 ```
 
-
 pdf2img `@`{.tzx-anchor #pdf2img}
 
 :   ```bash
@@ -3259,146 +3573,151 @@ pdf2img `@`{.tzx-anchor #pdf2img}
     pdfcrop file.pdf cropped.pdf
     ```
 
+    refs
 
-    Refs
-      ~ [Note: 批量转换PPT（bash) - gnat - 博客园](http://www.cnblogs.com/gnat-tang/p/3536745.html)
-      ~ [Note: pdfcrop - gnat - 博客园](http://www.cnblogs.com/gnat-tang/p/3536750.html)
-      ~ [Filter Options - Apache OpenOffice Wiki](https://wiki.openoffice.org/wiki/Documentation/DevGuide/Spreadsheets/Filter_Options)
+      - [Note: 批量转换PPT（bash) - gnat - 博客园](http://www.cnblogs.com/gnat-tang/p/3536745.html)
+      - [Note: pdfcrop - gnat - 博客园](http://www.cnblogs.com/gnat-tang/p/3536750.html)
+      - [Filter Options - Apache OpenOffice Wiki](https://wiki.openoffice.org/wiki/Documentation/DevGuide/Spreadsheets/Filter_Options)
 
-A.pdf -> A-{0,1}.jpg
+    `A.pdf -> A-{0,1}.jpg`
 
-convert raw image:
+raw2img:
 
-```bash
-#!/bin/bash
+:   ```bash
+    #!/bin/bash
 
-echo start time: `date`
+    echo start time: `date`
 
-for i in *.raw;
-do
-    # convert -size 5120x3840 -depth 8 gray:$i jpg/`basename $i .raw`.jpg & # &fork then process
-    convert -size 5120x3840 -depth 8 gray:$i jpg/`basename $i .raw`.jpg
-    mv $i raw/
-done
+    for i in *.raw;
+    do
+        convert -size 5120x3840 -depth 8 gray:$i jpg/`basename $i .raw`.jpg
+        mv $i raw/
+    done
 
-echo end time: `date`
-```
+    echo end time: `date`
+    ```
 
-```bash
-!/bin/bash
+imagemagick:
 
-for i in rotate shear roll hue saturation brightness gamma spiff dull \
-         grayscale quantize despeckle reduceNoise addNoise sharpen blur \
-         threshold edgedetect spread shade raise segment solarize swirl \
-         implode wave oilpaint charcoal jpeg;
-do
-    convert main.jpg -preview ${i} -gravity south -box "#00000020" \
-        -pointsize 36 -fill "#887ddd" -draw "text 0,0 '${i}'" out.${i}.jpg
-done
+:   ```bash
+    !/bin/bash
 
-montage out.*.jpg -tile 1x$(ls out.*.jpg | wc -l) -geometry 766x936 out.main.jpg
-```
+    for i in rotate shear roll hue saturation brightness gamma spiff dull \
+             grayscale quantize despeckle reduceNoise addNoise sharpen blur \
+             threshold edgedetect spread shade raise segment solarize swirl \
+             implode wave oilpaint charcoal jpeg;
+    do
+        convert main.jpg -preview ${i} -gravity south -box "#00000020" \
+            -pointsize 36 -fill "#887ddd" -draw "text 0,0 '${i}'" out.${i}.jpg
+    done
 
-```bash
-➜  trygridfs git:(master) ✗ curl -X POST -F file=@./package.json localhost:8090/gridfs
-{
-  "method": "POST",
-  "url": "/gridfs",
-  "header": {
-    "user-agent": "curl/7.35.0",
-    "host": "localhost:8090",
-    "accept": "*/*",
-    "content-length": "1022",
-    "expect": "100-continue",
-    "content-type": "multipart/form-data; boundary=------------------------72fd612aa595d9d6"
-  }
-}
+    montage out.*.jpg -tile 1x$(ls out.*.jpg | wc -l) -geometry 766x936 out.main.jpg
+    ```
 
-➜  trygridfs git:(master) ✗ curl -X POST -d @./package.json localhost:8090/gridfs
-{
-  "method": "POST",
-  "url": "/gridfs",
-  "header": {
-    "user-agent": "curl/7.35.0",
-    "host": "localhost:8090",
-    "accept": "*/*",
-    "content-length": "783",
-    "content-type": "application/x-www-form-urlencoded"
-  }
-}
+    ```bash
+    var fs = require('fs');
+    var gm = require('gm');
 
-➜  example git:(master) ✗ curl -X POST \
-    -F file=@./package.json \
-    -F file=@./upload.js localhost:8000/upload
-```
+    // resize and remove EXIF profile data
+    gm('img/600x300.jpg')
+    .resize(240, 240)
+    .noProfile()
+    .write('resized.png', function (err) {
+      if (!err) { console.log('done'); }
+    });
+    ```
 
-```bash
-var fs = require('fs');
-var gm = require('gm');
+curl:
 
-// resize and remove EXIF profile data
-gm('img/600x300.jpg')
-.resize(240, 240)
-.noProfile()
-.write('resized.png', function (err) {
-  if (!err) { console.log('done'); }
-});
+:   <small>
+    ```bash
+    $ curl -X POST -F file=@./package.json localhost:8090/gridfs
+    {
+      "method": "POST",
+      "url": "/gridfs",
+      "header": {
+        "user-agent": "curl/7.35.0",
+        "host": "localhost:8090",
+        "accept": "*/*",
+        "content-length": "1022",
+        "expect": "100-continue",
+        "content-type": "multipart/form-data; boundary=------------------------72fd612aa595d9d6"
+      }
+    }
+    ```
+    </small>
 
-```
+    ```bash
+    $ curl -X POST -d @./package.json localhost:8090/gridfs
+    {
+      "method": "POST",
+      "url": "/gridfs",
+      "header": {
+        "user-agent": "curl/7.35.0",
+        "host": "localhost:8090",
+        "accept": "*/*",
+        "content-length": "783",
+        "content-type": "application/x-www-form-urlencoded"
+      }
+    }
+
+    $ curl -X POST \
+        -F file=@./package.json \
+        -F file=@./upload.js localhost:8000/upload
+    ```
 
 awk, word frequency counter
 
-```bash
-# wordfreq.awk --- print list of word frequencies
+:   ```bash
+    # wordfreq.awk --- print list of word frequencies
 
-{
-    $0 = tolower($0)    # remove case distinctions
-    # remove punctuation
-    gsub(/[^[:alnum:][:blank:]]/, " ", $0)
-    for (i = 1; i <= NF; i++)
-        freq[$i]++
-}
+    {
+        $0 = tolower($0)    # remove case distinctions
+        # remove punctuation
+        gsub(/[^[:alnum:][:blank:]]/, " ", $0)
+        for (i = 1; i <= NF; i++)
+            freq[$i]++
+    }
 
-END {
-    for (word in freq)
-        printf "%s\t%d\n", word, freq[word]
-}
-```
+    END {
+        for (word in freq)
+            printf "%s\t%d\n", word, freq[word]
+    }
+    ```
 
-use
+    ```bash
+    #!/bin/bash
 
-```bash
-#!/bin/bash
+    FILE=$1
 
-FILE=$1
-
-sed -e 's/\([A-Z]\)/ \L\1/g' $FILE | \
-gawk -f wcf.awk | sort -k 2nr
-```
+    sed -e 's/\([A-Z]\)/ \L\1/g' $FILE | \
+    gawk -f wcf.awk | sort -k 2nr
+    ```
 
 read
 
-```bash
-#/bin/bash
+:   ```bash
+    #/bin/bash
 
-ADDTO="2015.md"
-DATE=`date +%Y-%m-%d`
+    ADDTO="2015.md"
+    DATE=`date +%Y-%m-%d`
 
-echo adding $1
-echo \* \[ \] \[$DATE\] $1 >> $ADDTO
-echo ===================================
-echo Please read, and read with pleasure.
+    echo adding $1
+    echo \* \[ \] \[$DATE\] $1 >> $ADDTO
+    echo ===================================
+    echo Please read, and read with pleasure.
 
-git add -A && git commit -m `date +%s` && git pull && git push
-```
+    git add -A && git commit -m `date +%s` && git pull && git push
+    ```
 
 ```bash
 Calibre-nongui
 
 A Calibre-like Ebook Manager
 Just Simple
-
 ```
+
+---
 
 reputedly `[rɪˈpjuːtɪdli]` adv. 据说，一般认为；根据风评
 
@@ -6330,11 +6649,6 @@ The Hacker's Code of Ethics
       and understand better the group they are a part of. This will be
       beneficial to all hackers.
 
-<style>
-#hacker-code {
-    padding-left: 4em;
-}
-</style>
 
 The Conscience of a Hacker
 
@@ -15734,29 +16048,6 @@ chess), displaying its complexity despite relatively simple rules.
 :   see [equalsraf/vim-qt](https://github.com/equalsraf/vim-qt)
 
 <!--...--><!--上面不要加 ---（hr）-->
-<link rel="stylesheet" href="jquery-ui.css">
-<link rel="stylesheet" href="font-awesome.min.css">
-<style>
-.tzx-tabs ul li a:hover {
-    border-bottom: none;
-}
-pre {
-    font-size: 80%;
-}
-pre.tzx-bigquote {
-	padding-left: 6em;
-	padding-top: 4em;
-	padding-bottom: 4em;
-}
-</style>
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="jquery-ui.min.js"></script>
-<script>
-$(function() {
-    $( ".tzx-tabs" ).tabs();
-});
-</script>
-
 <!--
 <div class="tzx-tabs">
 * [](#)
@@ -15768,7 +16059,6 @@ $(function() {
 ~~~ {# .c}
 ~~~
 </div>
-
 fold item
 V/\n#. ?kbzf
 -->

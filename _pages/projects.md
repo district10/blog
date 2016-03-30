@@ -10,3 +10,4 @@ tags:
 Projects | 项目
 ===============
 
+- [district10/poicreator: Create POIs](https://github.com/district10/poicreator)

@@ -7,10 +7,7 @@ tags:
     - koans
 jsfile:
     - moment.min.js
-after-before: |
-    <style>
-    code.tzx-timestamp { color: white; }
-    </style>
+after-before:
 before-after: |
     <script>
     $('.tzx-timestamp').each(function(index){
@@ -29,14 +26,13 @@ before-after: |
 Koans | 呓语
 ============
 
-<div class="koans">
-
 ## `1459244417`{.tzx-timestamp} 关于 travis-ci 的 build
 
 刚才看到自己的 travis-ci 的一个 build 有一个多小时了！！！吓我一跳。后来发现原来是
 网掉了，网页上那个是本地的计时器显示的时间。实际上五分钟就编译好了。
 
-那个 spinner 其实也只是一个 spinner，而已。
+那个 spinner 其实也只是一个 spinner，
+而已。
 
 ## `1459241516`{.tzx-timestamp} 发现 iPad 的一个 bug
 
@@ -72,16 +68,17 @@ FME 也不会用，这个号称能处理几百种格式的转化工具，
 
 是我自己昨天的改残了 Makefile，感觉写得还挺 hack 的，在自己电脑上测试可以。但是在 Windows 就是不行……：
 
-<small><small><small><small>
 ```makefile
-+EAST_ASIAN_LINE_BREAKS=$(echo '' | pandoc -f markdown+east_asian_line_breaks 2&>/dev/null && echo -n '+east_asian_line_breaks' || echo -n '')
++EAST_ASIAN_LINE_BREAKS=$(\
+        echo '' | pandoc -f markdown+east_asian_line_breaks 2&>/dev/null && \
+        echo -n '+east_asian_line_breaks' || echo -n ''\
+        )
 PANDOC_OPTIONS = -S -s --ascii \
 	-c main.css \
 	-A footer.html \
 	--highlight-style pygments \
 	-f markdown$(+EAST_ASIAN_LINE_BREAKS)
 ```
-</small></small></small></small>
 
 昨天晚上真的可以？还是我的幻觉？一定是幻觉因为昨天晚上 travis 编译也是没有通过
 的……：[Build #47 - district10/blog - Travis CI](https://travis-ci.org/district10/blog/builds/118537331)。
@@ -118,11 +115,11 @@ elementum neque eget dolor egestas fringilla.
 
 昨晚回去之前 push 了一下，到寝室发现 travis 编译失败了……早上过来一看：
 
-<small><small><small>
 ```tzx-plain
-The command "wget http://devtools.qiniu.com/qiniu-devtools-linux_amd64-current.tar.gz" failed and exited with 8 during .
+The command "wget
+http://devtools.qiniu.com/qiniu-devtools-linux_amd64-current.tar.gz" failed and
+exited with 8 during .
 ```
-</small></small></small>
 
 What the f**k...
 
@@ -435,7 +432,6 @@ Stack Overflow](http://stackoverflow.com/questions/16655705/cmake-cannot-determi
 
 ## `1455986511`{.tzx-timestamp} 你知道我在这耗了多久？
 
-<div style="font-size:80%">
 ```cpp
 osgUtil::LineSegmentIntersector::Intersections::iterator hiter;
 for ( hiter = intersections.begin(); hiter != intersections.end(); ++hiter ) {
@@ -459,7 +455,6 @@ for ( hiter = intersections.begin(); hiter != intersections.end(); ++hiter ) {
     }
 }
 ```
-</div>
 
 当然，计算机是不会逗你的。肯定是自己弄错了。
 
@@ -874,6 +869,8 @@ Throne 里面我喜欢的是 Rose Leslie 饰演的 Ygritte（老拼不对，这�
 
 神奇的是，很多人特别喜欢她，很多人特别讨厌她[^ygritte-db]，有点像大家对 SICP 的感觉一样……[^sicp]：
 
+![说好的正态分布呢？](http://whudoc.qiniudn.com/2016/QQ图片20160328182211.png)
+
 ```tzx-bigquote
     Its the Best! Its the Worst! Why the split?, May 8, 2000
     --------------------------------------------------------
@@ -909,9 +906,9 @@ Some of the reviewers complain that SICP doesn't teach the basics of OO design,
 and so on. In a sense they are right. The book doesn't directly tell you how to
 design and write an object-oriented program using the subset of object-oriented
 principles that show up in the syntax of Java or C++. Rather, the book tells
-you what those *principles* are, how they came to be selected as worthwhile, how
-they can be implemented from the ground up, and how a different combination of
-principles might be more appropriate for some particular problems. This
+you what those *principles* are, how they came to be selected as worthwhile,
+how they can be implemented from the ground up, and how a different combination
+of principles might be more appropriate for some particular problems. This
 approach requires you to understand the range of possibilities, and to think
 about trade-offs as you go through the design process. *Programming is a craft*
 that is subject to frequent failure: many projects are started and abandoned
@@ -2193,6 +2190,7 @@ Albert Einstein:
 
 ![fork on GitHub](http://gnat.qiniudn.com/pics/github-babaric-fork.png)
 
+<!--
 ## `1447520394`{.tzx-timestamp} 哪里才是重点？
 
 [威尔特·张伯伦_百度百科](http://baike.baidu.com/link?url=0r3zg8KYZhZ9kYM7WCaZ4XymrUCrBWSunooBrI3hYgRGot2aB286vheAMFQ3ZXFI)：
@@ -2202,15 +2200,16 @@ Albert Einstein:
     > 张伯伦 (Wilt Chamberlain) 在自传《俯瞰》中用专门的一章讲述他的艳遇，他声
     > 称从 15 岁开始，他平均每天就和 1.2 个女人睡过觉。“人们也许认为我的品位不
     > 高，但信不信由你，几乎每个与我约会的女人，在普通男人眼里都会是一见钟情式
-    > 的偶像。”张伯伦的很多好友都认为他具有一种诱人的魅力，他曾经在10天里和23个
-    > 女人睡过觉。张伯伦尤其喜欢《生动的颜色》的一个片段：一个女人和她的女儿列
-    > 出了一份还很长很长的名单上，都是那些同张伯伦睡过觉的女人的名字，而这对母
-    > 女坦然地承认她们的名字也都在名单上。在后期张伯伦允许别人评价他的篮球弱点，
-    > 却不容别人质疑他的性能力。
+    > 的偶像。”张伯伦的很多好友都认为他具有一种诱人的魅力，他曾经在 10 天里和
+    > 23 个女人睡过觉。张伯伦尤其喜欢《生动的颜色》的一个片段：一个女人和她的女
+    > 儿列出了一份还很长很长的名单上，都是那些同张伯伦睡过觉的女人的名字，而这
+    > 对母女坦然地承认她们的名字也都在名单上。在后期张伯伦允许别人评价他的篮球
+    > 弱点，却不容别人质疑他的性能力。
 
     同理，我允许别人说我编程慢，却不容别人质疑我的打字速度。
 
     ![用 AHK 脚本配置了键盘布局，然后 keybr 可以用了，于是一试……我知道我还需要练习](http://gnat.qiniudn.com/pics/144752051.png)
+-->
 
 ## `1447489151`{.tzx-timestamp} 那些倔强又理性的人
 
@@ -2303,5 +2302,3 @@ Firefox: Blocked by Content Security Policy.
 > 不带换行符的文件的 md5sum）。我的主要联系方式是 Email。
 
 这个……有点叼。我要好好学习以后破解 md5……
-
-</div>

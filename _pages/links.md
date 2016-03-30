@@ -90,6 +90,7 @@ Links | 链签
 #. [Team | Urban Collective Intelligence](http://urbancolab.com/?q=team)
 #. [Tetris](https://jake-eaton.com/tetris/)
 #. [The Bézier Game](http://bezier.method.ac/) %bezier
+#. [Animated Bézier Curves - Jason Davies](https://www.jasondavies.com/animated-bezier/)
 #. [Timothy Guan‑tin Chien](http://timdream.org/#works)
 #. [Top arXiv papers](https://scirate.com/) `arxiv`
 #. [Typeof.net](http://typeof.net/index.html)
@@ -181,3 +182,4 @@ Links | 链签
 #. [Mike Long's Blog | The meek shall inherit the earth](https://meekrosoft.wordpress.com/)
 #. [CodeKata](http://codekata.com/)
 #. [Migrate - Discussions - Disqus](https://dvorak4tzx.disqus.com/admin/discussions/migrate/)
+#. [记忆的残骸](http://wandergis.com/)

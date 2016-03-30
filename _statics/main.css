@@ -602,7 +602,6 @@ pre.tzx-bigquote code {
 
 .tzx-bigquote > code {
     margin: 0 auto;
-    color: red;
 }
 
 .tzx-anchor {
@@ -683,11 +682,25 @@ body {
     cursor: pointer;
 }
 
+.footnotes [id^=fn] {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
 .footnotes [id^=fn]:target {
+    background-color: rgba(0,127,255,0.02);
     border-right: 5px solid lightgray;
     border-top:   1px solid lightgray;
     border-bottom:1px solid lightgray;
-    background-color: rgba(0,127,255,0.02);
+    border-radius: 1em; 
+    box-shadow:         0 0 25px 10px rgba(155, 155, 155, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(155, 155, 155, 0.5);
+    -moz-box-shadow:    0 0 25px 10px rgba(155, 155, 155, 0.5);
+    -o-box-shadow:      0 0 25px 10px rgba(155, 155, 155, 0.5);
 }
 .footnotes [id^=fn]:hover {
     background-color: rgba(0,127,255,0.05);
@@ -749,4 +762,20 @@ body {
 .tzx-nav li.tzx-nav-next {
   float: right;
   margin-right: 5em;
+}
+
+.tzx-tabs ul li a:hover {
+    border-bottom: none;
+}
+pre {
+    font-size: 80%;
+}
+pre.tzx-bigquote {
+	padding-left: 6em;
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+
+code.tzx-timestamp {
+    color: white;
 }

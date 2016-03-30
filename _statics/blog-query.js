@@ -20,6 +20,11 @@ var tzx_links = [
         query: ['page', 'tag']
     },
     {
+        url: '/projects.html',
+        title: "Projects | 项目",
+        query: ['project', 'github']
+    },
+    {
         url: '/ring.html',
         title: "One Ring, to Rule Them All",
         query: ['ring', 'extras']
