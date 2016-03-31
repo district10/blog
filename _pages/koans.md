@@ -26,6 +26,11 @@ before-after: |
 Koans | 呓语
 ============
 
+## `1459398411`{.tzx-timestamp} 代码高亮风格
+
+很多人都喜欢 sublime 那种黑黑背景的。我喜欢 VS 和 GitHub，最喜欢的是 Pygments 风格。
+Wikipedia 也是如此。明显比别的风格好看很多好不好！
+
 ## `1459244417`{.tzx-timestamp} 关于 travis-ci 的 build
 
 刚才看到自己的 travis-ci 的一个 build 有一个多小时了！！！吓我一跳。后来发现原来是

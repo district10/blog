@@ -722,12 +722,6 @@ body {
     -o-box-shadow:      0 0 25px 10px rgba(155, 155, 155, 0.5);
 }
 
-.tzx-shy dd { display: none; }
-.tzx-shy dl { cursor: crosshair; }
-.tzx-shy dl:hover dd {
-    display: block;
-}
-
 .tzx-nav {
     display: inline-block;
     width: 100%;
@@ -779,3 +773,17 @@ pre.tzx-bigquote {
 code.tzx-timestamp {
     color: white;
 }
+
+.tzx-shy dd { display: none; }
+.tzx-shy dl { cursor: crosshair; }
+.tzx-shy dl:hover dd {
+    display: block;
+}
+
+.tzx-drawer { 
+    cursor: crosshair;
+    border: 1px solid #9ddcff; 
+}
+
+.tzx-drawer-show { display: block; }
+.tzx-drawer-hide { display: none; }

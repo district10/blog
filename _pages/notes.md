@@ -21,90 +21,1138 @@ cssfile:
 Notes | 笔记
 ============
 
+Simple HTTP Server
+
+:   ```bash
+    python -m SimpleHTTPServer 8888          # python 2
+    python -m http.server      8888          # python 3+
+    php -S localhost:8888                    # php
+    ruby -run -e httpd . -p 8888             # ruby
+    http-server                              # node.js: [c]npm install http-server -g
+    java -jar jetty-runner.jar --port 8888 . # java
+    ```
+
+    downloads:
+
+    - [Windows: mongoose-free-5.5.exe (免安装，win binary)](http://whudoc.qiniudn.com/2016/mongoose-free-5.5.exe)
+    - [Java: jetty-runner](http://central.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.3.0.M0/jetty-runner-9.3.0.M0.jar)
+
+---
+
+<div class="tzx-drawer">
+[CSS selector for "foo that contains bar"? - Stack Overflow](http://stackoverflow.com/questions/2000582/css-selector-for-foo-that-contains-bar)
+
+:   一句话说就是，不行……
+
+    JSYK (Just So You Know), the CSS parent selector will be coming in CSS4, as
+    the ability to select which element in a selector is styled by putting a
+    dollar sign in front of it: `$div > span` would select the div that has a
+    span as a direct child.
+
+    Put a dollar sign before a selector part, so it could interfere with
+    **SCSS/SASS** syntax, cool. Why don't they use the many times proposed `<`
+    sign, or `:parent` pseudo class, or even the `!` sign after a selector
+    part? They all seem more logical to me, than using the `$` sign...
+</div>
+
+[ImageMap - bl.ocks.org](http://bl.ocks.org/nswamy14/df13d67b6efeb19eb640)
+
+Learning D3.js Mapping
+
+:   For quick access to developer tools on the Mac, use <kbd>alt + command + I</kbd>;
+    for Windows PCs, use <kbd>Ctrl + Shift + I</kbd>.
+
+    These three components create a D3 visualization:
+
+      - HTML5 (the SVG and path elements)
+      - JavaScript (the D3.js library and map code)
+      - CSS (the styling of the HTML5 elements)
+
+    SVG elements:
+
+      - circle : A standard circle with a defined radius and position attributes
+      - rect : A standard rectangle with height, width, and position attributes
+      - polygon : Any polygon, described by a list of points
+      - line : A line with start and end points
+      - path : A complex line created through a series of drawing commands
+
+    coords:
+
+    ```tzx-bigquote
+        ----------> x
+        |
+        |
+        |
+        |
+       \|/
+        .   y
+    ```
+
+    ```html
+    <!-- line -->
+    <line x1="10" y1="10" x2="100" y2="100" stroke-width="1" stroke="red"/>
+
+    <!-- rect -->
+    <rect width="100" height="20" x="10" y="10"></rect>
+
+    <!-- rect with rounded borders -->
+    <rect with="100" height="20" x="10" y="10" rx="5" ry="5"></rect>
+
+    <!-- circle -->
+    <circle cx="62" cy="62" r="50"></circle>
+
+    <!-- polygon -->
+    <polygon points="60,5 10,120 115,120"/>
+
+    <!-- path -->
+    <path d="M 120 120 L 220 220, 420 120 Z"
+          stroke="steelblue"
+          fill="lightyellow"
+          stroke-width="2"></path>
+    ```
+
+    ```css
+    line {
+        stroke: red;
+        stroke-linecap: round;
+        stroke-width: 5;
+    }
+
+    rect {
+        stroke-width: 1;
+        stroke:steelblue;
+        fill:#888;
+         fill-opacity: .5;
+    }
+    ```
+
+    [SVG `<path>`](http://www.w3school.com.cn/svg/svg_path.asp):
+
+      - **M** = moveto
+      - **L** = lineto
+      - **H** = horizontal lineto
+      - **V** = vertical lineto
+      - **C** = curveto
+      - **S** = smooth curveto
+      - **Q** = quadratic Belzier curve
+      - **T** = smooth quadratic Belzier curveto
+      - **A** = elliptical Arc
+      - **Z** = closepath
+
+    Curves:
+
+      - Cubic Bézier, `C x1 y1 x2 y2 x y`
+      - Quadratic Bézier
+      - Elliptical Arc
+
+    SVG paths are the main tool leveraged (杠杆的) when drawing geographic
+    regions. However, imagine if you were to draw an entire map by hand using
+    SVG paths; the task would become **exhausting**
+
+    transform:
+
+    -   translate: `transform="translate(x,y)"`
+
+    -   scale: `transform="scale(2,2)"`
+
+    -   translate + scale:
+
+        ```html
+        <path d="M 120 120 L 220 220 C 200 70 480 290 320 120 Z"
+              stroke="steelblue" fill="lightyellow" stroke-width="2"
+              transform="translate(-200,-200), scale(2,2)"></path>
+        ```
+
+    group: `<g>`:
+
+    ```html
+    <svg height="500" width="800">
+        <g transform="translate(-200,-100), scale(2,2)">
+            <path d="M 120 120 L 220 220 C 200 70 480 290 320 120 Z"></path>
+            <line x1="220" y1="220" x2="200" y2="70"></line>
+            <circle cx="200" cy="70" r="5" ></circle>
+            <line x1="200" y1="70" x2="480" y2="290"></line>
+            <circle cx="480" cy="290" r="5" ></circle>
+            <line x1="480" y1="290" x2="320" y2="120"></line>
+        </g>
+    </svg>
+    ```
+
+    `<text>`
+
+    :   `<text x="250" y="150" class="myText">Hello world!</text>`{.html}
+
+        ```css
+        .myText {
+            font-size:22px;
+            font-family:Helvetica;
+            stroke-width:2;
+        }
+        ```
+
+        ```html
+        <svg width="600" height="600">
+            <text x="250" y="150" class="myText"
+                transform="rotate(45,200,0)" font-family="Verdana"
+                font-size="100">Hello world!</text>
+        </svg>
+        ```
+
+---
+
+d3.js
+
+:   ```javascript
+    var svg = d3.select("body")
+        .append("svg")
+        .attr("width", 200)
+        .attr("height", 200)
+
+    svg.append('rect')
+        .attr('x', 10)
+        .attr('y', 10)
+        .attr("width",50)
+        .attr("height",100);
+
+    svg.selectAll('rect').data(data).enter()
+        .append('rect')
+        .attr('x', function(d){ return d.x})
+        .attr('y', function(d){ return d.y})
+        .attr("width", function(d){ return d.width})
+        .attr("height", function(d){ return d.height});
+    ```
+
+    The `enter` function can be thought of as a section of code that executes
+    **when data is applied to the visualization for the first time**.
+
+    ```javascript
+    function makeData(n){
+        var arr = [];
+        for (var i=0; i<n; i++){
+            arr.push({
+                x:Math.floor((Math.random() * 100) + 1),
+                y:Math.floor((Math.random() * 100) + 1),
+                width:Math.floor((Math.random() * 100) + 1),
+                height:Math.floor((Math.random() * 100) + 1)
+            })
+        };
+        return arr;
+    }
+
+    var rect = svg.selectAll('rect').data(data);
+    // Enter
+    rect.enter().append('rect')
+        .attr('test', function(d,i) {
+            console.log('enter placing initial rectangle: ', i)
+        });
+    ```
+
+    the `enter()` section is called only when there are more elements in the array
+    than in the DOM.
+
+    ```javascript
+    // Update
+    rect.transition().duration(500)
+        .attr('x', function(d){ return d.x; })
+        .attr('y', function(d){ return d.y; })
+        .attr('width', function(d){ return d.width; })
+        .attr('height', function(d){ return d.height; })
+        .attr('test', function(d, i) {
+            // update every data change
+            console.log('updating x position to: ', d.x)
+        });
+
+    rect.exit()
+        .attr('test', function(d) { console.log('no data...') })
+        .remove();
+
+    // HttpRequest
+    d3.json("data/dataFile.json", function(error, json) {
+        // ...
+    });
+    ```
+
+    In this chapter, we explained the core elements of D3 (`enter`, `update`,
+    and `exit`).  We understood the power of joining data to our visualization.
+    Not only can data come from many different sources, but it is possible to
+    have the visualization automatically updated as well.  Many detailed
+    examples can be found in the D3 Gallery at
+    <https://github.com/mbostock/d3/wiki/Gallery>
+
+<div class="tzx-drawer">
+<https://github.com/mbostock/d3/wiki/Geo-Projections>
+
+:   > [Wiki](Home) ▸ [[API Reference]] ▸ [[Geo]] ▸ **Geo Projections**
+
+    <table class="highlight">
+    <tr height="146" valign="top">
+    <td>d3.geo.albersUsa<br><a href="http://bl.ocks.org/mbostock/4090848"><img src="http://bl.ocks.org/mbostock/raw/4090848/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.azimuthalEqualArea<br><a href="http://bl.ocks.org/mbostock/3757101"><img src="http://bl.ocks.org/mbostock/raw/3757101/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.azimuthalEquidistant<br><a href="http://bl.ocks.org/mbostock/3757110"><img src="http://bl.ocks.org/mbostock/raw/3757110/thumbnail.png" width="202"></a></td>
+    </tr>
+    <tr height="146" valign="top">
+    <td>d3.geo.conicEqualArea<br><a href="http://bl.ocks.org/mbostock/3734308"><img src="http://bl.ocks.org/mbostock/raw/3734308/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.conicConformal<br><a href="http://bl.ocks.org/mbostock/3734321"><img src="http://bl.ocks.org/mbostock/raw/3734321/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.conicEquidistant<br><a href="http://bl.ocks.org/mbostock/3734317"><img src="http://bl.ocks.org/mbostock/raw/3734317/thumbnail.png" width="202"></a></td>
+    </tr>
+    <tr height="146" valign="top">
+    <td>d3.geo.equirectangular<br><a href="http://bl.ocks.org/mbostock/3757119"><img src="http://bl.ocks.org/mbostock/raw/3757119/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.gnomonic<br><a href="http://bl.ocks.org/mbostock/3757349"><img src="http://bl.ocks.org/mbostock/raw/3757349/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.mercator<br><a href="http://bl.ocks.org/mbostock/3757132"><img src="http://bl.ocks.org/mbostock/raw/3757132/thumbnail.png" width="202"></a></td>
+    </tr>
+    <tr height="146" valign="top">
+    <td>d3.geo.orthographic<br><a href="http://bl.ocks.org/mbostock/3757125"><img src="http://bl.ocks.org/mbostock/raw/3757125/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.stereographic<br><a href="http://bl.ocks.org/mbostock/3757137"><img src="http://bl.ocks.org/mbostock/raw/3757137/thumbnail.png" width="202"></a></td>
+    <td>d3.geo.transverseMercator<br><a href="http://bl.ocks.org/mbostock/5126418"><img src="http://bl.ocks.org/mbostock/raw/5126418/thumbnail.png" width="202"></a></td>
+    </tr>
+    </table>
+
+    Projects forward from spherical coordinates (in degrees) to Cartesian
+    coordinates (in pixels). Returns an array `[x, y]` given the input array
+    `[longitude, latitude]`.
+
+    Projects backward from Cartesian coordinates (in pixels) to spherical
+    coordinates (in degrees).
+
+    `projection.rotate([rotation])`
+
+    :   If rotation is specified, sets the projection’s three-axis rotation to
+        the specified angles `λ(lambda), φ(phi) and γ(gamma)` (yaw, pitch and
+        roll, or equivalently **l**ongitude, latitude and roll) in degrees and
+        returns the projection. If rotation is not specified, returns the
+        current rotation which defaults `[0, 0, 0]`. If the specified rotation
+        has only two values, rather than three, the roll is assumed to be 0°.
+
+        Constructs a new projection from the specified *raw* point projection
+        function. For example, a Mercator projection can be implemented as:
+
+        ```javascript
+        var mercator = d3.geo.projection(function(λ, φ) {
+          return [
+            λ,
+            Math.log(Math.tan(π / 4 + φ / 2))
+          ];
+        });
+        ```
+
+        (See
+        [src/geo/mercator.js](/mbostock/d3/blob/master/src/geo/mercator.js) for
+        the full implementation.) If the raw function supports an *invert*
+        method, then the returned projection will expose a corresponding
+        [invert](#invert) method.
+
+    <a name="_projection" href="#_projection">#</a> <b>projection</b>(<i>location</i>)
+
+    Projects forward from spherical coordinates (in degrees) to Cartesian
+    coordinates (in pixels). Returns an array [<i>x</i>, <i>y</i>] given the
+    input array [<i>longitude</i>, <i>latitude</i>]. May return null if the
+    specified *location* has no defined projected position, such as when the
+    location is outside the clipping bounds of the projection.
+
+    <a name="invert" href="#invert">#</a> projection.<b>invert</b>(<i>point</i>)
+
+    Projects backward from Cartesian coordinates (in pixels) to spherical
+    coordinates (in degrees). Returns an array [<i>longitude</i>,
+    <i>latitude</i>] given the input array [<i>x</i>, <i>y</i>]. Not all
+    projections implement *invert*; for noninvertible projections, this method
+    is undefined.
+
+    <a name="rotate" href="#rotate">#</a> projection.<b>rotate</b>([<i>rotation</i>])
+
+    If *rotation* is specified, sets the projection’s [three-axis
+    rotation](http://bl.ocks.org/mbostock/4282586) to the specified angles λ, φ
+    and γ ([yaw, pitch and
+    roll](http://en.wikipedia.org/wiki/Aircraft_principal_axes), or
+    equivalently [longitude,
+    latitude](http://en.wikipedia.org/wiki/Geographic_coordinate_system) and
+    roll) in degrees and returns the projection. If *rotation* is not
+    specified, returns the current rotation which defaults [0, 0, 0]. If the
+    specified *rotation* has only two values, rather than three, the roll is
+    assumed to be 0°.
+
+    <a name="center" href="#center">#</a> projection.<b>center</b>([<i>location</i>])
+
+    If *location* is specified, sets the projection’s center to the specified
+    *location*, a two-element array of longitude and latitude in degrees and
+    returns the projection. If *center* is not specified, returns the current
+    center which defaults to ⟨0°,0°⟩.
+
+    <a name="translate" href="#translate">#</a> projection.<b>translate</b>([<i>point</i>])
+
+    If *point* is specified, sets the projection’s translation offset to the
+    specified two-element array [<i>x</i>, <i>y</i>] and returns the
+    projection. If *point* is not specified, returns the current translation
+    offset which defaults to [480, 250]. The translation offset determines the
+    pixel coordinates of the projection’s [center](#center). The default
+    translation offset places ⟨0°,0°⟩ at the center of a 960×500 area.
+
+    <a name="scale" href="#scale">#</a> projection.<b>scale</b>([<i>scale</i>])
+
+    If *scale* is specified, sets the projection’s scale factor to the
+    specified value and returns the projection. If *scale* is not specified,
+    returns the current scale factor which defaults to 150. The scale factor
+    corresponds linearly to the distance between projected points. However,
+    scale factors are not consistent across projections.
+
+    <a name="clipAngle" href="#clipAngle">#</a> projection.<b>clipAngle</b>(<i>angle</i>)
+
+    If *angle* is specified, sets the projection’s clipping circle radius to
+    the specified angle in degrees and returns the projection. If *angle* is
+    null, switches to [antimeridian
+    cutting](http://bl.ocks.org/mbostock/3788999) rather than small-circle
+    clipping. If *angle* is not specified, returns the current clip angle which
+    defaults to null. Small-circle clipping is independent of viewport clipping
+    via [clipExtent](#clipExtent).
+
+    <a name="clipExtent" href="#clipExtent">#</a> projection.<b>clipExtent</b>(<i>extent</i>)
+
+    If *extent* is specified, sets the projection’s viewport clip extent to the
+    specified bounds in pixels and returns the projection. The *extent* bounds
+    are specified as an array [​[<i>x0</i>, <i>y0</i>], [<i>x1</i>,
+    <i>y1</i>]​], where <i>x0</i> is the left-side of the viewport,
+    <i>y0</i> is the top, <i>x1</i> is the right and <i>y1</i> is the bottom.
+    If *extent* is null, no viewport clipping is performed. If *extent* is not
+    specified, returns the current viewport clip extent which defaults to null.
+    Viewport clipping is independent of small-circle clipping via
+    [clipAngle](#clipAngle).
+
+    <a name="precision" href="#precision">#</a> projection.<b>precision</b>(<i>precision</i>)
+
+    If *precision* is specified, sets the threshold for the projection’s
+    [adaptive resampling](http://bl.ocks.org/mbostock/3795544) to the specified
+    value in pixels and returns the projection. This value corresponds to the
+    [Douglas–Peucker](http://en.wikipedia.org/wiki/Ramer–Douglas–
+    Peucker_algorithm) distance. If *precision* is not specified, returns the
+    projection’s current resampling precision which defaults to
+    `Math.SQRT(1/2)`.
+
+    A *precision* of `0` disables adaptive resampling.
+
+    <a name="stream" href="#stream">#</a> projection.<b>stream</b>(<i>listener</i>)
+
+    Returns a projecting [stream](Geo-Streams) wrapper for the specified
+    *listener*. Any geometry streamed to the wrapper is projected before being
+    streamed to the wrapped listener. A typical projection involves several
+    stream transformations: the input geometry is first converted to radians,
+    rotated on three axes, clipped to the small circle or cut along the
+    antimeridian, and lastly projected to the Cartesian plane with adaptive
+    resampling, scale and translation.
+
+    <a name="projectionMutator" href="#projectionMutator">#</a> d3.geo.<b>projectionMutator</b>(<i>rawFactory</i>)
+
+    Constructs a new projection from the specified *raw* point projection
+    function *factory*. This function does not return the projection directly,
+    but instead returns a *mutate* method that you can call whenever the raw
+    projection function changes. For example, say you’re implementing the
+    Albers equal-area conic projection, which requires configuring the
+    projection's two parallels. Using closures, you can implement the raw
+    projection as follows:
+
+    ```javascript
+    // φ0 and φ1 are the two parallels
+    function albersRaw(φ0, φ1) {
+      return function(λ, φ) {
+        return [
+          /* compute x here */,
+          /* compute y here */
+        ];
+      };
+    }
+    ```
+
+    Using d3.geo.projectionMutator, you can implement a standard projection
+    that allows the parallels to be changed, reassigning the raw projection
+    used internally by d3.geo.projection:
+
+    ```javascript
+    function albers() {
+      var φ0 = 29.5,
+          φ1 = 45.5,
+          mutate = d3.geo.projectionMutator(albersRaw),
+          projection = mutate(φ0, φ1);
+
+      projection.parallels = function(_) {
+        if (!arguments.length) return [φ0, φ1];
+        return mutate(φ0 = +_[0], φ1 = +_[1]);
+      };
+
+      return projection;
+    }
+    ```
+
+    Thus, when creating a mutable projection, the *mutate* function is never
+    exposed, but can be used to recreate the underlying raw projection easily.
+    For the full implementation, see
+    [src/geo/albers.js](/mbostock/d3/blob/master/src/geo/albers.js).
+
+    **Standard Projections**
+
+    :   <a name="albers" href="#albers">#</a> d3.geo.<b>albers</b>()
+
+        An alias for [d3.geo.conicEqualArea](#conicEqualArea), with USA-centric
+        defaults: scale 1000, translate [480, 250], rotation [96°, 0°], center
+        ⟨-0.6°, 38.7°⟩ and parallels [29.5°, 45.5°], making it suitable for
+        displaying the United States, centered around [Hutchinson,
+        Kansas](https://maps.google.com/maps?q=Hutchinson,+Kansas&z=5) in a
+        960×500 area. The central meridian and parallels are specified by the
+        [USGS](http://www.usgs.gov/) in the 1970 [National
+        Atlas](http://www.nationalatlas.gov/).
+
+        <a name="albersUsa" href="#albersUsa">#</a> d3.geo.<b>albersUsa</b>()
+
+        <a href="http://bl.ocks.org/mbostock/4090848"><img src="http://bl.ocks.org/mbostock/raw/4090848/thumbnail.png" width="202"></a>
+
+        The Albers USA projection is a composite projection of four Albers
+        projections designed to display the forty-eight lower United States
+        alongside Alaska and Hawaii. Although intended for choropleths (`/ˈkɔːrəˌplɛθ/` 等值), it
+        scales the area of Alaska by a factor of 0.35x (a <i>lie factor</i> of
+        3); Hawaii is shown at the same scale as the lower forty-eight.
+
+        The Albers USA projection does not support rotation or centering.
+
+        <a name="azimuthalEqualArea" href="#azimuthalEqualArea">#</a> d3.geo.<b>azimuthalEqualArea</b>()
+
+        <a href="http://bl.ocks.org/mbostock/3757101"><img src="http://bl.ocks.org/mbostock/raw/3757101/thumbnail.png" width="202"></a>
+
+        The azimuthal equal-area projection is also suitable for choropleths. A
+        [polar aspect](http://bl.ocks.org/mbostock/4364903) of this projection
+        is used for the United Nations logo.
+
+        <a name="azimuthalEquidistant" href="#azimuthalEquidistant">#</a> d3.geo.<b>azimuthalEquidistant</b>()
+
+        <a href="http://bl.ocks.org/mbostock/3757110"><img src="http://bl.ocks.org/mbostock/raw/3757110/thumbnail.png" width="202"></a>
+
+        The azimuthal equidistant projection preserves distances from the
+        projection’s center: the distance from any projected point to the
+        projection’s center is proportional to the great arc distance. Thus,
+        circles around the projection’s center are projected to circles on the
+        Cartesian plane. This can be useful for visualizing distances relative
+        to a point of reference, such as commute distances.
+
+        <a name="conicConformal" href="#conicConformal">#</a> d3.geo.<b>conicConformal</b>()
+
+        <a href="http://bl.ocks.org/mbostock/3734321"><img src="http://bl.ocks.org/mbostock/raw/3734321/thumbnail.png" width="202"></a>
+        <a href="http://bl.ocks.org/mbostock/9764521"><img src="http://bl.ocks.org/mbostock/raw/9764521/thumbnail.png" width="202"></a>
+
+        Lambert’s conformal conic projection projects the globe conformally onto a cone.
+
+        <a name="conicConformal_parallels" href="#conicConformal_parallels">#</a> conicConformal.<b>parallels</b>([<i>parallels</i>])
+
+        If *parallels* is specified, sets the projection’s standard parallels
+        to the specified two-element array of latitudes (in degrees) and
+        returns the projection. If *parallels* is not specified, returns the
+        current parallels.
+
+        <a name="conicEqualArea" href="#conicEqualArea">#</a> d3.geo.<b>conicEqualArea</b>()
+
+        <a href="http://bl.ocks.org/mbostock/3734308"><img src="http://bl.ocks.org/mbostock/raw/3734308/thumbnail.png" width="202"></a>
+
+        The Albers projection, as an
+        [equal-area](http://en.wikipedia.org/wiki/Map_projection#Equal-area)
+        projection, is recommended for
+        [choropleths](http://mbostock.github.com/d3/ex/choropleth.html) as it
+        preserves the relative areas of geographic features.
+
+        <a name="conicEqualArea_parallels" href="#conicEqualArea_parallels">#</a> conicEqualArea.<b>parallels</b>([<i>parallels</i>])
+
+        If *parallels* is specified, sets the Albers projection’s standard
+        parallels to the specified two-element array of latitudes (in degrees)
+        and returns the projection. If *parallels* is not specified, returns
+        the current parallels. To minimize distortion, the parallels should be
+        chosen to surround the projection’s [center](#center).
+
+        <a name="conicEquidistant" href="#conicEquidistant">#</a> d3.geo.<b>conicEquidistant</b>()
+
+        <a href="http://bl.ocks.org/mbostock/3734317"><img src="http://bl.ocks.org/mbostock/raw/3734317/thumbnail.png" width="202"></a>
+
+        <a name="conicEquidistant_parallels" href="#conicEquidistant_parallels">#</a> conicEquidistant.<b>parallels</b>([<i>parallels</i>])
+
+        If *parallels* is specified, sets the projection’s standard parallels to
+        the specified two-element array of latitudes (in degrees) and returns the
+        projection. If *parallels* is not specified, returns the current parallels.
+
+        <a name="equirectangular" href="#equirectangular">#</a> d3.geo.<b>equirectangular</b>()
+
+        <a href="http://bl.ocks.org/mbostock/3757119"><img src="http://bl.ocks.org/mbostock/raw/3757119/thumbnail.png" width="202"></a>
+
+        The equirectangular, or plate carrée projection, is the simplest possible
+        geographic projection: the identity function. It is neither equal-area nor
+        conformal, but is sometimes used for raster data. See [raster
+        reprojection](http://bl.ocks.org/mbostock/4329423) for an example; the
+        source image uses the equirectangular projection.
+
+        <a name="gnomonic" href="#gnomonic">#</a> d3.geo.<b>gnomonic</b>()
+
+        <a href="http://bl.ocks.org/mbostock/3757349"><img src="http://bl.ocks.org/mbostock/raw/3757349/thumbnail.png" width="202"></a>
+
+        The gnomonic projection is an azimuthal projection that projects great
+        circles as straight lines. See the [interactive
+        gnomonic](http://bl.ocks.org/mbostock/3795048) for an example.
+
+        <a name="mercator" href="#mercator">#</a> d3.geo.<b>mercator</b>()
+
+        <a href="http://bl.ocks.org/mbostock/3757132"><img src="http://bl.ocks.org/mbostock/raw/3757132/thumbnail.png" width="202"></a>
+
+        The spherical Mercator projection is commonly used by tiled mapping
+        libraries (such as [OpenLayers](http://openlayers.org/) and
+        [Leaflet](http://leafletjs.com)). For an example displaying raster tiles
+        with the Mercator projection, see the [d3.geo.tile
+        plugin](http://bl.ocks.org/mbostock/4150951). It is
+        [conformal](http://en.wikipedia.org/wiki/Map_projection#Conformal);
+        however, it introduces severe area distortion at world scale and thus is
+        not recommended for choropleths.
+
+    <a name="orthographic" href="#orthographic">#</a> d3.geo.<b>orthographic</b>()
+
+    <a href="http://bl.ocks.org/mbostock/3757125"><img src="http://bl.ocks.org/mbostock/raw/3757125/thumbnail.png" width="202"></a>
+
+    The orthographic projection is an azimuthal projection suitable for
+    displaying a single hemisphere; the point of perspective is at infinity.
+    See the [animated world tour](http://bl.ocks.org/mbostock/4183330) and
+    [interactive orthographic](http://bl.ocks.org/mbostock/3795040) for
+    examples. For a general perspective projection, see the [satellite
+    projection](http://bl.ocks.org/mbostock/3790444).
+
+    <a name="stereographic" href="#stereographic">#</a> d3.geo.<b>stereographic</b>()
+
+    <a href="http://bl.ocks.org/mbostock/3757137"><img src="http://bl.ocks.org/mbostock/raw/3757137/thumbnail.png" width="202"></a>
+
+    The stereographic projection is another perspective (azimuthal) projection.
+    The point of perspective is on the surface of the sphere, looking in; it is
+    thus commonly used for celestial charts. See the [interactive
+    stereographic](http://bl.ocks.org/mbostock/3763057) for an example.
+
+    <a name="transverseMercator" href="#transverseMercator">#</a> d3.geo.<b>transverseMercator</b>()
+
+    <a href="http://bl.ocks.org/mbostock/5126418"><img src="http://bl.ocks.org/mbostock/raw/5126418/thumbnail.png" width="202"></a>
+    <a href="http://bl.ocks.org/mbostock/4695821"><img src="http://bl.ocks.org/mbostock/raw/4695821/thumbnail.png" width="202"></a>
+
+    The transverse Mercator projection.
+
+    **Raw Projections**
+
+    D3 exposes several raw projections, designed for reuse when implementing a
+    composite projection (such as [Sinu–
+    Mollweide](http://bl.ocks.org/mbostock/4319903), which combines the raw
+    [sinusoidal](http://bl.ocks.org/mbostock/3712399) and
+    [Mollweide](http://bl.ocks.org/mbostock/3734336) projections). Raw
+    projections are typically wrapped using [d3.geo.projection](#projection)
+    before use. These are point functions that take spherical coordinates λ and
+    φ (in radians) as input and return a two-element array (also in radians) as
+    output. Many raw projections also implement an inverse projection for
+    mapping from planar to spherical coordinates.
+
+    <a name="albers_raw" href="#albers_raw">#</a> d3.geo.albers.<b>raw</b>(φ<sub>0</sub>, φ<sub>1</sub>)
+
+    An alias for [d3.geo.conicEqualArea.raw](#conicEqualArea_raw).
+
+    <a name="azimuthalEqualArea_raw" href="#azimuthalEqualArea_raw">#</a> d3.geo.azimuthalEqualArea.<b>raw</b>
+
+    The raw [azimuthal equal-area projection](#azimuthalEqualArea).
+
+    <a name="azimuthalEquidistant_raw" href="#azimuthalEquidistant_raw">#</a> d3.geo.azimuthalEquidistant.<b>raw</b>
+
+    The raw [azimuthal equidistant projection](#azimuthalEquidistant).
+
+    <a name="conicConformal_raw" href="#conicConformal_raw">#</a> d3.geo.conicConformal.<b>raw</b>(φ<sub>0</sub>, φ<sub>1</sub>)
+
+    Returns a raw [conformal conic projection](#conicConformal) with the specified parallels in radians.
+
+    <a name="conicEqualArea_raw" href="#conicEqualArea_raw">#</a> d3.geo.conicEqualArea.<b>raw</b>(φ<sub>0</sub>, φ<sub>1</sub>)
+
+    Returns a raw [Albers projection](#conicEqualArea) with the specified parallels in radians.
+
+    <a name="conicEquidistant_raw" href="#conicEquidistant_raw">#</a> d3.geo.conicEquidistant.<b>raw</b>(φ<sub>0</sub>, φ<sub>1</sub>)
+
+    Returns a raw [equidistant conic projection](#conicEquidistant) with the specified parallels in radians.
+
+    <a name="equirectangular_raw" href="#equirectangular_raw">#</a> d3.geo.equirectangular.<b>raw</b>
+
+    The raw [equirectangular projection](#equirectangular).
+
+    <a name="gnomonic_raw" href="#gnomonic_raw">#</a> d3.geo.gnomonic.<b>raw</b>
+
+    The raw [gnomonic projection](#gnomonic).
+
+    <a name="mercator_raw" href="#mercator_raw">#</a> d3.geo.mercator.<b>raw</b>
+
+    The raw [Mercator projection](#mercator).
+
+    <a name="orthographic_raw" href="#orthographic_raw">#</a> d3.geo.orthographic.<b>raw</b>
+
+    The raw [orthographic projection](#orthographic).
+
+    <a name="stereographic_raw" href="#stereographic_raw">#</a> d3.geo.stereographic.<b>raw</b>
+
+    The raw [stereographic projection](#stereographic).
+</div>
+
+---
+
+```javascript
+// [mə'ketə] n. 墨卡托（地理学家，地图制作家）
+var projection = d3.geo.mercator();
+// for USA: d3.geo.albersUsa
+
+var path = d3.geo.path().projection(projection);
+var svg = d3.select("#map")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+var states = topojson.feature(data, data.objects.MEX_adm1);
+```
+
+The bounding box is a spherical box that returns
+a two-dimensional array of min/max coordinates, inclusive of the geographic
+data passed:
+
+```javascript
+var b = path.bounds(states);
+var b = path.bounds(states.features[5]);
+```
+
+The bounding box is represented by a two-dimensional array:
+`[[left, bottom], [right, top]]`, where left is the minimum longitude, bottom
+is the minimum latitude, right is maximum longitude, and top is the maximum latitude.
+
+```javascript
+var s = .95 / Math.max((b[1][0] - b[0][0]) / width,
+        (b[1][1] - b[0][1]) / height);
+
+var t = [
+            (width - s * (b[1][0] + b[0][0])) / 2,
+            (height - s * (b[1][1] + b[0][1])) / 2
+        ];
+
+projection.scale(s).translate(t);
+```
+
+```javascript
+var map = svg.append('g').attr('class', 'boundary');
+```
+
+creating choropleths
+
+```javascript
+var color = d3.scale.linear().domain([0,33]).range(['red', 'yellow']);
+mexico.attr('fill', function(d,i) {return color(i)});
+```
+
+<https://github.com/mbostock/d3/wiki/Scales>
+
+The `ID_1` property contains a unique numeric value for every state in the array.
+If we insert this as an `id` attribute into the DOM, then we would create a quick and easy way to select each state in the country.
+
+Click
+
+Let's update the enter method to bind our new `click` method to every new
+DOM element that  enter appends:
+
+```javascript
+//Enter
+mexico.enter()
+    .append('path')
+    .attr('d', path)
+    .attr('id', geoID)
+    .on("click", click);
+```
+
+```javascript
+setInterval(function(){
+    mexico.transition().duration(500)
+    .style('fill', function(d) {
+        return color(Math.floor((Math.random() * 32) + 1));
+    });
+},2000);
+```
+
+```javascript
+d3.csv('cities.csv', function(cities) {
+    var cityPoints = svg.selectAll('circle').data(cities);
+    var cityText = svg.selectAll('text').data(cities);
+    cityPoints.enter()
+        .append('circle')
+        .attr('cx', function(d) {return projection ([d.lon, d.lat])[0]})
+        .attr('cy', function(d) {return projection ([d.lon, d.lat])[1]})
+        .attr('r', 4);
+});
+```
+
+---
+
+The Event interface is used to provide **contextual information** about an event to
+the handler processing the event. An object that implements the Event interface
+is generally passed as the first parameter to an event handler. More specific
+context information is passed to event handlers by deriving additional interfaces
+from Event which contain information directly relating to the type of event they
+accompany. These derived interfaces are also implemented by the object passed to
+the event listener.
+
+```javascript
+varbtn = document.getElementById('btn');
+btn.addEventListener('click', function() {
+    console.log('Hello world'); }, false );
+```
+
+`false` 是说这个 `event` 处理完了，别人还可以继续处理。（done with it？No(false).）
+
+```css
+#tooltip {
+    position: absolute;
+    z-index: 2;
+    background: rgba(0,153,76,0.8);
+    width:130px;
+    height:20px;
+    color:white;
+    font-size: 14px;
+    padding:5px;
+    top:-150px;
+    left:-150px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+    "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+```
+
+```javascript
+var hover = function(d) {
+    var div = document.getElementById('tooltip');
+    div.style.left = event.pageX +'px';
+    div.style.top = event.pageY + 'px';
+    div.innerHTML = d.properties.NAME_1;
+};
+```
+
+[Towards Reusable Charts](https://bost.ocks.org/mike/chart/)
+
+:   这篇文章写得真是循序渐进！
+
+    I jest (开玩笑的).
+
+    ```
+    fun()                                               // no configs?
+        -> fun(width, height)                           // fixed?
+        -> fun(config)                                  // cool
+        -> fun(config){return fun(){}} (closure)        // and efficient
+    ```
+
+    [Method chaining - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Method_chaining)
+
+    :   Method chaining, also known as named parameter idiom, is a common syntax
+        for invoking multiple method calls in object-oriented programming languages.
+
+        ```cpp
+        ostream & operator << (ostream &os, Person const &person)
+        {
+            return os << "Hello, my name is "
+                      << person.m_name
+                      << " and I am "
+                      << person.m_age
+                      << " years old.";
+        }
+        ```
+
+        ruby
+
+        ```ruby
+        class Person
+
+          def name(value)
+            @name = value
+            self
+          end
+
+          def age(value)
+            @age = value
+            self
+          end
+
+          def introduce
+            puts "Hello, my name is #{@name} and I am #{@age} years old."
+          end
+
+        end
+
+        person = Person.new
+        person.name("Peter").age(21).introduce
+        # => Hello, my name is Peter and I am 21 years old.
+        ```
+
+        jQuery
+
+        ```javascript
+        // chaining
+        $("#person").slideDown('slow')
+           .addClass('grouped')
+           .css('margin-left', '11px');
+        ```
+
+        java
+
+        ```java
+        public Person setName(String name) {
+            this.name = name;
+            return this;
+        }
+        ```
+
+        python
+
+        ```python
+        def name(self, value):
+            self.name = value
+            return self
+        ```
+
+    ```javascript
+    function chart() {
+      var width = 720, // default width
+          height = 80; // default height
+
+      function my() {
+        // generate chart here, using `width` and `height`
+      }
+
+      my.width = function(value) {
+        if (!arguments.length) return width;
+        width = value;
+        return my;
+      };
+
+      my.height = function(value) {
+        if (!arguments.length) return height;
+        height = value;
+        return my;
+      };
+
+      return my;
+    }
+    ```
+
+    The chart can now be configured, but two essential ingredients are still
+    missing: the DOM element into which to render the chart (such as a particular
+    `div` or `document.body`), and the data to display. These could be considered
+    configuration, but D3 provides **a more natural representation for data and
+    elements: the selection**.
+
+    The simplest way of invoking our chart function on a selection, then, is to
+    **pass the selection as an argument**:
+
+    `myChart(selection);`{.javascript}
+
+    Or equivalently, using selection.call:
+
+    selection.call(myChart);
+
+    From the API reference:
+
+    > `[call]` invokes the specified function once, passing
+    > in the current selection… The call operator is identical to invoking a function
+    > by hand; but it makes it easier to use method chaining.
+
+    Internally, a call-based chart implementation looks something like this:
+
+    ```javascript
+    function my(selection) {
+      selection.each(function(d, i) {
+        // generate chart here; `d` is the data and `this` is the element
+      });
+    }
+    ```
+
+    You could also design your chart function to work directly with selection.each,
+    but selection.call is more general and has precedent with the brush and axis
+    components.
+
+    We now have a **strawman convention** for reusable visualization components.
+
+    In software development, **a crude plan** or document** may serve as the strawman
+    or starting point in the evolution of a project. The strawman is not
+    expected to be the last word; it is **refined** until a final model or document
+    is obtained that resolves all issues concerning the scope and nature of the
+    project. In this context, a strawman can take the form of an outline, a
+    set of charts, a presentation, or a paper.
+
+    The ‘Straw Man’ also fits in neatly with the concept of iterative design,
+    repeating and re-drafting to improve an initial concept or design. If
+    anything is built, often, it may not end up in the final product. It might
+    be that the decision is to not continue at all, in which case, the ‘Straw
+    Man’ approach may have saved a lot of wasted work in the long run. Or, the
+    final approach may be very different from the first model. Either way, the
+    ‘Straw Man’ will have proven its worth by having re-directed the approach
+    before any significant work is undertaken.
+
+    refs and see also
+
+      - [Straw man proposal - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Straw_man_proposal)
+
+---
+
+```javascript
+var zoomed = function () {
+    map.attr("transform",
+             "translate("+ d3.event.translate + ") scale(" + d3.event.scale + ")");
+};
+
+var zoom = d3.behavior.zoom()
+    .scaleExtent([1, 8])
+    .on("zoom", zoomed);
+    .size([width, height]);
+```
+
+[Zoom Behavior · mbostock/d3 Wiki](https://github.com/mbostock/d3/wiki/Zoom-Behavior)
+
+:   ```javascript
+    var zoom = d3.behavior.zoom();
+    selection.call(zoom);
+    ```
+
+    All registered listeners use the “zoom” namespace, so to subsequently
+    remove the behavior: `selection.on(".zoom", null);`{.javascript}
+
+    `zoom.scaleExtent([extent])`, defaults to [0, Infinity].
+
+    `zoom.center([center])`
+
+    :   If center is specified, sets the [focal point](http://bl.ocks.org/mbostock/6226534) `[x, y]`
+        for mousewheel zooming and returns this zoom behavior. If center is not
+        specified, returns the current focal point, which defaults to null. A
+        null center indicates that mousewheel zooming should zoom in and out
+        around the current mouse location.
+
+    `zoom.on(type, listener)`
+
+    :   Registers the specified listener to receive events of the specified
+        type from the zoom behavior. The following types are supported:
+
+          - zoomstart - at the start of a zoom gesture (e.g., touchstart).
+          - zoom - when the view changes (e.g., touchmove).
+          - zoomend - at the end of the current zoom gesture (e.g., touchend).
+
+---
+
+[malloc 与 free？ - 知乎](https://www.zhihu.com/question/41567197#answer-32596782)
+
+:   我先问你个问题：指针中是没有所在内存块大小的信息的，那么 free 怎么才能知道
+    要释放的内存块有多大呢？于是，对于大多数内存分配器，malloc 申请的实际内存比
+    你要求的空间要大几个字节，里面存储了额外的数据来记录这块内存有多大，一般就
+    是直接存在指针左边。free 的时候，就会去读取指针地址减去一个常数之后的那块内
+    存，来获取内存块的信息。因此如果你 free 一个不指向内存块开始处的指针，free
+    的时候就会把其他的数据错误解释成内存块的信息，（大概率）导致程序崩溃。当然
+    现代的内存分配器对于不同大小的内存申请，会采用不同的分配策略，但无论策略如
+    何，去 free 一个不是 malloc 来的指针，都是非常危险的举动。
+
+    作者：Belleve
+
+    初学者的话，不要多想，把 CSAPP 看了再说。
+
+    C 是一门设计感不是很强的语言，换句话说很多东西就是没什么道理和规律可循的，要
+    知道具体的问题和当时的写法才能明白其中道理。
+
+    比如吧，malloc 是个内存管理 package，并不是一个很底层的东西。 更加底层的看，
+    一个程序有一大块内存，叫作 heap。但是呢，heap 的大小是有限的，用完了问操作系
+    统要更多 heap，是很耗费资源的，于是就需要内存管理系统来帮助整理 heap，提高利
+    用率。
+
+    这个时候就要在内存里面建立一个链表，把没有用的内存块，大小等等都储存起来，
+    方便按照大小取用。随着内存块被 malloc 和被 free，这些 free block 也会被打散和合
+    并。之所以可以做到，就是因为默认每个内存块的首尾都记录有信息。
+
+    你任意在内存块里移动，free 的时候程序自动往前读一个 block，发现的却不是一个完
+    整的 tag (你自己放了什么就是什么)，assertion failure 已经是小事了，基本上会
+    segfault，运气不好你会跳到别的内存块去，损坏一大片内存。
+
+    所以，不要乱搞。CSAPP 里自己写过一个 malloc 就明白了。
+
+    当然了，国内一般是不教 Linux 和 bash 一类的，国内很多人是不会用的，这也是为啥大
+    家都觉得 windows 好的一个原因。我可以负责任地说我在美国读的 CS 本科，系里没有一
+    台 Windows 电脑。
+
+    电池是化学工业。
+
+    新材料的研发难度是知乎这群程序员根本无法想象的。程序员们都活在完美的无熵世
+    界里，邱奇和图灵命定了整个世界的法则。律法是存在的，而且是万能的，我们只需
+    要跟从律法，就能得到想要的结果——如果它不对，一定是我的问题，找到改正就好。
+    醒醒吧，真实世界远远比你们的小世界可怕，我们面对的是一片漆黑和死寂，我们不
+    知道规则，不知道哪里是致命的陷阱：做材料研究的是在和上帝搏斗。
+
+    做个不恰当的比喻：研发新材料的难度好比 @李阿玲 徒手写 TeX：一次写出一个四万
+    行的程序，各个部件耦合性极强且无法解耦，写完前无法预测结果，无法单元测试……
+    啊不对，材料研究比 @李阿玲 更加令人绝望，因为 @李阿玲 好歹可以去 debug，材
+    料的性质不对无法 debug，只能改配方重新合成一份来 trial-and-error，错了不知
+    道为什么，最后成功了也不知道为什么……因此真无怪乎有些人把材料科学比作「往下
+    水道扔钱」。有人问计算化学——很好，我们组就是做计算化学的，优化一个 30 原子
+    的小分子结构需要两个小时；预测两个小分子的反应产物需要整整一天。我不认为地
+    球上有一台超算能在人类可接受的时间内算出某个电池结构的电量。
+
+    refs
+
+      - [电池技术为什么如此高深莫测，以至于一直是手机等相关行业的短板？](https://www.zhihu.com/question/27604615/answer/37295615)
+
 [看了三遍，越发认定它是最好的华语青春片 - 简书](http://www.jianshu.com/p/5be18abc2313#)
 
-塞缪尔·乌尔曼
+:   塞缪尔·乌尔曼
 
-:   青春不是数量而是一种品质，一旦获得就不会失去。
+    :   青春不是数量而是一种品质，一旦获得就不会失去。
 
-塞林格, 《麦田里的守望者》
+    塞林格, 《麦田里的守望者》
 
-:   一个不成熟男人的标志是他愿意为某种事业英勇地死去，一个成熟男人的标志是他愿
-    意为某种事业卑贱地活着。
+    :   一个不成熟男人的标志是他愿意为某种事业英勇地死去，一个成熟男人的标志是他愿
+        意为某种事业卑贱地活着。
 
+---
 
 离群索居
 
-离群索居的意思就是远离人群，自己一个人居住，泛指不合群，孤独的人。索：孤单，离开集体或群众，过孤独的生活。
+:   离群索居的意思就是远离人群，自己一个人居住，泛指不合群，孤独的人。索：孤单，离开集体或群众，过孤独的生活。
 
-吾离群而索居，亦已久矣。　《礼记·檀弓上》
-成语故事
-春秋时期，孔子的学生子夏生性孤僻，平时很少与同学合群，只与曾参比较要好。子夏的儿子死了，他差一点哭瞎了眼睛。曾参前去批评他，子夏听后，如梦初醒，觉得自己离群索居很久就造成这样，于是节哀顺变，与同学玩成一片。
+    > 吾离群而索居，亦已久矣。
+    > --《礼记·檀弓上》
 
-
-[SVG <path>](http://www.w3school.com.cn/svg/svg_path.asp)
-
-    M = moveto
-    L = lineto
-    H = horizontal lineto
-    V = vertical lineto
-    C = curveto
-    S = smooth curveto
-    Q = quadratic Belzier curve
-    T = smooth quadratic Belzier curveto
-    A = elliptical Arc
-    Z = closepath
-
+    春秋时期，孔子的学生子夏生性孤僻，平时很少与同学合群，只与曾参比较要好。子
+    夏的儿子死了，他差一点哭瞎了眼睛。曾参前去批评他，子夏听后，如梦初醒，觉得
+    自己离群索居很久就造成这样，于是节哀顺变，与同学玩成一片。
 
 Calibre 不知道为什么书都没了，需要点击 `Calibre Library` 然后 `恢复数据库` 进行恢复。
 
-![Showdown.js](http://showdownjs.github.io/demo/#/Welcome%20to%20Dvorak4tzx's%20Blog%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D)
-
-[Les Misérables Co-occurrence](https://bost.ocks.org/mike/miserables/)
+- [Showdown.js](http://showdownjs.github.io/demo/#/Welcome%20to%20Dvorak4tzx's%20Blog%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D)
+- [Les Misérables Co-occurrence](https://bost.ocks.org/mike/miserables/)
 
 [如何成为一名数据科学家？](https://www.zhihu.com/question/21592677#answer-31441560)
 
 [050a125b8009c45a1ed0c362cd341dbe - bl.ocks.org](http://bl.ocks.org/district10/050a125b8009c45a1ed0c362cd341dbe)
 
-More precisely, the username regular expression is /^[a-z0-9][a-z0-9]*$/i; it should be more lenient.
-
-['linɪənt]
-    adj. 宽大的；仁慈的
-
-感觉上。……
-
+More precisely, the username regular expression is `/^[a-z0-9][a-z0-9]*$/i`; it
+should be more lenient. (`['linɪənt]` adj. 宽大的；仁慈的)
 
 [About Blocks - bl.ocks.org](http://bl.ocks.org/-/about)
 
-- `.block`
-    + license - a supported [SPDX](http://bl.ocks.org/licenses.txt) license code
-        * apache-2.0
-        * bsd-2-clause
-        * bsd-3-clause
-        * **cc-by-4.0**
-        * cc-by-nc-4.0
-        * cc-by-nc-nd-4.0
-        * cc-by-nc-sa-4.0
-        * cc-by-nd-4.0
-        * **cc-by-sa-4.0**
-        * cddl-1.0
-        * epl-1.0
-        * **gpl-2.0**
-        * gpl-3.0
-        * lgpl-2.1
-        * lgpl-3.0
-        * **mit**
-        * mpl-2.0
-        * none
-    + height - the iframe height in pixels; defaults to 500
-    + scrolling - yes if the iframe should scroll; defaults to no
-    + border - no if the iframe should not have a border; defaults to yes
-- `230×120`, thumbnail.png. (960×500 preview.png or preview.jpg)
+:   - `.block`
+        + license - a supported [SPDX](http://bl.ocks.org/licenses.txt) license code
+            * apache-2.0
+            * bsd-2-clause
+            * bsd-3-clause
+            * **cc-by-4.0**
+            * cc-by-nc-4.0
+            * cc-by-nc-nd-4.0
+            * cc-by-nc-sa-4.0
+            * cc-by-nd-4.0
+            * **cc-by-sa-4.0**
+            * cddl-1.0
+            * epl-1.0
+            * **gpl-2.0**
+            * gpl-3.0
+            * lgpl-2.1
+            * lgpl-3.0
+            * **mit**
+            * mpl-2.0
+            * none
+        + height - the iframe height in pixels; defaults to 500
+        + scrolling - yes if the iframe should scroll; defaults to no
+        + border - no if the iframe should not have a border; defaults to yes
+    - `230×120`, thumbnail.png. (960×500 preview.png or preview.jpg)
 
-Protovis
-A JavaScript library for visualization; superseded by D3.
-
-For Example
+    Protovis: A JavaScript library for visualization; **superseded by D3**.
 
 ---
 

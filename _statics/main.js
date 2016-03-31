@@ -118,3 +118,9 @@ $(document).ready(function(){
 
     // appendSharp();
 });
+
+/*
+*/
+$('div.tzx-drawer').on('click', function(){
+    $(this).children().children('dd').toggleClass('tzx-drawer-hide');
+});
