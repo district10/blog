@@ -186,4 +186,5 @@ Links | 链签
 #. [编程随想的博客](https://program-think.blogspot.com/)
 #. [【资料分享】 - 1984City](https://1984.city/viewforum.php?f=7)
 #. [首页 - 波黎克斯](http://www.berlinix.com/index.php)
-#.
+#. [欢迎来到丘迟的维基世界 - a site build with Vim, Vimwiki and Git](http://wiki.ktmud.com/index.html)
+#. [Lync.in | Link the world.](http://lync.in/)

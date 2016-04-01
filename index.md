@@ -42,6 +42,7 @@ Search:<br>
 * 2016-03-01 [Game of Throne](post-0086-game-of-throne-series.html)
 * 2016-01-14 [Complex Network Notes](post-0084-complex-network-notes.html)
 * 2016-01-07 [WHU MOOC Academic Integrity](post-0082-whu-mooc-academic-integrity.html)
+* 2015-12-25 [Learning jQuery](post-0081-learning-jquery.html)
 * 2015-12-18 [软件开发者路线图](post-0080-apprenticeship.html)
 * 2015-12-17 [Lingoes 网络词典](post-0079-lingoes-dict.html)
 * 2015-12-17 [Learning Perl](post-0078-learning-perl.html)

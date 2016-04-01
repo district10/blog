@@ -21,6 +21,150 @@ cssfile:
 Notes | 笔记
 ============
 
+```javascript
+$('div.tzx-drawer').on('click', function(){
+    $(this).children().children('dd').toggleClass('tzx-drawer-hide');
+    if ($(this).children().children('dd:eq(0)').hasClass('tzx-drawer-hide')) {
+        window.scrollTo($(this).offset().left, $(this).offset().top);
+    }
+    return false;
+});
+```
+
+It also supports, but does not require, ...
+
+Ajax
+
+Call a local script on the server /api/getWeather with the query parameter zipcode=97201 and replace the element #weather-temp's html with the returned text.
+
+```javascript
+$.ajax({
+    url: "/api/getWeather",
+    data: {
+        zipcode: 97201
+    },
+    success: function( data ) {
+        $( "#weather-temp" ).html( "<strong>" + data + "</strong> degrees" );
+    }
+});
+```
+
+---
+
+[如何计算某月某日的weekday](http://butman.club/notes/cyber/%e5%a6%82%e4%bd%95%e8%ae%a1%e7%ae%97%e6%9f%90%e6%9c%88%e6%9f%90%e6%97%a5%e7%9a%84weekday/)
+
+:   ```r
+    #input: weekday (n) of the first day in a month,
+    #       sum of the days (d) in a month
+       date <- c(1:d)
+       date.weekday <- (date+(n-1)+7) %% 7
+    #output: every weekday in the month
+    ```
+
+<div class="tzx-drawer" shy>
+[缘份这东西纯属扯淡 全凭喜欢的人说了算 (缘份 影评)](https://movie.douban.com/review/7827324/)
+
+:   ![](https://img1.doubanio.com/view/thing_review/large/public/p118619.jpg)
+
+    两厢情愿的爱情名为缘份，一厢情愿的爱情连声谢谢都显得多余。有情人终成眷属的
+    背后，总有那么一两个人在默默承受着孤独。
+
+    有些时候，就算费尽心机，每次每次的刻意安排，人为的制造缘分，也要努力在一起
+    ，因为他爱了，就珍惜了。而对于身边的其他人，明明是一而再再而三的各种巧遇，
+    因为没有心动，所以就要忽略和无视，尽量躲开。
+
+    接近片尾的时候她牵着他的手在地铁里狂奔着，恍惚间，我仿佛看到梅姑牵着哥哥奔
+    向了天堂。当时就想：就你们俩，在一起吧。可是，影片中他是去找另一个她的。哥
+    哥，梅姑，在那里过得好吗？
+
+    只是因为不喜欢对方，他从来不会把它当作缘分看待，即使最后的缘份游戏，保罗先
+    和安妮遇见了，他也只是丢下一句“这次不算。”而撒腿就跑，继续寻他的莫妮卡去了
+    。只是如果没安妮的自我牺牲，为他们牵桥搭线 ，他们还会有圆满美好的结局吗？
+
+    至于梅艳芳，哇，我只能说这个人物太完美而显得不真实。嗯，理想化的人物才那么
+    讨人喜欢人气最高。她敢爱敢恨，活的潇洒，她对保罗真可谓“钱到心更到”，但是保
+    罗不喜欢她。
+
+    > 我怀疑，我们人生里面，唯一可以相遇的机会，已经错过了。
+
+    而最令人欣赏的是，就算外界都揣测她和张国荣多么投契，那么多人都渴望借着谈论
+    他而令自己成为焦点……在那篇《亲爱的哥哥》中，张曼玉却这样说：“虽然我们合作无
+    间，我们却从不是很亲密的朋友，因为我们性格和世界观很不同，但这无妨我欣赏他
+    的美貌，以及他在电影中散发的敏感和作为一个歌手的才华”。
+
+    ![](https://img3.doubanio.com/view/thing_review/large/public/p118621.jpg)
+
+    最后为了两人的相遇，出钱让地铁站在末班车后加开一列车的举动简直帅炸了，这一
+    波炫富炫得漂亮！比起现在的不少影视作品中的“花样炫富”不知道逼格高多少啊！然
+    而最后一幕中，当保罗和莫妮卡深情拥吻的时候，一旁安妮落寞神伤的表情也同样让
+    人心碎难忘。不得不说安妮是这部作品中最让人动容的一个角色，梅姑也凭借这一角
+    色获得了第4届香港金像奖最佳女配角。
+
+    梅艳芳一生珍惜朋友、交游广阔，她在娱乐圈里是公认的豪爽与仗义。正因为这种真
+    诚、博爱、侠义的性格使她成为演艺界尊崇的“大姐大”。2002年，梅艳芳在庆祝入行
+    二十年的纪念节目上对大家说：我在娱乐圈闯荡二十年，四个字概括：“友情岁月！”
+
+    演唱间隙，梅艳芳深情地说：“特别嘉宾张国荣！我生命中、娱乐圈中唯一的好朋友！
+    ”这一棍子打死的人太多了，哥哥暗中提醒她：“喂，你的好朋友有好多。”
+
+    阿梅也改过口来：“我是说，像自家人一样的”
+
+    在香港的演员中，让人最心疼的男人是张国荣，最心疼的女人是梅艳芳。
+
+    ![](http://mmbiz.qpic.cn/mmbiz/67XdDbQWEiakhedtX8cOFV3Upl5yGpIzCzx2qJcN9ExuPOhvjpLU3ZRHkR8S9JINjddQhUAXsdgkeUJQt2bLicGw/640?wx_fmt=png&wxfrom=5&wx_lazy=1)
+
+    1986年两人又合作了一部电影叫《偶然》梅艳芳再以Anita为名恋上了张国荣，这一次他们在戏里以喜剧结束。
+
+    ![](http://mmbiz.qpic.cn/mmbiz/67XdDbQWEiakhedtX8cOFV3Upl5yGpIzC93j1fd0Qx2icibHBDuXiaw3AdceEYbwNX7ibyI9NgKGduJ8LwdCfwsOXKg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1)
+
+    ![梅艳芳出席张国荣葬礼](http://mmbiz.qpic.cn/mmbiz/67XdDbQWEiakhedtX8cOFV3Upl5yGpIzCoOwEnqSzScqXNkKibEZByvHDM4euudgzgiaCQyvgRnB7NYjeibs8llE2Q/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1)
+
+    记得你（梅艳芳）曾经对我说：‘如果我到了四十岁还没嫁出去，你就娶我好吗？’
+
+    张国荣对梅艳芳说过，等我们到40岁，你未嫁，我未娶，我们就在一起。可是后来，
+    他在03年4月1日坠楼殒身，她在同年12月30日肺功能衰竭病逝。那年，她刚好40岁。
+
+    ![哥哥扮女人靓，梅姐扮男人帅](https://img1.doubanio.com/view/photo/photo/public/p990204337.jpg)
+
+    真的好喜欢梅的短发啊~！！！
+
+    综上，哥哥与梅艳芳是好到像一家人一样的朋友，没有半点男女之情。也希望大家不
+    要随意猜测。
+
+    红红仍是你，赠我的心中艳阳。
+    迟迟年月，难耐这一生的变幻。
+
+    - 张国荣（`1956 年  9 月 12 日 — 2003 年  4 月  1 日`）
+    - 梅艳芳（`1963 年 10 月 10 日 — 2003 年 12 月 30 日`）
+
+    refs and see also
+
+      - [所谓缘份，就是一点点憧憬+ 一点点宿命+一点点促成 (缘份 影评)](https://movie.douban.com/review/7835094/)
+      - [《缘份》隐藏的后续 (缘份 影评)](https://movie.douban.com/review/5636140/?start=0&post=ok#last)
+      - [我怀疑，我们人生里面，唯一可以相遇的机会，已经错过了 (缘份 影评)](https://movie.douban.com/review/7831271/)
+      - [张国荣（华语歌手、演员、音乐人）_百度百科](http://baike.baidu.com/subview/6360/5595080.htm)
+      - [梅艳芳_百度百科](http://baike.baidu.com/subview/8695/8695.htm)
+      - [听说，张国荣梅艳芳情起情灭皆因《缘分》【观影福利】](http://mp.weixin.qq.com/s?__biz=MzIzOTExMzcyOQ==&mid=403173009&idx=1&sn=f921f74a09775b95b44e3f267e1d1a7b#rd)
+      - [梅艳芳和张国荣的关系？ - 知乎](https://www.zhihu.com/question/22151195)
+
+    todo
+
+      - [金枝玉叶 (豆瓣)](https://movie.douban.com/subject/1303376/)
+      - [金枝玉叶2 (豆瓣)](https://movie.douban.com/subject/1302054/?from=subject-page)
+</div>
+
+[Justineo/github-hovercard: Neat user/repo/issue hovercards for GitHub.](https://github.com/Justineo/github-hovercard)
+
+[iamceege/tooltipster: A jQuery tooltip plugin](https://github.com/iamceege/tooltipster/)
+
+[janl/mustache.js: Minimal templating with {{mustaches}} in JavaScript](https://github.com/janl/mustache.js)
+
+---
+
+ GitHub Hovercard is a third party tool which is not affiliated to GitHub (github.com). This page is designed exactly the same as GitHub only to show how the extension actually works on GitHub.
+
+[vim/vimrc at master · vingel/vim](https://github.com/vingel/vim/blob/master/vimrc)
+
 [如何正确接收 GitHub 的消息邮件 · Issue #49 · cssmagic/blog](https://github.com/cssmagic/blog/issues/49)
 
 [Tree-shaking with webpack 2 and Babel 6](http://www.2ality.com/2015/12/webpack-tree-shaking.html)
@@ -33,6 +177,10 @@ Notes | 笔记
       - 第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。
       - 第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来
         管，自己只负责写文章。
+
+    refs and see also
+
+      - [博客是什么 · Issue #123 · lifesinger/blog](https://github.com/lifesinger/blog/issues/123)
 
 [知天下 · 唱灌篮高手主题曲的人现在怎么样了？](http://daily.zhihu.com/story/3020232)
 
@@ -254,12 +402,17 @@ Simple HTTP Server
 <div class="tzx-drawer">
 [CSS selector for "foo that contains bar"? - Stack Overflow](http://stackoverflow.com/questions/2000582/css-selector-for-foo-that-contains-bar)
 
-:   <div class="tzx-drawer" shy>
+:   <div class="tzx-drawer">
     一句话说就是，不行……
     :   JSYK (Just So You Know), the CSS parent selector will be coming in
         CSS4, as the ability to select which element in a selector is styled by
         putting a dollar sign in front of it: `$div > span` would select the
         div that has a span as a direct child.
+
+        <div class="tzx-drawer" shy>
+        FOO
+        :   BAR
+        </div>
 
         Put a dollar sign before a selector part, so it could interfere with
         **SCSS/SASS** syntax, cool. Why don't they use the many times proposed

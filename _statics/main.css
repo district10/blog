@@ -228,6 +228,18 @@ a:hover {
     border-bottom: 2px dashed #9f9f9f;
 }
 
+a.tzx-dumb {
+    border: none;
+}
+
+img.tzx-dumb:hover {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    border: none;
+}
+
 a.external {
     padding-right: 1em;
 }
@@ -371,10 +383,13 @@ img {
 .figure img:hover {
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 p a img:hover {
     -webkit-transform: scale(1.35);
+    -moz-transform: scale(1.35);
+    -o-transform: scale(1.35);
     border: 3px solid rgba(155, 155, 155, 0.5);
 }
 

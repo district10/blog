@@ -9,10 +9,36 @@ tags:
     - js
 ...
 
-Learning's jQuery
-================
+Learning jQuery
+===============
 
-[jQuery Books](http://book.learningjquery.com/)
+<div class="tzx-fright">
+[![Learning jQuery - Fourth Edition (豆瓣)](https://img1.doubanio.com/mpic/s27104238.jpg)](https://book.douban.com/subject/24669823/)
+</div>
+
+jQuery is a powerful JavaScript library that can enhance your websites
+regardless of your background. In this book, creators of the popular jQuery
+learning resource, [jQuery Books](http://book.learningjquery.com/), share their
+knowledge, experience, and enthusiasm about jQuery to help you get the most
+from the library and to make your web applications shine. For designers, jQuery
+leverages existing CSS and HTML skills, allowing you to dynamically find and
+change any aspect of a page. This book provides a gentle introduction to jQuery
+concepts, allowing you to add interactions and animations to your pages-even if
+previous attempts at writing JavaScript have left you baffled. For programmers,
+jQuery offers an open-source, standards-compliant, unobtrusive approach to
+writing complex JavaScript applications. This book will guide you past the
+pitfalls associated with AJAX, events, effects, and advanced JavaScript
+language features, as well as provide you with a reference to the jQuery
+library to return to again and again. This book begins with a tutorial to
+jQuery, followed by an examination of common, real-world client-side problems,
+and solutions for each of them.A detailed reference rounds off the book, making
+it an invaluable resource for answers to all your jQuery questions. Who this
+book is written for This book is for web designers who want to create
+interactive elements for their designs, and for developers who want to create
+the best user interface for their web applications. The reader will need the
+basics of HTML and CSS, and should be comfortable with the syntax of
+JavaScript. No knowledge of jQuery is assumed, nor is experience with any other
+JavaScript libraries required.
 
 ## Getting Started
 
@@ -326,8 +352,8 @@ more effects
   - `fadeIn()`{.javascript}, (show)
   - `fadeOut()`{.javascript}, (hide)
   - `fadeTo('fast', 0.8)`{.javascript}
-  - `slideUp()`{.javascript}, (hide)
-  - `slideDown()`{.javascript}, (show)
+  - `slideUp()`{.javascript}, (hide)，这两个一定要区分好！拉下来就是看到了。
+  - `slideDown()`{.javascript}, (show)，拉上去就是收起来。
 
 ```javascript
 $('a.more').click(function(event) {
@@ -412,91 +438,104 @@ relative
     would display on top of it, because it would no longer be in the normal flow of
     the document.
 
-fixed: my `footer` in this page, is fixed.
+    fixed: my `footer` in this page, is fixed.
 
-refs and see also
+    refs and see also
 
-  - [css - Position Relative vs Position Absolute? - Stack Overflow](http://stackoverflow.com/questions/10426497/position-relative-vs-position-absolute)
-  - [Absolute vs. Relative - Explaining CSS Positioning](http://webdesign.about.com/od/advancedcss/a/aa061307.htm)
-  - [css - Difference between style = "position:absolute" and style = "position:relative" - Stack Overflow](http://stackoverflow.com/questions/4457790/difference-between-style-positionabsolute-and-style-positionrelative) &hearts;
-  - [Static vs Relative vs Absolute vs Fixed Positioning](http://www.yorku.ca/nmw/facs1939f13/week02/css_relVSabsVSfixed.html)
+      - [css - Position Relative vs Position Absolute? - Stack Overflow](http://stackoverflow.com/questions/10426497/position-relative-vs-position-absolute)
+      - [Absolute vs. Relative - Explaining CSS Positioning](http://webdesign.about.com/od/advancedcss/a/aa061307.htm)
+      - [css - Difference between style = "position:absolute" and style = "position:relative" - Stack Overflow](http://stackoverflow.com/questions/4457790/difference-between-style-positionabsolute-and-style-positionrelative) &hearts;
+      - [Static vs Relative vs Absolute vs Fixed Positioning](http://www.yorku.ca/nmw/facs1939f13/week02/css_relVSabsVSfixed.html)
 
-```javascript
-$switcher.css({
-    position: 'relative'
-}).animate({
-    borderWidth: '5px',
-    left: paraWidth - switcherWidth,
-    height: '+=20px'
-}, 'slow');
-```
+    ```javascript
+    $switcher.css({
+        position: 'relative'
+    }).animate({
+        borderWidth: '5px',
+        left: paraWidth - switcherWidth,
+        height: '+=20px'
+    }, 'slow');
+    ```
 
 Simultaneous *vs.* queued effects
 
-```javascript
-$switcher
-    .css({position: 'relative'})
-    .animate({left: paraWidth - switcherWidth}, 'slow')
-    .animate({height: '+=20px'}, 'slow')
-    .animate({borderWidth: '5px'}, 'slow');
+:   ```javascript
+    $switcher
+        .css({position: 'relative'})
+        .animate({left: paraWidth - switcherWidth}, 'slow')
+        .animate({height: '+=20px'}, 'slow')
+        .animate({borderWidth: '5px'}, 'slow');
 
-// queued
-$switcher
-    .css({position: 'relative'})
-    .fadeTo('fast', 0.5)
-    .animate({left: paraWidth - switcherWidth}, 'slow')
-    .fadeTo('slow', 1.0)
-    .slideUp('slow')
-    .slideDown('slow');
+    // queued
+    $switcher
+        .css({position: 'relative'})
+        .fadeTo('fast', 0.5)
+        .animate({left: paraWidth - switcherWidth}, 'slow')
+        .fadeTo('slow', 1.0)
+        .slideUp('slow')
+        .slideDown('slow');
 
-// sync
-$switcher
-    .css({position: 'relative'})
-    .fadeTo('fast', 0.5)
-    .animate({
-        left: paraWidth - switcherWidth
-    }, {
-        duration: 'slow',
-        queue: false
-    })
-    .fadeTo('slow', 1.0)
-    .slideUp('slow')
+    // sync
+    $switcher
+        .css({position: 'relative'})
+        .fadeTo('fast', 0.5)
+        .animate({
+            left: paraWidth - switcherWidth
+        }, {
+            duration: 'slow',
+            queue: false
+        })
+        .fadeTo('slow', 1.0)
+        .slideUp('slow')
 
-$switcher
-    .css({position: 'relative'})
-    .fadeTo('fast', 0.5)
-    .animate({
-        left: paraWidth - switcherWidth
-    }, {
-        duration: 'slow',
-        queue: false
-    })
-    .fadeTo('slow', 1.0)
-    .slideUp('slow')
-    .queue(function(next) {
-        $switcher.css({backgroundColor: '#f00'});
-        next();
-    })
-    .slideDown('slow');
-```
+    $switcher
+        .css({position: 'relative'})
+        .fadeTo('fast', 0.5)
+        .animate({
+            left: paraWidth - switcherWidth
+        }, {
+            duration: 'slow',
+            queue: false
+        })
+        .fadeTo('slow', 1.0)
+        .slideUp('slow')
+        .queue(function(next) {
+            $switcher.css({backgroundColor: '#f00'});
+            next();
+        })
+        .slideDown('slow');
+    ```
 
-http://api.jquery.com/category/effects/
+<div class="tzx-drawer" shy>
+[Effects | jQuery API Documentation](http://api.jquery.com/category/effects/)
 
-```javascript
-$('p').eq(2)
-    .css('border', '1px solid #333')
-    .click(function() {
-        var $clickedItem = $(this);
-        $clickedItem.next().slideDown('slow', function() {
-            $clickedItem.slideUp('slow');
+:   The jQuery library provides several techniques for adding animation to a
+    web page. These include simple, standard animations that are frequently
+    used, and the ability to craft sophisticated custom effects.
+
+    官网的 API 表示为 `.animate( properties [, duration ] [, easing ] [, complete ] )`，
+    其实应该是： `.animate( properties [, duration [, easing [, complete ]]] )` 才对。
+    当然，不必计较。
+</div>
+
+Effects
+
+:   ```javascript
+    $('p').eq(2)
+        .css('border', '1px solid #333')
+        .click(function() {
+            var $clickedItem = $(this);
+            $clickedItem.next().slideDown('slow', function() {
+                $clickedItem.slideUp('slow');
+            });
         });
-    });
-```
+    ```
 
 Effects on a single set of elements are:
 
   - Simultaneous when applied as multiple properties in **a single `animate()` method**
-  - Queued when applied in **a chain of methods**, **unless the queue option is set to `false`**
+  - Queued when applied in **a chain of methods**, **unless the queue option is
+    set to `false`**
 
 Effects on multiple sets of elements are:
 
@@ -571,20 +610,20 @@ coping elements
         .prependTo($parentParagraph);
     ```
 
-- wrap
-    + `.wrap()`{.javascript}
-    + `.wrapAll()`{.javascript}
-    + `.wrapInner()`{.javascript}
-- contents
-    + `.html()`{.javascript}
-    + `.text()`{.javascript}
-- replacements
-    + `.replaceAll()`{.javascript}
-    + `.replaceWith()`{.javascript}
-- removes
-    + `.empty()`{.javascript}, remove all children
-    + `.remove()`{.javascript}, remove matched (current?)
-    + `.detach()`{.javascript}
+    - wrap
+        + `.wrap()`{.javascript}
+        + `.wrapAll()`{.javascript}
+        + `.wrapInner()`{.javascript}
+    - contents
+        + `.html()`{.javascript}
+        + `.text()`{.javascript}
+    - replacements
+        + `.replaceAll()`{.javascript}
+        + `.replaceWith()`{.javascript}
+    - removes
+        + `.empty()`{.javascript}, remove all children
+        + `.remove()`{.javascript}, remove matched (current?)
+        + `.detach()`{.javascript}
 
 aJax
 
@@ -650,7 +689,9 @@ aJax
     $.get('z.php', requestData, function(data) {
         $('#dictionary').html(data);
     }).fail(function(jqXHR) {
-        $('#dictionary').html('An error occurred: ' + jqXHR.status).append(jqXHR.responseText);
+        $('#dictionary')
+            .html('An error occurred: ' + jqXHR.status)
+            .append(jqXHR.responseText);
     });
 
     $('h3.term').click(function() {
@@ -676,57 +717,134 @@ Security limitations
     technique requires sending a custom HTTP header from one domain that the other
     domain expects. The receiving domain must send back an
     Access-Control-Allow-Origin response header to the requester saying that the
-    domain is accepted. For more information about CORS, visit
-    <http://www.w3.org/TR/cors/.http:// www.w3.org/TR/cors/>.
+    domain is accepted. For more information about CORS, visit <http://www.w3.org/TR/cors>.
+
+    <div class="tzx-drawer" shy>
+    [Cross-origin resource sharing - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
+
+    :   Cross-origin resource sharing (CORS) is a mechanism that allows
+        restricted resources (e.g. fonts) on a web page to be requested from
+        another domain outside the domain from which the resource originated.
+
+        "Cross-domain" AJAX requests are forbidden by default because of their
+        ability to perform advanced requests (POST, PUT, DELETE and other types
+        of HTTP requests, along with specifying custom HTTP headers) that
+        introduce many cross-site scripting security issues.
+
+        Simple example
+
+        :   This is generally not appropriate when using the same-origin security
+            policy. When a CORS-compatible browser attempts to make a cross-origin
+            request:
+
+            1. The browser sends the OPTIONS request with an Origin HTTP header.
+               The value of this header is the domain that served the parent page.
+               When a page from http://www.foo.com attempts to access a user's data
+               in `bar.com`, the following request header would be sent to `bar.com`:
+
+                ```
+                Origin: http://www.foo.com
+                ```
+
+            2. The server may respond with:
+
+              - An Access-Control-Allow-Origin (ACAO) header in its response
+                indicating which origin sites are allowed. For example:
+
+                ```
+                Access-Control-Allow-Origin: http://www.foo.com
+                ```
+
+              - An error page if the server does not allow the cross-origin request
+
+              - An `Access-Control-Allow-Origin (ACAO)` header with a wildcard that
+                allows all domains:
+
+                ```
+                Access-Control-Allow-Origin: *
+                ```
+
+        To illustrate, the following table gives an overview of typical outcomes
+        for checks against the URL `http://www.example.com/dir/page.html`.
+
+        -----------------------------------------                 -------     -----------------------------------------
+        Compared URL                                              Outcome     Reason
+
+        http://www.example.com/dir/page2.html                     Success     Same protocol, host and port
+
+        http://www.example.com/dir2/other.html                    Success     Same protocol, host and port
+
+        http://username:password@www.example.com/dir2/other.html  Success     Same protocol, host and port
+
+        http://www.example.com:81/dir/other.html                  Failure     Same protocol and host but different port
+
+        https://www.example.com/dir/other.html                    Failure     Different protocol
+
+        http://en.example.com/dir/other.html                      Failure     Different host
+
+        http://example.com/dir/other.html                         Failure     Different host (exact match required)
+
+        http://v2.www.example.com/dir/other.html                  Failure     Different host (exact match required)
+
+        http://www.example.com:80/dir/other.html                  Depends     Port explicit. Depends on implementation in browser.
+        -----------------------------------------                 -------     -----------------------------------------
+
+        Relaxing the same-origin policy
+
+          - document.domain property
+          - Cross-Origin Resource Sharing
+          - Cross-document messaging
+          - JSONP
+          - WebSockets
+
+        refs and see also
+
+          - [Same-origin policy - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Same-origin_policy)
+          - [Cross-Origin Resource Sharing](https://www.w3.org/TR/cors/)
+    </div>
 
 Using JSONP for remote data
 
 :   A PHP implementation of the JSONP technique is quite simple:
 
-    ```php
-    <?php
-        print($_GET['callback'] .'('. $data .')');
-    ?>
-    ```
+    :   ```php
+        <?php
+            print($_GET['callback'] .'('. $data .')');
+        ?>
+        ```
 
     low-level ajax method
 
-    ```javascript
-    $.ajax({
-        url: 'a.html',
-        success: function(data) {
-            $('#dictionary').html(data);
-        }
-    });
-    ```
+    :   ```javascript
+        $.ajax({
+            url: 'a.html',
+            success: function(data) {
+                $('#dictionary').html(data);
+            }
+        });
+        ```
 
-    http://api.jquery.com/jQuery.ajax
+        [jQuery.ajax() | jQuery API Documentation](http://api.jquery.com/jQuery.ajax/)
 
     modifying default options
 
-    ```javascript
-    $.ajaxSetup({
-        url: 'a.html',
-        type: 'POST',
-        dataType: 'html'
-    });
-    $.ajax({
-        type: 'GET',
-        success: function(data) {
-            $('#dictionary').html(data);
-        }
-    });
-    ```
+    :   ```javascript
+        $.ajaxSetup({
+            url: 'a.html',
+            type: 'POST',
+            dataType: 'html'
+        });
+        ```
 
 ## Using Plugins
 
-<http://www.malsup.com/jquery/cycle/>
+[JQuery Cycle Plugin](http://malsup.com/jquery/cycle/)
 
-```javascript
-$(document).ready(function() {
-    $('#books').cycle();
-})
-```
+:   ```javascript
+    $(document).ready(function() {
+        $('#books').cycle();
+    })
+    ```
 
 Specifying plugin method parameters
 
@@ -746,37 +864,81 @@ Modifying parameter defaults
     $.fn.cycle.defaults.timeout = 10000;
     $.fn.cycle.defaults.random = true;
     ```
-
 Custom selectors
 
-<https://github.com/carhartl/jquery-cookie>
+:   ```javascript
+    // api
+    $.expr[':'].test = function(obj, index, meta, stack){
+        // obj - is a current DOM element
+        // index - the current loop index in stack
+        // meta - meta data about your selector
+        // stack - stack of all elements to loop
 
-`$.cookie('cyclePaused', 'y', {path: '/', expires: 7})`{.javascript}
+        // Return true to include current element
+        // Return false to explude current element
+    };
 
-The jQuery UI plugin library
+    // Usage:
+    $('.someClasses:test').doSomething();
 
-<http://jqueryui.com/>
-<http://api.jqueryui.com/easings/>
-`$books.find('.title').resizable();`{.javascript}
+    // demo
+    $.expr[':'].withRel = function(obj){
+      var $this = $(obj);
+      return ($this.attr('rel') != '');
+    };
 
-Other jQuery UI interactions include Draggable, Droppable, and
-Sortable. Like Resizable, they are highly configurable.
+    // Usage:
+    $('a:withRel').css('background-color', 'yellow');
+    ```
 
-```javascript
-$('<div id="slider"></div>').slider({
-    min: 0,
-    max: $('#books li').length - 1
-}).appendTo($controls);
+    ```javascript
+    // method 1
+    $.expr[':'].selector = function(elem, idx, matches, set){...}
 
-var $books = $('#books').cycle({
-    timeout: 2000,
-    speed: 200,
-    pause: true,
-    before: function() {
-        $('#slider').slider('value', $('#books li').index(this));
-    }
-});
-```
+    // method 2
+    $.extend($.expr(':'),{
+        selector: function(elem, idx, matches, set){...}
+    });
+    ```
+
+    refs and see also
+
+      - [jQuery Howto: Custom jQuery selectors](http://jquery-howto.blogspot.jp/2009/06/custom-jquery-selectors.html)
+      - [jQuery Custom [:] Expression Test](http://malsup.com/jquery/expr/)
+
+[js-cookie/js-cookie: A simple, lightweight JavaScript API for handling browser cookies](https://github.com/js-cookie/js-cookie)
+
+:   `$.cookie('cyclePaused', 'y', {path: '/', expires: 7})`{.javascript}
+
+[jQuery UI](http://jqueryui.com/)
+
+:   jQuery UI is a curated set of user interface interactions, effects,
+    widgets, and themes built on top of the jQuery JavaScript Library. Whether
+    you're building highly interactive web applications or you just need to add
+    a date picker to a form control, jQuery UI is the perfect choice.
+
+    [Easings | jQuery UI API Documentation](http://api.jqueryui.com/easings/)
+
+    `$books.find('.title').resizable();`{.javascript}
+
+    Other jQuery UI interactions include Draggable, Droppable, and Sortable.
+    Like Resizable, they are highly configurable.
+
+    ```javascript
+    $('<div id="slider"></div>').slider({
+        min: 0,
+        max: $('#books li').length - 1
+    }).appendTo($controls);
+
+    var $books = $('#books').cycle({
+        timeout: 2000,
+        speed: 200,
+        pause: true,
+        before: function() {
+            $('#slider').slider('value', $('#books li').index(this));
+        }
+    });
+    ```
 
 ## Developing Plugins
 
@@ -788,168 +950,257 @@ Immediately Invoked Function Expression (IIFE), looks like this:
 })(jQuery);
 ```
 
+<div class="tzx-drawer" shy>
+[Immediately-invoked function expression - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression)
+
+:   An immediately-invoked function expression (or IIFE, pronounced "iffy")
+    is a JavaScript design pattern which produces a lexical scope using
+    JavaScript's function scoping. Immediately-invoked function expressions can
+    be used to avoid variable hoisting from within blocks, protect against
+    polluting the global environment and simultaneously allow public access to
+    methods while retaining privacy for variables defined within the function.
+    This pattern has been referred to as a **self-executing anonymous
+    function**, but Ben Alman introduced the term IIFE as a more semantically
+    accurate term for the pattern, shortly after its discussion arose on
+    comp.lang.javascript.
+
+    An initial parenthesis is one case where the automatic semicolon insertion
+    (ASI) in JavaScript can cause problems; the expression is instead
+    interpreted as a call to the last term on the preceding line. In some
+    styles that omit optional semicolons, the semicolon is placed in front of
+    the parenthesis, and is known as a defensive semicolon. For example:
+
+    ```javascript
+    a = b + c
+    ;(function() {
+      // code
+    })();
+    ```
+
+    ...to avoid being parsed as c(...).
+
+    ```javascript
+    var v, getValue;
+    v = 1;
+    getValue = (function(x) {
+      return function() { return x; };
+    })(v);
+    v = 2;
+
+    getValue(); // 1
+    ```
+
+    Here the function passes v as an argument and is invoked immediately,
+    preserving the inner function's execution context.
+
+    IIFEs are also useful for establishing private methods for accessible
+    functions while still exposing some properties for later use.[15] The
+    following example comes from Alman's post on IIFEs.
+
+    ```javascript
+    var counter = (function(){
+        var i = 0;
+
+        return {
+            get: function(){ return i; },
+            set: function( val ){ i = val; },
+            increment: function() { return ++i; }
+        };
+    })();
+
+    // 'counter' is an object with properties, which in this case happen to be
+    // methods.
+
+    counter.get(); // 0
+    counter.set( 3 );
+    counter.increment(); // 4
+    counter.increment(); // 5
+    ```
+
+    If we attempt to access counter.i from the global environment, it will be
+    undefined as it is enclosed within the invoked function and is not a
+    property of counter. Likewise, if we attempt to access i it will result in
+    an error as we have not declared i in the global environment.
+
+    In lambda-calculus, this construct was referred to as "redex", for
+    reducible expression, see Reduction strategy (code optimization).
+
+    refs and see also
+
+      - [Reduction strategy (lambda calculus) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Reduction_strategy_(lambda_calculus))
+      - [Reduction strategy (code optimization) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Reduction_strategy_(code_optimization))
+</div>
+
 Adding new global functions
 
-e.g.
+:   e.g.
 
-```javascript
-$.ajax()
-$.each()
-$.map()
-$.grep()
-```
+    ```javascript
+    $.ajax()
+    $.each()
+    $.map()
+    $.grep()
+    ```
 
-```javascript
-(function($) {
+    ```javascript
+    (function($) {
 
-    $.sum = function(array) {
-        var total = 0;
-        $.each(array, function(index, value) {
-            value = $.trim(value);
-            value = parseFloat(value) || 0;
-            total += value;
-        });
-        return total;
-    };
+        $.sum = function(array) {
+            var total = 0;
+            $.each(array, function(index, value) {
+                value = $.trim(value);
+                value = parseFloat(value) || 0;
+                total += value;
+            });
+            return total;
+        };
 
-    $.average = function(array) {
-        if ($.isArray(array)) {
-            return $.sum(array) / array.length;
-        }
-        return '';
-    };
+        $.average = function(array) {
+            if ($.isArray(array)) {
+                return $.sum(array) / array.length;
+            }
+            return '';
+        };
 
-})(jQuery);
-```
+    })(jQuery);
+    ```
 
-Extending the global jQuery object We can also employ an alternate syntax in
-defining our functions using the `$.extend()` function:
+    Extending the global jQuery object We can also employ an alternate syntax in
+    defining our functions using the `$.extend()` function:
 
-The options object, Default parameter values
+    The options object, Default parameter values
 
-```javascript
-(function($) {
-    $.fn.shadow = function(opts) {
-    var defaults = {
-        copies: 5,
-        opacity: 0.1
-    };
-    var options = $.extend(defaults, opts);
-        // ...
-    };
-})(jQuery);
-```
+    ```javascript
+    (function($) {
+        $.fn.shadow = function(opts) {
+        var defaults = {
+            copies: 5,
+            opacity: 0.1
+        };
+        var options = $.extend(defaults, opts);
+            // ...
+        };
+    })(jQuery);
+    ```
 
 Customizable defaults
 
-```javascript
-(function($) {
-    $.fn.shadow = function(opts) {
-        var options = $.extend({}, $.fn.shadow.defaults, opts);
-        // ...
-    };
-    $.fn.shadow.defaults = {
-        // ...
-    }
-```
+:   ```javascript
+    (function($) {
+        $.fn.shadow = function(opts) {
+            var options = $.extend({}, $.fn.shadow.defaults, opts);
+            // ...
+        };
+        $.fn.shadow.defaults = {
+            // ...
+        }
+    ```
 
-`$(this).children(':nth-child(4)').text() == topic;`
 
 Combining filtering and striping
 
+:   `$(this).children(':nth-child(4)').text() == topic;`
+
 More selectors and traversal methods
 
-```javascript
-(function($) {
+:   ```javascript
+    (function($) {
 
-    $.extend($.expr[':'], {
-        group: function(element, index, matches, set) {
-            var num = parseInt(matches[3], 10);
-            if (isNaN(num)) { return false; }
-            return index % (num * 2) <num;
-        }
-    });
+        $.extend($.expr[':'], {
+            group: function(element, index, matches, set) {
+                var num = parseInt(matches[3], 10);
+                if (isNaN(num)) { return false; }
+                return index % (num * 2) <num;
+            }
+        });
 
-})(jQuery);
+    })(jQuery);
+    ```
 
-Especially with client-side scripting, developers can easily fall into the
-traps of premature optimization and micro-optimization.  These pitfalls can
-cause us to spend countless hours tweaking our code to shave milliseconds off
-of JavaScript executio
+    Especially with client-side scripting, developers can easily fall into the
+    traps of premature optimization and micro-optimization.  These pitfalls can
+    cause us to spend countless hours tweaking our code to shave milliseconds
+    off of JavaScript execution.
 
-`$('input:eq(1)')` faster than `$('input').eq(1)`
-
-`next()`, `parent()`, `filter()`, `find()`,
-`end()`, `addBack()`,
-
-`if (event.type == 'mouseenter') {`
+    - `$('input:eq(1)')` faster than `$('input').eq(1)`
+    - `next()`, `parent()`, `filter()`, `find()`,
+    - `end()`, `addBack()`,
+    - `if (event.type == 'mouseenter') {`
 
 Event delegation
 
-```javascript
-$(document).ready(function() {
+:   ```javascript
+    $(document).ready(function() {
 
-    $('#gallery').on('mouseenter mouseleave', 'div.photo', function(event) {
-        var $details = $(this).find('.details');
-        if (event.type == 'mouseenter') {
-            $details.fadeTo('fast', 0.7);
-        } else {
-            $details.fadeOut('fast');
-        }
+        $('#gallery').on('mouseenter mouseleave', 'div.photo', function(event) {
+            var $details = $(this).find('.details');
+            if (event.type == 'mouseenter') {
+                $details.fadeTo('fast', 0.7);
+            } else {
+                $details.fadeOut('fast');
+            }
+        });
+
     });
+    ```
 
-});
-```
+Throttling (`['θrɔtliŋ]`, 节流) events
 
-Throttling events
+:   [jQuery Event Extensions | jQuery Learning Center](http://learn.jquery.com/events/event-extensions/)
 
-<http://learn.jquery.com/events/event-extensions/>
+    Determining the animation state:
+    `if (!$image.is(':animated') || event.type == 'mouseleave')`
 
+    Halting a running animation
 
-Determining the animation state
-if (!$image.is(':animated') || event.type == 'mouseleave') {
+    ```javascript
+    // stop the current animation, then make another one
+    $(this).find('img').stop().animate(...);
+    ```
 
-Halting a running animation
+    `.stop()` method by default halts animations at their current position To
+    mitigate this type of problem, the `.stop()` method can accept two Boolean
+    ( true / false ) arguments, the second of which is known as `goToEnd`. If
+    we set this argument to  true , the current animation not only stops, but
+    also jumps immediately to the final value.
 
-// stop the current animation, then make another one
-$(this).find('img').stop().animate({
-
-.stop() method by default halts animations at their current position
- To mitigate this type of problem, the  .stop() method can accept two Boolean
-( true / false ) arguments, the second of which is known as  goToEnd . If we set this
-argument to  true , the current animation not only stops, but also jumps immediately
-to the final value.
-
-Another jQuery method, .finish(), is available for halting
-animations. It's similar to .stop(true, true) in that it clears
-all queued animations and jumps the current animation to the final
-value. However, unlike .stop(true, true), it jumps all the queued
-animations to their final values as well.
+    Another jQuery method, `.finish()`, is available for halting animations.
+    It's similar to `.stop(true, true)` in that it clears all queued animations
+    and jumps the current animation to the final value. However, unlike
+    `.stop(true, true)`, it jumps all the queued animations to their final
+    values as well.
 
 Using global effect properties
 
-$.fx
+:   `$.fx`
 
-$('#fx-toggle').show().on('click', function() {
-    $.fx.off = !$.fx.off;
-});
+    ```javascript
+    $('#fx-toggle').show().on('click', function() {
+        $.fx.off = !$.fx.off;
+    });
+    ```
 
+    **Each time an animation method is called, jQuery goes through the following
+    steps to determine the duration of the effect, in this order:**
 
-Each time an animation method is called, jQuery goes through the following steps to
-determine the duration of the effect, in this order:
+      - It checks if  `$.fx.off`{.javascript} is  true. If so, it sets the
+        duration to  0 .
+      - It checks if the duration passed is a number. If so, it sets the
+        duration to that number of milliseconds.
+      - It checks if the duration pass matches one of the property keys of the
+        `$.fx.speeds`{.javascript} object. If so, it sets the duration to the
+        value of the property.
+      - If the duration is not set by any of the above checks, it sets the
+        duration to the value of `$.fx.speeds._default`{.javascript}.
 
-1. It checks if  $.fx.off is  true . If so, it sets the duration to  0 .
-2. It checks if the duration passed is a number. If so, it sets the duration to that number of milliseconds.
-3. It checks if the duration pass matches one of the property keys of the  $.fx.  speeds object. If so, it sets the duration to the value of the property.
-4. If the duration is not set by any of the above checks, it sets the duration to the value of  $.fx.speeds._default .
+    `$.fx.speeds._default = 250;`{.javascript}
 
-$.fx.speeds._default = 250;
+    `$.fx.speeds.crawl = 1200`
 
-$.fx.speeds.crawl = 1200
+---
 
-Multiproperty easing
-
-Taking fine-grained control of animations
+- Multiproperty easing
+- Taking fine-grained control of animations
 
 The requestAnimationFrame() approach to animations is usually
 preferable to setTimeout(). However, because of potential conflicts
@@ -960,104 +1211,119 @@ is not implemented in the jQuery core library.
 
 progressive enhancement.
 
-$(document).ready(function() {
-$('#my-data th a').click(function(event) {
-event.preventDefault();
-$('#my-data tbody').load($(this).attr('href'));
-});
-});
+:   ```javascript
+    $(document).ready(function() {
+        $('#my-data th a').click(function(event) {
+            event.preventDefault();
+            $('#my-data tbody').load($(this).attr('href'));
+        });
+    });
+    ```
 
+graceful degradation.
 
-, graceful degradation.
-$(document).ready(function() {
-var $table1 = $('#t-1');
-var $headers = $table1.find('thead th').slice(1);
-$headers
-.wrapInner('<a href="#"></a>')
-.addClass('sort');
-});
+:   ```
+    $(document).ready(function() {
+        var $table1 = $('#t-1');
+        var $headers = $table1.find('thead th').slice(1);
+        $headers
+            .wrapInner('<a href="#"></a>')
+            .addClass('sort');
+    });
+    ```
 
 supply a comparator function to the  .sort() method:
-arr.sort(function(a,b) {
-if (a < b) {
-return -1;
-}
-if (a > b) {
-return 1;
-}
-return 0;
-});
 
-next apply this  .sort() method to our table rows.
+:   ```
+    arr.sort(function(a,b) {
+        if (a < b) { return -1; }
+        if (a > b) { return  1; }
+        return 0;
+    });
+    ```
+
+then apply this `.sort()` method to our table rows.
 
 Using HTML5 custom data attributes
 
-<table id="t-2" class="sortable">
-<thead>
-<tr>
-<th></th>
-<th data-sort='{"key":"title"}'>Title</th>
-<th data-sort='{"key":"authors"}'>Author(s)</th>
-<th data-sort='{"key":"publishedYM"}'>Publish Date</th>
-<th data-sort='{"key":"price"}'>Price</th>
-</tr>
-</thead>
-<tbody>
-<tr data-book='{"img":"2862_OS.jpg",
-"title":"DRUPAL 7","authors":"MERCER DAVID",
-"published":"September 2010","price":44.99,
-"publishedYM":"2010-09"}'>
-<td><img src="images/2862_OS.jpg" alt="Drupal 7"></td>
-<td>Drupal 7</td>
-<td>David Mercer</td>
-<td>September 2010</td>
-<td>$44.99</td>
-</tr>
-<!-- code continues -->
-</tbody>
-</table>
+:   ```html
+    <table id="t-2" class="sortable">
+        <thead>
+            <tr>
+                <th></th>
+                <th data-sort='{"key":"title"}'>Title</th>
+                <th data-sort='{"key":"authors"}'>Author(s)</th>
+                <th data-sort='{"key":"publishedYM"}'>Publish Date</th>
+                <th data-sort='{"key":"price"}'>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-book='
+                    {
+                        "img":"2862_OS.jpg",
+                        "title":"DRUPAL 7",
+                        "authors":"MERCER DAVID",
+                        "published":"September 2010",
+                        "price":44.99,
+                        "publishedYM":"2010-09"
+                    }'>
+                <td><img src="images/2862_OS.jpg" alt="Drupal 7"></td>
+                <td>Drupal 7</td>
+                <td>David Mercer</td>
+                <td>September 2010</td>
+                <td>$44.99</td>
+            </tr>
+        <!-- code continues -->
+        </tbody>
+    </table>
+    ```
 
-$headers.on('click', function(event) {
-event.preventDefault();
-var $header = $(this),
-sortKey = $header.data('sort').key,
-sortDirection = 1;
-if ($header.hasClass('sorted-asc')) {
-sortDirection = -1;
-}
-rows.sort(function(a, b) {
-var keyA = $(a).data('book')[sortKey];
-var keyB = $(b).data('book')[sortKey];
-if (keyA < keyB) return -sortDirection;
-if (keyA > keyB) return sortDirection;
-return 0;
-});
+    ```javascript
+    $headers.on('click', function(event) {
+        event.preventDefault();
+        var $header = $(this),
+        sortKey = $header.data('sort').key,
+        sortDirection = 1;
+        if ($header.hasClass('sorted-asc')) {
+            sortDirection = -1;
+        }
+        rows.sort(function(a, b) {
+            var keyA = $(a).data('book')[sortKey];
+            var keyB = $(b).data('book')[sortKey];
+            if (keyA < keyB) return -sortDirection;
+            if (keyA > keyB) return sortDirection;
+            return 0;
+        });
+    });
+    ```
 
-Sorting and building rows with JSON
+    Sorting and building rows with JSON
 
-Although we are lovingly crafting our table rows by hand with
-these two functions, JavaScript template systems such as Mustache
-(https://github.com/janl/mustache.js) and Handlebars
-(http://handlebarsjs.com/) could do a lot of the string processing
-and concatenation for us. Using templates can be especially beneficial as
-the size and complexity of a project grows.
+    Although we are lovingly crafting our table rows by hand with
+    these two functions, JavaScript template systems such as Mustache
+    (https://github.com/janl/mustache.js) and Handlebars
+    (http://handlebarsjs.com/) could do a lot of the string processing
+    and concatenation for us. Using templates can be especially beneficial as
+    the size and complexity of a project grows.
 
+```javascript
 function prepRows(rows) {
-$.each(rows, function(i, row) {
-var authors = [],
-authorsFormatted = [];
-rows[i].titleFormatted = row.title;
-rows[i].title = row.title.toUpperCase();
-$.each(row.authors, function(j, auth) {
-authors[j] = auth.last_name + ' ' + auth.first_name;
-authorsFormatted[j] = auth.first_name + ' '
-+ auth.last_name;
-});
-rows[i].authorsFormatted = authorsFormatted.join(', ');
-rows[i].authors = authors.join(' ').toUpperCase();
-});
-return rows;
+    $.each(rows, function(i, row) {
+        var authors = [],
+        authorsFormatted = [];
+        rows[i].titleFormatted = row.title;
+        rows[i].title = row.title.toUpperCase();
+        $.each(row.authors, function(j, auth) {
+            authors[j] = auth.last_name + ' ' + auth.first_name;
+            authorsFormatted[j] = auth.first_name + ' '
+            + auth.last_name;
+        });
+        rows[i].authorsFormatted = authorsFormatted.join(', ');
+        rows[i].authors = authors.join(' ').toUpperCase();
+    });
+    return rows;
 }
+```
 
 ---------------               ----------------------       --------------------------------------------------------------
 Hook type                     Method altered               Example usage
@@ -1073,138 +1339,137 @@ Hook type                     Method altered               Example usage
 
 ```javascript
 (function($) {
-var div = document.createElement('div');
-$.support.textShadow = div.style.textShadow === '';
-$.support.filter = div.style.filter === '';
-div = null;
-if ($.support.textShadow) {
-$.cssHooks.glowColor = {
-set: function(elem, value) {
-if (value == 'none') {
-elem.style.textShadow = '';
-}
-else {
-elem.style.textShadow = '0 0 2px ' + value;
-}
-}
-};
-}
-else {
-$.cssHooks.glowColor = {
-set: function(elem, value) {
-if (value == 'none') {
-elem.style.filter = '';
-}
-else {
-elem.style.zoom = 1;
-elem.style.filter =
-'progid:DXImageTransform.Microsoft' +
-'.Glow(Strength=2, Color=' + value + ');';
-}
-}
-};
-}
+    var div = document.createElement('div');
+    $.support.textShadow = div.style.textShadow === '';
+    $.support.filter = div.style.filter === '';
+    div = null;
+    if ($.support.textShadow) {
+        $.cssHooks.glowColor = {
+            set: function(elem, value) {
+                if (value == 'none') {
+                    elem.style.textShadow = '';
+                } else {
+                    elem.style.textShadow = '0 0 2px ' + value;
+                }
+            }
+        };
+    } else {
+        $.cssHooks.glowColor = {
+            set: function(elem, value) {
+                if (value == 'none') {
+                    elem.style.filter = '';
+                } else {
+                    elem.style.zoom = 1;
+                    elem.style.filter = 'progid:DXImageTransform.Microsoft'
+                                      + '.Glow(Strength=2, Color=' + value + ');';
+                }
+            }
+        };
+    }
 })(jQuery);
 ```
-
 <https://github.com/brandonaaron/jquery-cssHooks>
 
 ## Advanced Ajax
 
+```
 $(document).ready(function() {
-var $ajaxForm = $('#ajax-form'),
-$response = $('#response');
-$ajaxForm.on('submit', function(event) {
-event.preventDefault();
-$response.load('http://api.jquery.com/ #content',
-$ajaxForm.serialize());
-});
+    var $ajaxForm = $('#ajax-form'),
+    $response = $('#response');
+    $ajaxForm.on('submit', function(event) {
+        event.preventDefault();
+        $response.load('http://api.jquery.com/ #content',
+        $ajaxForm.serialize());
+    });
 });
 
 $.ajax({
-url: 'http://book.learningjquery.com/api/',
-dataType: 'jsonp',
-data: {
-title: $('#title').val()
-},
-success: function(data) {
-console.log(data);
-}
+    url: 'http://book.learningjquery.com/api/',
+    dataType: 'jsonp',
+    data: {
+        title: $('#title').val()
+    },
+    success: function(data) {
+        console.log(data);
+    }
 });
 
 $ajaxForm.on('submit', function(event) {
-event.preventDefault();
-$.ajax({
-url: 'http://book.learningjquery.com/api/',
-dataType: 'jsonp',
-data: {
-title: $('#title').val()
-},
-success: response,
-error: function() {
-$response.html(failed);
-}
+    event.preventDefault();
+    $.ajax({
+        url: 'http://book.learningjquery.com/api/',
+        dataType: 'jsonp',
+        data: {
+            title: $('#title').val()
+        },
+        success: response,
+            error: function() {
+            $response.html(failed);
+        }
+    });
 });
-});
-});
+```
 
 Ajax promises
 
-Using the promise's methods, we can rewrite our  $.ajax() call to replace the
-success and error callbacks with an alternate syntax:
+:   Using the promise's methods, we can rewrite our `$.ajax()` call to replace
+    the success and error callbacks with an alternate syntax:
 
-
+```
 $.ajax({
-url: 'http://book.learningjquery.com/api/',
-dataType: 'jsonp',
-data: {
-title: $('#title').val()
-},
-timeout: 15000
+    url: 'http://book.learningjquery.com/api/',
+    dataType: 'jsonp',
+    data: {
+        title: $('#title').val()
+    },
+    timeout: 15000
 })
 .done(response)
 .fail(function() {
-$response.html(failed);
+    $response.html(failed);
 });
+```
 
+```
 $ajaxForm.on('submit', function(event) {
-event.preventDefault();
-$response.addClass('loading').empty();
-$.ajax({
-url: 'http://book.learningjquery.com/api/',
-dataType: 'jsonp',
-data: {
-title: $('#title').val()
-},
-timeout: 15000
-})
-.done(response)
-.fail(function() {
-$response.html(failed);
-})
-
-.always(function() {
-$response.removeClass('loading');
+    event.preventDefault();
+    $response.addClass('loading').empty();
+    $.ajax({
+        url: 'http://book.learningjquery.com/api/',
+        dataType: 'jsonp',
+        data: {
+            title: $('#title').val()
+        },
+        timeout: 15000
+    })
+    .done(response)
+    .fail(function() {
+        $response.html(failed);
+    })
+    .always(function() {
+        $response.removeClass('loading');
+    });
 });
-});
+```
 
 - Caching responses
 - Throttling Ajax requests
 
 Adding Ajax prefilters
 
+```
 $.ajaxPrefilter(function(options) {
-if (/\.yml$/.test(options.url)) {
-return 'yaml'; // set datatype to yaml
-}
+    if (/\.yml$/.test(options.url)) {
+        return 'yaml'; // set datatype to yaml
+    }
 });
+```
 
 Defining alternate transports
 
-<t http://www.verious.com/tool/is-my-image-loaded>
+<http://www.verious.com/tool/is-my-image-loaded>
 
 ## Append A, JavaScript Closures
-
 
 Handling interactions between closures
 
@@ -1221,25 +1486,29 @@ protect against some namespace collisions. For example, it is this feature that 
 us to use  jQuery.noConflict() to free up the  $ shortcut for other libraries while
 still being able to define the shortcut locally for use within our  .ready() handler.
 
+```
 $(document).ready(function() {
-for (var i = 0; i < 5; i++) {
-(function(value) {
-$('<div>Print ' + value + '</div>')
-.click(function() {
-console.log(value);
-}).insertBefore('#results');
-})(i);
-}
+    for (var i = 0; i < 5; i++) {
+        (function(value) {
+            $('<div>Print ' + value + '</div>')
+                .click(function() {
+                    console.log(value);
+                }).insertBefore('#results');
+        })(i);
+    }
 });
+```
 
+```
 $(document).ready(function() {
-for (var i = 0; i < 5; i++) {
-$('<div>Print ' + i + '</div>')
-.on('click', {value: i}, function(event) {
-console.log(event.data.value);
-}).insertBefore('#results');
-}
+    for (var i = 0; i < 5; i++) {
+        $('<div>Print ' + i + '</div>')
+            .on('click', {value: i}, function(event) {
+                console.log(event.data.value);
+            }).insertBefore('#results');
+    }
 });
+```
 
 ## Append B, Testing JavaScript with QUnit
 
@@ -1294,4 +1563,13 @@ Ajax methods
 
 Deferred objects
 
-  - $.Deferred...
+  - `$.Deferred`...
+
+---
+
+## Misc Notes
+
+```javascript
+Attribute Contains Word Selector [name~="value"]
+```
+

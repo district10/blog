@@ -22,7 +22,14 @@ $("img").each(function(index){
         'data-src': src,
         onload: "lzld(this)"
     });
+
+    $a = $(this).parent('a');
+    if ($a.length) {
+        $a.addClass('tzx-dumb');
+        $(this).addClass('tzx-dumb');
+    }
 });
+
 
 $(document).ready(function(){
 
@@ -124,5 +131,8 @@ $('div.tzx-drawer[shy]').each(function(){
 });
 $('div.tzx-drawer').on('click', function(){
     $(this).children().children('dd').toggleClass('tzx-drawer-hide');
+    if ($(this).children().children('dd:eq(0)').hasClass('tzx-drawer-hide')) {
+        window.scrollTo($(this).offset().left, $(this).offset().top);
+    }
     return false;
 });
