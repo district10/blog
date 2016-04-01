@@ -2,6 +2,9 @@
 
 [![Build Status](https://travis-ci.org/district10/blog.svg?branch=master)](https://travis-ci.org/district10/blog)
 
+七牛 CDN 和 coding.net 似乎都是 CDN，所以总是难以快速的地更新，
+travis 给整个博客弄了一个打包：<https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/archive/coding-pages>。
+
 ## new start
 
 「Koan | 吐槽」
