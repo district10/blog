@@ -21,6 +21,11 @@ cssfile:
 Notes | 笔记
 ============
 
+[qrsctl 命令行辅助工具](http://developer.qiniu.com/code/v6/tool/qrsctl.html)
+
+[Tutorial - Use cursors to customize Web sites - Axialis Software](http://www.axialis.com/tutorials/use-cursors-to-customize-websites.htm)
+
+
 ```javascript
 $('div.tzx-drawer').on('click', function(){
     $(this).children().children('dd').toggleClass('tzx-drawer-hide');
