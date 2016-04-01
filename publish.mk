@@ -73,6 +73,8 @@ koans.html: koans.md
 # filtering
 filter:
 	perl filter.pl
+sitemap:
+	perl sitemap.pl | pandoc --ascii > sitemap.html
 
 # extra ones
 extras: $(EXTRA_PAGES)

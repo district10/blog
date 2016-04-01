@@ -17,6 +17,7 @@ PG_DOCS = $(addprefix $(DIR_PUBLISH)/, $(MD_DOCS:$(DIR_DOCS)/%=%))
 ITEMS = \
 	$(DIR_PUBLISH)/Makefile \
 	$(DIR_PUBLISH)/filter.pl \
+	$(DIR_PUBLISH)/sitemap.pl \
 	$(DIR_PUBLISH)/footer.html \
 	$(DIR_PUBLISH)/index.md \
 	$(DIR_PUBLISH)/template.html \
@@ -61,6 +62,9 @@ extras:
 
 filter:
 	$(MAKE) -C $(DIR_PUBLISH) filter
+sitemap: items
+sitemap:
+	$(MAKE) -C $(DIR_PUBLISH) sitemap
 
 statics:
 	$(MAKE) -C $(DIR_STATICS)

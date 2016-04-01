@@ -20,6 +20,11 @@ var tzx_links = [
         query: ['page', 'tag']
     },
     {
+        url: '/sitemap.html',
+        title: "Sitemap | 站点地图",
+        query: ['sitemap', 'meta']
+    },
+    {
         url: '/projects.html',
         title: "Projects | 项目",
         query: ['project', 'github']
