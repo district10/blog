@@ -68,7 +68,7 @@ $(document).ready(function(){
     dvorak4tzx( pathStringList );
 
     jQuery('h1,h2,h3,h4').each(function(index){
-        jQuery('<a>#</a>')
+        jQuery('<a class="tzx-header-anchor">#</a>')
           .addClass('hdrRef')
           .attr('href', '#'+$(this).attr('id'))
           .appendTo($(this));
@@ -119,8 +119,10 @@ $(document).ready(function(){
     // appendSharp();
 });
 
-/*
-*/
+$('div.tzx-drawer[shy]').each(function(){
+    $(this).children().children('dd').toggleClass('tzx-drawer-hide');
+});
 $('div.tzx-drawer').on('click', function(){
     $(this).children().children('dd').toggleClass('tzx-drawer-hide');
+    return false;
 });

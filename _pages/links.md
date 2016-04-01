@@ -183,3 +183,7 @@ Links | 链签
 #. [CodeKata](http://codekata.com/)
 #. [Migrate - Discussions - Disqus](https://dvorak4tzx.disqus.com/admin/discussions/migrate/)
 #. [记忆的残骸](http://wandergis.com/)
+#. [编程随想的博客](https://program-think.blogspot.com/)
+#. [【资料分享】 - 1984City](https://1984.city/viewforum.php?f=7)
+#. [首页 - 波黎克斯](http://www.berlinix.com/index.php)
+#.

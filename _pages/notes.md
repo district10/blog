@@ -21,6 +21,217 @@ cssfile:
 Notes | 笔记
 ============
 
+[如何正确接收 GitHub 的消息邮件 · Issue #49 · cssmagic/blog](https://github.com/cssmagic/blog/issues/49)
+
+[Tree-shaking with webpack 2 and Babel 6](http://www.2ality.com/2015/12/webpack-tree-shaking.html)
+
+[搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
+
+:   喜欢写Blog的人，会经历三个阶段。
+
+      - 第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。
+      - 第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。
+      - 第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来
+        管，自己只负责写文章。
+
+[知天下 · 唱灌篮高手主题曲的人现在怎么样了？](http://daily.zhihu.com/story/3020232)
+
+:   《灌篮高手》一共有两首片头和四首片尾曲。全部由当时统治日本乐坛的唱片公司
+    Being 旗下的歌手演唱。
+
+    「マイフレンド」我的朋友 乐队 ZARD，主唱坂井泉水。泉水姐姐声音甜润且相貌极
+    美，以她为中心的 ZARD 也成为日本最成功的乐队之一，十几年里作品张张大卖，总
+    销量近 4000 万张，诞生名曲无数。可惜天妒红颜，2007 年癌症扩散到肺部，入院治
+    疗时又发生意外事故，不幸去世，无数歌迷心中永远的痛。
+
+[不曾磨灭的记忆，细数小霸王超经典游戏 TOP 10 - 笔戈科技 - 知乎专栏](http://zhuanlan.zhihu.com/p/20652946)
+
+:   除了《忍者龙剑传》和《热血系列》，其他都喜欢。
+
+    2016 年 1 月 13 日，著名游戏评测机构 IGN 破天荒的给了一款独立游戏满分，它叫《UNDERTALE》（传说之下）。
+
+    开发这款独立游戏的是一名 90 后，他叫 Toby Fox，这是他大学时期在朋友家中完成的作品。
+
+    而这，却也只是国外成功的独立游戏作品中很小的一小部分，无论是《FEZ》、《超级
+    食肉男孩》、《时空幻境》，还是如今的《瘟疫公司》、《纪念碑谷》，它们都让国
+    外的独立游戏开发者名利双收。
+
+    事情就是这么可笑，在他们拿着独立来编故事，策划着能做出轰动世界的巨作时，《
+    UNDERTALE》的作者 Toby Fox 却发出了善意的提醒：「一个真正完成了的创意小游戏
+    胜过 10 个未完成的大项目。」
+
+    ![陈星汉和他的《风之旅人》](https://pic3.zhimg.com/77670d72fc55d200166d05463584da4a_b.jpg)
+
+    最后，向各位推荐纪录片《独立游戏：大电影》，即使你不了解独立游戏，我想你也能从中看到人性的脆弱、疯狂和勇敢。
+
+    refs and see also
+
+      - [中国独立游戏的创与灭 - 笔戈科技 - 知乎专栏](http://zhuanlan.zhihu.com/p/20585179)
+
+[欣喜堂 | 活字字体基础讲座](http://www.typeisbeautiful.com/kinkido-1/)
+
+[Type is Beautiful » 维吾尔字体百年掠影——从喀什噶尔到乌鲁木齐 （Uyghurche font tarixi — Qeshqerdin Ürümchigiche）](http://www.typeisbeautiful.com/2016/02/9927/)
+
+:   1959 年维吾尔族设计了以拉丁字母为基础的新文字方案，于1964年开始推行。但是经
+    过几年的实践证明，推行维吾尔新文字的条件尚不成熟，为此1982年新疆维吾尔自治
+    区第五届人大常委会第十七次会议通过了《全面使用维吾尔、哈萨克老文字的报告》
+    ，于是迄今为止，维吾尔族人民仍在使用以阿拉伯字母为基础的维吾尔老文字。不过
+    ，由于长期文化交流，现在不少维吾尔人能使用多种语言文字，特别是城市里的的维
+    吾尔族知识分子大多会说汉语和使用汉文,很多维吾尔族学习英语，日语，俄语。新疆
+    北部阿尔泰，塔城，原伊犁等地区的维吾尔族一般会说哈萨克语。
+
+    ![新维吾尔文字，摄于玉素甫·哈斯·哈吉甫陵墓](http://www.typeisbeautiful.com/wp-content/uploads/2016/01/uyghur_5.jpg)
+
+    1982 年自治区政府重新恢复了老维吾尔文字（Ereb Uyghur Yéziqi），以阿拉伯字母
+    为基础的维吾尔文才又见于世。与上一次使用阿拉伯字母的文字时隔近二十年。这二
+    十年中，社会发生了天翻地覆的变化，人们的意识形态也有所改变。对于维吾尔文字
+    体来说，是一个分水岭。1982 年后的印刷字体与先前的字体有着明显的不同，其强势
+    的态度一直延续至今。
+
+    与 1950 年代的字体相比，1982 年的字体少了之前的人文灵动，显得工整。更重要的
+    是，传统维吾尔文书法的痕迹明显减少了，字体中甚至出现了一些非传统的特征。在
+    以往的几千年，西面的波斯文化就像是中亚的灯塔，源源不断地供给着阿拉伯文字的
+    营养；而这百年，来自北方俄罗斯和东方中国内地这两种截然不同的文化又在这里扮
+    演者越来越重要的角色，在对新事物的影响中，波斯文化退居二线，从而导致了新字
+    体与传统出现了断裂。比如对笔画的过度简化，对部件的误用，以及整体审美的偏移
+    。这几点也是今天维吾尔字体与世界上其它阿拉伯字体的显著不同。这些不同点可能
+    是当年为了制作铅字方便而来，也可能是一个偶然的错误，由于没有人察觉就约定俗
+    成，成了新的标准。
+
+    ![几款不同时代的维吾尔字体比较](http://www.typeisbeautiful.com/wp-content/uploads/2016/01/uyghur_8.jpg)
+
+    2009 年的夏天，在我的朋友古丽米热（Gülmire M.）的协助下，我将 Frutiger
+    Arabic 展示给 50 名浙江大学的维吾尔大学生，49 名学生都觉得 Frutiger Arabic
+    怪异且略显滑稽。如果将现有的机场指示牌上的字体换成更利于视觉阅读的 Frutiger
+    Arabic，照理说肯定会出彩，因为 Frutiger 本身就是一款经典的导示系统字体，其
+    阿拉伯文版本必然是继承了这一点，至少很多发达的中东大都市已经用上了它。但可
+    以肯定的是，在乌鲁木齐这个做法会遭到极大的抵制。总的来说，维吾尔人并不认同
+    其它地方的现代阿拉伯文字体。不禁让我想到当初人们对 Helvetica 的厌恶反应，并
+    称之为「丑怪体」（grotesque）。
+
+    ![Frutiger Arabic](http://www.typeisbeautiful.com/wp-content/uploads/2016/01/uyghur_9.png)
+
+    这里的原因是比较深层次的，除了受阅读习惯和环境影响外，主要出于维吾尔人对民
+    族传统的强烈保护意识，毕竟任何一个改动，都会松动原有的文化元素。字体当然也
+    是民族历史、民族特色的小小代表。
+
+    总的来说，新疆餐厅的字体都是 1982 年后的那种印刷体，横平竖直、端端正正；而
+    回族餐厅的阿拉伯文，多选择跳跃性强的手写风格体。
+
+    refs and see also
+
+      - [Type is Beautiful » 维吾尔字体百年掠影——从喀什噶尔到乌鲁木齐 （Uyghurche font tarixi — Qeshqerdin Ürümchigiche）](http://www.typeisbeautiful.com/2016/02/9927/)
+
+
+---
+
+`make -p` see implicit rules
+
+网上的说法是由于bower默认采用git://协议，而当git://协议被屏蔽时就会出现这个错误，此时只需将默认git://协议换成https://就行了。在shell中执行如下指令
+
+`$ git config --global url."https://".insteadOf git://`
+
+refs and see also
+
+  - [bower install提示github connection timeout解决办法 | halfcrazy在疯言疯语](http://halfcrazy.me/2014/12/09/bower-install%E8%B6%85%E6%97%B6/)
+
+[zornlemma/bilibili_RE_block_list: bilibili_block_list/哔哩哔哩弹幕屏蔽正则表达式列表](https://github.com/zornlemma/bilibili_RE_block_list)
+
+:   RegExp 之奇怪应用……
+
+    ```perl
+    ^(.)\1*$
+    (\S+)(\S*\1){4,}
+    ^\d+$
+    ^[a-z]+$|^[A-Z]+$
+    \d{2,4}\D\d{1,2}\D\d{1,2}
+    (前|qian|第)(\d|[一二三四五六七八九十百千万两几])|\d\d(个|名|以内)|观众数|在线|^前
+    [!?！？～]{3,}$
+    更新|更了|画质|养肥|火钳|我刷|刷出了|^终于|有生之|^看过|首页|见.滚|路过|
+    ^来(了|早|晚|一发|啦|拉)|人好[少多]|小电视|高产|^没人|^我是来|失踪人口|从隔壁
+    [不又]卡|卡[在哭死出]|进度条
+    好[早前晚快慢]|[么靠]前|[深半]夜|早啊
+    每日|循环|打卡|周目|欢迎回|根本停不|顶上去
+    原版|报警|违和|打开方式|^(什么|shenme)(鬼|gui)|开口跪|画面太美|硬币|头像
+    弹幕|会员|休想|霸屏|刷屏|承包|版聊|报复社会|占位
+    (白|赤|红|橙|黄|绿|青|蓝|紫)字|我是..(白|赤|红|橙|黄|绿|青|蓝|紫)
+    老婆|[Ff][Ll][Aa][Gg]$|弗.格
+    \+1|只有我|别(跑|走)|是一个人|(等等|带上|还有)我|[加带]我一|[人党]表示|笑尿|保
+    证不|快够|贺电|大家(好|都在)|^都在
+    [Yy][Oo][Oo]|红红火火|[dD][uU][aA][nN][gG]|^233
+    挖掘机技术|技术哪家
+    马丹|妈的|尼玛|艹|我(擦|次|操|cao)|卧槽|屌|鸡巴|日了|二[逼比]
+    侵略|法西斯
+    非洲农业|危害大|克拉|种庄稼|氮磷钾|不流失|不蒸发|谁说对了
+    ```
+
+- cherry, coco, candy, sounds like stripper name.
+
+http://emeeks.github.io/d3ia/
+
+D3.js fundamentals
+
+D3 is about selecting and binding
+
+- `d3.selectAll("circle.a").style("fill", "red").attr("cx", 100);`{.javascript}
+- `d3.selectAll("div.market").data([1,5,11,3])`{.javascript}
+
+```html
+<!DOCTYPE html><meta charset="utf-8">
+<script charset="utf-8" src="d3.js"></script>
+```
+
+`.style("background","lightblue")`
+
+---
+
+- scapegoat, 替罪羔羊.
+- model minority
+- actress
+- supporting actress
+- best picutre
+- best directory
+- toksido? 燕尾服
+- bowtie
+- money management
+- manage money, finacies
+- wealth, loaded...
+- living from paycheck to paycheck
+- swiping the credit card
+- take out a loan
+- get a morgage
+- refinancing (抵押) your house, ballsy?
+
+---
+
+[Inplace Editing](http://www.perlmonks.org/?node=Inplace%20Editing)
+
+:   `perl -p -i -n -e 's/this/that/g' *.txt`,
+    BTW when I use `-pine` for the switches it doesn't work, anyone know why?
+
+    因为 `i` 需要参数啊……
+
+    不过别人的回答很专业：
+
+    > Know your command line switches ;-) ... two things
+    > - `-p` and `-n` contradict each other (and actually p overrides n).
+    > - `-pin`e switches on the p switch and uses backup files which append ne to the filename
+    > so my suggestion is -pi -e.
+    >
+    >      -- Hofmator
+
+---
+
+Dumb Makefile
+
+:   ```makefile
+    all: gh
+    gh:
+        git add -A; git commit -m "`date` - `uname`"; git push;
+    ```
+
+---
+
 Simple HTTP Server
 
 :   ```bash
@@ -30,29 +241,32 @@ Simple HTTP Server
     ruby -run -e httpd . -p 8888             # ruby
     http-server                              # node.js: [c]npm install http-server -g
     java -jar jetty-runner.jar --port 8888 . # java
+    double click `mongoose-free-5.5.exe`     # windows
     ```
 
     downloads:
 
-    - [Windows: mongoose-free-5.5.exe (免安装，win binary)](http://whudoc.qiniudn.com/2016/mongoose-free-5.5.exe)
-    - [Java: jetty-runner](http://central.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.3.0.M0/jetty-runner-9.3.0.M0.jar)
+      - [Java: jetty-runner](http://central.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.3.0.M0/jetty-runner-9.3.0.M0.jar)
+      - [Windows: mongoose-free-5.5.exe (免安装，win binary)](http://whudoc.qiniudn.com/2016/mongoose-free-5.5.exe)
 
 ---
 
 <div class="tzx-drawer">
 [CSS selector for "foo that contains bar"? - Stack Overflow](http://stackoverflow.com/questions/2000582/css-selector-for-foo-that-contains-bar)
 
-:   一句话说就是，不行……
+:   <div class="tzx-drawer" shy>
+    一句话说就是，不行……
+    :   JSYK (Just So You Know), the CSS parent selector will be coming in
+        CSS4, as the ability to select which element in a selector is styled by
+        putting a dollar sign in front of it: `$div > span` would select the
+        div that has a span as a direct child.
 
-    JSYK (Just So You Know), the CSS parent selector will be coming in CSS4, as
-    the ability to select which element in a selector is styled by putting a
-    dollar sign in front of it: `$div > span` would select the div that has a
-    span as a direct child.
-
-    Put a dollar sign before a selector part, so it could interfere with
-    **SCSS/SASS** syntax, cool. Why don't they use the many times proposed `<`
-    sign, or `:parent` pseudo class, or even the `!` sign after a selector
-    part? They all seem more logical to me, than using the `$` sign...
+        Put a dollar sign before a selector part, so it could interfere with
+        **SCSS/SASS** syntax, cool. Why don't they use the many times proposed
+        `<` sign, or `:parent` pseudo class, or even the `!` sign after a
+        selector part? They all seem more logical to me, than using the `$`
+        sign...
+    </div>
 </div>
 
 [ImageMap - bl.ocks.org](http://bl.ocks.org/nswamy14/df13d67b6efeb19eb640)
@@ -79,13 +293,13 @@ Learning D3.js Mapping
     coords:
 
     ```tzx-bigquote
-        ----------> x
-        |
-        |
-        |
-        |
-       \|/
-        .   y
+                o---------> x
+                |
+                |
+                |
+                |
+               \|/
+                .   y
     ```
 
     ```html
@@ -279,8 +493,8 @@ d3.js
     examples can be found in the D3 Gallery at
     <https://github.com/mbostock/d3/wiki/Gallery>
 
-<div class="tzx-drawer">
-<https://github.com/mbostock/d3/wiki/Geo-Projections>
+<div class="tzx-drawer" shy>
+[Geo Projections · mbostock/d3 Wiki](https://github.com/mbostock/d3/wiki/Geo-Projections)
 
 :   > [Wiki](Home) ▸ [[API Reference]] ▸ [[Geo]] ▸ **Geo Projections**
 
@@ -739,12 +953,124 @@ var color = d3.scale.linear().domain([0,33]).range(['red', 'yellow']);
 mexico.attr('fill', function(d,i) {return color(i)});
 ```
 
-<https://github.com/mbostock/d3/wiki/Scales>
+[Scales · mbostock/d3 Wiki](https://github.com/mbostock/d3/wiki/Scales)
+
+:   - Quantitative Scales: for continuous input domains, such as numbers.
+        + Linear Scales
+            * `d3.scale.linear()`
+            * domain, range, output interpolator, clamping behavior,
+            * `linear:: x -> x`
+            * `insert:: x -> x`
+            * `domain:: [x] -> this`, `[from, to]` is fine, 但是多线（polyline）也可以，注意 domain 和 range 数目要一致
+            * `range:: [x] -> this`
+            * `linear.clamp([boolean])`
+            * ticks
+              ~ ```javascript
+                var x = d3.scale.linear().domain([-1, 1]);
+                console.log(x.ticks(5).map(x.tickFormat(5, "+%")));
+                // ["-100%", "-50%", "+0%", "+50%", "+100%"]
+                ```
+        + Power Scales
+            * `x: y = mx^k + b`
+            * the the default domain [0,1], the default range [0,1]
+            *  `d3.scale.sqrt()` == `d3.scale.pow().exponent(.5)`
+        + Log Scales
+            * x: y = m log(x) + b
+            * the default domain [1,10], the default range [0,1], the base 10.
+        + Quantize Scales
+            * example
+              ~ ```javascript
+                var q = d3.scale.quantize().domain([0, 1]).range(['a', 'b', 'c']);
+                //q(0.3) === 'a', q(0.4) === 'b', q(0.6) === 'b', q(0.7) ==='c';
+                //q.invertExtent('a') returns [0, 0.3333333333333333]
+                ```
+            * `quantize(x)`
+            * `quantize.invertExtent(y)`
+        + Quantile Scales
+            * the input domain is specified as a discrete set of values
+            * [Quantile - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Quantile#Quantiles_of_a_population)
+                - So the first, second and third 4-quantiles (the "quartiles") of
+                  the dataset {3, 6, 7, 8, 8, 10, 13, 15, 16, 20} are {7, 9, 15}.
+                  If also required, the zeroth quartile is 3 and the fourth
+                  quartile is 20.
+        + Threshold Scales
+            * example
+              ~ ```javascript
+                var t = d3.scale.threshold().domain([0, 1]).range(['a', 'b', 'c']);
+                t(-1) === 'a';
+                t(0) === 'b';
+                t(0.5) === 'b';
+                t(1) === 'c';
+                t(1000) === 'c';
+                t.invertExtent('a'); //returns [undefined, 0]
+                t.invertExtent('b'); //returns [0, 1]
+                t.invertExtent('c'); //returns [1, undefined]
+                ```
+    - Ordinal Scales - for discrete input domains, such as names or categories.
+        + `d3.scale.ordinal()`
+        + `domain([values])`
+        + `range([values])`
+        + `ordinal.rangePoints(interval[, padding])`
+
+            ```javascript
+            var o = d3.scale.ordinal()
+                .domain([1, 2, 3, 4])
+                .rangePoints([0, 100]);
+
+            o.range(); // [0, 33.333333333333336, 66.66666666666667, 100]
+            ```
+
+            padding is zero by default.
+
+        + `ordinal.rangeRoundPoints(interval[, padding])`, 保证 range 取整
+
+            ```javascript
+            var o = d3.scale.ordinal()
+                .domain(d3.range(50))
+                .rangeRoundPoints([0, 95]);
+
+            o.range(); // [23, 24, 25, …, 70, 71, 72]
+            o.rangeRoundPoints([0, 100]);
+            o.range(); // [1, 3, 5, …, 95, 97, 98]
+            ```
+        + `ordinal.rangeBands(interval[, padding[, outerPadding]])`
+
+            ```javascript
+            var o = d3.scale.ordinal()
+                .domain([1, 2, 3])
+                .rangeBands([0, 100]);
+
+            o.rangeBand(); // 33.333333333333336
+            o.range(); // [0, 33.333333333333336, 66.66666666666667]
+            o.rangeExtent(); // [0, 100]
+            ```
+
+        + Categorical Colors
+            * `d3.scale.category10()`
+        + ColorBrewer
+
+    - Time Scales - for time domains.
+
+    The following time formats are considered:
+
+      - `%Y` - for year boundaries, such as "2011".
+      - `%B` - for month boundaries, such as "February".
+      - `%b %d` - for week boundaries, such as "Feb 06".
+      - `%a %d` - for day boundaries, such as "Mon 07".
+      - `%I %p` - for hour boundaries, such as "01 AM".
+      - `%I:%M` - for minute boundaries, such as "01:23".
+      - `:%S` - for second boundaries, such as ":45".
+      - `.%L` - milliseconds for all other times, such as ".012".
+
+    refs and see also
+
+      - [Ordinal Scales · mbostock/d3 Wiki](https://github.com/mbostock/d3/wiki/Ordinal-Scales)
+      - [Time Scales · mbostock/d3 Wiki](https://github.com/mbostock/d3/wiki/Time-Scales)
+
+---
 
 The `ID_1` property contains a unique numeric value for every state in the array.
 If we insert this as an `id` attribute into the DOM, then we would create a quick and easy way to select each state in the country.
-
-Click
 
 Let's update the enter method to bind our new `click` method to every new
 DOM element that  enter appends:
@@ -829,17 +1155,19 @@ var hover = function(d) {
 
     I jest (开玩笑的).
 
-    ```
-    fun()                                               // no configs?
-        -> fun(width, height)                           // fixed?
-        -> fun(config)                                  // cool
-        -> fun(config){return fun(){}} (closure)        // and efficient
+    ```javascript
+    fun()                                    // no configs?
+        -> fun(width, height)                // fixed?
+        -> fun(config)                       // cool
+        -> fun(config){return fun(){}}       // and efficient, (closure)
     ```
 
     [Method chaining - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Method_chaining)
 
     :   Method chaining, also known as named parameter idiom, is a common syntax
         for invoking multiple method calls in object-oriented programming languages.
+
+        cpp
 
         ```cpp
         ostream & operator << (ostream &os, Person const &person)
@@ -936,19 +1264,16 @@ var hover = function(d) {
     elements: the selection**.
 
     The simplest way of invoking our chart function on a selection, then, is to
-    **pass the selection as an argument**:
+    **pass the selection as an argument**: `myChart(selection);`{.javascript}
 
-    `myChart(selection);`{.javascript}
-
-    Or equivalently, using selection.call:
-
-    selection.call(myChart);
+    Or equivalently, using selection.call: `selection.call(myChart);`{.javascript}
 
     From the API reference:
 
     > `[call]` invokes the specified function once, passing
-    > in the current selection… The call operator is identical to invoking a function
-    > by hand; but it makes it easier to use method chaining.
+    > in the current selection…
+    > The call operator is identical to invoking a function by hand;
+    > but it **makes it easier to use method chaining**.
 
     Internally, a call-based chart implementation looks something like this:
 
@@ -966,21 +1291,27 @@ var hover = function(d) {
 
     We now have a **strawman convention** for reusable visualization components.
 
-    In software development, **a crude plan** or document** may serve as the strawman
-    or starting point in the evolution of a project. The strawman is not
-    expected to be the last word; it is **refined** until a final model or document
-    is obtained that resolves all issues concerning the scope and nature of the
-    project. In this context, a strawman can take the form of an outline, a
-    set of charts, a presentation, or a paper.
+    <div class="tzx-drawer" shy>
+    Straw Man
 
-    The ‘Straw Man’ also fits in neatly with the concept of iterative design,
-    repeating and re-drafting to improve an initial concept or design. If
-    anything is built, often, it may not end up in the final product. It might
-    be that the decision is to not continue at all, in which case, the ‘Straw
-    Man’ approach may have saved a lot of wasted work in the long run. Or, the
-    final approach may be very different from the first model. Either way, the
-    ‘Straw Man’ will have proven its worth by having re-directed the approach
-    before any significant work is undertaken.
+    :   In software development, **a crude plan** or document** may serve as
+        the strawman or starting point in the evolution of a project. The
+        strawman is not expected to be the last word; it is **refined** until a
+        final model or document is obtained that resolves all issues concerning
+        the scope and nature of the project. In this context, a strawman can
+        take the form of an outline, a set of charts, a presentation, or a
+        paper.
+
+        The ‘Straw Man’ also fits in neatly with the concept of iterative
+        design, repeating and re-drafting to improve an initial concept or
+        design. If anything is built, often, it may not end up in the final
+        product. It might be that the decision is to not continue at all, in
+        which case, the ‘Straw Man’ approach may have saved a lot of wasted
+        work in the long run. Or, the final approach may be very different from
+        the first model. Either way, the‘Straw Man’ will have proven its worth
+        by having re-directed the approach before any significant work is
+        undertaken.
+    </div>
 
     refs and see also
 
@@ -1000,6 +1331,7 @@ var zoom = d3.behavior.zoom()
     .size([width, height]);
 ```
 
+<div class="tzx-drawer" shy>
 [Zoom Behavior · mbostock/d3 Wiki](https://github.com/mbostock/d3/wiki/Zoom-Behavior)
 
 :   ```javascript
@@ -1028,6 +1360,136 @@ var zoom = d3.behavior.zoom()
           - zoomstart - at the start of a zoom gesture (e.g., touchstart).
           - zoom - when the view changes (e.g., touchmove).
           - zoomend - at the end of the current zoom gesture (e.g., touchend).
+</div>
+
+```javascript
+svg.append("rect")
+    .attr("class", "overlay")
+    .attr("width", width)
+    .attr("height", height)
+    .call(zoom);
+```
+
+```javascript
+var height = 600;
+var width = 900;
+var projection = d3.geo.orthographic().clipAngle(90);
+var path = d3.geo.path().projection(projection);
+
+d3.json('world.json', function(data) {
+    var countries = topojson.feature(data, data.objects.countries);
+    var map = svg.append('g').attr('class', 'boundary');
+    var world = map.selectAll('path').data(countries.features);
+});
+
+world.enter()
+    .append('path')
+    .attr('d', path);
+
+mexico.enter()
+    .append('path')
+    .attr('class', 'mexico')
+    .attr('d', path)
+    .style('fill', 'lightyellow').style('stroke', 'orange');
+
+project.rotate([0,i,0]);
+```
+
+<http://www.jasondavies.com/maps/rotate/>
+
+---
+
+**Finding and Working with Geographic Data**
+
+shapefile:
+
+  - a large repository of free shapefiles located at <http://diva-gis.org>
+  - con: too big, binary
+  - but we can  leverage the large repository of shapefiles and convert them to
+    GeoJSON and TopoJSON. (These are js friendly.)
+
+<https://github.com/mbostock/topojson/wiki/Command-Line-Reference>
+
+
+```javascript
+topojson -o spain-topo.json -p -- ESP_adm0.shp
+topojson -o spain-topo.json –p name=ISO -- ESP_adm0.shp
+# -p target=source,target=source,target=source
+```
+
+- GeoJSON: 6.4 MB
+- TopoJSON: 379 KB
+
+<http://bost.ocks.org/mike/simplify/>
+
+simplification
+
+`-p name=ISO -s 7e-7 -- ESP_adm0.shp`
+
+merging files
+
+```javascript
+topojson -o ../topojson/spain-topo-simple.json \
+    -p name=ISO -s 7e-7 -- \
+    ESP_adm0.shp ESP_adm1.shp
+topojson -o ../topojson/spain-topo-simple.json \
+    -p name=ISO -s 7e-7 -- \
+    country=ESP_adm0.shp regions=ESP_adm1.shp
+```
+
+- `var country = topojson.feature(data, data.objects.ESP_adm0);`
+- `var country = topojson.feature(data, data.objects.country);`
+
+vendor: This directory contains all the external libraries that we need to use
+in the visualization and is loaded at the bottom of the `index.html` file:
+
+```html
+<script src="vendor/d3.min.js"></script>
+<script src="vendor/topojson.v1.min.js"></script>
+```
+
+```javascript
+var x = d3.scale.linear(),
+y = d3.scale.ordinal();
+
+x.domain([0, my.profitMax(chartData)])
+.range([0,my.w()]);
+y.domain(my.categories(chartData))
+.rangeRoundBands([0, my.h()], 0.2);
+
+d3.select("#chart").datum(data()).call(viz.draw);
+```
+
+---
+
+git clone git://github.com/NickQiZhu/d3-cookbook.git
+
+The D3 gallery ( https://github.com/mbostock/d3/wiki/Gallery ) contains
+some of the most interesting examples that you can find online regarding D3 usage.
+It contains examples on different visualization charts, specific techniques, and some
+interesting visualization implementations in the wild, among others.
+f BioVisualize (http://biovisualize.github.io/d3visualization ) is
+another D3 gallery with categorization, to help you find your desired visualization
+example online quickly.
+f The D3 tutorials page ( https://github.com/mbostock/d3/wiki/Tutorials )
+contains a collection of tutorials, talks and slides created by various contributors over
+time, to demonstrate in detail how to use a lot of D3 concepts and techniques.
+f D3 plugins ( https://github.com/d3/d3-plugins ). Maybe some features are
+missing in D3 for your visualization needs? Before you decide to implement your
+own, make sure to check out D3 plugin repository. It contains a wide variety of
+plugins that provide some of the common and, sometimes, uncommon features in
+the visualization world
+
+The D3 API ( https://github.com/mbostock/d3/wiki/API-Reference ) is
+very well documented. This is where you can find detailed explanations for every
+function and property that the D3 library has to offer.
+f Mike Bostok's Blocks ( http://bl.ocks.org/mbostock ) is a D3 example site,
+where some of the more intriguing visualization example can be found and which is
+maintained by its author Mike Bostock.
+f JS Bin ( http://jsbin.com/ugacud/1/edit ) is a pre-built D3 test and
+experiment environment completely hosted online. You can easily prototype a simple
+script using this tool or share your creation with other members in the community.
+f JS Fiddle ( http://jsfiddle.net/qAHC2/ ) is similar to JS
 
 ---
 

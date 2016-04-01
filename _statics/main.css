@@ -225,7 +225,7 @@ a {
 }
 
 a:hover {
-    border-bottom: 3px dotted #9f9f9f;
+    border-bottom: 2px dashed #9f9f9f;
 }
 
 a.external {
@@ -784,6 +784,16 @@ code.tzx-timestamp {
     cursor: crosshair;
     border: 1px solid #9ddcff; 
 }
+.tzx-drawer .tzx-drawer { 
+    cursor: cell;
+    border: 1px dashed #9ddcff; 
+}
 
 .tzx-drawer-show { display: block; }
 .tzx-drawer-hide { display: none; }
+
+a.tzx-header-anchor {
+    text-decoration: none;
+    // cursor: crosshair;
+    border: none;
+}

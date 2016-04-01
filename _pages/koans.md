@@ -26,6 +26,31 @@ before-after: |
 Koans | 呓语
 ============
 
+## `1459431420`{.tzx-timestamp} QWERTY 键盘简直是个笑话
+
+有时候专门看看有些单词怎么在 QWERTY 上敲出来，然后发现真是无比的蛋疼啊哈哈。
+你们怎么能忍……
+
+## `1459423291`{.tzx-timestamp} 学到的才是真功夫
+
+中午弄了一会儿没搞定 `.tzx-drawer` 这个课 toggle 隐藏的功能，后来
+瞟了一下自己的 jQuery 笔记。看到 event propagation 那段 `return <propagate?>;`，
+一下子就明白了……
+
+## `1459421045`{.tzx-timestamp} Notes 越来越大了！
+
+```tzx-bigquote
+# compile notes
+real    0m4.771s
+user    0m0.015s
+sys     0m0.015s
+
+# compile koans
+real    0m1.033s
+user    0m0.000s
+sys     0m0.031s
+```
+
 ## `1459398411`{.tzx-timestamp} 代码高亮风格
 
 很多人都喜欢 sublime 那种黑黑背景的。我喜欢 VS 和 GitHub，最喜欢的是 Pygments 风格。
@@ -146,7 +171,7 @@ What the f**k...
 
 昨天在 GitHub 上 grant 了 `travis.com`，唉？！我不是 grant 过吗？！
 吓我一跳，还以为是钓鱼网站。早上发现原来 <travis.org> 是那个很 popular 的，
-<travis.com> 也是他们一家的，可适用于 private repo`。`
+<travis.com> 也是他们一家的，可适用于 private repo。
 
 ## `1458655653`{.tzx-timestamp} 环！
 
@@ -1956,7 +1981,7 @@ windres.exe
 ```
 
 ```bash
-calc.exe
+calc.exe            # win+r: calc
 ver.exe             # version
 vol.exe             # volume
 mspaint.exe         # paint
