@@ -20,7 +20,7 @@ Lingoes 网络词典
 
 功能有划词、屏幕取词，有 Firefox 等浏览器插件。
 
-我打包了一个自己用，额外多包含了 Wikipedia 词典和柯林斯词典：[lighttable-0.8.0-windows](http://whudoc.qiniudn.com/lighttable-0.8.0-windows.7z)
+我打包了一个自己用，额外多包含了 Wikipedia 词典和柯林斯词典：[lingoes_portable_2.9.1-multi-dicts (322 MB)](http://whudoc.qiniudn.com/2016/lingoes_portable_2.9.1-multi-dicts.7z)
 
 还有一个 Firefox 浏览器插件：[lingoes_firefox_2.1.xpi](http://whudoc.qiniudn.com/lingoes_firefox_2.1.xpi)
 

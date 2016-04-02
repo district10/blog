@@ -50,6 +50,7 @@ Search:<br>
 * 2015-12-13 [膜拜大神](post-0076-real-hacker.html)
 * 2015-12-08 [什么是投影？](post-0075-what-is-projection.html)
 * 2015-11-30 [OpenCV::CvANN_MLP](post-0072-cvann-mlp.html)
+* 2016-03-24 [GIS 理论与技术 - 作业 1, 6, 7](post-0091-gis-misc.html)
 * 2015-11-23 [Vim Rules](post-0070-some-vim-rules.html)
 * 2015-11-23 [GIS 空间分析与应用建模](post-0069-gis-spatial-analysis-application-modeling.html)
 * 2015-11-23 [C++ GUI Qt4 编程](post-0068-cxx-gui-programming-with-qt4.html)

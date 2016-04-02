@@ -188,3 +188,4 @@ Links | 链签
 #. [首页 - 波黎克斯](http://www.berlinix.com/index.php)
 #. [欢迎来到丘迟的维基世界 - a site build with Vim, Vimwiki and Git](http://wiki.ktmud.com/index.html)
 #. [Lync.in | Link the world.](http://lync.in/)
+#. [汤姆大叔 - 博客园](http://www.cnblogs.com/TomXu)

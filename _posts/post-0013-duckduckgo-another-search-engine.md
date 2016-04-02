@@ -16,8 +16,8 @@ DuckDuckGo：另一个搜索引擎
 >
 > 由我意译自 DuckDuckGo 英文维基页面。
 
-<div class="tzx-fleft" style="padding:2em;">
-![DuckDuckGo][ddg-pic]
+<div class="tzx-fleft" style="padding:1.5em;">
+![](http://gnat-tang-shared-image.qiniudn.com/pictures/DuckDuckGo_Logo.svg)
 </div>
 
 DuckDuckGo 是一个互联网搜索引擎，它强调保护搜索者的隐私，
@@ -32,7 +32,6 @@ DuckDuckGo 公司成立于美国宾夕法尼亚州（Pennsylvania）的 Paoli，
 位于大费城区（Greater Philadelphia），有 20 名员工。
 DuckDuckGo 的命名源自儿童游戏 [Duck Duck Goose][duckduckgoose]（类似丢手绢）。
 
-[ddg-pic]: http://gnat-tang-shared-image.qiniudn.com/pictures/DuckDuckGo_Logo.svg
 [duckduckgoose]: https://en.wikipedia.org/wiki/Duck%2C_duck%2C_goose
 
 DuckDuckGo 的部分代码开源在 GitHub，使用 Perl 5 许可证。
@@ -154,7 +153,7 @@ DuckDuckGo 还引入了所谓的 “！Bang” 指令。这样用户可以参与
 “DuckDuckGo 有着精简的主页（Stripped-Down），很像早期的 Google。
 就像 In-N-Out 汉堡店没有拿铁咖啡（Lattes），亚洲沙拉，圣代（Sundaes）
 以及煎蛋（Scrambled Eggs），DuckDuckGo 也没有新闻，博客，读书和图片。
-它也没有搜索提示（Auto-Completion）和同步显示（Instant Reluts）。
+它也没有搜索提示（Auto-Completion）和同步显示（Instant Results）。
 它只提供核心的 Web 搜索，通常也就是一些蓝色的超链接，不过还确实有用，
 不管有些人怎么评论。至于质量，我当然不能说 Weinberg 找到了一种神奇的方法，
 能够对抗 Google 超强的搜索团队（Mighty Search Team）。
@@ -166,7 +165,8 @@ Thom Holwerda，他为 OSNews 带来了对这个搜索引擎的自己的看法�
 他称赞了 DuckDuckGo 的隐私特性和指定站点搜索（Site-Specific Searches），
 同时质疑（Criticizing）了 Google 跟踪用户几乎一切操作。
 尤其让人担心的是这些信息可能被美国政府强制获得
-（Particularly Because Of the Risk of Such Information Being Subject to a U.S. Government Subpoena）。
+（Particularly Because Of the Risk of Such Information Being Subject to a U.S.
+Government Subpoena (`[sə'pinə]`, 传讯)）。
 
 2012 年，被指垄断（Accusations that it was a Monopoly），
 Google 才把 DuckDuckGo 列为竞争者。Weinberg 表示被这样称（by that Acknowledgement）很荣幸 。
@@ -195,6 +195,12 @@ Google 他到底记录了你的什么，他会提供你一份超级复杂详细�
 我可以看到何时的自己如何在头脑中构建一些疯狂的飞跃（Crazy Leaps），不管哪一天。
 我还知道哪一分钟自己在哪本书上，而下一分钟我是为女儿去买鞋或者别的什么，都可以看到。
 Google 知道我在什么，知道我在想什么，这太让人不安了（Disturbing）。
+
+## Misc
+
+- [Holiday Logos](https://duck.co/help/settings/holiday-logos)
+- [DuckDuckGo 会动摇 Google 搜索的地位吗？ - 知乎](https://www.zhihu.com/question/19646822)
+- [为什么 DuckDuckGo 的 logo 是个红绿配的小萌鸭？ - 知乎](https://www.zhihu.com/question/21245224)
 
 翻译易错点分享
 --------------

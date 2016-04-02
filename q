@@ -21,670 +21,29 @@ cssfile:
 Notes | 笔记
 ============
 
-[恶膜的奶爸的广播](https://www.douban.com/people/Q598176297/status/1821563751/)
-
-:   在 <http://dict.eudic.net/studylist/import> 导入，然后到客户端上「在线同步」。
-
-[菠菜（草本植物）_百度百科](http://baike.baidu.com/link?url=EJA_2j_jjAmFYt-ke56yO1MNlIRZwSs9NmQEeSCOihNVHT9WmfGzlH1hRVggcvMZDj4HXFVcaSkXk5mRYnY5X123_94L81IzN1OZAHG4toa)
-
-:   菠菜（Spinacia oleracea L.）又名波斯菜、赤根菜、鹦鹉菜等，属藜科菠菜属，
-    一年生草本植物。植物高可达1米，根圆锥状，带红色，较少为白色，叶戟形至卵形，鲜
-    绿色，全缘或有少数牙齿状裂片。菠菜的种类很多，按种子形态可分为有刺种与无刺
-    种两个变种。
-
-    菠菜原产伊朗，中国普遍栽培，为极常见的蔬菜之一。
-
-    菠菜是二千多年前波斯人栽培的菜蔬，也叫做“波斯草”，后在唐朝时由尼泊尔人带入中国。
-
-    唐代贞观二十一年（公元641年），尼泊尔国王那拉提波把菠菜从波斯拿来，作为一件
-    礼物，派使臣送到长安，献给唐皇，从此菠菜在中国落户了。当时 中国称菠菜产地为
-    西域菠薐国，这就是菠菜被叫做“菠薐菜”的原因，后简化为“菠菜”；潮汕等地念做“bo
-    ling"，翻译为飞龙，所以又叫飞龙菜。
-
-    菠菜有很多别名，其中有一个别名就是红根菜，就取其根的颜色命名；还有别名叫鹦鹉菜。
-
-    在中国，任何一件事情都有南北差异，比如说，南方人喜欢天天洗澡，北方人不喜欢
-    天天洗澡！[^我终于找到不洗澡的理由了！！！……BTW，这篇文章真是装 B 不倦。]
-
-    refs and see also
-
-      - [从家居生活细节看南北方土豪差异_网易家居](http://home.163.com/15/0202/06/AHE7U12C00104J5U.html)
-
-[marijnh/heckle: JavaScript-based Jekyll clone](https://github.com/marijnh/heckle)
-
-:   **Why?**
-
-    I like the approach to managing a site taken by Jekyll. A lot.
-
-    I don't like Ruby, and I don't like **strict logic-less templates**. Jekyll is Ruby with Liquid as the templating engine.
-
-    Heckle is JavaScript with Mold (programmable template extravaganza) as the templating engine.
-
-    **Setup**
-
-    Don't use Heckle at this point if you want something stable and finished.
-    **It's a work in progress, and may be radically changed or pitilessly abandoned at any time.**
-
----
-
-moderator, `['mɑdəretɚ]` n. [核] 慢化剂；仲裁人；调解人；缓和剂
-
-调制解调器是Modulator（调制器）与Demodulator（解调器）的简称，中文称为调制解调器（港台称之为数据机），根据Modem的谐音，亲昵地称之为“猫”。它是在发送端通过调制将数字信号转换为模拟信号，而在接收端通过解调再将模拟信号转换为数字信号的一种装置。
-
-
-[Marijn's Web Home](http://marijnhaverbeke.nl/)
-
-
-refs and see also
-
-  - [A Gentle Introduction to Machine Fundamentals](http://marijnhaverbeke.nl/turtle/)
-  - [My JavaScript Build Setup](http://marijnhaverbeke.nl/blog/my-babel-setup.html)
-
-
-
-[yahoo/pure: A set of small, responsive CSS modules that you can use in every web project.](https://github.com/yahoo/pure)
-
-[DARPA Grand Challenge - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/DARPA_Grand_Challenge)
-
-:   The DARPA Grand Challenge is a prize competition for American autonomous
-    vehicles, funded by the Defense Advanced Research Projects Agency, the most
-    prominent research organization of the United States Department of Defense.
-    Congress has authorized DARPA to award cash prizes to further DARPA's
-    mission to sponsor revolutionary, high-payoff research that bridges the gap
-    between fundamental discoveries and military use. The initial DARPA Grand
-    Challenge was created to spur the development of technologies needed to
-    create the first fully autonomous ground vehicles capable of completing a
-    substantial off-road course within a limited time. The third event, the
-    DARPA Urban Challenge extended the initial Challenge to autonomous
-    operation in a mock urban environment. The most recent Challenge, the 2012
-    DARPA Robotics Challenge, focused on autonomous emergency-maintenance
-    robots.
-
-    refs and see also
-
-      - [Darpa Grand Challenge.com](http://www.darpagrandchallenge.com/)
-
-[谷歌的绩效管理 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2016/03/performance-management.html)
-
-[《最好的告别》读后感 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2016/03/death.html)
-
-:   可见一个理智的人在死亡降临的时候，还是无法舍弃求生的欲望。
-
-    1790年的美国，65岁以上的人不到2%，今天已经上升到14%。在德国、意大利和日本，
-    这个数字已经超过了20%。现在，中国是地球上第一个老年人超过1亿的国家。
-
-    需要照顾的老人，将会越来越多，社会将无法负担。唯一的办法是采取正确的措施，
-    使得老人更长久地保持至关重要的生活能力。
-
-    托马斯于是决定，让老人来负责照顾动物。
-
-    这一切在老人们身上的效果很快就彰显出来，无法忽视：他们苏醒了，活过来了。
-
-    托马斯总结自己的做法：我们不是在运营一个机构，而是要提供一个家。
-
-    作为医生，要忍住干预、修复、控制的冲动，因为死亡已经超越了医学问题。面对衰
-    老和死亡，医学技术只是一方面，心灵的滋养、理解和安慰是急需补上的另一方面。
-
-    半个多世纪以来，我们把生病、衰老和希望的考验作为医学问题对待，而不是作为一
-    个社会问题对待。不应该把病人的命运只交给技术，更应该交给重视和理解人类需求
-    的人。
-
-[你的B计划在哪里？ - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2016/03/plan-b.html)
-
-:   甲在实体经济部门工作，企业效益不好，正酝酿减员增效，他忧心忡忡，跳槽都不知
-    道怎么跳，因为全行业都不景气。
-
-    乙从事互联网工作，行业发展热火朝天，新事物层出不穷，但是他已人到中年，技术
-    老化，跟不上行业新陈代谢的速度，公司又实行末位淘汰制，他自觉难以与年轻求职
-    者竞争。
-
-    千万不要把B计划想得很浪漫，现实往往不是如此，B计划其实非常艰苦。
-
-    就是因为B计划实施起来非常艰苦，所以你最好去做那些你喜欢的事。
-
-    最后，如果真的到了下决心的那一天，你可能还需要一点勇气。B计划并不容易，但是
-    提心吊胆地维持一份毫无乐趣、前景灰暗的工作，也是不容易的。这就是为什么，B计
-    划要选择那些能鼓舞自己、唤起热情的工作的一个原因，这样比较容易产生勇气。
-
-    正常情况下，B计划可能不会立即带来经济上的成功，但是你可以从中获得自由、自我
-    认同和成就感，以及从此不用忍受大公司晋升阶梯上面挤破头的压力和窒息。即使初
-    期没有成功，你也可以借此获得转型的其他机会。最理想的情况是，你通过B计划，实
-    现了自己真正想要的生活。美国的"家政女王"玛莎·斯图尔特，正是因为在食品店当经
-    理被解雇了，才不得不自己开店的。
-
-[Systemd 入门教程：命令篇 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
-
-:   ```bash
-    $ sudo /etc/init.d/apache2 start
-    # or
-    $ service apache2 start
-    ```
-
-    一是启动时间长。init进程是串行启动，只有前一个进程启动完，才会启动下一个进程。
-
-    二是启动脚本复杂。init进程只是执行启动脚本，不管其他事情。脚本需要自己处理各种情况，这往往使得脚本变得很长。
-
-    Systemd 就是为了解决这些问题而诞生的。它的设计目标是，为系统的启动和管理提供一套完整的解决方案。
-
-    使用了 Systemd，就不需要再用init了。Systemd 取代了initd，成为系统的第一个进程（PID 等于 1），其他进程都是它的子进程。
-
-    ```bash
-    systemctl --version
-    ```
-
-    `systemctl`
-
-    :   ```bash
-        # 重启系统
-        $ sudo systemctl reboot
-
-        # 关闭系统，切断电源
-        $ sudo systemctl poweroff
-
-        # CPU停止工作
-        $ sudo systemctl halt
-
-        # 暂停系统
-        $ sudo systemctl suspend
-
-        # 让系统进入冬眠状态
-        $ sudo systemctl hibernate
-
-        # 让系统进入交互式休眠状态
-        $ sudo systemctl hybrid-sleep
-
-        # 启动进入救援状态（单用户状态）
-        $ sudo systemctl rescue
-        ```
-
-    `system-analyze`
-
-    :   ```bash
-        # 查看启动耗时
-        $ systemd-analyze
-        # 查看每个服务的启动耗时
-        $ systemd-analyze blame
-
-        # 显示瀑布状的启动过程流
-        $ systemd-analyze critical-chain
-
-        # 显示指定服务的启动流
-        $ systemd-analyze critical-chain atd.service
-        ```
-
-    `hostnamectl`
-
-    :   ```bash
-        # 显示当前主机的信息
-        $ hostnamectl
-
-        # 设置主机名。
-        $ sudo hostnamectl set-hostname rhel7
-        ```
-
-    ...
-
-    refs and see also
-
-      - [Systemd 入门教程：实战篇 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html)
-
-[Autonomous underwater vehicle - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Autonomous_underwater_vehicle)
-
-:   <div class="tzx-fright">
-    ![The Blackghost AUV is designed to undertake an underwater assault course autonomously with no outside control.](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Blackghost.jpg/330px-Blackghost.jpg)
-    </div>
-
-    An autonomous underwater vehicle (AUV) is a robot which travels underwater
-    without requiring input from an operator. AUVs constitute part of a larger
-    group of undersea systems known as unmanned underwater vehicles, a
-    classification that includes non-autonomous remotely operated underwater
-    vehicles (ROVs) – controlled and powered from the surface by an
-    operator/pilot via an umbilical or using remote control. In military
-    applications AUVs are more often referred to simply as unmanned undersea
-    vehicles (UUVs).
-
-    <div class="tzx-fright">
-    ![A science ROV being retrieved by an oceanographic research vessel.](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/ROV_Hercules_2005.JPG/330px-ROV_Hercules_2005.JPG)
-    </div>
-
-    A remotely operated underwater vehicle (ROV) is a tethered underwater
-    mobile device. This meaning is different from remote control vehicles
-    operating on land or in the air. ROVs are unoccupied, highly maneuverable,
-    and operated by a crew aboard a vessel. They are common in deep water
-    industries such as offshore hydrocarbon extraction. They are linked to a
-    host ship by a neutrally buoyant tether or, often when working in rough
-    conditions or in deeper water, a load-carrying umbilical cable is used
-    along with a tether management system (TMS). The TMS is either a
-    garage-like device which contains the ROV during lowering through the
-    splash zone or, on larger work-class ROVs, a separate assembly which sits
-    on top of the ROV. The purpose of the TMS is to lengthen and shorten the
-    tether so the effect of cable drag where there are underwater currents is
-    minimized. The umbilical cable is an armored cable that contains a group of
-    electrical conductors and fiber optics that carry electric power, video,
-    and data signals between the operator and the TMS. Where used, the TMS then
-    relays the signals and power for the ROV down the tether cable. Once at the
-    ROV, the electric power is distributed between the components of the ROV.
-    However, in high-power applications, most of the electric power drives a
-    high-power electric motor which drives a hydraulic pump. The pump is then
-    used for propulsion and to power equipment such as torque tools and
-    manipulator arms where electric motors would be too difficult to implement
-    subsea. Most ROVs are equipped with at least a video camera and lights.
-    Additional equipment is commonly added to expand the vehicle’s
-    capabilities. These may include sonars, magnetometers, a still camera, a
-    manipulator or cutting arm, water samplers, and instruments that measure
-    water clarity, water temperature, water density, sound velocity, light
-    penetration, and temperature.
-
-    refs and see also
-
-      - [Remotely operated underwater vehicle - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Remotely_operated_underwater_vehicle)
-
-[openrov-image-customization/.travis.yml at master · OpenROV/openrov-image-customization](https://github.com/OpenROV/openrov-image-customization/blob/master/.travis.yml)
-
-:   ```yml
-    notifications:
-      webhooks:
-        urls:
-        - https://webhooks.gitter.im/e/75083394acfa5b6df091
-        on_success: change
-        on_failure: always
-        on_start: false
-    ```
-
-    OpenROV is a DIY telerobotics community centered around underwater exploration & adventure.
-
-<div class="tzx-drawer" shy>
-[将大数据+深度学习用于竞猜，足球魔方做了一款足球版的同花顺 | 36氪](http://new.36kr.com/p/5045331.html)
-
-:   其首席科学家济科告诉我，目前他们对比赛结果预测的准确度在 70-80%之间，但他们
-    的数据模型更加关心的是用户盈亏率的问题，“10 场比赛中将 9 场赔率低的比赛预测
-    正确的意义并不大，可能第十场就直接赔光了。”
-
-    团队方面，CEO 旺热曾任 Sportal.com 中国区首席代表，COO 古力特则曾任 FX168
-    金融产品总监，济科则是 SAP 硅谷创新中心高级科学家，目前团队共有 100 多人。
-
-    美国前段时间发生了一起自杀式恐怖袭击事件，袭击者在事件中当场死亡，残存
-    iphone 手机一部，为更好掌握案情，以及了解其他风险和威胁，美国政府要打开
-    iphone 手机记录调查，但因该手机存在密码锁，在好莱坞电影里经常出境，大家已经
-    非常熟悉的 FBI，就要求苹果公司给予配合，提供破解工具。
-
-    库克表示，为保护用户隐私，坚决不同意给美国政府任何部门，提供任何破解工具！
-
-    此事在网上传的挺沸沸扬扬的，相信很多人都听说过，比袭击案本身还有名。至于你
-    支持谁，不支持谁，这事咱不讨论了。
-
-    今天要说的是，FBI 已经破解了这台手机，如愿拿到资料，而且，放弃了对苹果公司
-    的要求！ 简直双赢结局有没有，苹果完成了承诺，FBI 完成了安全诉求。
-
-    一家来自以色列的安全公司（好像被日本公司控股了），花了几天的时间，与另外一
-    家从事数据恢复的公司合作，协助 FBI 破解了进入口令。具体技术细节就不展开了，
-    有点黑科技的味道，但是其实也蛮好懂。
-
-    另外，我愿意写一些自己不熟悉的领域，其实也很期待专业人士来打脸，这对我来说
-    是一种巨大提升，（分享即学习 我一直秉承这个理念！）我敢写就不怕被人说。但还
-    好，昨天就有特别专业的大牛主动找我，给予肯定的多，当然也挑了几个错让我有了
-    新的认识。有机会我了解更多会写新的出来。
-
-    **我真的很好奇那些冷嘲热讽说两句怪话的人日常都是干啥的。**
-
-    只要我对生活极其不满时，我就去玩游戏。一整天地玩游戏。
-
-    靠玩游戏来逃避现实一点都不好。
-
-    “试验” 似乎是我的月度单词。
-
-    我看到的每一个地方似乎都在提醒我它的重要性。
-
-    一个很好的例子是 Chris Rock（脱口秀出道的喜剧演员、监制、导演）。这个家伙很
-    搞。只要他一台表演，所有人都笑得前仰后合。
-
-    但刚开始不是这样的。他先是跑到我老家的 “笑话工厂（The Laugh Factory）”，拿
-    出皱巴巴的笔记，然后大声念出来。
-
-    如果讲某个笑话有人笑了，他就会知道这个故事有得搞。如果没人笑，他就把那个笑话扔掉。
-
-    他总共试了 1000 多个笑话才凑够了 1年 后用于一档 HBO 特别节目的 1 小时素材。
-
-    重要的是要记住一点：焦虑永远也解决不了明天的问题，只会偷走今天的精力。
-
-    不是每一个项目都要完成的。
-    拖延的原因也许是你的身体和思想都知道那个项目本来就不好，只是还没有告诉你而已。
-
-    谁会在意呢？
-
-    我死了那些项目也永远完不成的。
-
-    但我死的时候我的孩子和爱人会因为其他原因为我哭泣的。
-
-    也许不会。
-
-    所以 Airware 现在采用了主动出击的方式，通过与特定无人机及传感器的绑定，搭配
-    上自己的 OS+ 特定应用，组装成全套解决方案后出售给不同的客户，用 CEO
-    Jonathan Downey 的话来说，就是要做无人机的 Windows+Office。
-
-    CDN 的本质就是缓存，而客户的需求就是快速、稳定。
-    目前，市场上的厂商分两种思路，一种是自己部署节点，另一种相对比较新的思路就是利用 P2P 的方式。
-
-    我们家在北京的小区总共有 3000 人，如果 3000 人同时看 4K 视频，没有 P2P，是
-    不可能成立的，除非是广播式的去做，而不是现在的点播。
-
-    因为整个互联网的基础设施大部分都是非对称型的，下行特别快，上行会窄一点。在
-    这个场景下虽然把上行带宽用起来了，但是最终对社会的成本是比较高的。当然小区
-    宽带是另外一回事，全部是光线到户的，有可能可以把机器推到小区里面，小区也可
-    以做 P2P 效果会更好一点。我是从功耗的角度觉得极不经济。
-
-    而关注股东价值要求的文化跟创新是格格不入的：
-
-    > 一旦一家公司信奉了股东价值理论，中层就几乎没有选择，只能接受命令控制型的
-    > 管理。而替股东赚钱给中层卖力对于员工来说本来就很无趣。中层只能强迫员工服
-    > 从。如果5 个员工里面只有 1 个全身心投入工作的话，工作有激情、有创意或者创
-    > 业精神的可能就更低了。
-
-    并不是所有的大公司都这样，但大部分都是如此。有趣的是，现在的许多全球最大型公司都避开了股东价值理论并把创业精神作为核心—像苹果、Amazon、Google 和 Facebook 就是很好的例子。
-
-    在评估某个行业是否可以去颠覆时，构思颠覆性想法之前应该先看看市场领导者的
-    DNA，这里面可以透露大量的信息。那些只盯着股东价值的公司，并且更明显地，那些
-    组织架构是等级制的、充满官僚主义习气的那些公司就是很好的目标。而把创业精神
-    作为核心的那些就没那么容易攻击。
-
-    When assessing whether industries are ripe for disruption looking at the
-    DNA of leading players is informative even before the disruptive idea is
-    formed. Companies focused on shareholder value (including many PE backed
-    businesses) and, more obviously, those which are hierarchical and
-    bureaucratic, make good targets. Those that are entrepreneurial to the
-    core, not so much. Returning to Thread, the large entrepreneurial companies
-    in fashion are mono-brand plays innovating through supply chain management,
-    and the multi-brand retail focused companies that might be competitors are
-    more stuck in the bind that Denning describes.
-
-    最近，我参加了苹果的一场活动，活动中我想快速拍一张照片，我使用的是 Galaxy
-    S6，我试图在锁屏状态下双击 Home 键开启相机，但是我等了一会后没有开启，我只
-    能使用指纹解锁手机，于是我错过了那个瞬间。
-
-    这件事刺激了我，作为一个 30 岁的成熟男性，我确实怀念之前设备上的按钮只有一
-    种功能的时候。我的很多读者曾告诉我，他们在使用设备或者使用最基础的软件时，
-    也觉得越来越复杂。
-
-    软件并不是越来越易用，事实却恰恰相反。
-
-    然而，公司为用户提供了更多的功能，但是很多功能用户都不会使用。即使产品的设
-    计很简洁了，但是还不是足够简洁。去掉多余的文本是让设计更简洁的一种方法。但
-    是常常有读者发邮件问我一些他们不能理解的符号。
-
-    换句话说，简洁本身并不应该是一切事物的目标。
-
-    “如果制造出来的所有东西都很简洁，每个人都会使用，那么这是很危险的，因为这款
-    设备能做的事情很少，而且不用学习。一旦你有这样的想法，你就把自己逼上了死角
-    ，就会停滞不前。”
-
-    企业内部沟通协作工具 Slack 今天正式向外界宣布，公司刚刚完成新一轮 2 亿美元
-    的融资，公司在此轮融资后的估值高达 38 亿美元。
-
-    Slack 希望自己未来可以替代传统的电子邮件，成为企业中最主要的通讯方式。Slack
-    的 CEO Stewart Butterfield 之前曾表示，他的目标是终结 “办公室里的电子邮件”
-    ，因为与通讯类应用相比，电子邮件的效率实在太低。Slack 最新的调查数据显示，
-    自从使用 Slack 后，用户的电子邮件使用量锐减了 50%。
-
-    Slack 目前的竞争对手包括微软旗下的 Yammer、VMware 的 Socialcast 以及 Hipchat 等。
-
-    Linux、MySQL、Apache、Firefox、Ubuntu，都是响当当的名字，都是开源的项目。开
-    源，在互联网中占据着越来越重要的地位，不仅受到开发者的欢迎，也受到 IBM、微
-    软、苹果等巨头的青睐。
-
-    但华为开源能力中心主任工程师 杜玉杰告诉 36 氪，一种开源技术从萌芽到成熟、稳
-    定需要一个周期，Linux 已经 20年 了，OpenStack 才 6年 时间，Docker 也才 3年
-    多，还比较年轻。反过来看，在这么短的时间内取得这样的成绩已经算是发展很快了
-    。许多开源项目的生命周期很短，还没有发展起来就死掉了。
-
-    在平时上网可能不会太注意，开源产品无处不在。你访问的网站，大部分是使用
-    Apache 的 Web 服务器；你访问的网站，大部分操作系统 是 Linux 或 BSD；你访问
-    的网站，大部分都是使用 MySQL；你提交 DNS 查询请求由 BIND 服务器分析处理；你
-    访问的博客很可能就是 Wordpress 的；说不定你现在就是用 Firefox 在阅读 36 氪
-    的文章。（被你说中了……）
-
-    在国内开源的项目和社区很多，但品质高的项目却比较少，这也是国内开源项目一直
-    被诟病的原因之一。但在国外许多职业经理人在运营开源社区，而国内却很少。开源
-    在某种程度上说已经不再是一种技术，而是一种文化。国内也需要成立类似的开源基
-    金会，让 BAT 等大公司参与进来，推动开源在国内的发展。
-
-    过去做的是产品都是理工男的思维，所以需要大而全的软件，从计划到实施需要大半
-    年的时间，现在互联网时代所需要的速度是周一提诉求、周二开始做开发、周五上线
-    运营。
-
-    传统的理财服务复杂而昂贵，而千禧一代（Millennials）与互联网有着天然的亲近感
-    ，他们需要更低门槛、更便利、更互联网化的解决方案。
-
-    目前，美国最大的两大智能理财公司遥相呼应：位于纽约的 Betterment 和西海岸的
-    WealthFront。
-
-    [为什么说社群媒体才是自媒体的最好出路？ | 36氪](http://new.36kr.com/p/5045276.html)
-
-    :   众所周知，自媒体要想获得长足的发展，有两个制约他们前进的最大障碍：
-
-          - 一是**内容的可持续性问题**。如何持续地生产出受欢迎的优质内容，这应该是
-            所有自媒体人都存在的共同难题。
-          - 二是**流量的变现问题**。自媒体人辛辛苦苦地产出了优质内容，吸引了一批粉
-            丝，然而却没有一套行之有效的方法让自己的努力能够变现。
-
-        如今，社群和社群经济已得到广泛认可，而自带粉丝光环的自媒体天生就具有社
-        群化的优势。因此，我认为自媒体人应当主动抓住机遇，将自媒体升级为社群媒
-        体，获得持续的内容生产和变现能力，这才是最好的出路。
-
-        社群媒体则不同，它走的是 “PGC+UGC” 路线：内容由社群成员共同创造产生，产
-        生的内容经过加工整理，再以优质 PGC 内容的形式呈现。
-
-    ROV 有两种操控方式，一是通过线缆连接定点作业遥控；另一种是跟踪人身上的声呐
-    信标并用视觉算法进行自动追踪，潜水员佩戴传感器即可自动跟拍，该模式下可续航
-    2 小时。其核心主要是推进器、水动力学控制算法、海洋实验经验等。
-
-    深之蓝此前的军用产价格不低于百万元，但白鲨 ROV 的价格会低很多。不难理解的是
-    ，民用产品要求比军用产品低很多，也意味着更低的生产成本。不过深之蓝面临的挑
-    战是如何找到合适的渠道出货，谁来买单。
-
-    如今政府正扶植民营企业为军方供应产品，以此解决装备成本过高问题。魏建仓于国
-    防科技大学毕业，曾参与过导弹项目，通过其资历获得了一些保密军事订单，同时其
-    厂房生产线也是政府所资助的。
-
-    深之蓝当前员工规模在 80 人左右，其中 70%为研发人员。于 2013年 获得 550 万天
-    使投资，2014年 获得天津泰达科技的 1000 万元 Pre-A 轮融资，2015年 获得纪源资
-    本（GGV）的 3000 万元 A 轮融资。
-
-    软件方面，Trident 的驱动控制软件是开源的（Github上），也支持了最新的 HTML5
-    ，webRTC，WebVR ，WebGL 等网络标准，用户可以在笔记本，平板，智能手机等各式
-    平台上体验操控，用户也可以通过开源 SDK 自行设计 UI 等。
-
-    天津深之蓝海洋设备科技有限公司是一家专业从事水下机器人研发的高科技企业。公
-    司围绕海洋资源探测和海洋环境监测两大主题面向社会提供自主水下航行器（AUV）、
-    水下滑翔机（Underwater Glider） 以及缆控水下机器人（ROV）等小型水下运动载体
-    的相关技术解决方案和产品。
-
-    人民网北京3月24日电 （记者申宁）记者从今天召开的教育部新闻发布会上了解到，
-    第二届中国“互联网+”大学生创新创业大赛已正式启动，主题是“拥抱“互联网+”时代
-    共筑创新创业梦想”。全国总决赛将于10月中下旬在华中科技大学举行。
-
-    创意组申报人为普通高等学校在校生（不含在职生），项目尚未完成工商登记注册；
-    初创组、成长组申报人为普通高等学校在校生（不含在职生）或毕业5年以内的毕业生
-    。
-
-    投资方面，35% 的资金流向为语言培训，24% 为职业教育，K12 领域占比 23%，被资
-    本市场看好。
-
-    调查显示三四线城市对教育类产品的向往更强烈
-
-    然而特斯拉的厉害之处不止如此。一般来说，当我们购入一辆车，它的软件系统所呈
-    现的 “智力水平” 就停滞在其出厂的那天。然而特斯拉软件系统却是能够不断更新的
-    。（吐槽：这特么都能算卖点……）
-
-    我们看到，传统汽车厂商依靠自己的算法同样可以在自动驾驶中取得不错的表现，但
-    是如果没有了地图数据它们就束手无策了。无人车的路径规划和位置定位都需要依赖
-    地图，这些数据正是 Google/Baidu 等公司独有的重要资源。从这个角度说，
-    Google/Baidu 与传统汽车厂商未来的商业合作模式人期待。
-
-    英伟达希望利用自己的计算优势为无人驾驶提供感知层面的解决方案（NVIDIA DRIVE PX）
-
-    无人驾驶技术要处理的传感器数据主要来自摄像头和雷达，数据量大，英伟达的芯片
-    正好具有优秀的并行处理能力和特别优化的深度学习工具 (cuDNN)，非常适用于无人
-    驾驶需要的场景检测、车辆行人检测等任务。英伟达之前与奥迪合作研发无人车时使
-    用了 Tegra K1 芯片，如今又推出了更为强大的 Tegra X1 芯片，它不想错过这个未
-    来的大市场。
-
-    英伟达可以提供优秀的图形处理芯片（NVIDIA DRIVE CX）
-
-    整体上来说，无人驾驶技术飞速发展，逐渐从Research 问题变为 Engineering
-    Project，因而对应的研究领域变得更加细化。
-
-    十二年前，第一届DARPA Grand Challenge在沙漠里举办，多数人认为无人车只是典型
-    的从实验室攒出的那种搭载着笨重的设备，依稀让人联想到地面无人作战武器。
-
-    企业花同样的钱，一个是凤姐，一个是明星，为何要请凤姐过去呢？凤姐是个话题人
-    物，过去了就能上版面，就能带来二次话题传播。明星过去根本形成不了话题，这些
-    人站台司空见惯了，更别说会有二次传播了。而且，一些明星名气一般般，架子倒是
-    很大，拿了企业的钱也不愿意配合宣传，纯粹就是花瓶一个，很多网红则更接地气，
-    拿人钱财替人吆喝。企业并不傻的，在合适的时候花合适的钱，请一个合适的人带来
-    合适的结果，这才是企业所关注的。
-
-    Papi 酱是现象级网红，属于社会稀缺资源，一线明星似乎并不是，国际影后都扎着堆
-    。网红中的皇后只有一个 papi 酱，明星中的皇后数不胜数，本来就是两条路上的人
-    ，我认为没有太大对比性。一个很简单的例子，同样是失足妇女，站街的、东莞的、
-    天上人间的，到底有什么不一样呢？有些硬件条件很好的在站街，一两百甚至几十块
-    ，东莞的就是几百块，天上人间可以上万呢？甚至还有几十万的。到底是什么不同导
-    致如此悬殊的价格呢？似乎也很难理解。（吐槽：作者的思路……真是让人无法捉摸。
-    ）
-
-    华盛顿大学奥林商学院的研究表明，在未来十年内，当今世界 500 强企业中将有 40%
-    不复存在。在接下来的十年里，随着大数据及人工智能的崛起，颠覆医疗、金融及保
-    险这三个行业的时机已经成熟。本文将就此进行简要分析。
-
-    保险是与概率和不完全认知打交道的古老行业。然而在 “完全认知” 的新纪元中，很
-    多事物都将不同于昨日。
-
-    refs and see also
-
-      - [做无人机操作系统的Airware获3000万美元C轮融资，要卖全套解决方案 | 36氪](http://new.36kr.com/p/5045372.html)
-      - [James Altucher：拖延症的十大疗法 | 36氪](http://new.36kr.com/p/5045346.html)
-      - [用P2P思路做CDN，到底靠不靠谱？ | 36氪](http://new.36kr.com/p/5044806.html)
-      - [黑客的背后 | 36氪](http://new.36kr.com/p/5045414.html)
-      - [为什么一些大公司斗不过初创企业？ | 36氪](http://new.36kr.com/p/5045361.html)
-      - [Why some big firms struggle to compete with startups | THE EQUITY KICKER](http://www.theequitykicker.com/2016/03/30/why-some-big-firms-struggle-to-compete/)
-      - [苹果和Google为什么都在努力设计简洁的软件？ | 36氪](http://new.36kr.com/p/5045348.html)
-      - [Slack完成新一轮2亿美元融资，公司估值达38亿美元 | 36氪](http://new.36kr.com/p/5045431.html)
-      - [开源社区那些活跃的大公司到底为了什么？ | 36氪](http://new.36kr.com/p/5045284.html)
-      - [机器人投资顾问公司Betterment完成1亿美元融资，智能资产管理是千禧一代的选择吗？ | 36氪](http://new.36kr.com/p/5045275.html)
-      - [从军用到消费市场，“深之蓝”想包揽全系列水下机器人 | 36氪](http://new.36kr.com/p/5045257.html)
-      - [天津深之蓝海洋设备科技有限公司](http://www.deepinfar.com/)
-      - [无人机帮你探索天空，OpenROV 的Trident水下机器人帮你探索大海_36氪](http://36kr.com/p/5039113.html)
-      - [OpenROV | Underwater Exploration Robots](http://www.openrov.com/)
-      - [第二届大学生创新创业大赛启动 将永不落幕_教育_腾讯网](http://edu.qq.com/a/20160324/032122.htm)
-      - [百度发布《中国互联网教育行业趋势报告》，高等教育、职业教育“三分天下”_36氪](http://36kr.com/p/5045041.html)
-      - [无人驾驶汽车和它的产业界——从特斯拉ADAS说起 | 36氪](http://new.36kr.com/p/5045225.html)
-      - [Papi酱拍卖的是广告，套现的是PR | 36氪](http://new.36kr.com/p/5045214.html)
-      - [下一个十年，这三大产业将被大数据和人工智能重塑 | 36氪](http://new.36kr.com/p/5045163.html)
-</div>
-
----
-
-因为梅姐的形象和声音都不是当时流行的甜美型，造型师干脆把她打扮成一个假小子。从
-另一个层面讲，也算是一种性别觉醒吧。看看梅艳芳，再看看20年后的李宇春，香港确实
-走快了一步。后来随着梅姐年龄的增长没有再走中性路线，但梅艳芳依然香港人心中是“有
-型”的代表。
-
-作为粉丝，我觉得罗列梅姐的奖项、赞誉，乃至身后名都很苍白，和我对她的敬重无关。
-所以讲讲她的故事。虽然她的一生让人扼腕、心酸，但其实她本人日常是很逗比、大大咧
-咧的，所以周围才会有这么多人喜欢她。面对逆境，她是坚强而无畏的，所以被冠以“香港
-的女儿”。
-
-赵文卓曾说当年香港娱乐圈两个"大哥"，一个成龙，一个梅艳芳。周星驰、成龙同样认为
-她是当之无愧的大姐大
-
-你看看梅姑的“床戏”，基本是脖子以下就不脱了。。。谁敢拍啊~~
-
----
-
-[王家卫也想不出这么美的台词 - 简书](http://www.jianshu.com/p/f3237b61d54a)
-
-:   - If you let my daughter go now, that'll be the end of it. I will not look
-      for you, I will not pursue you. But if you don't, I will look for you, I
-      will find you, and I will kill you.
-    - I drink your milkshake!
-    - Chewie, we're home.
-    - I don't want to survive. I want to live.
-    - 这是常识，我亲爱的华生。Elementary, my dear Watson.
-    - After all, tomorrow is another day!
-    - I'm also just a girl, standing in front of a boy, asking him to love her.
-    - 我是世界之王！I'm the king of the world!
-    - What we've got here is a failure to communicate.
-    - Keep your friends close, but your enemies closer.
-    - The greatest trick the devil ever pulled was convincing the world he didn't exist.
-    - Fasten your seatbelts. It's going to be a bumpy night.
-    - I love the smell of napalm in the morning.
-    - Carpe diem. Seize the day, boys.
-    - Mrs. Robinson, you're trying to seduce me.
-    - 从相遇的那一刻起你就已经征服了我。You had me at hello.
-    - Houston, we have a problem.
-    - Why so serious?
-    - The first rule of Fight Club is: You do not talk about Fight Club.
-    - You talkin' to me?
-    - I'm going to make him an offer he can't refuse.
-    - Frankly, my dear, I don't give a damn.
-
-[中国烂片，请停止羞辱女性 - 简书](http://www.jianshu.com/p/2646410606be)
-
-:   显然，导演是想塑造出一个“真性情”的女主形象。
-
-    但，**真性情不等于粗鲁**。
-
-    把女人当男人用，更是对“女汉子”的侮辱。
-
-    现在我们讲的，褒义的“女汉子”，是指独立自主的女性。
-
-    她们能勇敢地争取自己的权利，也能勇敢地承担责任。
-
-    **这种勇敢，不是外表多邋遢，性格多爆裂。**
-
-    相反，可以很美——
-
-    说来说去，都为男人。
-
-    片中最让人反胃的这句台词——
-
-    > 女人就像是书架上的书。
-    >
-    > 如果没被翻过，只能证明她一点都不吸引人。
-
-    她的声音，跟人一样，带着粗糙的勇敢和活力。
-
-    refs and see also
-
-      - [她从没学过表演，却拿遍中国所有影后 - 简书](http://www.jianshu.com/p/93f24d552885)
-
 [我怕甩出这份追剧表后，没人再看国产的 - 简书](http://www.jianshu.com/p/d9c87039cb1c)
 
----
-
 `wp-content` 原来是 wordpress 内容……的意思……我一直以为是 windows phone 来着……
-
----
 
 [Create your Google Sitemap Online - XML Sitemaps Generator](https://www.xml-sitemaps.com/)
 
 [链接提交_站长工具_优化PC和移动搜索收录_百度站长平台](http://zhanzhang.baidu.com/linksubmit/index?site=http://tangzx.qiniudn.com/)
 
-:   - <http://tangzx.qiniudn.com/sitemap.xml>
-    - <http://tangzx.qiniudn.com/sitemap.html>
-    - <http://tangzx.qiniudn.com/sitemap.txt>
+- <http://tangzx.qiniudn.com/sitemap.xml>
+- <http://tangzx.qiniudn.com/sitemap.html>
+- <http://tangzx.qiniudn.com/sitemap.txt>
 
-    ```bash
-    cd publish
-    curl -H 'Content-Type:text/plain' \
-            --data-binary @sitemap.txt \
-            "http://data.zz.baidu.com/urls?site=tangzx.qiniudn.com&token=SQTpHwK3EiD9dlhh"
-    ```
+```bash
+cd publish
+curl -H 'Content-Type:text/plain' \
+        --data-binary @sitemap.txt \
+        "http://data.zz.baidu.com/urls?site=tangzx.qiniudn.com&token=SQTpHwK3EiD9dlhh"
+```
 
 [qrsctl 命令行辅助工具](http://developer.qiniu.com/code/v6/tool/qrsctl.html)
 
 [Tutorial - Use cursors to customize Web sites - Axialis Software](http://www.axialis.com/tutorials/use-cursors-to-customize-websites.htm)
 
----
 
 ```javascript
 $('div.tzx-drawer').on('click', function(){
@@ -700,21 +59,19 @@ It also supports, but does not require, ...
 
 Ajax
 
-:   Call a local script on the server /api/getWeather with the query parameter
-    zipcode=97201 and replace the element #weather-temp's html with the
-    returned text.
+Call a local script on the server /api/getWeather with the query parameter zipcode=97201 and replace the element #weather-temp's html with the returned text.
 
-    ```javascript
-    $.ajax({
-        url: "/api/getWeather",
-        data: {
-            zipcode: 97201
-        },
-        success: function( data ) {
-            $( "#weather-temp" ).html( "<strong>" + data + "</strong> degrees" );
-        }
-    });
-    ```
+```javascript
+$.ajax({
+    url: "/api/getWeather",
+    data: {
+        zipcode: 97201
+    },
+    success: function( data ) {
+        $( "#weather-temp" ).html( "<strong>" + data + "</strong> degrees" );
+    }
+});
+```
 
 ---
 
@@ -12181,15 +11538,6 @@ void f() {
 * The Project Pages site at `muan.github.io/emoji` redirects to `muan.co/emoji`
   and is also available at `emoji.muan.co`.
 
-![2 sites](http://whudoc.qiniudn.com/2016/QQ图片20160325142211.png)
-
-<!--
-![花生人偶](http://whudoc.qiniudn.com/2016/1401322-8683102a2fe0cfb5.jpg)
-![site #1](http://whudoc.qiniudn.com/2016/QQ图片20160325142537.png)
-![site #2]http://whudoc.qiniudn.com/2016/QQ图片20160325142553.png
-![git diff](http://whudoc.qiniudn.com/2016/QQ图片20160329185821.png)
--->
-
 a **`type qualifier`** is not allowed on a static member function.
 
 ```tzx-plain
@@ -15115,92 +14463,69 @@ Refs
 
 Markded
 
-:   <http://whudoc.qiniudn.com/2016/v/0.2/marked.html>
+:   ```html
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8"/>
+      <title>Marked in the browser</title>
+    </head>
+    <body>
+    <div class="tzxMarked">**nice**</div>
+    <div class="tzxMarked">
+    # good
+    **bad**
+    ## nice
+    ## terrible
+    > quoted
+    </div>
 
-    :   ```html
-        <!doctype html>
-        <html>
-        <head>
-          <meta charset="utf-8"/>
-          <title>Marked in the browser</title>
-        </head>
-        <body>
-        <div class="tzxMarked">**nice**</div>
-        <div class="tzxMarked">
-        # good
-        **bad**
-        ## nice
-        ## terrible
-        > quoted
-        </div>
-
-        <script src="http://tangzx.qiniudn.com/marked.js"></script>
-        <script>
-        tzxMarkeds = document.getElementsByClassName('tzxMarked');
-        for ( var i = 0; i < tzxMarkeds.length; ++i ) {
-            m = tzxMarkeds[i];
-            ms = m.textContent;
-            console.log( ms );
-            m.innerHTML = marked( ms );
-        }
-        </script>
-        </body>
-        </html>
-        ```
+    <script src="http://tangzx.qiniudn.com/marked.js"></script>
+    <script>
+    tzxMarkeds = document.getElementsByClassName('tzxMarked');
+    for ( var i = 0; i < tzxMarkeds.length; ++i ) {
+        m = tzxMarkeds[i];
+        ms = m.textContent;
+        console.log( ms );
+        m.innerHTML = marked( ms );
+    }
+    </script>
+    </body>
+    </html>
+    ```
 
 Strapdown
 
-:   <http://whudoc.qiniudn.com/2016/v/0.2/united.html>
+:   ```html
+    <!DOCTYPE html>
+    <html>
+    <title>Hello Strapdown</title>
 
-    :   ```html
-        <!DOCTYPE html>
-        <html>
-        <title>Hello Strapdown</title>
+    <xmp theme="united" style="display:none;">
+    # Markdown text goes in here
 
-        <xmp theme="united" style="display:none;">
-        # Markdown text goes in here
+    ## Chapter 1
 
-        theme: united
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.
 
-        ## Chapter 1
+    ## Chapter 2
 
-        chapter one!
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+    anim id est laborum.
+    </xmp>
 
-        **bold** and *slanted*.
+    <script src="http://tangzx.qiniudn.com/strapdown.js"></script>
+    </html>
+    ```
 
-        - foo
-        - bar
+Refs
 
-        1. one
-        2. two
-
-        `bash -e "echo hello"`
-
-        ## Chapter 2
-
-        <http://tangzx.qiniudn.com/>
-
-        ![octocat](http://gnat-tang-shared-image.qiniudn.com/octocat/adventure-cat.png)
-
-        </xmp>
-
-        <script src="http://whudoc.qiniudn.com/2016/v/0.2/strapdown.js"></script>
-        </html>
-        ```
-
-    更多例子见：<http://whudoc.qiniudn.com/2016/v/0.2/index.html>
-
-      - [bootstrap.html](http://whudoc.qiniudn.com/2016/v/0.2/bootstrap.html)
-      - [journal.html](http://whudoc.qiniudn.com/2016/v/0.2/journal.html)
-      - **[readable.html](http://whudoc.qiniudn.com/2016/v/0.2/readable.html)**
-      - [simplex.html](http://whudoc.qiniudn.com/2016/v/0.2/simplex.html)
-      - **[spacelab.html](http://whudoc.qiniudn.com/2016/v/0.2/spacelab.html)**
-      - [united.html](http://whudoc.qiniudn.com/2016/v/0.2/united.html)
-
-    Refs
-
-    #. [chjj/marked](https://github.com/chjj/marked)
-    #. [Strapdown.js - Instant and elegant Markdown documents](http://strapdownjs.com/)
+#. [chjj/marked](https://github.com/chjj/marked)
+#. [Strapdown.js - Instant and elegant Markdown documents](http://strapdownjs.com/)
 
 ---
 
@@ -15798,6 +15123,15 @@ chess), displaying its complexity despite relatively simple rules.
 #. &#x2610; [王友来：《我在美国坐牢——美国联邦监狱揭密》 | 海外文摘 - Bay Area Chinese--灣區華人 - Powered by PHPWind](http://www.bachinese.com/forum/simple/?t20389.html)
 #. &#x2610; [Machiavellianism - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Machiavellianism)
 #. &#x2610; [马基雅维利主义\_百度百科](http://baike.baidu.com/view/1201238.htm)
+#. &#x2610; [唱灌篮高手主题曲的人现在怎么样了？ - 知乎](https://www.zhihu.com/question/22512533)
+:   ?
+    :   「マイフレンド」我的朋友乐队 ZARD，主唱坂井泉水。泉水姐姐声音甜润且相貌
+        极美，以她为中心的 ZARD 也成为日本最成功的乐队之一，十几年里作品张张大卖
+        ，总销量近 4000 万张，诞生名曲无数。可惜天妒红颜，2007 年癌症扩散到肺部，
+        入院治疗时又发生意外事故，不幸去世，无数歌迷心中永远的痛。九十年代开始
+        的这十几年是日本流行音乐最辉煌的时期，连动画片的音乐都是相当拿得出手，
+        往往有大牌音乐人精心制作。现在的日本动画画面虽然越来越清晰和符合现在的
+        审美，音乐性上想要全面超越那个时期的动画基本上是不可能了。
 #. &#x2610; [日本有哪些好的歌手？ - 知乎](https://www.zhihu.com/question/22782650)
 :   ?
     :   5. ZARD 听到就让人泪目的摇滚乐团无需多言。这首《君に逢いたくなったら》是
@@ -18423,6 +17757,15 @@ chess), displaying its complexity despite relatively simple rules.
 
 <!--...--><!--上面不要加 ---（hr）-->
 <!--
+<div class="tzx-tabs">
+* [](#)
+* [](#)
+
+<div id="">
+</div>
+
+~~~ {# .c}
+~~~
 </div>
 fold item
 V/\n#. ?kbzf
