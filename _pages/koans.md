@@ -26,6 +26,12 @@ before-after: |
 Koans | 呓语
 ============
 
+
+[モニカ-吉川晃司 モニカMP3下载,歌词下载 - 虾米音乐](http://www.xiami.com/song/1769983079?spm=a1z1s.3521865.23309997.2.znJCHQ)
+
+[中島みゆき中岛美雪 / Miyuki Nakajima / なかじま みゆき](http://www.xiami.com/artist/7118?spm=a1z1s.3521865.1997177593.2.Rqyp3H&from=searchsubject)
+
+
 ## `1459563448`{.tzx-timestamp} 淘金时代
 
 现在的社会充满了创业，满是淘金热。然而好像买牛仔裤比淘金本身要赚钱，于是

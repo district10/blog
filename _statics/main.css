@@ -577,14 +577,8 @@ div#TOC:hover {
     color: rgba(255, 0, 0,1.0);
 }
 
-pre.tzx-plain code {
-	color: black;
-}
-
-pre.tzx-poem code {
-	color: black;
-}
-
+pre.tzx-plain code,
+pre.tzx-poem code,
 pre.tzx-bigquote code {
 	color: black;
 }
@@ -610,10 +604,6 @@ pre.tzx-bigquote code {
     margin-right: -200px;
     color: black;
     */
-}
-
-.tzx-bigquote > code {
-    margin: 0 auto;
 }
 
 .tzx-anchor {
@@ -781,7 +771,9 @@ body {
 pre {
     font-size: 80%;
 }
-pre.tzx-bigquote {
+pre.tzx-bigquote,
+pre.tzx-poem {
+    margin: 0 auto;
 	padding-left: 6em;
 	padding-top: 4em;
 	padding-bottom: 4em;

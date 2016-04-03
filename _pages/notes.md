@@ -21,19 +21,436 @@ cssfile:
 Notes | 笔记
 ============
 
+A girl likes to be crossed in love now and then.
+
+举世皆浊我独清，
+众人皆醉我独醒，
+是以见放。
+
+---
+
+[金枝玉叶 (豆瓣)](https://movie.douban.com/subject/1303376/)
+
+:   1. He's a Woman, She's a Man
+    2. Who's the Woman, Who's the Man
+
+    如果一个女子，令同性、异性都开始怀疑自己的性取向，那么，她无疑是一个动人的
+    女子，极致动人的女子。
+
+    亦舒的笔下永远有一对男女叫家明和玫瑰，精细敦厚的家明是尘世女子最好的选择，
+    风情万种的玫瑰的世间男子的劫，家明只爱玫瑰，玫瑰也只爱家明，一个家明只得一
+    个玫瑰。但，哪有那么笃定的事呢？最后，家明和玫瑰并没有在一起。
+
+    他和袁咏仪穿着白衫齐齐坐在钢琴前，低低唱着“追”，刘嘉玲在隔壁，贴墙聆听，失
+    落又迷惘。
+
+    还是回来《金枝玉叶》。故事完结在漆黑的电梯。袁咏仪惊叫：“困粒！”原本有幽闭
+    恐惧症的张国荣懒懒回了句“管他呢”。然后满天烟火，THE END。就像迪士尼电影的片
+    尾。所以，导演的意思也许是，这就是个童话而已。
+
+    爱与哀愁。
+
+    于是他又去找旧情人——玫瑰，两人大诉衷肠，家明还得出一个快要被说烂的结论：为
+    什么人与人之间都要分开了才能更加了解。如果玫瑰顺势温情下去，两人沟通完心灵
+    恐怕又要沟通一下身体。但玫瑰是个集大俗大雅于一身的女人，她说：顾家明，你这
+    样令身边的人很难做。还好顾家明有这些动摇，让金枝玉叶没有变成痴情男的纯爱片
+    ，让顾家明更真实。另外，我爱玫瑰的那句话：你这样令身边的人很难做。是的，偶
+    尔你是不是沉浸在自己的世界里，按照自己的完美计划进行着某种步伐，但你也许根
+    本不知道，根本没发觉，你让身边的人很难，很难说什么很难做什么来给你回应，所
+    以你需要清醒一下，你需要一个肥婆或者渔佬这样的人。
+
+    女人也许更喜欢玫瑰，但男人应该喜欢子颖。玫瑰也许是家明很好的生活伴侣，但绝
+    对不是精神伴侣，子颖则是。一直喜欢袁咏仪和刘青云搭戏，最喜欢《新不了情》里
+    她捉一只冰棒蹦蹦跳跳逛夜市，还有吃药都要先丢一颗到空中再落到嘴里。这种港片
+    最适合听原声，虽然字幕也是粤语化了的，但仍然能看懂，粤语的语气词很多，说一
+    句话抑扬顿挫。袁咏仪的声音哑哑的，偶尔抓起那两只布偶一人分饰三角，自说自话
+    哭哭笑笑。或者和家明困在电梯里时一边跳一边吼那个好笑的绕口令：“麦当娜约咗麦
+    当雄去麦当劳道嗰间麦当劳食麦皮捞当归。”她认真地崇拜着玫瑰，只有一个愿望那就
+    是希望玫瑰和家明白头到老，但真正融入到两人的生活中，却发生意想不到的事，也
+    不能说子颖是他们分手的原因——即使子颖不出现，家明的非洲音乐梦和玫瑰的欧洲购
+    物梦迟早会碰撞到顶点。
+
+    袁咏仪的演技，哥哥的柔情似水深情入木，梅姐那不可二世的绝代芳华。
+
+    男人爱别人，是为了自己开心；女人爱别人，是为了对方开心，然后自己自然而然也
+    会开心。
+
+    《金枝玉叶2》，里面不但有男同，还有拉拉，还有超越同性异性恋的：人性恋！听听
+    他们是怎么说的：阿O（李绮虹）：切，你没有试过你又怎么知道你不喜欢女人？刷墙
+    工（许志安）：但是，你们的爱感染了我们，我们决心从今天起从衣柜里跳出来！当
+    然不能漏了梅姐：我爱你，无论你是男人抑或女人。
+
+    接下来我要说到渔佬（陈小春），他的爱情相当卑微，可是认真负责。他用剃光二十
+    年的脚毛乃至假扮女人来取悦阿O，这么猥琐的桥段就是为了说明一个朴素的真理：你
+    要想尽一切办法让对方喜欢你。或者通俗点：投其所好。那么渔佬同学守住爱情没有
+    呢？不知道。不知道？这算什么回答？
+
+    因为阿O最后说了：“也许有一天我会回来，也许，我老了的时候。”等待貌似是不坏的
+    选择，当然，你可以选择在原地等，也可以选在心底等，反正人心是多变的。
+
+    好人是用来爱的，坏人是用来搞笑的，闹过骂过整蛊过，最后不免俗的靓仔追到女主
+    角，阿爸焕发第二春，就连万人憎的奸角都要包着绷带出来一起大团圆。
+
+    很多人都觉得2不如1来得好看。撇开续集魔咒不谈，造成这种结果的原因不外乎是编
+    剧们有意为之的“童话的破灭”。相信大多数人都记得第一部里顾家明的那句名言“男又
+    好，女又好，我净係知道我钟意你”，如此专注与深情，王子与灰姑娘的经典演绎，一
+    颗红心贯彻到底。但是到了第二部，似乎所有人都长大了，王子喝多了可以跟人一夜
+    情，灰姑娘会跟别人，还是一个女人情愫暗生。有背叛，有怀疑，有更多的不知所措
+    更多的眼泪。
+
+    虽然最终结果有可能是我不记得名字的那谁（对不住啊）评价第五代导演那样：“我曾
+    经以为那是美好的开始，没想到原来那就是最后的巅峰。”
+
+    阿颖是个没有太多自信的孩子，总是希望得到肯定，希望得到某种承诺或安全感，sam
+    则喜欢个人空间多一些，希望不要因为对方打乱自己的生活。后来阿颖说“搞成一团糟
+    ，都是我不好，因为我对自己都没有信心”，sam说“我们要给对方多一点时间，看看我
+    们到底能不能合得来。如果合不来，就弄到合得来为止。”看得我心有感触。
+
+    陈小春喜欢李绮红，但李喜欢女人，百般开解不成，陈扮作女人接近李。很多时候先
+    喜欢一个人总是先输掉一半，但输的心甘情愿，输的甘之如饴。我失心于甘于奉献的
+    人，为他人着想的人，也许比较自虐。觉得爱一个人就要让对方感到快乐，感到幸福
+    ，感到生活的美好。总是想尽一切办法让对方开心，看到对方的笑脸就觉得自己是全
+    世界最幸福的人，如果对方愁眉不展，或者只是小郁闷一下，都会因为自己没办法帮
+    对方分担而感到难过。
+
+    refs and see also
+
+      - [金枝玉叶今犹在，世间已无十二少 (金枝玉叶 影评)](https://movie.douban.com/review/2746538/)
+      - [爱与哀愁 (金枝玉叶 影评)](https://movie.douban.com/review/1111710/?start=0&post=ok#last)
+      - [渔佬与白兔仔。 (金枝玉叶 影评)](https://movie.douban.com/review/2354408/)
+      - [爱，只要你有了，就再也不会衰老 (金枝玉叶2 影评)](https://movie.douban.com/review/2910744/)
+      - [所谓黄金时代 (金枝玉叶2 影评)](https://movie.douban.com/review/2859116/)
+      - [爱是怎么回事？ (金枝玉叶2 影评)](https://movie.douban.com/review/1990974/)
+
+[胭脂扣 (豆瓣)](https://movie.douban.com/subject/1299288/)
+
+:   遭此一劫之后他醒来?会不会吵着再要去死?
+
+    很有可能啊.
+
+    但是围坐在他身边是什么?应该是家人吧.
+
+    试问再痴心的人,还有勇气再死一回么??
+
+    活着记住这个人才是感情的**升华**.
+
+    十二少到老还是一个不入流的戏子,他的一辈子都没有醒,他的一辈子都给了如花.他一
+    辈子都爱着如花.他一直是一个人,内心怀揣着那段胭脂情.
+
+    同样的50年来,如花怀揣的也是一个梦.这个梦知道遇见70多岁的十二少才醒了.她说:
+    我不会在等你了.
+
+    **可是别忘了,十二少才是那个等的最久的人.**
+
+    李碧华在书中写道：“这便是人生：即便使出浑身解数，结果也由天定。有些人还未下
+    台，已经累垮了；有些人巴望闭幕，无端拥有过分的余地。这便是爱情：大概一千万
+    人之中，才有一双梁祝，才可以化蝶。其他的只化为蛾、蟑螂、蚊蚋、苍蝇、金龟子…
+    …就是化不成蝶。**并无想象中之美丽。**”
+
+    而这段故事终归是缱綣(quǎn qiǎn, 感情深切，难舍难分)却陆离的爱情，卸尽纷繁终
+    不弃的伤和凉。
+
+    这人生如戏，戏如人生，唱戏就是把人生拖拖拉拉的痛苦直截了当地给演出来，不过
+    戏演完了还不是人生拖拖拉拉的痛苦？
+
+    倒是十二少的母亲对父亲说的另一句台词，让我感觉那才是真爱：老爷，你不用这样
+    生气。如果是我们的儿子，就始终都是我们的儿子；如果不是的话，你用绳子绑也绑
+    不住他。
+
+    无论多么怀疑，都不要轻易捅破那层纸，如花的好奇心毁了爱，女人要有一种暧昧的
+    姿态，即使知道男人在说谎，也不揭穿，男人也知道她知道，这样含糊纠缠着，日子
+    就过了。
+
+    refs and see also
+
+      - [终不弃的伤和凉 (胭脂扣 影评)](https://movie.douban.com/review/1026785/)
+      - [说说如花——凡可怜之人，必有可恨之处。 (胭脂扣 影评)](https://movie.douban.com/review/1343622/)
+      - [绻缱_百度百科](http://baike.baidu.com/view/2824049.htm)
+
+[幸せ_百度百科](http://baike.baidu.com/view/5156725.htm)
+
+:   幸せ，日本演歌歌手小林幸子于1997年8月发行的歌曲，中岛美雪作词作曲，荻田光雄
+    编曲，同年11月中岛美雪自己翻唱，由濑尾一三编曲，并收录于单曲《爱情物语》。
+
+    幸せ（幸福），即华语歌手任贤齐的经典歌曲《伤心太平洋》的原版。由日本创作型
+    歌姬中岛美雪填词作曲，由日本红白歌会的常客小林幸子于1997年8月30日发行。同年
+    11月份中岛美雪翻唱此曲，作为单曲《爱情物语》B面曲发行，2002年收于中岛美雪精
+    选集《Singles 2000》。
+
+    （感觉原来的歌词讲了一个比《伤心太平洋》好得多的故事。前者讲出了内心的矛盾与纠结，
+    后者只是说了自己的暖不了一颗心。感觉日语歌的歌词都有好故事。尤其是我 ZARD 女神的歌词。）
+
+    中岛美雪（艺名采与本名读音相同的平假名写法中島 みゆき，1952年2月23日－）是
+    出生于日本北海道札幌市，出身于带广市的创作型女歌手、广播主持人。在1975年以
+    单曲“蓟花姑娘的摇篮曲（アザミ嬢のララバイ）”出道，于1980年代前半得到极大欢
+    迎，至今仍受到普遍的支持，是日本代表性的一位创作性女歌手。她抑郁沉重的曲风
+    和在广播节目中开朗的语气之间的落差也是为人所知的。
+
+    中岛美雪的祖父中岛武市，曾是北海道带广市议会的议长。她的父亲担任妇产科医师。
+
+    她在北海道札幌市出生，5岁举家迁至岩内，念国中时搬到带广市，曾因母亲生病疗养
+    而短暂搬到本州山形县。后来又搬回带广市完成高中学业。大学毕业于藤女子大学的
+    文学院国文学系。
+
+    她是日本唯一横跨四个年代（1970年代、1980年代、1990年代、2000年代）都得过公
+    信榜（Oricon）第一名的歌手（五首歌分别是1977年的《わかれうた》；1981年的《
+    悪女》；1994年的《空と君のあいだに》；1995年的《旅人のうた》；与2000年的《
+    地上の星》）。中岛美雪出道以来，极少上电视节目，但歌曲仍旧很受欢迎，也常为
+    许多歌手及电视节目和电影写歌。
+
+    她（中岛美雪）有四首歌曲收入日本的中学教科书之中，也是唯一以歌手身份担任过
+    日本国语文教科书评审委员会的委员。从70年代至今，几乎每张专辑都被华人地区歌
+    手所重新填词与翻唱。
+
+    （之前也看到 Sakai 的歌收录到教科书里。关键是日文歌的歌词都！太！文！艺！了！
+    完全是诗。）
+
+    <div class="tzx-drawer" shy>
+    幸せ（幸福）
+
+    :   ```tzx-bigquote
+        梦なら醒める
+        是梦的话就醒来
+        ああいつかは醒める
+        啊总有一天会醒来
+        见なけりゃよかったのにと 言われても
+        即便会有人说不如没有做过
+        それでも梦が 醒めるまでのあいだ
+        但在梦醒之前的时光里
+        见てたことを幸せと呼びたいわ
+        我想把所见称为"幸福"
+        あなたの町が 窓の向こうで
+        你的城市就在窗外
+        爱情物语
+        爱情物语
+        星のように远ざかる电车で思います
+        我在像星星一样远去的火车里里想
+        幸せになる 道には二つある
+        得到幸福有两条路
+        一つめは愿いごとうまく叶うこと
+        一条是完美实现自己的愿望
+        幸せになる 道には二つある
+        得到幸福有两条路
+        もう一つは愿いなんか 舍ててしまうこと
+        另一条是舍弃所有的愿望
+        せんないね せんないね
+        没办法啊没办法
+        どちらもぜいたくね
+        无论哪条都是奢望
+        せんないね せんないね
+        没办法啊没办法
+        これからどうしよう
+        今后我将怎么做
+        幸せになりたいね
+        我想得到幸福
+        旅の途中の ああ雪降る駅で
+        旅途中
+        なぜ降りてしまったのかわからない
+        我在下雪的车站
+        あなたは来ない
+        不知为何要下车
+        追いかけては来ない
+        你没有来 没有追过来
+        当たり前ねと小さく笑います
+        还笑着说理所当然
+        急ぎ足では 远ざかれない
+        匆忙的脚步走不了多远
+        雪の粒より小さな梦をまだ见てるわ
+        我做着一个比雪花还要小的梦
+        幸せになる 道には二つある
+        得到幸福有两条路
+        一つめは愿いごとうまく叶うこと
+        一条是完美实现自己的愿望
+        幸せになる 道には二つある
+        得到幸福有两条路
+        もう一つは愿いなんか 舍ててしまうこと
+        另一条是舍弃所有的愿望
+        せんないね せんないね
+        没办法啊没办法
+        どちらもぜいたくね
+        无论哪条都是奢望
+        せんないね せんないね
+        没办法啊没办法
+        これからどうしよう
+        今后我将怎么做
+        幸せになりたいね
+        我想得到幸福
+        幸せになる 道には二つある
+        得到幸福有两条路
+        一つめは愿いごとうまく叶うこと
+        一条是完美实现自己的愿望
+        幸せになる 道には二つある
+        得到幸福有两条路
+        もう一つは愿いなんか 舍ててしまうこと
+        另一条是舍弃所有的愿望
+        せんないね せんないね
+        没办法啊没办法
+        どちらもぜいたくね
+        无论哪条都是奢望
+        せんないね せんないね
+        没办法啊没办法
+        これからどうしよう
+        今后我将怎么做
+        幸せになりたいね
+        我想得到幸福
+        ```
+    </div>
+
+    refs and see also
+
+      - [幸せ-小林幸子, 幸せMP3下载,歌词下载 - 虾米音乐](http://www.xiami.com/song/1769511643?spm=a1z1s.6659513.0.0.oixj5f)
+      - [伤心太平洋-任贤齐, 伤心太平洋MP3下载,歌词下载 - 虾米音乐](http://www.xiami.com/song/47078?spm=a1z1s.3521865.23309997.2.AKFVsj)
+      - [中島みゆき个人资料_艺人档案 - 虾米音乐](http://www.xiami.com/artist/profile-7118?spm=a1z1s.6659509.6856553.3.sXAj4D)
+
+[Oricon - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Oricon)
+
+:   Oricon Inc. (株式会社オリコン Kabushiki-gaisha Orikon?), established in
+    1999, is the holding company at the head of a Japanese corporate group that
+    supplies statistics and information on music and the music industry in
+    Japan. It started as Original Confidence Inc. (株式会社オリジナルコンフィデ
+    ンス Kabushiki-gaisha Orijinaru Konfidensu?), which was founded by Sōkō
+    Koike in November 1967 and became known for its music charts. Oricon
+    Inc. was originally set up as a subsidiary of Original Confidence and took
+    over the latter’s Oricon record charts in April 2002.
+
+    日本公信榜oricon是由1968年1月4日正式开始的日本最具知名度的音乐排行榜。不仅
+    提供每日，每周，每月的累计时间，也提供流行，演歌西洋乐等不同种类的排名。更
+    有DVD，游戏等的销售排行榜和有监听会提供的电视广告好感度。对于海外也拥有一定
+    的影响力，和权威性。
+
+    提到日本唱片的排行榜，大家第一个想到的就应该是“Oricon”这个单词了。没错，这
+    个“Oricon”就相当于是日本的“billboard”,在这里汇聚了几乎全日本上市的所有专辑
+    ，这些专辑想在排行榜上有所作为的唯一标准就是销量。像中国听众熟知的宇多田光
+    ，滨崎步就都是Oricon榜单上的常客。因此，Oricon榜实际上就是每周更新的日本最
+    权威的唱片销量榜。
+
+    实际上各国的唱片体制不尽相同，唱片因收录歌曲数目的多少分为专辑(album),EP和
+    单曲(single).作为内地的听众，大家都知道中文唱片以专辑为主，也就是收录10首歌
+    左右的唱片。香港地区的EP发行量应该还算不少，所谓EP就是收录歌曲在五首左右的
+    专辑，而单曲顾名思义就是收录一两首歌的专辑。在唱片业最鼎盛的时期，单曲碟曾
+    经在台湾地区一度兴起，不过随着全球唱片业的不景气，作为商品的单曲碟在中国市
+    场几乎销声匿迹了，这些单曲碟现在大多被当作宣传品随专辑附送。举个例子来说，
+    言承旭最新专辑8月20号发行，8月10号开始预购，而作为第一主打的《一公尺》就被
+    做成单曲碟，作为礼物送给预购专辑的歌迷。
+
+    值得注意的是日本存在一种名为Single collection的专辑，这种专辑是歌手的单曲精
+    选，它收录的是歌手作为单曲发行的唱片中的精华作品，可谓是真正的超级精选。像
+    这种唱片一般也能在Oricon专辑榜上得到很好的名次。另外，作为日本文化重要组成
+    部分的动漫和电视剧，这种原声大碟也很受日本听众的欢迎。值得注意的是，Oricon
+    排行榜并不排斥外语专辑，因此榜单上的出现的外国明星也就不显得奇怪了。像全球
+    正在发烧的艾薇儿就在Oricon专辑榜上得到了很好的名次。
+
+    refs and see also
+
+      - [oricon_互动百科](http://www.baike.com/wiki/oricon)
+      - 官网主页：http://www.oricon.co.jp/
+      - 排行榜地址：http://www.oricon.co.jp/rank/ja/d/
+
+[保罗·西蒙_百度百科](http://baike.baidu.com/view/682445.htm?fromtitle=Paul+Simon&fromid=8507397&type=syn)
+
+:   保罗·西蒙(Paul Simon)，1941年10月13日生于美国新泽西州的纽瓦克，音乐家、创作
+    歌手、唱片监制。他从小崇拜歌星普莱斯利，十一、二岁时开始学习唱歌和弹吉它，
+    16岁时与中学同窗好友阿特·加芬克尔(Art Garfunkel)组成男声二重唱，开始了早期
+    的演唱生涯。后来进入布鲁克林法学院学习法律，1964年从法学院退学只身赴英国学
+    习文学。
+
+    1990年，西蒙又创下现场演出观众最多的纪录，在美国的一次演出中，有70多万
+    观众参加，可见其受欢迎程度，同年又推出了一张风格有所突破的新专辑《圣洁的旋
+    律》。1991年，西蒙开始题为“生逢佳时”的世界巡回演出，其中一站广州是西蒙首次
+    访华演出，给中国观众留下深刻的印象。西蒙常被冠以作曲家、歌唱家和吉它手的美
+    誉，实际上再加上诗人也不过分。早年与加芬克尔的重唱以及后来个人演唱的作品，
+    绝大多数出自于他的笔下，歌词首首都是优美的诗歌。他的歌曲旋律优美迷人，大部
+    分作品都被改编为轻音乐。他的音乐创作风格多种多样，他感触敏锐，思想深刻，更
+    惊人的是他每首歌曲的词与音乐的配合都是那么和谐，效果出奇地完美。
+
+    保罗·西蒙是当今美国歌坛少有的常青树，从1957年出道至今已经50多年，其间有多少
+    歌手兴盛衰败，而他凭借自己的卓越天才和实力至今仍然是歌坛上的耀眼巨星。
+
+    Paul Frederic Simon (born October 13, 1941) is an American musician,
+    singer-songwriter and actor. Simon's fame, influence, and commercial
+    success began as part of the duo Simon & Garfunkel, formed in 1964 with
+    musical partner Art Garfunkel. Simon wrote nearly all of the pair’s songs,
+    including three that reached No. 1 on the U.S. singles charts: "The Sound
+    of Silence", "Mrs. Robinson", and "Bridge over Troubled Water". The duo
+    split up in 1970 at the height of their popularity, and Simon began a
+    successful solo career as a guitarist and singer-songwriter, recording
+    three highly acclaimed albums over the next five years. In 1986, he
+    released Graceland, an album inspired by South African township music.
+    Simon also wrote and starred in the film One-Trick Pony (1980) and co-wrote
+    the Broadway musical The Capeman (1998) with the poet Derek Walcott.
+
+    Simon has earned twelve Grammys for his solo and collaborative work,
+    including a Lifetime Achievement Award. In 2001, he was inducted into
+    the Rock and Roll Hall of Fame and in 2006 was selected as one of the
+    "100 People Who Shaped the World" by Time magazine. In 2011, Rolling
+    Stone magazine named Simon as one of the 100 Greatest Guitarists. In
+    2015 he was named as one of The 100 Greatest Songwriters by Rolling Stone
+    Magazine. Among many other honors, Simon was the first recipient of the
+    Library of Congress's Gershwin Prize for Popular Song in 2007. In 1986,
+    Simon was awarded an Honorary Doctor of Music degree from Berklee College
+    of Music, where he currently serves on the Board of Trustees.
+
+    refs and see also
+
+      - [Paul Simon - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Paul_Simon)
+
+[橘子郡_百度百科](http://baike.baidu.com/view/1640012.htm)
+
+:   美国加州的橘子郡(Orange County)，是个港湾城镇，很多美国白人中产或富裕家庭居
+    住在那里，也是个很著名的旅游胜地。橘子郡在洛杉矶的南面，号称是全美国最有钱
+    的郡。以橘子郡为背景，曾拍摄过少年励志电影《橘子郡》。
+
+[Paul Frank - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Paul_Frank)
+
+:   Paul Frank (full name Paul Frank Sunich), born August 29, 1967, is an
+    American cartoonist, artist and fashion designer. His creations adorn
+    clothing, accessories, and many other products. Julius the Monkey is one of
+    Sunich's best-known characters, and has appeared in a wide variety of
+    media. He is also the founder of Paul Frank Industries.
+
+    Paul Frank（大嘴猴）是和Calvin Klein齐名的国际知名品牌。它以色彩缤纷、年轻
+    、可爱、时尚感吸引无数狂热粉丝，成为一个全球化的流行潮牌，大嘴猴“Julius”的
+    卡通造型已出现在服饰、鞋、童鞋、内衣、泳装、睡衣、家俱、腕表、太阳镜、童装
+    、儿童卡通书和儿童自行车等各种系列产品上。Paul Frank（大嘴猴）的商品也已在
+    美国、加拿大、欧洲、中东、澳大利亚、香港、台湾、韩国、日本、马来西亚、新加
+    坡、泰国、中国大陆等各地销售，（全世界超过2000家店铺），商品成功植入了各种
+    热播的影视作品，成为众多明星的宠儿，在世界各地大受欢迎。 电影：例如 《王牌
+    大间谍/第二至第三集》 、 《美国派/第一至第二集》、《冒牌老爸》、《小姐好辣
+    》。电视剧：例如《浪漫满屋》、《爱在日月潭》等。从美洲的小甜甜布兰妮，克里
+    斯蒂娜·阿奎莱拉，到亚洲的宋慧乔，张柏芝等明星都是Paul Frank（大嘴猴）的超级
+    粉丝。
+
+    首先要说，这个美国牌子应该是没有标准中文译名，要在国内找的话，应该是直取它
+    的标志性图案——通常被叫做大嘴猴（这只猴子有名字的，叫Julius）。
+
+    refs and see also
+
+      - [paul frank_百度百科](http://baike.baidu.com/view/70089.htm)
+
+<div class="tzx-hide">
+[跳出AV圈，她成了全球最火的健身明星。——Zuzka Light](https://www.douban.com/note/543445869/)
+</div>
+
 [我的产品抄袭观 - 纯银的日志 - 网易博客](http://firecacada.blog.163.com/blog/static/70743762012111482136778/)
 
-回到正题，说说我的产品抄袭观。我对于仿效人家的优秀设计，从来都没有任何羞耻感，有好的就拿过来用呗。看见带感的新奇设计常呵呵直乐，大喊道：抄！拿过来抄！
+:   回到正题，说说我的产品抄袭观。我对于仿效人家的优秀设计，从来都没有任何羞耻
+    感，有好的就拿过来用呗。看见带感的新奇设计常呵呵直乐，大喊道：抄！拿过来抄！
 
-但是，如果我的产品里没有独创性的，值得夸耀，甚至值得让人家来抄的设计，我会感到强烈的羞耻。
+    但是，如果我的产品里没有独创性的，值得夸耀，甚至值得让人家来抄的设计，我会
+    感到强烈的羞耻。
 
-最后，举一个粗浅的例子作为尾声。APP语音对讲大约是TalkBox首创，其后成为IM标配。前些日子我偶然安装了TalkBox，大失所望，各方面都不如后来者。想起一年前千夫所指微信山寨TalkBox，亲爱的，你更愿意追捧一款整体品质平平的原创应用，又或者语音IM在基因复制并分裂后，遍地开花争奇斗艳？
+    最后，举一个粗浅的例子作为尾声。APP语音对讲大约是TalkBox首创，其后成为IM标
+    配。前些日子我偶然安装了TalkBox，大失所望，各方面都不如后来者。想起一年前千
+    夫所指微信山寨TalkBox，亲爱的，你更愿意追捧一款整体品质平平的原创应用，又或
+    者语音IM在基因复制并分裂后，遍地开花争奇斗艳？
 
-这个案例里，复制不仅没有扼杀创新，借语音之力青云直上的微信，反倒做出了更多的创新动作；而始作俑者TalkBox后来波澜不惊，也与其“一招鲜”有关，后续版本缺乏打动市场的亮点，不能单怪微信只手遮天。
+    这个案例里，复制不仅没有扼杀创新，借语音之力青云直上的微信，反倒做出了更多
+    的创新动作；而始作俑者TalkBox后来波澜不惊，也与其“一招鲜”有关，后续版本缺乏
+    打动市场的亮点，不能单怪微信只手遮天。
 
-refs and see also
+    refs and see also
 
-  - [再谈抄袭与创新 - 纯银的日志 - 网易博客](http://firecacada.blog.163.com/blog/static/70743762012112935142750/)
+      - [再谈抄袭与创新 - 纯银的日志 - 网易博客](http://firecacada.blog.163.com/blog/static/70743762012112935142750/)
 
 ---
 
@@ -51,6 +468,7 @@ refs and see also
 
 [Site General Settings - Disqus Admin](https://dvorak4tzx.disqus.com/admin/settings/general/)
 
+<div class="tzx-drawer" shy>
 [寻找光影流年 – ButMan World](http://butman.club/category/notes/movie/movingpicture/)
 
 :   导读：因为暑假（蹭程子芸小朋友的高中）毕业旅行的小契机，终有机会踏上早已在
@@ -161,6 +579,7 @@ refs and see also
       - [法国 – PART 3 – ButMan World](http://butman.club/notes/movie/movingpicture/%e6%b3%95%e5%9b%bd-part-3/)
       - [法国 – PART 4 – ButMan World](http://butman.club/notes/movie/movingpicture/%e6%b3%95%e5%9b%bd-part-4/)
       - [意大利 – PART 1 – ButMan World](http://butman.club/notes/movie/movingpicture/%e6%84%8f%e5%a4%a7%e5%88%a9-part-1/)
+</div>
 
 [为什么要拐卖妇女](https://www.douban.com/note/510671150/)
 
@@ -350,18 +769,17 @@ Léa Seydoux
 
 moderator, `['mɑdəretɚ]` n. [核] 慢化剂；仲裁人；调解人；缓和剂
 
-调制解调器是Modulator（调制器）与Demodulator（解调器）的简称，中文称为调制解调器（港台称之为数据机），根据Modem的谐音，亲昵地称之为“猫”。它是在发送端通过调制将数字信号转换为模拟信号，而在接收端通过解调再将模拟信号转换为数字信号的一种装置。
-
+调制解调器是Modulator（调制器）与Demodulator（解调器）的简称，中文称为调制解调
+器（港台称之为数据机），根据Modem的谐音，亲昵地称之为“猫”。它是在发送端通过调制
+将数字信号转换为模拟信号，而在接收端通过解调再将模拟信号转换为数字信号的一种装
+置。
 
 [Marijn's Web Home](http://marijnhaverbeke.nl/)
-
 
 refs and see also
 
   - [A Gentle Introduction to Machine Fundamentals](http://marijnhaverbeke.nl/turtle/)
   - [My JavaScript Build Setup](http://marijnhaverbeke.nl/blog/my-babel-setup.html)
-
-
 
 [yahoo/pure: A set of small, responsive CSS modules that you can use in every web project.](https://github.com/yahoo/pure)
 
@@ -1010,9 +1428,18 @@ Ajax
     ```
 
 <div class="tzx-drawer" shy>
-[缘份这东西纯属扯淡 全凭喜欢的人说了算 (缘份 影评)](https://movie.douban.com/review/7827324/)
+[缘份 (豆瓣)](https://movie.douban.com/subject/1304961/)
 
-:   ![](https://img1.doubanio.com/view/thing_review/large/public/p118619.jpg)
+:   腾讯娱乐讯 《缘份》3月25日上映后短短几天，在首日排片只有4.5%的情况下，票房
+    就已经顺利突破千万，影院几度调整排片，目前的票房已经收获1200万。电影中，张
+    国荣、张曼玉、梅艳芳三人玩起了青涩又纠结的缘份游戏，这样一部80年代经典港式
+    恋爱再次回到银幕，得到了很多观众的喜爱和好评。对于观众来讲，再见哥哥和其他
+    经典偶像的喜悦和感动，已经超越了电影本身的剧情。
+
+    在离乱的人流中，Anita决定成全Paul，帮助她追求Paul的梦中情人，于是Paul和
+    Anita一起，去找寻消失的Monica。
+
+    ![](https://img1.doubanio.com/view/thing_review/large/public/p118619.jpg)
 
     两厢情愿的爱情名为缘份，一厢情愿的爱情连声谢谢都显得多余。有情人终成眷属的
     背后，总有那么一两个人在默默承受着孤独。
@@ -1087,8 +1514,10 @@ Ajax
 
     refs and see also
 
+      - [《缘份》票房1200万 宣传曲《缘》致敬张国荣_娱乐_腾讯网](http://ent.qq.com/a/20160401/042997.htm)
       - [所谓缘份，就是一点点憧憬+ 一点点宿命+一点点促成 (缘份 影评)](https://movie.douban.com/review/7835094/)
       - [《缘份》隐藏的后续 (缘份 影评)](https://movie.douban.com/review/5636140/?start=0&post=ok#last)
+      - [缘份 (豆瓣)](https://movie.douban.com/subject/1304961/)
       - [我怀疑，我们人生里面，唯一可以相遇的机会，已经错过了 (缘份 影评)](https://movie.douban.com/review/7831271/)
       - [张国荣（华语歌手、演员、音乐人）_百度百科](http://baike.baidu.com/subview/6360/5595080.htm)
       - [梅艳芳_百度百科](http://baike.baidu.com/subview/8695/8695.htm)

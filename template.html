@@ -30,6 +30,12 @@ $endfor$
 $for(cssfile)$
   <link rel="stylesheet" href="$cssfile$" type="text/css" />
 $endfor$
+$if(tzx-after-before)$
+$tzx-after-before$
+$endif$
+$if(after-before)$
+$after-before$
+$endif$
 $if(math)$
   $math$
 $endif$
@@ -41,12 +47,6 @@ $endfor$
 $for(include-before)$
 $include-before$
 $endfor$
-$if(tzx-after-before)$
-$tzx-after-before$
-$endif$
-$if(after-before)$
-$after-before$
-$endif$
 $if(title)$
 <div id="$idprefix$header">
 <h1 class="title">$title$</h1>

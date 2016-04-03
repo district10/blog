@@ -10,12 +10,6 @@ tags:
 Poems | 诗
 ==========
 
-<style type="text/css">
-    body {
-        background: #d1d2d4;
-    }
-</style>
-
 相信未来（食指）
 
 :   ```tzx-poem

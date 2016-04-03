@@ -129,13 +129,39 @@ $(document).ready(function(){
 $('div.tzx-drawer[shy]').each(function(){
     $(this).children().children('dd').toggleClass('tzx-drawer-hide');
 });
-$('div.tzx-drawer').on('click', function(){
+$('div.tzx-drawer').dblclick( function(){
     $(this).children().children('dd').toggleClass('tzx-drawer-hide');
     if ($(this).children().children('dd:eq(0)').hasClass('tzx-drawer-hide')) {
         window.scrollTo($(this).offset().left, $(this).offset().top);
     }
     return false;
 });
+
+/*
+var drawertooltip = $('<p>双击以「打开/关闭」内容。</p>')
+    .css({
+        position: 'absolute',
+        display: 'none',
+        border: '1px solid black',
+        background: 'blue',
+        color: 'white'
+    })
+    .appendTo('body');
+
+$('div.tzx-drawer')
+    .mouseenter(function(){
+        console.log('enterid!!');
+        drawertooltip
+            .css({
+                top: $(this).position().top,
+                left: $(this).position().left
+            })
+            .fadeIn('slow');
+    })
+    .mouseleave(function(){
+        drawertooltip.fadeOut('slow');
+    });
+*/
 
 $(function($){
     var egg = new Egg();
