@@ -14,7 +14,7 @@ tags:
 用 Pandoc 的时候感到其一个地方不爽，于是去 Pandoc 的 GitHub 上提了一个 Issue：
 [Text Layout Requirements When Encountered East Asian Languages · Issue #2586 · jgm/pandoc](https://github.com/jgm/pandoc/issues/2586)
 
-<div class="tzx-paste"><small>
+<div class="tzx-frame"><small>
 
 > 更好地混排东亚文字和西文 | Text Layout Requirements When Encountered East Asian Languages
 

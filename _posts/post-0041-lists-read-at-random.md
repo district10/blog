@@ -1373,7 +1373,7 @@ Commands, being attested as early as 1712
 
 [intrusive-thoughts-wikipedia]
 
-[知乎][intrusive-thoughts]: 实际上有 intrusive thoughts 的人有很多，包括丘吉尔首相自己也有。
+[知乎][intrusive-thoughts]: 实际上有 intrusive `[ɪn'trusɪv]` thoughts 的人有很多，包括丘吉尔首相自己也有。
 他无法忍受住在楼上，因为他总是有「忍不住要从阳台跳下去」的想法。
 
 Intrusive thoughts are **unwelcome involuntary** thoughts, images, or unpleasant

@@ -2098,7 +2098,7 @@ TJG 说，那你吃你的眼屎啊～
 ![](http://gnat.qiniudn.com/qk-does-not-feel-bad.jpg)
 
 等我力所能及的时候我会给我 pirate 的每本书、每个软件的作者、出版社都捐助（补偿）
-一笔钱。感谢他们。
+一笔钱。感谢他们。I feel bad.
 
 ## `1448420781`{.tzx-timestamp} 该死
 

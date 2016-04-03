@@ -136,3 +136,27 @@ $('div.tzx-drawer').on('click', function(){
     }
     return false;
 });
+
+$(function($){
+    var egg = new Egg();
+    egg
+        .addCode("s,h,o,w", function() {
+            $('.tzx-hide').removeClass('tzx-hide').addClass('tzx-show');
+        })
+        .addCode("h,i,d,e", function() {
+            $('.tzx-show').removeClass('tzx-show').addClass('tzx-hide');
+        })
+        .addCode("x", function() {
+            $('.tzx-show').removeClass('tzx-show').addClass('tzx-hide');
+        })
+        .addCode("down,right,down,down,right,down", function() {
+            window.location = "http://butman.club/";
+        })
+        .addCode("b,u,t,m,a,n", function() {
+            window.location = "http://butman.club/";
+        })
+        .addHook(function(){
+            // console.log("Hook called for: " + this.activeEgg.keys);
+            // console.log(this.activeEgg.metadata);
+        }).listen();
+});

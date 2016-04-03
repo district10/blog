@@ -849,11 +849,14 @@ Enumeration file types statics
     On WHY?
 
     `<(find $path -type f -print)`{.bash} is equivalent to a filename,
-    the first `<`{.bash}` is for input redirection and the second `<`{.bash} is
+    the first `<`{.bash} is for input redirection and the second `<`{.bash} is
     for converting the subprocess output to a filename.
     In Bash 3.x and higher we have a new operator `<<<`{.bash} that lets us use
     a string output as an input file. So we can do this:
-    `` done <<< "`find $path -type f -print`" ``{.bash}
+
+    ```bash
+    done <<< "`find $path -type f -print`"
+    ```
 
 Using loopback files
 

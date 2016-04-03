@@ -30,10 +30,12 @@ Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序�
 <div><a href="about.html">About | 关于</a></div><hr /></div>
 
 <br/><div id="searchContainer">
-Search:<br>
+Search:[^koan]<br>
 <input id="tzxsearchbox" type="text" name="tzxsearchbox" placeholder="type keywords in url/title/tag, e.g. 'vim', 'got', 'post'." style="width:100%;max-width:600px;outline:0">
 </div><br/>
 <div id="links"></div><hr>
+
+[^koan]: 不知为何，本地的可以用。七牛上的就不能用……
 
 <div style="font-variant:small-caps;">Posts</div>
 <div class="posts"><!--...-->

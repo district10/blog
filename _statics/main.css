@@ -343,27 +343,31 @@ img {
     -webkit-transition: -webkit-transform 0.4s ease;
     -moz-transition: -moz-transform 0.4s ease;
     -o-transition: -o-transform 0.4s ease;
+    transition: -o-transform 0.4s ease;
 
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
+    transition-property: transform;
 
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 
     -webkit-transition-timing-function: ease;
     -moz-transition-timing-function: ease;
     -o-transition-timing-function: ease;
+    transition-timing-function: ease;
 
     -webkit-transition-delay: initial;
     -moz-transition-delay: initial;
     -o-transition-delay: initial;
+    transition-delay: initial;
 
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
-
     -transform-style: preserve-3d;
 
     z-index: 1;
@@ -384,12 +388,14 @@ img {
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -o-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 p a img:hover {
     -webkit-transform: scale(1.35);
     -moz-transform: scale(1.35);
     -o-transform: scale(1.35);
+    transform: scale(1.35);
     border: 3px solid rgba(155, 155, 155, 0.5);
 }
 
@@ -545,10 +551,10 @@ div#TOC {
     margin-right: 0px;
     padding: 10px;
 
-    box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
     -webkit-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
     -moz-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
     -o-box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
+    box-shadow: 0 0 25px 10px rgba(209, 210, 212, 0.5);
 }
 
 div#TOC:hover {
@@ -569,15 +575,6 @@ div#TOC:hover {
 
 .hdrRef:hover {
     color: rgba(255, 0, 0,1.0);
-}
-
-.tzx-paste, .tzx-hide {
-    padding: 1em;
-    border: 1px dashed helitrope; // hide
-}
-
-.tzx-hide {
-    visibility: hidden;
 }
 
 pre.tzx-plain code {
@@ -664,10 +661,12 @@ ul > li > ul > li > ul > li > ul >li > ul > li   { list-style-type: georgian; }
         -webkit-transform: scale(1.2);
         -moz-transform: scale(1.2);
         -o-transform: scale(1.2);
+        transform: scale(1.2);
 
         -webkit-transform-origin: 0 0;
         -moz-transform-origin: 0 0;
         -o-transform-origin: 0 0;
+        transform-origin: 0 0;
     }
 }
 @media only screen and (min-width:1440px){
@@ -677,10 +676,12 @@ ul > li > ul > li > ul > li > ul >li > ul > li   { list-style-type: georgian; }
         -webkit-transform: scale(1.5);
         -moz-transform: scale(1.5);
         -o-transform: scale(1.5);
+        transform: scale(1.5);
 
         -webkit-transform-origin: 0 0;
         -moz-transform-origin: 0 0;
         -o-transform-origin: 0 0;
+        transform-origin: 0 0;
     }
 }
 
@@ -712,10 +713,11 @@ body {
     border-top:   1px solid lightgray;
     border-bottom:1px solid lightgray;
     border-radius: 1em; 
-    box-shadow:         0 0 25px 10px rgba(155, 155, 155, 0.5);
+
     -webkit-box-shadow: 0 0 25px 10px rgba(155, 155, 155, 0.5);
     -moz-box-shadow:    0 0 25px 10px rgba(155, 155, 155, 0.5);
     -o-box-shadow:      0 0 25px 10px rgba(155, 155, 155, 0.5);
+    box-shadow:         0 0 25px 10px rgba(155, 155, 155, 0.5);
 }
 .footnotes [id^=fn]:hover {
     background-color: rgba(0,127,255,0.05);
@@ -731,10 +733,10 @@ body {
     padding: 1em;
 }
 #showDisqus:hover {
-    box-shadow:         0 0 25px 10px rgba(155, 155, 155, 0.5);
     -webkit-box-shadow: 0 0 25px 10px rgba(155, 155, 155, 0.5);
     -moz-box-shadow:    0 0 25px 10px rgba(155, 155, 155, 0.5);
     -o-box-shadow:      0 0 25px 10px rgba(155, 155, 155, 0.5);
+    box-shadow:         0 0 25px 10px rgba(155, 155, 155, 0.5);
 }
 
 .tzx-nav {
@@ -806,9 +808,27 @@ code.tzx-timestamp {
 
 .tzx-drawer-show { display: block; }
 .tzx-drawer-hide { display: none; }
+.tzx-hide { display: none; }
+.tzx-show { display: block; }
 
 a.tzx-header-anchor {
     text-decoration: none;
-    // cursor: crosshair;
     border: none;
 }
+
+.tzx-frame {
+    padding: 1em;
+    cursor: crosshair;
+    border: 1px solid lightgray;
+}
+
+/*
+.tzx-paste, .tzx-hide {
+    padding: 1em;
+    border: 1px dashed helitrope; // hide
+}
+
+.tzx-hide {
+    visibility: hidden;
+}
+*/

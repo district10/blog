@@ -7,6 +7,7 @@ tzx-jsfile:
     - jquery-ui.min.js
 #    - jquery.lazyload.min.js
     - lazyload.min.js
+    - egg.min.js
     - main.js
 
 # tzx-before-after:

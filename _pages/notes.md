@@ -21,6 +21,198 @@ cssfile:
 Notes | 笔记
 ============
 
+[我的产品抄袭观 - 纯银的日志 - 网易博客](http://firecacada.blog.163.com/blog/static/70743762012111482136778/)
+
+回到正题，说说我的产品抄袭观。我对于仿效人家的优秀设计，从来都没有任何羞耻感，有好的就拿过来用呗。看见带感的新奇设计常呵呵直乐，大喊道：抄！拿过来抄！
+
+但是，如果我的产品里没有独创性的，值得夸耀，甚至值得让人家来抄的设计，我会感到强烈的羞耻。
+
+最后，举一个粗浅的例子作为尾声。APP语音对讲大约是TalkBox首创，其后成为IM标配。前些日子我偶然安装了TalkBox，大失所望，各方面都不如后来者。想起一年前千夫所指微信山寨TalkBox，亲爱的，你更愿意追捧一款整体品质平平的原创应用，又或者语音IM在基因复制并分裂后，遍地开花争奇斗艳？
+
+这个案例里，复制不仅没有扼杀创新，借语音之力青云直上的微信，反倒做出了更多的创新动作；而始作俑者TalkBox后来波澜不惊，也与其“一招鲜”有关，后续版本缺乏打动市场的亮点，不能单怪微信只手遮天。
+
+refs and see also
+
+  - [再谈抄袭与创新 - 纯银的日志 - 网易博客](http://firecacada.blog.163.com/blog/static/70743762012112935142750/)
+
+---
+
+花开有声音吗？谁听得到呢？花开后的清香和喜悦却是绵长，幽谧，无处不在。
+
+---
+
+[日本史上销量最高的100张专辑](https://music.douban.com/subject/1397751/discussion/43585065/)
+
+[哥们儿就喜欢俗的！【精彩台词整理】 (顽主 影评)](https://movie.douban.com/review/2212577/)
+
+[New to Web Design? Start Here. - Envato Tuts+ Web Design Article](http://webdesign.tutsplus.com/articles/new-to-webdesigntuts-start-here--webdesign-15406)
+
+[Introduction](http://singlepageappbook.com/)
+
+[Site General Settings - Disqus Admin](https://dvorak4tzx.disqus.com/admin/settings/general/)
+
+[寻找光影流年 – ButMan World](http://butman.club/category/notes/movie/movingpicture/)
+
+:   导读：因为暑假（蹭程子芸小朋友的高中）毕业旅行的小契机，终有机会踏上早已在
+    无数光影中痴迷过其浪漫情调和特有的法兰西美貌的“神圣”之地——法国。在法国的行
+    程仅有短短的几天，因为第一次去所以也必定会在卢浮宫、埃菲尔铁塔、凡尔赛宫等
+    知名旅游景点上花费一部分的时间，以下标记的各种取景地很有可能无法一一驻足，
+    虽然这些地方“小”，但相信经过严苛导演的筛选，他们心目中的彼处彼景想必是冥冥
+    之中最巴黎的象征，偷得浮生半日闲地去寻找光影流年主要为了给自己留个念想，也
+    满足一下一位**满腔少女心**的迷影人的小心愿~
+
+    ![莫奈花园在法国的吉维尼（Giverny）](http://7xsdb1.com1.z0.glb.clouddn.com/p25834706.jpg)
+
+    ![Shakespeare and Company 莎士比亚书店](http://7xsdb1.com1.z0.glb.clouddn.com/p25836019.jpg)
+
+    ![女神么么哒~](http://7xsdb1.com1.z0.glb.clouddn.com/p25836593.jpg)
+
+    嗯！镜头一剪剪或一扫穿越技能get✔ 瞧~他们逛到了La Promenade Plantée （查不到中文
+    名，空中花园长廊？？），由旧铁路改造的一个公园，还保留有火车的隧道，有点像纽约
+    的High Line Park（也是我的梦幻目的地之一唷~）
+
+    ![](http://7xsdb1.com1.z0.glb.clouddn.com/p25838712.jpg)
+
+    ![avenue du Maréchal Joffre – 调皮的小偷Arthur和Franz在路边心血来潮表演起
+        The Left-Handed Gun（左手持枪）里Billy the Kid（保罗·纽曼 Paul Newman 饰）
+        里被射杀的场景](http://7xsdb1.com1.z0.glb.clouddn.com/%E6%B3%95%E5%A4%96%E4%B9%8B%E5%BE%92p26075483.jpg)
+
+    一下午，跟着两部影片的主角们在法兰西土地上不知疲倦地欣赏着这座城市的美妙图景，
+    早些时候读过杨绛的一个说法：“有人说，爱上一座城，是因为城中住着某个喜欢的人。其
+    实爱上一座城，也许是为城里的一道生动风景，为一段青梅往事。我们就像爱上一个人，
+    有时候不需要任何理由，没有前因，无关风月，只是爱。”
+
+    今天不想弄毕设！！！（晚期拖延癌又犯了）所以！我！决定！继续更新！PART_2！这次
+    的电影是 阿黛尔的生活 La vie d’Adèle 2013 （可我更喜欢“蓝色是最温暖的颜色”）影
+    片大部分在法国里尔（Lille，France）取景，最让我萌发冲动想去一探究竟的地方也就那
+    么几个，虽然我挺喜欢这部片的（因为镜头大多数都直接拍脸ORZ…）
+
+    ![Emma搂着现任准备过斑马线，没想到马路的那头就站着未来的下任~](http://7xsdb1.com1.z0.glb.clouddn.com/p25847764.jpg)
+
+    Adele和Emma第一次的短暂对话发生在Square Daubenton附近河边的长椅上，三观的差异隐
+    约暗示了未来两人关系的走向
+
+    不到五分钟的了解就这样尴尬地结束，Adele默默望着Emma离去的背影
+
+    第一次Kiss发生在一个貌似公园（La Citadelle, Lille, France）的地方，我记得灿
+    金色的阳光穿过参天的法国梧桐树叶间的缝隙，一束束落在草地上，时而有微风轻拂
+    ，树叶沙沙作响，地上的和身上的光斑也跟着飞舞起来，两人沉默了许久才开口讲几
+    个词不成句的对话。（注意下图的那棵柳树和长椅，我就是根据这两个物体费了好大
+    劲才找到取景地的T T）
+
+    ![女神的侧颜~~](http://7xsdb1.com1.z0.glb.clouddn.com/p25848039.jpg)
+
+    ![只剩下一个遗憾，这棵樱花树下的蓝色长椅所在地实在找不到~如果有心人晓得，那老天让我赶快遇见他/**她**。](http://7xsdb1.com1.z0.glb.clouddn.com/p25848135.jpg)
+
+    似乎寻找光影流年的法国版即将要接近尾声了，这几天一直在想自己看了哪些在法国取景
+    的电影，有哪些比较喜欢的，想到的也都是黑白的老电影，取景地肯定变了不少，如果真
+    去找也找不回光影中呈现的样态了，况且思绪不知怎的全都跑到了意大利那边，所以。。
+    。近期法国版得拖一拖了。这次更新的虽然也是一部摄于二十世纪六十年代，正值新浪潮
+    运动的高潮的法国黑白电影，但因为我对其的极度喜爱还是决定写一写（PS：其实片子里
+    并没多少地标性建筑或场所）。
+
+    ![](http://7xsdb1.com1.z0.glb.clouddn.com/%E6%B3%95%E5%A4%96%E4%B9%8B%E5%BE%92p26075726.jpg)
+
+    影片其实还有一段情节值得在这里说说，虽然与地点无关，但这段前前后后与昆汀的低俗
+    小说里的兔子舞有99.9999%相似度说明了什么？！此生一定要学会的舞：法外之徒里的这
+    种，低俗小说的兔子舞，闻香识女人里的探戈。。。（暂且想到这么多）
+
+    寻找光影流年的意大利版PART_1选择的影片，我承认，**的确太文艺了。。。**但就像某位友
+    人说的：“若不是文青，是不会像之前的大旅行热潮的学生们选择去法国和意大利开拓眼界
+    和提升内涵的。。。”废话不多说！
+
+    <div class="tzx-drawer" shy>
+    [翡冷翠_互动百科](http://www.baike.com/wiki/%E7%BF%A1%E5%86%B7%E7%BF%A0)
+
+    :   翡冷翠（英语Florence， 意大利语Firenze，德语Florenz）是意大利中部的一个城市
+        ，托斯卡纳区首府，位于亚平宁山脉中段西麓盆地中。十五至十六世纪时佛罗伦萨是
+        欧洲最著名的艺术中心，以美术工艺品和纺织品驰名全欧。欧洲文艺复兴运动的发祥
+        地，举世闻名的文化旅游胜地。1865-1871年曾为意大利王国统一后的临时首都。工业
+        以玻璃器皿、陶瓷、高级服装、皮革为主。金银加工、艺术复制品等工艺品亦很有名
+        。佛罗伦萨国际当代艺术双年展，与威尼斯双年展、米兰三年展并称意大利三大艺术
+        展。
+
+        佛罗伦萨是著名的文化古城和艺术天堂。作为欧洲文艺复兴时期的文化中心，佛罗伦
+        萨给现代人留下了数不胜数的历史记忆。米开朗基罗广场位于亚诺河对岸，是眺望佛
+        罗伦萨的最佳据点，广场中央有大卫雕像的复制品。米开朗基罗创作的原“大卫像”收
+        藏在学院美术馆。百花大教堂是佛罗伦萨的地标，又称“圣母寺”。乌菲兹美术馆和国
+        立巴吉洛美术馆珍藏着文艺复兴时期艺术家们的杰作。维琪奥桥以前是乌菲兹宫通往
+        隔岸碧提王宫的走廊，桥两边都是特产专卖店，以贩卖宝石和贵重金属为主。
+
+        自从11世纪以来，佛罗伦萨的市徽就是鸢尾花图案。
+
+        英语Florence，意大利语Firenze，德语Florenz，以前曾译作“翡冷翠”。意大利语的
+        直译为“百花之城”，市花以及标志是一朵紫色的鸢尾花。坐落在亚平宁山中部、阿尔
+        诺河（Arno）河谷，四周环抱着丘陵。
+
+        “翡冷翠”由现代著名诗人徐志摩首译，远远比另一个译名“佛罗伦萨”来的更富诗意，
+        更多色彩，也更符合古城的气质。诗人自身著有《翡冷翠的一夜》一书，以及散文作
+        品《翡冷翠山居闲话》（收录于《巴黎的鳞爪》。后来，作家徐鲁著有《翡冷翠的薄
+        暮》，画家黄永玉著有《沿着塞纳河到翡冷翠》，80后诗人风来满袖著有译诗集《沿
+        康河到翡冷翠》，都是对徐志摩诗意的一脉相承。
+    </div>
+
+    ![科西莫一世骑马雕像](http://7xsdb1.com1.z0.glb.clouddn.com/%E6%84%8F%E5%A4%A7%E5%88%A9PART_1p26076960.jpg)
+
+    refs and see also
+
+      - [法国 – PART 1 – ButMan World](http://butman.club/notes/movie/movingpicture/%e6%b3%95%e5%9b%bd%e7%89%88-part-1/)
+      - [法国 – PART 2 – ButMan World](http://butman.club/notes/movie/movingpicture/%e6%b3%95%e5%9b%bd-part-2/)
+      - [法国 – PART 3 – ButMan World](http://butman.club/notes/movie/movingpicture/%e6%b3%95%e5%9b%bd-part-3/)
+      - [法国 – PART 4 – ButMan World](http://butman.club/notes/movie/movingpicture/%e6%b3%95%e5%9b%bd-part-4/)
+      - [意大利 – PART 1 – ButMan World](http://butman.club/notes/movie/movingpicture/%e6%84%8f%e5%a4%a7%e5%88%a9-part-1/)
+
+[为什么要拐卖妇女](https://www.douban.com/note/510671150/)
+
+:   买人的不大关心这个女孩子是从什么地方来的，他们认为娘家离得越远越好。我们当
+    地有一句顺口溜叫：“买不到凤凰买飞马，娶不到媳妇娶老侉”。我们老家那个地方水
+    利条件比较好，山地水田都有。两个人只要不懒，温饱是没有问题的。起初人贩子大
+    部分从北方带女孩子过来，就是拿这个基本温饱当诱饵。
+
+    一个媳妇娶回来，先不能让她做地里活。等于买回一个母本。如果母本跑了，一切努
+    力都打水漂了。这个事情不是他一家一户的事情，是全村人的事情。这个女的等于掉
+    到人民群众的“汪洋大海”中去了。而且是这样一伙又穷、又生殖崇拜“人民群众”。只
+    有等到这个女的生了孩子之后，才会放松警惕性。他们会利用“母爱”这个弱点留住这
+    个女人。
+
+    春节前是乡里民政干事最忙的那几天，来离婚的人不绝于途。村里经常说某某媳妇在
+    外面打工，心打野掉了。现在在外面有了相好的，不要脸。这个被骂作不要脸的女人
+    ，照样意气昂昂的去打离婚。谁也不能拿她怎么样，老辈子都摇头：世道不一样了！
+    这就在过去日你妈，开祠堂不把你沉塘算你厉害。
+
+    所以说解决农村拐卖妇女这个事情，最终要靠农业社会的瓦解，消灭掉农民这个阶层
+    才能最终解决掉。现在城里也有许多光棍，包括我的身边还有这样积年的寡佬。他们
+    也常常在一起畅想什么时候到北朝鲜、越南买个老婆。但没有一个人付诸于行动，可
+    能他们想在城市要在家里藏一个大活人这个难度太大了吧！
+
+颓的不行的时候被老板召唤，然而并不是 check 我的进度，只是要我去帮同学改代码。让我想起《元气团仔》最后一集，被人需要这种事，真是，又麻烦又可爱吧。
+
+<div class="tzx-hide">
+<hr/>
+[我要吃黄瓜的广播](https://www.douban.com/people/chihuanggua/status/1821170658/?start=0#comments)
+
+:   色情片女演员 Jelena Jensen 的个人网站是她自己架的，前端后端都是自己写的。
+
+    [Jelena Jensen - Big Tits - Jelena Jensen Blog](http://www.jelenajensenblog.net/)
+
+    Jelena Jensen was born in Los Angeles, CA on October 7, 1981 and has lived
+    there since. She grew up a tomboy most of her life, learning how to ride a
+    motorcycle at the age of 3 and beginning to sport shoot and hunt at the age
+    of 7. Jelena developed at a very early age and has practically looked the
+    same since she was 14, as she’s been 5’10” and a 34DD natural cup since
+    then.
+
+    On top of shooting, spokes modeling, making appearances, and remaining
+    sane, Jelena Jensen runs and maintains her own website. She is constantly
+    working her site and improving it day to day while maintaining a close
+    relationship with her members.
+<hr/>
+</div>
+
+[图灵社区 : 图书 : Chrome扩展及应用开发（首发版）](http://www.ituring.com.cn/book/1421)
+
+[图灵社区 : 图书 : 翻译漫谈——怎样翻译更地道](http://www.ituring.com.cn/book/1225)
+
 [你离让007合不拢腿的邦女郎，也许就差这几件单品 - 识装 - 知乎专栏](http://zhuanlan.zhihu.com/p/20365840)
 
 Léa Seydoux
@@ -3595,12 +3787,148 @@ single quote 	222
       .listen();
     ```
 
+    <div class="tzx-drawer" shy>
+    [egg.js/egg.js at master · mikeflynn/egg.js](https://github.com/mikeflynn/egg.js/blob/master/egg.js)
+
+    :   ```javascript
+        function Egg(/* keySequence, fn, metadata */) {
+          this.eggs = [];
+          this.hooks = [];
+          this.kps = [];
+          this.activeEgg = '';
+          // for now we'll just ignore the shift key to allow capital letters
+          this.ignoredKeys = [16];
+
+          if(arguments.length) {
+            this.AddCode.apply(this, arguments);
+          }
+        }
+
+        // attempt to call passed function bound to Egg object instance
+        Egg.prototype.__execute = function(fn) {
+          return typeof fn === 'function' && fn.call(this);
+        }
+
+        // converts literal character values to keyCodes
+        Egg.prototype.__toCharCodes = function(keys) {
+          var special = {
+              "up": 38, "down": 40, "left": 37, "right": 39, "enter": 13, "space": 32, "ctrl": 17, "alt": 18, "tab": 9, "esc": 27
+            },
+            specialKeys = Object.keys(special);
+
+          if(typeof keys === 'string') {
+            // make sure there isn't any whitespace
+            keys = keys.split(',').map(function(key){
+              return key.trim();
+            });
+          }
+
+          var characterKeyCodes = keys.map(function(key) {
+            // check if it's already a keycode
+            if(key === parseInt(key, 10)) {
+              return key;
+            }
+
+            // lookup in named key map
+            if(specialKeys.indexOf(key) > -1) {
+              return special[key];
+            }
+            // it's a letter, return the char code for it
+            return (key).charCodeAt(0);
+          });
+
+          return characterKeyCodes.join(',');
+        }
+
+        // Keycode lookup: http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+        Egg.prototype.AddCode = function(keys, fn, metadata) {
+          this.eggs.push({keys: this.__toCharCodes(keys), fn: fn, metadata: metadata});
+
+          return this;
+        }
+
+        Egg.prototype.AddHook = function(fn) {
+          this.hooks.push(fn);
+
+          return this;
+        }
+
+        Egg.prototype.handleEvent = function(e) {
+          var keyCode  = e.which;
+          var isLetter = keyCode >= 65 && keyCode <= 90;
+          /*
+            This prevents find as you type in Firefox.
+            Only prevent default behavior for letters A-Z.
+            I want keys like page up/down to still work.
+          */
+          if ( e.type === "keydown" && !e.metaKey && !e.ctrlKey && !e.altKey && !e.shiftKey ) {
+            var tag = e.target.tagName;
+
+            if ( ( tag === "HTML" || tag === "BODY" ) && isLetter ) {
+              e.preventDefault();
+              return;
+            }
+          }
+
+          if ( e.type === "keyup" && this.eggs.length > 0 ) {
+            // keydown defaults all letters to uppercase
+            if(isLetter) {
+              if(!e.shiftKey) {
+                // convert to lower case letter
+                keyCode = keyCode + 32;
+              }
+            }
+
+            // make sure that it's not an ignored key (shift for one)
+            if(this.ignoredKeys.indexOf(keyCode) === -1) {
+              this.kps.push(keyCode);
+            }
+
+            this.eggs.forEach(function(currentEgg, i) {
+              var foundEgg = this.kps.toString().indexOf(currentEgg.keys) >= 0;
+
+              if(foundEgg) {
+                // Reset keys; if more keypresses occur while the callback is executing, it could retrigger the match
+                this.kps = [];
+                // Set the activeEgg to this one
+                this.activeEgg = currentEgg;
+                // if callback is a function, call it
+                this.__execute(currentEgg.fn, this);
+                // Call the hooks
+                this.hooks.forEach(this.__execute, this);
+
+                this.activeEgg = '';
+              }
+            }, this);
+          }
+        };
+
+        Egg.prototype.Listen = function() {
+          // Standards compliant only. Don't waste time on IE8.
+          if ( document.addEventListener !== void 0 ) {
+            document.addEventListener( "keydown", this, false );
+            document.addEventListener( "keyup", this, false );
+          }
+
+          return this;
+        };
+
+        Egg.prototype.listen  = Egg.prototype.Listen;
+        Egg.prototype.addCode = Egg.prototype.AddCode;
+        Egg.prototype.addHook = Egg.prototype.AddHook;
+        ```
+    </div>
+
     refs
 
       - [Egg.js - A Simple Way to Add Easter Eggs to Your Site](http://thatmikeflynn.com/egg.js/)
 
-<!--...-->
+---
 
+<div class="tzx-drawer" shy>
+`main.js`
+
+:   ```javascript
     $("img").each(function(index){
         var src = $(this).attr('src');
         $(this).attr({
@@ -3732,7 +4060,8 @@ single quote 	222
             $(this).fadeOut();
         });
     });
-
+    ```
+</div>
 
 - VS
     + controls
