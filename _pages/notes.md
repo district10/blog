@@ -23,6 +23,14 @@ jsfile:
 Notes | 笔记
 ============
 
+linux, console: vi file& (bad !!);
+
+楼主你应该这么发：我自认全国C++水平第一 谁能破？
+你会看到和现在完全不同的答案…
+一般来说有这种想法的人只是因为旁边的人太弱了自己有点能力却膨胀的太厉害了◉‿◉ 
+
+有啥好抵制的，他们难道有什么值得拿上台面的作品吗？ 
+
 [javascript - What is DOM Event delegation? - Stack Overflow](http://stackoverflow.com/questions/1687296/what-is-dom-event-delegation)
 
 [CDN Providers · zenorocha/clipboard.js Wiki](https://github.com/zenorocha/clipboard.js/wiki/CDN-Providers)
