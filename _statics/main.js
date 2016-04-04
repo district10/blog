@@ -130,12 +130,12 @@ $('div.tzx-drawer[shy]').each(function(){
     $(this).children().children('dd').toggleClass('tzx-drawer-hide');
 });
 
-$('div.tzx-drawer').click( function(e){
+$('div.tzx-drawer').on( 'click', function(e){
     $(this).children().children('dd').toggleClass('tzx-drawer-hide');
     if ($(this).children().children('dd:eq(0)').hasClass('tzx-drawer-hide')) {
-        window.scrollTo($(this).offset().left, $(this).offset().top);
-    } else {
-        window.scrollTo( lastX, lastY );
+        if ( $(this).offset().top < pageYOffset ) {
+            window.scrollTo($(this).offset().left, $(this).offset().top);
+        }
     }
     return false;
 });
@@ -169,6 +169,10 @@ $('div.tzx-drawer')
 $(function($){
     var egg = new Egg();
     egg
+        .addCode("t,z,x", function() {
+            $('.tzx-hide').removeClass('tzx-hide').addClass('tzx-show');
+            $('.tzx-drawer-hide').removeClass('tzx-drawer-hide');
+        })
         .addCode("s,h,o,w", function() {
             $('.tzx-hide').removeClass('tzx-hide').addClass('tzx-show');
         })
@@ -188,4 +192,20 @@ $(function($){
             // console.log("Hook called for: " + this.activeEgg.keys);
             // console.log(this.activeEgg.metadata);
         }).listen();
+});
+
+$(function(){
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+
+        e.clearSelection();
+    });
+
+    clipboard.on('error', function(e) {
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+    });
 });

@@ -16,10 +16,280 @@ after-before: |
     </style>
 cssfile:
     - font-awesome.min.css
+jsfile:
+    - clipboard.min.js
 ...
 
 Notes | 笔记
 ============
+
+[javascript - What is DOM Event delegation? - Stack Overflow](http://stackoverflow.com/questions/1687296/what-is-dom-event-delegation)
+
+[CDN Providers · zenorocha/clipboard.js Wiki](https://github.com/zenorocha/clipboard.js/wiki/CDN-Providers)
+
+:   [jsDelivr](https://www.jsdelivr.com/projects/clipboard.js)
+
+    ```html
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.8/clipboard.min.js"></script>
+    ```
+
+    [cdnjs](https://cdnjs.com/libraries/clipboard.js)
+
+    ```html
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.8/clipboard.min.js"></script>
+    ```
+
+    [RawGit](https://rawgit.com)
+
+    ```html
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.8/dist/clipboard.min.js"></script>
+    ```
+
+[The Many Memes of Meta - Meta Stack Exchange](http://meta.stackexchange.com/questions/19478/the-many-memes-of-meta/19492#19492)
+
+Cultural Height: TBD
+
+Background: A Stack Overflow-centric meme, jQuery began its career early on as the answer to beat for any question that even remotely referenced JavaScript. Its popularity became so great that eventually jQuery became the default answer to any potential question on Stack Overflow no matter how ridiculous.
+
+![](http://i.stack.imgur.com/TdrW7.gif)
+
+Usage: "Hey, I see you are trying to connect to that Oracle database using C++. You should totally drop that and try jQuery."
+
+See Also: Greasemonkey (Meta Stack Overflow equivalent)
+
+[Get viewport/window size (width and height) with javascript | Andy Langton](https://andylangton.co.uk/blog/development/get-viewportwindow-size-width-and-height-javascript)
+
+refs and see also
+
+  - [Device and Viewport Size In JavaScript](http://ryanve.com/lab/dimensions/)
+  - [Get the browser viewport dimensions with JavaScript - Stack Overflow](http://stackoverflow.com/questions/1248081/get-the-browser-viewport-dimensions-with-javascript)
+
+[Detailed Positioning - Learn to Code Advanced HTML & CSS](http://learn.shayhowe.com/advanced-html-css/detailed-css-positioning/)
+
+[遥感信息工程学院2015年硕士研究生复试成绩及拟录取名单 - 硕士招生 - 武大遥感——武汉大学遥感信息工程学院](http://rsgis.whu.edu.cn/index.php?m=content&c=index&a=show&catid=154&id=4986)
+
+[遥感信息工程学院2016年硕士研究生复试录取工作实施细则 - 硕士招生 - 武大遥感——武汉大学遥感信息工程学院](http://rsgis.whu.edu.cn/index.php?c=index&a=show&catid=154&id=5374)
+
+
+https://github.com/settings/tokens
+
+$ travis encrypt -r district10/hacking-travis GH_Token=YOUR_OWN_TOKEN
+$ travis encrypt-file ~/.ssh/id_rsa --add
+Detected repository as district10/hacking-travis, is this correct? |yes| yes
+encrypting /home/tzx/.ssh/id_rsa for district10/hacking-travis
+storing result as id_rsa.enc
+storing secure env variables for decryption
+
+Make sure to add id_rsa.enc to the git repository.
+Make sure not to add /home/tzx/.ssh/id_rsa to the git repository.
+Commit all changes to your .travis.yml.
+
+
+notifications:
+  campfire:
+    rooms:
+      secure: "encrypted string"
+
+notifications:
+  campfire:
+    rooms: "decrypted string"
+
+notifications:
+  campfire:
+    rooms:
+      - secure: "encrypted string"
+
+notifications:
+  campfire:
+    rooms:
+      - "decrypted string"
+
+
+  七牛测试域名
+
+    gnat-log.qiniudn.com
+    7pumep.com1.z0.glb.clouddn.com
+
+[盗版只在中国如此猖獗吗？ - 恶喵的奶爸的回答 - 知乎](http://www.zhihu.com/question/41347955/answer/90613782)
+
+:   其实中国对世界互联网盗版资源的贡献非常小，真正贡献大的，是俄罗斯人。
+
+    俄国人在美帝读书，最爱做的就是去图书馆扫描教材，制成图片pdf上传做种，大家都
+    知道真正有价值的技术类书籍在美帝都TM贵的要死（是真的要死，如果你坚持不断买
+    正版学习学科跟技术，一两年不用，一辆宝马的钱就没了，毫不夸张）
+
+    俄国的盗版起源就显得很奇怪，冲破审核制度谈不上，他们更像是有一种坚决打破邪
+    恶的美帝国主义技术封锁知识垄断的决心和正义感，成群结队去图书馆扫描这种事，
+    没有中国人会做的，但是俄罗斯人乐此不疲，尤其俄国人盛产学霸，遍布各大好大学
+    ，成群结队的复制材料
+
+    搁美国如果大人敢这么居高临下好似傻逼一样的逗弄小孩，那小孩轻则直接说一句
+    fuck off，重则上去就是咬一口，你他妈敢咬回去试试？
+
+    12，绝对不要让小孩在亲戚朋友们面前唱歌跳舞背古诗说英语来获得炫耀满足感，这
+    般做的父母，傻逼
+
+    如果只是普通的谋杀案，一般只会正常播报基本信息而已，但是如果是女大学生，尤
+    其是美丽漂亮的女大学生遇害，那么媒体一定要从各种渠道扒来受害者的各种照片大
+    幅猛贴。我明白社交网络的时代其实大家都爱搞美女经济学，但能不能不要公开谋杀
+    案受害人照片或者打码呢？为了传播率而消费死者的美貌，合适吗？
+
+    九把刀在杀手·太极还是杀手·不死里面说过台媒下三滥无节操，必然盯着美丽的受害
+    者案件去跟，而且越是重伤害案件，越是性暴力案件，越是激动，且一定要在头版头
+    条公开受害者高清无码的大幅照片，对犯案细节，尤其是性侵犯细节，能怎么深入怎
+    么深入，透过文字气息和图片排版，我都能想象得到这类媒体的编辑应该是激动的一
+    边大口吞噬速效救心丸一边不停的打字和贴图的，甚至可能写到精彩高潮处，自己也
+    忍不住的射精了
+
+    全台北各式的变态，就等着早餐时候看着头条打飞机呢，大陆也这样，有必要吗？
+
+[王大喵 答过的问题 - 知乎](http://www.zhihu.com/people/wang-da-miao-62/answers?order_by=vote_num)
+
+:   12月24日14年平安夜，武大助手如是推送：“今天有约的朋友注意了，怀孕会生处女座
+    。/微笑”。感觉像是举着火把的FFF团成员，同时微笑表情尽显高冷。
+
+    于是，我赶紧跑到武大助手上，默默地改完头像。发现其改版出了“约吗”功能，点击
+    一下，很多人的高考准考证照片、名字、简单信息就能出现在屏幕上。我当时就想，
+    这可真是够有意思，我们啥时候允许你武大助手使用这些照片了，而又所得何权可以
+    展现姓名、学院、年级，并且可以直接发送勾搭消息。
+
+    可以想见武大助手在这里犯了创业公司的一个大忌：【想在一个平台上，添加尽可能
+    多的功能】。
+
+    ——我不仅想要做查询功能，我还想要提供恶意卖萌功能；
+
+    ——我不仅想要提供恶意卖萌功能，我还想要兼具【陌陌】功能；
+
+    ——我不仅想要提供【陌陌】功能，我还想要把你最不想给别人看见的照片拿出来。
+
+    ——我就是想看见你花容失色的模样我就是要耍你哈哈哈哈哈哈哈哈。
+
+    于是，是谁给你的权利，以【惊喜】为名，以【校园社交】作幌，来肆意展示别人的
+    隐私。
+
+    至于讲座网为什么要发出倡议抵制武大助手，其中是不是有阴谋，或者是不是和其他
+    社团联手，或者想要分分钟赚取关注度，其实我并不得而知。但是也请各位看官不要
+    将一个声明想得太复杂，我更加相信这是讲座网运营人员的率性而为，更多的是【对
+    一种不合理现象】的愤怒和不满。
+
+    老板炒完一锅想要擦锅子，结果毛巾掉到了地上，他在众目睽睽之下拾起毛巾，拍都
+    没拍，直接继续擦锅，然后直接放入面条。。。我看的心都碎了，这还是有人看着，
+    没人看着的时候我都不敢想。
+
+    然后我果断就撤了，旁边的孩子们还在继续苦等。我想说他们心脏好强大。╮(╯▽╰)╭
+
+    不久之前看到一句话：“男人的爱因俯视而生，女人的爱因仰视而生。所以一个男人走
+    得越高，他能俯视的女人就越多；一个女人走得越高，她能仰视的男人就越少。”
+
+    虽然我身边几乎所有人都把我当做雷厉风行的女强人，但我不是真的男子汉，其实对
+    于一个女生来说，她真的需要一个比她成熟、能够体贴人的男人。
+
+    是的，随你怎么说，我就是觉得我需要一个我能够仰视的男人。
+
+    确实，羊肉串的是不是羊肉味和它是神魔肉的关系其实并不大。麻麻说，有一些烧烤
+    摊用的猫肉耗子肉猪肉，他们敢用这些肉烤是因为有一种神奇的油叫”羊油“（大概是
+    ），抹上它烤出来的肉就会有羊肉膻气的味道。。。所以当我看到前面说很多羊肉串
+    检测出来的DNA有老鼠的时候我其实一点也不吃惊。
+
+[大学生一定要参加学生组织吗？ - 恶喵的奶爸的回答 - 知乎](http://www.zhihu.com/question/20279004/answer/30493158)
+
+:   老张从鼻子里冒出了口烟，然后说道，我知道一般人都瞧不起学生会和党组织，也瞧
+    不起官僚主义，但你知道什么东西比官僚主义还没用么？就是当代大学生身上普遍存
+    在的通病，自由散漫，不服管教
+
+    在学生会，你要学会的第一件事情，就是服从命令，第二件事情，就是执行命令，这
+    两个，就是所谓的纪律性，党委的都是老师，你不好意思驳他们面子，不像现在的老
+    板跟你地位平等，你没办法质疑命令，只能无条件接受，做好，而第三件事情，也是
+    最重要的，就是及时的给结果，不管你完成还是没完成，你都必须给上级交待，而不
+    是要么拖，要么隐瞒不报
+
+    老张笑了，我就坐你隔壁，你每天跟你顾问争论我又不是没看见，每次你觉得顾问思
+    路不对，要按你的做，即便每次顾问让你答应做了，你也不会尽全力，偶尔也偷偷摸
+    摸按照自己想法做事，这么一来，工作效率能高才得了
+
+    你这种员工，这种学生，是我最讨厌的，虽然自己有点小聪明，但是自我想法太多，
+    不知道什么叫服从和执行，虽然偶尔判断正确因此沾沾自喜，但你想过没有，绝大部
+    分情况下，都是你上级对，少部分时候就算错了，那也是他担着责任，跟你无关。毕
+    竟你不是项目的头，不需要给灵感定策略，只需要执行做事，给出最好结果就行，如
+    果你给的结果总是很糟糕，做事总是拖拖拉拉，长久下来，你的职业生涯就很危险了
+
+    更简单的是，这个社会只看你有没有本事，而不看你做过什么。
+
+    我拿到一些实习offer之后，有朋友说，嗯，你做过那么多学生工作，肯定有帮助。其
+    实不是，别人看重的是我在学生工作中获得的什么，我的价值并不在于“参加过很多学
+    生工作”本身。
+
+[中国贫穷地区的农民到底是善良淳朴多、还是穷山恶水出刁民多？ - 社会 - 知乎](http://www.zhihu.com/question/29106877)
+
+:   喜欢出去旅游的朋友，在偏远地区，在贫困地区，在农村地区，尽可能不要单独前往
+    ，结伴而行时候也一点要小心小心再小心
+
+    请始终牢记，农村人的淳朴，永远是对内的，也就是说，对自己人，绝对是淳朴的，
+    让你感受到人间的温暖
+
+    我爹妈对我的教育是，对自己亲戚，可以稍微放心，对自己爹妈，可以百分百信任，
+    但是对外界的一切，基本全是坏蛋，没几个好人，一定要小心再小心
+
+    这个取决于你是省城来的领导还是人贩子拐来的媳妇。
+
+    最可怕的恶不就是木讷淳朴么？（不就是骗你一个小孩吗，你再生一个不就行了，你
+    们城里人什么没有……说得一脸无辜甚至困惑）
+
+    这么说吧，那些人贩子也好什么也好，如果单个拉出来，都不是坏人，也淳朴和善。
+    但形成一个为了生活的团体，为某种所谓的传统观念驱使，那基本上什么事情都做得
+    出来。统一价值观下讨论善恶才有意义，小偷强盗抓起来甚至枪毙就行，可是因为价
+    值观不同，那就和善恶无关了，说什么双方都不会互相理解。古代人也热情好客善良
+    淳朴，天不下雨，村里拿童男童女祭天，你和他们说不下雨是自然现象有什么用？
+
+    **基于无知愚昧的淳朴单纯，是罪行最天然的帮凶**
+
+[就恶魔的奶爸英文水平一事的探讨 - 知乎专栏](http://zhuanlan.zhihu.com/p/19758941)
+
+:   我他妈求着你来信我了？收你钱了，爱学学，不学滚！
+
+    在知乎，大家来的就是分享帮忙的，反对或者赞同都无所谓，但就是有这么一群小人
+    ，属于最低贱最卑鄙最无耻的一群，简直就是比狗屎蛆虫还要恶心的存在，所谓分享
+    和求知精神跟他们都是绝缘的。上来也不关心你说的对还是错，他们关心的只是，你
+    也没什么了不起吗，你有什么大能耐呀，我就是要质疑，要把你搞倒搞臭！
+
+[为什么中国人如此热爱奥斯卡？](https://www.douban.com/note/542260872/)
+
+:   所以，你看，这一切都造成了奥斯卡对中国观众充满恒久的吸引力。大明星、大排场
+    、热闹、喧哗、靓丽但无需太多动脑的年度聚会，一个不出错但也绝不出格的商业电
+    影最大公约数。形象一些讲，相比于那些看重艺术贡献和影像态度的电影节，奥斯卡
+    更像一次给电影流水线优秀工人的嘉奖礼。你没看人们提到小李子的时候都在谈敬业
+    和拼搏吗？不过，小李子拿了奖之后，在明年的奥斯卡来临之时，我们会不会突然不
+    知道该聊点什么。
+
+    (我感觉这个思路错了，奥斯卡的火应该和最开始的传播有关，而不是实际上他们的差别。
+    或许明年在春晚上扯几下柏林电影节，然后各大电视台一跟风，以后中国观众热爱的就是柏林电影节了。)
+
+[起点不高，又很迷茫怎么办](https://www.douban.com/note/544963308/)
+
+:   一个教授去演讲，听者云集。演讲完毕，一个学生举手提问：“我就读的大学是一所三
+    流大学，大家都不努力学习，也没有什么对未来的计划，像我这种起点不高又很迷茫
+    的状况应该怎么办呢？”教授的回答很犀利：“在这所三流大学里你出类拔萃吗？如果
+    没有，那恐怕就不是环境的问题。”
+
+    对我而言，真正有用的建议是：当你觉得迷茫时，不管好坏，先设一个目标，哪怕后
+    期再调整也没关系，先朝着这个目标行动起来。在后面的努力过程中，你可以不断回
+    顾、修正最初的目标，你会发现自己正慢慢朝着正确的方向行驶，哪怕走的是一条当
+    初根本无法预料的航道。
+
+    老俞说：“我最烦现在的年轻人在一点儿基础都还没有的时候，就给自己定下目标要成
+    为下一个马云，他甚至还不如马云长得好看。”
+
+    可是，当你起点不高的时候，困住你的并不是迷茫，而是**患得患失**。你希望的并
+    不仅仅是一个目标，而是一个能够确保你成功的目标；你所期待的也不仅仅是一条道
+    路，而是一条万无一失、通向成功的康庄大道。
+
+[必应 学术: Sexual Hookup Culture: A Review.](https://www.bing.com/academic/profile?id=2154001391&v=paper_preview&mkt=zh-cn)
+
+:   todo, translate
+
+    refs and see also
+
+      - [开个坑，慢慢填上 Sexual Hookup Culture: A Review](https://www.douban.com/note/541521533/)
 
 [Feedjit Free Live Traffic Feed](http://feedjit.com/?utm_source=ltf&utm_medium=web&utm_campaign=ltfCampaign#)
 
@@ -1597,7 +1867,7 @@ moderator, `['mɑdəretɚ]` n. [核] 慢化剂；仲裁人；调解人；缓和�
     - After all, tomorrow is another day!
     - I'm also just a girl, standing in front of a boy, asking him to love her.
     - 我是世界之王！I'm the king of the world!
-    - What we've got here is a failure to communicate.
+    - **What we've got here is a failure to communicate.**
     - Keep your friends close, but your enemies closer.
     - The greatest trick the devil ever pulled was convincing the world he didn't exist.
     - Fasten your seatbelts. It's going to be a bumpy night.
@@ -1644,6 +1914,25 @@ moderator, `['mɑdəretɚ]` n. [核] 慢化剂；仲裁人；调解人；缓和�
 
 [我怕甩出这份追剧表后，没人再看国产的 - 简书](http://www.jianshu.com/p/d9c87039cb1c)
 
+:   **神探夏洛克：恶劣的新娘, Sherlock: The Abominable Bride**
+
+    **夜班经理, The Night Manager**
+
+    **无声的证言 第19季, Silent Witness**
+
+    IMDb网友曾评论它是史上最好的犯罪剧，称它“比《犯罪现场调查》更加真实地刻画出
+    我们的所处的世界”。
+
+    **路德 第四季, Luther**
+
+    这部2011年推出的犯罪题材剧集，目前已出了三季，曾八次提名艾美奖。
+
+    **神秘博士 第九季, Doctor Who**
+
+    唐顿庄园
+
+    看完一个再说！！！（其实我不喜欢看剧的……）
+
 [链接提交_站长工具_优化PC和移动搜索收录_百度站长平台](http://zhanzhang.baidu.com/linksubmit/index?site=http://tangzx.qiniudn.com/)
 
 :   - <http://tangzx.qiniudn.com/sitemap.xml>
@@ -1683,6 +1972,16 @@ moderator, `['mɑdəretɚ]` n. [核] 慢化剂；仲裁人；调解人；缓和�
 
       - 不是所有浏览器都支持
       - 实际上，支持的浏览器很少 （`+IE, +Firefox, +Safari, -Chrome, -Opera`）
+
+[cursor - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor?redirectlocale=en-US&redirectslug=CSS%2Fcursor)
+
+:   cursor
+      ~ `auto // default // none`
+      ~ `pointer`
+      ~ `cell`
+      ~ `crosshair`
+      ~ `zoom-in / -webkit-zoom-in`
+      ~ `url(hyper.cur), auto`
 
 ---
 
@@ -1840,7 +2139,7 @@ GitHub Hovercard is a third party tool which is **not affiliated to GitHub**
 (github.com). This page is designed exactly the same as GitHub only to show how
 the extension actually works on GitHub.
 
-<div class="tzx-drawer">
+<div class="tzx-drawer" shy>
 [vim/vimrc at master · vingel/vim](https://github.com/vingel/vim/blob/master/vimrc)
 
 :   ```vimrc
@@ -2907,7 +3206,7 @@ Simple HTTP Server
 
 ---
 
-<div class="tzx-drawer">
+<div class="tzx-drawer" id="css-selector">
 [CSS selector for "foo that contains bar"? - Stack Overflow](http://stackoverflow.com/questions/2000582/css-selector-for-foo-that-contains-bar)
 
 :   <div class="tzx-drawer">
@@ -4188,8 +4487,8 @@ f JS Fiddle ( http://jsfiddle.net/qAHC2/ ) is similar to JS
     所以，不要乱搞。CSAPP 里自己写过一个 malloc 就明白了。
 
     当然了，国内一般是不教 Linux 和 bash 一类的，国内很多人是不会用的，这也是为啥大
-    家都觉得 windows 好的一个原因。我可以负责任地说我在美国读的 CS 本科，系里没有一
-    台 Windows 电脑。
+    家都觉得 windows 好的一个原因。**我可以负责任地说我在美国读的 CS 本科，系里没有一
+    台 Windows 电脑。**
 
     电池是化学工业。
 
@@ -4202,7 +4501,7 @@ f JS Fiddle ( http://jsfiddle.net/qAHC2/ ) is similar to JS
     做个不恰当的比喻：研发新材料的难度好比 @李阿玲 徒手写 TeX：一次写出一个四万
     行的程序，各个部件耦合性极强且无法解耦，写完前无法预测结果，无法单元测试……
     啊不对，材料研究比 @李阿玲 更加令人绝望，因为 @李阿玲 好歹可以去 debug，材
-    料的性质不对无法 debug，只能改配方重新合成一份来 trial-and-error，错了不知
+    料的性质不对无法 debug，只能改配方重新合成一份来 **trial-and-error**，错了不知
     道为什么，最后成功了也不知道为什么……因此真无怪乎有些人把材料科学比作「往下
     水道扔钱」。有人问计算化学——很好，我们组就是做计算化学的，优化一个 30 原子
     的小分子结构需要两个小时；预测两个小分子的反应产物需要整整一天。我不认为地
@@ -4238,12 +4537,57 @@ f JS Fiddle ( http://jsfiddle.net/qAHC2/ ) is similar to JS
 
 Calibre 不知道为什么书都没了，需要点击 `Calibre Library` 然后 `恢复数据库` 进行恢复。
 
-- [Showdown.js](http://showdownjs.github.io/demo/#/Welcome%20to%20Dvorak4tzx's%20Blog%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D)
+- [Showdown.js, markdown editor](http://showdownjs.github.io/demo/#/Welcome%20to%20Dvorak4tzx's%20Blog%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D)
 - [Les Misérables Co-occurrence](https://bost.ocks.org/mike/miserables/)
 
 [如何成为一名数据科学家？](https://www.zhihu.com/question/21592677#answer-31441560)
 
-[050a125b8009c45a1ed0c362cd341dbe - bl.ocks.org](http://bl.ocks.org/district10/050a125b8009c45a1ed0c362cd341dbe)
+:   自学是一件非常寂寞的事情，希望所有有理想成为Data scientist的你能坚持下来，
+    人生会因此大不同。
+
+    答主通过学习过来人经验总结，咨询前辈，大量研究 job description, 制定了自学
+    的几大块内容：统计，SAS R Python编程，机器学习，Hadoop家族产品。
+
+    统计：
+
+      - 1）统计基础：相信大部分专业本科和研究生的基础课程都少不了统计基础，什么
+        F检验，T检验，ANOVA，置信区间，几款经典的distribution 等等。那花个两三
+        天时间来巩固一下热热身吧！我用的是PSU Applied Statistics 文字版网课
+        Welcome to STAT 500! 内容完善讲解细致的良心之作啊！
+      - 2）Regression: 必学，一个系列的网课 Welcome to STAT 501! 一共15个Lesson
+        ，一天一个，两个礼拜轻松搞定，同时找些作业题来做，google一下一大把。学
+        完之后如果感觉良好渐入佳境了，后面的学习就可以适当提提速啦。
+      - 3）DOE: 答主上过这门课所以没有自学经验可分享，有同系列网课大家可以用用
+        看看 Welcome to STAT 502! 和 Welcome to STAT 503!
+
+    SAS：
+
+    广泛应用在各行各业，尤其是大公司，尤其是银行保险业，把 base 和advanced 两个
+    证考了，基本就掌握得差不多了，面试的题都不会超出这个范围。答主考证的学习材
+    料：
+
+      - Base Learning Path
+      - Advanced Learning Path
+
+    答主一年前就考了，当时挺闲的，身边也有人在考，就跟风考个玩玩，没想到还真派
+    上用场了，忍不住废话一句：在学东西的时候永远不要去想我学这有什么用，总有一
+    天它的价值会显现。建议有空就早点考，挺简单的，用不了多长时间。
+
+    机器学习：
+
+    Andrew Ng 非常有名的 machine learning 公开课：coursera.org 的页面 浅显易懂
+    ，值得一学。另外，上面截图skills 里边的提到的 learning algorithm，答主都逐
+    一google，从Youtube到博客到论文，看懂原理，结合Python 的scikit learn实现一
+    遍。 最后，来一发Udacity的付费网课 Machine Learning Engineer Nanodegree 收
+    尾，里边有四个很赞的小project，认真做一遍，技能点飙升。
+
+    做Project就是一个把自己所学进行总结归纳升华的阶段，一定要有自己的想法，是的
+    ，自己的想法非常重要，要勤思考，不懂的东西勤问google。
+
+我的 blocks：
+
+- [050a125b8009c45a1ed0c362cd341dbe - bl.ocks.org](http://bl.ocks.org/district10/050a125b8009c45a1ed0c362cd341dbe)
+- [WhuRS - bl.ocks.org](http://bl.ocks.org/district10/16efc4a3e432774f4bfd)
 
 More precisely, the username regular expression is `/^[a-z0-9][a-z0-9]*$/i`; it
 should be more lenient. (`['linɪənt]` adj. 宽大的；仁慈的)
@@ -4284,6 +4628,8 @@ should be more lenient. (`['linɪənt]` adj. 宽大的；仁慈的)
 D3 is Data ↦ Elements
 
 Show Reels
+
+Reels: 绕线轮，卷筒；摇晃，旋转（reel的复数形式）, v. 眩晕，旋转，卷，绕（reel的第三人称单数形式）
 
  CSS Selectors
 
@@ -4341,32 +4687,32 @@ foo#bar     // <foo id="bar"> </foo>
 
 [What Makes Software Good? — Medium](https://medium.com/@mbostock/what-makes-software-good-943557f8a488)
 
-I don’t want you to learn D3 for the sake of D3. I want you to learn how to explore data and communicate insights effectively.
+:   I don’t want you to learn D3 for the sake of D3. I want you to learn how to
+    explore data and communicate insights effectively.
 
-Good software is approachable.
-  ~ It can be understood completely in independent, easy pieces. You don’t need
-    to understand everything before you can understand anything.
+    Good software is **approachable**.
+      ~ It can be understood completely in independent, easy pieces. You don’t need
+        to understand everything before you can understand anything.
 
-Good software is consistent.
-  ~ It lets you take what you’ve learned about one part and extrapolate it to
-    the rest. It doesn’t self-contradict. It is parsimonious, avoiding
-    superfluous elements.
+    Good software is **consistent**.
+      ~ It lets you take what you’ve learned about one part and extrapolate it to
+        the rest. It doesn’t self-contradict. It is parsimonious (`[,pɑrsə'monɪəs]`, 吝啬的), avoiding
+        superfluous elements.
 
-Good software explains itself.
-  ~ It has affordances for learning and discovery. It is role-expressive and
-    minimizes hidden magic.
+    Good software **explains itself**.
+      ~ It has affordances for learning and discovery. It is role-expressive and
+        minimizes hidden magic.
 
-Good software teaches.
-  ~ It doesn’t just automate an existing task, but provides insight or imparts
-    knowledge, such as a best practice or a new perspective on a problem.
+    Good software **teaches**.
+      ~ It doesn’t just automate an existing task, but provides insight or imparts
+        knowledge, such as a best practice or a new perspective on a problem.
 
-Good software is for humans.
-  ~ It is cognizant of people and the reality in which they live. It does not
-    expect elaborate and arbitrary rules to be memorized. It anticipates the
-    need for learning and debugging.
+    Good software **is for humans**.
+      ~ It is cognizant of people and the reality in which they live. It does not
+        expect elaborate and arbitrary rules to be memorized. It anticipates the
+        need for learning and debugging.
 
 [UW Interactive Data Lab](http://idl.cs.washington.edu/)
-
 
 [Visualizing Algorithms](https://bost.ocks.org/mike/algorithms/)
 
@@ -4405,7 +4751,7 @@ Thank you for reading!
     中说着「我相信他不会掉下去的」。而另一些人的「信」，则是敢于让走钢丝的的人
     背着他走，说「我相信你不会让我掉下去的」。4 人
 
-    大部分「受骗」的人，往往是心甘情愿地让自己「受骗」。4 人
+    **大部分「受骗」的人，往往是心甘情愿地让自己「受骗」。**4 人
 
     黑处女座绝对不是黑处女座本身，而是去黑「具备处女座性格的这类人」。4 人
 
@@ -4481,7 +4827,9 @@ Thank you for reading!
 
 [把 ANSI 編碼轉化爲 UTF-8 - 简书](http://www.jianshu.com/p/22c2f5af5a21)
 
-:   ```bash
+:   encoding, utf8
+
+    ```bash
     # 檢測
     $ file -i *
     file1: text/plain; charset=utf-8
@@ -4514,7 +4862,7 @@ Thank you for reading!
 ---
 
 <small>
-```yml
+```yaml
 language: c
 sudo: required
 before_install:
@@ -4569,7 +4917,7 @@ h1::-moz-selection { color: #9ddcff; }
 :   Determining latitude and longitude is a measurement problem, and like all
     measurements these will contain a degree of uncertainty.
 
-    Neogeography (literally “new geography”) is the use of geographical
+    Neogeography (literally “**new geography**”) is the use of geographical
     techniques and tools for personal and community activities or by a
     non-expert group of users. Application domains of neogeography are
     typically not formal or analytical.
@@ -4594,9 +4942,9 @@ h1::-moz-selection { color: #9ddcff; }
 
 :   可是有了 RSS 就不一样了，因为它转换了被动与主动的关系。本来读者是“主动”来看
     我的博客，我是“被动”的，是不需要负责的。然而一旦有了 RSS，每一次发布却感觉
-    好像是我“主动”在推给他们看，是我很想让他们看一样，是要负责的。某些人取消关
+    好像是我“主动”在推给他们看，是我很想让他们看一样，是要负责的。**某些人取消关
     注别人的微博时，口气总是好像觉得自己关注一个人，是给了他很大的面子一样，所
-    以他们用取消关注来表示他们的“惩罚”。这些人显然把自己看得太高贵了。
+    以他们用取消关注来表示他们的“惩罚”。这些人显然把自己看得太高贵了。**
 
     机器的“学习能力”，并没有比石头高出很多，因为机器学习说白了，只不过是通过大
     量的数据，统计拟合出某些函数的参数。
@@ -4606,11 +4954,14 @@ h1::-moz-selection { color: #9ddcff; }
     实不明白思考和智能到底是什么。大部分所谓AI专家，对人脑的工作原理所知甚少，
     甚至完全不关心。
 
+    （当然，我并不觉得这有什么问题。人脑里面有一些东西可以借鉴，但不代表不研究脑科学，
+    人类就造不出更好的“脑”。）
+
 [bocker/bocker at master · p8952/bocker](https://github.com/p8952/bocker)
 
-:   I can make no guarantees that it won't trash your system.
+:   **I can make no guarantees that it won't trash your system.**
 
-    （代码整理过，只为更“好”地查看。）
+    （代码整理过，只为更“好”地查看。真是 Bash 脚本的各种运用。）
 
     ```bash
     #!/usr/bin/env bash
@@ -4871,9 +5222,9 @@ h1::-moz-selection { color: #9ddcff; }
 
     肯定是客户端先表白。
 
-    1. 客户端对服务器：我要和你发展关系。
-    2. 服务器对客户端：你可以和我发展关系。
-    3. 客户端对服务器：在一起~
+    1. 客户端对服务器：我要和你发展关系。（#1，SYN）
+    2. 服务器对客户端：你可以和我发展关系。（#2，SYN，ACK）
+    3. 客户端对服务器：在一起~（#3，ACK）
 
     于是三次握手后，他们在一起了（连接建立了）。
 
@@ -4883,16 +5234,16 @@ h1::-moz-selection { color: #9ddcff; }
 
     可以是客户端说分手，也可以是客户端。这里以客户端作为负心汉。
 
-    1. 客户端对服务器：恋爱谈完了，我们分手把。
-    2. 服务器对客户端：可以的。（如果还有财务纠纷那就先还钱，不让分手的。）
-    3. 服务器对客户端：那就分。
-    4. 客户端对服务器：恩。
+    1. 客户端对服务器：恋爱谈完了，我们分手把。（#1，FIN）
+    2. 服务器对客户端：可以的。（如果还有财务纠纷那就先还钱，不让分手的。）（#2，ACK）
+    3. 服务器对客户端：那就分。（#3，FIN）
+    4. 客户端对服务器：恩。（#4，ACK）
 
     ![](http://www.tcpipguide.com/free/diagrams/tcpclose.png)
 
 ---
 
-at this point in the history.
+**at this point in the history.**
 
 Generals in the Editor War may note that Emacs users are 35.2% likely to also
 hack on Vim, while Vim users are only 17.3% likely to hack on Emacs, so there's
@@ -4902,14 +5253,14 @@ The Google Chrome Extension is available on the Chrome Web Store and if, for
 any reason, you want to download directly, it's also available here
 
 There actually is a target on the root Makefile called chrome but it won't
-work, because the private key is, well... private.
+work, **because the private key is, well... private.**
 
 But you can still build the front end and load the unpacked extensions. Here is how:
 
-  - Run $ cd front && make chrome ( or make chrome.watch if you want to watch for changes)
-  - Then go to chrome:extension
+  - Run `cd front && make chrome`{.bash} ( or `make chrome.watch`{.bash} if you want to watch for changes)
+  - Then go to `chrome:extension`
   - click on Load unpacked extension... (make sure Developer mode is checked on the top right of the page)
-  - Select GithubPulse/chrome_extension
+  - Select `GithubPulse/chrome_extension`
   - Done!
 
 [git log - View the change history of a file using Git versioning - Stack Overflow](http://stackoverflow.com/questions/278192/view-the-change-history-of-a-file-using-git-versioning)
@@ -4941,9 +5292,9 @@ But you can still build the front end and load the unpacked extensions. Here is 
     $(d).addClass(classname)
         .html(text)
         .appendTo($("#myDiv")) //main div
-    .click(function () {
-        $(this).remove();
-    })
+        .click(function () {
+            $(this).remove();
+        })
         .hide()
         .slideToggle(300)
         .delay(2500)
@@ -4958,7 +5309,45 @@ But you can still build the front end and load the unpacked extensions. Here is 
 `lsusb`{.bash}
 
 [zenorocha/clipboard.js: Modern copy to clipboard. No Flash. Just 2kb](https://github.com/zenorocha/clipboard.js/)
+
+:   <!-- Target -->
+    <input id="foo" value="https://github.com/zenorocha/clipboard.js.git">
+
+    <!-- Trigger -->
+    <button class="btn" data-clipboard-target="#foo">
+    Copy to clipboard
+    </button>
+
+    <!-- Target -->
+    <textarea id="bar">Mussum ipsum cacilds...</textarea>
+    <button class="btn" data-clipboard-action="cut" data-clipboard-target="#bar">
+    Cut to clipboard
+    </button>
+
+    <button class="btn" data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">
+    Copy to clipboard
+    </button>
+
+    <button class="btn" data-clipboard-text="http://tangzx.qiniudn.com">点我复制本站网址</button>
+
+    ```javascript
+    new Clipboard('.btn', {
+        target: function(trigger) {
+            return trigger.nextElementSibling;
+        }
+    });
+
+    new Clipboard('.btn', {
+        text: function(trigger) {
+            return trigger.getAttribute('aria-label');
+        }
+    });
+    ```
+
+
+
 [chunksnbits/jquery-quickfit: A quick and dirty approach to fitting text into its surrounding container.](https://github.com/chunksnbits/jquery-quickfit)
+
 [Controlling Crawling and Indexing  |  Webmasters  |  Google Developers](https://developers.google.com/webmasters/control-crawl-index/)
 
 ---
@@ -5372,7 +5761,9 @@ single quote 	222
         // converts literal character values to keyCodes
         Egg.prototype.__toCharCodes = function(keys) {
           var special = {
-              "up": 38, "down": 40, "left": 37, "right": 39, "enter": 13, "space": 32, "ctrl": 17, "alt": 18, "tab": 9, "esc": 27
+              "up": 38, "down": 40, "left": 37, "right": 39,
+              "enter": 13, "space": 32, "ctrl": 17,
+              "alt": 18, "tab": 9, "esc": 27
             },
             specialKeys = Object.keys(special);
 
@@ -5400,9 +5791,11 @@ single quote 	222
           return characterKeyCodes.join(',');
         }
 
-        // Keycode lookup: http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
         Egg.prototype.AddCode = function(keys, fn, metadata) {
-          this.eggs.push({keys: this.__toCharCodes(keys), fn: fn, metadata: metadata});
+          this.eggs.push({
+            keys: this.__toCharCodes(keys),
+            fn: fn, metadata: metadata
+          });
 
           return this;
         }
@@ -5421,10 +5814,13 @@ single quote 	222
             Only prevent default behavior for letters A-Z.
             I want keys like page up/down to still work.
           */
-          if ( e.type === "keydown" && !e.metaKey && !e.ctrlKey && !e.altKey && !e.shiftKey ) {
+          if ( e.type === "keydown" &&
+              !e.metaKey && !e.ctrlKey &&
+              !e.altKey && !e.shiftKey ) {
             var tag = e.target.tagName;
 
-            if ( ( tag === "HTML" || tag === "BODY" ) && isLetter ) {
+            if ( ( tag === "HTML" || tag === "BODY" ) &&
+                   isLetter ) {
               e.preventDefault();
               return;
             }
@@ -5448,7 +5844,8 @@ single quote 	222
               var foundEgg = this.kps.toString().indexOf(currentEgg.keys) >= 0;
 
               if(foundEgg) {
-                // Reset keys; if more keypresses occur while the callback is executing, it could retrigger the match
+                // Reset keys; if more keypresses occur while
+                // the callback is executing, it could retrigger the match
                 this.kps = [];
                 // Set the activeEgg to this one
                 this.activeEgg = currentEgg;
@@ -5948,7 +6345,7 @@ MyWebsite/
   |--index.html
 ```
 
-夺取话语权只有一条路径，就是超出别人的预期；
+**夺取话语权只有一条路径，就是超出别人的预期；**
 
 - wikipedia
 - stackoverflow
@@ -5998,7 +6395,6 @@ Later
 
 `// var jq = jQuery.noConflict();`
 
-<small><small><small>
 ```javascript
 $( "li" ).each(function( index ) {
   console.log( index + ": " + $( this ).text() );
@@ -6013,7 +6409,6 @@ $(document).ready(function(){
     var pathStringList = document.location.toString().split('/');
 });
 ```
-</small></small></small>
 
 [Attribute selectors - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
 
@@ -6054,41 +6449,27 @@ $(document).ready(function(){
       - [ID selectors - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors)
       - [Attribute selectors - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
 
-[cursor - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor?redirectlocale=en-US&redirectslug=CSS%2Fcursor)
-
-:   cursor
-      ~ `auto // default // none`
-      ~ `pointer`
-      ~ `cell`
-      ~ `crosshair`
-      ~ `zoom-in / -webkit-zoom-in`
-      ~ `url(hyper.cur), auto`
-
 [quotes - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/quotes)
 
 :   ```css
-    /* Keyword value */
     quotes: none;
 
-    /* <string> values */
-    quotes: "«" "»";           /* Set open-quote and close-quote to the French quotation marks */
-    quotes: "«" "»" "‹" "›";   /* Set two levels of quotation marks */
+    quotes: "«" "»";
+    quotes: "«" "»" "‹" "›"; /* Set two levels of quotation marks */
 
-    /* Global values */
-    quotes: inherit;
-    quotes: initial;
-    quotes: unset;
+    quotes: inherit; // initial; // unset;
 
     q { quotes: '"' '"' "'" "'" }
     q:before { content: open-quote }
     q:after  { content: close-quote }
     ```
 
-[javascript - window.onload vs $(document).ready() - Stack Overflow](http://stackoverflow.com/questions/3698200/window-onload-vs-document-ready)
+[javascript - `window.onload`{.javascript} vs `$(document).ready()`{.javascript} - Stack Overflow](http://stackoverflow.com/questions/3698200/window-onload-vs-document-ready)
 
-:   The ready event occurs after the HTML document has been loaded, while the onload event occurs later, when all content (e.g. images) also has been loaded.
+:   The ready event occurs after the HTML document has been loaded, while the
+    `onload` event occurs later, when all content (e.g. images) also has been loaded.
 
-    The onload event is a standard event in the DOM, while the ready event is
+    The `onload` event is a standard event in the DOM, while the `ready` event is
     specific to jQuery. The purpose of the ready event is that it should occur
     as early as possible after the document has loaded, so that code that adds
     functionality to the elements in the page doesn't have to wait for all
@@ -6098,7 +6479,7 @@ $(document).ready(function(){
 
 ---
 
-I'm agnostic.
+I'm agnostic. (不可知论者)
 
 [javascript - 'innerText' works in IE, but not in Firefox - Stack Overflow](http://stackoverflow.com/questions/1359469/innertext-works-in-ie-but-not-in-firefox)
 

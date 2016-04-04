@@ -192,3 +192,4 @@ Links | 链签
 #. [Site General Settings - Disqus Admin](https://dvorak4tzx.disqus.com/admin/settings/general/)
 #. [Marijn's Web Home](http://marijnhaverbeke.nl/)
 #. [Create your Google Sitemap Online - XML Sitemaps Generator](https://www.xml-sitemaps.com/)
+#. [CatWang's Tech Blog](http://www.catwangmenma.com/)
