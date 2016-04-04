@@ -193,3 +193,4 @@ Links | 链签
 #. [Marijn's Web Home](http://marijnhaverbeke.nl/)
 #. [Create your Google Sitemap Online - XML Sitemaps Generator](https://www.xml-sitemaps.com/)
 #. [CatWang's Tech Blog](http://www.catwangmenma.com/)
+#. [关于 | Specs' Blog-就爱PHP](http://9iphp.com/about)
