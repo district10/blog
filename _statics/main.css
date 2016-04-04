@@ -378,10 +378,16 @@ img {
     display: block;
     max-width: 95%;
     width: auto\9;
+    width: auto;
     height: auto;
     margin: auto;
     vertical-align: middle;
     text-align: center;
+}
+
+.tzx-fright .figure img,
+.tzx-fleft  .figure img {
+    max-width: 50%;
 }
 
 .figure img:hover {

@@ -14,8 +14,11 @@ install:
   - cd ~
   - wget https://github.com/jgm/pandoc/releases/download/1.17/pandoc-1.17-1-amd64.deb
   - sudo dpkg -i pandoc*.deb
-  - wget http://devtools.qiniu.com/qiniu-devtools-linux_amd64-current.tar.gz
-  - tar xfz qiniu-devtools-linux_amd64-current.tar.gz
+  - # wget http://devtools.qiniu.com/qiniu-devtools-linux_amd64-current.tar.gz
+  - # tar xfz qiniu-devtools-linux_amd64-current.tar.gz
+  - wget http://whudoc.qiniudn.com/2016/qrsync.tar.gz
+  - tar xfz qrsync.tar.gz
+  - chmod +x qrsync
   - sudo cp qrsync /bin
   - git clone https://github.com/district10/aha.git
   - cd aha && make && sudo make install

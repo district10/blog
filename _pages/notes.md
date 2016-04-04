@@ -21,14 +21,197 @@ cssfile:
 Notes | 笔记
 ============
 
+[Feedjit Free Live Traffic Feed](http://feedjit.com/?utm_source=ltf&utm_medium=web&utm_campaign=ltfCampaign#)
+
+Itinerary, `[aɪ'tɪnərɛri]` n. 旅程，路线； 旅行日程
+
+[CSS `\9` in width property - Stack Overflow](http://stackoverflow.com/questions/8004765/css-9-in-width-property)
+
+:   What is the meaning of this? I am guessing it is a browser hack, but I have not been able to find what exactly it does.
+
+    ```css
+    width: 500px\9;
+    ```
+
+    What is the significance (意义；意思) of `\9`?
+
+    `\9` is a "CSS hack" specific to Internet Explorer 7, 8, & 9.
+
+    All other browsers will ignore `width: 500px\9;`{.css} entirely, and therefore not apply `width: 500px;`{.css} to the element at all.
+
+    `\0` instead of `\9` will apply it to IE10 as well.
+
+    refs and see also
+
+      - [Internet Explorer 9 Specific CSS Hack](http://webdesignandsuch.com/ie9-specific-css-hack/)
+
+
+[卡司_百度百科](http://baike.baidu.com/view/573123.htm)
+
+:   cast 的中文音译，演员阵容的意思。台湾和香港地区常用名词。
+
+    A cast member is:
+
+      - An actor, dancer, or singer who performs (i.e., sings, dances, acts,
+        mimes, puppeteers, voices characters, etc.) in a theatrical production,
+        motion picture, or television program. The actors who perform in the
+        show are collectively referred to as the cast.
+      - Any employee of the various Disney theme parks, including the original
+        Disneyland Park in Anaheim, California and the Walt Disney World
+        Resort.  Other Disney parks and resorts around the world also use
+        similar terminology. Employees of Disney Store locations are also
+        referred to as cast members. This terminology is derived from Walt
+        Disney's use of theatrical analogies when referring to park operations.
+
+    refs and see also
+
+      - [Cast member - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Cast_member)
+
+<div class="tzx-drawer" shy>
+[新不了情 (豆瓣)](https://movie.douban.com/subject/1292950/)
+
+:   那时他曾把《新不了情》的剧本给刘青云看，结果其中一句台词“但我最多怨自己运气
+    不好，从来没有怀疑自己的才华”令刘青云大为感动，便告诉小宝，如果有一天真的要
+    拍这个戏，他很希望演那个男主角。
+
+    后来小宝的三哥秦沛在金像奖的颁奖典礼上调侃弟弟，说他的拍片经历比电影本身还
+    煽情。幸好这部片在香港大红大紫，回收了三千万的票房，又横扫当年的香港金像奖
+    ，囊括了最佳导演、最佳编剧、最佳影片、最佳女主角袁咏仪、最佳女配角冯宝宝、
+    最佳男配角秦沛，除了影帝被黄秋生拿走之外，其余的演员奖项都被《新不了情》抱
+    走了。
+
+    我不敢重看这部片，太沉重也太震撼，网上的评论倒是众口一致的叫好，赞小宝有人
+    文关怀，可是这种题材不怕吓跑观众没有票房吗?我查了一下当年的票房，居然有935
+    万。这部片如今看似卡司极强，其实当年的发仔才刚刚藉《英雄本色》咸鱼翻身，这
+    部也是伟仔生平的第三部电影而已。这部片里，小宝让秦沛拿了生平第一个最佳男配
+    ，其实小宝第一次拍片，秦沛帮了很多忙，周、梁二人都是他拉来的。
+
+    一开始，阿杰和很多年轻人一样，自视高，脸皮薄，人家给点脸色就受不了，久而久
+    之，在行内就成了出名的臭脾气，人缘不好，得罪很多人……
+
+    “这个世界有很多事你不明白，你不明白的未必是不好，可能是你自己蠢！”
+
+    “你看那些阿伯，他们平时哪有什么娱乐？就是喜欢听听粤曲。有钱就点唱，没钱我们
+    也不会勉强他们，要是碰上台风来了我们没开工，他们还不知道有多失落呢，还有，
+    至少他们不会在这里划拳喝酒。”
+
+    看到这里，我的眼泪滴个不停。一个导演肯这样深入了解这个被社会遗忘的世界，肯
+    定它的价值，还用心的把它拍进电影里，用胶片纪录下这群人的生活。
+
+    一个失意的作曲家，看到这群比他更卑微，却依然活得抬头挺胸的人，是否深深感动
+    呢？
+
+    敏：我想我看一个晚上的脸色比你看一年还多
+
+    片中没有奇迹出现，也没有说阿杰从此事业一帆风顺，甚至阿敏等不及阿杰为她买来
+    钵仔糕就走了。女儿走的时候，母亲还在卖唱。天下有些事，不论如何乐观、如何努
+    力都无法改变，除了接受与面对，没有别的办法。悲凉的二胡声中，唱的词是：
+
+    ```tzx-bigquote
+    忆起往事，无限唏嘘感慨
+    一生饱受挫败、痛苦，历风霜
+    未怨命运，有泪自抹乾
+    每在风雨夜
+    拥抱慰藉时，黑暗有尽时
+    不管窗外雨怎倾，风怎吹
+    永伴你身边厮守，爱可添力量
+    待风消雨散黎明亮
+
+    此际剩下我孤孤单单悲悲切切
+    只等待恶梦快醒露曙光
+    渡过患难再共同觅理想
+    往后的岁月
+    苦痛要做人，欢笑也做人
+    一生总是有恨有喜
+    欢欣悲伤，有聚有分
+    春风秋霜，我必须接受
+    莫灰心永向前途望
+    耳畔有声音，呼唤我名字
+    愿祝福至爱人无恙
+
+    苦痛要做人，欢笑也要做人，不论人生际遇如何，我必须接受，莫灰心永向前途望
+    ```
+
+    当他遇到挫折的时候你鼓励他，他心情不好的时候逗逗他，他情绪低落的时候如果你
+    说无论怎么样你都不会离开他，他马上就会没事了……
+
+    我这个人有很多缺点，我喜欢一个人的时候，不知道该怎么开口；当我感激别人的时
+    候，也不知道怎么开口。但我真的很谢谢你，你让我改变了好多，好多。
+
+    这部电影法语片名是《C'est la vie, mon chéri》，意思是“亲爱的，这就是生活”，
+    是阿敏教会了阿杰，什么叫“生活”，也是阿敏的出现让阿杰对生活有了知觉；我想也
+    是在告诉我们，“生活”就是只要生命存在，就应该好好活着。
+
+    <div class="tzx-drawer" shy>
+    [经典台词 (新不了情 影评)](https://movie.douban.com/review/2873241/)
+
+    :   ```tzx-bigquote
+        才跟我认识没多久，就想跟我借钱啦？
+
+        - 她很厉害，跟我一样什么都懂，就是红不起来。
+        + 为什么？
+        - 我舅舅说她脾气太坏了，得罪了很多人。
+
+        - 还在生气啊？
+        + 没有啊。
+        - 那就好了，我还以为你那个呢。
+        + 我哪个？
+        - 以为……你吃醋。
+        + 我就是。不行吗？
+
+        - 对了，听阿敏说，你最近不太顺利？
+        + 是啊。
+        - 怕什么嘛，年轻人，机会多得是。每个人一生啊有好多次机会，最要紧的是看
+          自己能不能把握住。
+        + 你呢？你把握住了吗？
+        - 我？怪我自己太懒了……但是我顶多埋怨自己的运气不好，从来没有怀疑过自己
+          的才华。记住，你千万不可以怀疑你自己。
+
+        - 你告诉我，你是怎么让他笑的啊？
+        + 逗他啊。
+        - 我以前也试过啊，试过很多种方法都行不通诶。
+        + 大概是他以前事业不顺，心情又不太好，加上你们两个脾气都太倔了。
+        - 那你要好好教我两招啊，让我用在下一个身上。
+        + 我想，当他遇到挫折的时候，你就鼓励他，他心情不好的时候，逗逗他，他情
+          绪低落的时候，如果你跟他说，不管怎么样都不会离开他，他马上就会没事了。
+          其实，我都是照着书上说的。
+        ```
+    </div>
+
+    refs and see also
+
+      - [从邵氏明星到金像导演－从尔冬升电影版《新不了情》谈起 (新不了情 影评)](https://movie.douban.com/review/1332495/)
+      - [忘了忘不了 (新不了情 影评)](https://movie.douban.com/review/1182801/)
+      - [《新不了情》淳朴的爱，也能如此厚重 (新不了情 影评)](https://movie.douban.com/review/1437768/)
+      - [经典台词 (新不了情 影评)](https://movie.douban.com/review/2873241/)
+</div>
+
+[Search Results](https://github.com/svend/dot-emacsd/search?utf8=%E2%9C%93&q=xcape)
+
+[In Linux, how can I map SHIFT_L/SHIFT_R when pressed without additional key? - Earthwithsun.com](http://earthwithsun.com/questions/528341/in-linux-how-can-i-map-shift-l-shift-r-when-pressed-without-additional-key)
+
+:   Use space as control key using <https://github.com/alols/xcape> on Linux
+    and <https://pqrs.org/osx/karabiner/> on OS X.
+
+[张国荣先生的音乐作品赏析　文/独爱小珂](https://site.douban.com/leslie/widget/notes/13621225/note/285032746/)
+
+[JavaScript 标准参考教程（alpha） -- JavaScript 标准参考教程（alpha）](http://javascript.ruanyifeng.com/)
+
+[lydell/dual: Dual is an AutoHotkey script that lets you define dual-role modifier keys easily.](https://github.com/lydell/dual)
+
 A girl likes to be crossed in love now and then.
 
 举世皆浊我独清，
 众人皆醉我独醒，
 是以见放。
 
+花开有声音吗？谁听得到呢？花开后的清香和喜悦却是绵长，幽谧，无处不在。
+
+颓的不行的时候被老板召唤，然而并不是 check 我的进度，只是要我去帮同学改代码。让我想起《元气团仔》最后一集，被人需要这种事，真是，又麻烦又可爱吧。
+
 ---
 
+<div class="tzx-drawer" shy>
 [金枝玉叶 (豆瓣)](https://movie.douban.com/subject/1303376/)
 
 :   1. He's a Woman, She's a Man
@@ -71,6 +254,8 @@ A girl likes to be crossed in love now and then.
     物梦迟早会碰撞到顶点。
 
     袁咏仪的演技，哥哥的柔情似水深情入木，梅姐那不可二世的绝代芳华。
+
+    See [金枝玉叶 2, 袁咏仪演技爆表！](http://www.bilibili.com/video/av4265748/)
 
     男人爱别人，是为了自己开心；女人爱别人，是为了对方开心，然后自己自然而然也
     会开心。
@@ -115,13 +300,16 @@ A girl likes to be crossed in love now and then.
 
     refs and see also
 
+      - [金枝玉叶2 (豆瓣)](https://movie.douban.com/subject/1302054/?from=subject-page)
       - [金枝玉叶今犹在，世间已无十二少 (金枝玉叶 影评)](https://movie.douban.com/review/2746538/)
       - [爱与哀愁 (金枝玉叶 影评)](https://movie.douban.com/review/1111710/?start=0&post=ok#last)
       - [渔佬与白兔仔。 (金枝玉叶 影评)](https://movie.douban.com/review/2354408/)
       - [爱，只要你有了，就再也不会衰老 (金枝玉叶2 影评)](https://movie.douban.com/review/2910744/)
       - [所谓黄金时代 (金枝玉叶2 影评)](https://movie.douban.com/review/2859116/)
       - [爱是怎么回事？ (金枝玉叶2 影评)](https://movie.douban.com/review/1990974/)
+</div>
 
+<div class="tzx-drawer" shy>
 [胭脂扣 (豆瓣)](https://movie.douban.com/subject/1299288/)
 
 :   遭此一劫之后他醒来?会不会吵着再要去死?
@@ -166,6 +354,7 @@ A girl likes to be crossed in love now and then.
       - [终不弃的伤和凉 (胭脂扣 影评)](https://movie.douban.com/review/1026785/)
       - [说说如花——凡可怜之人，必有可恨之处。 (胭脂扣 影评)](https://movie.douban.com/review/1343622/)
       - [绻缱_百度百科](http://baike.baidu.com/view/2824049.htm)
+</div>
 
 [幸せ_百度百科](http://baike.baidu.com/view/5156725.htm)
 
@@ -343,8 +532,8 @@ A girl likes to be crossed in love now and then.
     refs and see also
 
       - [oricon_互动百科](http://www.baike.com/wiki/oricon)
-      - 官网主页：http://www.oricon.co.jp/
-      - 排行榜地址：http://www.oricon.co.jp/rank/ja/d/
+      - [ORICON STYLE｜ヒットが見える トレンド情報サイト](http://www.oricon.co.jp/)
+      - [オリコンデイリー CDアルバムランキング 2016年04月02日付 | ORICON STYLE](http://www.oricon.co.jp/rank/ja/d/2016-04-02/)
 
 [保罗·西蒙_百度百科](http://baike.baidu.com/view/682445.htm?fromtitle=Paul+Simon&fromid=8507397&type=syn)
 
@@ -402,11 +591,13 @@ A girl likes to be crossed in love now and then.
 
 [Paul Frank - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Paul_Frank)
 
-:   Paul Frank (full name Paul Frank Sunich), born August 29, 1967, is an
+:   ![](https://upload.wikimedia.org/wikipedia/en/7/7b/Paul_Frank_Industries_logo.gif)
+
+    Paul Frank (full name Paul Frank Sunich), born August 29, 1967, is an
     American cartoonist, artist and fashion designer. His creations adorn
-    clothing, accessories, and many other products. Julius the Monkey is one of
-    Sunich's best-known characters, and has appeared in a wide variety of
-    media. He is also the founder of Paul Frank Industries.
+    clothing, accessories, and many other products. **Julius the Monkey** is
+    one of Sunich's best-known characters, and has appeared in a wide variety
+    of media. He is also the founder of Paul Frank Industries.
 
     Paul Frank（大嘴猴）是和Calvin Klein齐名的国际知名品牌。它以色彩缤纷、年轻
     、可爱、时尚感吸引无数狂热粉丝，成为一个全球化的流行潮牌，大嘴猴“Julius”的
@@ -452,12 +643,6 @@ A girl likes to be crossed in love now and then.
 
       - [再谈抄袭与创新 - 纯银的日志 - 网易博客](http://firecacada.blog.163.com/blog/static/70743762012112935142750/)
 
----
-
-花开有声音吗？谁听得到呢？花开后的清香和喜悦却是绵长，幽谧，无处不在。
-
----
-
 [日本史上销量最高的100张专辑](https://music.douban.com/subject/1397751/discussion/43585065/)
 
 [哥们儿就喜欢俗的！【精彩台词整理】 (顽主 影评)](https://movie.douban.com/review/2212577/)
@@ -465,8 +650,6 @@ A girl likes to be crossed in love now and then.
 [New to Web Design? Start Here. - Envato Tuts+ Web Design Article](http://webdesign.tutsplus.com/articles/new-to-webdesigntuts-start-here--webdesign-15406)
 
 [Introduction](http://singlepageappbook.com/)
-
-[Site General Settings - Disqus Admin](https://dvorak4tzx.disqus.com/admin/settings/general/)
 
 <div class="tzx-drawer" shy>
 [寻找光影流年 – ButMan World](http://butman.club/category/notes/movie/movingpicture/)
@@ -586,25 +769,23 @@ A girl likes to be crossed in love now and then.
 :   买人的不大关心这个女孩子是从什么地方来的，他们认为娘家离得越远越好。我们当
     地有一句顺口溜叫：“买不到凤凰买飞马，娶不到媳妇娶老侉”。我们老家那个地方水
     利条件比较好，山地水田都有。两个人只要不懒，温饱是没有问题的。起初人贩子大
-    部分从北方带女孩子过来，就是拿这个基本温饱当诱饵。
+    部分从北方带女孩子过来，就是**拿这个基本温饱当诱饵**。
 
     一个媳妇娶回来，先不能让她做地里活。等于买回一个母本。如果母本跑了，一切努
     力都打水漂了。这个事情不是他一家一户的事情，是全村人的事情。这个女的等于掉
     到人民群众的“汪洋大海”中去了。而且是这样一伙又穷、又生殖崇拜“人民群众”。只
-    有等到这个女的生了孩子之后，才会放松警惕性。他们会利用“母爱”这个弱点留住这
-    个女人。
+    有等到这个女的生了孩子之后，才会放松警惕性。他们会**利用“母爱”这个弱点留住这
+    个女人**。
 
     春节前是乡里民政干事最忙的那几天，来离婚的人不绝于途。村里经常说某某媳妇在
     外面打工，心打野掉了。现在在外面有了相好的，不要脸。这个被骂作不要脸的女人
     ，照样意气昂昂的去打离婚。谁也不能拿她怎么样，老辈子都摇头：世道不一样了！
     这就在过去日你妈，开祠堂不把你沉塘算你厉害。
 
-    所以说解决农村拐卖妇女这个事情，最终要靠农业社会的瓦解，消灭掉农民这个阶层
-    才能最终解决掉。现在城里也有许多光棍，包括我的身边还有这样积年的寡佬。他们
-    也常常在一起畅想什么时候到北朝鲜、越南买个老婆。但没有一个人付诸于行动，可
-    能他们想在城市要在家里藏一个大活人这个难度太大了吧！
-
-颓的不行的时候被老板召唤，然而并不是 check 我的进度，只是要我去帮同学改代码。让我想起《元气团仔》最后一集，被人需要这种事，真是，又麻烦又可爱吧。
+    所以说解决农村拐卖妇女这个事情，最终要靠**农业社会的瓦解**，消灭掉农民这个
+    阶层才能最终解决掉。现在城里也有许多光棍，包括我的身边还有这样积年的寡佬。
+    他们也常常在一起畅想什么时候到北朝鲜、越南买个老婆。但没有一个人付诸于行动
+    ，可能他们想在城市要在家里藏一个大活人这个难度太大了吧！
 
 <div class="tzx-hide">
 <hr/>
@@ -634,7 +815,9 @@ A girl likes to be crossed in love now and then.
 
 [你离让007合不拢腿的邦女郎，也许就差这几件单品 - 识装 - 知乎专栏](http://zhuanlan.zhihu.com/p/20365840)
 
-Léa Seydoux
+:   说的都是一些包。
+
+    以及 Léa Seydoux。
 
 [腾讯、百度等大公司的程序员一天是生活都是怎样的？ - 知乎](https://www.zhihu.com/question/19914614#answer-32772557)
 
@@ -676,7 +859,7 @@ Léa Seydoux
 
 [最让你震惊的一个杀人案件是什么？ - 知乎](https://www.zhihu.com/question/40646841#answer-32684681)
 
-:   事实上，每一起命案都是令人震惊的。不装逼，不斗狠，远离垃圾，好好活着，比啥都好。
+:   事实上，每一起命案都是令人震惊的。**不装逼，不斗狠，远离垃圾，好好活着，比啥都好。**
 
     后来继续审，在杀彩票站老板娘之前，他已经杀了好几个大街上的拾荒者。案件发生
     后，我们镇上的烧烤店生意一落千丈，大街上再也没有拾荒者的身影了。。。。
@@ -691,21 +874,22 @@ Léa Seydoux
 [差点被伴郎团扔下水的柳岩，不过是“荡妇羞辱”的又一个牺牲品 - 识装 - 知乎专栏](http://zhuanlan.zhihu.com/p/20694786)
 
 :   李安在《喜宴》里说：“中国人婚礼中的种种表现，都是五千年性压抑的结果。”所以
-    就算是处于社会阶层中较高地位的明星们，也在这一出闹剧里暴露了自己本质上还是
-    不尊重女性的猥琐男。所有不舒服的玩笑背后都深藏恶意，所谓男偶像，不过是副皮
-    囊，人前装完美先生，人后行为下作恶心臭流氓。
+    就算是处于社会阶层中较高地位的明星们，也在这一出闹剧里暴露了自己**本质上还
+    是不尊重女性的猥琐男**。**所有不舒服的玩笑背后都深藏恶意**，所谓男偶像，不
+    过是副皮囊，人前装完美先生，人后行为下作恶心臭流氓。
 
     因为柳岩的形象比较性感，猥琐男们就认为可以对她毫无顾忌地开低俗的玩笑，甚至
     认为她享受这种言语和行动上的骚扰。WTF？这种逻辑不就是不折不扣的荡妇羞辱（
-    slut shaming）么？如果你不知道什么是荡妇羞辱，我们来看看美国一个13岁女孩告
-    诉你什么叫荡妇羞辱的视频截图：
+    **slut shaming**）么？
 
     李天一轮奸案中，人们用尽各种方式去证明受害者是“出来卖的”，因为他们认为只有
     处女才有控诉被强奸的权利，如果你是妓女的话，你怎么会不愿意呢？你肯定会非常
     享受性爱的啊！这就是性侵案的受害者们面对的困境，她们被侮辱了，但是她们还需
     要自证清白，一旦她们有过性经验，或者仅仅是穿着性感，就会被围观群众认为她们
-    的一切遭遇都是咎由自取。所以无论是东方还是西方，为强奸案辩护的律师永远都采
-    用对受害者人格泼脏水的这一招数，可悲的是，百试百灵。
+    的**一切遭遇都是咎由自取**。
+
+    **所以无论是东方还是西方，为强奸案辩护的律师永远都采用对受害者人格泼脏水的
+    这一招数，可悲的是，百试百灵。**
 
     荡妇羞辱的逻辑甚至发展到“你是个荡妇，所以你做什么都是错的，被人怎么伤害都是
     活该”的地步。
@@ -717,13 +901,58 @@ Léa Seydoux
     不偷不抢的，凭自己本事赚钱，也不违法犯罪，更没有什么不道德的，当内衣模特怎
     么就不是好事了？人类的脑回路已经发展到拍内衣广告的女生就是荡妇的地步了吗？
 
-    妈的智障！
+    **妈的智障！**
 
 [deerchao的个人网站](http://deerchao.net/)
 
+:   ```tzx-bigquote
+    `^\w+` 匹配一行的第一个单词(或整个字符串的第一个单词，具体匹配哪个意思得看选项设置)
+
+    `<a[^>]+>` 匹配用尖括号括起来的以a开头的字符串。
+
+    `(?=exp)` 也叫**零宽度正预测先行断言**，它断言自身出现的位置的后面能匹配表达式
+    exp。比如 `\b\w+(?=ing\b)`，匹配以 ing 结尾的单词的前面部分(除了ing以外的部分)
+    ，如查找 `I'm singing while you're dancing.` 时，它会匹配sing和danc。
+
+    (?<=exp)也叫零宽度正回顾后发断言，它断言自身出现的位置的前面能匹配表达式exp。比
+    如(?<=\bre)\w+\b会匹配以re开头的单词的后半部分(除了re以外的部分)，例如在查找
+    reading a book时，它匹配ading。
+
+    地球人，是不是觉得这些术语名称太复杂，太难记了？我也有同感。知道有这么一种东西
+    就行了，它叫什么，随它去吧！人若无名，便可专心练剑；物若无名，便可随意取舍……
+
+    断言用来声明一个应该为真的事实。正则表达式中只有当断言为真时才会继续进行匹配。
+
+    负向零宽断言
+
+    例如：\d{3}(?!\d)匹配三位数字，而且这三位数字的后面不能是数字；\b((?!abc)\w)+\b
+    匹配不包含连续字符串abc的单词。
+
+    为什么第一个匹配是aab（第一到第三个字符）而不是ab（第二到第三个字符）？简单地说
+    ，因为正则表达式有另一条规则，比懒惰／贪婪规则的优先级更高：最先开始的匹配拥有
+    最高的优先权——The match that begins earliest wins。
+    ```
+
+    平衡组/递归匹配
+
+    - url: `[a-zA-z]+://[^\s]*`
+    - qq: `[1-9]\d{4,}`
+    - htlm tag: `<(.*)(.*)>.*<\/\1>|<(.*) \/>`
+    - chinese: `[\u4e00-\u9fa5]`
+    - chinese chars and puncs: `[\u3000-\u301e\ufe10-\ufe19\ufe30-\ufe44\ufe50-\ufe6b\uff01-\uffee]`
+    - chinese id card: `\d{15}(\d\d[0-9xX])?`
+
+    refs and see also
+
+      - [正则表达式语言 - 快速参考](https://msdn.microsoft.com/zh-cn/library/az24scfc.aspx)
+      - [常用正则表达式](http://deerchao.net/tutorials/regex/common.htm)
+      - [2011年中国（大陆）行政区划表](http://deerchao.net/info/region/index.htm)
+
 [恶膜的奶爸的广播](https://www.douban.com/people/Q598176297/status/1821563751/)
 
-:   在 <http://dict.eudic.net/studylist/import> 导入，然后到客户端上「在线同步」。
+:   我生成了一分 txt 格式的（xml 导入失败了……）：<http://whudoc.qiniudn.com/2016/1star.txt> 已经导入可以背了。
+
+    在 <http://dict.eudic.net/studylist/import> 导入，然后到客户端上「在线同步」。
 
 [菠菜（草本植物）_百度百科](http://baike.baidu.com/link?url=EJA_2j_jjAmFYt-ke56yO1MNlIRZwSs9NmQEeSCOihNVHT9WmfGzlH1hRVggcvMZDj4HXFVcaSkXk5mRYnY5X123_94L81IzN1OZAHG4toa)
 
@@ -743,12 +972,31 @@ Léa Seydoux
 
     菠菜有很多别名，其中有一个别名就是红根菜，就取其根的颜色命名；还有别名叫鹦鹉菜。
 
+    <div class="tzx-fright">
+    ![Bud Sagendorf's cover of Popeye #50 (Oct.-Dec. 1959) shows Popeye with
+        his corncob pipe, single good eye and girlfriend Olive
+        Oyl.](https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Popeye-comic-book-cover.jpg/270px-Popeye-comic-book-cover.jpg)
+    </div>
+
+    Popeye the Sailor Man is a cartoon fictional character created by Elzie
+    Crisler Segar who has appeared in comic strips and theatrical and
+    television animated cartoons. He first appeared in the daily King Features
+    comic strip Thimble Theatre on January 17, 1929; Popeye became the strip's
+    title in later years.
+
+    ![The spines of the six hardcover reprint volumes published by
+        Fantagraphics Books, collecting all of Segar's Popeye, spelling the
+        character's name, when completed on the
+        shelf](https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Popeye_reprints.jpg/525px-Popeye_reprints.jpg)
+
     在中国，任何一件事情都有南北差异，比如说，南方人喜欢天天洗澡，北方人不喜欢
-    天天洗澡！[^我终于找到不洗澡的理由了！！！……BTW，这篇文章真是装 B 不倦。]
+    天天洗澡！^[我终于找到不洗澡的理由了！！！……BTW，这篇文章真是装 B 不倦。]
 
     refs and see also
 
       - [从家居生活细节看南北方土豪差异_网易家居](http://home.163.com/15/0202/06/AHE7U12C00104J5U.html)
+      - [Popeye - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Popeye)
+      - [大力水手（1980年美国播出动画）_百度百科](http://baike.baidu.com/link?url=uyWof0S7a9QjkopNzmJ390UZ_WdTjmEYeachJpsqH1ceaUR7jWG5lCcKqrGdkDhS4k5hoQqQLDns7eiogCHKaFHuilRtUDuJnadotc73Txu)
 
 [marijnh/heckle: JavaScript-based Jekyll clone](https://github.com/marijnh/heckle)
 
@@ -765,7 +1013,14 @@ Léa Seydoux
     Don't use Heckle at this point if you want something stable and finished.
     **It's a work in progress, and may be radically changed or pitilessly abandoned at any time.**
 
+    refs and see also
+
+      - [A Gentle Introduction to Machine Fundamentals](http://marijnhaverbeke.nl/turtle/)
+      - [My JavaScript Build Setup](http://marijnhaverbeke.nl/blog/my-babel-setup.html)
+
 ---
+
+`wp-content` 原来是 wordpress 内容……的意思……我一直以为是 windows phone 来着……
 
 moderator, `['mɑdəretɚ]` n. [核] 慢化剂；仲裁人；调解人；缓和剂
 
@@ -774,28 +1029,21 @@ moderator, `['mɑdəretɚ]` n. [核] 慢化剂；仲裁人；调解人；缓和�
 将数字信号转换为模拟信号，而在接收端通过解调再将模拟信号转换为数字信号的一种装
 置。
 
-[Marijn's Web Home](http://marijnhaverbeke.nl/)
-
-refs and see also
-
-  - [A Gentle Introduction to Machine Fundamentals](http://marijnhaverbeke.nl/turtle/)
-  - [My JavaScript Build Setup](http://marijnhaverbeke.nl/blog/my-babel-setup.html)
-
 [yahoo/pure: A set of small, responsive CSS modules that you can use in every web project.](https://github.com/yahoo/pure)
 
 [DARPA Grand Challenge - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/DARPA_Grand_Challenge)
 
-:   The DARPA Grand Challenge is a prize competition for American autonomous
-    vehicles, funded by the Defense Advanced Research Projects Agency, the most
-    prominent research organization of the United States Department of Defense.
+:   The DARPA Grand Challenge is a prize competition for American **autonomous
+    vehicles**, funded by **the Defense Advanced Research Projects Agency**, the most
+    prominent research organization of **the United States Department of Defense**.
     Congress has authorized DARPA to award cash prizes to further DARPA's
     mission to sponsor revolutionary, high-payoff research that bridges the gap
     between fundamental discoveries and military use. The initial DARPA Grand
     Challenge was created to spur the development of technologies needed to
-    create the first fully autonomous ground vehicles capable of completing a
-    substantial off-road course within a limited time. The third event, the
+    **create the first fully autonomous ground vehicles capable of completing a
+    substantial (实质的) off-road course within a limited time**. The third event, the
     DARPA Urban Challenge extended the initial Challenge to autonomous
-    operation in a mock urban environment. The most recent Challenge, the 2012
+    operation **in a mock urban environment**. The most recent Challenge, the 2012
     DARPA Robotics Challenge, focused on autonomous emergency-maintenance
     robots.
 
@@ -805,9 +1053,40 @@ refs and see also
 
 [谷歌的绩效管理 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2016/03/performance-management.html)
 
+:   说实话，我觉得，这本书不是很好看。你可以想象一下，人事经理写一本书会是什么
+    样？就像人力资源部的报告一样！完全是MBA毕业生的那种文体，it is not fun.
+
+    另外，根据自序，拉斯洛·博克在干人力资源之前，还干过熟食店店员、餐馆服务员、
+    图书馆馆员、英语老师、海滩救生员、群众演员等等，后来去读了MBA，转行当上了人
+    力资源经理。所以，我觉得如果你不想当工程师了，改行当HR也是一条路啊。
+
+    每个季度，所有团队主管要用数千小时投入绩效考评，考评过程的精确程度近乎滑稽
+    ，但是却不能作为确定薪酬的可靠依据。
+
+    现在，我们采用5级考评量表：需要改进、持续达到期望值、超过期望值、大幅超过期
+    望值和表现杰出。与以前的标签类似，但是实质的评分级别变少了。
+
+    目标必须具体、可度量、可检验；如果你达成所有结果，就算完成目标。比如，如果
+    目标是将搜索质量提升x%，你要达成的结果，就是更好的搜索相关性（搜索结果对用
+    户而言的有用程度）和等待时间（用户多快找到搜索结果）。
+
+    一旦你看到公司的目标，很容易就可以将其与自己的目标做对比。**如果你偏离得太
+    多，要么给出一个合理的解释，要么重新设定。**
+
+    此外，每个人的目标在内网都是对所有人公开的，就放在电话号码和办公室位置的旁
+    边。能够看到其他人和其他团队在做些什么工作是一件非常重要的事情，而看到自己
+    的目标与公司的目标相契合也能起到激励作用。
+
+    内在动机是成长的关键，几乎所有人都渴望进步。但是，传统的绩效管理体系毁掉了
+    这种动机。它们往往通过一个简单的评级，替代了切实管理员工的关键行动。
+
+    正确地设定目标。要让目标众所周知。目标要有野心。
+
+    把奖励分配谈话与员工发展谈话分开。两项谈话混为一谈会扼杀学习的动力。
+
 [《最好的告别》读后感 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2016/03/death.html)
 
-:   可见一个理智的人在死亡降临的时候，还是无法舍弃求生的欲望。
+:   **可见一个理智的人在死亡降临的时候，还是无法舍弃求生的欲望。**
 
     1790年的美国，65岁以上的人不到2%，今天已经上升到14%。在德国、意大利和日本，
     这个数字已经超过了20%。现在，中国是地球上第一个老年人超过1亿的国家。
@@ -824,9 +1103,9 @@ refs and see also
     作为医生，要忍住干预、修复、控制的冲动，因为死亡已经超越了医学问题。面对衰
     老和死亡，医学技术只是一方面，心灵的滋养、理解和安慰是急需补上的另一方面。
 
-    半个多世纪以来，我们把生病、衰老和希望的考验作为医学问题对待，而不是作为一
+    **半个多世纪以来，我们把生病、衰老和希望的考验作为医学问题对待，而不是作为一
     个社会问题对待。不应该把病人的命运只交给技术，更应该交给重视和理解人类需求
-    的人。
+    的人。**
 
 [你的B计划在哪里？ - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2016/03/plan-b.html)
 
@@ -839,7 +1118,7 @@ refs and see also
 
     千万不要把B计划想得很浪漫，现实往往不是如此，B计划其实非常艰苦。
 
-    就是因为B计划实施起来非常艰苦，所以你最好去做那些你喜欢的事。
+    就是因为B计划实施起来非常艰苦，**所以你最好去做那些你喜欢的事**。
 
     最后，如果真的到了下决心的那一天，你可能还需要一点勇气。B计划并不容易，但是
     提心吊胆地维持一份毫无乐趣、前景灰暗的工作，也是不容易的。这就是为什么，B计
@@ -851,6 +1130,7 @@ refs and see also
     现了自己真正想要的生活。美国的"家政女王"玛莎·斯图尔特，正是因为在食品店当经
     理被解雇了，才不得不自己开店的。
 
+<div class="tzx-drawer" shy>
 [Systemd 入门教程：命令篇 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
 
 :   ```bash
@@ -926,34 +1206,31 @@ refs and see also
     refs and see also
 
       - [Systemd 入门教程：实战篇 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html)
+</div>
 
 [Autonomous underwater vehicle - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Autonomous_underwater_vehicle)
 
-:   <div class="tzx-fright">
-    ![The Blackghost AUV is designed to undertake an underwater assault course autonomously with no outside control.](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Blackghost.jpg/330px-Blackghost.jpg)
-    </div>
+:   ![The Blackghost AUV is designed to undertake an underwater assault course autonomously with no outside control.](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Blackghost.jpg/330px-Blackghost.jpg)
 
-    An autonomous underwater vehicle (AUV) is a robot which travels underwater
+    An **autonomous underwater vehicle (AUV)** is a robot which travels underwater
     without requiring input from an operator. AUVs constitute part of a larger
-    group of undersea systems known as unmanned underwater vehicles, a
-    classification that includes non-autonomous remotely operated underwater
-    vehicles (ROVs) – controlled and powered from the surface by an
+    group of undersea systems known as **unmanned underwater vehicles**, a
+    classification that includes non-autonomous **remotely operated underwater
+    vehicles (ROVs)** – controlled and powered from the surface by an
     operator/pilot via an umbilical or using remote control. In military
     applications AUVs are more often referred to simply as unmanned undersea
     vehicles (UUVs).
 
-    <div class="tzx-fright">
     ![A science ROV being retrieved by an oceanographic research vessel.](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/ROV_Hercules_2005.JPG/330px-ROV_Hercules_2005.JPG)
-    </div>
 
-    A remotely operated underwater vehicle (ROV) is a tethered underwater
+    A **remotely operated underwater vehicle (ROV)** is a tethered underwater
     mobile device. This meaning is different from remote control vehicles
-    operating on land or in the air. ROVs are unoccupied, highly maneuverable,
-    and operated by a crew aboard a vessel. They are common in deep water
+    operating on land or in the air. ROVs are unoccupied, **highly maneuverable**,
+    and operated by a crew aboard a vessel (船，舰). They are common in deep water
     industries such as offshore hydrocarbon extraction. They are linked to a
     host ship by a neutrally buoyant tether or, often when working in rough
     conditions or in deeper water, a load-carrying umbilical cable is used
-    along with a tether management system (TMS). The TMS is either a
+    along with a **tether (`[ˈteðər]`, 系链) management system (TMS)**. The TMS is either a
     garage-like device which contains the ROV during lowering through the
     splash zone or, on larger work-class ROVs, a separate assembly which sits
     on top of the ROV. The purpose of the TMS is to lengthen and shorten the
@@ -980,7 +1257,7 @@ refs and see also
 
 [openrov-image-customization/.travis.yml at master · OpenROV/openrov-image-customization](https://github.com/OpenROV/openrov-image-customization/blob/master/.travis.yml)
 
-:   ```yml
+:   ```yaml
     notifications:
       webhooks:
         urls:
@@ -989,6 +1266,8 @@ refs and see also
         on_failure: always
         on_start: false
     ```
+
+    webhooks?
 
     OpenROV is a DIY telerobotics community centered around underwater exploration & adventure.
 
@@ -1030,7 +1309,7 @@ refs and see also
 
     靠玩游戏来逃避现实一点都不好。
 
-    “试验” 似乎是我的月度单词。
+    “**试验**” 似乎是我的月度单词。
 
     我看到的每一个地方似乎都在提醒我它的重要性。
 
@@ -1042,9 +1321,9 @@ refs and see also
 
     如果讲某个笑话有人笑了，他就会知道这个故事有得搞。如果没人笑，他就把那个笑话扔掉。
 
-    他总共试了 1000 多个笑话才凑够了 1年 后用于一档 HBO 特别节目的 1 小时素材。
+    **他总共试了 1000 多个笑话才凑够了 1年 后用于一档 HBO 特别节目的 1 小时素材。**
 
-    重要的是要记住一点：焦虑永远也解决不了明天的问题，只会偷走今天的精力。
+    重要的是要记住一点：**焦虑永远也解决不了明天的问题，只会偷走今天的精力。**
 
     不是每一个项目都要完成的。
     拖延的原因也许是你的身体和思想都知道那个项目本来就不好，只是还没有告诉你而已。
@@ -1055,13 +1334,13 @@ refs and see also
 
     但我死的时候我的孩子和爱人会因为其他原因为我哭泣的。
 
-    也许不会。
+    也许不会。^[这冷幽默……]
 
     所以 Airware 现在采用了主动出击的方式，通过与特定无人机及传感器的绑定，搭配
     上自己的 OS+ 特定应用，组装成全套解决方案后出售给不同的客户，用 CEO
     Jonathan Downey 的话来说，就是要做无人机的 Windows+Office。
 
-    CDN 的本质就是缓存，而客户的需求就是快速、稳定。
+    **CDN 的本质就是缓存**，而客户的需求就是快速、稳定。
     目前，市场上的厂商分两种思路，一种是自己部署节点，另一种相对比较新的思路就是利用 P2P 的方式。
 
     我们家在北京的小区总共有 3000 人，如果 3000 人同时看 4K 视频，没有 P2P，是
@@ -1079,19 +1358,21 @@ refs and see also
     > 从。如果5 个员工里面只有 1 个全身心投入工作的话，工作有激情、有创意或者创
     > 业精神的可能就更低了。
 
-    并不是所有的大公司都这样，但大部分都是如此。有趣的是，现在的许多全球最大型公司都避开了股东价值理论并把创业精神作为核心—像苹果、Amazon、Google 和 Facebook 就是很好的例子。
+    并不是所有的大公司都这样，但大部分都是如此。有趣的是，现在的许多全球最大型
+    公司都**避开了股东价值理论并把创业精神作为核心** -- 像苹果、Amazon、Google 和
+    Facebook 就是很好的例子。
 
     在评估某个行业是否可以去颠覆时，构思颠覆性想法之前应该先看看市场领导者的
     DNA，这里面可以透露大量的信息。那些只盯着股东价值的公司，并且更明显地，那些
     组织架构是等级制的、充满官僚主义习气的那些公司就是很好的目标。而把创业精神
     作为核心的那些就没那么容易攻击。
 
-    When assessing whether industries are ripe for disruption looking at the
+    When **assessing whether industries are ripe for disruption** looking at the
     DNA of leading players is informative even before the disruptive idea is
-    formed. Companies focused on shareholder value (including many PE backed
+    formed. Companies focused on **shareholder value** (including many PE backed
     businesses) and, more obviously, those which are hierarchical and
-    bureaucratic, make good targets. Those that are entrepreneurial to the
-    core, not so much. Returning to Thread, the large entrepreneurial companies
+    bureaucratic, make good targets. **Those that are entrepreneurial to the
+    core, not so much.** Returning to Thread, the large entrepreneurial companies
     in fashion are mono-brand plays innovating through supply chain management,
     and the multi-brand retail focused companies that might be competitors are
     more stuck in the bind that Denning describes.
@@ -1100,15 +1381,20 @@ refs and see also
     S6，我试图在锁屏状态下双击 Home 键开启相机，但是我等了一会后没有开启，我只
     能使用指纹解锁手机，于是我错过了那个瞬间。
 
-    这件事刺激了我，作为一个 30 岁的成熟男性，我确实怀念之前设备上的按钮只有一
-    种功能的时候。我的很多读者曾告诉我，他们在使用设备或者使用最基础的软件时，
+    这件事刺激了我，作为一个 30 岁的成熟男性，我确实**怀念之前设备上的按钮只有一
+    种功能的时候**。我的很多读者曾告诉我，他们在使用设备或者使用最基础的软件时，
     也觉得越来越复杂。
 
-    软件并不是越来越易用，事实却恰恰相反。
+    **软件并不是越来越易用，事实却恰恰相反。**
+
+    But software isn't getting easier to use. In fact, it's quite the opposite.
 
     然而，公司为用户提供了更多的功能，但是很多功能用户都不会使用。即使产品的设
-    计很简洁了，但是还不是足够简洁。去掉多余的文本是让设计更简洁的一种方法。但
+    计很简洁了，但是还不是足够简洁。**去掉多余的文本是让设计更简洁的一种方法。**但
     是常常有读者发邮件问我一些他们不能理解的符号。
+
+    Removing unnecessary text, for example, is one way to easily clean up a
+    design.
 
     换句话说，简洁本身并不应该是一切事物的目标。
 
@@ -1142,9 +1428,9 @@ refs and see also
     的文章。（被你说中了……）
 
     在国内开源的项目和社区很多，但品质高的项目却比较少，这也是国内开源项目一直
-    被诟病的原因之一。但在国外许多职业经理人在运营开源社区，而国内却很少。开源
-    在某种程度上说已经不再是一种技术，而是一种文化。国内也需要成立类似的开源基
-    金会，让 BAT 等大公司参与进来，推动开源在国内的发展。
+    被诟病的原因之一。但在国外许多**职业经理人在运营开源社区**，而国内却很少。
+    开源在某种程度上说已经不再是一种技术，而是**一种文化**。国内也需要成立类似
+    的开源基金会，让 BAT 等大公司参与进来，推动开源在国内的发展。
 
     过去做的是产品都是理工男的思维，所以需要大而全的软件，从计划到实施需要大半
     年的时间，现在互联网时代所需要的速度是周一提诉求、周二开始做开发、周五上线
@@ -1283,7 +1569,7 @@ refs and see also
 ---
 
 因为梅姐的形象和声音都不是当时流行的甜美型，造型师干脆把她打扮成一个假小子。从
-另一个层面讲，也算是一种性别觉醒吧。看看梅艳芳，再看看20年后的李宇春，香港确实
+另一个层面讲，也算是一种**性别觉醒**吧。看看梅艳芳，再看看20年后的李宇春，香港确实
 走快了一步。后来随着梅姐年龄的增长没有再走中性路线，但梅艳芳依然香港人心中是“有
 型”的代表。
 
@@ -1305,9 +1591,9 @@ refs and see also
       for you, I will not pursue you. But if you don't, I will look for you, I
       will find you, and I will kill you.
     - I drink your milkshake!
-    - Chewie, we're home.
+    - **Chewie, we're home.**
     - I don't want to survive. I want to live.
-    - 这是常识，我亲爱的华生。Elementary, my dear Watson.
+    - 这是常识，我亲爱的华生。**Elementary, my dear Watson.**
     - After all, tomorrow is another day!
     - I'm also just a girl, standing in front of a boy, asking him to love her.
     - 我是世界之王！I'm the king of the world!
@@ -1319,10 +1605,10 @@ refs and see also
     - Carpe diem. Seize the day, boys.
     - Mrs. Robinson, you're trying to seduce me.
     - 从相遇的那一刻起你就已经征服了我。You had me at hello.
-    - Houston, we have a problem.
+    - **Houston, we have a problem.**
     - Why so serious?
     - The first rule of Fight Club is: You do not talk about Fight Club.
-    - You talkin' to me?
+    - **You talkin' to me?**
     - I'm going to make him an offer he can't refuse.
     - Frankly, my dear, I don't give a damn.
 
@@ -1358,14 +1644,6 @@ refs and see also
 
 [我怕甩出这份追剧表后，没人再看国产的 - 简书](http://www.jianshu.com/p/d9c87039cb1c)
 
----
-
-`wp-content` 原来是 wordpress 内容……的意思……我一直以为是 windows phone 来着……
-
----
-
-[Create your Google Sitemap Online - XML Sitemaps Generator](https://www.xml-sitemaps.com/)
-
 [链接提交_站长工具_优化PC和移动搜索收录_百度站长平台](http://zhanzhang.baidu.com/linksubmit/index?site=http://tangzx.qiniudn.com/)
 
 :   - <http://tangzx.qiniudn.com/sitemap.xml>
@@ -1383,6 +1661,29 @@ refs and see also
 
 [Tutorial - Use cursors to customize Web sites - Axialis Software](http://www.axialis.com/tutorials/use-cursors-to-customize-websites.htm)
 
+:   ```css
+    cursor: url(path-to-cursor), default
+    ```
+
+    Usability considerations
+
+      - Don't use inappropriate cursor types
+      - Keep your web design coherent
+      - Stay cool (冷静，不要一股脑全上) with animations
+
+    What type of cursors are compatible?
+
+       - static cursors (CUR) or
+       - animated cursors (ANI)
+       - 32x32 RGB/A, 32x32 256 colors and 32x32 16 colors
+
+    If you use a **unix-based** server, keep in mind that filenames are case sensitive.
+
+    Defining a custom cursor for specific elements
+
+      - 不是所有浏览器都支持
+      - 实际上，支持的浏览器很少 （`+IE, +Firefox, +Safari, -Chrome, -Opera`）
+
 ---
 
 ```javascript
@@ -1395,12 +1696,12 @@ $('div.tzx-drawer').on('click', function(){
 });
 ```
 
-It also supports, but does not require, ...
+**It also supports, but does not require, ...**
 
 Ajax
 
-:   Call a local script on the server /api/getWeather with the query parameter
-    zipcode=97201 and replace the element #weather-temp's html with the
+:   Call a local script on the server `/api/getWeather` with the query parameter
+    `zipcode=97201` and replace the element `#weather-temp`'s html with the
     returned text.
 
     ```javascript
@@ -1419,7 +1720,9 @@ Ajax
 
 [如何计算某月某日的weekday](http://butman.club/notes/cyber/%e5%a6%82%e4%bd%95%e8%ae%a1%e7%ae%97%e6%9f%90%e6%9c%88%e6%9f%90%e6%97%a5%e7%9a%84weekday/)
 
-:   ```r
+:   have no idea about the code...
+
+    ```r
     #input: weekday (n) of the first day in a month,
     #       sum of the days (d) in a month
        date <- c(1:d)
@@ -1460,20 +1763,20 @@ Ajax
     讨人喜欢人气最高。她敢爱敢恨，活的潇洒，她对保罗真可谓“钱到心更到”，但是保
     罗不喜欢她。
 
-    > 我怀疑，我们人生里面，唯一可以相遇的机会，已经错过了。
+    > **我怀疑，我们人生里面，唯一可以相遇的机会，已经错过了。**
 
     而最令人欣赏的是，就算外界都揣测她和张国荣多么投契，那么多人都渴望借着谈论
     他而令自己成为焦点……在那篇《亲爱的哥哥》中，张曼玉却这样说：“虽然我们合作无
-    间，我们却从不是很亲密的朋友，因为我们性格和世界观很不同，但这无妨我欣赏他
-    的美貌，以及他在电影中散发的敏感和作为一个歌手的才华”。
+    间，我们却从不是很亲密的朋友，因为我们性格和世界观很不同，**但这无妨我欣赏他
+    的美貌，以及他在电影中散发的敏感和作为一个歌手的才华**”。
 
     ![](https://img3.doubanio.com/view/thing_review/large/public/p118621.jpg)
 
     最后为了两人的相遇，出钱让地铁站在末班车后加开一列车的举动简直帅炸了，这一
     波炫富炫得漂亮！比起现在的不少影视作品中的“花样炫富”不知道逼格高多少啊！然
-    而最后一幕中，当保罗和莫妮卡深情拥吻的时候，一旁安妮落寞神伤的表情也同样让
-    人心碎难忘。不得不说安妮是这部作品中最让人动容的一个角色，梅姑也凭借这一角
-    色获得了第4届香港金像奖最佳女配角。
+    而最后一幕中，当保罗和莫妮卡深情拥吻的时候，一旁安妮**落寞神伤**的表情也同
+    样让人心碎难忘。不得不说安妮是这部作品中最让人动容的一个角色，梅姑也凭借这
+    一角色获得了第4届香港金像奖最佳女配角。
 
     梅艳芳一生珍惜朋友、交游广阔，她在娱乐圈里是公认的豪爽与仗义。正因为这种真
     诚、博爱、侠义的性格使她成为演艺界尊崇的“大姐大”。2002年，梅艳芳在庆祝入行
@@ -1523,11 +1826,6 @@ Ajax
       - [梅艳芳_百度百科](http://baike.baidu.com/subview/8695/8695.htm)
       - [听说，张国荣梅艳芳情起情灭皆因《缘分》【观影福利】](http://mp.weixin.qq.com/s?__biz=MzIzOTExMzcyOQ==&mid=403173009&idx=1&sn=f921f74a09775b95b44e3f267e1d1a7b#rd)
       - [梅艳芳和张国荣的关系？ - 知乎](https://www.zhihu.com/question/22151195)
-
-    todo
-
-      - [金枝玉叶 (豆瓣)](https://movie.douban.com/subject/1303376/)
-      - [金枝玉叶2 (豆瓣)](https://movie.douban.com/subject/1302054/?from=subject-page)
 </div>
 
 [Justineo/github-hovercard: Neat user/repo/issue hovercards for GitHub.](https://github.com/Justineo/github-hovercard)
@@ -1538,11 +1836,742 @@ Ajax
 
 ---
 
- GitHub Hovercard is a third party tool which is not affiliated to GitHub (github.com). This page is designed exactly the same as GitHub only to show how the extension actually works on GitHub.
+GitHub Hovercard is a third party tool which is **not affiliated to GitHub**
+(github.com). This page is designed exactly the same as GitHub only to show how
+the extension actually works on GitHub.
 
+<div class="tzx-drawer">
 [vim/vimrc at master · vingel/vim](https://github.com/vingel/vim/blob/master/vimrc)
 
+:   ```vimrc
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " Owner:	Vingel - http://www.vingel.com
+    " Modified: 2011-02-14 18:36:09
+
+    " set runtimepath=~/vim,$VIMRUNTIME
+    " source ~/vim/vimrc
+
+    " Get out of VI's compatible mode..
+    set nocompatible
+
+    if v:version < 700
+        echoerr 'This vimrc requires Vim 7 or later.'
+        finish
+    endif
+
+    if has("win32")
+        let $VIMFILES = $VIM.'/vimfiles'
+    else
+        let $VIMFILES = $HOME.'/.vim'
+    endif
+    let $VIMRC = $VIMFILES.'/vimrc'
+
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " => VIM UserInterface Settings
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " Enable filetype plugin
+    filetype plugin indent on
+    set autoindent
+    set copyindent
+    " Set mapleader
+    let mapleader = ","
+    let g:mapleader = ","
+    " Set 7 lines to the curors - when moving vertical..
+    set so=7
+    " Turn on WiLd menu
+    set wildmenu
+    set wildmode=longest,full
+    set wildignore=*.bak,*.o,*.obj,*.e,*~,*.pyc,*.svn
+    " Always show current position
+    set ruler
+    " Show matching bracets
+    set showmatch
+    set showfulltag
+    " Match Pair
+    set matchpairs=(:),{:},[:],<:>
+    " Show matchtime in 0.5s
+    set matchtime=5
+    " The commandbar is 2 high
+    set cmdheight=2
+    " Show line number
+    set number
+    " Line space between
+    set linespace=4
+    " Do not redraw, when running macros.. lazyredraw
+    "set lazyredraw
+    " Change buffer - without saving
+    set hidden
+    " Set backspace
+    set backspace=start,indent,eol
+    " Bbackspace and cursor keys wrap to next line
+    set whichwrap+=<,>,h,l,b,s,[,]
+
+    "Ignore case when searching
+    set ignorecase smartcase
+    set incsearch
+    " Set magic on
+    set magic
+    " No sound on errors.
+    set noerrorbells
+    set novisualbell
+    set t_vb=
+    " Make GUI File Open use current directory
+    set browsedir=buffer
+    " How many tenths of a second to blink
+    set mat=2
+    " Highlight search things
+    set hlsearch
+    " Have the mouse enabled all the time:
+    set mouse=a
+    " show incomplete commands
+    set showcmd
+    " Sets how many lines of history VIM har to remember
+    set history=800
+    " Always switch to the current file directory
+    set autochdir
+    "Set the terminal title
+    set title
+    let &titleold=getcwd()
+    " Don't break the words with following character
+    set iskeyword+=_,$,@,%,#,-
+    set viminfo+=! " make sure it can save viminfo
+
+    set autowrite  " auto writefile when sth happened such as :make or :last or others.See the help
+    set makeef=error.log " When using make, where should it dump the file
+
+    " Set to auto read when a file is changed from the outside
+    set autoread
+
+    " Folding settings
+    set nofoldenable        "dont fold by default
+    set foldmarker={,}
+    set foldopen=block,hor,mark,percent,quickfix,tag
+    set foldmethod=indent   "fold based on indent
+    set foldnestmax=10      "deepest fold is 10 levels
+    set foldlevel=1         "this is just what i use
+    map <leader>f1 :set fdm=manual<cr>
+    map <leader>f2 :set fdm=indent<cr>
+    map <leader>f3 :set fdm=marker<cr>
+
+    " Text options
+    set expandtab
+    set shiftwidth=4
+    set softtabstop=4
+    set tabstop=4
+    set smarttab
+    set lbr
+    set tw=500
+    set isfname-=\= " fix filename completion in VAR=/path
+
+    " Don't display start text :help iccf
+    set shortmess=atI
+
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " => Shortcuts Mapping
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " Select All
+    map <leader>a ggVG
+    " Switch to current dir, see also :set autochdir
+    map <leader>cd :cd %:p:h<cr> :set tags=./tags <cr>
+    " Temp text buffer
+    map <leader>e :e ~/.buffer<cr>
+    " Remove the Windows ^M
+    map <leader>M :%s/\r//g<cr>
+    " Fast Quit
+    map <leader>q :q<cr>
+    " Fast reloading of the .vimrc
+    map <leader>es :e $VIMRC<cr>
+    " 自动载入VIM配置文件
+    "autocmd! bufwritepost vimrc source $MYVIMRC
+    "
+    " Turn backup off
+    set nobackup
+    set nowb
+    set noswapfile
+
+    " Undolist
+    map <leader>u :undolist<cr>
+    " Undo in insert mode
+    inoremap <C-z> <C-O>u
+    if version >= 703
+        " Turn undofile on
+        set undofile
+        " Set undofile path
+        set undodir=~/tmp/vim/
+    endif
+
+    " 关闭VIM的时候保存会话，按F6读取会话
+    set sessionoptions=buffers,sesdir,help,tabpages,winsize
+    let $VIMSESSION = '~/.session.vim'
+    au VimLeave * mks! $VIMSESSION
+    nmap <F6> :so $VIMSESSION<CR>
+
+    " Fast saving
+    map <leader>w :w!<cr>
+    map <c-s> <Esc>:w !sudo tee %
+    " Copypath
+    map <leader>file :echo expand("%:p")<cr>
+
+    " Mapping Q to exit instead of Ex mode
+    map Q :x<cr>
+    nmap :Q :q
+    nmap :W :w
+    nmap :X :x
+
+    " Bash like
+    imap <C-A> <Home>
+    imap <C-B> <Left>
+    imap <C-E> <End>
+    imap <C-F> <Right>
+    imap <C-K> <Esc>d$i
+
+    " Command-line
+    cnoremap <C-A> <Home>
+    cnoremap <C-B> <Left>
+    cnoremap <C-E> <End>
+    cnoremap <C-F> <Right>
+
+    " Key mappings to ease browsing long lines
+    "noremap <C-J> gj
+    "noremap <C-K> gk
+
+    " Usefull when insert a new indent line
+    "imap fj <cr><C-O>O
+    " Remove tag content see :help object-select
+    "imap jf <C-O>cit
+
+    " Switch windows
+    nmap <Tab> <C-w>w
+
+    " Cursor moving in long line
+    nmap j gj
+    nmap k gk
+
+    " Move lines (Eclipse like)
+    nmap <C-Down> :<C-u>move .+1<cr>
+    nmap <C-Up> :<C-u>move .-2<cr>
+    imap <C-Down> <C-o>:<C-u>move .+1<cr>
+    imap <C-Up> <C-o>:<C-u>move .-2<cr>
+    vmap <C-Down> :move '>+1<cr>gv
+    vmap <C-Up> :move '<-2<cr>gv
+
+    " Windows issues
+    vmap <leader>c "+y
+    vmap <leader>x "+x
+    map <leader>v "+gP
+    inoremap <leader>v <C-O>"+g
+    " Super paste
+    inoremap <C-v> <esc>:set paste<cr>mui<C-R>+<esc>mv'uV'v=:set nopaste<cr>
+    " Set clipboard+=unnamed
+
+    " Easily change between backslash and forward slash with f/ or f\
+    nnoremap <silent> f/ :let tmp=@/<CR>:s:\\:/:ge<CR>:let @/=tmp<CR>
+    nnoremap <silent> f<Bslash> :let tmp=@/<CR>:s:/:\\:ge<CR>:let @/=tmp<CR>
+
+    " Use shell with ctrl-z
+    "map <C-Z> :shell<cr>
+
+    " Remove indenting on empty lines
+    map <F2> :%s/\s*$//g<cr>:noh<cr>''
+    " Paste toggle - when pasting something in, don't indent.
+    set pastetoggle=<F3>
+    " SVN Diff
+    map <F7> <leader>cd:new<cr>:read !svn diff<cr>:set syntax=diff buftype=nofile<cr>gg
+    " ROT13
+    map <F12> ggVGg?
+
+    " Quick Fix
+    map <leader>cw :cw<cr>
+    map <F3> :cp<cr>
+    map <F4> :cn<cr>
+
+    " Some nice mapping to switch syntax (useful if one mixes different languages in one file)
+    map <leader>1 :set syntax=xhtml<cr>
+    map <leader>2 :set ft=css<cr>
+    map <leader>3 :set ft=javascript<cr>
+    map <leader>4 :set syntax=python<cr>
+    map <leader>5 :set ft=php<cr>
+    map <leader>$ :syntax sync fromstart<cr>
+
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " => Moving around and tabs
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " Disable Win Alt Key
+    set winaltkeys=no
+
+    " Actually, the tab does not switch buffers, but my arrows
+    " Use the arrows to something usefull
+    nmap <C-P> :bp<cr>
+    nmap <C-N> :bn<cr>
+    map <C-E> :Bclose<cr>
+
+    " Don't close window, when deleting a buffer
+    command! Bclose call <SID>BufcloseCloseIt()
+
+    function! <SID>BufcloseCloseIt()
+        let l:currentBufNum = bufnr("%")
+        let l:alternateBufNum = bufnr("#")
+
+        if buflisted(l:alternateBufNum)
+            buffer #
+        else
+            bnext
+        endif
+
+        if bufnr("%") == l:currentBufNum
+            new
+        endif
+
+        if buflisted(l:currentBufNum)
+            execute("bdelete! ".l:currentBufNum)
+        endif
+    endfunction
+
+    " Tab configuration
+    map <leader>tn :tabnext<cr>
+    map <leader>te :tabedit
+    try
+        set switchbuf=usetab
+        set stal=2
+    catch
+    endtry
+    set guitablabel=%t
+
+    """"""""""""""""""""""""""""""
+    " => Statusline
+    """"""""""""""""""""""""""""""
+    " Always hide the statusline
+    set laststatus=2
+
+    function! CurDir()
+        let curdir = substitute(getcwd(), '/Users/Vingel/', "~/", "g")
+        return curdir
+    endfunction
+
+    "Format the statusline
+    set statusline=%F%m%r%h%w\ CW\ %r%{CurDir()}%h\ [%Y,%{&ff},%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ [POS=%l,%v,%p%%,%L]
+
+    """"""""""""""""""""""""""""""
+    " => Visual
+    """"""""""""""""""""""""""""""
+    function! VisualSearch(direction) range
+        let l:saved_reg = @"
+        execute "normal! vgvy"
+        let l:pattern = escape(@", '\\/.*$^~[]')
+        let l:pattern = substitute(l:pattern, "\n$", "", "")
+        if a:direction == 'b'
+            execute "normal ?" . l:pattern . "^M"
+        else
+            execute "normal /" . l:pattern . "^M"
+        endif
+        let @/ = l:pattern
+        let @" = l:saved_reg
+    endfunction
+
+    " Basically you press * or # to search for the current selection !! Really useful
+    vnoremap <silent> * :call VisualSearch('f')<cr>
+    vnoremap <silent> # :call VisualSearch('b')<cr>
+
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " => Parenthesis/bracket expanding
+    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+    " Map auto complete of (, ", ', [,{
+    inoremap ( ()<esc>:let leavechar=")"<cr>i
+    inoremap [ []<esc>:let leavechar="]"<cr>i
+    inoremap { {}<esc>:let leavechar="}"<cr>i
+    inoremap < <><esc>:let leavechar=">"<cr>i
+    "inoremap ' ''<esc>:let leavechar="'"<cr>i
+    inoremap " ""<esc>:let leavechar='"'<cr>i
+    inoremap )) (<esc>o)<esc>:let leavechar=")"<cr>O
+    inoremap ]] [<esc>o]<esc>:let leavechar="]"<cr>O
+    inoremap }} {<esc>o}<esc>:let leavechar="}"<cr>O
+
+    vnoremap #( <esc>`>a)<esc>`<i(<esc>
+    vnoremap #[ <esc>`>a]<esc>`<i[<esc>
+    vnoremap #{ <esc>`>a}<esc>`<i{<esc>
+    vnoremap #< <esc>`>a><esc>`<i<<esc>
+    vnoremap #' <esc>`>a'<esc>`<i'<esc>
+    vnoremap #" <esc>`>a"<esc>`<i"<esc>
+
+    map <leader>t2 :set shiftwidth=2<cr>
+    map <leader>t4 :set shiftwidth=4<cr>
+
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " => Plugin Settings
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " BufExplorer
+    let g:bufExplorerDefaultHelp=0
+    let g:bufExplorerMaxHeight=25
+    let g:bufExplorerResize=1
+    let g:bufExplorerShowRelativePath=1
+    let g:bufExplorerSortBy='mru'
+    let g:bufExplorerSplitBelow=1
+    let g:bufExplorerSplitRight=0        " 从左边出
+    let g:bufExplorerSplitVertSize = 30  " 分开高度
+    let g:bufExplorerSplitVertical=1     " 垂直分开
+    let g:bufExplorerUseCurrentWindow=1  " 在新窗口打开
+
+
+    " tagbar.vim
+    map <leader>t :TagbarToggle<cr>
+
+    " taglist.vim
+    "set tags=./tags "now using autotag.vim to set tags
+    "map <leader>t :TlistToggle<cr>
+    let Tlist_Auto_Open = 0 " let the tag list open automagically
+    let Tlist_Close_OnSelect = 1
+    let Tlist_Compact_Format = 1 " show small menu
+    let Tlist_Ctags_Cmd = 'ctags' " location of ctags
+    let Tlist_Enable_Fold_Column = 0 " do show folding tree
+    let Tlist_Exist_OnlyWindow = 1 " if you are the last, kill yourself
+    let Tlist_File_Fold_Auto_Close = 0 " fold closed other trees
+    let Tlist_GainFocus_On_ToggleOpen = 1
+    let Tlist_Inc_Winwidth = 0
+    let Tlist_Show_Menu = 1
+    let Tlist_Show_One_File = 1 "Show single file tags only
+    let Tlist_Sort_Type = "name" " order by
+    let Tlist_Use_Right_Window = 1 " split to the right side of the screen
+    let Tlist_WinWidth = 40 " 40 cols wide, so i can (almost always) read my functions
+    let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:function;m:member'
+    let g:tlist_php_settings = 'php;c:Classes;f:Functions;d:Constants;j:Javascript Functions'
+
+    " NERD_tree.vim
+    map <leader>n  :NERDTree<cr>
+    map <leader>nt :NERDTreeToggle<cr>
+    map <leader>nf :NERDTreeFind<cr>
+    let g:NERDTreeShowBookmarks = 1
+    let g:NERDTreeChDirMode = 2
+    let NERDTreeIgnore=['\.pyc$','\.svn$','\.tmp$','\.bak$','\~$']
+
+    " project.vim
+    map <leader>p :Project<cr>
+
+    " matrix.vim
+    map <leader>m :Matrix<cr>
+
+    " html.vim
+    let g:no_html_toolbar = 1
+    let g:do_xhtml_mappings = 'yes'
+    let g:html_tag_case = 'lowercase'
+
+    " closetag.vim
+    let g:closetag_html_style=1
+
+    " ToHTML
+    let use_xhtml = 1
+    let html_use_css = 1
+    let html_number_lines = 0
+
+    " mru.vim (History file List, Most Recent Used)
+    map <leader>h :MRU <cr>
+    let MRU_Max_Entries = 1000
+    let MRU_Max_Menu_Entries = 20
+    let MRU_Exclude_Files = '^/tmp/.*\|^/var/tmp/.*'
+    let MRU_Window_Height = 8
+
+    " fencview.vim
+    let g:fencview_autodetect = 0
+
+    " acp.vim & SnipMate.vim
+    let g:acp_behaviorSnipmateLength =1
+    let g:acp_completeOption = '.,w,b,u,t,i,k'
+    let g:acp_enableAtStartup = 0
+    let g:snips_author = 'Vingel <http://www.vingel.com/>'
+    "autocmd FileType python set ft=python.django " For SnipMate
+    autocmd FileType html,htmldjango set ft=html.django_template.jquery " For SnipMate & jquery
+
+    "au BufRead,BufNewFile *.c,*.cpp,*.py,*.js 2match Underlined /.\%81v/
+    au BufRead,BufNewFile *.c,*.cpp,*.py,*.js set colorcolumn=81
+
+    " neocomplcache.vim
+    let g:neocomplcache_enable_at_startup = 1
+    let g:neocomplcache_enable_smart_case = 1
+    let g:neocomplcache_enable_auto_select = 1
+
+    " matchit.vim
+    let b:match_ignorecase = 1
+
+    " fuf.vim
+    map <leader>fb :FufDirWithCurrentBufferDir<cr>
+    map <leader>fd :FufDir<cr>
+    map <leader>ff :FufFile<cr>
+    map <leader>ft :FufTag<cr>
+    map <leader>fh :FufHelp<cr>
+
+    " JSLint.vim
+    if has("win32")
+        let g:jslint_command = $VIMFILES . '/extra/jslint/jsl.exe'
+    else
+        let g:jslint_command = $VIMFILES . '/extra/jslint/jsl'
+    endif
+    let g:jslint_command_options = '-conf ' .  $VIMFILES . '/extra/jslint/jsl.conf -nofilelisting -nocontext -nosummary -nologo -process'
+    map <leader>j :call JavascriptLint()<cr>
+    "
+    " ZenCoding
+    let g:user_zen_expandabbr_key = '<c-j>'
+    "let g:use_zen_complete_tag = 1
+
+    " Pylint
+    let g:pylint_onwrite = 0
+    autocmd FileType python compiler pylint
+
+    " Grep
+    let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
+    set grepprg=/bin/grep\ -nH
+
+    " Command-t
+    noremap <leader>r :CommandT<cr>
+    "noremap <leader>y :CommandTFlush<cr>
+    let g:CommandTMaxHeight = 15
+
+    " DoxygenToolkit.vim
+    map <leader>d :Dox<cr>
+
+    " Vim grep
+    let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
+    set grepprg=/bin/grep\ -nH
+
+    " Python section
+    " Run the current buffer in python - ie. on leader+space
+    autocmd FileType python set textwidth=79 " PEP-8 Friendly
+    autocmd FileType python map <buffer> <leader><space> :w!<cr>:!python %<cr>
+    " set python modules path so that 'gd' can find it.
+    autocmd FileType python set path+=~/Dropbox/Library/python,/System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6/,/usr/lib/python2.5/site-packages/
+    " Set some bindings up for 'compile' of python
+    autocmd FileType python set makeprg=python\ -c\ \"import\ py_compile,sys;\ sys.stderr=sys.stdout;\ py_compile.compile(r'%')\"
+    autocmd FileType python set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\\@=%m
+    " New Python file template
+    autocmd bufnewfile *.py call setline(1,'#!/usr/bin/env python') |
+      \ call setline(2,'#coding:utf-8') |
+      \ call setline(3,'#author: Vingel <http://www.vingel.com>') |
+      \ call setline(4,'') |
+      \ call setline(5,'') |
+      \ exe "normal G"
+
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " => Set OminComplete
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    set completeopt=longest,menu
+    autocmd FileType c set omnifunc=ccomplete#Complete
+    autocmd FileType python set omnifunc=pythoncomplete#Complete
+    autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+    autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+    autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+    autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+    autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+    autocmd FileType php setlocal dict+=$VIMFILES/dict/php_functions.txt
+    autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+
+    "Nginx
+    autocmd BufRead,BufNewFile /usr/local/nginx/conf/* /etc/nginx/* set ft=nginx
+
+    "Velocity
+    autocmd BufNewFile,BufRead *.vm set ft=html fenc=gbk syntax=velocity
+
+    "Markdown
+    "autocmd BufNewFile,BufRead *.markdown,*.md,*.mdown,*.mkd,*.mkdn
+
+    "CSSTidy :brew install csstidy
+    "autocmd filetype css setlocal equalprg=csstidy\ -\ --silent=true
+
+    "Write when you leave insert mode
+    autocmd InsertLeave * write
+
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " => Colors & Fonts & Syntax
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " Enable syntax
+    syntax enable
+
+    " Syntax
+    au BufRead,BufNewFile *.js set ft=javascript
+    au BufNewFile,BufRead *.log setf log
+    let filetype_m= "objc"
+
+    au BufRead,BufNewFile *.go set filetype=go
+
+    if has("gui_running")
+        colorscheme yytextmate
+        " Highlight current
+        set cursorline
+        set cursorcolumn
+        hi cursorline guibg=#333333
+        hi CursorColumn guibg=#333333
+
+        " Omni menu colors
+        hi Pmenu guibg=#333333
+        hi PmenuSel guibg=#555555 guifg=#ffffff
+
+        " Toggle Menu and Toolbar and switch fullscreen mode
+        set guioptions-=b " Hide bottom scrollbar
+        set guioptions-=R " Hide right scrollbar
+        set guioptions-=r
+        set guioptions-=l " Hide left scrollbar
+        set guioptions-=L
+        set guioptions-=m " Hide Menu
+        set guioptions-=T " Hide Toolbar
+        map <silent> <F11> :if &guioptions =~# 'm' <Bar>
+                    \set guioptions-=m <bar>
+                    \else <Bar>
+                    \set guioptions+=m <Bar>
+                    \endif<cr>
+
+        " Work with Chinese input apps
+        set noimdisable
+        set imactivatekey=C-space
+        set imsearch=0
+        autocmd! InsertLeave * set imdisable|set iminsert=0
+        autocmd! InsertEnter * set noimdisable|set iminsert=0
+
+        " Auto Maximize when vim starts.
+        if has("win32")
+            au GUIEnter * simalt ~x
+        elseif has("unix")
+            au GUIEnter * winpos 0 0
+            "set lines=999 columns=9999
+        endif
+
+    else
+        set background=dark
+        "colorscheme zellner
+        colorscheme vivi
+    endif
+
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " => Set FileEncodeing
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " Favorite filetypes
+    set fileformats=unix,dos,mac
+
+    if has("multi_byte")
+        set encoding=utf-8
+        set fileencoding=utf-8
+        set fileencodings=utf-8,gbk,chinese,latin1
+        set formatoptions+=mM " for charactors fold and patch
+        set nobomb " Don' use Unicode
+        set helplang=cn
+
+        if v:lang =~? '^\(zh\)\|\(ja\)\|\(ko\)'
+            set ambiwidth=double
+        endif
+
+        if has("win32")
+            set fileencoding=chinese
+            " Language messages en_US.utf-8
+            language messages zh_CN.utf-8
+            let &termencoding=&encoding
+            set guifont=Consolas:h12:cDEFAULT
+            source $VIMRUNTIME\delmenu.vim
+            source $VIMRUNTIME\menu.vim
+            set path+=E:\Vingel\bin\python\Lib\site-packages\
+        elseif has("mac")
+            colorscheme desert
+            if has("gui_macvim")
+                winpos 52 42
+
+                let macvim_skip_cmd_opt_movement = 1
+                let macvim_hig_shift_movement = 1
+
+                set transparency=4
+
+                set anti " 开启抗锯齿渲染
+                set guifont=Consolas:h18
+                "macmenu &File.New\ Tab key=<nop>
+            endif
+        "Unix
+        else
+            set guifont=Bitstream\ Vera\ Sans\ Mono\ 14
+        endif
+    else
+        echoerr "Sorry, this version of gvim was not compiled with +multi_byte"
+    endif
+
+    if has("autocmd")
+      au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+    endif
+
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " My information
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    set dictionary+=$VIMFILES/dict/dicts.txt,/usr/share/dict/words
+    iab xdate <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
+    " vim:tw=80 et sw=4 comments=\:\"
+
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " Tips
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " delete blank lines  :g/^\s*$/d
+    " diff  :vertical diffsplit filename
+    ```
+</div>
+
 [如何正确接收 GitHub 的消息邮件 · Issue #49 · cssmagic/blog](https://github.com/cssmagic/blog/issues/49)
+
+:   “不知道你 @ 我了呀～”
+
+    这让我非常恼火。所以，我决定写篇文档给所有人看，避免他们漏看重要的 GitHub
+    消息。此后在 GitHub 不回复我的人，差不多也可以绝交了罢！
+
+      - 我关注的（Watching）：当我关注了某个项目之后，相当于订阅了这个项目的所
+        有更新，即这个项目的新 release、新 issue、新 PR 及所有讨论都会通知我。
+      - 我参与的（Participating）：当我参与到某个 issue、PR 或 commit 的讨论，
+        或被别人 @ 后，我都会持续收到这个讨论的后续更新。
+      - 站内信（Web）：当我登录 GitHub 网站时，如果有新消息，在导航栏会看到一个
+        小蓝点。点进去就可以看到详细通知。
+
+    - [GitHub 的邮箱设置页面](https://github.com/settings/emails)
+    - [GitHub 通知中心](https://github.com/settings/notifications)
+
+    “Not watching” 意味着取消关注，你将不会收到与你无关的通知。而与你有关的（你
+    发起的、主动参与的或被 @ 的）讨论有新回复，你还是会收到通知的。
+
+    请注意不要选择 “Ignoring”，那意味着你连重要的消息也收不到了。
+
+    如果你遇到了无聊的人总是骚扰你，可以到它的用户页面，屏蔽并举报。
+
+    谢谢吐槽。不过，不是每个人一生下来就是对所有工具熟练的，总会有一个学习和摸
+    索的过程。如果有教程，这个学习的过程会快一些。于是，我写了教程。
+
+    另外，文中的一些调侃桥段只是写作手法，就不要当真了吧？ :joy:
+
+    我叫魔法哥，我是一个吐槽狂。每当我在公司项目中看到不靠谱的代码，总是忍不住
+    一吐为快。我相信，吐槽使人进步，吐槽改变世界。
+
+    如果自己的电脑不在手边，也可以用浏览器登录 GitHub 网站，通过网页界面来一步
+    步追查。我们进入项目 repo 的主页，打开某个文件的详情页面，在顶部可以发现 “
+    Blame” 和 “History” 两个按钮
+
+    其中，进入 Blame 页面可以查看文件内每行代码的作者信息。
+
+    在右键菜单中选择 Copy revision number，即可得到该 commit 的版本号。然后使用
+    以下模式手工构造一个 URL 打开即可：
+
+    ```
+    https://github.com/{org}/{project}/commit/{revision}
+    ```
+
+    另一方面，当不良代码被合并到主干时，我们固然可以怪罪代码作者，但这更多是
+    review 者的责任。因为帮别人 review 代码的往往是有经验的资深工程师，帮助新人
+    纠错和成长是他们的重要职责。因此，找到 PR 再吐槽，还可以揪出那些不认真
+    review 代码、“毁” 人不倦的导师们，直接打脸，岂不快哉！
+
+    我们登录项目 upstream repo 的主页，在页面顶部有一个搜索框，填入 commit 的版
+    本号，搜索。
+
+    要知道，总会有一些害羞的同学不敢直面我的吐槽，他们总是假装没有收到我在
+    GitHub 的评论。为此，我写了这篇教程《如何正确接收 GitHub 的消息邮件》，并发
+    给每个人，这样应该可以防止大家装睡了吧。
+
+    另外，在日常的吐槽工作中，我还会把一些典型的错误汇总起来，并招集大家听我当
+    面吐槽一遍。虽然大家都很嫌弃我，但我丝毫不为所动，因为我是一个有情怀的吐槽
+    狂，天生骄傲！
+
+    refs and see also
+
+      - [如何在 GitHub 正确吐槽 · Issue #4 · baixing/FE-Blog](https://github.com/baixing/FE-Blog/issues/4)
+      - [Issues · cssmagic/blog](https://github.com/cssmagic/blog/issues)
+      - [CSS魔法 - Web标准与前端技术杂谈](http://www.cssmagic.net/)
 
 [Tree-shaking with webpack 2 and Babel 6](http://www.2ality.com/2015/12/webpack-tree-shaking.html)
 
@@ -1554,6 +2583,28 @@ Ajax
       - 第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。
       - 第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来
         管，自己只负责写文章。
+
+    **一些事物在你没真实体验前，最好保持沉默。**
+
+    对于 CCTV，想起营养老师范志红的一句话： 很多不健康的食品，都是吃客自己惯出
+    来的。中国人讲究色、香、味俱全。但经常，色是调色剂、香是劣质佐料、味是味精
+    ，非常不健康。这个，不少人都知道。厨师、饭店老板比我们更清楚。但为何还依旧
+    这么做？因为不这么做，顾客会不喜欢，就赚不到钱。要改变现状，得先改变吃客，
+    让吃客们对色、香、味建立起新观念：色是自然色、香是食材香、味是原汁原味。唯
+    有改变我们自己，才能改变很多事情。CCTV 也一样，当哪一天，大部分人都不看它，
+    不鸟它时，它就会自然死去，再也发不出声音。
+
+    博客的本质是记录，是与自己、他人的内心对话。
+
+    对话是记录的延伸。
+
+    产生对话，需要传播，需要消息机制。
+
+    对于传播，个人觉得，目前 Facebook、微博等形态，也很可能迟早像 RSS 一样成为历史或小众。
+
+    博客就三个关键词：记录、传播、对话。
+
+    一个产品是什么，不取决于产出方的预设，而**取决于使用者的用法**。
 
     refs and see also
 
@@ -1585,7 +2636,7 @@ Ajax
     UNDERTALE》的作者 Toby Fox 却发出了善意的提醒：「一个真正完成了的创意小游戏
     胜过 10 个未完成的大项目。」
 
-    ![陈星汉和他的《风之旅人》](https://pic3.zhimg.com/77670d72fc55d200166d05463584da4a_b.jpg)
+    ![陈星汉和他的《风之旅人》](http://whudoc.qiniudn.com/2016/77670d72fc55d200166d05463584da4a_b.jpg)
 
     最后，向各位推荐纪录片《独立游戏：大电影》，即使你不了解独立游戏，我想你也能从中看到人性的脆弱、疯狂和勇敢。
 
@@ -1593,7 +2644,54 @@ Ajax
 
       - [中国独立游戏的创与灭 - 笔戈科技 - 知乎专栏](http://zhuanlan.zhihu.com/p/20585179)
 
-[欣喜堂 | 活字字体基础讲座](http://www.typeisbeautiful.com/kinkido-1/)
+[欣喜堂 | 活字字体基础讲座: 什么是活字字体](http://www.typeisbeautiful.com/kinkido-1/)
+
+:   在没有现代印刷的时代，碰到一本想要读的书，必须借过来一个字一个字地认真抄写。
+    这可需要极大的耐心。现代看来，要抄这么多本书简直是不可想象，但在当时是司空见
+    惯的事情。在中国在欧洲都是这样。
+
+    能抄写的不仅是文章。在中国还有一种习惯，就是连书写风格也一起复制下来：临书
+    、向拓、双钩填墨等等，都是常用的方法。
+
+    通过这种技法的应用，轮廓得到逐渐修正，文字具有了公共性，可读性和可识别性都
+    提高了。
+
+    木版印刷
+
+    虽然量产变得相对容易了，但雕刻版木要花费很多功夫。在中国到了宋朝逐渐出现了
+    既容易雕刻又易于阅读的字型。
+
+    英语里面活字称为 type，活字字体叫 typeface。活字中，最常用的是使用铅、锑、
+    锡合金制造的，除此之外还有木活字（wooden type）、金属活字（metal type）、照
+    片活字（photo type）、电子活字（digital type）等等。在中国甚至还有泥活字、
+    磁活字等等。
+
+    另外，照片活字的称呼可能大家不太习惯，但是照片排版用英文说就是
+    phototypesetting，照相排版机就是 phototypesetter。要是把 typesetting 翻译成
+    活字排版，那么 phototypesetting 就是照片活字排版了。金属活字的 Monotype（自
+    动铅字排版机）也是这样，现代的个人电脑在某种意义上也是一种活字排版机。
+
+    判别性是指是否能容易分辨出与其他文字的差异，因为单纯手写的话是很容易读错的
+    。可读性是指是否容易阅读，做成文章之后是否会给视觉造成负担。为了不让读者在
+    阅读时有压力，需要将大小粗细做整齐。
+
+    判别性、可读性和易认性被称为字体选择的三要素，在字体设计中也是需要重点对待
+    的。
+
+    字型（font）
+
+    ![排字拼版台](http://www.typeisbeautiful.com/wp-content/themes/tib_style/kinkido/img/content/innerlead.png)
+
+    金属活字的消亡恐怕是大势所趋。不过，虽然金属活字消失了，活字字体仍旧会作为
+    电子活字延续下去。金属活字、照相活字、电子活字，活字字体的承载方式和构造与
+    时代一起变化着，但是优秀的活字字体却是无比长寿的。
+
+    ![这些字好漂亮！](http://www.typeisbeautiful.com/wp-content/uploads/2011/03/akebono.gif)
+
+    refs and see also
+
+      - [欣喜堂 | 活字字体基础讲座: 不要再用「代称」了 ─和字字体历史](http://www.typeisbeautiful.com/kinkido-2/)
+      - [欣喜堂 | 活字字体基础讲座: 宋朝体与明朝体的流变─汉字字体历史](http://www.typeisbeautiful.com/kinkido-3/)
 
 [Type is Beautiful » 维吾尔字体百年掠影——从喀什噶尔到乌鲁木齐 （Uyghurche font tarixi — Qeshqerdin Ürümchigiche）](http://www.typeisbeautiful.com/2016/02/9927/)
 
@@ -1629,19 +2727,19 @@ Ajax
     Arabic 展示给 50 名浙江大学的维吾尔大学生，49 名学生都觉得 Frutiger Arabic
     怪异且略显滑稽。如果将现有的机场指示牌上的字体换成更利于视觉阅读的 Frutiger
     Arabic，照理说肯定会出彩，因为 Frutiger 本身就是一款经典的导示系统字体，其
-    阿拉伯文版本必然是继承了这一点，至少很多发达的中东大都市已经用上了它。但可
+    阿拉伯文版本必然是继承了这一点，至少很多发达的中东大都市已经用上了它。**但可
     以肯定的是，在乌鲁木齐这个做法会遭到极大的抵制。总的来说，维吾尔人并不认同
     其它地方的现代阿拉伯文字体。不禁让我想到当初人们对 Helvetica 的厌恶反应，并
-    称之为「丑怪体」（grotesque）。
+    称之为「丑怪体」（grotesque）。**
 
     ![Frutiger Arabic](http://www.typeisbeautiful.com/wp-content/uploads/2016/01/uyghur_9.png)
 
-    这里的原因是比较深层次的，除了受阅读习惯和环境影响外，主要出于维吾尔人对民
-    族传统的强烈保护意识，毕竟任何一个改动，都会松动原有的文化元素。字体当然也
+    这里的原因是比较深层次的，除了受阅读习惯和环境影响外，主要出于维吾尔人**对民
+    族传统的强烈保护意识**，毕竟任何一个改动，都会松动原有的文化元素。字体当然也
     是民族历史、民族特色的小小代表。
 
-    总的来说，新疆餐厅的字体都是 1982 年后的那种印刷体，横平竖直、端端正正；而
-    回族餐厅的阿拉伯文，多选择跳跃性强的手写风格体。
+    **总的来说，新疆餐厅的字体都是 1982 年后的那种印刷体，横平竖直、端端正正；而
+    回族餐厅的阿拉伯文，多选择跳跃性强的手写风格体。**
 
     refs and see also
 
@@ -1652,13 +2750,20 @@ Ajax
 
 `make -p` see implicit rules
 
-网上的说法是由于bower默认采用git://协议，而当git://协议被屏蔽时就会出现这个错误，此时只需将默认git://协议换成https://就行了。在shell中执行如下指令
+网上的说法是由于 bower 默认采用 `git://` 协议，而当 `git://` 协议被屏蔽时就会出
+现这个错误，此时只需将默认 `git://` 协议换成 `https://` 就行了。在 shell 中执行
+如下指令
 
 `$ git config --global url."https://".insteadOf git://`
+
+- cherry, coco, candy, sounds like stripper name.
+
 
 refs and see also
 
   - [bower install提示github connection timeout解决办法 | halfcrazy在疯言疯语](http://halfcrazy.me/2014/12/09/bower-install%E8%B6%85%E6%97%B6/)
+
+---
 
 [zornlemma/bilibili_RE_block_list: bilibili_block_list/哔哩哔哩弹幕屏蔽正则表达式列表](https://github.com/zornlemma/bilibili_RE_block_list)
 
@@ -1690,7 +2795,7 @@ refs and see also
     非洲农业|危害大|克拉|种庄稼|氮磷钾|不流失|不蒸发|谁说对了
     ```
 
-- cherry, coco, candy, sounds like stripper name.
+---
 
 http://emeeks.github.io/d3ia/
 
@@ -1706,32 +2811,52 @@ D3 is about selecting and binding
 <script charset="utf-8" src="d3.js"></script>
 ```
 
-`.style("background","lightblue")`
+`.style("background", "lightblue")`
 
 ---
 
 - scapegoat, 替罪羔羊.
-- model minority
-- actress
-- supporting actress
+- model minority, 模范少数族裔
+- supporting actress, 女配角（女二号）
 - best picutre
-- best directory
-- toksido? 燕尾服
+- best director
+- toksido? 燕尾服。应该是 tuxedo
 - bowtie
 - money management
 - manage money, finacies
 - wealth, loaded...
-- living from paycheck to paycheck
+- living from paycheck to paycheck, 月光族
 - swiping the credit card
 - take out a loan
 - get a morgage
-- refinancing (抵押) your house, ballsy?
+- refinancing (抵押) your house, ballsy (`['bɔlzi]`, 有胆量的；有决心的；有种的)
+
+[Tuxedo - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Tuxedo)
+
+:   ![A double-breasted dinner suit](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/EsmoquinSombra.jpg/255px-EsmoquinSombra.jpg)
+
+    A dinner jacket (British English) or tuxedo (American English, also
+    colloquially known as “tux”), dinner suit, or DJ is a formal evening suit
+    distinguished primarily by satin or grosgrain facings on the jacket's
+    lapels and buttons and a similar stripe along the outseam of the trousers.
+
+    The suit is typically black or midnight blue and commonly worn with a
+    formal shirt, shoes and other accessories, most traditionally in the form
+    prescribed by the black tie dress code. In Britain a tuxedo is a white
+    dinner jacket.
+
+    ![Illustration of English peaked lapel and shawl collar dinner jackets, 1898.
+        As substitutes for tailcoats, dinner jackets were originally worn with full
+        dress accessories](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Dinner_Jackets%2C_1898..jpg/255px-Dinner_Jackets%2C_1898..jpg)
+
+    Etiquette (`['ɛtɪkɛt]`, 礼节，礼仪；规矩): The tuxedo is a form of evening
+    wear and as such is intended to be worn only in the evening.
 
 ---
 
 [Inplace Editing](http://www.perlmonks.org/?node=Inplace%20Editing)
 
-:   `perl -p -i -n -e 's/this/that/g' *.txt`,
+:   `perl -p -i -n -e 's/this/that/g' *.txt`{.bash},
     BTW when I use `-pine` for the switches it doesn't work, anyone know why?
 
     因为 `i` 需要参数啊……
@@ -1739,11 +2864,17 @@ D3 is about selecting and binding
     不过别人的回答很专业：
 
     > Know your command line switches ;-) ... two things
-    > - `-p` and `-n` contradict each other (and actually p overrides n).
-    > - `-pin`e switches on the p switch and uses backup files which append ne to the filename
-    > so my suggestion is -pi -e.
     >
-    >      -- Hofmator
+    >   - `-p` and `-n` contradict each other (and actually `p` overrides `n`).
+    >   - `-pin`e switches on the p switch and uses backup files which append ne to the filename
+    >
+    > so my suggestion is `-pi -e`.
+    >
+    > -- Hofmator
+
+    ```bash
+    perl -n -e 'print "\t\t$_"' tmp.txt
+    ```
 
 ---
 
@@ -1866,7 +2997,7 @@ Learning D3.js Mapping
         stroke-width: 1;
         stroke:steelblue;
         fill:#888;
-         fill-opacity: .5;
+        fill-opacity: .5;
     }
     ```
 
@@ -1922,7 +3053,7 @@ Learning D3.js Mapping
     </svg>
     ```
 
-    `<text>`
+    `<text>`{.html}
 
     :   `<text x="250" y="150" class="myText">Hello world!</text>`{.html}
 
@@ -2699,51 +3830,51 @@ var hover = function(d) {
 
         cpp
 
-        ```cpp
-        ostream & operator << (ostream &os, Person const &person)
-        {
-            return os << "Hello, my name is "
-                      << person.m_name
-                      << " and I am "
-                      << person.m_age
-                      << " years old.";
-        }
-        ```
+        :   ```cpp
+            ostream & operator << (ostream &os, Person const &person)
+            {
+                return os << "Hello, my name is "
+                          << person.m_name
+                          << " and I am "
+                          << person.m_age
+                          << " years old.";
+            }
+            ```
 
         ruby
 
-        ```ruby
-        class Person
+        :   ```ruby
+            class Person
 
-          def name(value)
-            @name = value
-            self
-          end
+              def name(value)
+                @name = value
+                self
+              end
 
-          def age(value)
-            @age = value
-            self
-          end
+              def age(value)
+                @age = value
+                self
+              end
 
-          def introduce
-            puts "Hello, my name is #{@name} and I am #{@age} years old."
-          end
+              def introduce
+                puts "Hello, my name is #{@name} and I am #{@age} years old."
+              end
 
-        end
+            end
 
-        person = Person.new
-        person.name("Peter").age(21).introduce
-        # => Hello, my name is Peter and I am 21 years old.
-        ```
+            person = Person.new
+            person.name("Peter").age(21).introduce
+            # => Hello, my name is Peter and I am 21 years old.
+            ```
 
         jQuery
 
-        ```javascript
-        // chaining
-        $("#person").slideDown('slow')
-           .addClass('grouped')
-           .css('margin-left', '11px');
-        ```
+        :   ```javascript
+            // chaining
+            $("#person").slideDown('slow')
+               .addClass('grouped')
+               .css('margin-left', '11px');
+            ```
 
         java
 
@@ -4926,12 +6057,12 @@ $(document).ready(function(){
 [cursor - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor?redirectlocale=en-US&redirectslug=CSS%2Fcursor)
 
 :   cursor
-      ~ auto // default // none
-      ~ pointer
-      ~ cell
-      ~ crosshair
-      ~ zoom-in / -webkit-zoom-in
-      ~ url(hyper.cur), auto
+      ~ `auto // default // none`
+      ~ `pointer`
+      ~ `cell`
+      ~ `crosshair`
+      ~ `zoom-in / -webkit-zoom-in`
+      ~ `url(hyper.cur), auto`
 
 [quotes - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/quotes)
 

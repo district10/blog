@@ -189,3 +189,6 @@ Links | 链签
 #. [欢迎来到丘迟的维基世界 - a site build with Vim, Vimwiki and Git](http://wiki.ktmud.com/index.html)
 #. [Lync.in | Link the world.](http://lync.in/)
 #. [汤姆大叔 - 博客园](http://www.cnblogs.com/TomXu)
+#. [Site General Settings - Disqus Admin](https://dvorak4tzx.disqus.com/admin/settings/general/)
+#. [Marijn's Web Home](http://marijnhaverbeke.nl/)
+#. [Create your Google Sitemap Online - XML Sitemaps Generator](https://www.xml-sitemaps.com/)

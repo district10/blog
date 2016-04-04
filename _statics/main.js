@@ -129,10 +129,13 @@ $(document).ready(function(){
 $('div.tzx-drawer[shy]').each(function(){
     $(this).children().children('dd').toggleClass('tzx-drawer-hide');
 });
-$('div.tzx-drawer').dblclick( function(){
+
+$('div.tzx-drawer').click( function(e){
     $(this).children().children('dd').toggleClass('tzx-drawer-hide');
     if ($(this).children().children('dd:eq(0)').hasClass('tzx-drawer-hide')) {
         window.scrollTo($(this).offset().left, $(this).offset().top);
+    } else {
+        window.scrollTo( lastX, lastY );
     }
     return false;
 });
