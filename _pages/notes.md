@@ -23,6 +23,69 @@ jsfile:
 Notes | 笔记
 ============
 
+competitive.
+
+human capital. 
+
+provincial investment. 
+
+the case themselves warrant srutiny, introspecition.
+
+search warrant.
+arrest warrant.
+rate of return.
+
+symptomatic.
+symptom.
+
+stuffy nose.
+
+without the least distortion.
+
+text books.
+
+poor nutrition.
+
+procrastinate
+
+equalized return
+consumption.
+export.
+physical capital..
+investment
+cheap labor.
+high technology..
+
+residual.
+
+have residual. feelings for
+
+personalized car
+
+humanized building
+
+adaptability.
+
+adaptation. allocative efficiency.
+
+allocate asset/task/tickets
+
+detergent.
+technical schools.
+future prospect.
+
+state-owned, privte company, foreign company.
+
+empirical studies.
+scientifical studies.
+
+a private car facilitates comfort and mobility.
+
+asian infrastructure investiment bank.
+
+delay shipments
+
+
 linux, console: vi file& (bad !!);
 
 楼主你应该这么发：我自认全国C++水平第一 谁能破？
