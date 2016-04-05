@@ -20,14 +20,888 @@ jsfile:
     - clipboard.min.js
 ...
 
-Notes | 笔记
+Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
+
+vim, zf, zD, fold
+
+[C语言的2016](http://www.infoq.com/cn/articles/c-language-2016)
+
+[写在期末给自己的话](https://www.douban.com/note/504848849/)
+
+:   以前大学军训的时候，其他的事情已经模糊不记得了，但是教官的一句话却深深印在
+    我脑海里，直到现在还记忆忧新，他给我们训练立正，刚开始用几乎嘶吼的声音喊出：
+    记住，行军百里半九十。到九十公里的时候是一半，最后的十公里才是另一半。
+
+    每每快要到目标的时候，我都会想起这句话来，这跟另外一句话可以一起用：一鼓作
+    气，再而衰，三而竭。看到目标，想要一口气冲到的时候，往往就差一点，就是这一
+    点，却再也没有力气往前迈进了。
+
+    真的很像爬山，想要下去很容易，稍微一放松就下去了，但是再上来就要费更大的力
+    气。来来回回回的，看自己费了那么大的劲，还在原地徘徊，更是容易受打击。s
+
+[王路：读多少本书是外行的问法](https://www.douban.com/note/549532254/)
+
+:   别人问你读的书，是想了解你的来历。如果你跟别人有所不同，一定会体现在书架上
+    。如果你书架上的书，每一本都可以轻易地在朋友书架上发现，那证明你的阅读不太
+    成功。你和朋友，因为读过共同的书，可以交流；因为读过不同的书，可以从交流中
+    受到砥砺和启发。
+
+    阅读是个痛苦的过程。有人说，我一读书就困，不是读书的料。我就说，我一读书也
+    困，但我觉得我还行，比一般人读书强些。问者就惊讶：你读书也困？
+
+    是的，我的阅读里，十之六七的书都会读到困得不行，趴桌子上睡，睡醒又读，读了
+    又睡。
+
+    这样读书，就对了。无论想在哪一方面有长进，都是要不断受虐的，在受虐中，得到
+    快感，快感支撑自己接着受虐。久而久之，就长进了。
+
+    其实，读书就是写作，写作就是读书。读到重要的地方，把它划下来。一本十万字的
+    书，你划线的地方有三千字。这三千字，就可以说是你的写作。虽然你一个字没写，
+    但它有述的味道。让一千个人从十万字里划出三千字，肯定人人划的不尽相同。你只
+    是划线，就包含了你的想法、你对事物的看法、对问题的判断。
+
+[卡尔维诺中文站 - Italo Calvino in China](http://www.ruanyifeng.com/calvino/)
+
+[丁峰的博客 » 我的三个感悟](http://www.fengdingcn.org/blog/20090217/three-thoughts-about-life.html)
+
+:   李：从十四五岁开始，我经常跑到那种荒山野岭坐在那，或者经常跑到寺庙里坐着去
+    ，星期六，星期天想事。我记得去得最多的就是圆明园，圆明园没人，也不用门票，
+    进去特沧桑，那种破烂，山水，完了以后，一个人坐那看着太阳夕下，那种整个一个
+    怀才不遇的古装事件，梦想未来，有能力做不到，有劲使不上，那种怀才不遇的感觉
+    。
+
+    李：你发现原来不是你这么倒霉，五千年很多人都倒霉，很多人已经成功了，啪啦啪
+    啦又倒霉了，因为一个年轻人的心态，事业就在你生命里，你就觉得我最倒霉，我怎
+    么这么倒霉，我怎么这样，反正钱拿不到，你们都觉得我好，其实痛苦。后来你发现
+    历史，哎哟，写史记的人对整个民族这么大贡献，被别人给阉了，这个东西怀才不遇
+    ，整个江山打完了，韩信又给人干了， 你发现比你倒霉多了，你在历史的长河中理了
+    五天以后，就整个人生就换一种思维了，我记得有几句话对我人生在那个阶段我一记
+    下来就一直没有敢忘过，没有忘过，我就觉得路漫漫其修远兮，吾将上下而求索，就
+    是那个年代我学了这两句。千金散尽还复来，天生我材必有用，我有的时候就记住那
+    两句，很多记不住了，但是我觉得天生我材必有用，千金散尽还复来，我就记住了，
+    就是那个时候学的。从五千年一直拉到近代史，我觉得对我一生受用。
+
+[Art film - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Art_film)
+
+[Chick lit - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Chick_lit)
+
+[Chick flick - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Chick_flick)
+
+[Petite bourgeoisie - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Petite_bourgeoisie)
+
+artsy chick, 文艺青年
+
+[Xiaozi - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Xiaozi)
+
+:   Xiaozi (Chinese: 小资; pinyin: xiǎozī), is a Chinese cultural term
+    describing a lifestyle chasing modern taste, living standards, and arts.
+    Originally the term was a Chinese translation of petite bourgeoisie. After
+    the economic reform in the People's Republic of China, some urban Chinese
+    who had been immersed in Marxist ideas of class conflict found they were
+    not as poor as the proletariat but not as rich as the bourgeoisie. They
+    regarded themselves as petite bourgeoisie to distinguish themselves from
+    ordinary city dwellers.
+
+[天才训练指南 « 学而时嘻之](http://www.geekonomics10000.com/100)
+
+:   这个故事相当吸引人。号称”反智的书生”的薛涌同学显然是看到了此文，当时正好赶
+    上世界杯，他在不告诉读者原文出处的情况下把这篇文章”编译”成了他自己的文章发
+    表，叫做 制造未来球星 最迟本月怀孕。这哥们的很多立场我都赞同，就是做人太不
+    讲究，把美国人写的文章变成自己的东西已经不是一次两次了。但薛涌未能理解文章
+    的精髓。
+
+    这篇文章真正说的是成为天才的秘密。
+
+    美国大学里面的技术课程一学期让学生做好几个 project，完全是追求学以致用，逼
+    迫学生为了完成 project 而学习知识，其中还有小组合作，跟真正的科研没什么区别
+    。
+
+    科学工作者就好像运动员一样，需要不停的比赛，而不是不停的看录像。
+
+    “即时的反馈” (immediate feedback) 是我国训练学生中最缺乏的一个方面，越是高
+    端人才的培养中越是如此。如果说高手们有什么成功秘诀，我猜就是这个即时的反馈
+    。
+
+    我认为阻碍人进步的因素有两个。
+
+    第一个是早期的辉煌会把人的思想留住。一个人一旦开始回忆，他基本上就会停止进
+    步。
+
+    第二个因素更普遍，需要详细说说。心理学认为人对于外部世界的认识可以分为三个
+    区域：舒适区（comfort zone） ，学习区（learning zone），和恐慌区（panic
+    zone）。
+
+    金庸小说和各种消遣读物都在舒适区。一个很有意思的现象是很多三十多岁的人仍然
+    一天到晚谈金庸。其实这些东西都应该在大学毕业以前看完就没必要再提。三十以后
+    还整天谈金庸的人，可能四十岁以后唯一的谈资就是他们的孩子。
+
+    相比之下，倒是有很多年轻人，他们的脑浆已经从液体变成固体，只接受符合他们原
+    有观念的东西。你跟他们说你落伍了，他们会说他们的世界观人生观已经成熟地形成
+    。这可是连老头子都不敢说的话啊。
+
+    这孩子可能不太了解情况。中国人不是不追求崇高，而是因为历史上有过太过强调崇
+    高的时代，涌现出太多假仁假义，甚至打着崇高的旗号办了坏事，以至于现代中国的
+    主流文化愿意谈思想，愿意讲利益，而不愿谈崇高了。
+
+    有一种成圣人的方法是像康有为那样。据说康有为有一次读书打坐的过程中获得了
+    通灵式的体验，“忽见天地万物皆我一体，大放光明”，感觉自己是孔子再世，从此狂
+    放不羁，变成了一个大忽悠。
+
+    Brooks把这种文化称为“Big Me”。对今日之“Big Me”来说，人应该先看看自己对什么
+    东西感兴趣，以这个内心的热情为指导去选择一个职业，做事的目的是满足自己内心
+    的需求。
+
+    艾森豪威尔生性狂放易怒，在母亲的教导下慢慢磨练性格，才成为踏实可靠的军人，
+    和在位时低调而身后评价却越来越高的总统。女作家乔治·艾略特因为爱人George
+    Lewes的激励而开始正式写小说，他把她从一个以自我为中心到处找爱的女孩，变成一
+    个以悲天悯人为己任的作家。
+
+    他们不问我想干什么，他们问世界需要我干什么。他们不是用做事的方法来满足内心
+    。他们是为了做成这件事，去不断打磨自己的内心。
+
+    在谈到艾森豪威尔的中庸之道时，Brooks像所有讲中庸的中文书一样，先声明中庸（
+    moderation）不是什么：中庸不是面对两种对立意见采取一个折中的立场，不是盲目
+    的搞平等，也不是对各种不同意见和稀泥。
+
+    中庸，是你要认识到不同理念，不同情感诉求、不同道德标准之间，必然有冲突。这
+    些理念没有哪个是完美的，谁也说服不了谁，谁也消灭不了谁，矛盾永远存在。表现
+    在政治上，就是各路派系集团永远都在互相斗争。
+
+    在政治上，不同派别的集团可能说的都有有道理的地方，但是互相矛盾，你也得学会
+    协调。
+
+    所以作为最高领导人，就绝对不能像个二愣子一样全面倒向一种理念然后打压其它理
+    念，试图给个一劳永逸的解决方案。艾森豪威尔的做法是时刻根据当时的局面，做出
+    一些临时性的安排，去得到不同诉求之间的一个平衡点。等到下一时刻局面变了，再
+    继续调整。
+
+    生活明明不太悲壮，有没有必要受这个英雄的伤。
+
+    我们知道了当今那些市侩猥琐的公众人物，大概是不太可能干出什么大事来的。
+
+    写到这里我斗胆说一句，我认为目前人们对《中庸》某些篇章的很多“主流”解释是错
+    的。比如“慎独”，主流解释是要在独处没人监督的情况下约束好自己 — 但你联系上下
+    文“是故君子戒慎乎其所不睹，恐惧乎其所不闻。莫见乎远，莫显乎微。故君子慎其独
+    也”，显然其本意是说君子要想保持中庸之道就必须多听取各方声音，多体察实际情况
+    ，生怕自己错过关键信息，千万不能自己一个人瞎决断。“慎独”，其实是要小心，不
+    要因为无知而被自己的偏见左右决策的意思！“独”是“独断”，不是“独自相处”— 在这
+    种高级经典中怎么可能还整出“不欺暗室”这种低层次道德来了。
+
+    正确的做法是找本托福GRE单词书，每天拿出几个小时的时间，背300到600个单词。
+
+    但是，我再强调一遍，我们的目标是突击学英语，所以不要管老师的教学进度。老师
+    可能一周讲两篇文章，而你要每天研读一篇文章。
+
+    你可能随口蹦出一个生僻的GRE词汇把美国人震晕，然后被人三言两语打败。这是因为
+    你缺少实战经验！可是非常遗憾，很多人通过考试之后就不再练武，基本功慢慢荒废
+    ，到死还以为自己从来就没有过真功夫。
+
+    只要坚持读完一本书，你就基本过关了。你的第二、第三本书将会越读越快，最后可
+    能只需偶尔翻一下字典。
+
+    我上初中的时候，有一次跟同学在公共汽车上遇到一位老者。这位老者相貌非常不俗
+    说话和气，像是老师，又不像我在学校遇到过的那些老师，感觉是个有智慧的人。他
+    主动跟我们说起学外语的事情，鼓励我们应该学三门外语。他说学习第二门外语的时
+    间只需要第一门的一半，而第三门又只需要更少的时间。他还说，掌握一门外语，就
+    如同打开了一扇通往一个新的世界的大门，你可以读很多很多新的书。
+
+    一直到今天也没有第二个人向我提出过这么高的学术要求。他居然让我学三门外语，
+    这个任务我大概无法完成。更有意思的是，他让我学外语居然不是为了考试和工作，
+    而是为了读书！
+
+    时代周刊的书评栏，给新书评价等级的标记方法很有意思，不是评“好、中、坏”，而
+    是按“值得怎么读”分类，三个等级是 toss （随便翻翻），skim （略读），和 read
+    （精读）。
+
+    据说美国曾有一个后来很有名气的女演员，当年参加海选的时候刚刚表演不到一分钟
+    就被评委叫停。事后才知道这是因为评委一看就知道她行，认为不必浪费时间了。这
+    就是海选的要点。
+
+    一篇文章进入 Read It Later 列表，就等于进入了超女前十名总决赛。这样做的另一
+    个好处让好文章有机会被读两遍，加深印象。
+
+    使用 toss-skim-read 方法，可以确保在比较短的时间内把所有想要知道的东西都知
+    道，每天做过一次之后就再也不惦记看新闻了。
+
+    这个方法可能还有一个特点，就是长期使用可以提高一个人的阅读品味。你可能会发
+    现越来越少有文章能有资格进入你的 Read It Later 列表，而 Evernote 中则更多的
+    是你“主动上网”– 自己搜索出来的技术文章。
+
+    论文是知识的最前沿，而且是用最有条理的方式整理好的文本，一个真正的极客怎么
+    可能不看论文呢？现在搞研究的人实在太多，从上天入地到娱乐管理所有领域都有论
+    文。很多社会科学甚至医学方面的论文只要有最基本的统计知识就能看懂，实在看不
+    懂技术细节看看摘要也不错。
+
+    这件事让我感到特别自豪，要知道Cowen自己的文章贴出一天也没人发现毛病。这就是
+    极客的力量。对奇怪的事实非常敏感，产生疑问后不是空口无凭地质疑，而是立即查
+    找数据，拿数据说话。有这样的功夫不管说什么，别人都不得不严肃对待。
+
+    Amanda的做法是在华盛顿邮报发表了一篇非常漂亮的长文。这篇文章充满了拿数据
+    说话的精神。下面是Amanda使用的一部分数据：
+
+      - 耶鲁每年吸引8万人申请，只录取1300人，被拒率93.7%；
+      - 95%的耶鲁学生的高中成绩排在其高中的前10%，100%的学生排在高中前25%；
+      - 芝加哥大学录取学生的数学和阅读SAT成绩中位数是在1440到1540之间，而Amanda
+        的成绩只有1100；
+      - 芝加哥大学只有1%的新生GPA在3.00到3.24之间，3.00以下的根本就没统计，而
+        Amanda的GPA只有2.9。
+
+    这就是一个数学和阅读成绩都一般的美国女高中生的水平。而她做这么多调查研究并
+    不是为了论证自己应该进名校，是为了论证自己不应该进名校！
+
+    总而言之，一大波极客正在袭来。他们用论文辟谣，用数据打脸，用自己的行动树立
+    榜样。他们可能是科学家、工程师、教师、记者或者医生，也可能是任何有评判性思
+    维能力和理解科学方法的人。这些人是有功夫的参与公民。对公共事务发言，他们应
+    该取代历史上的读书人和现代的公知。
+
+    其实这个“素质问题”绝非中国农民工所特有，一百年以前，美国福特汽车公司面临同
+    样的局面。
+
+    当时福特推出的新车型彻底改变了汽车的制造方式，工厂不再依赖拥有高技能的熟练
+    工人，任何人来了都可以迅速上手，这使得亨利·福特根本不担心招不到人。
+
+    福特公司这一招，在现代社会具有普遍意义。哪怕是“谁来了都能干”的工作，企业也
+    不希望“让谁都来干”，而希望员工都有一定的忠诚度和凝聚力，并愿意为此支付一个
+    更高的工资。至于需要专业技能的工作就更是如此。中国过去曾经允许任何略懂医术
+    的人作为“赤脚医生”行医，而现在没有正规医学院学位根本不允许你给人看病。用一
+    个高准入标准和高工资来保证医生工作的稳定性和士气，才是正确做法。
+
+    学历就是最好的门槛。
+
+    也就是说根据这个研究，对聪明学生来说，上不上名校并不重要。你走这条路能成功
+    ，走别的路也能成功。这可能是因为社会足够复杂，而市场足够有效，以至于一次没
+    被选中也无所谓。所以如果你有足够能力，没去成复旦去了中南大学并不耽误你将来
+    的收入。
+
+    美国大学录取学生并不只看SAT成绩。各种文体才艺、在高中的组织和领导能力、当过
+    志愿者做好事，都是重要考虑因素。这些标准对富裕家庭的孩子更有利。你要才艺，
+    我可以聘请最好的花样滑冰老师；你要名人推荐信，我认识你们校董；你要领导力和
+    社会公益，我甚至可以出钱把孩子就送到边远国家当志愿者刷经验值。
+
+    而大人们应该做的就是向他们保证：你想的是对的！— 这难道不就是中国梦吗？
+
+    这些规定，就是KIPP所谓的“be nice”。对KIPP来说，“好好做人”绝非是一句空洞的口
+    号，而是一系列详尽的行为准则。而这套准则并非是领导层拍脑袋想出来的，其背后
+    有科研结果的支持。
+
+    Levin直接找到Seligman和Peterson，说你这24条实在太多不好操作，能不能给我们精
+    简一下。于是心理学家最终给KIPP准备了七个目标品质：坚毅、自控、热忱、社交、
+    感恩、乐观和好奇。这些品质跟上大学有什么关系？比如社交能力就跟能不能完成大
+    学学业很有关系：有个研究说，能顺利从大学毕业的关键一条是，至少有一个教授能
+    叫出你的名字。
+
+    KIPP有非常严格的礼貌教育。如果一个姓Ali的老师跟你说“早上好”，你的回答不能也
+    是“早上好”，而必须是“早上好，Ali老师！（Good morning, Ms. Ali.）”如果老师在
+    课堂上问全班同学“明白吗？（Is that clear？）”，或者简单地说“Clear?”你既不能
+    回答“yes”，也不能回答“clear”，而必须是“Crystal（水晶）”— 意思是“crystal
+    clear”，非常明白。
+
+    KIPP的老师们在教学中摸索出来一套叫做SLANT的课堂规定。SLANT是要求学生必须
+    执行五个规定动作的缩写：Sit up，Listen，Ask and Answer questions，Nod，
+    Track the speaker。这五个动作的意思是
+
+    自控，是一种反人性的行为。它要求我们做“该做”的事，而不是“想做”的事。为什么
+    KIPP最喜欢自控力？现在有句流行的话说“以一般人的努力程度之低，根本谈不上拼天
+    赋”，其实是有道理的。一个有自控力的人生活再差也差不到哪去，自控力是比想象力
+    更为基本和行之有效的个人素质，是摆脱贫困的关键一步。中国的教育基础比美国好
+    ，可能恰恰得益于中国文化中从小就强调自控。
+
+    美国没有种族隔离制度，但“正常人”和穷人不会住同一个社区。一户贫困黑人的周围
+    邻居，也都是贫困黑人。而作为黑人孩子，就算自己天生有自控能力，想上进，都没
+    法上进 — 因为他的黑人朋友们会嘲笑他想当个白人！
+
+    人类所知非常有限，哪怕是最好的学者花了很多钱做的很好的研究，也可能是错的。
+    科学的最大价值并不在于固定的知识，而在于获得这些知识的研究方法。
+
+    到了生物和医学领域，因为整个系统变得越来越复杂，用数学推导已经变得不可能，
+    我们只能几乎完全依赖实验。而面对这么复杂的系统，任何实验本质上都是盲人摸象
+    。
+
+    等到进入经济学、心理学和政治学这些领域，那可靠性就更低了。大多数经济学模型
+    已经简化到几乎没用的程度，相当多的心理学研究论文根本无法重复，至于政治学？
+    在很多问题上学者们连起码的共识都没有。
+
+    这个研究还发现，那些本身就是少数群体的教授居然也歧视本群体的学生！女教授也
+    歧视女学生，黑人教授也歧视黑人学生，西裔教授也歧视西裔学生，……唯一的例外是
+    华裔教授并不歧视中国学生。
+
+    也许这些所谓歧视并不是发自内心地敌视某个群体，而仅仅是出于某种自利目的。既
+    然在我们的印象中成功的创业者和科学家大都是男的，学东西快干活猛的工程师都是
+    年轻人，我们最方便的办法自然就是更关注这些群体。这种心理也许是偏见，但真谈
+    不上是什么坏心。
+
+    所以销售给黑人一个高报价根本就不是因为他歧视黑人，而是因为他觉得黑人收入低
+    反正也买不起，索性用一个高报价结束对话！
+
+    歧视有两种。一种是“敌意歧视”，损人不利己，宁可不赚你的钱也不跟打交道，甚至
+    还要故意黑你。另一种则是“经济歧视”，对某一人群的区别对待无关个人感情，纯粹
+    是出于自利。现在随着社会进步，敌意歧视其实正在减少，而经济歧视则在增加。
+
+    跟给黑人报高价一样，很多看似是敌意歧视的现象实际上是经济歧视。黑人来了把钱
+    包看紧点，机场安检更重视中东长相的人，加强对同性恋者的艾滋病防控，人们这么
+    做并不是出于仇恨这些群体，而仅仅因为黑人犯罪率更高，大多数恐怖分子是中东人
+    ，以及同性恋感染艾滋病毒的可能性远远高于异性恋。
+
+    再者，宣传和教育对经济歧视的具体行动意义不大。如果一个工程系教授不愿意录取
+    女研究生是因为他认为女生科研能力不如男生，你能用宣传教育的方法消除这个性别
+    歧视吗？
+
+    弱者抱怨别人歧视，强人都是自己主动出击。
+
+    我知道这种类比可能会让人反感，但新疆暴恐案的恐怖分子和比特币、p2p盗版下载，
+    以及维基百科有一个共同点。他们都是去中心化的组织形态。
+
+    美国商业咨询师Ori Brafman和CATS软件公司前CEO Rod A. Beckstrom 2008年出了一
+    本专门研究去中心化组织的书，《海星与蜘蛛：无领导组织不可阻挡的力量》（The
+    Starfish and the Spider: The Unstoppable Power of Leaderless Organizations
+    ）。此书标题的类比相当恰当。传统组织就如同蜘蛛，它的智力集中在大脑，只要你
+    把蜘蛛的头去掉，蜘蛛就会死亡。而去中心化组织就如同海星，海星根本就没有头。
+    它的智能分布在身体各处，一旦你打掉它身体的一部分，那个部分甚至可能自己再长
+    成另一个海星。
+
+    不幸的是，恐怖组织是去中心化的。他们干不了统治国家这样的大事，甚至也根本不
+    可能分裂国家，但是他们干的“小事”就足以给社会带来极大的麻烦了。
+
+    中国警方从未明确回答新疆恐怖分子到底是有上级组织的还是自发的这个问题。但从
+    公开的报道来看，至少有部分恐怖分子是因为接受了极端宗教思想，看了暴力恐怖音
+    视频而采取行动，似乎并没有来自境外势力的直接指挥。如果是这样的话，那么反恐
+    就更加困难！这意味着我们要消灭的是海星而不是蜘蛛。
+
+    第二个策略是先把海星变成蜘蛛再杀。美国人当初是怎么最终打败阿帕奇部落的呢？
+    美国人给阿帕奇部落首领发牲畜。有了财富之后，这些部落首领就有了实权，他们可
+    以通过支配财富来实施自己的权力，各个领导之间开始互相争斗，最终一个集权化了
+    的部落就容易对付了。“匿名戒酒会（Alcoholics Anonymous）”本来是个完全非营利
+    的去中心化民间互助组织，壮大以后为了宣传会员的故事而出了一本书，结果这本书
+    带来的利润很快让组织开始“变味”了，人们立即想要通过集权来分配利润。利益可以
+    使分权组织变的集权，但把这个规律用在反恐上恐怕不太合适，谁也不想等待恐怖组
+    织做大。
+
+    第三个策略是把自己去中心化。这并不是非得把正规军变成游击队，而是要借鉴去中
+    心化组织的分布式智力和灵活多变的特点。在这方面，美军在伊拉克的经验 — 尽管在
+    很多时候被人当成笑话 — 其实非常值得借鉴。
+
+    H上校发现大部分伊拉克当地人之所以不愿意跟美军合作，并不是因为他们仇恨美军 —
+    可能他们更恨萨达姆。这些人不合作是因为他们害怕被报复。毕竟你美军可能打完就
+    走，游击队的人可是要跟我们长期相处。H上校的策略就是在自己负责的整个城市中建
+    立29个哨所，这些哨所条件很差，但美军士兵在里面长期驻扎绝不后退，给当地人一
+    种可靠感。
+
+    一个叫乔治的士兵贡献了一条经验。他说美军应该留胡子。因为他发现伊拉克人喜欢
+    留胡子的人，他们很难相信没胡子的人。
+
+    这不就是我们常说的“密切联系群众”吗？跟正牌基地组织、真主党和伊拉克游击队相
+    比，新疆恐怖分子就算是海星也只能算最小的海星，而我们的群众基础更胜美军和以
+    色列百倍。只要切实掌握恐怖分子的活动规律，充分吸收第一线的经验，再加上密切
+    联系群众，反恐有何之难？
+
+    有最多科学证据支持的答案是……手相。具体说来是无名指相对于食指的长度。想要彻
+    底理解这件事，我们得从男女的竞争差异说起。有一个很有意思的研究，是中国人贡
+    献的。
+
+    现在可以谈手相了。一个人基础睾酮水平可以反映在无名指和食指的长度比上。胎儿
+    在子宫中的发育同时受到睾酮和雌激素的影响。这两种激素影响胎儿大脑的同时，也
+    影响手指。睾酮水平相对雌激素水平越高，人的无名指相对于食指就越长。
+
+    他们发现女学霸对其所在宿舍来说是一盏明灯。如果一个女生的入学成绩比较弱，但
+    是她有成绩好的室友，那么她在大学的学习成绩会因此受益。她很可能被室友激励，
+    甚至可能得到了室友的直接帮助。可是男生宿舍里没有这样的效应。数据显示，那些
+    学习最好的男生，甚至对自己宿舍其他人的成绩有个负面影响！
+
+    男人在决定参与竞争之前并不在乎失败的风险，可是竞争中一旦遇到挫折就容易放弃
+    。女人却总能合理评估竞争风险，一般不爱竞争，但是一旦参与了，就算遇到挫折也
+    常常能坚持下来。
+
+    人们早就知道睾酮可以增加人的体能和爆发力，而最新的发现，睾酮居然对国际象棋
+    也有好处。在一个研究中参加比赛的棋手们被时不时地测量睾酮水平，结果发现他们
+    的成绩居然可以用其在临近比赛开始时的睾酮水平来预测。赛前睾酮分泌得越多，就
+    越有可能赢得比赛，哪怕排名分没那么高都行。
+
+    可是女人的基础睾酮水平只有男人的七分之一。基础水平低如果在赛场上临时多分泌
+    一些也不错，但很多研究发现，女人在比赛中的睾酮水平并不像男人一样增加。而这
+    居然是因为女人喜欢在比赛之前跟竞争对手聊天！实验发现如果把她们隔离开来使之
+    看不到对手无法做赛前交流，然后互相用自己的进度刺激对方，那么女人的睾酮水平
+    也会增加。
+
+    也不是！从对策论角度来说，竞争其实有两种。一种是有限博弈（finite game），这
+    种竞争就好像体育比赛一样有结束的时候，你比赛中必须全力以赴，比较强调爆发力
+    ，更适合男性或者战士参加。一种是无限博弈（infinite game），竞争永远都在进行
+    ，讲究持续力，需要你能够在其中偷偷地自我调整和恢复，更适合女性或者颤士参加
+    。
+
+    大部分女孩不愿意竞争，尤其不愿意在队内搞竞争。她们害怕损害跟同伴的关系，担
+    心队友不喜欢自己。Dorrance的做法就是找一个典型的敢于竞争的女孩 — 她在训练的
+    时候非常拼命，玩真的，别的女孩都抱怨甚至来告状 — 然后他告诉所有队员：每个人
+    都应该像她这么踢。他要求队员不要反感竞争，要把竞争当成常事！
+
+    不论如何，我敢打赌你在阅读此文过程中查看了一下自己的无名指。好消息是无名指
+    的研究还没讲完。研究者认为生理因素大约只能解释40%到60%的竞争力，后天教育和
+    文化传统仍然有作用。意大利大部分女企业家集中在文化宽容的东北部，在这里先天
+    资质并不特别出众的女人也有出头的可能性。
+
+    可是一个女人要想在意大利南部地区奋斗成功，她的无名指长度必须出类拔萃！
+
+    而且我还救人，甚至救Malfoy这种曾经试图伤害我的人。有时候配角英雄不太理解这
+    种做法，但像我这样的主角英雄都必须有这样的品质。比如在早年动画片《非凡的公
+    主希瑞》中希瑞一次次地救起自己的死敌霍达克，最完美的英雄就应该有一点女人的
+    气质。
+
+    美剧《生活大爆炸》曾经讲过一个好多观众没听懂的笑话。说有一个农民发现自己养
+    的鸡都出问题不下蛋了，找一个物理学家帮忙。物理学家做了一番计算之后宣布我已
+    经找到了一个解！但是这个解只对真空农场中的球形鸡有效。这个笑话的意思是物理
+    学家使用了一个过分简化的模型去模拟真实世界。
+
+    2009年，英国女王伊丽莎白质问经济学家说你们就怎么都没预测到这次金融危机呢？
+    经济学家们回信，说经济学这个工作都是各自为战研究具体领域内的小问题的，我们
+    并没有做在一起对世界经济这个整体发挥“集体想象力（collective imagination）”
+    。换句话说，他们玩的都是小模型，没玩过这么大的。
+
+    可是现实世界中根本不存在“完全相同”的两组人，这种理想实验无法进行。好在科学
+    家有一个退而求其次的巧妙办法：找一群人，然后完全随机地把他们分为两组去做实
+    验。在样本数足够大的情况下，随机性可以保证任何不同因素都可以大致均匀地分配
+    到两个组里。这就是在关于人的研究中最重要，也是最可靠的办法。
+
+    更大的困难在于，大多数情况下你不能拿人做试验，比如不能逼人吸烟。这时候就只
+    能被动地集邮，而通过纯粹的被动调查来做研究的方法叫做 epidemiology（流行病学
+    ）。最容易的流行病学研究是所谓回顾性（retrospective）的问卷调查：先找到病人
+    ，然后询问并比较他们的生活方式。这种调查的难度在于病人对自己以往生活的回忆
+    常常不准确，甚至是有偏见的。他们可能会自己推断一种病因，然后刻意地强调这种
+    病因。就好像想要讨好医生一样，那些得了肺癌的人可能会夸大自己的吸烟史。一个
+    更可靠的办法是前瞻性（prospective）调查。
+
+    > - Are you spending time with your family?
+    > - Yes.
+    > - Good, because a man that doesn’t spend time with his family can never
+    >   be a real man.
+    >
+    > - Don Vito Corleone, The Godfather
+
+    > Fredo, You are my brother, and I love you, But never take sides against
+    > the family again.
+    >
+    > - Michael Corleone, The Godfather Part II
+
+    这是家族企业的信任悖论。创业初期出于信任必须仰仗家里人，不自觉地就成了一个
+    家族企业。结果所有家庭成员都要求在这个企业担任要职。你如果用他，也许他不行
+    。可是如果你不用他，他对你有直接伤害权：他是敌人打击你的突破口。用，还是不
+    用，这是一个问题。
+
+    为什么是这样？因为 Michael 杀他们不是出于愤恨，不是为了报复，而是为了将来，
+    为了 business。
+
+    航天很有用，但真正有用，能带来大规模经济效益和科研应用的航天活动，是卫星、
+    太空望远镜和深空探测器，这些都是不需要载人的。
+
+    初级的想象力就是在日常生活中玩 “what if” 游戏。What if 老鼠会说话？What if
+    老鼠能驾驶玩具飞机？What if 老鼠能开玩具火车？
+
+    想要写一个像《指环王》，或者《哈利波特》，或者最近的《阿凡达》，这样有很多
+    人关心的故事来，所需要的是另外一个等级的想象力。一种不自由的想象力。
+
+    写幻想的世界名著，你必须构建一个完全自洽的想象世界。“自洽”，self-consistent
+    ，是一个非常高的要求。
+
+    那时候大概没有任何人能想到，此后五十年内，我们不但没有迎来宇航时代，甚至没
+    有人再次登录月球！
+
+    所以当我们渴望宇航时代的同时，我们应该先想想大航海时代。大航海有两种。一种
+    是中国的郑和下西洋模式：投入了很多人力物力，宣示了国力，赢得了赞美，但是终
+    归没有获得任何实际的利益，最后还是终止了。一种是欧洲模式：海盗也好、殖民者
+    也好、冒险家也好、为了某种主要是金钱上的利益，比如说香料，而出海远航，结果
+    的确获得了丰厚的物质回报，然后吸引更多人投入更大的力量，最后改变了整个时代
+    。
+
+    这些处于劣势地位的人被畅销书作家马尔科姆·格拉德威尔在其2013年的新书《大卫与
+    歌利亚》中称为“underdogs”。我的第一反应，“underdog”应该对应中文的“屌丝”。不
+    过“屌丝”似乎还有精神上被人嘲笑的意味，而“underdog”仅仅强调这个人在实力对比
+    上处于劣势 — 虽然处于劣势，他们还在继续战斗而没有退出。联想到骁骑校的网络小
+    说《匹夫的逆袭》，似乎可以用“匹夫”这个更中性的说法。不过即便你认为屌丝是应
+    该被嘲笑的，“underdog”也值得译为“屌丝”，因为他们使用的有些手段的确上不了台
+    面。
+
+    格拉德威尔说，想要战胜歌利亚，关键在于两点。
+
+      - 第一，你要知道你的不利条件，在某些情况下可能是你的有利条件；而巨人的所
+        谓有利条件，在某些情况下可能是他的不利条件。
+      - 第二，你绝对不能按照对手的打法去跟他玩，你有时候得使用非常规手段。
+
+    有人做过一个实验，让受试者做一套“认知反应测试（CRT）”题，这些题目中有些陷阱
+    ，一不留神就会答错。实验发现如果把测试试卷印的很难看，比如字非常小，读起来
+    很困难的情况下，受试者反而能进行更多的思考，成绩反而更高！失读症患者阅读的
+    时候，就有点这个意思。因为读的慢，他们被迫要深入思考。从这个意义上说失读症
+    反而成了一种“值得想要的困难”：他们的记忆力都很好，能用最小的阅读量把一件事
+    搞明白，很善于抓住本质和要点，而且还能给别人解释清楚。这就是为什么失读症患
+    者里面出人才。
+
+    劣势的好处还包括精神上的。二战期间德军对伦敦大轰炸，英国政府非常担心伦敦市
+    民可能会因为恐慌而逃离城市。可是轰炸真的来了，而且造成极大的人员损失之后，
+    政府惊奇的发现人们不但不恐慌，反而还非常淡定，甚至简直是这边空袭警报响着那
+    边老百姓该干啥干啥。不但如此，后人研究轰炸期间伦敦人写的日记，发现他们简直
+    是爱上了轰炸！他们产生了一种你怎么炸都炸不死我，我是不可战胜的的兴奋情绪！
+    这个效应其实是普遍的，民权运动中有个黑人领导者，Shuttlesworth，屡次遭到三K
+    党袭击，结果每一次躲过袭击之后他的勇气都会再升一级，他最后无所畏惧甚至获得
+    了一种宗教领袖般的气质。那些刺杀他的人简直就是来给他送经验值的。
+
+    商业上如此成功，难免会受到某些严肃读者的鄙视。一个最显然的批评是你这理论够
+    严谨吗？它能有多大的通用意义？
+
+    理论上，所有的匹夫球队都应该采用Ranadivé的屌丝打法。因为这是你赢球的唯一机
+    会。可是为什么绝大多数球队没有这么打呢？因为这种打法很难受，毫无乐趣，还有
+    舆论压力。只有那种绝望了但是还不想死的匹夫，才采用这种打法。
+
+    格拉德威尔说，一般有创造性的人物，都要有点特立独行（disagreeableness）的气
+    质：你要敢于做一些社会上通常认为不应该做的事。你不是去适应这个社会，而是让
+    这个社会去适应你。他们追求取胜，他们根本不追求别人的喜欢。
+
+    维护现有的社会格局和强调遵守游戏规则，那是高富帅的事。而犯规则是屌丝的特权
+    。
+
+    自控需要意志力。一般人可能认为意志力是一种美德，应该通过教育的方式提升思想
+    的境界来培养。然而实验表明意志力其实是一种生理机能。它就好像人的肌肉一样每
+    次使用都消耗能量，而且用多了会疲惫。在作者Baumeister本人领导的一个著名实验
+    中，作为受试者的学生们被要求事先禁食，全都饿着肚子来到实验室，然后他们被随
+    机地分为三组。学生们以为实验的目的是测试他们的智力。他们的任务是做几何题，
+    而他们不知道这些题其实都是无解的，实验真正测量的是他们愿意在题目上坚持多长
+    时间才放弃。控制组的学生直接做题，他们平均每人坚持了20分钟。而两个实验组学
+    生在做题之前则先被带到另一个房间，面对刚烤好的巧克力饼干以及一些萝卜。实验
+    人员告诉第一组学生可以随便吃饼干，但是要求第二组学生只能吃萝卜。你可以想象
+    自己在饥饿状态看着热气腾腾的饼干而不能吃是一种什么感觉，你需要强大的意志力
+    才能只吃萝卜！
+
+    第二组学生抵制了饼干的诱惑。然后两组学生都被带去做题，结果饼干组跟控制组一
+    样坚持了20分钟，而萝卜组只坚持了8分钟。唯一的解释是，萝卜组的意志力在抵制饼
+    干的时候被消耗掉了。
+
+    这就是为什么我们意志薄弱的时候不愿意做选择。本书提到，商家非常理解这个被称
+    之为“决策疲劳”的原理。买新车的时候往往会有很多升级配置的选项，而聪明的销售
+    总是让你刚来的时候先对一些花钱少的配置进行选择。等你连续决策到选累了以后，
+    他再向你介绍价格贵或者根本没用的选项，比如要不要来个防锈？而这时候你的意志
+    力已经没办法对抗他的推荐了。更有意思的是如果采取这种先易后难的选择顺序，顾
+    客对购物体验的评价往往还更高。
+
+    如果说小明是个精致的利己主义者，其实Joe也是。
+
+    高晓松说：“你不去问自己能为改变这个社会做些什么，却问我们你该找什么工作，你
+    觉得愧不愧对清华十多年的教育？”
+
+    常青藤的本质，是美国上层社会子弟上大学的地方。
+
+    所以精英大学本来就是精英阶层自己玩的东西，是确保他们保持统治地位的手段。自
+    己花钱赞助名校，让自己的孩子在这些大学里上学，然后到自己公司接管领导职位，
+    这件事外人几乎无法指责。哈佛是个私立大学，本来就没义务跟普通人讲“公平”。
+
+    《优秀的绵羊》透露了一点耶鲁大学的真实录取标准。如果你在某一方面有特别突出
+    的成就 — 一般小打小闹的奖项没用，必须是英特尔科学奖这样的全国性大奖 — 你肯
+    定能被录取。如果没有，那你就得“全面发展”— 对耶鲁来说，这意味着7到8门AP课程
+    和9到10项课外活动 — 即便如此也不能保证录取，还得看推荐信和家庭情况。至于亚
+    裔津津乐道的SAT考试成绩，没有太大意义。
+
+    如果名校不关心教育，那么它们关心什么呢？是声望，更确切的说，是资金。
+
+    为什么在真正的入学要求越来越高的情况下，名校还鼓励更多人申请？为了刷低录取
+    率。录取率是大学排名计算中非常重要的一项，越低越好。为什么大学把学生视为顾
+    客，不敢严格要求？因为毕业率也是排名标准之一，而且是越高越好。
+
+    refs and see also
+
+      - [美国人说的圣贤之道 « 学而时嘻之](http://www.geekonomics10000.com/926)
+      - [一点实用主义的学英语心得 « 学而时嘻之](http://www.geekonomics10000.com/870)
+      - [新闻全是鸡肋 « 学而时嘻之](http://www.geekonomics10000.com/437)
+      - [高中是个把人分类的机器 « 学而时嘻之](http://www.geekonomics10000.com/871)
+      - [能把穷人变成正常人的教学法 « 学而时嘻之](http://www.geekonomics10000.com/901)
+      - [哪种知识最可靠？ « 学而时嘻之](http://www.geekonomics10000.com/912)
+      - [有一种歧视叫自利 « 学而时嘻之](http://www.geekonomics10000.com/865)
+      - [怎样杀死海星 « 学而时嘻之](http://www.geekonomics10000.com/857)
+      - [夺魁者本色 « 学而时嘻之](http://www.geekonomics10000.com/829)
+      - [哈利波特说的普世价值 « 学而时嘻之](http://www.geekonomics10000.com/597)
+      - [科学新闻没告诉你的那些事儿 2 « 学而时嘻之](http://www.geekonomics10000.com/576)
+      - [《教父》：家族企业的信任悖论 « 学而时嘻之](http://www.geekonomics10000.com/411)
+      - [载人航天的确是形象工程 « 学而时嘻之](http://www.geekonomics10000.com/651)
+      - [宇航时代为何还未到来 « 学而时嘻之](http://www.geekonomics10000.com/915)
+      - [匹夫怎样逆袭 « 学而时嘻之](http://www.geekonomics10000.com/753)
+      - [科学的励志和励志的科学 « 学而时嘻之](http://www.geekonomics10000.com/655)
+      - [南方周末 - 清华教授程曜 绝食抗议背后](http://www.infzm.com/content/82443)
+
+[为什么在大公司工作，总是很无聊？ - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2009/06/why_working_in_a_big_company_is_so_boring.html)
+
+:   这种情况见得多了，这些大公司就精了。他们发现，不能让公司太依赖人才，而应该
+    让人才依赖公司才对头。管理层的最终作用，就是让谁离开了都无所谓，公司都能正
+    常运作。所以，他们把各个部门划分得很细很细，每个人负责的东西很单一。这样一
+    来，“术业有专攻”，效率上去了，经验积累了，工作都流程化了。渐渐地，公司的运
+    作流程化了。
+
+    总得来说，现在规模越大的公司，分工越细，对人才的要求就越低。反倒是小公司需
+    要多面手，但是很多人不屑于去，所以大家都开始抱怨。
+
+    如果仔细琢磨过大公司为什么要用这套 process/framework 来规范大家的工作呢，你
+    会发现大公司的 established process/framework 其实绝对也是很有价值的。这样等
+    于给你一个很高的标杆，告诉你今后如果自己创业自己做公司，做到什么样子算是好
+    公司。
+
+    有心的人，在哪里都不会无聊。
+
+    这种感觉，和剑客击败敌人之后长剑入鞘，和如今写好博客之后鼠标点击张贴按钮发
+    送出去，其实是一样的感觉。一种任务完成的满足感。呵呵。
+
+    refs and see also
+
+      - [丁峰的博客 » 以前是用笔写文章的](http://www.fengdingcn.org/blog/20061009/fountain-pen.html)
+
+[Unix目录结构的来历 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2012/02/a_history_of_unix_directory_structure.html)
+
+:   于是，他们加上了第二盘.
+
+    从此，这种目录结构就延续了下来。随着硬盘容量越来越大，各个目录的含义进一步
+    得到明确。
+
+      - `/`：存放系统程序，也就是At&t开发的Unix程序。
+      - `/usr`：存放Unix系统商（比如IBM和HP）开发的程序。
+      - `/usr/local`：存放用户自己安装的程序。
+      - `/opt`：在某些系统，用于存放第三方厂商开发的程序，所以取名为option，意为"选装"。
+
+    这说明了，2的补码表示法可以将加法运算规则，扩展到整个整数集，从而用一套电路
+    就可以实现全部整数的加法。
+
+    这就证明了，在正常的加法规则下，可以利用2的补码得到正数与负数相加的正确结果
+    。换言之，计算机只要部署加法电路和补码电路，就可以完成所有整数的加法。
+
+    "简单原则"----尽量用简单的方法解决问题----是"Unix哲学"的根本原则。这也就是
+    著名的KISS（keep it simple, stupid），意思是"保持简单和笨拙"。
+
+    Make it run, then make it right, then make it fast.
+
+    目前，最强大的优化工具恐怕是Delete键。
+
+    refs and see also
+
+      - [Understanding the bin, sbin, usr/bin , usr/sbin split](http://lists.busybox.net/pipermail/busybox/2010-December/074114.html)
+      - [关于2的补码 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2009/08/twos_complement.html)
+
+[理解OAuth 2.0 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html)
+
+[使用 Make 构建网站 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/03/build-website-with-make.html)
+
+:   Make是最常用的构建工具，诞生于1977年，主要用于C语言的项目。但是实际上 ，任
+    何只要某个文件有变化，就要重新构建的项目，都可以用Make构建。
+
+    目前，网站项目（尤其是Node.js项目）有三种构建方案。
+
+      - 方案一：基于Node.js的专用构建工具（Grunt、Gulp、Brunch、Broccoli、Mimosa）
+      - 方案二：npm run命令（教程1、2、3）
+      - 方案三：make命令
+
+    ```makefile
+    $ make -f rules.txt
+    # 或者
+    $ make --file=rules.txt
+    ```
+
+    上面代码指定make命令依据rules.txt文件中的规则，进行构建。
+
+    需要注意的是，每行命令在一个单独的shell中执行。这些Shell之间没有继承关系。
+
+    ```makefile
+    var-lost:
+        export foo=bar
+        echo "foo=[$$foo]"
+    ```
+
+    上面代码执行后（make var-lost），取不到foo的值。因为两行命令在两个不同的进程执行。一个解决办法是将两行命令写在一行，中间用分号分隔。
+
+    ```makefile
+    export foo=bar; echo "foo=[$$foo]"
+
+    export foo=bar; \
+    echo "foo=[$$foo]"
+    ```
+
+    ```makefile
+    .ONESHELL:
+    var-kept:
+        export foo=bar;
+        echo "foo=[$$foo]"
+    ```
+
+    正常情况下，make会打印每条命令，然后再执行，这就叫做回声（echoing）。
+    在命令的前面加上 `@`，就可以关闭回声。
+
+    ```makefile
+    @echo $$HOME
+    ```
+
+    ```makefile
+    PATH  := node_modules/.bin:$(PATH)
+    SHELL := /bin/bash
+
+    js_files = $(shell find ./lib -name '*.js')
+
+    lint: $(js_files)
+        jshint $?
+
+    build/templates.js: templates/*.handlebars
+        mkdir -p $(dir $@)
+        handlebars templates/*.handlebars > $@
+
+    template: build/templates.js
+
+    source_files := $(wildcard lib/*.coffee)
+    build_files  := $(source_files:lib/%.coffee=build/%.js)
+
+    build/%.js: lib/%.coffee
+        coffee -co $(dir $@) $<
+
+    coffee: $(build_files)
+
+    JS_FILES := $(wildcard build/*.js)
+    OUTPUT := build/bundle.js
+
+    concat: $(JS_FILES)
+        cat $^ > $(OUTPUT)
+
+    app_bundle := build/app.js
+
+    $(app_bundle): $(build_files) $(template_js)
+        uglifyjs -cmo $@ $^
+
+    min: $(app_bundle)
+    ```
+
+    ```makefile
+    UGLIFY ?= uglify
+
+    $(app_bundle): $(build_files) $(template_js)
+        $(UGLIFY) -cmo $@ $^
+    ```
+
+    `make UGLIFY=node_modules/.bin/jsmin min`{.bash}
+
+    ```makefile
+    PROJECT = "My Fancy Node.js project"
+
+    all: install test server
+
+    test: ;@echo "Testing ${PROJECT}....."; \
+        export NODE_PATH=.; \
+        ./node_modules/mocha/bin/mocha;
+
+    install: ;@echo "Installing ${PROJECT}....."; \
+        npm install
+
+    update: ;@echo "Updating ${PROJECT}....."; \
+        git pull --rebase; \
+        npm install
+
+    clean : ;
+        rm -rf node_modules
+
+    .PHONY: test server install clean update
+    ```
+
+    refs and see also
+
+      - [Make 命令教程 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/02/make.html)
+      - [Building JavaScript projects with Make – The If Works](https://blog.jcoglan.com/2014/02/05/building-javascript-projects-with-make/)
+
+[世界第一个机器人 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2016/01/first-robot.html)
+
+:   "机器人之父"恩格尔伯格去世。
+
+    1950年，恩格尔伯格读到了阿西莫夫的小说集《我，机器人》（I， Robot），爱不释
+    手，产生了制造机器人的念头。
+
+    1969年，日本人将恩格尔伯格请到东京演讲，指导日本汽车厂商研发机器人。
+
+    川崎重工引进了Unimation机器手臂。这件事对日本汽车工业有深远影响，日本后来超
+    过美国成了"机器人王国"。恩格尔伯格在这个过程中扮演了重要角色，他在日本的知
+    名度甚至比在美国还要大。
+
+    这导致他在1983年将Unimation公司以1.07亿美元的价格，卖给了西屋公司，退出了工
+    业机器人行业。
+
+    他认为，机器人未来一定无处不在。他更想作为"家用机器人之父"被人们铭记。
+
+    第一件是1月24日，学科创始人之一的马文・明斯基（Marvin Minsky）教授因为脑溢
+    血去世。
+
+    明斯基深受罗素的逻辑学思想影响，认为人的智能可以用数学逻辑表达。他受到神经
+    科学的启发，相信"智能"不过是无数"非智能"的神经细胞互相作用的结果。人与机器
+    之间没有本质的差别。如果能模拟神经细胞的行为，进而组成一张人工的"神经网络"
+    ，那么理论上就能模拟出人的大脑，也就是所谓"智能"。
+
+    他还描述过一个科幻电影般的场景，告诫大家小心，也许某天一台超级电脑突然做出
+    决定，要用地球上所有资源造出更多的超级电脑，达到它自己的目的。这时，人类就
+    会有危险。不过，他又补充说，这种场景发生的可能性不大，因为相信人类部署"人工
+    智能"之前，会进行充分的测试。
+
+    Walde:
+
+    - 活着是世上最稀有的事情。大多数人只是存在而已。To live is the rarest thing in the world. Most people exist, that is all.
+    - 时尚的东西就是丑陋的东西，丑到令人无法容忍，每六个月就非得换掉不可。Fashion is a form of ugliness so intolerable that we have to alter it every six months.
+    - 单身汉应该被课以重税。某些人比其他人更快乐是很不公平的。Bachelors should be heavily taxed. It is not fair that some men should be happier than others.
+    - 人生就是一件蠢事追着另一件蠢事而来，而爱情则是两个蠢东西追来追去。Life is one fool thing after another whereas love is two fool things after each other.
+    - 悬念是可怕的。我希望它一直延续下去。This suspense is terrible. I hope it will last.
+    - 世界上只有一件比被人谈论更糟糕的事，那就是没人谈论你。There is only one thing in the world worse than being talked about, and that is not being talked about.
+
+    大多数显示器的刷新频率是60Hz，为了与系统一致，以及节省电力，浏览器会自动按
+    照这个频率，刷新动画（如果可以做到的话）。
+
+    一秒之间能够完成多少次重新渲染，这个指标就被称为"刷新率"，英文为FPS（frame
+    per second）。60次重新渲染，就是60FPS。
+
+    Chrome浏览器开发者工具的Timeline面板，是查看"刷新率"的最佳工具。这一节介绍
+    如何使用这个工具。
+
+    refs and see also
+
+      - ["人工智能之父"马文・明斯基 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2016/02/minsky.html)
+      - [王尔德的几句话 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2006/12/quotes_from_oscar_wilde.html)
+      - [网页性能管理详解 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/09/web-page-performance-in-depth.html)
+
+[How did clipboard.js get 5000 stars in a few days? — Medium](https://medium.com/@zenorocha/how-did-clipboard-js-get-5000-stars-in-a-few-days-2b2248ba7bd8#.acbvzi9ly)
+
+:   Somebody asked me "how did the repo achieve this impressive feat"? And few
+    people answered that it was because of Hacker News.
+
+    But the truth is, it has nothing to do with Hacker News. Here are few
+    different factors that contributed to that:
+
+      - Experience: There was a LOT of hard work involved and lessons learned
+        along the way.
+      - Credibility: I try to offer as much value as I can for those followers
+        every day.
+      - Docs & demos: My advice is that you need to spend more time writing and
+        improving your documentation than writing code.
+      - Timing: I wrote clipboard.js in a private repo and waited until Firefox
+        41 was released.
+      - Working is not enough: Most developers just make things work and that’s
+        it.  I spent a good amount of time trying to make this library smaller,
+        trying to make the public API easier, and refactoring the source code
+        for better readability.
+      - Knowing your audience: Everybody hates Flash and everybody hates
+        bloated frameworks. Everybody loves a simple API and everybody loves
+        GitHub’s copy to clipboard.
+
+---
+
+![IE](https://cloud.githubusercontent.com/assets/398893/3528325/20373e76-078e-11e4-8e3a-1cb86cf506f0.png) | ![Chrome](https://cloud.githubusercontent.com/assets/398893/3528328/23bc7bc4-078e-11e4-8752-ba2809bf5cce.png) | ![Firefox](https://cloud.githubusercontent.com/assets/398893/3528329/26283ab0-078e-11e4-84d4-db2cf1009953.png) | ![Opera](https://cloud.githubusercontent.com/assets/398893/3528330/27ec9fa8-078e-11e4-95cb-709fd11dac16.png) | ![Safari](https://cloud.githubusercontent.com/assets/398893/3528331/29df8618-078e-11e4-8e3e-ed8ac738693f.png)
+--- | --- | --- | --- | --- |
+IE 9+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ |
+
+[![Davidson Fellipe](http://gravatar.com/avatar/054c583ad5dc09a861874e14dcb43e4c?s=70)](https://github.com/davidsonfellipe) | [![Giovanni Keppelen](http://gravatar.com/avatar/8f5c490b5b30ac6d655eced70cea4e5f?s=70)](https://github.com/keppelen) | [![Jaydson Gomes](http://gravatar.com/avatar/572696200604e59baa59ee90d61f7d02?s=70)](https://github.com/jaydson)
+--- | --- | --- | --- | --- | --- | ---
+[Davidson Fellipe](https://github.com/davidsonfellipe)<br>Globo.com | [Giovanni Keppelen](https://github.com/keppelen)<br>Planedia | [Jaydson Gomes](https://github.com/jaydson)<br>Terra
+
+<div class="tzx-shake">
+![](https://cloud.githubusercontent.com/assets/398893/3528424/3368fc18-078f-11e4-9226-cdda8e13e5c9.jpg)
+</div>
+
+`^M` -> `\r`
 
 competitive.
 
-human capital. 
+human capital.
 
-provincial investment. 
+provincial investment.
 
 the case themselves warrant srutiny, introspecition.
 
@@ -90,9 +964,9 @@ linux, console: vi file& (bad !!);
 
 楼主你应该这么发：我自认全国C++水平第一 谁能破？
 你会看到和现在完全不同的答案…
-一般来说有这种想法的人只是因为旁边的人太弱了自己有点能力却膨胀的太厉害了◉‿◉ 
+一般来说有这种想法的人只是因为旁边的人太弱了自己有点能力却膨胀的太厉害了◉‿◉
 
-有啥好抵制的，他们难道有什么值得拿上台面的作品吗？ 
+有啥好抵制的，他们难道有什么值得拿上台面的作品吗？
 
 [javascript - What is DOM Event delegation? - Stack Overflow](http://stackoverflow.com/questions/1687296/what-is-dom-event-delegation)
 
@@ -537,6 +1411,12 @@ Itinerary, `[aɪ'tɪnərɛri]` n. 旅程，路线； 旅行日程
 [张国荣先生的音乐作品赏析　文/独爱小珂](https://site.douban.com/leslie/widget/notes/13621225/note/285032746/)
 
 [JavaScript 标准参考教程（alpha） -- JavaScript 标准参考教程（alpha）](http://javascript.ruanyifeng.com/)
+
+[ECMAScript 6入门](http://es6.ruanyifeng.com/)
+
+:   2015年，我只做成了一件事，就是写完这本书（第二版）。想想有些伤感，一年的起起伏伏，到头来只是一本书稿。
+
+    写书是一件寂寞的事，仿佛一个人坐在电脑前的漫漫长征。现在，我终于可以把它交给你了。你拿在手中的，就是我的这一年，所有的诚意和坚持。
 
 [lydell/dual: Dual is an AutoHotkey script that lets you define dual-role modifier keys easily.](https://github.com/lydell/dual)
 
@@ -1152,7 +2032,137 @@ A girl likes to be crossed in love now and then.
 
 [图灵社区 : 图书 : Chrome扩展及应用开发（首发版）](http://www.ituring.com.cn/book/1421)
 
-[图灵社区 : 图书 : 翻译漫谈——怎样翻译更地道](http://www.ituring.com.cn/book/1225)
+[图灵社区: 合集 : 翻译漫谈——怎样翻译更地道](http://www.ituring.com.cn/minibook/707)
+
+:   [图灵社区 : 图书 : 科技翻译的特点](http://www.ituring.com.cn/article/42252)
+
+    :   尽管看起来比较直白简陋，但很多技术文献本身就是直白简陋的，翻译时一味追求译
+        文的“顺”，不但丧失了科技文章看重的准确信，即便从翻译本身来说，也有涂脂抹粉
+        、文过饰非的嫌疑。
+
+        物理、生物等领域的专有名词许多都是组合而成，翻译相对容易，如magnetic
+        field翻译为“磁场”，haemoglobin翻译为“血红蛋白”（希腊文的haima“血”和拉丁
+        文的globin“球”）。
+
+        比如buffer和cache两个词，本来buffer指的是“逃生气垫”，cache指的是“隐匿的
+        存放处”，引申出计算机里的“缓冲”和“缓存”是非常形象自然的。中文的“缓存”和
+        “缓冲”属于针对具体领域专门创造的术语，虽然已经约定俗成，毕竟割断了原来
+        的形象感，所以很多初学者见到“缓存”和“缓冲”以为是全新发明的东西，甚至会
+        混淆这两个名字相近的概念，也需要花很多时间去记忆“缓存是透明的”，却不知
+        道cache本来就有“隐匿存放”的意思。
+
+        好的例子如表示空气污染级别的beyond index翻译为“爆表”，即便不认识beyond
+        index的人，一看“爆表”也知道意思。坏的典型比如case-sensitive翻译为“大小
+        写敏感”——据我观察，几乎没有初学者能想明白“大小写敏感”的什么意思，了解之
+        后不少人还以为IT行业的术语就是这个怪调调。其实，真正的原因是这个译名造
+        错了。查阅词典可知，sensitive除去表示“感觉上的敏锐”，还有一个意思是“有
+        能力区别和分辨”，所以case-sensitive的真正意思应当是“能区分大小写”
+
+        译者不够谨慎造错一个术语，会影响到无数后来者的学习。
+
+        比如plug and play，大家都知道这是“即插即用”，如果在讲解程序的文章里出现
+        ，比如Having these code snippets, are you ready to plug and play? ，翻
+        译为“即插即用”就不合适了，因为这里作者是调侃性地借鉴硬件的“即插即用”，
+        谈的并不是硬件标准，而是“把代码直接拿过来用”的做法。所以不妨翻译为“即抄
+        即用”，这样保留了愿意，读音也接近“即插即用”，便于读者理解，甚至原文的一
+        点点幽默感也保留下来。如果译者想不到“即抄即用”，至少也应当在“即插即用”
+        外面打个引号。
+
+        其实character class里的class只表示“组合/集合”，类似表示“班级”的class，
+        所以应当翻译为“字符组”更合适。
+
+    [图灵社区 : 图书 : 前言](http://www.ituring.com.cn/article/47924)
+
+    :   翻译是一门非常强调实践并依赖练习的手艺活，虽然不要求科班出身和训练，但
+        也不是随便就能学会的。如果你对翻译有兴趣，却总是不得其门而入，或许可以
+        看看《翻译漫谈》。这本书是作者从翻译“票友”出发，走“野路”逐渐成长为翻译“
+        熟手”的经验总结，看来辛苦，却不稀奇。作者走过的这条路，普通人应当也可以
+        走得通。
+
+    [图灵社区 : 图书 : 翻译概论](http://www.ituring.com.cn/article/40661)
+
+    :   [图灵社区 : 图书 : 我的翻译经历](http://www.ituring.com.cn/article/40287)
+
+        :   这段翻译的经历给了我两点启示：
+
+              - 第一，翻译是一个很累人的活；
+              - 第二，翻译虽然累，但坚持下来还是能做完的。
+
+            《精通正则表达式》2007年面世以来重印7次，但翻译的报酬其实是非常低的
+            （我想这也是大部分程序员做翻译“心有余而力不足”的原因之一）；最大的
+            收获来自于意想不到的方面：面对庞杂的任务，如何鞭策自己日复一日地去
+            执行，达成自己的目标。
+
+            也正是因为有了翻译《精通正则表达式》的经历，我深刻理解了“日拱一卒，
+            不期速成”的意义。之后的业余时间里，我看了好几本关于翻译的书籍，尤其
+            是钱歌川先生的《英文疑难详解》和《英文疑难详解（续）》，每天早上认
+            真看几题，并做好笔记。也正因为有这些积累，加上之前翻译《精通正则表
+            达式》时锻炼出的意志，之后面对《技术领导之路》和《程序员的职业素养
+            》时，才可以以自己满意的状态去完成翻译。
+
+        [图灵社区 : 图书 : 做翻译应当具备的能力](http://www.ituring.com.cn/article/40675)
+
+        :   要想做好翻译，首先要**有良好的英文阅读能力**。
+
+            具体来说，良好的英文阅读能力要求译者能够全面准确地理解原文——包括文
+            字表达的思想，单词的确切含义，结构的组织，还有“看不见”的其他内容，
+            譬如语气、双关、典故……这样才能保证译文读者尽可能完整地接受原文的信
+            息。
+
+            economics in one lesson翻译成“一个教训中的经济学”，仅仅从字面来看，
+            这是算不上错的，但如果我们具备基本的英文阅读能力就会知道，真正的意
+            思应当是“一堂课就能说明白的经济学”（“经济学一点通”更直白，当然这是
+            后话）。
+
+            要想做好翻译的第二个建议是，**要有好的词典**。
+
+            词典很重要，尤其是译者，一般手头必须有以下五本词典：《美国传统词典
+            》、《Merraim-Webster词典》、《Collins Cobuild词典》、《英汉大词典
+            》、《现代汉语词典（双语版）》。
+
+            好的词典一般都包括thesaurus（同义词典），而thesaurus很有用。许多时
+            候我们明明知道一个单词的意思，却绞尽脑汁也想不到合适的译法，但查阅
+            thesaurus往往可以迅速找到合适的同义词，曲径通幽，直接拿过来放在译文
+            里即可。就拿大家都熟悉的单词hot来说，除去众所周知的“热”，它还有个意
+            思是“获得广泛喜爱或赞同“（enjoying widespread favor or approval ）
+            ，但如何翻译最合适？如果你查阅thesaurus，可知这个意思的同义词有pop
+            、popularized、vogue，所以如果在口语里，不妨直接翻译为“潮”。
+
+            好的词典会提供若干精当的例句，如果遇上英汉词典，例句也会翻译成中文
+            ，这样我们就能摆脱“词对词”的刚性限制，在语境中“认识”这个词语。
+
+            要想做好翻译的第三点建议是，译者应当**有相当的知识积累，还要有一定
+            的查找资料的能力**。
+
+            比如“Only when one distinguishes beauty, does one create the
+            unattractive.”，懂英文的人都知道它的意思是“只有能识别美丽，才可以创
+            造不吸引人的东西”，但这绝不是古人说的原话，如果译者熟悉《道德经》，
+            就可以还原为“天下皆知美之为美，斯恶矣”，读来感觉截然不同。
+
+            **要想做好翻译，还必须持续培养自己对中文的感觉。**
+
+
+        [图灵社区 : 图书 : 翻译是艺术还是科学？](http://www.ituring.com.cn/article/42485)
+
+        [图灵社区 : 图书 : 直译好还是意译好？](http://www.ituring.com.cn/article/42486)
+
+        [图灵社区 : 图书 : 面对典故，多走一步](http://www.ituring.com.cn/article/40292)
+
+        [图灵社区 : 图书 : 翻译的步骤](http://www.ituring.com.cn/article/40288)
+
+        [图灵社区 : 图书 : 翻译的两难](http://www.ituring.com.cn/article/40671)
+
+        [图灵社区 : 图书 : 翻译如铺路](http://www.ituring.com.cn/article/40672)
+
+    [图灵社区 : 图书 : 译文讲习](http://www.ituring.com.cn/article/40660)
+
+    [图灵社区 : 图书 : 实战经验](http://www.ituring.com.cn/article/40662)
+
+    [图灵社区 : 图书 : 参考书目](http://www.ituring.com.cn/article/42494)
+
+    refs and see also
+
+      - [Download International Style Guides - Microsoft | Language Portal](https://www.microsoft.com/Language/en-US/StyleGuides.aspx)
 
 [你离让007合不拢腿的邦女郎，也许就差这几件单品 - 识装 - 知乎专栏](http://zhuanlan.zhihu.com/p/20365840)
 
@@ -4578,7 +5588,7 @@ f JS Fiddle ( http://jsfiddle.net/qAHC2/ ) is similar to JS
     的小分子结构需要两个小时；预测两个小分子的反应产物需要整整一天。我不认为地
     球上有一台超算能在人类可接受的时间内算出某个电池结构的电量。
 
-    refs
+     refs and see also
 
       - [电池技术为什么如此高深莫测，以至于一直是手机等相关行业的短板？](https://www.zhihu.com/question/27604615/answer/37295615)
 
@@ -5496,7 +6506,7 @@ But you can still build the front end and load the unpacked extensions. Here is 
     `<p id="dummy" data-foo="hello">world</p>`
       ~ <p id="dummy" data-foo="hello">world</p>
 
-    refs
+     refs and see also
 
       - <http://thedesignspace.net/MT2archives/000316.html>
       - [Target Only External Links | CSS-Tricks](https://css-tricks.com/snippets/jquery/target-only-external-links/)
@@ -5947,7 +6957,7 @@ single quote 	222
         ```
     </div>
 
-    refs
+     refs and see also
 
       - [Egg.js - A Simple Way to Add Easter Eggs to Your Site](http://thatmikeflynn.com/egg.js/)
 
@@ -6515,7 +7525,7 @@ $(document).ready(function(){
 
     `background-color:`{.css} <span style="background-color: DodgerBlue;">DogerBlue</span>;
 
-    Refs
+     refs and see also
 
       - [ID selectors - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors)
       - [Attribute selectors - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
@@ -6779,7 +7789,7 @@ In early development.
     Mixed-CRLF+LF+CR | as-is      | as-is      | as-is | as-is      | as-is | as-is
     ```
 
-    refs
+     refs and see also
 
       - [Git 1.6.4 beta on Windows (msysgit) - Unix or DOS line termination - Stack Overflow](http://stackoverflow.com/questions/1249932/git-1-6-4-beta-on-windows-msysgit-unix-or-dos-line-termination/1250133#1250133)
 
@@ -6846,7 +7856,7 @@ In early development.
         all: foo.o lib/bar.o
         ```
 
-    refs
+     refs and see also
 
       - [GNU make](http://www.gnu.org/software/make/manual/make.html#Setting)
 
@@ -7785,7 +8795,7 @@ epiphany `[ɪ'pɪfəni]`
     #. 想不起来脚趾怎么说，说成了 foot finger，结果对方笑趴下了
     #. 一个哥们在国外旅游时忘了吸管的英文叫啥，结果说成了sucker...
 
-    Refs
+     refs and see also
 
     #. [舌尖上的忘词&背单词的秘诀](http://mp.weixin.qq.com/s?__biz=MjM5NTExMTk5MA==&mid=409398412&idx=1&sn=a592c82fd0a57b15559832c983033ca8&scene=0#wechat_redirect)
 
@@ -8002,7 +9012,7 @@ OpenGL: <http://www.opengl.org/resources/libraries/glut/glutdlls37beta.zip>
     - glut.lib glut32.lib ==> `C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\lib`
     - glut.dll glut32.dll ==> `C:\Windows\System32`
 
-Refs
+refs and see also
 
 :   #. <http://stackoverflow.com/questions/12954821/cannot-find-or-open-the-pdb-file-in-visual-studio-c-2010/12954908#12954908>
     #. <http://fisnikhasani.com/error-lnk1123-failure-during-conversion-to-coff-file-invalid-or-corrupt/>
@@ -8354,7 +9364,7 @@ pdf2img `@`{.tzx-anchor #pdf2img}
     pdfcrop file.pdf cropped.pdf
     ```
 
-    refs
+     refs and see also
 
       - [Note: 批量转换PPT（bash) - gnat - 博客园](http://www.cnblogs.com/gnat-tang/p/3536745.html)
       - [Note: pdfcrop - gnat - 博客园](http://www.cnblogs.com/gnat-tang/p/3536750.html)
@@ -10172,7 +11182,7 @@ More quotes
     #. 给我一个机会，我想做好人！ *无间道*
     #. 做人如果没有梦想，那跟咸鱼有什么区别？ *少林足球*
 
-Refs
+refs and see also
 
 :   * [AFI 100 Year ... 100 Movie Quotes](http://en.wikipedia.org/wiki/AFI%27s_100_Years...100_Movie_Quotes)
     * <http://www.lz13.cn/jingdiantaici/7987.html>
@@ -10282,7 +11292,7 @@ Automatic Equation Numbering
     </script>
     ```
 
-Refs
+refs and see also
 :   * [MathJax Document](http://docs.mathjax.org/en/latest/mathjax.html)
 
 ---
@@ -11340,7 +12350,7 @@ Exponential
 
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/ExpIPi.gif/300px-ExpIPi.gif)
 
-Refs
+refs and see also
 
 :   * [Function | Wikipedia][function]
     * [Affine Transformation](http://en.wikipedia.org/wiki/Affine_transformation)
@@ -11511,7 +12521,7 @@ The Conscience of a Hacker
     _______________________________________________________________________________
     ~~~
 
-Refs
+refs and see also
 
 :   * [黑客的价值观 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/2439.html)
     * [The Hacker's Code](http://muq.org/~cynbe/hackers-code.html)
@@ -11869,7 +12879,7 @@ Etymology of Mathematical Terms
     | Secant | ? | The Latin word *secare* means "to cut"; a secant is a line that cuts a circle |
     | Modulo | ? | From Latin, "measure" |
 
-Refs
+refs and see also
 :   * The First Course in Abstract Algebra with Applications: url to douban
 
 ---
@@ -14264,7 +15274,7 @@ if(root->getChild(i)->getName().compare("Hello") == 0) {
 }
 ```
 
-Refs
+refs and see also
 
   - [OpenGL 透视投影 齐次裁剪空间 深度缓存 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/45721643)
   - [Qt 小技巧 记录 - Emacs 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/zhuyingqingfen/article/details/44019915)
@@ -14981,7 +15991,11 @@ shift, or (c) a usual space key.
 * 不要停下来，再来 30 个还能记住，这样就能突破极限。“原来自己也可以。”
 * 枯坐良久，甚觉无聊，还是背单词把。
 
-maverick `['mævrɪk]`
+maverick `['mævrɪk]`,
+n, 没打烙印的动物；持不同意见的人
+vt. 用不正当手段获取
+vi. 迷途；背离
+adj. 未打烙印的；行为不合常规的；特立独行的
 
 Elon (`eelon` not `eyelon`) Musk
 
@@ -15270,6 +16284,11 @@ if __name__ == '__main__':
       - **Hubris**: The quality that makes you write (and maintain) programs
         that other people won't want to say bad things about.
 
+    Perl语言的发明人Larry Wall说，好的程序员有3种美德： 懒惰、急躁和傲慢（Laziness, Impatience and hubris）。
+
+    refs and see also
+      - [懒惰、急躁和傲慢（Laziness, Impatience and hubris） - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2006/05/laziness_impatience_and_hubris.html)
+
 ---
 
 大小写方式（下划线只是为了突出分割处）
@@ -15395,7 +16414,7 @@ case "$1" in
 
 [Good Old & Dirty printf() Debugging in a Non-console C/C++ Application or DLL - CodeProject](http://www.codeproject.com/Tips/227809/Good-old-dirty-printf-debugging-in-a-non-console-C)
 
-http://www.cnblogs.com/xianqingzh/archive/2011/07/08/2101510.html
+:   <http://www.cnblogs.com/xianqingzh/archive/2011/07/08/2101510.html>
 
 [《Debug Hacks》和调试技巧 | MaskRay](http://maskray.me/blog/2013-07-25-debug-hacks)
 
@@ -15723,7 +16742,7 @@ Stress & Syllabification
 * intonation `/ˌɪntɵˈneɪʃən/`
 * Mikey `/ˈmaɪki/`, Myki `/ˈmaɪ.kiː/`
 
-Refs
+refs and see also
 
 #. [Help:IPA for English - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Help:IPA_for_English)
 
@@ -15834,7 +16853,7 @@ COMMITMENT IS THE KEY
 6. Authority: Directed Deference
 7. Scarcity: The Rule of the Few
 
-Refs
+refs and see also
 
 #. [我在苏州被和尚骗了, 那和尚一定熟读《影响力》 | 马牛不是人](http://www.manio.org/cn/influence-i-was-treated-by-mock/)
 #. [【豆总摘】大纲和重点──看完不用看书了 (评论: 影响力)](http://book.douban.com/review/5046071/)
@@ -16892,8 +17911,10 @@ AdaBoost
 
 ![parental advisory](http://img.xiami.net/images/album/img82/28482/4126011392865064_2.jpg)
 
-#. &#x2611; [User Ciro Santilli 六四事件 法轮功 包卓轩 - Stack Overflow](http://stackoverflow.com/users/895245/ciro-santilli-%e5%85%ad%e5%9b%9b%e4%ba%8b%e4%bb%b6-%e6%b3%95%e8%bd%ae%e5%8a%9f-%e5%8c%85%e5%8d%93%e8%bd%a9)
-#. &#x2611; [User Yu Hao - Stack Overflow](http://stackoverflow.com/users/1009479/yu-hao)
+this man... is ... I don't know what to say...
+
+  - [User Ciro Santilli 六四事件 法轮功 包卓轩 - Stack Overflow](http://stackoverflow.com/users/895245/ciro-santilli-%e5%85%ad%e5%9b%9b%e4%ba%8b%e4%bb%b6-%e6%b3%95%e8%bd%ae%e5%8a%9f-%e5%8c%85%e5%8d%93%e8%bd%a9)
+  - [User Yu Hao - Stack Overflow](http://stackoverflow.com/users/1009479/yu-hao)
 
 ---
 
@@ -16905,18 +17926,22 @@ back off from '`\0`'
 
 `gilarus`，快乐的基因, `nomados`，流浪的基因
 
-#. &#x2610; (hex: `&#x2610;` / dec: `&#9744`;): ballot box (empty, that's how it's supposed to be)
-#. &#x2611; (hex: `&#x2611;` / dec: `&#9745`;): ballot box with check
-#. &#x2612; (hex: `&#x2612;` / dec: `&#9746`;): ballot box with x
-#. &#x2713; (hex: `&#x2713;` / dec: `&#10003`;): check mark, equivalent to `&checkmark;` and `&check;` in most browsers
-#. &#x2714; (hex: `&#x2714;` / dec: `&#10004`;): heavy check mark
-#. &#x2717; (hex: `&#x2717;` / dec: `&#10007`;): ballot x
-#. &#x2718; (hex: `&#x2718;` / dec: `&#10008`;): heavy ballot x
+utf-8 chars
+
+  - &#x2610; (hex: `&#x2610;` / dec: `&#9744`;): ballot box (empty, that's how it's supposed to be)
+  - &#x2611; (hex: `&#x2611;` / dec: `&#9745`;): ballot box with check
+  - &#x2612; (hex: `&#x2612;` / dec: `&#9746`;): ballot box with x
+  - &#x2713; (hex: `&#x2713;` / dec: `&#10003`;): check mark, equivalent to `&checkmark;` and `&check;` in most browsers
+  - &#x2714; (hex: `&#x2714;` / dec: `&#10004`;): heavy check mark
+  - &#x2717; (hex: `&#x2717;` / dec: `&#10007`;): ballot x
+  - &#x2718; (hex: `&#x2718;` / dec: `&#10008`;): heavy ballot x
 
 Checking out web fonts for tick symbols? Here's a ready to use s
 
-#. &#x2611; [Unicode Character 0x2713 - "✓" from Unicode Map](http://www.unicodemap.org/details/0x2713/index.html)
-#. &#x2611; [Tick symbol in HTML/XHTML - Stack Overflow](http://stackoverflow.com/questions/658044/tick-symbol-in-html-xhtml)
+refs and see also
+
+  - [Unicode Character 0x2713 - "✓" from Unicode Map](http://www.unicodemap.org/details/0x2713/index.html)
+  - [Tick symbol in HTML/XHTML - Stack Overflow](http://stackoverflow.com/questions/658044/tick-symbol-in-html-xhtml)
 
 ---
 
@@ -16927,10 +17952,10 @@ Try online: [The Bézier Game](http://bezier.method.ac/)
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/B%C3%A9zier_3_big.gif/240px-B%C3%A9zier_3_big.gif)
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/B%C3%A9zier_4_big.gif/240px-B%C3%A9zier_4_big.gif)
 
-Refs
+refs and see also
 
-#. &#x2611; [Bézier curve - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/B%C3%A9zier_curve)
-#. &#x2611; [Bézier Curve -- from Wolfram MathWorld](http://mathworld.wolfram.com/BezierCurve.html)
+  - [Bézier curve - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/B%C3%A9zier_curve)
+  - [Bézier Curve -- from Wolfram MathWorld](http://mathworld.wolfram.com/BezierCurve.html)
 
 ---
 
@@ -17006,13 +18031,13 @@ predecessor TrueType, retaining TrueType's basic structure and adding many
 intricate（复杂的） data structures for prescribing typographic behavior.
 **OpenType is a registered trademark of Microsoft Corporation.**
 
-Refs
+refs and see also
 
-#. &#x2611; [Computer font - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Computer_font#OUTLINE)
-#. &#x2611; [PostScript fonts - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/PostScript_fonts)
-#. &#x2611; [OpenType - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/OpenType)
-#. &#x2611; [Web Open Font Format - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Web_Open_Font_Format)
-#. &#x2611; [TrueType - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/TrueType)
+  - [Computer font - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Computer_font#OUTLINE)
+  - [PostScript fonts - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/PostScript_fonts)
+  - [OpenType - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/OpenType)
+  - [Web Open Font Format - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Web_Open_Font_Format)
+  - [TrueType - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/TrueType)
 
 ---
 
@@ -17052,11 +18077,11 @@ $ git remote add origin url.git
 $ git push origin master
 ```
 
-Refs
+refs and see also
 
-#. &#x2611; [github - Git push existing repo to a new and different remote repo server? - Stack Overflow](http://stackoverflow.com/questions/5181845/git-push-existing-repo-to-a-new-and-different-remote-repo-server)
-#. &#x2611; [Changing a remote's URL - User Documentation](https://help.github.com/articles/changing-a-remote-s-url/)
-#. &#x2611; [git命令之git remote的用法 - wangjia55的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/wangjia55/article/details/8802490)
+  - [github - Git push existing repo to a new and different remote repo server? - Stack Overflow](http://stackoverflow.com/questions/5181845/git-push-existing-repo-to-a-new-and-different-remote-repo-server)
+  - [Changing a remote's URL - User Documentation](https://help.github.com/articles/changing-a-remote-s-url/)
+  - [git命令之git remote的用法 - wangjia55的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/wangjia55/article/details/8802490)
 
 ---
 
@@ -17223,25 +18248,22 @@ Craigslist
 
 被 GFW 墙了。其实不怎么样，天朝这样的网站多了去。（不过还是要吐槽这蛋疼的 GFW。）
 
-Refs
+refs and see also
 
-#. &#x2611; [Craigslist - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Craigslist)
-#. &#x2611; [Craigslist_百度百科](http://baike.baidu.com/view/703783.htm)
+  - [Craigslist - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Craigslist)
+  - [Craigslist_百度百科](http://baike.baidu.com/view/703783.htm)
 
 ---
 
-Vim Macro
+[replay a vim macro until end of buffer - Stack Overflow](http://stackoverflow.com/questions/1291962/replay-a-vim-macro-until-end-of-buffer)
 
-就跟其它所有编辑器一样，宏很好用。
+:   Vim Macro
 
-但我不知道在 Vim 里怎么 apply 一个 macro 到文件末尾（在 Notepad++ 里很容易）。
+    就跟其它所有编辑器一样，宏很好用。
 
-查到的是：`VG:normal @x` 或者 `:%normal @x`，总之就是在一定范围内，用 `normal @x`。
-~~可惜我没成功，不知道是不是系统是 Windows 的原因。~~又试了一下，Windows 也可以。
+    但我不知道在 Vim 里怎么 apply 一个 macro 到文件末尾（在 Notepad++ 里很容易）。
 
-Refs
-
-#. &#x2610; [replay a vim macro until end of buffer - Stack Overflow](http://stackoverflow.com/questions/1291962/replay-a-vim-macro-until-end-of-buffer)
+    查到的是：`VG:normal @x` 或者 `:%normal @x`，总之就是在一定范围内，用 `normal @x`。
 
 ---
 
@@ -17262,9 +18284,9 @@ NOTE: The above mapping list can be useful while reading network traces because 
 
 （世上还有这么神奇的表示法。）
 
-Refs
+refs and see also
 
-#. &#x2611; [Microsoft Support](https://support.microsoft.com/en-us/kb/194203)
+  - [Microsoft Support](https://support.microsoft.com/en-us/kb/194203)
 
 ---
 
@@ -17363,22 +18385,20 @@ HTML Entity
     lozenge](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ruptured_Duck_patch.JPG/220px-Ruptured_Duck_patch.JPG)
 </div>
 
-Refs
+refs and see also
 
-#. &#x2611; [HTML Codes - Table of ascii characters and symbols](http://www.ascii.cl/htmlcodes.htm)
-#. &#x2611; [Entity Reference](http://arpc65.arm.ac.uk/~hmm/Entity_Reference.html)
-#. &#x2611; [List of XML and HTML character entity references - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references)
-#. &#x2611; [List of emoticons - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_emoticons)
-
-See also
-
-:   - [Arrow symbol - Sets - Unicode® character table](http://unicode-table.com/en/sets/arrows-symbols/)
+  - [HTML Codes - Table of ascii characters and symbols](http://www.ascii.cl/htmlcodes.htm)
+  - [Entity Reference](http://arpc65.arm.ac.uk/~hmm/Entity_Reference.html)
+  - [List of XML and HTML character entity references - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references)
+  - [List of emoticons - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_emoticons)
+  - [Arrow symbol - Sets - Unicode® character table](http://unicode-table.com/en/sets/arrows-symbols/)
 
 ---
 
 Assignment Expression
 
-:   **An assignment expression has the value of the left operand after the assignment.**
+:   **An assignment expression has the value of the left operand after the
+    assignment.**
 
     出自 C99 standard, section 6.5.16
 
@@ -17401,7 +18421,7 @@ Assignment Expression
 
 Python: `import this`{.python} => The Zen of Python, by Tim Peters
 
-:   ```plain
+:   ```tzx-bigquote
     Beautiful is better than ugly.
     **Explicit is better than implicit.**
     Simple is better than complex.
@@ -17423,16 +18443,13 @@ Python: `import this`{.python} => The Zen of Python, by Tim Peters
     Namespaces are one honking great idea -- let's do more of those!
     ```
 
-Refs
+refs and see also
 
-#. &#x2611; [为什么我不喜欢赋值表达式 - SegmentFault](http://segmentfault.com/a/1190000000402506)
-#. &#x2611; [c - What does an assignment return? - Stack Overflow](http://stackoverflow.com/questions/9514569/what-does-an-assignment-return)
-#. &#x2611; [C99 - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/C99#References)
-
-Read more
-
-#. &#x2610; [Memory part 5: What programmers can do [LWN.net]](https://lwn.net/Articles/255364/)
-#. &#x2611; [Yoda 表示法错在哪里](http://www.yinwang.org/blog-cn/2013/04/14/yoda-notation/)
+  - [为什么我不喜欢赋值表达式 - SegmentFault](http://segmentfault.com/a/1190000000402506)
+  - [c - What does an assignment return? - Stack Overflow](http://stackoverflow.com/questions/9514569/what-does-an-assignment-return)
+  - [C99 - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/C99#References)
+  - [Memory part 5: What programmers can do [LWN.net]](https://lwn.net/Articles/255364/)
+  - [Yoda 表示法错在哪里](http://www.yinwang.org/blog-cn/2013/04/14/yoda-notation/)
 
 ---
 
@@ -17537,7 +18554,7 @@ in which twelve people were killed at the offices of the French satirical weekly
 ![The front cover of edition of 14 January 2015, with a cartoon in the same style
   as 3 November 2011 cover, uses the phrase "Je suis Charlie"](https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Charlie_Hebdo_Tout_est_pardonn%C3%A9.jpg/220px-Charlie_Hebdo_Tout_est_pardonn%C3%A9.jpg)
 
-Refs
+refs and see also
 
 #. [Je suis Charlie - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Je_suis_Charlie)
 
@@ -17627,7 +18644,7 @@ Strapdown
       - **[spacelab.html](http://whudoc.qiniudn.com/2016/v/0.2/spacelab.html)**
       - [united.html](http://whudoc.qiniudn.com/2016/v/0.2/united.html)
 
-    Refs
+     refs and see also
 
     #. [chjj/marked](https://github.com/chjj/marked)
     #. [Strapdown.js - Instant and elegant Markdown documents](http://strapdownjs.com/)
@@ -17641,9 +18658,9 @@ Strapdown
 
 :sweat_smile:
 
-Refs
+refs and see also
 
-#. [notwaldorf/emoji-translate](https://github.com/notwaldorf/emoji-translate)
+  - [notwaldorf/emoji-translate](https://github.com/notwaldorf/emoji-translate)
 
 ---
 
@@ -17661,10 +18678,10 @@ Unicode Block (Miscellaneous Symbols)
 
 ballot 英 `['bælət]` 美 `['bælət]` n. 投票；投票用纸；投票总数 vi. 投票；抽签决定
 
-Refs
+refs and see also
 
-#. [Unicode Character 'BALLOT BOX' (U+2610)](http://www.fileformat.info/info/unicode/char/2610/index.htm)
-#. [Unicode Character 'BALLOT BOX WITH CHECK' (U+2611)](http://www.fileformat.info/info/unicode/char/2611/index.htm)
+  - [Unicode Character 'BALLOT BOX' (U+2610)](http://www.fileformat.info/info/unicode/char/2610/index.htm)
+  - [Unicode Character 'BALLOT BOX WITH CHECK' (U+2611)](http://www.fileformat.info/info/unicode/char/2611/index.htm)
 
 ---
 
@@ -17727,14 +18744,14 @@ Ernest Hemingway (*For Whom the Bell Tolls*):
 
 > 不要问丧钟为谁鸣，丧钟为你而鸣。
 
-Refs
+refs and see also
 
-#. [French terror attacks: Victim obituaries - BBC News](http://www.bbc.com/news/world-europe-30724678)
-#. [France sieges end: Witness accounts - BBC News](http://www.bbc.com/news/world-europe-30755914)
-#. [As it happened: Charlie Hebdo attack - BBC News](http://www.bbc.com/news/live/world-europe-30710777)
-#. [Charlie Hebdo: Gun attack on French magazine kills 12 - BBC News](http://www.bbc.com/news/world-europe-30710883)
-#. [Paris attacks: Suspects' profiles - BBC News](http://www.bbc.com/news/world-europe-30722038)
-#. [Paris attacks: Dozens killed in series of terror attacks across French capital - CBS News](http://www.cbsnews.com/news/paris-explosion-stadium-shootout-restaurant/)
+  - [French terror attacks: Victim obituaries - BBC News](http://www.bbc.com/news/world-europe-30724678)
+  - [France sieges end: Witness accounts - BBC News](http://www.bbc.com/news/world-europe-30755914)
+  - [As it happened: Charlie Hebdo attack - BBC News](http://www.bbc.com/news/live/world-europe-30710777)
+  - [Charlie Hebdo: Gun attack on French magazine kills 12 - BBC News](http://www.bbc.com/news/world-europe-30710883)
+  - [Paris attacks: Suspects' profiles - BBC News](http://www.bbc.com/news/world-europe-30722038)
+  - [Paris attacks: Dozens killed in series of terror attacks across French capital - CBS News](http://www.cbsnews.com/news/paris-explosion-stadium-shootout-restaurant/)
 
 ---
 
@@ -17762,367 +18779,496 @@ Disallow:
 [^qiniu-robots-default]: 七牛默认在每个 bucket 加了一个 robots 文件，禁止所有爬虫的爬取。
 
 [An Algorithmic Approach to Network Location Problems. I: The p-Centers : SIAM Journal on Applied Mathematics: Vol. 37, No. 3 (Society for Industrial and Applied Mathematics)](http://epubs.siam.org/doi/abs/10.1137/0137040)
+
 [Facility location problem - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Facility_location_problem)
+
 [Core fonts for the Web - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Core_fonts_for_the_Web)
 
 [dwtkns/gdal-cheat-sheet: Cheat sheet for GDAL/OGR command-line tools](https://github.com/dwtkns/gdal-cheat-sheet)
+
 [pandoc-templates/default.html at master · kjhealy/pandoc-templates](https://github.com/kjhealy/pandoc-templates/blob/master/templates/default.html)
+
 [gpp | Random Determinism](https://randomdeterminism.wordpress.com/tag/gpp/)
+
 [Extension to pandoc's markdown similar to Gitbook, using a "Web template system" · Issue #2676 · jgm/pandoc](https://github.com/jgm/pandoc/issues/2676)
 
-jgm 大神说这个文件替换自己处理就好，加到 pandoc 里的话需要处理太多麻烦事。
+:   jgm 大神说这个文件替换自己处理就好，加到 pandoc 里的话需要处理太多麻烦事。
 
-* [Viewing Your Model in Google Earth | SketchUp Knowledge Base](http://help.sketchup.com/en/article/3000149)
-* [Viewing Your Model in Google Earth | SketchUp Knowledge Base](http://help.sketchup.com/en/article/3000149)
-* [Search · osg google earth](https://github.com/search?utf8=%E2%9C%93&q=osg+google+earth&type=Repositories&ref=searchresults)
-* [djw8605 (Derek Weitzel)](https://github.com/djw8605)
-* [Intro to Importing Data into Google Earth](http://serc.carleton.edu/eyesinthesky2/week10/intro_importing_data.html)
-* [Downloading, Installing, and Authorizing SketchUp 2016 | SketchUp Knowledge Base](http://help.sketchup.com/en/setting-up)
-* [| SketchUp](http://www.sketchup.com/download/all)
-* [Blender to Google Earth Workshop](http://download.blender.org/documentation/bc2006/TempleOfKukulcan.pdf)
-* [OpenSceneGraph Max Exporter download | SourceForge.net](https://sourceforge.net/projects/osgmaxexp/?source=typ_redirect)
-* [Spatial References — osgEarth 2.4 documentation](http://docs.osgearth.org/en/latest/user/spatialreference.html?highlight=kml)
-* [Terrain Tools & Software - Commercial](http://vterrain.org/Packages/Com/)
-* [blender model to .osg .ive - 必应](http://www.bing.com/search?q=blender+model+to+.osg+.ive&go=Submit&qs=n&form=QBLH&pq=blender+model+to+.osg+.ive&sc=0-0&sp=-1&sk=&cvid=BEFE6863348F4CA1A1BAE7B52162F681)
-* [How to use Blender with OSG/VTP](http://vterrain.org/Doc/Blender/)
-* [Builds - district10/blog - Travis CI](https://travis-ci.org/district10/blog/builds)
+[Viewing Your Model in Google Earth | SketchUp Knowledge Base](http://help.sketchup.com/en/article/3000149)
+
+[Viewing Your Model in Google Earth | SketchUp Knowledge Base](http://help.sketchup.com/en/article/3000149)
+
+[Search · osg google earth](https://github.com/search?utf8=%E2%9C%93&q=osg+google+earth&type=Repositories&ref=searchresults)
+
+[djw8605 (Derek Weitzel)](https://github.com/djw8605)
+
+[Intro to Importing Data into Google Earth](http://serc.carleton.edu/eyesinthesky2/week10/intro_importing_data.html)
+
+[Downloading, Installing, and Authorizing SketchUp 2016 | SketchUp Knowledge Base](http://help.sketchup.com/en/setting-up)
+
+[| SketchUp](http://www.sketchup.com/download/all)
+
+[Blender to Google Earth Workshop](http://download.blender.org/documentation/bc2006/TempleOfKukulcan.pdf)
+
+[OpenSceneGraph Max Exporter download | SourceForge.net](https://sourceforge.net/projects/osgmaxexp/?source=typ_redirect)
+
+[Spatial References — osgEarth 2.4 documentation](http://docs.osgearth.org/en/latest/user/spatialreference.html?highlight=kml)
+
+[Terrain Tools & Software - Commercial](http://vterrain.org/Packages/Com/)
+
+[blender model to .osg .ive - 必应](http://www.bing.com/search?q=blender+model+to+.osg+.ive&go=Submit&qs=n&form=QBLH&pq=blender+model+to+.osg+.ive&sc=0-0&sp=-1&sk=&cvid=BEFE6863348F4CA1A1BAE7B52162F681)
+
+[How to use Blender with OSG/VTP](http://vterrain.org/Doc/Blender/)
+
+[Builds - district10/blog - Travis CI](https://travis-ci.org/district10/blog/builds)
 
 [qboxrsctl 命令行辅助工具 | 七牛云存储](http://docs.qiniu.com/tools/v6/qboxrsctl.html)
+
 [Free OpenSceneGraph Binary Downloads | AlphaPixel](http://openscenegraph.alphapixel.com/osg/downloads/free-openscenegraph-binary-downloads)
 
-osg binary.
+:   osg binary.
 
 [How to remove, copy or rename a file with Perl](http://perlmaven.com/how-to-remove-copy-or-rename-a-file-with-perl)
+
 [How do I get the full path to a Perl script that is executing? - Stack Overflow](http://stackoverflow.com/questions/84932/how-do-i-get-the-full-path-to-a-perl-script-that-is-executing)
 
-[css - @Media min-width & max-width - Stack Overflow](http://stackoverflow.com/questions/13550541/media-min-width-max-width)
+[css - `@Media` min-width & max-width - Stack Overflow](http://stackoverflow.com/questions/13550541/media-min-width-max-width)
 
 [miloyip/itoa-benchmark: C++ integer-to-string conversion benchmark](https://github.com/miloyip/itoa-benchmark)
+
 [JoakimSoderberg/catcierge: Image recognition (to keep cat prey out) and RFID chip reader system for automated DIY cat door.](https://github.com/JoakimSoderberg/catcierge)
 
-完整的展示了 travis 之类的使用，多平台的编译、测试，等等。
+:   完整的展示了 travis 之类的使用，多平台的编译、测试，等等。
 
-#. &#x2610;
-#. &#x2610; [git - Download a single folder or directory from a GitHub repo - Stack Overflow](http://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo)
+[git - Download a single folder or directory from a GitHub repo - Stack Overflow](http://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo)
 
- 282
-down vote
+:   This is a pretty old question, but I figured this out today and I thought I'd
+    leave this here for anyone else who has the same problem.
 
+    As all the previous answers have already noted, you are not allowed to download
+    a single folder using Git. However, you ARE allowed to do this with subversion.
+    This won't work on a regular git repo obviously, but if you're using GitHub you
+    can actually check out using svn.
 
-This is a pretty old question, but I figured this out today and I thought I'd leave this here for anyone else who has the same problem.
+    For example:
 
-As all the previous answers have already noted, you are not allowed to download a single folder using Git. However, you ARE allowed to do this with subversion. This won't work on a regular git repo obviously, but if you're using GitHub you can actually check out using svn.
+    ```bash
+    svn checkout https://github.com/foobar/Test/trunk/foo
+    ```
 
-For example:
+    **trunk** corresponds to master branch. You can use svn ls to see available tags
+    and branches before downloading if you wish. If you want a folder in a branch
+    other than master then replace trunk with **branches/branchname**.
 
-svn checkout https://github.com/foobar/Test/trunk/foo
+    As of this writing, you can find the subversion URL for any repo on GitHub by
+    clicking on "Subversion" at the bottom of the right sidebar. See GitHub's post
+    on subversion partial checkouts for more info.
 
-trunk corresponds to master branch. You can use svn ls to see available tags and branches before downloading if you wish. If you want a folder in a branch other than master then replace trunk with branches/branchname.
+[Preface | Data Structure and Algorithm notes](http://algorithm.yuanbin.me/zh-hans/index.html#)
 
-As of this writing, you can find the subversion URL for any repo on GitHub by clicking on "Subversion" at the bottom of the right sidebar. See GitHub's post on subversion partial checkouts for more info.
+[500 Lines or Less](http://aosabook.org/en/500L/)
 
+[aosabook/500lines: 500 Lines or Less](https://github.com/aosabook/500lines)
 
+[The Architecture of Open Source Applications](http://www.aosabook.org/en/index.html)
 
-works?
-#. &#x2610; [Preface | Data Structure and Algorithm notes](http://algorithm.yuanbin.me/zh-hans/index.html#)
-#. &#x2610; [500 Lines or Less](http://aosabook.org/en/500L/)
-#. &#x2610; [aosabook/500lines: 500 Lines or Less](https://github.com/aosabook/500lines)
-#. &#x2610; [The Architecture of Open Source Applications](http://www.aosabook.org/en/index.html)
-#. &#x2610; [Coding 演示平台](http://docs.coding.io/)
+[Coding 演示平台](http://docs.coding.io/)
 
-从某种程度上说，coding.net 比 github.com 厚道得多。
+:   从某种程度上说，coding.net 比 github.com 厚道得多。
 
-#. &#x2610; [细说 CSS margin - Coding 博客](https://blog.coding.net/blog/css-margin)
-#. &#x2610; [Jekyll迁移到Hexo建立个人博客 | Lippi-浮生志](http://www.ezlippi.com/blog/2016/02/jekyll-to-hexo.html)
+[细说 CSS margin - Coding 博客](https://blog.coding.net/blog/css-margin)
 
-> 个人博客以前由jekyll搭建，主要问题是目录、Rss、sitemap无法自动生成，根据DRY的
-> 原则在网上找了下答案，最终发现了用Hexo来搭建博客的方法，配置完之后一劳永逸，
-> 目录、Rss和sitemap都是自动生成，解决了我之前的困惑。
+[Jekyll迁移到Hexo建立个人博客 | Lippi-浮生志](http://www.ezlippi.com/blog/2016/02/jekyll-to-hexo.html)
 
-TODO: 去看它的 rss 怎么生成的。
+:   > 个人博客以前由jekyll搭建，主要问题是目录、Rss、sitemap无法自动生成，根据DRY的
+    > 原则在网上找了下答案，最终发现了用Hexo来搭建博客的方法，配置完之后一劳永逸，
+    > 目录、Rss和sitemap都是自动生成，解决了我之前的困惑。
 
-#. &#x2610; [IntroPy - Woodpecker Wiki for CPUG](http://wiki.woodpecker.org.cn/moin/IntroPy)
-#. &#x2610; [top10-Py-idioms-wish-learned-earlier | #是也乎# | ZoomQuiet.io](http://blog.zoomquiet.io/top10-Py-idioms-wish-learned-earlier.html)
+    TODO: 去看它的 rss 怎么生成的。
 
-- [Cpp-Primer/ch01 at master · Mooophy/Cpp-Primer](https://github.com/Mooophy/Cpp-Primer/tree/master/ch01)
-- [Facebook](https://github.com/facebook)
-- [CppCoreGuidelines/CppCoreGuidelines.md at master · isocpp/CppCoreGuidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)
-- [Crosswalk - build world class hybrid apps](https://crosswalk-project.org/)
-- [Problem loading page](http://mapnik.org/)
-- [AGWA/git-crypt: Transparent file encryption in git](https://github.com/AGWA/git-crypt)
-- [glsltuto/shaders at master · ssloy/glsltuto](https://github.com/ssloy/glsltuto/tree/master/shaders)
-- [FlatBuffers: Using the schema compiler](http://google.github.io/flatbuffers/flatbuffers_guide_using_schema_compiler.html)
-- [dvidelabs/flatcc: FlatBuffers Compiler and Library in C for C](https://github.com/dvidelabs/flatcc)
-- [Mooophy (Yue Wang)](https://github.com/Mooophy)
+[IntroPy - Woodpecker Wiki for CPUG](http://wiki.woodpecker.org.cn/moin/IntroPy)
+
+[top10-Py-idioms-wish-learned-earlier | #是也乎# | ZoomQuiet.io](http://blog.zoomquiet.io/top10-Py-idioms-wish-learned-earlier.html)
+
 [Cpp-Primer/ch01 at master · Mooophy/Cpp-Primer](https://github.com/Mooophy/Cpp-Primer/tree/master/ch01)
+
+[Facebook](https://github.com/facebook)
+
+[CppCoreGuidelines/CppCoreGuidelines.md at master · isocpp/CppCoreGuidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)
+
+[Crosswalk - build world class hybrid apps](https://crosswalk-project.org/)
+
+[Problem loading page](http://mapnik.org/)
+
+[AGWA/git-crypt: Transparent file encryption in git](https://github.com/AGWA/git-crypt)
+
+[glsltuto/shaders at master · ssloy/glsltuto](https://github.com/ssloy/glsltuto/tree/master/shaders)
+
+[FlatBuffers: Using the schema compiler](http://google.github.io/flatbuffers/flatbuffers_guide_using_schema_compiler.html)
+
+[dvidelabs/flatcc: FlatBuffers Compiler and Library in C for C](https://github.com/dvidelabs/flatcc)
+
+[Mooophy (Yue Wang)](https://github.com/Mooophy)
+
+[Cpp-Primer/ch01 at master · Mooophy/Cpp-Primer](https://github.com/Mooophy/Cpp-Primer/tree/master/ch01)
+
 [FlatBuffers: Benchmarks](http://google.github.io/flatbuffers/flatbuffers_benchmarks.html)
 
 [ocornut/imgui: Bloat-free Immediate Mode Graphical User interface for C++ with minimal dependencies](https://github.com/ocornut/imgui)
 
-#. &#x2610; [zealdocs/zeal: Offline documentation browser inspired by Dash](https://github.com/zealdocs/zeal)
-#. &#x2610; [字符串匹配的KMP算法 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html)
-#. &#x2610; [SICP终于看完了，有一些经验想分享出来 - 学习资料 - CoCode](http://cocode.cc/t/sicp/3397)
-#. &#x2610; [c++ - Linking different libraries for Debug and Release builds in Cmake on windows? - Stack Overflow](http://stackoverflow.com/questions/2209929/linking-different-libraries-for-debug-and-release-builds-in-cmake-on-windows)
+[zealdocs/zeal: Offline documentation browser inspired by Dash](https://github.com/zealdocs/zeal)
 
-You should not test CMAKE_BUILD_TYPE in the CMake file, it is ignored by multi configuration generators (like VS). If you run cmake with CMAKE_BUILD_TYPE=Debug but Release in VS the code in if(CMAKE_BUILD_TYPE MATCHES Release) is simply ineffective.
+[字符串匹配的KMP算法 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html)
 
-#. &#x2610; [OSG+VS2010+win7环境搭建 - 缑城浪子 - 博客园](http://www.cnblogs.com/eaglezhao/archive/2011/07/12/eaglezhao.html)
+[SICP终于看完了，有一些经验想分享出来 - 学习资料 - CoCode](http://cocode.cc/t/sicp/3397)
 
-- [The Perltidy Home Page](http://perltidy.sourceforge.net/)
-- [C-C++ Beautifier HOW-TO](http://www.faqs.org/docs/Linux-HOWTO/C-C++Beautifier-HOWTO.html)
-- [ClangFormat — Clang 3.9 documentation](http://clang.llvm.org/docs/ClangFormat.html)
+[c++ - Linking different libraries for Debug and Release builds in Cmake on windows? - Stack Overflow](http://stackoverflow.com/questions/2209929/linking-different-libraries-for-debug-and-release-builds-in-cmake-on-windows)
+
+:   You should not test CMAKE_BUILD_TYPE in the CMake file, it is ignored by
+    multi configuration generators (like VS). If you run cmake with
+    `CMAKE_BUILD_TYPE=Debug` but Release in VS the code in
+    `if(CMAKE_BUILD_TYPE MATCHES Release)` is simply ineffective.
+
+[OSG+VS2010+win7环境搭建 - 缑城浪子 - 博客园](http://www.cnblogs.com/eaglezhao/archive/2011/07/12/eaglezhao.html)
+
+[The Perltidy Home Page](http://perltidy.sourceforge.net/)
+
+[C-C++ Beautifier HOW-TO](http://www.faqs.org/docs/Linux-HOWTO/C-C++Beautifier-HOWTO.html)
+
+[ClangFormat — Clang 3.9 documentation](http://clang.llvm.org/docs/ClangFormat.html)
+
 [Artistic Style - Index](http://astyle.sourceforge.net/)
+
 [Chiel92/vim-autoformat: Provide easy code formatting in Vim by integrating existing code formatters.](https://github.com/Chiel92/vim-autoformat)
 
-#. &#x2610; [jquery - Auto-size dynamic text to fill fixed size container - Stack Overflow](http://stackoverflow.com/questions/687998/auto-size-dynamic-text-to-fill-fixed-size-container)
-#. &#x2610; [Reference Counted Objects in OSG and Producer](http://www.andesengineering.com/OSG_ProducerArticles/RefPointers/RefPointers.html)
-#. &#x2610; [qt+osg+vs2008中(msvcr90.dll) 处最可能的异常: 0xC0000005的问题解决 - xhcumt的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/xhcumt/article/details/4779040)
+[jquery - Auto-size dynamic text to fill fixed size container - Stack Overflow](http://stackoverflow.com/questions/687998/auto-size-dynamic-text-to-fill-fixed-size-container)
 
-同样在官方论坛上找到答案:是Project属性配置引起的, Project Properties->Configuration Properties->C/C++->Code Generation->Runtime Library, 把Multi-threaded Debug DLL (/MDd)改为Multi-threaded DLL (/MD), 而/MDd是Debug的默认选项. 不过文中提到的有关”_DEBUG”改为”NDEBUG”倒不必.
+[Reference Counted Objects in OSG and Producer](http://www.andesengineering.com/OSG_ProducerArticles/RefPointers/RefPointers.html)
 
+[qt+osg+vs2008中(msvcr90.dll) 处最可能的异常: 0xC0000005的问题解决 - xhcumt的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/xhcumt/article/details/4779040)
 
-#. &#x2610; [File and Disk Utilities: Sysinternals Center](https://technet.microsoft.com/en-us/sysinternals/bb545046)
-#. &#x2610; [Windows Sysinternals: Documentation, downloads and additional resources](https://technet.microsoft.com/en-us/sysinternals)
-#. &#x2610; [Learn how to use Microsoft Windows 7 | Easier faster computing](http://vlaurie.com/windows-7-tips/)
-#. &#x2610; [How to Copy and Paste in the Windows Command Prompt | Gizmo's Freeware](http://www.techsupportalert.com/content/how-copy-and-paste-windows-command-prompt.htm)
+:   同样在官方论坛上找到答案:是Project属性配置引起的,
 
-- CMD, click the icon, in config, turn on quick edit mode.
-- CMD, Alt-Space, E(dit), P(aste)
+      - `Project Properties`->
+      - `Configuration Properties`->
+      - `C/C++->Code Generation`->
+      - `Runtime Library`,
+      - 把 `Multi-threaded Debug DLL (/MDd)` 改为 `Multi-threaded DLL (/MD)`,
+        而`/MDd` 是 Debug 的默认选项. 不过文中提到的有关”_DEBUG”改为”NDEBUG”倒
+        不必.
 
-A few links for peoples frequently using the command prompt or a shell:
+[File and Disk Utilities: Sysinternals Center](https://technet.microsoft.com/en-us/sysinternals/bb545046)
 
-* ConEmu http://code.google.com/p/conemu-maximus5/
-A console emulator with tabs, it works fine with everything listed below. (It allows line/block selection for copying.)
+[Windows Sysinternals: Documentation, downloads and additional resources](https://technet.microsoft.com/en-us/sysinternals)
 
-* CygWin http://cygwin.com/
-This is a HUGE collection of gnu/linux tools for windows, from bash to zsh, perl, gcc, mc... If you're a linux guy, you'll feel at home with this.
+[Learn how to use Microsoft Windows 7 | Easier faster computing](http://vlaurie.com/windows-7-tips/)
 
-* TCC/LE http://jpsoft.com/
-It's 4DOS, an enhanced cmd.exe, a must have. (Like NDOS)
+[How to Copy and Paste in the Windows Command Prompt | Gizmo's Freeware](http://www.techsupportalert.com/content/how-copy-and-paste-windows-command-prompt.htm)
 
-* FAR Manager http://farmanager.com/
-Norton commander clone.
+:   - CMD, click the icon, in config, turn on quick edit mode.
+    - CMD, Alt-Space, E(dit), P(aste)
 
-* SysInternals Suite http://sysinternals.com/
-Various command-line and gui tools: process, junctions, etc.
+    A few links for peoples frequently using the command prompt or a shell:
 
-* NirCMD http://www.nirsoft.net/utils/nircmd.html
-Small utility that allows you to do some useful windows tasks.
+    * ConEmu http://code.google.com/p/conemu-maximus5/
 
-* CLink https://code.google.com/p/clink/
-Better completion for cmd.exe
+    A console emulator with tabs, it works fine with everything listed below. (It allows line/block selection for copying.)
 
-I hope someone might find this helpful.
+    * CygWin http://cygwin.com/
 
+    This is a HUGE collection of gnu/linux tools for windows, from bash to zsh, perl, gcc, mc... If you're a linux guy, you'll feel at home with this.
 
-#. &#x2610; [愤怒的小怪兽 - 廖雪峰的官方网站](http://www.liaoxuefeng.com/article/001430724785251f1f92d9d5f524530b5c5b8c0f42f1b1b000)
-#. &#x2610; [Clojure 驱动的 Web 开发](http://www.ibm.com/developerworks/cn/java/j-io-ClojureWeb/)
-#. &#x2610; [Moment.js 中文网](http://momentjs.cn/)
-#. &#x2610; [moment/momentjs.com: The website for momentjs](https://github.com/moment/momentjs.com)
+    * TCC/LE http://jpsoft.com/
 
-效果很好。
+    It's 4DOS, an enhanced cmd.exe, a must have. (Like NDOS)
 
-#. &#x2610; [vim - How do I open the directory of the current open file? - Super User](http://superuser.com/questions/31677/how-do-i-open-the-directory-of-the-current-open-file)
-:   ?
-    :   - `:Sex .`
-        - This is good but the command is so hard to remember.
+    * FAR Manager http://farmanager.com/
 
-#. &#x2611; [How to switch to the directory listing from file view in vim? - Unix & Linux Stack Exchange](http://unix.stackexchange.com/questions/52179/how-to-switch-to-the-directory-listing-from-file-view-in-vim)
-#. &#x2610; [Things I Wish I Learned In Engineering School](http://blog.kowalczyk.info/articles/engineering-school.html)
-#. &#x2610; [Things I Wish I Learned In Engineering School](http://blog.kowalczyk.info/articles/engineering-school.html)
-#. &#x2610; [【新智元—世纪对决】AlphaGo 惊天逆转李世石 ，关键棋局解析](http://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=402888309&idx=1&sn=fe4a7f99fde22f5f4c8bc056045a55d6&scene=23&srcid=0309shravqZGaVQnxy1edb98#rd)
-#. &#x2610; [Go (game) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Go_(game))
+    Norton commander clone.
 
-Go (traditional Chinese: 圍棋; simplified Chinese: 围棋; pinyin: About this
-sound wéiqí; Japanese: 囲碁; rōmaji: igo; literally: "encircling game") is an
-abstract board game for two players, in which the aim is to surround more
-territory than the opponent.
+    * SysInternals Suite http://sysinternals.com/
 
-The game originated in ancient China more than 2,500 years ago, and is one of
-the oldest board games played today. It was considered one of the four
-essential arts of a cultured Chinese scholar in antiquity. The earliest written
-reference to the game is generally recognized as the historical annal Zuo Zhuan
+    Various command-line and gui tools: process, junctions, etc.
 
-There is much strategy involved in the game, and the number of possible games
-is vast (10761 compared, for example, to the estimated 10120 possible in
-chess), displaying its complexity despite relatively simple rules.
+    * NirCMD http://www.nirsoft.net/utils/nircmd.html
 
-    #. &#x2610; [The Chinese Rules of Go](https://www.cs.cmu.edu/~wjh/go/rules/Chinese.html)
+    Small utility that allows you to do some useful windows tasks.
 
-#. &#x2610; [javascript - Copy to clipboard without Flash - Stack Overflow](http://stackoverflow.com/questions/6355300/copy-to-clipboard-without-flash)
-#. &#x2610;
-* [Filesystem | Wikipedia](http://en.wikipedia.org/wiki/File_system)
-* [Filename Extension](http://en.wikipedia.org/wiki/Filename_extension)
+    * CLink https://code.google.com/p/clink/
 
-#. &#x2610;
-#. &#x2610;
-* [日常生活中有哪些十分钟就能学会但是终生受用的技能？ - 知乎](http://www.zhihu.com/question/20894671#answer-1741917)
-* [你最推荐的 Chrome 扩展有哪些？ - 知乎](http://www.zhihu.com/question/19594682)
-* [Unix 传奇 (上篇) | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/2322.html)
-* [Unix 传奇 (下篇) | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/2324.html)
-* [黑客的价值观 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/2439.html)
-* [计算机编程简史图 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/2724.html)
-* [李开复每天早上 4 点就起床，是怎么办到的？开复老师如何能很好地安排好自己的时间？ - 知乎](http://www.zhihu.com/question/19563168/answer/12257911)
-* [财经郎眼 20140603 喜忧参半的 4G 时代 - 视频在线观看 - 财经郎眼 - 财经 - 爱奇艺](http://www.iqiyi.com/v_19rrhzlnyw.html)
-* [聊聊我在 Google 无人车研究组的那些事 | 36 氪](http://www.36kr.com/p/212843.html)
-* [如何应对一群 13 - 18 岁的街头小混混的挑衅？ - 知乎](http://www.zhihu.com/question/23585788)
-* [讲一讲汉尼拔·莱克特博士。 (汉尼拔 影评)](http://movie.douban.com/review/1038150/)
-* [Why Is Rho Used for Density? | eHow](http://www.ehow.com/how-does_5407539_rho-used-density_.html)
-* [求知成瘾，却无作品 | 简书](http://www.jianshu.com/p/Daxrnq)
-* [如何成功地早起 | 简书](http://www.jianshu.com/p/Ns6asx)
-* [三分钟学会希腊语 | 简书](http://www.jianshu.com/p/c9a88c6c3d88)
-* [哥们儿，你的所有病都是一种病 | 简书](http://www.jianshu.com/p/302d25da305e)
-* [嘿，那个上了三天班就辞职的年轻人，我想和你谈谈！ | 简书](http://www.jianshu.com/p/6ff3d4113be6)
-* [万苦皆因怂 | 简书](http://www.jianshu.com/p/e7120cb963a0)
-* [如何坚持每天写一千字 | 简书](http://www.jianshu.com/p/53eea6022d58)
-* [你以为你在合群，其实你只在浪费青春 | 简书](http://www.jianshu.com/p/23dd4a2a8105)
-* [Javascript 的前后端统一是个"笑话"吗? | 简书](http://www.jianshu.com/p/5f6637bf15fd)
-* [在你被人认识之前 | 简书](http://www.jianshu.com/p/0a9851d0e98a)
-* [别把你最好的东西给我 | 简书](http://www.jianshu.com/p/479171e3b209)
-* [诚信逆向淘汰的社会 | 简书](http://www.jianshu.com/p/ae0a82de6875)
-* [一份关于如何改变人生的指南 | 简书](http://www.jianshu.com/p/XzZ6LW)
-* [记一次嫖娼 | 简书](http://www.jianshu.com/p/6f66f03510a1)
-* [那些年，坐我们前排的土豪和学霸 | 简书](http://www.jianshu.com/p/JqGqYq)
-* [从那道并不变态的家庭作业说起，兼答邓飞 | 简书](http://www.jianshu.com/p/babea9cc6284)
-* [欲望少女养成记 | 简书](http://www.jianshu.com/p/1657f91a8b47)
-* [你不是书读得少，你是经典读得少 | 简书](http://www.jianshu.com/p/53d918a3fe52)
-* [你会因文字而爱上一个人吗 | 简书](http://www.jianshu.com/p/aaf7d0e127ab)
-* [不着调的海小姐 | 简书](http://www.jianshu.com/p/3a3a744f98ad)
-* [两条写作建议 | 简书](http://www.jianshu.com/p/f9796a5a31b3)
-* [别跟这个世界讲道理 | 简书](http://www.jianshu.com/p/jCCPzz)
-* [中国式道德审判 | 简书](http://www.jianshu.com/p/351b2776e9c8)
-* [信息时代如何使用你的大脑？ | 简书](http://www.jianshu.com/p/9211b74a3662)
-* [安静的力量 | 简书](http://www.jianshu.com/p/ab844f4c0d46)
-* [那些年，我麻烦过的人 | 简书](http://www.jianshu.com/p/d73853f88721)
-* [一个人看电影 | 简书](http://www.jianshu.com/p/87ab211011a4)
-* [如果让我再读一次本科 | 简书](http://www.jianshu.com/p/1afb865ef4bd)
-* [“文艺青年”与“装逼犯” | 简书](http://www.jianshu.com/p/06fe9c7cd38e)
-* [为什么我们无法深入交谈 | 简书](http://www.jianshu.com/p/37f7b7c88729)
-* [我的儿子不可能平庸 - 简书](http://www.jianshu.com/p/c8a1e1482ec4?utm_campaign=newsletter&utm_medium=note-236554&utm_source=weekly-16)
+    Better completion for cmd.exe
 
-#. &#x2610;
-* https://en.wikipedia.org/wiki/List_of_mathematical_symbols
-* https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode
+    I hope someone might find this helpful.
 
+[愤怒的小怪兽 - 廖雪峰的官方网站](http://www.liaoxuefeng.com/article/001430724785251f1f92d9d5f524530b5c5b8c0f42f1b1b000)
 
+[Clojure 驱动的 Web 开发](http://www.ibm.com/developerworks/cn/java/j-io-ClojureWeb/)
 
-* https://en.wikipedia.org/wiki/Help:Displaying_a_formula
-* [Full stop - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Full_stop)
-* [Quotation Marks: Where Do the Periods and Commas Go--And Why?](http://grammartips.homestead.com/inside.html)
-* [Quotation mark - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Quotation_mark)
-* [Sentence spacing - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Sentence_spacing)
-* [Decimal mark - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Decimal_mark)
-* [Ampersand - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Ampersand)
-* [Appropriate use of the ampersand | Typophile](http://typophile.com/node/12426)
-* [International System of Units - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/International_System_of_Units)
+[moment/momentjs.com: The website for momentjs](https://github.com/moment/momentjs.com)
 
+:   效果很好。
 
-* [Citation | Wikipedia](http://en.wikipedia.org/wiki/Citation)
-* [Citation Standards | Citation Working Group](http://dublincore.org/groups/citation/citstds.html)
-* [CSL - Citation Style Language](http://citationstyles.org/downloads/primer.html)
-* [CSL - Styles | GitHub](https://github.com/citation-style-language/styles)
-* [Pandoc Package - CiteProc](http://hackage.haskell.org/package/pandoc-citeproc)
+    refs and see also
 
-#. &#x2610; [DARPA 开始研发新一代的垂直起降飞机](http://cn.engadget.com/2016/03/04/darpa-unveils-its-next-vtol-aircraft-concept/?ncid=rss_truncated)
-:   ?
-    :   天网的背景音乐……
-#. &#x2610; [Dwarf Fortress - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dwarf_Fortress)
-#. &#x2610; [Stabyourself.net - Mari0](http://stabyourself.net/mari0/#download)
-#. &#x2610; [Roguelike - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Roguelike)
-#. &#x2610; [Metal Slug - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Metal_Slug)
-:   ?
-    :   ![](https://en.wikipedia.org/wiki/Metal_Slug#/media/File:Metal_Slug_%28cover%29.jpg)
+      - [Moment.js 中文网](http://momentjs.cn/)
 
-        Super Vehicle-001: Metal Slug (メタルスラッグ Metaru Suraggu), more
-        commonly known as simply Metal Slug, is a **run and gun video game**
-        developed and originally released by Nazca Corporation and later
-        published by SNK. It was originally released in 1996 for the Neo Geo
-        MVS arcade platform. The game is widely known for its sense of humor,
-        fluid hand-drawn animation, and fast paced two-player action. It is the
-        first title in the Metal Slug series. It has been ported to the Neo Geo
-        AES, Neo Geo CD, Sega Saturn, PlayStation, Virtual Console, PlayStation
-        Network, iOS, Android and Neo Geo X, and to the Wii, PlayStation
-        Portable and PlayStation 2 (as part of the Metal Slug Anthology).
-#. &#x2610; [Action game - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Action_game)
-#. &#x2610; [Shoot 'em up - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Shoot_%27em_up#Run_and_gun)
-#. &#x2610; [NetHackWiki, the NetHack wiki](https://nethackwiki.com/wiki/Main_Page)
-#. &#x2610; [Metal Slug X (Neo Geo) - The Cutting Room Floor](https://tcrf.net/Metal_Slug_X_(Neo_Geo)#Debug_Mode)
-#. &#x2610; [IBM Research | | Ponder this](https://www.research.ibm.com/haifa/ponderthis/index.shtml)
-#. &#x2610; [Archive — IPSC](http://ipsc.ksp.sk/archive)
-#. &#x2610; [alt.org - Public NetHack Server](https://alt.org/nethack/)
-#. &#x2610; [twitter/typeahead.js: typeahead.js is a fast and fully-featured autocomplete library](https://github.com/twitter/typeahead.js)
-:   ?
-    :   用来替换掉 autocomplete
-#. &#x2610; [崔添翼 § 翼若垂天之云 › 谁能看出这是个文科生？——关于matrix67](http://cuitianyi.com/blog/%e8%b0%81%e8%83%bd%e7%9c%8b%e5%87%ba%e8%bf%99%e6%98%af%e4%b8%aa%e6%96%87%e7%a7%91%e7%94%9f%ef%bc%9f%e2%80%94%e2%80%94%e5%85%b3%e4%ba%8ematrix67/)
-#. &#x2610; [把梦想“码”进现实 ——访计算机学院2013届校友崔添翼-学院动态-浙江大学计算机科学与技术学院中文站](http://www.cs.zju.edu.cn/chinese/redir.php?catalog_id=101754&object_id=133940)
-#. &#x2610; [值得推荐的C/C++框架和库 - Lippi-浮生志](http://coolshell.info/blog/2014/12/c-open-project.html)
-#. &#x2610; [Qt 学习之路 2 | DevBean's World - Part 2](http://www.devbean.net/category/qt-study-road-2/page/2/)
-#. &#x2610; [解读 Rob Pike 编写的正则表达式程序 - 开源中国社区](http://www.oschina.net/translate/regular-expression-matcher-code-by-rob-pike?cmp)
-#. &#x2610; [Tutorials - perldoc.perl.org](http://perldoc.perl.org/index-tutorials.html)
-#. &#x2610; [perlreftut - perldoc.perl.org](http://perldoc.perl.org/perlreftut.html)
-#. &#x2610; [你所读的计算机科学方向，有哪些不错的讲义（Notes）？ - 书籍推荐 - 知乎](http://www.zhihu.com/question/38300204)
-#. &#x2610; [6.858 / Fall 2014 / Schedule](http://css.csail.mit.edu/6.858/2014/schedule.html)
-#. &#x2610; [CSCI-UA.0202: Operating Systems (Undergrad)](http://www.cs.nyu.edu/~mwalfish/classes/15sp/index.html)
-#. &#x2610; [cirosantilli/cpp-cheat](https://github.com/cirosantilli/cpp-cheat)
-#. &#x2610; [cirosantilli/linux-cheat](https://github.com/cirosantilli/linux-cheat)
-#. &#x2610; [java - Why is processing a sorted array faster than an unsorted array? - Stack Overflow](http://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-an-unsorted-array)
-#. &#x2610; [VIM: index](http://man.lupaworld.com/content/manage/vi/doc/)
-#. &#x2610; [shell - How to run a series of vim commands from command prompt - Stack Overflow](http://stackoverflow.com/questions/23235112/how-to-run-a-series-of-vim-commands-from-command-prompt)
-:   ?
-    :   ```bash
-        for %a in (A,B,C,D) do vim -c ":g/^\s*$/d" -c "<another command>" %a.txt
-        ```
+[vim - How do I open the directory of the current open file? - Super User](http://superuser.com/questions/31677/how-do-i-open-the-directory-of-the-current-open-file)
 
-        `:help bufdo`
-#. &#x2610; [Vim Regular Expressions 101](http://www.vimregex.com/)
-#. &#x2610; [Search patterns - Vim Tips Wiki - Wikia](http://vim.wikia.com/wiki/Search_patterns)
-#. &#x2610; [Org Mode - Organize Your Life In Plain Text!](http://doc.norang.ca/org-mode.html)
-#. &#x2610; [Org-mode Emacs 下的瑞士軍刀](http://coldnew.github.io/COSCUP2013_org-mode/slide.html#1)
-#. &#x2610; [NARKOZ/hacker-scripts](https://github.com/NARKOZ/hacker-scripts)
-#. &#x2610; [Lessons on development of 64-bit C/C++ applications](http://www.viva64.com/en/l/)
-#. &#x2610; [GEGeek Tech Toolkit](http://www.gegeek.com/documents/85BB69B2F05486B9332CEA18B8D6E4BE690ADA38.html)
-#. &#x2610; [深入理解学习Git工作流（git-workflow-tutorial） - SegmentFault](http://segmentfault.com/a/1190000002918123)
-#. &#x2610; [www.computervisionblog.com/2015/06/deep-down-rabbit-hole-cvpr-2015-and.html](http://www.computervisionblog.com/2015/06/deep-down-rabbit-hole-cvpr-2015-and.html)
-#. &#x2610; [18-645: How to Write Fast Code](http://users.ece.cmu.edu/~pueschel/teaching/18-645-CMU-spring08/course.html)
-#. &#x2610; [Futures for C++11 at Facebook](https://code.facebook.com/posts/1661982097368498)
-#. &#x2610; [我的算法学习之路 - Lucida](http://zh.lucida.me/blog/on-learning-algorithms/)
-#. &#x2610; [ASCIIFlow Infinity](http://whudoc.qiniudn.com/asciiflow/index.html)
-:   ?
-    :   我把 AsciiFlow 挪过来了，可以在
+:   `:Sex .`
+      ~ This is good but the command is so hard to remember.
 
-        * <http://whudoc.qiniudn.com/asciiart.html>
-        * <http://whudoc.qiniudn.com/asciiflow>
+[How to switch to the directory listing from file view in vim? - Unix & Linux Stack Exchange](http://unix.stackexchange.com/questions/52179/how-to-switch-to-the-directory-listing-from-file-view-in-vim)
 
-        使用。或者下载离线 <http://whudoc.qiniudn.com/asciiflow.7z>
+[Things I Wish I Learned In Engineering School](http://blog.kowalczyk.info/articles/engineering-school.html)
 
-        TODO: 给它加一套键盘快捷键。
-#. &#x2610; [比尔华纳博士《我们因何而恐惧： 一个一千四百年的秘密》-纪录片视频-爱奇艺](http://www.iqiyi.com/w_19rrylp8kl.html)
-:   ?
-    :   说 islam，如此地政治不正确哈哈哈。
-#. &#x2610; [最高效的休息方式](http://www.douban.com/note/514216150/)
-#. &#x2610; [漫谈数据挖掘从入门到进阶](http://www.douban.com/note/283530204/)
-#. &#x2610; [八卦高德纳 (评论: 计算机程序设计艺术（第1卷）)](http://book.douban.com/review/5384627/)
-#. &#x2610; [【分享】来自于考拉小巫的各种给力文章大集合](http://www.douban.com/group/topic/15299075/)
-#. &#x2610; [洗脑三部曲（一） (评论: 暗时间)](http://book.douban.com/review/5012104/)
-#. &#x2610; [Digital rights management - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Digital_rights_management)
-:   drm
-    :   Digital rights management (DRM) schemes are various access control
-        technologies that are used to restrict usage of proprietary hardware
-        and copyrighted works.[1] DRM technologies try to control the use,
-        modification, and distribution of copyrighted works (such as software
-        and multimedia content), as well as systems within devices that enforce
-        these policies.
-#. &#x2610; [Search patterns - Vim Tips Wiki - Wikia](http://vim.wikia.com/wiki/Search_patterns)
-#. &#x2610; [CSS: em, px, pt, cm, in…](https://www.w3.org/Style/Examples/007/units)
-#. &#x2610; [北美求职记_QAMichaelPeng_新浪博客](http://blog.sina.com.cn/s/blog_6740daa70101771h.html)
-#. &#x2610; [为什么 Microsoft 不与“FLAG”并称呢？](http://www.zhihu.com/question/31979481)
-:   flag microsoft
-    :   再回到微软的问题：我之前很早的时候，拿了一个上海的微软（STC，在闵行的紫
-        竹园区）的 offer，当时薪水13.1w，股票125股；后来打听了一下Seattle的微软
-        Package，股票多点，也没翻10倍，所以基本上对FLAG来说就是杯水车薪。而且现
-        在一般大牛的技术人员或者牛逼毕业生，都是只看股票不看薪水的；薪水就是个
-        零花钱，买买车付付房租还行，根本没法发财。所以一般只看裸薪是多少（而没
-        有股票意识）的人，都是没见过世面，也没体会过资本市场的造富速度的人。
+[【新智元—世纪对决】AlphaGo 惊天逆转李世石 ，关键棋局解析](http://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=402888309&idx=1&sn=fe4a7f99fde22f5f4c8bc056045a55d6&scene=23&srcid=0309shravqZGaVQnxy1edb98#rd)
+
+:   Go (traditional Chinese: 圍棋; simplified Chinese: 围棋; pinyin: About this
+    sound wéiqí; Japanese: 囲碁; rōmaji: igo; literally: "encircling game") is
+    an abstract board game for two players, in which the aim is to surround
+    more territory than the opponent.
+
+    The game originated in ancient China more than 2,500 years ago, and is one of
+    the oldest board games played today. It was considered one of the four
+    essential arts of a cultured Chinese scholar in antiquity. The earliest written
+    reference to the game is generally recognized as the historical annal Zuo Zhuan
+
+    There is much strategy involved in the game, and the number of possible games
+    is vast (10761 compared, for example, to the estimated 10120 possible in
+    chess), displaying its complexity despite relatively simple rules.
+
+    refs and see also
+
+      - [Go (game) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Go_(game))
+      - [The Chinese Rules of Go](https://www.cs.cmu.edu/~wjh/go/rules/Chinese.html)
+
+[javascript - Copy to clipboard without Flash - Stack Overflow](http://stackoverflow.com/questions/6355300/copy-to-clipboard-without-flash)
+
+[Filesystem | Wikipedia](http://en.wikipedia.org/wiki/File_system)
+
+[Filename Extension](http://en.wikipedia.org/wiki/Filename_extension)
+
+[日常生活中有哪些十分钟就能学会但是终生受用的技能？ - 知乎](http://www.zhihu.com/question/20894671#answer-1741917)
+
+:   refs and see also
+
+      - [你最推荐的 Chrome 扩展有哪些？ - 知乎](http://www.zhihu.com/question/19594682)
+      - [Unix 传奇 (上篇) | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/2322.html)
+      - [Unix 传奇 (下篇) | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/2324.html)
+      - [黑客的价值观 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/2439.html)
+      - [计算机编程简史图 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/2724.html)
+      - [李开复每天早上 4 点就起床，是怎么办到的？开复老师如何能很好地安排好自己的时间？ - 知乎](http://www.zhihu.com/question/19563168/answer/12257911)
+      - [财经郎眼 20140603 喜忧参半的 4G 时代 - 视频在线观看 - 财经郎眼 - 财经 - 爱奇艺](http://www.iqiyi.com/v_19rrhzlnyw.html)
+      - [聊聊我在 Google 无人车研究组的那些事 | 36 氪](http://www.36kr.com/p/212843.html)
+      - [如何应对一群 13 - 18 岁的街头小混混的挑衅？ - 知乎](http://www.zhihu.com/question/23585788)
+      - [讲一讲汉尼拔·莱克特博士。 (汉尼拔 影评)](http://movie.douban.com/review/1038150/)
+      - [Why Is Rho Used for Density? | eHow](http://www.ehow.com/how-does_5407539_rho-used-density_.html)
+      - [求知成瘾，却无作品 | 简书](http://www.jianshu.com/p/Daxrnq)
+      - [如何成功地早起 | 简书](http://www.jianshu.com/p/Ns6asx)
+      - [三分钟学会希腊语 | 简书](http://www.jianshu.com/p/c9a88c6c3d88)
+      - [哥们儿，你的所有病都是一种病 | 简书](http://www.jianshu.com/p/302d25da305e)
+      - [嘿，那个上了三天班就辞职的年轻人，我想和你谈谈！ | 简书](http://www.jianshu.com/p/6ff3d4113be6)
+      - [万苦皆因怂 | 简书](http://www.jianshu.com/p/e7120cb963a0)
+      - [如何坚持每天写一千字 | 简书](http://www.jianshu.com/p/53eea6022d58)
+      - [你以为你在合群，其实你只在浪费青春 | 简书](http://www.jianshu.com/p/23dd4a2a8105)
+      - [Javascript 的前后端统一是个"笑话"吗? | 简书](http://www.jianshu.com/p/5f6637bf15fd)
+      - [在你被人认识之前 | 简书](http://www.jianshu.com/p/0a9851d0e98a)
+      - [别把你最好的东西给我 | 简书](http://www.jianshu.com/p/479171e3b209)
+      - [诚信逆向淘汰的社会 | 简书](http://www.jianshu.com/p/ae0a82de6875)
+      - [一份关于如何改变人生的指南 | 简书](http://www.jianshu.com/p/XzZ6LW)
+      - [记一次嫖娼 | 简书](http://www.jianshu.com/p/6f66f03510a1)
+      - [那些年，坐我们前排的土豪和学霸 | 简书](http://www.jianshu.com/p/JqGqYq)
+      - [从那道并不变态的家庭作业说起，兼答邓飞 | 简书](http://www.jianshu.com/p/babea9cc6284)
+      - [欲望少女养成记 | 简书](http://www.jianshu.com/p/1657f91a8b47)
+      - [你不是书读得少，你是经典读得少 | 简书](http://www.jianshu.com/p/53d918a3fe52)
+      - [你会因文字而爱上一个人吗 | 简书](http://www.jianshu.com/p/aaf7d0e127ab)
+      - [不着调的海小姐 | 简书](http://www.jianshu.com/p/3a3a744f98ad)
+      - [两条写作建议 | 简书](http://www.jianshu.com/p/f9796a5a31b3)
+      - [别跟这个世界讲道理 | 简书](http://www.jianshu.com/p/jCCPzz)
+      - [中国式道德审判 | 简书](http://www.jianshu.com/p/351b2776e9c8)
+      - [信息时代如何使用你的大脑？ | 简书](http://www.jianshu.com/p/9211b74a3662)
+      - [安静的力量 | 简书](http://www.jianshu.com/p/ab844f4c0d46)
+      - [那些年，我麻烦过的人 | 简书](http://www.jianshu.com/p/d73853f88721)
+      - [一个人看电影 | 简书](http://www.jianshu.com/p/87ab211011a4)
+      - [如果让我再读一次本科 | 简书](http://www.jianshu.com/p/1afb865ef4bd)
+      - [“文艺青年”与“装逼犯” | 简书](http://www.jianshu.com/p/06fe9c7cd38e)
+      - [为什么我们无法深入交谈 | 简书](http://www.jianshu.com/p/37f7b7c88729)
+      - [我的儿子不可能平庸 - 简书](http://www.jianshu.com/p/c8a1e1482ec4?utm_campaign=newsletter&utm_medium=note-236554&utm_source=weekly-16)
+
+[Help:Displaying a formula - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Help:Displaying_a_formula)
+
+:   refs and see also
+
+      - [List of mathematical symbols - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_mathematical_symbols)
+      - [Mathematical operators and symbols in Unicode - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode)
+      - [Help:Displaying a formula - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Help:Displaying_a_formula)
+      - [Full stop - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Full_stop)
+      - [Quotation Marks: Where Do the Periods and Commas Go--And Why?](http://grammartips.homestead.com/inside.html)
+      - [Quotation mark - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Quotation_mark)
+      - [Sentence spacing - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Sentence_spacing)
+      - [Decimal mark - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Decimal_mark)
+      - [Ampersand - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Ampersand)
+      - [Appropriate use of the ampersand | Typophile](http://typophile.com/node/12426)
+      - [International System of Units - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/International_System_of_Units)
+      - [Citation | Wikipedia](http://en.wikipedia.org/wiki/Citation)
+      - [Citation Standards | Citation Working Group](http://dublincore.org/groups/citation/citstds.html)
+      - [CSL - Citation Style Language](http://citationstyles.org/downloads/primer.html)
+      - [CSL - Styles | GitHub](https://github.com/citation-style-language/styles)
+      - [Pandoc Package - CiteProc](http://hackage.haskell.org/package/pandoc-citeproc)
+
+[DARPA 开始研发新一代的垂直起降飞机](http://cn.engadget.com/2016/03/04/darpa-unveils-its-next-vtol-aircraft-concept/?ncid=rss_truncated)
+
+:   天网的背景音乐……
+
+[Dwarf Fortress - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dwarf_Fortress)
+
+[Stabyourself.net - Mari0](http://stabyourself.net/mari0/#download)
+
+[Roguelike - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Roguelike)
+
+[Metal Slug - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Metal_Slug)
+
+:   ![](https://en.wikipedia.org/wiki/Metal_Slug#/media/File:Metal_Slug_%28cover%29.jpg)
+
+    Super Vehicle-001: Metal Slug (メタルスラッグ Metaru Suraggu), more
+    commonly known as simply Metal Slug, is a **run and gun video game**
+    developed and originally released by Nazca Corporation and later
+    published by SNK. It was originally released in 1996 for the Neo Geo
+    MVS arcade platform. The game is widely known for its sense of humor,
+    fluid hand-drawn animation, and fast paced two-player action. It is the
+    first title in the Metal Slug series. It has been ported to the Neo Geo
+    AES, Neo Geo CD, Sega Saturn, PlayStation, Virtual Console, PlayStation
+    Network, iOS, Android and Neo Geo X, and to the Wii, PlayStation
+    Portable and PlayStation 2 (as part of the Metal Slug Anthology).
+
+[Action game - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Action_game)
+
+[Shoot 'em up - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Shoot_%27em_up#Run_and_gun)
+
+[NetHackWiki, the NetHack wiki](https://nethackwiki.com/wiki/Main_Page)
+
+[Metal Slug X (Neo Geo) - The Cutting Room Floor](https://tcrf.net/Metal_Slug_X_(Neo_Geo)#Debug_Mode)
+
+[IBM Research | | Ponder this](https://www.research.ibm.com/haifa/ponderthis/index.shtml)
+
+[Archive — IPSC](http://ipsc.ksp.sk/archive)
+
+[alt.org - Public NetHack Server](https://alt.org/nethack/)
+
+[twitter/typeahead.js: typeahead.js is a fast and fully-featured autocomplete library](https://github.com/twitter/typeahead.js)
+
+:   TODO: 替换掉 autocomplete
+
+[崔添翼 § 翼若垂天之云 › 谁能看出这是个文科生？——关于matrix67](http://cuitianyi.com/blog/%e8%b0%81%e8%83%bd%e7%9c%8b%e5%87%ba%e8%bf%99%e6%98%af%e4%b8%aa%e6%96%87%e7%a7%91%e7%94%9f%ef%bc%9f%e2%80%94%e2%80%94%e5%85%b3%e4%ba%8ematrix67/)
+
+[把梦想“码”进现实 ——访计算机学院2013届校友崔添翼-学院动态-浙江大学计算机科学与技术学院中文站](http://www.cs.zju.edu.cn/chinese/redir.php?catalog_id=101754&object_id=133940)
+
+[值得推荐的C/C++框架和库 - Lippi-浮生志](http://coolshell.info/blog/2014/12/c-open-project.html)
+
+[Qt 学习之路 2 | DevBean's World - Part 2](http://www.devbean.net/category/qt-study-road-2/page/2/)
+
+[解读 Rob Pike 编写的正则表达式程序 - 开源中国社区](http://www.oschina.net/translate/regular-expression-matcher-code-by-rob-pike?cmp)
+
+[Tutorials - perldoc.perl.org](http://perldoc.perl.org/index-tutorials.html)
+
+[perlreftut - perldoc.perl.org](http://perldoc.perl.org/perlreftut.html)
+
+[你所读的计算机科学方向，有哪些不错的讲义（Notes）？ - 书籍推荐 - 知乎](http://www.zhihu.com/question/38300204)
+
+[6.858 / Fall 2014 / Schedule](http://css.csail.mit.edu/6.858/2014/schedule.html)
+
+[CSCI-UA.0202: Operating Systems (Undergrad)](http://www.cs.nyu.edu/~mwalfish/classes/15sp/index.html)
+
+[cirosantilli/cpp-cheat](https://github.com/cirosantilli/cpp-cheat)
+
+[cirosantilli/linux-cheat](https://github.com/cirosantilli/linux-cheat)
+
+[java - Why is processing a sorted array faster than an unsorted array? - Stack Overflow](http://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-an-unsorted-array)
+
+[VIM: index](http://man.lupaworld.com/content/manage/vi/doc/)
+
+[shell - How to run a series of vim commands from command prompt - Stack Overflow](http://stackoverflow.com/questions/23235112/how-to-run-a-series-of-vim-commands-from-command-prompt)
+
+:   ```bash
+    for %a in (A,B,C,D) do vim -c ":g/^\s*$/d" -c "<another command>" %a.txt
+    ```
+
+    `:help bufdo`
+
+[Vim Regular Expressions 101](http://www.vimregex.com/)
+
+[Search patterns - Vim Tips Wiki - Wikia](http://vim.wikia.com/wiki/Search_patterns)
+
+[Org Mode - Organize Your Life In Plain Text!](http://doc.norang.ca/org-mode.html)
+
+[Org-mode Emacs 下的瑞士軍刀](http://coldnew.github.io/COSCUP2013_org-mode/slide.html#1)
+
+[NARKOZ/hacker-scripts](https://github.com/NARKOZ/hacker-scripts)
+
+[Lessons on development of 64-bit C/C++ applications](http://www.viva64.com/en/l/)
+
+[GEGeek Tech Toolkit](http://www.gegeek.com/documents/85BB69B2F05486B9332CEA18B8D6E4BE690ADA38.html)
+
+[深入理解学习Git工作流（git-workflow-tutorial） - SegmentFault](http://segmentfault.com/a/1190000002918123)
+
+[www.computervisionblog.com/2015/06/deep-down-rabbit-hole-cvpr-2015-and.html](http://www.computervisionblog.com/2015/06/deep-down-rabbit-hole-cvpr-2015-and.html)
+
+[18-645: How to Write Fast Code](http://users.ece.cmu.edu/~pueschel/teaching/18-645-CMU-spring08/course.html)
+
+[Futures for C++11 at Facebook](https://code.facebook.com/posts/1661982097368498)
+
+[我的算法学习之路 - Lucida](http://zh.lucida.me/blog/on-learning-algorithms/)
+
+[ASCIIFlow Infinity](http://whudoc.qiniudn.com/asciiflow/index.html)
+
+:   我把 AsciiFlow 挪过来了，可以在
+
+    * <http://whudoc.qiniudn.com/asciiart.html>
+    * <http://whudoc.qiniudn.com/asciiflow>
+
+    使用。或者下载离线 <http://whudoc.qiniudn.com/asciiflow.7z>
+
+    TODO: 给它加一套键盘快捷键。
+
+[比尔华纳博士《我们因何而恐惧： 一个一千四百年的秘密》-纪录片视频-爱奇艺](http://www.iqiyi.com/w_19rrylp8kl.html)
+
+:   说 islam，如此地政治不正确哈哈哈。
+
+    其实历史永远是血腥的。
+
+[最高效的休息方式](http://www.douban.com/note/514216150/)
+
+[漫谈数据挖掘从入门到进阶](http://www.douban.com/note/283530204/)
+
+[八卦高德纳 (评论: 计算机程序设计艺术（第1卷）)](http://book.douban.com/review/5384627/)
+
+[【分享】来自于考拉小巫的各种给力文章大集合](http://www.douban.com/group/topic/15299075/)
+
+[洗脑三部曲（一） (评论: 暗时间)](http://book.douban.com/review/5012104/)
+
+[Digital rights management - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Digital_rights_management)
+
+:   Digital rights management (DRM) schemes are various access control
+    technologies that are used to restrict usage of proprietary hardware
+    and copyrighted works.[1] DRM technologies try to control the use,
+    modification, and distribution of copyrighted works (such as software
+    and multimedia content), as well as systems within devices that enforce
+    these policies.
+
+[Search patterns - Vim Tips Wiki - Wikia](http://vim.wikia.com/wiki/Search_patterns)
+
+[CSS: em, px, pt, cm, in…](https://www.w3.org/Style/Examples/007/units)
+
+[北美求职记_QAMichaelPeng_新浪博客](http://blog.sina.com.cn/s/blog_6740daa70101771h.html)
+
+[为什么 Microsoft 不与“FLAG”并称呢？](http://www.zhihu.com/question/31979481)
+
+:   再回到微软的问题：我之前很早的时候，拿了一个上海的微软（STC，在闵行的紫
+    竹园区）的 offer，当时薪水13.1w，股票125股；后来打听了一下Seattle的微软
+    Package，股票多点，也没翻10倍，所以基本上对FLAG来说就是杯水车薪。而且现
+    在一般大牛的技术人员或者牛逼毕业生，都是只看股票不看薪水的；薪水就是个
+    零花钱，买买车付付房租还行，根本没法发财。所以一般只看裸薪是多少（而没
+    有股票意识）的人，都是没见过世面，也没体会过资本市场的造富速度的人。
 
 [git status - list last modified date - Stack Overflow](http://stackoverflow.com/questions/14141344/git-status-list-last-modified-date)
 
@@ -18133,265 +19279,332 @@ chess), displaying its complexity despite relatively simple rules.
     done
     ```
 
-#. &#x2610; [CSS image hover effects , Image hover effects , hover Opacity , hover Overlay and Hover change picture](http://www.corelangs.com/css/box/hover.html)
-#. &#x2610; [W3School在线测试工具 V2](http://www.w3school.com.cn/tiy/t.asp?f=css3_border-image_button)
-#. &#x2610; [横山宏---科幻军事之父](http://site.douban.com/106758/widget/notes/174077/note/148694802/)
-:   ?
-    :   * 谁说只有男生才会喜欢机械人。
-        * 我从小就很喜欢破铜烂铁的小玩意。机械人更是无比中意。
-        * 当然,那时候我只有一些塑胶的模型。基本是经常跩在手心里把玩的。
-        * 尤其是打针要打屁股的时候。我妈就会说机器人打针是不会哭的。
-        * OK。我也可以。。
-#. &#x2610; [CCMakefile4iOS/Makefile at master · webfrogs/CCMakefile4iOS](https://github.com/webfrogs/CCMakefile4iOS/blob/master/Makefile)
-#. &#x2610; [windows - How to pass command line parameters to a batch file? - Stack Overflow](http://stackoverflow.com/questions/26551/how-to-pass-command-line-parameters-to-a-batch-file)
-:   ?
-    :   ```bash
-        echo off
-        fake-command /u %1 /p %2 %*
-        ```
+[CSS image hover effects , Image hover effects , hover Opacity , hover Overlay and Hover change picture](http://www.corelangs.com/css/box/hover.html)
 
-        When you run:
+[W3School在线测试工具 V2](http://www.w3school.com.cn/tiy/t.asp?f=css3_border-image_button)
 
-        ```shell
-        test-command admin password foo bar
-        ```
+[横山宏---科幻军事之父](http://site.douban.com/106758/widget/notes/174077/note/148694802/)
 
-        the above batch file will run:
-        ```shell
-        fake-command /u admin /p password foo bar
-        ```
+:   这姑娘逗……
 
-        Edit: Actually, `%*` means "all", so one would actually need to use shift to do the above:
+    - 谁说只有男生才会喜欢机械人。
+    - 我从小就很喜欢破铜烂铁的小玩意。机械人更是无比中意。
+    - 当然,那时候我只有一些塑胶的模型。基本是经常跩在手心里把玩的。
+    - 尤其是打针要打屁股的时候。我妈就会说机器人打针是不会哭的。
+    - OK。我也可以。。
 
-        ```shell
-        echo off
-        set arg1=%1
-        set arg2=%2
-        shift
-        shift
-        fake-command /u %arg1% /p %arg2% %*
-        ```
-#. &#x2610; [启动或停止 Web 服务器 (IIS 8)](https://technet.microsoft.com/zh-cn/library/jj635851.aspx)
-:   ?
-    :   用 nodejs 开 80 端口的 http 服务器，需要先关闭 IIS：`net stop WAS`（实际上用 `net pause WAS` 更好）
+[CCMakefile4iOS/Makefile at master · webfrogs/CCMakefile4iOS](https://github.com/webfrogs/CCMakefile4iOS/blob/master/Makefile)
 
-        add `blog.sh` to
-        <small>
-        `C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`:
-        </small>
+[windows - How to pass command line parameters to a batch file? - Stack Overflow](http://stackoverflow.com/questions/26551/how-to-pass-command-line-parameters-to-a-batch-file)
 
-        ```shell
-        #!/bin/bash
+:   ```bash
+    echo off
+    fake-command /u %1 /p %2 %*
+    ```
 
-        net pause WAS
-        (cd D:/tzx/git/blog/publish && http-server -p 80)
-        ```
+    When you run:
 
-        blog.cmd
+    ```shell
+    test-command admin password foo bar
+    ```
 
-        ```cmd
-        START /B CMD /C CALL "blog.sh"
-        ```
-#. &#x2610; [Batch Indentation with Emacs](http://www.cslab.pepperdine.edu/warford/BatchIndentationEmacs.html)
-#. &#x2610; [Keybr.com 小工具](http://whudoc.qiniudn.com/keybr.html)
-#. &#x2610; [氛围音乐推荐（看书，写论文，调整心情必备良药） - 简书](http://www.jianshu.com/p/8b086b1c09df)
-#. &#x2610; [优秀且免费的照片库 - 简书](http://www.jianshu.com/p/5b7b09b93875#)
-#. &#x2610; [CTest:Using CTEST and CDASH without CMAKE - KitwarePublic](http://www.vtk.org/Wiki/CTest%3aUsing_CTEST_and_CDASH_without_CMAKE#Examples_2)
-#. &#x2610; [Qt Plotting Widget QCustomPlot - Introduction](http://www.qcustomplot.com/)
-#. &#x2610; [qwt-plot3d download | SourceForge.net](http://sourceforge.net/projects/qwtplot3d/)
-#. &#x2610; [c++ - Why is "using namespace std;" considered bad practice? - Stack Overflow](http://stackoverflow.com/questions/1452721/why-is-using-namespace-std-considered-bad-practice#comment1299902_1452738)
-#. &#x2610; [productivity - What is your most productive shortcut with Vim? - Stack Overflow](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim?rq=1)
-#. &#x2610; http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html
-#. &#x2610; http://www.jianshu.com/p/830036e46179
-#. &#x2610; [shell - How can I concatenate string variables in Bash? - Stack Overflow](http://stackoverflow.com/questions/4181703/how-can-i-concatenate-string-variables-in-bash/18041780#18041780)
-#. &#x2610; [crop - Cropping a PDF using Ghostscript 9.01 - Stack Overflow](http://stackoverflow.com/questions/6183479/cropping-a-pdf-using-ghostscript-9-01)
-:   ?
-    :   ```bash
-        gswin64c.exe \
-        -o cropped.pdf \
-        -sDEVICE=pdfwrite \
-        -c "[/CropBox [24 158.4 465.4 791.6]" \
-        -c " /PAGES pdfmark" \
-        -f test.pdf
-        ```
-#. &#x2610; [SVG Pocket Guide](http://svgpocketguide.com/book/)
-#. &#x2611; [在 org-mode 中使用 Graphviz 畫關係圖 | coldnew's blog](http://coldnew.github.io/blog/2013/07-13_07e15/)
-#. &#x2611; [org-mode, “文学编程” , 自动化报告](http://dayigu.github.io/OrgModeAndLiterateProgramming.html)
-#. &#x2610; [GitHub does dotfiles - dotfiles.github.io](https://dotfiles.github.io/)
-#. &#x2610; [Read Lisp, Tweak Emacs: How to read Emacs Lisp so that you can customize Emacs](http://emacslife.com/how-to-read-emacs-lisp.html#orgheadline1)
-#. &#x2610; [The Linux desktop experience is killing Linux on the desktop - (think)](http://batsov.com/articles/2011/06/11/linux-desktop-experience-killing-linux-on-the-desktop/)
-#. &#x2610; [42+ Text-Editing Keyboard Shortcuts That Work Almost Everywhere](http://www.howtogeek.com/115664/42-text-editing-keyboard-shortcuts-that-work-almost-everywhere/)
-#. &#x2610; [ssh - Multiple public keys for one user - Server Fault](http://serverfault.com/questions/221760/multiple-public-keys-for-one-user)
-#. &#x2610; [Code Charts](http://www.unicode.org/charts/)
-#. &#x2610; [Perl Regular Expression Syntax - 1.49.0](http://www.boost.org/doc/libs/1_49_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html#boost_regex.syntax.perl_syntax.perl_regular_expression_syntax)
-#. &#x2610; [网络科学导论](http://zhiyuan.sjtu.edu.cn/Course/netsci.htm)
-#. &#x2610; [王友来：《我在美国坐牢——美国联邦监狱揭密》 | 海外文摘 - Bay Area Chinese--灣區華人 - Powered by PHPWind](http://www.bachinese.com/forum/simple/?t20389.html)
-#. &#x2610; [Machiavellianism - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Machiavellianism)
-#. &#x2610; [马基雅维利主义\_百度百科](http://baike.baidu.com/view/1201238.htm)
-#. &#x2610; [日本有哪些好的歌手？ - 知乎](https://www.zhihu.com/question/22782650)
-:   ?
-    :   5. ZARD 听到就让人泪目的摇滚乐团无需多言。这首《君に逢いたくなったら》是
-        1997 年的单曲，每次听到都会十分感动。ZARD 的曲子里充满着从骨子里发出的不
-        羁和向上，就是那种流着眼泪微笑的感觉。其他脍炙人口的曲子包括 《揺れる想
-        い》 和《负けないで》。作为 tie 柯南的乐团之一，当然还有大热的 《运命のル
-        ーレット廻して》。
-#. &#x2610; [科学网—我是河南人 - 施一公的博文](http://blog.sciencenet.cn/home.php?mod=space&uid=46212&do=blog&id=284162)
-#. &#x2610; [埃瓦里斯特·伽罗瓦\_百度百科](http://baike.baidu.com/link?url=RYtI1uUwSNSdH-8aadFGVjY6TEivoTIcIhGXY-rHHMQLkt02C23vKXJE5xYgRxwOIC3CKyby0hjSkL_WmNQy45roMynw1pOXa7k7kbl5Rlr2wyGb4l42qV74hnvKY80he7MvG-So-Aq3p-eH9H1MIa)
-#. &#x2610; [虽然去不了 Google，走到这步大概也不错了 - laike9m's blog](https://laike9m.com/blog/sui-ran-qu-bu-liao-googlezou-dao-zhe-bu-da-gai-ye-bu-cuo-liao,72/)
-:   ?
-    :   所以说，Google 并不在乎你的表现如何，在乎的是你的表现必须超出别的应聘者
-        一大截。对我来讲，这是不可能做到的事，至少我没法在中国做到。
+    the above batch file will run:
+    ```shell
+    fake-command /u admin /p password foo bar
+    ```
 
-        去年实验室有四个人拿到 Google 的 Offer，我觉得他们都是神。
-#. &#x2610; [all\_in\_utf8/convert\_to\_utf8.py at master · laike9m/all\_in\_utf8](https://github.com/laike9m/all_in_utf8/blob/master/convert_to_utf8.py)
-#. &#x2610; [The Lucifer Effect by Philip Zimbardo](http://www.lucifereffect.com/)
-:   ?
-    :   Welcome to LuciferEffect.org, official web site of The Lucifer Effect:
-        Understanding How Good People Turn Evil (Random House, 2007). In this
-        book, I summarize more than 30 years of research on factors that can
-        create a "perfect storm" which leads good people to engage in evil
-        actions. This transformation of human character is what I call the
-        "Lucifer Effect," named after God's favorite angel, Lucifer, who fell
-        from grace and ultimately became Satan.
+    Edit: Actually, `%*` means "all", so one would actually need to use shift to do the above:
 
-        More
+    ```shell
+    echo off
+    set arg1=%1
+    set arg2=%2
+    shift
+    shift
+    fake-command /u %arg1% /p %arg2% %*
+    ```
 
-        * [一个普通人离杀人有多远——梁文道讲《路西法效应》](http://www.douban.com/group/topic/21241596/)
-#. &#x2610; [如何才能去做喜欢的事情](http://www.wanglianghome.org/zh_CN/translation/HowToDoWhatYouLove.html)
-#. &#x2610; [书是好书，但记忆法…… (评论: Moonwalking With Einstein)](http://book.douban.com/review/5312595/)
-:   ?
-    :   科学研究还显示，如果我们不去刻意的锻炼一种能力的话，那么该项能力无论如
-        何也不会进步，这也是为什么那些告诉我们夜里听录音就能学外语、或者可以调
-        动潜意识学习一类的商品也都是骗人的。即使我们主动去锻炼一种能力，该项能
-        力也未必能够得到提升。
-#. &#x2610; [Choosing an HTTP Status Code — Stop Making It Hard | Racksburg](http://racksburg.com/choosing-an-http-status-code/)
-#. &#x2611; [聪明书签](http://fatduck.org/smartbookmark.html)
-:   ?
-    :   ![](http://fatduck.org/images/smartbookmark2.jpg)
-#. &#x2610; [Casio F-91W: The strangely ubiquitous watch - BBC News](http://www.bbc.com/news/magazine-13194733)
-#. &#x2610; [如果他玩微博，秒杀一切段子手 - 简书](http://www.jianshu.com/p/12abee0e372e#)
-:   ?
-    :   如果他们说你配得到这个奖你就接受了，那么下次他们说你不配的时候，你也得接受。
-#. &#x2610; [RFC 1345 - Character Mnemonics and Character Sets](https://tools.ietf.org/html/rfc1345)
-#. &#x2610; [降级论 | Meditic](http://meditic.com/degrading-for-success)
-#. &#x2610; [图灵奖得主：思考比编码重要 - 微软亚洲研究院](http://www.msra.cn/zh-cn/connections/stories/leslie-visit-pku-20151203.aspx)
-#. &#x2610; [rswier/c4](https://github.com/rswier/c4)
-#. &#x2610; [sigslot - C++ Signal/Slot Library](http://sigslot.sourceforge.net/)
-#. &#x2610; [一个Sqrt函数引发的血案 | 帝都码农](http://diducoder.com/sotry-about-sqrt.html)
-#. &#x2610; [《了不起的盖茨比》：绿光 - 读立写生](http://cnfeat.com/blog/2014/03/05/green-light/)
-:   ?
-    :   有记者采访莱昂纳多，询问他是否会因为从未得到过学院青睐而感到不服。他笑
-        了笑，回答道：「很有意思的是，大家似乎都觉得学院欠我什么。」他随后一直
-        看着地板，似乎在整理思绪。随后表示，「我想每一个有抱负的演员都会希望得
-        到业内同行的肯定和赞许，但事实就是每一年只有一个人能够得到这个特殊的荣
-        誉。」
-#. &#x2610; [The Intentionality of Evil (Aaron Swartz's Raw Thought)](file:///E:/blogs/Aarow-Swartz/www.aaronsw.com/weblog/intentionalevil-4.html)
-#. &#x2610; [I Hate the News (Aaron Swartz's Raw Thought)](file:///E:/blogs/Aarow-Swartz/www.aaronsw.com/weblog/hatethenews.html)
-:   ?
-    :   None of these stories have relevance to my life. Reading them may be
-        enjoyable, but it’s an enjoyable waste of time. They will have no
-        impact on my actions one way or another.
-#. &#x2610; [Wi-Fi 是什么的缩写 - 第九阅览室 - 提供科学养分](http://9yls.net/19760.html)
-:   ?
-    :   从 Wi-Fi 扩展成 wireless fidelity，也就是把一个词当作缩写逆向扩展出某种
-        含义的过程，是一种文字游戏，叫backronym，意思和 acronym 相对。Backronym
-        很容易被传着传着就当真。常见的比如 SOS，很多人认为是 save our souls 的
-        缩写，但实际上是先有的易识别易操作的摩尔斯电码···–––···，后选用相对应的
-        字母组合SOS 来表示罢了。因此 SOS 和 Wi-Fi 一样，没有任何含义，也不是什
-        么的缩写，还真是同病相怜呐。
-#. &#x2610; [有哪些让你笑了半辈子，每次给别人讲自己都会爆笑的笑话？ - 知乎](https://www.zhihu.com/question/23547779)
-#. &#x2610; [日常生活中有哪些十分钟就能学会并可以终生受用的技能？ - 知乎](https://www.zhihu.com/question/20894671)
-:   ?
-    :   #. office 里双击格式刷可以多次使用
-        #. Ctrl+BackSpace是以单词为单位删除文本
-        #. control+click, shift+click
-        #. C:\Docume~1\Admini~1
-        #. 空格键长度最短的键盘是日语键盘
-        #. `data:text/html,<html contenteditable>`
-        #. 当你保存你的ppt时，用后缀.pps或.ppsx，那样的话，打开时会直接进入幻灯片播放模式。
-        #. 人们最终记住的不是你说过的话，而是你让他们产生的感觉。几乎所有的人都喜欢谈论自己的事情，所以，多问问题。
-        #. 在外住旅社时，在门后放一个玻璃水杯，提防陌生人入门。
-        #. 打错电话时，除了说不好意思打扰了，还可以再多说一句祝您生活愉快，真的让人更容易接受你的歉意。
-        #. 出门的时候检查必备物品就是四个：“伸手要钱”。（身份证、手机、钥匙、钱包）
-        #. 拍证件照时用舌头顶住上颚，笑的会很自然。
-        #. 在外旅游，被劝玩各种项目时，只要说“跟团”俩字，别人一般不会再纠缠，在多个城市亲自测试，有效！
-        #. 当人恐惧时，血液从手臂流向腿部，这样为逃跑做好准备，手会先冷下来
-        #. 如何在10分钟内记住某一年的日历。只要记忆12个数字就可以了。让我们试着记住
-           2014年的日历吧。255 136 140 250（在你的脑海里试着用小图像的方法记住
-           它）含义是明显的，每一个数字代表一个月，比如 2代表1月，5代表2月，5代
-           表3月……为了得到具体某一天是周几其实很简单。以2014年8月15日为例：回忆
-           你记住的当月的数字。嗯，8月是4。将日期加上你记住的数字。嗯，15+4=19.
-           将结果除以7，取余数。嗯，19/7=2……5完成！2014年8月15日是星期五。
-#. &#x2610; [单词拼写，怎么记又快又好？](http://www.baicizhan.com/article/4)
-:   ?
-    :   Read more
+[启动或停止 Web 服务器 (IIS 8)](https://technet.microsoft.com/zh-cn/library/jj635851.aspx)
 
-        #. [坏习惯一大堆？别怕，还有救](http://www.baicizhan.com/article/6)
-        #. [我们为什么必须背单词？](http://www.baicizhan.com/article/2)
-        #. [如何在一天内记200个单词？](http://www.baicizhan.com/article/3)
+:   用 nodejs 开 80 端口的 http 服务器，需要先关闭 IIS：`net stop WAS`（实际上用 `net pause WAS` 更好）
 
-        #. [百词斩TV 黑暗料理单词视频](http://tv.baicizhan.com/playlist/1000322)
-        #. [百词斩TV 成为学霸的10个秘诀单词视频](http://tv.baicizhan.com/playlist/1000323)
-        #. [百词斩TV 羞羞的知识单词视频](http://tv.baicizhan.com/playlist/1000513)
-            i. carnal desire
-            #. ba-ccha-na-lian antics
-            #. contra-sepive
-            #. sa-cri-legious（遭天谴的）
-            #. homo-sexual
-            #. full of allure
-            #. add a bit of artificial lighting
-            #. it's a bit of brash
-            #. you randy old man
-        #. [百词斩TV 人体姿势12问单词视频](http://tv.baicizhan.com/playlist/1000514)
-            i. re-cum-bent bike, lie on a recumbent position
-            #. lying pro-strate in peace
-            #. a se-den-tary lifestyle
-            #. stand steady or i'll beat you with this stick
-            #. sit in an upright position
-            #. rigid `[ˈrɪdʒɪd]`, improve my posture, not becoming a slotch like you.
-            #. pre-carious, likely to collapse. I was gymnast for 10 years. Not precarous at all.
-            #. si-mul-ta-neous, simultaneous actions and movements
-            #. bend. I kneel before you. I said kneel.
-        #. [百词斩TV 绅士的品格单词视频](http://tv.baicizhan.com/playlist/1000515)
-            i. strapped for cash. A generous man did the same thing for me.
-            #. considerate
-            #. an educated man, resulting from or having good education. opposite to you
-            #. charming. come for a ride in my convertable
-            #. humourous
-            #. handsome, stop looking at him
-            #. reliable
-            #. leave your genteel manners at home when you come to my house
-            #. in gentle voice, give you a gentle pat on the back before I yell at you again
-        #. [百词斩TV 霸道总裁爱上我单词视频](http://tv.baicizhan.com/playlist/1000516)
-#. &#x2610; [dae/anki](https://github.com/dae/anki)
-#. &#x2610; [【弄"潮"儿】英文中的20种orgasm](http://mp.weixin.qq.com/s?__biz=MjM5NTExMTk5MA==&mid=404899112&idx=1&sn=11953362f9dbfb81c1c595a8091a6829&scene=0#wechat_redirect)
-#. &#x2610; [Bachelor tax - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Bachelor_tax)
-#. &#x2610; [舌尖上的忘词&背单词的秘诀](http://mp.weixin.qq.com/s?__biz=MjM5NTExMTk5MA==&mid=409398412&idx=1&sn=a592c82fd0a57b15559832c983033ca8&scene=0#wechat_redirect)
-:   ?
-    :   四熟是指眼熟，耳熟，意熟，用熟。
+    add `blog.sh` to
+    <small>
+    `C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`:
+    </small>
 
-        "In the buff" is a slang term for nude
+    ```shell
+    #!/bin/bash
 
-        【smh】shake my head/ shaking my head的缩写。表示觉得某事太弱智，或者对某事失望、无语。
+    net pause WAS
+    (cd D:/tzx/git/blog/publish && http-server -p 80)
+    ```
 
-        dafuq (the f*ck)
+    blog.cmd
 
-        总而言之，如果一个词你不会用，那这词就不是你的。
-        可能是老师的，可能是老美的，可能是老英的，也可能是隔壁老王的，反正它不是你的。
+    ```cmd
+    START /B CMD /C CALL "blog.sh"
+    ```
 
-        More to read
+[Batch Indentation with Emacs](http://www.cslab.pepperdine.edu/warford/BatchIndentationEmacs.html)
 
-        #. [你是如何将词汇量提升到 2 万，甚至 3 万的？ - 尼克六六的回答 - 知乎](https://www.zhihu.com/question/26814125/answer/47842171)
-        #. [Corpus of Contemporary American English (COCA)](http://corpus.byu.edu/coca/)
-        #. [[bnc] British National Corpus](http://www.natcorp.ox.ac.uk/)
-#. &#x2610; [Highest Voted 'qt' Questions - Stack Overflow](http://stackoverflow.com/questions/tagged/qt?sort=votes)
-#. &#x2610; [Inno Setup](http://www.jrsoftware.org/isinfo.php)
-#. &#x2610; [Recommended Reading for Developers](file:///E:/blogs/CodingHorror/blog.codinghorror.com/recommended-reading-for-developers/index.html)
-:   ?
-    :   Programming Pearls is the next best thing to working side by side with
-        a master programmer for a year or so. It is the collective wisdom of
-        many journeyman coders distilled into succinct, digestible columns.
-#. &#x2610; [What is Trolling?](file:///E:/blogs/CodingHorror/blog.codinghorror.com/what-is-trolling/index.html)
+[Keybr.com 小工具](http://whudoc.qiniudn.com/keybr.html)
+
+[氛围音乐推荐（看书，写论文，调整心情必备良药） - 简书](http://www.jianshu.com/p/8b086b1c09df)
+
+[优秀且免费的照片库 - 简书](http://www.jianshu.com/p/5b7b09b93875#)
+
+[CTest:Using CTEST and CDASH without CMAKE - KitwarePublic](http://www.vtk.org/Wiki/CTest%3aUsing_CTEST_and_CDASH_without_CMAKE#Examples_2)
+
+[Qt Plotting Widget QCustomPlot - Introduction](http://www.qcustomplot.com/)
+
+[qwt-plot3d download | SourceForge.net](http://sourceforge.net/projects/qwtplot3d/)
+
+[c++ - Why is "using namespace std;" considered bad practice? - Stack Overflow](http://stackoverflow.com/questions/1452721/why-is-using-namespace-std-considered-bad-practice#comment1299902_1452738)
+
+[productivity - What is your most productive shortcut with Vim? - Stack Overflow](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim?rq=1)
+
+[字符编码笔记：ASCII，Unicode和UTF-8 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html)
+
+[怎样区别公司名称后缀 - 简书](http://www.jianshu.com/p/830036e46179)
+
+[shell - How can I concatenate string variables in Bash? - Stack Overflow](http://stackoverflow.com/questions/4181703/how-can-i-concatenate-string-variables-in-bash/18041780#18041780)
+
+[crop - Cropping a PDF using Ghostscript 9.01 - Stack Overflow](http://stackoverflow.com/questions/6183479/cropping-a-pdf-using-ghostscript-9-01)
+
+:   ```bash
+    gswin64c.exe \
+    -o cropped.pdf \
+    -sDEVICE=pdfwrite \
+    -c "[/CropBox [24 158.4 465.4 791.6]" \
+    -c " /PAGES pdfmark" \
+    -f test.pdf
+    ```
+[SVG Pocket Guide](http://svgpocketguide.com/book/)
+
+[在 org-mode 中使用 Graphviz 畫關係圖 | coldnew's blog](http://coldnew.github.io/blog/2013/07-13_07e15/)
+
+[org-mode, “文学编程” , 自动化报告](http://dayigu.github.io/OrgModeAndLiterateProgramming.html)
+
+[GitHub does dotfiles - dotfiles.github.io](https://dotfiles.github.io/)
+
+[Read Lisp, Tweak Emacs: How to read Emacs Lisp so that you can customize Emacs](http://emacslife.com/how-to-read-emacs-lisp.html#orgheadline1)
+
+[The Linux desktop experience is killing Linux on the desktop - (think)](http://batsov.com/articles/2011/06/11/linux-desktop-experience-killing-linux-on-the-desktop/)
+
+[42+ Text-Editing Keyboard Shortcuts That Work Almost Everywhere](http://www.howtogeek.com/115664/42-text-editing-keyboard-shortcuts-that-work-almost-everywhere/)
+
+[ssh - Multiple public keys for one user - Server Fault](http://serverfault.com/questions/221760/multiple-public-keys-for-one-user)
+
+[Code Charts](http://www.unicode.org/charts/)
+
+[Perl Regular Expression Syntax - 1.49.0](http://www.boost.org/doc/libs/1_49_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html#boost_regex.syntax.perl_syntax.perl_regular_expression_syntax)
+
+[网络科学导论](http://zhiyuan.sjtu.edu.cn/Course/netsci.htm)
+
+[王友来：《我在美国坐牢——美国联邦监狱揭密》 | 海外文摘 - Bay Area Chinese--灣區華人 - Powered by PHPWind](http://www.bachinese.com/forum/simple/?t20389.html)
+
+[Machiavellianism - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Machiavellianism)
+
+[马基雅维利主义\_百度百科](http://baike.baidu.com/view/1201238.htm)
+
+[日本有哪些好的歌手？ - 知乎](https://www.zhihu.com/question/22782650)
+
+:   5. ZARD 听到就让人泪目的摇滚乐团无需多言。这首《君に逢いたくなったら》是
+    1997 年的单曲，每次听到都会十分感动。ZARD 的曲子里充满着从骨子里发出的不
+    羁和向上，就是那种流着眼泪微笑的感觉。其他脍炙人口的曲子包括 《揺れる想
+    い》 和《负けないで》。作为 tie 柯南的乐团之一，当然还有大热的 《运命のル
+    ーレット廻して》。
+
+[科学网—我是河南人 - 施一公的博文](http://blog.sciencenet.cn/home.php?mod=space&uid=46212&do=blog&id=284162)
+
+[埃瓦里斯特·伽罗瓦\_百度百科](http://baike.baidu.com/link?url=RYtI1uUwSNSdH-8aadFGVjY6TEivoTIcIhGXY-rHHMQLkt02C23vKXJE5xYgRxwOIC3CKyby0hjSkL_WmNQy45roMynw1pOXa7k7kbl5Rlr2wyGb4l42qV74hnvKY80he7MvG-So-Aq3p-eH9H1MIa)
+
+[虽然去不了 Google，走到这步大概也不错了 - laike9m's blog](https://laike9m.com/blog/sui-ran-qu-bu-liao-googlezou-dao-zhe-bu-da-gai-ye-bu-cuo-liao,72/)
+
+:   所以说，Google 并不在乎你的表现如何，在乎的是你的表现必须超出别的应聘者
+    一大截。对我来讲，这是不可能做到的事，至少我没法在中国做到。
+
+    去年实验室有四个人拿到 Google 的 Offer，我觉得他们都是神。
+
+[`all_in_utf8/convert_to_utf8.py` at master · laike9m/`all_in_utf8`](https://github.com/laike9m/all_in_utf8/blob/master/convert_to_utf8.py)
+
+[The Lucifer Effect by Philip Zimbardo](http://www.lucifereffect.com/)
+
+:   Welcome to LuciferEffect.org, official web site of The Lucifer Effect:
+    Understanding How Good People Turn Evil (Random House, 2007). In this
+    book, I summarize more than 30 years of research on factors that can
+    create a "perfect storm" which leads good people to engage in evil
+    actions. This transformation of human character is what I call the
+    "Lucifer Effect," named after God's favorite angel, Lucifer, who fell
+    from grace and ultimately became Satan.
+
+    refs and see also
+
+      - [一个普通人离杀人有多远——梁文道讲《路西法效应》](http://www.douban.com/group/topic/21241596/)
+
+[如何才能去做喜欢的事情](http://www.wanglianghome.org/zh_CN/translation/HowToDoWhatYouLove.html)
+
+[书是好书，但记忆法…… (评论: Moonwalking With Einstein)](http://book.douban.com/review/5312595/)
+
+:   科学研究还显示，如果我们不去刻意的锻炼一种能力的话，那么该项能力无论如
+    何也不会进步，这也是为什么那些告诉我们夜里听录音就能学外语、或者可以调
+    动潜意识学习一类的商品也都是骗人的。即使我们主动去锻炼一种能力，该项能
+    力也未必能够得到提升。
+
+[Choosing an HTTP Status Code — Stop Making It Hard | Racksburg](http://racksburg.com/choosing-an-http-status-code/)
+
+[聪明书签](http://fatduck.org/smartbookmark.html)
+
+:   ![](http://fatduck.org/images/smartbookmark2.jpg)
+
+[Casio F-91W: The strangely ubiquitous watch - BBC News](http://www.bbc.com/news/magazine-13194733)
+
+[如果他玩微博，秒杀一切段子手 - 简书](http://www.jianshu.com/p/12abee0e372e#)
+
+:   如果他们说你配得到这个奖你就接受了，那么下次他们说你不配的时候，你也得接受。
+
+[RFC 1345 - Character Mnemonics and Character Sets](https://tools.ietf.org/html/rfc1345)
+
+[降级论 | Meditic](http://meditic.com/degrading-for-success)
+
+[图灵奖得主：思考比编码重要 - 微软亚洲研究院](http://www.msra.cn/zh-cn/connections/stories/leslie-visit-pku-20151203.aspx)
+
+[rswier/c4](https://github.com/rswier/c4)
+
+[sigslot - C++ Signal/Slot Library](http://sigslot.sourceforge.net/)
+
+[一个Sqrt函数引发的血案 | 帝都码农](http://diducoder.com/sotry-about-sqrt.html)
+
+[《了不起的盖茨比》：绿光 - 读立写生](http://cnfeat.com/blog/2014/03/05/green-light/)
+
+:   有记者采访莱昂纳多，询问他是否会因为从未得到过学院青睐而感到不服。他笑
+    了笑，回答道：「很有意思的是，大家似乎都觉得学院欠我什么。」他随后一直
+    看着地板，似乎在整理思绪。随后表示，「我想每一个有抱负的演员都会希望得
+    到业内同行的肯定和赞许，但事实就是每一年只有一个人能够得到这个特殊的荣
+    誉。」
+
+[The Intentionality of Evil (Aaron Swartz's Raw Thought)](file:///E:/blogs/Aarow-Swartz/www.aaronsw.com/weblog/intentionalevil-4.html)
+
+[I Hate the News (Aaron Swartz's Raw Thought)](file:///E:/blogs/Aarow-Swartz/www.aaronsw.com/weblog/hatethenews.html)
+
+:   None of these stories have relevance to my life. Reading them may be
+    enjoyable, but it’s an enjoyable waste of time. They will have no
+    impact on my actions one way or another.
+
+[Wi-Fi 是什么的缩写 - 第九阅览室 - 提供科学养分](http://9yls.net/19760.html)
+
+:   从 Wi-Fi 扩展成 wireless fidelity，也就是把一个词当作缩写逆向扩展出某种
+    含义的过程，是一种文字游戏，叫backronym，意思和 acronym 相对。Backronym
+    很容易被传着传着就当真。常见的比如 SOS，很多人认为是 save our souls 的
+    缩写，但实际上是先有的易识别易操作的摩尔斯电码···–––···，后选用相对应的
+    字母组合SOS 来表示罢了。因此 SOS 和 Wi-Fi 一样，没有任何含义，也不是什
+    么的缩写，还真是同病相怜呐。
+
+[有哪些让你笑了半辈子，每次给别人讲自己都会爆笑的笑话？ - 知乎](https://www.zhihu.com/question/23547779)
+
+[日常生活中有哪些十分钟就能学会并可以终生受用的技能？ - 知乎](https://www.zhihu.com/question/20894671)
+
+:   #. office 里双击格式刷可以多次使用
+    #. Ctrl+BackSpace是以单词为单位删除文本
+    #. control+click, shift+click
+    #. C:\Docume~1\Admini~1
+    #. 空格键长度最短的键盘是日语键盘
+    #. `data:text/html,<html contenteditable>`
+    #. 当你保存你的ppt时，用后缀.pps或.ppsx，那样的话，打开时会直接进入幻灯片播放模式。
+    #. 人们最终记住的不是你说过的话，而是你让他们产生的感觉。几乎所有的人都喜欢谈论自己的事情，所以，多问问题。
+    #. 在外住旅社时，在门后放一个玻璃水杯，提防陌生人入门。
+    #. 打错电话时，除了说不好意思打扰了，还可以再多说一句祝您生活愉快，真的让人更容易接受你的歉意。
+    #. 出门的时候检查必备物品就是四个：“伸手要钱”。（身份证、手机、钥匙、钱包）
+    #. 拍证件照时用舌头顶住上颚，笑的会很自然。
+    #. 在外旅游，被劝玩各种项目时，只要说“跟团”俩字，别人一般不会再纠缠，在多个城市亲自测试，有效！
+    #. 当人恐惧时，血液从手臂流向腿部，这样为逃跑做好准备，手会先冷下来
+    #. 如何在10分钟内记住某一年的日历。只要记忆12个数字就可以了。让我们试着记住
+       2014年的日历吧。255 136 140 250（在你的脑海里试着用小图像的方法记住
+       它）含义是明显的，每一个数字代表一个月，比如 2代表1月，5代表2月，5代
+       表3月……为了得到具体某一天是周几其实很简单。以2014年8月15日为例：回忆
+       你记住的当月的数字。嗯，8月是4。将日期加上你记住的数字。嗯，15+4=19.
+       将结果除以7，取余数。嗯，19/7=2……5完成！2014年8月15日是星期五。
+
+[单词拼写，怎么记又快又好？](http://www.baicizhan.com/article/4)
+
+:   Read more
+
+    #. [坏习惯一大堆？别怕，还有救](http://www.baicizhan.com/article/6)
+    #. [我们为什么必须背单词？](http://www.baicizhan.com/article/2)
+    #. [如何在一天内记200个单词？](http://www.baicizhan.com/article/3)
+
+    #. [百词斩TV 黑暗料理单词视频](http://tv.baicizhan.com/playlist/1000322)
+    #. [百词斩TV 成为学霸的10个秘诀单词视频](http://tv.baicizhan.com/playlist/1000323)
+    #. [百词斩TV 羞羞的知识单词视频](http://tv.baicizhan.com/playlist/1000513)
+        i. carnal desire
+        #. ba-ccha-na-lian antics
+        #. contra-sepive
+        #. sa-cri-legious（遭天谴的）
+        #. homo-sexual
+        #. full of allure
+        #. add a bit of artificial lighting
+        #. it's a bit of brash
+        #. you randy old man
+    #. [百词斩TV 人体姿势12问单词视频](http://tv.baicizhan.com/playlist/1000514)
+        i. re-cum-bent bike, lie on a recumbent position
+        #. lying pro-strate in peace
+        #. a se-den-tary lifestyle
+        #. stand steady or i'll beat you with this stick
+        #. sit in an upright position
+        #. rigid `[ˈrɪdʒɪd]`, improve my posture, not becoming a slotch like you.
+        #. pre-carious, likely to collapse. I was gymnast for 10 years. Not precarous at all.
+        #. si-mul-ta-neous, simultaneous actions and movements
+        #. bend. I kneel before you. I said kneel.
+    #. [百词斩TV 绅士的品格单词视频](http://tv.baicizhan.com/playlist/1000515)
+        i. strapped for cash. A generous man did the same thing for me.
+        #. considerate
+        #. an educated man, resulting from or having good education. opposite to you
+        #. charming. come for a ride in my convertable
+        #. humourous
+        #. handsome, stop looking at him
+        #. reliable
+        #. leave your genteel manners at home when you come to my house
+        #. in gentle voice, give you a gentle pat on the back before I yell at you again
+    #. [百词斩TV 霸道总裁爱上我单词视频](http://tv.baicizhan.com/playlist/1000516)
+
+[dae/anki](https://github.com/dae/anki)
+
+[【弄"潮"儿】英文中的20种orgasm](http://mp.weixin.qq.com/s?__biz=MjM5NTExMTk5MA==&mid=404899112&idx=1&sn=11953362f9dbfb81c1c595a8091a6829&scene=0#wechat_redirect)
+
+[Bachelor tax - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Bachelor_tax)
+
+[舌尖上的忘词&背单词的秘诀](http://mp.weixin.qq.com/s?__biz=MjM5NTExMTk5MA==&mid=409398412&idx=1&sn=a592c82fd0a57b15559832c983033ca8&scene=0#wechat_redirect)
+
+:   四熟是指眼熟，耳熟，意熟，用熟。
+
+    "In the buff" is a slang term for nude
+
+    【smh】shake my head/ shaking my head的缩写。表示觉得某事太弱智，或者对
+    某事失望、无语。
+
+    dafuq (the f*ck)
+
+    总而言之，如果一个词你不会用，那这词就不是你的。可能是老师的，可能是老
+    美的，可能是老英的，也可能是隔壁老王的，反正它不是你的。
+
+    refs and see also
+
+      - [你是如何将词汇量提升到 2 万，甚至 3 万的？ - 尼克六六的回答 - 知乎](https://www.zhihu.com/question/26814125/answer/47842171)
+      - [Corpus of Contemporary American English (COCA)](http://corpus.byu.edu/coca/)
+      - [[bnc] British National Corpus](http://www.natcorp.ox.ac.uk/)
+
+[Highest Voted 'qt' Questions - Stack Overflow](http://stackoverflow.com/questions/tagged/qt?sort=votes)
+
+[Inno Setup](http://www.jrsoftware.org/isinfo.php)
+
+[Recommended Reading for Developers](file:///E:/blogs/CodingHorror/blog.codinghorror.com/recommended-reading-for-developers/index.html)
+
+:   Programming Pearls is the next best thing to working side by side with
+    a master programmer for a year or so. It is the collective wisdom of
+    many journeyman coders distilled into succinct, digestible columns.
+
+[What is Trolling?](file:///E:/blogs/CodingHorror/blog.codinghorror.com/what-is-trolling/index.html)
 :   ?
     :   I almost feel sorry for Quentin Tarantino, who is so obviously
         passionate about what he does, because this guy is a classic troll.
@@ -18404,704 +19617,776 @@ chess), displaying its complexity despite relatively simple rules.
         actions amply demonstrate that they are no longer participating in the
         conversation in good faith … just walk away. Don't take the bait.
 
-#. &#x2610; [这一年来 - BYVoid](https://www.byvoid.com/zhs/blog/recent-one-year)
-#. &#x2610; [Notes on Programming in C](http://kamalatta.ddnss.de/otherdocs/pikestyle.html)
-:   ?
-    :   Finally, I prefer minimum-length but maximum-information names, and
-        then let the context ﬁll in the rest. Globals, for instance, typically
-        have little context when they are used, so their names need to be rela-
-        tively evocative. Thus I say maxphysaddr (not MaximumPhysicalAddress)
-        for a global variable, but np not NodePointer for a pointer locally deﬁ
-        ned and used.  This is largely a matter of taste, but taste is relevant
-        to clarity.
+[这一年来 - BYVoid](https://www.byvoid.com/zhs/blog/recent-one-year)
 
-        `if(checksize(x))`{.cpp} is unhelpful because we can’t deduce whether checksize returns true on error or non-error; instead
-        `if(validsize(x))`{.cpp} makes the point clear and makes a future mistake in using the routine less likely.
+[Notes on Programming in C](http://kamalatta.ddnss.de/otherdocs/pikestyle.html)
 
-        * Rule 1. You can’t tell where a program is going to spend its time.
-          Bottlenecks occur in surprising places, so don’t try to second guess
-          and put in a speed hack until you’ve proven that’s where the
-          bottleneck is.
-        * Rule 2. Measure. Don’t tune for speed until you’ve measured, and even
-          then don’t unless one part of the code overwhelms the rest.
-        * Rule 3. Fancy algorithms are slow when n is small, and n is usually
-          small. Fancy algorithms have big constants. Until you know that n is
-          frequently going to be big, don’t get fancy. (Even if n does get big,
-          use Rule 2 ﬁrst.) For example, binary trees are always faster than
-          splay trees for workaday problems.
-        * Rule 4. Fancy algorithms are buggier than simple ones, and they’re
-          much harder to implement. Use simple algorithms as well as simple
-          data structures.
-            + The following data structures are a complete list for almost all practical programs:
-            + array linked list hash table binary tree
-            + Of course, you must also be prepared to collect these into compound
-              data structures. For instance, a sym- bol table might be implemented
-              as a hash table containing linked lists of arrays of characters.
-        * Rule 5. Data dominates. If you’ve chosen the right data structures
-          and organized things well, the algorithms will almost always be
-          self-evident. Data structures, not algorithms, are central to
-          programming. (See Brooks p. 102.)
-        * Rule 6. There is no Rule 6.
-#. &#x2610; [有什么好的锻炼自己 LaTeX 能力的方法？ - 学习 - 知乎](http://www.zhihu.com/question/26941928)
-:   ?
-    :   其次，学LaTeX之后掌握的不仅仅是LaTeX本身。能获得的知识有什么呢？比如说
-        字体的知识，图像处理的知识，甚至还能掌握到一定的编程技能。当然，如果说
-        是我的话，我算是走上邪路了，还开发了一个C实现的TeX，这个一般人没那么多
-        的时间做的。本身我走的是弯路，别人就别再走了，比如想用Mathematica实现一
-        个TeX什么的。不过最重点的东西是：控制欲。系统地学好了LaTeX之后就会有一
-        种非常强烈的控制欲。这种控制欲是非常难得的东西。为什么呢？因为铅字印刷
-        这种事物推出历史舞台之后，排版的工作似乎变得非常轻松。小姑娘小伙子高中
-        毕业了就可以来做做了。我这里并不是什么歧视，靠手艺吃饭的永远都是值得尊
-        敬的。但是实际上，做排版的人里面有不少没有什么系统性的排印知识。这就造
-        成一系列的问题，错字漏字什么的的都算小的。最大的问题是很多书版面同质化
-        严重，排版的不知道改，编辑也不会改，这就导致国内有挺多书拿到手就垫了桌
-        脚了。学LaTeX能把很多错误的观念掰对过来，也会了解更深层次的东西。
+:   Finally, I prefer minimum-length but maximum-information names, and
+    then let the context ﬁll in the rest. Globals, for instance, typically
+    have little context when they are used, so their names need to be rela-
+    tively evocative. Thus I say maxphysaddr (not MaximumPhysicalAddress)
+    for a global variable, but np not NodePointer for a pointer locally deﬁ
+    ned and used.  This is largely a matter of taste, but taste is relevant
+    to clarity.
 
-        #. Hyphon
-            * upper-case letter
-            * 1-800-621-2376
-            * My name is Phyllis; that's p-h-y-l-l-i-s.
-        #. EN Dash
-            * In Genesis 6:13--22 we find God's instructions to Noah.
-            * Green Bay beat Denver 31--24
-            * Jane Doe (1950–); or Jane Doe (b. 1950)（不加空格）
-            * the University of Wisconsin--Madisonthe
-            * University of Wisconsin--Milwaukee
-        #. EM Dash
-            * She outlined the strategy---a strategy that would, she hoped, secure the peace.
-            * Consensus---that was the will-o'-the wisp he doggedly pursued.
+    `if(checksize(x))`{.cpp} is unhelpful because we can’t deduce whether checksize returns true on error or non-error; instead
+    `if(validsize(x))`{.cpp} makes the point clear and makes a future mistake in using the routine less likely.
 
-        Read more
+    * Rule 1. You can’t tell where a program is going to spend its time.
+      Bottlenecks occur in surprising places, so don’t try to second guess
+      and put in a speed hack until you’ve proven that’s where the
+      bottleneck is.
+    * Rule 2. Measure. Don’t tune for speed until you’ve measured, and even
+      then don’t unless one part of the code overwhelms the rest.
+    * Rule 3. Fancy algorithms are slow when n is small, and n is usually
+      small. Fancy algorithms have big constants. Until you know that n is
+      frequently going to be big, don’t get fancy. (Even if n does get big,
+      use Rule 2 ﬁrst.) For example, binary trees are always faster than
+      splay trees for workaday problems.
+    * Rule 4. Fancy algorithms are buggier than simple ones, and they’re
+      much harder to implement. Use simple algorithms as well as simple
+      data structures.
+        + The following data structures are a complete list for almost all practical programs:
+        + array linked list hash table binary tree
+        + Of course, you must also be prepared to collect these into compound
+          data structures. For instance, a sym- bol table might be implemented
+          as a hash table containing linked lists of arrays of characters.
+    * Rule 5. Data dominates. If you’ve chosen the right data structures
+      and organized things well, the algorithms will almost always be
+      self-evident. Data structures, not algorithms, are central to
+      programming. (See Brooks p. 102.)
+    * Rule 6. There is no Rule 6.
 
-        #. [自学 LaTeX 可以读什么书入门？ - 知乎用户的回答 - 知乎](http://www.zhihu.com/question/26645810/answer/33515971)
-        #. [LaTeX 如何将数学公式写得漂亮？ - 写作技巧 - 知乎](http://www.zhihu.com/question/29816700)
-        #. [英文破折号（em dash）、连接号（en dash）与连字符（hyphen）的区别及各自用法是什么？在科技写作中有何特点？ - 英语 - 知乎](http://www.zhihu.com/question/20332423)
-        #. [如何做到像使用 LaTeX 那样优雅地使用 Word？ - 如何优雅地 X - 知乎](http://www.zhihu.com/question/20541531)
-#. &#x2610; [大学里有才华的男生](http://www.douban.com/note/529741314/)
-#. &#x2610; [伟大企业诞生扼灭记_豆总Jessica_新浪博客](http://blog.sina.com.cn/s/blog_700a620c0101cd8i.html)
-#. &#x2610; [已成蒙学幼读科普贴，看看我大汉语如何美炸你们！](http://www.douban.com/group/topic/77626904/)
-#. &#x2610; [虚拟机是怎么实现的？ | 马牛不是人](http://www.manio.org/cn/virtual-machine-implementation/)
-#. &#x2610; [如何使用 ggplot2？ - R（编程语言） - 知乎](http://www.zhihu.com/question/24779017)
-#. &#x2610; [阮玲玉（中国早期著名女影星）_百度百科](http://baike.baidu.com/subview/34091/6236325.htm)
-:   ?
-    :   张曼玉说：“我觉得阮玲玉的骨子里有一种讲不出来的妖媚。”
+[有什么好的锻炼自己 LaTeX 能力的方法？ - 学习 - 知乎](http://www.zhihu.com/question/26941928)
 
-        阮玲玉她是保姆的女儿，可以说一直到阮玲玉死都没有人知道，也就是说张达民
-        一直到最后出了一本书《我和阮玲玉》，并且在书面上说句句是实话的那本书里
-        面，他都没有写阮玲玉是保姆的女儿，可见张达民在阮玲玉死了以后，他还是良
-        心发现为阮玲玉守住这个秘密的。然后知道阮玲玉这个秘密的第二个人就是蔡楚
-        生。当我们看到一本《阮玲玉》的书，在头十行里，我们可以看到，阮玲玉是佣
-        人的女儿。这个信息最后是1957年的时候蔡楚生在悼念阮玲玉逝世二十二周年的
-        时候披露的。因为阮玲玉觉得，蔡楚生和自己一样，出身很卑微，就和他很亲近
-        ，所以就把自己是一个保姆的女儿，怎么样和张达民同居，又怎么样认识唐季珊
-        ，又怎么和唐季珊同居，然后唐季珊又爱上了别的舞女，她内心是怎么样痛苦，
-        全部和蔡楚生说了。
+:   其次，学LaTeX之后掌握的不仅仅是LaTeX本身。能获得的知识有什么呢？比如说
+    字体的知识，图像处理的知识，甚至还能掌握到一定的编程技能。当然，如果说
+    是我的话，我算是走上邪路了，还开发了一个C实现的TeX，这个一般人没那么多
+    的时间做的。本身我走的是弯路，别人就别再走了，比如想用Mathematica实现一
+    个TeX什么的。不过最重点的东西是：控制欲。系统地学好了LaTeX之后就会有一
+    种非常强烈的控制欲。这种控制欲是非常难得的东西。为什么呢？因为铅字印刷
+    这种事物推出历史舞台之后，排版的工作似乎变得非常轻松。小姑娘小伙子高中
+    毕业了就可以来做做了。我这里并不是什么歧视，靠手艺吃饭的永远都是值得尊
+    敬的。但是实际上，做排版的人里面有不少没有什么系统性的排印知识。这就造
+    成一系列的问题，错字漏字什么的的都算小的。最大的问题是很多书版面同质化
+    严重，排版的不知道改，编辑也不会改，这就导致国内有挺多书拿到手就垫了桌
+    脚了。学LaTeX能把很多错误的观念掰对过来，也会了解更深层次的东西。
 
-        但对于一个智识者，尤其是对于一个出到社会上了的女性，却足够使她受伤，更不必说故意张扬，特别渲染的文字了。
+    #. Hyphon
+        * upper-case letter
+        * 1-800-621-2376
+        * My name is Phyllis; that's p-h-y-l-l-i-s.
+    #. EN Dash
+        * In Genesis 6:13--22 we find God's instructions to Noah.
+        * Green Bay beat Denver 31--24
+        * Jane Doe (1950–); or Jane Doe (b. 1950)（不加空格）
+        * the University of Wisconsin--Madisonthe
+        * University of Wisconsin--Milwaukee
+    #. EM Dash
+        * She outlined the strategy---a strategy that would, she hoped, secure the peace.
+        * Consensus---that was the will-o'-the wisp he doggedly pursued.
 
-        Refs
+    refs and see also
 
-        #. [论人言可畏_百度百科](http://baike.baidu.com/view/14786977.htm)
-#. &#x2610; [陌生拜访之如何搞定门卫 | 老K博客](http://www.laokboke.com/2015/02/12/mb/)
-#. &#x2610; [为什么XML这么笨重的数据结构仍在广泛应用？ - XML - 知乎](http://www.zhihu.com/question/20738607)
-:   ?
-    :   Refs
+      - [自学 LaTeX 可以读什么书入门？ - 知乎用户的回答 - 知乎](http://www.zhihu.com/question/26645810/answer/33515971)
+      - [LaTeX 如何将数学公式写得漂亮？ - 写作技巧 - 知乎](http://www.zhihu.com/question/29816700)
+      - [英文破折号（em dash）、连接号（en dash）与连字符（hyphen）的区别及各自用法是什么？在科技写作中有何特点？ - 英语 - 知乎](http://www.zhihu.com/question/20332423)
+      - [如何做到像使用 LaTeX 那样优雅地使用 Word？ - 如何优雅地 X - 知乎](http://www.zhihu.com/question/20541531)
+      - [大学里有才华的男生](http://www.douban.com/note/529741314/)
+      - [伟大企业诞生扼灭记_豆总Jessica_新浪博客](http://blog.sina.com.cn/s/blog_700a620c0101cd8i.html)
+      - [已成蒙学幼读科普贴，看看我大汉语如何美炸你们！](http://www.douban.com/group/topic/77626904/)
+      - [虚拟机是怎么实现的？ | 马牛不是人](http://www.manio.org/cn/virtual-machine-implementation/)
+      - [如何使用 ggplot2？ - R（编程语言） - 知乎](http://www.zhihu.com/question/24779017)
 
-        * [JSON: The Fat-Free Alternative to XML](http://www.json.org/xml)
-#. &#x2610; [QString 乱谈(1) - 1+1=10 - 博客频道 - CSDN.NET](http://blog.csdn.net/dbzhang800/article/details/7517422)
-#. &#x2610; [QString乱谈(2) - 1+1=10 - 博客频道 - CSDN.NET](http://blog.csdn.net/dbzhang800/article/details/7540905)
-#. &#x2610; [QString 乱谈(3)-Qt5与中文 - 1+1=10 - 博客频道 - CSDN.NET](http://blog.csdn.net/dbzhang800/article/details/7542672)
-#. &#x2610; [Qt stylesheet 源码学习 - 1+1=10 - 博客频道 - CSDN.NET](http://blog.csdn.net/dbzhang800/article/details/6875352)
-#. &#x2610; [学习与记忆](http://mindhacks.cn/2008/06/05/how-memory-works/)
-#. &#x2610; [BBC ON THIS DAY | 18 | 1978: Mass suicide leaves 900 dead](http://news.bbc.co.uk/onthisday/hi/dates/stories/november/18/newsid_2540000/2540209.stm)
-#. &#x2610; [c++ - RapidJSON library getting a value inside an array by its index - Stack Overflow](http://stackoverflow.com/questions/10037778/rapidjson-library-getting-a-value-inside-an-array-by-its-index)
-:   ?
-    :   exactly what I want.
-#. &#x2610; [Jank Free: Let's Make the Web Silky Smooth!](http://jankfree.org/)
-:   ?
-    :   What is Jank?
+[阮玲玉（中国早期著名女影星）_百度百科](http://baike.baidu.com/subview/34091/6236325.htm)
 
-        Modern browsers try to refresh the content on screen in sync with a
-        device's refresh rate. For most devices today, the screen will refresh
-        60 times a second, or 60Hz. If there is some motion on screen (such as
-        scrolling, transitions, or animations) a browser should create 60
-        frames per second to match the refresh rate.
+:   张曼玉说：“我觉得阮玲玉的骨子里有一种讲不出来的妖媚。”
 
-        Jank is any stuttering, juddering or just plain halting that users see
-        when a site or app isn't keeping up with the refresh rate. Jank is the
-        result of frames taking too long for a browser to make, and it
-        negatively impacts your users and how they experience your site or app.
-#. &#x2610; [lazysizes - the ultimate lazyloader for responsive images, iframes and widget](http://afarkas.github.io/lazysizes/)
-#. &#x2610; [微软实现深层神经网络重大技术突破 - 微软亚洲研究院](http://www.msra.cn/zh-cn/news/headlines/imagenet-20151211.aspx)
-:   ?
-    :   2015年12月10日——美国东部时间，微软亚洲研究院视觉计算组在2015 ImageNet计
-        算机识别挑战赛中凭借深层神经网络技术的最新突破，以绝对优势获得图像分类
-        、图像定位以及图像检测全部三个主要项目的冠军。
+    阮玲玉她是保姆的女儿，可以说一直到阮玲玉死都没有人知道，也就是说张达民
+    一直到最后出了一本书《我和阮玲玉》，并且在书面上说句句是实话的那本书里
+    面，他都没有写阮玲玉是保姆的女儿，可见张达民在阮玲玉死了以后，他还是良
+    心发现为阮玲玉守住这个秘密的。然后知道阮玲玉这个秘密的第二个人就是蔡楚
+    生。当我们看到一本《阮玲玉》的书，在头十行里，我们可以看到，阮玲玉是佣
+    人的女儿。这个信息最后是1957年的时候蔡楚生在悼念阮玲玉逝世二十二周年的
+    时候披露的。因为阮玲玉觉得，蔡楚生和自己一样，出身很卑微，就和他很亲近
+    ，所以就把自己是一个保姆的女儿，怎么样和张达民同居，又怎么样认识唐季珊
+    ，又怎么和唐季珊同居，然后唐季珊又爱上了别的舞女，她内心是怎么样痛苦，
+    全部和蔡楚生说了。
 
-        ImageNet是一个计算机视觉系统识别项目，也是目前世界上图像识别最大的数据
-        库。ImageNet挑战赛每年举办一次，由来自全球顶尖高校、企业及研究机构的研
-        究员组织举办，近年来已经成为计算机视觉领域的标杆。
+    但对于一个智识者，尤其是对于一个出到社会上了的女性，却足够使她受伤，更不必说故意张扬，特别渲染的文字了。
 
-        在做这个“去雾”课题之前的一年多里，他做过很多课题，都没有取得发表论文意
-        义上的收获。但是，这些课题让他有机会尝试了很多不同的方向，也了解了更多
-        背景和方法，继而成为了他后来论文的铺垫。
+    refs and see also
 
-        多读论文。研究初期，需要海量阅读论文，并且不需要太专注于别人的具体算法
-        和如何实现等细节，更多地去关注论文简介及作者所做的与研究相关的工作，他
-        人的研究思路，然后在前人的基础上去思考，寻找对自己工作有帮助的要点；
+      - [论人言可畏_百度百科](http://baike.baidu.com/view/14786977.htm)
 
-        提高英语能力。虽然GRE、IELTS等考试并不是必须要参加的，但是这类考试确实
-        能够极大地锻炼英语读写能力。如果不具备优秀的英语能力，在日后的研究中会
-        比较吃亏；
+[陌生拜访之如何搞定门卫 | 老K博客](http://www.laokboke.com/2015/02/12/mb/)
 
-        关注细节。无论是撰写论文还是编写代码，很多时候，粗略看上去会感觉还可以
-        ，但是仔细推敲后就会发现各种问题。所以在进行研究的过程中，首先要对自己
-        所做的内容有个基础性的判断，再从读者的角度出发，自己反问自己问题。只有
-        在苛刻的要求下，才会有高质量的文章。
+[为什么XML这么笨重的数据结构仍在广泛应用？ - XML - 知乎](http://www.zhihu.com/question/20738607)
 
-        Refs
+:   refs and see also
 
-        #. [潜心科研，砥砺前行，让梦想照进现实——记西安交通大学校友孙剑博士专访 - 微软亚洲研究院](http://www.msra.cn/zh-cn/connections/stories/jian-sun-20150616.aspx)
-        #. [厚积薄发的研究之路 - 微软亚洲研究院](http://msra.cn/zh-cn/connections/talents/tomorrowstars/stories/kaiminghe.aspx)
-#. &#x2610; [google/googletest](https://github.com/google/googletest)
-:   ?
-    :   Welcome to Google Test, Google's C++ test framework!
+      - [JSON: The Fat-Free Alternative to XML](http://www.json.org/xml)
 
-        This repository is a merger of the formerly separate GoogleTest and
-        GoogleMock projects. These were so closely related that it makes sense
-        to maintain and release them together.
-#. &#x2610; [google/WebFundamentals](https://github.com/google/WebFundamentals)
-:   ?
-    :   Best practices for modern web development
-        https://developers.google.com/web/fundamentals
+[QString 乱谈(1) - 1+1=10 - 博客频道 - CSDN.NET](http://blog.csdn.net/dbzhang800/article/details/7517422)
 
-        Web Fundamentals is a technical documentation center for multi-device
-        web development. Our goal is to build a resource for modern web
-        developers that’s as curated and thorough as developer.android.com or
-        iOS Dev Center.
-#. &#x2610; [Public domain - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Public_domain)
-:   ?
-    :   Works in the public domain are those whose intellectual property rights
-        have expired, have been forfeited, or are inapplicable. For example,
-        the works of Shakespeare and Beethoven, most of the early silent films,
-        the formulae of Newtonian physics, the Serpent encryption algorithm and
-        powered flight are all now in the public domain. The term is not
-        normally applied to situations where the creator of a work retains
-        residual rights, in which case use of the work is referred to as "under
-        license" or "with permission".
-#. &#x2610; [Clang 比 GCC 好在哪里？ - 编译器 - 知乎](http://www.zhihu.com/question/20235742)
-:   ?
-    :   Read more
+:   refs and  see also
 
-        #. [ClangDiagnosticsComparison - GCC Wiki](http://gcc.gnu.org/wiki/ClangDiagnosticsComparison)
-        #. [Comparing clang to other open source compilers](http://clang.llvm.org/comparison.html)
-#. &#x2610; [Mac OS X 背后的故事_知识库_博客园](http://kb.cnblogs.com/page/114879/)
-#. &#x2610; [开源云计算技术初探 | YY42](http://www.yy42.net/blog/?p=381)
-:   ?
-    :   Ruby和JavaScript是云时代的主流编程语言，Python紧追，PHP应了那句话了“not
-        even close”。heroku将matz叔挖过去的时候，明确放话Ruby是云时代的语言，
-        heroku的整个工程实践也是按照Ruby的最佳工程实践来做的。另外一块那肯定是
-        JVM平台了，云计算肯定会带来JVM平台的另一轮繁荣。至于.NET，本人毫无研究
-        ，就不妄加评论了。
+      - [QString乱谈(2) - 1+1=10 - 博客频道 - CSDN.NET](http://blog.csdn.net/dbzhang800/article/details/7540905)
+      - [QString 乱谈(3)-Qt5与中文 - 1+1=10 - 博客频道 - CSDN.NET](http://blog.csdn.net/dbzhang800/article/details/7542672)
+      - [Qt stylesheet 源码学习 - 1+1=10 - 博客频道 - CSDN.NET](http://blog.csdn.net/dbzhang800/article/details/6875352)
+      - [学习与记忆](http://mindhacks.cn/2008/06/05/how-memory-works/)
 
-        网络虚拟化技术下一步会得到很大的发展。原有在多种操作系统下的独有技术将
-        快速融合，比如DTrace，ZFS移植到Linux，KVM移植到Solaris。以DTrace为首的
-        强大工具将会得到非常大发展，成为各种开源产品的标配，以增强在发杂环境下
-        的调试能力。个人认为未来有经验的DTrace工程师会活得非常滋润，有点供不应
-        求，请联想那么多云，尤其是国内的烂云，少不了要调试的人吧。
+[BBC ON THIS DAY | 18 | 1978: Mass suicide leaves 900 dead](http://news.bbc.co.uk/onthisday/hi/dates/stories/november/18/newsid_2540000/2540209.stm)
 
-        云计算红红火火，但繁荣的市场上也到处是骗子无赖，踏踏实实做点事情不容易
-        。个人认为踏踏实实学好云计算的相关技术，比肤浅地开发几个手机应用有意思
-        。国外很多大学也开设了相关的课程，大家可以多多关注。
+[c++ - RapidJSON library getting a value inside an array by its index - Stack Overflow](http://stackoverflow.com/questions/10037778/rapidjson-library-getting-a-value-inside-an-array-by-its-index)
 
-        还有些没有说完的话题今后会在补遗中写写。
-#. &#x2610; [Hamming weight - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hamming_weight)
-:   ?!
-#. &#x2610; [trigonometry - How to use the PI constant in C++ - Stack Overflow](http://stackoverflow.com/questions/1727881/how-to-use-the-pi-constant-in-c)
-:   ?
-    :   ```cpp
-        #define _USE_MATH_DEFINES
-        #include <math.h>
-        ```
+:   exactly what I want.
 
-        in `math.h`:
+[Jank Free: Let's Make the Web Silky Smooth!](http://jankfree.org/)
 
-        ```cpp
-        #if defined(_USE_MATH_DEFINES) && !defined(_MATH_DEFINES_DEFINED)
-        #define _MATH_DEFINES_DEFINED
+:   What is Jank?
 
-        /* Define _USE_MATH_DEFINES before including math.h to expose these macro
-         * definitions for common math constants.  These are placed under an #ifdef
-         * since these commonly-defined names are not part of the C/C++ standards.
-         */
+    Modern browsers try to refresh the content on screen in sync with a
+    device's refresh rate. For most devices today, the screen will refresh
+    60 times a second, or 60Hz. If there is some motion on screen (such as
+    scrolling, transitions, or animations) a browser should create 60
+    frames per second to match the refresh rate.
 
-        /* Definitions of useful mathematical constants
-         * M_E        - e
-         * M_LOG2E    - log2(e)
-         * M_LOG10E   - log10(e)
-         * M_LN2      - ln(2)
-         * M_LN10     - ln(10)
-         * M_PI       - pi
-         * M_PI_2     - pi/2
-         * M_PI_4     - pi/4
-         * M_1_PI     - 1/pi
-         * M_2_PI     - 2/pi
-         * M_2_SQRTPI - 2/sqrt(pi)
-         * M_SQRT2    - sqrt(2)
-         * M_SQRT1_2  - 1/sqrt(2)
-         */
+    Jank is any stuttering, juddering or just plain halting that users see
+    when a site or app isn't keeping up with the refresh rate. Jank is the
+    result of frames taking too long for a browser to make, and it
+    negatively impacts your users and how they experience your site or app.
 
-        #define M_E        2.71828182845904523536
-        #define M_LOG2E    1.44269504088896340736
-        #define M_LOG10E   0.434294481903251827651
-        #define M_LN2      0.693147180559945309417
-        #define M_LN10     2.30258509299404568402
-        #define M_PI       3.14159265358979323846
-        #define M_PI_2     1.57079632679489661923
-        #define M_PI_4     0.785398163397448309616
-        #define M_1_PI     0.318309886183790671538
-        #define M_2_PI     0.636619772367581343076
-        #define M_2_SQRTPI 1.12837916709551257390
-        #define M_SQRT2    1.41421356237309504880
-        #define M_SQRT1_2  0.707106781186547524401
+[lazysizes - the ultimate lazyloader for responsive images, iframes and widget](http://afarkas.github.io/lazysizes/)
 
-        #endif  /* _USE_MATH_DEFINES */
-        ```
+[微软实现深层神经网络重大技术突破 - 微软亚洲研究院](http://www.msra.cn/zh-cn/news/headlines/imagenet-20151211.aspx)
 
-        Refs
+:   2015年12月10日——美国东部时间，微软亚洲研究院视觉计算组在2015 ImageNet计
+    算机识别挑战赛中凭借深层神经网络技术的最新突破，以绝对优势获得图像分类
+    、图像定位以及图像检测全部三个主要项目的冠军。
 
-        #. [How does #define _USE_MATH_DEFINES work? - C++ Forum](http://www.cplusplus.com/forum/general/102410/)
-#. &#x2610; [HTML5街头霸王游戏(开放源码) | Web前端 腾讯AlloyTeam Blog | 愿景: 成为地球卓越的Web团队！](http://www.alloyteam.com/2012/05/html5-streetfighter-demo/)
-#. &#x2610; [CodeTank 代码坦克 - 互联网智能代码坦克机器人编程游戏](http://codetank.alloyteam.com/)
-#. &#x2610; [RapidJSON: 常见问题](http://rapidjson.org/zh-cn/md_doc_faq_8zh-cn.html)
-:   ?
-    :   RapidJSON包含一组单元测试去执行自动测试。Travis（供Linux平台）及
-        AppVeyor（供Windows平台）会对所有修改进行编译及执行单元测试。在Linux下
-        还会使用Valgrind去检测内存泄漏。
-#. &#x2610; [Web 查询引擎 -- Lingoes Translator 灵格斯词霸](http://www.lingoes.cn/zh/translator/webengine.htm)
-#. &#x2610; [Ubuntu 14.04 重启网卡 — » Kumu's Blog](http://blog.opskumu.com/ubuntu-network-br0.html)
-#. &#x2610; Writing Solid Code
-#. &#x2610; [Google Pro Tip: Use Back-of-the-envelope-calculations to Choose the Best Design - High Scalability -](http://highscalability.com/blog/2011/1/26/google-pro-tip-use-back-of-the-envelope-calculations-to-choo.html)
-:   ?
-    :   back-of-the-envelop (无需精心(或不必复杂)计算的)
-#. &#x2610; [Jeff Dean facts: How a Google programmer became the Chuck Norris of the Internet.](http://www.slate.com/articles/technology/doers/2013/01/jeff_dean_facts_how_a_google_programmer_became_the_chuck_norris_of_the_internet.single.html)
-:   ?
-    :   #. If you could harness the power of the multiverse you could try every possible option in the design space and see which worked best. But that's crazy impractical, isn't it?
-        #. Dr. Dean thinks an important skill for every software engineer is
-           the ability to estimate the performance of alternative systems,
-           using back of the envelope calculations, without having to build
-           them.
+    ImageNet是一个计算机视觉系统识别项目，也是目前世界上图像识别最大的数据
+    库。ImageNet挑战赛每年举办一次，由来自全球顶尖高校、企业及研究机构的研
+    究员组织举办，近年来已经成为计算机视觉领域的标杆。
 
-        Numbers Everyone Should Know
+    在做这个“去雾”课题之前的一年多里，他做过很多课题，都没有取得发表论文意
+    义上的收获。但是，这些课题让他有机会尝试了很多不同的方向，也了解了更多
+    背景和方法，继而成为了他后来论文的铺垫。
 
-        To evaluate design alternatives you first need a good sense of how long typical operations will take. Dr. Dean gives this list:
+    多读论文。研究初期，需要海量阅读论文，并且不需要太专注于别人的具体算法
+    和如何实现等细节，更多地去关注论文简介及作者所做的与研究相关的工作，他
+    人的研究思路，然后在前人的基础上去思考，寻找对自己工作有帮助的要点；
 
-        #. L1 cache reference 0.5 ns
-        #. Branch mispredict 5 ns
-        #. L2 cache reference 7 ns
-        #. Mutex lock/unlock 100 ns
-        #. Main memory reference 100 ns
-        #. Compress 1K bytes with Zippy 10,000 ns
-        #. Send 2K bytes over 1 Gbps network 20,000 ns
-        #. Read 1 MB sequentially from memory 250,000 ns
-        #. Round trip within same datacenter 500,000 ns
-        #. Disk seek 10,000,000 ns
-        #. Read 1 MB sequentially from network 10,000,000 ns
-        #. Read 1 MB sequentially from disk 30,000,000 ns
-        #. Send packet CA->Netherlands->CA 150,000,000 ns
+    提高英语能力。虽然GRE、IELTS等考试并不是必须要参加的，但是这类考试确实
+    能够极大地锻炼英语读写能力。如果不具备优秀的英语能力，在日后的研究中会
+    比较吃亏；
 
-        Some things to notice:
+    关注细节。无论是撰写论文还是编写代码，很多时候，粗略看上去会感觉还可以
+    ，但是仔细推敲后就会发现各种问题。所以在进行研究的过程中，首先要对自己
+    所做的内容有个基础性的判断，再从读者的角度出发，自己反问自己问题。只有
+    在苛刻的要求下，才会有高质量的文章。
 
-        #. Notice the magnitude differences in the performance of different options.
-        #. Datacenters are far away so it takes a long time to send anything between them.
-        #. Memory is fast and disks are slow.
-        #. By using a cheap compression algorithm a lot (by a factor of 2) of network bandwidth can be saved.
-        #. Writes are 40 times more expensive than reads.
-        #. Global shared data is expensive. This is a fundamental limitation of
-           distributed systems. The lock contention in shared heavily written
-           objects kills performance as transactions become serialized and
-           slow.
-        #. Architect for scaling writes.
-        #. Optimize for low write contention.
-        #. Optimize wide. Make writes as parallel as you can.
+     refs and see also
 
-        Lessons Learned
+      - [潜心科研，砥砺前行，让梦想照进现实——记西安交通大学校友孙剑博士专访 - 微软亚洲研究院](http://www.msra.cn/zh-cn/connections/stories/jian-sun-20150616.aspx)
+      - [厚积薄发的研究之路 - 微软亚洲研究院](http://msra.cn/zh-cn/connections/talents/tomorrowstars/stories/kaiminghe.aspx)
 
-        #. Back-of-the-envelope calculations allow you to take a look at
-           different variations.
-        #. When designing your system, these are the kind of calculations you
-           should be doing over and over in your head.
-        #. Know the back of the envelope numbers for the building blocks of
-           your system. It's not good enough to just know the generic
-           performance numbers, you have to know how your subsystems perform.
-           You can't make decent back-of-the-envelope calculations if you don't
-           know what's going on.
-        #. Monitor and measure every part of your system so you can make these
-           sorts of projections from real data.
+[google/googletest](https://github.com/google/googletest)
 
-        Read more
+:   Welcome to Google Test, Google's C++ test framework!
 
-        #. [Numbers Everyone Should Know - High Scalability -](http://highscalability.com/numbers-everyone-should-know)
-#. &#x2610; [JeffreyZhao/calibre-recipes](https://github.com/JeffreyZhao/calibre-recipes)
-#. &#x2610; [Emacs 简易教程](http://www.perfect-is-shit.com/emacs-simple-tutorial.html)
-#. &#x2610; [dirtysalt's homepage](http://dirlt.com/)
-#. &#x2610; [为什么会出现LNK2005"符号已定义"的链接错误? - 歌谣在风中飘舞 - 博客频道 - CSDN.NET](http://blog.csdn.net/soloist/article/details/493238)
-:   ?
-    :   Read CSAPP! More!
-#. &#x2610; [云风的 BLOG: 学习从历史开始](file:///E:/blogs/YunFeng/blog.codingnow.com/2007/12/history.html)
-:   ?
-    :   和上次一样，陈榕调侃了许多大公司，尤其是微软。但他更语重心长的讲了一个
-        浅显的道理：微软的人并不比大家苯，当然也不比大家聪明。我们都能看到的问
-        题，比如系统臃肿，软件结构不合理，等等，不可能微软自己人就意识不到。种
-        种问题，绝对不能只用当局者迷，旁观者清来解释。
+    This repository is a merger of the formerly separate GoogleTest and
+    GoogleMock projects. These were so closely related that it makes sense
+    to maintain and release them together.
 
-        我们只有从历史看过来，方能理解历史的局限性。做出那些错误决定的无奈放在
-        大背景上大多会得到一个合理的解释。也只有这样，我们才可以领悟到未来正确
-        的路。
+    后来我在自己的小项目中也用到了 GoogleTest，见 [district10/algo](https://disstrict10/algo), 还有
+    GoogleTest 的笔记：[](doc-google-test.html)
 
-        我有一个忘记从哪继承来的观点：无论我们想学什么，都应该从学习他的历史开
-        始。极端点说，无论学什么，都是在学他的历史。
+[google/WebFundamentals](https://github.com/google/WebFundamentals)
 
-        长期以来，自己总结我在编程方面取得的成绩的缘因，最重要的一条就是无功利
-        心的学习。
+:   Best practices for modern web development
+    <https://developers.google.com/web/fundamentals>
 
-        并不是因为我需要用到什么领域的知识而去学习，而只是单纯的我想知道，我想
-        弄明白。搞明白之后，到底有什么价值，可以创造多少财富，这是我从来不关心
-        的。反而这样，知识给予的回馈是最大的。
-#. &#x2610; [Issues · lifesinger/blog](https://github.com/lifesinger/blog/issues)
-#. &#x2610; [id-Software/DOOM-3-BFG](https://github.com/id-Software/DOOM-3-BFG)
-:   ?
-    :   BFG, for "Big F***ing Gun"
-#. &#x2610; C Programming: A Modern Approach
-#. &#x2610; [mc-gulu/mooc_chinese_culture](https://github.com/mc-gulu/mooc_chinese_culture)
-#. &#x2610; [The Chicken and the Pig - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/The_Chicken_and_the_Pig)
-:   ?
-    :   The business fable of The Chicken and the Pig is about commitment to a
-        project or cause. When producing a dish made of ham and eggs, the pig
-        provides the ham which requires his sacrifice and the chicken provides
-        the eggs which are not difficult to produce. Thus the pig is really
-        committed in that dish while the chicken is only involved, yet both are
-        needed to produce the dish.
-#. &#x2610; [技术管理猪鸡-1 开篇 « 4G spaces](http://blog.youxu.info/2015/05/17/tech-lead-1/)
-:   ?
-    :   #. 而刚入行的工程师，只能报告一些比较琐碎的成就。
-        #. 做出 MapReduce 框架的和写琐碎 MapReduce 程序的工程师之间的差距并不是他们的工具和编程效率，也往往不是教育背景或者经验，而是他们各自的杠杆：所带领的团队。
-        #. 运用常识
-        #. 逐渐习得的管理技能
-        #. 这不是入学考试，慢慢积累最省时省事。就像练习武术一样，最强的斗士绝不是看书最多或者理论最强的，而是训练时间最长的。
-        #. 问题变了，不管以前多么神奇的管理方法都会变得一地鸡毛，因为管理方法不能脱离要解决的问题。
-        #. 尽管写日记并不能直接解决技术管理上的难题，却打开了反思之门，也把许多事情前因后果连接起来。
-#. &#x2610; [Alexander Pope - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Alexander_Pope)
-#. &#x2610; [cloudwu/bpa](https://github.com/cloudwu/bpa)
-#. &#x2610; [Wikipedia:Too long; didn't read - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn%27t_read)
-#. &#x2610; [有什么道理是开始注重外表几年后才能悟出来的？ - Sophia 的回答 - 知乎](http://www.zhihu.com/question/31637529/answer/54173168)
-:   ?
-    :   你以为人与人之间颜值的区别就真的只是颜值的区别？你错了，只不过是自控力
-        和执行力的差别，反映到了颜值上。
-#. &#x2610; [理解，真是世界上最奢侈的事](http://www.douban.com/note/279511136/)
-#. &#x2610; [科学网—导师为何不能帮助学生找工作呢？ - 鲍海飞的博文](http://blog.sciencenet.cn/blog-278905-944000.html)
-#. &#x2610; [brian d foy style guide](http://www252.pair.com/comdog/style.html)
-:   ?
-    :   Any capitalization is incorrect unless each letter is capitalized.
-        Title case is incorrect.
+    Web Fundamentals is a technical documentation center for multi-device
+    web development. Our goal is to build a resource for modern web
+    developers that’s as curated and thorough as developer.android.com or
+    iOS Dev Center.
 
-        Recasting the sentence avoids the problem.
+[Public domain - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Public_domain)
 
-        > "But I tell you, a cat needs a name that's particular,
-        >
-        > A name that's peculiar, and more dignified."
-        >
-        > -- Old Possum
+:   Works in the public domain are those whose intellectual property rights
+    have expired, have been forfeited, or are inapplicable. For example,
+    the works of Shakespeare and Beethoven, most of the early silent films,
+    the formulae of Newtonian physics, the Serpent encryption algorithm and
+    powered flight are all now in the public domain. The term is not
+    normally applied to situations where the creator of a work retains
+    residual rights, in which case use of the work is referred to as "under
+    license" or "with permission".
 
-        Read more
+[Clang 比 GCC 好在哪里？ - 编译器 - 知乎](http://www.zhihu.com/question/20235742)
 
-        #. [The Perl Review interviews brian d foy](http://www.theperlreview.com/Interviews/brian-d-foy-20050932.html)
-        #. [On the difficult matter of names - A Roguish Chrestomathy](http://q-pheevr.livejournal.com/22047.html)
-        #. [How I learned Perl](http://www.perlmonks.org/index.pl?node_id=385334)
-        #. [brian d foy](http://www252.pair.com/comdog/)
-#. &#x2611; [How to get the query string by javascript? - Stack Overflow](http://stackoverflow.com/questions/2907482/how-to-get-the-query-string-by-javascript)
-:   ?
-    :   ```javascript
-        function getQueryStrings() {
-          var assoc  = {};
-          var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
-          var queryString = location.search.substring(1);
-          var keyValues = queryString.split('&');
+:   refs and see also
 
-          for(var i in keyValues) {
-            var key = keyValues[i].split('=');
-            if (key.length > 1) {
-              assoc[decode(key[0])] = decode(key[1]);
-            }
-          }
+      - [ClangDiagnosticsComparison - GCC Wiki](http://gcc.gnu.org/wiki/ClangDiagnosticsComparison)
+      - [Comparing clang to other open source compilers](http://clang.llvm.org/comparison.html)
 
-          return assoc;
+[Mac OS X 背后的故事_知识库_博客园](http://kb.cnblogs.com/page/114879/)
+
+[开源云计算技术初探 | YY42](http://www.yy42.net/blog/?p=381)
+
+:   Ruby和JavaScript是云时代的主流编程语言，Python紧追，PHP应了那句话了“not
+    even close”。heroku将matz叔挖过去的时候，明确放话Ruby是云时代的语言，
+    heroku的整个工程实践也是按照Ruby的最佳工程实践来做的。另外一块那肯定是
+    JVM平台了，云计算肯定会带来JVM平台的另一轮繁荣。至于.NET，本人毫无研究
+    ，就不妄加评论了。
+
+    网络虚拟化技术下一步会得到很大的发展。原有在多种操作系统下的独有技术将
+    快速融合，比如DTrace，ZFS移植到Linux，KVM移植到Solaris。以DTrace为首的
+    强大工具将会得到非常大发展，成为各种开源产品的标配，以增强在发杂环境下
+    的调试能力。个人认为未来有经验的DTrace工程师会活得非常滋润，有点供不应
+    求，请联想那么多云，尤其是国内的烂云，少不了要调试的人吧。
+
+    云计算红红火火，但繁荣的市场上也到处是骗子无赖，踏踏实实做点事情不容易
+    。个人认为踏踏实实学好云计算的相关技术，比肤浅地开发几个手机应用有意思
+    。国外很多大学也开设了相关的课程，大家可以多多关注。
+
+    还有些没有说完的话题今后会在补遗中写写。
+
+[Hamming weight - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hamming_weight)
+
+[trigonometry - How to use the PI constant in C++ - Stack Overflow](http://stackoverflow.com/questions/1727881/how-to-use-the-pi-constant-in-c)
+
+:   ```cpp
+    #define _USE_MATH_DEFINES
+    #include <math.h>
+    ```
+
+    in `math.h`:
+
+    ```cpp
+    #if defined(_USE_MATH_DEFINES) && !defined(_MATH_DEFINES_DEFINED)
+    #define _MATH_DEFINES_DEFINED
+
+    /* Define _USE_MATH_DEFINES before including math.h to expose these macro
+     * definitions for common math constants.  These are placed under an #ifdef
+     * since these commonly-defined names are not part of the C/C++ standards.
+     */
+
+    /* Definitions of useful mathematical constants
+     * M_E        - e
+     * M_LOG2E    - log2(e)
+     * M_LOG10E   - log10(e)
+     * M_LN2      - ln(2)
+     * M_LN10     - ln(10)
+     * M_PI       - pi
+     * M_PI_2     - pi/2
+     * M_PI_4     - pi/4
+     * M_1_PI     - 1/pi
+     * M_2_PI     - 2/pi
+     * M_2_SQRTPI - 2/sqrt(pi)
+     * M_SQRT2    - sqrt(2)
+     * M_SQRT1_2  - 1/sqrt(2)
+     */
+
+    #define M_E        2.71828182845904523536
+    #define M_LOG2E    1.44269504088896340736
+    #define M_LOG10E   0.434294481903251827651
+    #define M_LN2      0.693147180559945309417
+    #define M_LN10     2.30258509299404568402
+    #define M_PI       3.14159265358979323846
+    #define M_PI_2     1.57079632679489661923
+    #define M_PI_4     0.785398163397448309616
+    #define M_1_PI     0.318309886183790671538
+    #define M_2_PI     0.636619772367581343076
+    #define M_2_SQRTPI 1.12837916709551257390
+    #define M_SQRT2    1.41421356237309504880
+    #define M_SQRT1_2  0.707106781186547524401
+
+    #endif  /* _USE_MATH_DEFINES */
+    ```
+
+    refs and see also
+
+      - [How does `#define _USE_MATH_DEFINES` work? - C++ Forum](http://www.cplusplus.com/forum/general/102410/)
+
+[HTML5街头霸王游戏(开放源码) | Web前端 腾讯AlloyTeam Blog | 愿景: 成为地球卓越的Web团队！](http://www.alloyteam.com/2012/05/html5-streetfighter-demo/)
+
+[CodeTank 代码坦克 - 互联网智能代码坦克机器人编程游戏](http://codetank.alloyteam.com/)
+
+[RapidJSON: 常见问题](http://rapidjson.org/zh-cn/md_doc_faq_8zh-cn.html)
+
+:   RapidJSON包含一组单元测试去执行自动测试。Travis（供Linux平台）及
+    AppVeyor（供Windows平台）会对所有修改进行编译及执行单元测试。在Linux下
+    还会使用Valgrind去检测内存泄漏。
+
+[Web 查询引擎 -- Lingoes Translator 灵格斯词霸](http://www.lingoes.cn/zh/translator/webengine.htm)
+
+[Ubuntu 14.04 重启网卡 — » Kumu's Blog](http://blog.opskumu.com/ubuntu-network-br0.html)
+
+[Google Pro Tip: Use Back-of-the-envelope-calculations to Choose the Best Design - High Scalability -](http://highscalability.com/blog/2011/1/26/google-pro-tip-use-back-of-the-envelope-calculations-to-choo.html)
+
+:   back-of-the-envelop (无需精心(或不必复杂)计算的)
+
+[Jeff Dean facts: How a Google programmer became the Chuck Norris of the Internet.](http://www.slate.com/articles/technology/doers/2013/01/jeff_dean_facts_how_a_google_programmer_became_the_chuck_norris_of_the_internet.single.html)
+
+:   #. If you could harness the power of the multiverse you could try every possible option in the design space and see which worked best. But that's crazy impractical, isn't it?
+    #. Dr. Dean thinks an important skill for every software engineer is
+       the ability to estimate the performance of alternative systems,
+       using back of the envelope calculations, without having to build
+       them.
+
+    Numbers Everyone Should Know
+
+    To evaluate design alternatives you first need a good sense of how long typical operations will take. Dr. Dean gives this list:
+
+    #. L1 cache reference 0.5 ns
+    #. Branch mispredict 5 ns
+    #. L2 cache reference 7 ns
+    #. Mutex lock/unlock 100 ns
+    #. Main memory reference 100 ns
+    #. Compress 1K bytes with Zippy 10,000 ns
+    #. Send 2K bytes over 1 Gbps network 20,000 ns
+    #. Read 1 MB sequentially from memory 250,000 ns
+    #. Round trip within same datacenter 500,000 ns
+    #. Disk seek 10,000,000 ns
+    #. Read 1 MB sequentially from network 10,000,000 ns
+    #. Read 1 MB sequentially from disk 30,000,000 ns
+    #. Send packet CA->Netherlands->CA 150,000,000 ns
+
+    Some things to notice:
+
+    #. Notice the magnitude differences in the performance of different options.
+    #. Datacenters are far away so it takes a long time to send anything between them.
+    #. Memory is fast and disks are slow.
+    #. By using a cheap compression algorithm a lot (by a factor of 2) of network bandwidth can be saved.
+    #. Writes are 40 times more expensive than reads.
+    #. Global shared data is expensive. This is a fundamental limitation of
+       distributed systems. The lock contention in shared heavily written
+       objects kills performance as transactions become serialized and
+       slow.
+    #. Architect for scaling writes.
+    #. Optimize for low write contention.
+    #. Optimize wide. Make writes as parallel as you can.
+
+    Lessons Learned
+
+    #. Back-of-the-envelope calculations allow you to take a look at
+       different variations.
+    #. When designing your system, these are the kind of calculations you
+       should be doing over and over in your head.
+    #. Know the back of the envelope numbers for the building blocks of
+       your system. It's not good enough to just know the generic
+       performance numbers, you have to know how your subsystems perform.
+       You can't make decent back-of-the-envelope calculations if you don't
+       know what's going on.
+    #. Monitor and measure every part of your system so you can make these
+       sorts of projections from real data.
+
+    refs and see also
+
+      - [Numbers Everyone Should Know - High Scalability -](http://highscalability.com/numbers-everyone-should-know)
+
+[JeffreyZhao/calibre-recipes](https://github.com/JeffreyZhao/calibre-recipes)
+
+[Emacs 简易教程](http://www.perfect-is-shit.com/emacs-simple-tutorial.html)
+
+[dirtysalt's homepage](http://dirlt.com/)
+
+[为什么会出现LNK2005"符号已定义"的链接错误? - 歌谣在风中飘舞 - 博客频道 - CSDN.NET](http://blog.csdn.net/soloist/article/details/493238)
+
+:   Read CSAPP! More!
+
+[云风的 BLOG: 学习从历史开始](file:///E:/blogs/YunFeng/blog.codingnow.com/2007/12/history.html)
+
+:   和上次一样，陈榕调侃了许多大公司，尤其是微软。但他更语重心长的讲了一个
+    浅显的道理：微软的人并不比大家苯，当然也不比大家聪明。我们都能看到的问
+    题，比如系统臃肿，软件结构不合理，等等，不可能微软自己人就意识不到。种
+    种问题，绝对不能只用当局者迷，旁观者清来解释。
+
+    **我们只有从历史看过来，方能理解历史的局限性。**做出那些错误决定的无奈放在
+    大背景上大多会得到一个合理的解释。也只有这样，我们才可以领悟到未来正确的路。
+
+    我有一个忘记从哪继承来的观点：无论我们想学什么，都应该从学习他的历史开
+    始。极端点说，无论学什么，都是在学他的历史。
+
+    长期以来，自己总结我在编程方面取得的成绩的缘因，最重要的一条就是**无功利心**的学习。
+
+    并不是因为我需要用到什么领域的知识而去学习，而只是单纯的我想知道，我想
+    弄明白。搞明白之后，到底有什么价值，可以创造多少财富，这是我从来不关心
+    的。反而这样，知识给予的回馈是最大的。
+
+[id-Software/DOOM-3-BFG](https://github.com/id-Software/DOOM-3-BFG)
+
+:   BFG, for "Big F***ing Gun"
+
+[C Programming (豆瓣)](https://book.douban.com/subject/2585403/)
+
+[mc-gulu/mooc_chinese_culture](https://github.com/mc-gulu/mooc_chinese_culture)
+
+[The Chicken and the Pig - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/The_Chicken_and_the_Pig)
+
+:   The business fable of The Chicken and the Pig is about commitment to a
+    project or cause. When producing a dish made of ham and eggs, the pig
+    provides the ham which requires his **sacrifice** and the chicken provides
+    the eggs which are not difficult to produce. Thus the pig is really
+    committed in that dish while the chicken is **only involved**, yet both are
+    needed to produce the dish.
+
+[技术管理猪鸡-1 开篇 « 4G spaces](http://blog.youxu.info/2015/05/17/tech-lead-1/)
+
+:   而刚入行的工程师，只能报告一些比较琐碎的成就。
+
+    做出 MapReduce 框架的和写琐碎 MapReduce 程序的工程师之间的差距并不是他们的
+    工具和编程效率，也往往不是教育背景或者经验，而是他们各自的杠杆：所带领的团
+    队。
+
+    运用常识
+
+    逐渐习得的管理技能
+
+    这不是入学考试，慢慢积累最省时省事。就像练习武术一样，最强的斗士绝不是看书
+    最多或者理论最强的，而是训练时间最长的。
+
+    问题变了，不管以前多么神奇的管理方法都会变得一地鸡毛，因为管理方法不能脱离
+    要解决的问题。
+
+    尽管写日记并不能直接解决技术管理上的难题，却打开了反思之门，也把许多事情前
+    因后果连接起来。
+
+[Alexander Pope - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Alexander_Pope)
+
+[cloudwu/bpa](https://github.com/cloudwu/bpa)
+
+[Wikipedia:Too long; didn't read - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn%27t_read)
+
+[有什么道理是开始注重外表几年后才能悟出来的？ - Sophia 的回答 - 知乎](http://www.zhihu.com/question/31637529/answer/54173168)
+
+:   你以为人与人之间颜值的区别就真的只是颜值的区别？你错了，只不过是自控力
+    和执行力的差别，反映到了颜值上。
+
+[理解，真是世界上最奢侈的事](http://www.douban.com/note/279511136/)
+
+:   曾经我非常介意别人对我的误解。听到好友的一些话表面上“呵呵”过去，但其实心里
+    很受伤，“你怎么会觉得我是那样的人？”“你怎么这么不了解我？”
+
+    但后来，我也明白了，理解真是世界上最奢侈的事。尤其是越长大、越独立，又有谁
+    会目睹你的成长，知道你经历过什么，知道你喜欢什么不喜欢什么。大家都想着自己
+    吧，哪里会费心去了解另一个人？
+
+    连自己最亲近的父母，都不完全了解自己了。
+
+    我所能做的，不过是与在乎的人多沟通自己的想法。但比如我妈，我多次向她解释过
+    我的专业是什么，她依旧脱口而出“广告设计”，我也只能很无奈的随她去了。
+
+    在乎的太多就活的太累啦。
+
+[科学网—导师为何不能帮助学生找工作呢？ - 鲍海飞的博文](http://blog.sciencenet.cn/blog-278905-944000.html)
+
+[`brian d foy` style guide](http://www252.pair.com/comdog/style.html)
+
+:   Any capitalization is incorrect unless each letter is capitalized.
+    Title case is incorrect.
+
+    Recasting the sentence avoids the problem.
+
+    > "But I tell you, a cat needs a name that's particular,
+    >
+    > A name that's peculiar, and more dignified."
+    >
+    > -- Old Possum
+
+    refs and see also
+
+      - [The Perl Review interviews brian d foy](http://www.theperlreview.com/Interviews/brian-d-foy-20050932.html)
+      - [On the difficult matter of names - A Roguish Chrestomathy](http://q-pheevr.livejournal.com/22047.html)
+      - [How I learned Perl](http://www.perlmonks.org/index.pl?node_id=385334)
+      - [brian d foy](http://www252.pair.com/comdog/)
+
+[How to get the query string by javascript? - Stack Overflow](http://stackoverflow.com/questions/2907482/how-to-get-the-query-string-by-javascript)
+
+:   ```javascript
+    function getQueryStrings() {
+      var assoc  = {};
+      var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
+      var queryString = location.search.substring(1);
+      var keyValues = queryString.split('&');
+
+      for(var i in keyValues) {
+        var key = keyValues[i].split('=');
+        if (key.length > 1) {
+          assoc[decode(key[0])] = decode(key[1]);
         }
+      }
 
-        // And use it like this...
+      return assoc;
+    }
 
-        var qs = getQueryStrings();
-        var myParam = qs["myParam"];
-        ```
+    // And use it like this...
 
-#. &#x2610; [常用 Git 命令清单 - Web Rube - 噜吧](http://www.webrube.com/git-web_rube/6962)
-:   ?
-    :   ![](http://www.webrube.com/pics/62/6962_1.png)
-#. &#x2610; ["I Draw Pictures All Day" – Smashing Magazine](http://www.smashingmagazine.com/2012/08/i-draw-pictures-all-day/?goback=.gde_5057526_member_249720659)
-:   ?
-    :   > "So, you do nothing all day."
+    var qs = getQueryStrings();
+    var myParam = qs["myParam"];
+    ```
 
-        > But for us designers and artists, drawing pictures all day is integral to our
-        > process and to who we are as creative people, and despite the idea that those
-        > who doodle waste time, we still get our work done. So, then, why are those of
-        > us who draw pictures all day even tempted to think that someone who is
-        > doodling or drawing pictures in a meeting or lecture is not paying attention?
+    then, go to browser, `http://tangzx.qiniudn.com?show=true`.
 
-        It turns out that the simple act of scribbling on a page helps us think, remember and learn.
+[常用 Git 命令清单 - Web Rube - 噜吧](http://www.webrube.com/git-web_rube/6962)
 
-        But the author Sunni Brown offers my favorite definition of "doodle" in her TED talk, "Doodlers, unite!":
+:   ![](http://www.webrube.com/pics/62/6962_1.png)
 
-        > “In the 17th century, a doodle was a simpleton or a fool, as in “Yankee
-        > Doodle.” In the 18th century, it became a verb, and it meant to swindle or
-        > ridicule or to make fun of someone. In the 19th century, it was a corrupt
-        > politician. And today, we have what is perhaps our most offensive definition,
-        > at least to me, which is the following: “To doodle officially means to
-        > dawdle, to dilly dally, to monkey around, to make meaningless marks, to do
-        > something of little value, substance or import and,” my personal favorite, “
-        > to do nothing.” No wonder people are averse to doodling at work. Doing
-        > nothing at work is akin to masturbating at work. It’s totally inappropriate.”
+["I Draw Pictures All Day" – Smashing Magazine](http://www.smashingmagazine.com/2012/08/i-draw-pictures-all-day/?goback=.gde_5057526_member_249720659)
 
-        37% of the population are visual learners.
+:   > "So, you do nothing all day."
 
-        The doodlers recalled 29% more information.
+    > But for us designers and artists, drawing pictures all day is integral to our
+    > process and to who we are as creative people, and despite the idea that those
+    > who doodle waste time, we still get our work done. So, then, why are those of
+    > us who draw pictures all day even tempted to think that someone who is
+    > doodling or drawing pictures in a meeting or lecture is not paying attention?
 
-        > “Doodling is really to make spontaneous marks to help yourself think. That is
-        > why millions of people doodle. Here’s another interesting truth about the
-        > doodle: People who doodle when they’re exposed to verbal information retain
-        > more of that information than their non-doodling counterparts. We think
-        > doodling is something you do when you lose focus, but in reality, it is a
-        > preemptive measure to stop you from losing focus. Additionally, it has a
-        > profound effect on creative problem-solving and deep information processing.”
+    It turns out that the simple act of scribbling on a page helps us think, remember and learn.
 
-        #. &#x2611; [Volvo 找来四岁女孩来遥控疯狂驾驶一辆大货车！](http://cn.engadget.com/2015/12/05/4-year-old-remote-drive-dump-truck/?ncid=rss_truncated)
-        #. &#x2610; [cmd - Windows equivalent to UNIX pwd - Stack Overflow](http://stackoverflow.com/questions/921741/windows-equivalent-to-unix-pwd)
+    But the author Sunni Brown offers my favorite definition of "doodle" in her TED talk, "Doodlers, unite!":
 
-        It is cd for "current directory".
+    > “In the 17th century, a doodle was a simpleton or a fool, as in “Yankee
+    > Doodle.” In the 18th century, it became a verb, and it meant to swindle or
+    > ridicule or to make fun of someone. In the 19th century, it was a corrupt
+    > politician. And today, we have what is perhaps our most offensive definition,
+    > at least to me, which is the following: “To doodle officially means to
+    > dawdle, to dilly dally, to monkey around, to make meaningless marks, to do
+    > something of little value, substance or import and,” my personal favorite, “
+    > to do nothing.” No wonder people are averse to doodling at work. Doing
+    > nothing at work is akin to masturbating at work. It’s totally inappropriate.”
 
-        this prints it in the console
+    37% of the population are visual learners.
 
-        echo %cd%
+    The doodlers recalled 29% more information.
 
-        or paste this command in CMD, then you'll have pwd:
+    > “Doodling is really to make spontaneous marks to help yourself think. That is
+    > why millions of people doodle. Here’s another interesting truth about the
+    > doodle: People who doodle when they’re exposed to verbal information retain
+    > more of that information than their non-doodling counterparts. We think
+    > doodling is something you do when you lose focus, but in reality, it is a
+    > preemptive measure to stop you from losing focus. Additionally, it has a
+    > profound effect on creative problem-solving and deep information processing.”
 
-        (echo @echo off
-        echo echo ^%cd^%) > C:\WINDOWS\pwd.bat
-#. &#x2610; [Posts ‐ apple4us](http://apple4us.com/post/)
-#. &#x2610;
+[cmd - Windows equivalent to UNIX pwd - Stack Overflow](http://stackoverflow.com/questions/921741/windows-equivalent-to-unix-pwd)
+
+:   It is cd for "current directory".
+
+    this prints it in the console
+
+    `echo %cd%`
+
+    or paste this command in CMD, then you'll have pwd:
+
+    ```bash
+    (echo @echo off
+    echo echo ^%cd^%) > C:\WINDOWS\pwd.bat
+    ```
+
+[Posts ‐ apple4us](http://apple4us.com/post/)
 
 [如何保证网页的字体在各平台都尽量显示为最高质量的黑体？ - 平面设计 - 知乎](http://www.zhihu.com/question/19911793)
 
-#. &#x2610; [Larry Wall 专访——语言学、Perl 6 的设计和发布 - 简书](http://www.jianshu.com/p/b920a1a469b2)
-:   ?
-    :   LW：到现在为止，Python 社区在低阶方面的教学工作做得比我们要好。我们也很想在这一方面做点什么，这也是我们有蝴蝶 logo 的部分原因，以此来吸引七岁大小的女孩子！
+[Larry Wall 专访——语言学、Perl 6 的设计和发布 - 简书](http://www.jianshu.com/p/b920a1a469b2)
 
-        ![Perl 6 : Camelia](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Camelia.svg/640px-Camelia.svg.png)
-#. &#x2610; [Vim - 知乎专栏](http://zhuanlan.zhihu.com/hack-vim)
-:   ?
-    :   为什么说 Vim 写代码快？ 前提你累死过3次，成功配置了Vim。那么开始神奇的Vim之旅。你就发现。
+:   LW：到现在为止，Python 社区在低阶方面的教学工作做得比我们要好。我们也很想在
+    这一方面做点什么，这也是我们有蝴蝶 logo 的部分原因，以此来吸引七岁大小的女孩子！
 
-        1. 你删代码比队友快 “first blood”
-        2. 自动补全比队友快
-        3. 在20个G的文件堆里定位代码各种秒杀你队友
-        4. 在vim中完成各种shell ， 秒杀你队友 “Killing spree”!
-        5. 优雅的更新升级， 删除 Vim插件（前提 Vundle） “Dominating”!
-        6. 随性的自定义快捷键，完全属于你自己的风格， 一个配置文件随身带着走。或者压缩Vim文件包带着走， 想去哪就去哪，不用等你队友带节奏。 Unstoppable！
-        7. 你队友还在用鼠标？那你已经进化了 。 Wicked Sick！！
-        8. 什么？ 开始用 Vim Markdown 来写文档了？ 我草，你已经超神了！！ God Like！！！
-        9. 你已经离不开Vim了。 从最开始被各种折腾到想要砸键盘的你， 如今你已经爱上他了。 aM-m-m-m....（重复8次）Monster Kill 10. 你注定和 Vim 过完这一生！......Holy Shit
-#. &#x2610; [Web 中文字体应用指南 » Topics » Ruby China](https://ruby-china.org/topics/14005)
-#. &#x2610; [如何评价坂井泉水？ - 你如何评价 X - 知乎](http://www.zhihu.com/question/22177383)
-:   ?
-    :   后来，我当然知道了它们原来是如此的巧合，以至于我对于这两首歌都有着特殊
-        的喜爱。它们有着同样的作曲者织田哲郎，同样的作词者坂井泉水，同样的演唱
-        者FIELD OF VIEW。
+    ![Perl 6 : Camelia](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Camelia.svg/640px-Camelia.svg.png)
 
-        直到现在，听回那些经典动画的主题曲或者片尾曲，还能深深感受到那股浓浓的
-        Being系摇滚味道，那是一种令人精神振奋、又流畅悦耳的熟悉旋律，那是一种已
-        经融入血液的童年的记忆。
+[Vim - 知乎专栏](http://zhuanlan.zhihu.com/hack-vim)
 
-        词曲兼修，才华横溢，歌声清新，外形亲切，是我对坂井泉水的评价。但最令我
-        喜爱的，是她催人向上的风格和低调做事的态度，她拥有令人艳羡的外貌，却不
-        以此为噱头，她拥有令人难忘的声线，却精于歌词的创作。遍观日本乃至中国乐
-        坛，都很难找到一位如此完美的歌手。
+:   为什么说 Vim 写代码快？ 前提你累死过3次，成功配置了Vim。那么开始神奇的Vim之旅。你就发现。
 
-        『What a beautiful moment』，ZARD第一次也是最后一次演唱会，2004年将近40
-        岁的坂井泉水依然温婉动人，如今看来，令人感叹生命无常
+    1. 你删代码比队友快 “first blood”
+    2. 自动补全比队友快
+    3. 在20个G的文件堆里定位代码各种秒杀你队友
+    4. 在vim中完成各种shell ， 秒杀你队友 “Killing spree”!
+    5. 优雅的更新升级， 删除 Vim插件（前提 Vundle） “Dominating”!
+    6. 随性的自定义快捷键，完全属于你自己的风格， 一个配置文件随身带着走。或者压缩Vim文件包带着走， 想去哪就去哪，不用等你队友带节奏。 Unstoppable！
+    7. 你队友还在用鼠标？那你已经进化了 。 Wicked Sick！！
+    8. 什么？ 开始用 Vim Markdown 来写文档了？ 我草，你已经超神了！！ God Like！！！
+    9. 你已经离不开Vim了。 从最开始被各种折腾到想要砸键盘的你， 如今你已经爱上他了。 aM-m-m-m....（重复8次）Monster Kill 10. 你注定和 Vim 过完这一生！......Holy Shit
 
-        ZARD-（ZA-DO） 坂井泉水（Lzumi Sakai）ZARD的歌，声线独特，歌词优美，总
-        是给人向上的力量，她总是微笑的，很有阳光气的一个女孩，很少化妆，她的音
-        乐成就除了连续九张百万级专辑轰动日本乃至世界歌坛外，更多的应该以音乐的
-        形式告诉人们要勇敢面对生活的坎坷，永不认输的真理，她是影响日本一个时代
-        的歌手。
+[Web 中文字体应用指南 » Topics » Ruby China](https://ruby-china.org/topics/14005)
 
-        她最红的时段是上世纪九十年代，那个时代也是日式摇滚的崛起与顶峰，而在这
-        巅峰的时代里，zard作为日本第一个女子摇滚乐队出道，并在唱片销量史上创下
-        惊人的记录，就其影响来说，可谓是巨大而不可磨灭的。那个时代的摇滚歌手，
-        B'z也好Zard也好，都有一种奠基人的感觉，甚至到了现在可以说是一种代表，象
-        征。曾经有个日本妹子（初中生）问我最喜欢的歌手，我说是Zard。她忽然很长
-        地“哦～”了一声。对她来说，Zard已经是旧事物了，尽管不了解，但她也有所耳
-        闻，并且报以极大的尊敬。这也能显示Zard在日本的地位和影响吧。就像至今都
-        有各处会播放邓丽君的歌，问起美国人卡朋特是谁，也没有不认识的。Zard的負
-        けないで还被编入了日本学校的音乐教材里，311日本大地震时，电台里点播量第
-        一名的依旧是zard的負けないで，而那时候距Zard去世已有4年之久。要说日本女
-        子摇滚的代表是谁？那一定会有Zard坂井泉水的名字。
+[如何评价坂井泉水？ - 你如何评价 X - 知乎](http://www.zhihu.com/question/22177383)
 
-        Refs
+:   后来，我当然知道了它们原来是如此的巧合，以至于我对于这两首歌都有着特殊
+    的喜爱。它们有着同样的作曲者织田哲郎，同样的作词者坂井泉水，同样的演唱
+    者FIELD OF VIEW。
 
-        #. [如何从专业角度评价一下zard（坂井泉水）的音乐？ - 动漫 - 知乎](http://www.zhihu.com/question/26574738)
+    直到现在，听回那些经典动画的主题曲或者片尾曲，还能深深感受到那股浓浓的
+    Being系摇滚味道，那是一种令人精神振奋、又流畅悦耳的熟悉旋律，那是一种已
+    经融入血液的童年的记忆。
 
-        Read more
+    词曲兼修，才华横溢，歌声清新，外形亲切，是我对坂井泉水的评价。但最令我
+    喜爱的，是她催人向上的风格和低调做事的态度，她拥有令人艳羡的外貌，却不
+    以此为噱头，她拥有令人难忘的声线，却精于歌词的创作。遍观日本乃至中国乐
+    坛，都很难找到一位如此完美的歌手。
 
-        #. [ZARD!!](http://www.douban.com/doulist/537743/?start=25&sort=time&sub_type=)
-#. &#x2610; [2B Lab欢乐多-死线年年有年年都很多 - 与食巨近贱多食广地蹦跶在不列颠 - 知乎专栏](http://zhuanlan.zhihu.com/ciciatc/19589985)
-#. &#x2611; [Matrix67 水平怎么样？ - 吴告于的回答 - 知乎](http://www.zhihu.com/question/20823906/answer/16329313)
-:   ?
-    :   如果一个人踢球，看起来还不错，有旁边的人就很好奇，问：他踢球的水平怎么
-        样，能踢世界杯吗？另一个看客鄙夷地说，他根本和马拉多纳不在一个档次，连
-        贝克汉姆都说他比不过马拉多纳，这小子就更不用说了。然后看客们就很看不起
-        踢球的那位，认为他踢的不是真正的球。。。
+    『What a beautiful moment』，ZARD第一次也是最后一次演唱会，2004年将近40
+    岁的坂井泉水依然温婉动人，如今看来，令人感叹生命无常
 
-        为毛 我们发展出这种恶心的逻辑趣味？
-#. &#x2610; [Web设计开发资源分享 | Meditic](http://meditic.com/web-design-development-resources)
-#. &#x2611; [苹果电脑/Mac OS及其它 | Meditic](http://meditic.com/explore-your-mac-os)
-:   ?
-    :   看看 QQ 的苹果版的设计，就能理解两个系统的天差地别。再流氓的软件，到了苹
-        果下都得重新设计过，而且绝对不敢做弹窗广告，这不是偶然的。
-#. &#x2611; [碰巧而已 | Meditic](http://meditic.com/you-just-dont-belong-to-anyone)
-:   ?
-    :   人们喜欢把自己套在一个群体里，以获取安全感。如果自己比不过别人，就可以
-        去拿这个群体和别人比。比如北大的很多学生，聚会的时候，跳舞远不如海淀走
-        读学院的学生，北大那帮人必定会安慰自己：“我可是北大的学生啊”。是啊，他
-        的确来自一个破校，可是，这无法改变你跳舞不如他的事实。在跳舞界，你就是
-        个 loser。在现实生活中，我发现越是喜欢给自己带帽子的人，越是无能。真正牛
-        比的人，绝不需要靠“我来自国际知名的 xx 公司”这种低劣的包装来显示自己的牛
-        比。
-#. &#x2611; [如何降低用户的价格敏感度 | Meditic](http://meditic.com/how-to-cut-down-price-sensitivity-for-users)
-#. &#x2611; [关于/meditic是谁 | Meditic](http://meditic.com/about)
+    ZARD-（ZA-DO） 坂井泉水（Lzumi Sakai）ZARD的歌，声线独特，歌词优美，总
+    是给人向上的力量，她总是微笑的，很有阳光气的一个女孩，很少化妆，她的音
+    乐成就除了连续九张百万级专辑轰动日本乃至世界歌坛外，更多的应该以音乐的
+    形式告诉人们要勇敢面对生活的坎坷，永不认输的真理，她是影响日本一个时代
+    的歌手。
+
+    她最红的时段是上世纪九十年代，那个时代也是日式摇滚的崛起与顶峰，而在这
+    巅峰的时代里，zard作为日本第一个女子摇滚乐队出道，并在唱片销量史上创下
+    惊人的记录，就其影响来说，可谓是巨大而不可磨灭的。那个时代的摇滚歌手，
+    B'z也好Zard也好，都有一种奠基人的感觉，甚至到了现在可以说是一种代表，象
+    征。曾经有个日本妹子（初中生）问我最喜欢的歌手，我说是Zard。她忽然很长
+    地“哦～”了一声。对她来说，Zard已经是旧事物了，尽管不了解，但她也有所耳
+    闻，并且报以极大的尊敬。这也能显示Zard在日本的地位和影响吧。就像至今都
+    有各处会播放邓丽君的歌，问起美国人卡朋特是谁，也没有不认识的。Zard的負
+    けないで还被编入了日本学校的音乐教材里，311日本大地震时，电台里点播量第
+    一名的依旧是zard的負けないで，而那时候距Zard去世已有4年之久。要说日本女
+    子摇滚的代表是谁？那一定会有Zard坂井泉水的名字。
+
+    refs and see also
+
+      - [如何从专业角度评价一下zard（坂井泉水）的音乐？ - 动漫 - 知乎](http://www.zhihu.com/question/26574738)
+      - [ZARD!!](http://www.douban.com/doulist/537743/?start=25&sort=time&sub_type=)
+
+[2B Lab欢乐多-死线年年有年年都很多 - 与食巨近贱多食广地蹦跶在不列颠 - 知乎专栏](http://zhuanlan.zhihu.com/ciciatc/19589985)
+
+[Matrix67 水平怎么样？ - 吴告于的回答 - 知乎](http://www.zhihu.com/question/20823906/answer/16329313)
+
+:   如果一个人踢球，看起来还不错，有旁边的人就很好奇，问：他踢球的水平怎么
+    样，能踢世界杯吗？另一个看客鄙夷地说，他根本和马拉多纳不在一个档次，连
+    贝克汉姆都说他比不过马拉多纳，这小子就更不用说了。然后看客们就很看不起
+    踢球的那位，认为他踢的不是真正的球。。。
+
+    为毛 我们发展出这种恶心的逻辑趣味？
+
+[Web设计开发资源分享 | Meditic](http://meditic.com/web-design-development-resources)
+
+[苹果电脑/Mac OS及其它 | Meditic](http://meditic.com/explore-your-mac-os)
+
+:   看看 QQ 的苹果版的设计，就能理解两个系统的天差地别。再流氓的软件，到了苹
+    果下都得重新设计过，而且绝对不敢做弹窗广告，这不是偶然的。
+
+[碰巧而已 | Meditic](http://meditic.com/you-just-dont-belong-to-anyone)
+
+:   人们喜欢把自己套在一个群体里，以获取安全感。如果自己比不过别人，就可以
+    去拿这个群体和别人比。比如北大的很多学生，聚会的时候，跳舞远不如海淀走
+    读学院的学生，北大那帮人必定会安慰自己：“我可是北大的学生啊”。是啊，他
+    的确来自一个破校，可是，这无法改变你跳舞不如他的事实。在跳舞界，你就是
+    个 loser。在现实生活中，我发现越是喜欢给自己带帽子的人，越是无能。真正牛
+    比的人，绝不需要靠“我来自国际知名的 xx 公司”这种低劣的包装来显示自己的牛
+    比。
+
+[如何降低用户的价格敏感度 | Meditic](http://meditic.com/how-to-cut-down-price-sensitivity-for-users)
+
+[关于/meditic是谁 | Meditic](http://meditic.com/about)
+
 :   “非常无聊”，深得我心。
-    :   不生病、不休息、也不娱乐，除了吃喝拉撒，几乎都在工作，看起来好像是工作狂，
-        其实我是生活狂。对我来说，吃喝拉撒不是生活，那只是维持肉体存活的手段，
-        **非常无聊**；从不断的工作和作品中获得乐趣，才是我的生活。
-#. &#x2611; [我有个朋友，做图源的，最近被捕了 - 文章](http://weibo.com/p/1001603915337371370351)
-:   ?
-    :   所以当我知道原来他是图源帝的时候，我非常平静，只表示了一个“噢~”。**这就像
-        你知道一个人的工作是死刑执行人的时候，你不会对这份工作表现出想要参与其
-        中的兴奋，也不会否认这份工作的必要性表现出不齿于疏远一样。**
 
-        我们一起去 Comic market，他能把企业区各个展区的出展商，从创设经历到员工
-        八卦到巅峰作品到黑历史从头到尾吐个遍。我们一起去卡拉 OK，我一首炉心溶解
-        ，他回敬我一首 Melt。我唱一首 1 期 OP，他回敬我一首 2 期 ED。我说我是御
-        姐控，他说太俗了，老子是伪娘控。
+    不生病、不休息、也不娱乐，除了吃喝拉撒，几乎都在工作，看起来好像是工作狂，
+    其实我是生活狂。对我来说，吃喝拉撒不是生活，那只是维持肉体存活的手段，
+    **非常无聊**；从不断的工作和作品中获得乐趣，才是我的生活。
 
-        有一次，我看到图源帝在贴吧回应那些歇斯底里的催更党，他说，你要知道，中
-        国汉化组给的那点破钱，加个 0 都算不上我现在挣的钱的零头。国外的论坛啥的我
-        也看，就 TM 中国的这儿一天到晚有人催更，**还一个个都跟自己是大爷似的**
-        。我说，你其实已经完全不需要给中国提供图源了阿，甭搭理他们呗。图源帝语
-        重心长地跟我说：“唉，毕竟咱中国人这么着也不能汉奸成那样阿。”
+[我有个朋友，做图源的，最近被捕了 - 文章](http://weibo.com/p/1001603915337371370351)
 
-        总之，这就是我认识的图源帝。一个死宅，伪娘控，ACG 通吃，但仅限 2 次元，
-        AKB48 什么的反而非常生疏。一个技术宅，对设备，质量，精益求精，程序，音
-        乐，图像加工，都是精通领域。一个里世界的国际大咖，引领图源“事业”的先锋
-        ，言语畅通，八面玲珑，在图源这个稳赔不赚的事业上做到发家致富。一个中国
-        人，会在贴吧吐槽，在 B 站传视频。冒着风险，顶着伸手党的炮火，也不忘在自己
-        最困难的时候赞助过自己的同胞。
+:   所以当我知道原来他是图源帝的时候，我非常平静，只表示了一个“噢~”。**这就像
+    你知道一个人的工作是死刑执行人的时候，你不会对这份工作表现出想要参与其
+    中的兴奋，也不会否认这份工作的必要性表现出不齿于疏远一样。**
 
-#. &#x2610; [【社长presents】电子书-LOVE-ZARD字幕社](http://lovezardfansub.lofter.com/post/25be0f_7feda66)
-:   ?
-    :   ```plain
-        ZARD 是？
-        ZARD，是一个传奇。
-        ZARD = 坂井泉水？
-        其实可以这么说。
-        ZARD不是最红的，
-        但是，日本大街小巷的人们，
-        几乎都知道 ZARD。
-        就算不知道 ZARD，
-        也知道那首鼓励了无数人的《負けないで》。
-        ZARD 一直低调的发片，几乎零宣传。
-        却在泉水小姐逝世之后，仍然保持着日本 CD 总销量第八的记录。
-        泉水小姐不在了，但是，她付出自己的一生打造的 ZARD，
-        永远是个传奇。
-        ```
+    我们一起去 Comic market，他能把企业区各个展区的出展商，从创设经历到员工
+    八卦到巅峰作品到黑历史从头到尾吐个遍。我们一起去卡拉 OK，我一首炉心溶解
+    ，他回敬我一首 Melt。我唱一首 1 期 OP，他回敬我一首 2 期 ED。我说我是御
+    姐控，他说太俗了，老子是伪娘控。
 
-#. &#x2610; [Developer Toolbar - Firefox Developer Tools | MDN](https://developer.mozilla.org/en-US/docs/Tools/GCLI)
+    有一次，我看到图源帝在贴吧回应那些歇斯底里的催更党，他说，你要知道，中
+    国汉化组给的那点破钱，加个 0 都算不上我现在挣的钱的零头。国外的论坛啥的我
+    也看，就 TM 中国的这儿一天到晚有人催更，**还一个个都跟自己是大爷似的**
+    。我说，你其实已经完全不需要给中国提供图源了阿，甭搭理他们呗。图源帝语
+    重心长地跟我说：“唉，毕竟咱中国人这么着也不能汉奸成那样阿。”
 
-#. &#x2610; [程序人生-代码疯子的技术博客-Www.ProgramLife.Net](http://www.programlife.net/)
-#. &#x2610; [如何在windows下编译Chrome源代码 - namelcx的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/namelcx/article/details/5971159)
-#. &#x2611; [为什么特别成功的人喜欢每天都穿一样的衣服？ - 简书](http://www.jianshu.com/p/7730696482f9)
-:   ? <!-- 我就不专门点出“成功”这两个字并不让我喜欢了。除了这一点本文很“深得我心”！ -->
-    :   Ego-Depletion
+    总之，这就是我认识的图源帝。一个死宅，伪娘控，ACG 通吃，但仅限 2 次元，
+    AKB48 什么的反而非常生疏。一个技术宅，对设备，质量，精益求精，程序，音
+    乐，图像加工，都是精通领域。一个里世界的国际大咖，引领图源“事业”的先锋
+    ，言语畅通，八面玲珑，在图源这个稳赔不赚的事业上做到发家致富。一个中国
+    人，会在贴吧吐槽，在 B 站传视频。冒着风险，顶着伸手党的炮火，也不忘在自己
+    最困难的时候赞助过自己的同胞。
 
-        #. 我真的很幸运，每天醒来都能为全球逾 10 亿用户服务。如果我把精力花在一
-            些愚蠢、轻率的事情上，我会觉得我没有做好我的工作。
-        #. 主要是因为这样**很方便**，而且还能表达一种个人风格。
-        #. 每天吃这些食物可能会让别人觉得有点单调，但对我来说并不在意这样。
-        #. 常常看着手机纠结几分钟甚至十几分钟，直到大脑疲惫混乱，精疲力尽的时候，
-            匆匆选一样，物质的丰富和选项的繁多常常让我们无所适从。
-        #. 这些日常生活中的琐碎，无关痛痒，却消磨了我们的资源。但其实如果午餐就
-            点小组饭，反正菜品数量有限每天又不重样，随便点哪个菜，都是自己喜欢
-            或者可以接受的，真的可以节约好多时间和精力。
-        #. 虽然每天吃同一家店的东西看似有些枯燥也缺乏美感，但人生已经足够复杂，
-            不要再让日常的琐碎来消磨我们的幸福啦。简化无关紧要的选择，把这些时
-            间花在重要的决策上，把精力集中在我们真正喜欢的人和事上，我们的生活
-            将会不一样。
+[【社长presents】电子书-LOVE-ZARD字幕社](http://lovezardfansub.lofter.com/post/25be0f_7feda66)
 
-        #. 让我们简单点，再简单点。
-        #. Simplicity is the ultimate sophistication - Da Vinci
-        #. Less is more.
+:   ```tzx-bigquote
+    ZARD 是？
+    ZARD，是一个传奇。
+    ZARD = 坂井泉水？
+    其实可以这么说。
+    ZARD不是最红的，
+    但是，日本大街小巷的人们，
+    几乎都知道 ZARD。
+    就算不知道 ZARD，
+    也知道那首鼓励了无数人的《負けないで》。
+    ZARD 一直低调的发片，几乎零宣传。
+    却在泉水小姐逝世之后，仍然保持着日本 CD 总销量第八的记录。
+    泉水小姐不在了，但是，她付出自己的一生打造的 ZARD，
+    永远是个传奇。
+    ```
 
-        **Ego depletion** refers to the idea that self-control or willpower
-        draw upon **a limited pool of mental resources that can be used up.
-        When the energy for mental activity is low, **self-control is typically
-        impaired**(受损的), which would be considered **a state of ego
-        depletion**. In particular, experiencing a state of ego depletion
-        impairs the ability to control oneself later on. A depleting task
-        requiring self-control can have a hindering effect on a subsequent
-        self-control task, even if the tasks are seemingly unrelated.
-        Self-control plays a valuable role in the functioning of the self on
-        both individualistic and interpersonal levels. Ego depletion is
-        therefore a critical topic in experimental psychology, specifically
-        social psychology, because it is a mechanism that contributes to the
-        understanding of the processes of human self-control.
+[程序人生-代码疯子的技术博客-Www.ProgramLife.Net](http://www.programlife.net/)
 
-        Refs
+[如何在windows下编译Chrome源代码 - namelcx的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/namelcx/article/details/5971159)
 
-        #. &#x2611; [Ego depletion - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Ego_depletion)
+:   当时是为了找到一个插件能让浏览器的 tab 放在左边。后来发现 chrome 不行（chromium 可以，但要自己编译）。
+    再后来，发现 Firefox 上有这么一个插件，叫“Tab Kit”。大赞！
+
+    refs and see also
+
+      - [Developer Toolbar - Firefox Developer Tools | MDN](https://developer.mozilla.org/en-US/docs/Tools/GCLI)
+
+[为什么特别成功的人喜欢每天都穿一样的衣服？ - 简书](http://www.jianshu.com/p/7730696482f9)
+
+:   <!-- 我就不专门点出“成功”这两个字并不让我喜欢了。除了这一点本文很“深得我心”！ -->
+
+    Ego-Depletion
+
+    #. 我真的很幸运，每天醒来都能为全球逾 10 亿用户服务。如果我把精力花在一
+        些愚蠢、轻率的事情上，我会觉得我没有做好我的工作。
+    #. 主要是因为这样**很方便**，而且还能表达一种个人风格。
+    #. 每天吃这些食物可能会让别人觉得有点单调，但对我来说并不在意这样。
+    #. 常常看着手机纠结几分钟甚至十几分钟，直到大脑疲惫混乱，精疲力尽的时候，
+        匆匆选一样，物质的丰富和选项的繁多常常让我们无所适从。
+    #. 这些日常生活中的琐碎，无关痛痒，却消磨了我们的资源。但其实如果午餐就
+        点小组饭，反正菜品数量有限每天又不重样，随便点哪个菜，都是自己喜欢
+        或者可以接受的，真的可以节约好多时间和精力。
+    #. 虽然每天吃同一家店的东西看似有些枯燥也缺乏美感，但人生已经足够复杂，
+        不要再让日常的琐碎来消磨我们的幸福啦。简化无关紧要的选择，把这些时
+        间花在重要的决策上，把精力集中在我们真正喜欢的人和事上，我们的生活
+        将会不一样。
+    #. 让我们简单点，再简单点。
+    #. Simplicity is the ultimate sophistication - Da Vinci
+    #. Less is more.
+
+    **Ego depletion** refers to the idea that self-control or willpower
+    draw upon **a limited pool of mental resources that can be used up.
+    When the energy for mental activity is low, **self-control is typically
+    impaired**(受损的), which would be considered **a state of ego
+    depletion**. In particular, experiencing a state of ego depletion
+    impairs the ability to control oneself later on. A depleting task
+    requiring self-control can have a hindering effect on a subsequent
+    self-control task, even if the tasks are seemingly unrelated.
+    Self-control plays a valuable role in the functioning of the self on
+    both individualistic and interpersonal levels. Ego depletion is
+    therefore a critical topic in experimental psychology, specifically
+    social psychology, because it is a mechanism that contributes to the
+    understanding of the processes of human self-control.
+
+    refs and see also
+
+      - [Ego depletion - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Ego_depletion)
 
 [JavaScript: How to Change CSS](http://xahlee.info/js/css_change.html)
 
-:   ```html
-    <p>
-    <span id="id13959">Color Me</span>
-    <button id="b1">RED</button>
-    <button id="b2">BLUE</button>
-    </p>
-    ```
-
-    ```javascript
-    var xx = document.getElementById( "id13959" );
-    var button1 = document.getElementById( "b1" );
-    var button2 = document.getElementById( "b2" );
-
-    button1.addEventListener( "click", function (){
-        xx.style.color="red";
-    }, false );
-    button2.addEventListener( "click", function (){
-        xx.style.color="blue";
-    }, false );
-    ```
-
-    <div style="font-size:80%">
+:   <div style="font-size:80%">
 
     | CSS Syntax | JavaScript DOM Syntax |
     | ---------- | --------------------- |
@@ -19113,243 +20398,264 @@ chess), displaying its complexity despite relatively simple rules.
 
     CSS's pseudo selectors (`a:visited`{.css}, `a:link`{.css}, `div.nav:before`{.css}, `div.nav:first-child`{.css}) cannot be scripted.
 
-#. &#x2611; [计算的威力，智慧的传奇](http://history.programmer.com.cn/1903/)
-#. &#x2611; [云计算技术背后的那些天才程序员：FFmpeg的作者法布里斯·贝拉 - 博客 - 伯乐在线](http://blog.jobbole.com/69582/)
-#. &#x2610; [图灵社区 : 阅读 : 连城：大数据场景下的“搔到痒处”和“戳到痛处”（图灵访谈）](http://www.ituring.com.cn/article/179495)
-#. &#x2611; [色情片看得越多的人越自恋？ - Article - JIJITANG](http://www.jijitang.com/article/540faac920296a4535b9370c)
-#. &#x2610; [你写论文时发现了哪些神网站？ - 曲晓峰的回答 - 知乎](http://www.zhihu.com/question/35931336/answer/68972601)
-:   ?
-    :   ?
-        http://Overleaf.com (http://ShareLaTeX.com) + http://Lucidchart.com （http://Gliffy.com） + http://Mendeley.com
+[计算的威力，智慧的传奇](http://history.programmer.com.cn/1903/)
 
-#. &#x2610; [Real World Haskell](http://book.realworldhaskell.org/read/index.html)
+[云计算技术背后的那些天才程序员：FFmpeg的作者法布里斯·贝拉 - 博客 - 伯乐在线](http://blog.jobbole.com/69582/)
 
-#. &#x2610; [Download · coolwanglu/pdf2htmlEX Wiki](https://github.com/coolwanglu/pdf2htmlEX/wiki/Download)
-:   ?
-    :   Run from Docker container is the easiest way to convert pdf file to html, which
+[图灵社区 : 阅读 : 连城：大数据场景下的“搔到痒处”和“戳到痛处”（图灵访谈）](http://www.ituring.com.cn/article/179495)
 
-        you don't need knowledge on how to compile and install `pdf2htmlEX`{.bash}.
+[色情片看得越多的人越自恋？ - Article - JIJITANG](http://www.jijitang.com/article/540faac920296a4535b9370c)
 
-        ```bash
-        docker run -ti --rm \
-            -v ~/pdf:/pdf bwits/pdf2htmlex pdf2htmlEX \
-            --zoom 1.3 test.pdf
+[你写论文时发现了哪些神网站？ - 曲晓峰的回答 - 知乎](http://www.zhihu.com/question/35931336/answer/68972601)
+
+:   <http://Overleaf.com> (<http://ShareLaTeX.com>) + <http://Lucidchart.com>
+    (<http://Gliffy.com>) + <http://Mendeley.com>
+
+[Real World Haskell](http://book.realworldhaskell.org/read/index.html)
+
+[Download · coolwanglu/pdf2htmlEX Wiki](https://github.com/coolwanglu/pdf2htmlEX/wiki/Download)
+
+:   Run from Docker container is the easiest way to convert pdf file to html, which
+
+    you don't need knowledge on how to compile and install `pdf2htmlEX`{.bash}.
+
+    ```bash
+    docker run -ti --rm \
+        -v ~/pdf:/pdf bwits/pdf2htmlex pdf2htmlEX \
+        --zoom 1.3 test.pdf
+    ```
+
+[NW.js & Electron Compared - TangibleJS](http://tangiblejs.com/posts/nw-js-electron-compared)
+
+[What are all the Jeff Dean facts? - Quora](https://www.quora.com/What-are-all-the-Jeff-Dean-facts)
+
+:   段子：
+
+    #. 当 Richard Stallman 听说 Jeff Dean 的自传专属 Kindle 平台，他就去买
+        了 Kindle。
+    #. Jeff 来面试谷歌时，被问到等式 P=NP 成立的条件，他回答，P=0 或者 N=1
+        时成立。然后在面试官哈哈大笑的时候，他看了一眼谷歌公有证书，就直接
+        在白板上写出了相应的私钥。
+    #. 在 2000 年末的时候，Jeff Dean 写代码的速度突然增长了 40 倍，原因是他
+        把自己的键盘升级到了 USB 2.0。
+    #. When Jeff gives a seminar at Stanford, it's so crowded Don Knuth has
+        to sit on the floor. (TRUE)
+
+    refs and see also
+
+      - [趣文：谷歌大牛 Jeff Dean 的那些“惊人真相” - 博客 - 伯乐在线](http://blog.jobbole.com/51607/)
+      - [Jeff Dean_百度百科](http://baike.baidu.com/link?url=ZWotR3Ro10Wai8ASDOL0aSITl9dnaI4bFNeLo_aXFUaqVdqgztiRb5mnuIDaYj9E0eCuJ5fVIrGxNhQkH35IoK)
+
+[高级语言写代码时就能够想到对应的汇编代码是怎样一种体验？ - Milo Yip 的回答 - 知乎](http://www.zhihu.com/question/38330356/answer/75939138)
+
+:   最不能忍的是，编译器（主要是较老的版本）不能生成我想要的指令，多了一些
+    无意义的垃圾。之前做 SIMD 库的时候用 intrinsics（固有的；本质的）常会出
+    现，要用各种 hacks 去调教编译器。我曾说过，脚本语言如 JavaScript 并不适
+    合学习计算机科学，因为中间有太多黑盒，不能直觉地知道代码到底会怎样执行。
+
+    > 啥叫差距。。。有人拿着编译器实现不了需求，有人却担心编译器干不好活
+
+[Regular expression - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Regular_expression)
+
+[MFC、WTL、WPF、wxWidgets、Qt、GTK 各有什么特点？ - 姚冬的回答 - 知乎](http://www.zhihu.com/question/23480014/answer/24809080)
+
+:   Qt，虽然它也是上世纪 90 年代出现的，但是它在 21 世纪有了长足的进步。应
+    该说它的起点就比较高，一开始就定位跨平台，而且不满足于简单封装系统 API，
+    而是要自己创造出一套完整的 API 和框架，**甚至要代替系统 API**，所以不仅
+    仅是做 UI，而是涉及到了 APP 开发所用到的所有东西，包括网络，数据库，多媒
+    体，脚本引擎等。`signal/slot` 是 Qt 发明的，这是事件通知模型里 C++ 语言
+    的最佳实现了，甚至我都觉得这该写进 C++ 标准，估计 C++ 委员会的老顽固们
+    是从不写 GUI 的。早期的 QT 也是没有DirectUI 的概念的，每一个 QWidget 都
+    对应一个原生窗口，从 Qt4.4 开始，只有顶层 QWidget 才是原生窗口，而 Child
+    Widget 是 Alien Widget，只是个抽象的图层不对应原生窗口，这就实现了
+    DirectUI 的概念，很多图形效果也就变得可能了，比如窗口层叠透明效果。在
+    4.8 后实现了 QPA(Qt Platform Abstraction)，这就使移植 Qt 变得很容易，目
+    前 **Qt 是支持平台最多的框架没有之一**。由于早期授权的问题，Qt 对于开源
+    社区不是很友好，导致推广不太顺利，直到它改成了 LGPL 方式，如果 Qt 能早点
+    想开了，恐怕就没有 wxWidgets 的生存空间了。Qt 的缺点也是有的，就是太大，
+    不过可以自己剪裁，我可以把 QT 库剪裁到发行包压缩后 2.5 MB。
+
+[怀旧梦想家的程序世界 - Living Computer Museum](http://www.douban.com/note/429783660/)
+
+:   这些书对我“影响最大”，但未必因为它本身有多好，更多的是一种机缘巧合：
+    它碰巧出现在那个时候，带我走进一个**全新的世界**。
+
+    我是后悔，但不是因为没去毕业礼，而是因为那个时候确实没能给自己一个交代：
+    四年的学习到最后竟没有那种一直期待的 - 沿着曲线一直攀越山顶的感觉。
+    **什么嘛，就这么毕业了。**
+
+    恐怕是人类的天性吧，因手里的工具而进化，也被手里的工具所限制。我相信这
+    就是美国人热衷团队合作，也热衷跨学科团队的原因。立场的不同可能导致分歧
+    吵架，也可能导致下一个 big bang。以前我总幻想做一个独立的 freelancer，
+    但现在不这么想了。经历了和不同背景的人合作去完成一些完全超越自身能力和
+    眼界的事情以后，我想这几万刀也算没白花。
+
+    > "Oh god, it's starting to rain."
+    >
+    > "That's okay. I don't mind getting wet. Paris is the most beautiful in the rain."
+    >
+    > "Oh what a thing to say. I couldn't agree more."
+
+    旧的问题还会有新的角度，**旧的知识还会有更深层的理解**，不能被自己的自大冲昏了脑袋。
+
+    refs and see also
+
+      - [十本书](http://www.douban.com/note/417394409/)
+      - [写在毕业 —— At a loose end](http://www.douban.com/note/410336666/)
+      - [. (午夜巴黎 影评)](http://movie.douban.com/review/5744055/)
+      - [dive into something](http://www.douban.com/note/307265481/)
+
+[LaTeX/Macros - Wikibooks, open books for an open world](https://en.wikibooks.org/wiki/LaTeX/Macros)
+
+[Code Simplicity » The Singular Secret of the Rockstar Programmer](http://www.codesimplicity.com/post/the-singular-secret-of-the-rockstar-programmer/)
+
+:   There is only one, singular fact:
+
+    > **The better you understand what you are doing, the better you will do it.**
+
+    **Rockstar programmers** understand what they are doing far, far better
+    than average or mediocre programmers.
+
+    I won’t lie to you–it sometimes is a long path. But it is worthwhile.
+    And at the end of it, you may find yourself suddenly the amazing senior
+    engineer who everyone comes to for advice.
+
+[Wikipedia:Stub - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Wikipedia:Stub)
+
+:   A stub is an article deemed too short to provide encyclopedic coverage of a
+    subject. The objective of this page is to provide a general guide for
+    dealing with stubs.
+
+    A stub is an article that, although providing some useful information, is
+    too short to provide encyclopedic coverage of a subject, and that is
+    capable of expansion. Non-article pages, such as disambiguation pages,
+    lists, categories, templates, talk pages, and redirects, are not regarded
+    as stubs.
+
+[pandoc中文pdf转换攻略 - 一个架构士的思考与沉淀之地](http://afoo.me/posts/2013-07-10-how-to-transform-chinese-pdf-with-pandoc.html)
+
+:   ```makefile
+    SOURCES := $(wildcard *.md)
+    # path substitute
+    OBJECTS := $(patsubst %.md, %.html, $(wildcard *.md))
+    OBJECTS_PDF := $(patsubst %.md, %.pdf, $(wildcard *.md))
+    ```
+
+    `find ./posts -name '*.md' -exec pandoc {} -s -S --toc -o {}.html \;`{.bash}
+
+    In Vim: `let $EDITOR="notepad++"`, `:make m`.
+
+    ```bash
+    pandoc pandoc.markdown -t html5 -o index.html \
+            --toc --smart --template=pm-template
+    pandoc pandoc.markdown -o pandoc-zhtw.pdf \
+            --toc --smart --template=pm-template \
+            --latex-engine=xelatex -V mainfont='LiHei Pro'
+
+    # add style to table
+    sed -i '' \
+        's/<table>/<table class="table table-bordered table-condensed">/' \
+        index.html
+    ```
+
+    CMD: `date /t`{.bash}
+
+    `fc-list`{.bash}
+
+    ```bash
+    pandoc dist/trpl-2015-05-15.md \
+        --smart --normalize --standalone --self-contained \
+        --highlight-style=tango --chapters --table-of-contents \
+        --variable papersize='a4paper' --variable monofont='Source Sans Pro' \
+        --template=lib/template.tex --latex-engine=latex \
+        --from=${MARKDOWNFORMAT} \
+        --to=latex --output=dist/trpl-2015-05-15-a4.pdf
+    ```
+
+    `${MARKDOWNFORMAT}`{.bash}
+
+    :   ```plain
+        markdown
+        grid_tables
+        pipe_tables
+        raw_html
+        implicit_figures
+        footnotes
+        intraword_underscores
+        auto_identifiers-inline_code_attributes
         ```
 
-#. &#x2610; [NW.js & Electron Compared - TangibleJS](http://tangiblejs.com/posts/nw-js-electron-compared)
-#. &#x2611; [What are all the Jeff Dean facts? - Quora](https://www.quora.com/What-are-all-the-Jeff-Dean-facts)
-:   ?
-    :   #. 当 Richard Stallman 听说 Jeff Dean 的自传专属 Kindle 平台，他就去买
-            了 Kindle。
-        #. Jeff 来面试谷歌时，被问到等式 P=NP 成立的条件，他回答，P=0 或者 N=1
-            时成立。然后在面试官哈哈大笑的时候，他看了一眼谷歌公有证书，就直接
-            在白板上写出了相应的私钥。
-        #. 在 2000 年末的时候，Jeff Dean 写代码的速度突然增长了 40 倍，原因是他
-            把自己的键盘升级到了 USB 2.0。
-        #. When Jeff gives a seminar at Stanford, it's so crowded Don Knuth has
-            to sit on the floor. (TRUE)
+    ```bash
+    #!/bin/bash
 
-        Refs
+    SYEAR=2005
+    EYEAR=`date "+%Y"`
 
-        #. &#x2611; [趣文：谷歌大牛 Jeff Dean 的那些“惊人真相” - 博客 - 伯乐在线](http://blog.jobbole.com/51607/)
-        #. &#x2611; [Jeff Dean_百度百科](http://baike.baidu.com/link?url=ZWotR3Ro10Wai8ASDOL0aSITl9dnaI4bFNeLo_aXFUaqVdqgztiRb5mnuIDaYj9E0eCuJ5fVIrGxNhQkH35IoK)
+    POSTPATH=~/Projects/octopress/source/_posts/
 
-#. &#x2610; [高级语言写代码时就能够想到对应的汇编代码是怎样一种体验？ - Milo Yip 的回答 - 知乎](http://www.zhihu.com/question/38330356/answer/75939138)
-:   ?
-    :   最不能忍的是，编译器（主要是较老的版本）不能生成我想要的指令，多了一些
-        无意义的垃圾。之前做 SIMD 库的时候用 intrinsics（固有的；本质的）常会出
-        现，要用各种 hacks 去调教编译器。我曾说过，脚本语言如 JavaScript 并不适
-        合学习计算机科学，因为中间有太多黑盒，不能直觉地知道代码到底会怎样执行。
+    echo
+    echo "YEAR      File #    Word Count"
+    echo "=============================="
+    for (( i=$SYEAR; i<=$EYEAR; i=i+1 ))
+    do
+        NUMFILES=`ls -l $POSTPATH$i* 2> /dev/null | wc -l`
+        NUMWORDS="       0"
+        test $NUMFILES != "0" && NUMWORDS=`wc -m $POSTPATH$i-* | tail -n 1 | sed 's/ total//'`
+        echo "$i    $NUMFILES      $NUMWORDS"
+    done
+    echo "=============================="
+    NUMFILES=`ls -1 $POSTPATH* | wc -l`
+    NUMWORDS=`wc -m $POSTPATH* | tail -n 1 | sed 's/ total//'`
+    echo "Total   $NUMFILES      $NUMWORDS"
+    echo
+    ```
 
-        > 啥叫差距。。。有人拿着编译器实现不了需求，有人却担心编译器干不好活
+    ```bash
+    #!/bin/bash
 
-#. &#x2610; [Regular expression - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Regular_expression)
-:   ?
-    :   &nbsp;
+    for var in "$@"
+    do
+        perl -pi -e 's/\r\n/\n/g' $var
+    done
+    ```
 
-#. &#x2611; [MFC、WTL、WPF、wxWidgets、Qt、GTK 各有什么特点？ - 姚冬的回答 - 知乎](http://www.zhihu.com/question/23480014/answer/24809080)
-:   ?
-    :   Qt，虽然它也是上世纪 90 年代出现的，但是它在 21 世纪有了长足的进步。应
-        该说它的起点就比较高，一开始就定位跨平台，而且不满足于简单封装系统 API，
-        而是要自己创造出一套完整的 API 和框架，**甚至要代替系统 API**，所以不仅
-        仅是做 UI，而是涉及到了 APP 开发所用到的所有东西，包括网络，数据库，多媒
-        体，脚本引擎等。`signal/slot` 是 Qt 发明的，这是事件通知模型里 C++ 语言
-        的最佳实现了，甚至我都觉得这该写进 C++ 标准，估计 C++ 委员会的老顽固们
-        是从不写 GUI 的。早期的 QT 也是没有DirectUI 的概念的，每一个 QWidget 都
-        对应一个原生窗口，从 Qt4.4 开始，只有顶层 QWidget 才是原生窗口，而 Child
-        Widget 是 Alien Widget，只是个抽象的图层不对应原生窗口，这就实现了
-        DirectUI 的概念，很多图形效果也就变得可能了，比如窗口层叠透明效果。在
-        4.8 后实现了 QPA(Qt Platform Abstraction)，这就使移植 Qt 变得很容易，目
-        前 **Qt 是支持平台最多的框架没有之一**。由于早期授权的问题，Qt 对于开源
-        社区不是很友好，导致推广不太顺利，直到它改成了 LGPL 方式，如果 Qt 能早点
-        想开了，恐怕就没有 wxWidgets 的生存空间了。Qt 的缺点也是有的，就是太大，
-        不过可以自己剪裁，我可以把 QT 库剪裁到发行包压缩后 2.5 MB。
+    refs and see also
 
-#. &#x2611; [怀旧梦想家的程序世界 - Living Computer Museum](http://www.douban.com/note/429783660/)
-:   ?
-    :
-        这些书对我“影响最大”，但未必因为它本身有多好，更多的是一种机缘巧合：
-        它碰巧出现在那个时候，带我走进一个**全新的世界**。
+      - [博客生成脚本](http://www.synbe.com/index/posts/html/help-code/sh.md.html)
+      - [pages/convert.sh at gh-pages · tzengyuxio/pages](https://github.com/tzengyuxio/pages/blob/gh-pages/pandoc/convert.sh)
 
-        我是后悔，但不是因为没去毕业礼，而是因为那个时候确实没能给自己一个交代：
-        四年的学习到最后竟没有那种一直期待的 - 沿着曲线一直攀越山顶的感觉。
-        **什么嘛，就这么毕业了。**
+[一个架构士的思考与沉淀之地](http://afoo.me/favorite.html)
 
-        恐怕是人类的天性吧，因手里的工具而进化，也被手里的工具所限制。我相信这
-        就是美国人热衷团队合作，也热衷跨学科团队的原因。立场的不同可能导致分歧
-        吵架，也可能导致下一个 big bang。以前我总幻想做一个独立的 freelancer，
-        但现在不这么想了。经历了和不同背景的人合作去完成一些完全超越自身能力和
-        眼界的事情以后，我想这几万刀也算没白花。
+:   个人感觉，真正的黑客可能用 Mac，但一定不会用 Mac Pro。通常都是 11' 的 Macbook Air。
 
-        > "Oh god, it's starting to rain."
-        >
-        > "That's okay. I don't mind getting wet. Paris is the most beautiful in the rain."
-        >
-        > "Oh what a thing to say. I couldn't agree more."
+    #. 对于我现在的工作来说，11 寸的 air 可以很好的满足需求， 轻便性是我现在
+        追求的主要特性， 尤其是现在很多是文案性的工作。
+    #. Windows 下有 visio，Mac 下其实有 OmniGraffle, 不过， 后者实在 tnd
+        太贵了，某一段时间又特别装逼要用正版，就只好找其它的 alternatives， 辗
+        转反侧良久， 最终定下来使用这款 yEd。
+    #. plantuml, 其它图都使用 yed 搞定了， 只有 sequence 图有点儿不太好画， 所
+        以， 选来选去找到这个小东东，bravo~
 
-        旧的问题还会有新的角度，**旧的知识还会有更深层的理解**，不能被自己的自大冲昏了脑袋。
+[CodeMirror](http://codemirror.net/)
 
-        Refs
+[CSS3动画详解 | BeiYuu.com](http://beiyuu.com/css3-animation/)
 
-        #. &#x2611; [十本书](http://www.douban.com/note/417394409/)
-        #. &#x2611; [写在毕业 —— At a loose end](http://www.douban.com/note/410336666/)
-        #. &#x2611; [. (午夜巴黎 影评)](http://movie.douban.com/review/5744055/)
-        #. &#x2611; [dive into something](http://www.douban.com/note/307265481/)
+[又见C++诡异问题 | Vimer的程序世界](http://www.vimer.cn/2011/09/%e5%8f%88%e8%a7%81c%e8%af%a1%e5%bc%82%e9%97%ae%e9%a2%98.html)
 
-#. &#x2610; [LaTeX/Macros - Wikibooks, open books for an open world](https://en.wikibooks.org/wiki/LaTeX/Macros)
-#. &#x2611; [Code Simplicity » The Singular Secret of the Rockstar Programmer](http://www.codesimplicity.com/post/the-singular-secret-of-the-rockstar-programmer/)
-:   fair not bad.
-    :   There is only one, singular fact:
+:   `Class a()`{.cpp} &ne; `Class a`{.cpp}
 
-        > **The better you understand what you are doing, the better you will do it.**
+[[译] Vim 的蔓延 - 依云's Blog](http://lilydjwg.is-programmer.com/2015/11/16/vim-creep.188665.html)
 
-        **Rockstar programmers** understand what they are doing far, far better
-        than average or mediocre programmers.
+:   你微笑了一下，准备说出那个改变了你的一生的词。那个词，如果你的同事也选
+    择追随的话，**他会掉进同样的兔子洞**，进入一个充满无限可能的无限组合的
+    世界，那些组合产生出他之前只能在最疯狂的梦中见到的极致高效。他让你记起
+    多年以前那个昏暗的计算机实验室里的自己。带着些许兴奋，你轻轻地说出那个
+    词。
 
-        I won’t lie to you–it sometimes is a long path. But it is worthwhile.
-        And at the end of it, you may find yourself suddenly the amazing senior
-        engineer who everyone comes to for advice.
+    <div class="tzx-drawer" shy>
+    良心编辑器，编辑器之神。
 
-#. &#x2610; [Wikipedia:Stub - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Wikipedia:Stub)
-#. &#x2611; [pandoc中文pdf转换攻略 - 一个架构士的思考与沉淀之地](http://afoo.me/posts/2013-07-10-how-to-transform-chinese-pdf-with-pandoc.html)
-:   good.
-    :   ```makefile
-        SOURCES := $(wildcard *.md)
-        # path substitute
-        OBJECTS := $(patsubst %.md, %.html, $(wildcard *.md))
-        OBJECTS_PDF := $(patsubst %.md, %.pdf, $(wildcard *.md))
-        ```
-
-        `find ./posts -name '*.md' -exec pandoc {} -s -S --toc -o {}.html \;`{.bash}
-
-        In Vim: `let $EDITOR="notepad++"`, `:make m`.
-
-        ```bash
-        pandoc pandoc.markdown -t html5 -o index.html \
-                --toc --smart --template=pm-template
-        pandoc pandoc.markdown -o pandoc-zhtw.pdf \
-                --toc --smart --template=pm-template \
-                --latex-engine=xelatex -V mainfont='LiHei Pro'
-
-        # add style to table
-        sed -i '' \
-            's/<table>/<table class="table table-bordered table-condensed">/' \
-            index.html
-        ```
-
-        CMD: `date /t`{.bash}
-
-        `fc-list`{.bash}
-
-        ```bash
-        pandoc dist/trpl-2015-05-15.md \
-            --smart --normalize --standalone --self-contained \
-            --highlight-style=tango --chapters --table-of-contents \
-            --variable papersize='a4paper' --variable monofont='Source Sans Pro' \
-            --template=lib/template.tex --latex-engine=latex \
-            --from=${MARKDOWNFORMAT} \
-            --to=latex --output=dist/trpl-2015-05-15-a4.pdf
-        ```
-
-        `${MARKDOWNFORMAT}`{.bash}
-
-        :   ```plain
-            markdown
-            grid_tables
-            pipe_tables
-            raw_html
-            implicit_figures
-            footnotes
-            intraword_underscores
-            auto_identifiers-inline_code_attributes
-            ```
-
-        ```bash
-        #!/bin/bash
-
-        SYEAR=2005
-        EYEAR=`date "+%Y"`
-
-        POSTPATH=~/Projects/octopress/source/_posts/
-
-        echo
-        echo "YEAR      File #    Word Count"
-        echo "=============================="
-        for (( i=$SYEAR; i<=$EYEAR; i=i+1 ))
-        do
-            NUMFILES=`ls -l $POSTPATH$i* 2> /dev/null | wc -l`
-            NUMWORDS="       0"
-            test $NUMFILES != "0" && NUMWORDS=`wc -m $POSTPATH$i-* | tail -n 1 | sed 's/ total//'`
-            echo "$i    $NUMFILES      $NUMWORDS"
-        done
-        echo "=============================="
-        NUMFILES=`ls -1 $POSTPATH* | wc -l`
-        NUMWORDS=`wc -m $POSTPATH* | tail -n 1 | sed 's/ total//'`
-        echo "Total   $NUMFILES      $NUMWORDS"
-        echo
-        ```
-
-        ```bash
-        #!/bin/bash
-
-        for var in "$@"
-        do
-            perl -pi -e 's/\r\n/\n/g' $var
-        done
-        ```
-
-        Read more
-
-        #. &#x2610; [博客生成脚本](http://www.synbe.com/index/posts/html/help-code/sh.md.html)
-        #. &#x2610; [pages/convert.sh at gh-pages · tzengyuxio/pages](https://github.com/tzengyuxio/pages/blob/gh-pages/pandoc/convert.sh)
-
-#. &#x2611; [- 一个架构士的思考与沉淀之地](http://afoo.me/favorite.html)
-:   good.
-    :   个人感觉，真正的黑客可能用 Mac，但一定不会用 Mac Pro。通常都是 11' 的 Macbook Air。
-
-        #. 对于我现在的工作来说，11 寸的 air 可以很好的满足需求， 轻便性是我现在
-            追求的主要特性， 尤其是现在很多是文案性的工作。
-        #. Windows 下有 visio，Mac 下其实有 OmniGraffle, 不过， 后者实在 tnd
-            太贵了，某一段时间又特别装逼要用正版，就只好找其它的 alternatives， 辗
-            转反侧良久， 最终定下来使用这款 yEd。
-        #. plantuml, 其它图都使用 yed 搞定了， 只有 sequence 图有点儿不太好画， 所
-            以， 选来选去找到这个小东东，bravo~
-
-#. &#x2610; [CodeMirror](http://codemirror.net/)
-#. &#x2610; [CSS3动画详解 | BeiYuu.com](http://beiyuu.com/css3-animation/)
-#. &#x2611; [又见C++诡异问题 | Vimer的程序世界](http://www.vimer.cn/2011/09/%e5%8f%88%e8%a7%81c%e8%af%a1%e5%bc%82%e9%97%ae%e9%a2%98.html)
-:   terrible shit.
-    :   `Class a()`{.cpp} &ne; `Class a`{.cpp}
-
-#. &#x2611; [[译] Vim 的蔓延 - 依云's Blog](http://lilydjwg.is-programmer.com/2015/11/16/vim-creep.188665.html)
-:   良心编辑器，编辑器之神。
-    :   你微笑了一下，准备说出那个改变了你的一生的词。那个词，如果你的同事也选
-        择追随的话，**他会掉进同样的兔子洞**，进入一个充满无限可能的无限组合的
-        世界，那些组合产生出他之前只能在最疯狂的梦中见到的极致高效。他让你记起
-        多年以前那个昏暗的计算机实验室里的自己。带着些许兴奋，你轻轻地说出那个
-        词。
-
-        ```vimrc
+    :   ```vimrc
         " auto reload
         set autoread
 
@@ -19492,22 +20798,21 @@ chess), displaying its complexity despite relatively simple rules.
             :r          root (one extension removed)
             :e          extension only
         ```
+    </div>
 
-        Vim more
+    Vim more
 
-        #. &#x2611; [The ultimate Vim configuration - vimrc](http://amix.dk/vim/vimrc.html)
-        #. &#x2610; [dotvim/vimrc at master · lilydjwg/dotvim](https://github.com/lilydjwg/dotvim/blob/master/vimrc)
-        #. &#x2611; [Vim(gVim)对排序的妙用 | Vimer的程序世界](http://www.vimer.cn/2012/03/vimgvim%e5%af%b9%e6%8e%92%e5%ba%8f%e7%9a%84%e5%a6%99%e7%94%a8.html)
-        #. &#x2611; [让Vim(gvim)支持C++STL库的自动补全 | Vimer的程序世界](http://www.vimer.cn/2010/01/%e8%ae%a9vimgvim%e6%94%af%e6%8c%81%e8%a1%a5%e5%85%a8cstl%e5%ba%93.html)
-        #. &#x2611; [Vim Commands Cheat Sheet](http://bullium.com/support/vim.html)
+      - [The ultimate Vim configuration - vimrc](http://amix.dk/vim/vimrc.html)
+      - [dotvim/vimrc at master · lilydjwg/dotvim](https://github.com/lilydjwg/dotvim/blob/master/vimrc)
+      - [Vim(gVim)对排序的妙用 | Vimer的程序世界](http://www.vimer.cn/2012/03/vimgvim%e5%af%b9%e6%8e%92%e5%ba%8f%e7%9a%84%e5%a6%99%e7%94%a8.html)
+      - [让Vim(gvim)支持C++STL库的自动补全 | Vimer的程序世界](http://www.vimer.cn/2010/01/%e8%ae%a9vimgvim%e6%94%af%e6%8c%81%e8%a1%a5%e5%85%a8cstl%e5%ba%93.html)
+      - [Vim Commands Cheat Sheet](http://bullium.com/support/vim.html)
 
 [Differential (mechanical device) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Differential_(mechanical_device))
 
 :   A differential is a particular type of simple planetary gear train that
     has the property that the angular velocity of its carrier is the
     average of the angular velocities of its sun and annular gears.
-
-    ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Sprocket35b.jpg/170px-Sprocket35b.jpg)
 
     ![Hypoid gear pair that connects an automotive drive shaft to a differential.](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Sprocket35b.jpg/170px-Sprocket35b.jpg)
 
@@ -19520,7 +20825,7 @@ chess), displaying its complexity despite relatively simple rules.
       revolves without spinning about its own axis, and both wheels
       turn at the same rate.](https://upload.wikimedia.org/wikipedia/commons/6/61/Differential_free.png)
 
-    See also
+    refs and see also
 
       - [差速器是怎样工作的(Around the Corner (1937))](http://v.youku.com/v_show/id_XNDkwMTg0MDI0.html)
 
@@ -19530,12 +20835,12 @@ chess), displaying its complexity despite relatively simple rules.
 
 [visual studio 2010 - CMake configuring fails. "cl.exe is not able to compile a simple test program" - Stack Overflow](http://stackoverflow.com/questions/14590947/cmake-configuring-fails-cl-exe-is-not-able-to-compile-a-simple-test-program)
 
-:   **Downgrade .NET to 4.0**
+:   装了 Atom 编辑器，VS 就挂了，然后解决方案是：**Downgrade .NET to 4.0**……
 
-    See also
+    refs and see also
 
-    - [cmake错误：C编译器不能简单的编译一个测试程序 - 开源中国社区](http://www.oschina.net/question/1378817_128323)
-    - [dcmtk - CMake: "cl.exe not able to compile a simple test program" - Stack Overflow](http://stackoverflow.com/questions/22392976/cmake-cl-exe-not-able-to-compile-a-simple-test-program)
+      - [cmake错误：C编译器不能简单的编译一个测试程序 - 开源中国社区](http://www.oschina.net/question/1378817_128323)
+      - [dcmtk - CMake: "cl.exe not able to compile a simple test program" - Stack Overflow](http://stackoverflow.com/questions/22392976/cmake-cl-exe-not-able-to-compile-a-simple-test-program)
 
 [turing_machine/buildall.sh at master · gigix/turing_machine](https://github.com/gigix/turing_machine/blob/master/clojure/buildall.sh)
 
@@ -19624,11 +20929,15 @@ chess), displaying its complexity despite relatively simple rules.
 
     You can use git show:
 
-    `$ git show REVISION:path/to/file`{.bash}
+    ```bash
+    $ git show REVISION:path/to/file
+    ```
 
     For example, to show the 4th last commit of the file `src/main.c`, use:
 
-    `$ git show HEAD~4:src/main.c`{.bash}
+    ```bash
+    git show HEAD~4:src/main.c
+    ```
 
     Note that the path is from the root of the repository unless it starts
     with `./` or `../` to indicate a relative path. For more information, check
@@ -19636,64 +20945,84 @@ chess), displaying its complexity despite relatively simple rules.
 
     Doing this by date looks like this:
 
-    `$ git show HEAD@{2013-02-25}:./fileInCurrentDirectory.txt`{.bash}
+    ```bash
+    $ git show HEAD@{2013-02-25}:./fileInCurrentDirectory.txt
+    ```
 
     Note that `HEAD@{2013-02-25}` means "where HEAD was on 2013-02-25" in
     this repository (using the
     [`reflog`{.bash}](http://git-scm.com/docs/git-reflog)), not "the last
     commit before 2013-02-25 in this branch in history".
 
-    Refs
+    refs and see also
 
-    #. &#x2611; [Is there a quick git command to see an old version of a file? - Stack Overflow](http://stackoverflow.com/questions/338436/is-there-a-quick-git-command-to-see-an-old-version-of-a-file)
+      - [Is there a quick git command to see an old version of a file? - Stack Overflow](http://stackoverflow.com/questions/338436/is-there-a-quick-git-command-to-see-an-old-version-of-a-file)
 
 [为什么你应该（从现在开始就）写博客](http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/)
-    :   如果你选择经常总结自己的知识体系，并说出来给你的读者听，你就会发现你自
-        己创造了这样的机会。如果我们平时不反思，**我们觉得很多事情都是当然的**，
-        但结果如果要你一开口说给别人听，常常会发现事情就开始变得不那么明显了，
-        你说着说着，就开始莫名其妙地发现自己需要用到“反正”这个词了。
 
-        一些平时难以注意到的深层面的差异性就会逐渐浮现出来，你也就多了一次难得
-        的机会去**审视自己的思维中到底存放了哪些错误的信息**。
+:   如果你选择经常总结自己的知识体系，并说出来给你的读者听，你就会发现你自
+    己创造了这样的机会。如果我们平时不反思，**我们觉得很多事情都是当然的**，
+    但结果如果要你一开口说给别人听，常常会发现事情就开始变得不那么明显了，
+    你说着说着，就开始莫名其妙地发现自己需要用到“反正”这个词了。
 
-        学会持之以恒地做一件事情。很多人在生活中容易觉得迷失，不知道想要做什么，
-        是因为没有一件能够持续地做的事情，用俗话来说就是没有主心骨。用积极心理
-        学的话来说就是没有一件能够创造**流体验**的事情，而书写自己的思想则是一
-        件容易产生流体验的事情，在书写的时候，特别是理性地书写的时候，大脑逐渐
-        进入推理分析模块，一切不愉快的情绪，烦躁感都会逐渐消隐下去。不过前提是
-        你得开始，并且**坚持过一开始的困难期，以后的一切便成了习惯成自然**。
+    一些平时难以注意到的深层面的差异性就会逐渐浮现出来，你也就多了一次难得
+    的机会去**审视自己的思维中到底存放了哪些错误的信息**。
 
-        我想再重复一下的是，千万不要碎碎念，我能理解每个人都想偶尔发发牢骚的冲
-        动，但是现在已经有了一个很好的窗口：twitter，所以立即停止在你的博客上碎
-        碎念，**阅读博客的人希望得到信息而非噪音**。如果实在忍不住想碎碎念的话
-        不妨换一下位置，这么来告诉自己：如果你看到别人博客来上这么一段，你会有
-        兴趣看吗？
+    学会持之以恒地做一件事情。很多人在生活中容易觉得迷失，不知道想要做什么，
+    是因为没有一件能够持续地做的事情，用俗话来说就是没有主心骨。用积极心理
+    学的话来说就是没有一件能够创造**流体验**的事情，而书写自己的思想则是一
+    件容易产生流体验的事情，在书写的时候，特别是理性地书写的时候，大脑逐渐
+    进入推理分析模块，一切不愉快的情绪，烦躁感都会逐渐消隐下去。不过前提是
+    你得开始，并且**坚持过一开始的困难期，以后的一切便成了习惯成自然**。
+
+    我想再重复一下的是，千万不要碎碎念，我能理解每个人都想偶尔发发牢骚的冲
+    动，但是现在已经有了一个很好的窗口：twitter，所以立即停止在你的博客上碎
+    碎念，**阅读博客的人希望得到信息而非噪音**。如果实在忍不住想碎碎念的话
+    不妨换一下位置，这么来告诉自己：如果你看到别人博客来上这么一段，你会有
+    兴趣看吗？
 
 [mastering-emacs-in-one-year-guide/guide-zh.org at master · redguardtoo/mastering-emacs-in-one-year-guide](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org)
 
 [钗黛双收：若你也同Vim难割舍，却又看Emacs情切切 | Emacs中文网](http://emacser.com/vimvsemacs.htm)
 
-:   - 由于两位佳人的理念差别之大，加上各自阵营之间的鸿沟之深，使得先贤先哲基本
-      上都会在这两个阵营里面挑一个来站队。
-    - 选择 Vim 或 Emacs 已经不仅取决于我们在编辑文本时的好恶，而已经上升到干活
-      的人怎么挑工具，过日子的人怎么选老婆这种哲学高度的问题。
-    - 当装机圣手们的情商智商普遍被挑战了以后，大致是迅速分化为两派——啃骨头派和
-      换骨头派。啃派如我，继续捏着脚适应 Vim 的小鞋；换派不用说也能猜到，自然是
-      鞋也不要就转身踏入了 Emacs 阵营——在那边起码知道怎么打字。
-    - 玩电脑的都是懒人，懒人有个癖好叫“Don’t repeat yourself”，如果谁弄出一套比
-      较高效的键盘操作方式，能让我学一次以后就不用再学了，那就暂时去tnnd 的门派。
-    - 电影《社交网络 The Social Network》里面有这样一个镜头，在扎克伯格同学悲愤
-      不已，要把女生头像和畜生猪狗一起打分时，他来了句“有必要重启Emacs，修改代
-      码”。这个杜撰的场景告诉我们，IT 巨星再怎么胸怀壮志，始于足下的不过是手指
-      另一端连着的编辑器。当 geek 们叫嚣要在世界上留下一个痕迹（make a dent in
-      the universe）的时候，手里常常拎着一把折凳，折凳背面写着——Emacs。
-    - 博士期间，我主要用的工具是 Matlab 和 Visual Studio，这两个工具自带的编辑
-      器**与 Vim 相比都是小白，属于要严重影响心情和智商的那一种**。
-    - 可是作为 Vim 的死忠，对于手掌几乎不挪窝的向往，那是消失不掉的。
+:   由于两位佳人的理念差别之大，加上各自阵营之间的鸿沟之深，使得先贤先哲基本上
+    都会在这两个阵营里面挑一个来站队。
+
+    选择 Vim 或 Emacs 已经不仅取决于我们在编辑文本时的好恶，而已经上升到干活的
+    人怎么挑工具，过日子的人怎么选老婆这种哲学高度的问题。
+
+    当装机圣手们的情商智商普遍被挑战了以后，大致是迅速分化为两派——啃骨头派和换
+    骨头派。啃派如我，继续捏着脚适应 Vim 的小鞋；换派不用说也能猜到，自然是鞋也
+    不要就转身踏入了 Emacs 阵营——在那边起码知道怎么打字。
+
+    玩电脑的都是懒人，懒人有个癖好叫“Don’t repeat yourself”，如果谁弄出一套比较
+    高效的键盘操作方式，能让我学一次以后就不用再学了，那就暂时去tnnd 的门派。
+
+    电影《社交网络 The Social Network》里面有这样一个镜头，在扎克伯格同学悲愤不
+    已，要把女生头像和畜生猪狗一起打分时，他来了句“有必要重启Emacs，修改代码”。
+    这个杜撰的场景告诉我们，IT 巨星再怎么胸怀壮志，始于足下的不过是手指另一端连
+    着的编辑器。当 geek 们叫嚣要在世界上留下一个痕迹（make a dent in the
+    universe）的时候，手里常常拎着一把折凳，折凳背面写着——Emacs。
+
+    博士期间，我主要用的工具是 Matlab 和 Visual Studio，这两个工具自带的编辑器
+    **与 Vim 相比都是小白，属于要严重影响心情和智商的那一种**。
+
+    可是作为 Vim 的死忠，对于手掌几乎不挪窝的向往，那是消失不掉的。
 
 [早上好，我的公主！](http://www.douban.com/note/527349294/)
 
+:   这大概是生活态度和情趣把。
+
+    > 所以，早上好，我的公主！
+    >
+    > 新的一天又要开始啦！
+
 [Github is Your New Resume – code.dblock.org | tech blog](http://code.dblock.org/2011/07/14/github-is-your-new-resume.html)
+
+:   Github is your new resume. Here’s how to make the best of it.
+
+      - College and Personal Projects
+      - Make Github Your Biggest Asset
 
 [给我看你的博客 | 透明思考](http://gigix.thoughtworkers.org/2011/6/8/show-me-your-blog/)
 
@@ -19719,7 +21048,7 @@ chess), displaying its complexity despite relatively simple rules.
 
     正如邹欣老师所说，你的工作就是最好的面试。
 
-    书单 + GitHub，就相当于一个两年左右的面试。
+    **书单 + GitHub，就相当于一个两年左右的面试。**
 
     《编程之美》为什么常居畅销榜？因为它透露了雇主眼中的需求，明确、清晰的
     需求，可以实现，并且知道怎么去实现的需求。
@@ -19793,12 +21122,14 @@ chess), displaying its complexity despite relatively simple rules.
 
 [创业公司应该如何招人？ - 创业公司 - 知乎](http://www.zhihu.com/question/19551593)
 
-:   - 上 twitter，看 XXX 的 follower，一个一个看，看他们的 twitter，博客，
-      Google Reader 分享，想办法搞到邮件，联系，半夜电话骚扰。
-    - **上豆瓣，前端后端挑几本重量级的书，去找想看，看过，正在看这本书的人，一
-      个一个看，看他们的活动，博客，Google Reader 分享，想办法搞到邮件，联系，
-      半夜电话骚扰。**
-    - 找同事，问他们都看什么技术博客，想办法搞到邮件，联系，半夜电话骚扰。
+:   知乎创始人：
+
+      - 上 twitter，看 XXX 的 follower，一个一个看，看他们的 twitter，博客，
+        Google Reader 分享，想办法搞到邮件，联系，半夜电话骚扰。
+      - **上豆瓣，前端后端挑几本重量级的书，去找想看，看过，正在看这本书的人，
+        一个一个看，看他们的活动，博客，Google Reader 分享，想办法搞到邮件，联
+        系，半夜电话骚扰。**
+      - 找同事，问他们都看什么技术博客，想办法搞到邮件，联系，半夜电话骚扰。
 
     作为一个小公司，加入我们是有风险的，小公司倒闭的几率比大公司大多了，只
     不过大多不上报纸而已。
@@ -19808,130 +21139,133 @@ chess), displaying its complexity despite relatively simple rules.
 [解决VS2010自带的C/C++编译器CL找不到mspdb100.dll的问题 - dudu - 博客园](http://www.cnblogs.com/dudu/archive/2011/05/21/2053104.html)
 
 :   `C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE` &rarr; `%PATH%`
+
+    <div class="tzx-drawer" shy>
     `C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Tools\vsvars32.bat`:
 
-    <small><small>
-    ```plain
-    @echo Setting environment for using Microsoft Visual Studio 2010 x86 tools.
+    :   <small>
+        ```plain
+        @echo Setting environment for using Microsoft Visual Studio 2010 x86 tools.
 
-    @call :GetVSCommonToolsDir
-    @if "%VS100COMNTOOLS%"=="" goto error_no_VS100COMNTOOLSDIR
+        @call :GetVSCommonToolsDir
+        @if "%VS100COMNTOOLS%"=="" goto error_no_VS100COMNTOOLSDIR
 
-    @call "%VS100COMNTOOLS%VCVarsQueryRegistry.bat" 32bit No64bit
+        @call "%VS100COMNTOOLS%VCVarsQueryRegistry.bat" 32bit No64bit
 
-    @if "%VSINSTALLDIR%"=="" goto error_no_VSINSTALLDIR
-    @if "%FrameworkDir32%"=="" goto error_no_FrameworkDIR32
-    @if "%FrameworkVersion32%"=="" goto error_no_FrameworkVer32
-    @if "%Framework35Version%"=="" goto error_no_Framework35Version
+        @if "%VSINSTALLDIR%"=="" goto error_no_VSINSTALLDIR
+        @if "%FrameworkDir32%"=="" goto error_no_FrameworkDIR32
+        @if "%FrameworkVersion32%"=="" goto error_no_FrameworkVer32
+        @if "%Framework35Version%"=="" goto error_no_Framework35Version
 
-    @set FrameworkDir=%FrameworkDir32%
-    @set FrameworkVersion=%FrameworkVersion32%
+        @set FrameworkDir=%FrameworkDir32%
+        @set FrameworkVersion=%FrameworkVersion32%
 
-    @if not "%WindowsSdkDir%" == "" (
-        @set "PATH=%WindowsSdkDir%bin\NETFX 4.0 Tools;%WindowsSdkDir%bin;%PATH%"
-        @set "INCLUDE=%WindowsSdkDir%include;%INCLUDE%"
-        @set "LIB=%WindowsSdkDir%lib;%LIB%"
-    )
-
-    @rem
-    @rem Root of Visual Studio IDE installed files.
-    @rem
-    @set DevEnvDir=%VSINSTALLDIR%Common7\IDE\
-
-    @rem PATH
-    @rem ----
-    @if exist "%VSINSTALLDIR%Team Tools\Performance Tools" (
-        @set "PATH=%VSINSTALLDIR%Team Tools\Performance Tools;%PATH%"
-    )
-    @if exist "%ProgramFiles%\HTML Help Workshop" set PATH=%ProgramFiles%\HTML Help Workshop;%PATH%
-    @if exist "%ProgramFiles(x86)%\HTML Help Workshop" set PATH=%ProgramFiles(x86)%\HTML Help Workshop;%PATH%
-    @if exist "%VCINSTALLDIR%VCPackages" set PATH=%VCINSTALLDIR%VCPackages;%PATH%
-    @set PATH=%FrameworkDir%%Framework35Version%;%PATH%
-    @set PATH=%FrameworkDir%%FrameworkVersion%;%PATH%
-    @set PATH=%VSINSTALLDIR%Common7\Tools;%PATH%
-    @if exist "%VCINSTALLDIR%BIN" set PATH=%VCINSTALLDIR%BIN;%PATH%
-    @set PATH=%DevEnvDir%;%PATH%
-
-    @if exist "%VSINSTALLDIR%VSTSDB\Deploy" (
-        @set "PATH=%VSINSTALLDIR%VSTSDB\Deploy;%PATH%"
-    )
-
-    @if not "%FSHARPINSTALLDIR%" == "" (
-        @set "PATH=%FSHARPINSTALLDIR%;%PATH%"
-    )
-
-    @rem INCLUDE
-    @rem -------
-    @if exist "%VCINSTALLDIR%ATLMFC\INCLUDE" set INCLUDE=%VCINSTALLDIR%ATLMFC\INCLUDE;%INCLUDE%
-    @if exist "%VCINSTALLDIR%INCLUDE" set INCLUDE=%VCINSTALLDIR%INCLUDE;%INCLUDE%
-
-    @rem LIB
-    @rem ---
-    @if exist "%VCINSTALLDIR%ATLMFC\LIB" set LIB=%VCINSTALLDIR%ATLMFC\LIB;%LIB%
-    @if exist "%VCINSTALLDIR%LIB" set LIB=%VCINSTALLDIR%LIB;%LIB%
-
-    @rem LIBPATH
-    @rem -------
-    @if exist "%VCINSTALLDIR%ATLMFC\LIB" set LIBPATH=%VCINSTALLDIR%ATLMFC\LIB;%LIBPATH%
-    @if exist "%VCINSTALLDIR%LIB" set LIBPATH=%VCINSTALLDIR%LIB;%LIBPATH%
-    @set LIBPATH=%FrameworkDir%%Framework35Version%;%LIBPATH%
-    @set LIBPATH=%FrameworkDir%%FrameworkVersion%;%LIBPATH%
-
-    @goto end
-
-    @REM -----------------------------------------------------------------------
-    :GetVSCommonToolsDir
-    @set VS100COMNTOOLS=
-    @call :GetVSCommonToolsDirHelper32 HKLM > nul 2>&1
-    @if errorlevel 1 call :GetVSCommonToolsDirHelper32 HKCU > nul 2>&1
-    @if errorlevel 1 call :GetVSCommonToolsDirHelper64  HKLM > nul 2>&1
-    @if errorlevel 1 call :GetVSCommonToolsDirHelper64  HKCU > nul 2>&1
-    @exit /B 0
-
-    :GetVSCommonToolsDirHelper32
-    @for /F "tokens=1,2*" %%i in ('reg query "%1\SOFTWARE\Microsoft\VisualStudio\SxS\VS7" /v "10.0"') DO (
-        @if "%%i"=="10.0" (
-            @SET "VS100COMNTOOLS=%%k"
+        @if not "%WindowsSdkDir%" == "" (
+            @set "PATH=%WindowsSdkDir%bin\NETFX 4.0 Tools;%WindowsSdkDir%bin;%PATH%"
+            @set "INCLUDE=%WindowsSdkDir%include;%INCLUDE%"
+            @set "LIB=%WindowsSdkDir%lib;%LIB%"
         )
-    )
-    @if "%VS100COMNTOOLS%"=="" exit /B 1
-    @SET "VS100COMNTOOLS=%VS100COMNTOOLS%Common7\Tools\"
-    @exit /B 0
 
-    :GetVSCommonToolsDirHelper64
-    @for /F "tokens=1,2*" %%i in ('reg query "%1\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\SxS\VS7" /v "10.0"') DO (
-        @if "%%i"=="10.0" (
-            @SET "VS100COMNTOOLS=%%k"
+        @rem
+        @rem Root of Visual Studio IDE installed files.
+        @rem
+        @set DevEnvDir=%VSINSTALLDIR%Common7\IDE\
+
+        @rem PATH
+        @rem ----
+        @if exist "%VSINSTALLDIR%Team Tools\Performance Tools" (
+            @set "PATH=%VSINSTALLDIR%Team Tools\Performance Tools;%PATH%"
         )
-    )
-    @if "%VS100COMNTOOLS%"=="" exit /B 1
-    @SET "VS100COMNTOOLS=%VS100COMNTOOLS%Common7\Tools\"
-    @exit /B 0
+        @if exist "%ProgramFiles%\HTML Help Workshop" set PATH=%ProgramFiles%\HTML Help Workshop;%PATH%
+        @if exist "%ProgramFiles(x86)%\HTML Help Workshop" set PATH=%ProgramFiles(x86)%\HTML Help Workshop;%PATH%
+        @if exist "%VCINSTALLDIR%VCPackages" set PATH=%VCINSTALLDIR%VCPackages;%PATH%
+        @set PATH=%FrameworkDir%%Framework35Version%;%PATH%
+        @set PATH=%FrameworkDir%%FrameworkVersion%;%PATH%
+        @set PATH=%VSINSTALLDIR%Common7\Tools;%PATH%
+        @if exist "%VCINSTALLDIR%BIN" set PATH=%VCINSTALLDIR%BIN;%PATH%
+        @set PATH=%DevEnvDir%;%PATH%
 
-    @REM -----------------------------------------------------------------------
-    :error_no_VS100COMNTOOLSDIR
-    @echo ERROR: Cannot determine the location of the VS Common Tools folder.
-    @goto end
+        @if exist "%VSINSTALLDIR%VSTSDB\Deploy" (
+            @set "PATH=%VSINSTALLDIR%VSTSDB\Deploy;%PATH%"
+        )
 
-    :error_no_VSINSTALLDIR
-    @echo ERROR: Cannot determine the location of the VS installation.
-    @goto end
+        @if not "%FSHARPINSTALLDIR%" == "" (
+            @set "PATH=%FSHARPINSTALLDIR%;%PATH%"
+        )
 
-    :error_no_FrameworkDIR32
-    @echo ERROR: Cannot determine the location of the .NET Framework 32bit installation.
-    @goto end
+        @rem INCLUDE
+        @rem -------
+        @if exist "%VCINSTALLDIR%ATLMFC\INCLUDE" set INCLUDE=%VCINSTALLDIR%ATLMFC\INCLUDE;%INCLUDE%
+        @if exist "%VCINSTALLDIR%INCLUDE" set INCLUDE=%VCINSTALLDIR%INCLUDE;%INCLUDE%
 
-    :error_no_FrameworkVer32
-    @echo ERROR: Cannot determine the version of the .NET Framework 32bit installation.
-    @goto end
+        @rem LIB
+        @rem ---
+        @if exist "%VCINSTALLDIR%ATLMFC\LIB" set LIB=%VCINSTALLDIR%ATLMFC\LIB;%LIB%
+        @if exist "%VCINSTALLDIR%LIB" set LIB=%VCINSTALLDIR%LIB;%LIB%
 
-    :error_no_Framework35Version
-    @echo ERROR: Cannot determine the .NET Framework 3.5 version.
-    @goto end
+        @rem LIBPATH
+        @rem -------
+        @if exist "%VCINSTALLDIR%ATLMFC\LIB" set LIBPATH=%VCINSTALLDIR%ATLMFC\LIB;%LIBPATH%
+        @if exist "%VCINSTALLDIR%LIB" set LIBPATH=%VCINSTALLDIR%LIB;%LIBPATH%
+        @set LIBPATH=%FrameworkDir%%Framework35Version%;%LIBPATH%
+        @set LIBPATH=%FrameworkDir%%FrameworkVersion%;%LIBPATH%
 
-    :end
-    ```
-    </small></small>
+        @goto end
+
+        @REM -----------------------------------------------------------------------
+        :GetVSCommonToolsDir
+        @set VS100COMNTOOLS=
+        @call :GetVSCommonToolsDirHelper32 HKLM > nul 2>&1
+        @if errorlevel 1 call :GetVSCommonToolsDirHelper32 HKCU > nul 2>&1
+        @if errorlevel 1 call :GetVSCommonToolsDirHelper64  HKLM > nul 2>&1
+        @if errorlevel 1 call :GetVSCommonToolsDirHelper64  HKCU > nul 2>&1
+        @exit /B 0
+
+        :GetVSCommonToolsDirHelper32
+        @for /F "tokens=1,2*" %%i in ('reg query "%1\SOFTWARE\Microsoft\VisualStudio\SxS\VS7" /v "10.0"') DO (
+            @if "%%i"=="10.0" (
+                @SET "VS100COMNTOOLS=%%k"
+            )
+        )
+        @if "%VS100COMNTOOLS%"=="" exit /B 1
+        @SET "VS100COMNTOOLS=%VS100COMNTOOLS%Common7\Tools\"
+        @exit /B 0
+
+        :GetVSCommonToolsDirHelper64
+        @for /F "tokens=1,2*" %%i in ('reg query "%1\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\SxS\VS7" /v "10.0"') DO (
+            @if "%%i"=="10.0" (
+                @SET "VS100COMNTOOLS=%%k"
+            )
+        )
+        @if "%VS100COMNTOOLS%"=="" exit /B 1
+        @SET "VS100COMNTOOLS=%VS100COMNTOOLS%Common7\Tools\"
+        @exit /B 0
+
+        @REM -----------------------------------------------------------------------
+        :error_no_VS100COMNTOOLSDIR
+        @echo ERROR: Cannot determine the location of the VS Common Tools folder.
+        @goto end
+
+        :error_no_VSINSTALLDIR
+        @echo ERROR: Cannot determine the location of the VS installation.
+        @goto end
+
+        :error_no_FrameworkDIR32
+        @echo ERROR: Cannot determine the location of the .NET Framework 32bit installation.
+        @goto end
+
+        :error_no_FrameworkVer32
+        @echo ERROR: Cannot determine the version of the .NET Framework 32bit installation.
+        @goto end
+
+        :error_no_Framework35Version
+        @echo ERROR: Cannot determine the .NET Framework 3.5 version.
+        @goto end
+
+        :end
+        ```
+        </small>
+    </div>
 
 [热爱正当年，青葱已做汤。](http://www.douban.com/note/518991649/)
 
@@ -19964,9 +21298,23 @@ chess), displaying its complexity despite relatively simple rules.
     it great for USB Sticks or Dropbox - **you can carry your console,
     aliases and binaries (like wget, curl and git) with you anywhere!**
 
+    windows
+
 [就喜欢这种嘿嘿嘿的短片 - 简书](http://www.jianshu.com/p/15052aaaeaab)
 
 :   ![](http://gnat.qiniudn.com/pics/tesla.gif)
+
+    美国成人动画《瑞克和莫蒂》（Rick and Morty）？
+
+    日本的《搞笑漫画日和》？
+
+    一部叽里呱啦吐槽个不停的暗黑动画。
+
+    最近又有一部动画，对Sir大脑发起冲击。
+
+    《超级科学家》
+
+    Super Science Friends
 
 [SkyPixel](https://www.skypixel.com/videos/2015-m4v)
 
@@ -20031,15 +21379,21 @@ chess), displaying its complexity despite relatively simple rules.
     利略猜想答案是抛物线，这也和很多人最初的感觉是一致的，**可惜后来被惠更斯
     在 17 岁的时候证明是错的**。
 
-#. &#x2611; [Conway's Game of Life - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
-#. &#x2611; [Light Table](http://lighttable.com/)
+[Conway's Game of Life - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+
+[Light Table](http://lighttable.com/)
+
 :   Clojure 社区的编辑器，大概是除了 Emacs 你想玩 Clojure 的唯一选择吧。
-:   Every bit of Light Table's code is available to the community because
+
+    Every bit of Light Table's code is available to the community because
     **none of us are as smart as all of us**.
 
-#. &#x2611; [Cramer悖论：线性代数的萌芽 | Matrix67: The Aha Moments](http://www.matrix67.com/blog/archives/3803)
+[Cramer悖论：线性代数的萌芽 | Matrix67: The Aha Moments](http://www.matrix67.com/blog/archives/3803)
+
 :   发现从信息的角度理解线性代数更给我更多 intuition。
-:   9 个点不见得能唯一地确定出三次曲线的方程，因为不是每个点的位置都能给我们带来足够的信息。
+
+    9 个点不见得能唯一地确定出三次曲线的方程，因为不是每个点的位置都能给我们带
+    来足够的信息。
 
     此时大家或许能体会到， Euler 提出的这些遗留问题太具启发性了，当时的数学
     研究者们看到之后必然是浑身血液沸腾。包括 Cramer 在内的数学家们沿着
@@ -20047,46 +21401,511 @@ chess), displaying its complexity despite relatively simple rules.
     没错，这个 Cramer 正是后来提出线性代数一大基本定理——Cramer 法则——的那
     个人。
 
-#. &#x2611; [随记：我们需要怎样的数学教育？ | Matrix67: The Aha Moments](http://www.matrix67.com/blog/archives/4294)
-:   good.
-:   #. 总有一天，数学教育会拔高到第三层：返朴归真，数学真正牛 B 的还是它本
-        身。你会发现，那些伟大的数学思想，那些全新的数学理论，最初研究的动
-        机并不是要急于解释我们身边的某某诡异现象，而是它**本身的美妙**。
-    #. 其实，如果把“少 2 个”理解成“多 -2 个”，问题是一模一样的，之前的公式
-        同样适用。负数这一新思想立即把三种情况统一在了一起，它们的本质变得
-        一模一样了。（话说三角函数更是把以前需要讨论象限的问题给统一了，你
-        只要在第一象限考虑就行，反正其他象限直接适用于这样得出的结论。）
-    #. 对于我来说，最能吸引我学习一个数学课题的，莫过于**一系列非平凡的结论以
-        及它的精彩证明了**。
+[随记：我们需要怎样的数学教育？ | Matrix67: The Aha Moments](http://www.matrix67.com/blog/archives/4294)
+
+:   总有一天，数学教育会拔高到第三层：返朴归真，数学真正牛 B 的还是它本身。你会
+    发现，那些伟大的数学思想，那些全新的数学理论，最初研究的动机并不是要急于解
+    释我们身边的某某诡异现象，而是它**本身的美妙**。
+
+    其实，如果把“少 2 个”理解成“多 -2 个”，问题是一模一样的，之前的公式同样适用
+    。负数这一新思想立即把三种情况统一在了一起，它们的本质变得一模一样了。（话
+    说三角函数更是把以前需要讨论象限的问题给统一了，你只要在第一象限考虑就行，
+    反正其他象限直接适用于这样得出的结论。）
+
+    对于我来说，最能吸引我学习一个数学课题的，莫过于**一系列非平凡的结论以及它
+    的精彩证明了**。
 
 [10大英语套话 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2008/12/top_10_irritating_english_phrases.html)
 
-:   - Sure we missed our best player but at the end of the day, John, we just
-      didn't play well enough to win the game.（我们最好的选手不能上场，但是最
-      终来说，还是因为我们发挥得不好，所以无法赢得比赛。）
-    - I am looking for a fairly unique piece of technology.（我在寻找一种独特的
-      技术。）
-    - I personally don't like her.（我不喜欢她。）
-    - What's your favorite song right at this moment in time?（此刻你最喜欢的歌
-      是什么？）
-    - With all due respect, I think there are some facts you have not
-      considered.（恕我直言，我想你忽略了一些事实。）
-    - It is absolutely impossible.（绝对不可能。）
-    - For Publishing, It's a Nightmare Before Christmas.（对于出版业来说，圣诞
-      节前发生的事情就像一场噩梦。）
-    - This game shouldn't of got cancelled!（这场比赛本来不应该取消的。）
-    - 24/7 support is a critical part of our offer.（一周7天，每天24小时的售后
-      服务，是我们承诺的关键部分。）
-    - We're talking basic common sense here - it isn't rocket science.（我们在
-      这里说的是常识，又不是高深莫测的东西。）
+:   Sure we missed our best player but at the end of the day, John, we just
+    didn't play well enough to win the game.（我们最好的选手不能上场，但是最终
+    来说，还是因为我们发挥得不好，所以无法赢得比赛。）
+
+    I am looking for a fairly unique piece of technology.（我在寻找一种独特的技
+    术。）
+
+    I personally don't like her.（我不喜欢她。）
+
+    What's your favorite song right at this moment in time?（此刻你最喜欢的歌是
+    什么？）
+
+    With all due respect, I think there are some facts you have not considered.
+    （恕我直言，我想你忽略了一些事实。）
+
+    It is absolutely impossible.（绝对不可能。）
+
+    For Publishing, It's a Nightmare Before Christmas.（对于出版业来说，圣诞节
+    前发生的事情就像一场噩梦。）
+
+    This game shouldn't of got cancelled!（这场比赛本来不应该取消的。）
+
+    24/7 support is a critical part of our offer.（一周7天，每天24小时的售后服
+    务，是我们承诺的关键部分。）
+
+    We're talking basic common sense here - it isn't rocket science.（我们在这
+    里说的是常识，又不是高深莫测的东西。）
 
 [公共场所英文译写规范 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2011/01/guidelines_for_english_translations_in_public_places.html)
+
+:   <http://whudoc.qiniudn.com/2016/公共场所英文译写规范(公示稿).pdf>
+
+    公共场所英文译写规范, 2009-10-01 实施
+
+    第 1 部分：通则；
+
+    :   译写原则:
+
+          - 合法性原则
+          - 规范性原则
+          - 准确性原则
+          - 通俗性原则
+          - 文明性原则
+
+        规范性原则: 公共场所的英文译写应当符合英语规范和使用习惯以及国际惯例。
+
+        道观: Daoist Temple。
+
+        英语中有多个对应词语的中文，应对所指事物或概念进行分析，结合具体的语言环境
+        和文化背景，根据英语的使用习惯选择最能贴切表达该事物或概念的词语。如：“通道”在
+        表达“地面通道”时，译作 Passage，表达“地下通道”时，译作 Underpass。
+
+        行李安检通道 Luggage Check，“行李安检”的功
+        能必须译出，“通道”作为设施名称可不必译出。
+
+        医药箱 First Aid Kit。
+
+        求助按钮 Press for Help。
+
+        12 号门 Gate No. 12。
+
+        旅客通道，请勿滞留 Keep Walking 或 No
+        Stopping，“请勿滞留”必须译出，“旅客通道”可不必译出。
+
+        应明确信息所警示、提示的对象主体，如：旅游车辆禁止入内 No Admittance for Tourist
+        Vehicles，不宜简单译作 No Admittance。
+
+        请在安全线外等候 Please Wait Behind **the Yellow Line**
+
+        勿触摸 Thank You for Not Touching；“请勿吸烟”在非明确严禁吸烟的场
+        所可译为 Thank You for Not Smoking。
+
+        如果译文所指对象不明确，宜使用复数形式。如：
+        监督投诉 Complaints。
+
+        英语单词使用括号时括号外前后需空一格，但括号内不空格，如：中医科 Traditional
+        Chinese Medicine (TCM) Department。
+
+        制作标志时应使用没有衬线的英文黑体字。
+
+        ```tzx-bigquote
+        办公区域  Administrative Area
+        报告厅  Conference Hall
+        闭馆整修  Closed for Renovation
+        本柜暂停服务，请至其他台席办理  Temporarily Out of Service. Please Go to Another Counter.
+        本柜（台）只接受现金缴费 Cash Only at This Counter
+        别让您的烟头留下火患  Dispose of Cigarette Butts Properly
+        For Disabled (Only)
+        Toilet 或 Washroom 或 Restroom（之前不得加 Public）
+        ——Men 或 Gents' 或 Gentlemen
+        ——Women 或 Ladies' 或 Ladies
+        ——Pay Toilet
+        ——Vacant
+        ——Occupied
+        ——Flush After Use
+        ——Pedal Operated Tap (踏板放水)
+        ——No-Flush Toilet (非水冲座便器，无需冲水)
+        ——Auto Flush
+        ——Accessible Toilet（或 Washroom 或 Restroom）
+        撤离路线、疏散通道  Escape Route 或 Evacuation Route
+        宠犬便后请打扫干净  Please Clean Up After Your Dog
+        出租车计价器  Taxi Meter
+        出租车扬招点  Taxi Stand
+        出租汽车专用发票  Taxi Receipt
+        此路不通  Dead End 或 No Through Road
+        此路封闭  Road Closed
+        当日有效  Valid Only on Day of Issue
+        地面湿滑，小心滑倒  Caution: Wet Floor
+        地下室  Basement
+        地下停车场  Underground Parking
+        地下通道  Underpass
+        地下一层/二层/三层  B1/B2/B3
+        ```
+
+        page 8
+
+    第 2 部分：实体名称译法；
+
+    :   用汉语拼音拼写。如：长风（长风公园）Changfeng。有习惯译法的除外，如：美琪（大
+        戏院）Majestic。
+
+        上海市第一人民
+        医院 Shanghai First People’s Hospital，上海市第一中级人民法院 Shanghai No. 1
+        Intermediate People’s Court。
+
+        海事（上海市海事法院）Maritime。但实体已失去属性名所
+        指称的性质的，属性名视作专名，用汉语拼音拼写。如：远洋（上海远洋医院）Yuanyang。
+
+        上海市工人文化宫 Shanghai
+        Workers Cultural Palace；也可将属性名置于通名之后，用介词连接，如：上海市临床检
+        验中心 Shanghai Center for Clinical Laboratory。s
+
+        管理局 Administration，高等专科学校 College。
+
+        外滩 The Bund，国际饭店 Park Hotel。
+
+        汉语拼音中以 a, o, e 开头的音节连接在其他音节后面的时候，如果音节的界限
+        发生混淆，用隔音符号（’）隔开，该符号前后不空格，如：静安 Jing’an。
+
+        ```tzx-bigquote
+        1  上海博物馆  Shanghai Museum
+        2  中国银行  Bank of China
+        3  上海音乐厅  Shanghai Concert Hall
+        4  上海大剧院  Shanghai Grand Theatre
+        5  上海大学  Shanghai University
+
+        3  上海多伦美术馆  Shanghai Duolun Art Gallery
+        4  上海兰心大剧院  Shanghai Lyceum Theatre（Lyceum 为习惯译法）
+        5  上海江湾体育场  Shanghai Jiangwan Stadium
+
+        2  华东师范大学  East China Normal University
+        3  上海科技馆  Shanghai Science & Technology museum
+        4  上海中医药大学  Shanghai University of Traditional Chinese Medicine
+        5  上海期货交易所  Shanghai Futures Exchange
+
+        1  上海市第六人民医院  Shanghai Sixth People’s Hospital
+        2  上海市第一中级人民法院  Shanghai No.1 Intermediate People’s Court
+        3  上海市第三女子中学  Shanghai No. 3 Girls High School
+        4  上海第二工业大学  Shanghai Second Polytechnic University
+        5  上海市第一妇婴保健院  Shanghai First Hospital for Maternity and Infant Health
+
+        1  上海虹桥国际机场  Shanghai Hongqiao International Airport
+        2  上海张江高科技园区  Shanghai Zhangjiang High-Tech Park
+
+        4  上海虹桥迎宾馆  Shanghai Hongqiao State Guest Hotel
+        5  东平国家森林公园  Dongping National Forest Park
+
+        1  上海城市规划展示馆  Shanghai Urban Planning Exhibition Center
+        2  上海工商外国语学院  Shanghai Industry and commerce Foreign Language College
+        3  上海工艺美术职业学院  Shanghai Vocational College of Arts and Crafts
+        4  上海市文史研究馆  Shanghai Research Institute of Culture and History
+        5  上海工艺品进出口公司  Shanghai Arts & Crafts Import & Export Corp.
+
+        1  共青森林公园  Gongqing Forest Park
+        2  外滩观光隧道  The Bund Sightseeing Tunnel（The Bund 为习惯译法）
+        3  兰溪青年公园  Lanxi Youth Park
+        4  四海壶具博物馆  Sihai Teapots Museum
+        5  龙华烈士陵园  Longhua Revolutionary Martyrs’ Cemetery
+        ```
+
+    第 3 部分：交通；
+
+    :   飞机译作 Airplane；航空、航线译作 Airline。
+
+        火车译作 Train；铁路译作 Railway。
+        4.2.1.3 轮船译作 Ship。
+        4.2.1.4 公共汽车译作 Bus，长途汽车译作 Long-Distance Bus。
+        4.2.1.5 轨道交通（包括地铁和轻轨）译作 Metro；磁浮列车译作 Maglev 或 Maglev
+        Train。
+        4.2.1.6 出租车译作 Taxi。
+
+        公共汽车站译作 Stop，如：前方有公共汽车站 Bus Stop Ahead。轨道交通车
+        站译作 Station，如：列车前方到站 The Next Station。实指某一具体站点时，“站”一般
+        不需译出，如：徐家汇站（轨交 1 号线站名）到了 We are arriving at Xujiahui。
+
+        出租车扬招点译作 Taxi Stand。
+
+        国内出发（区）Domestic Departures。
+
+        危险品检查仪 Security Check
+
+        请勿将身体伸出扶梯外 Keep Body in Escalator。
+
+        小心列车与站台间隙 Mind the Gap，在
+        特定使用场合（如轨道交通站点中）可简译。
+
+        ```tzx-bigquote
+        1  上海虹桥国际机场  Shanghai Hongqiao International Airport
+        2  上海浦东国际机场  Shanghai Pudong International Airport
+        3  上海火车站；铁路上海站  Shanghai Railway Station
+        4  上海南站；铁路上海南站  Shanghai South Railway Station
+        5  上海火车站（公交）枢纽  Shanghai Railway Station Bus Terminal
+        6  上海南站（公交）枢纽  Shanghai South Railway Station Bus Terminal
+        7  莘庄地铁北广场（公交）枢纽  Xinzhuang Metro Station North Square Bus Terminal
+        8  莘庄地铁南广场（公交）枢纽  Xinzhuang Metro Station South Square Bus Terminal
+        9  上海旅游集散中心  Shanghai Tourist Bus Center
+        10 上海长途汽车客运总站  Shanghai Long-Distance Bus Terminal
+        11 上海长途客运南站  Shanghai South Long-Distance Bus Station
+        12 上海港国际客运中心国际客运码头  Shanghai Port International Cruise Terminal  现用
+        13 上海港吴淞客运中心  Shanghai Port Wusong Passenger Center
+        14 宝钢内河装卸站  Baosteel Loading Wharf
+        15 宝钢原料码头  Baosteel Raw Material Wharf
+        16 宝山集装箱码头  Baoshan Container Terminal
+
+        1.2m Height Limit
+
+        3  安全岛  Traffic Island
+        4  安全检查（安检）  Security Inspection
+        5  安全检查（通道）  Security Check
+        6  安全设备请勿擅动  Safety Equipment. Authorized Use Only.
+
+        班车乘车地点  Shuttle Bus Pick-Up Point 或 Commuter Bus Pick-Up Point
+
+        本机不设找零  No Change Provided at this Machine
+
+        餐饮  Food and Beverage 或 Restaurant
+        残疾车借用  Wheelchair Service
+
+        24 操作步骤  Instructions for Operation
+        25 插入公共交通卡  Insert Your Public Transportation Card
+        26 长途汽车站  Long-Distance Bus Station
+        27 长下坡慢行  Long Slope. Slow Down
+        ```
+
+        page 29
+
+    第 4 部分：旅游；
+
+    :   会址译作 Site；故居译作 Former Residence 或 Memorial Residence。
+        4.1.3.2 公园译作 Park；园、圃、苑译作 Garden。
+        4.1.3.3 动物园译作 Zoo；植物园译作 Botanical Garden。
+
+        陵园译作 Cemetery；烈士陵园译作 Revolutionary Martyrs’ Cemetery。
+        4.1.3.5 乐园、游乐园译作 Amusement Park。儿童乐园（设在旅游景区内）译作 Children
+        's Playground；主题公园译作 Theme Park。
+
+        水族馆译作 Aquarium，海洋馆、海洋公园等均译作 Ocean Park。
+        4.1.3.7 与宗教有关、每层顶部都有装饰的塔译作 Pagoda，如：松江方塔 Songjiang Square Pagoda。其他的塔
+        译作 Tower，如：东方明珠广播电视塔 Oriental Pearl Radio and TV Tower。
+        4.1.3.8 佛教的寺译作 Temple，如：静安寺 Jing’an Temple。道观译作 Daoist Temple，如：白云观 Baiyun Daoist
+        Temple。清真寺译作 Mosque。教堂译作 Church 或 Cathedral，如：上海国际礼拜堂 Shanghai Community Church；
+        董家渡天主堂 Dongjiadu Cathedral。
+        4.1.3.9 绿地译作 Green Land。
+
+        度假村（区）译作 Resort；旅游城译作 Tourist Town。
+
+        语音讲解 Audio Tour。
+
+        儿童须由成人陪同 Children Must Be Accompanied by Adult。
+
+        ```tzx-bigquote
+        3  孙中山故居  Dr. Sun Yat-sen Memorial Residence
+        4  宋庆龄故居  Mme. Soong Ching-ling Memorial Residence
+        5  毛泽东故居  Former Residence of Mao Zedong
+        6  周恩来故居  Former Residence of Zhou Enlai
+        7  陈云故居暨青浦革命历史纪念馆 Former Residence of Chen Yun and Qingpu Museum of Revolutionary History
+
+        8  世纪公园  Century Park
+        9  共青森林公园  Gongqing Forest Park
+        10  中山公园  Zhongshan Park
+        11  鲁迅公园  Luxun Park
+        12  复兴公园  Fuxing Park
+        13  淮海公园  Huaihai Park
+        14  长风公园  Changfeng Park
+        15  衡山公园  Hengshan Park
+        16  襄阳公园  Xiangyang Park
+        17  康健园  Kangjian Park
+        18  桂林公园  Guilin Park
+        19  工农公园  Gongnong Park
+        20  交通公园  Jiaotong Park
+        21  大宁灵石公园  Daning Lingshi Park
+        22  大华行知公园  Dahua Xingzhi Park
+        23  人民公园  People’s Park
+        24  广场公园  Square Park
+        25  友谊公园  Friendship Park
+        26  滨海公园  Seaside Park
+        27  滨江公园  Riverside Park
+        28  未来岛公园  Future Island Park
+        29  滨江森林公园  Riverside Woods Park
+        30  上海佘山国家森林公园  Shanghai Sheshan National Forest Park
+        31  东平国家森林公园  Dongping National Forest Park
+        32  华山儿童公园  Huashan Children’s Park
+        33  爱思儿童公园  Aisi Children’s Park
+
+        57  锦江乐园  Jinjiang Amusement Park
+        58  大世界游乐中心  Great World Amusement Center
+        59  上海影视乐园  Shanghai Film and Television Theme Park
+
+        63  朱家角古镇  Zhujiajiao Town
+        64  枫泾古镇  Fengjing Town
+        65  玉佛寺  Jade Buddha Temple
+        66  静安寺  Jing’an Temple
+        67  龙华寺  Longhua Temple
+
+        71  陆家嘴中心绿地  Lujiazui Central Green Land
+        72  不夜城绿地  Everbright City Green Land
+        40  购票后，恕不退票。  Tickets Not Refundable
+        41  古桥  Ancient Bridge
+        42  古塔  Ancient Pagoda
+        43  关上安全杠  Close Safety Bar
+        47  广播服务  Broadcasting Service
+        48  贵重物品请您自己妥善保管  Please Take Care of Your Valuables
+        49  过山车  Roller Coaster
+        ```
+
+    第 5 部分：文化体育；
+
+    :   文史馆译作 Research Institute of Culture and History。
+
+        展览馆、陈列馆、展览中心等具有展示、陈列功能的场馆可译作 Exhibition
+        Center 或 Exhibition Hall。
+        4.1.3.4 博览（会）译作 Exposition 或 Expo，如：世界博览会 World Exposition 或
+        World Expo，中国 2010 年上海世博会 Expo 2010 Shanghai China。
+        4.1.3.3 美术馆译作 Art Gallery 或 Art Museum。
+        4.1.3.4 图书馆译作 Library。
+
+        竞技体操 Artistic Gymnastics，艺术体操 Rhythmic Gymnastics。
+
+        ```tzx-bigquote
+        92  东方网点连锁管理有限公司  Shanghai Eastday Bar Chain Administration Co. Ltd.
+        93  上海东方网点  Eastday Bar
+        94  才智公众电脑屋  Caizhi Internet Café
+        95  福五公众电脑屋  Fuwu Internet Café
+        96  史地网吧  Shidi Internet Café
+        97  同福网吧  Tongfu Internet Café
+        98  网人网吧  Wangren Internet Café
+        99  威泰网吧  Weitai Internet Café
+
+        27  松江体育中心  Songjiang Sports Center
+        28  奉贤体育中心  Fengxian Sports Center
+        29  上海市东方绿舟体育训练基地  Shanghai Oriental Land Sports Training Center
+        30  上海游泳馆  Shanghai Swimming Center
+
+        1  办证处（借书证）  Reader Registration
+        2  保安室  Security Office
+        3  步行导览  Walking Tour Guide
+        ```
+
+    第 6 部分：教育；
+
+    :   本、专科学院一般译作 College。职业学院可译作 Vocational College。职
+        业技术学院可译作 Polytechnic College（理工科性质较强）或 Vocational & Technical
+        College（职业教育性质较强）。
+
+        大学译作 University。大学的二级学院一般译作 College。研究生院译作
+        Graduate School。
+
+        专科性较强的学院可译作 Institute。
+        4.1.3.1.4 艺术类学院及研究性教育机构可译作 Academy，如：上海戏剧学院 Shanghai
+        Theatre Academy
+
+        幼儿园译作 Kindergarten。
+
+        业余大学译作 Part-time University 或者 Part-time College。
+        4.1.3.6.2 电视大学译作 Television University。
+        4.1.3.6.3 职工大学译作 Workers College。
+        4.1.3.6.4 继续教育学院译作 College for Continuing Education。
+        4.1.3.6.5 网络教育学院译作 Online Education College。
+
+        青少年活动中心、基地等均译作 Youth Center。
+
+        党校译作 Party School 或 Party Institute。
+        4.1.3.8.2 社会主义学院译作 Institute of Socialism。
+        4.1.3.8.3 行政学院一般译作 Administration Institute。
+        4.1.3.8.4 干部学院一般译作 Cadre Institute。
+
+        终身教育进修学院译作 Lifelong Education Institute。
+        4.1.3.9.2 培训中心译作 Training Center。
+        4.1.3.9.3 社区学院译作 Community College。
+
+        神学院译作 Seminary。
+        4.1.3.11.2 佛学院译作 Buddhist Academy。
+
+        属性名需译成两个及以上英文单词时，一般置于通名之后，用介词 of 或 for
+        连接，如：华东政法大学 East China University of Political Science and Law。属性
+        名只有一个英文单词时，一般置于通名之前，如：上海海洋大学 Shanghai Ocean University。
+
+        附属译作 Affiliated to，如：华东师范大学附属幼儿园 The Kindergarten
+        Affiliated to East China Normal University。
+
+        南阳实验幼儿园 Nanyang Experimental
+        Kindergarten。
+        4.1.3.13.3 模范译作 Model，如：上海市南洋模范中学（高中）Shanghai Nanyang Model
+        High School。
+
+        ```tzx-bigquote
+        本校教职员工（停车处）  Reserved (Parking) for Faculty
+        不准携带食物到图书馆内  No Food Allowed in the Library
+        12 打印室、复印室、文印间  Printing and Copying Services
+        16 电工室  Electrician Room
+        17 电气室  Electrical Room
+        18 电子阅览室  Digital Reading Room
+        19 读者服务处  Reader Services
+        20 多媒体教室  Multimedia Classroom
+        21 多媒体视听室  Multimedia Room
+        22 饭票  Meal Voucher
+        29 继续教育学院  Continuing Education College
+        30 健身中心  Fitness Center
+        31 教工窗口  Faculty
+        32 教务处  Teaching Affairs Office
+        33 教学楼  Teaching Building
+        34 教职工宿舍（楼）  Teachers’ Dormitory
+        37 禁坐栏杆  No Sitting on Handrail.
+        54 请勿拍照  No Photography
+        59 体育馆  Gymnasium
+        60 田径场  Athletic Field
+        65 文科大楼  Liberal Arts Building
+        ```
+
+    第 7 部分：金融；
+
+    :   交易所译作 Exchange。
+        4.1.3.2.2 证券交易所译作 Stock Exchange，如：上海证券交易所 Shanghai Stock
+        Exchange。
+        4.1.3.2.3 期货交易所译作 Futures Exchange，如：上海期货交易所 Shanghai Futures
+        Exchange。
+
+        证券公司（股份有限公司、有限责任公司）译作 Securities Limited Company（Limited
+        Company 可缩写为 Co., Ltd.，下同），如：华泰证券有限责任公司 Huatai Securities Co.,
+        Ltd.。
+
+        Sub-Branch，一般置于上位译名（所属总行、分行译名）之后，如：
+        中国银行上海市分行普陀支行 Bank of China, Shanghai Branch, Putuo Sub-Branch。也
+        可省去分行译名，简作：中国银行普陀支行 Bank of China, Putuo Sub-Branch。
+
+        保险公司（股份有限公司、有限责任公司）译作 Insurance Limited Company，如：民
+        生人寿保险股份有限公司 Minsheng Life Insurance Co., Ltd.。
+        4.1.3.4.1 人寿保险译作 Life Insurance。
+        4.1.3.4.2 财产保险译作 Property Insurance。
+        4.1.3.4.3 再保险译作 Reinsurance。
+
+        保险公司（股份有限公司、有限责任公司）译作 Insurance Limited Company，如：民
+        生人寿保险股份有限公司 Minsheng Life Insurance Co., Ltd.。
+        4.1.3.4.1 人寿保险译作 Life Insurance。
+        4.1.3.4.2 财产保险译作 Property Insurance。
+        4.1.3.4.3 再保险译作 Reinsurance。
+
+        4.2.2.1 存取款：存款 Deposit；取款 Withdrawal。
+        4.2.2.2 贷款 Loan。
+        4.2.2.3 外汇 Foreign Currency。货币兑换 Currency Exchange。
+        4.2.2.4 理财 Financing (Management)。
+        4.2.2.5 基金 Fund。
+
+        个人质押贷款 Personal Pledge Loan。
+        4.2.3.2 应使功能指示明确，保持译文简洁，如：存折插入口 Please Insert Your
+        Passbook。
+
+        取款机 ATM，存款机 CRS。
+
+        钱款请当面点清 Please Count Your Cash Before Leaving。s
+
+        10  出门请按纽  Press to Exit
+        11  出纳  Teller
+        12  磁卡入口  Card Slot
+        13  存款机（存取款一体机）  CRS (Cash Recycling System)s
+
+        page 75
+
+    第 8 部分：医疗卫生；
+
+    第 9 部分：邮政电信；
+
+    第 10 部分：商业服务业。
 
 [Behavioral Profiling: The password you can't change.](https://paul.reviews/behavioral-profiling-the-password-you-cant-change/)
 
 [密码疲劳 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/08/password-fatigue.html)
 
-:   心理学有一个名词，叫做"密码疲劳"（password fatigue），指某些用户一遇到输入
+:   心理学有一个名词，叫做"密码疲劳"（**password fatigue**），指某些用户一遇到输入
     密码的场合，就感到厌倦和疲劳。
 
     下面是"密码疲劳"的一些典型发作场合：
@@ -20147,27 +21966,33 @@ chess), displaying its complexity despite relatively simple rules.
 
 [说说“融入美国社会”这件事 - 简书](http://www.jianshu.com/p/927c06c04dcc)
 
-:   - 美国同学都很友善，而且都挺话痨的，可是，我**真的有必要为了找到共同话题而
-      硬着头皮去看那些根本不感兴趣的超级碗比赛么?**
-    - 后来我才意识到，我根本没有什么“融入美国社会”的问题，因为按很多人的标准来
-      看，**我连中国人的社会都没融入过**。（其实我觉得很多圈子没必要去融入……）
-    - 而与此同时，我越来越觉得，身边**很多人的闲聊都相当无聊无趣**，哪怕有些人
-      已经够得上“高级知识分子”的资格了。
-    - 高中时读到王小波说的一句话：无趣的人生不值得过。我大概就是那会儿中了毒，
-      开始觉得无趣的“天”不值得聊。
-    - 还有一次，一位中国同学问起“纯正的美国口音”，老师有点哭笑不得地说：**“你觉
-      得波士顿口音和纽约口音哪一个更 American?”**
-    - 说白了，对美国人说，尤其是大城市的居民，再古怪的名字他们都见过，说话的口
-      音再独特他们也见怪不怪。没人指望一个外国人会有一个英文名、会说“美国口音”
-      的英语。
-    - “Diversity”是一个在美国经常听到的词，这里面不光有反对种族歧视的意思，还有
-      另一层意思，那就是：文化多样性就是这个社会的常态，而不是新来的文化在“融入
-      主流文化”之前的过渡状态。无论是出于意识形态或是别的什么原因，你大可以吐槽
-      美国宣扬的价值观是虚伪的，但美国社会多元文化并存的事实却是客观存在、毋庸
-      置疑的。
-    - 但如果你总觉得除了经济因素，在文化层面上还有那么一个抽象的、“高大上”的“美
-      国社会”存在，并且需要刻意改变自己而去“融入”它，那其实反映的还是内心深处一
-      种毫无必要的自卑心态。
+:   美国同学都很友善，而且都挺话痨的，可是，我**真的有必要为了找到共同话题而硬
+    着头皮去看那些根本不感兴趣的超级碗比赛么?**
+
+    后来我才意识到，我根本没有什么“融入美国社会”的问题，因为按很多人的标准来看
+    ，**我连中国人的社会都没融入过**。（其实我觉得很多圈子没必要去融入……）
+
+    而与此同时，我越来越觉得，身边**很多人的闲聊都相当无聊无趣**，哪怕有些人已
+    经够得上“高级知识分子”的资格了。
+
+    高中时读到王小波说的一句话：无趣的人生不值得过。我大概就是那会儿中了毒，开
+    始觉得无趣的“天”不值得聊。
+
+    还有一次，一位中国同学问起“纯正的美国口音”，老师有点哭笑不得地说：**“你觉得
+    波士顿口音和纽约口音哪一个更 American?”**
+
+    说白了，对美国人说，尤其是大城市的居民，再古怪的名字他们都见过，说话的口音
+    再独特他们也见怪不怪。没人指望一个外国人会有一个英文名、会说“美国口音”的英
+    语。
+
+    “Diversity”是一个在美国经常听到的词，这里面不光有反对种族歧视的意思，还有另
+    一层意思，那就是：文化多样性就是这个社会的常态，而不是新来的文化在“融入主流
+    文化”之前的过渡状态。无论是出于意识形态或是别的什么原因，你大可以吐槽美国宣
+    扬的价值观是虚伪的，但美国社会多元文化并存的事实却是客观存在、毋庸置疑的。
+
+    但如果你总觉得除了经济因素，在文化层面上还有那么一个抽象的、“高大上”的“美国
+    社会”存在，并且需要刻意改变自己而去“融入”它，那其实反映的还是内心深处一种毫
+    无必要的自卑心态。
 
 [获取学术论文的方法 - 简书](http://www.jianshu.com/p/7e507d7be11d)
 
@@ -20263,34 +22088,40 @@ chess), displaying its complexity despite relatively simple rules.
 
 [饱醉豚是干什么的？为什么懂得那么多？ - 网络红人 - 知乎](http://www.zhihu.com/question/27517209)
 
-:   贴上一段他曾经在 Twitter 里的 Bio：中文网上第一健笔，中文网上第一贱逼，推特
-    疯狗，推特中文圈最牛逼的狗屎，高级职业五毛，五毛教父，豚儒教教主，民主祛魅
-    师，摸摸党精神领袖，中华人渣共和国总统，撑哥，饱醉待屠的装逼犯，流氓无敌，
-    极品傻逼，吸毒名士，名士面具下的邪教魔头，中国的齐泽克、霍梅尼，淫贱粪豚，
-    阉人，杂种，民族云鬼，正邪委员、五毛战神专治各种民主。
+:   贴上一段他曾经在 Twitter 里的 Bio：
+
+    > 中文网上第一健笔，中文网上第一贱逼，推特
+    > 疯狗，推特中文圈最牛逼的狗屎，高级职业五毛，五毛教父，豚儒教教主，民主祛魅
+    > 师，摸摸党精神领袖，中华人渣共和国总统，撑哥，饱醉待屠的装逼犯，流氓无敌，
+    > 极品傻逼，吸毒名士，名士面具下的邪教魔头，中国的齐泽克、霍梅尼，淫贱粪豚，
+    > 阉人，杂种，民族云鬼，正邪委员、五毛战神专治各种民主。
 
 [饱醉豚语录2015年7月4日 - 简书](http://www.jianshu.com/p/6dd6206a71e2)
 
-:   - 那些自称找虐的驴友，大多到四姑娘山要找马夫挑夫的，去雅鲁藏布江大峡谷要找
-      藏人给他们当挑夫的，到更高的山就要找夏尔巴人给他们当挑夫。然后他们拍一些
-      美奂绝伦的照片，自称去了某某地方。
-    - 你不能因为黄炎培、丁玲、郭沫若之类的知识分子没能在毛泽东面前保持气节而认
-      为这是毛的罪恶。恰恰相反，毛泽东让装逼知识分子脱光裤子献媚，正是给知识分
-      子袪魅。这是毛为人性研究的贡献。
-    - 建议爱狗爱猫的都亲自阉割以表示这确实是对动物的爱。
-    - 这中国大地上到处是一些觉得这也不能吃那也不能吃的恐慌者。他们觉得中国的食
-      物满含毒素，他们觉得中国的水、空气都充满恐怖。他们觉得中国到处是拐卖的孩
-      子。他们觉得这社会对不起他，所以他们自己作恶的时候就可以毫无愧疚。
+:   那些自称找虐的驴友，大多到四姑娘山要找马夫挑夫的，去雅鲁藏布江大峡谷要找藏
+    人给他们当挑夫的，到更高的山就要找夏尔巴人给他们当挑夫。然后他们拍一些美奂
+    绝伦的照片，自称去了某某地方。
+
+    你不能因为黄炎培、丁玲、郭沫若之类的知识分子没能在毛泽东面前保持气节而认为
+    这是毛的罪恶。恰恰相反，毛泽东让装逼知识分子脱光裤子献媚，正是给知识分子袪
+    魅。这是毛为人性研究的贡献。
+
+    建议爱狗爱猫的都亲自阉割以表示这确实是对动物的爱。
+
+    这中国大地上到处是一些觉得这也不能吃那也不能吃的恐慌者。他们觉得中国的食物
+    满含毒素，他们觉得中国的水、空气都充满恐怖。他们觉得中国到处是拐卖的孩子。
+    他们觉得这社会对不起他，所以他们自己作恶的时候就可以毫无愧疚。
 
 [生活方式 - 简书](http://www.jianshu.com/p/9ab34dd5a1ed) &hearts;
 
-:   - 一旦你进入上海这样的城市，你就觉得当代的都市基本上都是为高度商品化的时髦
-      女人而设置的。男人的风味一点都感受不到。或者男人的生活方式已经比女人还精
-      致了。
-    - 或许有一些文艺人，他们去咖啡厅，去酒吧，去田子坊，去看话剧。而这些在我看
-      来已经不是文艺，而是难以容忍的恶俗。
-    - 我没有股票户头，觉得一个人打理自己的股票、时刻盯着股市，那是把自己的闲暇
-      给糟蹋了。我永远不会有热情去看股市的。
+:   一旦你进入上海这样的城市，你就觉得当代的都市基本上都是为高度商品化的时髦女
+    人而设置的。男人的风味一点都感受不到。或者男人的生活方式已经比女人还精致了。
+
+    或许有一些文艺人，他们去咖啡厅，去酒吧，去田子坊，去看话剧。而这些在我看来
+    已经不是文艺，而是难以容忍的恶俗。
+
+    我没有股票户头，觉得一个人打理自己的股票、时刻盯着股市，那是把自己的闲暇给
+    糟蹋了。我永远不会有热情去看股市的。（深得我心！）
 
 [git——How to create an empty stand alone branch in GIT](http://maijunjin.github.io/git/2014/02/18/git%E2%80%94%E2%80%94how-to-create-an-empty-stand-alone-branch-in-git.html)
 
@@ -20307,9 +22138,13 @@ chess), displaying its complexity despite relatively simple rules.
     $ git push origin gh-pages
     ```
 
+    需要 `git rm -rf .` 是因为 index 虽然全新，但是本地文件还在。
+
 [www.moolenaar.net/habits_paper.txt](http://www.moolenaar.net/habits_paper.txt)
 
 :   救救乌干达的可怜孩子，额……
+
+    还有说为什么要用 neovim（而不是 gvim），因为万一 Bram 挂了……真的没人能把他这工作接下来……
 
     Bram Moolenaar is the **main author of Vim**.  He writes the core Vim
     functionality and selects what code submitted by many others is included. He
@@ -20342,7 +22177,7 @@ chess), displaying its complexity despite relatively simple rules.
 
 [BOM (Byte Order Mark) 與 UTF-8 - Tzeng Yuxio](http://tzengyuxio.me/blog/2012/03/09/bom-byte-order-mark-and-utf-8/)
 
-:   BOM 的解释终于看懂了。
+:   (BOM 的解释终于看懂了。)
 
     Byte Order Mark 在 UTF-16 Big Endian 是 “FE FF”，Little Endian 是 “FF FE”。
     其中Mac 系統主要是 Big Endian, PC 系統則是使用 Little Endian。
@@ -20458,7 +22293,9 @@ chess), displaying its complexity despite relatively simple rules.
 
 [Everything FAQ](http://www.voidtools.com/faq/)
 
-:   Does "Everything" **hog my system resources**?
+:   Win 上最牛逼的软件（之一），还不收钱！
+
+    Does "Everything" **hog my system resources**?
 
     :   No, "Everything" uses very little system resources.
         A fresh install of Windows 8 (about 70,000 files) will use about 6 MB of
@@ -20509,6 +22346,8 @@ chess), displaying its complexity despite relatively simple rules.
 
 :   `:bd`
 
+    `:E`, go back to explorer
+
 [文章分类 - 陈汝丹](http://chenrudan.github.io/page/category.html)
 
 [Caffe、TensorFlow、MXnet三个开源库对比 - 陈汝丹](http://chenrudan.github.io/blog/2015/11/18/comparethreeopenlib.html#0-tsina-1-2654-397232819ff9a47a7b7e80a40613cfe1)
@@ -20543,7 +22382,16 @@ chess), displaying its complexity despite relatively simple rules.
     vim to edit non utf-8 file when settings are configured to utf-8:
     `:e ++enc=ucs-bom`, see `:help ++enc` for more.
 
-    <kbd>Control+R</kbd><kbd>=</kbd>23*234
+    <kbd>Control+R</kbd><kbd>=</kbd>23*234, see `help i_ctrl-r`
+
+    - `i ctrl-r *`, x11 clipboard
+    - `i ctrl-r /`, 插入上次的 query 字符串：
+    - `i ctrl-r :`, last cmd
+    - `i ctrl-r .`, last insertion
+    - `i ctrl-r -`, last small deletion
+    - `i ctrl-r %`, filename
+
+    `i_ctrl-{d,t}` -> `<<, >>`
 
     #. `uxterm -cjk`{.bash}
     #. `set mouse=a`, turn on mouse clicking
@@ -20588,9 +22436,7 @@ chess), displaying its complexity despite relatively simple rules.
     性较低。命令本身倒是相当简单，用过正则表达
     式的人估计都知道“.”匹配表示除换行符之外的任何字符吧。
 
-能 讓
-
-    去掉所有的 `/* */` 注释：`:%s!\s*/\*\_.\{-}\*/\s*!!g`。这个略有点复杂了
+    能讓去掉所有的 `/* */` 注释：`:%s!\s*/\*\_.\{-}\*/\s*!!g`。这个略有点复杂了
     ，用到了几个不太常用的 Vim 正则表达式特性。`\_.` 匹配包含换行在内的所有
     字符；`\{-}` 表示前一个字符可出现零次或多次，但在整个正则表达式可以匹配
     成功的前提下，匹配的字符数越少越好；标志 `g` 表示一行里可以匹配和替换多次
@@ -20622,13 +22468,13 @@ chess), displaying its complexity despite relatively simple rules.
     ----------------- | --------
     `:help`           | 打开帮助首页，这个首页分类非常清楚
     `:help cmd`       | 查找normal mode命令，比如 `:help dd`
-    `:help i_cmd`     | 查找insert mode命令，比如 `:help i_Ctrl-y`
+    **`:help i_cmd`** | 查找insert mode命令，比如 `:help i_Ctrl-y`
     `:help :cmd`      | 查找command-line命令，比如 `:help :s`
     `:help 'option`   | 查找选项，比如 `:help 'tabstop`
 
     VIM中有九类寄存器, cool!
 
-    `:ab hw Hello world`
+    `:ab hw Hello world`, abbrev
 
     `:s//` 和 `:g//`，`:!g//`
 
@@ -20647,7 +22493,7 @@ chess), displaying its complexity despite relatively simple rules.
 
 :    [vi for dvorak users](http://boredzo.org/vi_tutorial/vi_tutorial-QWERTY-Color.pdf)
 
-[Why, oh WHY, do those #?@! nutheads use vi?](http://www.viemu.com/a-why-vi-vim.html)
+[Why, oh WHY, do those `#?@!` nutheads use vi?](http://www.viemu.com/a-why-vi-vim.html)
 
 :   Heck, most vi users were not even born when vi was written!
 
@@ -20744,7 +22590,7 @@ chess), displaying its complexity despite relatively simple rules.
       - `ldconfig -n directory_with_shared_libraries`{.bash}
       - `LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH my_program`{.bash}
 
-    refs
+     refs and see also
 
       - [linker - Linking a shared library using gcc - Stack Overflow](http://stackoverflow.com/questions/726014/linking-a-shared-library-using-gcc)
       - [c - How do I compile a static library - Stack Overflow](http://stackoverflow.com/questions/11344547/how-do-i-compile-a-static-library)
@@ -20852,8 +22698,3 @@ chess), displaying its complexity despite relatively simple rules.
 :   see [equalsraf/vim-qt](https://github.com/equalsraf/vim-qt)
 
 <!--...--><!--上面不要加 ---（hr）-->
-<!--
-</div>
-fold item
-V/\n#. ?kbzf
--->

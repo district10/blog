@@ -23,6 +23,8 @@ ITEMS = \
 	$(DIR_PUBLISH)/template.html \
 	$(DIR_PUBLISH)/metadata.yaml \
 
+.PHONY: n it q l
+
 all: items move statics lyrics html
 
 items move statics lyrics html extras: $(DIR_PUBLISH)
@@ -37,7 +39,7 @@ $(DIR_PUBLISH)/Makefile: publish.mk
 $(DIR_PUBLISH)/%: %
 	cp $< $@
 
-move: $(PG_POSTS) $(PG_BIBS) $(PG_PAGES)
+move: $(PG_POSTS) $(PG_BIBS) $(PG_PAGES) $(PG_DOCS)
 $(DIR_PUBLISH)/%.md: $(DIR_POSTS)/%.md
 	perl cp.pl $< \
 		$(DIR_PUBLISH)/$(<:$(DIR_POSTS)/%.md=%.readinglist) \

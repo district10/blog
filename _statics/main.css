@@ -495,13 +495,12 @@ p a img:hover {
     margin-left: 20px;
 }
 
-dt {
-    font-size: 130%;
-	padding-top: 1.2em;
-    padding-bottom: 0.6em;
-}
+dl dt               { font-size: 130%; padding-top: 1.2em; padding-bottom: 0.6em; }
+dl dl dt            { font-size: 120%; padding-top: 1.1em; padding-bottom: 0.5em; }
+dl dl dl dt         { font-size: 115%; padding-top: 1.0em; padding-bottom: 0.4em; }
+dl dl dl dl dt      { font-size: 110%; padding-top: 0.8em; padding-bottom: 0.3em; }
 
-dt:first-letter { 
+dl dt:first-letter { 
     font-size: 145%; 
     text-transform: uppercase;
 }
@@ -509,7 +508,6 @@ dt:first-letter {
 #tzxslogan {
     color: lightgray;
 }
-
 .reads > ol > li {
     list-style: square; !important
 }
@@ -830,3 +828,14 @@ a.tzx-header-anchor {
     visibility: hidden;
 }
 */
+
+.tzx-shake * {
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -o-transform: scale(.9);
+    transform: scale(.9);
+    -webkit-animation: love .5s infinite linear alternate-reverse;
+    -moz-animation: love .5s infinite linear alternate-reverse;
+    -o-animation: love .5s infinite linear alternate-reverse;
+    animation: love .5s infinite linear alternate-reverse;
+}

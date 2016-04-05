@@ -115,6 +115,11 @@ var tzx_links = [
         query: ['page', 'tag', 'music', 'xiami']
     },
     {
+        url: '/doc-google-test.html',
+        title: "Google Test",
+        query: ['google', 'doc', 'test']
+    },
+    {
         url: '/post-0001-pandoc-readme.html',
         title: "Pandoc's User Guide",
         query: ['pandoc', 'doc']

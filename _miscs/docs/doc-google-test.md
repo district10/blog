@@ -1,6 +1,11 @@
-% Google Test
-% TANG ZhiXiong
-% 2016-03-13
+---
+title: Google Test
+date: 2016-03-13
+keywords:
+    - google test
+tags:
+    - google test
+...
 
 Google Test
 ===========
@@ -375,6 +380,7 @@ class Queue {
 
 First, define a fixture class. By convention, you should give it the name
 `FooTest` where `Foo` is the class being tested.
+
 ```
 class QueueTest : public ::testing::Test {
  protected:
@@ -396,6 +402,7 @@ In this case, `TearDown()` is not needed since we don't have to clean up after
 each test, other than what's already done by the destructor.
 
 Now we'll write tests using `TEST_F()` and this fixture.
+
 ```
 TEST_F(QueueTest, IsEmptyInitially) {
   EXPECT_EQ(0, q0_.size());
@@ -474,7 +481,8 @@ _Availability_: Linux, Windows, Mac.
 ### Writing the main() Function
 
 You can start from this boilerplate:
-```
+
+```cpp
 #include "this/package/foo.h"
 #include "gtest/gtest.h"
 
@@ -2191,7 +2199,6 @@ class TestInfo {
 }  // namespace testing
 ```
 
-
 > To obtain a `TestInfo` object for the currently running test, call
 `current_test_info()` on the `UnitTest` singleton object:
 
@@ -3312,6 +3319,7 @@ Mock::AllowLeak(&mock_obj);
 ### Mock Classes
 
 Google Mock defines a convenient mock class template
+
 ```
 class MockFunction<R(A1, ..., An)> {
  public:

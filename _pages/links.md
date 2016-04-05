@@ -194,3 +194,6 @@ Links | 链签
 #. [Create your Google Sitemap Online - XML Sitemaps Generator](https://www.xml-sitemaps.com/)
 #. [CatWang's Tech Blog](http://www.catwangmenma.com/)
 #. [关于 | Specs' Blog-就爱PHP](http://9iphp.com/about)
+#. [Zeno Rocha](https://zenorocha.com/)
+#. [Hacker News](https://news.ycombinator.com/news)
+#. [Open California - Planet Labs](https://www.planet.com/open-california/#/center/-13480829.478199044,4250832.839548695/zoom/13)
