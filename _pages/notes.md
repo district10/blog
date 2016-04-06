@@ -23,7 +23,205 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+[云风的 BLOG: 那些日子（一）](http://blog.codingnow.com/2008/04/passed_days_1.html)
+
+:   毕业的第 2 天，我去了北京。在创意鹰翔待了三天。林广利是我很好的朋友，我看他
+    似大哥一样。他邀请我去的北京。鹰翔当时的情况看起来不是很好，不过我不太所谓
+    。总算毕业了，我觉得我自由了，再也不用看老师的脸色，不用应付烦心的考试，不
+    用担心课堂点名……
+
+    所以我跟 micro 提的价码是 1000 。有点意外的是 micro 还是觉得有点高了，不过
+    我理解他们的艰辛（当时是一个很小的工作室，没有什么投资，几个人自己在弄），
+    重新核算了一下，把自己花掉的时间统计了一下。按每小时 20 块（比家教的水平高
+    多了，当时就这么想的）得到一个大约 500 的数字，micro 把款打给了我。这就是我
+    和天夏的第一次合作。
+
+    btw, 具体的数字我记不太清了，只能说大约这个数量级吧。大学毕业后我就再也没缺
+    过钱用，对钱的数字极其不敏感，所以忘的快。
+
+    庞鑫曾经跟我说，没错，如果我们有 15w RMB 我们就可以自己干。即使大家现在一无
+    所有，只要有技术，无论做点什么，不需要多少时间就可以赚到这么多钱，然后开始
+    做自己更想做的东西。但是，或许有更好的路，让我们就有更高的起点，节约我们的
+    生命。
+
+[cloudwu/xlsx2txt: Convert xlsx file to txt for grep text](https://github.com/cloudwu/xlsx2txt)
+
+[云风的 BLOG: 离开，是为了新的开始](http://blog.codingnow.com/2011/09/new_beginning.html)
+
+:   我现在从网易离开，是想先全身心的放松，可以轻松的思考未来。这个期间，可以完
+    成我多年的个人梦想，可以好好的去玩玩攀岩。在杭州这么多年，也想好好为江浙一
+    带的攀岩圈子做点什么。
+
+    吾攀岩岩友，可以在 40 岁之前，激流勇退，把做的很好的事业放下，完全退休，周
+    游世界。间隙之间回到杭州时，还把心力放在普及攀岩运动上。花上时间去野外开线
+    ，组织活动，教导新人等等。我并不是说，我有他那样热爱这项运动，只是说，可以
+    放下责任和包袱做自己所爱之事，原来是可以很简单的。
+
+    我现在的经济条件不比他退休时那么好，可也算宽裕了。相比之下，原来手下的同事
+    ，却也可以想明白：把广州的工作辞掉。专心一个人研究 iOS 开发。他打算做点有趣
+    的 app 。如此行事，颇有我 10 年前的作风。我也不像他那样一心想做款好软件供世
+    人使用。但他毕竟没有我现在的积蓄，却和我当年一样，不去考虑将来的生活基础而
+    一意单干。我又如何就办不到了呢？
+
+    有幸现在手头没固定工作，和其他任何项目也无牵连。之前诸位兄弟，该离开的已经
+    离开，留下的都适应了目前的工作。正是我提出离开的最佳时机。
+
+    天下无不散的宴席，以朋友之角度，希望你可以理解我之所想，不必挽留。如果我日
+    后为生活所迫，需要新的一份固定工作，我想网易依旧是最佳选择。而且我也相信我
+    在各方面的不断积累，仍可以为公司所用。
+
+---
+
+```
+Computer Vision & Remote Sensing (CVRS) Lab
+
+姚剑
+
+邮编：430079   电话：+86-27-68771218
+
+me.png?imageView2/1/w/90/h/120
+```
+
+---
+
+[从二本到名校 — 一个二本生的蜕变之旅 - 程序媛想事儿 - 博客频道 - CSDN.NET](http://blog.csdn.net/lanxuezaipiao/article/details/40189513)
+
+:   “老师，从刚才我的专业课面试来看，我相信自己表现得不错，说明我的专业能力并不
+    像分数体现的那样。而且，老师们难道不能给一个在大学最后一年才悔悟觉醒的‘不良
+    ’学子一次‘改过自新、重新做人’的机会吗？”
+
+    老师们听到我最后这句很“极品”的话都笑了。
+
+    ```tzx-bigquote
+    有的人因为工作熬夜，深夜坐在冰冷的桌子旁，对着电脑噼里啪啦。
+    有的人因为学习熬夜，在昏暗的灯光下头悬梁锥刺股、奋笔疾书、伏案而息。
+    有的人因为娱乐熬夜，躲在被子里兴奋的刷app、看各种视频、小说。
+
+    而我呢？
+
+    我会因为痴迷熬夜。
+    痴迷那张只属于我一个人的精致小床，总是带给我芬香四溢的气氛，让我久久停留在享受的怀抱中。
+    痴迷那个只属于我一个人的独处时刻，总是让我有无尽的瞎想。
+
+    我为什么喜欢熬夜？
+
+    因为在那个时刻，我可以卸下白天的负担，无比轻松。
+    因为在那个时刻，我可以静下心来，聆听自己心灵的声音。
+
+    因为我可以认真的倾听一首歌曲，感受音律的跌宕起伏、情感的撕心裂肺、心灵的激情碰撞。
+    因为我可以随意翻看想看的各类书籍，企图领悟大师的智慧，进而比较与他们的差距。
+    因为我可以观看一部等待已久的电影，用心去看的电影总是比平时多很多感受和领悟。
+    因为我可以安静的思考，享受静谧的人生，享受思绪的波澜壮阔。
+
+    为什么要在夜晚去做这些事情？
+    因为，于我而言，只有夜晚的这段时间才真正的属于自己、属于那颗召唤的心灵……
+
+    我为什么喜欢熬夜？也许，我只是在享受孤独……
+    ```
+
+    [我为什么喜欢熬夜？ - 简书](http://www.jianshu.com/p/984797f967be)
+
+[《程序员的呐喊》读书笔记（上） - 程序媛想事儿 - 博客频道 - CSDN.NET](http://blog.csdn.net/lanxuezaipiao/article/details/47333895)
+
+当时04年亚马逊正饱受其庞大代码库的困扰，我曾经一度认为它的代码库失控是因为语言问题，后来才意识到企业文化是主因。首当其冲的是，亚马逊的主流语言里有两门非常哆嗦的语言C++中和Java，外加一门精练的语言Perl。但是Perl正受到排挤，渐渐退出主流。我觉得这是因为Perl程序员能用更少的人力完成和Java/C++程序员同样的工作量，所以要是比人多的话，他们注定是赢不了的。根据我们的估算，亚马逊的代码量比它的功能数量膨胀得更快。第二个因素是，亚马逊的很多技术问题完全可以用自定义领域语言（DSL的方式来解决），比如大规模的查询、分布式计算、产品配置等，他们写了太多不必要的代码了。我后来跳到Google，发现他们为这些完全一样的问题专门编写了强大的自定义DSL。这证实了我心中的疑虑，亚马逊的工程师在这些问题上和无头苍蝇没什么两样。我敢说这句话误伤的概率极低。最后一点就是，和绝大多数公司一样，亚马逊非常抗拒用新语言来解决问题。他们会避免使用表达能力更强的通用语言，比如Ruby或Erlang。他们也几乎从来不会想到自己去写DSL。
+
+注意，骂谁也不能骂Python。相反，骂Ruby骂得最凶的人可能就是Matz自己了。他在自己的演讲“为什么Ruby很烂”里，自陈了Ruby的各种问题，当时看得我汗都下来了。不可否认，任何语言都有缺点。相比之下，我更喜欢Ruby众的坦诚，Pyhon那种一味指责别人，回避问题，过分地自我标榜的行为令人感到恶心。
+
+我在招人的时候有一个诀窍。就是在寻找优秀的软件工程师“通才”的时候，通常在简历上你可以看到到各种让你觉得不行的关键字和词，但“编译器”是我唯一感兴趣的词。
+
+各大语言的分派：（作者自己使用语言的经验，仅供参考）
+
+  - 难以言喻的自由：汇编语言
+  - 极端自由：Perl、Ruby、PHP、脚本
+  - 非常自由：Javascript、VB、Lua
+  - 自由：Python、Common Lisp、Smalltalk/Sqeak
+  - 温和自由：C、Object-C、Schema
+  - 温和保守：C++、Java、C#、D、Go
+  - 保守：Clojure、Erlang、Pascal
+  - 非常保守：Scala、Ada、Ocaml、Eiffel
+  - 极端保守：Haskell、SML
+
+[《程序员的呐喊》读书笔记（下） - 程序媛想事儿 - 博客频道 - CSDN.NET](http://blog.csdn.net/lanxuezaipiao/article/details/47386965)
+
+[lanxuezaipiao/ReadingNotes: 我的读书笔记，涉及C++、Java、计算机科普、各类文学作品、管理类等书籍，总结其中的知识点和精华，分享给大家，共同学习！！！](https://github.com/lanxuezaipiao/ReadingNotes)
+
+[Most frequent k characters - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Most_frequent_k_characters)
+
+[Linux Tips — » Kumu's Blog](http://blog.opskumu.com/tips/)
+
+2、通过文件添加 Swap 分区
+
+    a、生成实际需求大小的文件
+        dd if=/dev/zero of=/swapfile bs=1024 count=65536
+    b、把生成的文件格式化成 swap
+        mkswap /swapfile
+    c、使 swap 文件生效，但是自动重启之后就会失效
+        swapon /swapfile
+    d、加入以下内容到 /etc/fstab 配置文件中使重启 swap 自动生效
+        /swapfile swap swap defaults 0 0
+    e、关闭
+        swapoff /swapfile 并删除 /etc/fstab 文件中内容
+
+
+[程序员简历应该怎么写？ - 求职 - 知乎](https://www.zhihu.com/question/25002833)
+
+:   小结：
+
+    1. 尽量避免主观表述，少一点语义模糊的形容词，除非是大公司大牛，已经有成果撑腰，否则慎用「熟悉… …」、「使用过… …」
+    2. 多一点表意清楚，语气肯定的数量词、名词、成果描述。一定要将自己的优势和期望明晰地表达出来，便于招聘方能对候选人有更准确的定位
+
+    最后，看了10,000份简历的心得：
+
+      - HR/技术负责人更喜欢看到一份显示「职业上升趋势」的简历；
+      - 牛人讲结果，普通人讲过程。
+
+    兴趣爱好：围棋、马拉松……（只写积极的，抠脚之类的不要写）
+
+    简历最大的加分项：干净整洁、没废话、Github里面有开源内容、博客里面有深度讨
+    论的技术内容（其实如果一个人能保持博客的技术内容持续更新就狂加好感）、头脑
+    非常清晰的知道自己在做什么。
+
+    我再多提一句：请记住你给哪家公司投了简历，也请记住你要面试哪家公司，我经常
+    遇到应聘者连自己应聘的公司做啥叫什么都不知道……
+
+[提问的智慧](http://doc.zengrong.net/smart-questions/cn.html)
+
+[杰克·拉莫塔_互动百科](http://www.baike.com/wiki/%E6%9D%B0%E5%85%8B%C2%B7%E6%8B%89%E8%8E%AB%E5%A1%94)
+
+[刘皓明：绝食艺人：作为反文化现象的钱锺书 – 智识@IdeoBook™](http://www.ideobook.com/113/qian-zhongshu-as-hungerkunstler/)
+
+---
+
+思想的质变不容易观测，而记忆的量变很适合表演。人们一提“最强大脑”，首先想到的就是记忆力。但是关于记忆力，我们得知道三点。
+
+第一，正常人要是愿意练，也可以练成这么神奇的记忆力。
+
+第二，再强的记忆力，也不能 — 请允许我引用一句王朔发明的话 — “把胳肢窝变成海参”。
+
+第三，特别强的记忆力，反而有害。
+
+据有人根据用词评测[2]，华盛顿在1796年的告别演说，达到了研究生水平，高达17.9级，此后美国总统的演说水平江河日下，到奥巴马只有8年级。
+
+所有专业记忆力比赛，本质上比的都是想象力。参赛的记忆力大师大多都是普通人，他们只不过愿意艰苦地训练而已。而且他们除了记忆力这一个特长之外，几乎没有什么别的了不起之处。
+
+……除了极少数真正的天才。
+
+现在活着的，有超强记忆力的人中最牛的一个，可能是英国人Daniel Tammet[4]。他曾经在2004年把圆周率背到22514位而打破欧洲纪录，但背圆周率只是他的能力之一。Tammet 擅长学习语言，不完全统计是至少会十种语言。曾经有人挑战他能不能在一个星期内学会冰岛语，结果Tammet七天之后就上电视直接用冰岛语做节目了。他的冰岛语老师说他“不是人类”。Tammet 写了两本书，自己还有个网站，是个学者型记忆大师。
+
+美国人 Kim Peek 不是自闭症患者，他的病比自闭症严重得多。他的头很大。他的大脑中没有胼胝体 — 连接两侧脑两侧半球的最重要联合纤维。他的小脑也损坏了，这使得他直到四岁才学会走路。他的情绪不稳定，很容易发怒。
+
+Peek 可以同时阅读两个书页，左右眼各自读一页，这很可能与他没有胼胝体有关。只读一遍，他就能够完美的记住所读的内容。而且他永远都不会忘记。他曾经在一个图书馆里向测试者背诵其中任何一本书，据说他记住的书超过12000本。Peek的故事被拍成了电影，这就是《雨人》。
+
+我听到关于“最强大脑”最奇特的说法，是说选拔这样一批善于记忆和速算的人，是在为国家储备战略人才 — 虽然他们的工作都已经被计算机取代了，但是万一战争来了全国停电呢？
+
+这其实不是说美国总统的水平退步了，只能说明美国有越来越多的民众参与政治。我最近学了点职业英文写作，听说绝大多数美国人，包括受过很高教育的人，都希望阅读文章的用词水平在10年级以下。你要用很多高格调词汇，老百姓根本不看。特朗普本人出过好几本商业书籍，还写过小说，他显然有能力写更高水平的文字，现在为竞选采取了最亲民的写法，而且历史性地达到了四年级。
+
+教育方面，特朗普说美国学校在政治正确的名义下，过分鼓励学生的自尊心，但实际上学生在学校里不能面对真正的竞争，无法分出强弱，到社会上就没有能力和人竞争。特朗普非常反感教师工会，因为工会使得老师的工资是由其的工作年头来定，不是根据这个老师的能力来定。美国是在每个学生身上平均投入最高的国家，但是美国的教育水平只排在全球的第26位。不过他要取消全国统一的教学大纲（common cores）乃至干脆取消教育部，我的确不太理解。
+
+---
+
 vim, zf, zD, fold
+
 
 [C语言的2016](http://www.infoq.com/cn/articles/c-language-2016)
 
@@ -19460,13 +19658,71 @@ Disallow:
 
 [Casio F-91W: The strangely ubiquitous watch - BBC News](http://www.bbc.com/news/magazine-13194733)
 
+:   ubiquitous, `[ju'bɪkwɪtəs]`, 无所不在的
+
+    Leaked files reportedly reveal a certain Casio watch was viewed with
+    suspicion by US officials as a possible sign of terrorist links. So how did
+    the humble F-91W find itself in such a position?
+
+    ![话说我现在就用的 F-84-W](http://ichef-1.bbci.co.uk/news/624/media/images/52352000/gif/_52352433_watch.gif)
+
+    "It sells globally, from Russia to Asia," says Tim Gould, head of marketing
+    at Casio UK. "It has consistently remained popular because it is
+    functional, affordable and accurate. It's as simple as that."
+
+    "We purposely don't market it as anything cool or trendy," says Mr Gould.
+    "It's not pretentious and doesn't pretend to be anything it's not. It just
+    a basic watch that is reliable and good value."
+
+    Its this refusal to be cool that has made it cool, says Bayley.
+
+    ![](http://ichef-1.bbci.co.uk/news/304/media/images/52352000/jpg/_52352437_watch_getty.jpg)
+
+    "It's cheap enough to be disposable but, unless you hit it with a hammer,
+    it will never stop."
+
 [如果他玩微博，秒杀一切段子手 - 简书](http://www.jianshu.com/p/12abee0e372e#)
 
-:   如果他们说你配得到这个奖你就接受了，那么下次他们说你不配的时候，你也得接受。
+:   伍迪·艾伦
+
+    美国编剧家协会（WGA）今年投票选出的“影史最有趣”101部电影剧本中，他自编自导
+    自演的《安妮·霍尔》，当选第一。
+
+    如果他们说你配得到这个奖你就接受了，那么下次他们说你不配的时候，你也得接受。
+
+    “每当我跟他呆在一起，我就忘了我是谁，我在哪儿。”
+
+    虽然据说在现实中，伍迪·艾伦出名的害羞，跟女演员讲话都会紧张。
+
+    伍迪·艾伦的电影大多跟性、爱、生、死相关。
+
+    “一段关系就像是一条鲨鱼。它必须不断往前，不然就会死掉。”
+
+    “在一段恋爱中，做离开的那个人，好过做被离开的那个人。”
 
 [RFC 1345 - Character Mnemonics and Character Sets](https://tools.ietf.org/html/rfc1345)
 
 [降级论 | Meditic](http://meditic.com/degrading-for-success)
+
+:   后来我开始反思最初的目标，为什么要在自己身上挂一个“拳击高手”的招牌，被那么
+    多泰森追着打？ 我把这块招牌卸了，找个完全没练武的人去比拼，不是更容易赢么？
+    于是果断照做，去找了一个没人懂拳击的小乡村，做了纯英文的Tucia.com(需翻墙)，
+    只做国外的业务。在那个地方，作为一个知名武馆的拳击小陪练，我成了村子里拳击
+    技术最高超的人，受人仰慕，还开武馆教人拳击，活的非常滋润，而且在教人拳击的
+    过程中，自己的拳术也比以前提高了很多，发展出一套属于自己的拳法，我虽然进不
+    了泰森们的大圈子，但他们也进不了我的小圈子。
+
+    除此以外，我还发现一个现象，中国消费者在与奸商们的长期斗争中，已经培养出了
+    一种非常苦B的品质：只要不被坑，他就谢天谢地。如果商家严格做到了承诺的每一件
+    事情，客户就会感动的泪如泉涌。如果商家不仅做到了所有承诺的事情，还很贴心的
+    提供了一些额外的服务（比如我们给每位客户赠送非常好吃的樱桃和昂贵的进口巧克
+    力作为点心），那么客户就会激动的哭天喊地、奔走相告，推荐给他认识的每一个人。
+
+    其实这片肮脏的国土，就是上天赐予IT青年们的最好机会。
+
+    这些原始而纯粹的行业，正在等待IT精英们的降级，如同蒲公英一般的伞兵，在黑夜
+    里从天而降，长驱直入，用最智慧的产品、最优质的服务拯救这些早就该死的行业，
+    屌丝的生命将会绽放出银色的羽翼，无比丰满，无比性感。
 
 [图灵奖得主：思考比编码重要 - 微软亚洲研究院](http://www.msra.cn/zh-cn/connections/stories/leslie-visit-pku-20151203.aspx)
 
@@ -19475,6 +19731,20 @@ Disallow:
 [sigslot - C++ Signal/Slot Library](http://sigslot.sourceforge.net/)
 
 [一个Sqrt函数引发的血案 | 帝都码农](http://diducoder.com/sotry-about-sqrt.html)
+
+:   <http://www.math.purdue.edu/~clomont/Math/Papers/2003/InvSqrt.pdf>
+
+    ```cpp
+    float InvSqrt (float x)
+    {
+        float xhalf = 0.5f*x;
+        int i = *(int*)&amp;x;
+        i = 0x5f3759df - (i&gt;&gt;1);
+        x = *(float*)&amp;i;
+        x = x*(1.5f - xhalf*x*x);
+        return x;
+    }
+    ```
 
 [《了不起的盖茨比》：绿光 - 读立写生](http://cnfeat.com/blog/2014/03/05/green-light/)
 
@@ -19486,29 +19756,48 @@ Disallow:
 
 [The Intentionality of Evil (Aaron Swartz's Raw Thought)](file:///E:/blogs/Aarow-Swartz/www.aaronsw.com/weblog/intentionalevil-4.html)
 
+:   The problem is that the villains know they’re evil.
+
+    我们在孩子很小的时候就开始给他们看大量的漫画（现在是从漫画改编的电影），在
+    漫画和电影中，勇敢的英雄从恶魔的手中一次又一次的拯救我们的星球。现在几乎公
+    认的看法是，这些故事将善与恶之间的界限划得过于清晰，真实的世界比这些故事中
+    描写得那个世界更加微妙，人们都这么说。但是这并不是这些故事的真正问题，真正
+    的问题在于恶棍都知道他们是邪恶的。
+
+    如果下次别人说起“是的，但是我们是好心的”这句话，告诉他这毫无意义；只有漫画书中的家伙才不这么干。
+
+    So the next time you mention one to someone and they reply “yes, but we did
+    with a good intent” explain to them that’s no defense; the only people who
+    don’t are characters in comic books.
+
 [I Hate the News (Aaron Swartz's Raw Thought)](file:///E:/blogs/Aarow-Swartz/www.aaronsw.com/weblog/hatethenews.html)
 
 :   None of these stories have relevance to my life. Reading them may be
     enjoyable, but it’s an enjoyable waste of time. They will have no
     impact on my actions one way or another.
 
+    哈哈，乐于看新闻都是逗。我高中的时候还看文汇报（因为班级订了报纸），后来从
+    来不看新闻也不看报。除了 QQ 偶尔弹出来的那些无聊的破推送。什么快递员被跳楼
+    的砸死了，车祸几死几伤，等等。都是一些无聊的破事。（如果你看到这句话，觉得
+    我没有人性。呵呵。）
+
 [Wi-Fi 是什么的缩写 - 第九阅览室 - 提供科学养分](http://9yls.net/19760.html)
 
 :   从 Wi-Fi 扩展成 wireless fidelity，也就是把一个词当作缩写逆向扩展出某种
-    含义的过程，是一种文字游戏，叫backronym，意思和 acronym 相对。Backronym
-    很容易被传着传着就当真。常见的比如 SOS，很多人认为是 save our souls 的
-    缩写，但实际上是先有的易识别易操作的摩尔斯电码···–––···，后选用相对应的
-    字母组合SOS 来表示罢了。因此 SOS 和 Wi-Fi 一样，没有任何含义，也不是什
+    含义的过程，是一种文字游戏，叫 backronym `['bækrənɪm]`，意思和 acronym 相对
+    。Backronym很容易被传着传着就当真。常见的比如 SOS，很多人认为是 save our
+    souls 的缩写，但实际上是先有的易识别易操作的摩尔斯电码 `···–––···`，后选用相对
+    应的字母组合SOS 来表示罢了。因此 SOS 和 Wi-Fi 一样，没有任何含义，也不是什
     么的缩写，还真是同病相怜呐。
 
 [有哪些让你笑了半辈子，每次给别人讲自己都会爆笑的笑话？ - 知乎](https://www.zhihu.com/question/23547779)
 
 [日常生活中有哪些十分钟就能学会并可以终生受用的技能？ - 知乎](https://www.zhihu.com/question/20894671)
 
-:   #. office 里双击格式刷可以多次使用
+:   #. **office 里双击格式刷可以多次使用**
     #. Ctrl+BackSpace是以单词为单位删除文本
     #. control+click, shift+click
-    #. C:\Docume~1\Admini~1
+    #. `C:\Docume~1\Admini~1`
     #. 空格键长度最短的键盘是日语键盘
     #. `data:text/html,<html contenteditable>`
     #. 当你保存你的ppt时，用后缀.pps或.ppsx，那样的话，打开时会直接进入幻灯片播放模式。
@@ -19598,26 +19887,83 @@ Disallow:
 
 [Inno Setup](http://www.jrsoftware.org/isinfo.php)
 
+:   一个打包工具。
+
+    Inno Setup is a free installer for Windows programs. First introduced in
+    1997, Inno Setup today rivals and even surpasses many commercial installers
+    in feature set and stability.
+
 [Recommended Reading for Developers](file:///E:/blogs/CodingHorror/blog.codinghorror.com/recommended-reading-for-developers/index.html)
 
 :   Programming Pearls is the next best thing to working side by side with
     a master programmer for a year or so. It is the collective wisdom of
     many journeyman coders distilled into succinct, digestible columns.
 
-[What is Trolling?](file:///E:/blogs/CodingHorror/blog.codinghorror.com/what-is-trolling/index.html)
-:   ?
-    :   I almost feel sorry for Quentin Tarantino, who is so obviously
-        passionate about what he does, because this guy is a classic troll.
+[What is Trolling?](http://blog.codinghorror.com/what-is-trolling)
 
-        1. He came to generate argument.
-        2. He doesn't truly care about the topic.
+:   I almost feel sorry for Quentin Tarantino (昆汀·塔伦蒂诺), who is so
+    obviously passionate about what he does, because this guy is a classic troll.
 
-        So the next time you encounter someone who can't stop arguing, who
-        seems unable to generate anything other than heat and friction, whose
-        actions amply demonstrate that they are no longer participating in the
-        conversation in good faith … just walk away. Don't take the bait.
+    1. He came to generate argument.
+    2. He **doesn't truly care about the topic**.
+
+    So the next time you encounter someone who can't stop arguing, who
+    seems **unable to generate anything other than heat and friction**, whose
+    actions amply demonstrate that they are no longer **participating in the
+    conversation in good faith**… just walk away. **Don't take the bait.**
 
 [这一年来 - BYVoid](https://www.byvoid.com/zhs/blog/recent-one-year)
+
+:   之前在微软做的是「研究」，听起来好像是很厉害的样子，其实有时候做的东西简直
+    是浪费时间。因为我从一开始就清楚，在研究院做的东西只是为了在特定领域有一个
+    突破，至于这个成果会不会造福人类，那可不好说。运气好的话会被微软产品组看中
+    ，做成产品，算是为人类做贡献了。大多数时候你的成果还是被打入冷宫，永远无人
+    问津。更普遍的情况是进入了微软的专利库，别人想做成产品都不行，这简直是阻碍
+    人类社会进步了。我在微软亚洲研究院长达十个月的实习给我最大的收获就是让我决
+    定了将来一定不会去读博士。
+
+    其实我还是挺喜欢比较小的公司的，虽然不是很「正规」，但却有让你在大公司感觉
+    不到的真诚的人情味。
+
+    后来我向Google和Facebook投的简历都石沉大海，Twitter回应了，但最终没有通过。
+    我发现我的英语其实是个很大的问题，给外国人说话都颤抖，怎么可能表达清楚自己
+    的意思？于是我当即开始学英语，一边背托福，一边找外国人练口语。我了解到许多
+    公司的实习生早就申请满了以后，意识到自己开始地太晚了，想想美国大学五月就放
+    暑假了，我三月才开始准备，岂能来得及？再申请只能考虑明年暑假的了。可是明年
+    暑假又有另一个问题，我拿J1签证去过美国以后，规定要「回国服务两年」，这令我
+    十分犹豫，并不是因为我决心不想回国，而是因为这样会给自己套一个枷锁，以后恐
+    怕多有不便。无论如何，我总得面试通过，于是便有了我后来尝试去面试Hulu的经历
+    。
+
+    想想看一切都是蝴蝶效应，佛家叫「因缘际会」。如果我没有认识徐可可，我很难保
+    持助写书的冲动，也不可能认识图灵总编。如果我没有参加去年1月赵丽明教授的川滇
+    语言调查，我没有机会认识徐可可。如果我没有选大一上的语音学课，我根本没有能
+    力去语言调查。如果我大一没有在军训时统一选课后又翻一次选课指导书，我连清华
+    破天荒开了语音学这门课都不知道。如果我2009年没有在成都书店的一个角落里面碰
+    到《汉语史稿》，我怎么可能会对语音学产生兴趣？又假如郭华阳当时不认识我、了
+    解我，怎么会愿意把我推荐给MSRA？如果我大一离散数学课上没有做大作业「基于统
+    计语言模型的拼音输入法」，郭华阳怎么了解我？如果我没有参与ibus-pinyin的开发
+    ，又哪里知道「统计语言模型」？一切皆是缘起啊，我之所以是现在的我，取决于我
+    做出的一个个选择，哪怕它在当时是及其不起眼的决定，恐怕在将来哪一天会对我产
+    生重大影响。
+
+    有一次和一个已经工作了的朋友吃饭，他问过我一个这样问题：「解决一个难题和做
+    出一件东西，哪个给你的成就感更大？」具体来说，解决一个难题指的是在学术研究
+    领域或者工程中解决了一个难题，小到一篇paper，大到图灵奖、诺贝尔奖；做出一件
+    东西指的是做成了一个可以使用的产品，有许多人使用，产生了价值，小到一个开源
+    工具，大到Google搜索这样的产品。我毫不犹豫地选择了后者，当然是做出产品更有
+    价值。他告诉我这个问题反映了不同人不同的价值观和兴趣所在，简单讲就是前者适
+    合搞学术，去科研，当一名科学家或者专家，后者应该是搞开发，做产品，做一名工
+    程师或者企业家。
+
+    其实我们大多数人并不缺乏能力，而是囿于见识，只敢走前人铺好的道路。一方面这
+    是承担风险与规避风险的问题，另一方面这是多数人缺乏广阔的视野。许多人并非不
+    是雄心勃勃，我相信愿意背井离乡去美国留学、工作、移民的人肯定不是胆小如鼠，
+    只求稳妥的人，而是许多人只看到了自己前辈走过的道路，没有另辟蹊径的意识。
+
+    我想告诉看到这篇文章的我的同辈朋友，以及学弟学妹们，世界竟然如此宽广，你需
+    要有一颗宽广的心去容纳。人在年轻的时候机会成本是最低的，所有你因为顾虑不敢
+    做的事，将来只会顾虑更多。
 
 [Notes on Programming in C](http://kamalatta.ddnss.de/otherdocs/pikestyle.html)
 
@@ -19721,6 +20067,20 @@ Disallow:
 
 [陌生拜访之如何搞定门卫 | 老K博客](http://www.laokboke.com/2015/02/12/mb/)
 
+:   基本上所有的政府单位都有门卫，他们往往就是陌生拜访要过的第一道关卡，如果连
+    他们都搞不定，那陌生拜访肯定是不成功的，因为你连客户的面都没见着。
+
+      - 陌生拜访之前一定要对拜访对象、其所在单位等资料有**比较全面的了解**
+      - **外在形象**一定要职业化。穿着最好是衬衫西裤、西装革履，手里拿着公文包之类
+        的，能让门卫看起来你就像一个领导就最好了，至少穿着正式的话，门卫很少会
+        盘问你。然后你走进去的时候，不要东张西望，更不用看门卫，只管装着很熟悉
+        的样子慢悠悠地往里面走就是了。
+      - 要做好被盘问的准备。去某个单位之前，最好**叫其他人发一条短信到你的手机**，
+        大概内容就是“请于2015年2月12日上午9点到**市发改委2号会议室参加某某主题
+        的会议。”
+      - **准备烟和火机**。虽然我不抽烟，但我出去陌拜的时候，一定要带上烟和火机，以
+        备不时之需。
+
 [为什么XML这么笨重的数据结构仍在广泛应用？ - XML - 知乎](http://www.zhihu.com/question/20738607)
 
 :   refs and see also
@@ -19799,8 +20159,8 @@ Disallow:
     GoogleMock projects. These were so closely related that it makes sense
     to maintain and release them together.
 
-    后来我在自己的小项目中也用到了 GoogleTest，见 [district10/algo](https://disstrict10/algo), 还有
-    GoogleTest 的笔记：[](doc-google-test.html)
+    后来我在自己的小项目中也用到了 GoogleTest，见 [district10/algo](https://github.com/district10/algo), 还有
+    GoogleTest 的笔记：[doc-google-test](doc-google-test.html)
 
 [google/WebFundamentals](https://github.com/google/WebFundamentals)
 
@@ -19814,8 +20174,8 @@ Disallow:
 
 [Public domain - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Public_domain)
 
-:   Works in the public domain are those whose intellectual property rights
-    have expired, have been forfeited, or are inapplicable. For example,
+:   Works in the public domain are those whose **intellectual property rights
+    have expired**, have been ** forfeited**, or are **inapplicable**. For example,
     the works of Shakespeare and Beethoven, most of the early silent films,
     the formulae of Newtonian physics, the Serpent encryption algorithm and
     powered flight are all now in the public domain. The term is not
@@ -19825,12 +20185,320 @@ Disallow:
 
 [Clang 比 GCC 好在哪里？ - 编译器 - 知乎](http://www.zhihu.com/question/20235742)
 
-:   refs and see also
+:   编译速度更快、编译产出更小、出错提示更友好。尤其是在比较极端的情况下。
+
+    最后一点，其他同学也有讲到，就是Clang采用的是BSD协议。这是苹果资助LLVM、
+    FreeBSD淘汰GCC换用Clang的一个重要原因。
+
+      - 编译速度有显著提升，记得大约是g++的1/3或1/4
+      - 编译过程中的内存消耗差别好像不大
+      - 中间产出物及最终链接产物，记得也是g++的1/3或1/4
+      - 相较于g++，编译错误可读性有所飞跃，至少不会出现编译错误过长被截断的问题了
+
+    从代码上说，clang结构更简单。因为clang只需要完成词法和语法分析，代码优化和
+    机器代码的生成工作由llvm完成。所以和全部由自己包下的gcc比起来，clang可以更
+    专注地做好一件事。
+
+    这种结构也使clang可以被单独拿出来用在其他的程序里。比如vim的clang_complete
+    插件就是利用clang进行语法分析后给出精确的自动补全和语法错误提示的。而gcc就
+    没法很方便地做到这一点。
+
+    在实用性方面，除了有更快的编译速度更快和更友好的出错提示外，clang还内置有静
+    态分析工具，可以对代码进行静态分析（clang --analyze）。这也是gcc做不到的。
+
+    除了其它答案介绍的速度和出错信息可读性的优势之外，Clang 的另一个优势是代码
+    结构清晰，可以作为库使用，成为其它 app（主要是 IDE）的内嵌 C/C++ parser。这
+    样，editor 工具可以使用和 compiler 一样的 parser 来完成 edit-time 的语法检
+    查。
+
+    Clang则是以LLVM为后端的一款高效易用，并且与IDE结合很好的编译前端。
+
+    refs and see also
 
       - [ClangDiagnosticsComparison - GCC Wiki](http://gcc.gnu.org/wiki/ClangDiagnosticsComparison)
       - [Comparing clang to other open source compilers](http://clang.llvm.org/comparison.html)
 
 [Mac OS X 背后的故事_知识库_博客园](http://kb.cnblogs.com/page/114879/)
+
+:   TOC
+
+      - Mac OS X 背后的故事（一）力挽狂澜的Ellen Hancock
+      - Mac OS X 背后的故事（二）Linus Torvalds的短视
+      - Mac OS X 背后的故事（三）Mach之父Avie Tevanian
+      - Mac OS X 背后的故事（四）政客的跨界
+      - Mac OS X 背后的故事（五）Jean-Marie Hullot的Interface Builder神话
+      - Mac OS X 背后的故事（六）上善若水
+      - Mac OS X 背后的故事（七）上善若水下——Cordell Ratzlaff 引发的 Aqua 革命
+      - Mac OS X 背后的故事（八）三好学生Chris Lattner的LLVM编译工具链
+      - Mac OS X 背后的故事（九）半导体的丰收
+      - Mac OS X 背后的故事（十）Mac OS X文件系统的来龙去脉
+
+    Mac OS X 背后的故事（一）力挽狂澜的Ellen Hancock
+
+    :   1991 年 5 月 13 日，蓝组顺利按时完成开发任务，发布了 Mac OS 7（一般被称
+        为 System 7），而粉组却没做出什么有实际用途的东西来，因此接连跳票。而且
+        ，由于 Mac OS 7 的发布缺乏人手，为了保持正常发布，常常需要从粉组抽调人
+        员参加蓝组的开发，再加上 Apple 当时把重心放在了和 IBM 等公司的合作上（
+        Taligent 项目）而不是在粉组上，最终导致了粉组项目夭折。
+
+        Taligent 项目挂掉后，Apple 自己尝试过十多个不同的内部项目，但大多没做多
+        久就夭折了。而这时正是 Windows NT 走向成熟的关键时期。
+
+        1996-1998 年是 Apple 最混乱的几年。在商业上，有一阵曾传出 Apple 要被
+        Sun 收购的消息。
+
+        因此，Gil Amelio 开始和当时看好的 Be 谈，却因价格问题没有成功，最终转而
+        收购了 NeXT。而 Apple 合并 NeXT 后，NeXTSTEP 就演化为 Rhapsody，并最终
+        成为 Mac OS X。这些事情我们今后会详细再谈。
+
+        买完 NeXT 后，Steve Jobs 执政，Gil Amelio 因任 CEO 期间 Apple 亏损严重
+        而被炒。Steve Jobs 把信得过的人（很多是前 NeXT 员工）拉拢到周围，开始新
+        政，而同 Gil Amelio 有关的 Ellen Hancock 则在人事变动中被疏远。
+
+        Gil Amelio 总结他在 Apple 时期的工作时说：“Apple 是一艘底部有洞漏水的船
+        ，而我的工作是把这船引向正道。”（Apple is like a ship with a hole in a
+        bottom, leaking water, and my job is to get this ship pointed in the
+        right direction. ）Ellen Hancock 虽然同 Gil Amelio 一样，不知如何去堵这
+        个漏水的洞，但正是由于她在 Apple 的出色表现，不但把船引到了正道上，还找
+        来了有能力堵这个洞的人。
+
+    Mac OS X 背后的故事（二）Linus Torvalds的短视
+
+    :   一方面，设计一个微内核和相关的服务，可能造成各种设计上的灾难。GNU/Hurd
+        早在八十年代末就考虑尝试在 Mach 上写一系列 Unix 的服务层，结果他们始终
+        无法搞明白到底是让这些服务先发消息到另几个服务呢，还是考虑其他方案。所
+        以直到 2011 年我写这篇文章时，Hurd 项目依然处于半死不活的状态。而另一方
+        面，微内核的效率无法和传统内核相比，最简单的系统调用会涉及一系列底层服
+        务的互相通信。
+
+        Steve Jobs 考虑到 Linus Torvalds 是开源软件的领军人物，便继续以开源为话
+        题，动之以情，晓之以理。他告诉 Linus Torvalds，我们这个系统做出来后呢，
+        所有的 Unix 层（非图形界面层），都会开源，所以事实上你加入我们，也是在
+        给开源做贡献啊！而由于在开源圈子混久了，Linus Torvalds 对此丝亳不领情，
+        他认为，有谁会想用一个底层是开源而图形界面是不开源的系统呢？所以，像笔
+        者这样的用户被“代表”了。
+
+        这次讨论也使得 Apple 放弃 Linux，转而采用 FreeBSD 技术，并在 2001 年任
+        命 FreeBSD 的发起者、领军人物 Jordan Hubbard 为 BSD 技术小组的经理，并
+        在后来升为 Unix 技术总监。
+
+        而事实上这对 Apple 也是件好事。Apple 重要的是利益而不是折腾，即使是开源
+        也是利益驱动。像类似 Linux 开发组那样自以为是但代码又写得差的开源项目，
+        Apple 事后也遇到不少，比如 GCC 编译器项目组。虽然大把钞票扔进去，在先期
+        能够解决一些问题，但时间长了这群人总和 Apple 过不去，并以自己在开源世界
+        的地位恫吓之，最终 Apple 由于受不了这些项目组人员的态度、协议、代码质量
+        ，觉得还不如自己造轮子来得方便，因此 Apple 推动了类似 LLVM 这样宏伟的项
+        目，并且在短短几年内，使其成为最领先的开源软件技术。这无异于扇了 Linux
+        小组、GCC 小组一记响亮的耳光。
+
+    Mac OS X 背后的故事（三）Mach之父Avie Tevanian
+
+    :   所以 Mach 3 出来后，虽有少数微内核信徒继续执著地改进 Mach，或者开始其他
+        微内核比如 L4 的研究。但学术界对 Mach 的兴趣大减，因而 Mach 3 也成为最
+        后一版。项目解散后，Richard Rashid 去了微软研究院。
+
+        但由于 C++ 是门很恐怖的语言，所以 Apple 又把 C++ 给阉割了，去掉了多重继
+        承、模板、运行时动态以及异常，让开发者使用这种对于 Objective-C 来说换汤
+        不换药的 Clean C++ 来做驱动。
+
+        Mac OS X 早期版本不太稳定，所以会内核崩溃。10.0 版本会直接像 Linux 或者
+        BSD 那样打出回溯信息，很不美观，所以 Apple 在 10.2 版本开始设计了一个多
+        国语言的图片告诉用户你的内核崩溃了，以让内核崩得看起来更优雅一点。
+
+        ![](http://images.cnitblog.com/kb/1/201301/21213305-bf0bdab7c3024291bea697c65e51b93c.jpg)
+
+    Mac OS X 背后的故事（四）政客的跨界
+
+    :   这之后，Al Gore 在 Apple 内部的决策究竟起了什么作用，和 Mac OS X 的开发
+        有何关联，在正式的渠道很少有史料，但是他后来的各种公开活动，却给 Mac OS
+        X 的技术做足了广告，而且很多证据表明，他正是使 Apple 从被绿色人士攻击的
+        众矢之的的状态，成为业界注重电子产品环保领头羊的主要推手。
+
+        因此作为苹果展现公司软实力的重要机会，苹果非常重视这场讲话，请公司的图
+        形设计小组带领完成各种所需设计，苹果甚至特地请来了专业的设计公司 Duarte
+        来进行讲稿和讲话内容的安排。因此，不管是内容安排、图形设计还是技术支持
+        ，Al Gore 都有强有力的后盾，他们能够帮助Al Gore 完成任何想达到的目标。
+        不论是 FinalCut 还是 Keynote，一旦缺少任何 Al Gore 想要的功能，Apple 都
+        可以给他开小灶实现。在片末的走马灯字幕中，有大量 Apple 的 Keynote 组、
+        Final Cut 组和图形设计组的员工名字，以示鸣谢。
+
+        Al Gore 重新进入普通人的视野是在 2006 年，他推出了自己参与制作和演出的
+        纪录片《An Inconvenient Truth》（《难以忽视的真相》）和同名书籍。
+
+        可以说，没有 Mac OS X，就没有这部电影。而实际上这部电影的作用远胜过任何
+        一部 Apple 公司的广告。
+
+    Mac OS X 背后的故事（五）Jean-Marie Hullot的Interface Builder神话
+
+    :   聪明的 Hullot 开始动脑筋改进 Mac 编写用户程序难的现状。他开发了一个程序
+        ，有点像现在 Windows 系统中的“画板”。一侧的工具条，是类似菜单这样的大量
+        可重用的对象；而另一侧，则是程序员想构建的用户程序界面。只要把工具条上
+        的工具拖放到程序界面中，那么类似“打开”、“打印”等相关的功能，就可以被添
+        加到用户界面中。事实上，这个程序，是最早的一批能通过鼠标把控件拖入界面
+        设计窗口实现相应功能的商业程序，是用户界面设计软件的先驱。
+
+        这个跨时代的发明被称作 SOS，用 Lisp 语言编写【注：What are we going to
+        called this thing 中认为此时就是 Interface Builder，但据 The NeXTonian
+        等多处资料表明，在 Steve Jobs 见到以前，该程序名为 SOS】。当时，
+        ExperTelligence 开发了一种叫做 ExperLisp 的方言，SOS 即用此语言写成【注
+        ：http://en.wikipedia.org/wiki/Interface_Builder】。
+
+        经过不断努力，Hullot 找到了一个值得推销自己发明的好地方——剑桥的苹果大学
+        联盟（Apple University Consortium）。
+
+        但当他们一行人走到停车场时，Steve Jobs 让他手下把 Hullot 追了回来，当他
+        只身回到 NeXT 总部时，发现 Steve Jobs 正恭敬地等着他。
+
+        “我想要你计算机上那个程序”【注：http://rixstep.com/2/0/people/】，Steve
+        Jobs 说道：“你大概什么时候能开始给我们工作？”
+
+        Hullot 回答说自己翌日就要离开去度假。
+
+        “好吧，我两周后给你打电话，”Steve Jobs 说。
+
+        “不行，老乔”，Hullot 表示：“我不游美国，我可要环游欧洲，你七个礼拜后再
+        打给我吧。”
+
+        Steve Jobs 虽然一骨子傲气，但他明白一个简单的道理：21世纪最缺的是什么——
+        是人才！即使 Jean-Marie Hullot 玩起了大牌，这电话自然还是要打的。Hullot
+        刚一度完假回来，Steve Jobs 的电话就如期而至。
+
+        如此三顾茅庐般的热情，把 Jean-Marie Hullot 感动得第二天就登上了去美国的
+        飞机。合约签了半年，但实际上他最终在 NeXT 整整待了十年。在 NeXT 工作期
+        间，他使用 Objective-C 和 NeXTSTEP 框架重写了 SOS，命名为 Interface
+        Builder。由此，Interface Builder 成为 NeXT 集成开发环境 Project Builder
+        标准套件之一。
+
+        当然，一个负面的影响是，这样用一体化集成开发环境写程序，往往会发现屏幕
+        空间是不够的，所以像我这样用 11 寸 Air 或者 13 寸 Macbook Pro 的人，出
+        去打招呼都不好意思说自己是做 Mac 开发的。
+
+        但 Tim Berners-Lee 和别人不一样，他不仅围观了那台计算机，还看到了
+        Jean-Marie Hullot 设计的 Interface Builder，研究了 Objective-C，发现了
+        面向对象编程范式开发环境的最高成就。这情景让他心中漾起了巨大的波澜，最
+        终化为激情澎湃的投入，汇成了一行行面向对象的代码，一泻千里，奔向未来。
+
+        一年后，世界首个 HTTP 服务在 CERN 的 NeXT 计算机运行起来，而使用
+        Objective-C 和 Interface Builder 所编写的超文本语言编辑器兼浏览器同步发
+        行。他给这个主从式架构起了个好听的名字——World Wide Web（万维网）。
+
+    Mac OS X 背后的故事（六）上善若水
+
+    :   Apple 将“What's not a computer!”（看起来不是电脑的电脑）的概念应用在硬
+        件外观上，设计出具有浪漫主义气质，半透明“果冻” 式且具有艺术美感的 iMac
+        ，这成了 Aqua 设计灵感的来源。
+
+        Cocoa 之父 Bertrand Serlet，作为 Cordell Ratzlaff 的上司，对新界面很满
+        意。但当时，他们认为这个新界面实现起来难度很大，既没有时间也没有资源把
+        这个想法在 Mac OS X 中付诸实现。于是先前那位孤独的照葫芦画瓢的设计者只
+        好继续工作。
+
+    Mac OS X 背后的故事（七）上善若水下——Cordell Ratzlaff 引发的 Aqua 革命
+
+    :   在加班奋战的三周后，设计组用 Macromedia Director 完成了一个试验品。
+        Steve Jobs 亲自来 Cordell Ratzlaff 办公室视察了一下午。结果是他激动地握
+        着 Cordell Ratzlaff 的手，吐露心声：“你是苹果里我见到的第一个智商是三位
+        数字的人。”
+
+        设计是个有趣的领域。有些人认为，设计就是产品的外观看上去什么样。但其实
+        ，如果细想一下，你会发现设计其实是有关产品如何工作的学问。
+
+        18个月转瞬即逝，“你们就是一群白痴”的骂声依旧清晰，而此时的 Mac OS X 的
+        图形界面，已今非昔彼。
+
+        -- Steve Jobs
+
+        18 个月后的 2000 年 1 月，新世纪的钟声刚刚敲响，Steve Jobs 镇定地走上
+        MacWorld 大会的舞台，独领风骚的新世纪的经典大作 Aqua，此时，就要被他揭
+        开帷幕。
+
+    Mac OS X 背后的故事（八）三好学生Chris Lattner的LLVM编译工具链
+
+    :   在 Objective-C 中，设计了一个叫做 NSAutoReleasePool 的池，当开发者需要
+        完成一个任务时（比如每开启一个线程，或者开始一个函数），可以手动创立一
+        个这样的池子， 然后通过显式声明把物件扔进自动回收池中。
+        NSAutoReleasePool 内有一个数组来保存声明为 autorelease 的所有对象。如果
+        一个对象声明为 autorelease，则会自动加到池子里。如果完成了一个任务（结
+        束线程了，或者退出那个函数），则开发者需对这个池子发送一个 drain 消息。
+        这时，NSAutoReleasePool 会对池子中所有的物件发送 release 消息，把它们的
+        引用计数都减一 ——这就好比游泳池关门时通知所有客人都“滚蛋”一样。所以开发
+        者无需显式声明 release，所有的物件也会在池子清空时自动呼叫 release 函数
+        ，如果引用计数变成零了，系统才回收那块内存。所以这是个半自动、半手动的
+        方式。
+
+        2000年，本科毕业的 Chris Lattner 像中国多数大学生一样，按部就班地考了
+        GRE，最终前往 UIUC（伊利诺伊大学厄巴纳香槟分校），开始了艰苦读计算机硕
+        士和博士的生涯。在这阶段，他不仅周游美国各大景点，更是努力学习科学文化
+        知识，翻烂了“龙书”（《Compilers: Principles, Techniques, and Tools》）
+        ，成了 GPA 牛人【注：最终学分积 4.0 满分】，以及不断地研究探索关于编译
+        器的未知领域，发表了一篇又一篇的论文，是中国传统观念里的“三好学生”。他
+        的硕士毕业论文提出了一套完整的在编译时、链接时、运行时甚至是在闲置时优
+        化程序的编译思想，直接奠定了 LLVM 的基础。
+
+        刚进入 Apple，Chris Lattner 就大展身手：首先在 OpenGL 小组做代码优化，
+        把 LLVM 运行时的编译架在 OpenGL 栈上，这样 OpenGL 栈能够产出更高效率的
+        图形代码。如果显卡足够高级，这些代码会直接扔入 GPU 执行。但对于一些不支
+        持全部 OpenGL 特性的显卡（比如当时的 Intel GMA 卡），LLVM 则能够把这些
+        指令优化成高效的 CPU 指令，使程序依然能够正常运行。这个强大的 OpenGL 实
+        现被用在了后来发布的 Mac OS X 10.5 上。
+
+        此外 GCC 作为一个纯粹的编译系统，与 IDE 配合得很差。加之许可证方面的要
+        求，Apple 无法使用 LLVM 继续改进 GCC 的代码质量。于是，Apple 决定从零开
+        始写 C、C++、Objective-C 语言的前端 Clang，完全替代掉 GCC。
+
+        ![](http://pic004.cnblogs.com/news/201201/20120101_101100_1.jpg)
+
+        支持 C++ 也是 Clang 的一项重要使命。C++ 是一门非常复杂的语言，大多编译
+        器（如 GCC、MSVC）用了十多年甚至二十多年来完善对 C++ 的支持，但效果依然
+        不很理想。Clang 的 C++ 支持却一直如火如荼地展开着。2010 年 2 月 4 日，
+        Clang 已经成熟到能自举（即使用 Clang 编译 Clang，到我发稿时，LLVM 3.0
+        发布已完整支持所有 ISO C++ 标准，以及大部分C++ 0x 的新特性。
+
+        不单单是 Apple，诸多的项目和编程语言都从 LLVM 里取得了关键性的技术。
+        Haskell 语言编译器 GHC 使用 LLVM 作为后端，实现了高质量的代码编译。
+
+        LLVM 的成熟也给其他痛恨 GCC 的开发项目出了一口恶气。其中最重要的，恐怕
+        是以 FreeBSD 为代表的 BSD 社区。BSD 社区和 Apple 的联系一向很紧密，而且
+        由于代码相似，很多 Apple 的技术如 Grand Central Dispatch 也是最早移植到
+        FreeBSD 上。BSD 社区很早就在找 GCC 的替代品，无奈大多都很差（如
+        Portable C Compiler 产生的代码质量和 GCC 不能同日而语）。
+
+        LLVM 在短短五年内取得的快速发展充分反映了 Apple 对于产品技术的远见和处
+        理争端的决心和手腕，并一跃成为最领先的开源软件技术。而 Chris Lattner 在
+        2010 年也赢得了他应有的荣誉——Programming Languages Software Award（程序
+        设计语言软件奖）。
+
+    Mac OS X 背后的故事（九）半导体的丰收
+
+    :   苹果向 64 位处理器的迁移花了整整 6 年时间，远长于该公司其他技术的迁移——
+        向 Intel 的迁移仅用了一年时间，从经典 Mac OS 到 Mac OS X 也仅用了三年时
+        间。总而言之，这场迁移是非常成功的：一方面，用户基本无痛苦，老的 32 位
+        程序在目前最新版的 Mac OS X Lion 中依然可以完全兼容地执行；另一方面，对
+        开发者而言，基本只需做微小的调整，重新编译程序，而且若干技术如
+        Universal Binary，使他们发布程序非常方便。当然，对于某些大量使用过时技
+        术的公司，如 Adobe 和 Microsoft，这场迁移则要折腾得多。
+
+        所以程序写着写着，就忘了一个变量到底是给 CPU 用的还是给 GPU 用的，这无
+        疑增加了学习难度。
+
+        OpenCL 则是苹果为这个新局面画下的蓝图。这项技术初期全称为 Open
+        Computing Library（如果留意苹果早期宣传广告的话），后改名为 Open
+        Computing Language。这项技术从本质上来说，和 CUDA 并没有太多的两样，但
+        由于苹果在借鉴他人技术并把他人技术改得更棒这一点上是出了名的，所以
+        OpenCL 很好地解决了以上所有问题。
+
+    Mac OS X 背后的故事（十）Mac OS X文件系统的来龙去脉
+
+    :   ZFS 的一个重大特点就是拥有大容量。ZFS 是一个 128 位的文件系统，这意味着
+        它能存储 1800 亿亿（18.4×1018）倍于当前 64 位文件系统的数据。ZFS 的设计
+        如此超前以至于这个极限就当前现实而言可能永远无法遇到。项目领导 Bonwick
+        曾说：“要填满一个 128 位的文件系统，将耗尽地球上所有存储设备，除非你拥
+        有煮沸整个海洋的能量。”假设每秒钟创建 1000 个新文件，达到 ZFS 文件数的
+        极限需要约 9000 年。
+
+        此外，ZFS 的一个重要指导思想是不单单去做一个文件系统，而是实现一套完整的卷管理方案。
+
+        无论如何，Mac OS X的 ZFS 支持，如昙花一现般消失了。
 
 [开源云计算技术初探 | YY42](http://www.yy42.net/blog/?p=381)
 
@@ -19853,6 +20521,121 @@ Disallow:
     还有些没有说完的话题今后会在补遗中写写。
 
 [Hamming weight - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hamming_weight)
+
+:   The Hamming weight of a string is **the number of symbols** that are different
+    from the zero-symbol of the alphabet used. It is thus equivalent to the
+    **Hamming distance** from the all-zero string of the same length. For the most
+    typical case, a string of bits, this is the number of 1's in the string. In
+    this binary case, it is also called the population count, popcount, or
+    sideways sum. It is the digit sum of the binary representation of a
+    given number and the ℓ₁ norm of a bit vector.
+
+    |   string     | Hamming weight |
+    | :------:     | :------------: |
+    | 11101        |    4           |
+    | 11101000     |    4           |
+    | 00000000     |    0           |
+    | 789012340567 |   10           |
+
+    The **population count of a bitstring** is often needed in cryptography and
+    other applications. The Hamming distance of two words A and B can be
+    calculated as the Hamming weight of **A xor B**.
+
+    The problem of how to implement it efficiently has been widely studied.
+    Some processors have a single command to calculate it (see below), and some
+    have parallel operations on bit vectors. For processors lacking those
+    features, the best solutions known are based on adding counts in a tree
+    pattern. For example, to count the number of 1 bits in the 16-bit binary
+    number a = `0110 1100 1011 1010`, these operations can be done:
+
+    ![](http://whudoc.qiniudn.com/2016/hamming-code.png)
+
+    Here, the operations are as in C, so `X >> Y` means to shift X right by Y
+    bits, `X & Y` means the bitwise AND of X and Y, and `+` is ordinary addition.
+    The best algorithms known for this problem are based on the concept
+    illustrated above and are given here:
+
+    ```cpp
+    //types and constants used in the functions below
+
+    const uint64_t m1  = 0x5555555555555555; //binary: 0101...
+    const uint64_t m2  = 0x3333333333333333; //binary: 00110011..
+    const uint64_t m4  = 0x0f0f0f0f0f0f0f0f; //binary:  4 zeros,  4 ones ...
+    const uint64_t m8  = 0x00ff00ff00ff00ff; //binary:  8 zeros,  8 ones ...
+    const uint64_t m16 = 0x0000ffff0000ffff; //binary: 16 zeros, 16 ones ...
+    const uint64_t m32 = 0x00000000ffffffff; //binary: 32 zeros, 32 ones
+    const uint64_t hff = 0xffffffffffffffff; //binary: all ones
+    const uint64_t h01 = 0x0101010101010101; //the sum of 256 to the power of 0,1,2,3...
+
+    //This is a naive implementation, shown for comparison,
+    //and to help in understanding the better functions.
+    //It uses 24 arithmetic operations (shift, add, and).
+    int popcount_1(uint64_t x) {
+        x = (x & m1 ) + ((x >>  1) & m1 ); //put count of each  2 bits into those  2 bits
+        x = (x & m2 ) + ((x >>  2) & m2 ); //put count of each  4 bits into those  4 bits
+        x = (x & m4 ) + ((x >>  4) & m4 ); //put count of each  8 bits into those  8 bits
+        x = (x & m8 ) + ((x >>  8) & m8 ); //put count of each 16 bits into those 16 bits
+        x = (x & m16) + ((x >> 16) & m16); //put count of each 32 bits into those 32 bits
+        x = (x & m32) + ((x >> 32) & m32); //put count of each 64 bits into those 64 bits
+        return x;
+    }
+
+    //This uses fewer arithmetic operations than any other known
+    //implementation on machines with slow multiplication.
+    //It uses 17 arithmetic operations.
+    int popcount_2(uint64_t x) {
+        x -= (x >> 1) & m1;             //put count of each 2 bits into those 2 bits
+        x = (x & m2) + ((x >> 2) & m2); //put count of each 4 bits into those 4 bits
+        x = (x + (x >> 4)) & m4;        //put count of each 8 bits into those 8 bits
+        x += x >>  8;  //put count of each 16 bits into their lowest 8 bits
+        x += x >> 16;  //put count of each 32 bits into their lowest 8 bits
+        x += x >> 32;  //put count of each 64 bits into their lowest 8 bits
+        return x & 0x7f;
+    }
+
+    //This uses fewer arithmetic operations than any other known
+    //implementation on machines with fast multiplication.
+    //It uses 12 arithmetic operations, one of which is a multiply.
+    int popcount_3(uint64_t x) {
+        x -= (x >> 1) & m1;             //put count of each 2 bits into those 2 bits
+        x = (x & m2) + ((x >> 2) & m2); //put count of each 4 bits into those 4 bits
+        x = (x + (x >> 4)) & m4;        //put count of each 8 bits into those 8 bits
+        return (x * h01)>>56;  //returns left 8 bits of x + (x<<8) + (x<<16) + (x<<24) + ...
+    }
+    ```
+
+    As Wegner (1960) described, the bitwise and of x with x − 1 differs from
+    x only in zeroing out the least significant nonzero bit: subtracting 1
+    changes the rightmost string of 0s to 1s, and changes the rightmost 1 to a
+    0. If x originally had n bits that were 1, then after only n iterations of
+    this operation, x will be reduced to zero. The following implementation is
+    based on this principle.
+
+    ```cpp
+    //This is better when most bits in x are 0
+    //It uses 3 arithmetic operations and one comparison/branch per "1" bit in x.
+    int popcount_4(uint64_t x) {
+        int count;
+        for (count=0; x; count++)
+            x &= x-1;
+        return count;
+    }
+    ```
+
+    If we are allowed greater memory usage, we can calculate the Hamming weight
+    faster than the above methods. With unlimited memory, we could simply
+    create a large lookup table of the Hamming weight of every 64 bit integer.
+    If we can store a lookup table of the hamming function of every 16 bit
+    integer, we can do the following to compute the Hamming weight of every 32
+    bit integer.
+
+    ```cpp
+    static uint8_t wordbits[65536] = { /* bitcounts of integers 0 through 65535, inclusive */ };
+    static int popcount(uint32_t i)
+    {
+        return (wordbits[i&0xFFFF] + wordbits[i>>16]);
+    }
+    ```
 
 [trigonometry - How to use the PI constant in C++ - Stack Overflow](http://stackoverflow.com/questions/1727881/how-to-use-the-pi-constant-in-c)
 
@@ -19921,7 +20704,75 @@ Disallow:
 
 [Web 查询引擎 -- Lingoes Translator 灵格斯词霸](http://www.lingoes.cn/zh/translator/webengine.htm)
 
+:   ```tzx-plain
+    搜索引擎类
+
+    |   Google              |   `<engine id="google.com" name="Google" url="http://www.google.com/search?q=[$key]&amp;hl=[$langcode]" />` |
+    | :---: | :--- |
+    |   Yahoo               |   `<engine id="yahoo.com" name="Yahoo" url="http://search.yahoo.com/search?p=[$key]&amp;ei=UTF-8" />` |
+    |   Bing                |   `<engine id="bing.com" name="Bing" url="http://www.bing.com/search?q=[$key]" />` |
+    |   百度                |   `<engine id="baidu.com" name="百度" url="http://www.baidu.com/s?wd=[$key]" />` |
+    |   搜狗                |   `<engine id="sogou.com" name="搜狗" url="http://www.sogou.com/web?query=[$key]" />` |
+    |   Yahoo! 奇摩         |   `<engine id="tw.search.yahoo.com" name="Yahoo! 奇摩" url="http://tw.search.yahoo.com/search?p=[$key]&ei=UTF-8" />` |
+
+    在线词典英汉简体类
+
+    |   海词在线 Dict.cn            |  `<engine id="dict.cn" name="海词在线" url="http://dict.cn/search.php?q=[$key]&amp;placeholder=Lingoes" />`  |
+    | :---: | :--- |
+    |   百度词典                    |  `"百度词典", "http://www.baidu.com/baidu?ie=utf-8&ct=1048576&word=[$key]"`  |
+    |   爱词霸                      |  `<engine id="iciba.com" name="爱词霸" url="http://www.iciba.com/search?s=[$key]" codepage="" />`  |
+    |   Babylon                     |  `<engine id="babylon.com" name="Babylon" url="http://dictionary.babylon.com/[$key]/" />`  |
+    |   汉典                        |  `<engine id="zdic.net" name="汉典" url="http://www.zdic.net/sousuo/?q=[$key]" codepage="" />`  |
+    |   CNKI 科技词典               |  `<engine id="cnki.net" name="CNKI 科技词典" url="http://dict.cnki.net/dict_result.aspx?tjType=all&amp;searchword=[$key]" />`  |
+    |   有道词典                    |  `<engine id="yodao.com" name="有道" url="http://dict.yodao.com/search?q=[$key]&ue=utf8&keyfrom=dict.index" />`  |
+    ```
+
 [Ubuntu 14.04 重启网卡 — » Kumu's Blog](http://blog.opskumu.com/ubuntu-network-br0.html)
+
+:   > Stopping or restarting the networking job is not supported. Use `ifdown`{.bash} & `ifup`{.bash} to reconfigure desired interface.
+
+    ```bash
+    $ cat /etc/issue
+    $ service  networking restart
+    $ tail -f /var/log/upstart/networking.log
+    ```
+
+    ```bash
+    # restart: down, then up
+    ifdown eth0
+    ifup eth0
+
+    # restart all, except lo
+    ifdown --exclude=lo -a && sudo ifup --exclude=lo -a
+    ```
+
+    bridging
+
+    ```bash
+    $ apt-get install bridge-utils
+    $ cat /etc/network/interfaces
+    auto lo
+    iface lo inet loopback
+
+    auto eth0
+    iface eth0 inet manual
+
+    auto br0
+    iface br0 inet static
+    address 192.168.0.10
+    netmask 255.255.255.0
+    gateway 192.168.0.1
+    bridge_ports eth0
+    bridge_stp off
+    bridge_fd 0
+    bridge_maxwait 0
+    dns-nameservers 192.168.0.1
+
+    $ ifup br0
+    $ brctl  show
+    bridge name	bridge id		STP enabled	interfaces
+    br0		8000.02000a0080e1	no		eth0
+    ```
 
 [Google Pro Tip: Use Back-of-the-envelope-calculations to Choose the Best Design - High Scalability -](http://highscalability.com/blog/2011/1/26/google-pro-tip-use-back-of-the-envelope-calculations-to-choo.html)
 
@@ -20019,9 +20870,11 @@ Disallow:
 
 :   BFG, for "Big F***ing Gun"
 
-[C Programming (豆瓣)](https://book.douban.com/subject/2585403/)
+[C Programming - A Modern Approach, 2nd Edition (豆瓣)](https://book.douban.com/subject/2585403/)
 
 [mc-gulu/mooc_chinese_culture](https://github.com/mc-gulu/mooc_chinese_culture)
+
+:   中国文化概论
 
 [The Chicken and the Pig - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/The_Chicken_and_the_Pig)
 
@@ -20037,27 +20890,58 @@ Disallow:
 :   而刚入行的工程师，只能报告一些比较琐碎的成就。
 
     做出 MapReduce 框架的和写琐碎 MapReduce 程序的工程师之间的差距并不是他们的
-    工具和编程效率，也往往不是教育背景或者经验，而是他们各自的杠杆：所带领的团
-    队。
+    工具和编程效率，也往往不是教育背景或者经验，而是他们**各自的杠杆：所带领的团队**。
 
     运用常识
 
     逐渐习得的管理技能
 
     这不是入学考试，慢慢积累最省时省事。就像练习武术一样，最强的斗士绝不是看书
-    最多或者理论最强的，而是训练时间最长的。
+    最多或者理论最强的，而是**训练时间最长的**。
 
     问题变了，不管以前多么神奇的管理方法都会变得一地鸡毛，因为管理方法不能脱离
     要解决的问题。
 
-    尽管写日记并不能直接解决技术管理上的难题，却打开了反思之门，也把许多事情前
-    因后果连接起来。
+    尽管写日记并不能直接解决技术管理上的难题，却**打开了反思之门，也把许多事情前
+    因后果连接起来**。
 
 [Alexander Pope - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Alexander_Pope)
 
+:   爱伦坡
+
+    ![Alexander Pope (c. 1727), an English poet best known for his Essay on
+        Criticism, The Rape of the Lock and The Dunciad](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Alexander_Pope_by_Michael_Dahl.jpg/330px-Alexander_Pope_by_Michael_Dahl.jpgs)
+
+    Alexander Pope (21 May 1688 – 30 May 1744) was an 18th-century English
+    poet. He is best known for his satirical verse, as well as for his
+    translation of Homer. Famous for his use of the heroic couplet, he is the
+    second-most frequently quoted writer in The Oxford Dictionary of
+    Quotations, after Shakespeare.
+
 [cloudwu/bpa](https://github.com/cloudwu/bpa)
 
+:   A bump pointer allocator.
+
 [Wikipedia:Too long; didn't read - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn%27t_read)
+
+:
+    **Too long; didn't read** (abbreviated **tl;dr** and **tldr**) is a shorthand notation
+    added by an editor indicating a passage appeared to be too long to invest
+    the time to digest. Long used on the Internet, it has birthed the wikilink
+    **TL;DR** to indicate a cited passage is being protested. Wall of text is
+    kindred.
+
+    The tl;dr label is sometimes used constructively by an author to introduce
+    a short summation of a longer piece. However, it is all too often invoked
+    as a tactic to thwart collaborative editing, or, worse, a stoop to
+    ridicule.
+
+    This essay examines tl;dr as used in Wikipedia discussions, offering
+    insight into the cause of excessive length, suggestions on how to reduce
+    it, and a reminder to always exercise civility with other editors when
+    paring.
+
+    这段英文有点难……
 
 [有什么道理是开始注重外表几年后才能悟出来的？ - Sophia 的回答 - 知乎](http://www.zhihu.com/question/31637529/answer/54173168)
 
@@ -20082,16 +20966,38 @@ Disallow:
 
 [科学网—导师为何不能帮助学生找工作呢？ - 鲍海飞的博文](http://blog.sciencenet.cn/blog-278905-944000.html)
 
+:   导师是否要为学生找工作，这是个仁者见仁，智者见智的问题。
+
+    当时正值美国大萧条时期（Great Depression,1929-1933年）。特尔曼教授一直为该
+    系的学生能否找到好的就业而担忧（此处看，他是一个负责任、深谋远虑、敢于担当
+    的人！）。他感觉非常困扰的是，他最好的学生不得不到东海岸---在无线电领域去谋
+    个职位，他心中的一个念头就是要在斯坦福大学就地建立当时的新兴的无线电技术‘中
+    心’‘以此解决就业、留住人才’。(…was concerned by the lack of good employment
+    opportunities in the area for Stanford engineering graduates. It troubled
+    him that his best graduates had to go to the East coast to find employment…
+    .. His solution was to establish the then-new radio technology locally.)
+
+    纵观历史，清晰可见，硅谷的成立，很大程度上是依赖于斯坦福大学电子科学系的教
+    授特尔曼。他一开始的出发点就是为了让那些好的学生留下来找到工作为宗旨，而不
+    必到繁华的东部去发展，而是就地发展。在此过程中，他十分成功地连接了大学和企
+    业之间的关系。在斯坦福大学周围建立工业园区(大约1951年)，并使得而且只能是从
+    事科技的公司进入工业园区。由此，诞生出了世界上最有创新力的地方，成为世界其
+    他各国竞相效仿的对象，积极地复制硅谷，造就自己国家的科技创新基地！
+
+    导师推荐，体现了导师的一份爱心和雄心，这里面包含着导师的一份自信：相信我的
+    学生是好样的。而作为学生，在新的境地环境，也不要辜负导师的一片苦心。导师不
+    推荐学生，也是由于某种原因，作为学生也不能强人所难，因为时代境况都不同了。
+
 [`brian d foy` style guide](http://www252.pair.com/comdog/style.html)
 
 :   Any capitalization is incorrect unless each letter is capitalized.
-    Title case is incorrect.
+    **Title case** is incorrect.
 
-    Recasting the sentence avoids the problem.
+    **Recasting the sentence avoids the problem.** (写论文的时候经常这么干哈哈。)
 
     > "But I tell you, a cat needs a name that's particular,
     >
-    > A name that's peculiar, and more dignified."
+    > A name that's peculiar (`[pɪ'kjulɪɚ]`, 独特的), and more dignified (有尊严的)."
     >
     > -- Old Possum
 
@@ -20171,11 +21077,7 @@ Disallow:
 
 [cmd - Windows equivalent to UNIX pwd - Stack Overflow](http://stackoverflow.com/questions/921741/windows-equivalent-to-unix-pwd)
 
-:   It is cd for "current directory".
-
-    this prints it in the console
-
-    `echo %cd%`
+:   this prints it in the console: `echo %cd%`{.bash}
 
     or paste this command in CMD, then you'll have pwd:
 
@@ -20184,9 +21086,52 @@ Disallow:
     echo echo ^%cd^%) > C:\WINDOWS\pwd.bat
     ```
 
+    可以看到 `cd` 其实是一个环境变量，跟 `PATH` 一样。（不区分大小写）
+
 [Posts ‐ apple4us](http://apple4us.com/post/)
 
 [如何保证网页的字体在各平台都尽量显示为最高质量的黑体？ - 平面设计 - 知乎](http://www.zhihu.com/question/19911793)
+
+:   Linux 社区常用的简体中文介面字体似乎主要有文泉驿点阵宋体、文泉驿正黑和文泉
+    驿微米黑，另有一些人会把 Windows 或 OS X 的字体拿去用。文泉驿点阵宋体类似
+    Windows 的中易宋体，而文泉驿正黑是在无自由黑体可用的情况下被迫制作的质量不
+    太高的黑体。文泉驿微米黑是 Linux 社区现有的最佳简体中文介面字体，但它没有粗
+    体。
+
+    为网页设定字体时有以下目的须达成：
+
+      - 对于 Windows：在中易宋体和微软雅黑之间二选一。粗体和较大字号的文本用微
+        软雅黑。没有微软雅黑的系统会回退到中易宋体。
+      - 对于 OS X：尽量使用冬青黑体简体中文。没有冬青黑体简体中文的系统会回退到
+        华文黑体。
+      - 对于 iOS：系统会自动使用华文黑体。
+      - 对于 Linux：尽量使用文泉驿微米黑。没有文泉驿微米黑的系统会回退到别的字
+        体。
+      - 对于 Android：系统会自动使用 Droid Sans。
+
+    two choices
+
+    - 控制（为 Windows 选择微软雅黑，为 Linux 选择文泉驿微米黑）
+    - 自由（仅在 OS X 上尽量使用冬青黑体简体中文，放任其他平台使用默认字体）
+
+    不要轻易把中文网页的 font-family 写成以「serif」结尾，因为如果列出的字体都
+    没有，系统会按照「serif」的指示去用归于 serif 的中文字体，这样不符合我们尽
+    量使用黑体的原则。
+
+    如果你将西文字体设置为 Georgia 之类的 serif 字体（即，与列表后面的
+    sans-serif 中文字体不属一类），且 WebKit 内核的 UA（OS X 的 Safari 是个典型
+    ）找不到你指定的任何中文字体，可能会导致 UA 用系统默认的 serif 中文字体。
+
+    fonts
+
+      - 冬青黑体简体中文, Hiragino Sans GB
+      - WenQuanYi Micro Hei
+      - Microsoft YaHei
+      - 中易宋体, SimSun
+
+    refs and see also
+
+      - [在网页中嵌入任意字体的解决方案 - 网页制作 - 蓝色理想](http://www.blueidea.com/tech/web/2009/7263.asp)
 
 [Larry Wall 专访——语言学、Perl 6 的设计和发布 - 简书](http://www.jianshu.com/p/b920a1a469b2)
 
@@ -20202,12 +21147,13 @@ Disallow:
     1. 你删代码比队友快 “first blood”
     2. 自动补全比队友快
     3. 在20个G的文件堆里定位代码各种秒杀你队友
-    4. 在vim中完成各种shell ， 秒杀你队友 “Killing spree”!
+    4. 在vim中完成各种shell ， 秒杀你队友 “Killing spree (无节制的狂热行为)”!
     5. 优雅的更新升级， 删除 Vim插件（前提 Vundle） “Dominating”!
     6. 随性的自定义快捷键，完全属于你自己的风格， 一个配置文件随身带着走。或者压缩Vim文件包带着走， 想去哪就去哪，不用等你队友带节奏。 Unstoppable！
     7. 你队友还在用鼠标？那你已经进化了 。 Wicked Sick！！
     8. 什么？ 开始用 Vim Markdown 来写文档了？ 我草，你已经超神了！！ God Like！！！
-    9. 你已经离不开Vim了。 从最开始被各种折腾到想要砸键盘的你， 如今你已经爱上他了。 aM-m-m-m....（重复8次）Monster Kill 10. 你注定和 Vim 过完这一生！......Holy Shit
+    9. 你已经离不开Vim了。 从最开始被各种折腾到想要砸键盘的你， 如今你已经爱上他了。 aM-m-m-m....（重复8次）Monster Kill
+    10. 你注定和 Vim 过完这一生！......Holy Shit
 
 [Web 中文字体应用指南 » Topics » Ruby China](https://ruby-china.org/topics/14005)
 
@@ -20253,6 +21199,50 @@ Disallow:
       - [ZARD!!](http://www.douban.com/doulist/537743/?start=25&sort=time&sub_type=)
 
 [2B Lab欢乐多-死线年年有年年都很多 - 与食巨近贱多食广地蹦跶在不列颠 - 知乎专栏](http://zhuanlan.zhihu.com/ciciatc/19589985)
+
+:   学姐和我给屋里每个人起了一个昵称，比如乔治欧是三舅舅等等，以保证无论中文英
+    文八卦他们都听不懂。
+
+    三年来屋里人来人往，一直没有中国人。今年老板忽然招了一个中国学生。这下我俩
+    真的很发愁啊ToT... 如何起一个昵称让他即使用中文听到也不知道是他呢？最后我决
+    定管这位新生叫：那个外国人。
+
+    某一天舅舅忍不住了从冰箱里拿了一个提拉米苏。舅舅一边吃一边跟学姐感慨：「我
+    得跟Cheng谈谈，以后不能再买那么多甜点了。我管不住自个儿。」他话音刚落我就拎
+    着新一袋子的甜点晃悠进来了。于是我很疑惑地看着斯巴达的舅舅不知道发生了什么
+    。
+
+    最后，虽然早餐吃一大盘水果非常开心，可我真的真的真的很想吃油条, 小笼包，鸡
+    蛋灌饼，煎饼果子...
+
+    Two Dots。 一个一两分钟可以打完一局的小游戏， iOS only,  英国区美国区免费，
+    中区原版未上架，只有一个山寨。原版免费，中国区的山寨收费。这件事现在把我恶
+    心到了。
+
+    反正每次一般就只补一个洞就是了。一般预约到三天后就可以烧高香庆祝人品好。做3
+    颗牙的重新补+洗牙做了一个多月。每次打完麻药后，脸都要麻一个下午。回到lab之
+    后，意大利熊伙伴乔万尼总是摩拳擦掌地问：我现在是不是扇你一个耳光你都不会痛
+    ！s
+
+    通过小伙伴们的指点，我终于领会了在英国看医生和牙医的奥义：一定不能精准地描
+    述自己的病情，请务必把自己往死里说。
+
+    我：……甲硝唑，剂量是xxx。阿姨：噢，那是我给你开的剂量不够啊，那我再给你开点
+    。……阿姨，我是中国人，我们从小拿抗生素当糖吃的，这在世界上都有reputation的
+    吧……现在你来跟我说上次的剂量不够要加大？？？？
+
+    经验教训：有牙该拔直接拔，莫待牙疼狂挠墙。去英国前最好在国内看好牙医。英国
+    牙医适合做洗牙。补牙勉强也算可以，尽量不要在英国等着公立医院排队拔牙。另，
+    有在美国加州的朋友说：他拔了2颗阻生智齿+做了根管治疗和牙冠，在保险公司付了
+    一部分费用之后，他自己还需要为每颗牙付1000美金。英国免费医疗，所以医生倾向
+    于不作为，尽量叫你弃疗自愈。比如不舒服了想约全科医生十有八九都约到10天以后
+    。根本无法约专科医生，都是全科医生GP。 GP觉得你哪里不对了，才会推荐你去专科
+    医生。美国医生倾向于过度治疗。反正自己付钱，收费单经常吓死人。
+
+    refs and see also
+
+      - [美国公司英国分部的食堂，只有早餐可以调众口了 - 与食巨近贱多食广地蹦跶在不列颠 - 知乎专栏](http://zhuanlan.zhihu.com/p/20057948)
+      - [英国牙医历险记（血泪史） - 与食巨近贱多食广地蹦跶在不列颠 - 知乎专栏](http://zhuanlan.zhihu.com/p/19715685)
 
 [Matrix67 水平怎么样？ - 吴告于的回答 - 知乎](http://www.zhihu.com/question/20823906/answer/16329313)
 
@@ -20857,11 +21847,20 @@ Disallow:
     ./build.sh
     ```
 
+<div class="tzx-drawer">
 [Content Folding | CSS-Tricks](https://css-tricks.com/content-folding/)
+
+:   我现在用的是 `tzx-drawer` 来 fold 掉 `<dd>`{.html} 元素，点击可以切换
+    fold 的状态。
+
+    单击这里，就可以隐藏内容。
+</div>
 
 [Styling `<hr>`{.html} with CSS](http://www.sovavsiti.cz/css/hr.html)
 
-:   ```html
+:   有点赖皮。
+
+    ```html
     <div class="hr"><hr /></div>
     ```
 
@@ -20893,7 +21892,7 @@ Disallow:
     $ git checkout -- .
 
     # change author after commit
-    $ git commit --amend --author="TANg ZhiXiong <dvorak4tzx@qq.com>"
+    $ git commit --amend --author="TANG ZhiXiong <dvorak4tzx@qq.com>"
 
     # https -> ssh
     $ git config --remote.origin.url git@github.com:<user>/proj.git
