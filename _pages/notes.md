@@ -7173,130 +7173,9 @@ single quote 	222
             onload: "lzld(this)"
         });
     });
-    $(document).ready(function(){
-        var pathStringList = document.location.toString().split('/');
-        var isLocal = 'file' === pathStringList[0].split(':')[0];
-        var mdPath = 'https://github.com/district10/blog/commits/master';
-        var rawPath = 'https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/master';
-        var basePath = 'https://github.com/district10/blog';
-
-        function show() {
-            var hides = document.getElementsByClassName('tzx');
-            if ( hides.length !== 0 ) {
-                hides[0].style.visibility = 'visible';
-            }
-        };
-
-        function dvorak4tzx( pathParts ) {
-            filename = pathParts[ pathParts.length - 1 ];
-            basename = filename.split('.')[0];
-            if ( 'index' === basename.substring(0, 5)
-               || document.location.toString().endsWith('.com')
-               || document.location.toString().endsWith('.me') ) {
-                mdPath   = basePath;
-                rawPath  = basePath;
-            } else if ( 'post-' === basename.substring(0, 5) ) {
-                filename = ( '/_posts/' + basename + '.md' );
-                mdPath  += filename;
-                rawPath += filename;
-            } else {
-                filename = '/_pages/' + basename + '.md';
-                mdPath  += filename;
-                rawPath += filename;
-            }
-
-            $('#ghraw').href = rawPath;
-            $('#ghpage').href = mdPath;
-        };
-
-        dvorak4tzx( pathStringList );
-
-        function appendSharpToHdrs( hdrs ) {
-            for ( var i = 0; i < hdrs.length; ++i ) {
-                var sharp = document.createElement( 'a' );
-                sharp.href = '#' + hdrs[i].id;
-                sharp.className = 'hdrRef';
-                // sharp.innerText = '#';
-                sharp.textContent = '#';
-                hdrs[i].appendChild( sharp );
-            }
-        };
-
-        function appendSharp() {
-            h1s = document.getElementsByTagName( 'h1' );
-            h2s = document.getElementsByTagName( 'h2' );
-            h3s = document.getElementsByTagName( 'h3' );
-            h4s = document.getElementsByTagName( 'h4' );
-            appendSharpToHdrs( h1s );
-            appendSharpToHdrs( h2s );
-            appendSharpToHdrs( h3s );
-            appendSharpToHdrs( h4s );
-        };
-
-        function getQueryStrings() {
-            var assoc  = {};
-            var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
-            var queryString = location.search.substring(1);
-            var keyValues = queryString.split('&');
-
-            for(var i in keyValues) {
-                var key = keyValues[i].split('=');
-                if (key.length > 1) {
-                    assoc[decode(key[0])] = decode(key[1]);
-                }
-            }
-
-            return assoc;
-        }
-
-        var qs = getQueryStrings();
-        var shallShow = 'true' === qs['show'] || 'false' === qs['hide'];
-        var shallHavePrivilege = !('off' === qs['local']);
-
-        function hideNoMore( cb ) {
-            var hides = document.getElementsByClassName('hide');
-            for ( var i = 0; i < hides.length; ++i ) {
-                hides[i].style.visibility = 'visible';
-                cb( hides[i] );
-            }
-        };
-
-        if ( ( isLocal && shallHavePrivilege  ) || shallShow ) {
-            hideNoMore( function( h ) {
-                if ( isLocal ) {
-                    if ( shallHavePrivilege ) {
-                        h.style.border = '2px dashed pink'; // privilege
-                    } else {
-                        h.style.border = '2px dashed lime'; // lame
-                    }
-                }
-            });
-        };
-
-        if ( isLocal && qs['more'] === 'false' ) {
-            if ( document.location.toString().endsWith("index2.html") ) {
-                document.location = "index.html"
-            }
-        };
-
-        appendSharp();
-    });
-    $(function() {
-        $( ".tzx-tabs" ).tabs();
-    });
-    $(function() {
-        $('#showDisqus').on('click', function(){
-            console.log('loading disqus...');
-            $.ajax({
-                type: "GET",
-                url: "http://dvorak4tzx.disqus.com/embed.js",
-                dataType: "script",
-                cache: true
-            });
-            $(this).fadeOut();
-        });
-    });
     ```
+
+    更多，见 [main.js](main.js)
 </div>
 
 - VS
@@ -17353,7 +17232,11 @@ foreach (1..10) {
 ---
 
 在欧美国家，一些大红的明星因某一专辑，或者某一行为，成绩大不如前（单曲、专辑销售
-量惨淡，演唱会无人买单、惹人讨厌等等）都可以称为“flop”。
+量惨淡，演唱会无人买单、惹人讨厌等等）都可以称为“flop (`[flɑp]`, 笨拙地抛下；扑通放下；拍（翅）)”。
+
+flappy, `['flæpi]`, adj. 飞扬的
+
+[Flappy Bird - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Flappy_Bird)
 
 ```bash
 # d: debug, e: evaluate (one liner), l: ?process line ending
@@ -17402,21 +17285,20 @@ VimFx
     s, sa           ; stop loading
     ```
 
-Firefox 浏览器的优点：默认的字体大点。
-
-`c-d`, bookmark
-`c-h`, history
-`c-b`, bookmarks sidebar
-`c-s-h`, library list
-
+<div class="tzx-fright">
+![](http://www.imagemagick.org/Usage/img_diagrams/glyph_metrics.gif)
+</div>
 
 ```html
 <img src="extension/skin/icon128.png" alt="" align="right">
 ```
 
-<div class="tzx-fright">
-![](http://www.imagemagick.org/Usage/img_diagrams/glyph_metrics.gif)
-</div>
+Firefox 浏览器的优点：默认的字体大点。
+
+  - `c-d`, bookmark
+  - `c-h`, history
+  - `c-b`, bookmarks sidebar
+  - `c-s-h`, library list
 
 ```cpp
 int main(int argc, char **argv)
@@ -17452,7 +17334,7 @@ In vim `g#` v.s. `#`
 Jumplist `:h jumplist`, `:h CTRL-O` (older), `:h CTRL-I`, `:h ju[mp]`
 ```
 
-#. “先辈的罪”（Sins of our Forefathers）
+#. “先辈的罪”（**Sins of our Forefathers**）
 #. Mental Speedbump（头脑减速杠）
 #. vim statistics: selection &rarr; `g<C-g>`{.vim}
 
@@ -17462,7 +17344,7 @@ Jumplist `:h jumplist`, `:h CTRL-O` (older), `:h CTRL-I`, `:h ju[mp]`
 `<script type="text/javascript" src="main.js"></script>`{.html}
   ~ script 是脚本，插入到本地，所以是 `src`{.html}，类似 LaTeX 里的 `\input{path}`{.tex}
 
-`<img src="http://gnat.qiniudn.com/pics/projection2.png" alt="" />`{.html}
+`<img src="http://gnat.qiniudn.com/foo/bar.jpg" alt="" />`{.html}
   ~ img 也是插入的内容，所以用 `src`{.html}，`alt`{.html} 既可以在无法加载图片的时候显示提示，也可以用在 <kbd>Control+C</kbd>
 
 `git remote set-url origin git@git.coding.net:xxxx/yyyy.git`{.bash}
@@ -19643,12 +19525,34 @@ Disallow:
 
 [如何才能去做喜欢的事情](http://www.wanglianghome.org/zh_CN/translation/HowToDoWhatYouLove.html)
 
+:   How To Do What You Love
+
+    by Paul Graham
+
+    有一种说法，中高层人士都喜欢自己的工作。于是，人们都装模作样喜欢自己的工作
+    ，仿佛自己是中高层人士中的一员，否则不仅会影响其职业生涯，而且显得没有教养。
+
+    读大学时，我才明白养家糊口不是工作的唯一目的。选择什么工作要比赚多少钱重要
+    。虽然人们一般认为工作就是为了生存，但也有特别值得一提的故事（比如说爱因斯
+    坦在专利局上班）说明，事实并非总是如此。
+
+    我认为，一个人不应该在乎别人的看法，除非是他的朋友。不要想着出名，不必太在
+    意众人的意见。能够得到尊敬的人的意见就够了，何必在乎那些根本就不认识的人呢？
+
 [书是好书，但记忆法…… (评论: Moonwalking With Einstein)](http://book.douban.com/review/5312595/)
 
-:   科学研究还显示，如果我们不去刻意的锻炼一种能力的话，那么该项能力无论如
-    何也不会进步，这也是为什么那些告诉我们夜里听录音就能学外语、或者可以调
+:   在一次采访中，记忆学引起了福尔浓厚的兴趣。在结识了诸多记忆界大师级人物后，
+    福尔决定亲身体验记忆学的真谛，并拜英国记忆大师艾德·库克为师。在经过一年的勤
+    学苦练后，年近24岁的福尔成为了美国记忆大赛的冠军。
+
+    科学研究还显示，**如果我们不去刻意的锻炼一种能力的话，那么该项能力无论如
+    何也不会进步**，这也是为什么那些告诉我们夜里听录音就能学外语、或者可以调
     动潜意识学习一类的商品也都是骗人的。即使我们主动去锻炼一种能力，该项能
     力也未必能够得到提升。
+
+    如果福尔希望更快的找到钥匙的话，唯一的方法就是不断训练自己找钥匙的能力，而
+    不是去学习一个只有略微关联性的能力，然后期待这一能力可以被用在他生活的方方
+    面面。
 
 [Choosing an HTTP Status Code — Stop Making It Hard | Racksburg](http://racksburg.com/choosing-an-http-status-code/)
 
@@ -19753,6 +19657,8 @@ Disallow:
     看着地板，似乎在整理思绪。随后表示，「我想每一个有抱负的演员都会希望得
     到业内同行的肯定和赞许，但事实就是每一年只有一个人能够得到这个特殊的荣
     誉。」
+
+    ![](http://ww3.sinaimg.cn/large/617ccc0ctw1ee4ymi0dd6j20zk0k00vd.jpg)
 
 [The Intentionality of Evil (Aaron Swartz's Raw Thought)](file:///E:/blogs/Aarow-Swartz/www.aaronsw.com/weblog/intentionalevil-4.html)
 
@@ -19893,11 +19799,26 @@ Disallow:
     1997, Inno Setup today rivals and even surpasses many commercial installers
     in feature set and stability.
 
-[Recommended Reading for Developers](file:///E:/blogs/CodingHorror/blog.codinghorror.com/recommended-reading-for-developers/index.html)
+[Recommended Reading for Developers](http://blog.codinghorror.com/recommended-reading-for-developers/)
 
 :   Programming Pearls is the next best thing to working side by side with
     a master programmer for a year or so. It is the collective wisdom of
     many journeyman coders distilled into succinct, digestible columns.
+
+    books
+
+      - Code Complete 2
+      - The Mythical Man-Month
+      - Don't Make Me Think
+      - Rapid Developement
+      - Peopleware
+      - The Design of Everyday Things (DONE)
+      - About Face: The Essentials of Interaction Design
+      - The Inmates Are Running the Asylum
+      - Programming Pearls (ING)
+      - The Pragmatic Programmer: From Journeyman to Master
+      - Designing Web Usability
+      - and more...
 
 [What is Trolling?](http://blog.codinghorror.com/what-is-trolling)
 
@@ -20098,6 +20019,26 @@ Disallow:
 
 [BBC ON THIS DAY | 18 | 1978: Mass suicide leaves 900 dead](http://news.bbc.co.uk/onthisday/hi/dates/stories/november/18/newsid_2540000/2540209.stm)
 
+:   The bodies of 914 people, including 276 children, have been found in Guyana
+    in South America.
+
+    南美洲圭亚那琼斯镇
+
+    Most of the dead - members of the People's Temple Christian Church - had
+    consumed a soft drink laced with cyanide and sedatives.
+
+    However, the body of the People's Temple charismatic leader, Jim Jones, was
+    said to have a bullet wound in the right temple, believed to be
+    self-inflicted.
+
+    人民圣殿教（The Peoples Temple）
+
+    吉姆·琼斯（Jim Jones）
+
+        refs and see also
+
+          - [人民圣殿教_百度百科](http://baike.baidu.com/link?url=jiQo3xkLIyCuG6ECsC6FRI3U0m1xotpkP3og6EOpfRt88_J4JlAfkepFU23qWmqzEsKfK5W7WzCFfAj8T1mbia)
+
 [c++ - RapidJSON library getting a value inside an array by its index - Stack Overflow](http://stackoverflow.com/questions/10037778/rapidjson-library-getting-a-value-inside-an-array-by-its-index)
 
 :   exactly what I want.
@@ -20220,19 +20161,7 @@ Disallow:
 
 [Mac OS X 背后的故事_知识库_博客园](http://kb.cnblogs.com/page/114879/)
 
-:   TOC
-
-      - Mac OS X 背后的故事（一）力挽狂澜的Ellen Hancock
-      - Mac OS X 背后的故事（二）Linus Torvalds的短视
-      - Mac OS X 背后的故事（三）Mach之父Avie Tevanian
-      - Mac OS X 背后的故事（四）政客的跨界
-      - Mac OS X 背后的故事（五）Jean-Marie Hullot的Interface Builder神话
-      - Mac OS X 背后的故事（六）上善若水
-      - Mac OS X 背后的故事（七）上善若水下——Cordell Ratzlaff 引发的 Aqua 革命
-      - Mac OS X 背后的故事（八）三好学生Chris Lattner的LLVM编译工具链
-      - Mac OS X 背后的故事（九）半导体的丰收
-      - Mac OS X 背后的故事（十）Mac OS X文件系统的来龙去脉
-
+:   <div class="tzx-drawer" shy>
     Mac OS X 背后的故事（一）力挽狂澜的Ellen Hancock
 
     :   1991 年 5 月 13 日，蓝组顺利按时完成开发任务，发布了 Mac OS 7（一般被称
@@ -20261,7 +20190,9 @@ Disallow:
         right direction. ）Ellen Hancock 虽然同 Gil Amelio 一样，不知如何去堵这
         个漏水的洞，但正是由于她在 Apple 的出色表现，不但把船引到了正道上，还找
         来了有能力堵这个洞的人。
+    </div>
 
+    <div class="tzx-drawer" shy>
     Mac OS X 背后的故事（二）Linus Torvalds的短视
 
     :   一方面，设计一个微内核和相关的服务，可能造成各种设计上的灾难。GNU/Hurd
@@ -20290,7 +20221,9 @@ Disallow:
         ，觉得还不如自己造轮子来得方便，因此 Apple 推动了类似 LLVM 这样宏伟的项
         目，并且在短短几年内，使其成为最领先的开源软件技术。这无异于扇了 Linux
         小组、GCC 小组一记响亮的耳光。
+    </div>
 
+    <div class="tzx-drawer" shy>
     Mac OS X 背后的故事（三）Mach之父Avie Tevanian
 
     :   所以 Mach 3 出来后，虽有少数微内核信徒继续执著地改进 Mach，或者开始其他
@@ -20306,7 +20239,9 @@ Disallow:
         国语言的图片告诉用户你的内核崩溃了，以让内核崩得看起来更优雅一点。
 
         ![](http://images.cnitblog.com/kb/1/201301/21213305-bf0bdab7c3024291bea697c65e51b93c.jpg)
+    </div>
 
+    <div class="tzx-drawer" shy>
     Mac OS X 背后的故事（四）政客的跨界
 
     :   这之后，Al Gore 在 Apple 内部的决策究竟起了什么作用，和 Mac OS X 的开发
@@ -20327,7 +20262,9 @@ Disallow:
 
         可以说，没有 Mac OS X，就没有这部电影。而实际上这部电影的作用远胜过任何
         一部 Apple 公司的广告。
+    </div>
 
+    <div class="tzx-drawer" shy>
     Mac OS X 背后的故事（五）Jean-Marie Hullot的Interface Builder神话
 
     :   聪明的 Hullot 开始动脑筋改进 Mac 编写用户程序难的现状。他开发了一个程序
@@ -20381,7 +20318,9 @@ Disallow:
         一年后，世界首个 HTTP 服务在 CERN 的 NeXT 计算机运行起来，而使用
         Objective-C 和 Interface Builder 所编写的超文本语言编辑器兼浏览器同步发
         行。他给这个主从式架构起了个好听的名字——World Wide Web（万维网）。
+    </div>
 
+    <div class="tzx-drawer" shy>
     Mac OS X 背后的故事（六）上善若水
 
     :   Apple 将“What's not a computer!”（看起来不是电脑的电脑）的概念应用在硬
@@ -20392,7 +20331,9 @@ Disallow:
         意。但当时，他们认为这个新界面实现起来难度很大，既没有时间也没有资源把
         这个想法在 Mac OS X 中付诸实现。于是先前那位孤独的照葫芦画瓢的设计者只
         好继续工作。
+    </div>
 
+    <div class="tzx-drawer" shy>
     Mac OS X 背后的故事（七）上善若水下——Cordell Ratzlaff 引发的 Aqua 革命
 
     :   在加班奋战的三周后，设计组用 Macromedia Director 完成了一个试验品。
@@ -20411,7 +20352,9 @@ Disallow:
         18 个月后的 2000 年 1 月，新世纪的钟声刚刚敲响，Steve Jobs 镇定地走上
         MacWorld 大会的舞台，独领风骚的新世纪的经典大作 Aqua，此时，就要被他揭
         开帷幕。
+    </div>
 
+    <div class="tzx-drawer" shy>
     Mac OS X 背后的故事（八）三好学生Chris Lattner的LLVM编译工具链
 
     :   在 Objective-C 中，设计了一个叫做 NSAutoReleasePool 的池，当开发者需要
@@ -20467,7 +20410,9 @@ Disallow:
         理争端的决心和手腕，并一跃成为最领先的开源软件技术。而 Chris Lattner 在
         2010 年也赢得了他应有的荣誉——Programming Languages Software Award（程序
         设计语言软件奖）。
+    </div>
 
+    <div class="tzx-drawer" shy>
     Mac OS X 背后的故事（九）半导体的丰收
 
     :   苹果向 64 位处理器的迁移花了整整 6 年时间，远长于该公司其他技术的迁移——
@@ -20486,7 +20431,9 @@ Disallow:
         Computing Language。这项技术从本质上来说，和 CUDA 并没有太多的两样，但
         由于苹果在借鉴他人技术并把他人技术改得更棒这一点上是出了名的，所以
         OpenCL 很好地解决了以上所有问题。
+    </div>
 
+    <div class="tzx-drawer" shy>
     Mac OS X 背后的故事（十）Mac OS X文件系统的来龙去脉
 
     :   ZFS 的一个重大特点就是拥有大容量。ZFS 是一个 128 位的文件系统，这意味着
@@ -20499,11 +20446,12 @@ Disallow:
         此外，ZFS 的一个重要指导思想是不单单去做一个文件系统，而是实现一套完整的卷管理方案。
 
         无论如何，Mac OS X的 ZFS 支持，如昙花一现般消失了。
+    </div>
 
 [开源云计算技术初探 | YY42](http://www.yy42.net/blog/?p=381)
 
-:   Ruby和JavaScript是云时代的主流编程语言，Python紧追，PHP应了那句话了“not
-    even close”。heroku将matz叔挖过去的时候，明确放话Ruby是云时代的语言，
+:   Ruby和JavaScript是云时代的主流编程语言，Python紧追，PHP应了那句话了
+    “**not even close**”。heroku将matz叔挖过去的时候，明确放话Ruby是云时代的语言，
     heroku的整个工程实践也是按照Ruby的最佳工程实践来做的。另外一块那肯定是
     JVM平台了，云计算肯定会带来JVM平台的另一轮繁荣。至于.NET，本人毫无研究
     ，就不妄加评论了。
@@ -20630,7 +20578,9 @@ Disallow:
     bit integer.
 
     ```cpp
-    static uint8_t wordbits[65536] = { /* bitcounts of integers 0 through 65535, inclusive */ };
+    static uint8_t wordbits[65536] = {
+        /* bitcounts of integers 0 through 65535, inclusive */
+    };
     static int popcount(uint32_t i)
     {
         return (wordbits[i&0xFFFF] + wordbits[i>>16]);
@@ -20644,49 +20594,51 @@ Disallow:
     #include <math.h>
     ```
 
-    in `math.h`:
+    <div class="tzx-drawer" shy>
+    `math.h`:
 
-    ```cpp
-    #if defined(_USE_MATH_DEFINES) && !defined(_MATH_DEFINES_DEFINED)
-    #define _MATH_DEFINES_DEFINED
+    :   ```cpp
+        #if defined(_USE_MATH_DEFINES) && !defined(_MATH_DEFINES_DEFINED)
+        #define _MATH_DEFINES_DEFINED
 
-    /* Define _USE_MATH_DEFINES before including math.h to expose these macro
-     * definitions for common math constants.  These are placed under an #ifdef
-     * since these commonly-defined names are not part of the C/C++ standards.
-     */
+        /* Define _USE_MATH_DEFINES before including math.h to expose these macro
+         * definitions for common math constants.  These are placed under an #ifdef
+         * since these commonly-defined names are not part of the C/C++ standards.
+         */
 
-    /* Definitions of useful mathematical constants
-     * M_E        - e
-     * M_LOG2E    - log2(e)
-     * M_LOG10E   - log10(e)
-     * M_LN2      - ln(2)
-     * M_LN10     - ln(10)
-     * M_PI       - pi
-     * M_PI_2     - pi/2
-     * M_PI_4     - pi/4
-     * M_1_PI     - 1/pi
-     * M_2_PI     - 2/pi
-     * M_2_SQRTPI - 2/sqrt(pi)
-     * M_SQRT2    - sqrt(2)
-     * M_SQRT1_2  - 1/sqrt(2)
-     */
+        /* Definitions of useful mathematical constants
+         * M_E        - e
+         * M_LOG2E    - log2(e)
+         * M_LOG10E   - log10(e)
+         * M_LN2      - ln(2)
+         * M_LN10     - ln(10)
+         * M_PI       - pi
+         * M_PI_2     - pi/2
+         * M_PI_4     - pi/4
+         * M_1_PI     - 1/pi
+         * M_2_PI     - 2/pi
+         * M_2_SQRTPI - 2/sqrt(pi)
+         * M_SQRT2    - sqrt(2)
+         * M_SQRT1_2  - 1/sqrt(2)
+         */
 
-    #define M_E        2.71828182845904523536
-    #define M_LOG2E    1.44269504088896340736
-    #define M_LOG10E   0.434294481903251827651
-    #define M_LN2      0.693147180559945309417
-    #define M_LN10     2.30258509299404568402
-    #define M_PI       3.14159265358979323846
-    #define M_PI_2     1.57079632679489661923
-    #define M_PI_4     0.785398163397448309616
-    #define M_1_PI     0.318309886183790671538
-    #define M_2_PI     0.636619772367581343076
-    #define M_2_SQRTPI 1.12837916709551257390
-    #define M_SQRT2    1.41421356237309504880
-    #define M_SQRT1_2  0.707106781186547524401
+        #define M_E        2.71828182845904523536
+        #define M_LOG2E    1.44269504088896340736
+        #define M_LOG10E   0.434294481903251827651
+        #define M_LN2      0.693147180559945309417
+        #define M_LN10     2.30258509299404568402
+        #define M_PI       3.14159265358979323846
+        #define M_PI_2     1.57079632679489661923
+        #define M_PI_4     0.785398163397448309616
+        #define M_1_PI     0.318309886183790671538
+        #define M_2_PI     0.636619772367581343076
+        #define M_2_SQRTPI 1.12837916709551257390
+        #define M_SQRT2    1.41421356237309504880
+        #define M_SQRT1_2  0.707106781186547524401
 
-    #endif  /* _USE_MATH_DEFINES */
-    ```
+        #endif  /* _USE_MATH_DEFINES */
+        ```
+    </div>
 
     refs and see also
 
@@ -20843,9 +20795,44 @@ Disallow:
 
 [dirtysalt's homepage](http://dirlt.com/)
 
+:   TL;DR
+
+      - 期待你的加入 We're Hiring!
+      - APUE Unix环境高级编程(Advanced Programming Unix Environment)
+      - UNP Unix网络编程(Unix Network Programming)
+      - linux 将原来APUE 和 UNP 中的一部分内容放在这里面来了，这样可以保持这两篇内容比较稳定。
+      - tcmalloc Google的开源线程缓存内存分配器，解决多线程下面内存分配效率问题。
+      - gperftools Google的应用级别性能分析工具，包含 tcmalloc.
+      - ubuntu 如何更好地使用Ubuntu. 之前有过痛苦的经历 . 主要记录自己使用出现的问题.
+      - macosx 如何更好地使用Mac. 以前使用Windows，后来转向Ubuntu，再后来买了个MBA.
+      - docker 基于lxc(linux container)的分发应用工具和平台.
+      - libev 开源的事件触发器。被认为是更高效的libevent.
+      - muduo 开源的网络编程框架。作者理想中的网络编程框架实现，里面有很多mina/netty的影子。
+      - kylin Baidu in-house的异步编程框架，是linsd(百度首席架构师林仕鼎)的神作.
+      - zeromq 开源的消息传输系统。颠覆我们思考和编写网络通信程序的方式。
+      - netty an asynchronous event-driven network application framework in Java based on Java NIO.
+      - finagle an extensible RPC system for the JVM, used to construct high-concurrency servers.
+      - gunicorn Python WSGI HTTP Server. green unicorn(Ruby实现)
+      - leveldb Google的开源kv存储系统。支持billion级别的数据量，适合于 写少读多 写多读少的情况。
+      - mongodb 面向文档的分布式存储系统，但是却可以针对文档字段索引来加快查询。功能上比通常我们认为的NoSQL强但是弱于RDBMS.
+      - redis 内存存储系统，支持丰富的数据类型以及相应的计
+      - mysql 开源关系型数据库。The world's most popular open source database.
+      - rcfile / orcfile / parquet 几种列式存储(columnar storage)实现
+      - Cracking The Coding Interview 据说算法分为三种：面试算法，ACM算法，算法=D
+      - Bitcoin: A Peer-to-Peer Electronic Cash System 比特币论文
+      - snappy Google的开源压缩解压库。在满足一定压缩比率的条件下着重提升压缩和解压速度。
+      - lzf redis 使用的开源压缩解压库。轻量(两个文件)可以很容易地独立纳入项目。
+      - sklearn python scikit learn. 机器学习包.
+      - caffe C++实现的深度学习框架，有python和matlab的扩展接口
+      - 机器学习基石 on Coursera
+      - 机器学习技法 on Coursera
+      - The Django Book 不错的Django入门材料
+
 [为什么会出现LNK2005"符号已定义"的链接错误? - 歌谣在风中飘舞 - 博客频道 - CSDN.NET](http://blog.csdn.net/soloist/article/details/493238)
 
 :   Read CSAPP! More!
+
+    不然你连 CSDN 上的文章都看不懂。
 
 [云风的 BLOG: 学习从历史开始](file:///E:/blogs/YunFeng/blog.codingnow.com/2007/12/history.html)
 
@@ -20922,10 +20909,11 @@ Disallow:
 
 :   A bump pointer allocator.
 
+    by 云风
+
 [Wikipedia:Too long; didn't read - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn%27t_read)
 
-:
-    **Too long; didn't read** (abbreviated **tl;dr** and **tldr**) is a shorthand notation
+:   **Too long; didn't read** (abbreviated **tl;dr** (注意分号后没有空格) and **tldr**) is a shorthand notation
     added by an editor indicating a passage appeared to be too long to invest
     the time to digest. Long used on the Internet, it has birthed the wikilink
     **TL;DR** to indicate a cited passage is being protested. Wall of text is
@@ -21012,23 +21000,24 @@ Disallow:
 
 :   ```javascript
     function getQueryStrings() {
-      var assoc  = {};
-      var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
-      var queryString = location.search.substring(1);
-      var keyValues = queryString.split('&');
+        var assoc  = {};
+        var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
+        var queryString = location.search.substring(1); // url?k1=v1&k2=v2
+        var keyValues = queryString.split('&'); // [ "k1=v1", "k2=v2" ]
 
-      for(var i in keyValues) {
-        var key = keyValues[i].split('=');
-        if (key.length > 1) {
-          assoc[decode(key[0])] = decode(key[1]);
+        // decodeURIComponent('%E5%BE%B7%E6%B2%83%E5%A4%8F%E5%85%8B') -> "德沃夏克"
+
+        for(var i in keyValues) {
+            var key = keyValues[i].split('=');
+            if (key.length > 1) {
+                assoc[decode(key[0])] = decode(key[1]);
+            }
         }
-      }
 
-      return assoc;
+        return assoc;
     }
 
     // And use it like this...
-
     var qs = getQueryStrings();
     var myParam = qs["myParam"];
     ```
@@ -21122,16 +21111,60 @@ Disallow:
     sans-serif 中文字体不属一类），且 WebKit 内核的 UA（OS X 的 Safari 是个典型
     ）找不到你指定的任何中文字体，可能会导致 UA 用系统默认的 serif 中文字体。
 
+    refs and see also
+
+      - [在网页中嵌入任意字体的解决方案 - 网页制作 - 蓝色理想](http://www.blueidea.com/tech/web/2009/7263.asp)
+
+[Web 中文字体应用指南 » Topics » Ruby China](https://ruby-china.org/topics/14005)
+
+:   **中文字体也有英文名称**
+
+    同时声明中文字体的字体名称（英文）和显示名称（中文），就像这样：
+    `font-family: SimSun, "宋体";`{.css}
+
+    **别忘了照顾不同的操作系统**
+
+    ```css
+    font-family: Helvetica (Mac), Tahoma (Win), Arial (Mac&Win),
+                 STXihei, "华文细黑", (Mac) "Microsoft YaHei", "微软雅黑", (Win)
+                 sans-serif;
+    ```
+
+    **不加双引号可以吗？**
+
+    英文多个单词肯定加，中文，最好也加了。
+
+    最后，我不想再和任何人争论字体的优劣，本文的目的是介绍使用方法而不是字体选
+    择。“美”或“丑”向来都是很主观的事情，只因为我是作者，所以我免不了会有倾向性
+    ，然而我也相信你自己会有正确的判断，和我较真没有任何实际意义。
+
+    （哈哈，作者被评论区打败。）
+
     fonts
 
       - 冬青黑体简体中文, Hiragino Sans GB
       - WenQuanYi Micro Hei
       - Microsoft YaHei
       - 中易宋体, SimSun
+      - 华文细黑, STXihei
+
+
+    ```tzx-bigquote
+    Windows     OS X
+    黑体：SimHei    冬青黑体: Hiragino Sans GB [NEW FOR SNOW LEOPARD]
+    宋体：SimSun    华文细黑：STHeiti Light [STXihei]
+    新宋体：NSimSun     华文黑体：STHeiti
+    仿宋：FangSong  华文楷体：STKaiti
+    楷体：KaiTi     华文宋体：STSong
+    仿宋_GB2312：FangSong_GB2312    华文仿宋：STFangsong
+    楷体_GB2312：KaiTi_GB2312
+    微软雅黑体：Microsoft YaHei [as of Win7]
+    ```
 
     refs and see also
 
-      - [在网页中嵌入任意字体的解决方案 - 网页制作 - 蓝色理想](http://www.blueidea.com/tech/web/2009/7263.asp)
+      - [中文字体网页开发指南 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2014/07/chinese_fonts.html)
+      - [Chinese Standard Web Fonts: A Guide to CSS Font Family Declarations for Web Design in Simplified Chinese | Kendra Schaefer](http://www.kendraschaefer.com/2012/06/chinese-standard-web-fonts-the-ultimate-guide-to-css-font-family-declarations-for-web-design-in-simplified-chinese/)
 
 [Larry Wall 专访——语言学、Perl 6 的设计和发布 - 简书](http://www.jianshu.com/p/b920a1a469b2)
 
@@ -21154,8 +21187,6 @@ Disallow:
     8. 什么？ 开始用 Vim Markdown 来写文档了？ 我草，你已经超神了！！ God Like！！！
     9. 你已经离不开Vim了。 从最开始被各种折腾到想要砸键盘的你， 如今你已经爱上他了。 aM-m-m-m....（重复8次）Monster Kill
     10. 你注定和 Vim 过完这一生！......Holy Shit
-
-[Web 中文字体应用指南 » Topics » Ruby China](https://ruby-china.org/topics/14005)
 
 [如何评价坂井泉水？ - 你如何评价 X - 知乎](http://www.zhihu.com/question/22177383)
 
@@ -21251,9 +21282,17 @@ Disallow:
     贝克汉姆都说他比不过马拉多纳，这小子就更不用说了。然后看客们就很看不起
     踢球的那位，认为他踢的不是真正的球。。。
 
-    为毛 我们发展出这种恶心的逻辑趣味？
+    **为毛 我们发展出这种恶心的逻辑趣味？**
 
 [Web设计开发资源分享 | Meditic](http://meditic.com/web-design-development-resources)
+
+:   从08年开始创业以来，世界变了很多，但是有一个观点我一直坚信不疑：软件吞噬一
+    切，而Web吞噬软件。
+
+    作为一个非科班出身的Web开发者和伪设计师，我最擅长的事情之一，就是找到这个行
+    业最实用的开发和设计工具，用简单、高效的工作环境为自己的项目提供服务。
+
+    （好多工具……）
 
 [苹果电脑/Mac OS及其它 | Meditic](http://meditic.com/explore-your-mac-os)
 
@@ -21390,11 +21429,91 @@ Disallow:
 
 [计算的威力，智慧的传奇](http://history.programmer.com.cn/1903/)
 
-[云计算技术背后的那些天才程序员：FFmpeg的作者法布里斯·贝拉 - 博客 - 伯乐在线](http://blog.jobbole.com/69582/)
+:   ![](http://ww2.sinaimg.cn/large/7cc829d3gw1ezqqxvrhcuj20an085myk.jpg)
+
+    Fabrice Bellard 走的是完全不同的路，Bellard的绝大多数贡献都集中在自由软件与
+    开源领域，除了QEMU之外，最为人熟知的就是FFMPEG，他被誉为过去20年中最闪亮和
+    最有影响力的程序员之一，但他的名声远远却低于他的贡献。
+
+    如果说FFMPEG体现了Bellard深厚的数学和信号学天分，那么QEMU 的实现就体现了
+    Bellard对于计算机体系架构的深刻理解和程序设计的深厚功底。
+
+    2011年，他用JavaScript写了一个PC虚拟机Jslinux。这个虚拟机仿真了一个32位的
+    x86兼容处理器，一个8259可编程中断控制器，一个8254可编程中断计时器，和一个
+    16450 UART。 http://bellard.org/jslinux/，在笔者的普通桌面电脑的Chrome浏览
+    器中，Jslinux只用了仅仅5.075秒就启动了Linux。
+
+    最后，让我们不妨八卦一下，在Google中输入Fabrice Bellard vs Linus Torvalds会
+    出现什么呢？毕竟，在笔者心目中，他们就像罗伯特德尼罗PK阿尔帕西诺。
+
+    映入眼帘的第一个结果，是财富杂志科技栏目专访全球在线支付巨头Stripe的创始人
+    的一篇文章，其中提到。There are also a few individual people, like Fabrice
+    Bellard, Jeff Dean, and Dan Bernstein, who are just generally fabulously
+    productive and make me feel guilty about how little I get done. 好吧，Jeff
+    Dean…，与Jeff Dean并列，足以说明Fabrice Bellard的超强实力与卓越成就。
+
+    refs and see also
+
+      - [Fabrice Bellard's Home Page](http://bellard.org/)
+      - [云计算技术背后的那些天才程序员：FFmpeg的作者法布里斯·贝拉 - 博客 - 伯乐在线](http://blog.jobbole.com/69582/)
+
 
 [图灵社区 : 阅读 : 连城：大数据场景下的“搔到痒处”和“戳到痛处”（图灵访谈）](http://www.ituring.com.cn/article/179495)
 
+:   初二时班级重组，恰好发现坐我前面的男生下课时间在草稿纸上涂写BASIC程序，一问
+    才知道他从小学就开始写程序，于是拜师学艺。后来成了莫逆之交。现在他也在湾区
+    工作。那时候其实也写不出什么有技术含量的东西。但是无知无畏啊，觉得写程序的
+    时候有造物主的感觉，于是就下定决心走这条路了。
+
+    玩Erlang的时候，我开始对Erlang的很多特性感到好奇，包括匿名函数、GC、尾递归
+    调用等等，这些特性在Python、Ruby等一些动态语言中也同样存在，但是我只知其然
+    ，而不知其所以然。我觉得好奇的是，第一、函数式语言跟普通的命令式语言的本质
+    相比有什么优势；第二、这些特性背后的运行时机制到底是什么。那个时候我在百度
+    已经开始做管理，基本脱离了一线开发，说实话少了挺多乐趣。我就决定用业余时间
+    把函数式编程搞清楚。
+
+    我自己的习惯是每年都会做一个side project，我觉得要把函数式搞明白，最简单的
+    办法就是自己做一个实验性的函数式语言实现，比如一个最简单的解释器什么的，也
+    不求它能够多么高效、实用，只求把个中原理搞明白。既然是实验，目标语言当然越
+    简单越好，于是选中了Scheme。Scheme的整个R5RS标准连目录带附录总共才50页，特
+    别精简。
+
+    因为都是业余时间做，这个小项目断断续续地做了两年，期间用不同方法重写了若干
+    遍。项目整个做完了之后，确实把动态类型函数式语言最基本的东西，从运行时模型
+    到理论上的一些概念和原理都弄明白了。实际上就跟我之前研究的分布式系统一样，
+    也是把主要文献都粗略扫了一遍。
+
+    巧的是，13年六月份意外得知Intel中国研究院在招会Scala的实习生做Spark。那时候
+    Scala还在国内还没有多少动静，不要说会，听说过Scala的学生都不多。当时我对
+    Spark还一无所知，简单看了一下，发现这个项目很好地结合了分布式系统和函数式语
+    言这两个我最为感兴趣的技术方向。耐不住在家赋闲刷题的无聊，我最终以
+    contractor身份加入了Intel，并和Intel中国研究院吴甘沙和杨栋带领的团队一起做
+    了大半年Hadoop和Spark相关的研究。
+
+    JVM在大数据领域的流行，与Hadoop脱不开干系。Hadoop本身的成功，与Java的低入门
+    门槛、高开发效率（相对于C++而已）应该有相当大的关系。在HDFS、Hadoop
+    MapReduce流行之后，为了能与Hadoop无缝互操作，后续的一些大数据系统自然而然地
+    也选择了Java。近年来，虽然Java在语言层面发展缓慢，越来越被诟病，但Clojure、
+    Scala等JVM上的新语言却层出不穷，这又进一步激发了人们继续以JVM为平台搭建新兴
+    大数据系统的热情。Hadoop生态圈越做越大，而试图加入这个生态圈的新系统若想无
+    缝利用现有的遗产，就只能选择JVM。于是雪球越滚越大，进而令JVM几乎垄断了整个
+    大数据行业。
+
+    据我了解到的情况，国内的很多企业，尤其是电信行业的企业，过往大量依赖Oracle
+    和DB2，业务紧密依赖SQL。而在近几年的去IOE潮流中，又偏偏缺乏高效的能够处理大
+    数据的SQL执行引擎。这个时候，Shark和Spark SQL的出现给大家带来了较好的选择。
+    以此为契机，大量的开发者被吸引到了Spark SQL社区。此外，Shark的作者辛湜博士
+    本人就是中国人，这点不知道是不是也有关系 :-)
+
 [色情片看得越多的人越自恋？ - Article - JIJITANG](http://www.jijitang.com/article/540faac920296a4535b9370c)
+
+:   一份最新研究显示，有自恋倾向的人看片数量比其它人更多，并且一个人在网上看色
+    情作品数量越多，越容易产生自恋感。
+
+    研究人员发现，测试者在自恋数值上的得分越高，越可能看过在线Porn。
+
+    在该研究中，所有看过porn的人，花在看porn上的时间越多，自恋程度就越高，两者
+    成正相关。
 
 [你写论文时发现了哪些神网站？ - 曲晓峰的回答 - 知乎](http://www.zhihu.com/question/35931336/answer/68972601)
 
@@ -22140,9 +22259,10 @@ Disallow:
 :   `C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE` &rarr; `%PATH%`
 
     <div class="tzx-drawer" shy>
-    `C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Tools\vsvars32.bat`:
+    `Common7\Tools\vsvars32.bat`:
 
     :   <small>
+
         ```plain
         @echo Setting environment for using Microsoft Visual Studio 2010 x86 tools.
 
@@ -22263,6 +22383,7 @@ Disallow:
 
         :end
         ```
+
         </small>
     </div>
 
@@ -22318,6 +22439,8 @@ Disallow:
 [SkyPixel](https://www.skypixel.com/videos/2015-m4v)
 
 :   美国果然牛逼！
+
+    航拍，美国很美。
 
 [真实世界的我](http://www.aiexp.info/%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E7%9A%84%E6%88%91.html)
 
@@ -22420,28 +22543,30 @@ Disallow:
     didn't play well enough to win the game.（我们最好的选手不能上场，但是最终
     来说，还是因为我们发挥得不好，所以无法赢得比赛。）
 
-    I am looking for a fairly unique piece of technology.（我在寻找一种独特的技
+    I am looking for a **fairly unique piece of technology**.（我在寻找一种独特的技
     术。）
 
-    I personally don't like her.（我不喜欢她。）
+    I **personally** don't like her.（我不喜欢她。）
 
-    What's your favorite song right at this moment in time?（此刻你最喜欢的歌是
+    What's your favorite song **right at this moment in time**?（此刻你最喜欢的歌是
     什么？）
 
-    With all due respect, I think there are some facts you have not considered.
+    **With all due respect, I think there are some facts you have not considered.**
     （恕我直言，我想你忽略了一些事实。）
 
     It is absolutely impossible.（绝对不可能。）
 
-    For Publishing, It's a Nightmare Before Christmas.（对于出版业来说，圣诞节
+    For Publishing, **It's a Nightmare** Before Christmas.（对于出版业来说，圣诞节
     前发生的事情就像一场噩梦。）
 
-    This game shouldn't of got cancelled!（这场比赛本来不应该取消的。）
+    **This game shouldn't of got cancelled!**（这场比赛本来不应该取消的。）
 
-    24/7 support is a critical part of our offer.（一周7天，每天24小时的售后服
+    (上面那句话很不逻辑。)
+
+    **24/7 support is a critical part of our offer.**（一周7天，每天24小时的售后服
     务，是我们承诺的关键部分。）
 
-    We're talking basic common sense here - it isn't rocket science.（我们在这
+    We're talking basic common sense here - it isn't **rocket science**.（我们在这
     里说的是常识，又不是高深莫测的东西。）
 
 [公共场所英文译写规范 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2011/01/guidelines_for_english_translations_in_public_places.html)
@@ -22450,6 +22575,7 @@ Disallow:
 
     公共场所英文译写规范, 2009-10-01 实施
 
+    <div class="tzx-drawer" shy>
     第 1 部分：通则；
 
     :   译写原则:
@@ -22480,8 +22606,8 @@ Disallow:
         旅客通道，请勿滞留 Keep Walking 或 No
         Stopping，“请勿滞留”必须译出，“旅客通道”可不必译出。
 
-        应明确信息所警示、提示的对象主体，如：旅游车辆禁止入内 No Admittance for Tourist
-        Vehicles，不宜简单译作 No Admittance。
+        应明确信息所警示、提示的对象主体，如：旅游车辆禁止入内 **No Admittance for Tourist
+        Vehicles**，不宜简单译作 No Admittance。
 
         请在安全线外等候 Please Wait Behind **the Yellow Line**
 
@@ -22491,8 +22617,8 @@ Disallow:
         如果译文所指对象不明确，宜使用复数形式。如：
         监督投诉 Complaints。
 
-        英语单词使用括号时括号外前后需空一格，但括号内不空格，如：中医科 Traditional
-        Chinese Medicine (TCM) Department。
+        英语单词使用括号时括号外前后需空一格，但括号内不空格，如：
+        中医科 **Traditional Chinese Medicine (TCM) Department**。
 
         制作标志时应使用没有衬线的英文黑体字。
 
@@ -22500,7 +22626,10 @@ Disallow:
         办公区域  Administrative Area
         报告厅  Conference Hall
         闭馆整修  Closed for Renovation
-        本柜暂停服务，请至其他台席办理  Temporarily Out of Service. Please Go to Another Counter.
+
+        本柜暂停服务，请至其他台席办理
+        Temporarily Out of Service. Please Go to Another Counter.
+
         本柜（台）只接受现金缴费 Cash Only at This Counter
         别让您的烟头留下火患  Dispose of Cigarette Butts Properly
         For Disabled (Only)
@@ -22531,22 +22660,22 @@ Disallow:
         ```
 
         page 8
+    </div>
 
+    <div class="tzx-drawer" shy>
     第 2 部分：实体名称译法；
 
-    :   用汉语拼音拼写。如：长风（长风公园）Changfeng。有习惯译法的除外，如：美琪（大
-        戏院）Majestic。
+    :   用汉语拼音拼写。如：长风（长风公园）Changfeng。有习惯译法的除外，
+        如：**美琪（大戏院）Majestic**。
 
-        上海市第一人民
-        医院 Shanghai First People’s Hospital，上海市第一中级人民法院 Shanghai No. 1
-        Intermediate People’s Court。
+        上海市第一人民医院 Shanghai First People’s Hospital，
+        上海市第一中级人民法院 Shanghai No. 1 Intermediate People’s Court。
 
         海事（上海市海事法院）Maritime。但实体已失去属性名所
         指称的性质的，属性名视作专名，用汉语拼音拼写。如：远洋（上海远洋医院）Yuanyang。
 
-        上海市工人文化宫 Shanghai
-        Workers Cultural Palace；也可将属性名置于通名之后，用介词连接，如：上海市临床检
-        验中心 Shanghai Center for Clinical Laboratory。s
+        上海市工人文化宫 **Shanghai Workers Cultural Palace**；也可将属性名置于
+        通名之后，用介词连接，如：上海市临床检验中心 **Shanghai Center for Clinical Laboratory**。
 
         管理局 Administration，高等专科学校 College。
 
@@ -22556,60 +22685,71 @@ Disallow:
         发生混淆，用隔音符号（’）隔开，该符号前后不空格，如：静安 Jing’an。
 
         ```tzx-bigquote
-        1  上海博物馆  Shanghai Museum
-        2  中国银行  Bank of China
-        3  上海音乐厅  Shanghai Concert Hall
-        4  上海大剧院  Shanghai Grand Theatre
-        5  上海大学  Shanghai University
+        上海博物馆  Shanghai Museum
+        中国银行  Bank of China
+        上海音乐厅  Shanghai Concert Hall
+        上海大剧院  Shanghai Grand Theatre
+        上海大学  Shanghai University
 
-        3  上海多伦美术馆  Shanghai Duolun Art Gallery
-        4  上海兰心大剧院  Shanghai Lyceum Theatre（Lyceum 为习惯译法）
-        5  上海江湾体育场  Shanghai Jiangwan Stadium
+        上海多伦美术馆  Shanghai Duolun Art Gallery
 
-        2  华东师范大学  East China Normal University
-        3  上海科技馆  Shanghai Science & Technology museum
-        4  上海中医药大学  Shanghai University of Traditional Chinese Medicine
-        5  上海期货交易所  Shanghai Futures Exchange
+        上海兰心大剧院  Shanghai Lyceum Theatre
+        （Lyceum 为习惯译法）
 
-        1  上海市第六人民医院  Shanghai Sixth People’s Hospital
-        2  上海市第一中级人民法院  Shanghai No.1 Intermediate People’s Court
-        3  上海市第三女子中学  Shanghai No. 3 Girls High School
-        4  上海第二工业大学  Shanghai Second Polytechnic University
-        5  上海市第一妇婴保健院  Shanghai First Hospital for Maternity and Infant Health
+        上海江湾体育场  Shanghai Jiangwan Stadium
 
-        1  上海虹桥国际机场  Shanghai Hongqiao International Airport
-        2  上海张江高科技园区  Shanghai Zhangjiang High-Tech Park
+        华东师范大学  East China Normal University
+        上海科技馆  Shanghai Science & Technology museum
 
-        4  上海虹桥迎宾馆  Shanghai Hongqiao State Guest Hotel
-        5  东平国家森林公园  Dongping National Forest Park
+        上海中医药大学
+        Shanghai University of Traditional Chinese Medicine
 
-        1  上海城市规划展示馆  Shanghai Urban Planning Exhibition Center
-        2  上海工商外国语学院  Shanghai Industry and commerce Foreign Language College
-        3  上海工艺美术职业学院  Shanghai Vocational College of Arts and Crafts
-        4  上海市文史研究馆  Shanghai Research Institute of Culture and History
-        5  上海工艺品进出口公司  Shanghai Arts & Crafts Import & Export Corp.
+        上海期货交易所  Shanghai Futures Exchange
 
-        1  共青森林公园  Gongqing Forest Park
-        2  外滩观光隧道  The Bund Sightseeing Tunnel（The Bund 为习惯译法）
-        3  兰溪青年公园  Lanxi Youth Park
-        4  四海壶具博物馆  Sihai Teapots Museum
-        5  龙华烈士陵园  Longhua Revolutionary Martyrs’ Cemetery
+        上海市第六人民医院  Shanghai Sixth People’s Hospital
+        上海市第一中级人民法院  Shanghai No.1 Intermediate People’s Court
+        上海市第三女子中学  Shanghai No. 3 Girls High School
+        上海第二工业大学  Shanghai Second Polytechnic University
+
+        上海市第一妇婴保健院
+        Shanghai First Hospital for Maternity and Infant Health
+
+        上海虹桥国际机场  Shanghai Hongqiao International Airport
+        上海张江高科技园区  Shanghai Zhangjiang High-Tech Park
+
+        上海虹桥迎宾馆  Shanghai Hongqiao State Guest Hotel
+        东平国家森林公园  Dongping National Forest Park
+
+        上海城市规划展示馆  Shanghai Urban Planning Exhibition Center
+
+        上海工商外国语学院
+        Shanghai Industry and commerce Foreign Language College
+
+        上海工艺美术职业学院  Shanghai Vocational College of Arts and Crafts
+        上海市文史研究馆  Shanghai Research Institute of Culture and History
+        上海工艺品进出口公司  Shanghai Arts & Crafts Import & Export Corp.
+
+        共青森林公园  Gongqing Forest Park
+        外滩观光隧道  The Bund Sightseeing Tunnel（The Bund 为习惯译法）
+        兰溪青年公园  Lanxi Youth Park
+        四海壶具博物馆  Sihai Teapots Museum
+        龙华烈士陵园  Longhua Revolutionary Martyrs’ Cemetery
         ```
+    </div>
 
+    <div class="tzx-drawer" shy>
     第 3 部分：交通；
 
     :   飞机译作 Airplane；航空、航线译作 Airline。
 
-        火车译作 Train；铁路译作 Railway。
-        4.2.1.3 轮船译作 Ship。
-        4.2.1.4 公共汽车译作 Bus，长途汽车译作 Long-Distance Bus。
-        4.2.1.5 轨道交通（包括地铁和轻轨）译作 Metro；磁浮列车译作 Maglev 或 Maglev
-        Train。
-        4.2.1.6 出租车译作 Taxi。
+        火车译作 Train；铁路译作 Railway。轮船译作 Ship。公共汽车译作 Bus，长途
+        汽车译作 Long-Distance Bus。轨道交通（包括地铁和轻轨）译作 Metro；磁浮
+        列车译作 Maglev 或 Maglev Train。出租车译作 Taxi。
 
-        公共汽车站译作 Stop，如：前方有公共汽车站 Bus Stop Ahead。轨道交通车
-        站译作 Station，如：列车前方到站 The Next Station。实指某一具体站点时，“站”一般
-        不需译出，如：徐家汇站（轨交 1 号线站名）到了 We are arriving at Xujiahui。
+        公共汽车站译作 Stop，如：前方有公共汽车站 Bus Stop Ahead。轨道交通车站
+        译作 Station，如：列车前方到站 The Next Station。实指某一具体站点时，“
+        站”一般不需译出，如：徐家汇站（轨交 1 号线站名）到了 We are arriving at
+        Xujiahui。
 
         出租车扬招点译作 Taxi Stand。
 
@@ -22617,35 +22757,35 @@ Disallow:
 
         危险品检查仪 Security Check
 
-        请勿将身体伸出扶梯外 Keep Body in Escalator。
+        请勿将身体伸出扶梯外 **Keep Body in Escalator**。
 
-        小心列车与站台间隙 Mind the Gap，在
-        特定使用场合（如轨道交通站点中）可简译。
+        小心列车与站台间隙 Mind the Gap，在特定使用场合（如轨道交通站点中）可简
+        译。
 
         ```tzx-bigquote
-        1  上海虹桥国际机场  Shanghai Hongqiao International Airport
-        2  上海浦东国际机场  Shanghai Pudong International Airport
-        3  上海火车站；铁路上海站  Shanghai Railway Station
-        4  上海南站；铁路上海南站  Shanghai South Railway Station
-        5  上海火车站（公交）枢纽  Shanghai Railway Station Bus Terminal
-        6  上海南站（公交）枢纽  Shanghai South Railway Station Bus Terminal
-        7  莘庄地铁北广场（公交）枢纽  Xinzhuang Metro Station North Square Bus Terminal
-        8  莘庄地铁南广场（公交）枢纽  Xinzhuang Metro Station South Square Bus Terminal
-        9  上海旅游集散中心  Shanghai Tourist Bus Center
-        10 上海长途汽车客运总站  Shanghai Long-Distance Bus Terminal
-        11 上海长途客运南站  Shanghai South Long-Distance Bus Station
-        12 上海港国际客运中心国际客运码头  Shanghai Port International Cruise Terminal  现用
-        13 上海港吴淞客运中心  Shanghai Port Wusong Passenger Center
-        14 宝钢内河装卸站  Baosteel Loading Wharf
-        15 宝钢原料码头  Baosteel Raw Material Wharf
-        16 宝山集装箱码头  Baoshan Container Terminal
+        上海虹桥国际机场  Shanghai Hongqiao International Airport
+        上海浦东国际机场  Shanghai Pudong International Airport
+        上海火车站；铁路上海站  Shanghai Railway Station
+        上海南站；铁路上海南站  Shanghai South Railway Station
+        上海火车站（公交）枢纽  Shanghai Railway Station Bus Terminal
+        上海南站（公交）枢纽  Shanghai South Railway Station Bus Terminal
+        莘庄地铁北广场（公交）枢纽  Xinzhuang Metro Station North Square Bus Terminal
+        莘庄地铁南广场（公交）枢纽  Xinzhuang Metro Station South Square Bus Terminal
+        上海旅游集散中心  Shanghai Tourist Bus Center
+        上海长途汽车客运总站  Shanghai Long-Distance Bus Terminal
+        上海长途客运南站  Shanghai South Long-Distance Bus Station
+        上海港国际客运中心国际客运码头  Shanghai Port International Cruise Terminal
+        上海港吴淞客运中心  Shanghai Port Wusong Passenger Center
+        宝钢内河装卸站  Baosteel Loading Wharf
+        宝钢原料码头  Baosteel Raw Material Wharf
+        宝山集装箱码头  Baoshan Container Terminal
 
         1.2m Height Limit
 
-        3  安全岛  Traffic Island
-        4  安全检查（安检）  Security Inspection
-        5  安全检查（通道）  Security Check
-        6  安全设备请勿擅动  Safety Equipment. Authorized Use Only.
+        安全岛  Traffic Island
+        安全检查（安检）  Security Inspection
+        安全检查（通道）  Security Check
+        安全设备请勿擅动  Safety Equipment. Authorized Use Only.
 
         班车乘车地点  Shuttle Bus Pick-Up Point 或 Commuter Bus Pick-Up Point
 
@@ -22654,31 +22794,32 @@ Disallow:
         餐饮  Food and Beverage 或 Restaurant
         残疾车借用  Wheelchair Service
 
-        24 操作步骤  Instructions for Operation
-        25 插入公共交通卡  Insert Your Public Transportation Card
-        26 长途汽车站  Long-Distance Bus Station
-        27 长下坡慢行  Long Slope. Slow Down
+        操作步骤  Instructions for Operation
+        插入公共交通卡  Insert Your Public Transportation Card
+        长途汽车站  Long-Distance Bus Station
+        长下坡慢行  Long Slope. Slow Down
         ```
 
         page 29
+    </div>
 
+    <div class="tzx-drawer" shy>
     第 4 部分：旅游；
 
-    :   会址译作 Site；故居译作 Former Residence 或 Memorial Residence。
-        4.1.3.2 公园译作 Park；园、圃、苑译作 Garden。
-        4.1.3.3 动物园译作 Zoo；植物园译作 Botanical Garden。
+    :   会址译作 Site；故居译作 Former Residence 或 Memorial Residence。公园译
+        作 Park；园、圃、苑译作 Garden。动物园译作 Zoo；植物园译作 Botanical Garden。
 
-        陵园译作 Cemetery；烈士陵园译作 Revolutionary Martyrs’ Cemetery。
-        4.1.3.5 乐园、游乐园译作 Amusement Park。儿童乐园（设在旅游景区内）译作 Children
-        's Playground；主题公园译作 Theme Park。
+        陵园译作 Cemetery；烈士陵园译作 Revolutionary Martyrs’ Cemetery。乐园、
+        游乐园译作 Amusement Park。儿童乐园（设在旅游景区内）译作 Children 's Playground；
+        主题公园译作 Theme Park。
 
-        水族馆译作 Aquarium，海洋馆、海洋公园等均译作 Ocean Park。
-        4.1.3.7 与宗教有关、每层顶部都有装饰的塔译作 Pagoda，如：松江方塔 Songjiang Square Pagoda。其他的塔
-        译作 Tower，如：东方明珠广播电视塔 Oriental Pearl Radio and TV Tower。
-        4.1.3.8 佛教的寺译作 Temple，如：静安寺 Jing’an Temple。道观译作 Daoist Temple，如：白云观 Baiyun Daoist
-        Temple。清真寺译作 Mosque。教堂译作 Church 或 Cathedral，如：上海国际礼拜堂 Shanghai Community Church；
-        董家渡天主堂 Dongjiadu Cathedral。
-        4.1.3.9 绿地译作 Green Land。
+        水族馆译作 Aquarium，海洋馆、海洋公园等均译作 Ocean Park。与宗教有关、
+        每层顶部都有装饰的塔译作 Pagoda，如：松江方塔 Songjiang Square Pagoda。
+        其他的塔译作 Tower，如：东方明珠广播电视塔 Oriental Pearl Radio and TV
+        Tower。佛教的寺译作 Temple，如：静安寺 Jing’an Temple。道观译作 Daoist
+        Temple，如：白云观 Baiyun Daoist Temple。清真寺译作 Mosque。教堂译作
+        Church 或 Cathedral，如：上海国际礼拜堂 Shanghai Community Church；董家
+        渡天主堂 Dongjiadu Cathedral。绿地译作 Green Land。
 
         度假村（区）译作 Resort；旅游城译作 Tourist Town。
 
@@ -22687,93 +22828,98 @@ Disallow:
         儿童须由成人陪同 Children Must Be Accompanied by Adult。
 
         ```tzx-bigquote
-        3  孙中山故居  Dr. Sun Yat-sen Memorial Residence
-        4  宋庆龄故居  Mme. Soong Ching-ling Memorial Residence
-        5  毛泽东故居  Former Residence of Mao Zedong
-        6  周恩来故居  Former Residence of Zhou Enlai
-        7  陈云故居暨青浦革命历史纪念馆 Former Residence of Chen Yun and Qingpu Museum of Revolutionary History
+        中山故居  Dr. Sun Yat-sen Memorial Residence
+        庆龄故居  Mme. Soong Ching-ling Memorial Residence
+        泽东故居  Former Residence of Mao Zedong
+        恩来故居  Former Residence of Zhou Enlai
 
-        8  世纪公园  Century Park
-        9  共青森林公园  Gongqing Forest Park
-        10  中山公园  Zhongshan Park
-        11  鲁迅公园  Luxun Park
-        12  复兴公园  Fuxing Park
-        13  淮海公园  Huaihai Park
-        14  长风公园  Changfeng Park
-        15  衡山公园  Hengshan Park
-        16  襄阳公园  Xiangyang Park
-        17  康健园  Kangjian Park
-        18  桂林公园  Guilin Park
-        19  工农公园  Gongnong Park
-        20  交通公园  Jiaotong Park
-        21  大宁灵石公园  Daning Lingshi Park
-        22  大华行知公园  Dahua Xingzhi Park
-        23  人民公园  People’s Park
-        24  广场公园  Square Park
-        25  友谊公园  Friendship Park
-        26  滨海公园  Seaside Park
-        27  滨江公园  Riverside Park
-        28  未来岛公园  Future Island Park
-        29  滨江森林公园  Riverside Woods Park
-        30  上海佘山国家森林公园  Shanghai Sheshan National Forest Park
-        31  东平国家森林公园  Dongping National Forest Park
-        32  华山儿童公园  Huashan Children’s Park
-        33  爱思儿童公园  Aisi Children’s Park
+        云故居暨青浦革命历史纪念馆
+        Former Residence of Chen Yun and Qingpu Museum of Revolutionary History
 
-        57  锦江乐园  Jinjiang Amusement Park
-        58  大世界游乐中心  Great World Amusement Center
-        59  上海影视乐园  Shanghai Film and Television Theme Park
+        纪公园  Century Park
+        青森林公园  Gongqing Forest Park
+        中山公园  Zhongshan Park
+        鲁迅公园  Luxun Park
+        复兴公园  Fuxing Park
+        淮海公园  Huaihai Park
+        长风公园  Changfeng Park
+        衡山公园  Hengshan Park
+        襄阳公园  Xiangyang Park
+        康健园  Kangjian Park
+        桂林公园  Guilin Park
+        工农公园  Gongnong Park
+        交通公园  Jiaotong Park
+        大宁灵石公园  Daning Lingshi Park
+        大华行知公园  Dahua Xingzhi Park
+        人民公园  People’s Park
+        广场公园  Square Park
+        友谊公园  Friendship Park
+        滨海公园  Seaside Park
+        滨江公园  Riverside Park
+        未来岛公园  Future Island Park
+        滨江森林公园  Riverside Woods Park
+        上海佘山国家森林公园  Shanghai Sheshan National Forest Park
+        东平国家森林公园  Dongping National Forest Park
+        华山儿童公园  Huashan Children’s Park
+        爱思儿童公园  Aisi Children’s Park
 
-        63  朱家角古镇  Zhujiajiao Town
-        64  枫泾古镇  Fengjing Town
-        65  玉佛寺  Jade Buddha Temple
-        66  静安寺  Jing’an Temple
-        67  龙华寺  Longhua Temple
+        锦江乐园  Jinjiang Amusement Park
+        大世界游乐中心  Great World Amusement Center
+        上海影视乐园  Shanghai Film and Television Theme Park
 
-        71  陆家嘴中心绿地  Lujiazui Central Green Land
-        72  不夜城绿地  Everbright City Green Land
-        40  购票后，恕不退票。  Tickets Not Refundable
-        41  古桥  Ancient Bridge
-        42  古塔  Ancient Pagoda
-        43  关上安全杠  Close Safety Bar
-        47  广播服务  Broadcasting Service
-        48  贵重物品请您自己妥善保管  Please Take Care of Your Valuables
-        49  过山车  Roller Coaster
+        朱家角古镇  Zhujiajiao Town
+        枫泾古镇  Fengjing Town
+        玉佛寺  Jade Buddha Temple
+        静安寺  Jing’an Temple
+        龙华寺  Longhua Temple
+
+        陆家嘴中心绿地  Lujiazui Central Green Land
+        不夜城绿地  Everbright City Green Land
+        购票后，恕不退票。  Tickets Not Refundable
+        古桥  Ancient Bridge
+        古塔  Ancient Pagoda
+        关上安全杠  Close Safety Bar
+        广播服务  Broadcasting Service
+        贵重物品请您自己妥善保管  Please Take Care of Your Valuables
+        过山车  Roller Coaster
         ```
+    </div>
 
+    <div class="tzx-drawer" shy>
     第 5 部分：文化体育；
 
     :   文史馆译作 Research Institute of Culture and History。
 
         展览馆、陈列馆、展览中心等具有展示、陈列功能的场馆可译作 Exhibition
-        Center 或 Exhibition Hall。
-        4.1.3.4 博览（会）译作 Exposition 或 Expo，如：世界博览会 World Exposition 或
-        World Expo，中国 2010 年上海世博会 Expo 2010 Shanghai China。
-        4.1.3.3 美术馆译作 Art Gallery 或 Art Museum。
-        4.1.3.4 图书馆译作 Library。
+        Center 或 Exhibition Hall。博览（会）译作 Exposition 或 Expo，如：世界
+        博览会 World Exposition 或World Expo，中国 2010 年上海世博会 Expo 2010
+        Shanghai China。美术馆译作 Art Gallery 或 Art Museum。图书馆译作
+        Library。
 
         竞技体操 Artistic Gymnastics，艺术体操 Rhythmic Gymnastics。
 
         ```tzx-bigquote
-        92  东方网点连锁管理有限公司  Shanghai Eastday Bar Chain Administration Co. Ltd.
-        93  上海东方网点  Eastday Bar
-        94  才智公众电脑屋  Caizhi Internet Café
-        95  福五公众电脑屋  Fuwu Internet Café
-        96  史地网吧  Shidi Internet Café
-        97  同福网吧  Tongfu Internet Café
-        98  网人网吧  Wangren Internet Café
-        99  威泰网吧  Weitai Internet Café
+        东方网点连锁管理有限公司  Shanghai Eastday Bar Chain Administration Co. Ltd.
+        上海东方网点  Eastday Bar
+        才智公众电脑屋  Caizhi Internet Café
+        福五公众电脑屋  Fuwu Internet Café
+        史地网吧  Shidi Internet Café
+        同福网吧  Tongfu Internet Café
+        网人网吧  Wangren Internet Café
+        威泰网吧  Weitai Internet Café
 
-        27  松江体育中心  Songjiang Sports Center
-        28  奉贤体育中心  Fengxian Sports Center
-        29  上海市东方绿舟体育训练基地  Shanghai Oriental Land Sports Training Center
-        30  上海游泳馆  Shanghai Swimming Center
+        松江体育中心  Songjiang Sports Center
+        奉贤体育中心  Fengxian Sports Center
+        上海市东方绿舟体育训练基地  Shanghai Oriental Land Sports Training Center
+        上海游泳馆  Shanghai Swimming Center
 
-        1  办证处（借书证）  Reader Registration
-        2  保安室  Security Office
-        3  步行导览  Walking Tour Guide
+        办证处（借书证）  Reader Registration
+        保安室  Security Office
+        步行导览  Walking Tour Guide
         ```
+    </div>
 
+    <div class="tzx-drawer" shy>
     第 6 部分：教育；
 
     :   本、专科学院一般译作 College。职业学院可译作 Vocational College。职
@@ -22783,31 +22929,26 @@ Disallow:
         大学译作 University。大学的二级学院一般译作 College。研究生院译作
         Graduate School。
 
-        专科性较强的学院可译作 Institute。
-        4.1.3.1.4 艺术类学院及研究性教育机构可译作 Academy，如：上海戏剧学院 Shanghai
-        Theatre Academy
+        专科性较强的学院可译作 Institute。艺术类学院及研究性教育机构可译作
+        Academy，如：上海戏剧学院 Shanghai Theatre Academy
 
         幼儿园译作 Kindergarten。
 
-        业余大学译作 Part-time University 或者 Part-time College。
-        4.1.3.6.2 电视大学译作 Television University。
-        4.1.3.6.3 职工大学译作 Workers College。
-        4.1.3.6.4 继续教育学院译作 College for Continuing Education。
-        4.1.3.6.5 网络教育学院译作 Online Education College。
+        业余大学译作 Part-time University 或者 Part-time College。电视大学译作
+        Television University。职工大学译作 Workers College。继续教育学院译作
+        College for Continuing Education。网络教育学院译作 Online Education
+        College。
 
         青少年活动中心、基地等均译作 Youth Center。
 
-        党校译作 Party School 或 Party Institute。
-        4.1.3.8.2 社会主义学院译作 Institute of Socialism。
-        4.1.3.8.3 行政学院一般译作 Administration Institute。
-        4.1.3.8.4 干部学院一般译作 Cadre Institute。
+        党校译作 Party School 或 Party Institute。社会主义学院译作 Institute of
+        Socialism。行政学院一般译作 Administration Institute。干部学院一般译作
+        Cadre Institute。
 
-        终身教育进修学院译作 Lifelong Education Institute。
-        4.1.3.9.2 培训中心译作 Training Center。
-        4.1.3.9.3 社区学院译作 Community College。
+        终身教育进修学院译作 Lifelong Education Institute。培训中心译作
+        Training Center。社区学院译作 Community College。
 
-        神学院译作 Seminary。
-        4.1.3.11.2 佛学院译作 Buddhist Academy。
+        神学院译作 Seminary。佛学院译作 Buddhist Academy。
 
         属性名需译成两个及以上英文单词时，一般置于通名之后，用介词 of 或 for
         连接，如：华东政法大学 East China University of Political Science and Law。属性
@@ -22816,83 +22957,76 @@ Disallow:
         附属译作 Affiliated to，如：华东师范大学附属幼儿园 The Kindergarten
         Affiliated to East China Normal University。
 
-        南阳实验幼儿园 Nanyang Experimental
-        Kindergarten。
-        4.1.3.13.3 模范译作 Model，如：上海市南洋模范中学（高中）Shanghai Nanyang Model
-        High School。
+        南阳实验幼儿园 Nanyang Experimental Kindergarten。模范译作 Model，如：
+        上海市南洋模范中学（高中）**Shanghai Nanyang Model High School**。
 
         ```tzx-bigquote
         本校教职员工（停车处）  Reserved (Parking) for Faculty
         不准携带食物到图书馆内  No Food Allowed in the Library
-        12 打印室、复印室、文印间  Printing and Copying Services
-        16 电工室  Electrician Room
-        17 电气室  Electrical Room
-        18 电子阅览室  Digital Reading Room
-        19 读者服务处  Reader Services
-        20 多媒体教室  Multimedia Classroom
-        21 多媒体视听室  Multimedia Room
-        22 饭票  Meal Voucher
-        29 继续教育学院  Continuing Education College
-        30 健身中心  Fitness Center
-        31 教工窗口  Faculty
-        32 教务处  Teaching Affairs Office
-        33 教学楼  Teaching Building
-        34 教职工宿舍（楼）  Teachers’ Dormitory
-        37 禁坐栏杆  No Sitting on Handrail.
-        54 请勿拍照  No Photography
-        59 体育馆  Gymnasium
-        60 田径场  Athletic Field
-        65 文科大楼  Liberal Arts Building
+        打印室、复印室、文印间  Printing and Copying Services
+        电工室  Electrician Room
+        电气室  Electrical Room
+        电子阅览室  Digital Reading Room
+        读者服务处  Reader Services
+        多媒体教室  Multimedia Classroom
+        多媒体视听室  Multimedia Room
+        饭票  Meal Voucher
+        继续教育学院  Continuing Education College
+        健身中心  Fitness Center
+        教工窗口  Faculty
+        教务处  Teaching Affairs Office
+        教学楼  Teaching Building
+        教职工宿舍（楼）  Teachers’ Dormitory
+        禁坐栏杆  No Sitting on Handrail.
+        请勿拍照  No Photography
+        体育馆  Gymnasium
+        田径场  Athletic Field
+        文科大楼  Liberal Arts Building
         ```
+    </div>
 
+    <div class="tzx-drawer" shy>
     第 7 部分：金融；
 
-    :   交易所译作 Exchange。
-        4.1.3.2.2 证券交易所译作 Stock Exchange，如：上海证券交易所 Shanghai Stock
-        Exchange。
-        4.1.3.2.3 期货交易所译作 Futures Exchange，如：上海期货交易所 Shanghai Futures
-        Exchange。
+    :   交易所译作 Exchange。证券交易所译作 Stock Exchange，如：上海证券交易所
+        Shanghai Stock Exchange。期货交易所译作 Futures Exchange，如：上海期货
+        交易所 Shanghai Futures Exchange。
 
-        证券公司（股份有限公司、有限责任公司）译作 Securities Limited Company（Limited
-        Company 可缩写为 Co., Ltd.，下同），如：华泰证券有限责任公司 Huatai Securities Co.,
-        Ltd.。
+        证券公司（股份有限公司、有限责任公司）译作 Securities Limited Company（
+        Limited Company 可缩写为 Co., Ltd.，下同），如：华泰证券有限责任公司
+        Huatai Securities Co., Ltd.。
 
-        Sub-Branch，一般置于上位译名（所属总行、分行译名）之后，如：
-        中国银行上海市分行普陀支行 Bank of China, Shanghai Branch, Putuo Sub-Branch。也
-        可省去分行译名，简作：中国银行普陀支行 Bank of China, Putuo Sub-Branch。
+        Sub-Branch，一般置于上位译名（所属总行、分行译名）之后，如：中国银行上
+        海市分行普陀支行 Bank of China, Shanghai Branch, Putuo Sub-Branch。也可
+        省去分行译名，简作：中国银行普陀支行 Bank of China, Putuo Sub-Branch。
 
-        保险公司（股份有限公司、有限责任公司）译作 Insurance Limited Company，如：民
-        生人寿保险股份有限公司 Minsheng Life Insurance Co., Ltd.。
-        4.1.3.4.1 人寿保险译作 Life Insurance。
-        4.1.3.4.2 财产保险译作 Property Insurance。
-        4.1.3.4.3 再保险译作 Reinsurance。
+        保险公司（股份有限公司、有限责任公司）译作 Insurance Limited Company，
+        如：民生人寿保险股份有限公司 Minsheng Life Insurance Co., Ltd.。人寿保
+        险译作 Life Insurance。财产保险译作 Property Insurance。再保险译作
+        Reinsurance。
 
-        保险公司（股份有限公司、有限责任公司）译作 Insurance Limited Company，如：民
-        生人寿保险股份有限公司 Minsheng Life Insurance Co., Ltd.。
-        4.1.3.4.1 人寿保险译作 Life Insurance。
-        4.1.3.4.2 财产保险译作 Property Insurance。
-        4.1.3.4.3 再保险译作 Reinsurance。
+        保险公司（股份有限公司、有限责任公司）译作 Insurance Limited Company，
+        如：民生人寿保险股份有限公司 Minsheng Life Insurance Co., Ltd.。人寿保
+        险译作 Life Insurance。财产保险译作 Property Insurance。再保险译作
+        Reinsurance。
 
-        4.2.2.1 存取款：存款 Deposit；取款 Withdrawal。
-        4.2.2.2 贷款 Loan。
-        4.2.2.3 外汇 Foreign Currency。货币兑换 Currency Exchange。
-        4.2.2.4 理财 Financing (Management)。
-        4.2.2.5 基金 Fund。
+        存取款：存款 Deposit；取款 Withdrawal。贷款 Loan。外汇 Foreign Currency
+        。货币兑换 Currency Exchange。理财 Financing (Management)。基金 Fund。
 
-        个人质押贷款 Personal Pledge Loan。
-        4.2.3.2 应使功能指示明确，保持译文简洁，如：存折插入口 Please Insert Your
-        Passbook。
+        个人质押贷款 Personal Pledge Loan。应使功能指示明确，保持译文简洁，如：
+        存折插入口 Please Insert Your Passbook。
 
         取款机 ATM，存款机 CRS。
 
         钱款请当面点清 Please Count Your Cash Before Leaving。s
 
-        10  出门请按纽  Press to Exit
-        11  出纳  Teller
-        12  磁卡入口  Card Slot
-        13  存款机（存取款一体机）  CRS (Cash Recycling System)s
+        出门请按纽  Press to Exit
+        出纳  Teller
+        磁卡入口  Card Slot
+        存款机（存取款一体机）  CRS (Cash Recycling System)s
 
         page 75
+    </div>
 
     第 8 部分：医疗卫生；
 
@@ -22901,6 +23035,11 @@ Disallow:
     第 10 部分：商业服务业。
 
 [Behavioral Profiling: The password you can't change.](https://paul.reviews/behavioral-profiling-the-password-you-cant-change/)
+
+:   用来解决密码疲劳的一个密码方案。感觉上……不靠谱。因为人类不够 consistent（个
+    人看法）。
+
+    应该和设备、人的心情有关（换了键盘可能这个人的一些反应力就会变）。
 
 [密码疲劳 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/08/password-fatigue.html)
 
@@ -22962,6 +23101,8 @@ Disallow:
     ```
 
 [经验:我是怎么找电子书的 - 简书](http://www.jianshu.com/p/fe97eb12f12f)
+
+:   自己弄一个？把广告去掉。广告真是太影像心情。
 
 [说说“融入美国社会”这件事 - 简书](http://www.jianshu.com/p/927c06c04dcc)
 
@@ -23695,5 +23836,3 @@ Disallow:
 [Is there any chance that vim will be rewritten in c++ with gtk/qt like other fast modern editors? - Quora](https://www.quora.com/Is-there-any-chance-that-vim-will-be-rewritten-in-c++-with-gtk-qt-like-other-fast-modern-editors)
 
 :   see [equalsraf/vim-qt](https://github.com/equalsraf/vim-qt)
-
-<!--...--><!--上面不要加 ---（hr）-->

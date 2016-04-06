@@ -198,3 +198,4 @@ Links | 链签
 #. [Hacker News](https://news.ycombinator.com/news)
 #. [Open California - Planet Labs](https://www.planet.com/open-california/#/center/-13480829.478199044,4250832.839548695/zoom/13)
 #. [我的网易招聘](http://gzgame.campus.163.com/myrecruit.do?lan=zh)
+#. [程序媛想事儿 - 博客频道 - CSDN.NET](http://blog.csdn.net/lanxuezaipiao)
