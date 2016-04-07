@@ -10,8 +10,8 @@ travis 给整个博客弄了一个打包：<https://coding.net/u/dvorak4tzx/p/dv
 「Koan | 吐槽」
 
 发现自己在重复造轮子，而且造得不好！Pandoc 有 `--filter` 和 `--file-scope` 的概
-念，正好对应我的 `filter.pl` 和 `merger.pl`，我……只能说英雄所见略同了…… 这些
-Perl 脚本还能用，但计划以后用 Pandoc 的 filter。
+念，正好对应我的 [`filter.pl`](filter.pl) 和 `merger.pl`，我……只能说英雄所见略同了…… 这些
+Perl 脚本还在用，但计划以后用 Pandoc 的 filter。
 
 「Refs | 参考文档」
 
@@ -22,7 +22,7 @@ Perl 脚本还能用，但计划以后用 Pandoc 的 filter。
 「New Plan | 新的计划」
 
   - 不再用 Perl 的正则表达式转换 Markdown，而是用 Perl 或者 Haskell 直接修改 Pandoc 的 AST；
-  - CSS 也不再大的调整，有了图片的延迟加载，差不多就够用了。
+  - CSS 也不再大的调整，有了图片的延迟加载，差不多就够用了。用上 jQuery 后感觉自己原来用纯 JavaScript 实在太累太愚蠢。可能用 Less 或者 Sass
   - [Dogfalo/materialize: Materialize, a CSS Framework based on Material Design](https://github.com/Dogfalo/materialize)
 
 ---
@@ -72,7 +72,8 @@ Perl 脚本还能用，但计划以后用 Pandoc 的 filter。
       + add gvim path to `%PATH%`
       + set `%EDITOR%` to `gvim`, like [Configure EDITOR](http://gnat.qiniudn.com/dvorak4tzx/editor.jpg)
   - For Linux
-      - set `$EDITOR` to `vim`
+      - set `$EDITOR` to `gvim` (`vim file.txt &` 会出错，而我 Makefile 里都是
+        `$(EDITOR $< &)`，所以小心罗。)
 
 ## Deps
 

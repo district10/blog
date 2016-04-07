@@ -30,6 +30,8 @@ f`a{.cpp}k
 
 本书 example 源码是可以免费下到的：[C++ GUI Programming with Qt4, 2nd Edition | InformIT](http://www.informit.com/store/c-plus-plus-gui-programming-with-qt4-9780132354165)
 
+这本书的代码真是百看不厌。在这你总能找到自己需要的那一部分。
+
 Part I: Basic Qt
 ----------------
 

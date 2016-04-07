@@ -198,4 +198,7 @@ Links | 链签
 #. [Hacker News](https://news.ycombinator.com/news)
 #. [Open California - Planet Labs](https://www.planet.com/open-california/#/center/-13480829.478199044,4250832.839548695/zoom/13)
 #. [我的网易招聘](http://gzgame.campus.163.com/myrecruit.do?lan=zh)
+#. [我的简历 | Tencent 校园招聘](http://join.qq.com/preview.php)
+#. [我的应聘|校园招聘|阿里巴巴集团2016校园招聘](https://campus.alibaba.com/myJobApply.htm)
 #. [程序媛想事儿 - 博客频道 - CSDN.NET](http://blog.csdn.net/lanxuezaipiao)
+#. [Chase Zhang](http://chasezhang.me/#contacts)

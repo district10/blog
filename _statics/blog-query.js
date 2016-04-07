@@ -574,4 +574,14 @@ var tzx_links = [
         title: "GIS 理论与技术 - 作业 1, 6, 7",
         query: ['gis', 'homework']
     },
+    {
+        url: '/post-0092-trevor-burnham.html',
+        title: "Trevor Burnham's Book",
+        query: ['hacker', 'reading', 'javascript', 'functional programming']
+    },
+    {
+        url: '/post-0093-learning-d3.html',
+        title: "Learning D3.js",
+        query: ['d3', 'javascript']
+    },
 ];
