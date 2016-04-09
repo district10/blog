@@ -16,6 +16,7 @@ Friends | 友链
 - YhL_Leo
     + GitHub: [yhlleo](https://github.com/yhlleo)
     + [YhL_Leo的博客 - 博客频道 - CSDN.NET](http://blog.csdn.net/yhl_leo)
+    + [yhl's blog – Better and better.](http://115.159.156.28/)
 - Ann Lau
     + GitHub : [xuanxuanlau](https://github.com/xuanxuanlau)
     + [ButMan World – This world tonight is mine.](http://butman.club/)

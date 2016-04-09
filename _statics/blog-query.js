@@ -584,4 +584,9 @@ var tzx_links = [
         title: "Learning D3.js",
         query: ['d3', 'javascript']
     },
+    {
+        url: '/post-0094-learning-javascript.html',
+        title: "Learning JavaScript",
+        query: ['javascript']
+    },
 ];

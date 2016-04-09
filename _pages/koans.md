@@ -11,20 +11,32 @@ after-before:
 before-after: |
     <script>
     $('.tzx-timestamp').each(function(index){
-        var _tss = $(this).textContent;
-        var ts = new Number( _tss );
-        var dt = moment(ts*1000);
-        var time = dt.format("YYYY/MM/DD HH:mm");
-        var pdt = dt.format("YYYY-MM-DD HH:mm:ss");
-        var tooltip = _tss + ': ' + pdt;
-        $(this).textContent = time;
-        $(this).attr( 'title', tooltip );
+        var _tss = this.textContent;
+        var dt = moment( new Number( _tss ) * 1000 );
+        var tooltip = _tss + ': ' + dt.format("YYYY-MM-DD HH:mm:ss");
+        this.textContent = dt.format("YYYY/MM/DD HH:mm");
+        this.title = tooltip;
     });
     </script>
 ...
 
 Koans | 呓语
 ============
+
+## `1460188539`{.tzx-timestamp} 无耻新闻从业人员
+
+最无耻的就是新闻从业人员（以及相关程序员和产品经理）。整天 傻 b 一样推送各种无
+聊的东西。尤其是 QQ：啊，哪个地方车祸了；啊，哪个女乘客被强奸抢劫了，啊，快递员
+被自杀的人砸死了。三天两头都是这些破玩意儿。
+
+为什么腾讯不允许用户选择关闭右下角QQ新闻弹窗？
+  ~ 因为腾讯是个丑流氓。妈的智障！
+
+see also
+
+  - [为什么腾讯 QQ 的新闻弹窗大多数人不反感？ - 腾讯 QQ - 知乎](https://www.zhihu.com/question/19576639)
+  - [QQ轻聊版官方网站](http://im.qq.com/lightqq/)
+  - [为什么腾讯不允许用户选择关闭右下角QQ新闻弹窗？ - 腾讯 QQ - 知乎](http://www.zhihu.com/question/39913761)
 
 ## `1460015071`{.tzx-timestamp} 皮蛋瘦肉粥……
 
@@ -38,6 +50,7 @@ Koans | 呓语
 刚才在豆瓣看到“皮蛋粥是很销魂的食物。当你想减肥又觉得嘴里实在没滋味，选它就没错
 了。皮蛋的香和劲道，青菜的清爽，再来点鸡脯肉加小咸菜很到位。”，吐个槽。
 
+<div class="tzx-hide">
 ## `1459853425`{.tzx-timestamp} 投简历
 
 没有提交上！！！然后内推都过了！我猜发现自己什么都没投……
@@ -45,6 +58,7 @@ Koans | 呓语
 我现在感觉，阿里前端，有点水。
 而且在页面编辑简历的时候也让我各种不爽，尤其是编辑自己的学校，本来直接用输入框让我敲“武汉大学”最快，
 却偏要我点击几次按钮，找半天，“中国大陆”->“湖北”->“武汉”->“武汉大学”。这体验连 12306 都不如。
+</div>
 
 ## `1459563448`{.tzx-timestamp} 淘金时代
 

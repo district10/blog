@@ -23,6 +23,430 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+```
+txupd.exe
+
+$
+ABL.sys
+AFBase.dll*
+AFCtrl.dll*
+AFUtil.dll*
+AddEmotion.htm
+AddrSearch.dll*
+AdvVideoDev.dll*
+AppCenter.dll*
+AppCom.dll*
+AppFramework.dll*
+AppMisc.dll*
+AppUtil.dll*
+Applaunch.prf
+AsyncTask.dll*
+AuCommon.dll*
+Auvqqsdl.dll*
+CPHelper.dll*
+Camera.dll*
+CameraRS.dll*
+CefSubProcess.dll*
+ChatFrameApp.dll*
+Common.dll*
+ConfigCenter.dll*
+ContactInfoFrame.dll*
+ContactMgr.dll*
+CustomFace.dll*
+DownloadProxyPS.dll*
+Extract.dll*
+FacePackageDll.dll*
+FlashControl.dll*
+FlashControlService.dll*
+GF.dll*
+GFRichControl.dll*
+GroupApp.dll*
+HummerEngine.dll*
+IM.dll*
+InformationBox.dll*
+IntelUtil.dll*
+KernelMisc.dll*
+KernelUtil.dll*
+LICENSE/
+LoginLogic.dll*
+LoginUI.dll*
+LongCnn.dll*
+MainFrame.dll*
+MedalWall.rdb
+MedalWall.tpc
+MediaFileEx.dll*
+MsgMgr.dll*
+MyCollection.dll*
+OPMiscDll.dll*
+PBL.sys
+PluginCommon.dll*
+PreloginLogic.dll*
+ProcessSession.dll*
+QCK.dll*
+QInterLive.dll*
+QMMiscDll.dll*
+QPerfHelper.exe*
+QPerfMon.dll*
+QQ.exe*
+QQApp.exe*
+QQCallbr.exe*
+QQCallqd.exe*
+QQExternal.exe*
+QQPCDetector.dll*
+QQPCDetectorEx.dll*
+QQPcmgrDownload.exe*
+QQSafeUD.exe*
+QQScLauncher.exe*
+QQService.dll*
+QQUrlMgr.exe*
+QSLogic.dll*
+QScanEngine.dll*
+RHComm.dll*
+RICHED20.DLL*
+RenderService.dll*
+RequestHost.dll*
+RichControlOle.dll*
+SetupEx/
+SkinMgr.dll*
+StorageTool.exe*
+SystemMsg.dll*
+TNProxy.dll*
+TSIP.DAT
+TSSafeEdit.dat*
+TXPFProxy.dll*
+TXPlatform.exe*
+TXSSO/
+TaskTray.dll*
+TcHevcDec.dll*
+TcHevcEnc.dll*
+TcVpxDec.dll*
+TcVpxEnc.dll*
+Tencentdl.exe*
+Timwp.dll*
+Timwp.exe*
+UtilGif.dll*
+VQQProto.dll*
+VQQTrace.dll*
+WebCtrl.dll*
+WordSegment.dll*
+XFQueryResource.dll*
+XVEngine.dll*
+arkEngine.dll*
+arkFS.dll*
+arkGraphic.dll*
+arkHTTPClient.dll*
+arkIOStub.dll*
+arkIPC.dll*
+arkImage.dll*
+arkModule.dll*
+arkScript.dll*
+arkShell.dll*
+arkSocket.dll*
+arkXML.dll*
+auclt.exe*
+avcodec-54bp1.dll*
+avformat-54bp1.dll*
+avutil-51bp1.dll*
+bugreport.exe*
+dlcore.dll*
+dwmcapDT32.dll*
+dwmcapDT64.dll*
+ffmpegsumo.dll*
+icudt.dll*
+jsonc.dll*
+libcef3.dll*
+libeay32.dll*
+libexpat.dll*
+libhttp.dll*
+libimagequant.dll*
+libjpegturbo.dll*
+libpng.dll*
+libsee.dll*
+libtcmalloc.dll*
+libuv.dll*
+lua.dll*
+maJmp.dll*
+maLauncher.exe*
+maMainFrame.dll*
+maMainFrame.rdb
+maMainFrame.tpc
+maUpdat.exe*
+maUtility.dll*
+msvcp60.dll*
+odProxy.dll*
+plugins/
+sqlite.dll*
+ssleay32.dll*
+swresample-0bp1.dll*
+swscale-2bp1.dll*
+tinyxml.dll*
+vi.dat
+vqqsdl.dll*
+xGraphic32.dll*
+xImage.dll*
+xPlatform.dll*
+zlib.dll*
+
+```
+
+
+[File Roller/Unzip 解压中文 Zip 文件名乱码](https://linuxtoy.org/archives/wrong-handling-of-chinese-coded-filename-in-fileroller-unzip.html)
+
+`http://github.com/district10/blog/commits/master.atom`
+`https://github.com/district10.atom`
+
+- have you ever met someone who is like the **human version of period cramps** (痛经).
+- I think this is the first time something has conveyed to me with true clarity
+  just how bad period cramps are.
+
+- We asked the audience their biggest fears, let's **delve** (探究) among them now.
+- I'm actually afraid of sperm **in places it's not supposed to be**.
+- I'm a **forensic scientist**, so I find it it in really weird places and feel it's everywhere.
+- I think you should **have your couch checked out**.
+
+- describe your sex life, with the name of a song
+- all by myself
+
+- feelings hookers
+- **therapist**
+
+- cauliflower
+- **albino `[æl'baɪno]` broccoli**
+
+spoonerism: boys and girls -> goys and birls
+
+[Spoonerism - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Spoonerism)
+
+:   A spoonerism is an error in speech or deliberate **play on words** in which
+    corresponding consonants, vowels, or morphemes are switched (see
+    metathesis) between two words in a phrase.
+
+    - "Three cheers for our queer old dean!" (rather than "dear old queen,"
+      which is a reference to Queen Victoria)
+    - "Is it kisstomary to cuss the bride?" (as opposed to "customary to kiss")
+    - "The Lord is a shoving leopard." (instead of "a loving shepherd")
+    - "A blushing crow." ("crushing blow")
+    - "A well-boiled icicle" ("well-oiled bicycle")
+    - "You were fighting a liar in the quadrangle." ("lighting a fire")
+    - "Is the bean dizzy?" ("Dean busy")
+    - "Someone is occupewing my pie. Please sew me to another sheet." ("Someone
+      is occupying my pew. Please show me to another seat.")
+    - "You have hissed all my mystery lectures. You have tasted a whole worm.
+      Please leave Oxford on the next town drain." ("You have missed all my
+      history lectures. You have wasted a whole term. Please leave Oxford on
+      the next down train.")
+
+    - lords is a loving shepherd.
+    - lords is a shoving leopard.
+
+    - our dear old Queen
+    - our queer old dean
+
+    - Have you seen her duck sick?
+    - Have you seen her suck dick?
+
+    - I'm gonna take a shit.
+    - I'm gonna shake a tit.
+
+    - She showed me her tool kits.
+    - She showed me her cool tits.
+
+    - That's a coarse hunt.
+    - That's a horse/whore's cunt (屄, 女性阴部).
+
+    - A Tale of Two Cities
+    - A Sale of Two Titties (咪咪)
+
+    - She put hope in his soul.
+    - She put soap in his hole.
+
+    - You're a smart feller.
+    - You're a fart smeller.
+
+    - I love pop corn.
+    - I love cop porn.
+
+    - Let's save the whales.
+    - Let's wave the sails.
+
+    - I'm doing chores.
+    - I'm chewing (啃) doors.
+
+    - Go take a shower in the bathroom.
+    - Go shake a tower in the bathroom.
+
+    [Apocrypha - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Apocrypha)
+
+    :   Apocrypha are works, usually written works, that are of unknown authorship,
+        or of doubtful authenticity, or spurious, or not considered to be within a
+        particular canon. The word is properly treated as a plural, but in common
+        usage is often singular. In the context of the Jewish and Christian Bibles,
+        where most texts are of unknown authorship, Apocrypha usually refers to a
+        set of texts included in the Septuagint but not in the Hebrew Bible.
+
+    [List of forms of word play - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_forms_of_word_play)
+
+    :   Word play or wordplay is a literary technique and a form of wit in which
+        the words that are used become the main subject of the work, primarily for
+        the purpose of intended effect or amusement. Examples of word play include
+        puns, phonetic mix-ups such as spoonerisms, obscure words and meanings,
+        clever rhetorical excursions, oddly formed sentences, double entendres, and
+        telling character names (such as in the play The Importance of Being
+        Earnest, Ernest being a given name that sounds exactly like the adjective
+        earnest).
+
+        Word play is quite common in oral cultures as a method of reinforcing meaning.
+
+        Examples of visual orthographic and sound-based word play abound in both alphabetically and non-alphabetically written literature (e.g. Chinese).
+
+    [Figure of speech - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Figure_of_speech)
+
+    :   修辞手法
+
+        A figure of speech or rhetorical figure is figurative language in the form
+        of a single word or phrase. It can be a special repetition, arrangement or
+        omission of words with literal meaning, or a phrase with a specialized
+        meaning not based on the literal meaning of the words. There are mainly
+        five figures of speech: simile, metaphor, hyperbole, personification and
+        synecdoche. Figures of speech often provide emphasis, freshness of
+        expression, or clarity. However clarity may also suffer from their use, as
+        any figure of speech introduces an ambiguity between literal and figurative
+        interpretation.
+
+    refs and see also
+
+      - [List of forms of word play - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_forms_of_word_play)
+
+George R.R. Martin on Syrian refugees: 'Let them in'
+
+tranny 异装癖
+
+[Tranny (slang) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Tranny_(slang))
+
+:   Tranny is a slang term used chiefly to describe people who are confused and
+    full of themselves wearing drag, transvestites, or cross-dressers.  The
+    term is considered a compliment by some transgender activists, such as Roz
+    Kaveney.
+
+    ![Roz Kaveney, 14 April 2007](https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Roz_Kaveney_April_14_2007_by_Patrick_Nielsen_Hayden.jpg/330px-Roz_Kaveney_April_14_2007_by_Patrick_Nielsen_Hayden.jpg)
+
+    Roz Kaveney (born 9 July 1949) is a British writer, critic, and poet, best
+    known for her critical works about pop culture and for being a core member
+    of the Midnight Rose collective. Kaveney's works include fiction and
+    non-fiction, poetry, reviewing, and editing.
+
+新建只有扩展名的文件的方法：".suffix."，比如创建.gitignore，正常情况下windows是不允许创建的，但在扩展名后面加点，即.gitignore.就可以正常创建了；
+
+&emsp;`&emsp;`
+
+(其实命令行里也是可以创建的。)
+
+WIN+R，输入“psr”后回车：打开步骤记录器；
+
+在桌面上，右键任何一个程序，鼠标定位到快捷键一栏，为该应用设置启动快捷键，然后你就可以通过这个这个快捷键来启动该程序啦；
+
+WIN+P：选择一个演示文稿显示模式；
+WIN+Pause：显示系统属性对话框；
+WIN+T：切换任务栏上的程序； （然后用空格选中打开）
+
+
+
+
+[什么时候我们才能拍出这样的禁片 - 简书](http://www.jianshu.com/p/c0c08b663fd7)
+
+[单身的日子，幸亏有它帮我顶着 - 简书](http://www.jianshu.com/p/c982cda1a70c)
+
+[我来说一下为什么职场性骚扰这么无解](https://www.douban.com/note/546941170/?start=500#comments)
+
+:   那么这位老先生就进行到下一步了，开始对我妹子动手动脚，这个动手动脚是很微妙
+    的，他会在电梯里搭一下我朋友的肩，上车时搂一下我朋友的腰，人多的时候假装关
+    心的拽一下我朋友的手，这些都是一些可以忽略却十分怪异的动作，你无法严厉的拒
+    绝因为很有可能对方出于礼貌，但又十分怪异。
+
+    一般进行到这一步，有些妹子就会辞职，一部分迫于生存压力，不想丢工作，即使知
+    道对方是在骚扰自己，也只能委屈当不知道继续工作。我以前仔细研究过到底怎么样
+    的行为才能构成犯罪，才能起诉，结果让我失望极了，除非你有确凿的证据对方对你
+    使用暴力，强迫，不然这种无时无刻的的下流话，偶尔揩揩油，喝醉或者没人的时候
+    摸一把，根本什么都不算。
+
+    我能总结出来的教训就是不要和他们交流，除了工作，任何题外话都当做没听到不予
+    回应，万万不能让身边任何人知道自己是孤身一人，如果被摸了，或者疑似被摸了，
+    想办法在第一次的时候就直截了当的说出来，这点真的很难，即使是开玩笑也很难搪
+    塞过去。还有这种喜欢对下属性骚扰的家伙，都很喜欢说自己的不幸故事，通常也都
+    是一副看起来道貌岸然的样子，私下的嘴脸就会变得很可怕，很精分，大概我国男性
+    真的普遍处于性压抑的状态。
+
+    希望每个一人在外打拼的姑娘都能好好的，希望这些人渣烂货都去死。
+
+- Israel
+- get crowdfunding help
+- Belgium launches appel to find 'man in hat' bombing suspect.
+- kindnapped by Islamic State
+- truce voilations
+- Israeli minister romania
+- The Silicon Valley of Transylvania
+- Conspiracy
+- MathML is a failed Web standard.
+- More than 40% of Student Borowers aren't making payments.
+- Criminal prosecutions copyright infringement.
+- Clinton and Sanders tensions escalte
+- Mafia
+- lesbian
+- icelandic chef
+- snake chavmer
+- tackle pests
+- Nigerin militants
+- Offered olive branch.
+- Syria millitants
+- abduct factor workers
+- Star Wars Rogue One
+- Lucky escape after lorry crash
+- skidded out of control.
+- parliament bans payment for sex
+- Brussels airport attack.
+- P-a-n-a-m-a P-a-p-e-r-s
+- ukraine
+- afga bhan asylum
+- Iraq introverted
+- blackout
+- bug bounty programme
+- thwart
+- bribery
+- hoverboard
+- affidavit
+- optimize
+- industrial structure
+- overcapacity
+- portfolio
+- migrant workers
+- urban, suburb
+- per capita
+- harassing calls
+- too shy ( tai shuai )
+- interstellar?
+- per puple expenditure
+- diesel
+- asymul applications
+- be carried out under a controversial EU deal to stem the refugee crisis.
+- Beijing hotel assualt suspect arrested
+- high-profile video
+- a self-driving warship
+- slaming a girl to the ground.
+- Legislations that would have set minimum standards for pasenger space abroad comericial aeroplanes fais to pass in    he US senate
+- depicted the royal family.
+
+[NPM 与 left-pad 事件：我们是不是早已忘记该如何好好地编程？ - 知乎专栏](http://zhuanlan.zhihu.com/p/20707235)
+
+[sia（澳大利亚歌手、词曲人）_百度百科](http://baike.baidu.com/link?url=YASakjLUx56Lah5EMZg4e-0PB6rhlGosgc8o0O816Sh8EumYaNjs3FlN35XUaLFpV0B2gWUrr4S7NaiHNrV4TY6MPLjmMNJdiTi8jdFfLNe)
+
+[Maddie Ziegler - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Maddie_Ziegler)
+
+[Maddie Ziegler，美国现在最红的小萝莉|界面新闻•歪楼](http://www.jiemian.com/article/279452.html)
+
+[【Sia (希雅)-口袋·FAN】MV_图片_新闻_资料_论坛-音悦Tai-看好音乐](http://www.yinyuetai.com/fanclub/12725)
+
+[如何评价女歌手Sia？ - 知乎用户的回答 - 知乎](http://www.zhihu.com/question/24230184/answer/31470645)
+
 [Business & Financial News, Breaking US & International News | Reuters.com](http://www.reuters.com/tools/rss)
 
 [News feeds from the BBC - BBC News](http://www.bbc.com/news/10628494)
