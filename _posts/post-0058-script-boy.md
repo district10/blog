@@ -31,7 +31,6 @@ tags:
 
 ![在豆瓣读书运行【豆瓣读书】脚本后](http://gnat.qiniudn.com/doubanBook.png)
 
-<small><small>
 ```markdown
 [![](http://img4.douban.com/mpic/s9233126.jpg)](http://book.douban.com/subject/3004255/ "编程之美")
 [![](http://img3.douban.com/mpic/s28049911.jpg)](http://book.douban.com/subject/25863979/ "民主的阴暗面")
@@ -39,7 +38,6 @@ tags:
 [![](http://img3.douban.com/mpic/s2254394.jpg)](http://book.douban.com/subject/1126207/ "斯巴达克斯")
 [![](http://img4.douban.com/mpic/s3865447.jpg)](http://book.douban.com/subject/3826899/ "布鲁克林有棵树")
 ```
-</small></small>
 
 这样的 Markdown 代码放到本站，就是这样：
 

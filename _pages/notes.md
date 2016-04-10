@@ -23,172 +23,19 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
-```
-txupd.exe
+[如何评价 2015 年电影《末日崩塌》（San Andreas）？ - CaesarZX 的回答 - 知乎](https://www.zhihu.com/question/30275207/answer/49700761)
 
-$
-ABL.sys
-AFBase.dll*
-AFCtrl.dll*
-AFUtil.dll*
-AddEmotion.htm
-AddrSearch.dll*
-AdvVideoDev.dll*
-AppCenter.dll*
-AppCom.dll*
-AppFramework.dll*
-AppMisc.dll*
-AppUtil.dll*
-Applaunch.prf
-AsyncTask.dll*
-AuCommon.dll*
-Auvqqsdl.dll*
-CPHelper.dll*
-Camera.dll*
-CameraRS.dll*
-CefSubProcess.dll*
-ChatFrameApp.dll*
-Common.dll*
-ConfigCenter.dll*
-ContactInfoFrame.dll*
-ContactMgr.dll*
-CustomFace.dll*
-DownloadProxyPS.dll*
-Extract.dll*
-FacePackageDll.dll*
-FlashControl.dll*
-FlashControlService.dll*
-GF.dll*
-GFRichControl.dll*
-GroupApp.dll*
-HummerEngine.dll*
-IM.dll*
-InformationBox.dll*
-IntelUtil.dll*
-KernelMisc.dll*
-KernelUtil.dll*
-LICENSE/
-LoginLogic.dll*
-LoginUI.dll*
-LongCnn.dll*
-MainFrame.dll*
-MedalWall.rdb
-MedalWall.tpc
-MediaFileEx.dll*
-MsgMgr.dll*
-MyCollection.dll*
-OPMiscDll.dll*
-PBL.sys
-PluginCommon.dll*
-PreloginLogic.dll*
-ProcessSession.dll*
-QCK.dll*
-QInterLive.dll*
-QMMiscDll.dll*
-QPerfHelper.exe*
-QPerfMon.dll*
-QQ.exe*
-QQApp.exe*
-QQCallbr.exe*
-QQCallqd.exe*
-QQExternal.exe*
-QQPCDetector.dll*
-QQPCDetectorEx.dll*
-QQPcmgrDownload.exe*
-QQSafeUD.exe*
-QQScLauncher.exe*
-QQService.dll*
-QQUrlMgr.exe*
-QSLogic.dll*
-QScanEngine.dll*
-RHComm.dll*
-RICHED20.DLL*
-RenderService.dll*
-RequestHost.dll*
-RichControlOle.dll*
-SetupEx/
-SkinMgr.dll*
-StorageTool.exe*
-SystemMsg.dll*
-TNProxy.dll*
-TSIP.DAT
-TSSafeEdit.dat*
-TXPFProxy.dll*
-TXPlatform.exe*
-TXSSO/
-TaskTray.dll*
-TcHevcDec.dll*
-TcHevcEnc.dll*
-TcVpxDec.dll*
-TcVpxEnc.dll*
-Tencentdl.exe*
-Timwp.dll*
-Timwp.exe*
-UtilGif.dll*
-VQQProto.dll*
-VQQTrace.dll*
-WebCtrl.dll*
-WordSegment.dll*
-XFQueryResource.dll*
-XVEngine.dll*
-arkEngine.dll*
-arkFS.dll*
-arkGraphic.dll*
-arkHTTPClient.dll*
-arkIOStub.dll*
-arkIPC.dll*
-arkImage.dll*
-arkModule.dll*
-arkScript.dll*
-arkShell.dll*
-arkSocket.dll*
-arkXML.dll*
-auclt.exe*
-avcodec-54bp1.dll*
-avformat-54bp1.dll*
-avutil-51bp1.dll*
-bugreport.exe*
-dlcore.dll*
-dwmcapDT32.dll*
-dwmcapDT64.dll*
-ffmpegsumo.dll*
-icudt.dll*
-jsonc.dll*
-libcef3.dll*
-libeay32.dll*
-libexpat.dll*
-libhttp.dll*
-libimagequant.dll*
-libjpegturbo.dll*
-libpng.dll*
-libsee.dll*
-libtcmalloc.dll*
-libuv.dll*
-lua.dll*
-maJmp.dll*
-maLauncher.exe*
-maMainFrame.dll*
-maMainFrame.rdb
-maMainFrame.tpc
-maUpdat.exe*
-maUtility.dll*
-msvcp60.dll*
-odProxy.dll*
-plugins/
-sqlite.dll*
-ssleay32.dll*
-swresample-0bp1.dll*
-swscale-2bp1.dll*
-tinyxml.dll*
-vi.dat
-vqqsdl.dll*
-xGraphic32.dll*
-xImage.dll*
-xPlatform.dll*
-zlib.dll*
+[为何世界三大宗教里只有伊斯兰教在今天仍是一个政治问题？ - 安瑟尼的回答 - 知乎](https://www.zhihu.com/question/37514563/answer/72371088)
 
-```
-
+<div class="tzx-hide">
+- [红颜知己&蓝颜知己，都来一点 | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/437895/)
+- [你的蓝颜知己在想什么？ | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/437041/)
+- [好男人精挑细选，坏男人来者不拒 | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/59639/)
+- [爱情、友情，两手都要硬！ | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/11118/?_block=article_interested&_pos=2&rkey=d1ed)
+- [男女之间能有单纯的友谊吗？ | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/179197/?_block=article_interested&_pos=0&rkey=d1ed)
+- [姑娘，你异性朋友这么多，这样好吗？ | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/437916/?_block=article_interested&_pos=1&rkey=dc27)
+- [为什么小时候好看的人长大后大多数会「长残」？ - 高大拙的回答 - 知乎](https://www.zhihu.com/question/28206000/answer/39859238)
+</div>
 
 [File Roller/Unzip 解压中文 Zip 文件名乱码](https://linuxtoy.org/archives/wrong-handling-of-chinese-coded-filename-in-fileroller-unzip.html)
 
@@ -439,13 +286,14 @@ WIN+T：切换任务栏上的程序； （然后用空格选中打开）
 
 [sia（澳大利亚歌手、词曲人）_百度百科](http://baike.baidu.com/link?url=YASakjLUx56Lah5EMZg4e-0PB6rhlGosgc8o0O816Sh8EumYaNjs3FlN35XUaLFpV0B2gWUrr4S7NaiHNrV4TY6MPLjmMNJdiTi8jdFfLNe)
 
-[Maddie Ziegler - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Maddie_Ziegler)
+2004年英伦Trip-hop新贵乐队Zero 7借首张专辑《Simple Things》中一鸣惊人，着迷于Zero 7音乐的同时，乐迷们也被其中一把懒洋洋却又质感十足的女声深深吸引。这把让人惊艳的女声来自年轻的澳大利亚女歌手Sia（Sia Furler，Sia发音是See-ah）。Sia在Zero 7专辑中的声音听起来有点慵懒，散漫着淡淡的爵士味道，由她献声演绎的Destiny和Distractions两首曲目成为了专辑的两大亮点。随着Zero 7和《Simple Things》在全球火速窜红，Sia的声音也被越来越多的乐迷所熟知。甚至还有乐评将她的歌声与英国电子民谣天后Dido的放在一起比较，形容为“你不能错过的年度最酷的Down-Tempo人声”。
 
-[Maddie Ziegler，美国现在最红的小萝莉|界面新闻•歪楼](http://www.jiemian.com/article/279452.html)
+refs and see also
 
-[【Sia (希雅)-口袋·FAN】MV_图片_新闻_资料_论坛-音悦Tai-看好音乐](http://www.yinyuetai.com/fanclub/12725)
-
-[如何评价女歌手Sia？ - 知乎用户的回答 - 知乎](http://www.zhihu.com/question/24230184/answer/31470645)
+  - [Maddie Ziegler - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Maddie_Ziegler)
+  - [Maddie Ziegler，美国现在最红的小萝莉|界面新闻•歪楼](http://www.jiemian.com/article/279452.html)
+  - [【Sia (希雅)-口袋·FAN】MV_图片_新闻_资料_论坛-音悦Tai-看好音乐](http://www.yinyuetai.com/fanclub/12725)
+  - [如何评价女歌手Sia？ - 知乎用户的回答 - 知乎](http://www.zhihu.com/question/24230184/answer/31470645)
 
 [Business & Financial News, Breaking US & International News | Reuters.com](http://www.reuters.com/tools/rss)
 
@@ -21166,6 +21014,18 @@ Disallow:
         return (wordbits[i&0xFFFF] + wordbits[i>>16]);
     }
     ```
+
+    说一个故事，四五年前我为面试出了一条笔试题目，恰巧和本书的题目2.1很相似，计
+    算一个无号整数(我要求32-bit，书中的是8-bit)在二进制中1的个数。当时心想这个
+    题目很简单吧，谁知有些应征者在这题上交白卷，更难找到一些能写到更优化答案的
+    人了，并以为自己做出的解法已经是最优。不过，几年后，我才知道原来这个问题是
+    有正式的学名，叫Hamming Weight
+    (http://en.wikipedia.org/wiki/Hamming_weight)，除了有更快的算法外，在SIMD
+    4.2 也有指令去计算。当时就为自己的无知感到惭愧。
+
+    refs and see also
+
+      - [迟来的书评和感想──给喜爱编程的朋友 (评论: 编程之美)](https://book.douban.com/review/3010762/)
 
 [trigonometry - How to use the PI constant in C++ - Stack Overflow](http://stackoverflow.com/questions/1727881/how-to-use-the-pi-constant-in-c)
 

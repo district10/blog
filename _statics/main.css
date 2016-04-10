@@ -701,6 +701,7 @@ body {
     padding-bottom: 3px;
 }
 
+[id^=fnref].footnoteRef:target { border: 1px solid #9ddcff; }
 .footnotes [id^=fn]:target {
     background-color: rgba(0,127,255,0.02);
     border-right: 5px solid lightgray;
@@ -805,7 +806,7 @@ code.tzx-timestamp {
 .tzx-drawer-show { display: block; }
 .tzx-drawer-hide { display: none; }
 .tzx-hide { display: none; }
-.tzx-show { display: block; }
+.tzx-show { display: block; border: 1px solid red; }
 
 a.tzx-header-anchor {
     text-decoration: none;

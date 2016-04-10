@@ -23,6 +23,27 @@ before-after: |
 Koans | 呓语
 ============
 
+## `1460260515`{.tzx-timestamp} MV 之王
+
+MV 拍得很赞的，有 Katy Perry 的《The One That Get Away》，
+MIKA 的《Good Guys》，以及 Sia 的所有 MV~
+
+每个 MV 都讲了一个好故事。下面是我喜欢的一些：
+
+  - [David Guetta & Sia - Titanium](http://v.yinyuetai.com/video/396254)
+  - [Hello Saferide & Firefox Ak - Long Lost Penpal](http://v.yinyuetai.com/video/330827)
+  - [Katy Perry - The One That Got Away](http://v.yinyuetai.com/video/2364274)
+  - [Mika - Good Guys](http://v.yinyuetai.com/video/2297310)
+  - [Sia - Alive](http://v.yinyuetai.com/video/2412186)
+  - [Sia - Big Girls Cry](http://v.yinyuetai.com/video/2267127)
+  - [Sia - California Dreamin](http://v.yinyuetai.com/video/2408487)
+  - [Sia - Cheap Thrills](http://v.yinyuetai.com/video/2527677)
+  - [Sia - Elastic Heart](http://v.yinyuetai.com/video/2276987)
+  - [Sia - You've Changed](http://v.yinyuetai.com/video/142070)
+refs and see also
+
+  - [【MV】Sia -Big Girls Cry 背后的故事 幕后访谈 中英字幕 (SiaFurler汉化组)-高清MV在线播放-音悦Tai-口袋·FAN-看好音乐](http://v.yinyuetai.com/video/h5/2332671)
+
 ## `1460188539`{.tzx-timestamp} 无耻新闻从业人员
 
 最无耻的就是新闻从业人员（以及相关程序员和产品经理）。整天 傻 b 一样推送各种无

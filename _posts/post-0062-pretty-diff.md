@@ -28,7 +28,7 @@ Pretty Diff | 听歌学英语
 
 比如这里有两个测试文档 `_a.txt` 和 `_b.txt`，如下：（respectively）
 
-```plain
+```tzx-bigquote
 What do you mean?（这行被删除）
 When you nod your head yes（单词改变）
 But you wanna say no（单词添加）
@@ -36,7 +36,7 @@ What do you mean?（删除单词）
 When you don't want me to move（这行不变）
 ```
 
-```plain
+```tzx-bigquote
 When you nod your haydes（单词改变）
 But you wanna say me no（单词添加）
 What you mean?（删除单词）
@@ -111,7 +111,7 @@ Git 我也不熟，又去查文档，看到
 
 这个指令出来的结果在命令行下是彩色，其实用的是 "ANSI" 颜色表示法，输出的文本为（文件里的 ESC 字符被替换为 ＥＳＣ）：
 
-<small><small><small><small>
+<small><small>
 ```tzx-plain
 ＥＳＣ[1mdiff --git a/_a.txt b/_b.txtＥＳＣ[m
 ＥＳＣ[1mindex 0cb3b2a..d540f3f 100644ＥＳＣ[m
@@ -124,7 +124,7 @@ WhatＥＳＣ[31mdoＥＳＣ[m you mean?（删除单词）
 When you don't want me to move（这行不变）ＥＳＣ[m
 ＥＳＣ[32mBut you tell me to go（这行新添加）ＥＳＣ[m
 ```
-</small></small></small></small>
+</small></small>
 
 在 [Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook](post-0024-linux-shell-scripting-cookbook.html) 这篇笔记了也讲到过。^[虽然那时没说这是 ANSI 颜色表示法。]
 
