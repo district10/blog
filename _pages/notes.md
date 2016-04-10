@@ -23,8 +23,11 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+[Git - Viewing the Commit History](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
+
 [Add Rules to Stylesheets with JavaScript](https://davidwalsh.name/add-rules-stylesheets)
 
+```
 var sheets = document.styleSheets; // returns an Array-like StyleSheetList
 
 var sheet = (function() {
@@ -43,13 +46,15 @@ var sheet = (function() {
 
 	return style.sheet;
 })();
+```
 
+```
 padding: 50px 12px;
     padding-top: 50px;
     padding-right: 12px;
     padding-bottom: 50px;
     padding-left: 12px;
-
+```
 
 [POSIX - perldoc.perl.org](http://perldoc.perl.org/POSIX.html#scanf)
 
