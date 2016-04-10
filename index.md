@@ -14,8 +14,8 @@ tags:
 Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序员中广受欢迎，尤其是那些 Emacs[^emacs] 用户，
 比如 Steve Yegge、Sacha Chua、李杀。我也用 dvorak，所以这个网站叫 dvorak4tzx。[^info]</p>
 
-[^dvorak]: [Dvorak Simplified Keyboard - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard)
-[^qwerty]: [QWERTY - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/QWERTY)
+[^dvorak]: 见 [为什么 Emacs 用户爱德沃夏克](post-0006-why-emacs-users-favor-dvorak.html)。
+[^qwerty]: [QWERTY - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/QWERTY)。
 [^emacs]: [Emacs - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Emacs)。
 [^info]: 这是 <http://tangzhixiong.com> 的一部分。
 
@@ -41,7 +41,6 @@ Search:[^koan]<br>
 <div class="posts"><!--...-->
 * 2016-03-18 [背景知识的重要性](post-0090-prerequisites.html)
 * 2016-03-02 [Leet Code](post-0087-leetcode.html)
-
 * 2016-03-01 [Game of Throne](post-0086-game-of-throne-series.html)
 * 2016-01-14 [Complex Network Notes](post-0084-complex-network-notes.html)
 * 2016-01-07 [WHU MOOC Academic Integrity](post-0082-whu-mooc-academic-integrity.html)
@@ -118,6 +117,8 @@ Search:[^koan]<br>
 * 2013-00-00 [Dvorak 键盘布局（演讲稿）](post-0032-dvorak.html)
 * 2006-10-17 [Pandoc User's Guide](post-0001-pandoc-readme.html)
 </div>
+
+good
 
 ---
 

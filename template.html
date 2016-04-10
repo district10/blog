@@ -87,11 +87,26 @@ $endif$
 
 $endif$
 $if(tzx-changes)$
-<div class="tzx-changes"><ul>
+<div class="tzx-changes"><select id="tzx-changes" title="历史版本">
 $for(tzx-changes)$
-<li><a href="https://raw.githubusercontent.com/district10/blog/$tzx-changes.hash$/$tzx-filename$" target="_blank" title="$tzx-changes.insertions$ insertions(+), $tzx-changes.deletions$ deletions(-)">$tzx-changes.datetime$</a></li>
+<option value="https://raw.githubusercontent.com/district10/blog/$tzx-changes.hash$/$tzx-filename$" title="$tzx-changes.insertions$ insertions(+), $tzx-changes.deletions$ deletions(-)">$tzx-changes.datetime$</option>
 $endfor$
-</ul></div>
+</select></div>
+
+$endif$
+$if(tzx-changes)$
+<script>
+var tzxFilename = "$tzx-filename$";
+var tzxChanges = [
+$for(tzx-changes)$
+    {
+        hash: "$tzx-changes.hash$",
+        insertions: $tzx-changes.insertions$,
+        deletions: $tzx-changes.deletions$
+    },
+$endfor$
+];
+</script>
 
 $endif$
 $for(tzx-jsfile)$

@@ -8,16 +8,7 @@ tags:
 jsfile:
     - moment.min.js
 after-before:
-before-after: |
-    <script>
-    $('.tzx-timestamp').each(function(index){
-        var _tss = this.textContent;
-        var dt = moment( new Number( _tss ) * 1000 );
-        var tooltip = _tss + ': ' + dt.format("YYYY-MM-DD HH:mm:ss");
-        this.textContent = dt.format("YYYY/MM/DD HH:mm");
-        this.title = tooltip;
-    });
-    </script>
+before-after:
 ...
 
 Koans | 呓语

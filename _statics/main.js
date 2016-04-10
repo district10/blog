@@ -140,7 +140,30 @@ $('div.tzx-drawer').on( 'click', function(e){
     return false;
 });
 
-$('div.tzx-changes').addClass('tzx-changes-hide');
+$( "#tzx-changes" )
+    .change(function() {
+        $("option:selected").click(function(){
+            window.location = this.value;
+        });
+    });
+
+$('.tzx-timestamp').each(function(index){
+    var _tss = this.textContent;
+    var dt = moment( new Number( _tss ) * 1000 );
+    var tooltip = _tss + ': ' + dt.format("YYYY-MM-DD HH:mm:ss");
+    this.textContent = dt.format("YYYY/MM/DD HH:mm");
+    this.title = tooltip;
+});
+
+$('.tzx-changes option').each(function(){
+    var _tss = this.textContent;
+    var dt = moment( new Number( _tss ) * 1000 );
+    this.textContent = dt.format("YYYY/MM/DD HH:mm");
+});
+
+$(function(){
+    $('#tzx-changes').appendTo('#footer');
+});
 
 /*
 var drawertooltip = $('<p>双击以「打开/关闭」内容。</p>')
@@ -175,18 +198,18 @@ $(function($){
             $('.tzx-hide').removeClass('tzx-hide').addClass('tzx-show');
             $('.tzx-drawer-hide').removeClass('tzx-drawer-hide');
         })
+
         .addCode("s,h,o,w", function() {
             $('.tzx-hide').removeClass('tzx-hide').addClass('tzx-show');
         })
+
         .addCode("h,i,d,e", function() {
             $('.tzx-show').removeClass('tzx-show').addClass('tzx-hide');
         })
         .addCode("x", function() {
             $('.tzx-show').removeClass('tzx-show').addClass('tzx-hide');
         })
-        .addCode("g,i,t", function() {
-            $('.tzx-changes-hide').removeClass('tzx-changes-hide').addClass('tzx-changes-show');
-        })
+
         .addCode("down,right,down,down,right,down", function() {
             window.location = "http://butman.club/";
         })

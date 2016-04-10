@@ -23,6 +23,8 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+[JavaScript check if variable exists (is defined/initialized) - Stack Overflow](http://stackoverflow.com/questions/5113374/javascript-check-if-variable-exists-is-defined-initialized)
+
 [Git - Viewing the Commit History](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
 
 [Add Rules to Stylesheets with JavaScript](https://davidwalsh.name/add-rules-stylesheets)
