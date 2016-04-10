@@ -23,7 +23,103 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+[Add Rules to Stylesheets with JavaScript](https://davidwalsh.name/add-rules-stylesheets)
+
+var sheets = document.styleSheets; // returns an Array-like StyleSheetList
+
+var sheet = (function() {
+	// Create the <style> tag
+	var style = document.createElement("style");
+
+	// Add a media (and/or media query) here if you'd like!
+	// style.setAttribute("media", "screen")
+	// style.setAttribute("media", "only screen and (max-width : 1024px)")
+
+	// WebKit hack :(
+	style.appendChild(document.createTextNode(""));
+
+	// Add the <style> element to the page
+	document.head.appendChild(style);
+
+	return style.sheet;
+})();
+
+padding: 50px 12px;
+    padding-top: 50px;
+    padding-right: 12px;
+    padding-bottom: 50px;
+    padding-left: 12px;
+
+
+[POSIX - perldoc.perl.org](http://perldoc.perl.org/POSIX.html#scanf)
+
+scanf
+
+Not implemented. scanf() is C-specific, use <> and regular expressions instead, see perlre.
+
+```bash
+$ echo 1>&2 stderr | wc -c
+stderr
+0
+```
+
+[Git - pretty-formats Documentation](https://git-scm.com/docs/pretty-formats)
+
+:   ```
+    commit a11bef06a3f659402fe7563abf99ad00de2209e6
+    Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+    Date:   Sat Mar 15 10:31:28 2008 -0700
+
+        first commit
+
+     README           |  6 ++++++
+     Rakefile         | 23 +++++++++++++++++++++++
+     lib/simplegit.rb | 25 +++++++++++++++++++++++++
+     3 files changed, 54 insertions(+)
+    ```
+
+```
+# basedir = https://github.com/district10/blog
+# %basedir%/commit/14bf3bad1e7911d71a961aa866582dc831c6f84f
+# %basedir%/blob/14bf3bad1e7911d71a961aa866582dc831c6f84f/_pages/koans.md
+
+$ git log --stat --pretty=format:%H-%at README.md | head
+14bf3bad1e7911d71a961aa866582dc831c6f84f-1460038810
+ README.md | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+# output (yaml format):
+# ---
+# tzx-changes:
+    - datetime: 1460038810
+      insertions: 5
+      deletions: 4
+
+    - datetime: ...
+      insertions: ...
+      deletions: 0
+
+# tzx-changes:
+    - 1460038810, 23, 434
+# ...
+
+$ date --date='@1460038810'
+Thu Apr  7 14:20:10 GMT 2016
+
+$ date --date="@`date +%s`" +'%Y-%m-%d, %H:%M:%S'
+2016-04-10, 07:27:59
+```
+
+- Wait! I'm getting a deja vu.
+- 等等，我有似曾相识的感觉。
+
+If you follew them, they flee. If you flee, they follow.
+
 [如何评价 2015 年电影《末日崩塌》（San Andreas）？ - CaesarZX 的回答 - 知乎](https://www.zhihu.com/question/30275207/answer/49700761)
+
+refs and see also
+
+  - [San Andreas Fault - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/San_Andreas_Fault)
 
 [为何世界三大宗教里只有伊斯兰教在今天仍是一个政治问题？ - 安瑟尼的回答 - 知乎](https://www.zhihu.com/question/37514563/answer/72371088)
 
@@ -60,67 +156,59 @@ Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了�
 - cauliflower
 - **albino `[æl'baɪno]` broccoli**
 
-spoonerism: boys and girls -> goys and birls
 
 [Spoonerism - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Spoonerism)
 
-:   A spoonerism is an error in speech or deliberate **play on words** in which
+:   spoonerism: boys and girls -> goys and birls
+
+    A spoonerism is an error in speech or deliberate **play on words** in which
     corresponding consonants, vowels, or morphemes are switched (see
     metathesis) between two words in a phrase.
 
-    - "Three cheers for our queer old dean!" (rather than "dear old queen,"
-      which is a reference to Queen Victoria)
-    - "Is it kisstomary to cuss the bride?" (as opposed to "customary to kiss")
-    - "The Lord is a shoving leopard." (instead of "a loving shepherd")
-    - "A blushing crow." ("crushing blow")
-    - "A well-boiled icicle" ("well-oiled bicycle")
-    - "You were fighting a liar in the quadrangle." ("lighting a fire")
-    - "Is the bean dizzy?" ("Dean busy")
-    - "Someone is occupewing my pie. Please sew me to another sheet." ("Someone
-      is occupying my pew. Please show me to another seat.")
-    - "You have hissed all my mystery lectures. You have tasted a whole worm.
-      Please leave Oxford on the next town drain." ("You have missed all my
-      history lectures. You have wasted a whole term. Please leave Oxford on
-      the next down train.")
+    <div class="tzx-drawer" shy>
+    Examples
 
-    - lords is a loving shepherd.
-    - lords is a shoving leopard.
-
-    - our dear old Queen
-    - our queer old dean
-
-    - Have you seen her duck sick?
-    - Have you seen her suck dick?
-
-    - I'm gonna take a shit.
-    - I'm gonna shake a tit.
-
-    - She showed me her tool kits.
-    - She showed me her cool tits.
-
-    - That's a coarse hunt.
-    - That's a horse/whore's cunt (屄, 女性阴部).
-
-    - A Tale of Two Cities
-    - A Sale of Two Titties (咪咪)
-
-    - She put hope in his soul.
-    - She put soap in his hole.
-
-    - You're a smart feller.
-    - You're a fart smeller.
-
-    - I love pop corn.
-    - I love cop porn.
-
-    - Let's save the whales.
-    - Let's wave the sails.
-
-    - I'm doing chores.
-    - I'm chewing (啃) doors.
-
-    - Go take a shower in the bathroom.
-    - Go shake a tower in the bathroom.
+    :   - "Three cheers for our queer old dean!" (rather than "dear old queen,"
+          which is a reference to Queen Victoria)
+        - "Is it kisstomary to cuss the bride?" (as opposed to "customary to kiss")
+        - "The Lord is a shoving leopard." (instead of "a loving shepherd")
+        - "A blushing crow." ("crushing blow")
+        - "A well-boiled icicle" ("well-oiled bicycle")
+        - "You were fighting a liar in the quadrangle." ("lighting a fire")
+        - "Is the bean dizzy?" ("Dean busy")
+        - "Someone is occupewing my pie. Please sew me to another sheet." ("Someone
+          is occupying my pew. Please show me to another seat.")
+        - "You have hissed all my mystery lectures. You have tasted a whole worm.
+          Please leave Oxford on the next town drain." ("You have missed all my
+          history lectures. You have wasted a whole term. Please leave Oxford on
+          the next down train.")
+        - lords is a loving shepherd.
+        - lords is a shoving leopard.
+        - our dear old Queen
+        - our queer old dean
+        - Have you seen her duck sick?
+        - Have you seen her suck dick?
+        - I'm gonna take a shit.
+        - I'm gonna shake a tit.
+        - She showed me her tool kits.
+        - She showed me her cool tits.
+        - That's a coarse hunt.
+        - That's a horse/whore's cunt (屄, 女性阴部).
+        - A Tale of Two Cities
+        - A Sale of Two Titties (咪咪)
+        - She put hope in his soul.
+        - She put soap in his hole.
+        - You're a smart feller.
+        - You're a fart smeller.
+        - I love pop corn.
+        - I love cop porn.
+        - Let's save the whales.
+        - Let's wave the sails.
+        - I'm doing chores.
+        - I'm chewing (啃) doors.
+        - Go take a shower in the bathroom.
+        - Go shake a tower in the bathroom.
+    </div>
 
     [Apocrypha - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Apocrypha)
 
@@ -164,16 +252,15 @@ spoonerism: boys and girls -> goys and birls
 
       - [List of forms of word play - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_forms_of_word_play)
 
-George R.R. Martin on Syrian refugees: 'Let them in'
-
-tranny 异装癖
+George R.R. Martin on Syrian (`['sɪrɪən]`, 叙利亚) refugees: 'Let them in'
 
 [Tranny (slang) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Tranny_(slang))
 
-:   Tranny is a slang term used chiefly to describe people who are confused and
-    full of themselves wearing drag, transvestites, or cross-dressers.  The
-    term is considered a compliment by some transgender activists, such as Roz
-    Kaveney.
+:   tranny 异装癖
+
+    Tranny is a slang term used chiefly to describe people **who are confused** and
+    full of themselves wearing drag, **transvestites**, or **cross-dressers**.  The
+    term is considered a compliment by some transgender activists, such as Roz Kaveney.
 
     ![Roz Kaveney, 14 April 2007](https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Roz_Kaveney_April_14_2007_by_Patrick_Nielsen_Hayden.jpg/330px-Roz_Kaveney_April_14_2007_by_Patrick_Nielsen_Hayden.jpg)
 
@@ -182,11 +269,14 @@ tranny 异装癖
     of the Midnight Rose collective. Kaveney's works include fiction and
     non-fiction, poetry, reviewing, and editing.
 
-新建只有扩展名的文件的方法：".suffix."，比如创建.gitignore，正常情况下windows是不允许创建的，但在扩展名后面加点，即.gitignore.就可以正常创建了；
+---
 
-&emsp;`&emsp;`
+新建只有扩展名的文件的方法：".suffix."，比如创建.gitignore，正常情况下windows是
+不允许创建的，但在扩展名后面加点，即.gitignore.就可以正常创建了；
 
 (其实命令行里也是可以创建的。)
+
+&emsp;`&emsp;`
 
 WIN+R，输入“psr”后回车：打开步骤记录器；
 
@@ -207,8 +297,8 @@ WIN+T：切换任务栏上的程序； （然后用空格选中打开）
 
 :   那么这位老先生就进行到下一步了，开始对我妹子动手动脚，这个动手动脚是很微妙
     的，他会在电梯里搭一下我朋友的肩，上车时搂一下我朋友的腰，人多的时候假装关
-    心的拽一下我朋友的手，这些都是一些可以忽略却十分怪异的动作，你无法严厉的拒
-    绝因为很有可能对方出于礼貌，但又十分怪异。
+    心的拽一下我朋友的手，这些都是一些**可以忽略却十分怪异**的动作，你无法严厉
+    的拒绝因为很有可能对方出于礼貌，但又十分怪异。
 
     一般进行到这一步，有些妹子就会辞职，一部分迫于生存压力，不想丢工作，即使知
     道对方是在骚扰自己，也只能委屈当不知道继续工作。我以前仔细研究过到底怎么样
@@ -217,24 +307,24 @@ WIN+T：切换任务栏上的程序； （然后用空格选中打开）
     摸一把，根本什么都不算。
 
     我能总结出来的教训就是不要和他们交流，除了工作，任何题外话都当做没听到不予
-    回应，万万不能让身边任何人知道自己是孤身一人，如果被摸了，或者疑似被摸了，
-    想办法在第一次的时候就直截了当的说出来，这点真的很难，即使是开玩笑也很难搪
-    塞过去。还有这种喜欢对下属性骚扰的家伙，都很喜欢说自己的不幸故事，通常也都
-    是一副看起来道貌岸然的样子，私下的嘴脸就会变得很可怕，很精分，大概我国男性
-    真的普遍处于性压抑的状态。
+    回应，**万万不能让身边任何人知道自己是孤身一人**，如果被摸了，或者疑似被摸
+    了，想办法在第一次的时候就直截了当的说出来，这点真的很难，即使是开玩笑也很
+    难搪塞过去。还有这种喜欢对下属性骚扰的家伙，**都很喜欢说自己的不幸故事**，
+    通常也都是一副看起来道貌岸然的样子，私下的嘴脸就会变得很可怕，很**精分**，
+    大概我国男性真的普遍处于性压抑的状态。
 
     希望每个一人在外打拼的姑娘都能好好的，希望这些人渣烂货都去死。
 
 - Israel
 - get crowdfunding help
-- Belgium launches appel to find 'man in hat' bombing suspect.
+- Belgium (`['bɛldʒəm]`, 比利时, 西欧国家，首都布鲁塞尔Brussels) launches appel to find 'man in hat' bombing suspect.
 - kindnapped by Islamic State
 - truce voilations
-- Israeli minister romania
-- The Silicon Valley of Transylvania
-- Conspiracy
-- MathML is a failed Web standard.
-- More than 40% of Student Borowers aren't making payments.
+- Israeli (`[iz'reili]`, 以色列人的) minister romania
+- The Silicon Valley of Transylvania, Romanian `[ru:'meiniən; rəu-]`
+- Conspiracy, 阴谋
+- **MathML is a failed Web standard.**
+- **More than 40% of Student Borrowers aren't making payments.**
 - Criminal prosecutions copyright infringement.
 - Clinton and Sanders tensions escalte
 - Mafia
@@ -286,115 +376,156 @@ WIN+T：切换任务栏上的程序； （然后用空格选中打开）
 
 [sia（澳大利亚歌手、词曲人）_百度百科](http://baike.baidu.com/link?url=YASakjLUx56Lah5EMZg4e-0PB6rhlGosgc8o0O816Sh8EumYaNjs3FlN35XUaLFpV0B2gWUrr4S7NaiHNrV4TY6MPLjmMNJdiTi8jdFfLNe)
 
-2004年英伦Trip-hop新贵乐队Zero 7借首张专辑《Simple Things》中一鸣惊人，着迷于Zero 7音乐的同时，乐迷们也被其中一把懒洋洋却又质感十足的女声深深吸引。这把让人惊艳的女声来自年轻的澳大利亚女歌手Sia（Sia Furler，Sia发音是See-ah）。Sia在Zero 7专辑中的声音听起来有点慵懒，散漫着淡淡的爵士味道，由她献声演绎的Destiny和Distractions两首曲目成为了专辑的两大亮点。随着Zero 7和《Simple Things》在全球火速窜红，Sia的声音也被越来越多的乐迷所熟知。甚至还有乐评将她的歌声与英国电子民谣天后Dido的放在一起比较，形容为“你不能错过的年度最酷的Down-Tempo人声”。
+:   2004年英伦Trip-hop新贵乐队Zero 7借首张专辑《Simple Things》中一鸣惊人，着迷
+    于Zero 7音乐的同时，乐迷们也被其中一把懒洋洋却又质感十足的女声深深吸引。这
+    把让人惊艳的女声来自年轻的澳大利亚女歌手Sia（Sia Furler，Sia发音是See-ah）
+    。Sia在Zero 7专辑中的声音听起来有点慵懒，散漫着淡淡的爵士味道，由她献声演绎
+    的Destiny和Distractions两首曲目成为了专辑的两大亮点。随着Zero 7和《Simple
+    Things》在全球火速窜红，Sia的声音也被越来越多的乐迷所熟知。甚至还有乐评将她
+    的歌声与英国电子民谣天后Dido的放在一起比较，形容为“你不能错过的年度最酷的
+    Down-Tempo人声”。
 
-refs and see also
+    (很喜欢 Dido 的 Thank You，但感觉还是 Sia 更有才。)
 
-  - [Maddie Ziegler - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Maddie_Ziegler)
-  - [Maddie Ziegler，美国现在最红的小萝莉|界面新闻•歪楼](http://www.jiemian.com/article/279452.html)
-  - [【Sia (希雅)-口袋·FAN】MV_图片_新闻_资料_论坛-音悦Tai-看好音乐](http://www.yinyuetai.com/fanclub/12725)
-  - [如何评价女歌手Sia？ - 知乎用户的回答 - 知乎](http://www.zhihu.com/question/24230184/answer/31470645)
+    refs and see also
+
+      - [Maddie Ziegler - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Maddie_Ziegler)
+      - [Maddie Ziegler，美国现在最红的小萝莉|界面新闻•歪楼](http://www.jiemian.com/article/279452.html)
+      - [【Sia (希雅)-口袋·FAN】MV_图片_新闻_资料_论坛-音悦Tai-看好音乐](http://www.yinyuetai.com/fanclub/12725)
+      - [如何评价女歌手Sia？ - 知乎用户的回答 - 知乎](http://www.zhihu.com/question/24230184/answer/31470645)
 
 [Business & Financial News, Breaking US & International News | Reuters.com](http://www.reuters.com/tools/rss)
 
 [News feeds from the BBC - BBC News](http://www.bbc.com/news/10628494)
 
-http://feeds.bbci.co.uk/news/world/rss.xml
-http://feeds.bbci.co.uk/news/science_and_environment/rss.xml
-http://feeds.bbci.co.uk/news/technology/rss.xml
-http://feeds.bbci.co.uk/news/politics/rss.xml
-http://feeds.bbci.co.uk/news/world/asia/rss.xml
-http://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml
-http://feeds.bbci.co.uk/news/world/middle_east/rss.xml
-http://www.bbc.co.uk/blogs/theeditors/rss.xml
-http://www.theguardian.com/world/rss
-http://feeds.reuters.com/Reuters/PoliticsNews
-http://feeds.reuters.com/reuters/scienceNews
-http://feeds.reuters.com/reuters/technologyNews
-http://feeds.reuters.com/Reuters/worldNews
-http://feeds.reuters.com/reuters/topNews
+:   - <http://feeds.bbci.co.uk/news/world/rss.xml>
+    - <http://feeds.bbci.co.uk/news/science_and_environment/rss.xml>
+    - <http://feeds.bbci.co.uk/news/technology/rss.xml>
+    - <http://feeds.bbci.co.uk/news/politics/rss.xml>
+    - <http://feeds.bbci.co.uk/news/world/asia/rss.xml>
+    - <http://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml>
+    - <http://feeds.bbci.co.uk/news/world/middle_east/rss.xml>
+    - <http://www.bbc.co.uk/blogs/theeditors/rss.xml>
+    - <http://www.theguardian.com/world/rss>
+    - <http://feeds.reuters.com/Reuters/PoliticsNews>
+    - <http://feeds.reuters.com/reuters/scienceNews>
+    - <http://feeds.reuters.com/reuters/technologyNews>
+    - <http://feeds.reuters.com/Reuters/worldNews>
+    - <http://feeds.reuters.com/reuters/topNews>
 
+seat covers (厕所马桶圈纸)
 
-seat covers,
+:   把折起来的粗糙面朝上、接触大腿；把折在外面的、光滑的蜡面朝下、接触马桶圈。这就达到了设计意图——蜡面上的那层蜡有两个基本功能：
 
-把折起来的粗糙面朝上、接触大腿；把折在外面的、光滑的蜡面朝下、接触马桶圈。这就达到了设计意图——蜡面上的那层蜡有两个基本功能：
-一、抗菌。
-二、当人坐下的时候，体温会稍稍融化蜡面，让它轻轻粘在马桶圈上，这样就更容易固定，抬屁股的时候也不容易粘在大腿上。
+      - 一、抗菌。
+      - 二、当人坐下的时候，体温会稍稍融化蜡面，让它轻轻粘在马桶圈上，这样就更
+        容易固定，抬屁股的时候也不容易粘在大腿上。
 
-「舌头」的末端要垂到水里，它的一个设计作用是「冲水时能够自动把座圈纸带走」；并且它可以帮助保持纸的位置基本固定，这样你脱下裤子转身坐下的时候，它就不容易被风刮到地上。
-但是，为什么是放在前面，而不是后面？
-第一，把这段纸铺在前面，可以避免「女巫之吻」，并减少「激光反射伤害」（女巫之吻词条见A witches kiss : bigdickproblems(https://www.reddit.com/r/bigdickproblems/comments/38x0aw/a_witches_kiss/)）；
+    「舌头」的末端要垂到水里，它的一个设计作用是「冲水时能够自动把座圈纸带走」；
+    并且它可以帮助保持纸的位置基本固定，这样你脱下裤子转身坐下的时候，它就不
+    容易被风刮到地上。但是，为什么是放在前面，而不是后面？
 
-其实不管是不是智能马桶，舌头都应该在前面的
+    第一，把这段纸铺在前面，可以避免「女巫之吻」，并减少「激光反射伤害」（女巫
+    之吻词条见A witches kiss :
+    bigdickproblems(https://www.reddit.com/r/bigdickproblems/comments/38x0aw/a_witches_kiss/)
+    ）；
 
-最有意思的是中世纪末的法国，皇宫里擦屁股是用粗麻绳，这绳子从豪华的厕所屋顶吊下
-来，正好垂在蹲位的旁边。拉完屎后，就把绳子从两腿中间穿过，前面一手拉，后面一手
-拽，像拉大锯一样，搓屁股眼！更妙的是，这根绳子是公用的，皇上用完了皇后用，皇后
-用完了宠臣用，都使那一根，常年不换。以体现君臣万众一心。
+    谷大白话还说过这也叫“波塞冬之吻”(poseidon's Kiss)。
 
-而比较常见的三角裤款式一般分为两种：Brazilian Cut & G-Strings/ Thongs，这两款的区别主要在于腰线设计，Brazilian Cut 就是最常见的三角裤设计，裆部和腰部是顺滑的连接，而 G-Strings 的腰部设计一般较细，甚至就是根绳子，但裆部依旧遵循三角裤的传统设计，为完整的片状，而非绳状。其另一种变形为 V 字裤，腰线设计较正常三角裤更为翘起，形似 V 字，提臀的视觉效果相对水平腰线更为明显一些。
+    其实不管是不是智能马桶，舌头都应该在前面的
 
-丁字裤
-丁字裤因其形状酷似汉字「丁」字而得名，西方因其酷似字母「T」，称其为 T-BACK。丁字裤的腰部设计有宽有窄，其精髓在于后臀的极窄设计，穿上后一般是藏在臀谷中，不扒开看不到（这句话是方便大家感受，不要想太多），也正是因为这个特性，丁字裤成为 SEXY 的一个象征。
+    最有意思的是中世纪末的法国，皇宫里擦屁股是用粗麻绳，这绳子从豪华的厕所屋顶
+    吊下来，正好垂在蹲位的旁边。拉完屎后，就把绳子从两腿中间穿过，前面一手拉，
+    后面一手拽，像拉大锯一样，搓屁股眼！更妙的是，这根绳子是公用的，皇上用完了
+    皇后用，皇后用完了宠臣用，都使那一根，常年不换。以体现君臣万众一心。
 
- 莱卡（lycra）
-大部分有弹力的内裤都用到了莱卡或者莫代尔，可以让纯棉在棉质地的基础上更为顺滑，从而贴身的效果更好，同时也让内裤的寿命也更持久了一些。
+    而比较常见的三角裤款式一般分为两种：Brazilian Cut & G-Strings/ Thongs，这两
+    款的区别主要在于腰线设计，Brazilian Cut 就是最常见的三角裤设计，裆部和腰部
+    是顺滑的连接，而 G-Strings 的腰部设计一般较细，甚至就是根绳子，但裆部依旧遵
+    循三角裤的传统设计，为完整的片状，而非绳状。其另一种变形为 V 字裤，腰线设计
+    较正常三角裤更为翘起，形似 V 字，提臀的视觉效果相对水平腰线更为明显一些。
 
-网纱（gauze）
-因为纱有太多太多种（竹节纱、涤棉纱、欧根纱等等等），我就笼统地说成网纱吧，理解成半透明的纱织布料就好。因为织法的不同，各种纱的支数也不一样，软硬程度透视性都各不相同。欧根纱质地较硬，适合做刺绣的底子，一般作为装饰性材料，不会做一整条内裤。
-5. 蕾丝（lace）
-优质的蕾丝内裤同丝质内裤一样，很贵，但是保养没丝质内裤那么麻烦和小心，所以相对常见。
+    丁字裤因其形状酷似汉字「丁」字而得名，西方因其酷似字母「T」，称其为 T-BACK
+    。丁字裤的腰部设计有宽有窄，其精髓在于后臀的极窄设计，穿上后一般是藏在臀谷
+    中，不扒开看不到（这句话是方便大家感受，不要想太多），也正是因为这个特性，
+    丁字裤成为 SEXY 的一个象征。
 
-人造皮革（PU）
-这算是比较新奇的一款材料，比较少见，一般在情趣内衣设计时候会用上少量 PU 材质作为配饰，作为主料的不多。
+    莱卡（lycra），大部分有弹力的内裤都用到了莱卡或者莫代尔，可以让纯棉在棉质地
+    的基础上更为顺滑，从而贴身的效果更好，同时也让内裤的寿命也更持久了一些。
 
-其次，避免穿成大妈款尽量注意两点：
-1．不要买不合身的内裤，尤其不要往大了买，松松垮垮，你不大妈谁大妈？
-2．不要掉色了变形了还不扔，丑媳妇也是要脱衣服的，看着大妈内裤很难有兴致的。
-3．不要买劣质蕾丝劣质网纱，比大妈款还恶心。
-4．尽量保持内衣内裤颜色一致，不要上红下绿，你以为你圣诞树呢？
-5．皮肤不够好的尽量不要选什么日系少女风，实在不会挑就用黑色入
-门，浅色的慎选。
+    网纱（gauze）因为纱有太多太多种（竹节纱、涤棉纱、欧根纱等等等），我就笼统地
+    说成网纱吧，理解成半透明的纱织布料就好。因为织法的不同，各种纱的支数也不一
+    样，软硬程度透视性都各不相同。欧根纱质地较硬，适合做刺绣的底子，一般作为装
+    饰性材料，不会做一整条内裤。
 
-然后我就忘了这码事。
-直到后来有一天，我的菊花突然就崩溃了。
-当时的感觉就是……妈呀……菊花要掉了……
-整个人瞬间都不好了，走路都走不利索了。
-然后我就瘸着屁股自己默默开车上了医院。
-那天我真的很可怜，我一个人北漂了那么多年，第一次感受到了孤独……
+    蕾丝（lace），优质的蕾丝内裤同丝质内裤一样，很贵，但是保养没丝质内裤那么麻烦
+    和小心，所以相对常见。
 
-以前基本上是不到失禁不拉屎，一拉就拉一小时，妈妈不但不阻止，她还给我送报纸。
-从小到大，从没人告诉我说每天都要拉屎啊，也没人告诉我不要蹲太久啊，也没人告诉我洗澡的时候要洗菊花啊？
+    人造皮革（PU），这算是比较新奇的一款材料，比较少见，一般在情趣内衣设计时候会
+    用上少量 PU 材质作为配饰，作为主料的不多。
 
-很多人很不理解地问我，难道你以前洗澡不洗菊花的吗？
-难道你们生下来就知道吗？
-妈妈没教啊。
-就好像我以前经常被我老爸骂，说我嘘嘘老是嘘在马桶盖上。
-其实我也不想啊，但是我就是避免不了嘘在马桶盖上啊。
-后来我爸忍无可忍，过来看着我嘘，然后他一语点醒了我。
-我爸震惊地说：你尿尿都不用手扶一下的吗？？？！
-妈妈没教啊！！！
+    其次，避免穿成大妈款尽量注意两点：
+
+    1．不要买不合身的内裤，尤其不要往大了买，松松垮垮，你不大妈谁大妈？
+    2．不要掉色了变形了还不扔，丑媳妇也是要脱衣服的，看着大妈内裤很难有兴致的。
+    3．不要买劣质蕾丝劣质网纱，比大妈款还恶心。
+    4．尽量保持内衣内裤颜色一致，不要上红下绿，你以为你圣诞树呢？
+    5．皮肤不够好的尽量不要选什么日系少女风，实在不会挑就用黑色入
+       门，浅色的慎选。
+
+    ```tzx-bigquote
+    然后我就忘了这码事。
+    直到后来有一天，我的菊花突然就崩溃了。
+    当时的感觉就是……妈呀……菊花要掉了……
+    整个人瞬间都不好了，走路都走不利索了。
+    然后我就瘸着屁股自己默默开车上了医院。
+    那天我真的很可怜，我一个人北漂了那么多年，第一次感受到了孤独……
+
+    以前基本上是不到失禁不拉屎，一拉就拉一小时，妈妈不但不阻止，她还给我送报纸。
+    从小到大，从没人告诉我说每天都要拉屎啊，也没人告诉我不要蹲太久啊，也没人告
+    诉我洗澡的时候要洗菊花啊？
+
+    很多人很不理解地问我，难道你以前洗澡不洗菊花的吗？
+    难道你们生下来就知道吗？
+    妈妈没教啊。
+    就好像我以前经常被我老爸骂，说我嘘嘘老是嘘在马桶盖上。
+    其实我也不想啊，但是我就是避免不了嘘在马桶盖上啊。
+    后来我爸忍无可忍，过来看着我嘘，然后他一语点醒了我。
+    我爸震惊地说：你尿尿都不用手扶一下的吗？？？！
+    妈妈没教啊！！！
+    ```
 
 ---
 
-我个人观念觉得是这样，乌鸦跟一只乌鸡分享飞翔的快感，大概会造成一桩19楼坠鸡身亡的惨案；老嫖客跟一个没老婆的血气方刚的穷小子大谈做爱的美妙，恐怕会造就一个强奸犯。影响别人，确实很有成就感，但这种成就很危险，很难保它不是恶性的。善意往往造恶果，甚至比恶意造成的恶果还恶，这样的事儿，我们都见得太多了。
+我个人观念觉得是这样，乌鸦跟一只乌鸡分享飞翔的快感，大概会造成一桩19楼坠鸡身亡
+的惨案；老嫖客跟一个没老婆的血气方刚的穷小子大谈做爱的美妙，恐怕会造就一个强奸
+犯。影响别人，确实很有成就感，但这种成就很危险，很难保它不是恶性的。善意往往造
+恶果，甚至比恶意造成的恶果还恶，这样的事儿，我们都见得太多了。
+
+---
 
 [你不需要那些知识 - 简书](http://www.jianshu.com/p/b661e7d2cd3f)
 
-:   重要的主干的知识不能只是收藏，最好硬编码到自己的脑子里，就像飞行员死背紧急
+:   我：重要的主干的知识不能只是收藏，最好硬编码到自己的脑子里，就像飞行员死背紧急
     情况下的注意事项一样。这样说，99 乘法表实在是太该背了。
 
-    李金子: @Gnat 对，工具类的知识必得掌握，包括辨证思维的方法也属于知识框架的
+    李金子: @我 对，工具类的知识必得掌握，包括辨证思维的方法也属于知识框架的
     一种。我算是半个标题党啦，按正文总结的话文题应该是“你不需要费力记忆那些百科
     知识”。
 
+    (李金子已经去世了。)
+
 [「看知乎」的网页加载速度是如何提高的？ - 网站 - 知乎](http://www.zhihu.com/question/28773330)
 
-这个过奖了，主要还是广州电信到linode日本机房的速度快……
+:   这个过奖了，主要还是广州电信到linode日本机房的速度快……
 
-除此之外的优化完全因为我是个究极变态的缓存爱好者。看知乎的前端是Wordpress，和后端爬虫与数据库完全分离，用SuperCache做了全局页面静态化，包括「用户动态」等频道完全是生成的静态json以及用户信息缓存，页面的js、css、图片等资源文件全部强制浏览器缓存，超时时间以月计。
+    除此之外的优化完全因为我是个究极变态的缓存爱好者。看知乎的前端是Wordpress，
+    和后端爬虫与数据库完全分离，用SuperCache做了全局页面静态化，包括「用户动态
+    」等频道完全是生成的静态json以及用户信息缓存，页面的js、css、图片等资源文件
+    全部强制浏览器缓存，超时时间以月计。
 
-所以访问看知乎实际就是访问静态页面和一堆头像，除了网速本身外确实没啥可再优化了。
+    所以访问看知乎实际就是访问静态页面和一堆头像，除了网速本身外确实没啥可再优
+    化了。
 
 [Linode 里为什么 Ubuntu 最火呢？ - Linux - 知乎](http://www.zhihu.com/question/21421588)
 
@@ -438,9 +569,8 @@ seat covers,
 ---
 
 @水木丁 还钱不可能了。如果你关注经济现状的话，形容天朝未来最常见的词其中之一就
-是空中解体。当女权一次又一次地绝望，当小清新们也开始醒悟，当能翻墙的都跑路了，
-大多数人彻底不抱希望，转而备战备荒的时候，唱了那么多年空的中国崩溃论就会发生了
-。
+是空中解体。当女权一次又一次地绝望，当小清新们也开始醒悟，当**能翻墙的都跑路了**，
+大多数人彻底不抱希望，转而备战备荒的时候，唱了那么多年空的中国崩溃论就会发生了。
 
 不明白为什么这么多人把善意的提醒当成逃避责任 ； 提醒自救=放纵犯罪？那么男朋友提
 醒你开车注意安全=你撞车了就是活该？ 不管法律多健全，监督多到位，犯罪总是猝不及
@@ -449,6 +579,7 @@ seat covers,
 [一个苹果小白的ID被盗惊魂记](https://www.douban.com/note/545359930/)
 
 [再谈 CSS 预处理器 | EFE Tech](http://efe.baidu.com/blog/revisiting-css-preprocessors/)
+
 [CSS预处理器——Sass、LESS和Stylus实践【未删减版】_preprocessor, sass 教程_w3cplus](http://www.w3cplus.com/css/css-preprocessor-sass-vs-less-stylus-2.html)
 
 [云风的 BLOG: 那些日子（一）](http://blog.codingnow.com/2008/04/passed_days_1.html)
@@ -500,15 +631,20 @@ seat covers,
 
 ---
 
-```
+<div class="tzx-hide">
+```tzx-bigquote
 Computer Vision & Remote Sensing (CVRS) Lab
 
 姚剑
 
-邮编：430079   电话：+86-27-68771218
+邮编：
+    430079
+电话：
+    +86-27-68771218
 
 me.png?imageView2/1/w/90/h/120
 ```
+</div>
 
 ---
 
@@ -551,25 +687,43 @@ me.png?imageView2/1/w/90/h/120
 
 [《程序员的呐喊》读书笔记（上） - 程序媛想事儿 - 博客频道 - CSDN.NET](http://blog.csdn.net/lanxuezaipiao/article/details/47333895)
 
-当时04年亚马逊正饱受其庞大代码库的困扰，我曾经一度认为它的代码库失控是因为语言问题，后来才意识到企业文化是主因。首当其冲的是，亚马逊的主流语言里有两门非常哆嗦的语言C++中和Java，外加一门精练的语言Perl。但是Perl正受到排挤，渐渐退出主流。我觉得这是因为Perl程序员能用更少的人力完成和Java/C++程序员同样的工作量，所以要是比人多的话，他们注定是赢不了的。根据我们的估算，亚马逊的代码量比它的功能数量膨胀得更快。第二个因素是，亚马逊的很多技术问题完全可以用自定义领域语言（DSL的方式来解决），比如大规模的查询、分布式计算、产品配置等，他们写了太多不必要的代码了。我后来跳到Google，发现他们为这些完全一样的问题专门编写了强大的自定义DSL。这证实了我心中的疑虑，亚马逊的工程师在这些问题上和无头苍蝇没什么两样。我敢说这句话误伤的概率极低。最后一点就是，和绝大多数公司一样，亚马逊非常抗拒用新语言来解决问题。他们会避免使用表达能力更强的通用语言，比如Ruby或Erlang。他们也几乎从来不会想到自己去写DSL。
+:   当时04年亚马逊正饱受其庞大代码库的困扰，我曾经一度认为它的代码库失控是因为语言
+    问题，后来才意识到企业文化是主因。首当其冲的是，亚马逊的主流语言里有两门非常哆
+    嗦的语言C++中和Java，外加一门精练的语言Perl。但是Perl正受到排挤，渐渐退出主流。
+    我觉得这是因为Perl程序员能用更少的人力完成和Java/C++程序员同样的工作量，所以要
+    是比人多的话，他们注定是赢不了的。根据我们的估算，亚马逊的代码量比它的功能数量
+    膨胀得更快。第二个因素是，亚马逊的很多技术问题完全可以用自定义领域语言（DSL的方
+    式来解决），比如大规模的查询、分布式计算、产品配置等，他们写了太多不必要的代码
+    了。我后来跳到Google，发现他们为这些完全一样的问题专门编写了强大的自定义DSL。这
+    证实了我心中的疑虑，亚马逊的工程师在这些问题上和无头苍蝇没什么两样。我敢说这句
+    话误伤的概率极低。最后一点就是，和绝大多数公司一样，亚马逊非常抗拒用新语言来解
+    决问题。他们会避免使用表达能力更强的通用语言，比如Ruby或Erlang。他们也几乎从来
+    不会想到自己去写DSL。
 
-注意，骂谁也不能骂Python。相反，骂Ruby骂得最凶的人可能就是Matz自己了。他在自己的演讲“为什么Ruby很烂”里，自陈了Ruby的各种问题，当时看得我汗都下来了。不可否认，任何语言都有缺点。相比之下，我更喜欢Ruby众的坦诚，Pyhon那种一味指责别人，回避问题，过分地自我标榜的行为令人感到恶心。
+    注意，骂谁也不能骂Python。相反，骂Ruby骂得最凶的人可能就是Matz自己了。他在
+    自己的演讲“为什么Ruby很烂”里，自陈了Ruby的各种问题，当时看得我汗都下来了。
+    不可否认，任何语言都有缺点。相比之下，我更喜欢Ruby众的坦诚，Pyhon那种一味指
+    责别人，回避问题，过分地自我标榜的行为令人感到恶心。
 
-我在招人的时候有一个诀窍。就是在寻找优秀的软件工程师“通才”的时候，通常在简历上你可以看到到各种让你觉得不行的关键字和词，但“编译器”是我唯一感兴趣的词。
+    我在招人的时候有一个诀窍。就是在寻找优秀的软件工程师“通才”的时候，通常在简
+    历上你可以看到到各种让你觉得不行的关键字和词，但“编译器”是我唯一感兴趣的词
+    。
 
-各大语言的分派：（作者自己使用语言的经验，仅供参考）
+    各大语言的分派：（作者自己使用语言的经验，仅供参考）
 
-  - 难以言喻的自由：汇编语言
-  - 极端自由：Perl、Ruby、PHP、脚本
-  - 非常自由：Javascript、VB、Lua
-  - 自由：Python、Common Lisp、Smalltalk/Sqeak
-  - 温和自由：C、Object-C、Schema
-  - 温和保守：C++、Java、C#、D、Go
-  - 保守：Clojure、Erlang、Pascal
-  - 非常保守：Scala、Ada、Ocaml、Eiffel
-  - 极端保守：Haskell、SML
+      - 难以言喻的自由：汇编语言
+      - 极端自由：Perl、Ruby、PHP、脚本
+      - 非常自由：Javascript、VB、Lua
+      - 自由：Python、Common Lisp、Smalltalk/Sqeak
+      - 温和自由：C、Object-C、Schema
+      - 温和保守：C++、Java、C#、D、Go
+      - 保守：Clojure、Erlang、Pascal
+      - 非常保守：Scala、Ada、Ocaml、Eiffel
+      - 极端保守：Haskell、SML
 
-[《程序员的呐喊》读书笔记（下） - 程序媛想事儿 - 博客频道 - CSDN.NET](http://blog.csdn.net/lanxuezaipiao/article/details/47386965)
+    refs and see also
+
+      - [《程序员的呐喊》读书笔记（下） - 程序媛想事儿 - 博客频道 - CSDN.NET](http://blog.csdn.net/lanxuezaipiao/article/details/47386965)
 
 [lanxuezaipiao/ReadingNotes: 我的读书笔记，涉及C++、Java、计算机科普、各类文学作品、管理类等书籍，总结其中的知识点和精华，分享给大家，共同学习！！！](https://github.com/lanxuezaipiao/ReadingNotes)
 
@@ -589,7 +743,6 @@ me.png?imageView2/1/w/90/h/120
         /swapfile swap swap defaults 0 0
     e、关闭
         swapoff /swapfile 并删除 /etc/fstab 文件中内容
-
 
 [程序员简历应该怎么写？ - 求职 - 知乎](https://www.zhihu.com/question/25002833)
 
@@ -622,34 +775,54 @@ me.png?imageView2/1/w/90/h/120
 
 思想的质变不容易观测，而记忆的量变很适合表演。人们一提“最强大脑”，首先想到的就是记忆力。但是关于记忆力，我们得知道三点。
 
-第一，正常人要是愿意练，也可以练成这么神奇的记忆力。
+  - 第一，正常人要是愿意练，也可以练成这么神奇的记忆力。
+  - 第二，再强的记忆力，也不能 — 请允许我引用一句王朔发明的话 — “把胳肢窝变成海参”。
+  - 第三，特别强的记忆力，反而有害。
 
-第二，再强的记忆力，也不能 — 请允许我引用一句王朔发明的话 — “把胳肢窝变成海参”。
+据有人根据用词评测，华盛顿在1796年的告别演说，达到了研究生水平，高达17.9级，此
+后美国总统的演说水平江河日下，到奥巴马只有8年级。
 
-第三，特别强的记忆力，反而有害。
-
-据有人根据用词评测[2]，华盛顿在1796年的告别演说，达到了研究生水平，高达17.9级，此后美国总统的演说水平江河日下，到奥巴马只有8年级。
-
-所有专业记忆力比赛，本质上比的都是想象力。参赛的记忆力大师大多都是普通人，他们只不过愿意艰苦地训练而已。而且他们除了记忆力这一个特长之外，几乎没有什么别的了不起之处。
+所有专业记忆力比赛，本质上比的都是想象力。参赛的记忆力大师大多都是普通人，他们
+只不过愿意艰苦地训练而已。而且他们除了记忆力这一个特长之外，几乎没有什么别的了
+不起之处。
 
 ……除了极少数真正的天才。
 
-现在活着的，有超强记忆力的人中最牛的一个，可能是英国人Daniel Tammet[4]。他曾经在2004年把圆周率背到22514位而打破欧洲纪录，但背圆周率只是他的能力之一。Tammet 擅长学习语言，不完全统计是至少会十种语言。曾经有人挑战他能不能在一个星期内学会冰岛语，结果Tammet七天之后就上电视直接用冰岛语做节目了。他的冰岛语老师说他“不是人类”。Tammet 写了两本书，自己还有个网站，是个学者型记忆大师。
+现在活着的，有超强记忆力的人中最牛的一个，可能是英国人Daniel Tammet。他曾经
+在2004年把圆周率背到22514位而打破欧洲纪录，但背圆周率只是他的能力之一。Tammet
+擅长学习语言，不完全统计是至少会十种语言。曾经有人挑战他能不能在一个星期内学会
+冰岛语，结果Tammet七天之后就上电视直接用冰岛语做节目了。他的冰岛语老师说他“不是
+人类”。Tammet 写了两本书，自己还有个网站，是个学者型记忆大师。
 
-美国人 Kim Peek 不是自闭症患者，他的病比自闭症严重得多。他的头很大。他的大脑中没有胼胝体 — 连接两侧脑两侧半球的最重要联合纤维。他的小脑也损坏了，这使得他直到四岁才学会走路。他的情绪不稳定，很容易发怒。
+美国人 Kim Peek 不是自闭症患者，他的病比自闭症严重得多。他的头很大。他的大脑中
+没有胼胝体 — 连接两侧脑两侧半球的最重要联合纤维。他的小脑也损坏了，这使得他直到
+四岁才学会走路。他的情绪不稳定，很容易发怒。
 
-Peek 可以同时阅读两个书页，左右眼各自读一页，这很可能与他没有胼胝体有关。只读一遍，他就能够完美的记住所读的内容。而且他永远都不会忘记。他曾经在一个图书馆里向测试者背诵其中任何一本书，据说他记住的书超过12000本。Peek的故事被拍成了电影，这就是《雨人》。
+Peek 可以同时阅读两个书页，左右眼各自读一页，这很可能与他没有胼胝体有关。只读一
+遍，他就能够完美的记住所读的内容。而且他永远都不会忘记。他曾经在一个图书馆里向
+测试者背诵其中任何一本书，据说他记住的书超过12000本。Peek的故事被拍成了电影，这
+就是《雨人》。
 
-我听到关于“最强大脑”最奇特的说法，是说选拔这样一批善于记忆和速算的人，是在为国家储备战略人才 — 虽然他们的工作都已经被计算机取代了，但是万一战争来了全国停电呢？
+我听到关于“最强大脑”最奇特的说法，是说选拔这样一批善于记忆和速算的人，是在为国
+家储备战略人才 — 虽然他们的工作都已经被计算机取代了，但是万一战争来了全国停电呢
+？
 
-这其实不是说美国总统的水平退步了，只能说明美国有越来越多的民众参与政治。我最近学了点职业英文写作，听说绝大多数美国人，包括受过很高教育的人，都希望阅读文章的用词水平在10年级以下。你要用很多高格调词汇，老百姓根本不看。特朗普本人出过好几本商业书籍，还写过小说，他显然有能力写更高水平的文字，现在为竞选采取了最亲民的写法，而且历史性地达到了四年级。
+这其实不是说美国总统的水平退步了，只能说明美国有越来越多的民众参与政治。我最近
+学了点职业英文写作，听说绝大多数美国人，包括受过很高教育的人，都希望阅读文章的
+用词水平在10年级以下。你要用很多高格调词汇，老百姓根本不看。特朗普本人出过好几
+本商业书籍，还写过小说，他显然有能力写更高水平的文字，现在为竞选采取了最亲民的
+写法，而且历史性地达到了四年级。
 
-教育方面，特朗普说美国学校在政治正确的名义下，过分鼓励学生的自尊心，但实际上学生在学校里不能面对真正的竞争，无法分出强弱，到社会上就没有能力和人竞争。特朗普非常反感教师工会，因为工会使得老师的工资是由其的工作年头来定，不是根据这个老师的能力来定。美国是在每个学生身上平均投入最高的国家，但是美国的教育水平只排在全球的第26位。不过他要取消全国统一的教学大纲（common cores）乃至干脆取消教育部，我的确不太理解。
+教育方面，特朗普说美国学校在政治正确的名义下，过分鼓励学生的自尊心，但实际上学
+生在学校里不能面对真正的竞争，无法分出强弱，到社会上就没有能力和人竞争。特朗普
+非常反感教师工会，因为工会使得老师的工资是由其的工作年头来定，不是根据这个老师
+的能力来定。美国是在每个学生身上平均投入最高的国家，但是美国的教育水平只排在全
+球的第26位。不过他要取消全国统一的教学大纲（common cores）乃至干脆取消教育部，
+我的确不太理解。
 
 ---
 
 vim, zf, zD, fold
-
 
 [C语言的2016](http://www.infoq.com/cn/articles/c-language-2016)
 
@@ -729,6 +902,7 @@ artsy chick, 文艺青年
     regarded themselves as petite bourgeoisie to distinguish themselves from
     ordinary city dwellers.
 
+<div class="tzx-drawer" shy>
 [天才训练指南 « 学而时嘻之](http://www.geekonomics10000.com/100)
 
 :   这个故事相当吸引人。号称”反智的书生”的薛涌同学显然是看到了此文，当时正好赶
@@ -1247,6 +1421,7 @@ artsy chick, 文艺青年
       - [匹夫怎样逆袭 « 学而时嘻之](http://www.geekonomics10000.com/753)
       - [科学的励志和励志的科学 « 学而时嘻之](http://www.geekonomics10000.com/655)
       - [南方周末 - 清华教授程曜 绝食抗议背后](http://www.infzm.com/content/82443)
+</div>
 
 [为什么在大公司工作，总是很无聊？ - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2009/06/why_working_in_a_big_company_is_so_boring.html)
 
@@ -1461,12 +1636,22 @@ artsy chick, 文艺青年
 
     Walde:
 
-    - 活着是世上最稀有的事情。大多数人只是存在而已。To live is the rarest thing in the world. Most people exist, that is all.
-    - 时尚的东西就是丑陋的东西，丑到令人无法容忍，每六个月就非得换掉不可。Fashion is a form of ugliness so intolerable that we have to alter it every six months.
-    - 单身汉应该被课以重税。某些人比其他人更快乐是很不公平的。Bachelors should be heavily taxed. It is not fair that some men should be happier than others.
-    - 人生就是一件蠢事追着另一件蠢事而来，而爱情则是两个蠢东西追来追去。Life is one fool thing after another whereas love is two fool things after each other.
-    - 悬念是可怕的。我希望它一直延续下去。This suspense is terrible. I hope it will last.
-    - 世界上只有一件比被人谈论更糟糕的事，那就是没人谈论你。There is only one thing in the world worse than being talked about, and that is not being talked about.
+    - 活着是世上最稀有的事情。大多数人只是存在而已。To live is the rarest thing
+      in the world. Most people exist, that is all.
+    - 时尚的东西就是丑陋的东西，丑到令人无法容忍，每六个月就非得换掉不可。
+      Fashion is a form of ugliness so intolerable that we have to alter it
+      every six months.
+    - 单身汉应该被课以重税。某些人比其他人更快乐是很不公平的。Bachelors should
+      be heavily taxed. It is not fair that some men should be happier than
+      others.
+    - 人生就是一件蠢事追着另一件蠢事而来，而爱情则是两个蠢东西追来追去。Life is
+      one fool thing after another whereas love is two fool things after each
+      other.
+    - 悬念是可怕的。我希望它一直延续下去。This suspense is terrible. I hope it
+      will last.
+    - 世界上只有一件比被人谈论更糟糕的事，那就是没人谈论你。There is only one
+      thing in the world worse than being talked about, and that is not being
+      talked about.
 
     大多数显示器的刷新频率是60Hz，为了与系统一致，以及节省电力，浏览器会自动按
     照这个频率，刷新动画（如果可以做到的话）。
@@ -1584,7 +1769,6 @@ a private car facilitates comfort and mobility.
 asian infrastructure investiment bank.
 
 delay shipments
-
 
 linux, console: vi file& (bad !!);
 
@@ -6979,6 +7163,8 @@ But you can still build the front end and load the unpacked extensions. Here is 
 
     Was he looking for a command line tool? "right click -> show history"
     certainly doesn't imply it.
+
+    `git whatchanged -p filename` is also equivalent to `git log -p filename` in this case.
 
 ---
 

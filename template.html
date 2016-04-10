@@ -86,6 +86,14 @@ $endif$
 </ul></div>
 
 $endif$
+$if(tzx-changes)$
+<div class="tzx-changes"><ul>
+$for(tzx-changes)$
+<li><a href="https://raw.githubusercontent.com/district10/blog/$tzx-changes.hash$/$tzx-filename$" target="_blank" title="$tzx-changes.insertions$ insertions(+), $tzx-changes.deletions$ deletions(-)">$tzx-changes.datetime$</a></li>
+$endfor$
+</ul></div>
+
+$endif$
 $for(tzx-jsfile)$
 <script type="text/javascript" src="$tzx-jsfile$"></script>
 $endfor$

@@ -140,6 +140,8 @@ $('div.tzx-drawer').on( 'click', function(e){
     return false;
 });
 
+$('div.tzx-changes').addClass('tzx-changes-hide');
+
 /*
 var drawertooltip = $('<p>双击以「打开/关闭」内容。</p>')
     .css({
@@ -181,6 +183,9 @@ $(function($){
         })
         .addCode("x", function() {
             $('.tzx-show').removeClass('tzx-show').addClass('tzx-hide');
+        })
+        .addCode("g,i,t", function() {
+            $('.tzx-changes-hide').removeClass('tzx-changes-hide').addClass('tzx-changes-show');
         })
         .addCode("down,right,down,down,right,down", function() {
             window.location = "http://butman.club/";

@@ -807,6 +807,8 @@ code.tzx-timestamp {
 .tzx-drawer-hide { display: none; }
 .tzx-hide { display: none; }
 .tzx-show { display: block; border: 1px solid red; }
+.tzx-changes-hide { display: none; }
+.tzx-changes-show { display: block; }
 
 a.tzx-header-anchor {
     text-decoration: none;
@@ -818,17 +820,6 @@ a.tzx-header-anchor {
     cursor: crosshair;
     border: 1px solid lightgray;
 }
-
-/*
-.tzx-paste, .tzx-hide {
-    padding: 1em;
-    border: 1px dashed helitrope; // hide
-}
-
-.tzx-hide {
-    visibility: hidden;
-}
-*/
 
 .tzx-shake * {
     -webkit-transform: scale(.9);

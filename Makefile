@@ -36,26 +36,35 @@ $(DIR_PUBLISH):
 items: $(ITEMS)
 $(DIR_PUBLISH)/Makefile: publish.mk
 	cp $< $@
+$(DIR_PUBLISH)/%.md: %.md
+	perl cp.pl $< \
+		$(DIR_PUBLISH)/$(<:%.md=%.readinglist) \
+		$(DIR_PUBLISH)/$(<:%.md=%.tags) \
+		$(DIR_PUBLISH)/$(<:%.md=%.changes.yml) > \
+		$@
 $(DIR_PUBLISH)/%: %
 	cp $< $@
 
-move: $(PG_POSTS) $(PG_BIBS) $(PG_PAGES) $(PG_DOCS)
+move: $(PG_BIBS) $(PG_POSTS) $(PG_PAGES) $(PG_DOCS)
 $(DIR_PUBLISH)/%.md: $(DIR_POSTS)/%.md
 	perl cp.pl $< \
 		$(DIR_PUBLISH)/$(<:$(DIR_POSTS)/%.md=%.readinglist) \
-		$(DIR_PUBLISH)/$(<:$(DIR_POSTS)/%.md=%.tags) > \
+		$(DIR_PUBLISH)/$(<:$(DIR_POSTS)/%.md=%.tags) \
+		$(DIR_PUBLISH)/$(<:$(DIR_POSTS)/%.md=%.changes.yml) > \
 		$@
 $(DIR_PUBLISH)/%.bib: $(DIR_POSTS)/%.bib
 	cp $< $@
 $(DIR_PUBLISH)/%.md: $(DIR_PAGES)/%.md
 	perl cp.pl $< \
 		$(DIR_PUBLISH)/$(<:$(DIR_PAGES)/%.md=%.readinglist) \
-		$(DIR_PUBLISH)/$(<:$(DIR_PAGES)/%.md=%.tags) > \
+		$(DIR_PUBLISH)/$(<:$(DIR_PAGES)/%.md=%.tags) \
+		$(DIR_PUBLISH)/$(<:$(DIR_PAGES)/%.md=%.changes.yml) > \
 		$@
 $(DIR_PUBLISH)/%.md: $(DIR_DOCS)/%.md
 	perl cp.pl $< \
 		$(DIR_PUBLISH)/$(<:$(DIR_DOCS)/%.md=%.readinglist) \
-		$(DIR_PUBLISH)/$(<:$(DIR_DOCS)/%.md=%.tags) > \
+		$(DIR_PUBLISH)/$(<:$(DIR_DOCS)/%.md=%.tags) \
+		$(DIR_PUBLISH)/$(<:$(DIR_DOCS)/%.md=%.changes.yml) > \
 		$@
 
 extras: items

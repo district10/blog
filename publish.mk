@@ -28,7 +28,6 @@ post-0051-spatial-gis.html: post-0051-spatial-gis.md
 	pandoc \
 		$(PANDOC_OPTIONS) \
 		--mathjax \
-		--bibliography $(patsubst %.md, %.bib, $<) \
 		$< \
 		-o $@
 post-0050-gis-overall.html: post-0050-gis-overall.bib
@@ -38,7 +37,6 @@ post-0050-gis-overall.html: post-0050-gis-overall.md
 	pandoc \
 		$(PANDOC_OPTIONS) \
 		--mathjax \
-		--bibliography $(patsubst %.md, %.bib, $<) \
 		$< \
 		-o $@
 
@@ -46,6 +44,7 @@ post-0050-gis-overall.html: post-0050-gis-overall.md
 post-0088-font-awesome.html: post-0088-font-awesome.md
 	pandoc \
 		$(PANDOC_OPTIONS) \
+		$(patsubst %.md, %.changes.yml, $<) \
 		$< \
 		-o $@
 
@@ -53,11 +52,13 @@ post-0088-font-awesome.html: post-0088-font-awesome.md
 notes.html: notes.md
 	pandoc \
 		$(PANDOC_OPTIONS) \
+		$(patsubst %.md, %.changes.yml, $<) \
 		$< \
 		-o $@
 koans.html: koans.md
 	pandoc \
 		$(PANDOC_OPTIONS) \
+		$(patsubst %.md, %.changes.yml, $<) \
 		--toc \
 		$< \
 		-o $@
@@ -66,6 +67,7 @@ koans.html: koans.md
 %.html: %.md
 	pandoc \
 		$(PANDOC_OPTIONS) \
+		$(patsubst %.md, %.changes.yml, $<) \
 		--toc --mathjax \
 		$< \
 		-o $@
@@ -81,6 +83,7 @@ extras: $(EXTRA_PAGES)
 %.html: %.txt
 	pandoc \
 		$(PANDOC_OPTIONS) \
+		$(patsubst %.md, %.changes.yml, $<) \
 		--toc \
 		$< \
 		-o $@
