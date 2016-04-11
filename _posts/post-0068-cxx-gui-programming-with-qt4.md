@@ -41,93 +41,93 @@ Part I: Basic Qt
 
 hello.cpp
 
-```cpp
-#include <QApplication>
-#include <QLabel>
+:   ```cpp
+    #include <QApplication>
+    #include <QLabel>
 
-int main(int argc, char *argv[])
-{
-    QApplication app(argc, argv);
-    QLabel *label = new QLabel("Hello Qt!");
-    label->show();
-    return app.exec();
-}
-```
+    int main(int argc, char *argv[])
+    {
+        QApplication app(argc, argv);
+        QLabel *label = new QLabel("Hello Qt!");
+        label->show();
+        return app.exec();
+    }
+    ```
 
 hello.pro
 
-```plain
-TEMPLATE      = app
-SOURCES       = hello.cpp
-```
+:   ```plain
+    TEMPLATE      = app
+    SOURCES       = hello.cpp
+    ```
 
-```bash
-# gen Makefile
-$ qmake hello.pro
-$ make
+bash
 
-# template: VC Project
-$ qmake -tp vc hello.pro
-```
+:   ```bash
+    # gen Makefile
+    $ qmake hello.pro
+    $ make
+
+    # template: VC Project
+    $ qmake -tp vc hello.pro
+    ```
 
 qmake 的帮助
 
-<small><small>
-```bash
-$ qmake -help
-Usage: c:\Qt\qt-4.8.6-x64-msvc2010\qt-4.8.6-x64-msvc2010\bin\qmake.exe [mode] [options] [files]
+:   ```bash
+    $ qmake -help
+    Usage: c:\Qt\qt-4.8.6-x64-msvc2010\qt-4.8.6-x64-msvc2010\bin\qmake.exe [mode] [options] [files]
 
-QMake has two modes, one mode for generating project files based on
-some heuristics, and the other for generating makefiles. Normally you
-shouldn't need to specify a mode, as makefile generation is the default
-mode for qmake, but you may use this to test qmake on an existing project
+    QMake has two modes, one mode for generating project files based on
+    some heuristics, and the other for generating makefiles. Normally you
+    shouldn't need to specify a mode, as makefile generation is the default
+    mode for qmake, but you may use this to test qmake on an existing project
 
-Mode:
-  -project       Put qmake into project file generation mode
-                 In this mode qmake interprets files as files to
-                 be built,
-                 defaults to *.c; *.ui; *.y; *.l; *.ts; *.xlf; *.qrc; *.h; *.hpp; *.hh; *.hxx; *.cpp; *.cc; *.cxx
-                 Note: The created .pro file probably will
-                 need to be edited. For example add the QT variable to
-                 specify what modules are required.
-  -makefile      Put qmake into makefile generation mode (default)
-                 In this mode qmake interprets files as project files to
-                 be processed, if skipped qmake will try to find a project
-                 file in your current working directory
+    Mode:
+      -project       Put qmake into project file generation mode
+                     In this mode qmake interprets files as files to
+                     be built,
+                     defaults to *.c; *.ui; *.y; *.l; *.ts; *.xlf; *.qrc; *.h; *.hpp; *.hh; *.hxx; *.cpp; *.cc; *.cxx
+                     Note: The created .pro file probably will
+                     need to be edited. For example add the QT variable to
+                     specify what modules are required.
+      -makefile      Put qmake into makefile generation mode (default)
+                     In this mode qmake interprets files as project files to
+                     be processed, if skipped qmake will try to find a project
+                     file in your current working directory
 
-Warnings Options:
-  -Wnone         Turn off all warnings; specific ones may be re-enabled by
-                 later -W options
-  -Wall          Turn on all warnings
-  -Wparser       Turn on parser warnings
-  -Wlogic        Turn on logic warnings (on by default)
-  -Wdeprecated   Turn on deprecation warnings (on by default)
+    Warnings Options:
+      -Wnone         Turn off all warnings; specific ones may be re-enabled by
+                     later -W options
+      -Wall          Turn on all warnings
+      -Wparser       Turn on parser warnings
+      -Wlogic        Turn on logic warnings (on by default)
+      -Wdeprecated   Turn on deprecation warnings (on by default)
 
-Options:
-   * You can place any variable assignment in options and it will be     *
-   * processed as if it was in [files]. These assignments will be parsed *
-   * before [files].                                                     *
-  -o file        Write output to file
-  -d             Increase debug level
-  -t templ       Overrides TEMPLATE as templ
-  -tp prefix     Overrides TEMPLATE so that prefix is prefixed into the value
-  -help          This help
-  -v             Version information
-  -after         All variable assignments after this will be
-                 parsed after [files]
-  -norecursive   Don't do a recursive search
-  -recursive     Do a recursive search
-  -set <prop> <value> Set persistent property
-  -unset <prop>  Unset persistent property
-  -query <prop>  Query persistent property. Show all if <prop> is empty.
-  -cache file    Use file as cache           [makefile mode only]
-  -spec spec     Use spec as QMAKESPEC       [makefile mode only]
-  -nocache       Don't use a cache file      [makefile mode only]
-  -nodepend      Don't generate dependencies [makefile mode only]
-  -nomoc         Don't generate moc targets  [makefile mode only]
-  -nopwd         Don't look for files in pwd [project mode only]
-```
-</small></small>
+    Options:
+       * You can place any variable assignment in options and it will be     *
+       * processed as if it was in [files]. These assignments will be parsed *
+       * before [files].                                                     *
+      -o file        Write output to file
+      -d             Increase debug level
+      -t templ       Overrides TEMPLATE as templ
+      -tp prefix     Overrides TEMPLATE so that prefix is prefixed into the value
+      -help          This help
+      -v             Version information
+      -after         All variable assignments after this will be
+                     parsed after [files]
+      -norecursive   Don't do a recursive search
+      -recursive     Do a recursive search
+      -set <prop> <value> Set persistent property
+      -unset <prop>  Unset persistent property
+      -query <prop>  Query persistent property. Show all if <prop> is empty.
+      -cache file    Use file as cache           [makefile mode only]
+      -spec spec     Use spec as QMAKESPEC       [makefile mode only]
+      -nocache       Don't use a cache file      [makefile mode only]
+      -nodepend      Don't generate dependencies [makefile mode only]
+      -nomoc         Don't generate moc targets  [makefile mode only]
+      -nopwd         Don't look for files in pwd [project mode only]
+    ```
 
 环境变量的设置 &hearts;
 
@@ -143,8 +143,7 @@ $ qmake -spec win32-msvc2010 -r -tp vc
 
 可以在 `qt-everywhere-opensource-src-4.8.6\mkspecs` 文件夹下看到所有 spects。
 
-（这样编译的项目虽然 工程在外面（out of source），但 build 出来的东西，居然在源码的文件夹啊。差评！）
-
+（这样编译的项目虽然工程在外面（out of source），但 build 出来的东西，居然在源码的文件夹啊。差评！）
 
 ```cpp
 QLabel *label = new QLabel("<h2><i>Hello</i> "
@@ -164,36 +163,40 @@ Layouts
 #. `QVBoxLayout`{.cpp}
 #. `QGridLayout`{.cpp}
 
-```cpp
-QWidget *window = new QWidget;
-window->setWindowTitle("Enter Your Age");
+`layout->addWidget, widget->setLayout`
 
-QSpinBox *spinBox = new QSpinBox;
-QSlider *slider = new QSlider(Qt::Horizontal);
-spinBox->setRange(0, 130);
-slider->setRange(0, 130);
+:   ```cpp
+    QWidget *window = new QWidget;
+    window->setWindowTitle("Enter Your Age");
 
-QObject::connect(spinBox, SIGNAL(valueChanged(int)),
-                 slider, SLOT(setValue(int)));
-QObject::connect(slider, SIGNAL(valueChanged(int)),
-                 spinBox, SLOT(setValue(int)));
-spinBox->setValue(35);
+    QSpinBox *spinBox = new QSpinBox;
+    QSlider *slider = new QSlider(Qt::Horizontal);
+    spinBox->setRange(0, 130);
+    slider->setRange(0, 130);
 
-QHBoxLayout *layout = new QHBoxLayout;
-layout->addWidget(spinBox);
-layout->addWidget(slider);
-window->setLayout(layout);
+    QObject::connect(spinBox, SIGNAL(valueChanged(int)),
+                     slider, SLOT(setValue(int)));
+    QObject::connect(slider, SIGNAL(valueChanged(int)),
+                     spinBox, SLOT(setValue(int)));
+    spinBox->setValue(35);
 
-window->show();
+    QHBoxLayout *layout = new QHBoxLayout;
+    layout->addWidget(spinBox);
+    layout->addWidget(slider);
+    window->setLayout(layout);
 
-QPushButton *button = new QPushButton("Quit");
-QObject::connect(button, SIGNAL(clicked()),
-                 &app, SLOT(quit()));
-```
+    window->show();
 
-```bash
-./hello.exe -style motif
-```
+    QPushButton *button = new QPushButton("Quit");
+    QObject::connect(button, SIGNAL(clicked()),
+                     &app, SLOT(quit()));
+    ```
+
+UI style
+
+:   ```bash
+    ./hello.exe -style motif
+    ```
 
 #### Using the Reference Documentation
 
@@ -201,28 +204,30 @@ QObject::connect(button, SIGNAL(clicked()),
 
 ### 2. Creating Dialogs
 
-```cpp
-// 推荐在 Qt 的 Signal & Slots 中不使用 const，也不使用 &
-connect(lineEdit, SIGNAL(textChanged(const QString &)),
-        this, SLOT(enableFindButton(const QString &)));
+`layout->addLayout`
 
-QVBoxLayout *leftLayout = new QVBoxLayout;
-leftLayout->addLayout(topLeftLayout);
-leftLayout->addWidget(caseCheckBox);
-leftLayout->addWidget(backwardCheckBox);
+:   ```cpp
+    // 推荐在 Qt 的 Signal & Slots 中不使用 const，也不使用 &
+    connect(lineEdit, SIGNAL(textChanged(const QString &)),
+            this, SLOT(enableFindButton(const QString &)));
 
-QHBoxLayout *mainLayout = new QHBoxLayout;
-mainLayout->addLayout(leftLayout);
-mainLayout->addLayout(rightLayout);
-setLayout(mainLayout);
+    QVBoxLayout *leftLayout = new QVBoxLayout;
+    leftLayout->addLayout(topLeftLayout);
+    leftLayout->addWidget(caseCheckBox);
+    leftLayout->addWidget(backwardCheckBox);
 
-setWindowTitle(tr("Find"));
-setFixedHeight(sizeHint().height()); // ideal height
+    QHBoxLayout *mainLayout = new QHBoxLayout;
+    mainLayout->addLayout(leftLayout);
+    mainLayout->addLayout(rightLayout);
+    setLayout(mainLayout);
 
-Qt::CaseSensitivity cs =
-        caseCheckBox->isChecked() ? Qt::CaseSensitive
-                                  : Qt::CaseInsensitive;
-```
+    setWindowTitle(tr("Find"));
+    setFixedHeight(sizeHint().height()); // ideal height
+
+    Qt::CaseSensitivity cs =
+            caseCheckBox->isChecked() ? Qt::CaseSensitive
+                                      : Qt::CaseInsensitive;
+    ```
 
 `QSize QWidget::sizeHint()`{.cpp} &rarr; "ideal" size.
 
@@ -241,9 +246,9 @@ QWidget::setTabOrder()
 
 #### Signals and Slots in Depth
 
-#. One signal can be connected to many slots:
+One signal can be connected to many slots:
 
-    When the signal is emitted, the slots are called one after the other, in an unspecified order.
+:   When the signal is emitted, the slots are called one after the other, in an unspecified order.
 
     ```cpp
     connect(slider, SIGNAL(valueChanged(int)),
@@ -252,9 +257,9 @@ QWidget::setTabOrder()
             this, SLOT(updateStatusBarIndicator(int)));
     ```
 
-#. Many signals can be connected to the same slot:
+Many signals can be connected to the same slot:
 
-    When either signal is emitted, the slot is called.
+:   When either signal is emitted, the slot is called.
 
     ```cpp
     connect(lcd, SIGNAL(overflow()),
@@ -263,23 +268,23 @@ QWidget::setTabOrder()
             this, SLOT(handleMathError()));
     ```
 
-#. A signal can be connected to another signal:
+A signal can be connected to another signal:
 
-    ```cpp
+:   ```cpp
     connect(lineEdit, SIGNAL(textChanged(const QString &)),
             this, SIGNAL(updateRecord(const QString &)));
     ```
 
-#. Connections can be removed:
+Connections can be removed:
 
-    ```cpp
+:   ```cpp
     disconnect(lcd, SIGNAL(overflow()),
                this, SLOT(handleMathError()));
     ```
 
-#. Parameter types
+Parameter types
 
-    ```cpp
+:   ```cpp
     // same
     connect(ftp, SIGNAL(rawCommandReply(int, const QString &)),
             this, SLOT(processReply(int, const QString &)));
@@ -293,6 +298,8 @@ QWidget::setTabOrder()
                     spreadsheet, SLOT(findNext(const QString &,
                                                Qt::CaseSensitivity)));
     ```
+
+    需要注意的是这里用引用并没有用。信号和槽之间按值传递。
 
 ![set-layout-png]
 
@@ -405,17 +412,19 @@ tertiary keys.
 ![][connecting]
 ![][connecting2]
 
-```cpp
-secondaryGroupBox->hide();
-tertiaryGroupBox->hide();
-layout()->setSizeConstraint(QLayout::SetFixedSize); // 固定尺寸
+setSizeConstraint
 
-QChar ch = first;
-while (ch <= last) {
-    primaryColumnCombo->addItem(QString(ch));
-    ch = ch.unicode() + 1;
-}
-```
+:   ```cpp
+    secondaryGroupBox->hide();
+    tertiaryGroupBox->hide();
+    layout()->setSizeConstraint(QLayout::SetFixedSize); // 固定尺寸
+
+    QChar ch = first;
+    while (ch <= last) {
+        primaryColumnCombo->addItem(QString(ch));
+        ch = ch.unicode() + 1;
+    }
+    ```
 
 The other common type of shape-changing dialogs, multi-page dialogs, are even
 easier to create in Qt, either in code or using Qt Designer. Such dialogs can
@@ -554,89 +563,91 @@ private:
 
 `.pro`
 
-```plain
-RESOURCES = spreadsheet.qrc
-```
+:   ```plain
+    RESOURCES = spreadsheet.qrc
+    ```
 
 `.qrc`
 
-```xml
-<RCC>
-<qresource>
-    <file>images/icon.png</file>
-    ...
-    <file>images/gotocell.png</file>
-</qresource>
-</RCC>
-```
+:   ```xml
+    <RCC>
+    <qresource>
+        <file>images/icon.png</file>
+        ...
+        <file>images/gotocell.png</file>
+    </qresource>
+    </RCC>
+    ```
 
 #### Creating Menus and Toolbars
 
 ![menus][menu]
 
-```cpp
-void MainWindow::createActions()
-{
-    newAction = new QAction(tr("&New"), this);
-    newAction->setIcon(QIcon(":/images/new.png"));
-    newAction->setShortcut(QKeySequence::New);
-    newAction->setStatusTip(tr("Create a new spreadsheet file"));
-    connect(newAction, SIGNAL(triggered()), this, SLOT(newFile()));
+actions
 
-    openAction...
-    saveAction...
-    saveAsAction...
+:   ```cpp
+    void MainWindow::createActions()
+    {
+        newAction = new QAction(tr("&New"), this);
+        newAction->setIcon(QIcon(":/images/new.png"));
+        newAction->setShortcut(QKeySequence::New);
+        newAction->setStatusTip(tr("Create a new spreadsheet file"));
+        connect(newAction, SIGNAL(triggered()), this, SLOT(newFile()));
 
-    for (int i = 0; i < MaxRecentFiles; ++i) {
-        recentFileActions[i] = new QAction(this);
-        recentFileActions[i]->setVisible(false);
-        connect(recentFileActions[i], SIGNAL(triggered()),
-                this, SLOT(openRecentFile()));
+        openAction...
+        saveAction...
+        saveAsAction...
+
+        for (int i = 0; i < MaxRecentFiles; ++i) {
+            recentFileActions[i] = new QAction(this);
+            recentFileActions[i]->setVisible(false);
+            connect(recentFileActions[i], SIGNAL(triggered()),
+                    this, SLOT(openRecentFile()));
+        }
+
+        exitAction...
+        cutAction...
+        copyAction...
+        pasteAction...
+        deleteAction...
+        selectRowAction...
+        selectColumnAction...
+        selectAllAction...
+        findAction...
+        goToCellAction...
+        recalculateAction...
+        sortAction...
+
+        showGridAction = new QAction(tr("&Show Grid"), this);
+        showGridAction->setCheckable(true);
+        showGridAction->setChecked(spreadsheet->showGrid());
+        showGridAction->setStatusTip(tr("Show or hide the spreadsheet's "
+                                        "grid"));
+        connect(showGridAction, SIGNAL(toggled(bool)),
+                spreadsheet, SLOT(setShowGrid(bool)));
+    #if QT_VERSION < 0x040102
+        // workaround for a QTableWidget bug in Qt 4.1.1
+        connect(showGridAction, SIGNAL(toggled(bool)),
+                spreadsheet->viewport(), SLOT(update()));
+    #endif
+
+        autoRecalcAction = new QAction(tr("&Auto-Recalculate"), this);
+        autoRecalcAction->setCheckable(true);
+        autoRecalcAction->setChecked(spreadsheet->autoRecalculate());
+        autoRecalcAction->setStatusTip(tr("Switch auto-recalculation on or "
+                                          "off"));
+        connect(autoRecalcAction, SIGNAL(toggled(bool)),
+                spreadsheet, SLOT(setAutoRecalculate(bool)));
+
+        aboutAction = new QAction(tr("&About"), this);
+        aboutAction->setStatusTip(tr("Show the application's About box"));
+        connect(aboutAction, SIGNAL(triggered()), this, SLOT(about()));
+
+        aboutQtAction = new QAction(tr("About &Qt"), this);
+        aboutQtAction->setStatusTip(tr("Show the Qt library's About box"));
+        connect(aboutQtAction, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
     }
-
-    exitAction...
-    cutAction...
-    copyAction...
-    pasteAction...
-    deleteAction...
-    selectRowAction...
-    selectColumnAction...
-    selectAllAction...
-    findAction...
-    goToCellAction...
-    recalculateAction...
-    sortAction...
-
-    showGridAction = new QAction(tr("&Show Grid"), this);
-    showGridAction->setCheckable(true);
-    showGridAction->setChecked(spreadsheet->showGrid());
-    showGridAction->setStatusTip(tr("Show or hide the spreadsheet's "
-                                    "grid"));
-    connect(showGridAction, SIGNAL(toggled(bool)),
-            spreadsheet, SLOT(setShowGrid(bool)));
-#if QT_VERSION < 0x040102
-    // workaround for a QTableWidget bug in Qt 4.1.1
-    connect(showGridAction, SIGNAL(toggled(bool)),
-            spreadsheet->viewport(), SLOT(update()));
-#endif
-
-    autoRecalcAction = new QAction(tr("&Auto-Recalculate"), this);
-    autoRecalcAction->setCheckable(true);
-    autoRecalcAction->setChecked(spreadsheet->autoRecalculate());
-    autoRecalcAction->setStatusTip(tr("Switch auto-recalculation on or "
-                                      "off"));
-    connect(autoRecalcAction, SIGNAL(toggled(bool)),
-            spreadsheet, SLOT(setAutoRecalculate(bool)));
-
-    aboutAction = new QAction(tr("&About"), this);
-    aboutAction->setStatusTip(tr("Show the application's About box"));
-    connect(aboutAction, SIGNAL(triggered()), this, SLOT(about()));
-
-    aboutQtAction = new QAction(tr("About &Qt"), this);
-    aboutQtAction->setStatusTip(tr("Show the Qt library's About box"));
-    connect(aboutQtAction, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
-}
-```
+    ```
 
 Show Grid is a **checkable action**. Checkable actions are rendered with a
 check-mark in the menu and **implemented as toggle buttons in the toolbar**. When

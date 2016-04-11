@@ -23,6 +23,78 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+```bash
+$ cd ~ && pwd
+/c/Users/Administrator
+
+$ cat ~/.vimrc
+source /path/to/github:district10/blog/vimrc.vim
+```
+
+[如何在 Windows 下使用 Vim 的 YouCompleteMe 插件？ - 竹青叶的回答 - 知乎](https://www.zhihu.com/question/25437050/answer/31775249)
+
+[Vim 自动补全方案集成. - Vim - 知乎专栏](http://zhuanlan.zhihu.com/p/20158724?refer=hack-vim)
+
+[VIM的JavaScript补全 | EFE Tech](http://efe.baidu.com/blog/vim-javascript-completion/)
+
+- 等宽字体 (Monospaced Font)
+- 比例字体 (Proportional Font)
+- 无衬线体 (Sans-serif)
+
+```elisp
+(defun set-font (english chinese english-size chinese-size) (set-face-attribute
+  'default nil :font (format "%s:pixelsize=%d" english english-size)) (dolist
+  (charset '(kana han symbol cjk-misc bopomofo)) (set-fontset-font
+  (frame-parameter nil 'font) charset (font-spec :family chinese :size
+  chinese-size))))
+
+(set-font "Source Code Pro" "Hiragino Sans GB" 16 20)
+```
+
+组合第二象限和第三象限的功能, 在Mac OS下只需要使用现在的软件, 勾选一下鼠标就可以 实现.
+
+  - 下载安装 Karabiner
+  - 打开界面, 选中「ControlL to ControlL (+ When you type controlL only, send Escape)」
+  - Done.
+
+refs and see also
+
+  - [为什么计算机专业的人都喜欢从0开始计数 - 物有本末, 事有终始](http://www.lijigang.com/blog/2016/02/17/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E7%9A%84%E4%BA%BA%E9%83%BD%E5%96%9C%E6%AC%A2%E4%BB%8E0%E5%BC%80%E5%A7%8B%E8%AE%A1%E6%95%B0/)
+  - [字体知识 - 物有本末, 事有终始](http://www.lijigang.com/blog/2016/02/17/%E5%AD%97%E4%BD%93%E7%9F%A5%E8%AF%86/)
+  - [键盘应该这样改键 - 物有本末, 事有终始](http://www.lijigang.com/blog/2016/02/17/%E9%94%AE%E7%9B%98%E5%BA%94%E8%AF%A5%E8%BF%99%E6%A0%B7%E6%94%B9%E9%94%AE/)
+  - [VBA是什么鬼 - 物有本末, 事有终始](http://www.lijigang.com/blog/2016/02/17/vba%E6%98%AF%E4%BB%80%E4%B9%88%E9%AC%BC/)
+  - [IDEA读书方法 - 物有本末, 事有终始](http://www.lijigang.com/blog/2016/02/17/idea%E8%AF%BB%E4%B9%A6%E6%96%B9%E6%B3%95/)
+
+[babun/babun: Babun - a Windows shell you will love!](https://github.com/babun/babun)
+
+[为什么人们爱管闲事儿? | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/83257/)
+
+vim
+
+:   - `zz`, centering! `Ctrl-o zz`
+    - `:ctrl-f`, `:h c_ctrl-f`
+    - `<TAB>`, `ctrl-d`, `h c_ctrl-d`
+    - `K`, man page, or help
+
+每次看到这种争论我就想说一句话，说过很多次了：
+
+用VIM的人以为IDE没有快捷键，每次干点什么都得用鼠标点啊点菜单找啊找，删一行字符都要按住backspace好几秒看光标慢慢跑。
+用IDE的人总以为VIM没有智能提示，没有编译调试，只不过是几个快捷键用得多一些，要编译运行什么都得切换出去输一大堆命令。
+
+看了得票数高的也都是这种。其实按理说吧，假如都是追求生产力的人，到最后你会发现VIM和IDE其实用法都差不多，甚至长得都很像。
+
+作者：赵劼
+链接：https://www.zhihu.com/question/22096642/answer/20293331
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+初试挂是技术水平不行，复试挂都是吹牛水平不行，hr挂是长相不行
+
+
+8000, 3000, 30000
+
+TPO: time, place, occasion
+
 [Psychopathy - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Psychopathy)
 
 [PHP-study/php学习规划.md at master · ITEC-ELWG/PHP-study](https://github.com/ITEC-ELWG/PHP-study/blob/master/php%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92.md)
@@ -212,8 +284,14 @@ $ date --date="@`date +%s`" +'%Y-%m-%d, %H:%M:%S'
 2016-04-10, 07:27:59
 ```
 
+see [notes.changes.yml - dvorak4tzx - dvorak4tzx - Coding.net](https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/blob/coding-pages/notes.changes.yml)
+
+- before: [https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/master/_pages/notes.md](https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/master/_pages/notes.md)
+- after: [https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/coding-pages/notes.md](https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/coding-pages/notes.md)
+
 - Wait! I'm getting a deja vu.
 - 等等，我有似曾相识的感觉。
+- 话说有个字体叫“DejaVu Sans Mono”
 
 If you follew them, they flee. If you flee, they follow.
 
@@ -387,9 +465,6 @@ WIN+R，输入“psr”后回车：打开步骤记录器；
 WIN+P：选择一个演示文稿显示模式；
 WIN+Pause：显示系统属性对话框；
 WIN+T：切换任务栏上的程序； （然后用空格选中打开）
-
-
-
 
 [什么时候我们才能拍出这样的禁片 - 简书](http://www.jianshu.com/p/c0c08b663fd7)
 
