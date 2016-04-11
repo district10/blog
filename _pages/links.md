@@ -203,3 +203,5 @@ Links | 链签
 #. [程序媛想事儿 - 博客频道 - CSDN.NET](http://blog.csdn.net/lanxuezaipiao)
 #. [Chase Zhang](http://chasezhang.me/#contacts)
 #. [Linux Man Pages Online](http://man.he.net/)
+#. [刷新七牛 CDN Cache - 简书](http://www.jianshu.com/p/6273021ff178)
+#. [在线照片处理 | 数码照片美化修整 | 专业整相服务](http://cn.tucia.com/)

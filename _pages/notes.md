@@ -23,6 +23,101 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+[Psychopathy - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Psychopathy)
+
+[PHP-study/php学习规划.md at master · ITEC-ELWG/PHP-study](https://github.com/ITEC-ELWG/PHP-study/blob/master/php%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92.md)
+
+`:first`, one elem
+`:first-child`, group of elems
+
+```
+$("#frmTest:text").addClass("bg_blue");
+$("#frmTest:input").addClass("bg_blue");
+$("#frmTest:radio").addClass("bg_blue");
+```
+
+sublime
+
+[Sublime Text - Download](http://www.sublimetext.com/3)
+
+preferences -> Settings->user
+
+```
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by file type specific settings.
+{
+    "ignored_packages": []
+}
+```
+
+Preferences -> Color Scheme -> IDLE
+Preferences -> Font -> Larger(Control+/-)
+
+[guillermooo/Vintageous: Vi/Vim emulation for Sublime Text 3](https://github.com/guillermooo/Vintageous)
+
+
+重启。（默认直接进入 insert 模式）
+
+
+[qiu-deqing/FE-learning: 结合个人经历总结的前端入门方法](https://github.com/qiu-deqing/FE-learning)
+
+[Easy Imagemap Generator](http://qiudeqing.com/imagemap-generator/)
+
+[qiu-deqing/FE-interview: 收集的前端面试题和答案](https://github.com/qiu-deqing/FE-interview#fe-interview)
+
+[snappy压缩 · Issue #17 · ma6174/blog](https://github.com/ma6174/blog/issues/17)
+
+[致贾跃亭：可以嚣张但不要如此无厘头的嚣张 - 推酷](http://www.tuicool.com/articles/JNnMnqa)
+
+[外媒：谷歌百度都做无人驾驶汽车 但中国会领先美国_TechWeb](http://www.techweb.com.cn/world/2016-04-11/2312752.shtml?utm_source=tuicool&utm_medium=referral)
+
+:   百度自2013年开始研发自动驾驶汽车，已经成功自主行驶了无数公里。百度公司与无
+    人驾驶技术领先企业Nvidia合作，已经在北京测试，它可以自主融入到公路交通网络，可
+    以成功穿过车流。
+
+    (~~Chris Neige 是谁？根本查不到好吗！~~)
+
+    see [China Might Beat the U.S. in Driverless Cars -- The Motley Fool](http://www.fool.com/investing/general/2016/04/10/china-might-beat-the-us-in-driverless-cars.aspx)
+
+    人家名字叫 Chris Neiger！
+
+    明明这就是一个小报。而且网站叫“fool.com”，这你也信？！
+
+    [Chris Neiger, Motley Fool - Performance Profile | TipRanks](https://www.tipranks.com/bloggers/chris-neiger)
+
+[How to check what version of jQuery is loaded? - Stack Overflow](http://stackoverflow.com/questions/6973941/how-to-check-what-version-of-jquery-is-loaded)
+
+:   ```
+    if (typeof jQuery != 'undefined') {
+        jQuery.fn.jquery // jQuery().jquery
+        // "3.0.0-beta1"
+    }
+    ```
+
+[The Interactive Way To Go](http://playgo.to/interactive/chinese/lesson/)
+
+用 vim 和 emacs 批处理：
+
+:   edit.vim
+
+    ```
+    :g/one/d
+    :%s/nice/NICE/g
+    :wq
+    ```
+
+    `vim -s edit.vim file.txt`{.bash}
+
+    ```bash
+    emacs \
+        --batch file.txt \
+        --eval "(setq org-html-htmlize-output-type 'css)" \
+        --eval '(setq org-html-htmlize-font-prefix "org-")' \
+        --eval '(org-html-export-to-html)'
+    ```
+
+[15 位机器人在完成任务时的有趣失误](http://tech2ipo.com/10026863)
+
 [JavaScript check if variable exists (is defined/initialized) - Stack Overflow](http://stackoverflow.com/questions/5113374/javascript-check-if-variable-exists-is-defined-initialized)
 
 [Git - Viewing the Commit History](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
@@ -24223,7 +24318,7 @@ Disallow:
     后一行的开头是多字节字符，则不插入空格，非常适合中文上面提到的注释.
     件），然后把结果贴回到邮件编辑窗口中进行发送。`set formatoptions+=mM`.
 
-    `gf`, `ga`, ` `. `
+    `gf`, `ga`, `` `. ``
 
     use `.` instead of macros!
 

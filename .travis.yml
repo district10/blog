@@ -31,14 +31,15 @@ script:
   - # make filter
   - make qiniu; rm conf.json;
 after_success:
-  - cd ~/build/district10/blog; rm -Rf .git; rm -Rf publish; mkdir -p publish
-  - git init; git add -A; git commit -m "pushing to coding:master, lazy me @ `date`"
-  - git remote add origin git@git.coding.net:dvorak4tzx/dvorak4tzx.git
-  - git push -u origin HEAD:master --force
-  - rm -Rf .git
-  - make # && make extras
+  - cd ~/build/district10/blog; git reset --hard HEAD; 
+  - make
   - make sitemap
   - cd publish
   - git init; git add -A; git commit -m "pushing to coding:coding-pages, lazy me @ `date`"
   - git remote add origin git@git.coding.net:dvorak4tzx/dvorak4tzx.git
   - git push -u origin HEAD:coding-pages --force
+  - cd ..; rm -Rf publish; git reset --hard HEAD;
+  - rm -Rf .git
+  - git init; git add -A; git commit -m "pushing to coding:master, lazy me @ `date`"
+  - git remote add origin git@git.coding.net:dvorak4tzx/dvorak4tzx.git
+  - git push -u origin HEAD:master --force

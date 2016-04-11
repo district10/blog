@@ -31,6 +31,7 @@ MIKA 的《Good Guys》，以及 Sia 的所有 MV~
   - [Sia - Cheap Thrills](http://v.yinyuetai.com/video/2527677)
   - [Sia - Elastic Heart](http://v.yinyuetai.com/video/2276987)
   - [Sia - You've Changed](http://v.yinyuetai.com/video/142070)
+
 refs and see also
 
   - [【MV】Sia -Big Girls Cry 背后的故事 幕后访谈 中英字幕 (SiaFurler汉化组)-高清MV在线播放-音悦Tai-口袋·FAN-看好音乐](http://v.yinyuetai.com/video/h5/2332671)
@@ -43,6 +44,8 @@ refs and see also
 
 为什么腾讯不允许用户选择关闭右下角QQ新闻弹窗？
   ~ 因为腾讯是个丑流氓。妈的智障！
+
+百度，新浪都做不出这么恶心的新闻网站：[大楚资讯_湖北新闻_武汉新闻_腾讯大楚网](http://hb.qq.com/news/?qq=0&pt_src=3&ADUIN=1648926645&ADSESSION=1459481597&ADTAG=CLIENT.QQ.5455_.0&ADPUBNO=26550)
 
 see also
 
