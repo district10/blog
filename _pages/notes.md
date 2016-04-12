@@ -23,6 +23,79 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+```
+$ pwd
+/d/tzx/git/blog/.git/refs/heads
+
+$ ls -lh
+total 3.0K
+-rw-r--r-- 1 Administrator 197121 41 Dec  8 12:47 gh-pages
+-rw-r--r-- 1 Administrator 197121 41 Dec  9 12:30 gists
+-rw-r--r-- 1 Administrator 197121 41 Apr 11 12:15 master
+```
+
+自然而然就发生了，虽然实际上很悲伤。
+
+技术 研究 开发（technology research development）
+腾讯是技术群面
+
+[Git分支管理](https://coding.net/help/doc/git/git-branch.html)
+
+[Facebook工程发布技术的幕后故事 - 行业应用 - ITeye资讯](http://www.iteye.com/news/31450)
+
+Facebook源代码大多是用PHP编程语言编写。PHP是一门快速开发语言，但是相比于底层语言和部分高级语言，它的执行速度是个缺陷。为了改进基于PHP的架构的扩展性，Facebook开发了一个特殊的优化器，“HipHop”。
+
+HipHop能将PHP转换为深度优化的C++代码，后者能够编译成执行效率极高的本地二进制码。Facebook于2010年将该项目以开源协议的形式发布，随后公司工程师报告，该项目将Facebook的CPU能耗降低了50%。
+
+[编程语言 IDE 对比 - 特约稿件 - ITeye精华](http://www.iteye.com/magazines/134-IDE-Comparison#611)
+
+* [Pure](http://purecss.io/)
+* [Hakim El Hattab](http://hakim.se/)
+
+```yml
+# Keys can also be complex, like multi-line objects
+# We use ? followed by a space to indicate the start of a complex key.
+? |
+    This is a key
+    that has multiple lines
+: and this is its value
+
+# Since YAML is a superset of JSON, you can also write JSON-style maps and
+# sequences:
+json_map: {"key": "value"}
+json_seq: [3, 2, 1, "takeoff"]
+
+# The !!binary tag indicates that a string is actually a base64-encoded
+# representation of a binary blob.
+gif_file: !!binary |
+    R0lGODlhDAAMAIQAAP//9/X17unp5WZmZgAAAOfn515eXvPz7Y6OjuDg4J+fn5
+    OTk6enp56enmlpaWNjY6Ojo4SEhP/++f/++f/++f/++f/++f/++f/++f/++f/+
+    +f/++f/++f/++f/++f/++SH+Dk1hZGUgd2l0aCBHSU1QACwAAAAADAAMAAAFLC
+    AgjoEwnuNAFOhpEMTRiggcz4BNJHrv/zCFcLiwMWYNG84BwwEeECcgggoBADs=
+```
+
+[自个儿成全自个儿，才是上上之选](https://www.douban.com/note/550154037/)
+
+[greatfire/wiki](https://github.com/greatfire/wiki)
+
+bot?...
+
+[az (Accurate Zhuyin) — 用萌典半自動為漢字標音](https://az.hanzi.co/#%E5%8F%88%E7%94%9C%E5%8F%88%E5%86%B7%E7%9A%84%E5%86%B0%E6%B7%87%E6%B7%8B%E9%A3%8E%E6%A0%BC%E3%80%82/0)
+
+[karan/Projects-Solutions: Links to others' solutions to Projects (https://github.com/karan/Projects/)](https://github.com/karan/Projects-Solutions)
+
+[毕业论文答辩_百度百科](http://baike.baidu.com/link?url=dSEY8xQsgBmlpw0wUQdeyjUc7443IxvTkvzhQoRxLD3ETmis2zvvPMFxBvKL71QgS_ksWYQAKSgUQliRDrNowq)
+
+ The graduation thesis reply
+
+[Preface | Data Structure and Algorithm notes](http://algorithm.yuanbin.me/zh-hans/index.html)
+
+[算法 - 数据结构与算法 - 实验楼](https://www.shiyanlou.com/courses/484)
+
+[resume - Online LaTeX Editor ShareLaTeX](https://www.sharelatex.com/project/570ba45cec05203c02e9fe0f)
+
+[Searching issues - User Documentation](https://help.github.com/articles/searching-issues/)
+
 ```bash
 $ cd ~ && pwd
 /c/Users/Administrator

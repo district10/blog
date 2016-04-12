@@ -14,7 +14,23 @@ before-after:
 Koans | 呓语
 ============
 
+## `1460442429`{.tzx-timestamp} 杂七杂八的碍事玩意儿
+
+以前我也喜欢写一个小程序，就要在开头写上自己的名字和邮箱，后来越来越厌烦这些。
+尤其看到别人的代码，文件头加了 LICENSE，大段大段的。觉得难受。
+
+或许在文件头写上使用说明，这就够了。
+
+## `1460378216`{.tzx-timestamp} 又是我自己……
+
+每次看到一个特别美好的东西就要去评论一下，然后发现已经有人占坑了，然后又发现原来那人就是自己……
+我说的是 [Sia 的相册](http://www.xiami.com/artist/pic-detail/pid/1292836?spm=0.0.0.0.uG1QQx)。
+
 ## `1460260515`{.tzx-timestamp} MV 之王
+
+<div class="tzx-fright">
+![](http://img.xiami.net/images/artistlogo/19/14585418898819_2.jpg)
+</div>
 
 MV 拍得很赞的，有 Katy Perry 的《The One That Get Away》，
 MIKA 的《Good Guys》，以及 Sia 的所有 MV~

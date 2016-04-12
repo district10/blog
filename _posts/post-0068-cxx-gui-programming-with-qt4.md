@@ -7297,3 +7297,554 @@ Refs
 [coord-setter]: http://gnat.qiniudn.com/qt/coord-setter.png
 [settings-viewer]: http://gnat.qiniudn.com/qt/settings-viewer.png
 [custom-model]: http://gnat.qiniudn.com/qt/custom-model.png
+
+---
+
+- properties
+- dual map (most fast, most easy to use), id(string)->prop(*), prop->id
+- but property matters (id for just reference), prop = type + title
+- treeview
+- browser items (key value pairs), item->property
+- property value -> QVariant -> toDouble(), toString(), etc
+- value changed -> update
+- emit -> focus
+
+```cpp
+QString id = propertyToId[property];
+if (id == QLatin1String("xpos")) {
+    currentItem->setX(value.toDouble());
+} else if (id == QLatin1String("text")) {
+    if (currentItem->rtti() == QtCanvasItem::Rtti_Text) {
+        QtCanvasText *i = (QtCanvasText *)currentItem;
+        i->setText(qVariantValue<QString>(value));
+    }
+} else if (id == QLatin1String("color")) {
+    if (currentItem->rtti() == QtCanvasItem::Rtti_Text) {
+        QtCanvasText *i = (QtCanvasText *)currentItem;
+        i->setColor(qVariantValue<QColor>(value));
+    }
+} else if (id == QLatin1String("size")) {
+    if (currentItem->rtti() == QtCanvasItem::Rtti_Rectangle) {
+        QtCanvasRectangle *i = (QtCanvasRectangle *)currentItem;
+        QSize s = qVariantValue<QSize>(value);
+        i->setSize(s.width(), s.height());
+    } else if (currentItem->rtti() == QtCanvasItem::Rtti_Ellipse) {
+        QtCanvasEllipse *i = (QtCanvasEllipse *)currentItem;
+        QSize s = qVariantValue<QSize>(value);
+        i->setSize(s.width(), s.height());
+    }
+}
+```
+
+```
+void MainWindow::addProperty(QtVariantProperty *property, const QString &id)
+{
+    // dual maps
+    propertyToId[property] = id;
+    idToProperty[id] = property;
+
+    // add property
+    QtBrowserItem *item = propertyEditor->addProperty(property);
+
+    // ?
+    if (idToExpanded.contains(id))
+        propertyEditor->setExpanded(item, idToExpanded[id]);
+}
+```
+
+```
+void MainWindow::itemClicked(QtCanvasItem *item)
+{
+    updateExpandState();
+
+    QMap<QtProperty *, QString>::ConstIterator itProp = propertyToId.constBegin();
+    while (itProp != propertyToId.constEnd()) {
+        delete itProp.key();
+        itProp++;
+    }
+    propertyToId.clear();
+    idToProperty.clear();
+
+    currentItem = item;
+    if (!currentItem) {
+        deleteAction->setEnabled(false);
+        return;
+    }
+
+    deleteAction->setEnabled(true);
+
+    QtVariantProperty *property;
+
+    property = variantManager->addProperty(QVariant::Double, tr("Position X"));
+    property->setAttribute(QLatin1String("minimum"), 0);
+    property->setAttribute(QLatin1String("maximum"), canvas->width());
+    property->setValue(item->x());
+    addProperty(property, QLatin1String("xpos"));
+
+    property = variantManager->addProperty(QVariant::Double, tr("Position Y"));
+    property->setAttribute(QLatin1String("minimum"), 0);
+    property->setAttribute(QLatin1String("maximum"), canvas->height());
+    property->setValue(item->y());
+    addProperty(property, QLatin1String("ypos"));
+
+    property = variantManager->addProperty(QVariant::Double, tr("Position Z"));
+    property->setAttribute(QLatin1String("minimum"), 0);
+    property->setAttribute(QLatin1String("maximum"), 256);
+    property->setValue(item->z());
+    addProperty(property, QLatin1String("zpos"));
+
+    if (item->rtti() == QtCanvasItem::Rtti_Rectangle) {
+        QtCanvasRectangle *i = (QtCanvasRectangle *)item;
+
+        property = variantManager->addProperty(QVariant::Color, tr("Brush Color"));
+        property->setValue(i->brush().color());
+        addProperty(property, QLatin1String("brush"));
+
+        property = variantManager->addProperty(QVariant::Color, tr("Pen Color"));
+        property->setValue(i->pen().color());
+        addProperty(property, QLatin1String("pen"));
+
+        property = variantManager->addProperty(QVariant::Size, tr("Size"));
+        property->setValue(i->size());
+        addProperty(property, QLatin1String("size"));
+    } else if (item->rtti() == QtCanvasItem::Rtti_Line) {
+        QtCanvasLine *i = (QtCanvasLine *)item;
+
+        property = variantManager->addProperty(QVariant::Color, tr("Pen Color"));
+        property->setValue(i->pen().color());
+        addProperty(property, QLatin1String("pen"));
+
+        property = variantManager->addProperty(QVariant::Point, tr("Vector"));
+        property->setValue(i->endPoint());
+        addProperty(property, QLatin1String("endpoint"));
+    } else if (item->rtti() == QtCanvasItem::Rtti_Ellipse) {
+        QtCanvasEllipse *i = (QtCanvasEllipse *)item;
+
+        property = variantManager->addProperty(QVariant::Color, tr("Brush Color"));
+        property->setValue(i->brush().color());
+        addProperty(property, QLatin1String("brush"));
+
+        property = variantManager->addProperty(QVariant::Size, tr("Size"));
+        property->setValue(QSize(i->width(), i->height()));
+        addProperty(property, QLatin1String("size"));
+    } else if (item->rtti() == QtCanvasItem::Rtti_Text) {
+        QtCanvasText *i = (QtCanvasText *)item;
+
+        property = variantManager->addProperty(QVariant::Color, tr("Color"));
+        property->setValue(i->color());
+        addProperty(property, QLatin1String("color"));
+
+        property = variantManager->addProperty(QVariant::String, tr("Text"));
+        property->setValue(i->text());
+        addProperty(property, QLatin1String("text"));
+
+        property = variantManager->addProperty(QVariant::Font, tr("Font"));
+        property->setValue(i->font());
+        addProperty(property, QLatin1String("font"));
+    }
+}
+```
+
+```
+variantManager->setValue(idToProperty[QLatin1String("xpos")], item->x());
+// variantManager->setValue(idToProperty[QString("xpos")], item->x());
+// variantManager->setValue(idToProperty[QString("X 值")], item->x()); // 中文works
+```
+
+```
+void MainWindow::updateExpandState()
+{
+    QList<QtBrowserItem *> list = propertyEditor->topLevelItems();
+    QListIterator<QtBrowserItem *> it(list);
+    while (it.hasNext()) {
+        QtBrowserItem *item = it.next();
+        QtProperty *prop = item->property();
+        idToExpanded[propertyToId[prop]] = propertyEditor->isExpanded(item);
+    }
+}
+```
+
+QtPropertyBrowser/qtpropertymanager.cpp
+
+```
+void QtColorPropertyManager::initializeProperty(QtProperty *property)
+{
+    QColor val;
+    d_ptr->m_values[property] = val;
+
+    QtProperty *rProp = d_ptr->m_intPropertyManager->addProperty();
+    rProp->setPropertyName(tr("Red"));
+    d_ptr->m_intPropertyManager->setValue(rProp, val.red());
+    d_ptr->m_intPropertyManager->setRange(rProp, 0, 0xFF);
+    d_ptr->m_propertyToR[property] = rProp;
+    d_ptr->m_rToProperty[rProp] = property;
+    property->addSubProperty(rProp);
+
+    QtProperty *gProp = d_ptr->m_intPropertyManager->addProperty();
+    gProp->setPropertyName(tr("Green"));
+    d_ptr->m_intPropertyManager->setValue(gProp, val.green());
+    d_ptr->m_intPropertyManager->setRange(gProp, 0, 0xFF);
+    d_ptr->m_propertyToG[property] = gProp;
+    d_ptr->m_gToProperty[gProp] = property;
+    property->addSubProperty(gProp);
+
+    QtProperty *bProp = d_ptr->m_intPropertyManager->addProperty();
+    bProp->setPropertyName(tr("Blue"));
+    d_ptr->m_intPropertyManager->setValue(bProp, val.blue());
+    d_ptr->m_intPropertyManager->setRange(bProp, 0, 0xFF);
+    d_ptr->m_propertyToB[property] = bProp;
+    d_ptr->m_bToProperty[bProp] = property;
+    property->addSubProperty(bProp);
+
+    QtProperty *aProp = d_ptr->m_intPropertyManager->addProperty();
+    aProp->setPropertyName(tr("Alpha"));
+    d_ptr->m_intPropertyManager->setValue(aProp, val.alpha());
+    d_ptr->m_intPropertyManager->setRange(aProp, 0, 0xFF);
+    d_ptr->m_propertyToA[property] = aProp;
+    d_ptr->m_aToProperty[aProp] = property;
+    property->addSubProperty(aProp);
+}
+```
+
+```
+QString QtSizePropertyManager::valueText(const QtProperty *property) const
+{
+    const QtSizePropertyManagerPrivate::PropertyValueMap::const_iterator it = d_ptr->m_values.constFind(property);
+    if (it == d_ptr->m_values.constEnd())
+        return QString();
+    const QSize v = it.value().val;
+    return QString(tr("%1 x %2").arg(QString::number(v.width()))
+                                .arg(QString::number(v.height())));
+}
+```
+
+```
+// declares
+class QtVariantProperty;
+class QtProperty;
+class QtBrowserIndex;
+
+// vars
+class QtVariantPropertyManager *variantManager;
+class QtTreePropertyBrowser *propertyEditor;
+QMap<QtProperty *, QString> propertyToId;
+QMap<QString, QtVariantProperty *> idToProperty;
+QMap<QString, bool> idToExpanded;
+
+// headers
+#include "qtvariantproperty.h"
+#include "qttreepropertybrowser.h"
+
+// manager
+variantManager = new QtVariantPropertyManager( this );
+connect( variantManager, SIGNAL(valueChanged(QtProperty *, const QVariant &)),
+         this, SLOT(valueChanged(QtProperty *, const QVariant &)) );
+
+// editor factory
+QtVariantEditorFactory *variantFactory = new QtVariantEditorFactory( this );
+
+// editor
+propertyEditor = new QtTreePropertyBrowser( dock );
+propertyEditor->setFactoryForManager( variantManager, variantFactory );
+dock->setWidget( propertyEditor );
+```
+
+在显示上装饰：
+
+```
+QtDoublePropertyManager *undecoratedManager = new QtDoublePropertyManager();
+QtProperty *undecoratedProperty = undecoratedManager->addProperty("Undecorated");
+undecoratedManager->setValue(undecoratedProperty, 123.45);
+
+DecoratedDoublePropertyManager *decoratedManager = new DecoratedDoublePropertyManager();
+QtProperty *decoratedProperty = decoratedManager->addProperty("Decorated");
+decoratedManager->setPrefix(decoratedProperty, "speed: ");
+decoratedManager->setSuffix(decoratedProperty, " km/h");
+decoratedManager->setValue(decoratedProperty, 123.45);
+
+QtDoubleSpinBoxFactory *undecoratedFactory = new QtDoubleSpinBoxFactory();
+DecoratedDoubleSpinBoxFactory *decoratedFactory = new DecoratedDoubleSpinBoxFactory();
+
+QtTreePropertyBrowser *editor = new QtTreePropertyBrowser();
+editor->setFactoryForManager(undecoratedManager, undecoratedFactory);
+editor->setFactoryForManager(decoratedManager, decoratedFactory);
+editor->addProperty(undecoratedProperty);
+editor->addProperty(decoratedProperty);
+editor->show();
+```
+
+variant vs typed
+
+typed:
+
+:   ```
+    // define
+    doubleManager = new QtDoublePropertyManager(this);
+    propertyEditor = new QtTreePropertyBrowser(dock);
+    QtDoubleSpinBoxFactory *doubleSpinBoxFactory = new QtDoubleSpinBoxFactory(this);
+    propertyEditor->setFactoryForManager(doubleManager, doubleSpinBoxFactory);
+
+    // new property
+    property = doubleManager->addProperty(tr("Position X"));
+    // config property
+    doubleManager->setRange(property, 0, canvas->width());
+
+    // add property
+    propertyToId[property] = id;
+    idToProperty[id] = property;
+    QtBrowserItem *item = propertyEditor->addProperty(property);
+
+    // set value, 用 manager 来 set， property 不能自己设置值
+    doubleManager->setValue(property, item->x()); // 通常用 idToProperty 转化
+    // get value
+    connect(doubleManager, SIGNAL(valueChanged(QtProperty *, double)),
+            this, SLOT(valueChanged(QtProperty *, double)));
+    ```
+
+variant:
+
+:   ```
+    // define
+    variantManager = new QtVariantPropertyManager(this);
+    QtVariantEditorFactory *variantFactory = new QtVariantEditorFactory(this);
+    propertyEditor->setFactoryForManager(variantManager, variantFactory);
+
+    // new property
+    property = variantManager->addProperty(QVariant::Double, tr("Position X"));
+    property->setAttribute(QLatin1String("minimum"), 0);
+    property->setAttribute(QLatin1String("maximum"), canvas->width());
+    property->setValue(item->x()); // property 自己设置值
+
+    // add property
+    propertyToId[property] = id;
+    idToProperty[id] = property;
+    QtBrowserItem *item = propertyEditor->addProperty(property);
+
+    // set
+    variantManager->setValue(idToProperty[QLatin1String("xpos")], item->x());
+    // get
+    connect(variantManager, SIGNAL(valueChanged(QtProperty *, const QVariant &)),
+                this, SLOT(valueChanged(QtProperty *, const QVariant &)));
+    /*
+        QString id = propertyToId[property];
+        if (id == QLatin1String("xpos")) {
+            currentItem->setX(value.toDouble());
+        }
+    */
+    ```
+
+managers
+
+```
+int main(int argc, char **argv)
+{
+    QApplication app(argc, argv);
+
+    QWidget *w = new QWidget();
+
+    // managers
+    QtBoolPropertyManager *boolManager = new QtBoolPropertyManager(w);
+    QtIntPropertyManager *intManager = new QtIntPropertyManager(w);
+    QtStringPropertyManager *stringManager = new QtStringPropertyManager(w);
+    QtSizePropertyManager *sizeManager = new QtSizePropertyManager(w);
+    QtRectPropertyManager *rectManager = new QtRectPropertyManager(w);
+    QtSizePolicyPropertyManager *sizePolicyManager = new QtSizePolicyPropertyManager(w);
+    QtEnumPropertyManager *enumManager = new QtEnumPropertyManager(w);
+    QtGroupPropertyManager *groupManager = new QtGroupPropertyManager(w);
+
+    // properties
+    QtProperty *item0 = groupManager->addProperty("QObject");
+
+    QtProperty *item1 = stringManager->addProperty("objectName");
+    item0->addSubProperty(item1);
+
+    QtProperty *item2 = boolManager->addProperty("enabled");
+    item0->addSubProperty(item2);
+
+    QtProperty *item3 = rectManager->addProperty("geometry");
+    item0->addSubProperty(item3);
+
+    QtProperty *item4 = sizePolicyManager->addProperty("sizePolicy");
+    item0->addSubProperty(item4);
+
+    QtProperty *item5 = sizeManager->addProperty("sizeIncrement");
+    item0->addSubProperty(item5);
+
+    QtProperty *item7 = boolManager->addProperty("mouseTracking");
+    item0->addSubProperty(item7);
+
+    // enum, 可以设置 string 和 图标
+    QtProperty *item8 = enumManager->addProperty("direction");
+    QStringList enumNames;
+    enumNames << "Up" << "Right" << "Down" << "Left";
+    enumManager->setEnumNames(item8, enumNames);
+    QMap<int, QIcon> enumIcons;
+    enumIcons[0] = QIcon(":/demo/images/up.png");
+    enumIcons[1] = QIcon(":/demo/images/right.png");
+    enumIcons[2] = QIcon(":/demo/images/down.png");
+    enumIcons[3] = QIcon(":/demo/images/left.png");
+    enumManager->setEnumIcons(item8, enumIcons);
+    item0->addSubProperty(item8);
+
+    QtProperty *item9 = intManager->addProperty("value");
+    intManager->setRange(item9, -100, 100);
+    item0->addSubProperty(item9);
+
+    // factories
+    QtCheckBoxFactory *checkBoxFactory = new QtCheckBoxFactory(w);
+    QtSpinBoxFactory *spinBoxFactory = new QtSpinBoxFactory(w);
+    QtSliderFactory *sliderFactory = new QtSliderFactory(w);
+    QtScrollBarFactory *scrollBarFactory = new QtScrollBarFactory(w);
+    QtLineEditFactory *lineEditFactory = new QtLineEditFactory(w);
+    QtEnumEditorFactory *comboBoxFactory = new QtEnumEditorFactory(w);
+
+    // editor, 最普通的 treeview，configure factory for manager of editor
+    QtAbstractPropertyBrowser *editor1 = new QtTreePropertyBrowser();
+    editor1->setFactoryForManager(boolManager, checkBoxFactory);
+    editor1->setFactoryForManager(intManager, spinBoxFactory);
+    editor1->setFactoryForManager(stringManager, lineEditFactory);
+    editor1->setFactoryForManager(sizeManager->subIntPropertyManager(), spinBoxFactory);
+    editor1->setFactoryForManager(rectManager->subIntPropertyManager(), spinBoxFactory);
+    editor1->setFactoryForManager(sizePolicyManager->subIntPropertyManager(), spinBoxFactory);
+    editor1->setFactoryForManager(sizePolicyManager->subEnumPropertyManager(), comboBoxFactory);
+    editor1->setFactoryForManager(enumManager, comboBoxFactory);
+
+    editor1->addProperty(item0);
+
+    // editor2, 不加 manager 的话，就只读
+    QtAbstractPropertyBrowser *editor2 = new QtTreePropertyBrowser();
+    editor2->addProperty(item0);
+
+    // editor3，groupbox
+    QtAbstractPropertyBrowser *editor3 = new QtGroupBoxPropertyBrowser();
+    editor3->setFactoryForManager(boolManager, checkBoxFactory);
+    editor3->setFactoryForManager(intManager, spinBoxFactory);
+    editor3->setFactoryForManager(stringManager, lineEditFactory);
+    editor3->setFactoryForManager(sizeManager->subIntPropertyManager(), spinBoxFactory);
+    editor3->setFactoryForManager(rectManager->subIntPropertyManager(), spinBoxFactory);
+    editor3->setFactoryForManager(sizePolicyManager->subIntPropertyManager(), spinBoxFactory);
+    editor3->setFactoryForManager(sizePolicyManager->subEnumPropertyManager(), comboBoxFactory);
+    editor3->setFactoryForManager(enumManager, comboBoxFactory);
+
+    editor3->addProperty(item0);
+
+    QScrollArea *scroll3 = new QScrollArea();
+    scroll3->setWidgetResizable(true);
+    scroll3->setWidget(editor3);
+
+    // editor4，groupbox
+    QtAbstractPropertyBrowser *editor4 = new QtGroupBoxPropertyBrowser();
+    editor4->setFactoryForManager(boolManager, checkBoxFactory);
+    // 这里特别贴心地，用了 scrollBarFactory 而不是 spinBoxFactory
+    editor4->setFactoryForManager(intManager, scrollBarFactory);
+    editor4->setFactoryForManager(stringManager, lineEditFactory);
+    editor4->setFactoryForManager(sizeManager->subIntPropertyManager(), spinBoxFactory);
+    editor4->setFactoryForManager(rectManager->subIntPropertyManager(), spinBoxFactory);
+    // 用了 sliderFactory
+    editor4->setFactoryForManager(sizePolicyManager->subIntPropertyManager(), sliderFactory);
+    editor4->setFactoryForManager(sizePolicyManager->subEnumPropertyManager(), comboBoxFactory);
+    editor4->setFactoryForManager(enumManager, comboBoxFactory);
+
+    editor4->addProperty(item0);
+
+    QScrollArea *scroll4 = new QScrollArea();
+    scroll4->setWidgetResizable(true);
+    scroll4->setWidget(editor4);
+
+    // editor, button!
+    QtAbstractPropertyBrowser *editor5 = new QtButtonPropertyBrowser();
+    editor5->setFactoryForManager(boolManager, checkBoxFactory);
+    editor5->setFactoryForManager(intManager, scrollBarFactory);
+    editor5->setFactoryForManager(stringManager, lineEditFactory);
+    editor5->setFactoryForManager(sizeManager->subIntPropertyManager(), spinBoxFactory);
+    editor5->setFactoryForManager(rectManager->subIntPropertyManager(), spinBoxFactory);
+    editor5->setFactoryForManager(sizePolicyManager->subIntPropertyManager(), sliderFactory);
+    editor5->setFactoryForManager(sizePolicyManager->subEnumPropertyManager(), comboBoxFactory);
+    editor5->setFactoryForManager(enumManager, comboBoxFactory);
+
+    editor5->addProperty(item0);
+
+    QScrollArea *scroll5 = new QScrollArea();
+    scroll5->setWidgetResizable(true);
+    scroll5->setWidget(editor5);
+
+    QGridLayout *layout = new QGridLayout(w);
+    QLabel *label1 = new QLabel("Editable Tree Property Browser");
+    QLabel *label2 = new QLabel("Read Only Tree Property Browser, editor factories are not set");
+    QLabel *label3 = new QLabel("Group Box Property Browser");
+    QLabel *label4 = new QLabel("Group Box Property Browser with different editor factories");
+    QLabel *label5 = new QLabel("Button Property Browser");
+    label1->setWordWrap(true);
+    label2->setWordWrap(true);
+    label3->setWordWrap(true);
+    label4->setWordWrap(true);
+    label5->setWordWrap(true);
+    label1->setFrameShadow(QFrame::Sunken);
+    label2->setFrameShadow(QFrame::Sunken);
+    label3->setFrameShadow(QFrame::Sunken);
+    label4->setFrameShadow(QFrame::Sunken);
+    label5->setFrameShadow(QFrame::Sunken);
+    label1->setFrameShape(QFrame::Panel);
+    label2->setFrameShape(QFrame::Panel);
+    label3->setFrameShape(QFrame::Panel);
+    label4->setFrameShape(QFrame::Panel);
+    label5->setFrameShape(QFrame::Panel);
+    label1->setAlignment(Qt::AlignCenter);
+    label2->setAlignment(Qt::AlignCenter);
+    label3->setAlignment(Qt::AlignCenter);
+    label4->setAlignment(Qt::AlignCenter);
+    label5->setAlignment(Qt::AlignCenter);
+
+    layout->addWidget(label1, 0, 0);
+    layout->addWidget(label2, 0, 1);
+    layout->addWidget(label3, 0, 2);
+    layout->addWidget(label4, 0, 3);
+    layout->addWidget(label5, 0, 4);
+    layout->addWidget(editor1, 1, 0);
+    layout->addWidget(editor2, 1, 1);
+    layout->addWidget(scroll3, 1, 2);
+    layout->addWidget(scroll4, 1, 3);
+    layout->addWidget(scroll5, 1, 4);
+    w->show();
+
+    int ret = app.exec();
+    delete w;
+    return ret;
+}
+```
+
+```
+QDialogButtonBox *buttonBox = new QDialogButtonBox(this);
+connect(buttonBox, SIGNAL(rejected()), this, SLOT(reject()));
+buttonBox->setStandardButtons(QDialogButtonBox::Close);
+layout->addWidget(buttonBox);
+
+    QWidget *newWidget = qobject_cast<QWidget *>(newObject);
+    if (newWidget) {
+        QRect r = newWidget->geometry();
+        r.setSize(newWidget->sizeHint());
+        r.setWidth(qMax(r.width(), 150));
+        r.setHeight(qMax(r.height(), 50));
+        r.moveCenter(QApplication::desktop()->geometry().center());
+        newWidget->setGeometry(r);
+        newWidget->setWindowTitle(tr("Controlled Object: %1").arg(className));
+        newWidget->show();
+    }
+
+    if (theControlledObject)
+        delete theControlledObject;
+
+    theControlledObject = newObject;
+    theController->setObject(theControlledObject);
+
+```
+
+bridge controllers.
+
+remove properties:
+
+```
+d_ptr->m_browser->removeProperty(it.next());
+```
+
+file:///C:/Users/Administrator/Downloads/QtPropertyBrowser-master/doc/html/qtabstractpropertybrowser-members.html
