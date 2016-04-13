@@ -7848,3 +7848,40 @@ d_ptr->m_browser->removeProperty(it.next());
 ```
 
 file:///C:/Users/Administrator/Downloads/QtPropertyBrowser-master/doc/html/qtabstractpropertybrowser-members.html
+
+besides propertyToId & idToProperty, you need idToActions, too
+
+```
+// assign actions
+idToActions["xpos"] = QList<QAction *>()
+    << new QAction("one", this)
+    << new QAction("two", this)
+    << new QAction("three", this);
+
+// right click event
+propertyEditor->setContextMenuPolicy( Qt::CustomContextMenu );
+connect(propertyEditor, SIGNAL(customContextMenuRequested(const QPoint&)),
+    this, SLOT(popupMenu(const QPoint&)));
+
+void MainWindow::popupMenu(const QPoint &pos)
+{
+    static int i = 0;
+    if(popMenu && propertyEditor){
+        foreach ( QAction *action, popMenu->actions() ) {
+            popMenu->removeAction( action );
+        }
+        QtProperty *prop = propertyEditor->currentItem()->property();
+        popMenu->addActions( idToActions[propertyToId[prop]] );
+        // TODO, if not any actions, try get parent's actions
+        popMenu->exec(QCursor::pos());
+    }
+}
+```
+
+| Constant | Value | Description |
+| :------: | :---: | :---------: |
+| Qt::NoContextMenu | 0 | the widget does not feature a context menu, context menu handling is deferred to the widget's parent. |
+| Qt::PreventContextMenu | 4 | the widget does not feature a context menu, and in contrast to NoContextMenu, the handling is not deferred to the widget's parent. This means that all right mouse button events are guaranteed to be delivered to the widget itself through mousePressEvent(), and mouseReleaseEvent(). |
+| Qt::DefaultContextMenu | 1 | the widget's QWidget::contextMenuEvent() handler is called. |
+| Qt::ActionsContextMenu | 2 | the widget displays its QWidget::actions() as context menu. |
+| Qt::CustomContextMenu | 3 | the widget emits the QWidget::customContextMenuRequested() signal. |

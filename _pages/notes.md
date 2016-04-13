@@ -23,6 +23,92 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+[CLI (Terminal app) - Diff Checker](https://www.diffchecker.com/cli)
+
+[目录 | 兮软](http://dev.gameres.com/Program/Other/bcxszyforgameres/bcxszy/xisofts.sinaapp.com/@p=5.htm)
+
+宁欺白须公，莫欺少年穷。
+
+[咖啡機的過去、現在與未來 - 文章](http://weibo.com/p/1001603696866012350162)
+
+有个从湖南来的女生，她的父母都在广东打工，工厂生产塑料花。来上大学前，她去看父母，也做了一段短期工。只读过小学的母亲总是说她做的是“美国花”，仔细问过，女生才知道母亲一直都把“玫瑰花”读成“美国花”。母亲不知道玫瑰花是什么样子，她知道每天做的就是“美国花”。
+
+其次，每个数字都是一个单音节，所以数字的语音更短。这样您只花两秒钟时间，就能记住一个九位数（适合人脑短期记忆的空间）；而大多数说英语的人只能记住七位数，都是“seven”（七）这样的音节惹的祸。
+
+The significance of Mahjong, a Chinese gambling game, can be compared to the significance of football, baseball, and basketball combined to Americans.
+
+麻将在中国的地位，就相当于橄榄球、棒球、篮球在美国的地位加在一块儿。
+
+Chinese perception of the deities is by and large shaped by a classic Chinese novel Journey to the West. The book was written in 16th century, strongly rooted in Chinese folklore and Buddhist and Taoist theology. Here is a imaginary scenario of the heaven.
+
+中国人对于神灵的认知很大部分来源于《西游记》。《西游记》创作于16世纪，深深扎根...
+
+At the margins, women are a civilizing influence on men - men with a mild propensity to join a gang or engage in other antisocial behavior but find themselves a wife refocus their attention to providing for a family.
+从某种程度上说，女性能使男性变得更加有素养。因为一旦结婚，男人的性情会变得柔和，加入帮派团伙或者参与反社会的行动的几率会下降，并且会更关注他们的妻子和家庭。
+Abse...
+
+People often asked me what people eat in America.  Once, a man thinking of the most exotic staple food he could imagine, asked, "What do you eat in your country?  You eat rice, don't you?"  To him, Chinese eat wheat and other grains.  Rice is something foreign.
+
+经常有人问我，美国人吃什么。一次，一个人跟我说了他能想到的最有外国特色的主食...
+
+1984年，我坐了一列烧煤的蒸汽火车去北京。我下了车，走到站台上，看到有一小群人站在自动扶梯底下。我以为出了什么事，就挤到人群最前面去一探究竟。后来才发现人们在盯着自动扶梯从地下一阶一阶滚出来，想确定坐上去安全不安全。一个年轻人一下子跳上四个台阶，因为直到第四个台阶才变成正常的高度，然后所有人都“啊——”一声惊叹。后来一个年纪比较大的人，想要迈上去，大家都一脸惊讶。我决定为公众做点贡献，于是很轻松地从那个老太太边走过，踏上了最下面的一层台阶。大家“哦——”地恍然大悟，然后跟着我一起上了自动扶梯。那可能使他们第一次见到自动扶梯，那也可能是中国第一个自动扶梯。而30年后，现在的中国人坐上了动车，用...
+
+
+Just about everyone who lives in China knows this, but it's worth mentioning anyway: all of China operates on the same time zone. This means that when it's 9 o'clock in Guangzhou, it's 9 o'clock- and likely still dark- 2,600 miles to the west in Urumqi. This little quirk, installed in a quixotic at...
+
+Every Chinese person is officially classified by one of the country's 56 recognized nationalities, even those of mixed blood.
+
+每个中国人都划分为56个民族中的一族，哪怕是混血儿。
+
+I chuckled when people talk about Chinese value as if it's some unmovable cornerstone of Chinese society or some such none existing ideological concept. Something we can anchor ourselves in this ever changing world. Something that lifted us up on top of the rest of our ignorant fellow countrymen so ...
+
+有时候，一些人嘴上的中国价值观，要么是什么不可动摇的基石一般，支撑着中国社会，要么就是什么虚无缥缈的意识形态。一听他们这么说，我就忍不住发笑。好像有了价值观，我们就能高人一等，超过那些无知的同胞，可以站在道德制高点上，告诉别人“你丢了传统价值观！”
+
+Because all characters are monosyllabic, students can memorize these elements like a poem. It is  pretty easy to distinguish metallic elements from non-metallic elements, because all the metallic elements have the radical of "釒or 钅" (gold). It's also easy to spot the gas elements, as all of them hav...
+
+In fact, Chinese can be very convenient in the entire chemistry nomenclature. In organic chemistry, for instance, there is a ordinal sequence "甲乙丙丁戊己庚辛壬癸" that is used in the nomenclature, indicating the number of carbon atoms from one to ten in a molecule. Those with more than ten carbon atoms woul...
+
+甲烷(methane) CH4 literal: one + alkane
+乙烯(ethene) C2H4 two + alkene
+丙炔(propyne) C3H4 three + alkyne
+丁醛(butyraldehyde) C4H8O four + aldehyde
+戊酸(valeric acid) C5H10O2 five + acid
+己酮(hexanone) C6H12O six + alkone
+乙酸乙酯 (ethyl acetate) CH3CH2COOCH3 two acid two ester
+十二烷 (dihexyl) C12H26 twelve + alkane
+
+其实，整套化学的系统命名法，用汉语都非常方便。比如有机化学的命名法，就有一个序数的列，“甲乙丙丁戊己庚辛壬癸”，表示一个分子里面有1-10个碳原子。要是超过10个碳原子，就直接说数字 。
+
+Moreoever, medical terms in Chinese are far less terrifying than those in English. e.g.:
+
+妇科医生 gynecologist; women science doctor
+皮肤科医生 dermatologist; skin science doctor
+产科医生 obstetrician; pregnancy science doctor
+内出血 entorrhagia; Inside bleeding
+胃穿孔 gastric perforation; stomach pierce hole
+心脏导管插入 cardiac catheterization; heart catheter
+半舌切割术 hemiglossectomy; half tougue dissection
+肝硬化 cirrhosis; liver hardening
+贫血 Anemia; poor in blood
+手术刀 scalple; surgery blade
+而且，汉语的医学术语远不如英语那么可怕。比如：
+妇科医生 gynecologist; 妇女+科+医生
+皮肤科医生 dermatologist; 皮肤+科+医生
+
+还有很多例子。汉语的医学术语一般是复合词，英语也是复合词，但很多英语术语，都是从拉丁语或者古希腊语借来的。而汉语的汉字本身就能够显示意义，所以哪怕从来没有上过医学专业课，也至少能猜到一部分意思。
+
+it's easier to remember words as they "make sense" in simpler ways than English. For example, refrigerator is 冰箱 , which is ice + box/chest, computer is 电脑 (electricity + brain) parking lot is 停车场 (stop + car + place), airport is 飞机场 (fly + machine + place), etc. Yes, English has compound words as ...
+
+而且，人们日常说话的时候，声调发得并不是很清楚。这就让很多词的发音非常近似，有时候甚至完全一样。而且，有些音节的汉字非常多（比如“ji”、“shi”、“jian”、“jiao”等音节的各个汉字）。还有些辅音彼此很像，比如zh和j，x和sh，q和ch；这些音只要发得清楚，是很好辨认的，可是一般人平时并不这么说话，特别是考虑到各地不同口音的情况下。就连汉语母语者，也不容易听懂外省人的口音；我这儿说的还不是各种方言，而是标准国语（普通话）的其他形式的发音。 正因如此，汉字尽管非常复杂，但阅读汉语，其实比听汉语来得容易。
+
+Firstly, the structure of "two-digit numbers" is easier. If you know the numbers 1-9 and the number 10, then you can just say the Mandarin for "ten one" and it means eleven. The Mandarin for "twelve" is "ten two" and so on. So to count to 19 you only need to learn 11 sounds.... Compare English with ...
+
+[c++ - windows.h and MFC - Stack Overflow](http://stackoverflow.com/questions/5026799/windows-h-and-mfc)
+
+Because in MFC you are not supposed to use it directly. AFAIR you should include afx.h instead, which in turn indirectly includes windows.h the proper way.
+
+[“平等之所以很难做到，就是因为人人都只想与比自己更高层的人共享”](https://www.douban.com/note/550640902/)
+
 ```
 $ pwd
 /d/tzx/git/blog/.git/refs/heads

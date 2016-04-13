@@ -63,7 +63,6 @@ Links | 链签
 #. [Milo Yip - 博客园](http://www.cnblogs.com/miloyip/) `blog`
 #. [OpenJudge - 百练 - 首页](http://www.bailian.openjudge.cn/) `leetcode` `oj`
 #. [PDF conversion of IETF documents](http://tools.ietf.org/pdf/usage.shtml)
-#. [Pretty Diff - The difference tool](http://prettydiff.com/)
 #. [Pro Git读书笔记 - Kelvin的胡言乱语](http://kelvinh.github.io/wiki/progit/)
 #. [ProcessOn - Create diagrams online in real-time!](https://www.processon.com/tour)
 #. [ProcessOn](https://www.processon.com/network)
@@ -206,3 +205,5 @@ Links | 链签
 #. [刷新七牛 CDN Cache - 简书](http://www.jianshu.com/p/6273021ff178)
 #. [在线照片处理 | 数码照片美化修整 | 专业整相服务](http://cn.tucia.com/)
 #. [Preface | Data Structure and Algorithm notes](http://algorithm.yuanbin.me/zh-hans/index.html)
+#. [Computed Diff - Diff Checker](https://www.diffchecker.com/diff)
+#. [Pretty Diff - The difference tool](http://prettydiff.com/)
