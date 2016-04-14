@@ -23,6 +23,8 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+[准备入坑 C++ 和 UE4，花了两天时间研究了一下，写些大概方向 - Coder For Art](http://coderforart.com/14431468507612.html)
+
 [CLI (Terminal app) - Diff Checker](https://www.diffchecker.com/cli)
 
 [目录 | 兮软](http://dev.gameres.com/Program/Other/bcxszyforgameres/bcxszy/xisofts.sinaapp.com/@p=5.htm)

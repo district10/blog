@@ -11,8 +11,12 @@ after-before:
 before-after:
 ...
 
-Koans | 呓语
+Koans | 呓语^[这是我的微(tu)博(cao)。呓语呓语，神志不清；若有冒犯，敬请原谅。]
 ============
+
+## `1460598168`{.tzx-timestamp} LaTex?
+
+这样的拼写，让我对你没信心。
 
 ## `1460509545`{.tzx-timestamp} VS 的搜索
 
@@ -56,6 +60,7 @@ refs and see also
 
   - [【MV】Sia -Big Girls Cry 背后的故事 幕后访谈 中英字幕 (SiaFurler汉化组)-高清MV在线播放-音悦Tai-口袋·FAN-看好音乐](http://v.yinyuetai.com/video/h5/2332671)
 
+<div class="tzx-hide">
 ## `1460188539`{.tzx-timestamp} 无耻新闻从业人员
 
 最无耻的就是新闻从业人员（以及相关程序员和产品经理）。整天 傻 b 一样推送各种无
@@ -79,6 +84,7 @@ see also
   - [为什么腾讯 QQ 的新闻弹窗大多数人不反感？ - 腾讯 QQ - 知乎](https://www.zhihu.com/question/19576639)
   - [QQ轻聊版官方网站](http://im.qq.com/lightqq/)
   - [为什么腾讯不允许用户选择关闭右下角QQ新闻弹窗？ - 腾讯 QQ - 知乎](http://www.zhihu.com/question/39913761)
+</div>
 
 ## `1460015071`{.tzx-timestamp} 皮蛋瘦肉粥……
 
@@ -169,7 +175,7 @@ TDD 的世界观就跟概率论的世界观很
 
 KMZ 格式怎么降采样？不知道！模型太大加载太慢，神烦。
 想转化成别的格式再降采样再转回，请问往哪个格式转？
-FME 也不会用，这个号称能处理几百种格式的转化工具，
+[FME](post-0091-gis-misc.html#fme-%E6%98%AF%E4%BB%80%E4%B9%88) 也不会用，这个号称能处理几百种格式的转化工具，
 不好用。
 
 ## `1458995382`{.tzx-timestamp} pandoc 对中文的支持
@@ -391,8 +397,7 @@ D. Philadelphia
 
 ## `1457617233`{.tzx-timestamp} 虾米猜
 
-简直是瞎猜！推荐的歌我几乎都不喜欢。pinjinjian 唱得跟屎一样。
-七緒香更是不能听。
+简直是瞎猜！推荐的歌我几乎都不喜欢。平井坚唱得跟屎一样，七緒香更是不能听。
 
 <!--
 ## `1457442269`{.tzx-timestamp} 搞定时间戳！
@@ -867,7 +872,7 @@ Refs
 ## `1451283139`{.tzx-timestamp} 售价远高于成本
 
 我已经不止一次看到“iPhone 的售价远高于成本”的说法，呵呵哒。
-说这话的人大概这把材料价格算上了。这么算价格的人估计不去餐馆吃饭，也不会做饭，
+说这话的人大概只算材料价格。这么算价格的人估计不去餐馆吃饭，也不会做饭，
 把菜买回来全部剁成渣渣兑点水不就可以了。
 
 iPhone 的价值当然不能用原材料算。在它的设计、制造、运输过程中，
@@ -1260,6 +1265,12 @@ files | Alteridem `[al′tər ī′dem′]`](http://www.alteridem.net/2008/02/26
 
 但，我已经被 VS 蠢哭。
 
+我想你一定不要错过 Vertical Tabs：
+
+![](http://whudoc.qiniudn.com/2016/vertical-tabs.png)
+
+我现在是浏览器，VS 都装了这种类型的插件。
+
 ## `1450421135`{.tzx-timestamp} CMake 的 Cache 太扯淡
 
 我已经不是第一次被它坑了。出了问题一定**第一时间**先试试重新完全 CMake 一下看问题还在不在。
@@ -1297,7 +1308,7 @@ int* b;
 ```
 
 搭配使用。但我，依旧偏向第一种。Qt 也是偏向第一种^[但他们的 API 和文档，为了更
-好的显示，用了第三种]。
+好的显示，用了第三种。]。
 
 风格这东西随着时间都会变，以前人
 们写 C 的时候还喜欢把返回值放在函数名的上一行呢。很科学，但太 trivial 了。
@@ -1698,317 +1709,319 @@ xargs.exe           yacc
 ## The conversion is done algorithmicly, not by a table look-up.
 ```
 
+<div class="tzx-drawer" shy>
 Git Bash 文件夹下很有意思：
 
-```plain
-文件夹 PATH 列表
-卷序列号为 00000200 946A:A42F
-C:\Program Files (x86)\Git
-│  .bash_history
-│
-├─bin
-│      antiword.exe
-|      ...
-│      yacc
-│
-├─cmd
-│      git.exe
-│      gitk.cmd
-│      start-ssh-agent.cmd
-│
-├─doc  （下面有很多文档，一个小小的程序里就有这么多值得学习的地方。）
-│
-├─etc
-│      fileList-bindimage.txt
-│      fileList-builtins.txt
-│      git-completion.bash
-│      git-prompt.sh
-│      git.ico
-│      gitattributes
-│      gitconfig
-│      inputrc
-│      motd
-│      profile
-│      termcap
-│
-├─lib
-│  ├─engines
-│  │      lib4758cca.so
-│  │      libaep.so
-│  │      libatalla.so
-│  │      libcapi.so
-│  │      libchil.so
-│  │      libcswift.so
-│  │      libgmp.so
-│  │      libgost.so
-│  │      libnuron.so
-│  │      libpadlock.so
-│  │      libsureware.so
-│  │      libubsec.so
-│  │
-│  ├─perl5
-│  │  ├─5.8.8
-|
-├─libexec
-│  └─git-core
-│      │  git-add--interactive
-│      │  git-add.exe
-│      │  git-am
-│      │  git-annotate.exe
-│      │  git-apply.exe
-│      │  git-archive.exe
-│      │  git-bisect
-│      │  git-bisect--helper.exe
-│      │  git-blame.exe
-│      │  git-branch.exe
-│      │  git-bundle.exe
-│      │  git-cat-file.exe
-│      │  git-check-attr.exe
-│      │  git-check-ignore.exe
-│      │  git-check-mailmap.exe
-│      │  git-check-ref-format.exe
-│      │  git-checkout-index.exe
-│      │  git-checkout.exe
-│      │  git-cherry-pick.exe
-│      │  git-cherry.exe
-│      │  git-citool
-│      │  git-clean.exe
-│      │  git-clone.exe
-│      │  git-column.exe
-│      │  git-commit-tree.exe
-│      │  git-commit.exe
-│      │  git-config.exe
-│      │  git-count-objects.exe
-│      │  git-credential-store.exe
-│      │  git-credential-wincred.exe
-│      │  git-credential.exe
-│      │  git-daemon.exe
-│      │  git-describe.exe
-│      │  git-diff-files.exe
-│      │  git-diff-index.exe
-│      │  git-diff-tree.exe
-│      │  git-diff.exe
-│      │  git-difftool
-│      │  git-difftool--helper
-│      │  git-fast-export.exe
-│      │  git-fast-import.exe
-│      │  git-fetch-pack.exe
-│      │  git-fetch.exe
-│      │  git-filter-branch
-│      │  git-fmt-merge-msg.exe
-│      │  git-for-each-ref.exe
-│      │  git-format-patch.exe
-│      │  git-format-patch.exe.manifest
-│      │  git-fsck-objects.exe
-│      │  git-fsck.exe
-│      │  git-gc.exe
-│      │  git-get-tar-commit-id.exe
-│      │  git-grep.exe
-│      │  git-gui
-│      │  git-gui--askpass
-│      │  git-gui--askyesno
-│      │  git-gui.tcl
-│      │  git-hash-object.exe
-│      │  git-help.exe
-│      │  git-http-backend.exe
-│      │  git-http-fetch.exe
-│      │  git-http-push.exe
-│      │  git-imap-send.exe
-│      │  git-index-pack.exe
-│      │  git-init-db.exe
-│      │  git-init.exe
-│      │  git-log.exe
-│      │  git-ls-files.exe
-│      │  git-ls-remote.exe
-│      │  git-ls-tree.exe
-│      │  git-mailinfo.exe
-│      │  git-mailsplit.exe
-│      │  git-merge-base.exe
-│      │  git-merge-file.exe
-│      │  git-merge-index.exe
-│      │  git-merge-octopus
-│      │  git-merge-one-file
-│      │  git-merge-ours.exe
-│      │  git-merge-recursive.exe
-│      │  git-merge-resolve
-│      │  git-merge-subtree.exe
-│      │  git-merge-tree.exe
-│      │  git-merge.exe
-│      │  git-mergetool
-│      │  git-mergetool--lib
-│      │  git-mktag.exe
-│      │  git-mktree.exe
-│      │  git-mv.exe
-│      │  git-name-rev.exe
-│      │  git-notes.exe
-│      │  git-p4
-│      │  git-pack-objects.exe
-│      │  git-pack-redundant.exe
-│      │  git-pack-refs.exe
-│      │  git-parse-remote
-│      │  git-patch-id.exe
-│      │  git-patch-id.exe.manifest
-│      │  git-prune-packed.exe
-│      │  git-prune.exe
-│      │  git-pull
-│      │  git-push.exe
-│      │  git-quiltimport
-│      │  git-read-tree.exe
-│      │  git-rebase
-│      │  git-rebase--am
-│      │  git-rebase--interactive
-│      │  git-rebase--merge
-│      │  git-receive-pack.exe
-│      │  git-reflog.exe
-│      │  git-relink
-│      │  git-remote-ext.exe
-│      │  git-remote-fd.exe
-│      │  git-remote-ftp.exe
-│      │  git-remote-ftps.exe
-│      │  git-remote-http.exe
-│      │  git-remote-https.exe
-│      │  git-remote-testsvn.exe
-│      │  git-remote.exe
-│      │  git-repack.exe
-│      │  git-replace.exe
-│      │  git-request-pull
-│      │  git-rerere.exe
-│      │  git-reset.exe
-│      │  git-rev-list.exe
-│      │  git-rev-parse.exe
-│      │  git-revert.exe
-│      │  git-rm.exe
-│      │  git-send-email
-│      │  git-send-pack.exe
-│      │  git-sh-i18n
-│      │  git-sh-i18n--envsubst.exe
-│      │  git-sh-setup
-│      │  git-shortlog.exe
-│      │  git-show-branch.exe
-│      │  git-show-index.exe
-│      │  git-show-ref.exe
-│      │  git-show.exe
-│      │  git-stage.exe
-│      │  git-stash
-│      │  git-status.exe
-│      │  git-stripspace.exe
-│      │  git-submodule
-│      │  git-subtree
-│      │  git-svn
-│      │  git-symbolic-ref.exe
-│      │  git-tag.exe
-│      │  git-unpack-file.exe
-│      │  git-unpack-objects.exe
-│      │  git-update-index.exe
-│      │  git-update-index.exe.manifest
-│      │  git-update-ref.exe
-│      │  git-update-ref.exe.manifest
-│      │  git-update-server-info.exe
-│      │  git-update-server-info.exe.manifest
-│      │  git-upload-archive.exe
-│      │  git-upload-pack.exe
-│      │  git-var.exe
-│      │  git-verify-pack.exe
-│      │  git-verify-tag.exe
-│      │  git-web--browse
-│      │  git-whatchanged.exe
-│      │  git-write-tree.exe
-│      │  git.exe
-│      │
-│      └─mergetools
-│              araxis
-│              bc3
-│              codecompare
-│              deltawalker
-│              diffmerge
-│              diffuse
-│              ecmerge
-│              emerge
-│              gvimdiff
-│              gvimdiff2
-│              kdiff3
-│              kompare
-│              meld
-│              opendiff
-│              p4merge
-│              tkdiff
-│              tortoisemerge
-│              vimdiff
-│              vimdiff2
-│              xxdiff
-│
-├─share
-│  ├─antiword
-│  │
-│  ├─bison
-│  │  │  bison.m4
-│  │  │  c++-skel.m4
-│  │  │  c++.m4
-│  │  │  c-skel.m4
-│  │  │  c.m4
-│  │  │  glr.c
-│  │  │  glr.cc
-│  │  │  java-skel.m4
-│  │  │  java.m4
-│  │  │  lalr1.cc
-│  │  │  lalr1.java
-│  │  │  location.cc
-│  │  │  README
-│  │  │  yacc.c
-│  │  │
-│  │  ├─m4sugar
-│  │  │      foreach.m4
-│  │  │      m4sugar.m4
-│  │  │
-│  │  └─xslt
-│  │          bison.xsl
-│  │          xml2dot.xsl
-│  │          xml2text.xsl
-│  │          xml2xhtml.xsl
-│  │
-│  ├─git-core
-│  │  └─templates
-│  │      │  description
-│  │      │
-│  │      ├─hooks
-│  │      │      applypatch-msg.sample
-│  │      │      commit-msg.sample
-│  │      │      post-update.sample
-│  │      │      pre-applypatch.sample
-│  │      │      pre-commit.sample
-│  │      │      pre-push.sample
-│  │      │      pre-rebase.sample
-│  │      │      prepare-commit-msg.sample
-│  │      │      update.sample
-│  │      │
-│  │      └─info
-│  │              exclude
-│  │
-│  ├─git-gui
-│  │  └─lib
-│  │      │  about.tcl
-│  │      │  ...
-│  │      │  logo.tcl
-│  │      │  win32.tcl
-│  │      │  win32_shortcut.js
-│  │      │
-│  │      └─msgs
-│  │
-│  ├─gitweb
-│  │  │  gitweb.cgi
-│  │  │
-│  │  └─static
-│  │          git-favicon.png
-│  │          git-logo.png
-│  │          gitweb.css
-│  │          gitweb.js
-│  │
-│  └─vim
-│      │  vimrc
-│      │
-│      └─vim74
-└─ssl
-```
+:   ```plain
+    文件夹 PATH 列表
+    卷序列号为 00000200 946A:A42F
+    C:\Program Files (x86)\Git
+    │  .bash_history
+    │
+    ├─bin
+    │      antiword.exe
+    |      ...
+    │      yacc
+    │
+    ├─cmd
+    │      git.exe
+    │      gitk.cmd
+    │      start-ssh-agent.cmd
+    │
+    ├─doc  （下面有很多文档，一个小小的程序里就有这么多值得学习的地方。）
+    │
+    ├─etc
+    │      fileList-bindimage.txt
+    │      fileList-builtins.txt
+    │      git-completion.bash
+    │      git-prompt.sh
+    │      git.ico
+    │      gitattributes
+    │      gitconfig
+    │      inputrc
+    │      motd
+    │      profile
+    │      termcap
+    │
+    ├─lib
+    │  ├─engines
+    │  │      lib4758cca.so
+    │  │      libaep.so
+    │  │      libatalla.so
+    │  │      libcapi.so
+    │  │      libchil.so
+    │  │      libcswift.so
+    │  │      libgmp.so
+    │  │      libgost.so
+    │  │      libnuron.so
+    │  │      libpadlock.so
+    │  │      libsureware.so
+    │  │      libubsec.so
+    │  │
+    │  ├─perl5
+    │  │  ├─5.8.8
+    |
+    ├─libexec
+    │  └─git-core
+    │      │  git-add--interactive
+    │      │  git-add.exe
+    │      │  git-am
+    │      │  git-annotate.exe
+    │      │  git-apply.exe
+    │      │  git-archive.exe
+    │      │  git-bisect
+    │      │  git-bisect--helper.exe
+    │      │  git-blame.exe
+    │      │  git-branch.exe
+    │      │  git-bundle.exe
+    │      │  git-cat-file.exe
+    │      │  git-check-attr.exe
+    │      │  git-check-ignore.exe
+    │      │  git-check-mailmap.exe
+    │      │  git-check-ref-format.exe
+    │      │  git-checkout-index.exe
+    │      │  git-checkout.exe
+    │      │  git-cherry-pick.exe
+    │      │  git-cherry.exe
+    │      │  git-citool
+    │      │  git-clean.exe
+    │      │  git-clone.exe
+    │      │  git-column.exe
+    │      │  git-commit-tree.exe
+    │      │  git-commit.exe
+    │      │  git-config.exe
+    │      │  git-count-objects.exe
+    │      │  git-credential-store.exe
+    │      │  git-credential-wincred.exe
+    │      │  git-credential.exe
+    │      │  git-daemon.exe
+    │      │  git-describe.exe
+    │      │  git-diff-files.exe
+    │      │  git-diff-index.exe
+    │      │  git-diff-tree.exe
+    │      │  git-diff.exe
+    │      │  git-difftool
+    │      │  git-difftool--helper
+    │      │  git-fast-export.exe
+    │      │  git-fast-import.exe
+    │      │  git-fetch-pack.exe
+    │      │  git-fetch.exe
+    │      │  git-filter-branch
+    │      │  git-fmt-merge-msg.exe
+    │      │  git-for-each-ref.exe
+    │      │  git-format-patch.exe
+    │      │  git-format-patch.exe.manifest
+    │      │  git-fsck-objects.exe
+    │      │  git-fsck.exe
+    │      │  git-gc.exe
+    │      │  git-get-tar-commit-id.exe
+    │      │  git-grep.exe
+    │      │  git-gui
+    │      │  git-gui--askpass
+    │      │  git-gui--askyesno
+    │      │  git-gui.tcl
+    │      │  git-hash-object.exe
+    │      │  git-help.exe
+    │      │  git-http-backend.exe
+    │      │  git-http-fetch.exe
+    │      │  git-http-push.exe
+    │      │  git-imap-send.exe
+    │      │  git-index-pack.exe
+    │      │  git-init-db.exe
+    │      │  git-init.exe
+    │      │  git-log.exe
+    │      │  git-ls-files.exe
+    │      │  git-ls-remote.exe
+    │      │  git-ls-tree.exe
+    │      │  git-mailinfo.exe
+    │      │  git-mailsplit.exe
+    │      │  git-merge-base.exe
+    │      │  git-merge-file.exe
+    │      │  git-merge-index.exe
+    │      │  git-merge-octopus
+    │      │  git-merge-one-file
+    │      │  git-merge-ours.exe
+    │      │  git-merge-recursive.exe
+    │      │  git-merge-resolve
+    │      │  git-merge-subtree.exe
+    │      │  git-merge-tree.exe
+    │      │  git-merge.exe
+    │      │  git-mergetool
+    │      │  git-mergetool--lib
+    │      │  git-mktag.exe
+    │      │  git-mktree.exe
+    │      │  git-mv.exe
+    │      │  git-name-rev.exe
+    │      │  git-notes.exe
+    │      │  git-p4
+    │      │  git-pack-objects.exe
+    │      │  git-pack-redundant.exe
+    │      │  git-pack-refs.exe
+    │      │  git-parse-remote
+    │      │  git-patch-id.exe
+    │      │  git-patch-id.exe.manifest
+    │      │  git-prune-packed.exe
+    │      │  git-prune.exe
+    │      │  git-pull
+    │      │  git-push.exe
+    │      │  git-quiltimport
+    │      │  git-read-tree.exe
+    │      │  git-rebase
+    │      │  git-rebase--am
+    │      │  git-rebase--interactive
+    │      │  git-rebase--merge
+    │      │  git-receive-pack.exe
+    │      │  git-reflog.exe
+    │      │  git-relink
+    │      │  git-remote-ext.exe
+    │      │  git-remote-fd.exe
+    │      │  git-remote-ftp.exe
+    │      │  git-remote-ftps.exe
+    │      │  git-remote-http.exe
+    │      │  git-remote-https.exe
+    │      │  git-remote-testsvn.exe
+    │      │  git-remote.exe
+    │      │  git-repack.exe
+    │      │  git-replace.exe
+    │      │  git-request-pull
+    │      │  git-rerere.exe
+    │      │  git-reset.exe
+    │      │  git-rev-list.exe
+    │      │  git-rev-parse.exe
+    │      │  git-revert.exe
+    │      │  git-rm.exe
+    │      │  git-send-email
+    │      │  git-send-pack.exe
+    │      │  git-sh-i18n
+    │      │  git-sh-i18n--envsubst.exe
+    │      │  git-sh-setup
+    │      │  git-shortlog.exe
+    │      │  git-show-branch.exe
+    │      │  git-show-index.exe
+    │      │  git-show-ref.exe
+    │      │  git-show.exe
+    │      │  git-stage.exe
+    │      │  git-stash
+    │      │  git-status.exe
+    │      │  git-stripspace.exe
+    │      │  git-submodule
+    │      │  git-subtree
+    │      │  git-svn
+    │      │  git-symbolic-ref.exe
+    │      │  git-tag.exe
+    │      │  git-unpack-file.exe
+    │      │  git-unpack-objects.exe
+    │      │  git-update-index.exe
+    │      │  git-update-index.exe.manifest
+    │      │  git-update-ref.exe
+    │      │  git-update-ref.exe.manifest
+    │      │  git-update-server-info.exe
+    │      │  git-update-server-info.exe.manifest
+    │      │  git-upload-archive.exe
+    │      │  git-upload-pack.exe
+    │      │  git-var.exe
+    │      │  git-verify-pack.exe
+    │      │  git-verify-tag.exe
+    │      │  git-web--browse
+    │      │  git-whatchanged.exe
+    │      │  git-write-tree.exe
+    │      │  git.exe
+    │      │
+    │      └─mergetools
+    │              araxis
+    │              bc3
+    │              codecompare
+    │              deltawalker
+    │              diffmerge
+    │              diffuse
+    │              ecmerge
+    │              emerge
+    │              gvimdiff
+    │              gvimdiff2
+    │              kdiff3
+    │              kompare
+    │              meld
+    │              opendiff
+    │              p4merge
+    │              tkdiff
+    │              tortoisemerge
+    │              vimdiff
+    │              vimdiff2
+    │              xxdiff
+    │
+    ├─share
+    │  ├─antiword
+    │  │
+    │  ├─bison
+    │  │  │  bison.m4
+    │  │  │  c++-skel.m4
+    │  │  │  c++.m4
+    │  │  │  c-skel.m4
+    │  │  │  c.m4
+    │  │  │  glr.c
+    │  │  │  glr.cc
+    │  │  │  java-skel.m4
+    │  │  │  java.m4
+    │  │  │  lalr1.cc
+    │  │  │  lalr1.java
+    │  │  │  location.cc
+    │  │  │  README
+    │  │  │  yacc.c
+    │  │  │
+    │  │  ├─m4sugar
+    │  │  │      foreach.m4
+    │  │  │      m4sugar.m4
+    │  │  │
+    │  │  └─xslt
+    │  │          bison.xsl
+    │  │          xml2dot.xsl
+    │  │          xml2text.xsl
+    │  │          xml2xhtml.xsl
+    │  │
+    │  ├─git-core
+    │  │  └─templates
+    │  │      │  description
+    │  │      │
+    │  │      ├─hooks
+    │  │      │      applypatch-msg.sample
+    │  │      │      commit-msg.sample
+    │  │      │      post-update.sample
+    │  │      │      pre-applypatch.sample
+    │  │      │      pre-commit.sample
+    │  │      │      pre-push.sample
+    │  │      │      pre-rebase.sample
+    │  │      │      prepare-commit-msg.sample
+    │  │      │      update.sample
+    │  │      │
+    │  │      └─info
+    │  │              exclude
+    │  │
+    │  ├─git-gui
+    │  │  └─lib
+    │  │      │  about.tcl
+    │  │      │  ...
+    │  │      │  logo.tcl
+    │  │      │  win32.tcl
+    │  │      │  win32_shortcut.js
+    │  │      │
+    │  │      └─msgs
+    │  │
+    │  ├─gitweb
+    │  │  │  gitweb.cgi
+    │  │  │
+    │  │  └─static
+    │  │          git-favicon.png
+    │  │          git-logo.png
+    │  │          gitweb.css
+    │  │          gitweb.js
+    │  │
+    │  └─vim
+    │      │  vimrc
+    │      │
+    │      └─vim74
+    └─ssl
+    ```
+</div>
 
 这个文件夹下也有很多有意思的东西：`c:\windows\system32`，比如：
 
@@ -2159,7 +2172,7 @@ systeminfo
 > but what we have at the end of each day--and at the end of our lives--is the
 > past which we have created.
 
-感觉让 Tim Roth 演 Fitzgerald 特别合适。By the way，Fitzgerald 很郭敬明啊……（简
+感觉让 Tim Roth 演 Fitzgerald 特别合适（如果拍成电影的话）。By the way，Fitzgerald 很郭敬明啊……（简
 直是污蔑哈哈但我确实这么想）。
 
 Refs
@@ -2212,17 +2225,19 @@ TJG 说，那你吃你的眼屎啊～
 
 ## `1448253493`{.tzx-timestamp} Please Don't Use Safari
 
+<div class="tzx-fright">
 ![Mike Bostock](http://gnat.qiniudn.com/mbostock.jpg?imageView2/2/w/200)
+</div>
 
 D3.js 的作者 [Mike Bostock](https://github.com/mbostock "真大神，看他的
 Contributions，看他的博客（全用的 Gist 搭出来。）"):
 
 > To install the Chrome extension, visit the Chrome Web Store and click Add to
 > Chrome.
-
+>
 > To install the Firefox extension, visit the Mozilla Add-ons. Then click Add
 > to Firefox.
-
+>
 > A Safari extension is no longer supported because Apple requires a $99 per
 > year fee to obtain a developer certificate. **Please don’t use Safari.**
 

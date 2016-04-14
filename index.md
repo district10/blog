@@ -17,7 +17,7 @@ Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序�
 [^dvorak]: 见 [为什么 Emacs 用户爱德沃夏克](post-0006-why-emacs-users-favor-dvorak.html)。
 [^qwerty]: [QWERTY - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/QWERTY)。
 [^emacs]: [Emacs - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Emacs)。
-[^info]: 这是 <http://tangzhixiong.com> 的一部分。
+[^info]: 这是 <http://tangzhixiong.com> 的一部分。（本站使用火狐浏览器才能达到最佳阅读效果。因为我没有测试别的浏览器。）
 
 <div class="tzx-fright">
 [![Build Status](https://travis-ci.org/district10/blog.svg?branch=master)](https://travis-ci.org/district10/blog)
