@@ -166,11 +166,12 @@ good
 </style>
 
 <script src="auto-complete.js"></script>
+
 <script src="blog-query.js"></script>
+
 <script>
 ;var link_prefix = tzx_link_prefix;
 ;if ( window.location.toString().startsWith('file') ) {
-    // link_prefix = window.location.toString().split('/index.html')[0];
 }
 
 ;function prependChild( p, c ) {
