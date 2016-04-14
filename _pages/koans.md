@@ -14,6 +14,23 @@ before-after:
 Koans | 呓语^[这是我的微(tu)博(cao)。呓语呓语，神志不清；若有冒犯，敬请原谅。]
 ============
 
+## `1460610950`{.tzx-timestamp} 中文操作系统
+
+以前我是绝对拒绝使用中文操作系统的，后来用得多了感觉都一样。后来我装 Linux 都直
+接装中文版本，因为可以略去装中文输入法的麻烦（我对使用哪种输入法并没有特殊的偏
+爱，只要是个拼音输入法都行）。但有一点，中文操作系统被完虐。那就是中文，不好打
+！中文输入法再好，切换输入法都很让人不爽，这种不爽在 Windows 上更加严峻。
+
+想打开画图板？到 `Start` 输入“Paint”是没用的，那个只能在英文系统用。你必须得切
+换输入法（Win 8 还好，<kbd>Win</kbd> + <kbd>Space</kbd> 就好，Win 7 以下要麻烦
+点，Shift+Alt/Control 没那么好用），然后用中文输入法输入“画图”。
+
+慢好多。
+
+浏览器里搜中文也是，我真希望可以用拼音来搜索中文，但似乎还没有浏览器支持这个。
+
+（这是一个不错的 idea，可以去实现它，然后 big hit~）
+
 ## `1460598168`{.tzx-timestamp} LaTex?
 
 这样的拼写，让我对你没信心。
@@ -2172,8 +2189,10 @@ systeminfo
 > but what we have at the end of each day--and at the end of our lives--is the
 > past which we have created.
 
-感觉让 Tim Roth 演 Fitzgerald 特别合适（如果拍成电影的话）。By the way，Fitzgerald 很郭敬明啊……（简
+感觉让 Tim Roth 演 Fitzgerald 特别合适（长得很像）。By the way，Fitzgerald 很郭敬明啊……（不说脸，说写作主题。简
 直是污蔑哈哈但我确实这么想）。
+
+![Fitzgerald](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/F_Scott_Fitzgerald_1921.jpg/330px-F_Scott_Fitzgerald_1921.jpg)
 
 Refs
 

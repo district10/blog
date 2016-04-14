@@ -35,7 +35,7 @@ Search:[^koan]<br>
 </div><br/>
 <div id="links"></div><hr>
 
-[^koan]: 不知为何，本地的可以用。七牛上的就不能用……
+[^koan]: ~~不知为何，本地的可以用。七牛上的就不能用……~~现在可以了。
 
 <div style="font-variant:small-caps;">Posts</div>
 <div class="posts"><!--...-->

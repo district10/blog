@@ -23,6 +23,8 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+那么，程序的 bug 算是“重大过失”吗？这很难说。一个系统里有没有隐藏的 bug，是没法从理论上证明的。就算是测试再彻底，也会有测不到的 bug 流出来。所以在法律上，通常不会把所有因为 bug 导致的损失都归罪给程序开发商。否则的话，世界上最大的 bug 生产商——微软，早就赔得连内裤都不剩了。
+
 [关于C++之“复杂” - λ-calculus（惊愕到手了欧耶，GetBlogPostIds.aspx） - C++博客](http://www.cppblog.com/vczh/archive/2010/07/07/119562.aspx)
 
 [准备入坑 C++ 和 UE4，花了两天时间研究了一下，写些大概方向 - Coder For Art](http://coderforart.com/14431468507612.html)
@@ -21523,6 +21525,50 @@ Disallow:
         return count;
     }
     ```
+
+    <div class="tzx-drawer" shy>
+    我的测试
+
+    :   代码
+
+        :   ```cpp
+            #include <stdio.h>
+
+            int popcount_4(int x) {
+                int count;
+                for (count=0; x; count++)
+                    x &= x-1;
+                return count;
+            }
+
+            int main(int argc, char **argv)
+            {
+                int i = 0;
+
+                scanf("%d", &i);
+                do {
+                    printf("%d has %d '1's.\n", i, popcount_4(i));
+                } while( 1 == scanf("%d", &i) );
+
+                return 0;
+            }
+            ```
+
+        编译运行
+
+        :   ```bash
+            $ gcc main.c -o main.exe
+            $ echo 1 2 3 4 5 8 24 235265 | ./main.exe
+            1 has 1 '1's.
+            2 has 1 '1's.
+            3 has 2 '1's.
+            4 has 1 '1's.
+            5 has 2 '1's.
+            8 has 1 '1's.
+            24 has 2 '1's.
+            235265 has 8 '1's.
+            ```
+    </div>
 
     If we are allowed greater memory usage, we can calculate the Hamming weight
     faster than the above methods. With unlimited memory, we could simply
