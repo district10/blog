@@ -11,7 +11,9 @@ tags:
 CVRS C++ Coding Style Guidelines
 ================================
 
-Official version: <http://cvrs.whu.edu.cn/docs/CVRS-CodingStyleGuide.html>
+老师让我写一个编程规范，让大家参考。当时写在 <http://zybuluo.com>，现在搬运过来。
+
+CVRS 实验室上的版本（旧）：<http://cvrs.whu.edu.cn/docs/CVRS-CodingStyleGuide.html>
 
 零、绪论
 --------
