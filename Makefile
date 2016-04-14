@@ -46,6 +46,8 @@ $(DIR_PUBLISH)/%: %
 	cp $< $@
 
 move: $(PG_BIBS) $(PG_POSTS) $(PG_PAGES) $(PG_DOCS)
+$(DIR_PUBLISH)/post-0084-complex-network-notes.html: $(DIR_POSTS)/post-0084-complex-network-notes.md
+	cp $< $@
 $(DIR_PUBLISH)/%.md: $(DIR_POSTS)/%.md
 	perl cp.pl $< \
 		$(DIR_PUBLISH)/$(<:$(DIR_POSTS)/%.md=%.readinglist) \

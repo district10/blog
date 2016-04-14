@@ -63,6 +63,13 @@ koans.html: koans.md
 		$< \
 		-o $@
 
+# extras
+post-0084-complex-network-notes.html: post-0084-complex-network-notes.md
+	pandoc \
+		$(PANDOC_OPTIONS) \
+		$< \
+		-o $@
+
 # normal ones
 %.html: %.md
 	pandoc \

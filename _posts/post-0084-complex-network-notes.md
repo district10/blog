@@ -11,9 +11,15 @@ tags:
 Complex Network Overall | 复杂网络及其应用
 ==========================================
 
+这是一篇课程小论文，这里的 Markdown 格式生成的不是太好。原 PDF 效果更佳：
+
+  - [小论文 PDF 版本](http://whudoc.qiniudn.com/2016/complex-network-tangzhixiong-2016-01.pdf)
+  - [小论文源码打包](http://whudoc.qiniudn.com/2016/空间分析应用建模-2015282130087-唐志雄.7z)
+
 > LaTeX 模板来自[武汉大学黄正华老师](http://aff.whu.edu.cn/huangzh/)。
 
 注意：PDF 中有动画内容需要用“高级”点的 PDF 阅读器查看（SumatraPDF 不行）。
+
 
 ## 编译说明
 

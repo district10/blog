@@ -23,6 +23,8 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+[关于C++之“复杂” - λ-calculus（惊愕到手了欧耶，GetBlogPostIds.aspx） - C++博客](http://www.cppblog.com/vczh/archive/2010/07/07/119562.aspx)
+
 [准备入坑 C++ 和 UE4，花了两天时间研究了一下，写些大概方向 - Coder For Art](http://coderforart.com/14431468507612.html)
 
 [CLI (Terminal app) - Diff Checker](https://www.diffchecker.com/cli)

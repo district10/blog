@@ -207,3 +207,4 @@ Links | 链签
 #. [Preface | Data Structure and Algorithm notes](http://algorithm.yuanbin.me/zh-hans/index.html)
 #. [Computed Diff - Diff Checker](https://www.diffchecker.com/diff)
 #. [Pretty Diff - The difference tool](http://prettydiff.com/)
+#. [λ-calculus（惊愕到手了欧耶，GetBlogPostIds.aspx） - C++博客](http://www.cppblog.com/vczh/)
