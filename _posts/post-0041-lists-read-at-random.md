@@ -184,7 +184,7 @@ by John Resig. It is currently developed by a team of developers led by Dave
 Methvin. Used by **over 80% of the 10,000 most visited websites**, jQuery is
 the most popular JavaScript library in use today.
 
-（感觉自己弄这个博客的时候居然没用 jQuery，既牛逼，又错过了学习它的机会。）
+（~~感觉自己弄这个博客的时候居然没用 jQuery，既牛逼，又错过了学习它的机会。~~用了，我必须得说，大赞！）
 
 [jQuery]: http://en.wikipedia.org/wiki/Jquery
 
@@ -265,7 +265,8 @@ Try It Yourself, seen from W3C School
 
 [mandatory]
 
-:   * adj. 强制的；托管的；命令的
+:   * `['mændət(ə)rɪ]`
+    * adj. 强制的；托管的；命令的
     * n. 受托者（等于mandatary）
 
 **Mandatory** **Must do**
@@ -435,7 +436,7 @@ example of a camera angle.
 
 ### feat.
 
-Just [featuring][feat]. This is used when there is an invited artist on a track.
+Just [featuring][feat]. This is used when **there is an invited artist** on a track.
 
 It is not restricted to music. It was used on film and show billboards. You
 could also translate this (depending on context, select as many options as
@@ -620,8 +621,8 @@ conspiracy(共谋) theory. On a bad day, a meme is a virus.
 （你不能说 meme 是流言蜚语，因为它是中性词。它更像是地方特色、风俗，roman's way of living。
 有道上的翻译是“文化基因”，很好。）
 
-注意不要和 mime 弄混，那是 mime（`maim`），这是 meme（`meem`，“两个我”）。
-mime 引申出去一个词叫 mimic。MIME 还代表互联网文本格式（比如 `text/javascript`）。
+**注意不要和 mime 弄混，那是 mime（`maim`），这是 meme（`meem`，“两个我”）。**
+mime 引申出去一个词叫 mimic。[MIME](#mime--multipurpose-internet-mail-extensions) 还代表互联网文本格式（比如 `text/javascript`）。
 
 [meme]: http://en.wikipedia.org/wiki/Meme
 
@@ -923,7 +924,7 @@ in theories of grammar. **
 很多黑客喜欢用 "you-want-black-coffee-p" 这种蛋疼的句式来表一般疑问。
 另一面，很多中国人老想着用流畅的语法来表达自己，其实这中 hyphen seperated 形容词
 也很常用。很切可以说得很长。而且这种句子用英文说起来很有意思，比如：
-我是一个 天天吃-大盘鸡-从不厌烦 的人。
+我是一个「天天吃-大盘鸡-从不厌烦」的人。
 
 [predicate]: http://en.wikipedia.org/wiki/Predicate_(grammar)
 
@@ -1064,6 +1065,8 @@ glyphs along with their Unicode code points and HTML entities.
 * Quotation marks in electronic documents
     + smart quotes `(“…”)`[^smart-page]
     + dumb quotes `("…")`
+
+你能看出来上面那句话和 HAL 来自哪儿吗？
 
 see also [Quotation Mark][quotation-mark]
 
@@ -1246,6 +1249,8 @@ Narcissus is the origin of the term **narcissism, a fixation with oneself**.
 现还有 ACGN，为在 ACG（英文 Animation、Comic、Game 的基础上增加了 N（Novel 小说，泛指文字读物（轻小说）），
 此词汇主要流行于华人区域。详见 ACGN。
 
+外，BGM 是背景音乐（background music），还有 OP、ED 你也应该知道。
+
 [acg]: http://baike.baidu.com/subview/17740/8092663.htm
 
 ### Emoji
@@ -1328,6 +1333,16 @@ ONE
 TWO THREE
 ```
 
+perl:
+
+:   ```perl
+    my $var = <<EOF;
+    ...
+    ...
+    ...
+    EOF
+    ```
+
 [here-document]: http://en.wikipedia.org/wiki/Here_document
 
 ### 吃饭睡觉打豆豆
@@ -1365,7 +1380,9 @@ particularly popular among adolescents and children, and is sometimes used as a
 forfeit when gambling.
 
 The game has existed for centuries, with at least one variant, Questions and
-Commands, being attested as early as 1712
+Commands, being attested as early as 1712.
+
+在鸟人里也看到了这个词。
 
 [truth-or-dare]: http://en.wikipedia.org/wiki/Truth_or_Dare%3F
 
@@ -1770,6 +1787,8 @@ redistribution and modification of the software under any terms – licensees ar
 encouraged to "do what the fuck [they] want to". The license was approved as a
 GPL-compatible free software license by the Free Software Foundation.
 
+比 MIT 还大度的样子……
+
 [wtfpl]: http://en.wikipedia.org/wiki/WTFPL
 
 ### 弥赛亚
@@ -1835,6 +1854,10 @@ returning nested functions as results from higher-order functions. Many modern
 garbage-collected imperative languages support closures, such as Smalltalk (the
 first object-oriented language to do so), OCaml, Python, Perl, Ruby,
 JavaScript, Go, Dart, Scala, Swift, C#, Rust, Julia and C++ since C++11.
+
+话说因为 JavaScript（ES6 之前） 没有 block level 的作用域，
+大家都用 Immediately Invoked Function Expression (IIFE)
+来保护（隔离）私有变量。
 
 [closure]: https://en.wikipedia.org/wiki/Closure_(computer_programming)
 
@@ -2034,7 +2057,7 @@ See [Creative Commons License][ccl] for more.
 其实，这种说法本身就是五毛式的回答。“网络评论员”一指从定义的外延来看更广，
 不仅可以指五毛，还可以指美分，当然还可以指受雇于个别公司的其它评论员。
 
-[公知][gongzhi]从字面可认为是公共知识分子（The Public Intellectual）的缩略词，
+[公知][gongzhi] 从字面可认为是公共知识分子（The Public Intellectual）的缩略词，
 精确定义是，具有学术背景和专业素质的知识者，进言社会并参与公共事务的行动者，
 具有批判精神和道义担当的理想者。原意是正面的。在中国社会的一般认知中，
 “公知”一词更是对那些所谓公正博学，**自视甚高，以天下评判为已任，揭露各方面问题，
@@ -2218,6 +2241,8 @@ Los Angeles by Blum & Poe and in London by Stephen Friedman Gallery.
 
 今日他的作品已被许多博物馆收藏，如纽约现代艺术博物馆和洛杉矶当代艺术博物馆等。
 
+陈冠希似乎收藏了很多 Yoshitomo 的画，在他的纪录片里提到了。
+
 [yoshitomo-nara]: http://en.wikipedia.org/wiki/Yoshitomo_Nara
 [slash-with-a-knife]: http://gnat-tang-shared-image.qiniudn.com/pictures/yoshitomo-nara.png
 
@@ -2236,6 +2261,10 @@ Los Angeles by Blum & Poe and in London by Stephen Friedman Gallery.
 主要的学术成就有以下几个：**全球化**、**M型社会**、**3C模型**（战略三角）、**最
 少世代 (Generation of Minimum)**、**维他命十国**（VITAMIN，指越南、印尼、泰国、
 土耳其、墨西哥、伊朗、伊拉克、尼日利亚、阿根廷和南非这十个新型经济体的开头字母）。
+
+以前看过这个人写自己的经历，说道自己申请大学的时候吹牛逼……（要是他不是日本人，而是印度人，
+吹牛逼……上天别人也不鸟你。这好像在说，一个人的性质（性格？）只有放到一个特殊的背景下，才能
+创造自己独特的命运。）
 
 [kenichi-ohmae]: http://zh.wikipedia.org/wiki/%E5%A4%A7%E5%89%8D%E7%A0%94%E4%B8%80
 [kenichi-ohmae-pic]: http://gnat-tang-shared-image.qiniudn.com/pictures/Kenichi-Ohmae.jpg
@@ -2286,6 +2315,8 @@ Owing to the breadth of her accomplishments and her naval rank, she is
 sometimes referred to as "**Amazing Grace**". The U.S. Navy destroyer USS
 Hopper (DDG-70) is named for her, as was the Cray XE6 "Hopper" supercomputer at
 NERSC.
+
+她定义了“bug”。
 
 [grace-hopper]: http://en.wikipedia.org/wiki/Grace_Hopper
 [grace-hopper-pic]: http://gnat-tang-shared-image.qiniudn.com/pictures/grace-hopper.jpg
@@ -2381,6 +2412,8 @@ and vi editors and **csh**.
     and grad student Joy's stuff worked. So they had this big meeting and this grad
     student in a T-shirt shows up, and they said, "How did you do this?" And Bill
     said, "**It's very simple — you read the protocol and write the code.**"
+
+如此的牛逼，vi 也是他写的……Sam 好像也是。
 
 keywords: SUN, UNIX, TCP/IP, Berkeley, vi, csh,
 
@@ -2611,6 +2644,8 @@ them with EWD, his initials, as a prefix.
 
 与 D. E. Knuth 并称为我们这个时代最伟大的计算机科学家的人。
 与癌症抗争多年，于 2002 年 8 月 6 日在荷兰 Nuenen 自己的家中去世，享年 72 岁。
+
+他老妈似乎是个数学家。
 
 [edsger-wybe-dijkstra]: http://en.wikipedia.org/wiki/Edsger_Wybe_Dijkstra
 [edsger-wybe-dijkstra-baidu]: http://baike.baidu.com/view/277610.htm?fromtitle=Edsger+Wybe+Dijkstra&fromid=9875586&type=syn
@@ -3650,8 +3685,11 @@ and projective map.
 英文的同态 （homomorphism）来自希腊语: ὁμός (homos)表示"相同"而 μορφή (morphe)表示"形态"。
 注意相似的词根 ὅμοιος (homoios)表示"相似"出现在另一个数学概念同胚的英文(homeomorphism)中。
 
-注：在 Peter D. Lax 的 [线性代数][algebra-lax] 中，对 Isomorphism 定义大致是说，
-两个线性空间（Linear Space）如果在操作上不可区分（Indistinguishable by means of operations available in linear spaces），则称他们为 Isomorphism。这个定义就很容易理解。
+注：在 Peter D. Lax 的 [线性代数][algebra-lax] 中，对 Isomorphism 定义大致是说
+，两个线性空间（Linear Space）如果在操作上不可区分（Indistinguishable by means
+of operations available in linear spaces），则称他们为 Isomorphism。这个定义就
+很容易理解。这也就是说，“同态”是相对操作而言的。（我们都是中国人，这个意义上我
+们“同”；但你是女生我是男生，这个意义上我们“不同”。）
 
 [isomorphism-en]: http://en.wikipedia.org/wiki/Isomorphism
 [isomorphism-zh]: http://zh.wikipedia.org/wiki/%E5%90%8C%E6%80%81
