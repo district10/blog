@@ -118,8 +118,6 @@ Search:[^koan]<br>
 * 2006-10-17 [Pandoc User's Guide](post-0001-pandoc-readme.html)
 </div>
 
-good
-
 ---
 
 <small style="color:lightgray;">

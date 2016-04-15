@@ -6,7 +6,6 @@ keywords:
 tags:
     - koans
 jsfile:
-    - moment.min.js
 after-before:
 before-after:
 ...
@@ -14,12 +13,55 @@ before-after:
 Koans | 呓语^[这是我的微(tu)博(cao)。呓语呓语，神志不清；若有冒犯，敬请原谅。]
 ============
 
-## `1460713116`{.txz-timestamp} 关于面试
+## `1460713116`{.tzx-timestamp} 关于面试
 
 关于 Mutex 那个……好像应该在使用的时候上锁，而不是锁在单例模式函数的内部……
 一时疏忽==
 
 外，考官不是 Emacs 粉把，我黑了一下下  Emacs（当年我也有 dotfiles，也有自己的 dot emacs 配置的）。
+
+还问我代码大概写了多少行，我说不知道。“不好算。”“估计一个。”
+“额，最近的一个工程，一个人在写，大概有 8 个模块，几乎都是自己写的。每个模块下面比如说有 5 个文件，`.h`，`.cpp`
+什么的，平均下来比如一个文件 1000 行，这样算的话，这个工程我写了 8 万行代码。”
+
+后来我去数了一下：
+
+```tzx-bigquote
+Administrator@lennovo-PC MINGW64 /d/tzx/btSystem/src (master)  # 这个文件夹是源码
+$ cat **/* | wc -l
+cat: QtPropertyBrowser/images: Is a directory
+67741
+
+Administrator@lennovo-PC MINGW64 /d/tzx/btSystem/demo (master) # demo，就有 main.cpp 所以行数很少
+$ cat **/* | wc -l
+614
+```
+
+看来我估计得高了。平均一个 `.h`，`.pp` 应该不到 1000 行。其实只有少数几个模块有 1000 行的代码亮。
+
+哦，刚才统计多了，`src` 下面有个文件夹本来应该放到 `3rdParty` 但我没有，多引入了 2 万行代码的样子。
+
+```tzx-bigquote
+Administrator@lennovo-PC MINGW64 /d/tzx/btSystem/src/QtPropertyBrowser (master)
+$ cat * | wc -l
+cat: images: Is a directory
+18424
+```
+
+这么说，这个工程我大概自己写的有 3 到 4 万行。
+
+可能我的笔记要多得多把……这个确实有 8 万行。而且还有一些原来散落在简书、作业部落，GitHub 的笔记没有整理好
+加进来。目测笔记 10 万行，还是有的。
+
+```tzx-bigquote
+Administrator@lennovo-PC MINGW64 /d/tzx/git/blog (master)
+$ cat _posts/* | wc -l
+54942
+
+Administrator@lennovo-PC MINGW64 /d/tzx/git/blog (master)
+$ cat _pages/* | wc -l
+30202
+```
 
 ## `1460610950`{.tzx-timestamp} 中文操作系统
 
