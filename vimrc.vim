@@ -1,3 +1,4 @@
+" gvim ~/.vimrc, add 'source path/to/this/file'
 set nocompatible
 
 source $VIMRUNTIME/vimrc_example.vim

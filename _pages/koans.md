@@ -65,6 +65,41 @@ $ cat _pages/* | wc -l
 30202
 ```
 
+`1460780624`{.tzx-timestamp}, 下午还要面试，看了下之前的代码。发现昨天面试的时
+候，好像把 Bigendian 说反了。Bigendian 里地址 0 就是高位：
+
+```cpp
+quint16 parse2BytesToUInt16( const QByteArray &ba, quint16 cursor, bool doit /* = true */ )
+{
+    if ( cursor + 1 >= ba.length() ) {
+        Logger::log( BCD::META::META, "Error parse 2 bytes to Uint16" );
+        return 0;
+    }
+
+    if ( !doit ) {
+        return 0;
+    }
+
+    quint16 num = 0;
+    num  = (quint16)(ba.at(cursor + 0)) << 8; // MSB first
+    num |= (quint8)ba.at(cursor + 1);
+    return num;
+}
+```
+
+The UTF-8 representation of the BOM is the byte sequence `0xEF,0xBB,0xBF`.
+
+话说面试的时候自己说的是“记不太清楚，好像是 `FE FF`”，看了一下自己的笔记，来自：
+
+> Byte Order Mark 在 UTF-16 Big Endian 是 “FE FF”，Little Endian 是 “FF FE”。
+> 其中Mac 系統主要是 Big Endian, PC 系統則是使用 Little Endian。
+>
+> UTF-8 由於本身特性，不管 Big Endian 或 Little Endian，其 BOM 一律為 “EF BB
+> BF”。
+
+我果然记忆力捉急哈哈。
+
+
 ## `1460610950`{.tzx-timestamp} 中文操作系统
 
 以前我是绝对拒绝使用中文操作系统的，后来用得多了感觉都一样。后来我装 Linux 都直
@@ -88,7 +123,7 @@ $ cat _pages/* | wc -l
 
 ## `1460509545`{.tzx-timestamp} VS 的搜索
 
-如果一个变量不存在，搜索会卡死……卡死！简直比 `make -j` 还丧心病狂。
+如果一个变量不存在（不小心敲错），搜索会卡死……卡死！简直比 `make -j` 还丧心病狂。
 
 ## `1460442429`{.tzx-timestamp} 杂七杂八的碍事玩意儿
 
