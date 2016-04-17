@@ -23,97 +23,235 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
-那么，程序的 bug 算是“重大过失”吗？这很难说。一个系统里有没有隐藏的 bug，是没法从理论上证明的。就算是测试再彻底，也会有测不到的 bug 流出来。所以在法律上，通常不会把所有因为 bug 导致的损失都归罪给程序开发商。否则的话，世界上最大的 bug 生产商——微软，早就赔得连内裤都不剩了。
+- `http://github.com/district10/blog/commits/master.atom`
+- `https://github.com/district10.atom`
+- George R.R. Martin on Syrian (`['sɪrɪən]`, 叙利亚) refugees: 'Let them in'
+
+[解释一下，天价房都是谁在买](https://www.douban.com/group/topic/84078323/)
+
+:   万达都不卖房子了，你告诉我楼市还会暴涨？搞siao。不过是回光返照最后捞一笔，
+    看谁接到击鼓传花的最后一棒罢了
+
+[王小波的计算机水平到底有多好？ - 知乎](https://www.zhihu.com/question/20964366)
+
+:   那么，程序的 bug 算是“重大过失”吗？这很难说。一个系统里有没有隐藏的 bug，是
+    没法从理论上证明的。就算是测试再彻底，也会有测不到的 bug 流出来。所以在法律
+    上，通常不会把所有因为 bug 导致的损失都归罪给程序开发商。否则的话，世界上最
+    大的 bug生产商——微软，早就赔得连内裤都不剩了。
 
 [关于C++之“复杂” - λ-calculus（惊愕到手了欧耶，GetBlogPostIds.aspx） - C++博客](http://www.cppblog.com/vczh/archive/2010/07/07/119562.aspx)
 
+:   虽然我个人觉得模板元编程其实才是C++里面最复杂的地方，但是鉴于模板元编程实际
+    的用处不大，我想应该只有少数几个人会使用它。但是这样很多人还是C++复杂，那我
+    就不知道究竟在指什么了。
+
+    （不过从我自己的角度出发，我认为凡是编译器不能检查的东西（譬如可变参数，指
+    针类型强制转换），都远比能检查的东西（模板元编程）要复杂，因为人很容易犯错
+    ，机器不会。）
+
+
 [准备入坑 C++ 和 UE4，花了两天时间研究了一下，写些大概方向 - Coder For Art](http://coderforart.com/14431468507612.html)
 
-[CLI (Terminal app) - Diff Checker](https://www.diffchecker.com/cli)
+:   学习 C++，我认为只要参考皓子哥的[如何学好 C++ 语言](http://coolshell.cn/articles/4119.html)
+    就可以了。可以看到开始学的建议的书是《C++ Primer》和《C++程序设计语言》。两
+    本书我其实都了解了一下，我觉得《C++ Primer》比较合适我。然后了解了一下这本
+    书的中文翻译的作者，普遍觉得第三版（潘爱民翻译）比较不错，然后就决定用这一
+    版了。唯一的问题是第三过于古老，所以是没有 C++ 11 的新特性的介绍的。然而这
+    关系不大，再找一本书看即可。调查得知，Wikipedia 的 C++ 11 词条已经差不多可
+    以了，网址为：https://zh.wikipedia.org/wiki/C%2B%2B11。如果还要深入一点，也
+    找到一本：《深入理解C++11:C++11新特性解析与应用》。另外皓子哥也写了一篇 C++
+    11 的博文，值得一读：http://coolshell.cn/articles/5265.html
 
-[目录 | 兮软](http://dev.gameres.com/Program/Other/bcxszyforgameres/bcxszy/xisofts.sinaapp.com/@p=5.htm)
+    在找资料的过程中，发现一本好书，然后竟然是公开的，大讚作者！！也在这里记一
+    下，书名为：《C++并发编程》，作者：陈晓伟，gitbook 地址：
+    <https://www.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action/details>
+    。
 
-宁欺白须公，莫欺少年穷。
+    以上的东西搞完后，就试试做一个简单的游戏看看能否做出来。在过程中如果有任何
+    知识问题随时补。
+
+[编程概论 | 兮软](http://dev.gameres.com/Program/Other/bcxszyforgameres/bcxszy/xisofts.sinaapp.com/@p=5.htm)
 
 [咖啡機的過去、現在與未來 - 文章](http://weibo.com/p/1001603696866012350162)
 
-有个从湖南来的女生，她的父母都在广东打工，工厂生产塑料花。来上大学前，她去看父母，也做了一段短期工。只读过小学的母亲总是说她做的是“美国花”，仔细问过，女生才知道母亲一直都把“玫瑰花”读成“美国花”。母亲不知道玫瑰花是什么样子，她知道每天做的就是“美国花”。
+:   有个从湖南来的女生，她的父母都在广东打工，工厂生产塑料花。来上大学前，她去
+    看父母，也做了一段短期工。只读过小学的母亲总是说她做的是“美国花”，仔细问过
+    ，女生才知道母亲一直都把“玫瑰花”读成“美国花”。母亲不知道玫瑰花是什么样子，
+    她知道每天做的就是“美国花”。
 
-其次，每个数字都是一个单音节，所以数字的语音更短。这样您只花两秒钟时间，就能记住一个九位数（适合人脑短期记忆的空间）；而大多数说英语的人只能记住七位数，都是“seven”（七）这样的音节惹的祸。
+---
 
-The significance of Mahjong, a Chinese gambling game, can be compared to the significance of football, baseball, and basketball combined to Americans.
+其次，每个数字都是一个单音节，所以数字的语音更短。这样您只花两秒钟时间，就能记
+住一个九位数（适合人脑短期记忆的空间）；而大多数说英语的人只能记住七位数，都是“
+seven”（七）这样的音节惹的祸。
+
+The significance of Mahjong, a Chinese gambling game, can be compared to the
+significance of football, baseball, and basketball combined to Americans.
 
 麻将在中国的地位，就相当于橄榄球、棒球、篮球在美国的地位加在一块儿。
 
-Chinese perception of the deities is by and large shaped by a classic Chinese novel Journey to the West. The book was written in 16th century, strongly rooted in Chinese folklore and Buddhist and Taoist theology. Here is a imaginary scenario of the heaven.
+**Chinese perception of the deities** is by and large shaped by a classic Chinese
+novel Journey to the West. The book was written in 16th century, strongly
+**rooted in Chinese folklore and Buddhist and Taoist theology**. Here is a
+**imaginary scenario of the heaven**.
 
-中国人对于神灵的认知很大部分来源于《西游记》。《西游记》创作于16世纪，深深扎根...
+At the margins, women are a civilizing influence on men - men with a mild
+propensity to join a gang or engage in other antisocial behavior but find
+themselves a wife **refocus their attention** to providing for a family.
 
-At the margins, women are a civilizing influence on men - men with a mild propensity to join a gang or engage in other antisocial behavior but find themselves a wife refocus their attention to providing for a family.
-从某种程度上说，女性能使男性变得更加有素养。因为一旦结婚，男人的性情会变得柔和，加入帮派团伙或者参与反社会的行动的几率会下降，并且会更关注他们的妻子和家庭。
-Abse...
+从某种程度上说，女性能使男性变得更加有素养。因为一旦结婚，男人的性情会变得柔和
+，加入帮派团伙或者参与反社会的行动的几率会下降，并且会更关注他们的妻子和家庭。
 
-People often asked me what people eat in America.  Once, a man thinking of the most exotic staple food he could imagine, asked, "What do you eat in your country?  You eat rice, don't you?"  To him, Chinese eat wheat and other grains.  Rice is something foreign.
+People often asked me what people eat in America. Once, a man thinking of the
+most **exotic staple (`['stepl]`, 纤维) food he could imagine**, asked, "What
+do you eat in your country?  **You eat rice, don't you?**" To him, Chinese eat
+wheat and other grains. Rice is something foreign.
 
-经常有人问我，美国人吃什么。一次，一个人跟我说了他能想到的最有外国特色的主食...
+1984 年，我坐了一列烧煤的蒸汽火车去北京。我下了车，走到站台上，看到有一小群人站
+在自动扶梯底下。我以为出了什么事，就挤到人群最前面去一探究竟。后来才发现人们在
+盯着自动扶梯从地下一阶一阶滚出来，想确定坐上去安全不安全。一个年轻人一下子跳上
+四个台阶，因为直到第四个台阶才变成正常的高度，然后所有人都“啊——”一声惊叹。后来
+一个年纪比较大的人，想要迈上去，大家都一脸惊讶。我决定为公众做点贡献，于是很轻
+松地从那个老太太边走过，踏上了最下面的一层台阶。大家“哦——”地恍然大悟，然后跟着
+我一起上了自动扶梯。那可能使他们第一次见到自动扶梯，那也可能是中国第一个自动扶
+梯。而30年后，现在的中国人坐上了动车，用...
 
-1984年，我坐了一列烧煤的蒸汽火车去北京。我下了车，走到站台上，看到有一小群人站在自动扶梯底下。我以为出了什么事，就挤到人群最前面去一探究竟。后来才发现人们在盯着自动扶梯从地下一阶一阶滚出来，想确定坐上去安全不安全。一个年轻人一下子跳上四个台阶，因为直到第四个台阶才变成正常的高度，然后所有人都“啊——”一声惊叹。后来一个年纪比较大的人，想要迈上去，大家都一脸惊讶。我决定为公众做点贡献，于是很轻松地从那个老太太边走过，踏上了最下面的一层台阶。大家“哦——”地恍然大悟，然后跟着我一起上了自动扶梯。那可能使他们第一次见到自动扶梯，那也可能是中国第一个自动扶梯。而30年后，现在的中国人坐上了动车，用...
+Just about everyone who lives in China knows this, but it's worth mentioning
+anyway: all of China operates on the same time zone. This means that when it's
+9 o'clock in Guangzhou, it's 9 o'clock- and likely still dark- 2,600 miles to
+the west in Urumqi. **This little quirk**, installed in a quixotic (`[kwɪk'sɒtɪ
+k]`, 唐吉诃德式的；狂想家的；愚侠的) at...
 
+<div class="tzx-drawer" shy>
+[Don Quixote - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Don_Quixote)
 
-Just about everyone who lives in China knows this, but it's worth mentioning anyway: all of China operates on the same time zone. This means that when it's 9 o'clock in Guangzhou, it's 9 o'clock- and likely still dark- 2,600 miles to the west in Urumqi. This little quirk, installed in a quixotic at...
+:   Don Quixote (`/ˌdɒn ˈkwɪksət/` or `/ˌdɒn kiːˈhoʊtiː/`; Spanish: `[doŋ kiˈxote]`,
+    formerly `[doŋ kiˈʃote]`), fully titled The Ingenious Gentleman Don Quixote
+    of La Mancha (Spanish: El ingenioso hidalgo don Quijote de la Mancha), is a
+    Spanish novel by Miguel de Cervantes Saavedra. Published in two volumes, in
+    1605 and 1615, Don Quixote is considered one of the most influential works
+    of literature from the Spanish Golden Age and the entire Spanish literary
+    canon. As a founding work of modern Western literature and one of the
+    earliest canonical novels, it regularly appears high on lists of the
+    greatest works of fiction ever published, such as the Bokklubben World
+    Library collection that cites Don Quixote as authors' choice for the "best
+    literary work ever written".
 
-Every Chinese person is officially classified by one of the country's 56 recognized nationalities, even those of mixed blood.
+    《唐·吉诃德》（中文读音： **táng jí hē dé** 又译作《堂吉诃德》《堂·吉诃德》
+    等）是西班牙作家塞万提斯于1605年和1615年分两部分岀版的反骑士小说。故事发生
+    时，骑士早已绝迹一个多世纪，但主角阿隆索·吉哈诺（唐·吉诃德原名）却因为沉迷
+    于骑士小说，时常幻想自己是个中世纪骑士，进而自封为“唐·吉诃德·德·拉曼恰”（德
+    ·拉曼恰地区的守护者），拉着邻居桑丘·潘沙做自己的仆人，“行侠仗义”、游走天下
+    ，作出了种种与时代相悖、令人匪夷所思的行径，结果四处碰壁。但最终从梦幻中苏
+    醒过来。回到家乡后死去。文学评论家都称《唐·吉诃德》是西方文学史上的第一部现
+    代小说，也是世界文学的瑰宝之一。
+</div>
+
+Every Chinese person is officially classified by one of the country's 56
+recognized nationalities, even those of mixed blood.
 
 每个中国人都划分为56个民族中的一族，哪怕是混血儿。
 
-I chuckled when people talk about Chinese value as if it's some unmovable cornerstone of Chinese society or some such none existing ideological concept. Something we can anchor ourselves in this ever changing world. Something that lifted us up on top of the rest of our ignorant fellow countrymen so ...
+I chuckled when people talk about Chinese value as if it's some unmovable
+cornerstone of Chinese society or some such none existing ideological concept.
+Something we can anchor ourselves in this ever changing world. Something that
+lifted us up on top of the rest of our ignorant fellow countrymen so ...
 
-有时候，一些人嘴上的中国价值观，要么是什么不可动摇的基石一般，支撑着中国社会，要么就是什么虚无缥缈的意识形态。一听他们这么说，我就忍不住发笑。好像有了价值观，我们就能高人一等，超过那些无知的同胞，可以站在道德制高点上，告诉别人“你丢了传统价值观！”
+有时候，一些人嘴上的中国价值观，要么是什么不可动摇的基石一般，支撑着中国社会，
+要么就是什么虚无缥缈的意识形态。一听他们这么说，我就忍不住发笑。好像有了价值观
+，我们就能高人一等，超过那些无知的同胞，可以站在道德制高点上，告诉别人“你丢了传
+统价值观！”
 
-Because all characters are monosyllabic, students can memorize these elements like a poem. It is  pretty easy to distinguish metallic elements from non-metallic elements, because all the metallic elements have the radical of "釒or 钅" (gold). It's also easy to spot the gas elements, as all of them hav...
+Because all characters are monosyllabic, students can memorize these elements
+like a poem. It is  pretty easy to distinguish metallic elements from
+non-metallic elements, because all the metallic elements have the radical of "
+釒or 钅" (gold). It's also easy to spot the gas elements, as all of them hav...
 
-In fact, Chinese can be very convenient in the entire chemistry nomenclature. In organic chemistry, for instance, there is a ordinal sequence "甲乙丙丁戊己庚辛壬癸" that is used in the nomenclature, indicating the number of carbon atoms from one to ten in a molecule. Those with more than ten carbon atoms woul...
+In fact, Chinese can be very convenient in the entire chemistry nomenclature.
+In organic chemistry, for instance, there is a ordinal sequence "甲乙丙丁戊己庚
+辛壬癸" that is used in the nomenclature, indicating the number of carbon atoms
+from one to ten in a molecule. Those with more than ten carbon atoms woul...
 
-甲烷(methane) CH4 literal: one + alkane
-乙烯(ethene) C2H4 two + alkene
-丙炔(propyne) C3H4 three + alkyne
-丁醛(butyraldehyde) C4H8O four + aldehyde
-戊酸(valeric acid) C5H10O2 five + acid
-己酮(hexanone) C6H12O six + alkone
-乙酸乙酯 (ethyl acetate) CH3CH2COOCH3 two acid two ester
-十二烷 (dihexyl) C12H26 twelve + alkane
+  - 甲烷(methane) CH4 literal: one + alkane
+  - 乙烯(ethene) C2H4 two + alkene
+  - 丙炔(propyne) C3H4 three + alkyne
+  - 丁醛(butyraldehyde) C4H8O four + aldehyde
+  - 戊酸(valeric acid) C5H10O2 five + acid
+  - 己酮(hexanone) C6H12O six + alkone
+  - 乙酸乙酯 (ethyl acetate) CH3CH2COOCH3 two acid two ester
+  - 十二烷 (dihexyl) C12H26 twelve + alkane
 
-其实，整套化学的系统命名法，用汉语都非常方便。比如有机化学的命名法，就有一个序数的列，“甲乙丙丁戊己庚辛壬癸”，表示一个分子里面有1-10个碳原子。要是超过10个碳原子，就直接说数字 。
+其实，整套化学的系统命名法，用汉语都非常方便。比如有机化学的命名法，就有一个序
+数的列，“甲乙丙丁戊己庚辛壬癸”，表示一个分子里面有1-10个碳原子。要是超过10个碳
+原子，就直接说数字。
 
 Moreoever, medical terms in Chinese are far less terrifying than those in English. e.g.:
 
-妇科医生 gynecologist; women science doctor
-皮肤科医生 dermatologist; skin science doctor
-产科医生 obstetrician; pregnancy science doctor
-内出血 entorrhagia; Inside bleeding
-胃穿孔 gastric perforation; stomach pierce hole
-心脏导管插入 cardiac catheterization; heart catheter
-半舌切割术 hemiglossectomy; half tougue dissection
-肝硬化 cirrhosis; liver hardening
-贫血 Anemia; poor in blood
-手术刀 scalple; surgery blade
-而且，汉语的医学术语远不如英语那么可怕。比如：
-妇科医生 gynecologist; 妇女+科+医生
-皮肤科医生 dermatologist; 皮肤+科+医生
+  - 妇科医生 gynecologist; women science doctor
+  - 皮肤科医生 dermatologist; skin science doctor
+  - 产科医生 obstetrician; pregnancy science doctor
+  - 内出血 entorrhagia; Inside bleeding
+  - 胃穿孔 gastric perforation; stomach pierce hole
+  - 心脏导管插入 cardiac catheterization; heart catheter
+  - 半舌切割术 hemiglossectomy; half tougue dissection
+  - 肝硬化 cirrhosis; liver hardening
+  - 贫血 Anemia; poor in blood
+  - 手术刀 scalple; surgery blade
+  - 而且，汉语的医学术语远不如英语那么可怕。比如：
+  - 妇科医生 gynecologist; 妇女+科+医生
+  - 皮肤科医生 dermatologist; 皮肤+科+医生
 
-还有很多例子。汉语的医学术语一般是复合词，英语也是复合词，但很多英语术语，都是从拉丁语或者古希腊语借来的。而汉语的汉字本身就能够显示意义，所以哪怕从来没有上过医学专业课，也至少能猜到一部分意思。
+还有很多例子。汉语的医学术语一般是复合词，英语也是复合词，但很多英语术语，都是
+从拉丁语或者古希腊语借来的。而汉语的汉字本身就能够显示意义，所以哪怕从来没有上
+过医学专业课，也至少能猜到一部分意思。
 
-it's easier to remember words as they "make sense" in simpler ways than English. For example, refrigerator is 冰箱 , which is ice + box/chest, computer is 电脑 (electricity + brain) parking lot is 停车场 (stop + car + place), airport is 飞机场 (fly + machine + place), etc. Yes, English has compound words as ...
+it's easier to remember words as they "make sense" in simpler ways than
+English. For example, refrigerator is 冰箱 , which is ice + box/chest, computer
+is 电脑 (electricity + brain) parking lot is 停车场 (stop + car + place),
+airport is 飞机场 (fly + machine + place), etc. Yes, English has compound words
+as ...
 
-而且，人们日常说话的时候，声调发得并不是很清楚。这就让很多词的发音非常近似，有时候甚至完全一样。而且，有些音节的汉字非常多（比如“ji”、“shi”、“jian”、“jiao”等音节的各个汉字）。还有些辅音彼此很像，比如zh和j，x和sh，q和ch；这些音只要发得清楚，是很好辨认的，可是一般人平时并不这么说话，特别是考虑到各地不同口音的情况下。就连汉语母语者，也不容易听懂外省人的口音；我这儿说的还不是各种方言，而是标准国语（普通话）的其他形式的发音。 正因如此，汉字尽管非常复杂，但阅读汉语，其实比听汉语来得容易。
+而且，人们日常说话的时候，声调发得并不是很清楚。这就让很多词的发音非常近似，有
+时候甚至完全一样。而且，有些音节的汉字非常多（比如“ji”、“shi”、“jian”、“jiao”等
+音节的各个汉字）。还有些辅音彼此很像，比如zh和j，x和sh，q和ch；这些音只要发得清
+楚，是很好辨认的，可是一般人平时并不这么说话，特别是考虑到各地不同口音的情况下
+。就连汉语母语者，也不容易听懂外省人的口音；我这儿说的还不是各种方言，而是标准
+国语（普通话）的其他形式的发音。 正因如此，汉字尽管非常复杂，但阅读汉语，其实比
+听汉语来得容易。
 
-Firstly, the structure of "two-digit numbers" is easier. If you know the numbers 1-9 and the number 10, then you can just say the Mandarin for "ten one" and it means eleven. The Mandarin for "twelve" is "ten two" and so on. So to count to 19 you only need to learn 11 sounds.... Compare English with ...
+Firstly, the structure of "two-digit numbers" is easier. If you know the
+numbers 1-9 and the number 10, then you can just say the Mandarin for "ten one"
+and it means eleven. The Mandarin for "twelve" is "ten two" and so on. So to
+count to 19 you only need to learn 11 sounds.... Compare English with ...
 
 [c++ - windows.h and MFC - Stack Overflow](http://stackoverflow.com/questions/5026799/windows-h-and-mfc)
 
-Because in MFC you are not supposed to use it directly. AFAIR you should include afx.h instead, which in turn indirectly includes windows.h the proper way.
+:   Because in MFC you are not supposed to use it directly. AFAIR you should
+    include `afx.h` instead, which in turn indirectly includes `windows.h` the
+    proper way.
 
 [“平等之所以很难做到，就是因为人人都只想与比自己更高层的人共享”](https://www.douban.com/note/550640902/)
+
+:   今天的社会更多元更复杂，人被切割成了数种不同的身份，有着数个不同的屁股。我
+    们的数个屁股上,顶着数个自相矛盾的脑袋：一个平时争取自由平等的公知，却并不理
+    解女性们为啥要争取平等自由；一个为女性权益大声疾呼的女权主义者，并不认为农
+    民工应该在城市中和她们享受相同权利；一个饱受歧视的农民工，可以歧视另一个更
+    饱受歧视的河南籍农民工，要把他赶出工棚。“平等之所以很难做到，就是因为人人都
+    只想与比自己更高层的人共享，而不愿意与比自己更低层的人共享”，很少有人例外。
+    而在不同屁股见切换时思想和态度的转换，都常是下意识的，不自知的，自己很难意
+    识到其中的落差。若有兴趣，我们每个人都可以梳理一下自己的屁股，你可能惊讶地
+    发现，一心只想把事情做好的你，却在无所不在的不平等中，扮演着某种恶人。
+
+    肤色平权也经历了这样的过程：也许有人在17世纪就从道德上就看出了这种压迫的不
+    合理，但真正做到较大规模的平等，得到黑人群体逐渐融入主流社会，逐渐对社会造
+    成更大影响时才行。说到底，平权始终是个政治问题，政治问题的核心就是力量对比。
+    在锥处囊中之前，弱者要干些什么呢？无他，积蓄力量而已。
+
+    我一直很反对一种“强人至上”的伪女权，就是：你现在过得不够好，只是因为你现在
+    不够努力，不是因为整个制度有问题，所以来来来，姑娘们，“活的像个男人”，男人
+    能扛五十斤大米，你就要扛一百斤，扛不动一百斤你啥都别抱怨。这种伪女权的核心
+    也是种受害人有罪论：受害人不够努力。事实上在任何社会，都会给弱者中的强者留
+    上升空间，金字塔顶尖的既得利益者，代表不了整个女性群体，整体变化更重要。
 
 ```
 $ pwd
@@ -129,22 +267,27 @@ total 3.0K
 自然而然就发生了，虽然实际上很悲伤。
 
 技术 研究 开发（technology research development）
-腾讯是技术群面
 
 [Git分支管理](https://coding.net/help/doc/git/git-branch.html)
 
 [Facebook工程发布技术的幕后故事 - 行业应用 - ITeye资讯](http://www.iteye.com/news/31450)
 
-Facebook源代码大多是用PHP编程语言编写。PHP是一门快速开发语言，但是相比于底层语言和部分高级语言，它的执行速度是个缺陷。为了改进基于PHP的架构的扩展性，Facebook开发了一个特殊的优化器，“HipHop”。
+:   Facebook源代码大多是用PHP编程语言编写。PHP是一门快速开发语言，但是相比于底
+    层语言和部分高级语言，它的执行速度是个缺陷。为了改进基于PHP的架构的扩展性，
+    Facebook开发了一个特殊的优化器，“HipHop”。
 
-HipHop能将PHP转换为深度优化的C++代码，后者能够编译成执行效率极高的本地二进制码。Facebook于2010年将该项目以开源协议的形式发布，随后公司工程师报告，该项目将Facebook的CPU能耗降低了50%。
+    HipHop能将PHP转换为深度优化的C++代码，后者能够编译成执行效率极高的本地二进
+    制码。Facebook于2010年将该项目以开源协议的形式发布，随后公司工程师报告，该
+    项目将Facebook的CPU能耗降低了50%。
 
 [编程语言 IDE 对比 - 特约稿件 - ITeye精华](http://www.iteye.com/magazines/134-IDE-Comparison#611)
+
+CSS Framework
 
 * [Pure](http://purecss.io/)
 * [Hakim El Hattab](http://hakim.se/)
 
-```yml
+```yaml
 # Keys can also be complex, like multi-line objects
 # We use ? followed by a space to indicate the start of a complex key.
 ? |
@@ -152,7 +295,7 @@ HipHop能将PHP转换为深度优化的C++代码，后者能够编译成执行�
     that has multiple lines
 : and this is its value
 
-# Since YAML is a superset of JSON, you can also write JSON-style maps and
+# Since YAML is a *superset* of JSON, you can also write JSON-style maps and
 # sequences:
 json_map: {"key": "value"}
 json_seq: [3, 2, 1, "takeoff"]
@@ -170,15 +313,33 @@ gif_file: !!binary |
 
 [greatfire/wiki](https://github.com/greatfire/wiki)
 
-bot?...
+:   bot?...
+
+    Yes, bot it is.
 
 [az (Accurate Zhuyin) — 用萌典半自動為漢字標音](https://az.hanzi.co/#%E5%8F%88%E7%94%9C%E5%8F%88%E5%86%B7%E7%9A%84%E5%86%B0%E6%B7%87%E6%B7%8B%E9%A3%8E%E6%A0%BC%E3%80%82/0)
+
+:   又yòu  甜tián  又yòu  冷lěng  的dì  冰bīng  淇qí  淋lín  风fēng  格gé
 
 [karan/Projects-Solutions: Links to others' solutions to Projects (https://github.com/karan/Projects/)](https://github.com/karan/Projects-Solutions)
 
 [毕业论文答辩_百度百科](http://baike.baidu.com/link?url=dSEY8xQsgBmlpw0wUQdeyjUc7443IxvTkvzhQoRxLD3ETmis2zvvPMFxBvKL71QgS_ksWYQAKSgUQliRDrNowq)
 
- The graduation thesis reply
+:   毕业论文答辩是一种有组织、有准备、有计划、有鉴定的比较正规的审查论文的重要
+    形式。为了搞好毕业论文答辩，在举行答辩会前，校方、答辩委员会、答辩者（撰写
+    毕业论文的作者）三方都要作好充分的准备。**在答辩会上，考官要极力找出来在论
+    文中所表现的水平是真是假。而学生不仅要证明自己的论点是对的，而且还要证明老
+    师是错的。**
+
+    ```tzx-bigquote
+    中 文 名    毕业论文答辩
+    外 文 名    The graduation thesis reply
+    对    象    本、硕、博、部分专科（如中侨）
+    主    体    毕业论文答辩
+    时    间    各学校自行安排
+    地    点    由各高校自行决定
+    授予机构    高校学位评定委员会
+    ```
 
 [Preface | Data Structure and Algorithm notes](http://algorithm.yuanbin.me/zh-hans/index.html)
 
@@ -222,39 +383,63 @@ source /path/to/github:district10/blog/vimrc.vim
   - 打开界面, 选中「ControlL to ControlL (+ When you type controlL only, send Escape)」
   - Done.
 
-refs and see also
+[为什么计算机专业的人都喜欢从0开始计数 - 物有本末, 事有终始](http://www.lijigang.com/blog/2016/02/17/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E7%9A%84%E4%BA%BA%E9%83%BD%E5%96%9C%E6%AC%A2%E4%BB%8E0%E5%BC%80%E5%A7%8B%E8%AE%A1%E6%95%B0/)
 
-  - [为什么计算机专业的人都喜欢从0开始计数 - 物有本末, 事有终始](http://www.lijigang.com/blog/2016/02/17/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E7%9A%84%E4%BA%BA%E9%83%BD%E5%96%9C%E6%AC%A2%E4%BB%8E0%E5%BC%80%E5%A7%8B%E8%AE%A1%E6%95%B0/)
-  - [字体知识 - 物有本末, 事有终始](http://www.lijigang.com/blog/2016/02/17/%E5%AD%97%E4%BD%93%E7%9F%A5%E8%AF%86/)
-  - [键盘应该这样改键 - 物有本末, 事有终始](http://www.lijigang.com/blog/2016/02/17/%E9%94%AE%E7%9B%98%E5%BA%94%E8%AF%A5%E8%BF%99%E6%A0%B7%E6%94%B9%E9%94%AE/)
-  - [VBA是什么鬼 - 物有本末, 事有终始](http://www.lijigang.com/blog/2016/02/17/vba%E6%98%AF%E4%BB%80%E4%B9%88%E9%AC%BC/)
-  - [IDEA读书方法 - 物有本末, 事有终始](http://www.lijigang.com/blog/2016/02/17/idea%E8%AF%BB%E4%B9%A6%E6%96%B9%E6%B3%95/)
+:   显然, 使用从0开始计数的时候, 表示起来更美观和实用, 右侧数字直接减去左侧数字, 即为整 个区间的数字个数.
+
+    refs and see also
+
+      - [字体知识 - 物有本末, 事有终始](http://www.lijigang.com/blog/2016/02/17/%E5%AD%97%E4%BD%93%E7%9F%A5%E8%AF%86/)
+      - [键盘应该这样改键 - 物有本末, 事有终始](http://www.lijigang.com/blog/2016/02/17/%E9%94%AE%E7%9B%98%E5%BA%94%E8%AF%A5%E8%BF%99%E6%A0%B7%E6%94%B9%E9%94%AE/)
+      - [VBA是什么鬼 - 物有本末, 事有终始](http://www.lijigang.com/blog/2016/02/17/vba%E6%98%AF%E4%BB%80%E4%B9%88%E9%AC%BC/)
+      - [IDEA读书方法 - 物有本末, 事有终始](http://www.lijigang.com/blog/2016/02/17/idea%E8%AF%BB%E4%B9%A6%E6%96%B9%E6%B3%95/)
 
 [babun/babun: Babun - a Windows shell you will love!](https://github.com/babun/babun)
 
 [为什么人们爱管闲事儿? | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/83257/)
 
+:   因为“爱管闲事” 本来就是我们的祖先送给我们的礼物，它作为一种被进化选择出来的
+    行为深深地印刻在我们每个人的身体里，可以说是个传家宝。
+
+    但是就是这些人，在面临特定的场景之下，却做出了非常高尚的利他行为（altruism
+    ）。为什么我们都会情不自禁地、犹如履行义务一般地帮助周围的人呢？
+
+    如果从进化的视角去寻因，问题就迎刃而解：可能“乐于助人”、“爱管闲事”的行为具
+    有一定的基因基础，这种基因在漫长的进化中被选择出来，使人类可以最大限度地适
+    应环境，维持种族整体的繁衍与传承。因而在我们的身上会表现出利他行为。利他行
+    为通常可以分成三种，主要有亲缘性利他（kin altruism）、互惠式利他（
+    reciprocal altruism）和纯粹利他（pure altruism）。前两种是帮助自己的亲友和
+    熟人，在日常生活中十分多见。
+
+    从宏观方面来看，一个人对其他人做出了利他行为，这种行为可能从长远看来是对自
+    己有利的，因为被帮助的人可能反过来报答他或者他所在的种群，而通常来讲这种利
+    他行为不一定以牺牲自己为代价，再加上有所回报，因此这样的行为不会被进化淘汰
+    ，反而成为自然选择的一种优势。
+
+    我们缺乏的，只是一个恰当的、可以自由表达这种进化行为的环境而已。因此，不能
+    因为环境对行为一时的阻碍，就去抱怨甚至谩骂人类的道德沦丧殆尽。当然，关于如
+    何建立起良好的社会环境让人们更大程度地表达这种利他基因，还是和谐社会所需要
+    考虑的重要问题。
+
 vim
 
 :   - `zz`, centering! `Ctrl-o zz`
-    - `:ctrl-f`, `:h c_ctrl-f`
+    - `:ctrl-f`, `:h c_ctrl-f`, `c-w, c-c` to close
     - `<TAB>`, `ctrl-d`, `h c_ctrl-d`
     - `K`, man page, or help
 
 每次看到这种争论我就想说一句话，说过很多次了：
 
-用VIM的人以为IDE没有快捷键，每次干点什么都得用鼠标点啊点菜单找啊找，删一行字符都要按住backspace好几秒看光标慢慢跑。
-用IDE的人总以为VIM没有智能提示，没有编译调试，只不过是几个快捷键用得多一些，要编译运行什么都得切换出去输一大堆命令。
+用VIM的人以为IDE没有快捷键，每次干点什么都得用鼠标点啊点菜单找啊找，删一行字符
+都要按住backspace好几秒看光标慢慢跑。
 
-看了得票数高的也都是这种。其实按理说吧，假如都是追求生产力的人，到最后你会发现VIM和IDE其实用法都差不多，甚至长得都很像。
+用IDE的人总以为VIM没有智能提示，没有编译调试，只不过是几个快捷键用得多一些，要
+编译运行什么都得切换出去输一大堆命令。
 
-作者：赵劼
-链接：https://www.zhihu.com/question/22096642/answer/20293331
-来源：知乎
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+看了得票数高的也都是这种。其实按理说吧，假如都是追求生产力的人，到最后你会发现
+VIM和IDE其实用法都差不多，甚至长得都很像。
 
-初试挂是技术水平不行，复试挂都是吹牛水平不行，hr挂是长相不行
-
+初试挂是技术水平不行，复试挂都是吹牛水平不行，hr 挂是长相不行
 
 8000, 3000, 30000
 
@@ -264,8 +449,8 @@ TPO: time, place, occasion
 
 [PHP-study/php学习规划.md at master · ITEC-ELWG/PHP-study](https://github.com/ITEC-ELWG/PHP-study/blob/master/php%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92.md)
 
-`:first`, one elem
-`:first-child`, group of elems
+- `:first`{.css}, one elem
+- `:first-child`{.css}, group of elems
 
 ```
 $("#frmTest:text").addClass("bg_blue");
@@ -273,28 +458,25 @@ $("#frmTest:input").addClass("bg_blue");
 $("#frmTest:radio").addClass("bg_blue");
 ```
 
-sublime
-
 [Sublime Text - Download](http://www.sublimetext.com/3)
 
-preferences -> Settings->user
+:   `preferences -> Settings->user`
 
-```
-// Settings in here override those in "Default/Preferences.sublime-settings",
-// and are overridden in turn by file type specific settings.
-{
-    "ignored_packages": []
-}
-```
+    ```json
+    {
+        "ignored_packages": []
+    }
+    ```
 
-Preferences -> Color Scheme -> IDLE
-Preferences -> Font -> Larger(Control+/-)
+    重启。（默认直接进入 insert 模式）
 
-[guillermooo/Vintageous: Vi/Vim emulation for Sublime Text 3](https://github.com/guillermooo/Vintageous)
+    `Preferences -> Color Scheme -> IDLE`
 
+    `Preferences -> Font -> Larger(Control+/-)`
 
-重启。（默认直接进入 insert 模式）
+    [guillermooo/Vintageous: Vi/Vim emulation for Sublime Text 3](https://github.com/guillermooo/Vintageous)
 
+    (但不好用，感觉还不如自带的)
 
 [qiu-deqing/FE-learning: 结合个人经历总结的前端入门方法](https://github.com/qiu-deqing/FE-learning)
 
@@ -304,7 +486,36 @@ Preferences -> Font -> Larger(Control+/-)
 
 [snappy压缩 · Issue #17 · ma6174/blog](https://github.com/ma6174/blog/issues/17)
 
+:   在 Google 内部也大量被使用
+
+    Snappy is widely used inside Google, in everything from BigTable and
+    MapReduce to our internal RPC systems. (Snappy has previously been referred
+    to as “Zippy” in some presentations and the likes.)
+
+    如果对压缩解压速度要求比较高，并且压缩比一般可以接受的话，snappy是一种比较
+    好的选择。永久存储(日志等)或者实时传输(rpc等)都是比较好的使用场景。
+
 [致贾跃亭：可以嚣张但不要如此无厘头的嚣张 - 推酷](http://www.tuicool.com/articles/JNnMnqa)
+
+:   仔细看了贾跃亭的公开信，除了延续以往之前以“生态”的名义的嚣张外，自然少不了
+    了抨击苹果的套路，不过这次除了苹果之外，三星、华为、VIVO、OPPO等企业也成为
+    了贾跃亭的标靶，甚至还为这些企业冠名简称为S（三星）、H（华为）、I（苹果）、
+    V（VIVO）、O（OPPO）。
+
+    shivo
+
+    如果说贾跃亭抨击S、H、I、V、O（三星、华为、苹果、VIVO和OPPO）是为了掩饰其乐
+    视生态模式的无厘头和苍白外，更让我们感到无厘头，甚至气愤的是，借助抨击这些
+    企业，贾跃亭竟然将广大的用户也当作了自己的标靶，甚至称之为“博傻”（就差直接
+    说用户是傻X了），要知道，目前苹果、三星、华为、OPPO和VIVO相加，无论是在全球
+    还是中国市场，用户均占据了50%以上，至少以10亿为单位计（新增和保有量，而据称
+    单苹果的全球用户即将突破10亿），按照贾跃亭的说法，这些用户无疑都是“博傻”用
+    户，而乐视的会员（其生态战略现在和未来的支撑）去年仅为1200万，乐观的统计是
+    3000万。一个号称坚持站在全球角度，服务全球用户、共享生态世界的企业（贾跃亭
+    公开信所言），不是谦虚地学习、借鉴和尊重相关企业商业模式的精髓和用户的选择
+    （实际上是站在了广大用户的对立面上），而是以接近爆“粗话”的口吻极尽嘲讽之能
+    事，不得不让我们怀疑一个“心虚”到连起码风度和道德都不顾，甚至离“骂街”仅一步
+    之遥的企业，它给投资人和用户的期许的到底是怎样的一个希望和未来？
 
 [外媒：谷歌百度都做无人驾驶汽车 但中国会领先美国_TechWeb](http://www.techweb.com.cn/world/2016-04-11/2312752.shtml?utm_source=tuicool&utm_medium=referral)
 
@@ -324,7 +535,7 @@ Preferences -> Font -> Larger(Control+/-)
 
 [How to check what version of jQuery is loaded? - Stack Overflow](http://stackoverflow.com/questions/6973941/how-to-check-what-version-of-jquery-is-loaded)
 
-:   ```
+:   ```javascript
     if (typeof jQuery != 'undefined') {
         jQuery.fn.jquery // jQuery().jquery
         // "3.0.0-beta1"
@@ -333,11 +544,11 @@ Preferences -> Font -> Larger(Control+/-)
 
 [The Interactive Way To Go](http://playgo.to/interactive/chinese/lesson/)
 
-用 vim 和 emacs 批处理：
+用 vim 和 emacs 批处理(batch processing)：
 
 :   edit.vim
 
-    ```
+    ```perl
     :g/one/d
     :%s/nice/NICE/g
     :wq
@@ -355,52 +566,69 @@ Preferences -> Font -> Larger(Control+/-)
 
 [15 位机器人在完成任务时的有趣失误](http://tech2ipo.com/10026863)
 
+:   ![发生故障的垃圾车](http://ww3.sinaimg.cn/mw690/6c0b2b63jw1f1ae6jhbyeg209q06o7wh.gif)
+
+    ![使用自动机器人来加酱](http://ww4.sinaimg.cn/mw690/6c0b2b63jw1f1ae6tug9ug20f00a04qy.gif)
+
+    ![](http://ww2.sinaimg.cn/mw690/6c0b2b63jw1f1ae6zo04lg20dc07iu10.gif)
+
 [JavaScript check if variable exists (is defined/initialized) - Stack Overflow](http://stackoverflow.com/questions/5113374/javascript-check-if-variable-exists-is-defined-initialized)
+
+:   ```javascript
+    if (typeof variable !== 'undefined') {
+        // the variable is defined
+    }
+    ```
 
 [Git - Viewing the Commit History](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
 
 [Add Rules to Stylesheets with JavaScript](https://davidwalsh.name/add-rules-stylesheets)
 
-```
-var sheets = document.styleSheets; // returns an Array-like StyleSheetList
+:   ```javascript
+    var sheets = document.styleSheets; // returns an Array-like StyleSheetList
 
-var sheet = (function() {
-	// Create the <style> tag
-	var style = document.createElement("style");
+    var sheet = (function() {
+        // Create the <style> tag
+        var style = document.createElement("style");
 
-	// Add a media (and/or media query) here if you'd like!
-	// style.setAttribute("media", "screen")
-	// style.setAttribute("media", "only screen and (max-width : 1024px)")
+        // Add a media (and/or media query) here if you'd like!
+        // style.setAttribute("media", "screen")
+        // style.setAttribute("media", "only screen and (max-width : 1024px)")
 
-	// WebKit hack :(
-	style.appendChild(document.createTextNode(""));
+        // WebKit hack :(
+        style.appendChild(document.createTextNode(""));
 
-	// Add the <style> element to the page
-	document.head.appendChild(style);
+        // Add the <style> element to the page
+        document.head.appendChild(style);
 
-	return style.sheet;
-})();
-```
+        return style.sheet;
+    })();
+    ```
 
-```
-padding: 50px 12px;
-    padding-top: 50px;
-    padding-right: 12px;
-    padding-bottom: 50px;
-    padding-left: 12px;
-```
+    ```css
+    padding: 50px 12px;
+        padding-top: 50px;
+        padding-right: 12px;
+        padding-bottom: 50px;
+        padding-left: 12px;
+    ```
 
 [POSIX - perldoc.perl.org](http://perldoc.perl.org/POSIX.html#scanf)
 
-scanf
+:   `scanf`
 
-Not implemented. scanf() is C-specific, use <> and regular expressions instead, see perlre.
+    Not implemented. `scanf()` is C-specific, use `<>` and regular expressions
+    instead, see perlre.
+
+---
 
 ```bash
 $ echo 1>&2 stderr | wc -c
 stderr
 0
 ```
+
+---
 
 [Git - pretty-formats Documentation](https://git-scm.com/docs/pretty-formats)
 
@@ -417,90 +645,138 @@ stderr
      3 files changed, 54 insertions(+)
     ```
 
-```
-# basedir = https://github.com/district10/blog
-# %basedir%/commit/14bf3bad1e7911d71a961aa866582dc831c6f84f
-# %basedir%/blob/14bf3bad1e7911d71a961aa866582dc831c6f84f/_pages/koans.md
+    ```
+    # basedir = https://github.com/district10/blog
+    # %basedir%/commit/14bf3bad1e7911d71a961aa866582dc831c6f84f
+    # %basedir%/blob/14bf3bad1e7911d71a961aa866582dc831c6f84f/_pages/koans.md
 
-$ git log --stat --pretty=format:%H-%at README.md | head
-14bf3bad1e7911d71a961aa866582dc831c6f84f-1460038810
- README.md | 9 +++++----
- 1 file changed, 5 insertions(+), 4 deletions(-)
+    $ git log --stat --pretty=format:%H-%at README.md | head
+    14bf3bad1e7911d71a961aa866582dc831c6f84f-1460038810
+     README.md | 9 +++++----
+     1 file changed, 5 insertions(+), 4 deletions(-)
 
-# output (yaml format):
-# ---
-# tzx-changes:
-    - datetime: 1460038810
-      insertions: 5
-      deletions: 4
+    # output (yaml format):
+    # ---
+    # tzx-changes:
+        - datetime: 1460038810
+          insertions: 5
+          deletions: 4
 
-    - datetime: ...
-      insertions: ...
-      deletions: 0
+        - datetime: ...
+          insertions: ...
+          deletions: 0
 
-# tzx-changes:
-    - 1460038810, 23, 434
-# ...
+    # tzx-changes:
+        - 1460038810, 23, 434
+    # ...
 
-$ date --date='@1460038810'
-Thu Apr  7 14:20:10 GMT 2016
+    $ date --date='@1460038810'
+    Thu Apr  7 14:20:10 GMT 2016
 
-$ date --date="@`date +%s`" +'%Y-%m-%d, %H:%M:%S'
-2016-04-10, 07:27:59
-```
+    $ date --date="@`date +%s`" +'%Y-%m-%d, %H:%M:%S'
+    2016-04-10, 07:27:59
+    ```
 
-see [notes.changes.yml - dvorak4tzx - dvorak4tzx - Coding.net](https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/blob/coding-pages/notes.changes.yml)
+    see [notes.changes.yml - dvorak4tzx - dvorak4tzx -
+    Coding.net](https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/blob/coding-pages/notes.changes.yml)
 
-- before: [https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/master/_pages/notes.md](https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/master/_pages/notes.md)
-- after: [https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/coding-pages/notes.md](https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/coding-pages/notes.md)
+    - before: [https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/master/_pages/notes.md](https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/master/_pages/notes.md)
+    - after: [https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/coding-pages/notes.md](https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/coding-pages/notes.md)
 
-- Wait! I'm getting a deja vu.
+---
+
+- Wait! I'm getting a **deja vu**.
 - 等等，我有似曾相识的感觉。
 - 话说有个字体叫“DejaVu Sans Mono”
-
-If you follew them, they flee. If you flee, they follow.
+- **If you follew them, they flee. If you flee, they follow.**
 
 [如何评价 2015 年电影《末日崩塌》（San Andreas）？ - CaesarZX 的回答 - 知乎](https://www.zhihu.com/question/30275207/answer/49700761)
 
-refs and see also
+:   refs and see also
 
-  - [San Andreas Fault - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/San_Andreas_Fault)
+      - [San Andreas Fault - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/San_Andreas_Fault)
 
 [为何世界三大宗教里只有伊斯兰教在今天仍是一个政治问题？ - 安瑟尼的回答 - 知乎](https://www.zhihu.com/question/37514563/answer/72371088)
 
 <div class="tzx-hide">
-- [红颜知己&蓝颜知己，都来一点 | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/437895/)
-- [你的蓝颜知己在想什么？ | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/437041/)
-- [好男人精挑细选，坏男人来者不拒 | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/59639/)
-- [爱情、友情，两手都要硬！ | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/11118/?_block=article_interested&_pos=2&rkey=d1ed)
-- [男女之间能有单纯的友谊吗？ | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/179197/?_block=article_interested&_pos=0&rkey=d1ed)
-- [姑娘，你异性朋友这么多，这样好吗？ | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/437916/?_block=article_interested&_pos=1&rkey=dc27)
-- [为什么小时候好看的人长大后大多数会「长残」？ - 高大拙的回答 - 知乎](https://www.zhihu.com/question/28206000/answer/39859238)
-</div>
+异性朋友的关系
+
+:   男女之间是否存在纯粹的友情？古希腊的亚里士多德显然会说：“不！”他认为纯粹的
+    友情只存在于道德高尚的男人之间，根本不关女人什么事。
+
+    异性朋友的关系有时候确实没那么纯粹——《老友记》里的几位还时不时彼此勾搭一下
+    呢。2000年美国心理学家瓦利德•阿菲菲（Walid Afifi）调查了315名大学生，结果发
+    现几乎一半和他/她们的异性朋友上过床。另一研究表明，异性朋友关系里，男性对女
+    性更有“性趣”，不过这种吸引力被参与者视为负担，特别对女性而言。
+
+    美国博伊西州立大学的传播学教授海地•瑞德（Heidi Reeder）将异性朋友间的吸引力
+    分成4类：
+
+      - 友伴吸引力(Friendship attraction)
+      - 浪漫吸引力(Romantic attraction)
+      - 主观吸引力(Subjective physical/ sexual attraction)：担心这样做会破坏这段友
+        谊，他们没有贸然付诸行动。
+      - 客观吸引力(Objective physical/ sexual attraction)：很有魅力，只不过不是自己
+        的菜
+
+    亚利桑那州立大学的劳拉•格雷罗（Laura Guerrero）教授则基于是否有正式交往的意
+    愿，将异性朋友的模式分了4类：
+
+      - 互有好感 (mutual romance) 俗称暧昧，想正式交往成为恋人。
+      - 我方渴望 (desires romance) 我想交往，但对方不想。
+      - 对方渴望 (rejects romance) 对方想交往，但我不想。
+      - 柏拉图式 (strictly platonic) 双方只想做朋友，不想交往。
+
+    君子之交自是好，两厢情愿更是妙，可现实常常是落花有意流水无情，对于那些勇敢迈出
+    示爱这一步却不幸失败的，若双方能认识到这段友情的重要性，据实以告，坦诚相待，调
+    整言行，还是能和好如初，做回朋友。
+
+    男同性恋更愿意听直女们的意见，直女们也更喜欢听从男同性恋的建议。这一类友情，由
+    于彼此不存在吸引力的困扰，更纯粹牢固。
+
+    男性似乎更容易将异性朋友视为潜在性伴侣或恋爱对象。而女性则往往喜欢非性的，能提
+    供保护和资源的友谊。
+
+    更糟的是，男性和女性都视对方的收益为自己的成本。因此，当男性朋友渴望性爱与
+    浪漫，女性会觉得这种友谊很昂贵和麻烦。相反，男性会发现时间和金钱的支出令人
+    沮丧，特别是当他们的浪漫的欲望都没有回报的时候。因此，由于不匹配的欲望，异
+    性之间的友谊举步维艰。
+
+    refs and see also
+
+      - [红颜知己&蓝颜知己，都来一点 | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/437895/)
+      - [你的蓝颜知己在想什么？ | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/437041/)
+      - [好男人精挑细选，坏男人来者不拒 | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/59639/)
+      - [爱情、友情，两手都要硬！ | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/11118/?_block=article_interested&_pos=2&rkey=d1ed)
+      - [男女之间能有单纯的友谊吗？ | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/179197/?_block=article_interested&_pos=0&rkey=d1ed)
+      - [姑娘，你异性朋友这么多，这样好吗？ | 科学人 | 果壳网 科技有意思](http://www.guokr.com/article/437916/?_block=article_interested&_pos=1&rkey=dc27)
+      - [为什么小时候好看的人长大后大多数会「长残」？ - 高大拙的回答 - 知乎](https://www.zhihu.com/question/28206000/answer/39859238)
+        </div>
 
 [File Roller/Unzip 解压中文 Zip 文件名乱码](https://linuxtoy.org/archives/wrong-handling-of-chinese-coded-filename-in-fileroller-unzip.html)
 
-`http://github.com/district10/blog/commits/master.atom`
-`https://github.com/district10.atom`
+---
 
-- have you ever met someone who is like the **human version of period cramps** (痛经).
-- I think this is the first time something has conveyed to me with true clarity
-  just how bad period cramps are.
++ period cramps
+    - have you ever met someone who is like the **human version of period cramps** (痛经).
+    - I think this is the first time something has conveyed to me with true clarity
+      just how bad period cramps are.
++ in really weird places and feel it's everywhere
+    - We asked the audience their biggest fears, let's **delve** (探究) among them now.
+    - I'm actually afraid of sperm **in places it's not supposed to be**.
+    - I'm a **forensic scientist**, so I find it it in really weird places and feel it's everywhere.
+    - I think you should **have your couch checked out**.
++ sex life
+    - describe your sex life, with the name of a song
+    - all by myself
++ therapist
+    - feelings hookers
+    - **therapist**
++ cauliflower
+    - cauliflower
+    - **albino `[æl'baɪno]` broccoli**
 
-- We asked the audience their biggest fears, let's **delve** (探究) among them now.
-- I'm actually afraid of sperm **in places it's not supposed to be**.
-- I'm a **forensic scientist**, so I find it it in really weird places and feel it's everywhere.
-- I think you should **have your couch checked out**.
-
-- describe your sex life, with the name of a song
-- all by myself
-
-- feelings hookers
-- **therapist**
-
-- cauliflower
-- **albino `[æl'baɪno]` broccoli**
-
+---
 
 [Spoonerism - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Spoonerism)
 
@@ -597,7 +873,7 @@ refs and see also
 
       - [List of forms of word play - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_forms_of_word_play)
 
-George R.R. Martin on Syrian (`['sɪrɪən]`, 叙利亚) refugees: 'Let them in'
+---
 
 [Tranny (slang) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Tranny_(slang))
 
@@ -623,13 +899,14 @@ George R.R. Martin on Syrian (`['sɪrɪən]`, 叙利亚) refugees: 'Let them in'
 
 &emsp;`&emsp;`
 
-WIN+R，输入“psr”后回车：打开步骤记录器；
+`WIN+R`，输入“psr”后回车：打开步骤记录器；
 
-在桌面上，右键任何一个程序，鼠标定位到快捷键一栏，为该应用设置启动快捷键，然后你就可以通过这个这个快捷键来启动该程序啦；
+在桌面上，右键任何一个程序，鼠标定位到快捷键一栏，为该应用设置启动快捷键，然后
+你就可以通过这个这个快捷键来启动该程序啦；
 
-WIN+P：选择一个演示文稿显示模式；
-WIN+Pause：显示系统属性对话框；
-WIN+T：切换任务栏上的程序； （然后用空格选中打开）
+  - `WIN+P`：选择一个演示文稿显示模式；
+  - `WIN+Pause`：显示系统属性对话框；
+  - `WIN+T`：切换任务栏上的程序； （然后用空格选中打开）
 
 [什么时候我们才能拍出这样的禁片 - 简书](http://www.jianshu.com/p/c0c08b663fd7)
 
@@ -656,6 +933,8 @@ WIN+T：切换任务栏上的程序； （然后用空格选中打开）
     大概我国男性真的普遍处于性压抑的状态。
 
     希望每个一人在外打拼的姑娘都能好好的，希望这些人渣烂货都去死。
+
+---
 
 - Israel
 - get crowdfunding help
@@ -711,7 +990,8 @@ WIN+T：切换任务栏上的程序； （然后用空格选中打开）
 - high-profile video
 - a self-driving warship
 - slaming a girl to the ground.
-- Legislations that would have set minimum standards for pasenger space abroad comericial aeroplanes fais to pass in    he US senate
+- Legislations that would have set minimum standards for pasenger space abroad
+  comericial aeroplanes fais to pass in the US senate
 - depicted the royal family.
 
 [NPM 与 left-pad 事件：我们是不是早已忘记该如何好好地编程？ - 知乎专栏](http://zhuanlan.zhihu.com/p/20707235)
@@ -757,7 +1037,8 @@ WIN+T：切换任务栏上的程序； （然后用空格选中打开）
 
 seat covers (厕所马桶圈纸)
 
-:   把折起来的粗糙面朝上、接触大腿；把折在外面的、光滑的蜡面朝下、接触马桶圈。这就达到了设计意图——蜡面上的那层蜡有两个基本功能：
+:   把折起来的粗糙面朝上、接触大腿；把折在外面的、光滑的蜡面朝下、接触马桶圈。
+    这就达到了设计意图——蜡面上的那层蜡有两个基本功能：
 
       - 一、抗菌。
       - 二、当人坐下的时候，体温会稍稍融化蜡面，让它轻轻粘在马桶圈上，这样就更
@@ -768,9 +1049,10 @@ seat covers (厕所马桶圈纸)
     容易被风刮到地上。但是，为什么是放在前面，而不是后面？
 
     第一，把这段纸铺在前面，可以避免「女巫之吻」，并减少「激光反射伤害」（女巫
-    之吻词条见A witches kiss :
-    bigdickproblems(https://www.reddit.com/r/bigdickproblems/comments/38x0aw/a_witches_kiss/)
-    ）；
+    之吻词条见[A witches kiss: bigdickproblems](https://www.reddit.com/r/bigdickproblems/comments/38x0aw/a_witches_kiss/)
+
+    Yeah... No, that isn't a BDP. Literally anyone with a flaccid size over
+    2.5" can get that.
 
     谷大白话还说过这也叫“波塞冬之吻”(poseidon's Kiss)。
 
@@ -1145,9 +1427,9 @@ Peek 可以同时阅读两个书页，左右眼各自读一页，这很可能与
 测试者背诵其中任何一本书，据说他记住的书超过12000本。Peek的故事被拍成了电影，这
 就是《雨人》。
 
-我听到关于“最强大脑”最奇特的说法，是说选拔这样一批善于记忆和速算的人，是在为国
+我听到关于“最强大脑”最奇特的说法，是说**选拔这样一批善于记忆和速算的人，是在为国
 家储备战略人才 — 虽然他们的工作都已经被计算机取代了，但是万一战争来了全国停电呢
-？
+？**
 
 这其实不是说美国总统的水平退步了，只能说明美国有越来越多的民众参与政治。我最近
 学了点职业英文写作，听说绝大多数美国人，包括受过很高教育的人，都希望阅读文章的
