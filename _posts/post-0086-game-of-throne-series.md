@@ -7,43 +7,44 @@ key-words:
 tags:
     - tv
     - presentation
+after-before: |
+    <style>
+    html {
+        background-image: url(http://whudoc.qiniudn.com/got-series-bg-blur.jpg);
+        background-color: rgba( 255, 255, 255, 0.5 );
+        background-position: top center;
+        background-attachment: fixed;
+    }
+    body {
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%);
+        tet-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+        color: white;
+    }
+    h1 {
+        background-color: rgba(255,255,255,0.2);
+        font-variant: small-caps;
+    }
+    img {
+        border: solid 1px #CCC;
+        -moz-box-shadow: 5px 5px 0px #999;
+        -webkit-box-shadow: 5px 5px 0px #999;
+        box-shadow: 5px 5px 0px #999;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+    #footer {
+        background-color: rgba(255, 255, 255, .0);
+    }
+    #footer:hover {
+        background-color: rgba(255, 255, 255, .95);
+        transition: all 0.5s ease-in-out;
+    }
+    </style>
 ...
 
 Game of Throne
 ==============
 
-<style>
-html {
-    background-image: url(http://whudoc.qiniudn.com/got-series-bg-blur.jpg);
-    background-color: rgba( 255, 255, 255, 0.5 );
-    background-position: top center;
-    background-attachment: fixed;
-}
-body {
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%);
-    tet-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-    color: white;
-}
-h1 {
-    background-color: rgba(255,255,255,0.2);
-    font-variant: small-caps;
-}
-img {
-    border: solid 1px #CCC;
-	-moz-box-shadow: 5px 5px 0px #999;
-	-webkit-box-shadow: 5px 5px 0px #999;
-    box-shadow: 5px 5px 0px #999;
-    margin-left: 1em;
-    margin-bottom: 1em;
-}
-#footer {
-    background-color: rgba(255, 255, 255, .0);
-}
-#footer:hover {
-    background-color: rgba(255, 255, 255, .95);
-    transition: all 0.5s ease-in-out;
-}
-</style>
 
 * EP.1 Arya: Not a Boy
 * EP.2 Daenerys: He was no Dragon
@@ -55,13 +56,14 @@ img {
 
 Plan: EP.4 (&#x2611;) -> EP.5 (&#x2610;)-> EP.6 (&#x2610;)-> EP.1 (&#x2610;)-> EP.2 (&#x2610;)-> EP.3 (&#x2610;)-> EP.7 (&#x2610;)
 
-虽然计划弄，但不可能霸占课堂 presentation 啊……于是只弄了第一期。见 [EP.4](#ep-4)
-
-TODO: 自己写这里的介绍文字。
+这是英语课的 Presentation，每个人应该讲一次。我想弄一个系列。准备了几个剧本，但最后完成的只有一个。
+见 [EP.4](#ep-4)
 
 ---
 
-**Arya Stark** <img src="http://whudoc.qiniudn.com/Arya,_Ned_and_Syrio_1x03.jpg?imageView2/2/w/150" align="right">
+下面是我想介绍的几个角色。介绍文字来自 wikia。
+
+**Arya Stark** <img src="http://whudoc.qiniudn.com/Arya,_Ned_and_Syrio_1x03.jpg?imageView2/2/w/110" align="right">
 
 When her father is betrayed and executed by Joffrey, Arya flees the capital
 with the help of the Night's Watch recruiter, Yoren, who gets her out of the
@@ -81,7 +83,7 @@ the guild as punishment.
 
 ---
 
-**Daenerys Targaryen** <img src="http://whudoc.qiniudn.com/Daenerys-MothersMercy.jpg?imageView2/2/w/150" align="right">
+**Daenerys Targaryen** <img src="http://whudoc.qiniudn.com/Daenerys-MothersMercy.jpg?imageView2/2/w/110" align="right">
 
 She hatched three dragons by having her petrified dragon eggs placed on Drogo's
 funeral pyre, before she walked into the flames to claim them. Her dragons are
@@ -97,7 +99,7 @@ conquests of the Free Slaveholding Cities of Astapor, Yunkai and Meereen.
 
 ---
 
-**Joffrey Baratheon** <img src="http://whudoc.qiniudn.com/Joffrey_Baratheon_2.jpg?imageView2/2/w/150" align="right">
+**Joffrey Baratheon** <img src="http://whudoc.qiniudn.com/Joffrey_Baratheon_2.jpg?imageView2/2/w/110" align="right">
 
 King Joffrey Baratheon is a major character in the first, second, third, and
 fourth seasons. He is played by starring cast member Jack Gleeson and debuts in
@@ -109,7 +111,7 @@ Tommen Baratheon, both of whom share the same parentage.
 
 ---
 
-**Eddard Stark** <img src="http://whudoc.qiniudn.com/Eddard_1x01.jpg?imageView2/2/w/150" align="right">
+**Eddard Stark** <img src="http://whudoc.qiniudn.com/Eddard_1x01.jpg?imageView2/2/w/110" align="right">
 
 Eddard Stark, popularly known as Ned, is a major character in the first season.
 He is played by starring cast member Sean Bean, and debuts in the series
@@ -123,7 +125,7 @@ and an honorable lord.
 
 ---
 
-**Theon Greyjoy** <img src="http://whudoc.qiniudn.com/got-theon.jpeg?imageView2/2/w/150" align="right">
+**Theon Greyjoy** <img src="http://whudoc.qiniudn.com/got-theon.jpeg?imageView2/2/w/110" align="right">
 
 Theon Greyjoy is a major character in the first, second, third, fourth, fifth
 and sixth seasons. He is played by starring cast member Alfie Allen and debuts
@@ -140,7 +142,7 @@ Theon botches the beheading, taking three swings and a kick to accomplish it.
 
 ---
 
-**Tyrion Lannister** <img src="http://whudoc.qiniudn.com/Tyrion_Lannister_in_the_Vale.jpg?imageView2/2/w/150" align="right">
+**Tyrion Lannister** <img src="http://whudoc.qiniudn.com/Tyrion_Lannister_in_the_Vale.jpg?imageView2/2/w/110" align="right">
 
 Tyrion Lannister is a major character in the first, second, third, fourth,
 fifth, and sixth seasons. He is played by starring cast member Peter Dinklage
@@ -150,7 +152,7 @@ uses his wit and intellect to overcome the prejudice he faces.
 
 ---
 
-**Ygritte** <img src="http://whudoc.qiniudn.com/Ygritte-Profile-HD.png?imageView2/2/w/150" align="right">
+**Ygritte** <img src="http://whudoc.qiniudn.com/Ygritte-Profile-HD.png?imageView2/2/w/110" align="right">
 
 Ygritte is a major character in the third and fourth seasons, played by Rose
 Leslie. She initially appeared as a recurring character in the second season
@@ -162,7 +164,11 @@ lover of Jon Snow.
 
 EP.4 `@`{.tzx-anchor #ep-4}
 
+下面是我的 Presentation 讲稿。
+
 <small>这是讲稿，课上漏了一点，但基本一致。这是我之前的录音：<http://www.ximalaya.com/39833779/album/3827746></small>
+
+![](http://whudoc.qiniudn.com/2016/ep4/幻灯片1.jpg)
 
 Game of Thrones is an American tv series adapted from George Martin's A Song of
 Ice and Fire. This tv show is so much a fantasy and so great that it attracted
@@ -170,6 +176,8 @@ a big audience.  I've watched 4 seasons of it, and really like it and willing
 to share some of my opinions on it. The focus today is Eddard Stark, popularly
 known as Ned, is a major character in the first season. But before that, I'll
 introduce the backgrounds and settings of this story.
+
+![](http://whudoc.qiniudn.com/2016/ep4/幻灯片2.jpg)
 
 This is the world map for game of throne. As you can see, the world is
 separated to two parts by the narrow sea. The west is called Westeros, while
@@ -181,14 +189,20 @@ As for Essos, there lived some kind of horse people, I mean, the Dothraki. And
 Daenerys Targaryen gets her power there. The story of Ned mainly happended in
 Winterfell and King's landing.
 
+![](http://whudoc.qiniudn.com/2016/ep4/幻灯片3.jpg)
+
 And these, are houses of Game of Throne. House Stark, Ned Stark. House
 Lannister, she is the Queen. And House Baratheon, the King. House Targaryen.
 You should know that the Mad King is a targaryen.
+
+![](http://whudoc.qiniudn.com/2016/ep4/幻灯片4.jpg)
 
 Now is time for Ned Stark. I'll share three scenes from Season 1 about Ned
 Stark, and analyze the characteristics of Ned Stark, tell you guys why I like
 this character. And after that, I'll compare him to three other characters to
 illustrate why he is destined to fail and die.
+
+![](http://whudoc.qiniudn.com/2016/ep4/幻灯片5.jpg)
 
 Scene one, in the frontier of Winterfell, close to Castle Black, the northest
 part of Westeros. Ned Stark sentenced the man to die. This man is a guardsman
@@ -198,6 +212,8 @@ heart is a merciful man, but as the lord of Winterfell, law is law. He has no
 choice but to commit his duty. Furthermore, he asked his son (here, this boy)
 to watch the execution. He wants his son to be a calm and straight man as he
 is.
+
+![](http://whudoc.qiniudn.com/2016/ep4/幻灯片6.jpg)
 
 Scene two, it's the small council of the king. And this time, they are arguing
 about how to deal with Daenerys Targaryen, who is pregnant now. And may cross
@@ -228,6 +244,8 @@ Hand of the King, and went away.
 He is an honorable man, too good for this kind of vile thing. His discipline
 makes him too straight to bend.
 
+![](http://whudoc.qiniudn.com/2016/ep4/幻灯片7.jpg)
+
 Scene three. In the dungeon. Ned is arrested for treason, which of course is a
 made-up sentence. He has a conversation with Varys, the Spider. Varys wants Ned
 to confess his treason and kneel to the Queen. Ned? No!
@@ -251,12 +269,16 @@ Then Ned continus,
 
 And finally he died.
 
+![](http://whudoc.qiniudn.com/2016/ep4/幻灯片8.jpg)
+
 I really like this man and his personality. But in my opinion, his death is not
 glorious or honorable at all. He died in a tragedy, died a terrible way. I
 would compare this straight man to three other characters. First is Clyde
 Shelton from The Law Abiding Citizen, second is David Gale from The Life of
 David Gale, third is Javert from the famous Les Miserable. Like Ned, they are
 all straight and disciplined man. But they have different endings.
+
+![](http://whudoc.qiniudn.com/2016/ep4/幻灯片9.jpg)
 
 Law Abiding Citizen tells a story of revenge. Two criminals broken into Clyde
 Shelton's house, killed his daughter, raped his wife, in front of him. Because
@@ -267,12 +289,16 @@ the justice system. Finally he killed a series of people in the justice system
 and failed, and died.  Comparing to Clyde Shelton, Ned Stark did not fight
 back. Or maybe it's just he has no chance or possibility to do that.
 
+![](http://whudoc.qiniudn.com/2016/ep4/幻灯片a.jpg)
+
 The Life of David Gale. Gale is a professor and advocate to abanden the death
 penalty. But He and his coworkers can't persuade the mayer. So he faked a
 murderer so he would mistakenly be sentenced to death. After his death, his
 coworkers revealed the story. In this way, he claimed his political appeal.
 Comparing to David Gale, Ned Stark is not smart enough to play this kind of
 trick to gather supports from other people.
+
+![](http://whudoc.qiniudn.com/2016/ep4/幻灯片b.jpg)
 
 (The dream cast in concert.)
 
@@ -282,6 +308,8 @@ Valjean is not real bad person. He was confused, struggling for a "WHY".
 Finally, He jumped the river. Comparing the Jevart, Ned's death is not noble,
 he was executed (decapitated) in public, for treason.  What a hilarious and
 pathetic death.
+
+![](http://whudoc.qiniudn.com/2016/ep4/幻灯片c.jpg)
 
 But don't get me wrong, I really like this character, like this straight man,
 like his discipline. I just feel bad when he did nothing when approaching

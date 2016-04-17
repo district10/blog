@@ -23,6 +23,15 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+[实习机会 - 微软亚洲研究院](http://www.msra.cn/zh-cn/jobs/interns/internopenings.aspx)
+
+:   ![](http://whudoc.qiniudn.com/2016/msra-intern.png)
+
+    refs and see also
+
+      - [互联网搜索与挖掘组_研究实习生 - 微软亚洲研究院](http://www.msra.cn/zh-cn/jobs/interns/web-search-and-mining-group.aspx)
+      - [视觉计算组_研究实习生 - 微软亚洲研究院](http://www.msra.cn/zh-cn/jobs/interns/vc-intern.aspx)
+
 [谷阿莫说的科科是什么意思呢_谷阿莫吧_百度贴吧](http://tieba.baidu.com/p/3782930470)
 
 科科也作颗颗或ㄎㄎ 也有冷眼旁观或不屑的冷笑之意
