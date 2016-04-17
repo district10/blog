@@ -23,6 +23,8 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+[GPG signature verification](https://github.com/blog/2144-gpg-signature-verification)
+
 [实习机会 - 微软亚洲研究院](http://www.msra.cn/zh-cn/jobs/interns/internopenings.aspx)
 
 :   ![](http://whudoc.qiniudn.com/2016/msra-intern.png)
