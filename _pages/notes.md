@@ -23,6 +23,14 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+[谷阿莫说的科科是什么意思呢_谷阿莫吧_百度贴吧](http://tieba.baidu.com/p/3782930470)
+
+科科也作颗颗或ㄎㄎ 也有冷眼旁观或不屑的冷笑之意
+
+像一个杀手锏是闹胳肢窝的喜剧演员。
+
+youtube上三大电影吐槽系列：诚实预告片，HISHE，cinemasins。第三个相对在国内不那么火，但也很有趣，答主可以去看看
+
 - `http://github.com/district10/blog/commits/master.atom`
 - `https://github.com/district10.atom`
 - George R.R. Martin on Syrian (`['sɪrɪən]`, 叙利亚) refugees: 'Let them in'
