@@ -201,10 +201,12 @@ $(function($){
 
         .addCode("s,h,o,w", function() {
             $('.tzx-hide').removeClass('tzx-hide').addClass('tzx-show');
+            $('div.tzx-drawer').children().children('dd.tzx-drawer-hide').removeClass('tzx-drawer-hide').addClass('tzx-drawer-show');
         })
 
         .addCode("h,i,d,e", function() {
             $('.tzx-show').removeClass('tzx-show').addClass('tzx-hide');
+            $('div.tzx-drawer').children().children('dd.tzx-drawer-show').removeClass('tzx-drawer-show').addClass('tzx-drawer-hide');
         })
         .addCode("x", function() {
             $('.tzx-show').removeClass('tzx-show').addClass('tzx-hide');

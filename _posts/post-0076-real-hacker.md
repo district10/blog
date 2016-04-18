@@ -147,7 +147,7 @@ Pandoc 作者 [jgm (John MacFarlane)](https://github.com/jgm) 的回复：
 > only ignores line breaks between two East Asian wide characters.
 > This makes it better suited for writing with a mix of East Asian
 > and non-East Asian scripts.
-
+>
 > Closes [#2586](https://github.com/jgm/pandoc/issues/2586).
 
 大神修改后的代码：
@@ -207,6 +207,6 @@ unwanted space when exporting org-mode to html."
 
     ![pangu-spacing 效果](http://whudoc.qiniudn.com/pangu-spacing.gif)
 
-<!--
+<div class="tzx-hide">
 我要好好学习科学文化知识，像 jgm 一样精通数学和计算机。
--->
+</div>
