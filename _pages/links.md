@@ -220,3 +220,5 @@ Links | 链签
 #. [程序猿__int64Ago](https://int64ago.org/)
 #. [所有日志 | 王子亭的博客](https://jysperm.me/list/)
 #. [Ruby Sites » Ruby China](https://ruby-china.org/sites)
+#. [武大遥感——武汉大学遥感信息工程学院](http://rsgis.whu.edu.cn/)
+#. [测绘遥感信息工程国家重点实验室](http://www.lmars.whu.edu.cn/index.jsp)

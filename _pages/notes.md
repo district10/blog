@@ -23,6 +23,24 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+曾有一调查显示正在学习经济（很热门）的学生里头，超过九成的学生表示学习经济是为了赚钱，剩下不倒一成的则表示是兴趣使然。若干年后的追踪调查显示当初那不足一成的学生真就在这块领域有所成就，而那超过九成里头的大多数人依旧默默无闻。（记不太清楚，好像是在美国的一个调查，大致意思如此）
+
+说的和网页设计无关的话，折叠请随意，只是想说任何一个行业做深了都会有前途，一开始就考虑功利性问题是题主的心态不大对，为何不先问问自己是否喜欢网页设计呢，如果喜欢那还犹豫什么。
+
+茅塞顿开。。。本来想来留个评论的发现被拉黑了，换马甲来赞一下！
+
+故事的真假姑且不论，在经济学上，一旦人们做了某种选择，就好比走上了一条不归之路
+，惯性的力量会使这一选择不断自我强化，并让你轻易走不出去，我们一般称之为“路径依
+赖”。
+
+[IBM2016校园招聘](http://search.ibmcampus.com/sc/show_job_detail.php?jobid=76686290)
+
+:   小璇璇想去试试这个。
+
+[【GeoScience Café】樊珈珮：获得special offer的秘诀](http://www.lmars.whu.edu.cn/detail.jsp?id=y0iih62yl7)
+
+[Geocafe](http://www.lmars.whu.edu.cn/list.jsp?id=y0hxafezty)
+
 [下一个十年，能读完吗？ (评论: TCP/IP Illustrated)](https://book.douban.com/review/5555969/)
 
 :   如果Richard Steven没有英年早逝，想必Internet的世界一定会因为他变得更美好一点点。
@@ -3135,10 +3153,9 @@ refs and see also
 
 [Detailed Positioning - Learn to Code Advanced HTML & CSS](http://learn.shayhowe.com/advanced-html-css/detailed-css-positioning/)
 
-[遥感信息工程学院2015年硕士研究生复试成绩及拟录取名单 - 硕士招生 - 武大遥感——武汉大学遥感信息工程学院](http://rsgis.whu.edu.cn/index.php?m=content&c=index&a=show&catid=154&id=4986)
-
-[遥感信息工程学院2016年硕士研究生复试录取工作实施细则 - 硕士招生 - 武大遥感——武汉大学遥感信息工程学院](http://rsgis.whu.edu.cn/index.php?c=index&a=show&catid=154&id=5374)
-
+- [遥感信息工程学院2015年硕士研究生复试成绩及拟录取名单 - 硕士招生 - 武大遥感——武汉大学遥感信息工程学院](http://rsgis.whu.edu.cn/index.php?m=content&c=index&a=show&catid=154&id=4986)
+- [遥感信息工程学院2016年硕士研究生复试录取工作实施细则 - 硕士招生 - 武大遥感——武汉大学遥感信息工程学院](http://rsgis.whu.edu.cn/index.php?c=index&a=show&catid=154&id=5374)
+- [武汉大学遥感信息工程学院2016年硕士研究生入学复试结果公示 - 学院通知 - 武大遥感——武汉大学遥感信息工程学院](http://rsgis.whu.edu.cn/index.php?m=content&c=index&a=show&catid=123&id=5395)
 
 https://github.com/settings/tokens
 

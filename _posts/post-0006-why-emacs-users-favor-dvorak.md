@@ -23,6 +23,7 @@ tags:
 #. About Neo: [Neo 官方][neo_official], [Wikipedia: neo][neo_wiki]
 #. [Steve Yegge：编程的肮脏小秘密](http://blog.jobbole.com/64959/)
 #. [键盘史上的 12 个典范](http://www.oschina.net/news/56704/keyboards)
+#. [原来我们每天都在用的键盘，竟是一个精心谋划的「反人类」设计？ - 简书](http://www.jianshu.com/p/9d79e9a80173#)
 
 [wikipedia]: http://zh.wikipedia.org/wiki/%E5%BE%B7%E6%B2%83%E5%A4%8F%E5%85%8B%E9%8D%B5%E7%9B%A4
 [baidu]: http://baike.baidu.com/view/1410112.htm
@@ -85,7 +86,10 @@ tags:
 ### 评测 qwerty，dvp，dvpe
 
 1. **说明**
-在 [pa7 的 Keyboard-Heatmap][pa7] 基础上我添加了我的 dvpe 布局，可以到 [**Github: district10 / Keyboard-Heatmap**][myheatmap] 下载，或者[直接下载][heatmap_down] 解压后用浏览器打开 `index.html` 即可：
+
+在 [pa7 的 Keyboard-Heatmap][pa7] 基础上我添加了我的 dvpe 布局，可以到
+[**Github: district10 / Keyboard-Heatmap**][myheatmap] 下载，或者[直接下载][heatmap_down] 解压后用浏览器打开 `index.html`，
+或者直接访问 <http://tangzhixiong.com/Keyboard-Heatmap/>：
 
 ![Heatmap][illus]
 

@@ -9,7 +9,7 @@ tags:
     - nice
 ...
 
-<div class="slogan">Welcome to dvorak4tzx's Blog.</div>
+<div class="slogan" title="欢迎来到 TANG ZhiXiong 的博客。DVORAK4TZX/dvorak4tzx &rarr; Dvorak 键盘布局 for TANG ZhiXiong (TZX)">Welcome to dvorak4tzx's Blog.</div>
 <p id="tzxslogan">
 Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序员中广受欢迎，尤其是那些 Emacs[^emacs] 用户，
 比如 Steve Yegge、Sacha Chua、李杀。我也用 dvorak，所以这个网站叫 dvorak4tzx。[^info]</p>
@@ -17,7 +17,13 @@ Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序�
 [^dvorak]: 见 [为什么 Emacs 用户爱德沃夏克](post-0006-why-emacs-users-favor-dvorak.html)。
 [^qwerty]: [QWERTY - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/QWERTY)。
 [^emacs]: [Emacs - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Emacs)。
-[^info]: 这是 <http://tangzhixiong.com> 的一部分。（本站使用火狐浏览器才能达到最佳阅读效果。因为我没有测试别的浏览器。）
+[^info]: 作为一个程序员，[寡人打字速度比风快](typing.html)，只要不是在 QWERTY 键盘上（每次被人误会为不会打字，我都很郁闷……）。
+
+    LostAbaddon:
+
+    > 上帝为了避免人类都联合起来，就发明了各种语言，和，德沃夏克布局。
+
+    [![](http://whudoc.qiniudn.com/2016/29284-caa7365f38529250.png)](post-0006-why-emacs-users-favor-dvorak.html "普通键盘打字世界纪录就是在 Dvorak 上创造的呢。")
 
 <div class="tzx-fright">
 [![Build Status](https://travis-ci.org/district10/blog.svg?branch=master)](https://travis-ci.org/district10/blog)

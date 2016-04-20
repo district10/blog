@@ -784,6 +784,8 @@ pre.tzx-poem {
 	padding-bottom: 4em;
 }
 
+code.tzx-timestamp { color: gray; }
+
 h1 code.tzx-timestamp,
 h2 code.tzx-timestamp,
 h3 code.tzx-timestamp,
@@ -806,12 +808,12 @@ h6 code.tzx-timestamp { color: white; }
     border: 1px dashed #9ddcff; 
 }
 
-.tzx-drawer-show { display: block; }
+.tzx-drawer-show { display: auto; }
 .tzx-drawer-hide { display: none; }
 .tzx-hide { display: none; }
-.tzx-show { display: block; border: 1px solid red; }
+.tzx-show { display: auto; border: 1px solid red; }
 .tzx-changes-hide { display: none; }
-.tzx-changes-show { display: block; }
+.tzx-changes-show { display: auto; }
 
 a.tzx-header-anchor {
     text-decoration: none;
