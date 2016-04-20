@@ -10,11 +10,11 @@ tags:
 Function Pointer Stack in C
 ===========================
 
-注：这些语法不属于规范的内容，只有用 GCC 才能编译。
-^[不过 Windows 上也有这个头文件和那些函数，在 `C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h` 里。]
+注：这些语法不属于规范的内容，只有用 GCC 才能编译。^[不过 Windows 上也有这个头
+文件和那些函数，在 `C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\vadefs.h` 里。]
 当然你可以在装个 Windows 的 GCC：[MinGW Distro - nuwen.net](http://nuwen.net/mingw.html)。
 
-C is awesome -- function pointer stack
+这里就不说怎么编译运行了，可以参考：[C 语言的 argc、argv 干嘛的？#编译后调用](post-0008-argc-argv-in-c.html#%E7%BC%96%E8%AF%91%E5%90%8E%E8%B0%83%E7%94%A8)。
 
 源码：
 

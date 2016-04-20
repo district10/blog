@@ -10,6 +10,39 @@ tags:
 Debian Configurations
 =====================
 
+<div class="tzx-drawer" shy>
+R.I.P.
+
+:   Ian Ashley Murdock (28 April 1973 – 28 December 2015) was an American
+    software engineer, known for being the founder of the Debian project and
+    Progeny Linux Systems, a commercial Linux company.
+
+    Murdock died on 28 December 2015 in San Francisco. As of 1 January 2016, no
+    details of his cause of death have been officially released.
+
+    The last tweets from Murdock's Twitter account first announced that he
+    would commit suicide, then said he would not. He reported having an
+    altercation (争执) with police, and finally **declared an intent to devote his life
+    to opposing police abuse**. His Twitter account was taken down shortly
+    afterwards.
+
+    The San Francisco police confirmed he was detained (被扣留), saying he
+    matched the description in a reported **attempted break-in** and that he
+    appeared to be drunk. The police stated that he became violent and was
+    ultimately taken to jail on suspicion of four misdemeanor (`[,mɪsdɪ'minɚ]`
+    n. 轻罪；品行不端) counts. They added that he did not appear to be suicidal
+    and was medically examined prior to release. Later, police returned on
+    reports of a possible suicide. The city medical examiner’s office confirmed
+    Murdock was found dead.
+
+    refs and see also
+
+      - [Ian Murdock - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Ian_Murdock)
+      - [要闻：Debian 创始人 Ian Murdock 离世 · LinuxTOY](https://linuxtoy.org/archives/breaking-father-of-debian-ian-murdock-passed.html)
+      - [Debian 创始人 Ian Murdock 先生去世，享年 42 岁！-新闻 ◆ 快讯|Linux.中国-开源社区](https://linux.cn/article-6828-1.html)
+      - [Bits from Debian - Debian 深切哀悼 Ian Murdock 的离世](https://bits.debian.org/2015/12/mourning-ian-murdock-zh-CN.html)
+</div>
+
 ## `/etc/apti/sources.list`
 
 <small>

@@ -43,6 +43,7 @@ a + b = 5 + 7 = 12
 Windows:
 
 先到 `C:/Windows/System32` 文件夹下创建一个文件 `mycl.bat`：^[如果你的 VS2010 是 Express 版本，应该只能编译 32 位程序，得把 `amd64` 改成 `x86`。]
+
 ```bash
 @echo off
 %comspec% /c ""c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\vcvarsall.bat" amd64 && cl.exe %*"

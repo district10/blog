@@ -219,3 +219,4 @@ Links | 链签
 #. [译者风采(加入我们) - GDG字幕组官方网站](http://www.gfansub.com/volunteers)
 #. [程序猿__int64Ago](https://int64ago.org/)
 #. [所有日志 | 王子亭的博客](https://jysperm.me/list/)
+#. [Ruby Sites » Ruby China](https://ruby-china.org/sites)
