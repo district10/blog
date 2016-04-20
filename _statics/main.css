@@ -784,9 +784,12 @@ pre.tzx-poem {
 	padding-bottom: 4em;
 }
 
-code.tzx-timestamp {
-    color: white;
-}
+h1 code.tzx-timestamp,
+h2 code.tzx-timestamp,
+h3 code.tzx-timestamp,
+h4 code.tzx-timestamp,
+h5 code.tzx-timestamp,
+h6 code.tzx-timestamp { color: white; }
 
 .tzx-shy dd { display: none; }
 .tzx-shy dl { cursor: crosshair; }

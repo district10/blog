@@ -27,6 +27,8 @@ tags:
 
 [^vimonwindows]: 最近发现 Vim 的两个剪切板在 Windows 是没有区别，`*` 和 `+` 都是 `*`。不知道是不是我没有配置好。
 
+    顺便说说这两个剪切板怎么记。`*` (star) 存的是 selection 的内容，`+` (plus) 存的是 primary clipboard 的内容。
+
 其他
 ----
 
@@ -60,3 +62,7 @@ CLIP
 
     CLIP < README.TXT   将 readme.txt 的一份文本放入 Windows 剪贴板。
 ```
+
+## Refs and see also
+
+- [当你复制一个网页的时候,你的剪切板里是什么呢? - SegmentFault](https://segmentfault.com/q/1010000004934818/a-1020000004961799)

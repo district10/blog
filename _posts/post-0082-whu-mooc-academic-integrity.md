@@ -11,8 +11,7 @@ tags:
 WHU MOOC Academic Integrity
 ===========================
 
-> [研究生学术道德与学术规范
-    （2015 · 七期 · 重修班）](http://ptr.chaoxing.com/course/3629961.html)
+> [研究生学术道德与学术规范](http://ptr.chaoxing.com/course/3629961.html)
 
 ## 学术道德与学术规范概述
 

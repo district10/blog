@@ -1,11 +1,17 @@
 ---
-title: Presentation
+title: 组会分享：RAMP 是什么？
 date: 2016-02-24
 key-words:
     - cvrs
 tags:
     - cvrs
     - presentation
+...
+
+组会分享：RAMP 是什么？
+======================
+
+<!--
 cssfile:
     - asciinema-player.css
 jsfile:
@@ -14,369 +20,163 @@ before-after: |
     <script>
         asciinema_player.core.CreatePlayer('player-container', 'demo.json');
     </script>
-...
-
-Presentation
-============
-
 [asciinema - Record and share your terminal sessions, the right way](https://asciinema.org/)
-
 <div id="player-container"></div>
+-->
 
-## = R A M P =
+这是组会上的一点分享。
 
-#. <kbd>R</kbd>egExp
-#. <kbd>A</kbd>sync & <kbd>M</kbd>ake
-#. <kbd>P</kbd>ipe
+只分享一点使用场景，不深入展开讨论。
 
-### RegExP - `R`AMP
+![幻灯片1](http://whudoc.qiniudn.com/ramp/幻灯片1.JPG)
 
-1. everything
-2. ag: `ag 'gpu::cornerHarris\(.*src.*\)'`{.bash}
-3. notepad++
+RAMP 是我自己造的词。Nothing special。Take the ramp 有走斜坡的意思，这里引申为
+循序渐进，蒸蒸日上。
 
-### Async & Make (Part I) - R`A`MP
+![幻灯片2](http://whudoc.qiniudn.com/ramp/幻灯片2.JPG)
 
-1. Async in Javascript Community: Node.js
-2. Async in C++: STL, Boost, folly
-3. Async for What?
-4. [facebook/folly: An open-source C++ library developed and used at Facebook.](https://github.com/facebook/folly)
+![幻灯片3](http://whudoc.qiniudn.com/ramp/幻灯片3.JPG)
 
-### Pipe - RAM`P`
+搜索神器，每天必用。
 
-### Async & Make (Part II) - R`A`MP
+![幻灯片4](http://whudoc.qiniudn.com/ramp/幻灯片4.JPG)
 
-借鉴其他社区
+类似 Everything 的一段命令行脚本。
 
-```javascript
-return QString().sprintf( "%02d:%02d:%02d.%03d", // e.g. 01:23:45.678
-                          dt.time().hour(),
-                          dt.time().minute(),
-                          dt.time().second(),
-                          dt.time().msec() );
-```
+![幻灯片5](http://whudoc.qiniudn.com/ramp/幻灯片5.JPG)
 
-```cpp
-return QString().sprintf( "%02d:%02d:%02d.%03d"  // e.g. 01:23:45.678
-                        , dt.time().hour()
-                        , dt.time().minute()
-                        , dt.time().second()
-                        , dt.time().msec() );
+上古程序员的一点点 grep，才能拿到自己想要的资料。
+真是要极大的耐心。
 
-int TextureNotation::Color2Int( const QColor &c )
-{
-    // int = [a|b|g|r]
-    return ( c.alpha() << 24
-           | c.blue()  << 16
-           | c.green() <<  8
-           | c.red() );
-}
-```
+![幻灯片6](http://whudoc.qiniudn.com/ramp/幻灯片6.JPG)
 
-```javascript
-// chaining demo 1
-math.chain(3)
-    .add(4)
-    .multiply(2)
-    .done(); // (3 + 4) * 2 = 14
+`ag` 和 `pt` 都是和 `grep` 类似的工具。
 
-// chaining demo 2
-d3.selectAll("circle").transition()
-    .duration(750)
-    .delay(function(d, i) { return i * 10; })
-    .attr("r", function(d) { return Math.sqrt(d * scale); });
-```
+![幻灯片7](http://whudoc.qiniudn.com/ramp/幻灯片7.JPG)
 
-```bash
-$ cat file.txt | tr -d ',\n' | wc -c
-```
+即使 nodepad++，也可以进行正则化的搜索。老师还特地说了，
+nodepad++ 也可以在整个文件夹下搜，同时说这时候替换操作可能很坑，
+因为一下就会修改很多文件，很可能把代码改残了。
 
-<small>
-```cpp
-// TextureNotation::TN_Curve curve;
-curve.setAnchor(a)
-     .setText(t)
-     .setInfo(i)
-     .setColor(c) << TextureNotation::TN_Pt( QPointF( 0.0, 0.0 ) )
-                  << TextureNotation::TN_Pt( QPointF( 1.0, 0.0 ) )
-                  << TextureNotation::TN_Pt( QPointF( 1.0, 1.0 ) )
-                  << TextureNotation::TN_Pt( QPointF( 1.0, 0.0 ) );
+![幻灯片8](http://whudoc.qiniudn.com/ramp/幻灯片8.JPG)
 
-// implementation
-class TextureNotation {
-    // ...
-    struct TN_Curve {
-        // members
-        // default constructor
-        // chaining
-        TN_Curve &setAnchor( const TN_Pt &a = TN_Pt() ) { anchor = a; return *this; }
-        TN_Curve &setText( const QString &t = QString("Curve") ) { text = t; return *this; }
-        TN_Curve &setInfo( const QString &i = QString() ) { info = i; return *this; }
-        TN_Curve &setColor( const QColor &c = QColor(Qt::green) ) { color = c; return *this; }
-        TN_Curve &operator<<( const TN_Pt &pt )
-        {
-            this->points << pt;
-            return *this;
-        }
-   }
-   // ...
-}
-```
-</small>
+Vim 里有正则，但真正的正则高手都应该学习 Perl。处理文本的最佳工具。
 
-```cpp
-Future<double> f =
-    fooFuture(input)
-    .then(
-                [](Output o) {
-                    return o * M_PI;
-                }
-         )
-    .onError(
-                [](std::exception const& e) {
-                    cerr << "Oh bother, " << e.what()
-                         << ". Returning pi instead." << endl;
-                    return M_PI;
-                }
-            );
-/* ********************************************************** */
-// get() first waits, and then returns the value
-cout << "Result: " << f.get() << endl;
-```
+![幻灯片9](http://whudoc.qiniudn.com/ramp/幻灯片9.JPG)
 
-```cpp
-double f( double input ) {
-    return input * M_PI; // M_PI = 3.14...
-}
-```
+异步概念的引入。作用是什么，解决了什么问题？引入了什么问题？怎么解决？
 
-```cpp
-#include <folly/futures/Future.h>
-using namespace folly;
-using namespace std;
+![幻灯片10](http://whudoc.qiniudn.com/ramp/幻灯片10.JPG)
 
-void foo(int x) {
-    // do something with x
-    cout << "foo(" << x << ")" << endl;
-}
+风格上的借鉴，是最直接但也最低层次的借鉴。
 
-    // ...
+![幻灯片11](http://whudoc.qiniudn.com/ramp/幻灯片11.JPG)
 
-    cout << "making Promise" << endl;
-    Promise<int> p;
-    Future<int> f = p.getFuture();
-    f.then(foo);
-    cout << "Future chain made" << endl;
+![幻灯片12](http://whudoc.qiniudn.com/ramp/幻灯片12.JPG)
 
-    // ... now perhaps in another event callback
+接口上的借鉴是更高层次的借鉴。很多情况下，问题都不是这个编程语言能不能做到（因
+为通常都能），而是你想要什么样的功能。实现起来不会很复杂，但好的接口用起来真是
+让人心情舒畅。这里用了 d3 的一点例子，其实用 jQuery 代码做例子可能效果更好。
 
-    cout << "fulfilling Promise" << endl;
-    p.setValue(42);
-    cout << "Promise fulfilled" << endl;
-```
+![幻灯片13](http://whudoc.qiniudn.com/ramp/幻灯片13.JPG)
 
-Case Study: [district10/raw2pts: Raw file 2 point cloud file](https://github.com/district10/raw2pts)
+![幻灯片14](http://whudoc.qiniudn.com/ramp/幻灯片14.JPG)
 
-```plain
-Compile
+C++ 中的异步，Facebook 的实践。
 
-    $ gcc raw2pts.c -o raw2pts
+![幻灯片15](http://whudoc.qiniudn.com/ramp/幻灯片15.JPG)
 
-Run
+![幻灯片16](http://whudoc.qiniudn.com/ramp/幻灯片16.JPG)
 
-    $ raw2pts demo.raw demo.txt
+![幻灯片17](http://whudoc.qiniudn.com/ramp/幻灯片17.JPG)
 
-Utils
+管道的好处是什么？首先你得了解 stdin，stdout，stderr。
 
-    * 把 raw2pts.exe 放到根目录。
-    * 把 raw 文件放到 batch 文件夹，双击 batch.sh，可以批量转化。
-    * 把 txt 文件放到 merge 文件夹，双击 merge.sh，可以合并点云。
+![幻灯片18](http://whudoc.qiniudn.com/ramp/幻灯片18.JPG)
+
+举例说明，好处就是自己只做一部分处理。一个更复杂的操作就是把简单操作串起来。
+
+![幻灯片19](http://whudoc.qiniudn.com/ramp/幻灯片19.JPG)
+
+实例，我们在长沙的项目中，用到了什么。
+
+![幻灯片20](http://whudoc.qiniudn.com/ramp/幻灯片20.JPG)
+
+![幻灯片20](http://whudoc.qiniudn.com/ramp/幻灯片20.JPG)
+
+好处和不好的地方在哪儿？
+
+![幻灯片21](http://whudoc.qiniudn.com/ramp/幻灯片21.JPG)
+
+更好的解决方案？
+
+![幻灯片22](http://whudoc.qiniudn.com/ramp/幻灯片22.JPG)
+
+还可以更好。
+
+![幻灯片23](http://whudoc.qiniudn.com/ramp/幻灯片23.JPG)
+
+好到完全不改变既有代码，又不用担心日志丢失（未来得及存储）。
+
+![幻灯片24](http://whudoc.qiniudn.com/ramp/幻灯片24.JPG)
+
+Make 就是一种异步。你能体会一下么？
+
+![幻灯片25](http://whudoc.qiniudn.com/ramp/幻灯片25.JPG)
+
+Make 和脚本的对比。这是两种完全不同的思考角度。
+
+![幻灯片26](http://whudoc.qiniudn.com/ramp/幻灯片26.JPG)
+
+还是以长沙项目中的一段小代码（和主要工程代码无关），说明 Makefile 相比
+Shell 脚本的优势。GitHub：[district10/raw2pts: Raw file (of C2 camera) 2 point cloud file](https://github.com/district10/raw2pts)。
+
+![幻灯片27](http://whudoc.qiniudn.com/ramp/幻灯片27.JPG)
+
+![幻灯片28](http://whudoc.qiniudn.com/ramp/幻灯片28.JPG)
+
+![幻灯片29](http://whudoc.qiniudn.com/ramp/幻灯片29.JPG)
+
+总结。RAMP 分别是什么，解决了什么问题。有什么优缺点。
+
+![幻灯片30](http://whudoc.qiniudn.com/ramp/幻灯片30.JPG)
+
+Take the RAMP，and ROCK！
+
+![幻灯片31](http://whudoc.qiniudn.com/ramp/幻灯片31.JPG)
 
 ---
-Windows 系统上需要安装 git bash。
-```
 
-```bash
-#!/bin/bash
+不是组会分享的内容，只作一点补充：
 
-for i in *.raw;
-do
-    o=${i%.*}.txt
-    echo "$i => $o"
-    ../raw2pts $i $o
-    rm $i
-done
-```
+1. Turtoise SVN 也可以 diff。
 
-```plain
-> stdout.txt
-2> stderr.txt
-&> stdout-stderr.txt
-```
+![幻灯片32](http://whudoc.qiniudn.com/ramp/幻灯片32.JPG)
 
-## = R A M P = for what?
+![幻灯片33](http://whudoc.qiniudn.com/ramp/幻灯片33.JPG)
 
-### flow
+2. Visual Studio 的一些插件，尤其是 Productivity Powertools
+的 Vertical tabs 很赞。
 
-### no distraction
+![幻灯片34](http://whudoc.qiniudn.com/ramp/幻灯片34.JPG)
 
-```cpp
-freopen( "log-stdout.txt", "w", stdout );
-freopen( "log-stderr.txt", "w", stderr );
-```
+![幻灯片35](http://whudoc.qiniudn.com/ramp/幻灯片35.JPG)
 
-```bash
-$ ls -l        >   stdout.txt
-$ grep da *   2>   stderr.txt
-$ ag da *     &>   stdout-n-stderr.txt
+3. 本地的 HTML 文档（当然苹果系统的 Dash 也是必买 app，比 HTML 搜文档赞）。
 
-$ your-binary.exe &> log.txt
-```
+![幻灯片36](http://whudoc.qiniudn.com/ramp/幻灯片36.JPG)
 
-```bash
-$ your-binary.exe | tee log.txt | less -F
-```
+4. Pandoc，文章转化工具，我几乎所有文字都是在 Vim 里写 Markdown，然后用 Pandoc 转
+成各种格式如 HTML，DOCX。
 
-```cpp
-// double.c
-#include <stdio.h>
+![幻灯片37](http://whudoc.qiniudn.com/ramp/幻灯片37.JPG)
 
-int main( void )
-{
-    float f;
-    scanf( "%f", &f );
-    printf( "%f\n", 2.0f * f );
-    return 0;
-}
-```
+---
 
-```bash
-$ gcc double.c -o double
-$ double
-23<RET>
-46.000000
-$ echo 23 | double
-46.000000
-$ echo 23 | triple
-69.000000
-$ echo 23 | double | triple
-138.000000
-```
+Vertical Tabs 在 Firefox 浏览器里也有，插件下载：
 
-```bash
-#!/bin/bash
-
-for i in *.raw;
-do
-    o=${i%.*}.txt
-    echo "$i => $o"
-    ../raw2pts $i $o
-    rm $i
-done
-```
-
-```makefile
-input   = input
-output  = output
-pts	    = $(patsubst $(input)/%.raw, $(output)/%.txt, $(wildcard $(input)/*.raw))
-allpts  = $(output)/all.txt
-
-all: raw2pts $(pts) $(allpts)
-
-$(allpts): $(pts)
-	cat $^ > $@
-
-$(pts): $(output)
-$(output):
-	mkdir -p $@
-
-$(pts): raw2pts
-raw2pts:
-	gcc raw2pts.c -o $@
-
-$(output)/%.txt: $(input)/%.raw
-	raw2pts $< $@
-```
-
-## Slides
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片1.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片2.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片3.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片4.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片5.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片6.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片7.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片8.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片9.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片10.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片11.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片12.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片13.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片14.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片15.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片16.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片17.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片18.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片19.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片20.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片20.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片21.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片22.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片23.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片24.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片25.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片26.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片27.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片28.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片29.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片30.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片30.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片31.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片32.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片33.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片34.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片35.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片36.JPG)
-
-![](http://whudoc.qiniudn.com/ramp/幻灯片37.JPG)
+  - [VimFx@akhodakivskiy.github.com.xpi](http://whudoc.qiniudn.com/2016/VimFx@akhodakivskiy.github.com.xpi)
+  - [tabkit2@pikachuexe.amateur.hk.xpi](http://whudoc.qiniudn.com/2016/tabkit2@pikachuexe.amateur.hk.xpi)
 
 ---
 

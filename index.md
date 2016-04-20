@@ -40,10 +40,11 @@ Search:[^koan]<br>
 <div style="font-variant:small-caps;">Posts</div>
 <div class="posts"><!--...-->
 * 2016-03-18 [背景知识的重要性](post-0090-prerequisites.html)
-* 2016-03-02 [Leet Code](post-0087-leetcode.html)
-* 2016-03-01 [Game of Throne](post-0086-game-of-throne-series.html)
-* 2016-01-14 [Complex Network Notes](post-0084-complex-network-notes.html)
-* 2016-01-07 [WHU MOOC Academic Integrity](post-0082-whu-mooc-academic-integrity.html)
+<!--* 2016-03-02 [Leet Code](post-0087-leetcode.html)-->
+* 2016-03-01 [「Game of Throne | 权利的游戏」 | 英语课 Presentation](post-0086-game-of-throne-series.html)
+* 2016-02-04 [组会分享：RAMP 是什么？](post-0085-cvrs-presentation.html)
+* 2016-01-14 [Complex Network Notes | 复杂网络及其应用笔记](post-0084-complex-network-notes.html)
+* 2016-01-07 [WHU MOOC Academic Integrity | 研究生学术道德与学术规范在线课程](post-0082-whu-mooc-academic-integrity.html)
 * 2015-12-25 [Learning jQuery](post-0081-learning-jquery.html)
 * 2015-12-18 [软件开发者路线图](post-0080-apprenticeship.html)
 * 2015-12-17 [Lingoes 网络词典](post-0079-lingoes-dict.html)
@@ -51,7 +52,7 @@ Search:[^koan]<br>
 * 2015-12-14 [小波变换在图像处理分析中的应用](post-0077-wavelet-transform.html)
 * 2015-12-13 [膜拜大神](post-0076-real-hacker.html)
 * 2015-12-08 [什么是投影？](post-0075-what-is-projection.html)
-* 2015-11-30 [OpenCV::CvANN_MLP](post-0072-cvann-mlp.html)
+* 2015-11-30 [OpenCV::CvANN_MLP | 空间数据智能计算课程编程大作业](post-0072-cvann-mlp.html)
 * 2016-03-24 [GIS 理论与技术 - 作业 1, 6, 7](post-0091-gis-misc.html)
 * 2015-11-23 [Vim Rules](post-0070-some-vim-rules.html)
 * 2015-11-23 [GIS 空间分析与应用建模](post-0069-gis-spatial-analysis-application-modeling.html)

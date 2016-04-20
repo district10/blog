@@ -536,10 +536,12 @@ int main()
 3. 获取样本
 -----------
 
-从武汉市街头拍到的各种路牌照片中提取正负样本，用的是我们组写的 Sign Cutter 程序，
-这个程序用到了 OpenCV 和 Qt4 库，界面如下
+从武汉市街头拍到的各种路牌照片中提取正负样本，用的是我们组写的 Sign Cutter 程序
+（GitHub：<https://github.com/district10/SignProcessing>），这个程序用到了 OpenCV 和 Qt4 库，界面如下
 
 ![Sign Cutter][signcutterui]
+
+![这张文档图是不是更美观？](http://whudoc.qiniudn.com/2016/annlau-ppt.png)
 
 利用它可以很快速地导入源影像，并进行切片处理。【保存切片】操作会把框选区域
 保存成一个切片图，作为我们人工选取的正样本。同时，正样本需要转化到 24 &times; 24 的 RGB 图像，
@@ -619,6 +621,29 @@ Sample^[完整版可以在 <http://gnat.qiniudn.com/sc/info-all.txt> 下载。]
 ---------------
 
 NN 算法参数设置的实验。
+
+当时我是把赵的训练和测试代码修改了一个命令行版本，然后用脚本调用，来测试不同的 layer 层数，
+对训练结构的影响，结果是 5 层最好。就跟所有利用深度学习解决问题的人一样，我不知道……为什么 5 层好，
+因为是试出来的。我们甚至不应该尝试去“用猜想自圆其说地解释为什么 5 层就是好”。Dafuq……
+
+log.txt
+
+:   ```tzx-bigquote
+    7014, 2871, 0.984223
+    sigmoid params: 1, 1
+    bp params: 0.1, 0.1
+    layersize: 159, 79, 26, 6, 1,
+    ```
+
+    说明：
+
+      - 第一行是「训练样本数」，「测试样本数」，正确率
+      - 第二行 sigmoid 函数的两个参数 alpha，beta
+      - bp 参数
+      - 神经网络 layer 每层节点数
+
+测试的结果（打包）：<http://whudoc.qiniudn.com/2016/sign-processing-results.7z>，
+包含训练后的 xml 数据，可以直接导入进行 predict。
 
 ---
 
