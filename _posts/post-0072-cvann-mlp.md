@@ -645,6 +645,10 @@ log.txt
 测试的结果（打包）：<http://whudoc.qiniudn.com/2016/sign-processing-results.7z>，
 包含训练后的 xml 数据，可以直接导入进行 predict。
 
+[训练得到的 xml 参数](http://whudoc.qiniudn.com/2016/bp.xml):
+
+:   ![](http://whudoc.qiniudn.com/2016/bp.png)
+
 ---
 
 Refs

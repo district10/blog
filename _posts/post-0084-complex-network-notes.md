@@ -16,26 +16,6 @@ Complex Network Overall | 复杂网络及其应用
   - [小论文 PDF 版本](http://whudoc.qiniudn.com/2016/complex-network-tangzhixiong-2016-01.pdf)
   - [小论文源码打包](http://whudoc.qiniudn.com/2016/空间分析应用建模-2015282130087-唐志雄.7z)
 
-> LaTeX 模板来自[武汉大学黄正华老师](http://aff.whu.edu.cn/huangzh/)。
-
-注意：PDF 中有动画内容需要用“高级”点的 PDF 阅读器查看（SumatraPDF 不行）。
-
-
-## 编译说明
-
-#. 要先安装 Adobe fonts 字体；
-#. 再从 [CTeX] 下载完全 LaTeX 安装包；
-#. 再下载安装 [GitBash]（调用编译脚本）和 [Pandoc]（Markdown 转换为 TeX）；
-#. 双击 `_pdf.sh`{.bash} 即可编译出 PDF。
-
-[CTeX]: http://www.ctex.org/CTeXDownload
-[GitBash]: http://7xjdjw.com1.z0.glb.clouddn.com/Git-1.9.5-preview20150319.exe
-[Pandoc]: http://7xjdjw.com1.z0.glb.clouddn.com/pandoc-1.13.2-windows.msi
-
-| TANG ZhiXiong 唐志雄
-| 2016 年 01 月 17 日
-| 武汉大学遥感信息工程学院
-
 \baselineskip=23pt
 
 \begin{cnabstract}

@@ -107,7 +107,7 @@ Pandoc 作者 [jgm (John MacFarlane)](https://github.com/jgm) 的回复：
 > for and remove Space elements when they occur between two Chinese characters.
 > Note that (unlike the current approach) this would also affect line-internal
 > spaces -- they would be collapsed too. Let me know if that's not desirable.
-
+>
 > Are spaces every used between two Chinese characters, or would it be safe for
 > pandoc to avoid this by default?
 
@@ -123,7 +123,7 @@ Pandoc 作者 [jgm (John MacFarlane)](https://github.com/jgm) 的回复：
 > &rarr; `注　意　！　！ `.
 >
 > So it would be safe for pandoc to avoid this by default.
-
+>
 > For your information, adding a space between Chinese character and western
 > character is not adopted by everyone, its more like a common rule for those
 > who care typesetting. (see

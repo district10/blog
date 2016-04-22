@@ -10,7 +10,26 @@ tags:
 小波变换在图像处理分析中的应用
 ==============================
 
-> 这是课程作业（[PDF 版本](http://whudoc.qiniudn.com/tzx-paperwork-wavelet.pdf)，[$\LaTeX$ 源码](http://whudoc.qiniudn.com/paperwork-wavelet.7z)）
+<div class="tzx-drawer" shy>
+这是课程作业（[PDF 版本](http://whudoc.qiniudn.com/tzx-paperwork-wavelet.pdf)，[$\LaTeX$ 源码](http://whudoc.qiniudn.com/paperwork-wavelet.7z)）
+
+:   LaTeX 模板来自 [武汉大学黄正华老师](http://aff.whu.edu.cn/huangzh/)。
+
+    注意：PDF 中有动画内容需要用“高级”点的 PDF 阅读器查看（SumatraPDF 不行）。
+
+    编译说明
+
+    #. 要先安装 [Adobe fonts](http://whudoc.qiniudn.com/2016/adobe-fonts.7z) 字体；
+    #. 再从 [CTeX](http://www.ctex.org/CTeXDownload) 下载完全 LaTeX 安装包；
+    #. 再下载安装 [GitBash](http://7xjdjw.com1.z0.glb.clouddn.com/Git-1.9.5-preview20150319.exe)
+       （调用编译脚本）和 [Pandoc](http://7xjdjw.com1.z0.glb.clouddn.com/pandoc-1.13.2-windows.msi)
+       （Markdown 转换为 TeX）；
+    #. 双击 `_pdf.sh`{.bash} 即可编译出 PDF。
+
+    | TANG ZhiXiong 唐志雄
+    | 2016 年 01 月 17 日
+    | 武汉大学遥感信息工程学院
+</div>
 
 ## 历史的小波
 

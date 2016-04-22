@@ -222,3 +222,6 @@ Links | 链签
 #. [Ruby Sites » Ruby China](https://ruby-china.org/sites)
 #. [武大遥感——武汉大学遥感信息工程学院](http://rsgis.whu.edu.cn/)
 #. [测绘遥感信息工程国家重点实验室](http://www.lmars.whu.edu.cn/index.jsp)
+#. [Arnie97 – Process is more important than perfection.](http://blog.arnie97.progr.am/)
+#. [http://openmetric.org/](http://openmetric.org/)
+#. [Bruce Yan - Photography](http://www.yanziqipic.com)

@@ -25,7 +25,7 @@ tags:
 
 ![Bill Joy，著名程序员](http://gnat.qiniudn.com/pics/Bill_Joy.png)
 
-![Ewan MCGregor，《大鱼》男主](http://gnat.qiniudn.com/pics/Ewan_McGregor.png)
+![Ewan McGregor，《大鱼》男主](http://gnat.qiniudn.com/pics/Ewan_McGregor.png)
 
 ![Faye Wong，王菲 @《重庆森林》](http://gnat.qiniudn.com/pics/Faye_Wang.png)
 
@@ -43,9 +43,7 @@ tags:
 
 ![Léa Seydoux，《Blue, the Warmest Color》](http://gnat.qiniudn.com/pics/Léa_Seydoux.png)
 
-![Léa Seydoux，《Midnight in Paris》[^paris]](http://gnat.qiniudn.com/pics/Léa_Seydoux3.png)
-
-[^paris]: [现在不是 Paris in the rain，而是 Paris in Terror。感到很难过。](notes.html#french-terror-attacks)
+![Léa Seydoux，《Midnight in Paris》](http://gnat.qiniudn.com/pics/Léa_Seydoux3.png)
 
 ![MIKA，《The Good Guys》](http://gnat.qiniudn.com/pics/MIKA.png)
 

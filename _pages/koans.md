@@ -13,6 +13,32 @@ before-after:
 Koans | 呓语^[这是我的微(tu)博(cao)。呓语呓语，神志不清；若有冒犯，敬请原谅。]
 ============
 
+## `1461285638`{.tzx-timestamp} 你懂我意思？
+
+在别人没说清楚就问这句话的时候，我毫不犹豫的“不懂”。
+哈哈哈，我不懂，你解释清楚点！
+
+- “*&……%你知道把！”“我不知道。”
+- “*&……%你懂我意思把？”“我不懂。”
+- “*&……%听明白没？”“没有。”
+
+<div class="tzx-hide">
+## `1461222084`{.tzx-timestamp} Windows 上我不会编程
+
+关键是 Linux 上……你也不会啊哈哈哈……逃）
+</div>
+
+## `1461219647`{.tzx-timestamp} 与时俱进
+
+豆瓣上有人说“啊啊啊，[emacs 的主页](http://www.gnu.org/software/emacs/) 竟然更新了，是要焕发第二春了吗”，去看了一下，不得不感慨
+“主页终于从 20 世纪走向了 21 世纪……”。难得保守的 RMS 为首的 GNU 一派居然会给 Emacs 主页换一个如此潮的风格。
+
+下午又在看 [cppreference.com](http://en.cppreference.com/w/)，也有一些有意思的更新：
+
+1. 有了中文页面（是我自己今天才发现？）；
+2. 有了 Possible implementation，可以了解实现的细节，还可以以此学习 C++ 模板。
+3. 示例代码可以用 GCC 和 Clang 编译，支持 C++11, C++14, C++17
+
 ## `1461152684`{.tzx-timestamp} 处女座性格和技能百分比
 
 说自己是处女座性格的……都不是处女座。像我这样真正的处女座才不相信星座呢！
@@ -831,7 +857,7 @@ set(CMAKE_DEBUG_POSTFIX "d")
 
 话说我还犯了几次类似 [c++ - CMake cannot determine linker language for target -
 Stack Overflow](http://stackoverflow.com/questions/16655705/cmake-cannot-determine-linker-language-for-target)
-的错误，真是无可救药。
+的错误（只有头文件还想编译 exe 或者 lib……），真是无可救药。
 
 ## `1455986511`{.tzx-timestamp} 你知道我在这耗了多久？
 
@@ -1782,131 +1808,7 @@ Extension: `ignore_line_breaks`
 话说 Vim 也没这么智能，但需要在这里为什么产品还没出来？
 
 By the way，为此我专门跑到 Pandoc 的 GitHub 上提交了一个 Issue，说不定他们能很
-快添加这个功能呢～See [Text Layout Requirements When Encountered East Asian Languages · Issue #2586 ·
-jgm/pandoc](https://github.com/jgm/pandoc/issues/2586).
-
-<div style="border: 1px dashed violet; padding: 1em;"><small>
-
-> 更好地混排东亚文字和西文 | Text Layout Requirements When Encountered East Asian Languages
-
-Pandoc 确实有这么一个扩展： | Pandoc does have a relevant extension:
-
-`ignore_line_breaks`
-
-:   Causes newlines within a paragraph to be ignored, rather than being treated
-    as spaces or as hard line breaks. This option is intended for use with East
-    Asian languages where spaces are not used between words, but text is
-    divided into lines for readability.
-
-`中`：但这个扩展实际不可用，因为当我用东亚文字的时候我总也会用到英文。这样一来，
-如果不加这个扩展，合并行的时候东亚文字（比如中文）会多出很多空格，不美观；
-如果加入这个扩展，合并行的时候西文（如英文）会混作一团，不仅不美观，内容都变了。
-
-`En`: But this extension cannot work as expected, for we also use some English when
-writing in East Asian languages. In that case, if we not turn on this extension,
-Asian character lines will be joined together with extra spaces, pretty ugly;
-But if turning on this extension, Western character lines will join into
-a mess (e.g. several pairs of words turned into one).
-
-For example, there is a demo file `demo.md` with content:
-
-```plain
-### Case 1: only East Asian Characters
-
-我能吞下玻璃，
-而不伤身体。我能吞下玻璃
-而不伤身体。
-
-### Case 2: Only Western Characters
-
-The quick brown fox,
-jumps over the lazy dog. The quick brown fox
-jumps over the lazy dog.
-
-### Case 3: Blended
-
-我能吞下玻璃而不伤身体，
-the quick brown fox jumps over the lazy dog.
-
-The quick brown fox jumps over the lazy dog,
-我能吞下玻璃而不伤身体。
-
-中文和
-English 混合排版。
-
-English blended with
-中文.
-```
-
-Using `pandoc` to convert it to html:
-
-```bash
-pandoc -f markdown -s -S demo.md -o demo-ext-off.html
-pandoc -f markdown+ignore_line_breaks -s -S demo.md -o demo-ext-on.html
-```
-
-Without extension: (red marks point out pitfalls, I highlighted spaces in
-browser simply with Control+F)
-
-![](http://gnat.qiniudn.com/github/a.png)
-
-With extension:
-
-![](http://gnat.qiniudn.com/github/b.png)
-
-I think `Pandoc` should be more intelligent so as to only insert space
-
-1. between two western chars, e.g. `apple\n` + `pie` &rarr; `apple pie`,
-2. between asian char and western char, e.g. `豆瓣\n` + `FM` &rarr; `豆瓣 FM`
-
-and no extra spaces in others cases.
-
----
-
-Or make it more simply:
-
-Always add a space when join lines **except** when the previous line ends with
-an East Asia Character and this line starts with another.
-
----
-
-Pandoc 作者 [jgm (John MacFarlane)](https://github.com/jgm) 的回复：
-
-> One approach would be to implement this option using an AST filter (internal
-> to pandoc), instead of in the Markdown parser. The AST contains Space
-> elements for spaces and soft line breaks (though it doesn't currently
-> distinguish between the two---that may change soon). The filter could look
-> for and remove Space elements when they occur between two Chinese characters.
-> Note that (unlike the current approach) this would also affect line-internal
-> spaces -- they would be collapsed too. Let me know if that's not desirable.
-
-> Are spaces every used between two Chinese characters, or would it be safe for
-> pandoc to avoid this by default?
-
-我：
-
-> Better not "affect line-internal spaces".
->
-> Spaces are not ever used between two Chinese characters.
->
-> Of course there would be someone in some cases to use "注 意 ！ ！ " (A T T E
-> N T I O N ! ! !), but that's not normal. And I recommend they use fullwidth
-> space (*i.e.* "　") instead of typical space (*i.e.* " "): `注 意 ！ ！`
-> &rarr; `注　意　！　！ `.
->
-> So it would be safe for pandoc to avoid this by default.
-
-> For your information, adding a space between Chinese character and western
-> character is not adopted by everyone, its more like a common rule for those
-> who care typesetting. (see
-> <https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.en.md#place-one-space-before--after-english-words>).
->
-> But this: `fox\n` + `jumps` &rarr; `foxjumps` is bad, should be agreed by
-> everyone.
-
-额……我就回去睡了个觉，jgm 就把这个问题弄好了……：[Implemented `east_asian_line_breaks` extension. · jgm/pandoc@44120ea](https://github.com/jgm/pandoc/commit/44120ea7165546152af88fd442c52ab0f201052e#diff-c47c7c7383225ab55ff591cb59c41e6bR3227)
-
-</small></div>
+快添加这个功能呢～See [膜拜大神](post-0076-real-hacker.html)。
 
 ## `1449807394`{.tzx-timestamp} Atom 编辑器之罪
 

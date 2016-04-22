@@ -589,4 +589,9 @@ var tzx_links = [
         title: "Learning JavaScript",
         query: ['javascript']
     },
+    {
+        url: '/post-0095-c-cpp.html',
+        title: "C & C++",
+        query: ['c', 'c++', 'cpp', 'programming', 'doc']
+    },
 ];

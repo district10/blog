@@ -1213,3 +1213,7 @@ Refs
 
 #. [Opencv YAML和XML格式文件操作详解 - YhL_Leo的博客 - 博客频道 - CSDN.NET](http://blog.csdn.net/yhl_leo/article/details/47660943)
 #. [QWidget::setContextMenuPolicy](http://doc.qt.io/qt-4.8/qwidget.html#contextMenuPolicy-prop)
+
+![](http://whudoc.qiniudn.com/2016/4-15/幻灯片1.PNG)
+
+![](http://whudoc.qiniudn.com/2016/4-15/幻灯片2.PNG)

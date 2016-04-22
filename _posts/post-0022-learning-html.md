@@ -107,7 +107,7 @@ HTML Attributes
     * [HTML Tag Reference](http://www.w3schools.com/tags/default.asp)
     * `<hr>`{.html}: horizontal line
     * `<!-- This is a comment -->`{.html} : HTML Comments, will not be rendered,
-    * `<!--...-->`{.html} $\leftarrow$ `Ann Lau` style
+    * `<!--...-->`{.html} &larr; `Ann Lau` style
 
 Text Formatting
 

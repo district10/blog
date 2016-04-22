@@ -17,7 +17,7 @@ after-before: |
     }
     body {
         background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 70%);
-        tet-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
         color: white;
     }
     h1 {
