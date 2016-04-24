@@ -1,11 +1,11 @@
-# blog
+# Blog
 
 [![Build Status](https://travis-ci.org/district10/blog.svg?branch=master)](https://travis-ci.org/district10/blog)
 
 七牛 CDN 和 coding.net 似乎都是 CDN，所以总是难以快速的地更新，
 travis 给整个博客弄了一个打包：<https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/archive/coding-pages>。
 
-## new start
+## New Start
 
 「Koan | 吐槽」
 
@@ -27,7 +27,7 @@ Perl 脚本还在用，但计划以后用 Pandoc 的 filter。
 
 ---
 
-## intro
+## Intro
 
 `zh`: 博客源码托管在 GitHub，用 Markdown 写，用 Makefile 管理，用 travis
 
@@ -37,13 +37,13 @@ Perl 脚本还在用，但计划以后用 Pandoc 的 filter。
 
 `en`: github -----> markdown ---pandoc---> html ---travis----> coding.net/qiniu.com
 
-## visit the site
+## Visit the Site
 
   - <http://tangzx.qiniudn.com> (hosted on「七牛 CDN | Qiniu CDN」) or
     <http://blog.tangzhixiong.com> (仅重定向 | redirection only)
   - or <http://dvorak4tzx.coding.me/> (hosted on「Coding Pages」)
 
-## get a copy
+## Get a Copy
 
   - Markdown
       + Coding, master branch:
@@ -102,6 +102,9 @@ Perl 脚本还在用，但计划以后用 Pandoc 的 filter。
 ## TODO
 
   - script to tranlate `vimrc` to `perl` code highlight, etc.
+  - 把 notes.md 分成多个文本，比如 note{001..999}.md，然后分别生成 html（非 standalone），然后用 ajax 来 load 各个 html 片段，
+    这样的好处是可以依旧在一个文本里编辑（反正 vim 编辑 100M+ 的文本都是无压力的），但会自动转化为多个片段，加载起来更快。
+    唯一的不好的地方在于，可能会和图片延迟加载冲突。
 
 ---
 

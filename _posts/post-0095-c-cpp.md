@@ -774,6 +774,8 @@ Iota `/aɪˈoʊtə/` (uppercase Ι, lowercase ι; Greek: Ιώτα) is the ninth 
 
 For example, the integer function denoted by ι produces a vector of the first N integers when applied to the argument N, …
 
+[語言技術：C++ Gossip](http://openhome.cc/Gossip/CppGossip/)
+
 ---
 
 refs and see also

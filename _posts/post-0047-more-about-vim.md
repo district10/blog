@@ -219,7 +219,7 @@ Refs
 ;; ;    :set fo+=m ; 中文自动重排
 gq[motion]
 
-;; captitorize current word
+;; captitorize current word, 这里用的 ` 寄存器，当然还可以是其他任意字母
 m`b~``
 ```
 

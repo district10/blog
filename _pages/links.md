@@ -225,3 +225,5 @@ Links | 链签
 #. [Arnie97 – Process is more important than perfection.](http://blog.arnie97.progr.am/)
 #. [http://openmetric.org/](http://openmetric.org/)
 #. [Bruce Yan - Photography](http://www.yanziqipic.com)
+#. [百度网盘搜索引擎](http://so.baiduyun.me/)
+#. [天涯博客_有见识的人都在此](http://blog.tianya.cn/)

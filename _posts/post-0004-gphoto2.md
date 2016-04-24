@@ -67,7 +67,6 @@ gphoto2 \
 
 大致的流程：
 
-<small>
 ```bash
 # deps
 sudo apt-get install \
@@ -82,7 +81,6 @@ wget http://sourceforge.net/projects/gphoto/files/libgphoto/2.5.2/libgphoto2-2.5
 wget http://sourceforge.net/projects/gphoto/files/gphoto/2.5.2/gphoto2-2.5.2.tar.gz
 # unzip, ./configure, make, make install
 ```
-</small>
 
 ### 几个脚本
 
@@ -179,7 +177,6 @@ repeat capture # 持续拍照
 
 部分 [summary.txt]：
 
-<small>
 ```plain
 Camera summary:
 Manufacturer: Nikon Corporation
@@ -196,7 +193,6 @@ Device Capabilities:
 	File Download, File Deletion, File Upload
 	Generic Image Capture, No Open Capture, Nikon Capture 1, Nikon Capture 2, Nikon Capture 3
 ```
-</small>
 
 [`list-all-config`{.bash}][list-all-config.txt](  <= 点击查看全部内容)
 

@@ -591,7 +591,12 @@ var tzx_links = [
     },
     {
         url: '/post-0095-c-cpp.html',
-        title: "C & C++",
+        title: "c & c++",
         query: ['c', 'c++', 'cpp', 'programming', 'doc']
+    },
+    {
+        url: '/post-0096-follow-master-deng.html',
+        title: "邓俊辉",
+        query: ['computation geometry', 'date structure', 'algorithm']
     },
 ];

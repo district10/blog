@@ -11,7 +11,7 @@ set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,cp936
-set formatoptions+=mM
+set formatoptions+=BmM
 set ignorecase
 
 if has("gui_running")
@@ -102,3 +102,14 @@ endfunction
 set nobackup
 set nowritebackup
 set noswapfile
+
+" silent execute NeoKbd()
+function! NeoKbd()
+    imap a b
+    imap b s
+    " a -> s
+    " b -> s
+endfunction
+" so this won't work as expected
+"
+" instead, use `:set keymap=dvorak` (works only in insert mode)

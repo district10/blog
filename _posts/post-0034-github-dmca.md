@@ -15,12 +15,10 @@ GitHub 的 DMCA 干嘛的？
 
 都记录在 <https://github.com/github/dmca/blame/master/2015-09-22-jetbrains.md#L93-L94>：
 
-<small><small>
 ```tzx-plain
 * https://github.com/tangzhixiong/tangzhixiong.github.io/blob/master/2015/02/20/windows-configuration/index.html
 * https://github.com/tangzhixiong/tangzhixiong.github.io/blob/master/index.html
 ```
-</small></small>
 
 我的一篇关于 Windows 配置的文章里，居然放了 JetBrains IntelliJ 的激活码一枚……所以……都是我的错。
 
