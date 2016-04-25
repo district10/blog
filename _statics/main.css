@@ -836,3 +836,11 @@ a.tzx-header-anchor {
     -o-animation: love .5s infinite linear alternate-reverse;
     animation: love .5s infinite linear alternate-reverse;
 }
+
+.tzx-banner {
+    text-shadow: 4px 3px 0 #1d9d74,9px 8px 0 rgba(0,0,0,0.15); 
+    background-color: #157254;
+    color: white;
+    font-size: 80px;
+    line-height: 1;
+}

@@ -66,3 +66,4 @@ CLIP
 ## Refs and see also
 
 - [当你复制一个网页的时候,你的剪切板里是什么呢? - SegmentFault](https://segmentfault.com/q/1010000004934818/a-1020000004961799)
+- [hluk/CopyQ: Clipboard manager with advanced features](https://github.com/hluk/CopyQ)

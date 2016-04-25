@@ -9,7 +9,7 @@ keywords:
     - csshake
 cssfile:
 #    - csshake.min.css
-    - font-awesome.min.css
+#    - font-awesome.min.css
 # after-before: |
 nav:
     prev: |
@@ -30,8 +30,17 @@ Font Awesome
 
 <i class="icon-quote-left icon-4x pull-left icon-muted"></i>
 Use a few of the new styles together ... lots of new possibilities.
+Use a few of the new styles together ... lots of new possibilities.
+Use a few of the new styles together ... lots of new possibilities.
+Use a few of the new styles together ... lots of new possibilities.
+Use a few of the new styles together ... lots of new possibilities.
+Use a few of the new styles together ... lots of new possibilities.
 
 <i class="icon-flag icon-4x pull-left icon-border"></i>
+Use a few of the new styles together ... lots of new possibilities.
+Use a few of the new styles together ... lots of new possibilities.
+Use a few of the new styles together ... lots of new possibilities.
+Use a few of the new styles together ... lots of new possibilities.
 Use a few of the new styles together ... lots of new possibilities.
 
 <a class="btn" href="#">
@@ -149,3 +158,25 @@ shy
 </div>
 
 ooo
+
+<i class="icon-camera-retro icon-large"></i>
+
+<i class="icon-cloud-download"></i> icon-cloud-download
+
+ab fab      <i class="icon-book"></i>
+ab facd     <i class="icon-cloud-download"></i>
+ab faes     <i class="icon-exclamation-sign"></i>
+ab faf      <i class="icon-flag"></i>
+ab fah      <i class="icon-heart"></i>
+ab fahe     <i class="icon-heart-empty"></i>
+ab fais     <i class="icon-info-sign"></i>
+ab falb     <i class="icon-lightbulb"></i>
+ab fapp     <i class="icon-pushpin"></i>
+ab fas      <i class="icon-star"></i>
+ab fase     <i class="icon-star-empty"></i>
+ab fat      <i class="icon-tag"></i>
+ab fats     <i class="icon-tags"></i>
+ab fatd     <i class="icon-thumbs-down"></i>
+ab fatu     <i class="icon-thumbs-up"></i>
+
+<div class="tzx-banner">Fontawesome</div>

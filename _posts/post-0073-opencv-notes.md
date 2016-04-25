@@ -17,8 +17,9 @@ OpenCV Notes
 
 CvArr -> CvMat -> IplImage
 
-ROI: cvSetImageROI()
+ROI: `cvSetImageROI()`
 
+```
 CvSize cvMahalonobis( // z-score
     const CvArr* vec1,
     const CvArr* vec2,
@@ -36,7 +37,6 @@ void cvSubS( const CvArr *src1, double value, CvArr *dst, const CvArr *mask = NU
 // dst[i] = value - src1[i]
 void cvSubRS( const CvArr *src1, double value, CvArr *dst, const CvArr *mask = NULL );
 
-
 // A = U * W * Trans(T)
 void cvSVD(
     CvArr *A,
@@ -45,11 +45,9 @@ void cvSVD(
     CvArr *V = NULL,
     int flags = 0
 );
-
+```
 
 XML &  YAML
-
-
 
 cvSmooth, border -> virtual pixel
 
@@ -63,144 +61,75 @@ Morphism?
 
 cvCreateStructuringElementEx ? Ex for what?
 
-
-
 flood fill
 
 cvPyrUp, cvPyrDown
 
 cvAdaptiveThreshold
 
-Sobel ($\partial ^2 / \partial x \partial y$)
-
-laplace
-canny
-
-hog
-
-cvRemap
-
-affine, prespective
-
-
-
-CartToPolar, PolarToCart, LogPolar,
-DFT, DCT,
-
-cvIntegral, integral image
-
-cvDistTransform
-
-compare hist,
-
-
-EMD: Earth Mover's Distance
-
-
-back projection,
-
-
-cvMatchTemplate,
-
-cvMemStorageAlloc
-cvSeq,
-
-cvFindContours,
-
-freeman chaincode,
-
-
-cvAppproxPoly, DP: douglas -Peucker
-
-
-cvFindDominantPoints (IPAN)
-
-
-cvRect, cvBox2D,
-
-
-cvContoursMoments,
-Hu moments: cvGetHuMoments
-cvGetNormalizedCentralMoment,
-
-CvTermCriteria
-
-convex hull
-convex defects
-
-
-
-freeman chaincodes (FCCs)
-
-
-pairwise geometrical histogram (PGH): cvCalcPGH
-
-chain code histogram (CCH)
-
-cvInitLineIterator
-
-watershed algorithm,
-
-inpainting
-
-cvPyrSegmentation
-
-mean-shift,
-
-delaunay, voronoi tesselation,
-
-Lucas-Kanade,
-cvCalcOpticalFlowPyrLK()
-
-
-
-Horn-Schunk, dense/sparse optical flow
-
-corner,
-
-subpixel,
-
-SIFT (scale-invariant feature transform)
-
-
-
-
-
-block matching,
-
-
-mean-shift, camshift (continuously adaptive mean-sift)
-
-
-motion template,
-silhouette
-
-
-estimator, kalman
-
-dynamical motion, control motion, random motion,
-
-
-
-projection transform,
-
-
-camera intrinsics matrix
-q = MQ
-
-
-cvConvertPointsHomogenious()
-
+- Sobel ($\partial ^2 / \partial x \partial y$)
+- laplace
+- canny
+- hog
+- cvRemap
+- affine, prespective
+
+- CartToPolar, PolarToCart, LogPolar,
+- DFT, DCT,
+- cvIntegral, integral image
+- cvDistTransform
+- compare hist,
+- EMD: Earth Mover's Distance
+- back projection,
+- cvMatchTemplate,
+- cvMemStorageAlloc
+- cvSeq,
+- cvFindContours,
+- freeman chaincode,
+- cvAppproxPoly, DP: douglas -Peucker
+- cvFindDominantPoints (IPAN)
+- cvRect, cvBox2D,
+- cvContoursMoments,
+- Hu moments: cvGetHuMoments
+- cvGetNormalizedCentralMoment,
+- CvTermCriteria
+- convex hull
+- convex defects
+- freeman chaincodes (FCCs)
+- pairwise geometrical histogram (PGH): cvCalcPGH
+- chain code histogram (CCH)
+- cvInitLineIterator
+- watershed algorithm,
+- inpainting
+- cvPyrSegmentation
+- mean-shift,
+- delaunay, voronoi tesselation,
+- Lucas-Kanade,
+- cvCalcOpticalFlowPyrLK()
+- Horn-Schunk, dense/sparse optical flow
+- corner,
+- subpixel,
+- SIFT (scale-invariant feature transform)
+- block matching,
+- mean-shift, camshift (continuously adaptive mean-sift)
+- motion template,
+- silhouette
+- estimator, kalman
+- dynamical motion, control motion, random motion,
+- projection transform,
+- camera intrinsics matrix
+- q = MQ
+- cvConvertPointsHomogenious()
 
 jingxiang:
 
-x_corrected = x ( 1 + k_1r^2 + k_2r^24 + k_3r^6 )
-y_corrected = y ( 1 + k_1r^2 + k_2r^24 + k_3r^6 )
+$x_{corrected} = x ( 1 + k_1r^2 + k_2r^24 + k_3r^6 )$
+$y_{corrected} = y ( 1 + k_1r^2 + k_2r^24 + k_3r^6 )$
 
 qiexiang:
 
-x_corrected = x + [ 2 p_1 y + p_2 ( r^2 + 2 x^2 )]
-y_corrected = y + [ p_1 ( r^2 + 2 y^2 ) + 2 y_2 x ]
+$x_corrected = x + [ 2 p_1 y + p_2 ( r^2 + 2 x^2 )]$
+$y_corrected = y + [ p_1 ( r^2 + 2 y^2 ) + 2 y_2 x ]$
 
 k1, k2, p1, p2, k3 (fish-eye camera)
 
@@ -259,9 +188,4 @@ Convolutional Neural Networks  (LeCun et al. 1989)
 
 Image Lab
 
-32 -> 28? -> kernel[3x3]
-
-
-<div class="hide">
-can you see me?
-</div>
+`32 -> 28? -> kernel[3x3]`

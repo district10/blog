@@ -227,3 +227,5 @@ Links | 链签
 #. [Bruce Yan - Photography](http://www.yanziqipic.com)
 #. [百度网盘搜索引擎](http://so.baiduyun.me/)
 #. [天涯博客_有见识的人都在此](http://blog.tianya.cn/)
+#. [Home | Lionel Liu](http://lionelliu.com/index.html)
+#. [TIFF to JPG | Zamzar - Free online file conversion](http://www.zamzar.com/convert/tiff-to-jpg/)

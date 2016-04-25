@@ -14,7 +14,6 @@ tags:
 
 ### 1. WHAT YOU SEE ISN’T WHAT YOUR BRAIN GETS
 
-
 THE BRAIN CREATES SHORTCUTS
 Your brain creates these shortcuts in order to quickly make sense out of the world
 around you. Your brain receives millions of sensory inputs every second (the estimate is

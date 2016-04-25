@@ -114,9 +114,10 @@ qiniu:
 
 # edits
 EDITS = \
+	$(DIR_POSTS) \
 	$(DIR_PAGES)/notes.md \
 	$(DIR_PAGES)/koans.md \
-	$(DIR_POSTS)
+
 it:
 	$(EDITOR) -p $(EDITS) &
 i: index

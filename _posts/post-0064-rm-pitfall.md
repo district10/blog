@@ -60,7 +60,7 @@ tags:
 
 话说我写 makefile 的时候就中招过一次…
 
-```
+```makefile
 clean:
     rm -f $(PODIR)/*
 ```

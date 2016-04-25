@@ -11,11 +11,9 @@ tags:
 
 我已经不知道是哪天在哪个网站看到的这个 tip，在 `.zshrc` 加了这句话：
 
-<small><small><small>
 ```bash
 cowsay -f $(ls /usr/share/cowsay/cows | shuf -n 1 | cut -d. -f1) $(whatis $(ls /bin) 2>/dev/null | shuf -n 1)
 ```
-</small></small></small>
 
 下次打开 Shell 就会有个小动物像你问好，就像这样：
 

@@ -14,6 +14,24 @@ set fileencodings=ucs-bom,utf-8,chinese,cp936
 set formatoptions+=BmM
 set ignorecase
 
+ab rasa refs and see also
+
+ab fab      <i class="icon-book"></i>
+ab facd     <i class="icon-cloud-download"></i>
+ab faes     <i class="icon-exclamation-sign"></i>
+ab faf      <i class="icon-flag"></i>
+ab fah      <i class="icon-heart"></i>
+ab fahe     <i class="icon-heart-empty"></i>
+ab fais     <i class="icon-info-sign"></i>
+ab falb     <i class="icon-lightbulb"></i>
+ab fapp     <i class="icon-pushpin"></i>
+ab fas      <i class="icon-star"></i>
+ab fase     <i class="icon-star-empty"></i>
+ab fat      <i class="icon-tag"></i>
+ab fats     <i class="icon-tags"></i>
+ab fatd     <i class="icon-thumbs-down"></i>
+ab fatu     <i class="icon-thumbs-up"></i>
+
 if has("gui_running")
   if has("gui_gtk2")
     set guifont=Inconsolata\ 12

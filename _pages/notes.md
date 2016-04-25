@@ -23,6 +23,155 @@ jsfile:
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+```
+ab fatd     <i class="icon-thumbs-down"></i>
+ab fatu     <i class="icon-thumbs-up"></i>
+```
+
+Vim 中，选中上面，把内容存到某一个寄存器（比如 `"ay`），然后执行寄存器中的内容：`:@a`。
+
+其实，一个人要成牛人，最重要的不是看过多少书，而是有没有一个自己的世界观，并且
+从这个世界观出发，知道什么要做，什么能做，什么要坚持，什么要追求，什么是命中注
+定，什么是此生无缘，然后才能选A不选B，有决断心和行动力。为此，得要体会过了别人
+选择的艰难，明白所要追求事业的难度，然后自己的选择才有意义。这些可以通过读书，
+也可以通过别的方式。
+
+[【云+校园计划】 1元=免费域名+专享服务器-腾讯云官方论坛](http://bbs.qcloud.com/thread-9953-1-1.html)
+
+面总部肯定全英语，除非是遇到中国人
+
+[酒店挂什么书法不俗气？ - 王路的粽子铺 - 知乎专栏](http://zhuanlan.zhihu.com/p/20798133)
+
+:   酒店的厕所，也喜欢附庸风雅，男厕所叫“观瀑亭”，女厕所叫“听雨轩”。第一个想出
+    这名字的人，脑子还算活络。但这个味道并不好。《红楼梦》大观园里有座亭子要挂
+    牌匾，清客说挂“泻玉”，贾宝玉说“泻”字粗陋不雅。“观瀑”也有这个问题，虽说洗手
+    间是撒尿的地方，但并不是必须得盯着尿看。况且，正常情况下，男性撒出来的尿是
+    直线，如果是瀑流，表示前列腺有毛病。
+
+    我想到的也是挂 Hello World 啊，然后回复了一个：“扑运托福，虾落我得。（
+    printf("hello world.\n")）”，然后看到已经有人说了“挂hello world行吗？”，还
+    有四个赞。
+
+[qtproject/qt-creator](https://github.com/qtproject/qt-creator)
+
+[什么是心理学专业毕业生的核心竞争力？ - 开放的智力 - 知乎专栏](http://zhuanlan.zhihu.com/p/20539579)
+
+[你能解开女人这个谜吗？](http://daily.zhihu.com/story/8042298?utm_campaign=in_app_share&utm_medium=iOS&utm_source=pocket)
+
+[爱情嘛，不止有性](http://daily.zhihu.com/story/8033348?utm_campaign=in_app_share&utm_medium=iOS&utm_source=pocket)
+
+[地球上穷苦的人还很多，为什么要烧钱研究太阳系？](http://daily.zhihu.com/story/8037592?utm_campaign=in_app_share&utm_medium=iOS&utm_source=pocket)
+
+[没有他，你或许永远不会听到那段「灯，等灯等灯」](http://daily.zhihu.com/story/8041676?utm_campaign=in_app_share&utm_medium=iOS&utm_source=pocket)
+
+[我是一个只有 3 分钟热度的人](http://daily.zhihu.com/story/8051957)
+
+:   你可能高估了兴趣爱好的价值。你所看到的那些每天早起背诵英语的人、每天坚持跑
+    步的人、在寒夜中蹲点拍摄星空的人，他们能够坚持，不是因为他们有这样的兴趣爱
+    好，而是因为他们有忍受枯燥的能力。
+
+    我们这个时代，兴趣爱好是一件被过度美化的事。
+
+    可你的潜意识知道**你真正想要的**，不是投入和专注现在的事——就像这些被兴趣爱
+    好驱使的人一样——而**是投入后的成功**。它看出了这种矛盾背后的虚无，所以就劝
+    你早早地放弃了。
+
+    正因为没用，他才不用焦虑要练得多快多好或者要坚持多久，他才能练得好，他的成
+    就才高。
+
+    这种枯燥的训练，不是简单的时间的堆砌，还要我们去反思、总结，亲近我们所做的
+    事，了解它背后的机理。
+
+[程序人生](http://mp.weixin.qq.com/s?__biz=MjM5ODUxMjQ0MA==&mid=403964940&idx=1&sn=653984cf28c9e78c05d137427ea0c5d2&scene=2&srcid=0324fL7W3CdgbicHhMKCHtLD#wechat_redirect)
+
+:   当我学了一点电脑知识后，就发现电脑将是我人生的最爱。读书时，我不是特别会搞
+    关系的人，同学关系说不上差，也好不到那里去。
+
+    大学毕业后，分到研究所，不太适应研究所的气氛。调槽到金山软件公司，开始了职
+    业程序员的生涯。后来成了北京金山软件公司的经理，但我还是一名程序员。
+
+    我刚接触电脑就发现电脑的妙处，电脑远没有人那么复杂。如果你的程序写得好，你
+    就可以和电脑处好关系，就可以指挥电脑干你想干的事。
+
+    写程序简直是在自杀，巨费精力巨费脑子巨累。但我爱编程这个工作，可以肯定我会
+    干上一辈子，虽然我没有打算一生只干这一件事。用一生来编程序是一件既容易又困
+    难的事。如果碌碌无为，为交差写点程序，这样写两辈子的人都有。但如果想全身心
+    地写程序，写十年就不是一件容易的事。
+
+    成为一个高级程序员并不是件困难的事
+
+    成为高级程序员绝对不是追求的目标。
+
+    我们换个工种来看，石匠应该是熟练工种，属于工人，更艺术似乎沾不上边。但正是
+    这些石匠，给我们留下多少文物古迹，如乐山大佛、莫高窟等等。应该说这些石匠给
+    我们留下了无穷的文化财产。
+
+    我认为编程的工作和石匠比较相似，有很多是技术活甚至是体力活，但编写优秀软件
+    是件很难的事。这两种想法都有片面性，编程应该说两种属性都有。编程不仅仅是技
+    术，也还是艺术。
+
+[Lionel Liu | Optimized C++](http://lionelliu.com/2016/optimized-c++.html)
+
+在这个行业当实习生，待遇恰恰是最不重要的，你的起点高度跟你几年后能达到的水准没
+有任何必然关系。而且，你到岗后的努力也比你一开始的选择更加重要。
+
+![](http://www.doxdesk.com/img/updates/20091116-so-large.gif)
+
+[C++11 support in compilers - KlayGE](http://www.klayge.org/wiki/index.php/C++11_support_in_compilers)
+
+[Using abbreviations - Vim Tips Wiki - Wikia](http://vim.wikia.com/wiki/Using_abbreviations)
+
+:   `:ab rasa refs and see also`
+
+    `:abc`, clear all
+
+[Lua 是怎样一门语言？ - 知乎](https://www.zhihu.com/question/19841006)
+
+[FFLIB之FFLUA——C++嵌入Lua&扩展Lua利器 - 知然 - 博客园](http://www.cnblogs.com/zhiranok/archive/2013/01/27/fflua.html)
+
+[fffaraz/awesome-cpp: A curated list of awesome C/C++ frameworks, libraries, resources, and shiny things. Inspired by awesome-... stuff.](https://github.com/fffaraz/awesome-cpp)
+
+[xuelangZF/CS_Offer: 深入理解计算机面试中的经典题目！](https://github.com/xuelangZF/CS_Offer)
+
+[hluk/CopyQ: Clipboard manager with advanced features](https://github.com/hluk/CopyQ)
+
+[云风的 BLOG: Lua 不是 C++](http://blog.codingnow.com/2008/08/lua_is_not_c_plus_plus.html)
+
+    表面上看起来，这个粘合层是设计的是很精妙的，它隐藏了 lua 虚拟机的细节。C++
+    程序员在写代码的时候，并不需要实际上也的确是，不知道 lua 的存在。而 lua 程
+    序也不需要关心那个类是用 C++ 实现的。在 lua 中，可以按照 C++ 的对象模型继续
+    对类进行继承扩展。一切都展现的完美无缺。
+
+    C++ 的代码从某种程度上也显得非常有水准，template 的灵活使用，可以在可能存在
+    的领域重复利用发挥出功效，大量使用的 stl 容器以及智能指针保证了底层领域的健
+    壮。
+
+    刨除大话 3 更为复杂的逻辑处理的因素，追根到底是，lua 的表达能力更强，导致了
+    程序员用更 C++ 的方式去用 lua 。而原来的 LPC 的代码更接近 C 一些。
+
+    对于那些新接触 lua 的 C/C++ 程序员来说，我的第一条建议通常是：看看
+    lisp/scheme 吧，可能 lua 的血统里，scheme 的成分比 C 更多一些。要不玩一下
+    Haskell ，增进对函数式编程的了解。C++ 借助 template 是可以玩玩函数式编程，
+    但很少有人真的去用。进入 lua 的领域后，你得正正经经的理解一下了。
+
+    但是，重新实现一个的意义在于：把这个子模块剥离出来，绕过原来的厚粘合层。而
+    不是先前的那种设计：在 C++ 里实现一个 CTick 类，然后从 lua 中继承它，再注册
+    回 C++ 中的 CTickMgr 。
+
+    refs and see also
+
+
+      - [云风的 BLOG: 对面向对象的一些思考](http://blog.codingnow.com/2008/06/object_oriented.html)
+
+[城市裡的赤狐（深入淺出跟你們聊聊狐狸的感情生活） - 文章](http://www.weibo.com/p/1001603967081782590306)
+
+:   男人喜歡把好女人教壞，而總是試圖拯救壞女人。改變都是為了佔有（直男並沒有什
+    麼好東西）
+
+    赤狐更多的同性戀模式是雙性戀模式的，也就是兩隻雄狐跟一隻雌狐維持的伴侶關係
+    ，但是這種關係非常不穩定，因為大家都是千年的狐狸還玩什麼純愛，彼此姐妹撕逼
+    ，夫妻撕逼，姐妹磨逼，天打雷劈，之後還是會變成一對一的互動。
+
 [一句话都不需要说 (空房间 影评)](https://movie.douban.com/review/1088158/)
 
 :   韩国电影一贯展现出对国家势力的厌恶，以及个人对体制的抵抗。

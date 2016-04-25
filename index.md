@@ -45,11 +45,19 @@ Search:[^koan]<br>
 
 <div style="font-variant:small-caps;">Posts</div>
 <div class="posts"><!--...-->
+<!--* 2016-04-22 [邓俊辉](post-0096-follow-master-deng.html)-->
+<!--* 2016-04-21 [C & C++ Notes](post-0095-c-cpp.html)-->
+<!--* 2016-04-08 [Learning JavaScript](post-0094-learning-javascript.html)-->
+<!--* 2016-04-04 [Learning D3.js](post-0093-learning-d3.html)-->
+<!--* 2016-04-02 [Trevor Burnham’s Book](post-0092-trevor-burnham.html)-->
 * 2016-03-18 [背景知识的重要性](post-0090-prerequisites.html)
+<!--* 2016-03-07 [Kaggle](post-0089-kaggle.html)-->
+<!--* 2016-03-03 [Font Awesome](post-0088-font-awesome.html)-->
 <!--* 2016-03-02 [Leet Code](post-0087-leetcode.html)-->
 * 2016-03-01 [「Game of Throne | 权利的游戏」 | 英语课 Presentation](post-0086-game-of-throne-series.html)
-* 2016-02-04 [组会分享：RAMP 是什么？](post-0085-cvrs-presentation.html)
+* 2016-02-24 [组会分享：RAMP 是什么？](post-0085-cvrs-presentation.html)
 * 2016-01-14 [Complex Network Notes | 复杂网络及其应用笔记](post-0084-complex-network-notes.html)
+<!--* 2016-01-11 [100 Things Every Designer Needs to Know About People](post-0083-designer-needs-to-know.html)-->
 * 2016-01-07 [WHU MOOC Academic Integrity | 研究生学术道德与学术规范在线课程](post-0082-whu-mooc-academic-integrity.html)
 * 2015-12-25 [Learning jQuery](post-0081-learning-jquery.html)
 * 2015-12-18 [软件开发者路线图](post-0080-apprenticeship.html)
@@ -59,14 +67,24 @@ Search:[^koan]<br>
 * 2015-12-13 [膜拜大神](post-0076-real-hacker.html)
 * 2015-12-08 [什么是投影？](post-0075-what-is-projection.html)
 * 2015-11-30 [OpenCV::CvANN_MLP | 空间数据智能计算课程编程大作业](post-0072-cvann-mlp.html)
-* 2016-03-24 [GIS 理论与技术 - 作业 1, 6, 7](post-0091-gis-misc.html)
+<!--* 2015-12-08 [Introduction to Design Patterns in C++ with Qt](post-0074-qt-design-patterns.html)-->
+<!--* 2015-12-05 [OpenCV Notes](post-0073-opencv-notes.html)-->
+<!--* 2015-11-28 [Selected Qt Code](post-0071-selected-qt-code.html)-->
 * 2015-11-23 [Vim Rules](post-0070-some-vim-rules.html)
 * 2015-11-23 [GIS 空间分析与应用建模](post-0069-gis-spatial-analysis-application-modeling.html)
 * 2015-11-23 [C++ GUI Qt4 编程](post-0068-cxx-gui-programming-with-qt4.html)
 * 2015-11-19 [一个空格引发的惨剧（remix）](post-0064-rm-pitfall.html)
 * 2015-11-18 [Pretty Diff | 听歌学英语](post-0062-pretty-diff.html)
+<!--* 2015-11-19 [StackOverFlow](post-0063-stackoverflow.html)-->
+<!--* 2015-11-19 [Get Things Done](post-0065-get-things-done.html)-->
+<!--* 2015-11-19 [All About Encoding](post-0066-about-encoding.html)-->
+<!--* 2015-11-19 [Learn C in Programming](post-0067-learn-c-in-project.html)-->
 * 2015-11-16 [一些脚本（豆瓣，etc）](post-0058-script-boy.html)
+<!--* 2015-11-15 [在 Windows 系统上学编程](post-0057-code-on-windows.html)-->
+<!--* 2015-11-14 [码字规范](post-0055-writing-guide-to-hackers.html)-->
 * 2015-11-13 [城会玩之微软 Emotion Recognition](post-0052-men-and-women.html)
+<!--* 2015-11-12 [实际应用的正则表达式](post-0053-regexpr-in-practice.html)-->
+* 2015-11-11 [GIS 理论与技术 - 作业 1, 6, 7](post-0091-gis-misc.html)
 * 2015-11-11 [GIS 理论与技术 -- 作业 5：设计一个物联网 GIS 应用的方案](post-0049-imocap.html)
 * 2015-11-10 [设计领域新风潮：Low Poly 风格](post-0048-low-poly-in-practice.html)
 * 2015-11-08 [桥梁模型贴纹理文档](post-0025-doc-bridge-texture.html)
@@ -81,6 +99,7 @@ Search:[^koan]<br>
 * 2015-09-01 [LMS 数据量](post-0056-lms-chunk.html)
 * 2015-08-11 [封装说明](post-0059-exe-wrapper.html)
 * 2015-08-06 [CVRS C++ Coding Style Guidelines](post-0060-coding-style.html)
+<!--* 2015-08-06 [LaTeX 入门（刘海洋） — 配套 TeX 源码](post-0061-liuhaiyang-example-code.html)-->
 * 2015-02-20 [Windows 系统配置](post-0007-windows-configurations.html)
 * 2015-02-19 [编程之道](post-0005-tao-of-programming.html)
 * 2015-02-19 [为什么 Emacs 用户爱德沃夏克](post-0006-why-emacs-users-favor-dvorak.html)
@@ -91,6 +110,7 @@ Search:[^koan]<br>
 * 2014-11-22 [考研英语习作](post-0020-kaoyan-english.html)
 * 2014-09-07 [召唤空格之神](post-0037-pangu.html)
 * 2014-09-03 [遵守规则还是符合逻辑？](post-0042-rules-and-logic.html)
+<!--* 2014-08-18 [摘自阳志平的博客](post-0054-get-things-done.html)-->
 * 2014-08-10 [Windows 上配置 Git](post-0044-git-github-notes.html)
 * 2014-07-15 [Pinboard：奇葩的注册费](post-0028-pinboard.html)
 * 2014-07-15 [DuckDuckGo：另一个搜索引擎](post-0013-duckduckgo-another-search-engine.html)
@@ -169,9 +189,7 @@ Search:[^koan]<br>
 </style>
 
 <script src="auto-complete.js"></script>
-
 <script src="blog-query.js"></script>
-
 <script>
 ;var link_prefix = tzx_link_prefix;
 ;if ( window.location.toString().startsWith('file') ) {

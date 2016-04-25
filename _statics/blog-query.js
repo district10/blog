@@ -599,4 +599,9 @@ var tzx_links = [
         title: "邓俊辉",
         query: ['computation geometry', 'date structure', 'algorithm']
     },
+    {
+        url: '/post-0097-machine-learning.html',
+        title: "Machine Learning",
+        query: ['machine-learning', 'deep-learning']
+    },
 ];
