@@ -17,7 +17,7 @@ Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序�
 [^dvorak]: 见 [为什么 Emacs 用户爱德沃夏克](post-0006-why-emacs-users-favor-dvorak.html)。
 [^qwerty]: [QWERTY - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/QWERTY)。
 [^emacs]: [Emacs - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Emacs)。
-[^info]: 作为一个程序员，[寡人打字速度比风快](typing.html)，只要不是在 QWERTY 键盘上（每次被人误会为不会打字，我都很郁闷……）。
+[^info]: 作为一个程序员，[寡人打字速度比风快](typing.html)，只要不是在 QWERTY 键盘上（**每次被人误会为不会打字，我都很郁闷……**）。
 
     LostAbaddon:
 

@@ -255,8 +255,9 @@ a[href^="http://"]:not([href*="mydomain.com"]):before{ }
 a:after { color: lightgray; font-size: 60%; }
 
 a[href*="wikipedia.org"]:after          { content: "「維」"; }
-a[href*="github.com"]:after             { content: "「基」"; }
-a[href*="douban.com"]:after             { content: "「豆」"; }
+// a[href*="github.com"]:after             { content: "「基」"; }
+a[href*="github.com"]:after             { content: "「GitHub」"; }
+a[href*="douban.com"]:after             { content: "「豆」" }
 a[href^="mailto:"]:after                { content: "「邮」"; }
 a[href*="tangzhixiong.com"]:after,
 a[href*="dvorak4tzx.com"]:after         { content: "「我」"; }

@@ -116,14 +116,6 @@ ml
 - 论文笔记SPP.pdf
 ```
 
-一：论坛资源：
-
-1. 机器学习该如何入门：<http://www.zhihu.com/question/20691338>
-2. 机器学习，热门回答：<http://www.zhihu.com/topic/19559450>
-3. 果壳网：<http://www.guokr.com/post/636133/>
-4. 机器学习入门不完全资料汇总（好东西传送门出品）：<http://ml.memect.com/article/machine-learning-guide.html>
-5. 机器学习经典书籍（算法组）：<http://suanfazu.com/t/topic/15>
-
 二：课程资源
 
 1. Tom Mitchell：http://work.caltech.edu/library/181.html http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml
@@ -541,3 +533,5 @@ refs and see also
   - [机器学习 - 话题精华 - 知乎](https://www.zhihu.com/topic/19559450/top-answers)
   - [深度学习（Deep Learning） - 话题精华 - 知乎](https://www.zhihu.com/topic/19813032/top-answers?page=1)
   - [神经网络 - 话题精华 - 知乎](https://www.zhihu.com/topic/19607065/top-answers)
+
+---

@@ -12,7 +12,7 @@ Orgit | 唐凤
 
 ---
 
-Working Notes:
+Featured Working Notes:
 
   - [Machine Learning](post-0097-machine-learning.html)
   - [OpenCV Notes](post-0073-opencv-notes.html)

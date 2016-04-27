@@ -129,14 +129,14 @@ $('div.tzx-drawer[shy]').each(function(){
     $(this).children().children('dd').toggleClass('tzx-drawer-hide');
 });
 
-$('div.tzx-drawer').on( 'click', function(e){
+$('div.tzx-drawer').on( 'click', function(event){
     $(this).children().children('dd').toggleClass('tzx-drawer-hide');
     if ($(this).children().children('dd:eq(0)').hasClass('tzx-drawer-hide')) {
         if ( $(this).offset().top < pageYOffset ) {
             window.scrollTo($(this).offset().left, $(this).offset().top);
         }
     }
-    return false;
+    event.stopPropagation();
 });
 
 $( "#tzx-changes" )

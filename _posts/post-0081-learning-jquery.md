@@ -266,6 +266,9 @@ Event propagation
     `preventDefault`{.javascript}
     `event.stopPropagation()`{.javascript}
 
+    refs and see also
+
+      - [Examples - Web API 接口 | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model/Examples#Example_5:_Event_Propagation)
 
 kbds
 

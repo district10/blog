@@ -4,7 +4,7 @@ PANDOC_OPTIONS = -S -s --ascii \
 	-A footer.html \
 	--highlight-style pygments \
 	--template template.html \
-	-f markdown+pandoc_title_block+east_asian_line_breaks \
+	-f markdown+pandoc_title_block+east_asian_line_breaks+emoji+abbreviations \
 	metadata.yaml \
 
 MD   = $(wildcard *.md)
