@@ -103,6 +103,8 @@ Fuck。每个人的精力都是有限的，洗洗睡把。
 2. 有了 Possible implementation，可以了解实现的细节，还可以以此学习 C++ 模板。
 3. 示例代码可以用 GCC 和 Clang 编译，支持 C++11, C++14, C++17
 
+比 [cplusplus.com - The C++ Resources Network](http://www.cplusplus.com/) 好多了！
+
 ## `1461152684`{.tzx-timestamp} 处女座性格和技能百分比
 
 说自己是处女座性格的……都不是处女座。像我这样真正的处女座才不相信星座呢！

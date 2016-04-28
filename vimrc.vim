@@ -32,6 +32,9 @@ ab fats     <i class="icon-tags"></i>
 ab fatd     <i class="icon-thumbs-down"></i>
 ab fatu     <i class="icon-thumbs-up"></i>
 
+ab qwhudoc http://whudoc.qiniudn.com/
+ab qgnat   http://gnat.qiniudn.com/
+
 if has("gui_running")
   if has("gui_gtk2")
     set guifont=Inconsolata\ 12

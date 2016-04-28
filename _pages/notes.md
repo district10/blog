@@ -19,6 +19,215 @@ after-before: |
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+如何花最少的钱购买正版 Windows 和 Office？
+
+:   - Step 1. 通过面试成为微软员工
+    - Step 2. 上班
+    - Step 3. 直接获得MSDN账号
+
+    不但有免费Win+Office，还有工资拿
+
+[[新闻] Chez Scheme开源了 - 编程语言与高级语言虚拟机杂谈（仮） - 知乎专栏](https://zhuanlan.zhihu.com/p/20808925)
+
+:   我大三开始学Scheme和啃SICP是从Petite Chez Scheme 7.4开始的。能一睹完整版
+    Chez Scheme的芳容真是太爽了
+
+    现在的小朋友要学习这方面，从入门级到高度优化的产品级项目都有众多开源项目可
+    参考，多方便啊。我都恨不得想迟个十来年出生了，正好能在学校里赶上这浪潮 >_<
+
+    refs and see also
+
+      - [cisco/ChezScheme: Chez Scheme](https://github.com/cisco/ChezScheme)
+
+[学习编程语言与编译优化的一个书单 - 编程语言与高级语言虚拟机杂谈（仮） - 知乎专栏](https://zhuanlan.zhihu.com/p/20130808?refer=hllvm)
+
+要是因为男方有案底了，看不上了，直接说明白，哪怕你今天提分手，明天就去找个新欢
+，我都觉得没什么不道德，但是你一边不和男友说清楚，一边又在外面乱搞，这不算不道
+德算什么？
+
+<div class="tzx-drawer" shy>
+别TM**拿圣人的标准要求被人，用贱人的标准要求自己**。
+
+:   老师们对他们的态度，是重在管制，只希望他们不要惹是生非，而绝对不会去鼓励他
+    们好好学习，没用。
+
+    这些学业上已经毫无希望的学生。
+
+    他们闲着，他们无聊，他们缺乏教育，他们毫无顾忌，他们叛逆，他们崇尚暴力。
+
+    这种精神状态，不去惹是生非才怪。
+
+    现在理解家长为什么拼命让孩子上好学校，不仅是为了成绩，还**为了远离人渣**。
+
+</div>
+
+[春节回家你打算怎么和亲友介绍、解释自己的专业都是干什么的？ - 夏洋的回答 - 知乎](https://www.zhihu.com/question/39917930/answer/86817635)
+
+:   不大熟的朋友亲戚聚会什么的，我一般都说我在一个广告公司里做一些基础的杂活，
+    管管仓库啊调度啊之类的，体力活。**然后就没人问了，各种清静。**
+
+    我真没骗人啊，我在Google做Ads Infrastructure的，Data Warehouse相关，给超大
+    规模分布式数据库写Query Dispatcher的......
+
+    **另外占用资源什么的，难道还能比chrome更占资源？**
+
+    （我这么黑公司真的大丈夫吗？）
+
+    **多微笑，别反口，事情很快过去的。**
+
+    亲戚们未必真关心你干什么，只是想找个话题聊天而已。他们也未必真在意回答，所
+    以微笑，找话题，就过去了。
+
+    所以，回答时，如果可以不当面呛回去，就不必太用力呛。大多数亲戚并无恶意，只
+    是交流能力不佳、见识也有局限性而已。
+
+    ```cpp
+    using VOS = aa::bbb::VeryLongType<WithOrzTemplate>::Subtype;  // short hand
+    ```
+
+    所以国人呐，开车要好车，衣服要名牌，至于内裤破了几个洞，『无所谓啦！』
+
+    我是支持现场手写（在纸上写）代码的，至少对于初级职位。
+
+    我的想法是：一般来说，面试题本身并不会特别复杂，那么如果你能从上到下地在纸
+    上写出代码（或者伪代码），说明你：
+
+    - 能在脑子里很快构建出清晰的结构。能够很快地走过从“全局的框架”到“各处的细节
+      ”这样一个自顶而下的过程，这不仅是语言熟练度的问题，更多能体现出一种“**解决
+      问题的思考方式**”；
+    - 你的脑容量足够大。毕竟在一个面试题级别的题目里，很多细节是“牵一发而动全身
+      ”的（比如写一个递归，那么状态设计在一开始就要想好）。那么如果你能从上到下
+      一遍写好，保持比较干净清爽的卷面，往往你在写第一个字的时候其实已经在脑子
+      里把最后一个字都已经“写”了一遍，说明你的大脑能够装下一定复杂度的问题。反
+      过来，如果习惯了“想到哪写到哪”的风格，依赖于“出错误了再去调试下”，这样的
+      工作模式可能会带来比较高的bug率。
+
+    在Google快两年，我也有过很忙的时候（极其偶尔）。有一阵子忙的时候，休息时一
+    群同事（含上司，tech lead等）聊天，他们就提到了这样一个结论：一直在“执行”的
+    话，“思考”就少了，容易干出笨事，这对于大型软件系统来说往往是很糟糕的：设计
+    烂了导致开发和维护的成本显著性上升；疲劳驾驶时bug也会明显增多。从大局上看真
+    能降低成本么？未必。
+
+    像我这种二次元废柴，**基于兴趣划分圈子**，绝大多数情况下并不考虑对方是哪国
+    人的问题。感兴趣的各种事情大多都有一个相应的圈子，每个圈子内又细分成许多小
+    圈子（比如唱歌分华语流行/日语二次元，敲码分前端/后端等等），圈子之间偶有交
+    叉但保持在低水平，这算抱团还是不抱团？
+
+    老美同事讲笑话我听不懂没关系，直接问对方相关的背景知识，能抓到笑点的话一样
+    哈哈哈（重点是因为这确实好笑，而不是什么融入不融入的问题）；老中同事一起吃
+    饭，他们聊养娃买房的时候我照样端着盘子抱着手机一边刷知乎去。
+
+    **事实上，绝大多数时候不跟人玩......所以觉得在国内/国外并没有特别大的区别。**
+
+    我在很早起就形成了稳定的风格和路数，到现在没怎么变，所以看老代码和新代码差
+    不多。甚至早期会更多地用语言技巧，**现在写的更朴实。**
+
+    一次开会的时候，在阿凡达的渲染器PantaRay里看到了一段代码，越看越熟悉，这特
+    么不是我N年前写给Halo的吗。
+
+    后来搞清楚了授权链，发现确实是我的。怪不得看阿凡达的时候发现连artifact都那
+    么熟悉。
+
+    所以，**不是年纪大了都转行，而是水平差的都淘汰了。**
+
+    [神仙姐姐美嘉的广播](https://www.douban.com/people/vip_fiona/status/1833166448/)
+
+    :   公司发展到一定阶段，能力强的员工容易离职，因为他们对公司内愚蠢的行为的容忍
+        度不高，他们也容易找到好工作；能力差的员工倾向于留着不走，他们也不太好找工
+        作，年头久了，他们就变中高层。这种现象叫做死海效应：好员工像死海的水一样蒸
+        发掉，然后死海盐度就变得很高，**正常生物不容易存活**。
+
+    ```cpp
+    // This function has been here since 1987. DON'T FXXKING TOUCH IT
+    ```
+
+    国外一开源，国内就有自主研发
+
+    余国荔（Corrinne Yu）是谁？
+      ~ 微软唯一一个图形比我强的女性。
+
+    原Halo引擎架构师。Bungie从微软分出去之后她留在微软的343工作室，继续做Halo系
+    列，期间发明了动态radiosity算法，并删掉了我在Halo3里用的优化lightmap的系统
+    。
+
+    后来因为受不了xbox one sdk beta的脑残行为，离开微软去了sony搞ps4。
+
+    最后，今年她又跳槽去了Amazon，也受不了ps4了？
+
+    Python很简单的，很容易学。我看这本书，就花了一节课的功夫，40分钟，就学完了。
+
+    ![](https://img1.doubanio.com/mpic/s10347319.jpg)
+
+    但问题在于，因为不常用，每次用之前，都得再花40分钟。。。
+
+    老鸟和新手的一个很大区别来自于debug的能力。其中最主要又可以从两方面看出来：
+
+    1. 从高层往底层找错。
+    2. 科学方法。
+
+    refs and see also
+
+      - [夏洋 答过的问题 - 知乎](https://www.zhihu.com/people/xia-yang-7/answers?order_by=vote_num)
+      - [为什么「道理都懂，然执行力差」的现象如此普遍？ - 曾旻的回答 - 知乎](https://www.zhihu.com/question/30161095/answer/47601545)
+
+[Contrast Preserving Decolorization](http://www.cse.cuhk.edu.hk/leojia/projects/color2gray/index.html)
+
+[Decolorization — OpenCV 3.0.0-dev documentation](http://docs.opencv.org/3.0-beta/modules/photo/doc/decolor.html)
+
+<div class="tzx-drawer" shy>
+[单身路上偷的懒，迟早用孤独去偿还](https://www.douban.com/note/550264000/)
+
+:   可是孩子谁带？保姆的工资比你挣得高。做什么？几年没和社会接触过，你连ppt都要
+    从头培训。比起老公嘲笑你，你更怕的是，其实心里知道他们说的是对的。
+
+    对女人而言，工作不是一定要找一间办公室，一个老板，几个同事，自己混到五点下
+    班就好了。真正的工作是永远在学习，无论在怎样的境地下，都要抽空去学习，愈是
+    有疼爱自己的老公，体贴的家人，愈是有对自己“再无要求”的环境，愈是要学习。唯
+    有这样，才会永远有突围孤独的出口。
+
+    比起腰上的肥肉渐长，一个已婚女人最大的黯然，是开口就是芝麻绿豆，灵气尽失。
+
+    一个人如何对待工作，其实也是如何对待自己。多少未婚年轻女孩子，抱怨工作比潜
+    心工作的精力花得多，为了换得舒服生活，傻乎乎去傍上金龟婿。新婚之际，谁都洋
+    洋得意，可是你根本不知道，一个女人在单身路上如果偷了懒，迟早要在生完孩子以
+    后用孤独去偿还。因为你单身时候的战斗力越弱，你就越难成为一个敢于突围的已婚
+    女人。而且后来，你就会死死陷入一种“是婚姻困住了我”的假象。
+
+    这个时候你才发现，一个女人，总有一天，多么怀念有一份工作的时光，多么怀念永
+    远不会被困住的日子，多么怀念真心去为了自己的成长而过好每一天的青春岁月。虽
+    然累，可是，累得好爽。
+
+    在三十岁以后，工作带来的美好体验远超爱情。
+
+</div>
+
+[dragondjf/QMarkdowner: Editor for Markdown based on PyQt4 with Metro](https://github.com/dragondjf/QMarkdowner)
+
+[district10/CuteMarkEd: Qt Markdown Editor](https://github.com/district10/CuteMarkEd)
+
+[求图形学基本算法好书推荐? - 知乎](https://www.zhihu.com/question/27525631)
+
+:   [Scratchapixel](http://www.scratchapixel.com/)
+
+    我看到这个网站后，感动得要哭！这一个网站就够了！！好好珍惜吧！
+
+    想学opengl, 就用这个网站[OpenGL Step by Step - OpenGL
+    Development](http://ogldev.atspace.co.uk/)。非常赞！老外好无私！
+
+    想学DX，就看‘Practical Rendering and Computation with Direct3D 11’。 这本书
+    把pipeline讲得非常清晰。这是我见过最好的一本DX的书。 （小八卦，real-time
+    rendering的作者曾把这书当礼物送给我同事）
+
+    如果你能读《RTR3》，就先把它读完一遍再说吧，届时希望能发一份简历给我。相关
+    问题：系统的学习计算机图形学，有哪些不同阶段的书籍的推荐？ - Milo Yip 的回
+    答
+
+    refs and see also
+
+      - [系统的学习计算机图形学，有哪些不同阶段的书籍的推荐？ - Milo Yip 的回答 - 知乎](https://www.zhihu.com/question/26720808/answer/33885578)
+
+[wpf - How does Cocoa compare to Microsoft, Qt? - Stack Overflow](http://stackoverflow.com/questions/2442340/how-does-cocoa-compare-to-microsoft-qt)
+
 [白板编程浅谈——Why, What, How - Lucida](http://lucida.me/blog/whiteboard-coding-demystified/)
 
 [灵魂机器 答过的问题 - 知乎](https://www.zhihu.com/people/soulmachine/answers?order_by=vote_num)
@@ -26,21 +235,24 @@ Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了�
 :   所以，你自己在提这个问题之前，其实已经知道了答案，就不妨明说吧，你在二本学
     校，进google的可能性有，但是概率非常非常非常低，比其他学校的学生概率要低得
     多。如果你在大学四年，不玩命学习，每天学习时间不超过11小时（类似于武侠小说
-    的主角，基本都有一段奇遇，经历过后功力大涨），你就洗洗睡吧。
+    的主角，基本都有一段奇遇，经历过后功力大涨），**你就洗洗睡吧。**
 
     首先最基本的两点建议，
 
     1. 无论白天黑夜，不要带手机在身边，每天只在睡觉前把手机打开15分钟，处理未接
-       电话和未读短信，最好是把手机砸了（作为学生社交关系非常简单，完全没必要拥有
+       电话和未读短信，**最好是把手机砸了**（作为学生社交关系非常简单，完全没必要拥有
        手机）
     2. 打开电脑除了Google, Stackoverflow 等编程网站，不要上其他社交网站，例如QQ，
        微博等等，禁止开机进入Windows,装个Ubuntu.
 
     2015/02/18日更新：
 
-    不少人觉得这方法很偏激，我才说了两点建议。。。我不妨说的更具体一点，说说我当年是如何操作的吧
+    不少人觉得这方法很偏激，我才说了两点建议。。。我不妨说的更具体一点，说说我
+    当年是如何操作的吧
 
-    1. 戒手机。每天只在23:30睡觉前开机手法短信，回几个电话，当然，随着与世隔绝的日子一天一天下去，我的未接短信和未接电话越来越少，几个月后只有几个亲人偶尔有联系。
+    1. 戒手机。每天只在23:30睡觉前开机手法短信，回几个电话，当然，随着与世隔绝
+       的日子一天一天下去，我的未接短信和未接电话越来越少，几个月后只有几个亲人
+       偶尔有联系。
     2. 戒网。比前面的建议更激进，基本一个月只上一次网，每次上网也是查查信息。
     3. 戒电脑。我认为大部分人打开电脑后，注意力会涣散，一会儿就偏离开机前心里想
        要做的事，四处看网页去了，于是我一狠心让自己每天只用一个小时电脑。
@@ -54,13 +266,16 @@ Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了�
     8. 每天学习11个小时。很多人觉得11个小时没什么，不错，一天两天如此没什么，可
        是天天如此，就需要对时间安排极度精准了，我的日程是这样的，每天7:00起床,
        10分钟吃早餐，10分钟步行到自习室, 7:30准时开始看书，11:30去食堂吃饭，
-       17:30吃晚饭, 23:00下自习，回到租住的房间洗漱睡觉。有几个tips要注意，1.
-       早餐一定要简单，如果你去食堂吃或者路边买早餐，10分钟搞定不可能，所以我都
-       是每周末去一次超市，买一袋子面包片，每天早晨两片面包，其他复杂的食物，例
-       如果汁，水煮鸡蛋等都很费时间 2. 午睡在桌子上趴着睡就好，回到房间睡床上，
-       一睡就不想起来。
+       17:30吃晚饭, 23:00下自习，回到租住的房间洗漱睡觉。
 
-    总结，以上所有方法都是围绕一个核心，与世隔绝，极致专注。
+    有几个tips要注意，
+
+    - 早餐一定要简单，如果你去食堂吃或者路边买早餐，10分钟搞定不可能，所以我都
+      是每周末去一次超市，买一袋子面包片，每天早晨两片面包，其他复杂的食物，例
+      如果汁，水煮鸡蛋等都很费时间
+    - 午睡在桌子上趴着睡就好，回到房间睡床上，一睡就不想起来。
+
+    总结，以上所有方法都是围绕一个核心，**与世隔绝，极致专注。**
 
     再打个比方，不少人说用 Kindle 看书比 iPad Mini 效率高，我估计可能因为
     Kindle 干别的都不行，只好专心看书。我使用过两者均长达一年多，亲身体验，确实
@@ -84,8 +299,8 @@ Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了�
     - 对所面试的岗位毫无概念，不明白自己是否符合岗位描述上的必要条件
     - 对面试提问思路不清晰，或思路表达不清晰。面对问题时，不是仅仅得不到完美的
       最终答案，而是思路一片空白。
-    - 坚决认为C++是王道，“我还是想做C++”，拒绝多语言工作和学习。但实际上C++掌握
-      的并不好。
+    - **坚决认为C++是王道，“我还是想做C++”，拒绝多语言工作和学习。但实际上C++掌握
+      的并不好。**
 
     鄙公司（小公司招人不容易啊！）面试程序时，除非简历上写明了ACM获奖经历，否则
     我给他们安排的所谓“算法题”基本上不会超过二分查找的难度，而且其实并没有太多
@@ -100,9 +315,9 @@ Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了�
     除了鄙公司，以我在大公司的被面试以及面试经验，虽然连基本的算法题都答不出实
     在是一件值得鄙视和怀疑的事情，但我依然觉得如果你各方面能力均表现优秀，十分
     符合岗位所需的要求，其实是不太会因为一个复杂的算法题没有答上来而直接被挂掉
-    的。当然，如果你在面试算法题时毫无思路，或缺乏基本的算法复杂度分析等能力，
-    被扣分也几乎是一定的。你被各方面都不比你差，算法问题表现比你更强的面试者干
-    掉，也是很有可能的。
+    的。**当然，如果你在面试算法题时毫无思路，或缺乏基本的算法复杂度分析等能力
+    ，被扣分也几乎是一定的。**你被各方面都不比你差，算法问题表现比你更强的面试
+    者干掉，也是很有可能的。
 
     说了那么多，总结起来只有一句：“因为公司面算法而义愤填膺的，肯定是面试挂掉了
     而不知道自己究竟为什么挂掉了的。”
@@ -114,14 +329,14 @@ Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了�
     位需求），但性格和沟通上还是很喜欢的孩子的。
 
     算法题是用来衡量你思考和解决问题的能力的。如果是大公司的研发岗位，面一些很
-    难的算法题我也不觉得为过，当然，不代表一定要答出最完美的答案，更重要的是你
-    的思考、沟通、验证、以及执行过程。我当初在面试百度的时候，面的是一个算是很
-    高端的字符串匹配题，最完美的答案（改进版AC自动机）我当时是既不知道又是即使
-    知道了也写不出来，然而我给出了我能力范围内最漂亮的答案（后缀数组），复杂度
-    虽然多了一个lgN，但面试官也看到了我的分析能力以及思考过程的清晰、方案的完整
-    度以及快速可实施性，后来一样还是过了。至于“ACM级别”，我想你太小瞧ACM了，真
-    的，就这道题目，在ACM圈子里是最low的模板题而已，稍微集训过几个月的人都会，
-    完全不值得讨论……
+    难的算法题我也不觉得为过，当然，不代表一定要答出最完美的答案，**更重要的是
+    你的思考、沟通、验证、以及执行过程**。我当初在面试百度的时候，面的是一个算
+    是很高端的字符串匹配题，最完美的答案（改进版AC自动机）我当时是既不知道又是
+    即使知道了也写不出来，然而我给出了我能力范围内最漂亮的答案（后缀数组），复
+    杂度虽然多了一个lgN，但面试官也看到了我的分析能力以及思考过程的清晰、方案的
+    完整度以及快速可实施性，后来一样还是过了。至于“ACM级别”，我想你太小瞧ACM了
+    ，真的，就这道题目，在ACM圈子里是最low的模板题而已，稍微集训过几个月的人都
+    会，完全不值得讨论……
 
     至于“没本事不要设立高门槛”，我倒是觉得，不管有没有本事，有钱就有资格设置高
     门槛。至于门槛是设在这种看似不直接产生作用的算法能力上，还是设在什么管理、
@@ -130,7 +345,7 @@ Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了�
     管理人员，尤其是面试应届毕业生的时候，都有可能会更倾向于成长型的员工。这种
     情况下，不面算法面什么？面你行业背景吗？面你项目经历吗？
 
-    可笑死了，没本事就嘲笑别人没本事。
+    **可笑死了，没本事就嘲笑别人没本事。**
 
     还有一些情况是这样子的，例如我问超大整数乘法然后对方说用 Python 直接用乘号
     ，又或者说我问快速排序对方说用 Haskell 一行写完。这就如同一个面试者打开公文
@@ -152,16 +367,19 @@ Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了�
 确实现了它们，如果 class 确实应该是 copyable 的话），这反映了作者设计 C++ class
 的基本功：正确管理内存和其他资源，以及他有没有认真读过 Effective C++。
 
-当然啦。。看C++要看leveldb
-看C要看redis
+当然啦。。看C++要看leveldb, 看C要看redis
 
 [yedf/handy: 简洁易用的C++11网络库 / 支持单机千万并发连接 / a simple C++11 network server framework](https://github.com/yedf/handy)
 
-非常简洁的一个网络库，10行代码能够编写一个完整的echo服务器，采用最新的c++11语法，总共才2千行左右的代码
+:   非常简洁的一个网络库，10行代码能够编写一个完整的echo服务器，采用最新的c++11
+    语法，总共才2千行左右的代码
 
-学习中的建议：
-libevent、asio等成熟的广泛应用的库，其中有大量的代码是为了跨平台，适合熟练的开发者阅读，不适合初学者。
-redis，memcache等开源项目，适合进阶的开发者开发一个实际的应用，而handy有更多的例子，可以帮助开发者一步一步掌握网络编程的技巧。
+    学习中的建议：
+
+      - libevent、asio等成熟的广泛应用的库，其中有大量的代码是为了跨平台，适合
+        熟练的开发者阅读，不适合初学者。
+      - redis，memcache等开源项目，适合进阶的开发者开发一个实际的应用，而handy
+        有更多的例子，可以帮助开发者一步一步掌握网络编程的技巧。
 
 [现在的大学生没有经过任何的论文写作训练，应该如何写论文？ - 知乎](https://www.zhihu.com/question/22011864)
 
@@ -169,7 +387,7 @@ redis，memcache等开源项目，适合进阶的开发者开发一个实际的�
 
 rudimentary `[,rudɪ'mɛntri]` adj. 基本的；初步的；退化的；残遗的；未发展的
 
-```
+```vim
 ab fatd     <i class="icon-thumbs-down"></i>
 ab fatu     <i class="icon-thumbs-up"></i>
 ```
@@ -12572,182 +12790,13 @@ Return
 ---
 
 ```c
-size_t strlen( const char *str )
-{
-    const char *s;
-    for( s=str; *s; ++s ) { }
-    return s-str;
-}
-
-char *strcpy( char *to, const char *from  )
-{
-    assert( to && from && "should be both valid." );
-    char *p = to;
-    int i = 0;
-    while( (*p++=*from++) != 0 ) { }
-    return to;
-}
-
-void strstr( const char *haystack, const char *needle )
-{
-
-}
-
-int atoi( const char *str )
-{
-    int len = strlen( str );
-    int sign = 1;
-
-    const char *p = str;
-    while ( *p == ' ' ) {
-        ++p;
-    }
-
-    if ( *p == '+' ) { sign = +1; ++p; }
-    if ( *p == '-' ) { sign = -1; ++p; }
-    int i = 0;
-    while( '0' <= *p && *p <= '9' ) {
-        int d = *p - '0';
-        i = i * 10 + d;
-    }
-
-    stip preceding white chars;
-    parse sign, +, -, or no sign
-        c = '0'-'9' ?
-        overflow?
-        *10 + *c-'0'
-        return num * sign;
-}
-
-substring searching
-  kmp
-
-    char *text, char *pattern;
-  int n, m;
-  n,m,0?
-  init _prefix ( pattern, next )
-  free (next)
-  loop: text[i]=pattern[j]? ++i else j = next(?)
-
-  tests: char *text, char *pattern, int i = kmp(), i>0?printf;
-
-    rabin-karp.
-    regexp?
-
-typedef int stack_elem_t;
-typedef struct {
-    int size;
-    int capicity;
-    stack_elem_t *elems;
-} stack_t;
-
-stack_t *stack_create( const int capacity ) {
-    malloc stack_t;
-    malloc elements;
-    assign;
-    return s;
-}
-
-void destroy( stack_t *s){
-    free(s->elems);
-    free(s);
-}
-
-bool empty(s);
-int size(s);
-void push(s, elem){
-    full?
-    expand size;
-    push;
-    s->elems[s->size++] = x; // pa: ++size or size++, which is better
-}
-
-int top() { } // pa: size++ -> size-1
-void pop()
-{
-    --size;
-}
-
-hanoi tower, recursive.
-n==1? just move x->z;
-hanoi(n, from, bridge, to);
-
-convert base, void (int n, int d)
-while(n!=0)
-r=n%d; push(r);
-n=n/d;
-
 如果可以预估栈的最大空间,则用数组来模拟栈,这时常用的一个技巧。
 
   - 这里,栈的最大长度是多少?假设 CPU 是 64 位,最大的整数则是 2^64,由于
   - 数制最小为 2,在这个进制下,数的位数最长,这就是栈的最大长度,最长为 64。
 
-10->d, hader,
+10->d, harder,
 d->10, easy! char->num, n=n*d+num;
-
-queue.
-
-typedef struct {
-    int front;
-    int rear;
-    int capacity;
-    queue_elem_t *elems;
-} queue_t;
-
-create(int capacity);
-malloc(queue);
-malloc(queue->elems);
-return queue;
-
-destroy(queue *q);
-free(q->elems);
-free(q);
-
-empty?: rear==front;
-size: (rear-front+capacity)%capacity
-
-push(q, elem x){
-    full?: (rear+1)%capacity==front
-    realloc, reassign: front<rear? easy : two parts;
-    free(origin-elems);
-    elems=new mems;
-   void *memcpy(void *dest, const void *src, size_t n);
-
-rear = (read+1)%capacity;
-
-binary tree:
-
-typedef struct {
-    binary_tree_node_t *left;
-    binary_tree_node_t *right;
-    tree_node_elem_t elem;
-} binary_tree_node_t;
-
-pre_order_r( const *root, int (*visit)(const *tree)) {
-    if (!root) return;
-    visit( root );
-    pre_order_r( root->left, visit );
-    pre_order_r( root->right, visit );
-}
-
-in_order_r( const *root, int (*visit)(const *tree)) {
-    if (!root) return;
-    in_order_r( root->left, visit );
-    visit( root );
-    in_order_r( root->right, visit );
-}
-
-post_order_r( const *root, int (*visit)(const *tree)) {
-    if (!root) return;
-    post_order_r( root->left, visit );
-    post_order_r( root->right, visit );
-    visit( root );
-}
-
-// no recursive version
-pre_order( *tree, int (*visit)(*tree) ) {
-
-}
 ```
 
 这部分全部移到了 [district10/algo: 重复造轮子。](https://github.com/district10/algo)。
@@ -21911,6 +21960,22 @@ Disallow:
 
 [字符串匹配的KMP算法 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html)
 
+:   ![](http://image.beekka.com/blog/201305/bg2013050109.png)
+
+    移动位数 = 已匹配的字符数 - 对应的部分匹配值
+
+    ![](http://image.beekka.com/blog/201305/bg2013050110.png)
+
+    ![](http://image.beekka.com/blog/201305/bg2013050114.png)
+
+    ![](http://whudoc.qiniudn.com/2016/kmp-table.png)
+
+    "部分匹配"的实质是，有时候，字符串头部和尾部会有重复。比如，"ABCDAB"之中有
+    两个"AB"，那么它的"部分匹配值"就是2（"AB"的长度）。搜索词移动的时候，第一个
+    "AB"向后移动4位（字符串长度-部分匹配值），就可以来到第二个"AB"的位置。
+
+    [字符串匹配的Boyer-Moore算法 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2013/05/boyer-moore_string_search_algorithm.html)
+
 [SICP终于看完了，有一些经验想分享出来 - 学习资料 - CoCode](http://cocode.cc/t/sicp/3397)
 
 [c++ - Linking different libraries for Debug and Release builds in Cmake on windows? - Stack Overflow](http://stackoverflow.com/questions/2209929/linking-different-libraries-for-debug-and-release-builds-in-cmake-on-windows)
@@ -22005,8 +22070,11 @@ Disallow:
 
 [vim - How do I open the directory of the current open file? - Super User](http://superuser.com/questions/31677/how-do-i-open-the-directory-of-the-current-open-file)
 
-:   `:Sex .`
-      ~ This is good but the command is so hard to remember.
+:   `:Sex .`{.vim}
+
+    This is good but the command is so hard to remember.
+
+    其实用 `:E` 就可以啊……
 
 [How to switch to the directory listing from file view in vim? - Unix & Linux Stack Exchange](http://unix.stackexchange.com/questions/52179/how-to-switch-to-the-directory-listing-from-file-view-in-vim)
 
@@ -24550,6 +24618,13 @@ Disallow:
     社区不是很友好，导致推广不太顺利，直到它改成了 LGPL 方式，如果 Qt 能早点
     想开了，恐怕就没有 wxWidgets 的生存空间了。Qt 的缺点也是有的，就是太大，
     不过可以自己剪裁，我可以把 QT 库剪裁到发行包压缩后 2.5 MB。
+
+    最后我想补充下真正的UI库之王，cocoa。Apple的成功有很多原因，其中之一就是
+    cocoa，cocoa理念十分先进，而且出来得早，我都怀疑Qt和WPF有不少思想都是借鉴
+    cocoa的。定义式的UI，用xib就可以定义UI的绝大部分细节，而且提供所见即所得的
+    可视化设计工具。严格的MVC，而且定义非常清晰，分工明确。signal/slot，虽然不
+    叫这个名字，但思想就是，而且真的是拖动鼠标就能connect。提供了ARC，闭包和反
+    射，给UI开发带来巨大的便利性，当然这得益于Objective-C这个语言。
 
 [怀旧梦想家的程序世界 - Living Computer Museum](http://www.douban.com/note/429783660/)
 

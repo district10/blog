@@ -121,8 +121,10 @@ $(document).ready(function(){
             document.location = "index.html"
         }
     };
+});
 
-    // appendSharp();
+$( "body > dl, li > dl, dl > dl, p > dl" ).each(function() {
+    $(this).addClass('tzx-drawer');
 });
 
 $('div.tzx-drawer[shy]').each(function(){
@@ -132,6 +134,16 @@ $('div.tzx-drawer[shy]').each(function(){
 $('div.tzx-drawer').on( 'click', function(event){
     $(this).children().children('dd').toggleClass('tzx-drawer-hide');
     if ($(this).children().children('dd:eq(0)').hasClass('tzx-drawer-hide')) {
+        if ( $(this).offset().top < pageYOffset ) {
+            window.scrollTo($(this).offset().left, $(this).offset().top);
+        }
+    }
+    event.stopPropagation();
+});
+
+$('dl.tzx-drawer').on( 'click', function(event){
+    $(this).children('dd').toggleClass('tzx-drawer-hide');
+    if ($(this).children('dd:eq(0)').hasClass('tzx-drawer-hide')) {
         if ( $(this).offset().top < pageYOffset ) {
             window.scrollTo($(this).offset().left, $(this).offset().top);
         }
