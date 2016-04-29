@@ -45,7 +45,6 @@ R.I.P.
 
 ## `/etc/apti/sources.list`
 
-<small>
 ```bash
 adduser gnat                                # userdel gnat
 visudo                                      # add "gnat ALL=(ALL:ALL) ALL"
@@ -75,7 +74,6 @@ sudo apt-get upgrade
 dpkg-reconfigure locales                    # us utf 8; zh utf 8, GB, Big5, etc
 locales-gen                                 # if skiped locales generation
 ```
-</small>
 
 ## Chrome/Firefox Extensions
 
@@ -155,8 +153,15 @@ emacs -nw --batch -l ~/.emacs.d/init.el -f package-refresh-contents
 ### Some useful tools
 
 - [Percol](https://github.com/mooz/percol)
+    + `sudo pip install percol`
 - [Banner](http://www.cyberciti.biz/faq/create-large-colorful-text-banner-on-screen/)
+    + `sudo apt-get install toilet figlet`
 - [neo keyboard layout](https://github.com/district10/neo_keyboard_layout)
+
+```bash
+git clone https://github.com/district10/neo_keyboard_layout.git
+sudo apt-get install libxtst-dev
+```
 
 ### Vim
 
@@ -220,9 +225,17 @@ set( CMAKE_CXX_FLAGS "-std=c++11" )                # Add c++11 functionality
 
 ![`man std::string::c_str`{.bash}](http://whudoc.qiniudn.com/stdman.gif)
 
+```bash
+cd /tmp && \
+git clone https://github.com/jeaye/stdman.git && \
+cd stdman && \
+./configure && \
+sudo make install && \
+sudo mandb
+```
+
 ### [gPhoto2](http://www.yannock.be/computer/compiling-gphoto2-on-the-raspberry-pi)
 
-<small>
 ```bash
 # deps
 sudo apt-get install \
@@ -237,7 +250,6 @@ wget http://sourceforge.net/projects/gphoto/files/libgphoto/2.5.2/libgphoto2-2.5
 wget http://sourceforge.net/projects/gphoto/files/gphoto/2.5.2/gphoto2-2.5.2.tar.gz
 # unzip, ./configure, make, make install
 ```
-</small>
 
 详细见 [gPhoto2 指南](post-0004-gphoto2.html)。
 
@@ -335,7 +347,6 @@ sudo make install
 
 A Script to install OpenCV:
 
-<small><small><small>
 ```bash
 version="$(wget -q -O - http://sourceforge.net/projects/opencvlibrary/files/opencv-unix | egrep -m1 -o '\"[0-9](\.[0-9]+)+' | cut -c2-)"
 echo "Installing OpenCV" $version
@@ -370,7 +381,6 @@ sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
 sudo ldconfig
 echo "OpenCV" $version "ready to be used"
 ```
-</small></small></small>
 
 ### [PCL](pointclouds.org/downloads/linux.html)
 
@@ -384,7 +394,6 @@ sudo apt-get install libpcl-all
 
 Debian:
 
-<small>
 ```bash
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 19274DEF
 sudo echo \
@@ -393,7 +402,6 @@ sudo echo \
 sudo apt-get update
 sudo apt-get install libpcl-all
 ```
-</small>
 
 Deps:
 

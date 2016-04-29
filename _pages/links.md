@@ -234,3 +234,4 @@ Links | 链签
 #. [Detexify LaTeX handwritten symbol recognition](http://detexify.kirelabs.org/classify.html)
 #. [Linggle 10^12- Language Reference Search Engines - NLPLab](http://linggle.com/)
 #. [Yangqing Jia](http://daggerfs.com/)
+#. [链接 - 武汉大学计算机视觉与遥感实验室（CVRS Lab）](http://cvrs.whu.edu.cn/index.php?m=content&c=index&a=lists&catid=81#links_downloads)

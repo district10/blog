@@ -16,8 +16,25 @@ after-before: |
     </style>
 ...
 
-Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
-============
+Notes | 笔记[^1]
+================
+
+```bash
+# download source code, unzip it, install it
+python setup.py install
+# or
+pip install <module>
+```
+
+`%HOST%`
+
+:   `C:\Windows\System32\drivers\etc\host`
+
+pharmacy `['fɑrməsi]` n. 药房；配药学，药剂学；制药业；一批备用药品
+
+online pharmacy
+
+[ssh ubuntu@119.29.191.128](http://119.29.191.128:8000/)
 
 [深度学习caffe的代码怎么读？ - 机器学习 - 知乎](http://www.zhihu.com/question/27982282)
 
@@ -26937,3 +26954,5 @@ Disallow:
 [Is there any chance that vim will be rewritten in c++ with gtk/qt like other fast modern editors? - Quora](https://www.quora.com/Is-there-any-chance-that-vim-will-be-rewritten-in-c++-with-gtk-qt-like-other-fast-modern-editors)
 
 :   see [equalsraf/vim-qt](https://github.com/equalsraf/vim-qt)
+
+[^1]: 这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）

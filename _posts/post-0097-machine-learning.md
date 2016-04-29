@@ -139,6 +139,8 @@ refs and see also
 
   - [深度学习研究理解7：Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition - whiteinblue的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/whiteinblue/article/details/43415035)
   - [Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition - caoeryingzi - 博客园](http://www.cnblogs.com/jianyingzhou/p/3975075.html)
+  - [深度学习入门必看的书和论文？有哪些必备的技能需学习？ - 深度学习（Deep Learning） - 知乎](http://www.zhihu.com/question/31785984)
+  - [Reading List « Deep Learning](http://deeplearning.net/reading-list/)
 
 [如何评价rcnn、fast-rcnn和faster-rcnn这一系列方法？ - 知乎](https://www.zhihu.com/question/35887527)
 
@@ -550,3 +552,53 @@ similarity metric: sim_pearson, sim_distance
 [Pearson product-moment correlation coefficient - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient)
 
 <http://whudoc.qiniudn.com/2016/notepad++.7z>
+
+---
+
+[cataska/programming-collective-intelligence-code: Examples from Programming Collective Intelligence](https://github.com/cataska/programming-collective-intelligence-code)
+
+[集体智慧编程 (豆瓣)](https://book.douban.com/subject/3288908/)
+
+[Programming Collective Intelligence - O'Reilly Media](http://shop.oreilly.com/product/9780596529321.do)
+
+[Programming Collective Intelligence (豆瓣)](https://book.douban.com/subject/2209702/)
+
+- simulated annealing（模拟退火）
+- genetic algorithms（遗传算法）
+    + population（种群），hand-designed or 随机的；user-defined task
+    + elitism（精英选拔）
+    + mutation（变异）
+    + crossover/breeding
+    + 优胜劣汰的 evolutionary pressure：survival of the fittest
+    + a round-robin tournament
+    + evaluating trees
+- massand-spring algorithms（质点弹簧算法）
+- flipping around（调换求解）
+- decision trees
+    + CART（classification and regression trees）
+    + pruning the tree（剪枝）
+- kNN: k-Nearest Neighbors
+    + weighted kNN
+    + cross validation（交叉验证）
+- kernel methods
+    + kernel trick: radial-basis function （径向基函数）
+- SVM
+    + mamimum-margin hyperplane
+    + 位于分割线：支持向量
+    + 找到支持向量的算法：支持向量机
+- data intensive（数据量大）
+- libsvm
+- bayesian classification
+- trading volume（成交量）
+- Non-negative Matrix Factorization (NFM)
+- tanimoto coefficient
+- gini impurity
+- entropy
+
+---
+
+---
+
+[Data Mining (豆瓣)](https://book.douban.com/subject/4888560/)
+
+[Data Mining (豆瓣)](https://book.douban.com/subject/6533777/)
