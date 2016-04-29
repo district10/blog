@@ -231,3 +231,6 @@ Links | 链签
 #. [TIFF to JPG | Zamzar - Free online file conversion](http://www.zamzar.com/convert/tiff-to-jpg/)
 #. [匠艺无疆TekBroaden – 分享 技术 热爱 生活](http://www.tekbroaden.com/)
 #. [陈关州的博客](http://www.chenguanzhou.com/)
+#. [Detexify LaTeX handwritten symbol recognition](http://detexify.kirelabs.org/classify.html)
+#. [Linggle 10^12- Language Reference Search Engines - NLPLab](http://linggle.com/)
+#. [Yangqing Jia](http://daggerfs.com/)

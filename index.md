@@ -32,8 +32,11 @@ Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序�
 <div id="buckets">
 <div><a href="koans.html">Koans | 呓语</a></div>
 <div><a href="orgit.html">Orgit | 唐凤</a></div>
-<div><a href="notes.html">Notes | 笔记</a></div>
 <div><a href="about.html">About | 关于</a></div><hr /></div>
+
+<!--
+<div><a href="notes.html">Notes | 笔记</a></div>
+-->
 
 <br/><div id="searchContainer">
 Search:[^koan]<br>

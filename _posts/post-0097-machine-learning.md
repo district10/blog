@@ -535,3 +535,18 @@ refs and see also
   - [神经网络 - 话题精华 - 知乎](https://www.zhihu.com/topic/19607065/top-answers)
 
 ---
+
+```
+// euclidean distance
+distance d -> [0, inf], 1/(d+1) -> [0, 1]
+
+// pearson correlation score
+best-fit line
+similarity metric: sim_pearson, sim_distance
+```
+
+[Metric (mathematics) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Metric_(mathematics)#Examples)
+
+[Pearson product-moment correlation coefficient - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient)
+
+<http://whudoc.qiniudn.com/2016/notepad++.7z>

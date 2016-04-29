@@ -19,6 +19,65 @@ after-before: |
 Notes | 笔记^[这是一个笔记大集合，排版可能就不那么考究了。（虽然我是处女座。）]
 ============
 
+[深度学习caffe的代码怎么读？ - 机器学习 - 知乎](http://www.zhihu.com/question/27982282)
+
+1、appwiz.cpl：程序和功能（程序卸载）
+
+3、charmap：启动字符映射表
+
+自动关机命令Shutdown -s -t 600：表示600秒后自动关机（有没有人像我一样使用番茄工作法？其实很多时候很难控制自己，这是一个很好的方法）
+7、shutdown -a ：可取消定时关机
+
+control, (cmd, or Win + R)
+
+以德报怨，何以报德？
+
+嘿，老伙计。昨天有个可怜的小家伙问我怎么说出翻译腔。我敢打赌，他一定没有上过学
+，我向圣母玛利亚保证。他提出的这个问题真的是太糟糕了，就像隔壁苏珊婶婶做的苹果
+派一样。
+
+- 当你没有世俗成功力量时，你对长辈强行打脸打不起来，且会给你自己的家庭带来不必要的麻烦
+- 当你获得了世俗成功后，也不要顶撞反驳长辈，记住闷声发大财，这对你有好处
+
+我只是觉得国内不提供筷子的西餐厅很傻逼
+
+[Fisher–Yates shuffle - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)
+
+[Zhu Jingsi 答过的问题 - 知乎](http://www.zhihu.com/people/zhu-jingsi/answers?order_by=vote_num)
+
+[使用BitTorrent Sync同步分享文件_百度经验](http://jingyan.baidu.com/article/a17d52853cc29f8098c8f29b.html)
+
+张三上传的《TOKYO HOT N0124》和李四上传的《TH n124》是同一个文件，只不过文件名不一样，难道我就不能识别出他们是一个文件，然后只将其分别给不同的用户保存成不同的文件名不久行啦？确实可行，但这要利用一些识别文件相同性的算法，例如 MD5 值等。只要两个文件的 MD5 值一样，文件大小一样，我就认为它们是相同的文件，只需要保存一份文件并给不同的用户记作不同的文件名就好了。
+
+有一天你发现，因为每一个文件都需要计算 MD5 值，导致 CPU 负荷很大，而且本来一样的文件非要浪费带宽上传回来才可以检测一致性，能改进一下吗？
+
+聪明的工程师写了个小软件/小插件，美其名曰“上传控件”，将计算 MD5 值的工作利用这个软件交给了上传用户的电脑来完成，一旦计算出用户要上传的数据和服务器上已经存储的某个数据是一样的，就干脆不用上传了，直接在用户那里标记上这个文件已经按照 XX 文件名上传成功了。这个过程几乎是瞬间搞定了，并给其起了个高富帅的名字“秒传”！
+
+（浏览器应该不可以秒传把？是不是可以先获取文件大小，然后计算这个大文件前 10 MB 的 Hash，看没有匹配）
+
+[Comparison of reference management software - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software)
+
+总之，大的原则是：如果你意识到以后要在“阅读文献的道路上一去不复返”，莫不如一开始就对自己需要涉猎的文献进行顶层设计，不要等硬盘里乱成一锅粥了再开始：
+
+[写学术论文时需要引用大量论文，但最后需要花费大量时间匹配引用，有什么好方法或经验？ - 论文写作 - 知乎](http://www.zhihu.com/question/20533954)
+
+[Zotero 文献管理小组](https://www.douban.com/group/zotero/)
+
+[javascript - Convert jquery element to html element - Stack Overflow](http://stackoverflow.com/questions/7114780/convert-jquery-element-to-html-element)
+
+Try myJQueryElement.get(0) or myJQueryElement[0]. (get() is most useful when you need negative indices, for example, as described in the documentation for get().)
+
+$("#foo")[0] will get you an HTML element. Using brackets is a tiny bit faster than using .get() but not something you'll likely notice unless you are doing it millions of times.
+
+And not even then! If you run it 10 million times, brackets will take 150
+seconds, get will take 170 seconds. I bet you cannot notice without sitting
+there counting "1-Mississippi, 2-Mississippi..." Mississippilessly, it's
+impossible to tell the difference. Do whichever way you feel is more readable.
+(BTW, I'm only posting this comment because it gives me the change to use the
+word "Mississippilessly" in a sentence. If anyone wants to discuss the future
+of the Anglican Church with me, I'm dying to use
+"antidisestablishmentarianistically".
+
 如何花最少的钱购买正版 Windows 和 Office？
 
 :   - Step 1. 通过面试成为微软员工
