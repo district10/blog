@@ -208,6 +208,9 @@ $('div.tzx-drawer')
 $(function($){
     var egg = new Egg();
     egg
+        .addCode("n,o,t,e,s", function() {
+            window.location = "notes.html";
+        })
         .addCode("t,z,x", function() {
             $('.tzx-hide').removeClass('tzx-hide').addClass('tzx-show');
             $('.tzx-drawer-hide').removeClass('tzx-drawer-hide');

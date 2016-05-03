@@ -602,3 +602,12 @@ similarity metric: sim_pearson, sim_distance
 [Data Mining (豆瓣)](https://book.douban.com/subject/4888560/)
 
 [Data Mining (豆瓣)](https://book.douban.com/subject/6533777/)
+
+---
+
+- [Pattern Recognition And Machine Learning (豆瓣)](https://book.douban.com/subject/2061116/)
+- [Christopher M. Bishop | PRML](http://research.microsoft.com/en-us/um/people/cmbishop/PRML/)
+
+![](http://whudoc.qiniudn.com/2016/prmlfigs-png/Figure1.1.png)
+
+[Backgammon - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Backgammon)

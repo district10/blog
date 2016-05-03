@@ -604,4 +604,9 @@ var tzx_links = [
         title: "Machine Learning",
         query: ['machine-learning', 'deep-learning']
     },
+    {
+        url: '/post-0098-probability-and-statistics.html',
+        title: "Probability and Statistics",
+        query: ['machine-learning', 'deep-learning', 'probality', 'statistics']
+    },
 ];

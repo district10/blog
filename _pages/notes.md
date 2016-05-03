@@ -17,7 +17,1131 @@ after-before: |
 ...
 
 Notes | 笔记[^1]
-================
+===============
+
+[Impostor syndrome - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Impostor_syndrome)
+
+[Impostor Syndro-dvorak4tzx](http://dvorak4tzx.lofter.com/post/1d4021c8_86aa9c9)
+
+[linux - What does the 'rc' in `.bashrc`, etc. mean? - Super User](http://superuser.com/questions/173165/what-does-the-rc-in-bashrc-etc-mean)
+
+[linux - What does "rc" mean in dot files - Stack Overflow](http://stackoverflow.com/questions/11030552/what-does-rc-mean-in-dot-files)
+
+[Control point (mathematics) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Control_point_(mathematics))
+
+:   GCP, Ground Control Point
+
+Phil Belanger, a founding member of the Wi-Fi Alliance who presided (`[prɪ'zaɪd]`, 指定, 主持) over the
+selection of the name "Wi-Fi", also stated that Interbrand invented Wi-Fi as a
+play on words with Hi-Fi (high fidelity), and also created the Wi-Fi logo. The
+term 'fidelity' refers to the faithfulness/accuracy of reproduction or
+transmission of the signal, and 'wireless' is a distinguishing feature that
+contrasted with earlier internet connection technologies such as wired
+Ethernet.
+
+Inverse Distance Weighted (IDW) is a method of interpolation that estimates cell values by
+averaging the values of sample data points in the neighborhood of each processing cell. The
+closer a point is to the center of the cell being estimated, the more
+influence, or weight, it has in the averaging process.
+
+[Pan and scan - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Pan_and_scan)
+
+:   ![A 2.35:1 image panned and scanned to 1.33:1. Nearly half of the original image has been cropped.](https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Image_cropping_133x1.jpg/360px-Image_cropping_133x1.jpg)
+
+    Pan and scan is a method of adjusting widescreen film images so that they
+    can be shown within the proportions of a standard definition 4:3 aspect
+    ratio television screen, often cropping off the sides of the original
+    widescreen image to focus on the composition's most important aspects.
+    Some film directors and film enthusiasts disapprove of pan and scan
+    cropping, because it can remove up to 45% of the original image on 2.35:1
+    films or up to 53% on earlier 2.55:1 presentations, changing the director
+    or cinematographer's original vision and intentions. The worst examples
+    remove up to 75% of the original picture on such aspect ratios as 2.75:1 or
+    even 3:1 in epics such as Ben-Hur, King of Kings or Lawrence of Arabia.
+    The vertical equivalent is known as "tilt and scan" or "reverse pan and
+    scan". The method was most common in the days of VHS, before widescreen
+    home media such as DVD and Blu-ray.  Retract
+
+The Extended Service Set Identification (ESSID) is one of two types of Service
+Set Identification (SSID). In an ad hoc wireless network with no access points,
+the Basic Service Set Identification (BSSID) is used. In an infrastructure
+wireless network that includes an access point, the ESSID is used, but may
+still be referred to as SSID.  An SSID is a 32-character (maximum) alphanumeric
+key identifying the name of the wireless local area network. Some vendors refer
+to the SSID as the network name. For the wireless devices in a network to
+communicate with each other, all devices must be configured with the same SSID.
+
+```bash
+dpkg-reconfigure keyboard-configuration
+cat /etc/default/keyboard
+```
+
+HOWTO install infinality font-settings for Debian
+
+:   <http://forums.debian.net/viewtopic.php?f=16&t=88545>
+
+S.M.A.R.T. (Self-Monitoring, Analysis and Reporting Technology; often written
+as SMART) is a monitoring system for computer hard disk drives to detect and
+report on various indicators of reliability, in the hope of anticipating
+failures.
+
+When a failure is anticipated by S.M.A.R.T., the user may choose to replace the
+drive to avoid unexpected outage and data loss. The manufacturer may be able to
+use the S.M.A.R.T. data to discover where faults lie and prevent them from
+recurring in future drive designs.
+
+Wake-on-LAN (WOL) is an Ethernet computer networking standard that allows a
+computer to be turned on or awakened by a network message.
+
+编译时缺少h文件的自动处理
+  ~ `sudo auto-apt run ./configure`{.bash}
+
+查看安装软件时下载包的临时存放目录
+  ~ `ls /var/cache/apt/archives`{.bash}
+
+在网页中，多用 px 指定文字大小，理由便是防止版式错乱。所以，大多数网页文字大小，
+并不随系统 DPI 而变。
+
+虽然世上没有完美的东西，但这并不影响我们追求完美
+
+Rootless Root
+
+:   Master Foo nodded and replied: “When you are hungry, eat; when you are
+    thirsty, drink; when you are tired, sleep.”
+
+    The novice frowned and said: “Perl's regexps would be excessive for so
+    simple a task. I do not know awk, and I have been writing sed scripts in
+    the last few weeks. As I have some experience with sed, at the moment I
+    would prefer it. But if the job only needed to be done once rather than
+    repeatedly, a text editor would suffice.”
+
+    “And who better understands the Unix-nature?” Master Foo asked. “Is it he
+    who writes the ten thousand lines, or he who, perceiving the emptiness of
+    the task, gains merit by not coding?”
+
+    “Complexity increases the possibility of failure; a twin-engine airplane
+    has twice as many engine problems as a single-engine airplane.” By analogy,
+    in both software and electronics, the rule that simplicity increases
+    robustness. It is correspondingly argued that the right way to build
+    reliable systems is to put all your eggs in one basket, after making sure
+    that you've built a really good basket.
+
+| Premature optimization is the root of all evil!
+|
+| -- Donald Knuth
+|
+| It always takes longer than you expect, even when you take into account
+| Hofstadter’s Law.
+|
+| -- Hofstadter’s Law
+|
+| Debugging is twice as hard as writing the code in the first place. Therefore,
+| if you write the code as cleverly as possible, you are, by definition, not
+| smart enough to debug it.
+|
+| -- Brian Kernighan
+|
+| PHP is a minor evil perpetrated and created by incompetent amateurs, whereas
+| Perl is a great and insidious evil, perpetrated by skilled but perverted
+| professionals.
+|
+| -- Jon Ribbens
+|
+| Always code as if the guy who ends up maintaining your code will be a violent
+| psychopath who knows where you live.
+|
+| -- Rick Osborne
+|
+| Saying that Java is good because it works on all platforms is like saying anal
+| sex is good because it works on all genders
+|
+| -- Unknown
+|
+| An algorithm must be seen to be believe!
+
+"No Silver Bullet — Essence and Accidents of Software Engineering" is a widely
+discussed paper on software engineering written by Fred Brooks in 1986.
+Brooks argues that "there is no single development, in either technology or
+management technique, which by itself promises even one order of magnitude
+tenfold improvement within a decade in productivity, in reliability, in
+simplicity." He also states that "we cannot expect ever to see two-fold gains
+every two years" in software development, like there is in hardware development
+(Moore's law).
+
+Stupid: I'm having problems with my motherboard. Can anybody help?
+
+J. Random Hacker's response to this is likely to be “Right. Do you need burping and diapering, too?”,
+followed by a punch of the delete key.
+
+Smart: I tried X, Y, and Z on the S2464 motherboard. When that didn't work, I tried A, B, and C.
+Note the curious symptom when I tried C. Obviously the florbish is grommicking, but the results
+aren't what one might expect. What are the usual causes of grommicking on Athlon MP
+motherboards? Anybody got ideas for more tests I can run to pin down the problem?
+
+This person, on the other hand, **seems worthy of an answer**. He/she has
+**exhibited problem-solving intelligence** rather than **passively waiting for an answer**
+to drop from on high.
+
+In the last question, notice the subtle but important difference between
+demanding “Give me an answer” and “Please help me figure out what additional
+diagnostics I can run to achieve enlightenment.
+
+Minimal test case
+  ~ provide a minimal bug-demonstrating test case
+
+Infinite monkey theorem
+
+:   The infinite monkey theorem states that a monkey hitting keys at random on
+    a typewriter keyboard for an infinite amount of time will almost surely
+    type a given text, such as the complete works of William Shakespeare.
+
+Only wimps use tape backup: _real_ men just upload their important stuff on
+ftp, and let the rest of the world mirror it.
+
+**Those that can, do. Those that can’t, complain.**
+
+Fool, go on with Debian!!!
+
+科大少院首届学员之一，留校任教的王永对过去充满怀念又不失自嘲。“那时候大家聊天吹
+牛，讲到最后一定会有人提醒，‘我们不能再聊了，要去学习了，否则以后给我们写传记的
+人该怎么写这段被浪费的时间？！’那时候，我们就狂妄到认定将来一定会有人给我们写传
+记。”
+
+| A ship in port is safe, but that is not what ships are built for.
+|
+| -- Grace Hopper
+
+赛格威 (Segway ) 思维车 是一种电力驱动、具有自我平衡能力的个人用运输载具，是都
+市用交通工具的一种。由美国发明家狄恩·卡门（Dean Kamen）与他的DEKA研发公司（DEKA
+Research and Development Corp.）团队发明设计，并创立赛格威责任有限公司（Segway
+LLC.），自2001年12月起将赛格威商业化量产销售。
+
+```cpp
+C++: int RNG::uniform(int a, int b)
+C++: float RNG::uniform(float a, float b)
+C++: double RNG::uniform(double a, double b)
+C++: double RNG::gaussian(double sigma)
+C++: void RNG::fill(InputOutputArray mat, int distType, InputArray a, InputArray b, bool saturateRange=false )
+C++: void randu(InputOutputArray dst, InputArray low, InputArray high)
+C++: void randn(InputOutputArray dst, InputArray mean, InputArray stddev)
+C++: void randShuffle(InputOutputArray dst, double iterFactor=1., RNG* rng=0 )
+C++: void reduce(InputArray src, OutputArray dst, int dim, int rtype, int dtype=-1 )
+```
+
+OpenCV:
+
+:   ```cpp
+    CommandLineParser parser(argc, argv, keys);
+    string image = parser.get<string>("1");
+    string templ = parser.get<string>("2");
+    Mat img = imread(image.c_str(), 0);
+
+    Mat img_yuv;
+    cvtColor(img, img_yuv, CV_BGR2YCrCb); // convert image to YUV color space.
+                                          // The output image will be created automatically
+    vector<Mat> planes;                   // Vector is template vector class, similar to STL's vector.
+                                          // It can store matrices too.
+    split(img_yuv, planes);               // split the image into separate color planes
+    ```
+
+Note: If you are running x64 version of Ubuntu Linux, then you need ia32 shared
+libraries for use on amd64 and ia64 systems to be installed. You can install
+them with the following command: `sudo apt-get install ia32-libs`{.bash}
+
+```bash
+pstree -t
+```
+
+The actual type of `size_t` is platform-dependent; a common mistake is to assume
+`size_t` is the same as unsigned int, which can lead to programming errors,
+particularly as 64-bit architectures become more prevalent.
+
+Range imaging is the name for a collection of techniques which are used to produce a 2D image
+showing the distance to points in a scene from a specific point, normally associated with some
+type of sensor device.
+The resulting image, the range image, has pixel values which correspond to the distance, e.g.,
+brighter values mean shorter distance, or vice versa. If the sensor which is used to produce the
+range image is properly calibrated, the pixel values can be given directly in physical units such as
+meters.
+
+LaTeX (`/ˈleɪtɛk/` LAY-tek or `/ˈlɑːtɛk/` LAH-tek) is a document preparation
+system and document markup language.  TeX (`/ˈtɛx/` tekh as in Greek, but often
+pronounced `/ˈtɛk/` tek in English) is a typesetting system designed and mostly
+written by Donald Knuth and released in 1978. Within the typesetting system,
+its name is formatted as TeX.
+
+标识符命名要清晰明了，可以使用完整的单词和易于理解的缩写。短的单词可以通过去元音形成
+缩写，较长的单词可以取单词的头几个字母形成缩写。看别人的代码看多了就可以总结出一些缩
+写惯例，例如count写成cnt，block写成blk，length写成len，window写成win，message写成
+msg，number写成nr，temporary可以写成temp，也可以进一步写成tmp，最有意思的是
+internationalization写成i18n，词根trans经常缩写成x，例如transmit写成xmt。我就不多举例了，
+请读者在看代码时自己注意总结和积累。
+
+<http://learn.akae.cn/media/ch09s03.html>
+
+The ditto mark (″) is a typographic symbol indicating that the word(s) or
+figure(s) above it are to be repeated. For example:
+
+| Black pens, box of twenty ..... £2.10
+| Blue ″ ″ ″ ″ ..... £2.35
+
+这符号滥用的一个点在于，比如中文“李木木”，写成“李木幺”。
+
+yelp — browse system documentation
+
+:   The GNOME Help Browser includes detailed documentation for the majority of
+    applications, utilities and other components, such as the panel or the
+    Nautilus file manager.  Yelp can display some HTML and XML files when
+    passed on the command-line, but it's primarily called from applications.
+    You can also start Yelp by choosing Desktop->Help. This will show the
+    top-level help system page, listing all GNOME docu‐ments conveniently
+    organized by topic.
+
+```bash
+$ whatis intro
+intro (4) - Introduction to special files
+intro (2) - Introduction to system calls
+intro (8) - Introduction to administration and privileged commands
+intro (5) - Introduction to file formats
+intro (3) - Introduction to library functions
+intro (6) - Introduction to games
+intro (7) - Introduction to overview, conventions, and miscellany ...
+intro (1) - Introduction to user commands
+```
+
+PPA---Personal Package Archive
+
+<http://www.makeuseof.com/tag/ubuntu-ppa-technology-explained/>
+
+deprecated conversion from string constant to 'char*'
+
+What are POD types in C++?
+
+POD stands for Plain Old Data - that is, a struct...
+
+<http://stackoverflow.com/questions/146452/what-are-pod-types-in-c>
+
+Double ended queue
+
+:   deque (usually pronounced like "deck") is an irregular acronym of
+    double-ended queue. Double-ended queues are sequence containers with
+    dynamic sizes that can be expanded or contracted ended queues are sequence
+    containers with dynamic sizes that can be expanded or contracted on both
+    ends (either its front or its back).
+
+"Without Loss Of Generality" is a term used in proofs to indicate that an
+assumption is being made that does not introduce new restrictions to the
+problem.  If you've got a predicate which is symmetric in a and b, you can
+assume WLOG in the proof that a < b.
+
+inscribed
+
+:    draw (a figure) within another so that their boundaries touch but do not
+    intersect.
+
+Install `apt-file` and run `apt-file update`（和 `locate file.h` 有什么异同？）
+
+Then use `apt-file search sphinx-build` to search for packages contanining a file named `sphinx-build`
+
+Time-of-flight camera
+
+:   A time-of-flight camera (ToF camera) is a range imaging camera system that
+    resolves distance based on the known speed of light, measuring the
+    time-of-flight of a light signal between the camera and the subject for
+    each point of the image.
+
+    The time-of-flight camera is a class of scannerless LIDAR, in which the
+    entire scene is captured with each laser or light pulse, as opposed to
+    point-by-point with a laser beam such as in scanning LIDAR systems.
+
+`sudo chown -R username /home/usrname/./config/QtProject/`
+
+`.S` file(assembly file)
+
+:   S files are code written in assembly, they are extremely low-level form of
+    programming. They contain assembly instructions to the processor in
+    sequential order and are typically compiled based on the selected
+    architecture for compiling the kernel.
+
+Virtual to Physical Documentation and Sample Configurations
+
+<http://www.vmware.com/support/v2p/>
+
+Understanding the Network Terms SSID, BSSID, and ESSID
+
+:   <http://www.juniper.net/techpubs/en_US/junos-space-apps12.3/network-director/topics/concept/wireless-ssid-bssid-essid.html>
+
+两个linux共享同一个/home分区
+
+:   <http://os.chinaunix.net/a2007/1210/1046/000001046724.shtml>
+
+Polytope
+
+:   A convex polytope may be defined as the Convex Hull of a finite set of
+    points (which are always bounded), or as the intersection of a finite set
+    of half-spaces.
+
+Triskaidekaphobia
+
+:   fear of bad luck number 13.
+
+    欧美很多大厦都以12A层取代第13层。房间号码、地址号码，甚至连飞机座位也是以
+    12A 取代13。在法国巴黎，若请客吃饭时共有13人，为了避煞，会请一职业客人来凑足
+    14 人。
+
+Dozen
+  ~ 12
+
+Gross
+  ~ 144
+
+A harmonic of a wave is a component frequency of the signal that is an integer
+multiple of the fundamental frequency, i.e. if the fundamental frequency is f,
+the harmonics have frequencies 2f, 3f, 4f, . . . etc. The harmonics have the
+property that they are all periodic at the fundamental frequency, therefore the
+sum of harmonics is also periodic at that frequency. Harmonic frequencies are
+equally spaced by the width of the fundamental frequency and can be found by
+repeatedly adding that frequency. For example, if the fundamental frequency
+(first harmonic) is 25 Hz, the frequencies of the next harmonics are: 50 Hz
+(2nd harmonic), 75 Hz (3rd harmonic), 100 Hz (4th harmonic) etc.
+
+Oscillation is the repetitive variation, typically in time, of some measure
+about a central value (often a point of equilibrium) or between two or more
+different states.  Familiar examples include a swinging pendulum and AC power.
+The term vibration is sometimes used more narrowly to mean a mechanical
+oscillation but is sometimes used as a synonym of "oscillation". Oscillations
+occur not only in physical systems but also in biological systems, from human
+society to the brain.
+
+兴趣从何而来？
+
+:   <http://bbs.sciencenet.cn/home.php?mod=space&uid=2068&do=blog&id=452096>
+
+能在三天之内昨晚的事情，绝不用一个学期去做
+
+沙文主义（英语：chauvinism）
+
+原指极端的、不合理的、过分的爱国主义（因此也是一种民族主义）。如今的含义也囊括
+其他领域，主要指盲目热爱自己所处的团体，并经常对其他团体怀有恶意与仇恨，是一种
+有偏见的情绪。经过演变，如今“沙文主义”这个词在英语中更多场合中指种族歧视与性别
+歧视，尤其是后者。极端民族主义; 大国沙文主义; 男性沙文主义; 女性沙文主义;在恋爱
+和婚姻关系中希望得到独立的自由和尊重，却又认为男性应该扛起大部分的责任。认为男
+性对女性的价值评判标准是物化女性，却又对男性采取极高标准。简单的说，在一波新的
+价值观转换和革命当中，一些女性什么好处都想要得到，却不肯付出相对应的代价；在扩
+张自身权利的时候，眼睛永远只看到别人有的，和自己没有的。
+
+refusenik, `[rɪ'fjuznɪk]`, n. （俄）被拒绝移民者（等于refusednik）
+
+:   Refusenik (Russian: отказник, otkaznik, from "отказ", otkaz "refusal") was
+    an unofficial term for individuals, typically but not exclusively Soviet
+    Jews, who were denied permission to emigrate abroad by the authorities of
+    the former Soviet Union and other countries of the Eastern bloc.[1] The
+    term refusenik is derived from the "refusal" handed down to a prospective
+    emigrant from the Soviet authorities.  Over time, "refusenik" has entered
+    colloquial English for person who refuses to do something, especially by
+    way of protest.
+
+runny, `/ˈrʌni/`, adjective
+
+  - more liquid than is usual or expected. "the soufflé was hard on top and
+    quite runny underneath" synonyms: liquefied, liquid, fluid, melted, molten,
+    flowing; More antonyms: solid, viscous
+  - (of a person's nose) producing or discharging mucus.
+
+testimonial, `[ˌtɛstəˈmoniəl]`
+
+  - n. 证明书;纪念品;奖品;纪念品
+  - adj. 证明的;表扬的;褒奖的
+
+airplane rule
+
+:   “Complexity increases the possibility of failure; a twin-engine airplane
+    has twice as many engine problems as a single-engine airplane.” By analogy,
+    in both software and electronics, the rule that simplicity increases
+    robustness. It is correspondingly argued that the right way to build
+    reliable systems is to put all your eggs in one basket, after making sure
+    that you've built a really good basket.
+
+Extra-Sensory-Perception.
+
+:   Often referred to as "The sixth Sense". Often used in conversation when one
+    makes a lucky guess as to what someone is about to say.
+
+    | M.C. Hammer: I want to-
+    | Patrick Surtain: SLEEP!
+    | M.C. Hammer: Hey! I was just going to say that!
+    | Patrick Surtain: I must have ESP!
+
+YHWH represents the Hebrew letters "Yud-Heh-Vav-Heh." It was the name God gave
+for Himself when Moshe inquired of Him. In most modern translations it is
+usually written "LORD" (in capital letters) or "HaShem" (in the Hebrew Tanach,
+it means "The Name"). It has been improperly translated "Jehovah," based on a
+German bastardization of YHWH and "Adonai." The word "Jehovah" does not appear
+in the Hebrew language and is simply incorrect. YHWH is probably pronounced
+"Yahweh," and means "I Am That I Am." The implication is that God is completely
+self-sufficient.  Blessed are you, YHWH, our God, King of the Universe ...
+
+| charlie: I've seen that term used on alt.foobar often.
+| lisa: Send it to Erik for the File.
+| lisa: Oops...s/Erik/Eric/.
+
+gls, SMS language/txtspk for "Gay Little Smirk".  Used in SMS language (texting
+language) to express an individual's true reaction to a humorous text message.
+This abbreviation is a more accurate alternative to writing "lol". Clearly,
+he/she is not laughing out loud in a literal sense, but is instead staring at
+his/her mobile phone while brandishing a gay little smirk.
+
+| (In a texting conversation)
+| AJ: Dude, she is seriously smokin' hot. I would be her on-demand asshole licker.
+|     Let me explain to you what that entails. I would lick her asshole on-demand.
+| Karthik: gls
+
+pointy-haired
+
+  - An esp. stupid person who may or may not be your boss. Often associated
+    with managers and stupid bosses, the phrase was coined in the daily comic
+    strip "Dilbert" by Scott Adams, in which Dilbert's boss (Pointy-Haired Boss
+    happened to be his name) had a pointy, devil-horn-like haircut and was
+    especially stupid and over-promoted.
+  - Our new mission statement is "We envision to authoritatively foster quality
+    intellectual capital while maintaining the highest standards." Whoever made
+    that up must have been pointy-haired.
+
+我有一个妈妈，她经常做一些奇怪的事。
+
+我是一身高170+，体重120+的女性，于是你就知道我的体态了。
+
+我初一就被叫过阿姨，也被叫过哥哥，于是你就知道我的面相了。
+
+去年夏天我妈给我买了一套睡衣，为此在电话里吹嘘了半年，我认为她是给我买了一套镀金袈裟。
+
+今天我见到了我的镀金袈裟。
+
+![](https://img1.doubanio.com/view/note/large/public/p7928519.jpg)
+
+[在下坂本，有何贵干？（佐野菜见创作的日本漫画）_百度百科](http://baike.baidu.com/view/10918346.htm)
+
+最简单一句话，社交网络的本质是炫耀。
+
+炫耀你的幸福，炫耀你的不幸（来展示你的幸福，比如误机），炫耀你的思想，炫耀你认同或反对的思想（使自己看起来很有品位）。
+
+我觉得，人沉迷于社交网络，主要还是孤独。太深太深的孤独。
+
+字体这东西不废多少事，就能让体验上几个等级。除非你是偏爱像素字体的变态，你一定会惊讶于合理渲染的字体竟然能那么美。
+
+其实人们对于位置的选择(不只是上厕所)，都应该是有一定统计规律的。比如去闹市或超市，入口处的摊位或柜台相对中间来说交易量会小一点，因为停留在入口意味着挡住了后面的人流，会对自己造成一定的心理压力，而我们不喜欢被push的感觉，宁愿去中间尽情挑选。另一个原因是人的思维是随着情景慢慢转变的，当你匆匆进入商场的时候，大脑中的情景还没完全适应，步伐还没有慢下来，也许这时候你已经错过了门口的货架了。你看到了，你也知道它在那，但你还没来得及思考就走开了。
+
+我之前回答过一个 "狗大便时为什么先要嗅嗅地面转几圈" 的问题, 说是狗狗感觉周围环境不够安全, 不能保护她的隐私所致; 其实这是一种智慧生物的天性, 私密的事情下意识的就会想找到最能让自己安心的环境.
+
+各个操作系统的字体渲染都不一样 ，从效果上说，苹果机一直完虐 Linux 和 Windows ，而且是开箱即用。Linux 的字体渲染首选 Infinity，效果那是极好，不截图了。Windows 上，微软自己有 ClearType，当年我也是玩过的人，说实话，没感觉用了和没用有什么区别，除此之外，只能通过第三方的软件来改善字体，其中最好莫过 MacType，美极，极美，十分美。之前我也是弄过，但最近匆忙，装机后也没折腾，似乎没必要。今天弄好了，一下就感觉之前的字体就像砣屎，怎么能是“没必要”呢！
+
+有图有真相。
+
+[before 0](http://gnat-tang-shared-image.qiniudn.com/before0.png)
+[after 0](http://gnat-tang-shared-image.qiniudn.com/after0.png)
+[before 1](http://gnat-tang-shared-image.qiniudn.com/before1.png)
+[after 1](http://gnat-tang-shared-image.qiniudn.com/after1.png)
+
+
+Before:
+
+![](http://gnat-tang-shared-image.qiniudn.com/before1.png)
+
+After:
+
+![](http://gnat-tang-shared-image.qiniudn.com/after.png)
+
+渲染文字：
+![](http://gnat-tang-shared-image.qiniudn.com/another_example.png)
+
+[有情人，一切尽在眼神中][love-in-your-eye]
+
+1. 人具有解读眼神的天赋，从婴儿时期就显露出来
+2. 眼神泄露了心灵的焦点
+3. 微笑的眼神，最具吸引力
+4. 眼神不同于其他面部表情和肢体语言，仅仅是一个直视的眼神就可以激活一个脑区：大脑腹侧纹状体（ventral striatum），这是一个预测奖励和惩罚的脑区
+5. 眼神是一种天然的语言
+6. 直视的目光更被信赖
+7. 直视的目光显示出更强的竞争力
+8. 喜欢一个人时，男人会变得话多，凝视少；女人会话少，凝视多
+
+
+[love-in-your-eye]: http://sex.guokr.com/post/1049163/
+
+CRX
+
+* [Ad Block：屏蔽广告](http://gnat.qiniudn.com/archive/crx/Ad-Block.crx)
+* [Block Site：屏蔽网站](http://gnat.qiniudn.com/archive/crx/Block-Site.crx)
+* [Copy as Markdown：生成页面的 Markdown 链接](http://gnat.qiniudn.com/archive/crx/Copy-as-Markdown.crx)
+* [Edit with Emacs：调用 Emacs 编辑文字](http://gnat.qiniudn.com/archive/crx/Edit-with-Emacs.crx)
+* [Extension Downloader：下载插件 CRX 文件](http://gnat.qiniudn.com/archive/crx/Extension-Downloader.crx)
+* [All Cheat Sheets：Cheet Sheet 大全](http://gnat.qiniudn.com/archive/crx/All-Cheat-Sheets_v1.1.crx)
+* [Tampermonkey：油猴](http://gnat.qiniudn.com/archive/crx/Tampermonkey_v3.6.3737.80.crx)
+* [Vimium：给 Chrome 提供 Vim 版快捷键](http://gnat.qiniudn.com/archive/crx/Vimium_v1.44.crx)
+* [CollaMark：？](http://gnat.qiniudn.com/archive/crx/CollaMark.crx)
+* [Coursera-Alfred：Coursera 必备](http://gnat.qiniudn.com/archive/crx/Coursera-Alfred.crx)
+* [DouBean：豆藤](http://gnat.qiniudn.com/archive/crx/DouBean.crx)
+* [Markdown-Here：用 Markdown 写邮件](http://gnat.qiniudn.com/archive/crx/Markdown-Here.crx)
+* [Stay-Focused：Stay Focused](http://gnat.qiniudn.com/archive/crx/Stay-Focused.crx)
+* [Webpage-Screenshot：页面截屏](http://gnat.qiniudn.com/archive/crx/Webpage-Screenshot.crx)
+* [Youdao-Translate：有道翻译](http://gnat.qiniudn.com/archive/crx/Youdao-Translate.crx)
+* [YoudaoDict：有道词典](http://gnat.qiniudn.com/archive/crx/YoudaoDict.crx)
+* [Zh-space-En：在中英文之间加空格](http://gnat.qiniudn.com/archive/crx/Zh-space-En.crx)
+* [Eye Dropper](http://gnat.qiniudn.com/archive/crx/Eye-Dropper.crx)
+* [IE Tab](http://gnat.qiniudn.com/archive/crx/IE-Tab.crx)
+* [Web Developer](http://gnat.qiniudn.com/archive/crx/WebDeveloper.crx)
+
+
+
+一个妹子一首歌
+
+这个妹子：
+
+![Jodie Foster](http://img3.douban.com/view/photo/photo/public/p917876874.jpg)
+
+---
+
+这首歌：
+# <strong>[Geek in the Pink!](http://www.xiami.com/play?ids=/song/playlist/id/2079006/object_name/default/object_id/0#loaded)</strong>
+
+
+
+## OpenSceneGraph
+
+```shell
+$ cd ~/dev/OpenSceneGraph-3.4.0
+$ mkdir build && cd build
+$ cmake ..
+$ make -j4
+$ sudo ldconfig
+$ sudo make install
+```
+
+```shell
+$ pkg-config --libs openscenegraph
+-losg -losgDB -losgFX -losgGA -losgParticle -losgSim -losgText -losgUtil -losgTerrain -losgManipulator -losgViewer -losgWidget -losgShadow -losgAnimation -losgVolume -lOpenThreads
+
+$ osgviewer cow.osg
+osgviewer: error while loading shared libraries: libosg.so.130: cannot open shared object file: No such file or directory
+
+$ cat >> ~/.zshrc <<EOF
+export OSG_ROOT=/home/tzx/dev/OpenSceneGraph-3.4.0/build
+export OSG_BIN_PATH=${OSG_ROOT}/bin
+export OSG_LIB_PATH=${OSG_ROOT}/lib
+export OSG_INCLUDE_PATH=${OSG_ROOT}/include
+export OSG_FILE_PATH=/home/tzx/data/OpenSceneGraph-Data-3.0.0:/home/tzx/data/OpenSceneGraph-Data-3.0.0/Images
+
+export PATH=${PATH}:${OSG_BIN_PATH}
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${OSG_LIB_PATH}
+EOF
+
+$ source ~/.zshrc && osgviewer cow.osg
+```
+
+```shell
+OSG_ROOT=C:\OSG
+OSG_BIN_PATH=%OSG_ROOT%\bin
+OSG_LIB_PATH=%OSG_ROOT%\lib
+OSG_INCLUDE_PATH=%OSG_ROOT%\include
+OSG_FILE_PATH=%OSG_ROOT%\data;%OSG_ROOT%\data\Images
+```
+
+##
+
+## Tricks
+
+解决 Qt 的 moc 处理 boost 代码的问题
+
+> This is a major change and will never be backported to Qt4.
+> Until you port your code to Qt5, you can use this work around of
+> wrapping any problematic include within #ifndef Q_MOC_RUN:
+> ```cpp
+> #ifndef Q_MOC_RUN
+> #include <boost/python.hpp> # boost headers go here
+> #endif
+> ```
+
+## Refs
+
+* [OSG+VS2010+win7环境搭建 - 缑城浪子 - 博客园](http://www.cnblogs.com/eaglezhao/archive/2011/07/12/eaglezhao.html)
+
+
+要不是忙，我一定分享一篇经验贴：如何用 CASIO 991-es plus 分分钟搞定极限、定积分
+、求导、解方程（组）、矩阵求逆、求零点。或者如何用破烂的 82es 刷机到 991。屡试
+不爽，可惜没有 82es。
+
+
+| @韩三元小猪头: 编辑你饿不饿 @简书
+| @简书: 如果我告诉你今天回家路上买了4个蛋糕，忍不住一口全吃了，
+|        现在撑死了躺在床上一动也不想动你会不会打我 :scream:
+
+| 我突然想到一件事。你谈过恋爱么，大宽？我问。
+| 大宽傻在座位上。
+| 没。他说，然后理直气壮地反问我，你谈过？
+| 我说我也没。
+| **然后我们俩抱头痛哭。**
+
+单词是我胡诌的。
+
+![before coloring](http://upload-images.jianshu.io/upload_images/29284-4fcc0c62100ba6f7.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+
+![RAINBOCTOCAT](http://upload-images.jianshu.io/upload_images/29284-a45fc0cc90f15e56.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+
+![150x200](http://gnat.qiniudn.com/rainboctocat.png?imageView2/1/w/150/h/200)
+
+![180x180](http://gnat.qiniudn.com/rainboctocat.png?imageView2/1/w/180/h/180)
+
+
+
+* [bash - How to extract tar.xz files in Linux? - Stack Overflow](http://stackoverflow.com/questions/12298368/how-to-extract-tar-xz-files-in-linux)
+* [How to create and extract zip, tar, tar.gz and tar.bz2 files in Linux - Simple Help](http://www.simplehelp.net/2008/12/15/how-to-create-and-extract-zip-tar-targz-and-tarbz2-files-in-linux/)
+* [oh-my-zsh/extract.plugin.zsh at master · robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/extract/extract.plugin.zsh)
+
+---
+
+### ZIP
+``` shell
+zip -r archive_name.zip directory_to_compress
+unzip archive_name.zip
+```
+
+### TAR
+``` shell
+tar -cvf archive_name.tar directory_to_compress
+tar -xvf archive_name.tar.gz
+tar -xvf archive_name.tar -C /tmp/extract_here/
+```
+
+### TAR.GZ
+``` shell
+tar -zcvf archive_name.tar.gz directory_to_compress
+tar -zxvf archive_name.tar.gz
+tar -zxvf archive_name.tar.gz -C /tmp/extract_here/
+```
+
+### TAR.BZ2
+``` shell
+tar -jcvf archive_name.tar.bz2 directory_to_compress
+tar -jxvf archive_name.tar.bz2 -C /tmp/extract_here/
+```
+
+### TAR.XZ
+``` shell
+tar xvfJ filename.tar.xz
+tar xpvf /path/to/my_archive.tar.xz -C /path/to/extract
+tar --xz -xvf filename.tar.xz
+```
+
+
+---
+
+```
+log: $1. long long ago; $2. Thu Aug  6 17:24:06     2015;
+```
+
+
+> **赖氏听力训练诀窍： **
+
+泛听：随意听，不追单词解释
+精听：反复听，逐句听写。特别注意连音（Linkage）
+
+
+[Mysterious New Line](http://stackoverflow.com/questions/71417/why-is-r-a-newline-for-vim)
+
+:   ```vimrc
+    :%s/%/\r/g
+    :%s/\n/%/g
+    ```
+
+```
+:w !sudo tee %
+
+:earlier 15m
+:later
+
+:r!date
+:.!date
+
+:%!xxd
+:%!xxd -r
+
+U
+viwU
+va{U
+```
+
+gv (last visual selection) -> gi (last edit)
+
+Control-arrow
+
+```
+`.              ; :h `.
+'.
+g;
+g,
+mx
+`x
+'x
+```
+
+>i{
+>iB
+>a{
+
+
+==
+4==
+=%
+=2a{
+gg=G
+
+ma
+>'a
+='a
+
+v
+3>
+
+* http://stackoverflow.com/questions/726894/what-are-the-dark-corners-of-vim-your-mom-never-told-you-about
+* http://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi
+
+* [**Ed-Vim-Emacs**][ed-vim-emacs]
+Of course, on the system I administrate, **vi** is symlinked to **ed**. **Emacs** has been replaced by a shell script which
+ - 1) Generates a syslog message at level LOG_EMERG;
+ - 2) reduces the user's disk quota by 100K; and
+ - 3) RUNS ED!!!!!!
+
+[ed-vim-emacs]: http://www.gnu.org/fun/jokes/ed.msg.html
+
+* Eclim
+![Eclim = vim + eclipse](http://upload-images.jianshu.io/upload_images/29284-74e059511619e624.jpg)
+
+
+---
+
+* [Emacs Chat: Carsten Dominik (author of org-mode)][emacs-chat]
+* GoogleTech Talk by Carsten Dominik (2008), [优酷][carsten-dominik-org-chat]
+* [Learning Org-mode (my notes on github)][org-mode-notes]
+* [Org-mode Document][org-mode-doc]
+
+
+
+![][01-intro]
+![][02-working-with-text-files?]
+![][03-notes-based-project-planning]
+![][04-step1-fixing-outline-mode-visually]
+![][05-step2-fixing-outline-mode-keys]
+![][06-fixed01]
+![][07-fixed02]
+![][08-step3-easy-structure-editing]
+![][09-org-mode-as-a-note-taking-app]
+![][10-step4-meta-data]
+![][11-meta-data-in-a-hierachical-document]
+![][12-special-interfaces-for-meta-data]
+![][13-special-interfaces-column-view]
+![][14-step5-capture-with-remember]
+![][15-step6-collect-and-display]
+![][16-exporting-and-publishing]
+![][17-tircks-tables]
+![][18-tricks-radio-tables]
+![][19-internals-context-sensitive-keys]
+![][20-how-org-mode-is-used-tody]
+![][21-org-mode-is-not]
+![][22-evolved-software]
+![][23-acknowledgement]
+
+
+[emacs-chat]: http://v.youku.com/v_show/id_XNjgwNDY4MzM2.html
+[carsten-dominik-org-chat]: http://v.youku.com/v_show/id_XMTUxMzUyNzE2.html
+[org-mode-notes]: https://github.com/district10/notes/blob/master/2014/Learning-Org-Mode.md
+[org-mode-doc]: http://orgmode.org/org.html
+[01-intro]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/01-intro.png
+[02-working-with-text-files?]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/02-working-with-text-files.png
+[03-notes-based-project-planning]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/03-notes-based-project-planning.png
+[04-step1-fixing-outline-mode-visually]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/04-step1-fixing-outline-mode-visually.png
+[05-step2-fixing-outline-mode-keys]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/05-step2-fixing-outline-mode-keys.png
+[06-fixed01]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/06-fixed01.png
+[07-fixed02]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/07-fixed02.png
+[08-step3-easy-structure-editing]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/08-step3-easy-structure-editing.png
+[09-org-mode-as-a-note-taking-app]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/09-org-mode-as-a-note-taking-app.png
+[10-step4-meta-data]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/10-step4-meta-data.png
+[11-meta-data-in-a-hierachical-document]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/11-meta-data-in-a-hierachical-document.png
+[12-special-interfaces-for-meta-data]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/12-special-interfaces-for-meta-data.png
+[13-special-interfaces-column-view]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/13-special-interfaces-column-view.png
+[14-step5-capture-with-remember]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/14-step5-capture-with-remember.el.png
+[15-step6-collect-and-display]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/15-step6-collect-and-display.png
+[16-exporting-and-publishing]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/16-exporting-and-publishing.png
+[17-tircks-tables]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/17-tircks-tables.png
+[18-tricks-radio-tables]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/18-tricks-radio-tables.png
+[19-internals-context-sensitive-keys]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/19-internals-context-sensitive-keys.png
+[20-how-org-mode-is-used-tody]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/20-how-org-mode-is-used-tody.png
+[21-org-mode-is-not]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/21-org-mode-is-not.png
+[22-evolved-software]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/22-evolved-software.png
+[23-acknowledgement]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/23-acknowledgement.png
+
+
+
+
+
+
+
+
+~~~
+log: $1. 2014-05-10: created; $2. 2014-05-25;
+~~~
+
+<http://gnat.qiniudn.com/ag.exe>
+
+
+- [GNU readline](https://en.wikipedia.org/wiki/Readline)
+- manpage: ` man readline`
+
+
+
+
+
+* readline - get a line from a user with editing
+* 快捷键也可以设置成 vi （默认是 Emacs）
+* Customize: `set variable-name value`
+* COMMANDS
+
+```
+beginning-of-line (C-a)                         quoted-insert (C-q, C-v)
+end-of-line (C-e)                               tab-insert (M-TAB)
+forward-char (C-f)                              self-insert (a, b, A, 1, !, ...)
+backward-char (C-b)                             transpose-chars (C-t)
+forward-word (M-f)                              transpose-words (M-t)
+backward-word (M-b)                             upcase-word (M-u)
+clear-screen (C-l)                              downcase-word (M-l)
+redraw-current-line                             capitalize-word (M-c)
+accept-line (Newline, Return)                   overwrite-mode
+previous-history (C-p)                          kill-line (C-k)
+next-history (C-n)                              backward-kill-line (C-x Rubout)
+beginning-of-history (M-<)                      unix-line-discard (C-u)
+end-of-history (M->)                            kill-whole-line
+reverse-search-history (C-r)                    kill-word (M-d)
+forward-search-history (C-s)                    backward-kill-word (M-Rubout)
+non-incremental-reverse-search-history (M-p)    unix-word-rubout (C-w)
+non-incremental-forward-search-history (M-n)    unix-filename-rubout
+history-search-forward                          delete-horizontal-space (M-\)
+history-search-backward                         kill-region
+yank-nth-arg (M-C-y)                            copy-region-as-kill
+yank-last-arg (M-., M-_)                        copy-backward-word
+delete-char (C-d)                               copy-forward-word
+backward-delete-char (Rubout)                   yank (C-y)
+forward-backward-delete-char                    yank-pop (M-y)
+```
+
+* 笑点: Bugs 里写到： `"It's too big and too slow."`
+* 一段 c 代码
+
+~~~
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <readline/readline.h>
+#include <readline/history.h>
+
+int main()
+{
+    char* input, shell_prompt[100];
+
+    // Configure readline to auto-complete paths when the tab key is hit.
+    rl_bind_key('\t', rl_complete);
+
+    for(;;) {
+        // Create prompt string from user name and current working directory.
+        snprintf(shell_prompt, sizeof(shell_prompt), "%s:%s $ ", getenv("USER"), getcwd(NULL, 1024));
+
+        // Display prompt and read input (n.b. input must be freed after use)...
+        input = readline(shell_prompt);
+
+        // Check for EOF.
+        if (!input)
+            break;
+
+        // Add input to history.
+        add_history(input);
+
+        // Do stuff...
+
+        // Free input.
+        free(input);
+    }
+}
+~~~
+
+[![*The Young Sailor II*](http://images.metmuseum.org/CRDImages/ma/web-large/DP261547.jpg)](http://www.metmuseum.org/collection/the-collection-online/search/489994)
+
+**The Young Sailor II**[^ys] is a painting by [Henri Matisse](https://en.wikipedia.org/wiki/Henri_Matisse) from 1906.
+
+Young Sailor II |
+--- | ---
+**Artist:** | Henri Matisse (French, Le Cateau-Cambrésis 1869–1954 Nice)
+**Date:** | 1906
+**Medium:** | Oil on canvas
+**Dimensions:** | 39 7/8 x 32 5/8 in. (101.3 x 82.9 cm)
+**Classification:** | Paintings
+**Credit Line:** | Jacques and Natasha Gelman Collection, 1998
+**Accession Number:** | 1999.363.41
+**Rights and Reproduction:** | © 2015 Succession H. Matisse / Artists Rights Society (ARS), New York
+
+
+
+[^ys]: [Henri Matisse | Young Sailor II | The Metropolitan Museum of Art](http://www.metmuseum.org/collection/the-collection-online/search/489994)
+
+
+
+
+
+获取源码的方式: e.g. `apt-get source coreutils`
+
+- [Unix shell][unix-shell]
+- [Linux Shell Scripting Cookbook | 读书笔记][shell-script]
+- [Linux Newbie Guide: Shortcuts And Commands][linux-newbie]
+
+[unix-shell]: https://en.wikipedia.org/wiki/Unix_shell
+[shell-script]: http://jianshu.io/p/87eefaf092c5
+[linux-newbie]: http://www.unixguide.net/linux/linuxshortcuts.shtml
+
+
+--------------------------------------------------------------------------------
+
+(这里不区别 Linux，GNU/Linux，和 Unix。简单粗暴地称为 Linux。)
+
+Linux Shell 用来和系统交互。基于命令行 ([CLI][cli]), 是我们使用 Linux Utilities 的平台。
+
+**你最好知道的知识有: **
+
+- [File System][filesystem]: 也就是格式化磁盘的格式, 如:
+    - Windows 的 NTFS
+    - U 盘的 Fat16
+    - 类 Unix 系统的 ext4
+- [File Descriptor][fd]: 文件描述符, `stdin`, `stdout`, `stderr` 等。
+- [Pipeline][pipe]: 管道，流化地处理输入输出。`echo How Are You | xclip -selection c`
+- [Readline][readline]: Shell 用到的交互方式。常用的快捷命令有:
+    - `c-r` 搜索历史命令
+    - `c-w` 删除一个单词
+    - 按 Tab 键自动补全
+- [Man Page][man]: man (manual) 帮助文档。居家生活必备。类似的有 [info][info]
+- 目录: `..` 或者 `../` 上级目录; `.` 或者 `./`当前目录;
+
+[cli]: https://en.wikipedia.org/wiki/Command-line_interface
+[filesystem]: https://en.wikipedia.org/wiki/Filesystem
+[fd]: https://en.wikipedia.org/wiki/File_descriptor
+[pipe]: https://en.wikipedia.org/wiki/Pipeline_(Unix)
+[readline]: https://en.wikipedia.org/wiki/GNU_Readline
+[man]: https://en.wikipedia.org/wiki/Man_page
+[info]: https://en.wikipedia.org/wiki/Info_(Unix)
+
+--------------------------------------------------------------------------------
+
+一些常用简单命令：
+
+```
+ls, dir, vdir
+echo "hello world"
+cd ..
+pwd
+date | xclip -selection c
+```
+
+
+
+--------------------------------------------------------------------------------
+
+一些说明：
+
+- 快捷键
+~~~
+An Emacs-style notation is used to denote keystrokes.  Control keys are
+       denoted  by C-key, e.g., C-n means Control-N.  Similarly, meta keys are
+       denoted by M-key, so M-x means Meta-X.  (On keyboards  without  a  meta
+       key,  M-x means ESC x, i.e., press the Escape key then the x key.  This
+       makes ESC the meta prefix.  The combination M-C-x means  ESC-Control-x,
+       or  press the Escape key then hold the Control key while pressing the x
+       key.)
+~~~
+
+
+0. “单向度”实际有两种意思，一是在横向上只有一个方向；一是在纵向上只有一个深度。即扁平化、无反抗等。单向度的人就是认同现实，没有批判精神，不反思的人。而造成这种单向度的人的社会，即单向度的社会，只倡导一种发展方向，维护现有体制，有着巨大的惰性。
+
+0. 陈寅恪所谓”独立之精神，自由之思想“，倒显得矫情而应酬。
+
+0. 恐同症又称“[同性恋恐惧症](http://baike.baidu.com/view/573602.htm)”（英文homophobia和homophobic）是指对同性恋行为以及同性恋者的非理智性的恐惧和憎恨。对同性恋的恐惧在很多国家有法律上的定义，例如在有争议的同性恋恐慌防卫（gay panic defense）、精神错乱防卫（insanity defense）或在仇视罪行立法中。
+
+0. **Homophobia** encompasses a range of negative [attitudes](https://en.wikipedia.org/wiki/Attitude_(psychology)) and feelings toward [homosexuality](https://en.wikipedia.org/wiki/Homosexuality) or people who are identified or perceived as being [lesbian](https://en.wikipedia.org/wiki/Lesbian), [gay](https://en.wikipedia.org/wiki/Gay), [bisexual](https://en.wikipedia.org/wiki/Bisexual) or [transgender](https://en.wikipedia.org/wiki/Transgender) ([LGBT](https://en.wikipedia.org/wiki/LGBT)).[[1]](https://en.wikipedia.org/wiki/Homophobia#cite_note-Adams-1)[[2]](https://en.wikipedia.org/wiki/Homophobia#cite_note-Renzetti-2)[[3]](https://en.wikipedia.org/wiki/Homophobia#cite_note-Schuiling-3) It can be expressed as [antipathy](https://en.wikipedia.org/wiki/Antipathy), [contempt](https://en.wikipedia.org/wiki/Contempt), [prejudice](https://en.wikipedia.org/wiki/Prejudice), aversion, or [hatred](https://en.wikipedia.org/wiki/Hate), may be based on irrational [fear](https://en.wikipedia.org/wiki/Fear), and is sometimes related to [religious beliefs](https://en.wikipedia.org/wiki/Religious_beliefs).[[4]](https://en.wikipedia.org/wiki/Homophobia#cite_note-Homophobia_bundle-4)
+
+0. Some people believe that sexual orientation is innate and fixed; however, sexual orientation develops across a person’s lifetime.
+
+0. 毫无疑问，拒绝以上任何一点都要求相当的政治勇气，也必然会承担相应的政治风险。它意味着必须抛弃先天论所赐予的坚固堡垒，而被迫在话语层面与不同政治力量进行激烈的斗争；意味着必须以新的方式来建构同性恋作为政治群体的本真利益，并以此换取行动的可能；意味着必须想象一种新的未来，而在这个未来中未必有同性恋者这一称号。
+
+---
+
+#### Refs
+
+* [恐同症_百度百科](http://baike.baidu.com/link?url=fpF_kg0XkogQ3GVBL9vzH7cUvgmCHjp-TiV14gGwLsJz1gjqvCbDZnyVDK9vrB2gXao2mGqZDVLaIMFG1P5ZMa)
+* [Homophobia - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Homophobia)
+* [没有人天生是同性恋](http://www.douban.com/note/442922272/)
+
+```python
+pip install --upgrade pip
+pip install -U numpy scipy scikit-learn
+```
+
+:    我说 `man -k printf` 和 `apropos printf` 怎么都是一样的结果。试了好几个关键词，然后 `man man` 才发现 **`man -k keyword`** 和 **`apropos -r keyword`** 是一样的。
+
+http://gnat.qiniudn.com/misc/pano/Panorama.7z
+
+
+
+
+乙状结肠 （sigmoid colon），这个中文翻译……醉了……但是确实挺准确……
+
+[为什么内地女星演OL，都逃不过尴尬症？](http://mp.weixin.qq.com/s?__biz=MzA5Mzc3NTUwNw==&mid=2653747608&idx=1&sn=23c3815eb395de160a234bf1812098b1&scene=0#wechat_redirect)
+
+:   OL: Office Lady
+
+    陈凯歌居然说这角色是“悲剧英雄”云云，导演对职业和社会的理解幼稚至此，如何能
+    期待女演员们演好普通而合逻辑的上班族？
+
+    此外就是编剧本身的人物塑造问题，带着一种上世纪外企崇拜症里的浮夸描述。
+
+    为了体现“高素质”安排了一段和情节完全无关也没什么炫技的英文台词。
+
+    但是她和男律师过招时仍旧翻着郭芙蓉的标志性表情，看材料时若想展示胸有成竹，则必须要撇一下高傲的嘴角，未免流于形式。
+
+    说话就像机关枪，擅长吵架，只撂狠话而无逻辑，听得人脑袋生疼。
+
+    还有个常见的故事毛病是，着力展示所谓“都市气息”“高大上”，而讲起商业来逻辑脆弱，剧情彻底“悬浮”，是成年人的《小时代》。
+
+    更重要的是，从故事到人物，都应该有一种对“专业主义”的尊重。
+
+    编剧写职业就好好想想职业本身会有什么冲突，而非家长里短狗血恋爱，或者铺陈专业词汇而不理解其真意；
+
+    演员则要抛开虚张声势，演出“专业”姿态。
+
+    在这件事上，最怀念巅峰时期的陈慧珊
+
+    大多数女人都是全职主妇的日本，魅力OL形象还是比中国的多。
+
+    天海佑希这样的女王，律师警察医生都演得，把女式西服穿得气象万千，而我相信她看上去就是有智商的样子。
+
+[倪湛舸的广播](https://www.douban.com/people/10686358/status/1834580640/)
+
+其实文科教育，尤其在本科阶段，培养的是做人做事的规范。书该怎么读，问题该怎么讨
+论，文章该怎么写，其实都是有规矩的，规矩管的就是如何做自己、如何待他人、如何在
+集体劳动中做个人贡献，天朝的许多乱象，根源和对策似乎都在于缺乏最基础的人文教育
+，抄袭这种事定期就要闹一闹，还真不是孤立现象。
+
+[阿男的广播](https://www.douban.com/people/weinanli/status/1834205107/)
+
+:   这些年越发明白一个道理：做一件事，努力并不是最重要，最重要是往正确的方向做
+    积累。这些年看到了太多人和事，很努力地往错误的方向上狂奔而去。＃还不如原地休息＃
+
+    坚持对我来讲是最简单的事，找到方向这件事才是一直不断在追寻的。
+
+[普林斯顿助理教授的Loser简历, 和爱因斯坦没有得到的博士学位](http://mp.weixin.qq.com/s?src=3&timestamp=1461979824&ver=1&signature=4v3T2FME4bKLP-ihJvc1BT3-DaC9SIIoHtaEtOUFXFgqHocMgg-8-AtUFMOSxN0LxpmWwBM576dN3ZIKDISn0WAPDd1leEvfNHg1h8EHfYpNxJEXJkhRrWXaUI1qDsfDd8JVSna3CC0sYcXcsdz5hUjRK2UCW*ZHFI1RfHduNSQ=)
 
 ```bash
 # download source code, unzip it, install it
@@ -3221,6 +4345,8 @@ Computer Vision & Remote Sensing (CVRS) Lab
     +86-27-68771218
 
 me.png?imageView2/1/w/90/h/120
+me.png?imageView2/1/w/150/h/200
+
 ```
 </div>
 

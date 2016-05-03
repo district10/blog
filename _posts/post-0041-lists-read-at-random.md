@@ -5028,3 +5028,8196 @@ Men List: 06 (诺贝尔物理学奖 01)
 [Don Juan][don-juan]
 
 [don-juan]: https://en.wikipedia.org/wiki/Don_juan
+
+As An Emacs Newbie
+==================
+
+Emacs 101
+
+:   What is [Emacs](http://en.wikipedia.org/wiki/Emacs)
+
+    - extensible text editors
+    - by [Richard Stallman](http://en.wikipedia.org/wiki/Richard_Stallman),
+      [Guy L. Steele, Jr](http://en.wikipedia.org/wiki/Guy_L._Steele,_Jr.) in 1976
+    - Emacs became, along with vi, one of the two main [contenders](http://dict.youdao.com/search?q=contenders&keyfrom=dict.index "竞争者（contender复数）")
+      in the traditional editor wars of Unix culture.
+
+    Some Sites/Tutorials
+
+    - [EmacsWiki](http://emacser.com/)
+    - [Xah Lee Web 李杀网](http://xahlee.org/)
+    - [Emacs 中文网](http://www.emacswiki.org/emacs/)
+    - [王垠的 Emacs](http://docs.huihoo.com/homepage/shredderyin/emacs.html)
+    - [王纯业的 Emacs](http://ann77.emacser.com/Emacs/EmacsIndex.html)
+    - [一年成为 Emacs 高手(像神一样使用编辑器)](https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org)
+    - [Planet Earth: 多个Emacs博客的集合](http://planet.emacsen.org/)
+
+Emacs Notes
+
+:   Edit Tables
+
+    - `table-insert`, `table-capture`,  `table-release`
+    - `table-{insert, delete}-{row, column}`
+    - `table-generate-source`, `table-justify`
+
+    ~~~
+    +------------+---------+---------+--------+--------+
+    |My          |         |   First |Emacs   |Table   |
+    +------------+---------+---------+--------+--------+
+    |Tab         |         |      to |move    |forward |
+    +------------+---------+---------+--------+--------+
+    |   S-Tab    |this row |   to    |  move  |backward|
+    |            |   is    |         |        |        |
+    |            |justified|         |        |        |
+    |            |to center|         |        |        |
+    +------------+---------+---------+--------+--------+
+    |this col is |         | this col|        |the     |
+    |widened     |         |       is|        |newly   |
+    |            |         |justified|        |inserted|
+    |            |         | to right|        |row     |
+    +------------+---------+---------+--------+--------+
+    |            |new COL  |  now to |        |now to  |
+    |            |here!    |  insert |        |insert  |
+    |            |         |     col |        |row     |
+    +------------+---------+---------+--------+--------+
+    |            |         |         |        |        |
+    +------------+---------+---------+--------+--------+
+    ~~~
+
+    [Org-mode](http://orgmode.org/)（Org-mode，让生活更美好）
+
+    * My Notes on Github: [Learning Org-mode](https://github.com/district10/notes/blob/master/2014/Learning-Org-Mode.md)
+
+    Keyboard Macros
+
+    - `start-kbd-macro`, （鼠标移过来，左边有个链接）
+    - `end-kbd-macro`
+    - `call-last-kbd-macro`
+    - `apply-macro-to-region-lines`, `name-last-kbd-macro`
+    - `recentf-open-files`
+    - 一个完整的例子: 比如你想这样（左边变到右边）
+
+    ~~~
+    start-kbd-macro	                  *start-kbd-macro*
+    end-kbd-macro	   	====>	    *end-kbd-macro*
+    call-last-kbd-macro		          *call-last-kbd-macro*
+    ~~~
+
+    你需要先把光标移到最左上角，开始录制宏，
+    输入`*`，按`End`，输入`*`，按  `Down`（方向键），`Home`，结束录制宏。
+    再运行两次宏，就可以了 (或者 `C-u 2 C-x e`^[‘C-u 0 C-x e’ to execute the macro an infinite number of times until the end of the file is reached])。
+
+    File Header
+
+    - file header to specify mode, etc
+
+    ````
+    ;; -*- mode: Lisp; fill-column: 75; comment-column: 50; -*-
+    ````
+
+    - file header: first line for normal file, second line for script file(it
+      has a shebang
+
+    - Comment
+        - `comment-region`, `comment-box`, `line-comment-banner`
+        - I rename this three to `comment-{region, box, banner}`
+
+Misc (以后慢慢把 misc 里的移出来）
+
+:   - **evil-mode** 太牛逼了~~~ 不配置的话，vim 确实方便点。
+    - `C-h c`(describe-key-briefly), `C-h f`(describe-function)
+    - `goto-line`, `goto-char`
+    - `delete-trailing-whitespaces`
+    - Insert Date
+    - Shadow Copy（强烈推荐），更牛逼的还有个 v cursor, 牛逼的
+      我的眼都要瞎了
+    - `C-x r s R` and `C-x r g R` (think: register-**set**/register-**get**).
+    - `eval-buffer`,  `eval-region`:  修改后配置后快速应用
+    - Line Numbers
+    - Zap To Char, `M-z e`
+    - yasnippet: 这完虐 VS 之类的 IDE 啊有木有
+    - Abbrev: 如果你觉得有些东西不好敲
+    - Bookmarks
+    - `C-x k`:	Close File （我怎么老忘）。。。
+    - `C-x C-+`, `C-x C--`, `C-x C-0`, Zoom In/Out, Resume
+
+    ```
+    toggle-case-fold-search
+    read-only-mode
+    ```
+
+Emacs Relative
+
+:   - Chrome Plugin: [edit-with-emacs](https://chrome.google.com/webstore/detail/edit-with-emacs/ljobjlafonikaiipfkggjbhkghgicgoh?utm_source=chrome-ntp-icon).
+      I use this to edit almost all of my JianShu Posts now.
+
+refs and see also
+
+  - <http://www.emacswiki.org/emacs/TableMode>
+  - <http://www.gnu.org/software/emacs/manual/html_node/emacs/Table-Definition.html>
+  - <http://ergoemacs.org/emacs/emacs_table.html>
+  - <http://www.emacswiki.org/emacs/KeyboardMacrosTricks>
+  - <http://www.emacswiki.org/emacs/LineNumbers>
+  - <http://www.emacswiki.org/emacs/Yasnippet>
+  - <http://www.emacswiki.org/emacs/ZapToChar#zap-to-char>
+  - <http://ergoemacs.org/emacs/emacs_abbrev_mode.html>
+  - <http://ergoemacs.org/emacs/bookmark.html>
+  - <http://www.emacswiki.org/emacs/LineCopyChar>
+  - <http://www.emacswiki.org/emacs/VcursorPackage>
+
+
+#### [Xah Lee (ErgoEmacs)][xah-lee-emacs-chat]
+
+[xah-lee-emacs-chat]: http://v.youku.com/v_show/id_XNzA4MTYzNjQ0.html
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+#### Jānis Mancēvičs
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+#### Tom Marble
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+#### Iannis Zannos
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+#### Magnar Sveen
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+#### Sacha Chua (with Bastien Guerry)
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+#### Bastien Guerry
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+#### [Carsten Dominik][ec-carsten-dominik] (author of org-mode)
+
+ ![ScreenShot][ec-carsten-dominik-pic]
+
+ + Print out a huge chunk of elisp code to read, and enjoy it.
+ + "We **only use git**"
+ + "I'm sorry, I just use it(writing emacs lisp) as **a way to relax**, sometimes."
+ + "It's my **hobby**. Like others people would do wood knits or something"
+ + "I actually want my computer to **work exactly as how I wanted**."
+
+
+[ec-carsten-dominik]: http://v.youku.com/v_show/id_XNjgwNDY4MzM2.html
+[ec-carsten-dominik-pic]: http://gnat-tang-shared-image.qiniudn.com/emacs/emacs-chat/carsten-dominik.png
+
+
+
+--------------------------------------------------------------------------------
+
+#### Thomas Kjeldahl Nilsson
+
+
+
+--------------------------------------------------------------------------------
+
+#### Avdi Grimm (Org-mode, Ruby, etc.)
+
+
+
+--------------------------------------------------------------------------------
+
+#### John Wiegley
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+~~~
+log: $1. 2014-05-10, created (Carsten Dominik); $2. Thu Aug  6 18:09:51     2015;
+~~~
+
+[emacs-chat]: http://sachachua.com/blog/category/podcast/emacs-chat-podcast/
+[emacs-chat-youku]: http://i.youku.com/u/UMTQyNzM3OTMyNA==
+
+1. Jamie Zawinski
+
+Lisp hacker, early Netscape developer, and nightclub owner Jamie Zawinski,
+a.k.a. jwz, is a member of the select group of hackers who are as well
+known by their three-letter initials as by their full names.
+
+“Ptthh, wrong!” and he’d walk
+away. So that was kind of getting thrown in the deep end. It was like
+the Zen approach—the master hit me with a stick, now I must
+meditate.
+
+“Oh my god; now
+I’m trying to debug GDB, which I’ve never looked at before.”
+
+We spent a long time talking about features. Well, not a
+long time, but it seemed like a long time because we were living a
+week every day. We stripped features, definitely. We had a
+whiteboard; we scribbled ideas; we crossed them out. This was a
+group of like six or seven people. I don’t remember exactly the
+number. A bunch of smart, egotistical people sitting in a room yelling
+at each other for a week or so.
+
+In some ways, yeah. Programming is obviously much more
+rigid. But as far as the overall ability to express a thought, they’re very
+similar. Not rambling, having an idea in your head of what you’re
+trying to say, and then being concise about it. I think that kind of
+thinking is the overlap between programming and writing prose.
+
+When I’m just writing the first version of the program, I tend to put
+everything in one file. And then I start seeing structure in that file. Like
+there’s this block of things that are pretty similar. That’s a thousand
+lines now, so why don’t I move that into another file. And the API sort
+of builds up organically that way. The design process is definitely an
+ongoing thing; you never know what the design is until the program is
+done. So I prefer to get my feet wet as early as possible; get something
+on the screen so I can look at it sideways.
+
+We had to ship the thing even if it wasn’t perfect. We can ship it later and it would be higher quality but someone else might have eaten our lunch by then.
+
+I always wish people would comment more, though the thing that
+makes me cringe is when the comment is the name of the function
+rephrased. Function’s called push_stack and the comment says, “This
+pushes to the stack.” Thank you.
+
+You’ve got to say in the comment something that’s not there already.
+What’s it for? Either a higher-level or a lower-level description,
+depending on what’s most important. Sometimes the most important
+thing is, what is this for? Why would I use it? And sometimes the most
+important thing is, what’s the range of inputs that this expects?
+
+Long variable names. I’m not a fan of Hungarian notation, but I think
+using actual English words to describe things, except for loop
+iterators, where it’s obvious. Just as much verbosity as possible, I
+guess.
+
+I usually end up putting the leaf nodes up at the top of the
+file—try to keep it basically structured that way. And then usually up
+at the top, document the API. What are the top-level entry points of
+this file, this module, whatever? With an object-y language, that’s done
+by the language for you. With C you’ve got to be a little more explicit
+about that. In C I do tend to try to have a .h file for every .c file that
+has all the externs for it. And anything that’s not exported in the .h file
+is static. And then I’ll go back and say, “Wait, I need to call that,” and I
+change it. But you’re doing that explicitly rather than just by accident.
+
+Sometimes. Normally I would think that someone who is a
+big fan of C++ templates—keep me away from that guy. But that
+might just be a snap judgment on my part. Maybe in the context
+they’ve used them, they actually work fine. Certainly with the folks I’ve
+worked with, ability to argue their point was important because we all
+ended up being a pretty argumentative bunch. With that environment,
+that helped a lot. That certainly doesn’t have anything to do with
+programming ability. That’s just interpersonal-dynamics stuff.
+
+I know I ended up doing a lot of reading of code
+and asking questions. I think one thing that’s really important is to not
+be afraid of your ignorance. If you don’t understand how something
+works, ask someone who does. A lot of people are skittish about that.
+And that doesn’t help anybody. Not knowing something doesn’t mean
+you’re dumb—it just means you don’t know it yet.
+
+So there were definitely times,
+especially early on, where I felt like, “Oh my god, I don’t know
+anything.” It would just be embarrassing—but that was just being
+insecure. Being the young kid around all these people with PhDs—
+“Aaah, I don’t know anything! I’m an idiot! How did I bluff my way into
+this?”
+
+That just seemed bizarre and wrong. But I don’t know. Maybe it’s not wrong. Maybe that’s the caveman thoughts: “Back in my day, we programmed with a nine-volt battery and a steady hand!”
+
+I actually haven’t read very many of those. The one I
+always recommend is Structure and Interpretation of Computer Programs,
+which a lot of people are afraid of because it’s Lispy, but I think does a
+really good job of teaching programming without teaching a language.
+
+Seibel: Is there a key skill programmers must have?
+Zawinski: Well, curiosity—taking things apart. Wanting to know
+what’s going on under the hood. I think that’s really the basis of it.
+Without that I don’t think you get very far. That’s your primary way of
+acquiring knowledge. Taking something apart and looking at it is how
+you learn to build your own. At least for me. I’ve read very few books
+about computers. My experience has been digging through source
+code or reference manuals. I’ve got a goal and, alright, to do this I
+need to know what this thing does and what this thing does. And I’ll
+just sort of random-walk through that until I find where I’m going.
+
+Brad Fitzpatrick
+--------------
+
+
+
+
+
+
+
+
+
+
+---
+
+~~~
+log: $1. ;
+~~~
+
+
+### Refs
+
+- [**Foundations of Python Network Programming**](http://book.douban.com/subject/4793807/)
+
+---
+### TOC
+- Preface
+- §1. Introduction to Client/Server Networking
+- §2. UDP
+- §3. TCP
+- §4. Socket Names and DNS
+- §5. Network Data and Network Errors
+- §6. TLS and SSL
+- §7. Server Architecture
+- §8. Caches, Message Queues, and Map-Reduce
+- §9. HTTP
+- §10. Screen Scraping
+- §11. Web Applications
+- §12. E-mail Composition and Decoding
+- §13. SMTP
+- §14. POP
+- §15. IMAP
+- §16. Telnet and SSH
+- §17. FTP
+- §18. RPC
+- §19. Index
+
+---
+~~~
+                                  Run, Forest, Run
+~~~
+#### [Preface]()
+---
+
+#### §1. Introduction to Client/Server Networking
+1. **The Building Blocks: Stacks and Libraries**
+ - The Idea of a Protocol Stack
+ - Using Python libraries of prepared code
+    - search your libs: [The Python Standard Library](http://docs.python.org/2/library/), or
+    - more than the standard: [PyPI - the Python Package Index](https://pypi.python.org/pypi)
+ - [`virtualenv - have an virtual env without contaminating your system-wide Python`](https://pypi.python.org/pypi/virtualenv)
+    - install virtualenv
+```
+# command line
+pip install virtualenv # or get the latest from github(dev version)
+pip install https://github.com/pypa/virtualenv/tarball/develop
+# compile from source code, cd source dir first, then
+python setup.py install
+# `make` docs, here I prefer html
+cd docs && make html
+```
+    - set up an environment
+```
+virtualenv --no-site-packages gmapenv # will create a dir "gmapenv"
+. bin/active # notice the <space> between "." and "bin/active"
+python -c "import googlemaps" # not work, so to install the module
+# do it yourself, if you intall it in the virtualenv, you can use it in the environment, but out there, you can't, that's why it's called "virtualenv"
+```
+    - example
+```
+#!/usr/bin/env python
+# Foundations of Python Network Programming - Chapter 1 - search1.py
+from googlemaps import GoogleMaps
+address = '207 N. Defiance St, Archbold, OH'
+print GoogleMaps().address_to_latlng(address)
+# doesn't work... Google MAP is already changed.
+```
+
+- **Application Layer**
+ -
+```
+#!/usr/bin/env python
+# Foundations of Python Network Programming - Chapter 1 - search2.py
+import urllib, urllib2
+try:
+       import json
+except ImportError: # for Python 2.5
+       import simplejson as json
+params = {'q': '207 N. Defiance St, Archbold, OH',
+              'output': 'json', 'oe': 'utf8'}
+url = 'http://maps.google.com/maps/geo?' + urllib.urlencode(params)
+rawreply = urllib2.urlopen(url).read()
+reply = json.loads(rawreply)
+print reply['Placemark'][0]['Point']['coordinates'][:-1]
+```
+My words:
+> This part is kinda OUT OF DATE, for I got error_message:
+>> The Geocoding API v2 has been turned down on September 9th, 2013. The Geocoding API v3 should be used now.
+Learn more at [here](https://developers.google.com/maps/documentation/geocoding/)
+
+- **Speaking a Protocol**
+
+- **A Raw Network Conversation**
+```
+import socket
+sock = socket.socket()
+sock.connect(('maps.google.com', 80)) # tuple
+sock.sendall(...) # specify here
+rawreply = sock.recv(4096)
+print rawreply
+```
+
+- **Turtles All the Way Down**
+ - `The protocol stack we have just explored, for example, is four protocols high:`
+   - Google Maps URLs return JSON data containing coordinates.
+   - URLs name documents that can be retrieved using HTTP.
+   - HTTP uses sockets to support document commands like GET.
+   - Sockets know only how to send and receive text.
+ - `The layers operating below the socket() API are the following:`
+   - TCP (The Transmission Control Protocol)
+`sockets use it to support network conversations between two programs`
+   - IP (The Internet Protocol)
+`knows how to send packets between different computers`
+   - The "link layer" (at the very bottom)
+`consists of network hardware devices (Ethernet ports and wireless cards)`
+`which can send physical messages between directly-linked computers`
+
+- **The Internet Protocol**
+
+- **IP Addresses**
+```
+import socket
+print socket.gethastbyname('maps.google.com') # ==> 74.125.235.206
+```
+
+- **Routing**
+
+- **Packet Fragmentation**
+
+- **Learning More About IP**
+
+
+---
+#### [**§2. UDP**]()
+1. **Should You Read This Chapter?**
+Yes, if you are going to be doing any programming on an IP network.
+
+- **Addresses and Port Numbers**
+ - like `192.168.1.30:44137` or `192.168.1.9:53`
+ - Port Number Ranges
+   - Well-Known Ports: 0–1023. `treated special by Operating System`
+   - Registered Ports: 1024–49151. `can be register by the IANA`
+   - The remaining port numbers: 49152–65535. `free for any use`
+
+- **Sockets**
+```
+#!/usr/bin/env python
+# Foundations of Python Network Programming - Chapter 2 - udp_local.py
+# UDP client and server on localhost
+import socket, sys
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+MAX = 65535
+PORT = 1060
+if sys.argv[1:] == ['server']:
+    s.bind(('127.0.0.1', PORT))
+    print 'Listening at', s.getsockname()
+    while True:
+        data, address = s.recvfrom(MAX)
+        print 'The client at', address, 'says', repr(data)
+        s.sendto('Your data was %d bytes' % len(data), address)
+elif sys.argv[1:] == ['client']:
+    print 'packet '
+    print 'Address before sending:', s.getsockname()
+    s.sendto( "hello " + str(i) , ('127.0.0.1', PORT))
+    print 'Address after sending', s.getsockname()
+    data, address = s.recvfrom(MAX) # overly promiscuous - see text!
+    print 'The server', address, 'says', repr(data)
+else:
+    print >>sys.stderr, 'usage: udp_local.py server|client'
+```
+
+- **Unreliability, Backoff, Blocking, Timeouts**
+```
+#!/usr/bin/env python
+# Foundations of Python Network Programming - Chapter 2 - udp_remote.py
+# UDP client and server for talking over the network
+import socket, sys, random
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+MAX = 65535
+PORT = 1060
+if 2 <= len(sys.argv) <= 3 and sys.argv[1] == 'server':
+    print "The server:"
+    interface = sys.argv[2] if len(sys.argv) > 2 else '' # specify an interface or '0.0.0.0'(any interface)
+    s.bind((interface, PORT))
+    print 'Listening at', s.getsockname()
+    while True:
+        data, address = s.recvfrom(MAX)
+        if random.randint(0, 1):
+            print 'The client at', address, 'says', repr(data)
+            s.sendto('Your data was %d bytes' % len(data), address)
+        else:
+            print 'Pretending to drop packet from', address
+elif len(sys.argv) == 3 and sys.argv[1] == 'client':
+    print "The client:"
+    hostname = sys.argv[2]
+    s.connect((hostname, PORT))
+    print 'Client socket name is:', s.getsockname()
+    delay = 0.1
+    while True:
+        s.send('This is another message')
+        print 'Waiting up to', delay, 'seconds for a reply'
+        s.settimeout(delay)
+        try:
+            data = s.recv(MAX)
+        except socket.timeout:
+            delay *=2 # wait even longer for the next request
+            if delay > 2.0:
+                raise RuntimeError('I think the server is down')
+        except:
+            raise # a real error, so we let the user see it
+        else:
+            break # we are done, and can stop looping
+    print 'The server says', repr(data)
+else:
+    print >>sys.stderr, 'Error:'
+    print >>sys.stderr, 'usage: udp_remote.py server [<interface>]'
+    print >>sys.stderr, '   or: udp_remote.py client <host>'
+    sys.exit(2)
+```
+
+- **Connecting UDP Sockets**
+once you have run `connect()`, the operating system will discard any incoming packets to your port whose return address and port number do not match the server to which you are sending packets.
+
+- **Request IDs: A Good Idea**
+  - protects you from being confused by duplicate answers to requests that you repeated several times in your exponential backoff loop
+ - provide a barrier against spoofing
+`none of this is real security—it just protects against naive spoofing attacks`
+
+- **Binding to Interfaces**
+ - binding to an IP interface: limit which external hosts can talk to you
+ - more network interfaces can bring up more UDP listening servers
+
+- **UDP Fragmentation**
+
+- **Socket Options**
+ - `man 7 socket` and `man 7 udp`
+ - options:
+   - SO_BROADCAST
+   - SO_DONTROUTE
+   - SO_TYPE
+ - `SOCK_DGRAM`:UDP, or `SOCK_STREAM`: TCP
+
+- **Broadcast**
+```
+#!/usr/bin/env python
+# Foundations of Python Network Programming - Chapter 2 - udp_broadcast.py
+# UDP client and server for broadcast messages on a local LAN
+import socket, sys
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+MAX = 65535
+PORT = 1060
+if sys.argv[1:] == ['server']:
+  s.bind(('', PORT))
+  print 'Listening for broadcast at', s.getsockname()
+  while True:
+      data, address = s.recvfrom(MAX)
+      print 'The client at %r says: %r' % (address, data)
+elif len(sys.argv) == 4 and sys.argv[1] == 'client':
+  network = sys.argv[2]
+  s.sendto( sys.argv[3] , (network, PORT))
+else:
+  print >>sys.stderr, 'usage: udp_local.py server'
+  print >>sys.stderr, '   or: udp_broadcast.py client <host> <message>'
+  sys.exit(3)
+# you can run like this:
+# `python broadcast.py server`
+# `for in in {1..4}; do python broadcast.py client 127.0.0.4 'hello, $i'; done`
+# on the server side, you get:
+# The client at ('127.0.0.1', 55627) says: 'hello, 1'
+# The client at ('127.0.0.1', 60106) says: 'hello, 2'
+# The client at ('127.0.0.1', 57721) says: 'hello, 3'
+# The client at ('127.0.0.1', 42740) says: 'hello, 4'
+```
+
+- **When to Use UDP**
+ - You might think that UDP would be very efficient for sending small messages. Actually, UDP is **efficient only if your host ever only sends one message at a time, then waits for a response. **
+ - If send several messages in a burst, use an intelligent message queue algorithm like ØMQ
+
+- **Summary**
+ - **UDP socket** of POSIX network stack: `IP address` + `UDP port number`
+ - **server**: `bind()` to an address and port
+ - **client**: `sendto()`/`connect(), send()`, OS will choose a port num for u
+ - **unreliable** (packets can be droped without notice), so client should **re-transmit**, but should use `exponential backoff` to avoid making busy network even worse
+
+
+---
+#### [**§3. TCP**]()
+1. **How TCP Works**
+
+- **When to Use TCP**
+
+
+
+
+
+
+
+
+
+
+
+
+- §4. Socket Names and DNS
+- §5. Network Data and Network Errors
+- §6. TLS and SSL
+- §7. Server Architecture
+- §8. Caches, Message Queues, and Map-Reduce
+- §9. HTTP
+- §10. Screen Scraping
+- §11. Web Applications
+- §12. E-mail Composition and Decoding
+- §13. SMTP
+- §14. POP
+- §15. IMAP
+- §16. Telnet and SSH
+- §17. FTP
+- §18. RPC
+- §19. Index
+
+
+---
+| [**建议/意见**](http://jianshu.io/p/63a956887fd4) | [**Errata**](http://jianshu.io/p/e1e05fa9e0a3) |  [**闲话废话**](http://jianshu.io/p/2d3d4348074f) | [**推荐博客**](http://jianshu.io/p/d2c2bb38c31b) |
+| :---: | :---: | :---: | :---: |
+| | | | | |
+~~~
+log:
+~~~
+
+---
+
+Words Frist:
+
+> I've kept this tutorial in my bookmarks for a long time,
+and today I'm studying it, write something to share and keep myself going on
+
+### [Refs][null]
+
+1. [**Geoprocessing with Python**](http://www.gis.usu.edu/~chrisg/python/2008/)
+
+---
+
+## [Week 1:][null]
+
+---
+
+### [Reading Vector Data with OGR][null]
+
+1. **Open Source RS/GIS Modules**
+ * [OGR](http://www.gdal.org/ogr/)
+ * [GDAL](http://www.gdal.org/)
+ * Numeric:
+Sophisticated array manipulation
+(extremely useful for raster data, already replaced by Numpy)
+ * [**Numpy**](http://www.numpy.org/)
+ * [**OWSLib**](http://geopython.github.io/OWSLib/)
+
+- **Module free-Standing methods(2 kinds)**
+  * Not rely on pre-existing objects: e.g.
+  **`driver = ogr.GetDriverByName('ESRI Shapefile')`**
+  * Rely on pre-existing objects: e.g.
+  ** `ds = driver.Open('data/test.shp')`**
+
+3. **OGR: supported many different vector formats**
+ * Get all drivers:
+```
+for i in range(ogr.GetDriverCount()):
+print ogr.GetDriver(i).GetName()
+```
+ * Driver is for **Write** especially, but we prefer read data with driver too
+ * ***Usage:***
+```
+import ogr
+driver = ogr.GetDriverByName('PDF')
+dataSource = driver.Open('test.shp', 0)
+layer = dataSource.GetLayer()
+layer.GetFeatureConut(), layer.GetExtent()
+feature = layer.GetFeature(0)
+dataSource.Destroy()
+```
+
+4. **The Working Directory**
+ `import  os`, `os.chdir('chang/dir/to')`
+
+5. **Text file I/O**
+
+6. **Homework**
+
+7. [**OGR API Refs PDF**](http://www.gis.usu.edu/~chrisg/python/2008/ogr_summary.pdf)
+
+
+---
+
+## [Week 2][null]
+
+---
+
+### [Creating Geometries and Writing Vector Data with OGR][null]
+
+1. **Writing New Data**
+ * Create a **New Feature** before write it to a **shapefile**(or other **vector data set**)
+ * Create a new feature, we need:
+    * **geometry**
+    * **feature definition**(may including **field definition**)
+ * Creating a New Geometry
+    * From an existing feature(see last week)~~(Orz, where is it..)~~
+here: `feature = layer.GetFeature(0); featureDefn = feature.GetDefnRef()`
+    * Creating it by acting on an existing Geometry(next week)
+    * Create a new one from scratch(use the geometry **constructor**):
+          **`ogr.Geometry(<OGRwkbGeometryType>)`**
+   * Define geometry in a different way for each type:
+        **point**, **line**, **polygon**, etc
+        * ```
+point = ogr.Geometry(ogr.wkbPoint); # Usage: point.AddPoint(x, y, z=0)
+line = ogr.Geometry(ogr.wkbLineString)
+line.AddPoint(10, 10), line.AddPoint(20, 20), ...
+line.SetPoint(0, 30, 30) # 0 indexed, so (10, 10) -> (30, 30)
+outring = ogr.Geometry(ogr.wkbLineRing)
+outring.AddPoint(0, 100), ..., outring.CloseRings()  or
+outring.AddPoint(0, 100)  # (Same thing)
+inring (same as outring)
+polygon = ogr.Geometry(ogr.wkbPolygon)
+polygon.AddGeometry(outring), polygon.AddGeometry(inring)
+print polygon.GetGeometryCount(), ring = polygon.GetGeometryRef(INDEX)
+```
+ * **Feature Definition**
+
+     * ```
+featureDefn = feature.GetDefnRef()
+feateruDefn = layer.GetLayerDefn()
+fieldDefn = feature.GetFieldDefnRef(0)
+fieldDefn = featureDefn.GetFieldDefn(1)
+#Create one from Scratch:
+fieldDefn = ogr.FieldDefn('id', ogr.OFTString) # ogr.OFTInteger...
+fieldDefn.SetWidth(4)
+```
+```
+[datasource = [
+                       layers = [
+                                  features obey featureDefn = [
+                                                                geometry +
+                                                                fieldDefns
+                                                              ]
+                                ]
+                     ]
+```
+
+- **Write to Shp file**
+ - **Layer**
+```
+dataSource = driver.CreateDataSource('new-shpfile.shp')
+layer = dataSource.CreateLayer('new-layer', geom_type=ogr.wkbPoint)
+layer.CreateField(fieldDefn)
+```
+ - **Features**
+```
+featureDefn = layer.GetLayerDefn()
+feature = ogr.Feature(featureDefn) # Create a new feature
+feature.SetGeometry(point)
+feature.SetField('id', 23)
+layer.CreateFeature(feature) # Write the feature to the layer
+```
+
+- **Remember to `Destroy()` dataSource**
+
+- **Some Python**
+ - `info = "A, 12, 34".split(',')`, `id = info[0], x,y = info[1],info[2]`
+     \# `split` to list, by default, the delim is `<SPACE>`
+ * Data type conversions: **_bool()_, _float()_, _int()_, _long()_, _str()_**, etc
+
+- **Homework**
+
+- **Challenge**
+
+- **My problems**
+> When I run some examples in [**geometries_examples.pdf**](http://www.gis.usu.edu/~chrisg/python/2008/geometries_example.pdf)
+> I found some different things,
+like:  point.Empty(), print point ==> "**POINT EMPTY**"
+not "**POINT (0 0 0)**"
+> And in [**os2\_hw\_c1.py**](http://www.gis.usu.edu/~chrisg/python/2008/os2_hw_c1.py), `feature.SetField('name', countyName)`
+\# 没看懂，有“name”这个field？？ 哪儿设置的？ Key words?
+
+
+---
+
+## [Week 3:][null]
+
+---
+
+### [Filters and Simple Analysis of Vector Data][null]
+
+1. **Attribute Filters**
+```
+layer.GetFeatureCount()
+layer.SetAttributeFilter()
+layer.GetFeatureCount() # see, some features filtered out
+layer.SetSpatialFilter(<geom>)
+layer.SetSpatialFilterRect(min_x, min_y, max_x, max_y)
+```
+ * More Complicated Filters
+      * [SQL support refs](http://www.gdal.org/ogr/ogr_sql.html), caveats(警告): not all sql is supported
+
+- **Spatial Relations**
+```
+# 0/1 for True/False
+geom1.Intersect(geom2) #==> 0 / 1 # 我理解的，Intersect是 A 和 B 是否 Intersect
+geom1.Disjoint (geom2) #==> 0 / 1
+geom1.Touches  (geom2) #==> 0 / 1 # TouchES，是 A TouchES B
+geom1.Crosses  (geom2) #==> 0 / 1
+geom1.Within   (geom2) #==> 0 / 1
+geom1.Contains (geom2) #==> 0 / 1
+geom1.Overlaps (geom2) #==> 0 / 1 # A & B overlaps, or A overlaps B, like
+                                   # "The ends of cloth overlap the bed."
+geom1.Equal    (geom2) #==> 0 / 1
+```
+
+- **Simple Geoprocessing**
+ ```
+geom1.Intersection       (geom2) #==> geom_intersection
+geom1.Union              (geom2) #==> geom_union
+geom1.Difference         (geom2) #==> geom_difference
+geom1.SymmetricDifference(geom2) #==> geom_symmdiff
+geom1.Buffer          (distance) #==> geom_buffer
+geom1.GetEnvelope             () #==> Get extent as a list,
+                                   #               a.k.a (minX, maxX, minY, maxY)
+```
+
+- **Homework**
+
+
+---
+
+## [Week 4:][null]
+
+---
+
+### [Projections and Functions][null]
+
+1. For **Spatial Reference Objects**, different ways to specify projections
+ - [**Well-Known Text (WKT)**](http://en.wikipedia.org/wiki/Well-known_text)
+ - [**PROJ.4**](www.remotesensing.org/geotiff/proj_list/): e.g.
+       `+proj=utm +zone=12 +ellps=WGS84 +datum=WGS84 +units=m +no_defs`
+ - [**EPSG (European Petroleum Survey Group)**](http://spatialreference.org/ref/epsg/ "Petroleum: 石油"): e.g. `32612`
+ - [**USGS**](http://en.wikipedia.org/wiki/United_States_Geological_Survey), see `importFromUSGS()` description at [OGRSpatialReference](http://www.gdal.org/ogr/classOGRSpatialReference.html): e.g.
+ ```
+(1, 12, (0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0), 12)
+```
+ - **Others:** ESRI .prj (import only), PCI software, XML
+
+- **Getting a Layer's Projects: spatialRef**
+ - If it has projection information, like ".prj" file along with a shapefile:
+    `spatialRef = layer.GetSpatialRef()`
+ - If not, `GetSpatialRef()` returns "_None_"
+ - Also can get from geometry object:
+ `spatialRef = geometry.GetSpatialReference()`
+
+- **Create a New Projection**
+```
+import osr # first of first
+spatialRef = osr.SpatialReference()
+spatialRef.ImportFromEPSG(32612)
+spatialRef.ImportFromProj4(<proj4_string>)
+```
+
+- **Exporting a Projection**
+```
+ExportToWkt()
+ExportToPrettyWkt()
+ExportToProj4()
+ExportToPCI()
+ExportToUSGS()
+ExportToXML()
+```
+
+- **Creating a coordinate Transform**
+ - For reproject data, we need to do the _**coordinates transform**_
+ - to do that, we need the **spatial reference** for the **source** and **target**
+```
+sourceSR = osr.SpatialReference()
+sourceSR.ImportFromXXXX() # same for targetSR
+coordinateTrans = osr.CoordinateTransformation(sourceSR, targetSR)
+```
+
+- **Projecting a Geometry**
+ - one **geometry** at a time
+ - **`geom.Transform ( coordinateTrans )`** # modifies the geometry **in place**
+
+- **Some Python**
+ - Define functions: to automate the whole process above
+ - Exceptions: **try**: ... **except** <name>: ... **finally**: ...
+ - **Modules**
+      - Modules are handy places to keep functions, so we can
+         `import mymod.py`, then call function using
+`mymod.somefuncs()`
+      - Find modules, about **PYTHONPATH**
+      - `sys.path.append(new_path)`  # add a path to module seaching path
+ - Glob:Lists files in a directory that match a pattern
+```
+import glob
+glob.glob('./[0-9].\*')
+glob.glob('\*.gif')
+glob.glob('?.gif')
+for fn in glob.glob('/shapfiles/\*.shp'):
+         print fn
+```
+
+- Homework
+
+- My Words:
+> in file "_some.py_": "**import our\_module**", the search path of "**our\_module.py**" is where we "**python some.py**"
+> and after the **import**, we'll have a "**some.pyc**" file.
+
+
+---
+
+## [Week 5:][null]
+
+---
+
+### [Reading Raster Data with GDAL][null]
+
+1. **GDAL, supports about 75 raster formats**
+ - **ArcInfo grids, ArcSDE raster, Imagine
+Idrisi, ENVI, GRASS, GeoTIFF**
+ - [**HDF4, HDF5**](http://en.wikipedia.org/wiki/United_States_Geological_Survey)
+ - **USGS DOQ, USGS DEM**
+ - **ECW, MrSID**
+ - **TIFF, JPEG, JPEG2000, PNG, GIF, BMP**
+ - see more: [**GADL Raster Formats**](http://www.gdal.org/formats_list.html)
+
+- **Importing GDAL**
+```
+import gdal
+         # All gdalconst constants start with a prefix which minimizes
+         # the possibility of conflicts with other modules, import them:
+from gdalconst import *
+```
+
+- **GDAL data drivers**
+ - Similar to **OGR** data drivers
+ - **Register** one before using it
+ - Register all drivers at once: **`gdal.AllRegister()`**
+works for reading data but not for **creating data sets**,
+for that we need to do more...
+ - **Get the Imagine driver and register it**
+works fine for reading and creating new Imagine files
+```
+driver = gdal.GetDriverByName('HFA')
+driver.Register()
+```
+
+- **Opening a raster data set**
+ - Once register the driver, we can use the _stand-alone_
+    `Open(<filename>, <GDALAcess>)` method
+```
+dataset = gdal.Open('aster.img', GA_ReadOnly)`
+if dataset is None:
+       print 'Could not open file'
+       sys.exit(1)
+```
+
+- **Getting Image Dimensions**
+```
+cols  = dataset.RasterXSize
+rows  = dataset.RasterYSize
+bands = dataset.RasterCount
+```
+
+- **Getting Georeference Info**
+ - **GeoTransforms** are lists of information used to **georeference** an image
+ - From GDAL document, we know:
+```
+adfGeoTransform[0] # top left x
+adfGeoTransform[1] # w-e pixel resolution
+adfGeoTransform[2] # rotation, 0 if image is "north up"
+adfGeoTransform[3] # top left y
+adfGeoTransform[4] # rotation, 0 if image is "north up"
+adfGeoTransform[5] # n-s pixel resolution
+# Coordinates are for top left corners of pixels
+# unlike Imagine, which uses centers
+```
+Q: what is [**adf**](http://www.coolutils.com/formats/adf) ?
+A: **file extension** for the Arc/Info Binary Grid format,
+another df from Arc/info is **ARC/INFO ASCII Grid format**
+maybe means "**A**cr/info **df**(data format)"
+- How to use it?
+```
+ geotransform = dataset.GetGeoTransform()
+ originX     = geotransform[0]
+ originY     = geotransform[3] # Good Design!!!
+ pixelWidth  = geotransform[1]
+ pixelHeight = geotransform[5]
+```
+
+- **Computing Pixel Offsets**
+ - xOffset = int((x – originX) / pixelWidth)
+ - yOffset = int((y – originY) / pixelHeight)
+ - **e.g.** (感谢 [**博客园**](http://www.cnblogs.com/gnat-tang/p/3538234.html) 的图)
+![](http://images.cnitblog.com/blog/598474/201402/061052413032689.png)
+`(x – originX) / pixelWidth ~= 3.25 ==> 3`
+
+- **Getting Pixel Values**
+ - the **band index** (_1-based_)
+band = dataset.**`GetRasterBand`**(_Index_)
+data = band.**`ReadAsArray`**(_xOffset_, _yOffset_, _xSize_(1), _ySize_(1))
+value = **data[0, 0]**
+ - **Reading an entire image at once**
+```
+data = band.ReadAsArray(0, 0, cols, rows)
+value = data[42, 94]` # row: 42, col: 94
+```
+ - **Reading Raster Data Efficiently**
+```
+# Read one pixel at a time is inefficient
+# Reading the entire image at once is pretty efficient, but not the best
+#  and we should have enough RAM to hold it all or process it
+# Most efficient way to access raster data is [by blocks]
+#     (Unfortunately, don't always know the <block size>)
+Tiled images
+      1. Some file types, like most GeoTIFFs, are "not tiled":
+         a block is a row
+      2. By default Erdas Imagine files, tiled into blocks 64x64
+```
+   - **Reading one Row at a time**
+```
+for i in range(rows):
+            data = band.ReadAsArray(0, i, cols, 1)
+            # do something with data
+```
+   - **Reading one Row of Blocks**
+```
+bSize = <BlockSize>
+for i in range(0, rows, bSize):
+          if i + bSize < rows:
+               size = bSize
+          else:
+               size = rows - i
+          data = band.ReadAsArray(0, i, cols, size)
+          # do something with data
+```
+   - **Reading Block by Block**
+```
+# before we start:
+rows, cols = 13, 11
+# you should know: range(0,13,5) & range(0,11,5) both return [0, 5, 10]
+# Lets go
+bSize = 5
+for i in range(0, rows, bSize):
+          if i + bSize < rows:
+               numRows = bSize
+          else:
+               numRows = rows – i
+          for j in range(0, cols, bSize):
+               if j + bSize < cols:
+                   numCols = bSize
+               else:
+                   numCols = cols – j
+          data = band.ReadAsArray(j, i, numCols, numRows)
+          # do something with the data here, before
+          # reading the next block
+```
+ - **Warning!**
+    - When reading and writing data with different cell sizes or extent,
+    the offsets are different as well!
+   - This makes reading and writing by block more complicated because there is more to keep track of
+
+- **Closing the dataset**
+ - Close the dataset to **save memory**
+ - No **Destroy()** like in **OGR**, Instead, just **`dataset = None`**
+
+- Homework
+
+
+---
+
+## [Week 6:][null]
+
+---
+
+#### [Map Algebra and Writing Raster Data][null]
+
+1. **Numeric**
+ - (**Numpy** is better, but here we firstly see some numeric)
+```
+import Numeric # python doesn't offer this module now
+x = Numeric.arange(20)
+print x  # ==> [0 1 .. 20]
+print x[10]
+Numeric.reshape(x, (2, 10))
+print x
+a, b = Numeric.array([10, 20, 30]), Numeric.array([20, 40, 60])
+print a+b
+```
+
+- **Manipulating data with Numeric**
+ - Say we want to compute [**NDVI**](http://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index) on raster.img
+`NDVI = (NIR - RED) / (NIR + RED)`, NIR(band3), RED(band2)
+ * Attention: "**Division by Zero Error**"
+```
+data2 = band2.ReadAsArray(0, 0, cols, rows).astype(Numeric.Float16)
+data3 = band3.ReadAsArray(0, 0, cols, rows).astype(Numeric.Float16)
+mask = Numeric.greater(data3 + data2, 0) # not 0
+ndvi = Numeric.choose(mask, (-99, (data3 - data2) / (data3 + data2)))
+```
+
+- **Creating a New Dataset**
+ ```
+driver = inDataset.GetDriver()
+outDataset = driver.Create(filename, cols, rows, 1, GDT_Float32)
+# Space on disk is allocated immediately
+```
+
+- **Georeferencing a new data set**
+```
+geoTransform = inDataset.GetGeoTransform()
+outDataset.SetGeoTransform(geoTransform )
+proj = inDataset.GetProjection()
+outDataset.SetProjection(proj)
+```
+
+- **Writing to a raster data set**
+```
+outBand = outDataset.GetRasterBand(1)
+outBand.WriteArray(ndvi, 0, 0) # WriteArray(array, xoff, yoff)
+```
+
+- **Reading & writing by block**
+```
+blockSize = 64
+for i in range(0, rows, blockSize):
+       if i + blockSize < rows:
+             numRows = blockSize
+       else:
+             numRows = rows – i
+       for j in range(0, cols, blockSize):
+             if j + blockSize < cols:
+                  numCols = blockSize
+             else:
+                  numCols = cols – j
+       data = band.ReadAsArray(j, i, numCols, numRows)
+       # do calculations here to create outData array
+       outBand.WriteArray(outData, j, i)
+```
+
+- **Setting histogram**
+ - So the ArcGIS will display the Image correctly
+Do it **AFTER** done writing to the image
+**`histogram: [min, max, bins, list of counts]`** is a list
+**`SetDefaultHistogram(min, max, counts)`**
+ - Code:
+```
+outBand.SetNoDataValue(-99)
+histogram = outBand.GetDefaultHistogram()
+outBand.SetDefaultHistogram(histogram[0], histogram[1], histogram[3])
+```
+
+- **Building pyramids**
+ - Do this **AFTER** setting the **histogram**
+Force Imagine-style pyramid file (.rrd)
+ - Code:
+```
+gdal.SetConfigOption('HFA_USE_RRD', 'YES')
+# not sure what the optimal overview list is
+outDataset.BuildOverviews ( overviewlist=[3, 9, 27, 81, 243, 729] )
+```
+
+- **Different extents**
+ - What if we need to do map algebra on two images
+   **with different extents**?
+```
+1.. Find overlapping extents
+2.. Just read data in for the overlapping areas
+3.. When creating the output, make sure you
+           1. set the correct rows and columns and that
+           2. the geotransform reflects the correct origin
+4.. Make an appropriate decision for dealing with cells that don't line up
+```
+
+- **Different cell sizes**
+ - **Harder** than different extents
+Could use a utility to **resample** images
+so they do all have the same cell size
+(we'll talk about some of these on the last day)
+ - Could **choose an output cell size and use input images as they are**, but how to decide which value to use for images with smaller cells?
+
+- [**Mosaicing**](http://dict.youdao.com/search?q=Mosaicing&keyfrom=dict.index)
+
+- **Homework**
+
+- **My Problem:**
+> [os6_hw.py](http://www.gis.usu.edu/~chrisg/python/2008/os6_hw.py) doesn't work, for I don't have "Numeric" module, I have "Numpy" but don't know how to modify...
+
+---
+
+## [Week 7:][null]
+
+---
+### [More Raster Processing][null]
+
+1. **Projecting rasters**
+ - WKT for input / output projections
+```
+gdal.CreateAndReprojectImage( <source_dataset>, <output_filename>,
+                                   src_wkt = <source_wkt>,
+                                   dst_wkt = <output_wkt>,
+                                   dst_driver = <Driver>,
+                                   eResampleAlg = <GDALResampleAlg>)
+```
+ - Code:
+```
+import gdal, osr
+from gdalconst import *
+inFn = 'd:/data/classes/python/data/aster.img'
+outFn = 'd:/data/classes/python/data/aster_geo.img'
+driver = gdal.GetDriverByName('HFA')
+driver.Register()
+# input WKT
+inDs = gdal.Open(inFn)
+inWkt = inDs.GetProjection()
+# output WKT
+outSr = osr.SpatialReference()
+outSr.ImportFromEPSG(4326)
+outWkt = outSr.ExportToWkt()
+# reproject
+gdal.CreateAndReprojectImage(inDs, outFn, src_wkt=inWkt, dst_wkt=outWkt, dst_driver=driver, eResampleAlg=GRA_Bilinear)
+inDs = None
+```
+- **DOCELL**
+ - An AML DOCELL loop processes each cell in a grid individually
+ - Can loop through each cell with Numeric but it's really slow
+ - Fortunately, there are other (better) ways...
+    - Simple model using a DEM,
+elevation > 2500 = 1
+elevation < 2500 = 0
+```
+import gdal, Numeric, sys, time, utils
+inFn = 'd:/data/demtest/41111f6.img'
+outFn1 = 'd:/data/classes/python/data/dem1a.img'
+outFn2 = 'd:/data/classes/python/data/dem2a.img'
+driver = gdal.GetDriverByName('HFA')
+driver.Register()
+inDs = gdal.Open(inFn)
+inBand = inDs.GetRasterBand(1)
+rows = inDs.RasterYSize
+cols = inDs.RasterXSize
+start = time.time()
+# specific processing here, outData
+end = time.time()
+# outFn changes and print statement at end, but
+# everything else is the same for all methods
+outDs = driver.Create(outFn1, cols, rows, 1, inBand.DataType)
+outDs.SetGeoTransform ( inDs.GetGeoTransform() )
+outDs.SetProjection ( inDs.GetProjection() )
+outBand = outDs.GetRasterBand(1)
+outBand.WriteArray(outData, 0, 0)
+outDs = None
+print 'Method 1 took', end - start, 'seconds to process'
+```
+       - Method 1 - **looping through cell-by-cell**
+```
+# method 1 – looping through cell-by-cell
+start = time.time()
+outData = Numeric.zeros((rows, cols))
+for y in range(rows):
+             for x in range(cols):
+                  if inData[y, x] > 2500:
+                         outData[y, x] = 1
+                  else:
+                         outData[y, x] = 0
+end = time.time()
+# Method 1 took 28.36 seconds to process
+```
+       - Method 2 - **using Numeric.greater()**
+```
+# method 2 – using Numeric.greater()
+start = time.time()
+outData = Numeric.greater(inData, 2500)
+end = time.time()
+# Method 2 took 0.14 seconds to process
+```
+    - Take home message:
+> Built-in functions are **MUCH** faster
+than looping through cells
+
+3. **Moving windows (neighborhoods)**
+ - ![](http://timge4.126.net/image?w=440&url=http%3A%2F%2F126.fm%2F3tk5sT&gif=0&quality=85)
+ - Code:
+```
+import gdal, Numeric, sys, time
+inFn = 'd:/data/classes/python/data/smallaster.img'
+outFn = '...' # different for each one
+driver = gdal.GetDriverByName('HFA')
+driver.Register()
+inDs = gdal.Open(inFn)
+cols = inDs.RasterXSize
+rows = inDs.RasterYSize
+inBand = inDs.GetRasterBand(1)
+inData = ... # different for each one
+outData = ... # different for each one
+start = time.time()
+# specific processing here
+end = time.time()
+outDs = driver.Create(outFn, cols, rows, 1, inBand.DataType)
+outDs.SetGeoTransform(inDs.GetGeoTransform())
+outDs.SetProjection(inDs.GetProjection())
+outBand = outDs.GetRasterBand(1)
+outBand.WriteArray(outData, 0, 0)
+outDs = None
+print end - start, 'seconds to process'
+```
+    - Method 1
+```
+# truncating the output values using "neighborhood notation" – 44.3 seconds
+# must cast input up to int or else calculations get truncated to byte
+inData = inBand.ReadAsArray(0, 0, cols, rows).astype(Numeric.Int)
+outData = Numeric.zeros((rows, cols), Numeric.Int)
+start = time.time()
+for i in range(1, rows-1):
+           for j in range(1, cols-1):
+               outData[i,j] = (inData[i-1,j-1] + inData[i-1,j] + inData[i-1,j+1] + inData[i,j-1] + inData[i,j] + inData[i,j+1] + inData[i+1,j-1] + inData[i+1,j] + inData[i+1,j+1]) / 9
+end = time.time()
+```
+    - Method 2
+```
+# explicitly rounding the output values using "neighborhood notation" – 50.9 seconds
+# can use Int or Float for inData & outData
+inData = inBand.ReadAsArray(0, 0, cols, rows).astype(Numeric.Int)
+outData = Numeric.zeros((rows, cols), Numeric.Int)
+start = time.time()
+for i in range(1, rows-1):
+           for j in range(1, cols-1):
+               outData[i,j] = round((inData[i-1,j-1] + inData[i-1,j] + inData[i-1,j+1] + inData[i,j-1] + inData[i,j] + inData[i,j+1] + inData[i+1,j-1] + inData[i+1,j] + inData[i+1,j+1]) / 9.0)
+end = time.time()
+```
+    - Method 3
+```
+# implicitly rounding the output values using "neighborhood notation" – 47.4 seconds
+# gets rounded when written to byte output dataset
+# must be float to get the rounding
+inData = inBand.ReadAsArray(0, 0, cols, rows).astype(Numeric.Float)
+outData = Numeric.zeros((rows, cols), Numeric.Float)
+start = time.time()
+for i in range(1, rows-1):
+           for j in range(1, cols-1):
+               outData[i,j] = (inData[i-1,j-1] + inData[i-1,j] + inData[i-1,j+1] + inData[i,j-1] + inData[i,j] + inData[i,j+1] + inData[i+1,j-1] + inData[i+1,j] + inData[i+1,j+1]) / 9.0
+end = time.time()
+```
+    - Method 4
+```
+# truncating the output values using "matrix notation" – 0.6 seconds
+inData = inBand.ReadAsArray(0, 0, cols, rows).astype(Numeric.Int)
+outData = Numeric.zeros((rows, cols), Numeric.Int)
+start = time.time()
+outData[1:rows-1, 1:cols-1] = (inData[0:rows-2, 0:cols-2] + inData[0:rows-2, 1:cols-1] + inData[0:rows-2, 2:cols] + inData[1:rows-1, 0:cols-2] + inData[1:rows-1, 1:cols-1] + inData[1:rows-1, 2:cols] + inData[2:rows, 0:cols-2] + inData[2:rows,1:cols-1] + inData[2:rows,2:cols]) / 9
+end = time.time()
+```
+    - Method 5
+```
+# explicitly rounding the output values using "matrix notation" – 3.6 seconds
+inData = inBand.ReadAsArray(0, 0, cols, rows).astype(Numeric.Int)
+outData = Numeric.zeros((rows, cols), Numeric.Float)
+start = time.time()
+outData[1:rows-1, 1:cols-1] = Numeric.around((inData[0:rows-2, 0:cols-2] + inData[0:rows-2, 1:cols-1] + inData[0:rows-2, 2:cols] + inData[1:rows-1, 0:cols-2] + inData[1:rows-1, 1:cols-1] + inData[1:rows-1, 2:cols] + inData[2:rows, 0:cols-2] + inData[2:rows,1:cols-1] + inData[2:rows,2:cols]) / 9)
+end = time.time()
+```
+     - Method 6
+```
+# implicitly rounding the output values using "matrix notation" – 2.1 seconds
+# gets rounded when written to byte output dataset
+inData = inBand.ReadAsArray(0, 0, cols, rows).astype(Numeric.Float)
+outData = Numeric.zeros((rows, cols), Numeric.Float)
+start = time.time()
+outData[1:rows-1, 1:cols-1] = (inData[0:rows-2, 0:cols-2] + inData[0:rows-2, 1:cols-1] + inData[0:rows-2, 2:cols] + inData[1:rows-1, 0:cols-2] + inData[1:rows-1, 1:cols-1] + inData[1:rows-1, 2:cols] + inData[2:rows, 0:cols-2] + inData[2:rows,1:cols-1] + inData[2:rows,2:cols]) / 9
+end = time.time()
+```
+   - **So what is "matrix notation"?**
+    - Obviously much faster than "_neighborhood notation_"
+    - Basically **slicing** and **shifting** arrays
+    - Output and all input array slices MUST be the **same dimensions**
+    - Output array cannot be a **smaller data type** than any of the input arrays
+
+- **Neighborhood by blocks**
+ - Too hard to understand, leave for tomorrow
+
+
+---
+
+## [Week 8:][null]
+
+---
+### [Misc Stuff][null]
+
+1. **Random Python stuff**
+ - To really delete a feature from a shapefile
+```
+layer.DeleteFeature(fid)
+datasource.ExecuteSQL('REPACK ' + layer.GetName())
+```
+ - To print something **immediately**
+instead of waiting until the program is done:
+```
+print 'stuff'
+sys.stdout.flush()
+```
+
+- **GDAL & OGR utilities**
+ - Installed with FWTools and available from the FWTools Shell
+`for me, it's zsh shell, all ogr utilities and some gdal utilities`
+ - Full documentation available at:
+[OGR utilities](http://www.gdal.org/ogr_utilities.html)
+[GDAL utilities](http://www.gdal.org/gdal_utilities.html)
+ - Utilities usage:
+   - ogrinfo
+```
+ogrinfo sites.shp
+ogrinfo sites.shp sites
+ogrinfo –al sites.shp
+ogrinfo sites.shp -al -so -spat 46000 4590000 490000 4600000
+```
+   - ogr2ogr
+```
+# Converts from one data type to another
+# Converts shapefile to KML
+ogr2ogr -f KML -dsco NameField=Name counties.kml ut_counties.shp
+# Convert a KML file to a shapefile and reproject
+ogr2ogr -f "ESRI Shapefile" -s_srs "EPSG:4326" -t_srs "EPSG:26912" counties_utm.shp counties.kml
+# Copy just a subset of fields with –select
+ogr2ogr -f KML -select name,state_name counties1.kml ut_counties.shp
+# Can use some of the same switches as with ogrinfo, like
+# Limit by attribute with –where
+# Limit by spatial extent with –spat
+# Use –append to append to an existing file
+```
+   - gdalinfo
+```
+# Prints info about a raster data set
+gdalinfo raster.img
+# See the documentation for ways to suppress some of the info
+```
+   - gdal_translate
+```
+# Convert from one data type to another
+# Convert to full-sized jpg
+gdal_translate -of jpeg aster.img aster1.jpg
+# Make a much smaller jpg
+gdal_translate -of jpeg -outsize 10% 10% aster.img aster2.jpg
+# Only use the first band in the image
+gdal_translate -of jpeg -outsize 10% 10% -b 1 aster.img aster3.jpg
+# Re-order the bands
+gdal_translate -of jpeg -outsize 10% 10% -b 3 -b 2 -b 1 aster.img aster4.jpg
+# Subset the image
+gdal_translate -of jpeg -projwin 458000 4658000 483000 4631000 aster.img aster5.jpg
+```
+   - gdaladdo
+```
+# Build overviews (pyramids) for an image
+# To build Imagine-style pyramids:
+gdal_translate -of hfa -projwin 458000 4658000 483000 4631000 aster.img astersub.img
+gdaladdo --config HFA_USE_RRD YES astersub.img 3 9 27 81
+```
+   - gdalwarp
+```
+# Reproject images
+gdalwarp -of hfa -t_srs EPSG:4326 -r bilinear aster.img aster_geo.img
+```
+   - gdal_merge.py
+```
+# Python script to mosaic images
+# Only works with some output formats (not jpeg or png, for example)
+gdal_merge.py -o mosaic1.tif -of gtiff -co tfw=yes q0519ne.jpg q0520nw.jpg
+# Mosaic and subset at the same time
+gdal_merge.py -o mosaic2.tif -of gtiff -co tfw=yes -ul_lr 424600 4622700 430000 4620000 q0519ne.jpg q0520nw.jpg
+# Make a reduced resolution mosaic
+gdal_merge.py -o mosaic3.tif -of gtiff -co tfw=yes -ps 100 100 q0519ne.jpg q0520nw.jpg
+# Mosaic lots of files at once
+gdal_merge -o mosaic4.tif -of gtiff -co tfw=yes -ps 100 100 --optfile files.txt
+# where files.txt has filenames, one per line, like: q2.jpg \n q3.jpg \n etc
+```
+
+- **Calling other programs from Python**
+ - os.system(<command_string>)
+```
+import os
+os.system('gdaladdo --config HFA_USE_RRD YES q0520nw.img 3 9 27 81')
+# Batching it:
+import glob, os
+for fn in glob.glob('d:/data/*.img'):
+        os.system('gdaladdo --config HFA_USE_RRD YES ' + fn + ' 3 9 27 81')
+# Open ArcMap and wait for it to close (use / or \\ for directory separators)
+os.system('C:/Bin/ArcMap.exe')
+os.spawnl(os.P_WAIT, 'C:/Bin/ArcMap.exe')
+# Open ArcMap and let Python continue on its way
+os.spawnl(os.P_NOWAIT, 'C:/Bin/ArcMap.exe')
+# Open all .py files in a directory with Crimson Editor (use Windows notation \ for passed arguments)
+os.spawnl(os.P_NOWAIT, 'C:/Crimson Editor/cedt.exe', 'cedt.exe', 'd:\data\classes\python\os8\*.py')
+```
+ - **Open Files**
+   - Windows only
+   - The file extension must have an associated application
+   - Python has no idea what you do with the file once it's open
+`os.startfile('test.doc')`
+
+- **Using GDAL & OGR with ArcGIS**
+ - Need to install GDAL, Numeric, etc for the ArcGIS version of Python (see the installation instructions from the first day)
+ - Can import arcgisscripting , gdal, ogr, Numeric, etc all in the same python script
+ - I tried using the script's output as an input to another tool in a model, and ArcGIS died a horrible death (without even trying to run the script! – when the user chooses the input and output files)
+ - What I learned after wasting many hours trying to make this work: Mixing gdal and arcgisscripting is fine, but avoid ArcMap
+
+### [That's it, folks!][null]
+
+[null]: file:///
+
+---
+~~~
+log: $1. Finished at 01:50:08, Saturday, February 08 2014; $2. modified a lot. Friday, February 28 2014; $3. Sunday, January 04 2015;
+~~~
+
+
+
+- [**Improv Wisdom: Don't Prepare, Just Show Up**](http://book.douban.com/subject/2887103/)
+
+---
+### [TOC]()
+- prologue
+- the first maxim: **say yes**
+- the second maxim: **don't prepare**
+- the third maxim: **just show up**
+- the fourth maxim: **start anywhere**
+- the fifth maxim: **be average**
+- the sixth maxim: **pay attention**
+- the seventh maxim: **face the facts**
+- the eighth maxim: **stay on course**
+- the ninth maxim: **wake up to the gifts**
+- the tenth maxim: **make mistakes, please**
+- the eleventh maxim: **act now**
+- the twelfth maxim: **take care of each other**
+- the thirteen maxim: **enjoy the ride epilogue**
+
+---
+~~~
+                                  Run, Forest, Run
+~~~
+
+## [prologue]()
+1. The older Days
+ - 11 years old, got one **"paint-by-numbers kit"**, then "Patsy(author) is an artist".
+ - I found the way to live: always go by the rules, use the recipe, follow the pattern, rehearse the script, copy the masters, etc. Be short, follow the lines in everything.
+
+- Painting outside the lines
+ - As improvisers we discover that we don't need this unrealistic guarantee to begin. The only real failure is not doing anything. Why not explore, get moving on your life, **kick-start your dreams, paint outside thi lines?**
+- The Improvisers's World
+ - secret society: "the improv world", they are **can-do** people, they **improvise**.
+- The First Improvisers
+ - Improvising can give us a taste of the **primal freedom** that our early ancestors experienced before they turned their attention to planning; it is an exhilarating way to live.
+- Not Everything is Funny
+ - Improvisation is not the study of comedy.
+ - An excellent manual on swimming is useless until you jump into the pool.
+ - My aim is to **nudge** out of your comfortable poolside chair, guide you to climb onte the high board, and cheer you on as you dive into to the clear, crystal water.
+- When Not to Improvise
+ - Don't over acting, it's a tool should always be put into service with a healthy dose of common sense.
+ - A successful life involves both planning and improvising.
+ - "going with the flow" ?
+"Pisces Mortui Solum Cum Flumine Natant". (Only the dead fish go with the flow")
+
+---
+###### the first maxim:
+## [say yes]()
+1. ...yes I said yes I will Yes.  -- James Joyce, _Ulysses_
+ - crazy to "yes" to everything,
+ - Saying yes (and follow through with support) prevent you from committing a cardinal sin - blocking.
+ - As we practice this affirmative response to life, positive things can happen.
+ - Try this: for one day say yes to everything. Set your own preferences aside. See what's gonna happen
+- Inventing Proverbs
+ - "Try ... not ... to ... laugh ... when ... you ... look ... at ... your ... waistline."
+Yes, yes, yes, yes, yes, yes!
+- Exercise the yes muscle. This builds optimism and hope.
+
+---
+###### the second maxim:
+## [don't prepare]()
+1. Empty yourself of everything. -- Lao Tse, _Tao Te Ching_
+ - We often substitude planning, ruminating, or list-making for actually doing something about our dreams.
+ - Instead of preparing an outcome, ready yourself, for whatever may come.
+ - Substitute attention for preparation. Then you will be working in real time.
+- Try this:
+ - speand a day without plan, have an adventure.
+ - Substitute Zen-like attention for planning.
+ - Relax
+- Coping with Fear
+ - Performance anxiety comes from excessive self-focus. "Everyone is looking at me, I'm not good enough..."
+ - Not a big deal.
+
+---
+#### the third maxim:
+## [just show up]()
+1. Stop talking. Start walking. -- L.M. _Heroux_
+ - Just show up
+ - Shit off **procrastination**, **laziness**, **fears**.
+ - Kick-start your life - walk, run, crawl, flaw, bicycle.
+- Using Rituals
+ - create a simple ritual
+ - think of what will make the habit easy or more attractive to do.
+ - Set a time to do the preparatory ritual each day
+ - Focus on doing it faithfully.
+- Showing Up for others
+- Changing Location
+ - e.g. eat at different places. make a change
+ - Walk, run, bike, skip to the places that you need to be.
+ - Motivation is not a prerequisite for showing up.
+
+
+
+- the fourth maxim: start anywhere
+- the fifth maxim: be average
+- the sixth maxim: pay attention
+- the seventh maxim: face the facts
+- the eighth maxim: stay on course
+- the ninth maxim: wake up to the gifts
+- the tenth maxim: make mistakes, please
+- the eleventh maxim: act now
+- the twelfth maxim: take care of each other
+- the thirteen maxim: enjoy the ride epilogue
+
+
+
+---
+~~~
+log: $1. created at 23:44:08, Wednesday, February 26 2014;
+~~~
+
+- [Xah Emacs Lisp Tutorial][xah_lisp]
+
+[xah_lisp]: http://ergoemacs.org/emacs/elisp.html
+
+
+
+
+
+
+
+---
+#### [ELisp Basics][elisp_basic]
+
+```
+message, nil, integerp, equal, string-equal, setq, if, let, progn, while, interactive
+
+(print (format "yay %d" x))
+(defun fun_name (params) "msg" body)
+```
+
+[elisp_basic]: http://ergoemacs.org/emacs/elisp_basics.html
+
+
+
+
+
+
+
+
+---
+#### [Overview of Text-Processing in Emacs Lisp][overview]
+
+```
+point
+point-{min, max}
+line-{beginning, end}-position
+region-{beginning, end}
+{goto, forward, backward}-char
+delete-{char, region}
+insert
+
+```
+
+[overview]: http://ergoemacs.org/emacs/elisp_editing_basics.html
+
+
+
+
+
+
+
+---
+#### [Emacs Lisp Examples][emacs-lisp-examples]
+
+1. [How to Write a Emacs Major Mode for Syntax Coloring][highlight]
+
+[emacs-lisp-examples]: http://ergoemacs.org/emacs/elisp_examples.html
+[highlight]: http://ergoemacs.org/emacs/elisp_syntax_coloring.html
+
+
+
+
+
+
+
+
+---
+#### [How to Evaluate Emacs Lisp Code][evaluate-emacs]
+
+
+[evaluate-emacs]: http://ergoemacs.org/emacs/elisp_eval_lisp_code.html
+
+- [Inkscape  Official Tutorials](http://www.inkscape.org/en/learn/tutorials/)
+
+
+
+
+---
+### TOC
+
+-  Basic tutorial
+-  Advanced tutorial
+-  Shapes tutorial
+-  Bitmap tracing tutorial
+-  Calligraphy tutorial
+-  Elements of Design tutorial
+-  Tips and tricks
+-  Interpolate
+
+
+
+
+
+---
+###  [Basic tutorial][basic]
+- The Basic Tutorial covers
+ - **canvas navigation**,
+ - **managing documents**,
+ - **shape tool basics**,
+ - **selection techniques**,
+ - **transforming objects with selector**,
+ - **grouping**,
+ - **setting fill and stroke**,
+ - **alignment**, and
+ - **z-order**.
+
+
+
+
+
+---
+### [Advanced tutorial][advanced]
+- This tutorial covers
+ - **copy/paste**,
+ - **node editing**,
+ - **freehand** and
+ - **bezier drawing**,
+ - **path manipulation**,
+ - [**booleans**][bool],
+ - **offsets**,
+ - [**simplification**][simpli], and
+ - **text tool**
+ - The **ultimate power tool** of Inkscape is the **`XML editor`**
+
+
+
+
+
+---
+### [Shapes tutorial][shapes]
+
+1. **Rectangle**: `F4`
+![](http://inkscape.org/design/doc/shapes/shapes-f08-en.svg.png)
+
+- **Ellipse**: `F5`
+![](http://inkscape.org/design/doc/shapes/shapes-f11-en.svg.png)
+
+- **Star**
+![](http://inkscape.org/design/doc/shapes/shapes-f14-en.svg.png)
+![](http://inkscape.org/design/doc/shapes/shapes-f16-en.svg.png)
+
+- **Spiral**
+![](http://inkscape.org/design/doc/shapes/shapes-f22-en.svg.png)
+
+- **Conclusion**
+Inkscape's shape tools are very powerful. **Learn their tricks** and **play with them at your leisure** — **this will pay off** when you do your design work, because using shapes instead of simple paths often makes vector art faster to create and easier to modify.
+
+
+
+
+
+---
+### [Bitmap tracing tutorial][tracing]
+
+1. **Brightness Threshold**
+![](http://inkscape.org/design/doc/tracing/tracing-f02-en.svg.png)
+
+- **Optimal Edge Detection**
+![](http://inkscape.org/design/doc/tracing/tracing-f03-en.svg.png)
+
+- **Color Quantization**
+![](http://inkscape.org/design/doc/tracing/tracing-f04-en.svg.png)
+
+- **After tracing, we Simplify**
+![](http://inkscape.org/design/doc/tracing/tracing-f06-en.svg.png)
+
+
+
+
+
+---
+### [Calligraphy(书法) tutorial][caligraphy]
+1. There are **three main styles** of calligraphy:
+ - Western or Roman
+ - Arabic
+ - Chinese or Oriental
+This tutorial focuses mainly on **Western calligraphy**, as the other two styles tend to use a brush (instead of **a pen with nib**), which is not how our Calligraphy tool currently functions.
+
+- **Angle & Fixation**
+ - fixed angle
+![][angle]
+
+ - fixed angle
+![][fixation]
+
+- **Tremor**
+![][tremor]
+
+- **Wiggle & Mass**
+ - [example][inkscape]
+
+- **Conclusion**
+Calligraphy is **not only fun**; it's a deeply **spiritual art** that may transform your outlook on everything you do and see. Inkscape's calligraphy tool can only serve as a modest introduction. And yet it is very nice to play with and may be useful in real design. Enjoy!
+
+
+
+
+
+
+---
+### [Elements of Design tutorial][elements]
+1. **Overview**
+![][elems]
+
+- **Elements of Design**
+ - [**Line**][line], [**Shape**][shape],  [**Size**][size],  [**Space**][space],  [**Color**][color], [**Texture**][texture], [**Value**][value]
+
+- **Principles of Design**
+ - [**Balance**][balance], [**Contrast**][contrast], [**Emphasis**][emphasis], [**Proportion**][proportion], [**Pattern**][pattern], [**Gradation**][gradation]
+
+- **Composition: make them together**
+![][composition]
+
+
+
+
+
+---
+### [Tips and tricks][tipstricks]
+
+
+
+
+---
+### [Interpolate][interpolate]
+
+
+
+[basic]: http://inkscape.org/doc/basic/tutorial-basic.html
+[shapes]: http://inkscape.org/doc/shapes/tutorial-shapes.html
+[advanced]: http://inkscape.org/doc/advanced/tutorial-advanced.html
+[tracing]: http://inkscape.org/doc/tracing/tutorial-tracing.html
+[caligraphy]: http://inkscape.org/doc/calligraphy/tutorial-calligraphy.html
+[elements]: http://inkscape.org/doc/elements/tutorial-elements.html
+[tipstricks]: http://inkscape.org/doc/tips/tutorial-tips.html
+[interpolate]: http://inkscape.org/doc/interpolate/tutorial-interpolate.html
+
+
+[bool]: http://inkscape.org/design/doc/advanced/advanced-f08-en.svg.png
+[simpli]: http://inkscape.org/design/doc/advanced/advanced-f13-en.svg.png
+[angle]: http://inkscape.org/design/doc/calligraphy/calligraphy-f04-en.svg.png
+[fixation]: http://inkscape.org/design/doc/calligraphy/calligraphy-f06-en.svg.png
+[tremor]: http://inkscape.org/design/doc/calligraphy/calligraphy-f07-en.svg.png
+[inkscape]: http://inkscape.org/design/doc/calligraphy/calligraphy-f10-en.svg.png
+[elems]: http://inkscape.org/design/doc/elements/elements-f01-en.svg.png
+[line]: http://inkscape.org/design/doc/elements/elements-f02-en.svg.png
+[shape]: http://inkscape.org/design/doc/elements/elements-f03-en.svg.png
+[size]: http://inkscape.org/design/doc/elements/elements-f04-en.svg.png
+[space]: http://inkscape.org/design/doc/elements/elements-f05-en.svg.png
+[color]: http://inkscape.org/design/doc/elements/elements-f06-en.svg.png
+[texture]: http://inkscape.org/design/doc/elements/elements-f07-en.svg.png
+[value]: http://inkscape.org/design/doc/elements/elements-f08-en.svg.png
+[balance]: http://inkscape.org/design/doc/elements/elements-f09-en.svg.png
+[contrast]: http://inkscape.org/design/doc/elements/elements-f10-en.svg.png
+[emphasis]: http://inkscape.org/design/doc/elements/elements-f11-en.svg.png
+[proportion]: http://inkscape.org/design/doc/elements/elements-f12-en.svg.png
+[pattern]: http://inkscape.org/design/doc/elements/elements-f13-en.svg.png
+[gradation]: http://inkscape.org/design/doc/elements/elements-f14-en.svg.png
+[composition]: http://inkscape.org/design/doc/elements/elements-f15-en.svg.png
+
+
+
+
+---
+~~~
+log: $1. created long time ago, now is Fri Apr 11 16:45:34 CST 2014;
+~~~
+
+
+
+---
+### Refs
+- [Learning IPython for Interactive Computing and Data Visualization][ipython_for_something]
+
+[ipython_for_something]: http://book.douban.com/subject/24525190/
+
+
+
+
+
+
+
+
+
+
+---
+### TOC
+- Preface
+- §1. Getting Started with IPython
+- §2. Interactive Work with IPython
+- §3. Numeric Computing with IPython
+- §4. Interactive Plotting and Graphical Interfaces
+- §5. High-Performance and Parallel Computing
+- §6. Customizing IPython
+
+
+
+
+
+
+
+
+
+---
+#### [Preface]()
+1. **Get the example code**
+ - Download from [**Packt Publishing**][packet_pub]
+ - Or, my archive: [**Learning ... Visualization.zip**][my_archive]
+
+[packet_pub]: http://www.packtpub.com/learning-ipython-for-interactive-computing-and-data-visualization/book
+[my_archive]: http://gnat-tang-archive.qiniudn.com/file_Learning%20IPython%20for%20Interactive%20Computing%20and%20Data%20Visualization.zip
+
+
+
+
+
+
+---
+#### [§1. Getting Started with IPython]()
+1. **Packages** (check all in one site: [PyPI - Python Package Index][py_pk_index])
+ - IPython
+ - Numpy
+ - SciPy
+ - Matplotlib
+ - Matplotlib-basemap
+ - NetworkX
+ - Pandas
+ - [PIL - _Python Image Library_][pil]
+ - PySide (Python wrapper around Qt)
+ - PyQt(similar to PySide but with a different license)
+ - Cython( for using c code in python)
+
+- **Getting binary installers**
+ - Windows
+ - OS X
+ - Linux
+   - Debian: `sudo apt-get install ipython-notebook`
+   - Fedora: `sudo yum install python-ipython-notebook`
+   - Using the Python packaging system:
+`easy_install ipython` # will be replaced by `pip` someday
+`pip install ipython` # recommended
+
+- **Optional dependencies for IPython**
+ - **pyreadline**: line-editing
+ - **pyzmq**: needed for IPython's parallel computing features, such as
+Qt console and Notebook
+ - **pygments**: highlight syntax in Qt console
+ - **tornado**: required by web-based notebook
+```
+# all in all:
+easy_install ipython[zmq,qtconsole,notebook]
+```
+
+- **Installing the development versions(for experienced users)**
+```
+git clone https://github.com/ipython/ipython.git
+cd ipython
+python setu.py install # or: python setupegg.py develop
+```
+
+- **Ten IPython essentials**
+ - **Running the IPython console**: `ipython`
+`%pinfo supper`, or `pinfo supper`, or `supper?`: "object supper not found"
+appending `?` or `??` to get information about var
+ - **Using IPython as a system shell**
+ Ipython magic commands: with prefix `%`(can be omitted)
+ - **Using the history**
+recent past output: `_`, then `__`, then `___`, that's all.
+recent past input: `_i`, then `_ii`, then `_iii`, that's all.
+ - **Tab completion**
+ - **Executing a script with the `%run` command**
+ - Quick **benchmarking** with the `%timeit` command
+```
+%timeit [x*x for x in range(100000)]
+# output: 100 loops, best of 3: 6.33 ms per loop
+```
+ - Quick **debugging** with the `%debug` command
+and: `%pdb` magic command to activate the automatic execution of the
+IPython debugger as soon as an exception is raised.
+ - **Interactive computing with Pylab**
+```
+%pylab # then we entered pylab session
+x = linspace(-10., 10., 1000)
+plot(x, sin(x)) # tah~
+```
+ - **Using the IPython Notebook**
+```
+ipython notebook # run it in shell
+# then go to 127.0.0.1:8080 in your browser
+```
+ - **Customizing IPython**
+```
+ipython profile create # run it in a shell
+# output: [ProfileCreate] Generating default config file: u'/root/.config/ipython/profile_default/ipython_config.py'
+#         [ProfileCreate] Generating default config file: u'/root/.config/ipython/profile_default/ipython_notebook_config.py'
+```
+
+- **Summary**
+
+[py_pk_index]: http://pypi.python.com
+[pil]: http://pythonware.com/products/pil
+
+
+
+
+
+
+
+
+
+---
+#### §2. Interactive Work with IPython
+1. **The extended shell: iPython**
+
+- **Navigating through the filesystem**
+```
+import urllib2, zipfile
+url = 'http://ipython.rossant.net/'
+filename = 'facebook.zip'
+downloaded = urllib2.urlopen(url + filename)
+folder = 'data'
+mkdir $folder
+cd $folder # in memory, not in filesystem
+with open(filename, 'wb') as f:
+      f.write(downloaded.read())
+with zipfile.ZipFile(filename) as zip:
+      zip.extractall('.')
+cd facebook
+```
+```
+%bookmark fbdata
+%cd fbdata
+```
+
+- **Accessing the system shell from IPython**
+```
+files = !ls -a -f | grep '.py'
+!head -n 5 {files[0]}
+path = !echo '$PATH'
+path = !echo "$PATH"
+%alias largest ls -1sSh | grep %s
+```
+
+- **The extended Python console**
+ - some features like in shell:
+   - `Ctrl + R`: reverse-i-search
+   - `%hist` or `%history`
+```
+%hist 4-6 8`
+%hist -nop # -n, line num; -o, output; -p, prompt; -g, grep
+```
+
+- **Import/export of Python code**
+ - import: `%run test.py params`
+ - export: `%edit`, open and edit, close it and then run it automaticaly
+
+- **Dynamic [introspection][introspection]**
+ - Tab completion
+ - Source Code introspection
+```
+%pfile python_file # like an python file viewer
+%psource # check source code, `%psource pinfo`
+%pdef psource # => psource(self, parameter_s='', namespaces=None)
+%pdoc # Print the docstring for an object.
+```
+
+- **Using the interactive debugger**(p.32, leave for later reading)
+ - Interactive benchmarking and profiling
+   - Controlling the execution time of a command
+   - Profiling a script
+
+- **Using the IPython notebook**
+ - frontend offer us: **powerful HTML UI** && **JSON**
+(alternative(not recommanded): [**qtconsole**][qtconsole])
+ - Installation: use `pip` or `easy-install`
+ - **The Notebook Dashboard**
+   - run `ipython notebook` in console
+   - go [http://127.0.0.1:8888/](http://127.0.0.1:8888/)
+   - WebSocket protocol is necessary for notebook to work
+   - Online notebooks viewer: [nbviewer][nbviewer]
+ - Working with cells
+```
+Cntl + Enter
+Shift + Enter
+Cntl + M
+```
+ - Cell magics
+```
+%% instead of %
+%%file Desktop/file.txt # create a file named "file.txt"
+%lsmagic # list all magic commands (line magics and cell magics)
+```
+ - Managing notebooks
+```
+Cntl + S to save
+rename
+```
+ - Multimedia and rich text editing (markdown, etc)
+[我的 Markdown 简明教程][markdown_tutorial]
+ - Graph plotting
+
+- **Summary**
+
+[qtconsole]: http://ipython.org/ipython-doc/dev/interactive/qtconsole.html
+[nbviewer]: http://nbviewer.ipython.org/
+[markdown_tutorial]: http://jianshu.io/p/7bd23251da0a
+
+
+
+
+
+
+
+
+---
+#### §3. Numeric Computing with IPython
+> before we start this chapter:
+1. run `ipython notebook` in console
+2. Go to [http://127.0.0.1:8888/](http://127.0.0.1:8888/)
+3. Import notebook: `Leaing_IPython/Chapter 03/9932_03_{01,02,03}.ipynb`
+See how to do it, [Pic 01](http://gnat-tang-shared-image.qiniudn.com/qiniu-ipython_1.png), [Pic 02](http://gnat-tang-shared-image.qiniudn.com/qiniu-ipython_2.png) (my screenshots)
+
+1. Code 1
+```
+x = array([1, 2, 3])
+x.shape
+x.dtype # => dtype('int32')
+x = array([1, 2, 3], dtype=float64)
+y = np.fromstring('1 2 5 10', dtype=int, sep=' ')
+In[10]: print "good" # => good
+In[11]: exec In[10] # => good
+```
+`Blaze = Numpy + Pandas + SciPy + Numba + Theano`
+
+
+
+
+
+
+
+---
+§4. Interactive Plotting and Graphical Interfaces
+§5. High-Performance and Parallel Computing
+§6. Customizing IPython
+
+
+
+
+
+
+
+---
+~~~
+log: $1. created long time ago, Friday, March 07 2014; $2. added something, Friday, March 07 2014; $3. Sat Apr 12 21:08:18 CST 2014: modified;
+~~~
+
+
+[introspection]: http://dict.youdao.com/search?q=introspection&keyfrom=dict.index
+
+---
+[**Main**](http://jianshu.io/p/a160816a18b2)[** » 读书笔记**](http://jianshu.io/p/d74b041f0ceb)
+
+---
+### [Refs]()
+- [**Learning Python**](http://book.douban.com/subject/3988517/)
+
+---
+### [TOC]()
+- Part I: Getting Started
+ - §1. A Python Q&A Session
+ - §2. How Python Runs Programs
+ - §3. How You Run Programs
+- Part II: Types and Operations
+ - §4: Introducing Python Object Types
+
+---
+~~~
+                                  Run, Forest, Run
+~~~
+---
+## [Part I: Getting Started]()
+#### [§1. A Python Q&A Session]()
+1.  **Python: Object-Oriented Scripting Language**
+- What I can do with Python:
+ - System Programming;
+ - GUIs;
+ - Internet Scripting;
+ - Component Integration;
+ - Database Programming;
+ - Rapid Prototyping;
+ - Numeric and Scientific Programming;
+ - And more: Gaming, Images, Data Mining, Robots, Excel...
+- Python's Technical Strength: Object-Oriented & Functional
+- Free, portable, powerful, mixable, easy to learn.
+
+---
+#### [§2. How Python Runs Programs]()
+1. Python Interpreter
+- Program Execution
+ - Programmers' view
+  - Python's view: byte code compilation & Python Virtual Machine
+```
+Source[m.py] -> Byte Code[m.pyc] -> Runtime[PVM]
+```
+ - Performance Implications & Development Implications
+ - Execution Model Variations:
+```
+Python(CPython),         the Standard;
+Jython,		       Python for Java;
+IronPython, 	      Python for .Net;
+Stackless,	  Python for concurrency;
+PyPy, 		        Python for speed.
+```
+ - Execution Optimization Tools
+```
+Cython:             A Python / C hybrid
+Shed Skin:	      A Python-to-C++ translator
+Pysco:		      The original JIT(just-in-time) compiler
+```
+ - Frozen Binaries
+
+---
+#### [§3. How You Run Programs]()
+1. the Interactive Prompt
+- Running code interactively
+- System Command Line and Files
+           1. [A Script file] -> [Running files with command lines]
+	   2. Command-line Usage Variations: python a_file.py > save_output.txt
+     4. Unix-Style Executable Scripts: #!
+           1. Unix Script Basics:
+	         1. Their first line is special: #! (hash bang / shebang)
+		 2. They usually has executable privileges
+		 3. The Unix env Loopup trick:
+		       #!/usr/bin/env python
+		             1. avoid hardcoding the path to the Python interpreter
+			     2. by looking in all the directories listed in $PATH
+     5. Import && reload && modules and namespaces
+     6. Using exec(open('a_module.py').read()) to Run module Files
+     7. The IDLE user interface (IDLE -> IDE): idle-python2.7(python -m idlelib.idle)
+     8. Other Launch Option
+           1. Embedding Calls: in C, it's like:
+	        		#include<Python.h>
+				Py_Initialize();
+				PyRun_SimpleString("x = 'brave ' * 100");
+
+Part II: Types and Operations
+
+Chap 4: Introducing Python Object Types
+     1. The Python Conceptual Hierarchy
+           1. Programs are composed of modules
+	   2. Modules contain expression
+	   3. Statemonts contain expressions
+	   4. Expressions create and process objects
+     2. Why use built-in types?
+           1. Built-in objects make programs easy to write
+	   2. Built-in objects are components of extensions.
+	   3. Built-in objects are often more efficient than custom data structures
+	   4. Buitt-in objects are a standard part of the language
+     3. Python's Core Data Types
+     	1. Overall:
+		 Object-type				Example literals/creation
+	  	 Numbers				1573
+	   	 Strings				'spam'
+	   	 Lists					[1, [2, 4], 5]
+	   	 Dictionaries				{'food': 'spam', 'taste': 'yum'}, dict(hours=10)
+	   	 Tuples					(1, 'spam', 4, 'U'), tuple & namedtuple
+	   	 Files					open('egg.txt'), open('file-path', 'wb')
+	   	 Sets					set('abc'), {'a', 'b', 'c'}
+	   	 Other core types			Booleans, types, None
+	   	 Program unit types			Funtions, modules, classes
+	   	 Implementatino-related types		Compiled code, stack tracebacks
+        2. Number
+	      1. len(str(2 ** 10000000)) # how many digits in a big number
+	      2. import math     // math.pi               // math.sqrt(24)
+	      3. import random   // random.random()	  // random.choice([4, 42, 20, 20])
+	3. Strings
+	      1. Sequence Operations: len(A_STRING); A_STRING[N]; A_STRING[-N]; A_STRING[M:N]; A_STRING * 6;
+	      2. Immutability (immutable -> unchangable)
+	            1. s[0] = 'z'                # Immutable objects cannot be changed
+		    2. s = 'z' + s[1:] 		 # But we can make new objecs
+		    3. list(s) 	 		 # Expand to a list: [...]
+	      3. Type-Specific Methods
+	      	    1. e.g. #1   # 1st example in file [Python_examples]
+		    2. upper(); isalpha(); rstrip() # Remove whitespace characters on the right side
+		    3. '%s, eggs, and %s' % ('spam', 'SPAM')
+		    4. '{0}, eggs, and {1}'.format('spam', 'SPAM')    # Formatting method (2.6+, 3.0+)
+		    5. '{}, eggs, and {}'.format('spam', 'SPAM')      # Formatting method (2.7+, 3.1+)
+		    6. '{:,.2f}'.format(2044.420)
+		    7. '%+4.2f' % (-3.2420420)
+	      4. Getting help
+	      	    1. dir(s)
+		    2. help(s.__add__) # Not help(s.__add__())
+	      5. Unicode Strings
+	      6. Pattern Matching
+	            1. import re # regular expression
+		    2. ... (for later futher reading)
+	4. Lists
+	      1. Sequence Operations: (like STRING)
+	      2. Type-Specific Operations: append(STR); pop(N); sort(); reverse();
+	      3. Bounds Checking: L[99] ... error text omitted ... IndexError: list assignment index out of range
+	      4. Nesting
+	      5. Comprehensions
+	      	    1. e.g. #5
+		    2. diag = [M[i][i] for i in [0, 1, 2]]
+		    3. ...
+	5. Dictionaries
+	      1. Mapping Operations:
+	      	 	 1. bob2 = dict(name = 'Bob', job = 'dev', age = 40)
+			 2. bob3 = dict(zip(['name', 'job', 'age'], ['Bob', 'dev', 40])) # Zipping
+	      2. Nesting Revisited
+	      3. Missing Keys:
+	      	 	 1. >>> 'f' in D
+			    False
+			 2. >>> if not 'f' in D:
+			    	   print('missing')
+			    Missing
+			 3. >>> value = profile.get('gender', 'male') # D.get(k[,d]) -> D[k] if k in D, else d.  d defaults to None.
+			 4. D.keys(); D.values();
+	      4. Sorting Keys: for Loops
+	      5. Itaration and Optimization: for x in [1, 2, 3, 4]: ...  # This is what a list comprehension deos,
+	      	 	       		     	      	     	    	 # Run the iteration protocol internally.
+        6. Tuples
+	      1. T = (1, 2, 3, 4)              # A 4-item tuple / T = 1, 2, 3, 4
+	      2. len(T)        	  	       # 4
+	      3. T[0]; T.index(4); T.count(4);
+	      4. Why Tuples: it's like a list, but supports fewer operations, but it's [Immutability]
+	7. Files
+	      1. f = open('data.txt', 'w')                   # make a new file in output mode
+	      2. f.write('hello\n');  			     # write strings
+	      3. f.close();
+	      4. text = f.read();
+              5. Binary Bytes Files
+	            1. import struct
+	      	    2. packed = struct.pack('>i4sh', 7, b'spam', 8)              # create packed binary data
+	      	    3. data = open('data.bin', 'rb').read()	   		   # open/read binary data file
+	      6. Unicode Text Files
+	            1. file = open('unidata.txt', 'w', encoding='utf-8');
+
+
+---
+~~~
+log: $1. Note of Python	--- Fri Jan 24, 2014;
+~~~
+
+---
+### Refs:
+- [**Packet Guide to Core Network Protocols**](http://book.douban.com/subject/6520010/)
+
+---
+### TOC:
+- Preface
+- Networking Models
+- Ethernet
+- Internet Protocol
+- Address Resolution Protocol
+- Network Equipment
+- Internet Control Message Protocol
+- Subnetting and Other Masking Acrobatics
+
+---
+~~~
+                                  Run, Forest, Run
+~~~
+#### Preface
+
+1. Why **Packet** Guide to Core Network Protocols
+ - Packets have many qualities, but one thing they never do is **lie**. If a packet is present, it is there because some device or network host put it there.
+
+---
+#### §1. Networking Models
+> **Good Starting Point**:
+Basic network architecture and construction
+**How to**:
+focuses on the practical TCP/IP model,
+using the OSI model as a reference point.
+
+1. **What is a Model**
+ - A model is a way to organize a system’s functions and features to define its structural design.
+ - A design can help us understand how a communication system accomplishes tasks to form a protocol suite.
+
+- **Why Use Models**
+
+- **OSI Models**
+ - four parts:
+   - Part 1 – The Basic Model
+   - Part 2 – Security Architecture
+   - Part 3 – Naming and Addressing
+   - Part 4 – Management Framework
+ - OSI—Beyond the Layers
+   - The architects of this model spent a lot of time thinking about and enumerating those items demanded at each layer and what is necessary to communicate with the layers immediately above and below.
+ - OSI/ITU-T Protocols, used in VoIP, etc
+
+4. **TCP/IP**
+ - Introducing TCP/IP
+ - TCP/IP and the RFCs
+    - Application
+```
+Support flexibility (naming and length) in hostnames; Map domain names appropriately; Handle DNS errors. e.g.
+```
+    - Transport
+```
+provides end-to-end communication services based either on TCP(connection-oriented) or UDP(connectionless)
+```
+    - Internet
+```
+specify the use of IP, ICMP, and Internet Group Management Protocol. Operationally, this is a connectionless “best effort” protocol concerned with addressing, type of service, security, and fragmentation. It relies on upper-layer protocols for accurate delivery.
+```
+    -  Link Layer
+```
+This is the network interface,  and includes framing and media access to communicate directly with the network to which it is attached.
+```
+    - Physical
+```
+Typically, the network interface card or port defines the Physical Layer
+```
+ - The Practical Side of TCP/IP
+ - Encapsulation
+```
+Encapsulation is the method by which the various layers interact and pass information up and down the protocol stack.
+```
+ - Addressing
+ - Equipment
+
+- **Review Questions**
+```
+Q: What is the name of the process by which an upper-layer protocol is wrapped up in a lower-layer protocol?
+A: Encapsulation
+Q: Name four communication models.
+A: TCP/IP, OSI, SNA, Appletalk, Novell (IPX/SPX)
+Q: What two documents specify the standardization of the OSI model?
+A: ISO/IEC 7498 and ITU-T X.200
+Q: How many layers are in the OSI and TCP/IP models, respectively?
+A: 7, 5
+Q: Name the layers of the OSI model.
+A: Application, Presentation, Session, Transport, Network, Data Link, Physical
+Q: Name the layers of the TCP/IP model.
+A: Application, Transport, Internet, Data Link, Physical
+```
+
+- **Lab Exercises**
+ - Activity 1—Examining Encapsulation
+`airmon-ng start mon0`, then `wireshark&`, choose interface **mon0**, then **start a new live capture**
+ - Activity 2—Protocol Distribution
+ - Activity 3—Developing a Protocol/Architecture
+
+
+---
+#### [**§2. Ethernet**]()
+1. **Remember the Models**
+
+- **Structure**
+ - **preamble**
+`a series of alternating 1s and 0s: provide timing for the receiving interface. `
+   - Ethernet II: 8 bytes of `1-0-1-0` s
+   - 802.3 frame: 7 bytes preamble `1-0-1-0` s + **SFD**
+`SFD - Start Frame Delimiter, 10101011`
+   - Preamble and SFD are invisible to packet analyzer
+ - **Source and Destination MAC Addresses**
+    - MAC address, or hardware / Ethernet / physical address: 6 bytes
+    - encoded into NIC (Network Interface Card)
+    - used in BSSID
+ - **Control Field (Type)**
+   - describes what is contained in the data field
+   - most commonly: `0x0800`, for IP packet is encapsulated
+ - **Data Field**
+   - payload: 46 - 1500 bytes
+ - **Frame Check Sequence**
+   - for **error checking**
+   - 32-bit cyclical redundancy check (CRC-32)
+   - error detection, but **not error correction**
+   - Bit error rate (BER): 1 in 10⁹(early days) bits to less than 1 in 10¹²
+
+- **Ethernet Type II vs. 802.3**
+ - Ethernet Type II: the standard used for **IP-based data packets**.
+ - IEEE 802.3: used with **management protocols** like spanning tree.
+ - control field:
+```
+   - more than 0x0600(1536): Ethernet Type II
+   - less than 0x0600(1536): 802.3, as length field, MTU: 1492
+```
+ - **LLC**
+```
+   - Destination Service Access Point (DSAP): "AA" for Subnetwork Access Protocol
+   - Source Service Access Point (SSAP): All zeros is a null address.
+   - Control:
+   - Information: This field is the data carried by the frame, Spanning Tree is a standard management protocol used on Ethernet networks.
+```
+![](http://gnat-tang-shared-image.qiniudn.com/blogScreenshot%20from%202014-02-09%2020:52:47.png)
+> 再不用微博的图床了~ 可恶的水印！！！
+本来有很多插图，都显示不出来了，全删掉了。现在用[七牛](http://www.qiniu.com/)。
+
+- **MAC Addresses—Another Look**
+ - MAC(6) = [**vendor code**](http://standards.ieee.org/develop/regauth/oui/public.html)(3) + **hostID**(3)
+ - **3 types** of MAC addr on an Ethernet network
+   - unicast
+![](http://gnat-tang-shared-image.qiniudn.com/blogunicast_frame.png)
+   - broadcast
+![](http://gnat-tang-shared-image.qiniudn.com/blogbroadcast_frame.png)
+   - multicast: e.g. a spanning tree frame(a bridge protocol data unit)
+![](http://gnat-tang-shared-image.qiniudn.com/blogmulticast_frame.png)
+
+- **Ethernet Operation**
+  - **MAC** to identify and distinguish
+  - Preamble frame to **negotiates an acceptable data rate**
+  - **CSMA/CD** & truncated binary exponential random **backoff algorithm**
+`CSMA/CD: Carrier sense multiple access with collision detection`
+
+- **Shared Media**
+ - The media: Coaxial Cable => Unshielded Twisted Pair (UTP)
+but still a **bus**
+```
+10Base-T naming convension:
+   - 10: 10 Mbps » 100, 1000 Mbps
+   - Base: type of transmission is baseband » boardband
+   - T: type of media or distance, T for twisted pair
+```
+![](http://gnat-tang-shared-image.qiniudn.com/blog-ethernet_minimum_frame_size.png)
+
+- **Physical Layer**
+ - Cabling
+   - UTP Wiring
+`VoIP phones, Token Ring, FDDI(光纤分布数据接口), Ethernet, and many others`
+   - RJ45, (see below for the male and female jack)
+![](http://gnat-tang-shared-image.qiniudn.com/blog-rj45_male_and_female.png)
+ - Encoding
+`# Connector type and media—RJ45, UTP`
+   - **Manchester**: for `10Base-T`
+   - **NRZI**: for `100Base-T`(aka fast ethernet or 802.3u Ethernet)
+   - **4D, PAM5**: for `1000Base-T`
+PAM5: five-level Pulse Amplitude Modulation
+ - Other Types of Signaling
+
+   - **Link Pulse**
+`NLP (normal link pulse)`: indicate link status
+a [**blip**](http://dict.youdao.com/search?le=eng&q=blip&keyfrom=dict.top) sent every 16±8ms while the link is idle
+   - **Autonegotiation**
+uses the same NLP, but for a different purpose
+`FLP (fast link pulse)`
+
+- **Final Thoughts on Ethernet**
+
+- **Summary**
+ - most used LAN standard
+ - layer 1 & 2 of our network models
+ - UTP for end nodes wired in switched star or tree configurations
+ - fiber typically reserved for network backbones
+ - standardized in the IEEE 802.3 series
+
+- **Review Questions**
+```
+Q: What are the two sublayers for Ethernet at Layer 2?
+A: Logical link control (LLC) and media access control (MAC)
+Q: What are the three type of destination MAC address?
+A: Unicast, broadcast, multicast
+Q: A collision domain ends at what device?
+A: Switch or router
+Q: What are two differences between Ethernet II and 802.3 frames?
+A: Preamble (preamble and start frame delimiter) and control (length)
+Q: What is the name of the Ethernet access method and the “wait” algorithm?
+A: Carrier sense multiple access with collision detection (CSMA/CD), truncated binary exponential random backoff
+```
+
+- **Lab Exercises**
+ - Activity 1—Basic Framing
+```
+wlan0     Link encap:Ethernet  HWaddr e0:b9:a5:ac:ab:f4
+          inet addr:192.168.1.100  Bcast:192.168.1.255  Mask:255.255.255.0
+          inet6 addr: fe80::e2b9:a5ff:feac:abf4/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:589943 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:450039 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:759940800 (724.7 MiB)  TX bytes:91686661 (87.4 MiB)
+```
+![](http://gnat-tang-shared-image.qiniudn.com/blog-icmp_frame.png)
+ - Activity 2—Control Field Values
+ - Activity 3—Addressing
+ - Activity 4—Destination Addresses
+ - Activity 5—Logical Link Control
+
+
+---
+#### [**§3. Internet Protocol**]()
+1.
+
+
+
+
+
+
+
+
+#### [**§4. Address Resolution Protocol**]()
+#### [**§5. Network Equipment**]()
+#### [**§6. Internet Control Message Protocol**]()
+#### [**§7. Subnetting and Other Masking Acrobatics**]()
+
+
+
+---
+~~~
+log: $1. created on Sunday, February 09 2014; $2. modified at Wed Apr  9 11:43:46 CST 2014;
+~~~
+
+
+--------------------------------------------------------------------------------
+
+### Refs
+
+- [Pro Git][progit-douban]
+- Git man page: `man git`
+- [豆瓣书评: 最好的Git进阶材料][best-git-tutorials]
+- [try.github.io][try-git-io]
+- [Github Help][github-help]
+- [Author-maintained website][author-maintained-webpage], or [中文][author-maintained-webpage-zh]
+
+
+[progit-douban]: http://book.douban.com/subject/3420144/
+[best-git-tutorials]: http://book.douban.com/review/6465637/
+[try-git-io]: http://try.github.io
+[github-help]: https://help.github.com/
+[author-maintained-webpage]: http://git-scm.com/book
+[author-maintained-webpage-zh]: http://git-scm.com/book/zh
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+### TOC
+
+- Preface
+- §1. Getting Started
+- §2. Git Basics
+- §3. Git Branching
+- §4. Git on the Server
+- §5. Distributed Git
+- §6. Git Tools
+- §7. Customizing Git
+- §8. Git and Other Systems
+- §9. Git Internals
+- Index of Commands
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                Run, Forest, Run
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#### Preface
+
+- E-book available(en): [PDF][progit-pdf], [mobi][progit-mobi], or [ePub][progit-epub]
+
+
+[progit-pdf]: https://github.s3.amazonaws.com/media/progit.en.pdf
+[progit-mobi]: https://github.s3.amazonaws.com/media/pro-git.en.mobi
+[progit-epub]: https://github.s3.amazonaws.com/media/progit.epub
+
+
+--------------------------------------------------------------------------------
+
+#### [§1. Getting Started][getting-started]
+
+1. About Version Control
+    -  Version control is a system that **records changes** to a file or set of files over time so that **you can recall specific versions later**.
+    - Version Control System (VCS) allows you
+        - **revert _files_ back** to a previous state
+        - **revert _the entire project_ back** to a previous state
+        - **review changes** made over time
+        - etc.
+    - [Local][vc-local] / [Centralized][vc-centralized] / [Distributed][vc-distributed] Version Control Systems
+
+- A Short History of Git
+    - Linux Kernel Project:
+        - 1991–2002: patches and archived files
+        - 2002-2005: DVCS:BitKeeper
+        - 2005-Now: Git
+
+- **Git Basics**
+    - [Snapshots][snapshots], Not [Differences][differences](直接记录快照，而非差异比较)
+    - Nearly Every Operation Is Local (offline is ok)
+    - Git Has Integrity (check-summed before stored, mechanism: SHA-1 hash.)
+    - Git Generally Only Adds Data
+    - The Three States: [**modified, staged, committed**][modified-staged-committed]
+        - **working directory**: checkout of one version of your project, to use and modify
+        - **staging area**: simple file, as an index
+> 1. If a particular version of a file is in the Git directory, it’s considered **committed**.
+> - If it’s modified but has been added to the staging area, it is **staged**.
+> - And if it was changed since it was checked out but has not been staged, it is **modified**.
+
+- Installing Git
+    - Installing from Source
+dependencies: curl, zlib, openssl, expat, libiconv, etc
+`apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev`
+```
+# compile from source
+cd <git-sourcedir>
+make prefix=/usr/local all
+sudo make prefix=/usr/local install
+```
+ - Installing on Linux
+`apt-get install git-core # or yum install git-core`
+ - Installing on Mac
+ - Installing on Windows
+
+- First-Time Git Setup: `git config`
+    - configuration stored in three places:
+        - `/etc/gitconfig`
+        - `~/.gitconfig`
+        - config file in the git directory(that is `.git/config`)
+    - Your Identity
+`git config --global user.name "Gnat TANG"`
+`git config --global user.email gnat_tang@yeah.net`
+ - Your Editor
+`git config --global core.editor "emacs -nw"`
+ - Your Diff Tool
+`git config --merge.tool vimdiff`
+ - Checking Your Settings
+`git config --list` # check all
+`git config user.name` # check something explicitely
+
+- Getting Help
+```
+git help <verb>,         e.g. git help commit
+git <verb> --help,       e.g. git commit --help
+man git-<verb>,          e.g. man git-commit
+```
+
+- Summary
+
+
+
+
+
+[getting-started]: http://git-scm.com/book/en/Getting-Started
+[vc-local]: http://git-scm.com/figures/18333fig0101-tn.png
+[vc-centralized]: http://git-scm.com/figures/18333fig0102-tn.png
+[vc-distributed]: http://git-scm.com/figures/18333fig0103-tn.png
+[snapshots]: http://git-scm.com/figures/18333fig0105-tn.png
+[differences]: http://git-scm.com/figures/18333fig0104-tn.png
+[modified-staged-committed]: http://git-scm.com/figures/18333fig0106-tn.png
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+#### [§2. Git Basics]
+
+1. Getting a Git Repository
+    - Init a repo in an existing dir
+```
+git init # create a git skeleton
+git add *.c # add some files
+git add README
+git commit -m "initial project version" # commit it
+```
+    - Cloning an existing repo
+```
+git clone [url] # not `git checkout`, really it will CLONE one
+git clone git://github.com/schacon/grit.git mygrit # specify a name
+```
+
+- Recording Changes to the Repository
+    - checking the status of you files:
+```
+git status
+touch README
+git status
+```
+    - tracking new files
+```
+git add README
+git status
+```
+    - staging modified files
+```
+echo "hello" > README
+git status
+git add README
+git status
+```
+    - ignoring files
+```
+echo -e "*.[ao]\n*~" > .gitignore # ignore *.a *.o *~ files
+# .gitignore file example="""
+*.a # no *.a file
+!lib.a # but git should track lib.a
+/TODO # ignore file TODO
+build/ # ignore all files in dir build
+doc/*.txt # ignore doc/readme.txt but track doc/html/readme.txt"""
+```
+    - viewing your staged and unstaged changes
+```
+git diff # not to stage
+git diff --cached # now to commit
+git diff --staged # now to commit
+```
+    - committing your changes
+```
+git commit # not recommended, ur editor will jump out, maybe suitable for a long msg
+git commit -m "your message"
+```
+    - skipping the staging area（一步到位的意思）
+```
+git commit -a -m "commit without add it manually"
+```
+    - removing files
+```
+rm <file>
+git rm <file>
+git commit -m "removed file"
+# or rm from git repo, but not from working dir
+git rm --cached readme.txt
+# more example
+git rm log/\*.log # remove log file
+git rm \*~ # remove editor cached file
+```
+    - moving files ( pay some attention here)
+```
+git mv file_from file_to && git commit -m "renamed file_from to flie_to"
+# or try this
+mv file_from file_to && git rm file_from && git add file_to && git commit -m "some job in a different way"
+```
+    - viewing the commit history
+```
+git log # in a chronological order
+git log -p -2 # -p: with diff-show option, -2: only last two commit
+git log --stat # with abbreviated stats
+git log --pretty=oneline # other options: --pretty={short, full, fuller}
+######### or more customization: pretty.format
+git log --pretty=format:"%h - %an, %ar : %s"
+%H: commit hash, %h abbreviated commit hash
+%T: tree hash,   %t abbreviated tree hash
+%P: parent hashes, %p: abbr parent hash
+%an: author name, %ae: author email
+%ad: author date (format respects the -date=option)
+%ar: author date, relative
+%cn: commit name
+%ce: commit email
+%cd: commit date
+%cr: commit date, reletive
+%s: subject (commit message)
+######### log options
+-p: show patch
+--stat, --shortstat
+--name-only, --name-status
+--abbrev-commit
+--relative-date
+--graph
+--pretty
+--since=2.weeks, --after
+--until, --before
+--author, --committer
+# You can also visualization it in a GUI way
+```
+ - **undoing things**
+```
+# changing your last commit
+git commit --amend
+```
+ - **unstaging a staged file**
+```
+git reset HEAD <file>
+```
+ - **unmodifing a modified file**
+```
+git checkout -- README.txt
+```
+
+- Working with romotes
+```
+git remote # git remote -v, show your remotes
+git remote add [shortname] [url] # git remote add dvpe git://github.com/district10/extended-programmer-dvorak.git
+git fetch dvpe # fetch from remote, but not merge until you manually do it
+git push [remote-name] [branch-name] # push if you have remote accessibility
+# inspecting a remote
+git remote show origin
+git remote rename [branchname-before] [branchname-after]
+git remote rm [branch-name]
+```
+In github, we use ssh clone url, not https clone url,
+when clone our own repo
+![](http://gnat-tang-shared-image.qiniudn.com/district10%20neo_keyboard_layout.png)
+
+- Tagging
+```
+git tag # listing your tags
+git tag -l v1.4.2.*
+# creating tags: lightweight or annotated
+# -a, --annotated: Make an unsigned, annotated tag object
+git tag -a v1 -m "message"
+git show v1
+# -s, --sign, Make a GPG-signed tag, using the default e-mail address’s key.
+git tag -s v2 -m "another-commit-message" # signed tag
+git tag v3 # lightweight tag
+# verify tags (only for signed tag)
+git tag -v v2
+# tagging later
+# sharing tags
+```
+
+- Tips and Tricks
+ - auto-completion (Gnat recommend you [**zsh**](http://jianshu.io/p/7a8f80e6840a) )
+ - git alias:
+```
+git config --global alias.co checkout # => git co
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.last 'log -1 HEAD'
+git config --global alias.unstage 'reset HEAD --'
+git config --global alias.vdir '!vdir' # other commands(from sys)
+# show all your alias
+git config --list | grep alias
+```
+
+- Summary
+
+
+
+
+
+[git-basics]: http://git-scm.com/book/en/Git-Basics
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+#### [§3. Git Branching](http://git-scm.com/book/en/Git-Branching)
+Some people refer to the branching model in Git as its “killer feature”. Unlike many other VCSs, Git encourages a workflow that branches and merges often, even multiple times in a day. Understanding and mastering this feature gives you a powerful and unique tool and can literally change the way that you develop.
+
+1. [**What a Branch Is**](http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is) (better check this site yourself)
+```
+# Follow me, in bash(zsh has some trouble with the comments)
+mkdir branching && cd branching && git init
+touch README test.rb LICENSE
+git add README test.rb LICENSE
+git commit -m 'initial commit of my project'
+git branch testing && git checkout testing # switch to branch:testing
+echo "hello world from testing" > test.rb
+git commit -a -m 'commit from testing'
+git checkout master && echo "hello world from master" > test.rb
+git commit -a -m "commit from master"
+```
+[how it looks now? check me](http://git-scm.com/figures/18333fig0309-tn.png)
+**`HEAD`** pointer to show your working branch
+Creating a new branch is **as quick and simple as writing 41 bytes**
+cost of a branch: `40 characters(SHA-1 checksum)` and `a newline`
+
+- **Basic Branching and Merging**
+ - Basic Branching
+```
+# cd branching
+git checkout -b iss53 # same like: git branch iss53 && git checkout iss53
+echo "hello world from iss53" > README && git commit -a -m "commit from iss53"
+cat README #                                                          [0]
+git checkout master && cat README #                                   [1]
+git checkout -b hotfix && echo "added by hotfix" >> README
+git commit -a -m "hotfix added that line" && cat README #             [2]
+git checkout master && cat README #                                   [3]
+git merge hotfix && cat REAMDE # fast forwarding                      [4]
+# cat output [0], [1], [2], [3], [4], take some time to understand it, Git!
+# git branch -d hotfix
+```
+[how it looks now? check me](http://git-scm.com/figures/18333fig0314-tn.png)
+
+ - Basic Merging
+```
+git checkout master
+git merge iss53 # Auto-merging
+```
+[how it looks now? check me](http://git-scm.com/figures/18333fig0316-tn.png)
+
+ - Basic Merging Conflicts
+```
+git mergetool
+```
+- **Branch Management**
+```
+git branch # show all branches and current branch
+git branch -v
+git branch --merged
+git branch --no-merged
+```
+- [**Branching Workflows**](http://git-scm.com/book/en/Git-Branching-Branching-Workflows)
+ - Long-Running Branches
+   - More stable branches: farther down the **c**ommit history.
+![](http://git-scm.com/figures/18333fig0318-tn.png)
+   - It’s generally easier to think about them as work [silos](http://dict.youdao.com/search?q=silos&keyfrom=dict.plugin), where sets of commits graduate to a more stable silo when they’re fully tested
+![](http://git-scm.com/figures/18333fig0319-tn.png)
+ - Topic Branches
+
+- Remote Branches
+[remote branches pics](http://git-scm.com/figures/18333fig0322-tn.png)
+- Rebasing
+`merge` and `rebase`
+
+- Summary
+
+---
+#### [§4. Git on the Server](http://git-scm.com/book/en/Git-on-the-Server)
+1. **The Protocols**
+ - **Local Protocol**
+```
+git clone /opt/git/project.git
+git clone file:///opt/git/project.git
+git remote add local_proj /opt/git/project.git
+```
+ - **The SSH Protocol**
+```
+git clone ssh://user@server/project.git
+git clone user@server:project.git # Or use the shorter scp-like syntax
+```
+ - **The Git Protocol** (fastest, but hard to set up)
+
+ - **The HTTP/S Protocol** (dumb, but not efficient)
+
+- **Getting Git on a Server**
+```
+git clone: git init && git fetch
+scp -r my_project.git user@git.example.com:/opt/git
+```
+- [**Generating Your SSH Public Key**](https://help.github.com/articles/generating-ssh-keys)
+`id_dsa / id_dsa.pub` or `id_rsa / id_rsa.pub`
+```
+ssh-keygen && ssh-add
+#####################
+$ ssh -T git@github.com
+>> Hi district10! You've successfully authenticated, but GitHub does not provide shell access.
+```
+- Setting Up the Server
+- Public Access
+- GitWeb
+- Gitosis
+
+
+
+
+
+
+
+- §5. Distributed Git
+- §6. Git Tools
+- §7. Customizing Git
+- §8. Git and Other Systems
+- §9. Git Internals
+- Index of Commands
+
+
+--------------------
+
+~~~
+log: $1. 读了N天还没完。。。, Friday, March 07 2014; $2. reviewed, Mar 24, 2014;
+~~~
+
+--------------------------------------------------------------------------------
+
+#### Refs
+
+- [Python 3 Web Development Beginner's Guide][python3-web-dev-beginners-guide]
+
+[python3-web-dev-beginners-guide]: http://book.douban.com/subject/6525823/
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+#### TOC
+
+- Preface
+- §1: Choosing Your Tools
+- §2: Creating a Simple Spreadsheet
+- §3: Tasklist I: Persistence
+- §4: Tasklist II: Databases and AJAX
+- §5: Entities and Relations
+- §6: Building a Wiki
+- §7: Refactoring Code for Reuse
+- §8: Managing Customer Relations
+- §9: Creating Full-Fledged Webapps: Implementing Instances
+- §10: Customizing the CRM Application
+- Appendix A: References to Resources
+- Appendix B: Pop Quiz Answers
+
+
+--------------------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                Run, Forest, Run
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+#### Preface
+
+1. **What you need for this book**
+ - Python 3.2, CherryPy 3.2.0, jQuery 1.4.4, jQuery UI 1.8.6
+ - misc: editor, web browser, etc
+
+- **Downloading the example code for this book**
+ - Go [packtpub][packtpub], need to register an account
+ - or my archive: [**example-code-zip-file**][sample-code-zip]
+
+
+[packtpub]: http://www.PacktPub.com/support
+[sample-code-zip]: http://gnat-tang-archive.qiniudn.com/bookcode-Python%203%20Web%20Development%20Beginner's%20Guide.zip
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+#### §1: Choosing Your Tools
+
+1. **Identifying the components of a web application**
+
+![][client-server]
+
+- **Choosing suitable tools**
+ - choosing a `delivery framework` (aka Web Server): **CherryPy**
+ - choosing a `server-side scripting language`:  **Python**
+   - Why Python 3X?
+Although not all third party modules are (yet) ported to this new version, it is the best version to use if you want to develop in a future proof way.
+ - choosing a `database engine`: **SQLite**
+ - deciding on `object relational mappers`: SQLAlchemy, etc
+    - map between DB(tables) and Python Objects
+ - choosing a `presentation framework`: HTML
+   - need 2 more JavaScript libs: **jQuery** and **jQuery UI**
+   - jQuery provides the functionality to select and manipulate HTML elements on a page
+   - jQuery UI provides a number of sophisticated widgets and effects.
+
+- **Designing for maintainability and usability**
+ - **Testing:** using python module `unittest`
+ - **Version management: ** `git` or `svn`
+ - **Usability:**
+   - for users, not developers. so we adhering to `common GUI paradigms`
+   - **themable**
+   - **Cross-browser compatible**
+   - **Cross-platform compatible**
+ - **Maintainability**
+   - Standards compliant
+   - Security
+ - ... **Help, I am confused!**
+Reading this chapter, you may get the feeling that developing web applications is horribly complex, even if you use the right tools. So many things may play a role! **Do not despair** though.
+See, it's so easy!
+
+![][pic-01]![][pic-02]
+
+
+[client-server]: http://gnat-tang-shared-image.qiniudn.com/blog-client_serer.png
+[pic-01]: http://gnat-tang-shared-image.qiniudn.com/blog-A.png
+[pic-02]: http://gnat-tang-shared-image.qiniudn.com/blog-B.png
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+#### §2: Creating a Simple Spreadsheet
+
+1. **Tools**
+ - **Python 3**
+    - [**Download**](http://www.python.org/download/)
+    - **Install:** `./configure && make && sudo make install`
+    -  Actually, I(Gnat) prefer using **Python 2.7** instead of **Python 3.3**
+ - **CherryPy**
+    - [**Download**](http://download.cherrypy.org/cherrypy/3.2.0/)
+    - **Install:** `python3.3 setup.py install`
+ - **Install(download) [jQuery](http://code.jquery.com/jquery-1.4.2.js) and [jQuery UI](http://jqueryui.com/download)**
+
+- **Serving an application**
+ - Move to dir: `cd "Chapter 2"`, Run it: `python nocontent.py`
+ - visit [http://localhost:8080](http://localhost:8080) or [http://127.0.0.1:8080](http://127.0.0.1:8080)
+ - You will see:
+![](http://gnat-tang-shared-image.qiniudn.com/blog-first.png)
+```
+class Root(object):
+        content = ''' <html code we serve> '''
+        @cherrypy.expose # expose to CherryPy by the @cherrypy.expose decorator
+        def index(self):
+            return Root.content
+# Only exposed methods will be called by CherryPy to produce content
+```
+ - CherryPy:
+   - map a URL of a form `/name` to a method called `name()`, `/` to `index()`
+   - This means we have now configured CherryPy to deliver dynamic content when the user directs his browser to http://127.0.0.1:8080/
+`omit the final slash, for CherryPy ignores a trailing slash by default`
+
+- **Who serves what: an overview**
+![](http://gnat-tang-shared-image.qiniudn.com/blog-structure.png)
+  - **top level dir Python files**
+   - excute and start CherryPy server
+ - **subdir: `static`**
+dir `css` contains subdirectories with additional CSS stylesheets and
+dir `images` for jQuery UI themes
+ - **Note**: no HTML files seen, for `all HTML content is generated dynamically`
+ - **From an application point of view**, the best way to comprehend a web application is to `see the application as distributed`, see
+![](http://gnat-tang-shared-image.qiniudn.com/blog-distribution.png)
+> when modified, the python server file will be reload after we saving it
+
+- **Who Servers Who**
+ - **HTML: form-based interaction**
+ - **JavaScript: using jQuery UI widgets**
+ - **jQuery selectors** - `concept: chaining`
+   - `$("li")`: select all `<li>` elements
+   - `$("li:first")`: select the first `<li>` elements
+   - `$("#footer")`: select the `<div>` with an id equal to footer
+   - `$("li").addClass("red-background")`: red bg to all `<li>` elements
+   - `$("button").button()`: alters the appearance of our button element to the **stylized button widget** that jQuery UI provides
+ - **CSS: applying a jQuery UI theme to other elements**
+
+> Seems I need to know something about HTML, CSS, JavaScript...
+> My Notes on HTML:
+>
+ - [Learning HTML | 简书](http://jianshu.io/p/c1ded91a49b3)
+ - [Learning HTML5 | 简书](http://jianshu.io/p/51999687c151)
+
+---
+### Too Busy these days...
+
+- §3: Tasklist I: Persistence
+- §4: Tasklist II: Databases and AJAX
+- §5: Entities and Relations
+- §6: Building a Wiki
+- §7: Refactoring Code for Reuse
+- §8: Managing Customer Relations
+- §9: Creating Full-Fledged Webapps: Implementing Instances
+- §10: Customizing the CRM Application
+- Appendix A: References to Resources
+- Appendix B: Pop Quiz Answers
+
+
+
+---
+~~~
+log: $1. created maybe ten days ago, today is Friday, February 28 2014; $2. modified at Wed Apr  9 11:24:23 CST 2014;
+~~~
+
+
+---
+[**Main**](http://jianshu.io/p/a160816a18b2)[** » 读书笔记**](http://jianshu.io/p/d74b041f0ceb)
+
+---
+### [Refs]()
+- [**Python Data Visualization Cookbook**](http://book.douban.com/subject/25796877/)
+
+---
+### [TOC]()
+- Preface
+- §1. Preparing Your Working Environment
+- §2. Knowing Your Data
+- §3. Drawing Your First Plots and Customizing Them
+- §4. More Plots and Customizations
+- §5. Making 3D Visualizations
+- §6. Plotting Charts with Images and Maps
+- §7. Using Right Plots to Understand Data
+- §8. More on matplotlib Gems
+
+
+---
+~~~
+                                  Run, Forest, Run
+~~~
+---
+#### [Preface]()
+1. What this book covers
+ - installation recipes
+ - read & write common data
+CSV, JSON, XSL, or relational databases, etc
+ - drawing plots
+ - 3D Visualizations
+ - image processing, creating CAPTCHA test images
+ - advanced plotting techniques
+ - Gantt charts, box plots, whisker plots, and
+also explains how to use LaTeX for rendering text in matplotlib
+
+- the example code
+ - Go [**Packt Publishing**](http://www.packtpub.com/python-data-visualization-cookbook/book)
+ - Or, my archive: [**Python...Cookbook_example code.zip**](http://gnat-tang-archive.qiniudn.com/file_Python%20Data%20Visualization%20Cookbook.zip)
+
+
+---
+#### [§1. Preparing Your Working Environment]()
+1. Prepare your python & modules
+ - Installing matplotlib, NumPy, and SciPy
+ - Installing virtualenv and virtualenvwrapper (not recommended)
+ - Installing Python Imaging Library (PIL) for image processing
+ - Installing a requests module: `pip install requests`
+- Customizing matplotlib's parameters in code
+```
+######### Customize matplotlib ###########
+import matplotlib as mpl
+## Method1: matplotlib.rcParams
+mpl.rcParams['lines.linewidth'] = 2
+mpl.rcParams['lines.color'] = 'r'
+## Method2: matplotlib.rc()
+mpl.rc('lines', linewidth=2, color='r')
+```
+
+- Customizing matplotlib's parameters per project
+ - **matplotlibrc** configuration file
+   - Current working directory: `matplotlibrc`
+   - Per user .matplotlib/matplotlibrc: use `mpl.get_configdir()` to get it
+`$ python -c 'import matplotlib as mpl; print mpl.get_configdir()'`
+   - Per installation configuration file
+ - configuration settings:
+```
+axes, backend, figure, font, grid, legend, lines
+patch, savefig, text, verbose, xticks, yticks, etc
+```
+
+---
+#### [§2. Knowing Your Data]()
+1. Importing data from CSV
+```
+import csv
+##### Read #####
+csvfilepath='http://gnat-tang-shared-image.qiniudn.com/blog-ch02-data.csv'
+f = open(csvfilepath)
+reader = csv.reader(f)
+print reader.next() # read the first line, maybe title
+data = [row for row in reader] # read the other lines
+print data
+##### Write #####
+with open(filename,'wb') as f:
+    writer = csv.writer(f)
+    for row in range(10):
+        writer.writerow([row + 1, '2012-01-%s' % (19 + row)])
+```
+For more, see [**Python CSV File API**](http://legacy.python.org/dev/peps/pep-0305/)
+For larger text files, better use `numpy.loadtxt()`,
+or `numpy.genfromtxt()` (for better with missing data)
+```
+import numpy
+data = numpy.loadtxt('ch02-data.csv', dtype='string', delimiter=',')
+```
+- [Importing data from Microsoft Excel files](www.python-excel.org)
+`pip install xlrd # Firstly, install relative module`
+```
+# I have some trouble with xlrd.read(), this one doesn't work
+import xlrd
+from xlrd.xldate import XLDateAmbiguous
+wb = xlrd.open_workbook(filename='ch02-xlsxdata.xlsx') # "on_demand=True"
+ws = wb.sheet_by_name('Sheet1')
+dataset = []
+for r in range(ws.nrows):
+    col = []
+    for c in range(ws.ncols):
+        col.append(ws.cell(r, c).value)
+        if ws.cell_type(r, c) == xlrd.XL_CELL_DATE:
+            try:
+                print ws.cell_type(r, c)
+                from datetime import datetime
+                date_value = xlrd.xldate_as_tuple(ws.cell(r, c).value,
+                                                  wb.datemode)
+                print datetime(*date_value)
+            except XLDateAmbiguous as e:
+                print e
+    dataset.append(col)
+from pprint import pprint
+pprint(dataset)
+```
+in the example code, another module `openpyxl` is used
+```
+from openpyxl import load_workbook
+file = 'ch02-xlsxdata.xlsx'
+wb = load_workbook(filename=file)
+ws = wb.get_sheet_by_name('Sheet1')
+dataset = []
+for r in ws.rows:
+    col = []
+    for c in r:
+        col.append(c.value)
+    dataset.append(col)
+from pprint import pprint
+pprint(dataset)
+```
+
+- Importing data from fixed-width datafiles. Using **string** & [**struct**](http://docs.python.org/2/library/struct.html)
+```
+import string
+import random
+ROWS = 1000000
+# SAMPLE = string.ascii_lowercase
+SAMPLE = '012345678901234567890123456'
+F1 = 9
+F2 = F1 + 13
+F3 = F2 + 4
+# assert F1 + F2 + F3 == len(SAMPLE)
+for r in range(ROWS):
+    t = ''.join(random.sample(SAMPLE,len(SAMPLE)))
+    print t[0:F1], t[F1:F2], t[F2:F3]
+### or this ###
+import struct
+import string
+datafile = 'ch02-fixed-width-1M.data'
+# this is where we define how to understand line of data from the file
+mask='9s14s5s' # 9chars | 14chars | 5chars
+with open(datafile, 'r') as f:
+	for line in f:
+		fields = struct.Struct(mask).unpack_from(line)
+		print 'fields: ', [field.strip() for field in fields]
+```
+- Importing data from tab-delimited files
+```
+with open(filename) as fr
+     reader = csv.reader(fr, dialect=csv.excel_tab)
+with open(filename, 'wb') as fw
+     writer = csv.writer(fw, dialect=csv.excel_tab)
+# 'r': reading, 'w': writing(truncate), 'b': binary, more robust
+# 'r+', 'w+' and 'a+', updating
+### work with dirty file ###
+datafile = 'ch02-data-dirty.tab'
+with open(datafile, 'r') as f:
+    for line in f:
+        # removed next comment to see line before cleanup
+        print line.split('\t'), "____dirty way"
+        # we remove any space in line start or end
+        line = line.strip()
+        # now we split the line by tab delimiter
+        print line.split('\t')
+```
+more about [**open()**](http://docs.python.org/2/library/functions.html#open)
+
+- Importing data from a JSON resource
+```
+import requests
+url = 'https://github.com/timeline.json'
+r = requests.get(url)
+json_obj = r.json() # Error, list object is not callable... shit
+repos = set() # we want just unique urls, so it's a set
+for entry in json_obj:
+    try:
+        repos.add(entry['repository']['url'])
+    except KeyError as e:
+        print "No key %s. Skipping..." % (e)
+from pprint import pprint
+pprint(repos)
+# this one works
+# import json; json_obj = json.load('timeline.json')
+```
+[**Json RFC**](http://tools.ietf.org/html/rfc4627.html)
+
+- Exporting data to JSON, CSV, and Excel
+```
+# this is really fantastic
+import os, sys, argparse, struct, json, csv
+try:
+    import cStringIO as StringIO
+except:
+    import StringIO
+def import_data(import_file):
+    '''
+    Imports data from import_file.
+    Expects to find fixed width row
+    Sample row: 161322597 0386544351896 0042
+    '''
+    mask = '9s14s5s'
+    data = []
+    with open(import_file, 'r') as f:
+        for line in f:
+            fields = struct.Struct(mask).unpack_from(line) # unpack line to tuple
+            # strip any whitespace for each field
+            # pack everything in a list and add to full dataset
+            data.append(list([f.strip() for f in fields]))
+    return data
+def write_data(data, export_format):
+    '''
+    Dispatches call to a specific transformer
+    and returns data set.
+    Exception is xlsx where we have to save data in a file.
+    '''
+    if export_format == 'csv':
+        return write_csv(data)
+    elif export_format == 'json':
+        return write_json(data)
+    elif export_format == 'xlsx':
+        return write_xlsx(data)
+    else:
+        raise Exception("Illegal format defined")
+def write_csv(data):
+    '''
+    Transforms data into csv.
+    Returns csv as string.
+    '''
+    # Using this to simulate file IO,
+    # as csv can only write to files.
+    f = StringIO.StringIO()
+    writer = csv.writer(f)
+    for row in data:
+        writer.writerow(row)
+    # Get the content of the file-like object
+    return f.getvalue()
+def write_json(data):
+    '''
+    Transforms data into json.
+    Very straightforward.
+    '''
+    j = json.dumps(data)
+    return j
+def write_xlsx(data):
+    '''
+    Writes data into xlsx file
+    '''
+    from xlwt import Workbook
+    book = Workbook()
+    sheet1 = book.add_sheet("Sheet 1")
+    row = 0
+    for line in data:
+        col = 0
+        for datum in line:
+            print datum
+            sheet1.write(row, col, datum)
+            col += 1
+        row += 1
+        # We have hard limit here of 65535 rows
+        # that we are able to save in spreadsheet.
+        if row > 65535:
+            print >> sys.stderr, "Hit limit of # of rows in one sheet (65535)."
+            break
+    # XLS is special case where we have to
+    # save the file and just return 0
+    f = StringIO.StringIO()
+    book.save(f)
+    return f.getvalue()
+if __name__ == '__main__':
+    # parse input arguments
+    parser = argparse.ArgumentParser()
+    parser.add_argument("import_file", help="Path to a fixed-width data file.")
+    parser.add_argument("export_format", help="Export format: json, csv, xlsx.")
+    args = parser.parse_args()
+    if args.import_file is None:
+        print >> sys.stderr, "You myst specify path to import from."
+        sys.exit(1)
+    if args.export_format not in ('csv','json','xlsx'):
+        print >> sys.stderr, "You must provide valid export file format."
+        sys.exit(1)
+    # verify given path is accesible file
+    if not os.path.isfile(args.import_file):
+        print >> sys.stderr, "Given path is not a file: %s" % args.import_file
+        sys.exit(1)
+    # read from formated fixed-width file
+    data = import_data(args.import_file)
+    # export data to specified format
+    # to make this Unix-lixe pipe-able
+    # we just print to stdout
+    print write_data(data, args.export_format)
+```
+- Importing data from a database
+`sudo apt-get install sqlite3`
+```
+import sqlite3, sys
+if len(sys.argv) < 2:
+    print "Error: You must supply at least SQL script."
+    print "Usage: %s table.db ./sql-dump.sql" % (sys.argv[0])
+    sys.exit(1)
+script_path = sys.argv[1]
+if len(sys.argv) == 3:
+    db = sys.argv[2]
+else:
+    # if DB is not defined
+    # create memory database
+    db = ":memory:"
+try:
+    con = sqlite3.connect(db)
+    with con:
+        cur = con.cursor()
+        with open(script_path,'rb') as f:
+            cur.executescript(f.read())
+except sqlite3.Error as err:
+    print "Error occured: %s" % err
+```
+```
+import sqlite3, sys
+if len(sys.argv) != 2:
+    print "Please specify database file."
+    sys.exit(1)
+db = sys.argv[1]
+try:
+    con = sqlite3.connect(db)
+    with con:
+        cur = con.cursor()
+        query = 'SELECT ID, Name, Population FROM City ORDER BY Population DESC LIMIT 1000'
+        con.text_factory = str # Create a new Unicode object from the given encoded string.
+        cur.execute(query)
+        resultset = cur.fetchall()
+        # extract column names
+        col_names = [cn[0] for cn in cur.description]
+        print "%10s %30s %10s" % tuple(col_names)
+        print "="*(10+1+30+1+10)
+        for row in resultset:
+            print "%10s %30s %10s" % row
+except sqlite3.Error as err:
+    print "[ERROR]:", err
+```
+- Cleaning up data from outliers
+```
+import numpy as np, matplotlib.pyplot as plt
+def is_outlier(points, threshold=3.5):
+    """
+    Returns a boolean array with True if points are outliers and False otherwise.
+    Data points with a modified z-score greater than this value will be classified as outliers.
+    """
+    # transform into vector
+    if len(points.shape) == 1:
+        points = points[:,None]
+    # compute median value
+    median = np.median(points, axis=0)
+    # compute diff sums along the axis
+    diff = np.sum((points - median)**2, axis=-1)
+    diff = np.sqrt(diff)
+    # compute MAD
+    med_abs_deviation = np.median(diff)
+    # compute modified Z-score
+    # http://www.itl.nist.gov/div898/handbook/eda/section4/eda43.htm#Iglewicz
+    modified_z_score = 0.6745 * diff / med_abs_deviation
+    # return a mask for each outlier
+    return modified_z_score > threshold
+# Random data
+x = np.random.random(100) # value between 0 and 1
+buckets = 50 # histogram buckets
+x = np.r_[x, -49, 95, 100, -100] # Add in a few outliers
+# Keep inlier data points
+# Note here that
+# "~" is logical NOT on boolean numpy arrays
+filtered = x[~is_outlier(x)]
+# plot histograms
+plt.figure()
+plt.subplot(211), plt.hist(x,        buckets), plt.xlabel('Raw')
+plt.subplot(212), plt.hist(filtered, buckets), plt.xlabel('Cleaned')
+plt.show()
+```
+```
+from pylab import *
+# generate uniform data points
+x = 1e6*rand(1000), y = rand(1000)
+figure()
+# make scatter plots
+subplot(211), scatter(x, y), xscale('linear'),  xlim([1e-6, 1e6])
+# this time, make x axis logarithmic
+subplot(212), scatter(x,y), xscale('log'), xlim([1e-6, 1e6])
+show()
+```
+```
+from pylab import *
+# fake up some data
+spread= rand(50) * 100, center = ones(25) * 50
+# generate some outliers high and low
+flier_high = rand(10) * 100 + 100, flier_low = rand(10) * -100
+# merge generated data set
+data = concatenate((spread, center, flier_high, flier_low), 0)
+# basic plot, 'gx' defining the outlier plotting properties
+subplot(311), boxplot(data, 0, 'gx')
+# compare this with similar scatter plot
+subplot(312)
+spread_1 = concatenate((spread, flier_high, flier_low), 0)
+center_1 = ones(70) * 25
+scatter(center_1, spread_1), xlim([0, 50])
+# and with another that is more appropriate for scatter plot
+subplot(313)
+center_2 = rand(70) * 50
+scatter(center_2, spread_1)
+xlim([0, 50])
+show()
+```
+
+- Reading files in chunks
+```
+import sys
+filename = sys.argv[1]
+with open(filename, 'rb') as hugefile:
+    chunksize = 1000
+    readable = ''
+    # if you want to stop after certain number of blocks
+    # put condition in the while
+    while hugefile:
+        # if you want to start not from 1st byte, do a hugefile.seek(skipbytes)
+        # to skip skipbytes of bytes from the file start
+        start = hugefile.tell()
+        print "starting at:", start
+        file_block = ''  # holds chunk_size of lines
+        for _ in range(start, start + chunksize):
+            line = hugefile.next()
+            file_block = file_block + line
+            print 'file_block', type(file_block), file_block
+        readable = readable + file_block
+        # tell where are we in file
+        # file IO is usually buffered so tell() will not be precise for every read
+        stop = hugefile.tell()
+        print 'readable', type(readable), readable
+        print 'reading bytes from %s to %s' % (start, stop)
+        print 'read bytes total:', len(readable)
+        raw_input()
+```
+
+- Reading streaming data sources
+```
+import time, os, sys
+if len(sys.argv) != 2:
+    print >> sys.stderr, "Please specify filename to read"
+filename = sys.argv[1]
+if not os.path.isfile(filename):
+    print >> sys.stderr, "Given file: \"%s\" is not a file" % filename
+with open(filename,'r') as file:
+    # Move to the end of file
+    filesize = os.stat(filename)[6]
+    file.seek(filesize)
+    # endlessly loop
+    while True:
+        where = file.tell()
+        # try reading a line
+        line = file.readline()
+        # if empty, go back
+        if not line:
+            print "Holliday! take a nap"
+            time.sleep(1)
+            file.seek(where)
+        else:
+            # , at the end prevents print to add newline, as readline()
+            # already read that.
+            print line
+```
+**os.stat(filepath):**
+```
+posix.stat_result(st_mode=33279, st_ino=764, st_dev=2050L, st_nlink=1, st_uid=0, st_gid=0, st_size=91814, st_atime=1388984499, st_mtime=1383747999, st_ctime=1388912589)
+```
+
+- Importing image data into NumPy arrays
+```
+# "hello world" from Lena, Using SciPy
+import scipy.misc, matplotlib.pyplot as plt
+lena = scipy.misc.lena()
+print lena.shape, lena.max(), lena.dtype
+# => (512, 512) 245 int64(endian 64-bit long integer)
+plt.gray(), plt.imshow(lena), plt.colorbar(), plt.show()
+```
+```
+import numpy, Image, matplotlib.pyplot as plt
+bug = Image.open('stinkbug.png')
+arr = numpy.array(bug.getdata(), numpy.uint8).reshape(bug.size[1], bug.size[0], 3)
+plt.gray(), plt.imshow(arr), plt.colorbar(), plt.show()
+```
+```
+import matplotlib.pyplot as plt, matplotlib.image as mpimg, numpy as np
+bugfile = 'stinkbug.png'
+bug = mpimg.imread(bugfile)
+imgplot = plt.imshow(bug)
+```
+```
+import matplotlib.pyplot as plt, scipy, numpy
+bug = scipy.misc.imread('stinkbug1.png') # seems not work
+bug = bug[:,:,0] # convert to gray
+plt.figure(), plt.gray()
+plt.subplot(121), plt.imshow(bug)
+# show 'zoomed' region
+zbug = bug[100:350,140:350]
+plt.subplot(122), plt.imshow(zbug)
+plt.show()
+```
+`For large images we recommend using numpy.memmap for memory mapping of images.`
+
+- Generating controlled random datasets
+```
+from pylab import *; from numpy import *
+def moving_average(interval, window_size):
+    '''
+    Compute convoluted window for given size
+    '''
+    window = ones(int(window_size)) / float(window_size)
+    return convolve(interval, window, 'same')
+t = linspace(-4, 4, 100)
+y = sin(t) + randn(len(t))*0.1
+plot(t, y, "k.")
+# compute moving average
+y_av = moving_average(y, 10)
+plot(t, y_av,"r")
+#xlim(0,1000)
+xlabel("Time"), ylabel("Value"), grid(True)
+show()
+```
+`import pylab'` => `pylab.show()`
+`from pylab import *` => `show()`
+```
+import pylab, random
+SAMPLE_SIZE = 100
+# seed random generator, if no argument provided, uses system current time
+random.seed()
+# store generated random values here
+real_rand_vars = []
+for _ in range(SAMPLE_SIZE):
+    new_value = random.random()
+    real_rand_vars.append(new_value)
+# create histogram from data in 10 buckets
+pylab.hist(real_rand_vars, 10)
+# define x and y labels
+pylab.xlabel("Number range")
+pylab.ylabel("Count")
+# show figure
+pylab.show()
+```
+
+---
+#### [§3. Drawing Your First Plots and Customizing Them]()
+1. Defining plot types – bar, line, and stacked charts
+```
+ipython --pylab
+plot([1,2,3,2,3,2,2,1]), plot([4,3,2,1],[1,2,3,4])
+# {x, y} {axes, tickers, tick labels}, plotting area
+from matplotlib.pyplot import *
+x = [1,2,3,4]; y = [5,4,3,2]
+figure()
+subplot(231), plot(x, y)
+subplot(232), bar(x, y)
+subplot(233), barh(x, y) # horizontal bars
+subplot(234), bar(x, y)
+y1 = [7,8,5,3]
+bar(x, y1, bottom=y, color = 'r')
+subplot(235), boxplot(x)
+subplot(236), scatter(x,y)
+show()
+```
+
+
+
+
+
+§4. More Plots and Customizations
+§5. Making 3D Visualizations
+§6. Plotting Charts with Images and Maps
+§7. Using Right Plots to Understand Data
+§8. More on matplotlib Gems
+
+
+---
+~~~
+log: $1. created three days ago, today is Friday, February 28 2014; $2. Thu Aug  6 18:28:19     2015;
+~~~
+
+
+- Protocol: The official procedure or system of rules governing affairs of state or diplomatic occasions.
+
+- protocol, protocol suite
+- architecture / reference model
+- internetwork / catenet (“concatenated” network)
+- bandwidth, capacity, latency
+- packet switching
+- multiplexing
+- in a first-come-first-served (FCFS) fashion
+- time-division multiplexing (TDM), static multiplexing
+- virtual circuits (VCs)
+- digital subscriber line (DSL)
+- connection-oriented, connectionless
+- datagram
+-  message boundaries (record markers)
+- End-to-end argument, Fate Sharing (dumb network with smart end hosts)
+- best-effort delivery
+- mandate
+- implementation architecture
+- Open Systems Interconnection (OSI)
+- link, data-link
+- ink-layer networks
+- checkpointing
+- protocol multiplexing
+- protocol data unit (PDU), transport PDU (TPDU)
+- demultiplexing (demux)
+- intermediate system
+- end-to-end protocols, hop-to-hop protocol
+- multihomed (like a router)
+- forwarding (unicast + broadcast + multicast)
+- Internet Control Message Protocol (ICMP) (ICMPv4 + ICMPv6)
+- Internet Group Management Protocol (IGMP)
+- Datagram Congestion Control Protocol (DCCP)
+- Stream Control Transmission Protocol (SCTP)
+- Internet Assigned Numbers Authority (IANA)
+- Uniform Resource Locators (URLs)
+- p2p (the discovery problem)
+- Denial-of-service (DoS)
+- distributed DoS (DDoS)
+- spoofing, zombie, bot, botnets, black/white hats
+- Dynamic Host Configuration Protocol (DHCP)
+
+
+
+ ---
+~~~
+log: $1 created at Wed Apr  9 11:58:17 CST 2014;
+~~~
+
+
+
+
+
+
+-
+
+---
+### Refs:
+- [TCP/IP详解 卷1：协议（英文版）][tcpip]
+
+[tcpip]: http://book.douban.com/subject/4707725/
+
+
+
+
+
+
+
+
+
+---
+### [TOC][toc]
+- § 1. Introduction
+- § 2. The Internet Address Architecture
+- § 3. Link Layer
+- § 4. ARP: Address Resolution Protocol
+- § 5. The Internet Protocol (IP)
+- § 6. System Configuration: DHCP and Autoconfiguration
+- § 7. Firewalls and Network Address Translation (NAT)
+- § 8. ICMPv4 and ICMPv6: Internet Control Message Protocol
+- § 9. Broadcasting and Local Multicasting (IGMP and MLD)
+- §10. User Datagram Protocol (UDP) and IP Fragmentation
+- §11. Name Resolution and the Domain Name System (DNS)
+- §12. TCP: The Transmission Control Protocol (Preliminaries)
+- §13. TCP Connection Management
+- §14. TCP Timeout and Retransmission
+- §15. TCP Data Flow and Window Management
+- §16. TCP Congestion Control
+- §17. TCP Keepalive
+- §18. Security: EAP, IPsec, TLS, DNSSEC, and DKIM
+
+[toc]: http://my.safaribooksonline.com/book/networking/tcp-ip/9780132808200?bookview=overview
+
+
+
+
+
+
+---
+#### § 1. Introduction
+1. **Architectural Principles**
+ - Packets, Connections, and Datagrams
+ - The End-to-End Argument and Fate Sharing
+     - The end-to-end argument tends to support a design with a “**dumb**” network and “**smart**” systems connected to the network.
+     - **Fate sharing** suggests placing all the necessary state to maintain an active communication association (e.g., virtual connection) at the same location with the communicating endpoints.
+ - Error Control and Flow Control
+
+- **Design and Implementation**
+ - [Layering][osimodel]
+    - Wi-Fi and Ethernet are examples of such multi-access link-layer networks.
+ - Multiplexing, Demultiplexing, and Encapsulation in Layered Implementations
+
+- **The Architecture and Protocols of the TCP/IP Suite**
+ - [The ARPANET Reference Model][arpanetmodel]
+ - Multiplexing, [Demultiplexing(demux)][dm], and Encapsulation in TCP
+ - [Port Numbers][pn]
+    - well-known port numbers (0–1023)
+    - registered port numbers (1024–49151)
+    - dynamic/private port numbers (49152–65535)
+ - **Names, Addresses, and the DNS**
+
+- **Internets, Intranets, and Extranets**
+[**Notes** on routers: routers / ip router / gateway][noterouter]
+
+- **Designing Applications**(设计一种实现方法）
+ - Client/Server
+ - Peer-to-Peer
+ - Application Programming Interfaces (APIs)
+     - sockets or Berkeley sockets
+
+- **Standardization Process**
+ - Request for Comments (RFC) from [IETF][ietf]
+    - **All RFCs are not standards.** (不是所有的都是）
+    - Only so-called **standards-track category RFCs** are considered to be official standards.
+ - Other Standards
+    - [IEEE][ieee]
+    - [W3C][w3c]
+    - [ITU][itu]
+
+- **Implementations and Software Distributions**
+ - The historical **de facto**(fr. 实际上) standard TCP/IP implementations were from the **Computer Systems Research Group (CSRG)** at the University of California, Berkeley.
+[BSD implementation hierarchy.png][bsd]
+ - Today, each popular operating system **has its own implementation**.
+
+- **Attacks Involving the Internet Architecture**
+ - [DoS][dos], [distributed DoS (DDoS)][ddos], [spoofing][spoofing],
+ - [zombie][zombie], [bot][bot], [botnets (robot + network)][botnets]
+
+- **Summary**
+ - it's a whirlwind tour
+![][whirlwind_tour]
+
+[dm]: http://gnat-tang-shared-image.qiniudn.com/201404-demux.png
+[pn]: http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
+[ietf]: http://www.ietf.org/
+[ieee]: http://www.ieee.org/
+[w3c]: http://www.w3.org/
+[itu]: https://www.itu.int/en/Pages/default.aspx
+[bsd]: http://gnat-tang-shared-image.qiniudn.com/201404-bsd_implementation.png
+[osimodel]: http://gnat-tang-shared-image.qiniudn.com/201404-tcp.png
+[arpanetmodel]: http://gnat-tang-shared-image.qiniudn.com/201404-arpa.png
+[noterouter]: http://gnat-tang-shared-image.qiniudn.com/201404-notes_on_routers.png
+[dos]: http://en.wikipedia.org/wiki/Denial-of-service_attack
+[ddos]: http://www.digitalattackmap.com/understanding-ddos/
+[spoofing]: http://en.wikipedia.org/wiki/Spoofing_attack
+[zombie]: http://en.wikipedia.org/wiki/Zombie_(computer_science)
+[bot]: http://netsecurity.about.com/od/frequentlyaskedquestions/qt/pr_bot.htm
+[botnets]: http://en.wikipedia.org/wiki/Botnet
+[whirlwind_tour]: http://gnat-tang-shared-image.qiniudn.com/201404-whirlwind_tour.png
+
+
+
+
+
+
+
+
+---
+#### § 2. The Internet Address Architecture
+1. **Introduction**
+
+- **Expressing IP Addresses**
+ - IPv4: [`dotted-quad and binary notation`][dqbr]
+ - IPv6: [`5f05:2000:80ad:5800:0058:0800:2023:1d71`][ipv6]
+ - IPv4  -> IPv6: `10.0.0.1` -> `::ffff:10.0.0.1`
+
+- **Basic IP Address Structure**
+ - [Classful Addressing][abcde]
+ - [Subnet Addressing][subnet]
+ - Subnet Masks: [v4][smask], [v6][smask6]
+ - Variable-Length Subnet Masks (VLSM)
+ - Broadcast Addresses
+    - [subnet broadcast][broadcast]
+    - local net broadcast(limited broadcast): `255.255.255.255`
+ - IPv6 Addresses and Interface Identifiers
+
+- **CIDR and Aggregation**
+
+- **Special-Use Addresses**
+
+- **Allocation**
+
+- **Unicast Address Assignment**
+
+- **Attacks Involving IP Addresses**
+
+- **Summary**
+
+[dqbr]: http://gnat-tang-shared-image.qiniudn.com/201404-dotted_quad_bin_rep.png
+[ipv6]: http://gnat-tang-shared-image.qiniudn.com/201404-ipv6.png
+[abcde]: http://gnat-tang-shared-image.qiniudn.com/201404-abcde.png
+[subnet]: http://gnat-tang-shared-image.qiniudn.com/201404-subnet.png
+[smask]: http://gnat-tang-shared-image.qiniudn.com/201404-submask.png
+[smask6]: http://gnat-tang-shared-image.qiniudn.com/201404-submask6.png
+[broadcast]: http://gnat-tang-shared-image.qiniudn.com/201404-broadcast.png
+
+
+
+
+
+
+
+
+
+---
+#### § 3. Link Layer
+1. **Introduction**
+
+- **Ethernet and the IEEE 802 LAN/MAN Standards**
+
+- **Full Duplex, Power Save, Autonegotiation, and 802.1X Flow Control**
+
+- **Bridges and Switches**
+
+- **Wireless LANs—IEEE 802.11(Wi-Fi)**
+
+- **Point-to-Point Protocol (PPP)**
+
+- **Loopback**
+
+- **MTU and Path MTU**
+
+- **Tunneling Basics**
+
+- **Attacks on the Link Layer**
+
+- **Summary**
+
+
+
+
+
+
+
+
+
+
+
+
+---
+#### § 4. ARP: Address Resolution Protocol
+1. **Introduction**
+
+- **An Example**
+
+- **ARP Cache**
+
+- **ARP Frame Format**
+
+- **ARP Examples**
+
+- **ARP Cache Timeout**
+
+- **Proxy ARP**
+
+- **Gratuitous ARP and Address Conflict Detection (ACD)**
+
+- **The arp Command**
+
+- **Using ARP to Set an Embedded Device’s IPv4 Address**
+
+- **Attacks Involving ARP**
+
+- **Summary**
+
+
+
+
+
+
+
+
+
+
+
+
+---
+#### § 5. The Internet Protocol (IP)
+1. Introduction
+- IPv4 and IPv6 Headers
+- IPv6 Extension Headers
+- IP Forwarding
+- Mobile IP
+- Host Processing of IP Datagrams
+- Attacks Involving IP
+- Summary
+
+
+
+
+
+
+
+
+
+---
+#### § 6. System Configuration: DHCP and Autoconfiguration
+1. Introduction
+- Dynamic Host Configuration Protocol (DHCP)
+- Stateless Address Autoconfiguration (SLAAC)
+- DHCP and DNS Interaction
+- PPP over Ethernet (PPPoE)
+- Attacks Involving System Configuration
+- Summary
+
+
+
+
+
+
+
+
+
+
+
+
+---
+#### § 7. Firewalls and Network Address Translation (NAT)
+1. Introduction
+- Firewalls
+- Network Address Translation (NAT)
+- NAT Traversal
+- Configuring Packet-Filtering Firewalls and NATs
+- NAT for IPv4/IPv6 Coexistence and Transition
+- Attacks Involving Firewalls and NATs
+- Summary
+
+
+
+
+
+
+
+
+---
+#### § 8. ICMPv4 and ICMPv6: Internet Control Message Protocol
+1. Introduction
+- ICMP Messages
+- ICMP Error Messages
+- ICMP Query/Informational Messages
+- Neighbor Discovery in IPv6
+- Translating ICMPv4 and ICMPv6
+- Attacks Involving ICMP
+- Summary
+
+
+
+
+
+
+
+
+
+---
+#### § 9. Broadcasting and Local Multicasting (IGMP and MLD)
+1. Introduction
+- Broadcasting
+- Multicasting
+- The Internet Group Management Protocol (IGMP) and Multicast Listener Discovery Protocol (MLD)
+- Attacks Involving IGMP and MLD
+- Summary
+
+
+
+
+
+
+
+---
+#### §10. User Datagram Protocol (UDP) and IP Fragmentation
+1. Introduction
+- UDP Header
+- UDP Checksum
+- Examples
+- UDP and IPv6
+- UDP-Lite
+- IP Fragmentation
+- Path MTU Discovery with UDP
+- Interaction between IP Fragmentation and ARP/ND
+- Maximum UDP Datagram Size
+- UDP Server Design
+- Translating UDP/IPv4 and UDP/IPv6 Datagrams
+- UDP in the Internet
+- Attacks Involving UDP and IP Fragmentation
+- Summary
+
+
+
+
+
+
+---
+#### §11. Name Resolution and the Domain Name System (DNS)
+1. Introduction
+- The DNS Name Space
+- Name Servers and Zones
+- Caching
+- The DNS Protocol
+- Sort Lists, Round-Robin, and Split DNS
+- Open DNS Servers and DynDNS
+- Transparency and Extensibility
+- Translating DNS from IPv4 to IPv6 (DNS64)
+- LLMNR and mDNS
+- LDAP
+- Attacks on the DNS
+- Summary
+
+
+
+
+
+
+
+
+---
+#### §12. TCP: The Transmission Control Protocol (Preliminaries)
+1. Introduction
+- Introduction to TCP
+- TCP Header and Encapsulation
+- Summary
+
+
+
+
+
+
+
+
+
+---
+#### §13. TCP Connection Management
+1. Introduction
+- TCP Connection Establishment and Termination
+- TCP Options
+- Path MTU Discovery with TCP
+- TCP State Transitions
+- Reset Segments
+- TCP Server Operation
+- Attacks Involving TCP Connection Management
+- Summary
+
+
+
+
+
+
+
+
+---
+#### §14. TCP Timeout and Retransmission
+1. Introduction
+- Simple Timeout and Retransmission Example
+- Setting the Retransmission Timeout (RTO)
+- Timer-Based Retransmission
+- Fast Retransmit
+- Retransmission with Selective Acknowledgments
+- Spurious Timeouts and Retransmissions
+- Packet Reordering and Duplication
+- Destination Metrics
+- Repacketization
+- Attacks Involving TCP Retransmission
+- Summary
+
+
+
+
+
+
+
+
+
+---
+#### §15. TCP Data Flow and Window Management
+1. Introduction
+- Interactive Communication
+- Delayed Acknowledgments
+- Nagle Algorithm
+- Flow Control and Window Management
+- Urgent Mechanism
+- Attacks Involving Window Management
+- Summary
+
+
+
+
+
+---
+#### §16. TCP Congestion Control
+1. Introduction
+- The Classic Algorithms
+- Evolution of the Standard Algorithms
+- Handling Spurious RTOs—the Eifel Response Algorithm
+- An Extended Example
+- Sharing Congestion State
+- TCP Friendliness
+- TCP in High-Speed Environments
+- Delay-Based Congestion Control			     -
+- Buffer Bloat
+- Active Queue Management and ECN
+- Attacks Involving TCP Congestion Control
+- Summary
+
+
+
+
+
+
+
+
+
+---
+#### §17. TCP Keepalive
+1. Introduction
+- Description
+- Attacks Involving TCP Keepalives
+- Summary
+
+
+
+
+---
+#### §18. Security: EAP, IPsec, TLS, DNSSEC, and DKIM
+1. Introduction
+- Basic Principles of Information Security
+- Threats to Network Communication
+- Basic Cryptography and Security Mechanisms
+- Certificates, Certificate Authorities (CAs), and PKIs
+- TCP/IP Security Protocols and Layering
+- Network Access Control: 802.1X, 802.1AE, EAP, and PANA
+- Layer 3 IP Security (IPsec)
+- Transport Layer Security (TLS and DTLS)
+- DNS Security (DNSSEC)
+- DomainKeys Identified Mail (DKIM)
+- Attacks on Security Protocols
+- Summary
+
+
+
+
+
+
+---
+~~~
+log: $1 created at Wed Apr  9 11:58:17 CST 2014;
+~~~
+
+
+---
+[**Main**](http://jianshu.io/p/a160816a18b2)[** » 读书笔记**](http://jianshu.io/p/d74b041f0ceb)
+
+---
+### [Refs]()
+- [**Ubuntu Skills**](http://wiki.ubuntu.org.cn/UbuntuSkills)
+
+---
+### [TOC]()
+- 1 前言
+- 2 安装升级
+- 3 系统
+- 4 硬盘
+- 5 进程
+- 6 ADSL
+- 7 网络
+- 8 iptables
+- 9 安全
+- 10 服务
+- 11 用户管理
+- 12 设置
+- 13 中文
+- 14 文件管理
+- 15 影像
+- 16 压缩
+- 17 Nautilus
+- 18 日期和时间
+- 19 工作区
+- 20 控制台
+- 21 数据库
+- 22 控制
+- 23 统计
+- 24 编辑器
+- 25 编译和打包
+- 26 其它
+- 27 More
+---
+~~~
+                                  Run, Forest, Run
+~~~
+---
+#### [1 前言]()
+shell, console, #, $, sudo
+> 不完全，乃摘抄
+For more, see my other post:
+[**Linux Shell Scripting Cookbook, Second Edition**](http://jianshu.io/p/87eefaf092c5)
+
+---
+#### [2 安装升级]()
+```
+apt-cache search <正则表达式> # or: aptitude search <RegExpr>
+apt-cache stats # 显示系统安装包的统计信息
+apt-cache pkgnames # 显示系统全部可用包的名称
+apt-cache show cmatrix # 显示cmatrix包的信息
+apt-cache  depends <xxx>
+apt-cache rdepends <xxx>
+sudo apt-cdrom add # 增加一个光盘源
+sudo apt-get update # (这一步更新包列表)
+sudo apt-get dist-upgrade # (这一步安装所有可用更新)
+sudo apt-get upgrade # (这一步安装应用程序更新，不安装新内核等)
+dpkg -L <xxx> # 查看软件xxx安装内容
+dpkg -S <filename> # 查找文件属于哪个包, or: apt-file search <filename>
+dpkg -l | less # 查看已经安装了哪些包
+# 清除所有已删除包的残馀配置文件
+dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P
+```
+
+```
+sudo auto-apt run ./configure # 编译时缺少h文件的自动处理, fantastic!
+ls /var/cache/apt/archives # 查看安装软件时下载包的临时存放目录
+dpkg --get-selections | grep -v deinstall > ~/somefile # 从上面备份的安装包的列表文件恢复所有包
+dpkg --set-selections < ~/somefile # 从上面备份的安装包的列表文件恢复所有包
+sudo dselect # Debian package management frontend
+sudo apt-get autoclean # 清理旧版本的软件缓存
+sudo apt-get clean # 清理所有软件缓存
+sudo apt-get autoremove # 删除系统不再使用的孤立软件
+sudo apt-get autoremove --purge
+     apt-get -qq --print-uris install ssh | cut -d\' -f2 # 查看包在服务器上面的地址
+sudo apt-get --purge remove liborbit2 # Remove Gnome
+sudo apt-get --purge remove libqt3-mt libqtcore4 # Remove KDE
+sudo tasksel install lamp-server # 一键安装 LAMP 服务
+sudo aptitude purge ~ilinux-image-.*\(\!\(`uname -r`\|generic-.*\)\) # 删除旧内核
+```
+
+---
+#### [3 系统]()
+```
+uname -a # system information:all
+getconf LONG_BIT # 查看系统是32位还是64位
+file /sbin/init # uname -m
+# 查看Ubuntu版本, LSB, Linux Standard Base
+lsb_release -a # `cat /etc/lsb-release` doesn't work
+lsmod # Show the status of modules in the Linux Kernel
+lspci # list all PCI devices
+lsusb # list USB devices, better choice: lsusb -v
+ethtool eth0
+ethtool -s eth0 wol g # activate Wake on LAN
+dmidecode -t memory # 查看内存型号
+free # check memory usage
+ulimit -a
+ipcs -l # provide information on ipc facilities
+xrandr # primitive command line interface to RandR extension, about DISPLAY
+```
+
+---
+###  [4 硬盘]()
+```
+lsblk
+sudo mount -t smbfs -o  username=xxx,password=xxx,iocharset=utf8 //192.168.1.1/share /mnt/share
+hdparm
+du -hs <folder> # fantastic
+```
+
+---
+###  [5 进程]()
+```
+top # 动态显示进程执行情况
+ps -AFL
+w # better than who
+xkill # select window to be killed
+lsof # list open files
+nohup
+```
+
+---
+### [6 ADSL]()
+```
+
+```
+
+---
+### [7 网络]()
+```
+arping IP地址 # 根据IP查网卡地址
+nmblookup -A IP地址 # 根据IP查电脑名, I don't have that
+ifconfig eth0 |awk '/inet/ {split($2,x,":");print x[2]}' # check your ip address
+lsof -i :80
+# check you MAC address
+ifconfig eth0 | head -1 | awk '{print $5}' # or
+cat /sys/class/net/eth0/address # I prefer `ifconfig wlan0`
+# 立即让网络支持nat
+echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
+sudo iptables -t nat -I POSTROUTING -j MASQUERADE
+# 查看路由信息
+netstat -rn
+route -n
+# 修改网卡MAC地址的方法
+sudo ifconfig eth0 down #关闭网卡
+sudo ifconfig eth0 hw ether 00:AA:BB:CC:DD:EE #然后改地址
+sudo ifconfig eth0 up #然后启动网卡
+whois baidu.com
+traceroute baidu.com
+dhclient # 重新从服务器获得IP地址, Dynamic Host Configuration Protocol Client
+# 如何查看HTTP头
+w3m -dump_head http://www.example.com
+# 或 curl --head http://www.example.com
+# curl - transfer a URL
+python -m SimpleHTTPServer # 进入目录后运行, to share this folder, fantastic !!!
+```
+
+---
+### [8 iptables]()
+```
+# 防止外网用内网IP欺骗
+# 查看 / 取消 filter规则
+# 阻止一个IP连接本机
+# 开启 / 关闭 端口
+# 限制访问80端口的外部IP最大只有50个并发
+# 禁止一个IP或者一个IP段访问服务器端口服务
+```
+
+---
+### [9 安全]()
+```
+# 检查本地是否存在安全隐患: rkhunter
+# 如何安装杀毒软件: clamav
+# Linux下可以使用的商业杀毒软件: kaspersky, avast, BitDefender
+# 防止服务器被暴力破解ssh密码: denyhosts
+# 查看系统
+last # and, `lastlog`
+```
+
+---
+### [10 服务]()
+```
+# 添加 / 删除 一个服务
+sudo update-rc.d 服务名 defaults 99
+# 临时 启动 / 重启 / 关闭 一个服务
+```
+---
+### [11 用户管理]()
+```
+adduser, deluser # 但是最好不要真删除一个用户，把他的密码弄的登不进去就行
+passwd， chfn
+# 禁用/启用某个帐户
+usermod -L/-U <userid>
+passwd  -l/-u <userid>
+usermod -G admin -a 用户名
+```
+
+---
+### [12 设置]()
+```
+# configure Java
+update-alternatives --config java
+# 设置系统http / https代理
+xport http_proxy=http://xx.xx.xx.xx:xxx # same for ${https_proxy}
+# 修改系统登录信息
+```
+
+---
+### [13 中文]()
+```
+im-switch -c # switch input method
+# check encoding
+enca <file> # file <file>
+# 转换文件名由GBK为UTF8
+convmv -r -f cp936 -t utf8 --notest --nosmart *
+iconv -f GBK -t UTF-8 gbkfile.txt -o utf8file.txt
+iconv -f gbk -t utf8 $i > newfile
+# 转换 mp3 标签编码 #
+# 控制台下显示中文 #
+# lftp 登录远程Windows中文FTP #　
+# 乱码
+apt-get install poppler-data # PDF 乱码
+# unzip 中文文件名乱码
+apt-get install p7zip-full # install 7zip
+export LANG=zh_CN.GBK  #临时在控制台修改环境为zh_CN.GBK，然后解压缩即可
+7za / 7zr / 7z e doc.zip # unzip it
+# 查看具体字体名称
+fc-match monospace #=>: LiberationMono-Regular.ttf: "Liberation Mono" "Regular"
+```
+
+---
+### [14 文件管理]()
+```
+> file.txt # or `touch file.txt`, I recommend `> file.txt`, you can try it
+cat, more, less, nl, cut, grep, find, tail, tailf, sed
+# 上面这些工具还是要系统的看一下，不能只学几个Skills #
+# 快速查找某个文件
+whereis <file> # whereis cat
+find <目录> -name <文件名>
+locate 文件名 # run `updatedb` first
+vimdiff <file1> <file2>
+# Important!
+apropos <xxx>
+man -t <xxx>
+# 通过ssh传输文件
+scp -rp /path/filename username@remoteIP:/path #将本地文件拷贝到服务器上
+rsync -avh /path/to/file/or/dir user@host:/path/to/dir/or/file
+# rename
+rename 's/.rm$/.rmvb/' *  # rm改为rmvb\
+rename 'tr/A-Z/a-z/' *
+rm -- --help.txt 或者 rm ./--help.txt # 删除特殊文件名的文件，如文件名：--help.txt
+ls -d */ 或 echo */ # Gnat: echo 用得也太雕了。。。
+find, rsync, lftp
+# dos2unix
+ex "+:%s/[Ctrl+V][Enter]//g" "+:wq"  filename  # ...Dont understand
+dos2unix filename
+tr -d '\15\32' < dosfile.txt > unixfile.txt
+awk '{ sub("\r$", ""); print }' dosfile.txt > unixfile.txt
+# unix2dos
+awk 'sub("$", "\r")' unixfile.txt > dosfile.txt
+# Important
+mkisofs # out of date
+genisoimage # instead, recommend you use this
+# pdf processing, recommand use `unoconv`, see: http://jianshu.io/p/037fb6b33985
+# 给文件增加行号
+nl HelloWorld.java > HelloWorldCode.java
+cat -n file > file_with_line_num # I prefer this, my method
+```
+
+---
+### [15 影像]()
+```
+sudo apt-get install swfmill # decode swf
+# 如何保存串流视频(mms/rtsp)
+mencoder -vf harddup -oac mp3lame -lameopts vbr=3 -ovc xvid -xvidencopts fixed_quant=4 -of avi foo.rmvb bar.avi # rmvb » avi
+mencoder -oac mp3lame -lameopts aq=7:vbr=2:q=6 -srate 44100 -ovc xvid -xvidencopts fixed_quant=4 -of avi foo.vob bar.avi # DVD » avi
+ffmpeg2theora --optimize --deinterlace <film> # any format to ogv
+# CD 抓轨为 mp3 (有损)/Flac (无损)
+abcde -o mp3 -b
+abcde -o flac -b
+# 批量缩小图片到30%
+for i in *.jpg; do convert -resize 30%x30% "$i" "sm-$i"; done
+# 批量转换jpg到png （通常都是png2jpg吧，省空间）
+for i in *.jpg; do convert $i `echo $i | sed -e 's/jpg$/png/'`; done
+# text2img
+convert -size 200x30 xc:transparent -font /usr/share/fonts/truetype/wqy/wqy-microhei.ttc -fill red -pointsize 16 -draw "text 5,15 '测试中文转为图片'" test.png # fantastic!
+optipng, pngcrush, convert *.jpg out.pdf
+# pdf2txt, pdf2png, jpg info(identify -verbose), mkv info(mkvtoolnix, `mkvinfo`)
+# 抓取桌面操作的视频
+ffmpeg -f x11grab -s wxga -r 25 -i :0.0 -sameq /tmp/out.mpg
+# 命令行读出文本
+espeak -vzh "从前有座山"
+# 命令行抓屏, both two utils cant be used in tty1
+scrot -s screenshot.png
+gnome-screenshot
+```
+
+---
+### [16 压缩]()
+```
+apt-get install p7zip p7zip-full p7zip-rar, unrar, zip, unzip, lha, cabextract
+7z, 7za, 7zr
+```
+
+---
+### [17 Nautilus - 就是 file explorer]()
+```
+# Ctrl+h
+# Ctrl+l
+# 特殊 URI 地址
+* computer:/// - 全部挂载的设备和网络
+* network:/// - 浏览可用的网络
+* burn:/// - 一个刻录 CDs/DVDs 的数据虚拟目录
+* smb:/// - 可用的 windows/samba 网络资源
+* x-nautilus-desktop:/// - 桌面项目和图标
+* file:/// - 本地文件
+* trash:/// - 本地回收站目录
+* ftp:// - FTP 文件夹
+* ssh:// - SSH 文件夹
+* fonts:/// - 字体文件夹，可将字体文件拖到此处以完成安装
+* themes:/// - 系统主题文件夹
+##############################################
+fc-list |grep 文 # installed fonts, in [~/.fonts] or [/usr/share/fonts]
+```
+
+---
+### [18 日期和时间]()
+```
+cal, date, hwclock, ntpdate (ntpdate time.nist.gov)
+# sudo apt-get install lunar
+date '+%Y %m %d %H' |xargs lunar --utf8
+dpkg-reconfigure tzdata
+date "+%s" #=> 1393332744
+date -d@1393332744 #=> Tue Feb 25 20:52:24 CST 2014
+```
+
+---
+### [19 工作区]()
+```
+# Ctrl + ALT + ←
+# Ctrl + ALT + →
+# 或者，将滚轮鼠标放在工作区图标上滚动
+```
+---
+**on the top: workspace switcher**
+![](http://gnat-tang-shared-image.qiniudn.com/blog-screen.png)
+
+---
+**on the right: a bigger workspace switcher**
+![](http://gnat-tang-shared-image.qiniudn.com/blog-screen2.png)
+
+---
+### [20 控制台]()
+```
+### Menu: Edit » Keyboard Shortcuts
+# File
+Control_Shift_T: New Tab
+Control_Shift_N: New Window
+Control_Shift_W: Close Tab
+Control_Shift_Q: Close Window
+# Edit, View
+Control_Shift_C: Copy
+Control_Shift_V: Paste
+F11, Zoom In, Zoom Out, Normal Size(Control_O)
+# Tabs
+Control_PageUp: Previous Tab
+Control_PageDn: Next     Tab
+# 控制台下滚屏
+Shift_PageUp / Shift_PageDn
+# very fantastic!
+setterm -dump n(n:1~7)
+sudo !! # 执行something权限不够，用`sudo !!` 以root的身份执行上一条命令
+```
+
+---
+### [21 数据库]()
+```
+# mysql的数据库存放路径: /var/lib/mysql
+# 从mysql中导出和导入数据
+# 忘了mysql的root口令怎么办
+# 修改mysql的root口令
+```
+
+---
+### [22 控制]()
+```
+# Fantastic: 关闭显示器
+xset dpms force off
+# sudo apt-get install cpufrequtils
+cpufreq-info
+cpufreq-set -g {powersave, userspace, ondemand, conservative, performance} # choose mode
+# Shutdown
+halt, shutdown -h now
+shutdown -h 20:00, shutdown -h +60 # 60 mins later
+reboot, shutdown -r now, init 3
+# Customize SSH connection prompt / TTY1 prompt
+emacs -nw /etc/motd
+synclient touchpadoff=1 # turn off touchpad, don't work on my computer...
+# apt-get install libnotify-bin
+notify-send "hello world"
+```
+
+---
+### [23 统计]()
+```
+# 统计最常用的10条命令
+history | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl | head -n10
+
+```
+works in `bash`, but not `zsh`
+![](http://gnat-tang-shared-image.qiniudn.com/blog-count.png)
+```
+# calc words frequency
+awk '{arr[$1]+=1 }END{for(i in arr){print arr[i]"\t"i}}' FILE_NAME | sort -rn
+```
+
+---
+### [24 编辑器]()
+```
+# Too much Vim skills
+```
+- [Emacs 常见问题及其解决方法](http://forum.ubuntu.com.cn/viewtopic.php?t=13560)
+
+---
+### [25 编译和打包]()
+```
+sudo apt-get install build-essential
+./configure && make && make install
+# get source
+sudo apt-get source mysql-server
+# 安装编译打包环境
+sudo apt-get build-dep mysql-server
+# 重新编译并打包Debian化的源码
+dpkg-buildpackage -rfakeroot
+# 获得源码并重新打包
+apt-get source php5-cgi
+#或手工下载源码后使用 dpkg-source -x  php5_5.2.6.dfsg.1-3ubuntu4.1.dsc 解开源码
+sudo apt-get build-dep php5-cgi
+cd php5-5.2.6.dfsg.1
+dpkg-buildpackage -rfakeroot -uc -b
+```
+
+---
+### [26 其它]()
+```
+# right click menu with "open terminal here"
+sudo apt-get install nautilus-open-terminal
+# 清除桌面挂载硬盘图标
+gconftool-2 --set /apps/nautilus/desktop/volumes_visible 0 --type bool
+# man 如何显示彩色字符, zsh already has it
+```
+
+---
+### [27 More]()
+`long command` <C-j> `other command` <enter> `#=> back to long command`
+
+---
+| [**建议/意见**](http://jianshu.io/p/63a956887fd4) | [**Errata**](http://jianshu.io/p/e1e05fa9e0a3) |  [**闲话废话**](http://jianshu.io/p/2d3d4348074f) |  |
+| :---: | :---: | :---: | :---: |
+| | | | | |
+~~~
+log: $1. finished at Wednesday, February 26 2014; $2. modified Thursday, March 06 2014;
+~~~
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+#### Refs
+
+* [巴朗口袋指南 (豆瓣)][balang]
+
+[balang]: http://book.douban.com/subject/10544865/
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+#### 前言
+
+* 拼写很重要
+* 拼写理应得到重视
+* 掌握拼写技巧很重要 (我注: 其实我看这本书是为了打字时能更好地"断字")
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+#### 如何成为一个更好的拼写者
+
+1. 要知道, 拼写学习是个一辈子的事
+2. 拼写和发音可以有很多种, 但不总是对的
+3. 通过发音记单词拼写
+4. 美式发音的历史决定了它总有发音的例外
+5. 一些拼写策略:
+    1. 学新词 (多读多写, 形象记忆)
+    2. 用听觉/视觉学习新词
+    3. 列举自己常查的词, 规则
+    4. 尝试新方法, 不断探索更有效学习策略
+    5. 使用一些辅导书籍, 比如这本
+
+
+
+--------------------------------------------------------------------------------
+
+#### 拼写规则
+
+1. 复数 (p.4-19)
+
+2. 特殊词尾
+    - able/ible
+        1) 完整单词 (depend, dependable), (break, breakable)
+           不完整单词(aud, audible), (ed, edible)
+        2) 以不发音的 e 结尾
+           前有 c,g 则 + able (manage,  manageable)
+           否则, 去掉 e + ible (love, lovable), (use, usable)
+
+3. 前缀及其同化
+
+同化: 根据单词发音改变前缀拼写, 这种调整成为同化
+
+4. 复合名词和复合形容词
+
+hip-hop
+
+
+--------------------
+
+#### 两万四千词即时查询
+
+(本书主要的部分)
+
+
+-------------------
+
+#### 同音词: 经常混淆和拼错的词
+
+
+1. 同形词和同音词
+homograph  ( homonym (一词多意) + 第二类如: schedule, 各地发音可能不一样)
+homophone:
+
+2. 同音异形词
+
+| 美式英语| 英式英语|
+| :---: | :---: |
+| e, encyclopedia | ae, encyclopaedia |
+| e, fetus| oe, foetus|
+| er, meter| re, metre |
+| f, draft | ugh, draught |
+| ize, apologize | ise, apologise |
+| l, traveler | ll, traveller |
+| o, color | ou, colour |
+| se, defense | ce, defence |
+| ment, judgment | ment, judgement |
+
+
+3.
+
+同音词表
+
+a          ,ay/aye     ,eh   ;
+ac.cept    ,ex.cept    ,     ;
+ac.ci.dence,ac.ci.dents,     ;
+ad         ,add        ,     ;
+adds       ,ads        ,adze ;
+adieu      ,ado        ,     ;
+ae.rie/aery,ai.ry      ,     ;
+
+
+
+
+#### A, An, The
+
+- Boys often like dogs very much. **The** animals can listen to their masters.
+- Silicon does not occur in **the** free state in nature, and very few people have seen the pure substance.
+- **the** Republic of France, ~~the China~~
+- **the** Pacific, **the** Mediterranean, **the** moon, **the** most important problem
+- The roof will collapse at **a** blow.
+- The roof will collapse at **one** blow.
+- **the** red and white flower
+- **the** red and **the** white flower
+- **little** water
+- **a little** water
+- three of us
+- **the** three of us
+- out of question
+- out of **the** question
+- **the** building materials, **the** moving water, **the** wasted energy
+- **The** oil and **the** textile industry have exceeded the plan.
+- He is **an** engineer and manager.
+- **The** telephone was invented in 1876.
+- **Many a** student speaks English well.
+- **Both the** answers are wrong.
+- China soccer youth to train in (the) cities. （没看懂。。。）
+- the careless use of gun accident
+- **a piece of** furniture
+- **a cake of** soap
+- **various branches of** knowledge
+- **a** pressure of three atmospheres
+
+
+#### About, Around, Round
+
+- There is a white fence **about** the house.
+- There is a strange smell **about** him.
+- go about
+- get about / around / round
+- kick about / around
+- look about
+- a book **about** Asia
+- a book **on** Asia
+- He set **about** writing his report. (start doing)
+- She is **about** to speak.
+- Few people seemed **about**
+- go a long way **about**
+- bring about, come about
+- play about, play around, play round
+- nose **about** for information
+- leave something **about**
+- order sb. **about**
+
+
+#### Above
+
+- above the sea
+- He may think himself **above** others
+- He may get **above** himself
+- Our physics laboratory is just **above**
+- What type of error is similar to **the above**?
+
+
+#### Across
+
+- across the world, across the years
+- across the river
+- come across her mind
+- go / move / run / walk across
+- sail far across the sea
+- be across the street
+- the music from **across the street**
+- a tree lies across the railway
+- be connected across, pass across
+- come across
+- drop across
+- fall across sb.
+- ran across sb.
+- run across the field
+- run sb. across the field
+- be across at 8 (o'clock)
+- The river is one kilometer across (in width)
+- bring sb. across
+- glance across at sb.
+- put ... across
+- row across （划船过河）
+- saw a plank across
+- tear the letter across
+- He put himself across (to the voters) as a suitable leader.
+- cut across the field （走捷径）
+- cut across the plan （打乱计划）
+- put this deal across
+- If your idea is put across well, the students will understand it.
+
+
+#### After
+
+- After you
+- They went there after natural gas.
+- Soon after she arrived she began to work at Bank of China.
+- That happened long after.
+- go / run after a girl
+- follow after sth.
+- keep after sb.
+- hunger/thirst after/for sth.
+- pant/pine after/for knowledge
+- feel after/for the switch (of lights)
+- take after sb. （长得像）
+- Read after me
+
+---
+
+这是很久以前的笔记。那时候的策略有误。在选择正确打开方式后，终于 ... 把本书读完了。
+
+看书，尤其是单词书、语法书之类，应该先看前一百页的第一个十页，再看第二个一百页的第一个十页。知道看到本书最后，再回去看回顾第一个十页，接着看每一百页的第二个十页。以此看完全书。
+
+图示：
+
+这有一本五百页的书，还没读
+
+~~~
+[==================================================](100%)
+|---100----|---200---|---300---|---400---|----500--|
+~~~
+
+第一天读了前十页
+
+~~~
+[>=================================================](100%)
+~~~
+
+五天就刷到了最后 [^five]
+
+~~~
+[>=========>=========>=========>=========>=========](100%)
+~~~
+
+十天、二十天
+
+~~~
+[>>========>>========>>========>>========>>========](100%)
+~~~
+~~~
+[>>>>======>>>>======>>>>======>>>>======>>>>======](100%)
+~~~
+
+五十天，大功告成
+
+~~~
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>](100%)
+~~~
+
+当然，我可不建议一本书用了五十天才看完。越快刷一遍越好，多复习，多反复。通常用五天刷一本书为好。不好的内容直接用笔涂掉，绝不再看。
+
+切记：
+
+> 一鼓作气，再而衰，三而竭
+
+
+---
+
+~~~
+log: $1. Wed Jul  9 21:56:04     2014; $2. Fri Nov 28 23:50:03     2014;
+~~~
+
+[^five]: 不知道你有没有书，看了头每次拿起都在重复读前几十页。此法可以避了一本书死活读不到最后一页的悲剧。
+
+
+---
+###Refs
+- 新东方 [魔男][gexu] 的 [西方文明简史导读资料集][guide]
+- [孤独的阅读者](http://www.gexu.org/)
+- [Online Practice: cengage][online_practice]
+
+[gexu]: http://weibo.com/gexucn?from=page_100505_home&wvr=5.1&mod=myfollow
+[guide]: http://pan.baidu.com/share/link?shareid=3172824343&uk=2284823654
+
+
+
+
+
+
+
+
+
+
+---
+### Misc
+1. **阅读前须知**
+ - 阅读顺序：乱序 + 逆序：按照兴趣来，引发疑问。
+ - 必读：章前开篇，章后总结。
+ - 思考: 5W1H
+    - **What**, **Why**, **How** (high level)
+    - Who, When, Where (low level)
+
+- **Effectiveness vs. Efficiency**
+ - 所有的方法都有效
+ - 不是所有的方法都有效率
+ - 时间是宝贵的
+
+- [阅读辅助: Online Practice][online_practice]
+
+ -  glossary 把知识固定下来
+ - Table of Contents 有助于看清话题的走向
+ - Maps, Chronology
+
+- 一些观点
+ - 不要贪多，不要妄想
+ - 纵向思考
+ - Extraction of Key Words
+ - 硬技能， 软实力
+ - 要好玩。愿意“梅花香自苦寒来”那就苦着吧。
+
+[online_practice]: http://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&flag=student&product_isbn_issn=9780495571476&discipline_number=21
+
+
+
+
+
+
+---
+~~~
+log: $1. Sat Apr 12 20:39:52 CST 2014: created days ago;
+~~~
+
+
+
+
+
+
+---
+
+#### Refs
+
+- [鳥哥的 Linux 私房菜 - 基礎學習篇目錄][vbird]
+- [Linux Shell Scripting Cookbook, Second Edition][linux-shell]
+
+[vbird]: http://linux.vbird.org/linux_basic/
+[linux-shell]: http://jianshu.io/p/87eefaf092c5
+
+
+
+---
+
+#### TOC
+
+- 第一部份：Linux的規劃與安裝
+- 第二部份：Linux檔案、目錄與磁碟格式
+- 第三部份：學習Shell與Shell Scripts
+- 第四部份：Linux使用者管理
+- 第五部份：Linux系統管理員
+- 第六部份：其他備份文章
+
+
+
+
+
+
+~~~
+                             第一部份：Linux的規劃與安裝
+~~~
+
+---
+
+#### [第零章、计算器概论][basic]
+
+1. 计算机硬件癿五大单元
+ - **输入单元**
+ - **输出单元**
+ - CPU 内部的 **控制单元**、**算数逻辑单元** 与 **主存储器**
+     - **CISC**: Complex Instruction Set Computer
+     - **RISC**: Reduced Instruction Set Computer
+
+关键词：
+
+- [外围设备][peripheral]：打印机、显示器等
+- 电脑分类：
+ - 超級電腦(Supercomputer)
+ - 大型電腦(Mainframe Computer)
+ - 迷你電腦(Minicomputer)
+ - 工作站(Workstation)
+ - 微電腦(Microcomputer)
+- 单位转化
+
+| 進位制 | K | M | G | T | P |
+| :--: | :--: | :--: | :--: | :--: | :--: |
+| 二進位 | 1024 | 1024K | 1024M | 1024G | 1024T |
+| 十進位 | 1000 | 1000K | 1000M | 1000G | 1000T |
+
+- Hz，Mbps，南北桥，南桥（快），北桥（慢）， CPU，内存，RAM，ROM，BIOS，VGA（显卡），PCI，硬盘，Cylinder，Track，Sector，IDE，SATA，编译器，作业系统（操作系统），Kernel，System Call，驱动，应用程序。
+
+
+[basic]: http://linux.vbird.org/linux_basic/0105computers.php
+[peripheral]: http://baike.baidu.com/link?url=jLp6KwT3RT1Psz5q06ErUamX56w6DUZ28eumNr2G9jGJa_WoonlNZ6RDCRrMez2U
+
+
+
+
+
+
+---
+
+#### [第一章、Linux是什麼？][linux-intro]
+
+1. Linux就是一套作業系統
+![][linux-arch]
+
+- Linux之前，Unix的歷史
+ - 1969年以前：一個偉大的夢想，Bell,MIT與GE的『**Multics**』系統
+ - 1969年：[**Ken Thompson**][kt] 的小型 file server system (Unix的原型)
+ - 1973年：[**Ritchie**][ritchie] 等人以C語言寫出第一個正式 Unix 核心
+ - 1977年：重要的 Unix 分支--[BSD][bsd] 的誕生
+ - 1979年：重要的 [System V][system-v] 架構與版權宣告， 可以在個人電腦上面安裝與運作了
+ - 1984年之一：x86 架構的 [Minix][minix] 作業系統誕生
+ - 1984年之二：[GNU][gnu] 計畫與 FSF 基金會的成立
+ - 1988年：圖形介面 XFree86 計畫
+ - 1991年：芬蘭大學生 [Linus Torvalds][linus-torvalds] 的一則簡訊
+
+- Linux
+ - Linux的核心版本
+    - 主、次版本為奇數：發展中版本(development)
+    - 主、次版本為偶數：穩定版本(stable)
+ - Linux distributions
+![][distro]
+ - 各大Linux Distributions的主要異同：支援標準！
+    - [LSB: Linux Standard Base][lsb]
+    - [FHS: File system Hierarchy Standard][fhs]
+    - [POSIX: Portable Operating System Interface][posix]
+ - Linux的優缺點
+
+[linux-intro]: http://linux.vbird.org/linux_basic/0110whatislinux.php
+[linux-arch]: http://linux.vbird.org/linux_basic/0110whatislinux/os_01.gif
+[kt]: http://en.wikipedia.org/wiki/Ken_Thompson
+[ritchie]: http://en.wikipedia.org/wiki/Dennis_Ritchie
+[bsd]: http://en.wikipedia.org/wiki/Berkeley_Software_Distribution "Berkeley Software Distribution"
+[system-v]: http://en.wikipedia.org/wiki/System_V
+[minix]: http://zh.wikipedia.org/wiki/MINIX
+[linus-torvalds]: http://en.wikipedia.org/wiki/Linus_Torvalds
+[distro]: http://linux.vbird.org/linux_basic/0110whatislinux/distribution.gif
+[lsb]: http://en.wikipedia.org/wiki/Linux_Standard_Base
+[fhs]: http://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
+[posix]: http://en.wikipedia.org/wiki/POSIX
+[gnu]: https://en.wikipedia.org/wiki/GNU_Project
+
+
+
+
+
+---
+
+#### [第二章、如何正確有效的學習 Linux][how-to-learn-linux]
+
+1. Linux當前的應用角色
+ - 企业用作服务器，科学计算
+ - 个人桌面电脑，微型系统，嵌入式，手机，PDA
+
+- 鸟哥的学习之路：从不得道到遇到好老师：[Study Area(酷學園)][study-area]
+
+- 学习心态
+ - 假设服务器
+ - 学习 X Window 系统
+ - Shell Script
+
+- 有心朝 Linux 作業系統學習者的學習態度
+ - 從頭學習 Linux 基礎
+    - 計算機概論與硬體相關知識
+    - 先從 Linux 的安裝與指令學起
+    - Linux 作業系統的基礎技能
+    - 務必學會 vi 文書編輯器
+    - Shell 與 Shell Script 的學習
+    - 一定要會軟體管理員
+    - [網路基礎][network-basics]
+- 亲自动手操作很重要
+
+- 發生問題怎麼處理啊？建議流程是這樣..
+ - 查资料
+   - `man`, `info`
+   - [Google][google]
+   - [The Linux Documentation Project][the-linux-documentation-project]
+ - 注意错误的输出信息
+ - 与人讨论
+
+- 成就感，提高学习信心
+
+
+[how-to-learn-linux]: http://linux.vbird.org/linux_basic/0120howtolinux.php
+[study-area]: http://www.study-area.org/menu1.htm
+[network-basics]: http://www.study-area.org/network/network.htm
+[google]: https://www.google.com.sg/
+[the-linux-documentation-project]: http://www.tldp.org/
+
+
+
+
+
+
+---
+
+#### [第三章、主機規劃與磁碟分割][disks]
+
+1. Linux與硬體的搭配
+ - [Linux 与硬件设备（图）][linux-hardware]
+ - [硬件设备在 Linux 上的挂载][linux-hardware2]
+
+- 磁碟分割
+ - [磁盘结构 （HDD）][linux-hardware3]
+ - [**Partition Table**][p-table]: [pic][partition-img]
+ - [GUID 磁碟分割表][GUID]
+
+- Linux安裝模式下， 磁碟分割的選擇(極重要)
+ - 目錄樹結構 (directory tree)
+![][directory-tree]
+
+- 安裝Linux前的規劃
+ - 选择合适的 distro
+ - 规划磁盘
+
+关键词：
+
+- File System
+- Partion Table
+- MBR
+- WWW
+- DHPC
+- Proxy
+
+
+[disks]: http://linux.vbird.org/linux_basic/0130designlinux.php
+[linux-hardware]: http://linux.vbird.org/linux_basic/0130designlinux/computer_coms.png
+[linux-hardware2]: http://gnat-tang-shared-image.qiniudn.com/201404-linux-hardware.png
+[linux-hardware3]: http://linux.vbird.org/linux_basic/0130designlinux/harddisk.jpg
+[p-table]: http://en.wikipedia.org/wiki/Partition_table
+[partition-img]: http://www.partitionwizard.com/images/tu/tuu/resize-gpt-disk-partition.jpg
+[directory-tree]: http://linux.vbird.org/linux_basic/0130designlinux/dirtree.gif
+[GUID]: http://zh.wikipedia.org/wiki/GUID%E7%A3%81%E7%A2%9F%E5%88%86%E5%89%B2%E8%A1%A8
+
+
+
+
+
+---
+
+#### [第四章、安裝 CentOS 5.x 與多重開機小技巧][centos]
+
+关键词：
+
+- Boot Loader，Grub
+- 磁盘分割
+- 文件系统，ext2，ext3，ext4, vfat，Swap，LVM，RAID
+- MAC，SSID，BSSID，ESSID
+- SELinux（Security Enhanced Linux）
+
+
+[centos]: http://linux.vbird.org/linux_basic/0157installcentos5.php
+
+
+
+
+
+
+---
+
+#### [第五章、首次登入與線上求助 man page][man-page]
+
+关键词：
+
+- X Window，Gnome，KDE
+- tty1-6
+- bash，ls，pwd，echo，date，cal，bc
+- Tab 补全，c-c，c-d
+- man，info，zsh
+- less，more
+- nano
+- sync，reboot，shutdown，init，halt，poweroff
+- passwd
+
+[man-page]: http://linux.vbird.org/linux_basic/0160startlinux.php
+
+
+
+
+~~~
+                             第二部份：Linux檔案、目錄與磁碟格式
+~~~
+
+---
+
+#### [第六章、Linux 的檔案權限與目錄配置][权限]
+
+关键词：
+
+- `-rwx`，`d-lbc`，chgrp，chown，chmod
+- FHS
+- absolute / relative path
+
+[权限]: http://linux.vbird.org/linux_basic/0210filepermission.php
+
+
+---
+
+#### [第七章、Linux 檔案與目錄管理][directory]
+
+关键词：
+
+- cd，pwd，mkdir，rmdir
+- $PATH，su，mv，cp，rm
+- `\rm`，在指令前加上反斜線，可以忽略掉 alias 的指定選項喔！
+- basename，dirname
+- cat，tac，less，more
+- head，tail，od
+- umask，touch
+- chattr，lsattr
+- SUID（Set UID），SGID（Set GID），SBIT（Sticky Bit）
+- file，which，whereis，locate，find
+
+[directory]: http://linux.vbird.org/linux_basic/0220filemanager.php
+
+
+
+
+
+---
+
+#### [第八章、Linux 磁碟與檔案系統管理][manage]
+
+关键词：
+
+- 文件系统：ext2
+- `dev/sd[a-p][1-15], dev/hd[a-d][1-63]`
+- block，superblock，blockbitmap，inode bitmap，inode
+- dump
+- mount point
+- VFS
+- df，df -h
+- du，ln
+- fdisk
+- mount，umount
+- mknod
+- 、
+
+
+
+
+[manage]: http://linux.vbird.org/linux_basic/0230filesystem.php
+
+
+
+---
+## 第三部份：學習Shell與Shell Scripts
+
+
+
+
+
+---
+## 第四部份：Linux使用者管理
+
+
+
+
+---
+## 第五部份：Linux系統管理員
+
+
+
+---
+## 第六部份：其他備份文章
+
+
+
+
+---
+~~~
+log: $1. Apr 19, 2014: created long time ago; $2. Apr 19, 2014: modified;
+~~~
+
+---
+
+var.h
+
+```cpp
+osg::MatrixTransform *joint{1..6}
+osg::MatrixTransform *currentJoint
+osg::ref_ptr<osg::ShapeDrawable> capsule_arm3
+bool showAxis;
+osg::TessellationHints *hints;
+```
+
+KeyboradEventHandler.h
+
+键盘
+
+```cpp
+class KeyboardEventHandler : public osgGA::GUIEventHandler
+osgGA::GUIEventAdapter::KEYDOWN := ea.getEventType()
+'q' := ea.getKey()
+```
+
+
+ArmMovement.h
+
+```cpp
+class ArmMovement:public QWidget
+rotateX, rotateY, rotateZ, rotateXZ, translate
+
+stretchArm: step{1..6}: move six joints, j
+closeArm: step{6..1}: move six joints, i
+xCarMove: currentPosition, lastPosition
+plusArm3, reduceArm3: 这部分比较难
+```
+
+OSGDisplayer.h
+
+```cpp
+class OSGDisplayer : public QWidget, public osgViewer::CompositeViewer
+
+createShaps( double length, int beamNum );
+buildBase( osg::MatrixTransform *prev )
+buildArm{1..3}( osg::MatrixTransform *prev )
+buildCar( vector<float> *data, osg::MatrixTransform *prev )
+
+// translate -> scale -> translate back
+
+void paintEvent( QPaintEvent * event )
+```
+
+Bridge.h
+
+```cpp
+class Bridge : public QMainWindow
+private:
+    Ui::Bridge *ui; // 啥都没有
+
+ui->gridLayout->addWidght( displayer )
+```
+
+
+Note
+
+```cpp
+osg::Matrix::
+    * makeScale( v1, v2, v3)
+    * makeRotate(angle, x, y, z): rotateZ = makeRotate(angle, 0, 0, 1)
+    * makeTranslate( x, y, z)
+osg::Matrix::scale/rotate/translate
+
+osg::Node::
+    * getBound().center().x()
+    * getBound().radius()
+
+osg::Camera::
+    * setProjectionMatrixAsPerspective( fov, ratio, znear, nfar)
+    * setProjectionMatrixAsOrtho( left, right, bottom, top, znear, zfar );
+    * setViewMatrixAsLookAt( eyePoint, center, upDirection );
+osgViewer::compositeViewer::
+    * getView( uint idx )->addEventHandler( new KeyboardEventHandler )
+```
+
+
+- [TED 爆红课程：如何在6个月内学会一门外语][learn-a-language-in-6-month]
+
+[learn-a-language-in-6-month]: http://edu.sina.com.cn/en/2014-04-10/155579829.shtml
+
+
+---
+
+
+![][01]
+![][02]
+![][03]
+![][04]
+![][05]
+![][06]
+![][07]
+![][08]
+![][09]
+![][10]
+![][11]
+![][12]
+![][13]
+![][17]
+![][18]
+![][14]
+![][15]
+![][16]
+
+
+
+[01]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/00-learn-a-language-in-6-month.png
+[02]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/01-principle-01.png
+[03]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/01-principle-02.png
+[04]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/01-principle-03.png
+[05]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/01-principle-04.png
+[06]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/01-principle-05-a.png
+[07]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/01-principle-05-b.png
+[08]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/01-principle-05-c.png
+[09]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/02-action-01.png
+[10]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/02-action-02-a.png
+[11]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/02-action-02-b.png
+[12]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/02-action-03.png
+[13]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/02-action-04-steps-week04.png
+[14]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/02-action-05.png
+[15]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/02-action-06.png
+[16]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/02-action-07.png
+[17]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/02-action-4-steps-week01.png
+[18]: http://gnat-tang-shared-image.qiniudn.com/pictures/learn-a-language-in-6-month/02-action-4-steps-week02-03.png
+
+
+
+---
+
+P.S. 没想到这个摘抄还有几个人喜欢。但是当时的截屏弄的不好。有时间我会重新处理一下。就像这篇文章：[【向大鱼致敬 （多图）】][big-fish]
+一样用脚本把图片处理的规范点。
+
+P.P.S. 之前没有加 Log，现在补上（充分说明了这是一篇老文章）
+
+
+[big-fish]: http://jianshu.io/p/30b13d0be678
+
+
+---
+
+~~~
+log: $1. Tue Aug 12 13:27:49     2014;
+~~~
+
+- [Portrait of an INTP - Introverted iNtuitive Thinking Perceiving (Introverted Thinking with Extraverted Intuition)][portrait-intp]
+
+
+
+[portrait-intp]: http://www.personalitypage.com/INTP.html
+
+---
+
+
+
+Portrait of an INTP - Introverted iNtuitive Thinking Perceiving
+(Introverted Thinking with Extraverted Intuition)
+
+The Thinker
+
+
+As an INTP, your primary mode of living is focused internally, where you deal with things rationally and logically. Your secondary mode is external, where you take things in primarily via your intuition.
+
+INTPs live in the world of theoretical possibilities. They see everything in terms of how it could be improved, or what it could be turned into. They live primarily inside their own minds, having the ability to analyze difficult problems, identify patterns, and come up with logical explanations. They seek clarity in everything, and are therefore driven to build knowledge. They are the "absent-minded professors", who highly value intelligence and the ability to apply logic to theories to find solutions. They typically are so strongly driven to turn problems into logical explanations, that they live much of their lives within their own heads, and may not place as much importance or value on the external world. Their natural drive to turn theories into concrete understanding may turn into a feeling of personal responsibility to solve theoretical problems, and help society move towards a higher understanding.
+
+INTPs value knowledge above all else. Their minds are constantly working to generate new theories, or to prove or disprove existing theories. They approach problems and theories with enthusiasm and skepticism, ignoring existing rules and opinions and defining their own approach to the resolution. They seek patterns and logical explanations for anything that interests them. They're usually extremely bright, and able to be objectively critical in their analysis. They love new ideas, and become very excited over abstractions and theories. They love to discuss these concepts with others. They may seem "dreamy" and distant to others, because they spend a lot of time inside their minds musing over theories. They hate to work on routine things - they would much prefer to build complex theoretical solutions, and leave the implementation of the system to others. They are intensely interested in theory, and will put forth tremendous amounts of time and energy into finding a solution to a problem with has piqued their interest.
+
+INTPs do not like to lead or control people. They're very tolerant and flexible in most situations, unless one of their firmly held beliefs has been violated or challenged, in which case they may take a very rigid stance. The INTP is likely to be very shy when it comes to meeting new people. On the other hand, the INTP is very self-confident and gregarious around people they know well, or when discussing theories which they fully understand.
+
+The INTP has no understanding or value for decisions made on the basis of personal subjectivity or feelings. They strive constantly to achieve logical conclusions to problems, and don't understand the importance or relevance of applying subjective emotional considerations to decisions. For this reason, INTPs are usually not in-tune with how people are feeling, and are not naturally well-equiped to meet the emotional needs of others.
+
+The INTP may have a problem with self-aggrandizement and social rebellion, which will interfere with their creative potential. Since their Feeling side is their least developed trait, the INTP may have difficulty giving the warmth and support that is sometimes necessary in intimate relationships. If the INTP doesn't realize the value of attending to other people's feelings, he or she may become overly critical and sarcastic with others. If the INTP is not able to find a place for themself which supports the use of their strongest abilities, they may become generally negative and cynical. If the INTP has not developed their Sensing side sufficiently, they may become unaware of their environment, and exhibit weakness in performing maintenance-type tasks, such as bill-paying and dressing appropriately.
+
+For the INTP, it is extremely important that ideas and facts are expressed correctly and succinctly. They are likely to express themselves in what they believe to be absolute truths. Sometimes, their well thought-out understanding of an idea is not easily understandable by others, but the INTP is not naturally likely to tailor the truth so as to explain it in an understandable way to others. The INTP may be prone to abandoning a project once they have figured it out, moving on to the next thing. It's important that the INTP place importance on expressing their developed theories in understandable ways. In the end, an amazing discovery means nothing if you are the only person who understands it.
+
+The INTP is usually very independent, unconventional, and original. They are not likely to place much value on traditional goals such as popularity and security. They usually have complex characters, and may tend to be restless and temperamental. They are strongly ingenious, and have unconventional thought patterns which allows them to analyze ideas in new ways. Consequently, a lot of scientific breakthroughs in the world have been made by the INTP.
+
+The INTP is at his best when he can work on his theories independently. When given an environment which supports his creative genius and possible eccentricity, the INTP can accomplish truly remarkable things. These are the pioneers of new thoughts in our society.
+
+
+
+---
+
+~~~
+log: $1. Wed Aug 13 10:54:12     2014;
+~~~
+
+* [USTC: Centos镜像使用帮助](https://lug.ustc.edu.cn/wiki/mirrors/help/centos)
+
+---
+
+# 超萌大法：
+
+```
+yum install apt
+```
+
+然后整个世界就美好了～
+
+
+# data
+```
+41 286 357 71 298 426 39 241 350 47 283 399 22 201 449 70 239 363 87 290 449 62 209 417 39 265 415 55 229 363 12 294 442 1 296 378 39 270 380 7 228 379 5 277 385 71 215 442 75 243 424 13 280 414 40 244 380 80 234 429 55 268 435 1 275 434 2 296 433 45 204 446 51 226 389 78 279 370 79 217 407 54 273 426 48 247 400 41 252 423 50 276 362 22 283 444
+```
+
+# code
+```c
+#include<stdio.h>
+#include<stdlib.h>
+#include<stdarg.h>
+#include<math.h>
+
+#define DONE NULL
+#define THRESHOLD 0.01
+
+enum {
+    N_CLUSTERS = 3,
+    MAX_ITERATIONS = 25,
+    MAX_DISTANCE = 100,
+};
+
+typedef struct _kmeans_t {
+    size_t n;
+    size_t k;
+    double *X;
+    double *C;
+    size_t *A;
+    FILE *ifp;
+    FILE *ofp;
+} kmeans_t;
+
+/* funcs */
+void bye (void);
+
+size_t belongs_to (double *c, size_t nc, double *v);
+
+FILE *getifp (const char *fn);
+FILE *getofp (const char *fn);
+
+/* tasts */
+void do_tasks (kmeans_t *km, ...);
+
+void km_pipein (kmeans_t *km);
+void km_init_clusters (kmeans_t *km);
+void km_reassignment (kmeans_t *km);
+void km_reclustering (const kmeans_t *km, double *c);
+void km_loop (kmeans_t *km);
+void km_pipeout (kmeans_t *km);
+void km_freeall (kmeans_t *km);
+
+
+/* main */
+int main (void)
+{
+    atexit (bye); /* we must say goodbye before we exit */
+
+    kmeans_t km = {
+        .n = 0,
+        .k = 3,
+        .X = NULL,
+        .A = NULL,
+        .ifp = getifp ("data2.txt"),
+        .ofp = getofp ("data-out.txt")
+    };
+
+    /* task to do */
+    do_tasks (&km,
+              km_pipein,
+              km_init_clusters,
+              km_loop,
+              km_pipeout,
+              km_freeall,
+              DONE
+             );
+
+    /* exit */
+    exit (EXIT_SUCCESS);
+}
+
+
+/* funcs */
+void bye (void)
+{
+    printf ("bye bye\n");
+    getc (stdin);
+    printf ("bye~\n");
+}
+
+size_t belongs_to (double *c, size_t nc, double *v)
+{
+    size_t i;
+    size_t a; /* anchor */
+
+    for (i = 1, a = 0; i < nc; ++i) {
+        if ( fabs (*(c+i)-*v) < fabs (*(c+a)-*v) ) {
+           a = i;
+        }
+    }
+
+    return a;
+}
+
+
+FILE *getifp (const char *fn)
+{
+    FILE *ifp = fopen (fn, "r");
+    if (NULL == ifp) {
+        fprintf (stderr, "cannot open %s for reading", fn);
+        exit (EXIT_FAILURE);
+    }
+    return ifp;
+}
+
+FILE *getofp (const char *fn)
+{
+    FILE *ofp = fopen (fn, "w");
+    if (NULL == ofp) {
+        fprintf (stderr, "cannot open %s for writing\n", fn);
+        exit (EXIT_FAILURE);
+    }
+    return ofp;
+}
+
+/* tasts */
+void do_tasks (kmeans_t *km, ...)
+{
+    void (*task)() = NULL;
+
+    va_list tasks;
+    va_start (tasks, km);
+    while (DONE != (
+                    task = va_arg ( tasks, void(*)() )
+                   )
+          ) {
+        (*task)(km);
+    }
+    return;
+}
+
+void km_pipein (kmeans_t *km)
+{
+    double tmp;
+    size_t n;
+
+    while (fscanf (km->ifp, "%lf", &tmp) == 1) ++(km->n);
+    rewind (km->ifp);
+
+    km->X = (double *) malloc (km->n*sizeof(double));
+    for (n = 0; n < km->n; ++n) {
+        fscanf (km->ifp, "%lf", km->X+n);
+    }
+    return;
+}
+
+void km_init_clusters (kmeans_t *km)
+{
+    size_t k;
+
+    km->C = (double *)  malloc (km->k*sizeof(double));
+    km->A = (size_t *)  malloc (km->n*sizeof(size_t));
+
+    for (k = 0; k < km->k; ++k) {
+        *(km->C+k) = *(km->X+k);
+    }
+    return;
+}
+
+void km_reassignment (kmeans_t *km)
+{
+    size_t n;
+
+    for (n = 0; n < km->n; ++n) {
+        *(km->A+n) = belongs_to (km->C, km->k, km->X+n);
+    }
+}
+
+
+void km_reclustering (const kmeans_t *km, double *c)
+{
+    size_t n, k;
+
+    for (k = 0; k < km->k; ++k) {
+        *(c+k) = 0.0;
+    }
+
+    for (n = 0; n < km->n; ++n) {
+        *(c+*(km->A+n)) += *(km->X+n);
+    }
+
+    for (k = 0; k < km->k; ++k) {
+        *(c+k) /= (double)km->k;
+    }
+
+    return;
+}
+
+void km_loop (kmeans_t *km)
+{
+    size_t n;
+    size_t k;
+    size_t i;
+
+    double diff;
+
+    double *c = (double *) malloc (km->k*sizeof(double));
+
+    km_reassignment (km);
+
+    /* loops */
+    for (i = 0; i < MAX_ITERATIONS; ++i) {
+        km_reclustering (km, c);
+        diff = 0.0;
+        for (k = 0; k < km->k; ++k) {
+            diff += fabs (*(km->C+k) - *(c+k));
+        }
+
+        if (diff < THRESHOLD) {
+            break;
+        }
+
+        km_reassignment (km);
+    } // end for
+
+    free (c);
+
+    return;
+}
+
+void km_pipeout (kmeans_t *km)
+{
+    size_t n;
+    size_t k;
+
+    fprintf (km->ofp, "--overall:\n");
+    for (n = 0; n < km->n; ++n) {
+        fprintf (km->ofp, "%10sP[%2d]: %10.4lf, cluster: %4d\n", "",
+                 n,
+                 *(km->X+n),
+                 *(km->A+n)
+                );
+    }
+
+    for (k = 0; k < km->k; ++k) {
+        fprintf (km->ofp, "%10sC[%2d]: center: %10.4lf\n", "",
+                 k,
+                 *(km->C+k)
+                );
+    }
+
+    return;
+}
+
+void km_freeall (kmeans_t *km)
+{
+    fclose (km->ifp);
+    fclose (km->ofp);
+
+    free (km->X);
+    free (km->A);
+    free (km->C);
+
+    return;
+}
+```
+
+# GCC 编译结果
+```
+--overall:
+          P[ 0]:    41.0000, cluster:    0
+          P[ 1]:   286.0000, cluster:    1
+          P[ 2]:   357.0000, cluster:    2
+          P[ 3]:    71.0000, cluster:    0
+          P[ 4]:   298.0000, cluster:    1
+          P[ 5]:   426.0000, cluster:    2
+          P[ 6]:    39.0000, cluster:    0
+          P[ 7]:   241.0000, cluster:    1
+          P[ 8]:   350.0000, cluster:    2
+          P[ 9]:    47.0000, cluster:    0
+          P[10]:   283.0000, cluster:    1
+          P[11]:   399.0000, cluster:    2
+          P[12]:    22.0000, cluster:    0
+          P[13]:   201.0000, cluster:    1
+          P[14]:   449.0000, cluster:    2
+          P[15]:    70.0000, cluster:    0
+          P[16]:   239.0000, cluster:    1
+          P[17]:   363.0000, cluster:    2
+          P[18]:    87.0000, cluster:    0
+          P[19]:   290.0000, cluster:    1
+          P[20]:   449.0000, cluster:    2
+          P[21]:    62.0000, cluster:    0
+          P[22]:   209.0000, cluster:    1
+          P[23]:   417.0000, cluster:    2
+          P[24]:    39.0000, cluster:    0
+          P[25]:   265.0000, cluster:    1
+          P[26]:   415.0000, cluster:    2
+          P[27]:    55.0000, cluster:    0
+          P[28]:   229.0000, cluster:    1
+          P[29]:   363.0000, cluster:    2
+          P[30]:    12.0000, cluster:    0
+          P[31]:   294.0000, cluster:    1
+          P[32]:   442.0000, cluster:    2
+          P[33]:     1.0000, cluster:    0
+          P[34]:   296.0000, cluster:    1
+          P[35]:   378.0000, cluster:    2
+          P[36]:    39.0000, cluster:    0
+          P[37]:   270.0000, cluster:    1
+          P[38]:   380.0000, cluster:    2
+          P[39]:     7.0000, cluster:    0
+          P[40]:   228.0000, cluster:    1
+          P[41]:   379.0000, cluster:    2
+          P[42]:     5.0000, cluster:    0
+          P[43]:   277.0000, cluster:    1
+          P[44]:   385.0000, cluster:    2
+          P[45]:    71.0000, cluster:    0
+          P[46]:   215.0000, cluster:    1
+          P[47]:   442.0000, cluster:    2
+          P[48]:    75.0000, cluster:    0
+          P[49]:   243.0000, cluster:    1
+          P[50]:   424.0000, cluster:    2
+          P[51]:    13.0000, cluster:    0
+          P[52]:   280.0000, cluster:    1
+          P[53]:   414.0000, cluster:    2
+          P[54]:    40.0000, cluster:    0
+          P[55]:   244.0000, cluster:    1
+          P[56]:   380.0000, cluster:    2
+          P[57]:    80.0000, cluster:    0
+          P[58]:   234.0000, cluster:    1
+          P[59]:   429.0000, cluster:    2
+          P[60]:    55.0000, cluster:    0
+          P[61]:   268.0000, cluster:    1
+          P[62]:   435.0000, cluster:    2
+          P[63]:     1.0000, cluster:    0
+          P[64]:   275.0000, cluster:    1
+          P[65]:   434.0000, cluster:    2
+          P[66]:     2.0000, cluster:    0
+          P[67]:   296.0000, cluster:    1
+          P[68]:   433.0000, cluster:    2
+          P[69]:    45.0000, cluster:    0
+          P[70]:   204.0000, cluster:    1
+          P[71]:   446.0000, cluster:    2
+          P[72]:    51.0000, cluster:    0
+          P[73]:   226.0000, cluster:    1
+          P[74]:   389.0000, cluster:    2
+          P[75]:    78.0000, cluster:    0
+          P[76]:   279.0000, cluster:    1
+          P[77]:   370.0000, cluster:    2
+          P[78]:    79.0000, cluster:    0
+          P[79]:   217.0000, cluster:    1
+          P[80]:   407.0000, cluster:    2
+          P[81]:    54.0000, cluster:    0
+          P[82]:   273.0000, cluster:    1
+          P[83]:   426.0000, cluster:    2
+          P[84]:    48.0000, cluster:    0
+          P[85]:   247.0000, cluster:    1
+          P[86]:   400.0000, cluster:    2
+          P[87]:    41.0000, cluster:    0
+          P[88]:   252.0000, cluster:    1
+          P[89]:   423.0000, cluster:    2
+          P[90]:    50.0000, cluster:    0
+          P[91]:   276.0000, cluster:    1
+          P[92]:   362.0000, cluster:    2
+          P[93]:    22.0000, cluster:    0
+          P[94]:   283.0000, cluster:    1
+          P[95]:   444.0000, cluster:    2
+          C[ 0]: center:    41.0000
+          C[ 1]: center:   286.0000
+          C[ 2]: center:   357.0000
+```
+
+# VS2010 编译
+
+没有结果，已花样作死，死绝。
+
+我不应该乱玩函数指针。。。
+
+
+
+---
+~~~
+log: $1: 考研复试阶段；
+~~~
+
+
+一个比狂扁小朋友还叼的小游戏：Portal Defenders
+
+![1411753387.png](http://upload-images.jianshu.io/upload_images/29284-7edd08f3b5c33596.png)
+
+有朋友说这就是【传送门】，看了下，是挺像。
+
+~~~
+A W D - movement
+Q - launch a blue portal.
+E - launch a yellow portal.
+R - Close both portals.
+F - pick up an object.
+~ - open up console (enable through the options)
+O - quick quality adjust.
+Esc/P - pause game.
+~~~
+
+游戏就要这样规则简单，趣味无穷。
+
+我这么好，当然提供下载，（原下载于 NewGround），地址：
+
+http://vdisk.weibo.com/s/tiF3xcrqjHYxV/1411793455
+
+用浏览器打开即可。
+
+
+---
+
+~~~
+log: $1. Sat Sep 27 12:54:32     2014;
+~~~
+
+
+``` plain
+% VicPad, 2015
+%
+% author: Tangzhixiong
+% padsize: 800 x 600
+
+
+% #VicPad Introduction
+
+% @<pos int>
+# VicPad
+is blend of Vim & Markdown,
+and with a great GUI support.
+
+% @<pos int>
+# Vic Grammer
+    % comment, meta data
+    % padsize: canvas size of pad
+    % #<TITLE>
+    % @<pos int>
+
+% @<pos int>
+# Vic Concept
+vim gene: a, i, A, I, m, v, `
+and more: <space>, [Scope], [color]
+alse: mouse interaction
+
+% @<pos int>
+# More about [Scope]
+1. doc scope
+2. pad scope
+3. sec scope (section)
+4. txt scope (all file, in text sense)
+
+% @<pos int>
+# More about [color]
+color in #RGB,
+color in name: red, green, blue, etc.
+color refer: % defcolor shit yellow
+
+
+% #Why VicPad
+
+% @<pos int>
+# Markdown & Vim
+md: good, but not enough,
+    no color support,
+    no GUI, no block concept,
+    no...
+Vim, really powerful
+    why not use it in a special GUI application?
+
+% @<pos int>
+# more to do
+...
+```
+
+The goal of VicPad is: **parse the above text file, then generate beautiful slides.**
+
+1. easy to write,
+2. easy to share
+3. fun to explore
+4. hard to live without it
+
+Tools I need:
+
+* JavaScript 2015
+* CSS
+* a lot more knowledge to make it real, and really good.
+
+---
+
+睡覺！！！
+
+
+
+#### Refs
+
+- [M.C. Escher - Life and Work][mc-escher]
+- [M.C. Escher - Image Categories – Most Popular][mc-escher-categories]
+- [哥德尔、艾舍尔、巴赫书：集异璧之大成（豆瓣）][geb]
+
+
+
+
+
+[mc-escher]: http://www.nga.gov/content/ngaweb/features/slideshows/mc-escher-life-and-work.html#
+[mc-escher-categories]: http://www.mcescher.com/gallery/most-popular/
+[geb]: http://book.douban.com/subject/1291204/
+
+
+
+---
+
+Gnat:
+
+> 从 GEB 里知道了 Escher，你可能没听过 Escher，但你一定见过他的作品。
+
+
+### 01-mc-escher
+![][01]
+### 02-eschers-father
+![][02]
+### 03-wild-west
+![][03]
+### 04-eight-heads
+![][04]
+### 05-the-second-day-of-creation
+![][05]
+### 06-self-portrait
+![][06]
+### 07-castrovalva
+![][07]
+### 08-italian-town
+![][08]
+### 09-atrani
+![][09]
+### 10-still-life-with-mirror
+![][10]
+### 11-hand-with-reflecting-sphere
+![][11]
+### 12-still-life-and-street
+![][12]
+### 13-metamorphosis-i
+![][13]
+### 14-development-i
+![][14]
+### 15-day-and-night-1938
+![][15]
+### 16-reptiles-1943
+![][16]
+### 17-balcony-1945
+![][17]
+### 18-three-spheres-ii
+![][18]
+### 19-other-world-1947
+![][19]
+### 20-gallerty-1946
+![][20]
+### 21-drawing-hands-1948
+![][21]
+### 22-contrast-1950
+![][22]
+### 23-relativity-1953
+![][23]
+### 24-waterfall-1961
+![][24]
+### 25-snakes-1969
+![][25]
+
+
+[01]: http://gnat-tang-shared-image.qiniudn.com/img/01-mc-escher.jpg
+[02]: http://gnat-tang-shared-image.qiniudn.com/img/02-eschers-father.jpg
+[03]: http://gnat-tang-shared-image.qiniudn.com/img/03-wild-west.jpg
+[04]: http://gnat-tang-shared-image.qiniudn.com/img/04-eight-heads.jpg
+[05]: http://gnat-tang-shared-image.qiniudn.com/img/05-the-second-day-of-creation.jpg
+[06]: http://gnat-tang-shared-image.qiniudn.com/img/06-self-portrait.jpg
+[07]: http://gnat-tang-shared-image.qiniudn.com/img/07-castrovalva.jpg
+[08]: http://gnat-tang-shared-image.qiniudn.com/img/08-italian-town.jpg
+[09]: http://gnat-tang-shared-image.qiniudn.com/img/09-atrani.jpg
+[10]: http://gnat-tang-shared-image.qiniudn.com/img/10-still-life-with-mirror.jpg
+[11]: http://gnat-tang-shared-image.qiniudn.com/img/11-hand-with-reflecting-sphere.jpg
+[12]: http://gnat-tang-shared-image.qiniudn.com/img/12-still-life-and-street.jpg
+[13]: http://gnat-tang-shared-image.qiniudn.com/img/13-metamorphosis-i.jpg
+[14]: http://gnat-tang-shared-image.qiniudn.com/img/14-development-i.jpg
+[15]: http://gnat-tang-shared-image.qiniudn.com/img/15-day-and-night-1938.jpg
+[16]: http://gnat-tang-shared-image.qiniudn.com/img/16-reptiles-1943.jpg
+[17]: http://gnat-tang-shared-image.qiniudn.com/img/17-balcony-1945.jpg
+[18]: http://gnat-tang-shared-image.qiniudn.com/img/18-three-spheres-ii.jpg
+[19]: http://gnat-tang-shared-image.qiniudn.com/img/19-other-world-1947.jpg
+[20]: http://gnat-tang-shared-image.qiniudn.com/img/20-gallerty-1946.jpg
+[21]: http://gnat-tang-shared-image.qiniudn.com/img/21-drawing-hands-1948.jpg
+[22]: http://gnat-tang-shared-image.qiniudn.com/img/22-contrast-1950.jpg
+[23]: http://gnat-tang-shared-image.qiniudn.com/img/23-relativity-1953.jpg
+[24]: http://gnat-tang-shared-image.qiniudn.com/img/24-waterfall-1961.jpg
+[25]: http://gnat-tang-shared-image.qiniudn.com/img/25-snakes-1969.jpg
+
+
+---
+
+老习惯，上面的源码：（Markdown 就是好，随便拷贝）
+
+~~~
+---
+
+#### Refs
+
+- [M.C. Escher - Life and Work][mc-escher]
+- [M.C. Escher - Image Categories – Most Popular][mc-escher-categories]
+- [哥德尔、艾舍尔、巴赫书：集异璧之大成（豆瓣）][geb]
+
+[mc-escher]: http://www.nga.gov/content/ngaweb/features/slideshows/mc-escher-life-and-work.html#
+[mc-escher-categories]: http://www.mcescher.com/gallery/most-popular/
+[geb]: http://book.douban.com/subject/1291204/
+
+
+
+---
+
+Gnat:
+
+> 从 GEB 里知道了 Escher，你可能没听过 Escher，但你一定见过他的作品。
+
+### 01-mc-escher
+![][01]
+### 02-eschers-father
+![][02]
+### 03-wild-west
+![][03]
+### 04-eight-heads
+![][04]
+### 05-the-second-day-of-creation
+![][05]
+### 06-self-portrait
+![][06]
+### 07-castrovalva
+![][07]
+### 08-italian-town
+![][08]
+### 09-atrani
+![][09]
+### 10-still-life-with-mirror
+![][10]
+### 11-hand-with-reflecting-sphere
+![][11]
+### 12-still-life-and-street
+![][12]
+### 13-metamorphosis-i
+![][13]
+### 14-development-i
+![][14]
+### 15-day-and-night-1938
+![][15]
+### 16-reptiles-1943
+![][16]
+### 17-balcony-1945
+![][17]
+### 18-three-spheres-ii
+![][18]
+### 19-other-world-1947
+![][19]
+### 20-gallerty-1946
+![][20]
+### 21-drawing-hands-1948
+![][21]
+### 22-contrast-1950
+![][22]
+### 23-relativity-1953
+![][23]
+### 24-waterfall-1961
+![][24]
+### 25-snakes-1969
+![][25]
+
+
+[01]: http://gnat-tang-shared-image.qiniudn.com/img/01-mc-escher.jpg
+[02]: http://gnat-tang-shared-image.qiniudn.com/img/02-eschers-father.jpg
+[03]: http://gnat-tang-shared-image.qiniudn.com/img/03-wild-west.jpg
+[04]: http://gnat-tang-shared-image.qiniudn.com/img/04-eight-heads.jpg
+[05]: http://gnat-tang-shared-image.qiniudn.com/img/05-the-second-day-of-creation.jpg
+[06]: http://gnat-tang-shared-image.qiniudn.com/img/06-self-portrait.jpg
+[07]: http://gnat-tang-shared-image.qiniudn.com/img/07-castrovalva.jpg
+[08]: http://gnat-tang-shared-image.qiniudn.com/img/08-italian-town.jpg
+[09]: http://gnat-tang-shared-image.qiniudn.com/img/09-atrani.jpg
+[10]: http://gnat-tang-shared-image.qiniudn.com/img/10-still-life-with-mirror.jpg
+[11]: http://gnat-tang-shared-image.qiniudn.com/img/11-hand-with-reflecting-sphere.jpg
+[12]: http://gnat-tang-shared-image.qiniudn.com/img/12-still-life-and-street.jpg
+[13]: http://gnat-tang-shared-image.qiniudn.com/img/13-metamorphosis-i.jpg
+[14]: http://gnat-tang-shared-image.qiniudn.com/img/14-development-i.jpg
+[15]: http://gnat-tang-shared-image.qiniudn.com/img/15-day-and-night-1938.jpg
+[16]: http://gnat-tang-shared-image.qiniudn.com/img/16-reptiles-1943.jpg
+[17]: http://gnat-tang-shared-image.qiniudn.com/img/17-balcony-1945.jpg
+[18]: http://gnat-tang-shared-image.qiniudn.com/img/18-three-spheres-ii.jpg
+[19]: http://gnat-tang-shared-image.qiniudn.com/img/19-other-world-1947.jpg
+[20]: http://gnat-tang-shared-image.qiniudn.com/img/20-gallerty-1946.jpg
+[21]: http://gnat-tang-shared-image.qiniudn.com/img/21-drawing-hands-1948.jpg
+[22]: http://gnat-tang-shared-image.qiniudn.com/img/22-contrast-1950.jpg
+[23]: http://gnat-tang-shared-image.qiniudn.com/img/23-relativity-1953.jpg
+[24]: http://gnat-tang-shared-image.qiniudn.com/img/24-waterfall-1961.jpg
+[25]: http://gnat-tang-shared-image.qiniudn.com/img/25-snakes-1969.jpg
+~~~
+
+P.S. 让我写评论太为难我了，我只是 GTD，留个备份。
+
+
+---
+
+~~~
+log: $1. 2014‎年‎6‎月‎15‎日; $2. Mon Aug 11 10:35:18     2014;
+~~~
+
+---
+
+还在复习考研，又看到了重积分、累次积分、线面积分这部分。之前一直不明白为什么球坐标变换后的比例我就是算不对。今天终于发现了这个错误。
+
+
+### 1. 极坐标变换
+
+从简单开始，看极坐标变换的比例因子怎么算。当我说比例因子我说的是 `dxdy = [比例因子] dρdθ` 这样的比例因子。这里也就是 `dxdy = ρdρdθ`。还没有 Get 到 LostAbaddon 的徒手用 LaTeX 打草稿的技能，就用手写了。（图书馆的扫面仪不错）
+
+![极坐标变换](http://upload-images.jianshu.io/upload_images/29284-10f81b6d1895d79b.jpg)
+
+这个很简单，分分钟搞定，绝对不会出错。
+
+### 2. 坑人的球坐标变换
+
+同样的方法，应该能求出球坐标变换后的比例因子，也就是 `ρ^2*sin(phi)`。但我算了很多次，都没有成功，我这么做的：
+
+![球坐标变换（有错误）](http://upload-images.jianshu.io/upload_images/29284-4f7cf00409bebf8a.jpg)
+
+展开的妙。。。不能更二。真是无法理解为什么每次都犯同样的错误。而且就在这儿犯，平时也没有这么玩（自己）的。以后看到行列式里有 0，要多开心（小心）了。
+
+改改就正确了。
+
+![修正。啊。。。这种错误](http://upload-images.jianshu.io/upload_images/29284-ec1da149194a7a7b.jpg)
+
+Jacobian 这种神器以前提过：
+* [003. Jacobian 和 Determinant - 简书](http://www.jianshu.com/p/57f992a2c87f?search_token=638fe296e79e78d2adf5f07637e035707ce1bac30644d2460f3426d41f36ef06)
+
+
+看到 [感恩记录（2014年7月10日）][thanks-giving]，一激动就成了 豆瓣FM Pro 用户。
+
+[thanks-giving]: http://jianshu.io/p/97f64f76b4c0
+
+---
+
+爱吐槽，爱挑刺，在很多人看来我是个一直愤怒着的人。
+
+但我不是。
+
+喷，是一种态度，它的另一面是中庸。在我看来，如果你觉得怎么都可以，那就是耍流氓。（想象一下女朋友问你这件衣服好看还是那件衣服好看，你说“随便”。她是不是想抽你？）
+
+
+没有态度的人往往没有追求。对丑无动于衷的人怎么会去追寻美？
+
+至于那些被社会打磨得不再尖锐的人，我理解你们。我也尽力远离你们。做我的刺头，我觉得挺好。
+
+**爱喷不代表不懂生活。**
+
+---
+
+现在，国内我最爱的两个网站是 简书 和 豆瓣FM。我曾在朋友圈里多次赞美 豆瓣FM，说 “等我有钱了，就赞助 豆瓣FM”。今天，我成为了 Pro 用户~ 希望这些美好的事物能长久。简书有 Pro 的时候我也尽力支持。
+
+P.S. 豆瓣FM Pro 的音质，对我的耳朵来说是太奢侈了。但是感觉是要好点，一定是心理作用。
+
+
+~~~
+log: $1. Thu Jul 10 20:49:37     2014;
+~~~
+
+
+#### Refs
+
+- [我的书 (封面翻拍:  167 本)][my-books-pic]
+- [我的书 (目录: txt 文件，编码有点问题，目录已附在本页面下方) ][my-books-txt]
+
+
+[my-books-pic]: http://www.douban.com/photos/album/132368875/
+[my-books-txt]: http://gnat-tang-shared-image.qiniudn.com/01.txt
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+> 最大的阻力是快递费，实在太桑心，现在看看当当的包邮策略其实够厚道了
+
+
+看到 [闲置书籍交换活动（大家一起来蹭书） | 简书][books] , 就来凑热闹。
+
+我早想卖书来着，本想趁毕业季到跳蚤市场上假装学长卖书，结果宅多日后发现，他们都卖完收工了。。。（今天他们又出来了。。。）
+
+想到如果明年我没有考上研（希望别）或者考到别的地方，那我还得处理这些书，我就无比蛋疼，还是电子书好。前几天整理了一下，发现我的书实在太多了，我正在想我怎么看完它们。今天我来开个好头吧。（我觉得我的书整理的还是挺有条理的，简直可以作为本站发帖标准模板）
+
+
+
+#### 注：
+
+- 中文书名，差不多是中文书
+- 英文书名，差不多就是英文书
+- 图书（封面照片）顺序和我的 txt 目录文档顺序一致
+- 我这不是全送人，当初是为了管理自己的财产。。。
+
+#### 有几类我不需要的：
+
+- 史记，红楼梦，这种古汉语的
+- 走夜路，要放声歌唱，这种小清新的
+- 中文的计算机类书籍
+- 大学课本
+- 其他
+
+
+#### 有几类我还需要的：
+
+- 英文原版书（我还要努力看完）
+- 英文计算机类书籍
+- 数学相关
+- 考研相关（我还要考研。。。）
+
+
+#### 一些说明：
+
+- 做了笔记的书原则上不送
+- 如果你不介意我撕掉几页或者涂掉写内容，第一条可以不考虑
+- 教科书不受前两条限制
+
+
+
+
+--------------------------------------------------------------------------------
+
+如果有需要，可以赠送，邮费自理
+（当然我也不介意交换，如果有我想看的 ，但现在我是要去物质化。。。。别诱惑我。而且现在我偏好电子书。外，问上研究生的学长要不要书，他问我要不要来几本，他那也有很多。。。）
+
+
+
+[books]: http://jianshu.io/p/f384b41352df
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+##### 还是在这里直接把目录贴出来吧：
+
+（右侧缩进的书已经被人订了）
+（我把我不会送的也缩进掉，手机看起来可能比较麻烦，因为我缩进了 60 个字符，会很混乱）
+
+~~~
+【还可以送】                   【已预订】                     【我要留着的】
+                                                            001: Algorithms
+002: An-Integrated-English-Course-4
+003: ArcGIS-Server-开发从入门到精通
+                                                            004: ArcUser-Esri
+                                                            005: A-Thousand-Splended-Suns
+006: BEC-真题集
+                                                            007: Blink-the-power-of-thinking-without-thinking
+                                                            008: Common-Lisp
+009: Communicating-English-in-Culture-文化交流英语-学生实用手册 (武大口语暑期辅导班专用教材）
+                              010: C#入门经典
+                              011: C程序设计
+                              012: C语言程序设计
+                              013: C++面向对象程序设计
+                                                            014: Discrete-Mathematics-and-its-Applications
+                                                            015: Eat-Pray-Love
+016: Fast-Reading
+017: Geographic-Information-System
+018: GIS空间分析理论与方法
+019: GIS设计与实现
+020: Gone-With-The-Wind
+                                                            021: GRE词汇精选
+                                                            022: Introduction-to-Linear-Algebra
+                                                            023: Mastering-Regular-Expressions
+024: Open-GL-编程指南 （OpenGL 红宝书）
+025: Pass-BEC-口试必备手册
+                                                            026: Pattern-Classification
+                                                            027: Structure-and-Implementation-of-Computer-Programs
+                                                            028: The-Art-of-Public-Speaking
+                                                            029: The-C-Programming-Language
+030: The-Importance-of-Living （林语堂经典）
+                                                            031: The-Kite-Runner
+                                                            032: The-Lexus-and-the-Oliver-Tree
+                                                            033: The-Little-Schemer
+                                                            034: The-Lord-of-the-Rings
+                                                            035: The-Tipping-Point
+036: Twenty-Thousand-Leagues-Under-the-Sea （海底两万里英文版）
+                                                            037: Understanding-Poetry
+038: Visual-C++-面向对象编程教程
+                              039: 一个人的村庄
+                              040: 一九八四-Nineteen-Eighty-Four
+041: 一本数学书
+                              042: 万物有灵且有美
+                              043: 世界如此险恶-你要内心强大
+                              044: 中国近现代史纲要
+                              045: 乌合之众-大众心理研究
+                              046: 云计算
+047: 全国计算机等级考试-三级网络技术
+048: 全国计算机等级考试-四级网络工程师
+049: 兄弟
+050: 别停下追求的脚步
+                              051: 动物性食品卫生学
+052: 北大英文写作教程
+                                                            053: 十天突破雅思口语
+                                                            054: 十天突破雅思口语-必备掌中宝
+                              055: 古代诗词名句赏析
+                              056: 古文观止-鉴赏词典
+                              057: 古汉语常用字字典
+                              058: 史记
+059: 启功体-硬笔书法-技法训练
+060: 园丁集
+                                                            061: 围城
+                              062: 地图学原理
+063: 地理信息系统原理
+064: 大学国防教育
+065: 大学基础物理
+066: 大学物理学-学习辅导与习题解答
+067: 大学物理实验教程
+068: 大学生体质与健康
+069: 大学生安全教程
+070: 大学英语创意阅读
+071: 大学英语听说2345
+072: 大学英语阅读教程
+073: 大学语文
+                              074: 奥巴马演讲集
+                              075: 奥普拉演讲访谈录
+                                                            076: 如何阅读一本书
+077: 学习ASP.Net2.0和AJAX
+078: 学习OpenCV-中文版
+                              079: 小小汉英词典-外研社
+                              080: 弘一大师说佛
+081: 影响你一生的47部电影
+082: 思想道德修养与法律基础
+                              083: 思维的乐趣
+                                                            084: 标准日本语
+085: 情商
+086: 我为演讲狂
+087: 截拳道断棍-基础入门
+                              088: 把栏杆拍遍
+089: 数字图像处理
+090: 数字测图-原理与方法
+                                                            091: 数学之美
+092: 数学物理方法
+093: 数学物理方法-学习指导
+094: 数据库系统概论
+095: 数据结构-C语言版
+096: 新手学五笔打字
+097: 新编大学英语
+                                                            098: 暗时间
+099: 朝花夕拾-野草
+                                                            100: 柯林斯高阶英语学习词典
+                                                            101: 概率论与数理统计
+                                                            102: 概率论与数理统计-习题全解指南
+103: 武汉大学学生手册
+104: 毛泽东思想和中国特色社会主义理论体系概论
+105: 沉思录-Meditation
+                                                            106: 沉默的大多数
+107: 测绘学概论
+                                                            108: 浪潮之巅
+                                                            109: 渴望之书
+110: 现代文经典评读
+111: 现代素描肖像
+                              112: 环境学导论
+                              113: 男女内参
+                              114: 病隙碎笔
+                              115: 百年孤独
+116: 空间数据库
+117: 精通Matlab-R2011a
+                              118: 红楼梦
+                                                            119: 线性代数
+120: 网络地理信息系统-原理与技术
+121: 置身于苦难与阳光之间
+122: 美丽失败者
+                              123: 美国种族简史
+                                                            124: 美国英语口语词典
+125: 美音-纠音-透析与突破
+126: 考拉小巫的英语学习日记
+                                                            127: 考研政治
+                                                            128: 考研数学-习题
+                                                            129: 考研数学复习全书
+130: 考研词汇速记指南
+131: 耻辱者手记 （有两本）
+                                                            132: 肢体行为
+133: 自由在高处
+                                                            134: 英语中级听力2
+                                                            135: 英语单词拼写攻略
+136: 英语学习策略-从理论到实践
+137: 英语电影欣赏
+                                                            138: 英语词根词典
+                                                            139: 英语词汇速记大全-词根-词缀记忆法
+                              140: 莫言精选集
+                              141: 西西弗神话
+142: 计算机图形学
+143: 计算机网络
+                                                            144: 误差处理与可靠性理论
+                                                            145: 误差理论与可靠性理论
+                                                            146: 误差理论与测量平差基础
+                              147: 走夜路-请放声歌唱
+148: 跟卡耐基学人际交往
+149: 跟卡耐基学当众讲话
+150: 软件工程
+151: 遥感原理与应用
+152: 遥感图像解译
+153: 钱学森 （钱学森那是很帅啊）
+154: 钢笔字体学与练-楷行-毛泽东诗词
+                              155: 阿勒泰的角落
+156: 雅思倒计时-写作
+157: 雅思口语
+158: 雅思机经
+                                                            159: 雅思词汇
+160: 高中物理-基础知识手册
+                                                            161: 高等数学-同济
+162: 高等数学学习与提高
+163: 高等数学-武大
+                                                            164: 高级美语听力特训30天
+165: 高级英语阅读
+166: 鲁迅散文
+                                                            167: 黑客与画家
+~~~
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+#####实况
+~~~
+➜  to-send  tree
+.
+├── 01-JiangJY-done （已收到）
+│   ├── address.txt
+│   ├── 一个人的村庄.png
+│   ├── 一九八四-Nineteen-Eighty-Four.png
+│   ├── 云计算.png
+│   └── 百年孤独.png
+├── 02-WangSY-done （已收到）
+│   ├── local
+│   └── 西西弗神话.png
+├── 03-ChenYM-done（已收到）
+│   ├── address.txt
+│   ├── C#入门经典.png
+│   ├── C程序设计.png
+│   ├── C语言程序设计.png
+│   ├── C++面向对象程序设计.png
+│   ├── 世界如此险恶-你要内心强大.png
+│   ├── 中国近现代史纲要.png
+│   ├── 乌合之众-大众心理研究.png
+│   ├── 古代诗词名句赏析.png
+│   ├── 古文观止-鉴赏词典.png
+│   ├── 古汉语常用字字典.png
+│   ├── 史记.png
+│   ├── 奥巴马演讲集.png
+│   ├── 小小汉英词典-外研社.png
+│   ├── 沉默的大多数.png
+│   ├── 男女内参.png
+│   ├── 红楼梦.png
+│   ├── 美国种族简史.png
+│   └── 阿勒泰的角落.png
+├── 04-LiuYL-done （已收到）
+│   ├── local
+│   ├── 万物有灵且有美.png
+│   ├── 动物性食品卫生学.png
+│   ├── 把栏杆拍遍.png
+│   ├── 环境学导论.png
+│   └── 走夜路-请放声歌唱.png
+├── 05-XueS-done （已收到）
+│   ├── address.txt
+│   ├── address.txt~
+│   ├── 奥普拉演讲访谈录.png
+│   ├── 思维的乐趣.png
+│   ├── 病隙碎笔.png
+│   └── 莫言精选集.png
+└── 06-LiuJT-done （已收到）
+    ├── address.txt
+    ├── 地图学原理.png
+    └── 弘一大师说佛.png
+
+6 directories, 41 files
+~~~
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+~~~
+log: $1. 2014-06-08; $2. 2014-06-09;
+~~~
+
+![][001]
+![][002]
+![][003]
+![][004]
+![][005]
+![][006]
+![][007]
+![][008]
+![][009]
+![][010]
+![][011]
+![][012]
+![][013]
+![][014]
+![][015]
+![][016]
+![][017]
+![][018]
+![][019]
+![][020]
+![][021]
+![][022]
+![][023]
+![][024]
+![][025]
+![][027]
+![][028]
+![][029]
+![][030]
+![][031]
+![][032]
+![][033]
+![][034]
+![][035]
+![][036]
+![][037]
+![][038]
+![][039]
+![][040]
+![][041]
+![][042]
+![][043]
+![][044]
+![][045]
+![][046]
+![][047]
+![][048]
+![][049]
+![][050]
+![][051]
+![][052]
+![][053]
+![][054]
+![][055]
+![][056]
+![][057]
+![][058]
+![][059]
+![][060]
+![][061]
+![][062]
+![][063]
+![][064]
+![][065]
+![][066]
+![][067]
+![][068]
+![][069]
+![][070]
+![][071]
+![][072]
+![][073]
+![][074]
+![][075]
+![][076]
+![][077]
+![][078]
+![][079]
+![][080]
+![][081]
+![][082]
+![][083]
+![][084]
+![][085]
+![][086]
+![][087]
+![][088]
+![][089]
+![][090]
+![][091]
+![][092]
+![][093]
+![][094]
+![][095]
+![][096]
+![][097]
+![][098]
+![][099]
+![][100]
+![][101]
+![][102]
+![][103]
+![][104]
+![][105]
+![][106]
+![][107]
+![][108]
+![][109]
+![][110]
+![][111]
+![][112]
+![][113]
+![][114]
+![][115]
+
+
+
+
+
+[001]: http://gnat-tang-shared-image.qiniudn.com/octocat/adventure-cat.png
+[002]: http://gnat-tang-shared-image.qiniudn.com/octocat/agendacat.png
+[003]: http://gnat-tang-shared-image.qiniudn.com/octocat/andycat.jpg
+[004]: http://gnat-tang-shared-image.qiniudn.com/octocat/baracktocat.jpg
+[005]: http://gnat-tang-shared-image.qiniudn.com/octocat/bear-cavalry.png
+[006]: http://gnat-tang-shared-image.qiniudn.com/octocat/benevocats.png
+[007]: http://gnat-tang-shared-image.qiniudn.com/octocat/bouncercat.png
+[008]: http://gnat-tang-shared-image.qiniudn.com/octocat/carlostocat.gif
+[009]: http://gnat-tang-shared-image.qiniudn.com/octocat/chellocat.jpg
+[010]: http://gnat-tang-shared-image.qiniudn.com/octocat/cherryontop-o-cat.png
+[011]: http://gnat-tang-shared-image.qiniudn.com/octocat/class-act.png
+[012]: http://gnat-tang-shared-image.qiniudn.com/octocat/cloud.jpg
+[013]: http://gnat-tang-shared-image.qiniudn.com/octocat/codercat.jpg
+[014]: http://gnat-tang-shared-image.qiniudn.com/octocat/collabocats.jpg
+[015]: http://gnat-tang-shared-image.qiniudn.com/octocat/constructocat2.jpg
+[016]: http://gnat-tang-shared-image.qiniudn.com/octocat/daftpunktocat-guy.gif
+[017]: http://gnat-tang-shared-image.qiniudn.com/octocat/daftpunktocat-thomas.gif
+[018]: http://gnat-tang-shared-image.qiniudn.com/octocat/deckfailcat.png
+[019]: http://gnat-tang-shared-image.qiniudn.com/octocat/defunktocat.png
+[020]: http://gnat-tang-shared-image.qiniudn.com/octocat/doctocat-brown.jpg
+[021]: http://gnat-tang-shared-image.qiniudn.com/octocat/dodgetocat.jpg
+[022]: http://gnat-tang-shared-image.qiniudn.com/octocat/dodgetocat_v2.png
+[023]: http://gnat-tang-shared-image.qiniudn.com/octocat/dojocat.jpg
+[024]: http://gnat-tang-shared-image.qiniudn.com/octocat/dolla-dolla-bill-yall.jpg
+[025]: http://gnat-tang-shared-image.qiniudn.com/octocat/droctocat.png
+[027]: http://gnat-tang-shared-image.qiniudn.com/octocat/droidtocat.png
+[028]: http://gnat-tang-shared-image.qiniudn.com/octocat/drunktocat.jpg
+[029]: http://gnat-tang-shared-image.qiniudn.com/octocat/dunetocat.png
+[030]: http://gnat-tang-shared-image.qiniudn.com/octocat/electrocat.png
+[031]: http://gnat-tang-shared-image.qiniudn.com/octocat/father_timeout.jpg
+[032]: http://gnat-tang-shared-image.qiniudn.com/octocat/femalecodertocat.png
+[033]: http://gnat-tang-shared-image.qiniudn.com/octocat/forktocat.jpg
+[034]: http://gnat-tang-shared-image.qiniudn.com/octocat/founding-father.jpg
+[035]: http://gnat-tang-shared-image.qiniudn.com/octocat/foundingfather_v2.png
+[036]: http://gnat-tang-shared-image.qiniudn.com/octocat/front-end-conftocat.png
+[037]: http://gnat-tang-shared-image.qiniudn.com/octocat/gangnamtocat.png
+[038]: http://gnat-tang-shared-image.qiniudn.com/octocat/goretocat.png
+[039]: http://gnat-tang-shared-image.qiniudn.com/octocat/grim-repo.jpg
+[040]: http://gnat-tang-shared-image.qiniudn.com/octocat/grinchtocat.gif
+[041]: http://gnat-tang-shared-image.qiniudn.com/octocat/heisencat.png
+[042]: http://gnat-tang-shared-image.qiniudn.com/octocat/herme-t-crabb.png
+[043]: http://gnat-tang-shared-image.qiniudn.com/octocat/hipster-partycat.jpg
+[044]: http://gnat-tang-shared-image.qiniudn.com/octocat/homercat.png
+[045]: http://gnat-tang-shared-image.qiniudn.com/octocat/hubot.jpg
+[046]: http://gnat-tang-shared-image.qiniudn.com/octocat/inspectocat.jpg
+[047]: http://gnat-tang-shared-image.qiniudn.com/octocat/ironcat.jpg
+[048]: http://gnat-tang-shared-image.qiniudn.com/octocat/jean-luc-picat.jpg
+[049]: http://gnat-tang-shared-image.qiniudn.com/octocat/jenktocat.jpg
+[050]: http://gnat-tang-shared-image.qiniudn.com/octocat/kimonotocat.png
+[051]: http://gnat-tang-shared-image.qiniudn.com/octocat/labtocat.png
+[052]: http://gnat-tang-shared-image.qiniudn.com/octocat/linktocat.jpg
+[053]: http://gnat-tang-shared-image.qiniudn.com/octocat/Mardigrastocat.png
+[054]: http://gnat-tang-shared-image.qiniudn.com/octocat/maxtocat.gif
+[055]: http://gnat-tang-shared-image.qiniudn.com/octocat/megacat-2.png
+[056]: http://gnat-tang-shared-image.qiniudn.com/octocat/megacat.jpg
+[057]: http://gnat-tang-shared-image.qiniudn.com/octocat/minion.png
+[058]: http://gnat-tang-shared-image.qiniudn.com/octocat/momtocat.png
+[059]: http://gnat-tang-shared-image.qiniudn.com/octocat/monroe.jpg
+[060]: http://gnat-tang-shared-image.qiniudn.com/octocat/motherhubbertocat.png
+[061]: http://gnat-tang-shared-image.qiniudn.com/octocat/mummytocat.gif
+[062]: http://gnat-tang-shared-image.qiniudn.com/octocat/murakamicat.png
+[063]: http://gnat-tang-shared-image.qiniudn.com/octocat/notocat.jpg
+[064]: http://gnat-tang-shared-image.qiniudn.com/octocat/nyantocat.gif
+[065]: http://gnat-tang-shared-image.qiniudn.com/octocat/octdrey-catburn.jpg
+[066]: http://gnat-tang-shared-image.qiniudn.com/octocat/octobiwan.jpg
+[067]: http://gnat-tang-shared-image.qiniudn.com/octocat/octocat-de-los-muertos.jpg
+[068]: http://gnat-tang-shared-image.qiniudn.com/octocat/octoclark-kentocat.jpg
+[069]: http://gnat-tang-shared-image.qiniudn.com/octocat/octofez.png
+[070]: http://gnat-tang-shared-image.qiniudn.com/octocat/octoliberty.png
+[071]: http://gnat-tang-shared-image.qiniudn.com/octocat/octonaut.jpg
+[072]: http://gnat-tang-shared-image.qiniudn.com/octocat/octotron.jpg
+[073]: http://gnat-tang-shared-image.qiniudn.com/octocat/okal-eltocat.jpg
+[074]: http://gnat-tang-shared-image.qiniudn.com/octocat/oktobercat.png
+[075]: http://gnat-tang-shared-image.qiniudn.com/octocat/orderedlistocat.png
+[076]: http://gnat-tang-shared-image.qiniudn.com/octocat/original.png
+[077]: http://gnat-tang-shared-image.qiniudn.com/octocat/pacman-ghosts.jpg
+[078]: http://gnat-tang-shared-image.qiniudn.com/octocat/plumber.jpg
+[079]: http://gnat-tang-shared-image.qiniudn.com/octocat/poptocat.png
+[080]: http://gnat-tang-shared-image.qiniudn.com/octocat/poptocat_v2.png
+[081]: http://gnat-tang-shared-image.qiniudn.com/octocat/Professortocat_v2.png
+[082]: http://gnat-tang-shared-image.qiniudn.com/octocat/puppeteer.png
+[083]: http://gnat-tang-shared-image.qiniudn.com/octocat/pusheencat.png
+[084]: http://gnat-tang-shared-image.qiniudn.com/octocat/pythocat.png
+[085]: http://gnat-tang-shared-image.qiniudn.com/octocat/red-polo.png
+[086]: http://gnat-tang-shared-image.qiniudn.com/octocat/repo.png
+[087]: http://gnat-tang-shared-image.qiniudn.com/octocat/riddlocat.png
+[088]: http://gnat-tang-shared-image.qiniudn.com/octocat/Robotocat.png
+[089]: http://gnat-tang-shared-image.qiniudn.com/octocat/saint-nicktocat.jpg
+[090]: http://gnat-tang-shared-image.qiniudn.com/octocat/saritocat.png
+[091]: http://gnat-tang-shared-image.qiniudn.com/octocat/scarletteocat.jpg
+[092]: http://gnat-tang-shared-image.qiniudn.com/octocat/scottocat.jpg
+[093]: http://gnat-tang-shared-image.qiniudn.com/octocat/setuptocat.jpg
+[094]: http://gnat-tang-shared-image.qiniudn.com/octocat/shoptocat.png
+[095]: http://gnat-tang-shared-image.qiniudn.com/octocat/skitchtocat.png
+[096]: http://gnat-tang-shared-image.qiniudn.com/octocat/snowoctocat.png
+[097]: http://gnat-tang-shared-image.qiniudn.com/octocat/socialite.jpg
+[098]: http://gnat-tang-shared-image.qiniudn.com/octocat/spectrocat.png
+[099]: http://gnat-tang-shared-image.qiniudn.com/octocat/spidertocat.png
+[100]: http://gnat-tang-shared-image.qiniudn.com/octocat/spocktocat.png
+[101]: http://gnat-tang-shared-image.qiniudn.com/octocat/steroidtocat.png
+[102]: http://gnat-tang-shared-image.qiniudn.com/octocat/stormtroopocat.png
+[103]: http://gnat-tang-shared-image.qiniudn.com/octocat/strongbadtocat.png
+[104]: http://gnat-tang-shared-image.qiniudn.com/octocat/supportcat.png
+[105]: http://gnat-tang-shared-image.qiniudn.com/octocat/swagtocat.png
+[106]: http://gnat-tang-shared-image.qiniudn.com/octocat/thanktocat.png
+[107]: http://gnat-tang-shared-image.qiniudn.com/octocat/topguntocat.png
+[108]: http://gnat-tang-shared-image.qiniudn.com/octocat/total-eclipse-of-the-octocat.jpg
+[109]: http://gnat-tang-shared-image.qiniudn.com/octocat/trekkie.png
+[110]: http://gnat-tang-shared-image.qiniudn.com/octocat/twenty-percent-cooler-octocat.png
+[111]: http://gnat-tang-shared-image.qiniudn.com/octocat/visionary.jpg
+[112]: http://gnat-tang-shared-image.qiniudn.com/octocat/waldocat.png
+[113]: http://gnat-tang-shared-image.qiniudn.com/octocat/wilson.jpg
+[114]: http://gnat-tang-shared-image.qiniudn.com/octocat/xtocat.jpg
+[115]: http://gnat-tang-shared-image.qiniudn.com/octocat/yaktocat.png
+
+
+
+--------------------------------------------------------------------------------
+
+~~~
+log: $1. 2014-06-09;
+~~~
+
+
+| 我不是三年前的我，
+| 我不是两年前的我，
+| 我不是一年前的我；
+| 我比那过去更强
+|
+| 我不是一年后的我，
+| 也不是两年后的我，
+| 更不是三年后的我；
+| 一想将来，浑身充满力量
+
+
+---
+
+#### Refs
+
+- [MathJax Basic Tutorial and Quick Reference][mathjax-guide]
+- ~~[Help: Displaying a formula (Wikipedia)][wiki-latex-math]~~
+
+
+[mathjax-guide]: http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
+[wiki-latex-math]: http://en.wikipedia.org/wiki/Help:Formula
+
+
+
+---
+
+简书上不能使用 MathJax 编辑公式，估计以后也没有。这是多么遗憾的事，我们不能在文中简单地使用：
+
+~~~
+第一个矩阵
+---------
+$$
+        \begin{bmatrix}
+        1 & x & x^2 \\
+        1 & y & y^2 \\
+        1 & z & z^2 \\
+        \end{bmatrix}
+$$
+~~~
+
+来书写一个矩阵。但是，只要我们想，总还是有方法，只不过要麻烦一点。比如你可以这样：
+
+~~~
+第二个矩阵
+---------
+![][matrix]
+[matrix]: http://latex.codecogs.com/svg.latex?\begin{bmatrix}1&x&x^2\\1&y&y^2\\1&z&z^2\\\end{bmatrix}
+~~~
+
+就有：![][00]，一个矩阵出现了。
+
+不过好累。。。不人性。。。你得把公式用 LaTeX 写出来，就像上面的【第一个矩阵】一样，把其中 $$ 符号里多余的空格删除，拷贝出来，在前面加上 `http://latex.codecogs.com/svg.latex?`，然后才能当成一个图片链接使用。
+
+为节约人力，还可以用脚本简单处理，比如在我的 Git Bash 里（最近用瘟逗死）：
+
+~~~
+cat formula.txt | tr -d ' \r\n' | clip
+~~~
+
+`formula.txt` 是你的公式代码，`tr` 语句把其中的空格和换行去掉，然后传到剪贴板里，只等你粘贴。
+
+这样简书里也能方便（有点牵强地。。。）书写公式了。
+
+
+
+---
+
+### 公式示例：
+
+01: ![][01]
+
+02: ![][02]
+
+03: ![][03]
+
+04: ![][04]
+
+05: ![][05]
+
+06: ![][06]
+
+07: ![][07]
+
+
+
+
+[00]: http://latex.codecogs.com/png.latex?\begin{bmatrix}1&x&x^2\\1&y&y^2\\1&z&z^2\\\end{bmatrix}
+[01]: http://latex.codecogs.com/png.latex?sh(x)=\frac{e^x+e^{-x}}{2}}
+[02]: http://latex.codecogs.com/png.latex?C_n^k=\frac{n(n-1)\ldots(n-k+1)}{k!}
+[03]: http://latex.codecogs.com/svg.latex?\begin{align}\sqrt{37}&=\sqrt{\frac{73^2-1}{12^2}}\\&=\sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}}\\&=\sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}}\\&=\frac{73}{12}\sqrt{1-\frac{1}{73^2}}\\&\approx\frac{73}{12}\left(1-\frac{1}{2\cdot73^2}\right)\end{align}
+[04]: http://latex.codecogs.com/svg.latex?\begin{array}{c|lcr}n&\text{Left}&\text{Center}&\text{Right}\\\hline1&0.24&1&125\\2&-1&189&-8\\3&-20&2000&1+10i\\\end{array}
+[05]: http://latex.codecogs.com/svg.latex?\mathbb{N,Z,Q,R,C}
+[06]: http://latex.codecogs.com/svg.latex?\left\{\begin{array}{ll}a_1x+b_1y+c_1z&=d_1+e_1\\a_2x+b_2y&=d_2\\a_3x+b_3y+c_3z&=d_3\end{array}\right.
+[07]: http://latex.codecogs.com/svg.latex?f\left(\left[\frac{1+\left\{x,y\right\}}{\left(\frac{x}{y}+\frac{y}{x}\right)\left(u+1\right)}+a\right]^{3/2}\right)
+
+
+---
+
+### 附：上文蛋疼的源码
+
+~~~~~~
+
+---
+
+#### Refs
+
+- [MathJax Basic Tutorial and Quick Reference][mathjax-guide]
+- ~~[Help: Displaying a formula (Wikipedia)][wiki-latex-math]~~
+
+
+[mathjax-guide]: http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
+[wiki-latex-math]: http://en.wikipedia.org/wiki/Help:Formula
+
+
+
+---
+
+简书上不能使用 MathJax 编辑公式，估计以后也没有。这是多么遗憾的事，我们不能在文中简单地使用：
+
+~~~
+第一个矩阵
+---------
+$$
+        \begin{bmatrix}
+        1 & x & x^2 \\
+        1 & y & y^2 \\
+        1 & z & z^2 \\
+        \end{bmatrix}
+$$
+~~~
+
+来书写一个矩阵。但是，只要我们想，总还是有方法，只不过要麻烦一点。比如你可以这样：
+
+~~~
+第二个矩阵
+---------
+![][matrix]
+[matrix]: http://latex.codecogs.com/svg.latex?\begin{bmatrix}1&x&x^2\\1&y&y^2\\1&z&z^2\\\end{bmatrix}
+~~~
+
+就有：![][00]，一个矩阵出现了。
+
+不过好累。。。不人性。。。你得把公式用 LaTeX 写出来，就像上面的【第一个矩阵】一样，把其中 $$ 符号里多余的空格删除，拷贝出来，在前面加上 `http://latex.codecogs.com/svg.latex?`，然后才能当成一个图片链接使用。
+
+为节约人力，还可以用脚本简单处理，比如在我的 Git Bash 里（最近用瘟逗死）：
+
+~~~
+cat formula.txt | tr -d ' \r\n' | clip
+~~~
+
+`formula.txt` 是你的公式代码，`tr` 语句把其中的空格和换行去掉，然后传到剪贴板里，只等你粘贴。
+
+这样简书里也能方便（有点牵强地。。。）书写公式了。
+
+
+
+---
+
+### 公式示例：
+
+01: ![][01]
+
+02: ![][02]
+
+03: ![][03]
+
+04: ![][04]
+
+05: ![][05]
+
+06: ![][06]
+
+07: ![][07]
+
+
+[00]: http://latex.codecogs.com/png.latex?\begin{bmatrix}1&x&x^2\\1&y&y^2\\1&z&z^2\\\end{bmatrix}
+[01]: http://latex.codecogs.com/png.latex?sh(x)=\frac{e^x+e^{-x}}{2}}
+[02]: http://latex.codecogs.com/png.latex?C_n^k=\frac{n(n-1)\ldots(n-k+1)}{k!}
+[03]: http://latex.codecogs.com/svg.latex?\begin{align}\sqrt{37}&=\sqrt{\frac{73^2-1}{12^2}}\\&=\sqrt{\frac{73^2}{12^2}\cdot\frac{73^2-1}{73^2}}\\&=\sqrt{\frac{73^2}{12^2}}\sqrt{\frac{73^2-1}{73^2}}\\&=\frac{73}{12}\sqrt{1-\frac{1}{73^2}}\\&\approx\frac{73}{12}\left(1-\frac{1}{2\cdot73^2}\right)\end{align}
+[04]: http://latex.codecogs.com/svg.latex?\begin{array}{c|lcr}n&\text{Left}&\text{Center}&\text{Right}\\\hline1&0.24&1&125\\2&-1&189&-8\\3&-20&2000&1+10i\\\end{array}
+[05]: http://latex.codecogs.com/svg.latex?\mathbb{N,Z,Q,R,C}
+[06]: http://latex.codecogs.com/svg.latex?\left\{\begin{array}{ll}a_1x+b_1y+c_1z&=d_1+e_1\\a_2x+b_2y&=d_2\\a_3x+b_3y+c_3z&=d_3\end{array}\right.
+[07]: http://latex.codecogs.com/svg.latex?f\left(\left[\frac{1+\left\{x,y\right\}}{\left(\frac{x}{y}+\frac{y}{x}\right)\left(u+1\right)}+a\right]^{3/2}\right)
+
+~~~~~~
+
+P.S. 据 `log` 说这篇文章在草稿里已经一个多月了。大部分还是刚才敲的，充分说明一鼓作气有多重要。
+
+P.P.S. 作业部落支持的东西就很丰富：MathJax，脚注，目录，Tags，流程图，以及 Vim Emacs 编辑模式等。不过，它完全定位成了笔记本。
+
+
+
+---
+
+~~~
+log: $1. 2014-06-12; $2. Tue Jul 22 18:12:20     2014;
+~~~
+
+Cold Turkey 是一种策略。比如你要戒烟，可以采用逐步过渡的方式（比如今天 20 支烟，明天 18，后天 15，逐步减为 0），大多数人认为这样更加自然，也很靠谱。Cold Turkey 是一种极端的戒断方式，从戒烟初始就完全摒弃，知道这种杜绝变得自然，不让你心还痒痒。
+
+感觉我的表达能力有限，直接贴[维基](https://en.wikipedia.org/wiki/Cold_turkey)上的解释吧：
+
+> "**Cold turkey**" describes the abrupt cessation of a [substance dependence](https://en.wikipedia.org/wiki/Substance_dependence) and the resulting unpleasant experience, as opposed to gradually easing the process through reduction over time or by using replacement [medication](https://en.wikipedia.org/wiki/Medication).
+
+Cold turkey method 是我比较喜欢的策略之一[^1]，干脆、没有退路，背水一战！
+
+今天想到 Cold Turkey，是因为看了一篇文章：[我节约时间的五大妙法](http://www.douban.com/note/510890331/)，有人回复说，有个软件叫“[Cold Turkey](http://getcoldturkey.com/)”。哈哈，这个软件名字很贴切。
+
+我决定用这个方法把微博、豆瓣和 QQ 空间先戒了。
+
+[^1]: 还有一个是“森田疗法”
+
+|         祈祷词
+|
+|                *席慕容*
+|
+| 我知道这世界不是绝对的好
+| 我也知道它有离别　有衰老
+| 然而我只有一次的机会
+| 上主啊　请俯听我的祈祷
+|
+| 请给我一个长长的夏季
+| 给我一段无暇的回忆
+| 给我一颗温柔的心
+| 给我一份洁白的恋情
+|
+| 我只能来这世上一次　所以
+| 请再给我一个美丽的名字
+| 好让他能在夜里呼唤我
+| 在奔驰的岁月里
+| 永远记得我们曾经相爱的事
+
+
+
+---
+
+---
+
+### [XCAPE READEME.md](https://github.com/alols/xcape/blob/master/README.md)
+
+~~~
+XCAPE
+=====
+
+xcape allows you to use a modifier key as another key when pressed and
+released on its own. Note that it is slightly slower than pressing the
+original key, because the pressed event does not occur until the key is
+released. The default behaviour is to generate the Escape key when Left
+Control is pressed and released on its own. (If you don't understand why
+anybody would want this, I'm guessing that Vim is not your favourite text
+editor ;)
+
+Minimal building instructions
+-----------------------------
+
+    $ sudo apt-get install git gcc make pkg-config libx11-dev libxtst-dev libxi-dev
+    $ mkdir xcape
+    $ cd xcape
+    $ git clone https://github.com/alols/xcape.git .
+    $ make
+
+Usage
+-----
+    $ xcape [-d] [-t <timeout ms>] [-e <map-expression>]
+
+### `-d`
+
+Debug mode. Does not fork into the background.
+
+### `-t <timeout ms>`
+
+If you hold a key longer than this timeout, xcape will not generate a key
+event. Default is 500 ms.
+
+### `-e <map-expression>`
+
+The expression has the grammar `'ModKey=Key[|OtherKey][;NextExpression]'`
+
+The list of key names is found in the header file `X11/keysymdef.h` (remove
+the `XK_` prefix). Note that due to limitations of X11 shifted keys *must*
+be specified as a shift key followed by the key to be pressed rather than
+the actual name of the character. For example to generate "{" the
+expression `'ModKey=Shift_L|bracketleft'` could be used (assuming that you
+have a key with "{" above "[").
+
+You can also specify ModKey in decimal (prefix `#`), octal (`#0`), or
+hexadecimal (`#0x`). It will be interpreted as a keycode unless no corresponding
+key name is found.
+
+#### Examples
+
++   This will make Left Shift generate Escape when pressed and released on
+    it's own, and Left Control generate Ctrl-O combination when pressed and
+    released on it's own.
+
+        xcape -e 'Shift_L=Escape;Control_L=Control_L|O'
+
++   In conjugation with xmodmap it is possible to make an ordinary key act
+    as an extra modifier. First map the key to the modifier with xmodmap
+    and then the modifier back to the key with xcape. However, this has
+    several limitations: the key will not work as ordinary until it is
+    relased, and in particular, *it may act as a modifier unintentionally if
+    you type too fast.* This is not a bug in xcape, but an unavoidable
+    consequence of using these two tools together in this way.
+    As an example, we can make the space bar work as an additional ctrl
+    key when held (similar to
+    [Space2ctrl](https://github.com/r0adrunner/Space2Ctrl)) with the
+    following sequence of commands.
+
+        # Map an unused modifier's keysym to the spacebar's keycode and make it a
+        # control modifier. It needs to be an existing key so that emacs won't
+        # spazz out when you press it. Hyper_L is a good candidate.
+        spare_modifier="Hyper_L"
+        xmodmap -e "keycode 65 = $spare_modifier"
+        xmodmap -e "remove mod4 = $spare_modifier" # hyper_l is mod4 by default
+        xmodmap -e "add Control = $spare_modifier"
+
+        # Map space to an unused keycode (to keep it around for xcape to
+        # use).
+        xmodmap -e "keycode any = space"
+
+        # Finally use xcape to cause the space bar to generate a space when tapped.
+        xcape -e "$spare_modifier=space"
+
+
+Note regarding xmodmap
+----------------------
+
+If you are in the habit of remapping keycodes to keysyms (eg, using xmodmap),
+there are two issues you may encounter.
+
+1. You will need to restart xcape after every time you modify the mapping from
+   keycodes to keysyms (eg, with xmodmap), or xcape will still use the old
+   mapping.
+
+2. The key you wish to send must have a defined keycode. So for example, with
+   the default mapping `Control_L=Escape`, you still need an escape key defined
+   in your xmodmap mapping. (I get around this by using 255, which my keyboard
+   cannot send).
+
+Contact
+-------
+
+Find the latest version at
+https://github.com/alols/xcape
+
+The author can be reached at
+albin dot olsson at gmail dot com
+~~~
+
+~~这种变态的对齐应该是编辑器自动调整得把（总不能写好手动来吧。。。），谁知道怎么办到的？是 Vim，Emacs 里的什么操作？~~
+
+Vim 里先 `set tw=80`（text width），再 `gq$` 把接下来的一段自动 word wrap 到 80 个字符。
+
+还有这个：https://github.com/vim-ruby/vim-ruby/blob/master/README
+应该是 Vim 弄的。
+
+---
+
+**Refs**
+
+* http://vim.wikia.com/wiki/Automatic_word_wrapping
+
+---
+
+~~~
+log: $1. Mon Sep  1 23:38:55     2014;
+~~~
+
+done-唐氏大猜想
+
+这次要把简书当微博使，占个位先。
+
+>说个认真的，人类进化史和科技发展史的的两大里程碑应该是**口语和文字的消失**，它们从远古走来伴随人类这么多年，想想就有点小激动。我死之前应该能看到新生的孩子都是"哑巴"。恩，这是唐氏猜想，License 是 GPL, 受 CopyLeft 保护。
+
+恩，这就是唐氏大猜想的全部内容。想想就有点小激动。
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+~~~
+log: $1. 2014-06-04;
+~~~
+
+
+
+---
+
+因为单位矩阵是 Identity matrix，通常用 I 表示（虽然国内教材通常用 E 表示）。I 的读法就是 eye[^eye]。
+
+---
+
+这篇是不是有点冷……同理：
+
+Command | Meaning | Why
+:---: | :---: | :---:
+eps | 浮点数最小间距 | epsilon，ɛ
+
+[^eye]: [Identity matrix - MATLAB eye - MathWorks 中国](http://cn.mathworks.com/help/matlab/ref/eye.html)
+
+
+作为正常人看到广告通常都要咬牙切齿，浪费我宝贵的网速，让人没法舒舒服服看点东西。但有些广告确实做的赏心悦目，播完还给我一种恋恋不舍的感觉。
+
+
+--------------------------------------------------------------------------------
+
+#### [01. 人为什么活着？][why-to-live]
+
+![][ads-01]
+
+一个很热血的广告。讲，人为什么活着。音乐也很棒。但最后给我们的答案却不那么让我满意。梦？梦。（not 梦？梦！）
+
+* 其中的背景音乐：[On Your Mark (Music)][on-your-mark]
+* 宫崎骏的一个短片
+    * [豆瓣页面（8.4 分）][on-your-mark-douban]
+    * [维基百科][on-your-mark-wikipedia]
+    * [在线观看（6分钟）][on-your-mark-mv]
+
+[why-to-live]: http://v.youku.com/v_show/id_XMjQyMzAyMjU2.html
+[on-your-mark]: http://t.cn/hgmUTu "豆瓣FM"
+[on-your-mark-mv]: http://v.youku.com/v_show/id_XNTYyOTY1MTk2.html
+[on-your-mark-douban]: http://movie.douban.com/subject/1432701/
+[on-your-mark-wikipedia]: http://en.wikipedia.org/wiki/On_Your_Mark
+[ads-01]: http://gnat-tang-shared-image.qiniudn.com/pictures/ads-01.png
+
+
+
+--------------------------------------------------------------------------------
+
+
+#### [02. 士力架，横扫饥饿][ads-02-ref]
+
+![][ads-02]
+太经典了。。。
+[][snikers]
+
+
+[ads-02-ref]: http://v.youku.com/v_show/id_XNDQ4MTE2MDg4.html
+[snikers]: http://v.youku.com/v_show/id_XNDQ4MTE2MDg4.html
+[ads-02]: http://gnat-tang-shared-image.qiniudn.com/pictures/ads-02.png
+
+
+-----
+
+
+#### [Happy Christmas][christmas]
+
+
+
+[christmas]: http://v.youku.com/v_show/id_XNzAyMTA5MTEy.html?f=19404765
+
+----
+
+- [more][more]
+
+
+[more]: http://www.youku.com/playlist_show/id_19404765.html
+
+
+--------------------------------------------------------------------------------
+
+* 欢迎推荐
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+~~~
+log: 2014-05-05, created this post;
+~~~
+
+无关爱情，只是记得
+
+【文】梁珊珊 【转录自】武汉大学图书馆，馆刊？
+
+
+前不久，偶尔在网上碰见失去联系的中学同学，一通电话打过去，聊得很是兴奋。
+
+嘘寒问暖道过近况之后，便开始把老同学一个个数过去，谁谁谁去了哪里念书，谁谁谁开始打工创业，各有各的境遇，各有各的悲喜，赞叹的唏嘘的偶尔还有点酸酸的小嫉妒间或弥漫在电话两端。
+
+末了，我问，你还记得那谁么？那谁是对方追过的女孩子，老同学满脸羞涩、偷偷把巨大的绒毛乌龟玩偶塞进她抽屉的场景在记忆里新鲜得还如在眼前。
+
+电话那端沉默许久，才回答，怎么可能不记得。语气跟开头有些许异样，好像那个名字有魔力一般，打开了通往过去的阀门，将他带到了另一个时空。
+
+我接着问他还有没有再联系。
+
+有啊，这次他倒是答得很快，时不时会在 qq 上聊天。
+
+我说，那样啊，她有男朋友了没，若是没有，还是可以再追她的。
+
+不知道，没有问过；而且，我已经有女朋友了，我们很好，没有想过再和她怎么样，只不过，最初的喜欢，忘不掉啊。
+
+之后聊起他女朋友，说起两人相遇的情境，他的声音里满满的都是甜蜜和温柔。我知道他的爱情已经给了现在的这个女孩，关于曾经求而不得的那个人，不过是一段回忆，记录着青春活力，记录着年少轻狂，太过美好因而割舍不掉。
+
+我觉得我很能理解他，自己也曾在懵懂的年岁里近乎执迷地喜欢过人，之后高考求学，各奔各的前程，散落在祖国的大江南北，有着他的联系方式，却很少有联系，开始的时候每次看见他上线，都要克制自己别太过急切地过去打招呼，日子久了便也逐渐习惯。偶尔有一搭没一搭地闲聊几句，大都是没什么盐水的废话，最关心的那句总是哽在喉咙里出不去：你过得好不好？太简单，可又太沉重，于是干脆不说，插科打诨里了解到些许近况就是全部了。
+
+不知道他过着什么样的生活，不知道他交着什么样的朋友，不知道这些年的光阴将对方磨练成了什么样的人，其实曾经的执着早就失去了具体的对象。之所以念念不忘，与其说是为了那一个人，倒不如说是为了曾经那个自己，那个被一段无果爱恋所牵扯的青春岁月。
+
+忘或者不忘，都与爱情没有什么关系了，被记得的是当年年少。
+
+
+---
+
+发现一个特别牛逼的网站[^vertex42]，提供一些靠谱的 Excel 表格下载。
+
+[^vertex42]: http://www.vertex42.com/ Excel Templates, Calendars, Calculators and Spreadsheets by Vertex42
+
+比如刚才我下载了 [weekly-calendar-template.xlsx](http://gnat.qiniudn.com/meta/week.xlsx)，在 Excel 里输入好当前周的开始日期，居然可以自动生成周历！如图：
+
+![weekly-calendar-2015-11-01](http://upload-images.jianshu.io/upload_images/29284-68d647efe7602b57.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+效果还特别赞：
+![header of weekly-calendar-2015-11-01](http://upload-images.jianshu.io/upload_images/29284-746f674f21f78952.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+好好学习，天天向上。
+
+
+* 去掉重复的实现（要简洁，不是玩虐）
+    * 加粗只留下 `**加粗**`
+    * 列表只留下 `*`，去掉 `-`，`+`
+* 链接与图片的区别放到后面，比如这样：`[text](url)` 和 `[img]!(url)`
+* `[a] and b` 解析后变成 `a and b` 而不是 `[a] and b` ，这样我就可以：
+
+~~~
+# 一个在无法用 Sort 自动排好序的列表
+| Key | Value |
+| :---: | :---: |
+| foo | fool |
+| bar | barbaric |
+| ![][ass] | shit... |
+
+# 这个就可以排序了
+| Key | Value |
+| :---: | :---: |
+| [foo] | fool |
+| [bar] | barbaric |
+| [ass]!(url) | shit... | # 后缀表达式多么好，注意这个图片。我觉得这个要求挺合理，UTC 时间的缩写都不是 CUT。。。
+~~~
+* 预留一些宏，在文章开头自定义
+* MathJax 什么的，参考作业部落的功能吧，如果有网页编辑最好提供 Vim 模式（在网页里，Emacs 就算了）
+
+刚发了条说说：
+
+> 程序语言（的设计）应当多用【前缀表达】，比如 `3 + 2` 变成 `+ 3 2`。
+> 标记语言（的设计）则应当多用【后缀表达】，比如 Markdown 的图片链接 `![](url)`最好设计成 `[]!(url)`
+> 前者操作优先，后者内容优先。
+
+---
+
+~~~
+log: $1. Fri Aug 29 00:57:59     2014;
+~~~
+
+
+---
+
+首先這是一款鍵盤：
+
+![](http://gnat.qiniudn.com/kbd/massdrop-infinity-side-2.jpg?imageView2/2/w/400)
+
+當然，作爲一個鍵盤控而不是鍵盤燈控，我才不 care 鍵盤長什麼樣。這款鍵盤的牛逼之處在於能定製（所以我現在用的是 Poker II）：
+
+> **1. Open Source Design**
+> **2. No Upfront Tooling Costs**
+> **3. Fully Programmable Keys**（這才是關鍵）
+> **4. Dual Cherry MX / Alps Switch Compatibility**
+
+還可以直接產生中文……我的 [Gat 輸入發](https://github.com/district10/gat) 不是正好爲此而生的……還有 Dvorak……我使用的就是 Dovark 啊……所以這鍵盤簡直滿足了我對鍵盤的一切想法（除了我覺得空格鍵應該短一點）。
+
+![[TheInfinity Keyboard](https://www.massdrop.com/buy/infinity-keyboard-kit)](http://upload-images.jianshu.io/upload_images/29284-11de45742ab908e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+> The Infinity earned its name from **the infinite layers** with which the keyboard **can be programmed**, making it more configurable than any other circuit board on the market.
+
+---
+
+> To program your keyboard, all you have to do is use the handy Infinity Configurator and select exactly where you want your keys to be.
+
+---
+
+## GitHub: [kiibohd/controller](https://github.com/kiibohd/controller)
+
+---
+
+# 題外話
+
+Infinity 60% FAQ
+
+> **Does the Infinity 60% Kit have backlighting? Are there plans for backlighting?**
+> No, the Infinity 60% Kit does not support backlighting.
+> No, There are no plans for the Infinity 60% to support backlighting.
+
+一直覺得鍵盤燈很傻馬特（當然晚上確實有**點**實際作用）。
+
+> **Does the Infinity 60% Kit have NKRO?**
+> Yes. The Infinity 60% Kit has NKRO by default on most operating systems including Mac OSX.
+> The 6KRO compatibility mode may be explicitly toggled via the firmware if needed.
+> 6KRO is very sufficient for me. 
+
+這個是必須的。牛逼的是它可以從硬件上 toggle 這個特性……
+
+> **Is the Infinity 60% programmable? How do I reprogram my Infinity 60% to a different layout?**
+> Yes, the Infinity 60% is fully programmable.
+> Use the web [configurator](http://configurator.input.club/) to download the hex files
+> and flash it on to the keyboard or download and compile KLL on your own.
+> [TMK firmware](https://github.com/tmk/tmk_keyboard) is also compatible with the Infinity 60%.
+
+定製界面：[KII Keyboard Configurator](http://configurator.input.club/)
+
+順手我把自己的 DVPE Level1 給配置了一下：
+
+![我現在在使用的 DVPE 鍵盤佈局](http://upload-images.jianshu.io/upload_images/29284-5936890cbac0843b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+（我發縣“`k`”被唔達成了“`p`”，left hand upper row）
+
+> **What microchip does the Infinity 60% Kit use?**
+> The Infinity 60% Kit uses the MK20DX128VLF5  The datasheets can be found [here](http://cache.freescale.com/files/32bit/doc/data_sheet/K20P48M50SF0.pdf) and [here](http://cache.freescale.com/files/32bit/doc/ref_manual/K20P48M50SF0RM.pdf).
+
+---
+
+### Refs
+
+* [Kiibohds!](http://kiibohd.com/)
+* [Infinity 60% Keyboard Kit | Input Club](http://input.club/devices/keyboards/infinity-keyboard)
+* [The Story Behind Infinity: a Community-Designed Keyboard - Massdrop](https://www.massdrop.com/article/the-story-behind-infinity-a-community-designed-keyboard?utm_source=Sailthru&utm_medium=email&utm_campaign=09-24-15%20New%20User&utm_term=09-24-15%20New%20Users)
+* [infinity-keyboard-kit](https://www.massdrop.com/buy/infinity-keyboard-kit)
+* [Infinity Configurator - Massdrop](https://keyboard-configurator.massdrop.com/keyboard/infinity?keyboardType=hacker)
+
+---
+
+如果一个人说的东西你死活看不懂，除了讨论的内容涉及太多你不理解的概念之外，极有可能是对方没说清。
+
+除此，智商，逻辑，思维不差太多的情况下，你好好说，人还能好好听不懂？
+
+年轻的时候老师叫我们多用排比：把一句话说成三句，会显得很有气势。我如获至宝。现在想想，那气势有点像吵架，我不禁要问：嗓门儿大就有理了？
+
+有些人写了 800 字也只说了我喜欢你。没有你也没有我，只有我喜欢你。还比不上这十来个字：我喜欢你，因为你是我男神。
+
+把事物描述复杂很容易，只要堆砌各种花哨的无聊的有关无关的形容词，以及 @#$%…& 的动词。以及一些尤其让我难以理解的细节，比如 45 度仰望天空。45 度？？？
+
+把事物描述简单却很难，你要能拎清楚事物内在的逻辑，顺着一条主线有条不紊地说，听的人就容易懂。如果写文章像饭后吹牛，脑子里突然想到一点，就啪啪啪敲上去，慢慢地，你照顾了太多细节，却忘记了主线，把别人和自己都带沟里去了。
+
+~~举个例子，[偷书贼][the-book-thief] 里严厉的老师让小女主人公自我介绍：~~
+
+~~“Chalk，Name，Board（粉笔，名字，黑板）”。~~
+
+~~真是太简洁了~ 如果换成是“用粉笔把你的名字写在黑板上”，那就完全没有味道了。~~
+
+ 
+
+
+总之，语言简洁的好处，就是简洁。![][joke-you]
+
+（才 ~~389~~ ~~469~~ 个字。）
+
+
+
+[the-book-thief]: http://movie.douban.com/subject/21348876/
+[joke-you]: http://assets.jianshu.io/assets/emojis/scream.png
+
+
+
+~~~
+log: $1. Wed Jul 16 22:01:30     2014;
+~~~
+
+
+**中文舉例**：這個人氣宇非凡 -- 一看就不是傻逼。
+
+**英文舉例**：This man is awesome--in a strange way.
+
+
+[OpenGL to OpenSceneGraph Lookup](http://www.openscenegraph.org/index.php/documentation/knowledge-base/116-opengl-to-openscenegraph-lookup)
+
+Lookup table for helping people with converting OpenGL code to OpenSceneGraph code.
+**OpenGL function**
+**OpenSceneGraph implementation**
+
+glClear( GLbitfield mask )
+osg::Camera::setClearMask(GLbitfield mask)osg::GraphicsContext::setClearMask(GLbitfield mask)osg::ClearNode::setClearMask(GLbitfield mask)osg::RenderStage::setClearMask(GLbitfield mask)
+
+glClearColor(GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha)
+osg::Camera::setClearColor(const osg::Vec4& color)osgUtil::SceneView::setClearColor(const osg::Vec4& color)
+
+glClearDepth
+osg::Camera::setClearDepth(double depth)
+
+glClearStencil
+osg::Camera::setClearStencil(int stencil)
+
+**State Attributes**
+
+glAlphaFunc( GLenum func, GLclampf ref )
+osg::AlphaFunc(ComparisonFunction func, float ref)
+
+glBlendColor(GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha)
+osg::BlendColor(const osg::Vec4& constantColor)
+
+glBlendFunc( GLenum sfactor, GLenum dfactor)
+osg::BlendFunc(GLenum source, GLenum destination, GLenum source_alpha, GLenum destination_alpha)
+
+glBlendEquation(GLenum mode)
+osg::BlendEquation(Equation equation)
+
+glClampColor(GLenum target, GLenum mode)
+osg::ClampColor(GLenum vertexMode, GLenum fragmentMode, GLenum readMode);
+
+glColorMask( GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha )
+osg::ColorMask(bool red, bool green, bool blue, bool alpha);
+
+glMatrixMode( GL_COLOR )
+osg::ColorMatrix()
+
+glCullFace(GLenum mode)
+osg::CullFace(Mode mode)
+
+glDepthFunc( GLenum func)glDepthRange( GLclampd zNear, GLclampd zFar )glDepthMask( GLboolean flag )
+osg::Depth(Function func, double zNear, double zFar, bool writeMask)
+
+glFog*( GLenum pname, GLfloat param )glFog*v(GLenum pname, const GLfloat *params )
+osg::Fog();
+
+glFogf( GL_FOG_MODE, GLfloat param )
+osg::Fog::setMode( Mode mode )
+
+glFogf( GL_FOG_DENSITY, GLfloat param )
+osg::Fog::setDensity( float density )
+
+glFogf( GL_FOG_START, GLfloat param )
+osg::Fog::setStart( float start )
+
+glFogf( GL_FOG_END, GLfloat param )
+osg::Fog::setEnd( float end )
+
+glFogf( GL_FOG_INDEX, GLfloat param )
+Color indexing not supported
+
+glFogfv(GL_FOG_COLOR, const GLfloat *params )
+osg::Fog::setColor( const Vec4 &color )
+
+glFogi(GL_FOG_COORDINATE_SOURCE, GLenum mode)
+osg::Fog::setFogCoordinateSource(GLint source)
+
+glFrontFace( GLenum mode )
+osg::FrontFace(Mode face)
+
+glHint( GLenum target, GLenum mode )
+osg::Hint(GLenum target, GLenum mode)
+
+glLight*(GLenum light, GLenum pname, GLfloat param )glLight*v( GLenum light, GLenum pname, const GLfloat *params)
+osg::Light(unsigned int lightnum)
+
+glLightfv( GLenum light, GL_AMBIENT, const GLfloat *params)
+osg::Light::setAmbient( const Vec4& ambient )
+
+glLightfv( GLenum light, GL_DIFFUSE, const GLfloat *params)
+osg::Light::setDiffuse( const Vec4& diffuse )
+
+glLightfv( GLenum light, GL_SPECULAR, const GLfloat *params)
+osg::Light::setSpecular( const Vec4& specular )
+
+glLightfv( GLenum light, GL_POSITION, const GLfloat *params)
+osg::Light::setPosition( const Vec4& position )
+
+glLightfv( GLenum light, GL_SPOT_DIRECTION, const GLfloat *params)
+osg::Light::setDirection( const Vec3& direction )
+
+glLightf(GLenum light, GL_CONSTANT_ATTENUATION, GLfloat param )
+osg::Light::setConstantAttenuation( float constant_attenuation )
+
+glLightf(GLenum light, GL_LINEAR_ATTENUATION, GLfloat param )
+osg::Light::setLinearAttenuation ( float linear_attenuation )
+
+glLightf(GLenum light, GL_QUADRATIC_ATTENUATION, GLfloat param )
+osg::Light::setQuadraticAttenuation ( float quadratic_attenuation )
+
+glLightf(GLenum light, GL_SPOT_EXPONENT, GLfloat param )
+osg::Light::setSpotExponent( float spot_exponent )
+
+glLightf(GLenum light, GL_SPOT_CUTOFF, GLfloat param )
+osg::Light::setSpotCutoff( float spot_cutoff )
+
+glLightModel*( GLenum pname, GLfloat param )glLightModel*v( GLenum pname, const GLfloat *params )
+osg::LightModel()
+
+glLightModelfv( GL_LIGHT_MODEL_AMBIENT, const GLfloat *params )
+osg::LightModel::setAmbientIntensity(const osg::Vec4& ambient)
+
+glLightModeli(GL_LIGHT_MODEL_COLOR_CONTROL, GLint param)
+osg::LightModel::setColorControl(ColorControl cc)
+
+glLightModeli( GL_LIGHT_MODEL_LOCAL_VIEWER, GLint param )
+osg::LightModel::setLocalViewer(bool localViewer)
+
+glLightModeli( GL_LIGHT_MODEL_TWO_SIDE, GLint param )
+osg::LightModel::setTwoSided(bool twoSided)
+
+glLineStipple( GLint factor, GLushort pattern )
+osg::LineStipple(GLint factor, GLushort pattern)
+
+glLineWidth( GLfloat width )
+osg::LineWidth(float width=1.0f)
+
+glLogicOp( GLenum opcode )
+osg::LogicOp(Opcode opcode)
+
+glMaterialf(GLenum face, GLenum pname, GLfloat param )
+osg::Material()
+
+ 
+osg::Multisample()
+
+ 
+osg::PolygonMode(Face face,Mode mode)
+
+ 
+osg::PolygonOffset(float factor, float units)
+
+ 
+osg::PolygonStipple(const GLubyte* mask)
+
+ 
+osg::Scissor(int x,int y,int width,int height)
+
+ 
+osg::ShadeModel(Mode mode)
+
+glStencilFunc( GLenum func, GLint ref, GLuint mask )
+osg::Stencil::setFunction(Function func,int ref,unsigned int mask)
+
+glStencilMask( GLuint mask )
+osg::Stencil::setOperation(Operation sfail, Operation zfail, Operation zpass)
+
+glStencilOp( GLenum fail, GLenum zfail, GLenum zpass )
+
+ 
+osg::StencilTwoSided()
+
+glTexEnvi( GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, ...)glTexEnvfv( GL_TEXTURE_ENV, GL_TEXTURE_ENV_COLOR, ...)
+osg::TexEnv(Mode mode)
+
+glTexEnvi( GL_TEXTURE_ENV, ...)Texture combiners extension
+osg::TexEnvCombine()
+
+glTexEnvf(GL_TEXTURE_FILTER_CONTROL_EXT, GL_TEXTURE_LOD_BIAS_EXT, ...)
+osg::TexEnvFilter(float lodBias)
+
+glTexGen_( GLenum coord, GLenum pname, GLdouble param )
+osg::TexGen()osg::TexGenNode()
+
+glMatrixMode( GL_TEXTURE )
+osg::TexMat(const Matrix& matrix)
+
+glTexImage1D( GL_TEXTURE_1D, ...)
+osg::Texture1D()
+
+glTexImage2D( GL_TEXTURE_2D, ...)
+osg::Texture2D(Image* image)
+
+glTexImage3D( GL_TEXTURE_2D_ARRAY_EXT, ...)
+osg::Texture2DArray()
+
+glTexImage3D( GL_TEXTURE_3D, ...)
+osg::Texture3D()
+
+glTexImage2D( GL_TEXTURE_CUBE_MAP_POSITIVE_X, ...)glTexImage2D( GL_TEXTURE_CUBE_MAP_NEGATIVE_X, ...)glTexImage2D( GL_TEXTURE_CUBE_MAP_POSITIVE_Y, ...)glTexImage2D( GL_TEXTURE_CUBE_MAP_NEGATIVE_Y, ...)glTexImage2D( GL_TEXTURE_CUBE_MAP_POSITIVE_Z, ...)glTexImage2D( GL_TEXTURE_CUBE_MAP_NEGATIVE_Z, ...)
+osg::TextureCubeMap()
+
+glTexImage2D( GL_TEXTURE_RECTANGLE, ...)
+osg::TextureRectangle(Image* image)
+
+glViewport( GLint x, GLint y, GLsizei width, GLsizei height )
+osg::Viewport(value_type x,value_type y,value_type width,value_type height)
+
+[< Prev](http://www.openscenegraph.org/index.php/documentation/knowledge-base/41-matrix-transformations)
+[Next >](http://www.openscenegraph.org/index.php/documentation/knowledge-base/75-perspective-transformation)
+
+
+- [A* search algorithm - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/A*_search_algorithm)
+- [Introduction to A*](http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html)
+- [Non-Contiguous Cartogram](http://bl.ocks.org/mbostock/4055908)
+- [Choropleth](http://bl.ocks.org/mbostock/4060606)
+- [mbostock.github.io/d3/talk/20111116/airports.html](http://mbostock.github.io/d3/talk/20111116/airports.html)
+- [The Wealth & Health of Nations](http://bost.ocks.org/mike/nations/)
+- [Les Misérables Co-occurrence](http://bost.ocks.org/mike/miserables/)
+- [OMG Particles!](http://bl.ocks.org/mbostock/1062544)
+- [Force-based label placement](http://bl.ocks.org/MoritzStefaner/1377729)
+- [click-to-zoom via transform](http://bl.ocks.org/mbostock/2206590)
+- [Urban Bus Races](http://busrac.es/)
+- [d3.js airport data from Google Fusion - ramblings.mcpher.com](http://xliberation.com/googlecharts/d3flights.html)
+- [Example of d3-ForceEdgeBundling on US airline routes graph.](http://bl.ocks.org/upphiminn/6515478)
+- [WhoDoTheyServe.com](http://www.whodotheyserve.com/#/graph)
+
+- 唉, 又学习一批高端关键词。。。
+    - porn
+    - eHarmony (eHarmony为一国外婚恋交友网站), Match.com
+    - xvideos
+    - call girl
+    - escort (援交)
+
+https://en.wikipedia.org/wiki/Wikipedia:Graphics_tutorials
+
+https://en.wikipedia.org/wiki/Wikipedia:How_to_create_graphs_for_Wikipedia_articles
+
+https://en.wikipedia.org/wiki/Wikipedia:SVG_Help
+
+https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
+
+
+#### [Animated SVG][animated-svg]
+
+![](http://gnat-tang-shared-image.qiniudn.com/pictures/demo.svg)
+
+
+https://commons.wikimedia.org/wiki/Category:Animated_SVG
+
+http://wiki.inkscape.org/wiki/index.php/SVG_Animation
+
+http://www.w3.org/TR/SVG/animate.html
+
+https://developer.mozilla.org/en-US/docs/Web/SVG
+
+[animated-svg]: https://en.wikipedia.org/wiki/Wikipedia_talk:WikiProject_Mathematics/Graphics
+
+g++ -ggdb `pkg-config --cflags opencv` -o `basename $1 .cpp` $1 `pkg-config --libs opencv`;
