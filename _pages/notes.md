@@ -19,6 +19,33 @@ after-before: |
 Notes | 笔记[^1]
 ===============
 
+[Uniq - Removing duplicate lines - Vim Tips Wiki - Wikia](http://vim.wikia.com/wiki/Uniq_-_Removing_duplicate_lines)
+
+:   how to remove duplicate lines??
+
+[丽莉·克亚芙 (豆瓣)](https://movie.douban.com/celebrity/1237039/)
+
+[Riley Keough on IMDb: Movies, TV, Celebs, and more... - Photo Gallery - IMDb](http://www.imdb.com/name/nm2142336/mediaindex?ref_=nm_mv_close)
+
+[关于异形的前世今生上抱下破 (普罗米修斯 影评)](https://movie.douban.com/review/5460211/)
+
+[Ex (relationship) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Ex_(relationship))
+
+:   In social relationships, an ex (plural is exes) is someone with whom a
+    person was once associated, in a relationship, marriage, or once talked to.
+    As a prefix, ex- can refer to a variety of different relationships; for
+    example, one might refer to a music group's ex-guitarist, or someone's
+    ex-friend. When used alone, ex as a noun is assumed to refer to a former
+    sexual or romantic partner, especially a former spouse. This often has a
+    derogatory tinge, especially if it refers to unrequited feelings.
+
+![Statistician William Sealy Gosset, known as "Student"](https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/William_Sealy_Gosset.jpg/255px-William_Sealy_Gosset.jpg)
+
+Biologist and statistician Ronald Fisher
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Biologist_and_statistician_Ronald_Fisher.jpg/300px-Biologist_and_statistician_Ronald_Fisher.jpg){width=45%}
+![](https://upload.wikimedia.org/wikipedia/commons/a/aa/Youngronaldfisher2.JPG){width=45%}
+
 [Impostor syndrome - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Impostor_syndrome)
 
 [Impostor Syndro-dvorak4tzx](http://dvorak4tzx.lofter.com/post/1d4021c8_86aa9c9)

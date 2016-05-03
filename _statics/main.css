@@ -391,7 +391,8 @@ img {
     max-width: 50%;
 }
 
-.figure img:hover {
+.figure img:hover,
+p img:hover {
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -o-transform: scale(1.05);
