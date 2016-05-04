@@ -1797,6 +1797,22 @@ Least absolute deviations
     Always one solution         Possibly multiple solutions
     ------------------------    ------------------------------------
 
+Bias of an estimator
+
+:   TODO: [Bias of an estimator - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Bias_of_an_estimator)
+
+Efficient estimator
+
+:   In statistics, an efficient estimator is an estimator that estimates the
+    quantity of interest in some “best possible” manner. The notion of “best
+    possible” relies upon the choice of a particular loss function — the
+    function which quantifies the relative degree of undesirability of
+    estimation errors of different magnitudes. The most common choice of the
+    loss function is quadratic, resulting in the mean squared error criterion
+    of optimality.
+
+    TODO: [Efficient estimator - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Efficient_estimator)
+
 Consistent estimator
 
 :   In statistics, a consistent estimator or asymptotically consistent
@@ -1857,20 +1873,20 @@ Observational error
 
         Sources of random error
 
-        The random or stochastic error in a measurement is the error that is
-        random from one measurement to the next. Stochastic errors tend to be
-        normally distributed when the stochastic error is the sum of many
-        independent random errors because of the central limit theorem.
-        Stochastic errors added to a regression equation account for the
-        variation in Y that cannot be explained by the included Xs.
+        :   The random or stochastic error in a measurement is the error that
+            is random from one measurement to the next. Stochastic errors tend
+            to be normally distributed when the stochastic error is the sum of
+            many independent random errors because of the central limit
+            theorem.  Stochastic errors added to a regression equation account
+            for the variation in Y that cannot be explained by the included Xs.
 
-        The term "observational error" is also sometimes used to refer to
-        response errors and some other types of non-sampling error. In
-        survey-type situations, these errors can be mistakes in the collection
-        of data, including both the incorrect recording of a response and the
-        correct recording of a respondent's inaccurate response. These sources
-        of non-sampling error are discussed in Salant and Dillman (1995) and
-        Bland and Altman (1996).
+            The term "observational error" is also sometimes used to refer to
+            response errors and some other types of non-sampling error. In
+            survey-type situations, these errors can be mistakes in the
+            collection of data, including both the incorrect recording of a
+            response and the correct recording of a respondent's inaccurate
+            response. These sources of non-sampling error are discussed in
+            Salant and Dillman (1995) and Bland and Altman (1996).
 
 Estimator
 
@@ -2326,7 +2342,7 @@ Bayesian inference `@`{.tzx-anchor #bayesian-inference}
     The prior distribution is the distribution of the parameter(s) before any
     data is observed, i.e. p(\theta \mid \alpha) .
 
-Statistical hypothesis testing
+Statistical hypothesis testing `@`{.tzx-anchor #statistical-hypothesis-testing}
 
 :   Statistical hypothesis testing is a key technique of both frequentist
     inference and Bayesian inference, although the two types of inference have
@@ -2365,6 +2381,10 @@ Statistical hypothesis testing
     (now familiar) calculations determined whether to reject the
     null-hypothesis or not. Significance testing did not utilize an alternative
     hypothesis so there was no concept of a Type II error.
+
+Significance test
+
+:   see [Statistical hypothesis testing](#statistical-hypothesis-testing)
 
 Z-test
 
