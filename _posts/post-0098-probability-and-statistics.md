@@ -23,6 +23,7 @@ MISC Notes
   - bernoulli, `[bə:'nu:li]`
   - poisson, `/ˈpwɑːsɒn/`
   - deviation, `['divɪ'eʃən]`
+  - cumulative, `['kjumjəletɪv]`
 
 Probability theory
 
@@ -38,9 +39,70 @@ Probability theory
     :   ![Geometric visualisation of the mode, median and mean of an arbitrary
             probability density function.](https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Visualisation_mode_median_mean.svg/150px-Visualisation_mode_median_mean.svg.png)
 
+    Moment (mathematics)
+
+    :   In mathematics, a moment is a specific quantitative measure, used in
+        both mechanics and statistics, of the shape of a set of points. If the
+        points represent mass, then the zeroth moment is the total mass, the
+        first moment divided by the total mass is the center of mass, and the
+        second moment is the rotational inertia. If the points represent
+        probability density, then the zeroth moment is the total probability
+        (i.e. one), the first moment is the mean, the second central moment is
+        the variance, the third moment is the skewness, and the fourth moment
+        (with normalization and shift) is the kurtosis. The mathematical
+        concept is closely related to the concept of moment in physics.
+
+        For a bounded distribution of mass or probability, the collection of
+        all the moments (of all orders, from 0 to ∞) uniquely determines the
+        distribution.
+
+        The n-th moment of a real-valued continuous function f(x) of a real
+        variable about a value c is
+
+        $$\mu_n=\int_{-\infty}^\infty (x - c)^n\,f(x)\,dx.$$
+
+        For the second and higher moments, the central moments (moments about
+        the mean, with c being the mean) are usually used rather than the
+        moments about zero, because they provide clearer information about the
+        distribution's shape.
+
+        Other moments may also be defined. For example, the n-th inverse moment
+        about zero is $\operatorname{E}\left[X^{-n}\right]$ and the n-th
+        logarithmic moment about zero is $\operatorname{E}\left[\ln^n(X)\right]$.
+
+        Significance of moments (raw, central, standardised) and cumulants
+        (raw, standardised), in connection with named properties of
+        distributions:
+
+        -   **mean**
+
+            The first raw moment is the mean.
+
+        -   **variance**
+
+            The second central moment is the variance. Its positive square root is the standard deviation σ.
+
+        -   **skewness**
+
+            The third central moment is a measure of the lopsidedness of the
+            distribution; any symmetric distribution will have a third central
+            moment, if defined, of zero. The normalised third central moment is
+            called the skewness, often γ (gamma).^[Gamma (uppercase Γ, lowercase γ;
+            Greek: Γάμμα Gámma) is the third letter of the Greek alphabet.]
+
+        -   **Normalised moments**
+
+            The normalised n-th central moment or standardized moment is the
+            n-th central moment divided by σn; the normalised n-th central
+            moment of
+
+            $$x = \frac{\operatorname{E} \left [(x - \mu)^n \right ]}{\sigma^n}.$$
+
+        -   **Kurtosis**
+
     Standard error
 
-    :   The standard error (SE) is the standard deviation of the sampling
+    :   The **standard error (SE)** is the standard deviation of the sampling
         distribution of a statistic, most commonly of the mean. The term may
         also be used to refer to an estimate of that standard deviation,
         derived from a particular sample used to compute the estimate.
@@ -52,9 +114,10 @@ Probability theory
 
         For example, the sample mean is the usual estimator of a population
         mean. However, different samples drawn from that same population would
-        in general have different values of the sample mean, so there is a
-        distribution of sampled means (with its own mean and variance). The
-        standard error of the mean (SEM) (i.e., of using the sample mean as a
+
+        in general have different values of the sample mean, so there is
+        **a distribution of sampled means** (with its own mean and variance).
+        **The standard error of the mean (SEM)** (i.e., of using the sample mean as a
         method of estimating the population mean) is the standard deviation of
         those sample means over all possible samples (of a given size) drawn
         from the population. Secondly, the standard error of the mean can refer
@@ -79,8 +142,8 @@ Probability theory
 
     Independent and identically distributed random variables
 
-    :   The abbreviation i.i.d. is particularly common in statistics (often as
-        iid, sometimes written IID), where observations in a sample are often
+    :   The abbreviation **i.i.d.** is particularly common in statistics (often
+        as iid, sometimes written IID), where observations in a sample are often
         assumed to be effectively i.i.d. for the purposes of statistical
         inference. The assumption (or requirement) that observations be i.i.d.
         tends to simplify the underlying mathematics of many statistical
@@ -93,20 +156,21 @@ Probability theory
 
         White noise is a simple example of IID.
 
-    Cumulative distribution function (CDF)
+    Cumulative distribution function (**CDF**)
 
     :   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Normal_Distribution_CDF.svg/450px-Normal_Distribution_CDF.svg.png)
 
         Every cumulative distribution function F is **non-decreasing** and
-        **right-continuous**, which makes it a càdlàg function. Furthermore,
+        **right-continuous**, which makes it a càdlàg function[^cadlag-func].
+        Furthermore,
 
         $$\lim_{x\to -\infty}F(x)=0, \quad \lim_{x\to +\infty}F(x)=1.$$
 
-    Probability density function (pdf)
+    Probability density function (**pdf**)
 
     :   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Boxplot_vs_PDF.svg/525px-Boxplot_vs_PDF.svg.png)
 
-        If $F_X$ is the cumulative distribution function of $X$, then:
+        If $F_X$ is the CDF of $X$, then:
 
         $$F_X(x) = \int_{-\infty}^x f_X(u) \, du ,$$
 
@@ -114,7 +178,7 @@ Probability theory
 
         $$f_X(x) = \frac{d}{dx} F_X(x).$$
 
-    Probability mass function (pmf)
+    Probability mass function (**pmf**)
 
     :   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Discrete_probability_distrib.svg/330px-Discrete_probability_distrib.svg.png)
 
@@ -126,6 +190,29 @@ Probability theory
         function is
 
         $$f_X(x) = \begin{cases}\frac{1}{2}, &x \in \{0, 1\},\\0, &x \notin \{0, 1\}.\end{cases}$$
+
+    Probability space
+
+    :   In probability theory, a probability space or a probability triple is a
+        mathematical construct that models a real-world process (or
+        "experiment") consisting of states that occur randomly. A probability
+        space is constructed with a specific kind of situation or experiment in
+        mind. One proposes that each time a situation of that kind arises, the
+        set of possible outcomes is the same and the probabilities are also the
+        same.
+
+        A probability space consists of three parts:
+
+          - A sample space, $\Omega$, which is the set of all possible outcomes.
+          - A set of events $\mathcal{F}$, where each event is a set containing
+            zero or more outcomes.
+          - The assignment of probabilities to the events; that is, a function
+            P from events to probabilities.
+
+        A probability space is a mathematical triplet ($\Omega$, $\mathcal{F}$, P)
+        that presents a model for a particular class of real-world situations.
+        As with other models, its author ultimately defines which elements
+        $\Omega$, $\mathcal{F}$, and P will contain.
 
     Expected value
 
@@ -157,18 +244,21 @@ Probability theory
         If X is an m × n matrix, then the expected value of the matrix is defined as the matrix of expected values:
 
         $$
-            \operatorname{E}[X] =
+            \begin{align}
+            \operatorname{E}[X] &=
             \operatorname{E} \left [ \begin{pmatrix}
                 x_{1,1} & x_{1,2} & \cdots & x_{1,n} \\
                 x_{2,1} & x_{2,2} & \cdots & x_{2,n} \\
                 \vdots & \vdots & \ddots & \vdots \\
                 x_{m,1} & x_{m,2} & \cdots & x_{m,n}
-            \end{pmatrix} \right ] = \begin{pmatrix}
+            \end{pmatrix} \right ] \\
+            &= \begin{pmatrix}
                 \operatorname{E}[x_{1,1}] & \operatorname{E}[x_{1,2}] & \cdots & \operatorname{E}[x_{1,n}] \\
                 \operatorname{E}[x_{2,1}] & \operatorname{E}[x_{2,2}] & \cdots & \operatorname{E}[x_{2,n}] \\
                 \vdots & \vdots & \ddots & \vdots \\
                 \operatorname{E}[x_{m,1}] & \operatorname{E}[x_{m,2}] & \cdots & \operatorname{E}[x_{m,n}]
-            \end{pmatrix}.
+            \end{pmatrix}
+            \end{align}.
         $$
 
         This is utilized in covariance matrices.
@@ -289,11 +379,14 @@ Probability theory
 
     Classical definition
 
-    :   The probability of an event is the ratio of the number of cases
-        favorable to it, to the number of all cases possible when nothing leads
-        us to expect[clarification needed] that any one of these cases should
-        occur more than any other, which renders them, for us, equally
-        possible.
+    :   | The probability of an event is **the ratio** of
+        |
+        |  - the number of cases favorable to it, to
+        |  - the number of all cases possible
+        |
+        | when nothing leads us to expect that any one of these cases should
+        | occur more than any other, which renders them, for us, equally
+        | possible.
 
         This definition is essentially a consequence of the principle of
         indifference. If elementary events are assigned equal probabilities,
@@ -303,7 +396,7 @@ Probability theory
 
         The classical definition of probability was called into question by
         several writers of the nineteenth century, including John Venn and
-        George Boole.[2] The frequentist definition of probability became
+        George Boole. The frequentist definition of probability became
         widely accepted as a result of their criticism, and especially through
         the works of R.A. Fisher.  The classical definition enjoyed a revival
         of sorts due to the general interest in Bayesian probability, because
@@ -341,12 +434,24 @@ Probability theory
     :   Certain random variables occur very often in probability theory because
         they well describe many natural or physical processes. Their
         distributions therefore have gained special importance in probability
-        theory. Some fundamental discrete distributions are the [discrete uniform](#discrete-uniform-distribution),
-        [Bernoulli](#bernoulli-distribution), binomial, negative binomial, Poisson and geometric
+        theory. Some fundamental discrete distributions are the discrete uniform,
+        Bernoulli, binomial, negative binomial, Poisson and geometric
         distributions. Important continuous distributions include the
         continuous uniform, normal, exponential, gamma and beta distributions.
 
-Uniform distribution (discrete) `#`{#discrete-uniform-distribution}
+[^cadlag-func]: In mathematics, a càdlàg (French "continue à droite, limite à
+    gauche"), **RCLL (“right continuous with left limits”)**, or corlol
+    ("continuous on (the) right, limit on (the) left") function is a function
+    defined on the real numbers (or a subset of them) that is everywhere
+    right-continuous and has left limits everywhere. Càdlàg functions are
+    important in the study of stochastic processes that admit (or even require)
+    jumps, unlike Brownian motion, which has continuous sample paths. The
+    collection of càdlàg functions on a given domain is known as Skorokhod
+    space.
+
+    see more at [Càdlàg - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/C%C3%A0dl%C3%A0g).
+
+Discrete Uniform distribution
 
 :   The discrete uniform distribution itself is inherently non-parametric. It
     is convenient, however, to represent its values generally by an integer
@@ -369,7 +474,7 @@ Uniform distribution (discrete) `#`{#discrete-uniform-distribution}
     Variance    $\frac{(b-a+1)^2-1}{12}$
     --------    ----------------------------------
 
-Bernoulli distribution `#`{#bernoulli-distribution}
+Bernoulli distribution
 
 :   If X is a random variable with this distribution, we have:
 
@@ -437,6 +542,57 @@ Binomial distribution
     Fisher information          $g_n(p) = \frac{n}{p(1-p)}$ (for fixed n)
     ----------------------      --------------------------------------------------------------------------
 
+Poisson distribution
+
+:   Poisson distribution (`/ˈpwɑːsɒn/`), named after French mathematician
+    Siméon Denis Poisson, is a discrete probability distribution that expresses
+    the probability of a given number of events **occurring in a fixed interval
+    of time and/or space if these events occur with a known average rate and
+    independently of the time since the last event**. The Poisson distribution
+    can also be used for the number of events in other specified intervals such
+    as distance, area or volume.
+
+    A discrete random variable X  is said to have a Poisson distribution with
+    parameter λ > 0, if, for k = 0, 1, 2, ..., the probability mass function of X
+    is given by:
+
+    $$\!f(k; \lambda)= \Pr(X = k)= \frac{\lambda^k e^{-\lambda}}{k!},$$
+
+    The positive real number λ is equal to the expected value of X and also to its variance
+
+    $$\lambda=\operatorname{E}(X)=\operatorname{Var}(X).$$
+
+    ![**pmf**: The horizontal axis is the index k, the number of occurrences. λ is the
+        expected value. The function is defined only at integer values of k. The
+        connecting lines are only guides for the eye.](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Poisson_pmf.svg/488px-Poisson_pmf.svg.png)
+
+    ![**CDF**: The horizontal axis is the index k, the number of occurrences. The CDF is
+        discontinuous at the integers of k and flat everywhere else because a variable
+        that is Poisson distributed takes on only integer values.](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Poisson_cdf.svg/488px-Poisson_cdf.svg.png)
+
+    -------------------     --------------------------------------------------------------------
+    Parameters              $λ > 0 (real)$
+    Support                 $k ∈ ℤ*$
+    pmf                     $\frac{\lambda^k e^{-\lambda}}{k!}$
+    CDF                     $\frac{\Gamma(\lfloor k+1\rfloor, \lambda)}{\lfloor k\rfloor !}$, or
+                            $e^{-\lambda} \sum_{i=0}^{\lfloor k\rfloor} \frac{\lambda^i}{i!}$, or
+                            $Q(\lfloor k+1\rfloor,\lambda)$ (for $k\ge 0$, where
+                            $\Gamma(x, y)$ is the incomplete gamma function, $\lfloor k\rfloor$
+                            is the floor function, and Q is the regularized gamma function)
+    Mean                    $\lambda$
+    Median                  $\approx\lfloor\lambda+1/3-0.02/\lambda\rfloor$
+    Mode                    $\lceil\lambda\rceil - 1, \lfloor\lambda\rfloor$
+    Variance                $\lambda$
+    Skewness                $\lambda^{-1/2}$
+    Ex. kurtosis            $\lambda^{-1}$
+    Entropy                 $\lambda[1 - \log(\lambda)] + e^{-\lambda}\sum_{k=0}^\infty \frac{\lambda^k\log(k!)}{k!} (for large \lambda)$
+                            $\frac{1}{2}\log(2 \pi e \lambda) - \frac{1}{12 \lambda} - \frac{1}{24 \lambda^2} - \qquad \frac{19}{360 \lambda^3} + O\left(\frac{1}{\lambda^4}\right)$
+    MGF                     $\exp(\lambda (e^{t} - 1))$
+    CF                      $\exp(\lambda (e^{it} - 1))$
+    PGF                     $\exp(\lambda(z - 1))$
+    Fisher information      $\lambda^{-1}$
+    -------------------     --------------------------------------------------------------------
+
 Poisson approximation
 
 :   the Poisson distribution with parameter λ = np can be used as an
@@ -501,57 +657,6 @@ Negative binomial distribution
 [^neg-binom-pmf]: $$\binom{k+r-1}{k} = \frac{(k+r-1)!}{k!\,(r-1)!} = \frac{(k+r-1)(k+r-2)\dotsm(r)}{k!}.$$
 
     see more at [Binomial coefficient - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Binomial_coefficient).
-
-Poisson distribution
-
-:   Poisson distribution (`/ˈpwɑːsɒn/`), named after French mathematician
-    Siméon Denis Poisson, is a discrete probability distribution that expresses
-    the probability of a given number of events **occurring in a fixed interval
-    of time and/or space if these events occur with a known average rate and
-    independently of the time since the last event**. The Poisson distribution
-    can also be used for the number of events in other specified intervals such
-    as distance, area or volume.
-
-    A discrete random variable X  is said to have a Poisson distribution with
-    parameter λ > 0, if, for k = 0, 1, 2, ..., the probability mass function of X
-    is given by:
-
-    $$\!f(k; \lambda)= \Pr(X = k)= \frac{\lambda^k e^{-\lambda}}{k!},$$
-
-    The positive real number λ is equal to the expected value of X and also to its variance
-
-    $$\lambda=\operatorname{E}(X)=\operatorname{Var}(X).$$
-
-    ![**pmf**: The horizontal axis is the index k, the number of occurrences. λ is the
-        expected value. The function is defined only at integer values of k. The
-        connecting lines are only guides for the eye.](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Poisson_pmf.svg/488px-Poisson_pmf.svg.png)
-
-    ![**CDF**: The horizontal axis is the index k, the number of occurrences. The CDF is
-        discontinuous at the integers of k and flat everywhere else because a variable
-        that is Poisson distributed takes on only integer values.](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Poisson_cdf.svg/488px-Poisson_cdf.svg.png)
-
-    -------------------     --------------------------------------------------------------------
-    Parameters              $λ > 0 (real)$
-    Support                 $k ∈ ℤ*$
-    pmf                     $\frac{\lambda^k e^{-\lambda}}{k!}$
-    CDF                     $\frac{\Gamma(\lfloor k+1\rfloor, \lambda)}{\lfloor k\rfloor !}$, or
-                            $e^{-\lambda} \sum_{i=0}^{\lfloor k\rfloor} \frac{\lambda^i}{i!}$, or
-                            $Q(\lfloor k+1\rfloor,\lambda)$ (for $k\ge 0$, where
-                            $\Gamma(x, y)$ is the incomplete gamma function, $\lfloor k\rfloor$
-                            is the floor function, and Q is the regularized gamma function)
-    Mean                    $\lambda$
-    Median                  $\approx\lfloor\lambda+1/3-0.02/\lambda\rfloor$
-    Mode                    $\lceil\lambda\rceil - 1, \lfloor\lambda\rfloor$
-    Variance                $\lambda$
-    Skewness                $\lambda^{-1/2}$
-    Ex. kurtosis            $\lambda^{-1}$
-    Entropy                 $\lambda[1 - \log(\lambda)] + e^{-\lambda}\sum_{k=0}^\infty \frac{\lambda^k\log(k!)}{k!} (for large \lambda)$
-                            $\frac{1}{2}\log(2 \pi e \lambda) - \frac{1}{12 \lambda} - \frac{1}{24 \lambda^2} - \qquad \frac{19}{360 \lambda^3} + O\left(\frac{1}{\lambda^4}\right)$
-    MGF                     $\exp(\lambda (e^{t} - 1))$
-    CF                      $\exp(\lambda (e^{it} - 1))$
-    PGF                     $\exp(\lambda(z - 1))$
-    Fisher information      $\lambda^{-1}$
-    -------------------     --------------------------------------------------------------------
 
 Geometric distribution
 
@@ -620,14 +725,14 @@ Hypergeometric distribution
       - k is the number of observed successes,
       - $\textstyle {a \choose b}$ is a binomial coefficient.
 
-Uniform distribution (continuous)
+Continuous Uniform distribution
 
-:   In probability theory and statistics, the continuous uniform distribution
-    or rectangular distribution is a family of symmetric probability
+:   In probability theory and statistics, the **continuous uniform distribution**
+    or **rectangular distribution** is a family of symmetric probability
     distributions such that for each member of the family, all intervals of the
     same length on the distribution's support are equally probable. The support
     is defined by the two parameters, a and b, which are its minimum and
-    maximum values. The distribution is often abbreviated U(a,b). It is the
+    maximum values. The distribution is often abbreviated **U(a,b)**. It is the
     maximum entropy probability distribution for a random variate X under no
     constraint other than that it is contained in the distribution's support.
 
@@ -651,9 +756,76 @@ Uniform distribution (continuous)
     CF                      $\frac{\mathrm{e}^{itb}-\mathrm{e}^{ita}}{it(b-a)}$
     -----------------       -----------------------------------------
 
+Error function
+
+:   ![Plot of the error function](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Error_Function.svg/600px-Error_Function.svg.png)
+
+    (erf: a sigmoid)
+
+    In mathematics, the error function (also called the **Gauss error function**)
+    is a special function (non-elementary) of sigmoid shape that occurs in
+    probability, statistics, and partial differential equations describing
+    diffusion. It is defined as:
+
+    $$\operatorname{erf}(x) = \frac{2}{\sqrt\pi}\int_0^x e^{-t^2}\,\mathrm dt.$$
+
+    The complementary error function, denoted **erfc**, is defined as
+
+    $$\begin{align} \operatorname{erfc}(x) & = 1-\operatorname{erf}(x) \\ & =
+    \frac{2}{\sqrt\pi} \int_x^{\infty} e^{-t^2}\,\mathrm dt \\ & = e^{-x^2}
+    \operatorname{erfcx}(x), \end{align}$$
+
+    which also defines **erfcx**, the scaled complementary error function (which
+    can be used instead of erfc to avoid arithmetic underflow). Another
+    form of $\operatorname{erfc}(x)$ is known as Craig's formula:
+
+    $$\begin{align} \operatorname{erfc}(x) & = \frac{2}{\pi} \int_0^{\pi/2}
+    \exp \left( - \frac{x^2}{\sin^2 \theta} \right) d\theta. \end{align}$$
+
+    The error function is related to the cumulative distribution \Phi, the
+    integral of the standard normal distribution, by
+
+    $$\Phi (x) = \frac{1}{2}+ \frac{1}{2} \operatorname{erf} \left(x/
+    \sqrt{2}\right) = \frac{1}{2} \operatorname{erfc} \left(-x/
+    \sqrt{2}\right).$$
+
+Q-function
+
+:   ![A plot of the Q-function.](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Q-function.png/600px-Q-function.png)
+
+    In statistics, the Q-function is the tail probability of the standard
+    normal distribution \phi(x). In other words, Q(x) is the probability that a
+    normal (Gaussian) random variable will obtain a value larger than x
+    standard deviations above the mean.
+
+    If the underlying random variable is y, then the proper argument to the
+    tail probability is derived as:
+
+    $$x=\frac{y - \mu}{\sigma}$$
+
+    which expresses the number of standard deviations away from the mean.
+
+    Because of its relation to the cumulative distribution function of the
+    normal distribution, the Q-function can also be expressed in terms of the
+    error function, which is an important function in applied mathematics and
+    physics.
+
+    Formally, the Q-function is defined as
+
+    $$Q(x) = \frac{1}{\sqrt{2\pi}} \int_x^\infty \exp\left(-\frac{u^2}{2}\right) \, du.$$
+
+    Thus,
+
+    $$Q(x) = 1 - Q(-x) = 1 - \Phi(x)\,\!,$$
+
+    where $\Phi(x)$ is the cumulative distribution function of the normal
+    Gaussian distribution.
+
 Normal distribution
 
-:   The probability density of the normal distribution is:
+:   (also, Z distribution)
+
+    The probability density of the normal distribution is:
 
     $$f(x \; | \; \mu, \sigma^2) = \frac{1}{\sigma\sqrt{2\pi} } \; e^{ -\frac{(x-\mu)^2}{2\sigma^2} }$$
 
@@ -670,7 +842,7 @@ Normal distribution
 
     -------------           -----------------------------------------------------------
     Notation                $\mathcal{N}(\mu,\,\sigma^2)$
-    Parameters              $μ ∈ R — mean (location), σ2 > 0 — variance (squared scale)$
+    Parameters              μ ∈ R — mean (location), σ2 > 0 — variance (squared scale)
     Support                 $x ∈ R$
     PDF                     $\frac{1}{\sigma\sqrt{2\pi}}\, e^{-\frac{(x - \mu)^2}{2 \sigma^2}}$
     CDF                     $\frac12\left[1 + \operatorname{erf}\left( \frac{x-\mu}{\sigma\sqrt{2}}\right)\right]$
@@ -710,7 +882,7 @@ Normal distribution
 
         $$\Phi(x)\; = \;\frac{1}{\sqrt{2\pi}} \int_{-\infty}^x e^{-t^2/2} \, dt$$
 
-        In statistics one often uses the related error function, or erf(x),
+        In statistics one often uses the related error function, or **erf(x)**,
         defined as the probability of a random variable with normal
         distribution of mean 0 and variance 1/2 falling in the range [-x, x];
         that is
@@ -811,69 +983,6 @@ Normal distribution
         root is regressed in the augmented Dickey–Fuller test, the test
         t-statistic will asymptotically have one of the Dickey–Fuller
         distributions (depending on the test setting).
-
-Error function
-
-:   ![Plot of the error function](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Error_Function.svg/600px-Error_Function.svg.png)
-
-    In mathematics, the error function (also called the Gauss error function)
-    is a special function (non-elementary) of sigmoid shape that occurs in
-    probability, statistics, and partial differential equations describing
-    diffusion. It is defined as:
-
-    $$\operatorname{erf}(x) = \frac{2}{\sqrt\pi}\int_0^x e^{-t^2}\,\mathrm dt.$$
-
-    The complementary error function, denoted erfc, is defined as
-
-    $$\begin{align} \operatorname{erfc}(x) & = 1-\operatorname{erf}(x) \\ & =
-    \frac{2}{\sqrt\pi} \int_x^{\infty} e^{-t^2}\,\mathrm dt \\ & = e^{-x^2}
-    \operatorname{erfcx}(x), \end{align}$$
-
-    which also defines erfcx, the scaled complementary error function[3] (which
-    can be used instead of erfc to avoid arithmetic underflow[3][4]). Another
-    form of \operatorname{erfc}(x) is known as Craig's formula:
-
-    $$\begin{align} \operatorname{erfc}(x) & = \frac{2}{\pi} \int_0^{\pi/2}
-    \exp \left( - \frac{x^2}{\sin^2 \theta} \right) d\theta. \end{align}$$
-
-    The error function is related to the cumulative distribution \Phi, the
-    integral of the standard normal distribution, by
-
-    $$\Phi (x) = \frac{1}{2}+ \frac{1}{2} \operatorname{erf} \left(x/
-    \sqrt{2}\right) = \frac{1}{2} \operatorname{erfc} \left(-x/
-    \sqrt{2}\right).$$
-
-Q-function
-
-:   ![A plot of the Q-function.](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Q-function.png/600px-Q-function.png)
-
-    In statistics, the Q-function is the tail probability of the standard
-    normal distribution \phi(x). In other words, Q(x) is the probability that a
-    normal (Gaussian) random variable will obtain a value larger than x
-    standard deviations above the mean.
-
-    If the underlying random variable is y, then the proper argument to the
-    tail probability is derived as:
-
-    $$x=\frac{y - \mu}{\sigma}$$
-
-    which expresses the number of standard deviations away from the mean.
-
-    Because of its relation to the cumulative distribution function of the
-    normal distribution, the Q-function can also be expressed in terms of the
-    error function, which is an important function in applied mathematics and
-    physics.
-
-    Formally, the Q-function is defined as
-
-    $$Q(x) = \frac{1}{\sqrt{2\pi}} \int_x^\infty \exp\left(-\frac{u^2}{2}\right) \, du.$$
-
-    Thus,
-
-    $$Q(x) = 1 - Q(-x) = 1 - \Phi(x)\,\!,$$
-
-    where $\Phi(x)$ is the cumulative distribution function of the normal
-    Gaussian distribution.
 
 Exponential distribution
 
@@ -1041,128 +1150,120 @@ Chi-squared distribution
 :   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Chi-square_pdf.svg/482px-Chi-square_pdf.svg.png){width=45%}
     ![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Chi-square_cdf.svg/482px-Chi-square_cdf.svg.png){width=45%}
 
-    Notation    \chi^2(k)\! or \chi^2_k\!
-    Parameters  k \in \mathbb{N}_{>0}~~ (known as "degrees of freedom")
-    Support     x ∈ [0, +∞)
-    PDF     \frac{1}{2^{\frac{k}{2}}\Gamma\left(\frac{k}{2}\right)}\; x^{\frac{k}{2}-1} e^{-\frac{x}{2}}\,
-    CDF     \frac{1}{\Gamma\left(\frac{k}{2}\right)}\;\gamma\left(\tfrac{k}{2},\,\frac{x}{2}\right)
-    Mean    k
-    Median  \approx k\bigg(1-\frac{2}{9k}\bigg)^3
-    Mode    max{ k − 2, 0 }
-    Variance    2k
-    Skewness    \scriptstyle\sqrt{8/k}\,
+    ---------       --------------------------------------
+    Notation        $\chi^2(k)\! or \chi^2_k\!$
+    Parameters      $k \in \mathbb{N}_{>0}$ (known as "degrees of freedom")
+    Support         x ∈ [0, +∞)
+    pdf             $\frac{1}{2^{\frac{k}{2}}\Gamma\left(\frac{k}{2}\right)}\; x^{\frac{k}{2}-1} e^{-\frac{x}{2}}\,$
+    CDF             $\frac{1}{\Gamma\left(\frac{k}{2}\right)}\;\gamma\left(\tfrac{k}{2},\,\frac{x}{2}\right)$
+    Mean            k
+    Median          $\approx k\bigg(1-\frac{2}{9k}\bigg)^3$
+    Mode            max{ k − 2, 0 }
+    Variance        2k
+    Skewness        $\scriptstyle\sqrt{8/k}\,$
     Ex. kurtosis    12 / k
-    Entropy     \begin{align}\tfrac{k}{2}&+\ln(2\Gamma(\tfrac{k}{2})) \\ &\!+(1-\tfrac{k}{2})\psi(\tfrac{k}{2}) \,{\scriptstyle\text{(nats)}} \end{align}
-    MGF     (1 − 2 t )−k/2   for  t  < ½
-    CF  (1 − 2 i t )−k/2
+    Entropy         $\begin{align}\tfrac{k}{2}&+\ln(2\Gamma(\tfrac{k}{2})) \\ &\!+(1-\tfrac{k}{2})\psi(\tfrac{k}{2}) \,{\scriptstyle\text{(nats)}} \end{align}$
+    MGF             $(1 − 2 t )−k/2   for  t  < ½$
+    CF              $(1 − 2 i t )−k/2$
+    ---------       --------------------------------------
 
-    The probability density function (pdf) of the chi-squared distribution is
+    The pdf of the chi-squared distribution is
 
-        f(x;\,k) = \begin{cases} \frac{x^{(k/2-1)} e^{-x/2}}{2^{k/2} \Gamma\left(\frac{k}{2}\right)}, & x > 0; \\ 0, & \text{otherwise}. \end{cases}
+    $$f(x;\,k) = \begin{cases} \frac{x^{(k/2-1)} e^{-x/2}}{2^{k/2} \Gamma\left(\frac{k}{2}\right)}, & x > 0; \\ 0, & \text{otherwise}. \end{cases}$$
 
     where Γ(k/2) denotes the Gamma function, which has closed-form values for integer k.
 
-    Its cumulative distribution function is:
+    Its CDF is:
 
-        F(x;\,k) = \frac{\gamma(\frac{k}{2},\,\frac{x}{2})}{\Gamma(\frac{k}{2})} = P\left(\frac{k}{2},\,\frac{x}{2}\right),
+    $$F(x;\,k) = \frac{\gamma(\frac{k}{2},\,\frac{x}{2})}{\Gamma(\frac{k}{2})} = P\left(\frac{k}{2},\,\frac{x}{2}\right),$$
 
     where γ(s,t) is the lower incomplete Gamma function and P(s,t) is the regularized Gamma function.
 
     In a special case of k = 2 this function has a simple form:
 
-        F(x;\,2) = 1 - e^{-\frac{x}{2}}
+    $$F(x;\,2) = 1 - e^{-\frac{x}{2}}$$
 
 Student's t-distribution
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Student_t_pdf.svg/488px-Student_t_pdf.svg.png)
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Student_t_cdf.svg/488px-Student_t_cdf.svg.png)
+:   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Student_t_pdf.svg/488px-Student_t_pdf.svg.png){width=45%}
+    ![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Student_t_cdf.svg/488px-Student_t_cdf.svg.png){width=45%}
 
-Parameters 	\nu > 0 degrees of freedom (real)
-Support 	x ∈ (−∞; +∞)
-PDF 	\textstyle\frac{\Gamma \left(\frac{\nu+1}{2} \right)} {\sqrt{\nu\pi}\,\Gamma \left(\frac{\nu}{2} \right)} \left(1+\frac{x^2}{\nu} \right)^{-\frac{\nu+1}{2}}\!
-CDF 	\begin{matrix} \frac{1}{2} + x \Gamma \left( \frac{\nu+1}{2} \right) \times\\[0.5em] \frac{\,_2F_1 \left ( \frac{1}{2},\frac{\nu+1}{2};\frac{3}{2}; -\frac{x^2}{\nu} \right)} {\sqrt{\pi\nu}\,\Gamma \left(\frac{\nu}{2}\right)} \end{matrix}
-where 2F1 is the hypergeometric function
-Mean 	0 for \nu > 1, otherwise undefined
-Median 	0
-Mode 	0
-Variance 	\textstyle\frac{\nu}{\nu-2} for \nu > 2, ∞ for 1 < \nu \le 2, otherwise undefined
-Skewness 	0 for \nu > 3, otherwise undefined
-Ex. kurtosis 	\textstyle\frac{6}{\nu-4} for \nu > 4, ∞ for 2 < \nu \le 4, otherwise undefined
-Entropy
+    ------------    -----------------------------------
+    Parameters      $\nu$ > 0 degrees of freedom (real)
+    Support         x ∈ (−∞; +∞)
+    pdf             $\textstyle\frac{\Gamma \left(\frac{\nu+1}{2} \right)} {\sqrt{\nu\pi}\,\Gamma \left(\frac{\nu}{2} \right)} \left(1+\frac{x^2}{\nu} \right)^{-\frac{\nu+1}{2}}\!$
+    CDF             $\begin{matrix} \frac{1}{2} + x \Gamma \left( \frac{\nu+1}{2} \right) \times\\[0.5em] \frac{\,_2F_1 \left ( \frac{1}{2},\frac{\nu+1}{2};\frac{3}{2}; -\frac{x^2}{\nu} \right)} {\sqrt{\pi\nu}\,\Gamma \left(\frac{\nu}{2}\right)} \end{matrix}$
+    Mean            0 for $\nu$ > 1, otherwise undefined
+    Median          0
+    Mode            0
+    Variance        $\textstyle\frac{\nu}{\nu-2}$ for $\nu$ > 2, ∞ for $1 < \nu \le 2$, otherwise undefined
+    Skewness        0 for $\nu$ > 3, otherwise undefined
+    Ex. kurtosis    $\textstyle\frac{6}{\nu-4}$ for $\nu$ > 4, ∞ for $2 < \nu \le 4$, otherwise undefined
+    ------------    -----------------------------------
 
-\begin{matrix} \frac{\nu+1}{2}\left[ \psi \left(\frac{1+\nu}{2} \right) - \psi \left(\frac{\nu}{2} \right) \right] \\[0.5em] + \ln{\left[\sqrt{\nu}B \left(\frac{\nu}{2},\frac{1}{2} \right)\right]}\,{\scriptstyle\text{(nats)}} \end{matrix}
+    Student's t-distribution has the pdf given by
 
-    ψ: digamma function,
-    B: beta function
+    $$f(t) = \frac{\Gamma(\frac{\nu+1}{2})} {\sqrt{\nu\pi}\,\Gamma(\frac{\nu}{2})} \left(1+\frac{t^2}{\nu} \right)^{\!-\frac{\nu+1}{2}},\!$$
 
-MGF 	undefined
-CF
+    where
 
-\textstyle\frac{K_{\nu/2} \left(\sqrt{\nu}|t|\right) \cdot \left(\sqrt{\nu}|t| \right)^{\nu/2}} {\Gamma(\nu/2)2^{\nu/2-1}} for \nu > 0
+      - $\nu$ is the number of degrees of freedom and
+      - $\Gamma$ is the gamma function.
 
-    K_\nu(x): Modified Bessel function of the second kind[1]
+    This may also be written as
 
-Student's t-distribution has the probability density function given by
+    $$f(t) = \frac{1}{\sqrt{\nu}\,\mathrm{B} (\frac{1}{2}, \frac{\nu}{2})} \left(1+\frac{t^2}{\nu} \right)^{\!-\frac{\nu+1}{2}}\!,$$
 
-    f(t) = \frac{\Gamma(\frac{\nu+1}{2})} {\sqrt{\nu\pi}\,\Gamma(\frac{\nu}{2})} \left(1+\frac{t^2}{\nu} \right)^{\!-\frac{\nu+1}{2}},\!
+    where B is the Beta function.
 
-where \nu is the number of degrees of freedom and \Gamma is the gamma function. This may also be written as
+    For $\nu$ even,
 
-    f(t) = \frac{1}{\sqrt{\nu}\,\mathrm{B} (\frac{1}{2}, \frac{\nu}{2})} \left(1+\frac{t^2}{\nu} \right)^{\!-\frac{\nu+1}{2}}\!,
+    $$\frac{\Gamma(\frac{\nu+1}{2})} {\sqrt{\nu\pi}\,\Gamma(\frac{\nu}{2})} = \frac{(\nu -1)(\nu -3)\cdots 5 \cdot 3} {2\sqrt{\nu}(\nu -2)(\nu -4)\cdots 4 \cdot 2\,}\cdot$$
 
-where B is the Beta function.
+    For $\nu$ odd,
 
-For \nu even,
-
-    \frac{\Gamma(\frac{\nu+1}{2})} {\sqrt{\nu\pi}\,\Gamma(\frac{\nu}{2})} = \frac{(\nu -1)(\nu -3)\cdots 5 \cdot 3} {2\sqrt{\nu}(\nu -2)(\nu -4)\cdots 4 \cdot 2\,}\cdot
-
-For \nu odd,
-
-    \frac{\Gamma(\frac{\nu+1}{2})} {\sqrt{\nu\pi}\,\Gamma(\frac{\nu}{2})} = \frac{(\nu -1)(\nu -3)\cdots 4 \cdot 2} {\pi \sqrt{\nu}(\nu -2)(\nu -4)\cdots 5 \cdot 3\,}\cdot\!
+    $$\frac{\Gamma(\frac{\nu+1}{2})} {\sqrt{\nu\pi}\,\Gamma(\frac{\nu}{2})} = \frac{(\nu -1)(\nu -3)\cdots 4 \cdot 2} {\pi \sqrt{\nu}(\nu -2)(\nu -4)\cdots 5 \cdot 3\,}\cdot\!$$
 
 F-distribution
 
-The F-distribution, also known as Snedecor's F distribution or the Fisher–
-Snedecor distribution (after Ronald Fisher and George W. Snedecor) is, in
-probability theory and statistics, a continuous probability distribution.
+:  The F-distribution, also known as Snedecor's F distribution or the
+    Fisher–Snedecor distribution (after Ronald Fisher and George W. Snedecor)
+    is, in probability theory and statistics, a continuous probability
+    distribution.
 
-The F-distribution arises frequently as the null distribution of a test
-statistic, most notably in the analysis of variance; see F-test.
+    The F-distribution arises frequently as the null distribution of a test
+    statistic, most notably in the analysis of variance; see F-test.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/F_pdf.svg/488px-F_pdf.svg.png)
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/F_dist_cdf.svg/488px-F_dist_cdf.svg.png)
+    ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/F_pdf.svg/488px-F_pdf.svg.png){width=45%}
+    ![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/F_dist_cdf.svg/488px-F_dist_cdf.svg.png){width=45%}
 
-If a random variable X has an F-distribution with parameters d1 and d2, we write X ~ F(d1, d2). Then the probability density function (pdf) for X is given by
+    If a random variable X has an F-distribution with parameters d1 and d2, we
+    write X ~ F(d1, d2). Then the probability density function (pdf) for X is
+    given by
 
-    \begin{align} f(x; d_1,d_2) &= \frac{\sqrt{\frac{(d_1\,x)^{d_1}\,\,d_2^{d_2}} {(d_1\,x+d_2)^{d_1+d_2}}}} {x\,\mathrm{B}\!\left(\frac{d_1}{2},\frac{d_2}{2}\right)} \\ &=\frac{1}{\mathrm{B}\!\left(\frac{d_1}{2},\frac{d_2}{2}\right)} \left(\frac{d_1}{d_2}\right)^{\frac{d_1}{2}} x^{\frac{d_1}{2} - 1} \left(1+\frac{d_1}{d_2}\,x\right)^{-\frac{d_1+d_2}{2}} \end{align}
+    $$\begin{align} f(x; d_1,d_2) &= \frac{\sqrt{\frac{(d_1\,x)^{d_1}\,\,d_2^{d_2}} {(d_1\,x+d_2)^{d_1+d_2}}}} {x\,\mathrm{B}\!\left(\frac{d_1}{2},\frac{d_2}{2}\right)} \\ &=\frac{1}{\mathrm{B}\!\left(\frac{d_1}{2},\frac{d_2}{2}\right)} \left(\frac{d_1}{d_2}\right)^{\frac{d_1}{2}} x^{\frac{d_1}{2} - 1} \left(1+\frac{d_1}{d_2}\,x\right)^{-\frac{d_1+d_2}{2}} \end{align}$$
 
-for real x ≥ 0. Here \mathrm{B} is the beta function. In many applications, the parameters d1 and d2 are positive integers, but the distribution is well-defined for positive real values of these parameters.
+    for real x ≥ 0. Here $\mathrm{B}$ is the beta function. In many
+    applications, the parameters d1 and d2 are positive integers, but the
+    distribution is well-defined for positive real values of these parameters.
 
-The cumulative distribution function is
+    The cumulative distribution function is
 
-    F(x; d_1,d_2)=I_{\frac{d_1 x}{d_1 x + d_2}}\left (\tfrac{d_1}{2}, \tfrac{d_2}{2} \right) ,
+    $$F(x; d_1,d_2)=I_{\frac{d_1 x}{d_1 x + d_2}}\left (\tfrac{d_1}{2}, \tfrac{d_2}{2} \right) ,$$
 
-where I is the regularized incomplete beta function.
+    where I is the regularized incomplete beta function.
 
-The expectation, variance, and other details about the F(d1, d2) are given in the sidebox; for d2 > 8, the excess kurtosis is
+    The expectation, variance, and other details about the F(d1, d2) are given
+    in the sidebox; for d2 > 8, the excess kurtosis is
 
-    \gamma_2 = 12\frac{d_1(5d_2-22)(d_1+d_2-2)+(d_2-4)(d_2-2)^2}{d_1(d_2-6)(d_2-8)(d_1+d_2-2)}.
+    $$\gamma_2 = 12\frac{d_1(5d_2-22)(d_1+d_2-2)+(d_2-4)(d_2-2)^2}{d_1(d_2-6)(d_2-8)(d_1+d_2-2)}.$$
 
-Parameters 	d1, d2 > 0 deg. of freedom
-Support 	x ∈ [0, +∞)
-PDF 	\frac{\sqrt{\frac{(d_1\,x)^{d_1}\,\,d_2^{d_2}} {(d_1\,x+d_2)^{d_1+d_2}}}} {x\,\mathrm{B}\!\left(\frac{d_1}{2},\frac{d_2}{2}\right)}\!
-CDF 	I_{\frac{d_1 x}{d_1 x + d_2}} \left(\tfrac{d_1}{2}, \tfrac{d_2}{2} \right)
-Mean 	\frac{d_2}{d_2-2}\!
-for d2 > 2
-Mode 	\frac{d_1-2}{d_1}\;\frac{d_2}{d_2+2}
-for d1 > 2
-Variance 	\frac{2\,d_2^2\,(d_1+d_2-2)}{d_1 (d_2-2)^2 (d_2-4)}\!
-for d2 > 4
-Skewness 	\frac{(2 d_1 + d_2 - 2) \sqrt{8 (d_2-4)}}{(d_2-6) \sqrt{d_1 (d_1 + d_2 -2)}}\!
-for d2 > 6
-Ex. kurtosis 	see text
-MGF 	does not exist, raw moments defined in text and in [1][2]
-CF 	see text
+    ---------   -----------------------------
+    Parameters  d1, d2 > 0 deg. of freedom
+    Support     x ∈ [0, +∞)
+    pdf         $\frac{\sqrt{\frac{(d_1\,x)^{d_1}\,\,d_2^{d_2}} {(d_1\,x+d_2)^{d_1+d_2}}}} {x\,\mathrm{B}\!\left(\frac{d_1}{2},\frac{d_2}{2}\right)}\!$
+    CDF         $I_{\frac{d_1 x}{d_1 x + d_2}} \left(\tfrac{d_1}{2}, \tfrac{d_2}{2} \right)$
+    ---------   -----------------------------
 
 Characterization
 
@@ -1223,7 +1324,6 @@ Joint probability distribution
 
       - $\ P(X = x \ \mbox{and} \ Y = y ) = P( X = x) \cdot P( Y = y)$
       - $\ f_{X,Y}(x,y) = f_X(x) \cdot f_Y(y)$
-
 
 Sampling (statistics)
 
@@ -1461,7 +1561,6 @@ Ordinary least squares
         full column rank almost surely:
 
         $$\Pr\!\big[\,\operatorname{rank}(X) = p\,\big] = 1.$$
-
 
       - Spherical errors:
 
@@ -1736,6 +1835,7 @@ refs and see also
   - [Marginal distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Marginal_distribution)
   - [Marginal distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Marginal_distribution)
   - [Maximum likelihood - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Maximum_likelihood)
+  - [Moment (mathematics) - Wikipedia, the free encyclopedia]
   - [Monte Carlo method - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Monte_Carlo_method)
   - [Negative binomial distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Negative_binomial_distribution)
   - [Nonlinear regression - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Nonlinear_regression)
@@ -1747,6 +1847,7 @@ refs and see also
   - [Poisson limit theorem - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Poisson_limit_theorem)
   - [Probability - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Probability)
   - [Probability mass function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Probability_mass_function)
+  - [Probability space - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Probability_space)
   - [Probability theory - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Probability_theory)
   - [Q-function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Q-function)
   - [Regression analysis - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Regression_analysis)
@@ -1764,5 +1865,6 @@ refs and see also
   - [Variance - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Variance)
   - [t-statistic - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/T-statistic)
 
+[Moment (mathematics) - Wikipedia, the free encyclopedia]: https://en.wikipedia.org/wiki/Moment_(mathematics)
 [Uniform distribution (continuous) - Wikipedia, the free encyclopedia]: https://en.wikipedia.org/wiki/Uniform_distribution_(continuous)
 [Uniform distribution (discrete) - Wikipedia, the free encyclopedia]: https://en.wikipedia.org/wiki/Uniform_distribution_(discrete)

@@ -846,3 +846,7 @@ a.tzx-header-anchor {
     font-size: 80px;
     line-height: 1;
 }
+
+table {
+    width: 100%;
+}

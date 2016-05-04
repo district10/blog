@@ -19,6 +19,8 @@ after-before: |
 Notes | 笔记[^1]
 ===============
 
+ricochet, `[,rɪkə'ʃet]`, n. 跳弹；跳飞
+
 [Uniq - Removing duplicate lines - Vim Tips Wiki - Wikia](http://vim.wikia.com/wiki/Uniq_-_Removing_duplicate_lines)
 
 :   how to remove duplicate lines??
