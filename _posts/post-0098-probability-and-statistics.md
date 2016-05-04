@@ -8,8 +8,12 @@ tags:
     - statistics
 ...
 
-Probability and Statistics
-==========================
+Probability and Statistics[^virgo]
+==================================
+
+[^virgo]: 这篇长笔记最让我纠结的是到底应该把 refs and see also 放在全文最后，还是每个段落。
+
+    为了不让自己继续纠结下去，我决定放到全文最后，好处是可以排序。而且不会文章里到处都是链接。
 
 MISC Notes
 
@@ -24,6 +28,11 @@ MISC Notes
   - poisson, `/ˈpwɑːsɒn/`
   - deviation, `['divɪ'eʃən]`
   - cumulative, `['kjumjəletɪv]`
+  - 均方误差（mean square error）
+  - homoscedasticity, 方差齐性, `['hɔməusi,dæs'tisəti]`
+  - fiducial, `[fɪ'djuːʃ(ə)l]`
+  - bayesian, `['beʒən]`
+  - conjugate, `['kɑndʒəɡet]`, 共轭的
 
 Probability theory
 
@@ -1362,7 +1371,7 @@ Survey methodology
     research fields, e.g., marketing research, psychology, health professionals
     and sociology.
 
-Confidence interval
+Confidence interval `@`{.tzx-anchor #confidence-interval}
 
 :   In statistics, a confidence interval (CI) is a type of interval estimate of
     a population parameter. It is an observed interval (i.e., it is calculated
@@ -1386,6 +1395,101 @@ Confidence interval
     random variables u(X) and v(X), with the property:
 
     $${\Pr}_{\theta,\phi}(u(X)<\theta<v(X))=\gamma\text{ for all }(\theta,\phi).$$
+
+Fiducial inference
+
+:   Fiducial inference is one of a number of different types of statistical
+    inference. These are rules, intended for general application, by which
+    conclusions can be drawn from samples of data. In modern statistical
+    practice, attempts to work with fiducial inference have fallen out of
+    fashion in favour of frequentist inference, Bayesian inference and decision
+    theory. However, fiducial inference is important in the history of
+    statistics since its development led to the parallel development of
+    concepts and tools in theoretical statistics that are widely used. Some
+    current research in statistical methodology is either explicitly linked to
+    fiducial inference or is closely connected to it.
+
+    Fiducial inference can be interpreted as an attempt to perform **inverse probability**
+    without calling on prior probability distributions. Fiducial
+    inference quickly attracted controversy and was never widely
+    accepted. Indeed, counter-examples to the claims of Fisher
+    for fiducial inference were soon published. These counter-examples cast
+    doubt on the coherence of "fiducial inference" as a system of statistical
+    inference or inductive logic. Other studies showed that, where the steps of
+    fiducial inference are said to lead to "fiducial probabilities" (or
+    "fiducial distributions"), these probabilities lack the property of
+    additivity, and so cannot constitute a probability measure.
+
+    The concept of fiducial inference can be outlined by comparing its
+    treatment of the problem of interval estimation in relation to other modes
+    of statistical inference.
+
+    Fisher required the existence of a sufficient statistic for the fiducial
+    method to apply. Suppose there is a single sufficient statistic for a
+    single parameter. That is, suppose that the conditional distribution of the
+    data given the statistic does not depend on the value of the parameter. For
+    example suppose that n independent observations are uniformly distributed
+    on the interval $[0,\omega]$. The maximum, X, of the n observations is a
+    sufficient statistic for ω. If only X is recorded and the values of the
+    remaining observations are forgotten, these remaining observations are
+    equally likely to have had any values in the interval [0,X]. This statement
+    does not depend on the value of ω. Then X contains all the available
+    information about ω and the other observations could have given no further
+    information.
+
+    The CDF of X is
+
+    $$F(x) = P(X \leq x) = P\left(\mathrm{all\ observations} \leq x\right) = \left(\frac{x}{\omega}\right)^n.$$
+
+    Probability statements about X/ω may be made. For example, given α, a value
+    of a can be chosen with 0  <  a  <  1 such that
+
+    $$P\left(X > \frac{\omega }{a}\right) = 1-a^n = \alpha.$$
+
+    Thus
+
+    $$a = (1-\alpha)^{\frac{1}{n}}.$$
+
+    Then Fisher might say that this statement may be inverted into the form
+
+    $$P\left(\omega < \frac{X}{a}\right) = \alpha.$$
+
+Pivotal quantity
+
+:   In statistics, a pivotal quantity or pivot is a function of observations
+    and unobservable parameters whose probability distribution does not depend
+    on the unknown parameters (also referred to as nuisance parameters).
+    Note that a pivot quantity need not be a statistic—the function and its
+    value can depend on the parameters of the model, but its distribution must
+    not. If it is a statistic, then it is known as an ancillary statistic.
+
+    More formally, let $X = (X_1,X_2,\ldots,X_n)$ be a random sample from a
+    distribution that depends on a parameter (or vector of parameters) $\theta$.
+    Let $g(X,\theta)$ be a random variable whose distribution is the same for all
+    $\theta$. Then g is called a pivotal quantity (or simply a pivot).
+
+    Pivotal quantities are commonly used for normalization to allow data from
+    different data sets to be compared. It is relatively easy to construct
+    pivots for location and scale parameters: for the former we form
+    differences so that location cancels, for the latter ratios so that scale
+    cancels.
+
+    Pivotal quantities are fundamental to the construction of test statistics,
+    as they allow the statistic to not depend on parameters – for example,
+    Student's t-statistic is for a normal distribution with unknown variance
+    (and mean). They also provide one method of constructing confidence
+    intervals, and the use of pivotal quantities improves performance of the
+    bootstrap. In the form of ancillary statistics, they can be used to
+    construct frequentist prediction intervals (predictive confidence
+    intervals).
+
+    One of the simplest pivotal quantities is the z-score; given a normal
+    distribution with mean $\mu$ and variance $\sigma^2$, and an observation x, the
+    z-score:
+
+    $$z = \frac{x - \mu}{\sigma},$$
+
+    has distribution N(0,1).
 
 Regression analysis
 
@@ -1591,6 +1695,8 @@ Ordinary least squares
     :   The OLS estimator is identical to the maximum likelihood estimator
         (MLE) under the normality assumption for the error terms.
 
+        see at [#maximum-likelihood](#maximum-likelihood).
+
     Generalized method of moments
 
     :   In iid case the OLS estimator can also be viewed as a GMM estimator arising from the moment conditions
@@ -1612,7 +1718,7 @@ Ordinary least squares
 
     $$s^2\ \sim\ \frac{\sigma^2}{n-p} \cdot \chi^2_{n-p}$$
 
-Generalized method of moments
+Generalized method of moments `@`{.tzx-anchor #gmm}
 
 :   In econometrics, the generalized method of moments (GMM) is a generic
     method for estimating parameters in statistical models. Usually it is
@@ -1635,7 +1741,7 @@ Generalized method of moments
     method of moments which was introduced by Karl Pearson in 1894. Hansen
     shared the 2013 Nobel Prize in Economics in part for this work.
 
-[Nonparametric regression - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Nonparametric_regression)
+Nonparametric regression
 
 :   Gaussian process regression or Kriging
 
@@ -1788,27 +1894,544 @@ Estimator
     tightly defined assumptions hold, and having less good properties that hold
     under wider conditions.
 
+    Point estimation
+
+    :   In statistics, point estimation involves the use of sample data to
+        calculate a single value (known as a statistic) which is to serve as a
+        "best guess" or "best estimate" of an unknown (fixed or random)
+        population parameter.
+
+        More formally, it is the application of a point estimator to the data.
+
+        In general, point estimation should be contrasted with interval
+        estimation: such interval estimates are typically either confidence
+        intervals in the case of frequentist inference, or credible intervals
+        in the case of Bayesian inference.
+
+        Point estimators
+
+        -   **minimum-variance mean-unbiased estimator (MVUE)**
+
+            minimizes the risk (expected loss) of the squared-error loss-function.
+
+            In statistics a uniformly minimum-variance unbiased estimator or
+            minimum-variance unbiased estimator (UMVUE or MVUE) is an unbiased
+            estimator that has lower variance than any other unbiased estimator
+            for all possible values of the parameter.
+
+            For a normal distribution with unknown mean and variance, the
+            sample mean and (unbiased) sample variance are the MVUEs for the
+            population mean and population variance.
+
+        -   **best linear unbiased estimator (BLUE)**
+
+            In statistics, the Gauss–Markov theorem, named after Carl Friedrich
+            Gauss and Andrey Markov, states that in a linear regression model
+            in which the errors have expectation zero and are uncorrelated and
+            have equal variances, the best linear unbiased estimator (BLUE) of
+            the coefficients is given by the ordinary least squares (OLS)
+            estimator. Here "best" means giving the lowest variance of the
+            estimate, as compared to other unbiased, linear estimators. The
+            errors do not need to be normal, nor do they need to be independent
+            and identically distributed (only uncorrelated with mean zero and
+            homoscedastic with finite variance). The requirement that the
+            estimator be unbiased cannot be dropped, since biased estimators
+            exist with lower variance. See, for example, the James–Stein
+            estimator (which also drops linearity) or ridge regression.
+
+            The Gauss–Markov assumptions are
+
+              - $E(\varepsilon_i)=0$,
+              - $V(\varepsilon_i)= \sigma^2 < \infty$,
+
+            (i.e., all disturbances have the same variance; that is
+            "homoscedasticity"^[homoscedasticity]), and
+
+            $${\rm cov}(\varepsilon_i,\varepsilon_j) = 0, \forall i \neq j$$
+
+        -   **minimum mean squared error (MMSE)**
+
+            In statistics and signal processing, a minimum mean square error
+            (MMSE) estimator is an estimation method which minimizes the mean
+            square error (MSE), which is a common measure of estimator quality,
+            of the fitted values of a dependent variable. In the Bayesian
+            setting, the term MMSE more specifically refers to estimation with
+            quadratic cost function. In such case, the MMSE estimator is given
+            by the posterior mean of the parameter to be estimated. Since the
+            posterior mean is cumbersome to calculate, the form of the MMSE
+            estimator is usually constrained to be within a certain class of
+            functions. Linear MMSE estimators are a popular choice since they
+            are easy to use, calculate, and very versatile. It has given rise
+            to many popular estimators such as the Wiener-Kolmogorov filter and
+            Kalman filter.
+
+            Let x be a n $\times$ 1 hidden random vector variable, and let y be a
+            m $\times$ 1 known random vector variable (the measurement or
+            observation), both of them not necessarily of the same dimension.
+            An estimator $\hat{x}(y)$ of x is any function of the measurement y.
+            The estimation error vector is given by $e = \hat{x} - x$ and its
+            mean squared error (MSE) is given by the trace of error covariance
+            matrix
+
+            $$\mathrm{MSE} = \mathrm{tr} \left\{ \mathrm{E}\{(\hat{x} - x)(\hat{x} - x)^T \}\right\},$$
+
+            where the expectation $\mathrm{E}$ is taken over both x and y. When x
+            is a scalar variable, the MSE expression simplifies to $\mathrm{E}$
+            $\left\{ (\hat{x} - x)^2 \right\}$. Note that MSE can equivalently be
+            defined in other ways, since
+
+            $$\mathrm{tr} \left\{ \mathrm{E}\{ee^T \} \right\} = \mathrm{E} \left\{ \mathrm{tr}\{ee^T \} \right\} = \mathrm{E}\{e^T e \} = \sum_{i=1}^n \mathrm{E}\{e_i^2\}.$$
+
+            The MMSE estimator is then defined as the estimator achieving
+            minimal MSE:
+
+            $$\hat{x}_{\mathrm{MMSE}}(y) = \arg \min_{\hat{x}} \mathrm{MSE}.$$
+
+        -   **median-unbiased estimator**
+
+            Any mean-unbiased estimator minimizes the risk (expected loss) with
+            respect to the squared-error loss function, as observed by Gauss. A
+            median-unbiased estimator **minimizes the risk with respect to the
+            absolute-deviation loss function**, as observed by Laplace. Other
+            loss functions are used in statistical theory, particularly in
+            robust statistics.
+
+        -   **maximum likelihood (ML)**
+
+            see more at [#maximum-likelihood](#maximum-likelihood).
+
+        -   [**method of moments, generalized method of moments**](#gmm)
+
+        Bayesian point-estimation
+
+        :   Bayesian inference is typically based on the posterior
+            distribution. Many Bayesian point-estimators are the posterior
+            distribution's statistics of central tendency, e.g., its mean,
+            median, or mode:
+
+              - Posterior mean, which minimizes the (posterior) risk (expected
+                loss) for a squared-error loss function; in Bayesian
+                estimation, the risk is defined in terms of the posterior
+                distribution.
+              - Posterior median, which minimizes the posterior risk for the
+                absolute-value loss function.
+              - maximum a posteriori (MAP), which finds a maximum of the
+                posterior distribution; for a uniform prior probability, the
+                MAP estimator coincides with the maximum-likelihood estimator;
+
+            The MAP estimator has good asymptotic properties, even for many
+            difficult problems, on which the maximum-likelihood estimator has
+            difficulties. For regular problems, where the maximum-likelihood
+            estimator is consistent, the maximum-likelihood estimator
+            ultimately agrees with the MAP estimator. Bayesian
+            estimators are admissible, by Wald's theorem.
+
+            The Minimum Message Length (MML) point estimator is based in
+            Bayesian information theory and is not so directly related to the
+            posterior distribution.
+
+            Special cases of Bayesian estimators are important:
+
+              - Kalman filter
+              - Wiener filter
+
+            Several methods of computational statistics have close connections
+            with Bayesian analysis:
+
+              - particle filter Markov chain Monte Carlo (MCMC)
+
+        Properties of point estimates
+
+          - bias of an estimator[^bias-of-an-estimator]
+          - Cramér–Rao bound
+
+    Interval estimation
+
+    :   In statistics, interval estimation is the use of sample data to
+        calculate an interval of possible (or probable) values of an unknown
+        population parameter, in contrast to point estimation, which is a
+        single number. Jerzy Neyman (1937) identified interval estimation
+        ("estimation by interval") as distinct from point estimation
+        ("estimation by unique estimate"). In doing so, he recognised that
+        then-recent work quoting results in the form of an estimate
+        plus-or-minus a standard deviation indicated that interval estimation
+        was actually the problem statisticians really had in mind.
+
+        The most prevalent forms of interval estimation are:
+
+          - **[confidence intervals](#confidence-interval)** (a frequentist method); and
+          - **credible intervals** (a Bayesian method).
+
+        Other common approaches to interval estimation, which are encompassed
+        by statistical theory, are:
+
+          - Tolerance intervals
+          - Prediction intervals - used mainly in Regression Analysis
+          - Likelihood intervals
+
+        There is another approach to statistical inference,
+        namely [**fiducial inference**](#fiducial-inference), that also considers interval estimation.
+        Non-statistical methods that can lead to interval estimates include fuzzy logic.
+
+        An interval estimate is one type of outcome of a statistical analysis.
+        Some other types of outcome are point estimates and decisions.
+
+[^bias-of-an-estimator]: In statistics, the bias (or bias function) of an
+    estimator is the difference between this estimator's expected value and the
+    true value of the parameter being estimated. An estimator or decision rule
+    with zero bias is called unbiased. Otherwise the estimator is said to be
+    biased. In statistics, "bias" is an objective statement about a function,
+    and while not a desired property, it is not pejorative, unlike the ordinary
+    English use of the term "bias".
+
+[^homoscedasticity]: In statistics, a sequence or a vector of random variables
+    is homoscedastic `/ˌhoʊmoʊskəˈdæstɪk/` if all random variables in the
+    sequence or vector have the same finite variance. This is also known as
+    homogeneity of variance.  The complementary notion is called
+    heteroscedasticity. The spellings homoskedasticity and heteroskedasticity
+    are also frequently used.
+
+Kalman filter
+
+:   ![The Kalman filter keeps track of the estimated state of the system and
+        the variance or uncertainty of the estimate. The estimate is updated
+        using a state transition model and measurements. $\hat{x}_{k\mid k-1}$
+        denotes the estimate of the system's state at time step k before the
+        k-th measurement yk has been taken into account; $P_{k\mid k-1}$ is the
+        corresponding uncertainty.](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Basic_concept_of_Kalman_filtering.svg/600px-Basic_concept_of_Kalman_filtering.svg.png)
+
     TODO
+
+Wiener filter
+
+:   TODO
 
 Bayesian statistics
 
-:   Bayesian linear regression
+:   Bayesian statistics, named for Thomas Bayes (1701-1761), is a theory in the
+    field of statistics in which the evidence about the true state of the world
+    is expressed in terms of '**degrees of belief**' called Bayesian probabilities.
+    Such an interpretation is only one of a number of interpretations of
+    probability and there are other statistical techniques that are not based
+    on 'degrees of belief'. One of the key ideas of Bayesian statistics is that
+    "**probability is orderly opinion, and that inference from data is nothing
+    other than the revision of such opinion in the light of relevant new information.**"
+
+    Bayesian linear regression
+
+    :   In statistics, Bayesian linear regression is an approach to linear
+        regression in which the statistical analysis is undertaken within the
+        context of Bayesian inference. When the regression model has errors
+        that have a normal distribution, and if a particular form of prior
+        distribution is assumed, explicit results are available for the
+        posterior probability distributions of the model's parameters.
+
+
+        Model setup
+
+        :   Consider a standard linear regression problem, in which for $i=1,...,n$
+            we specify the conditional distribution of $y_i$ given a k $\times$ 1
+            predictor vector $\mathbf{x}_i$:
+
+            $$y_{i} = \mathbf{x}_{i}^{\rm T} \boldsymbol\beta + \epsilon_{i},$$
+
+            where $\boldsymbol\beta$ is a k $\times$ 1 vector, and the $\epsilon_i$
+            are iid, and $\epsilon_{i} \sim N(0, \sigma^2).$
+
+            This corresponds to the following likelihood function:
+
+            $$\rho(\mathbf{y}|\mathbf{X},\boldsymbol\beta,\sigma^{2}) \propto
+            (\sigma^{2})^{-n/2} \exp\left(-\frac{1}{2{\sigma}^{2}}(\mathbf{y}-
+            \mathbf{X} \boldsymbol\beta)^{\rm T}(\mathbf{y}- \mathbf{X}
+            \boldsymbol\beta)\right).$$
+
+            The ordinary least squares solution is to estimate the coefficient
+            vector using the Moore-Penrose pseudoinverse:
+
+            $$\hat{\boldsymbol\beta} = (\mathbf{X}^{\rm T}\mathbf{X})^{-1}\mathbf{X}^{\rm T}\mathbf{y}$$
+
+            where $\mathbf{X}$ is the n $\times$ k design matrix, each row of which is
+            a predictor vector $\mathbf{x}_{i}^{\rm T}$; and $\mathbf{y}$ is the column
+            n-vector $[y_1 \; \cdots \; y_n]^{\rm T}$.
+
+            This is a frequentist approach, and it assumes that there are enough
+            measurements to say something meaningful about $\boldsymbol\beta$. In the
+            Bayesian approach, the data are supplemented with additional
+            information in the form of a prior probability distribution. The prior
+            belief about the parameters is combined with the data's likelihood
+            function according to Bayes theorem to yield the posterior belief about
+            the parameters $\boldsymbol\beta$ and $\sigma$. The prior can take
+            different functional forms depending on the domain and the information
+            that is available a priori.
+
+        With conjugate priors
+
+        :   For an arbitrary prior distribution, there may be no analytical
+            solution for the posterior distribution. In this section, we will
+            consider a so-called conjugate prior for which the posterior
+            distribution can be derived analytically.
+
+            A prior $\rho$($\boldsymbol\beta,\sigma^{2}$) is conjugate to this
+            likelihood function if it has the same functional form with respect
+            to $\boldsymbol\beta$ and $\sigma$. Since the log-likelihood is
+            quadratic in $\boldsymbol\beta$, the log-likelihood is re-written
+            such that the likelihood becomes normal in
+            ($\boldsymbol\beta-\hat{\boldsymbol\beta}$).
+
+            TODO
+
+            [Bayesian linear regression - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Bayesian_linear_regression)
+
+            Model evidence
+
+            :   The model evidence p($\mathbf{y}|m$) is the probability of the
+                data given the model m. It is also known as the marginal
+                likelihood, and as the prior predictive density.
+
+    Statistical modeling
+
+    :   The formulation of statistical models using Bayesian statistics has the
+        unique feature of requiring the specification of prior distributions
+        for any unknown parameters. These prior distributions are as integral
+        to a Bayesian approach to statistical modelling as the expression of
+        probability distributions. Prior distributions can be either
+        hyperparameters or hyperprior distributions.
 
     Bayesian inference
 
-    TODO
+    :   Bayesian inference is a method of statistical inference in which Bayes'
+        theorem is used to update the probability for a hypothesis as more
+        evidence or information becomes available. Bayesian inference is an
+        important technique in statistics, and especially in mathematical
+        statistics. Bayesian updating is particularly important in the dynamic
+        analysis of a sequence of data. Bayesian inference has found
+        application in a wide range of activities, including science,
+        engineering, philosophy, medicine, sport, and law. In the philosophy of
+        decision theory, Bayesian inference is closely related to subjective
+        probability, often called "Bayesian probability".
+
+        ![A geometric visualisation of Bayes' theorem. In the table, the values
+            w, x, y and z give the relative weights of each corresponding
+            condition and case. The figures denote the cells of the table
+            involved in each metric, the probability being the fraction of each
+            figure that is shaded. This shows that P(A|B) P(B) = P(B|A) P(A)
+            i.e. P(A|B) = P(B|A) P(A)/P(B) . Similar reasoning can be used to
+            show that P(Ā|B) = P(B|Ā) P(Ā)/P(B) etc.](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Bayes_theorem_visualisation.svg/450px-Bayes_theorem_visualisation.svg.png)
+
+        Formal
+
+        :   Bayesian inference derives the posterior probability as a consequence
+            of two antecedents, a prior probability and a "likelihood function"
+            derived from a statistical model for the observed data. Bayesian
+            inference computes the posterior probability according to Bayes'
+            theorem:
+
+            $$P(H\mid E) = \frac{P(E\mid H) \cdot P(H)}{P(E)}$$
+
+            where
+
+              - $\textstyle \mid$ denotes a conditional probability;
+              - $\textstyle H$ stands for any hypothesis whose probability may be
+                affected by data (called evidence below). Often there are competing
+                hypotheses, from which one chooses the most probable.
+                the evidence $\textstyle E$ corresponds to new data that were not used in computing the prior probability.
+              - $\textstyle P(H)$, the prior probability
+              - $\textstyle P(H\mid E)$, the posterior probability
+              - $\textstyle P(E\mid H)$ is the probability of observing $\textstyle E$ given $\textstyle H$.
+              - $\textstyle P(E)$ is sometimes termed the marginal likelihood or
+                "model evidence". This factor is the same for all possible
+                hypotheses being considered. (This can be seen by the fact that the
+                hypothesis $\textstyle H$ does not appear anywhere in the symbol,
+                unlike for all the other factors.) This means that this factor does
+                not enter into determining the relative probabilities of different
+                hypotheses.
+
+            Note that Bayes' rule can also be written as follows:
+
+            $$P(H\mid E) = \frac{P(E\mid H)}{P(E)} \cdot P(H)$$
+
+            where the factor $\textstyle \frac{P(E\mid H)}{P(E)}$ represents the
+            impact of E on the probability of H.
+
+        Informal
+
+        :   If the evidence does not match up with a hypothesis, one should reject
+            the hypothesis. But if a hypothesis is extremely unlikely a priori, one
+            should also reject it, even if the evidence does appear to match up.
+
+        The critical point about Bayesian inference, then, is that it provides
+        a principled way of combining new evidence with prior beliefs, through
+        the application of Bayes' rule. (Contrast this with frequentist
+        inference, which relies only on the evidence as a whole, with no
+        reference to prior beliefs.) Furthermore, Bayes' rule can be applied
+        iteratively: after observing some evidence, the resulting posterior
+        probability can then be treated as a prior probability, and a new
+        posterior probability computed from new evidence. This allows for
+        Bayesian principles to be applied to various kinds of evidence, whether
+        viewed all at once or over time. This procedure is termed "**Bayesian updating**".
+
+        Alternatives to Bayesian updating
+
+        :   -   Dutch book
+            -   "probability kinematics"
+
+            TODO
+
+        Formal description of Bayesian inference
+
+        :   Definitions
+
+              - x, a data point in general. This may in fact be a vector of values.
+              - $\theta$, the parameter of the data point's distribution, i.e.,
+                $x \sim p(x \mid \theta)$. This may in fact be a vector of
+                parameters.
+              - $\alpha$, the hyperparameter[^hyperparameter] of the parameter, i.e., $\theta
+                \sim p(\theta \mid \alpha)$. This may in fact be a vector of
+                hyperparameters.
+              - $\mathbf{X}$, a set of n observed data points, i.e., $x_1,\ldots,x_n$.
+              - $\tilde{x}$, a new data point whose distribution is to be predicted.
+
+            [Bayesian inference](#bayesian-inference)
+
+            Bayesian prediction
+
+            -   The **posterior predictive distribution** is the distribution of a
+                new data point, marginalized over the posterior:
+
+                $$p(\tilde{x} \mid \mathbf{X},\alpha) = \int_{\theta} p(\tilde{x} \mid \theta) p(\theta \mid \mathbf{X},\alpha) \operatorname{d}\!\theta$$
+
+            -   The **prior predictive distribution** is the distribution of a
+                new data point, marginalized over the prior:
+
+                $$p(\tilde{x} \mid \alpha) = \int_{\theta} p(\tilde{x} \mid \theta) p(\theta \mid \alpha) \operatorname{d}\!\theta$$
+
+[^hyperparameter]: In Bayesian statistics, a hyperparameter is a parameter of a
+    prior distribution; the term is used to distinguish them from parameters of the
+    model for the underlying system under analysis.
+
+    For example, if one is using a beta distribution to model the distribution of the parameter p of a Bernoulli distribution, then:
+
+      - p is a parameter of the underlying system (Bernoulli distribution), and
+      - α and β are parameters of the prior distribution (beta distribution),
+        hence hyperparameters.
+
+    One may take a single value for a given hyperparameter, or one can iterate
+    and take a probability distribution on the hyperparameter itself, called a
+    hyperprior.
+
+    see more at [Hyperparameter - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hyperparameter).
+
+Bayesian inference `@`{.tzx-anchor #bayesian-inference}
+
+    The prior distribution is the distribution of the parameter(s) before any
+    data is observed, i.e. p(\theta \mid \alpha) .
 
 Statistical hypothesis testing
 
+:   Statistical hypothesis testing is a key technique of both frequentist
+    inference and Bayesian inference, although the two types of inference have
+    notable differences. Statistical hypothesis tests define a procedure that
+    controls (fixes) the probability of incorrectly deciding that a default
+    position (null hypothesis) is incorrect. The procedure is based on how
+    likely it would be for a set of observations to occur if the null
+    hypothesis were true. Note that this probability of making an incorrect
+    decision is not the probability that the null hypothesis is true, nor
+    whether any specific alternative hypothesis is true. This contrasts with
+    other possible techniques of decision theory in which the null and
+    alternative hypothesis are treated on a more equal basis.
+
+    The testing process
+
+    -   null and alternative hypotheses
+    -   consider the statistical assumptions
+    -   state the relevant test statistic T
+    -   significance level (α)
+    -   Compute from the observations the observed value tobs of the test statistic T
+
+    An alternative process is commonly used:
+
+    -   Calculate the p-value
+
+    If the p-value is less than the required significance level (equivalently,
+    if the observed test statistic is in the critical region), then we say the
+    null hypothesis is rejected at the given level of significance. Rejection
+    of the null hypothesis is a conclusion. This is like a "guilty" verdict in
+    a criminal trial: the evidence is sufficient to reject innocence, thus
+    proving guilt. We might accept the alternative hypothesis (and the research
+    hypothesis).
+
+    Fisher popularized the "significance test". He required a null-hypothesis
+    (corresponding to a population frequency distribution) and a sample. His
+    (now familiar) calculations determined whether to reject the
+    null-hypothesis or not. Significance testing did not utilize an alternative
+    hypothesis so there was no concept of a Type II error.
+
+Z-test
+
+:   TODO
+
+Student's t-test
+
+:   TODO
+
 Bootstrapping (statistics)
 
-Maximum likelihood
+:   In statistics, bootstrapping can refer to any test or metric that relies on
+    random sampling with replacement. Bootstrapping allows assigning measures
+    of accuracy (defined in terms of bias, variance, confidence intervals,
+    prediction error or some other such measure) to sample estimates.  This
+    technique allows estimation of the sampling distribution of almost any
+    statistic using random sampling methods. Generally, it falls in the broader
+    class of resampling methods.
+
+    A great advantage of bootstrap is its simplicity. It is a straightforward
+    way to derive estimates of standard errors and confidence intervals for
+    complex estimators of complex parameters of the distribution, such as
+    percentile points, proportions, odds ratio, and correlation coefficients.
+    Bootstrap is also an appropriate way to control and check the stability of
+    the results. Although for most problems it is impossible to know the true
+    confidence interval, bootstrap is asymptotically more accurate than the
+    standard intervals obtained using sample variance and assumptions of
+    normality.
+
+    Although bootstrapping is (under some conditions) asymptotically
+    consistent, it does not provide general finite-sample guarantees. The
+    apparent simplicity may conceal the fact that important assumptions are
+    being made when undertaking the bootstrap analysis (e.g. independence of
+    samples) where these would be more formally stated in other approaches.
+
+Maximum likelihood `@`{.tzx-anchor #maximum-likelihood}
+
+:   In statistics, maximum-likelihood estimation (MLE) is a method of
+    estimating the parameters of a statistical model given data.
+
+    $$f(x_1,x_2,\ldots,x_n\mid\theta) = f(x_1\mid \theta)\times f(x_2|\theta) \times \cdots \times f(x_n\mid \theta).$$
+
+    likelihood:
+
+    $$\mathcal{L}(\theta\,;\,x_1,\ldots,x_n) = f(x_1,x_2,\ldots,x_n\mid\theta) = \prod_{i=1}^n f(x_i\mid\theta). $$
+
+    In practice it is often more convenient to work with the logarithm
+    of the likelihood function, called the log-likelihood:
+
+    $$\ln\mathcal{L}(\theta\,;\,x_1,\ldots,x_n) = \sum_{i=1}^n \ln f(x_i\mid\theta),$$
+
+    or the average log-likelihood:
+
+    $$\hat\ell = \frac1n \ln\mathcal{L}.$$
+
+    The method of maximum likelihood estimates θ0 by finding a value of
+    θ that maximizes $\scriptstyle\hat\ell(\theta;x)$. This method of
+    estimation defines a maximum-likelihood estimator (MLE) of $θ_0$:
+
+    $$\{ \hat\theta_\mathrm{mle}\} \subseteq \{ \underset{\theta\in\Theta}{\operatorname{arg\,max}}\ \hat\ell(\theta\,;\,x_1,\ldots,x_n) \},$$
 
 refs and see also
 
   - [Bayesian inference - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Bayesian_inference)
   - [Bernoulli distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Bernoulli_distribution)
   - [Beta distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Beta_distribution)
+  - [Bias of an estimator - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Bias_of_an_estimator)
   - [Binomial distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Binomial_distribution)
   - [Bootstrapping (statistics) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Bootstrapping_(statistics))
   - [Chi-squared distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Chi-squared_distribution)
@@ -1817,15 +2440,16 @@ refs and see also
   - [Consistent estimator - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Consistent_estimator)
   - [Consistent estimator - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Consistent_estimator)
   - [Covariance - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Covariance)
+  - [Cramér–Rao bound - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Cram%C3%A9r%E2%80%93Rao_bound)
   - [Cumulative distribution function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Cumulative_distribution_function)
   - [Error function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Error_function)
   - [Estimator - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Estimator)
-  - [Expected value - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Expected_value)
   - [Expected value - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Expected_value)
   - [Exponential distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Exponential_distribution)
   - [F-distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/F-distribution)
   - [Gamma distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Gamma_distribution)
   - [Generalized method of moments - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Generalized_method_of_moments)
+  - [Homoscedasticity - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Homoscedasticity)
   - [Hypergeometric distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hypergeometric_distribution)
   - [Independent and identically distributed random variables - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables)
   - [Joint probability distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Joint_probability_distribution)
@@ -1833,8 +2457,9 @@ refs and see also
   - [Least squares - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Least_squares)
   - [Linear regression - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Linear_regression)
   - [Marginal distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Marginal_distribution)
-  - [Marginal distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Marginal_distribution)
   - [Maximum likelihood - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Maximum_likelihood)
+  - [Minimum mean square error - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Minimum_mean_square_error)
+  - [Minimum-variance unbiased estimator - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Minimum-variance_unbiased_estimator)
   - [Moment (mathematics) - Wikipedia, the free encyclopedia]
   - [Monte Carlo method - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Monte_Carlo_method)
   - [Negative binomial distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Negative_binomial_distribution)
@@ -1864,6 +2489,11 @@ refs and see also
   - [Uniform distribution (discrete) - Wikipedia, the free encyclopedia]
   - [Variance - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Variance)
   - [t-statistic - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/T-statistic)
+  - [Nonparametric regression - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Nonparametric_regression)
+  - [Kalman filter - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Kalman_filter)
+  - [Pivotal quantity - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Pivotal_quantity)
+  - [Fiducial inference - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Fiducial_inference)
+  - [Z-test - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Z-test)
 
 [Moment (mathematics) - Wikipedia, the free encyclopedia]: https://en.wikipedia.org/wiki/Moment_(mathematics)
 [Uniform distribution (continuous) - Wikipedia, the free encyclopedia]: https://en.wikipedia.org/wiki/Uniform_distribution_(continuous)

@@ -45,3 +45,4 @@ DEEN.
 #. [Price Tag - 豆瓣FM - Beta](http://douban.fm/?start=1663449g85e8g3663449&cid=3663449)
 #. [In My Secret Life - 豆瓣FM - Beta](http://douban.fm/?start=501649g4d90g2501649&cid=2501649)
 #. [The One That Got Away (Acoustic) - 豆瓣FM - Beta](http://douban.fm/?start=1888482g0cadg153&cid=3888482)
+#. [L'amour C'est Pour Rien-Enrico Macias, L'amour C'est Pour RienMP3下载,歌词下载 - 虾米音乐](http://www.xiami.com/song/1771278511?spm=a1z1s.3521865.23309997.1.t9zOCU){title="《顽主》背景音乐。"}

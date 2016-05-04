@@ -263,6 +263,7 @@ a[href*="tangzhixiong.com"]:after,
 a[href*="dvorak4tzx.com"]:after         { content: "「我」"; }
 a[href$=".pdf"]:after                   { content: "「档」"; }
 a[href*="zhihu.com:"]:after             { content: "「知」"; }
+// a[href*="#"]:after                      { content: "「this」"; }
 
 h1, h2, h3, h4, h5, h6 { padding-left: 1.0em; padding-right: 0.4em; }
 

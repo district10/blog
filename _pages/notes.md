@@ -19,15 +19,77 @@ after-before: |
 Notes | 笔记[^1]
 ===============
 
+[一个死在百度和部队医院之手的年轻人](http://mp.weixin.qq.com/s?__biz=MzI5NDEzMjc0OQ==&mid=3045317271&idx=1&sn=9cca5718716cb641a9a081cba60c0cc3&scene=23&srcid=0501aPeNW1CjDrsYYn0GU3Ct#rd)
+
+[王路：弟子混得不好想改行，孔子怎么挽留？](https://www.douban.com/note/554510957/)
+
+:   业余棋手直接看专业九段下的棋，是一头雾水的，他完全不知道为什么这样下，反而
+    觉得业余选手杀来杀去比较痛快。《飞狐外传》里讲到两个绝世高手比武，旁边围观
+    的都看困了，两个高手你也不动，我也不动，不知道在干嘛。当一个人不去琢磨自己
+    不懂的东西如何高明的时候，就容易陷入盲目的自大。
+
+    “吾不如老农”，简简单单五个字，体现出十分丰富的层次：
+
+    人人都以为孔子知识多，但孔子不以此自居。假如别人问我一个编程问题，我只懂一
+    点，又不确定，也会告诉他。我的动机是什么呢？不是让他得到更详尽的解答，而是
+    向他表示我有这方面的知识。孔子不需要这种虚荣心，他总以让对方受益为目标，不
+    以展示自己的渊博为目标。
+
+    “查字典去”是命令的口吻。命令的口吻会令对方不快。当一个人用命令的口吻与他人
+    交流时，隐含的假定是：我比你高明，我可以使役你。这种倨傲的姿态，可能会伤害
+    到一部分请教者。请教者可能说：“我懒得查，我难道不知道字典上有吗，问你只是因
+    为你就在手边，比字典好用。”这就引发了意气之争。
+
+    “吾不如老农”，不是使役的语气，而是事实的陈述。陈述事实给对方，让对方自己来
+    抉择。这就不是命令，而是启发了。
+
+    樊迟此刻，是遭遇到人生路径的选择问题了。我见过很多小孩，初中没读完，成绩不
+    行，跟家长说，“我想学电脑”。真的想学电脑吗？数学满分100考6分还想学电脑？说
+    想学电脑，其实是想玩电脑，学习态度不行，又讳言这点，就绕个弯，表示自己有别
+    的兴趣和爱好。樊迟就是这个情况。
+
+    以孔子之睿智，对樊迟之鲁钝，依然不肯说出那种虚伪的鼓励。固然那些话会让樊迟
+    很舒服，但不说，才是对樊迟的尊重。
+
+    孔子真是诚实的人。他不会说什么“三百六十行，行行出状元”。这种话，应该是自己
+    对自己说的，因为爱惜职业，所以告诉自己，我所从事的劳作，并不比任何一种劳作
+    低贱。但没有一个父母会对子女说，你成绩这么差，干脆别读书了，种地去吧。如果
+    父母从心底认为读书比种地好，还这么劝子女，其实是从心底放弃了他。但孔子怎能
+    如此放弃樊迟呢。
+
+[Personal information management - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Personal_information_management)
+
+:   Personal information management (PIM) is the activities people perform in
+    order to acquire, organize, maintain, retrieve and use personal information
+    items such as documents (paper-based and digital), web pages and email
+    messages for everyday use to complete tasks (work-related or not) and
+    fulfill a person’s various roles (as parent, employee, friend, member of
+    community, etc.). More simply, PIM is the art of getting things done in
+    our lives through information.
+
+    There are six ways in which information can be personal:
+
+      - Owned by "me"
+      - About "me"
+      - Directed toward "me"
+      - Sent/Posted by "me"
+      - Experienced by "me"
+      - Relevant to "me"
+
 ricochet, `[,rɪkə'ʃet]`, n. 跳弹；跳飞
 
 [Uniq - Removing duplicate lines - Vim Tips Wiki - Wikia](http://vim.wikia.com/wiki/Uniq_-_Removing_duplicate_lines)
 
 :   how to remove duplicate lines??
 
+    可惜这个解决方案不是 vim 原生的，所以我不予采纳。
+
 [丽莉·克亚芙 (豆瓣)](https://movie.douban.com/celebrity/1237039/)
 
-[Riley Keough on IMDb: Movies, TV, Celebs, and more... - Photo Gallery - IMDb](http://www.imdb.com/name/nm2142336/mediaindex?ref_=nm_mv_close)
+:   refs and see also
+
+      - [丽莉·克亚芙 R-dvorak4tzx](http://dvorak4tzx.lofter.com/post/1d4021c8_ad82963)
+      - [Riley Keough on IMDb: Movies, TV, Celebs, and more... - Photo Gallery - IMDb](http://www.imdb.com/name/nm2142336/mediaindex?ref_=nm_mv_close)
 
 [关于异形的前世今生上抱下破 (普罗米修斯 影评)](https://movie.douban.com/review/5460211/)
 
@@ -501,6 +563,8 @@ Extra-Sensory-Perception.
     | M.C. Hammer: Hey! I was just going to say that!
     | Patrick Surtain: I must have ESP!
 
+    ESP 还可以是 Especially Silly People……
+
 YHWH represents the Hebrew letters "Yud-Heh-Vav-Heh." It was the name God gave
 for Himself when Moshe inquired of Him. In most modern translations it is
 usually written "LORD" (in capital letters) or "HaShem" (in the Hebrew Tanach,
@@ -552,25 +616,33 @@ pointy-haired
 
 最简单一句话，社交网络的本质是炫耀。
 
-炫耀你的幸福，炫耀你的不幸（来展示你的幸福，比如误机），炫耀你的思想，炫耀你认同或反对的思想（使自己看起来很有品位）。
+炫耀你的幸福，炫耀你的不幸（来展示你的幸福，比如误机），炫耀你的思想，炫耀你认
+同或反对的思想（使自己看起来很有品位）。
 
 我觉得，人沉迷于社交网络，主要还是孤独。太深太深的孤独。
 
-字体这东西不废多少事，就能让体验上几个等级。除非你是偏爱像素字体的变态，你一定会惊讶于合理渲染的字体竟然能那么美。
+字体这东西不废多少事，就能让体验上几个等级。除非你是偏爱像素字体的变态，你一定
+会惊讶于合理渲染的字体竟然能那么美。
 
-其实人们对于位置的选择(不只是上厕所)，都应该是有一定统计规律的。比如去闹市或超市，入口处的摊位或柜台相对中间来说交易量会小一点，因为停留在入口意味着挡住了后面的人流，会对自己造成一定的心理压力，而我们不喜欢被push的感觉，宁愿去中间尽情挑选。另一个原因是人的思维是随着情景慢慢转变的，当你匆匆进入商场的时候，大脑中的情景还没完全适应，步伐还没有慢下来，也许这时候你已经错过了门口的货架了。你看到了，你也知道它在那，但你还没来得及思考就走开了。
+其实人们对于位置的选择(不只是上厕所)，都应该是有一定统计规律的。比如去闹市或超
+市，入口处的摊位或柜台相对中间来说交易量会小一点，因为停留在入口意味着挡住了后
+面的人流，会对自己造成一定的心理压力，而我们不喜欢被push的感觉，宁愿去中间尽情
+挑选。另一个原因是人的思维是随着情景慢慢转变的，当你匆匆进入商场的时候，大脑中
+的情景还没完全适应，步伐还没有慢下来，也许这时候你已经错过了门口的货架了。你看
+到了，你也知道它在那，但你还没来得及思考就走开了。
 
-我之前回答过一个 "狗大便时为什么先要嗅嗅地面转几圈" 的问题, 说是狗狗感觉周围环境不够安全, 不能保护她的隐私所致; 其实这是一种智慧生物的天性, 私密的事情下意识的就会想找到最能让自己安心的环境.
+我之前回答过一个 "狗大便时为什么先要嗅嗅地面转几圈" 的问题, 说是狗狗感觉周围环
+境不够安全, 不能保护她的隐私所致; 其实这是一种智慧生物的天性, 私密的事情下意识
+的就会想找到最能让自己安心的环境.
 
-各个操作系统的字体渲染都不一样 ，从效果上说，苹果机一直完虐 Linux 和 Windows ，而且是开箱即用。Linux 的字体渲染首选 Infinity，效果那是极好，不截图了。Windows 上，微软自己有 ClearType，当年我也是玩过的人，说实话，没感觉用了和没用有什么区别，除此之外，只能通过第三方的软件来改善字体，其中最好莫过 MacType，美极，极美，十分美。之前我也是弄过，但最近匆忙，装机后也没折腾，似乎没必要。今天弄好了，一下就感觉之前的字体就像砣屎，怎么能是“没必要”呢！
+各个操作系统的字体渲染都不一样 ，从效果上说，苹果机一直完虐 Linux 和 Windows ，
+而且是开箱即用。Linux 的字体渲染首选 Infinity，效果那是极好，不截图了。Windows
+上，微软自己有 ClearType，当年我也是玩过的人，说实话，没感觉用了和没用有什么区
+别，除此之外，只能通过第三方的软件来改善字体，其中最好莫过 MacType，美极，极美
+，十分美。之前我也是弄过，但最近匆忙，装机后也没折腾，似乎没必要。今天弄好了，
+一下就感觉之前的字体就像砣屎，怎么能是“没必要”呢！
 
 有图有真相。
-
-[before 0](http://gnat-tang-shared-image.qiniudn.com/before0.png)
-[after 0](http://gnat-tang-shared-image.qiniudn.com/after0.png)
-[before 1](http://gnat-tang-shared-image.qiniudn.com/before1.png)
-[after 1](http://gnat-tang-shared-image.qiniudn.com/after1.png)
-
 
 Before:
 
@@ -593,7 +665,6 @@ After:
 6. 直视的目光更被信赖
 7. 直视的目光显示出更强的竞争力
 8. 喜欢一个人时，男人会变得话多，凝视少；女人会话少，凝视多
-
 
 [love-in-your-eye]: http://sex.guokr.com/post/1049163/
 
@@ -620,64 +691,58 @@ CRX
 * [IE Tab](http://gnat.qiniudn.com/archive/crx/IE-Tab.crx)
 * [Web Developer](http://gnat.qiniudn.com/archive/crx/WebDeveloper.crx)
 
-
-
 一个妹子一首歌
 
 这个妹子：
 
 ![Jodie Foster](http://img3.douban.com/view/photo/photo/public/p917876874.jpg)
 
----
-
 这首歌：
-# <strong>[Geek in the Pink!](http://www.xiami.com/play?ids=/song/playlist/id/2079006/object_name/default/object_id/0#loaded)</strong>
 
+[Geek in the Pink!](http://www.xiami.com/play?ids=/song/playlist/id/2079006/object_name/default/object_id/0#loaded)
 
+OpenSceneGraph
 
-## OpenSceneGraph
+:   ```bash
+    $ cd ~/dev/OpenSceneGraph-3.4.0
+    $ mkdir build && cd build
+    $ cmake ..
+    $ make -j4
+    $ sudo ldconfig
+    $ sudo make install
+    ```
 
-```shell
-$ cd ~/dev/OpenSceneGraph-3.4.0
-$ mkdir build && cd build
-$ cmake ..
-$ make -j4
-$ sudo ldconfig
-$ sudo make install
-```
+    ```bash
+    $ pkg-config --libs openscenegraph
+    -losg -losgDB -losgFX -losgGA -losgParticle -losgSim -losgText -losgUtil
+    -losgTerrain -losgManipulator -losgViewer -losgWidget -losgShadow
+    -losgAnimation -losgVolume -lOpenThreads
 
-```shell
-$ pkg-config --libs openscenegraph
--losg -losgDB -losgFX -losgGA -losgParticle -losgSim -losgText -losgUtil -losgTerrain -losgManipulator -losgViewer -losgWidget -losgShadow -losgAnimation -losgVolume -lOpenThreads
+    $ osgviewer cow.osg
+    osgviewer: error while loading shared libraries: libosg.so.130: cannot open
+               shared object file: No such file or directory
 
-$ osgviewer cow.osg
-osgviewer: error while loading shared libraries: libosg.so.130: cannot open shared object file: No such file or directory
+    $ cat >> ~/.zshrc <<EOF
+    export OSG_ROOT=/home/tzx/dev/OpenSceneGraph-3.4.0/build
+    export OSG_BIN_PATH=${OSG_ROOT}/bin
+    export OSG_LIB_PATH=${OSG_ROOT}/lib
+    export OSG_INCLUDE_PATH=${OSG_ROOT}/include
+    export OSG_FILE_PATH=/home/tzx/data/OpenSceneGraph-Data-3.0.0:/home/tzx/data/OpenSceneGraph-Data-3.0.0/Images
 
-$ cat >> ~/.zshrc <<EOF
-export OSG_ROOT=/home/tzx/dev/OpenSceneGraph-3.4.0/build
-export OSG_BIN_PATH=${OSG_ROOT}/bin
-export OSG_LIB_PATH=${OSG_ROOT}/lib
-export OSG_INCLUDE_PATH=${OSG_ROOT}/include
-export OSG_FILE_PATH=/home/tzx/data/OpenSceneGraph-Data-3.0.0:/home/tzx/data/OpenSceneGraph-Data-3.0.0/Images
+    export PATH=${PATH}:${OSG_BIN_PATH}
+    export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${OSG_LIB_PATH}
+    EOF
 
-export PATH=${PATH}:${OSG_BIN_PATH}
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${OSG_LIB_PATH}
-EOF
+    $ source ~/.zshrc && osgviewer cow.osg
+    ```
 
-$ source ~/.zshrc && osgviewer cow.osg
-```
-
-```shell
-OSG_ROOT=C:\OSG
-OSG_BIN_PATH=%OSG_ROOT%\bin
-OSG_LIB_PATH=%OSG_ROOT%\lib
-OSG_INCLUDE_PATH=%OSG_ROOT%\include
-OSG_FILE_PATH=%OSG_ROOT%\data;%OSG_ROOT%\data\Images
-```
-
-##
-
-## Tricks
+    ```bash
+    OSG_ROOT=C:\OSG
+    OSG_BIN_PATH=%OSG_ROOT%\bin
+    OSG_LIB_PATH=%OSG_ROOT%\lib
+    OSG_INCLUDE_PATH=%OSG_ROOT%\include
+    OSG_FILE_PATH=%OSG_ROOT%\data;%OSG_ROOT%\data\Images
+    ```
 
 解决 Qt 的 moc 处理 boost 代码的问题
 
@@ -690,15 +755,13 @@ OSG_FILE_PATH=%OSG_ROOT%\data;%OSG_ROOT%\data\Images
 > #endif
 > ```
 
-## Refs
+refs and see also
 
-* [OSG+VS2010+win7环境搭建 - 缑城浪子 - 博客园](http://www.cnblogs.com/eaglezhao/archive/2011/07/12/eaglezhao.html)
-
+  - [OSG+VS2010+win7环境搭建 - 缑城浪子 - 博客园](http://www.cnblogs.com/eaglezhao/archive/2011/07/12/eaglezhao.html)
 
 要不是忙，我一定分享一篇经验贴：如何用 CASIO 991-es plus 分分钟搞定极限、定积分
 、求导、解方程（组）、矩阵求逆、求零点。或者如何用破烂的 82es 刷机到 991。屡试
 不爽，可惜没有 82es。
-
 
 | @韩三元小猪头: 编辑你饿不饿 @简书
 | @简书: 如果我告诉你今天回家路上买了4个蛋糕，忍不住一口全吃了，
@@ -710,70 +773,72 @@ OSG_FILE_PATH=%OSG_ROOT%\data;%OSG_ROOT%\data\Images
 | 我说我也没。
 | **然后我们俩抱头痛哭。**
 
-单词是我胡诌的。
+RAINBOCTOCAT
 
-![before coloring](http://upload-images.jianshu.io/upload_images/29284-4fcc0c62100ba6f7.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+:   单词是我胡诌的。
 
-![RAINBOCTOCAT](http://upload-images.jianshu.io/upload_images/29284-a45fc0cc90f15e56.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
+    ![before coloring](http://upload-images.jianshu.io/upload_images/29284-4fcc0c62100ba6f7.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
 
-![150x200](http://gnat.qiniudn.com/rainboctocat.png?imageView2/1/w/150/h/200)
+    ![RAINBOCTOCAT](http://upload-images.jianshu.io/upload_images/29284-a45fc0cc90f15e56.png?imageMogr2/auto-orient/strip|imageView2/2/w/1240)
 
-![180x180](http://gnat.qiniudn.com/rainboctocat.png?imageView2/1/w/180/h/180)
+    ![150x200](http://gnat.qiniudn.com/rainboctocat.png?imageView2/1/w/150/h/200)
 
-
-
-* [bash - How to extract tar.xz files in Linux? - Stack Overflow](http://stackoverflow.com/questions/12298368/how-to-extract-tar-xz-files-in-linux)
-* [How to create and extract zip, tar, tar.gz and tar.bz2 files in Linux - Simple Help](http://www.simplehelp.net/2008/12/15/how-to-create-and-extract-zip-tar-targz-and-tarbz2-files-in-linux/)
-* [oh-my-zsh/extract.plugin.zsh at master · robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/extract/extract.plugin.zsh)
+    ![180x180](http://gnat.qiniudn.com/rainboctocat.png?imageView2/1/w/180/h/180)
 
 ---
 
-### ZIP
-``` shell
-zip -r archive_name.zip directory_to_compress
-unzip archive_name.zip
-```
+unzip
 
-### TAR
-``` shell
-tar -cvf archive_name.tar directory_to_compress
-tar -xvf archive_name.tar.gz
-tar -xvf archive_name.tar -C /tmp/extract_here/
-```
+:   .zip
 
-### TAR.GZ
-``` shell
-tar -zcvf archive_name.tar.gz directory_to_compress
-tar -zxvf archive_name.tar.gz
-tar -zxvf archive_name.tar.gz -C /tmp/extract_here/
-```
+    ```bash
+    zip -r archive_name.zip directory_to_compress
+    unzip archive_name.zip
+    ```
 
-### TAR.BZ2
-``` shell
-tar -jcvf archive_name.tar.bz2 directory_to_compress
-tar -jxvf archive_name.tar.bz2 -C /tmp/extract_here/
-```
+    .tar
 
-### TAR.XZ
-``` shell
-tar xvfJ filename.tar.xz
-tar xpvf /path/to/my_archive.tar.xz -C /path/to/extract
-tar --xz -xvf filename.tar.xz
-```
+    ```bash
+    tar -cvf archive_name.tar directory_to_compress
+    tar -xvf archive_name.tar.gz
+    tar -xvf archive_name.tar -C /tmp/extract_here/
+    ```
 
+    .tar.gz
+
+    ```bash
+    tar -zcvf archive_name.tar.gz directory_to_compress
+    tar -zxvf archive_name.tar.gz
+    tar -zxvf archive_name.tar.gz -C /tmp/extract_here/
+    ```
+
+    tar.bz2
+
+    ```bash
+    tar -jcvf archive_name.tar.bz2 directory_to_compress
+    tar -jxvf archive_name.tar.bz2 -C /tmp/extract_here/
+    ```
+
+    tar.xz
+
+    ```bash
+    tar xvfJ filename.tar.xz
+    tar xpvf /path/to/my_archive.tar.xz -C /path/to/extract
+    tar --xz -xvf filename.tar.xz
+    ```
+
+    refs and see also
+
+      - [bash - How to extract tar.xz files in Linux? - Stack Overflow](http://stackoverflow.com/questions/12298368/how-to-extract-tar-xz-files-in-linux)
+      - [How to create and extract zip, tar, tar.gz and tar.bz2 files in Linux - Simple Help](http://www.simplehelp.net/2008/12/15/how-to-create-and-extract-zip-tar-targz-and-tarbz2-files-in-linux/)
+      - [oh-my-zsh/extract.plugin.zsh at master · robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/extract/extract.plugin.zsh)
 
 ---
 
-```
-log: $1. long long ago; $2. Thu Aug  6 17:24:06     2015;
-```
+**赖氏听力训练诀窍： **
 
-
-> **赖氏听力训练诀窍： **
-
-泛听：随意听，不追单词解释
-精听：反复听，逐句听写。特别注意连音（Linkage）
-
+| 泛听：随意听，不追单词解释
+| 精听：反复听，逐句听写。特别注意连音（Linkage）
 
 [Mysterious New Line](http://stackoverflow.com/questions/71417/why-is-r-a-newline-for-vim)
 
@@ -782,108 +847,103 @@ log: $1. long long ago; $2. Thu Aug  6 17:24:06     2015;
     :%s/\n/%/g
     ```
 
-```
-:w !sudo tee %
+vim
 
-:earlier 15m
-:later
+:   ```vim
+    :w !sudo tee %
 
-:r!date
-:.!date
+    :earlier 15m
+    :later
 
-:%!xxd
-:%!xxd -r
+    :r!date
+    :.!date
 
-U
-viwU
-va{U
-```
+    :%!xxd
+    :%!xxd -r
 
-gv (last visual selection) -> gi (last edit)
+    U
+    viwU
+    va{U
+    ```
 
-Control-arrow
+    gv (last visual selection) -> gi (last edit)
 
-```
-`.              ; :h `.
-'.
-g;
-g,
-mx
-`x
-'x
-```
+    Control-arrow
 
->i{
->iB
->a{
+    ```vim
+    `.              ; :h `.
+    '.
+    g;
+    g,
+    mx
+    `x
+    'x
+    ```
 
+    ```vim
+    >i{
+    >iB
+    >a{
 
-==
-4==
-=%
-=2a{
-gg=G
+    ==
+    4==
+    =%
+    =2a{
+    gg=G
 
-ma
->'a
-='a
+    ma
+    >'a
+    ='a
 
-v
-3>
+    v
+    3>
+    ```
 
-* http://stackoverflow.com/questions/726894/what-are-the-dark-corners-of-vim-your-mom-never-told-you-about
-* http://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi
+    refs and see also
 
-* [**Ed-Vim-Emacs**][ed-vim-emacs]
-Of course, on the system I administrate, **vi** is symlinked to **ed**. **Emacs** has been replaced by a shell script which
+    * http://stackoverflow.com/questions/726894/what-are-the-dark-corners-of-vim-your-mom-never-told-you-about
+    * http://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi
+
+Of course, on the system I administrate, **vi** is symlinked to **ed**.
+**Emacs** has been replaced by a shell script which
+
  - 1) Generates a syslog message at level LOG_EMERG;
  - 2) reduces the user's disk quota by 100K; and
  - 3) RUNS ED!!!!!!
 
-[ed-vim-emacs]: http://www.gnu.org/fun/jokes/ed.msg.html
-
-* Eclim
-![Eclim = vim + eclipse](http://upload-images.jianshu.io/upload_images/29284-74e059511619e624.jpg)
-
-
 ---
 
-* [Emacs Chat: Carsten Dominik (author of org-mode)][emacs-chat]
-* GoogleTech Talk by Carsten Dominik (2008), [优酷][carsten-dominik-org-chat]
-* [Learning Org-mode (my notes on github)][org-mode-notes]
-* [Org-mode Document][org-mode-doc]
+GoogleTech Talk by Carsten Dominik (2008): Emacs
 
+:  - [Emacs Chat: Carsten Dominik (author of org-mode)][emacs-chat]
+   - GoogleTech Talk by Carsten Dominik (2008), [优酷][carsten-dominik-org-chat]
 
-
-![][01-intro]
-![][02-working-with-text-files?]
-![][03-notes-based-project-planning]
-![][04-step1-fixing-outline-mode-visually]
-![][05-step2-fixing-outline-mode-keys]
-![][06-fixed01]
-![][07-fixed02]
-![][08-step3-easy-structure-editing]
-![][09-org-mode-as-a-note-taking-app]
-![][10-step4-meta-data]
-![][11-meta-data-in-a-hierachical-document]
-![][12-special-interfaces-for-meta-data]
-![][13-special-interfaces-column-view]
-![][14-step5-capture-with-remember]
-![][15-step6-collect-and-display]
-![][16-exporting-and-publishing]
-![][17-tircks-tables]
-![][18-tricks-radio-tables]
-![][19-internals-context-sensitive-keys]
-![][20-how-org-mode-is-used-tody]
-![][21-org-mode-is-not]
-![][22-evolved-software]
-![][23-acknowledgement]
-
+    ![][01-intro]
+    ![][02-working-with-text-files?]
+    ![][03-notes-based-project-planning]
+    ![][04-step1-fixing-outline-mode-visually]
+    ![][05-step2-fixing-outline-mode-keys]
+    ![][06-fixed01]
+    ![][07-fixed02]
+    ![][08-step3-easy-structure-editing]
+    ![][09-org-mode-as-a-note-taking-app]
+    ![][10-step4-meta-data]
+    ![][11-meta-data-in-a-hierachical-document]
+    ![][12-special-interfaces-for-meta-data]
+    ![][13-special-interfaces-column-view]
+    ![][14-step5-capture-with-remember]
+    ![][15-step6-collect-and-display]
+    ![][16-exporting-and-publishing]
+    ![][17-tircks-tables]
+    ![][18-tricks-radio-tables]
+    ![][19-internals-context-sensitive-keys]
+    ![][20-how-org-mode-is-used-tody]
+    ![][21-org-mode-is-not]
+    ![][22-evolved-software]
+    ![][23-acknowledgement]
 
 [emacs-chat]: http://v.youku.com/v_show/id_XNjgwNDY4MzM2.html
 [carsten-dominik-org-chat]: http://v.youku.com/v_show/id_XMTUxMzUyNzE2.html
-[org-mode-notes]: https://github.com/district10/notes/blob/master/2014/Learning-Org-Mode.md
-[org-mode-doc]: http://orgmode.org/org.html
 [01-intro]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/01-intro.png
 [02-working-with-text-files?]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/02-working-with-text-files.png
 [03-notes-based-project-planning]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/03-notes-based-project-planning.png
@@ -908,33 +968,18 @@ Of course, on the system I administrate, **vi** is symlinked to **ed**. **Emacs*
 [22-evolved-software]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/22-evolved-software.png
 [23-acknowledgement]: http://gnat-tang-shared-image.qiniudn.com/emacs/org-mode/23-acknowledgement.png
 
-
-
-
-
-
-
-
-~~~
-log: $1. 2014-05-10: created; $2. 2014-05-25;
-~~~
-
 <http://gnat.qiniudn.com/ag.exe>
 
+[GNU readline](https://en.wikipedia.org/wiki/Readline)
 
-- [GNU readline](https://en.wikipedia.org/wiki/Readline)
-- manpage: ` man readline`
-
-
-
-
+manpage: ` man readline`
 
 * readline - get a line from a user with editing
 * 快捷键也可以设置成 vi （默认是 Emacs）
 * Customize: `set variable-name value`
 * COMMANDS
 
-```
+```tzx-bigquote
 beginning-of-line (C-a)                         quoted-insert (C-q, C-v)
 end-of-line (C-e)                               tab-insert (M-TAB)
 forward-char (C-f)                              self-insert (a, b, A, 1, !, ...)
@@ -961,10 +1006,9 @@ backward-delete-char (Rubout)                   yank (C-y)
 forward-backward-delete-char                    yank-pop (M-y)
 ```
 
-* 笑点: Bugs 里写到： `"It's too big and too slow."`
-* 一段 c 代码
+笑点: Bugs 里写到： `"It's too big and too slow."`
 
-~~~
+```cpp
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -998,47 +1042,39 @@ int main()
         free(input);
     }
 }
-~~~
+```
 
-[![*The Young Sailor II*](http://images.metmuseum.org/CRDImages/ma/web-large/DP261547.jpg)](http://www.metmuseum.org/collection/the-collection-online/search/489994)
+Young Sailor II
 
-**The Young Sailor II**[^ys] is a painting by [Henri Matisse](https://en.wikipedia.org/wiki/Henri_Matisse) from 1906.
+:   [![*The Young Sailor II*](http://images.metmuseum.org/CRDImages/ma/web-large/DP261547.jpg)](http://www.metmuseum.org/collection/the-collection-online/search/489994)
 
-Young Sailor II |
---- | ---
-**Artist:** | Henri Matisse (French, Le Cateau-Cambrésis 1869–1954 Nice)
-**Date:** | 1906
-**Medium:** | Oil on canvas
-**Dimensions:** | 39 7/8 x 32 5/8 in. (101.3 x 82.9 cm)
-**Classification:** | Paintings
-**Credit Line:** | Jacques and Natasha Gelman Collection, 1998
-**Accession Number:** | 1999.363.41
-**Rights and Reproduction:** | © 2015 Succession H. Matisse / Artists Rights Society (ARS), New York
+    **The Young Sailor II**[^ys] is a painting by [Henri Matisse](https://en.wikipedia.org/wiki/Henri_Matisse) from 1906.
 
-
+-----------------------         --------------------------------------------------
+**Artist:**                     Henri Matisse (French, Le Cateau-Cambrésis 1869–1954 Nice)
+**Date:**                       1906
+**Medium:**                     Oil on canvas
+**Dimensions:**                 39 7/8 x 32 5/8 in. (101.3 x 82.9 cm)
+**Classification:**             Paintings
+**Credit Line:**                Jacques and Natasha Gelman Collection, 1998
+**Accession Number:**           1999.363.41
+**Rights and Reproduction:**    ©2015 Succession H. Matisse / Artists Rights Society (ARS), New York
+-----------------------         --------------------------------------------------
 
 [^ys]: [Henri Matisse | Young Sailor II | The Metropolitan Museum of Art](http://www.metmuseum.org/collection/the-collection-online/search/489994)
-
-
-
-
 
 获取源码的方式: e.g. `apt-get source coreutils`
 
 - [Unix shell][unix-shell]
-- [Linux Shell Scripting Cookbook | 读书笔记][shell-script]
 - [Linux Newbie Guide: Shortcuts And Commands][linux-newbie]
 
 [unix-shell]: https://en.wikipedia.org/wiki/Unix_shell
-[shell-script]: http://jianshu.io/p/87eefaf092c5
 [linux-newbie]: http://www.unixguide.net/linux/linuxshortcuts.shtml
-
-
---------------------------------------------------------------------------------
 
 (这里不区别 Linux，GNU/Linux，和 Unix。简单粗暴地称为 Linux。)
 
-Linux Shell 用来和系统交互。基于命令行 ([CLI][cli]), 是我们使用 Linux Utilities 的平台。
+Linux Shell 用来和系统交互。基于命令行 ([CLI][cli]), 是我们使用 Linux Utilities
+的平台。
 
 **你最好知道的知识有: **
 
@@ -1063,11 +1099,9 @@ Linux Shell 用来和系统交互。基于命令行 ([CLI][cli]), 是我们使�
 [man]: https://en.wikipedia.org/wiki/Man_page
 [info]: https://en.wikipedia.org/wiki/Info_(Unix)
 
---------------------------------------------------------------------------------
-
 一些常用简单命令：
 
-```
+```bash
 ls, dir, vdir
 echo "hello world"
 cd ..
@@ -1075,43 +1109,46 @@ pwd
 date | xclip -selection c
 ```
 
-
-
---------------------------------------------------------------------------------
-
 一些说明：
 
-- 快捷键
-~~~
-An Emacs-style notation is used to denote keystrokes.  Control keys are
-       denoted  by C-key, e.g., C-n means Control-N.  Similarly, meta keys are
-       denoted by M-key, so M-x means Meta-X.  (On keyboards  without  a  meta
-       key,  M-x means ESC x, i.e., press the Escape key then the x key.  This
-       makes ESC the meta prefix.  The combination M-C-x means  ESC-Control-x,
-       or  press the Escape key then hold the Control key while pressing the x
-       key.)
-~~~
+An Emacs-style notation is used to denote keystrokes.  Control keys are denoted
+by C-key, e.g., C-n means Control-N.  Similarly, meta keys are denoted by
+M-key, so M-x means Meta-X.  (On keyboards  without  a  meta key,  M-x means
+ESC x, i.e., press the Escape key then the x key.  This makes ESC the meta
+prefix.  The combination M-C-x means  ESC-Control-x, or  press the Escape key
+then hold the Control key while pressing the x key.)
 
+“单向度”实际有两种意思，一是在横向上只有一个方向；一是在纵向上只有一个深度。即
+扁平化、无反抗等。单向度的人就是认同现实，没有批判精神，不反思的人。而造成这种
+单向度的人的社会，即单向度的社会，只倡导一种发展方向，维护现有体制，有着巨大的
+惰性。
 
-0. “单向度”实际有两种意思，一是在横向上只有一个方向；一是在纵向上只有一个深度。即扁平化、无反抗等。单向度的人就是认同现实，没有批判精神，不反思的人。而造成这种单向度的人的社会，即单向度的社会，只倡导一种发展方向，维护现有体制，有着巨大的惰性。
+陈寅恪所谓”独立之精神，自由之思想“，倒显得矫情而应酬。
 
-0. 陈寅恪所谓”独立之精神，自由之思想“，倒显得矫情而应酬。
+恐同症又称“[同性恋恐惧症](http://baike.baidu.com/view/573602.htm)”（英文
+homophobia和homophobic）是指对同性恋行为以及同性恋者的非理智性的恐惧和憎恨。对
+同性恋的恐惧在很多国家有法律上的定义，例如在有争议的同性恋恐慌防卫（gay panic
+defense）、精神错乱防卫（insanity defense）或在仇视罪行立法中。
 
-0. 恐同症又称“[同性恋恐惧症](http://baike.baidu.com/view/573602.htm)”（英文homophobia和homophobic）是指对同性恋行为以及同性恋者的非理智性的恐惧和憎恨。对同性恋的恐惧在很多国家有法律上的定义，例如在有争议的同性恋恐慌防卫（gay panic defense）、精神错乱防卫（insanity defense）或在仇视罪行立法中。
+**Homophobia** encompasses a range of
+negative [attitudes](https://en.wikipedia.org/wiki/Attitude_(psychology)) and
+feelings toward [homosexuality](https://en.wikipedia.org/wiki/Homosexuality) or
+people who are identified or perceived as
+being lesbian, gay, bisexual or transgender...
 
-0. **Homophobia** encompasses a range of negative [attitudes](https://en.wikipedia.org/wiki/Attitude_(psychology)) and feelings toward [homosexuality](https://en.wikipedia.org/wiki/Homosexuality) or people who are identified or perceived as being [lesbian](https://en.wikipedia.org/wiki/Lesbian), [gay](https://en.wikipedia.org/wiki/Gay), [bisexual](https://en.wikipedia.org/wiki/Bisexual) or [transgender](https://en.wikipedia.org/wiki/Transgender) ([LGBT](https://en.wikipedia.org/wiki/LGBT)).[[1]](https://en.wikipedia.org/wiki/Homophobia#cite_note-Adams-1)[[2]](https://en.wikipedia.org/wiki/Homophobia#cite_note-Renzetti-2)[[3]](https://en.wikipedia.org/wiki/Homophobia#cite_note-Schuiling-3) It can be expressed as [antipathy](https://en.wikipedia.org/wiki/Antipathy), [contempt](https://en.wikipedia.org/wiki/Contempt), [prejudice](https://en.wikipedia.org/wiki/Prejudice), aversion, or [hatred](https://en.wikipedia.org/wiki/Hate), may be based on irrational [fear](https://en.wikipedia.org/wiki/Fear), and is sometimes related to [religious beliefs](https://en.wikipedia.org/wiki/Religious_beliefs).[[4]](https://en.wikipedia.org/wiki/Homophobia#cite_note-Homophobia_bundle-4)
+Some people believe that sexual orientation is innate and fixed; however,
+sexual orientation develops across a person’s lifetime.
 
-0. Some people believe that sexual orientation is innate and fixed; however, sexual orientation develops across a person’s lifetime.
+毫无疑问，拒绝以上任何一点都要求相当的政治勇气，也必然会承担相应的政治风险。它
+意味着必须抛弃先天论所赐予的坚固堡垒，而被迫在话语层面与不同政治力量进行激烈的
+斗争；意味着必须以新的方式来建构同性恋作为政治群体的本真利益，并以此换取行动的
+可能；意味着必须想象一种新的未来，而在这个未来中未必有同性恋者这一称号。
 
-0. 毫无疑问，拒绝以上任何一点都要求相当的政治勇气，也必然会承担相应的政治风险。它意味着必须抛弃先天论所赐予的坚固堡垒，而被迫在话语层面与不同政治力量进行激烈的斗争；意味着必须以新的方式来建构同性恋作为政治群体的本真利益，并以此换取行动的可能；意味着必须想象一种新的未来，而在这个未来中未必有同性恋者这一称号。
+refs and see also
 
----
-
-#### Refs
-
-* [恐同症_百度百科](http://baike.baidu.com/link?url=fpF_kg0XkogQ3GVBL9vzH7cUvgmCHjp-TiV14gGwLsJz1gjqvCbDZnyVDK9vrB2gXao2mGqZDVLaIMFG1P5ZMa)
-* [Homophobia - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Homophobia)
-* [没有人天生是同性恋](http://www.douban.com/note/442922272/)
+  - [恐同症_百度百科](http://baike.baidu.com/link?url=fpF_kg0XkogQ3GVBL9vzH7cUvgmCHjp-TiV14gGwLsJz1gjqvCbDZnyVDK9vrB2gXao2mGqZDVLaIMFG1P5ZMa)
+  - [Homophobia - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Homophobia)
+  - [没有人天生是同性恋](http://www.douban.com/note/442922272/)
 
 ```python
 pip install --upgrade pip
