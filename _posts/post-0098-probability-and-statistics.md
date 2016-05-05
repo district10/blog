@@ -11,6 +11,16 @@ tags:
 Probability and Statistics[^virgo]
 ==================================
 
+\newcommand\Beta{\operatorname{Beta}}
+
+<div class="tzx-hide">
+
+TODO:
+
+  - 《统计学习方法》
+
+</div>
+
 [^virgo]: 这篇长笔记最让我纠结的是到底应该把 refs and see also 放在全文最后，还是每个段落。
 
     为了不让自己继续纠结下去，我决定放到全文最后，好处是可以排序。而且不会文章里到处都是链接。
@@ -34,6 +44,8 @@ MISC Notes
   - bayesian, `['beʒən]`
   - conjugate, `['kɑndʒəɡet]`, 共轭的
 
+[Probability Cheatsheet](http://www.wzchen.com/probability-cheatsheet)
+
 Probability theory
 
 :   Probability theory is the branch of mathematics concerned with probability,
@@ -42,6 +54,22 @@ Probability theory
     abstractions of non-deterministic events or measured quantities that may
     either be single occurrences or evolve over time in an apparently random
     fashion.
+
+    Terminology
+
+    -   RV: Random Varible
+    -   CRV: Continuous Random Varaible
+    -   DRV: Discrete Random Varaible
+    -   CDF, joint CDF
+    -   PMF, joint PMF
+    -   PDF, joint PDF
+    -   EV
+    -   LOTUS: Law of the Unconscious Statistician
+    -   Indicator Random Variables
+    -   UoU: Universality of Uniform
+    -   MGF: Moment Generating Functions
+    -   CLT: Central Limit Theorem
+    -   LLN: Law of Large Numbers
 
     Mode, mean, median
 
@@ -271,6 +299,16 @@ Probability theory
         $$
 
         This is utilized in covariance matrices.
+
+    Law of the unconscious statistician
+
+    :   In probability theory and statistics, the law of the unconscious
+        statistician (sometimes abbreviated LOTUS) is a theorem used to calculate
+        the expected value of a function g(X) of a random variable X when one knows
+        the probability distribution of X but one does not explicitly know the
+        distribution of g(X).
+
+        TODO: [Law of the unconscious statistician - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Law_of_the_unconscious_statistician)
 
     Variance
 
@@ -601,6 +639,85 @@ Poisson distribution
     PGF                     $\exp(\lambda(z - 1))$
     Fisher information      $\lambda^{-1}$
     -------------------     --------------------------------------------------------------------
+
+Compound Poisson distribution
+
+:   In probability theory, a compound Poisson distribution is the probability
+    distribution of the sum of a number of independent identically-distributed
+    random variables, where the number of terms to be added is itself a
+    Poisson-distributed variable. In the simplest cases, the result can be
+    either a continuous or a discrete distribution.
+
+    Definition
+
+    :   Suppose that
+
+        $$N\sim\operatorname{Poisson}(\lambda),$$
+
+        i.e., N is a random variable whose distribution is a Poisson
+        distribution with expected value λ, and that
+
+        $$X_1, X_2, X_3, \dots$$
+
+        are identically distributed random variables that are mutually
+        independent and also independent of N. Then the probability
+        distribution of the sum of N i.i.d. random variables conditioned on the
+        number of these variables (N):
+
+        $$Y \mid N=\sum_{n=1}^N X_n$$
+
+        has a well-defined distribution. In the case N = 0, then the value of Y
+        is 0, so that then Y | N = 0 has a degenerate distribution.
+
+        The compound Poisson distribution is obtained by marginalising the
+        joint distribution of (Y,N) over N, where this joint distribution is
+        obtained by combining the conditional distribution Y | N with the
+        marginal distribution of N.
+
+    Properties
+
+    :   Mean and variance of the compound distribution derive in a simple way
+        from law of total expectation and the law of total variance. Thus
+
+    TODO: [Compound Poisson distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Compound_Poisson_distribution)
+
+Law of total expectation
+
+:   The proposition in probability theory known as the law of total
+    expectation, the law of iterated expectations, the tower rule, the smoothing
+    theorem, and Adam's Law among other names, states that if X is an integrable
+    random variable (i.e., a random variable satisfying E( | X | ) < ∞) and Y is
+    any random variable, not necessarily integrable, on the same probability space,
+    then
+
+    $$\operatorname{E} (X) = \operatorname{E} ( \operatorname{E} ( X \mid Y)),$$
+
+    i.e., the expected value of the conditional expected value of X given Y is
+    the same as the expected value of X.
+
+    The conditional expected value E( X | Y ) is a random variable in its own
+    right, whose value depends on the value of Y. Notice that the conditional
+    expected value of X given the event Y = y is a function of y. If we write
+    E( X | Y = y) = g(y) then the random variable E( X | Y ) is just g(Y).
+
+    One special case states that if $A_1, A_2, \ldots, A_n$ is a partition of the
+    whole outcome space, i.e. these events are **mutually exclusive** and
+    **exhaustive**, then
+
+    $$\operatorname{E} (X) = \sum_{i=1}^{n}{\operatorname{E}(X \mid A_i) \operatorname{P}(A_i)}.$$
+
+    TODO: [Law of total expectation - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Law_of_total_expectation)
+
+Law of total variance
+
+:   In probability theory, the law of total variance or variance
+    decomposition formula, also known as Eve's law, states that if X and Y are
+    random variables on the same probability space, and the variance of Y is
+    finite, then
+
+    $$\operatorname{Var}[Y]=\operatorname{E}(\operatorname{Var}[Y\mid X])+\operatorname{Var}(\operatorname{E}[Y\mid X]).\,$$
+
+    TODO: [Law of total variance - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Law_of_total_variance)
 
 Poisson approximation
 
@@ -1153,6 +1270,288 @@ Tolerance interval
     normally distributed with mean \mu and standard deviation \sigma, then the
     interval \mu \pm 1.96\sigma includes 95% of the population (1.96 is the
     z-score for 95% coverage of a normally distributed population).
+
+Gamma function
+
+:   In mathematics, the gamma function (represented by the capital Greek letter
+    Γ) is an extension of the factorial function, with its argument shifted
+    down by 1, to real and complex numbers. That is, if n is a positive
+    integer:
+
+    $$\Gamma(n) = (n-1)!.$$
+
+    ![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Gamma_plot.svg/488px-Gamma_plot.svg.png)
+
+    The gamma function is defined for all complex numbers except the
+    non-positive integers. For complex numbers with a positive real part, it is
+    defined via a convergent improper integral:
+
+    $$\Gamma(t) = \int_0^\infty x^{t-1} e^{-x}\,dx.$$
+
+    This integral function is extended by analytic continuation to all complex
+    numbers except the non-positive integers (where the function has simple
+    poles), yielding the meromorphic (`[,merə'mɔːfɪk]`, 亚纯的) function we
+    call the gamma function. In fact the gamma function corresponds to the
+    Mellin transform of the negative exponential function:
+
+    $$\Gamma(t) = \{ \mathcal M e^{-x} \} (t).$$
+
+    ![The gamma function is meromorphic in the whole complex plane.](https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Gamma_abs_3D.png/330px-Gamma_abs_3D.png)
+
+    The gamma function is a component in various probability-distribution
+    functions, and as such it is applicable in the fields of probability and
+    statistics, as well as combinatorics.
+
+    ![It is easy graphically to interpolate the factorial function to
+        non-integer values, but is there a formula that describes the resulting curve?](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Factorial_Interpolation.svg/375px-Factorial_Interpolation.svg.png)
+
+    Properties
+
+    -   $\Gamma(t+1)=t \Gamma(t)\,$, Γ(t) = Γ(t + 1)/t, $\Gamma(t)=\frac{\Gamma(t+n)}{t(t+1)\cdots(t+n-1)},$
+    -   $\Gamma(n) = 1 \cdot 2 \cdot 3 \cdots (n-1) = (n-1)!\,$
+    -   $\Gamma\left(\tfrac{1}{2}\right)=\sqrt{\pi},$
+    -   $\Gamma\left(\tfrac{1}{2}+n\right) = {(2n)! \over 4^n n!} \sqrt{\pi} = \frac{(2n-1)!!}{2^n} \sqrt{\pi} = \sqrt{\pi} \left[ {n-\frac{1}{2}\choose n} n! \right]$
+    -   $\Gamma\left(\tfrac{1}{2}-n\right) = {(-4)^n n! \over (2n)!} \sqrt{\pi} = \frac{(-2)^n}{(2n-1)!!} \sqrt{\pi} = \frac{\sqrt{\pi}}{{-\frac{1}{2} \choose n} n!}$
+
+    Pi function
+
+    :   An alternative notation which was originally introduced by Gauss and
+        which was sometimes used is the pi function, which in terms of the gamma
+        function is
+
+        $$\Pi(z) = \Gamma(z+1) = z \Gamma(z) = \int_0^\infty e^{-t} t^z\, dt,$$
+
+    For Re(x) > 0 the nth derivative of the gamma function is:
+
+    $$\frac{{\rm d}^n}{{\rm d}x^n}\,\Gamma(x) = \int_0^\infty t^{x-1} e^{-t} (\ln t)^{n} dt.$$
+
+    [Stirling's formula](https://en.wikipedia.org/wiki/Stirling%27s_approximation)
+
+    :   Asymptotically as t → ∞, the magnitude of the gamma function is given by
+        **Stirling's formula**
+
+        $$\Gamma(t+1)\sim\sqrt{2\pi t}\left(\frac{t}{e}\right)^{t},$$
+
+        where the symbol `~` means that the quotient of both sides converges to 1.
+
+    Euler's [reflection formula](https://en.wikipedia.org/wiki/Reflection_formula)
+
+    :   $$\Gamma(1-z) \Gamma(z) = {\pi \over \sin{(\pi z)}}, \qquad z \not\in \mathbf Z$$
+
+    Duplication formula
+
+    :   $$\Gamma(z) \Gamma\left(z + \tfrac{1}{2}\right) = 2^{1-2z} \; \sqrt{\pi} \; \Gamma(2z).$$
+
+        The duplication formula is a special case of the
+        [multiplication theorem](https://en.wikipedia.org/wiki/Multiplication_theorem)
+
+        $$\prod_{k=0}^{m-1}\Gamma\left(z + \frac{k}{m}\right) = (2 \pi)^{\frac{m-1}{2}} \; m^{\frac{1}{2} - mz} \; \Gamma(mz).$$
+
+    Meromorphic function
+
+    :   In the mathematical field of complex analysis, a meromorphic function
+        on an open subset D of the complex plane is a function that is
+        holomorphic on all D except a set of isolated points (the poles of the
+        function), at each of which the function must have a Laurent series.
+        This terminology comes from the Ancient Greek meros (μέρος), meaning
+        part, as opposed to holos (ὅλος), meaning whole.
+
+    Mellin transform
+
+    :   In mathematics, the Mellin transform is an integral transform that may
+        be regarded as the multiplicative version of the two-sided Laplace
+        transform. This integral transform is closely connected to the theory
+        of Dirichlet series, and is often used in number theory, mathematical
+        statistics, and the theory of asymptotic expansions; it is closely
+        related to the Laplace transform and the Fourier transform, and the
+        theory of the gamma function and allied special functions.
+
+        The Mellin transform of a function f is
+
+        $$\left\{\mathcal{M}f\right\}(s) = \varphi(s)=\int_0^{\infty} x^{s-1} f(x)dx.$$
+
+        The inverse transform is
+
+        $$\left\{\mathcal{M}^{-1}\varphi\right\}(x) = f(x)=\frac{1}{2 \pi i} \int_{c-i \infty}^{c+i \infty} x^{-s} \varphi(s)\, ds.$$
+
+        refs and see also
+
+          - [Mellin transform - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Mellin_transform)
+
+    TODO: [Gamma function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Gamma_function)
+
+Digamma function
+
+:   In mathematics, the digamma function is defined as the logarithmic
+    derivative of the gamma function:
+
+    $$\psi(x)=\frac{d}{dx}\ln\Big(\Gamma(x)\Big)=\frac{\Gamma'(x)}{\Gamma(x)}.$$
+
+    It is the first of the polygamma functions.
+
+    The digamma function is often denoted as ψ0(x), ψ0(x) or $\digamma$ (after
+    the archaic Greek letter Ϝ digamma).
+
+    Relation to harmonic numbers
+
+    :   The gamma function obeys the equation
+
+        $$\Gamma(z+1)=z\Gamma(z).$$
+
+        Taking the derivative with respect to z gives:
+
+        $$\Gamma'(z+1)=z\Gamma'(z)+\Gamma(z)$$
+
+        Dividing by Γ(z+1) or the equivalent zΓ(z) gives:
+
+        $$\frac{\Gamma'(z+1)}{\Gamma(z+1)}=\frac{\Gamma'(z)}{\Gamma(z)}+\frac 1z$$
+
+        or:
+
+        $$\psi(z+1)=\psi(z)+\frac 1z$$
+
+        Since the harmonic numbers are defined as
+
+        $$H_n=\sum_{k=1}^n\frac 1k$$
+
+        the digamma function is related to it by:
+
+        $$\psi(n)=H_{n-1}-\gamma$$
+
+        where $H_n$ is the n-th harmonic number, and γ is the Euler-Mascheroni
+        constant. For half-integer values, it may be expressed as
+
+        $$\psi\left(n+{\frac{1}{2}}\right)=-\gamma-2\ln(2)+\sum_{k=1}^n \frac{2}{2k-1}$$
+
+        Euler–Mascheroni constant
+
+        :   The Euler–Mascheroni constant (also called Euler's constant) is a
+            mathematical constant recurring in analysis and number theory,
+            usually denoted by the lowercase Greek letter gamma (γ).
+
+            ![The area of the blue region converges to the Euler–Mascheroni
+                constant.](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Gamma-area.svg/330px-Gamma-area.svg.png)
+
+            It is defined as the limiting difference between the harmonic
+            series and the natural logarithm:
+
+            $$\begin{align} \gamma &= \lim_{n\to\infty}\left(-\ln n +
+            \sum_{k=1}^n \frac1{k}\right)\\ &=\int_1^\infty\left(\frac1{\lfloor
+            x\rfloor}-\frac1{x}\right)\,dx. \end{align}$$
+
+            Here, ⌊x⌋ represents the floor function.
+
+            The numerical value of the Euler–Mascheroni constant, to 50 decimal
+            places, is
+
+            | 0.57721566490153286060651209008240243104215933593992….
+
+            Regularization
+
+            :   The Digamma function appears in the regularization of divergent
+                integrals
+
+                $$\int_{0}^{\infty} \frac{dx}{x+a},$$
+
+                this integral can be approximated by a divergent general
+                Harmonic series, but the following value can be attached to the
+                series
+
+                $$\sum_{n=0}^{\infty} \frac{1}{n+a}= - \psi (a).$$
+
+    Integral representations
+
+    :   If the real part of x is positive then the digamma function has the
+        following integral representation
+
+        $$\psi(x)=\int\limits_0^\infty \left(\frac{e^{-t}}{t}-\frac{e^{-xt}}{1-e^{-t}}\right)dt.$$
+
+Beta function
+
+:   In mathematics, the beta function, also called the Euler integral of the
+    first kind, is a special function defined by
+
+    $$\Beta(x,y) = \int_0^1t^{x-1}(1-t)^{y-1}\,\mathrm{d}t \!$$
+
+    for $\textrm{Re}(x), \textrm{Re}(y) > 0.\,$
+
+    The beta function was studied by Euler and Legendre and was given its name
+    by Jacques Binet; its symbol Β is a Greek capital β rather than the similar
+    Latin capital B.
+
+    properties
+
+    -   symmetric: $\Beta(x,y) = \Beta(y,x). \!$
+
+    -   relationship between gamma function and beta function: $\Beta(x,y)=\dfrac{\Gamma(x)\,\Gamma(y)}{\Gamma(x+y)} \!$
+
+        When x and y are positive integers, it follows from the definition of the gamma function $\Gamma$ that:
+
+          - $\Beta(x,y)=\dfrac{(x-1)!\,(y-1)!}{(x+y-1)!} \!$
+          - $\Beta(x,y) = 2\int_0^{\pi/2}(\sin\theta)^{2x-1}(\cos\theta)^{2y-1}\,\mathrm{d}\theta, \qquad \mathrm{Re}(x)>0,\ \mathrm{Re}(y)>0 \!$
+          - $\Beta(x,y) = \int_0^\infty\dfrac{t^{x-1}}{(1+t)^{x+y}}\,\mathrm{d}t, \qquad \mathrm{Re}(x)>0,\ \mathrm{Re}(y)>0 \!$
+          - $\Beta(x,y) = \sum_{n=0}^\infty \dfrac{{n-y \choose n}} {x+n}, \!$
+          - $\Beta(x,y) = \frac{x+y}{x y} \prod_{n=1}^\infty \left( 1+ \dfrac{x y}{n (x+y+n)}\right)^{-1}, \!$
+
+    -   The Beta function satisfies several interesting identities, including
+
+          - $\Beta(x,y) = \Beta(x, y+1) + \Beta(x+1, y) \!$
+          - $\Beta(x+1,y) = \Beta(x, y) \cdot \dfrac{x}{x+y} \!$
+          - $\Beta(x,y+1) = \Beta(x, y) \cdot \dfrac{y}{x+y} \!$
+          - $\Beta(x,y)\cdot(t \mapsto t_+^{x+y-1}) = (t \to t_+^{x-1}) * (t \to t_+^{y-1}) \qquad x\ge 1, y\ge 1, \!$
+          - $\Beta(x,y) \cdot \Beta(x+y,1-y) = \dfrac{\pi}{x \sin(\pi y)}, \!$
+
+        where $t \mapsto t_+^x$ is a truncated power function and the star
+        denotes convolution. The lowermost identity above shows in particular
+        $\Gamma(\tfrac12) = \sqrt \pi$. Some of these identities, e.g. the
+        trigonometric formula, can be applied to deriving the volume of an
+        n-ball in Cartesian coordinates.
+
+    Euler's integral for the beta function may be converted into an integral over the Pochhammer contour C as
+
+    $$\displaystyle (1-e^{2\pi i\alpha})(1-e^{2\pi i\beta})\Beta(\alpha,\beta) =\int_C t^{\alpha-1}(1-t)^{\beta-1} \, \mathrm{d}t.$$
+
+    Relationship between gamma function and beta function
+
+    :   To derive the integral representation of the beta function, write the
+        product of two factorials as
+
+        $$\begin{align} \Gamma(x)\Gamma(y) &= \int_0^\infty\ e^{-u} u^{x-1}\,\mathrm{d}u \int_0^\infty\ e^{-v} v^{y-1}\,\mathrm{d}v \\[6pt] &=\int_0^\infty\int_0^\infty\ e^{-u-v} u^{x-1}v^{y-1}\,\mathrm{d}u \,\mathrm{d}v. \end{align}$$
+
+        Changing variables by u = f(z,t) = zt and v = g(z,t) = z(1-t) shows that this is
+
+        $$\begin{align} \Gamma(x)\Gamma(y) &= \int_{z=0}^\infty\int_{t=0}^1 e^{-z} (zt)^{x-1}(z(1-t))^{y-1}|J(z,t)|\,\mathrm{d}t \,\mathrm{d}z \\[6pt] &= \int_{z=0}^\infty\int_{t=0}^1 e^{-z} (zt)^{x-1}(z(1-t))^{y-1}z\,\mathrm{d}t \,\mathrm{d}z \\[6pt] &= \int_{z=0}^\infty e^{-z}z^{x+y-1} \,\mathrm{d}z\int_{t=0}^1t^{x-1}(1-t)^{y-1}\,\mathrm{d}t\\ &=\Gamma(x+y)\Beta(x,y), \end{align}$$
+
+        where `|J(z,t)|` is the absolute value of the Jacobian determinant of u = f(z,t) and v = g(z,t).
+
+        The stated identity may be seen as a particular case of the identity for the integral of a convolution. Taking
+
+        $f(u):=e^{-u} u^{x-1} 1_{\R_+}$ and $g(u):=e^{-u} u^{y-1} 1_{\R_+}$, one has:
+
+        $$\Gamma(x) \Gamma(y) = \left(\int_{\R}f(u)\mathrm{d}u\right) \left( \int_{\R} g(u) \mathrm{d}u \right) = \int_{\R}(f*g)(u)\mathrm{d}u =\Beta(x, y)\,\Gamma(x+y).$$
+
+    Derivatives
+
+    :   We have
+
+        $${\partial \over \partial x} \mathrm{B}(x, y) = \mathrm{B}(x, y)
+        \left( {\Gamma'(x) \over \Gamma(x)} - {\Gamma'(x + y) \over \Gamma(x +
+        y)} \right) = \mathrm{B}(x, y) (\psi(x) - \psi(x + y)),$$
+
+        where $\psi(x)$ is the digamma function.
+
+    Approximation
+
+    :   Stirling's approximation gives the asymptotic formula
+
+        $$\Beta(x,y) \sim \sqrt {2\pi } \frac{{x^{x - \frac{1}{2}} y^{y -
+        \frac{1}{2}} }}{{\left( {x + y} \right)^{x + y - \frac{1}{2}} }}$$
+
+        for large x and large y. If on the other hand x is large and y is fixed, then
+
+        $$\Beta(x,y) \sim \Gamma(y)\,x^{-y}.$$
+
+    TODO: [Beta function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Beta_function)
 
 Chi-squared distribution
 
@@ -2342,6 +2741,25 @@ Bayesian inference `@`{.tzx-anchor #bayesian-inference}
     The prior distribution is the distribution of the parameter(s) before any
     data is observed, i.e. p(\theta \mid \alpha) .
 
+Naive Bayes spam filtering
+
+:   TODO, [Naive Bayes spam filtering - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Naive_Bayes_spam_filtering)
+
+    $$\Pr(S|W) = \frac{\Pr(W|S) \cdot \Pr(S)}{\Pr(W|S) \cdot \Pr(S) + \Pr(W|H) \cdot \Pr(H)}$$
+
+    where:
+
+      - $\Pr(S|W)$ is the probability that a message is a spam, knowing that the word "replica" is in it;
+      - $\Pr(S)$ is the overall probability that any given message is spam;
+      - $\Pr(W|S)$ is the probability that the word "replica" appears in spam messages;
+      - $\Pr(H)$ is the overall probability that any given message is not spam (is "ham");
+      - $\Pr(W|H)$ is the probability that the word "replica" appears in ham messages.
+
+    The spamicity of a word
+
+      - "what percentage of occurrences of the word "replica" appear in spam messages?"
+      - This quantity is called "spamicity" (or "spaminess") of the word "replica", and can be computed.
+
 Statistical hypothesis testing `@`{.tzx-anchor #statistical-hypothesis-testing}
 
 :   Statistical hypothesis testing is a key technique of both frequentist
@@ -2446,11 +2864,250 @@ Maximum likelihood `@`{.tzx-anchor #maximum-likelihood}
 
     $$\{ \hat\theta_\mathrm{mle}\} \subseteq \{ \underset{\theta\in\Theta}{\operatorname{arg\,max}}\ \hat\ell(\theta\,;\,x_1,\ldots,x_n) \},$$
 
+Ground truth
+
+:   Ground truth is a term used in various fields to refer to information provided
+    by direct observation as opposed to information provided by inference.
+
+    In machine learning, the term "ground truth" refers to the accuracy of the
+    training set's classification for supervised learning techniques. This is used
+    in statistical models to prove or disprove research hypotheses. The term
+    "ground truthing" refers to the process of gathering the proper objective
+    (provable) data for this test. Compare with gold standard.
+
+    Bayesian spam filtering is a common example of supervised learning. In this
+    system, the algorithm is manually taught the differences between spam and
+    non-spam. This depends on the ground truth of the messages used to train the
+    algorithm – inaccuracies in the ground truth will correlate to inaccuracies in
+    the resulting spam/non-spam verdicts.
+
+    Meteorology, `[,miːtɪə'rɒlədʒɪ]`, n. 气象状态，气象学
+
+    :   In remote sensing, "ground truth" refers to information collected on
+        location. Ground truth allows image data to be related to real features and
+        materials on the ground. The collection of ground-truth data enables
+        calibration of remote-sensing data, and aids in the interpretation and
+        analysis of what is being sensed. Examples include cartography,
+        meteorology, analysis of aerial photographs, satellite imagery and other
+        techniques in which data are gathered at a distance.
+
+        More specifically, ground truth may refer to a process in which a pixel on
+        a satellite image is compared to what is there in reality (at the present
+        time) in order to verify the contents of the pixel on the image. In the
+        case of a classified image, it allows supervised classification to help
+        determine the accuracy of the classification performed by the remote
+        sensing software and therefore minimize errors in the classification such
+        as errors of commission and errors of omission.
+
+    Geographical Information Systems
+
+    :   Geographic information systems such as GIS, GPS, and GNSS, have become so
+        wide-spread that the term "ground truth" has taken on special meaning in
+        that context. If the location coordinates returned by a location method
+        such as GPS are an estimate of a location, then the "ground truth" is the
+        actual location on earth. A smart phone might return a set of estimated
+        location coordinates such as 43.87870,-103.45901. The ground truth being
+        estimated by those coordinates is the tip of George Washington's nose on
+        Mt. Rushmore. The accuracy of the estimate is the maximum distance between
+        the location coordinates and the ground truth. We could say in this case
+        that the estimate accuracy is 10 meters, meaning that the point on earth
+        represented by the location coordinates is thought to be within 10 meters
+        of George's nose—the ground truth. In slang, the coordinates indicate where
+        we think George Washington's nose is located, and the ground truth is where
+        it's really at. In practice a smart phone or hand-held GPS unit is
+        routinely able to estimate the ground truth within 6–10 meters. Specialized
+        instruments can reduce GPS measurement error to under a centimeter
+
+    Military usage
+
+    :   US military slang uses "ground truth" to describe the reality of a tactical (战术的；策略的；善于策略的)
+            situation - as opposed to intelligence reports and mission plans. The term
+        appears in the title of the Iraq War documentary film The Ground Truth (2006),
+        and also in military publications, for example Stars and Stripes saying:
+        "Stripes decided to figure out what the ground truth was in Iraq."
+
+    Etymology
+
+    :   The Oxford English Dictionary (s.v. "ground truth") records the use of the
+        word "Groundtruth" in the sense of a "fundamental truth" from Henry Ellison's
+        poem "The Siberian Exile's Tale", published in 1833.
+
+Simpson's paradox
+
+:   Simpson's paradox, or the Yule–Simpson effect, is a paradox in probability
+    and statistics, in which a trend appears in different groups of data but
+    disappears or reverses when these groups are combined. It is sometimes
+    given the impersonal title reversal paradox or amalgamation paradox.
+
+    This result is often encountered in social-science and medical-science
+    statistics, and is particularly confounding when frequency data is
+    unduly given causal interpretations. The paradoxical elements disappear
+    when causal relations are brought into consideration. Many statisticians
+    believe that the mainstream public should be informed of the
+    counter-intuitive results in statistics such as Simpson's paradox.
+
+    UC Berkeley gender bias
+
+    :   One of the best-known examples of Simpson's paradox is a study of gender
+        bias among graduate school admissions to University of California,
+        Berkeley. The admission figures for the fall of 1973 showed that men
+        applying were more likely than women to be admitted, and the difference was
+        so large that it was unlikely to be due to chance.
+
+        ------  ----------      ---------
+                Applicants      Admitted
+        ------  ----------      ---------
+        Men     8442            44%
+
+        Women   4321            35%
+        ------  ----------      ---------
+
+        But when examining the individual departments, it appeared that six out of
+        85 departments were significantly biased against men, whereas only four
+        were significantly biased against women. In fact, the pooled and corrected
+        data showed a "small but statistically significant bias in favor of
+        women." The data from the six largest departments is listed below.
+
+        ![](http://whudoc.qiniudn.com/2016/20160505203839.png)
+
+        The research paper by Bickel et al. concluded that women tended to
+        apply to competitive departments with low rates of admission even among
+        qualified applicants (such as in the English Department), whereas men
+        tended to apply to less-competitive departments with high rates of
+        admission among the qualified applicants (such as in engineering and
+        chemistry). The conditions under which the admissions' frequency data
+        from specific departments constitute a proper defense against charges
+        of discrimination are formulated in the book Causality by Pearl.
+
+Generating function
+
+:   Ordinary generating function
+      ~ $$G(a_n;x)=\sum_{n=0}^\infty a_nx^n.$$
+
+    Exponential generating function
+      ~ $$\operatorname{EG}(a_n;x)=\sum _{n=0}^{\infty} a_n \frac{x^n}{n!}.$$
+
+    Poisson generating function
+
+      ~ $$\operatorname{PG}(a_n;x)=\sum _{n=0}^{\infty} a_n e^{-x} \frac{x^n}{n!} = e^{-x}\, \operatorname{EG}(a_n;x).$$
+
+    Lambert series
+
+      ~ $$\operatorname{LG}(a_n;x)=\sum _{n=1}^{\infty} a_n \frac{x^n}{1-x^n}.$$
+
+    TODO: [Generating function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Generating_function)
+
+Moment-generating function
+
+:   In probability theory and statistics, the moment-generating function of a
+    random variable is an alternative specification of its probability
+    distribution. Thus, it provides the basis of an alternative route to
+    analytical results compared with working directly with probability density
+    functions or cumulative distribution functions. There are particularly
+    simple results for the moment-generating functions of distributions defined
+    by the weighted sums of random variables. Note, however, that not all
+    random variables have moment-generating functions.
+
+    In addition to univariate distributions, moment-generating functions can be
+    defined for vector- or matrix-valued random variables, and can even be
+    extended to more general cases.
+
+    The moment-generating function does not always exist even for real-valued
+    arguments, unlike the characteristic function. There are relations between
+    the behavior of the moment-generating function of a distribution and
+    properties of the distribution, such as the existence of moments.
+
+    In probability theory and statistics, the moment-generating function of a
+    random variable X is
+
+    $$M_X(t) := \mathbb{E}\!\left[e^{tX}\right], \quad t \in \mathbb{R},$$
+
+    wherever this expectation exists. In other terms, the moment-generating
+    function can be interpreted as the expectation of the random variable
+    $e^{tX}$.
+
+    $M_X(0)$ always exists and is equal to 1.
+
+    ------------        ------------------------------- ----------------------------
+    Distribution    Moment-generating function MX(t)    Characteristic function φ(t)
+    Bernoulli \, P(X=1)=p     \, 1-p+pe^t     \, 1-p+pe^{it}
+    Geometric (1 - p)^{k-1}\,p\!      \frac{p e^t}{1-(1-p) e^t}\!
+     \forall t<-\ln(1-p)\!    \frac{p e^{it}}{1-(1-p)\,e^{it}}\!
+    Binomial B(n, p)      \, (1-p+pe^t)^n     \, (1-p+pe^{it})^n
+    Poisson Pois(λ)       \, e^{\lambda(e^t-1)}       \, e^{\lambda(e^{it}-1)}
+    Uniform (continuous) U(a, b)      \, \frac{e^{tb} - e^{ta}}{t(b-a)}       \, \frac{e^{itb} - e^{ita}}{it(b-a)}
+    Uniform (discrete) U(a, b)    \, \frac{e^{at} - e^{(b+1)t}}{(b-a+1)(1-e^{t})}     \, \frac{e^{ait} - e^{(b+1)it}}{(b-a+1)(1-e^{it})}
+    Normal N(μ, σ2)       \, e^{t\mu + \frac{1}{2}\sigma^2t^2}    \, e^{it\mu - \frac{1}{2}\sigma^2t^2}
+    Chi-squared χ2k       \, (1 - 2t)^{-k/2}      \, (1 - 2it)^{-k/2}
+    Gamma Γ(k, θ)     \, (1 - t\theta)^{-k}       \, (1 - it\theta)^{-k}
+    Exponential Exp(λ)    \, (1-t\lambda^{-1})^{-1}, \, (t<\lambda)       \, (1 - it\lambda^{-1})^{-1}
+    Multivariate normal N(μ, Σ)       \, e^{t^\mathrm{T} \mu + \frac{1}{2} t^\mathrm{T} \Sigma t}     \, e^{i t^\mathrm{T} \mu - \frac{1}{2} t^\mathrm{T} \Sigma t}
+    Degenerate δa     \, e^{ta}       \, e^{ita}
+    Laplace L(μ, b)       \, \frac{e^{t\mu}}{1 - b^2t^2}      \, \frac{e^{it\mu}}{1 + b^2t^2}
+    Negative Binomial NB(r, p)    \, \frac{(1-p)^r}{(1-pe^t)^r}       \, \frac{(1-p)^r}{(1-pe^{it})^r}
+    Cauchy Cauchy(μ, θ)     does not exist    \, e^{it\mu -\theta|t|}
+
+Characteristic function (probability theory)
+
+
+:   In probability theory and statistics, the characteristic function of any
+    real-valued random variable completely defines its probability
+    distribution. If a random variable admits a probability density function,
+    then the characteristic function is the inverse Fourier transform of the
+    probability density function. Thus it provides the basis of an alternative
+    route to analytical results compared with working directly with probability
+    density functions or cumulative distribution functions. There are
+    particularly simple results for the characteristic functions of
+    distributions defined by the weighted sums of random variables.
+
+    In addition to univariate distributions, characteristic functions can be
+    defined for vector or matrix-valued random variables, and can also be
+    extended to more generic cases.
+
+    The characteristic function always exists when treated as a function of a
+    real-valued argument, unlike the moment-generating function. There are
+    relations between the behavior of the characteristic function of a
+    distribution and properties of the distribution, such as the existence of
+    moments and the existence of a density function.
+
+    The characteristic function provides an alternative way for describing a
+    random variable. Similar to the cumulative distribution function,
+
+    $$F_X(x) = \operatorname{E} \left [\mathbf{1}_{\{X\leq x\}} \right]$$
+
+    ( where 1{X ≤ x} is the indicator function — it is equal to 1 when X ≤ x,
+    and zero otherwise), which completely determines behavior and properties of
+    the probability distribution of the random variable X, the characteristic
+    function,
+
+    $$\varphi_X(t) = \operatorname{E} \left [ e^{itX} \right ],$$
+
+    also completely determines behavior and properties of the probability
+    distribution of the random variable X. The two approaches are equivalent in
+    the sense that knowing one of the functions it is always possible to find
+    the other, yet they both provide different insight for understanding the
+    features of the random variable. However, in particular cases, there can be
+    differences in whether these functions can be represented as expressions
+    involving simple standard functions.
+
+    If a random variable admits a density function, then the characteristic
+    function is its dual, in the sense that each of them is a Fourier transform
+    of the other. If a random variable has a moment-generating function, then
+    the domain of the characteristic function can be extended to the complex
+    plane, and
+
+    $$\varphi_X(-it) = M_X(t).$$
+
+    refs and see also
+
+      - [如何理解统计中的特征函数？ - 数学 - 知乎](http://www.zhihu.com/question/23686709)
+
 refs and see also
 
   - [Bayesian inference - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Bayesian_inference)
   - [Bernoulli distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Bernoulli_distribution)
   - [Beta distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Beta_distribution)
+  - [Beta function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Beta_function)
   - [Bias of an estimator - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Bias_of_an_estimator)
   - [Binomial distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Binomial_distribution)
   - [Bootstrapping (statistics) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Bootstrapping_(statistics))
@@ -2464,15 +3121,21 @@ refs and see also
   - [Cumulative distribution function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Cumulative_distribution_function)
   - [Error function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Error_function)
   - [Estimator - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Estimator)
+  - [Euler–Mascheroni constant - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Euler%E2%80%93Mascheroni_constant)
   - [Expected value - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Expected_value)
   - [Exponential distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Exponential_distribution)
   - [F-distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/F-distribution)
+  - [Fiducial inference - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Fiducial_inference)
   - [Gamma distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Gamma_distribution)
+  - [Gamma function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Gamma_function)
   - [Generalized method of moments - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Generalized_method_of_moments)
+  - [Ground truth - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Ground_truth)
   - [Homoscedasticity - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Homoscedasticity)
   - [Hypergeometric distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hypergeometric_distribution)
   - [Independent and identically distributed random variables - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables)
   - [Joint probability distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Joint_probability_distribution)
+  - [Kalman filter - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Kalman_filter)
+  - [Law of the unconscious statistician - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Law_of_the_unconscious_statistician)
   - [Least absolute deviations - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Least_absolute_deviations)
   - [Least squares - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Least_squares)
   - [Linear regression - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Linear_regression)
@@ -2482,12 +3145,15 @@ refs and see also
   - [Minimum-variance unbiased estimator - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Minimum-variance_unbiased_estimator)
   - [Moment (mathematics) - Wikipedia, the free encyclopedia]
   - [Monte Carlo method - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Monte_Carlo_method)
+  - [Naive Bayes spam filtering - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Naive_Bayes_spam_filtering)
   - [Negative binomial distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Negative_binomial_distribution)
   - [Nonlinear regression - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Nonlinear_regression)
+  - [Nonparametric regression - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Nonparametric_regression)
   - [Nonparametric regression - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Nonparametric_regression)
   - [Normal distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Normal_distribution)
   - [Observational error - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Observational_error#Systematic_versus_random_error)
   - [Ordinary least squares - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Ordinary_least_squares)
+  - [Pivotal quantity - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Pivotal_quantity)
   - [Poisson distribution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Poisson_distribution)
   - [Poisson limit theorem - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Poisson_limit_theorem)
   - [Probability - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Probability)
@@ -2508,12 +3174,9 @@ refs and see also
   - [Uniform distribution (continuous) - Wikipedia, the free encyclopedia]
   - [Uniform distribution (discrete) - Wikipedia, the free encyclopedia]
   - [Variance - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Variance)
-  - [t-statistic - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/T-statistic)
-  - [Nonparametric regression - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Nonparametric_regression)
-  - [Kalman filter - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Kalman_filter)
-  - [Pivotal quantity - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Pivotal_quantity)
-  - [Fiducial inference - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Fiducial_inference)
   - [Z-test - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Z-test)
+  - [t-statistic - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/T-statistic)
+  - [Generating function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Generating_function)
 
 [Moment (mathematics) - Wikipedia, the free encyclopedia]: https://en.wikipedia.org/wiki/Moment_(mathematics)
 [Uniform distribution (continuous) - Wikipedia, the free encyclopedia]: https://en.wikipedia.org/wiki/Uniform_distribution_(continuous)

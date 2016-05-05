@@ -10,6 +10,7 @@ tags:
 Machine Learning
 ================
 
+<!--
 <i class="icon-book"></i>
 <i class="icon-cloud-download"></i>
 <i class="icon-exclamation-sign"></i>
@@ -25,6 +26,11 @@ Machine Learning
 <i class="icon-tags"></i>
 <i class="icon-thumbs-down"></i>
 <i class="icon-thumbs-up"></i>
+-->
+
+MISC Notes
+
+  - contrived example, 造的例子
 
 ```
 ml
@@ -611,3 +617,83 @@ similarity metric: sim_pearson, sim_distance
 ![](http://whudoc.qiniudn.com/2016/prmlfigs-png/Figure1.1.png)
 
 [Backgammon - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Backgammon)
+
+---
+
+## CS229, Machine Learning, Andrew Ng, Sanford University
+
+### Advice for applying Machine Learning
+
+Key ideas:
+
+1.  Diagnostics for debugging learning algorithms.
+2.  Error analyses and ablative analysis.
+3.  How to get started on a machine learning problem.
+    – Premature (statistical) optimization.
+
+Diagnostic for bias vs. variance
+
+:   Suppose you suspect the problem is either:
+
+      - Overfitting (high variance).
+      - Too few features to classify spam (high bias).
+
+    Diagnostic:
+
+      - Variance: Training error will be much lower than test error.
+      - Bias: Training error will also be high.
+
+    ![Typical learning curve for high variance](http://whudoc.qiniudn.com/2016/20160505134652.png)
+
+      - Test error still decreasing as m increases. Suggests larger training set
+        will help.
+      - Large gap between training and test error.
+
+    ![Typical learning curve for high bias](http://whudoc.qiniudn.com/2016/20160505135614.png)
+
+      - Even training error is unacceptably high.
+      - Small gap between training and test error.
+
+Is the algorithm (gradient descent for logistic regression) converging?
+
+Error analysis & Ablative (`['æblətɪv]`, 离格) analysis
+
+:   ![](http://whudoc.qiniudn.com/2016/20160505142736.png)
+
+    Error analysis tries to explain the difference between current performance and perfect performance.
+    Ablative analysis tries to explain the difference between some baseline (much poorer) performance and current performance.
+
+    Just what accounts for your improvement from 94 to 99.9%?
+
+Getting started on a learning problem
+
+:   -   Approach #1: **Careful design**
+
+    -   Approach #2: **Build-and-fix**
+
+        Implement something quick-and-dirty
+
+Premature statistical optimization
+
+:   is bad.
+
+    The only way to find out what needs work is to implement something quickly,
+    and find out what parts break.
+
+Sammary
+
+-   Time spent coming up with diagnostics for learning algorithms is time
+    well-spent.
+-   It's often up to your own ingenuity (`[,ɪndʒə'nuəti]`, n. 独创性；精巧) to
+    come up with right diagnostics.
+-   Error analyses and ablative analyses also give insight into the problem.
+-   Two approaches to applying learning algorithms:
+    +   Design very carefully, then implement.
+        *   Risk of premature (statistical) optimization.
+    +   Build a quick-and-dirty prototype, diagnose, and fix.
+
+---
+
+## Wikipedia
+
+[Machine learning - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Machine_learning)

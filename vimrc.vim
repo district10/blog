@@ -32,7 +32,7 @@ ab fats     <i class="icon-tags"></i>
 ab fatd     <i class="icon-thumbs-down"></i>
 ab fatu     <i class="icon-thumbs-up"></i>
 
-ab qwhudoc http://whudoc.qiniudn.com/
+ab qwhudoc http://whudoc.qiniudn.com/2016/
 ab qgnat   http://gnat.qiniudn.com/
 
 if has("gui_running")

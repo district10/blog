@@ -19,6 +19,69 @@ after-before: |
 Notes | 笔记[^1]
 ===============
 
+[我对顶功的分析 - 输入法讨论专区 - 北大中文论坛 www.pkucn.com - Powered by Discuz!](http://www.pkucn.com/thread-298521-1-1.html)
+
+[QT编写的中文双拼输入法最终版 - QTCN开发网 - Powered by phpwind](http://www.qtcn.org/bbs/read-htm-tid-58920.html)
+
+[networking - Network usage top/htop on Linux - Stack Overflow](http://stackoverflow.com/questions/368002/network-usage-top-htop-on-linux)
+
+[亚马逊为什么要投资福昕软件？投资额是多少？ - 亚马逊 (Amazon.com) - 知乎](http://www.zhihu.com/question/19958342)
+
+:   “事隔一年半，软件升了级，我还得去谈（合同），再交5万美元押金——到时候很可能
+    就不只是5万美元的事了。”熊雨前觉得无理，又给Adobe发邮件：福昕还是很小的公司
+    ，没这么多钱，有没有可能降低押金？这次回复倒挺快：可以，但要提高单价。福昕
+    就这样被逼上梁山。当时，国内软件开发企业大都在过苦日子，在主场寻求不到什么
+    便利。在国外，通用软件虽有市场，但没有品牌，没有核心技术，福昕只能做些边角
+    料的活儿，公司财务几度捉襟见肘。在接下来一年多时间，熊雨前把营销、财务全部
+    交给员工，自己做起甩手掌柜，自主研发PDF核心技术，每天就一件事——写代码。
+
+    真正令熊雨前意识到他的软件“可以直接转化为钱”的，是微软这位大客户的不约而至
+    。2008年底，全球金融危机正酣，微软揣着云计算中心PDF索引工具的合同，同时敲响
+    了Adobe、福昕两家的门。微软SharePoint Online产品经理李公布了测评结果：过滤
+    2676份、共计2406MB的PDF文档，福昕比Adobe快了5倍。此前差不多一年，微软企业搜
+    索产品部已经“面试”过这两家——福昕当时充其量小有名气，美国分公司只有1个人，微
+    软一开始愣是没找到门儿，几经打听，才发现福昕的北京分部就在微软亚洲研究院的
+    斜对面，两家是邻居。第一次的测评结果：过滤1041份、共计1751MB的PDF文档，福昕
+    比Adobe快了4倍。
+
+    防打印确实只是设置了个标志位，大多数 PDF 软件都遵循这个标准罢了。只针对打印
+    的密码也是防君子不防小人的。
+
+    refs and see also
+
+      - [PDF to JPG - Convert your PDFs to Images online for free](https://smallpdf.com/pdf-to-jpg)
+      - [Foxit Software | Fast, Affordable, and Secure PDF Solutions](https://www.foxitsoftware.com/)
+      - [福昕软件 - 全球领先的PDF文档核心技术与应用服务](http://www.foxitsoftware.cn/)
+      - [福昕栅格化程序.NET 平台软件开发工具包 - 福昕软件](http://www.foxitsoftware.cn/products/sdk/rasterizer/)
+      - [福昕软件 - 企业新闻 - 福昕软件收购澳洲PDF厂商Debenu](http://www.foxitsoftware.cn/company/press_details.php?&url=html/notice/2016/foxit_press_id=284.html)
+      - [福昕网页浏览器PDF软件开发工具包 - 福昕软件](http://www.foxitsoftware.cn/products/sdk/web-pdf-sdk/)
+
+[Mount Rushmore - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Mount_Rushmore)
+
+:   Mount Rushmore National Memorial is a sculpture carved into the granite
+    face of Mount Rushmore, a granite batholith formation in the Black Hills in
+    Keystone, South Dakota, United States. Sculpted by Danish-American Gutzon
+    Borglum and his son, Lincoln Borglum, Mount Rushmore features 60-foot (18
+    m) sculptures of the heads of four United States presidents: George
+    Washington (1732–1799), Thomas Jefferson (1743–1826), Theodore Roosevelt
+    (1858–1919), and Abraham Lincoln (1809–1865) The entire memorial covers
+    1,278.45 acres (2.00 sq mi; 5.17 km2) and is 5,725 feet (1,745 m) above sea
+    level.
+
+    ![Sculptures of George Washington, Thomas Jefferson, Theodore Roosevelt and
+        Abraham Lincoln (left to right)](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Dean_Franklin_-_06.04.03_Mount_Rushmore_Monument_%28by-sa%29-3_new.jpg/426px-Dean_Franklin_-_06.04.03_Mount_Rushmore_Monument_%28by-sa%29-3_new.jpg)
+
+    ![Mount Rushmore commemorative stamp of 1952](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Mount_Rushmore_stamp_3c_1952_issue.JPG/255px-Mount_Rushmore_stamp_3c_1952_issue.JPG)
+
+    ![Mount Rushmore is near Keystone, South Dakota.](https://upload.wikimedia.org/wikipedia/commons/8/89/LocMap_Mount_Rushmore.png)
+
+[睡眠非常浅的人，该怎样改善睡眠质量？ - 健康 - 知乎](http://www.zhihu.com/question/19575624)
+
+:   refs and see also
+
+      - [如何高效地睡眠？ - 生活 - 知乎](http://www.zhihu.com/question/19551007)
+      - [上班族如何完美解决「早起毁一天」的问题？（多图）](http://daily.zhihu.com/story/4498237)
+
 [一个死在百度和部队医院之手的年轻人](http://mp.weixin.qq.com/s?__biz=MzI5NDEzMjc0OQ==&mid=3045317271&idx=1&sn=9cca5718716cb641a9a081cba60c0cc3&scene=23&srcid=0501aPeNW1CjDrsYYn0GU3Ct#rd)
 
 [王路：弟子混得不好想改行，孔子怎么挽留？](https://www.douban.com/note/554510957/)

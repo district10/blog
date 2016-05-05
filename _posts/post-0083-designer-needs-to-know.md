@@ -1030,3 +1030,13 @@ you know that the study participants were all from one geographical region. Be c
 of overgeneralizing.
 
 ## How people focus their attention
+
+![](http://whudoc.qiniudn.com/2016/font-parameters.png)
+
+![](http://whudoc.qiniudn.com/2016/misleading-handle.png)
+
+![](http://whudoc.qiniudn.com/2016/pictures-belong-to-which-story.png)
+
+![](http://whudoc.qiniudn.com/2016/samelength.png)
+
+![](http://whudoc.qiniudn.com/2016/we-look-where-the-person-looks.png)
