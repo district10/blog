@@ -609,4 +609,9 @@ var tzx_links = [
         title: "Probability and Statistics",
         query: ['machine-learning', 'deep-learning', 'probality', 'statistics']
     },
+    {
+        url: '/post-0099-intp.html',
+        title: "INTP",
+        query: ['mbti', 'intp', 'psychology']
+    },
 ];

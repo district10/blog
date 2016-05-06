@@ -10,8 +10,8 @@ after-before:
 before-after:
 ...
 
-Koans | 呓语^[这是我的微(tu)博(cao)。呓语呓语，神志不清；若有冒犯，敬请原谅。]
-============
+Koans | 呓语[^why-koan]
+=======================
 
 ## `1462353914`{.tzx-timestamp} Adobe Flash Player
 
@@ -2739,3 +2739,5 @@ Firefox: Blocked by Content Security Policy.
 > 不带换行符的文件的 md5sum）。我的主要联系方式是 Email。
 
 这个……有点叼。我要好好学习以后破解 md5……
+
+[^why-koan]: 这是我的微(tu)博(cao)。呓语呓语，神志不清；若有冒犯，敬请原谅。

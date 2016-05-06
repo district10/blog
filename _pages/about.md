@@ -21,6 +21,7 @@ About | 关于
 
 [^intp]: [在知乎上，为什么INTP型的人特别喜欢在自己的签名里加INTP这一标签？ - 徐湘楠的回答 - 知乎](https://www.zhihu.com/question/21304858/answer/80155966)
 
+    <div class="tzx-hide">
     因为真正的 INTP 不找女朋友。
 
     注意百度百科的这段话解释得十分委婉：
@@ -112,6 +113,7 @@ About | 关于
         refs and see also
 
           - [如何搞定一个性格类型是INTP的男生？ - 知乎](https://www.zhihu.com/question/21006234)
+    </div>
     </div>
 
 本博基本上分离在两条流水线：
