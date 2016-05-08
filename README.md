@@ -35,7 +35,7 @@ Perl 脚本还在用，但计划以后用 Pandoc 的 filter。
   - 帮我把网站同步到 [Coding: dvorak4tzx/dvorak4tzx.git coding-pages 分支](http://dvorak4tzx.coding.me/)；
   - 帮我把生成的网页同步到 [七牛云存储](https://portal.qiniu.com/signup?code=3ld4krtl7yzbm)。
 
-`en`: github -----> markdown ---pandoc---> html ---travis----> coding.net/qiniu.com
+`en`: 「github」 -----> **markdown** ---pandoc---> **html** ---travis----> 「coding.net/qiniu.com」
 
 ## Visit the Site
 
@@ -60,6 +60,7 @@ Perl 脚本还在用，但计划以后用 Pandoc 的 filter。
   - 所以啊，即便能够用 travis 帮我把所有 post 编译出 pdf 版本和 docx 版本，我也只弄过一次。
   - 一个是我提供这样的连接，自己的七牛流量就要爆！二是，太不节能。
   - 为了节能我现在已经把编译 md-> html 优化到只处理修改了的：见 [`filter.pl`](filter.pl)。
+  - 但后来我不怎么 filter 了，因为……反正是 travis 帮我编译……
 
 ## Warning
 
@@ -108,7 +109,9 @@ Perl 脚本还在用，但计划以后用 Pandoc 的 filter。
 
 ---
 
-## Customized Markdown
+## Plan
+
+Customized Markdown
 
 ```
     - tags, indexes

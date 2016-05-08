@@ -301,6 +301,9 @@ C、C++ 这些语言……不好说自己掌握了百分之多少。除非，你
 
 于是我们去借了金戈的 Mac，然后她要熬夜剪片子了。Good luck。
 
+`1462677829`{.tzx-timestamp}，后来她找了一个新闻的学妹帮忙，看效果：
+[武汉大学 遥感院 龚健雅院士宣传短片_趣味科普人文_科技_bilibili_哔哩哔哩弹幕视频网](http://www.bilibili.com/video/av4435395/)。
+
 ## `1460806262`{.tzx-timestamp} 还是关于面试
 
 小白鼠那个最多死一只啊哈哈哈……二了==
@@ -724,7 +727,8 @@ Opera 浏览器。中文版的火狐也有这个问题。
 
 一定要搞起来。
 
-<coding.net> 的 CodeInsight 就不错：[CodeInsight](https://coding.net/help/doc/codeinsight/getting-started.html)。
+coding.net 的 CodeInsight 就不错：
+[CodeInsight](https://coding.net/help/doc/codeinsight/getting-started.html)。
 
 Refs
 
@@ -743,8 +747,8 @@ repo 文档里的链接可能还要 fix，是不是用 perl 更好？
 
 ## `1458118399`{.tzx-timestamp} Dash 真是业界良心
 
-入手一个 iPad mini2，随手买了一个 Dash（因为 Zeal 只有 Windows 和 Linux 版本）
-，感觉真是太赞了！
+入手一个 iPad mini2，随手买了一个 Dash（因为 Zeal 只有 Windows 和 Linux 版本），
+感觉真是太赞了！
 
 链接：[Dash API Docs on the App Store](https://itunes.apple.com/us/app/dash-api-docs/id935284832?ls=1&mt=8)
 
@@ -1676,7 +1680,7 @@ files | Alteridem `[al′tər ī′dem′]`](http://www.alteridem.net/2008/02/26
 
 ![](http://whudoc.qiniudn.com/2016/vertical-tabs.png)
 
-我现在是浏览器，VS 都装了这种类型的插件。
+我现在是浏览器，VS 都装了这种类型的插件，see [图片-dvorak4tzx](http://dvorak4tzx.lofter.com/post/1d4021c8_ad387c3)。
 
 ## `1450421135`{.tzx-timestamp} CMake 的 Cache 太扯淡
 
@@ -1684,6 +1688,10 @@ files | Alteridem `[al′tər ī′dem′]`](http://www.alteridem.net/2008/02/26
 
 比 CMake 愚蠢的是我自己，居然找了一个库，想弄个静态库 lib 文件，再把头文件引入。然而它只有头文件，
 所有的实现都在这些头文件里，只有头文件还怎么生成静态库啊！
+
+`1462676673`{.tzx-timestamp}，发现 QtCreator 里也有这个问题。如果一个新建的类（单独的 `.h` 和 `.cpp`）原来不需要
+`moc`{.bash} 处理（不是 QObject 子类，没有添加 `Q_OBJECT` 宏），后来从 QObject 类继承，然后添加上 `Q_OBJECT` 宏，
+也会出错。也是要把 build 文件夹完全删除才可以。
 
 ## `1450410830`{.tzx-timestamp} 为什么不给 BUF 多分配一个字符作为截止？
 
@@ -1757,6 +1765,9 @@ n. 好; 慷慨的行为; 好事<br/>adj. 好的, 上等的, 优良的
 40 行高。这样的小电脑，可以运行一个超级轻量级的 Linux，
 配置了 Vim，可以用过来打字。可以联网同步数据（GitHub、Dropbox 之类）。
 
+`1462676976`{.tzx-timestamp}，可能还需要开一个 ssh 服务，
+还需要一个 USB 接口。最关键的是，待机时间要长（堪比 Kindle？）。
+
 ## `1450357527`{.tzx-timestamp} Password Fatigue
 
 我觉得我得给自己设计一套密码本，取代原来的中文缩写。
@@ -1799,6 +1810,8 @@ n. 好; 慷慨的行为; 好事<br/>adj. 好的, 上等的, 优良的
 
     其中的 `junction`{.bash} 是 Win 下的 `ln -s`。你可以从微软官网上下载到。
 
+但是启动特别慢，还特别卡！所以我一直用的 GVim。
+
 ## `1450267233`{.tzx-timestamp} Perl for Vimer
 
 Perl 这门语言简直和 Vim 一个娘胎出来的！正则表达式几乎一模一样。
@@ -1819,6 +1832,8 @@ s/\(^\s*\)\|\(\s*$\)//g
 ```
 
 当然，两者都可以指定 delimiter，简直 identical。
+
+`1462677122`{.tzx-timestamp}，其实 RegExp 都差不多。
 
 ## `1449975628`{.tzx-timestamp} What is Vim? Why Vim?
 
@@ -1900,7 +1915,9 @@ Extension: `ignore_line_breaks`
 话说 Vim 也没这么智能，但需要在这里为什么产品还没出来？
 
 By the way，为此我专门跑到 Pandoc 的 GitHub 上提交了一个 Issue，说不定他们能很
-快添加这个功能呢～See [膜拜大神](post-0076-real-hacker.html)。
+快添加这个功能呢～
+
+大神已经搞定了：See [膜拜大神](post-0076-real-hacker.html)。
 
 ## `1449807394`{.tzx-timestamp} Atom 编辑器之罪
 
@@ -1955,7 +1972,7 @@ Files (x86)\Git\bin`，Git Bash 的好处是可以随处在当前目录打开Bas
 
 CMD 清屏不是 `clear` 不是 `clr` 而是 `cls`。
 
-```bash
+```tzx-bigquote
 antiword.exe        dirname.exe         gpgkeys_ldap.exe  patch.exe
 astextplain         docx2txt            gpgsplit.exe      patch.exe.manifest
 awk                 dos2unix.exe        gpgv.exe          pdfinfo.exe
@@ -2409,7 +2426,7 @@ systeminfo
 
 #. This is my personal website. I work for Microsoft, but I don't speak for them.
 #. So high, so low, so many things to know
-#. <nuwen.net> is my personal website; I pronounce it "noo-when". It's a
+#. <nuwen.net> is my personal website; I pronounce it "**noo-when**". It's a
     reference to Pham Nuwen, a character in A Deepness In The Sky by Vernor Vinge.
 
 ## `1449546253`{.tzx-timestamp} 一个想法
@@ -2493,6 +2510,8 @@ TJG 说，那你吃你的眼屎啊～
 生产过程中往往需要和上、下的人打交道，隐藏自己这一层的细节很必要。^[曾看过一本
 书，说这叫“信息屏蔽”。]而学术需要更加直观透明。这就是学术和生产的区别。
 
+规范见 [CVRS C++ Coding Style Guidelines](post-0060-coding-style.html)。
+
 ## `1448436328`{.tzx-timestamp} Don't forget to feel bad
 
 ![](http://gnat.qiniudn.com/qk-does-not-feel-bad.jpg)
@@ -2500,11 +2519,13 @@ TJG 说，那你吃你的眼屎啊～
 等我力所能及的时候我会给我 pirate 的每本书、每个软件的作者、出版社都捐助（补偿）
 一笔钱。感谢他们。I feel bad.
 
+我的主页的 title 也是这个，see [tangzhixiong.com](http://tangzhixiong.com)
+
 ## `1448420781`{.tzx-timestamp} 该死
 
 [George Santayana](https://en.wikipedia.org/wiki/George_Santayana):
 
-> Those who don't know history are doomed to repeat it.
+> **Those who don't know history are doomed to repeat it.**
 
 不理解 Vim、Pandoc 的人也 doomed to be ignorant 益发愈加地 ignorant。
 
@@ -2660,7 +2681,7 @@ Albert Einstein:
 
 就不得不忍受和其他人待在一个封闭的、酷热的房子里。热成狗。
 
-`1450326446`{.ts}: 热死了！！！
+`1450326446`{.tzx-timestamp}: 热死了！！！
 
 ## `1447292125`{.tzx-timestamp} How Could I FAIL You?
 

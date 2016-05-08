@@ -11,7 +11,7 @@ tags:
 INTP
 ====
 
-Using the INTP type as an example, the orientation would be as follows:
+INTP:
 
   - Dominant introverted thinking
   - Auxiliary extraverted intuition
@@ -29,8 +29,8 @@ Cognitive learning styles
 
     :   The extraverted types learn best by talking and interacting with
         others. By interacting with the physical world, extraverts can process
-        and make sense of new information. The introverted types prefer quiet
-        **reflection and privacy**. Information processing occurs for introverts as
+        and make sense of new information. The introverted types **prefer quiet
+        reflection and privacy**. Information processing occurs for introverts as
         they explore ideas and concepts internally.
 
     Sensing/Intuition
@@ -64,8 +64,9 @@ Cognitive learning styles
         and/or procrastinate (延迟).
 
 INTPs are marked by a **quiet**, **stoic** (`['stəʊɪk]`, 斯多葛学派哲学家；禁欲主义者),
-**modest**, and aloof (冷淡的；远离的；冷漠的) exterior that masks
-strong creativity and enthusiasm for novel possibilities. Their weaknesses
+**modest**, and **aloof** (冷淡的；远离的；冷漠的) exterior that masks
+strong creativity and enthusiasm for novel possibilities. （这句话是说 INTP 看上去十分冷淡，这
+掩盖了我们十足的创造力和对新奇事务的好奇心）Their weaknesses
 include poor organization, insensitivity to social niceties (美好；细节；拘泥细节), and a tendency to
 get lost in abstractions. Keirsey referred to INTPs as Architects, one of the
 four types belonging to the temperament he called the Rationals. INTPs are
@@ -371,6 +372,60 @@ The PersonalityPage Type Portraits
 
 ![](http://whudoc.qiniudn.com/2016/16-cat-distrib.png)
 
+---
+
+[INTP怎样看待爱情？ - 知乎](https://www.zhihu.com/question/30652928)
+
+:   我作为一只没谈过恋爱的 intp 妹纸，表示周围的人百分之九十以上都提不起兴趣或者
+    提起兴趣以后注意力一分散就忘了。。。。楼上的说的很好，有很多时候我就觉得如
+    果人是被生理需求驱动去谈恋爱的话还不如自己撸，谈恋爱比这个花的功夫多太多了
+    。简而言之，我总感觉虽然理论上 intp 的感情应该是最好搞定的，但实际上却是最没
+    兴趣的。。。再简而言之引用我一个好朋友（她也是 intp, 我感觉如果我们能在未来
+    有交集点的话估计就在一起了嘿嘿）的话：“我去我自己和自己还没玩够呢，谁有时间
+    理你啊。”
+
+    对伴侣要求太高，要比自己有趣要比自己聪明要比自己有见识
+
+    ---
+
+    INTP 机械社交能力爆棚，只要他想，没有他处不上的朋友，**warmest machine** 的称号
+    不是盖的好吗。他们没有固定偏好，选长得美的、能力强的、有才华的、性格好的、人品
+    高的不同朋友交往后，你猜他最后会留下谁？当然是可以带给他们进步的贵人们。。**就是
+    那么功利。**
+
+    总感觉会有部分 INTPers 看见题目后不解地思考：我为什么需要朋友？INTP 的社交焦虑只会
+    来源于**想方设法和围绕身边的那么多奇奇怪怪的人温和地拉开距离**；而不会是纠结如何多
+    交一个朋友……重度 INTP 维持社交状态只是想营造一种自己不是怪胎的假象，自我保护而已
+    。INTP 不对任何人有偏见，他们公平地排斥着所有类型的人类= =。INTP 与谁都能自如地聊
+    天玩耍。同时不能、不想、不愿意与大多数人，真实地！深交。
+
+    （他们每天的 OS：好烦，好尴尬，要奔溃了，想一个人静静，想绝交……妈的再忍一忍，老
+    子也放不下这段关系的淹没成本和机会成本）
+
+    他们把一天安排得满满当当和朋友们出去 high 完后，心里会想：完成社交任务，但一天
+    就这样废了！**信息过载**，好折寿，nmb！
+
+    如何逼死 INTP：只要让他们和别人在一起，完全没有私人空间，不出三天，准奔溃，轻则
+    发飙甩脸子，重则做出大逆不道危害社会的事。
+
+    ---
+
+    他们无比能够正视“朋友圈是随着时间流动而改变的”，他们表达友爱的方式是：“我希望这
+    段我们能够亲密无间的日子结束得慢一点” 而不是“我们要做一辈子朋友”
+
+    你认真诚恳，斟字酌句地说出内心的想法和看法，而得到的回应只是
+
+    “什么意思？”
+
+    warmest social machine，给别人以让对方想和你深交的热情和温暖，三天不见后你却忘
+    了对方的脸。
+
+    ---
+
+    **精于识别他人的反社会情节；因为 intp 自己也有**
+
+    厌烦于：**“善意的谎言，敷衍的赞同，谄媚的赞美…”**
+
 refs and see also
 
   - [INTP - Psychology Wiki - Wikia](http://psychology.wikia.com/wiki/INTP)
@@ -381,3 +436,8 @@ refs and see also
   - [Portrait of an INTP](http://www.personalitypage.com/INTP.html)
   - [INTP Relationships](http://www.personalitypage.com/html/INTP_rel.html)
   - [INTP_百度百科](http://baike.baidu.com/view/934663.htm)
+  - [什么是INTP的孤独？ - 知乎](https://www.zhihu.com/question/28434381)
+  - [INTJ 与 INTP 的区别是什么？ - 知乎](https://www.zhihu.com/question/25555550)
+  - [INTP应该结交怎样的朋友？ - 知乎](https://www.zhihu.com/question/39776707)
+  - [INTP - 话题精华 - 知乎](https://www.zhihu.com/topic/19680968/top-answers)
+  - [失恋33天（电影） - 话题精华 - 知乎](https://www.zhihu.com/topic/19659113/top-answers)

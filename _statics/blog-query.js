@@ -614,4 +614,9 @@ var tzx_links = [
         title: "INTP",
         query: ['mbti', 'intp', 'psychology']
     },
+    {
+        url: '/post-0100-cmake-templates.html',
+        title: "CMake Templates",
+        query: ['cmake', 'templates', 'project']
+    },
 ];

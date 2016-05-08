@@ -6697,6 +6697,10 @@ void ConvertDialog::updateOutputTextEdit()
 }
 ```
 
+```cpp
+process->execute("C:/Users/Administrator/Documents/build-DogHouse-NTFS-Debug/d.exe", QStringList()<<"a"<<"b");
+```
+
 `QTemporaryFile::open()`{.cpp}, since it conveniently defaults to opening in
 read-write mode, there is no need to specify filename and mode.  The
 `QProcess::execute()`{.cpp} static function runs an external process and blocks
@@ -7885,3 +7889,37 @@ void MainWindow::popupMenu(const QPoint &pos)
 | Qt::DefaultContextMenu | 1 | the widget's QWidget::contextMenuEvent() handler is called. |
 | Qt::ActionsContextMenu | 2 | the widget displays its QWidget::actions() as context menu. |
 | Qt::CustomContextMenu | 3 | the widget emits the QWidget::customContextMenuRequested() signal. |
+
+commandlineargs
+
+```cpp
+int main(int argc, char *argv[]) {
+    QApplication app(argc, argv, false);
+    qDebug() << "QApp arg test app";
+
+    QStringList args = app.arguments();
+
+    int pid = 0;
+
+    QRegExp rxArgPid("--pid=([0-9]{1,})");
+    QRegExp rxArgFooEna("--enable-foo");
+    QRegExp rxArgFooDis("--disable-foo");
+
+    for (int i = 1; i < args.size(); ++i) {
+        if (rxArgPid.indexIn(args.at(i)) != -1 ) {
+            pid =  rxArgPid.cap(1).toInt();
+            qDebug() << i << ":" << args.at(i) << rxArgPid.cap(1) << pid;
+        }
+        else if (rxArgFooEna.indexIn(args.at(i)) != -1 ) {
+            qDebug() << i << ":" << args.at(i) << "Enable Foo";
+        }
+        else if (rxArgFooDis.indexIn(args.at(i)) != -1 ) {
+            qDebug() << i << ":" << args.at(i) << "Disable Foo";
+        }
+        else {
+            qDebug() << "Uknown arg:" << args.at(i);
+        }
+    }
+    return 0;
+}
+```
