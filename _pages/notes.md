@@ -5,7 +5,7 @@ keywords:
     - notes
 tags:
     - notes
-after-before: |
+    |
     <style>
     p#dummy::before {
       content: attr(data-foo) " ";
@@ -18,6 +18,23 @@ after-before: |
 
 Notes | 笔记[^1]
 ===============
+
+[highlight-treeview](http://asciidocfx.github.io/highlight-treeview.js/)
+
+:   -   win: `tree /F /A`
+    -   linux: `tree`
+
+    [asciidocfx/AsciidocFX: Asciidoc Editor and Toolchain written with JavaFX 8 (Build PDF, Epub, Mobi and HTML books, documents and slides)](https://github.com/asciidocfx/AsciidocFX)
+
+```makefile
+FLATS:=$(foreach src, $(SRCMD), $(subst /,., $(src)))
+```
+
+[Pro Git - GitBook](https://www.gitbook.com/book/gitbookio/progit/details){title="pro git!!!"}
+
+[progit/progit: Pro Git Book Content, 1st Edition - See 2nd edition at progit2](https://github.com/progit/progit)
+
+`find -name '*.md'
 
 [强大的CMake - 推酷](http://www.tuicool.com/articles/MVBFZ3)
 

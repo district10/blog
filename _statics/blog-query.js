@@ -619,4 +619,9 @@ var tzx_links = [
         title: "CMake Templates",
         query: ['cmake', 'templates', 'project']
     },
+    {
+        url: '/post-0101-learning-lua.html',
+        title: "Learning Lua",
+        query: ['lua', 'programming']
+    },
 ];

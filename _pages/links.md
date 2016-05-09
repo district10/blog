@@ -262,3 +262,4 @@ Links | 链签
 #. [黄正华的教学信息页面](http://aff.whu.edu.cn/huangzh/)
 #. [黄玄的博客 | Hux Blog](http://huangxuan.me/)
 #. [Hi. I'm William.](http://www.wzchen.com/)
+#. [Bootstrap中文网开源项目免费 CDN 服务](http://www.bootcdn.cn/)
