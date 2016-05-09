@@ -70,6 +70,17 @@ Learning Lua
     linux: `cat love.exe SuperGame.love > SuperGame.exe`{.bash}
     ```
 
+- [TannerRogalsky/love.js: LÖVE ported to the web using Emscripten](https://github.com/TannerRogalsky/love.js)
+- [TannerRogalsky / love / source / — Bitbucket](https://bitbucket.org/TannerRogalsky/love/src)
+- [Download - ZeroBrane Studio - Lua IDE/editor/debugger for Windows, Mac OSX, and Linux](https://studio.zerobrane.com/download?not-this-time)
+- [LewisJEllis/awesome-lua: A curated list of quality Lua packages and resources.](https://github.com/LewisJEllis/awesome-lua)
+- [Step By Step(C调用Lua) - Stephen_Liu - 博客园](http://www.cnblogs.com/stephen-liu74/archive/2012/07/20/2460634.html)
+- [云风的 BLOG: 为 Lua 绑定 C/C++ 对象](http://blog.codingnow.com/2013/01/binding_c_object_for_lua.html)
+- [4ker/lua-pong: Very simple example of a game engine written in C and game logic written in Lua.](https://github.com/4ker/lua-pong)
+- [lua-pong/engine.c at master · 4ker/lua-pong](https://github.com/4ker/lua-pong/blob/master/engine.c)
+- [lua-pong/pong.lua at master · 4ker/lua-pong](https://github.com/4ker/lua-pong/blob/master/pong.lua)
+- [在Ubuntu系统下安装luci的步骤和注意事项 - Merlin-magic - 博客园](http://www.cnblogs.com/tfanalysis/articles/4108188.html)
+
 refs and see also
 
   - [Getting Started - LOVE](https://love2d.org/wiki/Getting_Started)
