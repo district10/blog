@@ -3046,9 +3046,9 @@ Moment-generating function
     Laplace L(μ, b)       \, \frac{e^{t\mu}}{1 - b^2t^2}      \, \frac{e^{it\mu}}{1 + b^2t^2}
     Negative Binomial NB(r, p)    \, \frac{(1-p)^r}{(1-pe^t)^r}       \, \frac{(1-p)^r}{(1-pe^{it})^r}
     Cauchy Cauchy(μ, θ)     does not exist    \, e^{it\mu -\theta|t|}
+    ------------        ------------------------------- ----------------------------
 
 Characteristic function (probability theory)
-
 
 :   In probability theory and statistics, the characteristic function of any
     real-valued random variable completely defines its probability
@@ -3101,6 +3101,117 @@ Characteristic function (probability theory)
     refs and see also
 
       - [如何理解统计中的特征函数？ - 数学 - 知乎](http://www.zhihu.com/question/23686709)
+
+[Jacobian matrix and determinant - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Jacobian_matrix)
+
+:   In vector calculus, the Jacobian matrix (`/dʒᵻˈkoʊbiən/`, `/jᵻˈkoʊbiən/`) is
+    the matrix of all first-order partial derivatives of a vector-valued
+    function. When the matrix is a square matrix, both the matrix and its
+    determinant are referred to as the Jacobian in literature.
+
+    Suppose f : ℝn → ℝm is a function which takes as input the vector x ∈ ℝn
+    and produces as output the vector f(x) ∈ ℝm. Then the Jacobian matrix J of
+    f is an m×n matrix, usually defined and arranged as follows:
+
+    $$
+    \mathbf J = \frac{d\mathbf f}{d\mathbf x} = \begin{bmatrix} \dfrac{\partial
+    \mathbf{f}}{\partial x_1} & \cdots & \dfrac{\partial \mathbf{f}}{\partial
+    x_n} \end{bmatrix} = \begin{bmatrix} \dfrac{\partial f_1}{\partial x_1} &
+    \cdots & \dfrac{\partial f_1}{\partial x_n}\\ \vdots & \ddots & \vdots\\
+    \dfrac{\partial f_m}{\partial x_1} & \cdots & \dfrac{\partial f_m}{\partial
+    x_n} \end{bmatrix}
+    $$
+
+    or, component-wise:
+
+    $$\mathbf J^{j}_{i} = \frac{\partial f_i}{\partial x_j} .$$
+
+    This matrix, whose entries are functions of x, is also denoted by Df, Jf,
+    and ∂(f1,...,fm)/∂(x1,...,xn). (Note that some literature defines the
+    Jacobian as the transpose of the matrix given above.)
+
+    Consider the function f : ℝ2 → ℝ2 given by
+
+    $$\mathbf f(x, y) = \begin{bmatrix} x^2 y \\ 5 x + \sin y \end{bmatrix}.$$
+
+    Then we have
+
+      - $f_1(x, y) = x^2 y$
+      - $f_2(x, y) = 5 x + \sin y$
+
+    and the Jacobian matrix of F is
+
+    $$
+    \mathbf J_{\mathbf f}(x, y) = \begin{bmatrix} \dfrac{\partial f_1}{\partial
+    x} & \dfrac{\partial f_1}{\partial y}\\[1em] \dfrac{\partial f_2}{\partial
+    x} & \dfrac{\partial f_2}{\partial y} \end{bmatrix} = \begin{bmatrix} 2 x y
+    & x^2 \\ 5 & \cos y \end{bmatrix}
+    $$
+
+    and the Jacobian determinant is
+
+    $$\det(\mathbf J_{\mathbf f}(x, y)) = 2 x y \cos y - 5 x^2 .$$
+
+    ![A nonlinear map f : R2 → R2 sends a small square to a distorted
+        parallelepiped close to the image of the square under the best linear
+        approximation of f near the point.](https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Jacobian_determinant_and_distortion.svg/600px-Jacobian_determinant_and_distortion.svg.png)
+     If the Jacobian determinant at p is positive, then f preserves orientation
+     near p; if it is negative, f reverses orientation. The absolute value of
+     the Jacobian determinant at p gives us the factor by which the function f
+     expands or shrinks volumes near p; this is why it occurs in the general
+     substitution rule.
+
+     integral substitution: $\int_{\varphi(a)}^{\varphi(b)} f(x)\,dx = \int_a^b
+     f(\varphi(t))\varphi'(t)\, dt.$ ^[[Integration by substitution -
+     Wikipedia, the free
+     encyclopedia](https://en.wikipedia.org/wiki/Integration_by_substitution)]
+
+[Hessian matrix - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hessian_matrix)
+
+:   In mathematics, the Hessian matrix or Hessian is a square matrix of
+    second-order partial derivatives of a scalar-valued function, or scalar
+    field. It describes the local curvature of a function of many variables.
+    The Hessian matrix was developed in the 19th century by the German
+    mathematician Ludwig Otto Hesse and later named after him. Hesse originally
+    used the term "functional determinants".
+
+    Specifically, suppose f : ℝn → ℝ is a function taking as input a vector x ∈
+    ℝn and outputting a scalar f(x) ∈ ℝ; if all second partial derivatives of f
+    exist and are continuous over the domain of the function, then the Hessian
+    matrix H of f is a square n×n matrix, usually defined and arranged as
+    follows:
+
+    $$
+    \bold H = \begin{bmatrix} \dfrac{\partial^2 f}{\partial x_1^2} &
+    \dfrac{\partial^2 f}{\partial x_1\,\partial x_2} & \cdots &
+    \dfrac{\partial^2 f}{\partial x_1\,\partial x_n} \\[2.2ex]
+    \dfrac{\partial^2 f}{\partial x_2\,\partial x_1} & \dfrac{\partial^2
+    f}{\partial x_2^2} & \cdots & \dfrac{\partial^2 f}{\partial x_2\,\partial
+    x_n} \\[2.2ex] \vdots & \vdots & \ddots & \vdots \\[2.2ex]
+    \dfrac{\partial^2 f}{\partial x_n\,\partial x_1} & \dfrac{\partial^2
+    f}{\partial x_n\,\partial x_2} & \cdots & \dfrac{\partial^2 f}{\partial
+    x_n^2} \end{bmatrix}.
+    $$
+
+    or, component-wise:
+
+    $$\bold H_{i,j} = \frac{\partial^2 f}{\partial x_i \partial x_j}.$$
+
+    The determinant of the above matrix is also sometimes referred to as the
+    Hessian.
+
+    The Hessian matrix can be considered related to the Jacobian matrix by
+    $H(f)(x) = J(∇f)(x)$.
+
+    The mixed derivatives of f are the entries off the main diagonal in the
+    Hessian. Assuming that they are continuous, the order of differentiation
+    does not matter (Clairaut's theorem). For example,
+
+    $$
+    \frac {\partial}{\partial x_i} \left(\frac {\partial f }{\partial x_j}
+    \right) = \frac {\partial}{\partial x_j} \left(\frac {\partial f }{\partial
+    x_i} \right).
+    $$
 
 refs and see also
 

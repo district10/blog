@@ -10,7 +10,7 @@ tags:
 Machine Learning
 ================
 
-<!--
+<div class="tzx-hide">
 <i class="icon-book"></i>
 <i class="icon-cloud-download"></i>
 <i class="icon-exclamation-sign"></i>
@@ -26,13 +26,14 @@ Machine Learning
 <i class="icon-tags"></i>
 <i class="icon-thumbs-down"></i>
 <i class="icon-thumbs-up"></i>
--->
+</div>
 
 MISC Notes
 
   - contrived example, 造的例子
   - logistic, `[lo'dʒɪstɪk]`, adj. 后勤学的；符号逻辑的
   - hessian, `['hɛʃən]`
+  - theano, thy ya noo
 
 ```
 ml
@@ -756,24 +757,27 @@ Sammary
     evaluate mathematical expressions involving multi-dimensional arrays
     efficiently. Theano features:
 
-      - tight integration with NumPy – Use numpy.ndarray in Theano-compiled functions.
-      - transparent use of a GPU – Perform data-intensive calculations up to 140x faster than with CPU.(float32 only)
-      - efficient symbolic differentiation – Theano does your derivatives for function with one or many inputs.
+      - **tight integration with NumPy** – Use numpy.ndarray in Theano-compiled functions.
+      - **transparent use of a GPU** – Perform data-intensive calculations up to 140x faster than with CPU.(float32 only)
+      - **efficient symbolic differentiation** – Theano does your derivatives for function with one or many inputs.
       - speed and stability optimizations – Get the right answer for log(1+x) even when x is really tiny.
-      - dynamic C code generation – Evaluate expressions faster.
+      - **dynamic C code generation** – Evaluate expressions faster.
       - extensive unit-testing and self-verification – Detect and diagnose many types of errors.
 
     Theano has been powering large-scale computationally intensive scientific
-    investigations since 2007. But it is also approachable enough to be used in
+    investigations **since 2007**. But it is also approachable enough to be used in
     the classroom (University of Montreal’s deep learning/machine learning
     classes).
 
     -   You should learn some python. ^[[Tutorial — Theano 0.8.0 documentation](http://deeplearning.net/software/theano/tutorial/).]
 
-    -   Matrix conventions for machine learning ^[see [NumPy refresher — Theano 0.8.0 documentation](http://deeplearning.net/software/theano/tutorial/numpy.html#broadcasting).]
+    -   Matrix **conventions** for machine learning ^[see [NumPy refresher — Theano 0.8.0 documentation](http://deeplearning.net/software/theano/tutorial/numpy.html#broadcasting).]
 
         +   Every row is an example.
-        +   ```python
+
+        +   numpy, `numpyarray.shape()`, `arr[ r, c ]`
+
+            ```python
             >>> numpy.asarray([[1., 2], [3, 4], [5, 6]])
             array([[ 1.,  2.],
                    [ 3.,  4.],
@@ -785,7 +789,8 @@ Sammary
             >>> numpy.asarray([[1., 2], [3, 4], [5, 6]])[2, 0]
             5.0
             ```
-        +   broadcasting
+
+        +   broadcasting (cast as in `static_cast`, `const_cast`)
 
             ```python
             >>> a = numpy.asarray([1.0, 2.0, 3.0])
@@ -794,7 +799,7 @@ Sammary
             array([ 2.,  4.,  6.])
             ```
 
-            see more at [numpy user guide](http://docs.scipy.org/doc/numpy/user/basics.broadcasting.html).
+            see more at [numpy user guide: basics broadcasting](http://docs.scipy.org/doc/numpy/user/basics.broadcasting.html).
 
     -   Basics
 
@@ -811,10 +816,11 @@ Sammary
                 >>> y = T.dscalar('y')
 
                     #    about type
-                    #    In Theano, all symbols must be typed.
-                    #        d: double
-                    #        dscalar: 0-dimensional arrays (scalar) of doubles (d)
-
+                    #    In Theano, all symbols must be **typed**
+                    #
+                    #        d         :   double
+                    #        dscalar   :   0-dim arrays (scalar) of doubles (d)
+                    #
                     >>> type(x)
                     <class 'theano.tensor.var.TensorVariable'>
                     >>> x.type
@@ -826,18 +832,18 @@ Sammary
 
                 >>> z = x + y
 
-                    >>> from theano import pp
+                    >>> from theano import pp # pretty print
                     >>> print(pp(z))
                     (x + y)
 
                         # powerful python `eval`
-                        >>> z.eval({x : 16.3, y : 12.1})
+                        >>> z.eval({x : 16.3, y : 12.1}) # value assignment
 
                 >>> f = function([x, y], z)
 
                     # f: function(input, output)
 
-                >>> f(2, 3)
+                >>> f(2, 3)         # f([2,3]), [2,3] as the input
                 array(5.0)
                 >>> numpy.allclose(f(16.3, 12.1), 28.4)
                 True
@@ -880,9 +886,9 @@ Sammary
 
                 ```python
                 >>> import theano
-                >>> a = theano.tensor.vector() # declare variable
-                >>> out = a + a ** 10               # build symbolic expression
-                >>> f = theano.function([a], out)   # compile function
+                >>> a = theano.tensor.vector()          # declare variable
+                >>> out = a + a ** 10                   # build symbolic expression
+                >>> f = theano.function([a], out)       # compile function
                 >>> print(f([0, 1, 2]))
                 [    0.     2.  1026.]
                 ```
@@ -893,12 +899,13 @@ Sammary
                 ```python
                 from __future__ import absolute_import, print_function, division
                 import theano
-                a = theano.tensor.vector()  # declare variable
+                a = theano.tensor.vector()              # declare variable
                 b = theano.tensor.vector()  # declare variable
-                out = a ** 2 + b ** 2 + 2 * a * b  # build symbolic expression
-                f = theano.function([a, b], out)   # compile function
-                print(f([1, 2], [4, 5]))  # prints [ 25.  49.]
+                out = a ** 2 + b ** 2 + 2 * a * b       # build symbolic expression
+                f = theano.function([a, b], out)        # compile function
+                print(f([1, 2], [4, 5]))                # prints [ 25.  49.]
                 ```
+
         +   refs and see also
 
             *    [Basic Tensor Functionality — Theano 0.8.0 documentation](http://deeplearning.net/software/theano/library/tensor/basic.html#libdoc-basic-tensor)
@@ -1047,6 +1054,43 @@ Sammary
 
             *   A Real Example: Logistic Regression
 
+                -   `numpy.random.randint(low, high=None, size=None)`, descrete uniform distrib, `[low, high)`
+
+                    ```python
+                    >>> np.random.randint(2, size=10)
+                    array([1, 0, 0, 0, 1, 1, 0, 0, 1, 0])
+                    >>> np.random.randint(1, size=10)
+                    array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+
+                    >>> np.random.randint(5, size=(2, 4))
+                    array([[4, 0, 2, 1],
+                           [3, 2, 2, 0]])
+                    ```
+
+                    当没 high 的时候，其实 low 是 high，0 是 low……这 api 也太恶心了。
+
+                    其实可以写成两个 api:
+
+                      - numpy.random.randint(high, size=None), `[0, high)`
+                      - numpy.random.randint(low, high, size=None), `[low, high)`
+
+                    可能因为这个接口太恶心……下面的代码用的是 `low=..., high=...`.
+
+                -   `numpy.random.randn(d0, d1, ..., dn)`, normal distrib, dims: d0, d1, ..., dn
+
+
+                    ```python
+                    >>> np.random.randn()
+                    2.1923875335537315 #random
+
+                    #  N(3, 6.25=2.5^2) (you can use: sigma * np.random.randn(...) + mu)
+                    >>> 2.5 * np.random.randn(2, 4) + 3
+                    array([[-4.49401501,  4.00950034, -1.81814867,  7.29718677],  #random
+                           [ 0.39924804,  4.68456316,  4.99394529,  4.84057254]]) #random
+                    ```
+
+                -   `numpy.random.rand(d0, d1, ..., dn)`, uniform distribubition, `[0, 1)`
+
                 ```python
                 import numpy
                 import theano
@@ -1057,7 +1101,12 @@ Sammary
                 feats = 784                               # number of input variables
 
                 # generate a dataset: D = (input_values, target_class)
+                #
+                #   input:             [N, feats] of N(0, 1),
+                #   output:            [0, 2) -> 0/1 (binary)
+                #
                 D = (rng.randn(N, feats), rng.randint(size=N, low=0, high=2))
+
                 training_steps = 10000
 
                 # Declare Theano symbolic variables
@@ -1066,9 +1115,9 @@ Sammary
 
                 # initialize the weight vector w randomly
                 #
-                # this and the following bias variable b
-                # are shared so they keep their values
-                # between training iterations (updates)
+                #   this and the following bias variable b are shared so they
+                #   keep their values between training iterations (updates)
+                #
                 w = theano.shared(rng.randn(feats), name="w")
 
                 # initialize the bias term
@@ -1089,16 +1138,22 @@ Sammary
                                                           # (we shall return to this in a
                                                           # following section of this tutorial)
 
-                # Compile
+                #                                                    「train 函数」
                 train = theano.function(
+                          # Compile, 这部分很有意思，直接用了 input，output 和 updates
                           inputs=[x,y],
-                          outputs=[prediction, xent],
+                          outputs=[prediction, xent],     # 两个定义好的 descrimination func
+                          # pairwise update, ((old1, new1), (old2, new2), ...)
                           updates=((w, w - 0.1 * gw), (b, b - 0.1 * gb)))
+
+                # TODO1
+
+                #                                                    「predict 函数」
                 predict = theano.function(inputs=[x], outputs=prediction)
 
                 # Train
-                for i in range(training_steps):
-                    pred, err = train(D[0], D[1])
+                for i in range(training_steps):     # loop 10000 times
+                    pred, err = train(D[0], D[1])   # 数据集，样本: D[0], label: D[1]
 
                 print("Final model:")
                 print(w.get_value())
@@ -1108,6 +1163,14 @@ Sammary
                 print("prediction on D:")
                 print(predict(D[0]))
                 ```
+
+                `updates` (iterable over pairs (shared_variable,
+                new_expression). List, tuple or dict.) – expressions for new
+                SharedVariable values
+
+                refs and see also
+
+                  - [function - defines theano.function — Theano 0.8.0 documentation](http://deeplearning.net/software/theano/library/compile/function.html#function.function)
 
         +   Derivatives in Theano ^[[Derivatives in Theano — Theano 0.8.0 documentation](http://deeplearning.net/software/theano/tutorial/gradients.html).]
 
@@ -1121,6 +1184,7 @@ Sammary
                 >>> x = T.dscalar('x')
                 >>> y = x ** 2
                 >>> gy = T.grad(y, x)
+                # TODO? 看不懂这个 output
                 >>> pp(gy)  # print out the gradient prior to optimization
                 '((fill((x ** TensorConstant{2}), TensorConstant{1.0}) * TensorConstant{2}) * (x ** (TensorConstant{2} - TensorConstant{1})))'
                 >>> f = theano.function([x], gy)
@@ -1432,8 +1496,10 @@ Sammary
                 **1**
 
                 ```python
-                #                  convolution 2dim
-                theano.tensor.nnet.conv2d(..., image_shape=(7, 3, 5, 5), filter_shape=(2, 3, 4, 4))
+                #             convolution 2dim
+                theano.tensor.nnet.conv2d( ...,
+                                           image_shape=(7, 3, 5, 5),
+                                           filter_shape=(2, 3, 4, 4) )
                 ```
 
                 `signal.conv.conv2d` performs a basic 2D convolution of the input
@@ -1459,9 +1525,27 @@ Sammary
                 Convolutional Neural Networks (CNN). It is simply a wrapper to
                 the ConvOp but provides a much cleaner interface.
 
-                refs and see also
+                [Convolution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Convolution)
 
-                  - [Convolution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Convolution)
+                :   The convolution of f and g is written f∗g, using an
+                    asterisk or star. It is defined as the integral of the
+                    product of the two functions after one is reversed and
+                    shifted. As such, it is a particular kind of integral
+                    transform:
+
+                    $$
+                    \begin{align}
+                    (f * g )(t)\ \ \, &\stackrel{\mathrm{def}}{=}\ \int_{-\infty}^\infty f(\tau)\, g(t - \tau)\, d\tau \\
+                                      &= \int_{-\infty}^\infty f(t-\tau)\, g(\tau)\, d\tau.
+                    \end{align}
+                    $$
+
+                    While the symbol t is used above, it need not represent the
+                    time domain. But in that context, the convolution formula
+                    can be described as a weighted average of the function f(τ)
+                    at the moment t where the weighting is given by g(−τ)
+                    simply shifted by amount t. As t changes, the weighting
+                    function emphasizes different parts of the input function.
 
                 **2**
 
@@ -1527,6 +1611,11 @@ Sammary
             *   Defining the context map
             *   A simple graph on two GPUs
             *   Explicit transfers of data
+
+refs and see also
+
+  - [Python Memory Management — Theano 0.8.0 documentation](http://deeplearning.net/software/theano/tutorial/python-memory-management.html#python-memory-management)
+  - [LSTM Networks for Sentiment Analysis — DeepLearning 0.1 documentation](http://www.deeplearning.net/tutorial/lstm.html)
 
 printing – Graph Printing and Symbolic Print Statement `@`{.tzx-anchor #theano-graph-printing}
 
@@ -1623,4 +1712,6 @@ printing – Graph Printing and Symbolic Print Statement `@`{.tzx-anchor #theano
 
     refs and see also
 
-      -  [介绍 | TensorFlow 官方文档中文版](http://tensorfly.cn/tfdoc/get_started/introduction.html)
+      - [介绍 | TensorFlow 官方文档中文版](http://tensorfly.cn/tfdoc/get_started/introduction.html)
+      - [MNIST 入门 | TensorFlow 官方文档中文版](http://tensorfly.cn/tfdoc/tutorials/mnist_beginners.html)
+      - [下载及安装 | TensorFlow 官方文档中文版](http://tensorfly.cn/tfdoc/get_started/os_setup.html)

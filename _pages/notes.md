@@ -19,6 +19,27 @@ tags:
 Notes | 笔记[^1]
 ===============
 
+[Anti-lock braking system - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Anti-lock_braking_system)
+
+:   An **anti-lock braking system** or **anti-skid braking system  (ABS)** is an
+    automobile safety system that allows the wheels on a motor vehicle to
+    maintain tractive contact with the road surface according to driver inputs
+    while braking, preventing the wheels from locking up (ceasing rotation) and
+    avoiding uncontrolled skidding. It is an automated system that uses the
+    principles of threshold braking and cadence braking which were practiced by
+    skillful drivers with previous generation braking systems. It does this at
+    a much faster rate and with better control than a driver could manage.
+
+    ABS generally offers improved vehicle control and decreases stopping
+    distances on dry and slippery surfaces; however, on loose gravel or
+    snow-covered surfaces, ABS can significantly increase braking distance,
+    although still improving vehicle control.
+
+    ABS was first developed for aircraft use in 1929 by the French automobile
+    and aircraft pioneer Gabriel Voisin, as threshold braking on airplanes.
+
+    ![](https://upload.wikimedia.org/wikipedia/commons/6/68/Anti-lock_braking_system_logo.png)
+
 [智能单元 - 知乎专栏](https://zhuanlan.zhihu.com/intelligentunit)
 
 [grab all descendents · district10/CuteWatchDog@c496e03](https://github.com/district10/CuteWatchDog/commit/c496e03bfaebea37d9b16a99df9ac15922a91676#diff-34ab4d129103a08bf0033d323034e0c9R78)
