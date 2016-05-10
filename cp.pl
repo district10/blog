@@ -31,6 +31,8 @@ my $level = 0;
 my $codeId = 0;
 my $verb = 0;
 while (<IMD>) {
+    print;
+    next;
     my $line = $_;
 
     # real, verbatim

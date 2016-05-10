@@ -19,6 +19,31 @@ tags:
 Notes | 笔记[^1]
 ===============
 
+[智能单元 - 知乎专栏](https://zhuanlan.zhihu.com/intelligentunit)
+
+[grab all descendents · district10/CuteWatchDog@c496e03](https://github.com/district10/CuteWatchDog/commit/c496e03bfaebea37d9b16a99df9ac15922a91676#diff-34ab4d129103a08bf0033d323034e0c9R78)
+
+:   ```cpp
+    QStringList CuteWatchDog::grabAllDescendents( const QString &root )
+    {
+        QStringList dirEntries;
+        QDir dir( root );
+        QQueue<QDir> queue;
+        queue.enqueue( dir );
+        while( !queue.isEmpty() ) {
+            QDir d = queue.dequeue();
+            dirEntries << d.absolutePath();
+            foreach( const QFileInfo &info, d.entryInfoList( QDir::Dirs | QDir::NoDotAndDotDot ) ) {
+                 QDir subdir( info.absoluteFilePath() );
+                 queue.enqueue( subdir );
+             }
+        }
+        return dirEntries;
+    }
+    ```
+
+Formal request to take over development
+
 [highlight-treeview](http://asciidocfx.github.io/highlight-treeview.js/)
 
 :   -   win: `tree /F /A`
@@ -28,6 +53,11 @@ Notes | 笔记[^1]
 
 ```makefile
 FLATS:=$(foreach src, $(SRCMD), $(subst /,., $(src)))
+
+XMLS=$(glob xml/*.xml)
+
+ALLSAMPLES = $(basename $(wildcard *-sample.md))
+ALLPDF = $(addsuffix .pdf,$(ALLSAMPLES))
 ```
 
 [Pro Git - GitBook](https://www.gitbook.com/book/gitbookio/progit/details){title="pro git!!!"}

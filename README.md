@@ -122,4 +122,7 @@ Customized Markdown
     - checking
         + 首字母是中文标点
         + 但行长度过长
+    - links
+        + [title](#section)
+        + [word](%meaning,`[pronunciation]`,url)
 ```
