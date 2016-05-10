@@ -1,10 +1,11 @@
-PANDOC_OPTIONS = -S -s --ascii \
+EAST_ASIAN_LINE_BREAKS:=`pandoc -f markdown+east_asian_line_breaks 2>/dev/null && echo "+east_asian_line_breaks+emoji" || echo ""`
+PANDOC_OPTIONS:= -S -s --ascii \
 	--toc \
 	-c main.css \
 	-A footer.html \
 	--highlight-style pygments \
 	--template template.html \
-	-f markdown+pandoc_title_block+east_asian_line_breaks+emoji+abbreviations \
+	-f markdown+pandoc_title_block$(EAST_ASIAN_LINE_BREAKS)+abbreviations \
 	metadata.yaml \
 
 MD   = $(wildcard *.md)
