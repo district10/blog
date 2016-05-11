@@ -624,4 +624,14 @@ var tzx_links = [
         title: "Learning Lua",
         query: ['lua', 'programming']
     },
+    {
+        url: '/post-0102-panbook.html',
+        title: "PanBook",
+        query: ['panbook']
+    },
+    {
+        url: '/post-0103-learning-java.html',
+        title: "Learning Java",
+        query: ['java', 'programming']
+    },
 ];

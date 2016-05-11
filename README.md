@@ -72,6 +72,7 @@ Perl 脚本还在用，但计划以后用 Pandoc 的 filter。
   - For Windows
       + add gvim path to `%PATH%`
       + set `%EDITOR%` to `gvim`, like [Configure EDITOR](http://gnat.qiniudn.com/dvorak4tzx/editor.jpg)
+      + in your `.bashrc` or `.zshrc`: `export EDITOR="gvim -u ~/git/blog/vimrc.vim"`, be sure to use **export**
       + echo "source /path/to/_vimrc/file > ~/.vimrc", `%HOME%` on win: `/c/Users/Administrator`
   - For Linux
       - set `$EDITOR` to `gvim` (`vim file.txt &` 会出错，而我 Makefile 里都是

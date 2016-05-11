@@ -1715,3 +1715,46 @@ printing – Graph Printing and Symbolic Print Statement `@`{.tzx-anchor #theano
       - [介绍 | TensorFlow 官方文档中文版](http://tensorfly.cn/tfdoc/get_started/introduction.html)
       - [MNIST 入门 | TensorFlow 官方文档中文版](http://tensorfly.cn/tfdoc/tutorials/mnist_beginners.html)
       - [下载及安装 | TensorFlow 官方文档中文版](http://tensorfly.cn/tfdoc/get_started/os_setup.html)
+
+[A Neural Network Playground](http://playground.tensorflow.org/#activation=sigmoid&batchSize=14&dataset=xor&regDataset=reg-plane&learningRate=0.3&regularizationRate=0&noise=5&networkShape=3,8,8,8,4,2&seed=0.40288&showTestData=true&discretize=false&percTrainData=70&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&discretize_hide=false)
+
+[Neural networks and deep learning](http://neuralnetworksanddeeplearning.com/index.html)
+
+AND, OR, and NAND.^[[NAND gate - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/NAND_gate).]
+
+NAND gate (negative-AND). The function NAND(a1, a2, ..., an) is logically equivalent to NOT(a1 AND a2 AND ... AND an).
+
+-- ---  --------
+A   B   A NAND B
+-- ---  --------
+0   0       1
+0   1       1
+1   0       1
+1   1       0
+-- ---  --------
+
+a NAND example
+
+![](http://neuralnetworksanddeeplearning.com/images/tikz2.png)
+
+-   input `00` -> `(−2)∗0+(−2)∗0+3= 3` -> output: 3
+-   input `11` -> `(−2)∗1+(−2)∗1+3=-1` ->  output: -1
+
+sigmoid: This shape is a smoothed out version of a step function.
+
+output would be 1 or 0 depending on whether w⋅x+b was positive or negative
+
+28 by 28 pixel images of scanned handwritten digits, and so the input layer contains 784=28×28
+
+![](http://neuralnetworksanddeeplearning.com/images/tikz12.png)
+
+Supposing the neural network functions in this way, we can give a plausible
+explanation for why it's better to have 10 outputs from the network, rather
+than 4. If we had 4 outputs, then the first output neuron would be trying
+to decide what the most significant bit of the digit was. And there's no
+easy way to relate that most significant bit to simple shapes like those
+shown above. It's hard to imagine that there's any good historical reason
+the component shapes of the digit will be closely related to (say) the most
+significant bit in the output.
+
+

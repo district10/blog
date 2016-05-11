@@ -172,6 +172,8 @@ set expandtab ts=4 sw=4 ai
 %retab
 ```
 
+pretty good: [blog/vimrc.vim at master · district10/blog](https://github.com/district10/blog/blob/master/vimrc.vim).
+
 强大的
 
 - [amix/vimrc](https://github.com/amix/vimrc)
@@ -186,7 +188,7 @@ set expandtab ts=4 sw=4 ai
 因爲硬件的問題，Debian 一直沒裝上，用了 Xubuntu，驚現原來原裝的 GCC4.8 已經可以
 用 `-std=c++11`{.bash}……
 
-Compile GCC：<http://gcc.gnu.org/wiki/InstallingGCC>
+Compile GCC: <http://gcc.gnu.org/wiki/InstallingGCC>
 
 ```bash
 ./configure
@@ -445,7 +447,47 @@ sudo vim /usr/local/etc/wemux.conf # host_list=(root gnat)，改成自己的 ID
 
 ![](http://gnat-tang-shared-image.qiniudn.com/file_colored_zsh.png)
 
+## Java8
+
+-   Java7 or less: `sudo apt-cache search openjdk`
+
+-   java8
+
+    install:
+
+    ```bash
+    sudo add-apt-repository ppa:webupd8team/java
+    sudo apt-get update
+    sudo apt-get install oracle-java8-installer
+    ```
+
+    run:
+
+    ```bash
+    $ java -version
+    java version "1.8.0_91"
+    Java(TM) SE Runtime Environment (build 1.8.0_91-b14)
+    Java HotSpot(TM) 64-Bit Server VM (build 25.91-b14, mixed mode)
+    $ javac -version
+    javac 1.8.0_91
+    ```
+
+refs and see also
+
+  - [Java - Community Help Wiki](https://help.ubuntu.com/community/Java)
+  - [Java SE Development Kit 8 - Downloads](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+  - [Install an RPM Package on Ubuntu Linux](http://www.howtogeek.com/howto/ubuntu/install-an-rpm-package-on-ubuntu-linux/)
+  - [How to Install JAVA 8 (JDK 8u91) on Ubuntu & LinuxMint via PPA](http://tecadmin.net/install-oracle-java-8-jdk-8-ubuntu-via-ppa/)
+
 ---
+
+install rpm package
+
+:   ```bash
+    sudo apt-get install alien dpkg-dev debhelper build-essential
+    sudo alien packagename.rpm
+    sudo dpkg -i packagename.deb
+    ```
 
 Refs
 

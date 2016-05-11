@@ -119,50 +119,50 @@ EDITS = \
 	$(DIR_PAGES)/koans.md \
 
 it:
-	$(EDITOR) -p $(EDITS) &
+	$(EDITOR) -p $(EDITS) 2>/dev/null &
 i: index
 index:
-	$(EDITOR) index.md &
+	$(EDITOR) index.md 2>/dev/null &
 koan: time
 koan:
-	$(EDITOR) $(DIR_PAGES)/koans.md &
+	$(EDITOR) $(DIR_PAGES)/koans.md 2>/dev/null &
 k:
-	$(EDITOR) $(DIR_PAGES)/koans.md &
+	$(EDITOR) $(DIR_PAGES)/koans.md 2>/dev/null &
 n: note
 note:
-	$(EDITOR) $(DIR_PAGES)/notes.md &
+	$(EDITOR) $(DIR_PAGES)/notes.md 2>/dev/null &
 a: about
 about:
-	$(EDITOR) $(DIR_PAGES)/about.md &
+	$(EDITOR) $(DIR_PAGES)/about.md 2>/dev/null &
 bq: blogquery
 blogquery:
-	$(EDITOR) $(DIR_STATICS)/blog-query.js &
+	$(EDITOR) $(DIR_STATICS)/blog-query.js 2>/dev/null &
 c: css
 css:
-	$(EDITOR) $(DIR_STATICS)/main.css &
+	$(EDITOR) $(DIR_STATICS)/main.css 2>/dev/null &
 j: js
 js:
-	$(EDITOR) $(DIR_STATICS)/main.js &
+	$(EDITOR) $(DIR_STATICS)/main.js 2>/dev/null &
 pm: poem
 poem:
-	$(EDITOR) $(DIR_PAGES)/poems.md &
+	$(EDITOR) $(DIR_PAGES)/poems.md 2>/dev/null &
 xm: xiami
 xiami:
-	$(EDITOR) $(DIR_PAGES)/xiami.md &
+	$(EDITOR) $(DIR_PAGES)/xiami.md 2>/dev/null &
 q: quote
 quote:
-	$(EDITOR) $(DIR_PAGES)/quotes.md &
+	$(EDITOR) $(DIR_PAGES)/quotes.md 2>/dev/null &
 l: link
 link:
-	$(EDITOR) $(DIR_PAGES)/links.md &
+	$(EDITOR) $(DIR_PAGES)/links.md 2>/dev/null &
 day:
-	$(EDITOR) $(DIR_PAGES)/days.md &
+	$(EDITOR) $(DIR_PAGES)/days.md 2>/dev/null &
 d: dent
 dent:
-	$(EDITOR) $(DIR_PAGES)/dents.md &
+	$(EDITOR) $(DIR_PAGES)/dents.md 2>/dev/null &
 db: douban
 douban:
-	$(EDITOR) $(DIR_PAGES)/douban.md &
+	$(EDITOR) $(DIR_PAGES)/douban.md 2>/dev/null &
 fun:
 	$(MAKE) -C $(PAGES) fun
 s: song
@@ -177,4 +177,4 @@ time:
 
 m: make
 make:
-	$(EDITOR) Makefile &
+	$(EDITOR) Makefile 2>/dev/null &

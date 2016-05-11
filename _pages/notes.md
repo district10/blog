@@ -19,6 +19,54 @@ tags:
 Notes | 笔记[^1]
 ===============
 
+[Parsing expression grammar - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Parsing_expression_grammar)
+
+```bash
+➜  build git:(master) pwd
+/home/tzx/git/cmake-templates/qt4-project/build
+➜  build git:(master) ls
+➜  build git:(master) qmake -project ..
+➜  build git:(master) ls
+build.pro
+➜  build git:(master) qmake
+➜  build git:(master) ls
+build.pro  Makefile
+➜  build git:(master)
+
+/usr/share/qt4/bin/qmake -project
+➜  shit git:(master) /usr/share/qt4/bin/qmake
+
+sudo apt-get install libstdc++6-4.8-dbg
+
+➜  build git:(master) locate qmake
+/usr/bin/qmake
+/usr/bin/qmake-qt4
+/usr/lib/x86_64-linux-gnu/qt4/bin/qmake
+/usr/share/doc/qt4-qmake
+/usr/share/doc/qt4-qmake/LGPL_EXCEPTION.txt
+/usr/share/doc/qt4-qmake/changelog.Debian.gz
+/usr/share/doc/qt4-qmake/copyright
+/usr/share/man/man1/qmake-qt4.1.gz
+/usr/share/perl5/Debian/Debhelper/Buildsystem/qmake.pm
+/usr/share/perl5/Debian/Debhelper/Buildsystem/qmake_qt4.pm
+/usr/share/qt4/bin/qmake
+/usr/share/qt4/mkspecs/aix-g++/qmake.conf
+/usr/share/qt4/mkspecs/aix-g++-64/qmake.conf
+/usr/share/qt4/mkspecs/aix-xlc/qmake.conf
+/usr/share/qt4/mkspecs/aix-xlc-64/qmake.conf
+/usr/share/qt4/mkspecs/blackberry-armv7le-qcc/qmake.conf
+```
+
+[Modern CMake with Qt and Boost - 推酷](http://www.tuicool.com/articles/bMRJVb)
+
+[ant - Why is no one using make for Java? - Stack Overflow](http://stackoverflow.com/questions/2209827/why-is-no-one-using-make-for-java)
+
+[Restore previous session - Configure when Firefox shows your most recent tabs and windows | Firefox Help](https://support.mozilla.org/en-US/kb/restore-previous-session)
+
+:   history -> restore previous session
+
+    ![restore previsous session](https://support.cdn.mozilla.net/media/uploads/gallery/images/2014-03-21-07-23-00-df468d.png)
+
 bash: search commands, `c-r`, `c-s`
 
 你不可能获得一个客观的评判的。因为真正『同时』精通 emacs / vi 两者的人极少，这
