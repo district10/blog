@@ -19,6 +19,12 @@ tags:
 Notes | 笔记[^1]
 ===============
 
+bash: search commands, `c-r`, `c-s`
+
+你不可能获得一个客观的评判的。因为真正『同时』精通 emacs / vi 两者的人极少，这
+极少的人恰好大都是 唐望所说的得证大道、超级大牛、云淡风轻型的人，根本就不会参合
+这样的争论。
+
 [Anti-lock braking system - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Anti-lock_braking_system)
 
 :   An **anti-lock braking system** or **anti-skid braking system  (ABS)** is an

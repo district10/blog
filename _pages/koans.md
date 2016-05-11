@@ -13,6 +13,10 @@ before-after:
 Koans | 呓语[^why-koan]
 =======================
 
+## `1462937814`{.tzx-timestamp} 我终于有 contributions 不是提交 issue 了……
+
+[可以在 Windows&Linux 上运行 by district10 · Pull Request #1 · yhlleo/FindFilesWithinFolder](https://github.com/yhlleo/FindFilesWithinFolder/pull/1#event-656632881)。
+
 ## `1462353914`{.tzx-timestamp} Adobe Flash Player
 
 安装要联网，很糟糕，因为我网速拙计。
