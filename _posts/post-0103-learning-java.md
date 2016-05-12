@@ -1,6 +1,5 @@
 ---
 title: Learning Java
-author: John MacFarlane
 date: 2016-05-11
 keywords:
     - java
@@ -43,7 +42,9 @@ java -cp path/to/deps main
 java -classpath path/to/deps main
 ```
 
+maven, ant, or Bazel?
 
+[Getting Started - Bazel](http://bazel.io/docs/getting-started.html)
 
 refs and see also
 

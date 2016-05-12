@@ -35,6 +35,19 @@ MISC Notes
   - hessian, `['hɛʃən]`
   - theano, thy ya noo
 
+python notes
+
+:   -   cp src dst, mv src dst^[[10.10. shutil — High-level file operations — Python 2.7.11 documentation](https://docs.python.org/2/library/shutil.html)]
+
+        ```python
+        # shutil: shell util
+        import shutil # from shutil import copyfile copy, copyfile
+
+        shutil.copyfile(src, dst)      # dst can only be a file
+        shutil.copy(src, dst)          # dst can be a dir
+        shutil.move(src, dst)          # recursive
+        ```
+
 ```
 ml
 ├── DeepLearning
@@ -1718,6 +1731,8 @@ printing – Graph Printing and Symbolic Print Statement `@`{.tzx-anchor #theano
 
 [A Neural Network Playground](http://playground.tensorflow.org/#activation=sigmoid&batchSize=14&dataset=xor&regDataset=reg-plane&learningRate=0.3&regularizationRate=0&noise=5&networkShape=3,8,8,8,4,2&seed=0.40288&showTestData=true&discretize=false&percTrainData=70&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&discretize_hide=false)
 
+torch -> tensorflow
+
 [Neural networks and deep learning](http://neuralnetworksanddeeplearning.com/index.html)
 
 AND, OR, and NAND.^[[NAND gate - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/NAND_gate).]
@@ -1757,4 +1772,27 @@ shown above. It's hard to imagine that there's any good historical reason
 the component shapes of the digit will be closely related to (say) the most
 significant bit in the output.
 
+[Download and Setup](https://www.tensorflow.org/versions/r0.8/get_started/os_setup.html#pip-installation)
+
+:   ```bash
+    sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.8.0-cp27-none-linux_x86_64.whl
+    python -c 'import os; import inspect; import tensorflow; print(os.path.dirname(inspect.getfile(tensorflow)))'
+    /usr/local/lib/python2.7/dist-packages/tensorflow
+    ```
+
+    ```bash
+    # Using 'python -m' to find the program in the python search path:
+    $ python -m tensorflow.models.image.mnist.convolutional
+    Extracting data/train-images-idx3-ubyte.gz
+    Extracting data/train-labels-idx1-ubyte.gz
+    Extracting data/t10k-images-idx3-ubyte.gz
+    Extracting data/t10k-labels-idx1-ubyte.gz
+    ...etc...
+
+    # You can alternatively pass the path to the model program file to the python
+    # interpreter (make sure to use the python distribution you installed
+    # TensorFlow to, for example, .../python3.X/... for Python 3).
+    $ python /usr/local/lib/python2.7/dist-packages/tensorflow/models/image/mnist/convolutional.py
+    ...
+    ```
 

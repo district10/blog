@@ -19,6 +19,152 @@ tags:
 Notes | 笔记[^1]
 ===============
 
+[新手如何在gdb中存活 - Jack47 - 博客园](http://www.cnblogs.com/Jack47/p/survive-in-gdb.html)
+
+:   `man 7 signal`
+
+```
+Signal     Value     Action   Comment
+──────────────────────────────────────────────────────────────────────
+SIGHUP        1       Term    Hangup detected on controlling terminal
+                              or death of controlling process
+SIGINT        2       Term    Interrupt from keyboard
+SIGQUIT       3       Core    Quit from keyboard
+SIGILL        4       Core    Illegal Instruction
+SIGABRT       6       Core    Abort signal from abort(3)
+SIGFPE        8       Core    Floating point exception
+SIGKILL       9       Term    Kill signal
+SIGSEGV      11       Core    Invalid memory reference
+SIGPIPE      13       Term    Broken pipe: write to pipe with no
+                              readers
+SIGALRM      14       Term    Timer signal from alarm(2)
+SIGTERM      15       Term    Termination signal
+SIGUSR1   30,10,16    Term    User-defined signal 1
+SIGUSR2   31,12,17    Term    User-defined signal 2
+SIGCHLD   20,17,18    Ign     Child stopped or terminated
+
+SIGCONT   19,18,25    Cont    Continue if stopped
+SIGSTOP   17,19,23    Stop    Stop process
+SIGTSTP   18,20,24    Stop    Stop typed at terminal
+SIGTTIN   21,21,26    Stop    Terminal input for background process
+SIGTTOU   22,22,27    Stop    Terminal output for background process
+
+The signals SIGKILL and SIGSTOP cannot be caught, blocked, or ignored.
+```
+
+-   `l`, list source
+-   `l 7`, list source at line 7
+-   `l print_str`, list `print_str`
+-   `set listsize 20`, list 20 lines of code each time
+-   `b 9`, break line 9
+-   `r`, run
+-   `p str`, print var `str`'s value
+
+-   debug via dumped file
+
+    ```
+    # setup & run
+    $ ulimit -c unlimited
+    $ ./main
+    [1]    10226 segmentation fault (core dumped)  ./main
+
+    gdb main core   # `core' is the dumped file
+    ```
+
+    ```
+    (gdb) bt        # backtrace
+    #0  0x000000000040055c in print_str (str=0x400657 "hello, world!") at main.c:5
+    #1  0x0000000000400584 in b (b=0x400657 "hello, world!") at main.c:9
+    #2  0x000000000040059f in a (a=0x400657 "hello, world!") at main.c:10
+    #3  0x00000000004005be in main () at main.c:14
+    ```
+
+-   debug running program
+
+    `ps aux ｜grep main`
+
+    [用GDB调试程序（一） - 陈皓专栏　【空谷幽兰，心如皓月】 - 博客频道 - CSDN.NET](http://blog.csdn.net/haoel/article/details/2879)
+
+refs and see also
+
+  - [Unix signal - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Unix_signal)
+
+[C语言中为什么不能用char类型来存储getchar()的返回值 - Jack47 - 博客园](http://www.cnblogs.com/Jack47/archive/2012/12/23/2819111.html)
+
+:   `int getchar ( void );`
+
+    `fgetc()`
+      ~ reads the next character from stream and returns it as an unsigned char cast to an int, or EOF on
+        end of file or error.
+
+    `getc()`
+      ~ is equivalent to `fgetc()` except that it may be implemented as a macro which evaluates stream  more
+        than once.
+
+    `getchar()`
+      ~ is equivalent to `getc(stdin)`.
+
+    `gets()`
+      ~ reads a line from stdin into the buffer pointed to by s until either a terminating newline or EOF,
+        which it replaces with a null byte ('\0').  No check for buffer overrun is performed (see BUGS below).
+
+    `fgets()`
+      ~ reads in at most one less than size characters from  stream  and  stores  them  into  the  buffer
+        pointed  to  by s.  Reading stops after an EOF or a newline.  If a newline is read, it is stored into the
+        buffer.  A terminating null byte ('\0') is stored after the last character in the buffer.
+
+    `ungetc()`
+      ~ pushes c back to stream, cast to unsigned char, where it is available for subsequent read operations.
+        Pushed-back characters will be returned in reverse order; only one pushback is guaranteed.
+
+    ```tzx-bigquote
+    ---------------------------------      ----------------------------------------------
+    |    int到char转化（截断）             |       |             char到int转化（扩展）  |
+    ---------------------------------      ----------------------------------------------
+    | 十进制  |  int        |  char |      |  char |unsigned char=>int| signed char=>int|
+    |---------|-------------|-------|      |-------|------------------|-----------------|
+    |  2      |00 00 00 02  |  02   |      |  02   |  00 00 00 02     |00 00 00 02      |
+    |  1      |00 00 00 01  |  01   |      |  01   |  00 00 00 01     |00 00 00 01      |
+    |  0      |00 00 00 00  |  00   |      |  00   |  00 00 00 00     |00 00 00 00      |
+    | EOF(-1) |FF FF FF FF  |  FF   |      |  FF   |  00 00 00 FF     |FF FF FF FF      |
+    |  -2     |FF FF FF FE  |  FE   |      |  FE   |  00 00 00 FE     |FF FF FF FE      |
+    --------------------------------       ----------------------------------------------
+    ```
+
+    refs and see also
+
+      - [[翻译]禅与文件和文件夹组织的艺术 上 - Jack47 - 博客园](http://www.cnblogs.com/Jack47/archive/2013/01/15/zen-and-the-art-of-file-and-folder-organization-part1.html)
+
+tinger with, 笨手笨脚地做事
+
+[Permanently change keyboard layout on Ubuntu Server 11.10](http://krisreeves.com/things-that-should-be-easy/permanently-change-keyboard-layout-on-ubuntu-server-11-10/)
+
+H: high, 2H
+L: low, 3L
+
+[Remap keyboard on the Linux console - Unix & Linux Stack Exchange](http://unix.stackexchange.com/questions/177024/remap-keyboard-on-the-linux-console)
+
+:   Linux uses two independent keyboard mappings. One for the graphical mode X and one for the console.
+
+    You usually change the first one with setxkbmap (or xmodmap) and the second
+    one with loadkeys. All those tool have a fine manpage.
+
+    For loadkeys you can find the existing keymaps under /usr/share/kbd/keymaps.
+    The description of those files is available in man 5 keymaps.
+
+
+    The  program  loadkeys reads the file or files specified by filename....  Its main purpose is to load the
+    kernel keymap for the console.  You can specify console device by the -C (or --console ) option.
+
+    ```
+    $ locate dvorak
+    /usr/lib/aspell/dvorak.kbd
+    /usr/share/vim/vim74/keymap/dvorak.vim
+    /usr/share/vim/vim74/keymap/russian-dvorak.vim
+    /usr/share/vim/vim74/keymap/ukrainian-dvorak.vim
+    /usr/share/vim/vim74/macros/dvorak
+    ```
+
 [Parsing expression grammar - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Parsing_expression_grammar)
 
 ```bash

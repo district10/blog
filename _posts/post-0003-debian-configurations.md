@@ -152,16 +152,38 @@ emacs -nw --batch -l ~/.emacs.d/init.el -f package-refresh-contents
 
 ### Some useful tools
 
-- [Percol](https://github.com/mooz/percol)
-    + `sudo pip install percol`
-- [Banner](http://www.cyberciti.biz/faq/create-large-colorful-text-banner-on-screen/)
-    + `sudo apt-get install toilet figlet`
-- [neo keyboard layout](https://github.com/district10/neo_keyboard_layout)
+-   [Percol](https://github.com/mooz/percol)
 
-```bash
-git clone https://github.com/district10/neo_keyboard_layout.git
-sudo apt-get install libxtst-dev
-```
+    ```bash
+    git clone https://github.com/mooz/percol.git
+    cd percol
+    sudo python setup.py install
+
+    # or simply: sudo pip install percol
+    ```
+
+-   [Banner](http://www.cyberciti.biz/faq/create-large-colorful-text-banner-on-screen/)
+
+    `sudo apt-get install toilet figlet`
+
+-   [neo keyboard layout](https://github.com/district10/neo_keyboard_layout)
+
+    ```bash
+    sudo apt-get install libxtst-dev
+    git clone https://github.com/district10/neo_keyboard_layout.git
+    # or: git clone git@github.com:district10/neo_keyboard_layout.git
+    cd neo_keyboard_layout
+    (cd xx-alols-xcape/xcape-master && make && sudo make install)
+    cd neo2015
+    ./neo.sh
+    ```
+
+-   [junegunn/fzf: A command-line fuzzy finder written in Go](https://github.com/junegunn/fzf)
+
+    ```bash
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    ~/.fzf/install
+    ```
 
 ### Vim
 
@@ -176,10 +198,12 @@ pretty good: [blog/vimrc.vim at master · district10/blog](https://github.com/di
 
 强大的
 
-- [amix/vimrc](https://github.com/amix/vimrc)
-    + [basic version](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim)
-    + ultimate version
-- [spf13/spf13-vim: The ultimate vim distribution](https://github.com/spf13/spf13-vim)
+-   [amix/vimrc](https://github.com/amix/vimrc)
+
+    +   [basic version](https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim)
+    +   ultimate version
+
+-   [spf13/spf13-vim: The ultimate vim distribution](https://github.com/spf13/spf13-vim)
 
 不要忘了 `vim -u NONE`{.bash}
 
@@ -255,8 +279,12 @@ wget http://sourceforge.net/projects/gphoto/files/gphoto/2.5.2/gphoto2-2.5.2.tar
 
 详细见 [gPhoto2 指南](post-0004-gphoto2.html)。
 
-### NPM
+### NodeJS & NPM
 
+Goto official site: [Node.js](https://nodejs.org/en/),
+then download the zip archive.
+
+<div class="tzx-hide">
 The best: [快速搭建 Node.js 开发环境以及加速 npm](https://cnodejs.org/topic/5338c5db7cbade005b023c98)
 
 ```bash
@@ -264,8 +292,12 @@ The best: [快速搭建 Node.js 开发环境以及加速 npm](https://cnodejs.or
 cd $GIT_DIR
 git clone https://github.com/creationix/nvm.git
 nvm && source nvm.sh
-NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/dist nvm install 0.11.11
+NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/dist nvm install 6.0.0
 npm --registry=https://registry.npm.taobao.org install koa
+```
+
+```bash
+nvm ls-remote
 ```
 
 add to `.bashrc` (or `.zshrc`, etc)
