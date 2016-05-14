@@ -178,6 +178,7 @@ Vertical Tabs 在 Firefox 浏览器里也有，插件下载：
   - [VimFx@akhodakivskiy.github.com.xpi](http://whudoc.qiniudn.com/2016/VimFx@akhodakivskiy.github.com.xpi)
   - [tabkit2@pikachuexe.amateur.hk.xpi](http://whudoc.qiniudn.com/2016/tabkit2@pikachuexe.amateur.hk.xpi)
   - [Copy as Markdown :: Add-ons for Firefox](https://addons.mozilla.org/en-us/firefox/addon/copy-as-markdown/)
+  - [bhollis/jsonview: A Firefox extension that helps you view JSON documents in the browser.](https://github.com/bhollis/jsonview)
 
 ---
 

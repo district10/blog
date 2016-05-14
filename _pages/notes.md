@@ -19,6 +19,39 @@ tags:
 Notes | 笔记[^1]
 ===============
 
+```plain
+➜  git  git clone git@github.com:district10/orgit.git
+Cloning into 'orgit'...
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0664 for '/home/tzx/.ssh/id_rsa' are too open.
+It is recommended that your private key files are NOT accessible by others.
+This private key will be ignored.
+key_load_private_type: bad permissions
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+➜  git  chmod 700 ~/.ssh/id_rsa
+➜  git  git clone git@github.com:district10/orgit.git
+Cloning into 'orgit'...
+remote: Counting objects: 71, done.
+remote: Compressing objects: 100% (58/58), done.
+remote: Total 71 (delta 24), reused 50 (delta 8), pack-reused 0
+Receiving objects: 100% (71/71), 80.91 KiB | 13.00 KiB/s, done.
+Resolving deltas: 100% (24/24), done.
+Checking connectivity... done.
+```
+
+```bash
+$ export LD_LIBRARY_PATH=/usr/local/lib
+$ man ldconfig
+```
+
+[ShareX/ShareX: ShareX is a free and open source program that lets you capture or record any area of your screen and share it with a single press of a key. It also allows uploading images, text or other types of files to over 80 supported destinations you can choose from.](https://github.com/ShareX/ShareX)
+
 [新手如何在gdb中存活 - Jack47 - 博客园](http://www.cnblogs.com/Jack47/p/survive-in-gdb.html)
 
 :   `man 7 signal`
