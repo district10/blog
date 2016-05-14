@@ -263,3 +263,4 @@ Links | 链签
 #. [黄玄的博客 | Hux Blog](http://huangxuan.me/)
 #. [Hi. I'm William.](http://www.wzchen.com/)
 #. [Bootstrap中文网开源项目免费 CDN 服务](http://www.bootcdn.cn/)
+#. [ToyBox開發日誌](http://toyauthor.blogspot.jp/)

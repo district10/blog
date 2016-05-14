@@ -189,3 +189,9 @@ Convolutional Neural Networks  (LeCun et al. 1989)
 Image Lab
 
 `32 -> 28? -> kernel[3x3]`
+
+-   [4ker/code: Code for the book "Mastering OpenCV with Practical Computer Vision Projects" by Packt Publishing 2012.](https://github.com/4ker/code)
+-   [OpenCV, Microsoft Visual Studio and libfacerec](http://www.bytefish.de/blog/opencv_visual_studio_and_libfacerec/)
+-   [4ker/facerec: Implements face recognition algorithms for MATLAB/GNU Octave and Python.](https://github.com/4ker/facerec)
+-   [4ker/opencv-haar-classifier-training: Learn how to train your own OpenCV Haar classifier](https://github.com/4ker/opencv-haar-classifier-training)
+-   [4ker/opencv-code: C++ and Python code extracted from the tutorials at http://opencv-code.com](https://github.com/4ker/opencv-code)

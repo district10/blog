@@ -19,6 +19,120 @@ tags:
 Notes | 笔记[^1]
 ===============
 
+C++03 compiler with boost library or C++11 compiler(gcc 4.8+,clang
+3.4+,MSVC2015) without boost.
+
+[lua_binding_benchmark/.travis.yml at master · satoren/lua_binding_benchmark](https://github.com/satoren/lua_binding_benchmark/blob/master/.travis.yml)
+
+:   ```yaml
+    sudo: false
+    language: cpp
+    compiler:
+    - g++
+    before_install:
+    - git submodule update --init --recursive
+    install:
+    - if [ "$CXX" = "g++" ]; then export CXX="g++-4.9"; fi
+    addons:
+      apt:
+        sources:
+        - ubuntu-toolchain-r-test
+        - kalakris-cmake
+        packages:
+        - liblua5.2-dev
+        - lua5.2
+        - libboost-all-dev
+        - g++-4.9
+        - cmake
+    env:
+      matrix:
+      - BUILD_TYPE=Release
+      global:
+      - GH_REF: github.com/satoren/lua_binding_benchmark.git
+      - secure: FOVj8m7GhZN3roaK..........................................
+    script:
+     - mkdir build && cd build && cmake ../ -DCMAKE_BUILD_TYPE=${BUILD_TYPE} -DCMAKE_CXX_FLAGS=${CXX_FLAGS} \
+     && make execute_benchmark
+    after_success:
+     - cd ../ && [ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && ./deploy.sh
+    ```
+
+[Download Microsoft Visual Studio Community 2015 from Official Microsoft Download Center](https://www.microsoft.com/en-us/download/confirmation.aspx?id=48146)
+
+[lua-users wiki: Lua Style Guide](http://lua-users.org/wiki/LuaStyleGuide)
+
+Selene `[si'li:nə]` n. 月之女神（希腊神话中的一个形象）
+
+Sol makes use of C++11/14 features. GCC 4.9 and Clang 3.4 (with std=c++1z and
+appropriate standard library) or higher should be able to compile without
+problems. However, the officially supported and CI-tested compilers are:
+
+    GCC 4.9.0+
+    Clang 3.5+
+    Visual Studio 2015 Community (Visual C++ 14.0)+
+
+define vars at compiling
+
+:   main.cpp
+
+    ```cpp
+    #include <cstdio>
+
+    int main( void )
+    {
+        printf( "VAR: %s\n__FILE__: %s\n", VAR, __FILE__ );
+    }
+    ```
+
+    compile & run
+
+    ```bash
+    $ g++ -D'VAR="Variable"' main.cpp -o main
+    $ ./main
+    VAR: variable
+    __FILE__: main.cpp
+    ```
+
+    感觉应该是，编译的时候，编译器会定义一些变量给程序。比如 `__FILE__`，你还可以自己添加一些，比如这里的 `VAR`。这些都是“环境变量”。
+
+    在 CMake 里，可以用
+
+    ```cmake
+    add_definitions(-DDATA_DIR="${PROJECT_SOURCE_DIR}/data")
+    ```
+
+    这跟用 cmake 的 config 文本一样。
+
+    CMake 的 configs：
+
+    :   Configs.h.in
+
+        ```
+        #define CMAKE_SOURCE_DIR "@CMAKE_SOURCE_DIR@"
+        ```
+
+        CMakeLists.txt
+
+        ```
+        configure_file(
+            "${PROJECT_SOURCE_DIR}/Configs.h.in"
+            "${PROJECT_BINARY_DIR}/Configs.h" )
+        ```
+
+        Configs.h
+
+        ```
+        #define CMAKE_SOURCE_DIR "D:/txt/data"
+        ```
+
+[ToyBox開發日誌: In-depth: Functional programming in C++ - 在C++上面使用函數式編程](http://toyauthor.blogspot.jp/2015/10/in-depth-functional-programming-in-c-c.html)
+
+[Ubuntu Pastebin](http://paste.ubuntu.com/16385769/)
+
+[Shopping Cart - HostUS](https://my.hostus.us/cart.php?a=confproduct&i=0)
+
+[Marching Cubes - Augusdi的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/Augusdi/article/details/6621720)
+
 [新手如何在gdb中存活 - Jack47 - 博客园](http://www.cnblogs.com/Jack47/p/survive-in-gdb.html)
 
 :   `man 7 signal`
@@ -5965,6 +6079,7 @@ refs and see also
 
 https://github.com/settings/tokens
 
+```bash
 $ travis encrypt -r district10/hacking-travis GH_Token=YOUR_OWN_TOKEN
 $ travis encrypt-file ~/.ssh/id_rsa --add
 Detected repository as district10/hacking-travis, is this correct? |yes| yes
@@ -5975,8 +6090,9 @@ storing secure env variables for decryption
 Make sure to add id_rsa.enc to the git repository.
 Make sure not to add /home/tzx/.ssh/id_rsa to the git repository.
 Commit all changes to your .travis.yml.
+```
 
-
+```yaml
 notifications:
   campfire:
     rooms:
@@ -5995,7 +6111,7 @@ notifications:
   campfire:
     rooms:
       - "decrypted string"
-
+```
 
   七牛测试域名
 

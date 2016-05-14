@@ -10,6 +10,10 @@ tags:
 Learning Lua
 ============
 
+[4ker/lua-style-guide: Olivine Labs Lua Style Guide](https://github.com/4ker/lua-style-guide)
+
+[Lua crash course](http://www.coppeliarobotics.com/helpFiles/en/luaCrashCourse.htm)
+
 [Category:Software - LOVE](https://love2d.org/wiki/Category:Software)
 
 -   love.exe
@@ -81,9 +85,20 @@ Learning Lua
 - [lua-pong/pong.lua at master · 4ker/lua-pong](https://github.com/4ker/lua-pong/blob/master/pong.lua)
 - [在Ubuntu系统下安装luci的步骤和注意事项 - Merlin-magic - 博客园](http://www.cnblogs.com/tfanalysis/articles/4108188.html)
 
+[4ker/luapp: Using lua in C++ style. Build system is CMake.](https://github.com/4ker/luapp) &hearts;
+
+
 refs and see also
 
-  - [Getting Started - LOVE](https://love2d.org/wiki/Getting_Started)
-  - [MisterDA/love-release: Lua script that makes LÖVE game release easier](https://github.com/MisterDA/love-release)
-  - [rude / love / Downloads — Bitbucket](https://bitbucket.org/rude/love/downloads)
-  - [love2d-community/awesome-love2d: A curated list of amazingly awesome LÖVE libraries, resources and shiny things.](https://github.com/love2d-community/awesome-love2d)
+-   [Getting Started - LOVE](https://love2d.org/wiki/Getting_Started)
+-   [MisterDA/love-release: Lua script that makes LÖVE game release easier](https://github.com/MisterDA/love-release)
+-   [rude / love / Downloads — Bitbucket](https://bitbucket.org/rude/love/downloads)
+-   [love2d-community/awesome-love2d: A curated list of amazingly awesome LÖVE libraries, resources and shiny things.](https://github.com/love2d-community/awesome-love2d)
+-   [Learn Lua in 15 Minutes](http://tylerneylon.com/a/learn-lua/)
+-   [LuaDist/lua: The Lua programming language with CMake based build](https://github.com/LuaDist/lua), my fork: [4ker/lua: The Lua programming language with CMake based build](https://github.com/4ker/lua)
+-   [LewisJEllis/awesome-lua: A curated list of quality Lua packages and resources.](https://github.com/LewisJEllis/awesome-lua)
+-   [Issues · vinniefalco/LuaBridge](https://github.com/vinniefalco/LuaBridge/issues)
+-   [ToyAuthor/luapp: Using lua in C++ style. Build system is CMake.](https://github.com/ToyAuthor/luapp) &hearts;
+-   [davidsiaw/luacppinterface: A Simple C++ Interface to Lua](https://github.com/davidsiaw/luacppinterface)
+-   [tutorial: quick ‘n’ dirty — Sol 2.5.2 documentation](http://sol2.readthedocs.io/en/latest/tutorial/all-the-things.html)
+-   [ThePhD/sol2: Sol v2.0 - a C++ <-> Lua API wrapper with advanced features and top notch performance - is here, and it's great! Documentation:](https://github.com/ThePhD/sol2)
