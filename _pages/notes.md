@@ -19,6 +19,55 @@ tags:
 Notes | 笔记[^1]
 ===============
 
+[Jason’s home - 博客频道 - CSDN.NET](http://blog.csdn.net/wsj18808050)
+[Milo Yip - 博客园](http://www.cnblogs.com/miloyip/)
+
+人类为什么要互相伤害？
+
+到了工作，基本就是
+
+-   本来冲着去弄Visual Studio的，而且学生时期还不喜欢SQL，结果工作的时候由于经
+    济危机的关系给我弄到SQL去了，工作的内容包含了学习专业的数据库知识和拖控件。
+-   但是我做了几年还是觉得不喜欢SQL，就跳槽到了MSRA，结果MSRA拼命让我搞数据库的
+    东西。也不想想本来我就是不喜欢弄这个才走的……
+-   后来我想好吧，反正编译器没得搞了，那我还是拖控件吧。于是我就告诉Office的人
+    说，你看我做GacUI多屌不屌！Office的人说，屌！于是把我招了进来，专门负责组里
+    面不是GUI的那部分。
+-   过了半年老板开始安排工作了，我想了个办法表达了一下我还是喜欢弄别的东西。于
+    是终于干起了老本行——给Office的程序员开发内部的编译器了。
+
+总算最后还是做了喜欢的工作。
+
+[Qt 静态编译 – My SCARLET](http://scarletpan.github.io/static/)
+
+[Qt for Windows：Qt 5.6.0 MinGW 静态编译版本制作 - Jason’s home - 博客频道 - CSDN.NET](http://blog.csdn.net/wsj18808050/article/details/50909381)
+
+[district10/bcp: Boost.org bcp module, and a CMakeLists.txt for lazy people.](https://github.com/district10/bcp)
+
+:   -   <http://whudoc.qiniudn.com/2016/bcp.exe> (565 KB)
+    -   <http://whudoc.qiniudn.com/2016/bcp_standalone_linux> (2.28 MB)
+    -   <http://whudoc.qiniudn.com/2016/boost_1_58_0_headers.7z> (6.29 MB)
+    -   <http://whudoc.qiniudn.com/2016/boost_1_58_0_headers_sources.7z> (37.6 MB)
+    -   <http://whudoc.qiniudn.com/2016/boost_1_58_0_vs2010_x64.7z> (103 MB)
+
+    refs and see also
+
+      - [bcp，只为boost库瘦身 - iqfifty的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/iqfifty/article/details/8997909)
+
+另外有人可能误解了我工作的方式，以为我是一个理想主义者。跟我工作过的人都知道，
+我其实是个非常实际的人，我不做不可能有用处的事情。我把用户的需要放在首要的位置
+，而不是一意孤行去做自己觉得“优美”或者“酷”的产品。在过去我遇到过一些真正的理想
+主义者，他们用非常炫丽难懂的做法，来实现用户不需要的功能，让用户糊涂困扰。所以
+我不希望再跟理想主义者一起工作 :P
+
+[Telegram传奇：一个关于俄罗斯富豪、黑客、极权和阴谋的创业故事-钛媒体官方网站](http://www.tmtpost.com/1443098.html)
+
+[Advanced Code Search](https://github.com/search/advanced?q=%E9%BB%91%E5%AE%A2&repository=blog&user_id=district10&utf8=%E2%9C%93)
+
+[www.iki.fi/sol - Tutorials - IMGUI](http://sol.gfxile.net/imgui/)
+
+[Immediate Mode Model/View/Controller](http://www.johno.se/book/imgui.html)
+
 C++03 compiler with boost library or C++11 compiler(gcc 4.8+,clang
 3.4+,MSVC2015) without boost.
 
@@ -132,6 +181,39 @@ define vars at compiling
 [Shopping Cart - HostUS](https://my.hostus.us/cart.php?a=confproduct&i=0)
 
 [Marching Cubes - Augusdi的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/Augusdi/article/details/6621720)
+
+```plain
+➜  git  git clone git@github.com:district10/orgit.git
+Cloning into 'orgit'...
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0664 for '/home/tzx/.ssh/id_rsa' are too open.
+It is recommended that your private key files are NOT accessible by others.
+This private key will be ignored.
+key_load_private_type: bad permissions
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+➜  git  chmod 700 ~/.ssh/id_rsa
+➜  git  git clone git@github.com:district10/orgit.git
+Cloning into 'orgit'...
+remote: Counting objects: 71, done.
+remote: Compressing objects: 100% (58/58), done.
+remote: Total 71 (delta 24), reused 50 (delta 8), pack-reused 0
+Receiving objects: 100% (71/71), 80.91 KiB | 13.00 KiB/s, done.
+Resolving deltas: 100% (24/24), done.
+Checking connectivity... done.
+```
+
+```bash
+$ export LD_LIBRARY_PATH=/usr/local/lib
+$ man ldconfig
+```
+
+[ShareX/ShareX: ShareX is a free and open source program that lets you capture or record any area of your screen and share it with a single press of a key. It also allows uploading images, text or other types of files to over 80 supported destinations you can choose from.](https://github.com/ShareX/ShareX)
 
 [新手如何在gdb中存活 - Jack47 - 博客园](http://www.cnblogs.com/Jack47/p/survive-in-gdb.html)
 
