@@ -3292,3 +3292,53 @@ refs and see also
 [Moment (mathematics) - Wikipedia, the free encyclopedia]: https://en.wikipedia.org/wiki/Moment_(mathematics)
 [Uniform distribution (continuous) - Wikipedia, the free encyclopedia]: https://en.wikipedia.org/wiki/Uniform_distribution_(continuous)
 [Uniform distribution (discrete) - Wikipedia, the free encyclopedia]: https://en.wikipedia.org/wiki/Uniform_distribution_(discrete)
+
+[Softmax function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Softmax_function)
+
+:   In mathematics, in particular probability theory and related fields, the
+    softmax function, or normalized exponential, is a generalization of
+    the logistic function that "squashes" a K-dimensional vector \mathbf{z} of
+    arbitrary real values to a K-dimensional vector \sigma(\mathbf{z}) of real
+    values in the range (0, 1) that add up to 1. The function is given by
+
+    $$\sigma(\mathbf{z})_j = \frac{e^{z_j}}{\sum_{k=1}^K e^{z_k}}    for j = 1, ..., K.$$
+
+    The softmax function is the gradient-log-normalizer of the categorical
+    probability distribution. For this reason, the softmax function is used in
+    various probabilistic multiclass classification methods including
+    multinomial logistic regression, multiclass linear discriminant
+    analysis, naive Bayes classifiers and artificial neural networks.
+    Specifically, in multinomial logistic regression and linear discriminant
+    analysis, the input to the function is the result of K distinct linear
+    functions, and the predicted probability for the j'th class given a sample
+    vector x is:
+
+    $$P(y=j|\mathbf{x}) = \frac{e^{\mathbf{x}^\mathsf{T}\mathbf{w}_j}}{\sum_{k=1}^K e^{\mathbf{x}^\mathsf{T}\mathbf{w}_k}}$$
+
+    This can be seen as the composition of K linear functions
+    $\mathbf{x} \mapsto \mathbf{x}^\mathsf{T}\mathbf{w}_1, \ldots, \mathbf{x}
+    \mapsto \mathbf{x}^\mathsf{T}\mathbf{w}_K$ and the softmax function.
+
+    refs and see also
+
+      - [Softmax回归 - Ufldl](http://ufldl.stanford.edu/wiki/index.php/Softmax%E5%9B%9E%E5%BD%92)
+
+[Hyperbolic function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hyperbolic_function#Tanh)
+
+:   ![A ray through the unit hyperbola $\scriptstyle x^2\ -\ y^2\ =\ 1$ in the point
+        $\scriptstyle (\cosh\,a,\,\sinh\,a),$ where $\scriptstyle a$ is twice the area
+        between the ray, the hyperbola, and the $\scriptstyle x-axis$. For points on
+        the hyperbola below the $\scriptstyle x-axis$, the area is considered
+        negative (see animated version with comparison with the trigonometric
+        (circular) functions).](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Hyperbolic_functions-2.svg/444px-Hyperbolic_functions-2.svg.png)
+
+    In mathematics, hyperbolic functions are analogs of the ordinary
+    trigonometric, or circular functions. The basic hyperbolic functions are
+    the hyperbolic sine "sinh" (`/ˈsɪntʃ/` or `/ˈʃaɪn/`), and the hyperbolic
+    cosine "cosh" (`/ˈkɒʃ/`), from which are derived the hyperbolic tangent
+    "tanh" (`/ˈtæntʃ/` or `/ˈθæn/`), hyperbolic cosecant "csch" or "cosech" (/ˈ
+    koʊʃɛk/ or `/ˈkoʊsɛtʃ/`), hyperbolic secant "sech" (`/ˈʃɛk/` or `/ˈsɛtʃ/`),
+    and hyperbolic cotangent "coth" (`/ˈkoʊθ/` or `/ˈkɒθ/`), corresponding to
+    the derived trigonometric functions. The inverse hyperbolic functions are
+    the area hyperbolic sine "arsinh" (also called "asinh" or sometimes
+    "arcsinh") and so on.

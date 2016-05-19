@@ -264,3 +264,7 @@ Links | 链签
 #. [Hi. I'm William.](http://www.wzchen.com/)
 #. [Bootstrap中文网开源项目免费 CDN 服务](http://www.bootcdn.cn/)
 #. [ToyBox開發日誌](http://toyauthor.blogspot.jp/)
+#. [Download Excel Viewer from Official Microsoft Download Center](https://www.microsoft.com/zh-cn/download/confirmation.aspx?id=10)
+#. [Download Word Viewer from Official Microsoft Download Center](https://www.microsoft.com/zh-cn/download/confirmation.aspx?id=4)
+#. [Download Visio 2010: Visio Viewer - 中文(简体) from Official Microsoft Download Center](https://www.microsoft.com/zh-cn/download/confirmation.aspx?id=21701)
+#. [MSDN, 我告诉你](http://www.itellyou.cn/)

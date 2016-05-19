@@ -19,50 +19,153 @@ tags:
 Notes | 笔记[^1]
 ===============
 
+You can treat them as bunch of integers.
+
+`CMakeLists.txt`
+
+    project( WideString )
+    cmake_minimum_required( VERSION 2.6 )
+    add_executable( ${PROJECT_NAME} main.cpp )
+
+`main.cpp`
+
+    #include <iostream>
+    #include <string>
+    #include <iomanip>
+
+    int main ( int argc, char **argv )
+    {
+        std::string str;
+        if (argc >= 2)   { str = argv[1]; }
+        if (str.empty()) { str = "English & 中文"; }
+
+        std::wstring wStr(str.begin(), str.end());
+        std::wstring::iterator i = wStr.begin();
+        for (; i != wStr.end(); ++i) {
+            // actually numbers, you can add one
+            std::cout << "\t" << std::hex << 1+(*i);
+        }
+        std::cout << std::endl;
+    }
+
+Compiler & Run
+
+    $ ./WideString.exe
+            46      6f      68      6d      6a      74      69      21      27      21      ffd7    ffd1    ffcf    ffc5
+
+    $ ./WideString.exe "hay 嗨"
+            69      62      7a      21      ffe1    ffcc
+
+Take "嗨" as an example, it's two bytes: `ffe0 ffcb`.
+
+By examing the integer value, you can judge it's a wide char or ascii char.
+
+[【在线影展】乡土往事，岁月如歌_图片频道_新闻中心_腾讯网](http://news.qq.com/original/zaixianyingzhan/soilsong.html)
+
+:   ![](http://img1.gtimg.com/ninja/1/2016/05/ninja146362891359003.jpg)
+
+    ![](http://img1.gtimg.com/ninja/1/2016/05/ninja146362901367818.jpg)
+
+    一般来说，中国人的财富表现为现金和房产，但房屋产权概念一直很薄弱，人们被允
+    许住在自己的房子里面，但同时也被告知，政府有权重新安置居民，并支付一定的补
+    偿款。但是由于很多人对政府提供的赔偿金不满意，便导致了“钉子户”的产生。不过
+    时间是一台巨大的推土机，中国的许多“钉子户”最终被收买、赶走或者死去，因为许
+    多人都是老年人。
+
+    refs and see also
+
+      - [【鹅眼】上海最贵土地上的“钉子户”_图片频道_新闻中心_腾讯网](http://news.qq.com/original/eyan/guangfuli.html)
+
+[c++ - How to detect c++11 support of a compiler with cmake - Stack Overflow](http://stackoverflow.com/questions/10984442/how-to-detect-c11-support-of-a-compiler-with-cmake/20165220#20165220)
+
+[[DPI Scaling Fix] Bold, Blurry or Hard to Read Font Problem in Windows 8.1 / 10 - AskVG](http://www.askvg.com/fix-bold-blurry-or-hard-to-read-font-problem-in-windows-8-1/)
+
+:   ![](https://i-technet.sec.s-msft.com/dynimg/IC695128.jpg)
+
+```vim
+gH          Start Select mode, linewise.  This is like "V",
+            but starts Select mode instead of Visual mode.
+            Mnemonic: "get Highlighted".
+```
+
+[karan/Projects-Solutions: Links to others' solutions to Projects (https://github.com/karan/Projects/)](https://github.com/karan/Projects-Solutions)
+
+[如何理解「索尼大法好」？ - 科技 - 知乎](http://www.zhihu.com/question/25150363)
+
 [Jason’s home - 博客频道 - CSDN.NET](http://blog.csdn.net/wsj18808050)
+
 [Milo Yip - 博客园](http://www.cnblogs.com/miloyip/)
 
 人类为什么要互相伤害？
 
 到了工作，基本就是
 
--   本来冲着去弄Visual Studio的，而且学生时期还不喜欢SQL，结果工作的时候由于经
-    济危机的关系给我弄到SQL去了，工作的内容包含了学习专业的数据库知识和拖控件。
--   但是我做了几年还是觉得不喜欢SQL，就跳槽到了MSRA，结果MSRA拼命让我搞数据库的
+-   本来冲着去弄 Visual Studio 的，而且学生时期还不喜欢 SQL，结果工作的时候由于经
+    济危机的关系给我弄到 SQL 去了，工作的内容包含了学习专业的数据库知识和拖控件。
+-   但是我做了几年还是觉得不喜欢 SQL，就跳槽到了 MSRA，结果 MSRA 拼命让我搞数据库的
     东西。也不想想本来我就是不喜欢弄这个才走的……
--   后来我想好吧，反正编译器没得搞了，那我还是拖控件吧。于是我就告诉Office的人
-    说，你看我做GacUI多屌不屌！Office的人说，屌！于是把我招了进来，专门负责组里
-    面不是GUI的那部分。
+-   后来我想好吧，反正编译器没得搞了，那我还是拖控件吧。于是我就告诉 Office 的人
+    说，你看我做 GacUI 多屌不屌！Office 的人说，屌！于是把我招了进来，专门负责组里
+    面不是 GUI 的那部分。
 -   过了半年老板开始安排工作了，我想了个办法表达了一下我还是喜欢弄别的东西。于
-    是终于干起了老本行——给Office的程序员开发内部的编译器了。
+    是终于干起了老本行——给 Office 的程序员开发内部的编译器了。
 
 总算最后还是做了喜欢的工作。
 
 [Qt 静态编译 – My SCARLET](http://scarletpan.github.io/static/)
 
-[Qt for Windows：Qt 5.6.0 MinGW 静态编译版本制作 - Jason’s home - 博客频道 - CSDN.NET](http://blog.csdn.net/wsj18808050/article/details/50909381)
+:   refs and see also
+
+      - [Qt for Windows：Qt 5.6.0 MinGW 静态编译版本制作 - Jason’s home - 博客频道 - CSDN.NET](http://blog.csdn.net/wsj18808050/article/details/50909381)
 
 [district10/bcp: Boost.org bcp module, and a CMakeLists.txt for lazy people.](https://github.com/district10/bcp)
 
-:   -   <http://whudoc.qiniudn.com/2016/bcp.exe> (565 KB)
-    -   <http://whudoc.qiniudn.com/2016/bcp_standalone_linux> (2.28 MB)
+:   -   <http://whudoc.qiniudn.com/2016/bcp_standalone.exe> (561 KB)
+    -   <http://whudoc.qiniudn.com/2016/bcp_standalone_linux> (917 KB)
     -   <http://whudoc.qiniudn.com/2016/boost_1_58_0_headers.7z> (6.29 MB)
     -   <http://whudoc.qiniudn.com/2016/boost_1_58_0_headers_sources.7z> (37.6 MB)
     -   <http://whudoc.qiniudn.com/2016/boost_1_58_0_vs2010_x64.7z> (103 MB)
+
+    You can newer (maybe newer) copy of bcp at <https://github.com/district10/bcp/tree/standalone#0-get-bcp-binary--boost-source-file>
 
     refs and see also
 
       - [bcp，只为boost库瘦身 - iqfifty的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/iqfifty/article/details/8997909)
 
 另外有人可能误解了我工作的方式，以为我是一个理想主义者。跟我工作过的人都知道，
-我其实是个非常实际的人，我不做不可能有用处的事情。我把用户的需要放在首要的位置
-，而不是一意孤行去做自己觉得“优美”或者“酷”的产品。在过去我遇到过一些真正的理想
-主义者，他们用非常炫丽难懂的做法，来实现用户不需要的功能，让用户糊涂困扰。所以
-我不希望再跟理想主义者一起工作 :P
+**我其实是个非常实际的人，我不做不可能有用处的事情**。我把用户的需要放在首要的
+位置，而不是一意孤行去做自己觉得“优美”或者“酷”的产品。在过去我遇到过一些真正的
+理想主义者，他们用非常炫丽难懂的做法，来实现用户不需要的功能，让用户糊涂困扰。
+所以我不希望再跟理想主义者一起工作 :P
 
-[Telegram传奇：一个关于俄罗斯富豪、黑客、极权和阴谋的创业故事-钛媒体官方网站](http://www.tmtpost.com/1443098.html)
+[Telegram 传奇：一个关于俄罗斯富豪、黑客、极权和阴谋的创业故事 - 钛媒体官方网站](http://www.tmtpost.com/1443098.html)
+
+:   被警察监听，Pavel Durov 决心做一个为隐私和安全而生的通讯工具
+
+    这架纸飞机后来被做为了 Telegram 的 Logo。Pavel 非常喜欢扔纸飞机那个时刻，他
+    觉得那非常能代表他叛逆精神。那并不是暴发户对金钱的挥霍，而是对自由的向往。
+
+    今年年初，笑来老师迷上了 Telegram，想在上面做一些东西，那段时间我帮他读了不
+    少 Telegram 的代码。边读边佩服这个团队的优秀。Nikolai 设计的协议 MTProto 极
+    其优秀，兼具数学和工程之美，它的加密基础非常完善，同时又在工程上很出色，
+    Telegram 传递的消息实际是函数，可扩展性相当强。同时，所有代码都是开源的，在
+    github 上可以看到每个项目的贡献者人数都很少，但代码质量相当高。我很惊讶于如
+    此短的开发时间，如此少的人数，产生出这么高质量的代码。
+
+    Telegram 的特色就是快，它的快体现在各方面，不仅仅是协议本身精简造成的传输速
+    度快，Telegram 在各平台上的实现几乎都是从最底层的简单 API 实现，几乎不使用
+    常见的库，而是自己实现所有界面控件。他们的所有控件样式也相当简单，从而让绘
+    制效率非常高。这些努力最终得到的回报，就是它使用起来速度极快，极流畅。如果
+    你在一个正常的网络环境使用，会非常直观的感受到它的效率和稳定。
+
+    到今天，已经加入了相当多功能的 Telegram（包括自定义的贴纸表情和机器人）iOS
+    版只有 30M 的体积，而微信早就到了 90 多 M，就算是功能简单的多的 Whatsapp 也
+    有 40 多 M。有兴趣琢磨代码的同学可以去 Github 上慢慢研究他们开源的代码，肯
+    定会大有收获。
 
 [Advanced Code Search](https://github.com/search/advanced?q=%E9%BB%91%E5%AE%A2&repository=blog&user_id=district10&utf8=%E2%9C%93)
+
+:   github code search
 
 [www.iki.fi/sol - Tutorials - IMGUI](http://sol.gfxile.net/imgui/)
 
@@ -215,77 +318,76 @@ $ man ldconfig
 
 [ShareX/ShareX: ShareX is a free and open source program that lets you capture or record any area of your screen and share it with a single press of a key. It also allows uploading images, text or other types of files to over 80 supported destinations you can choose from.](https://github.com/ShareX/ShareX)
 
-[新手如何在gdb中存活 - Jack47 - 博客园](http://www.cnblogs.com/Jack47/p/survive-in-gdb.html)
+[新手如何在 gdb 中存活 - Jack47 - 博客园](http://www.cnblogs.com/Jack47/p/survive-in-gdb.html)
 
 :   `man 7 signal`
 
-```
-Signal     Value     Action   Comment
-──────────────────────────────────────────────────────────────────────
-SIGHUP        1       Term    Hangup detected on controlling terminal
-                              or death of controlling process
-SIGINT        2       Term    Interrupt from keyboard
-SIGQUIT       3       Core    Quit from keyboard
-SIGILL        4       Core    Illegal Instruction
-SIGABRT       6       Core    Abort signal from abort(3)
-SIGFPE        8       Core    Floating point exception
-SIGKILL       9       Term    Kill signal
-SIGSEGV      11       Core    Invalid memory reference
-SIGPIPE      13       Term    Broken pipe: write to pipe with no
-                              readers
-SIGALRM      14       Term    Timer signal from alarm(2)
-SIGTERM      15       Term    Termination signal
-SIGUSR1   30,10,16    Term    User-defined signal 1
-SIGUSR2   31,12,17    Term    User-defined signal 2
-SIGCHLD   20,17,18    Ign     Child stopped or terminated
+    ```tzx-bigquote
+    Signal     Value     Action   Comment
+    ──────────────────────────────────────────────────────────────────────
+    SIGHUP        1       Term    Hangup detected on controlling terminal
+                                  or death of controlling process
+    SIGINT        2       Term    Interrupt from keyboard
+    SIGQUIT       3       Core    Quit from keyboard
+    SIGILL        4       Core    Illegal Instruction
+    SIGABRT       6       Core    Abort signal from abort(3)
+    SIGFPE        8       Core    Floating point exception
+    SIGKILL       9       Term    Kill signal
+    SIGSEGV      11       Core    Invalid memory reference
+    SIGPIPE      13       Term    Broken pipe: write to pipe with no
+                                  readers
+    SIGALRM      14       Term    Timer signal from alarm(2)
+    SIGTERM      15       Term    Termination signal
+    SIGUSR1   30,10,16    Term    User-defined signal 1
+    SIGUSR2   31,12,17    Term    User-defined signal 2
+    SIGCHLD   20,17,18    Ign     Child stopped or terminated
 
-SIGCONT   19,18,25    Cont    Continue if stopped
-SIGSTOP   17,19,23    Stop    Stop process
-SIGTSTP   18,20,24    Stop    Stop typed at terminal
-SIGTTIN   21,21,26    Stop    Terminal input for background process
-SIGTTOU   22,22,27    Stop    Terminal output for background process
+    SIGCONT   19,18,25    Cont    Continue if stopped
+    SIGSTOP   17,19,23    Stop    Stop process
+    SIGTSTP   18,20,24    Stop    Stop typed at terminal
+    SIGTTIN   21,21,26    Stop    Terminal input for background process
+    SIGTTOU   22,22,27    Stop    Terminal output for background process
 
-The signals SIGKILL and SIGSTOP cannot be caught, blocked, or ignored.
-```
-
--   `l`, list source
--   `l 7`, list source at line 7
--   `l print_str`, list `print_str`
--   `set listsize 20`, list 20 lines of code each time
--   `b 9`, break line 9
--   `r`, run
--   `p str`, print var `str`'s value
-
--   debug via dumped file
-
-    ```
-    # setup & run
-    $ ulimit -c unlimited
-    $ ./main
-    [1]    10226 segmentation fault (core dumped)  ./main
-
-    gdb main core   # `core' is the dumped file
+    The signals SIGKILL and SIGSTOP cannot be caught, blocked, or ignored.
     ```
 
-    ```
-    (gdb) bt        # backtrace
-    #0  0x000000000040055c in print_str (str=0x400657 "hello, world!") at main.c:5
-    #1  0x0000000000400584 in b (b=0x400657 "hello, world!") at main.c:9
-    #2  0x000000000040059f in a (a=0x400657 "hello, world!") at main.c:10
-    #3  0x00000000004005be in main () at main.c:14
-    ```
+    -   `l`, list source
+    -   `l 7`, list source at line 7
+    -   `l print_str`, list `print_str`
+    -   `set listsize 20`, list 20 lines of code each time
+    -   `b 9`, break line 9
+    -   `r`, run
+    -   `p str`, print var `str`'s value
 
--   debug running program
+    -   debug via dumped file
 
-    `ps aux ｜grep main`
+        ```bash
+        # setup & run
+        $ ulimit -c unlimited
+        $ ./main
+        [1]    10226 segmentation fault (core dumped)  ./main
 
-    [用GDB调试程序（一） - 陈皓专栏　【空谷幽兰，心如皓月】 - 博客频道 - CSDN.NET](http://blog.csdn.net/haoel/article/details/2879)
+        gdb main core   # `core' is the dumped file
+        ```
 
-refs and see also
+        ```
+        (gdb) bt        # backtrace
+        #0  0x000000000040055c in print_str (str=0x400657 "hello, world!") at main.c:5
+        #1  0x0000000000400584 in b (b=0x400657 "hello, world!") at main.c:9
+        #2  0x000000000040059f in a (a=0x400657 "hello, world!") at main.c:10
+        #3  0x00000000004005be in main () at main.c:14
+        ```
 
-  - [Unix signal - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Unix_signal)
+    -   debug running program
 
-[C语言中为什么不能用char类型来存储getchar()的返回值 - Jack47 - 博客园](http://www.cnblogs.com/Jack47/archive/2012/12/23/2819111.html)
+        `ps aux ｜grep main`
+
+    refs and see also
+
+      - [Unix signal - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Unix_signal)
+      - [用 GDB 调试程序（一） - 陈皓专栏　【空谷幽兰，心如皓月】 - 博客频道 - CSDN.NET](http://blog.csdn.net/haoel/article/details/2879)
+
+[C 语言中为什么不能用 char 类型来存储 getchar() 的返回值 - Jack47 - 博客园](http://www.cnblogs.com/Jack47/archive/2012/12/23/2819111.html)
 
 :   `int getchar ( void );`
 
@@ -313,9 +415,9 @@ refs and see also
       ~ pushes c back to stream, cast to unsigned char, where it is available for subsequent read operations.
         Pushed-back characters will be returned in reverse order; only one pushback is guaranteed.
 
-    ```tzx-bigquote
+    ```
     ---------------------------------      ----------------------------------------------
-    |    int到char转化（截断）             |       |             char到int转化（扩展）  |
+    |    int到char转化（截断）      |      |       |             char到int转化（扩展）  |
     ---------------------------------      ----------------------------------------------
     | 十进制  |  int        |  char |      |  char |unsigned char=>int| signed char=>int|
     |---------|-------------|-------|      |-------|------------------|-----------------|
@@ -335,8 +437,10 @@ tinger with, 笨手笨脚地做事
 
 [Permanently change keyboard layout on Ubuntu Server 11.10](http://krisreeves.com/things-that-should-be-easy/permanently-change-keyboard-layout-on-ubuntu-server-11-10/)
 
-H: high, 2H
-L: low, 3L
+vim
+
+-   H: high, 2H
+-   L: low, 3L
 
 [Remap keyboard on the Linux console - Unix & Linux Stack Exchange](http://unix.stackexchange.com/questions/177024/remap-keyboard-on-the-linux-console)
 
@@ -347,7 +451,6 @@ L: low, 3L
 
     For loadkeys you can find the existing keymaps under /usr/share/kbd/keymaps.
     The description of those files is available in man 5 keymaps.
-
 
     The  program  loadkeys reads the file or files specified by filename....  Its main purpose is to load the
     kernel keymap for the console.  You can specify console device by the -C (or --console ) option.
@@ -362,6 +465,8 @@ L: low, 3L
     ```
 
 [Parsing expression grammar - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Parsing_expression_grammar)
+
+---
 
 ```bash
 ➜  build git:(master) pwd
@@ -399,9 +504,103 @@ sudo apt-get install libstdc++6-4.8-dbg
 /usr/share/qt4/mkspecs/blackberry-armv7le-qcc/qmake.conf
 ```
 
+---
+
 [Modern CMake with Qt and Boost - 推酷](http://www.tuicool.com/articles/bMRJVb)
 
+:   ```cmake
+    find_package( Qt5Widgets 5.2 REQUIRED )
+    add_executable( myapp main.cpp )
+    target_link_libraries( myapp
+        Qt5::Widgets
+    )
+    ```
+
+    One of the nice (and recent) features of CMake (in master branch, to become
+    CMake 3.0.0) is that it gives diagnostics if I try to use a dependency
+    without first finding it. CMake now recognises a pattern of double-colons
+    `::` in the name of a dependency as denoting a special meaning that it is a
+    IMPORTED target which encodes a lot of information about how to use it.
+
+    CMake is aware that using the Qt5::Widgets library involves a compilation
+    step and a linking step. It knows that because Qt5::Widgets is a target
+    defined in files shipped by Qt in the lib/cmake directory.
+
+    ```cmake
+    set_property( TARGET Qt5::Widgets
+        INTERFACE_INCLUDE_DIRECTORIES
+            "${relativeLocation}/include/QtWidgets"
+    )
+
+    and for the Qt5Core library looks something like this:
+
+    ```cmake
+    set_property(TARGET Qt5::Core
+        INTERFACE_INCLUDE_DIRECTORIES
+             "${relativeLocation}/include"
+             "${relativeLocation}/include/QtCore"
+    )
+    ```
+
+    The Qt5::Core target specifies the ‘top level include’, and the
+    Qt5::Widgets target depends transitively on the Qt5::Core target.
+
+    All of these special features are available when using both Qt 4 and Qt 5.
+
+    CMake is aware of these features file types and code generators, and can
+    enable special handling of them. If you enable CMAKE_AUTOMOC CMake will
+    scan compiled files for the Q_OBJECT macro and automatically run the moc
+    tool as needed (since CMake 2.8.6 ).
+
+    People often ask whether CMake ‘supports’ C++11. That is the wrong question
+    to ask . What people are thinking is ‘Can it automatically add the
+    -std=c++11 flag for me?’
+
+    Hmm, or should I use -std=c++0x for this compiler?
+
+    Or wait, is this a C++14 feature? Maybe I need -std=c++1y ?
+
+    **Oh, wait I’m using MSVC, no flag is needed at all.**
+
+    The right questions to ask are ‘Does the compiler have the feature I need?’
+    and ‘Is any flag required to enable that feature?’. The version of the C++
+    standard that specifies the feature is then not relevant to the user and
+    can be encoded in the implementation of CMake. Aiming for ‘C++11 support in
+    CMake’ would not be **future-proof** or even **past-proof**.
+
+    Because the standard version which introduced the feature is irrelevant,
+    the user does not need to care whether -std=c++11 or -std=c++98 is needed.
+    By not requiring the user to enable the flags manually, a cross-platform
+    trap can be avoided.
+
+    For example, it will generate a define for each of the features and whether
+    the feature is supported by the users compiler. This is essentially the
+    same kind of thing that the Boost.Config library and qcompilerdetection.h
+    are doing.
+
 [ant - Why is no one using make for Java? - Stack Overflow](http://stackoverflow.com/questions/2209827/why-is-no-one-using-make-for-java)
+
+:   The difference between:
+
+    ```bash
+    javac Main.java
+    javac This.java
+    javac That.java
+    javac Other.java
+    ```
+
+    and
+
+    ```bash
+    javac Main.java This.java That.java Other.java
+    ```
+
+    is night and day.
+
+    Exacerbate that with hundreds of classes, and it just becomes **untenable**.
+
+    Make also **isn't very good at determining what files are out of date, at a
+    collection level**.
 
 [Restore previous session - Configure when Firefox shows your most recent tabs and windows | Firefox Help](https://support.mozilla.org/en-US/kb/restore-previous-session)
 
@@ -538,7 +737,7 @@ maple, `['mepl]` n. 枫树；淡棕色
       - [福昕软件 - 全球领先的PDF文档核心技术与应用服务](http://www.foxitsoftware.cn/)
       - [福昕栅格化程序.NET 平台软件开发工具包 - 福昕软件](http://www.foxitsoftware.cn/products/sdk/rasterizer/)
       - [福昕软件 - 企业新闻 - 福昕软件收购澳洲PDF厂商Debenu](http://www.foxitsoftware.cn/company/press_details.php?&url=html/notice/2016/foxit_press_id=284.html)
-      - [福昕网页浏览器PDF软件开发工具包 - 福昕软件](http://www.foxitsoftware.cn/products/sdk/web-pdf-sdk/)
+      - [福昕网页浏览器 PDF 软件开发工具包 - 福昕软件](http://www.foxitsoftware.cn/products/sdk/web-pdf-sdk/)
 
 [Mount Rushmore - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Mount_Rushmore)
 
@@ -634,6 +833,8 @@ ricochet, `[,rɪkə'ʃet]`, n. 跳弹；跳飞
 
     可惜这个解决方案不是 vim 原生的，所以我不予采纳。
 
+    方便地，还是把 `uniq.exe` 放到 PATH 吧。
+
 [丽莉·克亚芙 (豆瓣)](https://movie.douban.com/celebrity/1237039/)
 
 :   refs and see also
@@ -657,8 +858,8 @@ ricochet, `[,rɪkə'ʃet]`, n. 跳弹；跳飞
 
 Biologist and statistician Ronald Fisher
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Biologist_and_statistician_Ronald_Fisher.jpg/300px-Biologist_and_statistician_Ronald_Fisher.jpg){width=45%}
-![](https://upload.wikimedia.org/wikipedia/commons/a/aa/Youngronaldfisher2.JPG){width=45%}
+:   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Biologist_and_statistician_Ronald_Fisher.jpg/300px-Biologist_and_statistician_Ronald_Fisher.jpg){width=45%}
+    ![](https://upload.wikimedia.org/wikipedia/commons/a/aa/Youngronaldfisher2.JPG){width=45%}
 
 [Impostor syndrome - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Impostor_syndrome)
 
@@ -734,7 +935,7 @@ recurring in future drive designs.
 Wake-on-LAN (WOL) is an Ethernet computer networking standard that allows a
 computer to be turned on or awakened by a network message.
 
-编译时缺少h文件的自动处理
+编译时缺少 h 文件的自动处理
   ~ `sudo auto-apt run ./configure`{.bash}
 
 查看安装软件时下载包的临时存放目录
@@ -911,12 +1112,13 @@ pronounced `/ˈtɛk/` tek in English) is a typesetting system designed and mostl
 written by Donald Knuth and released in 1978. Within the typesetting system,
 its name is formatted as TeX.
 
-标识符命名要清晰明了，可以使用完整的单词和易于理解的缩写。短的单词可以通过去元音形成
-缩写，较长的单词可以取单词的头几个字母形成缩写。看别人的代码看多了就可以总结出一些缩
-写惯例，例如count写成cnt，block写成blk，length写成len，window写成win，message写成
-msg，number写成nr，temporary可以写成temp，也可以进一步写成tmp，最有意思的是
-internationalization写成i18n，词根trans经常缩写成x，例如transmit写成xmt。我就不多举例了，
-请读者在看代码时自己注意总结和积累。
+标识符命名要清晰明了，可以使用完整的单词和易于理解的缩写。短的单词可以通过去元
+音形成缩写，较长的单词可以取单词的头几个字母形成缩写。看别人的代码看多了就可以
+总结出一些缩写惯例，例如 count 写成 cnt，block 写成 blk，length 写成 len，
+window 写成 win，message 写成msg，number 写成 nr，temporary 可以写成 temp，也可
+以进一步写成 tmp，最有意思的是internationalization 写成 i18n，词根 trans 经常缩
+写成 x，例如 transmit 写成 xmt。我就不多举例了，请读者在看代码时自己注意总结和
+积累。
 
 <http://learn.akae.cn/media/ch09s03.html>
 
@@ -1027,7 +1229,7 @@ Triskaidekaphobia
 :   fear of bad luck number 13.
 
     欧美很多大厦都以12A层取代第13层。房间号码、地址号码，甚至连飞机座位也是以
-    12A 取代13。在法国巴黎，若请客吃饭时共有13人，为了避煞，会请一职业客人来凑足
+    12A 取代 13。在法国巴黎，若请客吃饭时共有 13 人, 为了避煞，会请一职业客人来凑足
     14 人。
 
 Dozen
@@ -1183,7 +1385,7 @@ pointy-haired
 
 我之前回答过一个 "狗大便时为什么先要嗅嗅地面转几圈" 的问题, 说是狗狗感觉周围环
 境不够安全, 不能保护她的隐私所致; 其实这是一种智慧生物的天性, 私密的事情下意识
-的就会想找到最能让自己安心的环境.
+的就会想找到最能让自己安心的环境。
 
 各个操作系统的字体渲染都不一样 ，从效果上说，苹果机一直完虐 Linux 和 Windows ，
 而且是开箱即用。Linux 的字体渲染首选 Infinity，效果那是极好，不截图了。Windows
@@ -2638,16 +2840,16 @@ refs and see also
 - 阶段四：不知道自己知道（Unconscious competence）
 
 ```tzx-bigquote
-							*[quotex]*
-["x]		An optional register designation where text can be stored.
-		See |registers|.  The x is a single character between 'a' and
-		'z' or 'A' and 'Z' or '"', and in some cases (with the put
-		command) between '0' and '9', '%', '#', or others.  The
-		uppercase and lowercase letter designate the same register,
-		but the lowercase letter is used to overwrite the previous
-		register contents, while the uppercase letter is used to
-		append to the previous register contents.  Without the ""x" or
-		with """" the stored text is put into the unnamed register.
+                            *[quotex]*
+["x]        An optional register designation where text can be stored.
+        See |registers|.  The x is a single character between 'a' and
+        'z' or 'A' and 'Z' or '"', and in some cases (with the put
+        command) between '0' and '9', '%', '#', or others.  The
+        uppercase and lowercase letter designate the same register,
+        but the lowercase letter is used to overwrite the previous
+        register contents, while the uppercase letter is used to
+        append to the previous register contents.  Without the ""x" or
+        with """" the stored text is put into the unnamed register.
 ```
 
 - `c_ctrl-r`, `i_ctrl-r`
@@ -2659,33 +2861,33 @@ refs and see also
 - `ctrl-v, del` -> `<Del>`
 - `ctrl-q, del` -> `<Del>` (win)
 
-	This option allows switching your keyboard into a special language
-	mode.  When you are typing text in Insert mode the characters are
-	inserted directly.  When in command mode the 'langmap' option takes
-	care of translating these special characters to the original meaning
-	of the key.  This means you don't have to change the keyboard mode to
-	be able to execute Normal mode commands.
-	This is the opposite of the 'keymap' option, where characters are
-	mapped in Insert mode.
+    This option allows switching your keyboard into a special language
+    mode.  When you are typing text in Insert mode the characters are
+    inserted directly.  When in command mode the 'langmap' option takes
+    care of translating these special characters to the original meaning
+    of the key.  This means you don't have to change the keyboard mode to
+    be able to execute Normal mode commands.
+    This is the opposite of the 'keymap' option, where characters are
+    mapped in Insert mode.
 
     `:set langmap=ad`, `aa` -> `dd`
 
-	`:echo globpath(&rtp, "keymap/*.vim")`
+    `:echo globpath(&rtp, "keymap/*.vim")`
     `C:\Program Files (x86)\Vim\vim74\keymap`
 
     `:lmap`, check map
 
     ```tzx-bigquote
-    :map	{lhs} {rhs}		|mapmode-nvo|		*:map*
-    :nm[ap]	{lhs} {rhs}		|mapmode-n|		*:nm* *:nmap*
-    :vm[ap]	{lhs} {rhs}		|mapmode-v|		*:vm* *:vmap*
-    :xm[ap]	{lhs} {rhs}		|mapmode-x|		*:xm* *:xmap*
-    :smap	{lhs} {rhs}		|mapmode-s|		    *:smap*
-    :om[ap]	{lhs} {rhs}		|mapmode-o|		*:om* *:omap*
-    :map!	{lhs} {rhs}		|mapmode-ic|		*:map!*
-    :im[ap]	{lhs} {rhs}		|mapmode-i|		*:im* *:imap*
-    :lm[ap]	{lhs} {rhs}		|mapmode-l|		*:lm* *:lmap*
-    :cm[ap]	{lhs} {rhs}		|mapmode-c|		*:cm* *:cmap*
+    :map    {lhs} {rhs}     |mapmode-nvo|       *:map*
+    :nm[ap] {lhs} {rhs}     |mapmode-n|     *:nm* *:nmap*
+    :vm[ap] {lhs} {rhs}     |mapmode-v|     *:vm* *:vmap*
+    :xm[ap] {lhs} {rhs}     |mapmode-x|     *:xm* *:xmap*
+    :smap   {lhs} {rhs}     |mapmode-s|         *:smap*
+    :om[ap] {lhs} {rhs}     |mapmode-o|     *:om* *:omap*
+    :map!   {lhs} {rhs}     |mapmode-ic|        *:map!*
+    :im[ap] {lhs} {rhs}     |mapmode-i|     *:im* *:imap*
+    :lm[ap] {lhs} {rhs}     |mapmode-l|     *:lm* *:lmap*
+    :cm[ap] {lhs} {rhs}     |mapmode-c|     *:cm* *:cmap*
                 Map the key sequence {lhs} to {rhs} for the modes
                 where the map command applies.  The result, including
                 {rhs}, is then further scanned for mappings.  This
@@ -3636,7 +3838,7 @@ refs and see also
 
 18X galgame=黄黄的游戏=黄油
 
-ototsuyume: 要是去西雅图的话生活会轻松一些.
+ototsuyume: 要是去西雅图的话生活会轻松一些。
 
 [他，属于千秋万代——《林肯传》译后记 - 选·美 iAmElection - 知乎专栏](http://zhuanlan.zhihu.com/p/20766232)
 
@@ -4013,8 +4215,6 @@ gif_file: !!binary |
 
 :   又yòu  甜tián  又yòu  冷lěng  的dì  冰bīng  淇qí  淋lín  风fēng  格gé
 
-[karan/Projects-Solutions: Links to others' solutions to Projects (https://github.com/karan/Projects/)](https://github.com/karan/Projects-Solutions)
-
 [毕业论文答辩_百度百科](http://baike.baidu.com/link?url=dSEY8xQsgBmlpw0wUQdeyjUc7443IxvTkvzhQoRxLD3ETmis2zvvPMFxBvKL71QgS_ksWYQAKSgUQliRDrNowq)
 
 :   毕业论文答辩是一种有组织、有准备、有计划、有鉴定的比较正规的审查论文的重要
@@ -4051,7 +4251,7 @@ source /path/to/github:district10/blog/vimrc.vim
 
 [如何在 Windows 下使用 Vim 的 YouCompleteMe 插件？ - 竹青叶的回答 - 知乎](https://www.zhihu.com/question/25437050/answer/31775249)
 
-[Vim 自动补全方案集成. - Vim - 知乎专栏](http://zhuanlan.zhihu.com/p/20158724?refer=hack-vim)
+[Vim 自动补全方案集成。- Vim - 知乎专栏](http://zhuanlan.zhihu.com/p/20158724?refer=hack-vim)
 
 [VIM的JavaScript补全 | EFE Tech](http://efe.baidu.com/blog/vim-javascript-completion/)
 
@@ -4069,7 +4269,7 @@ source /path/to/github:district10/blog/vimrc.vim
 (set-font "Source Code Pro" "Hiragino Sans GB" 16 20)
 ```
 
-组合第二象限和第三象限的功能, 在Mac OS下只需要使用现在的软件, 勾选一下鼠标就可以 实现.
+组合第二象限和第三象限的功能, 在Mac OS下只需要使用现在的软件, 勾选一下鼠标就可以 实现。
 
   - 下载安装 Karabiner
   - 打开界面, 选中「ControlL to ControlL (+ When you type controlL only, send Escape)」
@@ -4077,7 +4277,7 @@ source /path/to/github:district10/blog/vimrc.vim
 
 [为什么计算机专业的人都喜欢从0开始计数 - 物有本末, 事有终始](http://www.lijigang.com/blog/2016/02/17/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E7%9A%84%E4%BA%BA%E9%83%BD%E5%96%9C%E6%AC%A2%E4%BB%8E0%E5%BC%80%E5%A7%8B%E8%AE%A1%E6%95%B0/)
 
-:   显然, 使用从0开始计数的时候, 表示起来更美观和实用, 右侧数字直接减去左侧数字, 即为整 个区间的数字个数.
+:   显然, 使用从0开始计数的时候, 表示起来更美观和实用, 右侧数字直接减去左侧数字, 即为整 个区间的数字个数。
 
     refs and see also
 
@@ -5784,7 +5984,7 @@ artsy chick, 文艺青年
 
 [Unix目录结构的来历 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2012/02/a_history_of_unix_directory_structure.html)
 
-:   于是，他们加上了第二盘.
+:   于是，他们加上了第二盘。
 
     从此，这种目录结构就延续了下来。随着硬盘容量越来越大，各个目录的含义进一步
     得到明确。
@@ -6680,19 +6880,19 @@ A girl likes to be crossed in love now and then.
 
 :   遭此一劫之后他醒来?会不会吵着再要去死?
 
-    很有可能啊.
+    很有可能啊。
 
-    但是围坐在他身边是什么?应该是家人吧.
+    但是围坐在他身边是什么?应该是家人吧。
 
     试问再痴心的人,还有勇气再死一回么??
 
     活着记住这个人才是感情的**升华**.
 
     十二少到老还是一个不入流的戏子,他的一辈子都没有醒,他的一辈子都给了如花.他一
-    辈子都爱着如花.他一直是一个人,内心怀揣着那段胭脂情.
+    辈子都爱着如花.他一直是一个人,内心怀揣着那段胭脂情。
 
     同样的50年来,如花怀揣的也是一个梦.这个梦知道遇见70多岁的十二少才醒了.她说:
-    我不会在等你了.
+    我不会在等你了。
 
     **可是别忘了,十二少才是那个等的最久的人.**
 
@@ -8370,7 +8570,7 @@ the extension actually works on GitHub.
 
 :   ```vimrc
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    " Owner:	Vingel - http://www.vingel.com
+    " Owner:    Vingel - http://www.vingel.com
     " Modified: 2011-02-14 18:36:09
 
     " set runtimepath=~/vim,$VIMRUNTIME
@@ -9163,7 +9363,8 @@ the extension actually works on GitHub.
 
     ![陈星汉和他的《风之旅人》](http://whudoc.qiniudn.com/2016/77670d72fc55d200166d05463584da4a_b.jpg)
 
-    最后，向各位推荐纪录片《独立游戏：大电影》，即使你不了解独立游戏，我想你也能从中看到人性的脆弱、疯狂和勇敢。
+    最后，向各位推荐纪录片《独立游戏：大电影》，即使你不了解独立游戏，我想你也
+    能从中看到人性的脆弱、疯狂和勇敢。
 
     refs and see also
 
@@ -9340,7 +9541,7 @@ D3 is about selecting and binding
 
 ---
 
-- scapegoat, 替罪羔羊.
+- scapegoat, 替罪羔羊。
 - model minority, 模范少数族裔
 - supporting actress, 女配角（女二号）
 - best picutre
@@ -11377,7 +11578,7 @@ h1::-moz-selection { color: #9ddcff; }
 
 :   A code kata is an exercise in programming which helps a programmer hone
     their skills through practice and repetition. The term was probably first
-    coined by Dave Thomas, co-author of the book The Pragmatic Programmer,[1]
+    coined by Dave Thomas, co-author of the book **The Pragmatic Programmer**,
     in a bow to the Japanese concept of kata in the martial arts. As of October
     2011, Dave Thomas (*The Pragmatic Programmer* 的作者之一) has published 21
     different katas.
@@ -11843,107 +12044,107 @@ function getObject(obj)
 }
 </script>
 
-key 	Code
-backspace 	8
-tab 	9
-enter 	13
-shift 	16
-ctrl 	17
-alt 	18
-pause/break 	19
-caps lock 	20
-escape 	27
-page up 	33
-page down 	34
-end 	35
-home 	36
-left arrow 	37
-up arrow 	38
-right arrow 	39
-down arrow 	40
-insert 	45
-delete 	46
-0 	48
-1 	49
-2 	50
-3 	51
-4 	52
-5 	53
-6 	54
-7 	55
-8 	56
-9 	57
-a 	65
-b 	66
-c 	67
-d 	68
-e 	69
-f 	70
-g 	71
-h 	72
-i 	73
-j 	74
-k 	75
-l 	76
-m 	77
-n 	78
-o 	79
-p 	80
-q 	81
-r 	82
-s 	83
-t 	84
-u 	85
-v 	86
-w 	87
-x 	88
-y 	89
-z 	90
-left window key 	91
-right window key 	92
-select key 	93
-numpad 0 	96
-numpad 1 	97
-numpad 2 	98
-numpad 3 	99
-numpad 4 	100
-numpad 5 	101
-numpad 6 	102
-numpad 7 	103
+key     Code
+backspace   8
+tab     9
+enter   13
+shift   16
+ctrl    17
+alt     18
+pause/break     19
+caps lock   20
+escape  27
+page up     33
+page down   34
+end     35
+home    36
+left arrow  37
+up arrow    38
+right arrow     39
+down arrow  40
+insert  45
+delete  46
+0   48
+1   49
+2   50
+3   51
+4   52
+5   53
+6   54
+7   55
+8   56
+9   57
+a   65
+b   66
+c   67
+d   68
+e   69
+f   70
+g   71
+h   72
+i   73
+j   74
+k   75
+l   76
+m   77
+n   78
+o   79
+p   80
+q   81
+r   82
+s   83
+t   84
+u   85
+v   86
+w   87
+x   88
+y   89
+z   90
+left window key     91
+right window key    92
+select key  93
+numpad 0    96
+numpad 1    97
+numpad 2    98
+numpad 3    99
+numpad 4    100
+numpad 5    101
+numpad 6    102
+numpad 7    103
 
-Key 	Code
-numpad 8 	104
-numpad 9 	105
-multiply 	106
-add 	107
-subtract 	109
-decimal point 	110
-divide 	111
-f1 	112
-f2 	113
-f3 	114
-f4 	115
-f5 	116
-f6 	117
-f7 	118
-f8 	119
-f9 	120
-f10 	121
-f11 	122
-f12 	123
-num lock 	144
-scroll lock 	145
-semi-colon 	186
-equal sign 	187
-comma 	188
-dash 	189
-period 	190
-forward slash 	191
-grave accent 	192
-open bracket 	219
-back slash 	220
-close braket 	221
-single quote 	222
+Key     Code
+numpad 8    104
+numpad 9    105
+multiply    106
+add     107
+subtract    109
+decimal point   110
+divide  111
+f1  112
+f2  113
+f3  114
+f4  115
+f5  116
+f6  117
+f7  118
+f8  119
+f9  120
+f10     121
+f11     122
+f12     123
+num lock    144
+scroll lock     145
+semi-colon  186
+equal sign  187
+comma   188
+dash    189
+period  190
+forward slash   191
+grave accent    192
+open bracket    219
+back slash  220
+close braket    221
+single quote    222
 
 [mikeflynn/egg.js: A simple javascript library to add easter eggs to web pages.](https://github.com/mikeflynn/egg.js)
 
@@ -16981,18 +17182,18 @@ Refs & See also
 
 ---
 
-Αα	Alpha	Νν	Nu
-Ββ	Beta	Ξξ	Xi
-Γγ	Gamma	Οο	Omicron
-Δδ	Delta	Ππ	Pi
-Εε	Epsilon	Ρρ	Rho
-Ζζ	Zeta	Σσ	Sigma
-Ηη	Eta		Ττ	Tau
-Θθ	Theta	Υυ	Upsilon
-Ιι	Iota	Φφ	Phi
-Κκ	Kappa	Χχ	Chi
-Λλ	Lambda	Ψψ	Psi
-Μμ	Mu		Ωω	Omega
+Αα  Alpha   Νν  Nu
+Ββ  Beta    Ξξ  Xi
+Γγ  Gamma   Οο  Omicron
+Δδ  Delta   Ππ  Pi
+Εε  Epsilon Ρρ  Rho
+Ζζ  Zeta    Σσ  Sigma
+Ηη  Eta     Ττ  Tau
+Θθ  Theta   Υυ  Upsilon
+Ιι  Iota    Φφ  Phi
+Κκ  Kappa   Χχ  Chi
+Λλ  Lambda  Ψψ  Psi
+Μμ  Mu      Ωω  Omega
 
 * [Brook Taylor](http://en.wikipedia.org/wiki/Brook_Taylor)
 ![][taylor-portrait]
@@ -17392,19 +17593,19 @@ refs and see also
 1. 管卫东？
 2. 心态
     * 理性对待今天（面对考试和申请）
-	* 惯性是否干扰了你的学习？
+    * 惯性是否干扰了你的学习？
 3. SAT
     * 理念
-	    1. ~~Why~~ *vs.* **How**
-		2. 阅读
-		    * 不是博闻强记的能力，是在大量信息时一眼获得有效信息的能力（不要精度）
-			* 决策能力（比较）
-			* 速度：1. 找；2. (002)
-		3. xxxx
-		4. 写作
-		    * 遣词（形象化）
-			* Preferred 更好的
-			* 思维与语序
+        1. ~~Why~~ *vs.* **How**
+        2. 阅读
+            * 不是博闻强记的能力，是在大量信息时一眼获得有效信息的能力（不要精度）
+            * 决策能力（比较）
+            * 速度：1. 找；2. (002)
+        3. xxxx
+        4. 写作
+            * 遣词（形象化）
+            * Preferred 更好的
+            * 思维与语序
 
 * 选真题
 * 第一次做题时，能操作吗？
@@ -19432,10 +19633,10 @@ json 模块的 `dumps()` 和 `loads()` 函数是定义得非常好的接口的�
     >>> re.match(r'^(\d+?)(0*)$', '102300').groups()
     ('1023', '00')
 
-	# 编译:
-	>>> re_telephone = re.compile(r'^(\d{3})-(\d{3,8})$')
-	# 使用：
-	>>> re_telephone.match('010-12345').groups()
+    # 编译:
+    >>> re_telephone = re.compile(r'^(\d{3})-(\d{3,8})$')
+    # 使用：
+    >>> re_telephone.match('010-12345').groups()
     # ('010', '12345')
     ```
 
@@ -21822,8 +22023,8 @@ VA 番茄助手的 rename 居然不检查名称的正确性，你可以把 `type
 问题。
 
 ```plain
-Error	1	error C2248: 'QObject::QObject' : cannot access private member
-declared in class 'QObject' ModelLane.h	23	1 ModelStructure
+Error   1   error C2248: 'QObject::QObject' : cannot access private member
+declared in class 'QObject' ModelLane.h 23  1 ModelStructure
 ```
 
 `QObject`{.cpp} 从设计上不可拷贝，所以这样的代码是错误的：
@@ -22188,10 +22389,10 @@ return i;
 
 string CommandLine::GetNextWord()
 {
-	if((int)pos < (int)commandLine.size())
-		return commandLine[pos++];   // Retrieves the next word from the command line vector.
-	else							 // State is maintained by 'pos'
-		return "";
+    if((int)pos < (int)commandLine.size())
+        return commandLine[pos++];   // Retrieves the next word from the command line vector.
+    else                             // State is maintained by 'pos'
+        return "";
 }
 ```
 
@@ -22201,9 +22402,9 @@ enum ERRTYPE {NOERROR, WARNING, FATAL};
 class VCOption
 {
 public:
-	string vc;
-	bool space;
-	ERRTYPE error;
+    string vc;
+    bool space;
+    ERRTYPE error;
 };
 
 #include <string>
@@ -22214,12 +22415,12 @@ using namespace std;
 class ReturnItem
 {
 public:
-	ReturnItem() {bestMatch = ""; bestMap = ""; remainingString = ""; space = true; error=NOERROR;}
-	~ReturnItem() {} ;
-	// ReturnItem& operator=(ReturnItem const *rhs);
-	string bestMatch, bestMap, remainingString;
-	bool space;
-	ERRTYPE error;
+    ReturnItem() {bestMatch = ""; bestMap = ""; remainingString = ""; space = true; error=NOERROR;}
+    ~ReturnItem() {} ;
+    // ReturnItem& operator=(ReturnItem const *rhs);
+    string bestMatch, bestMap, remainingString;
+    bool space;
+    ERRTYPE error;
 };
 
 #define CCSTATE (0)
@@ -22229,15 +22430,15 @@ public:
 class Input
 {
 public:
-	Input() {};
-	~Input() {};
-	int ReadInputFile(char const *fileName);
-	int CreatePairsFromCode();
-	ReturnItem BestMapping(string &origOpt);
+    Input() {};
+    ~Input() {};
+    int ReadInputFile(char const *fileName);
+    int CreatePairsFromCode();
+    ReturnItem BestMapping(string &origOpt);
 private:
-	bool AddPair(string other, string vc, bool space = true);
-	bool AddPair(string other, string vc, ERRTYPE error);
-	vector<pair<string, VCOption> > optionPairs;
+    bool AddPair(string other, string vc, bool space = true);
+    bool AddPair(string other, string vc, ERRTYPE error);
+    vector<pair<string, VCOption> > optionPairs;
 };
 
 #include <fstream>
@@ -22257,22 +22458,22 @@ Actions: This pushes the pair <other, vc> onto the vector optionPairs.
 */
 bool Input::AddPair(string other, string vc, bool space)
 {
-	VCOption vcOption;
-	vcOption.space = space;
-	vcOption.vc = vc;
-	vcOption.error = NOERROR;
-	optionPairs.push_back(make_pair(other, vcOption));
-	return true;
+    VCOption vcOption;
+    vcOption.space = space;
+    vcOption.vc = vc;
+    vcOption.error = NOERROR;
+    optionPairs.push_back(make_pair(other, vcOption));
+    return true;
 }
 
 bool Input::AddPair(string other, string vc, ERRTYPE error)
 {
-	VCOption vcOption;
-	vcOption.space = true;
-	vcOption.vc = vc;
-	vcOption.error = error;
-	optionPairs.push_back(make_pair(other, vcOption));
-	return true;
+    VCOption vcOption;
+    vcOption.space = true;
+    vcOption.vc = vc;
+    vcOption.error = error;
+    optionPairs.push_back(make_pair(other, vcOption));
+    return true;
 }
 
 /*
@@ -22288,150 +22489,150 @@ file named fileName.
 int Input::ReadInputFile(char const *fileName)
 {
 
-	if(fileName == NULL)
-		return -1;
-	string ccOption, vcOption;
-	string option;
-	char temp[LINESIZE];
-	ifstream inputFile(fileName);
-	if(!inputFile)
-	{
-		cerr << "No file named : " << fileName << endl;
-		return -1;
-	}
-	bool spaceState = false;
-	int state = CCSTATE;
-	while(inputFile >> option)
-	{
-		switch(state)
-		{
-		case CCSTATE:
-			if(option == "@@@")
-			{
-				inputFile.getline(temp, LINESIZE);
-				break;
-			}
-			if(option == "~~~")
-			{
-				return 1;
-			}
-			if(option == "***")
-			{
-				spaceState = false;
-				state = VCSTATE;
-			}
-			else
-			{
-				if(spaceState)
-				{
-					ccOption += " ";
-				}
-				spaceState = true;
-				ccOption += option;
-			}
-			break;
-		case VCSTATE:
-			if(option == "!!!")
-			{
-				spaceState = false;
-				state = CCSTATE;
-				AddPair(ccOption, vcOption);
-				ccOption = "";
-				vcOption = "";
-			}
-			else if(option == "###")
-			{
-				spaceState = false;
-				state = CCSTATE;
-				AddPair(ccOption, vcOption, false);
-				ccOption = "";
-				vcOption = "";
-			}
-			else if(option == "EEE")
-			{
-				spaceState = false;
-				state = CCSTATE;
-				AddPair(ccOption, vcOption, FATAL);
-				ccOption = "";
-				vcOption = "";
-			}
-			else if(option == "^^^")
-			{
-				spaceState = false;
-				state = CCSTATE;
-				AddPair(ccOption, vcOption, WARNING);
-				ccOption = "";
-				vcOption = "";
-			}
-			else
-			{
-				if(spaceState)
-				{
-					vcOption += " ";
-				}
-				spaceState = true;
-				vcOption += option;
-			}
-			break;
-		default:
-			cerr << "Invalid State" << endl;
-			return -1;
-		}
-	}
-	return 1;
+    if(fileName == NULL)
+        return -1;
+    string ccOption, vcOption;
+    string option;
+    char temp[LINESIZE];
+    ifstream inputFile(fileName);
+    if(!inputFile)
+    {
+        cerr << "No file named : " << fileName << endl;
+        return -1;
+    }
+    bool spaceState = false;
+    int state = CCSTATE;
+    while(inputFile >> option)
+    {
+        switch(state)
+        {
+        case CCSTATE:
+            if(option == "@@@")
+            {
+                inputFile.getline(temp, LINESIZE);
+                break;
+            }
+            if(option == "~~~")
+            {
+                return 1;
+            }
+            if(option == "***")
+            {
+                spaceState = false;
+                state = VCSTATE;
+            }
+            else
+            {
+                if(spaceState)
+                {
+                    ccOption += " ";
+                }
+                spaceState = true;
+                ccOption += option;
+            }
+            break;
+        case VCSTATE:
+            if(option == "!!!")
+            {
+                spaceState = false;
+                state = CCSTATE;
+                AddPair(ccOption, vcOption);
+                ccOption = "";
+                vcOption = "";
+            }
+            else if(option == "###")
+            {
+                spaceState = false;
+                state = CCSTATE;
+                AddPair(ccOption, vcOption, false);
+                ccOption = "";
+                vcOption = "";
+            }
+            else if(option == "EEE")
+            {
+                spaceState = false;
+                state = CCSTATE;
+                AddPair(ccOption, vcOption, FATAL);
+                ccOption = "";
+                vcOption = "";
+            }
+            else if(option == "^^^")
+            {
+                spaceState = false;
+                state = CCSTATE;
+                AddPair(ccOption, vcOption, WARNING);
+                ccOption = "";
+                vcOption = "";
+            }
+            else
+            {
+                if(spaceState)
+                {
+                    vcOption += " ";
+                }
+                spaceState = true;
+                vcOption += option;
+            }
+            break;
+        default:
+            cerr << "Invalid State" << endl;
+            return -1;
+        }
+    }
+    return 1;
 }
 
 // This code here just loads the optionPairs from the code.  It acts like ReadInputFile.
 // This is only called if you define CCMEMORY
 int Input::CreatePairsFromCode()
 {
-	AddPair("-Wall", "/Wall");
-	AddPair("-O2", "/O2");
-	AddPair("-c", "/c");
-	AddPair("-S", "/s");
-	AddPair("-E", "/EP");
+    AddPair("-Wall", "/Wall");
+    AddPair("-O2", "/O2");
+    AddPair("-c", "/c");
+    AddPair("-S", "/s");
+    AddPair("-E", "/EP");
    /*
     $ ./ccWrapper.exe test -E
     cl test /EP
     ...
     */
 
-	AddPair("-o", "/Fe", false);
-	AddPair("--help", "/?");
-	AddPair("-ansi", "/Za");
-	AddPair("-funsigned-char", "/J");
-	AddPair("-pedantic", "/Za");
-	AddPair("-pedantic-errors", "/Za");
-	AddPair("-w", "/W0");
-	AddPair("-ggdb", "/Zi");
-	AddPair("-gstabs", "/Zi");
-	AddPair("-gstabs+", "/Zi");
-	AddPair("-gcoff", "/Zi");
-	AddPair("-gxcoff", "/Zi");
-	AddPair("-O0", "/Od");
-	AddPair("-O1", "/O2");
-	AddPair("-O2", "/O2");
-	AddPair("-O3", "/Ox");
-	AddPair("-Os", "/O1");
-	AddPair("-float-store", "/Op");
-	AddPair("-fno-default-inline", "/Ob0");
-	AddPair("-fomit-frame-pointer", "/Oy");
-	AddPair("-fno-inline", "/Ob0");
-	AddPair("-finline-functions", "/Ob2");
-	AddPair("-include", "/FI");
-	AddPair("-nostdinc", "/X" );
-	AddPair("-undef", "/u" );
-	AddPair("-C", "/C" );
-	AddPair("-P", "/P" );
-	AddPair("-D", "/D");
-	AddPair("-U", "/U");
-	AddPair("-nodefaultlibs", "/link /NODEFAULTLIB");
-	AddPair("-nostdlib",  "/link /NODEFAULTLIB");
-	AddPair("-I", "/I");
-	AddPair("-L", "/link /LIBPATH:");
-	AddPair("-fpack-struct", "/Zp1");
-	AddPair("-fstack-check", "/GS");
-	return 1;
+    AddPair("-o", "/Fe", false);
+    AddPair("--help", "/?");
+    AddPair("-ansi", "/Za");
+    AddPair("-funsigned-char", "/J");
+    AddPair("-pedantic", "/Za");
+    AddPair("-pedantic-errors", "/Za");
+    AddPair("-w", "/W0");
+    AddPair("-ggdb", "/Zi");
+    AddPair("-gstabs", "/Zi");
+    AddPair("-gstabs+", "/Zi");
+    AddPair("-gcoff", "/Zi");
+    AddPair("-gxcoff", "/Zi");
+    AddPair("-O0", "/Od");
+    AddPair("-O1", "/O2");
+    AddPair("-O2", "/O2");
+    AddPair("-O3", "/Ox");
+    AddPair("-Os", "/O1");
+    AddPair("-float-store", "/Op");
+    AddPair("-fno-default-inline", "/Ob0");
+    AddPair("-fomit-frame-pointer", "/Oy");
+    AddPair("-fno-inline", "/Ob0");
+    AddPair("-finline-functions", "/Ob2");
+    AddPair("-include", "/FI");
+    AddPair("-nostdinc", "/X" );
+    AddPair("-undef", "/u" );
+    AddPair("-C", "/C" );
+    AddPair("-P", "/P" );
+    AddPair("-D", "/D");
+    AddPair("-U", "/U");
+    AddPair("-nodefaultlibs", "/link /NODEFAULTLIB");
+    AddPair("-nostdlib",  "/link /NODEFAULTLIB");
+    AddPair("-I", "/I");
+    AddPair("-L", "/link /LIBPATH:");
+    AddPair("-fpack-struct", "/Zp1");
+    AddPair("-fstack-check", "/GS");
+    return 1;
 }
 
 /*
@@ -22447,30 +22648,30 @@ If there is more than one switch that matches origOpt then the longest match is 
 */
 ReturnItem Input::BestMapping(string &origOpt)
 {
-	ReturnItem bestItem;
-	string currentStr;
-	string::size_type idx;
-	vector<pair<string, VCOption> >::iterator iterOpt, endOpt;
-	endOpt = optionPairs.end();
-	bestItem.remainingString = origOpt;
-	for(iterOpt = optionPairs.begin(); iterOpt != endOpt; ++iterOpt)
-	{
-		currentStr = iterOpt->first;
-		idx = origOpt.find(currentStr, 0);
-		if(idx == 0)
-		{
-			if(currentStr.size() > bestItem.bestMatch.size())
-			{
-				bestItem.bestMatch = currentStr;
-				bestItem.bestMap = iterOpt->second.vc;
-				bestItem.remainingString = origOpt.substr(currentStr.size());
-				bestItem.space = iterOpt->second.space;
-				bestItem.error = iterOpt->second.error;
-			}
-		}
-	}
+    ReturnItem bestItem;
+    string currentStr;
+    string::size_type idx;
+    vector<pair<string, VCOption> >::iterator iterOpt, endOpt;
+    endOpt = optionPairs.end();
+    bestItem.remainingString = origOpt;
+    for(iterOpt = optionPairs.begin(); iterOpt != endOpt; ++iterOpt)
+    {
+        currentStr = iterOpt->first;
+        idx = origOpt.find(currentStr, 0);
+        if(idx == 0)
+        {
+            if(currentStr.size() > bestItem.bestMatch.size())
+            {
+                bestItem.bestMatch = currentStr;
+                bestItem.bestMap = iterOpt->second.vc;
+                bestItem.remainingString = origOpt.substr(currentStr.size());
+                bestItem.space = iterOpt->second.space;
+                bestItem.error = iterOpt->second.error;
+            }
+        }
+    }
 
-	return bestItem;
+    return bestItem;
 }
 ```
 
@@ -22665,47 +22866,47 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-	if(argc < 2)
-		return -1;
+    if(argc < 2)
+        return -1;
 
-	string theOutput = "cl ";
-	string currentArg;
-	ReturnItem mapping;
-	Input theInput;
-	CommandLine theCommandLine;
+    string theOutput = "cl ";
+    string currentArg;
+    ReturnItem mapping;
+    Input theInput;
+    CommandLine theCommandLine;
 
 #ifndef CCMEMORY  // if we compile to read from memory or to read from a file
-	if(theInput.ReadInputFile("ccFile.cfg") == -1)  // the file name is fixed
-		return -1;
+    if(theInput.ReadInputFile("ccFile.cfg") == -1)  // the file name is fixed
+        return -1;
 #else
-	theInput.CreatePairsFromCode();
+    theInput.CreatePairsFromCode();
 #endif
-	// here we read in the command line
-	theCommandLine.ReadCommandLine(argc - 1, &argv[1]);
-	// iterate over each word in the command line
-	while("" != (currentArg = theCommandLine.GetNextWord()))
-	{
-		// find the best mapping for each word
-		mapping = theInput.BestMapping(currentArg);
-		// create the output string
-		if(mapping.error == FATAL)
-		{
-			cerr << "Error with flag " << mapping.bestMap << " -- ABORTING\n";
-			return -1;
-		}
-		if(mapping.error == WARNING)
-		{
-			cerr << "Warning: Flag may not be properly supported: " << mapping.bestMap << endl;
-		}
-		theOutput += mapping.bestMap + mapping.remainingString;
-		if(mapping.space)
-			theOutput += " ";
+    // here we read in the command line
+    theCommandLine.ReadCommandLine(argc - 1, &argv[1]);
+    // iterate over each word in the command line
+    while("" != (currentArg = theCommandLine.GetNextWord()))
+    {
+        // find the best mapping for each word
+        mapping = theInput.BestMapping(currentArg);
+        // create the output string
+        if(mapping.error == FATAL)
+        {
+            cerr << "Error with flag " << mapping.bestMap << " -- ABORTING\n";
+            return -1;
+        }
+        if(mapping.error == WARNING)
+        {
+            cerr << "Warning: Flag may not be properly supported: " << mapping.bestMap << endl;
+        }
+        theOutput += mapping.bestMap + mapping.remainingString;
+        if(mapping.space)
+            theOutput += " ";
 
-	}
-	cout << theOutput << endl;
-	// execute the generated output string.  'cl.exe' will need to be in the users path
-	system(theOutput.c_str());
-	return 0;
+    }
+    cout << theOutput << endl;
+    // execute the generated output string.  'cl.exe' will need to be in the users path
+    system(theOutput.c_str());
+    return 0;
 }
 ```
 </div>
@@ -22778,7 +22979,7 @@ this man... is ... I don't know what to say...
 
 ---
 
-`OBJ = 		$(SRC:.c=.o)`{.makefile}
+`OBJ =      $(SRC:.c=.o)`{.makefile}
 
 palette `['pælət]`
 
@@ -22906,18 +23107,18 @@ refs and see also
 ```bash
 # 看看当前的 upstream
 $ git remote -v
-origin	git@github.com:district10/blog.git (fetch)
-origin	git@github.com:district10/blog.git (push)
+origin  git@github.com:district10/blog.git (fetch)
+origin  git@github.com:district10/blog.git (push)
 
 # 添加一个
 $ git remote add coding https://git.coding.net/dvorak4tzx/blog.git
 
 # 看看是否加入成功
 $ git remote -v
-coding	https://git.coding.net/dvorak4tzx/blog.git (fetch)
-coding	https://git.coding.net/dvorak4tzx/blog.git (push)
-origin	git@github.com:district10/blog.git (fetch)
-origin	git@github.com:district10/blog.git (push)
+coding  https://git.coding.net/dvorak4tzx/blog.git (fetch)
+coding  https://git.coding.net/dvorak4tzx/blog.git (push)
+origin  git@github.com:district10/blog.git (fetch)
+origin  git@github.com:district10/blog.git (push)
 
 # 把代码传上去
 $ git push coding master
@@ -25577,8 +25778,8 @@ Disallow:
 
     $ ifup br0
     $ brctl  show
-    bridge name	bridge id		STP enabled	interfaces
-    br0		8000.02000a0080e1	no		eth0
+    bridge name bridge id       STP enabled interfaces
+    br0     8000.02000a0080e1   no      eth0
     ```
 
 [Google Pro Tip: Use Back-of-the-envelope-calculations to Choose the Best Design - High Scalability -](http://highscalability.com/blog/2011/1/26/google-pro-tip-use-back-of-the-envelope-calculations-to-choo.html)
@@ -28601,7 +28802,7 @@ Disallow:
 
 [Duff's device - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Duff%27s_device)
 
-[无插件Vim编程技巧 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/11312.html)
+[无插件 Vim 编程技巧 | 酷 壳 - CoolShell.cn](http://coolshell.cn/articles/11312.html)
 
 :   should know
 

@@ -1796,3 +1796,34 @@ significant bit in the output.
     ...
     ```
 
+[机器学习（一）：生成学习算法Generative Learning algorithms - zjgtan - 博客园](http://www.cnblogs.com/zjgtan/archive/2013/06/08/3127490.html)
+
+Rectifier (neural networks)
+
+:   In the context of artificial neural networks, the rectifier is an
+    activation function defined as
+
+    $$f(x) = \max(0, x)$$
+
+    where x is the input to a neuron. This is also known as a ramp function,
+    and it is analogous to half-wave rectification in electrical engineering.
+    This activation function has been argued to be more biologically plausible
+    than the widely used logistic sigmoid (which is inspired by probability
+    theory; see logistic regression) and its more practical counterpart, the
+    hyperbolic tangent. The rectifier is, as of 2015, the most popular
+    activation function for deep neural networks.
+
+    ![Plot of the rectifier (blue) and softplus (green) functions near
+        x = 0.](https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Rectifier_and_softplus_functions.svg/330px-Rectifier_and_softplus_functions.svg.png)
+
+    A unit employing the rectifier is also called a rectified linear unit (ReLU).
+
+    A smooth approximation to the rectifier is the analytic function
+
+    $$f(x) = \ln(1 + e^x)$$
+
+    which is called the softplus function. The derivative of softplus is
+    $f'(x) = e^x / (e^x+1) = 1 / (1 + e^{-x})$, i.e. the logistic function.
+
+    Rectified linear units find applications in computer vision, and speech
+    recognition using deep neural nets.

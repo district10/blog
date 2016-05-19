@@ -1,18 +1,55 @@
-" gvim ~/.vimrc, add 'source path/to/this/file'
+" echo 'source path/to/this/file' > ~/.vimrc
+" e.g. `source d:/tzx/git/blog/vimrc.vim'
+
 set nocompatible
-
-source $VIMRUNTIME/vimrc_example.vim
-" source $VIMRUNTIME/mswin.vim
-" behave mswin
-
 set cursorline
+set ruler
+set backspace=indent,eol,start
+set nobackup
+set history=50
+set showcmd
+set incsearch       " do incremental searching
+set ignorecase
 set expandtab ts=4 sw=4 ai
+set nu
+set guioptions=""
+set iskeyword-=_    " two words: twenty_one
+
+set nobackup
+set nowritebackup
+set noswapfile
+
+function! PanguSpacing()                                " :call PanguSpacing()
+    silent! '<,'>s/\([\u4e00-\u9fa5\u3040-\u30FF]\)\([a-zA-Z0-9@&=\[\$\%\^\-\+(\/\\]\)/\1 \2/g
+    silent! '<,'>s/\([a-zA-Z0-9!&;=\]\,\.\:\?\$\%\^\-\+\)\/\\]\)\([\u4e00-\u9fa5\u3040-\u30FF]\)/\1 \2/g
+endfunction
+function! PanguSpacingExtra()                           " :call PanguSpacingExtra()
+    call PanguSpacing()
+    silent! %s/\([\u4e00-\u9fa5\u3040-\u30FF]\)\.\($\|\s\+\)/\1。/g
+    silent! %s/\([\u4e00-\u9fa5\u3040-\u30FF]\),\s*/\1，/g
+    silent! %s/\([\u4e00-\u9fa5\u3040-\u30FF]\);\s*/\1；/g
+    silent! %s/\([\u4e00-\u9fa5\u3040-\u30FF]\)!\s*/\1！/g
+    silent! %s/\([\u4e00-\u9fa5\u3040-\u30FF]\):\s*/\1：/g
+    silent! %s/\([\u4e00-\u9fa5\u3040-\u30FF]\)?\s*/\1？/g
+    silent! %s/\([\u4e00-\u9fa5\u3040-\u30FF]\)\\\s*/\1、/g
+    silent! %s/(\([\u4e00-\u9fa5\u3040-\u30FF]\)/（\1/g
+    silent! %s/\([\u4e00-\u9fa5\u3040-\u30FF]\))/\1）/g
+    silent! %s/\[\([\u4e00-\u9fa5\u3040-\u30FF]\)/『\1/g
+    silent! %s/\([\u4e00-\u9fa5\u3040-\u30FF]\)\]/\1』/g
+    silent! %s/<\([\u4e00-\u9fa5\u3040-\u30FF]\)/《\1/g
+    silent! %s/\([\u4e00-\u9fa5\u3040-\u30FF]\)>/\1》/g
+endfunction
+
+" set laststatus=2
+" set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%h\ \ \ Line:\ %l
+
 set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,cp936
 set formatoptions+=BmM
-set ignorecase
+
+map Q gq            " use Q for formatting
 
 if has("gui_running")
   if has("gui_gtk2")
@@ -24,27 +61,79 @@ if has("gui_running")
   endif
 endif
 
-source $VIMRUNTIME/delmenu.vim
-source $VIMRUNTIME/menu.vim
+" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
+" so that you can undo CTRL-U after inserting a line break.
+inoremap <C-U> <C-G>u<C-U>
 
-set nu
-set guioptions=""
-"set laststatus=2
-"set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%h\ \ \ Line:\ %l
+" In many terminal emulators the mouse works just fine, thus enable it.
+"
+"       if has('mouse')
+"         set mouse=a
+"       endif
 
-" Delete trailing white space on save, useful for Python and CoffeeScript ;)
+if &t_Co > 2 || has("gui_running")
+  syntax on
+  set hlsearch
+endif
+
+if has("autocmd")
+    filetype plugin indent on
+    augroup vimrcEx
+        au!
+        autocmd FileType text setlocal textwidth=78
+        autocmd BufReadPost *
+            \ if line("'\"") > 1 && line("'\"") <= line("$") |
+            \   exe "normal! g`\"" |
+            \ endif
+    augroup END
+else
+    set autoindent
+endif " has("autocmd")
+
+if !exists(":DiffOrig")
+  command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
+          \ | wincmd p | diffthis
+endif
+
+"   source $VIMRUNTIME/mswin.vim
+"
+"       vnoremap <C-X> "+x
+"       vnoremap <S-Del> "+x
+"       vnoremap <C-C> "+y
+"       vnoremap <C-Insert> "+y
+"       map <C-V>       "+gP
+"       map <S-Insert>      "+gP
+"       cmap <C-V>      <C-R>+
+"       cmap <S-Insert>     <C-R>+
+"       exe 'inoremap <script> <C-V> <C-G>u' . paste#paste_cmd['i']
+"       exe 'vnoremap <script> <C-V> ' . paste#paste_cmd['v']
+"       imap <S-Insert>     <C-V>
+"       vmap <S-Insert>     <C-V>
+"       noremap <C-Q>       <C-V>   " Use CTRL-Q to do what CTRL-V used to do
+"       noremap <C-S>       :update<CR> " Use CTRL-S for saving, also in Insert mode
+"       vnoremap <C-S>      <C-C>:update<CR>
+"       inoremap <C-S>      <C-O>:update<CR>
+"       " CTRL-A is Select all
+"       noremap <C-A> gggH<C-O>G
+"       inoremap <C-A> <C-O>gg<C-O>gH<C-O>G
+"       cnoremap <C-A> <C-C>gggH<C-O>G
+"       onoremap <C-A> <C-C>gggH<C-O>G
+"       snoremap <C-A> <C-C>gggH<C-O>G
+"       xnoremap <C-A> <C-C>ggVG
+
+" Delete trailing white space on save
 func! DeleteTrailingWS()
-  exe "normal mz"
-  %s/\s\+$//ge
-  exe "normal `z"
+    exe "normal mz"
+    retab
+    %s/\s\+$//ge
+    exe "normal `z"
 endfunc
-autocmd BufWrite *.md :call DeleteTrailingWS()
+autocmd BufWrite *.* :call DeleteTrailingWS()
 
 vnoremap <silent> * :call VisualSelection('f')<CR>
 vnoremap <silent> # :call VisualSelection('b')<CR>
 vnoremap <silent> gv :call VisualSelection('gv')<CR>
 vnoremap <silent> r :call VisualSelection('replace')<CR>
-
 function! VisualSelection(direction) range
     let l:saved_reg = @"
     execute "normal! vgvy"
@@ -99,10 +188,6 @@ function MyDiff()
    endif
 endfunction
 
-set nobackup
-set nowritebackup
-set noswapfile
-
 " silent execute NeoKbd()
 function! NeoKbd()
     imap a b
@@ -114,20 +199,21 @@ endfunction
 "
 " instead, use `:set keymap=dvorak` (works only in insert mode)
 
-ab rasa refs and see also
-ab fab      <i class="icon-book"></i>
-ab facd     <i class="icon-cloud-download"></i>
-ab faes     <i class="icon-exclamation-sign"></i>
-ab faf      <i class="icon-flag"></i>
-ab fah      <i class="icon-heart"></i>
-ab fahe     <i class="icon-heart-empty"></i>
-ab fais     <i class="icon-info-sign"></i>
-ab falb     <i class="icon-lightbulb"></i>
-ab fapp     <i class="icon-pushpin"></i>
-ab fas      <i class="icon-star"></i>
-ab fase     <i class="icon-star-empty"></i>
-ab fat      <i class="icon-tag"></i>
-ab fats     <i class="icon-tags"></i>
-ab fatd     <i class="icon-thumbs-down"></i>
-ab qwhudoc http://whudoc.qiniudn.com/2016/
-ab qgnat   http://gnat.qiniudn.com/
+ab rasa             refs and see also
+ab fab              <i class="icon-book"></i>
+ab facd             <i class="icon-cloud-download"></i>
+ab faes             <i class="icon-exclamation-sign"></i>
+ab faf              <i class="icon-flag"></i>
+ab fah              <i class="icon-heart"></i>
+ab fahe             <i class="icon-heart-empty"></i>
+ab fais             <i class="icon-info-sign"></i>
+ab falb             <i class="icon-lightbulb"></i>
+ab fapp             <i class="icon-pushpin"></i>
+ab fas              <i class="icon-star"></i>
+ab fase             <i class="icon-star-empty"></i>
+ab fat              <i class="icon-tag"></i>
+ab fats             <i class="icon-tags"></i>
+ab fatd             <i class="icon-thumbs-down"></i>
+ab qwhudoc          http://whudoc.qiniudn.com/2016/
+ab qgnat            http://gnat.qiniudn.com/
+ab tbq              ```tzx-bigquote

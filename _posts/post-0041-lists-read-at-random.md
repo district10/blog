@@ -142,6 +142,49 @@ programming language. **Artifacts describe automated behavior or control
 sequences, such as database requests or grammar rules, or user-generated
 content.**
 
+这个词也困扰过我。不过现在我大概算是理解了。
+
+Artifact 的词源是拉丁语 arte + factum，arte 是「艺术」或者「技能」的意思，
+factum 则是「做、造」的动名词形式，artifact 的意思其实就是「用技艺制造（出来的
+东西）」，所以这个词经常可以翻译为「（手）工艺品」。但它的意义其实不限于此——我
+们日常所说的「（手）工艺品」一般是指英文的 handicraft，也就是「手制品」。一切手
+制品其实都是用技艺制造出来的，故而可以说一切 handicraft 都是 artifact，但反过来
+不行。
+
+Artifact 一词强调的物体属性其实是非自然——一块一万年前的燧石不是 artifact，但一
+只原始人使用的石斧就是了（此时不应将其翻译为「手工艺品」而是「手工制品」，因为
+「工艺品」在中文里面暗示这个东西带有一定的艺术欣赏价值，但古人使用的工具并不是
+拿来当摆设的）。登月时看到月球上的陨石坑不是 artifact，但如果看到一块表面光滑的
+六面体黑色方形石碑，那就得叫 artifact——即便它显然不可能是（已知的）人类所造。哪
+怕某种东西是看不到摸不着的，但只要它不是自然形成，也可以算是 artifact，比如互联
+网。这个意义通常很难翻译，中文里面没有完全对等的概念，只能视乎语境称为「人造物
+」或者「非自然产物」，如果「非自然」的属性并不重要，那也可以简单地叫做「制品」
+或者「产物」。
+
+对了，有个同源的词，artificial，一般翻译为「人工的」，与「天然的」相对：
+Artificial intelligence is no match for natural stupidity。
+
+濤吳的解釋已經很好了，補充一段 Bruce Sterling《Shaping Things》裏的文章。他把人
+造物的歷史分爲 Artifacts、MACHINES、PRODUCTS、GIZMOS、SPIME 幾個階段，它們對應
+的使用者分別是獵人和農夫、顧客、消費者、終端用戶、和「信息牛仔」（wrangler）。
+我們目前正處在從 GIZMOS 階段到 SPIME 階段的過渡期。
+
+They're usaully referring to something you create, usually as a side effect, to
+help you accomplish something. Perhaps a diagram, a design document,a GUI
+prototype, http://en.wikipedia.org/wiki/Artifact_(software_development) has
+more insight.
+
+(感觉这个解释就挺清楚。Artifact 是一些辅助自己开发的工具。)
+
+(Note, In many software tools, an artifact have a much more narrow meaning,
+meaning a file/library/executable that's produced when you build/compile
+something)
+
+refs and see also
+
+  - [「artifact」是什么意思？在不同的情景下一般有哪些译法？ - 英语 - 知乎](http://www.zhihu.com/question/20123266)
+  - [design patterns - Artifacts? What it actually means? - Stack Overflow](http://stackoverflow.com/questions/5204485/artifacts-what-it-actually-means)
+
 [artifact]: http://en.wikipedia.org/wiki/Artifact_(software_development)
 [tangible]: http://dict.youdao.com/search?q=tangible&keyfrom=dict.index
 
@@ -784,8 +827,8 @@ Wacom(和冠): a Brand
 
 [Rasputin] was a **healer**, **a man of God** and **an equal rights activist**.
 For nearly a century, Grigory Rasputin, spiritual advisor to Russia's last Tsar
-and Tsarina, has been unjustly maligned simply because history is written by
-the politically...
+and Tsarina, has been unjustly maligned (`[mə'laɪn]`, 污蔑) simply because
+history is written by the politically...
 
 长得有点个性。
 
@@ -810,6 +853,8 @@ importance of being part of a group and helping for the common good.**"
 <div class="tzx-fright">
 ![Cassandra][cassandra-pic]
 </div>
+
+`[kə'sændrə]`
 
 **In Greek mythology**, [Cassandra] (Greek Κασσάνδρα, also Κασάνδρα; ), also
 known as **Alexandra** or **Kassandra**, was the **daughter of King Priam and
@@ -1068,6 +1113,8 @@ glyphs along with their Unicode code points and HTML entities.
 
 你能看出来上面那句话和 HAL 来自哪儿吗？
 
+在 CSS 里只要设置 `quotes: '"' '"' "'" "'"`{.css} 就可以了。
+
 see also [Quotation Mark][quotation-mark]
 
 [quotation-mark-glyphs]: http://en.wikipedia.org/wiki/Quotation_mark_glyphs
@@ -1220,7 +1267,23 @@ Narcissus is the origin of the term **narcissism, a fixation with oneself**.
 
 ### Comic Sans
 
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/ComicSansSpec3.svg/330px-ComicSansSpec3.svg.png)
+
 [一个被无情鄙视的字体。][comic-sans]
+
+Comic Sans MS, commonly referred to as Comic Sans, is a sans-serif casual
+script typeface designed by Vincent Connare and released in 1994 by Microsoft
+Corporation. It is a casual, non-connecting script inspired by comic book
+lettering, intended for use in informal documents and educational materials.
+
+The typeface has been supplied with Microsoft Windows since the introduction of
+Windows 95, initially as a supplemental font in the Windows Plus Pack and later
+in Microsoft Comic Chat. Describing it, Microsoft has explained that "this
+casual but legible face has proved very popular with a wide variety of
+people."
+
+The typeface's widespread use, often in situations for which it was not
+intended, has been criticized.
 
 [comic-sans]: http://en.wikipedia.org/wiki/Comic_Sans
 
@@ -1686,10 +1749,10 @@ MVC 模式的目的是实现一种动态的程式设计，使后续对程序的�
 使程序结构更加直观。软件系统通过对自身基本部分分离的同时也赋予了各个基本部分应有的功能。
 专业人员可以通过自身的专长分组：
 
-*（控制器 Controller）- 负责转发请求，对请求进行处理。
-*（视图 View） - 界面设计人员进行图形界面设计。
-*（模型 Model） - 程序员编写程序应有的功能（实现算法等等）、
-  数据库专家进行数据管理和数据库设计(可以实现具体的功能)。
+  - （控制器 Controller）- 负责转发请求，对请求进行处理。
+  - （视图 View） - 界面设计人员进行图形界面设计。
+  - （模型 Model） - 程序员编写程序应有的功能（实现算法等等）、数据库专家进行数
+    据管理和数据库设计(可以实现具体的功能)。
 
 [mvc]: http://zh.wikipedia.org/wiki/MVC
 
@@ -1810,10 +1873,10 @@ billion people, or about one-fifth of the world's population, speak some form
 of Chinese as their first language.
 
 * Language codes:
-    + ISO 639-1	zh
-    + ISO 639-2	chi (B)
+    + ISO 639-1 zh
+    + ISO 639-2 chi (B)
     + zho (T)
-    + ISO 639-3	zho – inclusive code
+    + ISO 639-3 zho – inclusive code
     + Individual codes:
         - cdo – Min Dong
         - cjy – Jinyu
@@ -1831,8 +1894,8 @@ of Chinese as their first language.
         - och – Old Chinese
         - ltc – Late Middle Chinese
         - lzh – Classical Chinese
-    + Glottolog	sini1245
-    + Linguasphere	79-AAA
+    + Glottolog sini1245
+    + Linguasphere  79-AAA
 
 [chinese-language]: https://en.wikipedia.org/wiki/Chinese_language
 
@@ -2665,6 +2728,8 @@ Microsoft as the lead architect of C#** and **core developer on TypeScript**.
 
 Turbo Pascal 编译器的主要作者， Delphi 和 C# 之父，同时也是 .NET 创立者。
 
+《Borland 传奇》里讲了他写的汇编是如何的牛逼轰轰，以及 Gates 怎么亲自去挖他到微软。
+
 [anders-hejlsberg]: http://en.wikipedia.org/wiki/Anders_Hejlsberg
 [anders-hejlsberg-baidu]: http://baike.baidu.com/view/119319.htm?from_id=9081506&type=syn&fromtitle=Anders+Hejlsberg&fr=aladdin
 [anders-hejlsberg-pic]: http://gnat-tang-shared-image.qiniudn.com/pictures/anders-hejlsberg.jpg
@@ -2729,14 +2794,21 @@ Try [IRC][irc]
 
 [说说你觉得最狂霸酷炫屌炸天的命令][hackerway]
 
-* 以 sudo 的方式执行上次的命令，用于忘记加 sudo 的情况: `sudo !!`{.bash}
-* `telnet towel.blinkenlights.nl`{.bash} Telnet 观看星球大战，IPV6 的话可以看到彩色版。（好长的故事，没有看完）
-* `sl`{.bash} 终端里开过一辆火车。
-* `bb`{.bash} 非常牛 B 的命令之一，是 aalib 的一个应用展示，
-  在用户终端中用不停变换的字符组成一段视频，效果非常炫酷。
-* aalib 这货让用户明白，没有什么是不能由ASCII来完成的。
-* asciiquarium ASC II 水族馆。
-* `:(){:|:&};:`{.bash}, fork bomb. （不要乱试这个）
+-   以 sudo 的方式执行上次的命令，用于忘记加 sudo 的情况: `sudo !!`{.bash}
+-   `telnet towel.blinkenlights.nl`{.bash} Telnet 观看星球大战，IPV6 的话可以看到彩色版。（好长的故事，没有看完）
+-   `sl`{.bash} 终端里开过一辆火车。
+-   `bb`{.bash} 非常牛 B 的命令之一，是 aalib 的一个应用展示，
+    在用户终端中用不停变换的字符组成一段视频，效果非常炫酷。
+-   aalib 这货让用户明白，没有什么是不能由 ASCII 来完成的。
+-   asciiquarium ASC II 水族馆。
+-   `:(){:|:&};:`{.bash}, [fork bomb](https://en.wikipedia.org/wiki/Fork_bomb). （不要乱试这个）
+
+    ```bash
+    #!/bin/bash
+    ./$0|./$0&
+    ```
+
+    TODO: 这个 `|` 什么意思？
 
 [hackerway]: http://segmentfault.com/q/1010000000489601
 
@@ -5029,8 +5101,7 @@ Men List: 06 (诺贝尔物理学奖 01)
 
 [don-juan]: https://en.wikipedia.org/wiki/Don_juan
 
-As An Emacs Newbie
-==================
+### As An Emacs Newbie
 
 Emacs 101
 
@@ -5098,14 +5169,15 @@ Emacs Notes
     - 一个完整的例子: 比如你想这样（左边变到右边）
 
     ~~~
-    start-kbd-macro	                  *start-kbd-macro*
-    end-kbd-macro	   	====>	    *end-kbd-macro*
-    call-last-kbd-macro		          *call-last-kbd-macro*
+    start-kbd-macro                   *start-kbd-macro*
+    end-kbd-macro       ====>         *end-kbd-macro*
+    call-last-kbd-macro               *call-last-kbd-macro*
     ~~~
 
     你需要先把光标移到最左上角，开始录制宏，
     输入`*`，按`End`，输入`*`，按  `Down`（方向键），`Home`，结束录制宏。
-    再运行两次宏，就可以了 (或者 `C-u 2 C-x e`^[‘C-u 0 C-x e’ to execute the macro an infinite number of times until the end of the file is reached])。
+    再运行两次宏，就可以了 (或者 `C-u 2 C-x e`^[‘C-u 0 C-x e’ to execute the
+    macro an infinite number of times until the end of the file is reached])。
 
     File Header
 
@@ -5138,7 +5210,7 @@ Misc (以后慢慢把 misc 里的移出来）
     - yasnippet: 这完虐 VS 之类的 IDE 啊有木有
     - Abbrev: 如果你觉得有些东西不好敲
     - Bookmarks
-    - `C-x k`:	Close File （我怎么老忘）。。。
+    - `C-x k`:  Close File （我怎么老忘）。。。
     - `C-x C-+`, `C-x C--`, `C-x C-0`, Zoom In/Out, Resume
 
     ```
@@ -5148,8 +5220,10 @@ Misc (以后慢慢把 misc 里的移出来）
 
 Emacs Relative
 
-:   - Chrome Plugin: [edit-with-emacs](https://chrome.google.com/webstore/detail/edit-with-emacs/ljobjlafonikaiipfkggjbhkghgicgoh?utm_source=chrome-ntp-icon).
-      I use this to edit almost all of my JianShu Posts now.
+:   - Chrome Plugin:
+    [edit-with-emacs](https://chrome.google.com/webstore/detail/edit-with-emacs/ljobjlafonikaiipfkggjbhkghgicgoh?utm_source=chrome-ntp-icon).
+
+    I use this to edit almost all of my JianShu Posts now.
 
 refs and see also
 
@@ -5166,147 +5240,54 @@ refs and see also
   - <http://www.emacswiki.org/emacs/VcursorPackage>
 
 
-#### [Xah Lee (ErgoEmacs)][xah-lee-emacs-chat]
+Emacs Chat
 
-[xah-lee-emacs-chat]: http://v.youku.com/v_show/id_XNzA4MTYzNjQ0.html
+:   -   [Xah Lee (ErgoEmacs)](http://v.youku.com/v_show/id_XNzA4MTYzNjQ0.html)
 
+    -   Jānis Mancēvičs
 
+    -   Tom Marble
 
+    -   Iannis Zannos
 
+    -   Magnar Sveen
 
---------------------------------------------------------------------------------
+    -   Sacha Chua (with Bastien Guerry)
 
-#### Jānis Mancēvičs
+    -   Bastien Guerry
 
+    -   [Carsten Dominik][ec-carsten-dominik] (author of org-mode)
 
+        ![ScreenShot][ec-carsten-dominik-pic]
 
+        -   Print out a huge chunk of elisp code to read, and enjoy it.
+        -   "We **only use git**"
+        -   "I'm sorry, I just use it(writing emacs lisp) as **a way to relax**, sometimes."
+        -   "It's my **hobby**. Like others people would do wood knits or something"
+        -   "I actually want my computer to **work exactly as how I wanted**."
 
+    -   Thomas Kjeldahl Nilsson
 
---------------------------------------------------------------------------------
+    -   Avdi Grimm (Org-mode, Ruby, etc.)
 
-#### Tom Marble
-
-
-
-
-
-
-
---------------------------------------------------------------------------------
-
-#### Iannis Zannos
-
-
-
-
-
-
---------------------------------------------------------------------------------
-
-#### Magnar Sveen
-
-
-
-
-
-
-
-
---------------------------------------------------------------------------------
-
-#### Sacha Chua (with Bastien Guerry)
-
-
-
-
-
-
---------------------------------------------------------------------------------
-
-#### Bastien Guerry
-
-
-
-
-
-
-
---------------------------------------------------------------------------------
-
-#### [Carsten Dominik][ec-carsten-dominik] (author of org-mode)
-
- ![ScreenShot][ec-carsten-dominik-pic]
-
- + Print out a huge chunk of elisp code to read, and enjoy it.
- + "We **only use git**"
- + "I'm sorry, I just use it(writing emacs lisp) as **a way to relax**, sometimes."
- + "It's my **hobby**. Like others people would do wood knits or something"
- + "I actually want my computer to **work exactly as how I wanted**."
-
+    -   John Wiegley
 
 [ec-carsten-dominik]: http://v.youku.com/v_show/id_XNjgwNDY4MzM2.html
 [ec-carsten-dominik-pic]: http://gnat-tang-shared-image.qiniudn.com/emacs/emacs-chat/carsten-dominik.png
-
-
-
---------------------------------------------------------------------------------
-
-#### Thomas Kjeldahl Nilsson
-
-
-
---------------------------------------------------------------------------------
-
-#### Avdi Grimm (Org-mode, Ruby, etc.)
-
-
-
---------------------------------------------------------------------------------
-
-#### John Wiegley
-
-
-
-
-
-
-
-
-
-
-
-
---------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
---------------------------------------------------------------------------------
-
-~~~
-log: $1. 2014-05-10, created (Carsten Dominik); $2. Thu Aug  6 18:09:51     2015;
-~~~
-
 [emacs-chat]: http://sachachua.com/blog/category/podcast/emacs-chat-podcast/
 [emacs-chat-youku]: http://i.youku.com/u/UMTQyNzM3OTMyNA==
 
-1. Jamie Zawinski
+### Jamie Zawinski
 
 Lisp hacker, early Netscape developer, and nightclub owner Jamie Zawinski,
 a.k.a. jwz, is a member of the select group of hackers who are as well
 known by their three-letter initials as by their full names.
 
-“Ptthh, wrong!” and he’d walk
-away. So that was kind of getting thrown in the deep end. It was like
-the Zen approach—the master hit me with a stick, now I must
-meditate.
+“Ptthh, wrong!” and he’d walk away. So that was kind of getting thrown in the
+deep end. It was like **the Zen approach** -- the master hit me with a stick,
+now I must meditate.
 
-“Oh my god; now
-I’m trying to debug GDB, which I’ve never looked at before.”
+“Oh my god; now I’m trying to debug GDB, which I’ve never looked at before.”
 
 We spent a long time talking about features. Well, not a
 long time, but it seemed like a long time because we were living a
@@ -5316,8 +5297,8 @@ group of like six or seven people. I don’t remember exactly the
 number. A bunch of smart, egotistical people sitting in a room yelling
 at each other for a week or so.
 
-In some ways, yeah. Programming is obviously much more
-rigid. But as far as the overall ability to express a thought, they’re very
+In some ways, yeah. Programming is obviously much more rigid.
+But as far as the overall ability to express a thought, they’re very
 similar. Not rambling, having an idea in your head of what you’re
 trying to say, and then being concise about it. I think that kind of
 thinking is the overlap between programming and writing prose.
@@ -5331,7 +5312,8 @@ ongoing thing; you never know what the design is until the program is
 done. So I prefer to get my feet wet as early as possible; get something
 on the screen so I can look at it sideways.
 
-We had to ship the thing even if it wasn’t perfect. We can ship it later and it would be higher quality but someone else might have eaten our lunch by then.
+We had to ship the thing even if it wasn’t perfect. We can ship it later and it
+would be higher quality but someone else might have eaten our lunch by then.
 
 I always wish people would comment more, though the thing that
 makes me cringe is when the comment is the name of the function
@@ -5382,7 +5364,9 @@ insecure. Being the young kid around all these people with PhDs—
 “Aaah, I don’t know anything! I’m an idiot! How did I bluff my way into
 this?”
 
-That just seemed bizarre and wrong. But I don’t know. Maybe it’s not wrong. Maybe that’s the caveman thoughts: “Back in my day, we programmed with a nine-volt battery and a steady hand!”
+That just **seemed bizarre and wrong**. But I don’t know. Maybe it’s not wrong.
+Maybe that’s the caveman thoughts: “Back in my day, we programmed with a
+nine-volt battery and a steady hand!”
 
 I actually haven’t read very many of those. The one I
 always recommend is Structure and Interpretation of Computer Programs,
@@ -5390,7 +5374,8 @@ which a lot of people are afraid of because it’s Lispy, but I think does a
 really good job of teaching programming without teaching a language.
 
 Seibel: Is there a key skill programmers must have?
-Zawinski: Well, curiosity—taking things apart. Wanting to know
+
+Zawinski: Well, **curiosity** -- taking things apart. Wanting to know
 what’s going on under the hood. I think that’s really the basis of it.
 Without that I don’t think you get very far. That’s your primary way of
 acquiring knowledge. Taking something apart and looking at it is how
@@ -5401,452 +5386,92 @@ need to know what this thing does and what this thing does. And I’ll
 just sort of random-walk through that until I find where I’m going.
 
 Brad Fitzpatrick
---------------
-
-
-
-
-
-
-
-
-
-
----
-
-~~~
-log: $1. ;
-~~~
-
-
-### Refs
-
-- [**Foundations of Python Network Programming**](http://book.douban.com/subject/4793807/)
-
----
-### TOC
-- Preface
-- §1. Introduction to Client/Server Networking
-- §2. UDP
-- §3. TCP
-- §4. Socket Names and DNS
-- §5. Network Data and Network Errors
-- §6. TLS and SSL
-- §7. Server Architecture
-- §8. Caches, Message Queues, and Map-Reduce
-- §9. HTTP
-- §10. Screen Scraping
-- §11. Web Applications
-- §12. E-mail Composition and Decoding
-- §13. SMTP
-- §14. POP
-- §15. IMAP
-- §16. Telnet and SSH
-- §17. FTP
-- §18. RPC
-- §19. Index
-
----
-~~~
-                                  Run, Forest, Run
-~~~
-#### [Preface]()
----
-
-#### §1. Introduction to Client/Server Networking
-1. **The Building Blocks: Stacks and Libraries**
- - The Idea of a Protocol Stack
- - Using Python libraries of prepared code
-    - search your libs: [The Python Standard Library](http://docs.python.org/2/library/), or
-    - more than the standard: [PyPI - the Python Package Index](https://pypi.python.org/pypi)
- - [`virtualenv - have an virtual env without contaminating your system-wide Python`](https://pypi.python.org/pypi/virtualenv)
-    - install virtualenv
-```
-# command line
-pip install virtualenv # or get the latest from github(dev version)
-pip install https://github.com/pypa/virtualenv/tarball/develop
-# compile from source code, cd source dir first, then
-python setup.py install
-# `make` docs, here I prefer html
-cd docs && make html
-```
-    - set up an environment
-```
-virtualenv --no-site-packages gmapenv # will create a dir "gmapenv"
-. bin/active # notice the <space> between "." and "bin/active"
-python -c "import googlemaps" # not work, so to install the module
-# do it yourself, if you intall it in the virtualenv, you can use it in the environment, but out there, you can't, that's why it's called "virtualenv"
-```
-    - example
-```
-#!/usr/bin/env python
-# Foundations of Python Network Programming - Chapter 1 - search1.py
-from googlemaps import GoogleMaps
-address = '207 N. Defiance St, Archbold, OH'
-print GoogleMaps().address_to_latlng(address)
-# doesn't work... Google MAP is already changed.
-```
-
-- **Application Layer**
- -
-```
-#!/usr/bin/env python
-# Foundations of Python Network Programming - Chapter 1 - search2.py
-import urllib, urllib2
-try:
-       import json
-except ImportError: # for Python 2.5
-       import simplejson as json
-params = {'q': '207 N. Defiance St, Archbold, OH',
-              'output': 'json', 'oe': 'utf8'}
-url = 'http://maps.google.com/maps/geo?' + urllib.urlencode(params)
-rawreply = urllib2.urlopen(url).read()
-reply = json.loads(rawreply)
-print reply['Placemark'][0]['Point']['coordinates'][:-1]
-```
-My words:
-> This part is kinda OUT OF DATE, for I got error_message:
->> The Geocoding API v2 has been turned down on September 9th, 2013. The Geocoding API v3 should be used now.
-Learn more at [here](https://developers.google.com/maps/documentation/geocoding/)
-
-- **Speaking a Protocol**
-
-- **A Raw Network Conversation**
-```
-import socket
-sock = socket.socket()
-sock.connect(('maps.google.com', 80)) # tuple
-sock.sendall(...) # specify here
-rawreply = sock.recv(4096)
-print rawreply
-```
-
-- **Turtles All the Way Down**
- - `The protocol stack we have just explored, for example, is four protocols high:`
-   - Google Maps URLs return JSON data containing coordinates.
-   - URLs name documents that can be retrieved using HTTP.
-   - HTTP uses sockets to support document commands like GET.
-   - Sockets know only how to send and receive text.
- - `The layers operating below the socket() API are the following:`
-   - TCP (The Transmission Control Protocol)
-`sockets use it to support network conversations between two programs`
-   - IP (The Internet Protocol)
-`knows how to send packets between different computers`
-   - The "link layer" (at the very bottom)
-`consists of network hardware devices (Ethernet ports and wireless cards)`
-`which can send physical messages between directly-linked computers`
-
-- **The Internet Protocol**
-
-- **IP Addresses**
-```
-import socket
-print socket.gethastbyname('maps.google.com') # ==> 74.125.235.206
-```
-
-- **Routing**
-
-- **Packet Fragmentation**
-
-- **Learning More About IP**
-
-
----
-#### [**§2. UDP**]()
-1. **Should You Read This Chapter?**
-Yes, if you are going to be doing any programming on an IP network.
-
-- **Addresses and Port Numbers**
- - like `192.168.1.30:44137` or `192.168.1.9:53`
- - Port Number Ranges
-   - Well-Known Ports: 0–1023. `treated special by Operating System`
-   - Registered Ports: 1024–49151. `can be register by the IANA`
-   - The remaining port numbers: 49152–65535. `free for any use`
-
-- **Sockets**
-```
-#!/usr/bin/env python
-# Foundations of Python Network Programming - Chapter 2 - udp_local.py
-# UDP client and server on localhost
-import socket, sys
-s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-MAX = 65535
-PORT = 1060
-if sys.argv[1:] == ['server']:
-    s.bind(('127.0.0.1', PORT))
-    print 'Listening at', s.getsockname()
-    while True:
-        data, address = s.recvfrom(MAX)
-        print 'The client at', address, 'says', repr(data)
-        s.sendto('Your data was %d bytes' % len(data), address)
-elif sys.argv[1:] == ['client']:
-    print 'packet '
-    print 'Address before sending:', s.getsockname()
-    s.sendto( "hello " + str(i) , ('127.0.0.1', PORT))
-    print 'Address after sending', s.getsockname()
-    data, address = s.recvfrom(MAX) # overly promiscuous - see text!
-    print 'The server', address, 'says', repr(data)
-else:
-    print >>sys.stderr, 'usage: udp_local.py server|client'
-```
-
-- **Unreliability, Backoff, Blocking, Timeouts**
-```
-#!/usr/bin/env python
-# Foundations of Python Network Programming - Chapter 2 - udp_remote.py
-# UDP client and server for talking over the network
-import socket, sys, random
-s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-MAX = 65535
-PORT = 1060
-if 2 <= len(sys.argv) <= 3 and sys.argv[1] == 'server':
-    print "The server:"
-    interface = sys.argv[2] if len(sys.argv) > 2 else '' # specify an interface or '0.0.0.0'(any interface)
-    s.bind((interface, PORT))
-    print 'Listening at', s.getsockname()
-    while True:
-        data, address = s.recvfrom(MAX)
-        if random.randint(0, 1):
-            print 'The client at', address, 'says', repr(data)
-            s.sendto('Your data was %d bytes' % len(data), address)
-        else:
-            print 'Pretending to drop packet from', address
-elif len(sys.argv) == 3 and sys.argv[1] == 'client':
-    print "The client:"
-    hostname = sys.argv[2]
-    s.connect((hostname, PORT))
-    print 'Client socket name is:', s.getsockname()
-    delay = 0.1
-    while True:
-        s.send('This is another message')
-        print 'Waiting up to', delay, 'seconds for a reply'
-        s.settimeout(delay)
-        try:
-            data = s.recv(MAX)
-        except socket.timeout:
-            delay *=2 # wait even longer for the next request
-            if delay > 2.0:
-                raise RuntimeError('I think the server is down')
-        except:
-            raise # a real error, so we let the user see it
-        else:
-            break # we are done, and can stop looping
-    print 'The server says', repr(data)
-else:
-    print >>sys.stderr, 'Error:'
-    print >>sys.stderr, 'usage: udp_remote.py server [<interface>]'
-    print >>sys.stderr, '   or: udp_remote.py client <host>'
-    sys.exit(2)
-```
-
-- **Connecting UDP Sockets**
-once you have run `connect()`, the operating system will discard any incoming packets to your port whose return address and port number do not match the server to which you are sending packets.
-
-- **Request IDs: A Good Idea**
-  - protects you from being confused by duplicate answers to requests that you repeated several times in your exponential backoff loop
- - provide a barrier against spoofing
-`none of this is real security—it just protects against naive spoofing attacks`
-
-- **Binding to Interfaces**
- - binding to an IP interface: limit which external hosts can talk to you
- - more network interfaces can bring up more UDP listening servers
-
-- **UDP Fragmentation**
-
-- **Socket Options**
- - `man 7 socket` and `man 7 udp`
- - options:
-   - SO_BROADCAST
-   - SO_DONTROUTE
-   - SO_TYPE
- - `SOCK_DGRAM`:UDP, or `SOCK_STREAM`: TCP
-
-- **Broadcast**
-```
-#!/usr/bin/env python
-# Foundations of Python Network Programming - Chapter 2 - udp_broadcast.py
-# UDP client and server for broadcast messages on a local LAN
-import socket, sys
-s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-s.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
-MAX = 65535
-PORT = 1060
-if sys.argv[1:] == ['server']:
-  s.bind(('', PORT))
-  print 'Listening for broadcast at', s.getsockname()
-  while True:
-      data, address = s.recvfrom(MAX)
-      print 'The client at %r says: %r' % (address, data)
-elif len(sys.argv) == 4 and sys.argv[1] == 'client':
-  network = sys.argv[2]
-  s.sendto( sys.argv[3] , (network, PORT))
-else:
-  print >>sys.stderr, 'usage: udp_local.py server'
-  print >>sys.stderr, '   or: udp_broadcast.py client <host> <message>'
-  sys.exit(3)
-# you can run like this:
-# `python broadcast.py server`
-# `for in in {1..4}; do python broadcast.py client 127.0.0.4 'hello, $i'; done`
-# on the server side, you get:
-# The client at ('127.0.0.1', 55627) says: 'hello, 1'
-# The client at ('127.0.0.1', 60106) says: 'hello, 2'
-# The client at ('127.0.0.1', 57721) says: 'hello, 3'
-# The client at ('127.0.0.1', 42740) says: 'hello, 4'
-```
-
-- **When to Use UDP**
- - You might think that UDP would be very efficient for sending small messages. Actually, UDP is **efficient only if your host ever only sends one message at a time, then waits for a response. **
- - If send several messages in a burst, use an intelligent message queue algorithm like ØMQ
-
-- **Summary**
- - **UDP socket** of POSIX network stack: `IP address` + `UDP port number`
- - **server**: `bind()` to an address and port
- - **client**: `sendto()`/`connect(), send()`, OS will choose a port num for u
- - **unreliable** (packets can be droped without notice), so client should **re-transmit**, but should use `exponential backoff` to avoid making busy network even worse
-
-
----
-#### [**§3. TCP**]()
-1. **How TCP Works**
-
-- **When to Use TCP**
-
-
-
-
-
-
-
-
-
-
-
-
-- §4. Socket Names and DNS
-- §5. Network Data and Network Errors
-- §6. TLS and SSL
-- §7. Server Architecture
-- §8. Caches, Message Queues, and Map-Reduce
-- §9. HTTP
-- §10. Screen Scraping
-- §11. Web Applications
-- §12. E-mail Composition and Decoding
-- §13. SMTP
-- §14. POP
-- §15. IMAP
-- §16. Telnet and SSH
-- §17. FTP
-- §18. RPC
-- §19. Index
-
-
----
-| [**建议/意见**](http://jianshu.io/p/63a956887fd4) | [**Errata**](http://jianshu.io/p/e1e05fa9e0a3) |  [**闲话废话**](http://jianshu.io/p/2d3d4348074f) | [**推荐博客**](http://jianshu.io/p/d2c2bb38c31b) |
-| :---: | :---: | :---: | :---: |
-| | | | | |
-~~~
-log:
-~~~
-
----
-
-Words Frist:
-
-> I've kept this tutorial in my bookmarks for a long time,
-and today I'm studying it, write something to share and keep myself going on
-
-### [Refs][null]
-
-1. [**Geoprocessing with Python**](http://www.gis.usu.edu/~chrisg/python/2008/)
-
----
-
-## [Week 1:][null]
-
----
-
-### [Reading Vector Data with OGR][null]
-
-1. **Open Source RS/GIS Modules**
- * [OGR](http://www.gdal.org/ogr/)
- * [GDAL](http://www.gdal.org/)
- * Numeric:
-Sophisticated array manipulation
-(extremely useful for raster data, already replaced by Numpy)
- * [**Numpy**](http://www.numpy.org/)
- * [**OWSLib**](http://geopython.github.io/OWSLib/)
-
-- **Module free-Standing methods(2 kinds)**
-  * Not rely on pre-existing objects: e.g.
-  **`driver = ogr.GetDriverByName('ESRI Shapefile')`**
-  * Rely on pre-existing objects: e.g.
-  ** `ds = driver.Open('data/test.shp')`**
-
-3. **OGR: supported many different vector formats**
- * Get all drivers:
-```
-for i in range(ogr.GetDriverCount()):
-print ogr.GetDriver(i).GetName()
-```
- * Driver is for **Write** especially, but we prefer read data with driver too
- * ***Usage:***
-```
-import ogr
-driver = ogr.GetDriverByName('PDF')
-dataSource = driver.Open('test.shp', 0)
-layer = dataSource.GetLayer()
-layer.GetFeatureConut(), layer.GetExtent()
-feature = layer.GetFeature(0)
-dataSource.Destroy()
-```
-
-4. **The Working Directory**
- `import  os`, `os.chdir('chang/dir/to')`
-
-5. **Text file I/O**
-
-6. **Homework**
-
-7. [**OGR API Refs PDF**](http://www.gis.usu.edu/~chrisg/python/2008/ogr_summary.pdf)
-
-
----
-
-## [Week 2][null]
-
----
-
-### [Creating Geometries and Writing Vector Data with OGR][null]
-
-1. **Writing New Data**
- * Create a **New Feature** before write it to a **shapefile**(or other **vector data set**)
- * Create a new feature, we need:
-    * **geometry**
-    * **feature definition**(may including **field definition**)
- * Creating a New Geometry
-    * From an existing feature(see last week)~~(Orz, where is it..)~~
-here: `feature = layer.GetFeature(0); featureDefn = feature.GetDefnRef()`
-    * Creating it by acting on an existing Geometry(next week)
-    * Create a new one from scratch(use the geometry **constructor**):
-          **`ogr.Geometry(<OGRwkbGeometryType>)`**
-   * Define geometry in a different way for each type:
-        **point**, **line**, **polygon**, etc
-        * ```
-point = ogr.Geometry(ogr.wkbPoint); # Usage: point.AddPoint(x, y, z=0)
+
+## [Foundations of Python Network Programming](http://book.douban.com/subject/4793807/)
+
+The Building Blocks: Stacks and Libraries
+
+-   The Idea of a Protocol Stack
+
+-   Using Python libraries of prepared code
+
+    +   search your libs: [The Python Standard Library](http://docs.python.org/2/library/), or
+    +   more than the standard: [PyPI - the Python Package Index](https://pypi.python.org/pypi)
+
+-   [`virtualenv - have an virtual env without contaminating your system-wide Python`](https://pypi.python.org/pypi/virtualenv)
+
+-   Turtles All the Way Down
+
+-   Port Number Ranges
+    +   Well-Known Ports: 0–1023. `treated special by Operating System`
+    +   Registered Ports: 1024–49151. `can be register by the IANA`
+    +   The remaining port numbers: 49152–65535. `free for any use`
+
+## [Geoprocessing with Python](http://www.gis.usu.edu/~chrisg/python/2008/)
+
+Week 1: Reading Vector Data with OGR
+
+-   Open Source RS/GIS Modules
+
+    +   [OGR](http://www.gdal.org/ogr/)
+    +   [GDAL](http://www.gdal.org/)
+    +   Numeric: Sophisticated array manipulation (use NumPy instead)
+    +   [**Numpy**](http://www.numpy.org/)
+    +   [**OWSLib**](http://geopython.github.io/OWSLib/)
+
+-   OGR: supported many different vector formats
+
+    +   Get all drivers:
+
+        ```python
+        for i in range(ogr.GetDriverCount()):
+        print ogr.GetDriver(i).GetName()
+        ```
+
+        Driver is for **Write** especially, but we prefer read data with driver too.
+
+        ```python
+        import ogr
+        driver = ogr.GetDriverByName('PDF')
+        dataSource = driver.Open('test.shp', 0)
+        layer = dataSource.GetLayer()
+        layer.GetFeatureConut(), layer.GetExtent()
+        feature = layer.GetFeature(0)
+        dataSource.Destroy()
+        ```
+-   The Working Directory
+
+    ```python
+    import  os`, `os.chdir('chang/dir/to')`
+    ```
+
+-   [**OGR API Refs PDF**](http://www.gis.usu.edu/~chrisg/python/2008/ogr_summary.pdf)
+
+Week 2: Creating Geometries and Writing Vector Data with OGR
+
+```python
+point = ogr.Geometry(ogr.wkbPoint);     # Usage: point.AddPoint(x, y, z=0)
+
 line = ogr.Geometry(ogr.wkbLineString)
-line.AddPoint(10, 10), line.AddPoint(20, 20), ...
-line.SetPoint(0, 30, 30) # 0 indexed, so (10, 10) -> (30, 30)
-outring = ogr.Geometry(ogr.wkbLineRing)
-outring.AddPoint(0, 100), ..., outring.CloseRings()  or
-outring.AddPoint(0, 100)  # (Same thing)
-inring (same as outring)
-polygon = ogr.Geometry(ogr.wkbPolygon)
-polygon.AddGeometry(outring), polygon.AddGeometry(inring)
-print polygon.GetGeometryCount(), ring = polygon.GetGeometryRef(INDEX)
-```
- * **Feature Definition**
+line.AddPoint(10, 10)
+line.AddPoint(20, 20)
+line.SetPoint(0, 30, 30)
 
-     * ```
+outring = ogr.Geometry(ogr.wkbLineRing)
+outring.AddPoint(0, 100)
+# ...
+outring.CloseRings()
+outring.AddPoint(0, 100)
+
+polygon = ogr.Geometry(ogr.wkbPolygon)
+polygon.AddGeometry(outring)
+polygon.AddGeometry(inring)
+
+print polygon.GetGeometryCount()
+ring = polygon.GetGeometryRef(INDEX)
+```
+
+```python
 featureDefn = feature.GetDefnRef()
 feateruDefn = layer.GetLayerDefn()
 fieldDefn = feature.GetFieldDefnRef(0)
@@ -5855,7 +5480,10 @@ fieldDefn = featureDefn.GetFieldDefn(1)
 fieldDefn = ogr.FieldDefn('id', ogr.OFTString) # ogr.OFTInteger...
 fieldDefn.SetWidth(4)
 ```
-```
+
+<i class="icon-star"></i>
+
+```tzx-bigquote
 [datasource = [
                        layers = [
                                   features obey featureDefn = [
@@ -5866,15 +5494,15 @@ fieldDefn.SetWidth(4)
                      ]
 ```
 
-- **Write to Shp file**
- - **Layer**
-```
+Write to Shp file
+
+```python
 dataSource = driver.CreateDataSource('new-shpfile.shp')
 layer = dataSource.CreateLayer('new-layer', geom_type=ogr.wkbPoint)
 layer.CreateField(fieldDefn)
 ```
- - **Features**
-```
+
+```python
 featureDefn = layer.GetLayerDefn()
 feature = ogr.Feature(featureDefn) # Create a new feature
 feature.SetGeometry(point)
@@ -5882,371 +5510,224 @@ feature.SetField('id', 23)
 layer.CreateFeature(feature) # Write the feature to the layer
 ```
 
-- **Remember to `Destroy()` dataSource**
+Week 3: Filters and Simple Analysis of Vector Data
 
-- **Some Python**
- - `info = "A, 12, 34".split(',')`, `id = info[0], x,y = info[1],info[2]`
-     \# `split` to list, by default, the delim is `<SPACE>`
- * Data type conversions: **_bool()_, _float()_, _int()_, _long()_, _str()_**, etc
+Attribute Filters
 
-- **Homework**
-
-- **Challenge**
-
-- **My problems**
-> When I run some examples in [**geometries_examples.pdf**](http://www.gis.usu.edu/~chrisg/python/2008/geometries_example.pdf)
-> I found some different things,
-like:  point.Empty(), print point ==> "**POINT EMPTY**"
-not "**POINT (0 0 0)**"
-> And in [**os2\_hw\_c1.py**](http://www.gis.usu.edu/~chrisg/python/2008/os2_hw_c1.py), `feature.SetField('name', countyName)`
-\# 没看懂，有“name”这个field？？ 哪儿设置的？ Key words?
-
-
----
-
-## [Week 3:][null]
-
----
-
-### [Filters and Simple Analysis of Vector Data][null]
-
-1. **Attribute Filters**
-```
+```python
 layer.GetFeatureCount()
 layer.SetAttributeFilter()
 layer.GetFeatureCount() # see, some features filtered out
 layer.SetSpatialFilter(<geom>)
 layer.SetSpatialFilterRect(min_x, min_y, max_x, max_y)
 ```
- * More Complicated Filters
-      * [SQL support refs](http://www.gdal.org/ogr/ogr_sql.html), caveats(警告): not all sql is supported
 
-- **Spatial Relations**
-```
+More Complicated Filters: [SQL support refs](http://www.gdal.org/ogr/ogr_sql.html),
+
+caveats(警告): not all sql is supported
+
+```python
 # 0/1 for True/False
-geom1.Intersect(geom2) #==> 0 / 1 # 我理解的，Intersect是 A 和 B 是否 Intersect
-geom1.Disjoint (geom2) #==> 0 / 1
-geom1.Touches  (geom2) #==> 0 / 1 # TouchES，是 A TouchES B
-geom1.Crosses  (geom2) #==> 0 / 1
-geom1.Within   (geom2) #==> 0 / 1
-geom1.Contains (geom2) #==> 0 / 1
-geom1.Overlaps (geom2) #==> 0 / 1 # A & B overlaps, or A overlaps B, like
-                                   # "The ends of cloth overlap the bed."
-geom1.Equal    (geom2) #==> 0 / 1
+geom1.Intersect(geom2)           # ==> 0 / 1 # 我理解的，Intersect是 A 和 B 是否 Intersect
+geom1.Disjoint (geom2)           # ==> 0 / 1
+geom1.Touches  (geom2)           # ==> 0 / 1 # TouchES，是 A TouchES B
+geom1.Crosses  (geom2)           # ==> 0 / 1
+geom1.Within   (geom2)           # ==> 0 / 1
+geom1.Contains (geom2)           # ==> 0 / 1
+geom1.Overlaps (geom2)           # ==> 0 / 1 # A & B overlaps, or A overlaps B, like
+geom1.Equal    (geom2)           # ==> 0 / 1
 ```
 
-- **Simple Geoprocessing**
- ```
-geom1.Intersection       (geom2) #==> geom_intersection
-geom1.Union              (geom2) #==> geom_union
-geom1.Difference         (geom2) #==> geom_difference
-geom1.SymmetricDifference(geom2) #==> geom_symmdiff
-geom1.Buffer          (distance) #==> geom_buffer
-geom1.GetEnvelope             () #==> Get extent as a list,
-                                   #               a.k.a (minX, maxX, minY, maxY)
+```python
+geom1.Intersection       (geom2) # ==> geom_intersection
+geom1.Union              (geom2) # ==> geom_union
+geom1.Difference         (geom2) # ==> geom_difference
+geom1.SymmetricDifference(geom2) # ==> geom_symmdiff
+geom1.Buffer          (distance) # ==> geom_buffer
+geom1.GetEnvelope             () # ==> Get extent as a list,
+                                 #     a.k.a (minX, maxX, minY, maxY)
 ```
 
-- **Homework**
+Week 4: Projections and Functions
 
+For **Spatial Reference Objects**, different ways to specify projections
 
----
+-   [**Well-Known Text (WKT)**](http://en.wikipedia.org/wiki/Well-known_text)
+-   [**PROJ.4**](www.remotesensing.org/geotiff/proj_list/): e.g. `+proj=utm +zone=12 +ellps=WGS84 +datum=WGS84 +units=m +no_defs`
+-   [**EPSG (European Petroleum Survey Group)**](http://spatialreference.org/ref/epsg/ "Petroleum: 石油"): e.g. `32612`
+-   [**USGS**](http://en.wikipedia.org/wiki/United_States_Geological_Survey),
 
-## [Week 4:][null]
+    see `importFromUSGS()` description at [OGRSpatialReference](http://www.gdal.org/ogr/classOGRSpatialReference.html): e.g.
 
----
+    ```
+    (1, 12, (0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0), 12)
+    ```
 
-### [Projections and Functions][null]
+-   Getting a Layer's Projects: spatialRef
 
-1. For **Spatial Reference Objects**, different ways to specify projections
- - [**Well-Known Text (WKT)**](http://en.wikipedia.org/wiki/Well-known_text)
- - [**PROJ.4**](www.remotesensing.org/geotiff/proj_list/): e.g.
-       `+proj=utm +zone=12 +ellps=WGS84 +datum=WGS84 +units=m +no_defs`
- - [**EPSG (European Petroleum Survey Group)**](http://spatialreference.org/ref/epsg/ "Petroleum: 石油"): e.g. `32612`
- - [**USGS**](http://en.wikipedia.org/wiki/United_States_Geological_Survey), see `importFromUSGS()` description at [OGRSpatialReference](http://www.gdal.org/ogr/classOGRSpatialReference.html): e.g.
- ```
-(1, 12, (0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0), 12)
-```
- - **Others:** ESRI .prj (import only), PCI software, XML
+    ```python
+    import osr                      # first of first
+    spatialRef = osr.SpatialReference()
+    spatialRef.ImportFromEPSG(32612)
+    spatialRef.ImportFromProj4(<proj4_string>)
+    ```
+-   Exporting a Projection
 
-- **Getting a Layer's Projects: spatialRef**
- - If it has projection information, like ".prj" file along with a shapefile:
-    `spatialRef = layer.GetSpatialRef()`
- - If not, `GetSpatialRef()` returns "_None_"
- - Also can get from geometry object:
- `spatialRef = geometry.GetSpatialReference()`
+    ```python
+    ExportToWkt()
+    ExportToPrettyWkt()
+    ExportToProj4()
+    ExportToPCI()
+    ExportToUSGS()
+    ExportToXML()
+    ```
 
-- **Create a New Projection**
-```
-import osr # first of first
-spatialRef = osr.SpatialReference()
-spatialRef.ImportFromEPSG(32612)
-spatialRef.ImportFromProj4(<proj4_string>)
-```
+-   Creating a coordinate Transform
 
-- **Exporting a Projection**
-```
-ExportToWkt()
-ExportToPrettyWkt()
-ExportToProj4()
-ExportToPCI()
-ExportToUSGS()
-ExportToXML()
-```
+    coordinates transform? First, we need the **spatial reference** for the **source** and **target**.
 
-- **Creating a coordinate Transform**
- - For reproject data, we need to do the _**coordinates transform**_
- - to do that, we need the **spatial reference** for the **source** and **target**
-```
-sourceSR = osr.SpatialReference()
-sourceSR.ImportFromXXXX() # same for targetSR
-coordinateTrans = osr.CoordinateTransformation(sourceSR, targetSR)
-```
+    ```python
+    sourceSR = osr.SpatialReference()
+    sourceSR.ImportFromXXXX() # same for targetSR
+    coordinateTrans = osr.CoordinateTransformation(sourceSR, targetSR)
+    ```
 
-- **Projecting a Geometry**
- - one **geometry** at a time
- - **`geom.Transform ( coordinateTrans )`** # modifies the geometry **in place**
+-   Projecting a Geometry
 
-- **Some Python**
- - Define functions: to automate the whole process above
- - Exceptions: **try**: ... **except** <name>: ... **finally**: ...
- - **Modules**
-      - Modules are handy places to keep functions, so we can
-         `import mymod.py`, then call function using
-`mymod.somefuncs()`
-      - Find modules, about **PYTHONPATH**
-      - `sys.path.append(new_path)`  # add a path to module seaching path
- - Glob:Lists files in a directory that match a pattern
-```
-import glob
-glob.glob('./[0-9].\*')
-glob.glob('\*.gif')
-glob.glob('?.gif')
-for fn in glob.glob('/shapfiles/\*.shp'):
-         print fn
-```
+    ```python
+    # PYTHONPATH, for modules
+    sys.path.append(new_path)
+    ```
 
-- Homework
+    Glob: Lists files in a directory that match a pattern
 
-- My Words:
-> in file "_some.py_": "**import our\_module**", the search path of "**our\_module.py**" is where we "**python some.py**"
-> and after the **import**, we'll have a "**some.pyc**" file.
+    ```python
+    import glob
+    glob.glob('./[0-9].\*')
+    glob.glob('\*.gif')
+    glob.glob('?.gif')
+    for fn in glob.glob('/shapfiles/\*.shp'):
+             print fn
+    ```
 
+Week 5: Reading Raster Data with GDAL
 
----
+GDAL, supports about 75 raster formats:
 
-## [Week 5:][null]
+  - ArcInfo grids, ArcSDE raster, Imagine, Idrisi, ENVI, GRASS, GeoTIFF
+  - [HDF4, HDF5](http://en.wikipedia.org/wiki/United_States_Geological_Survey)
+  - USGS DOQ, USGS DEM
+  - ECW, MrSID
+  - TIFF, JPEG, JPEG2000, PNG, GIF, BMP
+  - see more: [GADL Raster Formats](http://www.gdal.org/formats_list.html)
 
----
-
-### [Reading Raster Data with GDAL][null]
-
-1. **GDAL, supports about 75 raster formats**
- - **ArcInfo grids, ArcSDE raster, Imagine
-Idrisi, ENVI, GRASS, GeoTIFF**
- - [**HDF4, HDF5**](http://en.wikipedia.org/wiki/United_States_Geological_Survey)
- - **USGS DOQ, USGS DEM**
- - **ECW, MrSID**
- - **TIFF, JPEG, JPEG2000, PNG, GIF, BMP**
- - see more: [**GADL Raster Formats**](http://www.gdal.org/formats_list.html)
-
-- **Importing GDAL**
-```
+```python
 import gdal
          # All gdalconst constants start with a prefix which minimizes
          # the possibility of conflicts with other modules, import them:
 from gdalconst import *
 ```
 
-- **GDAL data drivers**
- - Similar to **OGR** data drivers
- - **Register** one before using it
- - Register all drivers at once: **`gdal.AllRegister()`**
-works for reading data but not for **creating data sets**,
-for that we need to do more...
- - **Get the Imagine driver and register it**
-works fine for reading and creating new Imagine files
-```
-driver = gdal.GetDriverByName('HFA')
-driver.Register()
-```
+GDAL data drivers
 
-- **Opening a raster data set**
- - Once register the driver, we can use the _stand-alone_
-    `Open(<filename>, <GDALAcess>)` method
-```
-dataset = gdal.Open('aster.img', GA_ReadOnly)`
-if dataset is None:
-       print 'Could not open file'
-       sys.exit(1)
-```
+-   Register all drivers at once: `gdal.AllRegister()`{.python}
 
-- **Getting Image Dimensions**
-```
+    ```python
+    driver = gdal.GetDriverByName('HFA')
+    driver.Register()
+    ```
+
+    ```python
+    dataset = gdal.Open('aster.img', GA_ReadOnly)
+    if dataset is None:
+           print 'Could not open file'
+           sys.exit(1)
+    ```
+
+Getting Image Dimensions
+
+```python
 cols  = dataset.RasterXSize
 rows  = dataset.RasterYSize
 bands = dataset.RasterCount
 ```
 
-- **Getting Georeference Info**
- - **GeoTransforms** are lists of information used to **georeference** an image
- - From GDAL document, we know:
-```
-adfGeoTransform[0] # top left x
-adfGeoTransform[1] # w-e pixel resolution
-adfGeoTransform[2] # rotation, 0 if image is "north up"
-adfGeoTransform[3] # top left y
-adfGeoTransform[4] # rotation, 0 if image is "north up"
-adfGeoTransform[5] # n-s pixel resolution
+Getting Georeference Info
+
+```python
+adfGeoTransform[0]      # top left x
+adfGeoTransform[1]      # w-e pixel resolution
+adfGeoTransform[2]      # rotation, 0 if image is "north up"
+adfGeoTransform[3]      # top left y
+adfGeoTransform[4]      # rotation, 0 if image is "north up"
+adfGeoTransform[5]      # n-s pixel resolution
 # Coordinates are for top left corners of pixels
 # unlike Imagine, which uses centers
 ```
-Q: what is [**adf**](http://www.coolutils.com/formats/adf) ?
-A: **file extension** for the Arc/Info Binary Grid format,
+
+ADF?
+
+**file extension** for the Arc/Info Binary Grid format,
 another df from Arc/info is **ARC/INFO ASCII Grid format**
 maybe means "**A**cr/info **df**(data format)"
-- How to use it?
-```
- geotransform = dataset.GetGeoTransform()
- originX     = geotransform[0]
- originY     = geotransform[3] # Good Design!!!
- pixelWidth  = geotransform[1]
- pixelHeight = geotransform[5]
+
+```python
+geotransform = dataset.GetGeoTransform()
+originX      = geotransform[0]
+originY      = geotransform[3] # Good Design!!!
+pixelWidth   = geotransform[1]
+pixelHeight  = geotransform[5]
 ```
 
-- **Computing Pixel Offsets**
- - xOffset = int((x – originX) / pixelWidth)
- - yOffset = int((y – originY) / pixelHeight)
- - **e.g.** (感谢 [**博客园**](http://www.cnblogs.com/gnat-tang/p/3538234.html) 的图)
-![](http://images.cnitblog.com/blog/598474/201402/061052413032689.png)
-`(x – originX) / pixelWidth ~= 3.25 ==> 3`
+Computing Pixel Offsets
 
-- **Getting Pixel Values**
- - the **band index** (_1-based_)
-band = dataset.**`GetRasterBand`**(_Index_)
-data = band.**`ReadAsArray`**(_xOffset_, _yOffset_, _xSize_(1), _ySize_(1))
-value = **data[0, 0]**
- - **Reading an entire image at once**
-```
-data = band.ReadAsArray(0, 0, cols, rows)
-value = data[42, 94]` # row: 42, col: 94
-```
- - **Reading Raster Data Efficiently**
-```
-# Read one pixel at a time is inefficient
-# Reading the entire image at once is pretty efficient, but not the best
-#  and we should have enough RAM to hold it all or process it
-# Most efficient way to access raster data is [by blocks]
-#     (Unfortunately, don't always know the <block size>)
-Tiled images
-      1. Some file types, like most GeoTIFFs, are "not tiled":
-         a block is a row
-      2. By default Erdas Imagine files, tiled into blocks 64x64
-```
-   - **Reading one Row at a time**
-```
-for i in range(rows):
-            data = band.ReadAsArray(0, i, cols, 1)
-            # do something with data
-```
-   - **Reading one Row of Blocks**
-```
-bSize = <BlockSize>
-for i in range(0, rows, bSize):
-          if i + bSize < rows:
-               size = bSize
-          else:
-               size = rows - i
-          data = band.ReadAsArray(0, i, cols, size)
-          # do something with data
-```
-   - **Reading Block by Block**
-```
-# before we start:
-rows, cols = 13, 11
-# you should know: range(0,13,5) & range(0,11,5) both return [0, 5, 10]
-# Lets go
-bSize = 5
-for i in range(0, rows, bSize):
-          if i + bSize < rows:
-               numRows = bSize
-          else:
-               numRows = rows – i
-          for j in range(0, cols, bSize):
-               if j + bSize < cols:
-                   numCols = bSize
-               else:
-                   numCols = cols – j
-          data = band.ReadAsArray(j, i, numCols, numRows)
-          # do something with the data here, before
-          # reading the next block
-```
- - **Warning!**
-    - When reading and writing data with different cell sizes or extent,
-    the offsets are different as well!
-   - This makes reading and writing by block more complicated because there is more to keep track of
+-   ![](http://images.cnitblog.com/blog/598474/201402/061052413032689.png)
+-   xOffset = int((x – originX) / pixelWidth)
+-   yOffset = int((y – originY) / pixelHeight)
+-   `(x – originX) / pixelWidth ~= 3.25 ==> 3`
 
-- **Closing the dataset**
- - Close the dataset to **save memory**
- - No **Destroy()** like in **OGR**, Instead, just **`dataset = None`**
+Week 6: Map Algebra and Writing Raster Data
 
-- Homework
+Manipulating data with Numeric
 
+compute [**NDVI**](http://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index) on raster.img
 
----
+NDVI = (NIR - RED) / (NIR + RED), NIR(band3), RED(band2)
 
-## [Week 6:][null]
-
----
-
-#### [Map Algebra and Writing Raster Data][null]
-
-1. **Numeric**
- - (**Numpy** is better, but here we firstly see some numeric)
-```
-import Numeric # python doesn't offer this module now
-x = Numeric.arange(20)
-print x  # ==> [0 1 .. 20]
-print x[10]
-Numeric.reshape(x, (2, 10))
-print x
-a, b = Numeric.array([10, 20, 30]), Numeric.array([20, 40, 60])
-print a+b
-```
-
-- **Manipulating data with Numeric**
- - Say we want to compute [**NDVI**](http://en.wikipedia.org/wiki/Normalized_Difference_Vegetation_Index) on raster.img
-`NDVI = (NIR - RED) / (NIR + RED)`, NIR(band3), RED(band2)
- * Attention: "**Division by Zero Error**"
-```
+```python
 data2 = band2.ReadAsArray(0, 0, cols, rows).astype(Numeric.Float16)
 data3 = band3.ReadAsArray(0, 0, cols, rows).astype(Numeric.Float16)
 mask = Numeric.greater(data3 + data2, 0) # not 0
 ndvi = Numeric.choose(mask, (-99, (data3 - data2) / (data3 + data2)))
 ```
 
-- **Creating a New Dataset**
- ```
+Creating a New Dataset
+
+```python
 driver = inDataset.GetDriver()
 outDataset = driver.Create(filename, cols, rows, 1, GDT_Float32)
 # Space on disk is allocated immediately
 ```
 
-- **Georeferencing a new data set**
-```
+Georeferencing a new data set
+
+```python
 geoTransform = inDataset.GetGeoTransform()
 outDataset.SetGeoTransform(geoTransform )
 proj = inDataset.GetProjection()
 outDataset.SetProjection(proj)
 ```
 
-- **Writing to a raster data set**
-```
+Writing to a raster data set
+
+```python
 outBand = outDataset.GetRasterBand(1)
 outBand.WriteArray(ndvi, 0, 0) # WriteArray(array, xoff, yoff)
 ```
 
-- **Reading & writing by block**
-```
+Reading & writing by block
+
+```python
 blockSize = 64
 for i in range(0, rows, blockSize):
        if i + blockSize < rows:
@@ -6263,72 +5744,25 @@ for i in range(0, rows, blockSize):
        outBand.WriteArray(outData, j, i)
 ```
 
-- **Setting histogram**
- - So the ArcGIS will display the Image correctly
-Do it **AFTER** done writing to the image
-**`histogram: [min, max, bins, list of counts]`** is a list
-**`SetDefaultHistogram(min, max, counts)`**
- - Code:
-```
+Setting histogram
+
+```python
 outBand.SetNoDataValue(-99)
 histogram = outBand.GetDefaultHistogram()
 outBand.SetDefaultHistogram(histogram[0], histogram[1], histogram[3])
 ```
 
-- **Building pyramids**
- - Do this **AFTER** setting the **histogram**
-Force Imagine-style pyramid file (.rrd)
- - Code:
-```
-gdal.SetConfigOption('HFA_USE_RRD', 'YES')
-# not sure what the optimal overview list is
-outDataset.BuildOverviews ( overviewlist=[3, 9, 27, 81, 243, 729] )
-```
+Week 7: More Raster Processing
 
-- **Different extents**
- - What if we need to do map algebra on two images
-   **with different extents**?
-```
-1.. Find overlapping extents
-2.. Just read data in for the overlapping areas
-3.. When creating the output, make sure you
-           1. set the correct rows and columns and that
-           2. the geotransform reflects the correct origin
-4.. Make an appropriate decision for dealing with cells that don't line up
-```
-
-- **Different cell sizes**
- - **Harder** than different extents
-Could use a utility to **resample** images
-so they do all have the same cell size
-(we'll talk about some of these on the last day)
- - Could **choose an output cell size and use input images as they are**, but how to decide which value to use for images with smaller cells?
-
-- [**Mosaicing**](http://dict.youdao.com/search?q=Mosaicing&keyfrom=dict.index)
-
-- **Homework**
-
-- **My Problem:**
-> [os6_hw.py](http://www.gis.usu.edu/~chrisg/python/2008/os6_hw.py) doesn't work, for I don't have "Numeric" module, I have "Numpy" but don't know how to modify...
-
----
-
-## [Week 7:][null]
-
----
-### [More Raster Processing][null]
-
-1. **Projecting rasters**
- - WKT for input / output projections
-```
+```python
 gdal.CreateAndReprojectImage( <source_dataset>, <output_filename>,
-                                   src_wkt = <source_wkt>,
-                                   dst_wkt = <output_wkt>,
-                                   dst_driver = <Driver>,
-                                   eResampleAlg = <GDALResampleAlg>)
+                              src_wkt = <source_wkt>,
+                              dst_wkt = <output_wkt>,
+                              dst_driver = <Driver>,
+                              eResampleAlg = <GDALResampleAlg>)
 ```
- - Code:
-```
+
+```python
 import gdal, osr
 from gdalconst import *
 inFn = 'd:/data/classes/python/data/aster.img'
@@ -6346,378 +5780,166 @@ outWkt = outSr.ExportToWkt()
 gdal.CreateAndReprojectImage(inDs, outFn, src_wkt=inWkt, dst_wkt=outWkt, dst_driver=driver, eResampleAlg=GRA_Bilinear)
 inDs = None
 ```
-- **DOCELL**
- - An AML DOCELL loop processes each cell in a grid individually
- - Can loop through each cell with Numeric but it's really slow
- - Fortunately, there are other (better) ways...
-    - Simple model using a DEM,
-elevation > 2500 = 1
-elevation < 2500 = 0
-```
-import gdal, Numeric, sys, time, utils
-inFn = 'd:/data/demtest/41111f6.img'
-outFn1 = 'd:/data/classes/python/data/dem1a.img'
-outFn2 = 'd:/data/classes/python/data/dem2a.img'
-driver = gdal.GetDriverByName('HFA')
-driver.Register()
-inDs = gdal.Open(inFn)
-inBand = inDs.GetRasterBand(1)
-rows = inDs.RasterYSize
-cols = inDs.RasterXSize
-start = time.time()
-# specific processing here, outData
-end = time.time()
-# outFn changes and print statement at end, but
-# everything else is the same for all methods
-outDs = driver.Create(outFn1, cols, rows, 1, inBand.DataType)
-outDs.SetGeoTransform ( inDs.GetGeoTransform() )
-outDs.SetProjection ( inDs.GetProjection() )
-outBand = outDs.GetRasterBand(1)
-outBand.WriteArray(outData, 0, 0)
-outDs = None
-print 'Method 1 took', end - start, 'seconds to process'
-```
-       - Method 1 - **looping through cell-by-cell**
-```
-# method 1 – looping through cell-by-cell
-start = time.time()
-outData = Numeric.zeros((rows, cols))
-for y in range(rows):
-             for x in range(cols):
-                  if inData[y, x] > 2500:
-                         outData[y, x] = 1
-                  else:
-                         outData[y, x] = 0
-end = time.time()
-# Method 1 took 28.36 seconds to process
-```
-       - Method 2 - **using Numeric.greater()**
-```
-# method 2 – using Numeric.greater()
-start = time.time()
-outData = Numeric.greater(inData, 2500)
-end = time.time()
-# Method 2 took 0.14 seconds to process
-```
-    - Take home message:
-> Built-in functions are **MUCH** faster
-than looping through cells
 
-3. **Moving windows (neighborhoods)**
- - ![](http://timge4.126.net/image?w=440&url=http%3A%2F%2F126.fm%2F3tk5sT&gif=0&quality=85)
- - Code:
-```
-import gdal, Numeric, sys, time
-inFn = 'd:/data/classes/python/data/smallaster.img'
-outFn = '...' # different for each one
-driver = gdal.GetDriverByName('HFA')
-driver.Register()
-inDs = gdal.Open(inFn)
-cols = inDs.RasterXSize
-rows = inDs.RasterYSize
-inBand = inDs.GetRasterBand(1)
-inData = ... # different for each one
-outData = ... # different for each one
-start = time.time()
-# specific processing here
-end = time.time()
-outDs = driver.Create(outFn, cols, rows, 1, inBand.DataType)
-outDs.SetGeoTransform(inDs.GetGeoTransform())
-outDs.SetProjection(inDs.GetProjection())
-outBand = outDs.GetRasterBand(1)
-outBand.WriteArray(outData, 0, 0)
-outDs = None
-print end - start, 'seconds to process'
-```
-    - Method 1
-```
-# truncating the output values using "neighborhood notation" – 44.3 seconds
-# must cast input up to int or else calculations get truncated to byte
-inData = inBand.ReadAsArray(0, 0, cols, rows).astype(Numeric.Int)
-outData = Numeric.zeros((rows, cols), Numeric.Int)
-start = time.time()
-for i in range(1, rows-1):
-           for j in range(1, cols-1):
-               outData[i,j] = (inData[i-1,j-1] + inData[i-1,j] + inData[i-1,j+1] + inData[i,j-1] + inData[i,j] + inData[i,j+1] + inData[i+1,j-1] + inData[i+1,j] + inData[i+1,j+1]) / 9
-end = time.time()
-```
-    - Method 2
-```
-# explicitly rounding the output values using "neighborhood notation" – 50.9 seconds
-# can use Int or Float for inData & outData
-inData = inBand.ReadAsArray(0, 0, cols, rows).astype(Numeric.Int)
-outData = Numeric.zeros((rows, cols), Numeric.Int)
-start = time.time()
-for i in range(1, rows-1):
-           for j in range(1, cols-1):
-               outData[i,j] = round((inData[i-1,j-1] + inData[i-1,j] + inData[i-1,j+1] + inData[i,j-1] + inData[i,j] + inData[i,j+1] + inData[i+1,j-1] + inData[i+1,j] + inData[i+1,j+1]) / 9.0)
-end = time.time()
-```
-    - Method 3
-```
-# implicitly rounding the output values using "neighborhood notation" – 47.4 seconds
-# gets rounded when written to byte output dataset
-# must be float to get the rounding
-inData = inBand.ReadAsArray(0, 0, cols, rows).astype(Numeric.Float)
-outData = Numeric.zeros((rows, cols), Numeric.Float)
-start = time.time()
-for i in range(1, rows-1):
-           for j in range(1, cols-1):
-               outData[i,j] = (inData[i-1,j-1] + inData[i-1,j] + inData[i-1,j+1] + inData[i,j-1] + inData[i,j] + inData[i,j+1] + inData[i+1,j-1] + inData[i+1,j] + inData[i+1,j+1]) / 9.0
-end = time.time()
-```
-    - Method 4
-```
-# truncating the output values using "matrix notation" – 0.6 seconds
-inData = inBand.ReadAsArray(0, 0, cols, rows).astype(Numeric.Int)
-outData = Numeric.zeros((rows, cols), Numeric.Int)
-start = time.time()
-outData[1:rows-1, 1:cols-1] = (inData[0:rows-2, 0:cols-2] + inData[0:rows-2, 1:cols-1] + inData[0:rows-2, 2:cols] + inData[1:rows-1, 0:cols-2] + inData[1:rows-1, 1:cols-1] + inData[1:rows-1, 2:cols] + inData[2:rows, 0:cols-2] + inData[2:rows,1:cols-1] + inData[2:rows,2:cols]) / 9
-end = time.time()
-```
-    - Method 5
-```
-# explicitly rounding the output values using "matrix notation" – 3.6 seconds
-inData = inBand.ReadAsArray(0, 0, cols, rows).astype(Numeric.Int)
-outData = Numeric.zeros((rows, cols), Numeric.Float)
-start = time.time()
-outData[1:rows-1, 1:cols-1] = Numeric.around((inData[0:rows-2, 0:cols-2] + inData[0:rows-2, 1:cols-1] + inData[0:rows-2, 2:cols] + inData[1:rows-1, 0:cols-2] + inData[1:rows-1, 1:cols-1] + inData[1:rows-1, 2:cols] + inData[2:rows, 0:cols-2] + inData[2:rows,1:cols-1] + inData[2:rows,2:cols]) / 9)
-end = time.time()
-```
-     - Method 6
-```
-# implicitly rounding the output values using "matrix notation" – 2.1 seconds
-# gets rounded when written to byte output dataset
-inData = inBand.ReadAsArray(0, 0, cols, rows).astype(Numeric.Float)
-outData = Numeric.zeros((rows, cols), Numeric.Float)
-start = time.time()
-outData[1:rows-1, 1:cols-1] = (inData[0:rows-2, 0:cols-2] + inData[0:rows-2, 1:cols-1] + inData[0:rows-2, 2:cols] + inData[1:rows-1, 0:cols-2] + inData[1:rows-1, 1:cols-1] + inData[1:rows-1, 2:cols] + inData[2:rows, 0:cols-2] + inData[2:rows,1:cols-1] + inData[2:rows,2:cols]) / 9
-end = time.time()
-```
-   - **So what is "matrix notation"?**
-    - Obviously much faster than "_neighborhood notation_"
-    - Basically **slicing** and **shifting** arrays
-    - Output and all input array slices MUST be the **same dimensions**
-    - Output array cannot be a **smaller data type** than any of the input arrays
+GDAL & OGR utilities
 
-- **Neighborhood by blocks**
- - Too hard to understand, leave for tomorrow
+-   Installed with FWTools and available from the FWTools Shell
 
+    +   [OGR utilities](http://www.gdal.org/ogr_utilities.html)
+    +   [GDAL utilities](http://www.gdal.org/gdal_utilities.html)
 
----
+-   ogrinfo
 
-## [Week 8:][null]
+    ```bash
+    ogrinfo sites.shp
+    ogrinfo sites.shp sites
+    ogrinfo –al sites.shp
+    ogrinfo sites.shp -al -so -spat 46000 4590000 490000 4600000
+    ```
 
----
-### [Misc Stuff][null]
+-   ogr2ogr
 
-1. **Random Python stuff**
- - To really delete a feature from a shapefile
-```
-layer.DeleteFeature(fid)
-datasource.ExecuteSQL('REPACK ' + layer.GetName())
-```
- - To print something **immediately**
-instead of waiting until the program is done:
-```
-print 'stuff'
-sys.stdout.flush()
-```
+    ```bash
+    # Converts from one data type to another
+    # Converts shapefile to KML
+    ogr2ogr -f KML -dsco NameField=Name counties.kml ut_counties.shp
 
-- **GDAL & OGR utilities**
- - Installed with FWTools and available from the FWTools Shell
-`for me, it's zsh shell, all ogr utilities and some gdal utilities`
- - Full documentation available at:
-[OGR utilities](http://www.gdal.org/ogr_utilities.html)
-[GDAL utilities](http://www.gdal.org/gdal_utilities.html)
- - Utilities usage:
-   - ogrinfo
-```
-ogrinfo sites.shp
-ogrinfo sites.shp sites
-ogrinfo –al sites.shp
-ogrinfo sites.shp -al -so -spat 46000 4590000 490000 4600000
-```
-   - ogr2ogr
-```
-# Converts from one data type to another
-# Converts shapefile to KML
-ogr2ogr -f KML -dsco NameField=Name counties.kml ut_counties.shp
-# Convert a KML file to a shapefile and reproject
-ogr2ogr -f "ESRI Shapefile" -s_srs "EPSG:4326" -t_srs "EPSG:26912" counties_utm.shp counties.kml
-# Copy just a subset of fields with –select
-ogr2ogr -f KML -select name,state_name counties1.kml ut_counties.shp
-# Can use some of the same switches as with ogrinfo, like
-# Limit by attribute with –where
-# Limit by spatial extent with –spat
-# Use –append to append to an existing file
-```
-   - gdalinfo
-```
-# Prints info about a raster data set
-gdalinfo raster.img
-# See the documentation for ways to suppress some of the info
-```
-   - gdal_translate
-```
-# Convert from one data type to another
-# Convert to full-sized jpg
-gdal_translate -of jpeg aster.img aster1.jpg
-# Make a much smaller jpg
-gdal_translate -of jpeg -outsize 10% 10% aster.img aster2.jpg
-# Only use the first band in the image
-gdal_translate -of jpeg -outsize 10% 10% -b 1 aster.img aster3.jpg
-# Re-order the bands
-gdal_translate -of jpeg -outsize 10% 10% -b 3 -b 2 -b 1 aster.img aster4.jpg
-# Subset the image
-gdal_translate -of jpeg -projwin 458000 4658000 483000 4631000 aster.img aster5.jpg
-```
-   - gdaladdo
-```
-# Build overviews (pyramids) for an image
-# To build Imagine-style pyramids:
-gdal_translate -of hfa -projwin 458000 4658000 483000 4631000 aster.img astersub.img
-gdaladdo --config HFA_USE_RRD YES astersub.img 3 9 27 81
-```
-   - gdalwarp
-```
-# Reproject images
-gdalwarp -of hfa -t_srs EPSG:4326 -r bilinear aster.img aster_geo.img
-```
-   - gdal_merge.py
-```
-# Python script to mosaic images
-# Only works with some output formats (not jpeg or png, for example)
-gdal_merge.py -o mosaic1.tif -of gtiff -co tfw=yes q0519ne.jpg q0520nw.jpg
-# Mosaic and subset at the same time
-gdal_merge.py -o mosaic2.tif -of gtiff -co tfw=yes -ul_lr 424600 4622700 430000 4620000 q0519ne.jpg q0520nw.jpg
-# Make a reduced resolution mosaic
-gdal_merge.py -o mosaic3.tif -of gtiff -co tfw=yes -ps 100 100 q0519ne.jpg q0520nw.jpg
-# Mosaic lots of files at once
-gdal_merge -o mosaic4.tif -of gtiff -co tfw=yes -ps 100 100 --optfile files.txt
-# where files.txt has filenames, one per line, like: q2.jpg \n q3.jpg \n etc
-```
+    # Convert a KML file to a shapefile and reproject
+    ogr2ogr -f "ESRI Shapefile" -s_srs "EPSG:4326" -t_srs "EPSG:26912" counties_utm.shp counties.kml
 
-- **Calling other programs from Python**
- - os.system(<command_string>)
-```
-import os
-os.system('gdaladdo --config HFA_USE_RRD YES q0520nw.img 3 9 27 81')
-# Batching it:
-import glob, os
-for fn in glob.glob('d:/data/*.img'):
-        os.system('gdaladdo --config HFA_USE_RRD YES ' + fn + ' 3 9 27 81')
-# Open ArcMap and wait for it to close (use / or \\ for directory separators)
-os.system('C:/Bin/ArcMap.exe')
-os.spawnl(os.P_WAIT, 'C:/Bin/ArcMap.exe')
-# Open ArcMap and let Python continue on its way
-os.spawnl(os.P_NOWAIT, 'C:/Bin/ArcMap.exe')
-# Open all .py files in a directory with Crimson Editor (use Windows notation \ for passed arguments)
-os.spawnl(os.P_NOWAIT, 'C:/Crimson Editor/cedt.exe', 'cedt.exe', 'd:\data\classes\python\os8\*.py')
-```
- - **Open Files**
-   - Windows only
-   - The file extension must have an associated application
-   - Python has no idea what you do with the file once it's open
-`os.startfile('test.doc')`
+    # Copy just a subset of fields with –select
+    ogr2ogr -f KML -select name,state_name counties1.kml ut_counties.shp
 
-- **Using GDAL & OGR with ArcGIS**
- - Need to install GDAL, Numeric, etc for the ArcGIS version of Python (see the installation instructions from the first day)
- - Can import arcgisscripting , gdal, ogr, Numeric, etc all in the same python script
- - I tried using the script's output as an input to another tool in a model, and ArcGIS died a horrible death (without even trying to run the script! – when the user chooses the input and output files)
- - What I learned after wasting many hours trying to make this work: Mixing gdal and arcgisscripting is fine, but avoid ArcMap
+    # Can use some of the same switches as with ogrinfo, like
+    # Limit by attribute with –where
+    # Limit by spatial extent with –spat
+    # Use –append to append to an existing file
+    ```
 
-### [That's it, folks!][null]
+-   gdalinfo
 
-[null]: file:///
+    ```python
+    # Prints info about a raster data set
+    gdalinfo raster.img
+    # See the documentation for ways to suppress some of the info
+    ```
 
----
-~~~
-log: $1. Finished at 01:50:08, Saturday, February 08 2014; $2. modified a lot. Friday, February 28 2014; $3. Sunday, January 04 2015;
-~~~
+-   gdal_translate
 
+    ```python
+    # Convert from one data type to another
+    # Convert to full-sized jpg
+    gdal_translate -of jpeg aster.img aster1.jpg
+    # Make a much smaller jpg
+    gdal_translate -of jpeg -outsize 10% 10% aster.img aster2.jpg
+    # Only use the first band in the image
+    gdal_translate -of jpeg -outsize 10% 10% -b 1 aster.img aster3.jpg
+    # Re-order the bands
+    gdal_translate -of jpeg -outsize 10% 10% -b 3 -b 2 -b 1 aster.img aster4.jpg
+    # Subset the image
+    gdal_translate -of jpeg -projwin 458000 4658000 483000 4631000 aster.img aster5.jpg
+    ```
 
+-   gdaladdo
 
-- [**Improv Wisdom: Don't Prepare, Just Show Up**](http://book.douban.com/subject/2887103/)
+    ```python
+    # Build overviews (pyramids) for an image
+    # To build Imagine-style pyramids:
+    gdal_translate -of hfa -projwin 458000 4658000 483000 4631000 aster.img astersub.img
+    gdaladdo --config HFA_USE_RRD YES astersub.img 3 9 27 81
+    ```
 
----
-### [TOC]()
-- prologue
-- the first maxim: **say yes**
-- the second maxim: **don't prepare**
-- the third maxim: **just show up**
-- the fourth maxim: **start anywhere**
-- the fifth maxim: **be average**
-- the sixth maxim: **pay attention**
-- the seventh maxim: **face the facts**
-- the eighth maxim: **stay on course**
-- the ninth maxim: **wake up to the gifts**
-- the tenth maxim: **make mistakes, please**
-- the eleventh maxim: **act now**
-- the twelfth maxim: **take care of each other**
-- the thirteen maxim: **enjoy the ride epilogue**
+-   gdalwarp
 
----
-~~~
-                                  Run, Forest, Run
-~~~
+    ```python
+    # Reproject images
+    gdalwarp -of hfa -t_srs EPSG:4326 -r bilinear aster.img aster_geo.img
+    ```
 
-## [prologue]()
+-   gdal_merge.py
+
+    ```python
+    # Python script to mosaic images
+    # Only works with some output formats (not jpeg or png, for example)
+    gdal_merge.py -o mosaic1.tif -of gtiff -co tfw=yes q0519ne.jpg q0520nw.jpg
+    # Mosaic and subset at the same time
+    gdal_merge.py -o mosaic2.tif -of gtiff -co tfw=yes -ul_lr 424600 4622700 430000 4620000 q0519ne.jpg q0520nw.jpg
+    # Make a reduced resolution mosaic
+    gdal_merge.py -o mosaic3.tif -of gtiff -co tfw=yes -ps 100 100 q0519ne.jpg q0520nw.jpg
+    # Mosaic lots of files at once
+    gdal_merge -o mosaic4.tif -of gtiff -co tfw=yes -ps 100 100 --optfile files.txt
+    # where files.txt has filenames, one per line, like: q2.jpg \n q3.jpg \n etc
+    ```
+
+## [Improv Wisdom: Don't Prepare, Just Show Up](http://book.douban.com/subject/2887103/)
+
+-   prologue
+-   the first maxim: **say yes**
+-   the second maxim: **don't prepare**
+-   the third maxim: **just show up**
+-   the fourth maxim: **start anywhere**
+-   the fifth maxim: **be average**
+-   the sixth maxim: **pay attention**
+-   the seventh maxim: **face the facts**
+-   the eighth maxim: **stay on course**
+-   the ninth maxim: **wake up to the gifts**
+-   the tenth maxim: **make mistakes, please**
+-   the eleventh maxim: **act now**
+-   the twelfth maxim: **take care of each other**
+-   the thirteen maxim: **enjoy the ride epilogue**
+
 1. The older Days
- - 11 years old, got one **"paint-by-numbers kit"**, then "Patsy(author) is an artist".
- - I found the way to live: always go by the rules, use the recipe, follow the pattern, rehearse the script, copy the masters, etc. Be short, follow the lines in everything.
 
-- Painting outside the lines
- - As improvisers we discover that we don't need this unrealistic guarantee to begin. The only real failure is not doing anything. Why not explore, get moving on your life, **kick-start your dreams, paint outside thi lines?**
-- The Improvisers's World
- - secret society: "the improv world", they are **can-do** people, they **improvise**.
-- The First Improvisers
- - Improvising can give us a taste of the **primal freedom** that our early ancestors experienced before they turned their attention to planning; it is an exhilarating way to live.
-- Not Everything is Funny
- - Improvisation is not the study of comedy.
- - An excellent manual on swimming is useless until you jump into the pool.
- - My aim is to **nudge** out of your comfortable poolside chair, guide you to climb onte the high board, and cheer you on as you dive into to the clear, crystal water.
-- When Not to Improvise
- - Don't over acting, it's a tool should always be put into service with a healthy dose of common sense.
- - A successful life involves both planning and improvising.
- - "going with the flow" ?
-"Pisces Mortui Solum Cum Flumine Natant". (Only the dead fish go with the flow")
+always go by the rules, use the recipe, follow the pattern, rehearse the script, copy the masters, etc.
 
----
-###### the first maxim:
-## [say yes]()
-1. ...yes I said yes I will Yes.  -- James Joyce, _Ulysses_
- - crazy to "yes" to everything,
- - Saying yes (and follow through with support) prevent you from committing a cardinal sin - blocking.
- - As we practice this affirmative response to life, positive things can happen.
- - Try this: for one day say yes to everything. Set your own preferences aside. See what's gonna happen
-- Inventing Proverbs
- - "Try ... not ... to ... laugh ... when ... you ... look ... at ... your ... waistline."
-Yes, yes, yes, yes, yes, yes!
-- Exercise the yes muscle. This builds optimism and hope.
+Be short, follow the lines in everything.
 
----
-###### the second maxim:
-## [don't prepare]()
-1. Empty yourself of everything. -- Lao Tse, _Tao Te Ching_
- - We often substitude planning, ruminating, or list-making for actually doing something about our dreams.
- - Instead of preparing an outcome, ready yourself, for whatever may come.
- - Substitute attention for preparation. Then you will be working in real time.
-- Try this:
- - speand a day without plan, have an adventure.
- - Substitute Zen-like attention for planning.
- - Relax
-- Coping with Fear
- - Performance anxiety comes from excessive self-focus. "Everyone is looking at me, I'm not good enough..."
- - Not a big deal.
+As improvisers we discover that we don't need this unrealistic guarantee to
+begin. The only real failure is not doing anything.
 
----
-#### the third maxim:
-## [just show up]()
-1. Stop talking. Start walking. -- L.M. _Heroux_
- - Just show up
- - Shit off **procrastination**, **laziness**, **fears**.
- - Kick-start your life - walk, run, crawl, flaw, bicycle.
+Why not explore, get moving on your life, kick-start your dreams, paint outside the lines?
+
+they are **can-do** people, they **improvise**.
+
+Improvisation ( `[,ɪmprəvaɪ'zeʃən]`即兴创作；即席演奏) is not the study of comedy.
+
+An excellent manual on swimming is useless until you jump into the pool.
+
+My aim is to **nudge** out of your comfortable poolside chair, guide you to
+climb onte the high board, and cheer you on as you dive into to the clear,
+crystal water.
+
+Don't over acting, it's a tool should always be put into service with a healthy
+dose of common sense.
+
+A successful life involves both planning and improvising.
+
+"going with the flow"?
+
+> "Pisces Mortui Solum Cum Flumine Natant". (Only the dead fish go with the flow")
+
+
+-   ...yes I said yes I will Yes.  -- James Joyce, _Ulysses_
+
+    +   crazy to "yes" to everything,
+    +   Saying yes (and follow through with support) prevent you from committing a cardinal sin - blocking.
+    +   As we practice this affirmative response to life, positive things can happen.
+    +   Try this: for one day say yes to everything. Set your own preferences aside. See what's gonna happen
+
+-   don't prepare
+
+    +   Empty yourself of everything. -- Lao Tse, _Tao Te Ching_
+    +   We often substitude planning, ruminating, or list-making for actually doing something about our dreams.
+    +   Instead of preparing an outcome, ready yourself, for whatever may come.
+    +   Substitute attention for preparation. Then you will be working in real time.
+    +   Not a big deal.
+
+-   just show up
+
+    +   Stop talking. Start walking. -- L.M. _Heroux_
+    +   Shit off **procrastination**, **laziness**, **fears**
+    +   Kick-start your life - walk, run, crawl, flaw, bicycle.
+
 - Using Rituals
  - create a simple ritual
  - think of what will make the habit easy or more attractive to do.
@@ -6728,9 +5950,6 @@ Yes, yes, yes, yes, yes, yes!
  - e.g. eat at different places. make a change
  - Walk, run, bike, skip to the places that you need to be.
  - Motivation is not a prerequisite for showing up.
-
-
-
 - the fourth maxim: start anywhere
 - the fifth maxim: be average
 - the sixth maxim: pay attention
@@ -6742,27 +5961,13 @@ Yes, yes, yes, yes, yes, yes!
 - the twelfth maxim: take care of each other
 - the thirteen maxim: enjoy the ride epilogue
 
-
-
----
-~~~
-log: $1. created at 23:44:08, Wednesday, February 26 2014;
-~~~
-
-- [Xah Emacs Lisp Tutorial][xah_lisp]
+## Emacs Lisp Tutorial][xah_lisp]
 
 [xah_lisp]: http://ergoemacs.org/emacs/elisp.html
 
+## [ELisp Basics][elisp_basic]
 
-
-
-
-
-
----
-#### [ELisp Basics][elisp_basic]
-
-```
+```lisp
 message, nil, integerp, equal, string-equal, setq, if, let, progn, while, interactive
 
 (print (format "yay %d" x))
@@ -6771,17 +5976,9 @@ message, nil, integerp, equal, string-equal, setq, if, let, progn, while, intera
 
 [elisp_basic]: http://ergoemacs.org/emacs/elisp_basics.html
 
+## [Overview of Text-Processing in Emacs Lisp][overview]
 
-
-
-
-
-
-
----
-#### [Overview of Text-Processing in Emacs Lisp][overview]
-
-```
+```lisp
 point
 point-{min, max}
 line-{beginning, end}-position
@@ -6789,45 +5986,22 @@ region-{beginning, end}
 {goto, forward, backward}-char
 delete-{char, region}
 insert
-
 ```
 
 [overview]: http://ergoemacs.org/emacs/elisp_editing_basics.html
 
+## [Emacs Lisp Examples][emacs-lisp-examples]
 
-
-
-
-
-
----
-#### [Emacs Lisp Examples][emacs-lisp-examples]
-
-1. [How to Write a Emacs Major Mode for Syntax Coloring][highlight]
+[How to Write a Emacs Major Mode for Syntax Coloring][highlight]
 
 [emacs-lisp-examples]: http://ergoemacs.org/emacs/elisp_examples.html
 [highlight]: http://ergoemacs.org/emacs/elisp_syntax_coloring.html
 
-
-
-
-
-
-
-
----
-#### [How to Evaluate Emacs Lisp Code][evaluate-emacs]
-
+## [How to Evaluate Emacs Lisp Code][evaluate-emacs]
 
 [evaluate-emacs]: http://ergoemacs.org/emacs/elisp_eval_lisp_code.html
 
-- [Inkscape  Official Tutorials](http://www.inkscape.org/en/learn/tutorials/)
-
-
-
-
----
-### TOC
+## [Inkscape  Official Tutorials](http://www.inkscape.org/en/learn/tutorials/)
 
 -  Basic tutorial
 -  Advanced tutorial
@@ -6838,12 +6012,8 @@ insert
 -  Tips and tricks
 -  Interpolate
 
+[Basic tutorial](http://inkscape.org/doc/basic/tutorial-basic.html)
 
-
-
-
----
-###  [Basic tutorial][basic]
 - The Basic Tutorial covers
  - **canvas navigation**,
  - **managing documents**,
@@ -6855,72 +6025,69 @@ insert
  - **alignment**, and
  - **z-order**.
 
+[Advanced tutorial](http://inkscape.org/doc/advanced/tutorial-advanced.html)
 
-
-
-
----
-### [Advanced tutorial][advanced]
 - This tutorial covers
  - **copy/paste**,
  - **node editing**,
  - **freehand** and
  - **bezier drawing**,
  - **path manipulation**,
- - [**booleans**][bool],
+ - ![booleans](http://inkscape.org/design/doc/advanced/advanced-f08-en.svg.png)
  - **offsets**,
- - [**simplification**][simpli], and
+ - ![simplification](http://inkscape.org/design/doc/advanced/advanced-f13-en.svg.png)
+
+ , and
  - **text tool**
  - The **ultimate power tool** of Inkscape is the **`XML editor`**
 
+[Shapes tutorial(http://inkscape.org/doc/shapes/tutorial-shapes.html)
 
+Rectangle: `F4`
 
-
-
----
-### [Shapes tutorial][shapes]
-
-1. **Rectangle**: `F4`
 ![](http://inkscape.org/design/doc/shapes/shapes-f08-en.svg.png)
 
-- **Ellipse**: `F5`
+Ellipse: `F5`
+
 ![](http://inkscape.org/design/doc/shapes/shapes-f11-en.svg.png)
 
-- **Star**
+Star
+
 ![](http://inkscape.org/design/doc/shapes/shapes-f14-en.svg.png)
+
 ![](http://inkscape.org/design/doc/shapes/shapes-f16-en.svg.png)
 
-- **Spiral**
+Spiral
+
 ![](http://inkscape.org/design/doc/shapes/shapes-f22-en.svg.png)
 
-- **Conclusion**
-Inkscape's shape tools are very powerful. **Learn their tricks** and **play with them at your leisure** — **this will pay off** when you do your design work, because using shapes instead of simple paths often makes vector art faster to create and easier to modify.
+Conclusion
 
+Inkscape's shape tools are very powerful. **Learn their tricks** and **play
+with them at your leisure** — **this will pay off** when you do your design
+work, because using shapes instead of simple paths often makes vector art
+faster to create and easier to modify.
 
+### [Bitmap tracing tutorial](http://inkscape.org/doc/tracing/tutorial-tracing.html)
 
+Brightness Threshold
 
-
----
-### [Bitmap tracing tutorial][tracing]
-
-1. **Brightness Threshold**
 ![](http://inkscape.org/design/doc/tracing/tracing-f02-en.svg.png)
 
-- **Optimal Edge Detection**
+Optimal Edge Detection
+
 ![](http://inkscape.org/design/doc/tracing/tracing-f03-en.svg.png)
 
-- **Color Quantization**
+Color Quantization
+
 ![](http://inkscape.org/design/doc/tracing/tracing-f04-en.svg.png)
 
-- **After tracing, we Simplify**
+After tracing, we Simplify
+
 ![](http://inkscape.org/design/doc/tracing/tracing-f06-en.svg.png)
 
+[Calligraphy(书法) tutorial][caligraphy]
 
-
-
-
----
-### [Calligraphy(书法) tutorial][caligraphy]
 1. There are **three main styles** of calligraphy:
  - Western or Roman
  - Arabic
@@ -6929,27 +6096,24 @@ This tutorial focuses mainly on **Western calligraphy**, as the other two styles
 
 - **Angle & Fixation**
  - fixed angle
-![][angle]
+
+![](http://inkscape.org/design/doc/calligraphy/calligraphy-f04-en.svg.png)
 
  - fixed angle
-![][fixation]
+
+![](http://inkscape.org/design/doc/calligraphy/calligraphy-f06-en.svg.png)
 
 - **Tremor**
-![][tremor]
+
+![](http://inkscape.org/design/doc/calligraphy/calligraphy-f07-en.svg.png)
 
 - **Wiggle & Mass**
- - [example][inkscape]
 
-- **Conclusion**
+![](http://inkscape.org/design/doc/calligraphy/calligraphy-f10-en.svg.png)
+
 Calligraphy is **not only fun**; it's a deeply **spiritual art** that may transform your outlook on everything you do and see. Inkscape's calligraphy tool can only serve as a modest introduction. And yet it is very nice to play with and may be useful in real design. Enjoy!
 
-
-
-
-
-
----
-### [Elements of Design tutorial][elements]
+[Elements of Design tutorial][elements]
 1. **Overview**
 ![][elems]
 
@@ -6957,42 +6121,20 @@ Calligraphy is **not only fun**; it's a deeply **spiritual art** that may transf
  - [**Line**][line], [**Shape**][shape],  [**Size**][size],  [**Space**][space],  [**Color**][color], [**Texture**][texture], [**Value**][value]
 
 - **Principles of Design**
+
  - [**Balance**][balance], [**Contrast**][contrast], [**Emphasis**][emphasis], [**Proportion**][proportion], [**Pattern**][pattern], [**Gradation**][gradation]
 
-- **Composition: make them together**
+Composition: make them together
+
 ![][composition]
 
+[Tips and tricks][tipstricks]
+[Interpolate][interpolate]
 
-
-
-
----
-### [Tips and tricks][tipstricks]
-
-
-
-
----
-### [Interpolate][interpolate]
-
-
-
-[basic]: http://inkscape.org/doc/basic/tutorial-basic.html
-[shapes]: http://inkscape.org/doc/shapes/tutorial-shapes.html
-[advanced]: http://inkscape.org/doc/advanced/tutorial-advanced.html
-[tracing]: http://inkscape.org/doc/tracing/tutorial-tracing.html
 [caligraphy]: http://inkscape.org/doc/calligraphy/tutorial-calligraphy.html
 [elements]: http://inkscape.org/doc/elements/tutorial-elements.html
 [tipstricks]: http://inkscape.org/doc/tips/tutorial-tips.html
 [interpolate]: http://inkscape.org/doc/interpolate/tutorial-interpolate.html
-
-
-[bool]: http://inkscape.org/design/doc/advanced/advanced-f08-en.svg.png
-[simpli]: http://inkscape.org/design/doc/advanced/advanced-f13-en.svg.png
-[angle]: http://inkscape.org/design/doc/calligraphy/calligraphy-f04-en.svg.png
-[fixation]: http://inkscape.org/design/doc/calligraphy/calligraphy-f06-en.svg.png
-[tremor]: http://inkscape.org/design/doc/calligraphy/calligraphy-f07-en.svg.png
-[inkscape]: http://inkscape.org/design/doc/calligraphy/calligraphy-f10-en.svg.png
 [elems]: http://inkscape.org/design/doc/elements/elements-f01-en.svg.png
 [line]: http://inkscape.org/design/doc/elements/elements-f02-en.svg.png
 [shape]: http://inkscape.org/design/doc/elements/elements-f03-en.svg.png
@@ -7009,33 +6151,8 @@ Calligraphy is **not only fun**; it's a deeply **spiritual art** that may transf
 [gradation]: http://inkscape.org/design/doc/elements/elements-f14-en.svg.png
 [composition]: http://inkscape.org/design/doc/elements/elements-f15-en.svg.png
 
+## [Learning IPython for Interactive Computing and Data Visualization](http://book.douban.com/subject/24525190/)
 
-
-
----
-~~~
-log: $1. created long time ago, now is Fri Apr 11 16:45:34 CST 2014;
-~~~
-
-
-
----
-### Refs
-- [Learning IPython for Interactive Computing and Data Visualization][ipython_for_something]
-
-[ipython_for_something]: http://book.douban.com/subject/24525190/
-
-
-
-
-
-
-
-
-
-
----
-### TOC
 - Preface
 - §1. Getting Started with IPython
 - §2. Interactive Work with IPython
@@ -7044,16 +6161,6 @@ log: $1. created long time ago, now is Fri Apr 11 16:45:34 CST 2014;
 - §5. High-Performance and Parallel Computing
 - §6. Customizing IPython
 
-
-
-
-
-
-
-
-
----
-#### [Preface]()
 1. **Get the example code**
  - Download from [**Packt Publishing**][packet_pub]
  - Or, my archive: [**Learning ... Visualization.zip**][my_archive]
@@ -7061,13 +6168,8 @@ log: $1. created long time ago, now is Fri Apr 11 16:45:34 CST 2014;
 [packet_pub]: http://www.packtpub.com/learning-ipython-for-interactive-computing-and-data-visualization/book
 [my_archive]: http://gnat-tang-archive.qiniudn.com/file_Learning%20IPython%20for%20Interactive%20Computing%20and%20Data%20Visualization.zip
 
+§1. Getting Started with IPython
 
-
-
-
-
----
-#### [§1. Getting Started with IPython]()
 1. **Packages** (check all in one site: [PyPI - Python Package Index][py_pk_index])
  - IPython
  - Numpy
@@ -7357,16 +6459,16 @@ Source[m.py] -> Byte Code[m.pyc] -> Runtime[PVM]
  - Execution Model Variations:
 ```
 Python(CPython),         the Standard;
-Jython,		       Python for Java;
-IronPython, 	      Python for .Net;
-Stackless,	  Python for concurrency;
-PyPy, 		        Python for speed.
+Jython,            Python for Java;
+IronPython,           Python for .Net;
+Stackless,    Python for concurrency;
+PyPy,               Python for speed.
 ```
  - Execution Optimization Tools
 ```
 Cython:             A Python / C hybrid
-Shed Skin:	      A Python-to-C++ translator
-Pysco:		      The original JIT(just-in-time) compiler
+Shed Skin:        A Python-to-C++ translator
+Pysco:            The original JIT(just-in-time) compiler
 ```
  - Frozen Binaries
 
@@ -7376,121 +6478,121 @@ Pysco:		      The original JIT(just-in-time) compiler
 - Running code interactively
 - System Command Line and Files
            1. [A Script file] -> [Running files with command lines]
-	   2. Command-line Usage Variations: python a_file.py > save_output.txt
+       2. Command-line Usage Variations: python a_file.py > save_output.txt
      4. Unix-Style Executable Scripts: #!
            1. Unix Script Basics:
-	         1. Their first line is special: #! (hash bang / shebang)
-		 2. They usually has executable privileges
-		 3. The Unix env Loopup trick:
-		       #!/usr/bin/env python
-		             1. avoid hardcoding the path to the Python interpreter
-			     2. by looking in all the directories listed in $PATH
+             1. Their first line is special: #! (hash bang / shebang)
+         2. They usually has executable privileges
+         3. The Unix env Loopup trick:
+               #!/usr/bin/env python
+                     1. avoid hardcoding the path to the Python interpreter
+                 2. by looking in all the directories listed in $PATH
      5. Import && reload && modules and namespaces
      6. Using exec(open('a_module.py').read()) to Run module Files
      7. The IDLE user interface (IDLE -> IDE): idle-python2.7(python -m idlelib.idle)
      8. Other Launch Option
            1. Embedding Calls: in C, it's like:
-	        		#include<Python.h>
-				Py_Initialize();
-				PyRun_SimpleString("x = 'brave ' * 100");
+                    #include<Python.h>
+                Py_Initialize();
+                PyRun_SimpleString("x = 'brave ' * 100");
 
 Part II: Types and Operations
 
 Chap 4: Introducing Python Object Types
      1. The Python Conceptual Hierarchy
            1. Programs are composed of modules
-	   2. Modules contain expression
-	   3. Statemonts contain expressions
-	   4. Expressions create and process objects
+       2. Modules contain expression
+       3. Statemonts contain expressions
+       4. Expressions create and process objects
      2. Why use built-in types?
            1. Built-in objects make programs easy to write
-	   2. Built-in objects are components of extensions.
-	   3. Built-in objects are often more efficient than custom data structures
-	   4. Buitt-in objects are a standard part of the language
+       2. Built-in objects are components of extensions.
+       3. Built-in objects are often more efficient than custom data structures
+       4. Buitt-in objects are a standard part of the language
      3. Python's Core Data Types
-     	1. Overall:
-		 Object-type				Example literals/creation
-	  	 Numbers				1573
-	   	 Strings				'spam'
-	   	 Lists					[1, [2, 4], 5]
-	   	 Dictionaries				{'food': 'spam', 'taste': 'yum'}, dict(hours=10)
-	   	 Tuples					(1, 'spam', 4, 'U'), tuple & namedtuple
-	   	 Files					open('egg.txt'), open('file-path', 'wb')
-	   	 Sets					set('abc'), {'a', 'b', 'c'}
-	   	 Other core types			Booleans, types, None
-	   	 Program unit types			Funtions, modules, classes
-	   	 Implementatino-related types		Compiled code, stack tracebacks
+        1. Overall:
+         Object-type                Example literals/creation
+         Numbers                1573
+         Strings                'spam'
+         Lists                  [1, [2, 4], 5]
+         Dictionaries               {'food': 'spam', 'taste': 'yum'}, dict(hours=10)
+         Tuples                 (1, 'spam', 4, 'U'), tuple & namedtuple
+         Files                  open('egg.txt'), open('file-path', 'wb')
+         Sets                   set('abc'), {'a', 'b', 'c'}
+         Other core types           Booleans, types, None
+         Program unit types         Funtions, modules, classes
+         Implementatino-related types       Compiled code, stack tracebacks
         2. Number
-	      1. len(str(2 ** 10000000)) # how many digits in a big number
-	      2. import math     // math.pi               // math.sqrt(24)
-	      3. import random   // random.random()	  // random.choice([4, 42, 20, 20])
-	3. Strings
-	      1. Sequence Operations: len(A_STRING); A_STRING[N]; A_STRING[-N]; A_STRING[M:N]; A_STRING * 6;
-	      2. Immutability (immutable -> unchangable)
-	            1. s[0] = 'z'                # Immutable objects cannot be changed
-		    2. s = 'z' + s[1:] 		 # But we can make new objecs
-		    3. list(s) 	 		 # Expand to a list: [...]
-	      3. Type-Specific Methods
-	      	    1. e.g. #1   # 1st example in file [Python_examples]
-		    2. upper(); isalpha(); rstrip() # Remove whitespace characters on the right side
-		    3. '%s, eggs, and %s' % ('spam', 'SPAM')
-		    4. '{0}, eggs, and {1}'.format('spam', 'SPAM')    # Formatting method (2.6+, 3.0+)
-		    5. '{}, eggs, and {}'.format('spam', 'SPAM')      # Formatting method (2.7+, 3.1+)
-		    6. '{:,.2f}'.format(2044.420)
-		    7. '%+4.2f' % (-3.2420420)
-	      4. Getting help
-	      	    1. dir(s)
-		    2. help(s.__add__) # Not help(s.__add__())
-	      5. Unicode Strings
-	      6. Pattern Matching
-	            1. import re # regular expression
-		    2. ... (for later futher reading)
-	4. Lists
-	      1. Sequence Operations: (like STRING)
-	      2. Type-Specific Operations: append(STR); pop(N); sort(); reverse();
-	      3. Bounds Checking: L[99] ... error text omitted ... IndexError: list assignment index out of range
-	      4. Nesting
-	      5. Comprehensions
-	      	    1. e.g. #5
-		    2. diag = [M[i][i] for i in [0, 1, 2]]
-		    3. ...
-	5. Dictionaries
-	      1. Mapping Operations:
-	      	 	 1. bob2 = dict(name = 'Bob', job = 'dev', age = 40)
-			 2. bob3 = dict(zip(['name', 'job', 'age'], ['Bob', 'dev', 40])) # Zipping
-	      2. Nesting Revisited
-	      3. Missing Keys:
-	      	 	 1. >>> 'f' in D
-			    False
-			 2. >>> if not 'f' in D:
-			    	   print('missing')
-			    Missing
-			 3. >>> value = profile.get('gender', 'male') # D.get(k[,d]) -> D[k] if k in D, else d.  d defaults to None.
-			 4. D.keys(); D.values();
-	      4. Sorting Keys: for Loops
-	      5. Itaration and Optimization: for x in [1, 2, 3, 4]: ...  # This is what a list comprehension deos,
-	      	 	       		     	      	     	    	 # Run the iteration protocol internally.
+          1. len(str(2 ** 10000000)) # how many digits in a big number
+          2. import math     // math.pi               // math.sqrt(24)
+          3. import random   // random.random()   // random.choice([4, 42, 20, 20])
+    3. Strings
+          1. Sequence Operations: len(A_STRING); A_STRING[N]; A_STRING[-N]; A_STRING[M:N]; A_STRING * 6;
+          2. Immutability (immutable -> unchangable)
+                1. s[0] = 'z'                # Immutable objects cannot be changed
+            2. s = 'z' + s[1:]       # But we can make new objecs
+            3. list(s)           # Expand to a list: [...]
+          3. Type-Specific Methods
+                1. e.g. #1   # 1st example in file [Python_examples]
+            2. upper(); isalpha(); rstrip() # Remove whitespace characters on the right side
+            3. '%s, eggs, and %s' % ('spam', 'SPAM')
+            4. '{0}, eggs, and {1}'.format('spam', 'SPAM')    # Formatting method (2.6+, 3.0+)
+            5. '{}, eggs, and {}'.format('spam', 'SPAM')      # Formatting method (2.7+, 3.1+)
+            6. '{:,.2f}'.format(2044.420)
+            7. '%+4.2f' % (-3.2420420)
+          4. Getting help
+                1. dir(s)
+            2. help(s.__add__) # Not help(s.__add__())
+          5. Unicode Strings
+          6. Pattern Matching
+                1. import re # regular expression
+            2. ... (for later futher reading)
+    4. Lists
+          1. Sequence Operations: (like STRING)
+          2. Type-Specific Operations: append(STR); pop(N); sort(); reverse();
+          3. Bounds Checking: L[99] ... error text omitted ... IndexError: list assignment index out of range
+          4. Nesting
+          5. Comprehensions
+                1. e.g. #5
+            2. diag = [M[i][i] for i in [0, 1, 2]]
+            3. ...
+    5. Dictionaries
+          1. Mapping Operations:
+                 1. bob2 = dict(name = 'Bob', job = 'dev', age = 40)
+             2. bob3 = dict(zip(['name', 'job', 'age'], ['Bob', 'dev', 40])) # Zipping
+          2. Nesting Revisited
+          3. Missing Keys:
+                 1. >>> 'f' in D
+                False
+             2. >>> if not 'f' in D:
+                       print('missing')
+                Missing
+             3. >>> value = profile.get('gender', 'male') # D.get(k[,d]) -> D[k] if k in D, else d.  d defaults to None.
+             4. D.keys(); D.values();
+          4. Sorting Keys: for Loops
+          5. Itaration and Optimization: for x in [1, 2, 3, 4]: ...  # This is what a list comprehension deos,
+                                                             # Run the iteration protocol internally.
         6. Tuples
-	      1. T = (1, 2, 3, 4)              # A 4-item tuple / T = 1, 2, 3, 4
-	      2. len(T)        	  	       # 4
-	      3. T[0]; T.index(4); T.count(4);
-	      4. Why Tuples: it's like a list, but supports fewer operations, but it's [Immutability]
-	7. Files
-	      1. f = open('data.txt', 'w')                   # make a new file in output mode
-	      2. f.write('hello\n');  			     # write strings
-	      3. f.close();
-	      4. text = f.read();
+          1. T = (1, 2, 3, 4)              # A 4-item tuple / T = 1, 2, 3, 4
+          2. len(T)                    # 4
+          3. T[0]; T.index(4); T.count(4);
+          4. Why Tuples: it's like a list, but supports fewer operations, but it's [Immutability]
+    7. Files
+          1. f = open('data.txt', 'w')                   # make a new file in output mode
+          2. f.write('hello\n');                 # write strings
+          3. f.close();
+          4. text = f.read();
               5. Binary Bytes Files
-	            1. import struct
-	      	    2. packed = struct.pack('>i4sh', 7, b'spam', 8)              # create packed binary data
-	      	    3. data = open('data.bin', 'rb').read()	   		   # open/read binary data file
-	      6. Unicode Text Files
-	            1. file = open('unidata.txt', 'w', encoding='utf-8');
+                1. import struct
+                2. packed = struct.pack('>i4sh', 7, b'spam', 8)              # create packed binary data
+                3. data = open('data.bin', 'rb').read()            # open/read binary data file
+          6. Unicode Text Files
+                1. file = open('unidata.txt', 'w', encoding='utf-8');
 
 
 ---
 ~~~
-log: $1. Note of Python	--- Fri Jan 24, 2014;
+log: $1. Note of Python --- Fri Jan 24, 2014;
 ~~~
 
 ---
@@ -8585,9 +7687,9 @@ datafile = 'ch02-fixed-width-1M.data'
 # this is where we define how to understand line of data from the file
 mask='9s14s5s' # 9chars | 14chars | 5chars
 with open(datafile, 'r') as f:
-	for line in f:
-		fields = struct.Struct(mask).unpack_from(line)
-		print 'fields: ', [field.strip() for field in fields]
+    for line in f:
+        fields = struct.Struct(mask).unpack_from(line)
+        print 'fields: ', [field.strip() for field in fields]
 ```
 - Importing data from tab-delimited files
 ```
@@ -9541,7 +8643,7 @@ log: $1 created at Wed Apr  9 11:58:17 CST 2014;
 - Sharing Congestion State
 - TCP Friendliness
 - TCP in High-Speed Environments
-- Delay-Based Congestion Control			     -
+- Delay-Based Congestion Control                 -
 - Buffer Bloat
 - Active Queue Management and ECN
 - Attacks Involving TCP Congestion Control

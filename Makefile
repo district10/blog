@@ -163,6 +163,8 @@ dent:
 db: douban
 douban:
 	$(EDITOR) $(DIR_PAGES)/douban.md 2>/dev/null &
+plan:
+	$(EDITOR) $(DIR_PAGES)/plans.md 2>/dev/null &
 fun:
 	$(MAKE) -C $(PAGES) fun
 s: song
