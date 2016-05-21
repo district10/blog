@@ -195,3 +195,12 @@ Image Lab
 -   [4ker/facerec: Implements face recognition algorithms for MATLAB/GNU Octave and Python.](https://github.com/4ker/facerec)
 -   [4ker/opencv-haar-classifier-training: Learn how to train your own OpenCV Haar classifier](https://github.com/4ker/opencv-haar-classifier-training)
 -   [4ker/opencv-code: C++ and Python code extracted from the tutorials at http://opencv-code.com](https://github.com/4ker/opencv-code)
+
+
+SURF特征点检测
+SURF特征提取
+使用FLANN进行特征点匹配
+FLANN结合SURF进行关键点的描述和匹配
+SIFT配合暴力匹配进行关键点描述和提取
+寻找已知物体
+利用ORB算法进行关键点的描述与匹配

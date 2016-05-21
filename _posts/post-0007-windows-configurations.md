@@ -56,3 +56,14 @@ Vim 配置
 
 - `C:\Program Files (x86)\Vim\_vimrc`
 - [`%HOME%/.vimrc`](https://github.com/district10/blog/blob/master/vimrc.vim)
+
+## Go
+
+[Downloads - The Go Programming Language](https://golang.org/dl/)
+
+## Zeal
+
+refs and see also
+
+  - [Docset Generation Guide - Kapeli](https://kapeli.com/docsets)
+  - [Zeal](https://zealdocs.org/)

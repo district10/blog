@@ -604,10 +604,10 @@ KMZ 格式怎么降采样？不知道！模型太大加载太慢，神烦。
         echo -n '+east_asian_line_breaks' || echo -n ''\
         )
 PANDOC_OPTIONS = -S -s --ascii \
-	-c main.css \
-	-A footer.html \
-	--highlight-style pygments \
-	-f markdown$(+EAST_ASIAN_LINE_BREAKS)
+    -c main.css \
+    -A footer.html \
+    --highlight-style pygments \
+    -f markdown$(+EAST_ASIAN_LINE_BREAKS)
 ```
 
 昨天晚上真的可以？还是我的幻觉？一定是幻觉因为昨天晚上 travis 编译也是没有通过
@@ -777,16 +777,16 @@ sparanoid/chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-c
 ## `1457712897`{.tzx-timestamp} Big Git Repo
 
 ```tzx-plain
-2.5M	./_statics
-12K	./private
-4.0K	./blagee
-1.8M	./_posts
-12M	./.git
-816K	./_pages
-7.6M	./publish
-4.0K	./gists
-3.4M	./_miscs
-28M	.
+2.5M    ./_statics
+12K ./private
+4.0K    ./blagee
+1.8M    ./_posts
+12M ./.git
+816K    ./_pages
+7.6M    ./publish
+4.0K    ./gists
+3.4M    ./_miscs
+28M .
 ```
 
 ## `1457701284`{.tzx-timestamp} Dafuq
@@ -1066,7 +1066,7 @@ Org-mode Format!](https://github.com/kuanyui/copy-as-org-mode)
 <small>
 ```plain
 error: Your local changes to the following files would be overwritten by checkout:
-	README.md
+    README.md
 Please, commit your changes or stash them before you can switch branches.
 Aborting
 ```
@@ -2743,9 +2743,9 @@ What bloody shit。
 
 <script type="text/javascript" src="ime.js"> </script>
 <script type="text/javascript">
-		window.onload = function(e){
-			hangul.init("krinput");
-		};
+        window.onload = function(e){
+            hangul.init("krinput");
+        };
 </script>
 
 [hangual]: http://ndb.io/

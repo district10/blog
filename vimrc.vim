@@ -13,15 +13,25 @@ set ignorecase
 set expandtab ts=4 sw=4 ai
 set nu
 set guioptions=""
+set mouse=""
+" In many terminal emulators the mouse works just fine, thus enable it.
+"
+"       if has('mouse')
+"         set mouse=a
+"       endif
 set iskeyword-=_    " two words: twenty_one
+" \u4e00-\u9fa5, \u3040-\u30FF
+"  20223-40869,   12352-12543
 
 set nobackup
 set nowritebackup
 set noswapfile
 
+" nnoremap gz :!zeal --query '<cword>'&<CR><CR>
+
 function! PanguSpacing()                                " :call PanguSpacing()
-    silent! '<,'>s/\([\u4e00-\u9fa5\u3040-\u30FF]\)\([a-zA-Z0-9@&=\[\$\%\^\-\+(\/\\]\)/\1 \2/g
-    silent! '<,'>s/\([a-zA-Z0-9!&;=\]\,\.\:\?\$\%\^\-\+\)\/\\]\)\([\u4e00-\u9fa5\u3040-\u30FF]\)/\1 \2/g
+    silent! '<,'>s/\([\u4e00-\u9fa5\u3040-\u30FF]\)\([a-zA-Z0-9@#&=\[\$\%\^\-\+(\/\\]\)/\1 \2/g
+    silent! '<,'>s/\([a-zA-Z0-9!#&;=\]\,\.\:\?\$\%\^\-\+\)\/\\]\)\([\u4e00-\u9fa5\u3040-\u30FF]\)/\1 \2/g
 endfunction
 function! PanguSpacingExtra()                           " :call PanguSpacingExtra()
     call PanguSpacing()
@@ -40,6 +50,10 @@ function! PanguSpacingExtra()                           " :call PanguSpacingExtr
     silent! %s/\([\u4e00-\u9fa5\u3040-\u30FF]\)>/\1》/g
 endfunction
 
+function! Wikipedia()
+    silent! %s/\[\d\+\]//g "    "[23]" -> ""
+endfunction
+
 " set laststatus=2
 " set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%h\ \ \ Line:\ %l
 
@@ -47,7 +61,7 @@ set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,cp936
-set formatoptions+=BmM
+set formatoptions=BmMcroql
 
 map Q gq            " use Q for formatting
 
@@ -65,22 +79,15 @@ endif
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
-" In many terminal emulators the mouse works just fine, thus enable it.
-"
-"       if has('mouse')
-"         set mouse=a
-"       endif
-
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 endif
-
 if has("autocmd")
     filetype plugin indent on
     augroup vimrcEx
         au!
-        autocmd FileType text setlocal textwidth=78
+        " autocmd FileType text setlocal textwidth=78
         autocmd BufReadPost *
             \ if line("'\"") > 1 && line("'\"") <= line("$") |
             \   exe "normal! g`\"" |

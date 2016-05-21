@@ -12,6 +12,12 @@ Plans
 
 Planned
 
+-   OpenCV
+
+-   [西瓜太忙](https://www.douban.com/people/weilan_cqu/)
+-   [小魏的修行路 - 博客频道 - CSDN.NET](http://blog.csdn.net/xiaowei_cqu)
+-   [【C++游戏编程】微软最有价值专家—毛星云（浅墨）的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/poem_qianmo)
+
 -   OpenGL
 
     +   [ssloy/glsltuto: GLSL shaders tutorial](https://github.com/ssloy/glsltuto)
