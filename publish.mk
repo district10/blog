@@ -1,5 +1,5 @@
 PANDOC_OPTIONS = -S -s --ascii --toc \
-	-c main.css -A footer.html \
+	-c main.css \
 	--highlight-style pygments --template template.html \
 	-f markdown+pandoc_title_block+east_asian_line_breaks+emoji+abbreviations metadata.yaml
 
@@ -18,7 +18,7 @@ html: $(HTML)
 
 # posts with bibs
 post-0051-spatial-gis.html: post-0051-spatial-gis.bib
-post-0051-spatial-gis.bib: 
+post-0051-spatial-gis.bib:
 	cp ../_posts/$@ $@
 post-0051-spatial-gis.html: post-0051-spatial-gis.md
 	pandoc \
@@ -99,4 +99,4 @@ reads.txt: $(READINGLISTS)
 	cat $^ > $@
 
 m:
-	$(EDITOR) Makefile	
+	$(EDITOR) Makefile

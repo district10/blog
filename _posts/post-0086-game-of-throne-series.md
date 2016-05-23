@@ -32,13 +32,7 @@ after-before: |
         margin-left: 1em;
         margin-bottom: 1em;
     }
-    #footer {
-        background-color: rgba(255, 255, 255, .0);
-    }
-    #footer:hover {
-        background-color: rgba(255, 255, 255, .95);
-        transition: all 0.5s ease-in-out;
-    }
+    a { color: gray; }
     </style>
 ...
 

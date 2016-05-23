@@ -10,7 +10,7 @@ tail -n +4 ${a}; \
 cat _b.md; \
 tail -n +4 ${b}; \
 cat _c.md; \
-(git diff --color-words --no-index ${b} ${a} | ./aha.exe);
+(git diff --color-words --no-index ${b} ${a} | ./aha);
 cat _d.md; \
 ) | \
 pandoc -f markdown+hard_line_breaks --self-contained -S -s --ascii -c _main.css  -o $output

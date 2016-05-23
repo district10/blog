@@ -13,11 +13,11 @@ $(PODIR)/lyrics-00003.html \
 $(PODIR)/lyrics-00002.html \
 $(PODIR)/lyrics-00001.html \
 
-all: aha.exe $(LYRICS) $(LRCIDX)
+all: aha $(LYRICS) $(LRCIDX)
 
-$(LYRICS): aha.exe
-$(LRCIDX): aha.exe
-aha.exe: aha.c
+$(LYRICS): aha
+$(LRCIDX): aha
+aha: aha.c
 	gcc $^ -std=c99 -o $@
 
 clean:

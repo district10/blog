@@ -9,15 +9,12 @@ tags:
     - about
 ...
 
----
-...
-
 About | 关于
 ============
 
 <!-- 主站是 qiniu，coding 是镜像！-->
 
-处女座^[09.12，和张国荣差了整整 36 年。]，INTP[^intp]。个人主页：[![](tangzhixiong.svg)](http://tangzhixiong.com)。
+处女座<!--^[09.12，和张国荣差了整整 36 年。]-->，INTP<!--[^intp]-->。个人主页：<http://tangzhixiong.com>。
 
 [^intp]: [在知乎上，为什么INTP型的人特别喜欢在自己的签名里加INTP这一标签？ - 徐湘楠的回答 - 知乎](https://www.zhihu.com/question/21304858/answer/80155966)
 
@@ -60,7 +57,7 @@ About | 关于
 
         INTP 生存指南：
 
-        1.不要寻找同类2.伪装成正常人3.不要伤害正常人
+        1. 不要寻找同类 2. 伪装成正常人 3.不要伤害正常人
 
         这不是我们的时代。
 
@@ -74,14 +71,14 @@ About | 关于
         私以为，喜欢把 MBTI 挂在签名档并不是 INTP 所特有的，事实上，只要是 NT
         型性格的人，就会有很高的可能乐于展现自己的测试结果，这是因为:
 
-        第一，在四大类性格（NT型概念主义者、SP型经验主义者、NF型理想主义者、SJ
-        型传统主义者）中，NT型性格的人更相信这样的测试，因为喜欢将事物分类正是
-        他们的性格特点之一，虽然MBTI的稳定性不如大五，但比大五更容易辨识，所以
+        第一，在四大类性格（NT 型概念主义者、SP 型经验主义者、NF 型理想主义者、SJ
+        型传统主义者）中，NT 型性格的人更相信这样的测试，因为喜欢将事物分类正是
+        他们的性格特点之一，虽然 MBTI 的稳定性不如大五，但比大五更容易辨识，所以
         深受概念主义者喜爱;
 
-        第二，四大类性格中，NT型的“舒适社交圈”相对来说是最小的：他们通常和同为
-        NT的人社交时才会感到最为舒适，而这类人又是很少的。挂出自己的结果便于快
-        速寻找同类，那自然是极好的。( S型的人对他们来说简直在另一个次元，而NF型
+        第二，四大类性格中，NT 型的“舒适社交圈”相对来说是最小的：他们通常和同为
+        NT 的人社交时才会感到最为舒适，而这类人又是很少的。挂出自己的结果便于快
+        速寻找同类，那自然是极好的。( S 型的人对他们来说简直在另一个次元，而 NF 型
         理想主义者虽然可能会对他们有很高的吸引力，但深入接触后，往往会发现两者
         之间有不可调和的矛盾。)
 
@@ -91,28 +88,27 @@ About | 关于
         性格测试和智商量表顶多就是个相关吧。。
 
         虽然有越内向的人智商越高的说法，还有智商的各种相关因素的最近研究结果。
-        。
 
-        但是INTP的人都很孤独又自恋有木有。。
+        但是 INTP 的人都很孤独又自恋有木有。。
 
-        INTP的人想要的最高赞同就是你和别人不同你是精英有木有。。
+        INTP 的人想要的最高赞同就是你和别人不同你是精英有木有。。
 
-        但是INTP相看不顺眼啊。。看到别人说自己是INTP立马就有种“你也能是INTP?”的
+        但是 INTP 相看不顺眼啊。。看到别人说自己是 INTP 立马就有种“你也能是 INTP?”的
         受侮辱感有木有。。
 
-        但是INTP的自恋程度往往会掩盖掉换位思考带来的情绪的影响。。
+        但是 INTP 的自恋程度往往会掩盖掉换位思考带来的情绪的影响。。
 
-        所以虽然我是INTP但绝对不会到处宣扬了。。
+        所以虽然我是 INTP 但绝对不会到处宣扬了。。
 
-        因为宣扬自己是INTP的内心活动就是找到同类啊。。
+        因为宣扬自己是 INTP 的内心活动就是找到同类啊。。
 
         可是这样反而会被同类仇视啊。。
 
-        至于其他类型的人，INTP的优越感你们不懂。。。。
+        至于其他类型的人，INTP 的优越感你们不懂。。。。
 
         refs and see also
 
-          - [如何搞定一个性格类型是INTP的男生？ - 知乎](https://www.zhihu.com/question/21006234)
+          - [如何搞定一个性格类型是 INTP 的男生？ - 知乎](https://www.zhihu.com/question/21006234)
     </div>
     </div>
 
@@ -167,59 +163,4 @@ About | 关于
 ![Mathematics is the only truly universal language.](http://gnat.qiniudn.com/jodie-foster-math.png)
 ![Octocat: Adventure Cat](http://gnat-tang-shared-image.qiniudn.com/octocat/adventure-cat.png)
 ![Kimonotocat](http://gnat-tang-shared-image.qiniudn.com/octocat/kimonotocat.png)
-学好数学、英语、计算机。
-
-pre.code:                        80 chars
-small.pre.code:                 100 chars
-small.small.pre.code:           120 chars
-small.small.small.pre.code:     140 chars
-
-TODO:
-    - perl: bib->md
-
-notes.md
-
-    [title1](url1)
-
-    :   note11
-
-        note12
-
-    [title2](url2)
-
-    [title3](url3)
-
-    ---
-
-    misc notes
-
-    ---
-
-    [title4](url4)
-
-reads.md
-
-    not needed.
-
-
-reads.html
-
-    * [title](url) tags
-
-% Reads | 斋读
-% TANG ZhiXiong
-% 2015-12-07
-
-Reads | 斋读
-============
-__
-
 -->
-
-<a id="cc" rel="license"
-           href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh">
-<img title="知识共享许可协议" style="border-width: 0px; vertical-align: middle; display: inline; "
-    src="cc-80x15.png"
-    original="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"
-    height="20px;">
-</a>

@@ -1,4 +1,4 @@
-// best color: #9ddcff; 
+// best color: #9ddcff;
 
 html {
     font-size: 150%;
@@ -50,7 +50,7 @@ h3 > code,
 h4 > code,
 h5 > code,
 h6 > code {
-    border: 1px solid #9ddcff; 
+    border: 1px solid #9ddcff;
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
@@ -267,14 +267,14 @@ a[href*="zhihu.com:"]:after             { content: "「知」"; }
 
 h1, h2, h3, h4, h5, h6 { padding-left: 1.0em; padding-right: 0.4em; }
 
-h1:before, h1:after, 
-h2:before, h2:after,  
+h1:before, h1:after,
+h2:before, h2:after,
 h3:before, h3:after,
 h4:before, h4:after,
 h5:before, h5:after,
 h6:before, h6:after  {
-    // rgba(157, 220, 255, 0.8); // #9ddcff; 
-    color: #9ddcff; 
+    // rgba(157, 220, 255, 0.8); // #9ddcff;
+    color: #9ddcff;
 }
 
 h1:before { content: "「     "; }
@@ -503,8 +503,8 @@ dl dl dt            { font-size: 120%; padding-top: 1.1em; padding-bottom: 0.5em
 dl dl dl dt         { font-size: 115%; padding-top: 1.0em; padding-bottom: 0.4em; }
 dl dl dl dl dt      { font-size: 110%; padding-top: 0.8em; padding-bottom: 0.3em; }
 
-dl dt:first-letter { 
-    font-size: 145%; 
+dl dt:first-letter {
+    font-size: 145%;
     text-transform: uppercase;
 }
 
@@ -549,7 +549,7 @@ div#TOC {
     top: 5%;
     right: 1%;
     max-height: 90%;
-    min-width: 200px; 
+    min-width: 200px;
     width: auto;
     height: auto;
     overflow-x: hidden;
@@ -587,7 +587,7 @@ div#TOC:hover {
 pre.tzx-plain code,
 pre.tzx-poem code,
 pre.tzx-bigquote code {
-	color: black;
+    color: black;
 }
 
 .tzx-fright {
@@ -600,7 +600,7 @@ pre.tzx-bigquote code {
 
 .tzx-fright, .tzx-fleft {
     clear: both;
-	padding-left: 1em;
+    padding-left: 1em;
 }
 
 .tzx-tag {
@@ -684,15 +684,17 @@ ul > li > ul > li > ul > li > ul >li > ul > li > ul > li  { list-style-type: cir
 }
 
 body {
+    /*
     padding-bottom: 60%;
     background-image: url(tzx.svg);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-color: rgba( 255, 255, 255, 0.05 );
+    */
 }
 
 #showDisqus {
-    font-size: 60%; 
+    font-size: 60%;
     cursor: pointer;
 }
 
@@ -711,7 +713,7 @@ body {
     border-right: 5px solid lightgray;
     border-top:   1px solid lightgray;
     border-bottom:1px solid lightgray;
-    border-radius: 1em; 
+    border-radius: 1em;
 
     -webkit-box-shadow: 0 0 25px 10px rgba(155, 155, 155, 0.5);
     -moz-box-shadow:    0 0 25px 10px rgba(155, 155, 155, 0.5);
@@ -727,8 +729,8 @@ body {
     display: none;
 }
 
-#showDisqus { 
-    border-radius: 1em; 
+#showDisqus {
+    border-radius: 1em;
     padding: 1em;
 }
 #showDisqus:hover {
@@ -783,9 +785,9 @@ pre {
 pre.tzx-bigquote,
 pre.tzx-poem {
     margin: 0 auto;
-	padding-left: 6em;
-	padding-top: 4em;
-	padding-bottom: 4em;
+    padding-left: 6em;
+    padding-top: 4em;
+    padding-bottom: 4em;
 }
 
 code.tzx-timestamp { color: gray; }
@@ -803,21 +805,23 @@ h6 code.tzx-timestamp { color: white; }
     display: block;
 }
 
-.tzx-drawer { 
+.tzx-drawer {
     cursor: crosshair;
-    border: 1px solid #9ddcff; 
+    border: 1px solid #9ddcff;
 }
-.tzx-drawer .tzx-drawer { 
+.tzx-drawer .tzx-drawer {
     cursor: cell;
-    border: 1px dashed #9ddcff; 
+    border: 1px dashed #9ddcff;
 }
 
 .tzx-drawer-show { display: auto; }
 .tzx-drawer-hide { display: none; }
 .tzx-hide { display: none; }
 .tzx-show { display: auto; border: 1px solid red; }
+
 .tzx-changes-hide { display: none; }
 .tzx-changes-show { display: auto; }
+.tzx-changes      { display: none; }
 
 a.tzx-header-anchor {
     text-decoration: none;
@@ -842,7 +846,7 @@ a.tzx-header-anchor {
 }
 
 .tzx-banner {
-    text-shadow: 4px 3px 0 #1d9d74,9px 8px 0 rgba(0,0,0,0.15); 
+    text-shadow: 4px 3px 0 #1d9d74,9px 8px 0 rgba(0,0,0,0.15);
     background-color: #157254;
     color: white;
     font-size: 80px;
@@ -852,3 +856,8 @@ a.tzx-header-anchor {
 table {
     width: 100%;
 }
+
+* html #navigator   { position: absolute; }
+#navigator          { position: fixed; top: 1em; left: 1em; }
+#navigator a:hover  { border-bottom: none; }
+#navigator a        { color: #887ddd; }

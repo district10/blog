@@ -19,6 +19,21 @@ tags:
 Notes | 笔记[^1]
 ================
 
+[CSS absolute and fixed positioning - W3C Wiki](https://www.w3.org/wiki/CSS_absolute_and_fixed_positioning)
+
+[javascript - How to make a DIV always float on the screen in top right corner? - Stack Overflow](http://stackoverflow.com/questions/4236151/how-to-make-a-div-always-float-on-the-screen-in-top-right-corner)
+
+```css
+.box {
+    position: fixed;
+    left: 1em;
+    top: 1em;
+}
+* html .box {
+    position: absolute;
+}
+```
+
 [Joseph Stalin - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Joseph_Stalin)
 
 :   Joseph Vissarionovich Stalin (`/ˈstɑːlɪn/`; birth surname: Jughashvili; 18

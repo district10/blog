@@ -21,6 +21,8 @@ nav:
 Font Awesome
 ============
 
+<div id="navigator"><a href="index.html"><i class="icon-home icon-2x"></i></a></div>
+
 <p><i class="icon-camera-retro icon-large"></i> icon-camera-retro</p>
 <p><i class="icon-camera-retro icon-2x"></i> icon-camera-retro</p>
 <p><i class="icon-camera-retro icon-3x"></i> icon-camera-retro</p>
