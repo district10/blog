@@ -1,16 +1,16 @@
 ---
 tzx-cssfile:
-    - jquery-ui.css
-    - main.css
-    - font-awesome.min.css
-tzx-jsfile:    
-    - jquery.min.js
-    - jquery-ui.min.js
-    - lazyload.min.js
-    - egg.min.js
-    - moment.min.js
-    - clipboard.min.js
-    - main.js
+  - jquery-ui.css
+  - main.css
+  - font-awesome.min.css
+tzx-jsfile:
+  - jquery.min.js
+  - jquery-ui.min.js
+  - lazyload.min.js
+  - egg.min.js
+  - moment.min.js
+  - clipboard.min.js
+  - main.js
 
 # tzx-before-after:
 tzx-before-after:

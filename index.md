@@ -7,6 +7,8 @@ keywords:
 tags:
     - main page
     - nice
+after-before: |
+    <style> #navigator { display: none; } </style>
 ...
 
 <div class="slogan" title="欢迎来到 TANG ZhiXiong 的博客。DVORAK4TZX/dvorak4tzx &rarr; Dvorak 键盘布局 for TANG ZhiXiong (TZX)">Welcome to dvorak4tzx's Blog.</div>
@@ -23,11 +25,12 @@ Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序�
 
     > 上帝为了避免人类都联合起来，就发明了各种语言，和，德沃夏克布局。
 
-    [![](http://whudoc.qiniudn.com/2016/29284-caa7365f38529250.png)](post-0006-why-emacs-users-favor-dvorak.html "普通键盘打字世界纪录就是在 Dvorak 上创造的呢。")
+    <http://whudoc.qiniudn.com/2016/29284-caa7365f38529250.png>
 
+<!--
 <div class="tzx-fright">
 [![Build Status](https://travis-ci.org/district10/blog.svg?branch=master)](https://travis-ci.org/district10/blog)
-</div>
+</div>-->
 
 <div id="buckets">
 <div><a href="koans.html">Koans | 呓语</a></div>
