@@ -10,11 +10,6 @@ var tzx_link_prefix = '.';
 // format: [{url: ..., title: ..., query: ...}, ...]
 var tzx_links = [
     {
-        url: '/404.html',
-        title: "404 Page",
-        query: ['page', 'tag']
-    },
-    {
         url: '/about.html',
         title: "About | 关于",
         query: ['page', 'tag']
@@ -23,31 +18,6 @@ var tzx_links = [
         url: '/sitemap.html',
         title: "Sitemap | 站点地图",
         query: ['sitemap', 'meta']
-    },
-    {
-        url: '/projects.html',
-        title: "Projects | 项目",
-        query: ['project', 'github']
-    },
-    {
-        url: '/ring.html',
-        title: "One Ring, to Rule Them All",
-        query: ['ring', 'extras']
-    },
-    {
-        url: '/tags.html',
-        title: "All Tags",
-        query: ['tags', 'extras']
-    },
-    {
-        url: '/reads.html',
-        title: "Reads | 斋读",
-        query: ['tag', 'read', 'extras']
-    },
-    {
-        url: '/days.html',
-        title: "Day In and Day Out | 我们的生活不可能那么日常",
-        query: ['page', 'tag', 'gtd', 'diary']
     },
     {
         url: '/dents.html',
@@ -65,11 +35,6 @@ var tzx_links = [
         query: ['page', 'tag', 'friends']
     },
     {
-        url: '/fun.html',
-        title: "Fun | 逗我呢？",
-        query: ['page', 'tag', 'fun', 'funny']
-    },
-    {
         url: '/koans.html',
         title: "Koans | 呓语",
         query: ['page', 'tag']
@@ -78,6 +43,11 @@ var tzx_links = [
         url: '/links.html',
         title: "Links | 链签",
         query: ['page', 'tag', 'bookmark']
+    },
+    {
+        url: '/notes.html',
+        title: "Notes | 笔记",
+        query: ['page', 'tag', 'note']
     },
     {
         url: '/notice.html',
@@ -90,9 +60,19 @@ var tzx_links = [
         query: ['page', 'tag', 'org-mode', 'emacs']
     },
     {
+        url: '/plans.html',
+        title: "Plans",
+        query: ['plan']
+    },
+    {
         url: '/poems.html',
         title: "Poems | 诗",
         query: ['page', 'tag', 'poem']
+    },
+    {
+        url: '/projects.html',
+        title: "Projects | 项目",
+        query: ['project', 'github']
     },
     {
         url: '/quotes.html',
@@ -100,9 +80,9 @@ var tzx_links = [
         query: ['page', 'tag', 'quote']
     },
     {
-        url: '/notes.html',
-        title: "Notes | 笔记",
-        query: ['page', 'tag', 'note']
+        url: '/snippets.html',
+        title: "Snippets",
+        query: ['code']
     },
     {
         url: '/typing.html',
@@ -113,6 +93,21 @@ var tzx_links = [
         url: '/xiami.html',
         title: "Music | 乐音",
         query: ['page', 'tag', 'music', 'xiami']
+    },
+    {
+        url: '/ring.html',
+        title: "One Ring, to Rule Them All",
+        query: ['ring', 'extras']
+    },
+    {
+        url: '/tags.html',
+        title: "All Tags",
+        query: ['tags', 'extras']
+    },
+    {
+        url: '/reads.html',
+        title: "Reads | 斋读",
+        query: ['tag', 'read', 'extras']
     },
     {
         url: '/doc-google-test.html',
@@ -634,4 +629,14 @@ var tzx_links = [
         title: "Learning Java",
         query: ['java', 'programming']
     },
+    {
+        url: '/post-0104-keyboard-setups.html',
+        title: "Keyboard Setups",
+        query: ['keyboard', 'kbd']
+    },
+    {
+        url: '/post-0105-free-services-that-i-use.html',
+        title: "Free Services That I Use",
+        query: ['github', 'travis', 'qiniu', 'tool']
+    }
 ];

@@ -1,9 +1,9 @@
 PODIR = ../publish
 
 CURS = \
+	   blog-query.js \
 	   main.js \
 	   main.css \
-	   blog-query.js \
 	   robots.txt
 
 OCURS = $(addprefix $(PODIR)/, $(CURS))

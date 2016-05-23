@@ -1,3 +1,5 @@
+.PHONY: n it q l
+
 DIR_PUBLISH=publish
 DIR_PAGES=_pages
 DIR_POSTS=_posts
@@ -22,8 +24,6 @@ ITEMS = \
 	$(DIR_PUBLISH)/index.md \
 	$(DIR_PUBLISH)/template.html \
 	$(DIR_PUBLISH)/metadata.yaml \
-
-.PHONY: n it q l
 
 all: items move statics lyrics html
 
@@ -117,9 +117,10 @@ EDITS = \
 	$(DIR_POSTS) \
 	$(DIR_PAGES)/notes.md \
 	$(DIR_PAGES)/koans.md \
+	$(DIR_PAGES)/plans.md \
 
 it:
-	$(EDITOR) -p $(EDITS) 2>/dev/null &
+	$(EDITOR) $(EDITS) 2>/dev/null &
 i: index
 index:
 	$(EDITOR) index.md 2>/dev/null &

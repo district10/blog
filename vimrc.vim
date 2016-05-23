@@ -1,25 +1,42 @@
 " echo 'source path/to/this/file' > ~/.vimrc
 " e.g. `source d:/tzx/git/blog/vimrc.vim'
 
+let mapleader = ","
+let g:mapleader = ","
+map <leader>a ggVG
+map <leader><leader> o<esc>S<esc>
+map <leader>u :undolist<cr>
+map <leader>file :echo expand("%:p")<cr>
+map <leader>wi vip :call Wikipedia()<cr>
+map <leader>sp vip :call PanguSpacing()<cr>
+map <leader>gq vipgq
+
+if has("gui_win32")
+    let $TMP="d:/tzx/tmp"
+    let $TEMP="d:/tzx/tmp"
+endif
+set directory=.,$TMP,$TEMP
+
 set nocompatible
 set cursorline
 set ruler
 set backspace=indent,eol,start
-set nobackup
-set history=50
+set history=1000
+set autoread
 set showcmd
-set incsearch       " do incremental searching
+set incsearch                                               " do incremental searching
 set ignorecase
-set expandtab ts=4 sw=4 ai
+set expandtab ts=4 sw=4 sts=4 ai
+" set lbr                                                     " linebreak
+" set shortmess=atI                                           " :h iccf
 set nu
 set guioptions=""
+set showmatch
+set showfulltag
+set matchpairs=(:),{:},[:],<:>
+set matchtime=5                                             " Show matchtime in 0.5s
 set mouse=""
-" In many terminal emulators the mouse works just fine, thus enable it.
-"
-"       if has('mouse')
-"         set mouse=a
-"       endif
-set iskeyword-=_    " two words: twenty_one
+set iskeyword-=_                                            " two words: twenty_one
 " \u4e00-\u9fa5, \u3040-\u30FF
 "  20223-40869,   12352-12543
 
@@ -66,22 +83,32 @@ set formatoptions=BmMcroql
 map Q gq            " use Q for formatting
 
 if has("gui_running")
-  if has("gui_gtk2")
-    set guifont=Inconsolata\ 12
-  elseif has("gui_macvim")
-    set guifont=Menlo\ Regular:h14
-  elseif has("gui_win32")
-    set guifont=Consolas:h11:cANSI
-  endif
+    if has("gui_gtk2")
+        set guifont=Inconsolata\ 12
+    elseif has("gui_macvim")
+        set guifont=Menlo\ Regular:h14
+    elseif has("gui_win32")
+        set guifont=Consolas:h11:cANSI
+    endif
 endif
+
+"let $TMP="d:/tzx/tmp"
+"let $TEMP="d:/tzx/tmp"
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
+inoremap <C-z> <C-O>u           " Undo in insert mode
+if version >= 703
+    " Turn undofile on
+    set undofile
+    " Set undofile path
+    set undodir=~/tmp/vim/
+endif
 
 if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
+    syntax on
+    set hlsearch
 endif
 if has("autocmd")
     filetype plugin indent on
@@ -97,10 +124,10 @@ else
     set autoindent
 endif " has("autocmd")
 
-if !exists(":DiffOrig")
-  command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
-          \ | wincmd p | diffthis
-endif
+"if !exists(":DiffOrig")
+"  command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
+"          \ | wincmd p | diffthis
+"endif
 
 "   source $VIMRUNTIME/mswin.vim
 "
@@ -164,7 +191,7 @@ endfunction
 
 language messages en_US.utf-8
 
-set diffexpr=MyDiff()
+"set diffexpr="" MyDiff()
 function MyDiff()
    let opt = '-a --binary '
    if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
