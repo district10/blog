@@ -13,6 +13,21 @@ before-after:
 Koans | 呓语[^why-koan]
 =======================
 
+## `1464024935`{.tzx-timestamp}
+
+|   「你这个奇葩」这句话应该怎么翻译？
+|   记得《失恋33天》的字幕里，对王小贱的介绍用到“他是一朵奇葩”，这句话，翻译是“He is a legend...”
+|
+|   请问有没有更好的翻译了？求更地道点的。
+
+> You are unbelievable.《生活大爆炸》第六季第 4 集，Penny 玩游戏时候是这么说 Sheldon 的。
+
+点评：这人的英语一定捉急。
+
+refs and see also
+
+  - [「你这个奇葩」这句话应该怎么翻译？ - 失恋33天（电影） - 知乎](https://www.zhihu.com/question/19949833)
+
 ## `1462954696`{.tzx-timestamp} tab kit
 
 works tirrible.

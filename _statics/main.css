@@ -431,15 +431,15 @@ p a img:hover {
     display: inline-block;
     margin: 5px;
     border: 1px solid #c2c2c2;
-    border-radius: 4px;
+    border-radius: 0px;
     padding: 0.5em 1em 0.5em 1em;
     background-color: #f0f0f0;
     box-shadow: 1px 1px silver;
     font-variant: small-caps;
     transition: all 0.5s ease-in-out;
 }
-
 #buckets div:hover {
+    border-radius: 8px;
     background-color: white;
 }
 
