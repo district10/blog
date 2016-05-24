@@ -11,9 +11,207 @@ tags:
 OpenCV Notes
 ============
 
+```tzx-bigquote
+     |<- cols ->|
+-----o---x------>
+ |   |
+rows |
+     |
+     |/
+     . y
+```
+
 -   CvArr -> CvMat -> IplImage
 
--   ROI: `cvSetImageROI()`
+-   header files
+
+    ```cpp
+    #include <iostream>
+    #include <string>
+    #include <vector>
+    #include <cstdio>
+    #include <cctype>
+    #include <ctime>
+
+    #include <opencv2/core.hpp>
+    #include <opencv2/highgui.hpp>
+    #include <opencv2/imgcodecs.hpp>
+    #include <opencv2/imgproc.hpp>
+    #include <opencv2/ml.hpp>
+    #include <opencv2/objdetect.hpp>
+    #include <opencv2/opencv.hpp>
+    #include <opencv2/video/tracking.hpp>
+    ```
+
+-   imread, imshow
+
+    ```cpp
+    cv::Mat imgSrc = cv::imread( IMAGE_INPUT_SRC /*, cv::IMREAD_COLOR*/ ); //  1
+    //                                               cv::IMREAD_GRAYSCALE  //  0
+    //                                               cv::IMREAD_UNCHANGED  // -1
+    //      //! Imread flags
+    //      enum ImreadModes {
+    //             IMREAD_UNCHANGED            = -1,
+    //             IMREAD_GRAYSCALE            = 0,
+    //             IMREAD_COLOR                = 1,
+    //             IMREAD_ANYDEPTH             = 2,
+    //             IMREAD_ANYCOLOR             = 4,
+    //             IMREAD_LOAD_GDAL            = 8,
+    //             IMREAD_REDUCED_GRAYSCALE_2  = 16,
+    //             IMREAD_REDUCED_COLOR_2      = 17,
+    //             IMREAD_REDUCED_GRAYSCALE_4  = 32,
+    //             IMREAD_REDUCED_COLOR_4      = 33,
+    //             IMREAD_REDUCED_GRAYSCALE_8  = 64,
+    //             IMREAD_REDUCED_COLOR_8      = 65
+    //           };
+
+    cv::imshow( "src", imgSrc );
+    imgSrc.release();
+    ```
+-   cvtColor
+
+    ```cpp
+    cv::cvtColor( src, dst, cv::COLOR_BGR2GRAY );
+    ```
+
+    RGB $\leftrightarrow$ GRAY ( `COLOR_BGR2GRAY`, `COLOR_RGB2GRAY`, `COLOR_GRAY2BGR`, `COLOR_GRAY2RGB` )
+
+    +   $\text{RGB[A] to Gray:} \quad Y  \leftarrow 0.299  \cdot R + 0.587  \cdot G + 0.114  \cdot B$
+    +   $\text{Gray to RGB[A]:} \quad R  \leftarrow Y, G  \leftarrow Y, B  \leftarrow Y, A  \leftarrow \max (ChannelRange)$
+
+    RGB $\leftrightarrow$ CIE XYZ.Rec 709 with D65 white point ( COLOR_BGR2XYZ, COLOR_RGB2XYZ, COLOR_XYZ2BGR, COLOR_XYZ2RGB ):
+
+    +   \begin{bmatrix} X  \\ Y  \\ Z
+          \end{bmatrix} \leftarrow \begin{bmatrix} 0.412453 & 0.357580 & 0.180423 \\ 0.212671 & 0.715160 & 0.072169 \\ 0.019334 & 0.119193 & 0.950227
+          \end{bmatrix} \cdot \begin{bmatrix} R  \\ G  \\ B
+          \end{bmatrix}
+    +   \begin{bmatrix} R  \\ G  \\ B
+         \end{bmatrix} \leftarrow \begin{bmatrix} 3.240479 & -1.53715 & -0.498535 \\ -0.969256 &  1.875991 & 0.041556 \\ 0.055648 & -0.204043 & 1.057311
+          \end{bmatrix} \cdot \begin{bmatrix} X  \\ Y  \\ Z
+          \end{bmatrix}
+    +   X,  Y and Z cover the whole value range (in case of floating-point images, Z may exceed 1).
+
+    RGB \leftrightarrow YCrCb JPEG (or YCC) ( COLOR_BGR2YCrCb, COLOR_RGB2YCrCb, COLOR_YCrCb2BGR, COLOR_YCrCb2RGB )
+
+    +   $Y  \leftarrow 0.299  \cdot R + 0.587  \cdot G + 0.114  \cdot B$
+    +   $Cr  \leftarrow (R-Y)  \cdot 0.713 + delta$
+    +   $Cb  \leftarrow (B-Y)  \cdot 0.564 + delta$
+    +   $R  \leftarrow Y + 1.403  \cdot (Cr - delta)$
+    +   $G  \leftarrow Y - 0.714  \cdot (Cr - delta) - 0.344  \cdot (Cb - delta)$
+    +   $B  \leftarrow Y + 1.773  \cdot (Cb - delta)$
+
+where
+
+delta =  \left \{ \begin{array}{l l} 128 &  \mbox{for 8-bit images} \\ 32768 &  \mbox{for 16-bit images} \\ 0.5 &  \mbox{for floating-point images} \end{array} \right .
+Y, Cr, and Cb cover the whole value range.
+
+RGB \leftrightarrow HSV ( COLOR_BGR2HSV, COLOR_RGB2HSV, COLOR_HSV2BGR, COLOR_HSV2RGB )
+In case of 8-bit and 16-bit images, R, G, and B are converted to the floating-point format and scaled to fit the 0 to 1 range.
+
+V  \leftarrow max(R,G,B)
+S  \leftarrow \fork{\frac{V-min(R,G,B)}{V}}{if $V \neq 0$}{0}{otherwise}
+H  \leftarrow \forkthree{{60(G - B)}/{(V-min(R,G,B))}}{if $V=R$}{{120+60(B - R)}/{(V-min(R,G,B))}}{if $V=G$}{{240+60(R - G)}/{(V-min(R,G,B))}}{if $V=B$}
+If H<0 then H \leftarrow H+360 . On output 0 \leq V \leq 1,  0 \leq S \leq 1,  0 \leq H \leq 360 .
+
+The values are then converted to the destination data type:
+
+8-bit images
+
+V  \leftarrow 255 V, S  \leftarrow 255 S, H  \leftarrow H/2  \text{(to fit to 0 to 255)}
+16-bit images (currently not supported)
+
+V <- 65535 V, S <- 65535 S, H <- H
+32-bit images
+H, S, and V are left as is
+
+RGB \leftrightarrow HLS ( COLOR_BGR2HLS, COLOR_RGB2HLS, COLOR_HLS2BGR, COLOR_HLS2RGB ).
+In case of 8-bit and 16-bit images, R, G, and B are converted to the floating-point format and scaled to fit the 0 to 1 range.
+
+V_{max}  \leftarrow {max}(R,G,B)
+V_{min}  \leftarrow {min}(R,G,B)
+L  \leftarrow \frac{V_{max} + V_{min}}{2}
+S  \leftarrow \fork { \frac{V_{max} - V_{min}}{V_{max} + V_{min}} }{if  $L < 0.5$ }
+    { \frac{V_{max} - V_{min}}{2 - (V_{max} + V_{min})} }{if  $L \ge 0.5$ }
+H  \leftarrow \forkthree {{60(G - B)}/{S}}{if  $V_{max}=R$ }
+  {{120+60(B - R)}/{S}}{if  $V_{max}=G$ }
+  {{240+60(R - G)}/{S}}{if  $V_{max}=B$ }
+If H<0 then H \leftarrow H+360 . On output 0 \leq L \leq 1,  0 \leq S \leq 1,  0 \leq H \leq 360 .
+
+The values are then converted to the destination data type:
+
+8-bit images
+
+V  \leftarrow 255 \cdot V, S  \leftarrow 255 \cdot S, H  \leftarrow H/2 \; \text{(to fit to 0 to 255)}
+16-bit images (currently not supported)
+
+V <- 65535 \cdot V, S <- 65535 \cdot S, H <- H
+32-bit images
+H, S, V are left as is
+
+RGB \leftrightarrow CIE L*a*b* ( COLOR_BGR2Lab, COLOR_RGB2Lab, COLOR_Lab2BGR, COLOR_Lab2RGB ).
+In case of 8-bit and 16-bit images, R, G, and B are converted to the floating-point format and scaled to fit the 0 to 1 range.
+
+\vecthree{X}{Y}{Z} \leftarrow \vecthreethree{0.412453}{0.357580}{0.180423}{0.212671}{0.715160}{0.072169}{0.019334}{0.119193}{0.950227} \cdot \vecthree{R}{G}{B}
+X  \leftarrow X/X_n,  \text{where} X_n = 0.950456
+Z  \leftarrow Z/Z_n,  \text{where} Z_n = 1.088754
+L  \leftarrow \fork{116*Y^{1/3}-16}{for $Y>0.008856$}{903.3*Y}{for $Y \le 0.008856$}
+a  \leftarrow 500 (f(X)-f(Y)) + delta
+b  \leftarrow 200 (f(Y)-f(Z)) + delta
+where
+
+f(t)= \fork{t^{1/3}}{for $t>0.008856$}{7.787 t+16/116}{for $t\leq 0.008856$}
+and
+
+delta =  \fork{128}{for 8-bit images}{0}{for floating-point images}
+This outputs 0 \leq L \leq 100,  -127 \leq a \leq 127,  -127 \leq b \leq 127 . The values are then converted to the destination data type:
+
+8-bit images
+
+L  \leftarrow L*255/100, \; a  \leftarrow a + 128, \; b  \leftarrow b + 128
+16-bit images
+(currently not supported)
+
+32-bit images
+L, a, and b are left as is
+
+RGB \leftrightarrow CIE L*u*v* ( COLOR_BGR2Luv, COLOR_RGB2Luv, COLOR_Luv2BGR, COLOR_Luv2RGB ).
+In case of 8-bit and 16-bit images, R, G, and B are converted to the floating-point format and scaled to fit 0 to 1 range.
+
+\vecthree{X}{Y}{Z} \leftarrow \vecthreethree{0.412453}{0.357580}{0.180423}{0.212671}{0.715160}{0.072169}{0.019334}{0.119193}{0.950227} \cdot \vecthree{R}{G}{B}
+L  \leftarrow \fork{116 Y^{1/3}}{for $Y>0.008856$}{903.3 Y}{for $Y\leq 0.008856$}
+u'  \leftarrow 4*X/(X + 15*Y + 3 Z)
+v'  \leftarrow 9*Y/(X + 15*Y + 3 Z)
+u  \leftarrow 13*L*(u' - u_n)  \quad \text{where} \quad u_n=0.19793943
+v  \leftarrow 13*L*(v' - v_n)  \quad \text{where} \quad v_n=0.46831096
+This outputs 0 \leq L \leq 100,  -134 \leq u \leq 220,  -140 \leq v \leq 122 .
+
+The values are then converted to the destination data type:
+
+8-bit images
+
+L  \leftarrow 255/100 L, \; u  \leftarrow 255/354 (u + 134), \; v  \leftarrow 255/262 (v + 140)
+16-bit images
+(currently not supported)
+
+32-bit images
+L, u, and v are left as is
+
+The above formulae for converting RGB to/from various color spaces have been taken from multiple sources on the web, primarily from the Charles Poynton site http://www.poynton.com/ColorFAQ.html
+
+Bayer \rightarrow RGB ( COLOR_BayerBG2BGR, COLOR_BayerGB2BGR, COLOR_BayerRG2BGR, COLOR_BayerGR2BGR, COLOR_BayerBG2RGB, COLOR_BayerGB2RGB, COLOR_BayerRG2RGB, COLOR_BayerGR2RGB ). The Bayer pattern is widely used in CCD and CMOS cameras. It enables you to get color pictures from a single plane where R,G, and B pixels (sensors of a particular component) are interleaved as follows:
+
+../../../_images/bayer.png
+The output RGB components of a pixel are interpolated from 1, 2, or 4 neighbors of the pixel having the same color. There are several modifications of the above pattern that can be achieved by shifting the pattern one pixel left and/or one pixel up. The two letters C_1 and C_2 in the conversion constants CV_Bayer  C_1 C_2 2BGR and CV_Bayer  C_1 C_2 2RGB indicate the particular pattern type. These are components from the second row, second and third columns, respectively. For example, the above pattern has a very popular “BG” type.
+
+-   ROI: region of interest
+
+    ```cpp
+    cvSetImageROI( img, cvRect(x,y,w,h) );
+    cvSetImageCOI( img, 0 );
+
+    cv::Mat roi = img( cv::Rect(x,y,w,h) ); // reference
+    cv::Mat roi = img( cv::Range(y,y+dy), cv::Range(x,x+dx) );
+    ```
 
 -   cvMahalonobis
 
@@ -251,48 +449,10 @@ codes
 -   寻找已知物体
 -   利用 ORB 算法进行关键点的描述与匹配
 
+shit
+
 ```cpp
-#include <iostream>
-#include <string>
-#include <vector>
-#include <cstdio>
-#include <cctype>
-#include <ctime>
-
-#include <opencv2/core.hpp>
-#include <opencv2/highgui.hpp>
-#include <opencv2/imgcodecs.hpp>
-#include <opencv2/imgproc.hpp>
-#include <opencv2/ml.hpp>
-#include <opencv2/objdetect.hpp>
-#include <opencv2/opencv.hpp>
-#include <opencv2/video/tracking.hpp>
-
 cv::Rect rectangle;
-
-cv::Mat imgSrc = cv::imread( IMAGE_INPUT_SRC /*, cv::IMREAD_COLOR*/ ); //  1
-//                                               cv::IMREAD_GRAYSCALE  //  0
-//                                               cv::IMREAD_UNCHANGED  // -1
-//      //! Imread flags
-//      enum ImreadModes {
-//             IMREAD_UNCHANGED            = -1,
-//             IMREAD_GRAYSCALE            = 0,
-//             IMREAD_COLOR                = 1,
-//             IMREAD_ANYDEPTH             = 2,
-//             IMREAD_ANYCOLOR             = 4,
-//             IMREAD_LOAD_GDAL            = 8,
-//             IMREAD_REDUCED_GRAYSCALE_2  = 16,
-//             IMREAD_REDUCED_COLOR_2      = 17,
-//             IMREAD_REDUCED_GRAYSCALE_4  = 32,
-//             IMREAD_REDUCED_COLOR_4      = 33,
-//             IMREAD_REDUCED_GRAYSCALE_8  = 64,
-//             IMREAD_REDUCED_COLOR_8      = 65
-//           };
-
-cv::imshow( "src", imgSrc );
-imgSrc.release();
-
-cv::cvtColor( imgSrc, imgGray, cv::COLOR_BGR2GRAY );
 
 cv::Mat element = cv::getStructuringElement( cv::MORPH_RECT, cv::Size(15, 15) );
 cv::dilate(         imgSrc, imgDilate, element );

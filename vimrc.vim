@@ -4,7 +4,7 @@
 let mapleader = ","
 let g:mapleader = ","
 map <leader>a ggVG
-map <leader><leader> o<esc>S<esc>
+map <leader>o o<esc>S<esc>
 map <leader>u :undolist<cr>
 map <leader>file :echo expand("%:p")<cr>
 map <leader>wi vip :call Wikipedia()<cr>

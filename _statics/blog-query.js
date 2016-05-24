@@ -638,5 +638,10 @@ var tzx_links = [
         url: '/post-0105-free-services-that-i-use.html',
         title: "Free Services That I Use",
         query: ['github', 'travis', 'qiniu', 'tool']
+    },
+    {
+        url: '/post-0106-mediocre.html',
+        title: "《疯狂的麦克斯》里的 Mediocre 是傻逼的意思吗？",
+        query: ['movie', 'mediocre']
     }
 ];

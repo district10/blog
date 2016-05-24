@@ -51,7 +51,8 @@ Search:[^koan]<br>
 
 <div style="font-variant:small-caps;">Posts</div>
 <div class="posts"><!--...-->
-* 2016-05-22 [INTP](post-0099-intp.html)
+* 2016-05-25 [《疯狂的麦克斯》里的 Mediocre 是傻逼的意思吗？](post-0106-mediocre.html)
+<!--* 2016-05-22 [INTP](post-0099-intp.html)-->
 <!--* 2016-05-22 [Probability and Statistics](post-0098-probability-and-statistics.html)-->
 <!--* 2016-05-22 [Machine Learning](post-0097-machine-learning.html)-->
 <!--* 2016-04-22 [邓俊辉](post-0096-follow-master-deng.html)-->
