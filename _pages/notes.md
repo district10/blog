@@ -19,6 +19,157 @@ tags:
 Notes | 笔记[^1]
 ================
 
+**用 control 加鼠标选中来选择多个片段。**
+
+[windows - Software for multiple copy/paste? - Stack Overflow](http://stackoverflow.com/questions/521244/software-for-multiple-copy-paste)
+
+:   On visual studio you can do (i think) any number of "select text, ctrl + c" and
+    then press ctrl+shift and without releasing them press v to cycle through your
+    copied text.
+
+    You type quicker than I do :)
+
+[哥伦比亚（哥伦比亚共和国）_百度百科](http://baike.baidu.com/link?url=q0aVEEiSrDiC-dR11wR-RWp6EJF6Y93KhS3Awu3xf_HRN8avpiufX-QseqPkbzEKooOu8cm21i-2aJJBSSisGB9ZI3Lna8w2dk9C0NmsNMi)
+
+:   哥伦比亚共和国（西班牙语：República de Colombia），国土位于南美洲西北部，西
+    临太平洋，北临加勒比海，东通委内瑞拉，东南通巴西，南与秘鲁、厄瓜多尔，西北
+    与巴拿马为邻。为南美洲国家联盟成员国。
+
+[香椿_百度百科](http://baike.baidu.com/view/64966.htm)
+
+:   ![](http://e.hiphotos.baidu.com/baike/s%3D220/sign=3a2ec6508594a4c20e23e0293ef51bac/b64543a98226cffcf2b198edbb014a90f703ead2.jpg)
+
+    `[xiāng chūn]`, 香椿（学名：Toona sinensis）又名香椿芽、香桩头、大红椿树、椿
+    天等，在安徽地区也有叫春苗。
+
+    每年的春天是吃野菜的好时节，滨城市场上各种野菜陆续上市。大多数的野菜都是成
+    堆摆放按斤出售，可香椿却很另类，它被精心捆成小把儿，有的卖家甚至把它放在泡
+    沫箱里出售，生怕买菜的人看不见它。实际上，香椿和刺嫩芽一样，也是一种长在树
+    上的野菜。
+
+[百度百科_V百科_精子库告急为哪般？](http://baike.baidu.com/vbaike/%E7%B2%BE%E5%AD%90%E5%BA%93%E5%91%8A%E6%80%A5%E4%B8%BA%E5%93%AA%E8%88%AC%EF%BC%9F/8186)
+
+Magit
+
+:   It's Magit! A Git Porcelain inside Emacs.
+
+    我突然发现，碰瓷怎么说了……“You broke my porcelain, you should pay for it!”
+
+    refs and see also
+
+      - [Magit! A Git Porcelain inside Emacs](https://magit.vc/)
+
+[Jiangshi - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Jiangshi)
+
+:   A jiangshi, also known as a Chinese "hopping" vampire, ghost, or zombie, is
+    a type of reanimated corpse in Chinese legends and folklore. "Jiangshi" is
+    read goeng-si in Cantonese, cương thi in Vietnamese, gangshi in Korean and
+    kyonshīin Japanese. It is typically depicted as a stiff corpse dressed in
+    official garments from the Qing Dynasty, and it moves around by hopping,
+    with its arms outstretched. It kills living creatures to absorb their qi,
+    or "life force", usually at night, while in the day, it rests in a coffin
+    or hides in dark places such as caves. Jiangshi legends have inspired a
+    genre of jiangshi films and literature in Hong Kong and East Asia.
+
+    [I Ching - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/I_Ching)
+
+    :   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/I_Ching_%28Chinese_characters%29.svg/173px-I_Ching_%28Chinese_characters%29.svg.png)
+
+[Rōshi - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/R%C5%8Dshi)
+
+:   Rōshi (老師?) (Japanese: "old teacher"; "old master"; Chinese pinyin: Lǎoshī)
+    is an honorific title used for a highly venerated senior teacher in Zen Buddhism.
+
+    The Japanese rōshi is a translation of the more antiquated Chinese Laozi
+    (Wade-Giles; Lao Tzu) meaning 'Old Master' and **connoting** the
+    archetype of a **wise old man**. The modern Chinese 老師/老师 (Chinese
+    pinyin: Lǎoshī) is a common word for teacher or professor without the religious or spiritual
+    connotation of rōshi. Chinese **Chán Buddhism** uses the semantically related
+    title sifu (師父/师父, literally "master father" or "father of masters", or
+    師傅/师傅, literally "master teacher" or "teacher of masters"; both
+    pronounced "shīfu") as **an honorific title for the highest masters**, but it
+    also may be used in respectful address of **monks and nuns** generally.
+
+    connote `[kə'noʊt]` v.意味；暗示；隐含
+
+    refs and see also
+
+      - [Wise old man - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Wise_old_man)
+
+[Dragon Ball - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dragon_Ball)
+
+:   Dragon Ball (Japanese: ドラゴンボール Hepburn: Doragon Bōru?) is a Japanese
+    **manga series** written and illustrated by Akira Toriyama. It was originally
+    serialized in Weekly Shōnen Jump from 1984 to 1995, with the 519 individual
+    chapters published into 42 tankōbon volumes by Shueisha.
+
+    ![](https://upload.wikimedia.org/wikipedia/en/c/c9/DB_Tank%C5%8Dbon.png)
+
+    ![Several of the main characters, from left to right; Vegeta, Tenshinhan,
+        Chaozu, Yamcha, Kuririn, Goku, Gohan, Piccolo and Trunks.](https://upload.wikimedia.org/wikipedia/en/6/63/Dragon_Ball_Main_Characters.jpg)
+
+    Her voice was dubbed over by sb.
+
+    Dragon Ball was initially inspired by the classical Chinese novel
+    **Journey to the West**. The series follows the adventures of the protagonist,
+    Son Goku, from his childhood through adulthood as he trains in martial arts and
+    explores the world in search of **the seven orbs** known as the Dragon Balls,
+    which summon a wish-granting dragon when gathered. Along his journey, Goku
+    makes several friends and battles a wide variety of villains, many of whom
+    also seek the Dragon Balls.
+
+    -   manga `[ˈmæŋɡə]` n.日本漫画
+    -   protagonist `[proʊ'tæɡənɪst]` n.主角；（比赛、斗争中的）主要人物；（政策、运动的）倡导者
+
+    Dragon Ball Z (Japanese: ドラゴンボールZ Hepburn: Doragon Bōru Zetto?,
+    commonly abbreviated as **DBZ**) is a Japanese **anime television series** produced
+    by Toei Animation. Dragon Ball Z is the sequel to the Dragon Ball anime and
+    adapts the last 325 chapters of the original 519-chapter Dragon Ball manga
+    series created by Akira Toriyama, that were published from 1988 to 1995 in
+    Weekly Shōnen Jump. Dragon Ball Z first aired in Japan on Fuji TV from
+    April 25, 1989 to January 31, 1996, before being dubbed in several
+    territories around the world, including the United States, Australia,
+    Europe, India, and Latin America.
+
+    Dragon Ball Z follows the adventures of the protagonist Goku who, along
+    with his companions, defends the Earth against an assortment of villains
+    ranging from intergalactic space fighters and conquerors, unnaturally
+    powerful androids and nearly indestructible magical creatures. While the
+    original Dragon Ball anime followed Goku from his childhood into adulthood,
+    Dragon Ball Z is a continuation of his adult life, but at the same time
+    parallels the maturation of his sons, Gohan and Goten, as well as the
+    evolution of his rivals Piccolo and Vegeta from enemies into allies.
+
+    refs and see also
+
+      - [Dragon Ball Z - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dragon_Ball_Z)
+
+[平面排版时，运用哪些方法可以突出中文的美感？ - 平面设计 - 知乎](http://www.zhihu.com/question/19577036)
+
+[禁则处理是什么意思？ - 排版 - 知乎](http://www.zhihu.com/question/20294511)
+
+:   「禁則」是来自日语的排版术语，主要指的就是禁止一些标点等字符出现在行首或行尾的
+    规则，大致相当于汉语常说的「避头尾」。
+
+    简介参见维基百科词条：
+
+      - 禁則処理
+      - [Line breaking rules in East Asian languages](https://en.wikipedia.org/wiki/Line_breaking_rules_in_East_Asian_languages)
+
+    详细介绍参见 W3C 文档：
+
+      - 日本語組版処理の要件
+      - [Requirements for Japanese Text Layout](https://www.w3.org/TR/jlreq/ja/)
+
+    找一整天，找个书店或图书馆，去那儿翻阅有大量表格的书，翻一整天。你须要首先见识
+    表格设计的可能性，然后学习——哪怕照抄也好，然后根据你们具体的情况来设计方案。
+
+    为什么这么说？我最近在排一本八百多页五百多个表格的书（其中 493 个表格集中在 320
+     页里，常常几十个表格连续出现），休息时看到另外一本书上简练的表格设计便发现自己
+    之前的尝试方向全都没有意义，豁然开朗。
+
+[写给大家看的中文排版指南-月光博客](http://www.williamlong.info/archives/4483.html)
+
 [CSS "position: fixed;" on iPad/iPhone? - Stack Overflow](http://stackoverflow.com/questions/4889601/css-position-fixed-on-ipad-iphone)
 
 :   A lot of mobile browsers deliberately do not support position:fixed; on the

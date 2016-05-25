@@ -15,6 +15,7 @@ Planned
 -   code reading
     +   [4ker/mini3d: 3D Software Render Engine in 700 Lines !!](https://github.com/4ker/mini3d)
     +   [yanyiwu/cppjieba: "结巴"中文分词的C++版本](https://github.com/yanyiwu/cppjieba)
+    +   [4ker/OpenGL_CMake_Skeleton: A ready to use cmake skeleton using GLFW, Glew and glm.](https://github.com/4ker/OpenGL_CMake_Skeleton)
 
 -   OpenCV
 

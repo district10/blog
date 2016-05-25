@@ -2,7 +2,7 @@
 
 html {
     font-size: 150%;
-    font-family: TIBch, "Classic Grotesque W01", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-family: TIBch, "Classic Grotesque W01", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 body {
@@ -30,7 +30,7 @@ h2 + p:first-letter {
 }
 
 code {
-    font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, SimSun, sans-serif;
+    font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif;
     color: #d14;
     text-decoration: none;
 }
@@ -60,7 +60,7 @@ kbd {
     padding-right: .25rem;
     margin-left: .15rem;
     margin-right: .15rem;
-    font-family: Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, SimSun, sans-serif;
+    font-family: Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif;
     background: #eee;
     border-width: 2px 4px 5px 3px;
     border-style: solid;
@@ -84,7 +84,7 @@ pre.diffed {
     background-color: white;
     border: 1px dotted #f8bd0b;
     font-size: 90%;
-    font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, SimSun, sans-serif;
+    font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif;
 }
 
 code.url {
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 5px;
     padding: 0.5em;
     line-height: 180%;
-    font-family: "TIBch", "Classic Grotesque W01", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", "Microsoft YaHei", SimSun, sans-serif;
+    font-family: "TIBch", "Classic Grotesque W01", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 }
 
 h1 {
@@ -491,7 +491,7 @@ p a img:hover {
     list-style: none;
     line-height: 200%;
     color: lightgray;
-    font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, SimSun, sans-serif;
+    font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif;
 }
 
 .posts li a {
@@ -861,3 +861,7 @@ table {
 #navigator          { position: fixed; top: 1em; left: 1em; }
 #navigator a:hover  { border-bottom: none; }
 #navigator a        { color: #887ddd; }
+
+.banner {
+    font-family: 'Calibri','PT Sans', sans-serif;
+}

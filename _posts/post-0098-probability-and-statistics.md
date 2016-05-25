@@ -12,6 +12,7 @@ Probability and Statistics[^virgo]
 ==================================
 
 \newcommand\Beta{\operatorname{Beta}}
+\newcommand\R{\operatorname{R}}
 
 <div class="tzx-hide">
 
@@ -27,22 +28,102 @@ TODO:
 
 MISC Notes
 
-  - 全概率：原因 -> 结果
-  - 贝叶斯：结果 -> 原因
-  - P(A|B) > P(A)
-  - P(A|B) = P(A)
-  - P(A|B) < P(A)
-  - 相关（线性相关）
-  - binomial, `[baɪ'nomɪəl]`
-  - bernoulli, `[bə:'nu:li]`
-  - poisson, `/ˈpwɑːsɒn/`
-  - deviation, `['divɪ'eʃən]`
-  - cumulative, `['kjumjəletɪv]`
-  - 均方误差（mean square error）
-  - homoscedasticity, 方差齐性, `['hɔməusi,dæs'tisəti]`
-  - fiducial, `[fɪ'djuːʃ(ə)l]`
-  - bayesian, `['beʒən]`
-  - conjugate, `['kɑndʒəɡet]`, 共轭的
+-   说 chi-squared 和 chi-square，都可以
+-   全概率：原因 -> 结果
+-   贝叶斯：结果 -> 原因
+-   P(A|B) > P(A)
+-   P(A|B) = P(A)
+-   P(A|B) < P(A)
+-   相关（线性相关）
+-   binomial, `[baɪ'nomɪəl]`
+-   bernoulli, `[bə:'nu:li]`
+-   poisson, `/ˈpwɑːsɒn/`
+-   deviation, `['divɪ'eʃən]`
+-   cumulative, `['kjumjəletɪv]`
+-   均方误差（mean square error）
+-   homoscedasticity, 方差齐性, `['hɔməusi,dæs'tisəti]`
+-   fiducial, `[fɪ'djuːʃ(ə)l]`
+-   bayesian, `['beʒən]`
+-   conjugate, `['kɑndʒəɡet]`, 共轭的
+-   一些蛋疼的名词
+
+    An **independent variable** is also known as a "predictor variable",
+    "regressor", "controlled variable", "manipulated variable", "explanatory
+    variable", "exposure variable" (see reliability theory), "risk factor" (see
+    medical statistics), "feature" (in machine learning and pattern
+    recognition) or an "input variable."
+
+    A **dependent variable** is also known as a "response variable", "regressand",
+    "predicted variable", "measured variable", "explained variable",
+    "experimental variable", "responding variable", "outcome variable", and
+    "output variable".
+
+    "Explanatory variable" is preferred by some authors over "independent
+    variable" when the quantities treated as "independent variables" may not be
+    statistically independent. If the independent variable is referred to as an
+    "explanatory variable" then the term "response variable" is preferred by
+    some authors for the dependent variable.
+
+    "Explained variable" is preferred by some authors over "dependent variable"
+    when the quantities treated as "dependent variables" may not be
+    statistically dependent. If the dependent variable is referred to as an
+    "explained variable" then the term "predictor variable" is preferred by
+    some authors for the independent variable.
+
+    Variables may also be referred to by their form: continuous,
+    binary/dichotomous, nominal categorical, and ordinal categorical, among
+    others.
+
+    A variable may be thought to alter the dependent or independent variables,
+    but may not actually be the focus of the experiment. So that variable will
+    be kept constant or monitored to try to minimise its effect on the
+    experiment. Such variables may be designated as either a "controlled
+    variable", "control variable", or "extraneous variable".
+
+    Extraneous variables, if included in a regression as independent variables,
+    may aid a researcher with accurate response parameter estimation,
+    prediction, and goodness of fit, but are not of substantive interest to the
+    hypothesis under examination. For example, in a study examining the effect
+    of post-secondary education on lifetime earnings, some extraneous variables
+    might be gender, ethnicity, social class, genetics, intelligence, age, and
+    so forth. A variable is extraneous only when it can be assumed (or shown)
+    to influence the dependent variable. If included in a regression, it can
+    improve the fit of the model. If it is excluded from the regression and if
+    it has a non-zero covariance with one or more of the independent variables
+    of interest, its omission will bias the regression's result for the effect
+    of that independent variable of interest. This effect is called confounding
+    or omitted variable bias; in these situations, design changes and/or
+    statistical control is necessary.
+
+    Extraneous variables are often classified into three types:
+
+      - Subject variables, which are the characteristics of the individuals
+        being studied that might affect their actions. These variables include
+        age, gender, health status, mood, background, etc.
+      - Blocking variables or experimental variables are characteristics of the
+        persons conducting the experiment which might influence how a person
+        behaves. Gender, the presence of racial discrimination, language, or
+        other factors may qualify as such variables.
+      - Situational variables are features of the environment in which the
+        study or research was conducted, which have a bearing on the outcome of
+        the experiment in a negative way. Included are the air temperature,
+        level of activity, lighting, and the time of day.
+
+    In quasi-experiments, differentiating between dependent and other variables
+    may be downplayed in favour of differentiating between those variables that
+    can be altered by the researcher and those that cannot.[citation needed]
+    Variables in quasi-experiments may be referred to as "extraneous
+    variables", "subject variables", "blocking variables", "situational
+    variables", "pseudo-independent variables", "ex post facto variables",
+    "natural group variables" or "non-manipulated variables".
+
+    In modelling, variability that is not covered by the independent variable
+    is designated by e_i and is known as the "residual", "side effect",
+    "error", "unexplained share", "residual variable", or "tolerance".
+
+    refs and see also
+
+      - [Dependent and independent variables - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dependent_and_independent_variables)
 
 [Probability Cheatsheet](http://www.wzchen.com/probability-cheatsheet)
 
@@ -55,7 +136,7 @@ Probability theory
     either be single occurrences or evolve over time in an apparently random
     fashion.
 
-    Terminology
+    Terminology (words)
 
     -   RV: Random Varible
     -   CRV: Continuous Random Varaible
@@ -70,6 +151,10 @@ Probability theory
     -   MGF: Moment Generating Functions
     -   CLT: Central Limit Theorem
     -   LLN: Law of Large Numbers
+    -   RSS: Residual Sum of Squares
+    -   OLS, ordinary least square
+    -   LAD, Least absolute deviations, also known as **least absolute errors (LAE)**,
+    -   stochastic `[stə'kæstɪk]` adj.【数】随机的；机会的；有可能性的；随便的, random error -> stochastic error.
 
     Mode, mean, median
 
@@ -113,19 +198,24 @@ Probability theory
 
         -   **mean**
 
-            The first raw moment is the mean.
+            The **first raw moment** is the mean.
 
         -   **variance**
 
-            The second central moment is the variance. Its positive square root is the standard deviation σ.
+            The **second central moment** is the variance. Its positive square
+            root is the standard deviation σ.
 
         -   **skewness**
 
-            The third central moment is a measure of the lopsidedness of the
+            The **third central moment** is a measure of the lopsidedness (不平衡) of the
             distribution; any symmetric distribution will have a third central
             moment, if defined, of zero. The normalised third central moment is
             called the skewness, often γ (gamma).^[Gamma (uppercase Γ, lowercase γ;
             Greek: Γάμμα Gámma) is the third letter of the Greek alphabet.]
+
+        -   **Kurtosis**
+
+            `[kɜː'təʊsɪs]` n.【统】峭度, 峰度；峰态；峰度系数
 
         -   **Normalised moments**
 
@@ -134,8 +224,6 @@ Probability theory
             moment of
 
             $$x = \frac{\operatorname{E} \left [(x - \mu)^n \right ]}{\sigma^n}.$$
-
-        -   **Kurtosis**
 
     Standard error
 
@@ -151,7 +239,6 @@ Probability theory
 
         For example, the sample mean is the usual estimator of a population
         mean. However, different samples drawn from that same population would
-
         in general have different values of the sample mean, so there is
         **a distribution of sampled means** (with its own mean and variance).
         **The standard error of the mean (SEM)** (i.e., of using the sample mean as a
@@ -187,9 +274,9 @@ Probability theory
         methods (see mathematical statistics and statistical theory). However,
         in practical applications of statistical modeling the assumption may or
         may not be realistic. To test how realistic the assumption is on a
-        given data set, the autocorrelation can be computed, lag plots drawn or
-        turning point test performed. The generalization of exchangeable
-        random variables is often sufficient and more easily met.
+        given data set, the autocorrelation (自相关) can be computed, lag plots drawn or
+        turning point test performed. The generalization of
+        **exchangeable random variables** is often sufficient and more easily met.
 
         White noise is a simple example of IID.
 
@@ -231,7 +318,7 @@ Probability theory
     Probability space
 
     :   In probability theory, a probability space or a probability triple is a
-        mathematical construct that models a real-world process (or
+        **mathematical construct** that models a real-world process (or
         "experiment") consisting of states that occur randomly. A probability
         space is constructed with a specific kind of situation or experiment in
         mind. One proposes that each time a situation of that kind arises, the
@@ -240,34 +327,34 @@ Probability theory
 
         A probability space consists of three parts:
 
-          - A sample space, $\Omega$, which is the set of all possible outcomes.
-          - A set of events $\mathcal{F}$, where each event is a set containing
+          - A **sample space, $\Omega$**, which is the set of all possible outcomes.
+          - A set of **events $\mathcal{F}$**, where each event is a set containing
             zero or more outcomes.
-          - The assignment of probabilities to the events; that is, a function
+          - The **assignment of probabilities to the events**; that is, a function
             P from events to probabilities.
 
-        A probability space is a mathematical triplet ($\Omega$, $\mathcal{F}$, P)
+        A probability space is **a mathematical triplet ($\Omega$, $\mathcal{F}$, P)**
         that presents a model for a particular class of real-world situations.
         As with other models, its author ultimately defines which elements
         $\Omega$, $\mathcal{F}$, and P will contain.
 
     Expected value
 
-    :   Univariate discrete random variable, countable case
+    :   **Univariate discrete random variable, countable case**
 
         $$\operatorname{E}[X] = \sum_{i=1}^\infty x_i\, p_i,$$
 
-        Univariate continuous random variable
+        **Univariate continuous random variable**
 
         $$\operatorname{E}[X] = \int_{-\infty}^\infty x f(x)\, \mathrm{d}x.$$
 
-        General definition
+        **General definition**
 
         In general, if X is a random variable defined on a probability space (Ω, Σ, P),
         then the expected value of X, denoted by $E[X]$ (or $〈X〉$, $X$),
         is defined as the [Lebesgue integral](https://en.wikipedia.org/wiki/Lebesgue_integration)
 
-        $$\operatorname{E} [X] = \int_\Omega X \, \mathrm{d}P = \int_\Omega X(\omega) P(\mathrm{d}\omega) $$
+        $$\operatorname{E} [X] = \int_\Omega X \, \mathrm{d}P = \int_\Omega X(\omega) P(\mathrm{d}\omega)$$
 
         When this integral exists, it is defined as the expectation of X. **Not
         all random variables have a finite expected value, since the integral
@@ -276,7 +363,7 @@ Probability theory
         probability distribution will have the same expected value, if it is
         defined.
 
-        Expectation of matrices
+        **Expectation of matrices**
 
         If X is an m × n matrix, then the expected value of the matrix is defined as the matrix of expected values:
 
@@ -302,8 +389,8 @@ Probability theory
 
     Law of the unconscious statistician
 
-    :   In probability theory and statistics, the law of the unconscious
-        statistician (sometimes abbreviated LOTUS) is a theorem used to calculate
+    :   In probability theory and statistics, the **law of the unconscious statistician**
+        (sometimes abbreviated **LOTUS**) is a theorem used to calculate
         the expected value of a function g(X) of a random variable X when one knows
         the probability distribution of X but one does not explicitly know the
         distribution of g(X).
@@ -322,7 +409,7 @@ Probability theory
 
         $$\operatorname{Var}(X) = \operatorname{Cov}(X, X).$$
 
-        Continuous random variable
+        **Continuous random variable**
 
         $$\operatorname{Var}(X) =\sigma^2 =\int (x-\mu)^2 \, f(x) \, dx\, =\int x^2 \, f(x) \, dx\, - \mu^2$$
 
@@ -330,7 +417,7 @@ Probability theory
 
         $$\mu = \int x \, f(x) \, dx\,$$
 
-        Discrete random variable
+        **Discrete random variable**
 
         If the generator of random variable X is discrete with probability mass function x1 ↦ p1, ..., xn ↦ pn, then
 
@@ -344,8 +431,9 @@ Probability theory
 
         $$\mu = \sum_{i=1}^n p_i\cdot x_i.$$
 
-        Sum of uncorrelated variables (Bienaymé formula)
+        **Sum of uncorrelated variables (Bienaymé formula)**
 
+        <i class="icon-info-sign"></i>
         One reason for the use of the variance in preference to other measures
         of dispersion is that the variance of the sum (or the difference) of
         uncorrelated random variables is the sum of their variances:
@@ -399,13 +487,13 @@ Probability theory
         $$
 
         However, when $\operatorname{E}[XY] \approx \operatorname{E}[X]\operatorname{E}[Y]$,
-        this last equation is prone to catastrophic cancellation when computed
+        this last equation is prone to **catastrophic cancellation** when computed
         with floating point arithmetic and thus should be avoided in computer
         programs when the data has not been centered before. Numerically stable
         algorithms should be preferred in this case.
 
         For random vectors $\mathbf{X} \in \mathbb{R}^m$ and $\mathbf{Y} \in \mathbb{R}^n$,
-        the m×n cross covariance matrix (also known as **dispersion (`[dɪ'spɝʒn]`, 离差) matrix**
+        **the m×n cross covariance matrix** (also known as **dispersion (`[dɪ'spɝʒn]`, 离差) matrix**
         or **variance–covariance matrix**, or simply called covariance matrix) is equal to
 
         $$
@@ -426,14 +514,14 @@ Probability theory
 
     Classical definition
 
-    :   | The probability of an event is **the ratio** of
+    :   |   The probability of an event is **the ratio** of
         |
-        |  - the number of cases favorable to it, to
-        |  - the number of all cases possible
+        |     - the number of cases favorable to it, to
+        |     - the number of all cases possible
         |
-        | when nothing leads us to expect that any one of these cases should
-        | occur more than any other, which renders them, for us, equally
-        | possible.
+        |   when nothing leads us to expect that any one of these cases should
+        |   occur more than any other, which renders them, for us, equally
+        |   possible.
 
         This definition is essentially a consequence of the principle of
         indifference. If elementary events are assigned equal probabilities,
@@ -445,10 +533,10 @@ Probability theory
         several writers of the nineteenth century, including John Venn and
         George Boole. The frequentist definition of probability became
         widely accepted as a result of their criticism, and especially through
-        the works of R.A. Fisher.  The classical definition enjoyed a revival
+        the works of R.A. Fisher. **The classical definition enjoyed a revival
         of sorts due to the general interest in Bayesian probability, because
         Bayesian methods require a prior probability distribution and the
-        principle of indifference offers one source of such a distribution.
+        principle of indifference offers one source of such a distribution.**
         Classical probability can offer prior probabilities that reflect
         ignorance which often seems appropriate before an experiment is
         conducted.
@@ -500,7 +588,7 @@ Probability theory
 
 Discrete Uniform distribution
 
-:   The discrete uniform distribution itself is inherently non-parametric. It
+:   The discrete uniform distribution itself is **inherently non-parametric**. It
     is convenient, however, to represent its values generally by an integer
     interval [a,b], so that a,b become the main parameters of the distribution
     (often one simply considers the interval [1,n] with the single parameter
@@ -591,7 +679,9 @@ Binomial distribution
 
 Poisson distribution
 
-:   Poisson distribution (`/ˈpwɑːsɒn/`), named after French mathematician
+:   Poission 和泰勒级数是相关的。
+
+    Poisson distribution (`/ˈpwɑːsɒn/`), named after French mathematician
     Siméon Denis Poisson, is a discrete probability distribution that expresses
     the probability of a given number of events **occurring in a fixed interval
     of time and/or space if these events occur with a known average rate and
@@ -692,8 +782,8 @@ Law of total expectation
 
     $$\operatorname{E} (X) = \operatorname{E} ( \operatorname{E} ( X \mid Y)),$$
 
-    i.e., the expected value of the conditional expected value of X given Y is
-    the same as the expected value of X.
+    i.e., **the expected value of the conditional expected value of X given Y is
+    the same as the expected value of X.**
 
     The conditional expected value E( X | Y ) is a random variable in its own
     right, whose value depends on the value of Y. Notice that the conditional
@@ -721,7 +811,7 @@ Law of total variance
 
 Poisson approximation
 
-:   the Poisson distribution with parameter λ = np can be used as an
+:   the Poisson distribution with parameter **λ = np** can be used as an
     approximation to B(n, p) of the binomial distribution if n is sufficiently
     large and p is sufficiently small.
 
@@ -740,13 +830,15 @@ Poisson approximation
          variance np(1 − p). This result is a specific case of the central
          limit theorem.
 
+         这个看成 normalize 就可以了。X~normalized~ = (X - mean)/variance
+
 Poisson limit theorem
 
 :   The law of rare events or Poisson limit theorem gives a Poisson
     approximation to the binomial distribution, under certain conditions.
     The theorem was named after Siméon Denis Poisson (1781–1840).
 
-    If $n \rightarrow \infty, p \rightarrow 0, \text{such that} np \rightarrow \lambda$,
+    If $n \rightarrow \infty, p \rightarrow 0, \text{such that } np \rightarrow \lambda$,
     then
 
     $$\frac{n!}{(n-k)!k!} p^k (1-p)^{n-k} \rightarrow e^{-\lambda}\frac{\lambda^k}{k!}.$$
@@ -774,8 +866,8 @@ Negative binomial distribution
     Suppose there is a sequence of independent Bernoulli trials. Thus, each
     trial has two potential outcomes called “success” and “failure”. In each
     trial the probability of success is p and of failure is (1 − p). We are
-    observing this sequence until a predefined number r of failures has
-    occurred. Then the random number of successes we have seen, X, will have
+    observing this sequence **until a predefined number r of failures has
+    occurred**. Then the random number of successes we have seen, X, will have
     the negative binomial (or Pascal) distribution:
 
     $$X\sim\operatorname{NB}(r; p)$$
@@ -929,7 +1021,7 @@ Q-function
 
     $$x=\frac{y - \mu}{\sigma}$$
 
-    which expresses the number of standard deviations away from the mean.
+    which expresses **the number of standard deviations away from the mean**.
 
     Because of its relation to the cumulative distribution function of the
     normal distribution, the Q-function can also be expressed in terms of the
@@ -1019,6 +1111,8 @@ Normal distribution
         and are often said to be special functions. However, many numerical
         approximations are known; see below.
 
+        正太分布的 CDF 和 erf 很像。满足如下关系。
+
         The two functions are closely related, namely
 
         $$\Phi(x)\; =\; \frac12\left[1 + \operatorname{erf}\left(\frac{x}{\sqrt{2}}\right)\right]$$
@@ -1031,7 +1125,9 @@ Normal distribution
 
     Standard score
 
-    :   Standard scores are also called z-values, z-scores, normal scores, and
+    :   Z-分数，所以正太分布也叫 z 分布。标准分布，在考试测验评分里常用。
+
+        Standard scores are also called z-values, z-scores, normal scores, and
         standardized variables; the use of "Z" is because the normal
         distribution is also known as the "Z distribution".  They are most
         frequently used to compare a sample to a standard normal deviate,
@@ -1054,7 +1150,9 @@ Normal distribution
 
         Stanine
 
-        :   Stanine (STAndard NINE) is a method of scaling test scores on a
+        :   标准九。
+
+            Stanine (STAndard NINE) is a method of scaling test scores on a
             nine-point standard scale with a mean of five and a standard
             deviation of two.
 
@@ -1071,9 +1169,13 @@ Normal distribution
 
     t-statistic
 
-    :   In statistics, the t-statistic is a ratio of the departure of an
-        estimated parameter from its notional value and its standard error. It
-        is used in hypothesis testing, for example in the Student’s t-test, in
+    :   notional, `['noʊʃən(ə)l]` adj.猜测的；估计的；理论上的；想象的
+
+        用于假设检验。
+
+        In statistics, the t-statistic is a ratio of the **departure of an
+        estimated parameter from its notional value** and its standard error. It
+        is used in **hypothesis testing**, for example in the Student’s t-test, in
         the augmented Dickey–Fuller test, and in bootstrapping.
 
         Let $\scriptstyle\hat\beta$ be an estimator of parameter β in some
@@ -1092,8 +1194,8 @@ Normal distribution
         If $\scriptstyle\hat\beta$ is an ordinary least squares estimator in the
         classical linear regression model (that is, with normally distributed
         and homoskedastic error terms), and if the true value of parameter β is
-        equal to β0, then the sampling distribution of the t-statistic is the
-        Student's t-distribution with (n − k) degrees of freedom, where n is
+        equal to β0, then **the sampling distribution of the t-statistic is the
+        Student's t-distribution with (n − k) degrees of freedom**, where n is
         the number of observations, and k is the number of regressors
         (including the intercept).
 
@@ -1117,7 +1219,7 @@ Exponential distribution
     Poisson process, i.e. a process in which events occur continuously and
     independently at a constant average rate. It is a particular case of the
     gamma distribution. It is the continuous analogue of the geometric
-    distribution, and it has the key property of being memoryless. In addition
+    distribution, and it has the key property of being **memoryless**. In addition
     to being used for the analysis of Poisson processes, it is found in various
     other contexts.
 
@@ -1144,6 +1246,28 @@ Exponential distribution
         f(x;\lambda) = \mathrm \lambda e^{-\lambda x} H(x)
     $$
 
+    [Heaviside step function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Heaviside_step_function)
+
+    :   The Heaviside ([ˈhevisaid]`) step function, or the unit step function,
+        usually denoted by θ (but sometimes u or 𝟙), is a discontinuous
+        function whose value is zero for negative argument and one for positive
+        argument. It is an example of the general class of step functions, all
+        of which can be represented as linear combinations of translations of
+        this one.
+
+        ![The Heaviside step function, using the half-maximum
+            convention](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Dirac_distribution_CDF.svg/488px-Dirac_distribution_CDF.svg.png)
+
+        The simplest definition of the Heaviside function is as the derivative
+        of the ramp function:
+
+        $$H(x) := \frac{d}{dx} \max \{ x, 0 \}$$
+
+        The Heaviside function can also be defined as the integral of the Dirac
+        delta function: H′ = δ. This is sometimes written as
+
+        $$H(x) := \int_{-\infty}^x { \delta(s)} \, \mathrm{d}s$$
+
     -------------       ---------------------------
     Parameters          λ > 0 rate, or inverse scale
     Support             $x ∈ [0, ∞)$
@@ -1165,12 +1289,12 @@ Exponential distribution
 Gamma distribution
 
 :   In probability theory and statistics, the gamma distribution is a
-    two-parameter family of continuous probability distributions. The common
-    exponential distribution and chi-squared distribution are special cases of
-    the gamma distribution. There are three different parametrizations in
+    two-parameter family of continuous probability distributions.
+    **The common exponential distribution and chi-squared distribution are special cases of
+    the gamma distribution.** There are three different parametrizations in
     common use:
 
-      - With a shape parameter k and a scale parameter θ.
+      - With a **shape** parameter k and a **scale** parameter θ.
       - With a shape parameter α = k and an inverse scale parameter β = 1/θ, called a rate parameter.
       - With a shape parameter k and a mean parameter μ = k/β.
 
@@ -1182,7 +1306,7 @@ Gamma distribution
     -----------     --------------------------------------------------------------------      -----------------------------------------------------------------------
     Parameters      k > 0 shape, θ > 0 scale                                                  α > 0 shape, β > 0 rate
     Support         $\scriptstyle x \;\in\; (0,\, \infty)$                                    $\scriptstyle x \;\in\; (0,\, \infty)$
-    pdf             $\frac{1}{\Gamma(k) \theta^k} x^{k \,-\, 1} e^{-\frac{x}{\theta}}$        $\frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha \,-\, 1} e^{- \beta x }[1]$
+    pdf             $\frac{1}{\Gamma(k) \theta^k} x^{k \,-\, 1} e^{-\frac{x}{\theta}}$        $\frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha \,-\, 1} e^{- \beta x }$
     CDF             $\frac{1}{\Gamma(k)} \gamma\left(k,\, \frac{x}{\theta}\right)$            $\frac{1}{\Gamma(\alpha)} \gamma(\alpha,\, \beta x)$
     Mean            $\scriptstyle \mathbf{E}[ X] = k \theta$                                  $\scriptstyle\mathbf{E}[ X] = \frac{\alpha}{\beta}$
                     $\scriptstyle \mathbf{E}[\ln X] = \psi(k) +\ln(\theta)$                   $\scriptstyle \mathbf{E}[\ln X] = \psi(\alpha) -\ln(\beta)$
@@ -1250,13 +1374,13 @@ Tolerance interval
 :   A tolerance interval is a statistical interval within which, with some
     confidence level, a specified proportion of a sampled population falls.
 
-    "More speciﬁcally, a 100×p%/100×(1−α) tolerance interval provides limits
+    "More speciﬁcally, a **100×p%/100×(1−α) tolerance interval** provides limits
     within which at least a certain proportion (p) of the population falls with
-    a given level of conﬁdence (1−α)."
+    a given level of confidence (1−α)."
 
     "A (p, 1−α) tolerance interval (TI) based on a sample is constructed so
     that it would include at least a proportion p of the sampled population
-    with conﬁdence 1−α; such a TI is usually referred to as p-content −(1−α)
+    with confidence 1−α; such a TI is usually referred to as p-content −(1−α)
     coverage TI."
 
     "A (p, 1−α) upper tolerance limit (TL) is simply an 1−αupper confidence
@@ -1327,7 +1451,7 @@ Gamma function
 
     [Stirling's formula](https://en.wikipedia.org/wiki/Stirling%27s_approximation)
 
-    :   Asymptotically as t → ∞, the magnitude of the gamma function is given by
+    :   Asymptotically (逐渐地) as t → ∞, the magnitude of the gamma function is given by
         **Stirling's formula**
 
         $$\Gamma(t+1)\sim\sqrt{2\pi t}\left(\frac{t}{e}\right)^{t},$$
@@ -1353,8 +1477,8 @@ Gamma function
         on an open subset D of the complex plane is a function that is
         holomorphic on all D except a set of isolated points (the poles of the
         function), at each of which the function must have a Laurent series.
-        This terminology comes from the Ancient Greek meros (μέρος), meaning
-        part, as opposed to holos (ὅλος), meaning whole.
+        **This terminology comes from the Ancient Greek meros (μέρος), meaning
+        part, as opposed to holos (ὅλος), meaning whole.**
 
     Mellin transform
 
@@ -1382,8 +1506,10 @@ Gamma function
 
 Digamma function
 
-:   In mathematics, the digamma function is defined as the logarithmic
-    derivative of the gamma function:
+:   这个定义和这个希腊字母也太贴切了……
+
+    In mathematics, the digamma function is defined as the
+    **logarithmic derivative of the gamma function**:
 
     $$\psi(x)=\frac{d}{dx}\ln\Big(\Gamma(x)\Big)=\frac{\Gamma'(x)}{\Gamma(x)}.$$
 
@@ -1391,6 +1517,8 @@ Digamma function
 
     The digamma function is often denoted as ψ0(x), ψ0(x) or $\digamma$ (after
     the archaic Greek letter Ϝ digamma).
+
+    Psi (uppercase Ψ, lowercase ψ; Greek: Ψι Psi)
 
     Relation to harmonic numbers
 
@@ -1439,8 +1567,6 @@ Digamma function
             \sum_{k=1}^n \frac1{k}\right)\\ &=\int_1^\infty\left(\frac1{\lfloor
             x\rfloor}-\frac1{x}\right)\,dx. \end{align}$$
 
-            Here, ⌊x⌋ represents the floor function.
-
             The numerical value of the Euler–Mascheroni constant, to 50 decimal
             places, is
 
@@ -1481,9 +1607,10 @@ Beta function
 
     properties
 
-    -   symmetric: $\Beta(x,y) = \Beta(y,x). \!$
+    -   **symmetric**: $\Beta(x,y) = \Beta(y,x). \!$
 
-    -   relationship between gamma function and beta function: $\Beta(x,y)=\dfrac{\Gamma(x)\,\Gamma(y)}{\Gamma(x+y)} \!$
+    -   **relationship between gamma function and beta function**:
+        $\Beta(x,y)=\dfrac{\Gamma(x)\,\Gamma(y)}{\Gamma(x+y)} \!$
 
         When x and y are positive integers, it follows from the definition of the gamma function $\Gamma$ that:
 
@@ -1504,7 +1631,7 @@ Beta function
         where $t \mapsto t_+^x$ is a truncated power function and the star
         denotes convolution. The lowermost identity above shows in particular
         $\Gamma(\tfrac12) = \sqrt \pi$. Some of these identities, e.g. the
-        trigonometric formula, can be applied to deriving the volume of an
+        **trigonometric formula**, can be applied to deriving the volume of an
         n-ball in Cartesian coordinates.
 
     Euler's integral for the beta function may be converted into an integral over the Pochhammer contour C as
@@ -1522,9 +1649,11 @@ Beta function
 
         $$\begin{align} \Gamma(x)\Gamma(y) &= \int_{z=0}^\infty\int_{t=0}^1 e^{-z} (zt)^{x-1}(z(1-t))^{y-1}|J(z,t)|\,\mathrm{d}t \,\mathrm{d}z \\[6pt] &= \int_{z=0}^\infty\int_{t=0}^1 e^{-z} (zt)^{x-1}(z(1-t))^{y-1}z\,\mathrm{d}t \,\mathrm{d}z \\[6pt] &= \int_{z=0}^\infty e^{-z}z^{x+y-1} \,\mathrm{d}z\int_{t=0}^1t^{x-1}(1-t)^{y-1}\,\mathrm{d}t\\ &=\Gamma(x+y)\Beta(x,y), \end{align}$$
 
-        where `|J(z,t)|` is the absolute value of the Jacobian determinant of u = f(z,t) and v = g(z,t).
+        where |J(z,t)| is the absolute value of the Jacobian determinant of u =
+        f(z,t) and v = g(z,t).
 
-        The stated identity may be seen as a particular case of the identity for the integral of a convolution. Taking
+        The stated identity may be seen as a particular case of the identity
+        for the integral of a convolution. Taking
 
         $f(u):=e^{-u} u^{x-1} 1_{\R_+}$ and $g(u):=e^{-u} u^{y-1} 1_{\R_+}$, one has:
 
@@ -1559,7 +1688,7 @@ Chi-squared distribution
     ![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Chi-square_cdf.svg/482px-Chi-square_cdf.svg.png){width=45%}
 
     ---------       --------------------------------------
-    Notation        $\chi^2(k)\! or \chi^2_k\!$
+    Notation        $\chi^2(k)\!$ or $\chi^2_k\!$
     Parameters      $k \in \mathbb{N}_{>0}$ (known as "degrees of freedom")
     Support         x ∈ [0, +∞)
     pdf             $\frac{1}{2^{\frac{k}{2}}\Gamma\left(\frac{k}{2}\right)}\; x^{\frac{k}{2}-1} e^{-\frac{x}{2}}\,$
@@ -1736,7 +1865,7 @@ Joint probability distribution
 Sampling (statistics)
 
 :   In statistics, quality assurance, and survey methodology, sampling is
-    concerned with the selection of a subset of individuals from within a
+    concerned with the selection of a **subset** of individuals from within a
     statistical population to estimate characteristics of the whole population.
     Each observation measures one or more properties (such as weight, location,
     color) of observable bodies distinguished as independent objects or
@@ -1772,7 +1901,7 @@ Survey methodology
 
 Confidence interval `@`{.tzx-anchor #confidence-interval}
 
-:   In statistics, a confidence interval (CI) is a type of interval estimate of
+:   In statistics, a **confidence interval (CI)** is a type of interval estimate of
     a population parameter. It is an observed interval (i.e., it is calculated
     from the observations), in principle different from sample to sample, that
     frequently includes the value of an unobservable parameter of interest if
@@ -1994,10 +2123,10 @@ Residual sum of squares
 
     where yi is the i th value of the variable to be predicted, xi is the i th
     value of the explanatory variable, and f(x_i) is the predicted value of yi
-    (also termed \hat{y_i}). In a standard linear simple regression model, y_i
-    = a+bx_i+\varepsilon_i\,, where a and b are coefficients, y and x are the
+    (also termed \hat{y_i}). In a standard linear simple regression model,
+    $y_i = a+bx_i+\varepsilon_i\,$, where a and b are coefficients, y and x are the
     regressand and the regressor, respectively, and ε is the error term. The
-    sum of squares of residuals is the sum of squares of estimates of εi; that
+    sum of squares of residuals is the sum of squares of estimates of $ε_i$; that
     is
 
     $$RSS = \sum_{i=1}^n (\varepsilon_i)^2 = \sum_{i=1}^n (y_i - (\alpha + \beta x_i))^2,$$
@@ -2032,9 +2161,61 @@ Residual sum of squares
         where H is the [hat matrix](https://en.wikipedia.org/wiki/Hat_matrix),
         or the prediction matrix in linear regression.
 
+        [Projection matrix - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Projection_matrix)
+
+        :   In statistics, the projection matrix $\mathbf{P}$, sometimes also
+            called the influence matrix or hat matrix $\mathbf{H}$, maps the
+            vector of response values (dependent variable values) to the vector
+            of fitted values (or predicted values). It describes the influence
+            each response value has on each fitted value. The diagonal
+            elements of the projection matrix are the leverages, which describe
+            the influence each response value has on the fitted value for that
+            same observation.
+
+            If the vector of response values is denoted by $\mathbf{y}$ and the
+            vector of fitted values by $\mathbf{\hat{y}}$,
+
+            $$
+                \mathbf{\hat{y}} = \mathbf{P} \mathbf{y}.
+            $$
+
+            As $\mathbf{\hat{y}}$ is usually pronounced "y-hat", the projection
+            matrix is also named hat matrix as it "puts a hat on $\mathbf{y}$".
+            The formula for the vector of residuals $\mathbf{u}$ can also be
+            expressed compactly using the projection matrix:
+
+            $$
+                \mathbf{u} = \mathbf{y} - \mathbf{\hat{y}} = \mathbf{y} -
+                \mathbf{P} \mathbf{y} = \left( \mathbf{I} - \mathbf{P} \right)
+                \mathbf{y}.
+            $$
+
+            where $\mathbf{I}$ is the identity matrix. The matrix
+            $\mathbf{M} \equiv \left( \mathbf{I} - \mathbf{P} \right)$
+            is sometimes referred to as annihilator. Moreover, the element in
+            the ith row and jth column of $\mathbf{P}$ is equal to the covariance
+            between the jth response value and the ith fitted value, divided by
+            the variance of the former:
+
+            $$
+                \begin{align} p_{ij} = \operatorname{Cov}\left[ \hat{y}_i, y_j
+                \right] / \operatorname{Var}\left[y_j \right] \end{align}
+            $$
+
+            Therefore, the covariance matrix of the residuals, by error
+            propagation, equals
+            $\left( \mathbf{I}-\mathbf{P} \right)^{\mathsf{T}} \mathbf{\Sigma} \left( \mathbf{I}-\mathbf{P} \right)$,
+            where $\mathbf{\Sigma}$ is the covariance matrix of the
+            error vector (and by extension, the response vector as well). For
+            the case of linear models with independent and identically
+            distributed errors in which $\mathbf{\Sigma} = \sigma^{2} \mathbf{I}$,
+            this reduces to $\left( \mathbf{I} - \mathbf{P} \right) \sigma^{2}$.
+
 Ordinary least squares
 
-:   In statistics, ordinary least squares (OLS) or linear least squares is a
+:   普通最小二乘法
+
+    In statistics, **ordinary least squares (OLS)** or linear least squares is a
     method for estimating the unknown parameters in a linear regression model,
     with the goal of minimizing the differences between the observed responses
     in some arbitrary dataset and the responses predicted by the linear
@@ -2050,35 +2231,39 @@ Ordinary least squares
     where y and ε are n×1 vectors, and X is an n×p matrix of regressors, which
     is also sometimes called the design matrix.
 
+    regressors, 回归因子选择；回归数值。
+
     Classical linear regression model
 
-      - Correct specification. The linear functional form is correctly specified.
+      - **Correct specification**. The linear functional form is correctly specified.
 
-      - Strict exogeneity. The errors in the regression should have conditional mean zero:
+      - **Strict exogeneity (外生性)**. The errors in the regression should have
+        conditional mean zero:
 
         $$\operatorname{E}[\,\varepsilon|X\,] = 0.$$
 
-
-      - No linear dependence. The regressors in X must all be linearly
-        independent. Mathematically, this means that the matrix X must have
-        full column rank almost surely:
+      - No linear dependence. The regressors in X must all be **linearly independent**.
+        Mathematically, this means that the matrix X must have
+        full column rank almost surely: （意思是所选参数都是有效的。）
 
         $$\Pr\!\big[\,\operatorname{rank}(X) = p\,\big] = 1.$$
 
-      - Spherical errors:
+      - **Spherical errors**:（意思是误差均匀分布在各个方向上）
 
         $$\operatorname{Var}[\,\varepsilon \mid X\,] = \sigma^2 I_n,$$
 
-      - Normality. It is sometimes additionally assumed that the errors have
+      - **Normality**. It is sometimes additionally assumed that the errors have
         normal distribution conditional on the regressors:
 
         $$\varepsilon \mid X\sim \mathcal{N}(0, \sigma^2I_n).$$
 
     The sum of squared residuals (SSR) (also called the error sum of squares
-    (ESS) or residual sum of squares (RSS))[6] is a measure of the overall
-    model fit:
+    (ESS) or residual sum of squares (RSS)) is a measure of
+    **the overall model fit**:
 
-    $$S(b) = \sum_{i=1}^n (y_i - x_i ^T b)^2 = (y-Xb)^T(y-Xb),$$
+    $$
+        S(b) = \sum_{i=1}^n (y_i - x_i ^T b)^2 = (y-Xb)^T(y-Xb),
+    $$
 
     where T denotes the matrix transpose.
 
@@ -2091,8 +2276,8 @@ Ordinary least squares
 
     Maximum likelihood
 
-    :   The OLS estimator is identical to the maximum likelihood estimator
-        (MLE) under the normality assumption for the error terms.
+    :   **The OLS estimator is identical to the maximum likelihood estimator
+        (MLE) under the normality assumption for the error terms.**
 
         see at [#maximum-likelihood](#maximum-likelihood).
 
@@ -2103,17 +2288,18 @@ Ordinary least squares
         $$\mathrm{E}\big[\, x_i(y_i - x_i ^T \beta) \,\big] = 0.$$
 
     First of all, under the strict exogeneity assumption the OLS estimators
-    $\scriptstyle\hat\beta$ and s2 are unbiased, meaning that their expected
+    $\scriptstyle\hat\beta$ and $s^2$ are unbiased, meaning that their expected
     values coincide with the true values of the parameters:
 
     $$\operatorname{E}[\, \hat\beta \mid X \,] = \beta, \quad \operatorname{E}[\,s^2 \mid X\,] = \sigma^2.$$
 
+    <i class="icon-info-sign"></i>
     The estimator $\scriptstyle\hat\beta$ is normally distributed, with mean
     and variance as given before:
 
     $$\hat\beta\ \sim\ \mathcal{N}\big(\beta,\ \sigma^2(X ^T X)^{-1}\big)$$
 
-    The estimator s2 will be proportional to the chi-squared distribution:
+    The estimator $s^2$ will be proportional to the chi-squared distribution:
 
     $$s^2\ \sim\ \frac{\sigma^2}{n-p} \cdot \chi^2_{n-p}$$
 
@@ -2126,13 +2312,13 @@ Generalized method of moments `@`{.tzx-anchor #gmm}
     function of the data may not be known, and therefore maximum likelihood
     estimation is not applicable.
 
-    The method requires that a certain number of moment conditions were
+    The method requires that a certain number of **moment conditions** were
     specified for the model. These moment conditions are functions of the model
     parameters and the data, such that their expectation is zero at the true
     values of the parameters. The GMM method then minimizes a certain norm of
     the sample averages of the moment conditions.
 
-    The GMM estimators are known to be consistent, asymptotically normal, and
+    The GMM estimators are known to be consistent, asymptotically (渐进地) normal, and
     efficient in the class of all estimators that do not use any extra
     information aside from that contained in the moment conditions.
 
@@ -2140,9 +2326,42 @@ Generalized method of moments `@`{.tzx-anchor #gmm}
     method of moments which was introduced by Karl Pearson in 1894. Hansen
     shared the 2013 Nobel Prize in Economics in part for this work.
 
+    这么叼……三十年前的工作……。
+
 Nonparametric regression
 
 :   Gaussian process regression or Kriging
+
+    :   see [Kriging - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Kriging).
+
+        In statistics, originally in geostatistics, Kriging or Gaussian process
+        regression is a method of interpolation for which the interpolated
+        values are modeled by a Gaussian process governed by prior covariances,
+        as opposed to a piecewise-polynomial spline chosen to optimize
+        smoothness of the fitted values. Under suitable assumptions on the
+        priors, Kriging gives the best linear unbiased prediction of the
+        intermediate values. Interpolating methods based on other criteria such
+        as smoothness need not yield the most likely intermediate values. The
+        method is widely used in the domain of spatial analysis and computer
+        experiments. The technique is also known as Wiener–Kolmogorov
+        prediction, after Norbert Wiener and Andrey Kolmogorov.
+
+        The theoretical basis for the method was developed by the French
+        mathematician Georges Matheron based on the Master's thesis of Danie G.
+        Krige, the pioneering plotter of distance-weighted average gold grades
+        at the Witwatersrand reef complex in South Africa. Krige sought to
+        estimate the most likely distribution of gold based on samples from a
+        few boreholes. The English verb is to krige and the most common noun is
+        Kriging; both are often pronounced with a hard "g", following the
+        pronunciation of the name "Krige".
+
+        ![Example of one-dimensional data interpolation by Kriging, with
+            confidence intervals. Squares indicate the location of the data.
+            The Kriging interpolation, shown in red, runs along the means of
+            the normally distributed confidence intervals shown in gray. The
+            dashed curve shows a spline that while smooth nevertheless departs
+            significantly from the expected intermediate values given by those
+            means.](https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Example_of_kriging_interpolation_in_1D.png/600px-Example_of_kriging_interpolation_in_1D.png)
 
     Kernel regression
 
@@ -2168,9 +2387,11 @@ Nonparametric regression
 
     Regression trees
 
+[Norm (mathematics) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Norm_(mathematics))
+
 Least absolute deviations
 
-:   Least absolute deviations (LAD), also known as least absolute errors (LAE),
+:   **Least absolute deviations (LAD)**, also known as **least absolute errors (LAE)**,
     least absolute value (LAV), least absolute residual (LAR), sum of absolute
     deviations, or the L1 norm condition, is a statistical optimality criterion
     and the statistical optimization technique that relies on it. Similar to
@@ -2192,7 +2413,9 @@ Least absolute deviations
     Least squares regression    Least absolute deviations regression
     ------------------------    ------------------------------------
     Not very robust             Robust
+
     Stable solution             Unstable solution
+
     Always one solution         Possibly multiple solutions
     ------------------------    ------------------------------------
 
@@ -2200,15 +2423,66 @@ Bias of an estimator
 
 :   TODO: [Bias of an estimator - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Bias_of_an_estimator)
 
+    In statistics, the bias (or bias function) of an estimator is the
+    difference between this estimator's expected value and the true value of
+    the parameter being estimated. **An estimator or decision rule with zero bias
+    is called unbiased**. Otherwise the estimator is said to be **biased**.
+
+    In statistics, "bias" is an objective statement about a function, and while
+    not a desired property, it is not pejorative, unlike the ordinary English
+    use of the term "bias". (这还解释，显示好人文关怀。)
+
+    Bias can also be measured with respect to the median, rather than the mean
+    (expected value), in which case one distinguishes **median-unbiased** from the
+    usual mean-unbiasedness property. Bias is related to consistency in that
+    consistent estimators are convergent and asymptotically unbiased (hence
+    converge to the correct value), though individual estimators in a
+    consistent sequence may be biased (so long as the bias converges to zero);
+    see [bias versus consistency](https://en.wikipedia.org/wiki/Consistent_estimator#Bias_versus_consistency).
+
+    All else equal, an unbiased estimator is preferable to a biased estimator,
+    but in practice all else is not equal, and biased estimators are frequently
+    used, generally with small bias. When a biased estimator is used, the bias
+    is also estimated. A biased estimator may be used for various reasons:
+    because an unbiased estimator does not exist without further assumptions
+    about a population or is difficult to compute (as in unbiased estimation of
+    standard deviation); because an estimator is median-unbiased but not
+    mean-unbiased (or the reverse); because a biased estimator reduces some
+    loss function (particularly mean squared error) compared with unbiased
+    estimators (notably in shrinkage 收缩程度 estimators); or because in some cases
+    being unbiased is too strong a condition, and the only unbiased estimators
+    are not useful. Further, mean-unbiasedness is not preserved under
+    non-linear transformations, though median-unbiasedness is (see effect of
+    transformations); for example, the sample variance is an unbiased estimator
+    for the population variance, but its square root, the sample standard
+    deviation, is a biased estimator for the population standard deviation.
+
+    $$
+        \operatorname{Bias}_\theta[\,\hat\theta\,] =
+        \operatorname{E}_\theta[\,\hat{\theta}\,]-\theta =
+        \operatorname{E}_\theta[\, \hat\theta - \theta \,],
+    $$
+
+    If the sample mean and uncorrected sample variance are defined as
+
+    $$
+        \overline{X}=\frac{1}{n}\sum_{i=1}^nX_i, \qquad S^2=\frac{1}{n}\sum_{i=1}^n\left(X_i-\overline{X}\,\right)^2,
+    $$
+
+    then $S^2$ is a biased estimator of σ2.
+
 Efficient estimator
 
 :   In statistics, an efficient estimator is an estimator that estimates the
-    quantity of interest in some “best possible” manner. The notion of “best
-    possible” relies upon the choice of a particular loss function — the
+    quantity of interest **in some “best possible” manner**. The notion of “best
+    possible” relies upon the **choice of a particular loss function** — the
     function which quantifies the relative degree of undesirability of
     estimation errors of different magnitudes. The most common choice of the
     loss function is quadratic, resulting in the mean squared error criterion
     of optimality.
+
+    有效估计量是相对的，可以说一个估计量比另一个有效，那么它是有效估计量。
+    也可以说在某一损失函数下最有效的那个估计量是有效估计量（比其他都有效）。
 
     TODO: [Efficient estimator - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Efficient_estimator)
 
@@ -2222,6 +2496,9 @@ Consistent estimator
     more concentrated near the true value of the parameter being estimated, so
     that the probability of the estimator being arbitrarily close to θ0
     converges to one.
+
+    很多统计书里会翻译成“一致统计量”，其实是“持续”统计量。意思是能够不断逼近期望，
+    随着样本数量的增多，这个估计策略一定会越来越靠谱。
 
     ![`{T1, T2, T3, …}` is a sequence of estimators for parameter θ0, the true
         value of which is 4. This sequence is consistent: the estimators are
@@ -2242,13 +2519,13 @@ Consistent estimator
 
 Observational error
 
-:   Observational error (or measurement error) is the difference between a
-    measured value of quantity and its true value. In statistics, an error is
-    not a "mistake". Variability is an inherent part of things being measured
-    and of the measurement process.
+:   **Observational error** (or **measurement error**) is the difference
+    between a measured value of quantity and its true value. In statistics, an
+    error is not a "mistake". Variability is an inherent part of things being
+    measured and of the measurement process.
 
-    Measurement errors can be divided into two components: random error and
-    systematic error. Random errors are errors in measurement that lead to
+    Measurement errors can be divided into two components: **random error** and
+    **systematic error**. Random errors are errors in measurement that lead to
     measurable values being inconsistent when repeated measures of a constant
     attribute or quantity are taken. Systematic errors are errors that are not
     determined by chance but are introduced by an inaccuracy (as of observation
@@ -2272,7 +2549,7 @@ Observational error
 
         Sources of random error
 
-        :   The random or stochastic error in a measurement is the error that
+        :   The random or **stochastic error** in a measurement is the error that
             is random from one measurement to the next. Stochastic errors tend
             to be normally distributed when the stochastic error is the sum of
             many independent random errors because of the central limit
@@ -2287,20 +2564,62 @@ Observational error
             response. These sources of non-sampling error are discussed in
             Salant and Dillman (1995) and Bland and Altman (1996).
 
+        [Stochastic process - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Stochastic_process)
+
+        :   In probability theory, a stochastic (`/stoʊˈkæstɪk/`) process, or
+            often random process, is a collection of random variables representing
+            the evolution of some system of random values over time. This is the
+            probabilistic counterpart to a deterministic process (or deterministic
+            system). Instead of describing a process which can only evolve in one
+            way (as in the case, for example, of solutions of an ordinary
+            differential equation), in a stochastic, or random process, there is
+            some indeterminacy: even if the initial condition (or starting point)
+            is known, there are several (often infinitely many) directions in which
+            the process may evolve.
+
+            In the simple case of discrete time, as opposed to continuous time,
+            a stochastic process is a sequence of random variables. (For
+            example, see Markov chain, also known as discrete-time Markov
+            chain.) The random variables corresponding to various times may be
+            completely different, the only requirement being that these
+            different random quantities all take values in the same space (the
+            codomain of the function). One approach may be to model these
+            random variables as random functions of one or several
+            deterministic arguments (in most cases, the time parameter).
+            Although the random values of a stochastic process at different
+            times may be independent random variables, in most commonly
+            considered situations they exhibit complicated statistical
+            dependence.
+
+            Familiar examples of stochastic processes include stock market and
+            exchange rate fluctuations; signals such as speech; audio and
+            video; medical data such as a patient's EKG, EEG, blood pressure or
+            temperature; and random movement such as Brownian motion or random
+            walks.
+
+            A generalization, the random field, is defined by letting the
+            variables be parametrized by members of a topological space instead
+            of time. Examples of random fields include static images, random
+            terrain (landscapes), wind waves and composition variations of a
+            heterogeneous material.
+
+            ![Stock market fluctuations have been modeled by stochastic
+                processes.](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/IE_Real_SandP_Prices%2C_Earnings%2C_and_Dividends_1871-2006.png/525px-IE_Real_SandP_Prices%2C_Earnings%2C_and_Dividends_1871-2006.png)
+
 Estimator
 
 :   In statistics, an estimator is a rule for calculating an estimate of a
-    given quantity based on observed data: thus the rule (the estimator), the
-    quantity of interest (the estimand) and its result (the estimate) are
-    distinguished.
+    given quantity based on observed data: **thus the rule (the estimator)**,
+    **the quantity of interest (the estimand)** and its **result (the
+    estimate)** are distinguished.
 
     There are point and interval estimators. The point estimators yield
-    single-valued results, although this includes the possibility of single
+    **single-valued results**, although this includes the possibility of single
     vector-valued results and results that can be expressed as a single
     function. This is in contrast to an interval estimator, where the result
-    would be a range of plausible values (or vectors or functions).
+    would be **a range of plausible values** (or vectors or functions).
 
-    Estimation theory is concerned with the properties of estimators; that is,
+    Estimation theory is concerned with the **properties of estimators**; that is,
     with defining properties that can be used to compare different estimators
     (different rules for creating estimates) for the same quantity, based on
     the same data. Such properties can be used to determine the best rules to
@@ -2313,7 +2632,7 @@ Estimator
 
     :   In statistics, point estimation involves the use of sample data to
         calculate a single value (known as a statistic) which is to serve as a
-        "best guess" or "best estimate" of an unknown (fixed or random)
+        "**best guess**" or "**best estimate**" of an unknown (fixed or random)
         population parameter.
 
         More formally, it is the application of a point estimator to the data.
@@ -2867,7 +3186,9 @@ Maximum likelihood `@`{.tzx-anchor #maximum-likelihood}
 Ground truth
 
 :   Ground truth is a term used in various fields to refer to information provided
-    by direct observation as opposed to information provided by inference.
+    by **direct observation** as opposed to information provided by inference.
+
+    其实就是基准值，差不都就是 baseline。
 
     In machine learning, the term "ground truth" refers to the accuracy of the
     training set's classification for supervised learning techniques. This is used
@@ -3342,3 +3663,5 @@ refs and see also
     the derived trigonometric functions. The inverse hyperbolic functions are
     the area hyperbolic sine "arsinh" (also called "asinh" or sometimes
     "arcsinh") and so on.
+
+[Latent variable model - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Latent_variable_model)
