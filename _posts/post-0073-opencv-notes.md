@@ -74,12 +74,12 @@ rows |
     cv::cvtColor( src, dst, cv::COLOR_BGR2GRAY );
     ```
 
-    RGB $\leftrightarrow$ GRAY ( `COLOR_BGR2GRAY`, `COLOR_RGB2GRAY`, `COLOR_GRAY2BGR`, `COLOR_GRAY2RGB` )
+    RGB <-> GRAY ( `COLOR_BGR2GRAY`, `COLOR_RGB2GRAY`, `COLOR_GRAY2BGR`, `COLOR_GRAY2RGB` )
 
     +   $\text{RGB[A] to Gray:} \quad Y  \leftarrow 0.299  \cdot R + 0.587  \cdot G + 0.114  \cdot B$
     +   $\text{Gray to RGB[A]:} \quad R  \leftarrow Y, G  \leftarrow Y, B  \leftarrow Y, A  \leftarrow \max (ChannelRange)$
 
-    RGB $\leftrightarrow$ CIE XYZ.Rec 709 with D65 white point ( COLOR_BGR2XYZ, COLOR_RGB2XYZ, COLOR_XYZ2BGR, COLOR_XYZ2RGB ):
+    RGB <-> CIE XYZ.Rec 709 with D65 white point ( COLOR_BGR2XYZ, COLOR_RGB2XYZ, COLOR_XYZ2BGR, COLOR_XYZ2RGB ):
 
     +   \begin{bmatrix} X  \\ Y  \\ Z
           \end{bmatrix} \leftarrow \begin{bmatrix} 0.412453 & 0.357580 & 0.180423 \\ 0.212671 & 0.715160 & 0.072169 \\ 0.019334 & 0.119193 & 0.950227
@@ -91,7 +91,7 @@ rows |
           \end{bmatrix}
     +   X,  Y and Z cover the whole value range (in case of floating-point images, Z may exceed 1).
 
-    RGB \leftrightarrow YCrCb JPEG (or YCC) ( COLOR_BGR2YCrCb, COLOR_RGB2YCrCb, COLOR_YCrCb2BGR, COLOR_YCrCb2RGB )
+    RGB <->  YCrCb JPEG (or YCC) ( COLOR_BGR2YCrCb, COLOR_RGB2YCrCb, COLOR_YCrCb2BGR, COLOR_YCrCb2RGB )
 
     +   $Y  \leftarrow 0.299  \cdot R + 0.587  \cdot G + 0.114  \cdot B$
     +   $Cr  \leftarrow (R-Y)  \cdot 0.713 + delta$
@@ -434,12 +434,18 @@ The output RGB components of a pixel are interpolated from 1, 2, or 4 neighbors 
 
 codes
 
--   [4ker/code: Code for the book "Mastering OpenCV with Practical Computer Vision Projects" by Packt Publishing 2012.](https://github.com/4ker/code)
--   [OpenCV, Microsoft Visual Studio and libfacerec](http://www.bytefish.de/blog/opencv_visual_studio_and_libfacerec/)
--   [4ker/facerec: Implements face recognition algorithms for MATLAB/GNU Octave and Python.](https://github.com/4ker/facerec)
+[4ker/code: Code for the book "Mastering OpenCV with Practical Computer Vision Projects" by Packt Publishing 2012.](https://github.com/4ker/code)
+
+这些代码需要细看。
+
+
 -   [4ker/opencv-haar-classifier-training: Learn how to train your own OpenCV Haar classifier](https://github.com/4ker/opencv-haar-classifier-training)
 -   [4ker/opencv-code: C++ and Python code extracted from the tutorials at http://opencv-code.com](https://github.com/4ker/opencv-code)
 
+libfacerec is a library for face recognition in OpenCV. It has been merged into OpenCV 2.4 (contrib module) and both implementations are synchronized. So if you are in (a recent) OpenCV 2.4: There is no need to compile libfacerec yourself, you have everything to get started. Note: Make sure to work on a recent OpenCV revision, if you want to be compatible with the very latest libfacerec version.
+
+-   [OpenCV, Microsoft Visual Studio and libfacerec](http://www.bytefish.de/blog/opencv_visual_studio_and_libfacerec/)
+-   [4ker/facerec: Implements face recognition algorithms for MATLAB/GNU Octave and Python.](https://github.com/4ker/facerec)
 
 -   SURF 特征点检测
 -   SURF 特征提取
@@ -451,70 +457,90 @@ codes
 
 shit
 
+-   edge
+
+    ```cpp
+    cv::Mat element = cv::getStructuringElement( cv::MORPH_RECT, cv::Size(15, 15) );
+    cv::dilate(         imgSrc, imgDilate, element );
+    cv::erode(          imgSrc, imgEroded, element );
+    cv::blur(           imgSrc, imgBlurred, cv::Size(7, 7) );
+    cv::Canny(          imgSrc, imgEdge, 3, 9, 3 );
+    cv::boxFilter(      imgSrc, imgBox, -1, cv::Size(5, 5) );
+    cv::medianBlur(     imgSrc, imgMedian, 7 );
+    //                     src      dst  sigmaColor sigmaSpace borderType
+    cv::bilateralFilter( imgSrc, imgBilateral, 25, 25*2, 25/2 );
+
+    cv::morphologyEx( imgSrc, imgMorphDilate,    cv::MORPH_DILATE,    element );
+    cv::morphologyEx( imgSrc, imgMorphErode,     cv::MORPH_ERODE,     element );
+    cv::morphologyEx( imgSrc, imgMorphOpen,      cv::MORPH_OPEN,      element );
+    cv::morphologyEx( imgSrc, imgMorphClose,     cv::MORPH_CLOSE,     element );
+    cv::morphologyEx( imgSrc, imgMorphGradient,  cv::MORPH_GRADIENT,  element );
+    cv::morphologyEx( imgSrc, imgMorphTophat,    cv::MORPH_TOPHAT,    element );
+    cv::morphologyEx( imgSrc, imgMorphBlackhat,  cv::MORPH_BLACKHAT,  element );
+    ```
+
+-   resize
+
+    ```cpp
+    cv::resize( imgSrc, imgResize,
+                cv::Size(imgSrc.rows/2,imgSrc.cols/2),
+                0.0, 0.0,
+                cv::INTER_AREA );               // interpolation method
+    cv::pyrUp( imgSrc, imgPyrUp,
+               cv::Size(imgSrc.rows*2,imgSrc.cols*2) );
+               // cv::BORDER_REPLICATE );       // border type, assert failed!
+    cv::pyrDown( imgSrc, imgPyrDown,
+               cv::Size(imgSrc.rows/2,imgSrc.cols/2) );
+
+    ```
+
+-   threshold
+
+    ```cpp
+    cv::threshold( imgGray, imgThreshold, 128, 255, cv::THRESH_BINARY );
+    //      enum ThresholdTypes {
+    //          THRESH_BINARY     = 0,
+    //          THRESH_BINARY_INV = 1,
+    //          THRESH_TRUNC      = 2,
+    //          THRESH_TOZERO     = 3,
+    //          THRESH_TOZERO_INV = 4,
+    //          THRESH_MASK       = 7,
+    //          THRESH_OTSU       = 8,
+    //          THRESH_TRIANGLE   = 16
+    //      };
+    ```
+
+-   floodFill
+
+    ```cpp
+    cv::floodFill( imgFloodFill,                // input&output
+                   cv::Point(345,234),          // seed point
+                   cv::Scalar(155, 255,55),     // new value
+                   &ccomp,                      //
+                   cv::Scalar(20, 20, 20),      // lo diff
+                   cv::Scalar(20, 20, 20) );    // up diff
+    ```
+
+-   sobel
+
+    ```cpp
+    cv::Sobel( imgGray, imgSobelX, // src -> dst
+               CV_16S,             // ddepth
+               1, 0, 3,            // dx, dy, ksize
+               1, 1,               // scale, delta
+               cv::BORDER_DEFAULT );
+    cv::Sobel( imgGray, imgSobelY, // src -> dst
+               CV_16S,             // ddepth
+               0, 1, 3,            // dx, dy, ksize
+               1, 1,               // scale, delta
+               cv::BORDER_DEFAULT );
+    cv::convertScaleAbs( imgSobelX, imgSobelAbsX );
+    cv::convertScaleAbs( imgSobelY, imgSobelAbsY );
+    cv::addWeighted( imgSobelAbsX, 0.5, imgSobelAbsY, 0.5, 0, imgSobel );
+    ```
+
 ```cpp
 cv::Rect rectangle;
-
-cv::Mat element = cv::getStructuringElement( cv::MORPH_RECT, cv::Size(15, 15) );
-cv::dilate(         imgSrc, imgDilate, element );
-cv::erode(          imgSrc, imgEroded, element );
-cv::blur(           imgSrc, imgBlurred, cv::Size(7, 7) );
-cv::Canny(          imgSrc, imgEdge, 3, 9, 3 );
-cv::boxFilter(      imgSrc, imgBox, -1, cv::Size(5, 5) );
-cv::medianBlur(     imgSrc, imgMedian, 7 );
-//                     src      dst  sigmaColor sigmaSpace borderType
-cv::bilateralFilter( imgSrc, imgBilateral, 25, 25*2, 25/2 );
-
-cv::morphologyEx( imgSrc, imgMorphDilate,    cv::MORPH_DILATE,    element );
-cv::morphologyEx( imgSrc, imgMorphErode,     cv::MORPH_ERODE,     element );
-cv::morphologyEx( imgSrc, imgMorphOpen,      cv::MORPH_OPEN,      element );
-cv::morphologyEx( imgSrc, imgMorphClose,     cv::MORPH_CLOSE,     element );
-cv::morphologyEx( imgSrc, imgMorphGradient,  cv::MORPH_GRADIENT,  element );
-cv::morphologyEx( imgSrc, imgMorphTophat,    cv::MORPH_TOPHAT,    element );
-cv::morphologyEx( imgSrc, imgMorphBlackhat,  cv::MORPH_BLACKHAT,  element );
-
-cv::floodFill( imgFloodFill,                // input&output
-               cv::Point(345,234),          // seed point
-               cv::Scalar(155, 255,55),     // new value
-               &ccomp,                      //
-               cv::Scalar(20, 20, 20),      // lo diff
-               cv::Scalar(20, 20, 20) );    // up diff
-
-cv::resize( imgSrc, imgResize,
-            cv::Size(imgSrc.rows/2,imgSrc.cols/2),
-            0.0, 0.0,
-            cv::INTER_AREA );               // interpolation method
-cv::pyrUp( imgSrc, imgPyrUp,
-           cv::Size(imgSrc.rows*2,imgSrc.cols*2) );
-           // cv::BORDER_REPLICATE );       // border type, assert failed!
-cv::pyrDown( imgSrc, imgPyrDown,
-           cv::Size(imgSrc.rows/2,imgSrc.cols/2) );
-
-cv::threshold( imgGray, imgThreshold, 128, 255, cv::THRESH_BINARY );
-//      enum ThresholdTypes {
-//          THRESH_BINARY     = 0,
-//          THRESH_BINARY_INV = 1,
-//          THRESH_TRUNC      = 2,
-//          THRESH_TOZERO     = 3,
-//          THRESH_TOZERO_INV = 4,
-//          THRESH_MASK       = 7,
-//          THRESH_OTSU       = 8,
-//          THRESH_TRIANGLE   = 16
-//      };
-
-cv::Sobel( imgGray, imgSobelX, // src -> dst
-           CV_16S,             // ddepth
-           1, 0, 3,            // dx, dy, ksize
-           1, 1,               // scale, delta
-           cv::BORDER_DEFAULT );
-cv::Sobel( imgGray, imgSobelY, // src -> dst
-           CV_16S,             // ddepth
-           0, 1, 3,            // dx, dy, ksize
-           1, 1,               // scale, delta
-           cv::BORDER_DEFAULT );
-cv::convertScaleAbs( imgSobelX, imgSobelAbsX );
-cv::convertScaleAbs( imgSobelY, imgSobelAbsY );
-cv::addWeighted( imgSobelAbsX, 0.5, imgSobelAbsY, 0.5, 0, imgSobel );
-
 cv::cvtColor( imgSrc, imgSrc, cv::COLOR_BGR2GRAY );
 cv::Laplacian( imgSrc, imgLaplace, CV_16S, 3, 1, 0, cv::BORDER_DEFAULT );
 cv::convertScaleAbs( imgLaplace, imgLaplace );
@@ -946,7 +972,7 @@ image=(image&cv::Scalar(mask,mask,mask))+cv::Scalar(div/2,div/2,div/2);
 
 :   别人总结出来的东西能帮助我们在一开始迅速入门，但要学深，学精，终归还是要自己去努力挖的。
 
-```cpp
+    ```cpp
     void cvWarpAffine(
         const CvArr* src,//输入图像
         CvArr* dst, //输出图像
@@ -960,10 +986,9 @@ image=(image&cv::Scalar(mask,mask,mask))+cv::Scalar(div/2,div/2,div/2);
            CvArr* dst,   // 提取的四边形
            const CvMat* map_matrix //2*3的变换矩阵
     );
+    ```
 
-```
-
-```
+    ```cpp
     //逆时针旋转图像degree角度（原尺寸）
     void rotateImage(IplImage* img, IplImage *img_rotate,int degree)
     {
@@ -978,8 +1003,7 @@ image=(image&cv::Scalar(mask,mask,mask))+cv::Scalar(div/2,div/2,div/2);
         //变换图像，并用黑色填充其余值
         cvWarpAffine(img,img_rotate, &M,CV_INTER_LINEAR+CV_WARP_FILL_OUTLIERS,cvScalarAll(0) );
     }
-
-```
+    ```
 
 [【OpenCV】SIFT原理与源码分析：DoG尺度空间构造 - 小魏的修行路 - 博客频道 - CSDN.NET](http://blog.csdn.net/xiaowei_cqu/article/details/8067881)
 
@@ -987,20 +1011,22 @@ image=(image&cv::Scalar(mask,mask,mask))+cv::Scalar(div/2,div/2,div/2);
 
 DoG（Difference of Gaussian）
 
-高斯拉普拉斯LoG金字塔
-结合尺度空间表达和金字塔多分辨率表达，就是在使用尺度空间时使用金字塔表示，也就是计算机视觉中最有名的拉普拉斯金子塔（《The Laplacian pyramid as a compact image code》）。
-高斯拉普拉斯LoG（Laplace of Guassian）算子就是对高斯函数进行拉普拉斯变换：
+高斯拉普拉斯 LoG 金字塔结合尺度空间表达和金字塔多分辨率表达，就是在使用尺度空间
+时使用金字塔表示，也就是计算机视觉中最有名的拉普拉斯金子塔（《The Laplacian
+pyramid as a compact image code》）。高斯拉普拉斯 LoG（Laplace of Guassian）算
+子就是对高斯函数进行拉普拉斯变换：
 
 核心思想还是高斯，这个不多叙述。
 
 refs and see also
 
 -   [【OpenCV】访问Mat中每个像素的值（新） - 小魏的修行路 - 博客频道 - CSDN.NET](http://blog.csdn.net/xiaowei_cqu/article/details/19839019)
+-   [【图像处理】透视变换 Perspective Transformation - 小魏的修行路 - 博客频道 - CSDN.NET](http://blog.csdn.net/xiaowei_cqu/article/details/26471527)
+-   [【OpenCV】透视变换 Perspective Transformation（续） - 小魏的修行路 - 博客频道 - CSDN.NET](http://blog.csdn.net/xiaowei_cqu/article/details/26478135)
 
-[【图像处理】透视变换 Perspective Transformation - 小魏的修行路 - 博客频道 - CSDN.NET](http://blog.csdn.net/xiaowei_cqu/article/details/26471527)
-[【OpenCV】透视变换 Perspective Transformation（续） - 小魏的修行路 - 博客频道 - CSDN.NET](http://blog.csdn.net/xiaowei_cqu/article/details/26478135)
-
-除了getPerspectiveTransform()函数，OpenCV还提供了findHomography()的函数，不是用点来找，而是直接用透视平面来找变换公式。这个函数在特征匹配的经典例子中有用到，也非常直观
+除了 getPerspectiveTransform() 函数，OpenCV 还提供了 findHomography() 的函数，
+不是用点来找，而是直接用透视平面来找变换公式。这个函数在特征匹配的经典例子中有
+用到，也非常直观.
 
 [【数据降维】数据降维方法分类 - 小魏的修行路 - 博客频道 - CSDN.NET](http://blog.csdn.net/xiaowei_cqu/article/details/7522368)
 
@@ -1011,9 +1037,8 @@ refs and see also
     Projection,LPP）、局部切空间排列（Local Tangent Space Alignment,LTSA）、最
     大方差展开（ Maximum Variance Unfolding, MVU）
 
-
+```cpp
 cvtColor(mat,rgb,CV_BGR2RGB);
-
 QApplication::keyboardModifiers()==Qt::ShiftModifier
 QApplication::keyboardModifiers()==Qt::ControlModifier
 
@@ -1028,5 +1053,17 @@ Qt::AltModifier 0x08000000  An Alt key on the keyboard is pressed.
 Qt::MetaModifier    0x10000000  A Meta key on the keyboard is pressed.
 Qt::KeypadModifier  0x20000000  A keypad button is pressed.
 Qt::GroupSwitchModifier 0x40000000  X11 only. A Mode_switch key on the keyboard is pressed.
+event->button()==Qt::MiddleButton
+```
 
-    else if(event->button()==Qt::MiddleButton)       //{Middle button be pressed}
+```cpp
+std::ifstream file(filename.c_str(), ifstream::in);
+if (!file) {
+    string error_message = "No valid input file was given, please check the given filename.";
+    CV_Error(Error::StsBadArg, error_message);
+}
+string line;
+while (getline(file, line)) {
+    images.push_back(imread(line, 0));
+}
+```
