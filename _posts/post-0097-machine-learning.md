@@ -30,10 +30,10 @@ Machine Learning
 
 MISC Notes
 
-  - contrived example, 造的例子
+  - **contrived** example, 造的例子
   - logistic, `[lo'dʒɪstɪk]`, adj. 后勤学的；符号逻辑的
   - hessian, `['hɛʃən]`
-  - theano, thy ya noo
+  - theano, thy yah noo
 
 python notes
 
@@ -41,11 +41,11 @@ python notes
 
         ```python
         # shutil: shell util
-        import shutil # from shutil import copyfile copy, copyfile
+        import shutil               # from shutil import copyfile copy, copyfile
 
-        shutil.copyfile(src, dst)      # dst can only be a file
-        shutil.copy(src, dst)          # dst can be a dir
-        shutil.move(src, dst)          # recursive
+        shutil.copyfile(src, dst)   # dst can only be a file
+        shutil.copy(src, dst)       # dst can be a dir
+        shutil.move(src, dst)       # recursive
         ```
 
 ```
@@ -164,29 +164,29 @@ refs and see also
   - [深度学习入门必看的书和论文？有哪些必备的技能需学习？ - 深度学习（Deep Learning） - 知乎](http://www.zhihu.com/question/31785984)
   - [Reading List « Deep Learning](http://deeplearning.net/reading-list/)
 
-[如何评价rcnn、fast-rcnn和faster-rcnn这一系列方法？ - 知乎](https://www.zhihu.com/question/35887527)
+[如何评价 rcnn、fast-rcnn 和 faster-rcnn 这一系列方法？ - 知乎](https://www.zhihu.com/question/35887527)
 
-:   (res) 如何评价rcnn、fast-rcnn和faster-rcnn这一系列方法？ - 机器学习 - 知乎.pdf
+:   (res) 如何评价 rcnn、fast-rcnn 和 faster-rcnn 这一系列方法？ - 机器学习 - 知乎.pdf
 
-    提到这两个工作，不得不提到RBG大神rbg's home page，该大神在读博士的时候就因
-    为dpm获得过pascal voc的终身成就奖。博士后期间更是不断发力，RCNN和Fast- RCNN
+    提到这两个工作，不得不提到 RBG 大神 rbg's home page，该大神在读博士的时候就因
+    为 dpm 获得过 pascal voc 的终身成就奖。博士后期间更是不断发力，RCNN 和 Fast- RCNN
     就是他的典型作品。
 
-    RCNN：RCNN可以看作是RegionProposal+CNN这一框架的开山之作，在
-    imgenet/voc/mscoco上基本上所有top的方法都是这个框架，可见其影响之大。RCNN的
-    主要缺点是重复计算，后来MSRA的kaiming组的SPPNET做了相应的加速。
+    RCNN：RCNN 可以看作是 RegionProposal+CNN 这一框架的开山之作，在
+    imgenet/voc/mscoco 上基本上所有 top 的方法都是这个框架，可见其影响之大。RCNN 的
+    主要缺点是重复计算，后来 MSRA 的 kaiming 组的 SPPNET 做了相应的加速。
 
-    Fast-RCNN：RCNN的加速版本，在我看来，这不仅仅是一个加速版本，其优点还包括：
+    Fast-RCNN：RCNN 的加速版本，在我看来，这不仅仅是一个加速版本，其优点还包括：
 
-      - 首先，它提供了在caffe的框架下，如何定义自己的层/参数/结构的范例，这个范
-        例的一个重要的应用是python layer的应用，我在这里支持多label的caffe，有
+      - 首先，它提供了在 caffe 的框架下，如何定义自己的层 / 参数 / 结构的范例，这个范
+        例的一个重要的应用是 python layer 的应用，我在这里支持多 label 的 caffe，有
         比较好的实现吗？ - 孔涛的回答也提到了。
       - training and testing end-to-end 这一点很重要，为了达到这一点其定义了
-        ROIPooling层，因为有了这个，使得训练效果提升不少。
-      - 速度上的提升，因为有了Fast-RCNN，这种基于CNN
+        ROIPooling 层，因为有了这个，使得训练效果提升不少。
+      - 速度上的提升，因为有了 Fast-RCNN，这种基于 CNN
 
     的 real-time 的目标检测方法看到了希望，在工程上的实践也有了可能，后续也出现
-    了诸如Faster-RCNN/YOLO等相关工作。
+    了诸如 Faster-RCNN/YOLO 等相关工作。
 
     这个领域的脉络是：RCNN -> SPPNET -> Fast-RCNN -> Faster-RCNN。关于具体的细
     节，建议题主还是阅读相关文献吧。
@@ -197,15 +197,16 @@ refs and see also
 
     是这样的，如果都用一句话来描述
 
-    RCNN 解决的是，“为什么不用CNN做classification呢？”
-    （但是这个方法相当于过一遍network出bounding box，再过另一个出label，原文写的很不“elegant”
+    RCNN 解决的是，“为什么不用 CNN 做 classification 呢？”
+    （但是这个方法相当于过一遍 network 出 bounding box，再过另一个出 label，原文写的很不“elegant”
 
-    Fast-RCNN 解决的是，“为什么不一起输出bounding box和label呢？”
-    （但是这个时候用selective search generate regional proposal的时间实在太长了
+    Fast-RCNN 解决的是，“为什么不一起输出 bounding box 和 label 呢？”
+    （但是这个时候用 selective search generate regional proposal 的时间实在太长了
 
-    Faster-RCNN 解决的是，“为什么还要用selective search呢？”
+    Faster-RCNN 解决的是，“为什么还要用 selective search 呢？”
 
-    于是就达到了real-time。开山之作确实是开山之作，但是也是顺应了“Deep learning 搞一切vision”这一潮流吧。
+    于是就达到了 real-time。开山之作确实是开山之作，但是也是顺应了
+    “Deep learning 搞一切 vision”这一潮流吧。
 
     refs and see also
 
@@ -214,10 +215,10 @@ refs and see also
 
 [如何简单形象又有趣地讲解神经网络是什么？ - 知乎](https://www.zhihu.com/question/22553761)
 
-:   2012年多伦多大学的Krizhevsky等人构造了一个超大型卷积神经网络[1]，有9层，共
-    65万个神经元，6千万个参数。网络的输入是图片，输出是1000个类，比如小虫、美洲
+:   2012 年多伦多大学的 Krizhevsky 等人构造了一个超大型卷积神经网络 ，有 9 层，共
+    65 万个神经元，6 千万个参数。网络的输入是图片，输出是 1000 个类，比如小虫、美洲
     豹、救生船等等。这个模型的训练需要海量图片，它的分类准确率也完爆先前所有分
-    类器。纽约大学的Zeiler和Fergusi[2]把这个网络中某些神经元挑出来，把在其上响
+    类器。纽约大学的 Zeiler 和 Fergusi 把这个网络中某些神经元挑出来，把在其上响
     应特别大的那些输入图像放在一起，看它们有什么共同点。他们发现中间层的神经元
     响应了某些十分抽象的特征。
 
@@ -230,25 +231,25 @@ refs and see also
 [如何向非物理专业的同学解释重整化群？ - 知乎](https://www.zhihu.com/question/30174067)
 
 :   怎么办呢？你想了想，觉得铁球这么大，你不用把模拟搞得这么精细也能得到正确答
-    案。所以你决定把模拟用的水分子体积加10倍，这样就只要模拟10^25个分子了。但是
-    光这样搞不行，得出的结果肯定不对，因为有些纳米级的小运动造成的宏观效果没了
-    。这时你有一个学生说，老板，其实咱可以试着改改另外那4000个参数，说不定能把
-    失去的东西给补偿回来。你觉得靠谱，开动聪明的大脑想了想，心算出了每个参数需
-    要的改变。于是你用更大的分子和新的参数重新计算，精确的再现了之前得到的数据
-    。（注意，这时你已经对你的系统进行了一次 renormalization）
+    案。所以你决定把模拟用的水分子体积加 10 倍，这样就只要模拟 10^25 个分子了。
+    但是光这样搞不行，得出的结果肯定不对，因为有些纳米级的小运动造成的宏观效果
+    没了。这时你有一个学生说，老板，其实咱可以试着改改另外那 4000 个参数，说不
+    定能把失去的东西给补偿回来。你觉得靠谱，开动聪明的大脑想了想，心算出了每个
+    参数需要的改变。于是你用更大的分子和新的参数重新计算，精确的再现了之前得到
+    的数据。（注意，这时你已经对你的系统进行了一次 renormalization）
 
-    在你的nature 文章里，把为了简化计算发明的这个方法叫Renormalization group
-    (RG)。把每次模拟时水分子的大小叫做RG scale, 然后你把每次用的参数按照水分子
-    的大小列了个表，把它们在尺寸增加时的变化，叫做参数的RG running。你预见到场
-    论里的应用，把用这种方法得到的这个新模型，叫做low energy effective field
+    在你的 nature 文章里，把为了简化计算发明的这个方法叫 Renormalization group
+    (RG)。把每次模拟时水分子的大小叫做 RG scale, 然后你把每次用的参数按照水分子
+    的大小列了个表，把它们在尺寸增加时的变化，叫做参数的 RG running。你预见到场
+    论里的应用，把用这种方法得到的这个新模型，叫做 low energy effective field
     theory （EFT）.
 
-    最后，你有点惊讶的发现，当你一步步增大水分子尺寸时，本来都很关键的4000个参
-    数，有些干脆变成0了，有些参数和其它的参数成正比了。总之到最后，你只用了大概
-    10个自由参数就完美的描述了这一杯水。你把那些最后没用的参数叫irrelevant
-    parameters，把它们描述的形状/作用力叫irrelevant operator. 你把这些
-    irrelevant parameter/operator 都去掉，得到的那个精简的理论模型就叫做
-    renormalizable theory。它和你之前得到的EFT几乎是一样的。
+    最后，你有点惊讶的发现，当你一步步增大水分子尺寸时，本来都很关键的 4000 个
+    参数，有些干脆变成 0 了，有些参数和其它的参数成正比了。总之到最后，你只用了
+    大概10 个自由参数就完美的描述了这一杯水。你把那些最后没用的参数叫
+    irrelevant parameters，把它们描述的形状 / 作用力叫 irrelevant operator. 你
+    把这些irrelevant parameter/operator 都去掉，得到的那个精简的理论模型就叫做
+    renormalizable theory。它和你之前得到的 EFT 几乎是一样的。
 
     吐个槽，“重整化群”真是物理名词界的一朵奇葩，把一个本来平易近人的词翻译的不
     明觉厉。这个词英文是 renormalization group（RG）. Normalize 大家都认得，基
@@ -267,59 +268,62 @@ refs and see also
 
 [如何看待 2014 年以来计算机视觉（Computer Vision）界创业潮？ - 知乎](https://www.zhihu.com/question/31430100)
 
-:   首先，毋庸置疑，computer vision作为一个研究领域，正处在整个人工智能史上发展速度最惊人的阶段
+:   首先，毋庸置疑，computer vision 作为一个研究领域，正处在整个人工智能史上发
+    展速度最惊人的阶段. 从 research 的角度来看，这是 vision 最好的一个时代，也
+    是最坏的一个时代。
 
-    从research的角度来看，这是vision最好的一个时代，也是最坏的一个时代。
+    利益相关：我在 Cogtu，女朋友在 Linkface
 
-    利益相关：我在Cogtu，女朋友在Linkface
-
-[CNN(卷积神经网络)、RNN(循环神经网络)、DNN(深度神经网络)的内部网络结构有什么区别？ - 知乎](https://www.zhihu.com/question/34681168)
+[CNN(卷积神经网络)、RNN(循环神经网络)、DNN(深度神经网络) 的内部网络结构有什么区别？ - 知乎](https://www.zhihu.com/question/34681168)
 
 :   神经网络技术起源于上世纪五、六十年代，当时叫感知机（perceptron），拥有输入
     层、输出层和一个隐含层。输入的特征向量通过隐含层变换达到输出层，在输出层得
-    到分类结果。早期感知机的推动者是Rosenblatt。
+    到分类结果。早期感知机的推动者是 Rosenblatt。
 
-    随着数学的发展，这个缺点直到上世纪八十年代才被Rumelhart、Williams、Hinton、
-    LeCun等人（反正就是一票大牛）发明的多层感知机（multilayer perceptron）克服
-    。
+    随着数学的发展，这个缺点直到上世纪八十年代才被 Rumelhart、Williams、Hinton、
+    LeCun 等人（反正就是一票大牛）发明的多层感知机（multilayer perceptron）克服。
 
-    多层感知机可以摆脱早期离散传输函数的束缚，使用sigmoid或tanh等连续函数模拟神
-    经元对激励的响应，在训练算法上则使用Werbos发明的反向传播BP算法。对，这货就
-    是我们现在所说的神经网络NN——神经网络听起来不知道比感知机高端到哪里去了！这
-    再次告诉我们起一个好听的名字对于研（zhuang）究（bi）很重要！
+    多层感知机可以摆脱早期离散传输函数的束缚，使用 sigmoid 或 tanh 等连续函数模
+    拟神经元对激励的响应，在训练算法上则使用 Werbos 发明的反向传播 BP 算法。对
+    ，这货就是我们现在所说的神经网络 NN——神经网络听起来不知道比感知机高端到哪里
+    去了！这再次告诉我们起一个好听的名字对于研（zhuang）究（bi）很重要！
 
     多层感知机给我们带来的启示是，神经网络的层数直接决定了它对现实的刻画能力——
-    利用每层更少的神经元拟合更加复杂的函数[1]。（Bengio如是说：functions that
+    利用每层更少的神经元拟合更加复杂的函数。（Bengio 如是说：functions that
     can be compactly represented by a depth k architecture might require an
     exponential number of computational elements to be represented by a depth k
     − 1 architecture.）
 
     随着神经网络层数的加深，优化函数越来越容易陷入局部最优解
 
-    <span title="具体来说，我们常常使用sigmoid作为神经元的输入输出函数。对于幅度为1的信号，在BP反向传播梯度时，每传递一层，梯度衰减为原来的0.25。层数一多，梯度指数衰减后低层基本上接受不到有效的训练信号。">“梯度消失”现象更加严重。</span>
+    “梯度消失”现象更加严重。
 
-    2006年，Hinton利用预训练方法缓解了局部最优解问题，将隐含层推动到了7层，
+    具体来说，我们常常使用sigmoid作为神经元的输入输出函数。对于幅度为1的信号，
+    在BP反向传播梯度时，每传递一层，梯度衰减为原来的0.25。层数一多，梯度指数衰
+    减后低层基本上接受不到有效的训练信号。
+
+    2006 年，Hinton 利用预训练方法缓解了局部最优解问题，将隐含层推动到了 7 层，
     神经网络真正意义上有了“深度”，由此揭开了深度学习的热潮。这里的“深度”并没有
-    固定的定义——在语音识别中4层网络就能够被认为是“较深的”，而在图像识别中20层以
-    上的网络屡见不鲜。为了克服梯度消失，ReLU、maxout等传输函数代替了sigmoid，形
-    成了如今DNN的基本形式。单从结构上来说，全连接的DNN和图1的多层感知机是没有任
-    何区别的
+    固定的定义——在语音识别中 4 层网络就能够被认为是“较深的”，而在图像识别中 20
+    层以上的网络屡见不鲜。为了克服梯度消失，ReLU、maxout 等传输函数代替了
+    sigmoid，形成了如今 DNN 的基本形式。单从结构上来说，全连接的 DNN 和图 1 的
+    多层感知机是没有任何区别的.
 
     - 高速公路网络（highway network）和
     - 深度残差学习（deep residual learning）
 
-    全连接DNN的结构里下层神经元和所有上层神经元都能够形成连接，带来的潜在问题是
+    全连接 DNN 的结构里下层神经元和所有上层神经元都能够形成连接，带来的潜在问题是
     参数数量的膨胀。
 
-    事实上，不论是那种网络，他们在实际应用中常常都混合着使用，比如CNN和RNN在上
-    层输出之前往往会接上全连接层，很难说某个网络到底属于哪个类别。不难想象随着
-    深度学习热度的延续，更灵活的组合方式、更多的网络结构将被发展出来。尽管看起
-    来千变万化，但研究者们的出发点肯定都是为了解决特定的问题。题主如果想进行这
-    方面的研究，不妨仔细分析一下这些结构各自的特点以及它们达成目标的手段。
+    事实上，不论是那种网络，他们在实际应用中常常都混合着使用，比如 CNN 和 RNN
+    在上层输出之前往往会接上全连接层，很难说某个网络到底属于哪个类别。不难想象
+    随着深度学习热度的延续，更灵活的组合方式、更多的网络结构将被发展出来。尽管
+    看起来千变万化，但研究者们的出发点肯定都是为了解决特定的问题。题主如果想进
+    行这方面的研究，不妨仔细分析一下这些结构各自的特点以及它们达成目标的手段。
 
     入门的话可以参考：
 
-      - Ng写的Ufldl：UFLDL教程 - Ufldl, 也可以看
+      - Ng 写的 Ufldl：UFLDL 教程 - Ufldl, 也可以看
       - Theano 内自带的教程，例子非常具体：Deep Learning Tutorials
 
     1、[Unsupervised Feature Learning and Deep Learning Tutorial](http://deeplearning.stanford.edu/tutorial/)
@@ -336,14 +340,14 @@ refs and see also
 
     2、[Deep Learning Tutorials — DeepLearning 0.1 documentation](http://deeplearning.net/tutorial/)
 
-    :   这是一个开源的深度学习工具包，里面有很多深度学习模型的python代码还有一
+    :   这是一个开源的深度学习工具包，里面有很多深度学习模型的 python 代码还有一
         些对模型以及代码细节的解释。我觉得学习深度学习光了解模型是不难的，难点
         在于把模型落地写成代码，因为里面会有很多细节只有动手写了代码才会了解。
-        但Theano也有缺点，就是极其难以调试，以至于我后来就算自己动手写几百行的
-        代码也不愿意再用它的工具包。所以我觉得Theano的正确用法还是在于看里面解
-        释的文字，不要害怕英文，这是必经之路。PS：推荐使用python语言，目前来看
-        比较主流。（更新：自己写坑实在太多了，CUDA也不知道怎么用，还是乖乖用
-        theano吧...）
+        但 Theano 也有缺点，就是极其难以调试，以至于我后来就算自己动手写几百行的
+        代码也不愿意再用它的工具包。所以我觉得 Theano 的正确用法还是在于看里面解
+        释的文字，不要害怕英文，这是必经之路。PS：推荐使用 python 语言，目前来看
+        比较主流。（更新：自己写坑实在太多了，CUDA 也不知道怎么用，还是乖乖用
+        theano 吧...）
 
     3、[Stanford University CS231n: Convolutional Neural Networks for Visual Recognition](http://vision.stanford.edu/teaching/cs231n/)
 
@@ -360,16 +364,16 @@ refs and see also
         习机器学习的人都应该看一下，我甚至在某公司的招聘要求上看到过：认真看过
         并深入研究过Andrew Ng的机器学习课程，由此可见其重要性。
 
-[有哪些LSTM(Long Short Term Memory)和RNN(Recurrent)网络的教程？ - 知乎](https://www.zhihu.com/question/29411132)
+[有哪些 LSTM(Long Short Term Memory) 和 RNN(Recurrent) 网络的教程？ - 知乎](https://www.zhihu.com/question/29411132)
 
 :   先给出一个最快的了解+上手的教程：
 
-    直接看theano官网的LSTM教程+代码：[LSTM Networks for Sentiment Analysis — DeepLearning 0.1 documentation](http://deeplearning.net/tutorial/lstm.html)
-    但是，前提是你有RNN的基础，因为LSTM本身不是一个完整的模型，LSTM是对RNN隐含
-    层的改进。一般所称的LSTM网络全叫全了应该是使用LSTM单元的RNN网络。教程就给了
-    个LSTM的图，它只是RNN框架中的一部分，如果你不知道RNN估计看不懂。比较好的是
+    直接看 theano 官网的 LSTM 教程 + 代码：[LSTM Networks for Sentiment Analysis — DeepLearning 0.1 documentation](http://deeplearning.net/tutorial/lstm.html)
+    但是，前提是你有 RNN 的基础，因为 LSTM 本身不是一个完整的模型，LSTM 是对 RNN 隐含
+    层的改进。一般所称的 LSTM 网络全叫全了应该是使用 LSTM 单元的 RNN 网络。教程就给了
+    个 LSTM 的图，它只是 RNN 框架中的一部分，如果你不知道 RNN 估计看不懂。比较好的是
     ，你只需要了解前馈过程，你都不需要自己求导就能写代码使用了。补充，今天刚发
-    现一个中文的博客：[LSTM简介以及数学推导(FULL BPTT) - 天道酬勤，做一个务实的理想主义者 - 博客频道 - CSDN.NET](http://blog.csdn.net/a635661820/article/details/45390671)
+    现一个中文的博客：[LSTM 简介以及数学推导 (FULL BPTT) - 天道酬勤，做一个务实的理想主义者 - 博客频道 - CSDN.NET](http://blog.csdn.net/a635661820/article/details/45390671)
     不过，稍微深入下去还是得老老实实的好好学，下面是我认为比较好的
 
     完整LSTM学习流程：
@@ -927,7 +931,7 @@ Sammary
 
             *   Logistic Function
 
-                erf, g(x) = 1/(1+e^(-x)) = (1+tanh(x/2))/2
+                **erf, g(x) = 1/(1+e^(-x)) = (1+tanh(x/2))/2**
 
                 ```python
                 >>> import theano
@@ -985,9 +989,9 @@ Sammary
 
                 ```python
                 >>> from theano import shared
-                >>> state = shared(0)   # shared value, like `static' in c?
+                >>> state = shared(0)           # shared value, like `static' in c?
                 >>> inc = T.iscalar('inc')
-                #                           return cur state
+                #                               return cur state
                 >>> accumulator = function([inc], state, updates=[(state, state+inc)])
 
                     # get
@@ -1067,7 +1071,12 @@ Sammary
 
             *   A Real Example: Logistic Regression
 
-                -   `numpy.random.randint(low, high=None, size=None)`, descrete uniform distrib, `[low, high)`
+                先看看 numpy 提供的一些 rand 函数：
+
+                -   `numpy.random.rand(d0, d1, ..., dn)`, uniform distribubition, `[0, 1)`
+
+                -   `numpy.random.randint(low, high=None, size=None)`,
+                    descrete uniform distrib, `[low, high)`
 
                     ```python
                     >>> np.random.randint(2, size=10)
@@ -1089,7 +1098,9 @@ Sammary
 
                     可能因为这个接口太恶心……下面的代码用的是 `low=..., high=...`.
 
-                -   `numpy.random.randn(d0, d1, ..., dn)`, normal distrib, dims: d0, d1, ..., dn
+                -   `numpy.random.randn(d0, d1, ..., dn)`, normal distrib,
+                    正态分布，返回多维数组。
+                    **dims: d0, d1, ..., dn**.
 
 
                     ```python
@@ -1102,7 +1113,9 @@ Sammary
                            [ 0.39924804,  4.68456316,  4.99394529,  4.84057254]]) #random
                     ```
 
-                -   `numpy.random.rand(d0, d1, ..., dn)`, uniform distribubition, `[0, 1)`
+                w.r.t.
+                  - with respect to
+                  - with regard to
 
                 ```python
                 import numpy
@@ -1143,13 +1156,17 @@ Sammary
                 # Construct Theano expression graph
                 p_1 = 1 / (1 + T.exp(-T.dot(x, w) - b))   # Probability that target = 1
                 prediction = p_1 > 0.5                    # The prediction thresholded
-                xent = -y * T.log(p_1) - (1-y) * T.log(1-p_1) # Cross-entropy loss function
-                cost = xent.mean() + 0.01 * (w ** 2).sum()# The cost to minimize
+
+                # Cross-entropy loss function
+                xent = -y * T.log(p_1) - (1-y) * T.log(1-p_1)
+                # The cost to minimize
+                cost = xent.mean() + 0.01 * (w ** 2).sum()
                 gw, gb = T.grad(cost, [w, b])             # Compute the gradient of the cost
-                                                          # w.r.t weight vector w and
-                                                          # bias term b
-                                                          # (we shall return to this in a
-                                                          # following section of this tutorial)
+
+                # w.r.t weight vector w and
+                # bias term b
+                # (we shall return to this in a
+                # following section of this tutorial)
 
                 #                                                    「train 函数」
                 train = theano.function(
@@ -1166,20 +1183,19 @@ Sammary
 
                 # Train
                 for i in range(training_steps):     # loop 10000 times
-                    pred, err = train(D[0], D[1])   # 数据集，样本: D[0], label: D[1]
+                    pred, err = train(D, D)   # 数据集，样本: D, label: D
 
                 print("Final model:")
                 print(w.get_value())
                 print(b.get_value())
                 print("target values for D:")
-                print(D[1])
+                print(D)
                 print("prediction on D:")
-                print(predict(D[0]))
+                print(predict(D))
                 ```
 
-                `updates` (iterable over pairs (shared_variable,
-                new_expression). List, tuple or dict.) – expressions for new
-                SharedVariable values
+                `updates` (iterable over pairs `(shared_variable, new_expression)`.
+                List, tuple or dict.) – expressions for new SharedVariable values.
 
                 refs and see also
 
@@ -1217,7 +1233,7 @@ Sammary
                        [ 0.19661193,  0.10499359]])
                 ```
 
-            *   Computing the Jacobian
+            *   Computing the Jacobian ??
 
                 ```python
                 >>> import theano
@@ -1225,7 +1241,7 @@ Sammary
                 >>> x = T.dvector('x')
                 >>> y = x ** 2
                 >>> J, updates = theano.scan( lambda i, y,x : T.grad(y[i], x),
-                                              sequences=T.arange(y.shape[0]),
+                                              sequences=T.arange(y.shape),
                                               non_sequences=[y,x] )
 
                     # scan automatically concatenates all these rows, generating a
@@ -1237,8 +1253,10 @@ Sammary
                        [ 0.,  8.]])
                 ```
 
-
             *   Computing the Hessian
+
+                The Hessian matrix can be considered related to the Jacobian
+                matrix by $H(f)(x)=J(∇f)(x)H(f)(x)=J(∇f)(x)$.
 
                 ```python
                 >>> x = T.dvector('x')
@@ -1246,7 +1264,7 @@ Sammary
                 >>> cost = y.sum()
                 >>> gy = T.grad(cost, x)
                 >>> H, updates = theano.scan( lambda i, gy,x : T.grad(gy[i], x),
-                                              sequences=T.arange(gy.shape[0]),
+                                              sequences=T.arange(gy.shape),
                                               non_sequences=[gy, x] )
                 >>> f = theano.function([x], H, updates=updates)
                 >>> f([4, 4])
@@ -1298,6 +1316,8 @@ Sammary
                     be v \frac{\partial f(x)}{\partial x}. The L-operator is also
                     supported for generic tensors (not only for vectors).
                     Similarly, it can be implemented as follows:
+
+                    similitude, `[sɪ'mɪlɪtju:d]`, n.相似；类似；相仿
 
                     ```python
                     >>> W = T.dmatrix('W')
@@ -1410,7 +1430,9 @@ Sammary
 
                 examples
 
-                -   Scan Example: Computing the sequence x(t) = tanh(x(t - 1).dot(W) + y(t).dot(U) + p(T - t).dot(V))
+                -   Scan Example:
+
+                    **Computing the sequence x(t) = tanh(x(t - 1).dot(W) + y(t).dot(U) + p(T - t).dot(V))**
 
                     ```python
                     import theano
@@ -1432,7 +1454,7 @@ Sammary
 
                     # test values
                     x = np.zeros((2), dtype=theano.config.floatX)
-                    x[1] = 1
+                    x = 1
                     w = np.ones((2, 2), dtype=theano.config.floatX)
                     y = np.ones((5, 2), dtype=theano.config.floatX)
                     y[0, :] = -3
@@ -1445,7 +1467,7 @@ Sammary
 
                     # comparison with numpy
                     x_res = np.zeros((5, 2), dtype=theano.config.floatX)
-                    x_res[0] = np.tanh(x.dot(w) + y[0].dot(u) + p[4].dot(v))
+                    x_res = np.tanh(x.dot(w) + y.dot(u) + p.dot(v))
                     for i in range(1, 5):
                         x_res[i] = np.tanh(x_res[i - 1].dot(w) + y[i].dot(u) + p[4-i].dot(v))
                     print(x_res)
@@ -1537,28 +1559,6 @@ Sammary
                 set of filters. The implementation is modelled after
                 Convolutional Neural Networks (CNN). It is simply a wrapper to
                 the ConvOp but provides a much cleaner interface.
-
-                [Convolution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Convolution)
-
-                :   The convolution of f and g is written f∗g, using an
-                    asterisk or star. It is defined as the integral of the
-                    product of the two functions after one is reversed and
-                    shifted. As such, it is a particular kind of integral
-                    transform:
-
-                    $$
-                    \begin{align}
-                    (f * g )(t)\ \ \, &\stackrel{\mathrm{def}}{=}\ \int_{-\infty}^\infty f(\tau)\, g(t - \tau)\, d\tau \\
-                                      &= \int_{-\infty}^\infty f(t-\tau)\, g(\tau)\, d\tau.
-                    \end{align}
-                    $$
-
-                    While the symbol t is used above, it need not represent the
-                    time domain. But in that context, the convolution formula
-                    can be described as a weighted average of the function f(τ)
-                    at the moment t where the weighting is given by g(−τ)
-                    simply shifted by amount t. As t changes, the weighting
-                    function emphasizes different parts of the input function.
 
                 **2**
 

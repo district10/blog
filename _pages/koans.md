@@ -13,10 +13,6 @@ before-after:
 Koans | 呓语[^why-koan]
 =======================
 
-## `1464186510`{.tzx-timestamp} 字体倒是很好看
-
-``
-
 ## `1464024935`{.tzx-timestamp}
 
 |   「你这个奇葩」这句话应该怎么翻译？
@@ -602,6 +598,10 @@ TDD 的世界观就跟概率论的世界观很
 接近：*我不管你是什么。只要你感觉上像是个什么，我就认为你是什么。*
 
 大多数的 OJ 都是用 test 来判断你的程序对不对。代码怎么写无所谓，通过了才算数。
+
+在类型系统里，duck type 这个说法的来源也和这个观点不谋而合：
+
+> If it walks like a duck, and quacks like a duck, then it is a duck.
 
 ## `1459045740`{.tzx-timestamp} 模型转化
 

@@ -255,7 +255,6 @@ a[href^="http://"]:not([href*="mydomain.com"]):before{ }
 a:after { color: lightgray; font-size: 60%; }
 
 a[href*="wikipedia.org"]:after          { content: "「維」"; }
-// a[href*="github.com"]:after             { content: "「基」"; }
 a[href*="github.com"]:after             { content: "「GitHub」"; }
 a[href*="douban.com"]:after             { content: "「豆」" }
 a[href^="mailto:"]:after                { content: "「邮」"; }
@@ -273,7 +272,6 @@ h3:before, h3:after,
 h4:before, h4:after,
 h5:before, h5:after,
 h6:before, h6:after  {
-    // rgba(157, 220, 255, 0.8); // #9ddcff;
     color: #9ddcff;
 }
 
@@ -291,9 +289,9 @@ h4:after  { content: "  ////"; }
 h5:after  { content: " /////"; }
 h6:after  { content: "//////"; }
 
-h1.title { display: none; }
-h2.author { display: none; }
-h3.date { display: none; }
+h1.title    { display: none; }
+h2.author   { display: none; }
+h3.date     { display: none; }
 
 div.slogan {
     margin-top:  50px;
@@ -862,6 +860,7 @@ table {
 #navigator a:hover  { border-bottom: none; }
 #navigator a        { color: #887ddd; }
 
-.banner {
+.banner, .banner * {
     font-family: 'Calibri','PT Sans', sans-serif;
+    font-size: 64px;
 }

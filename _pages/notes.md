@@ -19,6 +19,2270 @@ tags:
 Notes | 笔记[^1]
 ================
 
+[css3 - How to set Bullet colors in UL/LI html lists via CSS without using any images or span tags - Stack Overflow](http://stackoverflow.com/questions/5306640/how-to-set-bullet-colors-in-ul-li-html-lists-via-css-without-using-any-images-or)
+
+:   ```css
+    ul {
+        list-style: none;
+        padding:0;
+        margin:0;
+    }
+
+    li {
+        padding-left: 1em;
+        text-indent: -.7em;
+    }
+
+    li:before {
+        content: "• ";
+        color: red; /* or whatever color you prefer */
+    }
+    ```
+
+    ```css
+    ul { list-style: none; }
+    ul li { list-style: none; }
+    li:before {
+        content: "\f105";
+        font-family: FontAwesome;
+        color: red;
+        padding-right: 1em;
+        display: inline-block;
+    }
+    ```
+
+    refs and see also
+
+      - [Font Awesome Cheatsheet](http://fontawesome.io/cheatsheet/)
+      - [Patternify | A CSS Pattern Generator](http://www.patternify.com/)
+
+[Penrose triangle - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Penrose_triangle)
+
+:   The Penrose triangle, also known as the Penrose tribar, or the impossible
+    tribar, is an impossible object. It was first created by the Swedish
+    artist Oscar Reutersvärd in 1934. The psychologist Lionel Penrose and his
+    mathematician son Roger Penrose independently devised and popularised it in
+    the 1950s, describing it as "impossibility in its purest form". It is
+    featured prominently in the works of artist M. C. Escher, whose earlier
+    depictions of impossible objects partly inspired it.
+
+    ![The Penrose triangle](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Penrose-dreieck.svg/288px-Penrose-dreieck.svg.png)
+
+    ![Impossible triangle sculpture as an optical illusion, East Perth, Western
+        Australia](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Perth_Impossible_Triangle.jpg/750px-Perth_Impossible_Triangle.jpg)
+
+[在男女交往中，女方说什么话或做什么事，会让男生瞬间倒胃口，失去或降低与她发展的兴趣？ - 恋爱 - 知乎](http://www.zhihu.com/question/21162085)
+
+:   -   看书？太多字了，好累的。我还是看电视剧吧。
+    -   这电影好闷啊，怎么一分钟了都没人说话？不如我们俩说说话呗。
+    -   你喜欢音乐啊，嗯，我也喜欢，不过主要听轻音乐，你听的这些好吵啊！
+    -   在街上，她，突然，用力地吐了口痰......
+    -   虚伪
+    -   很烦，很愁，很心焦，很郁闷，每次聊天都是这样的负面情绪，还试图去感染你，简直想逃跑啊
+    -   口中随便一句话能追着不放跟你闹别扭的
+    -   人生支柱是：美甲、发型、购物、自拍。对其他事情没有一点兴趣。
+    -   撒谎，不断地、习惯性的谎话。
+    -   任何犯错都推给自己的性别因素，不论是迟到、不守承诺、不讲道理、不买单等。我是女的，你就得让我、原谅我，或者不用做 XXX。
+    -   过分重视外表（抹各种化学物质就算了，还老是谋划在自己的脸上动刀）。
+    -   过多的抱怨以及负面情绪，或者特别自我。
+    -   心情大过承诺。承诺了某事，却因为临时心情不好就没有任何理由和通知的理所当然毁约。虽然社会对男生信守诺言的期待会更高，但女孩子这样子对待承诺，要人怎么相信你在婚后真的会不论贫穷或者疾病都会不离不弃？
+    -   发现素质不在一个水平的时候……特指文明道德方面。
+    -   呵呵
+    -   用到你时才找你，且根本不在乎时间时机是否合适。
+    -   我抽烟、喝酒、纹身、说脏话，但我是个好女孩。(不知道哪个脑袋被门夹的人写出来的话。)
+
+    这段话是我看着此人最贱的言论之一
+
+    > 女孩干嘛要攒钱？女孩是不需要攒钱的。女人年轻时最好的投资，就是把钱花自己身上
+    > ，去旅游去护肤去享受，让自己在最好年华里爆发最好的光彩。你对自己好，别人才会
+    > 对你好，事业家庭爱情才会出色。女人只有在青春逝去后才需要攒钱，等到老了，你就
+    > 是一个曾经最美过，现在又最有钱的老太太了。
+
+    他奶奶的美女这样挥霍光最后可以找有钱老头买单，没姿色不去读书不去提高光知道挥霍吓走男友然后回家啃老？老了去攒钱？？老了再去攒钱就来不及了好不好。
+
+    另外在我的狭隘人生观里面 你做事情动机必须要单纯
+
+    对女人说我想和你认真谈恋爱，我想娶你，实际只为打炮就走的男人我很鄙视。
+
+    直接说你无聊我也无聊不讨厌的话我们今天找个酒店搞一搞那种人倒是纯爷们。
+
+    陆琪和郭敬明还有凤姐其实都是一类人。
+    他们自己拿出来卖的东西，他们一个字也不信。
+
+    他们只是在消费无知盲众群体的智商，就像中世纪天主教的教皇。
+
+结果我一登台，仿佛真的看到她脑袋上掉下了三根竖线。
+
+Yesterday you said tomorrow. Just do it.
+
+It's a beautiful day,and I can't see it
+
+|   一位骑车去陕北的大哥给我讲的。
+|   他并不是带着一身昂贵周全的装备，体魄健壮，玩味人生的那一类驴友。
+|   他只有一条腿，胡子拉碴，没钱没家，郁郁寡欢，车也是几百块普通的轻便车。
+|
+|   他独自骑行，一路下来心里孤独苍凉，跋涉到一个村庄时正是黑夜，却又下起了雪。
+|
+|   一个穿着厚厚的棉袄，农妇模样的女人，倚靠在一座土屋门前向他招揽生意。她说：
+|
+|   >   大哥，热酒热炕热身子啊～
+
+有个故事叫叶公好龙。 重口味基本上都是这么回事。
+
+[Think different. - Original Ad](http://www.thecrazyones.it/spot-en.html#)
+
+:   ```tzx-bigquote
+    Here's to the crazy ones.
+    The misfits.
+    The rebels.
+    The troublemakers.
+    The round pegs in the square holes.
+
+    The ones who see things differently.
+
+    They're not fond of rules.
+    And they have no respect for the status quo.
+
+    You can quote them, disagree with them,
+    glorify or vilify them.
+    About the only thing you can't do is ignore them.
+
+    Because they change things.
+
+    They push the human race forward.
+
+    While some may see them as the crazy ones,
+    we see genius.
+
+    Because the people who are crazy enough to think
+    they can change the world, are the ones who do.
+    ```
+
+    [最棒的征兵广告_土豆_高清视频在线观看](http://www.tudou.com/programs/view/nMwXpcXrOZ0/?FR=LIAN)
+
+    :   |   If you are, you breathe.
+        |   If you breath, you talk.
+        |   If you talk, you ask.
+        |   If you ask, you think.
+        |   If you think, you search.
+        |   If you search, you experience.
+        |   If you experience, you learn.
+        |   If you learn, you grow.
+        |   If you grow, you wish.
+        |   If you wish, you find, and if you find, you doubt.
+        |   If you doubt, you question.
+        |   If you question, you understand, and if you understand, you know.
+        |   If you know, you want to know more.
+        |   If you want to know more, you are alive.
+
+[域名 - 简书](http://www.jianshu.com/p/865614642b0a)
+
+:   帽子说：傻！你们程序员再过几年就是年薪百万，全中国的人民都在创业，没技术没资金
+    别的啥也干不了，也就能买个域名请个程序员开网络公司。中国还需要几个程序员？1亿！
+    将来最有前途的行业，一个是程序员，一个是办公室二手桌椅倒卖。
+
+    |   但是，即使你现在就杀了我
+    |   即使你把我的尸体扔进粪池
+    |   我也不会告诉你为什么热爱振鼎鸡
+    |
+    |   因为你不配知道呀
+    |
+    |   ...
+    |
+    |   南汇区已经没有了
+    |   可是
+    |   南汇还是南汇
+    |   浦东还是浦东
+    |   你的童年还是你的童年
+    |   我的童年还是我的童年
+    |   你从来不打架从来听老师的话
+    |   我从来写检讨书带着刀子上学
+    |   振鼎鸡从来没在南汇开过分店
+    |   南汇人说：什么振鼎鸡呀，不就是
+    |   俺们南汇的白斩三黄鸡么
+
+    |   路上花开了，你慢慢回家吧
+    |   从大渡河走到南汇嘴
+    |   挺远的
+    |   你抄写的佛经
+    |   我扔在陆宝寺院
+    |   从此陆宝改名叫七宝
+
+    每天我都要摸黑起床，早早上学，走过河边，田埂，水沟，小桥。我会一个人蹲在水
+    沟，看螃蟹在水底踱步，看虾缓缓挥舞它的钳子，看花斑鱼在水藻穿行，看水藻在沟
+    渠扭来扭去。
+
+    有一条蛇被我们狠狠抽打，奄奄一息，被细绳绑住脖子，拖着满村游行。我忽然感到
+    不忍，很想救下它放生，又怕被人耻笑。后来我看到一个偷东西的傻子，绑在电线杆
+    上，被村民用扁担狠揍。这时候我想起了那条蛇，鼻子发酸，悄悄躲起来掉了眼泪。
+
+    若是独自一人，我会把抓到的麻雀养在笼子里，或者放生。可是当我在人群中间，我
+    只能看他们烹调麻雀，还得跟他们一起吃。
+
+    听说西天取经的唐三藏，有一个徒弟，跟公主恋爱，被当街腰斩。我希望这两截尸体
+    ，能跟蚯蚓一样，各自长全，变成2个活生生的和尚，一个陪唐僧念经，一个跟公主偷
+    欢。
+
+    《今日头条》这样的媒体，原来有这样的纯广告专栏【却没有依照《广告法》注明是
+    广告】，更是让我惊讶。
+
+    文案是一个常见的职业。我就有好几个以写文案为朋友职业的朋友。有些人创造了美
+    好的文案，比如一位诗人给盲眼乞丐写的“春天到了，可是我看不见。”写作是一件美
+    好的事，文案更得创造美的文字，而不是写一堆让人一看就恶心的垃圾——除非你跟雇
+    主有仇。而这位叫撞撞胆的乐视文案，怎么看都像是故意来糟蹋乐视形象的无间道。
+
+    对一群挑剔的发烧友推荐 49 元的耳机，无论是小米活塞还是乐视反戴，只会被视为笑
+    话，正如在巴黎上流社交圈的酒宴上讨论保安工作服和六五式军装到底哪个更帅气。
+    其实对一条 49 元的耳机，我们首先要求它工作可靠，线要结实，接触良好，两边的声
+    音不要一大一小，随便揣裤兜里不容易损坏——大多数的耳机，甚至连这基本要求都做
+    不到。
+
+    “您觉得您成功吗？”
+
+    “如果你惦记成功，还看得见一路的风景么？”
+
+    晚上，我们坐在枇杷树下。这是法租界内的庄十三咖啡屋。几位简书网友散乱地围着
+    院子里的大桌子。来自台湾的老板娘傲气地坐在最里面，旁若无人地写她的无聊小说
+    。脚边有落下的枇杷叶，有东走西窜的猫，有秋天的风。
+
+    二十年后，你的孩子在抽屉角落找到一个古旧的手机，或许是苹果 6，或许是小米 4，
+    或者华为 mate7，他给它充电，好奇地打开一个叫简书的 APP，如同打开一张神秘的藏
+    宝地图，期待奇迹的出现。
+
+    而那个 APP，是你今天在这里下载安装的：
+
+    <http://www.jianshu.com/ui?t=rHypHw>
+
+    饱先生如果来我的小县城，我可以让先生来我家歇歇。我想这就是这款 APP 的意义所在
+    吧。谁也不喜欢自己不欣赏的陌生人进自己家门。
+
+    ---
+
+    老乡，参加红军可以分到土地。
+
+    【好文案的标准】一日，与某传销公司老总吃饭，他说传销公司面对的受众大都是
+    教育程度较低的人群，所以切忌文案复杂，只需抓住四点：
+    **称呼亲切，文字简单，落款严肃，充满诱惑**。 （via 延庆果园园主）
+
+    唯有美食与爱不可辜负
+
+    小饼如嚼月，中有酥与饴 （又至中秋了，这句很美）
+
+    refs and see also
+
+      - [振鼎鸡 - 简书](http://www.jianshu.com/p/e01bda651285)
+      - [童年杂忆 - 简书](http://www.jianshu.com/p/bbaff21025ab)
+      - [一个有故事的地方，一群有故事的人 - 简书](http://www.jianshu.com/p/3356ec1922ce)
+      - [目前你看到过或听过的最喜欢或者认为最好的文案是什么？ - 调查类问题 - 知乎](http://www.zhihu.com/question/19920113)
+
+HTTP - The Definitive Guide
+
+:   -   MIME, URIs, URLs, URNs
+
+    -   Transactions: GET, PUT, DELETE, POST, HEAD
+
+    -   Status code
+
+    -   Request/Response Messages:
+
+        +   Start line
+        +   Header
+            *   Content-type header
+            *   Content-length header
+        +   Body(optional, <an empty line(CRLF)> + <body>)
+
+    -   Connections:
+
+        +   TCP/IP
+        +   Connections, IP address, and Port Numbers
+
+    -   Protocol Versions: 0.9, 1.0, 1.0+, 1.1, 2.0(HTTP-NG)
+
+    -   Architechtural Components of the Web
+
+        +   Proxies
+        +   Caches(Web cache, or caching proxy)
+        +   Gateways
+        +   Tunnels
+        +   Agents(Web browsers, etc)
+
+    -   Scheme(how), Host(where), Path(what)
+
+        ```xml
+        [<scheme>://][<user>[:<password>]@]<host>[:<port>][/<path>][;<params>][?<query>][#<frag>]
+        ```
+
+    -   Params(Parameters), name/value pairs.
+
+    -   Base URLs: `<BASE>` HTML tag. Converting relative to absolute URLs
+
+    -   Expandomatic URLs
+
+        +   Hostname expansion(`www.` `.com`, etc)
+        +   History expansion
+
+    -   Shady Characters
+
+    -   Points:
+
+        +   Transactional direction: inbound, outbound
+        +   Messages flow: upstream, downstream
+        +   Messages syntax
+
+    -   Request message
+
+        ```xml
+        <method> <request-URL> <version>
+        <headers>
+
+        <entity-body>
+        ```
+
+    -   Response message
+
+        ```xml
+        <version> <status-code> <reason-phrase>
+        <headers>
+
+        <entity-body>
+        ```
+
+        +   version 2.22 > 2.3
+        +   Header continuation lines
+        +   Method: GET, PUT, POST, TRACE, OPTIONS, DELETE
+        +   UA(User Agent): UA-OS, UA-CPU, etc.
+        +   Headers
+            *   General headers: Date: Tue, 3 Oct 1974 02:16:00 GMT
+            *   Request headers: Accept: */*
+            *   Accept headers
+            *   Conditional request headers
+            *   Request security headers
+            *   Proxy request headers
+        +   Response headers: Server: Tiki-Hut/1.0
+        +   Entity headers: Content-Type: text/html; charset=iso-latin-1
+        +   Content headers
+        +   Entity caching headers
+        +   Extension headers:
+
+        refs and see also
+
+        -   http://www.w3.org/Protocols/
+
+    -   TCP Reliable Data Pipes
+
+        TCP Streams Are Segmented and Shipped by IP Packets
+
+        Keeping TCP Connections Straight
+
+        A TCP connection
+
+        +   `<source-IP-address, source-port, destination-IP-address, destination-port>`
+        +   Programming with TCP Sockets
+            *   s = socket(<parameters>): Creates a new, unnamed, unattached socket.
+            *   bind(s, <local IP:port>): Assigns a local port number and interface to the socket.
+
+        TCP Performance Considerations
+
+        +   HTTP Transaction Delays
+        +   Performance Focus Areas
+        +   Delayed Acknowledgments
+        +   TCP Slow Start
+        +   Nagle’s Algorithm and TCP_NODELAY
+        +   TIME_WAIT Accumulation and Port Exhaustion
+        +   Serial Transaction Delays
+
+        Parallel Connections
+
+        +   Parallel Connections May Make Pages Load Faster
+        +   Parallel Connections Are Not Always Faster
+        +   Parallel Connections May “Feel” Faster
+
+        Persistent Connections
+
+        Persistent Versus Parallel Connections
+
+        HTTP/1.0+ Keep-Alive Connections
+
+        +   Keep-Alive Operation
+        +   Keep-Alive and Dumb Proxies
+        +   The Connection header and blind relays
+        +   Proxies and hop-by-hop headers
+
+        The Proxy-Connection Hack
+
+        +   HTTP/1.1 Persistent Connections
+        +   Pipelined Connections
+
+        The Mysteries of Connection Close
+
+        +   “At Will” Disconnection
+        +   Content-Length and Truncation
+        +   Connection Close Tolerance, Retries, and Idempotency
+        +   Graceful Connection Close
+
+        refs and see also
+
+          - <http://www.w3.org/Protocols/HTTP/Performance/>
+          - <http://www.acm.org/sigcomm/ccr/archive/2001/jan01/ccr-200101-mogul.pdf>
+
+        Web Server Implementations: HTTP, TCP
+
+        General-Purpose Software Web Servers
+
+        Web Server Appliances
+
+        Embedded Web Servers
+
+        What Real Web Servers Do
+
+        + Step 1: Accepting Client Connections
+            *   Handling New Connections
+            *   Client Hostname Identification (reverse DNS)
+            *   Determining the Client User Through ident
+        + Step 2: Receiving Request Messages
+            *   Internal Representations of Messages
+            *   Connection Input/Output Processing Architectures
+        + Step 3: Processing Requests
+        + Step 4: Mapping and Accessing Resources
+            *   Docroots (document root)
+            *   Directory Listings
+            *   Dynamic Content Resource Mapping
+            *   Server-Side Includes (SSI)
+            *   Access Controls
+        + Step 5: Building Responses
+            *   Response Entities
+            *   MIME Typing
+            *   mime.types
+            *   Magic typing
+            *   Explicit typing (igonre file extension or content (maybe magic number))
+            *   Type negotiation
+            *   Redirection
+            *   Permanently/temporarily moved resources
+            *   URL augmentation
+            *   Load balancing
+        * Step 6: Sending Responses
+        * Step 7: Logging
+
+        Web Intermediaries
+
+        Private and Shared Proxies
+
+        Proxies (middlemen) Versus Gateways (protocol converter)
+
+        Why Use Proxies?
+
+        +   Child filter
+        +   Document access controller
+        +   Security firewall
+        +   Web cache
+        +   Surrogate
+        +   Content router
+        +   Transcoder (`*.gif` ==> `*.jpeg`, etc)
+        +   Anonymizer
+
+        Where Do Proxies Go?
+
+        Proxy Server Deployment
+
+        +   Egress proxy (adult content)
+        +   Access (ingress) proxy (ISP access proxy: download speed)
+        +   Surrogates
+        +   Network exchange proxy
+
+        Proxy Hierarchies
+
+        +   inbound
+        +   outbound
+        +   parent
+        +   Proxy hierarchy content routing
+
+        How Proxies Get Traffic
+
+        +   Modify the client (Proxy Plugin)
+        +   Modify the network (intercepting proxy, like GFW)
+        +   Modify the DNS namespace
+        +   Modify the web server
+
+        Client Proxy Settings
+
+        +   Manual configuration
+        +   Browner preconfiguartion
+        +   Proxy auto-configuration: Proxy auto-configuration (PAC)
+            *   suffix: ".pac"
+            *   MIME type: "application/x-ns-proxy-autoconfig"
+        +   Client Proxy Configuartion: Web Proxy Autodiscovery Protocol (WPAD)
+            *   Dynamic Host Discovery Protocol (DHCP)
+            *   Service Location Protocol (SLP)
+            *   DNS well-known hostnames
+            *   DNS SRV records
+            *   DNS service URIs in TXT records
+        +   Tricky Things About Proxy Requests
+            *   Proxy URIs Differ from Server URIs
+            *   Server request, explicit proxy request, surrogate(reverse proxy) request, intersecpting proxy request
+        +   The Same Problem with Virtual Hosting (index.html ==> bob/index.html? or tom/index.html?)
+        +   Intercepting Proxies Get Partial URIs
+        +   Proxies Can Handle Both Proxy and Server Requests
+        +   In-Flight URI Modification
+            *   URI Client Auto-Expansion and Hostname Resolution
+            *   URI Resolution Without a Proxy
+            *   URI Resolution with an Explicit Proxy
+            *   URI Resolution with an Intercepting Proxy
+        +   Tracing Messages
+            * The Via Header
+                -   Via syntax
+                -   Via request and response paths
+                -   Via and gateways
+                -   The Server and Via headers
+                -   Privacy and security implications of Via
+            * The TRACE Method
+                - Max-Forwards
+
+        +   Proxy Authentication
+        +   Proxy Interoperation
+        +   Handling Unsupported Headers and Methods
+        +   OPTIONS: Discovering Optional Feature Support
+        +   The Allow Header
+
+    -   Redundant Data Transfers
+
+        +   Bandwidth Bottlenecks
+        +   Flash Crowds
+        +   Distance Delays
+        +   Hits and Misses (hits, misses, revalidations(freshness check))
+            *   cache hit
+            *   cache miss
+            *   revalidate hit (slow hit)
+            *   revalidate miss
+    -   Revalidate request with If-Modified-Since
+        +   ==> Revalidate hit:  304(not modified) response ("still fresh")
+        +   ==> Revalidate miss: normal HTTP 200 OK response + full content,
+    -   Hit Rate/Ratio (fraction of requests)
+
+        Byte Hit Rate
+
+    -   Distinguishing Hits and Misses
+
+    Cache Topologies
+
+    +   private caches (Firefox: `about:cache`)
+    +   shared public caches (public proxy caches)
+
+    Proxy Cache Hierarchies, Cache Meshes, Content Routing, and Peering(sibling caches)
+
+    Cache Processing Steps
+
+    -   Step 1: Receiving
+    -   Step 2: Parsing
+    -   Step 3: Lookup
+    -   Step 4: Freshness Check
+    -   Step 4: Freshness Check
+    -   Step 5: Response Creation
+    -   Step 6: Sending
+    -   Step 7: Logging
+
+    Cache Processing Flowchart
+
+    Keeping Copies Fresh
+
+    -   document expiration
+        +   Cache-Control: max-age=<max-age(in seconds)>
+        +   Expires: <date>
+    -   server revalidation
+    -   Revalidation with Conditional Methods (conditional request)
+        +   If-Modified-Since: <date>
+        +   If-None-Match: <tags> ETags(entity tags)
+    -   Weak and Strong Validators
+
+        When to Use Entity Tags and Last-Modified Dates
+
+    -   Controlling Cachability
+
+        +   No-Cache and No-Store Response Headers
+        +   Cache-Control: no-store
+        +   Cache-Control: no-cache # (may be cached locally)
+        +   Pragma: no-cache
+        +   Max-Age Response Headers
+        +   Cache-Control: max-age=3600
+        +   Cache-Control: s-maxage=3600 # shared(public) cache
+        +   Expires Response Headers
+        +   Expires: <date>
+        +   Must-Revalidate Response Headers
+        +   Cache-Control: must-revalidate
+        +   Heuristic Expiration
+        +   LM-Factor algorithm
+        +   Client Freshness Constraints
+        +   Max-Age Response Headers
+        +   Client Freshness Constraints
+
+    -   Setting Cache Controls
+
+        +   Controlling HTTP Headers with Apache
+
+            mod_headers (the mod_headers module)
+
+            ```xml
+            <Files *.html>
+            Header set Cache-control no-cache
+            </Files>
+            ```
+
+            mod_expires
+
+            *   ExpiresDefault M86400
+            *   ExpiresByType text/html "modification plus 2 days 6 hours 12 minutes"
+            *   mod_cern_meta
+
+        +   Controlling HTML Caching Through HTTP-EQUIV
+
+        +   Detailed Algorithms
+
+            *   Age and Freshness Lifetime
+            *   Age Computation
+            *   Apparent age is based on the Date header
+            *   Hop-by-hop age calculations
+            *   Compensating for network delays
+            *   Freshness Lifetime Computation
+            ...
+
+    -   Caches and Advertising
+
+        +   The Advertiser’s Dilemma
+        +   The Publisher’s Response (cache-busting)
+
+    Log Migration
+
+    -   Integration Points: Gateways, Tunnels, and Relays
+
+    Client-Side and Server-Side Gateways
+    <client-protocol>/<server-protocol>
+
+    Protocol Gateways
+
+    * HTTP/*: Server-Side Web Gateways
+    * HTTP/HTTPS: Server-Side Security Gateways
+    * HTTPS/HTTP: Client-Side Security Accelerator Gateways
+
+    Resource Gateways
+
+    * Common Gateway Interface(CGI)
+    * Server Extension APIs
+
+    Application Interfaces and Web Services
+
+    Tunnels
+
+    * Establishing HTTP Tunnels with CONNECT (a raw byte relay)
+    * CONNECT requests
+
+    CONNECT home.netscape.com:443 HTTP/1.0
+
+    User-agent: Mozilla/4.0
+
+    + CONNECT responses
+    * Data Tunneling, Timing, and Connection Management
+    + SSL Tunneling
+    + SSL Tunneling Versus HTTP/HTTPS Gateways
+    * Tunnel Authentication
+    * Tunnel Security Considerations
+
+    Relays
+
+    Chapter 09. Web Robots
+
+    Crawlers and Crawling
+
+    Where to Start: The “Root Set”
+    * stranded—isolated,
+
+    Extracting Links and Normalizing Relative Links
+    * Loops and Dups
+
+    Trails of Breadcrumbs
+    * Trees and hash tables
+    * Lossy presence bit maps
+    * Checkpoints
+    * Partitioning
+
+    Aliases and Robot Cycles
+    * Canonicalizing URLs
+    * Filesystem Link Cycles
+    * Dynamic Virtual Web Spaces
+
+    Avoiding Loops and Dups
+    * Canonicalizing URLs
+    * Breadth-first crawling
+    * Throttling
+    * Limit URL size
+    * URL/site blacklist
+    * Pattern detection (`/subdir/subdir/subdir...`)
+    * Content fingerprinting
+    * Human monitoring
+
+    Robotic HTTP
+    * Identifying Request Headers
+    * Virtual Hosting
+    * Conditional Requests
+    * Response Handling
+    + status codes
+    + entities
+    * User-Agent Targeting
+
+
+    Misbehaving Robots
+    * Runaway robots
+    * Stale URLs
+    * Long, wrong URLs
+    * Nosy robots
+    * Dynamic gateway access
+
+    Excluding Robots
+    * Robots Exclusion Standard (robots.txt)
+    * Web Sites and robots.txt Files
+    + retrive `robots.txt` and check response codes
+    + robots.txt File Format
+    ```xml
+    User-Agent: <robot-name> # case-insensitive substring of the robot’s name
+    ```
+    + Disallow/Allow prefix matching
+    * Other robots.txt Wisdom
+
+    Caching and Expiration of robots.txt
+
+    Robot Exclusion Perl Code
+
+    HTML Robot-Control META Tags
+    NOINDEX, NOFOLLOW, INDEX, FOLLOW, NOARCHIVE, ALL, NONE
+
+    Robot Etiquette(礼仪)
+    * http://www.robotstxt.org/wc/guidelines.html
+
+
+    Chapter 10. HTTP-NG
+
+    HTTP’s Growing Pains
+    [HTTP-NG] Activity = HTTP: The Next Generation (HTTP-NG)
+
+    Modularize and Enhance
+
+    * Layer {1..3}
+    * Distributed Objects
+    * Layer 1: [Messaging (WebMUX)](http://www.w3.org/Protocols/MUX/WD-mux-980722.html)
+    * Layer 2: Remote Invocation ([Binary Wire Protocol](http://www.w3.org/Protocols/HTTP-NG/1998/08/draft-janssen-httpng-wire-00.txt))
+    * Layer 3: Web Application
+
+    [HTTP-NG]: http://www.w3.org/Protocols/HTTP-NG/
+
+    PART III. Identification, Authorization, and Security
+
+    Chapter 11. Client Identification and Cookies
+
+    The Personal Touch
+
+    1. HTTP Headers
+    2. Client IP Address
+    3. User Login (Pretty soon, Fred will give up on the Internet and go back to watching Oprah...)
+    4. Fat URLs
+    * Ugly URLs
+    * Can't share URLs
+    * Breaks caching
+    * Extral server load
+    * Excape hatches (may lost your shopping cart)
+    * Not persistent across sessions
+    5. Cookies
+    * Types of Cookies: session and persistent
+    * How Cookies Work
+    * Cookie Jar: Client-Side State
+    + domain
+    + allh
+    + path
+    + secure
+    + expiration
+    + name
+    + value
+    * Different Cookies for Different Sites (`Set-Cookie: key=val`, Cookie: key=value`)
+    + Cookie Domain attribute: `domain=<SITE>`, <SITE> e.g. "www.jianshu.com"
+    + Cookie Path attribute: `path=/autos/`
+    * Cookie Ingredients
+    + Version 0 (Netscape) Cookies
+    + Version 1 (RFC 2965) Cookies
+    * Cookies and Session Tracking
+    * Cookies and Caching
+    + Mark documents uncacheable if they are
+    + Be cautious about caching Set-Cookie headers
+    + Be cautious about requests with Cookie headers
+    * Cookies, Security, and Privacy
+
+    Chapter 12. Basic Authentication
+
+    * Authentication
+    * Authentication Protocols and Headers
+    * Security Realms
+    * Basic Authentication
+    + Challenge/Response
+    - Challenge(server2client): `WWW-Authenticate: Basic realm=<quoted-realm>`
+    - Response(client2server): `Authorization: Basic <base64-username-and-password>`
+    - Base-64 Username/Password Encoding: BASE64ENC(<username>:<passwd>)
+    * Proxy Authentication
+
+    | Web Server | Proxy Server |
+    | :---: | :---: |
+    | Unauthorized status code: 401 | Unauthorized status code: 407 |
+    | WWW-Authenticate | Proxy-Authenticate |
+    | Authorization | Proxy-Authorization |
+    | Authentication-Info | Proxy-Authentication-Info |
+
+    * The Security Flaws of Basic Authentication
+
+    Chapter 13. Digest Authentication
+
+    The Improvements of Digest Authentication
+    * Transport Layer Security (TLS)
+    * Secure HTTP (HTTPS)
+
+    Using Digests to Keep Passwords Secret
+
+    One-Way Digests
+    * aliases of `Digest functions`= `cryptographic checksums`, `one-way hash functions`, or `fingerprint functions`
+
+    * MD5
+
+    | Input | MD5 digest |
+    | :---: | :---: |
+    | “Hi” | C1A5298F939E87E8F962A5EDFC206918 |
+    | “bri:Ow!” | BEAAA0E34EBDB072F8627C038AB211F8 |
+    | “3.1415926535897” | 475B977E19ECEE70835BC6DF46F4F6DE |
+
+    Using Nonces to Prevent Replays
+    * a special token called a `nonce`
+
+    The Digest Authentication Handshake
+    * chanllenge, nonce, algorithms...
+
+    ## Digest Calculations
+
+    Digest Algorithm Input Data
+
+    Digests are computed from three components:
+    * A pair of functions consisting of a one-way hash function H(d) and digest KD(s,d), where s stands for secret and d stands for data
+    * A chunk of data containing security information, including the secret password, called A1
+    * A chunk of data containing nonsecret attributes of the request message, called A2
+    The two pieces of data, A1 and A2, are processed by H and KD to yield a digest.
+
+    H(<data>) = MD5(<data>)
+    KD(<secret>,<data>) = H(concatenate(<secret>:<data>))
+    qop: quality of protection
+    <request-method>: HTTP request method
+    <uri-directive-value>: the request URI from the request line
+    nc: nonce count
+
+    The Security-Related Data (A1)
+    | Algorithm | A1 |
+    | :---: | :---: |
+    | MD5 | A1 = <user>:<realm>:<password> |
+    | MD5-sess | A1 = MD5(<user>:<realm>:<password>):<nonce>:<cnonce> |
+
+    The Message-Related Data (A2)
+    | qop | A2 |
+    | undefined | <request-method>:<uri-directive-value> |
+    | auth | <request-method>:<uri-directive-value> |
+    | auth-int | <request-method>:<uri-directive-value>:H(<request-entity-body>) |
+
+    Overall Digest Algorithm
+    * Old and new digest algorithms
+    | qop | Digest algorithm | Notes |
+    | :---: | :---: | :---: |
+    | undefined | KD(H(A1), <nonce>:H(A2)) | Deprecated |
+    | auth or auth-int | KD(H(A1), <nonce>:<nc>:<cnonce>:<qop>:H(A2)) | Preferred |
+    * Unfolded digest algorithm cheat sheet
+    | qop | Algorithm | Unfolded algorithm |
+    | :---: | :---: | :---: |
+    | undefined | <undefined>, MD5, MD5-sess | MD5(MD5(A1):<nonce>:MD5(A2)) |
+    | auth | <undefined>, MD5, MD5-sess | MD5(MD5(A1):<nonce>:<nc>:<cnonce>:<qop>:MD5(A2)) |
+    | auth-int | <undefined>, MD5, MD5-sess | MD5(MD5(A1):<nonce>:<nc>:<cnonce>:<qop>:MD5(A2)) |
+
+    Digest Authentication Session
+
+    Preemptive Authorization
+    * Next nonce pregeneration
+    * Limited nonce reuse
+    * Synchronized nonce generation
+
+    Nonce Selection
+    * Suggested by RFC 2617, nonce = BASE64(time-stamp H(time-stamp ":" ETag ":" private-key))
+    * ETag: the HTTP ETag header associated with the requested entity
+
+    Symmetric Authentication
+    * Definitions for A2 by algorithm (request digests)
+    | qop | A2 |
+    | :---: | :---: |
+    | undefined | <request-method>:<uri-directive-value> |
+    | auth | <request-method>:<uri-directive-value> |
+    | auth-int | <request-method>:<uri-directive-value>:H(<request-entity-body>) |
+    * Definitions for A2 by algorithm (response digests)
+    | qop | A2 |
+    | :---: | :---: |
+    | undefined | :<uri-directive-value> |
+    | auth | :<uri-directive-value> |
+    | auth-int | :<uri-directive-value>:H(<response-entity-body>) |
+
+    Quality of Protection Enhancements
+    * Use of qop is optional, but only for backward compatibility with the older RFC 2069 specification.
+
+    Message Integrity Protection
+
+    Digest Authentication Headers
+
+    Practical Considerations
+    * Multiple Challenges
+    * Error Handling
+    * Protection Spaces
+    * Rewriting URIs
+    * Caches
+
+    Security Considerations
+    * Header Tampering
+    * Replay Attacks
+    * Multiple Authentication Mechanisms
+    * Dictionary Attacks
+    * Hostile Proxies and Man-in-the-Middle Attacks
+    * Chosen Plaintext Attacks
+    * Storing Passwords
+
+    Chapter 14. Secure HTTP
+
+    Making HTTP Safe
+    HTTPS
+    Digital Cryptography: The Art and Science of Secret Coding
+    Cipher
+
+    Symmetric-Key Cryptography
+    * (e=k), encoding = decoding
+    * P = D(C, d)
+    * DES, Triple-DES, RC2, and RC4
+    * Key Length and Enumeration Attacks
+    v
+
+```org
+#+OPTIONS: tex:t          Do the right thing automatically (MathJax)
+#+OPTIONS: tex:nil        Do not process LaTeX fragments at all
+#+OPTIONS: tex:verbatim   Verbatim export, for jsMath or so
+#+STARTUP: latexpreview
+
+x^2 + y^2 = z^2
+x_1, x_2, x_3, ..., x_n
+
+\begin{equation}
+x=\sqrt{b}
+\end{equation}
+
+If $a^2=b$ and \( b=2 \), then the solution must be
+either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
+```
+
+与众不同的心理学
+
+:   01. 充满活力的心理学 --- 在科学阵营里还干得蛮好
+
+    ![1411354305.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354305.png)
+    ![1411354346.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354346.png)
+
+    02. 可证伪性 --- 如何阻挡脑袋中的鬼精灵到处捣蛋
+
+    ![1411354462.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354462.png)
+    ![1411354474.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354474.png)
+
+    03. 操作主义及本质主义 --- 不过，博士，这到底是什么意思呢？
+
+    ![1411354573.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354573.png)
+    ![1411354586.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354586.png)
+
+    04. 见证和个案证据 --- 安慰剂效应和神奇兰迪
+
+    ![1411354695.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354695.png)
+    ![1411354712.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354712.png)
+
+    05. 相关和因果 --- 烤面包机与避孕
+
+    ![1411354782.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354782.png)
+    ![1411354797.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354797.png)
+
+    06. 一切尽在掌控之中 --- 聪明汉斯的故事
+
+    ![1411354897.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354897.png)
+    ![1411354911.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354911.png)
+
+    07. “但，真实生活不是这样的啊！” --- “人为性”的批评与心理学
+
+    ![1411355013.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411355013.png)
+
+    08. 别了，爱因斯坦综合征 --- 证据集中的重要性
+
+    ![1411355133.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411355133.png)
+
+    09. 别相信有一枪即中的“魔弹” --- 多样原因的问题
+
+    ![1411355256.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411355256.png)
+    ![1411355266.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411355266.png)
+
+    10. 人类认识的死穴 --- 概率推理
+
+    ![1411355333.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411355333.png)
+    ![1411355356.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411355356.png)
+
+    11. 偶然性在心理学中的作用
+
+    ![1411355427.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411355427.png)
+    ![1411355437.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411355437.png)
+
+像外行一样思考，像专家一样实践——科研成功之道
+
+:   [内容简介][book-douban]
+
+    -   本书是由管理和培育出世界上最大的机器人研究所的卡耐基·梅隆大学教授
+        [Takeo Kanade][takeo-kanade] 对其日常研究、生活和学习的经验进行收集整理
+        而成的一本小册子。本书不仅用作者亲身经历的大量事例极具趣味地描述了许多
+        有效的科研法则，如“海阔天空的构思”、“跳出现有的成功”、“KISS 方法”、“用情
+        景推动研究进展”、“智慧体力”、“从‘做不到’重新开始”、“在与他人的交流中完
+        善自己的构想”，等等，而且更是用大量的篇幅、语重心长地为下一代即将承担未
+        来的年轻人如何进行科研，如何进行创新，想得到一定成就应该具备什么样的能
+        力提供了必要及时的指导。
+    -   本书不仅适合科研人士，应该说是适合任何读者阅读，因为它能对自己工作、学
+        习和生活在解决问题方面会有许多参考价值。
+    -   本书尤其适合在校大学生、研究生在思考如何培养自身能力，如何发展自我的时
+        候参考阅读。
+
+    [book-douban]: http://book.douban.com/subject/1867455/
+    [takeo-kanade]: http://en.wikipedia.org/wiki/Takeo_Kanade
+
+    TOC
+
+    1.  像外行一样思考，像专家一样实践
+    2.  计算机向人类发出的挑战 --- 问题的解决能力与教育
+    3.  表达“自己的想法”，说服别人实践！国际化时代的讲演、会话、写作能力
+    4.  寻求决断与明示的速度：关于日本与世界，自己与他人的思考
+    5.  结束语：愉快地解决问题
+
+    像外行一样思考，像专家一样实践
+
+    :   -   **Wild Idea Fund**
+        -   从现状出发，逻辑推导，最终得到结论（内行）。
+        -   从想要的结果出发开始做（外行）。
+        -   天真、幼稚、甚至牵强的想法（通向重大成就的突破点）。
+        -   只有天真是不够的。还得考数学这个工具。
+        -   内容宽泛的理论（MIT 的 [Minsky][marvin-minsky] 的故事）。
+        -   Minsky 的诀窍：反对大家。
+        -   省略、抽象与简洁之美：省略到什么程度是关键。
+        -   超级碗上的 Eye Vision: Let's watch the NBA on the court。
+        -   畅销小说的构思。
+        -   KISS Principle: Keep it Simple, Stupid.
+        -   其实做事只要坚持到最后，就算不成功也会学到很多。
+        -   智慧体力：所谓的集中力，就是让自己成为问题本身。
+        -   越能干的人，越会迷茫。
+        -   做研究和搞开发没有具体目标是不行的。
+        -   不安感和成就感是智慧体力的基石。
+        -   [Clarke's Three Laws][clarkes-three-laws].
+        -   交流中创新。
+        -   像专家一样思考，像外行一样实践。
+
+    [clarkes-three-laws]: http://en.wikipedia.org/wiki/Clarke%27s_three_laws
+    [marvin-minsky]: http://en.wikipedia.org/wiki/Marvin_Minsky
+
+    计算机向人类发出的挑战 --- 问题的解决能力与教育
+
+    :   -   人是了不起的机器，人们只是不知道自己所使用的程序而已。
+        -   NP 完全问题。
+        -   [Kasparov]：感受到了一种全新的智能体。
+        -   “深蓝”：超过了“可预测的不可预测性”
+        -   通过解决问题来提高思考力和判断力。
+        -   思考例题并加以解决是加深理解的最好方法。
+        -   Euler 公式。
+        -   逻辑学家、数学家、物理学家、工程学家。
+        -   教科书的编写 & 培养思考能力：“实质到形式”还是“形式到实质”
+        -   单纯练习公式的使用方法是无助于培养思维能力的。
+        -   创造力、规划能力的基础是记忆力。
+        -   构思：通过重组脑海中的记忆而产生的。
+        -   最有效的学习方法就是记忆。
+        -   储存能力与应用能力。
+        -   记忆的时候尽可能做到理解记忆。理解基础上记忆的东西才能正确的使用。
+        -   **思考力和记忆力是靠不断实践培养起来的。基础中的基础。**
+        -   “填”不见得就是一种不好的方法。关键是怎样“填”。
+        -   专业傻瓜。
+        -   抓要点，在说话和做研究上一样一样的。
+
+        [kasparov]: http://en.wikipedia.org/wiki/Kasparov
+
+    表达“自己的想法”，说服别人实践！国际化时代的讲演、会话、写作能力
+
+    :   -   表达观点说法他人也是研究活动的一个环节。
+        -   被人了解才有价值。
+        -   Playing Cards: Best First.
+        -   不是通过说明得到认可，而是在认可的基础上进行说明。
+        -   称赞是全世界共同的良药。“Enjoy~”
+        -   说话方式的恶习 --- “但是”
+        -   实战提高英语：**抢着说，大声讲，静心听。**
+        -   论文也是一部推理小说。
+        -   脉络：起承转合。
+
+    寻求决断与明示的速度：关于日本与世界，自己与他人的思考
+
+    :   -   能用则用的现实使用主义。
+        -   海湾战争的日本援助：Too little, too late。
+        -   “别人怎么看自己” --- 强迫观念与存在感。
+        -   美国人不在乎别人的眼光。
+        -   **不要拿“日本独有”当做挡箭牌。**
+        -   要想不被别人当成摆设的木偶，无论到了什么地位也都要履行好自己的职责。
+        -   **[Publish or Perish][pub-or-prs], Demo or die.**
+        -   一个好的评价制度，他的目的是防止出现一些既不想辞退也不想升职的平庸之辈。
+        -   自己决定是一种勇气。（为什么日本日你不希望自己来决定）
+
+        [pub-or-prs]: https://en.wikipedia.org/wiki/Publish_or_perish
+
+    结束语：愉快地解决问题
+
+    :   -   思考事物的本质。
+        -   中国学生的热情。
+        -   简单思考，积极向上。
+
+    一些图片
+
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-11-43-59.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-12-32-52.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-12-56-20.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-12-56-38.png)
+
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-18-27.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-19-12.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-19-24.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-19-55.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-20-34.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-27-12.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-27-31.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-27-45.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-28-07.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-28-22.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-28-39.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-28-55.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-29-21.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-29-34.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-30-32.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-30-44.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-31-03.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-31-18.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-31-31.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-12-15-31-46.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-13-23-52-10.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-13-23-52-26.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-13-23-54-00.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-13-23-54-27.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-13-23-55-00.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-13-23-56-10.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-13-23-56-45.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-13-23-57-19.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-13-23-58-02.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-13-23-58-14.png)
+    ![](http://gnat-tang-shared-image.qiniudn.com/pictures/000-2014-07-13-23-59-04.png)
+
+数理统计学简史 --- 陈希孺
+
+:   豆瓣书评：[有助于培养“统计思想”](http://book.douban.com/review/4557864/)
+
+    陈先生在本书《序》中说：
+
+    > **统计学不止是一种方法或技术，还含有世界观的成分**
+    > --它是看待世界上万事万物的一种方法，我们常讲某事从统计观点看如何如何，指的
+    > 就是这个意思，但统计思想也有一个发展过程。因此，统计思想（或观点）的养成，
+    > 不单需要学习一些具体的知识，还要能够从发展的眼光，把这些知识连缀成一个有机
+    > 的、清晰地图景，获得一种历史的厚重感。
+
+    我们可以从现在的统计学教材中学到许多统计方法，但是可能并不明了这些方法的起
+    源及适用范围，碰到了新问题不知用什么方法或者选择错误的方法；我们也可能按步
+    就班地学完概率论，但是对于为什么要引进随机变量及大数定律的意义不甚明了。学
+    习概率与统计的历史有助于我们更深入地理解概率的基本概念，并培养统计思想。
+
+    从内容上说，本书的前 2 章是概率论相关的，其余八章才是真正关于统计学的，但让
+    人觉得很自然，正体现了概率与统计的一脉相承。书中的内容涉及到概率、大数定律
+    、贝叶斯统计、最小二乘法、误差与正态分布、抽样调查、回归与相关、小样本理论
+    、方差分析、假设检验、参数估计等。
+
+    读完这本书，有以下几点感受：
+
+    -   掌握基本概念对于学习数学非常重要，对于重要的基本概念，不要以为一两天就
+        可能深入理解。事实上，人类可能花了几十甚至上百年才取得一些重大的思维进
+        展
+    -   对于统计方法，了解其发明的背景（最初用来解决什么问题）很有用。这将有助
+        于我们了解这一统计方法的适用范围（包括可以引申来解决什么问题）
+    -   若习惯于完全严谨的方法，解决实际问题可能受到限制（欧拉与拉普拉斯这样的
+        顶级大学者，一生解决了很多数学难题，却对于线性方程组求解的问题没有什么
+        建树）
+    -   不要期望一下子提出一个毫无缺陷的方法
+    -   新方法的提出可能遭受别人的质疑或批评（比如显著性检验方法曾受到贝叶斯学
+        派的质疑）
+
+    本书的卷尾语是一个很好的统计学历史的总结及对统计学未来的展望。
+
+    序 && 导言
+
+    第一章：早起概率论 --- 从萌芽到《推测术》
+
+    第二章：棣莫弗的二项概率逼近
+
+    第三章：贝叶斯方法
+
+    第四章：最小二乘法
+
+    第五章：误差与正态分布
+
+    第六章：社会统计
+
+    第七章：回归与相关 --- 发现与早期发展
+
+    第八章：小样本 --- 统计学的新台阶
+
+    第九章：假设检验
+
+    第十章：参数估计
+
+    卷尾语
+
+如果让我重做一次研究生 --- 王泛森院士
+
+:   > 这是王泛森院士写的一篇文章，我觉得对即将读研的同学很有意义，到了研究生阶
+    > 段，不能再用本科生的思维方式去学习，更应该**具备学术研究素质，学会创新，学会主
+    > 动学习，学会怎样与老师一起进入研究领域**，又是人生中的一个新课题。
+
+    一、研究生与大学生的区别
+
+    :   首先跟大家说明一下研究生和大学生的区别。大学生基本上是来接受学问、接受
+        知识的，然而不管是对于硕士时期或是博士时期的研究而言，都应该准备要开始
+        **制造新的知识**，我们在美国得到博士学位时都会领到看不懂的毕业证书，在
+        一个偶然的机会下，我问了一位懂拉丁文的人，上面的内容为何？他告诉我：“里
+        头写的是恭喜你对人类的知识有所创新，因此授予你这个学位。”在中国原本并没
+        有博硕士的学历，但是在西方他们原来的用意是，恭贺你已经对人类普遍的知识
+        有所创新，这个创新或大或小，都是对于普遍的知识有所贡献。这个创新不会因
+        为你做本土与否而有所不同，所以第一个我们必须要很用心、很深刻的思考，大
+        学生和研究生是不同的。
+
+        （一）选择自己的问题取向，学会创新
+
+        :   你一旦是研究生，你就已经进入另一个阶段，不只是要完全乐在其中，更要
+        从而接受各种有趣的知识，进入制造知识的阶段，也就是说你的论文应该**有所
+        创新**。由接受知识到创造知识，是身为一个研究生最大的特色，不仅如此，还
+        要认识到自己不再是个容器，等着老师把某些东西倒在茶杯里，而是要开始逐步
+        发展和开发自己。做为研究生不再是对于各种新奇的课照单全收，而是要重视问
+        题取向的安排，就是在硕士或博士的阶段里面，所有的精力、所有修课以及读的
+        书里面都应该要有一个关注的焦点，而不能像大学那般漫无目标。大学生时代是
+        因为你要尽量开创自己接受任何东西，但是到了硕士生和博士生，有一个最终的
+        目的，就是要完成论文，那篇论文是你个人所有武功的总集合，所以这时候必须
+        要有个问题取向的学习。
+
+        （二）尝试跨领域研究，主动学习
+
+        :   提出一个重要的问题，跨越一个重要的领域，将决定你未来的成败。我也在
+            台大和清华教了十几年的课，我常常跟学生讲，选对一个领域和选对一个问
+            题是成败的关键，而你自己本身必须是带着问题来探究无限的学问世界，因
+            为你不再像大学时代一样泛滥无所归。所以这段时间内，必须选定一个有兴
+            趣与关注的主题为出发点，来探究这些知识，产生有机的循环。由于你是自
+            发性的对这个问题产生好奇和兴趣，所以你的态度和大学部的学生是截然不
+            同的，你慢慢从被动的接受者变成是一个主动的探索者，并学会悠游在这学
+            术的领域。我举一个例子，我们的中央研究院院长李远哲先生，得了诺贝尔
+            奖。他曾经在中研院的周报写过几篇文章，在他的言论集里面，或许各位也
+            可以看到，他反复提到他的故事。他是因为读了一个叫做马亨教授的教科书
+            而去美国柏克莱大学念书，去了以后才发现，这个老师只给他一张支票，跟
+            他说你要花钱你尽量用，但是从来不教他任何东西。可是隔壁那个教授，老
+            师教很多，而且每天学生都是跟着老师学习。他有一次就跟那个老师抱怨：“
+            那你为什么不教我点东西呢？”那个老师就说：“如果我知道结果，那我要你
+            来这边念书做什么？我就是因为不知道，所以要我们共同探索一个问题、一
+            个未知的领域。”他说其实这两种教法都有用处，但是他自己从这个什么都不
+            教他，永远碰到他只问他“有没有什么新发现”的老师身上，得到很大的成长
+            。所以这两方面都各自蕴含深层的道理，没有所谓的好坏，但是最好的方式
+            就是将这两个方式结合起来。我为什么讲这个故事呢？就是强调在这个阶段
+            ，**学习是一种 **“self-help”**，并且是在老师的引导下学习 “self-help
+            ”，而不能再像大学时代般，都是纯粹用听的，这个阶段的学习要基于对研究
+            问题的好奇和兴趣，要带着一颗热忱的心来探索这个领域。
+
+            然而研究生另外一个重要的阶段就是 **Learn how to learn**，不只是学习
+            而已，而是学习如何学习，不再是要去买一件很漂亮的衣服，而是要学习拿
+            起那一根针，学会绣出一件漂亮的衣服，慢慢学习把目标放在一个标准上，
+            而这一个标准就是你将来要完成硕士或博士论文。如果你到西方一流的大学
+            去读书，你会觉得我这一篇论文可能要和全世界做同一个问题的人相比较。
+            我想即使在非一流大学也应该要有这样的心情，你的标准不能单单只是放在
+            旁边几个人而已，而应该是要放在领域的普遍人里面。你这篇文章要有新的
+            东西，才算达到的标准，也才符合到我们刚刚讲到那张拉丁文的博士证书上
+            面所讲的，**有所贡献与创新**。
+
+    二、一个老师怎么训练研究生
+
+    :   身为老师你要怎么训练研究生。我认为人文科学和社会科学的训练，哪怕是自然
+        科学的训练，到研究生阶段应该更像师徒制，所以来自个人和老师、个人和同侪
+        间密切的互动和学习是非常重要的，跟大学部坐在那边单纯听课，听完就走人是
+        不一样的，相较之下你的生活应该要和你所追求的知识与解答相结合，并且你往
+        后的生活应该或多或少都和这个探索有相关。
+
+        （一）善用与老师的伙伴关系，不断 Research
+
+        :   我常说英文 research 这个字非常有意义， search 是寻找，而 research
+            是再寻找，所以每个人都要 research ，不断的一遍一遍再寻找，并进而使
+            你的生活和学习成为一体。中国近代兵学大师蒋百里在他的兵学书中曾说：“
+            生活条件要跟战斗条件一致，近代欧洲凡生活与战斗条件一致者强，凡生活
+            与战斗条件不一致者弱。”我就是藉由这个来说明研究生的生活，你的生活条
+            件与你的战斗条件要一致，你的生活是跟着老师与同学共同成长的，当中你
+            所听到的每一句话，都可能带给你无限的启发。
+
+            回想当时我在美国念书的研究生生活，只要随便在楼梯口碰到任何一个人，
+            他都有办法帮忙解答你语言上的困难，不管是英文、拉丁文、德文、希腊文
+            …… 所以能帮助解决问题的不单只是你的老师，还包括所有同学以及学习团体
+            。你的学习是跟生活合在一起的。当我看到有学生呈现被动或是懈怠的时候
+            ，我就会用毛泽东的“革命不是请客吃饭！”来跟他讲：“作研究生不是请客吃
+            饭。”
+
+        （二）藉由大量阅读和老师提点，进入研究领域
+
+        :   怎样进入一个领域最好，我个人觉得只有两条路，其中一条就是让他**不停
+            地念书、不停地报告，这是进入一个陌生的领域最快，又最方便的方法**，
+            到最后不知不觉学生就会知道这个领域有些什么，我们在不停念书的时候常
+            常可能会沉溺在细节里不能自拔，进而失去全景，导致见树不见林，或是被
+            那几句英文困住，而忘记全局在讲什么。藉由学生的报告，老师可以讲述或
+            是厘清其中的精华内容，经由老师几句提点，就会慢慢打通任督二脉，逐渐
+            发展一种自发学习的能力，同时也知道碰到问题可以看哪些东西。就像是我
+            在美国念书的时候，我修过一些我完全没有背景知识的国家历史，所以我就
+            不停地念书、不停督促自己吸收，而老师也只是不停地开书目，运用这样的
+            方式慢慢训练，有一天我不再研究它时，我发现自己仍然有自我生产及蓄发
+            的能力，因为我知道这个学问大概是什么样的轮廓，碰到问题也有能力可以
+            去查询相关的资料。所以努力让自己的学习产生自发的延展性是很重要的。
+
+        （三）循序渐进地练习论文写作
+
+        :   到了硕士或博士最重要的一件事，是完成一篇学位论文，而不管是硕士或博
+            士论文，其规模都远比你从小学以来所受的教育、所要写的东西都还要长得
+            多，虽然我不知道教育方面的论文情况是如何，但是史学的论文都要写二、
+            三十万字，不然就是十几二十万字。写这么大的一个篇幅，如何才能有条不
+            紊、条理清楚，并把整体架构组织得通畅可读？首先，必须要从一千字、五
+            千字、一万字循序渐进的训练，先从少的慢慢写成多的，而且要在很短的时
+            间内训练到可以从一万字写到十万字。这么大规模的论文谁都写得出来，问
+            题是写得好不好，因为这么大规模的写作，有这么许多的脚注，还要注意首
+            尾相映，使论述一体成型，而不是散落一地的铜钱；是一间大礼堂，而不是
+            一间小小分割的阁楼。为了完成一个大的、完整的、有机的架构模型，必须
+            要从小规模的篇幅慢慢练习，这是一个最有效的办法。因为受计算机的影响
+            ，我发现很多学生写文章能力都大幅下降。写论文时很重要的一点是，**文
+            笔一定要清楚，不要花俏、不必漂亮**，“清楚”是最高指导原则，经过慢慢
+            练习会使你的文笔跟思考产生一致的连贯性。我常跟学生讲不必写的花俏，
+            不必展现你散文的才能，因为这是学术论文，所以关键在于要写得非常清楚
+            ，如果有好的文笔当然更棒，但那是可遇不可求的，文彩像个人的生命一样
+            ，英文叫 style ， style 本身就像个人一样带有一点点天生。因此最重要
+            的还是把内容陈述清楚，从一万字到最后十万字的东西，都要架构井然、论
+            述清楚、文笔清晰。
+
+            我在念书的时候，有一位欧洲史、英国史的大师 Lawrence Stone ，他目前
+            已经过世了，曾经有一本书访问十位最了不起的史学家，我记得他在访问中
+            说了一句非常吸引人注意的话，他说他英文文笔相当好，所以他一辈子没有
+            被退过稿。因此**文笔清楚**或是**文笔好**，对于将来文章可被接受的程
+            度有举足轻重的地位。内容非常重要，有好的表达工具更是具有加分的作用
+            ，但是这里不是讲究漂亮的 style ，而是论述清楚。
+
+
+    三、研究生如何训练自己
+
+    :   （一）尝试接受挑战，勇于克服
+
+        :   **研究生如何训练自己？就是每天、每周或每个月给自己一个挑战，要每隔
+            一段时间就给自己一个挑战，挑战一个你做不到的东西，你不一定要求自己
+            每次都能顺利克服那个挑战，但是要努力去尝试**。我在我求学的生涯中，
+            碰到太多聪明但却一无所成的人，因为他们很容易困在自己的障碍里面，举
+            例来说，我在普林斯顿大学碰到一个很聪明的人，他就是没办法克服他给自
+            己的挑战，他就总是东看西看，虽然我也有这个毛病，可是我会定期给我自
+            己一个挑战，例如：我会告诉自己，在某一个期限内，无论如何一定要把这
+            三行字改掉，或是这个礼拜一定要把这篇草稿写完，虽然我仍然常常写不完
+            ，但是有这个挑战跟没这个挑战是不一样的，因为我挑战三次总会完成一次
+            ，完成一次就够了，就足以表示克服了自己，如果觉得每一个礼拜的挑战，
+            可行性太低，可以把时间延长为一个月的挑战，去挑战原来的你，不一定能
+            做到的事情。不过也要切记，硕士生是刚开始进入这一个领域的新手，如果
+            一开始问题太小，或是问题大到不能控制，都会造成以后研究的困难。
+
+        （二）论文的写作是个训练过程，不能苛求完成经典之作
+
+        :   各位要记得我以前的老师所说的一句话：“**硕士跟博士是一个训练的过程，
+            硕士跟博士不是写经典之作的过程。**”我看过很多人，包括我的亲戚朋友们
+            ，他之所以没有办法好好地完成硕士论文，或是博士论文，就是因为他把它
+            当成在写经典之作的过程，虽然事实上，很多人一生最好的作品就是硕士论
+            文或博士论文，因为之后的时间很难再有三年或六年的时间，沉浸在一个主
+            题里反复的耕耘，当你做教授的时候，像我今天被行政缠身，你不再有充裕
+            的时间好好探究一个问题，尤其做教授还要指导学生、上课，因此非常的忙
+            碌，所以他一生最集中又精华的时间，当然就是他写博士、或是硕士论文的
+            时候，而那一本成为他一生中最重要的著作也就一点都不奇怪了。
+
+            不一定要刻意强求，要有这是一个训练过程的信念，应该清楚知道从哪里开
+            始，也要知道从哪里放手，不要无限的追下去。当然我不是否认这个过程的
+            重要性，只是要调整自己的心态，把论文的完成当成一个目标，不要成为是
+            一种的心理障碍或是心理负担。这方面有太多的例子了，我在普林斯顿大学
+            念书的时候，那边旧书摊有一位非常博学多文的旧书店老板，我常常赞叹地
+            对他说：“你为什么不要在大学做教授。”他说：“因为那篇博士论文没有写完
+            。”原因在于他把那个博士论文当成要写一本经典，那当然永远写不完。如果
+            真能写成经典那是最好，就像美丽新境界（美丽心灵）那部电影的男主角
+            John Nash 一样，一生最大的贡献就是博士那二十几页的论文，不过切记不
+            要把那个当作是目标，因为那是自然而然形成的，应该要坚定的告诉自己，
+            **所要完成的是一份结构严谨、论述清楚与言之有物的论文，不要一开始就
+            期待它是经典之作**。如果你期待它是经典之作，你可能会变成我所看到的
+            那位旧书摊的老板，至于我为什么知道他有那么多学问，是因为那时候我在
+            找一本书，但它并没有在旧书店里面，不过他告诉我：“还有很多本都跟他不
+            相上下。”后来我对那个领域稍稍懂了之后，证明确实如他所建议的那般。**
+            一个旧书店的老板精熟每一本书，可是他就是永远无法完成，他梦幻般的学
+            位论文，因为他不知道要在哪里放手，这一切都只成为空谈。**
+
+        （三）论文的正式写作
+
+        :   **1. 学习有所取舍**
+
+            到了写论文的时候，要能取也要能舍，因为现在信息爆炸，可以看的书太多
+            ，所以一定要建构一个属于自己的知识树，首先，要有一棵自己的知识树，
+            才能在那棵树挂相关的东西，但千万不要不断的挂不相关的东西，而且要慢
+            慢的舍掉一些挂不上去的东西，再随着你的问题跟关心的领域，让这棵知识
+            树有主干和枝叶。然而这棵知识树要如何形成？第一步你必须对所关心的领
+            域中，有用的书籍或是数据非常熟悉。
+
+            **2. 形成你的知识树**
+
+            我昨天还请教林毓生院士，他今年已经七十几岁了，我告诉他我今天要来作
+            演讲，就问他：“你如果讲这个题目你要怎么讲？”他说：“只有一点，就是那
+            重要的五、六本书要读好几遍。”因为林毓生先生是海耶克，还有几位近代思
+            想大师在芝加哥大学的学生，他们受的训练中很重要的一部份是精读原典。
+            这句话很有道理，虽然你不可能只读那几本重要的书，但是那五、六本书将
+            逐渐形成你知识树的主干，此后的东西要挂在上面，都可以参照这一个架构
+            ，然后把不相干的东西暂放一边。生也有涯，知也无涯，你不可能读遍天下
+            所有的好书，所以要学习取舍，了解自己无法看遍所有有兴趣的书，而且一
+            但看遍所有有兴趣的书，很可能就会落得普林斯顿街上的那位旧书店的老板
+            一般，因为阅读太多不是自己所关心的领域的知识，它对于你来说只是一地
+            的散钱。
+
+            **3. 掌握工具**
+
+            在这个阶段一定要掌握语文与合适的工具。要有一个外语可以非常流畅的阅
+            读，要有另外一个语文至少可以看得懂文章的标题，能学更多当然更好，但
+            是至少要有一个语文，不管是英文、日文、法文 ……，一定要有一个语文能够
+            非常流畅的阅读相关书籍，这是起码的前提。一旦这个工具没有了，你的视
+            野就会因此大受限制，因为语文就如同是一扇天窗，没有这个天窗你这房间
+            就封闭住了。为什么你要看得懂标题？因为这样才不会有重要的文章而你不
+            知道，如果你连标题都看不懂，你就不知道如何找人来帮你或是自己查相关
+            的数据。其它的工具，不管是统计或是其它的任何工具，你也一定要多掌握
+            ，因为你将来没有时间再把这样的工具学会。
+
+            **4. 突破学科间的界线**
+
+            应该要把跨学科的学习当作是一件很重要的事，但是跨学科涉及到的东西必
+            须要对你这棵知识树有帮助，要学会到别的领域稍微偷打几枪，到别的领域
+            去摄取一些概念，对于本身关心的问题产生另一种不同的启发，可是不要泛
+            滥无所归。为什么要去偷打那几枪？近几十年来，人们发现不管是科学或人
+            文，最有创新的部份是发生在学科交会的地方。为什么会如此？因为我们现
+            在的所有学科大部分都在西方十九世纪形成的，而中国再把它转借过来。十
+            九世纪形成这些知识学科的划分的时候，很多都带有那个时代的思想跟学术
+            背景，比如说，中研院的李院长的专长就是物理化学，他之所以得诺贝尔奖
+            就是他在物理和化学的交界处做工作。像诺贝尔经济奖，这二十年来所颁的
+            奖，如果在传统的经济学奖来看就是旁门走道，古典经济学岂会有这些东西
+            ，甚至心理学家也得诺贝尔经济奖，连 John Nash 这位数学家也得诺贝尔经
+            济奖，为什么？因为他们都在学科的交界上，学科跟学科、平台跟平台的交
+            界之处有所突破。在平台本身、在学科原本最核心的地方已经 search 太多
+            次了，因此不一定能有很大的创新，所以为什么跨领域学习是一件很重要的
+            事情。
+
+            常常一篇硕士论文或博士论文最重要、最关键的，是那一个统摄性的重要概
+            念，而通常你在本学科里面抓不到，是因为你已经泡在这个学科里面太久了
+            ，你已经拿着手电筒在这个小仓库里面照来照去照太久了，而忘了还有别的
+            东西可以更好解释你这些材料的现象，不过这些东西可遇而不可求。 John
+            Nash 这一位数学家为什么会得诺贝尔数学奖？为什么他在赛局理论的博士论
+            文，会在数十年之后得诺贝尔经济奖？因为他在大学时代上经济学导论的课
+            ，所以他认为数学可以用在经济方面来思考，而这个东西在一开始，他也没
+            有想到会有这么大的用处。他是在数学和经济学的知识交界之处做突破。有
+            时候在经济学这一个部分没有大关系，在数学的这一个部分也没有大关系，
+            不过两个加在一起，火花就会蹦出来。
+
+            **5. 论文题目要有延展性**
+
+            对一个硕士生或博士生来说，如果选错了题目，就是失败，题目选对了，还
+            有百分之七十胜利的机会。这个问题值得研一、博一的学生好好思考。你的
+            第一年其实就是要花在这上面，你要不断的跟老师商量寻找一个有意义、有
+            延展性的问题，而且不要太难。我在国科会当过人文处长，当我离开的时候
+            ，每次就有七千件申请案，就有一万四千个袋子，就要送给一万四千个教授
+            审查。我当然不可能看那么多，可是我有个重要的任务，就是要看申诉。有
+            些申诉者认为：“我的研究计划很好，我的著作很好，所以我来申诉。”申诉
+            通过的大概只有百分之十，那么我的责任就是在百分之九十未通过的案子正
+            式判决前，再拿来看一看。有几个印象最深常常被拿出来讨论的，就是这个
+            题目不必再做了、这个题目本身没有发展性，所以使我更加确认选对一个有
+            意义、有延展性、可控制、可以经营的题目是非常重要的。我的学生常常选
+            非常难的题目，我说你千万不要这样，因为没有人会仔细去看你研究的困难
+            度，对于难的题目你要花更多的时间阅读史料，才能得到一点点东西；要挤
+            很多东西，才能筛选出一点点内容，所以你最好选择一个难易适中的题目。
+
+            我写过好几本书，我认为我对每一本书的花的心力都是一样，虽然我写任何
+            东西我都不满意，但是在过程中我都绞尽脑汁希望把他写好。目前为止很多
+            人认为我最好的书，是我二十几岁刚到史语所那一年所写的那本书。我在那
+            本书花的时间并不长，那本书的大部分的稿子，是我和许添明老师同时在当
+            兵的军营里面写的，而且还是用我以前旧的笔记写的。大陆这些年有许多出
+            版社，反复要求出版我以前的书，尤其是这一本，我说：“不行。”因为我用
+            的是我以前的读书笔记，我怕引文有错字，因为在军队营区里面随时都要出
+            操、随时就要集合，手边又没有书，怎么可能好好的去核对呢？而如果要我
+            重新校正一遍，又因为引用太多书，实在没有力气校正。
+
+            为什么举这个例子呢？我后来想一想，那本书之所以比较好，可能是因为那
+            个题目可延展性大，那个题目波澜起伏的可能性大。很多人都认为，我最好
+            的书应该是剑桥大学出的那一本，不过我认为我最好的书一定是用中文写的
+            ，因为这个语文我能掌握，英文我没办法掌握得出神入化。读、写任何语文
+            一定要练习到你能带着三分随意，那时候你才可以说对于这一个语文完全理
+            解与精熟，如果你还无法达到三分的随意，就表示你还在摸索。
+
+            回到我刚刚讲的，其实每一本书、每一篇论文我都很想把它写好。但是有些
+            东西没办法写好，为什么？因为一开始选择的题目不够好。因此唯有选定题
+            目以后，你的所有训练跟努力才有价值。我在这里建议大家，选题的工作要
+            尽早做，所选的题目所要处理的材料最好要集中，不要太分散，因为硕士生
+            可能只有三年、博士生可能只有五年，如果你的材料太不集中，读书或看数
+            据可能就要花掉你大部分的时间，让你没有余力思考。而且这个题目要适合
+            你的性向，如果你不会统计学或讨厌数字，但却选了一个全都要靠统计的论
+            文，那是不可能做得好。
+
+            **6. 养成遵照学术格式的写作习惯**
+
+            另一个最基本的训练，就是平时不管你写一万字、三万字、五万字都要养成
+            遵照学术规范的习惯，要让他自然天成，就是说你论文的脚注、格式，在一
+            开始进入研究生的阶段就要培养成为你生命中的一个部份，如果这个习惯没
+            有养成，人家就会觉得这个论文不严谨，之后修改也要花很多时间，因为你
+            的论文规模很大，可能几百页，如果一开始弄错了，后来再重头改到尾，一
+            定很耗时费力，因此要在一开始就养成习惯，因为我们是在写论文而不是在
+            写散文，哪一个逗点应该在哪里、哪一个书名号该在哪里、哪一个地方要用
+            引号、哪一个要什么标点符号，都有一定的规定，用中文写还好，用英文有
+            一大堆简称。在 1960 年代***知识还很封闭的时候，有一个人从美国回来就
+            说：“美国有个不得了的情形，因为有一个人非常不得了。”有人问他为什么
+            不得了，他说：“因为这个人的作品到处被引用。”他的名字就叫 ibid 。所
+            谓 ibid 就是同前作者，这个字是从拉丁文发展出来的，拉丁文有一大堆简
+            称，像 et. al. 就是两人共同编的。英文有一本 [The Chicago Manual of
+            Style][douban] 就是专门说明这一些写作规范。各位要尽早学会中英文的写
+            作规范，慢慢练习，最后随性下笔，就能写出符合规范的文章。
+
+            **7. 善用图书馆**
+
+            图书馆应该是研究生阶段最重要的地方，**不必读每一本书，可是要知道有
+            哪些书**。我记得我做学生时，新进的书都会放在图书馆的墙上，而身为学
+            生最重要的事情，就是要把书名看一看。在某些程度上知道书皮就够了，但
+            是这仍和打计算机是不一样的，你要实际上熟悉一下那本书，摸一下，看一
+            眼目录。我知道现在从计算机就可以查到书名，可是我还是非常珍惜这种定
+            期去 browse 新到的书的感觉，或去看看相关领域的书长成什么样子。中研
+            院有一位院士是哈佛大学信息教授，他告诉我他在创造力最高峰的时候，每
+            个礼拜都到他们信息系图书室里，翻阅重要的信息期刊。所以图书馆应该是
+            身为研究生的人们，最熟悉的地方。不过切记不重要的不要花时间去看，你
+            们生活在信息泛滥的时代，跟我生长在信息贫乏的时代是不同的，所以生长
+            在这一个时代的你，要能有所取舍。我常常看我的学生引用一些三流的论文
+            ，却引得津津有味，我都替他感到难过，因为我强调要读有用、有价值的东
+            西。
+
+            **8. 留下时间，精致思考**
+
+            还要记得给自己保留一些思考的时间。一篇论文能不能出神入化、能不能引
+            人入胜，很重要的是在现象之上作概念性的思考，但我不是说一定要走理论
+            的路线，而是提醒大家要在一般的层次再提升两三步， 【Conceptualize】
+            你所看到的东西。**真切去了解，你所看到的东西是什么？整体意义是什么
+            ？整体的轮廓是什么？千万不要被枝节淹没，虽然枝节是你最重要的开始，
+            但是你一天总也要留一些时间好好思考、慢慢沉淀**。 conceptualize 是一
+            种非常难教的东西，我记得我念书时，有位老师信誓旦旦说要开一门课，教
+            学生如何 conceptualize，可是从来都没开成，因为这非常难教。我要提醒
+            的是，在被很多材料和枝节淹没的时候，要适时跳出来想一想，所看到的东
+            西有哪些意义？这个意义有没有广泛连结到更大层面的知识价值。
+
+            傅斯年先生来到 xxx 以后，同时担任中央研究院历史语言研究所的所长及台大
+            的校长。台大有个傅钟每小时钟声有二十一响、敲二十一次。以前有一个人
+            ，写了一本书叫《钟声二十一响》，当时很轰动。他当时对这二十一响解释
+            是说：因为台大的学生都很好，所以二十一响是欢迎国家元首二十一响的礼
+            炮。不久前我发现台大在每一个重要的古迹下面竖一个铜牌，我仔细看看傅
+            钟下的解释，才知道原来是因为傅斯年当台大校长的时候，曾经说过一句话
+            ：“**人一天只有二十一个小时，另外三小时是要思考的**。”所以才叫二十
+            一响。我觉得这句话大有道理，可是我觉得三小时可能太多，因为研究生是
+            非常忙的，但至少每天要留个三十分钟、一小时思考，想一想你看到了什么
+            ？学习跳到比你所看到的东西更高一点的层次去思考。
+
+            **9. 找到学习的楷模**
+
+            我刚到美国念书的时候，每次写报告头皮就重的不得了，因为我们的英文报
+            告三、四十页，一个学期有四门课的话就有一百六十页，可是你连脚注都要
+            从头学习。后来我找到一个好办法，就是我每次要写的时候，把一篇我最喜
+            欢的论文放在旁边，虽然他写的题目跟我写的都没关系，不过我每次都看他
+            如何写，看看他的注脚、读几行，然后我就开始写。就像最有名的男高音
+            Pavarotti 唱歌剧的时候都会捏着一条手帕，因为他说：“上舞台就像下地狱
+            ，太紧张了。”他为了克服紧张，他有习惯性的动作，就是捏着白手帕。我想
+            当年那一篇论文抽印本就像是我的白手帕一样，能让我开始好好写这篇报告
+            ，我学习它里面如何思考、如何构思、如何照顾全体、如何用英文作脚注。
+            **好好的把一位大师的作品读完，开始模仿和学习他**，是入门最好的方法
+            ，逐步的，你也开始写出自己的东西。我也常常鼓励我的学生，出国半年或
+            是一年到国外看看。像现在国科会有各式各样的机会，可以增长眼界，可以
+            知道现在的餐馆正在卖些什么菜，回来后自己要作菜也才知道要如何着手。
+
+        四、用两条腿走路，练习培养自己的兴趣
+
+        :   最后还有一点很重要的，就是我们的人生是两只脚，我们不是靠一只脚走路。
+            做研究生的时代，固然应该把所有的心思都放在学业上，探索你所要探索的
+            那些问题，可是那只是你的一只脚，另外还有一只脚是要学习培养一、两种
+            兴趣。很多人后来会发现他的右脚特别肥重（包括我自己在内），也就是因
+            为忘了培养左脚。很多很有名的大学者最后都陷入极度的精神困扰之中，就
+            是因为他只是培养他的右脚，他忘了培养他的左脚，他忘了人生用两只脚走
+            路，他少了一个小小的兴趣或嗜好，用来好好的调解或是排遣自己。
+
+            去年夏天，香港《亚洲周刊》要访问我，我说：“我不想接受访问，我不是重
+            要的人。”可是后来他们还是把一个简单的对话刊出来了，里面我只记得讲了
+            一段话：做一个研究生或一个学者，有两个感觉最重要 -- **责任感与罪恶
+            感**。你一定要有很大的责任感，去写出好的东西，如果责任感还不够强，
+            还要有一个罪恶感，你会觉得如果今天没有好好做几个小时的工作的话，会
+            有很大的罪恶感。除非是了不得的天才，不然即使爱因斯坦也是需要很努力
+            的。很多很了不得的人，他只是把所有的努力集中在一百页里面，他花了一
+            千小时和另外一个人只花了十个小时，相对于来说，当然是那花一千个小时
+            所写出来的文章较好。所以为什么说要赶快选定题目？因为如果太晚选定一
+            个题目，只有一年的时间可以好好耕耘那个题目，早点选定可以有二、三年
+            耕耘那个题目，是三年做出的东西好，还是一年的东西好？如果我们的才智
+            都一样的话，将三年的努力与思考都灌在上面，当然比一年还要好。
+
+        五、营造卓越的大学，分享学术的氛围
+
+        :   现在很多人都在讨论，何谓卓越的大学？我认为一个好的大学，学校生活的
+            一大部份，以及校园的许多活动，直接或间接都与学问有关，同学在咖啡厅
+            里面谈论的，直接或间接也都会是学术相关的议题。教授们在餐厅里面吃饭
+            ，谈的是“有没有新的发现”？或是哪个人那天演讲到底讲了什么重要的想法
+            ？一定是沉浸在这种氛围中的大学，才有可能成为卓越大学。那种交换思想
+            学识、那种互相教育的气氛不是花钱就有办法获得的。我知道钱固然重要，
+            但不是唯一的东西。一个卓越的大学、一个好的大学、一个好的学习环境，
+            表示里面有一个共同关心的焦点，如果没有的话，这个学校就不可能成为好
+            的大学。
+
+        [douban]: http://book.douban.com/subject/1795992/
+
+暗时间
+
+:   序言 为什么人人都该学点心理学
+
+    -   大脑是我们最重要的工具，要正确利用这个工具，唯一的途径就是去了解它，尤其是了解它的弱点
+    -   学会思考就是学会认识到人类思维中的种种谬误
+
+    notes
+
+    -   Cognitive bias
+    -   Critical thinking
+    -   Bounded rationality
+    -   Reasoning
+
+
+    **第一篇 暗时间**
+
+    暗时间
+
+    -   实际投入的是时间和效率的乘积
+    -   时间之沙
+    -   这就是为什么专注的人比不专注的人在时间利用效率上高的多的原因
+    -   迅速进入状态的能力是可以锻炼的
+    -   能够迅速进入专注状态，以及能够长期保持专注状态，是高效学习的两个最重要的习惯
+    -   抗干扰（马桶时间）
+
+    设计你自己的进度条
+
+    -   GTD，时间的分割，管理进度
+    -   不要过早退出循环
+    -   兴趣遍地都是，专注于持之以恒才是真正稀缺的
+    -   选择很多，细微的选择让人不同
+    -   反思是让人得以改进自己的最重要的思维品质
+    -   不要做布里丹的驴子，宁可试错，不可犹豫不前
+    -   自学是学习的主旋律
+    -   不怪书，怪自己
+
+    如何有效的记忆与学习
+
+    -   你所拥有的知识并不取决于你记得多少，而在于它们能否在恰当的时候被回忆起来
+    -   精细编码提供了更多的提取线索
+    -   对于理解记忆的人来说，知识中包含了精细的概念、逻辑、一般的解题原则、通用的解题首发、背景知识、类似的问题等等无数的记忆和提取线索，甚至当时的环境、味道、声音
+    -   甚至是语言背景（毛泽东、自由女神像）
+    -   Cue-dependent forgetting
+    -   抽象，发现本质去除庞杂
+    -   和情绪挂钩，以第一人称视角加深印象
+    -   Inductive reasoning
+    -   如果你想真正得到一些知识，你最好过滤一下你的信息，否则你只是在别人的思考中得意着
+
+    学习密度与专注力
+
+    -   最不缺的是业余时间，最缺的是专注精神；非凡的注意力造就非凡的专家
+    -   寻常人（mediocre） /,midɪ'okɚ/
+    -   要事第一：重要但不紧迫的事
+
+    一直以来伴随我的一些学习习惯
+
+    -   **学习与思考**
+        +   Google & Wikipedia
+        +   择书挑剔甚过买衣服
+        +   做读书笔记，仅仅用自己的语言表述一下就能加大的加深影响和理解（获得多少并不在与你读了多少，而在于你思考了多少）
+        +   思考的小习惯，让脑子里一直有思考的内容（还避免了焦虑）
+        +   多看心理学与思维的书（跨学科，metaknowledge）
+        +   学一项知识的三个重要问题：
+            1.  本质（是什么？）
+            2.  第一原则（遵循什么规则？）
+            3.  知识结构（如何成为体系？）
+        +   学习和思考中要多问几个为什么：
+            1.  自己的问题（疑惑）？
+            2.  自己的收获？
+            3.  想象讲给别人听（费曼方法）
+            4.  想象将给完全不懂得人听（如何抓住本，形象地表达出来）
+            5.  自省：注意自己思维的脉络。
+            6.  反驳自己
+            7.  真的理解了吗？你确定？再好好想想。
+
+    -   **时间和效率**
+        +   趁热打铁度过开始时期的最难阶段
+        +   重要的事第一（重要但不紧迫）
+        +   把大块时间留给重要的事，在细碎时间处理简单工作
+        +   知识的本质，以不变应万变
+        +   提前积累
+        +   抬头看外面，专注但不局限
+        +   总结所学的知识
+        +   看书（条理性更强、更系统）
+        +   阅读计划（参考[《奇特的一生》]
+        +   学习前要积攒“疑惑感”
+        +   提高速度，有选择的阅读
+        +   **时间碎片可用于阅读**
+
+    -   **知识结构**
+        +   抓住不变量
+        +   分析问题和解决问题的思维方法
+    -   **习惯的养成**
+        +   一日三省
+        +   认知技巧（hacks，比如 if... then... 思维范式）
+        +   没有银弹，知难而不退
+
+    我在南大的七年
+
+    思维改变生活
+
+    逃出你的肖申克
+
+    书写式为了更好的思考
+
+    为什么你从现在就应该开始写博客
+
+    我不想与我不能
+
+    遇到问题为什么应该自己动手
+
+    什么才是你的不可替代性和核心竞争力
+
+    和波利亚学解题
+
+    refs and see also
+
+      - [刘未鹏，*暗时间*，电子工业出版社，2011](http://book.douban.com/subject/6709809/)
+      - [《奇特的一生》]: http://book.douban.com/subject/1115353/
+
+-   printenv PATH               # like echo $PATH, but seems more professional
+
+-   tr '[:lower:]' '[:upper:]'
+
+-   Define Functions
+
+    ```bash
+    usage ()
+    {
+        cat <<EOF
+    some illustrations
+    here
+    A huge File Descriptino
+    EOF
+    }
+    ```
+
+-   Parse Parameters
+
+    ```bash
+    for arg in $@; do
+        case $arg in
+            -h|--help)
+                usage
+                exit 0
+                ;;
+        esac
+    done
+
+    if [ $# -gt 2 ] ; then
+        echo "ERROR: expecting 2 parameters. Please see option --help"
+        exit 1
+    fi
+
+    require_tool $@
+    ```
+
+-   Read
+
+    ```bash
+    read "a?$1 [y/N] "
+    if [[ $a == "N" || $a == "n" || $a = "" ]]; then
+        return 0
+    fi
+    return 1
+    ```
+
+-   tput cols
+
+-   You Should  man these
+
+    ```bash
+    man test
+    ```
+
+-   Skills
+
+    printf '\033[0;34m%s\033[0m\n' "Upgrading Oh My Zsh" (better looking than inlined color prompt)
+
+-   Words You should know
+
+    source: source /etc/profile
+
+    profile
+
+    ack-grep
+
+-   Words You should Google
+
+---
+
+1. [C][c-reserved-words]
+2. [C#][csharp-reserved-words]
+3. [CSS][css-reserved-words]
+4. [HTML][html-reserved-words]
+5. [Java][java-reserved-words]
+6. [JavaScript][javascript-reserved-words]
+7. [Python][python-reserved-words]
+8. [Ruby][ruby-reserved-words]
+
+[c-reserved-words]: http://tigcc.ticalc.org/doc/keywords.html
+[csharp-reserved-words]: http://msdn.microsoft.com/en-us/library/x53a06bb.aspx
+[css-reserved-words]: http://www.w3schools.com/cssref/
+[html-reserved-words]: http://www.w3schools.com/tags/att_global_accesskey.asp
+[java-reserved-words]: http://en.wikipedia.org/wiki/List_of_Java_keywords
+[javascript-reserved-words]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Reserved_Words
+[python-reserved-words]: https://docs.python.org/3.0/reference/lexical_analysis.html#id8
+[ruby-reserved-words]: http://www.tutorialspoint.com/ruby/ruby_quick_guide.htm
+
+```tzx-bigquote
+                                    OOOOO
+                                   O     O
+                                   O
+                                   O
+                                   O
+                                   O     O
+                                    OOOOO
+================================================================================
+auto                        entry                       static
+break                       enum                        struct
+case                        extern                      switch
+char                        float                       typeof
+const                       for                         union
+continue                    goto                        unsigned
+default                     int                         unused
+double                      long                        void
+else                        register                    volatile
+                            return                      while
+                            short
+                            signed
+                            sizeof
+
+
+                            O
+                            O    OO    O    O    OO
+                            O   O  O   O    O   O  O
+                            O  O    O  O    O  O    O
+                      O     O  OOOOOO  O    O  OOOOOO
+                      O     O  O    O   O  O   O    O
+                       OOOOO   O    O    OO    O    O
+================================================================================
+abstract                    goto                            this
+assert                      if                              throw
+boolean                     implements                      throws
+break                       import                          transient
+byte                        instanceof                      true
+case                        int                             try
+catch                       interface                       void
+class                       long                            volatile
+const                       native                          while
+continue                    new
+default                     null
+do                          package
+double                      protected
+else                        public
+enum                        return
+extends                     short
+false                       static
+final                       strictfp
+finally                     super
+float                       switch
+for                         synchronized
+
+                OOOOOO
+                O     O   O   O   OOOOO  O    O   OOOO   O    O
+                O     O    O O      O    O    O  O    O  OO   O
+                OOOOOO      O       O    OOOOOO  O    O  O O  O
+                O           O       O    O    O  O    O  O  O O
+                O           O       O    O    O  O    O  O   OO
+                O           O       O    O    O   OOOO   O    O
+================================================================================
+and                             False                   Nono
+as                              finally                 not
+assert                          for                     or
+break                           from                    pass
+class                           global                  raise
+continue                        if                      return
+def                             import                  True
+del                             in                      try
+elif                            is                      while
+else                            lambda                  with
+except                          nonlocal                yield
+
+                        OOOOOO
+                        O     O  O    O  OOOOO    O   O
+                        O     O  O    O  O    O    O O
+                        OOOOOO   O    O  OOOOO      O
+                        O   O    O    O  O    O     O
+                        O    O   O    O  O    O     O
+                        O     O   OOOO   OOOOO      O
+================================================================================
+BEGIN                           end                             retry
+END                             ensure                          return
+alias                           false                           self
+and                             for                             super
+begin                           if                              then
+break                           in                              true
+case                            module                          undef
+class                           next                            unless
+def                             nil                             when
+defined?                        not                             while
+do                              or                              __FILE__
+else                            redo                            __LINE__
+elsif                           rescue
+
+                                OOOOO         O O
+                               O     O        O O
+                               O            OOOOOOO
+                               O              O O
+                               O            OOOOOOO
+                               O     O        O O
+                                OOOOO         O O
+================================================================================
+abstract                        for                         public
+add                             foreach                     readonly
+alias                           from                        ref
+as                              get                         remove
+ascending                       global                      return
+async                           goto                        sbyte
+await                           group                       sealed
+base                            group                       select
+bool                            if                          set
+break                           implicit                    short
+byte                            in                          sizeof
+case                            int                         stackalloc
+catch                           interface                   static
+char                            internal                    string
+checked                         into                        struct
+class                           is                          switch
+const                           join                        this
+continue                        let                         throw
+decimal                         lock                        true
+default                         long                        try
+delegate                        namespace                   typeof
+descending                      new                         ulong
+do                              null                        unchecked
+double                          object                      unit
+dynamic                         operator                    unsafe
+else                            orderby                     ushort
+enum                            out                         using
+event                           out                         value
+explicit                        override                    var
+extern                          paitial                     virtual
+false                           params                      void
+finally                         partial                     volatile
+fixed                           private                     where
+float                           protected                   while
+                                                            yield
+
+      O                          OOOOO
+      O    OO    O    O    OO   O     O   OOOO   OOOOO      O    OOOOO    OOOOO
+      O   O  O   O    O   O  O  O        O    O  O    O     O    O    O     O
+      O  O    O  O    O  O    O  OOOOO   O       O    O     O    O    O     O
+O     O  OOOOOO  O    O  OOOOOO       O  O       OOOOO      O    OOOOO      O
+O     O  O    O   O  O   O    O O     O  O    O  O   O      O    O          O
+ OOOOO   O    O    OO    O    O  OOOOO    OOOO   O    O     O    O          O
+================================================================================
+break                           finally                     this
+case                            for                         throw
+catch                           functin                     try
+continue                        if                          typeof
+debugger                        in                          var
+default                         instanceof                  void
+delete                          new                         while
+do                              return                      with
+else                            switch
+```
+
+---
+
+Metaprogramming: What We Can
+
+-   Write a program to connect to external system
+-   Stretch and Twist Ruby to meet your need, not just adapt to the language as it is
+-   All in all, **Metaprogramming is writing code that writes code.**
+
+ob, obarray
+
+Functions
+
+```lisp
+(make-symbol "foo") ==> make one
+(intern "foo") ==> get one
+(defcustom ...)
+
+(defun fun2 (&key ((myoption var))) (print var))
+(fun2 'myoption "good")
+```
+
+Ruby is...
+
+-   A dynamic, open source programming language with a focus on simplicity and
+    productivity. It has an elegant syntax that is natural to read and easy to
+    write.
+-   Documentation
+    +   [Try Ruby in 15 minutes][try-ruby]: fun, but the web site works slowly. see [here][terrible-try-ruby]
+    +   [Ruby Koans][ruby-koans]
+    +   [Ruby in Twenty Minutes][ruby-in-20-mins]
+
+[what-ruby-is]: https://www.ruby-lang.org/en/
+[try-ruby]: http://tryruby.org/levels/1/challenges/0
+[ruby-koans]: http://rubykoans.com/
+[ruby-in-20-mins]: https://www.ruby-lang.org/en/documentation/quickstart/
+[terrible-try-ruby]: http://gnat-tang-shared-image.qiniudn.com/201404-terrible-try-ruby.png
+
+Ruby in 20 Minutes
+------------------
+
+1.  Run `irb`{.bash} in your shell
+2.  Simple Examples
+
+    ```
+    "hello world"
+    puts "hello world"
+    3 + 2
+    3 * 2
+    3 ** 2
+    Math.sqrt(9)
+    ```
+
+3.  Modules Group Code by Topic
+
+    `Math`: built-in module, contains `sin()`, `cos()`, etc
+
+4.  Defs
+
+    first ruby function
+
+    ```ruby
+    def h
+        puts "Hello World!"
+    end
+    h
+    h()
+    ```
+
+    second ruby function
+
+    ```
+    def h(name = "GNAT")
+        puts "Hello #{name.capitalize}"
+    end
+    h("gnat")
+    ```
+
+5.  Evoling into a greater
+
+    ```ruby
+    class Greeter
+      def initialize(name = "World")
+        @name = name
+      end
+      def say_hi
+        puts "Hi #{@name}!"
+      end
+      def say_bye
+        puts "Bye #{@name}, come back soon."
+      end
+    end
+    g = Greeter.new("Gnat")
+    g.say_hi
+    g.say_bye
+    g.instance_methods
+    g.instance_methods(false)
+    g.respond_to?("name") # ==> false
+    g.respond_to?("say_hi") # ==> true
+    g.respond_to?("to_s") # ==> true
+    => true
+    ```
+
+6.  A Better One
+
+    ```ruby
+    #!/usr/bin/env ruby
+
+    class MegaGreeter
+      attr_accessor :names
+
+      # Create the object
+      def initialize(names = "World")
+        @names = names
+      end
+
+      # Say hi to everybody
+      def say_hi
+        if @names.nil?
+          puts "..."
+        elsif @names.respond_to?("each")
+          # @names is a list of some kind, iterate!
+          @names.each do |name|
+            puts "Hello #{name}!"
+          end
+        else
+          puts "Hello #{@names}!"
+        end
+      end
+
+      # Say bye to everybody
+      def say_bye
+        if @names.nil?
+          puts "..."
+        elsif @names.respond_to?("join")
+          # Join the list elements with commas
+          puts "Goodbye #{@names.join(", ")}.  Come back soon!"
+        else
+          puts "Goodbye #{@names}.  Come back soon!"
+        end
+      end
+
+    end
+
+
+    if __FILE__ == $0
+      mg = MegaGreeter.new
+      mg.say_hi
+      mg.say_bye
+
+      # Change name to be "Zeke"
+      mg.names = "Zeke"
+      mg.say_hi
+      mg.say_bye
+
+      # Change the name to an array of names
+      mg.names = ["Albert", "Brenda", "Charles",
+        "Dave", "Engelbert"]
+      mg.say_hi
+      mg.say_bye
+
+      # Change to nil
+      mg.names = nil
+      mg.say_hi
+      mg.say_bye
+    end
+    ```
+
+LaTeX
+
+:   -   The virtues of open source
+    -   Separation of form and content
+    -   Portability
+    -   The first latex file: example1.tex, compile it: `pdflatex example1.tex`
+    -   Exploring the document structure
+        +   `\documentclass` ==> documentclass is called a `command`
+        +   preamble
+        +   `\begin{document}`, `\end{document}`, begin\end is called `environment`
+        +   `\maketitle`, `\section`
+    -   Understanding LaTeX commands
+        +   `\command`
+        +   `\command{argument}`
+        +   `\command[optional arguments]{argument}`
+    -   How LaTeX reads your input
+        +   LaTeX treats multiple spaces just like a single space
+        +   A blank line denotes a paragraph break. Like spaces, multiple empty lines are treated as one.
+        +   **Briefly said, spaces separate words, empty lines separate paragraphs.**
+    -   Special characters
+        +   `\%`, `\#`, `\_`, `\{`, `\}`, etc
+    -   Formatting text – fonts, shapes, and styles
+        +   `\emph{emphasized}`
+        +   `\textit{italic}`
+        +   `\textbf{boldface}`
+        +   `\textsl{slanted}`
+        +   `\textsc{Small Caps}`
+        +   `\textit{\textbf{nested}}`
+        +   `\emph{See how \emph{emphasizing} looks when nested.}`
+        +   ![][tex-emphasized]
+
+            ```latex
+            \section{\textsf{\LaTeX\ resources in the internet}} % use sans sarif font
+            The best place for downloading LaTeX related software is CTAN.
+            Its address is \texttt{http://www.ctan.org}.
+            ```
+        +   `\textrm`, Roman text
+        +   **monospaced** or a **typewriter** font
+
+    -   Switching the font family
+
+        ```latex
+        \section{\sffamily\LaTeX\ resources in the internet}
+        The best place for downloading LaTeX related software is CTAN.
+        Its address is \ttfamily http://www.ctan.org\rmfamily.
+        ```
+
+        +   `\sffamily`, sans serif
+        +   `\ttfamily`, typewriter font
+        +   `\rmfamily`, roman font family
+
+    -   Summarizing font commands and declarations
+
+        ![][tex-fonts]
+
+    -   Delimiting the effect of commands
+
+        +   exploring grouping by braces
+
+        ```latex
+        {\sffamily
+        Text can be {\em emphasized}.
+        Besides being {\itshape italic} words could be {\bfseries bold},
+        {\slshape slanted} or typeset in {\scshape Small Caps}.
+        Such commands can be {\itshape\bfseries nested}.}
+        {\em See how {\em emphasizing} looks when nested.}
+        ```
+
+        +   exploring font sizes
+
+            ```latex
+            \noindent\tiny We \scriptsize start \footnotesize \small small,
+            \normalsize get \large big \Large and \LARGE bigger,
+            \huge huge and \Huge gigantic!
+            ```
+
+        +   Using environments
+
+            ```latex
+            \begin{huge}
+            \bfseries
+            Another small example (with bigskip)
+            \end{huge}
+            \bigskip
+            This is just another small illustrative example.
+            ```
+
+NINETEEN EIGHTY-FOUR: big brother is watching you
+
+:   George Orwell
+
+    > This novel is an anti-total cautionary tale about the betrayal of a
+    > revolution by its defenders.
+
+在职场里，收到指令要回复，遇到困难要沟通，项目进展要按节点通报，安排要落实。这
+不是繁文缛节，这是一个公司的基本规范。要尽心尽力，说到做到，有始有终，积极主动，
+你才能成长，公司也才能成长。不要玻璃心，也不要有惰性，更不要骄横，有多少人，
+有才华，有远志，不约束自己，最终也不过暴殄天物。
+
 **用 control 加鼠标选中来选择多个片段。**
 
 [windows - Software for multiple copy/paste? - Stack Overflow](http://stackoverflow.com/questions/521244/software-for-multiple-copy-paste)
@@ -31,15 +2295,15 @@ Notes | 笔记[^1]
 
 [哥伦比亚（哥伦比亚共和国）_百度百科](http://baike.baidu.com/link?url=q0aVEEiSrDiC-dR11wR-RWp6EJF6Y93KhS3Awu3xf_HRN8avpiufX-QseqPkbzEKooOu8cm21i-2aJJBSSisGB9ZI3Lna8w2dk9C0NmsNMi)
 
-:   哥伦比亚共和国（西班牙语：República de Colombia），国土位于南美洲西北部，西
-    临太平洋，北临加勒比海，东通委内瑞拉，东南通巴西，南与秘鲁、厄瓜多尔，西北
+:   哥伦比亚共和国（西班牙语：República de **Colombia**），国土位于**南美洲西北部**，
+    西临太平洋，北临加勒比海，东通委内瑞拉，东南通巴西，南与秘鲁、厄瓜多尔，西北
     与巴拿马为邻。为南美洲国家联盟成员国。
 
 [香椿_百度百科](http://baike.baidu.com/view/64966.htm)
 
 :   ![](http://e.hiphotos.baidu.com/baike/s%3D220/sign=3a2ec6508594a4c20e23e0293ef51bac/b64543a98226cffcf2b198edbb014a90f703ead2.jpg)
 
-    `[xiāng chūn]`, 香椿（学名：Toona sinensis）又名香椿芽、香桩头、大红椿树、椿
+    **xiāng chūn**, 香椿（学名：Toona sinensis）又名香椿芽、香桩头、大红椿树、椿
     天等，在安徽地区也有叫春苗。
 
     每年的春天是吃野菜的好时节，滨城市场上各种野菜陆续上市。大多数的野菜都是成
@@ -52,6 +2316,8 @@ Notes | 笔记[^1]
 Magit
 
 :   It's Magit! A Git Porcelain inside Emacs.
+
+    `['pɔrs(ə)lɪn]`
 
     我突然发现，碰瓷怎么说了……“You broke my porcelain, you should pay for it!”
 
@@ -90,7 +2356,7 @@ Magit
     pronounced "shīfu") as **an honorific title for the highest masters**, but it
     also may be used in respectful address of **monks and nuns** generally.
 
-    connote `[kə'noʊt]` v.意味；暗示；隐含
+    **connote** `[kə'noʊt]` v.意味；暗示；隐含
 
     refs and see also
 
@@ -161,12 +2427,12 @@ Magit
       - 日本語組版処理の要件
       - [Requirements for Japanese Text Layout](https://www.w3.org/TR/jlreq/ja/)
 
-    找一整天，找个书店或图书馆，去那儿翻阅有大量表格的书，翻一整天。你须要首先见识
-    表格设计的可能性，然后学习——哪怕照抄也好，然后根据你们具体的情况来设计方案。
+    找一整天，找个书店或图书馆，去那儿翻阅有大量表格的书，翻一整天。**你须要首先见识
+    表格设计的可能性，然后学习——哪怕照抄也好，然后根据你们具体的情况来设计方案。**
 
-    为什么这么说？我最近在排一本八百多页五百多个表格的书（其中 493 个表格集中在 320
-     页里，常常几十个表格连续出现），休息时看到另外一本书上简练的表格设计便发现自己
-    之前的尝试方向全都没有意义，豁然开朗。
+    为什么这么说？我最近在排一本八百多页五百多个表格的书（其中 493 个表格集中在
+    320 页里，常常几十个表格连续出现），休息时看到另外一本书上简练的表格设计便
+    发现**自己之前的尝试方向全都没有意义**，豁然开朗。
 
 [写给大家看的中文排版指南-月光博客](http://www.williamlong.info/archives/4483.html)
 

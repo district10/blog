@@ -8,8 +8,8 @@ tags:
     - statistics
 ...
 
-Probability and Statistics[^virgo]
-==================================
+Probability and Statistics
+==========================
 
 \newcommand\Beta{\operatorname{Beta}}
 \newcommand\R{\operatorname{R}}
@@ -22,108 +22,125 @@ TODO:
 
 </div>
 
-[^virgo]: 这篇长笔记最让我纠结的是到底应该把 refs and see also 放在全文最后，还是每个段落。
-
-    为了不让自己继续纠结下去，我决定放到全文最后，好处是可以排序。而且不会文章里到处都是链接。
-
 MISC Notes
 
--   说 chi-squared 和 chi-square，都可以
--   全概率：原因 -> 结果
--   贝叶斯：结果 -> 原因
--   P(A|B) > P(A)
--   P(A|B) = P(A)
--   P(A|B) < P(A)
--   相关（线性相关）
--   binomial, `[baɪ'nomɪəl]`
--   bernoulli, `[bə:'nu:li]`
--   poisson, `/ˈpwɑːsɒn/`
--   deviation, `['divɪ'eʃən]`
--   cumulative, `['kjumjəletɪv]`
--   均方误差（mean square error）
--   homoscedasticity, 方差齐性, `['hɔməusi,dæs'tisəti]`
--   fiducial, `[fɪ'djuːʃ(ə)l]`
--   bayesian, `['beʒən]`
--   conjugate, `['kɑndʒəɡet]`, 共轭的
--   一些蛋疼的名词
+:   -   说 chi-squared 和 chi-square，都可以, 维基上是 chi-squared，用这个比较好。
 
-    An **independent variable** is also known as a "predictor variable",
-    "regressor", "controlled variable", "manipulated variable", "explanatory
-    variable", "exposure variable" (see reliability theory), "risk factor" (see
-    medical statistics), "feature" (in machine learning and pattern
-    recognition) or an "input variable."
+    -   全概率：原因 -> 结果
 
-    A **dependent variable** is also known as a "response variable", "regressand",
-    "predicted variable", "measured variable", "explained variable",
-    "experimental variable", "responding variable", "outcome variable", and
-    "output variable".
+    -   贝叶斯：结果 -> 原因
 
-    "Explanatory variable" is preferred by some authors over "independent
-    variable" when the quantities treated as "independent variables" may not be
-    statistically independent. If the independent variable is referred to as an
-    "explanatory variable" then the term "response variable" is preferred by
-    some authors for the dependent variable.
+    -   P(A|B) > P(A)
 
-    "Explained variable" is preferred by some authors over "dependent variable"
-    when the quantities treated as "dependent variables" may not be
-    statistically dependent. If the dependent variable is referred to as an
-    "explained variable" then the term "predictor variable" is preferred by
-    some authors for the independent variable.
+    -   P(A|B) = P(A)
 
-    Variables may also be referred to by their form: continuous,
-    binary/dichotomous, nominal categorical, and ordinal categorical, among
-    others.
+    -   P(A|B) < P(A)
 
-    A variable may be thought to alter the dependent or independent variables,
-    but may not actually be the focus of the experiment. So that variable will
-    be kept constant or monitored to try to minimise its effect on the
-    experiment. Such variables may be designated as either a "controlled
-    variable", "control variable", or "extraneous variable".
+    -   相关（线性相关）
 
-    Extraneous variables, if included in a regression as independent variables,
-    may aid a researcher with accurate response parameter estimation,
-    prediction, and goodness of fit, but are not of substantive interest to the
-    hypothesis under examination. For example, in a study examining the effect
-    of post-secondary education on lifetime earnings, some extraneous variables
-    might be gender, ethnicity, social class, genetics, intelligence, age, and
-    so forth. A variable is extraneous only when it can be assumed (or shown)
-    to influence the dependent variable. If included in a regression, it can
-    improve the fit of the model. If it is excluded from the regression and if
-    it has a non-zero covariance with one or more of the independent variables
-    of interest, its omission will bias the regression's result for the effect
-    of that independent variable of interest. This effect is called confounding
-    or omitted variable bias; in these situations, design changes and/or
-    statistical control is necessary.
+    -   binomial, `[baɪ'nomɪəl]`
 
-    Extraneous variables are often classified into three types:
+    -   bernoulli, `[bə:'nu:li]`
 
-      - Subject variables, which are the characteristics of the individuals
-        being studied that might affect their actions. These variables include
-        age, gender, health status, mood, background, etc.
-      - Blocking variables or experimental variables are characteristics of the
-        persons conducting the experiment which might influence how a person
-        behaves. Gender, the presence of racial discrimination, language, or
-        other factors may qualify as such variables.
-      - Situational variables are features of the environment in which the
-        study or research was conducted, which have a bearing on the outcome of
-        the experiment in a negative way. Included are the air temperature,
-        level of activity, lighting, and the time of day.
+    -   poisson, `/ˈpwɑːsɒn/`
 
-    In quasi-experiments, differentiating between dependent and other variables
-    may be downplayed in favour of differentiating between those variables that
-    can be altered by the researcher and those that cannot.[citation needed]
-    Variables in quasi-experiments may be referred to as "extraneous
-    variables", "subject variables", "blocking variables", "situational
-    variables", "pseudo-independent variables", "ex post facto variables",
-    "natural group variables" or "non-manipulated variables".
+    -   deviation, `['divɪ'eʃən]`
 
-    In modelling, variability that is not covered by the independent variable
-    is designated by e_i and is known as the "residual", "side effect",
-    "error", "unexplained share", "residual variable", or "tolerance".
+    -   cumulative, `['kjumjəletɪv]`
 
-    refs and see also
+    -   均方误差（mean square error）
 
-      - [Dependent and independent variables - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dependent_and_independent_variables)
+    -   homoscedasticity, homo-sce-das-ti-city, 方差齐性, `['hɔməusi,dæs'tisəti]`
+
+    -   fiducial, `[fɪ'djuːʃ(ə)l]`
+
+    -   bayesian, `['beʒən]`
+
+    -   conjugate, `['kɑndʒəɡet]`, 共轭的
+
+
+
+        成对的；结合的；【化, 数, 物】共轭的；【语】同源 [根] 的 v.（根据数、人称、时态等）列举（动词）的变化形式
+
+    -   一些蛋疼的名词
+
+        An **independent variable** is also known as a "predictor variable",
+        "regressor", "controlled variable", "manipulated variable", "explanatory
+        variable", "exposure variable" (see reliability theory), "risk factor" (see
+        medical statistics), "feature" (in machine learning and pattern
+        recognition) or an "input variable."
+
+        A **dependent variable** is also known as a "response variable", "regressand",
+        "predicted variable", "measured variable", "explained variable",
+        "experimental variable", "responding variable", "outcome variable", and
+        "output variable".
+
+        "Explanatory variable" is preferred by some authors over "independent
+        variable" when the quantities treated as "independent variables" may not be
+        statistically independent. If the independent variable is referred to as an
+        "explanatory variable" then the term "response variable" is preferred by
+        some authors for the dependent variable.
+
+        "Explained variable" is preferred by some authors over "dependent variable"
+        when the quantities treated as "dependent variables" may not be
+        statistically dependent. If the dependent variable is referred to as an
+        "explained variable" then the term "predictor variable" is preferred by
+        some authors for the independent variable.
+
+        Variables may also be referred to by their form: continuous,
+        binary/dichotomous, nominal categorical, and ordinal categorical, among
+        others.
+
+        A variable may be thought to alter the dependent or independent variables,
+        but may not actually be the focus of the experiment. So that variable will
+        be kept constant or monitored to try to minimise its effect on the
+        experiment. Such variables may be designated as either a "controlled
+        variable", "control variable", or "extraneous variable".
+
+        Extraneous variables, if included in a regression as independent variables,
+        may aid a researcher with accurate response parameter estimation,
+        prediction, and goodness of fit, but are not of substantive interest to the
+        hypothesis under examination. For example, in a study examining the effect
+        of post-secondary education on lifetime earnings, some extraneous variables
+        might be gender, ethnicity, social class, genetics, intelligence, age, and
+        so forth. A variable is extraneous only when it can be assumed (or shown)
+        to influence the dependent variable. If included in a regression, it can
+        improve the fit of the model. If it is excluded from the regression and if
+        it has a non-zero covariance with one or more of the independent variables
+        of interest, its omission will bias the regression's result for the effect
+        of that independent variable of interest. This effect is called confounding
+        or omitted variable bias; in these situations, design changes and/or
+        statistical control is necessary.
+
+        Extraneous variables are often classified into three types:
+
+          - Subject variables, which are the characteristics of the individuals
+            being studied that might affect their actions. These variables include
+            age, gender, health status, mood, background, etc.
+          - Blocking variables or experimental variables are characteristics of the
+            persons conducting the experiment which might influence how a person
+            behaves. Gender, the presence of racial discrimination, language, or
+            other factors may qualify as such variables.
+          - Situational variables are features of the environment in which the
+            study or research was conducted, which have a bearing on the outcome of
+            the experiment in a negative way. Included are the air temperature,
+            level of activity, lighting, and the time of day.
+
+        In quasi-experiments, differentiating between dependent and other variables
+        may be downplayed in favour of differentiating between those variables that
+        can be altered by the researcher and those that cannot.[citation needed]
+        Variables in quasi-experiments may be referred to as "extraneous
+        variables", "subject variables", "blocking variables", "situational
+        variables", "pseudo-independent variables", "ex post facto variables",
+        "natural group variables" or "non-manipulated variables".
+
+        In modelling, variability that is not covered by the independent variable
+        is designated by e_i and is known as the "residual", "side effect",
+        "error", "unexplained share", "residual variable", or "tolerance".
+
+        refs and see also
+
+          - [Dependent and independent variables - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dependent_and_independent_variables)
 
 [Probability Cheatsheet](http://www.wzchen.com/probability-cheatsheet)
 
@@ -1605,6 +1622,10 @@ Beta function
     by Jacques Binet; its symbol Β is a Greek capital β rather than the similar
     Latin capital B.
 
+    其实是两个参数控制了形状。这个形状可能是某个 rv 的概率密度。如果 x = y = 1,
+    于是变成了 0-1 连续均匀分布。因为对称性，a，b 大于 1 的时候，形状是 bell shape，
+    如果 a 更大，整体越右偏。
+
     properties
 
     -   **symmetric**: $\Beta(x,y) = \Beta(y,x). \!$
@@ -1643,7 +1664,12 @@ Beta function
     :   To derive the integral representation of the beta function, write the
         product of two factorials as
 
-        $$\begin{align} \Gamma(x)\Gamma(y) &= \int_0^\infty\ e^{-u} u^{x-1}\,\mathrm{d}u \int_0^\infty\ e^{-v} v^{y-1}\,\mathrm{d}v \\[6pt] &=\int_0^\infty\int_0^\infty\ e^{-u-v} u^{x-1}v^{y-1}\,\mathrm{d}u \,\mathrm{d}v. \end{align}$$
+        $$
+            \begin{align} \Gamma(x)\Gamma(y) &= \int_0^\infty\ e^{-u}
+            u^{x-1}\,\mathrm{d}u \int_0^\infty\ e^{-v} v^{y-1}\,\mathrm{d}v \\[6pt]
+            &=\int_0^\infty\int_0^\infty\ e^{-u-v} u^{x-1}v^{y-1}\,\mathrm{d}u
+            \,\mathrm{d}v. \end{align}
+        $$
 
         Changing variables by u = f(z,t) = zt and v = g(z,t) = z(1-t) shows that this is
 
@@ -3134,14 +3160,14 @@ Student's t-test
 Bootstrapping (statistics)
 
 :   In statistics, bootstrapping can refer to any test or metric that relies on
-    random sampling with replacement. Bootstrapping allows assigning measures
+    **random sampling with replacement**. Bootstrapping allows assigning measures
     of accuracy (defined in terms of bias, variance, confidence intervals,
     prediction error or some other such measure) to sample estimates.  This
     technique allows estimation of the sampling distribution of almost any
     statistic using random sampling methods. Generally, it falls in the broader
     class of resampling methods.
 
-    A great advantage of bootstrap is its simplicity. It is a straightforward
+    A great advantage of bootstrap is its **simplicity**. It is a straightforward
     way to derive estimates of standard errors and confidence intervals for
     complex estimators of complex parameters of the distribution, such as
     percentile points, proportions, odds ratio, and correlation coefficients.
@@ -3151,11 +3177,49 @@ Bootstrapping (statistics)
     standard intervals obtained using sample variance and assumptions of
     normality.
 
-    Although bootstrapping is (under some conditions) asymptotically
-    consistent, it does not provide general finite-sample guarantees. The
-    apparent simplicity may conceal the fact that important assumptions are
-    being made when undertaking the bootstrap analysis (e.g. independence of
-    samples) where these would be more formally stated in other approaches.
+    Although bootstrapping is (under some conditions)
+    **asymptotically (逐渐地) consistent**, it does not provide general
+    finite-sample guarantees. The apparent simplicity may conceal the fact that
+    important assumptions are being made when undertaking the bootstrap
+    analysis (e.g. independence of samples) where these would be more formally
+    stated in other approaches.
+
+    [Percentile - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Percentile)
+
+    :   A percentile (or a centile) is a measure used in statistics indicating
+        the value below which a given percentage of observations in a group of
+        observations fall. For example, the 20th percentile is the value (or
+        score) below which 20% of the observations may be found.
+
+        The 25th percentile is also known as the first quartile (Q1), the 50th
+        percentile as the median or second quartile (Q2), and the 75th
+        percentile as the third quartile (Q3). In general, percentiles and
+        quartiles are specific types of quantiles.
+
+        ![Representation of the three-sigma rule. The dark blue zone represents
+            observations within one standard deviation (σ) to either side of
+            the mean (μ), which accounts for about 68.2% of the population. Two
+            standard deviations from the mean (dark and medium blue) account
+            for about 95.4%, and three standard deviations (dark, medium, and
+            light blue) for about 99.7%.](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Standard_deviation_diagram.svg/488px-Standard_deviation_diagram.svg.png)
+
+        [Percentage point - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Percentage_point)
+
+        :   A percentage point (pp) is the unit for the arithmetic difference
+            of two percentages. For example, going from 40% to 44% is a 4
+            percentage point increase. In the literature, the percentage point
+            unit is usually either written out, or abbreviated as pp, p.p. or
+            %. Consider the following hypothetical example: In 1980, 40 percent
+            of the population smoked, and in 1990 only 30 percent smoked. One
+            can thus say that from 1980 to 1990, the prevalence of smoking
+            decreased by 10 percentage points although smoking did not decrease
+            by 10 percent (actually it decreased by 25 percent) – percentages
+            indicate ratios, not differences.
+
+        refs and see also
+
+          - [68–95–99.7 rule - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/68%E2%80%9395%E2%80%9399.7_rule)
+          - [Number needed to treat - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Number_needed_to_treat)
 
 Maximum likelihood `@`{.tzx-anchor #maximum-likelihood}
 
@@ -3166,7 +3230,11 @@ Maximum likelihood `@`{.tzx-anchor #maximum-likelihood}
 
     likelihood:
 
-    $$\mathcal{L}(\theta\,;\,x_1,\ldots,x_n) = f(x_1,x_2,\ldots,x_n\mid\theta) = \prod_{i=1}^n f(x_i\mid\theta). $$
+    $$
+        \mathcal{L}(\theta\,;\,x_1,\ldots,x_n)
+            = f(x_1,x_2,\ldots,x_n\mid\theta)
+            = \prod_{i=1}^n f(x_i\mid\theta).
+    $$
 
     In practice it is often more convenient to work with the logarithm
     of the likelihood function, called the log-likelihood:
@@ -3318,23 +3386,22 @@ Generating function
 
     TODO: [Generating function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Generating_function)
 
-Moment-generating function
+Moment-generating function (moment generating fuction)
 
 :   In probability theory and statistics, the moment-generating function of a
-    random variable is an alternative specification of its probability
-    distribution. Thus, it provides the basis of an alternative route to
-    analytical results compared with working directly with probability density
-    functions or cumulative distribution functions. There are particularly
-    simple results for the moment-generating functions of distributions defined
-    by the weighted sums of random variables. Note, however, that not all
-    random variables have moment-generating functions.
+    random variable is **an alternative specification of its probability distribution**.
+    Thus, it provides the basis of an alternative route to
+    analytical results compared with working directly with pdf and CDF.
+    There are particularly simple results for the moment-generating functions
+    of distributions defined by the weighted sums of random variables. Note,
+    however, that not all random variables have moment-generating functions.
 
     In addition to univariate distributions, moment-generating functions can be
     defined for vector- or matrix-valued random variables, and can even be
     extended to more general cases.
 
-    The moment-generating function does not always exist even for real-valued
-    arguments, unlike the characteristic function. There are relations between
+    The moment-generating function **does not always exist** even for real-valued
+    arguments, **unlike the characteristic function**. There are relations between
     the behavior of the moment-generating function of a distribution and
     properties of the distribution, such as the existence of moments.
 
@@ -3349,43 +3416,160 @@ Moment-generating function
 
     $M_X(0)$ always exists and is equal to 1.
 
-    ------------        ------------------------------- ----------------------------
-    Distribution    Moment-generating function MX(t)    Characteristic function φ(t)
-    Bernoulli \, P(X=1)=p     \, 1-p+pe^t     \, 1-p+pe^{it}
-    Geometric (1 - p)^{k-1}\,p\!      \frac{p e^t}{1-(1-p) e^t}\!
-     \forall t<-\ln(1-p)\!    \frac{p e^{it}}{1-(1-p)\,e^{it}}\!
-    Binomial B(n, p)      \, (1-p+pe^t)^n     \, (1-p+pe^{it})^n
-    Poisson Pois(λ)       \, e^{\lambda(e^t-1)}       \, e^{\lambda(e^{it}-1)}
-    Uniform (continuous) U(a, b)      \, \frac{e^{tb} - e^{ta}}{t(b-a)}       \, \frac{e^{itb} - e^{ita}}{it(b-a)}
-    Uniform (discrete) U(a, b)    \, \frac{e^{at} - e^{(b+1)t}}{(b-a+1)(1-e^{t})}     \, \frac{e^{ait} - e^{(b+1)it}}{(b-a+1)(1-e^{it})}
-    Normal N(μ, σ2)       \, e^{t\mu + \frac{1}{2}\sigma^2t^2}    \, e^{it\mu - \frac{1}{2}\sigma^2t^2}
-    Chi-squared χ2k       \, (1 - 2t)^{-k/2}      \, (1 - 2it)^{-k/2}
-    Gamma Γ(k, θ)     \, (1 - t\theta)^{-k}       \, (1 - it\theta)^{-k}
-    Exponential Exp(λ)    \, (1-t\lambda^{-1})^{-1}, \, (t<\lambda)       \, (1 - it\lambda^{-1})^{-1}
-    Multivariate normal N(μ, Σ)       \, e^{t^\mathrm{T} \mu + \frac{1}{2} t^\mathrm{T} \Sigma t}     \, e^{i t^\mathrm{T} \mu - \frac{1}{2} t^\mathrm{T} \Sigma t}
-    Degenerate δa     \, e^{ta}       \, e^{ita}
-    Laplace L(μ, b)       \, \frac{e^{t\mu}}{1 - b^2t^2}      \, \frac{e^{it\mu}}{1 + b^2t^2}
-    Negative Binomial NB(r, p)    \, \frac{(1-p)^r}{(1-pe^t)^r}       \, \frac{(1-p)^r}{(1-pe^{it})^r}
-    Cauchy Cauchy(μ, θ)     does not exist    \, e^{it\mu -\theta|t|}
-    ------------        ------------------------------- ----------------------------
+    The reason for defining this function is that it can be used to find all
+    the moments of the distribution. The series expansion of $e^{tX}$ is:
+
+    $$
+        e^{t\,X} = 1 + t\,X + \frac{t^2\,X^2}{2!} + \frac{t^3\,X^3}{3!} + \cdots +\frac{t^n\,X^n}{n!} + \cdots.
+    $$
+
+    Hence:
+
+    $$
+        \begin{align}
+            M_X(t) = \mathbb{E}(e^{t\,X}) &= 1 + t \,\mathbb{E}(X) + \frac{t^2 \,\mathbb{E}(X^2)}{2!} + \frac{t^3\,\mathbb{E}(X^3)}{3!}+\cdots + \frac{t^n\,\mathbb{E}(X^n)}{n!}+\cdots \\
+                                          & = 1 + tm_1 + \frac{t^2m_2}{2!} + \frac{t^3m_3}{3!}+\cdots + \frac{t^nm_n}{n!}+\cdots, \end{align}
+    $$
+
+    where $m_n$ is the nth moment.
+
+    --------------------        -------------------------------         ----------------------------
+    Distribution                Moment-generating function MX(t)        Characteristic function φ(t)
+    --------------------        -------------------------------         ----------------------------
+    Bernoulli $\, P(X=1)=p$     $\, 1-p+pe^t$                           $\, 1-p+pe^{it}$
+
+    Geometric                   $\frac{p e^t}{1-(1-p) e^t}\!$           $\frac{p e^{it}}{1-(1-p)\,e^{it}}\!$
+    $(1 - p)^{k-1}\,p\!$        $\forall t<-\ln(1-p)\!$
+
+    Binomial B(n, p)            $\, (1-p+pe^t)^n$                       $\, (1-p+pe^{it})^n$
+
+    Poisson Pois(λ)             $\, e^{\lambda(e^t-1)}$                 $\, e^{\lambda(e^{it}-1)}$
+
+    Uniform (continuous)        $\frac{e^{tb} - e^{ta}}{t(b-a)}$        $\frac{e^{itb} - e^{ita}}{it(b-a)}$
+    U(a, b)
+
+    Uniform (discrete)          $\, \frac{e^{at} -                      $\, \frac{e^{ait} - e^{(b+1)it}}{(b-a+1)(1-e^{it})}$
+    U(a, b)                     e^{(b+1)t}}{(b-a+1)(1-e^{t})}$
+
+    Normal N(μ, σ2)             $e^{t\mu + \frac{1}{2}\sigma^2t^2}$     $e^{it\mu - \frac{1}{2}\sigma^2t^2}$
+
+    Chi-squared $χ^2_k$         $(1 - 2t)^{-k/2}$                       $(1 - 2it)^{-k/2}$
+
+    Gamma Γ(k, θ)               $(1 - t\theta)^{-k}$                    $(1 - it\theta)^{-k}$
+
+    Exponential Exp(λ)          $(1-t\lambda^{-1})^{-1},                $(1 - it\lambda^{-1})^{-1}$
+                                \, (t<\lambda)$
+
+    Multivariate normal         $\, e^{t^\mathrm{T} \mu +\frac{1}{2}    $e^{i t^\mathrm{T} \mu - \frac{1}{2} t^\mathrm{T} \Sigma t}$
+    N(μ, Σ)                     t^\mathrm{T} \Sigma t}$
+
+    Degenerate δa               $\, e^{ta}$                             $\, e^{ita}$
+
+    Laplace L(μ, b)             $\, \frac{e^{t\mu}}{1 - b^2t^2}$        $\, \frac{e^{it\mu}}{1 + b^2t^2}$
+
+    Negative Binomial           $\, \frac{(1-p)^r}{(1-pe^t)^r}$         $\, \frac{(1-p)^r}{(1-pe^{it})^r}$
+    NB(r, p)
+
+    Cauchy Cauchy(μ, θ)         does not exist                          $\, e^{it\mu -\theta|t|}$
+    --------------------        -------------------------------         ----------------------------
+
+    **Calculation**
+
+    The moment-generating function is the expectation of a function of the
+    random variable, it can be written as:
+
+    -   In the general case:
+        $M_X(t) = \int_{-\infty}^\infty e^{tx}\,dF(x)$, using the Riemann–Stieltjes integral,
+        and where F is the cumulative distribution function.
+
+    -   For a discrete probability mass function,
+        $M_X(t)=\sum_{i=1}^\infty e^{tx_i}\, p_i$
+
+    -   For a continuous probability density function,
+        $M_X(t) = \int_{-\infty}^\infty e^{tx} f(x)\,dx$
+
+    Note that for the case where X has a continuous probability density
+    function ƒ(x), $M_X(−t)$ is the two-sided Laplace transform of ƒ(x).
+
+    $$
+        \begin{align}
+            M_X(t) & = \int_{-\infty}^\infty e^{tx} f(x)\,dx \\
+                   & = \int_{-\infty}^\infty \left( 1+ tx + \frac{t^2x^2}{2!} + \cdots + \frac{t^nx^n}{n!} + \cdots\right) f(x)\,dx \\
+                   & = 1 + tm_1 + \frac{t^2m_2}{2!} +\cdots + \frac{t^nm_n}{n!} +\cdots,
+        \end{align}
+    $$
+
+    where $m_n$ is the nth moment.
+
+    **Sum of independent random variables**
+
+    If $S_n = \sum_{i=1}^{n} a_i X_i$, where the $X_i$ are independent random
+    variables and the $a_i$ are constants, then the probability density
+    function for $S_n$ is the convolution of the probability density functions of
+    each of the $X_i$, and the moment-generating function for $S_n$ is given by
+
+    $$
+        M_{S_n}(t)=M_{X_1}(a_1t)M_{X_2}(a_2t)\cdots M_{X_n}(a_nt) \, .
+    $$
+
+    **Vector-valued random variables**
+
+    For vector-valued random variables X with real components, the moment-generating function is given by
+
+    $$
+        M_X(t) = E\left( e^{\langle t, X \rangle}\right)
+    $$
+
+    where t is a vector and $\langle \cdot, \cdot \rangle$ is the dot product.
+
+    **Important properties**
+
+    Moment generating functions are positive and log-convex, with M(0) = 1.
+
+    An important property of the moment-generating function is that if two
+    distributions have the same moment-generating function, then they are
+    identical at almost all points. That is, if for all values of t,
+
+    $$M_X(t) = M_Y(t),\, $$
+
+    then
+
+    $$F_X(x) = F_Y(x) \, $$
+
+    for all values of x (or equivalently X and Y have the same distribution).
+    This statement is not equivalent to the statement "if two distributions
+    have the same moments, then they are identical at all points." This is
+    because in some cases, the moments exist and yet the moment-generating
+    function does not, because the limit
+
+    $$
+        \lim_{n \rightarrow \infty} \sum_{i=0}^n \frac{t^im_i}{i!}
+    $$
+
+    may not exist. The lognormal distribution is an example of when this occurs.
+
 
 Characteristic function (probability theory)
 
 :   In probability theory and statistics, the characteristic function of any
     real-valued random variable completely defines its probability
-    distribution. If a random variable admits a probability density function,
-    then the characteristic function is the inverse Fourier transform of the
-    probability density function. Thus it provides the basis of an alternative
-    route to analytical results compared with working directly with probability
-    density functions or cumulative distribution functions. There are
-    particularly simple results for the characteristic functions of
-    distributions defined by the weighted sums of random variables.
+    distribution.
+
+    If a random variable admits a pdf, then the characteristic function is
+    **the inverse Fourier transform** of the pdf.
+    Thus it provides the basis of an alternative route to analytical results
+    compared with working directly with probability density functions or
+    cumulative distribution functions. There are particularly simple results
+    for the characteristic functions of distributions defined by the weighted
+    sums of random variables.
 
     In addition to univariate distributions, characteristic functions can be
     defined for vector or matrix-valued random variables, and can also be
     extended to more generic cases.
 
-    The characteristic function always exists when treated as a function of a
+    跟 MGF 一样，相比 pdf 更 generalized，相比 MGF 它还总是存在。
+
+    The characteristic function **always exists**  when treated as a function of a
     real-valued argument, unlike the moment-generating function. There are
     relations between the behavior of the characteristic function of a
     distribution and properties of the distribution, such as the existence of
@@ -3419,6 +3603,51 @@ Characteristic function (probability theory)
 
     $$\varphi_X(-it) = M_X(t).$$
 
+    傅立叶变换有这样的性质：两个函数卷积的变换等于变换的乘积。在概率论中，它的厉害之处体现在：
+
+      - 任意分布跟他的特征函数一一对应。
+      - 两个独立随机变量之和的特征函数就是他们俩特征函数的积。
+      - 特征函数在 0 点附近收敛 <==> 分布函数弱收敛 (Levi continuous theroem)
+
+    两个，乃至多个独立随机变量之和的分布，我们可以采取这样的路径：
+
+    $$
+        X_1 \sim F_1, \cdots, X_n \sim  F_n \\
+        \Downarrow \\
+        f_1(t) = Ee^{itX_1}, \cdots, f_n(t) = Ee^{itX_n}\\
+        \Downarrow \\
+        f(t) = Ee^{it(X_1+\cdots+X_n)}=f_1(t)\cdots f_n(t)\\
+        \Downarrow \\
+        \text{distribution of }  X_1 + \cdots + X_n
+    $$
+
+    这个步骤在“独立同分布随机变量的中心极限定理”的证明中起了关键作用。
+
+    引入特征函数是非常自然的事情：
+
+      - 在实际应用中，逐个测量事件空间中的各事件发生的概率（或者分布函数）是极
+        端困难的，相反，对大多数分布而言，矩（平均值、方差以及各种高阶矩）往往
+        是容易被测量的；
+      - 在问题变得复杂之后，再来计算矩（例如均值、方差等等）的时候，如果我们知
+        道分布函数，那么我们要做的是求和与积分，而如果我们知道特征函数，在计算
+        矩的时候，我们要做的只是微分，而通常，求导会比直接积分更容易，而且可以
+        针对各阶矩有更统一的形式。
+      - 而因为考虑到这两个因素，再加上 Fourier 空间跟实空间可以一一对应起来，所
+        以大家就更喜欢特征函数了。
+
+    接下来，Laplace 变换行不行？
+
+    在很多时候当然也可以，常用的母函数或者生成矩函数 moment generating function
+    就是这样的变换。统计物理学家很熟悉的「配分函数」也就是一个特征函数：，它就
+    对应于态密度 g(E) 的 Laplace 变换。对物理学家而言，喜欢用逆温度（Laplace），
+    或者喜欢用虚时间（Fourier）这其实是一码事的，如果在这种时候用虚时间来写，一
+    个好处是显得高端大气，另一个好处是可以与路径积分联系起来，而且，Laplace 变
+    换用的时候总得要写「正半轴」之类的东西，写起来太麻烦。
+
+    感谢 @Andi Wang 的指教，用 Laplace 变换更严重的问题在于如果 X 某阶矩不存在（
+    $E|X|^k$ = infinity，比如柯西分布），会有母函数只在 0 点有定义，其他地方均为
+    infinity 的情况。这样母函数无法与分布建立 1-1 对应关系。
+
     refs and see also
 
       - [如何理解统计中的特征函数？ - 数学 - 知乎](http://www.zhihu.com/question/23686709)
@@ -3426,13 +3655,17 @@ Characteristic function (probability theory)
 [Jacobian matrix and determinant - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Jacobian_matrix)
 
 :   In vector calculus, the Jacobian matrix (`/dʒᵻˈkoʊbiən/`, `/jᵻˈkoʊbiən/`) is
-    the matrix of all first-order partial derivatives of a vector-valued
-    function. When the matrix is a square matrix, both the matrix and its
+    the matrix of all **first-order partial derivatives of a vector-valued function**.
+    When the matrix is a square matrix, both the matrix and its
     determinant are referred to as the Jacobian in literature.
+
+    对向量的一阶偏导。
 
     Suppose f : ℝn → ℝm is a function which takes as input the vector x ∈ ℝn
     and produces as output the vector f(x) ∈ ℝm. Then the Jacobian matrix J of
     f is an m×n matrix, usually defined and arranged as follows:
+
+    这个形式和我们常用左乘有关。
 
     $$
     \mathbf J = \frac{d\mathbf f}{d\mathbf x} = \begin{bmatrix} \dfrac{\partial
@@ -3476,21 +3709,23 @@ Characteristic function (probability theory)
     ![A nonlinear map f : R2 → R2 sends a small square to a distorted
         parallelepiped close to the image of the square under the best linear
         approximation of f near the point.](https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Jacobian_determinant_and_distortion.svg/600px-Jacobian_determinant_and_distortion.svg.png)
-     If the Jacobian determinant at p is positive, then f preserves orientation
-     near p; if it is negative, f reverses orientation. The absolute value of
-     the Jacobian determinant at p gives us the factor by which the function f
-     expands or shrinks volumes near p; this is why it occurs in the general
-     substitution rule.
 
-     integral substitution: $\int_{\varphi(a)}^{\varphi(b)} f(x)\,dx = \int_a^b
-     f(\varphi(t))\varphi'(t)\, dt.$ ^[[Integration by substitution -
-     Wikipedia, the free
-     encyclopedia](https://en.wikipedia.org/wiki/Integration_by_substitution)]
+    If the Jacobian determinant at p is positive, then f preserves orientation
+    near p; if it is negative, f reverses orientation. The absolute value of
+    the Jacobian determinant at p gives us the factor by which the function f
+    expands or shrinks volumes near p; this is why it occurs in the general
+    substitution rule.
+
+    integral substitution: $\int_{\varphi(a)}^{\varphi(b)} f(x)\,dx = \int_a^b
+    f(\varphi(t))\varphi'(t)\, dt.$ ^[[Integration by substitution - Wikipedia,
+    the free encyclopedia](https://en.wikipedia.org/wiki/Integration_by_substitution).]
 
 [Hessian matrix - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hessian_matrix)
 
-:   In mathematics, the Hessian matrix or Hessian is a square matrix of
-    second-order partial derivatives of a scalar-valued function, or scalar
+:   Hessian, `['hesiən]`
+
+    In mathematics, the Hessian matrix or Hessian is a **square matrix of
+    second-order partial derivatives of a scalar-valued function**, or scalar
     field. It describes the local curvature of a function of many variables.
     The Hessian matrix was developed in the 19th century by the German
     mathematician Ludwig Otto Hesse and later named after him. Hesse originally
@@ -3503,7 +3738,7 @@ Characteristic function (probability theory)
     follows:
 
     $$
-    \bold H = \begin{bmatrix} \dfrac{\partial^2 f}{\partial x_1^2} &
+    \boldsymbol H = \begin{bmatrix} \dfrac{\partial^2 f}{\partial x_1^2} &
     \dfrac{\partial^2 f}{\partial x_1\,\partial x_2} & \cdots &
     \dfrac{\partial^2 f}{\partial x_1\,\partial x_n} \\[2.2ex]
     \dfrac{\partial^2 f}{\partial x_2\,\partial x_1} & \dfrac{\partial^2
@@ -3516,7 +3751,7 @@ Characteristic function (probability theory)
 
     or, component-wise:
 
-    $$\bold H_{i,j} = \frac{\partial^2 f}{\partial x_i \partial x_j}.$$
+    $$\boldsymbol H_{i,j} = \frac{\partial^2 f}{\partial x_i \partial x_j}.$$
 
     The determinant of the above matrix is also sometimes referred to as the
     Hessian.
@@ -3640,9 +3875,103 @@ refs and see also
     $\mathbf{x} \mapsto \mathbf{x}^\mathsf{T}\mathbf{w}_1, \ldots, \mathbf{x}
     \mapsto \mathbf{x}^\mathsf{T}\mathbf{w}_K$ and the softmax function.
 
+    在 softmax 回归中，我们解决的是多分类问题（相对于 logistic 回归解决的二分类
+    问题），类标 $\textstyle y$ 可以取 $\textstyle k$ 个不同的值（而不是 2 个）。因
+    此，对于训练集 $\{ (x^{(1)}, y^{(1)}), \ldots, (x^{(m)}, y^{(m)}) \}$，我们有
+    $y^{(i)} \in \{1, 2, \ldots, k\}$。（注意此处的类别下标从 1 开始，而不是 0）。
+    例如，在 MNIST 数字识别任务中，我们有 $\textstyle k=10$ 个不同的类别。
+
+    我们的代价函数为：
+
+    $$
+        \begin{align}
+            J(\theta) = - \frac{1}{m} \left[ \sum_{i=1}^{m} \sum_{j=1}^{k}  1\left\{y^{(i)} = j\right\} \log \frac{e^{\theta_j^T x^{(i)}}}{\sum_{l=1}^k e^{ \theta_l^T x^{(i)} }}\right]
+        \end{align}
+    $$
+
+    值得注意的是，上述公式是 logistic 回归代价函数的推广。logistic 回归代价函数可以改为：
+
+    $$
+        \begin{align}
+            J(\theta) &= -\frac{1}{m} \left[ \sum_{i=1}^m   (1-y^{(i)}) \log (1-h_\theta(x^{(i)})) + y^{(i)} \log h_\theta(x^{(i)}) \right] \\
+                      &= - \frac{1}{m} \left[ \sum_{i=1}^{m} \sum_{j=0}^{1} 1\left\{y^{(i)} = j\right\} \log p(y^{(i)} = j | x^{(i)} ; \theta) \right]
+        \end{align}
+    $$
+
+    可以看到，Softmax 代价函数与 logistic 代价函数在形式上非常类似，只是在
+    Softmax 损失函数中对类标记的 $\textstyle k$ 个可能值进行了累加。注意在
+    Softmax 回归中将 $\textstyle x$ 分类为类别 $\textstyle j$ 的概率为：
+
+    $$
+        p(y^{(i)} = j | x^{(i)} ; \theta) = \frac{e^{\theta_j^T x^{(i)}}}{\sum_{l=1}^k e^{ \theta_l^T x^{(i)}} }
+    $$
+
+    对于 $\textstyle J(\theta)$ 的最小化问题，目前还没有闭式解法。因此，我们使
+    用迭代的优化算法（例如梯度下降法，或 L-BFGS）。经过求导，我们得到梯度公式如
+    下：
+
+    $$
+        \begin{align}
+            \nabla_{\theta_j} J(\theta) = - \frac{1}{m} \sum_{i=1}^{m}{ \left[ x^{(i)} \left( 1\{ y^{(i)} = j\}  - p(y^{(i)} = j | x^{(i)}; \theta) \right) \right]  }
+        \end{align}
+    $$
+
+
+    **Softmax 回归与 Logistic 回归的关系**
+
+    当类别数 $\textstyle k = 2$ 时，softmax 回归退化为 logistic 回归。这表明
+    softmax 回归是 logistic 回归的一般形式。具体地说，当 $\textstyle k = 2$ 时，
+    softmax 回归的假设函数为：
+
+    $$
+    \begin{align}
+    h_\theta(x) &=
+    \frac{1}{ e^{\theta_1^Tx}  + e^{ \theta_2^T x^{(i)} } }
+    \begin{bmatrix}
+    e^{ \theta_1^T x } \\
+    e^{ \theta_2^T x }
+    \end{bmatrix}
+    \end{align}
+    $$
+
+    利用 softmax 回归参数冗余的特点，我们令 $\textstyle \psi = \theta_1$，并且从
+    两个参数向量中都减去向量 $\textstyle \theta_1$，得到:
+
+    $$
+        \begin{align}
+            h(x)
+            &=
+                \frac{1}{ e^{\vec{0}^Tx}  + e^{ (\theta_2-\theta_1)^T x^{(i)} } }
+                \begin{bmatrix}
+                e^{ \vec{0}^T x } \\
+                e^{ (\theta_2-\theta_1)^T x }
+                \end{bmatrix} \\
+            &=
+                \begin{bmatrix}
+                \frac{1}{ 1 + e^{ (\theta_2-\theta_1)^T x^{(i)} } } \\
+                \frac{e^{ (\theta_2-\theta_1)^T x }}{ 1 + e^{ (\theta_2-\theta_1)^T x^{(i)} } }
+                \end{bmatrix} \\
+            &=
+                \begin{bmatrix}
+                \frac{1}{ 1  + e^{ (\theta_2-\theta_1)^T x^{(i)} } } \\
+                1 - \frac{1}{ 1  + e^{ (\theta_2-\theta_1)^T x^{(i)} } } \\
+                \end{bmatrix}
+        \end{align}
+    $$
+
+    因此，用 $\textstyle \theta'$ 来表示 $\textstyle \theta_2-\theta_1$，我们就会发现
+    softmax 回归器预测其中一个类别的概率为
+    $\textstyle \frac{1}{ 1  + e^{ (\theta')^T x^{(i)} } }$，另一个类别概率的为
+    $\textstyle 1 - \frac{1}{ 1 + e^{ (\theta')^T x^{(i)} } }$，这与 logistic 回归是一致的。
+
+    在第一个例子中，三个类别是互斥的，因此更适于选择 softmax 回归分类器 。而在
+    第二个例子中，建立三个独立的 logistic 回归分类器更加合适。
+
+    权重衰减 weight decay
+
     refs and see also
 
-      - [Softmax回归 - Ufldl](http://ufldl.stanford.edu/wiki/index.php/Softmax%E5%9B%9E%E5%BD%92)
+      - [Softmax 回归 - Ufldl](http://ufldl.stanford.edu/wiki/index.php/Softmax%E5%9B%9E%E5%BD%92)
 
 [Hyperbolic function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hyperbolic_function#Tanh)
 
@@ -3652,6 +3981,8 @@ refs and see also
         the hyperbola below the $\scriptstyle x-axis$, the area is considered
         negative (see animated version with comparison with the trigonometric
         (circular) functions).](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Hyperbolic_functions-2.svg/444px-Hyperbolic_functions-2.svg.png)
+
+    hyperbola, `[haɪ'pɜ:bələ]`, n.双曲线
 
     In mathematics, hyperbolic functions are analogs of the ordinary
     trigonometric, or circular functions. The basic hyperbolic functions are
@@ -3665,3 +3996,84 @@ refs and see also
     "arcsinh") and so on.
 
 [Latent variable model - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Latent_variable_model)
+
+:   latent, `['leɪt(ə)nt]`, adj.潜在的；潜伏的；隐藏的 n.隐约的指印网络存在但看
+    不见的；隐性的；潜伏性
+
+    A **latent variable model** is a statistical model that relates a set of
+    variables (so-called manifest variables) to a set of latent variables.
+
+    It is assumed that the responses on the indicators or manifest variables
+    are the result of an individual's position on the latent variable(s), and
+    that the manifest variables have nothing in common after controlling for
+    the latent variable (local independence).
+
+    Different types of the latent variable model can be grouped according to
+    whether the manifest and latent variables are categorical or continuous:
+
+    ------------------- --------------------------  ---------------------------
+                        Manifest variables
+
+    Latent variables    Continuous                  Categorical
+    ------------------- --------------------------  ---------------------------
+    Continuous          Factor analysis             Item response theory
+
+    Categorical         Latent profile analysis     Latent class analysis
+    ------------------- --------------------------  ---------------------------
+[Matrix multiplication - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Matrix_multiplication)
+
+:   ![Arithmetic process of multiplying numbers (solid lines) in row i in matrix A
+        and column j in matrix B, then adding the terms (dashed lines) to obtain entry
+        ij in the final matrix.](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Matrix_multiplication_row_column_correspondance.svg/450px-Matrix_multiplication_row_column_correspondance.svg.png)
+
+    ![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Matrix_multiplication_diagram_2.svg/470px-Matrix_multiplication_diagram_2.svg.png)
+
+    -   Not commutative:
+
+    -   Distributive over matrix addition:
+
+        +   Left distributivity
+        +   Right distributivity
+        +   Scalar multiplication is compatible with matrix multiplication
+
+    -   Transpose
+
+        $$(\mathbf{AB})^\mathrm{T} = \mathbf{B}^\mathrm{T}\mathbf{A}^\mathrm{T}$$
+
+        where T denotes the transpose, the interchange of row i with column i
+        in a matrix. This identity holds for any matrices over a commutative
+        ring, but not for all rings in general. Note that A and B are reversed.
+
+    -   Complex conjugate
+
+        If A and B have complex entries, then
+
+        $$(\mathbf{AB})^\star = \mathbf{A}^\star\mathbf{B}^\star$$
+
+        where `*` denotes the complex conjugate of a matrix.
+
+    refs and see also
+
+      - [Kronecker product - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Kronecker_product)
+
+[Convolution - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Convolution)
+
+:   The convolution of f and g is written f∗g, using an
+    asterisk or star. It is defined as the integral of the
+    product of the two functions after one is reversed and
+    shifted. As such, it is a particular kind of integral
+    transform:
+
+    $$
+        \begin{align}
+            (f * g )(t)\ \ \, &\stackrel{\mathrm{def}}{=}\ \int_{-\infty}^\infty f(\tau)\, g(t - \tau)\, d\tau \\
+                              &= \int_{-\infty}^\infty f(t-\tau)\, g(\tau)\, d\tau.
+        \end{align}
+    $$
+
+    While the symbol t is used above, it need not represent the
+    time domain. But in that context, the convolution formula
+    can be described as a weighted average of the function f(τ)
+    at the moment t where the weighting is given by g(−τ)
+    simply shifted by amount t. As t changes, the weighting
+    function emphasizes different parts of the input function.

@@ -152,7 +152,6 @@ not shy
 
 :   bad
 
-
 <div class="tzx-shy">
 shy
 
@@ -182,3 +181,9 @@ ab fatd     <i class="icon-thumbs-down"></i>
 ab fatu     <i class="icon-thumbs-up"></i>
 
 <div class="tzx-banner">Fontawesome</div>
+
+`1464186510`{.tzx-timestamp} 字体倒是很好看
+
+<div class="banner">
+build the next generation of A.I. algorithms
+</div>

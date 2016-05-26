@@ -1055,15 +1055,3 @@ Qt::KeypadModifier  0x20000000  A keypad button is pressed.
 Qt::GroupSwitchModifier 0x40000000  X11 only. A Mode_switch key on the keyboard is pressed.
 event->button()==Qt::MiddleButton
 ```
-
-```cpp
-std::ifstream file(filename.c_str(), ifstream::in);
-if (!file) {
-    string error_message = "No valid input file was given, please check the given filename.";
-    CV_Error(Error::StsBadArg, error_message);
-}
-string line;
-while (getline(file, line)) {
-    images.push_back(imread(line, 0));
-}
-```
