@@ -31,3 +31,18 @@ Planned
     +   [Learn OpenGL, extensive tutorial resource for learning Modern OpenGL](http://www.learnopengl.com/)
 
 -   [VisualSFM : A Visual Structure from Motion System](http://ccwu.me/vsfm/)
+
+MISC
+
+-   [dennis714/RE-for-beginners: "Reverse Engineering for Beginners" free book](https://github.com/dennis714/RE-for-beginners)
+
+    乌克兰黑客 Dennis Yurichev 在 github 上以 latex 代码的方式开放了他的最新的
+    图书：RE for Beginners(逆向工程入门)。
+
+    这本书针对的硬件平台是 x86,x86_64 和 ARM，操作系统是 GNU/Linux 和Windows，
+    这本书内容包括PE和ELF文件格式，栈的缓冲区溢出，系统调用，PIC， LD_PRELOAD，
+    C++ STL, OpenMP 以及 Win32 SEH，如果你对 binary audit 有兴趣，这本书绝对是
+    很好的选择。
+
+    +   [Dennis Yurichev: index](http://yurichev.com/)
+    +   [Dennis Yurichev: 20-Aug-2015: Some parts of my Reverse Engineering book translated to Chinese.](http://yurichev.com/blog/2015-aug-20/)

@@ -19,6 +19,39 @@ tags:
 Notes | 笔记[^1]
 ================
 
+[Vinta (陳上進)](https://vinta.ws/)
+
+:   |   幽默是一件重要的事
+    |   我們必須嚴肅對待
+
+    用 Vim 的工程師鄙視用 Emacs 的工程師，用 Emacs 的工程師鄙視用 Vim 的工程師，
+    無論是用 Vim 或 Emacs 的工程師都鄙視所有用其他編輯器的工程師；用 Atom、
+    Notepad++、Sublime Text 的工程師鄙視用 Windows 記事本的工程師。
+
+    編輯器使用深色背景的工程師鄙視使用白色背景的工程師。
+
+    程式碼用 space 縮排的工程師鄙視用 tab 縮排的工程師，用 tab 縮排的工程師鄙視
+    混用 space 和 tab 來縮排的工程師。
+
+    用 reStructuredText 寫文件的工程師鄙視用 Markdown 寫文件的工程師，用
+    Markdown 寫文件的工程師鄙視用 HTML 寫文件的工程師，用 HTML 寫文件的工程師鄙
+    視不寫文件的工程師，然後用 LaTeX 寫文件的工程師鄙視所有工程師。
+
+    用 Dvorak 鍵盤的工程師鄙視用 Mac 鍵盤的工程師，用 Mac 鍵盤的工程師鄙視用
+    QWERTY 鍵盤的工程師，用 QWERTY 鍵盤的工程師鄙視鄙視不知道 QWERTY 鍵盤是什麼
+    的工程師，不知道 QWERTY 鍵盤是什麼的工程師鄙視用手寫板的設計師。
+
+    如果你看了以上這些慘絕人寰的鄙視鍊之後，仍然沒有擊倒你想要學習 coding 的心，
+    那我必須提醒你一件最重要的事：先去交一個女朋友，再來學寫程式；因為一旦你成
+    為軟體工程師之後，就交不到女朋友了。
+
+[乌云 (WooYun) 是怎样的一个网站？ - 网络安全 - 知乎](https://www.zhihu.com/question/19993185)
+
+:   2014 年 2 月 17 日爆出支付宝 / 余额宝任意登录漏洞后，阿里公关迅速出击，拿出现金 500
+    万奖励白帽子盖过舆论。在此之后，关于微信支付与支付宝的互相职责安全性差的公
+    关稿连绵不绝。以安全为名，背后实为互联网商业之战的封杀与反封杀、黑公关与反
+    黑事件，正愈演愈烈，而乌云网在其中扮演了推波助澜的作用。
+
 [css3 - How to set Bullet colors in UL/LI html lists via CSS without using any images or span tags - Stack Overflow](http://stackoverflow.com/questions/5306640/how-to-set-bullet-colors-in-ul-li-html-lists-via-css-without-using-any-images-or)
 
 :   ```css

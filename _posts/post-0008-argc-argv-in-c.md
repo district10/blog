@@ -18,7 +18,7 @@ argcargv.c
 ```c
 #include <stdio.h>
 
-int main( int argc, char **argv)
+int main( int argc, char **argv )
 {
     int a = atoi( argv[1] );
     int b = atoi( argv[2] );
@@ -35,6 +35,7 @@ Linux:
 ```bash
 # 编译
 $ gcc argcargv.c -o argcargv
+
 # 运行
 $ ./argcargv 5 7
 a + b = 5 + 7 = 12
@@ -54,8 +55,9 @@ Windows:
 ```bash
 # 编译
 $ mycl argcargv.c
+
 # 运行
-$ argcargv 5 7
+$ ./argcargv 5 7
 a + b = 5 + 7 = 12
 ```
 

@@ -13,19 +13,8 @@ after-before: |
 
 <div class="slogan" title="欢迎来到 TANG ZhiXiong 的博客。DVORAK4TZX/dvorak4tzx &rarr; Dvorak 键盘布局 for TANG ZhiXiong (TZX)">Welcome to dvorak4tzx's Blog.</div>
 <p id="tzxslogan">
-Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序员中广受欢迎，尤其是那些 Emacs[^emacs] 用户，
-比如 Steve Yegge、Sacha Chua、李杀。我也用 dvorak，所以这个网站叫 dvorak4tzx。[^info]</p>
-
-[^dvorak]: 见 [为什么 Emacs 用户爱德沃夏克](post-0006-why-emacs-users-favor-dvorak.html)。
-[^qwerty]: [QWERTY - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/QWERTY)。
-[^emacs]: [Emacs - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Emacs)。
-[^info]: 作为一个程序员，[寡人打字速度比风快](typing.html)，只要不是在 QWERTY 键盘上（**每次被人误会为不会打字，我都很郁闷……**）。
-
-    LostAbaddon:
-
-    > 上帝为了避免人类都联合起来，就发明了各种语言，和，德沃夏克布局。
-
-    <http://whudoc.qiniudn.com/2016/29284-caa7365f38529250.png>
+Dvorak 是一种不同于 QWERTY 的键盘布局，在程序员中广受欢迎，尤其是那些 Emacs 用户，
+比如 Steve Yegge、Sacha Chua、李杀。我也用 dvorak，所以这个网站叫 dvorak4tzx。</p>
 
 <!--
 <div class="tzx-fright">
@@ -36,18 +25,15 @@ Dvorak[^dvorak] 是一种不同于 QWERTY[^qwerty] 的键盘布局，在程序�
 <div><a href="koans.html">Koans | 呓语</a></div>
 <div><a href="orgit.html">Orgit | 唐凤</a></div>
 <div><a href="about.html">About | 关于</a></div><hr /></div>
-
 <!--
 <div><a href="notes.html">Notes | 笔记</a></div>
 -->
 
 <br/><div id="searchContainer">
-Search:[^koan]<br>
+Search:<br>
 <input id="tzxsearchbox" type="text" name="tzxsearchbox" placeholder="type keywords in url/title/tag, e.g. 'vim', 'got', 'notes'." style="width:100%;max-width:600px;outline:0">
 </div><br/>
 <div id="links"></div><hr>
-
-[^koan]: ~~不知为何，本地的可以用。七牛上的就不能用……~~现在可以了。
 
 <div style="font-variant:small-caps;">Posts</div>
 <div class="posts"><!--...-->
@@ -156,7 +142,7 @@ Search:[^koan]<br>
 ---
 
 <small style="color:lightgray;">
-作为一个处女座，我的文字排版是考究的。^[笔记部分因为后期才集中整理，可能存在不规范的情况。]
+作为一个处女座，我的文字排版是考究的。
 希望每个人都能花点时间看看 [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)。
 </small>
 

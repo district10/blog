@@ -75,6 +75,10 @@ Qt::SolidPattern, `Qt::SolidPattern`{.cpp}
 #. `w`:
 #. `t`: tilde: word &rarr; `word`
 
+[依云](http://lilydjwg.is-programmer.com/guestbook) 打包的包含行禁则的 Vim：
+<http://whudoc.qiniudn.com/2016/gvim74-x64.402.exe>。
+可惜的是这个打包的“Edit with Vim”不能生效。
+
 ---
 
 Refs
