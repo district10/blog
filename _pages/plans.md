@@ -34,6 +34,8 @@ Planned
 
 MISC
 
+-   [karan/Projects-Solutions: Links to others' solutions to Projects (https://github.com/karan/Projects/)](https://github.com/karan/Projects-Solutions)
+
 -   [dennis714/RE-for-beginners: "Reverse Engineering for Beginners" free book](https://github.com/dennis714/RE-for-beginners)
 
     乌克兰黑客 Dennis Yurichev 在 github 上以 latex 代码的方式开放了他的最新的

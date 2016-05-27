@@ -9,15 +9,16 @@ map <leader>a ggVG
 map <leader>o o<esc>S<esc>
 map <leader>u :undolist<cr>
 map <leader>file :echo expand("%:p")<cr>
+" map <leader><leader> please don't map <leader><leader>
 map <leader>wi vip :call Wikipedia()<cr>
-map <leader>sp vip :call PanguSpacing()<cr>
+map <leader>sp vipJ :call PanguSpacing()<cr> gqq
 map <leader>gq vipgq
 
-if has("gui_win32")
-    let $TMP="d:/tzx/tmp"
-    let $TEMP="d:/tzx/tmp"
-endif
-set directory=.,$TMP,$TEMP
+"   if has("gui_win32")
+"       let $TMP="d:/tzx/tmp"
+"       let $TEMP="d:/tzx/tmp"
+"   endif
+"   set directory=.,$TMP,$TEMP
 
 set nocompatible
 set cursorline
@@ -93,9 +94,6 @@ if has("gui_running")
         set guifont=Consolas:h11:cANSI
     endif
 endif
-
-"let $TMP="d:/tzx/tmp"
-"let $TEMP="d:/tzx/tmp"
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.

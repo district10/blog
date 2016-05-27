@@ -4077,3 +4077,5 @@ refs and see also
     at the moment t where the weighting is given by g(−τ)
     simply shifted by amount t. As t changes, the weighting
     function emphasizes different parts of the input function.
+
+[Spline (mathematics) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Spline_(mathematics))

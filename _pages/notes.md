@@ -19,6 +19,91 @@ tags:
 Notes | 笔记[^1]
 ================
 
+[Obi-Wan Kenobi - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Obi-Wan_Kenobi)
+
+It's enough to make a respectable fellow blush.
+
+argon, 美: [ˈɑrˌɡɑn]英: [ˈɑː(r)ɡɒn], n.氩, greek "lazy".
+
+Scientists spent a lot of time separating the different kinds of air and then had to
+decide what to call them all. Oxygen was called *flammable air* for a while, but it didn’t
+catch on. It just didn’t have the right **scientific ring** to it. We all know that scientific
+words need an obscure classical origin to make them sound impressive to those who
+wouldn’t know an idiopathic craniofacial erythema if it hit them in the face.
+
+[Shoe fetishism - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Shoe_fetishism)
+
+:   Shoe fetishism is the attribution of attractive sexual qualities to shoes
+    or other footwear as a matter of sexual preference, or an alternative or
+    complement to a relationship with a partner. It has also been known as
+    retifism, after the French novelist Nicolas-Edme Rétif (October 23, 1734–
+    February 2, 1806), also known as Rétif de la Bretonne. Individuals with
+    shoe fetishism can be erotically interested in women's shoes. Although
+    shoes may appear to carry sexual connotations in mainstream culture (for
+    example, women's shoes are commonly sold as being "sexy") this opinion
+    refers to an ethnographic or cultural context, and is likely not intended
+    to be taken literally. Another fetishism, which sometimes is seen as
+    related to shoe fetishism, is boot fetishism.
+
+    ![Lucite platform shoes](https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Acrylic_Heels.jpg/300px-Acrylic_Heels.jpg)
+
+    [Platform shoe - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Platform_shoes)
+
+    :   Platform shoes are shoes, boots, or sandals with an obvious thick sole,
+        usually in the range of 3–10 cm (1–4 in). Platform shoes may also be
+        high heels, in which case the heel is raised significantly higher than
+        the ball of the foot. Extreme heights, of both the sole and heel, can
+        be found in fetish footwear such as ballet boots, where the sole may be
+        up to 20 cm (8 in) high, and the heels up to 40 cm (16 in) and more.
+        The sole of a platform shoe can have a continuous uniform thickness,
+        have a wedge, a separate block or a stiletto heel. Apart from the
+        extreme forms of fetish shoes (which are first and foremost not
+        intended for walking in), walking in platform shoes can be cumbersome
+        and clumsy. Raising the ankle increases the risk of a sprained ankle.
+
+    [Elevator shoes - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Elevator_shoes)
+
+    :   Elevator shoes are shoes that have thickened sections of the insoles
+        (known as shoe lifts) under the heels to make the wearer appear taller,
+        or "elevate" them as the name suggests.
+
+        ![Cross section of an elevator shoe displaying the upper, insole,
+            mid-insole and outsole.](https://upload.wikimedia.org/wikipedia/commons/2/28/Elevator_Shoe_Cross_Section.jpg)
+
+        Unlike high-heeled shoes, the component of elevator shoes that
+        increases the wearer's height is inside the shoe, hiding it from
+        observers. An elevator shoe, like the platform shoe's heel, can be made
+        from different soles like plastic, wood, or rubber. Shoes with
+        thickened soles are also used in cases of orthopedic problems, although
+        the term "elevator shoe" is not usually used for these.  Elevator shoe
+        Cross section of an elevator shoe displaying the upper, insole,
+        mid-insole and outsole.
+
+        Shoe lifts are often sold separately as versions that are small enough
+        to fit inside a regular shoe. These lifts can increase the sole height
+        by 1-2cm in a regular shoe. By contrast, elevator shoes are designed to
+        accommodate a much larger shoe lift of up to 7cm. Combined with the
+        outsole, this can typically increase the wearer's height by up to
+        10cm.
+
+        **Midsole Technology**
+
+        An optimized insole of an elevator shoe so that it no longer has to be
+        arched on the heel. Thus, creating a raised flat sole that provides the
+        perfect unison of a lift and the exact comfort of regular shoes.
+
+    [Boot fetishism - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Boot_fetishism)
+
+    [Fuck-me shoes - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Fuck-me_boots)
+
+lavatory, `[ˈlævəˌtɔri]`, n.厕所；卫生间；洗手间；盥洗室
+
+Machiavellianism
+
+[Github Hacking - 简书](http://www.jianshu.com/p/d6b54f1d60f1?hmsr=toutiao.io)
+
+[数理统计学的奠基人费希尔](https://www.douban.com/note/523795913/)
+
 [Vinta (陳上進)](https://vinta.ws/)
 
 :   |   幽默是一件重要的事
@@ -91,8 +176,8 @@ Notes | 笔记[^1]
 
 [Penrose triangle - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Penrose_triangle)
 
-:   The Penrose triangle, also known as the Penrose tribar, or the impossible
-    tribar, is an impossible object. It was first created by the Swedish
+:   The **Penrose triangle**, also known as the **Penrose tribar**, or the
+    impossible tribar, is an impossible object. It was first created by the Swedish
     artist Oscar Reutersvärd in 1934. The psychologist Lionel Penrose and his
     mathematician son Roger Penrose independently devised and popularised it in
     the 1950s, describing it as "impossibility in its purest form". It is
@@ -111,18 +196,23 @@ Notes | 笔记[^1]
     -   你喜欢音乐啊，嗯，我也喜欢，不过主要听轻音乐，你听的这些好吵啊！
     -   在街上，她，突然，用力地吐了口痰......
     -   虚伪
-    -   很烦，很愁，很心焦，很郁闷，每次聊天都是这样的负面情绪，还试图去感染你，简直想逃跑啊
+    -   很烦，很愁，很心焦，很郁闷，每次聊天都是这样的负面情绪，还试图去感染你，
+        简直想逃跑啊
     -   口中随便一句话能追着不放跟你闹别扭的
     -   人生支柱是：美甲、发型、购物、自拍。对其他事情没有一点兴趣。
     -   撒谎，不断地、习惯性的谎话。
-    -   任何犯错都推给自己的性别因素，不论是迟到、不守承诺、不讲道理、不买单等。我是女的，你就得让我、原谅我，或者不用做 XXX。
+    -   任何犯错都推给自己的性别因素，不论是迟到、不守承诺、不讲道理、不买单等。
+        我是女的，你就得让我、原谅我，或者不用做 XXX。
     -   过分重视外表（抹各种化学物质就算了，还老是谋划在自己的脸上动刀）。
     -   过多的抱怨以及负面情绪，或者特别自我。
-    -   心情大过承诺。承诺了某事，却因为临时心情不好就没有任何理由和通知的理所当然毁约。虽然社会对男生信守诺言的期待会更高，但女孩子这样子对待承诺，要人怎么相信你在婚后真的会不论贫穷或者疾病都会不离不弃？
+    -   心情大过承诺。承诺了某事，却因为临时心情不好就没有任何理由和通知的理所
+        当然毁约。虽然社会对男生信守诺言的期待会更高，但女孩子这样子对待承诺，
+        要人怎么相信你在婚后真的会不论贫穷或者疾病都会不离不弃？
     -   发现素质不在一个水平的时候……特指文明道德方面。
     -   呵呵
     -   用到你时才找你，且根本不在乎时间时机是否合适。
-    -   我抽烟、喝酒、纹身、说脏话，但我是个好女孩。(不知道哪个脑袋被门夹的人写出来的话。)
+    -   我抽烟、喝酒、纹身、说脏话，但我是个好女孩。(不知道哪个脑袋被门夹的人写
+        出来的话。)
 
     这段话是我看着此人最贱的言论之一
 
@@ -131,7 +221,8 @@ Notes | 笔记[^1]
     > 对你好，事业家庭爱情才会出色。女人只有在青春逝去后才需要攒钱，等到老了，你就
     > 是一个曾经最美过，现在又最有钱的老太太了。
 
-    他奶奶的美女这样挥霍光最后可以找有钱老头买单，没姿色不去读书不去提高光知道挥霍吓走男友然后回家啃老？老了去攒钱？？老了再去攒钱就来不及了好不好。
+    他奶奶的美女这样挥霍光最后可以找有钱老头买单，没姿色不去读书不去提高光知道
+    挥霍吓走男友然后回家啃老？老了去攒钱？？老了再去攒钱就来不及了好不好。
 
     另外在我的狭隘人生观里面 你做事情动机必须要单纯
 
@@ -143,6 +234,8 @@ Notes | 笔记[^1]
     他们自己拿出来卖的东西，他们一个字也不信。
 
     他们只是在消费无知盲众群体的智商，就像中世纪天主教的教皇。
+
+---
 
 结果我一登台，仿佛真的看到她脑袋上掉下了三根竖线。
 
@@ -262,7 +355,7 @@ It's a beautiful day,and I can't see it
     文案是一个常见的职业。我就有好几个以写文案为朋友职业的朋友。有些人创造了美
     好的文案，比如一位诗人给盲眼乞丐写的“春天到了，可是我看不见。”写作是一件美
     好的事，文案更得创造美的文字，而不是写一堆让人一看就恶心的垃圾——除非你跟雇
-    主有仇。而这位叫撞撞胆的乐视文案，怎么看都像是故意来糟蹋乐视形象的无间道。
+    主有仇。而这位叫撞撞胆的乐视文案，怎么看都像是**故意来糟蹋乐视形象的无间道**。
 
     对一群挑剔的发烧友推荐 49 元的耳机，无论是小米活塞还是乐视反戴，只会被视为笑
     话，正如在巴黎上流社交圈的酒宴上讨论保安工作服和六五式军装到底哪个更帅气。
@@ -299,7 +392,7 @@ It's a beautiful day,and I can't see it
 
     唯有美食与爱不可辜负
 
-    小饼如嚼月，中有酥与饴 （又至中秋了，这句很美）
+    **小饼如嚼月，中有酥与饴**（又至中秋了，这句很美）
 
     refs and see also
 
@@ -322,36 +415,36 @@ HTTP - The Definitive Guide
         +   Header
             *   Content-type header
             *   Content-length header
-        +   Body(optional, <an empty line(CRLF)> + <body>)
+        +   Body (optional, <an empty line (CRLF)> + <body>)
 
     -   Connections:
 
         +   TCP/IP
         +   Connections, IP address, and Port Numbers
 
-    -   Protocol Versions: 0.9, 1.0, 1.0+, 1.1, 2.0(HTTP-NG)
+    -   Protocol Versions: 0.9, 1.0, 1.0+, 1.1, 2.0 (HTTP-NG)
 
     -   Architechtural Components of the Web
 
         +   Proxies
-        +   Caches(Web cache, or caching proxy)
+        +   Caches (Web cache, or caching proxy)
         +   Gateways
         +   Tunnels
-        +   Agents(Web browsers, etc)
+        +   Agents (Web browsers, etc)
 
-    -   Scheme(how), Host(where), Path(what)
+    -   Scheme (how), Host (where), Path (what)
 
         ```xml
         [<scheme>://][<user>[:<password>]@]<host>[:<port>][/<path>][;<params>][?<query>][#<frag>]
         ```
 
-    -   Params(Parameters), name/value pairs.
+    -   Params (Parameters), name/value pairs.
 
     -   Base URLs: `<BASE>` HTML tag. Converting relative to absolute URLs
 
     -   Expandomatic URLs
 
-        +   Hostname expansion(`www.` `.com`, etc)
+        +   Hostname expansion (`www.` `.com`, etc)
         +   History expansion
 
     -   Shady Characters
@@ -383,7 +476,7 @@ HTTP - The Definitive Guide
         +   version 2.22 > 2.3
         +   Header continuation lines
         +   Method: GET, PUT, POST, TRACE, OPTIONS, DELETE
-        +   UA(User Agent): UA-OS, UA-CPU, etc.
+        +   UA (User Agent): UA-OS, UA-CPU, etc.
         +   Headers
             *   General headers: Date: Tue, 3 Oct 1974 02:16:00 GMT
             *   Request headers: Accept: */*
@@ -399,7 +492,7 @@ HTTP - The Definitive Guide
 
         refs and see also
 
-        -   http://www.w3.org/Protocols/
+        -   <http://www.w3.org/Protocols/>
 
     -   TCP Reliable Data Pipes
 
@@ -409,10 +502,12 @@ HTTP - The Definitive Guide
 
         A TCP connection
 
-        +   `<source-IP-address, source-port, destination-IP-address, destination-port>`
+        +   `<src-IP-addr, src-port, dst-IP-addr, dst-port>`
         +   Programming with TCP Sockets
-            *   s = socket(<parameters>): Creates a new, unnamed, unattached socket.
-            *   bind(s, <local IP:port>): Assigns a local port number and interface to the socket.
+            *   `s = socket(<parameters>)`{.cpp}: Creates a new, unnamed,
+                unattached socket.
+            *   `bind(s, <local IP:port>)`{.cpp}: Assigns a local port number
+                and interface to the socket.
 
         TCP Performance Considerations
 
@@ -420,8 +515,8 @@ HTTP - The Definitive Guide
         +   Performance Focus Areas
         +   Delayed Acknowledgments
         +   TCP Slow Start
-        +   Nagle’s Algorithm and TCP_NODELAY
-        +   TIME_WAIT Accumulation and Port Exhaustion
+        +   Nagle’s Algorithm and `TCP_NODELAY`
+        +   `TIME_WAIT` Accumulation and Port Exhaustion
         +   Serial Transaction Delays
 
         Parallel Connections
@@ -687,36 +782,37 @@ HTTP - The Definitive Guide
     -   Integration Points: Gateways, Tunnels, and Relays
 
     Client-Side and Server-Side Gateways
-    <client-protocol>/<server-protocol>
+
+    -   `<client-protocol>/<server-protocol>`
 
     Protocol Gateways
 
-    * HTTP/*: Server-Side Web Gateways
-    * HTTP/HTTPS: Server-Side Security Gateways
-    * HTTPS/HTTP: Client-Side Security Accelerator Gateways
+    -   `HTTP/*`: Server-Side Web Gateways
+    -   `HTTP/HTTPS`: Server-Side Security Gateways
+    -   `HTTPS/HTTP`: Client-Side Security Accelerator Gateways
 
     Resource Gateways
 
-    * Common Gateway Interface(CGI)
-    * Server Extension APIs
+    -   Common Gateway Interface (CGI)
+    -   Server Extension APIs
 
     Application Interfaces and Web Services
 
     Tunnels
 
-    * Establishing HTTP Tunnels with CONNECT (a raw byte relay)
-    * CONNECT requests
+    -   Establishing HTTP Tunnels with CONNECT (a raw byte relay)
+    -   CONNECT requests
 
-    CONNECT home.netscape.com:443 HTTP/1.0
+    CONNECT `home.netscape.com:443 HTTP/1.0`
 
     User-agent: Mozilla/4.0
 
-    + CONNECT responses
-    * Data Tunneling, Timing, and Connection Management
-    + SSL Tunneling
-    + SSL Tunneling Versus HTTP/HTTPS Gateways
-    * Tunnel Authentication
-    * Tunnel Security Considerations
+    -   CONNECT responses
+    -   Data Tunneling, Timing, and Connection Management
+    -   SSL Tunneling
+    -   SSL Tunneling Versus HTTP/HTTPS Gateways
+    -   Tunnel Authentication
+    -   Tunnel Security Considerations
 
     Relays
 
@@ -725,83 +821,94 @@ HTTP - The Definitive Guide
     Crawlers and Crawling
 
     Where to Start: The “Root Set”
-    * stranded—isolated,
+
+    -   stranded—isolated,
 
     Extracting Links and Normalizing Relative Links
-    * Loops and Dups
+
+    -   Loops and Dups
 
     Trails of Breadcrumbs
-    * Trees and hash tables
-    * Lossy presence bit maps
-    * Checkpoints
-    * Partitioning
+
+    -   Trees and hash tables
+    -   Lossy presence bit maps
+    -   Checkpoints
+    -   Partitioning
 
     Aliases and Robot Cycles
-    * Canonicalizing URLs
-    * Filesystem Link Cycles
-    * Dynamic Virtual Web Spaces
+
+    -   Canonicalizing URLs
+    -   Filesystem Link Cycles
+    -   Dynamic Virtual Web Spaces
 
     Avoiding Loops and Dups
-    * Canonicalizing URLs
-    * Breadth-first crawling
-    * Throttling
-    * Limit URL size
-    * URL/site blacklist
-    * Pattern detection (`/subdir/subdir/subdir...`)
-    * Content fingerprinting
-    * Human monitoring
+
+    -   Canonicalizing URLs
+    -   Breadth-first crawling
+    -   Throttling
+    -   Limit URL size
+    -   URL/site blacklist
+    -   Pattern detection (`/subdir/subdir/subdir...`)
+    -   Content fingerprinting
+    -   Human monitoring
 
     Robotic HTTP
-    * Identifying Request Headers
-    * Virtual Hosting
-    * Conditional Requests
-    * Response Handling
-    + status codes
-    + entities
-    * User-Agent Targeting
 
+    -   Identifying Request Headers
+    -   Virtual Hosting
+    -   Conditional Requests
+    -   Response Handling
+    -   status codes
+    -   entities
+    -   User-Agent Targeting
 
     Misbehaving Robots
-    * Runaway robots
-    * Stale URLs
-    * Long, wrong URLs
-    * Nosy robots
-    * Dynamic gateway access
+
+    -   Runaway robots
+    -   Stale URLs
+    -   Long, wrong URLs
+    -   Nosy robots
+    -   Dynamic gateway access
 
     Excluding Robots
-    * Robots Exclusion Standard (robots.txt)
-    * Web Sites and robots.txt Files
-    + retrive `robots.txt` and check response codes
-    + robots.txt File Format
-    ```xml
-    User-Agent: <robot-name> # case-insensitive substring of the robot’s name
-    ```
-    + Disallow/Allow prefix matching
-    * Other robots.txt Wisdom
+
+    -   Robots Exclusion Standard (robots.txt)
+    -   Web Sites and robots.txt Files
+    -   retrive `robots.txt` and check response codes
+    -   robots.txt File Format
+
+        ```xml
+        User-Agent: <robot-name> # case-insensitive substring of the robot’s name
+        ```
+
+    -   Disallow/Allow prefix matching
+    -   Other robots.txt Wisdom
 
     Caching and Expiration of robots.txt
 
     Robot Exclusion Perl Code
 
     HTML Robot-Control META Tags
+
     NOINDEX, NOFOLLOW, INDEX, FOLLOW, NOARCHIVE, ALL, NONE
 
     Robot Etiquette(礼仪)
-    * http://www.robotstxt.org/wc/guidelines.html
 
+    -   <http://www.robotstxt.org/wc/guidelines.html>
 
     Chapter 10. HTTP-NG
 
     HTTP’s Growing Pains
+
     [HTTP-NG] Activity = HTTP: The Next Generation (HTTP-NG)
 
     Modularize and Enhance
 
-    * Layer {1..3}
-    * Distributed Objects
-    * Layer 1: [Messaging (WebMUX)](http://www.w3.org/Protocols/MUX/WD-mux-980722.html)
-    * Layer 2: Remote Invocation ([Binary Wire Protocol](http://www.w3.org/Protocols/HTTP-NG/1998/08/draft-janssen-httpng-wire-00.txt))
-    * Layer 3: Web Application
+    -   Layer {1..3}
+    -   Distributed Objects
+    -   Layer 1: [Messaging (WebMUX)](http://www.w3.org/Protocols/MUX/WD-mux-980722.html)
+    -   Layer 2: Remote Invocation ([Binary Wire Protocol](http://www.w3.org/Protocols/HTTP-NG/1998/08/draft-janssen-httpng-wire-00.txt))
+    -   Layer 3: Web Application
 
     [HTTP-NG]: http://www.w3.org/Protocols/HTTP-NG/
 
@@ -811,51 +918,51 @@ HTTP - The Definitive Guide
 
     The Personal Touch
 
-    1. HTTP Headers
-    2. Client IP Address
-    3. User Login (Pretty soon, Fred will give up on the Internet and go back to watching Oprah...)
-    4. Fat URLs
-    * Ugly URLs
-    * Can't share URLs
-    * Breaks caching
-    * Extral server load
-    * Excape hatches (may lost your shopping cart)
-    * Not persistent across sessions
-    5. Cookies
-    * Types of Cookies: session and persistent
-    * How Cookies Work
-    * Cookie Jar: Client-Side State
-    + domain
-    + allh
-    + path
-    + secure
-    + expiration
-    + name
-    + value
-    * Different Cookies for Different Sites (`Set-Cookie: key=val`, Cookie: key=value`)
-    + Cookie Domain attribute: `domain=<SITE>`, <SITE> e.g. "www.jianshu.com"
-    + Cookie Path attribute: `path=/autos/`
-    * Cookie Ingredients
-    + Version 0 (Netscape) Cookies
-    + Version 1 (RFC 2965) Cookies
-    * Cookies and Session Tracking
-    * Cookies and Caching
-    + Mark documents uncacheable if they are
-    + Be cautious about caching Set-Cookie headers
-    + Be cautious about requests with Cookie headers
-    * Cookies, Security, and Privacy
+    -   HTTP Headers
+    -   Client IP Address
+    -   User Login (Pretty soon, Fred will give up on the Internet and go back to watching Oprah...)
+    -   Fat URLs
+        +   Ugly URLs
+        +   Can't share URLs
+        +   Breaks caching
+        +   Extral server load
+        +   Excape hatches (may lost your shopping cart)
+        +   Not persistent across sessions
+    -   Cookies
+        +   Types of Cookies: session and persistent
+        +   How Cookies Work
+        +   Cookie Jar: Client-Side State
+    -   domain
+    -   allh
+    -   path
+    -   secure
+    -   expiration
+    -   name
+    -   value
+    -   Different Cookies for Different Sites (`Set-Cookie: key=val`, Cookie: key=value`)
+        +   Cookie Domain attribute: `domain=<SITE>`, <SITE> e.g. "www.jianshu.com"
+        +   Cookie Path attribute: `path=/autos/`
+    -   Cookie Ingredients
+        +   Version 0 (Netscape) Cookies
+        +   Version 1 (RFC 2965) Cookies
+    -   Cookies and Session Tracking
+    -   Cookies and Caching
+        +   Mark documents uncacheable if they are
+        +   Be cautious about caching Set-Cookie headers
+        +   Be cautious about requests with Cookie headers
+    -   Cookies, Security, and Privacy
 
     Chapter 12. Basic Authentication
 
-    * Authentication
-    * Authentication Protocols and Headers
-    * Security Realms
-    * Basic Authentication
-    + Challenge/Response
-    - Challenge(server2client): `WWW-Authenticate: Basic realm=<quoted-realm>`
-    - Response(client2server): `Authorization: Basic <base64-username-and-password>`
-    - Base-64 Username/Password Encoding: BASE64ENC(<username>:<passwd>)
-    * Proxy Authentication
+    -   Authentication
+    -   Authentication Protocols and Headers
+    -   Security Realms
+    -   Basic Authentication
+        +   Challenge/Response
+            -   Challenge(server2client): `WWW-Authenticate: Basic realm=<quoted-realm>`
+            -   Response(client2server): `Authorization: Basic <base64-username-and-password>`
+            -   Base-64 Username/Password Encoding: BASE64ENC(<username>:<passwd>)
+    -   Proxy Authentication
 
     | Web Server | Proxy Server |
     | :---: | :---: |
@@ -864,136 +971,157 @@ HTTP - The Definitive Guide
     | Authorization | Proxy-Authorization |
     | Authentication-Info | Proxy-Authentication-Info |
 
-    * The Security Flaws of Basic Authentication
+    -   The Security Flaws of Basic Authentication
 
     Chapter 13. Digest Authentication
 
     The Improvements of Digest Authentication
-    * Transport Layer Security (TLS)
-    * Secure HTTP (HTTPS)
+
+    -   Transport Layer Security (TLS)
+    -   Secure HTTP (HTTPS)
 
     Using Digests to Keep Passwords Secret
 
     One-Way Digests
-    * aliases of `Digest functions`= `cryptographic checksums`, `one-way hash functions`, or `fingerprint functions`
 
-    * MD5
+    -   aliases of `Digest functions`= `cryptographic checksums`, `one-way hash functions`, or `fingerprint functions`
 
-    | Input | MD5 digest |
-    | :---: | :---: |
-    | “Hi” | C1A5298F939E87E8F962A5EDFC206918 |
-    | “bri:Ow!” | BEAAA0E34EBDB072F8627C038AB211F8 |
-    | “3.1415926535897” | 475B977E19ECEE70835BC6DF46F4F6DE |
+    -   MD5
+
+        | Input | MD5 digest |
+        | :---: | :---: |
+        | “Hi” | C1A5298F939E87E8F962A5EDFC206918 |
+        | “bri:Ow!” | BEAAA0E34EBDB072F8627C038AB211F8 |
+        | “3.1415926535897” | 475B977E19ECEE70835BC6DF46F4F6DE |
 
     Using Nonces to Prevent Replays
-    * a special token called a `nonce`
+
+    -   a special token called a `nonce`
 
     The Digest Authentication Handshake
-    * chanllenge, nonce, algorithms...
 
-    ## Digest Calculations
+    -   chanllenge, nonce, algorithms...
 
-    Digest Algorithm Input Data
+    Digest Calculations
 
-    Digests are computed from three components:
-    * A pair of functions consisting of a one-way hash function H(d) and digest KD(s,d), where s stands for secret and d stands for data
-    * A chunk of data containing security information, including the secret password, called A1
-    * A chunk of data containing nonsecret attributes of the request message, called A2
-    The two pieces of data, A1 and A2, are processed by H and KD to yield a digest.
+    -   Digest Algorithm Input Data
 
-    H(<data>) = MD5(<data>)
-    KD(<secret>,<data>) = H(concatenate(<secret>:<data>))
-    qop: quality of protection
-    <request-method>: HTTP request method
-    <uri-directive-value>: the request URI from the request line
-    nc: nonce count
+        Digests are computed from three components:
 
-    The Security-Related Data (A1)
-    | Algorithm | A1 |
-    | :---: | :---: |
-    | MD5 | A1 = <user>:<realm>:<password> |
-    | MD5-sess | A1 = MD5(<user>:<realm>:<password>):<nonce>:<cnonce> |
+        +   A pair of functions consisting of a one-way hash function H(d) and
+            digest KD(s,d), where s stands for secret and d stands for data
+        +   A chunk of data containing security information, including the secret password, called A1
+        +   A chunk of data containing nonsecret attributes of the request message, called A2
 
-    The Message-Related Data (A2)
-    | qop | A2 |
-    | undefined | <request-method>:<uri-directive-value> |
-    | auth | <request-method>:<uri-directive-value> |
-    | auth-int | <request-method>:<uri-directive-value>:H(<request-entity-body>) |
+        The two pieces of data, A1 and A2, are processed by H and KD to yield a digest.
 
-    Overall Digest Algorithm
-    * Old and new digest algorithms
-    | qop | Digest algorithm | Notes |
-    | :---: | :---: | :---: |
-    | undefined | KD(H(A1), <nonce>:H(A2)) | Deprecated |
-    | auth or auth-int | KD(H(A1), <nonce>:<nc>:<cnonce>:<qop>:H(A2)) | Preferred |
-    * Unfolded digest algorithm cheat sheet
-    | qop | Algorithm | Unfolded algorithm |
-    | :---: | :---: | :---: |
-    | undefined | <undefined>, MD5, MD5-sess | MD5(MD5(A1):<nonce>:MD5(A2)) |
-    | auth | <undefined>, MD5, MD5-sess | MD5(MD5(A1):<nonce>:<nc>:<cnonce>:<qop>:MD5(A2)) |
-    | auth-int | <undefined>, MD5, MD5-sess | MD5(MD5(A1):<nonce>:<nc>:<cnonce>:<qop>:MD5(A2)) |
+        ```plain
+        H(<data>) = MD5(<data>)
+        KD(<secret>,<data>) = H(concatenate(<secret>:<data>))
+        qop: quality of protection
+        <request-method>: HTTP request method
+        <uri-directive-value>: the request URI from the request line
+        nc: nonce count
+        ```
+
+        The Security-Related Data (A1)
+
+        | Algorithm | A1 |
+        | :---: | :---: |
+        | MD5 | A1 = <user>:<realm>:<password> |
+        | MD5-sess | A1 = MD5(<user>:<realm>:<password>):<nonce>:<cnonce> |
+
+        The Message-Related Data (A2)
+
+        | qop | A2 |
+        | undefined | <request-method>:<uri-directive-value> |
+        | auth | <request-method>:<uri-directive-value> |
+        | auth-int | <request-method>:<uri-directive-value>:H(<request-entity-body>) |
+
+        Overall Digest Algorithm
+
+        +   Old and new digest algorithms
+
+            | qop | Digest algorithm | Notes |
+            | :---: | :---: | :---: |
+            | undefined | KD(H(A1), <nonce>:H(A2)) | Deprecated |
+            | auth or auth-int | KD(H(A1), <nonce>:<nc>:<cnonce>:<qop>:H(A2)) | Preferred |
+
+        +   Unfolded digest algorithm cheat sheet
+
+            | qop | Algorithm | Unfolded algorithm |
+            | :---: | :---: | :---: |
+            | undefined | <undefined>, MD5, MD5-sess | MD5(MD5(A1):<nonce>:MD5(A2)) |
+            | auth | <undefined>, MD5, MD5-sess | MD5(MD5(A1):<nonce>:<nc>:<cnonce>:<qop>:MD5(A2)) |
+            | auth-int | <undefined>, MD5, MD5-sess | MD5(MD5(A1):<nonce>:<nc>:<cnonce>:<qop>:MD5(A2)) |
 
     Digest Authentication Session
 
-    Preemptive Authorization
-    * Next nonce pregeneration
-    * Limited nonce reuse
-    * Synchronized nonce generation
-
-    Nonce Selection
-    * Suggested by RFC 2617, nonce = BASE64(time-stamp H(time-stamp ":" ETag ":" private-key))
-    * ETag: the HTTP ETag header associated with the requested entity
+    -   Preemptive Authorization
+        +   Next nonce pregeneration
+        +   Limited nonce reuse
+        +   Synchronized nonce generation
+    -   Nonce Selection
+        +   Suggested by RFC 2617, nonce = BASE64(time-stamp H(time-stamp ":" ETag ":" private-key))
+        +   ETag: the HTTP ETag header associated with the requested entity
 
     Symmetric Authentication
-    * Definitions for A2 by algorithm (request digests)
-    | qop | A2 |
-    | :---: | :---: |
-    | undefined | <request-method>:<uri-directive-value> |
-    | auth | <request-method>:<uri-directive-value> |
-    | auth-int | <request-method>:<uri-directive-value>:H(<request-entity-body>) |
-    * Definitions for A2 by algorithm (response digests)
-    | qop | A2 |
-    | :---: | :---: |
-    | undefined | :<uri-directive-value> |
-    | auth | :<uri-directive-value> |
-    | auth-int | :<uri-directive-value>:H(<response-entity-body>) |
+
+    -   Definitions for A2 by algorithm (request digests)
+
+        | qop | A2 |
+        | :---: | :---: |
+        | undefined | <request-method>:<uri-directive-value> |
+        | auth | <request-method>:<uri-directive-value> |
+        | auth-int | <request-method>:<uri-directive-value>:H(<request-entity-body>) |
+
+    -   Definitions for A2 by algorithm (response digests)
+
+        | qop | A2 |
+        | :---: | :---: |
+        | undefined | :<uri-directive-value> |
+        | auth | :<uri-directive-value> |
+        | auth-int | :<uri-directive-value>:H(<response-entity-body>) |
 
     Quality of Protection Enhancements
-    * Use of qop is optional, but only for backward compatibility with the older RFC 2069 specification.
+
+    -   Use of qop is optional, but only for backward compatibility with the older RFC 2069 specification.
 
     Message Integrity Protection
 
     Digest Authentication Headers
 
     Practical Considerations
-    * Multiple Challenges
-    * Error Handling
-    * Protection Spaces
-    * Rewriting URIs
-    * Caches
+
+    -   Multiple Challenges
+    -   Error Handling
+    -   Protection Spaces
+    -   Rewriting URIs
+    -   Caches
 
     Security Considerations
-    * Header Tampering
-    * Replay Attacks
-    * Multiple Authentication Mechanisms
-    * Dictionary Attacks
-    * Hostile Proxies and Man-in-the-Middle Attacks
-    * Chosen Plaintext Attacks
-    * Storing Passwords
+
+    -   Header Tampering
+    -   Replay Attacks
+    -   Multiple Authentication Mechanisms
+    -   Dictionary Attacks
+    -   Hostile Proxies and Man-in-the-Middle Attacks
+    -   Chosen Plaintext Attacks
+    -   Storing Passwords
 
     Chapter 14. Secure HTTP
 
-    Making HTTP Safe
-    HTTPS
-    Digital Cryptography: The Art and Science of Secret Coding
-    Cipher
+    -   Making HTTP Safe
+    -   HTTPS
+    -   Digital Cryptography: The Art and Science of Secret Coding
+    -   Cipher
 
     Symmetric-Key Cryptography
-    * (e=k), encoding = decoding
-    * P = D(C, d)
-    * DES, Triple-DES, RC2, and RC4
-    * Key Length and Enumeration Attacks
-    v
+
+    -   (e=k), encoding = decoding
+    -   P = D(C, d)
+    -   DES, Triple-DES, RC2, and RC4
+    -   Key Length and Enumeration Attacks
 
 ```org
 #+OPTIONS: tex:t          Do the right thing automatically (MathJax)
@@ -1019,12 +1147,12 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
     ![1411354305.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354305.png)
     ![1411354346.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354346.png)
 
-    02. 可证伪性 --- 如何阻挡脑袋中的鬼精灵到处捣蛋
+    02. **可证伪性** --- 如何阻挡脑袋中的鬼精灵到处捣蛋
 
     ![1411354462.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354462.png)
     ![1411354474.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354474.png)
 
-    03. 操作主义及本质主义 --- 不过，博士，这到底是什么意思呢？
+    03. **操作主义**及本质主义 --- 不过，博士，这到底是什么意思呢？
 
     ![1411354573.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354573.png)
     ![1411354586.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354586.png)
@@ -1034,7 +1162,7 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
     ![1411354695.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354695.png)
     ![1411354712.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354712.png)
 
-    05. 相关和因果 --- 烤面包机与避孕
+    05. **相关**和因果 --- 烤面包机与避孕
 
     ![1411354782.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354782.png)
     ![1411354797.png](http://gnat-tang-shared-image.qiniudn.com/pic/20140922/1411354797.png)
@@ -1075,7 +1203,7 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
         [Takeo Kanade][takeo-kanade] 对其日常研究、生活和学习的经验进行收集整理
         而成的一本小册子。本书不仅用作者亲身经历的大量事例极具趣味地描述了许多
         有效的科研法则，如“海阔天空的构思”、“跳出现有的成功”、“KISS 方法”、“用情
-        景推动研究进展”、“智慧体力”、“从‘做不到’重新开始”、“在与他人的交流中完
+        景推动研究进展”、“**智慧体力**”、“从‘做不到’重新开始”、“在与他人的交流中完
         善自己的构想”，等等，而且更是用大量的篇幅、语重心长地为下一代即将承担未
         来的年轻人如何进行科研，如何进行创新，想得到一定成就应该具备什么样的能
         力提供了必要及时的指导。
@@ -1089,92 +1217,92 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
 
     TOC
 
-    1.  像外行一样思考，像专家一样实践
-    2.  计算机向人类发出的挑战 --- 问题的解决能力与教育
-    3.  表达“自己的想法”，说服别人实践！国际化时代的讲演、会话、写作能力
-    4.  寻求决断与明示的速度：关于日本与世界，自己与他人的思考
-    5.  结束语：愉快地解决问题
+    01. 像外行一样思考，像专家一样实践
+    02. 计算机向人类发出的挑战 --- 问题的解决能力与教育
+    03. 表达“自己的想法”，说服别人实践！国际化时代的讲演、会话、写作能力
+    04. 寻求决断与明示的速度：关于日本与世界，自己与他人的思考
+    05. 结束语：愉快地解决问题
 
     像外行一样思考，像专家一样实践
 
     :   -   **Wild Idea Fund**
-        -   从现状出发，逻辑推导，最终得到结论（内行）。
-        -   从想要的结果出发开始做（外行）。
-        -   天真、幼稚、甚至牵强的想法（通向重大成就的突破点）。
-        -   只有天真是不够的。还得考数学这个工具。
-        -   内容宽泛的理论（MIT 的 [Minsky][marvin-minsky] 的故事）。
-        -   Minsky 的诀窍：反对大家。
-        -   省略、抽象与简洁之美：省略到什么程度是关键。
-        -   超级碗上的 Eye Vision: Let's watch the NBA on the court。
-        -   畅销小说的构思。
-        -   KISS Principle: Keep it Simple, Stupid.
-        -   其实做事只要坚持到最后，就算不成功也会学到很多。
-        -   智慧体力：所谓的集中力，就是让自己成为问题本身。
-        -   越能干的人，越会迷茫。
-        -   做研究和搞开发没有具体目标是不行的。
-        -   不安感和成就感是智慧体力的基石。
-        -   [Clarke's Three Laws][clarkes-three-laws].
-        -   交流中创新。
-        -   像专家一样思考，像外行一样实践。
+        -   **从现状出发，逻辑推导，最终得到结论（内行）**
+        -   **从想要的结果出发开始做（外行）**
+        -   天真、幼稚、甚至牵强的想法（通向重大成就的突破点）
+        -   只有天真是不够的。还得考数学这个工具
+        -   内容宽泛的理论（MIT 的 [Minsky][marvin-minsky] 的故事）
+        -   Minsky 的诀窍：**反对大家**
+        -   省略、抽象与简洁之美：省略到什么程度是关键
+        -   超级碗上的 Eye Vision: Let's watch the NBA on the court
+        -   畅销小说的构思
+        -   KISS Principle: Keep it Simple, Stupid
+        -   其实做事只要坚持到最后，就算不成功也会学到很多
+        -   **智慧体力：所谓的集中力，就是让自己成为问题本身**
+        -   越能干的人，越会迷茫
+        -   做研究和搞开发没有具体目标是不行的
+        -   **不安感**和成就感是智慧体力的基石
+        -   [Clarke's Three Laws][clarkes-three-laws]
+        -   交流中创新
+        -   **像专家一样思考，像外行一样实践**
 
     [clarkes-three-laws]: http://en.wikipedia.org/wiki/Clarke%27s_three_laws
     [marvin-minsky]: http://en.wikipedia.org/wiki/Marvin_Minsky
 
     计算机向人类发出的挑战 --- 问题的解决能力与教育
 
-    :   -   人是了不起的机器，人们只是不知道自己所使用的程序而已。
-        -   NP 完全问题。
-        -   [Kasparov]：感受到了一种全新的智能体。
+    :   -   人是了不起的机器，人们只是不知道自己所使用的程序而已
+        -   NP 完全问题
+        -   [Kasparov]：感受到了一种全新的智能体
         -   “深蓝”：超过了“可预测的不可预测性”
-        -   通过解决问题来提高思考力和判断力。
-        -   思考例题并加以解决是加深理解的最好方法。
-        -   Euler 公式。
-        -   逻辑学家、数学家、物理学家、工程学家。
+        -   通过解决问题来提高思考力和判断力
+        -   思考例题并加以解决是加深理解的最好方法
+        -   Euler 公式
+        -   逻辑学家、数学家、物理学家、工程学家
         -   教科书的编写 & 培养思考能力：“实质到形式”还是“形式到实质”
-        -   单纯练习公式的使用方法是无助于培养思维能力的。
-        -   创造力、规划能力的基础是记忆力。
-        -   构思：通过重组脑海中的记忆而产生的。
-        -   最有效的学习方法就是记忆。
-        -   储存能力与应用能力。
-        -   记忆的时候尽可能做到理解记忆。理解基础上记忆的东西才能正确的使用。
-        -   **思考力和记忆力是靠不断实践培养起来的。基础中的基础。**
-        -   “填”不见得就是一种不好的方法。关键是怎样“填”。
-        -   专业傻瓜。
-        -   抓要点，在说话和做研究上一样一样的。
+        -   单纯练习公式的使用方法是无助于培养思维能力的
+        -   创造力、规划能力的基础是记忆力
+        -   构思：通过重组脑海中的记忆而产生的
+        -   最有效的学习方法就是记忆
+        -   储存能力与应用能力
+        -   记忆的时候尽可能做到理解记忆。理解基础上记忆的东西才能正确的使用
+        -   **思考力和记忆力是靠不断实践培养起来的。基础中的基础**
+        -   “填”不见得就是一种不好的方法。关键是怎样“填”
+        -   专业傻瓜
+        -   抓要点，在说话和做研究上一样一样的
 
         [kasparov]: http://en.wikipedia.org/wiki/Kasparov
 
     表达“自己的想法”，说服别人实践！国际化时代的讲演、会话、写作能力
 
-    :   -   表达观点说法他人也是研究活动的一个环节。
-        -   被人了解才有价值。
-        -   Playing Cards: Best First.
-        -   不是通过说明得到认可，而是在认可的基础上进行说明。
+    :   -   表达观点说服他人也是研究活动的一个环节
+        -   被人了解才有价值
+        -   Playing Cards: Best First
+        -   不是通过说明得到认可，而是在认可的基础上进行说明
         -   称赞是全世界共同的良药。“Enjoy~”
         -   说话方式的恶习 --- “但是”
-        -   实战提高英语：**抢着说，大声讲，静心听。**
-        -   论文也是一部推理小说。
-        -   脉络：起承转合。
+        -   实战提高英语：**抢着说，大声讲，静心听**
+        -   论文也是一部推理小说
+        -   脉络：起承转合
 
     寻求决断与明示的速度：关于日本与世界，自己与他人的思考
 
-    :   -   能用则用的现实使用主义。
-        -   海湾战争的日本援助：Too little, too late。
-        -   “别人怎么看自己” --- 强迫观念与存在感。
-        -   美国人不在乎别人的眼光。
+    :   -   **能用则用**的现实使用主义
+        -   海湾战争的日本援助：Too little, too late
+        -   “别人怎么看自己” --- 强迫观念与存在感
+        -   美国人不在乎别人的眼光
         -   **不要拿“日本独有”当做挡箭牌。**
-        -   要想不被别人当成摆设的木偶，无论到了什么地位也都要履行好自己的职责。
-        -   **[Publish or Perish][pub-or-prs], Demo or die.**
-        -   一个好的评价制度，他的目的是防止出现一些既不想辞退也不想升职的平庸之辈。
-        -   自己决定是一种勇气。（为什么日本日你不希望自己来决定）
+        -   要想不被别人当成摆设的木偶，无论到了什么地位也都要履行好自己的职责
+        -   **[Publish or Perish][pub-or-prs], Demo or die**
+        -   **一个好的评价制度，他的目的是防止出现一些既不想辞退也不想升职的平庸之辈**
+        -   自己决定是一种勇气（为什么日本人你不希望自己来决定）
 
         [pub-or-prs]: https://en.wikipedia.org/wiki/Publish_or_perish
 
     结束语：愉快地解决问题
 
-    :   -   思考事物的本质。
-        -   中国学生的热情。
-        -   简单思考，积极向上。
+    :   -   思考事物的本质
+        -   中国学生的热情
+        -   简单思考，积极向上
 
     一些图片
 
@@ -1219,39 +1347,40 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
 
 :   豆瓣书评：[有助于培养“统计思想”](http://book.douban.com/review/4557864/)
 
-    陈先生在本书《序》中说：
+    :   陈先生在本书《序》中说：
 
-    > **统计学不止是一种方法或技术，还含有世界观的成分**
-    > --它是看待世界上万事万物的一种方法，我们常讲某事从统计观点看如何如何，指的
-    > 就是这个意思，但统计思想也有一个发展过程。因此，统计思想（或观点）的养成，
-    > 不单需要学习一些具体的知识，还要能够从发展的眼光，把这些知识连缀成一个有机
-    > 的、清晰地图景，获得一种历史的厚重感。
+        >   **统计学不止是一种方法或技术，还含有世界观的成分** --它是看待世界上
+        >   万事万物的一种方法，我们常讲某事从统计观点看如何如何，指的就是这个
+        >   意思，但统计思想也有一个发展过程。因此，统计思想（或观点）的养成，
+        >   不单需要学习一些具体的知识，还要能够从发展的眼光，把这些知
+        >   识连缀成一个有机的、清晰地图景，获得一种历史的厚重感。
 
-    我们可以从现在的统计学教材中学到许多统计方法，但是可能并不明了这些方法的起
-    源及适用范围，碰到了新问题不知用什么方法或者选择错误的方法；我们也可能按步
-    就班地学完概率论，但是对于为什么要引进随机变量及大数定律的意义不甚明了。学
-    习概率与统计的历史有助于我们更深入地理解概率的基本概念，并培养统计思想。
+        我们可以从现在的统计学教材中学到许多统计方法，但是可能并不明了这些方法的起
+        源及适用范围，碰到了新问题不知用什么方法或者选择错误的方法；我们也可能
+        按步就班地学完概率论，但是对于为什么要引进随机变量及大数定律的意义不甚
+        明了。学习概率与统计的历史有助于我们更深入地理解概率的基本概念，并培养
+        统计思想。
 
-    从内容上说，本书的前 2 章是概率论相关的，其余八章才是真正关于统计学的，但让
-    人觉得很自然，正体现了概率与统计的一脉相承。书中的内容涉及到概率、大数定律
-    、贝叶斯统计、最小二乘法、误差与正态分布、抽样调查、回归与相关、小样本理论
-    、方差分析、假设检验、参数估计等。
+        从内容上说，本书的前 2 章是概率论相关的，其余八章才是真正关于统计学的，
+        但让人觉得很自然，正体现了概率与统计的一脉相承。书中的内容涉及到概率、
+        大数定律、贝叶斯统计、最小二乘法、误差与正态分布、抽样调查、回归与相关、
+        小样本理论、方差分析、假设检验、参数估计等。
 
-    读完这本书，有以下几点感受：
+        读完这本书，有以下几点感受：
 
-    -   掌握基本概念对于学习数学非常重要，对于重要的基本概念，不要以为一两天就
-        可能深入理解。事实上，人类可能花了几十甚至上百年才取得一些重大的思维进
-        展
-    -   对于统计方法，了解其发明的背景（最初用来解决什么问题）很有用。这将有助
-        于我们了解这一统计方法的适用范围（包括可以引申来解决什么问题）
-    -   若习惯于完全严谨的方法，解决实际问题可能受到限制（欧拉与拉普拉斯这样的
-        顶级大学者，一生解决了很多数学难题，却对于线性方程组求解的问题没有什么
-        建树）
-    -   不要期望一下子提出一个毫无缺陷的方法
-    -   新方法的提出可能遭受别人的质疑或批评（比如显著性检验方法曾受到贝叶斯学
-        派的质疑）
+        -   掌握基本概念对于学习数学非常重要，对于重要的基本概念，不要以为一两
+            天就可能深入理解。事实上，人类可能花了几十甚至上百年才取得一些重大
+            的思维进展
+        -   对于统计方法，了解其发明的背景（最初用来解决什么问题）很有用。这将
+            有助于我们了解这一统计方法的适用范围（包括可以引申来解决什么问题）
+        -   若习惯于完全严谨的方法，解决实际问题可能受到限制（欧拉与拉普拉斯这
+            样的顶级大学者，一生解决了很多数学难题，却对于线性方程组求解的问题
+            没有什么建树）
+        -   不要期望一下子提出一个毫无缺陷的方法
+        -   新方法的提出可能遭受别人的质疑或批评（比如显著性检验方法曾受到贝叶
+            斯学派的质疑）
 
-    本书的卷尾语是一个很好的统计学历史的总结及对统计学未来的展望。
+        本书的卷尾语是一个很好的统计学历史的总结及对统计学未来的展望。
 
     序 && 导言
 
@@ -1279,9 +1408,9 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
 
 如果让我重做一次研究生 --- 王泛森院士
 
-:   > 这是王泛森院士写的一篇文章，我觉得对即将读研的同学很有意义，到了研究生阶
-    > 段，不能再用本科生的思维方式去学习，更应该**具备学术研究素质，学会创新，学会主
-    > 动学习，学会怎样与老师一起进入研究领域**，又是人生中的一个新课题。
+:   >   这是王泛森院士写的一篇文章，我觉得对即将读研的同学很有意义，到了研究生阶
+    >   段，不能再用本科生的思维方式去学习，更应该**具备学术研究素质，学会创新，学会主
+    >   动学习，学会怎样与老师一起进入研究领域**，又是人生中的一个新课题。
 
     一、研究生与大学生的区别
 
@@ -1322,16 +1451,16 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
             可以看到，他反复提到他的故事。他是因为读了一个叫做马亨教授的教科书
             而去美国柏克莱大学念书，去了以后才发现，这个老师只给他一张支票，跟
             他说你要花钱你尽量用，但是从来不教他任何东西。可是隔壁那个教授，老
-            师教很多，而且每天学生都是跟着老师学习。他有一次就跟那个老师抱怨：“
-            那你为什么不教我点东西呢？”那个老师就说：“如果我知道结果，那我要你
+            师教很多，而且每天学生都是跟着老师学习。他有一次就跟那个老师抱怨：
+            “那你为什么不教我点东西呢？”那个老师就说：“如果我知道结果，那我要你
             来这边念书做什么？我就是因为不知道，所以要我们共同探索一个问题、一
             个未知的领域。”他说其实这两种教法都有用处，但是他自己从这个什么都不
-            教他，永远碰到他只问他“有没有什么新发现”的老师身上，得到很大的成长
-            。所以这两方面都各自蕴含深层的道理，没有所谓的好坏，但是最好的方式
-            就是将这两个方式结合起来。我为什么讲这个故事呢？就是强调在这个阶段
-            ，**学习是一种 **“self-help”**，并且是在老师的引导下学习 “self-help
-            ”，而不能再像大学时代般，都是纯粹用听的，这个阶段的学习要基于对研究
-            问题的好奇和兴趣，要带着一颗热忱的心来探索这个领域。
+            教他，永远碰到他只问他“有没有什么新发现”的老师身上，得到很大的成长。
+            所以这两方面都各自蕴含深层的道理，没有所谓的好坏，但是最好的方式就
+            是将这两个方式结合起来。我为什么讲这个故事呢？就是强调在这个阶段，
+            **学习是一种 “self-help”**，并且是在老师的引导下学习 “self-help”，
+            而不能再像大学时代般，都是纯粹用听的，这个阶段的学习要基于对研究问
+            题的好奇和兴趣，要带着一颗热忱的心来探索这个领域。
 
             然而研究生另外一个重要的阶段就是 **Learn how to learn**，不只是学习
             而已，而是学习如何学习，不再是要去买一件很漂亮的衣服，而是要学习拿
@@ -1424,33 +1553,33 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
             例来说，我在普林斯顿大学碰到一个很聪明的人，他就是没办法克服他给自
             己的挑战，他就总是东看西看，虽然我也有这个毛病，可是我会定期给我自
             己一个挑战，例如：我会告诉自己，在某一个期限内，无论如何一定要把这
-            三行字改掉，或是这个礼拜一定要把这篇草稿写完，虽然我仍然常常写不完
-            ，但是有这个挑战跟没这个挑战是不一样的，因为我挑战三次总会完成一次
-            ，完成一次就够了，就足以表示克服了自己，如果觉得每一个礼拜的挑战，
-            可行性太低，可以把时间延长为一个月的挑战，去挑战原来的你，不一定能
-            做到的事情。不过也要切记，硕士生是刚开始进入这一个领域的新手，如果
-            一开始问题太小，或是问题大到不能控制，都会造成以后研究的困难。
+            三行字改掉，或是这个礼拜一定要把这篇草稿写完，虽然我仍然常常写不完，
+            但是有这个挑战跟没这个挑战是不一样的，因为我挑战三次总会完成一次，
+            完成一次就够了，就足以表示克服了自己，如果觉得每一个礼拜的挑战，可
+            行性太低，可以把时间延长为一个月的挑战，去挑战原来的你，不一定能做
+            到的事情。不过也要切记，硕士生是刚开始进入这一个领域的新手，如果一
+            开始问题太小，或是问题大到不能控制，都会造成以后研究的困难。
 
         （二）论文的写作是个训练过程，不能苛求完成经典之作
 
         :   各位要记得我以前的老师所说的一句话：“**硕士跟博士是一个训练的过程，
-            硕士跟博士不是写经典之作的过程。**”我看过很多人，包括我的亲戚朋友们
-            ，他之所以没有办法好好地完成硕士论文，或是博士论文，就是因为他把它
-            当成在写经典之作的过程，虽然事实上，很多人一生最好的作品就是硕士论
-            文或博士论文，因为之后的时间很难再有三年或六年的时间，沉浸在一个主
-            题里反复的耕耘，当你做教授的时候，像我今天被行政缠身，你不再有充裕
-            的时间好好探究一个问题，尤其做教授还要指导学生、上课，因此非常的忙
-            碌，所以他一生最集中又精华的时间，当然就是他写博士、或是硕士论文的
-            时候，而那一本成为他一生中最重要的著作也就一点都不奇怪了。
+            硕士跟博士不是写经典之作的过程。**”我看过很多人，包括我的亲戚朋友们，
+            他之所以没有办法好好地完成硕士论文，或是博士论文，就是因为他把它当
+            成在写经典之作的过程，虽然事实上，很多人一生最好的作品就是硕士论文
+            或博士论文，因为之后的时间很难再有三年或六年的时间，沉浸在一个主题
+            里反复的耕耘，当你做教授的时候，像我今天被行政缠身，你不再有充裕的
+            时间好好探究一个问题，尤其做教授还要指导学生、上课，因此非常的忙碌，
+            所以他一生最集中又精华的时间，当然就是他写博士、或是硕士论文的时候，
+            而那一本成为他一生中最重要的著作也就一点都不奇怪了。
 
             不一定要刻意强求，要有这是一个训练过程的信念，应该清楚知道从哪里开
             始，也要知道从哪里放手，不要无限的追下去。当然我不是否认这个过程的
             重要性，只是要调整自己的心态，把论文的完成当成一个目标，不要成为是
             一种的心理障碍或是心理负担。这方面有太多的例子了，我在普林斯顿大学
             念书的时候，那边旧书摊有一位非常博学多文的旧书店老板，我常常赞叹地
-            对他说：“你为什么不要在大学做教授。”他说：“因为那篇博士论文没有写完
-            。”原因在于他把那个博士论文当成要写一本经典，那当然永远写不完。如果
-            真能写成经典那是最好，就像美丽新境界（美丽心灵）那部电影的男主角
+            对他说：“你为什么不要在大学做教授。”他说：“因为那篇博士论文没有写
+            完。”原因在于他把那个博士论文当成要写一本经典，那当然永远写不完。如
+            果真能写成经典那是最好，就像美丽新境界（美丽心灵）那部电影的男主角
             John Nash 一样，一生最大的贡献就是博士那二十几页的论文，不过切记不
             要把那个当作是目标，因为那是自然而然形成的，应该要坚定的告诉自己，
             **所要完成的是一份结构严谨、论述清楚与言之有物的论文，不要一开始就
@@ -1465,12 +1594,12 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
 
         :   **1. 学习有所取舍**
 
-            到了写论文的时候，要能取也要能舍，因为现在信息爆炸，可以看的书太多
-            ，所以一定要建构一个属于自己的知识树，首先，要有一棵自己的知识树，
-            才能在那棵树挂相关的东西，但千万不要不断的挂不相关的东西，而且要慢
-            慢的舍掉一些挂不上去的东西，再随着你的问题跟关心的领域，让这棵知识
-            树有主干和枝叶。然而这棵知识树要如何形成？第一步你必须对所关心的领
-            域中，有用的书籍或是数据非常熟悉。
+            到了写论文的时候，要能取也要能舍，因为现在信息爆炸，可以看的书太多，
+            所以一定要建构一个属于自己的知识树，首先，要有一棵自己的知识树，才
+            能在那棵树挂相关的东西，但千万不要不断的挂不相关的东西，而且要慢慢
+            的舍掉一些挂不上去的东西，再随着你的问题跟关心的领域，让这棵知识树
+            有主干和枝叶。然而这棵知识树要如何形成？第一步你必须对所关心的领域
+            中，有用的书籍或是数据非常熟悉。
 
             **2. 形成你的知识树**
 
@@ -1479,24 +1608,24 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
             重要的五、六本书要读好几遍。”因为林毓生先生是海耶克，还有几位近代思
             想大师在芝加哥大学的学生，他们受的训练中很重要的一部份是精读原典。
             这句话很有道理，虽然你不可能只读那几本重要的书，但是那五、六本书将
-            逐渐形成你知识树的主干，此后的东西要挂在上面，都可以参照这一个架构
-            ，然后把不相干的东西暂放一边。生也有涯，知也无涯，你不可能读遍天下
-            所有的好书，所以要学习取舍，了解自己无法看遍所有有兴趣的书，而且一
-            但看遍所有有兴趣的书，很可能就会落得普林斯顿街上的那位旧书店的老板
-            一般，因为阅读太多不是自己所关心的领域的知识，它对于你来说只是一地
-            的散钱。
+            逐渐形成你知识树的主干，此后的东西要挂在上面，都可以参照这一个架构，
+            然后把不相干的东西暂放一边。生也有涯，知也无涯，你不可能读遍天下所
+            有的好书，所以要学习取舍，了解自己无法看遍所有有兴趣的书，而且一但
+            看遍所有有兴趣的书，很可能就会落得普林斯顿街上的那位旧书店的老板一
+            般，因为阅读太多不是自己所关心的领域的知识，它对于你来说只是一地的
+            散钱。
 
             **3. 掌握工具**
 
             在这个阶段一定要掌握语文与合适的工具。要有一个外语可以非常流畅的阅
             读，要有另外一个语文至少可以看得懂文章的标题，能学更多当然更好，但
             是至少要有一个语文，不管是英文、日文、法文 ……，一定要有一个语文能够
-            非常流畅的阅读相关书籍，这是起码的前提。一旦这个工具没有了，你的视
-            野就会因此大受限制，因为语文就如同是一扇天窗，没有这个天窗你这房间
+            非常流畅的阅读相关书籍，这是起码的前提。**一旦这个工具没有了，你的视
+            野就会因此大受限制**，因为语文就如同是一扇天窗，没有这个天窗你这房间
             就封闭住了。为什么你要看得懂标题？因为这样才不会有重要的文章而你不
             知道，如果你连标题都看不懂，你就不知道如何找人来帮你或是自己查相关
-            的数据。其它的工具，不管是统计或是其它的任何工具，你也一定要多掌握
-            ，因为你将来没有时间再把这样的工具学会。
+            的数据。其它的工具，不管是统计或是其它的任何工具，你也一定要多掌握，
+            因为你将来没有时间再把这样的工具学会。
 
             **4. 突破学科间的界线**
 
@@ -1509,40 +1638,40 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
             九世纪形成这些知识学科的划分的时候，很多都带有那个时代的思想跟学术
             背景，比如说，中研院的李院长的专长就是物理化学，他之所以得诺贝尔奖
             就是他在物理和化学的交界处做工作。像诺贝尔经济奖，这二十年来所颁的
-            奖，如果在传统的经济学奖来看就是旁门走道，古典经济学岂会有这些东西
-            ，甚至心理学家也得诺贝尔经济奖，连 John Nash 这位数学家也得诺贝尔经
-            济奖，为什么？因为他们都在学科的交界上，学科跟学科、平台跟平台的交
-            界之处有所突破。在平台本身、在学科原本最核心的地方已经 search 太多
-            次了，因此不一定能有很大的创新，所以为什么跨领域学习是一件很重要的
-            事情。
+            奖，如果在传统的经济学奖来看就是旁门走道，古典经济学岂会有这些东西，
+            甚至心理学家也得诺贝尔经济奖，连 John Nash 这位数学家也得诺贝尔经济
+            奖，为什么？因为他们都在学科的交界上，学科跟学科、平台跟平台的交界
+            之处有所突破。在平台本身、在学科原本最核心的地方已经 search 太多次
+            了，因此不一定能有很大的创新，所以为什么跨领域学习是一件很重要的事
+            情。
 
-            常常一篇硕士论文或博士论文最重要、最关键的，是那一个统摄性的重要概
-            念，而通常你在本学科里面抓不到，是因为你已经泡在这个学科里面太久了
-            ，你已经拿着手电筒在这个小仓库里面照来照去照太久了，而忘了还有别的
-            东西可以更好解释你这些材料的现象，不过这些东西可遇而不可求。 John
-            Nash 这一位数学家为什么会得诺贝尔数学奖？为什么他在赛局理论的博士论
-            文，会在数十年之后得诺贝尔经济奖？因为他在大学时代上经济学导论的课
-            ，所以他认为数学可以用在经济方面来思考，而这个东西在一开始，他也没
-            有想到会有这么大的用处。他是在数学和经济学的知识交界之处做突破。有
-            时候在经济学这一个部分没有大关系，在数学的这一个部分也没有大关系，
-            不过两个加在一起，火花就会蹦出来。
+            常常一篇硕士论文或博士论文最重要、最关键的，是那一个**统摄**性的重
+            要概念，而通常你在本学科里面抓不到，是因为你已经泡在这个学科里面太
+            久了，你已经拿着手电筒在这个小仓库里面照来照去照太久了，而忘了还有
+            别的东西可以更好解释你这些材料的现象，不过这些东西可遇而不可求。
+            John Nash 这一位数学家为什么会得诺贝尔数学奖？为什么他在赛局理论的
+            博士论文，会在数十年之后得诺贝尔经济奖？因为他在大学时代上经济学导
+            论的课，所以他认为数学可以用在经济方面来思考，而这个东西在一开始，
+            他也没有想到会有这么大的用处。他是在数学和经济学的知识交界之处做突
+            破。有时候在经济学这一个部分没有大关系，在数学的这一个部分也没有大
+            关系，不过两个加在一起，火花就会蹦出来。
 
             **5. 论文题目要有延展性**
 
             对一个硕士生或博士生来说，如果选错了题目，就是失败，题目选对了，还
             有百分之七十胜利的机会。这个问题值得研一、博一的学生好好思考。你的
             第一年其实就是要花在这上面，你要不断的跟老师商量寻找一个有意义、有
-            延展性的问题，而且不要太难。我在国科会当过人文处长，当我离开的时候
-            ，每次就有七千件申请案，就有一万四千个袋子，就要送给一万四千个教授
-            审查。我当然不可能看那么多，可是我有个重要的任务，就是要看申诉。有
-            些申诉者认为：“我的研究计划很好，我的著作很好，所以我来申诉。”申诉
-            通过的大概只有百分之十，那么我的责任就是在百分之九十未通过的案子正
-            式判决前，再拿来看一看。有几个印象最深常常被拿出来讨论的，就是这个
-            题目不必再做了、这个题目本身没有发展性，所以使我更加确认选对一个有
-            意义、有延展性、可控制、可以经营的题目是非常重要的。我的学生常常选
-            非常难的题目，我说你千万不要这样，因为没有人会仔细去看你研究的困难
-            度，对于难的题目你要花更多的时间阅读史料，才能得到一点点东西；要挤
-            很多东西，才能筛选出一点点内容，所以你最好选择一个难易适中的题目。
+            延展性的问题，而且不要太难。我在国科会当过人文处长，当我离开的时候，
+            每次就有七千件申请案，就有一万四千个袋子，就要送给一万四千个教授审
+            查。我当然不可能看那么多，可是我有个重要的任务，就是要看申诉。有些
+            申诉者认为：“我的研究计划很好，我的著作很好，所以我来申诉。”申诉通
+            过的大概只有百分之十，那么我的责任就是在百分之九十未通过的案子正式
+            判决前，再拿来看一看。有几个印象最深常常被拿出来讨论的，就是这个题
+            目不必再做了、这个题目本身没有发展性，所以使我更加确认选对一个有意
+            义、有延展性、可控制、可以经营的题目是非常重要的。我的学生常常选非
+            常难的题目，我说你千万不要这样，因为没有人会仔细去看你研究的困难度，
+            对于难的题目你要花更多的时间阅读史料，才能得到一点点东西；要挤很多
+            东西，才能筛选出一点点内容，所以你最好选择一个难易适中的题目。
 
             我写过好几本书，我认为我对每一本书的花的心力都是一样，虽然我写任何
             东西我都不满意，但是在过程中我都绞尽脑汁希望把他写好。目前为止很多
@@ -1556,10 +1685,10 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
 
             为什么举这个例子呢？我后来想一想，那本书之所以比较好，可能是因为那
             个题目可延展性大，那个题目波澜起伏的可能性大。很多人都认为，我最好
-            的书应该是剑桥大学出的那一本，不过我认为我最好的书一定是用中文写的
-            ，因为这个语文我能掌握，英文我没办法掌握得出神入化。读、写任何语文
-            一定要练习到你能带着三分随意，那时候你才可以说对于这一个语文完全理
-            解与精熟，如果你还无法达到三分的随意，就表示你还在摸索。
+            的书应该是剑桥大学出的那一本，不过我认为我最好的书一定是用中文写的，
+            因为这个语文我能掌握，英文我没办法掌握得出神入化。读、写任何语文一
+            定要练习到你能带着三分随意，那时候你才可以说对于这一个语文完全理解
+            与精熟，如果你还无法达到三分的随意，就表示你还在摸索。
 
             回到我刚刚讲的，其实每一本书、每一篇论文我都很想把它写好。但是有些
             东西没办法写好，为什么？因为一开始选择的题目不够好。因此唯有选定题
@@ -1600,33 +1729,32 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
             个礼拜都到他们信息系图书室里，翻阅重要的信息期刊。所以图书馆应该是
             身为研究生的人们，最熟悉的地方。不过切记不重要的不要花时间去看，你
             们生活在信息泛滥的时代，跟我生长在信息贫乏的时代是不同的，所以生长
-            在这一个时代的你，要能有所取舍。我常常看我的学生引用一些三流的论文
-            ，却引得津津有味，我都替他感到难过，因为我强调要读有用、有价值的东
-            西。
+            在这一个时代的你，要能有所取舍。我常常看我的学生引用一些三流的论文，
+            却引得津津有味，我都替他感到难过，因为我强调要读有用、有价值的东西。
 
             **8. 留下时间，精致思考**
 
             还要记得给自己保留一些思考的时间。一篇论文能不能出神入化、能不能引
             人入胜，很重要的是在现象之上作概念性的思考，但我不是说一定要走理论
             的路线，而是提醒大家要在一般的层次再提升两三步， 【Conceptualize】
-            你所看到的东西。**真切去了解，你所看到的东西是什么？整体意义是什么
-            ？整体的轮廓是什么？千万不要被枝节淹没，虽然枝节是你最重要的开始，
-            但是你一天总也要留一些时间好好思考、慢慢沉淀**。 conceptualize 是一
-            种非常难教的东西，我记得我念书时，有位老师信誓旦旦说要开一门课，教
-            学生如何 conceptualize，可是从来都没开成，因为这非常难教。我要提醒
-            的是，在被很多材料和枝节淹没的时候，要适时跳出来想一想，所看到的东
-            西有哪些意义？这个意义有没有广泛连结到更大层面的知识价值。
+            你所看到的东西。**真切去了解，你所看到的东西是什么？整体意义是什么？
+            整体的轮廓是什么？千万不要被枝节淹没，虽然枝节是你最重要的开始，但
+            是你一天总也要留一些时间好好思考、慢慢沉淀**。 conceptualize 是一种
+            非常难教的东西，我记得我念书时，有位老师信誓旦旦说要开一门课，教学
+            生如何 conceptualize，可是从来都没开成，因为这非常难教。我要提醒的
+            是，在被很多材料和枝节淹没的时候，要适时跳出来想一想，所看到的东西
+            有哪些意义？这个意义有没有广泛连结到更大层面的知识价值。
 
-            傅斯年先生来到 xxx 以后，同时担任中央研究院历史语言研究所的所长及台大
-            的校长。台大有个傅钟每小时钟声有二十一响、敲二十一次。以前有一个人
-            ，写了一本书叫《钟声二十一响》，当时很轰动。他当时对这二十一响解释
-            是说：因为台大的学生都很好，所以二十一响是欢迎国家元首二十一响的礼
-            炮。不久前我发现台大在每一个重要的古迹下面竖一个铜牌，我仔细看看傅
-            钟下的解释，才知道原来是因为傅斯年当台大校长的时候，曾经说过一句话
-            ：“**人一天只有二十一个小时，另外三小时是要思考的**。”所以才叫二十
-            一响。我觉得这句话大有道理，可是我觉得三小时可能太多，因为研究生是
-            非常忙的，但至少每天要留个三十分钟、一小时思考，想一想你看到了什么
-            ？学习跳到比你所看到的东西更高一点的层次去思考。
+            傅斯年先生来到 xxx 以后，同时担任中央研究院历史语言研究所的所长及台
+            大的校长。台大有个傅钟每小时钟声有二十一响、敲二十一次。以前有一个
+            人，写了一本书叫《钟声二十一响》，当时很轰动。他当时对这二十一响解
+            释是说：因为台大的学生都很好，所以二十一响是欢迎国家元首二十一响的
+            礼炮。不久前我发现台大在每一个重要的古迹下面竖一个铜牌，我仔细看看
+            傅钟下的解释，才知道原来是因为傅斯年当台大校长的时候，曾经说过一句
+            话：“**人一天只有二十一个小时，另外三小时是要思考的**。”所以才叫二
+            十一响。我觉得这句话大有道理，可是我觉得三小时可能太多，因为研究生
+            是非常忙的，但至少每天要留个三十分钟、一小时思考，想一想你看到了什
+            么？学习跳到比你所看到的东西更高一点的层次去思考。
 
             **9. 找到学习的楷模**
 
@@ -1635,14 +1763,14 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
             从头学习。后来我找到一个好办法，就是我每次要写的时候，把一篇我最喜
             欢的论文放在旁边，虽然他写的题目跟我写的都没关系，不过我每次都看他
             如何写，看看他的注脚、读几行，然后我就开始写。就像最有名的男高音
-            Pavarotti 唱歌剧的时候都会捏着一条手帕，因为他说：“上舞台就像下地狱
-            ，太紧张了。”他为了克服紧张，他有习惯性的动作，就是捏着白手帕。我想
-            当年那一篇论文抽印本就像是我的白手帕一样，能让我开始好好写这篇报告
-            ，我学习它里面如何思考、如何构思、如何照顾全体、如何用英文作脚注。
-            **好好的把一位大师的作品读完，开始模仿和学习他**，是入门最好的方法
-            ，逐步的，你也开始写出自己的东西。我也常常鼓励我的学生，出国半年或
-            是一年到国外看看。像现在国科会有各式各样的机会，可以增长眼界，可以
-            知道现在的餐馆正在卖些什么菜，回来后自己要作菜也才知道要如何着手。
+            Pavarotti 唱歌剧的时候都会捏着一条手帕，因为他说：“上舞台就像下地狱，
+            太紧张了。”他为了克服紧张，他有习惯性的动作，就是捏着白手帕。我想当
+            年那一篇论文抽印本就像是我的白手帕一样，能让我开始好好写这篇报告，
+            我学习它里面如何思考、如何构思、如何照顾全体、如何用英文作脚注。**
+            好好的把一位大师的作品读完，开始模仿和学习他**，是入门最好的方法，
+            逐步的，你也开始写出自己的东西。我也常常鼓励我的学生，出国半年或是
+            一年到国外看看。像现在国科会有各式各样的机会，可以增长眼界，可以知
+            道现在的餐馆正在卖些什么菜，回来后自己要作菜也才知道要如何着手。
 
         四、用两条腿走路，练习培养自己的兴趣
 
@@ -1671,13 +1799,13 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
 
         :   现在很多人都在讨论，何谓卓越的大学？我认为一个好的大学，学校生活的
             一大部份，以及校园的许多活动，直接或间接都与学问有关，同学在咖啡厅
-            里面谈论的，直接或间接也都会是学术相关的议题。教授们在餐厅里面吃饭
-            ，谈的是“有没有新的发现”？或是哪个人那天演讲到底讲了什么重要的想法
-            ？一定是沉浸在这种氛围中的大学，才有可能成为卓越大学。那种交换思想
-            学识、那种互相教育的气氛不是花钱就有办法获得的。我知道钱固然重要，
-            但不是唯一的东西。一个卓越的大学、一个好的大学、一个好的学习环境，
-            表示里面有一个共同关心的焦点，如果没有的话，这个学校就不可能成为好
-            的大学。
+            里面谈论的，直接或间接也都会是学术相关的议题。教授们在餐厅里面吃饭，
+            谈的是“有没有新的发现”？或是哪个人那天演讲到底讲了什么重要的想法？
+            一定是沉浸在这种氛围中的大学，才有可能成为卓越大学。那种交换思想学
+            识、那种互相教育的气氛不是花钱就有办法获得的。我知道钱固然重要，但
+            不是唯一的东西。一个卓越的大学、一个好的大学、一个好的学习环境，表
+            示里面有一个共同关心的焦点，如果没有的话，这个学校就不可能成为好的
+            大学。
 
         [douban]: http://book.douban.com/subject/1795992/
 
@@ -1685,7 +1813,8 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
 
 :   序言 为什么人人都该学点心理学
 
-    -   大脑是我们最重要的工具，要正确利用这个工具，唯一的途径就是去了解它，尤其是了解它的弱点
+    -   大脑是我们最重要的工具，要正确利用这个工具，唯一的途径就是去了解它，尤
+        其是了解它的弱点
     -   学会思考就是学会认识到人类思维中的种种谬误
 
     notes
@@ -1704,7 +1833,8 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
     -   时间之沙
     -   这就是为什么专注的人比不专注的人在时间利用效率上高的多的原因
     -   迅速进入状态的能力是可以锻炼的
-    -   能够迅速进入专注状态，以及能够长期保持专注状态，是高效学习的两个最重要的习惯
+    -   能够迅速进入专注状态，以及能够长期保持专注状态，是高效学习的两个最重要
+        的习惯
     -   抗干扰（马桶时间）
 
     设计你自己的进度条
@@ -1722,18 +1852,20 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
 
     -   你所拥有的知识并不取决于你记得多少，而在于它们能否在恰当的时候被回忆起来
     -   精细编码提供了更多的提取线索
-    -   对于理解记忆的人来说，知识中包含了精细的概念、逻辑、一般的解题原则、通用的解题首发、背景知识、类似的问题等等无数的记忆和提取线索，甚至当时的环境、味道、声音
+    -   对于理解记忆的人来说，知识中包含了精细的概念、逻辑、一般的解题原则、通
+        用的解题首发、背景知识、类似的问题等等无数的记忆和提取线索，甚至当时的
+        环境、味道、声音
     -   甚至是语言背景（毛泽东、自由女神像）
     -   Cue-dependent forgetting
     -   抽象，发现本质去除庞杂
     -   和情绪挂钩，以第一人称视角加深印象
     -   Inductive reasoning
-    -   如果你想真正得到一些知识，你最好过滤一下你的信息，否则你只是在别人的思考中得意着
+    -   如果你想真正得到一些知识，你最好过滤一下你的信息，否则你只是**在别人的思考中得意着**
 
     学习密度与专注力
 
     -   最不缺的是业余时间，最缺的是专注精神；非凡的注意力造就非凡的专家
-    -   寻常人（mediocre） /,midɪ'okɚ/
+    -   寻常人（mediocre） `/,midɪ'okɚ/`
     -   要事第一：重要但不紧迫的事
 
     一直以来伴随我的一些学习习惯
@@ -1741,7 +1873,8 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
     -   **学习与思考**
         +   Google & Wikipedia
         +   择书挑剔甚过买衣服
-        +   做读书笔记，仅仅用自己的语言表述一下就能加大的加深影响和理解（获得多少并不在与你读了多少，而在于你思考了多少）
+        +   做读书笔记，仅仅用自己的语言表述一下就能加大的加深影响和理解（获得
+            多少并不在与你读了多少，而在于你思考了多少）
         +   思考的小习惯，让脑子里一直有思考的内容（还避免了焦虑）
         +   多看心理学与思维的书（跨学科，metaknowledge）
         +   学一项知识的三个重要问题：
@@ -1756,7 +1889,6 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
             5.  自省：注意自己思维的脉络。
             6.  反驳自己
             7.  真的理解了吗？你确定？再好好想想。
-
     -   **时间和效率**
         +   趁热打铁度过开始时期的最难阶段
         +   重要的事第一（重要但不紧迫）
@@ -1770,7 +1902,6 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
         +   学习前要积攒“疑惑感”
         +   提高速度，有选择的阅读
         +   **时间碎片可用于阅读**
-
     -   **知识结构**
         +   抓住不变量
         +   分析问题和解决问题的思维方法
@@ -1802,9 +1933,11 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
       - [刘未鹏，*暗时间*，电子工业出版社，2011](http://book.douban.com/subject/6709809/)
       - [《奇特的一生》]: http://book.douban.com/subject/1115353/
 
--   printenv PATH               # like echo $PATH, but seems more professional
+---
 
--   tr '[:lower:]' '[:upper:]'
+-   `printenv PATH`{.bash}, works like `echo $PATH`{.bash}, but seems more professional
+
+-   `tr '[:lower:]' '[:upper:]'`{.bash}
 
 -   Define Functions
 
@@ -1832,7 +1965,7 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
     done
 
     if [ $# -gt 2 ] ; then
-        echo "ERROR: expecting 2 parameters. Please see option --help"
+        echo "ERROR: ..."
         exit 1
     fi
 
@@ -1859,11 +1992,11 @@ either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
 
 -   Skills
 
-    printf '\033[0;34m%s\033[0m\n' "Upgrading Oh My Zsh" (better looking than inlined color prompt)
+    `printf '\033[0;34m%s\033[0m\n' "Upgrading Oh My Zsh"`{.bash} (better looking than inlined color prompt)
 
 -   Words You should know
 
-    source: source /etc/profile
+    source: `source /etc/profile`{.bash}
 
     profile
 
@@ -2120,7 +2253,7 @@ Ruby in 20 Minutes
 
     second ruby function
 
-    ```
+    ```ruby
     def h(name = "GNAT")
         puts "Hello #{name.capitalize}"
     end
@@ -2219,14 +2352,14 @@ Ruby in 20 Minutes
 
 LaTeX
 
-:   -   The virtues of open source
+:   -   **The virtues of open source**
     -   Separation of form and content
     -   Portability
-    -   The first latex file: example1.tex, compile it: `pdflatex example1.tex`
+    -   The first latex file: example1.tex, compile it: `pdflatex example1.tex`{.bash}
     -   Exploring the document structure
         +   `\documentclass` ==> documentclass is called a `command`
         +   preamble
-        +   `\begin{document}`, `\end{document}`, begin\end is called `environment`
+        +   `\begin{document}`, `\end{document}`, begin/end is called `environment`
         +   `\maketitle`, `\section`
     -   Understanding LaTeX commands
         +   `\command`
@@ -2243,12 +2376,11 @@ LaTeX
         +   `\textit{italic}`
         +   `\textbf{boldface}`
         +   `\textsl{slanted}`
+        +   `\texttt{typewritter text}`
         +   `\textsc{Small Caps}`
         +   `\textit{\textbf{nested}}`
         +   `\emph{See how \emph{emphasizing} looks when nested.}`
-        +   ![][tex-emphasized]
-
-            ```latex
+        +   ```latex
             \section{\textsf{\LaTeX\ resources in the internet}} % use sans sarif font
             The best place for downloading LaTeX related software is CTAN.
             Its address is \texttt{http://www.ctan.org}.
@@ -2264,26 +2396,24 @@ LaTeX
         Its address is \ttfamily http://www.ctan.org\rmfamily.
         ```
 
-        +   `\sffamily`, sans serif
+        +   `\sffamily`, **sans serif**
         +   `\ttfamily`, typewriter font
         +   `\rmfamily`, roman font family
 
     -   Summarizing font commands and declarations
 
-        ![][tex-fonts]
-
     -   Delimiting the effect of commands
 
         +   exploring grouping by braces
 
-        ```latex
-        {\sffamily
-        Text can be {\em emphasized}.
-        Besides being {\itshape italic} words could be {\bfseries bold},
-        {\slshape slanted} or typeset in {\scshape Small Caps}.
-        Such commands can be {\itshape\bfseries nested}.}
-        {\em See how {\em emphasizing} looks when nested.}
-        ```
+            ```latex
+            {\sffamily
+            Text can be {\em emphasized}.
+            Besides being {\itshape italic} words could be {\bfseries bold},
+            {\slshape slanted} or typeset in {\scshape Small Caps}.
+            Such commands can be {\itshape\bfseries nested}.}
+            {\em See how {\em emphasizing} looks when nested.}
+            ```
 
         +   exploring font sizes
 
@@ -2308,8 +2438,8 @@ NINETEEN EIGHTY-FOUR: big brother is watching you
 
 :   George Orwell
 
-    > This novel is an anti-total cautionary tale about the betrayal of a
-    > revolution by its defenders.
+    >   This novel is an anti-total cautionary tale about the betrayal of a
+    >   revolution by its defenders.
 
 在职场里，收到指令要回复，遇到困难要沟通，项目进展要按节点通报，安排要落实。这
 不是繁文缛节，这是一个公司的基本规范。要尽心尽力，说到做到，有始有终，积极主动，
@@ -2431,13 +2561,13 @@ Magit
     Europe, India, and Latin America.
 
     Dragon Ball Z follows the adventures of the protagonist Goku who, along
-    with his companions, defends the Earth against an assortment of villains
-    ranging from intergalactic space fighters and conquerors, unnaturally
-    powerful androids and nearly indestructible magical creatures. While the
-    original Dragon Ball anime followed Goku from his childhood into adulthood,
-    Dragon Ball Z is a continuation of his adult life, but at the same time
-    parallels the maturation of his sons, Gohan and Goten, as well as the
-    evolution of his rivals Piccolo and Vegeta from enemies into allies.
+    with his companions, defends the Earth against an assortment (各种各样) of
+    villains ranging from intergalactic space fighters and conquerors,
+    unnaturally powerful androids and nearly indestructible magical creatures.
+    While the original Dragon Ball anime followed Goku from his childhood into
+    adulthood, Dragon Ball Z is a continuation of his adult life, but at the
+    same time parallels the maturation of his sons, Gohan and Goten, as well as
+    the evolution of his rivals Piccolo and Vegeta from enemies into allies.
 
     refs and see also
 
@@ -2449,6 +2579,13 @@ Magit
 
 :   「禁則」是来自日语的排版术语，主要指的就是禁止一些标点等字符出现在行首或行尾的
     规则，大致相当于汉语常说的「避头尾」。
+
+    [依云](http://lilydjwg.is-programmer.com/guestbook) 打包的包含行禁则的 Vim：
+    <http://whudoc.qiniudn.com/2016/gvim74-x64.402.exe>。
+    可惜的是这个打包的“Edit with Vim”不能生效。详见:
+
+      - [Vim Rules](post-0070-some-vim-rules.html)
+      - [处理 vim 中文行禁则的一个 Patch - 查看主题 • Ubuntu中文论坛](http://forum.ubuntu.com.cn/viewtopic.php?f=68&t=300689)
 
     简介参见维基百科词条：
 
@@ -2471,8 +2608,8 @@ Magit
 
 [CSS "position: fixed;" on iPad/iPhone? - Stack Overflow](http://stackoverflow.com/questions/4889601/css-position-fixed-on-ipad-iphone)
 
-:   A lot of mobile browsers deliberately do not support position:fixed; on the
-    grounds that fixed elements could get in the way on a small screen.
+:   A lot of mobile browsers **deliberately do not support `position:fixed;`{.css}** on the
+    grounds that **fixed elements could get in the way on a small screen**.
 
     我说自己的 pad 上怎么不能 fix 回到主页的按钮，原来他们是有意为之。
 
@@ -2517,23 +2654,23 @@ Magit
 
 [Skywind Inside » 美术资源超级压缩方法](http://www.skywind.me/blog/archives/1176)
 
-:   压缩比从强到弱依次是：WDP>WEBP>JPEG2000>JPEG。因此换用WDP格式能缩小不少资源。
+:   压缩比从强到弱依次是：WDP > WEBP > JPEG2000 > JPEG。因此换用 WDP 格式能缩小不少资源。
 
-    抛弃ZLIB换用LZMA2
+    抛弃 ZLIB 换用 LZMA2
 
-    换用LZMA2能够高于zlib差不多25%的压缩率（LZMA1只有18%左右）。现在Linux内核压
-    缩文件已经从bz2改为 LZMA2的xz格式了。
+    换用 LZMA2 能够高于 zlib 差不多 25% 的压缩率（LZMA1 只有 18% 左右）。现在 Linux 内核压
+    缩文件已经从 bz2 改为 LZMA2 的 xz 格式了。
 
 [Skywind Inside » 【原创】快速除以255的方法](http://www.skywind.me/blog/archives/988)
 
-:   经过若干次试验修改，研究出下面这个快速/255的宏，可以在 X属于[0，65536]的范围内误差为零：
+:   经过若干次试验修改，研究出下面这个快速 /255 的宏，可以在 X 属于 [0，65536] 的范围内误差为零：
 
     ```cpp
     #define div_255_fast(x)    (((x) + (((x) + 257) >> 8)) >> 8)
     ```
 
     传统来说，人们习惯于将 `/255` 改为 `>> 8`，但是这样误差挺大的，比如先乘以 255 再除
-    以255，连续做十次，如果用 `>>8` 来代替除法，那么十次之后，误差为 10. 另外一种常
+    以 255，连续做十次，如果用 `>>8` 来代替除法，那么十次之后，误差为 10. 另外一种常
     见的近似法是 `((x) + 255) >> 8`，这种累积误差也挺厉害的。
 
     因此 `>>8` 代替 `/255` 结果是比较粗糙的。而这个宏的开销比起 `>>8` 来说成本大 12%。
@@ -2634,7 +2771,7 @@ ipixel_comp_pre_plus (...)
 ipixel_comp_dst_over (...)
 ```
 
-等好几个函数了，并且这些函数都是被你 “组装” 出来的，你并没有使用函数指针，也没
+等好几个函数了，并且这些函数都是被你 **“组装” 出来的**，你并没有使用函数指针，也没
 有笨重的去写 20 多个函数。进一步如果你写图形图像你会发现你需要面对多种设备的像素
 格式，从 A8R8G8B8, A8B8G8R8 到 A1R5G5B5, 主流需要处理的像素格式都有 10 多种。
 
@@ -2654,9 +2791,9 @@ ipixel_comp_dst_over (...)
 效。就像正则表达式，每次都重写，写熟了后也并不需要想着封装复用下老的，每次重写
 为主，复制改写为辅。搬砖搬多了也和写正则一样，每次重写即可，简单高效，无需封装。
 
-记住，砖是搬不完的，你搬累了，又有人来接替你搬了。不要天真谈创造，现在不是单干
-的时代，远离个人英雄主义，你的所有成绩来自集体，个人离开集体啥都不是，没有谁是
-不可替代的，少了谁地球一样转。
+记住，砖是搬不完的，你搬累了，又有人来接替你搬了。**不要天真谈创造**，现在不是
+单干的时代，远离个人英雄主义，你的所有成绩来自集体，个人离开集体啥都不是，没有
+谁是不可替代的，少了谁地球一样转。
 
 戒骄戒躁，努力做好社会主义的螺丝钉，凡事就怕认真二字。简单的事情重复做，你就是
 专家；重复的事情用心做，你就是行家！再小的地方，他也能干出成绩！
@@ -2716,7 +2853,7 @@ ipixel_comp_dst_over (...)
 
 后来跟他讨论为何不用 C++，他说其实没有什么特别的，就是习惯和爱好而已，后又补充：
 
-如果不用多态的话，其实不管怎么写，不管用那种语言写，都算不上真正的 OO
+>   **如果不用多态 (polymorphism) 的话，其实不管怎么写，不管用那种语言写，都算不上真正的 OO。**
 
 忽然觉得很有道理……
 
@@ -2737,113 +2874,120 @@ ipixel_comp_dst_over (...)
 
 [韦易笑 答过的问题 - 知乎](http://www.zhihu.com/people/skywind3000/answers?order_by=vote_num)
 
-1.  实现简单的 HTTP 服务器（支持 GET/POST/CGI），然后用浏览器访问，里面有个 CGI 留言板。
-2.  实现一个简版 REDIS，或者给 Redis 加 10 条命令，或者把后面存储引擎换成 unqlite，再开源
-3.  给 apache 实现一个 module，可以支持 lua 来写服务。
-4.  给 nginx 写一个 python 模块，可以 python 来写服务。
-5.  用 C/C++/go 写个代理翻墙软件，跑在你的海外租的 vps 上。
-6.  实现一套简单的 TCP RPC 框架，并再基础上做一个简单聊天。
-7.  阅读 Linux 代码，应用层实现一个 Linux 的定时器。
+:   01. 实现简单的 HTTP 服务器（支持 GET/POST/CGI），然后用浏览器访问，里面有个 CGI 留言板。
+:   02. 实现一个简版 REDIS，或者给 Redis 加 10 条命令，或者把后面存储引擎换成 unqlite，再开源
+:   03. 给 apache 实现一个 module，可以支持 lua 来写服务。
+:   04. 给 nginx 写一个 python 模块，可以 python 来写服务。
+:   05. 用 C/C++/go 写个代理翻墙软件，跑在你的海外租的 vps 上。
+:   06. 实现一套简单的 TCP RPC 框架，并再基础上做一个简单聊天。
+:   07. 阅读 Linux 代码，应用层实现一个 Linux 的定时器。
 
-很多人觉得程序主要是思考，你思路对了，打字只是小事，经常听到说某某高手打字是二
-指禅。以前我也这么认为，但是专门抽时间练习了以后，发现真正打字流畅的人，打字的
-cpu 占用很低，不会因为打错字而影响思考，更不会因为要低下头去看数字符号打断你的
-思路。
+    很多人觉得程序主要是思考，你思路对了，打字只是小事，经常听到说某某高手打字
+    是二指禅。以前我也这么认为，但是专门抽时间练习了以后，发现真正打字流畅的人，
+    打字的cpu 占用很低，不会因为打错字而影响思考，更不会因为要低下头去看数字符
+    号打断你的思路。
 
-先单纯练习从 A 打到 Z，最开始是 15 秒，慢慢熟练到 10 秒，最后到 5 秒。又从最基本的单词
-开始，不断的重复同一节 TT 的课程，同一个动作重复 300 次，肌肉就会有记忆，而同一个
-动作重复 600 次，脊柱就会有记忆。别人打字要经过大脑，大脑一个字母一个字母，一根手
-指一根手指的指挥，是比较费脑的，而你打字如果真正进入了脊柱反应的条件反射时代，
-那么看到一个单词或者一串数字，大脑只需要下一个指令，脊柱这个协处理器就自动完成
-了，根本不需要过大脑。
+    先单纯练习从 A 打到 Z，最开始是 15 秒，慢慢熟练到 10 秒，最后到 5 秒。又从
+    最基本的单词开始，不断的重复同一节 TT 的课程，同一个动作重复 300 次，肌肉就
+    会有记忆，而同一个动作重复 600 次，脊柱就会有记忆。别人打字要经过大脑，大脑
+    一个字母一个字母，一根手指一根手指的指挥，是比较费脑的，而你打字如果真正进
+    入了脊柱反应的条件反射时代，那么看到一个单词或者一串数字，大脑只需要下一个
+    指令，脊柱这个协处理器就自动完成了，根本不需要过大脑。
 
-我们说 Fabrice 牛逼，因为他对 数学，信号处理，计算机体系等三个方面有着深刻的认
-识，从而他能做出 ffmpeg, qemu, tinycc 这样的项目来，从而他算 pi 可以算到世界第
-一快，所以大家觉得很牛逼，这并不是因为听说他 C++ 有多牛。
+    我们说 Fabrice 牛逼，因为他对 数学，信号处理，计算机体系等三个方面有着深刻
+    的认识，从而他能做出 ffmpeg, qemu, tinycc 这样的项目来，从而他算 pi 可以算
+    到世界第一快，所以大家觉得很牛逼，这并不是因为听说他 C++ 有多牛。
 
-所以对于大部分普通员工，都是怀揣着一颗暴发户的心，过着猪狗不如的日子，在常年累
-月的日子里不断的在 加班和项目重组的死循环里折腾。公司呢？公司只要几十个项目成一
-个就够吃很长时间了。于是常用的管理手段就是造神运动，发车，发现金给老员工，给他
-们极高的待遇和荣誉，让所有新人都跟打了鸡血一样燃烧着自己的生命向前冲。
+    所以对于大部分普通员工，都是怀揣着一颗暴发户的心，过着猪狗不如的日子，在常
+    年累月的日子里不断的在 加班和项目重组的死循环里折腾。公司呢？公司只要**几十
+    个项目成一个就够吃很长时间**了。于是常用的管理手段就是造神运动，发车，发现
+    金给老员工，给他们极高的待遇和荣誉，让所有新人都跟打了鸡血一样燃烧着自己的
+    生命向前冲。
 
-观点 5：劣币驱逐良币
+    观点 5：劣币驱逐良币
 
-这个现象从页游开始出现，你想当年一个典型的页游广告都是些啥，仿照一个：一座山峰
-，一个半裸美女，大大的几个红字：“你想和我一起体验巅峰的感觉么”，下面是“想”，“非
-常想”，旁边是游戏名称：“《巅峰三国》---无兄弟不战场，登录送坐骑礼包”，下面一行
-小字：“十万美女玩家任你选，江山美人我都要”，很熟悉吧。
+    这个现象从页游开始出现，你想当年一个典型的页游广告都是些啥，仿照一个：一座
+    山峰，一个半裸美女，大大的几个红字：“你想和我一起体验巅峰的感觉么”，下面是
+    “想”，“非常想”，旁边是游戏名称：“《巅峰三国》---无兄弟不战场，登录送坐骑礼
+    包”，下面一行小字：“十万美女玩家任你选，江山美人我都要”，很熟悉吧。
 
-试想，越来越多的**色情营销**，你想想正常人看着都恶心会去点么？越来越多赤裸裸的游戏
-设定，端游时代，优秀的玩家用户基础一点点的被破坏了。什么样的人会去点击那些广告
-呢会喜欢那些坑爹的游戏设定呢？我没做过专门的分析，随便乱写两条他们的特点，可能
-有些不准确，即：急功近利的、缺乏耐心的，易怒易冲动的、好斗虚荣的、和家庭关系不
-好的。这样的用户越来越多，而以往良性的希望通过自己技巧或者努力成功的成就型玩家
-在现在游戏里受尽屈辱，以往以发现游戏各种隐藏要素为乐趣的探索性玩家在游戏里失去
-兴趣，以往喜欢同人聊天的社交型玩家发现聊天对象变了。
+    试想，越来越多的**色情营销**，你想想正常人看着都恶心会去点么？越来越多赤裸
+    裸的游戏设定，端游时代，优秀的玩家用户基础一点点的被破坏了。什么样的人会去
+    点击那些广告呢会喜欢那些坑爹的游戏设定呢？我没做过专门的分析，随便乱写两条
+    他们的特点，可能有些不准确，即：急功近利的、缺乏耐心的，易怒易冲动的、好斗
+    虚荣的、和家庭关系不好的。这样的用户越来越多，而以往良性的希望通过自己技巧
+    或者努力成功的成就型玩家在现在游戏里受尽屈辱，以往以发现游戏各种隐藏要素为
+    乐趣的探索性玩家在游戏里失去兴趣，以往喜欢同人聊天的社交型玩家发现聊天对象
+    变了。
 
-总之由于多年的破坏，比起当年的端游，现在玩家层次越来越低，越来越差了，你说你新
-做一款游戏上线，能不去迎合现在的玩家么？而你越迎合，好的的用户越少，而后面的产
-品也就越难。虽然你想改变，但是会发现阻力越来越大，完全不是自己一个产品能改变的
-事情，这叫劣币驱逐良币。
+    总之由于多年的破坏，比起当年的端游，现在玩家层次越来越低，越来越差了，你说
+    你新做一款游戏上线，能不去迎合现在的玩家么？而你越迎合，好的的用户越少，而
+    后面的产品也就越难。虽然你想改变，但是会发现阻力越来越大，完全不是自己一个
+    产品能改变的事情，这叫劣币驱逐良币。
 
-**有牛逼的研究生吗？有！但不是因为读研牛逼，而是因为他本身就牛逼。**包括但不限于以
-下几种：一不小心被保研，碍于老师爱了自己四年的份上读个研；啊工作太无聊读个研把
-；麻蛋我是科学家我得搞学术呢我怎么能工作呢；等等
+    **有牛逼的研究生吗？有！但不是因为读研牛逼，而是因为他本身就牛逼。**包括但
+    不限于以下几种：一不小心被保研，碍于老师爱了自己四年的份上读个研；啊工作太
+    无聊读个研把；麻蛋我是科学家我得搞学术呢我怎么能工作呢；等等
 
-当然，哪怕是上面两类，也不乏很多进入研究生阶段后把握时间，成功逆袭的人。
+    当然，哪怕是上面两类，也不乏很多进入研究生阶段后把握时间，成功逆袭的人。
 
-但更多的是混日子的，工程能力基本 0 分，科研能力一般 8 分（满分 100）。张口闭口机
-器学习，自然语言处理，实际上就是把别人 matlab 代码抄来改改代码，跑个结果还用 ps
-美颜一下最后抄几篇论文毕业。
+    但更多的是混日子的，工程能力基本 0 分，科研能力一般 8 分（满分 100）。张口
+    闭口机器学习，自然语言处理，实际上就是把别人 matlab 代码抄来改改代码，跑个
+    结果还用 ps美颜一下最后抄几篇论文毕业。
 
-所以那，真的没必要因为“读研”这个选择不被认可而感到愤怒。读研并不比工作高贵，只
-是一个普通地选择而已。就是那种今天我是吃面还是吃米线那种选择。
+    所以那，真的没必要因为“读研”这个选择不被认可而感到愤怒。读研并不比工作高贵，
+    只是一个普通地选择而已。就是那种今天我是吃面还是吃米线那种选择。
 
-经常有些小公司的朋友问我，他们应该选 mongodb 还是 mysql， 或者是选择 PHP 还是
-GO，哪个性能会更好, 我就觉得奇怪他为什么有这样的困惑，因为以他们的产品的水平，
-选哪个都能解决问题，肯定是哪个简单哪个好招人用哪个，而且等这个成为瓶颈时，你们
-已经不是一家小公司了。
+    经常有些小公司的朋友问我，他们应该选 mongodb 还是 mysql， 或者是选择 PHP 还
+    是 GO，哪个性能会更好, 我就觉得奇怪他为什么有这样的困惑，因为以他们的产品的
+    水平，选哪个都能解决问题，肯定是哪个简单哪个好招人用哪个，而且等这个成为瓶
+    颈时，你们已经不是一家小公司了。
 
-我想从一个比较奇怪的角度来切入，这里不得不提到一个人，新东方的创始人之一——王强。
+    我想从一个比较奇怪的角度来切入，这里不得不提到一个人，新东方的创始人之一——
+    王强。
 
-我之前听过王强的一场演讲，他在演讲中讲到自己在美国的求学之路，里面有一段讲他是
-如何成功说服计算机系主任同意让他这样一个英语专业的人进入计算机系攻读硕士的，这
-段非常有料。他之前在北大英语系呆了十年，四年本科，然后又教了六年书，简单讲就是
-一个纯正的文科生，而计算机是工科范畴，一个没有数理基础的文科学生要求到需要整天
-和数理打交道的工科念硕士，这听起来是稍微有点天方夜谭，但王强愣是靠自己三寸不烂
-之舌说服了计算机系主任，成功进入纽约州立大学计算机系攻读硕士。
+    我之前听过王强的一场演讲，他在演讲中讲到自己在美国的求学之路，里面有一段讲
+    他是如何成功说服计算机系主任同意让他这样一个英语专业的人进入计算机系攻读硕
+    士的，这段非常有料。他之前在北大英语系呆了十年，四年本科，然后又教了六年书，
+    简单讲就是一个纯正的文科生，而计算机是工科范畴，一个没有数理基础的文科学生
+    要求到需要整天和数理打交道的工科念硕士，这听起来是稍微有点天方夜谭，但王强
+    愣是靠自己三寸不烂之舌说服了计算机系主任，成功进入纽约州立大学计算机系攻读
+    硕士。
 
-他就讲了三个点：（手里没有逐字稿，我就用自己的话概括一下）
+    他就讲了三个点：（手里没有逐字稿，我就用自己的话概括一下）
 
-  - 人通过软件来与计算机交互，而软件说穿了就是人向机器发送的一系列逻辑指令，这
-    些逻辑指令是在编程语言（programming language）这种媒介的承载之下发送出去的
-    ，而我在北大十年，掌握了四门 language，programming language 本质上就是一种
-    language，我对 language 太熟悉不过了，所以没理由学不好编程。
-  - 计算机指令和硬件进行交互，靠的是运算逻辑。我在本科期间修过逻辑课，而在北大
-    六年的教书生涯中，为了把课讲好讲的有逻辑，我又在讲台上历练了六年自己的逻辑
-    思维，我敢保证，我的逻辑思维能力可以碾压任何一个美国计算机四年级本科生。
-  - 任何科研工作者，都需要极强的抽象能力，即从纷繁复杂的现象中抽丝剥茧提炼抽象
-    的能力，计算机的问题也需要把实际问题抽象成数学模型，我搞了十年英语，文学著
-    作基本看了个遍，我有很高的文学修养，而文学修养是美学修养的一种，美学修养说
-    白了，就是一种高度的抽象能力，比如一个美女走过，你可以把他身上成亿的信息点
-    抽象成一个词——“美”，这就是抽象能力。
+      - 人通过软件来与计算机交互，而软件说穿了就是人向机器发送的一系列逻辑指令，
+        这些逻辑指令是在编程语言（programming language）这种媒介的承载之下发送
+        出去的，而我在北大十年，掌握了四门 language，programming language 本质
+        上就是一种language，我对 language 太熟悉不过了，所以没理由学不好编程。
+      - 计算机指令和硬件进行交互，靠的是运算逻辑。我在本科期间修过逻辑课，而在
+        北大六年的教书生涯中，为了把课讲好讲的有逻辑，我又在讲台上历练了六年自
+        己的逻辑思维，我敢保证，我的逻辑思维能力可以碾压任何一个美国计算机四年
+        级本科生。
+      - 任何科研工作者，都需要极强的抽象能力，即从纷繁复杂的现象中抽丝剥茧提炼
+        抽象的能力，计算机的问题也需要把实际问题抽象成数学模型，我搞了十年英语，
+        文学著作基本看了个遍，我有很高的文学修养，而文学修养是美学修养的一种，
+        美学修养说白了，就是一种高度的抽象能力，比如一个美女走过，你可以把他身
+        上成亿的信息点抽象成一个词——“美”，这就是抽象能力。
 
-**事情从来就没有高下，有高下的是人。**
-
-[CSS absolute and fixed positioning - W3C Wiki](https://www.w3.org/wiki/CSS_absolute_and_fixed_positioning)
+    **事情从来就没有高下，有高下的是人。**
 
 [javascript - How to make a DIV always float on the screen in top right corner? - Stack Overflow](http://stackoverflow.com/questions/4236151/how-to-make-a-div-always-float-on-the-screen-in-top-right-corner)
 
-```css
-.box {
-    position: fixed;
-    left: 1em;
-    top: 1em;
-}
-* html .box {
-    position: absolute;
-}
-```
+:   ```css
+    .box {
+        position: fixed;
+        left: 1em;
+        top: 1em;
+    }
+    * html .box {
+        position: absolute;
+    }
+    ```
+
+    refs and see also
+
+      - [CSS absolute and fixed positioning - W3C Wiki](https://www.w3.org/wiki/CSS_absolute_and_fixed_positioning)
 
 [Joseph Stalin - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Joseph_Stalin)
 
@@ -2948,8 +3092,8 @@ GO，哪个性能会更好, 我就觉得奇怪他为什么有这样的困惑，�
     如果他的周围全是盲人，痛苦就会小很多，因为大家一样了，引起烦恼的缘由一时被隐藏
     了。
 
-    屏蔽掉一个人，看不到他的样子，听不到他的声音，却抑制不了不去想他。世间的痛
-    苦和烦恼，不在于不能得到，而在于不能割舍。不在于不想屏蔽的东西被屏蔽，而在
+    屏蔽掉一个人，看不到他的样子，听不到他的声音，却抑制不了不去想他。
+    **世间的痛苦和烦恼，不在于不能得到，而在于不能割舍。**不在于不想屏蔽的东西被屏蔽，而在
     于想屏蔽的东西无法屏蔽。
 
 [Emacs 绑定键盘的技巧。](http://docs.huihoo.com/homepage/shredderyin/wiki/KeyBinding.html)
@@ -2982,11 +3126,11 @@ GO，哪个性能会更好, 我就觉得奇怪他为什么有这样的困惑，�
 
     Without the Oxford comma:
 
-    |   We invited the strippers, jfk and stalin. （这是要死……）
+    |   *We invited the strippers, jfk and stalin. （这是要死……）*
 
     With the Oxford comma:
 
-    |   We invited the strippers, jfk, and stalin.（这也差不多要死……的节奏）
+    |   *We invited the strippers, jfk, and stalin.（这也差不多要死……的节奏）*
 
     所谓牛津逗号（Oxford Comma），当然和牛津大学有点关系。牛津逗号，指的是用英文枚
     举一些示例的时候，紧跟在并列连词（通常是 and 和 or）之前的那个逗号。举个栗子：
@@ -2996,7 +3140,7 @@ GO，哪个性能会更好, 我就觉得奇怪他为什么有这样的困惑，�
     这个例子里面，and 之前的逗号，就是所谓的牛津逗号。叫它牛津逗号，是因为牛津
     大学出版社要求作者必须在枚举的并列连词之前加上一个逗号。不过，由于哈佛大学
     出版社也有这么一个要求，所以这种逗号也可以称为哈佛逗号（Harvard Comma）。当
-    然，你也可以根据它所处的环境，把它叫做 **Serial Comma** (? I didn't get it.)。
+    然，你也可以根据它所处的环境，把它叫做 **Serial Comma**。
 
     [Serial comma - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Serial_comma)
 
@@ -3067,9 +3211,9 @@ copy line -> copy
 Big O notation is a mathematical notation that describes the limiting behavior
 of a function when the argument tends towards a particular value or infinity.
 It is a member of a family of notations invented by Edmund Landau and Paul
-Bachmann, collectively called Bachmann-Landau notation or asymptotic notation.
+Bachmann, collectively called Bachmann-Landau notation or **asymptotic (渐进) notation**.
 
-[图灵社区 : 阅读 : 陈皓（@左耳朵耗子）：我的精神家园（图灵访谈）](http://www.ituring.com.cn/article/details/9174)
+[图灵社区, 阅读, 陈皓, 我的精神家园](http://www.ituring.com.cn/article/details/9174)
 
 :   我还记得，有一天，有一个和网络相关的技术问题，同事们搞了三四个通宵，也没弄明白，
     后来想起我好像在看这方面的书，他们就让我去看看、试试，结果我只用了 20 分钟就
@@ -3207,8 +3351,6 @@ Bachmann, collectively called Bachmann-Landau notation or asymptotic notation.
 
       - [松下 Let's Note 秋冬产品线更新，迷你型 RZ 系列重出江湖](http://cn.engadget.com/2014/10/02/panasonic-lets-note-rz4-autumn-winter/)
       - [Panasonic Let's note AX3（豆瓣）](https://dongxi.douban.com/show/1830665/)
-
-[处理 vim 中文行禁则的一个 Patch - 查看主题 • Ubuntu中文论坛](http://forum.ubuntu.com.cn/viewtopic.php?f=68&t=300689)
 
 [vim - Paste in insert mode? - Stack Overflow](http://stackoverflow.com/questions/2861627/paste-in-insert-mode)
 
@@ -3451,7 +3593,10 @@ $ ./WideString.exe "hay 嗨"
 
 [c++ - How to detect c++11 support of a compiler with cmake - Stack Overflow](http://stackoverflow.com/questions/10984442/how-to-detect-c11-support-of-a-compiler-with-cmake/20165220#20165220)
 
-:   ```cmake
+:   **cmake cxx compile features**, **cmake cxx known features**
+    **target compile features**
+
+    ```cmake
     cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
     project(foobar CXX)
     message("Your C++ compiler supports these C++ features:")
@@ -4123,8 +4268,8 @@ $ locate qmake
 bash: search commands, `c-r`, `c-s`
 
 你不可能获得一个客观的评判的。因为真正『同时』精通 emacs / vi 两者的人极少，这
-极少的人恰好大都是 唐望所说的得证大道、超级大牛、云淡风轻型的人，根本就不会参合
-这样的争论。
+极少的人恰好大都是 唐望所说的得证大道、超级大牛、云淡风轻型的人，
+**根本就不会参合这样的争论**。
 
 [Anti-lock braking system - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Anti-lock_braking_system)
 
@@ -4151,7 +4296,9 @@ bash: search commands, `c-r`, `c-s`
 
 [grab all descendents · district10/CuteWatchDog@c496e03](https://github.com/district10/CuteWatchDog/commit/c496e03bfaebea37d9b16a99df9ac15922a91676#diff-34ab4d129103a08bf0033d323034e0c9R78)
 
-:   ```cpp
+:   用栈实现目录的输出。
+
+    ```cpp
     QStringList CuteWatchDog::grabAllDescendents( const QString &root )
     {
         QStringList dirEntries;
@@ -4222,7 +4369,7 @@ maple, `['mepl]` n. 枫树；淡棕色
 
 [我对顶功的分析 - 输入法讨论专区 - 北大中文论坛 www.pkucn.com - Powered by Discuz!](http://www.pkucn.com/thread-298521-1-1.html)
 
-[QT编写的中文双拼输入法最终版 - QTCN开发网 - Powered by phpwind](http://www.qtcn.org/bbs/read-htm-tid-58920.html)
+[QT 编写的中文双拼输入法最终版 - QTCN 开发网 - Powered by phpwind](http://www.qtcn.org/bbs/read-htm-tid-58920.html)
 
 [networking - Network usage top/htop on Linux - Stack Overflow](http://stackoverflow.com/questions/368002/network-usage-top-htop-on-linux)
 
@@ -4239,7 +4386,7 @@ maple, `['mepl]` n. 枫树；淡棕色
     真正令熊雨前意识到他的软件“可以直接转化为钱”的，是微软这位大客户的不约而至。
     2008 年底，全球金融危机正酣，微软揣着云计算中心 PDF 索引工具的合同，同时敲
     响了 Adobe、福昕两家的门。微软 SharePoint Online 产品经理李公布了测评结果：
-    过滤2676 份、共计 2406MB 的 PDF 文档，福昕比 Adobe 快了 5 倍。此前差不多一
+    过滤 2676 份、共计 2406MB 的 PDF 文档，福昕比 Adobe 快了 5 倍。此前差不多一
     年，微软企业搜索产品部已经“面试”过这两家——福昕当时充其量小有名气，美国分公
     司只有 1 个人，微软一开始愣是没找到门儿，几经打听，才发现福昕的北京分部就在
     微软亚洲研究院的斜对面，两家是邻居。第一次的测评结果：过滤 1041 份、共计
@@ -4783,23 +4930,6 @@ estimated, the more influence, or weight, it has in the averaging process.
 Understanding the Network Terms SSID, BSSID, and ESSID
 
 :   <http://www.juniper.net/techpubs/en_US/junos-space-apps12.3/network-director/topics/concept/wireless-ssid-bssid-essid.html>
-
-    Phil Belanger, a founding member of the Wi-Fi Alliance who
-    **presided (`[prɪ'zaɪd]`, 指定, 主持) over** the selection of the name "Wi-Fi",
-    also stated that Interbrand invented Wi-Fi as a play on words with Hi-Fi (high
-    fidelity), and also created the Wi-Fi logo. The term 'fidelity' refers to the
-    faithfulness/accuracy of reproduction or transmission of the signal, and
-    'wireless' is a distinguishing feature that contrasted with earlier internet
-    connection technologies such as wired Ethernet.
-
-    The Extended Service Set Identification (ESSID) is one of two types of Service
-    Set Identification (SSID). In an ad hoc wireless network with no access points,
-    the Basic Service Set Identification (BSSID) is used. In an infrastructure
-    wireless network that includes an access point, the ESSID is used, but may
-    still be referred to as SSID.  An SSID is a 32-character (maximum) alphanumeric
-    key identifying the name of the wireless local area network. Some vendors refer
-    to the SSID as the network name. For the wireless devices in a network to
-    communicate with each other, all devices must be configured with the same SSID.
 
 两个 linux 共享同一个 /home 分区
 
@@ -21638,9 +21768,9 @@ refs and see also
 个小时的英文（随便什么，新闻，有声书之类，但中文字幕或中英字幕的美剧不算）5，请
 问你丢弃英文，从未接触，低于三年么？6，请问你高考英语及格了么？7，请问过去时，
 现在时，完成时，虚拟语气，副词性从句，名词性从句，形容词性从句这些基本语法概念
-有么？不要求精通，但是请问你知道么？8，请问你能听懂多快速度的英文？VOA 慢速那种
-？还是 VOA 慢速已经可以听懂但是常速仍然力不从心的？或者你根本就不知道 VOA 是什
-么，而且从来就没有过听英文的习惯？
+有么？不要求精通，但是请问你知道么？8，请问你能听懂多快速度的英文？VOA 慢速那种？
+还是 VOA 慢速已经可以听懂但是常速仍然力不从心的？或者你根本就不知道 VOA 是什么，
+而且从来就没有过听英文的习惯？
 
 如果以上问题，你给出的否定答案超过 3 个问题，那么下面正文并不适合你，你看完也不
 会有任何直接收获，请点开右边零基础那个房间，寻求赖世雄老师的帮助，每天一课，一
@@ -21668,12 +21798,12 @@ refs and see also
 
 OK，先简单扫盲下
 
-国外的 ESL 教学早就已经上升到心理学和脑神经学的高度了，各类语言学实验室开的兴旺
-，成果大批量产出，无数语言学家前赴后继殚精竭虑穷极一生，只为了追求拿最高效和最
-科学的教学手段方法，跟国内某机构或某名师拍脑袋想出来的办法（背熟新概念，背熟 2W
-单词之类的言论）截然不同（庆父不死鲁难不已啊），其中的开宗立派的祖师爷，惹无数
-屌丝嫉妒，无数伪君子打压，国内无数英语系砖家叫兽故意掩盖伪装，被国人一只挡在门
-外的顶尖儿人物，就是南加州大学的 Dr Krashen！
+国外的 ESL 教学早就已经上升到心理学和脑神经学的高度了，各类语言学实验室开的兴旺，
+成果大批量产出，无数语言学家前赴后继殚精竭虑穷极一生，只为了追求拿最高效和最科
+学的教学手段方法，跟国内某机构或某名师拍脑袋想出来的办法（背熟新概念，背熟 2W 单
+词之类的言论）截然不同（庆父不死鲁难不已啊），其中的开宗立派的祖师爷，惹无数屌
+丝嫉妒，无数伪君子打压，国内无数英语系砖家叫兽故意掩盖伪装，被国人一只挡在门外
+的顶尖儿人物，就是南加州大学的 Dr Krashen！
 
 技插：南加州的语言学专家怎么这么多，祖师爷是那的，我一外教是那毕业的，下文中要
 提到的 Jeff 也是哪的，真是风水宝地出人才啊
@@ -21684,7 +21814,7 @@ Dr Krashen 提出了几条著名的外语习得假说，根据我们今天的网
 1，输入 input 假说：绝大部分人的英文不好并不是因为他们 practice 的不够多，而是
 因为 input 不够，换言之没事喜欢瞎找老外搭讪无疑是个蠢办法，至于那种认为去国外了
 英文自然就会好，或者美国卖菜的英文都比我们好的多人的人都是傻逼，当然，这只是条
-假说，目前并无法证据其为完全真理，所以只能假定这些人是傻逼2，i+1 理论：也叫做可
+假说，目前并无法证据其为完全真理，所以只能假定这些人是傻逼 2，i+1 理论：也叫做可
 理解性输入假说，在你认同输入假说的基础上，进行输入练习时，要遵守 i+1 的原则，i
 即你现在的水平，1 即稍微高一点点的水平，这点被很多人熟悉，但是大家容易忽略的就
 是，在学习了一段时间后，水平提高了，以前的 i+1 其实已经是你现在 i 水准了，这个
@@ -21696,17 +21826,17 @@ Dr Krashen 提出了几条著名的外语习得假说，根据我们今天的网
 该拿常速英文来练习，好像刚出生的小孩一样，静心打坐聆听，就算听不懂也听下去，总
 有一天会顿悟，突然打通耳朵。就好像打通了任督二脉一样，你的英文的小宇宙就可以爆
 发，因为没有特别多的人试验过这种自然学习法，而且我相信绝大部分人不会有胆量拿自
-己的时间来试验这种办法，所以老老实实思索自己的级别，找一些略难的材料好好学一学
-，学好了，再升个级别，这样有阶段性的上升和提高，收获的是扎扎实实的进步和提高3，
+己的时间来试验这种办法，所以老老实实思索自己的级别，找一些略难的材料好好学一学，
+学好了，再升个级别，这样有阶段性的上升和提高，收获的是扎扎实实的进步和提高 3，
 Narrow input 假说，意思就是，输入的材料在一定时间内相对要狭窄些，但是这条假说却
 是小组里无一人会愿意遵守的，比如今晚还有人问我入门级别的语法相关，求推荐简单的
 原版书（入门语法想读原版书，这个太高级了些）。我的观点很明确，既然确定了自己的
 级别，那么就在一定时间内，只接触这个级别的材料，起码在学完前，尽量不要接触其它
-材料，分散注意力。不要订出那种手捧赖世雄，脚填 Cloze，眼读原版书之类的天才计划
-，就算你订了，按照小组的时间设定，我很怀疑你每天都有那么多时间能每个方面都
-cover 到，订这种不切实际的计划没什么意思，更何况，一天数课的赖世雄老师已经占了
-你很大时间，再去读原版书既不靠谱，也不实际，我也很怀疑，作为一个需要赖世雄老师
-帮忙的小白，能看得懂 Peter Pan 么？
+材料，分散注意力。不要订出那种手捧赖世雄，脚填 Cloze，眼读原版书之类的天才计划，
+就算你订了，按照小组的时间设定，我很怀疑你每天都有那么多时间能每个方面都 cover
+到，订这种不切实际的计划没什么意思，更何况，一天数课的赖世雄老师已经占了你很大
+时间，再去读原版书既不靠谱，也不实际，我也很怀疑，作为一个需要赖世雄老师帮忙的
+小白，能看得懂 Peter Pan 么？
 
 4，情绪机制 学习的材料和环境应该是有趣的，轻松自如的，才能实现效果的最大化
 
@@ -21746,15 +21876,15 @@ VOA 慢速，但是在听常速英文的时候觉得困难重重，听懂率可�
 国内基础教育就是大家熟悉的 语法 - 翻译 - 背诵法，尤其是对词汇的背诵，懂语法背词
 汇多的人基本上都能通过考试——但这样对确实英文的输入并无多少增长，考试自然也检测
 不了什么水平——连听力题都是靠连蒙带猜，选择题和阅读题也多是靠所谓语感，这样一路
-蒙 + 猜过了四六八级，只能说明你运气好——发音，because 肯定发成 becaurse,famous
-也是 famours，r 音到处飞，w 和 h 这两个字母一读就错；语法，各种名词性从句和形容
-词性从句以及副词性从句的构成规则一片糊涂，浑浑噩噩，简化从句更是掌握的一塌糊涂
-，更不知道怎么写好各种复合句了；阅读，因为从句知识一片糊涂，稍微长一点的句子满
-目抓瞎，压根不知道什么意思，连一开始的句子都读不懂，之后更不可能加快阅读速度了
-，自豪的做阅读题的高正确率无非是在大量做题之后依靠题目本身的简化句子连蒙带猜而
-已，基本的行文逻辑思维全无，更别提欣赏英美文学文字的艺术美感了。连这三项最简单
-的部分大家都做的极差，那么我们也不用和口语和写作表达了吧。。。辞不达意还在其次
-，对英文的 instant reflection 完全没有
+蒙 + 猜过了四六八级，只能说明你运气好——发音，because 肯定发成 becaurse,famous 也
+是 famours，r 音到处飞，w 和 h 这两个字母一读就错；语法，各种名词性从句和形容词
+性从句以及副词性从句的构成规则一片糊涂，浑浑噩噩，简化从句更是掌握的一塌糊涂，
+更不知道怎么写好各种复合句了；阅读，因为从句知识一片糊涂，稍微长一点的句子满目
+抓瞎，压根不知道什么意思，连一开始的句子都读不懂，之后更不可能加快阅读速度了，
+自豪的做阅读题的高正确率无非是在大量做题之后依靠题目本身的简化句子连蒙带猜而已，
+基本的行文逻辑思维全无，更别提欣赏英美文学文字的艺术美感了。连这三项最简单的部
+分大家都做的极差，那么我们也不用和口语和写作表达了吧。。。辞不达意还在其次，对
+英文的 instant reflection 完全没有
 
 （请问诸君感到膝盖中满箭木有？）
 
@@ -21790,22 +21920,22 @@ Krashen 的 i+1 理论，所以很多人听 VOA 慢速听的开头一切良好�
 完毕的高级学习者不屑来教人怎么过渡吗？但国内机构集体选择眼盲耳盲这一事实不能让
 人觉得不吊诡
 
-如果没有人愿意或者不屑，那么让我来！我愿意来讲授自己当年好不容易突破的艰难困苦
-！我愿意来分享突破的最高效办法！我愿意撕下各种名师传奇的假面具！让我来踢爆国内
-各类跳梁小丑！
+如果没有人愿意或者不屑，那么让我来！我愿意来讲授自己当年好不容易突破的艰难困苦！
+我愿意来分享突破的最高效办法！我愿意撕下各种名师传奇的假面具！让我来踢爆国内各
+类跳梁小丑！
 
 就好像洛杉矶的把妹界，众人都是无脑而跟风的，看到一种办法有效就纷纷效仿，讲故事
-有用就到处给妹子讲故事，幽默有用就到处到酒吧给妹子讲笑话——结果发现有的办法有用
-，有的办法只能被妹子扇耳光，为什么呢？没有任何一个人有好对策，一直到一位奇才——
-迷男的出现
+有用就到处给妹子讲故事，幽默有用就到处到酒吧给妹子讲笑话——结果发现有的办法有用，
+有的办法只能被妹子扇耳光，为什么呢？没有任何一个人有好对策，一直到一位奇才——迷
+男的出现
 
 迷男彻底扫清了把妹学上的流俗，肃清了那种一招鲜吃遍天的荒谬状况，革命性的指出，
-跟妹子交往是分成不同阶段的，搭讪认识是一个，约会是一个，约人家到你家里玩是一个
-，最后成功上垒把妹得手又是一个（好比英文的高级水平），每个阶段，都必须用不同的
-方法才能最和妹子的心思，尤其还要思考和认清自己和妹子的关系所处阶段，结合了当代
-女性心理学与 NLP 理论，大量实践，总结经验，开班授课，成功案例众多，随后出版书籍
-，众拙男花 25 人民币加上一颗不要脸的心反复练习，此生便可永远左拥右抱，常有温香
-软玉漂亮妹子在怀，社会从此稳定，造福于民，伟大！
+跟妹子交往是分成不同阶段的，搭讪认识是一个，约会是一个，约人家到你家里玩是一个，
+最后成功上垒把妹得手又是一个（好比英文的高级水平），每个阶段，都必须用不同的方
+法才能最和妹子的心思，尤其还要思考和认清自己和妹子的关系所处阶段，结合了当代女
+性心理学与 NLP 理论，大量实践，总结经验，开班授课，成功案例众多，随后出版书籍，
+众拙男花 25 人民币加上一颗不要脸的心反复练习，此生便可永远左拥右抱，常有温香软
+玉漂亮妹子在怀，社会从此稳定，造福于民，伟大！
 
 你们可以想象下 威尔斯密斯在 Hitch 全民情圣中的角色，虽然迷男大师跟这种角色有很
 大不同，你们有空自己去优酷看看他的教程便知道了
@@ -21834,749 +21964,842 @@ Krashen 的 i+1 理论，所以很多人听 VOA 慢速听的开头一切良好�
 引用 Joseph J. Rotman 的
 [*The First Course in Abstract Algebra with Applications*][douban-abstract-algebra]：
 
-> Giving the etymology of mathematical terms is rarely done. Let me explain,
-> with an analogy, why I have included derivations of many terms.
+>   Giving the **etymology of mathematical terms** is rarely done. Let me
+>   explain, with an analogy, why I have included derivations of many terms.
 >
-> There are many variations of standard poker games and, in my poker group, the
-> dealer announces the game of his choice by naming it. Now some names are
-> better than others.  For example, "Little Red" is a game in which one's
-> smallest red card is wild; this is a good name because it reminds the players
-> of its distinctive feature. On the other hand, "Aggravation" is not such a
-> good name, for thought it is, indeed, suggestive, the name does not
-> distinguish this particular game from several others.
+>   There are many variations of standard poker games and, in my poker group,
+>   the dealer announces the game of his choice by naming it. Now some names
+>   are better than others.  For example, "Little Red" is a game in which one's
+>   smallest red card is wild; this is a good name because it reminds the
+>   players of its distinctive feature. On the other hand, "Aggravation" is not
+>   such a good name, for thought it is, indeed, suggestive, the name does not
+>   distinguish this particular game from several others.
 >
-> Most terms in mathematics have been well chosen; there are more red names
-> than aggravating ones. An example of a good name is *even* permutation, for a
-> permutation is even if it is a product of an even number of transpositions.
-> Another example of a good term is the *parallelogram law* describing vector
-> addition. But many good names, clear when they were chosen, are now obscure
-> because their roots are either in another language or in another discipline.
-> The trigonometric terms *tangent* and *secant* are good names for those
-> knowing some Latin, but they are obscure otherwise.
+>   Most terms in mathematics have been well chosen; there are more red names
+>   than aggravating ones. An example of a good name is *even* permutation, for
+>   a permutation is even if it is a product of an even number of
+>   transpositions.  Another example of a good term is the *parallelogram law*
+>   describing vector addition. But many good names, clear when they were
+>   chosen, are now obscure because their roots are either in another language
+>   or in another discipline.  The trigonometric terms *tangent* and *secant*
+>   are good names for those knowing some Latin, but they are obscure
+>   otherwise.
 >
-> The term *mathematics* is obscure only because most of us do not know that it
-> comes from the classical Greek word meaning "to learn". The term *corollary*
-> is doubly obscure; it comes from the Latin word meaning "flower", but why
-> should some theorems be called flowers? A plausible explanation is that it
-> was common, in ancient Rome, to give flowers as gifts, and so a corollary is
-> a gift bequeathed by a theorem. The term *theorem* comes from the Greek word
-> meaning "to watch" or "to contemplate" (*theatre* has the same root); it was
-> used by Euclid with its present meaning. The term *lemma* comes from the
-> Greek word meaning "taken" or "received"; it is a statement that is taken for
-> granted (for it has already been proved) in the course of proving a theorem.
-> **I believe that etymology of terms is worthwhile (and interesting!), for it
-> often aids understanding by removing unnecessary obscurity.**
+>   The term *mathematics* is obscure only because most of us do not know that
+>   it comes from the classical Greek word meaning "to learn". The term
+>   *corollary* is doubly obscure; it comes from the Latin word meaning
+>   "flower", but why should some theorems be called flowers? A plausible
+>   explanation is that it was common, in ancient Rome, to give flowers as
+>   gifts, and so a corollary is a gift bequeathed by a theorem. The term
+>   *theorem* comes from the Greek word meaning "to watch" or "to contemplate"
+>   (*theatre* has the same root); it was used by Euclid with its present
+>   meaning. The term *lemma* comes from the Greek word meaning "taken" or
+>   "received"; it is a statement that is taken for granted (for it has already
+>   been proved) in the course of proving a theorem.  **I believe that
+>   etymology of terms is worthwhile (and interesting!), for it often aids
+>   understanding by removing unnecessary obscurity.**
 
 [douban-abstract-algebra]: https://book.douban.com/subject/2853503/
+
+推荐阅读：
+
+-   [Online Etymology Dictionary](http://www.etymonline.com/index.php?allowed_in_frame=0&search=sin)
+
+    牛逼闪闪的词源学网站。etym online dot com
+
+-   [Shady Characters: The Secret Life of Punctuation, Symbols, and Other Typographical Marks: Keith Houston: 9780393349726: Amazon.com: Books](http://www.amazon.com/Shady-Characters-Punctuation-Symbols-Typographical/dp/0393349721/)
+-   [The Words of Mathematics: An Etymological Dictionary of Mathematical Terms Used in English (Spectrum): Steven Schwartzman: 9780883855119: Amazon.com: Books](http://www.amazon.com/Words-Mathematics-Etymological-Dictionary-Mathematical/dp/0883855119)
+-   [The Etymologicon: A Circular Stroll Through the Hidden Connections of the English Language: Mark Forsyth: 9780425260791: Amazon.com: Books](http://www.amazon.com/Etymologicon-Circular-Through-Connections-Language/dp/0425260798/ref=pd_bxgy_14_img_2?ie=UTF8&refRID=0P4R3NAXGQZQXCPM29H9)
+-   [mathematics - Wiktionary](https://en.wiktionary.org/wiki/mathematics#Etymology)
+-   [Lists of etymologies - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Lists_of_etymologies)
+-   [List of computer term etymologies - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_computer_term_etymologies)
 
 Etymology of Mathematical Terms
 
 :   大量 etymology 源自此书
 
-    | 英文 | 中文 | 溯源 |
+    ---------------     ---------------------   -----------------------------------
+    英文                中文                    溯源
+    ---------------     ---------------------   -----------------------------------
+    Mathematics         数学                    From Greek, "to learn"
+
+    Corollary           ?                       From Latin, "flower", 花当时是
+                                                一种礼物。类似现在文中常用的 Bonus
+
+    Theorem             定理                    From Greek, "to watch", "to contemplate"
+
+    Z, Q, R, C          ?                       -   *Zahl*(*German*) meanning "number"
+                                                -   Rational Numbers;
+                                                -   Real Numbers;
+                                                -   Complex Numbers
+
+    Lemma               ?                       From Greek, "taken", "received", a.k.a. taken for granted
+
+    Induction           归纳法，演绎法          From Latin, "to lead", came to
+                                                mean "prevailing to do something" or "influencing"
+
+    Factor              ?                       From Latin, "to make", or "to contribute"
+
+    Binomial            ?                       *bi*(*Latin*, "two") + *nomen*(*Latin*, "name", "term"); trinomial, monomial
+
+    Polynomial          ?                       *poly*(*Greek*, many) + *namen*(*Latin*, "name", "term")
+
+    Cyclotomic          ?                       From Greek, "circle splitting"
+
+    Algorithm           ?                       来自一个印度数学家 Khwarizmi
+
+    Googol              ?                       10^100
+
+    Leap Year           ?                       闰年的 2 月比平年的多一天，因为
+                                                在 Roman calender 里三月一号才是一年的第一天
+
+    Calendar            ?                       From Greek, "to call", evolved
+                                                into the Latin for the first day of a month(when accounts were due)
+
+    Signum              ?                       From Latin, "mark", or "token", now we use "sign"
+    Matrix              ?                       Derived from the word meaning
+                                                "mother", means "womb" in
+                                                Latin. More generally, it means
+                                                something that contains the essence of a thing.
+
+    Translation         ?                       From Latin, "to transfer".
+                                                Language to language, point(of thoughts) to point.
+
+    Dihedron            ?                       *di*(*Latin*, "two") + *hedron*(*Greek*, "two dimensional side")
+
+    Stochastic          ?                       From Greek, "to guess"
+
+    Homomorphism        ?                       *homo*(*Greek*, "same") + *morphism*(*Greek*, "shape" or "form")
+
+    Isomorphism         ?                       *iso*(*Greek*, "equal") + *morphism*(*Greek*, "shape" or "form")
+
+    Kernel              ?                       From German, "grain" or "seed".
+                                                Indicating an important ingredient of a homomorphism
+
+    quaternion          ?                       ?
+
+    Group, Ring         ?                       First used by E. H. Moore in 1893
+
+    Field               ?                       *K<o">rper*(*German*), a
+                                                "realm", a "body" of things, or "collections of things"
+
+    Ring                ?                       *Corps*(*French*), a "realm", a
+                                                "body" of things, or "collections of things"
+
+    Domain              ?                       Abbrev. of *integral domain* of
+                                                the German word *Integret<a">tsbereich; A collection of things
+
+    Quadratic           ?                       From Latin, "four". Four-sided
+                                                figures(Like a square, with area *x^2*). Linear, quadratic, cubic.
+
+    Vector              ?                       From Latin, "to carry", vectors
+                                                in euclidean space carry the data of length and direction.
+
+    Scalar              ?                       From scale, which is from the
+                                                Latin word meaning "ladder", 因为梯子的横均匀（可以作为度量）
+
+    Orthogonal          ?                       *ortho*(*Greek*, "right") + *gon*(*Greek*, "angle"); Right angled or perpendicular
+
+    Echelon             ?                       "Wings"; A matrix in echelon form（矩阵的梯形形式）
+
+    Eigenvalue          ?                       From *Eigenwert*(*German*). *Wert* means *value*, *Eigen* is *characteristic* or *proper*
+
+    Automorphism        ?                       *auto*(*Greek*, "self") + *morphism*("shape" or "form")
+
+    Variety             ?                       Arose as a translation by E.
+                                                Beltami(inspired by Gauss) of the German term *Mannigfaltigkeit* used by
+                                                Riemann; nowdays, this term is usually tranlated as *manifold*
+
+    Sine                ?                       参考 [Sine 的故事] ( url here )
+
+    Root                ?                       参考 [Root 的故事] (url here)
+
+    Tangent             ?                       The Latin word *tangere* means
+                                                "to touch"; a tangent is a line which touches the circle in only one point
+
+    Secant              ?                       The Latin word *secare* means "to cut"; a secant is a line that cuts a circle
+
+    Modulo              ?                       From Latin, "measure"
+    ---------------     ---------------------   -----------------------------------
+
+    refs and see also
+
+        - [A First Course in Abstract Algebra (豆瓣)](https://book.douban.com/subject/2853503/)
+
+    | Letter | Letter Name | Pronunciation |
     | :---: | :---: | :---: |
-    | Mathematics | 数学 | From Greek, "to learn" |
-    | Corollary | ？ | From Latin, "flower", 花当时是一种礼物。类似现在文中常用的 Bonus |
-    | Theorem | 定理 | From Greek, "to watch", "to contemplate" |
-    | Z, Q, R, C | ? | *Zahl*(*German*) meanning "number"; Rational Numbers; Real Numbers; Complex Numbers. |
-    | Lemma | ? | From Greek, "taken", "received", a.k.a. taken for granted |
-    | Induction | 归纳法，演绎法 | From Latin, "to lead", came to mean "prevailing to do something" or "influencing" |
-    | Factor | ? | From Latin, "to make", or "to contribute" |
-    | Binomial | ? | *bi*(*Latin*, "two") + *nomen*(*Latin*, "name", "term"); trinomial, monomial |
-    | Polynomial | ? | *poly*(*Greek*, many) + *namen*(*Latin*, "name", "term") |
-    | Cyclotomic | ? | From Greek, "circle splitting" |
-    | Algorithm | ? | 来自一个印度数学家 Khwarizmi |
-    | Googol | ? | 10^100 |
-    | Leap Year | ? | 闰年的 2 月比平年的多一天，因为在 Roman calender 里三月一号才是一年的第一天 |
-    | Calendar | ? | From Greek, "to call", evolved into the Latin for the first day of a month(when accounts were due) |
-    | Signum | ? | From Latin, "mark", or "token", now we use "sign" |
-    | Matrix | ? | Derived from the word meaning "mother", means "womb" in Latin. More generally, it means something that contains the essence of a thing. |
-    | Translation | ? | From Latin, "to transfer". Language to language, point(of thoughts) to point. |
-    | Dihedron | ? | *di*(*Latin*, "two") + *hedron*(*Greek*, "two dimensional side") |
-    | Stochastic | ? | From Greek, "to guess" |
-    | Homomorphism | ? | *homo*(*Greek*, "same") + *morphism*(*Greek*, "shape" or "form") |
-    | Isomorphism | ? | *iso*(*Greek*, "equal") + *morphism*(*Greek*, "shape" or "form") |
-    | Kernel | ? | From German, "grain" or "seed". Indicating an important ingredient of a homomorphism |
-    | quaternion | ? | ? |
-    | Group, , Ring | ? | First used by E. H. Moore in 1893 |
-    | Field | ? | *K<o">rper*(*German*), a "realm", a "body" of things, or "collections of things" |
-    | Ring | ? | *Corps*(*French*), a "realm", a "body" of things, or "collections of things" |
-    | Domain | ? | Abbrev. of *integral domain* of the German word *Integret<a">tsbereich; A collection of things |
-    | Quadratic | ? | From Latin, "four". Four-sided figures(Like a square, with area *x^2*). Linear, quadratic, cubic. |
-    | Vector | ? | From Latin, "to carry", vectors in euclidean space carry the data of length and direction. |
-    | Scalar | ? | From scale, which is from the Latin word meaning "ladder", 因为梯子的横均匀（可以作为度量） |
-    | Orthogonal | ? | *ortho*(*Greek*, "right") + *gon*(*Greek*, "angle"); Right angled or perpendicular |
-    | Echelon | ? | "Wings"; A matrix in echelon form（矩阵的梯形形式） |
-    | Eigenvalue | ? | From *Eigenwert*(*German*). *Wert* means *value*, *Eigen* is *characteristic* or *proper* |
-    | Automorphism | ? | *auto*(*Greek*, "self") + *morphism*("shape" or "form"). |
-    | Variety | ? | Arose as a translation by E. Beltami(inspired by Gauss) of the German term *Mannigfaltigkeit* used by Riemann; nowdays, this term is usually tranlated as *manifold* |
-    | Sine | ? | 参考 [Sine 的故事](url here) |
-    | Root | ? | 参考 [Root 的故事](url here) |
-    | Tangent | ? | The Latin word *tangere* means "to touch"; a tangent is a line which touches the circle in only one point |
-    | Secant | ? | The Latin word *secare* means "to cut"; a secant is a line that cuts a circle |
-    | Modulo | ? | From Latin, "measure" |
-
-refs and see also
-:   * The First Course in Abstract Algebra with Applications: url to douban
-
----
-
-| Letter | Letter Name | Pronunciation |
-| :---: | :---: | :---: |
-| A a | a | /ˈeɪ/ |
-| B b | bee | /ˈbiː/ |
-| C c | cee | /ˈsiː/ |
-| D d | dee | /ˈdiː/ |
-| E e | e | /ˈiː/ |
-| F f | ef | /ˈɛf/ |
-| G g | gee | /ˈdʒiː/ |
-| H h | aitch | /ˈeɪtʃ/ |
-| - - | haitch | /ˈheɪtʃ/ |
-| - - | hetch | /ˈhetʃ/ |
-| I i | i | /ˈaɪ/ |
-| J j | jay | /ˈdʒeɪ/ |
-| - - | jy | /ˈdʒaɪ/ |
-| K k | kay | /ˈkeɪ/ |
-| L l | el or ell | /ˈɛl/, /ˈɛɫ/ |
-| M m | em | /ˈɛm/ |
-| N n | en | /ˈɛn/ |
-| O o | o | /ˈəʊ/ |
-| P p | pee | /ˈpiː/ |
-| Q q | cue | /ˈkjuː/ |
-| R r | ar | /ˈɑː/ |
-| S s | ess | /ˈɛs/ |
-| T t | tee | /ˈtiː/ |
-| U u | u | /ˈjuː/ |
-| V v | vee | /ˈviː/ |
-| W w | double-u | /ˈdʌbəl.juː/ |
-| X x | ex | /ˈɛks/ |
-| Y y | wy or wye | /ˈwaɪ/ |
-| Z z | zed | /ˈzɛd/ |
-| - - | zee | /ˈziː/ |
-| - - | izzard | /ˈɪzərd/ |
-
-Greek Alphabet
-
-| Letter | Name | In LaTeX | Transliteration | Pronunciation |
-| :---: | :---: | :----: | :--------------: | :--------------: |
-| A α | [alpha][alpha] | - \alpha | a | [AL-fuh][p-alpha] |
-| B β | [beta][beta] | - \beta | b | [BAY-tuh, BEE-tuh][p-beta] |
-| Γ γ | [gamma][gamma] | \Gamma \gamma | g | [GAM-uh][p-gamma] |
-| Δ δ | [delta][delta] | \Delta \delta | d | [DELL-tuh][p-delta] |
-| E ϵ ε | [epsilon][epsilon] | - \epsilon \varepsilon | e | [EP-suh-lon][p-epsilon] |
-| F ϝ ϛ | [digamma][digamma] | - \digamma [~~stigma~~][stigma] | f | dee-GAM-uh ? |
-| Z ζ | [zeta][zeta] | - \zeta | z | [ZAY-tuh][p-zeta] |
-| H η | [eta][eta] | \eta | ē | [AY-tuh][p-eta] |
-| Θ θ ϑ | [theta][theta] | \Theta \theta \vartheta | th | [THAY-tuh, THEE-tuh][p-theta] |
-| Ι ι | [iota][iota] | - \iota | i | [eye-OH-tuh][p-iota] |
-| K κ ϰ | [kappa][kappa] | - \kappa \varkappa | k | [CAY-uh][p-kappa] |
-| Λ λ | [lambda][lambda] | \Lambda \lambda | l | [LAM-duh][p-lambda] |
-| M μ | [mu][mu] | - \mu | m | [MYOO, MOO][p-mu] |
-| N ν | [nu][nu] | - \nu | n | [NOO, NYOO][p-nu] |
-| Ξ ξ | [xi][xi] | \Xi \xi | x | [ZIGH, SIGN, KSEE][p-xi] |
-| Ο ο | [omicron][omicron] | -  \omicron | o | [AH-mih-cron, OH-mih-cron][p-omicron] |
-| Π π ϖ | [pi][pi] | \Pi \pi \varpi | p | [PIE][p-pi] |
-| Ρ ρ ϱ | [rho][rho] | - \rho \varrho | r / rh | [ROE][p-rho] |
-| Σ σ ς | [sigma][sigma] | \Sigma \sigma \varsigma | s | [SIG-muh][p-sigma] |
-| T τ | [tau][tau] | - \tau | t | [TOW, TAW][p-tau] |
-| Υ υ | [upsilon][upsilon] | \Upsilon \upsilon | u | [UP-suh-lon, YOOP-suh-lon][p-upsilon] |
-| Φ ϕ φ | [phi][phi] | \Phi \phi \varphi | phi | [FIE, FEE][p-phi] |
-| Χ χ | [chi][chi] | \chi | ch | [KIGN, KEE][p-chi] |
-| Ψ ψ | [psi][psi] | \Psi \psi | ps | [SIGH, PSIGH, PSEE][p-psi] |
-| Ω ω | [omega][omega] | \Omega \omega | ō | [oh-MEG-uh, oh-MEE-guh, oh-MAY-guh][p-omega] |
-
-Latin Alphabet, etc
-
-Archaic(古体的) Latin alphabet
-
-**Others**
-
-Aleph: `/ˈɑːlɛf/`
-
----
-
-> The 18th and 19th centuries saw the creation and
-> standardization of mathematical notation as used today.
-> Euler was responsible for many of the notations in use today:
-> the use of a, b, c for constants and x, y, z for unknowns,
-> e for the base of the natural logarithm, sigma (Σ) for summation,
-> i for the imaginary unit, and the functional notation f(x).
-> He also popularized the use of π for Archimedes constant
-> (due to William Jones' proposal for the use of π in this way
-> based on the earlier notation of William Oughtred).
->
-> Many fields of mathematics bear the imprint of their creators for notation:
-> the differential operator is due to Leibniz,
-> the cardinal infinities to Georg Cantor (in addition to the lemniscate (∞) of John Wallis),
-> the congruence symbol (≡) to Gauss, and so forth.
-
-看的英文数学书越多，越发感觉英文教材的“好处”，符号都是不言自明，不用特别的提示就能明白要表达的意思。
-先上一份整理自 Wikipedia 的“说明书”。
-
-Αα (alpha)
-
-:   α represents:
-
-      - the first angle in a triangle, opposite the side A
-      - one root of a quadratic equation, where β represents the other
-      - the ratio of collector current to emitter current in a bipolar junction
-        transistor (BJT) in electronics
-      - the statistical significance of a result
-      - the false positive rate in statistics ("Type I" error)
-      - the reciprocal of the sacrifice ratio
-      - the fine structure constant in physics
-      - the angle of attack of an aircraft
-      - an alpha particle (He2+)
-      - angular acceleration in physics
-      - the linear thermal expansion coefficient
-      - the thermal diffusivity
-      - the alpha carbon is the first carbon after the carbon that attaches to
-        a functional group in organic chemistry
-      - the α-carbon is the backbone carbon next to the carbonyl carbon in
-        amino acids
-      - right ascension in astrometry
-      - The brightest star in a constellation.
-      - Iron Ferrite and numerous phases within materials science.
-      - the return in excess of the compensation for the risk borne in
-        investment
-      - the α-conversion in lambda calculus
-
-Ββ (beta)
-
-:   Β represents the beta function
-
-    β represents:
-
-      - the thermodynamic beta, equal to (kBT)−1, where kB is Boltzmann's
-        constant and T is the absolute temperature.
-      - the second angle in a triangle, opposite the side B
-      - one root of a quadratic equation, where α represents the other
-      - the ratio of collector current to base current in a bipolar junction
-        transistor (BJT) in electronics (current gain)
-      - the false negative rate in statistics ("Type II" error)
-      - the beta coefficient, the non-diversifiable risk, of an asset in
-        mathematical finance
-      - the sideslip angle of an airplane
-      - the first-order effects of variations in Coriolis force with latitude
-        in planetary dynamics
-      - a beta particle (e-)
-      - sound intensity
-      - velocity divided by the speed of light in special relativity
-      - the beta brain wave in brain or cognitive sciences
-      - ecliptic latitude in astrometry
-      - The ratio of plasma pressure to magnetic pressure in plasma physics
-      - β-reduction in lambda calculus
-
-Γγ (gamma)
-
-:   Γ represents:
-
-      - the reflection coefficient of a transmission or telecommunication line.
-      - the confinement factor of an optical mode in a waveguide
-      - the gamma function, a generalization of the factorial
-      - the upper incomplete gamma function
-      - the modular group, the group of fractional linear transformations
-      - the gamma distribution, a continuous probability distribution defined
-        using the gamma function
-      - second-order sensitivity to price in mathematical finance
-      - the Christoffel symbols of the second kind
-      - the neighbourhood of a vertex in a graph
-      - the stack alphabet in the formal definition of a pushdown automaton
-
-    γ represents:
-
-      - the partial safety factors applied to loads and materials in structural
-        engineering
-      - the specific weight of substances
-      - the lower incomplete gamma function
-      - the third angle in a triangle, opposite the side C
-      - the Euler–Mascheroni constant in mathematics
-      - gamma rays and the photon
-      - the heat capacity ratio in thermodynamics
-      - the Lorentz factor in special relativity
-      - the damping constant (kg/s)
-
-Δδ (delta)
-
-:   Δ represents:
-
-      - a finite difference
-      - a difference operator
-      - a symmetric difference
-      - the Laplace operator
-      - the angle that subtends the arc of a circular curve in surveying
-      - the determinant of an inverse matrix
-      - the maximum degree of any vertex in a given graph
-      - the difference or change in a given variable, e.g. ∆v means a
-        difference or change in velocity
-      - sensitivity to price in mathematical finance
-      - distance to Earth, measured in astronomical units
-      - heat in a chemical formula
-      - the discriminant in the quadratic formula which determines the nature
-        of the roots
-      - the degrees of freedom in a non-pooled statistical hypothesis test of
-        two population means
-
-    δ represents:
-
-      - percent error
-      - a variation in the calculus of variations
-      - the Kronecker delta function
-      - the Feigenbaum constant
-      - the force of interest in mathematical finance
-      - the Dirac delta function
-      - the receptor which enkephalins have the highest affinity for in
-        pharmacology
-      - the Skorokhod integral in Malliavin calculus, a subfield of stochastic
-        analysis
-      - the minimum degree of any vertex in a given graph
-      - a partial charge. δ− represents a negative partial charge, and δ+
-        represents a positive partial charge chemistry (See also: Solvation)
-      - the Chemical shift of an atomic nucleus
-      - declination in astrometry
-      - the Turner function in computational material science
-      - depreciation in macroeconomics
-      - noncentrality measure in statistics
-
-Εε (epsilon)
-
-:   ε represents:
-
-      - a small positive quantity; see limit
-      - a random error in regression analysis
-      - the absolute value of an error
-      - in set theory, the limit ordinal of the sequence
-        \omega,\omega^{\omega},\omega^{\omega^{\omega}},\dots
-      - in computer science, the empty string
-      - the Levi-Civita symbol
-      - in electromagnetics, dielectric permittivity
-      - emissivity
-      - strain in continuum mechanics
-      - permittivity
-      - the Earth's axial tilt in astrometry
-      - elasticity in economics
-      - expected value in probability theory and statistics
-      - electromotive force
-      - in chemistry, the molar extinction coefficient of a chromophore.
-      - set membership symbol ∈ is based on ε
-
-Ϝϝ (digamma)
-
-:   Ϝ is sometimes used to represent the digamma function, though the Latin
-letter F (which is nearly identical) is usually substituted.
-
-Ζζ (zeta)
-
-:   ζ represents:
-
-      - the Riemann zeta function and other zeta functions in mathematics
-      - the coefficient of viscous friction in polymer dynamics
-      - the damping ratio
-      - relative vertical vorticity in fluid dynamics
-
-Ηη (eta)
-
-:   Η represents:
-
-      - the Eta function of Ludwig Boltzmann's H-theorem ("Eta" theorem), in
-        statistical mechanics
-
-    η represents:
-
-      - the intrinsic impedance of medium (usually free space)
-      - the partial regression coefficient in statistics
-      - elasticities in economics
-      - the absolute vertical vorticity (relative vertical vorticity + Coriolis
-        effect) in fluid dynamics
-      - an index of refraction
-      - a type of meson
-      - viscosity
-      - efficiency (statistics)
-      - efficiency (physics and engineering)
-      - the Minkowski metric tensor in relativity
-      - noise in communication system models
-
-Θθ (theta)
-
-:   Θ represents:
-
-      - an asymptotically tight bound related to big O notation.
-      - sensitivity to the passage of time in mathematical finance
-      - Θ (set theory), a certain ordinal number
-
-    θ represents:
-
-      - a plane angle in geometry
-      - the angle to the x axis in the xy-plane in spherical or cylindrical
-        coordinates (mathematics)
-      - the angle to the z axis in spherical coordinates (physics)
-      - potential temperature in thermodynamics
-      - the mean time between failure in reliability engineering
-      - soil water contents in soil science
-      - Debye temperature
-      - In mathematical statistics, represents an unknown parameter
-      - theta functions
-      - sometimes also ϑ ("script theta"), cursive form of theta, often used in
-        handwriting
-      - the first Chebyshev function in number theory
-
-Ιι (iota)
-
-:   ι represents:
-
-      - the index generator function in APL (in the form ⍳)
-      - the orbital inclination with respect to the line of sight, used when
-        describing gravitational wave sources.
-
-Κκ (kappa)
-
-:   Κ represents:
-
-      - the Kappa number
-      - κ represents:
-      - the Von Kármán constant
-      - the kappa curve
-      - the condition number of a matrix in numerical analysis
-      - the connectivity of a graph in graph theory
-      - curvature
-      - dielectric constant (\varepsilon / \varepsilon_0)
-      - thermal conductivity (usually a lowercase Latin k)
-      - thermal diffusivity
-      - a spring constant (usually a lowercase Latin k)
-      - the heat capacity ratio in thermodynamics (usually γ)
-      - the receptor which dynorphins have the highest affinity for in
-        pharmacology
-
-Λ λ (lambda)
-
-:   Λ represents:
-
-      - the von Mangoldt function in number theory
-      - the set of logical axioms in the axiomatic method of logical deduction
-        in first-order logic
-      - the cosmological constant
-      - a type of baryon
-      - a diagonal matrix of eigenvalues in linear algebra
-      - the permeance of a material in electromagnetism
-
-    λ represents:
-
-      - one wavelength of electromagnetic radiation
-      - the decay constant in radioactivity
-      - function expressions in the lambda calculus
-      - a general eigenvalue in linear algebra
-      - the expected number of occurrences in a Poisson distribution in
-        probability
-      - the arrival rate in queueing theory
-      - the average lifetime or rate parameter in an exponential distribution
-        (commonly used across statistics, physics, and engineering)
-      - the failure rate in reliability engineering
-      - the mean or average value (probability and statistics)
-      - the latent heat of fusion
-      - the lagrange multiplier in the mathematical optimization method, known
-        as the shadow price in economics
-      - the Lebesgue measure denotes the volume or measure of a Lebesgue
-        measurable set
-      - longitude in geodesy
-      - linear density
-      - ecliptic longitude in astrometry
-      - the Liouville function in number theory
-      - the Carmichael function in number theory
-      - a unit of measure of volume equal to one microlitre (1 μL) or one cubic
-        millimetre (1 mm³)
-      - the empty string in formal grammar
-
-Μμ (mu)
-
-:   μ represents:
-
-      - the Möbius function in number theory
-      - the ring representation of a representation module
-      - the population mean or expected value in probability and statistics
-      - a measure in measure theory
-      - micro-, an SI prefix denoting 10−6 (one millionth)
-      - the coefficient of friction in physics
-      - the service rate in queueing theory
-      - the dynamic viscosity in physics
-      - magnetic permeability in electromagnetics
-      - a muon
-      - reduced mass
-      - chemical potential in condensed matter physics
-      - the ion mobility in plasma physics
-
-Νν (nu)
-
-:   ν represents:
-
-      - frequency in physics in hertz (Hz)
-      - Degrees of freedom in statistics
-      - Poisson's ratio in material science
-      - a neutrino
-      - kinematic viscosity of liquids
-      - stoichiometric coefficient in chemistry
-      - dimension of nullspace in mathematics
-
-Ξ ξ (xi)
-
-:   Ξ represents:
-
-      - the original Riemann Xi function, i.e. Riemann's lower case ξ, as
-        denoted by Edmund Landau and currently
-      - the grand canonical ensemble found in statistical mechanics
-      - a type of baryon
-      - ξ represents:
-      - the original Riemann Xi function
-      - the modified definition of Riemann xi function, as denoted by Edmund
-        Landau and currently
-      - a random variable
-      - the extent of a chemical reaction
-      - coherence length
-      - the damping ratio
-      - universal set
-      - Οο (omicron)[edit]
-
-    Ο represents:
-
-      - big O notation (may be represented by an uppercase Latin O)
-      - o represents:
-      - small o notation (may be represented by a lowercase Latin o)
-
-Π π (pi)
-
-:   Π represents:
-
-      - the product operator in mathematics
-      - a plane
-      - osmotic pressure
-      - π represents:
-      - Archimedes' constant, the ratio of a circle's circumference to its
-        diameter
-      - the prime-counting function
-      - profit in microeconomics and game theory
-      - inflation in macroeconomics, expressed as a constant with respect to
-        time
-      - the state distribution of a Markov chain
-      - a type of covalent bond in chemistry (pi bond)
-      - a pion (pi meson) in particle physics
-      - in statistics, the population proportion of success
-      - in electronics, a special type of small signal model is referred to as
-        a hybrid-pi model
-      - in relational algebra for databases, represents project
-
-    ϖ (a graphic variant, see pomega) represents:
-
-      - angular frequency of a wave, in fluid dynamics (angular frequency is
-        usually represented by \omega but this may be confused with vorticity
-        in a fluid dynamics context)
-      - longitude of pericenter, in celestial mechanics
-      - comoving distance, in cosmology
-
-Ρρ (rho)
-
-:   Ρ represents:
-
-      - one of the Gegenbauer functions in analytic number theory.
-
-    ρ represents:
-
-      - one of the Gegenbauer functions in analytic number theory.
-      - the Dickman-de Bruijn function
-      - the radius in a polar, cylindrical, or spherical coordinate system
-      - the correlation coefficient in statistics
-      - the sensitivity to interest rate in mathematical finance
-      - density (mass or charge per unit volume)
-      - resistivity
-      - the shape and reshape operators in APL (in the form ⍴)
-      - the utilization in queueing theory
-      - the rank of a matrix
-
-Σσ (sigma)
-
-:   Σ represents:
-
-      - the summation operator
-      - the covariance matrix
-      - the set of terminal symbols in a formal grammar
-
-    σ represents:
-
-      - Stefan–Boltzmann constant in blackbody radiation
-      - the divisor function in number theory
-      - the real part of the complex variable s = σ + i t in analytic number
-        theory
-      - the sign of a permutation in the theory of finite groups
-      - the population standard deviation, a measure of spread in probability
-        and statistics
-      - a type of covalent bond in chemistry (sigma bond)
-      - the selection operator in relational algebra
-      - stress in mechanics
-      - electrical conductivity
-      - area density
-      - nuclear cross section
-      - uncertainty
-      - utilization in operations management
-      - surface charge density for microparticles
-
-Ττ (tau)
-
-:   τ (lower-case) represents:
-
-      - an interval of time
-      - a mean lifetime
-      - torque, the rotational force in mechanics
-      - the elementary tau lepton in particle physics
-      - the lifetime of a spontaneous emission process
-      - the time constant of any device, such as an RC circuit
-      - proper time in relativity
-      - Kendall tau rank correlation coefficient, a measure of rank correlation
-        in statistics
-      - the golden ratio 1.618... (although φ (phi) is more common)
-      - Ramanujan's tau function in number theory
-      - in astronomy, a measure of opacity, or how much sunlight cannot
-        penetrate the atmosphere
-      - the intertwining operator in representation theory
-      - the tau in biochemistry, a protein associated to microtubules
-      - Shear stress in continuum mechanics
-      - the number of divisors of highly composite numbers (sequence A000005 in
-        OEIS)
-      - the prefix of many stars, via the Bayer stellar designation system
-      - an internal system step in transition systems
-      - a type variable in type theories, such as the simply typed lambda
-        calculus
-      - path tortuosity in reservoir engineering
-      - in Topology, a given topology
-      - a proposed name  for the mathematical constant of the ratio of a
-        circle's circumference to its radius, with value 2π (6.283...).
-
-Υυ (upsilon)
-
-:   Υ represents:
-
-      - an elementary particle
-      - υ represents:
-      - frequency in physics textbooks
-
-Φφ (phi)
-
-:   Φ represents:
-
-      - the work function in physics; the energy required by a photon to remove
-        an electron from the surface of a metal
-      - magnetic flux
-      - the cumulative distribution function of the normal distribution in
-        statistics
-      - phenyl functional group
-      - the reciprocal of the golden ratio (represented by φ, below), also
-        represented as 1/φ
-      - the value of the integration of information in a system (based on
-        Integrated Information Theory)
-      - note: a symbol for the empty set, \varnothing, resembles Φ but is not Φ
-
-    φ represents:
-
-      - the golden ratio 1.618... in mathematics, art, and architecture
-      - Euler's totient function in number theory
-      - a holomorphic map on an analytic space
-      - the argument of a complex number in mathematics
-      - the value of a plane angle in physics and mathematics
-      - the angle to the z axis in spherical coordinates (mathematics)
-      - the angle to the x axis in the xy-plane in spherical or cylindrical
-        coordinates (physics)
-      - latitude in geodesy
-      - a scalar field
-      - radiant flux
-      - electric potential
-      - the probability density function of the normal distribution in
-        statistics
-      - a feature of a syntactic node giving that node characteristics such as
-        gender, number and person in syntax
-      - the diameter of a vessel (engineering)
-
-Χχ (chi)
-
-:   χ represents:
-
-      - the chi distribution in statistics (χ^2 is the more frequently
-        encountered chi-squared distribution)
-      - the chromatic number of a graph in graph theory
-      - the Euler characteristic in algebraic topology
-      - electronegativity in the periodic table
-      - the Rabi frequency
-      - the spinor of a fundamental particle
-      - the Fourier transform of a linear response function
-      - a character in mathematics; especially a Dirichlet character in number
-        theory
-      - the Sigma vectors in the unscented transform used in the unscented
-        Kalman filter
-      - sometimes the mole fraction
-      - a characteristic or indicator function in mathematics
-
-Ψψ (psi)
-
-:   Ψ represents:
-
-      - water potential
-      - a quaternary combinator in combinatory logic
-
-    ψ represents:
-
-      - the wave function in the Schrödinger equation of quantum mechanics
-      - the stream function in fluid dynamics
-      - yaw angle in vehicle dynamics
-      - the angle between the x-axis and the tangent to the curve in the
-        intrinsic coordinates system
-      - the reciprocal Fibonacci constant
-      - the second Chebyshev function in number theory
-      - the polygamma function in mathematics
-
-Ω ω (omega)
-
-:   Ω represents:
-
-      - the Omega constant
-      - an asymptotic lower bound related to big O notation
-      - in probability theory and statistical mechanics, the set of possible
-        distinct system states
-      - the SI unit measure of electrical resistance, the ohm
-      - the rotation rate of an object, particularly a planet, in dynamics
-      - a solid angle
-      - a baryon
-      - the arithmetic function counting a number's prime factors
-      - the right ascension of the ascending node in celestial mechanics
-      - the density parameter in cosmology
-
-    ω represents:
-
-      - the first infinite ordinal
-      - the differentiability class (i.e. C^\omega) for functions that are
-        infinitely differentiable because they are complex analytic
-      - the set of natural numbers in set theory (although \mathbb{N} or N is
-        more common in other areas of mathematics)
-      - an asymptotically dominant quantity related to big O notation
-      - in probability theory, a possible outcome of an experiment
-      - angular velocity / radian frequency
-      - a complex cube root of unity — the other is ω² — (used to describe
-        various ways of calculating the discrete Fourier transform)
-      - vertical velocity in pressure-based coordinate systems (commonly used
-        in atmospheric dynamics)
-      - a meson
-      - the arithmetic function counting a number's distinct prime factors
-      - a differential form (esp. on an analytic space)
-      - the argument of periapsis in celestial mechanics
-      - the symbol ϖ, a graphic variant of π, is sometimes construed as omega
-        with a bar over it; see π
-
-Refs & See also
-
-:   * <https://en.wikipedia.org/wiki/Greek_alphabet>
-    * <https://en.wikipedia.org/wiki/Latin_alphabet>
-    * <http://www.greekgrammar.org>
-    * <http://www.skyandtelescope.com/astronomy-resources/stargazing-basics/the-greek-alphabet/>
-    * <https://en.wikipedia.org/wiki/Greek_letters_used_in_mathematics,_science,_and_engineering>
-    * <https://en.wikipedia.org/wiki/Mathematical_notation>
-    * <https://en.wikipedia.org/wiki/Notation_in_probability_and_statistics>
-    * <https://en.wikipedia.org/wiki/Latin_letters_used_in_mathematics>
-    * <https://en.wikipedia.org/wiki/List_of_logic_symbols>
+    | A a | a | /ˈeɪ/ |
+    | B b | bee | /ˈbiː/ |
+    | C c | cee | /ˈsiː/ |
+    | D d | dee | /ˈdiː/ |
+    | E e | e | /ˈiː/ |
+    | F f | ef | /ˈɛf/ |
+    | G g | gee | /ˈdʒiː/ |
+    | H h | aitch | /ˈeɪtʃ/ |
+    | - - | haitch | /ˈheɪtʃ/ |
+    | - - | hetch | /ˈhetʃ/ |
+    | I i | i | /ˈaɪ/ |
+    | J j | jay | /ˈdʒeɪ/ |
+    | - - | jy | /ˈdʒaɪ/ |
+    | K k | kay | /ˈkeɪ/ |
+    | L l | el or ell | /ˈɛl/, /ˈɛɫ/ |
+    | M m | em | /ˈɛm/ |
+    | N n | en | /ˈɛn/ |
+    | O o | o | /ˈəʊ/ |
+    | P p | pee | /ˈpiː/ |
+    | Q q | cue | /ˈkjuː/ |
+    | R r | ar | /ˈɑː/ |
+    | S s | ess | /ˈɛs/ |
+    | T t | tee | /ˈtiː/ |
+    | U u | u | /ˈjuː/ |
+    | V v | vee | /ˈviː/ |
+    | W w | double-u | /ˈdʌbəl.juː/ |
+    | X x | ex | /ˈɛks/ |
+    | Y y | wy or wye | /ˈwaɪ/ |
+    | Z z | zed | /ˈzɛd/ |
+    | - - | zee | /ˈziː/ |
+    | - - | izzard | /ˈɪzərd/ |
+
+    Greek Alphabet
+
+    | Letter | Name | In LaTeX | Transliteration | Pronunciation |
+    | :---: | :---: | :----: | :--------------: | :--------------: |
+    | A α | [alpha][alpha] | - \alpha | a | [AL-fuh][p-alpha] |
+    | B β | [beta][beta] | - \beta | b | [BAY-tuh, BEE-tuh][p-beta] |
+    | Γ γ | [gamma][gamma] | \Gamma \gamma | g | [GAM-uh][p-gamma] |
+    | Δ δ | [delta][delta] | \Delta \delta | d | [DELL-tuh][p-delta] |
+    | E ϵ ε | [epsilon][epsilon] | - \epsilon \varepsilon | e | [EP-suh-lon][p-epsilon] |
+    | F ϝ ϛ | [digamma][digamma] | - \digamma [~~stigma~~][stigma] | f | dee-GAM-uh ? |
+    | Z ζ | [zeta][zeta] | - \zeta | z | [ZAY-tuh][p-zeta] |
+    | H η | [eta][eta] | \eta | ē | [AY-tuh][p-eta] |
+    | Θ θ ϑ | [theta][theta] | \Theta \theta \vartheta | th | [THAY-tuh, THEE-tuh][p-theta] |
+    | Ι ι | [iota][iota] | - \iota | i | [eye-OH-tuh][p-iota] |
+    | K κ ϰ | [kappa][kappa] | - \kappa \varkappa | k | [CAY-uh][p-kappa] |
+    | Λ λ | [lambda][lambda] | \Lambda \lambda | l | [LAM-duh][p-lambda] |
+    | M μ | [mu][mu] | - \mu | m | [MYOO, MOO][p-mu] |
+    | N ν | [nu][nu] | - \nu | n | [NOO, NYOO][p-nu] |
+    | Ξ ξ | [xi][xi] | \Xi \xi | x | [ZIGH, SIGN, KSEE][p-xi] |
+    | Ο ο | [omicron][omicron] | -  \omicron | o | [AH-mih-cron, OH-mih-cron][p-omicron] |
+    | Π π ϖ | [pi][pi] | \Pi \pi \varpi | p | [PIE][p-pi] |
+    | Ρ ρ ϱ | [rho][rho] | - \rho \varrho | r / rh | [ROE][p-rho] |
+    | Σ σ ς | [sigma][sigma] | \Sigma \sigma \varsigma | s | [SIG-muh][p-sigma] |
+    | T τ | [tau][tau] | - \tau | t | [TOW, TAW][p-tau] |
+    | Υ υ | [upsilon][upsilon] | \Upsilon \upsilon | u | [UP-suh-lon, YOOP-suh-lon][p-upsilon] |
+    | Φ ϕ φ | [phi][phi] | \Phi \phi \varphi | phi | [FIE, FEE][p-phi] |
+    | Χ χ | [chi][chi] | \chi | ch | [KIGN, KEE][p-chi] |
+    | Ψ ψ | [psi][psi] | \Psi \psi | ps | [SIGH, PSIGH, PSEE][p-psi] |
+    | Ω ω | [omega][omega] | \Omega \omega | ō | [oh-MEG-uh, oh-MEE-guh, oh-MAY-guh][p-omega] |
+
+    Latin Alphabet, etc
+
+    Archaic(古体的) Latin alphabet
+
+    **Others**
+
+    Aleph: `/ˈɑːlɛf/`
+
+    ---
+
+    >   The 18th and 19th centuries saw the creation and
+    >   standardization of mathematical notation as used today.
+    >   Euler was responsible for many of the notations in use today:
+    >   the use of a, b, c for constants and x, y, z for unknowns,
+    >   e for the base of the natural logarithm, sigma (Σ) for summation,
+    >   i for the imaginary unit, and the functional notation f(x).
+    >   He also popularized the use of π for Archimedes constant
+    >   (due to William Jones' proposal for the use of π in this way
+    >   based on the earlier notation of William Oughtred).
+    >
+    >   Many fields of mathematics bear the imprint of their creators for notation:
+    >   the differential operator is due to Leibniz,
+    >   the cardinal infinities to Georg Cantor (in addition to the lemniscate (∞) of John Wallis),
+    >   the congruence symbol (≡) to Gauss, and so forth.
+
+    看的英文数学书越多，越发感觉英文教材的“好处”，符号都是不言自明，不用特别的提示就能明白要表达的意思。
+    先上一份整理自 Wikipedia 的“说明书”。
+
+    Αα (alpha)
+
+    :   α represents:
+
+          - the first angle in a triangle, opposite the side A
+          - one root of a quadratic equation, where β represents the other
+          - the ratio of collector current to emitter current in a bipolar junction
+            transistor (BJT) in electronics
+          - the statistical significance of a result
+          - the false positive rate in statistics ("Type I" error)
+          - the reciprocal of the sacrifice ratio
+          - the fine structure constant in physics
+          - the angle of attack of an aircraft
+          - an alpha particle (He2+)
+          - angular acceleration in physics
+          - the linear thermal expansion coefficient
+          - the thermal diffusivity
+          - the alpha carbon is the first carbon after the carbon that attaches to
+            a functional group in organic chemistry
+          - the α-carbon is the backbone carbon next to the carbonyl carbon in
+            amino acids
+          - right ascension in astrometry
+          - The brightest star in a constellation.
+          - Iron Ferrite and numerous phases within materials science.
+          - the return in excess of the compensation for the risk borne in
+            investment
+          - the α-conversion in lambda calculus
+
+    Ββ (beta)
+
+    :   Β represents the beta function
+
+        β represents:
+
+          - the thermodynamic beta, equal to (kBT)−1, where kB is Boltzmann's
+            constant and T is the absolute temperature.
+          - the second angle in a triangle, opposite the side B
+          - one root of a quadratic equation, where α represents the other
+          - the ratio of collector current to base current in a bipolar junction
+            transistor (BJT) in electronics (current gain)
+          - the false negative rate in statistics ("Type II" error)
+          - the beta coefficient, the non-diversifiable risk, of an asset in
+            mathematical finance
+          - the sideslip angle of an airplane
+          - the first-order effects of variations in Coriolis force with latitude
+            in planetary dynamics
+          - a beta particle (e-)
+          - sound intensity
+          - velocity divided by the speed of light in special relativity
+          - the beta brain wave in brain or cognitive sciences
+          - ecliptic latitude in astrometry
+          - The ratio of plasma pressure to magnetic pressure in plasma physics
+          - β-reduction in lambda calculus
+
+    Γγ (gamma)
+
+    :   Γ represents:
+
+          - the reflection coefficient of a transmission or telecommunication line.
+          - the confinement factor of an optical mode in a waveguide
+          - the gamma function, a generalization of the factorial
+          - the upper incomplete gamma function
+          - the modular group, the group of fractional linear transformations
+          - the gamma distribution, a continuous probability distribution defined
+            using the gamma function
+          - second-order sensitivity to price in mathematical finance
+          - the Christoffel symbols of the second kind
+          - the neighbourhood of a vertex in a graph
+          - the stack alphabet in the formal definition of a pushdown automaton
+
+        γ represents:
+
+          - the partial safety factors applied to loads and materials in structural
+            engineering
+          - the specific weight of substances
+          - the lower incomplete gamma function
+          - the third angle in a triangle, opposite the side C
+          - the Euler–Mascheroni constant in mathematics
+          - gamma rays and the photon
+          - the heat capacity ratio in thermodynamics
+          - the Lorentz factor in special relativity
+          - the damping constant (kg/s)
+
+    Δδ (delta)
+
+    :   Δ represents:
+
+          - a finite difference
+          - a difference operator
+          - a symmetric difference
+          - the Laplace operator
+          - the angle that subtends the arc of a circular curve in surveying
+          - the determinant of an inverse matrix
+          - the maximum degree of any vertex in a given graph
+          - the difference or change in a given variable, e.g. ∆v means a
+            difference or change in velocity
+          - sensitivity to price in mathematical finance
+          - distance to Earth, measured in astronomical units
+          - heat in a chemical formula
+          - the discriminant in the quadratic formula which determines the nature
+            of the roots
+          - the degrees of freedom in a non-pooled statistical hypothesis test of
+            two population means
+
+        δ represents:
+
+          - percent error
+          - a variation in the calculus of variations
+          - the Kronecker delta function
+          - the Feigenbaum constant
+          - the force of interest in mathematical finance
+          - the Dirac delta function
+          - the receptor which enkephalins have the highest affinity for in
+            pharmacology
+          - the Skorokhod integral in Malliavin calculus, a subfield of stochastic
+            analysis
+          - the minimum degree of any vertex in a given graph
+          - a partial charge. δ− represents a negative partial charge, and δ+
+            represents a positive partial charge chemistry (See also: Solvation)
+          - the Chemical shift of an atomic nucleus
+          - declination in astrometry
+          - the Turner function in computational material science
+          - depreciation in macroeconomics
+          - noncentrality measure in statistics
+
+    Εε (epsilon)
+
+    :   ε represents:
+
+          - a small positive quantity; see limit
+          - a random error in regression analysis
+          - the absolute value of an error
+          - in set theory, the limit ordinal of the sequence
+            \omega,\omega^{\omega},\omega^{\omega^{\omega}},\dots
+          - in computer science, the empty string
+          - the Levi-Civita symbol
+          - in electromagnetics, dielectric permittivity
+          - emissivity
+          - strain in continuum mechanics
+          - permittivity
+          - the Earth's axial tilt in astrometry
+          - elasticity in economics
+          - expected value in probability theory and statistics
+          - electromotive force
+          - in chemistry, the molar extinction coefficient of a chromophore.
+          - set membership symbol ∈ is based on ε
+
+    Ϝϝ (digamma)
+
+    :   Ϝ is sometimes used to represent the digamma function, though the Latin
+    letter F (which is nearly identical) is usually substituted.
+
+    Ζζ (zeta)
+
+    :   ζ represents:
+
+          - the Riemann zeta function and other zeta functions in mathematics
+          - the coefficient of viscous friction in polymer dynamics
+          - the damping ratio
+          - relative vertical vorticity in fluid dynamics
+
+    Ηη (eta)
+
+    :   Η represents:
+
+          - the Eta function of Ludwig Boltzmann's H-theorem ("Eta" theorem), in
+            statistical mechanics
+
+        η represents:
+
+          - the intrinsic impedance of medium (usually free space)
+          - the partial regression coefficient in statistics
+          - elasticities in economics
+          - the absolute vertical vorticity (relative vertical vorticity + Coriolis
+            effect) in fluid dynamics
+          - an index of refraction
+          - a type of meson
+          - viscosity
+          - efficiency (statistics)
+          - efficiency (physics and engineering)
+          - the Minkowski metric tensor in relativity
+          - noise in communication system models
+
+    Θθ (theta)
+
+    :   Θ represents:
+
+          - an asymptotically tight bound related to big O notation.
+          - sensitivity to the passage of time in mathematical finance
+          - Θ (set theory), a certain ordinal number
+
+        θ represents:
+
+          - a plane angle in geometry
+          - the angle to the x axis in the xy-plane in spherical or cylindrical
+            coordinates (mathematics)
+          - the angle to the z axis in spherical coordinates (physics)
+          - potential temperature in thermodynamics
+          - the mean time between failure in reliability engineering
+          - soil water contents in soil science
+          - Debye temperature
+          - In mathematical statistics, represents an unknown parameter
+          - theta functions
+          - sometimes also ϑ ("script theta"), cursive form of theta, often used in
+            handwriting
+          - the first Chebyshev function in number theory
+
+    Ιι (iota)
+
+    :   ι represents:
+
+          - the index generator function in APL (in the form ⍳)
+          - the orbital inclination with respect to the line of sight, used when
+            describing gravitational wave sources.
+
+    Κκ (kappa)
+
+    :   Κ represents:
+
+          - the Kappa number
+          - κ represents:
+          - the Von Kármán constant
+          - the kappa curve
+          - the condition number of a matrix in numerical analysis
+          - the connectivity of a graph in graph theory
+          - curvature
+          - dielectric constant (\varepsilon / \varepsilon_0)
+          - thermal conductivity (usually a lowercase Latin k)
+          - thermal diffusivity
+          - a spring constant (usually a lowercase Latin k)
+          - the heat capacity ratio in thermodynamics (usually γ)
+          - the receptor which dynorphins have the highest affinity for in
+            pharmacology
+
+    Λ λ (lambda)
+
+    :   Λ represents:
+
+          - the von Mangoldt function in number theory
+          - the set of logical axioms in the axiomatic method of logical deduction
+            in first-order logic
+          - the cosmological constant
+          - a type of baryon
+          - a diagonal matrix of eigenvalues in linear algebra
+          - the permeance of a material in electromagnetism
+
+        λ represents:
+
+          - one wavelength of electromagnetic radiation
+          - the decay constant in radioactivity
+          - function expressions in the lambda calculus
+          - a general eigenvalue in linear algebra
+          - the expected number of occurrences in a Poisson distribution in
+            probability
+          - the arrival rate in queueing theory
+          - the average lifetime or rate parameter in an exponential distribution
+            (commonly used across statistics, physics, and engineering)
+          - the failure rate in reliability engineering
+          - the mean or average value (probability and statistics)
+          - the latent heat of fusion
+          - the lagrange multiplier in the mathematical optimization method, known
+            as the shadow price in economics
+          - the Lebesgue measure denotes the volume or measure of a Lebesgue
+            measurable set
+          - longitude in geodesy
+          - linear density
+          - ecliptic longitude in astrometry
+          - the Liouville function in number theory
+          - the Carmichael function in number theory
+          - a unit of measure of volume equal to one microlitre (1 μL) or one cubic
+            millimetre (1 mm³)
+          - the empty string in formal grammar
+
+    Μμ (mu)
+
+    :   μ represents:
+
+          - the Möbius function in number theory
+          - the ring representation of a representation module
+          - the population mean or expected value in probability and statistics
+          - a measure in measure theory
+          - micro-, an SI prefix denoting 10−6 (one millionth)
+          - the coefficient of friction in physics
+          - the service rate in queueing theory
+          - the dynamic viscosity in physics
+          - magnetic permeability in electromagnetics
+          - a muon
+          - reduced mass
+          - chemical potential in condensed matter physics
+          - the ion mobility in plasma physics
+
+    Νν (nu)
+
+    :   ν represents:
+
+          - frequency in physics in hertz (Hz)
+          - Degrees of freedom in statistics
+          - Poisson's ratio in material science
+          - a neutrino
+          - kinematic viscosity of liquids
+          - stoichiometric coefficient in chemistry
+          - dimension of nullspace in mathematics
+
+    Ξ ξ (xi)
+
+    :   Ξ represents:
+
+          - the original Riemann Xi function, i.e. Riemann's lower case ξ, as
+            denoted by Edmund Landau and currently
+          - the grand canonical ensemble found in statistical mechanics
+          - a type of baryon
+          - ξ represents:
+          - the original Riemann Xi function
+          - the modified definition of Riemann xi function, as denoted by Edmund
+            Landau and currently
+          - a random variable
+          - the extent of a chemical reaction
+          - coherence length
+          - the damping ratio
+          - universal set
+          - Οο (omicron)[edit]
+
+        Ο represents:
+
+          - big O notation (may be represented by an uppercase Latin O)
+          - o represents:
+          - small o notation (may be represented by a lowercase Latin o)
+
+    Π π (pi)
+
+    :   Π represents:
+
+          - the product operator in mathematics
+          - a plane
+          - osmotic pressure
+          - π represents:
+          - Archimedes' constant, the ratio of a circle's circumference to its
+            diameter
+          - the prime-counting function
+          - profit in microeconomics and game theory
+          - inflation in macroeconomics, expressed as a constant with respect to
+            time
+          - the state distribution of a Markov chain
+          - a type of covalent bond in chemistry (pi bond)
+          - a pion (pi meson) in particle physics
+          - in statistics, the population proportion of success
+          - in electronics, a special type of small signal model is referred to as
+            a hybrid-pi model
+          - in relational algebra for databases, represents project
+
+        ϖ (a graphic variant, see pomega) represents:
+
+          - angular frequency of a wave, in fluid dynamics (angular frequency is
+            usually represented by \omega but this may be confused with vorticity
+            in a fluid dynamics context)
+          - longitude of pericenter, in celestial mechanics
+          - comoving distance, in cosmology
+
+    Ρρ (rho)
+
+    :   Ρ represents:
+
+          - one of the Gegenbauer functions in analytic number theory.
+
+        ρ represents:
+
+          - one of the Gegenbauer functions in analytic number theory.
+          - the Dickman-de Bruijn function
+          - the radius in a polar, cylindrical, or spherical coordinate system
+          - the correlation coefficient in statistics
+          - the sensitivity to interest rate in mathematical finance
+          - density (mass or charge per unit volume)
+          - resistivity
+          - the shape and reshape operators in APL (in the form ⍴)
+          - the utilization in queueing theory
+          - the rank of a matrix
+
+    Σσ (sigma)
+
+    :   Σ represents:
+
+          - the summation operator
+          - the covariance matrix
+          - the set of terminal symbols in a formal grammar
+
+        σ represents:
+
+          - Stefan–Boltzmann constant in blackbody radiation
+          - the divisor function in number theory
+          - the real part of the complex variable s = σ + i t in analytic number
+            theory
+          - the sign of a permutation in the theory of finite groups
+          - the population standard deviation, a measure of spread in probability
+            and statistics
+          - a type of covalent bond in chemistry (sigma bond)
+          - the selection operator in relational algebra
+          - stress in mechanics
+          - electrical conductivity
+          - area density
+          - nuclear cross section
+          - uncertainty
+          - utilization in operations management
+          - surface charge density for microparticles
+
+    Ττ (tau)
+
+    :   τ (lower-case) represents:
+
+          - an interval of time
+          - a mean lifetime
+          - torque, the rotational force in mechanics
+          - the elementary tau lepton in particle physics
+          - the lifetime of a spontaneous emission process
+          - the time constant of any device, such as an RC circuit
+          - proper time in relativity
+          - Kendall tau rank correlation coefficient, a measure of rank correlation
+            in statistics
+          - the golden ratio 1.618... (although φ (phi) is more common)
+          - Ramanujan's tau function in number theory
+          - in astronomy, a measure of opacity, or how much sunlight cannot
+            penetrate the atmosphere
+          - the intertwining operator in representation theory
+          - the tau in biochemistry, a protein associated to microtubules
+          - Shear stress in continuum mechanics
+          - the number of divisors of highly composite numbers (sequence A000005 in
+            OEIS)
+          - the prefix of many stars, via the Bayer stellar designation system
+          - an internal system step in transition systems
+          - a type variable in type theories, such as the simply typed lambda
+            calculus
+          - path tortuosity in reservoir engineering
+          - in Topology, a given topology
+          - a proposed name  for the mathematical constant of the ratio of a
+            circle's circumference to its radius, with value 2π (6.283...).
+
+    Υυ (upsilon)
+
+    :   Υ represents:
+
+          - an elementary particle
+          - υ represents:
+          - frequency in physics textbooks
+
+    Φφ (phi)
+
+    :   Φ represents:
+
+          - the work function in physics; the energy required by a photon to remove
+            an electron from the surface of a metal
+          - magnetic flux
+          - the cumulative distribution function of the normal distribution in
+            statistics
+          - phenyl functional group
+          - the reciprocal of the golden ratio (represented by φ, below), also
+            represented as 1/φ
+          - the value of the integration of information in a system (based on
+            Integrated Information Theory)
+          - note: a symbol for the empty set, \varnothing, resembles Φ but is not Φ
+
+        φ represents:
+
+          - the golden ratio 1.618... in mathematics, art, and architecture
+          - Euler's totient function in number theory
+          - a holomorphic map on an analytic space
+          - the argument of a complex number in mathematics
+          - the value of a plane angle in physics and mathematics
+          - the angle to the z axis in spherical coordinates (mathematics)
+          - the angle to the x axis in the xy-plane in spherical or cylindrical
+            coordinates (physics)
+          - latitude in geodesy
+          - a scalar field
+          - radiant flux
+          - electric potential
+          - the probability density function of the normal distribution in
+            statistics
+          - a feature of a syntactic node giving that node characteristics such as
+            gender, number and person in syntax
+          - the diameter of a vessel (engineering)
+
+    Χχ (chi)
+
+    :   χ represents:
+
+          - the chi distribution in statistics (χ^2 is the more frequently
+            encountered chi-squared distribution)
+          - the chromatic number of a graph in graph theory
+          - the Euler characteristic in algebraic topology
+          - electronegativity in the periodic table
+          - the Rabi frequency
+          - the spinor of a fundamental particle
+          - the Fourier transform of a linear response function
+          - a character in mathematics; especially a Dirichlet character in number
+            theory
+          - the Sigma vectors in the unscented transform used in the unscented
+            Kalman filter
+          - sometimes the mole fraction
+          - a characteristic or indicator function in mathematics
+
+    Ψψ (psi)
+
+    :   Ψ represents:
+
+          - water potential
+          - a quaternary combinator in combinatory logic
+
+        ψ represents:
+
+          - the wave function in the Schrödinger equation of quantum mechanics
+          - the stream function in fluid dynamics
+          - yaw angle in vehicle dynamics
+          - the angle between the x-axis and the tangent to the curve in the
+            intrinsic coordinates system
+          - the reciprocal Fibonacci constant
+          - the second Chebyshev function in number theory
+          - the polygamma function in mathematics
+
+    Ω ω (omega)
+
+    :   Ω represents:
+
+          - the Omega constant
+          - an asymptotic lower bound related to big O notation
+          - in probability theory and statistical mechanics, the set of possible
+            distinct system states
+          - the SI unit measure of electrical resistance, the ohm
+          - the rotation rate of an object, particularly a planet, in dynamics
+          - a solid angle
+          - a baryon
+          - the arithmetic function counting a number's prime factors
+          - the right ascension of the ascending node in celestial mechanics
+          - the density parameter in cosmology
+
+        ω represents:
+
+          - the first infinite ordinal
+          - the differentiability class (i.e. C^\omega) for functions that are
+            infinitely differentiable because they are complex analytic
+          - the set of natural numbers in set theory (although \mathbb{N} or N is
+            more common in other areas of mathematics)
+          - an asymptotically dominant quantity related to big O notation
+          - in probability theory, a possible outcome of an experiment
+          - angular velocity / radian frequency
+          - a complex cube root of unity — the other is ω² — (used to describe
+            various ways of calculating the discrete Fourier transform)
+          - vertical velocity in pressure-based coordinate systems (commonly used
+            in atmospheric dynamics)
+          - a meson
+          - the arithmetic function counting a number's distinct prime factors
+          - a differential form (esp. on an analytic space)
+          - the argument of periapsis in celestial mechanics
+          - the symbol ϖ, a graphic variant of π, is sometimes construed as omega
+            with a bar over it; see π
+
+    ---
+
+    * 政无安，九月常常杀一万
+    * [Euler's Formula](https://en.wikipedia.org/wiki/Euler_characteristic#Planar_graphs): `#Loop - #Edge + #Node = 0`
+
+    矩阵的 Rank 是其基底（Group）的不变量，决定了
+    能存储的信息量。如果 Rank = 0，意思是不能存储信息。
+    如果因为 Rank = 0，而导致信息丢失，那就是 Unknown unknown。
+
+    Det 则是线性变换中 Simplex 对应的 Signed Volume，在变幻中其实是一个置换群。
+    Det 是 Grand Metric 下的不变量。
+    如果 Det 不为 0，信息可以完全恢复。但是如果 Det = 0，信息将（可能）会丢失，
+    多次变换后可能信息将消灭。
+
+    向量则是在 Base 下的衡量。如果向量为 0，即 “我知道我不知道”。
+
+    群，是 Metric 的基础。
+
+    refs and see also
+
+      - <https://en.wikipedia.org/wiki/Greek_alphabet>
+      - <https://en.wikipedia.org/wiki/Latin_alphabet>
+      - <http://www.greekgrammar.org>
+      - <http://www.skyandtelescope.com/astronomy-resources/stargazing-basics/the-greek-alphabet/>
+      - <https://en.wikipedia.org/wiki/Greek_letters_used_in_mathematics,_science,_and_engineering>
+      - <https://en.wikipedia.org/wiki/Mathematical_notation>
+      - <https://en.wikipedia.org/wiki/Notation_in_probability_and_statistics>
+      - <https://en.wikipedia.org/wiki/Latin_letters_used_in_mathematics>
+      - <https://en.wikipedia.org/wiki/List_of_logic_symbols>
 
 [alpha]: http://en.wikipedia.org/wiki/Alpha
 [beta]: http://en.wikipedia.org/wiki/Beta
@@ -22629,24 +22852,6 @@ Refs & See also
 [p-psi]: http://gnat.qiniudn.com/%40%2Faudio%2Fgreek-alphabet%2Fgreek_psi.mp3
 [p-omega]: http://gnat.qiniudn.com/%40%2Faudio%2Fgreek-alphabet%2Fgreek_omega.mp3
 [Aleph]: http://en.wikipedia.org/wiki/Aleph
-
----
-
-* 政无安，九月常常杀一万
-* [Euler's Formula](https://en.wikipedia.org/wiki/Euler_characteristic#Planar_graphs): `#Loop - #Edge + #Node = 0`
-
-矩阵的 Rank 是其基底（Group）的不变量，决定了
-能存储的信息量。如果 Rank = 0，意思是不能存储信息。
-如果因为 Rank = 0，而导致信息丢失，那就是 Unknown unknown。
-
-Det 则是线性变换中 Simplex 对应的 Signed Volume，在变幻中其实是一个置换群。
-Det 是 Grand Metric 下的不变量。
-如果 Det 不为 0，信息可以完全恢复。但是如果 Det = 0，信息将（可能）会丢失，
-多次变换后可能信息将消灭。
-
-向量则是在 Base 下的衡量。如果向量为 0，即 “我知道我不知道”。
-
-群，是 Metric 的基础。
 
 ---
 
@@ -28518,15 +28723,354 @@ Disallow:
 
 [网络科学导论](http://zhiyuan.sjtu.edu.cn/Course/netsci.htm)
 
+:   Network Science: An Introduction
+
+    作者:
+
+      - 汪小帆 (Wang Xiaofan, 上海交通大学)
+      - 李  翔 (Li Xiang, 复旦大学)
+      - 陈关荣 (Chen Guanrong, 香港城市大学)
+
+    出版社:
+
+      - 高等教育出版社 (Higher Education Press)
+
+    简介:
+
+    对各种复杂网络的定量与定性特征的科学理解已成为网络时代科学研究中一个极其重
+    要的挑战性课题，网络科学就是一门正在兴起的面对这一挑战的交叉性学科。本书致
+    力于系统地介绍网络科学的基本概念、思想和方法，使得具有高等数学基础的读者都
+    能够看懂，并具备把网络科学方法用于实际网络分析的能力。为此，本书没有过多地
+    陷入数学和物理推导，而是更为关注网络科学的思维习惯和研究方式。本书在概要介
+    绍了网络科学的背景和研究意义之后，分为四个部分详细介绍了网络基本概念、网络
+    拓扑性质、网络拓扑模型和网络动力学。
+    本书适合作为研究生和高年级本科生的网络科学教材，也可供自然科学、工程技术科学和社会科学领域的研究人员与学生参考。
+
 [王友来：《我在美国坐牢——美国联邦监狱揭密》 | 海外文摘 - Bay Area Chinese--灣區華人 - Powered by PHPWind](http://www.bachinese.com/forum/simple/?t20389.html)
+
+:   晚饭在图书馆借书，发现了令我奇怪的事情。金三角坤沙贩毒集团的贩毒分子赵福生
+    （他是坤沙的侄子）也在图书馆借了《毛泽东著作选读》甲种本上、下集两本。我惊
+    诧不已，我讲，毛泽东的著作在中国现在很少人读它了，你们怎么还在读这个东西？
+    赵回答说，他们的组织（他们不说贩毒集团，而称“我们的组织”，金三角的毒贩都这
+    么称呼）当年都是按毛泽东的思想和理论组织起来的，屡试不爽，很管用的。当年他
+    们在金三角，一般人很难看到毛的著作，只是在高层才有那么一两本，供高层领导阅
+    读，他当时是没有资格读的。现在到美国以后，才可能有机会很好地读一下。他说，
+    根据当时高层领导讲，毛的著作很好，很有用，在如果成立、壮大组织，如何打仗是
+    很管用的。他的话立即得到了香港黑社会大圈帮老大甘某的赞同。他说，是的，他以
+    前的一个手下告诉他，毛的理论很有用，他们借鉴了一条 “枪杆子里面出政权”，很好，
+    必须要有自己的武装，于是他们组织就出资购买了很多枝枪，还有香港黑社会的许多
+    组织，都是按毛的理论搞起来的，毛泽东是他们的祖宗。我笑他们，我讲，毛泽东是
+    革命领袖，才成就了大业，你们虽然也用毛的理论武装，但你们这帮人如果敢在毛的
+    地盘上闹事，毛一定会把你们全部收拾掉的。他们说，是的，毛的革命是有政治纲领，
+    所以，毛成功了，就是领袖，我们的纲领就是钱，一切为了钱，所以他们失败了，被
+    抓坐牢，成了囚犯。
+
+    两个小时讲完，师姐提议，大家唱一首歌，台下一福州人提议说，大家唱《东方红》
+    好不好？大家齐声响应，“好”。长老和师姐面露难色，但也不好说什么。我知道，师
+    姐她的本意是想让大家唱上一次教的佛学的歌。于是在一人叫起下，三十多人齐声唱
+    起了“东方红，太阳升，中国出了个毛泽东______”。老实说，这首歌现在在中国已很
+    少有人、甚至没有人唱了。没想到，在美帝国主义的联邦监狱，被一伙囚犯唱起，也
+    可以说，是一个很大的讽刺。
+
+    带着这样的疑问，我专门问了几个屡次入室抢劫的人，综合数个人的意见，他们是这
+    样的观点：
+
+    -   语言问题。你要抢别人，总要让被抢着明白你要干什么，那些抢劫者绝大多数文
+        化程度很低，连 26 个英文字母都讲不全，让他们用英语去抢劫，真太难为他们了，
+        老外根本听不懂，而自己的同胞则不存在语言障碍；
+    -   老外平时几乎不带现金，消费时总是用各种卡，你抢来什么用也没有，而且老外
+        喜欢超前消费，下个月的钱还没到帐，这个月先用，把它预先消费了，谈不上有
+        余钱在身边，而华人，多数不用卡消费，喜欢现金交易，平时身上总带有现金，
+        喜欢存钱，有多少钱办多少事，超前消费的很少，所以，总有钱带在身边或存放
+        于家中；
+    -   观点不一样。老外一遇抢劫，不管有无损失多少钱财，总是去报案，犯罪分子被
+        抓住审判时，老外经常去当证人作证。而华人，一般自己被抢不多或没有物质损
+        失时，一般不会去报案，即使报案，当抢劫者被审时，也不愿出庭当证人，一是
+        怕浪费时间，影响打工收入，二是怕当证人被报复。由于上述因素的存在就形成
+        了老乡抢老乡、华人抢华人。还有几个事例可以说明：曾有 2 名福州人，抢了一
+        名意大利黑手党人的钱，后被黑手党抓去 2 名福州人，一个被推进巨大的绞肉机，
+        另一个人当场目睹后方了回去，让他报个信，以后谁敢对意大利人行抢，这就是
+        下场。此例在福州人中流传和影响甚广，故华人无人去抢意大利人。韩国人、印
+        度人这些少数族裔人一般群聚而居，很团结，一人有难八家援助，华人也不敢动
+        他们。还有那些黑人，就更差劲儿，经常上顿吃完，下顿饭还不知何处去找的主
+        儿，你抢他？他还想去抢你呢。
+
+    正文 第二十六节 串谋的株连
+
+    :   美国有个“串谋”犯罪的法律规定，它不是一个特定的罪名，串谋的内容指向什么，
+        就是串谋犯某罪。这个“串谋”的法律规定，是从六十年代初肯尼迪总统被刺杀后
+        才新立的法。当时立法本意是，比如刺杀总统，并不要等到把总统杀了才能给你
+        定罪，而是在你想杀总统的时候，就可以定你的罪，即它不是说你做了什么，而
+        是说，你想做什么。因为使用“串谋”基本上不要什么证据，只要他认为你“想”，
+        就可定罪，故此限制极严，只是限制在几种重罪情况下才可以使用。但后来，在
+        司法操作中，发现这个武器很好使用，大家知道，美国是个判例法国家，只要有
+        一个法官用这个串谋定了某个罪，其他法官也可以使用，甲法官用一个，乙法官
+        用一个，这样，串谋使用的罪名就被无限扩大解释了，现在几乎所有的罪都可以
+        用“串谋”了。在“串谋”这把刀子下，绝大部分被告束手就擒、认罪服法。现在几
+        乎变成不要任何证据都可以指你串谋了，无限扩大株连众多无辜者，甚至没有案
+        件，也可以制造案件出来。
+
+        一个警官可以去制造犯罪，或者在 FBI 处领钱的线人或是某个急于与合作的证人。
+        上述这样的人，他可以打电话给他的朋友或认识的人，喂，我这里有白粉，你要
+        不要，每斤只售 2 万元（市场行情为 2-4 万元），你没钱也可以，先把东西领去，
+        买了以后再给我钱。只要你没有表示反对，也没有去报警，好，你就是串谋贩卖
+        毒品，抓你入狱；还有的装出一付可怜相，如家中有急事，有点儿白粉，请千万
+        帮助卖一点儿出去救急，这个接电话的人推托不过，答应问问看，这也构成串谋
+        犯罪，你连毒品的面都没见过，就可定罪了。对方是有心害你的，已经在电话录
+        音，他又是证人，好，你串谋的证据就确凿了。
+
+        以上讲的是你的朋友或熟人陷害你，还有你压根不认识的人也可以这样害你。你
+        接到一个电话，你还没来得及说什么，对方先说，啊哈，好久没有联系了，近来
+        情况好吧，家里都还好吧，非常想念你，有时间的话当面聊聊，好像是很熟的朋
+        友一样。当你听了半天，还不知道对方是谁，你会说对不起，你找谁？对方好像
+        才大梦初醒，啊哈，对不起，你贵姓？你说你姓李，对方马上说，太对不起了，
+        我电话打错了，耽误了您的时间，实在是不好意思。当你准备挂断电话时，对方
+        会说，不过，我打错电话打到你，也是咱们有缘分，要不然怎么能就把电话打给
+        你，而没有打到别人家里？你是在做什么，看我们有无合作干事情的可能？闲聊
+        几句，挂断电话，这下就是认识了，第二次，第三次就好像真和老朋友一样聊了
+        起来，再就是引你上钩，陷害你，接上面的伎俩来录音等。
+
+    正文 第二十七节 多事的美国医生
+
+    :   OTV 学校的杨小姐请了北京来的刘先生（已为美国公民）在教堂专给华人讲他在
+        美国的体会和教训。他用他的切身的体会讲了一件事。一天晚上，他和妻子给仅
+        两岁的小孩洗澡，小孩摔了，他夫妇两人就带小孩去医院，经检查是某处骨折，
+        医生问明当时的情况后，操起电话就报警，警官很快来了，说他夫妇虐待儿童，
+        要把他二人全抓走，小孩交给其他家庭代管。幸亏他英语不错，当即向警官求情
+        （在此时讲道理是没用的）可否只抓他一人，让他妻子带孩子，让别人带他不放
+        心。警官开始不同意，说他们虐待儿童，已没有资格在监护孩子了，最后他反复
+        讲，责任全在他，与妻子没关系，警官才同意之抓走他一人，把他送进了牢房。
+        当然时隔不久，他就获保出狱，但为此他吃了两年多的官司，花了好几万美元。
+        刘先生说，在美国是很容易吃官司的，如他那件事，在中国就根本不是问题，亲
+        生父母根本不可能虐待自己的孩子，但在美国一口咬定你是犯法，华人英语不通、
+        法律不懂，难以解释和沟通，很容易吃亏，受到不公正的对待。美国人也真是爱
+        管闲事，医生的职责，是救死扶伤，至于是如何伤的，应负什么责任，这与医生
+        的职责毫不相干，但似乎老美不这么看问题。也许，美国的串谋法吧，此时只要
+        你知道，如不报案，就构成了串谋虐待儿童吧。刘先生也讲，美国很霸道的，在
+        墨西哥有一个全国有名的医生，他会配置药，也会配置毒品，就有一部分他配置
+        的毒品流入了美国，美国 FBI 就派人潜入墨国，将他绑架到了美国，并给判了刑。
+        这种事情在中国是不可思议的，别人再坏，毕竟不是在你的国土上，你怎么能去
+        别国绑架人呢？昆沙集团的那是几个人都很有意见，他们全都从未到过美国，却
+        被美国人抓到美国，说犯了美国法，要判刑。他们说，做毒品有行规，从不问客
+        人将货拿到哪里去，一手交钱，一手交货，两不多问。美国人的逻辑，你卖的毒
+        品你应当知道有可能卖去美国，你还在做，就犯了美国法，就抓你来美国受审。
+
+    马来西亚的陈炜宗讲，他在佛基尼亚的监狱里呆过一段时间，他的英文很不错，认识
+    了很多的黑人囚犯，他讲，在监狱，男囚犯可以很轻易地与女 CO 性交易。当然女 CO
+    也是黑人，只需 50 美元的代价，那些有钱的男囚如果还想找外面漂亮的女人，或自
+    己的妻子、女友，做法是这样的，这个犯人假装已经皈依了基督教或其他什么教，头
+    上戴块布，这样就权利要求监狱方请外面的传教士、修女或神父来监狱为他作祷告，
+    洗刷他的灵魂。那么，外面的性交对象也穿上神职人员的服装来到监狱的教堂里，这
+    时 CO 就带着囚犯也去教堂，按规定，CO 应当进去教堂现场监督祷告，但只要你付
+    50 元给这个 CO，他就绝不进教堂，致使站在教堂外面等候，里面男犯便对假扮神职
+    人员的女性开始“活动”，就可以在庄严肃穆的教堂里，在圣母或耶稣神圣的慈祥的目
+    光注视下，在现代化设备武装起来的戒备森严的美国联邦监狱里，进行性交易。事毕，
+    男女二人可以整理好衣服，从容地从教堂里出来，CO 又将他们送回该去的地方，他刚
+    才罪恶的灵魂已经得到了洗礼，升华，主已宽恕了他的罪孽。
+
+    CO 自然另眼相看、相待，对于那些黑人、西班牙人，一般没钱，那你只能严格按监规
+    办事了。在这里，只要有钱，仍然能过上很不错的生活，享有很多的自由和特权。钱
+    能通神，这是全世界通行的真理。
+
+    正文 第四十三节 政府律师的虚伪性
+
+    :   对于没有钱或者其他原因而不请律师（如认罪的人，请律师是没有必要的），美
+    国司法貌似公正，给你指定律师，特别是那些少数族裔的人，不但给律师，连翻译都
+    给你，不用花钱的，表面上很能迷惑一些人的。但实际上，你的诉讼权利和实体权利
+    能得到维护吗？依我的律师和翻译的情况来判断，根本不能。首先，所有的文件都是
+    英文的，这也可以理解，因为这是在美国。问题是律师带着翻译来，只是很随便地、
+    简单地给你讲一下概要内容，究竟怎么样、具体怎么样，你无从得知。你问多几句，
+    律师会讲，今天我只有半小时或一小时时间，还有别的事儿，不能回答你其他问题，
+    然后就扬长而去了。我英文不过关，有那么多的法律术语的文件，在再三要求下，只
+    翻译了那两页纸的起诉书，而且翻译的水平很差，中文语句都不通，其他几万页资料，
+    根本不管你怎样去对待。至于那些自己花钱请的律师，马来陈说他请的律师，做任何
+    一丁点儿的事都要付钱的。如一张文字，先不管内容，仅复印一张都要你付 15 美分，
+    一盒磁带（从检方那里转录来的）都要收你 6 美元。还有什么电话单、费、停车费、每
+    次和你会见的时间，都要你付费的，鬼知道，这些钱是否为你花的。你在监狱，根本
+    没办法弄清这些事，只有让家里人付钱就是了，特别对于外籍人，无家人在美国，简
+    直就是赤裸裸的敲诈。很多人说，美国的律师是不拿刀的强盗。让指定律师不花钱，
+    特别是这种与打官司的人，是很吃亏的。没办法，他不挣我的钱，要尽量使他少花钱。
+    现在不是他为我请翻译，而是我将大量的汉文译成英文给他。所以，在法律规定上的
+    公正和实际行使这些权利的公正完全是两码事。
+
+    正文 第五十一节 CIA特工的厉害之处
+
+    :   CIA，即美国中央情报局，以前早闻其大名，印象中是专指情报和暗杀的。没想到
+        我撞上了它（不，应当是它找上了我）。那个以开律师所为掩护的保罗，是典型
+        的美国白人，蓝眼睛、黄头发，但他说起中文来，你想象不到是那么地流利，中
+        国知识渊博。比如，我告诉他，我要回国了，以后我们电话联系，我说，我的家
+        在中国西安，区号是 0910。他马上在电话上说，不对，你骗我，0910 是咸阳的
+        区号，西安区号时029。我说是的，你没说错，当时我为什么将 029 说成 0910，
+        是因为我想，我说咸阳，外面很少人知道，西安知名度高一些，可能会有人知道，
+        且西安距咸阳仅 30 华里。但我根本没想，一个典型的美国白人竟连相邻两个城
+        市的区号也能极快反应出来，几乎是不加思索，很多中国人也做不到这一点。当
+        时我只认为他很博学，当我现在知道他是 CIA 工作人员后，也就可以理解了。他
+        还知道西安的羊肉泡馍、葫芦头，知道西安医科大学、第四军医大学，还要给我
+        家人介绍西安医科大学的名医生。说起南昌市，他和老付像在南昌生活很长时间
+        的朋友一样，大谈南昌的有名建筑、大型企业，对这些情况，我都不知道。他还
+        说中国的历史，大谈乾隆皇帝下江南、中国的成语。老实说，作为一个白种西方
+        人，能讲流利的中文已很不错了，何况他更像个中国通。他娶的妻子是中国北京
+        人，我见过（对中国的官场、社会、风土人情都非常了解，比一般中国人还了解
+        得多）。作为一名 CIA 特工，他真是具备了这个才能，由此可知，CIA决不小视，
+        非等闲之辈。
+
+    正文 第六十四节 种族歧视的另一种形式
+
+    :   在美国，种族歧视表现多个方面。有一对白人年轻大学生，在校恋爱，女的怀孕
+        后生下一小孩，便和男的一起在卫生间将小孩溺死，结果法院判女的坐牢 2 年半，
+        男的坐牢 2 年。而在同一法院，一个黑人青年则因杀死了六只猫，就被判刑 12
+        年，平均杀死一只猫的刑期与杀死一个人的刑期相同。当然，最实质的问题是因
+        为犯案者的肤色不同罢了。美国南部（在美国南部是仇视黑人最重的地方，南北
+        战争就是解放南部黑奴的战争）某州的一所大学历史学教授，居然在电台上发表
+        讲话讲，那些黑人到我们美国来，我们给他们提供了这样好的生活条件，还有我
+        们的民主政治、信仰______如果当初我们不把他们（指黑人）买到美国来，他们
+        现在仍在非洲国家挨饿______。真是一幅典型的强盗嘴脸。如果不是当初美国人
+        将非洲的优等劳动力掠夺走，非洲的生产力就不会遭到破坏，这些劳动力没到美
+        国来，美国也没有今天的繁荣。
+
+    正文 第七十节 马太郎其人
+
+    :   不知为什么，从洛杉矶那边转过来一人叫马伯潜，报纸上将他叫“作弊大王”，
+        （其作案经过待以后详叙）。他特别崇拜日本，当然日语也讲得不错，他说他常
+        去日本，连日本人都说他是日本大阪口音、大阪人，他对老外说他是日本人，对
+        老外常以日本人自居，故我给他起个名字叫“马太郎”，这个名字很快在华人当中
+        流传了开来，另外，他还是个台独分子，自称他是台湾大学经济管理系毕业的，
+        和台北市长陈水扁是同学，他说大陆想统一台湾，也不是那么容易的事儿。有天
+        早上，他在学校一进教室，一本正经地对大家说，中国大陆想统一台湾不可能了，
+        我们问为什么，他说，美国、日本已经把台湾纳入了什么太平洋导弹防御体系，
+        美国、日本不是那么好惹的，很多人立即反击他，大家纷纷说，美国、日本是什
+        么玩意儿，在朝战、越战美国照样被打得落花流水，日本鬼子更是王八旦，早晚
+        有一天，中国会收拾小日本的，美、日搞个导弹防御体系就把中国人吓住了，你
+        该不是大脑进了水吧，马无言以对。其实，马太郎告诉我，他的父亲是山东青岛
+        人，母亲是台湾人，有天早上，他对英文女老师讲，他是日本人，我当然听懂了，
+        我就马上走过去对女老师说，马先生的父亲是中国青岛人，母亲是台湾人，台湾
+        是中国的一个省。女老师意味深长地点头表示听懂了，马面色通红。马太郎虽然
+        崇拜日本，鼓吹台独，但其受教育程度高，知识渊博，作为谈天说地的一个伙伴
+        还可以，马也自视清高，从不和那些福州人往来。他大概认为我和他档次差不多，
+        每次吃饭、操场散步、阅览室聊天，他都愿凑过来和我在一起。他对那些福州人
+        不屑一顾，说他们严格意义上讲，不是人，那些福州人表达感情比较直观，因为
+        马常鼓吹态度，所以经常扬言要修理他，在吃饭、散步时故意冲撞他。他如稍有
+        不满定会遭到殴打，马又惧怕那些福州人的暴力，心中虽然十二万份瞧不起福州
+        人，但在挑衅面前不敢怒也不敢言，平时只愿和我、马来陈、李参谋在一起。有
+        一段时间，为了表示彻底洋化，几乎每天和白人老外打棒球和网球，他英文不错，
+        就常在老外和警官面前卖弄和表现，结果聪明反被聪明误，监狱方看他英语不错，
+        认为让他学英文没有必要了，而直接让他去捡垃圾。他觉得让他这个大学的高材
+        生捡垃圾实在是有辱斯文，太降低了他的身份，想去学校当助教，请马来陈帮他
+        给校长说，最后也没成功。
+
+    正文 第七十四节 监狱里的性问题
+
+    :   在监狱里流行着大量的黄色杂志、画刊，允许犯人订阅这些。据说监狱里曾经禁
+        止犯人订阅和邮寄这些性刊物等，但被以《花花公子》为首的几家黄乐刊物告上
+        了法庭，并且胜诉，于是这些东西在监狱的存在便合法化了。那些老外，见了东
+        方人的黄色特写画面，一个个发出一声怪叫，甚至坐着下流的动作，毫不掩饰他
+        的兴趣和思想。这也可能是长期性压抑所致，也反映出东西方人在文化观念上的
+        不同。在房间内，床头、桌边、椅子上、甚至睡下铺的人在上铺的床底下面贴上
+        和真人一样大小的裸女画。在浴室，经常看到扔在地上，或者水淋淋贴在墙上的
+        这类图片。
+
+    正文 第八十一节 美国监狱对重刑者的下马威
+
+    :   美国对那些几十年几百年或者终身监禁的囚犯怎么对待呢？判决生效后（而且特
+        别注明不得保释者），首先将你一人关在一个单独的房间，连门都用电焊焊死，
+        连警官自己都开不了，一切吃、喝、拉、撒、睡全在这一个房间解决（当然，吃、
+        喝自有人送的）。室内的床、椅等全是电焊焊死，四周和上下全为铁板焊成，摄
+        像机从不同的角度 24 小时监控，没有任何绳索之类的东西供你上吊；四周墙壁
+        使用厚的、硬的皮革制品包裹，没有可能让你去撞死；看病有医生在窗口给你治
+        疗，在里面没有任何自杀的可能。最少先把你关上一年时间，再把被焊死的门等
+        撬开，放你出来，实际上在里面的一年时间已把你的个性、棱角、野性、反抗、
+        自杀精神全都磨光了，在精神上战胜了你、打垮了你，你只有活着、活下去的欲
+        望，而且也是适应了这种独居一室的生活，再放你出来，与那些同样是终身监禁
+        的囚犯放在一起，给你一个反差，条件比以前改善多了，起码是在一个群体中生
+        活。大家都有相同的经历和感受，也互相鼓励和安慰，由不好到好，也使你在一
+        定程度上满足处境，安于现状，安于牢狱生活，不会闹事，直到老死狱中。据说
+        这种方法是很多心理学家等共同研制出来的。
+
+    正文 第八十八节 黑社会人说黑社会
+
+    :   和韩得平聊天，他倒坦率，承认他就是“飞龙帮”成员。他说，联邦以黑社会为名
+        抓了不少人，其实很多不是帮会的。那些从大陆偷渡来的福建人，有一小部分，
+        好吃懒做，去打工，受不了那个苦，但又要生存，于是就加入了帮会，可以不工
+        作，在“老大”的领导下，收一些店家、小商店的保护费，但也很有限。加入帮会，
+        对那些小喽啰，并没有多大的实际意义，其好处就是，你的偷渡费可以以帮会为
+        靠山不交或少交，还有，在外面打着帮会的牌子，没有人敢欺负你，而你还可以
+        欺负别人，白吃几顿饭等。他说，年轻人气盛，喜欢打打杀杀，自以为英雄，其
+        实帮会并不养这些人，你出去可以打着帮会的牌子去闯，吓唬别人。他说，打劫
+        （即抢劫）是帮会分子最基本的 ABC课程，主要是事先踩好点，入室抢劫，主要
+        抢的对象是他们的福建同乡，他说，美国有几十万福建人，你每天抢一家也抢不
+        完的。他说，包括他自己在内，这些人全是社会的垃圾，好逸恶劳，既不想干活，
+        又想过舒服的日子，只好去抢了，抢劫对他们来说，是很小的事情。他说，像他
+        们这些人，在大陆早已被枪毙过好几次了，所以，在某种意义上讲，让美国人抓
+        来判几年刑，他们也觉得可以接受。
+
+    正文 第一百零四节 可恶的台湾籍警察
+
+    :   华人如果当起洋买卖来，比真正的洋人坏得多。MCC 有一个台湾籍的警察，坏透
+        了。整起自己的同胞来，比洋人警察坏多了。有次同房的福州人陈明等和我一道
+        从MCC 去 OTV，是那个台湾警察在门口清点人数，陈明在拿自己的东西，晚来了
+        有十几秒钟。台湾警察生气了，就坚决不让陈明今天去 OTV（OTV 的条件比 MCC
+        好多了，大家均愿意去 OTV）。其实这种事实是很多的，老外警察从来不以这些
+        小事来卡人的，很有耐心，有宽厚的，从不无事生非刁难人的。这个台湾警察，
+        也不知他吃了几天美国饭，他明明会讲国语，但见了华人，他只讲英语，华人对
+        他讲国语，他装作听不懂的样子，想把自己装成一个完全洋化了的美国人。他很
+        瞧不起中国人、瞧不起自己的祖宗，一些华人开始真以为他不懂国语，便用国语
+        骂他，他马上听懂了，要抓人去坐单独禁闭室。此后，大家才知他是装的。尽管
+        大家对他很气愤，但也不敢用国语骂他，如果是老外，早就当着面骂他祖宗三代
+        了，只要你骂时，面带笑容，不要带怒气即可，老外看着你嘴动，他眼睛一翻一
+        翻的，他会问其他人，他讲什么，其他华人会告诉他，他讲你很好，老外还会憨
+        厚地笑了说，谢谢，谢谢，更招来一阵大笑。大家觉得，这些老外挺通情达理，
+        而是那些汉奸，真是忘了本，不是个东西，特别是那些台湾的华人。其实，香港
+        人、台湾人，看不起大陆人，而大陆的广东人又看不起广东以外的人，尤其是福
+        州人。在美国监狱的华人中，福州人占绝大多数，且绝大部分为黑社会人士，对
+        那些胆敢流露出轻蔑自己的台湾人、香港人，经常会给以颜色，台、港人不敢在
+        福州人面前造次的。
+
+    阿唐说，在香港、美国的这些华人毒贩中，有条不成文的规矩，就是决不把毒品卖给
+    华人，不管你华人出多么高的价钱都不卖，不但如此，而且对于华人中的吸毒者都瞧
+    不起，甚至在朋友圈子中知道谁吸毒了，都不屑与其为友。因为他们清楚，谁吸毒，
+    谁就完了。他们只把毒品卖给外国人，特别是白人。他说，当初我们亚洲是没有毒品
+    的，是你们英国人非要把毒品强行卖到我们中国，现在我们做的，只不过是把你们老
+    祖宗的东西还给你们罢了，算是一报还一报吧。美国人、主要是英国人的后代，我们
+    不过是效仿你们老祖宗的做法，你们美国人抓我们没有道理的（大笑，大概自认为是
+    强词夺理吧）。
 
 [Machiavellianism - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Machiavellianism)
 
-[马基雅维利主义\_百度百科](http://baike.baidu.com/view/1201238.htm)
+:   Machiavellianism is "**the employment of cunning and duplicity (两面派) in
+    statecraft or in general conduct**". The word comes from the Italian
+    Renaissance diplomat and writer Niccolò Machiavelli, who wrote Il Principe (The
+    Prince), among other works.
+
+    ![Niccolò Machiavelli](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg/330px-Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg)
+
+    -   Machiavelli, `[ˌmækiəˈveli]`
+    -   Machiavellian, `[.mækiə'veliən]`
+    -   machiavellism, n.马基雅维里主义
+
+    In modern psychology, Machiavellianism is one of the
+    **dark triad `['traɪ.æd]` personalities**, characterized by a duplicitous
+    interpersonal style, a cynical disregard for morality and a focus on
+    self-interest and personal gain.
+
+    马基雅维利 (Machiavelli，1469—1527) 是意大利政治家和历史学家，以主张为达目
+    的可以不择手段而著称于世，马基雅维利主义 (machiavellianism) 也因之成为权术
+    和谋略的代名词。它通常分为高马基雅维利主义和低马基雅维利主义。高马基雅维利
+    主义的个体重视实效，保持着情感的距离，相信结果能替手段辩护。低马基雅维利主
+    义易受他人意见影响，阐述事实时缺乏说服力。高马基雅维利主义者比低马基雅维利
+    主义者更愿意操纵别人，赢得利益更多，更难被别人说服，他们更多地是说服别人。
+    但这些结果也受到情境因素的调节。
+
+    马基雅维利为达目的不择手段的政治权术理论，后来被资产阶级学者称为“马基雅维利
+    主义”，甚至被法西斯分子用作实行独裁统治的理论依据，所以“马基雅维利主义”逐渐
+    变成政治上尔虞我诈、背信弃义和不择手段的同义语。
+
+    refs and see also
+
+      - [马基雅维利主义\_百度百科](http://baike.baidu.com/view/1201238.htm)
 
 [日本有哪些好的歌手？ - 知乎](https://www.zhihu.com/question/22782650)
 
-:   5. ZARD 听到就让人泪目的摇滚乐团无需多言。这首《君に逢いたくなったら》是
+:   ZARD 听到就让人泪目的摇滚乐团无需多言。这首《君に逢いたくなったら》是
     1997 年的单曲，每次听到都会十分感动。ZARD 的曲子里充满着从骨子里发出的不
     羁和向上，就是那种流着眼泪微笑的感觉。其他脍炙人口的曲子包括 《揺れる想
     い》 和《负けないで》。作为 tie 柯南的乐团之一，当然还有大热的 《运命のル
@@ -28535,6 +29079,32 @@ Disallow:
 [科学网—我是河南人 - 施一公的博文](http://blog.sciencenet.cn/home.php?mod=space&uid=46212&do=blog&id=284162)
 
 [埃瓦里斯特·伽罗瓦\_百度百科](http://baike.baidu.com/link?url=RYtI1uUwSNSdH-8aadFGVjY6TEivoTIcIhGXY-rHHMQLkt02C23vKXJE5xYgRxwOIC3CKyby0hjSkL_WmNQy45roMynw1pOXa7k7kbl5Rlr2wyGb4l42qV74hnvKY80he7MvG-So-Aq3p-eH9H1MIa)
+
+:   埃瓦里斯特·伽罗瓦，1811 年 10 月 25 日生，法国数学家。现代数学中的分支学科
+    群论的创立者。用群论彻底解决了根式求解代数方程的问题，而且由此发展了一整套
+    关于群和域的理论，人们称之为伽罗瓦群和伽罗瓦理论。在世时在数学上研究成果的
+    重要意义没被人们所认识，曾呈送科学院 3 篇学术论文，均被退回或遗失。后转向政
+    治，支持共和党，曾两次被捕。21 岁时死于一次决斗。
+
+    ![A portrait of Évariste Galois at the age of about
+        15](https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Evariste_galois.jpg/330px-Evariste_galois.jpg)
+
+    **Évariste Galois** (French: `[evaʁist ɡaˈlwa]`; 25 October 1811 – 31 May 1832)
+    was a French mathematician born in Bourg-la-Reine. While still in his
+    teens, he was able to determine a necessary and sufficient condition for a
+    polynomial to be solvable by radicals, thereby solving a problem standing
+    for 350 years. His work laid the foundations for Galois theory and group
+    theory, two major branches of abstract algebra, and the subfield of Galois
+    connections. He died at age 20 from wounds suffered in a duel.
+
+    据说 1832 年 3 月他在狱中结识一个医生的女儿并陷入狂恋，因为这段感情，他陷入
+    一场决斗，自知必死的伽罗瓦在决斗前夜将他的所有数学成果狂笔疾书纪录下来，并
+    时不时在一旁写下“我没有时间”，第二天他果然在决斗中身亡，时间是 1832 年 5月
+    31 日。这个传说富浪漫主义色彩，为后世史家所质疑。
+
+    refs and see also
+
+      - [Évariste Galois - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/%C3%89variste_Galois)
 
 [虽然去不了 Google，走到这步大概也不错了 - laike9m's blog](https://laike9m.com/blog/sui-ran-qu-bu-liao-googlezou-dao-zhe-bu-da-gai-ye-bu-cuo-liao,72/)
 
@@ -28604,7 +29174,7 @@ Disallow:
     suspicion by US officials as a possible sign of terrorist links. So how did
     the humble F-91W find itself in such a position?
 
-    ![话说我现在就用的 F-84-W](http://ichef-1.bbci.co.uk/news/624/media/images/52352000/gif/_52352433_watch.gif)
+    ![话说我现在就用的 F-84W](http://ichef-1.bbci.co.uk/news/624/media/images/52352000/gif/_52352433_watch.gif)
 
     "It sells globally, from Russia to Asia," says Tim Gould, head of marketing
     at Casio UK. "It has consistently remained popular because it is
@@ -28646,22 +29216,23 @@ Disallow:
 
 :   后来我开始反思最初的目标，为什么要在自己身上挂一个“拳击高手”的招牌，被那么
     多泰森追着打？ 我把这块招牌卸了，找个完全没练武的人去比拼，不是更容易赢么？
-    于是果断照做，去找了一个没人懂拳击的小乡村，做了纯英文的Tucia.com(需翻墙)，
+    于是果断照做，去找了一个没人懂拳击的小乡村，做了纯英文的 Tucia.com(需翻墙)，
     只做国外的业务。在那个地方，作为一个知名武馆的拳击小陪练，我成了村子里拳击
     技术最高超的人，受人仰慕，还开武馆教人拳击，活的非常滋润，而且在教人拳击的
     过程中，自己的拳术也比以前提高了很多，发展出一套属于自己的拳法，我虽然进不
     了泰森们的大圈子，但他们也进不了我的小圈子。
 
     除此以外，我还发现一个现象，中国消费者在与奸商们的长期斗争中，已经培养出了
-    一种非常苦B的品质：只要不被坑，他就谢天谢地。如果商家严格做到了承诺的每一件
-    事情，客户就会感动的泪如泉涌。如果商家不仅做到了所有承诺的事情，还很贴心的
-    提供了一些额外的服务（比如我们给每位客户赠送非常好吃的樱桃和昂贵的进口巧克
-    力作为点心），那么客户就会激动的哭天喊地、奔走相告，推荐给他认识的每一个人。
+    一种非常苦 B 的品质：只要不被坑，他就谢天谢地。如果商家严格做到了承诺的每一
+    件事情，客户就会感动的泪如泉涌。如果商家不仅做到了所有承诺的事情，还很贴心
+    的提供了一些额外的服务（比如我们给每位客户赠送非常好吃的樱桃和昂贵的进口巧
+    克力作为点心），那么客户就会激动的哭天喊地、奔走相告，推荐给他认识的每一个
+    人。
 
-    其实这片肮脏的国土，就是上天赐予IT青年们的最好机会。
+    其实这片肮脏的国土，就是上天赐予 IT 青年们的最好机会。
 
-    这些原始而纯粹的行业，正在等待IT精英们的降级，如同蒲公英一般的伞兵，在黑夜
-    里从天而降，长驱直入，用最智慧的产品、最优质的服务拯救这些早就该死的行业，
+    这些原始而纯粹的行业，正在等待 IT 精英们的降级，如同蒲公英一般的伞兵，在黑
+    夜里从天而降，长驱直入，用最智慧的产品、最优质的服务拯救这些早就该死的行业，
     屌丝的生命将会绽放出银色的羽翼，无比丰满，无比性感。
 
 [图灵奖得主：思考比编码重要 - 微软亚洲研究院](http://www.msra.cn/zh-cn/connections/stories/leslie-visit-pku-20151203.aspx)
@@ -28715,7 +29286,7 @@ Disallow:
 [I Hate the News (Aaron Swartz's Raw Thought)](file:///E:/blogs/Aarow-Swartz/www.aaronsw.com/weblog/hatethenews.html)
 
 :   None of these stories have relevance to my life. Reading them may be
-    enjoyable, but it’s an enjoyable waste of time. They will have no
+    enjoyable, but **it’s an enjoyable waste of time**. They will have no
     impact on my actions one way or another.
 
     哈哈，乐于看新闻都是逗。我高中的时候还看文汇报（因为班级订了报纸），后来从
@@ -28726,11 +29297,29 @@ Disallow:
 [Wi-Fi 是什么的缩写 - 第九阅览室 - 提供科学养分](http://9yls.net/19760.html)
 
 :   从 Wi-Fi 扩展成 wireless fidelity，也就是把一个词当作缩写逆向扩展出某种
-    含义的过程，是一种文字游戏，叫 backronym `['bækrənɪm]`，意思和 acronym 相对
-    。Backronym很容易被传着传着就当真。常见的比如 SOS，很多人认为是 save our
-    souls 的缩写，但实际上是先有的易识别易操作的摩尔斯电码 `···–––···`，后选用相对
-    应的字母组合SOS 来表示罢了。因此 SOS 和 Wi-Fi 一样，没有任何含义，也不是什
-    么的缩写，还真是同病相怜呐。
+    含义的过程，是一种文字游戏，叫 **backronym** `['bækrənɪm]`，意思和 acronym 相对。
+    Backronym 很容易被传着传着就当真。常见的比如 SOS，很多人认为是
+    save our souls 的缩写，但实际上是先有的易识别易操作的摩尔斯电码 `···–––···`，
+    后选用相对应的字母组合 SOS 来表示罢了。因此 SOS 和 Wi-Fi 一样，没有任何含义，
+    也不是什么的缩写，还真是同病相怜呐。
+
+    Phil Belanger, a founding member of the Wi-Fi Alliance who
+    **presided (`[prɪ'zaɪd]`, 指定, 主持) over** the selection of the name
+    "Wi-Fi", also stated that Interbrand invented Wi-Fi as a play on words with
+    Hi-Fi (high fidelity), and also created the Wi-Fi logo. The term 'fidelity'
+    refers to the faithfulness/accuracy of reproduction or transmission of the
+    signal, and 'wireless' is a distinguishing feature that contrasted with
+    earlier internet connection technologies such as wired Ethernet.
+
+    The Extended Service Set Identification (ESSID) is one of two types of
+    Service Set Identification (SSID). In an ad hoc wireless network with no
+    access points, the Basic Service Set Identification (BSSID) is used. In an
+    infrastructure wireless network that includes an access point, the ESSID is
+    used, but may still be referred to as SSID.  An SSID is a 32-character
+    (maximum) alphanumeric key identifying the name of the wireless local area
+    network. Some vendors refer to the SSID as the network name. For the
+    wireless devices in a network to communicate with each other, all devices
+    must be configured with the same SSID.
 
 [有哪些让你笑了半辈子，每次给别人讲自己都会爆笑的笑话？ - 知乎](https://www.zhihu.com/question/23547779)
 
@@ -28761,45 +29350,46 @@ Disallow:
 
 :   Read more
 
-    #. [坏习惯一大堆？别怕，还有救](http://www.baicizhan.com/article/6)
-    #. [我们为什么必须背单词？](http://www.baicizhan.com/article/2)
-    #. [如何在一天内记200个单词？](http://www.baicizhan.com/article/3)
-
-    #. [百词斩TV 黑暗料理单词视频](http://tv.baicizhan.com/playlist/1000322)
-    #. [百词斩TV 成为学霸的10个秘诀单词视频](http://tv.baicizhan.com/playlist/1000323)
-    #. [百词斩TV 羞羞的知识单词视频](http://tv.baicizhan.com/playlist/1000513)
-        i. carnal desire
-        #. ba-ccha-na-lian antics
-        #. contra-sepive
-        #. sa-cri-legious（遭天谴的）
-        #. homo-sexual
-        #. full of allure
-        #. add a bit of artificial lighting
-        #. it's a bit of brash
-        #. you randy old man
-    #. [百词斩TV 人体姿势12问单词视频](http://tv.baicizhan.com/playlist/1000514)
-        i. re-cum-bent bike, lie on a recumbent position
-        #. lying pro-strate in peace
-        #. a se-den-tary lifestyle
-        #. stand steady or i'll beat you with this stick
-        #. sit in an upright position
-        #. rigid `[ˈrɪdʒɪd]`, improve my posture, not becoming a slotch like you.
-        #. pre-carious, likely to collapse. I was gymnast for 10 years. Not precarous at all.
-        #. si-mul-ta-neous, simultaneous actions and movements
-        #. bend. I kneel before you. I said kneel.
-    #. [百词斩TV 绅士的品格单词视频](http://tv.baicizhan.com/playlist/1000515)
-        i. strapped for cash. A generous man did the same thing for me.
-        #. considerate
-        #. an educated man, resulting from or having good education. opposite to you
-        #. charming. come for a ride in my convertable
-        #. humourous
-        #. handsome, stop looking at him
-        #. reliable
-        #. leave your genteel manners at home when you come to my house
-        #. in gentle voice, give you a gentle pat on the back before I yell at you again
-    #. [百词斩TV 霸道总裁爱上我单词视频](http://tv.baicizhan.com/playlist/1000516)
+    -   [坏习惯一大堆？别怕，还有救](http://www.baicizhan.com/article/6)
+    -   [我们为什么必须背单词？](http://www.baicizhan.com/article/2)
+    -   [如何在一天内记200个单词？](http://www.baicizhan.com/article/3)
+    -   [百词斩TV 黑暗料理单词视频](http://tv.baicizhan.com/playlist/1000322)
+    -   [百词斩TV 成为学霸的10个秘诀单词视频](http://tv.baicizhan.com/playlist/1000323)
+    -   [百词斩TV 羞羞的知识单词视频](http://tv.baicizhan.com/playlist/1000513)
+        +   carnal desire 肉欲
+        +   ba-ccha-na-lian (`[.bækə'neɪliən]`，把酒狂欢) antics (滑稽搞笑的动作)
+        +   contra-sepive
+        +   sa-cri-legious（遭天谴的）
+        +   homo-sexual
+        +   full of allure
+        +   add a bit of artificial lighting
+        +   it's a bit of brash
+        +   you randy old man
+    -   [百词斩TV 人体姿势12问单词视频](http://tv.baicizhan.com/playlist/1000514)
+        +   re-cum-bent bike, lie on a recumbent position
+        +   lying pro-strate in peace
+        +   a se-den-tary lifestyle
+        +   stand steady or i'll beat you with this stick
+        +   sit in an upright position
+        +   rigid `[ˈrɪdʒɪd]`, improve my posture, not becoming a slotch like you.
+        +   pre-carious, likely to collapse. I was gymnast for 10 years. Not precarous at all.
+        +   si-mul-ta-neous, simultaneous actions and movements
+        +   bend. I kneel before you. I said kneel.
+    -   [百词斩TV 绅士的品格单词视频](http://tv.baicizhan.com/playlist/1000515)
+        +   strapped for cash. A generous man did the same thing for me.
+        +   considerate
+        +   an educated man, resulting from or having good education. opposite to you
+        +   charming. come for a ride in my convertable
+        +   humourous
+        +   handsome, stop looking at him
+        +   reliable
+        +   leave your genteel manners at home when you come to my house
+        +   in gentle voice, give you a gentle pat on the back before I yell at you again
+    -   [百词斩TV 霸道总裁爱上我单词视频](http://tv.baicizhan.com/playlist/1000516)
 
 [dae/anki](https://github.com/dae/anki)
+
+:   python 2, pyqt. no need to install.
 
 [【弄"潮"儿】英文中的20种orgasm](http://mp.weixin.qq.com/s?__biz=MjM5NTExMTk5MA==&mid=404899112&idx=1&sn=11953362f9dbfb81c1c595a8091a6829&scene=0#wechat_redirect)
 
@@ -28809,9 +29399,9 @@ Disallow:
 
 :   四熟是指眼熟，耳熟，意熟，用熟。
 
-    "In the buff" is a slang term for nude
+    "**In the buff**" is a slang term for nude
 
-    【smh】shake my head/ shaking my head的缩写。表示觉得某事太弱智，或者对
+    【smh】**shake my head/ shaking my head** 的缩写。表示觉得某事太弱智，或者对
     某事失望、无语。
 
     dafuq (the f*ck)
@@ -28837,9 +29427,11 @@ Disallow:
 
 [Recommended Reading for Developers](http://blog.codinghorror.com/recommended-reading-for-developers/)
 
-:   Programming Pearls is the next best thing to working side by side with
+:   **Programming Pearls** is the next best thing to working side by side with
     a master programmer for a year or so. It is the collective wisdom of
-    many journeyman coders distilled into succinct, digestible columns.
+    many journeyman coders **distilled into succinct, digestible columns**.
+
+    **succinct**, `[səkˈsɪŋkt]`, 简明的；言简意赅的
 
     books
 
@@ -28858,11 +29450,11 @@ Disallow:
 
 [What is Trolling?](http://blog.codinghorror.com/what-is-trolling)
 
-:   I almost feel sorry for Quentin Tarantino (昆汀·塔伦蒂诺), who is so
-    obviously passionate about what he does, because this guy is a classic troll.
+:   I almost feel sorry for **Quentin Tarantino** (昆汀·塔伦蒂诺), who is so
+    obviously passionate about what he does, because this guy is a **classic troll**.
 
-    1. He came to generate argument.
-    2. He **doesn't truly care about the topic**.
+    01. He came to generate argument.
+    02. He **doesn't truly care about the topic**.
 
     So the next time you encounter someone who can't stop arguing, who
     seems **unable to generate anything other than heat and friction**, whose
@@ -28873,50 +29465,49 @@ Disallow:
 
 :   之前在微软做的是「研究」，听起来好像是很厉害的样子，其实有时候做的东西简直
     是浪费时间。因为我从一开始就清楚，在研究院做的东西只是为了在特定领域有一个
-    突破，至于这个成果会不会造福人类，那可不好说。运气好的话会被微软产品组看中
-    ，做成产品，算是为人类做贡献了。大多数时候你的成果还是被打入冷宫，永远无人
-    问津。更普遍的情况是进入了微软的专利库，别人想做成产品都不行，这简直是阻碍
-    人类社会进步了。我在微软亚洲研究院长达十个月的实习给我最大的收获就是让我决
-    定了将来一定不会去读博士。
+    突破，至于这个成果会不会造福人类，那可不好说。运气好的话会被微软产品组看中，
+    做成产品，算是为人类做贡献了。大多数时候你的成果还是被打入冷宫，永远无人问
+    津。更普遍的情况是进入了微软的专利库，别人想做成产品都不行，这简直是阻碍人
+    类社会进步了。我在微软亚洲研究院长达十个月的实习给我最大的收获就是让我决定
+    了将来一定不会去读博士。
 
     其实我还是挺喜欢比较小的公司的，虽然不是很「正规」，但却有让你在大公司感觉
     不到的真诚的人情味。
 
-    后来我向Google和Facebook投的简历都石沉大海，Twitter回应了，但最终没有通过。
+    后来我向 Google 和 Facebook 投的简历都石沉大海，Twitter 回应了，但最终没有通过。
     我发现我的英语其实是个很大的问题，给外国人说话都颤抖，怎么可能表达清楚自己
     的意思？于是我当即开始学英语，一边背托福，一边找外国人练口语。我了解到许多
     公司的实习生早就申请满了以后，意识到自己开始地太晚了，想想美国大学五月就放
     暑假了，我三月才开始准备，岂能来得及？再申请只能考虑明年暑假的了。可是明年
-    暑假又有另一个问题，我拿J1签证去过美国以后，规定要「回国服务两年」，这令我
+    暑假又有另一个问题，我拿 J1 签证去过美国以后，规定要「回国服务两年」，这令我
     十分犹豫，并不是因为我决心不想回国，而是因为这样会给自己套一个枷锁，以后恐
-    怕多有不便。无论如何，我总得面试通过，于是便有了我后来尝试去面试Hulu的经历
-    。
+    怕多有不便。无论如何，我总得面试通过，于是便有了我后来尝试去面试 Hulu 的经历。
 
     想想看一切都是蝴蝶效应，佛家叫「因缘际会」。如果我没有认识徐可可，我很难保
-    持助写书的冲动，也不可能认识图灵总编。如果我没有参加去年1月赵丽明教授的川滇
-    语言调查，我没有机会认识徐可可。如果我没有选大一上的语音学课，我根本没有能
-    力去语言调查。如果我大一没有在军训时统一选课后又翻一次选课指导书，我连清华
-    破天荒开了语音学这门课都不知道。如果我2009年没有在成都书店的一个角落里面碰
-    到《汉语史稿》，我怎么可能会对语音学产生兴趣？又假如郭华阳当时不认识我、了
-    解我，怎么会愿意把我推荐给MSRA？如果我大一离散数学课上没有做大作业「基于统
-    计语言模型的拼音输入法」，郭华阳怎么了解我？如果我没有参与ibus-pinyin的开发
-    ，又哪里知道「统计语言模型」？一切皆是缘起啊，我之所以是现在的我，取决于我
-    做出的一个个选择，哪怕它在当时是及其不起眼的决定，恐怕在将来哪一天会对我产
-    生重大影响。
+    持助写书的冲动，也不可能认识图灵总编。如果我没有参加去年 1 月赵丽明教授的川
+    滇语言调查，我没有机会认识徐可可。如果我没有选大一上的语音学课，我根本没有
+    能力去语言调查。如果我大一没有在军训时统一选课后又翻一次选课指导书，我连清
+    华破天荒开了语音学这门课都不知道。如果我 2009 年没有在成都书店的一个角落里
+    面碰到《汉语史稿》，我怎么可能会对语音学产生兴趣？又假如郭华阳当时不认识我、
+    了解我，怎么会愿意把我推荐给 MSRA？如果我大一离散数学课上没有做大作业「基于
+    统计语言模型的拼音输入法」，郭华阳怎么了解我？如果我没有参与 ibus-pinyin 的
+    开发，又哪里知道「统计语言模型」？一切皆是缘起啊，我之所以是现在的我，取决
+    于我做出的一个个选择，哪怕它在当时是及其不起眼的决定，恐怕在将来哪一天会对
+    我产生重大影响。
 
     有一次和一个已经工作了的朋友吃饭，他问过我一个这样问题：「解决一个难题和做
     出一件东西，哪个给你的成就感更大？」具体来说，解决一个难题指的是在学术研究
-    领域或者工程中解决了一个难题，小到一篇paper，大到图灵奖、诺贝尔奖；做出一件
+    领域或者工程中解决了一个难题，小到一篇 paper，大到图灵奖、诺贝尔奖；做出一件
     东西指的是做成了一个可以使用的产品，有许多人使用，产生了价值，小到一个开源
-    工具，大到Google搜索这样的产品。我毫不犹豫地选择了后者，当然是做出产品更有
+    工具，大到 Google 搜索这样的产品。我毫不犹豫地选择了后者，当然是做出产品更有
     价值。他告诉我这个问题反映了不同人不同的价值观和兴趣所在，简单讲就是前者适
     合搞学术，去科研，当一名科学家或者专家，后者应该是搞开发，做产品，做一名工
     程师或者企业家。
 
-    其实我们大多数人并不缺乏能力，而是囿于见识，只敢走前人铺好的道路。一方面这
-    是承担风险与规避风险的问题，另一方面这是多数人缺乏广阔的视野。许多人并非不
-    是雄心勃勃，我相信愿意背井离乡去美国留学、工作、移民的人肯定不是胆小如鼠，
-    只求稳妥的人，而是许多人只看到了自己前辈走过的道路，没有另辟蹊径的意识。
+    其实我们大多数人并不缺乏能力，而是**囿于见识，只敢走前人铺好的道路**。一方
+    面这是承担风险与规避风险的问题，另一方面这是多数人缺乏广阔的视野。许多人并
+    非不是雄心勃勃，我相信愿意背井离乡去美国留学、工作、移民的人肯定不是胆小如
+    鼠，只求稳妥的人，而是许多人只看到了自己前辈走过的道路，没有另辟蹊径的意识。
 
     我想告诉看到这篇文章的我的同辈朋友，以及学弟学妹们，世界竟然如此宽广，你需
     要有一颗宽广的心去容纳。人在年轻的时候机会成本是最低的，所有你因为顾虑不敢
@@ -28926,68 +29517,81 @@ Disallow:
 
 :   Finally, I prefer minimum-length but maximum-information names, and
     then let the context ﬁll in the rest. Globals, for instance, typically
-    have little context when they are used, so their names need to be rela-
-    tively evocative. Thus I say maxphysaddr (not MaximumPhysicalAddress)
-    for a global variable, but np not NodePointer for a pointer locally deﬁ
-    ned and used.  This is largely a matter of taste, but taste is relevant
-    to clarity.
+    have little context when they are used, so their names need to be
+    relatively evocative. Thus I say maxphysaddr (not MaximumPhysicalAddress)
+    for a global variable, but np not NodePointer for a pointer locally deﬁned
+    and used.  This is largely a matter of taste, but taste is relevant to
+    clarity.
+
+    evocative, `[ɪ'vɑkətɪv]`, adj.引起记忆的；唤起感情的
 
     `if(checksize(x))`{.cpp} is unhelpful because we can’t deduce whether checksize returns true on error or non-error; instead
     `if(validsize(x))`{.cpp} makes the point clear and makes a future mistake in using the routine less likely.
 
-    * Rule 1. You can’t tell where a program is going to spend its time.
-      Bottlenecks occur in surprising places, so don’t try to second guess
-      and put in a speed hack until you’ve proven that’s where the
-      bottleneck is.
-    * Rule 2. Measure. Don’t tune for speed until you’ve measured, and even
-      then don’t unless one part of the code overwhelms the rest.
-    * Rule 3. Fancy algorithms are slow when n is small, and n is usually
-      small. Fancy algorithms have big constants. Until you know that n is
-      frequently going to be big, don’t get fancy. (Even if n does get big,
-      use Rule 2 ﬁrst.) For example, binary trees are always faster than
-      splay trees for workaday problems.
-    * Rule 4. Fancy algorithms are buggier than simple ones, and they’re
-      much harder to implement. Use simple algorithms as well as simple
-      data structures.
-        + The following data structures are a complete list for almost all practical programs:
-        + array linked list hash table binary tree
-        + Of course, you must also be prepared to collect these into compound
-          data structures. For instance, a sym- bol table might be implemented
-          as a hash table containing linked lists of arrays of characters.
-    * Rule 5. Data dominates. If you’ve chosen the right data structures
-      and organized things well, the algorithms will almost always be
-      self-evident. Data structures, not algorithms, are central to
-      programming. (See Brooks p. 102.)
-    * Rule 6. There is no Rule 6.
+    -   Rule 1.  You can’t tell where a program is going to spend its time.
+
+        Bottlenecks occur in surprising places, so don’t try to second guess
+        and put in a speed hack until you’ve proven **that’s where the
+        bottleneck is** .
+
+    -   Rule 2. Measure.
+
+        Don’t tune for speed until you’ve measured, and even
+        then don’t unless one part of the code overwhelms the rest.
+
+    -   Rule 3. Fancy algorithms are slow when n is small, and n is usually small.
+
+        Fancy algorithms have big constants. Until you know that n is
+        frequently going to be big, don’t get fancy. (Even if n does get big,
+        use Rule 2 ﬁrst.) For example, binary trees are always faster than
+        splay trees for workaday problems.
+
+    -   Rule 4. Fancy algorithms are buggier than simple ones, and they’re much harder to implement.
+
+        Use simple algorithms as well as simple data structures.
+
+        +   The following data structures are a complete list for almost all practical programs:
+        +   array linked list hash table binary tree
+        +   Of course, you must also be prepared to collect these into compound
+            data structures. For instance, a sym- bol table might be implemented
+            as a hash table containing linked lists of arrays of characters.
+
+    -   Rule 5. Data dominates.
+
+        If you’ve chosen the right data structures and organized things well,
+        the algorithms will almost always be self-evident. Data structures, not
+        algorithms, are central to programming. (See Brooks p. 102.)
+
+    -   Rule 6. There is no Rule 6.
 
 [有什么好的锻炼自己 LaTeX 能力的方法？ - 学习 - 知乎](http://www.zhihu.com/question/26941928)
 
-:   其次，学LaTeX之后掌握的不仅仅是LaTeX本身。能获得的知识有什么呢？比如说
-    字体的知识，图像处理的知识，甚至还能掌握到一定的编程技能。当然，如果说
-    是我的话，我算是走上邪路了，还开发了一个C实现的TeX，这个一般人没那么多
-    的时间做的。本身我走的是弯路，别人就别再走了，比如想用Mathematica实现一
-    个TeX什么的。不过最重点的东西是：控制欲。系统地学好了LaTeX之后就会有一
-    种非常强烈的控制欲。这种控制欲是非常难得的东西。为什么呢？因为铅字印刷
-    这种事物推出历史舞台之后，排版的工作似乎变得非常轻松。小姑娘小伙子高中
-    毕业了就可以来做做了。我这里并不是什么歧视，靠手艺吃饭的永远都是值得尊
-    敬的。但是实际上，做排版的人里面有不少没有什么系统性的排印知识。这就造
-    成一系列的问题，错字漏字什么的的都算小的。最大的问题是很多书版面同质化
-    严重，排版的不知道改，编辑也不会改，这就导致国内有挺多书拿到手就垫了桌
-    脚了。学LaTeX能把很多错误的观念掰对过来，也会了解更深层次的东西。
+:   其次，学 LaTeX 之后掌握的不仅仅是 LaTeX 本身。能获得的知识有什么呢？比如说
+    字体的知识，图像处理的知识，甚至还能掌握到一定的编程技能。当然，如果说是我
+    的话，我算是走上邪路了，还开发了一个 C 实现的 TeX，这个一般人没那么多的时间
+    做的。本身我走的是弯路，别人就别再走了，比如想用 Mathematica 实现一个 TeX
+    什么的。不过最重点的东西是：**控制欲**。系统地学好了 LaTeX 之后就会有一种非常强
+    烈的控制欲。这种控制欲是非常难得的东西。为什么呢？因为铅字印刷这种事物推出
+    历史舞台之后，排版的工作似乎变得非常轻松。小姑娘小伙子高中毕业了就可以来做
+    做了。我这里并不是什么歧视，靠手艺吃饭的永远都是值得尊敬的。但是实际上，做
+    排版的人里面有不少没有什么系统性的排印知识。这就造成一系列的问题，错字漏字
+    什么的的都算小的。最大的问题是很多书版面同质化严重，排版的不知道改，编辑也
+    不会改，这就导致国内有挺多书拿到手就垫了桌脚了。学 LaTeX 能把很多错误的观念
+    掰对过来，也会了解更深层次的东西。
 
-    #. Hyphon
-        * upper-case letter
-        * 1-800-621-2376
-        * My name is Phyllis; that's p-h-y-l-l-i-s.
-    #. EN Dash
-        * In Genesis 6:13--22 we find God's instructions to Noah.
-        * Green Bay beat Denver 31--24
-        * Jane Doe (1950–); or Jane Doe (b. 1950)（不加空格）
-        * the University of Wisconsin--Madisonthe
-        * University of Wisconsin--Milwaukee
-    #. EM Dash
-        * She outlined the strategy---a strategy that would, she hoped, secure the peace.
-        * Consensus---that was the will-o'-the wisp he doggedly pursued.
+    -   Hyphon
+        +   upper-case letter
+        +   1-800-621-2376
+        +   My name is Phyllis; that's p-h-y-l-l-i-s.
+    -   EN Dash
+        +   In Genesis 6:13--22 we find God's instructions to Noah.
+        +   Green Bay beat Denver 31--24
+        +   Jane Doe (1950–); or Jane Doe (b. 1950)（不加空格）
+        +   the University of Wisconsin--Madisonthe
+        +   University of Wisconsin--Milwaukee
+    -   EM Dash
+        +   She outlined the strategy---a strategy that would, she hoped, secure the peace.
+        +   Consensus---that was the will-o'-the wisp he doggedly pursued.
 
     refs and see also
 
@@ -29005,18 +29609,18 @@ Disallow:
 
 :   张曼玉说：“我觉得阮玲玉的骨子里有一种讲不出来的妖媚。”
 
-    阮玲玉她是保姆的女儿，可以说一直到阮玲玉死都没有人知道，也就是说张达民
-    一直到最后出了一本书《我和阮玲玉》，并且在书面上说句句是实话的那本书里
-    面，他都没有写阮玲玉是保姆的女儿，可见张达民在阮玲玉死了以后，他还是良
-    心发现为阮玲玉守住这个秘密的。然后知道阮玲玉这个秘密的第二个人就是蔡楚
-    生。当我们看到一本《阮玲玉》的书，在头十行里，我们可以看到，阮玲玉是佣
-    人的女儿。这个信息最后是1957年的时候蔡楚生在悼念阮玲玉逝世二十二周年的
-    时候披露的。因为阮玲玉觉得，蔡楚生和自己一样，出身很卑微，就和他很亲近
-    ，所以就把自己是一个保姆的女儿，怎么样和张达民同居，又怎么样认识唐季珊
-    ，又怎么和唐季珊同居，然后唐季珊又爱上了别的舞女，她内心是怎么样痛苦，
-    全部和蔡楚生说了。
+    阮玲玉她是保姆的女儿，可以说一直到阮玲玉死都没有人知道，也就是说张达民一直
+    到最后出了一本书《我和阮玲玉》，并且在书面上说句句是实话的那本书里面，他都
+    没有写阮玲玉是保姆的女儿，可见张达民在阮玲玉死了以后，他还是良心发现为阮玲
+    玉守住这个秘密的。然后知道阮玲玉这个秘密的第二个人就是蔡楚生。当我们看到一
+    本《阮玲玉》的书，在头十行里，我们可以看到，阮玲玉是佣人的女儿。这个信息最
+    后是1957年的时候蔡楚生在悼念阮玲玉逝世二十二周年的时候披露的。因为阮玲玉觉
+    得，蔡楚生和自己一样，出身很卑微，就和他很亲近，所以就把自己是一个保姆的女
+    儿，怎么样和张达民同居，又怎么样认识唐季珊，又怎么和唐季珊同居，然后唐季珊
+    又爱上了别的舞女，她内心是怎么样痛苦，全部和蔡楚生说了。
 
-    但对于一个智识者，尤其是对于一个出到社会上了的女性，却足够使她受伤，更不必说故意张扬，特别渲染的文字了。
+    但对于一个智识者，尤其是对于一个出到社会上了的女性，却足够使她受伤，更不必
+    说故意张扬，特别渲染的文字了。
 
     refs and see also
 
@@ -29033,12 +29637,12 @@ Disallow:
         盘问你。然后你走进去的时候，不要东张西望，更不用看门卫，只管装着很熟悉
         的样子慢悠悠地往里面走就是了。
       - 要做好被盘问的准备。去某个单位之前，最好**叫其他人发一条短信到你的手机**，
-        大概内容就是“请于2015年2月12日上午9点到**市发改委2号会议室参加某某主题
+        大概内容就是“请于 2015 年 2 月 12 日上午 9 点到市发改委 2 号会议室参加某某主题
         的会议。”
       - **准备烟和火机**。虽然我不抽烟，但我出去陌拜的时候，一定要带上烟和火机，以
         备不时之需。
 
-[为什么XML这么笨重的数据结构仍在广泛应用？ - XML - 知乎](http://www.zhihu.com/question/20738607)
+[为什么 XML 这么笨重的数据结构仍在广泛应用？ - XML - 知乎](http://www.zhihu.com/question/20738607)
 
 :   refs and see also
 
@@ -29046,10 +29650,77 @@ Disallow:
 
 [QString 乱谈(1) - 1+1=10 - 博客频道 - CSDN.NET](http://blog.csdn.net/dbzhang800/article/details/7517422)
 
-:   refs and  see also
+:   （这个系列写得十分凌乱。）
 
-      - [QString乱谈(2) - 1+1=10 - 博客频道 - CSDN.NET](http://blog.csdn.net/dbzhang800/article/details/7540905)
-      - [QString 乱谈(3)-Qt5与中文 - 1+1=10 - 博客频道 - CSDN.NET](http://blog.csdn.net/dbzhang800/article/details/7542672)
+    如果翻看 Qt 的源码，或者 Qt 的 (正规一点) 第三方库，我们很少看到这种代码：
+
+    ```cpp
+    // QString myString
+    if (myString == "dbzhang800") {
+    }
+    ```
+
+    取而代之的是
+
+    ```cpp
+    if (myString == QLatin1String("dbzhang800")) {
+    }
+    ```
+
+    `QT_NO_CAST_FROM_ASCII`
+
+    `QTextCodec::setCodecForCStrings()`{.bash}, 该语句会直接影响到字符串比较操作的性能
+
+    因为 Qt5 中引入了全新的 QStringLiteral，而且估计大家会比较喜欢这个东西。毕竟可以用于中文嘛。
+
+    一个问题是，在 Qt5 自身的源码中，何时使用 QStringLiteral，何时使用 QLatin1String，有时特别让人纠结。因为
+
+    ```cpp
+    QStringLiteral("dbzhang800");
+    QLatin1String("dbzhang800");
+    ```
+
+    前者占用的常量区比较多，程序体积会稍微大一点。(但对于中文来说，完全没有这个问题)
+
+    QString 内部不是存储的 utf16 字符串么？而 QStringLiteral 就是编译期直接生成 utf16 字符串。(当然，需要编译器的支持)
+
+    在 GCC 下，这两个都可以使用你自己喜好的编码 (如果不指定，默认都是 UTF8)
+
+    -   `-finput-charset=charset`
+    -   `-fexec-charset=charset`
+
+    `-fwide-exec-charset=charset`
+
+    源码保存成 UTF-8 没有什么困难，但是，执行字符集需要是 UTF-8。没那么简单
+
+    -   对 GCC 来说，这个问题很简单 (默认的编码选项足够了)
+    -   对 MSVC 来说，这个问题异常复杂：
+        +   对 MSVC2003 来说，只要源码保存成不带 BOM 的 utf8 即可
+        +   对 MSVC2005、(没在 SP1 基础上装热补丁的)MSVC2008 来说。完全没办法
+        +   直到 MSVC2010sp1，才算提供了一个解决方案。源码保存成带 BOM 的 utf8，utf16，...，然后添加
+
+    要想跨 GCC4.6+ 和 MSVC2010sp1+，我们需要取它们的交集：也就是 (不过我觉得这个 BOM 不可接受)
+    -   源码保存成带 BOM 的 utf8
+    -   为 MSVC 添加 #pragma
+
+    `#pragma execution_character_set("utf-8")`
+
+    等到 MSVC 支持 C++11 的 String Literals 之时，我们就没必要用那个蹩脚的 pragma 了，直接
+
+    ```cpp
+    char mystr[] = u8"老老实实的学问，来不得半点马虎";
+    ```
+
+    ```cpp
+    char*           u8"中文"
+    char16_t*       u"中文"
+    char32_t*       U"中文"
+    ```
+
+    refs and  see also
+
+      - [QString 乱谈 (2) - 1+1=10 - 博客频道 - CSDN.NET](http://blog.csdn.net/dbzhang800/article/details/7540905)
+      - [QString 乱谈 (3)-Qt5 与中文 - 1+1=10 - 博客频道 - CSDN.NET](http://blog.csdn.net/dbzhang800/article/details/7542672)
       - [Qt stylesheet 源码学习 - 1+1=10 - 博客频道 - CSDN.NET](http://blog.csdn.net/dbzhang800/article/details/6875352)
       - [学习与记忆](http://mindhacks.cn/2008/06/05/how-memory-works/)
 
@@ -29060,24 +29731,33 @@ Disallow:
 
     南美洲圭亚那琼斯镇
 
-    Most of the dead - members of the People's Temple Christian Church - had
-    consumed a soft drink laced with cyanide and sedatives.
+    Most of the dead - members of **the People's Temple Christian Church** - had
+    consumed a soft drink **laced with**
 
-    However, the body of the People's Temple charismatic leader, Jim Jones, was
-    said to have a bullet wound in the right temple, believed to be
-    self-inflicted.
+    -   cyanide (`['saɪə.naɪd]`, n.氰化物) and
+    -   sedatives (`[ˈsedətɪv]`, adj.镇静的；镇定的；止痛的).
 
-    人民圣殿教（The Peoples Temple）
+    However, the body of the People's Temple
+    **charismatic (`[ˌkerɪzˈmætɪk]`, adj.魅力非凡的) leader**, Jim Jones, was
+    said to have a bullet wound in the right temple, believed to be self-inflicted.
+
+    人民圣殿教（The People's Temple）
 
     吉姆·琼斯（Jim Jones）
 
-        refs and see also
+    refs and see also
 
-          - [人民圣殿教_百度百科](http://baike.baidu.com/link?url=jiQo3xkLIyCuG6ECsC6FRI3U0m1xotpkP3og6EOpfRt88_J4JlAfkepFU23qWmqzEsKfK5W7WzCFfAj8T1mbia)
+      - [人民圣殿教_百度百科](http://baike.baidu.com/link?url=jiQo3xkLIyCuG6ECsC6FRI3U0m1xotpkP3og6EOpfRt88_J4JlAfkepFU23qWmqzEsKfK5W7WzCFfAj8T1mbia)
 
 [c++ - RapidJSON library getting a value inside an array by its index - Stack Overflow](http://stackoverflow.com/questions/10037778/rapidjson-library-getting-a-value-inside-an-array-by-its-index)
 
 :   exactly what I want.
+
+    [RapidJSON: 常见问题](http://rapidjson.org/zh-cn/md_doc_faq_8zh-cn.html)
+
+    :   RapidJSON 包含一组单元测试去执行自动测试。Travis（供 Linux 平台）及
+        AppVeyor（供 Windows 平台）会对所有修改进行编译及执行单元测试。在 Linux 下
+        还会使用 Valgrind 去检测内存泄漏。
 
 [Jank Free: Let's Make the Web Silky Smooth!](http://jankfree.org/)
 
@@ -29089,7 +29769,7 @@ Disallow:
     scrolling, transitions, or animations) a browser should create 60
     frames per second to match the refresh rate.
 
-    Jank is any stuttering, juddering or just plain halting that users see
+    **Jank** is any stuttering, juddering or just plain halting that users see
     when a site or app isn't keeping up with the refresh rate. Jank is the
     result of frames taking too long for a browser to make, and it
     negatively impacts your users and how they experience your site or app.
@@ -29098,12 +29778,12 @@ Disallow:
 
 [微软实现深层神经网络重大技术突破 - 微软亚洲研究院](http://www.msra.cn/zh-cn/news/headlines/imagenet-20151211.aspx)
 
-:   2015年12月10日——美国东部时间，微软亚洲研究院视觉计算组在2015 ImageNet计
-    算机识别挑战赛中凭借深层神经网络技术的最新突破，以绝对优势获得图像分类
-    、图像定位以及图像检测全部三个主要项目的冠军。
+:   2015 年 12 月 10 日——美国东部时间，微软亚洲研究院视觉计算组在 2015 ImageNet
+    计算机识别挑战赛中凭借深层神经网络技术的最新突破，以绝对优势获得图像分类、
+    图像定位以及图像检测全部三个主要项目的冠军。
 
-    ImageNet是一个计算机视觉系统识别项目，也是目前世界上图像识别最大的数据
-    库。ImageNet挑战赛每年举办一次，由来自全球顶尖高校、企业及研究机构的研
+    ImageNet 是一个计算机视觉系统识别项目，也是目前世界上图像识别最大的数据
+    库。ImageNet 挑战赛每年举办一次，由来自全球顶尖高校、企业及研究机构的研
     究员组织举办，近年来已经成为计算机视觉领域的标杆。
 
     在做这个“去雾”课题之前的一年多里，他做过很多课题，都没有取得发表论文意
@@ -29114,14 +29794,14 @@ Disallow:
     和如何实现等细节，更多地去关注论文简介及作者所做的与研究相关的工作，他
     人的研究思路，然后在前人的基础上去思考，寻找对自己工作有帮助的要点；
 
-    提高英语能力。虽然GRE、IELTS等考试并不是必须要参加的，但是这类考试确实
+    提高英语能力。虽然 GRE、IELTS 等考试并不是必须要参加的，但是这类考试确实
     能够极大地锻炼英语读写能力。如果不具备优秀的英语能力，在日后的研究中会
     比较吃亏；
 
-    关注细节。无论是撰写论文还是编写代码，很多时候，粗略看上去会感觉还可以
-    ，但是仔细推敲后就会发现各种问题。所以在进行研究的过程中，首先要对自己
-    所做的内容有个基础性的判断，再从读者的角度出发，自己反问自己问题。只有
-    在苛刻的要求下，才会有高质量的文章。
+    关注细节。无论是撰写论文还是编写代码，很多时候，粗略看上去会感觉还可以，但
+    是仔细推敲后就会发现各种问题。所以在进行研究的过程中，首先要对自己所做的内
+    容有个基础性的判断，再从读者的角度出发，自己反问自己问题。只有在苛刻的要求
+    下，才会有高质量的文章。
 
      refs and see also
 
@@ -29133,7 +29813,7 @@ Disallow:
 :   Welcome to Google Test, Google's C++ test framework!
 
     This repository is a merger of the formerly separate GoogleTest and
-    GoogleMock projects. These were so closely related that it makes sense
+    GoogleMock projects. These were so closely related that **it makes sense**
     to maintain and release them together.
 
     后来我在自己的小项目中也用到了 GoogleTest，见 [district10/algo](https://github.com/district10/algo), 还有
@@ -29164,31 +29844,31 @@ Disallow:
 
 :   编译速度更快、编译产出更小、出错提示更友好。尤其是在比较极端的情况下。
 
-    最后一点，其他同学也有讲到，就是Clang采用的是BSD协议。这是苹果资助LLVM、
-    FreeBSD淘汰GCC换用Clang的一个重要原因。
+    最后一点，其他同学也有讲到，就是 Clang 采用的是 BSD 协议。这是苹果资助 LLVM、
+    FreeBSD 淘汰 GCC 换用 Clang 的一个重要原因。
 
-      - 编译速度有显著提升，记得大约是g++的1/3或1/4
+      - 编译速度有显著提升，记得大约是 g++ 的 1/3 或 1/4
       - 编译过程中的内存消耗差别好像不大
-      - 中间产出物及最终链接产物，记得也是g++的1/3或1/4
-      - 相较于g++，编译错误可读性有所飞跃，至少不会出现编译错误过长被截断的问题了
+      - 中间产出物及最终链接产物，记得也是 g++ 的 1/3 或 1/4
+      - 相较于 g++，编译错误可读性有所飞跃，至少不会出现编译错误过长被截断的问题了
 
-    从代码上说，clang结构更简单。因为clang只需要完成词法和语法分析，代码优化和
-    机器代码的生成工作由llvm完成。所以和全部由自己包下的gcc比起来，clang可以更
+    从代码上说，clang 结构更简单。因为 clang 只需要完成词法和语法分析，代码优化和
+    机器代码的生成工作由 llvm 完成。所以和全部由自己包下的 gcc 比起来，clang 可以更
     专注地做好一件事。
 
-    这种结构也使clang可以被单独拿出来用在其他的程序里。比如vim的clang_complete
-    插件就是利用clang进行语法分析后给出精确的自动补全和语法错误提示的。而gcc就
+    这种结构也使 clang 可以被单独拿出来用在其他的程序里。比如 vim 的 clang_complete
+    插件就是利用 clang 进行语法分析后给出精确的自动补全和语法错误提示的。而 gcc 就
     没法很方便地做到这一点。
 
-    在实用性方面，除了有更快的编译速度更快和更友好的出错提示外，clang还内置有静
-    态分析工具，可以对代码进行静态分析（clang --analyze）。这也是gcc做不到的。
+    在实用性方面，除了有更快的编译速度更快和更友好的出错提示外，clang 还内置有静
+    态分析工具，可以对代码进行静态分析（`clang --analyze`{.bash}）。这也是 gcc 做不到的。
 
     除了其它答案介绍的速度和出错信息可读性的优势之外，Clang 的另一个优势是代码
     结构清晰，可以作为库使用，成为其它 app（主要是 IDE）的内嵌 C/C++ parser。这
     样，editor 工具可以使用和 compiler 一样的 parser 来完成 edit-time 的语法检
     查。
 
-    Clang则是以LLVM为后端的一款高效易用，并且与IDE结合很好的编译前端。
+    Clang 则是以 LLVM 为后端的一款高效易用，并且与 IDE 结合很好的编译前端。
 
     refs and see also
 
@@ -29486,27 +30166,34 @@ Disallow:
 
 [开源云计算技术初探 | YY42](http://www.yy42.net/blog/?p=381)
 
-:   Ruby和JavaScript是云时代的主流编程语言，Python紧追，PHP应了那句话了
-    “**not even close**”。heroku将matz叔挖过去的时候，明确放话Ruby是云时代的语言，
-    heroku的整个工程实践也是按照Ruby的最佳工程实践来做的。另外一块那肯定是
-    JVM平台了，云计算肯定会带来JVM平台的另一轮繁荣。至于.NET，本人毫无研究
-    ，就不妄加评论了。
+:   Ruby 和 JavaScript 是云时代的主流编程语言，Python 紧追，PHP 应了那句话了
+    “**not even close**”。heroku 将 matz 叔挖过去的时候，明确放话 Ruby 是云时代
+    的语言，heroku 的整个工程实践也是按照 Ruby 的最佳工程实践来做的。另外一块那
+    肯定是JVM 平台了，云计算肯定会带来 JVM 平台的另一轮繁荣。至于.NET，本人毫无
+    研究，就不妄加评论了。
 
     网络虚拟化技术下一步会得到很大的发展。原有在多种操作系统下的独有技术将
-    快速融合，比如DTrace，ZFS移植到Linux，KVM移植到Solaris。以DTrace为首的
+    快速融合，比如 DTrace，ZFS 移植到 Linux，KVM 移植到 Solaris。以 DTrace 为首的
     强大工具将会得到非常大发展，成为各种开源产品的标配，以增强在发杂环境下
-    的调试能力。个人认为未来有经验的DTrace工程师会活得非常滋润，有点供不应
+    的调试能力。个人认为未来有经验的 DTrace 工程师会活得非常滋润，有点供不应
     求，请联想那么多云，尤其是国内的烂云，少不了要调试的人吧。
 
-    云计算红红火火，但繁荣的市场上也到处是骗子无赖，踏踏实实做点事情不容易
-    。个人认为踏踏实实学好云计算的相关技术，比肤浅地开发几个手机应用有意思
-    。国外很多大学也开设了相关的课程，大家可以多多关注。
+    云计算红红火火，但繁荣的市场上也到处是骗子无赖，踏踏实实做点事情不容易。个
+    人认为踏踏实实学好云计算的相关技术，比肤浅地开发几个手机应用有意思。国外很
+    多大学也开设了相关的课程，大家可以多多关注。
 
     还有些没有说完的话题今后会在补遗中写写。
 
 [Hamming weight - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hamming_weight)
 
-:   The Hamming weight of a string is **the number of symbols** that are different
+:   说一个故事，四五年前我为面试出了一条笔试题目，恰巧和本书的题目 2.1 很相似，
+    计算一个无号整数 (我要求 32-bit，书中的是 8-bit) 在二进制中 1 的个数。当时
+    心想这个题目很简单吧，谁知有些应征者在这题上交白卷，更难找到一些能写到更优
+    化答案的人了，并以为自己做出的解法已经是最优。不过，几年后，我才知道原来这
+    个问题是有正式的学名，叫 Hamming Weight，除了有更快的算法外，在 SIMD 4.2 也
+    有指令去计算。当时就为自己的无知感到惭愧。
+
+    The Hamming weight of a string is **the number of symbols** that are different
     from the zero-symbol of the alphabet used. It is thus equivalent to the
     **Hamming distance** from the all-zero string of the same length. For the most
     typical case, a string of bits, this is the number of 1's in the string. In
@@ -29652,7 +30339,7 @@ Disallow:
 
     If we are allowed greater memory usage, we can calculate the Hamming weight
     faster than the above methods. With unlimited memory, we could simply
-    create a large lookup table of the Hamming weight of every 64 bit integer.
+    create a large **lookup table** of the Hamming weight of every 64 bit integer.
     If we can store a lookup table of the hamming function of every 16 bit
     integer, we can do the following to compute the Hamming weight of every 32
     bit integer.
@@ -29667,21 +30354,15 @@ Disallow:
     }
     ```
 
-    说一个故事，四五年前我为面试出了一条笔试题目，恰巧和本书的题目2.1很相似，计
-    算一个无号整数(我要求32-bit，书中的是8-bit)在二进制中1的个数。当时心想这个
-    题目很简单吧，谁知有些应征者在这题上交白卷，更难找到一些能写到更优化答案的
-    人了，并以为自己做出的解法已经是最优。不过，几年后，我才知道原来这个问题是
-    有正式的学名，叫Hamming Weight
-    (http://en.wikipedia.org/wiki/Hamming_weight)，除了有更快的算法外，在SIMD
-    4.2 也有指令去计算。当时就为自己的无知感到惭愧。
-
     refs and see also
 
       - [迟来的书评和感想──给喜爱编程的朋友 (评论: 编程之美)](https://book.douban.com/review/3010762/)
 
 [trigonometry - How to use the PI constant in C++ - Stack Overflow](http://stackoverflow.com/questions/1727881/how-to-use-the-pi-constant-in-c)
 
-:   ```cpp
+:   use math defines, math.h
+
+    ```cpp
     #define _USE_MATH_DEFINES
     #include <math.h>
     ```
@@ -29740,40 +30421,37 @@ Disallow:
 
 [CodeTank 代码坦克 - 互联网智能代码坦克机器人编程游戏](http://codetank.alloyteam.com/)
 
-[RapidJSON: 常见问题](http://rapidjson.org/zh-cn/md_doc_faq_8zh-cn.html)
-
-:   RapidJSON包含一组单元测试去执行自动测试。Travis（供Linux平台）及
-    AppVeyor（供Windows平台）会对所有修改进行编译及执行单元测试。在Linux下
-    还会使用Valgrind去检测内存泄漏。
-
 [Web 查询引擎 -- Lingoes Translator 灵格斯词霸](http://www.lingoes.cn/zh/translator/webengine.htm)
 
-:   ```tzx-plain
+:   这个 grease monkey 插件可以看看：[search engine jump for academic](https://greasyfork.org/en/scripts/2765-search-engine-jump-for-academic)。
+
+    ```tzx-plain
     搜索引擎类
 
-    |   Google              |   `<engine id="google.com" name="Google" url="http://www.google.com/search?q=[$key]&amp;hl=[$langcode]" />` |
+    |   Google           |   `<engine id="google.com" name="Google" url="http://www.google.com/search?q=[$key]&amp;hl=[$langcode]" />` |
     | :---: | :--- |
-    |   Yahoo               |   `<engine id="yahoo.com" name="Yahoo" url="http://search.yahoo.com/search?p=[$key]&amp;ei=UTF-8" />` |
-    |   Bing                |   `<engine id="bing.com" name="Bing" url="http://www.bing.com/search?q=[$key]" />` |
-    |   百度                |   `<engine id="baidu.com" name="百度" url="http://www.baidu.com/s?wd=[$key]" />` |
-    |   搜狗                |   `<engine id="sogou.com" name="搜狗" url="http://www.sogou.com/web?query=[$key]" />` |
-    |   Yahoo! 奇摩         |   `<engine id="tw.search.yahoo.com" name="Yahoo! 奇摩" url="http://tw.search.yahoo.com/search?p=[$key]&ei=UTF-8" />` |
+    |   Yahoo            |   `<engine id="yahoo.com" name="Yahoo" url="http://search.yahoo.com/search?p=[$key]&amp;ei=UTF-8" />` |
+    |   Bing             |   `<engine id="bing.com" name="Bing" url="http://www.bing.com/search?q=[$key]" />` |
+    |   百度             |   `<engine id="baidu.com" name="百度" url="http://www.baidu.com/s?wd=[$key]" />` |
+    |   搜狗             |   `<engine id="sogou.com" name="搜狗" url="http://www.sogou.com/web?query=[$key]" />` |
+    |   Yahoo! 奇摩      |   `<engine id="tw.search.yahoo.com" name="Yahoo! 奇摩" url="http://tw.search.yahoo.com/search?p=[$key]&ei=UTF-8" />` |
 
     在线词典英汉简体类
 
-    |   海词在线 Dict.cn            |  `<engine id="dict.cn" name="海词在线" url="http://dict.cn/search.php?q=[$key]&amp;placeholder=Lingoes" />`  |
+    |   海词在线 Dict.cn |  `<engine id="dict.cn" name="海词在线" url="http://dict.cn/search.php?q=[$key]&amp;placeholder=Lingoes" />`  |
     | :---: | :--- |
-    |   百度词典                    |  `"百度词典", "http://www.baidu.com/baidu?ie=utf-8&ct=1048576&word=[$key]"`  |
-    |   爱词霸                      |  `<engine id="iciba.com" name="爱词霸" url="http://www.iciba.com/search?s=[$key]" codepage="" />`  |
-    |   Babylon                     |  `<engine id="babylon.com" name="Babylon" url="http://dictionary.babylon.com/[$key]/" />`  |
-    |   汉典                        |  `<engine id="zdic.net" name="汉典" url="http://www.zdic.net/sousuo/?q=[$key]" codepage="" />`  |
-    |   CNKI 科技词典               |  `<engine id="cnki.net" name="CNKI 科技词典" url="http://dict.cnki.net/dict_result.aspx?tjType=all&amp;searchword=[$key]" />`  |
-    |   有道词典                    |  `<engine id="yodao.com" name="有道" url="http://dict.yodao.com/search?q=[$key]&ue=utf8&keyfrom=dict.index" />`  |
+    |   百度词典         |  `"百度词典", "http://www.baidu.com/baidu?ie=utf-8&ct=1048576&word=[$key]"`  |
+    |   爱词霸           |  `<engine id="iciba.com" name="爱词霸" url="http://www.iciba.com/search?s=[$key]" codepage="" />`  |
+    |   Babylon          |  `<engine id="babylon.com" name="Babylon" url="http://dictionary.babylon.com/[$key]/" />`  |
+    |   汉典             |  `<engine id="zdic.net" name="汉典" url="http://www.zdic.net/sousuo/?q=[$key]" codepage="" />`  |
+    |   CNKI 科技词典    |  `<engine id="cnki.net" name="CNKI 科技词典" url="http://dict.cnki.net/dict_result.aspx?tjType=all&amp;searchword=[$key]" />`  |
+    |   有道词典         |  `<engine id="yodao.com" name="有道" url="http://dict.yodao.com/search?q=[$key]&ue=utf8&keyfrom=dict.index" />`  |
     ```
 
 [Ubuntu 14.04 重启网卡 — » Kumu's Blog](http://blog.opskumu.com/ubuntu-network-br0.html)
 
-:   > Stopping or restarting the networking job is not supported. Use `ifdown`{.bash} & `ifup`{.bash} to reconfigure desired interface.
+:   >   Stopping or restarting the networking job is not supported. Use
+    >   `ifdown`{.bash} & `ifup`{.bash} to reconfigure desired interface.
 
     ```bash
     $ cat /etc/issue
@@ -29824,58 +30502,58 @@ Disallow:
 
 [Jeff Dean facts: How a Google programmer became the Chuck Norris of the Internet.](http://www.slate.com/articles/technology/doers/2013/01/jeff_dean_facts_how_a_google_programmer_became_the_chuck_norris_of_the_internet.single.html)
 
-:   #. If you could harness the power of the multiverse you could try every possible option in the design space and see which worked best. But that's crazy impractical, isn't it?
-    #. Dr. Dean thinks an important skill for every software engineer is
-       the ability to estimate the performance of alternative systems,
-       using back of the envelope calculations, without having to build
-       them.
+:   -   If you could harness the power of the multiverse you could try every
+        possible option in the design space and see which worked best. But
+        that's crazy impractical, isn't it?
+    -   Dr. Dean thinks an important skill for every software engineer is
+        the ability to **estimate the performance** of alternative systems, using
+        back of the envelope calculations, without having to build them.
 
     Numbers Everyone Should Know
 
     To evaluate design alternatives you first need a good sense of how long typical operations will take. Dr. Dean gives this list:
 
-    #. L1 cache reference 0.5 ns
-    #. Branch mispredict 5 ns
-    #. L2 cache reference 7 ns
-    #. Mutex lock/unlock 100 ns
-    #. Main memory reference 100 ns
-    #. Compress 1K bytes with Zippy 10,000 ns
-    #. Send 2K bytes over 1 Gbps network 20,000 ns
-    #. Read 1 MB sequentially from memory 250,000 ns
-    #. Round trip within same datacenter 500,000 ns
-    #. Disk seek 10,000,000 ns
-    #. Read 1 MB sequentially from network 10,000,000 ns
-    #. Read 1 MB sequentially from disk 30,000,000 ns
-    #. Send packet CA->Netherlands->CA 150,000,000 ns
+    -   L1 cache reference 0.5 ns
+    -   Branch mispredict 5 ns
+    -   L2 cache reference 7 ns
+    -   Mutex lock/unlock 100 ns
+    -   Main memory reference 100 ns
+    -   Compress 1K bytes with Zippy 10,000 ns
+    -   Send 2K bytes over 1 Gbps network 20,000 ns
+    -   Read 1 MB sequentially from memory 250,000 ns
+    -   Round trip within same datacenter 500,000 ns
+    -   Disk seek 10,000,000 ns
+    -   Read 1 MB sequentially from network 10,000,000 ns
+    -   Read 1 MB sequentially from disk 30,000,000 ns
+    -   Send packet CA->Netherlands->CA 150,000,000 ns
 
     Some things to notice:
 
-    #. Notice the magnitude differences in the performance of different options.
-    #. Datacenters are far away so it takes a long time to send anything between them.
-    #. Memory is fast and disks are slow.
-    #. By using a cheap compression algorithm a lot (by a factor of 2) of network bandwidth can be saved.
-    #. Writes are 40 times more expensive than reads.
-    #. Global shared data is expensive. This is a fundamental limitation of
-       distributed systems. The lock contention in shared heavily written
-       objects kills performance as transactions become serialized and
-       slow.
-    #. Architect for scaling writes.
-    #. Optimize for low write contention.
-    #. Optimize wide. Make writes as parallel as you can.
+    -   Notice the magnitude differences in the performance of different options.
+    -   Datacenters are far away so it takes a long time to send anything between them.
+    -   Memory is fast and disks are slow.
+    -   By using a cheap compression algorithm a lot (by a factor of 2) of network bandwidth can be saved.
+    -   Writes are 40 times more expensive than reads.
+    -   Global shared data is expensive. This is a fundamental limitation of
+        distributed systems. The lock contention in shared heavily written
+        objects kills performance as transactions become serialized and slow.
+    -   Architect for scaling writes.
+    -   Optimize for low write contention.
+    -   Optimize wide. Make writes as parallel as you can.
 
     Lessons Learned
 
-    #. Back-of-the-envelope calculations allow you to take a look at
-       different variations.
-    #. When designing your system, these are the kind of calculations you
-       should be doing over and over in your head.
-    #. Know the back of the envelope numbers for the building blocks of
-       your system. It's not good enough to just know the generic
-       performance numbers, you have to know how your subsystems perform.
-       You can't make decent back-of-the-envelope calculations if you don't
-       know what's going on.
-    #. Monitor and measure every part of your system so you can make these
-       sorts of projections from real data.
+    -   Back-of-the-envelope calculations allow you to take a look at different
+        variations.
+    -   When designing your system, these are the kind of calculations you
+        should be doing over and over in your head.
+    -   Know the back of the envelope numbers for the building blocks of your
+        system. It's not good enough to just know the generic performance
+        numbers, you have to know how your subsystems perform.  You can't make
+        decent back-of-the-envelope calculations if you don't know what's going
+        on.
+    -   Monitor and measure every part of your system so you can make these
+        sorts of projections from real data.
 
     refs and see also
 
@@ -29890,35 +30568,35 @@ Disallow:
 :   TL;DR
 
       - 期待你的加入 We're Hiring!
-      - APUE Unix环境高级编程(Advanced Programming Unix Environment)
-      - UNP Unix网络编程(Unix Network Programming)
-      - linux 将原来APUE 和 UNP 中的一部分内容放在这里面来了，这样可以保持这两篇内容比较稳定。
-      - tcmalloc Google的开源线程缓存内存分配器，解决多线程下面内存分配效率问题。
-      - gperftools Google的应用级别性能分析工具，包含 tcmalloc.
-      - ubuntu 如何更好地使用Ubuntu. 之前有过痛苦的经历 . 主要记录自己使用出现的问题.
-      - macosx 如何更好地使用Mac. 以前使用Windows，后来转向Ubuntu，再后来买了个MBA.
-      - docker 基于lxc(linux container)的分发应用工具和平台.
-      - libev 开源的事件触发器。被认为是更高效的libevent.
-      - muduo 开源的网络编程框架。作者理想中的网络编程框架实现，里面有很多mina/netty的影子。
-      - kylin Baidu in-house的异步编程框架，是linsd(百度首席架构师林仕鼎)的神作.
+      - APUE Unix 环境高级编程 (Advanced Programming Unix Environment)
+      - UNP Unix 网络编程 (Unix Network Programming)
+      - linux 将原来 APUE 和 UNP 中的一部分内容放在这里面来了，这样可以保持这两篇内容比较稳定。
+      - tcmalloc Google 的开源线程缓存内存分配器，解决多线程下面内存分配效率问题。
+      - gperftools Google 的应用级别性能分析工具，包含 tcmalloc.
+      - ubuntu 如何更好地使用 Ubuntu. 之前有过痛苦的经历 . 主要记录自己使用出现的问题.
+      - macosx 如何更好地使用 Mac. 以前使用 Windows，后来转向 Ubuntu，再后来买了个 MBA.
+      - docker 基于 lxc(linux container) 的分发应用工具和平台.
+      - libev 开源的事件触发器。被认为是更高效的 libevent.
+      - muduo 开源的网络编程框架。作者理想中的网络编程框架实现，里面有很多 mina/netty 的影子。
+      - kylin Baidu in-house 的异步编程框架，是 linsd(百度首席架构师林仕鼎) 的神作.
       - zeromq 开源的消息传输系统。颠覆我们思考和编写网络通信程序的方式。
       - netty an asynchronous event-driven network application framework in Java based on Java NIO.
       - finagle an extensible RPC system for the JVM, used to construct high-concurrency servers.
-      - gunicorn Python WSGI HTTP Server. green unicorn(Ruby实现)
-      - leveldb Google的开源kv存储系统。支持billion级别的数据量，适合于 写少读多 写多读少的情况。
-      - mongodb 面向文档的分布式存储系统，但是却可以针对文档字段索引来加快查询。功能上比通常我们认为的NoSQL强但是弱于RDBMS.
+      - gunicorn Python WSGI HTTP Server. green unicorn(Ruby 实现)
+      - leveldb Google 的开源 kv 存储系统。支持 billion 级别的数据量，适合于 写少读多 写多读少的情况。
+      - mongodb 面向文档的分布式存储系统，但是却可以针对文档字段索引来加快查询。功能上比通常我们认为的 NoSQL 强但是弱于 RDBMS.
       - redis 内存存储系统，支持丰富的数据类型以及相应的计
       - mysql 开源关系型数据库。The world's most popular open source database.
-      - rcfile / orcfile / parquet 几种列式存储(columnar storage)实现
-      - Cracking The Coding Interview 据说算法分为三种：面试算法，ACM算法，算法=D
+      - rcfile / orcfile / parquet 几种列式存储 (columnar storage) 实现
+      - Cracking The Coding Interview 据说算法分为三种：面试算法，ACM 算法，算法 =D
       - Bitcoin: A Peer-to-Peer Electronic Cash System 比特币论文
-      - snappy Google的开源压缩解压库。在满足一定压缩比率的条件下着重提升压缩和解压速度。
-      - lzf redis 使用的开源压缩解压库。轻量(两个文件)可以很容易地独立纳入项目。
+      - snappy Google 的开源压缩解压库。在满足一定压缩比率的条件下着重提升压缩和解压速度。
+      - lzf redis 使用的开源压缩解压库。轻量 (两个文件) 可以很容易地独立纳入项目。
       - sklearn python scikit learn. 机器学习包.
-      - caffe C++实现的深度学习框架，有python和matlab的扩展接口
+      - caffe C++ 实现的深度学习框架，有 python 和 matlab 的扩展接口
       - 机器学习基石 on Coursera
       - 机器学习技法 on Coursera
-      - The Django Book 不错的Django入门材料
+      - The Django Book 不错的 Django 入门材料
 
 [为什么会出现LNK2005"符号已定义"的链接错误? - 歌谣在风中飘舞 - 博客频道 - CSDN.NET](http://blog.csdn.net/soloist/article/details/493238)
 
@@ -30005,16 +30683,17 @@ Disallow:
 
 [Wikipedia:Too long; didn't read - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn%27t_read)
 
-:   **Too long; didn't read** (abbreviated **tl;dr** (注意分号后没有空格) and **tldr**) is a shorthand notation
-    added by an editor indicating a passage appeared to be too long to invest
-    the time to digest. Long used on the Internet, it has birthed the wikilink
-    **TL;DR** to indicate a cited passage is being protested. Wall of text is
-    kindred.
+:   **Too long; didn't read** (abbreviated **tl;dr** (注意分号后没有空格) and
+    **tldr**) is a shorthand notation added by an editor indicating a passage
+    appeared to be too long to invest the time to digest. Long used on the
+    Internet, it has birthed the wikilink **TL;DR** to indicate a cited passage
+    is being protested. Wall of text is kindred. (就跟 wall of text 差不多意思。)
+
+    kindred，`['kɪndrəd]`, n.亲属；亲
 
     The tl;dr label is sometimes used constructively by an author to introduce
-    a short summation of a longer piece. However, it is all too often invoked
-    as a tactic to thwart collaborative editing, or, worse, a stoop to
-    ridicule.
+    **a short summation of a longer piece**. However, it is all too often invoked
+    as a tactic to **thwart collaborative editing**, or, worse, a **stoop to ridicule**.
 
     This essay examines tl;dr as used in Wikipedia discussions, offering
     insight into the cause of excessive length, suggestions on how to reduce
@@ -30048,21 +30727,22 @@ Disallow:
 
 :   导师是否要为学生找工作，这是个仁者见仁，智者见智的问题。
 
-    当时正值美国大萧条时期（Great Depression,1929-1933年）。特尔曼教授一直为该
+    当时正值美国大萧条时期（Great Depression,1929-1933 年）。特尔曼教授一直为该
     系的学生能否找到好的就业而担忧（此处看，他是一个负责任、深谋远虑、敢于担当
-    的人！）。他感觉非常困扰的是，他最好的学生不得不到东海岸---在无线电领域去谋
-    个职位，他心中的一个念头就是要在斯坦福大学就地建立当时的新兴的无线电技术‘中
-    心’‘以此解决就业、留住人才’。(…was concerned by the lack of good employment
-    opportunities in the area for Stanford engineering graduates. It troubled
-    him that his best graduates had to go to the East coast to find employment…
-    .. His solution was to establish the then-new radio technology locally.)
+    的人！）。他感觉非常困扰的是，他最好的学生不得不到东海岸 --- 在无线电领域去
+    谋个职位，他心中的一个念头就是要在斯坦福大学就地建立当时的新兴的无线电技术
+    ‘中心’‘以此解决就业、留住人才’。(…was concerned by the lack of good
+    employment opportunities in the area for Stanford engineering graduates. It
+    troubled him that his best graduates had to go to the East coast to find
+    employment….. His solution was to establish the then-new radio technology
+    locally.)
 
     纵观历史，清晰可见，硅谷的成立，很大程度上是依赖于斯坦福大学电子科学系的教
     授特尔曼。他一开始的出发点就是为了让那些好的学生留下来找到工作为宗旨，而不
     必到繁华的东部去发展，而是就地发展。在此过程中，他十分成功地连接了大学和企
-    业之间的关系。在斯坦福大学周围建立工业园区(大约1951年)，并使得而且只能是从
-    事科技的公司进入工业园区。由此，诞生出了世界上最有创新力的地方，成为世界其
-    他各国竞相效仿的对象，积极地复制硅谷，造就自己国家的科技创新基地！
+    业之间的关系。在斯坦福大学周围建立工业园区 (大约 1951 年)，并使得而且只能是
+    从事科技的公司进入工业园区。由此，诞生出了世界上最有创新力的地方，成为世界
+    其他各国竞相效仿的对象，积极地复制硅谷，造就自己国家的科技创新基地！
 
     导师推荐，体现了导师的一份爱心和雄心，这里面包含着导师的一份自信：相信我的
     学生是好样的。而作为学生，在新的境地环境，也不要辜负导师的一片苦心。导师不
@@ -30073,13 +30753,13 @@ Disallow:
 :   Any capitalization is incorrect unless each letter is capitalized.
     **Title case** is incorrect.
 
-    **Recasting the sentence avoids the problem.** (写论文的时候经常这么干哈哈。)
+    **Recasting the sentence** avoids the problem. (写论文的时候经常这么干哈哈。)
 
-    > "But I tell you, a cat needs a name that's particular,
+    >   "But I tell you, a cat needs a name that's particular,
     >
-    > A name that's peculiar (`[pɪ'kjulɪɚ]`, 独特的), and more dignified (有尊严的)."
+    >   A name that's peculiar (`[pɪ'kjulɪɚ]`, 独特的), and more dignified (有尊严的)."
     >
-    > -- Old Possum
+    >   -- Old Possum
 
     refs and see also
 
@@ -30130,31 +30810,31 @@ Disallow:
     > us who draw pictures all day even tempted to think that someone who is
     > doodling or drawing pictures in a meeting or lecture is not paying attention?
 
-    It turns out that the simple act of scribbling on a page helps us think, remember and learn.
+    It turns out that the **simple act of scribbling on a page** helps us think, remember and learn.
 
     But the author Sunni Brown offers my favorite definition of "doodle" in her TED talk, "Doodlers, unite!":
 
-    > “In the 17th century, a doodle was a simpleton or a fool, as in “Yankee
-    > Doodle.” In the 18th century, it became a verb, and it meant to swindle or
-    > ridicule or to make fun of someone. In the 19th century, it was a corrupt
-    > politician. And today, we have what is perhaps our most offensive definition,
-    > at least to me, which is the following: “To doodle officially means to
-    > dawdle, to dilly dally, to monkey around, to make meaningless marks, to do
-    > something of little value, substance or import and,” my personal favorite, “
-    > to do nothing.” No wonder people are averse to doodling at work. Doing
-    > nothing at work is akin to masturbating at work. It’s totally inappropriate.”
+    >   “In the 17th century, a doodle was a **simpleton** or a fool, as in “**Yankee Doodle**.”
+    >   In the 18th century, it became a verb, and it meant to swindle or
+    >   ridicule or to make fun of someone. In the 19th century, it was a corrupt
+    >   politician. And today, we have what is perhaps our most offensive definition,
+    >   at least to me, which is the following: “To doodle officially means to
+    >   dawdle, to dilly dally, to monkey around, to make meaningless marks, to do
+    >   something of little value, substance or import and,” my personal favorite, “
+    >   to do nothing.” No wonder people are averse to doodling at work. Doing
+    >   nothing at work is akin to masturbating at work. It’s totally inappropriate.”
 
     37% of the population are visual learners.
 
     The doodlers recalled 29% more information.
 
-    > “Doodling is really to make spontaneous marks to help yourself think. That is
-    > why millions of people doodle. Here’s another interesting truth about the
-    > doodle: People who doodle when they’re exposed to verbal information retain
-    > more of that information than their non-doodling counterparts. We think
-    > doodling is something you do when you lose focus, but in reality, it is a
-    > preemptive measure to stop you from losing focus. Additionally, it has a
-    > profound effect on creative problem-solving and deep information processing.”
+    >   “Doodling is really to make spontaneous marks to help yourself think. That is
+    >   why millions of people doodle. Here’s another interesting truth about the
+    >   doodle: People who doodle when they’re exposed to verbal information retain
+    >   more of that information than their non-doodling counterparts. We think
+    >   doodling is something you do when you lose focus, but in reality, it is a
+    >   preemptive measure to stop you from losing focus. Additionally, it has a
+    >   profound effect on creative problem-solving and deep information processing.”
 
 [cmd - Windows equivalent to UNIX pwd - Stack Overflow](http://stackoverflow.com/questions/921741/windows-equivalent-to-unix-pwd)
 
@@ -30227,8 +30907,8 @@ Disallow:
     英文多个单词肯定加，中文，最好也加了。
 
     最后，我不想再和任何人争论字体的优劣，本文的目的是介绍使用方法而不是字体选
-    择。“美”或“丑”向来都是很主观的事情，只因为我是作者，所以我免不了会有倾向性
-    ，然而我也相信你自己会有正确的判断，和我较真没有任何实际意义。
+    择。“美”或“丑”向来都是很主观的事情，只因为我是作者，所以我免不了会有倾向性，
+    然而我也相信你自己会有正确的判断，和我较真没有任何实际意义。
 
     （哈哈，作者被评论区打败。）
 
@@ -30269,16 +30949,16 @@ Disallow:
 
 :   为什么说 Vim 写代码快？ 前提你累死过3次，成功配置了Vim。那么开始神奇的Vim之旅。你就发现。
 
-    1. 你删代码比队友快 “first blood”
-    2. 自动补全比队友快
-    3. 在20个G的文件堆里定位代码各种秒杀你队友
-    4. 在vim中完成各种shell ， 秒杀你队友 “Killing spree (无节制的狂热行为)”!
-    5. 优雅的更新升级， 删除 Vim插件（前提 Vundle） “Dominating”!
-    6. 随性的自定义快捷键，完全属于你自己的风格， 一个配置文件随身带着走。或者压缩Vim文件包带着走， 想去哪就去哪，不用等你队友带节奏。 Unstoppable！
-    7. 你队友还在用鼠标？那你已经进化了 。 Wicked Sick！！
-    8. 什么？ 开始用 Vim Markdown 来写文档了？ 我草，你已经超神了！！ God Like！！！
-    9. 你已经离不开Vim了。 从最开始被各种折腾到想要砸键盘的你， 如今你已经爱上他了。 aM-m-m-m....（重复8次）Monster Kill
-    10. 你注定和 Vim 过完这一生！......Holy Shit
+    -   你删代码比队友快 “first blood”
+    -   自动补全比队友快
+    -   在20个G的文件堆里定位代码各种秒杀你队友
+    -   在vim中完成各种shell ， 秒杀你队友 “Killing spree (无节制的狂热行为)”!
+    -   优雅的更新升级， 删除 Vim插件（前提 Vundle） “Dominating”!
+    -   随性的自定义快捷键，完全属于你自己的风格， 一个配置文件随身带着走。或者压缩Vim文件包带着走， 想去哪就去哪，不用等你队友带节奏。 Unstoppable！
+    -   你队友还在用鼠标？那你已经进化了 。 Wicked Sick！！
+    -   什么？ 开始用 Vim Markdown 来写文档了？ 我草，你已经超神了！！ God Like！！！
+    -   你已经离不开Vim了。 从最开始被各种折腾到想要砸键盘的你， 如今你已经爱上他了。 aM-m-m-m....（重复8次）Monster Kill
+    -   你注定和 Vim 过完这一生！......Holy Shit
 
 [如何评价坂井泉水？ - 你如何评价 X - 知乎](http://www.zhihu.com/question/22177383)
 
