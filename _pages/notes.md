@@ -19,6 +19,355 @@ tags:
 Notes | 笔记[^1]
 ================
 
+[Jeffrey Friedl's Blog » Source of the famous “Now you have two problems” quote](http://regex.info/blog/2006-09-15/247)
+
+:   Some people, when confronted with a problem, think
+    “I know, I'll use regular expressions.”   Now they have two problems.
+
+[10 Cloverfield Lane: Original Ending Revealed | Collider](http://collider.com/10-cloverfield-lane-ending-original/)
+
+:   clover, `['kloʊvər]`, 三叶草；车轴草, 四叶草；幸运草
+
+    refs and see also
+
+      - [外星人不是你想有就有的那么自然 (科洛弗道 10 号 影评)](https://movie.douban.com/review/7820965/)
+      - [DV 至死 (科洛弗档案 影评)](https://movie.douban.com/review/1364497/)
+
+[Free Gulim Fonts](http://www.free-fonts.com/gulim)
+
+:   gulim, font, gulim font, font gulim.
+
+建模主要分为建模、编程、论文三个部分，但是要完全分开的你会发现人力资源闲置，所
+以推荐每位队员主攻其中两项左右。所以建议千万千万不要三个数学学院的同学凑一
+队！！！（如果三个啥子都会的数学大神凑一起也...没有...关系）。
+
+-   在新 tab 打开文件：`Control-w gf`{.vim}。
+-   在新 window 打开文件：`Control-w f`{.vim}。
+
+[年轻就该多尝试，教你20小时Get一项新技能 - 简书](http://www.jianshu.com/p/8e8c250ae5b0)
+
+:   步骤四：当你完成了第一幅作品后，其实你就已经入门了，并且克服了恐惧。
+
+[如何以“正确的姿势”阅读开源软件代码 - 简书](http://www.jianshu.com/p/8e96d21052fd)
+
+我无意神化史蒂夫·乔布斯，但他老人家说的话实在是太到位了：
+
+>   和聪明人在一起工作，最大的好处就是不用考虑他们的自尊。
+
+`:h object-select`{.vim}
+
+:   ```vim
+    "dl"    delete character (alias: "x")       |dl|
+    "diw"   delete inner word           *diw*
+    "daw"   delete a word               *daw*
+    "diW"   delete inner WORD (see |WORD|)      *diW*
+    "daW"   delete a WORD (see |WORD|)      *daW*
+    "dgn"   delete the next search pattern match    *dgn*
+    "dd"    delete one line             |dd|
+    "dis"   delete inner sentence           *dis*
+    "das"   delete a sentence           *das*
+    "dib"   delete inner '(' ')' block      *dib*
+    "dab"   delete a '(' ')' block          *dab*
+    "dip"   delete inner paragraph          *dip*
+    "dap"   delete a paragraph          *dap*
+    "diB"   delete inner '{' '}' block      *diB*
+    "daB"   delete a '{' '}' block          *daB*
+    ```
+
+    `:shell`{.vim}
+
+    rot13: `g?`
+
+[pandoc/Highlighting.hs at 676b800993fffcc0e2ba44c88cfb6d552a37a136 · jgm/pandoc](https://github.com/jgm/pandoc/blob/676b800993fffcc0e2ba44c88cfb6d552a37a136/src/Text/Pandoc/Highlighting.hs)
+
+:   ```haskell
+    langsList :: [(String, String)]
+    langsList =    [ ("awk","Awk")
+                   ,("bash","bash")
+                   ,("c","C")
+                   ,("commonlisp","Lisp")
+                   ,("cpp","C++")
+                   ,("erlang","erlang")
+                   ,("fortran","Fortran")
+                   ,("gnuassembler","Assembler")
+                   ,("haskell","Haskell")
+                   ,("html","HTML")
+                   ,("java","Java")
+                   ,("makefile","make")
+                   ,("matlab","Matlab")
+                   ,("perl","Perl")
+                   ,("php","PHP")
+                   ,("python","Python")
+                   ,("r","R")
+                   ,("ruby","Ruby")
+                   ,("sql","SQL")
+                   ,("verilog","Verilog")
+                   ,("vhdl","VHDL")
+                   ,("xml","XML")
+                   ,("xslt","XSLT") ]
+
+    listingsLangs :: [String]
+    listingsLangs = ["Ada","Java","Prolog","Algol","JVMIS","Promela",
+        "Ant","ksh","Python","Assembler","Lisp","R","Awk",
+        "Logo","Reduce","bash","make","Rexx","Basic",
+        "Mathematica","RSL","C","Matlab","Ruby","C++",
+        "Mercury","S","Caml","MetaPost","SAS","Clean",
+        "Miranda","Scilab","Cobol","Mizar","sh","Comal",
+        "ML","SHELXL","csh","Modula-2","Simula","Delphi",
+        "MuPAD","SQL","Eiffel","NASTRAN","tcl","Elan",
+        "Oberon-2","TeX","erlang","OCL","VBScript","Euphoria",
+        "Octave","Verilog","Fortran","Oz","VHDL","GCL",
+        "Pascal","VRML","Gnuplot","Perl","XML","Haskell",
+        "PHP","XSLT","HTML","PL/I","GAP"]
+    ```
+
+    其实直接运行 `pandoc -v`{.bash} 就可以知道支持的语言高亮……
+
+    ```bash
+    $ pandoc -v
+    pandoc.exe 1.17.0.2
+    Compiled with texmath 0.8.5, highlighting-kate 0.6.2.
+    Syntax highlighting is supported for the following languages:
+        abc, actionscript, ada, agda, apache, asn1, asp, awk, bash, bibtex, boo, c,
+        changelog, clojure, cmake, coffee, coldfusion, commonlisp, cpp, cs, css,
+        curry, d, diff, djangotemplate, dockerfile, dot, doxygen, doxygenlua, dtd,
+        eiffel, elixir, email, erlang, fasm, fortran, fsharp, gcc, glsl,
+        gnuassembler, go, hamlet, haskell, haxe, html, idris, ini, isocpp, java,
+        javadoc, javascript, json, jsp, julia, kotlin, latex, lex, lilypond,
+        literatecurry, literatehaskell, llvm, lua, m4, makefile, mandoc, markdown,
+        mathematica, matlab, maxima, mediawiki, metafont, mips, modelines, modula2,
+        modula3, monobasic, nasm, noweb, objectivec, objectivecpp, ocaml, octave,
+        opencl, pascal, perl, php, pike, postscript, prolog, pure, python, r,
+        relaxng, relaxngcompact, rest, rhtml, roff, ruby, rust, scala, scheme, sci,
+        sed, sgml, sql, sqlmysql, sqlpostgresql, tcl, tcsh, texinfo, verilog, vhdl,
+        xml, xorg, xslt, xul, yacc, yaml, zsh
+    Default user data directory: C:\Users\cvrs\AppData\Roaming\pandoc
+    Copyright (C) 2006-2016 John MacFarlane
+    Web:  http://pandoc.org
+    This is free software; see the source for copying conditions.
+    There is no warranty, not even for merchantability or fitness
+    for a particular purpose.
+    ```
+
+    refs and see also
+
+      - [highlight.js demo](https://highlightjs.org/static/demo/)
+
+[Everything you need to know about Vim - 推酷](http://www.tuicool.com/articles/Zr2maur)
+
+[vi - How do I use vim registers? - Stack Overflow](http://stackoverflow.com/questions/1497958/how-do-i-use-vim-registers)
+
+:   ~~In windows. In X (Linux, possibly also OS X). 这个居然用 in，我一直用 on 来着……~~
+
+    就是用 on 啊！on windows，on linux！Stack Overflow 上看来大家并不介意别人的语法出问题……
+
+    Released in 1989, it has been distributed widely as the shell for the GNU
+    operating system and as a default shell on Linux and OS X.
+
+[VIM: how to execute the contents of a buffer? - Stack Overflow](http://stackoverflow.com/questions/5326430/vim-how-to-execute-the-contents-of-a-buffer)
+
+:   ```
+    Use:
+
+    :%y"                      (alternatively: ggyG)
+    :@"
+    ```
+
+    It will copy whole buffer into default register and then run it.
+
+    See :help :y and :help :@ (and also :help range maybe).
+
+    ```vim
+    :so[urce] %
+    ```
+
+[俄罗斯黑客在国际黑客圈中地位如何？ - 网络安全 - 知乎](http://www.zhihu.com/question/24765834)
+
+:   毛子数学好，喜欢宅，最可怕的是他们就算趴在一坨屎上，还是照样该干嘛干嘛，
+    心理素质应该是最高的。
+
+    refs and see also
+
+      - [Top Ten Russian Stereotypes Which Are True](http://gorussia.about.com/od/Russian_history_and_culture/tp/Top-10-Russian-Stereotypes-Which-Are-True.htm)
+
+[如何看待中国数学竞赛落败引网民狂欢？ - 清华大学 - 知乎](http://www.zhihu.com/question/34356024)
+
+[为什么俄罗斯人在通常被认为考验智力的领域大有作为？ - 数学竞赛 - 知乎](http://www.zhihu.com/question/24315673)
+
+:   说一个俄国数学教授的故事。 我和一个同学争论一个 PDE 问题，他在旁边听。然后他
+    突然对我说：“你们中国人都太 peaceful 了，我在你这个年纪，早就揍他了。你说了这
+    么多遍，你是对的，但是他还是不愿意相信……”
+
+    @林葭 说的是一个看似娱乐，其实靠谱的例子。 反映了国民性的一部分：
+    偏激（能死磕）+爱冒险+有想象力。这种特性是非常适合做科研的。
+
+    我想应该和苏俄极端重视基础学科的研究和教育分不开。
+
+    别的不多说了，就提一个名字：吉米多维奇，中国的理工科大学生应该都不陌生吧。
+    当年我们老师说，把吉米多维奇的 6 册习题集啃完，数学分析这门课就过关了。尼玛这
+    位前辈整了 4000 多道题，把这个领域的各种题型各种可能性一网打尽啊！一个理工科
+    学生，要是把这些题目吃透了，那得打下多好的底子。
+
+    美苏争霸期间，美帝事实上一直在科技树领先。苏俄没有高性能计算机，没有大规模
+    集成电路，硬是靠着扎实的基础学科功底，在各个领域搞暴力美学，以此跟美帝抗衡。
+    仅此一点，就足见苏俄对基础学科的重视到什么地步了。
+
+    欧拉完全失明以后，仍然以惊人的毅力与黑暗搏斗，凭着记忆和心算进行研究，直到
+    逝世，竟达 17 年之久．好了，说了这么多关于欧拉的，（其实是百度出来的）就为
+    了说明一点，在 18 世纪俄罗斯开办科学院后，整个科技文化都处于一个世界领先的
+    水平，这就为现在奠定了强大的历史基础。而后，苏联时期从斯大林开始不管是冷战
+    需要还是自身野心，俄罗斯都在大力发展重工业以及航空航天业。而这些行业的发展
+    都需要应用数学的支撑，在国家的大力扶持下，大量数学爱好者终身投身数学行业，
+    且不愁吃穿，带着对祖国的一腔热爱，做出了巨大贡献... 苏联爱国教育也是很成功
+    的。再后来，苏联解体了，对数学没那么多资金支持了，但是数学吧，其实也不需要
+    很多资金，穷也有穷的研究方法么，再说还是有很多数学热爱者就真的只是热爱，不
+    贪图物质享受的。
+
+    摘自《伽莫夫自传》第一章第十四页
+
+    :   我的一个朋友曾对我说过他的一段亲身经历。他叫伊戈尔·塔姆 (1958 年诺贝尔
+        物理奖获得者), 当时是敖德萨大学一名年轻的物理教授。在红军占领敖德萨时
+        期, 有一天他跑到邻近一个被马赫诺匪帮的一支部队占据的村庄 (当时马赫诺匪
+        帮的士兵常在农村出没, 骚扰红军), 在他和一个村民为了六把银匙能换多少只小
+        鸡讨价还价时, 匪兵看见了他的城里人装束, 就把他带到头头那儿。这是个满脸
+        胡子的家伙, 戴一顶高高的黑皮帽, 宽阔的前胸交叉着两条机关枪子弹带, 腰里
+        别着两颗手榴弹。
+
+        “你这个狗杂种, 你这个共产主义煽动分子, 你想颠覆我们乌克兰祖国, 对你的惩
+        罚是处死。”
+
+        “啊不!”塔姆慌忙分辩,“我是敖德萨大学的教授, 来这里只是想弄点吃的。”
+
+        “胡说!”那个头头吼道,“你算哪门子的教授?”
+
+        “我教数学。”
+
+        “数学?”头头说,“好吧, 那你给我算算, 要是把马克劳林级数取到第 n 项, 会产
+        生多大的误差, 算出来就放你走, 算不出就枪毙你。”
+
+        塔姆简直不相信自己的耳朵, 这分明是属于高等数学一个相当专门的分支学科里
+        的高深问题。他哆哆嗦嗦地在枪口下算出了答案, 交与头头过目。
+
+        “正确。”头头说,“现在我看出你真是个教授了, 回家吧!”
+
+        这个人是谁? 谁也不知道。如果他后来没有被杀死的话, 那么他现在很可能正在
+        乌克兰某座大学里教授高等数学呢。
+
+    俄罗斯人生活环境使得这个民族获得了创造力爆发力强的特点。俄罗斯漫长的冬天不
+    适合劳作，所以他们自古习惯在夏天做完一年的活然后开始悠闲的生活，长此以来养
+    成了短时间爆发出大量能量的民族性格。也就是说很多时候给俄国人一份十天能完成
+    的工作他们会先玩儿上八九天然后在最后关头神速地把工作解决掉。
+
+    |   偏执的追求英雄使用的极致。
+    |   热爱紧张刺激的 gank，团战而非 farm。
+    |   不顾大家冷嘲热讽坚持混欧服。
+    |   这“些东西放在科研，竞技上，可以解释一些战斗民族的强大原因。
+
+---
+
+没太大作用。倒不是真没用，只是高数太简单太基础以至于难以体现其作用。
+
+但凡做算法、数据分析、仿真、机器学习，哪一个都是在高等数学基础上扩展而来的理论再实现的。也就是说，虽然精通高数没啥用，但是不通高数几乎啥东西都没发开展。
+
+然后，我 TM 拒绝了
+
+然后我一直单身到现在………
+
+曾经身边有很多有天赋的人，但是他们要么自我堕落，要么环境所迫，要么被父母老师所逼选了不喜欢的专业，要么人各有志不想学数学了，总之都已经远离数学很久很久了。每每想到此，我就特别感伤。
+
+>   19 世纪德国数学家 Carl Gustav Jacobi，在纯数学某些领域有所贡献。Fourier 建议，
+>   这么聪明的头脑，研究点儿应用数学比如 heat flow 如何？这引起了 Jacobi 的不满。
+>   他在给 Legendre 信里，以教训人的口气说，像 Fourier 那样的人，“应该懂得，”研究
+>   数学的唯一目的，就是为了追求人类心智的荣耀。
+
+作者：匿名用户
+链接：http://www.zhihu.com/question/28528414/answer/41145529
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+[数学这门学科有多有趣？ - 趣味数学 - 知乎](http://www.zhihu.com/question/37799355)
+
+|   人生大起大落莫过于：
+|   写满一张草稿纸终于算出压轴题的答案
+|   忐忑地回头看选项（要是选项里没有这个数怎么办啊啊啊）
+|   竟然有一个符合（哈哈哈我一定算对了）
+|   激动的写上答案（我真是太机智了）
+|   自信地对答案
+|   迫不及待地先对压轴题的答案
+|   然后发现…
+|   算错了…
+|   错了…
+|   了…
+
+这些牛逼经济学家在自己的一亩三分地是国王，任意虐其他研究者，特别是junior研究者；出了象牙塔，就没有什么了不起的；实战，呵呵，我就祝他们好运了。另外一个感觉就是，他们的思维框框特别多，没有想象力。经济学家/金融学家，太把自己当回事了。特别是一些出自名校、刚毕业没几年的‘宏观’经济学者，没有一点实践经验，就开始煞有介事地用model指点江山。搞笑！
+
+作者：麦哲伦
+链接：http://www.zhihu.com/question/29245787/answer/43706790
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+数学大体上就起了个这么个作用。如果现实和模型推导的不一样，那一定是模型错了。悲哀的是很多人沉浸在数学的完美中，对现实不闻不见。只要模型自洽，那管现实洪水滔天啊。我的经验：解释过去，可以玩模型；对待未来，我劝你不如用孙子兵法。(13年诺奖得主之一的Hansen 在2014年AFA年会上有句话说得挺好：“所有的模型都是错的，区别是错的有意义和没有意义“。很可惜大多数都是没有意义的。)
+
+学术圈生存研究者每天的工作之一就要互相咬，多弄点数学/高深的数学可以将攻击你的人减少很多。攻击者在咬的时候先要掂量掂量自己把数学搞懂了没。很多论文用很复杂的模型说了个很明显的故事。几年前我会仔仔细细推导，觉得这论文好牛逼啊。现在我大概简单看看abstract；大量时间和智力就这样被浪费了。
+
+this paper is too descriptive
+
+博弈论大师Ariel Rubinstein用自己的研究结果指导小贩讨价还价，结果双方无法达成一个交易价格。但大师没有骂小贩是傻逼。他自己羞愧的走开，让小贩继续快乐地用祖传的方法讨价还价。这才是一个务实的态度。现实世界没有最优解；也可能永远不会收敛到“均衡”。
+
+这些牛逼经济学家在自己的一亩三分地是国王，任意虐其他研究者，特别是junior研究者；出了象牙塔，就没有什么了不起的；实战，呵呵，我就祝他们好运了。另外一个感觉就是，他们的思维框框特别多，没有想象力。经济学家/金融学家，太把自己当回事了。特别是一些出自名校、刚毕业没几年的‘宏观’经济学者，没有一点实践经验，就开始煞有介事地用model指点江山。搞笑！
+
+作者：麦哲伦
+链接：http://www.zhihu.com/question/29245787/answer/43706790
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+作者：麦哲伦
+链接：http://www.zhihu.com/question/29245787/answer/43706790
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+作者：麦哲伦
+链接：http://www.zhihu.com/question/29245787/answer/43706790
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+作者：麦哲伦
+链接：http://www.zhihu.com/question/29245787/answer/43706790
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+论文最后是交纸质档，对于内容没有要求，包括内容完整度
+
+31之前我会找个地方，让大家把论文交给我，或者大家提前写好了，也可以私聊，方便就行
+
+[理解PCA和SVD | 切问录](http://www.fuzihao.org/blog/2015/12/04/%E7%90%86%E8%A7%A3PCA%E5%92%8CSVD/)
+
+[Windows下编译YouCompleteMe流程[和ubuntu 32bit] | I'm tracyone](http://onetracy.com/2015/08/16/build_ycm_in_windows/)
+
+[第一课：新建一个窗口 | OpenGL Tutorials](http://opengl.zilongshanren.com/content/tut01/zh.html)
+
+:   CMake, OpenGL, Code
+
+硕鼠
+
+:   提示：因优酷官方禁止下载，目前已停止了优酷视频解析支持，请理解，您可以优先
+    从其他视频网站找资源下载。
+
+Vim 用了五年，Emacs 用了两年多。
+
+最大的感受是用 Vim 之后得了强迫症，什么编辑器都要安装 Vim 模拟器，包括我现在用
+的 Emacs 也安装了 Evil。为什么？因为学习 Vim，我学会了一门无鼠标高效编辑文字的
+语言，在编辑文字的时候可以达到一种 flow 的状态。
+
+而掌握了 Emacs，我获得的是一个崭新的编程世界，一个功能强大的操作系统，以及一个
+强大友好的社区。只有在 Hacking Emacs 的时候我才有“这是属于我自己的编辑器”的感受，
+因为我从没有试过用蹩脚的 Vimscript 写过插件，可能我的观点有失公允。不过，有了
+lisp 谁还想用那玩意儿写代码呢？
+
+最终建议就是你去找这个语言领域内最热门的一个开源项目，看这帮业内最杰出的家伙是怎么协作的，照猫画虎绝对不会错。
+
+[裘宗燕 :: Qiu Zongyan](http://www.math.pku.edu.cn/teachers/qiuzy/)
+
 [Obi-Wan Kenobi - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Obi-Wan_Kenobi)
 
 It's enough to make a respectable fellow blush.
@@ -27757,6 +28106,43 @@ refs and see also
 
 :   这书居然在网上直接放着（其实考研复试那段时间我看完了，有时间再看一下，note some）
 
+    SHIT.
+
+    The C language is like a carving knife: simple, sharp, and extremely useful
+    in skilled hands. Like any sharp tool, C can injure people who don't know
+    how to handle it.
+
+    Once we know how to declare the variable, we know how to cast a constant to
+    that type: just drop the name from the variable declaration. Thus, we cast
+    0 to a "pointer to function returning void'' by saying:
+
+    ```cpp
+    (void(*)())0
+    ```
+
+    and we can now replace fp by (void(*)())0:
+
+    (*(void(*)())0)();
+
+    The semicolon on the end turns the expression into a statement.
+and we can now replace fp by (void(*)())0:
+
+    if (flags & FLAG != 0) ...  //  if (flags & (FLAG != 0)) ...
+    r = h<<4 + l;               //  r = h << (4 + l);
+
+ One way to avoid these problems is to parenthesize everything, but expressions with too many parentheses are hard to understand, so it is probably useful to try to remember the precedence levels in C. Unfortunately, there are fifteen of them, so this is not always easy to do. It can be made easier, though, by classifying them into groups.
+
+The operators that bind the most tightly are the ones that aren't really operators: subscripting, function calls, and structure selection. These all associate to the left.
+
+Next come the unary operators. These have the highest precedence of any of the true operators. Because function calls bind more tightly than unary operators, you must write (*p)() to call a function pointed to by p; *p() implies that p is a function that returns a pointer. Casts are unary operators and have the same precedence as any other unary operator. Unary operators are right-associative, so *p++ is interpreted as *(p++) and not as (*p)++.
+
+Next come the true binary operators. The arithmetic operators have the highest precedence, then the shift operators, the relational operators, the logical operators, the assignment operators, and finally the conditional operator. The two most important things to keep in mind are:
+1. Every logical operator has lower precedence than every relational operator.
+2. The shift operators bind more tightly than the relational operators but less tightly than the arithmetic operators.
+
+Within the various operator classes, there are few surprises. Multiplication, division, and remainder have the same precedence, addition and subtraction have the same precedence, and the two shift operators have the same precedence.
+
+
 [裘宗燕主页 :: Main Page of Qiu Zongyan](http://www.math.pku.edu.cn/teachers/qiuzy/)
 
 :   从 C Traps and Pitfalls 看到这里。这老师很著名。
@@ -33338,13 +33724,12 @@ Disallow:
     ），`$` 匹配行尾（使用 `\$` 表示单纯的 `$` 字符）；被替换的内容为空；由于一
     行最多只需替换一次，不需要特殊标志。这个还是比较简单的。
 
-    去掉所有的空白行：`:%s/\(\s*\n\)\+/\r/`。
-    `*` 代表对前面的字符（此处为`\s`）匹配零次或多次（越多越好；使用 `\*` 表示单纯的 `*` 字符），`\(` 和 `\)` 对表
-    达式进行分组，使其被视作一个不可分割的整体。因此，这个表达式的完整意义
-    是，把连续的换行符（包含换行符前面可能有的连续空白字符）替换成为一个单
-    个的换行符。唯一很特殊的地方是，在模式中使用的是 `\n`，而被替换的内容中
-    却不能使用 `\n`，而只能使用 `\r`。原因是历史造成的，详情如果有兴趣的话可
-    以查看 `:help NL-used-for-Nul`。
+    去掉所有的空白行：`:%s/\(\s*\n\)\+/\r/`。`*` 代表对前面的字符（此处为`\s`）
+    匹配零次或多次（越多越好；使用 `\*` 表示单纯的 `*` 字符），`\(` 和 `\)` 对
+    表达式进行分组，使其被视作一个不可分割的整体。因此，这个表达式的完整意义是，
+    把连续的换行符（包含换行符前面可能有的连续空白字符）替换成为一个单个的换行
+    符。唯一很特殊的地方是，在模式中使用的是 `\n`，而被替换的内容中却不能使用
+    `\n`，而只能使用 `\r`。原因是历史造成的，详情如果有兴趣的话可以查看 `:help NL-used-for-Nul`。
 
     去掉所有的 `//` 注释：`:%s!\s*//.*!!`。首先可以注意到，这儿分隔符改用了
     `!`，原因是在模式或字符串部分使用了 `/` 字符，不换用其他分隔符的话就得在
@@ -33602,7 +33987,8 @@ Disallow:
 
 :   第一种！半天折腾，然后自动就好了……shit……
 
-    In this case this error may accrue only if moc tool didn't create meta data for this class. This can happen in two cases:
+    In this case this error may accrue only if moc tool didn't create meta data
+    for this class. This can happen in two cases:
 
       - **file dependencies are broken** so you have to run `qmake`{.bash}
         and/or clean project (`make clean`{.bash}).

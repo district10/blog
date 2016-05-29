@@ -10,8 +10,6 @@ tags:
 Links | 链签
 ============
 
-[冒泡 - dvorak4tzx的个人首页 - Coding.net](https://coding.net/u/dvorak4tzx/bubble)
-
 #. [1001 Fonts · Free Fonts Baby!](http://www.1001fonts.com/)
 #. [30.Machine L&Data Mining - 结构之法 算法之道 - 博客频道 - CSDN.NET](http://blog.csdn.net/v_july_v/article/category/1061301)
 #. [720云全景虚拟现实社区|720全景摄影,全景视频,360度全景拍摄,VR制作,全景旅游,全景新闻,全景图片,虚拟漫游,VR视频,VR航拍](http://720yun.com/find)
@@ -25,6 +23,7 @@ Links | 链签
 #. [BYVoid](http://www.douban.com/people/byvoid/)
 #. [BeeBEEP (Secure Lan Messenger)](http://beebeep.sourceforge.net/)
 #. [Blog – Yanran's Attic](http://yanran.li/)
+#. [Bootstrap中文网开源项目免费 CDN 服务](http://www.bootcdn.cn/)
 #. [Brian Grinstead](http://www.briangrinstead.com/blog/)
 #. [Browse Art - DeviantArt](http://www.deviantart.com/browse/all/)
 #. [Bruce Yan - Photography](http://www.yanziqipic.com)
@@ -39,6 +38,9 @@ Links | 链签
 #. [Dependency Walker (depends.exe) Home Page](http://www.dependencywalker.com/)
 #. [Detexify LaTeX handwritten symbol recognition](http://detexify.kirelabs.org/classify.html)
 #. [Dmitrijs Milajevs Reading List](http://www.eecs.qmul.ac.uk/~dm303/pages/reading-list.html) `scientific` `reading list`
+#. [Download Excel Viewer from Official Microsoft Download Center](https://www.microsoft.com/zh-cn/download/confirmation.aspx?id=10)
+#. [Download Visio 2010: Visio Viewer - 中文(简体) from Official Microsoft Download Center](https://www.microsoft.com/zh-cn/download/confirmation.aspx?id=21701)
+#. [Download Word Viewer from Official Microsoft Download Center](https://www.microsoft.com/zh-cn/download/confirmation.aspx?id=4)
 #. [Dubos](http://www.douban.com/people/charlespdu/)
 #. [DuckDuckGo](http://www.duckduckgo.com) `search engine`
 #. [Easyicon - Search 500,000+ (PNG,ICO,ICNS) free icons, desktop icons, icons Download.](http://www.easyicon.net/) `icon`
@@ -47,6 +49,7 @@ Links | 链签
 #. [English as a Second Language Podcast](http://www.eslpod.com/website/index.php)
 #. [Fabrice Bellard's Home Page](http://bellard.org/) `hacker`
 #. [Fenng](http://www.douban.com/people/Fenng/)
+#. [Geocafe](http://www.lmars.whu.edu.cn/list.jsp?id=y0hxafezty)
 #. [Getting started - asciinema](https://asciinema.org/docs) `ascii art` `video` `screencast`
 #. [GistBox](https://app.gistboxapp.com/library/my-gists)
 #. [GitXiv — Collaborative Open Computer Science — Medium](https://medium.com/@samim/gitxiv-collaborative-open-computer-science-e5fea734cd45) `scientific` `paper` `arxiv`
@@ -57,6 +60,7 @@ Links | 链签
 #. [HKMDB（香港影库）](http://hkmdb.com/db/index.php) `movie`
 #. [HaHack](http://hahack.com/) `blog`
 #. [Hacker News](https://news.ycombinator.com/news)
+#. [Hi. I'm William.](http://www.wzchen.com/)
 #. [Home - Val Markovic](https://val.markovic.io/) `blog`
 #. [Home - 阳志平的网志](http://www.yangzhiping.com/) `blog`
 #. [Home | Lionel Liu](http://lionelliu.com/index.html)
@@ -82,6 +86,7 @@ Links | 链签
 #. [Lu Wang's Page | vim.js](http://coolwanglu.github.io/) `blog`
 #. [Lucida | 算法学习之路](http://lucida.me/) `blog` `algorithms`
 #. [Lync.in | Link the world.](http://lync.in/)
+#. [MSDN, 我告诉你](http://www.itellyou.cn/)
 #. [Marijn's Web Home](http://marijnhaverbeke.nl/)
 #. [MathOverflow](http://mathoverflow.net/) `math`
 #. [Memect: Memory Connected](http://memect.com/)
@@ -130,6 +135,7 @@ Links | 链签
 #. [ThinkGIS GIS专业社区，传播GIS技术，分享GIS知识。](http://www.thinkgis.cn/)
 #. [Timothy Guan‑tin Chien](http://timdream.org/#works)
 #. [Top arXiv papers](https://scirate.com/) `arxiv`
+#. [ToyBox開發日誌](http://toyauthor.blogspot.jp/)
 #. [Typeof.net](http://typeof.net/index.html)
 #. [Tzeng Yuxio](http://tzengyuxio.me/) （一看就是处女座）
 #. [Useful Emacs Commands](http://irreal.org/emacs-reminders.html)
@@ -182,6 +188,7 @@ Links | 链签
 #. [依云's Blog](http://lilydjwg.is-programmer.com/)
 #. [关于 | Specs' Blog-就爱PHP](http://9iphp.com/about)
 #. [内核恐慌 — IPN 出品](http://ipn.li/kernelpanic/)
+#. [冒泡 - dvorak4tzx的个人首页 - Coding.net](https://coding.net/u/dvorak4tzx/bubble)
 #. [刘未鹏(pongba)](http://www.douban.com/people/pongba/)
 #. [刷新七牛 CDN Cache - 简书](http://www.jianshu.com/p/6273021ff178)
 #. [包昊军的博客 | baohaojun](http://baohaojun.github.io/blog/2011/12/23/index.html) `blog`
@@ -261,10 +268,3 @@ Links | 链签
 #. [首页 » 张鑫旭-鑫空间-鑫生活](http://www.zhangxinxu.com/)
 #. [黄正华的教学信息页面](http://aff.whu.edu.cn/huangzh/)
 #. [黄玄的博客 | Hux Blog](http://huangxuan.me/)
-#. [Hi. I'm William.](http://www.wzchen.com/)
-#. [Bootstrap中文网开源项目免费 CDN 服务](http://www.bootcdn.cn/)
-#. [ToyBox開發日誌](http://toyauthor.blogspot.jp/)
-#. [Download Excel Viewer from Official Microsoft Download Center](https://www.microsoft.com/zh-cn/download/confirmation.aspx?id=10)
-#. [Download Word Viewer from Official Microsoft Download Center](https://www.microsoft.com/zh-cn/download/confirmation.aspx?id=4)
-#. [Download Visio 2010: Visio Viewer - 中文(简体) from Official Microsoft Download Center](https://www.microsoft.com/zh-cn/download/confirmation.aspx?id=21701)
-#. [MSDN, 我告诉你](http://www.itellyou.cn/)

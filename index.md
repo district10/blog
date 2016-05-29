@@ -174,6 +174,7 @@ Search:<br>
     padding-left: 2em;
     font-size: 60%;
 }
+
 .tzx-suggestion-tagline {
     padding-left: 2em;
     font-size: 60%;

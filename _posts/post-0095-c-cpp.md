@@ -1513,3 +1513,130 @@ refs and see also
 -   [std::upper_bound - cppreference.com](http://en.cppreference.com/w/cpp/algorithm/upper_bound)
 -   [std::vector::erase - cppreference.com](http://en.cppreference.com/w/cpp/container/vector/erase)
 -   [std::vector::reserve - cppreference.com](http://en.cppreference.com/w/cpp/container/vector/reserve)
+
+[Run-time type information - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Run-time_type_information)
+
+:   In computer programming, **RTTI** (Run-Time Type Information, or Run-Time Type Identification)
+    refers to a C++ mechanism that exposes information about an object's data type
+    at runtime. Run-time type information can apply to simple data types,
+    such as integers and characters, or to generic types.  This is a C++
+    specialization of a more general concept called **type introspection**. Similar
+    mechanisms are also known in other programming languages, such as Delphi
+    (Object Pascal).
+
+    In the original C++ design, Bjarne Stroustrup did not include run-time type
+    information, because he thought this mechanism was frequently misused.
+
+
+[4ker/C: C语言](https://github.com/4ker/C)
+
+[4ker/Cpp-Primer: C++ Primer 5ed answers](https://github.com/4ker/Cpp-Primer)
+
+[sib9/cpp1x-study-resource: 旨在搜集国内外各种 C++11 的学习资源，供大家参考、学习。](https://github.com/sib9/cpp1x-study-resource)
+
+
+    [](int x, int y) { return x + y; } // implicit return type from 'return' statement
+    [](int& x) { ++x; }   // no return statement -> lambda function's return type is 'void'
+    []() { ++global_x; }  // no parameters, just accessing a global variable
+    []{ ++global_x; }     // the same, so () can be omitted
+
+
+    [](int x, int y) -> int { int z = x + y; return z; }
+
+lambda 函数可以使用 lambda 函数外面的标志符。这些变量的集合通常被成为[闭包](https://en.wikipedia.org/wiki/Closure_(computer_science)#Function_objects_.28C.2B.2B.29)，闭包在 lambda 表达式的 `[]` 中定义，允许是值或者引用。如下所示：
+
+    []        //no variables defined. Attempting to use any external variables in the lambda is an error.
+    [x, &y]   //x is captured by value, y is captured by reference
+    [&]       //any external variable is implicitly captured by reference if used
+    [=]       //any external variable is implicitly captured by value if used
+    [&, x]    //x is explicitly captured by value. Other variables will be captured by reference
+    [=, &z]   //z is explicitly captured by reference. Other variables will be captured by value
+
+下面的两个例子演示了 lambda 表达式的用法：
+
+    std::vector<int> some_list{ 1, 2, 3, 4, 5 };
+    int total = 0;
+    std::for_each(begin(some_list), end(some_list), [&total](int x) {
+      total += x;
+    });
+
+计算 `some_list` 的加和，存储到 `total` 中(引用传递)。
+
+    std::vector<int> some_list{ 1, 2, 3, 4, 5 };
+    int total = 0;
+    int value = 5;
+    std::for_each(begin(some_list), end(some_list), [&, value, this](int x) {
+      total += x * value * this->some_func();
+    });
+
+除 value 和 this 外，引用传递。计算得到 total 的值。只能抓取闭包中的非静态函数，lambda 和创建它的时候具有相同的存取权限,不管是否 protected/private 成员。
+
+lambda 函数可以使用 lambda 函数外面的标志符。这些变量的集合通常被成为[闭包](https://en.wikipedia.org/wiki/Closure_(computer_science)#Function_objects_.28C.2B.2B.29)，闭包在 lambda 表达式的 `[]` 中定义，允许是值或者引用。如下所示：
+
+
+
+    []        //no variables defined. Attempting to use any external variables in the lambda is an error.
+    [x, &y]   //x is captured by value, y is captured by reference
+    [&]       //any external variable is implicitly captured by reference if used
+    [=]       //any external variable is implicitly captured by value if used
+    [&, x]    //x is explicitly captured by value. Other variables will be captured by reference
+    [=, &z]   //z is explicitly captured by reference. Other variables will be captured by value
+
+下面的两个例子演示了 lambda 表达式的用法：
+
+    std::vector<int> some_list{ 1, 2, 3, 4, 5 };
+    int total = 0;
+    std::for_each(begin(some_list), end(some_list), [&total](int x) {
+      total += x;
+    });
+
+计算 `some_list` 的加和，存储到 `total` 中(引用传递)。
+
+    std::vector<int> some_list{ 1, 2, 3, 4, 5 };
+    int total = 0;
+    int value = 5;
+    std::for_each(begin(some_list), end(some_list), [&, value, this](int x) {
+      total += x * value * this->some_func();
+    });
+
+除 value 和 this 外，引用传递。计算得到 total 的值。只能抓取闭包中的非静态函数，lambda 和创建它的时候具有相同的存取权限,不管是否 protected/private 成员。
+
+这篇文章是我从[Move semantics and rvalue references in C++11](http://www.cprogramming.com/c++11/rvalue-references-and-move-semantics-in-c++11.html)翻译而来的。值得一提的是，不是全文/原文逐字逐句的翻译，加了一些我个人的理解，并进行了一定的精简。
+
+### 右值引用 ###
+
+右值引用会和一个临时对象绑定。比如，在 C++11 之前，如果你有一个临时对象，你可以用`regular`或者`lvalue reference` 去绑定它，但是仅仅是在`const`的情况下：
+
+    const string & name = get_name(); // ok
+    string& name = get_name(); // NOT ok
+
+在 C++11 中，右值引用允许你为右值绑定一个可变引用，但是不能是一个左值。换句话说，右值引用可以检测到一个对象是不是临时对象。右值引用使用`&&`语法来声明而不是`&`，可以是常量，也可以是非常量。和左值引用一样，尽管你很少见到一个常量右值引用。
+
+    const string && name = get_name(); // ok
+    string && name = get_name();  // alse ok - praise be!
+
+    void print_ref(const std::string & str)
+    {
+        std::cout << str << std::endl;
+    }
+
+    void print_ref(std::string && str)
+    {
+        std::cout << str << std::endl;
+    }
+
+    std::string name("jerryzhang");
+    print_ref(name); // calls the first print_ref function, taking an lvalue reference
+    print_ref(get_name()); // calls the second print_ref function, taking a mutable rvalue reference
+
+    ...
+
+[The Essence of C++_Bjarne Stroustrup.pptx_微盘下载](http://vdisk.weibo.com/s/G-kaugh7dbcL)
+
+[isocpp/CppCoreGuidelines: The C++ Core Guidelines are a set of tried-and-true guidelines, rules, and best practices about coding in C++](https://github.com/isocpp/CppCoreGuidelines)
+
+:   read: [CppCoreGuidelines/CppCoreGuidelines.md at master · isocpp/CppCoreGuidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)
+
+    **C++ Core Guidelines**
+
+[awesome-c - NotABug.org: Free code hosting](https://notabug.org/koz.ross/awesome-c)

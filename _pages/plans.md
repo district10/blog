@@ -17,6 +17,16 @@ Planned
     +   [yanyiwu/cppjieba: "结巴"中文分词的C++版本](https://github.com/yanyiwu/cppjieba)
     +   [4ker/OpenGL_CMake_Skeleton: A ready to use cmake skeleton using GLFW, Glew and glm.](https://github.com/4ker/OpenGL_CMake_Skeleton)
 
+-   Writing
+
+    +   ../_pages/plans.md
+    +   ../_pages/notes.md
+    +   ../_pages/koans.md
+    +   ../_posts/post-0107-mathematical-modeling.md
+    +   ../_posts/post-0095-c-cpp.md
+    +   ../_posts/post-0097-machine-learning.md
+    +   ../_posts/post-0098-probability-and-statistics.md
+
 -   OpenCV
 
     +   [西瓜太忙](https://www.douban.com/people/weilan_cqu/)

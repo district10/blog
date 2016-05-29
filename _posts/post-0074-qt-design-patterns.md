@@ -16,6 +16,8 @@ Introduction to Design Patterns in C++ with Qt
 :%s/\s\+$//
 -->
 
+[4ker/Intro-Design-Patterns-Cpp-Qt5: Porting the source code from the book "An Introduction to Design Patterns in C++ with Qt" by Alan & Paul Ezust from Qt 4 to Qt 5, and a bit of C++11.](https://github.com/4ker/Intro-Design-Patterns-Cpp-Qt5)
+
 An Introduction to Design Patterns in C++ with Qt (2nd Edition)
 
 Free download available from [Introduction to Design Patterns in C++ with Qt, 2nd Edition | InformIT](http://www.informit.com/store/introduction-to-design-patterns-in-c-plus-plus-with-9780132826457).

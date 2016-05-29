@@ -17,6 +17,7 @@ Friends | 友链
     +   GitHub: [yhlleo](https://github.com/yhlleo)
     +   [YhL_Leo的博客 - 博客频道 - CSDN.NET](http://blog.csdn.net/yhl_leo)
     +   [yhl's blog – Better and better.](http://115.159.156.28/)
+    +   [yhlleo - 简书](http://www.jianshu.com/users/28d79af5fea8/timeline){.tzx-hide}
 -   Meng Fanze
     +   GitHub: [iFanze (Meng Fanze)](https://github.com/iFanze)
     +   [Meng Fanze](http://ifanze.cn/)

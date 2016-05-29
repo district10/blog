@@ -8,10 +8,12 @@ let g:mapleader = ","
 map <leader>a ggVG
 map <leader>o o<esc>S<esc>
 map <leader>u :undolist<cr>
-map <leader>file :echo expand("%:p")<cr>
+map <leader>file :echo expand("%:p")<cr>:let @+=expand("%:p")<cr>
 " map <leader><leader> please don't map <leader><leader>
 map <leader>wi vip :call Wikipedia()<cr>
-map <leader>sp vipJ :call PanguSpacing()<cr> gqq
+map <leader>sp vip :call PanguSpacing()<cr>
+map <leader>rs vipJ :call PanguSpacing()<cr> gqqo<esc>
+map <leader>tc :call TitleCaseRegion()<cr>
 map <leader>gq vipgq
 
 "   if has("gui_win32")
@@ -49,6 +51,9 @@ set noswapfile
 
 " nnoremap gz :!zeal --query '<cword>'&<CR><CR>
 
+function! TitleCaseRegion()
+    silent! '<,'>s/\v<(.)(\w*)/\u\1\L\2/g
+endfunction
 function! PanguSpacing()                                " :call PanguSpacing()
     silent! '<,'>s/\([\u4e00-\u9fa5\u3040-\u30FF]\)\([a-zA-Z0-9@#&=\[\$\%\^\-\+(\/\\]\)/\1 \2/g
     silent! '<,'>s/\([a-zA-Z0-9!#&;=\]\,\.\:\?\$\%\^\-\+\)\/\\]\)\([\u4e00-\u9fa5\u3040-\u30FF]\)/\1 \2/g
