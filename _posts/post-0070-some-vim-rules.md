@@ -79,6 +79,8 @@ Qt::SolidPattern, `Qt::SolidPattern`{.cpp}
 <http://whudoc.qiniudn.com/2016/gvim74-x64.402.exe>。
 可惜的是这个打包的“Edit with Vim”不能生效。
 
+<http://whudoc.qiniudn.com/2016/gvim74-x64.402.exe.7z>。
+
 ---
 
 Refs

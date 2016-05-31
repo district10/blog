@@ -14,7 +14,10 @@ LaTeX 入门（刘海洋） --- 配套 TeX 源码
 >
 > 个人备份，这是刘海洋《LaTeX 入门》配套的 TeX 源码
 
-`% !Mode:: "TeX:UTF-8"`
+```latex
+% !Mode:: "TeX:UTF-8"
+% !TEX program = xelatex
+```
 
 ### src/0-1.tex
 

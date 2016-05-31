@@ -19,6 +19,71 @@ tags:
 Notes | 笔记[^1]
 ================
 
+[如何在论文中画出漂亮的插图？ - 知乎](http://zqdevres.qiniucdn.com/data/20141217174706/index.html)
+
+[早点获得这个技能，文章插图水平能上好几个层次（多图）](http://daily.zhihu.com/story/4823612)
+
+[曾有哪些错误的对科技的预测？ - 知乎用户的回答 - 知乎](http://www.zhihu.com/question/20387363/answer/32249090)
+
+Q: 你的 Blog 配图都好精致！究竟是用什么画图的呢？
+
+A: 我用 http://Paint.NET 、 Pixelmator 、 Mathematica 、 GeoGebra 等工具画图。
+配图的秘诀就是背景透明化、图形反锯齿化、注重色彩、多用 png 、图内字体大小与正文
+一致。
+
+[jQAPI - Alternative jQuery Documentation Browser](http://www.jqapi.com/)
+
+[language agnostic - How to write a good README - Stack Overflow](http://stackoverflow.com/questions/2304863/how-to-write-a-good-readme)
+
+:   [c++ - Best Tips for documenting code using doxygen? - Stack Overflow](http://stackoverflow.com/questions/51667/best-tips-for-documenting-code-using-doxygen)
+
+[面试官在想什么 | 谢益辉](http://yihui.name/cn/2015/10/interview/)
+
+:   视频会议的评论页面里，有听众提出，要不给计算机系强制增加统计课吧（大概也有
+    给统计系强制增加计算机课的意思），让那些无知的计算机学生搞清楚我们伟大的统
+    计理论，别光在那儿算算算。我是最烦这种内心优越嘴上喊着对别人好的人了，学了
+    统计就觉得统计无比重要，你连个正态分布都不懂还敢跑支持向量机，然而人家算算
+    算还真用不着你的正态分布。类似的还有要给中学生增加统计课的呼吁者，到底着毛
+    线急啊。记得 Norm Matloff 曾经写过，那些教中学统计课的老师的统计根底都差得
+    要死，那么早让学生接触扭曲的统计学，到底是在帮他还是害他。
+
+    说到底，还是有人的地方就有浆糊。人都想守着自己的山头，并且蹲在山包包上翘首
+    以盼有人来继承山大王的衣钵。也许守的是珠穆朗玛峰，也许守的只是个土包而已。
+
+[senny/sablon: Ruby Document Template Processor based on docx templates and Mail Merge fields.](https://github.com/senny/sablon)
+
+:   Contributing
+
+      - Fork it ( <https://github.com/senny/sablon/fork> )
+      - Create your feature branch (`git checkout -b my-new-feature`{.bash})
+      - Commit your changes (`git commit -am 'Add some feature'`{.bash})
+      - Push to the branch (`git push origin my-new-feature`{.bash})
+      - Create a new Pull Request
+
+    [List of document markup languages - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_document_markup_languages)
+
+    [Mail merge - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Mail_merge)
+
+    [Microsoft Office XML formats - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Microsoft_Office_XML_formats)
+
+    [yihui/knitr: A general-purpose tool for dynamic report generation in R](https://github.com/yihui/knitr)
+
+    :   [knitr: Elegant, flexible and fast dynamic report generation with R | knitr](http://yihui.name/knitr/)
+
+    [Save a Word document as a template - Word](https://support.office.com/en-us/article/Save-a-Word-document-as-a-template-CB17846D-ECEC-49D4-82EA-A6F5E3E8B9AE?ui=en-US&rs=en-US&ad=US&fromAR=1)
+
+    [DocToText - converting documents to plain text, processing annotations and metadata - SILVERCODERS - Quality and Competence](http://silvercoders.com/en/products/doctotext/)
+
+    [python-docx — python-docx 0.8.5 documentation](https://python-docx.readthedocs.io/en/latest/)
+
+    [Comparison of documentation generators - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Comparison_of_documentation_generators)
+
+    :   [Understanding Styles — python-docx 0.8.5 documentation](https://python-docx.readthedocs.io/en/latest/user/styles-understanding.html)
+
+[renrousousuo/DocumentTemplate: 文件 Markdown 格式。方便书写各种文档。](https://github.com/renrousousuo/DocumentTemplate)
+
+[joshbuchea/HEAD: A list of everything that could go in the <head> of your document](https://github.com/joshbuchea/HEAD)
+
 [Jeffrey Friedl's Blog » Source of the famous “Now you have two problems” quote](http://regex.info/blog/2006-09-15/247)
 
 :   Some people, when confronted with a problem, think
@@ -28,8 +93,11 @@ Notes | 笔记[^1]
 
 :   clover, `['kloʊvər]`, 三叶草；车轴草, 四叶草；幸运草
 
+
     refs and see also
 
+      - [科洛弗档案 (豆瓣)](https://movie.douban.com/subject/2144242/)
+      - [丽兹 · 卡潘 (豆瓣)](https://movie.douban.com/celebrity/1009234/)
       - [外星人不是你想有就有的那么自然 (科洛弗道 10 号 影评)](https://movie.douban.com/review/7820965/)
       - [DV 至死 (科洛弗档案 影评)](https://movie.douban.com/review/1364497/)
 
@@ -183,8 +251,8 @@ Notes | 笔记[^1]
 
 [俄罗斯黑客在国际黑客圈中地位如何？ - 网络安全 - 知乎](http://www.zhihu.com/question/24765834)
 
-:   毛子数学好，喜欢宅，最可怕的是他们就算趴在一坨屎上，还是照样该干嘛干嘛，
-    心理素质应该是最高的。
+:   毛子数学好，喜欢宅，最可怕的是他们就算趴在一坨屎上，还是照样该干嘛干嘛，心
+    理素质应该是最高的。
 
     refs and see also
 
@@ -5052,7 +5120,12 @@ demanding “Give me an answer” and “Please help me figure out what addition
 diagnostics I can run to achieve enlightenment.
 
 Minimal test case
-  ~ provide a minimal bug-demonstrating test case
+
+:   provide a minimal bug-demonstrating test case
+
+    refs and see also
+
+      - [I've just been asked to write a minimal example, what is that? - TeX - LaTeX Meta Stack Exchange](http://meta.tex.stackexchange.com/questions/228/ive-just-been-asked-to-write-a-minimal-example-what-is-that)
 
 Infinite monkey theorem
 
