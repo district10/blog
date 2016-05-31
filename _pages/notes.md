@@ -19,6 +19,14 @@ tags:
 Notes | 笔记[^1]
 ================
 
+[EmacsWiki: Advising Functions](https://www.emacswiki.org/emacs/AdvisingFunctions)
+
+[Chapter 3 – ISL – ButMan World](http://butman.club/notes/cyber/anintroductiontostatisticallearningwithr/chapter-3-isl/)
+
+[The Velveteen Rabbit (豆瓣)](https://book.douban.com/subject/4373852/#!/i!/ckDefault)
+
+:   [The Velveteen Rabbit](http://digital.library.upenn.edu/women/williams/rabbit/rabbit.html)
+
 [如何在论文中画出漂亮的插图？ - 知乎](http://zqdevres.qiniucdn.com/data/20141217174706/index.html)
 
 [早点获得这个技能，文章插图水平能上好几个层次（多图）](http://daily.zhihu.com/story/4823612)
@@ -27,7 +35,7 @@ Notes | 笔记[^1]
 
 Q: 你的 Blog 配图都好精致！究竟是用什么画图的呢？
 
-A: 我用 http://Paint.NET 、 Pixelmator 、 Mathematica 、 GeoGebra 等工具画图。
+A: 我用 <http://Paint.NET>、 Pixelmator 、 Mathematica 、 GeoGebra 等工具画图。
 配图的秘诀就是背景透明化、图形反锯齿化、注重色彩、多用 png 、图内字体大小与正文
 一致。
 
@@ -8935,10 +8943,35 @@ $("#frmTest:radio").addClass("bg_blue");
     ```bash
     emacs \
         --batch file.md \
+        --eval "(org-mode)" \
         --eval "(setq org-html-htmlize-output-type 'css)" \
         --eval '(setq org-html-htmlize-font-prefix "org-")' \
         --eval '(org-html-export-to-html)'
     ```
+
+    因为可能会有 code evaluation，可以用
+
+    ```bash
+    echo -e "no\n no\n no\n no\n no\n no\n no\n" | \
+    emacs ...
+    ```
+
+    来避免 emacs 卡在这里。
+
+    ```bash
+    emacs -batch sample.c \
+        --eval '(indent-region (point-min) (point-max) nil)' \
+        -f save-buffer
+    ```
+
+    ```bash
+    #!/usr/bin/emacs --script
+    ```
+
+    refs and see also
+
+      - [EmacsWiki: Batch Mode](https://www.emacswiki.org/emacs/BatchMode)
+      - [org mode - How to avoid prompt to save buffer when running emacs batch - Stack Overflow](http://stackoverflow.com/questions/29729767/how-to-avoid-prompt-to-save-buffer-when-running-emacs-batch)
 
 [15 位机器人在完成任务时的有趣失误](http://tech2ipo.com/10026863)
 
@@ -9061,10 +9094,10 @@ stderr
 
 ---
 
-- Wait! I'm getting a **deja vu**.
-- 等等，我有似曾相识的感觉。
-- 话说有个字体叫“DejaVu Sans Mono”
-- **If you follew them, they flee. If you flee, they follow.**
+-   Wait! I'm getting a **deja vu**.
+-   等等，我有似曾相识的感觉。
+-   话说有个字体叫“DejaVu Sans Mono”
+-   **If you follew them, they flee. If you flee, they follow you.**
 
 [如何评价 2015 年电影《末日崩塌》（San Andreas）？ - CaesarZX 的回答 - 知乎](https://www.zhihu.com/question/30275207/answer/49700761)
 
