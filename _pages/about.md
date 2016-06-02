@@ -16,6 +16,10 @@ About | 关于
 
 处女座<!--^[09.12，和张国荣差了整整 36 年。]-->，INTP<!--[^intp]-->。个人主页：<http://tangzhixiong.com>。
 
+这里有一个我博客的类似 GitHub 风格的离线阅读版：
+<http://whudoc.qiniudn.com/2016/district10.blog.with.server.2016.06.02.7z>
+（3.08 MB）。
+
 [^intp]: [在知乎上，为什么 INTP 型的人特别喜欢在自己的签名里加 INTP 这一标签？ - 徐湘楠的回答 - 知乎](https://www.zhihu.com/question/21304858/answer/80155966)
 
     <div class="tzx-hide">

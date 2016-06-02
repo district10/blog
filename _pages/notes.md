@@ -19,6 +19,259 @@ tags:
 Notes | 笔记[^1]
 ================
 
+-   相对不公平值
+-   [Han van Meegeren - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Han_van_Meegeren)
+-   Hamilton 圈问题
+-   *s.t.*, subject to.
+-   仿射集
+-   误差平方和
+-   回归平方和
+-   残差平方和
+-   单纯性法
+-   最优纯策略，行取最小，列取最大
+-   $max i min j a_{ij} = min j max i a_{ij} = a_{i^*j^*}$
+-   makedep
+-   cindude2dot
+-   win dll decl spec
+-   `qmake -recurvise`{.bash}
+-   QList<Customer *> list = parent().findChild<Customer *>();
+-   parent().deleteLater();
+-   spacer, stretch, struct
+-   Q_PROPERTY( QString str READ getStr, WRITE setStr, NOTIFY strChanged)
+-   qRegisterMetaType
+-   conway's game of life
+-   file_p.cpp
+-   `QMetaObject::invokeMethod(parent(), "save");`{.bash}
+-   QScopedPointer
+-   `operator*()`{.cpp}
+-   `operator->()`{.cpp}
+-   `namespace alias = std;`{.cpp}
+
+[Tanuki-san Reference Sheet by FernandaFrick on DeviantArt](http://fernandafrick.deviantart.com/art/Tanuki-san-Reference-Sheet-126381237)
+
+[想知道日本的高考与大学的黑幕么？看这篇吧 - 你不知道的日本 - 知乎专栏](https://zhuanlan.zhihu.com/p/21285323)
+
+:   [给食制度－日本人严谨神话的崩塌 - 你不知道的日本 - 知乎专栏](https://zhuanlan.zhihu.com/p/20434265?refer=chivnjapan)
+
+    [日本的援交率真的有30%么？ - 你不知道的日本 - 知乎专栏](https://zhuanlan.zhihu.com/p/20381157?refer=chivnjapan)
+
+[为什么说哆啦 A 梦像「狸猫」？日本动漫里出现的「狸猫」是什么动物？ - 动物学 - 知乎](http://www.zhihu.com/question/28202325)
+
+[git + LaTeX workflow - Stack Overflow](http://stackoverflow.com/questions/6188780/git-latex-workflow)
+
+:   [CTAN: Package latexdiff](https://www.ctan.org/pkg/latexdiff)
+
+[Japanese raccoon dog - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Japanese_raccoon_dog)
+
+<http://whudoc.qiniudn.com/2016/typeset-fonts-common.tar.xz>, 43.6 MB.
+
+[布卡（伊斯兰教瓦哈比派女子服装）_百度百科](http://baike.baidu.com/subview/2642399/14166803.htm)
+
+[SivilTaram/BUAAOS-guide-book: 北航小操作系统实验指导书](https://github.com/SivilTaram/BUAAOS-guide-book)
+
+:  [Travis-CI 与 Latex 构建开源中文 PDF - SivilTaram - 博客园](http://www.cnblogs.com/SivilTaram/p/travis-ci_latex_auto-build_github.html)
+
+    ```bash
+    sudo apt-get --reinstall install msttcorefonts -y
+    sudo apt-get --reinstall install ttf-mscorefonts-installer -y
+    ```
+
+[installing - Best way to install packages for TeXLive in Ubuntu? - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/28528/best-way-to-install-packages-for-texlive-in-ubuntu)
+
+```bash
+tlmgr install <package name>
+tlmgr update <package name> # To update a package use:
+tlmgr update --self --all # To update all packages (and tlmgr itself):
+```
+
+tlmgr install \
+    CJK \
+    CJKfntef \
+    CJKpunct \
+    ctex \
+    etoolbox \
+    fancyhdr \
+    fontspec \
+    indentfirst \
+    l3kernel \
+    l3packages \
+    oberdiek \
+    savesym \
+    tools \
+    ulem \
+    xeCJK \
+    zhmetrics \
+
+[Image Tilt Effect](http://tympanus.net/Development/ImageTiltEffect/)
+[The Aviator: The Game | Codrops](http://tympanus.net/Tutorials/TheAviator/index.html)
+
+If you can´t wait to learn JavaScript - and you shouldn´t - check out the MDN - JavaScript Guide!
+
+[Codrops | Useful resources and inspiration for creative minds](http://tympanus.net/codrops/)
+
+[silverwind](https://silverwind.io/)
+
+:   ```html
+    <svg class="a" xmlns="http://www.w3.org/2000/svg"
+            width="512" height="512" viewBox="-16 -16 548 548">
+        <path
+            d="M256 6.3C114.6 6.3 0 121 0 262.3c0 113 73.4
+                209 175 243 13 2.3 17.6-5.6 17.6-12.4l-.4-48C121 460.5 106 415 106
+                415c-11.7-29.5-28.5-37.4-28.5-37.4-23.2-16 1.8-15.6 1.8-15.6 25.7
+                1.8 39.2 26.4 39.2 26.4 23 39.2 60 27.8 74.5 21.3 2.3-16.5 9-27.8
+                16.3-34.2C152.3 369 92.6 347 92.6 249c0-28 10-50.8
+                26.4-68.8-2.6-6.4-11.4-32.5 2.5-67.7 0 0 21.5-7 70.4 26.2 20-5.6
+                42-8.5 64-8.6 21.3.7 43.2 3 64 9 49-33 70-26 70-26 14 35.3 5 61.4
+                2.4 67.8 16.3 18 26.2 40.8 26.2 68.7 0 98.4-60 120-117 126.4 9.2 8
+                17.4 23.4 17.4 47.3l-.2 70.2c0 6.6 4.7 14.6 17.7 12 101.7-34
+                175-129.7 175-243C512 121 397.5 6 256 6z"></path></svg>
+    ```
+
+    ```css
+    body {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        background:#181818;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0
+    }
+    img {
+        height:40vh;
+        width:40vh
+    }
+    main {
+        display:flex;
+        padding-top:4vh;
+        flex-wrap:wrap;
+        justify-content:center
+    }
+    a {
+        margin:2.5vh
+    }
+    .a {
+        stroke-dasharray:3200;
+        stroke-dashoffset:3205
+    }
+    .b,.c {
+        stroke-dasharray:2400;
+        stroke-dashoffset:2405
+    }
+    .d {
+        stroke-dasharray:200;
+        stroke-dashoffset:205
+    }
+    .e {
+        stroke-dasharray:1800;
+        stroke-dashoffset:1805
+    }
+    .f {
+        stroke-dasharray:5000;
+        stroke-dashoffset:5005
+    }
+    a:hover .a {
+        fill:#159
+    }
+    a:hover .b {
+        fill:#822
+    }
+    a:hover .c {
+        fill:#2af
+    }
+    a:hover .d {
+        fill:#2c8
+    }
+    a:hover .e {
+        fill:#91a
+    }
+    a:hover .f {
+        fill:#fa4
+    }
+    svg {
+        height:13vh;
+        width:13vh;
+        fill:#303030;
+        stroke:#fff;
+        stroke-width:2.5%;
+        stroke-linejoin:round;
+        stroke-linecap:round;
+        transition:stroke-dashoffset .3s ease-in,fill .3s ease-in
+    }
+    a:hover svg {
+        stroke-dashoffset:0
+    }
+    ```
+
+[sindresorhus/github-markdown-css: The minimal amount of CSS to replicate the GitHub Markdown style](https://github.com/sindresorhus/github-markdown-css)
+[sindresorhus/generate-github-markdown-css: Generate the CSS for github-markdown-css](https://github.com/sindresorhus/generate-github-markdown-css)
+[giakki/uncss: Remove unused styles from CSS](https://github.com/giakki/uncss)
+[sindresorhus/pageres: Capture website screenshots](https://github.com/sindresorhus/pageres)
+
+[html - How to use Bootstrap CDN? - Stack Overflow](http://stackoverflow.com/questions/17377277/how-to-use-bootstrap-cdn/21318735#21318735)
+
+As others have mentioned, using a CDN is usually as easy as adding:
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+      rel="stylesheet">
+
+into your HTML. But this doesn't work when you are loading your html from a local file.
+
+The reason is the missing protocol. When using a CDN, it's usually a good idea not to specify the protocol, so that your browser will use either http or https depending on the protocol used to get your html in the first place.
+
+This is important because if your server is using https, it is better to have all references using https to avoid browsers (specially IExplorer) complaining about mixing content. On the other hand, using a protocol-less URL for CDN is more cache friendly (http://encosia.com/cripple-the-google-cdns-caching-with-a-single-character/).
+
+[linux - Exclude directory from find . command - Stack Overflow](http://stackoverflow.com/questions/4210042/exclude-directory-from-find-command)
+
+[javascript - How to make an AJAX call without jQuery? - Stack Overflow](http://stackoverflow.com/questions/8567114/how-to-make-an-ajax-call-without-jquery)
+
+>   It is not enough to succeed; everyone else must fail.
+
+范友们看到拉里 · 埃里森这么作，是不是有种 “你咋不上天” 的感觉？
+
+然而拉里 · 埃里森可以实力回答：“你咋知道我不上天？”
+
+
+[ppwwyyxx/vim-PinyinSearch: help vim search Chinese by Pinyin](https://github.com/ppwwyyxx/vim-PinyinSearch)
+
+:   ```awk
+    awk '{print $2}' chinese_informative.txt
+    awk '             $1 <= 1000 {print $2}' chinese_infomative.txt > zh_chars_0001_1000.dat
+    awk '$1 > 1000 && $1 <= 2000 {print $2}' chinese_infomative.txt > zh_chars_1001_2000.dat
+    awk '$1 > 2000 && $1 <= 4000 {print $2}' chinese_infomative.txt > zh_chars_2001_4000.dat
+    awk '$1 > 4000 && $1 <= 6000 {print $2}' chinese_infomative.txt > zh_chars_4001_6000.dat
+    awk '$1 > 4000 && $1 <= 6000 {print $2}' chinese_infomative.txt > zh_chars_4001_6000.dat
+    awk '             $1 <= 6000 {print $2}' chinese_infomative.txt > zh_chars_6000.dat
+    ```
+
+    refs and see also
+
+      - [xuchunyang/pinyin-search.el: [Emacs] Search Chinese by Pinyin](https://github.com/xuchunyang/pinyin-search.el)
+
+[拉里 · 埃里森在他 32 岁创办甲骨文之前的时候是什么样的一个人？性格如何？ - 创业 - 知乎](https://www.zhihu.com/question/20118236)
+
+[Windows 实用技巧：右键菜单中添加打开方式_百度经验](http://jingyan.baidu.com/article/08b6a591f334f914a809223b.html)
+
+:   steps:
+
+    -   Win + R, `regedit`
+    -   `HKEY_CLASSES_ROOT/*/shell/`
+    -   新建项，如 `Vim instance`
+    -   新建子项，需为 `command`
+    -   填入内容，`C:\Vim\vim74\gvim.exe %1`
+
+    然后就可以用了。还可以添加一个图标，在 `Vim instance` 新建字符串，内容为 Icon: path/to/vim.ico。
+
+    还可以在 Vim instance 下新建字符串，默认的那个，修改为“用 Vim 打开”，这样，右键菜单的显示文字就变成了
+    “用 Vim 打开”。
+
+    这里分享两个图标：
+    ![](http://whudoc.qiniudn.com/2016/vim.ico){width=30px}
+    ![](http://whudoc.qiniudn.com/2016/vim2.ico){width=30px}
+
 [EmacsWiki: Advising Functions](https://www.emacswiki.org/emacs/AdvisingFunctions)
 
 [Chapter 3 – ISL – ButMan World](http://butman.club/notes/cyber/anintroductiontostatisticallearningwithr/chapter-3-isl/)

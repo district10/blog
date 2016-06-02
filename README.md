@@ -5,6 +5,9 @@
 七牛 CDN 和 coding.net 似乎都是 CDN，所以总是难以快速的地更新，
 travis 给整个博客弄了一个打包：<https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/archive/coding-pages>。
 
+这里还有一个类似 GitHub 风格的离线阅读版：<http://whudoc.qiniudn.com/2016/district10.blog.with.server.2016.06.02.7z>
+（3.08 MB）。
+
 ## New Start
 
 「Koan | 吐槽」

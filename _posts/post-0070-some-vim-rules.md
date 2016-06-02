@@ -77,7 +77,7 @@ Qt::SolidPattern, `Qt::SolidPattern`{.cpp}
 
 [依云](http://lilydjwg.is-programmer.com/guestbook) 打包的包含行禁则的 Vim：
 <http://whudoc.qiniudn.com/2016/gvim74-x64.402.exe>。
-可惜的是这个打包的“Edit with Vim”不能生效。
+可惜的是这个打包的“Edit with Vim”不能生效。需要自己添加右键菜单。
 
 <http://whudoc.qiniudn.com/2016/gvim74-x64.402.exe.7z>。
 
