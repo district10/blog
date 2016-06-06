@@ -10,6 +10,10 @@ tags:
 Machine Learning
 ================
 
+网上看到一句很蛋疼的话：
+
+>   已经很久没看 lstm 了, 很多这方面的工作已经不了解了诶。
+
 <div class="tzx-hide">
 <i class="icon-book"></i>
 <i class="icon-cloud-download"></i>
@@ -37,15 +41,16 @@ MISC Notes
 
 python notes
 
-:   -   cp src dst, mv src dst^[[10.10. shutil — High-level file operations — Python 2.7.11 documentation](https://docs.python.org/2/library/shutil.html)]
+:   -   cp src dst, mv src dst^[[10.10. shutil — High-level file operations —
+        Python 2.7.11 documentation](https://docs.python.org/2/library/shutil.html)]
 
         ```python
         # shutil: shell util
         import shutil               # from shutil import copyfile copy, copyfile
 
-        shutil.copyfile(src, dst)   # dst can only be a file
-        shutil.copy(src, dst)       # dst can be a dir
         shutil.move(src, dst)       # recursive
+        shutil.copy(src, dst)       # dst can be a dir
+        shutil.copyfile(src, dst)   # dst can only be a file
         ```
 
 ```
@@ -1827,3 +1832,24 @@ Rectifier (neural networks)
 
     Rectified linear units find applications in computer vision, and speech
     recognition using deep neural nets.
+
+[UFLDL 教程 - Ufldl](http://deeplearning.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B)
+
+:   如果选择 \textstyle f(z) = 1/(1+\exp(-z)) ，也就是 sigmoid 函数，那么它的导
+    数就是 \textstyle f'(z) = f(z) (1-f(z)) （如果选择 tanh 函数，那它的导数就
+    是 \textstyle f'(z) = 1- (f(z))^2 ，你可以根据 sigmoid（或 tanh）函数的定义
+    自行推导这个等式。
+
+[Qix/dl.md at master · ty4z2008/Qix](https://github.com/ty4z2008/Qix/blob/master/dl.md)
+
+[CSC2515F : lectures](http://www.cs.nyu.edu/~roweis/csc2515-2006/lectures.html)
+
+[CIE 1931 color space - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/CIE_1931_color_space)
+
+:   [Lab color space - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Lab_color_space)
+
+    :   A Lab color space is a color-opponent space with dimension L for
+        lightness and a and b for the color-opponent dimensions, based on
+        nonlinearly compressed (e.g. CIE XYZ color space) coordinates.
+
+[Minimum distance estimation - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Minimum_distance_estimation)

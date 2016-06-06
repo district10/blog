@@ -42,6 +42,10 @@ Planned
 
 -   [VisualSFM : A Visual Structure from Motion System](http://ccwu.me/vsfm/)
 
+-   forks
+
+    +   [4ker/opensift: Open-Source SIFT Library](https://github.com/4ker/opensift)
+
 MISC
 
 -   [karan/Projects-Solutions: Links to others' solutions to Projects (https://github.com/karan/Projects/)](https://github.com/karan/Projects-Solutions)

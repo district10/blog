@@ -14,13 +14,13 @@ Probability and Statistics
 \newcommand\Beta{\operatorname{Beta}}
 \newcommand\R{\operatorname{R}}
 
-<div class="tzx-hide">
-
 TODO:
 
   - 《统计学习方法》
 
-</div>
+    +   [k-d tree - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Kd-tree)
+    +   cart: classification and regression tree;, gini index
+
 
 MISC Notes
 
@@ -58,8 +58,6 @@ MISC Notes
 
     -   conjugate, `['kɑndʒəɡet]`, 共轭的
 
-
-
         成对的；结合的；【化, 数, 物】共轭的；【语】同源 [根] 的 v.（根据数、人称、时态等）列举（动词）的变化形式
 
     -   一些蛋疼的名词
@@ -75,31 +73,34 @@ MISC Notes
         "experimental variable", "responding variable", "outcome variable", and
         "output variable".
 
-        "Explanatory variable" is preferred by some authors over "independent
+        "**Explanatory variable**" is preferred by some authors over "independent
         variable" when the quantities treated as "independent variables" may not be
         statistically independent. If the independent variable is referred to as an
         "explanatory variable" then the term "response variable" is preferred by
         some authors for the dependent variable.
 
-        "Explained variable" is preferred by some authors over "dependent variable"
+        "**Explained variable**" is preferred by some authors over "dependent variable"
         when the quantities treated as "dependent variables" may not be
         statistically dependent. If the dependent variable is referred to as an
         "explained variable" then the term "predictor variable" is preferred by
         some authors for the independent variable.
 
-        Variables may also be referred to by their form: continuous,
-        binary/dichotomous, nominal categorical, and ordinal categorical, among
-        others.
+        Variables may also be referred to by their form:
+
+        +   continuous,
+        +   binary/dichotomous,
+        +   nominal categorical, and
+        +   ordinal categorical, among others.
 
         A variable may be thought to alter the dependent or independent variables,
         but may not actually be the focus of the experiment. So that variable will
         be kept constant or monitored to try to minimise its effect on the
-        experiment. Such variables may be designated as either a "controlled
-        variable", "control variable", or "extraneous variable".
+        experiment. Such variables may be designated (指定) as either a "controlled variable",
+        "control variable", or "extraneous variable".
 
         Extraneous variables, if included in a regression as independent variables,
         may aid a researcher with accurate response parameter estimation,
-        prediction, and goodness of fit, but are not of substantive interest to the
+        prediction, and **goodness of fit**, but are not of substantive interest to the
         hypothesis under examination. For example, in a study examining the effect
         of post-secondary education on lifetime earnings, some extraneous variables
         might be gender, ethnicity, social class, genetics, intelligence, age, and
@@ -182,19 +183,22 @@ Probability theory
 
     :   In mathematics, a moment is a specific quantitative measure, used in
         both mechanics and statistics, of the shape of a set of points. If the
-        points represent mass, then the zeroth moment is the total mass, the
-        first moment divided by the total mass is the center of mass, and the
-        second moment is the rotational inertia. If the points represent
-        probability density, then the zeroth moment is the total probability
+        points represent mass, then the *zero*th moment is the **total mass**, the
+        first moment divided by the total mass is the **center of mass**, and the
+        second moment is the **rotational inertia**. If the points represent
+        probability density, then the *zero*th moment is the total probability
         (i.e. one), the first moment is the mean, the second central moment is
         the variance, the third moment is the skewness, and the fourth moment
         (with normalization and shift) is the kurtosis. The mathematical
         concept is closely related to the concept of moment in physics.
 
+        对于 bounded distribution，全部的矩决定了分布。
+
         For a bounded distribution of mass or probability, the collection of
         all the moments (of all orders, from 0 to ∞) uniquely determines the
         distribution.
 
+        矩的定义（CRV）。
         The n-th moment of a real-valued continuous function f(x) of a real
         variable about a value c is
 
@@ -209,7 +213,7 @@ Probability theory
         about zero is $\operatorname{E}\left[X^{-n}\right]$ and the n-th
         logarithmic moment about zero is $\operatorname{E}\left[\ln^n(X)\right]$.
 
-        Significance of moments (raw, central, standardised) and cumulants
+        Significance of moments (raw, central, standardised) and cumulants （累计误差）
         (raw, standardised), in connection with named properties of
         distributions:
 
@@ -265,8 +269,8 @@ Probability theory
         to an estimate of that standard deviation, computed from the sample of
         data being analyzed at the time.
 
-        The standard error of the mean (SEM) is the standard deviation of the
-        sample-mean's estimate of a population mean.
+        The standard error of the mean (SE or SEM) is the standard deviation of
+        the sample-mean's estimate of a population mean.
 
         $$\text{SE}_\bar{x}\ = \frac{s}{\sqrt{n}}$$
 
@@ -412,6 +416,9 @@ Probability theory
         the probability distribution of X but one does not explicitly know the
         distribution of g(X).
 
+        好处是可以不用知道 Y 的分布，只要知道 X 的分布，以及 Y 关于 X 的函数，
+        即可算出 Y 的期望。
+
         TODO: [Law of the unconscious statistician - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Law_of_the_unconscious_statistician)
 
     Variance
@@ -449,6 +456,8 @@ Probability theory
         $$\mu = \sum_{i=1}^n p_i\cdot x_i.$$
 
         **Sum of uncorrelated variables (Bienaymé formula)**
+
+        随机变量的和的方差等于各随机变量的方差的和。
 
         <i class="icon-info-sign"></i>
         One reason for the use of the variance in preference to other measures
@@ -488,6 +497,8 @@ Probability theory
             parameter.
 
         The covariance between two jointly distributed real-valued random variables X and Y with finite second moments is defined as
+
+        和方差的定义类似。
 
         $$\operatorname{cov}(X,Y) = \operatorname{E}{\big[(X - \operatorname{E}[X])(Y - \operatorname{E}[Y])\big]},$$
 
@@ -531,14 +542,14 @@ Probability theory
 
     Classical definition
 
-    :   |   The probability of an event is **the ratio** of
-        |
-        |     - the number of cases favorable to it, to
-        |     - the number of all cases possible
-        |
-        |   when nothing leads us to expect that any one of these cases should
-        |   occur more than any other, which renders them, for us, equally
-        |   possible.
+    :   The probability of an event is **the ratio** of
+
+          - the number of cases favorable to it, to
+          - the number of all cases possible
+
+        when nothing leads us to expect that any one of these cases should
+        occur more than any other, which renders them, for us, equally
+        possible.
 
         This definition is essentially a consequence of the principle of
         indifference. If elementary events are assigned equal probabilities,
@@ -583,7 +594,9 @@ Probability theory
 
     Classical probability distributions
 
-    :   Certain random variables occur very often in probability theory because
+    :   常见的经典的概率分布。
+
+        Certain random variables occur very often in probability theory because
         they well describe many natural or physical processes. Their
         distributions therefore have gained special importance in probability
         theory. Some fundamental discrete distributions are the discrete uniform,
@@ -626,7 +639,7 @@ Discrete Uniform distribution
     Variance    $\frac{(b-a+1)^2-1}{12}$
     --------    ----------------------------------
 
-Bernoulli distribution
+Bernoulli distribution 伯努利分布
 
 :   If X is a random variable with this distribution, we have:
 
@@ -660,7 +673,10 @@ Bernoulli distribution
     Fisher information    $\frac{1}{p(1-p)}$
     -------------------   ---------------------------------------------------------------------------------
 
-Binomial distribution
+一个分布有 mean，一个随机变量有 ev。如果这个随机变量 rv 分布为 x，则 rv 的 ev
+就是 x 的 mean。
+
+Binomial distribution 二项分布
 
 :   In probability theory and statistics, the binomial distribution with
     parameters n and p is the discrete probability distribution of the number
@@ -694,7 +710,7 @@ Binomial distribution
     Fisher information          $g_n(p) = \frac{n}{p(1-p)}$ (for fixed n)
     ----------------------      --------------------------------------------------------------------------
 
-Poisson distribution
+Poisson distribution 泊松分布
 
 :   Poission 和泰勒级数是相关的。
 
