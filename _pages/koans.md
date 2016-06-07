@@ -13,6 +13,68 @@ before-after:
 Koans | 呓语[^why-koan]
 =======================
 
+## `1465217428`{.tzx-timestamp} WTFPL 是一个不负责任的协议
+
+在 [Please change license from WTFPL (e.g. to GPL) · Issue #474 · dimitri/el-get](https://github.com/dimitri/el-get/issues/474)，
+大家讨论了 WTFPL 这个协议到底是不是蛋疼。结论是这协议和 MIT 协议差不多，但是用语不“文明”。
+
+不过我个人倒是觉得这个协议有免责的作用。比如你的代码里用到了一些 GPL 协议的第三方源码，
+你无视 GPL，加个 WTFPL。这当然是不应该的。但别人说你的时候你可以理直气壮地说：
+“我特么才不管这么多呢！”，看，这就是这个协议的最大作用：让你成为一个随（bao）和（zao）的人。
+
+## `1465033380`{.tzx-timestamp} 感动中国的脚本
+
+Linux 桌面系统的一个很好的 feature 是，你可以按住 alt 然后拖动窗口，
+但 windows 上没有提供如此有用的功能，然后我随手一搜……（没报希望的），
+有人已经给出解决方案啦：[Get the Linux Alt+Window Drag Functionality in
+Windows](http://www.howtogeek.com/howto/windows-vista/get-the-linux-altwindow-drag-functionality-in-windows/)。
+
+用的是 AutoHotkey，代码不多，亲测可用：
+
+```ahk
+; This script modified from the original: http://www.autohotkey.com/docs/scripts/EasyWindowDrag.htm
+; by The How-To Geek
+; http://www.howtogeek.com
+
+Alt & LButton::
+CoordMode, Mouse  ; Switch to screen/absolute coordinates.
+MouseGetPos, EWD_MouseStartX, EWD_MouseStartY, EWD_MouseWin
+WinGetPos, EWD_OriginalPosX, EWD_OriginalPosY,,, ahk_id %EWD_MouseWin%
+WinGet, EWD_WinState, MinMax, ahk_id %EWD_MouseWin%
+if EWD_WinState = 0  ; Only if the window isn't maximized
+    SetTimer, EWD_WatchMouse, 10 ; Track the mouse as the user drags it.
+return
+
+EWD_WatchMouse:
+GetKeyState, EWD_LButtonState, LButton, P
+if EWD_LButtonState = U  ; Button has been released, so drag is complete.
+{
+    SetTimer, EWD_WatchMouse, off
+    return
+}
+GetKeyState, EWD_EscapeState, Escape, P
+if EWD_EscapeState = D  ; Escape has been pressed, so drag is cancelled.
+{
+    SetTimer, EWD_WatchMouse, off
+    WinMove, ahk_id %EWD_MouseWin%,, %EWD_OriginalPosX%, %EWD_OriginalPosY%
+    return
+}
+; Otherwise, reposition the window to match the change in mouse coordinates
+; caused by the user having dragged the mouse:
+CoordMode, Mouse
+MouseGetPos, EWD_MouseX, EWD_MouseY
+WinGetPos, EWD_WinX, EWD_WinY,,, ahk_id %EWD_MouseWin%
+SetWinDelay, -1   ; Makes the below move faster/smoother.
+WinMove, ahk_id %EWD_MouseWin%,, EWD_WinX + EWD_MouseX - EWD_MouseStartX, EWD_WinY + EWD_MouseY - EWD_MouseStartY
+EWD_MouseStartX := EWD_MouseX  ; Update for the next timer-call to this subroutine.
+EWD_MouseStartY := EWD_MouseY
+return
+```
+
+## `1464942467`{.tzx-timestamp} 想法太多，能力太弱
+
+都实现不了啊！还得多读书，多实践。
+
 ## `1464024935`{.tzx-timestamp}
 
 |   「你这个奇葩」这句话应该怎么翻译？

@@ -55,8 +55,165 @@ Confusion matrix:
 python num.py  4.40s user 0.92s system 69% cpu 7.641 total
 ```
 
+[如何评价《千年女优》？ - 动画 - 知乎](http://www.zhihu.com/question/24537017)
+
+:   影片结尾处的那句话网络上的很多字幕翻译的都不算恰当。这句话可以算是影片中最
+    重要的一句台词，却由于一些字幕组的不谨慎，使很多人对本片理解有差。原文为「だっ
+    て私、あの人を追いかけている私が好きなんだもん」，直译为 “**只因我喜欢的、是那个
+    不断追逐着他的我自己啊。**” 在一篇今敏的访谈中也可佐证这一点。
+
+    >   关于「千年女优」，在日本国内的访谈和互联网上的留言感想中，观众对最后一句台
+    >   词意见颇多，但是海外的观众却从没有如此反应。或许这就是两者之间比较大的差异
+    >   吧。我觉得在日本，对最后那句台词是毁誉参半，而这也在我的预料之中。（译注：
+    >   台词内容——「だって私、あの人を追いかけている私が好きなんだもん」，意思是
+    >   「因为我真正爱的，是一直在追寻他的我自己啊。」）
+    >
+    >   似乎反方认为千代子「太任性随意」、「太自恋了」。这句台词对我来说意义非凡，
+    >   我之所以将它放入剧中，是有着重要意义和明确意图的。
+    >
+    >   个人认为，现在社会的伦理和道德观一直是摇摆不定的，特别是日本这种没有一神教
+    >   的单一神明的国家，社会规范的力量更加孱弱。在这种时代，便不得不强调个人的价
+    >   值，因此我认为在如此状况下，人会自然而然地采取自爱自恋的生存方式。过去在日
+    >   本，自谦曾经被看作是一种美德，我也是在这样的文化熏陶中长大的。可如今这套观
+    >   念已经行不通了，不仅如此，我认为日本的很多传统文化元素已经变质，重视自我与
+    >   个人的价值观已经占据了主导地位。
+    >
+    >   引文选自 [翻译] 今敏访谈：「千年女优」（02.12）<上>
+
+    refs and see also
+
+      - [今敏访谈：「千年女优」（02.12）<上>](https://www.douban.com/note/92570627/)
+
+[Machine Learning Video Library - Learning From Data (Abu-Mostafa)](http://work.caltech.edu/library/index.html)
+
+[Li Fei-fei 写给她学生的一封信，如何做好研究以及写好 PAPER（转载） - Teckee - 博客园](http://www.cnblogs.com/Jack-Lee/p/3516588.html)
+
+:   De-**mystifying** Good Research and Good Papers
+
+    Please remember this:
+
+    |   1000+ computer vision papers get published every year!
+    |   Only 5-10 are worth reading and remembering!
+
+    A good research project is not about the past (i.e. obtaining a higher
+    performance than the previous N papers). It's about the future (i.e.
+    inspiring N future papers to follow and cite you, N->\inf).
+
+    A method in which you have to manually tune many parameters is not
+    considered principled or coherent.
+
+    This might sound corny, but it is true. You're PhD students in one of the
+    best universities in the world. This means you embody the highest level of
+    intellectualism of humanity today. This means you are NOT a technician and
+    you are NOT a coding monkey.
+
+    Writing is critical -- and this is ironic because engineers are the worst
+    trained writers among all disciplines in a university. You need to
+    discipline yourself: leave time for writing, think deeply about writing,
+    and write it over and over again till it's as polished as you can think of.
+
+    important problem (inspiring idea) + solid and novel theory + convincing
+    and analytical experiments + good writing = seminal research + excellent
+    paper
+
+[在路上](http://zhangliliang.com/)
+
+[CSAILVision/LabelMeAnnotationTool: Source code for the LabelMe annotation tool.](https://github.com/CSAILVision/LabelMeAnnotationTool)
+
+[Shaoqing Ren](http://home.ustc.edu.cn/~sqren/)
+
+[Software — Kernel Machines](http://www.kernel-machines.org/software)
+
+[Agent Honeydew - Dexter's Laboratory Wiki - Wikia](http://dexterslab.wikia.com/wiki/Agent_Honeydew)
+
+:   发型不错。
+
+[APIs.io - the API search engine](http://apis.io/)
+
+[GitHub API v3 | GitHub Developer Guide](https://developer.github.com/v3/)
+
+[apidoc/apidoc: RESTful web API Documentation Generator.](https://github.com/apidoc/apidoc)
+
+[arnab/jQuery.PrettyTextDiff: A wrapper around Google's diff_match_patch library, to make life easy](https://github.com/arnab/jQuery.PrettyTextDiff)
+
+:   可以用来表示博客不同版本的之间的修改。
+
+[keybr.com - TANG ZhiXiong typist profile](http://www.keybr.com/user/show/323495)
+
+:   我的 keybr.com 账户的主页。（改版后这里不会泄露用户的练习数据。）
+
+[LAPACK: real](http://www.netlib.org/lapack/explore-html/db/dc9/group__single__blas__level3.html#gafe51bacb54592ff5de056acabd83c260)
+
+:   cool!
+
+    refs and see also
+
+      - [The BLAS Interface — CVXOPT User's Guide](http://cvxopt.org/userguide/blas.html)
+
+[高架桥桥墩很大，但真正与桥面接触的部位却很小。这是为什么？ - 物理学 - 知乎](http://www.zhihu.com/question/19709406)
+
+:   这样不容易“扭”到。虽然压强更大。
+
+    refs and see also
+
+      - [知道后最让你震惊的冷知识是什么？ - GreyRhythm 的回答 - 知乎](http://www.zhihu.com/question/38411883/answer/90520708)
+
+[跟踪论文开源实现的协同列表网站 GitXiv | 赵毅力的视觉研究博客](http://cs2.swfc.edu.cn/~zyl/?p=2336#more-2336)
+
+:   arxiv
+
+[HOWTO Create an Import Library for a DLL using MinGW | MinGW](http://www.mingw.org/wiki/CreateImportLibraries)
+
+:   黑科技。
+
+[台湾和大陆有哪些对于同一事物的不同叫法？ - 文化 - 知乎](http://www.zhihu.com/question/31282509)
+
+:   还没人说那个很经典的：cache
+
+    -   大陆：缓存
+    -   台湾：快取
+
+    column，大陆翻译成列，台湾翻译成行。row，大陆翻译成行，台湾翻译成列。
+
+    于是看一个大陆任何一个台湾人在讨论行列式和矩阵的时候，那个忙多劲啊。核对之
+    后改用英文了。
+
+[Thought Experiment - 你正在解决错误的问题](http://www.lispython.com/post/6480035850/%E4%BD%A0%E6%AD%A3%E5%9C%A8%E8%A7%A3%E5%86%B3%E9%94%99%E8%AF%AF%E7%9A%84%E9%97%AE%E9%A2%98)
+
+:   我没看懂……
+
+    refs and see also
+
+      - [Alan Kay - Normal considered harmful - Raw thoughts from Alex Dong](http://alexdong.com/alan-kay-normal-considered-harmful/)
+
 -   相对不公平值
 -   [Han van Meegeren - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Han_van_Meegeren)
+
+    Henricus Antonius "Han" van Meegeren was a Dutch painter and portraitist
+    and is considered to be one of the most **ingenious (足智多谋) art
+    forgers** of the 20th century.
+
+    During World War II, wealthy Dutchmen wanted to prevent a sellout of Dutch
+    art to Adolf Hitler and the Nazi Party, and they avidly bought van
+    Meegeren's forgeries, thinking them the work of the masters. Nevertheless,
+    a falsified"Vermeer" ended up in the possession of Reichsmarschall Hermann
+    Göring. Following the war, the forgery was discovered in Göring's
+    possession, and van Meegeren was arrested on 29 May 1945 as a collaborator,
+    as officials believed that he had sold Dutch cultural property to the
+    Nazis. This would have been an act of treason, the punishment for which was
+    death, so van Meegeren confessed to the less serious charge of forgery
+    instead. He was convicted on falsification and fraud charges on 12 November
+    1947, after a brief but highly publicized trial, and was sentenced to a
+    modest punishment of one year in prison. He did not serve out his sentence,
+    however; he died 30 December 1947, in the Valerius Clinic in Amsterdam,
+    after two heart attacks.
+
+    It is estimated that van Meegeren duped buyers, including the government of
+    the Netherlands, out of the equivalent of more than thirty million dollars
+    in today's money.
+
+    真是叼……
+
 -   Hamilton 圈问题
 -   *s.t.*, subject to.
 -   仿射集
@@ -65,7 +222,7 @@ python num.py  4.40s user 0.92s system 69% cpu 7.641 total
 -   残差平方和
 -   单纯性法
 -   最优纯策略，行取最小，列取最大
--   $max i min j a_{ij} = min j max i a_{ij} = a_{i^*j^*}$
+-   `max i min j a_{ij} = min j max i a_{ij} = a_{i^*j^*}`
 -   makedep
 -   cindude2dot
 -   win dll decl spec
@@ -85,65 +242,97 @@ python num.py  4.40s user 0.92s system 69% cpu 7.641 total
 
 [Tanuki-san Reference Sheet by FernandaFrick on DeviantArt](http://fernandafrick.deviantart.com/art/Tanuki-san-Reference-Sheet-126381237)
 
+:   画风倒是不错。
+
 [想知道日本的高考与大学的黑幕么？看这篇吧 - 你不知道的日本 - 知乎专栏](https://zhuanlan.zhihu.com/p/21285323)
 
-:   [给食制度－日本人严谨神话的崩塌 - 你不知道的日本 - 知乎专栏](https://zhuanlan.zhihu.com/p/20434265?refer=chivnjapan)
+:   不是挺容易考，是地区差异比中国还夸张。
 
-    [日本的援交率真的有30%么？ - 你不知道的日本 - 知乎专栏](https://zhuanlan.zhihu.com/p/20381157?refer=chivnjapan)
+    refs and see also
+
+      - [给食制度－日本人严谨神话的崩塌 - 你不知道的日本 - 知乎专栏](https://zhuanlan.zhihu.com/p/20434265?refer=chivnjapan)
+      - [日本的援交率真的有30%么？ - 你不知道的日本 - 知乎专栏](https://zhuanlan.zhihu.com/p/20381157?refer=chivnjapan)
 
 [为什么说哆啦 A 梦像「狸猫」？日本动漫里出现的「狸猫」是什么动物？ - 动物学 - 知乎](http://www.zhihu.com/question/28202325)
 
 [git + LaTeX workflow - Stack Overflow](http://stackoverflow.com/questions/6188780/git-latex-workflow)
 
-:   [CTAN: Package latexdiff](https://www.ctan.org/pkg/latexdiff)
+:   用 Perl 写得。
+
+    refs and see also
+
+      - [CTAN: Package latexdiff](https://www.ctan.org/pkg/latexdiff)
 
 [Japanese raccoon dog - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Japanese_raccoon_dog)
 
-<http://whudoc.qiniudn.com/2016/typeset-fonts-common.tar.xz>, 43.6 MB.
+:   这动物好淫荡……（其实是日本文化里这动物很淫荡）
+
+    它以 big balls 著称。
+
+LaTeX 字体。陈硕的 typeset 模板。
+
+:   <http://whudoc.qiniudn.com/2016/typeset-fonts-common.tar.xz>, 43.6 MB.
 
 [布卡（伊斯兰教瓦哈比派女子服装）_百度百科](http://baike.baidu.com/subview/2642399/14166803.htm)
 
+:   来自漫画，那时候我正在努力不被人说是一个 racist。
+
 [SivilTaram/BUAAOS-guide-book: 北航小操作系统实验指导书](https://github.com/SivilTaram/BUAAOS-guide-book)
 
-:  [Travis-CI 与 Latex 构建开源中文 PDF - SivilTaram - 博客园](http://www.cnblogs.com/SivilTaram/p/travis-ci_latex_auto-build_github.html)
+:   有点意思。
 
     ```bash
     sudo apt-get --reinstall install msttcorefonts -y
     sudo apt-get --reinstall install ttf-mscorefonts-installer -y
     ```
 
+    refs and see also
+
+      - [Travis-CI 与 Latex 构建开源中文 PDF - SivilTaram - 博客园](http://www.cnblogs.com/SivilTaram/p/travis-ci_latex_auto-build_github.html)
+
 [installing - Best way to install packages for TeXLive in Ubuntu? - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/28528/best-way-to-install-packages-for-texlive-in-ubuntu)
 
-```bash
-tlmgr install <package name>
-tlmgr update <package name> # To update a package use:
-tlmgr update --self --all # To update all packages (and tlmgr itself):
-```
+:   ```bash
+    tlmgr install <package name>
+    tlmgr update <package name> # To update a package use:
+    tlmgr update --self --all # To update all packages (and tlmgr itself):
+    ```
 
-tlmgr install \
-    CJK \
-    CJKfntef \
-    CJKpunct \
-    ctex \
-    etoolbox \
-    fancyhdr \
-    fontspec \
-    indentfirst \
-    l3kernel \
-    l3packages \
-    oberdiek \
-    savesym \
-    tools \
-    ulem \
-    xeCJK \
-    zhmetrics \
+    ```bash
+    tlmgr install \
+        CJK \
+        CJKfntef \
+        CJKpunct \
+        ctex \
+        etoolbox \
+        fancyhdr \
+        fontspec \
+        indentfirst \
+        l3kernel \
+        l3packages \
+        oberdiek \
+        savesym \
+        tools \
+        ulem \
+        xeCJK \
+        zhmetrics \
+    ```
 
 [Image Tilt Effect](http://tympanus.net/Development/ImageTiltEffect/)
+
+:   简单介绍了 browserify 的使用。
+
 [The Aviator: The Game | Codrops](http://tympanus.net/Tutorials/TheAviator/index.html)
+
+:   html5 游戏引擎。
 
 If you can´t wait to learn JavaScript - and you shouldn´t - check out the MDN - JavaScript Guide!
 
+"and you  shouldn't" 这个表达好亮。
+
 [Codrops | Useful resources and inspiration for creative minds](http://tympanus.net/codrops/)
+
+:   制作精良。
 
 [silverwind](https://silverwind.io/)
 
@@ -242,34 +431,103 @@ If you can´t wait to learn JavaScript - and you shouldn´t - check out the MDN 
     }
     ```
 
+    对 svg 立面的元素进行 css 的设置。
+
 [sindresorhus/github-markdown-css: The minimal amount of CSS to replicate the GitHub Markdown style](https://github.com/sindresorhus/github-markdown-css)
-[sindresorhus/generate-github-markdown-css: Generate the CSS for github-markdown-css](https://github.com/sindresorhus/generate-github-markdown-css)
-[giakki/uncss: Remove unused styles from CSS](https://github.com/giakki/uncss)
-[sindresorhus/pageres: Capture website screenshots](https://github.com/sindresorhus/pageres)
+
+:   效果出奇的好！再把代码高亮调成 pygments 就完美了。
+
+    ```css
+    code{ white-space: pre; }
+    q   { quotes: "“" "”" "‘" "’"; }
+    .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+    }
+
+    div.sourceCode { overflow-x: auto; }
+    table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+      margin: 0; padding: 0; vertical-align: baseline; border: none; }
+    table.sourceCode { width: 100%; line-height: 100%; }
+    td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+    td.sourceCode { padding-left: 5px; }
+    code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code > span.dt { color: #902000; } /* DataType */
+    code > span.dv { color: #40a070; } /* DecVal */
+    code > span.bn { color: #40a070; } /* BaseN */
+    code > span.fl { color: #40a070; } /* Float */
+    code > span.ch { color: #4070a0; } /* Char */
+    code > span.st { color: #4070a0; } /* String */
+    code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code > span.ot { color: #007020; } /* Other */
+    code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code > span.fu { color: #06287e; } /* Function */
+    code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    code > span.cn { color: #880000; } /* Constant */
+    code > span.sc { color: #4070a0; } /* SpecialChar */
+    code > span.vs { color: #4070a0; } /* VerbatimString */
+    code > span.ss { color: #bb6688; } /* SpecialString */
+    code > span.im { } /* Import */
+    code > span.va { color: #19177c; } /* Variable */
+    code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code > span.op { color: #666666; } /* Operator */
+    code > span.bu { } /* BuiltIn */
+    code > span.ex { } /* Extension */
+    code > span.pp { color: #bc7a00; } /* Preprocessor */
+    code > span.at { color: #7d9029; } /* Attribute */
+    code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    ```
+
+    refs and see also
+
+      - [sindresorhus/generate-github-markdown-css: Generate the CSS for github-markdown-css](https://github.com/sindresorhus/generate-github-markdown-css)
+      - [giakki/uncss: Remove unused styles from CSS](https://github.com/giakki/uncss)
+      - [sindresorhus/pageres: Capture website screenshots](https://github.com/sindresorhus/pageres)
 
 [html - How to use Bootstrap CDN? - Stack Overflow](http://stackoverflow.com/questions/17377277/how-to-use-bootstrap-cdn/21318735#21318735)
 
-As others have mentioned, using a CDN is usually as easy as adding:
+:   `//url` 比 `http://url`, `https://url` 好。
 
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
-      rel="stylesheet">
+    As others have mentioned, using a CDN is usually as easy as adding:
 
-into your HTML. But this doesn't work when you are loading your html from a local file.
+    ```javascript
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+          rel="stylesheet">
+    ```
 
-The reason is the missing protocol. When using a CDN, it's usually a good idea not to specify the protocol, so that your browser will use either http or https depending on the protocol used to get your html in the first place.
+    into your HTML. But this doesn't work when you are loading your html from a local file.
 
-This is important because if your server is using https, it is better to have all references using https to avoid browsers (specially IExplorer) complaining about mixing content. On the other hand, using a protocol-less URL for CDN is more cache friendly (http://encosia.com/cripple-the-google-cdns-caching-with-a-single-character/).
+    The reason is the missing protocol. When using a CDN, it's usually a good
+    idea not to specify the protocol, so that your browser will use either http
+    or https depending on the protocol used to get your html in the first
+    place.
+
+    This is important because if your server is using https, it is better to
+    have all references using https to avoid browsers (specially IExplorer)
+    complaining about mixing content. On the other hand, using a protocol-less
+    URL for CDN is more cache friendly
+    (http://encosia.com/cripple-the-google-cdns-caching-with-a-single-character/).
 
 [linux - Exclude directory from find . command - Stack Overflow](http://stackoverflow.com/questions/4210042/exclude-directory-from-find-command)
 
+:   不好用。但能用。
+
 [javascript - How to make an AJAX call without jQuery? - Stack Overflow](http://stackoverflow.com/questions/8567114/how-to-make-an-ajax-call-without-jquery)
+
+成吉思汗牛逼了……：
 
 >   It is not enough to succeed; everyone else must fail.
 
 范友们看到拉里 · 埃里森这么作，是不是有种 “你咋不上天” 的感觉？
 
 然而拉里 · 埃里森可以实力回答：“你咋知道我不上天？”
-
 
 [ppwwyyxx/vim-PinyinSearch: help vim search Chinese by Pinyin](https://github.com/ppwwyyxx/vim-PinyinSearch)
 
@@ -283,11 +541,15 @@ This is important because if your server is using https, it is better to have al
     awk '             $1 <= 6000 {print $2}' chinese_infomative.txt > zh_chars_6000.dat
     ```
 
+    我给作者建议换一个 dict，他采纳了。
+
     refs and see also
 
       - [xuchunyang/pinyin-search.el: [Emacs] Search Chinese by Pinyin](https://github.com/xuchunyang/pinyin-search.el)
 
 [拉里 · 埃里森在他 32 岁创办甲骨文之前的时候是什么样的一个人？性格如何？ - 创业 - 知乎](https://www.zhihu.com/question/20118236)
+
+:   有点投机有点浮，我更喜欢 Bill Gates。
 
 [Windows 实用技巧：右键菜单中添加打开方式_百度经验](http://jingyan.baidu.com/article/08b6a591f334f914a809223b.html)
 
@@ -310,7 +572,11 @@ This is important because if your server is using https, it is better to have al
 
 [EmacsWiki: Advising Functions](https://www.emacswiki.org/emacs/AdvisingFunctions)
 
+:   defadvice? 牛逼。
+
 [Chapter 3 – ISL – ButMan World](http://butman.club/notes/cyber/anintroductiontostatisticallearningwithr/chapter-3-isl/)
+
+:   读得太慢。
 
 [The Velveteen Rabbit (豆瓣)](https://book.douban.com/subject/4373852/#!/i!/ckDefault)
 
@@ -318,15 +584,21 @@ This is important because if your server is using https, it is better to have al
 
 [如何在论文中画出漂亮的插图？ - 知乎](http://zqdevres.qiniucdn.com/data/20141217174706/index.html)
 
-[早点获得这个技能，文章插图水平能上好几个层次（多图）](http://daily.zhihu.com/story/4823612)
+:   gplot2 太美！
+
+    Q: 你的 Blog 配图都好精致！究竟是用什么画图的呢？
+
+    A: 我用 <http://Paint.NET>、 Pixelmator 、 Mathematica 、 GeoGebra 等工具画图。
+    配图的秘诀就是背景透明化、图形反锯齿化、注重色彩、多用 png 、图内字体大小与正文
+    一致。
+
+    refs and see also
+
+      - [早点获得这个技能，文章插图水平能上好几个层次（多图）](http://daily.zhihu.com/story/4823612)
 
 [曾有哪些错误的对科技的预测？ - 知乎用户的回答 - 知乎](http://www.zhihu.com/question/20387363/answer/32249090)
 
-Q: 你的 Blog 配图都好精致！究竟是用什么画图的呢？
-
-A: 我用 <http://Paint.NET>、 Pixelmator 、 Mathematica 、 GeoGebra 等工具画图。
-配图的秘诀就是背景透明化、图形反锯齿化、注重色彩、多用 png 、图内字体大小与正文
-一致。
+:   时间改变一切。
 
 [jQAPI - Alternative jQuery Documentation Browser](http://www.jqapi.com/)
 
@@ -344,8 +616,8 @@ A: 我用 <http://Paint.NET>、 Pixelmator 、 Mathematica 、 GeoGebra 等工�
     线急啊。记得 Norm Matloff 曾经写过，那些教中学统计课的老师的统计根底都差得
     要死，那么早让学生接触扭曲的统计学，到底是在帮他还是害他。
 
-    说到底，还是有人的地方就有浆糊。人都想守着自己的山头，并且蹲在山包包上翘首
-    以盼有人来继承山大王的衣钵。也许守的是珠穆朗玛峰，也许守的只是个土包而已。
+    说到底，还是**有人的地方就有浆糊**。人都想守着自己的山头，并且蹲在山包包上
+    翘首以盼有人来继承山大王的衣钵。也许守的是珠穆朗玛峰，也许守的只是个土包而已。
 
 [senny/sablon: Ruby Document Template Processor based on docx templates and Mail Merge fields.](https://github.com/senny/sablon)
 
@@ -357,15 +629,14 @@ A: 我用 <http://Paint.NET>、 Pixelmator 、 Mathematica 、 GeoGebra 等工�
       - Push to the branch (`git push origin my-new-feature`{.bash})
       - Create a new Pull Request
 
-    [List of document markup languages - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_document_markup_languages)
+    refs and see also
 
-    [Mail merge - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Mail_merge)
+      - [List of document markup languages - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_document_markup_languages)
+      - [Mail merge - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Mail_merge)
+      - [Microsoft Office XML formats - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Microsoft_Office_XML_formats)
+      - [yihui/knitr: A general-purpose tool for dynamic report generation in R](https://github.com/yihui/knitr)
 
-    [Microsoft Office XML formats - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Microsoft_Office_XML_formats)
-
-    [yihui/knitr: A general-purpose tool for dynamic report generation in R](https://github.com/yihui/knitr)
-
-    :   [knitr: Elegant, flexible and fast dynamic report generation with R | knitr](http://yihui.name/knitr/)
+    [knitr: Elegant, flexible and fast dynamic report generation with R | knitr](http://yihui.name/knitr/)
 
     [Save a Word document as a template - Word](https://support.office.com/en-us/article/Save-a-Word-document-as-a-template-CB17846D-ECEC-49D4-82EA-A6F5E3E8B9AE?ui=en-US&rs=en-US&ad=US&fromAR=1)
 
@@ -390,7 +661,6 @@ A: 我用 <http://Paint.NET>、 Pixelmator 、 Mathematica 、 GeoGebra 等工�
 
 :   clover, `['kloʊvər]`, 三叶草；车轴草, 四叶草；幸运草
 
-
     refs and see also
 
       - [科洛弗档案 (豆瓣)](https://movie.douban.com/subject/2144242/)
@@ -406,10 +676,12 @@ A: 我用 <http://Paint.NET>、 Pixelmator 、 Mathematica 、 GeoGebra 等工�
 以推荐每位队员主攻其中两项左右。所以建议千万千万不要三个数学学院的同学凑一
 队！！！（如果三个啥子都会的数学大神凑一起也...没有...关系）。
 
+Vim
+
 -   在新 tab 打开文件：`Control-w gf`{.vim}。
 -   在新 window 打开文件：`Control-w f`{.vim}。
 
-[年轻就该多尝试，教你20小时Get一项新技能 - 简书](http://www.jianshu.com/p/8e8c250ae5b0)
+[年轻就该多尝试，教你 20 小时 Get 一项新技能 - 简书](http://www.jianshu.com/p/8e8c250ae5b0)
 
 :   步骤四：当你完成了第一幅作品后，其实你就已经入门了，并且克服了恐惧。
 
@@ -632,78 +904,69 @@ A: 我用 <http://Paint.NET>、 Pixelmator 、 Mathematica 、 GeoGebra 等工�
 
 没太大作用。倒不是真没用，只是高数太简单太基础以至于难以体现其作用。
 
-但凡做算法、数据分析、仿真、机器学习，哪一个都是在高等数学基础上扩展而来的理论再实现的。也就是说，虽然精通高数没啥用，但是不通高数几乎啥东西都没发开展。
+但凡做算法、数据分析、仿真、机器学习，哪一个都是在高等数学基础上扩展而来的理论
+再实现的。也就是说，虽然精通高数没啥用，但是不通高数几乎啥东西都没发开展。
+
+---
 
 然后，我 TM 拒绝了
 
 然后我一直单身到现在………
 
-曾经身边有很多有天赋的人，但是他们要么自我堕落，要么环境所迫，要么被父母老师所逼选了不喜欢的专业，要么人各有志不想学数学了，总之都已经远离数学很久很久了。每每想到此，我就特别感伤。
+曾经身边有很多有天赋的人，但是他们要么自我堕落，要么环境所迫，要么被父母老师所
+逼选了不喜欢的专业，要么人各有志不想学数学了，总之都已经远离数学很久很久了。每
+每想到此，我就特别感伤。
 
 >   19 世纪德国数学家 Carl Gustav Jacobi，在纯数学某些领域有所贡献。Fourier 建议，
 >   这么聪明的头脑，研究点儿应用数学比如 heat flow 如何？这引起了 Jacobi 的不满。
 >   他在给 Legendre 信里，以教训人的口气说，像 Fourier 那样的人，“应该懂得，”研究
 >   数学的唯一目的，就是为了追求人类心智的荣耀。
 
-作者：匿名用户
-链接：http://www.zhihu.com/question/28528414/answer/41145529
-来源：知乎
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
 [数学这门学科有多有趣？ - 趣味数学 - 知乎](http://www.zhihu.com/question/37799355)
 
-|   人生大起大落莫过于：
-|   写满一张草稿纸终于算出压轴题的答案
-|   忐忑地回头看选项（要是选项里没有这个数怎么办啊啊啊）
-|   竟然有一个符合（哈哈哈我一定算对了）
-|   激动的写上答案（我真是太机智了）
-|   自信地对答案
-|   迫不及待地先对压轴题的答案
-|   然后发现…
-|   算错了…
-|   错了…
-|   了…
+:   |   人生大起大落莫过于：
+    |   写满一张草稿纸终于算出压轴题的答案
+    |   忐忑地回头看选项（要是选项里没有这个数怎么办啊啊啊）
+    |   竟然有一个符合（哈哈哈我一定算对了）
+    |   激动的写上答案（我真是太机智了）
+    |   自信地对答案
+    |   迫不及待地先对压轴题的答案
+    |   然后发现…
+    |   算错了…
+    |   错了…
+    |   了…
 
-这些牛逼经济学家在自己的一亩三分地是国王，任意虐其他研究者，特别是junior研究者；出了象牙塔，就没有什么了不起的；实战，呵呵，我就祝他们好运了。另外一个感觉就是，他们的思维框框特别多，没有想象力。经济学家/金融学家，太把自己当回事了。特别是一些出自名校、刚毕业没几年的‘宏观’经济学者，没有一点实践经验，就开始煞有介事地用model指点江山。搞笑！
+    这些牛逼经济学家在自己的一亩三分地是国王，任意虐其他研究者，特别是 junior 研究
+    者；出了象牙塔，就没有什么了不起的；实战，呵呵，我就祝他们好运了。另外一个感觉
+    就是，他们的思维框框特别多，没有想象力。经济学家 / 金融学家，太把自己当回事了。
+    特别是一些出自名校、刚毕业没几年的‘宏观’经济学者，没有一点实践经验，就开始煞有
+    介事地用 model 指点江山。搞笑！
 
-作者：麦哲伦
-链接：http://www.zhihu.com/question/29245787/answer/43706790
-来源：知乎
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+    数学大体上就起了个这么个作用。如果现实和模型推导的不一样，那一定是模型错了。悲
+    哀的是很多人沉浸在数学的完美中，对现实不闻不见。只要模型自洽，那管现实洪水滔天
+    啊。我的经验：解释过去，可以玩模型；对待未来，我劝你不如用孙子兵法。(13年诺奖得
+    主之一的Hansen 在2014年AFA年会上有句话说得挺好：“所有的模型都是错的，区别是错的
+    有意义和没有意义“。很可惜大多数都是没有意义的。)
 
-数学大体上就起了个这么个作用。如果现实和模型推导的不一样，那一定是模型错了。悲哀的是很多人沉浸在数学的完美中，对现实不闻不见。只要模型自洽，那管现实洪水滔天啊。我的经验：解释过去，可以玩模型；对待未来，我劝你不如用孙子兵法。(13年诺奖得主之一的Hansen 在2014年AFA年会上有句话说得挺好：“所有的模型都是错的，区别是错的有意义和没有意义“。很可惜大多数都是没有意义的。)
+    学术圈生存研究者每天的工作之一就要互相咬，多弄点数学 / 高深的数学可以将攻击你的
+    人减少很多。攻击者在咬的时候先要掂量掂量自己把数学搞懂了没。很多论文用很复杂的
+    模型说了个很明显的故事。几年前我会仔仔细细推导，觉得这论文好牛逼啊。现在我大概
+    简单看看 abstract；大量时间和智力就这样被浪费了。
 
-学术圈生存研究者每天的工作之一就要互相咬，多弄点数学/高深的数学可以将攻击你的人减少很多。攻击者在咬的时候先要掂量掂量自己把数学搞懂了没。很多论文用很复杂的模型说了个很明显的故事。几年前我会仔仔细细推导，觉得这论文好牛逼啊。现在我大概简单看看abstract；大量时间和智力就这样被浪费了。
+    this paper is too descriptive
 
-this paper is too descriptive
+    博弈论大师 Ariel Rubinstein 用自己的研究结果指导小贩讨价还价，结果双方无法达成
+    一个交易价格。但大师没有骂小贩是傻逼。他自己羞愧的走开，让小贩继续快乐地用祖传
+    的方法讨价还价。这才是一个务实的态度。现实世界没有最优解；也可能永远不会收敛到
+    “均衡”。
 
-博弈论大师Ariel Rubinstein用自己的研究结果指导小贩讨价还价，结果双方无法达成一个交易价格。但大师没有骂小贩是傻逼。他自己羞愧的走开，让小贩继续快乐地用祖传的方法讨价还价。这才是一个务实的态度。现实世界没有最优解；也可能永远不会收敛到“均衡”。
+    这些牛逼经济学家在自己的一亩三分地是国王，任意虐其他研究者，特别是 junior 研究者；
+    出了象牙塔，就没有什么了不起的；实战，呵呵，我就祝他们好运了。另外一个感觉就是，
+    他们的思维框框特别多，没有想象力。经济学家 / 金融学家，太把自己当回事了。特别是一
+    些出自名校、刚毕业没几年的‘宏观’经济学者，没有一点实践经验，就开始煞有介事地用
+    model 指点江山。搞笑！
 
-这些牛逼经济学家在自己的一亩三分地是国王，任意虐其他研究者，特别是junior研究者；出了象牙塔，就没有什么了不起的；实战，呵呵，我就祝他们好运了。另外一个感觉就是，他们的思维框框特别多，没有想象力。经济学家/金融学家，太把自己当回事了。特别是一些出自名校、刚毕业没几年的‘宏观’经济学者，没有一点实践经验，就开始煞有介事地用model指点江山。搞笑！
-
-作者：麦哲伦
-链接：http://www.zhihu.com/question/29245787/answer/43706790
-来源：知乎
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
-作者：麦哲伦
-链接：http://www.zhihu.com/question/29245787/answer/43706790
-来源：知乎
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
-作者：麦哲伦
-链接：http://www.zhihu.com/question/29245787/answer/43706790
-来源：知乎
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
-作者：麦哲伦
-链接：http://www.zhihu.com/question/29245787/answer/43706790
-来源：知乎
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
-论文最后是交纸质档，对于内容没有要求，包括内容完整度
-
-31之前我会找个地方，让大家把论文交给我，或者大家提前写好了，也可以私聊，方便就行
+    论文最后是交纸质档，对于内容没有要求，包括内容完整度
 
 [理解PCA和SVD | 切问录](http://www.fuzihao.org/blog/2015/12/04/%E7%90%86%E8%A7%A3PCA%E5%92%8CSVD/)
 
@@ -739,11 +1002,12 @@ It's enough to make a respectable fellow blush.
 
 argon, 美: [ˈɑrˌɡɑn]英: [ˈɑː(r)ɡɒn], n.氩, greek "lazy".
 
-Scientists spent a lot of time separating the different kinds of air and then had to
-decide what to call them all. Oxygen was called *flammable air* for a while, but it didn’t
-catch on. It just didn’t have the right **scientific ring** to it. We all know that scientific
-words need an obscure classical origin to make them sound impressive to those who
-wouldn’t know an idiopathic craniofacial erythema if it hit them in the face.
+Scientists spent a lot of time separating the different kinds of air and then
+had to decide what to call them all. Oxygen was called *flammable air* for a
+while, but it didn’t catch on. It just didn’t have the right **scientific
+ring** to it. We all know that scientific words need an obscure classical
+origin to make them sound impressive to those who wouldn’t know an idiopathic
+craniofacial erythema if it hit them in the face.
 
 [Shoe fetishism - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Shoe_fetishism)
 
@@ -806,9 +1070,10 @@ wouldn’t know an idiopathic craniofacial erythema if it hit them in the face.
         arched on the heel. Thus, creating a raised flat sole that provides the
         perfect unison of a lift and the exact comfort of regular shoes.
 
-    [Boot fetishism - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Boot_fetishism)
+    refs and see also
 
-    [Fuck-me shoes - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Fuck-me_boots)
+      - [Boot fetishism - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Boot_fetishism)
+      - [Fuck-me shoes - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Fuck-me_boots)
 
 lavatory, `[ˈlævəˌtɔri]`, n.厕所；卫生间；洗手间；盥洗室
 
@@ -930,10 +1195,10 @@ Machiavellianism
 
     这段话是我看着此人最贱的言论之一
 
-    > 女孩干嘛要攒钱？女孩是不需要攒钱的。女人年轻时最好的投资，就是把钱花自己身上
-    > ，去旅游去护肤去享受，让自己在最好年华里爆发最好的光彩。你对自己好，别人才会
-    > 对你好，事业家庭爱情才会出色。女人只有在青春逝去后才需要攒钱，等到老了，你就
-    > 是一个曾经最美过，现在又最有钱的老太太了。
+    >   女孩干嘛要攒钱？女孩是不需要攒钱的。女人年轻时最好的投资，就是把钱花自己身
+    >   上，去旅游去护肤去享受，让自己在最好年华里爆发最好的光彩。你对自己好，别人
+    >   才会对你好，事业家庭爱情才会出色。女人只有在青春逝去后才需要攒钱，等到老了，
+    >   你就是一个曾经最美过，现在又最有钱的老太太了。
 
     他奶奶的美女这样挥霍光最后可以找有钱老头买单，没姿色不去读书不去提高光知道
     挥霍吓走男友然后回家啃老？老了去攒钱？？老了再去攒钱就来不及了好不好。
@@ -955,7 +1220,7 @@ Machiavellianism
 
 Yesterday you said tomorrow. Just do it.
 
-It's a beautiful day,and I can't see it
+It's a beautiful day, and I can't see it
 
 |   一位骑车去陕北的大哥给我讲的。
 |   他并不是带着一身昂贵周全的装备，体魄健壮，玩味人生的那一类驴友。
@@ -1019,7 +1284,9 @@ It's a beautiful day,and I can't see it
 
 :   帽子说：傻！你们程序员再过几年就是年薪百万，全中国的人民都在创业，没技术没资金
     别的啥也干不了，也就能买个域名请个程序员开网络公司。中国还需要几个程序员？1亿！
-    将来最有前途的行业，一个是程序员，一个是办公室二手桌椅倒卖。
+    **将来最有前途的行业，一个是程序员，一个是办公室二手桌椅倒卖。**
+
+    这个脑洞……
 
     |   但是，即使你现在就杀了我
     |   即使你把我的尸体扔进粪池
@@ -3214,9 +3481,14 @@ Magit
     or hides in dark places such as caves. Jiangshi legends have inspired a
     genre of jiangshi films and literature in Hong Kong and East Asia.
 
+    不知道是清朝的人死了会穿官服一样的寿衣，还是当官的才会成僵尸。
+    （穷人没棺材早被虫子吃掉了？）
+
     [I Ching - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/I_Ching)
 
-    :   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/I_Ching_%28Chinese_characters%29.svg/173px-I_Ching_%28Chinese_characters%29.svg.png)
+    :   这特么居然是易经……（yi jing）
+
+        ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/I_Ching_%28Chinese_characters%29.svg/173px-I_Ching_%28Chinese_characters%29.svg.png)
 
 [Rōshi - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/R%C5%8Dshi)
 
@@ -3283,11 +3555,15 @@ Magit
     same time parallels the maturation of his sons, Gohan and Goten, as well as
     the evolution of his rivals Piccolo and Vegeta from enemies into allies.
 
+    在英文里 X 和 Z 都是很酷的字母。
+
     refs and see also
 
       - [Dragon Ball Z - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dragon_Ball_Z)
 
 [平面排版时，运用哪些方法可以突出中文的美感？ - 平面设计 - 知乎](http://www.zhihu.com/question/19577036)
+
+:   字要少。字体要好。
 
 [禁则处理是什么意思？ - 排版 - 知乎](http://www.zhihu.com/question/20294511)
 
@@ -3351,11 +3627,12 @@ Magit
     解决别人不能解决的问题来挣钱。
 
     上等程序员靠创新来挣钱，能促进行业的发展，在这个充满咨询的年代，学习大家都
-    掌握的东西只是一个基本过程，没什么值得称道的，当你 baidu 上找不到方案，google
-    里没有参考，国内外没有任何人能给你启示的时候，任然能够充满创造的分析问题，
-    抽象问题，并解决问题。找到别人完全没有走过的路，创造前人从来没有创造过的东
-    西，这是他们的价值所在。他们的常见台词是：“别烦我！”，“忙着呢！”，“谷歌搜呀
-    ，这都问我？”，上等程序员是国宝，**他们的时间不应该浪费在无意义的事情上**。
+    掌握的东西只是一个基本过程，没什么值得称道的，当你 baidu 上找不到方案，
+    google里没有参考，国内外没有任何人能给你启示的时候，任然能够充满创造的分析
+    问题，抽象问题，并解决问题。找到别人完全没有走过的路，创造前人从来没有创造
+    过的东西，这是他们的价值所在。他们的常见台词是：“别烦我！”，“忙着呢！”，“谷
+    歌搜呀，这都问我？”，上等程序员是国宝，**他们的时间不应该浪费在无意义的事情
+    上**。
 
     即便做到上面几点，在神级程序员眼里，也只不过如此罢了。真正的神级程序员，不
     靠知识和智慧挣钱，更不靠创新来挣钱，而是靠**意志**来挣钱，十八般语言门门精
@@ -3365,6 +3642,8 @@ Magit
     小时连续编码依旧气定神闲，体力耐力无人能及。**上市公司首席科学家，创新项目
     的领导者，在他们看来，也只是尘土而已，不出三回合，毕斩其首级于电脑前。他们
     常见的台词是：“杀！”，“弄死你！”，**高手们总是睥睨天下而又冷言少语**。
+
+    为什么要说……“杀”……
 
 [Skywind Inside » 美术资源超级压缩方法](http://www.skywind.me/blog/archives/1176)
 
@@ -3389,136 +3668,136 @@ Magit
 
     因此 `>>8` 代替 `/255` 结果是比较粗糙的。而这个宏的开销比起 `>>8` 来说成本大 12%。
 
-[计算机图形算法中的光滑边缘算法经历了那些变迁？](http://www.skywind.me/blog/archives/1541)
+    [计算机图形算法中的光滑边缘算法经历了那些变迁？](http://www.skywind.me/blog/archives/1541)
 
-[还原被摄像机透视的纹理](http://www.skywind.me/blog/archives/1363)
+    [还原被摄像机透视的纹理](http://www.skywind.me/blog/archives/1363)
 
-[MINI-FOOLTRIS](http://www.skywind.me/maker/fooltris.htm)
+    [MINI-FOOLTRIS](http://www.skywind.me/maker/fooltris.htm)
 
-具体可以参考 Linux Kernel的 include/linux/list.h:
+    具体可以参考 Linux Kernel的 include/linux/list.h:
 
-```cpp
-struct list_head {
-    struct list_head *next, *prev;
-};
+    ```cpp
+    struct list_head {
+        struct list_head *next, *prev;
+    };
 
-#define INIT_LIST_HEAD(ptr) do { \
-    (ptr)->next = (ptr); (ptr)->prev = (ptr); \
-} while (0) // 这样就可以加上分号了……
-```
+    #define INIT_LIST_HEAD(ptr) do { \
+        (ptr)->next = (ptr); (ptr)->prev = (ptr); \
+    } while (0) // 这样就可以加上分号了……
+    ```
 
-函数组装：
+    函数组装：
 
-想象一下，你写图形图像的代码，现在你需要给像素合成实现 `SRC_ATOP`, `SRC_OVER`,
-`SRC_IN`, `SRC_OUT`, `DST_ATOP`, `DST_OVER`, `DST_IN`, `DST_OUT`, `XOR`,
-`PLUS`, `ALLANON`, `TINT`, `DIFF`, `DARKEN`, `LIGHTEN`, `SCREEN`, `OVERLAY`, 等
-等二十种像素合成的方法，你如果不用宏，那么你需要写多少个函数？20 多个看起来类
-似的函数，你不得写疯了么？此时用函数指针其实是很浪费性能的事情，那么该如何写呢
-？你可以规定一系列用来计算 composite 的方法，接受两组 RGBA，生成新的，比如：
+    想象一下，你写图形图像的代码，现在你需要给像素合成实现 `SRC_ATOP`, `SRC_OVER`,
+    `SRC_IN`, `SRC_OUT`, `DST_ATOP`, `DST_OVER`, `DST_IN`, `DST_OUT`, `XOR`,
+    `PLUS`, `ALLANON`, `TINT`, `DIFF`, `DARKEN`, `LIGHTEN`, `SCREEN`, `OVERLAY`, 等
+    等二十种像素合成的方法，你如果不用宏，那么你需要写多少个函数？20 多个看起来类
+    似的函数，你不得写疯了么？此时用函数指针其实是很浪费性能的事情，那么该如何写呢
+    ？你可以规定一系列用来计算 composite 的方法，接受两组 RGBA，生成新的，比如：
 
-```cpp
-/* compositing */
-#define IBLEND_COMPOSITE(sr, sg, sb, sa, dr, dg, db, da, FS, FD) do { \
-        (dr) = _ipixel_mullut[(FS)][(sr)] + _ipixel_mullut[(FD)][(dr)]; \
-        (dg) = _ipixel_mullut[(FS)][(sg)] + _ipixel_mullut[(FD)][(dg)]; \
-        (db) = _ipixel_mullut[(FS)][(sb)] + _ipixel_mullut[(FD)][(db)]; \
-        (da) = _ipixel_mullut[(FS)][(sa)] + _ipixel_mullut[(FD)][(da)]; \
-    }   while (0)
+    ```cpp
+    /* compositing */
+    #define IBLEND_COMPOSITE(sr, sg, sb, sa, dr, dg, db, da, FS, FD) do { \
+            (dr) = _ipixel_mullut[(FS)][(sr)] + _ipixel_mullut[(FD)][(dr)]; \
+            (dg) = _ipixel_mullut[(FS)][(sg)] + _ipixel_mullut[(FD)][(dg)]; \
+            (db) = _ipixel_mullut[(FS)][(sb)] + _ipixel_mullut[(FD)][(db)]; \
+            (da) = _ipixel_mullut[(FS)][(sa)] + _ipixel_mullut[(FD)][(da)]; \
+        }   while (0)
 
-/* premultiply: src over */
-#define IBLEND_OP_SRC_OVER(sr, sg, sb, sa, dr, dg, db, da) do { \
-        IUINT32 FD = 255 - (sa); \
-        IBLEND_COMPOSITE(sr, sg, sb, sa, dr, dg, db, da, 255, FD); \
-    }   while (0)
+    /* premultiply: src over */
+    #define IBLEND_OP_SRC_OVER(sr, sg, sb, sa, dr, dg, db, da) do { \
+            IUINT32 FD = 255 - (sa); \
+            IBLEND_COMPOSITE(sr, sg, sb, sa, dr, dg, db, da, 255, FD); \
+        }   while (0)
 
-/* premultiply: dst atop */
-#define IBLEND_OP_DST_ATOP(sr, sg, sb, sa, dr, dg, db, da) do { \
-        IUINT32 FS = 255 - (da); \
-        IUINT32 FD = (sa); \
-        IBLEND_COMPOSITE(sr, sg, sb, sa, dr, dg, db, da, FS, FD); \
-    }   while (0)
+    /* premultiply: dst atop */
+    #define IBLEND_OP_DST_ATOP(sr, sg, sb, sa, dr, dg, db, da) do { \
+            IUINT32 FS = 255 - (da); \
+            IUINT32 FD = (sa); \
+            IBLEND_COMPOSITE(sr, sg, sb, sa, dr, dg, db, da, FS, FD); \
+        }   while (0)
 
-/* premultiply: dst in */
-#define IBLEND_OP_DST_IN(sr, sg, sb, sa, dr, dg, db, da) do { \
-        IUINT32 FD = (sa); \
-        IBLEND_COMPOSITE(sr, sg, sb, sa, dr, dg, db, da, 0, FD); \
-    }   while (0)
-```
+    /* premultiply: dst in */
+    #define IBLEND_OP_DST_IN(sr, sg, sb, sa, dr, dg, db, da) do { \
+            IUINT32 FD = (sa); \
+            IBLEND_COMPOSITE(sr, sg, sb, sa, dr, dg, db, da, 0, FD); \
+        }   while (0)
+    ```
 
-然后用 # 连接各种方法和格式，生成不同的函数，比如：
+    然后用 # 连接各种方法和格式，生成不同的函数，比如：
 
-```cpp
-#define IPIXEL_COMPOSITE_FN(name, opname) \
-static void ipixel_comp_##name(IUINT32 *dst, const IUINT32 *src, int w)\
-{ \
-    IUINT32 sr, sg, sb, sa, dr, dg, db, da; \
-    for (; w > 0; dst++, src++, w--) { \
-        _ipixel_load_card(src, sr, sg, sb, sa); \
-        _ipixel_load_card(dst, dr, dg, db, da); \
-        IBLEND_OP_##opname(sr, sg, sb, sa, dr, dg, db, da); \
-        dst = IRGBA_TO_A8R8G8B8(dr, dg, db, da); \
-    } \
-}
-```
+    ```cpp
+    #define IPIXEL_COMPOSITE_FN(name, opname) \
+    static void ipixel_comp_##name(IUINT32 *dst, const IUINT32 *src, int w)\
+    { \
+        IUINT32 sr, sg, sb, sa, dr, dg, db, da; \
+        for (; w > 0; dst++, src++, w--) { \
+            _ipixel_load_card(src, sr, sg, sb, sa); \
+            _ipixel_load_card(dst, dr, dg, db, da); \
+            IBLEND_OP_##opname(sr, sg, sb, sa, dr, dg, db, da); \
+            dst = IRGBA_TO_A8R8G8B8(dr, dg, db, da); \
+        } \
+    }
+    ```
 
-然后开始生成我们的各种合成函数：
+    然后开始生成我们的各种合成函数：
 
-```cpp
-IPIXEL_COMPOSITE_PREMUL(pre_xor, XOR);
-IPIXEL_COMPOSITE_PREMUL(pre_plus, PLUS);
-IPIXEL_COMPOSITE_PREMUL(pre_src_atop, SRC_ATOP);
-IPIXEL_COMPOSITE_PREMUL(pre_src_in, SRC_IN);
-IPIXEL_COMPOSITE_PREMUL(pre_src_out, SRC_OUT);
-IPIXEL_COMPOSITE_PREMUL(pre_src_over, SRC_OVER);
-IPIXEL_COMPOSITE_PREMUL(pre_dst_atop, DST_ATOP);
-IPIXEL_COMPOSITE_PREMUL(pre_dst_in, DST_IN);
-IPIXEL_COMPOSITE_PREMUL(pre_dst_out, DST_OUT);
-IPIXEL_COMPOSITE_PREMUL(pre_dst_over, DST_OVER);
-```
+    ```cpp
+    IPIXEL_COMPOSITE_PREMUL(pre_xor, XOR);
+    IPIXEL_COMPOSITE_PREMUL(pre_plus, PLUS);
+    IPIXEL_COMPOSITE_PREMUL(pre_src_atop, SRC_ATOP);
+    IPIXEL_COMPOSITE_PREMUL(pre_src_in, SRC_IN);
+    IPIXEL_COMPOSITE_PREMUL(pre_src_out, SRC_OUT);
+    IPIXEL_COMPOSITE_PREMUL(pre_src_over, SRC_OVER);
+    IPIXEL_COMPOSITE_PREMUL(pre_dst_atop, DST_ATOP);
+    IPIXEL_COMPOSITE_PREMUL(pre_dst_in, DST_IN);
+    IPIXEL_COMPOSITE_PREMUL(pre_dst_out, DST_OUT);
+    IPIXEL_COMPOSITE_PREMUL(pre_dst_over, DST_OVER);
+    ```
 
-这样你相当于定义了：
+    这样你相当于定义了：
 
-```cpp
-ipixel_comp_pre_xor (...)
-ipixel_comp_pre_plus (...)
-....
-ipixel_comp_dst_over (...)
-```
+    ```cpp
+    ipixel_comp_pre_xor (...)
+    ipixel_comp_pre_plus (...)
+    ....
+    ipixel_comp_dst_over (...)
+    ```
 
-等好几个函数了，并且这些函数都是被你 **“组装” 出来的**，你并没有使用函数指针，也没
-有笨重的去写 20 多个函数。进一步如果你写图形图像你会发现你需要面对多种设备的像素
-格式，从 A8R8G8B8, A8B8G8R8 到 A1R5G5B5, 主流需要处理的像素格式都有 10 多种。
+    等好几个函数了，并且这些函数都是被你 **“组装” 出来的**，你并没有使用函数指针，也没
+    有笨重的去写 20 多个函数。进一步如果你写图形图像你会发现你需要面对多种设备的像素
+    格式，从 A8R8G8B8, A8B8G8R8 到 A1R5G5B5, 主流需要处理的像素格式都有 10 多种。
 
-那么你可以把 “从不同格式读取 r,g,b,a”， 以及 “将 r,g,b,a 组装成任意格式”，展开成
-很多个宏，然后不管你在这些像素格式里面做转换还是要做一些其他处理，你都可以用任
-意的 “像素读写” 宏 + “像素计算” 宏 组装成一个个具体需要的函数。
+    那么你可以把 “从不同格式读取 r,g,b,a”， 以及 “将 r,g,b,a 组装成任意格式”，展开成
+    很多个宏，然后不管你在这些像素格式里面做转换还是要做一些其他处理，你都可以用任
+    意的 “像素读写” 宏 + “像素计算” 宏 组装成一个个具体需要的函数。
 
-所以用宏来解决性能问题，并且简化自己的程序设计往往能起到 inline 不能起的作用，甚
-至能完成很多 template 所不能完成的任务。
+    所以用宏来解决性能问题，并且简化自己的程序设计往往能起到 inline 不能起的作用，甚
+    至能完成很多 template 所不能完成的任务。
 
-【改名新传】乞讨的改叫众筹，算命的改叫分析师，八卦小报改叫自媒体，统计改叫大数
-据分析，忽悠改叫互联网思维，做 IDC 的自称云计算，办公室出租改叫孵化器，圈地盖楼改
-叫科技园区，放高利贷改叫 P2P，看场子收保护费的改叫平台战略，搅局的改叫颠覆式创新。
+    【改名新传】乞讨的改叫众筹，算命的改叫分析师，八卦小报改叫自媒体，统计改叫大数
+    据分析，忽悠改叫互联网思维，做 IDC 的自称云计算，办公室出租改叫孵化器，圈地盖楼改
+    叫科技园区，放高利贷改叫 P2P，看场子收保护费的改叫平台战略，搅局的改叫颠覆式创新。
 
-所谓搬砖几乎不需要封装，因为大部分只用一次，今天把砖头从东搬到西明天又从西搬到
-东搬回来，后天又回去，既然如此**任何封装都是容易过度**，不比老实搬砖复制来的直接高
-效。就像正则表达式，每次都重写，写熟了后也并不需要想着封装复用下老的，每次重写
-为主，复制改写为辅。搬砖搬多了也和写正则一样，每次重写即可，简单高效，无需封装。
+    所谓搬砖几乎不需要封装，因为大部分只用一次，今天把砖头从东搬到西明天又从西搬到
+    东搬回来，后天又回去，既然如此**任何封装都是容易过度**，不比老实搬砖复制来的直接高
+    效。就像正则表达式，每次都重写，写熟了后也并不需要想着封装复用下老的，每次重写
+    为主，复制改写为辅。搬砖搬多了也和写正则一样，每次重写即可，简单高效，无需封装。
 
-记住，砖是搬不完的，你搬累了，又有人来接替你搬了。**不要天真谈创造**，现在不是
-单干的时代，远离个人英雄主义，你的所有成绩来自集体，个人离开集体啥都不是，没有
-谁是不可替代的，少了谁地球一样转。
+    记住，砖是搬不完的，你搬累了，又有人来接替你搬了。**不要天真谈创造**，现在不是
+    单干的时代，远离个人英雄主义，你的所有成绩来自集体，个人离开集体啥都不是，没有
+    谁是不可替代的，少了谁地球一样转。
 
-戒骄戒躁，努力做好社会主义的螺丝钉，凡事就怕认真二字。简单的事情重复做，你就是
-专家；重复的事情用心做，你就是行家！再小的地方，他也能干出成绩！
+    戒骄戒躁，努力做好社会主义的螺丝钉，凡事就怕认真二字。简单的事情重复做，你就是
+    专家；重复的事情用心做，你就是行家！再小的地方，他也能干出成绩！
 
-[Skywind Inside » 视频编码原理简介](http://www.skywind.me/blog/archives/1566)
+    [Skywind Inside » 视频编码原理简介](http://www.skywind.me/blog/archives/1566)
 
-[Skywind Inside » 如何写一个视频编码器演示篇](http://www.skywind.me/blog/archives/1609)
+    [Skywind Inside » 如何写一个视频编码器演示篇](http://www.skywind.me/blog/archives/1609)
 
-[Skywind Inside » 如何写一个软件渲染器？](http://www.skywind.me/blog/archives/1498)
+    [Skywind Inside » 如何写一个软件渲染器？](http://www.skywind.me/blog/archives/1498)
 
-:   My annotated code: [mini3d/mini3d.c at master · 4ker/mini3d](https://github.com/4ker/mini3d/blob/master/mini3d.c).
+    My annotated code: [mini3d/mini3d.c at master · 4ker/mini3d](https://github.com/4ker/mini3d/blob/master/mini3d.c).
 
     实现个**简单的固定渲染管线软渲染器**不算复杂，差不多 700 行代码就可以搞定了。之所以
     很多人用 D3D 用的很熟，写软渲染却坑坑洼洼，主要是现在大部分讲图形的书，讲到透视
@@ -3536,19 +3815,21 @@ ipixel_comp_dst_over (...)
     界情况和太多细节优化容易让初学者迷失，这个 mini3d 的项目不做任何优化，主要目的
     就是为了突出主干：
 
-    操作方式：左右键旋转，前后键前进后退，空格键切换模式，ESC退出。
+    操作方式：左右键旋转，前后键前进后退，空格键切换模式，ESC 退出。
 
-    模型标准：标准 D3D 坐标模型，左手系 + WORLD/VIEW/PROJECTION 三矩阵
-    实现裁剪：简单 CVV 裁剪
-    纹理支持：最大支持 1024 x 1024 的纹理
-    深度缓存：使用深度缓存判断图像前后
-    边缘计算：精确的多边形边缘覆盖计算
-    透视贴图：透视纹理映射以及透视色彩填充
-    实现精简：渲染部分只有 700行， 模块清晰，主干突出。
-    详细注释：主要代码详细注释
+    -   模型标准：标准 D3D 坐标模型，左手系 + WORLD/VIEW/PROJECTION 三矩阵
+    -   实现裁剪：简单 CVV 裁剪
+    -   纹理支持：最大支持 1024 x 1024 的纹理
+    -   深度缓存：使用深度缓存判断图像前后
+    -   边缘计算：精确的多边形边缘覆盖计算
+    -   透视贴图：透视纹理映射以及透视色彩填充
+    -   实现精简：渲染部分只有 700行， 模块清晰，主干突出。
+    -   详细注释：主要代码详细注释
 
+    ```bash
     mingw: gcc -O3 mini3d.c -o mini3d.exe -lgdi32
     msvc: cl -O2 -nologo mini3d.c
+    ```
 
 [Coordinate Systems (Direct3D 9) (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/bb204853(v=vs.85).aspx)
 
@@ -3588,13 +3869,13 @@ ipixel_comp_dst_over (...)
 
 [韦易笑 答过的问题 - 知乎](http://www.zhihu.com/people/skywind3000/answers?order_by=vote_num)
 
-:   01. 实现简单的 HTTP 服务器（支持 GET/POST/CGI），然后用浏览器访问，里面有个 CGI 留言板。
-:   02. 实现一个简版 REDIS，或者给 Redis 加 10 条命令，或者把后面存储引擎换成 unqlite，再开源
-:   03. 给 apache 实现一个 module，可以支持 lua 来写服务。
-:   04. 给 nginx 写一个 python 模块，可以 python 来写服务。
-:   05. 用 C/C++/go 写个代理翻墙软件，跑在你的海外租的 vps 上。
-:   06. 实现一套简单的 TCP RPC 框架，并再基础上做一个简单聊天。
-:   07. 阅读 Linux 代码，应用层实现一个 Linux 的定时器。
+:   1.  实现简单的 HTTP 服务器（支持 GET/POST/CGI），然后用浏览器访问，里面有个 CGI 留言板。
+    2.  实现一个简版 REDIS，或者给 Redis 加 10 条命令，或者把后面存储引擎换成 unqlite，再开源
+    3.  给 apache 实现一个 module，可以支持 lua 来写服务。
+    4.  给 nginx 写一个 python 模块，可以 python 来写服务。
+    5.  用 C/C++/go 写个代理翻墙软件，跑在你的海外租的 vps 上。
+    6.  实现一套简单的 TCP RPC 框架，并再基础上做一个简单聊天。
+    7.  阅读 Linux 代码，应用层实现一个 Linux 的定时器。
 
     很多人觉得程序主要是思考，你思路对了，打字只是小事，经常听到说某某高手打字
     是二指禅。以前我也这么认为，但是专门抽时间练习了以后，发现真正打字流畅的人，
@@ -3608,7 +3889,7 @@ ipixel_comp_dst_over (...)
     入了脊柱反应的条件反射时代，那么看到一个单词或者一串数字，大脑只需要下一个
     指令，脊柱这个协处理器就自动完成了，根本不需要过大脑。
 
-    我们说 Fabrice 牛逼，因为他对 数学，信号处理，计算机体系等三个方面有着深刻
+    我们说 Fabrice 牛逼，因为他对数学，信号处理，计算机体系等三个方面有着深刻
     的认识，从而他能做出 ffmpeg, qemu, tinycc 这样的项目来，从而他算 pi 可以算
     到世界第一快，所以大家觉得很牛逼，这并不是因为听说他 C++ 有多牛。
 
@@ -3647,7 +3928,7 @@ ipixel_comp_dst_over (...)
 
     但更多的是混日子的，工程能力基本 0 分，科研能力一般 8 分（满分 100）。张口
     闭口机器学习，自然语言处理，实际上就是把别人 matlab 代码抄来改改代码，跑个
-    结果还用 ps美颜一下最后抄几篇论文毕业。
+    结果还用 ps 美颜一下最后抄几篇论文毕业。
 
     所以那，真的没必要因为“读研”这个选择不被认可而感到愤怒。读研并不比工作高贵，
     只是一个普通地选择而已。就是那种今天我是吃面还是吃米线那种选择。
@@ -3673,7 +3954,7 @@ ipixel_comp_dst_over (...)
       - 人通过软件来与计算机交互，而软件说穿了就是人向机器发送的一系列逻辑指令，
         这些逻辑指令是在编程语言（programming language）这种媒介的承载之下发送
         出去的，而我在北大十年，掌握了四门 language，programming language 本质
-        上就是一种language，我对 language 太熟悉不过了，所以没理由学不好编程。
+        上就是一种 language，我对 language 太熟悉不过了，所以没理由学不好编程。
       - 计算机指令和硬件进行交互，靠的是运算逻辑。我在本科期间修过逻辑课，而在
         北大六年的教书生涯中，为了把课讲好讲的有逻辑，我又在讲台上历练了六年自
         己的逻辑思维，我敢保证，我的逻辑思维能力可以碾压任何一个美国计算机四年
@@ -3946,7 +4227,9 @@ Bachmann, collectively called Bachmann-Landau notation or **asymptotic (渐进) 
 
 [【智能便携打字机】 – 北大新媒体](http://www.looooker.com/archives/24235)
 
-:   features:
+:   智能。
+
+    features:
 
       - E Ink screen with frontlight
       - Full-size mechanical keyboard feature Cherry MX keyswitches
@@ -3954,6 +4237,10 @@ Bachmann, collectively called Bachmann-Landau notation or **asymptotic (渐进) 
       - Document cloud sync through WiFi
       - International language support
       - Rugged construction with aluminum body and stowable handle
+
+    refs and see also
+
+      - [求推荐一个便捷输入设备 - V2EX](http://v2ex.com/t/280303#reply15)
 
 [include dir, li-dvorak4tzx](http://dvorak4tzx.lofter.com/post/1d4021c8_b0ec95c)
 
@@ -4463,6 +4750,7 @@ gH          Start Select mode, linewise.  This is like "V",
 
 :   -   <http://whudoc.qiniudn.com/2016/bcp_standalone.exe> (561 KB)
     -   <http://whudoc.qiniudn.com/2016/bcp_standalone_linux> (917 KB)
+    -   <http://whudoc.qiniudn.com/2016/bcp_standalone_linux_i386> (900 KB)
     -   <http://whudoc.qiniudn.com/2016/boost_1_58_0_headers.7z> (6.29 MB)
     -   <http://whudoc.qiniudn.com/2016/boost_1_58_0_headers_sources.7z> (37.6 MB)
     -   <http://whudoc.qiniudn.com/2016/boost_1_58_0_vs2010_x64.7z> (103 MB)
