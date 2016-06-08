@@ -4095,3 +4095,11 @@ refs and see also
     function emphasizes different parts of the input function.
 
 [Spline (mathematics) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Spline_(mathematics))
+
+[Precision and recall - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Precision_and_recall)
+
+:   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Precisionrecall.svg/525px-Precisionrecall.svg.png)
+
+
+[H-theorem - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/H-theorem)
+[Entropy (information theory) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Entropy_(information_theory))

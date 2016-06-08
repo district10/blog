@@ -13,6 +13,14 @@ before-after:
 Koans | 呓语[^why-koan]
 =======================
 
+## `1465357307`{.tzx-timestamp} Precision 和 Recall
+
+比如这里有 30 个人，其中 15 个是傻逼。然后让你来说谁是傻逼，你说“全是傻逼！”
+
+于是，你的 precision 是 15/30 = 0.5，因为你口中的傻逼每两个有一个是真傻逼。
+你的 recall 是 15/15 = 1，意思是你把 100% 的傻逼都挑选出来了
+（当然这不是你眼神好，这主要是因为：傻逼毕竟太多了！）。
+
 ## `1465217428`{.tzx-timestamp} WTFPL 是一个不负责任的协议
 
 在 [Please change license from WTFPL (e.g. to GPL) · Issue #474 · dimitri/el-get](https://github.com/dimitri/el-get/issues/474)，
