@@ -13,6 +13,22 @@ before-after:
 Koans | 呓语[^why-koan]
 =======================
 
+## `1465548990`{.tzx-timestamp} Kindle 新版本横屏阅读
+
+在设置字体的地方设置。Kindle 现在很赞，可以自动切白边的。
+
+看 slides 的时候横屏很赞，而且把页边距调大点，就不会一张 slide 分成两页了。
+
+## `1465376207`{.tzx-timestamp} 大赞 jgm
+
+好热心，好厉害。
+
+[Install pandoc without root access · Issue #2943 · jgm/pandoc](https://github.com/jgm/pandoc/issues/2943)
+
+[pandoc to s5 slides isn't working. · Issue #2958 · jgm/pandoc](https://github.com/jgm/pandoc/issues/2958)
+
+……
+
 ## `1465357307`{.tzx-timestamp} Precision 和 Recall
 
 比如这里有 30 个人，其中 15 个是傻逼。然后让你来说谁是傻逼，你说“全是傻逼！”
@@ -20,6 +36,15 @@ Koans | 呓语[^why-koan]
 于是，你的 precision 是 15/30 = 0.5，因为你口中的傻逼每两个有一个是真傻逼。
 你的 recall 是 15/15 = 1，意思是你把 100% 的傻逼都挑选出来了
 （当然这不是你眼神好，这主要是因为：傻逼毕竟太多了！）。
+
+再说说这两个名词。
+Precision 评价的是你说话到底靠不靠谱，“猜几下能中”。
+Recall 评价的是你说话的全面性，“能猜出几成”，这个 recall 就有点 retrive 的感觉，
+这样“召回”就好理解一点了。
+
+refs and see also
+
+  - [Precision and recall - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Precision_and_recall)
 
 ## `1465217428`{.tzx-timestamp} WTFPL 是一个不负责任的协议
 

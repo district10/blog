@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $( ".tzx-tabs" ).tabs();
     $( "a" ).attr( "target", "_blank" );
+    $( "a[href*='#']" ).attr( "target", "" );
     $("img").each(function(index){
         var src = $(this).attr('src');
         $(this).attr({

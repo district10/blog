@@ -19,6 +19,159 @@ tags:
 Notes | 笔记[^1]
 ================
 
+[Code Hunt](https://www.codehunt.com/)
+
+
+LS, 你要知道一点：凡是跟我意见不同的，都是五毛。
+
+[A lone man refusing to do the Nazi salute, 1936](http://rarehistoricalphotos.com/lone-man-refusing-nazi-salute-1936/)
+
+[What are some of the best English names Chinese people give themselves but are not generally found outside China? - Quora](https://www.quora.com/What-are-some-of-the-best-English-names-Chinese-people-give-themselves-but-are-not-generally-found-outside-China)
+
+:   As a typical wastrel waijiao I've had more than my fair share of strange or unusual student names over the years.  Here's a sampling:
+
+    Cherry
+    Cylinder (we tried to get her to change her name to Selina for months)
+    Oliver (a girl)
+    Dragon (well, it is China ...)
+    Tiger
+    Elephant (his name contains a Xiang and his friends call him Da Xiang, so ...)
+    Echo (usually named for San Mao)
+    Ensoul
+    Effie (a real English name but very uncommon)
+    Fender (like the guitar)
+    Sarin (like the poison gas ...)
+    Laphia (her name is self-made pormanteau of Laura and Sophia)
+    Panzer II (a military nut, note the Roman numeral)
+    Goose (she wasn't a Top Gun fan, sadly)
+    Robo
+    Una
+    Novia (she didn't know it means "girlfriend" in Spanish; she thought it sounded like Nokia)
+    Pussy (um ... like the cat, she explained ...)
+    Michael Schumacher (yes, first and last name)
+    Peter Jackson (this was right after LOTR hit China)
+
+[那些发生在面试之后的你不知道的事 - 虹姐说 - 知乎专栏](https://zhuanlan.zhihu.com/p/20190053?refer=hongjieshuo)
+
+:   一些姓名的读音跟想象的不一样！
+
+    很多南美裔的人的名字都是西班牙名字，他们的读音规则跟英文不一样。以前虹姐上
+    课的学校有个教授是阿根廷人，名字是Jose，是个非常常见的西班牙名字。虹姐叫了
+    人家一个学期的宙斯，到处跟人说宙斯教授的课特别好，人家总是一脸迷茫，最后才
+    知道西班牙语名字J是发H的音的。所以Jose应该是hou'sei的读音（中文翻译过来是何
+    塞）。同理，如果遇到名字是Juan的，也是一个典型的西班牙名字，是读介于‘huan'
+    和'wuan'的读音，别再管人叫娟儿了。还有一个容易读错的名字是Sean，应该是接近’
+    尚‘的一个读音，有人按发音规则读成seen，人家美国人一脸黑线。Evan是另一个，应
+    该读['evən]，而不是一万。Lou应该读/lu:/，是Louis的别名，不要管人家叫楼了！
+
+    Hypocorism（别名，小名）
+
+    西方名字有很多种缩写，或者看起来完全不一样的写法。如果一定要打比喻的话，有
+    点类似咱们的大名和小名。还拿Rachel举例子，Rachel是她的大名，但也有很多场合
+    大家称她Rach，甚至Ray Ray。这些就是Rachel这个名字衍生出来的其它叫法。
+
+    我出国第一个月一直把 “洗手间” 叫做 toilet，后来发现当地人都用 bathroom 这个
+    词。但 bathroom 不是家里洗澡的地方吗？我半年后才明白，当地人也把 “公共场所
+    洗手间” 叫 bathroom，而 toilet 是马桶的意思。
+
+    现在中文互联网上流行的所谓 “英语俚语”，真的只能在美国年轻人和美国电影中看见。
+
+    语言不是死的。说话的唯一准则是遵循你周围人的习惯，根据你发言的对象进行调整。
+
+    而经常被中国学生看不起的国内英文教科书教的恰恰是最保险的说法。
+
+    refs and see also
+
+      - [中国英语课本有哪些偏差？ - 知乎](https://www.zhihu.com/question/38529020)
+
+[李立：中国人英语比印度人好是幻觉_网易新闻中心](http://view.163.com/14/1219/09/ADQO2TV600012Q9L.html)
+
+:   虹姐来美国前，一直觉得自己在美国一定就跟外国人在中国一样。记得在网上看到过
+    一件专门给歪果仁设计的 T-shirt，正面写着‘老外来了’，反面写着‘老外走了’，觉得这个
+    创意实在是到位。
+
+    事实上后来虹姐上班之后才发现，美国的办公室跟大街上一样鱼龙混杂，什么人都有。
+    比如虹姐现在上班的小组只有十几个人，其中就包括保加利亚人，意大利人，印度人，
+    瑞士人（还是个大帅哥，啧啧啧），还有我这个中国人。大家出生在不同的大陆，说
+    话漂着不同的味儿，但都可以把工作胜任，这是最普通不过的美国工作坏境了。在中
+    国，别说歪果仁了，就是本地人外地人也分的门儿清呢。但是一个移民国家对于文化
+    背景的宽容度，比咱在中国感受到的，要大很多很多。
+
+    为什么西文很多字体中的数字 6 和 8 都要高，而 3、4、5、7、9 要低于 1、2、0？
+
+    :   这种数字字形设计叫「old-style figures」，又称「non-lining figures」、
+        「text figures」等（「figures」即「数字」）。与之相对的是 lining
+        figures（和「A」、「B」等字母占位一致的数字设计）。
+
+    [为什么「student」「study」「still」这些单词构词的时候不写成「sdudent」「sdudy」和「sdill」? - Johnway 的回答 - 知乎](https://www.zhihu.com/question/27591733/answer/37344814)
+
+    :   其实这说的是一个蛋疼的事实：不是用发音来表示英文就够了。在阅读中，同一
+        发音有不同的写法，可以大大提高对文字的识别速度。读起来才更爽。
+
+        这段文字一点点压缩掉同音的字母，到最后你发现还是可以读出来，还是可以理
+        解。但是阅读起来明显更累了！（从视觉上给人造成阅读障碍。）
+
+    refs and see also
+
+      - [为什么印度人讲英语的口音会那么奇怪？ - 英语 - 知乎](http://www.zhihu.com/question/19851390)
+      - [美国留学：这里没有歪果仁 - 虹姐说 - 知乎专栏](https://zhuanlan.zhihu.com/p/20489251)
+      - [如何听懂印度英语口音？ - 英语 - 知乎](http://www.zhihu.com/question/20719857)
+      - [如何有效利用维基百科学习？ - 知乎](https://www.zhihu.com/question/20299997)
+
+[Ultimate Fighting Championship - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Ultimate_Fighting_Championship)
+
+:   UFC Middleweight Cung Le Suspended After Testing Positive for HGH.
+
+    UFC officials announced that the 42-year-old former Strikeforce champion
+    tested positive for excessive human growth hormone (HGH) following his
+    August 23 TKO defeat to Michael Bisping at UFC Fight Night 48, and as a
+    result, he will be suspended nine months by the promotion.
+
+    refs and see also
+
+      - [Growth hormone - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Growth_hormone)
+      - [UFC Middleweight Cung Le Suspended After Testing Positive for HGH | Bleacher Report](http://bleacherreport.com/articles/2216580-ufc-middleweight-cung-le-suspended-after-testing-positive-for-hgh)
+
+[Growth hormone - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Growth_hormone)
+
+[Cult film - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Cult_film)
+
+:   A cult film, also commonly referred to as a cult classic, is a film that
+    has acquired a cult following. Cult films are known for their dedicated,
+    passionate fanbase, an elaborate subculture that engage in repeated
+    viewings, quoting dialogue, and audience participation. Inclusive
+    definitions allow for major studio productions, especially box office
+    bombs, while exclusive definitions focus more on obscure, transgressive
+    films shunned by the mainstream. The difficulty in defining the term and
+    subjectivity of what qualifies as a cult film mirror classificatory
+    disputes about art. The term cult film itself was first used in the 1970s
+    to describe the culture that surrounded underground films and midnight
+    movies, though cult was in common use in film analysis for decades prior to
+    that.
+
+    Quentin Tarantino is an example of a cult film director who has achieved
+    mainstream success.
+
+    refs and see also
+
+      - [Cult following - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Cult_following)
+
+[Concorde - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Concorde)
+
+[4ker/ccv: C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library](https://github.com/4ker/ccv)
+
+[phraug2/count.py at master · zygmuntz/phraug2](https://github.com/zygmuntz/phraug2/blob/master/count.py)
+
+[Conditional random field - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Conditional_random_field)
+
+[Shia Islam - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Shia_Islam)
+
+:   [Shia LaBeouf - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Shia_LaBeouf)
+
+[Egosyntonic and egodystonic - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Egosyntonic_and_egodystonic)
+
+[约翰 · 多诺万的死与生 (豆瓣)](https://movie.douban.com/subject/25982461/)
+
 ```bash
 ➜  /tmp time python num.py
 None

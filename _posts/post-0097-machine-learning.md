@@ -1853,3 +1853,5 @@ Rectifier (neural networks)
         nonlinearly compressed (e.g. CIE XYZ color space) coordinates.
 
 [Minimum distance estimation - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Minimum_distance_estimation)
+
+[余凯在清华的讲座笔记 - huangbo10 的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/huangbo10/article/details/22944007)

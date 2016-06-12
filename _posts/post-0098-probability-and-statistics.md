@@ -4100,6 +4100,80 @@ refs and see also
 
 :   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Precisionrecall.svg/525px-Precisionrecall.svg.png)
 
+    [Precision Recall vs ROC (Receiver Operating Characteristic)](http://nlp.stanford.edu/IR-book/roc.html)
 
 [H-theorem - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/H-theorem)
 [Entropy (information theory) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Entropy_(information_theory))
+
+[Information retrieval - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Information_retrieval)
+
+:   Average precision
+
+    :   Precision and recall are single-value metrics based on the whole list
+        of documents returned by the system. For systems that return a ranked
+        sequence of documents, it is desirable to also consider the order in
+        which the returned documents are presented. By computing a precision
+        and recall at every position in the ranked sequence of documents, one
+        can plot a **precision-recall curve**, plotting precision ${\displaystyle p(r)}$
+        as a function of recall ${\displaystyle r}$.  Average precision
+        computes the average value of ${\displaystyle p(r)}$ over the
+        interval from ${\displaystyle r=0}$ to ${\displaystyle r=1}$:
+
+        $$
+            \displaystyle \operatorname {AveP} =\int _{0}^{1}p(r)dr}
+        $$
+
+        That is the area under the precision-recall curve. This integral is in
+        practice replaced with a finite sum over every position in the ranked
+        sequence of documents:
+
+        $$
+            \displaystyle \operatorname {AveP} =\sum _{k=1}^{n}P(k)\Delta r(k)
+        $$
+
+        where ${\displaystyle k}$ is the rank in the sequence of retrieved
+        documents, ${\displaystyle n}$ is the number of retrieved documents,
+        ${\displaystyle P(k)}$ is the precision at cut-off ${\displaystyle k}$
+        in the list, and ${\displaystyle \Delta r(k)}$ is the change in recall
+        from items ${\displaystyle k-1}$ to ${\displaystyle k}$.
+
+        This finite sum is equivalent to:
+
+        $$
+            \displaystyle \operatorname {AveP} ={\frac {\sum _{k=1}^{n}(P(k)\times \operatorname {rel} (k))}{\mbox{number of relevant documents}}}\!
+        $$
+
+        where ${\displaystyle \operatorname {rel} (k)}$ is an indicator
+        function equaling 1 if the item at rank ${\displaystyle k}$ is a
+        relevant document, zero otherwise. Note that the average is over all
+        relevant documents and the relevant documents not retrieved get a
+        precision score of zero.
+
+        Some authors choose to interpolate the ${\displaystyle p(r)}$
+        function to reduce the impact of "wiggles" in the curve. For example,
+        the PASCAL Visual Object Classes challenge (a benchmark for computer
+        vision object detection) computes average precision by averaging the
+        precision over a set of evenly spaced recall levels {0, 0.1, 0.2, ...
+        1.0}:
+
+        AveP = 1 11 ∑ r ∈ { 0 , 0.1 , … , 1.0 } p interp ( r ) {\displaystyle \operatorname {AveP} ={\frac {1}{11}}\sum _{r\in \{0,0.1,\ldots ,1.0\}}p_{\operatorname {interp} }(r)}
+
+    where p interp ( r ) {\displaystyle p_{\operatorname {interp} }(r)} is an interpolated precision that takes the maximum precision over all recalls greater than r {\displaystyle r} :
+
+        p interp ( r ) = max r ~ : r ~ ≥ r ⁡ p ( r ~ ) {\displaystyle p_{\operatorname {interp} }(r)=\operatorname {max} _{{\tilde {r}}:{\tilde {r}}\geq r}p({\tilde {r}})} .
+
+        An alternative is to derive an analytical p ( r ) {\displaystyle p(r)} function by assuming a particular parametric distribution for the underlying decision values. For example, a binormal precision-recall curve can be obtained by assuming decision values in both classes to follow a Gaussian distribution.
+
+        下面这个解释也很清楚：
+
+        [Alternate explanation of Mean Average Precision - Facebook Recruiting Competition | Kaggle](https://www.kaggle.com/c/FacebookRecruiting/forums/t/2002/alternate-explanation-of-mean-average-precision)
+
+        :   this.
+
+        [IR 的评价指标 - MAP,NDCG 和 MRR - ywl925 - 博客园](http://www.cnblogs.com/ywl925/archive/2013/08/16/3262209.html)
+
+        refs and see also
+
+          - [Mean Average Precision | Kaggle](https://www.kaggle.com/wiki/MeanAveragePrecision)
+          - [Evaluation of ranked retrieval results](http://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-ranked-retrieval-results-1.html)
+          - [Precision Recall vs ROC (Receiver Operating Characteristic)](http://nlp.stanford.edu/IR-book/roc.html)
