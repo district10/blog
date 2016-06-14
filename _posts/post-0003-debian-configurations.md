@@ -521,6 +521,38 @@ install rpm package
     sudo dpkg -i packagename.deb
     ```
 
+[PyPI 镜像使用帮助 [LUG@USTC]](https://lug.ustc.edu.cn/wiki/mirrors/help/pypi)
+
+:   ```
+    [global]
+    index-url = https://pypi.mirrors.ustc.edu.cn/simple
+    ```
+
+    ```bash
+    sudo pip install --upgrade numpy
+    ```
+
+[CPAN镜像使用帮助 [LUG@USTC]](https://lug.ustc.edu.cn/wiki/mirrors/help/cpan)
+
+:   modify file `~/.cpan/CPAN/MyConfig.pm` to `'urllist' => [q[http://mirrors.ustc.edu.cn/CPAN/]],`.
+
+    in bash, `cpan App::cpanminus`{.bash}.
+
+    refs and see also
+
+      - [Installing Perl Modules - www.cpan.org](http://www.cpan.org/modules/INSTALL.html)
+
+```bash
+PYTHONPATH=/home/sunny/caffe-master/python:$PYTHONPATH
+```
+
+```python
+import sys
+caffe_root = '../../'
+sys.path.insert(0, caffe_root + 'python')
+```
+
+
 Refs
 
 #. <https://lug.ustc.edu.cn/wiki/mirrors/help/debian>
