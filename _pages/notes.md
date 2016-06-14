@@ -19,8 +19,29 @@ tags:
 Notes | 笔记[^1]
 ================
 
-[Code Hunt](https://www.codehunt.com/)
+-   [深度学习 caffe 的代码怎么读？ - 知乎](https://www.zhihu.com/question/27982282)
+- [wkentaro/fcn: Fully Convolutional Networks (Chainer Implementation)](https://github.com/wkentaro/fcn)
+- [shelhamer/fcn.berkeleyvision.org: Fully Convolutional Networks for Semantic Segmentation by Jonathan Long*, Evan Shelhamer*, and Trevor Darrell. CVPR 2015.](https://github.com/shelhamer/fcn.berkeleyvision.org)
 
+```makefile
+all: notes-access.docx notes.docx
+clean:
+    rm *.docx
+
+%.docx: %.md
+    cat $< | sed -e "s/%paperdir%/papers/" | \
+    pandoc --ascii -f markdown+east_asian_line_breaks -o $@
+%-access.docx: %.md
+    cat $< | sed -e "s/%paperdir%/ftp:\/\/zhixiong%2Etang@cvrs.whu.edu.cn\/Users\/ZhixiongTANG\/ML\/papers/" | \
+    pandoc --ascii -f markdown+east_asian_line_breaks -o $@
+
+rename:
+    $(shell for f in papers/*.pdf; do mv "$$f" "$${f// /_}"; done)
+```
+
+[Henry David Thoreau - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Henry_David_Thoreau)
+
+[Code Hunt](https://www.codehunt.com/)
 
 LS, 你要知道一点：凡是跟我意见不同的，都是五毛。
 

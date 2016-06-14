@@ -26,6 +26,7 @@ Planned
     +   ../_posts/post-0095-c-cpp.md
     +   ../_posts/post-0097-machine-learning.md
     +   ../_posts/post-0098-probability-and-statistics.md
+    +   ../_posts/post-0108-english-notes.md
 
 -   OpenCV
 

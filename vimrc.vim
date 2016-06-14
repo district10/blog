@@ -245,6 +245,7 @@ ab faes             <i class="icon-exclamation-sign"></i>
 ab faf              <i class="icon-flag"></i>
 ab fah              <i class="icon-heart"></i>
 ab fahe             <i class="icon-heart-empty"></i>
+ab fai              <i class="icon-info-sign"></i>
 ab fais             <i class="icon-info-sign"></i>
 ab falb             <i class="icon-lightbulb"></i>
 ab fapp             <i class="icon-pushpin"></i>
@@ -256,3 +257,4 @@ ab fatd             <i class="icon-thumbs-down"></i>
 ab qwhudoc          http://whudoc.qiniudn.com/2016/
 ab qgnat            http://gnat.qiniudn.com/
 ab tbq              ```tzx-bigquote
+ab lambda           λ

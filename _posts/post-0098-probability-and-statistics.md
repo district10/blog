@@ -21,7 +21,6 @@ TODO:
     +   [k-d tree - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Kd-tree)
     +   cart: classification and regression tree;, gini index
 
-
 MISC Notes
 
 :   -   说 chi-squared 和 chi-square，都可以, 维基上是 chi-squared，用这个比较好。
@@ -30,11 +29,7 @@ MISC Notes
 
     -   贝叶斯：结果 -> 原因
 
-    -   P(A|B) > P(A)
-
-    -   P(A|B) = P(A)
-
-    -   P(A|B) < P(A)
+    -   P(A|B) > P(A), P(A|B) = P(A), P(A|B) < P(A)
 
     -   相关（线性相关）
 
@@ -143,7 +138,7 @@ MISC Notes
 
           - [Dependent and independent variables - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dependent_and_independent_variables)
 
-[Probability Cheatsheet](http://www.wzchen.com/probability-cheatsheet)
+值得打印出来的“小抄”：[Probability Cheatsheet](http://www.wzchen.com/probability-cheatsheet)
 
 Probability theory
 
@@ -162,7 +157,7 @@ Probability theory
     -   CDF, joint CDF
     -   PMF, joint PMF
     -   PDF, joint PDF
-    -   EV
+    -   EV: expected value
     -   LOTUS: Law of the Unconscious Statistician
     -   Indicator Random Variables
     -   UoU: Universality of Uniform
@@ -480,6 +475,10 @@ Probability theory
         standard error of the sample mean, which is used in the central limit
         theorem.
 
+        这样就可以用更多的数据来减少误差。
+
+        <i class="icon-heart"></i>
+
     Covariance
 
     :   In probability theory and statistics, covariance is a measure of how
@@ -712,7 +711,23 @@ Binomial distribution 二项分布
 
 Poisson distribution 泊松分布
 
-:   Poission 和泰勒级数是相关的。
+:   <i class="icon-info-sign"></i>Story
+
+    :   There are rare events (low probability events) that occur many
+        different ways (high possibilities of occurences) at an average rate of λ
+        occurrences per unit space or time. The number of events that occur
+        in that unit of space or time is X.
+
+        Example A certain busy intersection （十字路口）has an average of 2
+        accidents per month. Since an accident is a low probability event that
+        can happen many different ways, it is reasonable to model the number of
+        accidents in a month at that intersection as Pois(2). Then the number
+        of accidents that happen in two months at that intersection is
+        distributed Pois(4).
+
+        速率是 λ, 在时间 n 内发生的次数用 X 来表示，那么 X ~ Poi(λ)
+
+    Poission 和泰勒级数是相关的。
 
     Poisson distribution (`/ˈpwɑːsɒn/`), named after French mathematician
     Siméon Denis Poisson, is a discrete probability distribution that expresses
@@ -840,6 +855,8 @@ Law of total variance
 
     $$\operatorname{Var}[Y]=\operatorname{E}(\operatorname{Var}[Y\mid X])+\operatorname{Var}(\operatorname{E}[Y\mid X]).\,$$
 
+    不仅概率可以分块加，variance 也可以。
+
     TODO: [Law of total variance - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Law_of_total_variance)
 
 Poisson approximation
@@ -911,7 +928,15 @@ Negative binomial distribution
 
 Geometric distribution
 
-:   These two different geometric distributions should not be confused with
+:   <i class="icon-info-sign"></i>Story
+
+    :   X is the number of “failures” that we will achieve before we
+        achieve our first success. Our successes have probability p.
+
+        Example If each pokeball we throw has probability 1/10 to catch Mew,
+        the number of failed pokeballs will be distributed Geom( 1/10 ).
+
+    These two different geometric distributions should not be confused with
     each other. Often, the name shifted geometric distribution is adopted for
     the former one (distribution of the number X); however, to avoid ambiguity,
     it is considered wise to indicate which is intended, by mentioning the
@@ -1247,7 +1272,25 @@ Normal distribution
 
 Exponential distribution
 
-:   The exponential distribution (a.k.a. negative exponential distribution) is
+:   <i class="icon-info-sign"></i>**Story**
+
+    :   You’re sitting on an open meadow right before the break of dawn,
+        wishing that airplanes in the night sky were shooting stars, because you
+        could really use a wish right now. You know that shooting stars come on
+        average every 15 minutes, but a shooting star is not “due” to come just
+        because you’ve waited so long. Your waiting time is **memoryless**; the
+        additional time until the next shooting star comes does not depend on how
+        long you’ve waited already.
+
+        **Example**
+        The waiting time until the next
+        shooting star is distributed Expo(4) hours. Here λ = 4 is the rate
+        parameter, since shooting stars arrive at a rate of 1 per 1/4 hour on
+        average. The expected time until the next shooting star is 1/λ = 1/4 hour.
+
+        Expo(λ)，λ 是单位时间流星的个数，1/λ 是你等到下一个流星需要等待的时间（的期望）。
+
+    The exponential distribution (a.k.a. negative exponential distribution) is
     the probability distribution that describes the time between events in a
     Poisson process, i.e. a process in which events occur continuously and
     independently at a constant average rate. It is a particular case of the
@@ -1281,7 +1324,7 @@ Exponential distribution
 
     [Heaviside step function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Heaviside_step_function)
 
-    :   The Heaviside ([ˈhevisaid]`) step function, or the unit step function,
+    :   The Heaviside (`[ˈhevisaid]`) step function, or the unit step function,
         usually denoted by θ (but sometimes u or 𝟙), is a discontinuous
         function whose value is zero for negative argument and one for positive
         argument. It is an example of the general class of step functions, all
@@ -1321,7 +1364,25 @@ Exponential distribution
 
 Gamma distribution
 
-:   In probability theory and statistics, the gamma distribution is a
+:   <i class="icon-info-sign"></i>Story
+
+    :   You sit waiting for shooting stars, where the waiting time for a
+        star is distributed Expo(λ). You want to see n shooting stars before
+        you go home. The total waiting time for the nth shooting star is
+        Gamma(n,λ).
+
+        Example You are at a bank, and there are 3 people ahead of you.  The
+        serving time for each person is Exponential with mean 2 minutes.  Only
+        one person at a time can be served. The distribution of your waiting
+        time until it’s your turn to be served is Gamma(3, 1/2 ).
+
+        还是等流星，Expo(λ)，意思是单位时间可以有 λ 个流星，1/λ 的时间预期可以等到一个。
+        你想看到 n 个流星再回家，那么你的等待时间满足 Gamma(n,λ) 分布。
+        排队也是一样的。
+
+        （但是感觉这两种不太一样，因为流星之间是无关的，而排队的人是有序的。）
+
+    In probability theory and statistics, the gamma distribution is a
     two-parameter family of continuous probability distributions.
     **The common exponential distribution and chi-squared distribution are special cases of
     the gamma distribution.** There are three different parametrizations in
@@ -3099,7 +3160,7 @@ Bayesian statistics
 
 Bayesian inference `@`{.tzx-anchor #bayesian-inference}
 
-    The prior distribution is the distribution of the parameter(s) before any
+:   The prior distribution is the distribution of the parameter(s) before any
     data is observed, i.e. p(\theta \mid \alpha) .
 
 Naive Bayes spam filtering
@@ -4120,7 +4181,7 @@ refs and see also
         interval from ${\displaystyle r=0}$ to ${\displaystyle r=1}$:
 
         $$
-            \displaystyle \operatorname {AveP} =\int _{0}^{1}p(r)dr}
+            \operatorname {AveP} =\int _{0}^{1}p(r)dr
         $$
 
         That is the area under the precision-recall curve. This integral is in
@@ -4156,13 +4217,23 @@ refs and see also
         precision over a set of evenly spaced recall levels {0, 0.1, 0.2, ...
         1.0}:
 
-        AveP = 1 11 ∑ r ∈ { 0 , 0.1 , … , 1.0 } p interp ( r ) {\displaystyle \operatorname {AveP} ={\frac {1}{11}}\sum _{r\in \{0,0.1,\ldots ,1.0\}}p_{\operatorname {interp} }(r)}
+        AveP = 1 11 ∑ r ∈ { 0 , 0.1 , … , 1.0 } p interp ( r ) {\displaystyle
+        \operatorname {AveP} ={\frac {1}{11}}\sum _{r\in \{0,0.1,\ldots
+        ,1.0\}}p_{\operatorname {interp} }(r)}
 
-    where p interp ( r ) {\displaystyle p_{\operatorname {interp} }(r)} is an interpolated precision that takes the maximum precision over all recalls greater than r {\displaystyle r} :
+        where p interp ( r ) {\displaystyle p_{\operatorname {interp} }(r)} is
+        an interpolated precision that takes the maximum precision over all
+        recalls greater than r {\displaystyle r} :
 
-        p interp ( r ) = max r ~ : r ~ ≥ r ⁡ p ( r ~ ) {\displaystyle p_{\operatorname {interp} }(r)=\operatorname {max} _{{\tilde {r}}:{\tilde {r}}\geq r}p({\tilde {r}})} .
+        p interp ( r ) = max r ~ : r ~ ≥ r ⁡ p ( r ~ ) {\displaystyle
+        p_{\operatorname {interp} }(r)=\operatorname {max} _{{\tilde
+        {r}}:{\tilde {r}}\geq r}p({\tilde {r}})} .
 
-        An alternative is to derive an analytical p ( r ) {\displaystyle p(r)} function by assuming a particular parametric distribution for the underlying decision values. For example, a binormal precision-recall curve can be obtained by assuming decision values in both classes to follow a Gaussian distribution.
+        An alternative is to derive an analytical p ( r ) {\displaystyle p(r)}
+        function by assuming a particular parametric distribution for the
+        underlying decision values. For example, a binormal precision-recall
+        curve can be obtained by assuming decision values in both classes to
+        follow a Gaussian distribution.
 
         下面这个解释也很清楚：
 
