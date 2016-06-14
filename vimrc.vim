@@ -32,7 +32,9 @@ set showcmd
 set incsearch                                               " do incremental searching
 set ignorecase
 set expandtab ts=4 sw=4 sts=4 ai
-set path=.,/usr/include,/home/cvrs/dev/caffe-rc3
+set path=.,/usr/include,~/dev/caffe-rc3,~/git/**
+set isfname-=,
+set isfname-==
 " set lbr                                                     " linebreak
 " set shortmess=atI                                           " :h iccf
 set nu

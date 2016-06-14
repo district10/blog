@@ -19,6 +19,8 @@ tags:
 Notes | 笔记[^1]
 ================
 
+[AUR (en) - breeze-red-cursor-theme](https://aur.archlinux.org/packages/breeze-red-cursor-theme/)
+
 [Code Hunt](https://www.codehunt.com/)
 
 
