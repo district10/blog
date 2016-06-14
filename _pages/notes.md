@@ -19,6 +19,17 @@ tags:
 Notes | 笔记[^1]
 ================
 
+[tmux的使用方法和个性化配置 | 赖明星](http://mingxinglai.com/cn/2012/09/tmux/)
+
+[How do I scroll in tmux? - Super User](http://superuser.com/questions/209437/how-do-i-scroll-in-tmux)
+
+:   `Ctrl-b` then `[` then you can use your normal navigation keys to scroll
+    around (eg. Up Arrow or PgDn). Press `q` to quit scroll mode.
+
+    Alternatively you can press `Ctrl-b PgUp` to go directly into copy mode and
+    scroll one page up (which is what it sounds like you will want most of the
+    time)
+
 [AUR (en) - breeze-red-cursor-theme](https://aur.archlinux.org/packages/breeze-red-cursor-theme/)
 
 [Code Hunt](https://www.codehunt.com/)
