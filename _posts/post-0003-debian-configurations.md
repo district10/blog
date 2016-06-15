@@ -524,10 +524,12 @@ install rpm package
 
 [PyPI 镜像使用帮助 [LUG@USTC]](https://lug.ustc.edu.cn/wiki/mirrors/help/pypi)
 
-:   ```
-    [global]
-    index-url = https://pypi.mirrors.ustc.edu.cn/simple
-    ```
+:   `~/.pip/pip.conf`
+
+    :   ```
+        [global]
+        index-url = https://pypi.mirrors.ustc.edu.cn/simple
+        ```
 
     ```bash
     sudo pip install --upgrade numpy

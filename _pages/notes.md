@@ -19,6 +19,12 @@ tags:
 Notes | 笔记[^1]
 ================
 
+[Try Jupyter!](https://try.jupyter.org/)
+
+[Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
+
+[[宣讲会后仍接受报名]Indeed Tokyo 2017 校园招聘！高薪 + 全英文环境 + 东京三大人气商区办公楼！](http://mp.weixin.qq.com/s?__biz=MjM5ODAxOTE0MQ==&mid=502663169&idx=1&sn=da348a168e980d4cbbc0005f4d3844d6&scene=0&previewkey=wOTfgvOLXP%2FghUerdohc7MwqSljwj2bfCUaCyDofEow%3D#wechat_redirect)
+
 测试了一下，`.cpp` 也是可以被 include 的。
 
 It's really a matter of convention. Some projects demand hpp to indicate that
