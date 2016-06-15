@@ -295,6 +295,7 @@ nvm && source nvm.sh
 NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/dist nvm install 6.0.0
 npm --registry=https://registry.npm.taobao.org install koa
 ```
+</div>
 
 ```bash
 nvm ls-remote
@@ -543,7 +544,7 @@ install rpm package
       - [Installing Perl Modules - www.cpan.org](http://www.cpan.org/modules/INSTALL.html)
 
 ```bash
-PYTHONPATH=/home/sunny/caffe-master/python:$PYTHONPATH
+export PYTHONPATH=/home/tzx/caffe-rc3/python:$PYTHONPATH
 ```
 
 ```python
@@ -551,7 +552,6 @@ import sys
 caffe_root = '../../'
 sys.path.insert(0, caffe_root + 'python')
 ```
-
 
 Refs
 

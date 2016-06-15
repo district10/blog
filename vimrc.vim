@@ -240,6 +240,7 @@ endfunction
 " so this won't work as expected
 "
 " instead, use `:set keymap=dvorak` (works only in insert mode)
+"
 
 ab rasa             refs and see also
 ab fab              <i class="icon-book"></i>

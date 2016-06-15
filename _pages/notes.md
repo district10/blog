@@ -19,6 +19,26 @@ tags:
 Notes | 笔记[^1]
 ================
 
+测试了一下，`.cpp` 也是可以被 include 的。
+
+It's really a matter of convention. Some projects demand hpp to indicate that
+the header files are for C++ and not C.
+
+[linux - Terminal Multiplexer for Microsoft Windows - Installers for GNU Screen or tmux - Stack Overflow](http://stackoverflow.com/questions/5473384/terminal-multiplexer-for-microsoft-windows-installers-for-gnu-screen-or-tmux)
+
+:   Look. This is way old, but on the off chance that someone from Google finds
+    this, absolutely the best solution to this - (and it is AWESOME) - is to
+    use ConEmu ( or a package that includes and is built on top of ConEmu
+    called cmder) and then either use plink or putty itself to connect to a
+    specific machine, or, even better, set up a development environment as a
+    local VM using Vagrant.
+
+    This is the only way I can ever see myself developing from a Windows box
+    again.
+
+    I am confident enough to say that every other answer - while not
+    necessarily bad answers - offer garbage solutions compared to this.
+
 [tmux的使用方法和个性化配置 | 赖明星](http://mingxinglai.com/cn/2012/09/tmux/)
 
 [How do I scroll in tmux? - Super User](http://superuser.com/questions/209437/how-do-i-scroll-in-tmux)
