@@ -19,6 +19,29 @@ tags:
 Notes | 笔记[^1]
 ================
 
+## 注意
+
+notes.md/notes.html 不再更新，已经转移到 [http://tangzx.qiniudn.com/notes/index.html](http://tangzx.qiniudn.com/notes/index.html)。
+
+:   历史笔记来自 <http://tangzx.qiniudn.com/notes.html>（页面文本大，渲染慢，慎点）。
+    源码来自 [blog/notes.md at master · district10/blog](https://github.com/district10/blog/blob/master/_pages/notes.md)。
+
+    虽然在一个文件里维护自己的笔记，相对更简单。但是 md->html 的过程太慢，
+    而且页面载入问题也不好解决（虽然图片延迟加载了，但获取、渲染 3.15 MB
+    的 html 文件，浏览器通常都会卡死。），毕竟源码都有 1.58 MB，近 3,5000 行。
+
+    所以我把它分割成了 7 组放在这里：
+
+    -   [历史笔记 1](http://tangzx.qiniudn.com/notes/2016/history1.html)
+    -   [历史笔记 2](http://tangzx.qiniudn.com/notes/2016/history2.html)
+    -   [历史笔记 3](http://tangzx.qiniudn.com/notes/2016/history3.html)
+    -   [历史笔记 4](http://tangzx.qiniudn.com/notes/2016/history4.html)
+    -   [历史笔记 5](http://tangzx.qiniudn.com/notes/2016/history5.html)
+    -   [历史笔记 6](http://tangzx.qiniudn.com/notes/2016/history6.html)
+    -   [历史笔记 7](http://tangzx.qiniudn.com/notes/2016/history7.html)
+
+---
+
 [Try Jupyter!](https://try.jupyter.org/)
 
 [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)

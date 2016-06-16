@@ -24,9 +24,9 @@ Dvorak 是一种不同于 QWERTY 的键盘布局，在程序员中广受欢迎�
 <div id="buckets">
 <div><a href="koans.html">Koans | 呓语</a></div>
 <div><a href="orgit.html">Orgit | 唐凤</a></div>
+<div><a href="http://tangzx.qiniudn.com/notes/">Notes | 笔记</a></div>
 <div><a href="about.html">About | 关于</a></div><hr /></div>
 <!--
-<div><a href="notes.html">Notes | 笔记</a></div>
 -->
 
 <br/><div id="searchContainer">
@@ -37,6 +37,11 @@ Search:<br>
 
 <div style="font-variant:small-caps;">Posts</div>
 <div class="posts"><!--...-->
+* 2016-06-15 [远程使用 Jupyter Notebook （iPython Notebook）](post-0109-remote-jupyter.html)
+<!--
+post-0108-english-notes.md
+post-0107-mathematical-modeling.md
+-->
 * 2016-05-25 [《疯狂的麦克斯》里的 Mediocre 是傻逼的意思吗？](post-0106-mediocre.html)
 <!--* 2016-05-22 [INTP](post-0099-intp.html)-->
 <!--* 2016-05-22 [Probability and Statistics](post-0098-probability-and-statistics.html)-->

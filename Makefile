@@ -114,7 +114,6 @@ qiniu:
 # edits
 EDITS = \
 	$(DIR_POSTS) \
-	$(DIR_PAGES)/notes.md \
 	$(DIR_PAGES)/koans.md \
 	$(DIR_PAGES)/plans.md \
 
@@ -130,7 +129,7 @@ k:
 	$(EDITOR) $(DIR_PAGES)/koans.md 2>/dev/null &
 n: note
 note:
-	$(EDITOR) $(DIR_PAGES)/notes.md 2>/dev/null &
+	$(EDITOR) $(DIR_PAGES)/koans.md 2>/dev/null &
 a: about
 about:
 	$(EDITOR) $(DIR_PAGES)/about.md 2>/dev/null &

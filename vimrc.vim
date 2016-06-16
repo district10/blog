@@ -35,6 +35,8 @@ set expandtab ts=4 sw=4 sts=4 ai
 set path=.,/usr/include,~/git/**,~/dev/**
 set isfname-=,
 set isfname-==
+set isfname-={
+set isfname-=}
 " set lbr                                                     " linebreak
 " set shortmess=atI                                           " :h iccf
 set nu
