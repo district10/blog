@@ -264,3 +264,5 @@ ab qwhudoc          http://whudoc.qiniudn.com/2016/
 ab qgnat            http://gnat.qiniudn.com/
 ab tbq              ```tzx-bigquote
 ab lambda           λ
+ab fold             `@`{.fold}
+ab foldable         `@`{.foldable}

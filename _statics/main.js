@@ -115,7 +115,7 @@ $(document).ready(function(){
         $(this).children().children('dd').toggleClass('tzx-drawer-hide');
         if ($(this).children().children('dd:eq(0)').hasClass('tzx-drawer-hide')) {
             if ( $(this).offset().top < pageYOffset ) {
-                window.scrollTo($(this).offset().left, $(this).offset().top);
+                $('body,html').animate({scrollTop:$(this).offset().top},300)
             }
         }
         event.stopPropagation();
