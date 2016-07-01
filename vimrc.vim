@@ -32,7 +32,7 @@ set showcmd
 set incsearch                                               " do incremental searching
 set ignorecase
 set expandtab ts=4 sw=4 sts=4 ai
-set path=.,/usr/include,~/git/**,~/dev/**
+set path=.,/usr/include,~/git/notes,~/dev/**,d:/tzx/git/notes,d:/tzx/git/caffe-rc3/include,d:/tzx/git/py-faster-rcnn
 set isfname-=,
 set isfname-==
 set isfname-={
