@@ -118,7 +118,7 @@ EDITS = \
 	$(DIR_PAGES)/plans.md \
 
 it:
-	$(EDITOR) $(EDITS) 2>/dev/null &
+	$(EDITOR) -p $(EDITS) 2>/dev/null &
 i: index
 index:
 	$(EDITOR) index.md 2>/dev/null &
