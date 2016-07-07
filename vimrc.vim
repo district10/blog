@@ -1,7 +1,6 @@
 " echo 'source path/to/this/file' > ~/.vimrc
 " e.g.
 "   source d:/tzx/git/blog/vimrc.vim
-"   set runtimepath+=d:/tzx/YouCompleteMe
 
 let mapleader = ","
 let g:mapleader = ","

@@ -11,7 +11,9 @@ after-before: |
     <style> #navigator { display: none; } </style>
 ...
 
-<div class="slogan" title="欢迎来到 TANG ZhiXiong 的博客。DVORAK4TZX/dvorak4tzx &rarr; Dvorak 键盘布局 for TANG ZhiXiong (TZX)">Welcome to dvorak4tzx's Blog.</div>
+<div class="slogan" title="欢迎来到 TANG ZhiXiong 的博客。DVORAK4TZX/dvorak4tzx
+&rarr; Dvorak 键盘布局 for TANG ZhiXiong (TZX)">Welcome to dvorak4
+<span style="color:red;" title="TANG ZhiXiong / 唐志雄">tzx</span>'s Blog.</div>
 <p id="tzxslogan">
 Dvorak 是一种不同于 QWERTY 的键盘布局，在程序员中广受欢迎，尤其是那些 Emacs 用户，
 比如 Steve Yegge、Sacha Chua、李杀。我也用 dvorak，所以这个网站叫 dvorak4tzx。</p>
