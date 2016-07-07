@@ -102,9 +102,9 @@ post-0107-mathematical-modeling.md
 * 2015-08-06 [CVRS C++ Coding Style Guidelines](post-0060-coding-style.html)
 <!--* 2015-08-06 [LaTeX 入门（刘海洋） — 配套 TeX 源码](post-0061-liuhaiyang-example-code.html)-->
 * 2015-02-20 [Windows 系统配置](post-0007-windows-configurations.html)
-* 2015-02-19 [编程之道](post-0005-tao-of-programming.html)
+* 2015-02-19 [编程之道（书摘）](post-0005-tao-of-programming.html)
 * 2015-02-19 [为什么 Emacs 用户爱德沃夏克](post-0006-why-emacs-users-favor-dvorak.html)
-* 2015-02-19 [gPhoto2](post-0004-gphoto2.html)
+* 2015-02-19 [相机控制软件 gPhoto2 的简要介绍](post-0004-gphoto2.html)
 * 2015-02-19 [Debian Configurations | 黛比安系统配置](post-0003-debian-configurations.html)
 * 2015-02-13 [让 Shell 喊你回家吃饭](post-0040-shell-is-kidding-me.html)
 * 2015-01-00 [Function Pointer Stack in C | C 语言函数指针](post-0043-awesome-c.html)

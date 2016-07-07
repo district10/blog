@@ -13,14 +13,23 @@ tags:
 编程之道
 ========
 
-dvorak4tzx:
+技术当然很重要，但有些东西更重要。我感觉下来，大致的顺序是：
 
-> 技术，商业，社区，生态，文化，需求；道。
+1.  技术（可能性）
+2.  商业（驱动力）
+3.  社区（活跃程度，对人才的吸引力）
+4.  生态（持续发展的可能性）
+5.  文化（持续发展的趋势）
+6.  需求（持续发展的内因）
+7.  道（是内因，也是信仰）
+
+下面是原文里我觉得不错的一些片段。
 
 Book One: The Silent Void
 -------------------------
 
-> When you have learned to snatch the error code from the trap frame, it will be time for you to leave.
+>   When you have learned to snatch the error code from the trap frame, it will
+>   be time for you to leave.
 
 <div style="font-size:128px;color:blueviolet;text-align:center">Tao</div>
 
@@ -29,10 +38,14 @@ Book One: The Silent Void
 * space
 * time
 
+<!--...-->
+
 * the master programmer
 * the wise programmer
 * the average programmer
 * the foolish programmer
+
+<!--...-->
 
 * follows the *`tao`*
 * The Tao is hidden beyond all understanding
@@ -40,16 +53,21 @@ Book One: The Silent Void
 Book Two: The Ancient Masters
 -----------------------------
 
-> After three days without programming, life becomes meaningless.
+>   After three days without programming, life becomes meaningless.
 
 Turing:
 
-> I don't know whether I am Turing dreaming that I am a machine, or a machine dreaming that I am Turing!
+>   I don't know whether I am Turing dreaming that I am a machine, or a machine
+>   dreaming that I am Turing!
+
+<!--...-->
 
 * They come and go without knowing limitations.
 * They are alive within the Tao.
-* He has gone beyond the need for testing; each of his programs are perfect withn themselves, serene and elegant, their purpose self-evident.
-    + Truly, he has entered the mystery of Tao.
+*   He has gone beyond the need for testing; each of his programs are perfect
+    withn themselves, serene and elegant, their purpose self-evident.
+
+    +   Truly, he has entered the mystery of Tao.
 
 Book Three Design
 -----------------

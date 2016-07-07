@@ -92,6 +92,44 @@ Orgit | 唐凤
 
     武汉大学《研究生学术道德与学术规范》网络公开课的笔记。
 
+-   Links
+
+    +   [Boost 库裁剪](post-0110-boost.html)
+
+    +   CMake Templates
+
+    +   Jupyter Caffe
+
+    +   IDE 说到编译和链接
+
+        关于编译和链接，需要知道
+
+        -   animal.h
+            +   `void cat();`
+            +   `void dog();`
+        -   cat.cpp
+            +   `void cat() {}`
+        -   dog.cpp
+            +   `void dog() {}`
+
+    +   长沙总结
+
+    +   桥梁纹理
+
+    +   Windows 配置 opencv2/3，qt4/5
+
+    +   线性代数的信息论解释
+
+    +   车牌分类
+
+        *   opencv3；
+        *   把原来的笔记里到 notes 里面；
+        *   把 ml 实现的那部分也放进来。
+
+    +   bcp 源码分析，qt 库的裁剪？
+
+    +   git 源码分析。
+
 <div class="tzx-hide">
 
 > 因为要字母（汉字）对齐，所以把 org-mode 写成 “orgit”。

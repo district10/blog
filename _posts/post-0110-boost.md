@@ -16,6 +16,24 @@ Boost 库。
 
 [boost（C++ 库）_百度百科](http://baike.baidu.com/subview/663725/10275011.htm)
 
+functor, bind, anounymous function.
+
+但问题是，Boost 库太大，Windows 上安装 boost 需要占用 2G+ 的空间，编译配置起来也略显麻烦。
+
+尤其是自己的工程不大时，how to 简化？用 bcp。
+
+步骤：
+
+1.  bcp binary
+2.  boost 源码
+3.  用 bcp 提取头文件和源文件
+4.  在自己的项目中编译、链接到自己的 miniboost 中。
+
+例子：
+
+-   时间函数
+-   bind/lambda
+
 boost
 
 bcp
@@ -34,8 +52,6 @@ If not, try [`standalone`](https://github.com/district10/bcp/tree/standalone) br
 ## refs and see also
 
 -   [BCP - 1.61.0](http://www.boost.org/doc/libs/1_61_0/tools/bcp/doc/html/index.html)
-
-
 
 bcp
 ===

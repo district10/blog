@@ -12,18 +12,24 @@ tags:
 为什么 Emacs 用户爱德沃夏克
 ===========================
 
+（原载于简书，现在搬运到自己的博客上。）
+
+这篇文章讲述了我自己在用的 dvorak（德沃夏克）键盘布局。
+我从大三以来一直使用它，这也是这个博客，以及我的 id 叫 dvorak4tzx 的主要原因。
+Dvorak 和 vim 一样，从设计上，就完全是超前，而且超越其它的。
+
 参考资料
 --------
 
 建议先读这些
 
-#. 什么是德沃夏克: [维基百科][wikipedia], [百度百科][baidu]
-#. [说说 qwerty、dvorak、colemak 三种键盘布局][q_d_c]
-#. [Programmer Dvorak Keyboard Layout][dvp_intro]
-#. About Neo: [Neo 官方][neo_official], [Wikipedia: neo][neo_wiki]
-#. [Steve Yegge：编程的肮脏小秘密](http://blog.jobbole.com/64959/)
-#. [键盘史上的 12 个典范](http://www.oschina.net/news/56704/keyboards)
-#. [原来我们每天都在用的键盘，竟是一个精心谋划的「反人类」设计？ - 简书](http://www.jianshu.com/p/9d79e9a80173#)
+#.  什么是德沃夏克: [维基百科][wikipedia], [百度百科][baidu]
+#.  [说说 qwerty、dvorak、colemak 三种键盘布局][q_d_c]
+#.  [Programmer Dvorak Keyboard Layout][dvp_intro]
+#.  About Neo: [Neo 官方][neo_official], [Wikipedia: neo][neo_wiki]
+#.  [Steve Yegge：编程的肮脏小秘密](http://blog.jobbole.com/64959/)
+#.  [键盘史上的 12 个典范](http://www.oschina.net/news/56704/keyboards)
+#.  [原来我们每天都在用的键盘，竟是一个精心谋划的「反人类」设计？ - 简书](http://www.jianshu.com/p/9d79e9a80173#)
 
 [wikipedia]: http://zh.wikipedia.org/wiki/%E5%BE%B7%E6%B2%83%E5%A4%8F%E5%85%8B%E9%8D%B5%E7%9B%A4
 [baidu]: http://baike.baidu.com/view/1410112.htm
