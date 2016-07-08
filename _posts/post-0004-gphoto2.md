@@ -9,10 +9,14 @@ tags:
     - linux
 ...
 
-相机控制软件 gPhoto2 的简要介绍
-===============================
+相机控制软件 gPhoto2 的简要介绍[^clearify]
+==========================================
 
-相机的拍摄，可以通过相机自带的驱动程序和应用软件。也可以通过 gPhoto2，它的[官网](http://www.gphoto.org/)上
+[^clearify]: 或许说“软件”有点怪，因为 gphoto2 其实是一个 Linux 命令行工具，在很多人眼中软件都是有界面的。
+
+    但它，确实是一个软件……哈哈。
+
+相机的拍摄，可以通过相机自带的驱动程序和应用软件。也可以通过 gPhoto2，它的 [官网](http://www.gphoto.org/) 上
 这么介绍到：
 
 >   gPhoto2 is a free, redistributable, ready to use set of digital camera
@@ -68,6 +72,10 @@ gphoto2 \
 
 保存好 `run.sh`，添加执行权限（不然文本就是文本，不能运行）：`chmod +x ./run.sh`{.bash}，
 最后运行：`./run.sh`{.bash}，即可拍一张照片。
+
+关于 Linux 和 Bash 脚本，可以参考我的另一篇 post：
+[Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook](post-0024-linux-shell-scripting-cookbook.html)，
+或者 [鳥哥的 Linux 私房菜](http://linux.vbird.org/)。
 
 安装 gPhoto2
 ------------
@@ -152,7 +160,7 @@ gphoto2 \
     --set-config /main/other/d06a=3 \
     --set-config /main/other/d1b1=36 \
     '
-    ```
+```
 
 注意 `--capture-preview`{.bash} 和 `--capture-image`{.bash} 的区别，可换着试试看。
 

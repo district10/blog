@@ -15,9 +15,9 @@ tags:
 Free as in Freedom
 ==================
 
-dvorak4tzx：
-
-> 2014 年我去浙江大学听了 Richard Stallman 的讲座。这是那之前看的一本书。
+2014 年我去浙江大学听了 Richard Stallman 的讲座。这是那之前看的一本书。
+我倒是想发自己和 Richard Stallman 隔了一米说话的照片，但是教主说不喜欢别人贴他的照片，
+只好作罢。^[其实我都不知道那个照片在哪儿还有备份，我都找不到……了。我忘了密码的 OneDrive 里？]
 
 FOR WANT OF A PRINTER [link][for_want_of_a_printer]
 ---------------------------------------------------

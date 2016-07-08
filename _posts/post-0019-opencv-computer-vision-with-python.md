@@ -14,6 +14,8 @@ tags:
 OpenCV Computer Vision with Python
 ==================================
 
+这是一篇读书笔记。
+
 Setting up OpenCV
 -----------------
 

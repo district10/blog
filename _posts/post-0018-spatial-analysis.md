@@ -85,13 +85,11 @@ path_schools = path_data + 'Stowe.gdb/schools'
 
 4. 获取当前地图的第一个 dataFrame，以添加数据
 
-<small>
 ```python
 # get document
 mxd = mapping.MapDocument("CURRENT");
 df = mapping.ListDataFrames(mxd)[0]; # Get First Data frame, a.k.a. "Layers" (empty by far)
 ```
-</small>
 
 5. 添加数据
 
@@ -125,10 +123,10 @@ mxd.relativePaths = True;
 
 ```python
 for df in mapping.ListDataFrames(mxd):
-	if (df.name == 'Layers'): # that's for sure
-		layers = mapping.ListLayers(mxd, 'elevation', df);
+    if (df.name == 'Layers'): # that's for sure
+        layers = mapping.ListLayers(mxd, 'elevation', df);
         # set extent to whole map, that's what we want
-		arcpy.env.extent = layers[0].getExtent();
+        arcpy.env.extent = layers[0].getExtent();
 ```
 
 8. 确定下，你的空间分析组件有没有打上勾
@@ -162,30 +160,28 @@ DistanceSch.save(path_gdb + 'DistanceSch');
 
 降低距离的分类，重分类
 
-<small><small><small>
 ```python
 # this is it, Reclassify
 ReclassSlope = arcpy.sa.Reclassify("Slope", "Value",
-						RemapRange([[0,8,1],[8,15,2],[15,23,3],[23,31,4],[31,39,5],
-									[39,46,6],[46,54,7],[54,62,8],[62,69,9],[69,78,10]]), "NODATA"); # this is what we want~
+                        RemapRange([[0,8,1],[8,15,2],[15,23,3],[23,31,4],[31,39,5],
+                                    [39,46,6],[46,54,7],[54,62,8],[62,69,9],[69,78,10]]), "NODATA"); # this is what we want~
 ReclassSlope.save(path_gdb + 'ReclassSlope');
 ReclassRec = arcpy.sa.Reclassify("DistanceRec", "Value",
-						RemapRange([[0,1349,1],[1349,2698,2],[2698,4046,3],[4046,5395,4],[5395,6744,5],
-									[6744,8093,6],[8093,9441,7],[12139,13488,8],[10790,12139,9],[12139,13488,10]]), "NODATA");
+                        RemapRange([[0,1349,1],[1349,2698,2],[2698,4046,3],[4046,5395,4],[5395,6744,5],
+                                    [6744,8093,6],[8093,9441,7],[12139,13488,8],[10790,12139,9],[12139,13488,10]]), "NODATA");
 ReclassRec.save(path_gdb + 'ReclassRec');
 ```
-</small></small></small>
 
 手工太累，用一个函数生成重分类的 RemapRange 矩阵，再重分类
 
 ```python
 # seem we need a function to help us out
 def partition (beg, end, num):
-	pace = ( end - beg ) / num + 1;
-	return [[beg+pace*i, beg+pace*i+pace] for i in xrange(num)]
+    pace = ( end - beg ) / num + 1;
+    return [[beg+pace*i, beg+pace*i+pace] for i in xrange(num)]
 range = partition (0, 16928, 10);
 ReclassSch = arcpy.sa.Reclassify("DistanceSch", "Value",
-						RemapRange(range), "NODATA");
+                        RemapRange(range), "NODATA");
 ReclassSch.save(path_gdb + 'ReclassSch');
 ```
 
@@ -193,8 +189,8 @@ ReclassSch.save(path_gdb + 'ReclassSch');
 
 ```python
 with arcpy.da.SearchCursor("landuse", ("LANDUSE")) as cursor:
-	for row in sorted(cursor):
-		print row[0]
+    for row in sorted(cursor):
+        print row[0]
 ```
 
 10. 处理结果截图
@@ -217,11 +213,9 @@ with arcpy.da.SearchCursor("landuse", ("LANDUSE")) as cursor:
 
 2. 通过属性选定数据，用 Arcpy 中的 `SelectLayerByAttribute_management`。
 
-<small>
 ```python
 arcpy.SelectLayerByAttribute_management("Streets", "NEW_SELECTION", '"STR" = \'I40\'');
 ```
-</small>
 
 注：
 
@@ -234,7 +228,6 @@ arcpy.SelectLayerByAttribute_management("Streets", "NEW_SELECTION", '"STR" = \'I
 
 3. 选定数据，统计数量，按照指导书要求回答问题
 
-<small><small>
 ```python
 arcpy.SelectLayerByLocation_management("Stations", "WITHIN_A_DISTANCE", "Streets", "1000 Feet", "NEW_SELECTION");
 count = arcpy.GetCount_management("Stations");
@@ -242,14 +235,12 @@ count = arcpy.GetCount_management("Stations");
 # Ans:
 print 'There are ' + str(count) + ' Stations are ... within 140 feets from 140 road'; # ===> 2, ...
 with arcpy.da.SearchCursor("Stations", ("NAME")) as cursor:
-	for row in sorted(cursor):
-		print row[0] # have a better looking than `print row'
+    for row in sorted(cursor):
+        print row[0] # have a better looking than `print row'
 ```
-</small></small>
 
 4. 一些别的处理
 
-<small><small>
 ```python
 arcpy.SelectLayerByLocation_management("Business", "WITHIN_A_DISTANCE", "Stations", "1320 Feet", "NEW_SELECTION");
 count = arcpy.GetCount_management( "Business"); # ==> 19
@@ -264,7 +255,6 @@ acres= [row[0] for row in arcpy.da.SearchCursor("Zoning", ("ACRES"))];
 key-val= [(row[0], row[1]) for row in arcpy.da.SearchCursor("Zoning", ("JURISDICTI", "ACRES"))]
 # how to use dict?
 ```
-</small></small>
 
 5. 输出
 
@@ -276,7 +266,6 @@ key-val= [(row[0], row[1]) for row in arcpy.da.SearchCursor("Zoning", ("JURISDIC
 
 2. 根据属性（非空间的）和位置（空间的）来选择 Feature（表中的行，数据项）
 
-<small><small><small>
 ```python
 arcpy.SelectLayerByAttribute_management("Centract", "NEW_SELECTION", '"POP_90" < 5786.054054');
 # arcpy.SelectLayerByLocation_management("Centract", "COMPLETELY_CONTAINS", "MidSchol");
@@ -288,7 +277,6 @@ print count
 percap= [row[0] for row in arcpy.da.SearchCursor("Centract", ("PER_CAPINC"))];
 print percap # ===> [19867.69921875, 12793.2998046875, 17364.80078125]
 ```
-</small></small></small>
 
 输出效果
 
@@ -296,8 +284,6 @@ print percap # ===> [19867.69921875, 12793.2998046875, 17364.80078125]
 
 3. 缓冲区操作，最后导出到 shp 文件
 
-
-<small><small><small>
 ```python
 # arcpy.analysis.Buffer("vernal_pools", "vernal_pools_Buffer.shp", "2000 Feets", "FULL", "ROUND", "ALL");
 # Not Feets, it's Feet
@@ -305,7 +291,6 @@ arcpy.analysis.Buffer("vernal_pools", "vernal_pools_Buffer.shp", "2000 Feet", "F
 arcpy.SelectLayerByLocation_management("parcels", "INTERSECT", "vernal_pools_Buffer");
 arcpy.MakeFeatureLayer_management("parcels", "parcels_out") # 靠，直接导出，就是导出 selected features，查了我半天
 ```
-</small></small></small>
 
 > 需要注意的是 `2000 Feet` 不能写成 `2000 Feets`。
 > 有时候 ArcGIS 会无故卡死，不知道什么情况
@@ -313,14 +298,12 @@ arcpy.MakeFeatureLayer_management("parcels", "parcels_out") # 靠，直接导出
 
 4. 缓冲区操作，并合并
 
-<small><small>
 ```python
 # Processing
 arcpy.analysis.Buffer("Roads", "Roads_BUFFER", "500 Meter", "FULL", "ROUND", "ALL");
 arcpy.analysis.Buffer("Water", "Water_BUFFER", "500 Meter", "FULL", "ROUND", "ALL");
 arcpy.analysis.Union(("Water_BUFFER", "Roads_BUFFER"), "water_road", "ALL", gaps="GAPS")
 ```
-</small></small>
 
 其他
 ----

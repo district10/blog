@@ -10,6 +10,9 @@ tags:
 The AWK Programming Language | AWK 编程语言
 ===========================================
 
+虽然全书没有看完（作者也说看第一章就够了），但还是要底气很足地说这本书真的很好。
+作者信手拈来各种好的例子。
+
 An Awk Tutorial
 ---------------
 
@@ -69,9 +72,9 @@ Sorting
     ```awk
     NF I= 3    { print $0, "number of fields is not equal to 3" }
     $2 < 3.35  { print $0, "rate is below minimum wage" }
-    $2 > 10	   { print $0, "rate exceeds $10 per hour" }
-    $3 < 0	   { print $0, "negative hours worked" }
-    $3 > 60	   { print $0, "too many hours worked" }
+    $2 > 10    { print $0, "rate exceeds $10 per hour" }
+    $3 < 0     { print $0, "negative hours worked" }
+    $3 > 60    { print $0, "too many hours worked" }
     ```
 
 * BEGIN and END
@@ -187,16 +190,16 @@ Data
 
 ```plain
 USSR    8649  275   Asia
-Canada	3852  25    North America
-China	3705  1032  Asia
-USA	3615  237   North America
-Brazil	3286  134   South America
-India	1267  746   Asia
-Mexico	762   78    North America
-France	211   55    Europe
-Japan	144   120   Asia
-Germany	96    61    Europe
-England	94    56    Europe
+Canada  3852  25    North America
+China   3705  1032  Asia
+USA 3615  237   North America
+Brazil  3286  134   South America
+India   1267  746   Asia
+Mexico  762   78    North America
+France  211   55    Europe
+Japan   144   120   Asia
+Germany 96    61    Europe
+England 94    56    Europe
 ```
 
 program format: one line or multi lines breaks with "\"
@@ -221,7 +224,7 @@ program format: one line or multi lines breaks with "\"
     BEGIN { FS = "\t"}
           { pop[$3] += $4 }
     END   { for (name in pop)
-          	    print name, pop[name]}
+                print name, pop[name]}
     ```
 
 * `split("/123/23/55", str, "/")`{.awk}: `arr["1"], arr["2"], arr["3"]`
@@ -255,7 +258,7 @@ function rep(n, s, t)
 {
     while (n-- > 0)
        {
-	t = t s
+    t = t s
        }
     return t
 }

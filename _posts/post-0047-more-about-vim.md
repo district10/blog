@@ -18,7 +18,7 @@ More About Vim | Vim 杂记
 它能在 Visual Studio 里配合 Visual Studio、在 Qt Creator 里配合 Qt Creator，
 在浏览器里配合一般的文本编辑框。[^ace]
 
-下面是几篇 Vim 文章。
+下面是我之前发在简书上几篇关于 Vim 的文章。
 
 [^vimacs]: 当然，还谈不上完虐。
 [^ace]: 如果你不知道 ACE 编辑器，可以去查查。它支持浏览器中使用 Vim 编辑模式。

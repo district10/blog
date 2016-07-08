@@ -11,6 +11,8 @@ tags:
 Academic Integrity at Princeton | 普林斯顿大学学术道德
 ======================================================
 
+一篇类似的 post：[WHU MOOC Academic Integrity](post-0082-whu-mooc-academic-integrity.html)。
+
 Introduction
 ------------
 

@@ -864,3 +864,45 @@ table {
     font-family: 'Calibri','PT Sans', sans-serif;
     font-size: 64px;
 }
+
+a.featured {
+    border: 1px solid #9ddcff;
+    border-radius: 3px;
+    padding: 0.2em;
+}
+a.heart:after {
+    color: red;
+    content: " ❤";
+}
+a.todo:after {
+    color: green;
+    content: "♻";
+}
+a.flag:after {
+    color: blue;
+    content: " ⚑";
+}
+
+code.heart:after {
+    color: red;
+    content: "\00a0 ❤";
+}
+code.todo:after {
+    color: green;
+    content: "\00a0 ♻";
+}
+code.flag:after {
+    color: blue;
+    content: "\00a0 ⚑";
+}
+
+code.heart,
+code.flag,
+code.todo {
+    margin: 0.4em;
+    background-color: white;
+    font-weight: bold;
+    padding-right: 0.5em;
+    border: 1px solid #9ddcff;
+    border-radius: 3px;
+}

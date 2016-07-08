@@ -16,6 +16,9 @@ Function Pointer Stack in C
 
 这里就不说怎么编译运行了，可以参考：[C 语言的 argc、argv 干嘛的？#编译后调用](post-0008-argc-argv-in-c.html#%E7%BC%96%E8%AF%91%E5%90%8E%E8%B0%83%E7%94%A8)。
 
+这篇文章以一点代码展示了 C 语言的函数指针、可变数目的参数（你用过 `printf` 函数么？就是这样的函数。）。
+这是在研究生复试的时候写（玩）给自己看 demo 程序。
+
 源码：
 
 ```c
@@ -113,7 +116,7 @@ int main( void )
         &add5,    /* works too */
         add3
     };
-    for( i = 0; i < sizeof(f); ++i ) {
+    for( i = 0; i < 4; ++i ) {
         doit (&d, fs[i]);
     }
 

@@ -10,6 +10,8 @@ tags:
 What a fucking day （记一篇 Essay）
 ==================================
 
+这是一篇吐槽文，当时用英文写得（可能是当时我在逼自己，Linux 系统上没装中文输入法。）
+
 Yesterday I found my Home dir is full and it lend to my failure of installing PCL.
 And then I reinstalled my Ubuntu, make my home dir inside my main system,
 and shrink three systems to two(just drop my Ubuntu server).
@@ -36,7 +38,6 @@ My SSD is well 4K aligned!
 Anyway, start to back up~ Shutdown the computer, and fire it on on my Ubuntu live CD, and do this:
 
 ![](http://gnat-tang-shared-image.qiniudn.com/ssd-align-4k-2.png)
-
 
 the command: “sudo dd if=/dev/sda of=/media/Coursera/whole_disk.backup bs=512 count=234441628”
 

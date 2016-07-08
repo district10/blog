@@ -58,6 +58,8 @@ Dvorak 和 vim 一样，从设计上，就完全是超前，而且超越其它�
    再也不用右手小指去摸回车删除了。 再不用为 Emacs，Vim 蛋疼的方向快捷键忧愁了
    （方向快捷这个想法显然很好，但是两者实现都略蛋疼，用 neo 这种更底层的方式的优点是显而易见的）。
 
+关于 dvorak 键盘的效率，还可以参考我的另一篇 post：[Dvorak 键盘布局（演讲稿）](post-0032-dvorak.html)。
+
 [dvp_kaufmann]: http://www.kaufmann.no/roland/dvorak/
 
 ### 为什么程序员需要德沃夏克
