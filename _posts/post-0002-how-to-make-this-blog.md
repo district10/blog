@@ -73,10 +73,10 @@ tags:
     1. one
     2. two
         * two-one
-    	* two-two
+        * two-two
     3. three
         1. three-one
-    	2. three-two
+        2. three-two
 
 表格
 
@@ -324,7 +324,6 @@ Hash Tag^[其实在 weibo/twitter 上才叫 hash tag，这里或许应该叫 sec
 [standalone-pic-small-one]: http://gnat.qiniudn.com/dexter.jpg
 [standalone-pic-big-one]: http://gnat.qiniudn.com/jodie-foster-math.png "本来想用 Gatsby 挥拳打 Tom 的图片"
 
-<small><small>
 ```markdown
 段落内的图片，caption 不显示： ![inline-pic-without-showing-this-text]
 
@@ -340,7 +339,6 @@ Hash Tag^[其实在 weibo/twitter 上才叫 hash tag，这里或许应该叫 sec
 [standalone-pic-small-one]: http://gnat.qiniudn.com/dexter.jpg
 [standalone-pic-big-one]: http://gnat.qiniudn.com/jodie-foster-math.png "本来想用 Gatsby 挥拳打 Tom 的图片"
 ```
-</small></small>
 
 ### 代码高亮
 
@@ -392,13 +390,11 @@ n/2,  & \text{if $n$ is even} \\
 
 如果你要手工给 HTML 添加 MathJax 功能，需要在页面中加入
 
-<small>
 ```html
 <script type="text/javascript"
          src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 ```
-</small>
 
 ## 我要来一个
 
@@ -420,12 +416,12 @@ Linux 上安装 git 和 pandoc 都太容易，用 `sudo apt-get install git pand
 解压后进入文件夹，右键打开 Git Bash，输入 `make`{.bash} 完成编译，不出意外的话会有一个 `public` 文件夹生成。
 打开里面的 `index.html`，是不是和你现在正看的网页一模一样？就这么简单。
 
-<small>
 本博客生成器的核心是调用 pandoc 来把用 markdown 写的博客生成 HTML 页面，
 如果想了解如何调用，你得仔细看看
 [Makefile](https://github.com/district10/blog/blob/master/Makefile)^[几十行的 Makefile 我写了好久，好久。一边学一遍写。]。
 博客下的文件夹有
 
+<small>
 1. `_koans`：呓语，类似微博吐槽。
 2. `_notes`：笔记，类似个人维基。
 3. `_parts`：页面的 footer 和主页的 header。
@@ -459,9 +455,9 @@ Linux 上安装 git 和 pandoc 都太容易，用 `sudo apt-get install git pand
 
     # posts
     $(POST_000N_OUT): $(POST_000N_INS)                        # 这是你新加的
-    	$(PANDOC_NORMAL) $^ -o $@
+        $(PANDOC_NORMAL) $^ -o $@
     $(POST_0002_OUT): $(POST_0002_INS)
-    	$(PANDOC_NORMAL) $^ -o $@
+        $(PANDOC_NORMAL) $^ -o $@
     ```
 
 4. 似乎没有其它了。
@@ -469,7 +465,6 @@ Linux 上安装 git 和 pandoc 都太容易，用 `sudo apt-get install git pand
 最后（3），上传到七牛。先到 [qrsync 命令行同步工具 | 七牛云存储](http://developer.qiniu.com/docs/v6/tools/qrsync.html)
 下载命令行同步工具，下载解压后放到系统变量 `%PATH%` 里。再找个安全的位置，新建一个文件 `conf.json`：
 
-<small>
 ```json
 {
     "src":          "publish 文件夹的绝对路径",

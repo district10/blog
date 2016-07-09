@@ -18,8 +18,9 @@ About | 关于
 
 唐志雄（tzx），处女座，INTP。
 
--   个人主页：<http://tangzhixiong.com>。
--   GitHub：[district10](https://github.com/district10)。
+-   个人主页：<http://tangzhixiong.com>
+-   GitHub：[district10](https://github.com/district10)
+-   Lofter：[dvorak4tzx](http://dvorak4tzx.lofter.com/)
 
 履历：
 
@@ -53,7 +54,7 @@ About | 关于
 
         -   能够交到很多志同道合的朋友。
         -   书写是为了更好的思考。
-        -   “教”是最好的“学”。如果一件事情你不能讲清楚，十有八九你还没有完全理解。
+        -   “教”是最好的“学”。<small>如果一件事情你不能讲清楚，十有八九你还没有完全理解。</small>
         -   讨论是绝佳的反思。
         -   激励你去持续学习和思考。
         -   学会持之以恒地做一件事情。

@@ -18,7 +18,7 @@ Windows 系统配置
 
 Tips
 
--   **设置系统变量步骤**
+-   **设置系统变量**
 
     +   <kbd>Win</kbd>；
     +   输入 settings，点击【设置】
@@ -33,12 +33,31 @@ Tips
 
     在【文件资源管理器】依次按下 <kbd>Alt</kbd>，<kbd>V</kbd>，<kbd>H</kbd>，<kbd>F</kbd>。
 
+-   **取消纪录最近使用文件、常用文件夹**
+
+    在【文件资源管理器】下，主页 -- 选项，然后在隐私 group box 进行设置。
+
+-   **文件发送到**
+
+    创建文件夹快捷方式，然后放到
+    `C:\Users\tzx\AppData\Roaming\Microsoft\Windows\SendTo`（
+    `C:\Users\tzx\SendTo` 打不开）。
+
+    有文件需要拷贝的时候就鼠标右键，发送到 -- 【你的快捷方式】。
+
+-   **开机启动**
+
+    比如把 `http://gnat.qiniudn.com/neo.exe` 放到
+    `C:\Users\tzx\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`。
+
 开机必备
 --------
 
 -   [Everything Search Engine](http://www.voidtools.com/)
 
     搜索文件的工具。
+
+    我的备份：<http://whudoc.qiniudn.com/2016/Everything-1.3.4.686.x64-Setup.exe> (545 KB)。
 
 -   [7-zip](http://www.7-zip.org/download.html)
 
@@ -100,21 +119,26 @@ Tips
 
 -   [Vim](http://www.vim.org/download.php)
 
+    一个带有行禁则的 Vim：<http://whudoc.qiniudn.com/2016/gvim74-x64.402.exe> (8 MB)。
+
     Vim 编辑器。Vim 的配置：
 
     +   如果你要简单，那就一行：`set expandtab ts=4 sw=4 ai`
-    +   稍微复杂点，我自己用的：<https://github.com/district10/blog/blob/master/vimrc.vim>
-    +   还有很多流行的 Vim 配置，可以到 GitHub 上找，在本文姊妹篇 [Debian Configurations | 黛比安系统配置](post-0003-debian-configurations.html)
-        也有讲到。但有些配置太大，启动慢，记得使用 `vim -u NONE` 无配置地启动 vim。
+    +   稍微复杂点，我自己用的：<https://github.com/district10/blog/blob/master/vimrc.vim>，
+        在 `C:\Users\tzx\.vimrc` 中添加 `source d:/tzx/git/blog/vimrc.vim`。
+    +   还有很多流行的 Vim 配置，可以到 GitHub 上找，在本文姊妹篇 [Debian
+        Configurations | 黛比安系统配置](post-0003-debian-configurations.html) 也
+        有讲到。但有些配置太大，启动慢，记得使用 `vim -u NONE` 无配置地快速启动 vim。
 
 -   CMake
 
-    下载页面：[Download | CMake](https://cmake.org/download/)，
-    下载链接：<https://cmake.org/files/v3.6/cmake-3.6.0-win64-x64.msi>。
+    +   下载页面：[Download | CMake](https://cmake.org/download/)，
+    +   下载链接：<https://cmake.org/files/v3.6/cmake-3.6.0-win64-x64.msi>。
+    +   我的备份：<http://whudoc.qiniudn.com/2016/cmake-3.6.0-win64-x64.msi> (15 MB)。
 
--   [微云，全能收藏 无处不在 - 官方网站](http://www.weiyun.com/)
+-   网盘
 
-    网盘。
+    +   [微云，全能收藏 无处不在 - 官方网站](http://www.weiyun.com/)
 
 -   [Releases · ShareX/ShareX · GitHub](https://github.com/ShareX/ShareX/releases)
 
@@ -136,27 +160,32 @@ Tips
     +   `git clone git@github.com:whudoc/statics.git`
 
     里面有一些好用的小工具，比如搜索源码用的 `pt`、`ag`，还有生成工具 `make`，
-    还有 Windows 软连接制作工具 `junction.exe`（类似 Linux 下的 `ln -s path/to/somewhere` link）。
+    还有 Windows 软连接制作工具 `junction.exe`（类似 Linux 下的 `ln -s path/to/somewhere link`，不过格式是 `junction link path/to/somewhere`）。
     下面对其中几个有意思的进行简要介绍。
 
     +   代码搜索工具 ag 和 pt
 
         pt 比 grep、ack 快，比 ag 更好的处理中文（在 Windows 下 ag 捉急，不知道是否是我设置的原因）。
         比 ag 不足的是没有 `--pager` 选项，不能用 less 一点一点看（直接重定向到 less 的话高亮就没了）。
-        但这些工具其实使用起来都一样。随意挑一个吧。Windows 上 pt 很容易下载，所以推荐 pt。
+        但这些工具其实使用起来都一样。随意挑一个吧。Windows 上 pt 很容易下载，
+        而且在 CMD 中可以正常使用没有乱码出现，所以推荐 pt。
 
         ![代码搜索（grepping）效果](http://whudoc.qiniudn.com/ag-fisheye.png)
 
-        原下载链接：[Releases · monochromegane/the_platinum_searcher · GitHub](https://github.com/monochromegane/the_platinum_searcher/releases)
+        原下载链接：[Releases · monochromegane/the_platinum_searcher · GitHub](https://github.com/monochromegane/the_platinum_searcher/releases)，
+        我的 ag.exe 是之前用 choco 下载的，不过有人（还是 Sumatra 作者）弄了一个 windows port，也提供下载：
+        [The Silver Searcher windows port](http://blog.kowalczyk.info/software/the-silver-searcher-for-windows.html)。
 
     最后，把 `D:\tzx\git\statics\winbin` 添加到 %PATH%。
 
 -   VS2015
 
+    [MSDN, 我告诉你](http://itellyou.cn/)
+
     去官网下载 Community 版本。
-    然后双击 iso 文件，安装之。然后重启。然后启动 Visual Studio 2015，然后登陆
-    自己的 Microsoft 账户（试用一段时间后，不登录，是不能继续使用 Community 版
-    本的）。
+    然后双击 iso 文件，安装之，如果只装 vc++ 部分，大概要占用系统 12 GB 的容量。
+    然后重启。然后启动 Visual Studio 2015，然后登陆自己的 Microsoft 账户（试用
+    一段时间后，不登录，是不能继续使用 Community 版本的）。
 
     然后去 Tools -- Extensions and updates... 下载安装插件，我推荐如下几个（按 popular 排序，大家都说好的，就安装把）：
 
@@ -179,18 +208,15 @@ Tips
 
     然后添加 `C:\MinGW\bin` 到 %PATH%。
 
+    我的备份：<http://whudoc.qiniudn.com/2016/mingw-14.0-without-git.exe> (36.9 MB)。
+
 -   Pandoc
 
     到 Pandoc 的 GitHub [Release](https://github.com/jgm/pandoc/releases) 页面去下载，或者用我的备份：
-    <http://doi-2014.qiniudn.com/pandoc/pandoc-1.17.0.2-windows.msi>。双击安装即可。
+    <http://doi-2014.qiniudn.com/pandoc/pandoc-1.17.0.2-windows.msi> (20.3 MB)。双击安装即可。
 
 各种软件库的配置
 ----------------
-
--   OpenCV2
--   OpenCV3
--   Qt4
--   Boost
 
 其他的一些杂七杂八
 ------------------
@@ -225,11 +251,41 @@ Tips
     首先，去中科大镜像站下载 Qt4.8.6：[Index of /qtproject/archive/qt/4.8/4.8.6/](http://mirrors.ustc.edu.cn/qtproject/archive/qt/4.8/4.8.6/)，
     放到 C 盘根目录下的 Qt 文件夹下。
 
-    首先 <kbd>Win</kbd>，输入“prompt”，打开【Developer Command Prompt for VS2015】，切换到 C 盘 Qt 文件下（`c:`，`cd /Qt`），
+    <!--
+    +   qt-creator-opensource-linux-x86_64-3.3.2.run
+    +   qt-everywhere-opensource-src-4.8.6.zip
+    +   qt-opensource-linux-x64-5.4.1.run
+    +   qt-opensource-linux-x86-5.4.1.run
+    +   qt-vs-addin-1.2.4-opensource.exe*
+    -->
+
+    首先 <kbd>Win</kbd>，输入“prompt x64”，打开【VS2015 x64 Native Tools
+    Command Prompt】，切换到 C 盘 Qt 文件下（`c:`，`cd /Qt`），
 
     -   OpenSSL
 
-        [Releases · openssl/openssl · GitHub](https://github.com/openssl/openssl/releases)
+        首先下载 nasm，[Index of
+        /pub/nasm/releasebuilds/2.12.02/win64](http://www.nasm.us/pub/nasm/releasebuilds/2.12.02/win64/)
+        ，安装后把路径加到 %PATH%，保证 CMD 中能使用 `nasm`。
+
+        然后下载 openssh 源码：[Releases · openssl/openssl ·
+        GitHub](https://github.com/openssl/openssl/releases)。
+
+        ```bash
+        # cd openssh-src-dir, 确保 nasm 能使用
+        perl Configure VC-WIN64A no-asm --prefix=C:\Qt\VS2015x64\openssl
+        ms\do_win64a
+        nmake -f ms\ntdll.mak
+        nmake -f ms\ntdll.mak install
+        ```
+
+        ```
+        ..\qt-src-4.8.7\configure.exe -prefix C:\Qt\VS2015x64\qt-4.8.7 -debug-and-release -no-qt3support -no-multimedia -no-audio-backend -no-phonon -no-phonon-backend -no-libtiff -no-libmng -no-dbus -no-nis -no-webkit -platform win32-msvc2015
+        ```
+
+        ```
+        nmake
+        ```
 
 -   OpenCV
 
@@ -237,7 +293,9 @@ Tips
 
     OpenCV3 的下载、安装
 
-    +   下载地址：<http://sourceforge.net/projects/opencvlibrary/files/opencv-win/3.1.0/opencv-3.1.0.exe/download>；
+    +   下载地址：
+        <http://sourceforge.net/projects/opencvlibrary/files/opencv-win/3.1.0/opencv-3.1.0.exe/download>，
+        或者用我的备份：<http://whudoc.qiniudn.com/2016/opencv-3.1.0.exe> (109 MB)；
     +   解压到 `C:/OpenCV`，然后把下面的 `opencv` 改成 `opencv3`；
     +   设置系统变量：`OpenCV3_DIR` -> `C:\OpenCV\opencv3\build`，这个文件夹下应该有 OpenCVConfig.cmake；
     +   然后把 `%OpenCV3_DIR%\x64\vc14\bin` 添加到 %PATH%。
@@ -247,7 +305,9 @@ Tips
     <!--
     OpenCV2 的下载、安装
 
-    +   下载地址：<http://tenet.dl.sourceforge.net/project/opencvlibrary/opencv-win/2.4.13/opencv-2.4.13.exe>；
+    +   下载地址：
+        <http://tenet.dl.sourceforge.net/project/opencvlibrary/opencv-win/2.4.13/opencv-2.4.13.exe>，
+        或者用我的备份：<http://whudoc.qiniudn.com/2016/opencv-2.4.13.exe> (266 MB)；
     +   解压到 `C:/OpenCV`，然后把下面的 `opencv` 改成 `opencv2`；
     +   设置系统变量：`OpenCV2_DIR` -> `C:\OpenCV\opencv2\build`，这个文件夹下应该有 OpenCVConfig.cmake。
     +   然后把 `%OpenCV2_DIR%\x64\vc14\bin` 添加到 %PATH%。
@@ -255,10 +315,32 @@ Tips
 
 -   Java8
 
-    从官网下载，需要注册。这是我的备份：<>。
+    从官网下载，需要注册。这是我的备份：<http://whudoc.qiniudn.com/2016/java8.7z> (230 MB)。
 
     然后把 `C:\Program Files\Java\jdk1.8.0_60\bin` 添加到 %PATH%。
 
+-   ActivePerl
+
+    其实 git bash 里面已经自带了 perl，但还是备份一下 ActivePerl：
+    <http://whudoc.qiniudn.com/2016/ActivePerl-5.24.0.2400-MSWin32-x64-300558.exe>
+    (19.4 MB)。
+
 -   Python
 
-    推荐使用 Anaconda。
+    Anaconda 备份：
+    <http://whudoc.qiniudn.com/2016/Anaconda2-4.0.0-Windows-x86_64.exe> (334 MB)。
+
+    Pycharm 备份：
+    <http://whudoc.qiniudn.com/2016/pycharm-community-2016.1.4.exe> (167 MB)。
+
+-   graphics
+
+    yEd
+
+    <http://whudoc.qiniudn.com/2016/yEd-3.15.0.2.zip> (28.3 MB)
+
+    [PlantUML : Download page](http://plantuml.com/download.html)
+
+-   LaTeX
+
+    [Index of /CTAN/systems/texlive/Images/](http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/)

@@ -19,11 +19,11 @@ tags:
 Notes | 笔记[^1]
 ================
 
-## 注意
+**注意**
 
-notes.md/notes.html 不再更新，已经转移到 [http://tangzx.qiniudn.com/notes/index.html](http://tangzx.qiniudn.com/notes/index.html)。
+:   notes.md/notes.html 不再更新，已经转移到 [http://tangzx.qiniudn.com/notes/index.html](http://tangzx.qiniudn.com/notes/index.html)。
 
-:   历史笔记来自 <http://tangzx.qiniudn.com/notes.html>（页面文本大，渲染慢，慎点）。
+    历史笔记来自 <http://tangzx.qiniudn.com/notes.html>（页面文本大，渲染慢，慎点）。
     源码来自 [blog/notes.md at master · district10/blog](https://github.com/district10/blog/blob/master/_pages/notes.md)。
 
     虽然在一个文件里维护自己的笔记，相对更简单。但是 md->html 的过程太慢，

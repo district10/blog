@@ -11,7 +11,7 @@ after-before: |
     <style> #navigator { display: none; } </style>
 ...
 
-<div class="slogan">Welcome to TZX's Blog.</div>
+<div class="slogan">Welcome to TZX's Blog</div>
 <p id="tzxslogan">老老实实的学问，来不得半点马虎。</p>
 
 <div id="buckets">
@@ -125,7 +125,7 @@ post-0107-mathematical-modeling.md
 * 2014-02-22 [模式识别作业：KL Transform（主分量变换）](post-0029-kl-transform.html){.featured .heart title="_posts/post-0029-kl-transform.md"}
 * 2014-02-12 [Learning HTML](post-0022-learning-html.html){title="_posts/post-0022-learning-html.md"}
 * 2014-02-08 [ASCII Art](post-0009-ascii-art.html){title="_posts/post-0009-ascii-art.md"}
-* 2014-02-02 [Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook](post-0024-linux-shell-scripting-cookbook.html){.heart title="_posts/post-0024-linux-shell-scripting-cookbook.md"}
+* 2014-02-02 [Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook](post-0024-linux-shell-scripting-cookbook.html){.featured .heart title="_posts/post-0024-linux-shell-scripting-cookbook.md"}
 * 2014-00-00 [随便翻翻 & Men Lists & Words Lists](post-0041-lists-read-at-random.html){title="_posts/post-0041-lists-read-at-random.md"}
 * 2013-00-00 [说中文还是说英文？无所谓！（演讲稿）](post-0026-english-or-chinese.html){title="_posts/post-0026-english-or-chinese.md"}
 * 2013-00-00 [虚拟现实的实习报告（脑洞最大的一次实习报告）](post-0031-brain-hole.html){title="_posts/post-0031-brain-hole.md"}

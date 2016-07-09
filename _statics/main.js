@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $('#tocboxbody').slideUp();
     $( ".tzx-tabs" ).tabs();
     $( "a" ).attr( "target", "_blank" );
     $( "a[href*='#']" ).attr( "target", "" );
@@ -26,6 +27,14 @@ $(document).ready(function(){
             cache: true
         });
         $(this).fadeOut();
+    });
+    $('#tocboxheader').on('click', function(){
+        $('#tocboxheader').hide();
+        $('#tocboxbody').slideDown();
+    });
+    $('#tocboxbody').on('click', function(){
+        $(this).slideUp();
+        $('#tocboxheader').show();
     });
 
     var pathStringList = document.location.toString().split('/');

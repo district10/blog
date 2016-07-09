@@ -22,8 +22,7 @@ AWK 文字处理
 
 Data: `netstat.txt`
 
-:   <small>
-    ```tzx-plain
+:   ```tzx-plain
     Proto Recv-Q Send-Q Local-Address          Foreign-Address             State
     tcp        0      0 0.0.0.0:3306           0.0.0.0:*                   LISTEN
     tcp        0      0 0.0.0.0:80             0.0.0.0:*                   LISTEN
@@ -44,7 +43,6 @@ Data: `netstat.txt`
     tcp        0      0 coolshell.cn:80        117.136.20.85:50025         FIN_WAIT2
     tcp        0      0 :::22                  :::*                        LISTEN
     ```
-    </small>
 
 Some Code Examples:
 

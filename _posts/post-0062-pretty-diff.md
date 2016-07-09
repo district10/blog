@@ -109,22 +109,20 @@ Git 我也不熟，又去查文档，看到
 #. `--no-index` 是说 diff 的是文件系统里的文件，而不是 Git Repository 里的文件
 #. `--color-words` 是说按照单词来显示 diff 结果，而不是行
 
-这个指令出来的结果在命令行下是彩色，其实用的是 "ANSI" 颜色表示法，输出的文本为（文件里的 ESC 字符被替换为 ＥＳＣ）：
+这个指令出来的结果在命令行下是彩色，其实用的是 "ANSI" 颜色表示法，输出的文本为：
 
-<small><small>
 ```tzx-plain
-ＥＳＣ[1mdiff --git a/_a.txt b/_b.txtＥＳＣ[m
-ＥＳＣ[1mindex 0cb3b2a..d540f3f 100644ＥＳＣ[m
-ＥＳＣ[1m--- a/_a.txtＥＳＣ[m
-ＥＳＣ[1m+++ b/_b.txtＥＳＣ[m
-ＥＳＣ[36m@@ -1,5 +1,5 @@ＥＳＣ[m
-ＥＳＣ[31mWhat do you mean?（这行被删除）ＥＳＣ[mWhen you nod your ＥＳＣ[31mhead yes（单词改变）ＥＳＣ[mＥＳＣ[32mhaydes（单词改变）ＥＳＣ[m
-But you wanna say ＥＳＣ[32mmeＥＳＣ[m no（单词添加）
-WhatＥＳＣ[31mdoＥＳＣ[m you mean?（删除单词）
-When you don't want me to move（这行不变）ＥＳＣ[m
-ＥＳＣ[32mBut you tell me to go（这行新添加）ＥＳＣ[m
+ESC[1mdiff --git a/_a.txt b/_b.txtESC[m
+ESC[1mindex 0cb3b2a..d540f3f 100644ESC[m
+ESC[1m--- a/_a.txtESC[m
+ESC[1m+++ b/_b.txtESC[m
+ESC[36m@@ -1,5 +1,5 @@ESC[m
+ESC[31mWhat do you mean?（这行被删除）ESC[mWhen you nod your ESC[31mhead yes（单词改变）ESC[mESC[32mhaydes（单词改变）ESC[m
+But you wanna say ESC[32mmeESC[m no（单词添加）
+WhatESC[31mdoESC[m you mean?（删除单词）
+When you don't want me to move（这行不变）ESC[m
+ESC[32mBut you tell me to go（这行新添加）ESC[m
 ```
-</small></small>
 
 在 [Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook](post-0024-linux-shell-scripting-cookbook.html) 这篇笔记了也讲到过。^[虽然那时没说这是 ANSI 颜色表示法。]
 

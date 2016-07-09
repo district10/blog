@@ -94,7 +94,7 @@ Orgit | 唐凤
 
 -   Links
 
-    +   [Boost 库裁剪](post-0110-boost.html)
+    +   [Boost 库裁剪](post-0110-boost.html){title=../_posts/post-0110-boost.md}
 
     +   CMake Templates
 
