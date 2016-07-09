@@ -1,3 +1,10 @@
+function help() {
+    alert(  '方向键有如下功能：\n\n'
+         +  '\n1. 返回主页：<left><left><left>'
+         +  '\n2. 显示目录：<right><right><right>'
+     );
+}
+
 $(document).ready(function(){
     $('#tocboxbody').slideUp();
     $( ".tzx-tabs" ).tabs();
@@ -15,6 +22,13 @@ $(document).ready(function(){
         if ($a.length) {
             $a.addClass('tzx-dumb');
             $(this).addClass('tzx-dumb');
+        }
+    });
+
+    $('body').keydown(function(e){
+        var code = e.which;
+        if(code==72) {              // key: h,              show help
+            help();
         }
     });
 
@@ -187,6 +201,12 @@ $(function($){
         })
         .addCode("b,u,t,m,a,n", function() {
             window.location = "http://butman.club/";
+        })
+        .addCode("left,left,left", function() {
+            window.location = "index.html";
+        })
+        .addCode("right,right,right", function() {
+            $('#tocboxheader').click();
         })
         .addHook(function(){
             // console.log("Hook called for: " + this.activeEgg.keys);

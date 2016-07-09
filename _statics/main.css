@@ -894,3 +894,11 @@ code.todo {
 .pokerface, .pokerface * {
     font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif, FontAwesome;
 }
+
+#copyright {
+    font-size: 70%;
+    margin-top: 5em;
+    text-align: center;
+    font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti;
+}
+#copyright a:after { content: ""; }
