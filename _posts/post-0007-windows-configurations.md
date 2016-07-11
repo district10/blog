@@ -248,44 +248,12 @@ Tips
 
     这部分我主要参考了 [GitHub - sandym/qt-patches: Patches to some release versioin of Qt I use](https://github.com/sandym/qt-patches)。
 
-    首先，去中科大镜像站下载 Qt4.8.6：[Index of /qtproject/archive/qt/4.8/4.8.6/](http://mirrors.ustc.edu.cn/qtproject/archive/qt/4.8/4.8.6/)，
-    放到 C 盘根目录下的 Qt 文件夹下。
+    +   Qt4 + VS2015
 
-    <!--
-    +   qt-creator-opensource-linux-x86_64-3.3.2.run
-    +   qt-everywhere-opensource-src-4.8.6.zip
-    +   qt-opensource-linux-x64-5.4.1.run
-    +   qt-opensource-linux-x86-5.4.1.run
-    +   qt-vs-addin-1.2.4-opensource.exe*
-    -->
-
-    首先 <kbd>Win</kbd>，输入“prompt x64”，打开【VS2015 x64 Native Tools
-    Command Prompt】，切换到 C 盘 Qt 文件下（`c:`，`cd /Qt`），
-
-    -   OpenSSL
-
-        首先下载 nasm，[Index of
-        /pub/nasm/releasebuilds/2.12.02/win64](http://www.nasm.us/pub/nasm/releasebuilds/2.12.02/win64/)
-        ，安装后把路径加到 %PATH%，保证 CMD 中能使用 `nasm`。
-
-        然后下载 openssh 源码：[Releases · openssl/openssl ·
-        GitHub](https://github.com/openssl/openssl/releases)。
-
-        ```bash
-        # cd openssh-src-dir, 确保 nasm 能使用
-        perl Configure VC-WIN64A no-asm --prefix=C:\Qt\VS2015x64\openssl
-        ms\do_win64a
-        nmake -f ms\ntdll.mak
-        nmake -f ms\ntdll.mak install
-        ```
-
-        ```
-        ..\qt-src-4.8.7\configure.exe -prefix C:\Qt\VS2015x64\qt-4.8.7 -debug-and-release -no-qt3support -no-multimedia -no-audio-backend -no-phonon -no-phonon-backend -no-libtiff -no-libmng -no-dbus -no-nis -no-webkit -platform win32-msvc2015
-        ```
-
-        ```
-        nmake
-        ```
+        1.  下载我的 build：<http://whudoc.qiniudn.com/2016/qt-4.8.7-vs2015-build1.7z>（108 MB，解压后 951 MB）；
+        2.  解压到 `C:\vs2015x64`；
+        3.  添加 `C:\vs2015x64\qt-4.8.7\bin` 到 %PATH% 前面（不是后面）；
+        4.  然后就可以用 cmake 生成项目，用 vs2015 编译运行了。
 
 -   OpenCV
 
@@ -310,7 +278,7 @@ Tips
         或者用我的备份：<http://whudoc.qiniudn.com/2016/opencv-2.4.13.exe> (266 MB)；
     +   解压到 `C:/OpenCV`，然后把下面的 `opencv` 改成 `opencv2`；
     +   设置系统变量：`OpenCV2_DIR` -> `C:\OpenCV\opencv2\build`，这个文件夹下应该有 OpenCVConfig.cmake。
-    +   然后把 `%OpenCV2_DIR%\x64\vc14\bin` 添加到 %PATH%。
+    +   然后把 `%OpenCV2_DIR%\x64\vc10\bin` 添加到 %PATH%。
     -->
 
 -   Java8
