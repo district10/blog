@@ -4933,41 +4933,41 @@ QIcon FlowChartSymbolPicker::iconForSymbol(const QString &symbolName)
 
 :   The **general purpose roles** (and the associated types) are:
 
-    Constant | Value | Description
-    -------- | :---: | -----------
-    `Qt::DisplayRole`{.cpp} | 0 | The key data to be rendered in the form of text. (`QString`{.cpp})
-    `Qt::DecorationRole`{.cpp} | 1 | The data to be rendered as a decoration in the form of an icon. (`QColor`{.cpp}, `QIcon`{.cpp} or `QPixmap`{.cpp})
-    `Qt::EditRole`{.cpp} | 2 | The data in a form suitable for editing in an editor. (`QString`{.cpp})
-    `Qt::ToolTipRole`{.cpp} | 3 | The data displayed in the item's tooltip. (`QString`{.cpp})
-    `Qt::StatusTipRole`{.cpp} | 4 | The data displayed in the status bar. (`QString`{.cpp})
-    `Qt::WhatsThisRole`{.cpp} | 5 | The data displayed for the item in "What's This?" mode. (`QString`{.cpp})
-    `Qt::SizeHintRole`{.cpp} | 13 | The size hint for the item that will be supplied to views. (`QSize`{.cpp})
+    | Constant | Value | Description |
+    | :------: | :---: | :---------: |
+    | `Qt::DisplayRole`{.cpp} | 0 | The key data to be rendered in the form of text. (`QString`{.cpp}) |
+    | `Qt::DecorationRole`{.cpp} | 1 | The data to be rendered as a decoration in the form of an icon. (`QColor`{.cpp}, `QIcon`{.cpp} or `QPixmap`{.cpp}) |
+    | `Qt::EditRole`{.cpp} | 2 | The data in a form suitable for editing in an editor. (`QString`{.cpp}) |
+    | `Qt::ToolTipRole`{.cpp} | 3 | The data displayed in the item's tooltip. (`QString`{.cpp}) |
+    | `Qt::StatusTipRole`{.cpp} | 4 | The data displayed in the status bar. (`QString`{.cpp}) |
+    | `Qt::WhatsThisRole`{.cpp} | 5 | The data displayed for the item in "What's This?" mode. (`QString`{.cpp}) |
+    | `Qt::SizeHintRole`{.cpp} | 13 | The size hint for the item that will be supplied to views. (`QSize`{.cpp}) |
 
     Roles describing **appearance and meta data** (with associated types):
 
-    Constant | Value | Description
-    -------- | :---: | -----------
-    `Qt::FontRole`{.cpp} | 6 | The font used for items rendered with the default delegate. (`QFont`{.cpp})
-    `Qt::TextAlignmentRole`{.cpp} | 7 | The alignment of the text for items rendered with the default delegate. (`Qt::AlignmentFlag`{.cpp})
-`Qt::BackgroundRole`{.cpp} | 8 | The background brush used for items rendered with the default delegate. (`QBrush`{.cpp})
-    `Qt::BackgroundColorRole`{.cpp} | 8 | This role is obsolete. Use BackgroundRole instead.
-`Qt::ForegroundRole`{.cpp} | 9 | The foreground brush (text color, typically) used for items rendered with the default delegate. (`QBrush`{.cpp})
-    `Qt::TextColorRole`{.cpp} | 9 | This role is obsolete. Use ForegroundRole instead.
-`Qt::CheckStateRole`{.cpp} | 10 | This role is used to obtain the checked state of an item. (`Qt::CheckState`{.cpp})
-    `Qt::InitialSortOrderRole`{.cpp} | 14 | This role is used to obtain the initial sort order of a header view section. (`Qt::SortOrder`{.cpp}). This role was introduced in Qt 4.8.
+    | Constant | Value | Description |
+    | :------: | :---: | :---------: |
+    | `Qt::FontRole`{.cpp} | 6 | The font used for items rendered with the default delegate. (`QFont`{.cpp}) |
+    | `Qt::TextAlignmentRole`{.cpp} | 7 | The alignment of the text for items rendered with the default delegate. (`Qt::AlignmentFlag`{.cpp}) |
+    | `Qt::BackgroundRole`{.cpp} | 8 | The background brush used for items rendered with the default delegate. (`QBrush`{.cpp}) |
+    | `Qt::BackgroundColorRole`{.cpp} | 8 | This role is obsolete. Use BackgroundRole instead. |
+    | `Qt::ForegroundRole`{.cpp} | 9 | The foreground brush (text color, typically) used for items rendered with the default delegate. (`QBrush`{.cpp}) |
+    | `Qt::TextColorRole`{.cpp} | 9 | This role is obsolete. Use ForegroundRole instead. |
+    | `Qt::CheckStateRole`{.cpp} | 10 | This role is used to obtain the checked state of an item. (`Qt::CheckState`{.cpp}) |
+    | `Qt::InitialSortOrderRole`{.cpp} | 14 | This role is used to obtain the initial sort order of a header view section. (`Qt::SortOrder`{.cpp}). This role was introduced in Qt 4.8. |
 
     **Accessibility roles** (with associated types):
 
-    Constant | Value | Description
-    -------- | :---: | -----------
-    `Qt::AccessibleTextRole`{.cpp} | 11 | The text to be used by accessibility extensions and plugins, such as screen readers. (`QString`{.cpp})
-    `Qt::AccessibleDescriptionRole`{.cpp} | 12 | A description of the item for accessibility purposes. (`QString`{.cpp})
+    | Constant | Value | Description |
+    | :------: | :---: | :---------: |
+    | `Qt::AccessibleTextRole`{.cpp} | 11 | The text to be used by accessibility extensions and plugins, such as screen readers. (`QString`{.cpp}) |
+    | `Qt::AccessibleDescriptionRole`{.cpp} | 12 | A description of the item for accessibility purposes. (`QString`{.cpp}) |
 
     **User roles**:
 
-    Constant | Value | Description
-    -------- | :---: | -----------
-    `Qt::UserRole`{.cpp} | 32 | The first role that can be used for application-specific purposes.
+    | Constant | Value | Description |
+    | :------: | :---: | :---------: |
+    | `Qt::UserRole`{.cpp} | 32 | The first role that can be used for application-specific purposes. |
 
     For user roles, it is up to the developer to decide which types to use and ensure that components use the correct types when accessing and setting data.
 
@@ -5024,15 +5024,15 @@ treeWidget->header()->setResizeMode(1, QHeaderView::Stretch);
 
 #### Using Predefined Models
 
-Model | Details
-:---- | :------
-`QStringListModel`{.cpp} | Stores a list of strings
-`QStandardItemModel`{.cpp} | Stores arbitrary hierarchical data
-`QDirModel`{.cpp} | Encapsulates the local file system
-`QSqlQueryModel`{.cpp} | Encapsulates an SQL result set
-`QSqlTableModel`{.cpp} | Encapsulates an SQL table
-`QSqlRelationalTableModel`{.cpp} | Encapsulates an SQL table with foreign keys
-`QSortFilterProxyModel`{.cpp} | Sorts and/or filters another model
+| Model | Details |
+| :----: | :------: |
+| `QStringListModel`{.cpp} | Stores a list of strings |
+| `QStandardItemModel`{.cpp} | Stores arbitrary hierarchical data |
+| `QDirModel`{.cpp} | Encapsulates the local file system |
+| `QSqlQueryModel`{.cpp} | Encapsulates an SQL result set |
+| `QSqlTableModel`{.cpp} | Encapsulates an SQL table |
+| `QSqlRelationalTableModel`{.cpp} | Encapsulates an SQL table with foreign keys |
+| `QSortFilterProxyModel`{.cpp} | Sorts and/or filters another model |
 
 ```cpp
 void TeamLeadersDialog::insert()
@@ -7224,15 +7224,15 @@ bool isWrapping () const
 void setWrapping ( bool enable )
 ```
 
-Constant | Value | Description
--------- | ----- | -----------
-Qt::DisplayRole | 0 | The key data to be rendered in the form of text. (QString)
-Qt::DecorationRole | 1 | The data to be rendered as a decoration in the form of an icon. (QColor, QIcon or QPixmap)
-Qt::EditRole | 2 | The data in a form suitable for editing in an editor. (QString)
-Qt::ToolTipRole | 3 | The data displayed in the item's tooltip. (QString)
-Qt::StatusTipRole | 4 | The data displayed in the status bar. (QString)
-Qt::WhatsThisRole | 5 | The data displayed for the item in "What's This?" mode. (QString)
-Qt::SizeHintRole | 13 | The size hint for the item that will be supplied to views. (QSize)
+| Constant | Value | Description |
+| :-------: | :----: | :----------: |
+| Qt::DisplayRole | 0 | The key data to be rendered in the form of text. (QString) |
+| Qt::DecorationRole | 1 | The data to be rendered as a decoration in the form of an icon. (QColor, QIcon or QPixmap) |
+| Qt::EditRole | 2 | The data in a form suitable for editing in an editor. (QString) |
+| Qt::ToolTipRole | 3 | The data displayed in the item's tooltip. (QString) |
+| Qt::StatusTipRole | 4 | The data displayed in the status bar. (QString) |
+| Qt::WhatsThisRole | 5 | The data displayed for the item in "What's This?" mode. (QString) |
+| Qt::SizeHintRole | 13 | The size hint for the item that will be supplied to views. (QSize) |
 
 Refs
 

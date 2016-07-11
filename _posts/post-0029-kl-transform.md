@@ -17,7 +17,7 @@ KL 变换即 Karhunen-Loève Transform，是一种选取主要分量，剔除冗
 其实也就是一种 PCA（主分量（Principal component）变换）。KL 变换时大三时模式
 识别课程上学习的一个算法。我使用了 Eigen 库在 Linux 下实现，而不是像大多数人
 那样用 Matlab。好处是我可以继续喷“Windows sucks”、“Matlab 就这样还要钱？”（原谅
-我那时愚蠢而偏激），坏处是别人都很快写出来用KL 变换处理 RGB 图片生成细节完美的
+我那时愚蠢而偏激），坏处是别人都很快写出来用 KL 变换处理 RGB 图片生成细节完美的
 灰度图的 matlab 代码，而我的 c++ 程序那时候只能处理数组……
 
 ![长轴上数据更分散，对数据区分度更大。KL 变换的目的就是找到长轴，忽略短轴，用更
@@ -33,18 +33,14 @@ KL 变换即 Karhunen-Loève Transform，是一种选取主要分量，剔除冗
 ![](http://whudoc.qiniudn.com/2016/kltransform2.png)
 
 可以看到其实我是先用 gcc 编译了代码，然后运行，
-我瞎掰的原始数据是一个二位数组（见“the original data”），
+我瞎掰的原始数据是一个二维数组（见“the original data”），
 每一列是一个样本数据。可以看到，数据集的最后一行全是零，
-是冗余数据（也就是说样本的最后一个维度完全没有区分度），
+是冗余数据（也就是说样本在最后一个维度上完全没有区分度），
 理论上 kl 变换之后最后一个维度应该被舍去。
 
-通过我 Eigen 库支撑下我强大的 c++ 程序后，数据成功的剔除了
+通过 Eigen 库支撑下我强大的 c++ 程序后，数据成功的剔除了
 最后一个维度，你可以看到变换矩阵最后一列全是 0（见“The Transpose matrix”），
 这就对啦！虽然不能处理图像，但至少 kl 变换是有了。
-
-其实处理图像，也就是把 RGB 三个通道，当场三个维度，把所有的像素值扔进去处理，
-并不比这个数组麻烦。只要你知道如何 1）读取图片；2）图片转化为数组；
-3）数组转会成图片。我的代码托管在 GitHub，详细见：[district10/Pattern_Classification](https://github.com/district10/Pattern_Classification)。
 
 代码其实不多，我干脆贴过来把：
 
@@ -174,10 +170,17 @@ MatrixXf kl_transform(const MatrixXf& square,int num_shrink = 1)
 }
 ```
 
+其实处理图像，也就是把 RGB 三个通道，当场三个维度，把所有的像素值扔进去处理，
+并不比这个数组麻烦。只要你知道如何 1）读取图片；2）图片转化为数组；
+3）数组转会成图片。那时候我 OpenCV 很不熟，后来我添加了这个功能，代码托管在
+GitHub，详细见：[district10/Pattern_Classification](https://github.com/district10/Pattern_Classification)。
+下面继续这个 kl 变换的故事。
+
 ---
 
-后来过了大概一个学期，另一门课（《遥感学实习》？），需要做变化检测，植被 NDVI 计算等内容，
-我就把原来没有弄好的 kl 变换拿出来，用 OpenCV 写了一遍，于是就能处理图片了。居然没花什么功夫就写出来了！~
+接着上面的 kl 变换的故事。过了大概一个学期，另一门课（《遥感学实习》？），需要
+做变化检测，植被 NDVI 计算等内容，我就把原来没有弄好的 kl 变换拿出来，用 OpenCV
+写了一遍，于是就能处理图片了。居然没花什么功夫就写出来了！~（说了其实很简单的嘛）
 
 （其实 OpenCV 的矩阵运算，也都是用的 Eigen 库。）
 
@@ -238,6 +241,8 @@ image_ndvi = (image_sub / image_sum + 1) / 2 * 256
 ![KL 变化输出效果](http://gnat.qiniudn.com/tmp/kl_rgb_result.jpg)
 
 代码都在上面那个 repo 里，编译方法也写了。
+
+这就是我和 kl 变换的故事。
 
 ---
 

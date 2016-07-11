@@ -251,17 +251,12 @@ a.external:after {
 a[href^="http://"]:not([href*="mydomain.com"]):before{ }
 
 // a { padding-right: 0.1em; }
-a:after { color: lightgray; font-size: 60%; }
-
-a[href*="wikipedia.org"]:after          { content: "「維」"; }
-a[href*="github.com"]:after             { content: "「GitHub」"; }
-a[href*="douban.com"]:after             { content: "「豆」" }
-a[href^="mailto:"]:after                { content: "「邮」"; }
-a[href*="tangzhixiong.com"]:after,
-a[href*="dvorak4tzx.com"]:after         { content: "「我」"; }
-a[href$=".pdf"]:after                   { content: "「档」"; }
-a[href*="zhihu.com:"]:after             { content: "「知」"; }
-// a[href*="#"]:after                      { content: "「this」"; }
+a:after { color: lightgray; font-size: 90%; }
+a[href*="wikipedia.org"]:after          { content: "\00a0 \f266"; }
+a[href*="github.com"]:after             { content: "\00a0 \f09b"; }
+a[href*="stackoverflow.com"]:after      { content: "\00a0 \f16c"; }
+a[href$=".pdf"]:after                   { content: "\00a0 \f1c1"; }
+a[href^="mailto:"]:after                { content: "\00a0 \f1d9"; }
 
 h1, h2, h3, h4, h5, h6 { padding-left: 1.0em; padding-right: 0.4em; }
 
@@ -891,7 +886,7 @@ code.todo {
     border-radius: 3px;
 }
 
-.pokerface, .pokerface * {
+.pokerface, .pokerface *, *:after {
     font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif, FontAwesome;
 }
 
