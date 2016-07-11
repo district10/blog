@@ -1,7 +1,7 @@
 // CSS can always drive you crazy.
 html {
     font-size: 150%;
-    font-family: TIBch, "Classic Grotesque W01", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serifFontAwesome;
+    font-family: TIBch, "Classic Grotesque W01", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, FontAwesome;
 }
 
 body {
@@ -901,4 +901,5 @@ code.todo {
     text-align: center;
     font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti;
 }
-#copyright a:after { content: ""; }
+#copyright a        { text-decoration: none; }
+#copyright a:after  { content: ""; }
