@@ -36,6 +36,7 @@ post-0108-english-notes.md
 post-0107-mathematical-modeling.md
 -->
 * 2016-05-25 [《疯狂的麦克斯》里的 Mediocre 是傻逼的意思吗？](post-0106-mediocre.html){title="_posts/post-0106-mediocre.md"}
+* 2016-05-08 [CMake 简介和 CMake 模板](post-0100-cmake-templates.html){.featured .heart title="_posts/post-0100-cmake-templates.md"}
 <!--* 2016-05-22 [INTP](post-0099-intp.html){title="_posts/post-0099-intp.md"}-->
 <!--* 2016-05-22 [Probability and Statistics](post-0098-probability-and-statistics.html){title="_posts/post-0098-probability-and-statistics.md"}-->
 <!--* 2016-05-22 [Machine Learning](post-0097-machine-learning.html){title="_posts/post-0097-machine-learning.md"}-->

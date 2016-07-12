@@ -32,7 +32,8 @@ $$\det{AB} = \det{A} \times \det{B} =  \det{B} \times \det{A}$$
 >   small that learning either becomes very slow or stops working altogether.
 
 这句话其实是说矩阵的秩小于 1，多次用乘这个矩阵（对应一个操作）结果就是，向量趋向 0，
-坍缩了！
+坍缩了！这说的是深度学习里，由于网络层数加多（或别的原因），梯度衰减无法继续“学习”的情况。
+当然也不是说秩大于 1 就好，因为大于 1 说明了不收敛。:cry:
 
 Jacobian 则是导数概念的拓展，之前也不知道。
 

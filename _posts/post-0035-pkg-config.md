@@ -218,4 +218,5 @@ g++ $* -o ${1%.*} $(pkg-config --cflags --libs opencv)
 
 ---
 
-画外音：如果你文件很多，一定不能不用 Makefile，或者类似的东西。
+画外音：如果你文件很多，一定不能不用 Makefile，或者类似的东西，CMake 的使用
+可以参考我的 post：[CMake 简介和 CMake 模板](post-0100-cmake-templates.html)。

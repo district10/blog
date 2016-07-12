@@ -21,6 +21,7 @@ About | 关于
 -   个人主页：<http://tangzhixiong.com>
 -   GitHub：[district10](https://github.com/district10)
 -   Lofter：[dvorak4tzx](http://dvorak4tzx.lofter.com/)
+-   SegmentFault: [dvorak4tzx](https://segmentfault.com/u/dvorak4tzx)
 
 履历：
 

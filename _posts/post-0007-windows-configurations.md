@@ -312,3 +312,8 @@ Tips
 -   LaTeX
 
     [Index of /CTAN/systems/texlive/Images/](http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/)
+
+-   XnView
+
+    +   [XnView Software · XnView](http://www.xnview.com/en/xnview/)
+    +   <http://download3.xnview.com/XnView-win-full.exe> (17.7 MB)

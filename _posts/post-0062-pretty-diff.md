@@ -13,7 +13,7 @@ Pretty Diff | 听歌学英语
 昨晚一个想法击中了我。既然要练听力（虽然寡人水平已经很高[^fallback]），为什么不每天在
 虾米上听一首歌，然后把歌词 dictate 出来呢？
 
-[^fallback]: 只要不是摇滚还能听个大概。
+[^fallback]: 通常我都这么吹牛：“哥四级听力 230（满分 248），看电影需要字幕么？！”
 
 这是一个好主意，但我们需要一点自动化：
 
@@ -150,7 +150,7 @@ When you don't want me to move（这行不变）
 </pre>
 ```
 
-加点 CSS：
+加点 CSS（下面不是图片，虽然看上去像是截图）：
 
 <pre class="diffed">
 <span style="font-weight:bold;">diff --git a/_a.txt b/_b.txt</span>
@@ -167,7 +167,7 @@ When you don't want me to move（这行不变）
 
 不错不错，可以安安静静地每天 dictation 了。现在我得去主页新开一个 bucket，放每天的 dictation 工作。
 
-以后把 dictation 放在 [Lyrics | 听写](lyrics.html)，
+以后把 dictation 放在 [Lyrics | 听写](http://tangzx.qiniudn.com/lyrics.html)，
 试用了一次效果相当赞。
 
 ![基本上是个合格的纠错小助手](http://gnat.qiniudn.com/dictation.png)

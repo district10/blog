@@ -94,8 +94,6 @@ Orgit | 唐凤
 
 -   Links
 
-    +   [Boost 库裁剪](post-0110-boost.html){title=../_posts/post-0110-boost.md}
-
     +   CMake Templates
 
     +   Jupyter Caffe
@@ -115,8 +113,6 @@ Orgit | 唐凤
     +   长沙总结
 
     +   桥梁纹理
-
-    +   Windows 配置 opencv2/3，qt4/5
 
     +   线性代数的信息论解释
 
