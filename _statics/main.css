@@ -822,7 +822,7 @@ code.todo {
     border-radius: 3px;
 }
 
-.pokerface, .pokerface *, *:after, a.tzx-header-anchor {
+.pokerface, .pokerface *, a.tzx-header-anchor, code:after, a:after {
     font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif, FontAwesome;
 }
 
