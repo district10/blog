@@ -8,9 +8,6 @@ tags:
 Orgit | 唐凤
 ============
 
-<!--
--->
-
 [这里](http://tangzx.qiniudn.com/orgit/) 用 Org-mode 写而不是 Markdown。
 ^[但这边很少更新，因为我现在比较少用 Emacs 和 org-mode 写东西。]
 
@@ -94,8 +91,6 @@ Orgit | 唐凤
 
 -   Links
 
-    +   CMake Templates
-
     +   Jupyter Caffe
 
     +   IDE 说到编译和链接
@@ -125,6 +120,12 @@ Orgit | 唐凤
     +   bcp 源码分析，qt 库的裁剪？
 
     +   git 源码分析。
+
+    +   博客搜索，中英文之间加上空格。一个段落变成一行。一行中文+一行英文。
+
+        [jQuery-based Local Search Engine for Hexo | HaHack](http://hahack.com/codes/local-search-engine-for-hexo/#stq=&stp=0)
+
+    +   [district10/QtEVM: C++ implementation of EVM(Eulerian Video Magnification), based on OpenCV and Qt.](https://github.com/district10/QtEVM)
 
 <div class="tzx-hide">
 

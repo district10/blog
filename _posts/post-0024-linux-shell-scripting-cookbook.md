@@ -22,12 +22,12 @@ Chap 1: Shell Something Out
 
 Bash (`B`ourne `A`gain `Sh`ell)
 
-:   * 提示符： `#`(root) and `$`(non root);
-    * `#!/bin/bash`{.bash} (Shebang),
-    * `bash script.sh`{.bash},
-    * `chmod +x script.sh && ./script.sh`{.bash}
-    * `;`{.bash} is like a newline in bash
-    * Comment Example
+:   -   提示符： `#`(root) and `$`(non root);
+    -   `#!/bin/bash`{.bash} (Shebang),
+    -   `bash script.sh`{.bash},
+    -   `chmod +x script.sh && ./script.sh`{.bash}
+    -   `;`{.bash} is like a newline in bash
+    -   Comment Example
 
         ```bash
         #!/bin/bash
@@ -47,7 +47,7 @@ Bash (`B`ourne `A`gain `Sh`ell)
         echo Comments Are Something You Can Not See
         ```
 
-    * Printing in the terminal (`echo`{.bash} & `printf`{.bash})
+    -   Printing in the terminal (`echo`{.bash} & `printf`{.bash})
 
         ```bash
         text="apple"
@@ -58,7 +58,7 @@ Bash (`B`ourne `A`gain `Sh`ell)
         printf "%-10s %4.2f\n" price 4.24 # '-' -> left align
         ```
 
-    * Colored output
+    -   Colored output
 
         ```plain
         Text: reset  =  0, black = 30, red     = 31, green = 32,
@@ -71,7 +71,7 @@ Bash (`B`ourne `A`gain `Sh`ell)
         echo -e "\e[1;42m \e[1;31m Green Background, red Text \e[0m"
         ```
 
-    * Variables and Environment Variables
+    -   Variables and Environment Variables
 
         + `$environ`{.bash}
 
@@ -92,12 +92,14 @@ Bash (`B`ourne `A`gain `Sh`ell)
             fi
             ```
 
-    * Modify the Bash Prompt String
-        + `cat ~/.bashrc | grep "PS1"`{.bash}
-        + `\u` ==> expands to username
-        + `\w` ==> expands to the current working directory
-        + `\h` ==> expands hostname
-    * Math with the shell: `let`{.bash}, `expr`{.bash}, `$[]`{.bash}, `$(())`{.bash}, `bc`{.bash}
+    -   Modify the Bash Prompt String
+
+        +   `cat ~/.bashrc | grep "PS1"`{.bash}
+        +   `\u` ==> expands to username
+        +   `\w` ==> expands to the current working directory
+        +   `\h` ==> expands hostname
+
+    -   Math with the shell: `let`{.bash}, `expr`{.bash}, `$[]`{.bash}, `$(())`{.bash}, `bc`{.bash}
 
         ```bash
         # let
@@ -116,7 +118,7 @@ Bash (`B`ourne `A`gain `Sh`ell)
         echo "scale=2;  3/8" | bc
         ```
 
-    * File descriptors and Redirection
+    -   File descriptors and Redirection
 
         fid | fd name
         --- | ---
@@ -148,7 +150,7 @@ Bash (`B`ourne `A`gain `Sh`ell)
             cat log.txt # "cat<log.txt" or"cat < log.txt", both fine
             ```
 
-    * Arrays and Associative Arrays
+    -   Arrays and Associative Arrays
 
         ```bash
         array_var=(10 20 30 40 50); index=3
@@ -165,9 +167,9 @@ Bash (`B`ourne `A`gain `Sh`ell)
         echo ${!ass_array[*]}
         ```
 
-    * Visiting Alias: `alias install="sudo apt-get install"`{.bash}
+    -   Visiting Alias: `alias install="sudo apt-get install"`{.bash}
 
-    * Grabbing info about the terminal
+    -   Grabbing info about the terminal
 
         ```bash
         # tput
@@ -207,8 +209,9 @@ Bash (`B`ourne `A`gain `Sh`ell)
         stty echo  # resume
         ```
 
-    * Getting and Setting dates and delays
-        + In Unix-like System: *1970-01-01 00:00:00 UTC*, is called `Epoch` or `Unix Time`
+    -   Getting and Setting dates and delays
+
+        +   In Unix-like System: *1970-01-01 00:00:00 UTC*, is called `Epoch` or `Unix Time`
 
             ```bash
             date
@@ -224,9 +227,9 @@ Bash (`B`ourne `A`gain `Sh`ell)
             echo "passed $diff seconds"
             ```
 
-        + see Formats[^datefrmt]
+        +   see Formats[^datefrmt]
 
-    * Debugging the Script
+    -   Debugging the Script
 
         ```bash
         bash -x script.sh # specify when running script
@@ -234,7 +237,7 @@ Bash (`B`ourne `A`gain `Sh`ell)
         "#!/bin/bash -xv" # "-xv" ==> enable debugging
         ```
 
-    * Functions and Arguments
+    -   Functions and Arguments
 
         ```bash
         fname() { \
@@ -246,13 +249,13 @@ Bash (`B`ourne `A`gain `Sh`ell)
         # $*(expands as "$1c$2c$3", where c is the first character of IFS)
         ```
 
-        + The Recusive Funcs:
+        +   The Recusive Funcs:
 
             ```bash
             F() { echo $1; sleep 1; F hello;} && F hello
             ```
 
-        + Fork Bomb（不要在自己电脑上试！！）
+        +   Fork Bomb（不要在自己电脑上试！！）
 
             ```bash
             # Do not Try it Yourself !!!
@@ -267,11 +270,13 @@ Bash (`B`ourne `A`gain `Sh`ell)
             > that **calls itself**, it **infinitely spawns processes** and
             > ends up in a **denial-of-service** attack.
 
-        + Exporting Functions:  `export -f fname`{.bash}
-        + Reading the return status of last command:
-          `cmd; echo $? # retrieve exit status`{.bash}
-        + Passing arguments to commands
-        + Reading the output of a sequence of commands in a variable
+        +   Exporting Functions:  `export -f fname`{.bash}
+
+        +   Reading the return status of last command: `cmd; echo $? # retrieve exit status`{.bash}
+
+        +   Passing arguments to commands
+
+        +   Reading the output of a sequence of commands in a variable
 
             ```bash
             # Filters: cmd1 | cmd2 | cmd3 e.g.
@@ -282,11 +287,12 @@ Bash (`B`ourne `A`gain `Sh`ell)
             cmd_output=`ls | cat -n` # I like it a lot
             ```
 
-        + More Subshell:
-            - Spawning a separate process with subshell: e.g.: `pwd; (cd /usr; ls); pwd`{.bash}
-            - Subshell quoting to preserve spacing and the newline character: `out=$(cat file.txt)`{.bash}
+        +   More Subshell:
 
-    * Read
+            *   Spawning a separate process with subshell: e.g.: `pwd; (cd /usr; ls); pwd`{.bash}
+            *   Subshell quoting to preserve spacing and the newline character: `out=$(cat file.txt)`{.bash}
+
+    -   Read
 
         ```bash
         # read -n num_of_chars variable
@@ -299,7 +305,7 @@ Bash (`B`ourne `A`gain `Sh`ell)
         read -d ',' var
         ```
 
-    * Repeat func
+    -   Repeat func
 
         ```bash
         repeat() { while true; do $@ && return; done;}; # define it
@@ -314,10 +320,13 @@ Bash (`B`ourne `A`gain `Sh`ell)
         repeat wget -c www.sourceforge.com/somefile.tar.gz
         ```
 
-    * File Separators and Iterators
-        + [IFS - Internal Field Iterator](http://en.wikipedia.org/wiki/Internal_field_separator)
-        + [CSV - Comma Separated Values](http://en.wikipedia.org/wiki/Comma_Separated_Values)
-        + example:
+    -   File Separators and Iterators
+
+        +   [IFS - Internal Field Iterator](http://en.wikipedia.org/wiki/Internal_field_separator)
+
+        +   [CSV - Comma Separated Values](http://en.wikipedia.org/wiki/Comma_Separated_Values)
+
+        +   example:
 
             ```bash
             data="how,are,you"
@@ -336,7 +345,7 @@ Bash (`B`ourne `A`gain `Sh`ell)
             # until condition; do somthing; done;
             ```
 
-    * Comparisons and tests
+    -   Comparisons and tests
 
         ```bash
         # if condition;
@@ -351,23 +360,30 @@ Bash (`B`ourne `A`gain `Sh`ell)
         # [ condition ] || something
         ```
 
-    * Conditions
+    -   Conditions
 
-        + `-gt, -lt, -ge, -le`{.bash}: greater/less than/equal
-        + `-a, -o`{.bash}: and/or
-        + `-f, -d`{.bash}: file/dir
-        + `-x, -e`{.bash}: executable/exists
-        + `-c, -b`{.bash}: char/block devices
-        + `-w, -r`{.bash}: writeable/readable
-        + `-L`{.bash}: symlink
-        + Example:
+        +   `-gt, -lt, -ge, -le`{.bash}: greater/less than/equal
+
+        +   `-a, -o`{.bash}: and/or
+
+        +   `-f, -d`{.bash}: file/dir
+
+        +   `-x, -e`{.bash}: executable/exists
+
+        +   `-c, -b`{.bash}: char/block devices
+
+        +   `-w, -r`{.bash}: writeable/readable
+
+        +   `-L`{.bash}: symlink
+
+        +   Example:
 
             ```bash
             if [ -e /bin/bash ]; then echo exists; else echo not exists; fi
             if [ -e "/bin/bash" ]; then echo exists; else echo not exists; fi
             ```
 
-    * String comparason
+    -   String comparason
 
         ```bash
         [[ $str1 == $str2 ]], [[ $str1 = $str2 ]] # same thing
@@ -423,14 +439,14 @@ Recording and Playing back of terminal session
 
 Finding files and file listing
 
-:   * find
+:   -   find
 
         ```bash
         path="/bin" # specify a path
         find $path # equals to "find $path -print"
         find $path -print0 # delimed by '\0'
         ```
-    * more found(fun)
+    -   more found(fun)
 
         ```bash
         find $path -name "*.txt" # or we can use "-iname"(ignore case)
@@ -444,19 +460,19 @@ Finding files and file listing
 
 Playing with Xargs
 
-:   * Converting multi lines of input to a single-line output
+:   -   Converting multi lines of input to a single-line output
 
         ```bash
         cat files.txt | xargs
         ```
 
-    * Converting single-line of input to multi lines of output
+    -   Converting single-line of input to multi lines of output
 
         ```bash
         cat file.txt | xargs -n 3 # default delim: $IFS
         ```
 
-    * more xargs:
+    -   more xargs:
 
         ```bash
         # -d $X option, specify delim, now $X is the delim
@@ -526,11 +542,14 @@ Just for fun from dvorak4tzx
 
 Checksum and Verification
 
-:   * md5sum
-        + `md5sum filename`{.bash} ==> 32-Character Hexadecimal String
-        + `md5sum -c filename.md5sum`{.bash} ==> Ok/Filed # dont have to specify filename, it is in filename.md5sum
-    * `sha1sum`{.bash}, like `md5sum`{.bash}, but with 40-character Hex code
-    * Checksum for Directories
+:   -   md5sum
+
+        +   `md5sum filename`{.bash} ==> 32-Character Hexadecimal String
+        +   `md5sum -c filename.md5sum`{.bash} ==> Ok/Filed # dont have to specify filename, it is in filename.md5sum
+
+    -   `sha1sum`{.bash}, like `md5sum`{.bash}, but with 40-character Hex code
+
+    -   Checksum for Directories
 
         ```bash
         # -r(recursive), -l(use relative path)
@@ -620,9 +639,9 @@ Spell Checking and dictionary manipulation
 
 dvorak4tzx found something
 
-:   - In a word-processing app like geany, the line num is not the real one
-    - Because of the **offset-by-1**, for an empty file has 1 line but actually
-      there is nothing
+:   -   In a word-processing app like geany, the line num is not the real one
+    -   Because of the **offset-by-1**, for an empty file has 1 line but
+        actually there is nothing
 
 Automating interactive Input
 
@@ -633,38 +652,39 @@ Chap 3: File in, File out
 
 Generating files of any size
 
-:   - `dd if=/dev/zero of=./junk.data count=50 bs=1M`{.bash}
-    - `M` can alse be `c`, `w`, `b`, `k`, `M`, `G`
+:   -   `dd if=/dev/zero of=./junk.data count=50 bs=1M`{.bash}
+    -   `M` can alse be `c`, `w`, `b`, `k`, `M`, `G`
 
 The Intersection and set difference (A-B) on text files
 
-:   * `comm`{.bash}: compare two sorted files line by line
-    * `sort`{.bash}: sort lines of text files
+:   -   `comm`{.bash}: compare two sorted files line by line
 
-    ```bash
-    # in place sort
+    -   `sort`{.bash}: sort lines of text files
 
-    # sort A.txt and output to A.txt
-    sort A.txt -o A.txt
+        ```bash
+        # in place sort
 
-    # 1st col: from A, 2nd col: from B, 3rd col: A and B
-    comm A.txt B.txt
+        # sort A.txt and output to A.txt
+        sort A.txt -o A.txt
 
-    # no 1st, 2nd col
-    comm A.txt B.txt -1 -2
+        # 1st col: from A, 2nd col: from B, 3rd col: A and B
+        comm A.txt B.txt
 
-    # no 3rd col
-    comm A.txt B.txt -3
+        # no 1st, 2nd col
+        comm A.txt B.txt -1 -2
 
-    # produce a unified output, `^` is the start of the line marker
-    comm A.txt B.txt -3 | sed 's/^\t//'
+        # no 3rd col
+        comm A.txt B.txt -3
 
-    # Set difference for A.txt:
-    comm A.txt B.txt -2 -3
+        # produce a unified output, `^` is the start of the line marker
+        comm A.txt B.txt -3 | sed 's/^\t//'
 
-    # Set difference for B.txt:
-    comm A.txt B.txt -1 -3
-    ```
+        # Set difference for A.txt:
+        comm A.txt B.txt -2 -3
+
+        # Set difference for B.txt:
+        comm A.txt B.txt -1 -3
+        ```
 
 Finding and deleting duplicate files
 
@@ -860,7 +880,7 @@ Enumeration file types statics
 
 Using loopback files
 
-:   * Creat a block file, format and mount it
+:   -   Creat a block file, format and mount it
 
         ```bash
         # create a block file
@@ -885,9 +905,9 @@ Using loopback files
         # or unmount it this way: `umount /dev/loop1`
         ```
 
-* Creating partions inside it
+Creating partions inside it
 
-    ```bash
+:   ```bash
     losetup /dev/loop1 loopbackfile.img
     fdisk /dev/loop1
     losetup -o 32256 /dev/loop2 loopbackfile.img
@@ -899,9 +919,9 @@ Using loopback files
     #    start of the hard disk.
     ```
 
-* Quicker way to mount loopback disk images with partitions
+Quicker way to mount loopback disk images with partitions
 
-    ```bash
+:   ```bash
     # this part have not tested myself
     kpartx -v -a diskimage.img
 
@@ -920,7 +940,7 @@ Using loopback files
     kpartx -d diskimage.img
     ```
 
-    * Mounting ISO files as loopback, generating an ISO
+    -   Mounting ISO files as loopback, generating an ISO
 
         ```bash
         mkdir /mnt/iso
@@ -938,23 +958,24 @@ Using loopback files
         #    genisoimage -V "books" -o books.iso pdfs/ # and it works
         ```
 
-    * Hybrid ISO that boots off a flash drive or hard disk
-        + What is Hybrid ISO?
-          ~ Usually, bootable ISO files cannot be transferred or written to a
-            USB storage device and booted the OS from the USB key.  But,
-            special type of ISO files called hybrid ISOs can be flashed and
-            they are capable of booting from such devices.
+    -   Hybrid ISO that boots off a flash drive or hard disk
 
-        ```bash
-        # generate a hybrid iso
-        isohybrid image.iso
+        +   What is Hybrid ISO?
+              ~ Usually, bootable ISO files cannot be transferred or written to a
+                USB storage device and booted the OS from the USB key.  But,
+                special type of ISO files called hybrid ISOs can be flashed and
+                they are capable of booting from such devices.
 
-        # write the iso file to usb device # this "cat image.iso >> /dev/usb0"
-        # works too, but I do not recommand
-        dd if=image.iso of=/dev/usb0
-        ```
+            ```bash
+            # generate a hybrid iso
+            isohybrid image.iso
 
-    * More about ISO
+            # write the iso file to usb device # this "cat image.iso >> /dev/usb0"
+            # works too, but I do not recommand
+            dd if=image.iso of=/dev/usb0
+            ```
+
+    -   More about ISO
 
         ```bash
         # Burning an ISO from the command line
@@ -1054,28 +1075,45 @@ Chap 4: Texting and Driving
 
 Using regular expressions
 
-:   * notation & meaning
+:   -   notation & meaning
 
-        notation | meaning
-        ------- | -------
-        `^`     | the start of the line marker
-        `$`     | the end of the line marker
-        `.`     | matches any one character
-        `?`     | This means that the preceding item must match one or zero times
-        `+`     | This means that the preceding item must match one or more times
-        `*`     | This means that the preceding item must match zero or more times
-        `[ ]`   | matches any one of the characters enclosed  in `[chars]`
-        `[^]`   | except those that are enclosed in `[^chars]`
-        `[a-z]` | This matches any character within the range specified in `[]`
-        `( )`   | This treats the terms enclosed as one entity, e.g. `(how)?`
-        `{n}`   | This means that the preceding item must match n times.
-        `{n, }` | at least n times
-        `{n,m}` | n to m times
-        `|`     | This specifies the alternation—one of the items on either of side of `|` should match
-        `\`     | escape char
+        ---------           --------------------------------------------------------------------------
+        notation            meaning
+        ---------           --------------------------------------------------------------------------
+        `^`                 the start of the line marker
 
-    * [visualize regular expr](http://www.regexper.com)
-    * examples
+        `$`                 the end of the line marker
+
+        `.`                 matches any one character
+
+        `?`                 This means that the preceding item must match one or zero times
+
+        `+`                 This means that the preceding item must match one or more times
+
+        `*`                 This means that the preceding item must match zero or more times
+
+        `[ ]`               matches any one of the characters enclosed  in `[chars]`
+
+        `[^]`               except those that are enclosed in `[^chars]`
+
+        `[a-z]`             This matches any character within the range specified in `[]`
+
+        `( )`               This treats the terms enclosed as one entity, e.g. `(how)?`
+
+        `{n}`               This means that the preceding item must match n times.
+
+        `{n, }`             at least n times
+
+        `{n,m}`             n to m times
+
+        `|`                 This specifies the alternation—one of the items on either of side of `|` should match
+
+        `\`                 escape char
+        ---------           --------------------------------------------------------------------------
+
+    -   [visualize regular expr](http://www.regexper.com)
+
+    -   examples
 
         ```bash
         # ip address:
@@ -1085,7 +1123,7 @@ Using regular expressions
         [[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}
         ```
 
-    * `grep`{.bash}: print lines matching a pattern
+    -   `grep`{.bash}: print lines matching a pattern
 
         ```bash
         # grep pattern filename(s)
@@ -1112,7 +1150,7 @@ Using regular expressions
         # --exclude-from FILE
         ```
 
-    * `cut`{.bash}: cut a file column-wise
+    -   `cut`{.bash}: cut a file column-wise
 
         ```bash
         # Syntax: cut -f FIELD_LIST filename
@@ -1132,7 +1170,7 @@ Using regular expressions
         cut range_fields.txt -c1-3,6-9 --output-delimiter ","
         ```
 
-    * `sed`{.bash}: stream editor for filtering and transforming text
+    -   `sed`{.bash}: stream editor for filtering and transforming text
 
         ```bash
         # Syntax: sed 's/pattern/replace_string/' file
@@ -1156,7 +1194,7 @@ Using regular expressions
         sed -e 'expression1' -e 'expression2' # method 3
         ```
 
-    * `awk`{.bash}: pattern scanning and processing language. (Better See my other post: [awk-tutorial])
+    -   `awk`{.bash}: pattern scanning and processing language. (Better See my other post: [awk-tutorial])
 
         ```bash
         # Syntax:
@@ -1190,6 +1228,6 @@ Using regular expressions
 
 ---
 
-Refs
+refs and see also
 
-#. [Linux Shell Scripting Cookbook](http://book.douban.com/subject/24669816/)
+-   [Linux Shell Scripting Cookbook](http://book.douban.com/subject/24669816/)

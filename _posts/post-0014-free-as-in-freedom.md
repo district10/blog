@@ -71,9 +71,7 @@ I didn't like the drugs.** I was scared of the drugs. I especially **didn't
 like the anti-intellectualism(反智主义)**, and I **didn't like the prejudice
 against technology**. **After all, I loved a computer.**
 
-<div class="tzx-fright">
-![Computer Lover][computer_lover]
-</div>
+![Computer Lover](http://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Richard_Matthew_Stallman_working_on_his_Lemote_Machine.JPG/320px-Richard_Matthew_Stallman_working_on_his_Lemote_Machine.JPG){align=right}
 
 And I didn't like the mindless anti-Americanism that I often encountered.
 
@@ -97,7 +95,6 @@ in the Harvard dining halls**, where on average only one meal a day included any
 > opposes the idea of passwords and security.
 
 [impeach_god]: http://oreilly.com/openbook/freedom/ch04.html
-[computer_lover]:  http://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Richard_Matthew_Stallman_working_on_his_Lemote_Machine.JPG/320px-Richard_Matthew_Stallman_working_on_his_Lemote_Machine.JPG
 
 SMALL PUDDLE OF FREEDOM [link][small_puddle_of_freedom]
 -------------------------------------------------------

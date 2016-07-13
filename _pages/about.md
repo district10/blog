@@ -65,3 +65,10 @@ About | 关于
 作为一个处女座，我的文字排版是考究的。
 希望每个人都能花点时间看看 [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)。
 </small>
+
+~~~ {#one .python .copy}
+print "good"
+debog "good"
+~~~
+
+`two is me`{.copy #two}

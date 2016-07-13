@@ -6,13 +6,12 @@ keywords:
     - TANG ZhiXiong
 tags:
     - main page
-    - nice
 after-before: |
     <style> #navigator { display: none; } </style>
 ...
 
 <div class="slogan">Welcome to TZX's Blog</div>
-<p id="tzxslogan">老老实实的学问，来不得半点马虎。</p>
+<p id="tzxslogan" style="text-align:right;padding-right: 10em;" title="按下【h】获取页面帮助。">Don't forget to feel bad.</p>
 
 <div id="buckets">
 <div><a href="koans.html">Koans | 呓语</a></div>
@@ -35,6 +34,7 @@ Search:<br>
 post-0108-english-notes.md
 post-0107-mathematical-modeling.md
 -->
+* 2016-05-31 [district10/TextureProblem: 数学建模预选题论文、源码](https://github.com/district10/TextureProblem)
 * 2016-05-25 [《疯狂的麦克斯》里的 Mediocre 是傻逼的意思吗？](post-0106-mediocre.html){title="_posts/post-0106-mediocre.md"}
 * 2016-05-08 [CMake 简介和 CMake 模板](post-0100-cmake-templates.html){.featured .heart title="_posts/post-0100-cmake-templates.md"}
 <!--* 2016-05-22 [INTP](post-0099-intp.html){title="_posts/post-0099-intp.md"}-->
@@ -46,6 +46,7 @@ post-0107-mathematical-modeling.md
 <!--* 2016-04-04 [Learning D3.js](post-0093-learning-d3.html){title="_posts/post-0093-learning-d3.md"}-->
 <!--* 2016-04-02 [Trevor Burnham’s Book](post-0092-trevor-burnham.html){title="_posts/post-0092-trevor-burnham.md"}-->
 * 2016-03-18 [背景知识的重要性](post-0090-prerequisites.html){title="_posts/post-0090-prerequisites.md"}
+* 2016-03-17 [GitHub Pages 怎么用？](http://tangzhixiong.com/gh-pages-demo/){title="展示了 GitHub Pages 服务的使用，无需命令行，用的是网页上的 Generator。"}
 <!--* 2016-03-07 [Kaggle](post-0089-kaggle.html){title="_posts/post-0089-kaggle.md"}-->
 <!--* 2016-03-03 [Font Awesome](post-0088-font-awesome.html){title="_posts/post-0088-font-awesome.md"}-->
 <!--* 2016-03-02 [Leet Code](post-0087-leetcode.html){title="_posts/post-0087-leetcode.md"}-->

@@ -2,28 +2,11 @@ function help() {
     alert(  '方向键有如下功能：\n\n'
          +  '\n1. 返回主页：<left><left><left>'
          +  '\n2. 显示目录：<right><right><right>'
+         +  '\n3. 查看源码：<right><right><down>'
      );
 }
 
 $(document).ready(function(){
-    $('#tocboxbody').slideUp();
-    $( ".tzx-tabs" ).tabs();
-    $( "a" ).attr( "target", "_blank" );
-    $( "a[href*='#']" ).attr( "target", "" );
-    $("img").each(function(index){
-        var src = $(this).attr('src');
-        $(this).attr({
-            src: "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",
-            'data-src': src,
-            onload: "lzld(this)"
-        });
-
-        $a = $(this).parent('a');
-        if ($a.length) {
-            $a.addClass('tzx-dumb');
-            $(this).addClass('tzx-dumb');
-        }
-    });
 
     $('body').keydown(function(e){
         var code = e.which;
@@ -31,6 +14,46 @@ $(document).ready(function(){
             help();
         }
     });
+
+    $('#tocboxbody').hide();
+    $( ".tzx-tabs" ).tabs();
+
+    $( "a[href^='http://']" ).attr( "target", "_blank" );
+    $( "a[href^='https://']" ).attr( "target", "_blank" );
+    $( "a[href^='#']" ).attr( "target", "" );
+    $( "a[href*='tangzhixiong.com']" ).attr( "target", "" );
+
+    $('h1,h2,h3,h4').each(function(index){
+        $('<a class="tzx-header-anchor">&#xf0c1;</a>')
+            .attr('href', '#'+$(this).attr('id'))
+            .prependTo($(this));
+    });
+
+    $("img").each(function(index){
+        var src = $(this).attr('src');
+        $(this).attr({
+            src: "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",
+            'data-src': src,
+            onload: "lzld(this)"
+        });
+        $a = $(this).parent('a');
+        if ($a.length) {
+            $a.addClass('tzx-dumb');
+            $(this).addClass('tzx-dumb');
+        }
+    });
+    $("img[align='right'], img[align='left']").each(function(){
+        $parent = $(this).parent();
+        if ( $parent.is('div') && $parent.hasClass('figure') ) {
+            $next = $(this).next();
+            if ( $next.is('p') && $next.hasClass('caption') ) {
+                $parent.attr('align', $(this).attr('align'));
+                $(this).attr('align', '');
+                // $(this) .attr('title', $next.text()) .attr('alt', $next.text()); $next.hide();
+            }
+        }
+    });
+    $("img.w12, img.w13, img.w14, img.mw12, img.mw13, img.mw14").parent().attr('align', 'center');
 
     $('#showDisqus').on('click', function(){
         console.log('loading disqus...');
@@ -42,6 +65,7 @@ $(document).ready(function(){
         });
         $(this).fadeOut();
     });
+
     $('#tocboxheader').on('click', function(){
         $('#tocboxheader').hide();
         $('#tocboxbody').slideDown();
@@ -51,11 +75,46 @@ $(document).ready(function(){
         $('#tocboxheader').show();
     });
 
+    $('div.tzx-drawer[shy]').each(function(){
+        $(this).children().children('dd').toggleClass('tzx-drawer-hide');
+    });
+    $('div.tzx-drawer').on( 'click', function(event){
+        $(this).children().children('dd').toggleClass('tzx-drawer-hide');
+        if ($(this).children().children('dd:eq(0)').hasClass('tzx-drawer-hide')) {
+            if ( $(this).offset().top < pageYOffset ) {
+                $('body,html').animate({scrollTop:$(this).offset().top},300)
+            }
+        }
+        event.stopPropagation();
+    });
+
+    $('.tzx-timestamp').each(function(index){
+        var _tss = this.textContent;
+        var dt = moment( new Number( _tss ) * 1000 );
+        var tooltip = _tss + ': ' + dt.format("YYYY-MM-DD HH:mm:ss");
+        this.textContent = dt.format("YYYY/MM/DD HH:mm");
+        this.title = tooltip;
+    });
+
+    $( "#tzx-changes" ).change(function() {
+        $("option:selected").click(function(){
+            // TODO: fix this, not work on chrome & safari
+            window.location = this.value;
+        });
+    });
+    $('.tzx-changes option').each(function(){
+        var _tss = this.textContent;
+        var dt = moment( new Number( _tss ) * 1000 );
+        this.textContent = dt.format("YYYY/MM/DD HH:mm");
+    });
+    $('#tzx-changes').appendTo('#footer');
+
+    // 计划去除
     var pathStringList = document.location.toString().split('/');
     var isLocal = 'file' === pathStringList[0].split(':')[0];
+    var basePath = 'https://github.com/district10/blog';
     var mdPath = 'https://github.com/district10/blog/commits/master';
     var rawPath = 'https://coding.net/u/dvorak4tzx/p/dvorak4tzx/git/raw/master';
-    var basePath = 'https://github.com/district10/blog';
 
     function dvorak4tzx( pathParts ) {
         filename = pathParts[ pathParts.length - 1 ];
@@ -80,13 +139,6 @@ $(document).ready(function(){
     };
 
     dvorak4tzx( pathStringList );
-
-    jQuery('h1,h2,h3,h4').each(function(index){
-        jQuery('<a class="tzx-header-anchor">#</a>')
-          .addClass('hdrRef')
-          .attr('href', '#'+$(this).attr('id'))
-          .appendTo($(this));
-    });
 
     function getQueryStrings() {
         var assoc  = {};
@@ -130,49 +182,10 @@ $(document).ready(function(){
         }
     };
 
-    $('div.tzx-drawer[shy]').each(function(){
-        $(this).children().children('dd').toggleClass('tzx-drawer-hide');
-    });
-
-    $('div.tzx-drawer').on( 'click', function(event){
-        $(this).children().children('dd').toggleClass('tzx-drawer-hide');
-        if ($(this).children().children('dd:eq(0)').hasClass('tzx-drawer-hide')) {
-            if ( $(this).offset().top < pageYOffset ) {
-                $('body,html').animate({scrollTop:$(this).offset().top},300)
-            }
-        }
-        event.stopPropagation();
-    });
-
-    $( "#tzx-changes" )
-        .change(function() {
-            $("option:selected").click(function(){
-                // FIX THIS, not work on chrome & safari
-                window.location = this.value;
-            });
-        });
-
-    $('.tzx-timestamp').each(function(index){
-        var _tss = this.textContent;
-        var dt = moment( new Number( _tss ) * 1000 );
-        var tooltip = _tss + ': ' + dt.format("YYYY-MM-DD HH:mm:ss");
-        this.textContent = dt.format("YYYY/MM/DD HH:mm");
-        this.title = tooltip;
-    });
-
-    $('.tzx-changes option').each(function(){
-        var _tss = this.textContent;
-        var dt = moment( new Number( _tss ) * 1000 );
-        this.textContent = dt.format("YYYY/MM/DD HH:mm");
-    });
-
-    $(function(){
-        $('#tzx-changes').appendTo('#footer');
-    });
-
 });
 
-$(function($){
+// $(function($){
+$(document).ready(function(){
     var egg = new Egg();
     egg
         .addCode("n,o,t,e,s", function() {
@@ -208,23 +221,43 @@ $(function($){
         .addCode("right,right,right", function() {
             $('#tocboxheader').click();
         })
+        .addCode("right,right,down", function() {
+            window.location = "https://raw.githubusercontent.com/district10/blog/master/" + tzxFilename;
+        })
         .addHook(function(){
             // console.log("Hook called for: " + this.activeEgg.keys);
             // console.log(this.activeEgg.metadata);
         }).listen();
 });
 
-$(function(){
+// $(function(){
+$(document).ready(function(){
     var clipboard = new Clipboard('.btn');
     clipboard.on('success', function(e) {
         console.info('Action:', e.action);
         console.info('Text:', e.text);
         console.info('Trigger:', e.trigger);
-
         e.clearSelection();
     });
-
     clipboard.on('error', function(e) {
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+    });
+
+    $('.copy').each(function(){
+        $(this).attr({
+            'data-clipboard-text': $(this).text(),
+            title: "点击复制"
+        });
+    });
+    var copycode = new Clipboard('.copy');
+    copycode.on('success', function(e) {
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        e.clearSelection();
+    });
+    copycode.on('error', function(e) {
         console.error('Action:', e.action);
         console.error('Trigger:', e.trigger);
     });

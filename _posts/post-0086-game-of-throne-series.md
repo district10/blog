@@ -39,25 +39,27 @@ after-before: |
 Game of Throne
 ==============
 
+Episodes
 
-* EP.1 Arya: Not a Boy
-* EP.2 Daenerys: He was no Dragon
-* EP.3 Joffrey: Life is Just Boring
-* EP.4 Ned: Honorable Man
-* EP.5 Theon: I have Ambition
-* EP.6 Tyrion: I have a Family
-* EP.7 Ygritte: You Know Nothing, Jon Snow
+-   EP.1, Arya: Not a Boy
+-   EP.2, Daenerys: He was no Dragon
+-   EP.3, Joffrey: Life is Just Boring
+-   EP.4, Ned: Honorable Man
+-   EP.5, Theon: I have Ambition
+-   EP.6, Tyrion: I have a Family
+-   EP.7, Ygritte: You Know Nothing, Jon Snow
 
 Plan: EP.4 (&#x2611;) -> EP.5 (&#x2610;)-> EP.6 (&#x2610;)-> EP.1 (&#x2610;)-> EP.2 (&#x2610;)-> EP.3 (&#x2610;)-> EP.7 (&#x2610;)
 
 这是英语课的 Presentation，每个人应该讲一次。我想弄一个系列。准备了几个剧本，但最后完成的只有一个。
-见 [EP.4](#ep-4)
+见 [EP.4, Ned: Hornorable Man](#ep-4)。
 
 ---
 
 下面是我想介绍的几个角色。介绍文字来自 wikia。
+当然，你也可以直接跳到我 presentation 的讲稿：[EP.4, Ned: Honorable Man](#ep-4)。
 
-**Arya Stark** <img src="http://whudoc.qiniudn.com/Arya,_Ned_and_Syrio_1x03.jpg?imageView2/2/w/110" align="right">
+**Arya Stark** ![](http://whudoc.qiniudn.com/Arya,_Ned_and_Syrio_1x03.jpg?imageView2/2/w/110){align=right}
 
 When her father is betrayed and executed by Joffrey, Arya flees the capital
 with the help of the Night's Watch recruiter, Yoren, who gets her out of the
@@ -77,7 +79,7 @@ the guild as punishment.
 
 ---
 
-**Daenerys Targaryen** <img src="http://whudoc.qiniudn.com/Daenerys-MothersMercy.jpg?imageView2/2/w/110" align="right">
+**Daenerys Targaryen** ![](http://whudoc.qiniudn.com/Daenerys-MothersMercy.jpg?imageView2/2/w/110){align=right}
 
 She hatched three dragons by having her petrified dragon eggs placed on Drogo's
 funeral pyre, before she walked into the flames to claim them. Her dragons are
@@ -93,7 +95,7 @@ conquests of the Free Slaveholding Cities of Astapor, Yunkai and Meereen.
 
 ---
 
-**Joffrey Baratheon** <img src="http://whudoc.qiniudn.com/Joffrey_Baratheon_2.jpg?imageView2/2/w/110" align="right">
+**Joffrey Baratheon** ![](http://whudoc.qiniudn.com/Joffrey_Baratheon_2.jpg?imageView2/2/w/110){align=right}
 
 King Joffrey Baratheon is a major character in the first, second, third, and
 fourth seasons. He is played by starring cast member Jack Gleeson and debuts in
@@ -105,7 +107,7 @@ Tommen Baratheon, both of whom share the same parentage.
 
 ---
 
-**Eddard Stark** <img src="http://whudoc.qiniudn.com/Eddard_1x01.jpg?imageView2/2/w/110" align="right">
+**Eddard Stark** ![](http://whudoc.qiniudn.com/Eddard_1x01.jpg?imageView2/2/w/110){align=right}
 
 Eddard Stark, popularly known as Ned, is a major character in the first season.
 He is played by starring cast member Sean Bean, and debuts in the series
@@ -119,7 +121,7 @@ and an honorable lord.
 
 ---
 
-**Theon Greyjoy** <img src="http://whudoc.qiniudn.com/got-theon.jpeg?imageView2/2/w/110" align="right">
+**Theon Greyjoy** ![](http://whudoc.qiniudn.com/got-theon.jpeg?imageView2/2/w/110){align=right}
 
 Theon Greyjoy is a major character in the first, second, third, fourth, fifth
 and sixth seasons. He is played by starring cast member Alfie Allen and debuts
@@ -136,7 +138,7 @@ Theon botches the beheading, taking three swings and a kick to accomplish it.
 
 ---
 
-**Tyrion Lannister** <img src="http://whudoc.qiniudn.com/Tyrion_Lannister_in_the_Vale.jpg?imageView2/2/w/110" align="right">
+**Tyrion Lannister** ![](http://whudoc.qiniudn.com/Tyrion_Lannister_in_the_Vale.jpg?imageView2/2/w/110){align=right}
 
 Tyrion Lannister is a major character in the first, second, third, fourth,
 fifth, and sixth seasons. He is played by starring cast member Peter Dinklage
@@ -146,7 +148,7 @@ uses his wit and intellect to overcome the prejudice he faces.
 
 ---
 
-**Ygritte** <img src="http://whudoc.qiniudn.com/Ygritte-Profile-HD.png?imageView2/2/w/110" align="right">
+**Ygritte** ![](http://whudoc.qiniudn.com/Ygritte-Profile-HD.png?imageView2/2/w/110){align=right}
 
 Ygritte is a major character in the third and fourth seasons, played by Rose
 Leslie. She initially appeared as a recurring character in the second season

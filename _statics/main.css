@@ -67,6 +67,7 @@ kbd {
 }
 
 pre {
+    font-size: 80%;
     border: 1px dotted gray;
     background-color: #ececec;
     color: #1111111;
@@ -78,12 +79,23 @@ pre {
     margin-bottom: 10px;
     display: block;
 }
-
 pre.diffed {
     background-color: white;
     border: 1px dotted #f8bd0b;
     font-size: 90%;
     font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif;
+}
+pre.tzx-bigquote,
+pre.tzx-poem {
+    margin: 0 auto;
+    padding-left: 6em;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+pre.tzx-plain code,
+pre.tzx-poem code,
+pre.tzx-bigquote code {
+    color: black;
 }
 
 code.url {
@@ -230,11 +242,11 @@ a:hover {
 a.tzx-dumb {
     border: none;
 }
-
 img.tzx-dumb:hover {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
+    transform: scale(1);
     transform: scale(1);
     border: none;
 }
@@ -248,8 +260,7 @@ a.external:after {
     padding-left: 0.5em;
 }
 
-a[href^="http://"]:not([href*="mydomain.com"]):before{ }
-
+// a[href^="http://"]:not([href*="mydomain.com"]):before{ }
 // a { padding-right: 0.1em; }
 a:after { color: lightgray; font-size: 90%; }
 a[href*="wikipedia.org"]:after          { content: "\00a0 \f266"; }
@@ -379,11 +390,6 @@ img {
     text-align: center;
 }
 
-.tzx-fright .figure img,
-.tzx-fleft  .figure img {
-    max-width: 50%;
-}
-
 .figure img:hover,
 p img:hover {
     -webkit-transform: scale(1.05);
@@ -464,15 +470,12 @@ p a img:hover {
     top: 0px;
     background-color: rgba(255, 255, 255, 0.0);
 }
-
 #tzxhomepage > img:nth-child(1) {
     opacity: 0.05;
 }
-
 #tzxhomepage > img:nth-child(1):hover {
     opacity: 1.0;
 }
-
 #tzxhomepage:hover {
     background-color: rgba(255, 255, 255, 1.0);
     transition: all 1s ease-in-out;
@@ -545,40 +548,6 @@ iframe.lyrics {
     padding: 2em;
 }
 
-.hdrRef {
-    margin-left: 5px;
-    text-decoration: none;
-    transition: all 0.5s ease-in-out;
-    color: rgba(255,255,255,0.3);
-}
-
-.hdrRef a {
-    text-decoration: none;
-    border: none;
-}
-
-.hdrRef:hover {
-    color: rgba(255, 0, 0,1.0);
-}
-
-pre.tzx-plain code,
-pre.tzx-poem code,
-pre.tzx-bigquote code {
-    color: black;
-}
-
-.tzx-fright {
-    float: right;
-}
-
-.tzx-fleft {
-    float: left;
-}
-
-.tzx-fright, .tzx-fleft {
-    clear: both;
-    padding-left: 1em;
-}
 
 .tzx-tag {
     /*
@@ -603,45 +572,51 @@ ul > li > ul > li > ul > li > ul >li > ul > li > ul > li  { list-style-type: cir
 
 // "❖"(winlogo) // "❀"(flower), "☯"(yinyang), "❏"(empty square);
 
+body {
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
 // 850px? is best for this site
 @media only screen and (max-device-width:200px){
    /* ...what the dafuq... */
     body {
         zoom: 0.1;
+        -webkit-transform: scale(0.1);
         -moz-transform: scale(0.1);
-        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.1);
+        transform: scale(0.1);
     }
 }
 @media only screen and (max-device-width:480px){
    /* styles for mobile browsers smaller than 480px; (iPhone) */
     body {
         zoom: 0.25;
+        -webkit-transform: scale(0.25);
         -moz-transform: scale(0.25);
-        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.25);
+        transform: scale(0.25);
     }
 }
 @media only screen and (device-width:768px){
    /* default iPad screens */
     body {
         zoom: 0.9;
+        -webkit-transform: scale(0.9);
         -moz-transform: scale(0.9);
-        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
     }
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
   /* For landscape layouts only */
     body {
         zoom: 1.2;
-
         -webkit-transform: scale(1.2);
         -moz-transform: scale(1.2);
         -o-transform: scale(1.2);
         transform: scale(1.2);
-
-        -webkit-transform-origin: 0 0;
-        -moz-transform-origin: 0 0;
-        -o-transform-origin: 0 0;
-        transform-origin: 0 0;
     }
 }
 @media only screen and (min-width:1440px){
@@ -652,27 +627,22 @@ ul > li > ul > li > ul > li > ul >li > ul > li > ul > li  { list-style-type: cir
         -moz-transform: scale(1.5);
         -o-transform: scale(1.5);
         transform: scale(1.5);
-
-        -webkit-transform-origin: 0 0;
-        -moz-transform-origin: 0 0;
-        -o-transform-origin: 0 0;
-        transform-origin: 0 0;
     }
-}
-
-body {
-    /*
-    padding-bottom: 60%;
-    background-image: url(tzx.svg);
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-color: rgba( 255, 255, 255, 0.05 );
-    */
 }
 
 #showDisqus {
     font-size: 60%;
     cursor: pointer;
+}
+#showDisqus {
+    border-radius: 1em;
+    padding: 1em;
+}
+#showDisqus:hover {
+    -webkit-box-shadow: 0 0 25px 10px rgba(155, 155, 155, 0.5);
+    -moz-box-shadow:    0 0 25px 10px rgba(155, 155, 155, 0.5);
+    -o-box-shadow:      0 0 25px 10px rgba(155, 155, 155, 0.5);
+    box-shadow:         0 0 25px 10px rgba(155, 155, 155, 0.5);
 }
 
 .footnotes [id^=fn] {
@@ -683,7 +653,6 @@ body {
     padding-top: 3px;
     padding-bottom: 3px;
 }
-
 [id^=fnref].footnoteRef:target { border: 1px solid #9ddcff; }
 .footnotes [id^=fn]:target {
     background-color: rgba(0,127,255,0.02);
@@ -706,24 +675,15 @@ body {
     display: none;
 }
 
-#showDisqus {
-    border-radius: 1em;
-    padding: 1em;
-}
-#showDisqus:hover {
-    -webkit-box-shadow: 0 0 25px 10px rgba(155, 155, 155, 0.5);
-    -moz-box-shadow:    0 0 25px 10px rgba(155, 155, 155, 0.5);
-    -o-box-shadow:      0 0 25px 10px rgba(155, 155, 155, 0.5);
-    box-shadow:         0 0 25px 10px rgba(155, 155, 155, 0.5);
-}
-
 .tzx-nav {
     display: inline-block;
     width: 100%;
     border: 1px solid red;
     text-align: center;
+    width: 60%
+    margin-left: 5em;
+    margin-right: 5em;
 }
-
 .tzx-nav li.tzx-nav-prev, .tzx-nav li.tzx-nav-next {
     text-align: center;
     display: inline-block;
@@ -731,23 +691,14 @@ body {
     width: 25%;
     border: 1px dashed green;
 }
-
-.tzx-nav {
-  width: 60%
-  margin-left: 5em;
-  margin-right: 5em;
-}
-
 .tzx-nav li.tzx-nav-prev {
   width: 40%;
   float: left;
   margin-left: 5em;
 }
-
 .tzx-nav li.tzx-nav-prev:before {
   content: "<";
 }
-
 .tzx-nav li.tzx-nav-next {
   float: right;
   margin-right: 5em;
@@ -755,16 +706,6 @@ body {
 
 .tzx-tabs ul li a:hover {
     border-bottom: none;
-}
-pre {
-    font-size: 80%;
-}
-pre.tzx-bigquote,
-pre.tzx-poem {
-    margin: 0 auto;
-    padding-left: 6em;
-    padding-top: 4em;
-    padding-bottom: 4em;
 }
 
 code.tzx-timestamp { color: gray; }
@@ -799,11 +740,6 @@ h6 code.tzx-timestamp { color: white; }
 .tzx-changes-hide { display: none; }
 .tzx-changes-show { display: auto; }
 .tzx-changes      { display: none; }
-
-a.tzx-header-anchor {
-    text-decoration: none;
-    border: none;
-}
 
 .tzx-frame {
     padding: 1em;
@@ -886,8 +822,23 @@ code.todo {
     border-radius: 3px;
 }
 
-.pokerface, .pokerface *, *:after {
+.pokerface, .pokerface *, *:after, a.tzx-header-anchor {
     font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif, FontAwesome;
+}
+
+a.tzx-header-anchor {
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    float: left;
+    width: 0;
+    margin-left: -75px;
+    z-index: 1000;
+    color: rgba(200, 200, 200, .15);
+}
+a.tzx-header-anchor:hover {
+    color: rgba(200, 200, 200, .85);
 }
 
 #copyright {
@@ -898,3 +849,47 @@ code.todo {
 }
 #copyright a        { text-decoration: none; }
 #copyright a:after  { content: ""; }
+
+img[align='left'], img[align='right'],
+div.figure[align='left'], div.figure[align='right'] {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    clear: both;
+}
+img[align='left'],
+div.figure[align='left'] {
+    padding-right: 1.5em;
+    float: left;
+}
+img[align='right'],
+div.figure[align='right'] {
+    padding-left: 1.5em;
+    float: right;
+}
+
+img.w12 { width: 45%; }
+img.w13 { width: 30%; }
+img.w14 { width: 20%; }
+img.mw12 { max-width: 45%; }
+img.mw13 { max-width: 30%; }
+img.mw14 { max-width: 20%; }
+
+// ditched! 但在我把所有源码里的文件改过来之前，先不要删除这部分。
+.tzx-fright .figure img,
+.tzx-fleft  .figure img {
+    max-width: 50%;
+}
+.tzx-fright {
+    float: right;
+}
+.tzx-fleft {
+    float: left;
+}
+.tzx-fright, .tzx-fleft {
+    clear: both;
+    padding-left: 1em;
+}
+
+.copy {
+    cursor: cell;
+}

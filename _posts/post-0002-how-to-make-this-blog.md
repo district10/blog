@@ -10,11 +10,16 @@ tags:
 这是怎样一个博客生成器
 ======================
 
+本文介绍了你正在访问的网页是如何生成
+
 ## 哪点与众不同？ {#special}
 
-本博客生成器用的是 Makefile、Bash 和 Pandoc，还有一点点 CSS 和 JavaScript，
+本博客生成器用的是 Makefile、Perl 和 Pandoc，还有一点点 CSS 和 JavaScript，
 没有用其他工具和语言，不用担心自己的博客生成器更新、
 或者自己换了一台电脑或者操作系统就不能码字^[就是因为 Hexo3 出来后我原来的博客死了，我才想到得自己弄这个初级而原始的工具。]。
+安装起来很方便，因为 1）如果你用 Windows 操作系统还使用 Git，perl 就已经包含在 git for windows 里了，额外你只要安装
+Pandoc；2）如果你使用 Linux 操作系统，只要安装 Pandoc（官方源里的太旧）。如何生成这个“网站”，具体参考
+[district10/blog#Build one / 从 Markdown 源码生成](https://github.com/district10/blog#build-one--从-Markdown-源码生成)。
 
 当然其它的博客工具通常都很酷炫，如果你要的是那种，可以用 [Hexo]、[Jekyll]。
 本博客生成器比他们简单得多，而且不是 responsive design，

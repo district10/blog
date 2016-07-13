@@ -47,7 +47,7 @@ Tips
 
 -   **开机启动**
 
-    比如把 `http://gnat.qiniudn.com/neo.exe` 放到
+    举例：把 `http://gnat.qiniudn.com/neo.exe` 放到
     `C:\Users\tzx\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`。
 
 开机必备
@@ -63,7 +63,7 @@ Tips
 
     压缩、解压软件。
 
--   绿色版迅雷。
+-   绿色版迅雷
 
 -   Firefox 浏览器
 
