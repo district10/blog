@@ -165,6 +165,9 @@ cmake .. && make && ./BOOST
 -   [cmake-templates/boost at master · district10/cmake-templates](https://github.com/district10/cmake-templates/tree/master/boost)
 -   [district10/bcp-example-1: An exmaple to show how to use bcp.](https://github.com/district10/bcp-example-1)
 
+哦对，一个需要注意的地方是，提取出来的头文件里，`boost/config/auto_link.hpp` 里的内容最好删掉，
+不然在 Windows 平台上，boost 会尝试自动链接。所以我通常把这个文件内容清空。
+
 ## 更多的实践
 
 上面那只是一个很小的例子。下面是裁剪 boost 库的实际应用，这里我举两个有意思的例子。
