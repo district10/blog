@@ -128,6 +128,10 @@ Orgit | 唐凤
 
     +   [district10/QtEVM: C++ implementation of EVM(Eulerian Video Magnification), based on OpenCV and Qt.](https://github.com/district10/QtEVM)
 
+    +   [A curl tutorial using GitHub's API](https://gist.github.com/caspyin/2288960)
+
+    +   [4ker/CamFiQt: Initialize](https://github.com/4ker/CamFiQt)
+
 <div class="tzx-hide">
 
 > 因为要字母（汉字）对齐，所以把 org-mode 写成 “orgit”。

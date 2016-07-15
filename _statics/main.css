@@ -810,12 +810,9 @@ div.figure[align='right'] {
     float: right;
 }
 
-img.w12 { width: 45%; }
-img.w13 { width: 30%; }
-img.w14 { width: 20%; }
-img.mw12 { max-width: 45%; }
-img.mw13 { max-width: 30%; }
-img.mw14 { max-width: 20%; }
+img.w12 { max-width: 45%; }
+img.w13 { max-width: 30%; }
+img.w14 { max-width: 20%; }
 
 // ditched! 但在我把所有源码里的文件改过来之前，先不要删除这部分。
 .tzx-fright .figure img,
