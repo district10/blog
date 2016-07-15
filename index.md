@@ -15,9 +15,9 @@ after-before: |
 
 <div id="buckets">
 <div><a href="koans.html">Koans | 呓语</a></div>
-<div><a href="orgit.html">Orgit | 唐凤</a></div>
 <div><a href="http://tangzx.qiniudn.com/notes/">Notes | 笔记</a></div>
-<div><a href="about.html">About | 关于</a></div><hr /></div>
+<div><a href="about.html">About | 关于</a></div>
+<hr /></div>
 
 <br/><div id="searchContainer">
 Search:<br>
@@ -119,6 +119,7 @@ post-0107-mathematical-modeling.md
 * 2014-05-09 [Learning Vim | 学习 Vim 编辑器](post-0045-learning-vim.html){title="_posts/post-0045-learning-vim.md"}
 * 2014-05-07 [The AWK Programming Language | AWK 编程语言](post-0046-awk.html){.heart title="_posts/post-0046-awk.md"}
 * 2014-05-04 [空间分析实习报告](post-0018-spatial-analysis.html){.featured .heart title="_posts/post-0018-spatial-analysis.md"}
+* 2014-04-20 [Gat 单字中文输入法](http://tangzhixiong.com/gat/){.heart title="可以在 Emacs 里使用，也可以在网页中试一试。和 Dvorak 键盘布局一脉相承。"}
 * 2014-04-19 [Learning HTML5](post-0023-learning-html5.html){title="_posts/post-0023-learning-html5.md"}
 * 2014-04-15 [想起了 CASIO-82ES 调牛顿解方程](post-0039-newton-method.html){.heart title="_posts/post-0039-newton-method.md"}
 * 2014-04-07 [AWK 文字处理](post-0012-awk.html){title="_posts/post-0012-awk.md"}
@@ -137,6 +138,12 @@ post-0107-mathematical-modeling.md
 * 2013-00-00 [What a fucking day （记一篇 Essay）](post-0030-fucking-day.html){title="_posts/post-0030-fucking-day.md"}
 * 2013-00-00 [Dvorak 键盘布局（演讲稿）](post-0032-dvorak.html){title="_posts/post-0032-dvorak.md"}
 * 2006-10-17 [Pandoc User's Guide](post-0001-pandoc-readme.html){title="_posts/post-0001-pandoc-readme.md"}
+</div>
+
+---
+
+<div style="text-align:center;">
+[issues](https://github.com/district10/blog/issues)
 </div>
 
 <link rel="stylesheet" href="auto-complete.css">

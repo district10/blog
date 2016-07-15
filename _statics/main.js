@@ -184,53 +184,25 @@ $(document).ready(function(){
 
 });
 
-// $(function($){
+function hide() { $('.tzx-show').removeClass('tzx-show').addClass('tzx-hide'); }
+function show() { $('.tzx-hide').removeClass('tzx-hide').addClass('tzx-show'); }
+function drawershow() { $('div.tzx-drawer').children().children('dd.tzx-drawer-hide').removeClass('tzx-drawer-hide').addClass('tzx-drawer-show'); }
+function drawerhide() { $('div.tzx-drawer').children().children('dd.tzx-drawer-show').removeClass('tzx-drawer-show').addClass('tzx-drawer-hide'); }
+
 $(document).ready(function(){
     var egg = new Egg();
     egg
-        .addCode("n,o,t,e,s", function() {
-            window.location = "notes.html";
-        })
-        .addCode("t,z,x", function() {
-            $('.tzx-hide').removeClass('tzx-hide').addClass('tzx-show');
-            $('.tzx-drawer-hide').removeClass('tzx-drawer-hide');
-        })
-
-        .addCode("s,h,o,w", function() {
-            $('.tzx-hide').removeClass('tzx-hide').addClass('tzx-show');
-            $('div.tzx-drawer').children().children('dd.tzx-drawer-hide').removeClass('tzx-drawer-hide').addClass('tzx-drawer-show');
-        })
-
-        .addCode("h,i,d,e", function() {
-            $('.tzx-show').removeClass('tzx-show').addClass('tzx-hide');
-            $('div.tzx-drawer').children().children('dd.tzx-drawer-show').removeClass('tzx-drawer-show').addClass('tzx-drawer-hide');
-        })
-        .addCode("x", function() {
-            $('.tzx-show').removeClass('tzx-show').addClass('tzx-hide');
-        })
-
-        .addCode("down,right,down,down,right,down", function() {
-            window.location = "http://butman.club/";
-        })
-        .addCode("b,u,t,m,a,n", function() {
-            window.location = "http://butman.club/";
-        })
-        .addCode("left,left,left", function() {
-            window.location = "index.html";
-        })
-        .addCode("right,right,right", function() {
-            $('#tocboxheader').click();
-        })
-        .addCode("right,right,down", function() {
-            window.location = "https://raw.githubusercontent.com/district10/blog/master/" + tzxFilename;
-        })
-        .addHook(function(){
-            // console.log("Hook called for: " + this.activeEgg.keys);
-            // console.log(this.activeEgg.metadata);
-        }).listen();
+        .addCode("x", function() { $('.tzx-drawer-hide').removeClass('tzx-drawer-hide'); })
+        .addCode("1", function() { show(); drawershow(); })
+        .addCode("0", function() { hide(); drawerhide(); })
+        .addCode("left,left,down",  function() { show(); drawershow(); })
+        .addCode("left,left,up",    function() { hide(); drawerhide(); })
+        .addCode("left,left,left", function() { window.location = "index.html"; })
+        .addCode("right,right,right", function() { $('#tocboxheader').click(); })
+        .addCode("right,right,down", function() { window.location = "https://raw.githubusercontent.com/district10/blog/master/" + tzxFilename; })
+        .listen();
 });
 
-// $(function(){
 $(document).ready(function(){
     var clipboard = new Clipboard('.btn');
     clipboard.on('success', function(e) {

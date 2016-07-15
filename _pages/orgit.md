@@ -8,8 +8,9 @@ tags:
 Orgit | 唐凤
 ============
 
-[这里](http://tangzx.qiniudn.com/orgit/) 用 Org-mode 写而不是 Markdown。
+[这里](http://tangzx.qiniudn.com/orgit/) 用 Org-mode 写而不是 Markdown，
 ^[但这边很少更新，因为我现在比较少用 Emacs 和 org-mode 写东西。]
+没有什么实质的笔记，只是自己的各种账户的密码，以及一点 Emacs 笔记。
 
 ---
 

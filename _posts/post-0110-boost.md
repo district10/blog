@@ -168,6 +168,15 @@ cmake .. && make && ./BOOST
 哦对，一个需要注意的地方是，提取出来的头文件里，`boost/config/auto_link.hpp` 里的内容最好删掉，
 不然在 Windows 平台上，boost 会尝试自动链接。所以我通常把这个文件内容清空。
 
+话说我已经看到很多次有人因为没考虑到这一点，提取出来的源码还是出现链接错误。见：
+
+-   [c++ - How to extract boost::filesystem using bcp - Stack Overflow](http://stackoverflow.com/a/37314747)
+-   [visual studio 2015 update 2 链接 boost 库失败, 怎么回事? - dvorak4tzx 的回答 - SegmentFault](https://segmentfault.com/q/1010000005772867/a-1020000005937464)
+
+当初我也是出现了这个问题。不过我小心的发现了自己的代码在 Linux 上没有问题，只是在
+Windows 上出现了 link 错误，所以机智地在自己提取出来的代码里搜索 `.lib`，
+发现了这里的“猫腻”。:smile:
+
 ## 更多的实践
 
 上面那只是一个很小的例子。下面是裁剪 boost 库的实际应用，这里我举两个有意思的例子。
