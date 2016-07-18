@@ -32,7 +32,7 @@ About | 关于
 博客源码在：
 
   - [district10/blog](https://github.com/district10/blog)：用 Markdown 写。:smile:
-  - [district10/orgit](https://github.com/district10/orgit)：用 Emacs Org-mode
+  - [district10/orgit](https://github.com/district10/orgit)：用 Emacs org-mode
     写。^[这边功能强大，还可以加密一些私人的东西（用的是 gpg 加密）。但是在 Windows 和 Linux 下体验很不一致，所以这边写得比较少。]
 
 说明：

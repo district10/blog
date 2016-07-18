@@ -269,3 +269,4 @@ Links | 链签
 #. [黄正华的教学信息页面](http://aff.whu.edu.cn/huangzh/)
 #. [黄玄的博客 | Hux Blog](http://huangxuan.me/)
 #. [全景漫游（已经备份） - 作业部落 Cmd Markdown 编辑阅读器](https://zybuluo.com/gnat-xj/note/67982)
+#. [YanyiWu](http://yanyiwu.com/)

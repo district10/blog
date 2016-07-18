@@ -13,6 +13,61 @@ before-after:
 Koans | 呓语[^why-koan]
 =======================
 
+## `1468722074`{.tzx-timestamp} 发现 git 的 bug 一枚
+
+```bash
+$ git checkout --orphan gh-pages
+Switched to a new branch 'gh-pages'
+
+$ ls
+CMakeLists.txt  Configs.h.in  include/  main.cpp  Makefile  README.md
+
+$ rm -rf        Configs.h.in  include/  main.cpp  Makefile  README.md
+
+$ git status
+On branch gh-pages
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   CMakeLists.txt
+        new file:   Configs.h.in
+        new file:   Makefile
+        new file:   README.md
+        new file:   include/rapidjson.zip
+        new file:   main.cpp
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    Configs.h.in
+        deleted:    Makefile
+        deleted:    README.md
+        deleted:    include/rapidjson.zip
+        deleted:    main.cpp
+
+
+$ echo "TODO: use jQuery to grab contents." > index.html
+$ git add -A
+$ git status
+On branch gh-pages
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   CMakeLists.txt
+        new file:   index.html
+```
+
+发现了么？
+
 ## `1468513172`{.tzx-timestamp} 被玷污的 Vim 剪切板
 
 有些 Vim 配置会自做主张地把 GUI 的寄存器和 vim 内部的寄存器混淆，

@@ -30,9 +30,8 @@ Search:<br>
 * 2016-07-11 [在 VS2015 中使用 Qt4](post-0111-qt4-vs2015.html){.featured .heart title="_posts/post-0111-qt4-vs2015.md"}
 * 2016-06-23 [Boost 库裁剪及其应用](post-0110-boost.html){.featured .heart title="_posts/post-0110-boost.md"}
 * 2016-06-15 [远程使用 Jupyter Notebook （iPython Notebook）](post-0109-remote-jupyter.html){title="_posts/post-0109-remote-jupyter.md"}
-<!--
-post-0108-english-notes.md
-post-0107-mathematical-modeling.md
+<!-- post-0108-english-notes.md
+    post-0107-mathematical-modeling.md
 -->
 * 2016-05-31 [district10/TextureProblem: 数学建模预选题论文、源码](https://github.com/district10/TextureProblem)
 * 2016-05-25 [《疯狂的麦克斯》里的 Mediocre 是傻逼的意思吗？](post-0106-mediocre.html){title="_posts/post-0106-mediocre.md"}

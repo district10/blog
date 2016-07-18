@@ -280,3 +280,7 @@ curl -i -H 'Authorization: token 5199831f4dd3b79e7c5b7e0ebe75d67aa66e79d4' \
 Conditional requests
 
 [A curl tutorial using GitHub's API](https://gist.github.com/caspyin/2288960)
+
+[Getting cpp-netlib — cpp-netlib v0.12.0](http://cpp-netlib.org/0.12.0/index.html#want-to-learn-more)
+
+![](https://avatars.githubusercontent.com/u/5262037?v=3&s=40)
