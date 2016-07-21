@@ -265,3 +265,4 @@ ab tbq              ```tzx-bigquote
 ab lambda           λ
 ab fold             `@`{.fold}
 ab foldable         `@`{.foldable}
+ab kbd              <kbd> </kbd>

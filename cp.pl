@@ -62,7 +62,7 @@ while (<IMD>) {
         print $line . "\n";
         next;
     }
-    
+
     # page anchor
     if (/^(.*)`@`\{\.tzx-anchor #(.*)\}(.*)$/) {
         $line = $1 . '`@`{.tzx-anchor #' . $filenamehash . $2 . '}' . $3;
@@ -70,7 +70,7 @@ while (<IMD>) {
         print $line . "\n";
         next;
     }
-    
+
 
     # tags
     if (/^(\s*)<#(.*?)>$/) {
@@ -165,6 +165,8 @@ while (<IMD>) {
     print $line . "\n";
 }
 
+#              git whatchanged -p filename
+#              git log -p filename
 my $changes = `git log --stat --pretty=format:%H-%at $ARGV[0]`;
 print CHANGES <<EOF;
 ---
