@@ -97,7 +97,7 @@ they all think it's high praise but don't really know what the word means.
 可能 Mediocre 是 Joe 给 war boy 最高评价了吧，每次 Joe “呵呵”着夸 War Boy
 mediocre（傻逼）的时候。War boy 们都以为这是什么好词……
 
-要知道 Nux 连树（tree）都不会说。结合他们的词汇量，我觉得这个答案十分靠谱。
+要知道 Nux 连树（“that thing”->“tree”）都不会说。结合他们的词汇量，我觉得这个答案十分靠谱。
 
 总结：mediocre 当然是傻逼的意思。Joe 从来都是笑着用傻逼
 来称呼这些 half-life，然而他们一直误以为这是一种赞美……

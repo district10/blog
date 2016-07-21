@@ -137,6 +137,15 @@ Chinese fonts
         fc-cache
         ```
 
+### 中文输入法
+
+```bash
+sudo apt-get install ibus ibus-piniy
+im-config
+```
+
+然后打开 language-support 安装字体等相关内容。
+
 ### Zsh (oh-my-zsh)
 
 ```bash

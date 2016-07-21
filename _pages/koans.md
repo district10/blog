@@ -13,6 +13,69 @@ before-after:
 Koans | 呓语[^why-koan]
 =======================
 
+## `1468722074`{.tzx-timestamp} 发现 git 的 bug 一枚
+
+```bash
+$ git checkout --orphan gh-pages
+Switched to a new branch 'gh-pages'
+
+$ ls
+CMakeLists.txt  Configs.h.in  include/  main.cpp  Makefile  README.md
+
+$ rm -rf        Configs.h.in  include/  main.cpp  Makefile  README.md
+
+$ git status
+On branch gh-pages
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   CMakeLists.txt
+        new file:   Configs.h.in
+        new file:   Makefile
+        new file:   README.md
+        new file:   include/rapidjson.zip
+        new file:   main.cpp
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    Configs.h.in
+        deleted:    Makefile
+        deleted:    README.md
+        deleted:    include/rapidjson.zip
+        deleted:    main.cpp
+
+
+$ echo "TODO: use jQuery to grab contents." > index.html
+$ git add -A
+$ git status
+On branch gh-pages
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   CMakeLists.txt
+        new file:   index.html
+```
+
+发现了么？
+
+## `1468513172`{.tzx-timestamp} 被玷污的 Vim 剪切板
+
+有些 Vim 配置会自做主张地把 GUI 的寄存器和 vim 内部的寄存器混淆，
+真是让人厌烦。
+
+这样一来，你发现 `"+p` 没用了，然后又发现 `p` 的时候居然两者会混淆。
+这种感觉，就像是一台
+
 ## `1468392423`{.tzx-timestamp} GitHub 的新字体
 
 GitHub 全站似乎换了字体。感觉整体变细了。
@@ -78,6 +141,8 @@ Precision 评价的是你说话到底靠不靠谱，“猜几下能中”。
 Recall 评价的是你说话的全面性，“能猜出几成”，这个 recall 就有点 retrive 的感觉，
 这样“召回”就好理解一点了。
 
+不要说我言语粗俗，我只是在解释机器学习里的两个概念，而已。
+
 refs and see also
 
   - [Precision and recall - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Precision_and_recall)
@@ -98,47 +163,7 @@ Linux 桌面系统的一个很好的 feature 是，你可以按住 alt 然后拖
 有人已经给出解决方案啦：[Get the Linux Alt+Window Drag Functionality in
 Windows](http://www.howtogeek.com/howto/windows-vista/get-the-linux-altwindow-drag-functionality-in-windows/)。
 
-用的是 AutoHotkey，代码不多，亲测可用：
-
-```ahk
-; This script modified from the original: http://www.autohotkey.com/docs/scripts/EasyWindowDrag.htm
-; by The How-To Geek
-; http://www.howtogeek.com
-
-Alt & LButton::
-CoordMode, Mouse  ; Switch to screen/absolute coordinates.
-MouseGetPos, EWD_MouseStartX, EWD_MouseStartY, EWD_MouseWin
-WinGetPos, EWD_OriginalPosX, EWD_OriginalPosY,,, ahk_id %EWD_MouseWin%
-WinGet, EWD_WinState, MinMax, ahk_id %EWD_MouseWin%
-if EWD_WinState = 0  ; Only if the window isn't maximized
-    SetTimer, EWD_WatchMouse, 10 ; Track the mouse as the user drags it.
-return
-
-EWD_WatchMouse:
-GetKeyState, EWD_LButtonState, LButton, P
-if EWD_LButtonState = U  ; Button has been released, so drag is complete.
-{
-    SetTimer, EWD_WatchMouse, off
-    return
-}
-GetKeyState, EWD_EscapeState, Escape, P
-if EWD_EscapeState = D  ; Escape has been pressed, so drag is cancelled.
-{
-    SetTimer, EWD_WatchMouse, off
-    WinMove, ahk_id %EWD_MouseWin%,, %EWD_OriginalPosX%, %EWD_OriginalPosY%
-    return
-}
-; Otherwise, reposition the window to match the change in mouse coordinates
-; caused by the user having dragged the mouse:
-CoordMode, Mouse
-MouseGetPos, EWD_MouseX, EWD_MouseY
-WinGetPos, EWD_WinX, EWD_WinY,,, ahk_id %EWD_MouseWin%
-SetWinDelay, -1   ; Makes the below move faster/smoother.
-WinMove, ahk_id %EWD_MouseWin%,, EWD_WinX + EWD_MouseX - EWD_MouseStartX, EWD_WinY + EWD_MouseY - EWD_MouseStartY
-EWD_MouseStartX := EWD_MouseX  ; Update for the next timer-call to this subroutine.
-EWD_MouseStartY := EWD_MouseY
-return
-```
+用的是 AutoHotkey，代码不多，亲测可用。
 
 ## `1464942467`{.tzx-timestamp} 想法太多，能力太弱
 
@@ -326,7 +351,7 @@ C、C++ 这些语言……不好说自己掌握了百分之多少。除非，你
 当然像我的 [notes.html](notes.html) 那样，确实是有点极端了。
 
 <div class="tzx-hide">
-## `1461136968`{tzx-timestamp} 今年研究生复试
+## `1461136968`{.tzx-timestamp} 今年研究生复试
 
 口语听力给分真心高！
 

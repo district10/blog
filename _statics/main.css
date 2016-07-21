@@ -1,7 +1,7 @@
-// CSS can always drive you crazy.
+// CSS can always drive you crazy, fixed width: about 730px -> 768px.
 html {
     font-size: 150%;
-    font-family: TIBch, "Classic Grotesque W01", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, FontAwesome;
+    font-family: TIBch, "Classic Grotesque W01", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, FontAwesome, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body {
@@ -29,7 +29,7 @@ h2 + p:first-letter {
 }
 
 code {
-    font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif;
+    font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif, FontAwesome;
     color: #d14;
     text-decoration: none;
 }
@@ -83,7 +83,7 @@ pre.diffed {
     background-color: white;
     border: 1px dotted #f8bd0b;
     font-size: 90%;
-    font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif;
+    font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif, FontAwesome;
 }
 pre.tzx-bigquote,
 pre.tzx-poem {
@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 5px;
     padding: 0.5em;
     line-height: 180%;
-    font-family: "TIBch", "Classic Grotesque W01", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+    font-family: "TIBch", "Classic Grotesque W01", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif, FontAwesome, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 h1 {
@@ -166,6 +166,10 @@ caption {
     margin-bottom:  0.3em;
     padding-bottom: 0.2em;
 }
+
+#navigator          { position: fixed; top: 1em; left: 1em; z-index: 1000; }
+#navigator a:hover  { border-bottom: none; }
+#navigator a        { color: #ff8345; }
 
 #footer {
     // padding: 10px 10px 10px 10px;
@@ -440,13 +444,15 @@ p a img:hover {
     border-radius: 8px;
     background-color: white;
 }
-
 #buckets div a {
     text-decoration: none;
+    font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif, FontAwesome, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-
 #buckets div a:visited {
     text-decoration: none;
+}
+#buckets div a:after {
+    content: "";
 }
 
 .footnotes {
@@ -486,7 +492,7 @@ p a img:hover {
     list-style: none;
     line-height: 200%;
     color: lightgray;
-    font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif;
+    font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif, FontAwesome, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .posts li a {
@@ -571,64 +577,6 @@ ul > li > ul > li > ul > li > ul >li > ul > li            { list-style-type: dis
 ul > li > ul > li > ul > li > ul >li > ul > li > ul > li  { list-style-type: circle; }
 
 // "❖"(winlogo) // "❀"(flower), "☯"(yinyang), "❏"(empty square);
-
-body {
-    -webkit-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    -o-transform-origin: 0 0;
-    transform-origin: 0 0;
-}
-// 850px? is best for this site
-@media only screen and (max-device-width:200px){
-   /* ...what the dafuq... */
-    body {
-        zoom: 0.1;
-        -webkit-transform: scale(0.1);
-        -moz-transform: scale(0.1);
-        -o-transform: scale(0.1);
-        transform: scale(0.1);
-    }
-}
-@media only screen and (max-device-width:480px){
-   /* styles for mobile browsers smaller than 480px; (iPhone) */
-    body {
-        zoom: 0.25;
-        -webkit-transform: scale(0.25);
-        -moz-transform: scale(0.25);
-        -o-transform: scale(0.25);
-        transform: scale(0.25);
-    }
-}
-@media only screen and (device-width:768px){
-   /* default iPad screens */
-    body {
-        zoom: 0.9;
-        -webkit-transform: scale(0.9);
-        -moz-transform: scale(0.9);
-        -o-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-}
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-  /* For landscape layouts only */
-    body {
-        zoom: 1.2;
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -o-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-}
-@media only screen and (min-width:1440px){
-    /* styles for browsers larger than 1440px; */
-    body {
-        zoom: 1.5;
-        -webkit-transform: scale(1.5);
-        -moz-transform: scale(1.5);
-        -o-transform: scale(1.5);
-        transform: scale(1.5);
-    }
-}
 
 #showDisqus {
     font-size: 60%;
@@ -770,13 +718,8 @@ table {
     width: 100%;
 }
 
-* html #navigator   { position: absolute; }
-#navigator          { position: fixed; top: 1em; left: 1em; z-index: 1000; }
-#navigator a:hover  { border-bottom: none; }
-#navigator a        { color: #ff8345; }
-
 .banner, .banner * {
-    font-family: 'Calibri','PT Sans', sans-serif;
+    font-family: 'Calibri','PT Sans', sans-serif, FontAwesome, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 64px;
 }
 
@@ -823,7 +766,7 @@ code.todo {
 }
 
 .pokerface, .pokerface *, a.tzx-header-anchor, code:after, a:after {
-    font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif, FontAwesome;
+    font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif, FontAwesome, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 a.tzx-header-anchor {
@@ -867,12 +810,9 @@ div.figure[align='right'] {
     float: right;
 }
 
-img.w12 { width: 45%; }
-img.w13 { width: 30%; }
-img.w14 { width: 20%; }
-img.mw12 { max-width: 45%; }
-img.mw13 { max-width: 30%; }
-img.mw14 { max-width: 20%; }
+img.w12 { max-width: 45%; }
+img.w13 { max-width: 30%; }
+img.w14 { max-width: 20%; }
 
 // ditched! 但在我把所有源码里的文件改过来之前，先不要删除这部分。
 .tzx-fright .figure img,
@@ -892,4 +832,34 @@ img.mw14 { max-width: 20%; }
 
 .copy {
     cursor: cell;
+}
+
+/* tutorial: http://www.javascriptkit.com/dhtmltutors/cssmediaqueries2.shtml */
+body {
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+// 768px -> 1.0
+@media screen and (max-device-width: 480px) and (orientation: portrait){ /* Mobile Phones Portrait */
+    body { zoom: 0.625; -webkit-transform: scale(0.625); -moz-transform: scale(0.625); -o-transform: scale(0.625); transform: scale(0.625); }
+}
+@media screen and (max-device-width: 640px) and (orientation: landscape){ /* Mobile Phones Landscape */
+    body { zoom: 0.833; -webkit-transform: scale(0.833); -moz-transform: scale(0.833); -o-transform: scale(0.833); transform: scale(0.833); }
+}
+@media screen and (max-device-width: 640px){ /* Mobile Phones Portrait or Landscape */
+    body { zoom: 0.833; -webkit-transform: scale(0.833); -moz-transform: scale(0.833); -o-transform: scale(0.833); transform: scale(0.833); }
+}
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){ /* iPhone 4+ Portrait or Landscape */
+    body { zoom: 0.417; -webkit-transform: scale(0.417); -moz-transform: scale(0.417); -o-transform: scale(0.417); transform: scale(0.417); }
+}
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){ /* iPhone 5 Portrait or Landscape */
+    body { zoom: 0.739; -webkit-transform: scale(0.739); -moz-transform: scale(0.739); -o-transform: scale(0.739); transform: scale(0.739); }
+}
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){ /* iPhone 6 and 6 plus Portrait or Landscape */
+    body { zoom: 0.868; -webkit-transform: scale(0.868); -moz-transform: scale(0.868); -o-transform: scale(0.868); transform: scale(0.868); }
+}
+@media screen and (min-device-width: 768px){ /* Tablets Portrait or Landscape */
+    body { zoom: 1.00; -webkit-transform: scale(1.00); -moz-transform: scale(1.00); -o-transform: scale(1.00); transform: scale(1.00); }
 }

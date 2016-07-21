@@ -121,6 +121,7 @@ PowerShell 或者 Linux 下的 Bash，Zsh
 ```bash
 git config --global user.name "TANG ZhiXiong"
 git config --global user.email "dvorak4tzx@gmail.com"
+# git config --global push.default simple
 ```
 
 【3】 克隆一个 GitHub Repository

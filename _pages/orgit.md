@@ -8,8 +8,9 @@ tags:
 Orgit | 唐凤
 ============
 
-[这里](http://tangzx.qiniudn.com/orgit/) 用 Org-mode 写而不是 Markdown。
+[这里](http://tangzx.qiniudn.com/orgit/) 用 Org-mode 写而不是 Markdown，
 ^[但这边很少更新，因为我现在比较少用 Emacs 和 org-mode 写东西。]
+没有什么实质的笔记，只是自己的各种账户的密码，以及一点 Emacs 笔记。
 
 ---
 
@@ -126,6 +127,10 @@ Orgit | 唐凤
         [jQuery-based Local Search Engine for Hexo | HaHack](http://hahack.com/codes/local-search-engine-for-hexo/#stq=&stp=0)
 
     +   [district10/QtEVM: C++ implementation of EVM(Eulerian Video Magnification), based on OpenCV and Qt.](https://github.com/district10/QtEVM)
+
+    +   [A curl tutorial using GitHub's API](https://gist.github.com/caspyin/2288960)
+
+    +   [4ker/CamFiQt: Initialize](https://github.com/4ker/CamFiQt)
 
 <div class="tzx-hide">
 

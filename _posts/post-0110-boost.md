@@ -15,7 +15,7 @@ Boost 库裁剪及其应用
 ====================
 
 STL 全称“标准模板库（Standard Template Library）”，其实它是一套标准，可能有不同的实现，它是 C++ 的“标准库”。
-Boost 则是一个 C++ 库，被称为“C++ 准标准库”。
+Boost 则是一个 C++ 库，被称为“C++ 准标准库”。我想说，其实 boost 才应该是 C++ 标准库，因为 STL 根本不算“库”。
 
 Boost 库涵盖的范围极广，有字符串和文本处理相关子库比如 format 库和 regexp 库，
 有容器相关子库比如 variant 库（和 Qt 的 QVariant 有得一拼），有迭代器子库比如
@@ -74,7 +74,7 @@ date '+%Y-%m-%d %H:%M:%S'        ->        2016-07-11 19:33:19
 上面的链接下载源码，进入 boost 文件夹，
 这里一共有三个文件：一个 `main.cpp`、一个 `CMakeLists.txt`，一个 README 说明文档。
 如果你不知道如何使用 CMake 生成 VS 工程，可以先看我以前写的教程：
-[HOWTO: Win + CMake + Visual Studio 2010 · Issue #1 · district10/cmake-templates](https://github.com/district10/cmake-templates/issues/1)。
+[CMake 简介和 CMake 模板](post-0100-cmake-templates.html)。
 
 但要运行这个程序并不容易，尤其是在一切都要手工的 Windows 系统上：你必须自己去下
 载合适的 boost 版本，设定一些环境变量。
@@ -154,8 +154,7 @@ cmake .. && make && ./BOOST
 在 cmake 里，这个过程大概是 1）在源码根目录新建 include 文件夹，在根目录
 的 CMakeLists.txt 加上 `include_directories( ${CMAKE_SOURCE_DIR} )`；2）
 新建 libs 文件夹，把裁剪出来的 cpp 文件放到这个文件下的 MiniBoost 文件加下，
-然后参考
-[district10/bcp-example-1/libs](https://github.com/district10/bcp-example-1/tree/master/libs)
+然后参考 [district10/bcp-example-1/libs](https://github.com/district10/bcp-example-1/tree/master/libs)
 写好 CMakeLists 文件，再到根目录的 CMakeLists 文件加上 `add_subdirectory( libs)`；
 3）将裁剪出来的 miniboost 链接到我们的二进制：`target_link_libraries( ${PROJECT_NAME} MiniBoost )`。
 
@@ -168,17 +167,28 @@ cmake .. && make && ./BOOST
 哦对，一个需要注意的地方是，提取出来的头文件里，`boost/config/auto_link.hpp` 里的内容最好删掉，
 不然在 Windows 平台上，boost 会尝试自动链接。所以我通常把这个文件内容清空。
 
+我已经看到很多次有人因为没考虑到这一点，提取出来的源码还是出现链接错误。见：
+
+-   [c++ - How to extract boost::filesystem using bcp - Stack Overflow](http://stackoverflow.com/a/37314747)
+-   [visual studio 2015 update 2 链接 boost 库失败, 怎么回事? - dvorak4tzx 的回答 - SegmentFault](https://segmentfault.com/q/1010000005772867/a-1020000005937464)
+
+当初我也是出现了这个问题。不过我小心的发现了自己的代码在 Linux 上没有问题，只是在
+Windows 上出现了 link 错误，所以机智地在自己提取出来的代码里搜索 `.lib`，
+发现了这里的“猫腻”。:smile:
+
 ## 更多的实践
 
 上面那只是一个很小的例子。下面是裁剪 boost 库的实际应用，这里我举两个有意思的例子。
 
-第一个叫 [kaguya](https://github.com/satoren/kaguya)，是一个 lua 脚本语言的 C++ 绑定。
-这个库很有意思的是，如果你的编译器支持 C++11 的几个特定特性，它是不依赖于 boost 库的（但依赖了 lua 库）；如果你的编译器
-对 C++11 特性支持得不够，它就用 boost 库来做补充。
+第一个叫 [kaguya](https://github.com/satoren/kaguya)，是一个 lua 脚本语言的 C++
+绑定。这个库很有意思的是，如果你的编译器支持 C++11 的几个特定特性，它是不依赖于
+boost 库的（但依赖了 lua 库）；如果你的编译器对 C++11 特性支持得不够，它就用
+boost 库来做补充。
 
-我 fork 了这个 repo，先给它把 lua 源码打包了进去，这样你就不用安装、编译、配置 lua 也能运行 kaguya 了，
-又把 boost 库打包内嵌进去，这样，你也不必要自己配置 boost 库，或者使用一个支持 C++11 的编译器了（对于 windows 系统来说，
-也就是你用 VS2010，VS2013 就可以，不必要安装 VS2015）。
+我 fork 了这个 repo，先给它把 lua 源码打包了进去，这样你就不用安装、编译、配置
+lua 也能运行 kaguya 了，又把 boost 库打包内嵌进去，这样，你也不必要自己配置
+boost 库，或者使用一个支持 C++11 的编译器了（对于 windows 系统来说，也就是你用
+VS2010，VS2013 就可以，不必要安装 VS2015）。
 
 这是我的 fork 的 standalone 分支：[4ker/kaguya at standalone](https://github.com/4ker/kaguya/tree/standalone)。
 相信你一定能很快把它跑起来。

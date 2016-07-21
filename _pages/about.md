@@ -32,10 +32,13 @@ About | 关于
 博客源码在：
 
   - [district10/blog](https://github.com/district10/blog)：用 Markdown 写。:smile:
-  - [district10/orgit](https://github.com/district10/orgit)：用 Emacs Org-mode
+  - [district10/orgit](https://github.com/district10/orgit)：用 Emacs org-mode
     写。^[这边功能强大，还可以加密一些私人的东西（用的是 gpg 加密）。但是在 Windows 和 Linux 下体验很不一致，所以这边写得比较少。]
 
-博客的评论系统（disqus）默认不展开，因为我讨厌它影响我页面的加载速度。
+说明：
+
+-   如果可以，请用 Firefox 浏览器浏览
+-   博客的评论系统（disqus）默认不展开，因为我讨厌它影响我页面的加载速度
 
 ---
 
@@ -66,9 +69,17 @@ About | 关于
 希望每个人都能花点时间看看 [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)。
 </small>
 
-~~~ {#one .python .copy}
-print "good"
-debog "good"
-~~~
+<div class="tzx-hide">
+[Orgit | 唐凤](orgit.html)
+</div>
 
-`two is me`{.copy #two}
+---
+
+最后，关于那句“Don’t forget to feel bad”的来源，
+见 [Markus Persson 的 Twitter: “@AndresLeay Just pirate it. If you still like
+it when you can afford it in the future, buy it then. Also **don't forget to
+feel bad.** ;)”](https://twitter.com/notch/status/157261795139125248)。
+
+![](http://whudoc.qiniudn.com/2016/firefox_2016-07-15_21-01-56.png)
+
+注：Markus Persson (@notch) 是 Minecraft（游戏：我的世界）的原作者。
