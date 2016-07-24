@@ -13,6 +13,18 @@ before-after:
 Koans | 呓语[^why-koan]
 =======================
 
+## `1469146812`{.tzx-timestamp} 真心不想混 SegmentFault 了
+
+主要原因如下：
+
+-   大多数问题都问得很不专业，让人不想回答或者无法回答
+-   有些人问了问题就走了……
+-   喜欢用“大神”之类的字眼，让人心里不舒服
+
+那，为什么不用 StackOverflow 呢？
+
+因为网速捉急，访问起来满得要死。
+
 ## `1468722074`{.tzx-timestamp} 发现 git 的 bug 一枚
 
 ```bash
@@ -67,6 +79,9 @@ Changes to be committed:
 ```
 
 发现了么？
+
+checkout 到一个新的 branch，要 commit 一次，才会摆脱原来 working directory 对
+git branch 的影响。
 
 ## `1468513172`{.tzx-timestamp} 被玷污的 Vim 剪切板
 
