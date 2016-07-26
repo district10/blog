@@ -13,6 +13,24 @@ before-after:
 Koans | 呓语[^why-koan]
 =======================
 
+## `1469506094`{.tzx-timestamp} 思维导图毁一生
+
+高中的时候经常画这玩意，我不能说它没用，只不过，太浪费时间
+（我只能说《思维导图》这本书（特么还是在 99 读书人买的……）我看了之后，还送给我朋友了，现在想想那时坑人家）。
+
+刚才 jinge 发来一个 repo 的链接：[TeamStuQ/skill-map: StuQ 技能图谱](https://github.com/TeamStuQ/skill-map)，
+这货的网页上的内容少得可怜，思维导图要点七八下才能看到“叶子节点”，关键是叶子结点啥都没有！
+
+这可真是图谱啊！
+
+## `1469504976`{.tzx-timestamp} satoren 竟然 star 了我的 repo！
+
+satoren 是 kaguya 的作者：[satoren/kaguya: C++ binding to Lua](https://github.com/satoren/kaguya)。
+
+我还给它打包了一个 standalone 版本：[4ker/kaguya at standalone](https://github.com/4ker/kaguya/tree/standalone)。
+
+他居然 star 了我的 cmake-templates~
+
 ## `1469146812`{.tzx-timestamp} 真心不想混 SegmentFault 了
 
 主要原因如下：

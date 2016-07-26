@@ -77,7 +77,7 @@ singularity 指是就是这种不确定性。sigularity 从词源上就有“超
 又是一家人工智能公司，可以识别原来为了防止爬虫乱爬数据而设计出来的 captcha（验证码）。
 
 By the way，你知道那家公司的 logo 是个什么形状吗？那叫 penrose triangle，
-是一种不可能的三维体。有个著名的画家叫 Escher 很喜欢这么玩，你可以去看看他的作品。
+是一种不可能的三维体。有个著名的画家叫 Escher 很喜欢这么玩，你可以去看看 [他的作品](http://www.jianshu.com/p/fb1713c62ecd)。
 
 ![7](http://gnat.qiniudn.com/speech/robot-6.jpg)
 
