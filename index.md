@@ -27,6 +27,7 @@ Search:<br>
 
 <div style="font-variant:small-caps;" title="日期是挖坑时间。">Posts</div>
 <div class="posts"><!--...-->
+* 2016-07-22 [长沙项目总结](post-0113-changsha-review.html){.featured .heart title="_posts/post-0113-changsha-review.md"}
 * 2016-07-11 [在 VS2015 中使用 Qt4](post-0111-qt4-vs2015.html){.featured .heart title="_posts/post-0111-qt4-vs2015.md"}
 * 2016-06-23 [Boost 库裁剪及其应用](post-0110-boost.html){.featured .heart title="_posts/post-0110-boost.md"}
 * 2016-06-15 [远程使用 Jupyter Notebook （iPython Notebook）](post-0109-remote-jupyter.html){title="_posts/post-0109-remote-jupyter.md"}

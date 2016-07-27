@@ -9,6 +9,10 @@ tags:
 封装说明
 ========
 
+本文对应代码：
+
+>   [district10/CrossOS: Cross OS Communication](https://github.com/district10/CrossOS)，Qt4 程序，已经在 Windows 和 Linux 上测试通过。
+
 <div style="background-color: violet; text-align:center;color:white;font-size:24px">UI -- Wrapper(Class) -- TCP/IP -- Wrapper(Class)</div>
 
 ```seq
