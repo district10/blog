@@ -679,3 +679,11 @@ Read more
 [cuttedoutinfo]: http://gnat.qiniudn.com/signcutter/cutted_out_info.jpg
 [posnegclick]: http://gnat.qiniudn.com/signcutter/pos_neg_click.jpg
 [signcutterui]: http://gnat.qiniudn.com/signcutter/signcutter_ui.jpg
+
+
+- [OpenCV: cv::ml::ANN_MLP Class Reference](http://docs.opencv.org/master/d0/dce/classcv_1_1ml_1_1ANN__MLP.html#ac24cc2e2fc5cd1dd74fd5da31886fbb7)
+- [Miscellaneous Image Transformations — OpenCV 2.3.2 documentation](http://www.opencv.org.cn/opencvdoc/2.3.2/html/modules/imgproc/doc/miscellaneous_transformations.html)
+- [OpenCV: cv::ml::StatModel Class Reference](http://docs.opencv.org/master/db/d7d/classcv_1_1ml_1_1StatModel.html#a1f3854a1d367973da4c27dc5f54d3348)
+- [OpenCV: cv::ml::ANN_MLP Class Reference](http://docs.opencv.org/master/d0/dce/classcv_1_1ml_1_1ANN__MLP.html#afb51e414f22dd69f281a569145ccfad7)
+- [OpenCV: cv::ml::TrainData Class Reference](http://docs.opencv.org/master/dc/d32/classcv_1_1ml_1_1TrainData.html)
+- [OpenCV: cv::ml::TrainData Class Reference](http://docs.opencv.org/master/dc/d32/classcv_1_1ml_1_1TrainData.html#a1f2950eb49e251cafa3a62a8afc8ed72)

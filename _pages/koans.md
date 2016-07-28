@@ -13,6 +13,14 @@ before-after:
 Koans | 呓语[^why-koan]
 =======================
 
+## ``{}
+
+该死的 Visual Studio。
+
+index-csv-1..8.7z
+
+Vertical Tabs 突然没有了。
+
 ## `1469506094`{.tzx-timestamp} 思维导图毁一生
 
 高中的时候经常画这玩意，我不能说它没用，只不过，太浪费时间

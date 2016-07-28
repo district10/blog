@@ -28,7 +28,7 @@ Search:<br>
 <div style="font-variant:small-caps;" title="日期是挖坑时间。">Posts</div>
 <div class="posts"><!--...-->
 * 2016-07-22 [长沙项目总结](post-0113-changsha-review.html){.featured .heart title="_posts/post-0113-changsha-review.md"}
-* 2016-07-11 [在 VS2015 中使用 Qt4](post-0111-qt4-vs2015.html){.featured .heart title="_posts/post-0111-qt4-vs2015.md"}
+* 2016-07-11 [在 VS2015 中使用 Qt4](post-0111-qt4-vs2015.html){title="_posts/post-0111-qt4-vs2015.md"}
 * 2016-06-23 [Boost 库裁剪及其应用](post-0110-boost.html){.featured .heart title="_posts/post-0110-boost.md"}
 * 2016-06-15 [远程使用 Jupyter Notebook （iPython Notebook）](post-0109-remote-jupyter.html){title="_posts/post-0109-remote-jupyter.md"}
 <!-- post-0108-english-notes.md
@@ -45,6 +45,7 @@ Search:<br>
 <!--* 2016-04-08 [Learning JavaScript](post-0094-learning-javascript.html){title="_posts/post-0094-learning-javascript.md"}-->
 <!--* 2016-04-04 [Learning D3.js](post-0093-learning-d3.html){title="_posts/post-0093-learning-d3.md"}-->
 <!--* 2016-04-02 [Trevor Burnham’s Book](post-0092-trevor-burnham.html){title="_posts/post-0092-trevor-burnham.md"}-->
+* 2016-03-21 [Hacking Travis | 如何用 Travis 上传数据到七牛](http://whudoc.qiniudn.com/travis/index.html){title="这个 repo 展示了如何用 travis 自动把本文件用 pandoc 转换，然后上载到自己的七牛云盘中。"}
 * 2016-03-18 [背景知识的重要性](post-0090-prerequisites.html){title="_posts/post-0090-prerequisites.md"}
 * 2016-03-17 [GitHub Pages 怎么用？](http://tangzhixiong.com/gh-pages-demo/){title="展示了 GitHub Pages 服务的使用，无需命令行，用的是网页上的 Generator。"}
 <!--* 2016-03-07 [Kaggle](post-0089-kaggle.html){title="_posts/post-0089-kaggle.md"}-->
