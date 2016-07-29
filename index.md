@@ -1,5 +1,5 @@
 ---
-title: Welcome to TZX's Blog.
+title: Welcome to TANG ZhiXiong's Blog.
 date: 2015-11-17
 keywords:
     - dvorak4tzx
@@ -10,7 +10,7 @@ after-before: |
     <style> #navigator { display: none; } </style>
 ...
 
-<div class="slogan">Welcome to TZX's Blog</div>
+<div class="slogan">Welcome to TANG ZhiXiong's Blog</div>
 <p id="tzxslogan" style="text-align:right;padding-right: 10em;" title="按下【h】获取页面帮助。">Don't forget to feel bad.</p>
 
 <div id="buckets">
