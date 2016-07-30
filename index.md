@@ -63,7 +63,7 @@ Search:<br>
 * 2015-12-14 [小波变换在图像处理分析中的应用](post-0077-wavelet-transform.html){title="_posts/post-0077-wavelet-transform.md"}
 * 2015-12-13 [膜拜大神](post-0076-real-hacker.html){title="_posts/post-0076-real-hacker.md"}
 * 2015-12-08 [什么是投影？](post-0075-what-is-projection.html){.featured .heart title="_posts/post-0075-what-is-projection.md"}
-* 2015-11-30 [OpenCV::CvANN_MLP | 空间数据智能计算课程编程大作业](post-0072-cvann-mlp.html){title="_posts/post-0072-cvann-mlp.md"}
+* 2015-11-30 [用 CvANN_MLP 进行路牌判别 | 智能计算课程编程大作业](post-0072-cvann-mlp.html){.featured .heart title="_posts/post-0072-cvann-mlp.md"}
 <!--* 2015-12-08 [Introduction to Design Patterns in C++ with Qt](post-0074-qt-design-patterns.html){title="_posts/post-0074-qt-design-patterns.md"}-->
 <!--* 2015-12-05 [OpenCV Notes](post-0073-opencv-notes.html){title="_posts/post-0073-opencv-notes.md"}-->
 <!--* 2015-11-28 [Selected Qt Code](post-0071-selected-qt-code.html){title="_posts/post-0071-selected-qt-code.md"}-->

@@ -16,13 +16,18 @@ About | 关于
 [![Build Status](https://travis-ci.org/district10/blog.svg?branch=master)](https://travis-ci.org/district10/blog){title="本站由 travis 编译。"}
 </div>
 
-唐志雄（tzx），处女座，INTP。
+唐志雄（tzx），处女座，INTP：
 
 -   个人主页：[tangzhixiong.com](http://tangzhixiong.com){.heart}
 -   GitHub：[district10](https://github.com/district10){.heart}
--   Lofter：[dvorak4tzx](http://dvorak4tzx.lofter.com/)
+-   Lofter：[dvorak4tzx](http://dvorak4tzx.lofter.com/tag/kindle)
+
+<div class="tzx-hide">
 -   SegmentFault: [dvorak4tzx](https://segmentfault.com/u/dvorak4tzx)
 -   简书：[Gnat](http://www.jianshu.com/users/faa44ac9e895/top_articles)
+-   [nitrotype](https://www.nitrotype.com/racer/dvorak4tzx)，[10fastfingers](http://10fastfingers.com/user/1178438/)
+-   login/5S8qUYBcej
+</div>
 
 履历：
 
@@ -32,9 +37,9 @@ About | 关于
 
 博客源码在：
 
-  - [district10/blog](https://github.com/district10/blog)：用 Markdown 写。:smile:
-  - [district10/orgit](https://github.com/district10/orgit)：用 Emacs org-mode
-    写。^[这边功能强大，还可以加密一些私人的东西（用的是 gpg 加密）。但是在 Windows 和 Linux 下体验很不一致，所以这边写得比较少。]
+-   [district10/blog](https://github.com/district10/blog)：用 Markdown 写 :smile:
+-   [district10/orgit](https://github.com/district10/orgit)：用 Emacs org-mode 写
+    ^[这边功能强大，还可以加密一些私人的东西（用的是 gpg 加密）。但是在 Windows 和 Linux 下体验很不一致，所以这边写得比较少。（Vim 才是真爱~）]
 
 说明：
 
@@ -49,9 +54,9 @@ About | 关于
 
     :   > 记忆术三原理：
         >
-        > * 1、将想到的写下来；
-        > * 2、将知识组织成树形结构；
-        > * 3、将知识记录在社交媒体或内部群组讨论而非私人笔记。  @阳志平1949
+        > - 1、将想到的写下来；
+        > - 2、将知识组织成树形结构；
+        > - 3、将知识记录在社交媒体或内部群组讨论而非私人笔记。@阳志平 1949
 
     （2）刘未鹏，[为什么你应该（从现在开始就）写博客](http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/)
 

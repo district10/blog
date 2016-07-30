@@ -603,7 +603,9 @@ double deg2rad( const double &d ) { return d * M_PI / 180.0; }
 ```
 
 下面是几个时间戳函数。时间戳我们使用的是 Qt 的 `QDateTime::currentMSecsSinceEpoch()`，
-因为它能明确表示一个时间点，而且精度是毫秒，它实际上是一个 int64_t 整形。
+因为它能明确表示一个时间点，而且精度是毫秒，它实际上是一个 int64_t 整型。话说我相册还有一个截图：
+
+![](https://img3.doubanio.com/view/photo/photo/public/p2255334335.jpg)
 
 ```cpp
 QString Util::ts2HHMMSS_MS( qint64 ts/* =0 */ )

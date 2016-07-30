@@ -47,3 +47,4 @@ DEEN.
 #. [The One That Got Away (Acoustic) - 豆瓣FM - Beta](http://douban.fm/?start=1888482g0cadg153&cid=3888482)
 #. [L'amour C'est Pour Rien-Enrico Macias, L'amour C'est Pour RienMP3下载,歌词下载 - 虾米音乐](http://www.xiami.com/song/1771278511?spm=a1z1s.3521865.23309997.1.t9zOCU){title="《顽主》背景音乐。"}
 #. [Academia-Sia, AcademiaMP3 下载, 歌词下载 - 虾米音乐](http://www.xiami.com/song/3294016)
+#. [Ultimate Bach: The Essential Masterpieces专辑_Ultimate Bach: The Essential MasterpiecesJohann Sebastian Bach_在线试听 - 虾米音乐](http://www.xiami.com/album/536324?spm=a1z1s.3521873.23310065.10.aniSGA)
