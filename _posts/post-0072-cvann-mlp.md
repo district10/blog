@@ -291,7 +291,7 @@ private:
 
 ```cpp
 mlp = cv::ml::ANN_MLP::create();
-// 五层比较常见
+// 层数和每层 neuron 个数是“精选”出来的
 mlp->setLayerSizes( (cv::Mat)(cv::Mat_<int>(1,5)
                                 << FEATURENUM, FEATURENUM / 2, FEATURENUM / 6, FEATURENUM / 24, 1) );
 
@@ -308,6 +308,13 @@ mlp->setTermCriteria( cv::TermCriteria(
 
 激活函数和反向传播的说明见本文末尾附录。反向传播一个比较好的文档见我的笔记：
 [Principles of training multi-layer neural network using backpropagation](http://tangzx.qiniudn.com/notes/caffe-notes/backpropagation.html)。
+
+Layer 的层数和每层的 neuron 数目对训练结果有较大影响，这是我之前测试后画的 Excel 表格：
+^[顺便学习了 Excel 的 minimap 的用法哈哈。]
+
+![CvANN::MLP 中神经网络层数对正确率的影响](http://whudoc.qiniudn.com/2016/excel-1.png)
+
+![CvANN::MLP 中 layerSizes（即每层中 neuron 的个数）对正确率的影响](http://whudoc.qiniudn.com/2016/excel-2.png)
 
 设置好了，就可以用已经准备好的正负样本训练它。我们先不考虑的是如何从 24 &times; 24 的 RGB 图片，
 生成 feature 向量（也就是这里的 `Utils::img2feature` 函数的实现细节）。
