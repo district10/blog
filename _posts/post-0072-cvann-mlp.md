@@ -33,11 +33,61 @@ tags:
 
     **二进制执行档**
 
+    -   [Release 2, 2016-07-31](http://whudoc.qiniudn.com/2016/SignProcessing_Release-2.7z), 962 KB
     -   [Release 1, 2016-07-30](http://whudoc.qiniudn.com/2016/SignProcessing_Release-1.7z), 478 KB
 
 如何用已训练模型来测试图片是否是路牌
 
-:   **1）双击运行 SignClassifierDemo.exe**
+:   **SignProcessorDemo.exe**
+
+    这个 exe 有三个功能，主要是用已经训练好的模型来预测（predict）。
+
+    **功能 1，判别单张图片**
+
+    加载一个图片，如果判定是一个路牌，用淡蓝色显示“Sign (pos)”：
+
+    ![](http://whudoc.qiniudn.com/2016/SignProcessorDemo_2016-07-31_16-18-06.png)
+
+    如果不是一个路牌，用红色显示“Not Sign (neg)”：
+
+    ![](http://whudoc.qiniudn.com/2016/SignProcessorDemo_2016-07-31_16-25-23.png)
+
+    **功能 2，判别文件夹下所有图片**
+
+    批量判断。选择一个文件夹（这里是 `dir_of_images`）。
+
+    ![](http://whudoc.qiniudn.com/2016/2016-07-31_16-20-34.png)
+
+    判断结果输出在文本框内，包括图片数目、每张图片的路径以及判别结果：
+
+    ```
+    To Predict 38 images.
+
+
+        processing D:/tzx/git/SignProcessing/data/input/dir_of_images/0002-team7 (109)-shift-sx-36-sy-16.bmp... done. assigned to [pos]
+        ...
+        processing D:/tzx/git/SignProcessing/data/input/dir_of_images/dir2/dir22/0001-team7 (108)-rand-cx0623-cy0398-r135.bmp... done. assigned to [neg]
+    ```
+
+    所选文件夹同一目录下还会出现两个目录 `pos` 和 `neg`，分别把判别后的图片拷贝到里里面：
+
+    ![](http://whudoc.qiniudn.com/2016/explorer_2016-07-31_16-23-28.png)
+
+    ![](http://whudoc.qiniudn.com/2016/explorer_2016-07-31_16-23-13.png)
+
+    **功能 3，判别选择的多张图片**
+
+    ![](http://whudoc.qiniudn.com/2016/SignProcessorDemo_2016-07-31_16-21-58.png)
+
+    判别为路牌的，标记“Pos”，不是路牌的，标记“Neg”。
+
+    **默认用了
+    [`data/output/4.xml`](https://github.com/district10/SignProcessing/blob/qt4cv3vs2015/data/output/4.xml)
+    来预测，你也可以点击【Load Another XML】加载别的已训练模型。**
+
+    ---
+
+    **1）双击运行 SignClassifierDemo.exe**
 
     ![](http://whudoc.qiniudn.com/2016/2016-07-30_03-34-16.png)
 
