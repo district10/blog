@@ -16,7 +16,7 @@ About | 关于
 [![Build Status](https://travis-ci.org/district10/blog.svg?branch=master)](https://travis-ci.org/district10/blog){title="本站由 travis 编译。"}
 </div>
 
-唐志雄（tzx），处女座，INTP：
+唐志雄（TANG ZhiXiong），处女座，INTP：
 
 -   个人主页：[tangzhixiong.com](http://tangzhixiong.com){.heart}
 -   GitHub：[district10](https://github.com/district10){.heart}
@@ -35,11 +35,12 @@ About | 关于
 -   2007 - 2011，上海市奉贤中学
 -   2004 - 2007，新疆伊宁县第四中学
 
-博客源码在：
+本博客源码：
 
 -   [district10/blog](https://github.com/district10/blog)：用 Markdown 写 :smile:
 -   [district10/orgit](https://github.com/district10/orgit)：用 Emacs org-mode 写
     ^[这边功能强大，还可以加密一些私人的东西（用的是 gpg 加密）。但是在 Windows 和 Linux 下体验很不一致，所以这边写得比较少。（Vim 才是真爱~）]
+-   [district10/notes](https://github.com/district10/blog)：这些是笔记
 
 说明：
 

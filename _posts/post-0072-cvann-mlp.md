@@ -316,7 +316,7 @@ private:
 
 ```cpp
 mlp = cv::ml::ANN_MLP::create();
-// 层数和每层 neuron 个数是“精选”出来的
+// 层数和每层 neuron 个数对结果有一定影响，下文对此有论述
 mlp->setLayerSizes( (cv::Mat)(cv::Mat_<int>(1,5)
                                 << FEATURENUM, FEATURENUM / 2, FEATURENUM / 6, FEATURENUM / 24, 1) );
 
@@ -337,9 +337,12 @@ mlp->setTermCriteria( cv::TermCriteria(
 Layer 的层数和每层的 neuron 数目对训练结果有较大影响，这是我之前测试后画的 Excel 表格：
 ^[顺便学习了 Excel 的 minimap 的用法哈哈。]
 
-![CvANN::MLP 中神经网络层数对正确率的影响](http://whudoc.qiniudn.com/2016/excel-1.png)
+![CvANN::MLP 中神经网络层数对正确率的影响，可以看到 5 层，每层 neuron 数随指数函数光滑
+    下降的情况下正确率最高，有 0.97164，这里的正确率是用正/负样本的 3/4 训练，剩下
+    的 1/4 来测试得到的。](http://whudoc.qiniudn.com/2016/excel-1.png)
 
-![CvANN::MLP 中 layerSizes（即每层中 neuron 的个数）对正确率的影响](http://whudoc.qiniudn.com/2016/excel-2.png)
+![CvANN::MLP 中 layerSizes（即每层中 neuron 的个数）对正确率的影响，可以看到指
+    数函数就是叼](http://whudoc.qiniudn.com/2016/excel-2.png)
 
 设置好了，就可以用已经准备好的正负样本训练它。我们先不考虑的是如何从 24 &times; 24 的 RGB 图片，
 生成 feature 向量（也就是这里的 `Utils::img2feature` 函数的实现细节）。
@@ -454,6 +457,7 @@ bool Utils::img2feature( const char *filePath, float *feature )
         }
     }
 
+    // 每行每列 rgb
     for ( int i=0; i < IMGSIZE; ++i ) {
         feature[i*6+0] = (float)rowCountR[i]/allCountR; // 第 i 行的红色占全图红色的比例
         feature[i*6+1] = (float)rowCountG[i]/allCountG; // 绿色
@@ -466,7 +470,7 @@ bool Utils::img2feature( const char *filePath, float *feature )
     feature[IMGSIZE*6+0] = (float)allCountR / (allCountR + allCountG +allCountB);
     feature[IMGSIZE*6+1] = (float)allCountG / (allCountR + allCountG +allCountB);
     feature[IMGSIZE*6+2] = (float)allCountB / (allCountR + allCountG +allCountB);
-
+    // 四个区域
     for ( int i = 0; i < 4; ++i ) {
         // 区域内的 rgb 比例
         int total = tempR[i] + tempG[i] + tempB[i];
@@ -483,7 +487,7 @@ bool Utils::img2feature( const char *filePath, float *feature )
 附录
 ----
 
-这是我当时查看了的一些资料。
+这是我当时查看了的一些资料，留作笔记。
 
 Multilayer perceptron
 
