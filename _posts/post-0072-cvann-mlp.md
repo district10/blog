@@ -36,6 +36,31 @@ tags:
     -   [Release 2, 2016-07-31](http://whudoc.qiniudn.com/2016/SignProcessing_Release-2.7z), 962 KB
     -   [Release 1, 2016-07-30](http://whudoc.qiniudn.com/2016/SignProcessing_Release-1.7z), 478 KB
 
+    ---
+
+    刚才 fix 了几个错误，现在在 Ubuntu 也跑起来了
+
+    **Linux `.so` files**
+
+    [`.so` 文件](http://whudoc.qiniudn.com/2016/sp-sos.tar.xz) (10.1 MB)
+
+    ```
+    $ ls -alh
+    total 44M
+    drwxrwxr-x 2 tzx tzx 4.0K  8月  1 20:54 .
+    drwxrwxr-x 3 tzx tzx 4.0K  8月  1 21:00 ..
+    -rw-r--r-- 1 tzx tzx  13M  8月  1 20:53 libopencv_core.so.3.0.0
+    -rw-r--r-- 1 tzx tzx 2.0M  8月  1 20:53 libopencv_imgcodecs.so.3.0.0
+    -rw-r--r-- 1 tzx tzx  15M  8月  1 20:53 libopencv_imgproc.so.3.0.0
+    -rw-r--r-- 1 tzx tzx 870K  8月  1 20:53 libopencv_ml.so.3.0.0
+    -rw-r--r-- 1 tzx tzx 3.0M  8月  1 20:54 libQtCore.so.4
+    -rw-r--r-- 1 tzx tzx  11M  8月  1 20:54 libQtGui.so.4
+    ```
+
+    **Linux binaries**
+
+    -    [Release 1, 2016-08-01](http://whudoc.qiniudn.com/2016/SignProcessing_Release_linux-1.tar.xz) 869 KB
+
 如何用已训练模型来测试图片是否是路牌
 
 :   **SignProcessorDemo.exe**
