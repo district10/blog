@@ -13,11 +13,13 @@ before-after:
 Koans | 呓语[^why-koan]
 =======================
 
+<div class="tzx-hide">
 ## `1470067454`{.tzx-timestamp} 爱可可老师分享了我的 post……
 
 [《用 CvANN_MLP 进行路牌判别》by 唐志雄 来自爱可可-爱生活 - 微博](http://weibo.com/1402400261/E1xsWvZ47)
 
 这么叼，已被吓尿==
+</div>
 
 ## `1469932751`{.tzx-timestamp} 为什么这么多手环产品，却没有脚环？
 
