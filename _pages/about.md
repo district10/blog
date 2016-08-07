@@ -16,7 +16,7 @@ About | 关于
 [![Build Status](https://travis-ci.org/district10/blog.svg?branch=master)](https://travis-ci.org/district10/blog){title="本站由 travis 编译。"}
 </div>
 
-唐志雄（TANG ZhiXiong），处女座，INTP：
+TANG ZhiXiong，处女座，INTP：
 
 -   个人主页：[tangzhixiong.com](http://tangzhixiong.com){.heart}
 -   GitHub：[district10](https://github.com/district10){.heart}
@@ -26,14 +26,9 @@ About | 关于
 -   SegmentFault: [dvorak4tzx](https://segmentfault.com/u/dvorak4tzx)
 -   简书：[Gnat](http://www.jianshu.com/users/faa44ac9e895/top_articles)
 -   [nitrotype](https://www.nitrotype.com/racer/dvorak4tzx)，[10fastfingers](http://10fastfingers.com/user/1178438/)
--   login/5S8qUYBcej
+-   5S8qUYBcej
 </div>
 
-履历：
-
--   2011 - 2016，武汉大学 -- 遥感信息工程学院
--   2007 - 2011，上海市奉贤中学
--   2004 - 2007，新疆伊宁县第四中学
 
 本博客源码：
 
