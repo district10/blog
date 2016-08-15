@@ -27,6 +27,7 @@ TANG ZhiXiong，处女座，INTP：
 -   简书：[Gnat](http://www.jianshu.com/users/faa44ac9e895/top_articles)
 -   [nitrotype](https://www.nitrotype.com/racer/dvorak4tzx)，[10fastfingers](http://10fastfingers.com/user/1178438/)
 -   5S8qUYBcej
+-   me.png?imageView2/1/w/90/h/120
 </div>
 
 
