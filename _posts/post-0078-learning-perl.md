@@ -67,6 +67,34 @@ Learning Perl
 几乎所有的 perl 脚本都放在：[district10/blog-utils: Utils to process my blog posts.](https://github.com/district10/blog-utils)。
 那里也有一点介绍。
 
+外，还有写了一个 pangu.pl，用来处理中英文之间的空格。有很多版本的 pangu，包括
+
+-   pangu.go (Go)
+-   pangu.java (Java)
+-   pangu.js (JavaScript, both Node.js and Browser)
+-   pangu.objective-c (Objective-C)
+-   pangu.php (PHP)
+-   pangu.py (Python)
+-   pangu.rb (Ruby)
+
+但是没有 perl，所以……其实代码就三两行哈哈。
+见 [district10/pangu.pl: Paranoid text spacing in Perl](https://github.com/district10/pangu.pl)。
+这是 vinta 对这个项目的简要介绍：
+
+>   如果你跟我一樣，每次看到網頁上的中文字和英文、數字、符號擠在一塊，就會坐立
+>   難安， 忍不住想在它們之間加個空格。這個外掛（支援 Chrome 和 Firefox）正是你
+>   在網路世界 走跳所需要的東西，它會自動替你在網頁中所有的中文字和半形的英文、
+>   數字、符號之間 插入空白。
+>
+>   漢學家稱這個空白字元為「盤古之白」，因為它劈開了全形字和半形字之間的混沌。
+>   另有 研究顯示，打字的時候不喜歡在中文和英文之間加空格的人，感情路都走得很辛
+>   苦，有七 成的比例會在 34 歲的時候跟自己不愛的人結婚，而其餘三成的人最後只能
+>   把遺產留給自 己的貓。畢竟愛情跟書寫都需要適時地留白。
+>
+>   與大家共勉之。
+>
+>   |                       -- vinta
+
 ---
 
 最后，我最爱的 include 功能的代码，并不长（写得时候还是出了不少 bug，各种坎坷），贴在这里：
