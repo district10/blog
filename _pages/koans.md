@@ -13,6 +13,19 @@ before-after:
 Koans | 呓语[^why-koan]
 =======================
 
+## `1472097056`{.tzx-timestamp} Brain Fart...
+
+A:
+
+>   Great explanation, but why is your function called fibo? That's not
+>   Fibonacci; it's f(n) = Binomial(n+1,2)
+
+B:
+
+>   Total **brain fart**. I got upvoted 20 times and nobody pointed that out!
+
+see [algorithm - What is tail recursion? - Stack Overflow](http://stackoverflow.com/questions/33923/what-is-tail-recursion).
+
 ## `1471263637`{.tzx-timestamp} Vim 的一点蠢
 
 Vim 是我的大爱，但也不得不批评一下 Vim 的蠢。

@@ -92,8 +92,6 @@ Orgit | 唐凤
 
 -   Links
 
-    +   Jupyter Caffe
-
     +   IDE 说到编译和链接
 
         关于编译和链接，需要知道
@@ -106,19 +104,7 @@ Orgit | 唐凤
         -   dog.cpp
             +   `void dog() {}`
 
-    +   长沙总结
-
-    +   桥梁纹理
-
     +   线性代数的信息论解释
-
-    +   车牌分类
-
-        *   opencv3；
-        *   把原来的笔记里到 notes 里面；
-        *   把 ml 实现的那部分也放进来。
-
-    +   bcp 源码分析，qt 库的裁剪？
 
     +   git 源码分析。
 
@@ -127,8 +113,6 @@ Orgit | 唐凤
         [jQuery-based Local Search Engine for Hexo | HaHack](http://hahack.com/codes/local-search-engine-for-hexo/#stq=&stp=0)
 
     +   [district10/QtEVM: C++ implementation of EVM(Eulerian Video Magnification), based on OpenCV and Qt.](https://github.com/district10/QtEVM)
-
-    +   [A curl tutorial using GitHub's API](https://gist.github.com/caspyin/2288960)
 
     +   [4ker/CamFiQt: Initialize](https://github.com/4ker/CamFiQt)
 
