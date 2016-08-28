@@ -21,6 +21,7 @@ TANG ZhiXiong，处女座，INTP：
 -   个人主页：[tangzhixiong.com](http://tangzhixiong.com){.heart}
 -   GitHub：[district10](https://github.com/district10){.heart}
 -   Lofter：[dvorak4tzx](http://dvorak4tzx.lofter.com/tag/kindle)
+-   QQ & Email：`echo NTEzODgwNjQxQHFxLmNvbQo= | base64 --decode`{.bash}
 
 <div class="tzx-hide">
 -   SegmentFault: [dvorak4tzx](https://segmentfault.com/u/dvorak4tzx)

@@ -34,6 +34,19 @@ Koans | 呓语[^why-koan]
 >
 >   身心健康，身在心前。正在经受身体痛苦的人很难保持内心不扭曲。
 
+## `1472097056`{.tzx-timestamp} Brain Fart...
+
+A:
+
+>   Great explanation, but why is your function called fibo? That's not
+>   Fibonacci; it's f(n) = Binomial(n+1,2)
+
+B:
+
+>   Total **brain fart**. I got upvoted 20 times and nobody pointed that out!
+
+see [algorithm - What is tail recursion? - Stack Overflow](http://stackoverflow.com/questions/33923/what-is-tail-recursion).
+
 ## `1471263637`{.tzx-timestamp} Vim 的一点蠢
 
 Vim 是我的大爱，但也不得不批评一下 Vim 的蠢。
@@ -45,7 +58,6 @@ Vim 是我的大爱，但也不得不批评一下 Vim 的蠢。
 我都手动打了大写字母，还不能明白我的意图么？
 
 我记得 Emacs 是有这个贴心的功能的。可是 Emacs 平台一致性不够好，
-
 而我 Windows 和 Linux 几乎是轮着用。
 
 我喜欢一致的体验。
@@ -3051,4 +3063,4 @@ Firefox: Blocked by Content Security Policy.
 
 这个……有点叼。我要好好学习以后破解 md5……
 
-[^why-koan]: 这是我的微(tu)博(cao)。呓语呓语，神志不清；若有冒犯，敬请原谅。
+[^why-koan]: 这是我的微（tu）博（cao）。呓语呓语，神志不清；若有冒犯，敬请原谅。
