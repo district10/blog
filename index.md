@@ -15,7 +15,6 @@ after-before: |
 
 <div id="buckets">
 <div><a href="koans.html">Koans | 呓语</a></div>
-<div><a href="http://tangzx.qiniudn.com/notes/">Notes | 笔记</a></div>
 <div><a href="about.html">About | 关于</a></div>
 <hr /></div>
 
