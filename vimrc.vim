@@ -10,6 +10,7 @@ map <leader>u :undolist<cr>
 map <leader>file :echo expand("%:p")<cr>:let @+=expand("%:p")<cr>
 " map <leader><leader> please don't map <leader><leader>
 map <leader>wi vip :call Wikipedia()<cr>
+map <leader>cc V :call CCFormating()<cr>
 map <leader>sp vip :call PanguSpacing()<cr>
 map <leader>rs vipJ :call PanguSpacing()<cr> gqqo<esc>
 map <leader>tc :call TitleCaseRegion()<cr>
@@ -54,7 +55,10 @@ set nowritebackup
 set noswapfile
 
 " nnoremap gz :!zeal --query '<cword>'&<CR><CR>
-
+function! CCFormating()
+    silent! '<,'>s/\((\)/\1 /g
+    silent! '<,'>s/\()\)/ \1/g
+endfunction
 function! TitleCaseRegion()
     silent! '<,'>s/\v<(.)(\w*)/\u\1\L\2/g
 endfunction
@@ -96,11 +100,11 @@ map Q gq            " use Q for formatting
 
 if has("gui_running")
     if has("gui_gtk2")
-        set guifont=Inconsolata\ 12
+        set guifont=Inconsolata\ 8
     elseif has("gui_macvim")
-        set guifont=Menlo\ Regular:h14
+        set guifont=Menlo\ Regular:h8
     elseif has("gui_win32")
-        set guifont=Consolas:h11:cANSI
+        set guifont=Consolas:h8:cANSI
     endif
 endif
 

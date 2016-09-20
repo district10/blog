@@ -30,3 +30,5 @@ Friends | 友链
 -   panqi
     +   GitHub: [panqiincs](http://github.com/panqiincs)
     +   [辛未羊的博客](http://panqiincs.github.io/)
+-   chenxinpeng
+    +   [Simon's Blog - 博客频道 - CSDN.NET](http://blog.csdn.net/u010167269/article/list/1)

@@ -81,6 +81,6 @@ TANG ZhiXiong，处女座，INTP：
 it when you can afford it in the future, buy it then. Also **don't forget to
 feel bad.** ;)”](https://twitter.com/notch/status/157261795139125248)。
 
-[![](http://whudoc.qiniudn.com/2016/firefox_2016-07-15_21-01-56.png)](http://tangzx.qiniudn.com/notes)
+[![](http://whudoc.qiniudn.com/2016/firefox_2016-07-15_21-01-56.png)](http://tangzx.qiniudn.com/notes){style="cursor:default"}
 
 注：Markus Persson (@notch) 是 Minecraft（游戏：我的世界）的原作者。
