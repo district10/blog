@@ -244,25 +244,11 @@ endfunction
 "
 
 ab rasa             refs and see also
-ab fab              <i class="icon-book"></i>
-ab facd             <i class="icon-cloud-download"></i>
-ab faes             <i class="icon-exclamation-sign"></i>
-ab faf              <i class="icon-flag"></i>
-ab fah              <i class="icon-heart"></i>
-ab fahe             <i class="icon-heart-empty"></i>
-ab fai              <i class="icon-info-sign"></i>
-ab fais             <i class="icon-info-sign"></i>
-ab falb             <i class="icon-lightbulb"></i>
-ab fapp             <i class="icon-pushpin"></i>
-ab fas              <i class="icon-star"></i>
-ab fase             <i class="icon-star-empty"></i>
-ab fat              <i class="icon-tag"></i>
-ab fats             <i class="icon-tags"></i>
-ab fatd             <i class="icon-thumbs-down"></i>
-ab qwhudoc          http://whudoc.qiniudn.com/2016/
-ab qgnat            http://gnat.qiniudn.com/
-ab tbq              ```tzx-bigquote
-ab lambda           λ
-ab fold             `@`{.fold}
-ab foldable         `@`{.foldable}
-ab kbd              <kbd> </kbd>
+ab xqn              qiniudn
+ab xwhudoc          http://whudoc.qiniudn.com/2016/
+ab xgnat            http://gnat.qiniudn.com/
+ab xkbd             <kbd> </kbd>
+ab xin              ∈
+ab xlambda          λ
+ab xcup             ∪
+ab xtimes           ×
