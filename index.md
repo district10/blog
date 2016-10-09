@@ -15,7 +15,6 @@ after-before: |
 
 <div id="buckets">
 <div><a href="koans.html">Koans | 呓语</a></div>
-<div><a href="http://tangzx.qiniudn.com/notes/">Notes | 笔记</a></div>
 <div><a href="about.html">About | 关于</a></div>
 <hr /></div>
 
@@ -29,7 +28,7 @@ Search:<br>
 <div class="posts"><!--...-->
 * 2016-07-22 [长沙项目总结](post-0113-changsha-review.html){.featured .heart title="_posts/post-0113-changsha-review.md"}
 * 2016-07-11 [在 VS2015 中使用 Qt4](post-0111-qt4-vs2015.html){title="_posts/post-0111-qt4-vs2015.md"}
-* 2016-06-23 [Boost 库裁剪及其应用](post-0110-boost.html){.featured .heart title="_posts/post-0110-boost.md"}
+* 2016-06-23 [Boost 库裁剪及其应用](post-0110-boost.html){.featured title="_posts/post-0110-boost.md"}
 * 2016-06-15 [远程使用 Jupyter Notebook （iPython Notebook）](post-0109-remote-jupyter.html){title="_posts/post-0109-remote-jupyter.md"}
 <!-- post-0108-english-notes.md
     post-0107-mathematical-modeling.md
@@ -52,12 +51,12 @@ Search:<br>
 <!--* 2016-03-03 [Font Awesome](post-0088-font-awesome.html){title="_posts/post-0088-font-awesome.md"}-->
 <!--* 2016-03-02 [Leet Code](post-0087-leetcode.html){title="_posts/post-0087-leetcode.md"}-->
 * 2016-03-01 [「Game of Throne | 权利的游戏」 | 英语课 Presentation](post-0086-game-of-throne-series.html){title="_posts/post-0086-game-of-throne-series.md"}
-* 2016-02-24 [组会分享：RAMP 是什么？](post-0085-cvrs-presentation.html){.heart title="_posts/post-0085-cvrs-presentation.md"}
+* 2016-02-24 [组会分享：RAMP 是什么？](post-0085-cvrs-presentation.html){title="_posts/post-0085-cvrs-presentation.md"}
 * 2016-01-14 [Complex Network Notes | 复杂网络及其应用笔记](post-0084-complex-network-notes.html){title="_posts/post-0084-complex-network-notes.md"}
 <!--* 2016-01-11 [100 Things Every Designer Needs to Know About People](post-0083-designer-needs-to-know.html){title="_posts/post-0083-designer-needs-to-know.md"}-->
 * 2016-01-07 [WHU MOOC Academic Integrity | 研究生学术道德与学术规范在线课程](post-0082-whu-mooc-academic-integrity.html){title="_posts/post-0082-whu-mooc-academic-integrity.md"}
 * 2015-12-25 [Learning jQuery](post-0081-learning-jquery.html){title="_posts/post-0081-learning-jquery.md"}
-* 2015-12-18 [软件开发者路线图](post-0080-apprenticeship.html){.heart title="_posts/post-0080-apprenticeship.md"}
+* 2015-12-18 [软件开发者路线图](post-0080-apprenticeship.html){title="_posts/post-0080-apprenticeship.md"}
 * 2015-12-17 [Lingoes 网络词典](post-0079-lingoes-dict.html){title="_posts/post-0079-lingoes-dict.md"}
 * 2015-12-17 [Learning Perl](post-0078-learning-perl.html){title="_posts/post-0078-learning-perl.md"}
 * 2015-12-14 [小波变换在图像处理分析中的应用](post-0077-wavelet-transform.html){title="_posts/post-0077-wavelet-transform.md"}
@@ -69,9 +68,9 @@ Search:<br>
 <!--* 2015-11-28 [Selected Qt Code](post-0071-selected-qt-code.html){title="_posts/post-0071-selected-qt-code.md"}-->
 * 2015-11-23 [Vim Rules](post-0070-some-vim-rules.html){title="_posts/post-0070-some-vim-rules.md"}
 * 2015-11-23 [GIS 空间分析与应用建模](post-0069-gis-spatial-analysis-application-modeling.html){title="_posts/post-0069-gis-spatial-analysis-application-modeling.md"}
-* 2015-11-23 [C++ GUI Qt4 编程](post-0068-cxx-gui-programming-with-qt4.html){.heart title="_posts/post-0068-cxx-gui-programming-with-qt4.md"}
+* 2015-11-23 [C++ GUI Qt4 编程](post-0068-cxx-gui-programming-with-qt4.html){.featured title="_posts/post-0068-cxx-gui-programming-with-qt4.md"}
 * 2015-11-19 [一个空格引发的惨剧（remix）](post-0064-rm-pitfall.html){title="_posts/post-0064-rm-pitfall.md"}
-* 2015-11-18 [Pretty Diff | 听歌学英语](post-0062-pretty-diff.html){.heart title="_posts/post-0062-pretty-diff.md"}
+* 2015-11-18 [Pretty Diff | 听歌学英语](post-0062-pretty-diff.html){.featured title="_posts/post-0062-pretty-diff.md"}
 <!--* 2015-11-19 [StackOverFlow](post-0063-stackoverflow.html){title="_posts/post-0063-stackoverflow.md"}-->
 <!--* 2015-11-19 [Get Things Done](post-0065-get-things-done.html){title="_posts/post-0065-get-things-done.md"}-->
 <!--* 2015-11-19 [All About Encoding](post-0066-about-encoding.html){title="_posts/post-0066-about-encoding.md"}-->
@@ -91,11 +90,11 @@ Search:<br>
 * 2015-10-23 [Pandoc 转成 Word](post-0033-md2docx.html){title="_posts/post-0033-md2docx.md"}
 * 2015-10-21 [GIS 理论与技术 -- 作业 2：GIS 研究综述](post-0050-gis-overall.html){title="_posts/post-0050-gis-overall.md"}
 * 2015-10-16 [你的笔记本里有几个剪切板？](post-0036-clipboard.html){title="_posts/post-0036-clipboard.md"}
-* 2015-10-02 [你就编译一个 cpp，用 CMake 还不如用 pkg-config 呢](post-0035-pkg-config.html){.heart title="_posts/post-0035-pkg-config.md"}
+* 2015-10-02 [你就编译一个 cpp，用 CMake 还不如用 pkg-config 呢](post-0035-pkg-config.html){.featured title="_posts/post-0035-pkg-config.md"}
 * 2015-09-29 [GitHub 的 DMCA 干嘛的？](post-0034-github-dmca.html){title="_posts/post-0034-github-dmca.md"}
 * 2015-09-01 [LMS 数据量](post-0056-lms-chunk.html){title="_posts/post-0056-lms-chunk.md"}
 * 2015-08-11 [封装说明](post-0059-exe-wrapper.html){title="_posts/post-0059-exe-wrapper.md"}
-* 2015-08-06 [CVRS C++ Coding Style Guidelines](post-0060-coding-style.html){.heart title="_posts/post-0060-coding-style.md"}
+* 2015-08-06 [CVRS C++ Coding Style Guidelines](post-0060-coding-style.html){title="_posts/post-0060-coding-style.md"}
 <!--* 2015-08-06 [LaTeX 入门（刘海洋） — 配套 TeX 源码](post-0061-liuhaiyang-example-code.html){title="_posts/post-0061-liuhaiyang-example-code.md"}-->
 * 2015-02-20 [Windows 系统配置](post-0007-windows-configurations.html){.featured .heart title="_posts/post-0007-windows-configurations.md"}
 * 2015-02-19 [编程之道（书摘）](post-0005-tao-of-programming.html){title="_posts/post-0005-tao-of-programming.md"}
@@ -103,7 +102,7 @@ Search:<br>
 * 2015-02-19 [相机控制软件 gPhoto2 的简要介绍](post-0004-gphoto2.html){title="_posts/post-0004-gphoto2.md"}
 * 2015-02-19 [Debian Configurations | 黛比安系统配置](post-0003-debian-configurations.html){.featured .heart title="_posts/post-0003-debian-configurations.md"}
 * 2015-02-13 [让 Shell 喊你回家吃饭](post-0040-shell-is-kidding-me.html){title="_posts/post-0040-shell-is-kidding-me.md"}
-* 2015-01-00 [Function Pointer Stack in C | C 语言函数指针](post-0043-awesome-c.html){.featured .heart title="_posts/post-0043-awesome-c.md"}
+* 2015-01-00 [Function Pointer Stack in C | C 语言函数指针](post-0043-awesome-c.html){.featured title="_posts/post-0043-awesome-c.md"}
 * 2014-11-22 [考研英语习作](post-0020-kaoyan-english.html){title="_posts/post-0020-kaoyan-english.md"}
 * 2014-09-07 [召唤空格之神](post-0037-pangu.html){title="_posts/post-0037-pangu.md"}
 * 2014-09-03 [遵守规则还是符合逻辑？](post-0042-rules-and-logic.html){title="_posts/post-0042-rules-and-logic.md"}
@@ -116,13 +115,13 @@ Search:<br>
 * 2014-06-18 [维基上的日本](post-0017-wikipedia-japan.html){title="_posts/post-0017-wikipedia-japan.md"}
 * 2014-06-17 [维基上的中国](post-0016-wikipedia-china.html){title="_posts/post-0016-wikipedia-china.md"}
 * 2014-06-15 [维基上的维基解密](post-0021-wikileaks.html){title="_posts/post-0021-wikileaks.md"}
-* 2014-06-07 [我是一只 IT 小小鸟](post-0010-as-an-it-bird.html){.heart title="_posts/post-0010-as-an-it-bird.md"}
+* 2014-06-07 [我是一只 IT 小小鸟](post-0010-as-an-it-bird.html){.featured title="_posts/post-0010-as-an-it-bird.md"}
 * 2014-05-09 [Learning Vim | 学习 Vim 编辑器](post-0045-learning-vim.html){title="_posts/post-0045-learning-vim.md"}
-* 2014-05-07 [The AWK Programming Language | AWK 编程语言](post-0046-awk.html){.heart title="_posts/post-0046-awk.md"}
-* 2014-05-04 [空间分析实习报告](post-0018-spatial-analysis.html){.featured .heart title="_posts/post-0018-spatial-analysis.md"}
+* 2014-05-07 [The AWK Programming Language | AWK 编程语言](post-0046-awk.html){title="_posts/post-0046-awk.md"}
+* 2014-05-04 [空间分析实习报告](post-0018-spatial-analysis.html){.featured title="_posts/post-0018-spatial-analysis.md"}
 * 2014-04-20 [Gat 单字中文输入法](http://tangzhixiong.com/gat/){.heart title="可以在 Emacs 里使用，也可以在网页中试一试。和 Dvorak 键盘布局一脉相承。"}
 * 2014-04-19 [Learning HTML5](post-0023-learning-html5.html){title="_posts/post-0023-learning-html5.md"}
-* 2014-04-15 [想起了 CASIO-82ES 调牛顿解方程](post-0039-newton-method.html){.heart title="_posts/post-0039-newton-method.md"}
+* 2014-04-15 [想起了 CASIO-82ES 调牛顿解方程](post-0039-newton-method.html){.featured title="_posts/post-0039-newton-method.md"}
 * 2014-04-07 [AWK 文字处理](post-0012-awk.html){title="_posts/post-0012-awk.md"}
 * 2014-04-04 [Academic Integrity at Princeton | 普林斯顿大学学术道德](post-0011-academic-integrity-at-princeton.html){title="_posts/post-0011-academic-integrity-at-princeton.md"}
 * 2014-03-28 [More About Vim | Vim 杂记](post-0047-more-about-vim.html){title="_posts/post-0047-more-about-vim.md"}
@@ -131,11 +130,11 @@ Search:<br>
 * 2014-02-22 [模式识别作业：KL Transform（主分量变换）](post-0029-kl-transform.html){.featured .heart title="_posts/post-0029-kl-transform.md"}
 * 2014-02-12 [Learning HTML](post-0022-learning-html.html){title="_posts/post-0022-learning-html.md"}
 * 2014-02-08 [ASCII Art](post-0009-ascii-art.html){title="_posts/post-0009-ascii-art.md"}
-* 2014-02-02 [Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook](post-0024-linux-shell-scripting-cookbook.html){.featured .heart title="_posts/post-0024-linux-shell-scripting-cookbook.md"}
+* 2014-02-02 [Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook](post-0024-linux-shell-scripting-cookbook.html){.featured title="_posts/post-0024-linux-shell-scripting-cookbook.md"}
 * 2014-00-00 [随便翻翻 & Men Lists & Words Lists](post-0041-lists-read-at-random.html){title="_posts/post-0041-lists-read-at-random.md"}
 * 2013-00-00 [说中文还是说英文？无所谓！（演讲稿）](post-0026-english-or-chinese.html){title="_posts/post-0026-english-or-chinese.md"}
 * 2013-00-00 [虚拟现实的实习报告（脑洞最大的一次实习报告）](post-0031-brain-hole.html){title="_posts/post-0031-brain-hole.md"}
-* 2013-00-00 [人工智能是否会导致人类灭亡？（演讲稿）](post-0027-ai-will-kill-us.html){.heart title="_posts/post-0027-ai-will-kill-us.md"}
+* 2013-00-00 [人工智能是否会导致人类灭亡？（演讲稿）](post-0027-ai-will-kill-us.html){.featured title="_posts/post-0027-ai-will-kill-us.md"}
 * 2013-00-00 [What a fucking day （记一篇 Essay）](post-0030-fucking-day.html){title="_posts/post-0030-fucking-day.md"}
 * 2013-00-00 [Dvorak 键盘布局（演讲稿）](post-0032-dvorak.html){title="_posts/post-0032-dvorak.md"}
 * 2006-10-17 [Pandoc User's Guide](post-0001-pandoc-readme.html){title="_posts/post-0001-pandoc-readme.md"}

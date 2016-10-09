@@ -27,17 +27,14 @@ TANG ZhiXiong，处女座，INTP：
 -   SegmentFault: [dvorak4tzx](https://segmentfault.com/u/dvorak4tzx)
 -   简书：[Gnat](http://www.jianshu.com/users/faa44ac9e895/top_articles)
 -   [nitrotype](https://www.nitrotype.com/racer/dvorak4tzx)，[10fastfingers](http://10fastfingers.com/user/1178438/)
--   5S8qUYBcej
--   me.png?imageView2/1/w/90/h/120
 </div>
-
 
 本博客源码：
 
 -   [district10/blog](https://github.com/district10/blog)：用 Markdown 写 :smile:
 -   [district10/orgit](https://github.com/district10/orgit)：用 Emacs org-mode 写
     ^[这边功能强大，还可以加密一些私人的东西（用的是 gpg 加密）。但是在 Windows 和 Linux 下体验很不一致，所以这边写得比较少。（Vim 才是真爱~）]
--   [district10/notes](https://github.com/district10/blog)：这些是笔记
+-   [district10/notes](https://github.com/district10/notes)：这些是笔记
 
 说明：
 
@@ -84,6 +81,6 @@ TANG ZhiXiong，处女座，INTP：
 it when you can afford it in the future, buy it then. Also **don't forget to
 feel bad.** ;)”](https://twitter.com/notch/status/157261795139125248)。
 
-![](http://whudoc.qiniudn.com/2016/firefox_2016-07-15_21-01-56.png)
+[![](http://whudoc.qiniudn.com/2016/firefox_2016-07-15_21-01-56.png)](http://tangzx.qiniudn.com/notes){style="cursor:default"}
 
 注：Markus Persson (@notch) 是 Minecraft（游戏：我的世界）的原作者。

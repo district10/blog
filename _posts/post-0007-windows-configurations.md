@@ -317,3 +317,9 @@ Tips
 
     +   [XnView Software · XnView](http://www.xnview.com/en/xnview/)
     +   <http://download3.xnview.com/XnView-win-full.exe> (17.7 MB)
+
+-   花瓣采集工具
+
+    [花瓣采集工具-花瓣](http://huaban.com/about/goodies/)
+
+    [拖动此按钮到书签栏](javascript:(function(a,b,c,d){a[c]?a[c].ui.show():(d=b.createElement('script'),d.id='huaban_script',d.setAttribute('charset','utf-8'),d.src='https://huaban.com/js/widgets.min.js?'+Math.floor(+new%20Date/1e7),b.body.appendChild(d))})(window,document,'HUABAN_GLOBAL');)
