@@ -114,7 +114,7 @@ double dp(int n) {
 int main()
 {
     while( 1 == scanf("%d", &n) ) {
-        printf("%lf\n", calc(n));
+        printf("%lf\n", dp(n));
     }
 }
 ```
