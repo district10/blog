@@ -317,33 +317,7 @@ wget http://sourceforge.net/projects/gphoto/files/gphoto/2.5.2/gphoto2-2.5.2.tar
 Goto official site: [Node.js](https://nodejs.org/en/),
 then download the zip archive.
 
-<div class="tzx-hide">
-The best: [快速搭建 Node.js 开发环境以及加速 npm](https://cnodejs.org/topic/5338c5db7cbade005b023c98)
-
-```bash
-# GIT_DIR="Your Git Folder"
-cd $GIT_DIR
-git clone https://github.com/creationix/nvm.git
-nvm && source nvm.sh
-NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/dist nvm install 6.0.0
-npm --registry=https://registry.npm.taobao.org install koa
-```
-</div>
-
-```bash
-nvm ls-remote
-```
-
-add to `.bashrc` (or `.zshrc`, etc)
-
-```bash
-# nvm
-GIT_DIR=~/git/others
-export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/dist
-source $GIT_DIR/nvm/nvm.sh
-```
-
-Install cnpm
+then install cnpm:
 
 ```bash
 sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
@@ -354,9 +328,10 @@ then use `cnpm`{.bash} instead of `npm`
 一些有用的东东：
 
 ```bash
-sudo cnpm install -g http-server # better than: python -m SimpleHTTPServer
+sudo cnpm install -g http-server
 sudo cnpm install -g csslint
 sudo cnpm install -g jshint
+sudo cnpm install -g typescript
 ```
 
 ### Gems

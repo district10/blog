@@ -180,12 +180,11 @@ Tips
 
 -   VS2015
 
-    [MSDN, 我告诉你](http://itellyou.cn/)
+    [VS2015](https://www.visualstudio.com/products/visual-studio-community-vs)
+    社区版本，到 [这里](https://www.microsoft.com/zh-CN/download/details.aspx?id=48146) 下载，选择那个 3.7 GB 的。
 
-    去官网下载 Community 版本。
-    然后双击 iso 文件，安装之，如果只装 vc++ 部分，大概要占用系统 12 GB 的容量。
-    然后重启。然后启动 Visual Studio 2015，然后登陆自己的 Microsoft 账户（试用
-    一段时间后，不登录，是不能继续使用 Community 版本的）。
+    双击 iso 文件，安装之，如果只装 vc++ 部分，大概要占用系统 12 GB 的容量。
+    然后重启。然后启动 Visual Studio 2015，然后登陆自己的 Microsoft 账户（试用一段时间后，不登录，是不能继续使用 Community 版本的）。
 
     然后去 Tools -- Extensions and updates... 下载安装插件，我推荐如下几个（按 popular 排序，大家都说好的，就安装把）：
 
@@ -323,3 +322,15 @@ Tips
     [花瓣采集工具-花瓣](http://huaban.com/about/goodies/)
 
     [拖动此按钮到书签栏](javascript:(function(a,b,c,d){a[c]?a[c].ui.show():(d=b.createElement('script'),d.id='huaban_script',d.setAttribute('charset','utf-8'),d.src='https://huaban.com/js/widgets.min.js?'+Math.floor(+new%20Date/1e7),b.body.appendChild(d))})(window,document,'HUABAN_GLOBAL');)
+
+-   IntelliJ
+
+    <http://whudoc.qiniudn.com/2016/ideaIC-2016.2.4.exe> (276 MB)
+
+-   Node
+
+    <http://whudoc.qiniudn.com/2016/node-v4.6.0-x64.msi> (10.4 MB)
+
+    然后装 cnpm：`sudo npm install -g cnpm --registry=https://registry.npm.taobao.org`{.bash}
+
+    具体看姊妹篇那边的配置。

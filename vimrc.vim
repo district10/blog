@@ -84,7 +84,7 @@ function! PanguSpacingExtra()                           " :call PanguSpacingExtr
 endfunction
 
 function! Wikipedia()
-    silent! %s/\[\d\+\]//g "    "[23]" -> ""
+    "silent! %s/\[\d\+\]//g "    "[23]" -> "", this function is too dangerous
 endfunction
 
 " set laststatus=2
