@@ -14,6 +14,8 @@ tags:
 
 ## 日志模块
 
+>   才发现自己之前把这部分源码整个提取出来放在 GitHub 上的：[district10/Logger: A Simple Logger](https://github.com/district10/Logger)。
+
 日志（logger）模块是项目进行到一段时间后才开发的，但我还是要放到其他模块之前讲。
 
 程序在多线程、有网络通信无法用常规设置断点等方式 debug 的情况下，
