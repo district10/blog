@@ -43,6 +43,12 @@ Linux 操作系统（debian 系）：
 -   获取源码，zip 压缩包地址：<https://github.com/district10/blog/archive/master.zip>
 -   解压源码 zip 压缩包，命令行进入文件夹，`make`，publish 文件夹下就有了生成的 html 文件
 
+## Live mode / 在线预览
+
+```bash
+$ java -jar watcher.jar
+```
+
 ---
 
 ## Koans / 吐槽
