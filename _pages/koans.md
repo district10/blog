@@ -13,6 +13,16 @@ before-after:
 Koans | 呓语[^why-koan]
 =======================
 
+## `1479693578`{.tzx-timestamp} 百度网盘
+
+百度网盘的英文是“NetDisk”。但是安装后我 <kbd>WIN</kbd> + <kbd>S</kbd> 搜，
+中文或是英文，都搜不到。
+
+客户端其实是“百度云管家”，但是也搜不到。只能到目录下去运行……
+`D:\ProgramFiles\BaiduYunGuanjia\baiduyunguanjia.exe`，好的，现在把他固定到任务栏。
+
+Asshole。
+
 ## `1478520654`{.tzx-timestamp} 豆瓣你是傻么？
 
 给我发了个豆油：
