@@ -175,16 +175,16 @@ Take the RAMP，and ROCK！
 
 Vertical Tabs 在 Firefox 浏览器里也有，插件下载：
 
-  - [VimFx@akhodakivskiy.github.com.xpi](http://whudoc.qiniudn.com/2016/VimFx@akhodakivskiy.github.com.xpi)
-  - [tabkit2@pikachuexe.amateur.hk.xpi](http://whudoc.qiniudn.com/2016/tabkit2@pikachuexe.amateur.hk.xpi)
-  - [Copy as Markdown :: Add-ons for Firefox](https://addons.mozilla.org/en-us/firefox/addon/copy-as-markdown/)
-  - [bhollis/jsonview: A Firefox extension that helps you view JSON documents in the browser.](https://github.com/bhollis/jsonview)
+-   VimFX, [backup](http://whudoc.qiniudn.com/2016/VimFx@akhodakivskiy.github.com.xpi)
+-   Copy as Markdown, [backup](https://addons.mozilla.org/en-us/firefox/addon/copy-as-markdown/)
+-   [Tree Style Tab :: Add-ons for Firefox](https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/)
+-   [Auto Reload :: Firefox 附加组件](https://addons.mozilla.org/zh-CN/firefox/addon/auto-reload/?src=api)
 
 ---
 
-Refs
+refs and see also
 
-#. [Futures for C++11 at Facebook - June 19, 2015](https://code.facebook.com/posts/1661982097368498)
-#. [Everything Searching Options](http://www.voidtools.com/support/everything/searching/)
-#. [BASH Programming - Introduction HOW-TO: All about redirection](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-3.html)
-#. [Flow (psychology) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Flow_(psychology))
+-   [Futures for C++11 at Facebook - June 19, 2015](https://code.facebook.com/posts/1661982097368498)
+-   [Everything Searching Options](http://www.voidtools.com/support/everything/searching/)
+-   [BASH Programming - Introduction HOW-TO: All about redirection](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-3.html)
+-   [Flow (psychology) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Flow_(psychology))
