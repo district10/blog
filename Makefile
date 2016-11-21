@@ -178,3 +178,7 @@ time:
 m: make
 make:
 	$(EDITOR) Makefile 2>/dev/null &
+
+w: watch
+watch:
+	java -jar watcher.jar
