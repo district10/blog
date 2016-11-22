@@ -4,6 +4,8 @@
 
 let mapleader = ","
 let g:mapleader = ","
+let @f="A -<"
+
 map <leader>a ggVG
 map <leader>o o<esc>S<esc>
 map <leader>u :undolist<cr>
