@@ -334,3 +334,5 @@ Tips
     然后装 cnpm：`sudo npm install -g cnpm --registry=https://registry.npm.taobao.org`{.bash}
 
     具体看姊妹篇那边的配置。
+
+[Free PDF Reader - Sumatra PDF](http://www.sumatrapdfreader.org/free-pdf-reader.html)
