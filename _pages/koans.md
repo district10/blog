@@ -79,6 +79,7 @@ shi……t。这么重要的一点。
 
 `1477205673`{.tzx-timestamp} 我现在想把智联招聘的总部炸了。
 
+<div class="tzx-hide">
 ## `1473258014`{.tzx-timestamp} 人和人的价值观差异真的可以很大
 
 我和 [V2EX › zhongkaixin](https://www.v2ex.com/member/zhongkaixin) 大概是截然不同的。
@@ -125,6 +126,7 @@ shi……t。这么重要的一点。
 >   @murmur 第三方输入法可以没有，微信不可没有，当然对于那些铁杆果粉，可以不顾一切的选择苹果。但对于普通人，没微信的苹果他们不会选择。
 
 除了价值观的差异，我不评价其他。
+</div>
 
 ## `1472516374`{.tzx-timestamp} 关闭 ShareX 的更新
 

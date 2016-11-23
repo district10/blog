@@ -6,6 +6,9 @@ let mapleader = ","
 let g:mapleader = ","
 let @f="A -<"
 
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
 map <leader>a ggVG
 map <leader>o o<esc>S<esc>
 map <leader>u :undolist<cr>
