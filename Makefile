@@ -123,7 +123,11 @@ i: index
 index:
 	$(EDITOR) index.md
 n: note
-note: k
+note:
+	$(EDITOR) -p \
+		$(DIR_PAGES)/koans.md \
+		$(DIR_POSTS) \
+
 k: koan
 koan: time
 koan:
@@ -172,12 +176,12 @@ typing:
 	$(MAKE) -C $(PAGES) typing
 	
 time:
-	@date +%s | clip 2>/dev/null || date +%s | xclip -selection clipboard
+	@date +%s | tr -d '\r\n' | clip 2>/dev/null || date +%s | tr -d '\r\n' | xclip -selection clipboard
 	@echo Unix time copied to your clipboard!
 
 m: make
 make:
-	$(EDITOR) Makefile 2>/dev/null &
+	$(EDITOR) Makefile
 
 w: watch
 watch:
