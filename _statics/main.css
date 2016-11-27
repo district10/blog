@@ -1,17 +1,21 @@
 // CSS can always drive you crazy, fixed width: about 730px -> 768px.
 html {
-    font-size: 150%;
     font-family: TIBch, "Classic Grotesque W01", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif, FontAwesome, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body {
-    width: 44em;
-    margin: auto;
-    padding-right: 1em;
+    max-width: 44em;
+
+    margin: 0 auto;
+
+    padding-top: 1em;
     padding-left: 1em;
+    padding-right: 1em;
     padding-bottom: 120px;
+
     border-left: 1px solid black;
     border-right: 1px solid black;
+
     color: black;
     font-size: 100%;
     line-height: 140%;
@@ -20,8 +24,9 @@ body {
 p {
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-bottom: 10px;
+
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 h2 + p:first-letter {
@@ -832,34 +837,4 @@ img.w14 { max-width: 20%; }
 
 .copy {
     cursor: cell;
-}
-
-/* tutorial: http://www.javascriptkit.com/dhtmltutors/cssmediaqueries2.shtml */
-body {
-    -webkit-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    -o-transform-origin: 0 0;
-    transform-origin: 0 0;
-}
-// 768px -> 1.0
-@media screen and (max-device-width: 480px) and (orientation: portrait){ /* Mobile Phones Portrait */
-    body { zoom: 0.625; -webkit-transform: scale(0.625); -moz-transform: scale(0.625); -o-transform: scale(0.625); transform: scale(0.625); }
-}
-@media screen and (max-device-width: 640px) and (orientation: landscape){ /* Mobile Phones Landscape */
-    body { zoom: 0.833; -webkit-transform: scale(0.833); -moz-transform: scale(0.833); -o-transform: scale(0.833); transform: scale(0.833); }
-}
-@media screen and (max-device-width: 640px){ /* Mobile Phones Portrait or Landscape */
-    body { zoom: 0.833; -webkit-transform: scale(0.833); -moz-transform: scale(0.833); -o-transform: scale(0.833); transform: scale(0.833); }
-}
-@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){ /* iPhone 4+ Portrait or Landscape */
-    body { zoom: 0.417; -webkit-transform: scale(0.417); -moz-transform: scale(0.417); -o-transform: scale(0.417); transform: scale(0.417); }
-}
-@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){ /* iPhone 5 Portrait or Landscape */
-    body { zoom: 0.739; -webkit-transform: scale(0.739); -moz-transform: scale(0.739); -o-transform: scale(0.739); transform: scale(0.739); }
-}
-@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){ /* iPhone 6 and 6 plus Portrait or Landscape */
-    body { zoom: 0.868; -webkit-transform: scale(0.868); -moz-transform: scale(0.868); -o-transform: scale(0.868); transform: scale(0.868); }
-}
-@media screen and (min-device-width: 768px){ /* Tablets Portrait or Landscape */
-    body { zoom: 1.00; -webkit-transform: scale(1.00); -moz-transform: scale(1.00); -o-transform: scale(1.00); transform: scale(1.00); }
 }

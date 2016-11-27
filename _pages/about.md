@@ -47,11 +47,11 @@ TANG ZhiXiong，处女座，INTP：
 
 :   （1）[记忆术三原理：1、将想到的写下来；2、将知... 来自任岳 - 微博](http://weibo.com/1664910444/Biy24h2m9?type=comment)
 
-    :   > 记忆术三原理：
+    :   >   记忆术三原理：
         >
-        > - 1、将想到的写下来；
-        > - 2、将知识组织成树形结构；
-        > - 3、将知识记录在社交媒体或内部群组讨论而非私人笔记。@阳志平 1949
+        >   -   1、将想到的写下来；
+        >   -   2、将知识组织成树形结构；
+        >   -   3、将知识记录在社交媒体或内部群组讨论而非私人笔记。
 
     （2）刘未鹏，[为什么你应该（从现在开始就）写博客](http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/)
 
@@ -65,7 +65,7 @@ TANG ZhiXiong，处女座，INTP：
         -   学会持之以恒地做一件事情。
         -   一个长期的价值博客是一份很好的简历。
 
-<small style="color:lightgray;">
+<small style="color:gray;">
 作为一个处女座，我的文字排版是考究的。
 希望每个人都能花点时间看看 [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)。
 </small>
