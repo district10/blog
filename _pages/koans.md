@@ -13,6 +13,25 @@ before-after:
 Koans | 呓语[^why-koan]
 =======================
 
+## `1480234274`{.tzx-timestamp} 这个胸。。。。。。Orz
+
+从好看的角度看，我觉得《冰与火之歌》里面最赞的是 Ygritte，然后是 Shae，然后是 Yara Greyjoy（Theon 的妹妹）。
+我的印象中她（Yara）是这样的：
+
+![](http://whudoc.qiniudn.com/2016/snipaste20161127_161352.png)
+
+不过刚在 [wikia](http://gameofthrones.wikia.com/wiki/Yara_Greyjoy) 上看到的是这样……：
+
+![](http://whudoc.qiniudn.com/2016/Game_of_thrones_6x5_yara_promo.jpg)
+
+## `1480131571`{.tzx-timestamp} 英文博客
+
+每当看到 x 国人的 x 语博客我都是抓狂的……因为不认得。
+每当看到用英文写博客的 x 国人，我就很感动。。。。。。
+
+以后我也要用英文写博客。计划，以后的博客，总是中文一段英文一段。
+对着写。
+
 ## `1480054483`{.tzx-timestamp} 该死的百度云盘
 
 《风月俏佳人》已经不能看了。提示我里面有少儿不宜的内容……（逗我？！）
