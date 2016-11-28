@@ -22,6 +22,19 @@ TANG ZhiXiong，处女座，INTP：
 -   GitHub：[district10](https://github.com/district10){.heart}
 -   Lofter：[dvorak4tzx](http://dvorak4tzx.lofter.com/tag/kindle)
 -   QQ & Email：`echo NTEzODgwNjQxQHFxLmNvbQo= | base64 --decode`{.bash}
+-   <div class="tzx-drawer" shy>
+    Wechat
+
+    :   ![](http://whudoc.qiniudn.com/2016/wechat-friend.jpg)
+
+        <div style="font-size=80%">
+        <div class="tzx-drawer" shy>
+        如果你觉得哪篇文章特别特别好，也可以随意打赏 ==
+
+        :   ![](http://whudoc.qiniudn.com/2016/wechat-pay.jpg)
+        </div>
+        </div>
+    </div>
 
 <div class="tzx-hide">
 -   SegmentFault: [dvorak4tzx](https://segmentfault.com/u/dvorak4tzx)
