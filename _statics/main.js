@@ -1,8 +1,8 @@
 function help() {
     alert(  '方向键有如下功能：\n\n'
-         +  '\n1. 返回主页：<left><left><left>'
-         +  '\n2. 显示目录：<right><right><right>'
-         +  '\n3. 查看源码：<right><right><down>'
+         +  '\n1. 返回主页：← ← ←'
+         +  '\n2. 显示目录：→ → →'
+         +  '\n3. 查看源码：→ → ↓'
      );
 }
 

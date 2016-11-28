@@ -40,6 +40,7 @@ TANG ZhiXiong，处女座，INTP：
 
 -   如果可以，请用 Firefox 浏览器浏览
 -   博客的评论系统（disqus）默认不展开，因为我讨厌它影响我页面的加载速度
+-   页面上按下 <kbd>h</kbd> 获取帮助（e.g. 按下 <kbd>&rarr;</kbd> <kbd>&rarr;</kbd> <kbd>&darr;</kbd> 查看源码）
 
 ---
 

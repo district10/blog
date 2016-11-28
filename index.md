@@ -144,7 +144,7 @@ Search:<br>
 ---
 
 <div style="text-align:center;">
-[issues](https://github.com/district10/blog/issues)
+[issues](https://github.com/district10/blog/issues){title="You can comment with a new issue. ;)"}
 </div>
 
 <link rel="stylesheet" href="auto-complete.css">

@@ -41,7 +41,6 @@ code {
 
 p code {
     padding: 0px 3px 2px;
-    white-space: nowrap;
     background-color: #f7f7f9;
     border: 1px solid #e1e1e8;
     border-radius: 3px;
@@ -312,6 +311,7 @@ div.slogan {
     margin-bottom:  50px;
     font-size: 200%;
     font-variant: small-caps;
+    line-height: 1.2;
 }
 
 blockquote {
@@ -837,4 +837,17 @@ img.w14 { max-width: 20%; }
 
 .copy {
     cursor: cell;
+}
+
+html {
+    margin: auto;
+    padding: 2px;
+}
+
+#comments {
+    margin-top: 5em;
+    color: lightgray;
+}
+#comments:hover {
+    color: black;
 }
