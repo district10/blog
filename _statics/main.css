@@ -496,7 +496,7 @@ p a img:hover {
 .posts li {
     list-style: none;
     line-height: 200%;
-    color: lightgray;
+    color: gray;
     font-family: Consolas, Inpact, Arial, Hiragino, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif, FontAwesome, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -849,5 +849,11 @@ html {
     color: lightgray;
 }
 #comments:hover {
+    color: black;
+}
+
+a.naive {
+    text-decoration: none;
+    border-bottom: none;
     color: black;
 }
