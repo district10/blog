@@ -17,7 +17,7 @@ $(document).ready(function(){
 
     $('#tocboxbody').hide();
     $( ".tzx-tabs" ).tabs();
-    $('#copyright').attr( { title: 'last edit: ' + moment( tzxChanges[tzxChanges.length-1].datetime * 1000 ).format("YYYY-MM-DD HH:mm:ss") } );
+    $('#copyright').attr( { title: 'last edit: ' + moment( tzxChanges[0].datetime * 1000 ).format("YYYY-MM-DD HH:mm:ss") } );
 
     $( "a[href^='http://']" ).attr( "target", "_blank" );
     $( "a[href^='https://']" ).attr( "target", "_blank" );
