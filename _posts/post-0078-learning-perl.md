@@ -3,10 +3,9 @@ title: Learning Perl
 date: 2015-12-17
 key-words:
 tags:
-    - perl
-    - code
-    - reading
-...
+  - learning
+  - perl
+---
 
 Learning Perl
 =============

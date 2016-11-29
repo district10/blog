@@ -3,10 +3,10 @@ title: INTP
 date: 2016-05-06
 keywords:
 tags:
-    - mbti
-    - intp
-    - psychology
-...
+  - mbti
+  - intp
+  - psychology
+---
 
 INTP
 ====
@@ -22,8 +22,13 @@ Cognitive learning styles
 
 :   The test is scored by evaluating each answer in terms of what it reveals
     about the taker. Each question is relevant to one of the following
-    cognitive learning styles. Each is not a polar opposite, but a gradual
-    continuum.
+    cognitive learning styles. Each is not a polar opposite, but a gradual continuum.
+
+    continuum
+
+    :   -   `[kən'tɪnjuəm]`
+        -   n. `[数]` 连续统；`[经]` 连续统一体；闭联集
+        -   [Continuum (measurement) - Wikipedia](https://en.wikipedia.org/wiki/Continuum_(measurement))
 
     Extraversion/Introversion
 

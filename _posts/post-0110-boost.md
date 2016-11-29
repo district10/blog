@@ -2,14 +2,11 @@
 title: Boost 库裁剪及其应用
 date: 2016-06-23
 keywords:
-    - boost
-    - hack
-    - bcp
 tags:
     - boost
     - hack
     - bcp
-...
+---
 
 Boost 库裁剪及其应用
 ====================
@@ -26,11 +23,11 @@ mpl，还有并发编程相关的 thread 库，等等等等。
 Boost 是如此强大，毫无疑问它也很大。Windows 上安装 boost 需要占用 2G+ 的空间，
 编译配置起来也十分麻烦。
 
-本文讨论的是如何不配置 boost 库而使用 boost 库。
+本文讨论的是如何**不配置 boost 库而使用 boost 库**。
 
 解决方案用一句话说就是：
 
->   裁剪 boost 库，并在项目中内嵌 boost 源码，使项目脱离对 boost 库的依赖。
+>   裁剪 boost 库，并在项目中**内嵌 boost 源码，使项目脱离对 boost 库的依赖**。
 
 ## 一个例子说明 boost 库裁剪的意义
 
@@ -67,7 +64,7 @@ int main( void )
 date '+%Y-%m-%d %H:%M:%S'        ->        2016-07-11 19:33:19
 ```
 
-这 20 行不到的代码，展示了 Linux 系统下一个常用指令 `date` 输出当前时间的效果
+这 20 行不到的代码，展示了 Linux 系统下一个常用指令 `date`{.bash} 输出当前时间的效果
 （相当于命令行下输入 `date '+%Y-%m-%d %H:%M:%S'`）。
 
 如果你的系统配置了 Boost，那就到
@@ -155,8 +152,8 @@ cmake .. && make && ./BOOST
 的 CMakeLists.txt 加上 `include_directories( ${CMAKE_SOURCE_DIR} )`；2）
 新建 libs 文件夹，把裁剪出来的 cpp 文件放到这个文件下的 MiniBoost 文件加下，
 然后参考 [district10/bcp-example-1/libs](https://github.com/district10/bcp-example-1/tree/master/libs)
-写好 CMakeLists 文件，再到根目录的 CMakeLists 文件加上 `add_subdirectory( libs)`；
-3）将裁剪出来的 miniboost 链接到我们的二进制：`target_link_libraries( ${PROJECT_NAME} MiniBoost )`。
+写好 CMakeLists 文件，再到根目录的 CMakeLists 文件加上 `add_subdirectory( libs )`；
+3）将裁剪出来的 MiniBoost 链接到我们的二进制：`target_link_libraries( ${PROJECT_NAME} MiniBoost )`。
 
 你可以仔细对比看看链接系统安装的 Boost 库和使用自带的裁剪后的 Boost 库（我把它称为 MiniBoost）
 两者的区别和联系，再一次，我们源码链接贴在这里：
@@ -165,7 +162,7 @@ cmake .. && make && ./BOOST
 -   [district10/bcp-example-1: An exmaple to show how to use bcp.](https://github.com/district10/bcp-example-1)
 
 哦对，一个需要注意的地方是，提取出来的头文件里，`boost/config/auto_link.hpp` 里的内容最好删掉，
-不然在 Windows 平台上，boost 会尝试自动链接。所以我通常把这个文件内容清空。
+不然**在 Windows 平台上，boost 会尝试自动链接**。所以我通常把这个文件内容清空。
 
 我已经看到很多次有人因为没考虑到这一点，提取出来的源码还是出现链接错误。见：
 

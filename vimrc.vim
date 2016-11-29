@@ -105,7 +105,7 @@ map Q gq            " use Q for formatting
 
 if has("gui_running")
     if has("gui_gtk2")
-        set guifont=Inconsolata\ 8
+        set guifont=Inconsolata\ 14
     elseif has("gui_macvim")
         set guifont=Menlo\ Regular:h8
     elseif has("gui_win32")

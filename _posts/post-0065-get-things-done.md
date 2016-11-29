@@ -3,11 +3,13 @@ title: Get Things Done
 date: 2015-11-19
 key-words:
 tags:
-    - gtd
+  - gtd
 ...
 
 Get Things Done
 ===============
+
+Ditched.
 
 已读：![x]
 未读：![o]

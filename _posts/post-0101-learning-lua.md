@@ -3,9 +3,9 @@ title: Learning Lua
 date: 2016-05-09
 keywords:
 tags:
+    - learning
     - lua
-    - programming
-...
+---
 
 Learning Lua
 ============

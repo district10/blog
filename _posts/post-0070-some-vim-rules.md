@@ -3,10 +3,8 @@ title: Vim Rules
 date: 2015-11-23
 key-words:
 tags:
-    - vim
-    - rule
-    - util
-...
+  - vim
+---
 
 Vim Rules
 =========
@@ -64,16 +62,16 @@ Qt::SolidPattern, `Qt::SolidPattern`{.cpp}
 
 寄存器
 
-#. `a`, `b`: temp register
-#. `c`: class: QObject &rarr; `QObject`{.cpp}
-#. `g`: namespace: Qt::Red &rarr; `Qt::Red`{.cpp}
-#. `f`: function: QObject::tr() &rarr; `QObject::tr()`{.cpp}
-#. `r`: refs
-#. `n`: now
-#. `m`:
-#. `v`:
-#. `w`:
-#. `t`: tilde: word &rarr; `word`
+#.  `a`, `b`: temp register
+#.  `c`: class: QObject &rarr; `QObject`{.cpp}
+#.  `g`: namespace: Qt::Red &rarr; `Qt::Red`{.cpp}
+#.  `f`: function: QObject::tr() &rarr; `QObject::tr()`{.cpp}
+#.  `r`: refs
+#.  `n`: now
+#.  `m`:
+#.  `v`:
+#.  `w`:
+#.  `t`: tilde: word &rarr; `word`
 
 [依云](http://lilydjwg.is-programmer.com/guestbook) 打包的包含行禁则的 Vim：
 <http://whudoc.qiniudn.com/2016/gvim74-x64.402.exe>。
@@ -83,6 +81,6 @@ Qt::SolidPattern, `Qt::SolidPattern`{.cpp}
 
 ---
 
-Refs
+refs and see also
 
-#. [pangu.vim/pangu.vim at master · hotoo/pangu.vim](https://github.com/hotoo/pangu.vim/blob/master/plugin/pangu.vim)
+#.  [pangu.vim/pangu.vim at master · hotoo/pangu.vim](https://github.com/hotoo/pangu.vim/blob/master/plugin/pangu.vim)

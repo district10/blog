@@ -3,12 +3,14 @@ title: Selected Qt Code
 date: 2015-11-28
 key-words:
 tags:
-    - qt
-    - code
-...
+  - qt
+  - code
+---
 
 Selected Qt Code
 ================
+
+TODO: merge to qt note.
 
 ```cpp
 setFlags(ItemIsSelectable | ItemIsMovable);
@@ -532,7 +534,7 @@ bool MainWindow::maybeSave()
                           tr("The image has been modified.\n"
                              "Do you want to save your changes?"),
                           QMessageBox::Save | QMessageBox::Discard
-			  | QMessageBox::Cancel);
+              | QMessageBox::Cancel);
         if (ret == QMessageBox::Save) {
             return saveFile("png");
         } else if (ret == QMessageBox::Cancel) {

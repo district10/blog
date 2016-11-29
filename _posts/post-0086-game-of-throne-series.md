@@ -2,11 +2,9 @@
 title: Game of Throne
 date: 2016-03-01
 key-words:
-    - movie
-    - tv
 tags:
-    - tv
-    - presentation
+  - tv
+  - presentation
 after-before: |
     <style>
     html {
@@ -26,15 +24,19 @@ after-before: |
     }
     img {
         border: solid 1px #CCC;
-        -moz-box-shadow: 5px 5px 0px #999;
-        -webkit-box-shadow: 5px 5px 0px #999;
-        box-shadow: 5px 5px 0px #999;
+        -webkit-box-shadow: 3px 3px 0px #999;
+        -moz-box-shadow: 3px 3px 0px #999;
+        -o-box-shadow: 3px 3px 0px #999;
+        box-shadow: 3px 3px 0px #999; // left(-)/right(+), up(-)/down(+), halo, color
         margin-left: 1em;
         margin-bottom: 1em;
     }
+    img[align="right"] {
+        padding: 0;
+    }
     a { color: gray; }
     </style>
-...
+---
 
 Game of Throne
 ==============
@@ -376,41 +378,43 @@ You learned their craft and you learned it well.
 But I grew up with soldiers, I learned how to die a long time ago.
 
 Petyr Baelish, popularly called Littlefinger,
+
 Varys, sometimes called the Spider
+
 Pycelle is the King's Grand Maester and a member of the small council, but also
 serves as a spy for Cersei Lannister.
 
-* Hand of the King: Ned Stark.
-* Master of Whisperers: Varys, known as "the Spider".
-* Grand Maester: Pycelle.
-* Master of Coin: Lord Petyr Baelish, known as "Littlefinger".
-* Master of Laws: Lord Renly Baratheon, Lord of Storm's End.
-* Master of Coin: Lord Petyr Baelish, known as "Littlefinger".
-* Master of Ships: Lord Stannis Baratheon, Lord of Dragonstone.
+-   Hand of the King: Ned Stark.
+-   Master of Whisperers: Varys, known as "the Spider".
+-   Grand Maester: Pycelle.
+-   Master of Coin: Lord Petyr Baelish, known as "Littlefinger".
+-   Master of Laws: Lord Renly Baratheon, Lord of Storm's End.
+-   Master of Coin: Lord Petyr Baelish, known as "Littlefinger".
+-   Master of Ships: Lord Stannis Baratheon, Lord of Dragonstone.
 
 ---
 
-Refs
+refs and see also
 
-#. [Arya Stark - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Arya_Stark)
-#. [Category:Characters - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Category:Characters)
-#. [Daenerys Targaryen - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Daenerys_Targaryen)
-#. [Dothraki - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Dothraki)
-#. [Eddard Stark - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Ned)
-#. [Game of Thrones Interactive Map: Are You Ready for Clash of Kings?](http://www.gameofthronesmap.org/)
-#. [House Lannister - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/House_Lannister)
-#. [House Martell - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/House_Martell)
-#. [Javert - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Javert)
-#. [Jean Valjean - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Jean_Valjean)
-#. [Joffrey Baratheon - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Joffrey_Baratheon)
-#. [Law Abiding Citizen - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Law_Abiding_Citizen)
-#. [Les Misérables: The Dream Cast in Concert - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Les_Mis%C3%A9rables:_The_Dream_Cast_in_Concert)
-#. [Narrow Sea - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Narrow_Sea)
-#. [Petyr Baelish - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Petyr_Baelish)
-#. [Small Council - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Small_council)
-#. [The Life of David Gale - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/The_Life_of_David_Gale)
-#. [Theon Greyjoy - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Theon_Greyjoy)
-#. [Tyrion Lannister - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Tyrion_Lannister)
-#. [Varys - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Varys)
-#. [Westeros - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Westeros)
-#. [Ygritte - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Ygritte)
+#.  [Arya Stark - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Arya_Stark)
+#.  [Category:Characters - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Category:Characters)
+#.  [Daenerys Targaryen - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Daenerys_Targaryen)
+#.  [Dothraki - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Dothraki)
+#.  [Eddard Stark - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Ned)
+#.  [Game of Thrones Interactive Map: Are You Ready for Clash of Kings?](http://www.gameofthronesmap.org/)
+#.  [House Lannister - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/House_Lannister)
+#.  [House Martell - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/House_Martell)
+#.  [Javert - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Javert)
+#.  [Jean Valjean - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Jean_Valjean)
+#.  [Joffrey Baratheon - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Joffrey_Baratheon)
+#.  [Law Abiding Citizen - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Law_Abiding_Citizen)
+#.  [Les Misérables: The Dream Cast in Concert - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Les_Mis%C3%A9rables:_The_Dream_Cast_in_Concert)
+#.  [Narrow Sea - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Narrow_Sea)
+#.  [Petyr Baelish - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Petyr_Baelish)
+#.  [Small Council - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Small_council)
+#.  [The Life of David Gale - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/The_Life_of_David_Gale)
+#.  [Theon Greyjoy - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Theon_Greyjoy)
+#.  [Tyrion Lannister - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Tyrion_Lannister)
+#.  [Varys - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Varys)
+#.  [Westeros - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Westeros)
+#.  [Ygritte - Game of Thrones Wiki - Wikia](http://gameofthrones.wikia.com/wiki/Ygritte)

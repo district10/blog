@@ -3,9 +3,9 @@ title: 城会玩之微软 Emotion Recognition
 date: 2015-11-13
 key-words:
 tags:
-    - ms
-    - app
-...
+  - ms
+  - app
+---
 
 城会玩之微软 Emotion Recognition
 ================================
@@ -17,7 +17,7 @@ tags:
     再看看姚明先生这张经典表情，Happy 度达 99.9%！恐怕世界上再难找到如此快乐的表情了吧？
     上传照片调戏微软传送门...](http://weibo.com/1286528122/D3FU7peRt?ref=home&rid=3_0_1_2666934344484769788&type=comment)
 
-不过，姚明的表情被我随手找了一张图片就秒杀了……而且再不可能比她更快乐了……哈哈哈，日本果然是我 Julia Roberts 女神。
+不过，姚明的表情被我随手找了一张图片就秒杀了……而且再不可能比她更快乐了……哈哈哈，果然是我 Julia Roberts 女神。
 
 ![Julia Roberts](http://gnat.qiniudn.com/pics/Julia_Roberts.png)
 
@@ -55,6 +55,6 @@ tags:
 
 ---
 
-Refs
+refs and see also
 
-#. [Microsoft Project Oxford Emotion Demo](https://www.projectoxford.ai/demo/emotion#detection)
+#.  [Microsoft Project Oxford Emotion Demo](https://www.projectoxford.ai/demo/emotion#detection)

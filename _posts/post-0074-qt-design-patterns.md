@@ -3,14 +3,16 @@ title: Introduction to Design Patterns in C++ with Qt
 date: 2015-12-08
 key-words:
 tags:
-    - cpp
-    - qt
-    - design pattern
-    - code
-...
+  - cpp
+  - qt
+  - design-pattern
+  - code
+---
 
 Introduction to Design Patterns in C++ with Qt
 ==============================================
+
+TODO: merge to qt note.
 
 <!--
 :%s/\s\+$//
@@ -39,3 +41,4 @@ QVariant ObjectBrowserModel::headerData( const int section,
     }
     return QVariant();
 }
+```

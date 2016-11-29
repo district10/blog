@@ -2,11 +2,12 @@
 title: Font Awesome
 date: 2016-03-03
 foo:
-    - bar3
-    - bar4
+  - bar3
+  - bar4
 keywords:
-    - font-awesome
-    - csshake
+tags:
+  - font-awesome
+  - csshake
 cssfile:
 #    - csshake.min.css
 #    - font-awesome.min.css
@@ -16,10 +17,12 @@ nav:
         [prev](prev.html)
     next: |
         [next](next.html)
-...
+---
 
 Font Awesome
 ============
+
+TODO: merge into <how to make this blog>.
 
 <div id="navigator"><a href="index.html"><i class="icon-home icon-2x"></i></a></div>
 

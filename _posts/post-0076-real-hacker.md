@@ -3,10 +3,9 @@ title: 膜拜大神
 date: 2015-12-13
 key-words:
 tags:
-    - hacker
-    - pandoc
-    - type setting
-...
+  - hacker
+  - pandoc
+---
 
 膜拜大神
 ========
@@ -16,7 +15,7 @@ tags:
 
 <div class="tzx-frame"><small>
 
-> 更好地混排东亚文字和西文 | Text Layout Requirements When Encountered East Asian Languages
+>   更好地混排东亚文字和西文 | Text Layout Requirements When Encountered East Asian Languages
 
 Pandoc 确实有这么一个扩展： | Pandoc does have a relevant extension:
 
@@ -100,55 +99,56 @@ an East Asia Character and this line starts with another.
 
 Pandoc 作者 [jgm (John MacFarlane)](https://github.com/jgm) 的回复：
 
-> One approach would be to implement this option using an AST filter (internal
-> to pandoc), instead of in the Markdown parser. The AST contains Space
-> elements for spaces and soft line breaks (though it doesn't currently
-> distinguish between the two---that may change soon). The filter could look
-> for and remove Space elements when they occur between two Chinese characters.
-> Note that (unlike the current approach) this would also affect line-internal
-> spaces -- they would be collapsed too. Let me know if that's not desirable.
+>   One approach would be to implement this option using an AST filter (internal
+>   to pandoc), instead of in the Markdown parser. The AST contains Space
+>   elements for spaces and soft line breaks (though it doesn't currently
+>   distinguish between the two---that may change soon). The filter could look
+>   for and remove Space elements when they occur between two Chinese characters.
+>   Note that (unlike the current approach) this would also affect line-internal
+>   spaces -- they would be collapsed too. Let me know if that's not desirable.
 >
-> Are spaces every used between two Chinese characters, or would it be safe for
-> pandoc to avoid this by default?
+>   Are spaces every used between two Chinese characters, or would it be safe for
+>   pandoc to avoid this by default?
 
 我：
 
-> Better not "affect line-internal spaces".
+>   Better not "affect line-internal spaces".
 >
-> Spaces are not ever used between two Chinese characters.
+>   Spaces are not ever used between two Chinese characters.
 >
-> Of course there would be someone in some cases to use "注 意 ！ ！ " (A T T E
-> N T I O N ! ! !), but that's not normal. And I recommend they use fullwidth
-> space (*i.e.* "　") instead of typical space (*i.e.* " "): `注 意 ！ ！`
-> &rarr; `注　意　！　！ `.
+>   Of course there would be someone in some cases to use "注 意 ！ ！ " (A T T E
+>   N T I O N ! ! !), but that's not normal. And I recommend they use fullwidth
+>   space (*i.e.* "　") instead of typical space (*i.e.* " "): `注 意 ！ ！`
+>   &rarr; `注　意　！　！ `.
 >
-> So it would be safe for pandoc to avoid this by default.
+>   So it would be safe for pandoc to avoid this by default.
 >
-> For your information, adding a space between Chinese character and western
-> character is not adopted by everyone, its more like a common rule for those
-> who care typesetting. (see
-> <https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.en.md#place-one-space-before--after-english-words>).
+>   For your information, adding a space between Chinese character and western
+>   character is not adopted by everyone, its more like a common rule for those
+>   who care typesetting. (see
+>   <https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.en.md#place-one-space-before--after-english-words>).
 >
-> But this: `fox\n` + `jumps` &rarr; `foxjumps` is bad, should be agreed by
-> everyone.
+>   But this: `fox\n` + `jumps` &rarr; `foxjumps` is bad, should be agreed by
+>   everyone.
 
-额……我就回去睡了个觉，jgm 就把这个问题弄好了……：[Implemented `east_asian_line_breaks` extension. · jgm/pandoc@44120ea](https://github.com/jgm/pandoc/commit/44120ea7165546152af88fd442c52ab0f201052e#diff-c47c7c7383225ab55ff591cb59c41e6bR3227)
+额……我就回去睡了个觉，jgm 就把这个问题弄好了……：
+[Implemented `east_asian_line_breaks` extension. · jgm/pandoc@44120ea](https://github.com/jgm/pandoc/commit/44120ea7165546152af88fd442c52ab0f201052e#diff-c47c7c7383225ab55ff591cb59c41e6bR3227)
 
 </small></div>
 
 大神的 commit message 里写道：
 
-> **Implemented `east_asian_line_breaks` extension.**
+>   **Implemented `east_asian_line_breaks` extension.**
 >
-> Text.Pandoc.Options: Added `Ext_east_asian_line_breaks` constructor to
-> `Extension` (API change).
+>   Text.Pandoc.Options: Added `Ext_east_asian_line_breaks` constructor to
+>   `Extension` (API change).
 >
-> This extension is like `ignore_line_breaks`, but smarter -- it
-> only ignores line breaks between two East Asian wide characters.
-> This makes it better suited for writing with a mix of East Asian
-> and non-East Asian scripts.
+>   This extension is like `ignore_line_breaks`, but smarter -- it
+>   only ignores line breaks between two East Asian wide characters.
+>   This makes it better suited for writing with a mix of East Asian
+>   and non-East Asian scripts.
 >
-> Closes [#2586](https://github.com/jgm/pandoc/issues/2586).
+>   Closes [#2586](https://github.com/jgm/pandoc/issues/2586).
 
 大神修改后的代码：
 
@@ -203,6 +203,7 @@ unwanted space when exporting org-mode to html."
 见：[去除 org-mode 輸出 HTML 時產生多餘的空格 | coldnew's blog](http://coldnew.github.io/blog/2013/12-17_03349/)。
 
 [^pangu-spacing]: Coldnew 还是 pangu-spacing 的作者。
+
     大赞我处女座。
 
     ![pangu-spacing 效果](http://whudoc.qiniudn.com/pangu-spacing.gif)

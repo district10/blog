@@ -3,9 +3,9 @@ title: 设计领域新风潮：Low Poly 风格
 date: 2015-11-10
 key-words:
 tags:
-    - paper
-    - design
-...
+  - paper
+  - design
+---
 
 设计领域新风潮：Low Poly 风格
 =============================
@@ -242,10 +242,10 @@ TRIGRAFF[^trigraff] 的 Delaunay 程度不够，张的 Delaunay 程度过了，
 
 ---
 
-Refs
+refs and see also
 
-#. [如何简单地把一张相片处理成低多边形 Low Poly 3D 风格效果？ - 知乎](http://www.zhihu.com/question/20875750)
-#. [设计新趋势！用 PS 和 AI 打造 Low Poly 低多边形肖像](http://pcedu.pconline.com.cn/490/4906839.html)
-#. [“低面建模”设计美学-20140726早读课 | 互联网早读课](http://zaodula.com/archives/8578.html)
-#. [如何使用 JavaScript 生成 lowpoly 风格图像？ - 知乎](http://www.zhihu.com/question/29856775)
-#. [Dribbble - Phil Klay by Breno Bitencourt](https://dribbble.com/shots/2246022-Phil-Klay)
+#.  [如何简单地把一张相片处理成低多边形 Low Poly 3D 风格效果？ - 知乎](http://www.zhihu.com/question/20875750)
+#.  [设计新趋势！用 PS 和 AI 打造 Low Poly 低多边形肖像](http://pcedu.pconline.com.cn/490/4906839.html)
+#.  [“低面建模”设计美学-20140726早读课 | 互联网早读课](http://zaodula.com/archives/8578.html)
+#.  [如何使用 JavaScript 生成 lowpoly 风格图像？ - 知乎](http://www.zhihu.com/question/29856775)
+#.  [Dribbble - Phil Klay by Breno Bitencourt](https://dribbble.com/shots/2246022-Phil-Klay)

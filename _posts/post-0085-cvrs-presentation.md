@@ -6,21 +6,22 @@ key-words:
 tags:
     - cvrs
     - presentation
-...
+# cssfile:
+#     - asciinema-player.css
+# jsfile:
+#     - asciinema-player.js
+# before-after: |
+#     <script>
+#         asciinema_player.core.CreatePlayer('player-container', 'demo.json');
+#     </script>
+---
 
 组会分享：RAMP 是什么？
 ======================
 
 <!--
-cssfile:
-    - asciinema-player.css
-jsfile:
-    - asciinema-player.js
-before-after: |
-    <script>
-        asciinema_player.core.CreatePlayer('player-container', 'demo.json');
-    </script>
 [asciinema - Record and share your terminal sessions, the right way](https://asciinema.org/)
+
 <div id="player-container"></div>
 -->
 

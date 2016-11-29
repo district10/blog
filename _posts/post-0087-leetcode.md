@@ -2,10 +2,9 @@
 title: Leet Code
 date: 2016-03-02
 key-words:
-    - leetcode
 tags:
-    - leetcode
-    - programming
+  - leetcode
+  - programming
 cssfile:
 after-before: |
     <style>
@@ -18,15 +17,19 @@ after-before: |
     </style>
 jsfile:
 before-after:
-...
+---
 
 Leet Code
 =========
 
+This post is terrible,
+Please check out <http://tangzx.qiniudn.com/notes/lang/algo.html> :smile:.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <div class="tzx-tabs">
-* [Leet Code Intro](#tab11)
-* [F.A.Q.](#tab12)
-* [Term Uses](#tab13)
+-   [Leet Code Intro](#tab11)
+-   [F.A.Q.](#tab12)
+-   [Term Uses](#tab13)
 
 <div id="tab11">
 LeetCode OJ is a platform for preparing technical coding interviews. Pick from
@@ -64,8 +67,8 @@ are defined in this Agreement.
 ---
 
 <div class="tzx-tabs">
-* [Tenth Line](#tab1q1)
-* [Tenth Line (Bash)](#tab1a1)
+-   [Tenth Line](#tab1q1)
+-   [Tenth Line (Bash)](#tab1a1)
 
 <div id="tab1q1">
 [Tenth Line | LeetCode OJ](https://leetcode.com/problems/tenth-line/)
@@ -97,8 +100,8 @@ cat file.txt | head -n 10 | tail -n 1
 </div>
 
 <div class="tzx-tabs">
-* [Single Number](#tab1q2)
-* [Single Number (C)](#tab1a2)
+-   [Single Number](#tab1q2)
+-   [Single Number (C)](#tab1a2)
 
 <div id="tab1q2">
 [Single Number | LeetCode OJ](https://leetcode.com/problems/single-number/)
@@ -129,9 +132,9 @@ int singleNumber(int* nums, int numsSize) {
 </div>
 
 <div class="tzx-tabs">
-* [Self Crossing (Median)](#tab1q3)
-* [Self Crossing (C)](#tab1a3)
-* [Self Crossing (Better C)](#line129)
+-   [Self Crossing (Median)](#tab1q3)
+-   [Self Crossing (C)](#tab1a3)
+-   [Self Crossing (Better C)](#line129)
 
 <div id="tab1q3">
 [Self Crossing | LeetCode OJ](https://leetcode.com/problems/self-crossing/)
@@ -355,8 +358,8 @@ bool isSelfCrossing( int *x, int xSize ) {
 </div>
 
 <div class="tzx-tabs">
-* [Remove Duplicates from Sorted Array (Easy)](#dup-q1)
-* [Remove Duplicates from Sorted Array (C)](#dup-a1)
+-   [Remove Duplicates from Sorted Array (Easy)](#dup-q1)
+-   [Remove Duplicates from Sorted Array (C)](#dup-a1)
 
 <div id="dup-q1">
 [Remove Duplicates from Sorted Array | LeetCode OJ](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
@@ -394,8 +397,8 @@ int removeDuplicates(int* nums, int numsSize) {
 </div>
 
 <div class="tzx-tabs">
-* [Power of Three (Easy)](#line231)
-* [Power of Three (C)](#line232)
+-   [Power of Three (Easy)](#line231)
+-   [Power of Three (C)](#line232)
 
 <div id="line231">
 [Power of Three | LeetCode OJ](https://leetcode.com/problems/power-of-three/)
@@ -418,8 +421,8 @@ bool isPowerOfThree(int n) {
 </div>
 
 <div class="tzx-tabs">
-* [Balanced Binary Tree (Easy)](#line259)
-* [Balanced Binary Tree (C)](#line260)
+-   [Balanced Binary Tree (Easy)](#line259)
+-   [Balanced Binary Tree (C)](#line260)
 
 <div id="line259">
 [Balanced Binary Tree | LeetCode OJ](https://leetcode.com/problems/balanced-binary-tree/)
@@ -473,8 +476,8 @@ bool isBalanced(struct TreeNode* root) {
 </div>
 
 <div class="tzx-tabs">
-* [Maximum Depth of Binary Tree (Easy)](#line314)
-* [Maximum Depth of Binary Tree (C)](#line315)
+-   [Maximum Depth of Binary Tree (Easy)](#line314)
+-   [Maximum Depth of Binary Tree (C)](#line315)
 
 <div id="line314">
 [Maximum Depth of Binary Tree | LeetCode OJ](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
@@ -520,8 +523,8 @@ int maxDepth(struct TreeNode* root) {
 </div>
 
 <div class="tzx-tabs">
-* [Minimum Depth of Binary Tree (Easy)](#line360)
-* [Minimum Depth of Binary Tree (C)](#line361)
+-   [Minimum Depth of Binary Tree (Easy)](#line360)
+-   [Minimum Depth of Binary Tree (C)](#line361)
 
 <div id="line360">
 [Minimum Depth of Binary Tree | LeetCode OJ](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
@@ -564,8 +567,8 @@ int minDepth(struct TreeNode* root) {
 </div>
 
 <div class="tzx-tabs">
-* [Bulb Switch (Median)](#line403)
-* [Bulb Switch (C)](#line404)
+-   [Bulb Switch (Median)](#line403)
+-   [Bulb Switch (C)](#line404)
 
 <div id="line403">
 [Bulb Switcher | LeetCode OJ](https://leetcode.com/problems/bulb-switcher/)
@@ -615,8 +618,8 @@ int bulbSwitch(int n) {
 </div>
 
 <div class="tzx-tabs">
-* [Implement Queue using Stacks (Easy)](#line450)
-* [Implement Queue using Stacks (C)](#line451)
+-   [Implement Queue using Stacks (Easy)](#line450)
+-   [Implement Queue using Stacks (C)](#line451)
 
 <div id="line450">
 [Implement Queue using Stacks | LeetCode OJ](https://leetcode.com/problems/implement-queue-using-stacks/)
@@ -683,8 +686,8 @@ void queueDestroy(Queue *queue) {
 </div>
 
 <div class="tzx-tabs">
-* [Implement Stack using Queues (Easy)](#line516)
-* [Implement Stack using Queues (C)](#line517)
+-   [Implement Stack using Queues (Easy)](#line516)
+-   [Implement Stack using Queues (C)](#line517)
 
 <div id="line516">
 [Implement Stack using Queues | LeetCode OJ](https://leetcode.com/problems/implement-stack-using-queues/)
@@ -748,8 +751,8 @@ void stackDestroy(Stack *stack) {
 </div>
 
 <div class="tzx-tabs">
-* [Binary Search Tree Iterator (Median)](#line576)
-* [Binary Search Tree Iterator (C)](#line577)
+-   [Binary Search Tree Iterator (Median)](#line576)
+-   [Binary Search Tree Iterator (C)](#line577)
 
 <div id="line576">
 [Binary Search Tree Iterator | LeetCode OJ](https://leetcode.com/problems/binary-search-tree-iterator/)
@@ -833,8 +836,8 @@ void bstIteratorFree(struct BSTIterator *iter) {
 </div>
 
 <div class="tzx-tabs">
-* [Binary Tree Inorder Traversal (Median)](#line658)
-* [Binary Tree Inorder Traversal (C)](#line659)
+-   [Binary Tree Inorder Traversal (Median)](#line658)
+-   [Binary Tree Inorder Traversal (C)](#line659)
 
 <div id="line658">
 [Binary Tree Inorder Traversal | LeetCode OJ](https://leetcode.com/problems/binary-tree-inorder-traversal/)
@@ -893,8 +896,8 @@ int* inorderTraversal(struct TreeNode* root, int* returnSize) {
 </div>
 
 <div class="tzx-tabs">
-* [Segments](#line891)
-* [Segments (C)](#line892)
+-   [Segments](#line891)
+-   [Segments (C)](#line892)
 
 <div id="line891">
 [OpenJudge - 4114:Segments](http://bailian.openjudge.cn/practice/4114/)
@@ -953,8 +956,8 @@ int* inorderTraversal(struct TreeNode* root, int* returnSize) {
 ---
 
 <div class="tzx-tabs">
-* [Roman to Integer (Easy)](#)
-* [](#)
+-   [Roman to Integer (Easy)](#)
+-   [](#)
 
 <div id="p95line952">
 Given a roman numeral, convert it to an integer.
@@ -1005,8 +1008,8 @@ int romanToInt(char* s) {
 
 <!--
 <div class="tzx-tabs">
-* [](#)
-* [](#)
+-   [](#)
+-   [](#)
 
 <div id="">
 </div>
@@ -1017,3 +1020,4 @@ int romanToInt(char* s) {
 
 [OpenJudge - G:I Love this Game!](http://www.bailian.openjudge.cn/2015finalexam/G/)
 -->
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -2,10 +2,10 @@
 title: Free Services That I Use
 date: 2016-05-23
 keywords:
-    - tool
 tags:
     - tool
-...
+    - presentation
+---
 
 ---
 
@@ -20,7 +20,7 @@ how I organize my scientific life. So, it's meta-research.
 
 How to organize your scientific life? The simple answer is, by blog posting and note taking.
 I read LIU WeiPeng's *Dark Time* years ago, there's an article annalysing why
-you should writing blogs right now. It's convincing, so I began blog posting.
+you should start writing blogs right now. It's convincing, so I began blog posting.
 
 ---
 
@@ -44,7 +44,7 @@ there is a peak.
 
 ![](http://whudoc.qiniudn.com/2016/sci/幻灯片5.PNG)
 
-GitHub the website is easy to use, but I recommend you to use the command line
+GitHub the website is easy to use, but I recommend you to use the command-line
 interface.  Instead of the official GitHub for windows. After you know how to
 clone a repo, how to commit a change, and how to push your commits, you can
 have fun on GitHub.
@@ -90,15 +90,15 @@ travis to convert my markdown file to html, then upload to qiniu.
 ![](http://whudoc.qiniudn.com/2016/sci/幻灯片7.PNG)
 
 Qiniu is a CDN, it offers 10 Gigabytes of storage for free. And also several
-commandline tools for file uploading.
+command-line tools for file uploading.
 
 ---
 
 ![](http://whudoc.qiniudn.com/2016/sci/幻灯片8.PNG)
 
-When I commit some changes to my repo, travis will be notified.  It'll build my
-website under my instructions and upload to qiniu, then you can visit it, at
-<http://tangzx.qiniudn.com>.
+When I commit some changes to my repo, travis will be notified (there's a hook).
+It'll build my website under my instructions and upload to qiniu, then you
+can visit it, at <http://tangzx.qiniudn.com>.
 
 ---
 

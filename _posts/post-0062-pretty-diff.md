@@ -3,9 +3,9 @@ title: Pretty Diff | 听歌学英语
 date: 2015-11-18
 key-words:
 tags:
-    - diff
-    - util
-...
+  - diff
+  - util
+---
 
 Pretty Diff | 听歌学英语
 ========================
@@ -13,13 +13,13 @@ Pretty Diff | 听歌学英语
 昨晚一个想法击中了我。既然要练听力（虽然寡人水平已经很高[^fallback]），为什么不每天在
 虾米上听一首歌，然后把歌词 dictate 出来呢？
 
-[^fallback]: 通常我都这么吹牛：“哥四级听力 230（满分 248），看电影需要字幕么？！”
+[^fallback]: 通常我都这么吹牛：“哥四级听力 230（满分 248），看电影需要字幕么？！” (Surely I need...) :smile:
 
 这是一个好主意，但我们需要一点自动化：
 
-1. 能够显示我听对和听错的部分
-2. 能够分享第一点
-3. 第二点要足够好看
+1.  能够显示我听对和听错的部分
+2.  能够分享第一点
+3.  第二点要足够好看
 
 如果只满足前两点
 ----------------
@@ -67,26 +67,26 @@ But you tell me to go（这行新添加）
 
 然后我就必应、GitHub、百度、StackOverflow 各种搜，用到的关键词有
 
-#. pretty diff
-#. diff html output
-#. git diff pretty print
-#. kompare
-#. git diff not show hash tag
-#. git diff not show header
-#. git diff status
-#. *etc*
+#.  pretty diff
+#.  diff html output
+#.  git diff pretty print
+#.  kompare
+#.  git diff not show hash tag
+#.  git diff not show header
+#.  git diff status
+#.  *etc.*
 
 先是找到一个 jsdifflib，但效果很糟糕。
 
-![diff via jsdifflib][jsdifflib]
+![diff via jsdifflib](http://gnat.qiniudn.com/diffed/jsdifflib.png)
 
 然后想到了 GitHub，上面的代码 diff 可是极其赞的。我本想它能 diff 出这种效果：
 
-![][github-diff]
+![](http://gnat.qiniudn.com/diffed/github-diff.png)
 
 结果却是：
 
-![][github-diff-terrible]
+![](http://gnat.qiniudn.com/diffed/github-diff-terrible.png)
 
 大失所望，大失所望。
 
@@ -102,12 +102,12 @@ But you tell me to go（这行新添加）
 
 用 `git diff --no-index --color-words _a.txt _b.txt`{.bash}，效果很满意：
 
-![][git-diff]
+![](http://gnat.qiniudn.com/diffed/git-diff.png)
 
 Git 我也不熟，又去查文档，看到
 
-#. `--no-index` 是说 diff 的是文件系统里的文件，而不是 Git Repository 里的文件
-#. `--color-words` 是说按照单词来显示 diff 结果，而不是行
+#.  `--no-index` 是说 diff 的是文件系统里的文件，而不是 Git Repository 里的文件
+#.  `--color-words` 是说按照单词来显示 diff 结果，而不是行
 
 这个指令出来的结果在命令行下是彩色，其实用的是 "ANSI" 颜色表示法，输出的文本为：
 
@@ -124,7 +124,8 @@ When you don't want me to move（这行不变）ESC[m
 ESC[32mBut you tell me to go（这行新添加）ESC[m
 ```
 
-在 [Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook](post-0024-linux-shell-scripting-cookbook.html) 这篇笔记了也讲到过。^[虽然那时没说这是 ANSI 颜色表示法。]
+在 [Linux Shell 脚本菜谱 | Linux Shell Scripting Cookbook](post-0024-linux-shell-scripting-cookbook.html) 这篇笔记了也讲到过。
+^[虽然那时没说这是 ANSI 颜色表示法。]
 
 最后问题转化为如何把 ANSI 标记的文本转化为 HTML。我到 GitHub 上一搜，结果就出来了：[theZiz/aha](https://github.com/theZiz/aha)。
 
@@ -178,16 +179,11 @@ When you don't want me to move（这行不变）
 
 ---
 
-Refs
+refs and see also
 
-#. [theZiz/aha](https://github.com/theZiz/aha)
-#. [Coloured Git diff to HTML - Stack Overflow](http://stackoverflow.com/questions/2013091/coloured-git-diff-to-html)
-#. [diff to html (diff2html) program - Stack Overflow](http://stackoverflow.com/questions/641055/diff-to-html-diff2html-program)
-#. [读懂 diff - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2012/08/how_to_read_diff.html)
-#. [Terminal colour highlights](http://www.pixelbeat.org/docs/terminal_colours/)
-#. [git-diff(1)](https://www.kernel.org/pub/software/scm/git/docs/git-diff.html)
-
-[jsdifflib]: http://gnat.qiniudn.com/diffed/jsdifflib.png
-[github-diff]: http://gnat.qiniudn.com/diffed/github-diff.png
-[github-diff-terrible]: http://gnat.qiniudn.com/diffed/github-diff-terrible.png
-[git-diff]: http://gnat.qiniudn.com/diffed/git-diff.png
+#.  [theZiz/aha](https://github.com/theZiz/aha)
+#.  [Coloured Git diff to HTML - Stack Overflow](http://stackoverflow.com/questions/2013091/coloured-git-diff-to-html)
+#.  [diff to html (diff2html) program - Stack Overflow](http://stackoverflow.com/questions/641055/diff-to-html-diff2html-program)
+#.  [读懂 diff - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2012/08/how_to_read_diff.html)
+#.  [Terminal colour highlights](http://www.pixelbeat.org/docs/terminal_colours/)
+#.  [git-diff(1)](https://www.kernel.org/pub/software/scm/git/docs/git-diff.html)

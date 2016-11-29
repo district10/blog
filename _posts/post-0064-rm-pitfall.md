@@ -3,9 +3,9 @@ title: 一个空格引发的惨剧（remix）
 date: 2015-11-19
 key-words:
 tags:
-    - remix
-    - linux
-...
+  - remix
+  - linux
+---
 
 一个空格引发的惨剧（remix）
 ==========================

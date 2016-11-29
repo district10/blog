@@ -2,32 +2,24 @@
 title: Kaggle
 date: 2016-03-07
 key-words:
-    - key
 tags:
-    - tag
+  - kaggle
 cssfile:
     - font-awesome.min.css
 after-before: |
-    <style>
-    .tzx-tabs ul li a:hover {
-        border-bottom: none;
-    }
-    pre {
-        font-size: 80%;
-    }
-    </style>
+    <style> pre { font-size: 80%; } </style>
 before-after:
-...
+---
 
 Kaggle
 ======
 
 <div class="tzx-tabs">
-* [Kaggle Intro](#p0line20)
-* [Prizes](#p31line21)
-* [Evaluation](#p60line34)
-* [Competition Rules](#p31line42)
-* [Other Useful Info](#p26line24)
+-   [Kaggle Intro](#p0line20)
+-   [Prizes](#p31line21)
+-   [Evaluation](#p60line34)
+-   [Competition Rules](#p31line42)
+-   [Other Useful Info](#p26line24)
 
 <div id="p0line20">
 Kaggle is the world's largest community of data scientists. They compete with
@@ -89,8 +81,6 @@ leaderboard.
 * Rules Acceptance: I accepted these rules at 7:06 am, Monday 7 March 2016 UTC.
 </div>
 </div>
-
----
 
 Tutorials
 
@@ -155,9 +145,6 @@ TODO
 
 ---
 
-Refs
+refs and see also
 
-#. [Kernel density estimation - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Kernel_density_estimation)
-
----
-
+#.  [Kernel density estimation - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Kernel_density_estimation)

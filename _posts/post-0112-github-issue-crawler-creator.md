@@ -1,12 +1,14 @@
 ---
-title: Git Issues 的爬取和展示以及用一个 repo 来备份和同步
+title: GitHub Issues 的爬取和展示以及用一个 repo 来备份和同步
 date: 2016-07-16
 keywords:
 tags:
+  - github
+  - project
 ...
 
-Git Issues 的爬取和展示以及用一个 repo 来备份和同步
-==========
+GitHub Issues 的爬取和展示以及用一个 repo 来备份和同步
+======================================================
 
 参考文档：[Issues | GitHub Developer Guide](https://developer.github.com/v3/issues/)。
 

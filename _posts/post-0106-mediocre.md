@@ -2,12 +2,10 @@
 title: 《疯狂的麦克斯》里的 Mediocre 是傻逼的意思吗？
 date: 2016-05-25
 keywords:
-    - mediocre
-    - movie
 tags:
-    - mediocre
-    - movie
-...
+  - movie
+  - critics
+---
 
 《疯狂的麦克斯》里的 Mediocre 是傻逼的意思吗？
 =============================================

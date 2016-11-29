@@ -2,25 +2,26 @@
 title: 100 Things Every Designer Needs to Know About People
 date: 2016-01-11
 key-words:
-    - design
 tags:
-    - design
-...
+  - design
+---
 
 100 Things Every Designer Needs to Know About People
 ====================================================
+
+TODO
 
 ## How People See
 
 ### 1. WHAT YOU SEE ISN’T WHAT YOUR BRAIN GETS
 
 THE BRAIN CREATES SHORTCUTS
+
 Your brain creates these shortcuts in order to quickly make sense out of the world
 around you. Your brain receives millions of sensory inputs every second (the estimate is
 40 million) and it’s trying to make sense of all of that input. It uses rules of thumb, based
 on past experience, to make guesses about what you see. Most of the time that works,
 but sometimes it causes errors.
-
 
 If you need to see in the dark, don’t look straight ahead.
 
@@ -29,7 +30,7 @@ If you need to see in the dark, don’t look straight ahead.
     central. So if you’re in low light, you’ll see better if you don’t look right at the area you’re
     trying to see.
 
-![Optical illusions show us the errors](samelength.png)
+![Optical illusions show us the errors](http://whudoc.qiniudn.com/2016/samelength.png)
 
 We see in 2D, not 3D
 The visual cortex puts all the information together
@@ -37,12 +38,11 @@ The visual cortex puts all the information together
 takeaways
 
 :   What you think people are going to see on your Web page may not be what they do
-see. It might depend on their background, knowledge, familiarity with what they are
-looking at, and expectations.
+    see. It might depend on their background, knowledge, familiarity with what
+    they are looking at, and expectations.
 
-    You might be able to persuade people to see things in a certain way, depending on
-how they are presented.
-
+    You might be able to persuade people to see things in a certain way,
+    depending on how they are presented.
 
 ### 2. PERIPHERAL VISION IS USED MORE THAN CENTRAL VISION TO GET THE GIST OF WHAT YOU SEE
 
@@ -55,13 +55,14 @@ Peripheral vision kept our ancestors alive on the savannah
 
 takeways
 
-People use peripheral vision when they look at a computer screen, and usually decide
-what a page is about based on a quick glimpse of what is in their peripheral vision.
-Although the middle of the screen is important for central vision, don’t ignore what is
-in the viewers’ peripheral vision. Make sure the information in the periphery communi-
-cates clearly the purpose of the page and the site.
-If you want users to concentrate on a certain part of the screen, don’t put animation or
-blinking elements in their peripheral vision.
+:   People use peripheral vision when they look at a computer screen, and
+    usually decide what a page is about based on a quick glimpse of what is in
+    their peripheral vision.  Although the middle of the screen is important
+    for central vision, don’t ignore what is in the viewers’ peripheral vision.
+    Make sure the information in the periphery communi- cates clearly the
+    purpose of the page and the site.  If you want users to concentrate on a
+    certain part of the screen, don’t put animation or blinking elements in
+    their peripheral vision.
 
 ### 3. PEOPLE IDENTIFY OBJECTS BY RECOGNIZING PATTERNS
 
@@ -80,35 +81,34 @@ form the building blocks of all the objects we see and identify.
 
 takeaways
 
-Use patterns as much as possible, since people will automatically be looking for them.
-Use grouping and white space to create patterns.
-If you want people to recognize an object (for example, an icon), use a simple geomet-
-ric drawing of the object. This will make it easier to recognize the underlying geons,
-and thus make the object easier and faster to recognize.
-Favor 2D elements over 3D ones. The eyes communicate what they see to the brain
-as a 2D object. 3D representations on the screen may actually slow down recognition
-and comprehension.
+:   Use patterns as much as possible, since people will automatically be
+    looking for them.  Use grouping and white space to create patterns.  If you
+    want people to recognize an object (for example, an icon), use a simple
+    geomet- ric drawing of the object. This will make it easier to recognize
+    the underlying geons, and thus make the object easier and faster to
+    recognize.  Favor 2D elements over 3D ones. The eyes communicate what they
+    see to the brain as a 2D object. 3D representations on the screen may
+    actually slow down recognition and comprehension.
 
 ### 4. THERE’S A SPECIAL PART OF THE BRAIN JUST FOR RECOGNIZING FACES
 
-Imagine that you’re walking down a busy street in a large city when you suddenly see
-the face of a family member. Even if you were not expecting to see this person, and
-even if there are dozens, or even hundreds, of people in your visual field, you will imme-
-diately recognize him or her as your relative. You’ll also have an accompanying emo-
-tional response, be it love, hate, fear, or otherwise.
-Although the visual cortex is huge and takes up significant brain resources, there is
-a special part of the brain outside the visual cortex whose sole purpose is to recognize
-faces. Identified by Nancy Kanwisher (1997), the fusiform face area (FFA) allows faces to
-bypass the brain’s usual interpretive channels and helps us identify them more quickly
-than objects. The FFA is also near the amygdala, the brain’s emotional center.
+Imagine that you’re walking down a busy street in a large city when you
+suddenly see the face of a family member. Even if you were not expecting to see
+this person, and even if there are dozens, or even hundreds, of people in your
+visual field, you will imme- diately recognize him or her as your relative.
+You'll also have an accompanying emo- tional response, be it love, hate, fear,
+or otherwise.  Although the visual cortex is huge and takes up significant
+brain resources, there is a special part of the brain outside the visual cortex
+whose sole purpose is to recognize faces. Identified by Nancy Kanwisher (1997),
+the fusiform face area (FFA) allows faces to bypass the brain’s usual
+interpretive channels and helps us identify them more quickly than objects. The
+FFA is also near the amygdala, the brain’s emotional center.
 
-- People with autism don’t view faces with the FFA
-- We look where the face looks
-
-![](we-look-where-the-person-looks)
-- People are born with a preference for faces
-- The eyes have it: people decide who and what is alive by looking
-at the eyes
+-   People with autism don’t view faces with the FFA
+-   We look where the face looks
+      ~ ![](http://whudoc.qiniudn.com/2016/we-look-where-the-person-looks.png)
+-   People are born with a preference for faces
+-   The eyes have it: people decide who and what is alive by looking at the eyes
 
 takeaways
 
@@ -124,10 +124,10 @@ it, just that they physically looked at it.
 
 takeaways
 
-People recognize a drawing or object faster and remember it better if it’s shown in the
-canonical perspective.
-If you have icons at your Web site or in your Web or software application, draw them
-from a canonical perspective.
+:   People recognize a drawing or object faster and remember it better if it’s shown in the
+    canonical perspective.
+    If you have icons at your Web site or in your Web or software application, draw them
+    from a canonical perspective.
 
 ### 6. PEOPLE SCAN SCREENS BASED ON PAST EXPERIENCE AND EXPECTATIONS
 
@@ -151,7 +151,7 @@ screen to accomplish a task.
 
 ### 7. PEOPLE SEE CUES THAT TELL THEM WHAT TO DO WITH AN OBJECT
 
-![This door handle reads PUSH but its design encourages you to pull](misleading-handle.png)
+![This door handle reads PUSH but its design encourages you to pull](http://whudoc.qiniudn.com/2016/misleading-handle.png)
 
 - PERCEIVED AFFORDANCES ON COMPUTER SCREENS
 - HYPERLINKS ARE LOSING THEIR AFFORDANCE CUES
@@ -187,7 +187,7 @@ tance to it or use it as the main basis for design decisions.
 
 ### 9. PEOPLE BELIEVE THAT THINGS THAT ARE CLOSE TOGETHER BELONG TOGETHER
 
-![](pictures-belong-to-which-story)
+![](http://whudoc.qiniudn.com/2016/pictures-belong-to-which-story.png)
 
 takeaways
 
@@ -366,7 +366,7 @@ understand.
 
 ### 16. FONT SIZE MATTERS
 
-![](font-parameters)
+![](http://whudoc.qiniudn.com/2016/font-parameters.png)
 
 takeaways
 
@@ -1030,13 +1030,3 @@ you know that the study participants were all from one geographical region. Be c
 of overgeneralizing.
 
 ## How people focus their attention
-
-![](http://whudoc.qiniudn.com/2016/font-parameters.png)
-
-![](http://whudoc.qiniudn.com/2016/misleading-handle.png)
-
-![](http://whudoc.qiniudn.com/2016/pictures-belong-to-which-story.png)
-
-![](http://whudoc.qiniudn.com/2016/samelength.png)
-
-![](http://whudoc.qiniudn.com/2016/we-look-where-the-person-looks.png)

@@ -3,9 +3,9 @@ title: 在 Windows 系统上学编程
 date: 2015-11-15
 key-words:
 tags:
-    - windows
-    - coding
-...
+  - windows
+  - coding
+---
 
 在 Windows 系统上学编程
 =======================

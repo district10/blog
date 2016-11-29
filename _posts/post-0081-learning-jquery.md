@@ -2,12 +2,10 @@
 title: Learning jQuery
 date: 2015-12-25
 key-words:
-    - jQuery
 tags:
-    - jquery
-    - front end
-    - js
-...
+  - jquery
+  - javascript
+---
 
 Learning jQuery
 ===============

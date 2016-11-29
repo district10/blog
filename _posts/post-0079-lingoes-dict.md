@@ -3,15 +3,15 @@ title: Lingoes 网络词典
 date: 2015-12-17
 key-words:
 tags:
-    - lingoes
-    - app
-    - windows
-...
+  - lingoes
+  - app
+  - windows
+---
 
 Lingoes 网络词典
 ================
 
-![Lingoes](http://www.lingoes.cn/ads/lingoes_64x64.png)
+![Lingoes](http://www.lingoes.cn/ads/lingoes_64x64.png){align=right}
 
 很多人都用有道词典，我也是。但我不用它的客户端，就跟我不用搜狗输入法一样：因为它有我不喜欢的广告。
 

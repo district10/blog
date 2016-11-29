@@ -3,14 +3,14 @@ title: 一些脚本（豆瓣，etc）
 date: 2015-11-16
 key-words:
 tags:
-    - douban
-    - script
-    - shell
-    - js
-...
+  - douban
+  - script
+  - shell
+  - js
+---
 
 一些脚本（豆瓣，etc）
-==================
+=====================
 
 豆瓣脚本
 --------

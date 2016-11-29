@@ -4,7 +4,8 @@ date: 2016-05-09
 keywords:
 tags:
     - panbook
-...
+    - project
+---
 
 PanBook
 =======

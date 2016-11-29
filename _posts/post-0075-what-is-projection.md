@@ -3,11 +3,11 @@ title: 什么是投影？
 date: 2015-12-08
 key-words:
 tags:
-    - math
-    - linear algebra
-    - projection
-    - koan
-...
+  - math
+  - linear-algebra
+  - projection
+  - koan
+---
 
 什么是投影？
 ===========
@@ -109,8 +109,8 @@ $\vec a$ 上的 $\vec p$ 即是我们要的。下面还有一幅图，里面的 
 
 这里的 $$A(A^TA)^{-1}A^T$$ 记作投影矩阵 $P$，有性质
 
-#. $P^2 = P$
-#. $P^T = P$
+#.  $P^2 = P$
+#.  $P^T = P$
 
 下面这张图很重要，能给你很大的 intuition。
 假定 $A^{m\times n}$ 是数域 $F$ 上 m &times; n 维矩阵。$\vec b$ 在线性空间 $F^n$ 中，投影到了 Col(A) 为 $\vec p$，误差为 $\vec e$，
@@ -125,6 +125,6 @@ $\vec a$ 上的 $\vec p$ 即是我们要的。下面还有一幅图，里面的 
 
 ---
 
-Refs
+refs and see also
 
-#. 我的笔记本（笔记本参考 MIT Linear Algebra 课程）。
+#.  我的笔记本（笔记本参考 MIT Linear Algebra 课程）。

@@ -3,12 +3,14 @@ title: All About Encoding
 date: 2015-11-19
 keywords:
 tags:
-    - encoding
-    - utf-8
-...
+  - encoding
+  - utf-8
+---
 
 All About Encoding
 ==================
+
+See my notes.
 
 ## ASCII
 

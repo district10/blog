@@ -3,358 +3,55 @@ title: Pandoc User's Guide
 author: John MacFarlane
 date: 2006-10-17
 keywords:
-    - pandoc
+  - pandoc
 tags:
-    - pandoc
-...
+  - pandoc
+---
 
 Pandoc User's Guide
 ===================
 
-\newcommand{\tuple}[1]{\langle #1 \rangle}
-
 > 这是 [Pandoc 的官方文档](http://pandoc.org/README.html) 在本站的效果。
 
-<div class="tzx-drawer" shy>
-Notes
+<https://raw.githubusercontent.com/jgm/pandoc/master/README.md>
 
-:   <div class="tzx-drawer" shy>
-    [Emojis](https://github.com/jgm/pandoc/blob/09b4f294bf4584f0010abc331b7e44bb26189865/src/Text/Pandoc/Emoji.hs)
+Pandoc
+======
 
-    :   :+1:, :-1:, :100:, :1234:, :8ball:, :a:, :ab:, :abc:, :abcd:, :accept:,
-        :aerial_tramway:, :airplane:, :alarm_clock:, :alien:, :ambulance:,
-        :anchor:, :angel:, :anger:, :angry:, :anguished:, :ant:, :apple:,
-        :aquarius:, :aries:, :arrow_backward:, :arrow_double_down:,
-        :arrow_double_up:, :arrow_down:, :arrow_down_small:, :arrow_forward:,
-        :arrow_heading_down:, :arrow_heading_up:, :arrow_left:, :arrow_lower_left:,
-        :arrow_lower_right:, :arrow_right:, :arrow_right_hook:, :arrow_up:,
-        :arrow_up_down:, :arrow_up_small:, :arrow_upper_left:, :arrow_upper_right:,
-        :arrows_clockwise:, :arrows_counterclockwise:, :art:, :articulated_lorry:,
-        :astonished:, :athletic_shoe:, :atm:, :b:, :baby:, :baby_bottle:,
-        :baby_chick:, :baby_symbol:, :back:, :baggage_claim:, :balloon:,
-        :ballot_box_with_check:, :bamboo:, :banana:, :bangbang:, :bank:,
-        :bar_chart:, :barber:, :baseball:, :basketball:, :bath:, :bathtub:,
-        :battery:, :bear:, :bee:, :beer:, :beers:, :beetle:, :beginner:, :bell:,
-        :bento:, :bicyclist:, :bike:, :bikini:, :bird:, :birthday:, :black_circle:,
-        :black_joker:, :black_large_square:, :black_medium_small_square:,
-        :black_medium_square:, :black_nib:, :black_small_square:,
-        :black_square_button:, :blossom:, :blowfish:, :blue_book:, :blue_car:,
-        :blue_heart:, :blush:, :boar:, :boat:, :bomb:, :book:, :bookmark:,
-        :bookmark_tabs:, :books:, :boom:, :boot:, :bouquet:, :bow:, :bowling:,
-        :boy:, :bread:, :bride_with_veil:, :bridge_at_night:, :briefcase:,
-        :broken_heart:, :bug:, :bulb:, :bullettrain_front:, :bullettrain_side:,
-        :bus:, :busstop:, :bust_in_silhouette:, :busts_in_silhouette:, :cactus:,
-        :cake:, :calendar:, :calling:, :camel:, :camera:, :cancer:, :candy:,
-        :capital_abcd:, :capricorn:, :car:, :card_index:, :carousel_horse:, :cat:,
-        :cat2:, :cd:, :chart:, :chart_with_downwards_trend:,
-        :chart_with_upwards_trend:, :checkered_flag:, :cherries:, :cherry_blossom:,
-        :chestnut:, :chicken:, :children_crossing:, :chocolate_bar:,
-        :christmas_tree:, :church:, :cinema:, :circus_tent:, :city_sunrise:,
-        :city_sunset:, :cl:, :clap:, :clapper:, :clipboard:, :clock1:, :clock10:,
-        :clock1030:, :clock11:, :clock1130:, :clock12:, :clock1230:, :clock130:,
-        :clock2:, :clock230:, :clock3:, :clock330:, :clock4:, :clock430:, :clock5:,
-        :clock530:, :clock6:, :clock630:, :clock7:, :clock730:, :clock8:,
-        :clock830:, :clock9:, :clock930:, :closed_book:, :closed_lock_with_key:,
-        :closed_umbrella:, :cloud:, :clubs:, :cn:, :cocktail:, :coffee:,
-        :cold_sweat:, :collision:, :computer:, :confetti_ball:, :confounded:,
-        :confused:, :congratulations:, :construction:, :construction_worker:,
-        :convenience_store:, :cookie:, :cool:, :cop:, :copyright:, :corn:,
-        :couple:, :couple_with_heart:, :couplekiss:, :cow:, :cow2:, :credit_card:,
-        :crescent_moon:, :crocodile:, :crossed_flags:, :crown:, :cry:,
-        :crying_cat_face:, :crystal_ball:, :cupid:, :curly_loop:,
-        :currency_exchange:, :curry:, :custard:, :customs:, :cyclone:, :dancer:,
-        :dancers:, :dango:, :dart:, :dash:, :date:, :de:, :deciduous_tree:,
-        :department_store:, :diamond_shape_with_a_dot_inside:, :diamonds:,
-        :disappointed:, :disappointed_relieved:, :dizzy:, :dizzy_face:,
-        :do_not_litter:, :dog:, :dog2:, :dollar:, :dolls:, :dolphin:, :door:,
-        :doughnut:, :dragon:, :dragon_face:, :dress:, :dromedary_camel:, :droplet:,
-        :dvd:, :e-mail:, :ear:, :ear_of_rice:, :earth_africa:, :earth_americas:,
-        :earth_asia:, :egg:, :eggplant:, :eight:, :eight_pointed_black_star:,
-        :eight_spoked_asterisk:, :electric_plug:, :elephant:, :email:, :end:,
-        :envelope:, :envelope_with_arrow:, :es:, :euro:, :european_castle:,
-        :european_post_office:, :evergreen_tree:, :exclamation:, :expressionless:,
-        :eyeglasses:, :eyes:, :facepunch:, :factory:, :fallen_leaf:, :family:,
-        :fast_forward:, :fax:, :fearful:, :feet:, :ferris_wheel:, :file_folder:,
-        :fire:, :fire_engine:, :fireworks:, :first_quarter_moon:,
-        :first_quarter_moon_with_face:, :fish:, :fish_cake:,
-        :fishing_pole_and_fish:, :fist:, :five:, :flags:, :flashlight:, :flipper:,
-        :floppy_disk:, :flower_playing_cards:, :flushed:, :foggy:, :football:,
-        :footprints:, :fork_and_knife:, :fountain:, :four:, :four_leaf_clover:,
-        :fr:, :free:, :fried_shrimp:, :fries:, :frog:, :frowning:, :fuelpump:,
-        :full_moon:, :full_moon_with_face:, :game_die:, :gb:, :gem:, :gemini:,
-        :ghost:, :gift:, :gift_heart:, :girl:, :globe_with_meridians:, :goat:,
-        :golf:, :grapes:, :green_apple:, :green_book:, :green_heart:,
-        :grey_exclamation:, :grey_question:, :grimacing:, :grin:, :grinning:,
-        :guardsman:, :guitar:, :gun:, :haircut:, :hamburger:, :hammer:, :hamster:,
-        :hand:, :handbag:, :hankey:, :hash:, :hatched_chick:, :hatching_chick:,
-        :headphones:, :hear_no_evil:, :heart:, :heart_decoration:, :heart_eyes:,
-        :heart_eyes_cat:, :heartbeat:, :heartpulse:, :hearts:, :heavy_check_mark:,
-        :heavy_division_sign:, :heavy_dollar_sign:, :heavy_exclamation_mark:,
-        :heavy_minus_sign:, :heavy_multiplication_x:, :heavy_plus_sign:,
-        :helicopter:, :herb:, :hibiscus:, :high_brightness:, :high_heel:, :hocho:,
-        :honey_pot:, :honeybee:, :horse:, :horse_racing:, :hospital:, :hotel:,
-        :hotsprings:, :hourglass:, :hourglass_flowing_sand:, :house:,
-        :house_with_garden:, :hushed:, :ice_cream:, :icecream:, :id:,
-        :ideograph_advantage:, :imp:, :inbox_tray:, :incoming_envelope:,
-        :information_desk_person:, :information_source:, :innocent:, :interrobang:,
-        :iphone:, :it:, :izakaya_lantern:, :jack_o_lantern:, :japan:,
-        :japanese_castle:, :japanese_goblin:, :japanese_ogre:, :jeans:, :joy:,
-        :joy_cat:, :jp:, :key:, :keycap_ten:, :kimono:, :kiss:, :kissing:,
-        :kissing_cat:, :kissing_closed_eyes:, :kissing_heart:,
-        :kissing_smiling_eyes:, :knife:, :koala:, :koko:, :kr:, :lantern:,
-        :large_blue_circle:, :large_blue_diamond:, :large_orange_diamond:,
-        :last_quarter_moon:, :last_quarter_moon_with_face:, :laughing:, :leaves:,
-        :ledger:, :left_luggage:, :left_right_arrow:, :leftwards_arrow_with_hook:,
-        :lemon:, :leo:, :leopard:, :libra:, :light_rail:, :link:, :lips:,
-        :lipstick:, :lock:, :lock_with_ink_pen:, :lollipop:, :loop:, :loud_sound:,
-        :loudspeaker:, :love_hotel:, :love_letter:, :low_brightness:, :m:, :mag:,
-        :mag_right:, :mahjong:, :mailbox:, :mailbox_closed:, :mailbox_with_mail:,
-        :mailbox_with_no_mail:, :man:, :man_with_gua_pi_mao:, :man_with_turban:,
-        :mans_shoe:, :maple_leaf:, :mask:, :massage:, :meat_on_bone:, :mega:,
-        :melon:, :memo:, :mens:, :metro:, :microphone:, :microscope:, :milky_way:,
-        :minibus:, :minidisc:, :mobile_phone_off:, :money_with_wings:, :moneybag:,
-        :monkey:, :monkey_face:, :monorail:, :moon:, :mortar_board:, :mount_fuji:,
-        :mountain_bicyclist:, :mountain_cableway:, :mountain_railway:, :mouse:,
-        :mouse2:, :movie_camera:, :moyai:, :muscle:, :mushroom:,
-        :musical_keyboard:, :musical_note:, :musical_score:, :mute:, :nail_care:,
-        :name_badge:, :necktie:, :negative_squared_cross_mark:, :neutral_face:,
-        :new:, :new_moon:, :new_moon_with_face:, :newspaper:, :ng:,
-        :night_with_stars:, :nine:, :no_bell:, :no_bicycles:, :no_entry:,
-        :no_entry_sign:, :no_good:, :no_mobile_phones:, :no_mouth:,
-        :no_pedestrians:, :no_smoking:, :non-potable_water:, :nose:, :notebook:,
-        :notebook_with_decorative_cover:, :notes:, :nut_and_bolt:, :o:, :o2:,
-        :ocean:, :octopus:, :oden:, :office:, :ok:, :ok_hand:, :ok_woman:,
-        :older_man:, :older_woman:, :on:, :oncoming_automobile:, :oncoming_bus:,
-        :oncoming_police_car:, :oncoming_taxi:, :one:, :open_book:,
-        :open_file_folder:, :open_hands:, :open_mouth:, :ophiuchus:, :orange_book:,
-        :outbox_tray:, :ox:, :package:, :page_facing_up:, :page_with_curl:,
-        :pager:, :palm_tree:, :panda_face:, :paperclip:, :parking:,
-        :part_alternation_mark:, :partly_sunny:, :passport_control:, :paw_prints:,
-        :peach:, :pear:, :pencil:, :pencil2:, :penguin:, :pensive:,
-        :performing_arts:, :persevere:, :person_frowning:,
-        :person_with_blond_hair:, :person_with_pouting_face:, :phone:, :pig:,
-        :pig2:, :pig_nose:, :pill:, :pineapple:, :pisces:, :pizza:, :point_down:,
-        :point_left:, :point_right:, :point_up:, :point_up_2:, :police_car:,
-        :poodle:, :poop:, :post_office:, :postal_horn:, :postbox:, :potable_water:,
-        :pouch:, :poultry_leg:, :pound:, :pouting_cat:, :pray:, :princess:,
-        :punch:, :purple_heart:, :purse:, :pushpin:, :put_litter_in_its_place:,
-        :question:, :rabbit:, :rabbit2:, :racehorse:, :radio:, :radio_button:,
-        :rage:, :railway_car:, :rainbow:, :raised_hand:, :raised_hands:,
-        :raising_hand:, :ram:, :ramen:, :rat:, :recycle:, :red_car:, :red_circle:,
-        :registered:, :relaxed:, :relieved:, :repeat:, :repeat_one:, :restroom:,
-        :revolving_hearts:, :rewind:, :ribbon:, :rice:, :rice_ball:,
-        :rice_cracker:, :rice_scene:, :ring:, :rocket:, :roller_coaster:,
-        :rooster:, :rose:, :rotating_light:, :round_pushpin:, :rowboat:, :ru:,
-        :rugby_football:, :runner:, :running:, :running_shirt_with_sash:, :sa:,
-        :sagittarius:, :sailboat:, :sake:, :sandal:, :santa:, :satellite:,
-        :satisfied:, :saxophone:, :school:, :school_satchel:, :scissors:,
-        :scorpius:, :scream:, :scream_cat:, :scroll:, :seat:, :secret:,
-        :see_no_evil:, :seedling:, :seven:, :shaved_ice:, :sheep:, :shell:, :ship:,
-        :shirt:, :shit:, :shoe:, :shower:, :signal_strength:, :six:,
-        :six_pointed_star:, :ski:, :skull:, :sleeping:, :sleepy:, :slot_machine:,
-        :small_blue_diamond:, :small_orange_diamond:, :small_red_triangle:,
-        :small_red_triangle_down:, :smile:, :smile_cat:, :smiley:, :smiley_cat:,
-        :smiling_imp:, :smirk:, :smirk_cat:, :smoking:, :snail:, :snake:,
-        :snowboarder:, :snowflake:, :snowman:, :sob:, :soccer:, :soon:, :sos:,
-        :sound:, :space_invader:, :spades:, :spaghetti:, :sparkle:, :sparkler:,
-        :sparkles:, :sparkling_heart:, :speak_no_evil:, :speaker:,
-        :speech_balloon:, :speedboat:, :star:, :star2:, :stars:, :station:,
-        :statue_of_liberty:, :steam_locomotive:, :stew:, :straight_ruler:,
-        :strawberry:, :stuck_out_tongue:, :stuck_out_tongue_closed_eyes:,
-        :stuck_out_tongue_winking_eye:, :sun_with_face:, :sunflower:, :sunglasses:,
-        :sunny:, :sunrise:, :sunrise_over_mountains:, :surfer:, :sushi:,
-        :suspension_railway:, :sweat:, :sweat_drops:, :sweat_smile:,
-        :sweet_potato:, :swimmer:, :symbols:, :syringe:, :tada:, :tanabata_tree:,
-        :tangerine:, :taurus:, :taxi:, :tea:, :telephone:, :telephone_receiver:,
-        :telescope:, :tennis:, :tent:, :thought_balloon:, :three:, :thumbsdown:,
-        :thumbsup:, :ticket:, :tiger:, :tiger2:, :tired_face:, :tm:, :toilet:,
-        :tokyo_tower:, :tomato:, :tongue:, :top:, :tophat:, :tractor:,
-        :traffic_light:, :train:, :train2:, :tram:, :triangular_flag_on_post:,
-        :triangular_ruler:, :trident:, :triumph:, :trolleybus:, :trophy:,
-        :tropical_drink:, :tropical_fish:, :truck:, :trumpet:, :tshirt:, :tulip:,
-        :turtle:, :tv:, :twisted_rightwards_arrows:, :two:, :two_hearts:,
-        :two_men_holding_hands:, :two_women_holding_hands:, :u5272:, :u5408:,
-        :u55b6:, :u6307:, :u6708:, :u6709:, :u6e80:, :u7121:, :u7533:, :u7981:,
-        :u7a7a:, :uk:, :umbrella:, :unamused:, :underage:, :unlock:, :up:, :us:,
-        :v:, :vertical_traffic_light:, :vhs:, :vibration_mode:, :video_camera:,
-        :video_game:, :violin:, :virgo:, :volcano:, :vs:, :walking:,
-        :waning_crescent_moon:, :waning_gibbous_moon:, :warning:, :watch:,
-        :water_buffalo:, :watermelon:, :wave:, :wavy_dash:, :waxing_crescent_moon:,
-        :waxing_gibbous_moon:, :wc:, :weary:, :wedding:, :whale:, :whale2:,
-        :wheelchair:, :white_check_mark:, :white_circle:, :white_flower:,
-        :white_large_square:, :white_medium_small_square:, :white_medium_square:,
-        :white_small_square:, :white_square_button:, :wind_chime:, :wine_glass:,
-        :wink:, :wolf:, :woman:, :womans_clothes:, :womans_hat:, :womens:,
-        :worried:, :wrench:, :x:, :yellow_heart:, :yen:, :yum:, :zap:, :zero:,
-        :zzz:
-    </div>
-
-    <div class="tzx-drawer" shy>
-    [line_blocks](#extension-line_blocks)
-
-    :   | The limerick packs laughs anatomical
-        | In space that is quite economical.
-        |    But the good ones I've seen
-        |    So seldom are clean
-        | And the clean ones so seldom are comical
-
-        | 200 Main St.
-        | Berkeley, CA 94718
-
-    </div>
-
-    <div class="tzx-drawer" shy>
-    `#extension-simple_tables`, `#extension-multiline_tables`, `#extension-grid_tables`, `#extension-pipe_tables`
-
-    :   Tables
-
-          Right     Left     Center     Default
-        -------     ------ ----------   -------
-             12     12        12            12
-            123     123       123          123
-              1     1          1             1
-
-        Table:  Demonstration of simple table syntax.
-
-        -------     ------ ----------   -------
-             12     12        12             12
-            123     123       123           123
-              1     1          1              1
-        -------     ------ ----------   -------
-
-        -------------------------------------------------------------
-         Centered   Default           Right Left
-          Header    Aligned         Aligned Aligned
-        ----------- ------- --------------- -------------------------
-           First    row                12.0 Example of a row that
-                                            spans multiple lines.
-
-          Second    row                 5.0 Here's another one. Note
-                                            the blank line between
-                                            rows.
-        -------------------------------------------------------------
-
-        Table: Here's the caption. It, too, may span
-        multiple lines.
-
-        ----------- ------- --------------- -------------------------
-           First    row                12.0 Example of a row that
-                                            spans multiple lines.
-
-          Second    row                 5.0 Here's another one. Note
-                                            the blank line between
-                                            rows.
-        ----------- ------- --------------- -------------------------
-
-        : Here's a multiline table without headers.
-
-        : Sample grid table.
-
-        +---------------+---------------+--------------------+
-        | Fruit         | Price         | Advantages         |
-        +===============+===============+====================+
-        | Bananas       | $1.34         | - built-in wrapper |
-        |               |               | - bright color     |
-        +---------------+---------------+--------------------+
-        | Oranges       | $2.10         | - cures scurvy     |
-        |               |               | - tasty            |
-        +---------------+---------------+--------------------+
-
-        | Right | Left | Default | Center |
-        |------:|:-----|---------|:------:|
-        |   12  |  12  |    12   |    12  |
-        |  123  |  123 |   123   |   123  |
-        |    1  |    1 |     1   |     1  |
-
-          : Demonstration of pipe table syntax.
-
-        fruit| price
-        -----|-----:
-        apple|2.05
-        pear|1.37
-        orange|3.09
-
-        | One | Two   |
-        |-----+-------|
-        | my  | table |
-        | is  | nice  |
+[![license](https://img.shields.io/badge/license-GPLv2+-brightgreen.svg)](https://www.gnu.org/licenses/gpl.html)
+[![hackage release](https://img.shields.io/hackage/v/pandoc.svg?label=current+release)](http://hackage.haskell.org/package/pandoc)
+[![stackage LTS package](http://stackage.org/package/pandoc/badge/lts)](http://stackage.org/lts/package/pandoc)
+[![github release](https://img.shields.io/github/release/jgm/pandoc.svg?label=github+release)](https://github.com/jgm/pandoc/releases)
+[![travis build status](https://img.shields.io/travis/jgm/pandoc.svg)](https://travis-ci.org/jgm/pandoc)
+[![appveyor build status](https://ci.appveyor.com/api/projects/status/nvqs4ct090igjiqc?svg=true)](https://ci.appveyor.com/project/jgm/pandoc)
 
 
-        -------- -------- --------
-        ![][001] ![][002] ![][003]
-        ![][004] ![][005] ![][006]
-        ![][007] ![][008] ![009]
-        -------- -------- --------
-
-    </div>
-
-    <div class="tzx-drawer" shy>
-    LaTeX
-
-    :   tabular
-
-        \begin{tabular}{|l|l|}\hline
-        Age & Frequency \\ \hline
-        18--25  & 15 \\
-        26--35  & 33 \\
-        36--45  & 22 \\ \hline
-        \end{tabular}
-
-        `#latex-macros`
-
-        :   ```latex
-            \newcommand{\tuple}[1]{\langle #1 \rangle}
-
-            $\tuple{a, b, c}$
-            ```
-
-            $\tuple{a, b, c}$
-
-        `#custom-writers`
-    </div>
-
-[001]: http://gnat-tang-shared-image.qiniudn.com/big-fish/11.png?imageView/2/w/200
-[002]: http://gnat-tang-shared-image.qiniudn.com/big-fish/12.png?imageView/2/w/200
-[003]: http://gnat-tang-shared-image.qiniudn.com/big-fish/13.png?imageView/2/w/200
-[004]: http://gnat-tang-shared-image.qiniudn.com/big-fish/14.png?imageView/2/w/200
-[005]: http://gnat-tang-shared-image.qiniudn.com/big-fish/15.png?imageView/2/w/200
-[006]: http://gnat-tang-shared-image.qiniudn.com/big-fish/21.png?imageView/2/w/200
-[007]: http://gnat-tang-shared-image.qiniudn.com/big-fish/22.png?imageView/2/w/200 {width=160}
-[008]: http://gnat-tang-shared-image.qiniudn.com/big-fish/31.png?imageView/2/w/200 {width=160}
-[009]: http://gnat-tang-shared-image.qiniudn.com/big-fish/32.png?imageView/2/w/200 {width=160 title="title is tooltip."}
-
-</div>
-
-Synopsis
-========
-
-`pandoc` [*options*] [*input-file*]...
-
-Description
-===========
+The universal markup converter
+------------------------------
 
 Pandoc is a [Haskell] library for converting from one markup format to
 another, and a command-line tool that uses this library. It can read
 [Markdown], [CommonMark], [PHP Markdown Extra], [GitHub-Flavored Markdown],
-and (subsets of) [Textile], [reStructuredText], [HTML], [LaTeX], [MediaWiki markup], [TWiki
-markup], [Haddock markup], [OPML], [Emacs Org mode], [DocBook],
-[txt2tags], [EPUB], [ODT] and [Word docx]; and it can write plain text,
-[Markdown], [CommonMark], [PHP Markdown Extra], [GitHub-Flavored Markdown],
-[reStructuredText], [XHTML], [HTML5], [LaTeX] (including
-[`beamer`] slide shows), [ConTeXt], [RTF], [OPML], [DocBook],
-[OpenDocument], [ODT], [Word docx], [GNU Texinfo], [MediaWiki markup],
-[DokuWiki markup], [Haddock markup], [EPUB] (v2 or v3),
-[FictionBook2], [Textile], [groff man] pages, [Emacs Org mode],
-[AsciiDoc], [InDesign ICML], [TEI Simple], and [Slidy], [Slideous], [DZSlides],
-[reveal.js] or [S5] HTML slide shows. It can also produce [PDF] output
-on systems where LaTeX, ConTeXt, or `wkhtmltopdf` is installed.
+[MultiMarkdown], and (subsets of) [Textile], [reStructuredText], [HTML],
+[LaTeX], [MediaWiki markup], [TWiki markup], [Haddock markup], [OPML], [Emacs
+Org mode], [DocBook], [txt2tags], [EPUB], [ODT] and [Word docx]; and it can
+write plain text, [Markdown], [CommonMark], [PHP Markdown Extra],
+[GitHub-Flavored Markdown], [MultiMarkdown], [reStructuredText], [XHTML],
+[HTML5], [LaTeX] \(including [`beamer`] slide shows\), [ConTeXt], [RTF], [OPML],
+[DocBook], [OpenDocument], [ODT], [Word docx], [GNU Texinfo], [MediaWiki
+markup], [DokuWiki markup], [ZimWiki markup], [Haddock markup],
+[EPUB] \(v2 or v3\), [FictionBook2], [Textile], [groff man] pages,
+[Emacs Org mode], [AsciiDoc], [InDesign ICML], [TEI Simple], and [Slidy],
+[Slideous], [DZSlides], [reveal.js] or [S5] HTML slide shows. It can also
+produce [PDF] output on systems where LaTeX, ConTeXt, or `wkhtmltopdf` is
+installed.
 
 Pandoc's enhanced version of Markdown includes syntax for [footnotes],
 [tables], flexible [ordered lists], [definition lists], [fenced code blocks],
 [superscripts and subscripts], [strikeout], [metadata blocks], automatic tables of
 contents, embedded LaTeX [math], [citations], and [Markdown inside HTML block
-elements][Extension: `markdown_in_html_blocks`]. (These enhancements, described below under
-[Pandoc's Markdown], can be disabled using the
+elements]. (These enhancements, described
+further under [Pandoc's Markdown], can be disabled using the
 `markdown_strict` input or output format.)
 
 In contrast to most existing tools for converting Markdown to HTML, which
@@ -378,6 +75,7 @@ Markdown can be expected to be lossy.
 [CommonMark]: http://commonmark.org
 [PHP Markdown Extra]: https://michelf.ca/projects/php-markdown/extra/
 [GitHub-Flavored Markdown]: https://help.github.com/articles/github-flavored-markdown/
+[MultiMarkdown]: http://fletcherpenney.net/multimarkdown/
 [reStructuredText]: http://docutils.sourceforge.net/docs/ref/rst/introduction.html
 [S5]: http://meyerweb.com/eric/tools/s5/
 [Slidy]: http://www.w3.org/Talks/Tools/Slidy/
@@ -399,6 +97,150 @@ Markdown can be expected to be lossy.
 [Textile]: http://redcloth.org/textile
 [MediaWiki markup]: https://www.mediawiki.org/wiki/Help:Formatting
 [DokuWiki markup]: https://www.dokuwiki.org/dokuwiki
+[ZimWiki markup]: http://zim-wiki.org/manual/Help/Wiki_Syntax.html
+[TWiki markup]: http://twiki.org/cgi-bin/view/TWiki/TextFormattingRules
+[Haddock markup]: https://www.haskell.org/haddock/doc/html/ch03s08.html
+[groff man]: http://developer.apple.com/DOCUMENTATION/Darwin/Reference/ManPages/man7/groff_man.7.html
+[Haskell]: https://www.haskell.org
+[GNU Texinfo]: http://www.gnu.org/software/texinfo/
+[Emacs Org mode]: http://orgmode.org
+[AsciiDoc]: http://www.methods.co.nz/asciidoc/
+[DZSlides]: http://paulrouget.com/dzslides/
+[Word docx]: http://www.microsoft.com/interop/openup/openxml/default.aspx
+[PDF]: https://www.adobe.com/pdf/
+[reveal.js]: http://lab.hakim.se/reveal-js/
+[FictionBook2]: http://www.fictionbook.org/index.php/Eng:XML_Schema_Fictionbook_2.1
+[InDesign ICML]: https://www.adobe.com/content/dam/Adobe/en/devnet/indesign/cs55-docs/IDML/idml-specification.pdf
+[TEI Simple]: https://github.com/TEIC/TEI-Simple
+
+
+
+
+[footnotes]: http://pandoc.org/MANUAL.html#footnotes
+[tables]: http://pandoc.org/MANUAL.html#tables
+[ordered lists]: http://pandoc.org/MANUAL.html#ordered-lists
+[definition lists]: http://pandoc.org/MANUAL.html#definition-lists
+[fenced code blocks]: http://pandoc.org/MANUAL.html#fenced-code-blocks
+[superscripts and subscripts]: http://pandoc.org/MANUAL.html#superscripts-and-subscripts
+[strikeout]: http://pandoc.org/MANUAL.html#strikeout
+[metadata blocks]: http://pandoc.org/MANUAL.html#metadata-blocks
+[math]: http://pandoc.org/MANUAL.html#math
+[citations]: http://pandoc.org/MANUAL.html#citations
+[Markdown inside HTML block elements]: http://pandoc.org/MANUAL.html#extension-markdown_in_html_blocks
+[Pandoc's Markdown]: http://pandoc.org/MANUAL.html#pandocs-markdown
+
+Installing
+----------
+
+Here's [how to install pandoc](INSTALL.md).
+
+Documentation
+-------------
+
+Pandoc's website contains a full [User's Guide](https://pandoc.org/MANUAL.html).
+It is also available [here](MANUAL.txt) as pandoc-flavored Markdown.
+The website also contains some [examples of the use of
+pandoc](https://pandoc.org/demos.html) and a limited [online
+demo](https://pandoc.org/try).
+
+Contributing
+------------
+
+Pull requests, bug reports, and feature requests are welcome.  Please make
+sure to read [the contributor guidelines](CONTRIBUTING.md) before opening a
+new issue.
+
+
+License
+-------
+
+© 2006-2016 John MacFarlane (jgm@berkeley.edu). Released under the
+[GPL], version 2 or greater.  This software carries no warranty of
+any kind.  (See COPYRIGHT for full copyright and warranty notices.)
+
+[GPL]: http://www.gnu.org/copyleft/gpl.html "GNU General Public License"
+
+---
+
+<https://raw.githubusercontent.com/jgm/pandoc/master/MANUAL.txt>
+
+Synopsis
+========
+
+`pandoc` [*options*] [*input-file*]...
+
+Description
+===========
+
+Pandoc is a [Haskell] library for converting from one markup format to
+another, and a command-line tool that uses this library. It can read
+[Markdown], [CommonMark], [PHP Markdown Extra], [GitHub-Flavored Markdown],
+[MultiMarkdown], and (subsets of) [Textile], [reStructuredText], [HTML],
+[LaTeX], [MediaWiki markup], [TWiki markup], [Haddock markup], [OPML], [Emacs
+Org mode], [DocBook], [txt2tags], [EPUB], [ODT] and [Word docx]; and it can
+write plain text, [Markdown], [CommonMark], [PHP Markdown Extra],
+[GitHub-Flavored Markdown], [MultiMarkdown], [reStructuredText], [XHTML],
+[HTML5], [LaTeX] \(including [`beamer`] slide shows\), [ConTeXt], [RTF], [OPML],
+[DocBook], [OpenDocument], [ODT], [Word docx], [GNU Texinfo], [MediaWiki
+markup], [DokuWiki markup], [ZimWiki markup], [Haddock markup],
+[EPUB] \(v2 or v3\), [FictionBook2], [Textile], [groff man] pages,
+[Emacs Org mode], [AsciiDoc], [InDesign ICML], [TEI Simple], and [Slidy],
+[Slideous], [DZSlides], [reveal.js] or [S5] HTML slide shows. It can also
+produce [PDF] output on systems where LaTeX, ConTeXt, or `wkhtmltopdf` is
+installed.
+
+Pandoc's enhanced version of Markdown includes syntax for [footnotes],
+[tables], flexible [ordered lists], [definition lists], [fenced code blocks],
+[superscripts and subscripts], [strikeout], [metadata blocks], automatic tables of
+contents, embedded LaTeX [math], [citations], and [Markdown inside HTML block
+elements][Extension: `markdown_in_html_blocks`]. (These enhancements, described
+further under [Pandoc's Markdown], can be disabled using the
+`markdown_strict` input or output format.)
+
+In contrast to most existing tools for converting Markdown to HTML, which
+use regex substitutions, pandoc has a modular design: it consists of a
+set of readers, which parse text in a given format and produce a native
+representation of the document, and a set of writers, which convert
+this native representation into a target format. Thus, adding an input
+or output format requires only adding a reader or writer.
+
+Because pandoc's intermediate representation of a document is less
+expressive than many of the formats it converts between, one should
+not expect perfect conversions between every format and every other.
+Pandoc attempts to preserve the structural elements of a document, but
+not formatting details such as margin size.  And some document elements,
+such as complex tables, may not fit into pandoc's simple document
+model.  While conversions from pandoc's Markdown to all formats aspire
+to be perfect, conversions from formats more expressive than pandoc's
+Markdown can be expected to be lossy.
+
+[Markdown]: http://daringfireball.net/projects/markdown/
+[CommonMark]: http://commonmark.org
+[PHP Markdown Extra]: https://michelf.ca/projects/php-markdown/extra/
+[GitHub-Flavored Markdown]: https://help.github.com/articles/github-flavored-markdown/
+[MultiMarkdown]: http://fletcherpenney.net/multimarkdown/
+[reStructuredText]: http://docutils.sourceforge.net/docs/ref/rst/introduction.html
+[S5]: http://meyerweb.com/eric/tools/s5/
+[Slidy]: http://www.w3.org/Talks/Tools/Slidy/
+[Slideous]: http://goessner.net/articles/slideous/
+[HTML]: http://www.w3.org/html/
+[HTML5]: http://www.w3.org/TR/html5/
+[XHTML]: http://www.w3.org/TR/xhtml1/
+[LaTeX]: http://latex-project.org
+[`beamer`]: https://ctan.org/pkg/beamer
+[Beamer User's Guide]: http://ctan.math.utah.edu/ctan/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf
+[ConTeXt]: http://contextgarden.net/
+[RTF]: http://en.wikipedia.org/wiki/Rich_Text_Format
+[DocBook]: http://docbook.org
+[txt2tags]: http://txt2tags.org
+[EPUB]: http://idpf.org/epub
+[OPML]: http://dev.opml.org/spec2.html
+[OpenDocument]: http://opendocument.xml.org
+[ODT]: http://en.wikipedia.org/wiki/OpenDocument
+[Textile]: http://redcloth.org/textile
+[MediaWiki markup]: https://www.mediawiki.org/wiki/Help:Formatting
+[DokuWiki markup]: https://www.dokuwiki.org/dokuwiki
+[ZimWiki markup]: http://zim-wiki.org/manual/Help/Wiki_Syntax.html
 [TWiki markup]: http://twiki.org/cgi-bin/view/TWiki/TextFormattingRules
 [Haddock markup]: https://www.haskell.org/haddock/doc/html/ch03s08.html
 [groff man]: http://developer.apple.com/DOCUMENTATION/Darwin/Reference/ManPages/man7/groff_man.7.html
@@ -565,8 +407,8 @@ General options
 :   Specify input format.  *FORMAT* can be `native` (native Haskell),
     `json` (JSON version of native AST), `markdown` (pandoc's
     extended Markdown), `markdown_strict` (original unextended
-    Markdown), `markdown_phpextra` (PHP Markdown Extra),
-    `markdown_github` (GitHub-Flavored Markdown),
+    Markdown), `markdown_phpextra` (PHP Markdown Extra), `markdown_github`
+    (GitHub-Flavored Markdown), `markdown_mmd` (MultiMarkdown),
     `commonmark` (CommonMark Markdown), `textile` (Textile), `rst`
     (reStructuredText), `html` (HTML), `docbook` (DocBook), `t2t`
     (txt2tags), `docx` (docx), `odt` (ODT), `epub` (EPUB), `opml` (OPML),
@@ -582,7 +424,8 @@ General options
     `markdown-pipe_tables+hard_line_breaks` is pandoc's Markdown
     without pipe tables and with hard line breaks. See [Pandoc's
     Markdown], below, for a list of extensions and
-    their names.
+    their names.  See `--list-input-formats` and `--list-extensions`,
+    below.
 
 `-t` *FORMAT*, `-w` *FORMAT*, `--to=`*FORMAT*, `--write=`*FORMAT*
 
@@ -590,32 +433,34 @@ General options
     `json` (JSON version of native AST), `plain` (plain text),
     `markdown` (pandoc's extended Markdown), `markdown_strict`
     (original unextended Markdown), `markdown_phpextra` (PHP Markdown
-    Extra), `markdown_github` (GitHub-Flavored
-    Markdown), `commonmark` (CommonMark Markdown), `rst`
+    Extra), `markdown_github` (GitHub-Flavored Markdown), `markdown_mmd`
+    (MultiMarkdown), `commonmark` (CommonMark Markdown), `rst`
     (reStructuredText), `html` (XHTML), `html5` (HTML5), `latex`
     (LaTeX), `beamer` (LaTeX beamer slide show), `context` (ConTeXt),
-    `man` (groff man), `mediawiki` (MediaWiki markup), `dokuwiki`
-    (DokuWiki markup), `textile` (Textile), `org` (Emacs Org mode),
-    `texinfo` (GNU Texinfo), `opml` (OPML), `docbook` (DocBook),
-    `opendocument` (OpenDocument), `odt` (OpenOffice text document),
-    `docx` (Word docx), `haddock` (Haddock markup), `rtf` (rich text
-    format), `epub` (EPUB v2 book), `epub3` (EPUB v3), `fb2`
-    (FictionBook2 e-book), `asciidoc` (AsciiDoc), `icml` (InDesign
-    ICML), `tei` (TEI Simple), `slidy` (Slidy HTML and javascript slide
-    show), `slideous` (Slideous HTML and javascript slide show),
-    `dzslides` (DZSlides HTML5 + javascript slide show), `revealjs`
-    (reveal.js HTML5 + javascript slide show), `s5` (S5 HTML and javascript
-    slide show), or the path of a custom lua writer (see [Custom
-    writers], below). Note that `odt`, `epub`, and
-    `epub3` output will not be directed to *stdout*; an output
-    filename must be specified using the `-o/--output` option. If
-    `+lhs` is appended to `markdown`, `rst`, `latex`, `beamer`,
-    `html`, or `html5`, the output will be rendered as literate
-    Haskell source: see [Literate Haskell
-    support], below.  Markdown syntax
-    extensions can be individually enabled or disabled by appending
-    `+EXTENSION` or `-EXTENSION` to the format name, as described
-    above under `-f`.
+    `man` (groff man), `mediawiki` (MediaWiki markup),
+    `dokuwiki` (DokuWiki markup), `zimwiki` (ZimWiki markup),
+    `textile` (Textile), `org` (Emacs Org mode),
+    `texinfo` (GNU Texinfo), `opml` (OPML), `docbook` (DocBook 4),
+    `docbook5` (DocBook 5), `opendocument` (OpenDocument), `odt`
+    (OpenOffice text document), `docx` (Word docx), `haddock`
+    (Haddock markup), `rtf` (rich text format), `epub` (EPUB v2
+    book), `epub3` (EPUB v3), `fb2` (FictionBook2 e-book),
+    `asciidoc` (AsciiDoc), `icml` (InDesign ICML), `tei` (TEI
+    Simple), `slidy` (Slidy HTML and javascript slide show),
+    `slideous` (Slideous HTML and javascript slide show),
+    `dzslides` (DZSlides HTML5 + javascript slide show),
+    `revealjs` (reveal.js HTML5 + javascript slide show), `s5`
+    (S5 HTML and javascript slide show), or the path of a custom
+    lua writer (see [Custom writers], below). Note that `odt`,
+    `epub`, and `epub3` output will not be directed to *stdout*;
+    an output filename must be specified using the `-o/--output`
+    option. If `+lhs` is appended to `markdown`, `rst`, `latex`,
+    `beamer`, `html`, or `html5`, the output will be rendered as
+    literate Haskell source: see [Literate Haskell support],
+    below.  Markdown syntax extensions can be individually
+    enabled or disabled by appending `+EXTENSION` or
+    `-EXTENSION` to the format name, as described above under `-f`.
+    See `--list-output-formats` and `--list-extensions`, below.
 
 `-o` *FILE*, `--output=`*FILE*
 
@@ -657,6 +502,30 @@ General options
 :   Give verbose debugging output.  Currently this only has an effect
     with PDF output.
 
+`--list-input-formats`
+
+:   List supported input formats, one per line.
+
+`--list-output-formats`
+
+:   List supported output formats, one per line.
+
+`--list-extensions`
+
+:   List supported Markdown extensions, one per line, followed
+    by a `+` or `-` indicating whether it is enabled by default
+    in pandoc's Markdown.
+
+`--list-highlight-languages`
+
+:   List supported languages for syntax highlighting, one per
+    line.
+
+`--list-highlight-styles`
+
+:   List supported styles for syntax highlighting, one per line.
+    See `--highlight-style`.
+
 `-v`, `--version`
 
 :   Print version.
@@ -672,12 +541,12 @@ Reader options
 
 :   Parse untranslatable HTML codes and LaTeX environments as raw HTML
     or LaTeX, instead of ignoring them.  Affects only HTML and LaTeX
-    input. Raw HTML can be printed in Markdown, reStructuredText, HTML,
-    Slidy, Slideous, DZSlides, reveal.js, and S5 output; raw LaTeX
-    can be printed in Markdown, reStructuredText, LaTeX, and ConTeXt output.
-    The default is for the readers to omit untranslatable HTML codes and
-    LaTeX environments.  (The LaTeX reader does pass through untranslatable
-    LaTeX *commands*, even if `-R` is not specified.)
+    input. Raw HTML can be printed in Markdown, reStructuredText, Emacs Org
+    mode, HTML, Slidy, Slideous, DZSlides, reveal.js, and S5 output; raw LaTeX
+    can be printed in Markdown, reStructuredText, Emacs Org mode, LaTeX, and
+    ConTeXt output.  The default is for the readers to omit untranslatable
+    HTML codes and LaTeX environments.  (The LaTeX reader does pass through
+    untranslatable LaTeX *commands*, even if `-R` is not specified.)
 
 `-S`, `--smart`
 
@@ -719,7 +588,7 @@ Reader options
     footnotes and links will not work across files. Reading binary
     files (docx, odt, epub) implies `--file-scope`.
 
-`--filter=`*EXECUTABLE*
+`--filter=`*PROGRAM*
 
 :   Specify an executable to be used as a filter transforming the
     pandoc AST after the input is parsed and before the output is
@@ -740,12 +609,17 @@ Reader options
     exports `toJSONFilter` to facilitate writing filters in Haskell.
     Those who would prefer to write filters in python can use the
     module [`pandocfilters`], installable from PyPI. There are also
-    pandoc filter libraries in [PHP], [perl], and [javascript/node.js].
+    pandoc filter libraries in [PHP], [perl], and
+    [javascript/node.js].
 
-    Note that the *EXECUTABLE* will be sought in the user's
-    `PATH`, and not in the working directory, if no directory is
-    provided.  If you want to run a script in the working directory,
-    preface the filename with `./`.
+    In order of preference, pandoc will look for filters in
+
+     1. a specified full or relative path (executable or
+     non-executable)
+
+     2. `$DATADIR/filters` (executable or non-executable)
+
+     3. `$PATH` (executable only)
 
 `-M` *KEY*[`=`*VAL*], `--metadata=`*KEY*[`:`*VAL*]
 
@@ -775,11 +649,13 @@ Reader options
 
 `--track-changes=accept`|`reject`|`all`
 
-:   Specifies what to do with insertions and deletions produced by the MS
-    Word "Track Changes" feature.  `accept` (the default), inserts all
-    insertions, and ignores all deletions. `reject` inserts all
-    deletions and ignores insertions. `all` puts in both insertions
-    and deletions, wrapped in spans with `insertion` and `deletion`
+:   Specifies what to do with insertions, deletions, and comments
+    produced by the MS Word "Track Changes" feature.  `accept` (the
+    default), inserts all insertions, and ignores all
+    deletions. `reject` inserts all deletions and ignores
+    insertions. Both `accept` and `reject` ignore comments. `all` puts
+    in insertions, deletions, and comments, wrapped in spans with
+    `insertion`, `deletion`, `comment-start`, and `comment-end`
     classes, respectively. The author and time of change is
     included. `all` is useful for scripting: only accepting changes
     from a certain reviewer, say, or before a certain date. This
@@ -844,7 +720,7 @@ General writer options
     to inch/centimeters and vice versa. The default is 96dpi.
     Technically, the correct term would be ppi (pixels per inch).
 
-`--wrap=[auto|none|preserve]`
+`--wrap=auto`|`none`|`preserve`
 
 :   Determine how text is wrapped in the output (the source
     code, not the rendered version).  With `auto` (the default),
@@ -870,7 +746,7 @@ General writer options
 :   Include an automatically generated table of contents (or, in
     the case of `latex`, `context`, `docx`, and `rst`, an instruction to create
     one) in the output document. This option has no effect on `man`,
-    `docbook`, `slidy`, `slideous`, `s5`, or `odt` output.
+    `docbook`, `docbook5`, `slidy`, `slideous`, `s5`, or `odt` output.
 
 `--toc-depth=`*NUMBER*
 
@@ -889,6 +765,7 @@ General writer options
     Options are `pygments` (the default), `kate`, `monochrome`,
     `espresso`, `zenburn`, `haddock`, and `tango`.  For more information
     on syntax highlighting in pandoc, see [Syntax highlighting], below.
+    See also `--list-highlight-styles`.
 
 `-H` *FILE*, `--include-in-header=`*FILE*
 
@@ -949,7 +826,16 @@ Options affecting specific writers
 `--reference-links`
 
 :   Use reference-style links, rather than inline links, in writing Markdown
-    or reStructuredText.  By default inline links are used.
+    or reStructuredText.  By default inline links are used.  The
+    placement of link references is affected by the
+    `--reference-location` option.
+
+`--reference-location = block`|`section`|`document`
+
+:   Specify whether footnotes (and references, if `reference-links` is
+    set) are placed at the end of the current (top-level) block, the
+    current section, or the document. The default is
+    `document`. Currently only affects the markdown writer.
 
 `--atx-headers`
 
@@ -958,11 +844,20 @@ Options affecting specific writers
 
 `--chapters`
 
-:   Treat top-level headers as chapters in LaTeX, ConTeXt, and DocBook
-    output.  When the LaTeX document class is set to `report`, `book`,
-    or `memoir` (unless the `article` option is specified), this
-    option is implied.  If `beamer` is the output format, top-level
-    headers will become `\part{..}`.
+:   Deprecated synonym for `--top-level-division=chapter`.
+
+`--top-level-division=[default|section|chapter|part]`
+
+:   Treat top-level headers as the given division type in LaTeX, ConTeXt,
+    DocBook, and  TEI output. The hierarchy order is part, chapter, then section;
+    all headers are shifted such that the top-level header becomes the specified
+    type. The default behavior is to determine the best division type via
+    heuristics: unless other conditions apply, `section` is chosen. When the
+    LaTeX document class is set to `report`, `book`, or `memoir` (unless the
+    `article` option is specified), `chapter` is implied as the setting for this
+    option. If `beamer` is the output format, specifying either `chapter` or
+    `part` will cause top-level headers to become `\part{..}`, while
+    second-level headers remain as their default type.
 
 `-N`, `--number-sections`
 
@@ -1030,7 +925,7 @@ Options affecting specific writers
     `none` leaves `mailto:` links as they are.  `javascript` obfuscates
     them using javascript. `references` obfuscates them by printing their
     letters as decimal or hexadecimal character references.  The default
-    is `javascript`.
+    is `none`.
 
 `--id-prefix=`*STRING*
 
@@ -1232,7 +1127,7 @@ Math rendering in HTML
 
 `--mathml`[`=`*URL*]
 
-:   Convert TeX math to [MathML] (in `docbook` as well as `html` and `html5`).
+:   Convert TeX math to [MathML] (in `docbook`, `docbook5`, `html` and `html5`).
     In standalone `html` output, a small javascript (or a link to such a
     script if a *URL* is supplied) will be inserted that allows the MathML to
     be viewed on some browsers.
@@ -1268,13 +1163,17 @@ Math rendering in HTML
 
 :   Render TeX formulas using an external script that converts TeX
     formulas to images. The formula will be concatenated with the URL
-    provided. If *URL* is not specified, the Google Chart API will be used.
+    provided. If *URL* is not specified, the CodeCogs will be used.
+    Note:  the `--webtex` option will affect Markdown output
+    as well as HTML, which is useful if you're targeting a
+    version of Markdown without native math support.
 
 `--katex`[`=`*URL*]
 
 :   Use [KaTeX] to display embedded TeX math in HTML output.
     The *URL* should point to the `katex.js` load script. If a *URL* is
     not provided, a link to the KaTeX CDN will be inserted.
+    Note: [KaTeX] seems to work best with `html5` output.
 
 `--katex-stylesheet=`*URL*
 
@@ -1479,6 +1378,9 @@ including all [reveal.js configuration options].
 `theme`, `colortheme`, `fonttheme`, `innertheme`, `outertheme`
 :   themes for LaTeX [`beamer`] documents
 
+`themeoptions`
+:   options for LaTeX beamer themes (a list).
+
 `navigation`
 :   controls navigation symbols in `beamer` documents
     (default is `empty` for no navigation symbols; other valid values
@@ -1487,6 +1389,18 @@ including all [reveal.js configuration options].
 `section-titles`
 :   enables on "title pages" for new sections in `beamer`
     documents (default = true).
+
+`beamerarticle`
+:   when true, the `beamerarticle` package is loaded (for
+    producing an article from beamer slides).
+
+`colorlinks`
+:   add color to link text; automatically enabled if any of `linkcolor`, `citecolor`,
+    `urlcolor`, or `toccolor` are set (for beamer only).
+
+`linkcolor`, `citecolor`, `urlcolor`, `toccolor`
+:   color for internal links, citation links, external links, and links in table
+    of contents: uses any of the [predefined LaTeX colors] (for beamer only).
 
 [reveal.js configuration options]: https://github.com/hakimel/reveal.js#configuration
 
@@ -1574,6 +1488,9 @@ LaTeX variables are used when [creating a PDF].
 `toc-depth`
 :   level of section to include in table of contents
 
+`secnumdepth`
+:   numbering depth for sections, if sections are numbered
+
 `lof`, `lot`
 :   include list of figures, list of tables
 
@@ -1581,8 +1498,10 @@ LaTeX variables are used when [creating a PDF].
 :   bibliography to use for resolving references
 
 `biblio-style`
-:   bibliography style, when used with `--natbib` and
-    `--biblatex`.
+:   bibliography style, when used with `--natbib` and `--biblatex`.
+
+`biblio-title`
+:   bibliography title, when used with `--natbib` and `--biblatex`.
 
 `biblatexoptions`
 :   list of options for biblatex.
@@ -1914,21 +1833,26 @@ CSS.
 #### Extension: `implicit_header_references` ####
 
 Pandoc behaves as if reference links have been defined for each header.
-So, instead of
+So, to link to a header
 
-    [header identifiers](#header-identifiers-in-html)
+    # Header identifiers in HTML
 
 you can simply write
 
-    [header identifiers]
+    [Header identifiers in HTML]
 
 or
 
-    [header identifiers][]
+    [Header identifiers in HTML][]
 
 or
 
-    [the section on header identifiers][header identifiers]
+    [the section on header identifiers][header identifiers in
+    HTML]
+
+instead of giving the identifier explicitly:
+
+    [Header identifiers in HTML](#header-identifiers-in-html)
 
 If there are multiple headers with identical text, the corresponding
 reference will link to the first one only, and you will need to use explicit
@@ -2065,8 +1989,9 @@ Here `mycode` is an identifier, `haskell` and `numberLines` are classes, and
 information to do syntax highlighting. Currently, the only output formats
 that uses this information are HTML and LaTeX. If highlighting is supported
 for your output format and language, then the code block above will appear
-highlighted, with numbered lines. (To see which languages are supported, do
-`pandoc --version`.) Otherwise, the code block above will appear as follows:
+highlighted, with numbered lines. (To see which languages are supported, type
+`pandoc --list-highlight-languages`.) Otherwise, the code block above will
+appear as follows:
 
     <pre id="mycode" class="haskell numberLines" startFrom="100">
       <code>
@@ -2396,9 +2321,9 @@ cases" involving lists.  Consider this source:
 
     +   First
     +   Second:
-    	-   Fee
-    	-   Fie
-    	-   Foe
+        -   Fee
+        -   Fie
+        -   Foe
 
     +   Third
 
@@ -2589,10 +2514,27 @@ Grid tables look like this:
 The row of `=`s separates the header from the table body, and can be
 omitted for a headerless table. The cells of grid tables may contain
 arbitrary block elements (multiple paragraphs, code blocks, lists,
-etc.). Alignments are not supported, nor are cells that span multiple
-columns or rows. Grid tables can be created easily using [Emacs table mode].
+etc.). Cells that span multiple columns or rows are not
+supported. Grid tables can be created easily using [Emacs table mode].
 
 [Emacs table mode]: http://table.sourceforge.net/
+
+Alignments can be specified as with pipe tables, by putting
+colons at the boundaries of the separator line after the
+header:
+
+    +---------------+---------------+--------------------+
+    | Right         | Left          | Centered           |
+    +==============:+:==============+:==================:+
+    | Bananas       | $1.34         | built-in wrapper   |
+    +---------------+---------------+--------------------+
+
+For headerless tables, the colons go on the top line instead:
+
+    +--------------:+:--------------+:------------------:+
+    | Right         | Left          | Centered           |
+    +---------------+---------------+--------------------+
+
 
 #### Extension: `pipe_tables` ####
 
@@ -2761,10 +2703,8 @@ when the field contains blank lines:
     ---
     title:  'This is the title: it contains a colon'
     author:
-    - name: Author One
-      affiliation: University of Somewhere
-    - name: Author Two
-      affiliation: University of Nowhere
+    - Author One
+    - Author Two
     tags: [nothing, nothingness]
     abstract: |
       This is the abstract.
@@ -2779,9 +2719,23 @@ equivalent of the Markdown in the `abstract` field:
     <p>This is the abstract.</p>
     <p>It consists of two paragraphs.</p>
 
-Note: The `author` variable in the default templates expects a simple list or
-string.  To use the structured authors in the example, you would need a
-custom template.  For example:
+Variables can contain arbitrary YAML structures, but the template must match
+this structure.  The `author` variable in the default templates expects a
+simple list or string, but can be changed to support more complicated
+structures.  The following combination, for example, would add an affiliation
+to the author if one is given:
+
+    ---
+    title: The document title
+    author:
+    - name: Author One
+      affiliation: University of Somewhere
+    - name: Author Two
+      affiliation: University of Nowhere
+    ...
+
+To use the structured authors in the example above, you would need a custom
+template:
 
     $for(author)$
     $if(author.name)$
@@ -2940,6 +2894,10 @@ To write small caps, you can use an HTML span tag:
 (The semicolon is optional and there may be space after the
 colon.) This will work in all output formats that support small caps.
 
+Alternatively, you can also use the new `bracketed_spans` syntax:
+
+    [Small caps]{style="font-variant:small-caps;"}
+
 Math
 ----
 
@@ -2956,7 +2914,7 @@ them and they won't be treated as math delimiters.
 TeX math will be printed in all output formats. How it is rendered
 depends on the output format:
 
-Markdown, LaTeX, Emacs Org mode, ConTeXt
+Markdown, LaTeX, Emacs Org mode, ConTeXt, ZimWiki
   ~ It will appear verbatim between `$` characters.
 
 reStructuredText
@@ -2991,7 +2949,7 @@ Docx
 
 FictionBook2
   ~ If the `--webtex` option is used, formulas are rendered as images
-    using Google Charts or other compatible web service, downloaded
+    using CodeCogs or other compatible web service, downloaded
     and embedded in the e-book. Otherwise, they will appear verbatim.
 
 HTML, Slidy, DZSlides, S5, EPUB
@@ -3034,8 +2992,8 @@ HTML, Slidy, DZSlides, S5, EPUB
     6.  If the `--webtex` option is used, TeX formulas will be converted
         to `<img>` tags that link to an external script that converts
         formulas to images. The formula will be URL-encoded and concatenated
-        with the URL provided. If no URL is specified, the Google Chart
-        API will be used (`http://chart.apis.google.com/chart?cht=tx&chl=`).
+        with the URL provided. If no URL is specified, the CodeCogs
+        will be used (`https://latex.codecogs.com/png.latex?`).
 
     7.  If the `--mathjax` option is used, TeX math will be displayed
         between `\(...\)` (for inline math) or `\[...\]` (for display
@@ -3056,8 +3014,8 @@ Markdown allows it, but it has been made an extension so that it can
 be disabled if desired.)
 
 The raw HTML is passed through unchanged in HTML, S5, Slidy, Slideous,
-DZSlides, EPUB, Markdown, and Textile output, and suppressed in other
-formats.
+DZSlides, EPUB, Markdown, Emacs Org mode, and Textile output, and suppressed
+in other formats.
 
 #### Extension: `markdown_in_html_blocks` ####
 
@@ -3136,7 +3094,7 @@ the material between the begin and end tags will be interpreted as raw
 LaTeX, not as Markdown.
 
 Inline LaTeX is ignored in output formats other than Markdown, LaTeX,
-and ConTeXt.
+Emacs Org mode, and ConTeXt.
 
 LaTeX macros
 ------------
@@ -3339,6 +3297,16 @@ For example:
   is to look at the image resolution and the dpi metadata embedded in
   the image file.
 
+Spans
+-----
+
+#### Extension: `bracketed_spans` ####
+
+A bracketed sequence of inlines, as one would use to begin
+a link, will be treated as a span with attributes if it is
+followed immediately by attributes:
+
+    [This is *some text*]{.class key="val"}
 
 Footnotes
 ---------
@@ -3578,6 +3546,12 @@ in pandoc, but may be enabled by adding `+EXTENSION` to the format
 name, where `EXTENSION` is the name of the extension.  Thus, for
 example, `markdown+hard_line_breaks` is Markdown with hard line breaks.
 
+#### Extension: `angle_brackets_escapable` ####
+
+Allow `<` and `>` to be backslash-escaped, as they can be in
+GitHub flavored Markdown but not original Markdown.  This is
+implied by pandoc's default `all_symbols_escapable`.
+
 #### Extension: `lists_without_preceding_blankline` ####
 
 Allow a list to occur right after a paragraph, with no intervening
@@ -3640,8 +3614,6 @@ the document, for example:
 See the MultiMarkdown documentation for details.  If `pandoc_title_block` or
 `yaml_metadata_block` is enabled, it will take precedence over
 `mmd_title_block`.
-
-[MultiMarkdown]: http://fletcherpenney.net/multimarkdown/
 
 #### Extension: `abbreviations` ####
 
@@ -3723,11 +3695,11 @@ variants are supported:
 :   `pipe_tables`, `raw_html`, `fenced_code_blocks`, `auto_identifiers`,
     `ascii_identifiers`, `backtick_code_blocks`, `autolink_bare_uris`,
     `intraword_underscores`, `strikeout`, `hard_line_breaks`, `emoji`,
-    `shortcut_reference_links`.
+    `shortcut_reference_links`, `angle_brackets_escapable`.
 
 `markdown_mmd` (MultiMarkdown)
 :   `pipe_tables`, `raw_html`, `markdown_attribute`, `mmd_link_attributes`,
-    `raw_tex`, `tex_math_double_backslash`, `intraword_underscores`,
+    `tex_math_double_backslash`, `intraword_underscores`,
     `mmd_title_block`, `footnotes`, `definition_lists`,
     `all_symbols_escapable`, `implicit_header_references`,
     `auto_identifiers`, `mmd_header_identifiers`,
@@ -4115,19 +4087,63 @@ Syntax highlighting
 ===================
 
 Pandoc will automatically highlight syntax in [fenced code blocks] that
-are marked with a language name.  The Haskell library [highlighting-kate] is used for
-highlighting, which works in HTML, Docx, and LaTeX/PDF output.
+are marked with a language name.  The Haskell library [highlighting-kate] is
+used for highlighting, which works in HTML, Docx, and LaTeX/PDF output.
+To see a list of language names that pandoc will recognize, type
+`pandoc --list-highlight-languages`.
+
 The color scheme can be selected using the `--highlight-style` option.
 The default color scheme is `pygments`, which imitates the default color
-scheme used by the Python library pygments, but pygments is not actually
-used to do the highlighting.
-
-To see a list of language names that pandoc will recognize, type
-`pandoc --version`.
+scheme used by the Python library pygments (though pygments is not actually
+used to do the highlighting).  To see a list of highlight styles,
+type `pandoc --list-hightlight-styles`.
 
 To disable highlighting, use the `--no-highlight` option.
 
 [highlighting-kate]: https://github.com/jgm/highlighting-kate
+
+Custom Styles in Docx Output
+============================
+
+By default, pandoc's docx output applies a predefined set of styles for
+blocks such as paragraphs and block quotes, and uses largely default
+formatting (italics, bold) for inlines. This will work for most
+purposes, especially alongside a `reference.docx` file. However, if you
+need to apply your own styles to blocks, or match a preexisting set of
+styles, pandoc allows you to define custom styles for blocks and text
+using `div`s and `span`s, respecitively.
+
+If you define a `div` or `span` with the attribute `custom-style`,
+pandoc will apply your specified style to the contained elements. So,
+for example,
+
+    <span custom-style="Emphatically">Get out,</span> he said.
+
+would produce a docx file with "Get out," styled with character
+style `Emphatically`. Similarly,
+
+    Dickinson starts the poem simply:
+
+    <div custom-style="Poetry">
+    | A Bird came down the Walk---
+    | He did not know I saw---
+    </div>
+
+would style the two contained lines with the `Poetry` paragraph style.
+
+If the styles are not yet in your reference.docx, they will be defined
+in the output file as inheriting from normal text. If they are already
+defined, pandoc will not alter the definition.
+
+This feature allows for greatest customization in conjunction with
+[pandoc filters]. If you want all paragraphs after block quotes to be
+indented, you can write a filter to apply the styles necessary. If you
+want all italics to be transformed to the `Emphasis` character style
+(perhaps to change their color), you can write a filter which will
+transform all italicized inlines to inlines within an `Emphasis`
+custom-style `span`.
+
+[pandoc filters]: http://pandoc.org/scripting.html
 
 Custom writers
 ==============
@@ -4151,13 +4167,16 @@ which you can modify according to your needs, do
 Authors
 =======
 
-© 2006-2015 John MacFarlane (jgm@berkeley.edu). Released under the
+© 2006-2016 John MacFarlane (jgm@berkeley.edu). Released under the
 [GPL], version 2 or greater.  This software carries no warranty of
 any kind.  (See COPYRIGHT for full copyright and warranty notices.)
 
 Contributors include
+Arata Mizuki,
 Aaron Wolen,
 Albert Krewinkel,
+Alex Ivkin,
+Alex Vong,
 Alexander Kondratskiy,
 Alexander Sulfrian,
 Alexander V Vershilov,
@@ -4168,15 +4187,19 @@ Antoine Latter,
 Arata Mizuki,
 Arlo O'Keeffe,
 Artyom Kazak,
+B. Scott Michel,
 Ben Gamari,
 Beni Cherniavsky-Paskin,
+Benoit Schweblin,
 Bjorn Buckwalter,
 Bradley Kuhn,
 Brent Yorgey,
 Bryan O'Sullivan,
-B. Scott Michel,
 Caleb McDaniel,
 Calvin Beck,
+Carlos Sosa,
+Chris Black,
+Christian Conkle,
 Christoffer Ackelman,
 Christoffer Sawicki,
 Clare Macrae,
@@ -4185,101 +4208,137 @@ Conal Elliott,
 Craig S. Bosma,
 Daniel Bergey,
 Daniel T. Staal,
+Daniele D'Orazio,
 David Lazar,
 David Röthlisberger,
 Denis Laxalde,
 Douglas Calvert,
-Douglas F. Calvert,
+Emanuel Evans,
+Emily Eisenberg,
 Eric Kow,
 Eric Seidel,
+Felix Yan,
 Florian Eitel,
 François Gannaz,
 Freiric Barral,
+Freirich Raabe,
+Frerich Raabe,
 Fyodor Sheremetyev,
 Gabor Pali,
 Gavin Beatty,
+Gottfried Haider,
 Greg Maslov,
-Grégory Bataille,
 Greg Rundlett,
-gwern,
+Grégory Bataille,
 Gwern Branwen,
 Hans-Peter Deifel,
+Henrik Tramberend,
 Henry de Valence,
+Hubert Plociniczak,
 Ilya V. Portnov,
-infinity0x,
-Jaime Marquínez Ferrándiz,
+Ivo Clarysse,
+J. Lewis Muir,
+Jaime Marquínez Ferrándiz,
+Jakob Voß,
 James Aspnes,
 Jamie F. Olson,
 Jan Larres,
+Jan Schulz,
 Jason Ronallo,
 Jeff Arnold,
 Jeff Runningen,
 Jens Petersen,
-Jérémy Bobbio,
 Jesse Rosenthal,
-J. Lewis Muir,
 Joe Hillenbrand,
 John MacFarlane,
 Jonas Smedegaard,
 Jonathan Daugherty,
-Josef Svenningsson,
 Jose Luis Duran,
+Josef Svenningsson,
 Julien Cretel,
+Juliusz Gonera,
 Justin Bogner,
+Jérémy Bobbio,
 Kelsey Hightower,
+Kolen Cheung,
+KolenCheung,
 Konstantin Zudov,
+Kristof Bastiaensen,
 Lars-Dominik Braun,
 Luke Plant,
 Mark Szepieniec,
 Mark Wright,
+Martin Linn,
 Masayoshi Takahashi,
 Matej Kollar,
 Mathias Schenner,
+Mathieu Duponchelle,
+Matthew Eddey,
 Matthew Pickering,
 Matthias C. M. Troffaes,
 Mauro Bieg,
 Max Bolingbroke,
 Max Rydahl Andersen,
 Merijn Verstraaten,
+Michael Beaumont,
+Michael Chladek,
 Michael Snoyman,
 Michael Thompson,
 MinRK,
+Morton Fox,
 Nathan Gass,
 Neil Mayhew,
 Nick Bart,
 Nicolas Kaiser,
 Nikolay Yakimov,
-nkalvi,
-Paulo Tanimoto,
+Oliver Matthews,
+Ophir Lifshitz,
+Pablo Rodríguez,
 Paul Rivier,
+Paulo Tanimoto,
 Peter Wang,
 Philippe Ombredanne,
 Phillip Alday,
+Prayag Verma,
 Puneeth Chaganti,
-qerub,
 Ralf Stephan,
+Raniere Silva,
 Recai Oktaş,
-rodja.trappe,
 RyanGlScott,
 Scott Morrison,
 Sergei Trofimovich,
 Sergey Astanin,
 Shahbaz Youssefi,
 Shaun Attfield,
-shreevatsa.public,
+Sidarth Kapur,
+Sidharth Kapur,
 Simon Hengel,
 Sumit Sahrawat,
-takahashim,
-thsutton,
+Thomas Hodgson,
+Thomas Weißschuh,
 Tim Lin,
 Timothy Humphries,
+Tiziano Müller,
 Todd Sifleet,
 Tom Leese,
 Uli Köhler,
 Václav Zeman,
 Viktor Kronvall,
 Vincent,
-Wikiwide, and
-Xavier Olive.
+Václav Zeman,
+Waldir Pimenta,
+Wikiwide,
+Xavier Olive,
+csforste,
+infinity0x,
+nkalvi,
+qerub,
+robabla,
+roblabla,
+rodja.trappe,
+rski,
+shreevatsa.public,
+takahashim,
+thsutton.
 
 [GPL]: http://www.gnu.org/copyleft/gpl.html "GNU General Public License"

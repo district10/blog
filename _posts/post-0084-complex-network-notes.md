@@ -2,11 +2,9 @@
 title: Complex Network Overall | 复杂网络及其应用
 date: 2016-01-14
 key-words:
-    - complex network
 tags:
-    - complex network
-    - note
-...
+  - complex-network
+---
 
 Complex Network Overall | 复杂网络及其应用
 ==========================================
@@ -39,9 +37,9 @@ Complex Network Overall | 复杂网络及其应用
 
 顾名思义，“复杂网络”指的是复杂的网络。网络的复杂性体现在
 
-#. 结构复杂性；
-#. 节点复杂性；
-#. 各种复杂性因素的互相影响。
+#.  结构复杂性；
+#.  节点复杂性；
+#.  各种复杂性因素的互相影响。
 
 复杂网络从图论发展而来。最开始是欧拉的七桥问题，开创了数学分支---图论；再是
 20 世纪 60 年代，两位匈牙利数学家 Erdős\footnote{就是那个传奇的 Paul Erdős！}
@@ -468,28 +466,28 @@ P2P 网络中主要存在三种不同的基本结构：
 
 \chapter{复杂网络动态网络的控制}
 
-#. 规则网络时空混沌的牵制控制
-#. 无标度动态网络的牵制控制：鲁棒性与脆弱性
-#. 一般复杂网络动态网络的牵制控制
-#. 随机驱动下动态网络的有序性与动力学
+#.  规则网络时空混沌的牵制控制
+#.  无标度动态网络的牵制控制：鲁棒性与脆弱性
+#.  一般复杂网络动态网络的牵制控制
+#.  随机驱动下动态网络的有序性与动力学
 
 Refs
 
-:   #. [无尺度网络 - 维基百科，自由的百科全书](http://wiki.yooooo.us/wiki/%E6%97%A0%E5%B0%BA%E5%BA%A6%E7%BD%91%E7%BB%9C#.E5.B1.80.E5.9F.9F.E4.B8.96.E7.95.8C.E6.BC.94.E5.8C.96.E6.A8.A1.E5.9E.8B)
-    #. [小世界網路 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlQjAlOEYlRTQlQjglOTYlRTclOTUlOEMlRTclQjYlQjIlRTglQjclQUY=)
-    #. [复杂网络 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlQTQlOEQlRTYlOUQlODIlRTclQkQlOTElRTclQkIlOUM=)
-    #. [网络科学 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTclQkQlOTElRTclQkIlOUMlRTclQTclOTElRTUlQUQlQTY=)
-    #. [图论 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlOUIlQkUlRTglQUUlQkE=)
-    #. [度分布 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlQkElQTYlRTUlODglODYlRTUlQjglODM=)
-    #. [随机图 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTklOUElOEYlRTYlOUMlQkElRTUlOUIlQkU=#cite_note-2)
-    #. [无尺度网络 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTYlOTclQTAlRTUlQjAlQkElRTUlQkElQTYlRTclQkQlOTElRTclQkIlOUM=)
-    #. [Greek alphabet - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Greek_alphabet)
-    #. [Complex network - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Complex_network)
-    #. [Regular graph - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Regular_graph)
-    #. [Pulse-coupled networks - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Pulse-coupled_networks)
-    #. [Small-world network - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Small-world_network)
-    #. [Kleinberg 网格模型 - Google 学术搜索](http://scholar.glgoo.org/scholar?q=Kleinberg+%E7%BD%91%E6%A0%BC%E6%A8%A1%E5%9E%8B&btnG=&hl=zh-CN&as_sdt=0%2C5)
-    #. [无尺度网络 - 维基百科镜像，不撞墙的百科全书](http://wiki.yooooo.us/d2lraS8lRTYlOTclQTAlRTUlQjAlQkElRTUlQkElQTYlRTclQkQlOTElRTclQkIlOUM=)
-    #. [随机游走 - 搜索结果 - 维基百科，自由的百科全书](http://wiki.yooooo.us/w/index.php?title=Special%3A%E6%90%9C%E7%B4%A2&profile=default&search=%E9%9A%8F%E6%9C%BA%E6%B8%B8%E8%B5%B0&fulltext=Search)
-    #. [广度优先搜索 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlQjklQkYlRTUlQkElQTYlRTQlQkMlOTglRTUlODUlODglRTYlOTAlOUMlRTclQjQlQTI=)
-    #. [隨機漫步 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTklOUElQTglRTYlQTklOUYlRTYlQkMlQUIlRTYlQUQlQTU=)
+#.  [无尺度网络 - 维基百科，自由的百科全书](http://wiki.yooooo.us/wiki/%E6%97%A0%E5%B0%BA%E5%BA%A6%E7%BD%91%E7%BB%9C#.E5.B1.80.E5.9F.9F.E4.B8.96.E7.95.8C.E6.BC.94.E5.8C.96.E6.A8.A1.E5.9E.8B)
+#.  [小世界網路 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlQjAlOEYlRTQlQjglOTYlRTclOTUlOEMlRTclQjYlQjIlRTglQjclQUY=)
+#.  [复杂网络 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlQTQlOEQlRTYlOUQlODIlRTclQkQlOTElRTclQkIlOUM=)
+#.  [网络科学 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTclQkQlOTElRTclQkIlOUMlRTclQTclOTElRTUlQUQlQTY=)
+#.  [图论 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlOUIlQkUlRTglQUUlQkE=)
+#.  [度分布 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlQkElQTYlRTUlODglODYlRTUlQjglODM=)
+#.  [随机图 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTklOUElOEYlRTYlOUMlQkElRTUlOUIlQkU=#cite_note-2)
+#.  [无尺度网络 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTYlOTclQTAlRTUlQjAlQkElRTUlQkElQTYlRTclQkQlOTElRTclQkIlOUM=)
+#.  [Greek alphabet - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Greek_alphabet)
+#.  [Complex network - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Complex_network)
+#.  [Regular graph - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Regular_graph)
+#.  [Pulse-coupled networks - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Pulse-coupled_networks)
+#.  [Small-world network - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Small-world_network)
+#.  [Kleinberg 网格模型 - Google 学术搜索](http://scholar.glgoo.org/scholar?q=Kleinberg+%E7%BD%91%E6%A0%BC%E6%A8%A1%E5%9E%8B&btnG=&hl=zh-CN&as_sdt=0%2C5)
+#.  [无尺度网络 - 维基百科镜像，不撞墙的百科全书](http://wiki.yooooo.us/d2lraS8lRTYlOTclQTAlRTUlQjAlQkElRTUlQkElQTYlRTclQkQlOTElRTclQkIlOUM=)
+#.  [随机游走 - 搜索结果 - 维基百科，自由的百科全书](http://wiki.yooooo.us/w/index.php?title=Special%3A%E6%90%9C%E7%B4%A2&profile=default&search=%E9%9A%8F%E6%9C%BA%E6%B8%B8%E8%B5%B0&fulltext=Search)
+#.  [广度优先搜索 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlQjklQkYlRTUlQkElQTYlRTQlQkMlOTglRTUlODUlODglRTYlOTAlOUMlRTclQjQlQTI=)
+#.  [隨機漫步 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTklOUElQTglRTYlQTklOUYlRTYlQkMlQUIlRTYlQUQlQTU=)

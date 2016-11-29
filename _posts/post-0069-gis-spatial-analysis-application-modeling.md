@@ -3,10 +3,10 @@ title: GIS Spatial Analysis and Application Modeling | GIS 空间分析与应用
 date: 2015-11-23
 key-words:
 tags:
-    - gis
-    - spatial analysis
-    - homework
-...
+  - gis
+  - spatial analysis
+  - homework
+---
 
 GIS 空间分析与应用建模
 ======================
@@ -16,9 +16,9 @@ GIS 空间分析与应用建模
 
 空间分析操作包括三个方面：
 
-#. 矢量数据空间分析
-#. 栅格数据空间分析
-#. 三维数据空间分析
+#.  矢量数据空间分析
+#.  栅格数据空间分析
+#.  三维数据空间分析
 
 可参考 [GIS 理论与技术 – 作业 2：GIS 研究综述 #空间分析](http://tangzx.qiniudn.com/post-0050-gis-overall.html#空间分析)，这里不赘述。
 
@@ -115,88 +115,109 @@ EDA 技术的核心：
 
 在探索的基础上再对数据进行更为复杂的建模分析。
 
-#. 计算 EDA 方法
-:   包括从简单的统计计算到高级的用于探索分析多变量数据集中模式的多元统计分析方法。
+#.  计算 EDA 方法
+
+    :   包括从简单的统计计算到高级的用于探索分析多变量数据集中模式的多元统计分析方法。
+
 #.  图形 EDA 方法
-:   可视化的探索数据分析。
 
-    常用的图形方法有
+    :   可视化的探索数据分析。
 
-    * 直方图(histogram)
+        常用的图形方法有
 
-        + ![ordinary histogram & cummulative histogram](https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Cumulative_vs_normal_histogram.svg/350px-Cumulative_vs_normal_histogram.svg.png)
+        -   直方图(histogram)
 
-    * 茎叶图(stem leaf)
+            +   ![ordinary histogram & cummulative histogram](https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Cumulative_vs_normal_histogram.svg/350px-Cumulative_vs_normal_histogram.svg.png)
 
-        ```plain
-         4 | 4 6 7 9
-         5 |
-         6 | 3 4 6 8 8
-         7 | 2 2 5 6
-         8 | 1 4 8
-         9 |
-        10 | 6
-        key: 6|3=63
-        leaf unit: 1.0
-        stem unit: 10.0
-        ```
+        -   茎叶图(stem leaf)
 
-    * 箱线图(box plot)
-        + The "interquartile range", abbreviated "IQR", is just the width of
-          the box in the box-and-whisker plot. That is, IQR = Q3 – Q1. The IQR
-          can be used as a measure of how spread-out the values are. Statistics
-          assumes that your values are clustered around some central value. The
-          IQR tells how spread out the "middle" values are; it can also be used
-          to tell when some of the other values are "too far" from the central
-          value. These "too far away" points are called "outliers", because they
-          "lie outside" the range in which we expect them.
-        + ![](http://www.purplemath.com/modules/stats/boxwhisk08.gif)
-        + (Why one and a half times the width of the box? Why does that
-          particular value demark the difference between "acceptable" and
-          "unacceptable" values? Because, when [John Tukey][Tukey] was inventing the
-          box-and-whisker plot in 1977 to display these values, he picked 1.5×IQR
-          as the demarkation line for outliers. This has worked well, so we've
-          continued using that value ever since.)
-        + ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Boxplot_vs_PDF.svg/220px-Boxplot_vs_PDF.svg.png)
-        + Adjusted box plots are intended for skew distributions. They rely on
-          the medcouple（？？） statistic of skewness. For a medcouple value of MC, the
-          lengths of the upper and lower whiskers are respectively defined to be
-          $$1.5 \times IQR \times e^{3 MC}, ~\qquad~ 1.5 \times IQR \times e^{-4 MC} \text{if} MC \geq 0$$ and
-          $$1.5 \times IQR \times e^{4 MC}, ~\quad~ 1.5 \times IQR \times e^{-3 MC} \text{if} MC \leq 0.$$
-          Observe that for symmetrical distributions, the medcouple will be
-          zero, and this reduces to Tukey's boxplot with equal whisker lengths
-          of $1.5 \times IQR$ for both whiskers.
-    * 散点图(scatter plot)
-        + ![](http://www.itl.nist.gov/div898/handbook/eda/section3/gif/spmatr2.gif)
-        + Given a set of variables X~1~, X~2~, ... , X~k~, the scatter plot matrix
-          contains all the pairwise scatter plots of the variables on a single
-          page in a matrix format. That is, if there are k variables, the scatter
-          plot matrix will have k rows and k columns and the ith row and ~j~th
-          column of this matrix is a plot of X~i~ versus X~j~.
-        + Matlab 的 `plotmatrix` 函数
-            - `plotmatrix(X,Y)`{.python} creates a matrix of subaxes containing scatter plots of the columns of X against the columns of Y.
-              If X is p-by-n and Y is p-by-m, then plotmatrix produces an n-by-m matrix of subaxes.
-            - ![](http://cn.mathworks.com/help/releases/R2015b/examples/graphics/CreateScatterPlotMatrixwithTwoMatrixInputsExample_01.png)
-    * 平行坐标图(parallel coordinate plot)
+            ```plain
+             4 | 4 6 7 9
+             5 |
+             6 | 3 4 6 8 8
+             7 | 2 2 5 6
+             8 | 1 4 8
+             9 |
+            10 | 6
+            key: 6|3=63
+            leaf unit: 1.0
+            stem unit: 10.0
+            ```
+
+        -   箱线图(box plot)
+
+            +   The "interquartile range", abbreviated "IQR", is just the width of
+                the box in the box-and-whisker plot. That is, IQR = Q3 – Q1. The IQR
+                can be used as a measure of how spread-out the values are. Statistics
+                assumes that your values are clustered around some central value. The
+                IQR tells how spread out the "middle" values are; it can also be used
+                to tell when some of the other values are "too far" from the central
+                value. These "too far away" points are called "outliers", because they
+                "lie outside" the range in which we expect them.
+
+            +   ![](http://www.purplemath.com/modules/stats/boxwhisk08.gif)
+
+            +   (Why one and a half times the width of the box? Why does that
+                particular value demark the difference between "acceptable" and
+                "unacceptable" values? Because, when [John Tukey][Tukey] was inventing the
+                box-and-whisker plot in 1977 to display these values, he picked 1.5×IQR
+                as the demarkation line for outliers. This has worked well, so we've
+                continued using that value ever since.)
+
+            +   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Boxplot_vs_PDF.svg/220px-Boxplot_vs_PDF.svg.png)
+
+            +   Adjusted box plots are intended for skew distributions. They rely on
+                the medcouple（？？） statistic of skewness. For a medcouple value of MC, the
+                lengths of the upper and lower whiskers are respectively defined to be
+                $$1.5 \times IQR \times e^{3 MC}, ~\qquad~ 1.5 \times IQR \times e^{-4 MC} \text{if} MC \geq 0$$ and
+                $$1.5 \times IQR \times e^{4 MC}, ~\quad~ 1.5 \times IQR \times e^{-3 MC} \text{if} MC \leq 0.$$
+                Observe that for symmetrical distributions, the medcouple will be
+                zero, and this reduces to Tukey's boxplot with equal whisker lengths
+                of $1.5 \times IQR$ for both whiskers.
+
+        -   散点图(scatter plot)
+
+            +   ![](http://www.itl.nist.gov/div898/handbook/eda/section3/gif/spmatr2.gif)
+
+            +   Given a set of variables X~1~, X~2~, ... , X~k~, the scatter plot matrix
+                contains all the pairwise scatter plots of the variables on a single
+                page in a matrix format. That is, if there are k variables, the scatter
+                plot matrix will have k rows and k columns and the ith row and ~j~th
+                column of this matrix is a plot of X~i~ versus X~j~.
+
+            +   Matlab 的 `plotmatrix` 函数
+
+                -   `plotmatrix(X,Y)`{.python} creates a matrix of subaxes containing scatter plots of the columns of X against the columns of Y.
+                    If X is p-by-n and Y is p-by-m, then plotmatrix produces an n-by-m matrix of subaxes.
+                -   ![](http://cn.mathworks.com/help/releases/R2015b/examples/graphics/CreateScatterPlotMatrixwithTwoMatrixInputsExample_01.png)
+
+        -   平行坐标图(parallel coordinate plot)
 
 [Tukey]: https://en.wikipedia.org/wiki/John_Tukey
 
-探索性空间数据分析(ESDA)：探索性数据分析(EDA)在空间数据分析(SDA: Spatial Data Analysis)领域的推广。将数据的统计分析和地图定位紧密结合在一起。
+探索性空间数据分析(ESDA)：探索性数据分析(EDA)在空间数据分析(SDA: Spatial Data Analysis)领域的推广。
+将数据的统计分析和地图定位紧密结合在一起。
+
 ESDA = EDA + SDA
 
 ESDA：
 
-1)概括空间数据的性质;
-2)探索空间数据中的模式;
-3)产生和地理数据相关的假设;
-4)在地图上识别异常数据的分布位置;
-5)发现是否存在热点区域(hotspots)。
-地图能够定位案例及其空间关系，并能在分析、检验
-和表示模型的结果中发挥重要作用。
+1)  概括空间数据的性质;
+
+2)  探索空间数据中的模式;
+
+3)  产生和地理数据相关的假设;
+
+4)  在地图上识别异常数据的分布位置;
+
+5)  发现是否存在热点区域(hotspots)。
+
+    地图能够定位案例及其空间关系，并能在分析、检验
+    和表示模型的结果中发挥重要作用。
 
 read more
 
-#. [探索性数据分析 (豆瓣)](http://book.douban.com/subject/1551897/)
+#.  [探索性数据分析 (豆瓣)](http://book.douban.com/subject/1551897/)
 
 ### 空间点模式分析
 ### 格网或面状数据空间统计分析
@@ -208,23 +229,23 @@ read more
 
 ---
 
-Refs
+refs and see also
 
-#. GIS 理论与技术，第七章 GIS 空间分析与应用建模，Slides，秦昆，武汉大学
-#. [Mean squared error - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Mean_squared_error)
-#. [Mean - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Mean)
-#. [峰度 - MBA智库百科](http://wiki.mbalib.com/wiki/%E5%B3%B0%E5%BA%A6)
-#. [Exploratory data analysis - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Exploratory_data_analysis)
-#. [Average absolute deviation - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Average_absolute_deviation)
-#. [Median - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Median)
-#. [Stem-and-leaf display - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Stem-and-leaf_display)
-#. [Box-and-Whisker Plots: Interquartile Ranges and Outliers](http://www.purplemath.com/modules/boxwhisk3.htm)
-#. [Box plot - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Box_plot)
-#. [Mode (statistics) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Mode_(statistics))
-#. [Mean squared error - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Mean_squared_error)
-#. [Medcouple - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Medcouple)
-#. [Robust statistics - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Robust_statistics)
-#. [Skewness - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Skewness)
-#. [Histogram - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Histogram)
-#. [1.3.3.26.11. Scatter Plot Matrix](http://www.itl.nist.gov/div898/handbook/eda/section3/scatplma.htm)
-#. [Matrix of scatter plots by group - MATLAB gplotmatrix - MathWorks 中国](http://cn.mathworks.com/help/stats/gplotmatrix.html)
+#.  GIS 理论与技术，第七章 GIS 空间分析与应用建模，Slides，秦昆，武汉大学
+#.  [Mean squared error - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Mean_squared_error)
+#.  [Mean - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Mean)
+#.  [峰度 - MBA智库百科](http://wiki.mbalib.com/wiki/%E5%B3%B0%E5%BA%A6)
+#.  [Exploratory data analysis - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Exploratory_data_analysis)
+#.  [Average absolute deviation - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Average_absolute_deviation)
+#.  [Median - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Median)
+#.  [Stem-and-leaf display - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Stem-and-leaf_display)
+#.  [Box-and-Whisker Plots: Interquartile Ranges and Outliers](http://www.purplemath.com/modules/boxwhisk3.htm)
+#.  [Box plot - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Box_plot)
+#.  [Mode (statistics) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Mode_(statistics))
+#.  [Mean squared error - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Mean_squared_error)
+#.  [Medcouple - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Medcouple)
+#.  [Robust statistics - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Robust_statistics)
+#.  [Skewness - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Skewness)
+#.  [Histogram - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Histogram)
+#.  [1.3.3.26.11. Scatter Plot Matrix](http://www.itl.nist.gov/div898/handbook/eda/section3/scatplma.htm)
+#.  [Matrix of scatter plots by group - MATLAB gplotmatrix - MathWorks 中国](http://cn.mathworks.com/help/stats/gplotmatrix.html)

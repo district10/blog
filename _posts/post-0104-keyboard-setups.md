@@ -2,10 +2,9 @@
 title: Keyboard Setups
 date: 2016-05-12
 keywords:
-    - keyboard
 tags:
     - keyboard
-...
+---
 
 Keyboard Setups
 ===============
@@ -292,3 +291,5 @@ refs and see also
     ```
 
 [^man-loadkeys]: [Manpage of LOADKEYS](http://www.cbi.pku.edu.cn/chinese/documents/csdoc/cman/loadkeys.html)
+
+[http://tangzhixiong.com/kbd/](http://tangzhixiong.com/kbd/)

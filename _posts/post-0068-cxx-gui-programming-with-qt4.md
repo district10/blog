@@ -3,10 +3,9 @@ title: C++ GUI Programming with Qt4 | C++ GUI Qt4 编程（第二版）
 date: 2015-11-23
 key-words:
 tags:
-    - qt
-    - gui
-    - programming
-...
+  - qt
+  - gui
+---
 
 C++ GUI Qt4 编程
 ================

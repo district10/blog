@@ -3,9 +3,9 @@ title: 小波变换在图像处理分析中的应用
 date: 2015-12-14
 key-words:
 tags:
-    - wavelet
-    - image processing
-...
+  - wavelet
+  - cv
+---
 
 小波变换在图像处理分析中的应用
 ==============================
@@ -19,12 +19,12 @@ tags:
 
     编译说明
 
-    #. 要先安装 [Adobe fonts](http://whudoc.qiniudn.com/2016/adobe-fonts.7z) 字体；
-    #. 再从 [CTeX](http://www.ctex.org/CTeXDownload) 下载完全 LaTeX 安装包；
-    #. 再下载安装 [GitBash](http://7xjdjw.com1.z0.glb.clouddn.com/Git-1.9.5-preview20150319.exe)
-       （调用编译脚本）和 [Pandoc](http://7xjdjw.com1.z0.glb.clouddn.com/pandoc-1.13.2-windows.msi)
-       （Markdown 转换为 TeX）；
-    #. 双击 `_pdf.sh`{.bash} 即可编译出 PDF。
+    #.  要先安装 [Adobe fonts](http://whudoc.qiniudn.com/2016/adobe-fonts.7z) 字体；
+    #.  再从 [CTeX](http://www.ctex.org/CTeXDownload) 下载完全 LaTeX 安装包；
+    #.  再下载安装 [GitBash](http://7xjdjw.com1.z0.glb.clouddn.com/Git-1.9.5-preview20150319.exe)
+        （调用编译脚本）和 [Pandoc](http://7xjdjw.com1.z0.glb.clouddn.com/pandoc-1.13.2-windows.msi)
+        （Markdown 转换为 TeX）；
+    #.  双击 `_pdf.sh`{.bash} 即可编译出 PDF。
 
     | TANG ZhiXiong 唐志雄
     | 2016 年 01 月 17 日
@@ -530,22 +530,22 @@ JPEG 2000 仍然有很大的技术优势，通常压缩性能大概可以提高 
 
 ---
 
-Refs
+refs and see also
 
-#. [Dirac delta function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dirac_delta_function)
-#. [Fourier Transform -- from Wolfram MathWorld](http://mathworld.wolfram.com/FourierTransform.html)
-#. [Fourier transform - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Fourier_transform)
-#. [INDEX TO SERIES OF TUTORIALS TO WAVELET TRANSFORM BY ROBI POLIKAR](http://users.rowan.edu/~polikar/WAVELETS/WTtutorial.html)
-#. [JPEG 2000 - 维基百科镜像，不撞墙的百科全书](http://wiki.yooooo.us/d2lraS9KUEVHXzIwMDA=)
-#. [Wavelet transform - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Wavelet_transform)
-#. [傅立叶分析之掐死教程（完整版）更新于2014.06.06 - 与时间无关的故事 - 知乎专栏](http://zhuanlan.zhihu.com/wille/19763358)
-#. [傅立叶变换 - 维基百科镜像，不撞墙的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlODIlODUlRTklODclOEMlRTUlOEYlQjYlRTUlOEYlOTglRTYlOEQlQTI=)
-#. [哈尔小波转换 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlOTMlODglRTclODglQkUlRTUlQjAlOEYlRTYlQjMlQTIlRTglQkQlODklRTYlOEYlOUI=)
-#. [图像压缩 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlOUIlQkUlRTUlODMlOEYlRTUlOEUlOEIlRTclQkMlQTk=)
-#. [小波分析 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlQjAlOEYlRTYlQjMlQTIlRTUlODglODYlRTYlOUUlOTA=)
-#. [小波变换 - Embed98 - 博客频道 - CSDN.NET](http://blog.csdn.net/socx2007/article/details/2989063)
-#. [快速傅立叶变换 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlQkYlQUIlRTklODAlOUYlRTUlODIlODUlRTklODclOEMlRTUlOEYlQjYlRTUlOEYlOTglRTYlOEQlQTI=)
-#. [有损数据压缩 - 维基百科镜像，不撞墙的百科全书](http://wiki.yooooo.us/d2lraS8lRTYlOUMlODklRTYlOEQlOUYlRTYlOTUlQjAlRTYlOEQlQUUlRTUlOEUlOEIlRTclQkMlQTk=)
-#. [离散小波变换 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTklOUIlQTIlRTYlOTUlQTMlRTUlQjAlOEYlRTYlQjMlQTIlRTglQUUlOEElRTYlOEYlOUI=)
-#. [能不能通俗的讲解下傅立叶分析和小波分析之间的关系？ - 傅立叶变换(Fourier Transform) - 知乎](http://www.zhihu.com/question/22864189)
-#. [连续小波转换 - 维基百科镜像，不撞墙的百科全书](http://wiki.yooooo.us/d2lraS8lRTklODAlQTMlRTclQkElOEMlRTUlQjAlOEYlRTYlQjMlQTIlRTglQkQlODklRTYlOEYlOUI=)
+#.  [Dirac delta function - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dirac_delta_function)
+#.  [Fourier Transform -- from Wolfram MathWorld](http://mathworld.wolfram.com/FourierTransform.html)
+#.  [Fourier transform - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Fourier_transform)
+#.  [INDEX TO SERIES OF TUTORIALS TO WAVELET TRANSFORM BY ROBI POLIKAR](http://users.rowan.edu/~polikar/WAVELETS/WTtutorial.html)
+#.  [JPEG 2000 - 维基百科镜像，不撞墙的百科全书](http://wiki.yooooo.us/d2lraS9KUEVHXzIwMDA=)
+#.  [Wavelet transform - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Wavelet_transform)
+#.  [傅立叶分析之掐死教程（完整版）更新于2014.06.06 - 与时间无关的故事 - 知乎专栏](http://zhuanlan.zhihu.com/wille/19763358)
+#.  [傅立叶变换 - 维基百科镜像，不撞墙的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlODIlODUlRTklODclOEMlRTUlOEYlQjYlRTUlOEYlOTglRTYlOEQlQTI=)
+#.  [哈尔小波转换 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlOTMlODglRTclODglQkUlRTUlQjAlOEYlRTYlQjMlQTIlRTglQkQlODklRTYlOEYlOUI=)
+#.  [图像压缩 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlOUIlQkUlRTUlODMlOEYlRTUlOEUlOEIlRTclQkMlQTk=)
+#.  [小波分析 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlQjAlOEYlRTYlQjMlQTIlRTUlODglODYlRTYlOUUlOTA=)
+#.  [小波变换 - Embed98 - 博客频道 - CSDN.NET](http://blog.csdn.net/socx2007/article/details/2989063)
+#.  [快速傅立叶变换 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTUlQkYlQUIlRTklODAlOUYlRTUlODIlODUlRTklODclOEMlRTUlOEYlQjYlRTUlOEYlOTglRTYlOEQlQTI=)
+#.  [有损数据压缩 - 维基百科镜像，不撞墙的百科全书](http://wiki.yooooo.us/d2lraS8lRTYlOUMlODklRTYlOEQlOUYlRTYlOTUlQjAlRTYlOEQlQUUlRTUlOEUlOEIlRTclQkMlQTk=)
+#.  [离散小波变换 - 维基百科，自由的百科全书](http://wiki.yooooo.us/d2lraS8lRTklOUIlQTIlRTYlOTUlQTMlRTUlQjAlOEYlRTYlQjMlQTIlRTglQUUlOEElRTYlOEYlOUI=)
+#.  [能不能通俗的讲解下傅立叶分析和小波分析之间的关系？ - 傅立叶变换(Fourier Transform) - 知乎](http://www.zhihu.com/question/22864189)
+#.  [连续小波转换 - 维基百科镜像，不撞墙的百科全书](http://wiki.yooooo.us/d2lraS8lRTklODAlQTMlRTclQkElOEMlRTUlQjAlOEYlRTYlQjMlQTIlRTglQkQlODklRTYlOEYlOUI=)

@@ -3,9 +3,10 @@ title: CMake 简介和 CMake 模板
 date: 2016-05-08
 keywords:
 tags:
-    - cmake
-    - templates
-...
+  - cmake
+  - templates
+  - github
+---
 
 CMake 简介和 CMake 模板
 =======================

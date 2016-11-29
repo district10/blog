@@ -3,11 +3,11 @@ title: 背景知识的重要性
 date: 2016-03-18
 key-words:
 tags:
-    - commen sense
-    - prerequisite
-    - movie
-    - presentation
-...
+  - commen-sense
+  - prerequisite
+  - movie
+  - presentation
+---
 
 背景知识的重要性
 ================
@@ -96,4 +96,4 @@ Dicaprio 笑笑，“额……那老子还看过你的电影罗？”但是字�
 
 ![](http://whudoc.qiniudn.com/2016/zootopia2-notes-17.jpg){alt=zootopia2-notes-17.jpg}
 
-Slides: <http://whudoc.qiniudn.com/2016/zootopia2-slides.pdf>
+Slides: <http://whudoc.qiniudn.com/2016/zootopia2-slides.pdf>.
