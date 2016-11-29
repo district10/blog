@@ -1,8 +1,8 @@
 ---
 tzx-cssfile:
   - jquery-ui.css
-  - main.css
   - font-awesome.min.css
+  - main.css
 tzx-jsfile:
   - jquery.min.js
   - jquery-ui.min.js

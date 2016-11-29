@@ -3,10 +3,8 @@ ifeq (,$(DUMB))
 	FROM := $(FROM)+east_asian_line_breaks+emoji
 endif
 PANDOC_OPTIONS = -S -s --ascii --toc \
-	-c main.css \
 	--highlight-style pygments --template template.html \
 	-f $(FROM) metadata.yaml
-#	-f markdown+pandoc_title_block+east_asian_line_breaks+emoji+abbreviations metadata.yaml
 
 MD   = $(wildcard *.md)
 HTML = $(MD:%.md=%.html)
