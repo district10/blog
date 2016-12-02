@@ -2,12 +2,11 @@
 title: About | 关于
 date: 2015-11-06
 keywords:
-    - about
-    - district10
-    - dvorak4tzx
 tags:
-    - about
-...
+  - about
+  - district10
+  - dvorak4tzx
+---
 
 About | 关于
 ============
@@ -18,37 +17,17 @@ About | 关于
 
 TANG ZhiXiong，处女座，INTP：
 
--   个人主页：[tangzhixiong.com](http://tangzhixiong.com){.heart}
--   GitHub：[district10](https://github.com/district10){.heart}
+-   个人主页：[tangzhixiong.com](http://tangzhixiong.com)
+-   GitHub：[district10](https://github.com/district10)
 -   Twitter：[dvorak4tzx4](https://twitter.com/dvorak4tzx4)
--   Lofter：[dvorak4tzx](http://dvorak4tzx.lofter.com/)
--   QQ & Email：`echo NTEzODgwNjQxQHFxLmNvbQo= | base64 --decode`{.bash}
--   <div class="tzx-drawer" shy>
-    Wechat
-
-    :   ![](http://whudoc.qiniudn.com/2016/wechat-friend.jpg)
-
-        <div style="font-size=80%">
-        <div class="tzx-drawer" shy>
-        如果你觉得哪篇文章特别特别好，也可以随意打赏 ==
-
-        :   ![](http://whudoc.qiniudn.com/2016/wechat-pay.jpg)
-        </div>
-        </div>
-    </div>
 
 <div class="tzx-hide">
--   SegmentFault: [dvorak4tzx](https://segmentfault.com/u/dvorak4tzx)
 -   简书：[Gnat](http://www.jianshu.com/users/faa44ac9e895/top_articles)
+-   SegmentFault: [dvorak4tzx](https://segmentfault.com/u/dvorak4tzx)
+-   Lofter：[dvorak4tzx](http://dvorak4tzx.lofter.com/)
+-   QQ & Email：`echo NTEzODgwNjQxQHFxLmNvbQo= | base64 --decode`{.bash}
 -   [nitrotype](https://www.nitrotype.com/racer/dvorak4tzx)，[10fastfingers](http://10fastfingers.com/user/1178438/)
 </div>
-
-本博客源码：
-
--   [district10/blog](https://github.com/district10/blog)：用 Markdown 写 :smile:
--   [district10/orgit](https://github.com/district10/orgit)：用 Emacs org-mode 写
-    ^[这边功能强大，还可以加密一些私人的东西（用的是 gpg 加密）。但是在 Windows 和 Linux 下体验很不一致，所以这边写得比较少。（Vim 才是真爱~）]
--   [district10/notes](https://github.com/district10/notes)：这些是笔记
 
 说明：
 
@@ -99,3 +78,19 @@ feel bad.** ;)”](https://twitter.com/notch/status/157261795139125248)。
 [![](http://whudoc.qiniudn.com/2016/firefox_2016-07-15_21-01-56.png)](http://tangzx.qiniudn.com/notes){style="cursor:default"}
 
 注：Markus Persson (@notch) 是 Minecraft（游戏：我的世界）的原作者。
+
+---
+
+<div class="tzx-drawer" style="text-align: center;" shy>
+Wechat
+
+:   ![](http://whudoc.qiniudn.com/2016/wechat-friend.jpg)
+
+    <div style="font-size=80%">
+    <div class="tzx-drawer" shy>
+    如果你觉得哪篇文章特别特别好，也可以随意打赏 ==
+
+    :   ![](http://whudoc.qiniudn.com/2016/wechat-pay.jpg)
+    </div>
+    </div>
+</div>
