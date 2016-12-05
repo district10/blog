@@ -109,9 +109,48 @@ if has("gui_running")
     elseif has("gui_macvim")
         set guifont=Menlo\ Regular:h8
     elseif has("gui_win32")
-        set guifont=Consolas:h8:cANSI
+        set guifont=Consolas:h14:cANSI
     endif
 endif
+
+let s:patternLinux      = '^\(.* \)\([1-9][0-9]*\)$'
+let s:patternWindows    = '^\(.* \)\([1-9][0-9]*\)\(.*\)$'
+let s:minfontsize       = 6
+let s:maxfontsize       = 16
+function! AdjustFontSize(amount)
+    if has("gui_gtk2") && has("gui_running")
+        " set guifont=Inconsolata\ 14
+        let fontname = substitute(&guifont, s:patternLinux, '\1', '')
+        let cursize  = substitute(&guifont, s:patternLinux, '\2', '')
+        let newsize = cursize + a:amount
+        if (newsize >= s:minfontsize) && (newsize <= s:maxfontsize)
+            let newfont = fontname . newsize
+            let &guifont = newfont
+        endif
+  elseif has("gui_win32") && has("gui_running")
+      " set guifont=Consolas:h14:cANSI
+      let fontname = substitute(&guifont, s:patternWindows, '\1', '')
+      let cursize  = substitute(&guifont, s:patternWindows, '\2', '')
+      let tail     = substitute(&guifont, s:patternWindows, '\3', '')
+      let newsize = cursize + a:amount
+      if (newsize >= s:minfontsize) && (newsize <= s:maxfontsize)
+          let newfont = fontname . newsize .tail
+          let &guifont = newfont
+      endif
+  else
+      echoerr "You need to run the GTK2 version of Vim to use this function."
+  endif
+endfunction
+
+function! LargerFont()
+  call AdjustFontSize(1)
+endfunction
+command! LargerFont call LargerFont()
+
+function! SmallerFont()
+  call AdjustFontSize(-1)
+endfunction
+command! SmallerFont call SmallerFont()
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
