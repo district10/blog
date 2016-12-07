@@ -2,6 +2,8 @@
 title: Koans | 呓语
 date: 2015-12-25
 keywords:
+  - koans
+  - koan2
 tags:
   - koans
 jsfile:
@@ -9,8 +11,16 @@ after-before:
 before-after:
 ---
 
-Koans | 呓语[^why-koan]
-=======================
+Koans | 呓语
+============
+
+## `1481075605`{.tzx-timestamp} 都是成都的错
+
+我的使用经历中，`cd` 有 30% 的可能性会打成“成都”。
+如果只算刚切换到命令行环境输入“cd”，这个比例可能
+会有 80%。
+
+现在对成都产生了厌烦情绪。这锅只得成都背……
 
 ## `1480917771`{.tzx-timestamp} 你没错，真的是它蠢，而不是你蠢……
 
@@ -3278,4 +3288,6 @@ Firefox: Blocked by Content Security Policy.
 
 这个……有点叼。我要好好学习以后破解 md5……
 
-[^why-koan]: 这是我的微（tu）博（cao）。呓语呓语，神志不清；若有冒犯，敬请原谅。
+---
+
+这是我的微（tu）博（cao）。呓语呓语，神志不清；若有冒犯，敬请原谅。
