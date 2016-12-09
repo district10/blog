@@ -4,8 +4,8 @@ date: 2015-11-06
 keywords:
 tags:
   - about
-  - district10
-  - dvorak4tzx
+  - INTP
+  - 处女座
 ---
 
 About | 关于
@@ -15,11 +15,12 @@ About | 关于
 [![Build Status](https://travis-ci.org/district10/blog.svg?branch=master)](https://travis-ci.org/district10/blog){title="本站由 travis 编译。"}
 </div>
 
-TANG ZhiXiong，处女座，INTP：
+TANG ZhiXiong<span class="tzx-hide">，处女座，INTP</span>：
 
 -   个人主页：[tangzhixiong.com](http://tangzhixiong.com)
 -   GitHub：[district10](https://github.com/district10)
 -   Twitter：[dvorak4tzx4](https://twitter.com/dvorak4tzx4)
+-   Email: `echo dGFuZy56aGkueGlvbmdAcXEuY29tCg== | base64 --decode`
 
 <div class="tzx-hide">
 -   简书：[Gnat](http://www.jianshu.com/users/faa44ac9e895/top_articles)

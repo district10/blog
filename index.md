@@ -11,7 +11,7 @@ after-before: |
 ...
 
 <div class="slogan">Welcome to TANG ZhiXiong's Blog</div>
-<p id="tzxslogan" style="text-align:right;padding-right: 10em;" title="按下【h】获取页面帮助。">Don't forget to feel bad.</p>
+<p id="tzxslogan" style="text-align:right;padding-right: 10em;" title="What makes a person great?">Don't forget to feel bad.</p>
 
 <div id="buckets">
 <div><a href="koans.html">Koans | 呓语</a></div>

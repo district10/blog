@@ -14,6 +14,66 @@ before-after:
 Koans | 呓语
 ============
 
+## `1481215505`{.tzx-timestamp} 七牛流量要爆……
+
+收到邮件说 11 月份的账单居然有 13.38 元……之前一般都在免费额度内，
+或者只是超了一点，大概两三块钱的样子。这次居然流量费有十几块，Orz。
+
+我以为是有人在下载我的什么大文件，比如我编译的 qt 二进制，那些东西
+我一般放在 whudoc 这个 bucket。但查了日志，不是的。
+
+![这个趋势不太妙……我是该哭还是笑……](http://whudoc.qiniudn.com/2016/2016-12-09_00-41-52.png)
+
+![流量都是 tangzx 的，也就是我的博客](http://whudoc.qiniudn.com/2016/2016-12-09_00-44-07.png)
+
+好吧，如果可以。如果你还不是七牛用户，可以用我的注册链接，
+互利：<https://portal.qiniu.com/signup?code=3ld4krtl7yzbm>。
+
+鉴于我的图片都放在了 whudoc 这个 bucket，我就不知道为啥博客流量这么大了……
+
+![我的文件一般都放在 whudoc](http://whudoc.qiniudn.com/2016/2016-12-09_00-59-28.png)
+
+谢谢。
+
+（显然不是广告，因为我是个有原则的人，从来不硬广。你知道我最喜欢这篇文章了：
+[《生活方式》](#%E8%9F%B9%E7%85%B2%E9%A5%AD%E5%91%B5%E5%91%B5%E8%9F%B9%E7%85%B2%E9%A5%AD)（页内链接）。）
+
+刚才翻了日志，有如下发现：
+
+```
+12 月 2 号，有人 curl 我的 about 页面 4000 多次：
+127.0.0.1 - 12 [02/Dec/2016:19:11:46 +0800] "GET http://tangzx.qiniudn.com/about.html HTTP/1.1" 200 717 "-" "curl/7.19.7%20(x86_64-redhat-linux-gnu)%20libcurl/7.49.0%20OpenSSL/1.0.1e%20zlib/1.2.3%20libidn/1.18"
+
+然后是各种搜索引擎，比如 yandex，google，bing，mozilla，yahoo（大约 1/5 是搜索引擎贡献的）：
+93.158.152.68 - 53 [03/Dec/2016:12:22:39 +0800] "GET http://tangzx.qiniudn.com/baidu_verify_spDIlkgEJR.html HTTP/1.1" 200 712 "-" "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
+203.208.60.208 - 5 [03/Dec/2016:16:50:41 +0800] "GET http://tangzx.qiniudn.com/robots.txt HTTP/1.1" 200 715 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+40.77.167.71 - 86 [03/Dec/2016:14:22:02 +0800] "GET http://tangzx.qiniudn.com/notes/highlight.css HTTP/1.1" 200 1300 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safari/9537.53 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)"
+68.180.228.121 - 9 [07/Dec/2016:13:17:22 +0800] "GET http://tangzx.qiniudn.com/robots.txt HTTP/1.1" 200 668 "-" "Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)"
+216.244.66.247 - 0 [07/Dec/2016:07:43:48 +0800] "GET http://tangzx.qiniudn.com/robots.txt HTTP/1.1" 200 664 "-" "Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)"
+```
+
+## `1481169117`{.tzx-timestamp} Markdown 语法的错
+
+最近成了 Java 脑残粉，还写了好几个工具自己用。甚至我想把自己转换 Markdown 的工具从
+pandoc 换成 Java 的……看了一下 GitHub 上有这个：[sirthias/pegdown: A pure-Java Markdown processor based on a parboiled PEG parser supporting a number of extensions](https://github.com/sirthias/pegdown)。
+
+不错不错。当然我暂时不会换掉 pandoc，因为不想改自己的 workflow。
+但作为一个文本处理的 Java 源码，似乎很值得看看。
+
+它的文档里有这么几句：
+
+```
+Note: pegdown differs from the original Markdown in that
+it ignores in-word emphasis as in
+
+> my_cool_file.txt
+> 2*3*4=5
+
+Currently this "extension" cannot be switched off.
+```
+
+我觉得这是 Markdown 设计的失误。
+
 ## `1481075605`{.tzx-timestamp} 都是成都的错
 
 我的使用经历中，`cd` 有 30% 的可能性会打成“成都”。
@@ -318,7 +378,6 @@ Vim 是我的大爱，但也不得不批评一下 Vim 的蠢。
 “我给你讲，越耽误时间，越慢，越不想写。我给你讲，不想写你也要给我写完呢。不如好好写。”
 
 连我的奶奶都知道“打啊骂啊说啊有什么用？要鼓励，小孩子才愿意学好。”，这才是大智慧！
-^[爷爷是个老师，奶奶一点书没读，但我一直觉得我奶奶比我爷爷聪明多了！]
 
 ## `1469506094`{.tzx-timestamp} 思维导图毁一生
 
