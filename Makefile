@@ -185,4 +185,4 @@ make:
 
 w: watch
 watch:
-	java -jar watcher.jar
+	java -jar jwatch.jar
