@@ -36,6 +36,12 @@ TANG ZhiXiong<span class="tzx-hide">，处女座，INTP</span>：
 -   博客的评论系统（disqus）默认不展开，因为我讨厌它影响我页面的加载速度
 -   页面上按下 <kbd>h</kbd> 获取帮助（e.g. 按下 <kbd>&rarr;</kbd> <kbd>&rarr;</kbd> <kbd>&darr;</kbd> 查看源码）
 
+Music never sleeps：
+
+[![](https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Makenaide.jpg/330px-Makenaide.jpg)](https://en.wikipedia.org/wiki/Izumi_Sakai)
+
+[![](https://upload.wikimedia.org/wikipedia/en/2/29/Some_People_Have_Real_Problems_US_cover.jpg)](https://en.wikipedia.org/wiki/Some_People_Have_Real_Problems)
+
 ---
 
 因为很多原因我写博客
