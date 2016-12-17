@@ -14,6 +14,32 @@ before-after:
 Koans | 呓语
 ============
 
+## `1481992780`{.tzx-timestamp} 特地去查了一下《人类清除计划》
+
+发现评价不高。所以我还是不看了。有感于：
+
+-   [如何看待民生银行性骚扰事件？ - 知乎](https://www.zhihu.com/question/53381416)
+
+-   今天在图书馆碰到的一个死老头子
+
+    :   这个老头没有带卡，然后硬闯，被保安拦住。声称自己是职工，还威胁保安说你拦我我让你饭碗不保。
+        态度太嚣张。我想打他。
+
+        他旁边还有个死老太婆，似乎要为自己老公的英勇点赞。呵呵呵。
+
+## `1481627484`{.tzx-timestamp} 四件事让人感到蛋疼
+
+有感于今天把 PR（Public Relations）当成了 PR（Pull Request）/PR（Personnel Resources）。
+
+这四件事层层递进，一个比一个（令人）蛋疼：
+
+1.  有个开源项目死了；（前途未卜）
+2.  有人提出 request to take over 这个项目；（壮士接盘）
+3.  原作者没有回应；（Who the fuck are u？/你算老几？）
+4.  项目好像又活了……（I don't mean you，I mean all of you。Are bullshit。）
+
+（Request 这个词真有意思。）
+
 ## `1481215505`{.tzx-timestamp} 七牛流量要爆……
 
 收到邮件说 11 月份的账单居然有 13.38 元……之前一般都在免费额度内，
