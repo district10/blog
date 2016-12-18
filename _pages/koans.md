@@ -14,6 +14,28 @@ before-after:
 Koans | 呓语
 ============
 
+## `1482085335`{.tzx-timestamp} UTF-8 BOM
+
+原来 notepad++ 的 utf-8 有无 bom 的区分是“UTF-8”和“UTF-8 without BOM”，
+现在是“UTF-8 BOM”和“UTF-8”。
+
+之前的说法好像暗示了没有 BOM 是什么损失似的。
+实际上，没 BOM 是好，有 BOM 是罪。
+
+所以这条不是吐槽不是 koan，只是一个令人欣喜的小发现。
+
+## `1482084858`{.tzx-timestamp} Mendeley 的 citation key 怎么找不到？
+
+开始我以为是有些字段没有设定，所以不能导出 BibTeX。
+不过刚才发现其实不是的，只要你右键对着它，“Copy as” -- “BibTeX Entry”，
+这个字段就有了。
+
+（你可能需要点一下另一个文献，然后再重新选中这个，视图才会更新。）
+
+Mendeley 大法好！
+BibTeX 大法好！
+Pandoc（markdown 直接转到 docx，然后拷贝到开题报告）大法好！
+
 ## `1481992780`{.tzx-timestamp} 特地去查了一下《人类清除计划》
 
 发现评价不高。所以我还是不看了。有感于：
