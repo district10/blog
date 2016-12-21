@@ -64,12 +64,27 @@ a
 [^_^]:
     b
 
-c
+    c
 
 d
+
+e
 ```
 
-在 v2ex 上发了一个帖子：[Markdown 要注释还要萌 - V2EX](https://www.v2ex.com/t/329205#reply0)。
+a
+
+[^_^]:
+    b
+
+    c
+
+d
+
+e
+
+显示的 a d e 应当间隔一样长。
+
+（在 v2ex 上发了一个帖子：[Markdown 要注释还要萌 - V2EX](https://www.v2ex.com/t/329205#reply0)。）
 
 [^_^]:
     就是这么赞。
