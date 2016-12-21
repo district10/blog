@@ -14,6 +14,66 @@ before-after:
 Koans | 呓语
 ============
 
+## `1482310134`{.tzx-timestamp} Markdown 的注释
+
+写代码你可以注释，不需要处理的代码就 comment out。
+写 Markdown 呢？一篇文章写出来，总是有点草稿的，每次都忍痛割爱删掉，可能下次还要再敲一遍。
+所以我一般都写到某个特定的 class 的 div 里，再用 CSS 把它们隐藏。
+
+可惜这种方法既不优雅也不通用。
+机智如我如果一下就 bing 到了：[syntax - Comments in Markdown - Stack Overflow](http://stackoverflow.com/questions/4823468/comments-in-markdown)。
+
+你可以用下面这些：
+
+```
+[comment]: <> (This is a comment, it will not be included)
+[comment]: <> (in  the output file unless you use it in)
+[comment]: <> (a reference style link.)
+[//]: <> (This is also a comment.)
+[//]: # (This may be the most platform independent comment)
+```
+
+>   `[//]: # "Comment"` and `[//]: # (Comment)` seem to work on a wider variety of implementations, because `#`
+>   is a valid relative URI. GitHub, for example, rejects `<>`, and the entire line becomes visible.
+>   It's also worth noting that link labels often need to be separated from other content by a blank line.
+>   – [Zenexer](http://stackoverflow.com/users/1188377/zenexer) Mar 5 '14 at 0:17
+
+真是机智！我突然想到以前在简书我用过这个 trick
+^[用 `[url]: file://...` 来获得一个高亮了的，但不能点击的链接，比如这篇：[WhuRS 实习报告（Draft by TZX） - 简书](http://www.jianshu.com/p/ae6f53cd27e3)。]
+。
+
+我决定以后用：
+
+```
+[^_^]:
+    commentted-out contents
+    should be shift to right by four spaces (`>>`).
+```
+
+亲测可用（Pandoc、GitHub、简书、作业部落）。十分完美，除了这个 warning：
+
+```
+pandoc: Duplicate note reference `^' "source" (line 85, column 1)
+```
+
+如果你想测试一下你的 Markdown 能不能这么用，这是一点测试的文字：
+
+```
+a
+
+[^_^]:
+    b
+
+c
+
+d
+```
+
+在 v2ex 上发了一个帖子：[Markdown 要注释还要萌 - V2EX](https://www.v2ex.com/t/329205#reply0)。
+
+[^_^]:
+    就是这么赞。
+
 ## `1482126583`{.tzx-timestamp} 人有两种怂
 
 第一种是看到老人倒在地上你不敢扶；

@@ -5,6 +5,7 @@
 let mapleader = ","
 let g:mapleader = ","
 let @f="A -<"
+" let @F="A +<"
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
@@ -109,7 +110,7 @@ if has("gui_running")
     elseif has("gui_macvim")
         set guifont=Menlo\ Regular:h8
     elseif has("gui_win32")
-        set guifont=Consolas:h14:cANSI
+        set guifont=Consolas:h10:cANSI
     endif
 endif
 
