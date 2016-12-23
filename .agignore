@@ -1,6 +1,5 @@
 publish/
+_statics/
 .git/
-gists/
-blagee/
-_miscs/
-_statics/utils/
+*.js
+*.css

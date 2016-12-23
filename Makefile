@@ -1,14 +1,14 @@
 .PHONY: k koan n note m time
 
-RES_IN 	:= index.md metadata.yaml template.html sitemap.pl
+RES_IN 	:= index.md 
 STATICS := $(wildcard _statics/*)
 POSTS   := $(wildcard _posts/*)
 PAGES   := $(wildcard _pages/*)
-RES_OUT := $(addprefix publish/, $(RES_IN)) $(addprefix publish/, $(STATICS:_statics/%=%)) $(addprefix publish/, $(POSTS:_posts/%=%)) $(addprefix publish/, $(PAGES:_pages/%=%)) 
+RES_OUT := publish/index.md $(addprefix publish/, $(STATICS:_statics/%=%)) $(addprefix publish/, $(POSTS:_posts/%=%)) $(addprefix publish/, $(PAGES:_pages/%=%)) 
 
 all: $(RES_OUT) html
 $(RES_OUT): publish/Makefile
-publish/Makefile: publish.mk
+publish/Makefile: _statics/publish.mk
 	@mkdir -p $(@D)
 	cp $< $@
 
