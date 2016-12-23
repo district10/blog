@@ -60,10 +60,49 @@ javascript: document.getElementsByTagName('body')[0]
 
 代码你在 <http://tangzx.qiniudn.com/hello.js> 写好就行。
 
+---
+
 豆瓣读书和豆瓣电影的两个脚本：
 
 #. <http://tangzx.qiniudn.com/doubanBook.js>
+
+```
+output = '';
+
+books = document.getElementsByClassName('subject-item');
+for ( var i = 0; i < books.length; ++i ) {
+    dpage = books[i].children[0].children[0].href;
+    title = books[i].children[1].children[0].children[0].title;
+    cover = books[i].children[0].children[0].children[0].src;
+    // liText = '#. [' + title + '](' + dpage + ')\n';
+    liImag = '[![](' + cover + ')](' + dpage + ' "' + title + '")\n';
+    output += liImag;
+}
+
+listP = document.createElement('p')
+listP.innerText = output;
+document.getElementsByTagName('body')[0].appendChild( listP );
+```
+
 #. <http://tangzx.qiniudn.com/doubanMovie.js>
+
+```
+output = '';
+
+movies = document.getElementsByClassName('item');
+for ( var i = 0; i < movies.length; ++i ) {
+    dpage = movies[i].children[0].children[0].href;
+    title = movies[i].children[1].children[0].children[0].children[0].innerText
+    cover = movies[i].children[0].children[0].children[0].src;
+    // liText = '#. [' + title + '](' + dpage + ')\n';
+    liImag = '[![](' + cover + ')](' + dpage + ' "' + title + '")\n';
+    output += liImag;
+}
+
+listP = document.createElement('p')
+listP.innerText = output;
+document.getElementsByTagName('body')[0].appendChild( listP );
+```
 
 这个技能是从 Mendeley 的浏览器插件学得。
 

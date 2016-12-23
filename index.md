@@ -16,14 +16,10 @@ after-before: |
 <div id="buckets">
 <div><a href="koans.html">Koans | 呓语</a></div>
 <div><a href="about.html">About | 关于</a></div>
-<hr /></div>
-
-<br/><div id="searchContainer">
-Search:<br>
-<input id="tzxsearchbox" type="text" name="tzxsearchbox" placeholder="type keywords in url/title/tag, e.g. 'vim', 'got', 'notes'." style="width:100%;max-width:600px;outline:0">
-</div><br/>
-<div id="links"></div><hr>
-
+<hr />
+</div>
+<br/>
+<div id="links"></div>
 <div style="font-variant:small-caps;" title="日期是挖坑时间。">[Posts](javascript:show()){.naive}</div>
 
 <div class="posts"><!--...-->
@@ -153,102 +149,3 @@ Search:<br>
 <div style="text-align:center;">
 [issues](https://github.com/district10/blog/issues){title="You can comment with a new issue. ;)"}
 </div>
-
-<link rel="stylesheet" href="auto-complete.css">
-<style>
-#searchContainer {
-    margin: 10px;
-    display: block;
-}
-#tzxsearchbox {
-    float: left;
-    width: 100%;
-    height: 27px;
-    line-height: 27px;
-    text-indent: 10px;
-    font-family: arial, sans-serif;
-    font-size: 1em;
-    color: #333;
-    background: #fff;
-    border: solid 1px #d9d9d9;
-    border-top: solid 1px #c0c0c0;
-}
-.autocomplete-suggestion {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-.tzx-suggestion-link {
-    padding-top: 0.5em;
-    padding-left: 2em;
-    font-size: 60%;
-}
-
-.tzx-suggestion-tagline {
-    padding-left: 2em;
-    font-size: 60%;
-    font-variant: small-caps;
-    font-family: Monaco, Menlo, Consolas, "Courier New", Monospace,
-                 "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun,
-                 STXihei, Heiti, sans-serif;
-}
-</style>
-
-<script src="auto-complete.js"></script>
-<script src="blog-query.js"></script>
-<script>
-;var link_prefix = tzx_link_prefix;
-;if ( window.location.toString().startsWith('file') ) {
-}
-
-;function prependChild( p, c ) {
-    if( p.hasChildNodes() ){
-        p.insertBefore( c, p.firstChild );
-    } else {
-        p.appendChild( p );
-    }
-}
-
-;new autoComplete({
-    selector: 'input[name="tzxsearchbox"]',
-    minChars: 1,
-    source: function(term, suggest){
-        term = term.toLowerCase();
-        var suggestions = [];
-        var choices = tzx_links;
-        for (i=0;i<choices.length;i++) {
-            var q = choices[i].query.join(' ') + ' '
-                  + choices[i].url.split(/[\/\-?.]+/gi) + ' '
-                  + choices[i].title;
-            if ( ~q.toLowerCase().indexOf(term) ) {
-                suggestions.push(choices[i]);
-            }
-        }
-        suggest(suggestions);
-    },
-        renderItem: function (item, search){
-        search = search.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
-        var re = new RegExp("(" + search.split(' ').join('|') + ")", "gi");
-        var dom =
-            '<div class="autocomplete-suggestion"'
-             +  ' link-title="' + item.title + '"'
-             +  ' link-url="' + item.url + '"'
-             +  ' link-query="' + search+ '">'
-             +    item.title.replace(re, "<b>$1</b>")
-             +  '<br/>'
-             +  '<div class="tzx-suggestion-link">'
-             +  '<a target="_blank"'
-             +  ' href="' + link_prefix + item.url + '">'
-             +              link_prefix + item.url.replace(re, "<b>$1</b>")
-             +  '</a></div>'
-             +  '<div class="tzx-suggestion-tagline">'
-             +      item.query.join(' & ').replace(re, "<b>$1</b>")
-             +  '</div>'
-             +  '</div>';
-        return dom;
-    },
-    onSelect: function(e, term, item) {
-        prependChild( document.getElementById('links'), item );
-        document.getElementById('tzxsearchbox').value = '';
-    }
-});
-</script>
