@@ -140,7 +140,7 @@ Chinese fonts
 ### 中文输入法
 
 ```bash
-sudo apt-get install ibus ibus-piniy
+sudo apt-get install ibus ibus-pinyin
 im-config
 ```
 

@@ -1,5 +1,6 @@
 .PHONY: k koan n note m time
 
+EDITOR ?= gvim
 RES_IN 	:= index.md 
 STATICS := $(wildcard _statics/*)
 POSTS   := $(wildcard _posts/*)
