@@ -14,6 +14,18 @@ before-after:
 Koans | 呓语
 ============
 
+## `1482552122`{.tzx-timestamp} 裸贷
+
+在豆瓣上看人说裸贷人信息被曝光，实在不懂为啥这都有人关注。
+
+曝光就曝光啊……这事儿还少吗？
+
+结果……我还是太年轻，这个“裸贷”的“裸”不是“裸婚”、“裸考”的“裸”（没有准备、没有资本），
+是“裸体”的“裸”（没有穿衣服）。我以为是打白条啥的，之前想的是人傻钱多
+连人家抵押都不看就给人借钱，现在要不回来钱了。
+
+我还是太年轻。
+
 ## `1482310134`{.tzx-timestamp} Markdown 的注释
 
 写代码你可以注释，不需要处理的代码就 comment out。
@@ -207,6 +219,8 @@ Pandoc（markdown 直接转到 docx，然后拷贝到开题报告）大法好！
 68.180.228.121 - 9 [07/Dec/2016:13:17:22 +0800] "GET http://tangzx.qiniudn.com/robots.txt HTTP/1.1" 200 668 "-" "Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)"
 216.244.66.247 - 0 [07/Dec/2016:07:43:48 +0800] "GET http://tangzx.qiniudn.com/robots.txt HTTP/1.1" 200 664 "-" "Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)"
 ```
+
+IP 地址: 89.7.71.69 西班牙，这人特么只 GET 我的 js 文件……不要用我的流量啊混蛋！
 
 ## `1481169117`{.tzx-timestamp} Markdown 语法的错
 

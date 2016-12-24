@@ -26,22 +26,22 @@ perlcp = \
 
 publish/%: _statics/%
 	cp $< $@
-
 publish/%.md: _pages/%.md
 	$(call perlcp, $<, $@)
 publish/%: _pages/%
 	cp $< $@
-
 publish/%.md: _posts/%.md
 	$(call perlcp, $<, $@)
 publish/%: _posts/%
 	cp $< $@
-
 publish/%.md: %.md
 	$(call perlcp, $<, $@)
 publish/%: %
 	cp $< $@
 
+time:
+	@date +%s | tr -d '\r\n' | clip 2>/dev/null || date +%s | tr -d '\r\n' | xclip -selection clipboard
+	@echo Unix time copied to your clipboard!
 sitemap:
 	make -C publish sitemap
 html:
@@ -53,7 +53,6 @@ qn: qiniu
 qiniu: 
 	qrsync conf.json
 
-# edits
 i: index
 index:
 	$(EDITOR) index.md
@@ -69,10 +68,6 @@ k: koan
 koan: time
 koan:
 	$(EDITOR) -p \
-		$(DIR_PAGES)/koans.md \
-		$(DIR_PAGES)/plans.md \
-		$(DIR_POSTS) \
-	
-time:
-	@date +%s | tr -d '\r\n' | clip 2>/dev/null || date +%s | tr -d '\r\n' | xclip -selection clipboard
-	@echo Unix time copied to your clipboard!
+		_pages/koans.md \
+		_pages/plans.md \
+		_posts/

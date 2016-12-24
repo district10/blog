@@ -12,9 +12,13 @@ html: template.html metadata.yaml
 html: $(HTML)
 
 notes.html: notes.md
-	pandoc $(PANDOC_OPTIONS) $< -o $@
+	pandoc $(PANDOC_OPTIONS) \
+		$(patsubst %.md, %.changes.yml, $<) \
+		$< -o $@
 koans.html: koans.md
-	pandoc $(PANDOC_OPTIONS) $< -o $@
+	pandoc $(PANDOC_OPTIONS) \
+		$(patsubst %.md, %.changes.yml, $<) \
+		$< -o $@
 
 %.html: %.md %.changes.yml
 	pandoc $(PANDOC_OPTIONS) --mathjax \
