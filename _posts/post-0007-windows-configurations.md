@@ -50,6 +50,11 @@ Tips
     举例：把 `http://gnat.qiniudn.com/neo.exe` 放到
     `C:\Users\tzx\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`。
 
+-   **声音方案**
+
+    设置为[【无声】](http://dvorak4tzx.lofter.com/post/1d4021c8_d6bd2cb)。
+    （烦死系统错误提示音了。）
+
 开机必备
 --------
 
@@ -65,23 +70,7 @@ Tips
 
 -   绿色版迅雷
 
--   Firefox 浏览器
-
-    插件：
-
-    +   Copy as Markdown，用于拷贝 Markdown 格式的页面链接。
-
-    +   VimFX，火狐浏览器中使用 Vim 快捷键操作，类似 vimium 之类。
-
-    +   Tabkit2，这个在插件中心（addons）下载不了，这里是我的备份：
-        <http://whudoc.qiniudn.com/2016/tabkit2@pikachuexe.amateur.hk.xpi>，
-        先到 `about:config` 搜索 signature，把需要验证签名设置为 false，然后
-        把下载了得 xpi 文件拖到 addons 页面即可安装。
-
-        需要重启浏览器，重启后选择默认的 tree tabs 就好。
-
-        这东西似乎很 bug，所以 addons 里都搜不到，但功能点真心赞啊！从我的情况看，
-        似乎只能在一个低版本的 portable firefox 上运行良好。
+-   浏览器插件，见 [Debian 配置](post-0003-debian-configurations.html)。
 
 -   Git for windows
 

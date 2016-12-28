@@ -52,30 +52,46 @@ adduser gnat                                # userdel gnat
 visudo                                      # add "gnat ALL=(ALL:ALL) ALL"
 ```
 
-使用国内的镜像可以加快软件的下载（`apt-get install` 之类），可以配置到中科大（USTC），如下修改
-`/etc/apt/sources.list`：
+使用国内的镜像可以加快软件的下载（`apt-get install` 之类），可以 [配置到中科大（USTC）](https://lug.ustc.edu.cn/wiki/mirrors/help)。
 
-```
-deb http://mirrors.ustc.edu.cn/debian stable main contrib non-free
-deb-src http://mirrors.ustc.edu.cn/debian stable main contrib non-free
-deb http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free
-deb-src http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free
-```
+修改 `/etc/apt/sources.list`：
 
-至于 ubuntu，类似。USTC 有提供软件源配置指南。对于 15.04，使用：
+:   推荐 USTC 的生成器：[LUG's repo file generator](https://mirrors.ustc.edu.cn/repogen/)。
 
-```
-deb http://mirrors.ustc.edu.cn/ubuntu/ vivid main restricted universe multiverse
-deb http://mirrors.ustc.edu.cn/ubuntu/ vivid-security main restricted universe multiverse
-deb http://mirrors.ustc.edu.cn/ubuntu/ vivid-updates main restricted universe multiverse
-deb http://mirrors.ustc.edu.cn/ubuntu/ vivid-proposed main restricted universe multiverse
-deb http://mirrors.ustc.edu.cn/ubuntu/ vivid-backports main restricted universe multiverse
-deb-src http://mirrors.ustc.edu.cn/ubuntu/ vivid main restricted universe multiverse
-deb-src http://mirrors.ustc.edu.cn/ubuntu/ vivid-security main restricted universe multiverse
-deb-src http://mirrors.ustc.edu.cn/ubuntu/ vivid-updates main restricted universe multiverse
-deb-src http://mirrors.ustc.edu.cn/ubuntu/ vivid-proposed main restricted universe multiverse
-deb-src http://mirrors.ustc.edu.cn/ubuntu/ vivid-backports main restricted universe multiverse
-```
+    Debian
+
+    :   ```
+        deb http://mirrors.ustc.edu.cn/debian stable main contrib non-free
+        deb-src http://mirrors.ustc.edu.cn/debian stable main contrib non-free
+        deb http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free
+        deb-src http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free
+        ```
+
+        可以看到格式是 `deb <url> <dist> <节点1> <节点2> <节点3>`，
+        节点 1..3 是 <url>/dists/<dist> 下的三个子目录。
+
+    Ubuntu
+
+    :   (15.04)
+
+        ```
+        deb http://mirrors.ustc.edu.cn/ubuntu/ vivid main restricted universe multiverse
+        deb http://mirrors.ustc.edu.cn/ubuntu/ vivid-security main restricted universe multiverse
+        deb http://mirrors.ustc.edu.cn/ubuntu/ vivid-updates main restricted universe multiverse
+        deb http://mirrors.ustc.edu.cn/ubuntu/ vivid-proposed main restricted universe multiverse
+        deb http://mirrors.ustc.edu.cn/ubuntu/ vivid-backports main restricted universe multiverse
+        deb-src http://mirrors.ustc.edu.cn/ubuntu/ vivid main restricted universe multiverse
+        deb-src http://mirrors.ustc.edu.cn/ubuntu/ vivid-security main restricted universe multiverse
+        deb-src http://mirrors.ustc.edu.cn/ubuntu/ vivid-updates main restricted universe multiverse
+        deb-src http://mirrors.ustc.edu.cn/ubuntu/ vivid-proposed main restricted universe multiverse
+        deb-src http://mirrors.ustc.edu.cn/ubuntu/ vivid-backports main restricted universe multiverse
+        ```
+
+    Kali
+
+    :   ```
+        deb http://mirrors.ustc.edu.cn/kali kali-rolling main contrib non-free
+        ```
 
 配置好软件源，就可以更新了，在命令行内输入：
 
@@ -99,17 +115,39 @@ dpkg-reconfigure locales                    # us utf 8; zh utf 8, GB, Big5, etc
 locales-gen                                 # if skiped locales generation
 ```
 
+## 配置
+
+### Zsh (oh-my-zsh)
+
+```bash
+curl -L http://install.ohmyz.sh | sh
+```
+
+`.zshrc`
+
+:   ```bash
+    plugins=(git colored-man)
+    ```
+
 ## Chrome/Firefox Extensions
 
-- [CRX extensions](http://weibo.com/5110199966/BDGhVfMUy)
-- [XPI 插件必备](http://weibo.com/5110199966/C2al0ztzs)
+插件：
 
-其它都不重要，除了 `Copy-as-Markdown.crx`，VimFx。
+-   Huaban (both)
+-   Copy as Markdown (both)
+-   Tree Tab, e.g.
+    -   [Tree Style Tab :: Add-ons for Firefox](https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/)
+    -   [Tab Tree :: Add-ons for Firefox](https://addons.mozilla.org/en-US/firefox/addon/tab-tree/?src=search)
+-   cVim (Chrome)
+-   VimFX (firefox)
+-   Reload, e.g.
+    -   [Auto Reload :: Firefox 附加组件](https://addons.mozilla.org/zh-CN/firefox/addon/auto-reload/?src=api)
+    -   chrome?
 
-VimFX notes:
+refs and see also
 
-:   - `?`: help
-    - `gt`, `gT`
+-   [CRX extensions](http://weibo.com/5110199966/BDGhVfMUy)
+-   [XPI 插件必备](http://weibo.com/5110199966/C2al0ztzs)
 
 ## MISC
 
@@ -145,18 +183,6 @@ im-config
 ```
 
 然后打开 language-support 安装字体等相关内容。
-
-### Zsh (oh-my-zsh)
-
-```bash
-curl -L http://install.ohmyz.sh | sh
-```
-
-`.zshrc`
-
-:   ```bash
-    plugins=(git colored-man)
-    ```
 
 ### Emacs 24
 
@@ -336,12 +362,13 @@ sudo cnpm install -g typescript
 
 ### Gems
 
-用淘宝的 [RubyGems 源](http://ruby.taobao.org/)
+~~用淘宝的 [RubyGems 源](http://ruby.taobao.org/)~~
+用 [RubyGems 镜像 - Ruby China](http://gems.ruby-china.org/)。
 
 ```bash
 gem sources -l                              # 看看是什么，把它去除
 gem sources --remove http://rubygems.org/
-gem sources -a https://ruby.taobao.org
+gem sources --add    https://gems.ruby-china.org/
 ```
 
 注意 `http://rubygems.org` 不要打成 `http://rubygems.org/`。

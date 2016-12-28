@@ -176,18 +176,8 @@ Take the RAMP，and ROCK！
 
 Vertical Tabs 在 Firefox 浏览器里也有，插件下载：
 
--   VimFX, [backup](http://whudoc.qiniudn.com/2016/VimFx@akhodakivskiy.github.com.xpi)
 -   [Tree Style Tab :: Add-ons for Firefox](https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/)
--   [Auto Reload :: Firefox 附加组件](https://addons.mozilla.org/zh-CN/firefox/addon/auto-reload/?src=api)
-
-Chrome
-
--   cVim
-
-Firefox & Chrome
-
--   Huaban
--   Copy as Markdown
+-   或者 tab tree
 
 ---
 

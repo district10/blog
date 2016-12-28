@@ -14,6 +14,58 @@ before-after:
 Koans | 呓语
 ============
 
+## `1482838643`{.tzx-timestamp} Windows 唯一让我不满的
+
+就是 Emacs 不能正常地跑起来。我决定重新 GET Emacs，
+这次不搞花样，坚决不定制。只使用默认的配置。
+一个插件都不装，最好一行配置都不写。
+
+张五常说得好：学习要从假设大师是对开始。
+
+Emacs 默认的，就是我要掌握的！而且，我不用 evil-mode！
+
+吐槽：emacs 25 在 Win10 上不能很好的跑起来（看文档的时候会卡），emacs 24 没有这个问题。
+所以啊，特么不要总想着尝鲜。
+
+## `1482721289`{.tzx-timestamp} chsh 到 zsh
+
+试了很多遍，居然都无效。百思不得其解。
+
+我又不想把 `bash` alias 到 `zsh` 或者直接用 ln，或者直接覆盖二进制。
+最后我决定在 rc 文件里面进行判断：
+
+“如果我现在 bash，则跳转到 zsh。”
+
+第一件事：如何知道我是在 bash 还是 zsh？
+
+[linux - How to tell which unix shell I am using? - Stack Overflow](http://stackoverflow.com/questions/3349370/how-to-tell-which-unix-shell-i-am-using)
+
+```
+echo $0
+```
+
+添加到 `.bashrc` 的时候惊觉：
+
+>   我都用到 `.bashrc` 了……我肯定在用 bash 啊！
+
+于是在里面直接添加 `zsh`，问题解决。
+
+唯一的麻烦是推出的时候要先推出 zsh 这一层，再退出 bash 这一层。
+
+## `1482652433`{.tzx-timestamp} 音量混合器开机就重置
+
+我已经被 Windows 时不时的错误声音打败了，
+比如移动光标到文末，哪怕只多移动一次，
+系统也要发出蛋疼的提示音。
+
+可以在【音量混合器】把系统声音调低。我之前就这么做。
+
+但这种蛋疼的设置每次开机都要再来一遍，因为它又重置了！
+
+发现一个不错的解决方案：把 Windows 的声音方案设置为【无声】。
+
+看我的截图：[Window 声音设置。-dvorak4tzx](http://dvorak4tzx.lofter.com/post/1d4021c8_d6bd2cb)
+
 ## `1482552122`{.tzx-timestamp} 裸贷
 
 在豆瓣上看人说裸贷人信息被曝光，实在不懂为啥这都有人关注。
