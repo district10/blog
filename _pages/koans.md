@@ -1,18 +1,58 @@
 ---
 title: Koans | 呓语
 date: 2015-12-25
-keywords:
-  - koans
-  - koan2
-tags:
-  - koans
-jsfile:
-after-before:
-before-after:
 ---
 
 Koans | 呓语
 ============
+
+## `1483100569`{.tzx-timestamp} Java 的 RegEx 的 group count
+
+```java
+Matcher m = p.matcher(s);
+if (m.find()) {
+    int count = m.groupCount();
+    for (int i = 0; i < count; i++) {
+        System.out.println(m.group(i));
+    }
+}
+```
+
+这样不能打印出所有的 group，因为 `group[0]` 是 whole match（也就是你的 s）……
+
+我不能说这样设计有什么不好，相反地，我惊讶于程序设计中下标从 0 开始的巧妙。
+
+但这代码不和预期……实在有点出乎我的意料。
+
+## `1482975817`{.tzx-timestamp} 规范的重要性
+
+由于改版后转发功能太流行，豆瓣的广播已经不能用了。
+（看看人家 Bilibili 和 v2ex 在这个方面规范得多好！）#豆瓣药丸#
+
+## `1482930434`{.tzx-timestamp} qshell 实在不好用
+
+命令行下上传文件到自己的七牛，都是用了 qrsync，
+但是官方已经不支持这个工具，改推 qshell。
+
+但 qshell 实在太复杂，太难用。
+而且特么的，用了以后会在当前目录产生一个 `.qshell` 文件夹。
+这是不可饶恕的错误。
+
+你到我家目录或者 /tmp 下面随便存 cache 我真的一点都不介意，
+你在我当前目录下乱搞那就大大的不行！
+
+于是，继续用 qrsync 吧。反正还能用。
+
+外槽一个：七牛的 bucket 文件搜索我就没成功过。刚才试了 qshell 的
+搜索，也是失败。这产品也真是屎一样。
+
+但我现在找不到更好的屎……（估计找到了也懒得迁移。）
+
+## `1482930233`{.tzx-timestamp}
+
+歌舞青春里的 Vanessa Hudgens 声音也太难听了……
+
+听着我难受。
 
 ## `1482838643`{.tzx-timestamp} Windows 唯一让我不满的
 
@@ -273,6 +313,12 @@ Pandoc（markdown 直接转到 docx，然后拷贝到开题报告）大法好！
 ```
 
 IP 地址: 89.7.71.69 西班牙，这人特么只 GET 我的 js 文件……不要用我的流量啊混蛋！
+
+~~`1483190502`，12 月份的流量费有 22 块……我觉得这样我简直要消费不起了（这钱可以用来买 VPN 的），所以把我流量最大的
+bucket 关闭了公开访问。~~计划写一个工具，用 Java 把自己的博客上的所有 `<a>` 和 `<img>` 的相关 bucket 的链接全部换成
+定期失效的 url。参考：[下载凭证](http://developer.qiniu.com/article/developer/security/download-token.html)。
+
+链接不能失效。不能辜负组织的信任……
 
 ## `1481169117`{.tzx-timestamp} Markdown 语法的错
 

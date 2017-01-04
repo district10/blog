@@ -71,10 +71,6 @@ Music never sleeps：
 希望每个人都能花点时间看看 [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)。
 </small>
 
-<div class="tzx-hide">
-[Orgit | 唐凤](orgit.html)
-</div>
-
 ---
 
 最后，关于那句“Don’t forget to feel bad”的来源，

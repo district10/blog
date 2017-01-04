@@ -1,11 +1,7 @@
 ---
 title: Poems | 诗
 date: 2016-01-19
-keywords:
-    - poems
-tags:
-    - poems
-...
+---
 
 Poems | 诗
 ==========

@@ -1,11 +1,7 @@
 ---
 title: Quotes | 言论
 date: 2015-12-10
-keywords:
-    - quotes
-tags:
-    - quotes
-...
+---
 
 Quotes | 言论
 =============
@@ -35,16 +31,16 @@ Quotes | 言论
 
 ### Alan Perlis
 
-#. Lisp programmers know the value of everything but the cost of nothing.^[FYI, SICP 的序是 Alan Perlis 写的。]
+#.  Lisp programmers know the value of everything but the cost of nothing.^[FYI, SICP 的序是 Alan Perlis 写的。]
 
 ### 鲁迅
 
-#. 绝望之为虚妄，正与希望相同
+#.  绝望之为虚妄，正与希望相同
 
 ### 张五常
 
-#. 学习要从假设大师是对入手。（《吾意独怜才》）
-#. 无可置疑，与香港的青年相比，内地的青年--尤其是愤青--是不喜欢提出问题的。他们
+#.  学习要从假设大师是对入手。（《吾意独怜才》）
+#.  无可置疑，与香港的青年相比，内地的青年--尤其是愤青--是不喜欢提出问题的。他们
     给我的感受，不是高傲，也不是无心向学，而是自以为是，以不知为知之，把世界看
     得太简单了。他们通常不知道问题的所在就提出自己的观点，对错分明，不考虑灰色
     地带，逻辑推理一塌糊涂。
@@ -80,14 +76,14 @@ Quotes | 言论
 
 ### Bing
 
-#. Life takes on meaning when you become motivated, set goals and charge after
+#.  Life takes on meaning when you become motivated, set goals and charge after
     them in an unstoppable manner. -- Les Brown
-#. Everything negative – pressure, challenges – is all an opportunity for me to
+#.  Everything negative – pressure, challenges – is all an opportunity for me to
     rise. — Kobe Bryant
 
 ### 古文
 
-#. 庭有枇杷树，吾妻死之年所手植也，今已亭亭如盖矣。（归有光，《项脊轩志》）
-#. 君问归期未有期，巴山夜雨涨秋池。 何当共剪西窗烛，却话巴山夜雨时。（李商隐，《夜雨寄北》）
-#. 夜来幽梦忽还乡。小轩窗，正梳妆。相顾无言，惟有泪千行。
-#. 悲欢离合总无情，一任阶前，点滴到天明。
+#.  庭有枇杷树，吾妻死之年所手植也，今已亭亭如盖矣。（归有光，《项脊轩志》）
+#.  君问归期未有期，巴山夜雨涨秋池。 何当共剪西窗烛，却话巴山夜雨时。（李商隐，《夜雨寄北》）
+#.  夜来幽梦忽还乡。小轩窗，正梳妆。相顾无言，惟有泪千行。
+#.  悲欢离合总无情，一任阶前，点滴到天明。
