@@ -6,6 +6,12 @@ date: 2015-12-25
 Koans | 呓语
 ============
 
+## `1483710437`{.tzx-timestamp} 脑残的键盘布局设计
+
+比如 Vim，left/down/up/right 分别是 h/j/k/l。
+我觉得应该弄成 j/k/l/; 要好得多。
+和 WASD 应该换成 ESDF 同理。
+
 ## `1483100569`{.tzx-timestamp} Java 的 RegEx 的 group count
 
 ```java
@@ -48,11 +54,13 @@ if (m.find()) {
 
 但我现在找不到更好的屎……（估计找到了也懒得迁移。）
 
-## `1482930233`{.tzx-timestamp}
+## `1482930233`{.tzx-timestamp} 人不美声不甜
 
 歌舞青春里的 Vanessa Hudgens 声音也太难听了……
 
 听着我难受。
+
+还是我 Zard 甜 ==。
 
 ## `1482838643`{.tzx-timestamp} Windows 唯一让我不满的
 

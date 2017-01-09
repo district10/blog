@@ -70,5 +70,4 @@ koan: time
 koan:
 	$(EDITOR) -p \
 		_pages/koans.md \
-		_pages/plans.md \
 		_posts/

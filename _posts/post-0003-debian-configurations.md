@@ -96,20 +96,20 @@ visudo                                      # add "gnat ALL=(ALL:ALL) ALL"
 配置好软件源，就可以更新了，在命令行内输入：
 
 ```bash
-sudo apt-get update && \
-sudo apt-get install -y build-essential python-all-dev python3  python-pip && \
-sudo apt-get install -y geany vim vim-gnome terminator pandoc && \
-sudo apt-get install -y audacious vlc chromium calibre nautilus-dropbox
-sudo apt-get install -y zsh git curl nasm ascii && \
-sudo apt-get install -y nautilus-open-terminal flashplugin-nonfree synaptic sudo file-roller && \
-sudo apt-get install -y software-center gnome-tweak-tool gdebi && \
-sudo apt-get install -y pinta && \
-sudo apt-get install -y gcc g++ make cmake && \
-sudo apt-get install -y p7zip p7zip-full p7zip-rar unrar zip unzip cabextract && \
-sudo apt-get install -y xclip && \
-sudo apt-get install -y python-twisted xclip vim-gnome astyle python-setuptools && \
-sudo apt-get install -y xsel htop w3m global && \
-sudo apt-get upgrade
+sudo apt-get update
+
+sudo apt-get install -y \
+    tmux build-essential geany vim vim-gnome \
+    gcc g++ make cmake \
+    file-roller p7zip p7zip-full p7zip-rar unrar zip unzip cabextract \
+    xsel htop w3m global \
+    xclip astyle zsh git curl nasm ascii pandoc pinta
+
+sudo apt-get install -y \
+    nautilus-open-terminal software-center gnome-tweak-tool gdebi \
+    python-all-dev python3  python-pip python-setuptools python-twisted \
+    flashplugin-nonfree \
+    calibre terminator audacious vlc chromium
 
 dpkg-reconfigure locales                    # us utf 8; zh utf 8, GB, Big5, etc
 locales-gen                                 # if skiped locales generation
