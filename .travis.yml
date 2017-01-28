@@ -14,7 +14,7 @@ install:
   - cd ~
   - wget https://github.com/jgm/pandoc/releases/download/1.17/pandoc-1.17-1-amd64.deb
   - sudo dpkg -i pandoc*.deb
-  - wget http://whudoc.qiniudn.com/2016/qrsync.tar.gz
+  - wget https://github.com/whudoc/statics/raw/master/qrsync.tar.gz
   - tar xfz qrsync.tar.gz
   - chmod +x qrsync
   - sudo cp qrsync /bin
