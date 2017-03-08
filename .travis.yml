@@ -29,6 +29,8 @@ after_success:
   - make
   - make sitemap
   - cd publish
+  - git clone https://github.com/district10/panorama-viewer.git panorama
+  - cd panorama; rm -rf .git; cd ..;
   - git init; git add -A; git commit -m "pushing to coding:coding-pages, lazy me @ `date`"
   - git remote add origin git@git.coding.net:dvorak4tzx/dvorak4tzx.git
   - git push -u origin HEAD:coding-pages --force
