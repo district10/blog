@@ -207,7 +207,7 @@ Dvorak 和 vim 一样，从设计上，就完全是超前，而且超越其它�
 Koan
 ----
 
-> Steve Yegge，Sacha Chua 和 Lee Xah（李杀）都是 dvorak 粉丝啊。
+> Steve Yegge，Sacha Chua 和 Xah Lee（李杀）都是 dvorak 粉丝啊。
 
 [outofdate]: http://gnat-tang-shared-image.qiniudn.com/dvpe0.2.jpg
 [sacha]: http://sachachua.com
