@@ -6,6 +6,27 @@ date: 2015-12-25
 Koans | 呓语
 ============
 
+## `1491962574`{.tzx-timestamp} TexStudio 让我想死……
+
+一大早跑到机房写毕设。结果电脑卡死了（该死的 coding.net），
+我就强制断电了。开机发现，写得东西一点都没有保存！！！！
+
+感受不爱……Orz。蛋疼的 TexStudio 居然主界面上没有 Save All，
+只有 Save。不爽。
+
+有 auto save，现在我设置了两分钟自动保存全部。
+
+一些 TexStudio 笔记：
+
+-   c-t：切换 comment
+-   m-p：preview（保存和编辑了会自动更新）
+-   m-ENTER：close 最近的 environment
+-   c-m-r：添加 ref
+-   c-s-m：`$ ... $`
+-   m-s-m：`\[ ... \]`
+
+最后，多翻翻菜单栏。多翻翻文档：LaTeX2e unofficial reference manual (October 2015)。
+
 ## `1491793495`{.tzx-timestamp} 翻译了一份代码：SVD 分解
 
 从 Python 翻译到 JavaScript，repo：<https://github.com/district10/svd.js>，

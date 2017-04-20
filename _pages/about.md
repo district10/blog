@@ -77,6 +77,10 @@ Some music to share:
         -   学会持之以恒地做一件事情。
         -   一个长期的价值博客是一份很好的简历。
 
+    （3）Expression is the most effective means of appropriating impressions.
+
+    -- 胡适《藏晖室札记》
+
 <small style="color:gray;">
 作为一个处女座，我的文字排版是考究的。
 希望每个人都能花点时间看看 [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)。
