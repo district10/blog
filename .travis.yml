@@ -24,6 +24,7 @@ script:
   - make
   - make sitemap
   - cd publish; git clone https://github.com/district10/panorama-viewer.git panorama; cd panorama; rm -rf .git; cd ../..;
+  - cd publish; git clone https://github.com/district10/texture-morpher.git tmorpher; cd tmorpher; rm -rf .git; cd ../..;
   - make qiniu; rm conf.json;
 after_success:
   - cd ~/build/district10/blog; git reset --hard HEAD;

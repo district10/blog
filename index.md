@@ -16,7 +16,7 @@ after-before: |
 <div id="buckets">
 <div><a href="koans.html">Koans | 呓语</a></div>
 <div><a href="ideas.html">Ideas | 想法</a></div>
-<div><a href="panorama">三维世界</a></div>
+<div><a href="3d.html">三维世界</a></div>
 <div><a href="about.html">About | 关于</a></div>
 <hr />
 </div>
