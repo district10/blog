@@ -1,5 +1,5 @@
-publish/
 _statics/
 .git/
 *.js
 *.css
+publish/
