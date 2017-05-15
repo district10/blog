@@ -6,6 +6,10 @@ date: 2015-12-25
 Koans | 呓语
 ============
 
+## `1494849129`{.tzx-timestamp} 毕设论文终于定稿了
+
+Orz。效果：[tmorpher](tmorpher)。
+
 ## `1491962574`{.tzx-timestamp} TexStudio 让我想死……
 
 一大早跑到机房写毕设。结果电脑卡死了（该死的 coding.net），
