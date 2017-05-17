@@ -16,6 +16,7 @@ after-before: |
 <div id="buckets">
 <div><a href="koans.html">Koans | 呓语</a></div>
 <div><a href="ideas.html">Ideas | 想法</a></div>
+<div><a href="3d.html">三维世界</a></div>
 <div><a href="about.html">About | 关于</a></div>
 <hr />
 </div>
@@ -74,7 +75,7 @@ after-before: |
 -   2015-11-23 [Vim Rules](post-0070-some-vim-rules.html){title="_posts/post-0070-some-vim-rules.md"}
 -   2015-11-23 [GIS 空间分析与应用建模](post-0069-gis-spatial-analysis-application-modeling.html){title="_posts/post-0069-gis-spatial-analysis-application-modeling.md"}
 -   2015-11-23 [C++ GUI Qt4 编程](post-0068-cxx-gui-programming-with-qt4.html){.featured title="_posts/post-0068-cxx-gui-programming-with-qt4.md"}
--   2015-11-19 [一个空格引发的惨剧（remix）](post-0064-rm-pitfall.html){title="_posts/post-0064-rm-pitfall.md"}
+-   2015-11-19 [一个空格引发的惨剧（remix）](post-0064-rm-pitfall.html){.tzx-hide title="_posts/post-0064-rm-pitfall.md"}
 -   2015-11-18 [Pretty Diff | 听歌学英语](post-0062-pretty-diff.html){.featured title="_posts/post-0062-pretty-diff.md"}
 -   2015-11-19 [StackOverFlow](post-0063-stackoverflow.html){.tzx-hide title="_posts/post-0063-stackoverflow.md"}
 -   2015-11-19 [Get Things Done](post-0065-get-things-done.html){.tzx-hide title="_posts/post-0065-get-things-done.md"}

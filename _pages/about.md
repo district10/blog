@@ -36,11 +36,22 @@ TANG ZhiXiong<span class="tzx-hide">，处女座，INTP</span>：
 -   博客的评论系统（disqus）默认不展开，因为我讨厌它影响我页面的加载速度
 -   页面上按下 <kbd>h</kbd> 获取帮助（e.g. 按下 <kbd>&rarr;</kbd> <kbd>&rarr;</kbd> <kbd>&darr;</kbd> 查看源码）
 
-Music never sleeps：
+---
 
 [![](https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Makenaide.jpg/330px-Makenaide.jpg)](https://en.wikipedia.org/wiki/Izumi_Sakai){title="“Makenaide.”---正能量女神（反正你们没我好看）"}
-
 [![](https://upload.wikimedia.org/wikipedia/en/2/29/Some_People_Have_Real_Problems_US_cover.jpg)](https://en.wikipedia.org/wiki/Some_People_Have_Real_Problems){title="“I don't mean you, I mean all of you, are bullshit.”---神经病系列（反正你们唱的没我好）"}
+
+Some music to share:
+
+-   [ZARD: What a beautiful memory (2009)](http://www.bilibili.com/video/av2890824/?from=search&seid=10847304836786748819)
+-   [ZARD: 負けないで](http://www.bilibili.com/video/av2946591/)
+-   [ZARD: Listen to me](http://www.bilibili.com/video/av6643766/)
+-   [捕捉闪耀的瞬间](http://www.bilibili.com/video/av231518/)
+-   [Hamilton](http://www.bilibili.com/video/av7205751/?from=search&seid=12547177577819719650)
+-   [悲惨世界 (十周年)](http://www.bilibili.com/video/av746517/?from=search&seid=13495694367408301043)
+-   [Sia: Reaper (Live, GMA)](http://www.bilibili.com/video/av5226355/?from=search&seid=1835924542946025181)
+    <small>([这个](http://www.bilibili.com/video/av3705413/?from=search&seid=6627676144602307134)不错哈哈)</small>
+-   [Sia: Bird Set Free (Live, Ellen Show)](http://www.bilibili.com/video/av8150336/?from=search&seid=10343924618209431573)
 
 ---
 
@@ -65,6 +76,10 @@ Music never sleeps：
         -   激励你去持续学习和思考。
         -   学会持之以恒地做一件事情。
         -   一个长期的价值博客是一份很好的简历。
+
+    （3）Expression is the most effective means of appropriating impressions.
+
+    -- 胡适《藏晖室札记》
 
 <small style="color:gray;">
 作为一个处女座，我的文字排版是考究的。

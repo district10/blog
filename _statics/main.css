@@ -33,10 +33,13 @@ h2 + p:first-letter {
     font-size: 145%;
 }
 
-code {
-    font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif, FontAwesome;
+code, code * {
+    white-space: pre;
     color: #d14;
+    font-family: Monaco, Menlo, Consolas, "Courier New", Monospace, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", STXihei, Heiti, sans-serif, FontAwesome;
     text-decoration: none;
+　　word-wrap: break-all;
+    overflow: hidden;
 }
 
 p code {
@@ -44,6 +47,15 @@ p code {
     background-color: #f7f7f9;
     border: 1px solid #e1e1e8;
     border-radius: 3px;
+}
+
+li > code, p > code, div > code, body > code {
+    word-wrap:break-word;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 a  > code,

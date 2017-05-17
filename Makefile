@@ -59,10 +59,10 @@ index:
 	$(EDITOR) index.md
 a: about
 about:
-	$(EDITOR) $(DIR_PAGES)/about.md
+	$(EDITOR) _pages/about.md
 l: link
 link:
-	$(EDITOR) $(DIR_PAGES)/links.md
+	$(EDITOR) _pages/links.md
 n: k
 note:
 k: koan
