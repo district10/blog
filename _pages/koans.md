@@ -2077,7 +2077,7 @@ Org-mode Format!](https://github.com/kuanyui/copy-as-org-mode)
 
 不过启动后，就特别牛逼特别赞了。尤其是刚才用的 `org-sort-entries` 按照字母排序不要太赞！
 
-## `1455603432`{.tzx-timestamp}: Git 你也坑我？！
+## `1455603432`{.tzx-timestamp} Git 你也坑我？！
 
 `git checkout --orphan <new-branch-name>`{.bash} 会把当前的工作直接清空……
 等你 checkout 回来就发现自己到了知识的荒原。居然不提醒！！！
