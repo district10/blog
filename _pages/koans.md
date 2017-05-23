@@ -128,6 +128,15 @@ Hexo 的这个博客风格，第一次看上去还可以，再看几眼就十分
 就不可原谅了，比如 <http://artwalk.github.io/archives/page/2/>，这居然分了 22 页！
 ```
 
+## `1485604404`{.tzx-timestamp} 从一张图片里重建头发
+
+[Democratizing Human Digitization | Hao Li | TEDxHollywood - YouTube](https://www.youtube.com/watch?v=RBytZiKSiSU),
+12:21 秒处:
+
+[![](http://imglf2.nosdn.127.net/img/cXkrRlR2ZnlJNE41Q01LVjlnQ0NUb1hwakYxaURCVGM5VkpLSzl0QlNtTjk2eE9INzVPSFFRPT0.png?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg)](http://dvorak4tzx.lofter.com/post/1d4021c8_df83a62)
+
+See [Hao Li - about me](http://www.hao-li.com/Hao_Li/Hao_Li_-_about_me.html).
+
 ## `1485369170`{.tzx-timestamp} 在家和在学校的区别
 
 在学校洗热水脚, 在家洗冷水脚.
