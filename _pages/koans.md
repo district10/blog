@@ -31,6 +31,8 @@ Orz。效果：[tmorpher](tmorpher)。
 
 最后，多翻翻菜单栏。多翻翻文档：LaTeX2e unofficial reference manual (October 2015)。
 
+`1495707705`{.tzx-timestamp} 其实……快捷键根本没用……还不如手敲快。
+
 ## `1491793495`{.tzx-timestamp} 翻译了一份代码：SVD 分解
 
 从 Python 翻译到 JavaScript，repo：<https://github.com/district10/svd.js>，
@@ -747,6 +749,9 @@ See [Avoid annoying "new version" window on startup · Issue #527 · ShareX/Shar
 我加了一句：
 
 >   Annoyed too. Go `Application Settings...` -- `Advanced`, and switch `Application/AutoCheckUpdate` to false.
+
+`1495707705`{.tzx-timestamp} 实际上，这软件后来的版本里，去掉了这个选项……太贱了。而且依旧，每次开启都要提醒是否更新！
+还特么关不掉。点了 Ok 还特么下载不动！
 
 ## `1472387723`{.tzx-timestamp} 人在两种情况下，是最乐于助人的
 

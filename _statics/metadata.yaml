@@ -6,6 +6,7 @@ tzx-cssfile:
 tzx-jsfile:
   - jquery.min.js
   - jquery-ui.min.js
+  - clappr.min.js
   - lazyload.min.js
   - egg.min.js
   - moment.min.js
