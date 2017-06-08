@@ -6,6 +6,10 @@ date: 2015-12-25
 Koans | 呓语
 ============
 
+## `1496631784`{.tzx-timestamp} 豆瓣加载得比 v2ex 还慢
+
+也是没救……
+
 ## `1494849129`{.tzx-timestamp} 毕设论文终于定稿了
 
 Orz。效果：[tmorpher](tmorpher)。
