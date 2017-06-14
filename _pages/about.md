@@ -17,15 +17,16 @@ About | 关于
 
 TANG ZhiXiong<span class="tzx-hide">，处女座，INTP</span>：
 
--   个人主页：[tangzhixiong.com](http://tangzhixiong.com)
+-   Homepage：[tangzhixiong.com](http://tangzhixiong.com)
 -   GitHub：[district10](https://github.com/district10)
--   Twitter：[dvorak4tzx4](https://twitter.com/dvorak4tzx4)
+-   Bilibili：[dvorak4tzx](http://space.bilibili.com/14586835/#!/)
 -   Email: `echo dGFuZy56aGkueGlvbmdAcXEuY29tCg== | base64 --decode`
 
 <div class="tzx-hide">
 -   简书：[Gnat](http://www.jianshu.com/users/faa44ac9e895/top_articles)
 -   SegmentFault: [dvorak4tzx](https://segmentfault.com/u/dvorak4tzx)
 -   Lofter：[dvorak4tzx](http://dvorak4tzx.lofter.com/)
+-   Twitter：[dvorak4tzx4](https://twitter.com/dvorak4tzx4)
 -   QQ & Email：`echo NTEzODgwNjQxQHFxLmNvbQo= | base64 --decode`{.bash}
 -   [nitrotype](https://www.nitrotype.com/racer/dvorak4tzx)，[10fastfingers](http://10fastfingers.com/user/1178438/)
 </div>

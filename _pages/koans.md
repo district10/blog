@@ -6,6 +6,11 @@ date: 2015-12-25
 Koans | 呓语
 ============
 
+## `1496802357`{.tzx-timestamp} 三个人四个饼干
+
+-   原链：[Princeton Baccalaureate 2012: Michael Lewis - YouTube](https://www.youtube.com/watch?v=CiQ_T5C3hIM&list=PLNz0Kq2k2mRtl6U1Ton834S8CbPD1vR1i&index=1)
+-   搬运：[Princeton Baccalaureate 2012: Michael Lewis_其他_生活_bilibili_哔哩哔哩](http://www.bilibili.com/video/av11133016)
+
 ## `1496631784`{.tzx-timestamp} 豆瓣加载得比 v2ex 还慢
 
 也是没救……
