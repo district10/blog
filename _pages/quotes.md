@@ -73,6 +73,14 @@ Quotes | 言论
     过这是一条最可靠的道路；女人的不幸则在于被几乎不可抗拒的诱惑包围着；她不被
     要求奋发向上，只被鼓励滑下去到达极乐。当她发觉自己被海市蜃楼愚弄时，已经为
     时太晚，她的力量在失败的冒险中已被耗尽。-- 波伏娃
+#.  In my younger and more vulnerable years my father gave me some advice that
+    I’ve been turning over in my mind ever since.
+
+    >   “Whenever you feel like criticizing any one,” he told me, “just
+    >   remember that all the people in this world haven’t had the advantages
+    >   that you’ve had.”
+
+    --[The Great Gatsby, by F. Scott Fitzgerald](https://ebooks.adelaide.edu.au/f/fitzgerald/f_scott/gatsby/chapter1.html)
 
 ### Bing
 
