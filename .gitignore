@@ -24,3 +24,4 @@ tex2pdf*/
 search.sh
 *.jar
 # shit
+.DS_Store
