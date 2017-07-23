@@ -22,8 +22,9 @@ script:
   - cd ~/build/district10/blog;
   - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
   - git clone git@github.com:district10/blog-publish.git publish; rm publish/*.*; echo 'blog.tangzhixiong.com' > publish/CNAME;
+  - cd publish; git checkout gh-pages; cd ..;
   - make all sitemap
-  - cd publish; git add -A; git commit -m "AUTO PUBLISHED FROM DISTRICT10/BLOG"; git push -u origin master; cd ..;
+  - cd publish; git add -A; git commit -m "AUTO PUBLISHED FROM DISTRICT10/BLOG"; git push -u origin gh-pages; cd ..;
   - cd publish; git clone https://github.com/district10/panorama-viewer.git panorama; cd panorama; rm -rf .git; cd ../..;
   - cd publish; git clone https://github.com/district10/texture-morpher.git tmorpher; cd tmorpher; rm -rf .git; cd ../..;
   - make qiniu; rm conf.json;
