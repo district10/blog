@@ -21,7 +21,7 @@ install:
 script:
   - cd ~/build/district10/blog;
   - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
-  - git clone git@github.com:district10/blog-publish.git; rm publish/*.*
+  - git clone git@github.com:district10/blog-publish.git publish; rm publish/*.*; echo done;
   - make all sitemap
   - cd publish; git add -A; git commit -m "AUTO PUBLISHED FROM DISTRICT10/BLOG"; git push -u origin master; cd ..;
   - cd publish; git clone https://github.com/district10/panorama-viewer.git panorama; cd panorama; rm -rf .git; cd ../..;
