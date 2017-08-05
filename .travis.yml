@@ -20,13 +20,13 @@ install:
   - sudo cp qrsync /bin
 script:
   - cd ~/build/district10/blog;
-  - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
-  - git clone git@github.com:district10/blog-publish.git publish; rm publish/*.*;
-  - cd publish; git checkout gh-pages; echo 'blog.tangzhixiong.com' > publish/CNAME; cd ..;
+  - git clone git@github.com:district10/blog-publish.git publish;
+  - cd publish; git checkout gh-pages; echo 'blog.tangzhixiong.com' > CNAME; cd ..;
   - make all sitemap
   - cd publish; git clone https://github.com/district10/panorama-viewer.git panorama; cd panorama; rm -rf .git; cd ../..;
   - cd publish; git clone https://github.com/district10/texture-morpher.git tmorpher; cd tmorpher; rm -rf .git; cd ../..;
   - cd publish; git add -A; git commit -m "AUTO PUBLISHED FROM DISTRICT10/BLOG"; git push origin gh-pages; cd ..;
+  - cat conf.json.in | sed -e "s/QiNiuAK/$QiNiuAK/" | sed -e "s/QiNiuSK/$QiNiuSK/" > conf.json
   - make qiniu; rm conf.json;
 after_success:
   - cd ~/build/district10/blog; git reset --hard HEAD;
