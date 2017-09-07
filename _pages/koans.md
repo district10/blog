@@ -6,6 +6,11 @@ date: 2015-12-25
 Koans | 呓语
 ============
 
+## `1504774475`{.tzx-timestamp} 怎么提了 issue，却不 follow？
+
+感觉 GitHub 上挺常见的一种情况：
+问问题的人，问了问题，就不登录 GitHub 查看了。
+
 ## `1504486979`{.tzx-timestamp} Pair 的好处
 
 多又多。和孙老板 pair，发现 ssh 可以设置服务器“alias”/“DNS”这样的东西
