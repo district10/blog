@@ -14,6 +14,6 @@ date: 2017-01-04
 
 ---
 
-下面这部分真的需要密码：
+下面这部分需要密码：
 
--   [share document ：万革始 2016 实习|Worktile](https://my.worktile.com/share/pages/4369f4a1f01e445a918134a4f4037232)，Q：会议室？
+-   [share document ：WAP |Worktile](https://my.worktile.com/share/pages/4369f4a1f01e445a918134a4f4037232)，Q：会议室？
