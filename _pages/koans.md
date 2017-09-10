@@ -6,6 +6,10 @@ date: 2015-12-25
 Koans | 呓语
 ============
 
+## `1505004365`{.tzx-timestamp} You are waiting for a train
+
+![](https://vignette.wikia.nocookie.net/roadwarrior/images/5/53/As_the_world_fell.jpg/revision/latest/scale-to-width-down/394?cb=20160110175135)
+
 ## `1504774475`{.tzx-timestamp} 怎么提了 issue，却不 follow？
 
 感觉 GitHub 上挺常见的一种情况：
