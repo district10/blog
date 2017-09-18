@@ -6,6 +6,16 @@ date: 2015-12-25
 Koans | 呓语
 ============
 
+## `1505740952`{.tzx-timestamp} Java 的 `Pair` 数据类型
+
+是 Java 8 才有的，在 javafx.util.Pair 路径下。很蛋疼的是，
+一个 pair 的第一个值要通过 `pair.getKey()` 来获取，另一个要
+通过 `pair.getValue()` 来获取……
+
+显然这个 pair 是 K:V 键值对了。
+
+我觉得 C++ 的 `pair.first`、`pair.second` 命名更合理。
+
 ## `1505004365`{.tzx-timestamp} You are waiting for a train
 
 ![](https://vignette.wikia.nocookie.net/roadwarrior/images/5/53/As_the_world_fell.jpg/revision/latest/scale-to-width-down/394?cb=20160110175135)

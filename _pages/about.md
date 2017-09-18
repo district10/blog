@@ -92,24 +92,8 @@ Some music to share:
 最后，关于那句“Don’t forget to feel bad”的来源，
 见 [Markus Persson 的 Twitter: “@AndresLeay Just pirate it. If you still like
 it when you can afford it in the future, buy it then. Also **don't forget to
-feel bad.** ;)”](https://twitter.com/notch/status/157261795139125248)。
+feel bad.** ;)”](https://twitter.com/notch/status/157261795139125248 "我看了挺多盗版书，sorry about that。")。
 
-[![](http://whudoc.qiniudn.com/2016/firefox_2016-07-15_21-01-56.png)](notes){style="cursor:default"}
+<div style="width:100%">[![](http://whudoc.qiniudn.com/2016/firefox_2016-07-15_21-01-56.png)](notes){style="cursor:default"}</div>
 
 注：Markus Persson (@notch) 是 Minecraft（游戏：我的世界）的原作者。
-
----
-
-<div class="tzx-drawer" style="text-align: center;" shy>
-Wechat
-
-:   ![](http://whudoc.qiniudn.com/2016/wechat-friend.jpg)
-
-    <div style="font-size=80%">
-    <div class="tzx-drawer" shy>
-    如果你觉得哪篇文章特别特别好，也可以随意打赏 ==
-
-    :   ![](http://whudoc.qiniudn.com/2016/wechat-pay.jpg)
-    </div>
-    </div>
-</div>
