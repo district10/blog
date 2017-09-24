@@ -14,7 +14,7 @@ Koans | 呓语
 -   IDE 对这些格式的支持不好，用了这样的后缀就几乎放弃了 IDE
     提供的代码补全与检查等功能
 -   系统不知道如何处理这样的文件，用文本格式打开？每个新人都
-    得配置自己的 `open`程序
+    得配置自己的 `open` 程序
 
 当然社区内的人都懂。
 
@@ -22,11 +22,11 @@ Koans | 呓语
 约定一个注释的格式，这些注释会在代码生成的时候被去掉，
 并辅以相应的文档。我想了下文档的几种注释：
 
--   `//` 这是常用的 Java、JavaScript 和 C 支持的注释，zhe这
+-   `//` 这是常用的 Java、JavaScript 和 C 支持的注释，这
     样的注释我们不处理
 -   `//m ` 以这样开头的注释，会被解析为 markdown。这里还是以
     4 对齐的
--   `//i dot - <IMAGE_OUTPUT_PATP>` dot 格式的图片
+-   `//i dot --> [IMAGE_OUTPUT_PATP]` dot 格式的图片
 -   `//c ` 元配置，这里可以放置一些通用的东西，后面可以
     直接引用，比如用
 
@@ -97,6 +97,9 @@ export LC_ALL=
 显然这个 pair 是 K:V 键值对了。
 
 我觉得 C++ 的 `pair.first`、`pair.second` 命名更合理。
+
+外，一个更加蛋疼的事实是 Oracle 的 JDK 包含这个数据结构，
+OpenJDK 没有……真一大坑。
 
 ## `1505004365`{.tzx-timestamp} You are waiting for a train
 
