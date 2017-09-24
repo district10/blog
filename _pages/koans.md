@@ -6,6 +6,88 @@ date: 2015-12-25
 Koans | 呓语
 ============
 
+## `1506220678`{.tzx-timestamp} 文学化编程
+
+在有些社区很火，比如 coffe script。他们还用专门的文件后缀来写代码，
+然后生成文档和代码。在我看来这样有几点不太好：
+
+-   IDE 对这些格式的支持不好，用了这样的后缀就几乎放弃了 IDE
+    提供的代码补全与检查等功能
+-   系统不知道如何处理这样的文件，用文本格式打开？每个新人都
+    得配置自己的 `open`程序
+
+当然社区内的人都懂。
+
+文学化编程是个很好的概念，但我更倾向于从注释生成文档。
+约定一个注释的格式，这些注释会在代码生成的时候被去掉，
+并辅以相应的文档。我想了下文档的几种注释：
+
+-   `//` 这是常用的 Java、JavaScript 和 C 支持的注释，zhe这
+    样的注释我们不处理
+-   `//m ` 以这样开头的注释，会被解析为 markdown。这里还是以
+    4 对齐的
+-   `//i dot - <IMAGE_OUTPUT_PATP>` dot 格式的图片
+-   `//c ` 元配置，这里可以放置一些通用的东西，后面可以
+    直接引用，比如用
+
+    ```
+    //c IMG: dot --> [file: /imgs/img1.jpg]
+    //c digraph graphname {
+    //c     a -> b -> c;
+    //c     b -> d;
+    //c }
+    ```
+
+    生成一个图片。在其他源码下可以直接使用。
+    还可以把图片生成 base64 字符，比如格式为
+    `[base64: base64_id]`。下次直接引入它：
+    `//m ![](base64://base64_id)`。
+
+    比如用
+
+    ```
+    //c ANCHOR: return-me
+    ```
+
+    生成一个标记，其他文档可以链接到这个地方来：
+
+    ```
+    //m 参见 [返回部分](anchor://../take.java##return-me)
+    ```
+
+    还可以自定义更加完善的处理逻辑。比如用什么脚本生成
+    什么文件：
+
+    ```
+    //c CMD: wc -l --> [file:/meta/statistics.txt]
+    ```
+
+看到一份 coffe script 代码：[jashkenas/docco: Literate
+Programming can be Quick and Dirty.](https://github.com/jashkenas/docco)，希望最近能用改
+写成 Java，然后实现上面的逻辑。
+
+## `1506137689`{.tzx-timestamp} 命令行的 utf-8 配置
+
+之前的 shell 配置不对，刚才终于好了。需要在 .zshrc 加上：
+
+```
+export LC_CTYPE=UTF-8
+export LC_NUMERIC="en_US.UTF-8"
+export LC_TIME="en_US.UTF-8"
+export LC_COLLATE="en_US.UTF-8"
+export LC_MONETARY="en_US.UTF-8"
+export LC_MESSAGES="en_US.UTF-8"
+export LC_PAPER="en_US.UTF-8"
+export LC_NAME="en_US.UTF-8"
+export LC_ADDRESS="en_US.UTF-8"
+export LC_TELEPHONE="en_US.UTF-8"
+export LC_MEASUREMENT="en_US.UTF-8"
+export LC_IDENTIFICATION="en_US.UTF-8"
+export LC_ALL=
+```
+
+这样就能显示中文等字符了。
+
 ## `1505740952`{.tzx-timestamp} Java 的 `Pair` 数据类型
 
 是 Java 8 才有的，在 javafx.util.Pair 路径下。很蛋疼的是，
