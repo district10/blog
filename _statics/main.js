@@ -6,6 +6,16 @@ function help() {
      );
 }
 
+
+$('a').each(function(index){
+    var anchor = $(this).attr('href');
+    if (/^[^:]*\.md$/.test(anchor)) {
+        $(this).attr({
+            href: anchor.substring(0, anchor.length-3)+".html"
+        });
+    }
+});
+
 $(document).ready(function(){
 
     $('body').keydown(function(e){

@@ -26,7 +26,7 @@ Koans | 呓语
     样的注释我们不处理
 -   `//m ` 以这样开头的注释，会被解析为 markdown。这里还是以
     4 对齐的
--   `//i dot --> [IMAGE_OUTPUT_PATP]` dot 格式的图片
+-   `//i dot --> [IMAGE_OUTPUT_PATH]` dot 格式的图片
 -   `//c ` 元配置，这里可以放置一些通用的东西，后面可以
     直接引用，比如用
 
