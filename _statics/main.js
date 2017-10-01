@@ -1,22 +1,42 @@
-function help() {
-    alert(  '方向键有如下功能：\n\n'
-         +  '\n1. 返回主页：← ← ←'
-         +  '\n2. 显示目录：→ → →'
-         +  '\n3. 查看源码：→ → ↓'
-     );
-}
-
-
-$('a').each(function(index){
-    var anchor = $(this).attr('href');
-    if (/^[^:]*\.md$/.test(anchor)) {
-        $(this).attr({
-            href: anchor.substring(0, anchor.length-3)+".html"
-        });
-    }
-});
-
 $(document).ready(function(){
+
+    function hide() { $('.tzx-show').removeClass('tzx-show').addClass('tzx-hide'); }
+    function show() { $('.tzx-hide').removeClass('tzx-hide').addClass('tzx-show'); }
+    toggleHideShow = (function() {
+        var isHiding = true;
+        return function() {
+            if (isHiding) {
+                show();
+            } else {
+                hide();
+            }
+            isHiding = !isHiding;
+        }
+    })();
+
+    function drawershow() { $('div.tzx-drawer').children().children('dd.tzx-drawer-hide').removeClass('tzx-drawer-hide').addClass('tzx-drawer-show'); }
+    function drawerhide() { $('div.tzx-drawer').children().children('dd.tzx-drawer-show').removeClass('tzx-drawer-show').addClass('tzx-drawer-hide'); }
+
+    function help() {
+        alert(  '方向键有如下功能：\n\n'
+             +  '\n1. 返回主页：← ← ←'
+             +  '\n2. 显示目录：→ → →'
+             +  '\n3. 查看源码：→ → ↓'
+         );
+    }
+
+    $('body > div.posts > ul > li > a.tzx-hide').each(function(index){
+        $(this).parent().addClass('tzx-hide');
+    });
+
+    $('a').each(function(index){
+        var anchor = $(this).attr('href');
+        if (/^[^:]*\.md$/.test(anchor)) {
+            $(this).attr({
+                href: anchor.substring(0, anchor.length-3)+".html"
+            });
+        }
+    });
 
     $('body').keydown(function(e){
         var code = e.which;
@@ -195,11 +215,6 @@ $(document).ready(function(){
     };
 
 });
-
-function hide() { $('.tzx-show').removeClass('tzx-show').addClass('tzx-hide'); }
-function show() { $('.tzx-hide').removeClass('tzx-hide').addClass('tzx-show'); }
-function drawershow() { $('div.tzx-drawer').children().children('dd.tzx-drawer-hide').removeClass('tzx-drawer-hide').addClass('tzx-drawer-show'); }
-function drawerhide() { $('div.tzx-drawer').children().children('dd.tzx-drawer-show').removeClass('tzx-drawer-show').addClass('tzx-drawer-hide'); }
 
 $(document).ready(function(){
     var egg = new Egg();

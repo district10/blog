@@ -14,18 +14,18 @@ after-before: |
 <p id="tzxslogan" style="text-align:right;padding-right: 10em;" title="What makes a person great?">Don't forget to feel bad.</p>
 
 <div id="buckets">
-<div><a href="koans.html">Koans | 呓语</a></div>
-<div><a href="ideas.html">Ideas | 想法</a></div>
+<div class="tzx-hide"><a href="koans.html">Koans | 呓语</a></div>
+<div class="tzx-hide"><a href="ideas.html">Ideas | 想法</a></div>
 <div><a href="3d.html">三维世界</a></div>
 <div><a href="about.html">About | 关于</a></div>
 <hr />
 </div>
 <br/>
 <div id="links"></div>
-<div style="font-variant:small-caps;" title="日期是挖坑时间。">[Posts](javascript:show()){.naive}</div>
+<div style="font-variant:small-caps;" title="日期是挖坑时间。">[Posts](javascript:toggleHideShow()){.naive}</div>
 
 <div class="posts"><!--...-->
--   2016-12-10 [不会打字的程序员不是好的程序员 | Navy Typing Training](post-0121-navying-typing-training.html){title="_posts/post-0121-navying-typing-training.md"}
+-   2016-12-10 [Navy Typing Training](post-0121-navying-typing-training.html){title="_posts/post-0121-navying-typing-training.md"}
 -   2016-10-15 [一道让人不爽的动态规划题](post-0120-dp-shit.html){title="_posts/post-0120-dp-shit.md"}
 -   2016-07-22 [长沙项目总结](post-0113-changsha-review.html){.featured .heart title="_posts/post-0113-changsha-review.md"}
 -   2016-07-16 [GitHub Issues 的爬取和展示以及用一个 repo 来备份和同步](post-0112-github-issue-crawler-creator.html){.tzx-hide title="_posts/post-0112-github-issue-crawler-creator.md"}

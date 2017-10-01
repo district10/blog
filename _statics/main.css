@@ -676,6 +676,7 @@ h6 code.tzx-timestamp { color: white; }
 .tzx-drawer-show { display: auto; }
 .tzx-drawer-hide { display: none; }
 .tzx-hide { display: none; }
+#buckets > div.tzx-hide { display: none; }
 .tzx-show { display: auto; border: 1px solid red; }
 
 .tzx-changes-hide { display: none; }
