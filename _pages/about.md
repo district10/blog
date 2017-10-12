@@ -15,6 +15,9 @@ About | 关于
 [![Build Status](https://travis-ci.org/district10/blog.svg?branch=master)](https://travis-ci.org/district10/blog){title="本站由 travis 编译。"}
 </div>
 
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+<div class="tzx-hide LI-profile-badge"  data-version="v1" data-size="medium" data-locale="zh_CN" data-type="horizontal" data-theme="light" data-vanity="tangzhixiong"><a class="LI-simple-link" href='https://cn.linkedin.com/in/tangzhixiong?trk=profile-badge'>唐志雄</a></div>
+
 TANG ZhiXiong<span class="tzx-hide">，处女座，INTP</span>：
 
 -   Homepage：[tangzhixiong.com](http://tangzhixiong.com)
