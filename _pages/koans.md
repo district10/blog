@@ -6,6 +6,22 @@ date: 2015-12-25
 Koans | 呓语
 ============
 
+## `1507975046`{.tzx-timestamp} org-mode 写 README
+
+Markdown 太简洁, 功能不够用. org-mode 可以随时引入别的文件.
+这样你可以在 subfolder1 下写 README.org, subfolder2 写 README.org,
+最后在根目录写 README.org, 把这两部分文档引入进来:
+
+```org-mode
+#+INCLUDE ./subfolder1/README.org
+
+#+INCLUDE ./subfolder2/README.org
+```
+
+这不要太爽!
+
+但是特么 GitHub 不支持这个功能. Shit!
+
 ## `1506220678`{.tzx-timestamp} 文学化编程
 
 在有些社区很火，比如 coffe script。他们还用专门的文件后缀来写代码，
