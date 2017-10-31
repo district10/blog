@@ -119,8 +119,9 @@ PowerShell 或者 Linux 下的 Bash，Zsh
 顺便把自己的用户名和邮箱配置一下：（把用户名和邮箱改成自己 GitHub 账号对应的用户名邮箱）
 
 ```bash
-git config --global user.name "TANG ZhiXiong"
-git config --global user.email "dvorak4tzx@gmail.com"
+git config --global user.name "<NAME>"
+git config --global user.email "<EMAIL>"
+git config --global credential.helper "cache --timeout=3600"
 # git config --global push.default simple
 ```
 
