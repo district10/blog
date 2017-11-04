@@ -22,14 +22,15 @@ TANG ZhiXiong<span class="tzx-hide">，处女座，INTP</span>：
 
 -   Homepage：[tangzhixiong.com](http://tangzhixiong.com)
 -   GitHub：[district10](https://github.com/district10)
--   简书：[Gnat](http://www.jianshu.com/users/faa44ac9e895/top_articles)
+-   简书：[district10](http://www.jianshu.com/users/faa44ac9e895/top_articles)
+-   Lofter：[dvorak4tzx](http://dvorak4tzx.lofter.com/)
 -   Bilibili：[dvorak4tzx](http://space.bilibili.com/14586835/#!/)
 -   Email: `echo dGFuZy56aGkueGlvbmdAcXEuY29tCg== | base64 --decode`
 
 <div class="tzx-hide">
 -   SegmentFault: [dvorak4tzx](https://segmentfault.com/u/dvorak4tzx)
--   Lofter：[dvorak4tzx](http://dvorak4tzx.lofter.com/)
 -   Twitter：[dvorak4tzx4](https://twitter.com/dvorak4tzx4)
+-   Bitbucket：[district10](https://bitbucket.org/district10/)
 -   QQ & Email：`echo NTEzODgwNjQxQHFxLmNvbQo= | base64 --decode`{.bash}
 -   [nitrotype](https://www.nitrotype.com/racer/dvorak4tzx)，[10fastfingers](http://10fastfingers.com/user/1178438/)
 </div>
