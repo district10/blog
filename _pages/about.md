@@ -48,6 +48,8 @@ TANG ZhiXiong<span class="tzx-hide">，处女座，INTP</span>：
 
 Some music to share:
 
+-   [Dirty Paws - Of Monsters And Men](http://music.163.com/#/song?id=28143752)
+-   [Devil's Got A Gun - Whitehorse](http://music.163.com/#/song?id=29544255)
 -   [ZARD: What a beautiful memory (2009)](http://www.bilibili.com/video/av2890824/?from=search&seid=10847304836786748819)
 -   [ZARD: 負けないで](http://www.bilibili.com/video/av2946591/)
 -   [ZARD: Listen to me](http://www.bilibili.com/video/av6643766/)
@@ -55,7 +57,7 @@ Some music to share:
 -   [Hamilton](http://www.bilibili.com/video/av7205751/?from=search&seid=12547177577819719650)
 -   [悲惨世界 (十周年)](http://www.bilibili.com/video/av746517/?from=search&seid=13495694367408301043)
 -   [Sia: Reaper (Live, GMA)](http://www.bilibili.com/video/av5226355/?from=search&seid=1835924542946025181)
-    <small>([这个](http://www.bilibili.com/video/av3705413/?from=search&seid=6627676144602307134)不错哈哈)</small>
+    <small>([这个](https://www.youtube.com/watch?v=DEa-cA3CLYs)不错哈哈)</small>
 -   [Sia: Bird Set Free (Live, Ellen Show)](http://www.bilibili.com/video/av8150336/?from=search&seid=10343924618209431573)
 
 ---
