@@ -21,6 +21,7 @@ after-before: |
 <hr />
 </div>
 <br/>
+(博客不定期从简书等地筛选更新过来.)<br/>
 <div id="links"></div>
 <div style="font-variant:small-caps;" title="日期是挖坑时间。">[Posts](javascript:toggleHideShow()){.naive}</div>
 
