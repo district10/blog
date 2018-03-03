@@ -6,6 +6,10 @@ date: 2015-12-25
 Koans | 呓语
 ============
 
+## `1519016244`{.tzx-timestamp} 2^31 - 1 是一个质数
+
+... what the fuck. 这也太牛逼了.
+
 ## `1507975046`{.tzx-timestamp} org-mode 写 README
 
 Markdown 太简洁, 功能不够用. org-mode 可以随时引入别的文件.

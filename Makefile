@@ -41,7 +41,7 @@ publish/%: %
 	cp $< $@
 
 time:
-	@date +%s | tr -d '\r\n' | clip 2>/dev/null || date +%s | tr -d '\r\n' | xclip -selection clipboard
+	@date +%s | tr -d '\r\n' | clip 2>/dev/null || date +%s | tr -d '\r\n' | (xclip -selection clipboard || pbcopy)
 	@echo Unix time copied to your clipboard!
 sitemap:
 	make -C publish sitemap
