@@ -22,12 +22,12 @@ TANG ZhiXiong<span class="tzx-hide">，处女座，INTP</span>：
 
 -   Homepage：[tangzhixiong.com](http://tangzhixiong.com)
 -   GitHub：[district10](https://github.com/district10)
--   简书：[district10](http://www.jianshu.com/users/faa44ac9e895/top_articles)
--   Lofter：[dvorak4tzx](http://dvorak4tzx.lofter.com/)
--   Bilibili：[dvorak4tzx](http://space.bilibili.com/14586835/#!/)
 -   Email: `echo dGFuZy56aGkueGlvbmdAcXEuY29tCg== | base64 --decode`
 
 <div class="tzx-hide">
+-   Lofter：[dvorak4tzx](http://dvorak4tzx.lofter.com/)
+-   Bilibili：[dvorak4tzx](http://space.bilibili.com/14586835/#!/)
+-   简书：[district10](http://www.jianshu.com/users/faa44ac9e895/top_articles)
 -   SegmentFault: [dvorak4tzx](https://segmentfault.com/u/dvorak4tzx)
 -   Twitter：[dvorak4tzx4](https://twitter.com/dvorak4tzx4)
 -   Bitbucket：[district10](https://bitbucket.org/district10/)
