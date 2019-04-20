@@ -21,8 +21,6 @@ after-before: |
 <hr />
 </div>
 <br/>
-(内推 SLAM, SfM 相关岗位，简历请投 `emhpeGlvbmdAbW9tZW50YS5haQo=`)
-<br/>
 <div id="links"></div>
 <div style="font-variant:small-caps;" title="日期是挖坑时间。">[Posts](javascript:toggleHideShow()){.naive}</div>
 
