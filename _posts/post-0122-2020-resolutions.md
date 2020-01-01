@@ -1,15 +1,15 @@
 ---
-title: 2022 Resolutions
-date: 2022-01-01
+title: 2020 Resolutions
+date: 2020-01-01
 keywords:
 tags:
   - plans
 ---
 
-2022 Resolutions
+2020 Resolutions
 ================
 
-很久没有更新博客了。这次简单写写 2022 年的新年计划。
+很久没有更新博客了。这次简单写写 2020 年的新年计划。
 
 >   By the way，五年前的新年计划：[总结 2014 & 展望 2015](https://www.jianshu.com/p/a37bc18f16aa)。
 >   英文打字速度现在依旧处于 80 WPM 的水平（放松的话 60 WPM 的样子），
