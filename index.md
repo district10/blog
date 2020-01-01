@@ -25,6 +25,7 @@ after-before: |
 <div style="font-variant:small-caps;" title="日期是挖坑时间。">[Posts](javascript:toggleHideShow()){.naive}</div>
 
 <div class="posts"><!--...-->
+-   2022-01-01 [2022 Resolutions](post-0122-2022-resolutions.html){title="_posts/post-0122-2022-resolutions.md"}
 -   2016-12-10 [Navy Typing Training](post-0121-navying-typing-training.html){title="_posts/post-0121-navying-typing-training.md"}
 -   2016-10-15 [一道让人不爽的动态规划题](post-0120-dp-shit.html){title="_posts/post-0120-dp-shit.md"}
 -   2016-07-22 [长沙项目总结](post-0113-changsha-review.html){.featured .heart title="_posts/post-0113-changsha-review.md"}
