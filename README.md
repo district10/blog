@@ -2,6 +2,14 @@
 
 [![Build Status](https://travis-ci.org/district10/blog.svg?branch=master)](https://travis-ci.org/district10/blog)
 
+workflow:
+
+```
+make
+make serve
+make watch
+```
+
 ## Intro / 简介
 
 这是我的博客源码，用 Markdown 写，用 Makefile 管理，用 travis 自动生成 HTML 并
