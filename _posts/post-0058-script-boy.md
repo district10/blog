@@ -19,9 +19,9 @@ tags:
 写的两个 JavaScript 脚本。
 
 <div id="buckets">
-<div>[豆瓣读书](javascript:document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','http://tangzx.qiniudn.com/doubanBook.js');)</div>
-<div>[豆瓣电影](javascript:document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','http://tangzx.qiniudn.com/doubanMovie.js'))</div>
-<div class="tzx">[TZX SHOW](javascript:document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','http://tangzx.qiniudn.com/tzxshow.js'))</div>
+<div>[豆瓣读书](javascript:document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','http://blog.tangzhixiong.com/doubanBook.js');)</div>
+<div>[豆瓣电影](javascript:document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','http://blog.tangzhixiong.com/doubanMovie.js'))</div>
+<div class="tzx">[TZX SHOW](javascript:document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','http://blog.tangzhixiong.com/tzxshow.js'))</div>
 </div>
 
 把上面两个按钮拖到自己的书签栏，在【豆瓣电影】和【豆瓣读书】的电影/书籍页面点击按钮，
@@ -55,16 +55,16 @@ tags:
 // 实际上没有换行
 javascript: document.getElementsByTagName('body')[0]
                     .appendChild(document.createElement('script'))
-                    .setAttribute('src','http://tangzx.qiniudn.com/hello.js')
+                    .setAttribute('src','http://blog.tangzhixiong.com/hello.js')
 ```
 
-代码你在 <http://tangzx.qiniudn.com/hello.js> 写好就行。
+代码你在 <http://blog.tangzhixiong.com/hello.js> 写好就行。
 
 ---
 
 豆瓣读书和豆瓣电影的两个脚本：
 
-#. <http://tangzx.qiniudn.com/doubanBook.js>
+#. <http://blog.tangzhixiong.com/doubanBook.js>
 
 ```
 output = '';
@@ -84,7 +84,7 @@ listP.innerText = output;
 document.getElementsByTagName('body')[0].appendChild( listP );
 ```
 
-#. <http://tangzx.qiniudn.com/doubanMovie.js>
+#. <http://blog.tangzhixiong.com/doubanMovie.js>
 
 ```
 output = '';

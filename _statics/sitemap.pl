@@ -21,7 +21,7 @@ my $xmlheader = <<__;
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created by TANG ZhiXiong (http://tangzx.qiniudn.com) with perl. -->
+<!-- created by TANG ZhiXiong (http://blog.tangzhixiong.com) with perl. -->
 
 __
 
@@ -39,8 +39,8 @@ foreach my $url (@entries) {
     my $title = $url;
     $title =~ s/\.html$//;
     print "- [$title]($url)\n";
-    print TXT "http://tangzx.qiniudn.com/$url\n";
-    print XML "<url>\n  <loc>http://tangzx.qiniudn.com/$url</loc>\n</url>\n";
+    print TXT "http://blog.tangzhixiong.com/$url\n";
+    print XML "<url>\n  <loc>http://blog.tangzhixiong.com/$url</loc>\n</url>\n";
 }
 
 print XML "</urlset>\n";

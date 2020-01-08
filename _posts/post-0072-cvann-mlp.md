@@ -334,7 +334,7 @@ mlp->setTermCriteria( cv::TermCriteria(
 ```
 
 激活函数和反向传播的说明见本文末尾附录。反向传播一个比较好的文档见我的笔记：
-[Principles of training multi-layer neural network using backpropagation](http://tangzx.qiniudn.com/notes/caffe-notes/backpropagation.html)。
+[Principles of training multi-layer neural network using backpropagation](notes/caffe-notes/backpropagation.html)。
 
 Layer 的层数和每层的 neuron 数目对训练结果有较大影响，这是我之前测试后画的 Excel 表格：
 ^[顺便学习了 Excel 的 minimap 的用法哈哈。]

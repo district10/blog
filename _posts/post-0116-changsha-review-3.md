@@ -42,7 +42,7 @@ tags:
 弹出所有的候选项目）。
 
 日志模块是一个类，使用了设计模式中的**单例模式**。为了显示方便，我们的日志模块输出的是 markdown 格式
-的表格。上面提到的 [LMS 数据量](http://tangzx.qiniudn.com/post-0056-lms-chunk.html) 这篇文章里的表格，其实就是我直接从日志拷贝过去
+的表格。上面提到的 [LMS 数据量](post-0056-lms-chunk.html) 这篇文章里的表格，其实就是我直接从日志拷贝过去
 （一行都没有修改）的显示效果。
 下面把我的实现贴一下。
 
@@ -575,7 +575,7 @@ QString ba2hexstr( const QByteArray &ba,
 }
 ```
 
-上面的 [LMS 数据量](http://tangzx.qiniudn.com/post-0056-lms-chunk.html) 这篇文章里打印的
+上面的 [LMS 数据量](post-0056-lms-chunk.html) 这篇文章里打印的
 LMS 数据的每个字节就是这么显示出来的。
 
 有时候，我们要像串口发送一个数据，然后，等待大概 2 秒钟，等现有的操作完成后，再发送下一个任务。

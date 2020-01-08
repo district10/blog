@@ -10,4 +10,4 @@ tags:
 Learning Java
 =============
 
-Moved to <http://tangzx.qiniudn.com/notes/lang/java.html>.
+Moved to <notes/lang/java.html>.

@@ -10,7 +10,7 @@ tags:
 C++ GUI Qt4 编程
 ================
 
-笔记部分移到了 [Notes: lang/qt.html](http://tangzx.qiniudn.com/notes/lang/qt.html)。
+笔记部分移到了 [Notes: lang/qt.html](notes/lang/qt.html)。
 
 这个没啥好说的，因为只要写界面，我都用 Qt，在 Windows 上写好了再到 Ubuntu 测试一遍，
 通常都不会有问题。

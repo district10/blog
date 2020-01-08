@@ -28,7 +28,7 @@ tags:
 
 （总有些人，要 UDP 来实现一个捉急的 TCP，效率低、效果差，早该一劳永逸直接上 TCP。）
 
-其实以前的一篇 post 已经提到过：[封装说明](http://tangzx.qiniudn.com/post-0059-exe-wrapper.html)，
+其实以前的一篇 post 已经提到过：[封装说明](post-0059-exe-wrapper.html)，
 可以先看这边。这个 post 讲得是架构，也就是说【如何屏蔽程序调用？不管它来自本机，还是异地】。
 对应的代码在 [district10/CrossOS: Cross OS Communication](https://github.com/district10/CrossOS){.featured .heart}，
 已经在 Linux 和 Windows 上测试通过。
@@ -49,7 +49,7 @@ tags:
 
 P.S. 中介通常翻译成 intermediary agent，为什么我要用 moderator 来做这个模块名？
 
-:   因为我曾上过的一门自己喜欢的选修课：[英语演讲与辩论](http://tangzx.qiniudn.com/post-0027-ai-will-kill-us.html)，里
+:   因为我曾上过的一门自己喜欢的选修课：[英语演讲与辩论](post-0027-ai-will-kill-us.html)，里
     每次讨论小组里都要有一个 moderator 作为协调者。他来统领讨论的进行。
 
     我觉得这个概念和这里完全契合。所以把这个模块叫 moderator。

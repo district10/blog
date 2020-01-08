@@ -9,4 +9,4 @@ tags:
 C & C++ Notes
 =============
 
-Moved to <http://tangzx.qiniudn.com/notes/lang/c-cpp.html>.
+Moved to <notes/lang/c-cpp.html>.

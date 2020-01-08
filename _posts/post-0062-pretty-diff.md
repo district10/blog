@@ -168,7 +168,7 @@ When you don't want me to move（这行不变）
 
 不错不错，可以安安静静地每天 dictation 了。现在我得去主页新开一个 bucket，放每天的 dictation 工作。
 
-以后把 dictation 放在 [Lyrics | 听写](http://tangzx.qiniudn.com/lyrics.html)，
+以后把 dictation 放在 [Lyrics | 听写](lyrics.html)，
 试用了一次效果相当赞。
 
 ![基本上是个合格的纠错小助手](http://gnat.qiniudn.com/dictation.png)

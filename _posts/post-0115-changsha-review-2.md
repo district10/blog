@@ -30,7 +30,7 @@ LMS
 
 :   ![](http://gnat-tang-archive.qiniudn.com/lms.gif){align=right}
 
-    在我 2015 年 9 月的一篇 post（[LMS 数据量](http://tangzx.qiniudn.com/post-0056-lms-chunk.html)），我也提过 LMS。
+    在我 2015 年 9 月的一篇 post（[LMS 数据量](post-0056-lms-chunk.html)），我也提过 LMS。
 
     LMS 是 SICK（德国西克） 公司生产的 Laser Measurement Sensor（激光测距仪）。
     通过一根网线可以读取 LMS 采集的数据。在我们的设置下，它的数据量约为 0.3 Mb/s。

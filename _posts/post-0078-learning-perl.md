@@ -10,7 +10,7 @@ tags:
 Learning Perl
 =============
 
-笔记部分移到了 [Notes: lang/perl.html](http://tangzx.qiniudn.com/notes/lang/perl.html)。
+笔记部分移到了 [Notes: lang/perl.html](notes/lang/perl.html)。
 
 我写过一些 Perl 脚本，用来处理本站的 Markdown 源码。主要实现了三个功能：
 

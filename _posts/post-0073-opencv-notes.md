@@ -11,4 +11,4 @@ tags:
 OpenCV Notes
 ============
 
-Moved to <http://tangzx.qiniudn.com/notes/lang/opencv.html>.
+Moved to <http://blog.tangzhixiong.com/notes/lang/opencv.html>.

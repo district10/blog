@@ -817,7 +817,7 @@ GIS 空间分析是对 GIS 空间数据的一种增值操作。
 
 ArcGIS 的三维数据空间分析工具
 
-:   有不错的 GUI 界面，还有足够强大的 Python 接口，参见 [空间分析实习报告](http://tangzx.qiniudn.com/post-0018-spatial-analysis.html)。
+:   有不错的 GUI 界面，还有足够强大的 Python 接口，参见 [空间分析实习报告](post-0018-spatial-analysis.html)。
 
 [sa-digital-terrian-model]: http://gnat.qiniudn.com/sa/sa-digital-terrian-model.png
 [sa-dem-present]: http://gnat.qiniudn.com/sa/sa-dem-present.png

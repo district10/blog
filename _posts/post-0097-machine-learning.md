@@ -9,4 +9,4 @@ tags:
 Machine Learning
 ================
 
-Moved to <http://tangzx.qiniudn.com/notes/caffe-notes/ml-index.html>.
+Moved to <notes/caffe-notes/ml-index.html>.

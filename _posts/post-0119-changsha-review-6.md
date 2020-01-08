@@ -44,7 +44,7 @@ TODO：
 
 -   [district10/changsha: 长沙桥康项目组文档](https://github.com/district10/changsha)
 -   跨电脑函数调用：[district10/CrossOS: Cross OS Communication](https://github.com/district10/CrossOS)
--   [桥梁模型贴纹理文档](http://tangzx.qiniudn.com/post-0025-doc-bridge-texture.html)
+-   [桥梁模型贴纹理文档](post-0025-doc-bridge-texture.html)
 -   [CVRS 参加第二届杭州机器人西湖论坛 - 公告 - 武汉大学计算机视觉与遥感实验室（CVRS Lab）](http://cvrs.whu.edu.cn/index.php?m=content&c=index&a=show&catid=99&id=50)
 -   自己之前画的一些架构图，等
     +   架构图：<https://www.processon.com/view/link/56ea64a6e4b010c6fe7d1ead>

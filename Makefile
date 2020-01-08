@@ -40,6 +40,9 @@ publish/%.md: %.md
 publish/%: %
 	cp $< $@
 
+serve:
+	cd publish && python3 -m http.server
+
 time:
 	@date +%s | tr -d '\r\n' | clip 2>/dev/null || date +%s | tr -d '\r\n' | (xclip -selection clipboard || pbcopy)
 	@echo Unix time copied to your clipboard!

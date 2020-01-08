@@ -12,8 +12,7 @@ perl（文本处理、从 git 提取文档历史信息）、pandoc（文档转�
 
 ## Online / 在线访问
 
--   <http://tangzx.qiniudn.com> or
--   <http://blog.tangzhixiong.com> (easier to remember)
+-   <http://blog.tangzhixiong.com>
 
 ## Get a Copy / 源码和打包输出
 
@@ -27,7 +26,7 @@ perl（文本处理、从 git 提取文档历史信息）、pandoc（文档转�
 Windows 操作系统：
 
 -   下载安装 git for windows，地址：<http://whudoc.qiniudn.com/Git-2.7.2-64-bit.exe>
-    （[安装指南](http://tangzx.qiniudn.com/post-0044-git-github-notes.html#%E4%B8%8B%E8%BD%BD-git-for-windows)）
+    （[安装指南](http://blog.tangzhixiong.com/post-0044-git-github-notes.html#%E4%B8%8B%E8%BD%BD-git-for-windows)）
 -   perl 已经包含在 git for windows 里了，不过可能需要手工添加到 %PATH%，到文件夹下找找，看看 CMD 里 `perl -v` 有没有反应
 -   安装 make，下载地址：<https://github.com/whudoc/statics/raw/master/winbin/make.exe>，放到 PATH 里即可
 -   安装 Pandoc，下载地址：<http://doi-2014.qiniudn.com/pandoc/pandoc-1.17.0.2-windows.msi>（20.4 MB）

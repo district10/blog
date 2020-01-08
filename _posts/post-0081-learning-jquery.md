@@ -10,7 +10,7 @@ tags:
 Learning jQuery
 ===============
 
-笔记部分移到了 [Notes: lang/jquery.html](http://tangzx.qiniudn.com/notes/lang/jquery.html)。
+笔记部分移到了 [Notes: lang/jquery.html](notes/lang/jquery.html)。
 
 >   有了 jQuery 一切都会简单很多。
 

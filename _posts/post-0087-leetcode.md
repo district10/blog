@@ -23,7 +23,7 @@ Leet Code
 =========
 
 This post is terrible,
-Please check out <http://tangzx.qiniudn.com/notes/lang/algo.html> :smile:.
+Please check out <notes/lang/algo.html> :smile:.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <div class="tzx-tabs">

@@ -60,8 +60,8 @@ See more
 
         refs and see also
 
-          - [Pretty Diff | 听歌学英语](http://tangzx.qiniudn.com/post-0062-pretty-diff.html)
-          - [lyrics](http://whudoc.qiniudn.com/2016/lyrics.html)
+          - [Pretty Diff | 听歌学英语](post-0062-pretty-diff.html)
+          - [lyrics](2016/lyrics.html)
 
     Markdown, Fork, PR
 
@@ -98,7 +98,7 @@ command-line tools for file uploading.
 
 When I commit some changes to my repo, travis will be notified (there's a hook).
 It'll build my website under my instructions and upload to qiniu, then you
-can visit it, at <http://tangzx.qiniudn.com>.
+can visit it, at <blog.tangzhixiong.com>.
 
 ---
 

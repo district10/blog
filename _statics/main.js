@@ -214,9 +214,6 @@ $(document).ready(function(){
         }
     };
 
-});
-
-$(document).ready(function(){
     var egg = new Egg();
     egg
         .addCode("x", function() { $('.tzx-drawer-hide').removeClass('tzx-drawer-hide'); })
@@ -228,9 +225,7 @@ $(document).ready(function(){
         .addCode("right,right,right", function() { $('#tocboxheader').click(); })
         .addCode("right,right,down", function() { window.location = "https://raw.githubusercontent.com/district10/blog/master/" + tzxFilename; })
         .listen();
-});
 
-$(document).ready(function(){
     var clipboard = new Clipboard('.btn');
     clipboard.on('success', function(e) {
         console.info('Action:', e.action);

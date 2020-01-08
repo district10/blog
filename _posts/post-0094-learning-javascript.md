@@ -10,4 +10,4 @@ tags:
 Learning JavaScript
 ===================
 
-Moved to <http://tangzx.qiniudn.com/notes/lang/javascript.html>.
+Moved to <notes/lang/javascript.html>.

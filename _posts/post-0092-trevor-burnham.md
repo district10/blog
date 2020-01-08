@@ -11,4 +11,4 @@ tags:
 Trevor burnham 的书
 ===================
 
-Merged to <http://tangzx.qiniudn.com/notes/lang/javascript.html>.
+Merged to <notes/lang/javascript.html>.
