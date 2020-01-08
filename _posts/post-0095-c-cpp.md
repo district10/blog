@@ -9,4 +9,4 @@ tags:
 C & C++ Notes
 =============
 
-Moved to <notes/lang/c-cpp.html>.
+Moved to [../notes/lang/c-cpp.md](notes/lang/c-cpp.html).

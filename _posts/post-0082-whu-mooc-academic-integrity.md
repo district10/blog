@@ -350,7 +350,7 @@ WHU MOOC Academic Integrity
     如果真没有，那这 MOOC 还真是白白浪费了自己的时间呢。
 
     我就有挺多学术不道德的地方，虽然作为一个道德洁癖我还看过《普林斯顿大学学术道德》
-    这本书（<post-0011-academic-integrity-at-princeton.html>）。
+    这本书（[post-0011-academic-integrity-at-princeton.md](post-0011-academic-integrity-at-princeton.html)）。
 
     我觉得自己学术道德上最大的问题就是
     【没有看文章却假装看了。等论文写完了再找到“适合”的地方插入文献引用】。

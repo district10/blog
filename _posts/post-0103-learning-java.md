@@ -10,4 +10,4 @@ tags:
 Learning Java
 =============
 
-Moved to <notes/lang/java.html>.
+Moved to [../notes/lang/java.md](notes/lang/java.html).

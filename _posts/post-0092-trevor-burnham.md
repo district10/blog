@@ -11,4 +11,4 @@ tags:
 Trevor burnham 的书
 ===================
 
-Merged to <notes/lang/javascript.html>.
+Merged to [../notes/lang/javascript.md](notes/lang/javascript.html).

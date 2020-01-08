@@ -9,4 +9,4 @@ tags:
 Machine Learning
 ================
 
-Moved to <notes/caffe-notes/ml-index.html>.
+Moved to [../notes/caffe-notes/ml-index.md](notes/caffe-notes/ml-index.html).

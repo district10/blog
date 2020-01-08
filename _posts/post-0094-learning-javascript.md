@@ -10,4 +10,4 @@ tags:
 Learning JavaScript
 ===================
 
-Moved to <notes/lang/javascript.html>.
+Moved to [../notes/lang/javascript.md](notes/lang/javascript.html).

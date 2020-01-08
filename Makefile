@@ -10,9 +10,6 @@ POSTS   := $(wildcard _posts/*)
 PAGES   := $(wildcard _pages/*)
 RES_OUT := $(PUBLISH)/index.md $(addprefix $(PUBLISH)/, $(STATICS:_statics/%=%)) $(addprefix $(PUBLISH)/, $(POSTS:_posts/%=%)) $(addprefix $(PUBLISH)/, $(PAGES:_pages/%=%)) 
 
-reset_submodules:
-	git submodule update --init --recursive
-
 all: $(RES_OUT) html notes
 $(RES_OUT): $(PUBLISH)/Makefile
 $(PUBLISH)/Makefile: _statics/publish.mk
@@ -82,3 +79,7 @@ koan:
 	$(EDITOR) -p \
 		_pages/koans.md \
 		_posts/
+
+reset_submodules:
+	git submodule update --init --recursive
+
