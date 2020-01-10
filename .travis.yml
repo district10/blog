@@ -27,6 +27,5 @@ after_success:
     - cd ~/build/district10/blog;
     - cd publish; git clone https://github.com/district10/panorama-viewer.git panorama; cd panorama; rm -rf .git; cd ../..;
     - cd publish; git clone https://github.com/district10/texture-morpher.git tmorpher; cd tmorpher; rm -rf .git; cd ../..;
-    - cd publish; git clone https://github.com/district10/notes.git /tmp/notes; (cd /tmp/notes; make); mv /tmp/notes/publish notes; cd ..;
     - cd publish; rm *.md **/*.md; rm -f panorama/bin/PanoMatch.exe panorama/bin/elsd.exe panorama/bin/svgMarker.exe; cd ..;
     - cd publish; git init; git checkout -b gh-pages; echo 'blog.tangzhixiong.com' > CNAME; git add -A; git commit -m "PUBLISHED VIA TRAVIS/CRON"; git remote add origin git@github.com:district10/blog-publish.git; git push -u origin HEAD:gh-pages --force; cd ..;
