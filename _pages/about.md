@@ -35,12 +35,6 @@ TANG ZhiXiong<span class="tzx-hide">，处女座，INTP</span>：
 -   [nitrotype](https://www.nitrotype.com/racer/dvorak4tzx)，[10fastfingers](http://10fastfingers.com/user/1178438/)
 </div>
 
-说明：
-
--   如果可以，请用 Firefox 浏览器浏览
--   博客的评论系统（disqus）默认不展开，因为我讨厌它影响我页面的加载速度
--   页面上按下 <kbd>h</kbd> 获取帮助（e.g. 按下 <kbd>&rarr;</kbd> <kbd>&rarr;</kbd> <kbd>&darr;</kbd> 查看源码）
-
 ---
 
 [![](https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Makenaide.jpg/330px-Makenaide.jpg)](https://en.wikipedia.org/wiki/Izumi_Sakai){title="“Makenaide.”---正能量女神（反正你们没我好看）"}

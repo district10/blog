@@ -86,17 +86,6 @@ $(document).ready(function(){
     });
     $("img.w12, img.w13, img.w14, img.mw12, img.mw13, img.mw14").parent().attr('align', 'center');
 
-    $('#showDisqus').on('click', function(){
-        console.log('loading disqus...');
-        $.ajax({
-            type: "GET",
-            url: "http://dvorak4tzx.disqus.com/embed.js",
-            dataType: "script",
-            cache: true
-        });
-        $(this).fadeOut();
-    });
-
     $('#tocboxheader').on('click', function(){
         $('#tocboxheader').hide();
         $('#tocboxbody').slideDown();
