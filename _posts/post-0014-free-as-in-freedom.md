@@ -172,7 +172,7 @@ and **hubris**(狂妄自大).
 
 The GNU system, the author predicted, would **carry all the usual
 applications**, **a compiler**, "and **a few other things.**" It would also
-contain **many [enticing][enticing](迷人的) features that other Unix systems
+contain **many [enticing][enticing] (迷人的) features that other Unix systems
 didn't yet offer**: a graphic user interface based on the Lisp programming language,
 a crash-proof file system, and networking protocols built according to MIT's
 internal networking system.
