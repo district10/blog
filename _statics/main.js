@@ -203,16 +203,64 @@ $(document).ready(function(){
         }
     };
 
+    function valid_eggy() {
+        var $focused = $(':focus');
+        if ($focused.length == 0) {
+            return true;
+        }
+        $focused = $($focused[0]);
+        if ($focused.is('textarea') || $focused.is('input')) {
+            return false;
+        }
+        return true;
+    }
+
     var egg = new Egg();
     egg
-        .addCode("x", function() { $('.tzx-drawer-hide').removeClass('tzx-drawer-hide'); })
-        .addCode("1", function() { show(); drawershow(); })
-        .addCode("0", function() { hide(); drawerhide(); })
-        .addCode("left,left,down",  function() { show(); drawershow(); })
-        .addCode("left,left,up",    function() { hide(); drawerhide(); })
-        .addCode("left,left,left", function() { window.location = "index.html"; })
-        .addCode("right,right,right", function() { $('#tocboxheader').click(); })
-        .addCode("right,right,down", function() { window.location = "https://raw.githubusercontent.com/district10/blog/master/" + tzxFilename; })
+        .addCode("x", function() {
+            if (valid_eggy()) {
+                $('.tzx-drawer-hide').removeClass('tzx-drawer-hide');
+            }
+        })
+        .addCode("1", function() {
+            if (valid_eggy()) {
+                show();
+                drawershow();
+            }
+        })
+        .addCode("0", function() {
+            if (valid_eggy()) {
+                hide();
+                drawerhide();
+            }
+        })
+        .addCode("left,left,down",  function() {
+            if (valid_eggy()) {
+                show();
+                drawershow();
+            }
+        })
+        .addCode("left,left,up",    function() {
+            if (valid_eggy()) {
+                hide();
+                drawerhide();
+            }
+        })
+        .addCode("left,left,left", function() {
+            if (valid_eggy()) {
+                window.location = "index.html";
+            }
+        })
+        .addCode("right,right,right", function() {
+            if (valid_eggy()) {
+                $('#tocboxheader').click();
+            }
+        })
+        .addCode("right,right,down", function() {
+            if (valid_eggy()) {
+                window.location = "https://raw.githubusercontent.com/district10/blog/master/" + tzxFilename;
+            }
+        })
         .listen();
 
     var clipboard = new Clipboard('.btn');
