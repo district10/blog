@@ -92,4 +92,6 @@ lint:
 
 reset_submodules:
 	git submodule update --init --recursive
-
+gup:
+	cd notes && git pull -r && git submodule update --init --recursive
+	git pull -r
