@@ -37,8 +37,8 @@ TANG ZhiXiong<span class="tzx-hide">，处女座，INTP</span>：
 
 ---
 
-[![](https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Makenaide.jpg/330px-Makenaide.jpg)](https://en.wikipedia.org/wiki/Izumi_Sakai){title="“Makenaide.”---正能量女神（反正你们没我好看）"}
-[![](https://upload.wikimedia.org/wikipedia/en/2/29/Some_People_Have_Real_Problems_US_cover.jpg)](https://en.wikipedia.org/wiki/Some_People_Have_Real_Problems){title="“I don't mean you, I mean all of you, are bullshit.”---神经病系列（反正你们唱的没我好）"}
+[![](https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Makenaide.jpg/330px-Makenaide.jpg)](https://en.wikipedia.org/wiki/Izumi_Sakai)
+[![](https://upload.wikimedia.org/wikipedia/en/2/29/Some_People_Have_Real_Problems_US_cover.jpg)](https://en.wikipedia.org/wiki/Some_People_Have_Real_Problems)
 
 Some music to share:
 

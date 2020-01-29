@@ -234,13 +234,13 @@ $(document).ready(function(){
                 drawerhide();
             }
         })
-        .addCode("left,left,down",  function() {
+        .addCode("left,right,down",  function() {
             if (valid_eggy()) {
                 show();
                 drawershow();
             }
         })
-        .addCode("left,left,up",    function() {
+        .addCode("left,right,up",    function() {
             if (valid_eggy()) {
                 hide();
                 drawerhide();
