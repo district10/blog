@@ -79,6 +79,10 @@ koan:
 	$(EDITOR) -p \
 		_pages/koans.md \
 		_posts/
+pn:
+	$(EDITOR) -p \
+		notes/notes/index.md \
+		notes/notes/00001.md
 
 reset_submodules:
 	git submodule update --init --recursive
