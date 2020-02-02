@@ -25,29 +25,57 @@ output_dir = f'{pwd}/notes/cards'
 shutil.rmtree(output_dir)
 mkdir_p(output_dir)
 
-
+HEADER = '<br><br><br><br><br><br>\n\n'
 index = 0
-def write_note(text: str) -> str:
+
+
+def write_note(
+        text: str,
+        *,
+        prefix: Optional[str] = None,
+        suffix: Optional[str] = None,
+) -> str:
     global index
-    if text.count('\n') < 2:
-        return
     index += 1
     p = f'{output_dir}/card_{index:010d}.md'
     with open(p, 'w') as f:
-        prefix = ''.join(['<br>'] * 6)
-        f.write(f'{prefix}\n\n-   ')
+        if prefix:
+            f.write(prefix)
         f.write(text)
+        if suffix:
+            f.write(suffix)
     return p
 
 
 if __name__ == '__main__':
+    for path in glob.glob(f'{pwd}/../q/**/*.*'):
+        path = os.path.abspath(path)
+        ext = path.split('.')[-1]
+        lang = ({
+            'geojson': 'json',
+            'h': 'cpp',
+            'js': 'javascript',
+            'md': 'markdown',
+            'mk': 'makefile',
+            'osm': 'xml',
+            'py': 'python',
+            'sh': 'shell',
+            'txt': 'plain',
+        }).get(ext, ext if len(ext) < 10 else '')
+        with open(path) as f:
+            body = f.read()
+        print(f'processing {path}...')
+        write_note(body, prefix=f'{HEADER}```{lang}\n', suffix='```')
+
     for path in glob.glob(f'{pwd}/notes/**/*.md'):
         if path.endswith('index.md') or path.startswith(output_dir):
             continue
         print(f'processing {path}...')
         with open(path) as f:
             for i, p in enumerate(re.split('\n-   ', f.read())[1:]):
-                write_note(p)
+                if p.count('\n') < 2:
+                    continue
+                write_note(p, prefix=f'{HEADER}-   ')
 
     cards = sorted(glob.glob(f'{output_dir}/card*.md'))
     print(f'wrote #{len(cards)} cards, writing index.md...', end=' ')
