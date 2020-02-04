@@ -25,7 +25,7 @@ output_dir = f'{pwd}/notes/cards'
 shutil.rmtree(output_dir)
 mkdir_p(output_dir)
 
-HEADER = '<br><br><br><br><br><br>\n\n'
+HEADER = '<br><br><br><br>\n\n'
 index = 0
 
 
@@ -65,7 +65,11 @@ if __name__ == '__main__':
         with open(path) as f:
             body = f.read()
         print(f'processing {path}...')
-        write_note(body, prefix=f'{HEADER}```{lang}\n', suffix='```')
+        write_note(
+            body,
+            prefix=f'{HEADER}{path.split("/q/")[1]}\n```{lang}\n',
+            suffix='```',
+        )
 
     for path in glob.glob(f'{pwd}/notes/**/*.md'):
         if path.endswith('index.md') or path.startswith(output_dir):
