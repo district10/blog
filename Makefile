@@ -84,6 +84,12 @@ pn:
 		notes/notes/index.md \
 		notes/notes/00001.md
 
+cards:
+	python3 cardify.py
+
+lint:
+	yapf -ir .
+
 reset_submodules:
 	git submodule update --init --recursive
 
