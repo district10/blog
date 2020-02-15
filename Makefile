@@ -46,7 +46,7 @@ $(PUBLISH)/%: %
 	cp $< $@
 
 serve:
-	cd $(PUBLISH) && python3 -m http.server
+	cd $(PUBLISH) && http-server -p 8000 || python3 -m http.server
 
 time:
 	@date +%s | tr -d '\r\n' | clip 2>/dev/null || date +%s | tr -d '\r\n' | (xclip -selection clipboard || pbcopy || true)
