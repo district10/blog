@@ -152,7 +152,7 @@ def post_process_card(card_path: str, card_index: int, all_cards: List[str]):
         .map(p => p.split('='))
         .reduce((obj, pair) => {
             const [key, value] = pair.map(decodeURIComponent);
-            return ({ ...obj, [key]: value })
+            obj[key] = value; return obj; // return ({ ...obj, [key]: value })
         }, {});
     speed = Number(query.speed || 1.0);\n"""
             '    idx = max => Math.floor(Math.random() * Math.floor(max));\n'
