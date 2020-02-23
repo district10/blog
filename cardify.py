@@ -30,7 +30,7 @@ def mkdir_p(path: str):
 def count_words(text):
     num_char_ch = len(re.findall(r'[\u4e00-\u9fff]', text))
     num_char_en = len(re.findall(r'[\u0021-\u007e]', text))  # ! to ~
-    num_words = num_char_ch + num_char_en / 5
+    num_words = num_char_ch / 3 + num_char_en / 5
     return num_words
 
 
