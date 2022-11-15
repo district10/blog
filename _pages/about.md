@@ -23,35 +23,22 @@ TANG ZhiXiong<span class="tzx-hide">，处女座，INTP</span>：
 -   Homepage：[tangzhixiong.com](http://tangzhixiong.com)
 -   GitHub：[district10](https://github.com/district10)
 -   Email: `echo dGFuZy56aGkueGlvbmdAcXEuY29tCg== | base64 --decode`
-
-<div class="tzx-hide">
--   Lofter：[dvorak4tzx](http://dvorak4tzx.lofter.com/)
--   Bilibili：[dvorak4tzx](http://space.bilibili.com/14586835/#!/)
--   简书：[district10](http://www.jianshu.com/users/faa44ac9e895/top_articles)
--   SegmentFault: [dvorak4tzx](https://segmentfault.com/u/dvorak4tzx)
--   Twitter：[dvorak4tzx4](https://twitter.com/dvorak4tzx4)
--   Bitbucket：[district10](https://bitbucket.org/district10/)
--   QQ & Email：`echo NTEzODgwNjQxQHFxLmNvbQo= | base64 --decode`{.bash}
--   [nitrotype](https://www.nitrotype.com/racer/dvorak4tzx)，[10fastfingers](http://10fastfingers.com/user/1178438/)
-</div>
+-   timeline
+    -   2011.9 - 2017.6: [武汉大学](https://www.whu.edu.cn/)
+    -   2017.7 - 2018.4: [ThoughtWorks](https://www.thoughtworks.com/zh-cn)
+    -   2018.5 - 20??.?: [Momenta](https://momenta.cn/)
 
 ---
-
-[![](https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Makenaide.jpg/330px-Makenaide.jpg)](https://en.wikipedia.org/wiki/Izumi_Sakai)
-[![](https://upload.wikimedia.org/wikipedia/en/2/29/Some_People_Have_Real_Problems_US_cover.jpg)](https://en.wikipedia.org/wiki/Some_People_Have_Real_Problems)
 
 Some music to share:
 
 -   [Dirty Paws - Of Monsters And Men](http://music.163.com/#/song?id=28143752)
 -   [Devil's Got A Gun - Whitehorse](http://music.163.com/#/song?id=29544255)
--   [ZARD: What a beautiful memory (2009)](http://www.bilibili.com/video/av2890824/?from=search&seid=10847304836786748819)
--   [ZARD: 負けないで](http://www.bilibili.com/video/av2946591/)
--   [ZARD: Listen to me](http://www.bilibili.com/video/av6643766/)
+-   [中岛美雪/宙船](https://www.bilibili.com/video/BV1sY411Z7iS/?spm_id_from=333.337.search-card.all.click&vd_source=44034322f01642d475c43c4f90a643df)
 -   [捕捉闪耀的瞬间](http://www.bilibili.com/video/av231518/)
 -   [Hamilton](http://www.bilibili.com/video/av7205751/?from=search&seid=12547177577819719650)
 -   [悲惨世界 (十周年)](http://www.bilibili.com/video/av746517/?from=search&seid=13495694367408301043)
 -   [Sia: Reaper (Live, GMA)](http://www.bilibili.com/video/av5226355/?from=search&seid=1835924542946025181)
-    <small>([这个](https://www.youtube.com/watch?v=DEa-cA3CLYs)不错哈哈)</small>
 -   [Sia: Bird Set Free (Live, Ellen Show)](http://www.bilibili.com/video/av8150336/?from=search&seid=10343924618209431573)
 
 ---
